@@ -1,8 +1,9 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ArrowRight, Check, Clock3, ExternalLink, MapPin, Printer, RotateCcw, Sparkles } from 'lucide-react';
+import { ArrowRight, Check, Clock3, Download, ExternalLink, MapPin, Printer, QrCode, RotateCcw, ShieldCheck, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select';
 
 type QuestionPaper = {
@@ -155,9 +156,31 @@ export default function Home() {
         <a href="#paper" className="brand" aria-label="Ramavana Mathematical Centre home">
           <span className="brand-mark">R</span><span><strong>Ramavana</strong><small>Mathematical Centre</small></span>
         </a>
-        <a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre" target="_blank" rel="noreferrer">
-          <MapPin aria-hidden="true" /><span>Find us</span><ExternalLink aria-hidden="true" />
-        </a>
+        <div className="header-actions">
+          <Dialog>
+            <DialogTrigger render={<button className="qr-trigger" type="button" />}>
+              <QrCode aria-hidden="true" /><span>QR code</span>
+            </DialogTrigger>
+            <DialogContent className="qr-dialog">
+              <DialogHeader>
+                <span className="qr-dialog-icon"><QrCode aria-hidden="true" /></span>
+                <DialogTitle>Scan to open the practice paper</DialogTitle>
+                <DialogDescription>Point a phone camera at this QR code to open Ramavana Mathematical Centre.</DialogDescription>
+              </DialogHeader>
+              <div className="qr-image-wrap">
+                <img src="/ramavana-private-qr.svg" alt="QR code for the private Ramavana Mathematical Centre website" />
+              </div>
+              <div className="qr-private-note"><ShieldCheck aria-hidden="true" /><span><strong>Private access stays on</strong>Only authorised viewers can open the website after scanning.</span></div>
+              <p className="qr-url">ramavana-mathematical-centre.bluewhitebox.chatgpt.site</p>
+              <DialogFooter>
+                <a className="qr-download" href="/ramavana-private-qr.svg" download="ramavana-mathematical-centre-qr.svg"><Download aria-hidden="true" /> Download QR code</a>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+          <a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre" target="_blank" rel="noreferrer">
+            <MapPin aria-hidden="true" /><span>Find us</span><ExternalLink aria-hidden="true" />
+          </a>
+        </div>
       </header>
 
       <section className="workspace-shell">
