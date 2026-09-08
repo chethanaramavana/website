@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ramavana Mathematical Centre | Chapter-wise Maths Practice',
+  title: 'Ramavana Mathematical Centre | Grade 10 CBSE Maths',
   description:
-    'Mobile-friendly chapter-wise mathematics question papers for 10th, 11th and 12th standard students.',
+    'Chapter-wise CBSE mathematics practice for Grade 10 students.',
 };
 
 export default function RootLayout({
