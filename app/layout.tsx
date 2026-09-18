@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ramavana Mathematical Centre | Grade 10 CBSE Maths',
+  title: 'Ramavana Mathematical Center | Mathematics Practice',
   description:
-    'Chapter-wise CBSE mathematics practice for Grade 10 students.',
+    'Chapter-wise mathematics practice for CBSE, ICSE and IGCSE students.',
 };
 
 export default function RootLayout({
