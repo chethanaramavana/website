@@ -6,13 +6,16 @@ import {
   ArrowRight,
   BookOpen,
   Camera,
+  CheckCircle2,
   ChevronRight,
   Folder,
   FolderOpen,
   GraduationCap,
   Home,
   LockKeyhole,
+  Loader2,
   Printer,
+  Send,
   ShieldCheck,
   Upload,
   X,
@@ -172,6 +175,7 @@ export default function HomePage() {
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <div className="header-actions">
+          <a className="teacher-link" href="/teacher">Teacher review</a>
           <span className="private-badge"><LockKeyhole /> Private</span>
         </div>
       </header>
@@ -352,6 +356,82 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
 }
 
 function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapters: () => void }) {
+  const [studentName, setStudentName] = useState('');
+  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [writtenFiles, setWrittenFiles] = useState<Record<number, File[]>>({});
+  const [attemptId] = useState(() => crypto.randomUUID());
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [progress, setProgress] = useState('');
+  const [submissionError, setSubmissionError] = useState('');
+  const [result, setResult] = useState<{ id: string; mcqScore: number; mcqMaximum: number } | null>(null);
+
+  const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
+
+  function validateTest() {
+    if (studentName.trim().length < 2) return 'Enter the student name at the top of the paper.';
+    if (Object.keys(answers).length !== 16) return `Answer all 16 MCQs. ${16 - Object.keys(answers).length} remaining.`;
+    const missingUploads = writtenQuestions.filter((question) => !(writtenFiles[question]?.length));
+    if (missingUploads.length) return `Upload written answers for question${missingUploads.length > 1 ? 's' : ''} ${missingUploads.join(', ')}.`;
+    const largeFile = Object.values(writtenFiles).flat().find((file) => file.size > 10 * 1024 * 1024);
+    if (largeFile) return `${largeFile.name} is larger than 10 MB. Choose a smaller photo or PDF.`;
+    return '';
+  }
+
+  function requestSubmission() {
+    const error = validateTest();
+    setSubmissionError(error);
+    if (!error) setConfirmOpen(true);
+  }
+
+  async function readResponse(response: Response) {
+    const payload = await response.json() as Record<string, unknown>;
+    if (!response.ok) throw new Error(String(payload.error ?? 'Something went wrong.'));
+    return payload;
+  }
+
+  async function submitTest() {
+    setConfirmOpen(false);
+    setSubmitting(true);
+    setSubmissionError('');
+    try {
+      setProgress('Preparing your test…');
+      await readResponse(await fetch('/api/submissions', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ attemptId, studentName: studentName.trim(), answers }),
+      }));
+
+      const uploadEntries = writtenQuestions.flatMap((question) =>
+        (writtenFiles[question] ?? []).map((file, index) => ({ question, file, index })),
+      );
+      for (let index = 0; index < uploadEntries.length; index += 1) {
+        const upload = uploadEntries[index];
+        setProgress(`Uploading written answers ${index + 1} of ${uploadEntries.length}…`);
+        const response = await fetch(`/api/submissions/${attemptId}/upload?question=${upload.question}`, {
+          method: 'POST',
+          headers: {
+            'content-type': upload.file.type,
+            'x-file-name': encodeURIComponent(upload.file.name),
+            'x-file-size': String(upload.file.size),
+            'x-upload-id': `${attemptId}-${upload.question}-${upload.index}`,
+          },
+          body: upload.file,
+        });
+        await readResponse(response);
+      }
+
+      setProgress('Finishing your submission…');
+      const final = await readResponse(await fetch(`/api/submissions/${attemptId}/finalize`, { method: 'POST' }));
+      setResult({ id: String(final.id), mcqScore: Number(final.mcqScore), mcqMaximum: Number(final.mcqMaximum) });
+      setProgress('');
+    } catch (error) {
+      setSubmissionError(error instanceof Error ? error.message : 'The test could not be submitted. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
@@ -365,15 +445,15 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       <article className="question-paper">
         <header className="paper-heading">
           <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
-          <div className="paper-kicker"><span>Teacher review draft</span><strong>Paper 01</strong></div>
+          <div className="paper-kicker"><span>Free practice test</span><strong>Paper 01</strong></div>
           <p>CBSE Mathematics (Standard) · Grade 10</p>
           <h1>Chapter 1 — Real Numbers</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
         </header>
 
         <section className="student-fields" aria-label="Student details">
-          <label>Name <span /></label>
-          <label>Date <span /></label>
+          <label>Name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your full name" /></label>
+          <label>Date <span>{new Date().toLocaleDateString()}</span></label>
         </section>
 
         <section className="paper-instructions">
@@ -394,7 +474,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
-                      <input type="radio" name={`question-${item.number}`} />
+                      <input type="radio" name={`question-${item.number}`} checked={answers[String(item.number)] === index} onChange={() => setAnswers((current) => ({ ...current, [String(item.number)]: index }))} />
                       <span><em>{String.fromCharCode(65 + index)}</em>{option}</span>
                     </label>
                   ))}
@@ -412,28 +492,32 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             number={15}
             assertion="HCF(26, 91) = 13."
             reason="26 = 2 × 13 and 91 = 7 × 13, and 13 is their greatest common factor."
+            selected={answers['15']}
+            onChange={(answer) => setAnswers((current) => ({ ...current, 15: answer }))}
           />
           <AssertionQuestion
             number={16}
             assertion="√2 + √3 is an irrational number."
             reason="The sum of any two irrational numbers is always irrational."
+            selected={answers['16']}
+            onChange={(answer) => setAnswers((current) => ({ ...current, 16: answer }))}
           />
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          <WrittenQuestion number={17} marks={2}>Using prime factorisation, find the HCF of 378 and 504.</WrittenQuestion>
-          <WrittenQuestion number={18} marks={2}>Show that 7√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={19} marks={2}>Find the least positive number that is exactly divisible by 45, 60 and 75.</WrittenQuestion>
+          <WrittenQuestion number={17} marks={2} files={writtenFiles[17] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 17: files }))}>Using prime factorisation, find the HCF of 378 and 504.</WrittenQuestion>
+          <WrittenQuestion number={18} marks={2} files={writtenFiles[18] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 18: files }))}>Show that 7√5 is irrational.</WrittenQuestion>
+          <WrittenQuestion number={19} marks={2} files={writtenFiles[19] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 19: files }))}>Find the least positive number that is exactly divisible by 45, 60 and 75.</WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          <WrittenQuestion number={20} marks={3}>The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.</WrittenQuestion>
-          <WrittenQuestion number={21} marks={3}>Prove that 3 + 2√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={22} marks={3}>A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.</WrittenQuestion>
+          <WrittenQuestion number={20} marks={3} files={writtenFiles[20] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 20: files }))}>The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.</WrittenQuestion>
+          <WrittenQuestion number={21} marks={3} files={writtenFiles[21] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 21: files }))}>Prove that 3 + 2√5 is irrational.</WrittenQuestion>
+          <WrittenQuestion number={22} marks={3} files={writtenFiles[22] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 22: files }))}>A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.</WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
-          <WrittenQuestion number={23} marks={5}>
+          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 23: files }))}>
             <span>(a) Prove that √3 is irrational.</span>
             <span>(b) Hence, prove that 5 + 2√3 is irrational.</span>
           </WrittenQuestion>
@@ -444,7 +528,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             <div className="case-study-label">Case study</div>
             <p>For Mathematics Day, a teacher has 84 red tokens, 126 blue tokens and 210 gold tokens. She wants to make the greatest possible number of identical prize packets, using every token and placing the same number of each colour in every packet.</p>
           </div>
-          <WrittenQuestion number={24} marks={4}>
+          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 24: files }))}>
             <span>(a) Write the prime factorisation of 210. <b>[1]</b></span>
             <span>(b) Find the greatest possible number of identical packets. <b>[1]</b></span>
             <span>(c) Find the number of red, blue and gold tokens in each packet. Hence find the total number of tokens in one packet. <b>[2]</b></span>
@@ -452,7 +536,30 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         </PaperSection>
 
         <footer className="paper-end"><span>— End of question paper —</span><strong>Total: 40 marks</strong></footer>
+
+        <section className="test-submit-panel">
+          <div><p>Finished the paper?</p><h2>Submit for marking</h2><span>Your MCQs will be checked immediately. Written answers will be sent securely to the teacher.</span></div>
+          <button type="button" onClick={requestSubmission} disabled={submitting || Boolean(result)}>{submitting ? <Loader2 /> : result ? <CheckCircle2 /> : <Send />}{submitting ? 'Submitting…' : result ? 'Submitted' : 'Submit test'}</button>
+          {(submissionError || progress) && <p className={submissionError ? 'submit-error' : 'submit-progress'} role="status">{submissionError || progress}</p>}
+        </section>
       </article>
+
+      <Dialog open={confirmOpen} onOpenChange={setConfirmOpen}>
+        <DialogContent className="submit-confirm-dialog">
+          <DialogHeader><span className="start-test-icon"><Send /></span><DialogTitle>Submit your completed test?</DialogTitle><DialogDescription>You will not be able to change this attempt after it is submitted.</DialogDescription></DialogHeader>
+          <div className="submit-summary"><span>16 MCQ answers</span><span>8 written answers</span><strong>40 marks</strong></div>
+          <DialogFooter><button className="test-later-button" type="button" onClick={() => setConfirmOpen(false)}>Check again</button><button className="test-start-button" type="button" onClick={() => void submitTest()}>Yes, submit test</button></DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={result !== null} onOpenChange={() => {}}>
+        <DialogContent className="submission-success-dialog">
+          <DialogHeader><span className="submission-success-icon"><CheckCircle2 /></span><DialogTitle>Test submitted successfully</DialogTitle><DialogDescription>Your answer sheets are now available in the teacher review area.</DialogDescription></DialogHeader>
+          <div className="instant-score"><span>MCQ score</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
+          <p>Written-answer marks and teacher feedback will be added after review.</p>
+          <DialogFooter><button className="test-start-button" type="button" onClick={onHome}>Return home</button></DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
@@ -466,14 +573,13 @@ function PaperSection({ title, subtitle, marks, children }: { title: string; sub
   );
 }
 
-function WrittenQuestion({ number, marks, children }: { number: number; marks: number; children: ReactNode }) {
-  const [files, setFiles] = useState<File[]>([]);
+function WrittenQuestion({ number, marks, children, files, onFilesChange }: { number: number; marks: number; children: ReactNode; files: File[]; onFilesChange: (files: File[]) => void }) {
   const cameraInputId = `answer-camera-${number}`;
   const fileInputId = `answer-file-${number}`;
 
   function addFiles(fileList: FileList | null) {
     if (!fileList) return;
-    setFiles((current) => [...current, ...Array.from(fileList)]);
+    onFilesChange([...files, ...Array.from(fileList)].slice(0, 4));
   }
 
   return (
@@ -514,7 +620,7 @@ function WrittenQuestion({ number, marks, children }: { number: number; marks: n
               <strong>{files.length} {files.length === 1 ? 'file' : 'files'} selected</strong>
               <small>{files.map((file) => file.name).join(', ')}</small>
             </span>
-            <button type="button" onClick={() => setFiles([])} aria-label={`Remove selected answer files for question ${number}`}><X /></button>
+            <button type="button" onClick={() => onFilesChange([])} aria-label={`Remove selected answer files for question ${number}`}><X /></button>
           </div>
         )}
       </div>
@@ -522,13 +628,13 @@ function WrittenQuestion({ number, marks, children }: { number: number; marks: n
   );
 }
 
-function AssertionQuestion({ number, assertion, reason }: { number: number; assertion: string; reason: string }) {
+function AssertionQuestion({ number, assertion, reason, selected, onChange }: { number: number; assertion: string; reason: string; selected?: number; onChange: (answer: number) => void }) {
   return (
     <fieldset className="paper-question assertion-question">
       <legend><strong>{number}.</strong> <span><b>Assertion (A):</b> {assertion}<br /><b>Reason (R):</b> {reason}</span><em>[1]</em></legend>
       <div className="assertion-options">
         {assertionReasonOptions.map((_, index) => (
-          <label key={index}><input type="radio" name={`question-${number}`} /><span>{String.fromCharCode(65 + index)}</span></label>
+          <label key={index}><input type="radio" name={`question-${number}`} checked={selected === index} onChange={() => onChange(index)} /><span>{String.fromCharCode(65 + index)}</span></label>
         ))}
       </div>
     </fieldset>
@@ -571,7 +677,7 @@ function LegalDialog({ type }: { type: 'terms' | 'privacy' }) {
             <section><h3>Control</h3><p>Students or parents may request correction or deletion of submitted information through the centre’s published contact channel.</p></section>
           </div>
         )}
-        <p className="legal-review-note">These starter policies should be reviewed before the website is opened to students.</p>
+        <p className="legal-review-note">Last updated: September 2026</p>
       </DialogContent>
     </Dialog>
   );
