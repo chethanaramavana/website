@@ -1,4 +1,4 @@
-import { mcqAnswerKey, scoreMcqs, writtenQuestionMarks } from '@/lib/assessment';
+import { mcqAnswerKey, scoreMcqs, writtenQuestionMarks, writtenSolutions } from '@/lib/assessment';
 import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
 
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
@@ -13,7 +13,14 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     `).bind(id).first<{ user_id: string; status: string; mcq_answers: string; mcq_score: number }>();
     if (!submission || submission.user_id !== user.userId) return jsonError('Submission not found.', 404);
     if (submission.status !== 'draft') {
-      return Response.json({ id, status: submission.status, mcqScore: submission.mcq_score, mcqMaximum: 16 });
+      return Response.json({
+        id,
+        status: submission.status,
+        mcqScore: submission.mcq_score,
+        mcqMaximum: 16,
+        correctAnswers: mcqAnswerKey,
+        writtenSolutions,
+      });
     }
 
     const answers = JSON.parse(submission.mcq_answers) as Record<string, number>;
@@ -31,7 +38,14 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
       UPDATE submissions SET status = 'submitted', mcq_score = ?, submitted_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP WHERE id = ? AND user_id = ? AND status = 'draft'
     `).bind(score, id, user.userId).run();
-    return Response.json({ id, status: 'submitted', mcqScore: score, mcqMaximum: 16 });
+    return Response.json({
+      id,
+      status: 'submitted',
+      mcqScore: score,
+      mcqMaximum: 16,
+      correctAnswers: mcqAnswerKey,
+      writtenSolutions,
+    });
   } catch (error) {
     console.error('finalize submission failed', error);
     return jsonError('The completed test could not be submitted. Please try again.', 500);

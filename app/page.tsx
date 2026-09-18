@@ -364,7 +364,14 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
   const [submitting, setSubmitting] = useState(false);
   const [progress, setProgress] = useState('');
   const [submissionError, setSubmissionError] = useState('');
-  const [result, setResult] = useState<{ id: string; mcqScore: number; mcqMaximum: number } | null>(null);
+  const [result, setResult] = useState<{
+    id: string;
+    mcqScore: number;
+    mcqMaximum: number;
+    correctAnswers: Record<string, number>;
+    writtenSolutions: Record<string, string>;
+  } | null>(null);
+  const [showAnswers, setShowAnswers] = useState(false);
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
 
@@ -423,7 +430,13 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
 
       setProgress('Finishing your submission…');
       const final = await readResponse(await fetch(`/api/submissions/${attemptId}/finalize`, { method: 'POST' }));
-      setResult({ id: String(final.id), mcqScore: Number(final.mcqScore), mcqMaximum: Number(final.mcqMaximum) });
+      setResult({
+        id: String(final.id),
+        mcqScore: Number(final.mcqScore),
+        mcqMaximum: Number(final.mcqMaximum),
+        correctAnswers: final.correctAnswers as Record<string, number>,
+        writtenSolutions: final.writtenSolutions as Record<string, string>,
+      });
       setProgress('');
     } catch (error) {
       setSubmissionError(error instanceof Error ? error.message : 'The test could not be submitted. Please try again.');
@@ -542,6 +555,55 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
           <button type="button" onClick={requestSubmission} disabled={submitting || Boolean(result)}>{submitting ? <Loader2 /> : result ? <CheckCircle2 /> : <Send />}{submitting ? 'Submitting…' : result ? 'Submitted' : 'Submit test'}</button>
           {(submissionError || progress) && <p className={submissionError ? 'submit-error' : 'submit-progress'} role="status">{submissionError || progress}</p>}
         </section>
+
+        {result && showAnswers && (
+          <section className="answer-review" id="answer-review" aria-labelledby="answer-review-title">
+            <header className="answer-review-header">
+              <div><p>Unlocked after submission</p><h2 id="answer-review-title">Answers and model solutions</h2></div>
+              <span><CheckCircle2 /> Submitted</span>
+            </header>
+
+            <div className="answer-review-section">
+              <h3>Section A — MCQ answers</h3>
+              <div className="mcq-answer-review">
+                {realNumbersMcqs.map((item) => {
+                  const studentAnswer = answers[String(item.number)];
+                  const correctAnswer = result.correctAnswers[String(item.number)];
+                  const isCorrect = studentAnswer === correctAnswer;
+                  return (
+                    <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={item.number}>
+                      <div><strong>Question {item.number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
+                      <p><span>Your answer</span><b>{String.fromCharCode(65 + studentAnswer)}. {item.options[studentAnswer]}</b></p>
+                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {item.options[correctAnswer]}</b></p>
+                    </div>
+                  );
+                })}
+                {[15, 16].map((number) => {
+                  const studentAnswer = answers[String(number)];
+                  const correctAnswer = result.correctAnswers[String(number)];
+                  const isCorrect = studentAnswer === correctAnswer;
+                  return (
+                    <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={number}>
+                      <div><strong>Question {number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
+                      <p><span>Your answer</span><b>{String.fromCharCode(65 + studentAnswer)}. {assertionReasonOptions[studentAnswer]}</b></p>
+                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}</b></p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="answer-review-section written-solution-section">
+              <h3>Sections B–E — Model solutions</h3>
+              <p className="solution-note">Use these to compare your method. Your teacher will still review your uploaded work and award the written-answer marks.</p>
+              <div className="written-solution-list">
+                {writtenQuestions.map((number) => (
+                  <article key={number}><strong>Question {number}</strong><p>{result.writtenSolutions[String(number)]}</p></article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </article>
 
       <Dialog open={confirmOpen} onOpenChange={setConfirmOpen}>
@@ -552,12 +614,18 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         </DialogContent>
       </Dialog>
 
-      <Dialog open={result !== null} onOpenChange={() => {}}>
+      <Dialog open={result !== null && !showAnswers} onOpenChange={() => {}}>
         <DialogContent className="submission-success-dialog">
           <DialogHeader><span className="submission-success-icon"><CheckCircle2 /></span><DialogTitle>Test submitted successfully</DialogTitle><DialogDescription>Your answer sheets are now available in the teacher review area.</DialogDescription></DialogHeader>
           <div className="instant-score"><span>MCQ score</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
           <p>Written-answer marks and teacher feedback will be added after review.</p>
-          <DialogFooter><button className="test-start-button" type="button" onClick={onHome}>Return home</button></DialogFooter>
+          <DialogFooter className="submission-success-actions">
+            <button className="test-later-button" type="button" onClick={onHome}>Return home</button>
+            <button className="test-start-button" type="button" onClick={() => {
+              setShowAnswers(true);
+              requestAnimationFrame(() => document.getElementById('answer-review')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+            }}><BookOpen /> View answers</button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
