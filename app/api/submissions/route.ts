@@ -1,4 +1,5 @@
 import { getAttemptOwner, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
+import { getPaperAssessment } from '@/lib/assessment';
 
 const attemptIdPattern = /^[a-zA-Z0-9-]{20,80}$/;
 
@@ -11,12 +12,13 @@ export async function GET(request: Request) {
 
     const db = getDatabase();
     const submission = await db.prepare(`
-      SELECT id, user_id, student_name, status, mcq_answers
+      SELECT id, user_id, student_name, paper_id, status, mcq_answers
       FROM submissions WHERE id = ?
     `).bind(id).first<{
       id: string;
       user_id: string;
       student_name: string;
+      paper_id: string;
       status: string;
       mcq_answers: string;
     }>();
@@ -32,6 +34,7 @@ export async function GET(request: Request) {
       found: true,
       status: submission.status,
       studentName: submission.student_name,
+      paperId: submission.paper_id,
       answers: JSON.parse(submission.mcq_answers),
       uploads: uploads.results.map((upload) => ({
         id: upload.id,
@@ -53,16 +56,20 @@ export async function POST(request: Request) {
 
     const payload = await request.json() as {
       attemptId?: string;
+      paperId?: string;
       studentName?: string;
       answers?: Record<string, number>;
     };
     const id = payload.attemptId?.trim() ?? '';
+    const paperId = payload.paperId?.trim() ?? '';
     const studentName = payload.studentName?.trim() ?? '';
     const answers = payload.answers ?? {};
+    const assessment = getPaperAssessment(paperId);
     if (!attemptIdPattern.test(id)) return jsonError('Invalid test attempt.', 400);
+    if (!assessment) return jsonError('This question paper is not available.', 400);
     if (studentName.length > 80) return jsonError('The student name is too long.', 400);
-    if (Object.keys(answers).length > 16) return jsonError('Too many MCQ answers were received.', 400);
-    if (Object.entries(answers).some(([q, a]) => !/^(?:[1-9]|1[0-6])$/.test(q) || !Number.isInteger(a) || a < 0 || a > 3)) {
+    if (Object.keys(answers).length > Object.keys(assessment.mcqAnswerKey).length) return jsonError('Too many MCQ answers were received.', 400);
+    if (Object.entries(answers).some(([q, a]) => !(Number(q) in assessment.mcqAnswerKey) || !Number.isInteger(a) || a < 0 || a > 3)) {
       return jsonError('One or more MCQ answers are invalid.', 400);
     }
 
@@ -70,12 +77,13 @@ export async function POST(request: Request) {
     await db.prepare(`
       INSERT OR IGNORE INTO submissions
         (id, user_id, user_email, student_name, paper_id, status, mcq_answers)
-      VALUES (?, ?, ?, ?, 'real-numbers-01', 'draft', ?)
-    `).bind(id, owner.userId, owner.email, studentName, JSON.stringify(answers)).run();
+      VALUES (?, ?, ?, ?, ?, 'draft', ?)
+    `).bind(id, owner.userId, owner.email, studentName, paperId, JSON.stringify(answers)).run();
 
-    const row = await db.prepare('SELECT id, user_id, status FROM submissions WHERE id = ?')
-      .bind(id).first<{ id: string; user_id: string; status: string }>();
+    const row = await db.prepare('SELECT id, user_id, paper_id, status FROM submissions WHERE id = ?')
+      .bind(id).first<{ id: string; user_id: string; paper_id: string; status: string }>();
     if (!row || !ownsAttempt(request, row.user_id)) return jsonError('This test attempt belongs to another student.', 403);
+    if (row.paper_id !== paperId) return jsonError('This saved attempt belongs to a different question paper.', 409);
     if (row.status !== 'draft') return Response.json({ id, status: row.status });
 
     await db.prepare(`

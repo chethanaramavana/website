@@ -1,4 +1,4 @@
-import { mcqAnswerKey, scoreMcqs, writtenQuestionMarks, writtenSolutions } from '@/lib/assessment';
+import { getPaperAssessment, scoreMcqs, writtenQuestionMarks } from '@/lib/assessment';
 import { getAttemptOwner, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
 
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
@@ -9,22 +9,24 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     const { id } = await context.params;
     const db = getDatabase();
     const submission = await db.prepare(`
-      SELECT user_id, status, mcq_answers, mcq_score FROM submissions WHERE id = ?
-    `).bind(id).first<{ user_id: string; status: string; mcq_answers: string; mcq_score: number }>();
+      SELECT user_id, paper_id, status, mcq_answers, mcq_score FROM submissions WHERE id = ?
+    `).bind(id).first<{ user_id: string; paper_id: string; status: string; mcq_answers: string; mcq_score: number }>();
     if (!submission || !ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
+    const assessment = getPaperAssessment(submission.paper_id);
+    if (!assessment) return jsonError('This question paper is no longer available.', 400);
     if (submission.status !== 'draft') {
       return Response.json({
         id,
         status: submission.status,
         mcqScore: submission.mcq_score,
-        mcqMaximum: 16,
-        correctAnswers: mcqAnswerKey,
-        writtenSolutions,
+        mcqMaximum: Object.keys(assessment.mcqAnswerKey).length,
+        correctAnswers: assessment.mcqAnswerKey,
+        writtenSolutions: assessment.writtenSolutions,
       });
     }
 
     const answers = JSON.parse(submission.mcq_answers) as Record<string, number>;
-    if (Object.keys(answers).length !== Object.keys(mcqAnswerKey).length) return jsonError('Please answer every MCQ.', 400);
+    if (Object.keys(answers).length !== Object.keys(assessment.mcqAnswerKey).length) return jsonError('Please answer every MCQ.', 400);
     const uploads = await db.prepare(`
       SELECT question_number, COUNT(*) AS file_count FROM answer_uploads
       WHERE submission_id = ? GROUP BY question_number
@@ -33,7 +35,7 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     const missing = Object.keys(writtenQuestionMarks).map(Number).filter((question) => !uploadedQuestions.has(question));
     if (missing.length) return jsonError(`Upload an answer for question${missing.length > 1 ? 's' : ''} ${missing.join(', ')}.`, 400);
 
-    const score = scoreMcqs(answers);
+    const score = scoreMcqs(answers, assessment.mcqAnswerKey);
     await db.prepare(`
       UPDATE submissions SET status = 'submitted', mcq_score = ?, submitted_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP WHERE id = ? AND user_id = ? AND status = 'draft'
@@ -42,9 +44,9 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
       id,
       status: 'submitted',
       mcqScore: score,
-      mcqMaximum: 16,
-      correctAnswers: mcqAnswerKey,
-      writtenSolutions,
+      mcqMaximum: Object.keys(assessment.mcqAnswerKey).length,
+      correctAnswers: assessment.mcqAnswerKey,
+      writtenSolutions: assessment.writtenSolutions,
     });
   } catch (error) {
     console.error('finalize submission failed', error);

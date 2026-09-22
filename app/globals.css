@@ -161,10 +161,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .payment-qr-card a:hover { text-decoration: underline; }
 .payment-steps { display: grid; gap: 14px; }
 .payment-steps .test-price-card { margin: 0; }
-.payment-steps ol { margin: 0; padding-left: 21px; color: #5e5968; font-size: .82rem; line-height: 1.6; }
-.payment-steps li + li { margin-top: 5px; }
-.payment-safety-note { margin: 0; padding: 11px 12px; display: flex; gap: 9px; align-items: flex-start; border: 1px solid #c9e5dc; border-radius: 12px; color: #286d55; background: #eef9f5; font-size: .75rem; line-height: 1.45; }
-.payment-safety-note svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.payment-brief { margin: 0; color: #5e5968; font-size: .84rem; line-height: 1.55; }
 .payment-confirmation { padding: 12px; display: flex; gap: 11px; align-items: flex-start; border: 1px solid #d8cce7; border-radius: 12px; color: var(--navy); background: #faf8fd; cursor: pointer; }
 .payment-confirmation:hover { border-color: #a990ca; }
 .payment-confirmation input { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 2px; accent-color: var(--primary); }
@@ -208,8 +205,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .student-fields label span { min-height: 24px; flex: 1; border-bottom: 1px solid #687780; }
 .student-fields input { min-width: 0; height: 34px; flex: 1; padding: 0 8px; border: 0; border-bottom: 1px solid #687780; border-radius: 0; color: var(--navy); background: transparent; outline: 0; }
 .student-fields input:focus { border-bottom-color: var(--blue); box-shadow: 0 2px 0 var(--blue); }
-.student-fields-note { grid-column: 1 / -1; margin: -12px 0 0; display: flex; align-items: center; gap: 6px; color: #39735e; font-size: .72rem; font-weight: 750; }
-.student-fields-note svg { width: 15px; flex: 0 0 15px; }
 .draft-save-bar { margin: 15px 0 0; padding: 11px 13px; display: flex; align-items: center; gap: 10px; border: 1px solid #c8ded4; border-radius: 10px; color: #285b47; background: #edf7f1; font-family: var(--font-geist-sans), Arial, sans-serif; }
 .draft-save-bar > span { width: 31px; height: 31px; flex: 0 0 31px; display: grid; place-items: center; border-radius: 50%; color: white; background: #2c8b67; }
 .draft-save-bar > span svg { width: 16px; }
@@ -510,7 +505,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .paper-heading > p { margin-top: 17px; font-size: .68rem; }
   .paper-meta { font-size: .7rem; }
   .student-fields { grid-template-columns: 1fr; gap: 10px; }
-  .student-fields-note { margin-top: 0; }
   .paper-instructions { padding: 14px 14px 14px 16px; }
   .exam-section > header { align-items: flex-start; }
   .exam-section > header > span { padding-top: 2px; }

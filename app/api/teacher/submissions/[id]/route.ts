@@ -8,7 +8,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     const { id } = await context.params;
     const db = getDatabase();
     const submission = await db.prepare(`
-      SELECT id, student_name, user_email, status, mcq_score, written_score, total_score,
+      SELECT id, paper_id, student_name, user_email, status, mcq_score, written_score, total_score,
         teacher_feedback, submitted_at, marked_at FROM submissions WHERE id = ? AND status != 'draft'
     `).bind(id).first();
     if (!submission) return jsonError('Submission not found.', 404);

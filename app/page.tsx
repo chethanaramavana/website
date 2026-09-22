@@ -129,12 +129,82 @@ const realNumbersMcqs = [
   },
 ] as const;
 
+const applicationsTrigonometryMcqs = [
+  { number: 1, question: 'A 20 m high pole casts a shadow 20√3 m long. The angle of elevation of the Sun is', options: ['30°', '45°', '60°', '90°'] },
+  { number: 2, question: 'From a point 30 m from the foot of a tower, its top is seen at an angle of elevation of 45°. The height of the tower is', options: ['15 m', '30 m', '30√3 m', '60 m'] },
+  { number: 3, question: 'The angle of depression of a car from the top of a building is 45°. The angle of elevation of the top of the building from the car is', options: ['30°', '45°', '60°', '90°'] },
+  { number: 4, question: 'A 10 m ladder makes an angle of 60° with the ground. The height reached on the wall is', options: ['5 m', '5√3 m', '10√3 m', '20 m'] },
+  { number: 5, question: 'A 15 m high tower is viewed from a point 15√3 m away. The angle of elevation is', options: ['30°', '45°', '60°', '75°'] },
+  { number: 6, question: 'If the length of the shadow of a vertical pole is equal to its height, the angle of elevation of the Sun is', options: ['30°', '45°', '60°', '90°'] },
+  { number: 7, question: 'The straight line joining an observer’s eye to the object being viewed is called the', options: ['horizontal line', 'line of sight', 'vertical line', 'base line'] },
+  { number: 8, question: 'The top of a tower is seen at 30° from a point 50 m from its foot. The height of the tower is', options: ['25 m', '25√3 m', '50√3/3 m', '50√3 m'] },
+  { number: 9, question: 'A student 1.5 m tall stands 20 m from a building. If the angle of elevation of its top from her eye is 45°, the building is', options: ['18.5 m', '20 m', '21.5 m', '40 m'] },
+  { number: 10, question: 'A taut 100 m kite string makes an angle of 60° with the horizontal. Ignoring the height of the hand, the kite is at a height of', options: ['50 m', '50√3 m', '100 m', '100√3 m'] },
+  { number: 11, question: 'An aeroplane at a height of 1000 m is seen at an angle of elevation of 30°. The line-of-sight distance is', options: ['500 m', '1000 m', '1000√3 m', '2000 m'] },
+  { number: 12, question: 'As an observer walks towards a tower on level ground, the angle of elevation of its top generally', options: ['decreases', 'increases', 'remains unchanged', 'becomes zero'] },
+  { number: 13, question: 'From the top of a 30 m lighthouse, the angle of depression of a boat is 60°. Its horizontal distance from the lighthouse is', options: ['10√3 m', '15√3 m', '30√3 m', '60 m'] },
+  { number: 14, question: 'When the angle of elevation of the Sun increases, the shadow of a fixed vertical object', options: ['becomes longer', 'becomes shorter', 'remains the same', 'first doubles'] },
+] as const;
+
 const assertionReasonOptions = [
   'Both A and R are true, and R is the correct explanation of A.',
   'Both A and R are true, but R is not the correct explanation of A.',
   'A is true, but R is false.',
   'A is false, but R is true.',
 ] as const;
+
+type PaperDefinition = {
+  id: 'real-numbers-01' | 'applications-trigonometry-01';
+  chapter: 'Real Numbers' | 'Some Applications of Trigonometry';
+  chapterNumber: number;
+  paperNumber: string;
+  mcqs: readonly { number: number; question: string; options: readonly string[] }[];
+  assertions: readonly { number: number; assertion: string; reason: string }[];
+  focus: string;
+  written: Record<number, string | readonly string[]>;
+  caseStudy: string;
+};
+
+const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
+  'Real Numbers': {
+    id: 'real-numbers-01', chapter: 'Real Numbers', chapterNumber: 1, paperNumber: '01', mcqs: realNumbersMcqs,
+    assertions: [
+      { number: 15, assertion: 'HCF(26, 91) = 13.', reason: '26 = 2 × 13 and 91 = 7 × 13, and 13 is their greatest common factor.' },
+      { number: 16, assertion: '√2 + √3 is an irrational number.', reason: 'The sum of any two irrational numbers is always irrational.' },
+    ],
+    focus: 'The paper covers the Fundamental Theorem of Arithmetic and proofs of irrationality.',
+    written: {
+      17: 'Using prime factorisation, find the HCF of 378 and 504.',
+      18: 'Show that 7√5 is irrational.',
+      19: 'Find the least positive number that is exactly divisible by 45, 60 and 75.',
+      20: 'The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.',
+      21: 'Prove that 3 + 2√5 is irrational.',
+      22: 'A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.',
+      23: ['(a) Prove that √3 is irrational.', '(b) Hence, prove that 5 + 2√3 is irrational.'],
+      24: ['(a) Write the prime factorisation of 210. [1]', '(b) Find the greatest possible number of identical packets. [1]', '(c) Find the number of red, blue and gold tokens in each packet. Hence find the total number of tokens in one packet. [2]'],
+    },
+    caseStudy: 'For Mathematics Day, a teacher has 84 red tokens, 126 blue tokens and 210 gold tokens. She wants to make the greatest possible number of identical prize packets, using every token and placing the same number of each colour in every packet.',
+  },
+  'Some Applications of Trigonometry': {
+    id: 'applications-trigonometry-01', chapter: 'Some Applications of Trigonometry', chapterNumber: 9, paperNumber: '01', mcqs: applicationsTrigonometryMcqs,
+    assertions: [
+      { number: 15, assertion: 'If the height of a tower equals the horizontal distance of an observer from its foot, the angle of elevation of its top is 45°.', reason: 'tan 45° = 1.' },
+      { number: 16, assertion: 'The angle of depression of an object from a horizontal line equals the angle of elevation of the observer from the object.', reason: 'The two horizontal lines are parallel, so the relevant alternate interior angles are equal.' },
+    ],
+    focus: 'Draw a labelled right triangle wherever required. Assume the ground is level and objects are vertical.',
+    written: {
+      17: 'A tree casts a shadow 10√3 m long when the angle of elevation of the Sun is 30°. Find the height of the tree.',
+      18: 'A 13 m ladder reaches a window 12 m above the ground. Find the distance of the foot of the ladder from the wall.',
+      19: 'A 50 m kite string makes an angle of 60° with the horizontal. If the hand holding it is 1.5 m above the ground, find the height of the kite above the ground.',
+      20: 'From a point 20 m from the foot of a vertical tower, the angle of elevation of its top is 60°. Draw a labelled figure and find the height of the tower.',
+      21: 'From the top of a 20 m building, the angle of depression of the foot of a tower is 30° and the angle of elevation of its top is 45°. Find the height of the tower.',
+      22: 'The angles of elevation of the top of a tower from two points on the same straight line with its foot are 60° and 30°. The points are 20 m apart and lie on the same side of the tower. Find the height of the tower.',
+      23: ['From the top of a 60 m lighthouse, the angles of depression of two boats on the same side are 30° and 60°.', '(a) Draw a labelled diagram.', '(b) Find the distance between the two boats.'],
+      24: ['(a) Name the trigonometric ratio that relates height and horizontal distance. [1]', '(b) If the original distance is x metres, write the two equations for the observations. [1]', '(c) Find the original distance from the tower and the height of the tower. [2]'],
+    },
+    caseStudy: 'A surveyor observes the top of a tower at an angle of elevation of 45°. After walking 40 m directly towards the tower, the angle becomes 60°. The surveyor’s eye level is taken at ground level for this calculation.',
+  },
+};
 
 type BoardName = (typeof boards)[number]['name'];
 
@@ -274,19 +344,23 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentConfirmed, setPaymentConfirmed] = useState(false);
-  const isAvailablePaper = pendingChapter === 'Real Numbers';
+  const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
+
+  function paymentKey(chapter: string) {
+    return `rmc-${chapter.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-payment-confirmed`;
+  }
 
   function openChapter(nextChapter: string) {
     setPendingChapter(nextChapter);
     setPaymentConfirmed(
-      nextChapter === 'Real Numbers'
-      && localStorage.getItem('rmc-real-numbers-payment-confirmed') === 'yes',
+      nextChapter in paperDefinitions
+      && localStorage.getItem(paymentKey(nextChapter)) === 'yes',
     );
   }
 
   function beginTest() {
     if (!pendingChapter || !isAvailablePaper || !paymentConfirmed) return;
-    localStorage.setItem('rmc-real-numbers-payment-confirmed', 'yes');
+    localStorage.setItem(paymentKey(pendingChapter), 'yes');
     onOpenChapter(pendingChapter);
     setPendingChapter(null);
   }
@@ -320,7 +394,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
             <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'Scan the PhonePe QR, pay exactly ₹30 and confirm below before starting.'
+                ? 'Scan the PhonePe QR and complete the ₹30 payment before starting.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
@@ -332,15 +406,10 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
               </div>
               <div className="payment-steps">
                 <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
-                <ol>
-                  <li>Scan the QR using PhonePe or another UPI app.</li>
-                  <li>Enter and pay exactly <strong>₹30</strong>.</li>
-                  <li>Before paying, check that the receiver is <strong>CHETHANA R V</strong>.</li>
-                </ol>
-                <p className="payment-safety-note"><ShieldCheck /> Never share your UPI PIN or OTP with this website. Keep the payment confirmation or transaction ID.</p>
+                <p className="payment-brief">Pay exactly <strong>₹30</strong> and check that the receiver is <strong>CHETHANA R V</strong>.</p>
                 <label className="payment-confirmation">
                   <input type="checkbox" checked={paymentConfirmed} onChange={(event) => setPaymentConfirmed(event.target.checked)} />
-                  <span><strong>I have paid ₹30</strong><small>The website does not verify PhonePe automatically yet.</small></span>
+                  <span><strong>Payment successful</strong><small>Open the question paper</small></span>
                 </label>
               </div>
             </div>
@@ -360,8 +429,9 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
 }
 
 function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome: () => void; onChapters: () => void }) {
-  if (chapter === 'Real Numbers') {
-    return <RealNumbersPaper onHome={onHome} onChapters={onChapters} />;
+  const paper = paperDefinitions[chapter as PaperDefinition['chapter']];
+  if (paper) {
+    return <ChapterPaper paper={paper} onHome={onHome} onChapters={onChapters} />;
   }
 
   return (
@@ -382,10 +452,9 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
 
 type SavedUpload = { id: string; fileName: string };
 
-const realNumbersAttemptIdKey = 'rmc-real-numbers-attempt-id';
-const realNumbersAttemptSecretKey = 'rmc-real-numbers-attempt-secret';
-
-function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapters: () => void }) {
+function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; onHome: () => void; onChapters: () => void }) {
+  const attemptIdKey = `rmc-${paper.id}-attempt-id`;
+  const attemptSecretKey = `rmc-${paper.id}-attempt-secret`;
   const [studentName, setStudentName] = useState('');
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [writtenFiles, setWrittenFiles] = useState<Record<number, File[]>>({});
@@ -436,7 +505,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       await readResponse(await fetch('/api/submissions', {
         method: 'POST',
         headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
-        body: JSON.stringify({ attemptId, studentName: studentName.trim(), answers }),
+        body: JSON.stringify({ attemptId, paperId: paper.id, studentName: studentName.trim(), answers }),
       }));
       if (sequence === saveSequence.current) setSaveMessage(successMessage);
     } catch (error) {
@@ -540,12 +609,12 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
     const createCredentials = () => {
       const id = crypto.randomUUID();
       const secret = crypto.randomUUID();
-      localStorage.setItem(realNumbersAttemptIdKey, id);
-      localStorage.setItem(realNumbersAttemptSecretKey, secret);
+      localStorage.setItem(attemptIdKey, id);
+      localStorage.setItem(attemptSecretKey, secret);
       return { id, secret };
     };
-    const storedId = localStorage.getItem(realNumbersAttemptIdKey);
-    const storedSecret = localStorage.getItem(realNumbersAttemptSecretKey);
+    const storedId = localStorage.getItem(attemptIdKey);
+    const storedSecret = localStorage.getItem(attemptSecretKey);
     const credentials = storedId && storedSecret ? { id: storedId, secret: storedSecret } : createCredentials();
     setAttemptId(credentials.id);
     setAttemptKey(credentials.secret);
@@ -579,7 +648,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       }
     })();
     return () => { cancelled = true; };
-  }, []);
+  }, [attemptIdKey, attemptSecretKey]);
 
   useEffect(() => {
     if (!draftLoaded || !attemptId || !attemptKey || result) return;
@@ -638,8 +707,8 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         correctAnswers: final.correctAnswers as Record<string, number>,
         writtenSolutions: final.writtenSolutions as Record<string, string>,
       });
-      localStorage.removeItem(realNumbersAttemptIdKey);
-      localStorage.removeItem(realNumbersAttemptSecretKey);
+      localStorage.removeItem(attemptIdKey);
+      localStorage.removeItem(attemptSecretKey);
       setProgress('');
     } catch (error) {
       setProgress('');
@@ -652,7 +721,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
-        <Breadcrumb items={['CBSE', 'Grade 10', 'Real Numbers']} onHome={() => requestExit(onHome)} />
+        <Breadcrumb items={['CBSE', 'Grade 10', paper.chapter]} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
           <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
           <button className="print-button" type="button" onClick={() => window.print()}><Printer /> Print paper</button>
@@ -662,16 +731,15 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       <article className="question-paper">
         <header className="paper-heading">
           <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
-          <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper 01</strong></div>
+          <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {paper.paperNumber}</strong></div>
           <p>CBSE Mathematics (Standard) · Grade 10</p>
-          <h1>Chapter 1 — Real Numbers</h1>
+          <h1>Chapter {paper.chapterNumber} — {paper.chapter}</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
         </header>
 
         <section className="student-fields" aria-label="Student details">
           <label>Student name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your name" /></label>
           <label>Date <span>{new Date().toLocaleDateString()}</span></label>
-          <p className="student-fields-note"><CheckCircle2 /> No student ID is required—only enter your name.</p>
         </section>
 
         <section className={`draft-save-bar ${submissionError ? 'error' : ''}`} aria-live="polite">
@@ -685,13 +753,13 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             <li>This paper contains 24 compulsory questions divided into Sections A to E.</li>
             <li>Tick one correct option for each MCQ. Write descriptive answers on paper, then upload the scan below the matching question.</li>
             <li>Show the required steps and reasoning. Use of calculators is not allowed.</li>
-            <li>The paper covers the Fundamental Theorem of Arithmetic and proofs of irrationality.</li>
+            <li>{paper.focus}</li>
           </ol>
         </section>
 
         <PaperSection title="Section A" subtitle="Questions 1–16 carry 1 mark each." marks="16 × 1 = 16">
           <div className="mcq-list">
-            {realNumbersMcqs.map((item) => (
+            {paper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
                 <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b></legend>
                 <div className="option-grid">
@@ -711,50 +779,39 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             <ol type="A">{assertionReasonOptions.map((option) => <li key={option}>{option}</li>)}</ol>
           </div>
 
-          <AssertionQuestion
-            number={15}
-            assertion="HCF(26, 91) = 13."
-            reason="26 = 2 × 13 and 91 = 7 × 13, and 13 is their greatest common factor."
-            selected={answers['15']}
-            onChange={(answer) => setAnswers((current) => ({ ...current, 15: answer }))}
-          />
-          <AssertionQuestion
-            number={16}
-            assertion="√2 + √3 is an irrational number."
-            reason="The sum of any two irrational numbers is always irrational."
-            selected={answers['16']}
-            onChange={(answer) => setAnswers((current) => ({ ...current, 16: answer }))}
-          />
+          {paper.assertions.map((item) => (
+            <AssertionQuestion
+              key={item.number}
+              number={item.number}
+              assertion={item.assertion}
+              reason={item.reason}
+              selected={answers[String(item.number)]}
+              onChange={(answer) => setAnswers((current) => ({ ...current, [String(item.number)]: answer }))}
+            />
+          ))}
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          <WrittenQuestion number={17} marks={2} files={writtenFiles[17] ?? []} savedFiles={savedUploads[17] ?? []} isSaving={Boolean(uploadingQuestions[17])} onFilesChange={(files) => updateWrittenFiles(17, files)}>Using prime factorisation, find the HCF of 378 and 504.</WrittenQuestion>
-          <WrittenQuestion number={18} marks={2} files={writtenFiles[18] ?? []} savedFiles={savedUploads[18] ?? []} isSaving={Boolean(uploadingQuestions[18])} onFilesChange={(files) => updateWrittenFiles(18, files)}>Show that 7√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={19} marks={2} files={writtenFiles[19] ?? []} savedFiles={savedUploads[19] ?? []} isSaving={Boolean(uploadingQuestions[19])} onFilesChange={(files) => updateWrittenFiles(19, files)}>Find the least positive number that is exactly divisible by 45, 60 and 75.</WrittenQuestion>
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          <WrittenQuestion number={20} marks={3} files={writtenFiles[20] ?? []} savedFiles={savedUploads[20] ?? []} isSaving={Boolean(uploadingQuestions[20])} onFilesChange={(files) => updateWrittenFiles(20, files)}>The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.</WrittenQuestion>
-          <WrittenQuestion number={21} marks={3} files={writtenFiles[21] ?? []} savedFiles={savedUploads[21] ?? []} isSaving={Boolean(uploadingQuestions[21])} onFilesChange={(files) => updateWrittenFiles(21, files)}>Prove that 3 + 2√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={22} marks={3} files={writtenFiles[22] ?? []} savedFiles={savedUploads[22] ?? []} isSaving={Boolean(uploadingQuestions[22])} onFilesChange={(files) => updateWrittenFiles(22, files)}>A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.</WrittenQuestion>
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
           <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} onFilesChange={(files) => updateWrittenFiles(23, files)}>
-            <span>(a) Prove that √3 is irrational.</span>
-            <span>(b) Hence, prove that 5 + 2√3 is irrational.</span>
+            <QuestionContent value={paper.written[23]} />
           </WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section E" subtitle="Question 24 is a case-study question carrying 4 marks." marks="1 × 4 = 4">
           <div className="case-study">
             <div className="case-study-label">Case study</div>
-            <p>For Mathematics Day, a teacher has 84 red tokens, 126 blue tokens and 210 gold tokens. She wants to make the greatest possible number of identical prize packets, using every token and placing the same number of each colour in every packet.</p>
+            <p>{paper.caseStudy}</p>
           </div>
           <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} onFilesChange={(files) => updateWrittenFiles(24, files)}>
-            <span>(a) Write the prime factorisation of 210. <b>[1]</b></span>
-            <span>(b) Find the greatest possible number of identical packets. <b>[1]</b></span>
-            <span>(c) Find the number of red, blue and gold tokens in each packet. Hence find the total number of tokens in one packet. <b>[2]</b></span>
+            <QuestionContent value={paper.written[24]} />
           </WrittenQuestion>
         </PaperSection>
 
@@ -777,7 +834,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             <div className="answer-review-section">
               <h3>Section A — MCQ answers</h3>
               <div className="mcq-answer-review">
-                {realNumbersMcqs.map((item) => {
+                {paper.mcqs.map((item) => {
                   const studentAnswer = answers[String(item.number)];
                   const correctAnswer = result.correctAnswers[String(item.number)];
                   const isCorrect = studentAnswer === correctAnswer;
@@ -851,6 +908,10 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       </Dialog>
     </div>
   );
+}
+
+function QuestionContent({ value }: { value: string | readonly string[] }) {
+  return Array.isArray(value) ? <>{value.map((line) => <span key={line}>{line}</span>)}</> : <>{value}</>;
 }
 
 function PaperSection({ title, subtitle, marks, children }: { title: string; subtitle: string; marks: string; children: ReactNode }) {
