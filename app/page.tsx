@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
@@ -15,6 +15,7 @@ import {
   LockKeyhole,
   Loader2,
   Printer,
+  Save,
   Send,
   ShieldCheck,
   Upload,
@@ -355,12 +356,25 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
   );
 }
 
+type SavedUpload = { id: string; fileName: string };
+
+const realNumbersAttemptIdKey = 'rmc-real-numbers-attempt-id';
+const realNumbersAttemptSecretKey = 'rmc-real-numbers-attempt-secret';
+
 function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapters: () => void }) {
   const [studentName, setStudentName] = useState('');
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [writtenFiles, setWrittenFiles] = useState<Record<number, File[]>>({});
-  const [attemptId] = useState(() => crypto.randomUUID());
+  const [savedUploads, setSavedUploads] = useState<Record<number, SavedUpload[]>>({});
+  const [attemptId, setAttemptId] = useState('');
+  const [attemptKey, setAttemptKey] = useState('');
+  const [draftLoaded, setDraftLoaded] = useState(false);
+  const [savingDraft, setSavingDraft] = useState(false);
+  const [uploadingQuestions, setUploadingQuestions] = useState<Record<number, boolean>>({});
+  const [saveMessage, setSaveMessage] = useState('Your answers will save automatically.');
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [exitAction, setExitAction] = useState<{ run: () => void } | null>(null);
+  const [exitSaving, setExitSaving] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [progress, setProgress] = useState('');
   const [submissionError, setSubmissionError] = useState('');
@@ -372,13 +386,199 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
     writtenSolutions: Record<string, string>;
   } | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
+  const saveSequence = useRef(0);
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
+  const isSaving = savingDraft || Object.values(uploadingQuestions).some(Boolean);
+  const hasWork = Boolean(
+    studentName.trim()
+    || Object.keys(answers).length
+    || Object.values(writtenFiles).some((files) => files.length)
+    || Object.values(savedUploads).some((files) => files.length),
+  );
+
+  async function readResponse(response: Response) {
+    const payload = await response.json() as Record<string, unknown>;
+    if (!response.ok) throw new Error(String(payload.error ?? 'Something went wrong.'));
+    return payload;
+  }
+
+  async function saveDraftMetadata(successMessage = 'Saved automatically.') {
+    if (!draftLoaded || !attemptId || !attemptKey || result) return;
+    const sequence = ++saveSequence.current;
+    setSavingDraft(true);
+    setSaveMessage('Saving answers…');
+    try {
+      await readResponse(await fetch('/api/submissions', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
+        body: JSON.stringify({ attemptId, studentName: studentName.trim(), answers }),
+      }));
+      if (sequence === saveSequence.current) setSaveMessage(successMessage);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Answers could not be saved.';
+      setSaveMessage(message);
+      throw error;
+    } finally {
+      if (sequence === saveSequence.current) setSavingDraft(false);
+    }
+  }
+
+  async function uploadQuestionFiles(question: number, files: File[]) {
+    if (!files.length || !attemptId || !attemptKey) return;
+    setUploadingQuestions((current) => ({ ...current, [question]: true }));
+    setSaveMessage(`Saving answer for question ${question}…`);
+    try {
+      const startingIndex = savedUploads[question]?.length ?? 0;
+      const uploaded: SavedUpload[] = [];
+      for (let index = 0; index < files.length; index += 1) {
+        const file = files[index];
+        const uploadId = `${attemptId}-${question}-${startingIndex + index}`;
+        const response = await fetch(`/api/submissions/${attemptId}/upload?question=${question}`, {
+          method: 'POST',
+          headers: {
+            'content-type': file.type,
+            'x-attempt-key': attemptKey,
+            'x-file-name': encodeURIComponent(file.name),
+            'x-file-size': String(file.size),
+            'x-upload-id': uploadId,
+          },
+          body: file,
+        });
+        await readResponse(response);
+        uploaded.push({ id: uploadId, fileName: file.name });
+      }
+      setSavedUploads((current) => {
+        const existing = current[question] ?? [];
+        const merged = [...existing];
+        uploaded.forEach((item) => {
+          const itemIndex = merged.findIndex((existingItem) => existingItem.id === item.id);
+          if (itemIndex >= 0) merged[itemIndex] = item;
+          else merged.push(item);
+        });
+        return { ...current, [question]: merged };
+      });
+      setWrittenFiles((current) => current[question] === files ? { ...current, [question]: [] } : current);
+      setSaveMessage(`Question ${question} answer saved.`);
+    } finally {
+      setUploadingQuestions((current) => ({ ...current, [question]: false }));
+    }
+  }
+
+  async function saveQuestionFiles(question: number, files: File[]) {
+    try {
+      await saveDraftMetadata('Answers saved.');
+      await uploadQuestionFiles(question, files);
+    } catch (error) {
+      setSubmissionError(error instanceof Error ? error.message : 'This answer could not be saved. Please press Save answers and try again.');
+    }
+  }
+
+  async function saveEverything() {
+    setSubmissionError('');
+    try {
+      await saveDraftMetadata('Answers saved.');
+      const pending = writtenQuestions
+        .map((question) => ({ question, files: writtenFiles[question] ?? [] }))
+        .filter((entry) => entry.files.length);
+      for (const entry of pending) await uploadQuestionFiles(entry.question, entry.files);
+      setSaveMessage('All answers saved. You can safely return later.');
+      return true;
+    } catch (error) {
+      setSubmissionError(error instanceof Error ? error.message : 'Answers could not be saved. Please try again.');
+      return false;
+    }
+  }
+
+  function updateWrittenFiles(question: number, files: File[]) {
+    setWrittenFiles((current) => ({ ...current, [question]: files }));
+    if (files.length) void saveQuestionFiles(question, files);
+  }
+
+  function requestExit(action: () => void) {
+    if (result || !hasWork) action();
+    else setExitAction({ run: action });
+  }
+
+  async function saveAndExit() {
+    if (!exitAction) return;
+    setExitSaving(true);
+    const saved = await saveEverything();
+    setExitSaving(false);
+    if (!saved) return;
+    const action = exitAction.run;
+    setExitAction(null);
+    action();
+  }
+
+  useEffect(() => {
+    let cancelled = false;
+    const createCredentials = () => {
+      const id = crypto.randomUUID();
+      const secret = crypto.randomUUID();
+      localStorage.setItem(realNumbersAttemptIdKey, id);
+      localStorage.setItem(realNumbersAttemptSecretKey, secret);
+      return { id, secret };
+    };
+    const storedId = localStorage.getItem(realNumbersAttemptIdKey);
+    const storedSecret = localStorage.getItem(realNumbersAttemptSecretKey);
+    const credentials = storedId && storedSecret ? { id: storedId, secret: storedSecret } : createCredentials();
+    setAttemptId(credentials.id);
+    setAttemptKey(credentials.secret);
+
+    void (async () => {
+      try {
+        const payload = await readResponse(await fetch(`/api/submissions?attemptId=${encodeURIComponent(credentials.id)}`, {
+          cache: 'no-store',
+          headers: { 'x-attempt-key': credentials.secret },
+        }));
+        if (cancelled) return;
+        if (payload.found && payload.status === 'draft') {
+          setStudentName(String(payload.studentName ?? ''));
+          setAnswers((payload.answers ?? {}) as Record<string, number>);
+          const grouped: Record<number, SavedUpload[]> = {};
+          const uploads = Array.isArray(payload.uploads) ? payload.uploads as Array<{ id: string; question: number; fileName: string }> : [];
+          uploads.forEach((upload) => {
+            grouped[upload.question] = [...(grouped[upload.question] ?? []), { id: upload.id, fileName: upload.fileName }];
+          });
+          setSavedUploads(grouped);
+          setSaveMessage('Your saved answers have been restored.');
+        } else if (payload.found) {
+          const next = createCredentials();
+          setAttemptId(next.id);
+          setAttemptKey(next.secret);
+        }
+      } catch {
+        if (!cancelled) setSaveMessage('Could not check saved answers. Your new answers will still save automatically.');
+      } finally {
+        if (!cancelled) setDraftLoaded(true);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  useEffect(() => {
+    if (!draftLoaded || !attemptId || !attemptKey || result) return;
+    const timer = window.setTimeout(() => {
+      void saveDraftMetadata().catch(() => {});
+    }, 900);
+    return () => window.clearTimeout(timer);
+  }, [studentName, answers, draftLoaded, attemptId, attemptKey, result]);
+
+  useEffect(() => {
+    if (!hasWork || result) return;
+    const confirmBrowserExit = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', confirmBrowserExit);
+    return () => window.removeEventListener('beforeunload', confirmBrowserExit);
+  }, [hasWork, result]);
 
   function validateTest() {
     if (studentName.trim().length < 2) return 'Enter the student name at the top of the paper.';
     if (Object.keys(answers).length !== 16) return `Answer all 16 MCQs. ${16 - Object.keys(answers).length} remaining.`;
-    const missingUploads = writtenQuestions.filter((question) => !(writtenFiles[question]?.length));
+    const missingUploads = writtenQuestions.filter((question) => !(writtenFiles[question]?.length) && !(savedUploads[question]?.length));
     if (missingUploads.length) return `Upload written answers for question${missingUploads.length > 1 ? 's' : ''} ${missingUploads.join(', ')}.`;
     const largeFile = Object.values(writtenFiles).flat().find((file) => file.size > 10 * 1024 * 1024);
     if (largeFile) return `${largeFile.name} is larger than 10 MB. Choose a smaller photo or PDF.`;
@@ -391,45 +591,22 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
     if (!error) setConfirmOpen(true);
   }
 
-  async function readResponse(response: Response) {
-    const payload = await response.json() as Record<string, unknown>;
-    if (!response.ok) throw new Error(String(payload.error ?? 'Something went wrong.'));
-    return payload;
-  }
-
   async function submitTest() {
     setConfirmOpen(false);
     setSubmitting(true);
     setSubmissionError('');
     try {
-      setProgress('Preparing your test…');
-      await readResponse(await fetch('/api/submissions', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ attemptId, studentName: studentName.trim(), answers }),
-      }));
-
-      const uploadEntries = writtenQuestions.flatMap((question) =>
-        (writtenFiles[question] ?? []).map((file, index) => ({ question, file, index })),
-      );
-      for (let index = 0; index < uploadEntries.length; index += 1) {
-        const upload = uploadEntries[index];
-        setProgress(`Uploading written answers ${index + 1} of ${uploadEntries.length}…`);
-        const response = await fetch(`/api/submissions/${attemptId}/upload?question=${upload.question}`, {
-          method: 'POST',
-          headers: {
-            'content-type': upload.file.type,
-            'x-file-name': encodeURIComponent(upload.file.name),
-            'x-file-size': String(upload.file.size),
-            'x-upload-id': `${attemptId}-${upload.question}-${upload.index}`,
-          },
-          body: upload.file,
-        });
-        await readResponse(response);
+      setProgress('Saving your completed test…');
+      if (!(await saveEverything())) {
+        setProgress('');
+        return;
       }
 
       setProgress('Finishing your submission…');
-      const final = await readResponse(await fetch(`/api/submissions/${attemptId}/finalize`, { method: 'POST' }));
+      const final = await readResponse(await fetch(`/api/submissions/${attemptId}/finalize`, {
+        method: 'POST',
+        headers: { 'x-attempt-key': attemptKey },
+      }));
       setResult({
         id: String(final.id),
         mcqScore: Number(final.mcqScore),
@@ -437,8 +614,11 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         correctAnswers: final.correctAnswers as Record<string, number>,
         writtenSolutions: final.writtenSolutions as Record<string, string>,
       });
+      localStorage.removeItem(realNumbersAttemptIdKey);
+      localStorage.removeItem(realNumbersAttemptSecretKey);
       setProgress('');
     } catch (error) {
+      setProgress('');
       setSubmissionError(error instanceof Error ? error.message : 'The test could not be submitted. Please try again.');
     } finally {
       setSubmitting(false);
@@ -448,9 +628,9 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
-        <Breadcrumb items={['CBSE', 'Grade 10', 'Real Numbers']} onHome={onHome} />
+        <Breadcrumb items={['CBSE', 'Grade 10', 'Real Numbers']} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
-          <button type="button" onClick={onChapters}><ArrowLeft /> Chapters</button>
+          <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
           <button className="print-button" type="button" onClick={() => window.print()}><Printer /> Print paper</button>
         </div>
       </div>
@@ -465,8 +645,14 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         </header>
 
         <section className="student-fields" aria-label="Student details">
-          <label>Name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your full name" /></label>
+          <label>Student name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your name" /></label>
           <label>Date <span>{new Date().toLocaleDateString()}</span></label>
+          <p className="student-fields-note"><CheckCircle2 /> No student ID is required—only enter your name.</p>
+        </section>
+
+        <section className={`draft-save-bar ${submissionError ? 'error' : ''}`} aria-live="polite">
+          <span>{isSaving ? <Loader2 /> : <ShieldCheck />}</span>
+          <div><strong>{isSaving ? 'Saving your work…' : 'Your work is protected'}</strong><p>{submissionError || saveMessage}</p></div>
         </section>
 
         <section className="paper-instructions">
@@ -518,19 +704,19 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          <WrittenQuestion number={17} marks={2} files={writtenFiles[17] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 17: files }))}>Using prime factorisation, find the HCF of 378 and 504.</WrittenQuestion>
-          <WrittenQuestion number={18} marks={2} files={writtenFiles[18] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 18: files }))}>Show that 7√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={19} marks={2} files={writtenFiles[19] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 19: files }))}>Find the least positive number that is exactly divisible by 45, 60 and 75.</WrittenQuestion>
+          <WrittenQuestion number={17} marks={2} files={writtenFiles[17] ?? []} savedFiles={savedUploads[17] ?? []} isSaving={Boolean(uploadingQuestions[17])} onFilesChange={(files) => updateWrittenFiles(17, files)}>Using prime factorisation, find the HCF of 378 and 504.</WrittenQuestion>
+          <WrittenQuestion number={18} marks={2} files={writtenFiles[18] ?? []} savedFiles={savedUploads[18] ?? []} isSaving={Boolean(uploadingQuestions[18])} onFilesChange={(files) => updateWrittenFiles(18, files)}>Show that 7√5 is irrational.</WrittenQuestion>
+          <WrittenQuestion number={19} marks={2} files={writtenFiles[19] ?? []} savedFiles={savedUploads[19] ?? []} isSaving={Boolean(uploadingQuestions[19])} onFilesChange={(files) => updateWrittenFiles(19, files)}>Find the least positive number that is exactly divisible by 45, 60 and 75.</WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          <WrittenQuestion number={20} marks={3} files={writtenFiles[20] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 20: files }))}>The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.</WrittenQuestion>
-          <WrittenQuestion number={21} marks={3} files={writtenFiles[21] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 21: files }))}>Prove that 3 + 2√5 is irrational.</WrittenQuestion>
-          <WrittenQuestion number={22} marks={3} files={writtenFiles[22] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 22: files }))}>A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.</WrittenQuestion>
+          <WrittenQuestion number={20} marks={3} files={writtenFiles[20] ?? []} savedFiles={savedUploads[20] ?? []} isSaving={Boolean(uploadingQuestions[20])} onFilesChange={(files) => updateWrittenFiles(20, files)}>The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.</WrittenQuestion>
+          <WrittenQuestion number={21} marks={3} files={writtenFiles[21] ?? []} savedFiles={savedUploads[21] ?? []} isSaving={Boolean(uploadingQuestions[21])} onFilesChange={(files) => updateWrittenFiles(21, files)}>Prove that 3 + 2√5 is irrational.</WrittenQuestion>
+          <WrittenQuestion number={22} marks={3} files={writtenFiles[22] ?? []} savedFiles={savedUploads[22] ?? []} isSaving={Boolean(uploadingQuestions[22])} onFilesChange={(files) => updateWrittenFiles(22, files)}>A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.</WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
-          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 23: files }))}>
+          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} onFilesChange={(files) => updateWrittenFiles(23, files)}>
             <span>(a) Prove that √3 is irrational.</span>
             <span>(b) Hence, prove that 5 + 2√3 is irrational.</span>
           </WrittenQuestion>
@@ -541,7 +727,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
             <div className="case-study-label">Case study</div>
             <p>For Mathematics Day, a teacher has 84 red tokens, 126 blue tokens and 210 gold tokens. She wants to make the greatest possible number of identical prize packets, using every token and placing the same number of each colour in every packet.</p>
           </div>
-          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} onFilesChange={(files) => setWrittenFiles((current) => ({ ...current, 24: files }))}>
+          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} onFilesChange={(files) => updateWrittenFiles(24, files)}>
             <span>(a) Write the prime factorisation of 210. <b>[1]</b></span>
             <span>(b) Find the greatest possible number of identical packets. <b>[1]</b></span>
             <span>(c) Find the number of red, blue and gold tokens in each packet. Hence find the total number of tokens in one packet. <b>[2]</b></span>
@@ -552,6 +738,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
 
         <section className="test-submit-panel">
           <div><p>Finished the paper?</p><h2>Submit for marking</h2><span>Your MCQs will be checked immediately. Written answers will be sent securely to the teacher.</span></div>
+          <button className="save-answers-button" type="button" onClick={() => void saveEverything()} disabled={!draftLoaded || isSaving || submitting || Boolean(result)}>{isSaving ? <Loader2 /> : <Save />}{isSaving ? 'Saving…' : 'Save answers'}</button>
           <button type="button" onClick={requestSubmission} disabled={submitting || Boolean(result)}>{submitting ? <Loader2 /> : result ? <CheckCircle2 /> : <Send />}{submitting ? 'Submitting…' : result ? 'Submitted' : 'Submit test'}</button>
           {(submissionError || progress) && <p className={submissionError ? 'submit-error' : 'submit-progress'} role="status">{submissionError || progress}</p>}
         </section>
@@ -614,6 +801,16 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
         </DialogContent>
       </Dialog>
 
+      <Dialog open={exitAction !== null} onOpenChange={(open) => { if (!open && !exitSaving) setExitAction(null); }}>
+        <DialogContent className="submit-confirm-dialog">
+          <DialogHeader><span className="start-test-icon"><ArrowLeft /></span><DialogTitle>Do you want to exit the test?</DialogTitle><DialogDescription>Your answers are saved automatically. You can return to this chapter later and continue from where you stopped.</DialogDescription></DialogHeader>
+          <DialogFooter>
+            <button className="test-later-button" type="button" onClick={() => setExitAction(null)} disabled={exitSaving}>Continue test</button>
+            <button className="test-start-button" type="button" onClick={() => void saveAndExit()} disabled={exitSaving}>{exitSaving ? <Loader2 /> : <Save />}{exitSaving ? 'Saving…' : 'Save and exit'}</button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
       <Dialog open={result !== null && !showAnswers} onOpenChange={() => {}}>
         <DialogContent className="submission-success-dialog">
           <DialogHeader><span className="submission-success-icon"><CheckCircle2 /></span><DialogTitle>Test submitted successfully</DialogTitle><DialogDescription>Your answer sheets are now available in the teacher review area.</DialogDescription></DialogHeader>
@@ -641,13 +838,22 @@ function PaperSection({ title, subtitle, marks, children }: { title: string; sub
   );
 }
 
-function WrittenQuestion({ number, marks, children, files, onFilesChange }: { number: number; marks: number; children: ReactNode; files: File[]; onFilesChange: (files: File[]) => void }) {
+function WrittenQuestion({ number, marks, children, files, savedFiles, isSaving, onFilesChange }: {
+  number: number;
+  marks: number;
+  children: ReactNode;
+  files: File[];
+  savedFiles: SavedUpload[];
+  isSaving: boolean;
+  onFilesChange: (files: File[]) => void;
+}) {
   const cameraInputId = `answer-camera-${number}`;
   const fileInputId = `answer-file-${number}`;
 
   function addFiles(fileList: FileList | null) {
     if (!fileList) return;
-    onFilesChange([...files, ...Array.from(fileList)].slice(0, 4));
+    const availableSlots = Math.max(0, 4 - savedFiles.length);
+    onFilesChange([...files, ...Array.from(fileList)].slice(0, availableSlots));
   }
 
   return (
@@ -683,12 +889,18 @@ function WrittenQuestion({ number, marks, children, files, onFilesChange }: { nu
           <span><strong>Choose files</strong><small>Photos or PDF</small></span>
         </label>
         {files.length > 0 && (
-          <div className="selected-answer" aria-live="polite">
+          <div className="selected-answer pending-answer" aria-live="polite">
             <span>
-              <strong>{files.length} {files.length === 1 ? 'file' : 'files'} selected</strong>
+              <strong>{isSaving ? 'Saving answer…' : `${files.length} ${files.length === 1 ? 'file' : 'files'} ready to save`}</strong>
               <small>{files.map((file) => file.name).join(', ')}</small>
             </span>
-            <button type="button" onClick={() => onFilesChange([])} aria-label={`Remove selected answer files for question ${number}`}><X /></button>
+            {isSaving ? <Loader2 /> : <button type="button" onClick={() => onFilesChange([])} aria-label={`Remove selected answer files for question ${number}`}><X /></button>}
+          </div>
+        )}
+        {savedFiles.length > 0 && (
+          <div className="selected-answer saved-answer" aria-live="polite">
+            <CheckCircle2 />
+            <span><strong>Answer saved</strong><small>{savedFiles.map((file) => file.fileName).join(', ')}</small></span>
           </div>
         )}
       </div>

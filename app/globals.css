@@ -190,6 +190,16 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .student-fields label span { min-height: 24px; flex: 1; border-bottom: 1px solid #687780; }
 .student-fields input { min-width: 0; height: 34px; flex: 1; padding: 0 8px; border: 0; border-bottom: 1px solid #687780; border-radius: 0; color: var(--navy); background: transparent; outline: 0; }
 .student-fields input:focus { border-bottom-color: var(--blue); box-shadow: 0 2px 0 var(--blue); }
+.student-fields-note { grid-column: 1 / -1; margin: -12px 0 0; display: flex; align-items: center; gap: 6px; color: #39735e; font-size: .72rem; font-weight: 750; }
+.student-fields-note svg { width: 15px; flex: 0 0 15px; }
+.draft-save-bar { margin: 15px 0 0; padding: 11px 13px; display: flex; align-items: center; gap: 10px; border: 1px solid #c8ded4; border-radius: 10px; color: #285b47; background: #edf7f1; font-family: var(--font-geist-sans), Arial, sans-serif; }
+.draft-save-bar > span { width: 31px; height: 31px; flex: 0 0 31px; display: grid; place-items: center; border-radius: 50%; color: white; background: #2c8b67; }
+.draft-save-bar > span svg { width: 16px; }
+.draft-save-bar strong, .draft-save-bar p { display: block; }
+.draft-save-bar strong { font-size: .76rem; }
+.draft-save-bar p { margin: 2px 0 0; color: #5b7168; font-size: .7rem; line-height: 1.4; }
+.draft-save-bar.error { border-color: #e4beb4; color: #873b2e; background: #fff1ed; }
+.draft-save-bar.error > span { background: #b95a42; }
 .paper-instructions { margin: 25px 0 29px; padding: 17px 19px; border-left: 4px solid var(--gold); background: #faf8f2; }
 .paper-instructions h2 { margin: 0 0 8px; color: var(--navy); font: 700 .98rem var(--font-geist-sans), Arial, sans-serif; }
 .paper-instructions ol { margin: 0; padding-left: 19px; font-size: .82rem; line-height: 1.65; }
@@ -244,18 +254,25 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .selected-answer button { width: 28px; height: 28px; flex: 0 0 28px; display: grid; place-items: center; border: 0; border-radius: 6px; color: #5b6f66; background: rgba(255,255,255,.7); cursor: pointer; }
 .selected-answer button:hover { color: #8e3728; background: white; }
 .selected-answer button svg { width: 14px; }
+.selected-answer > svg { width: 18px; flex: 0 0 18px; }
+.selected-answer.pending-answer { border-color: #c9d7dd; color: #3e5b68; background: #f2f7f9; }
+.selected-answer.saved-answer { border-color: #9fcdbb; background: #e8f7ef; }
+.selected-answer.saved-answer > svg { color: #2c8b67; }
+.selected-answer svg.lucide-loader-2 { animation: spin 1s linear infinite; }
 .case-study { margin: 4px 0 0; padding: 18px; border: 1px solid #e0d1ad; border-radius: 8px; background: #fdf9ed; }
 .case-study-label { margin-bottom: 7px; color: #914b2d; font: 850 .68rem var(--font-geist-sans), Arial, sans-serif; letter-spacing: .11em; text-transform: uppercase; }
 .case-study p { margin: 0; font-size: .88rem; line-height: 1.65; }
 .paper-end { margin-top: 38px; padding-top: 14px; display: flex; justify-content: space-between; gap: 18px; border-top: 2px solid var(--navy); color: #4e6069; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .72rem; }
 .paper-end strong { color: var(--navy); }
 
-.test-submit-panel { margin-top: 32px; padding: 22px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 14px 24px; border: 1px solid #d7cbed; border-radius: 14px; background: linear-gradient(135deg, #f1edff, #eaf8f6); font-family: var(--font-geist-sans), Arial, sans-serif; }
+.test-submit-panel { margin-top: 32px; padding: 22px; display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 14px 12px; border: 1px solid #d7cbed; border-radius: 14px; background: linear-gradient(135deg, #f1edff, #eaf8f6); font-family: var(--font-geist-sans), Arial, sans-serif; }
 .test-submit-panel p { margin: 0 0 4px; color: var(--rust); font-size: .7rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .test-submit-panel h2 { margin: 0; color: var(--navy); font: 700 1.35rem Georgia, serif; }
 .test-submit-panel div > span { margin-top: 6px; display: block; color: #66777f; font-size: .78rem; line-height: 1.45; }
 .test-submit-panel > button { min-width: 150px; height: 48px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 11px; color: white; background: var(--primary); cursor: pointer; font-size: .82rem; font-weight: 850; box-shadow: 0 10px 24px rgba(89,54,167,.22); }
 .test-submit-panel > button:hover { background: #43247f; }
+.test-submit-panel > button.save-answers-button { border: 1px solid #6f57aa; color: #52358f; background: white; box-shadow: none; }
+.test-submit-panel > button.save-answers-button:hover { color: white; background: #6f57aa; }
 .test-submit-panel > button:disabled { cursor: not-allowed; opacity: .72; }
 .test-submit-panel > button svg { width: 18px; }
 .test-submit-panel > button svg.lucide-loader-2, .teacher-loading svg, .review-actions button svg.lucide-loader-2 { animation: spin 1s linear infinite; }
@@ -472,6 +489,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .paper-heading > p { margin-top: 17px; font-size: .68rem; }
   .paper-meta { font-size: .7rem; }
   .student-fields { grid-template-columns: 1fr; gap: 10px; }
+  .student-fields-note { margin-top: 0; }
   .paper-instructions { padding: 14px 14px 14px 16px; }
   .exam-section > header { align-items: flex-start; }
   .exam-section > header > span { padding-top: 2px; }
@@ -511,7 +529,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   @page { size: A4; margin: 13mm; }
   body { background: white; }
   .site-shell { border: 0; background: white; }
-  .site-shell:before, .site-header, .site-footer, .paper-toolbar, .answer-upload-row, .test-submit-panel, .answer-review { display: none !important; }
+  .site-shell:before, .site-header, .site-footer, .paper-toolbar, .answer-upload-row, .draft-save-bar, .test-submit-panel, .answer-review { display: none !important; }
   .paper-page { width: 100%; min-height: auto; padding: 0; }
   .question-paper { padding: 0; border: 0; box-shadow: none; }
   .paper-heading > img { height: 90px; margin-top: -15px; }

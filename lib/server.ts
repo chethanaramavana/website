@@ -2,11 +2,32 @@ import { env } from 'cloudflare:workers';
 
 export type RequestUser = { userId: string; email: string };
 
+const attemptKeyPattern = /^[a-zA-Z0-9-]{20,80}$/;
+
 export function getRequestUser(request: Request): RequestUser | null {
   const userId = request.headers.get('oai-authenticated-user-id');
   const email = request.headers.get('oai-authenticated-user-email');
   if (!userId || !email) return null;
   return { userId, email: email.toLowerCase() };
+}
+
+export function getAttemptOwner(request: Request): RequestUser | null {
+  const attemptKey = request.headers.get('x-attempt-key')?.trim() ?? '';
+  if (!attemptKeyPattern.test(attemptKey)) return null;
+  const signedInUser = getRequestUser(request);
+  return {
+    userId: `attempt:${attemptKey}`,
+    email: signedInUser?.email ?? 'Not provided',
+  };
+}
+
+export function ownsAttempt(request: Request, storedUserId: string): boolean {
+  const attemptOwner = getAttemptOwner(request);
+  const signedInUser = getRequestUser(request);
+  return Boolean(
+    (attemptOwner && storedUserId === attemptOwner.userId)
+    || (signedInUser && storedUserId === signedInUser.userId),
+  );
 }
 
 export function isAdmin(user: RequestUser): boolean {

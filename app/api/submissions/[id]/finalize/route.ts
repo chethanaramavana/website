@@ -1,17 +1,17 @@
 import { mcqAnswerKey, scoreMcqs, writtenQuestionMarks, writtenSolutions } from '@/lib/assessment';
-import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
+import { getAttemptOwner, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
 
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-    const user = getRequestUser(request);
-    if (!user) return jsonError('Please sign in first.', 401);
+    const owner = getAttemptOwner(request);
+    if (!owner) return jsonError('Please reopen the test page and try again.', 401);
     const { id } = await context.params;
     const db = getDatabase();
     const submission = await db.prepare(`
       SELECT user_id, status, mcq_answers, mcq_score FROM submissions WHERE id = ?
     `).bind(id).first<{ user_id: string; status: string; mcq_answers: string; mcq_score: number }>();
-    if (!submission || submission.user_id !== user.userId) return jsonError('Submission not found.', 404);
+    if (!submission || !ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
     if (submission.status !== 'draft') {
       return Response.json({
         id,
@@ -37,7 +37,7 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     await db.prepare(`
       UPDATE submissions SET status = 'submitted', mcq_score = ?, submitted_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP WHERE id = ? AND user_id = ? AND status = 'draft'
-    `).bind(score, id, user.userId).run();
+    `).bind(score, id, submission.user_id).run();
     return Response.json({
       id,
       status: 'submitted',
