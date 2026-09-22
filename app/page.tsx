@@ -341,28 +341,12 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
   );
 }
 
-function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
+function ChaptersView({ onHome, onBoard }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
-  const [paymentConfirmed, setPaymentConfirmed] = useState(false);
   const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
-
-  function paymentKey(chapter: string) {
-    return `rmc-${chapter.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-payment-confirmed`;
-  }
 
   function openChapter(nextChapter: string) {
     setPendingChapter(nextChapter);
-    setPaymentConfirmed(
-      nextChapter in paperDefinitions
-      && localStorage.getItem(paymentKey(nextChapter)) === 'yes',
-    );
-  }
-
-  function beginTest() {
-    if (!pendingChapter || !isAvailablePaper || !paymentConfirmed) return;
-    localStorage.setItem(paymentKey(pendingChapter), 'yes');
-    onOpenChapter(pendingChapter);
-    setPendingChapter(null);
   }
 
   return (
@@ -387,40 +371,27 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
       </section>
 
       <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) setPendingChapter(null); }}>
-        <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
+        <DialogContent className="start-test-dialog">
           <DialogHeader>
-            <span className="start-test-icon"><ShieldCheck /></span>
+            <span className="start-test-icon">{isAvailablePaper ? <LockKeyhole /> : <ShieldCheck />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
+            <DialogTitle>{isAvailablePaper ? 'Secure payment is being connected' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'Scan the PhonePe QR and complete the ₹30 payment before starting.'
+                ? 'This paid test is temporarily locked. Please do not make a QR payment yet.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
           {isAvailablePaper ? (
-            <div className="payment-gate">
-              <div className="payment-qr-card">
-                <img src="/phonepe-payment-qr.png" alt="PhonePe QR code for payment to CHETHANA R V" />
-                <a href="/phonepe-payment-qr.png" download>Save QR image</a>
-              </div>
-              <div className="payment-steps">
-                <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
-                <p className="payment-brief">Pay exactly <strong>₹30</strong> and check that the receiver is <strong>CHETHANA R V</strong>.</p>
-                <label className="payment-confirmation">
-                  <input type="checkbox" checked={paymentConfirmed} onChange={(event) => setPaymentConfirmed(event.target.checked)} />
-                  <span><strong>Payment successful</strong><small>Open the question paper</small></span>
-                </label>
-              </div>
+            <div className="payment-unavailable">
+              <LockKeyhole />
+              <div><strong>Test access paused</strong><p>The paper will open automatically only after a verified online payment is connected.</p></div>
             </div>
           ) : (
             <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
           )}
           <DialogFooter>
-            <DialogClose render={<button className="test-later-button" type="button" />}>Not now</DialogClose>
-            <button className="test-start-button" type="button" onClick={beginTest} disabled={!isAvailablePaper || !paymentConfirmed}>
-              {isAvailablePaper ? 'I have paid — Start test' : 'Paper coming soon'}
-            </button>
+            <DialogClose render={<button className="test-later-button" type="button" />}>Close</DialogClose>
           </DialogFooter>
         </DialogContent>
       </Dialog>

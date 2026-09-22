@@ -168,6 +168,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .payment-confirmation span, .payment-confirmation strong, .payment-confirmation small { display: block; }
 .payment-confirmation strong { font-size: .82rem; }
 .payment-confirmation small { margin-top: 3px; color: #777181; font-size: .69rem; line-height: 1.35; }
+.payment-unavailable { padding: 16px; display: flex; gap: 13px; align-items: flex-start; border: 1px solid #ead4d0; border-radius: 14px; color: #8e433d; background: #fff1ed; }
+.payment-unavailable > svg { width: 22px; height: 22px; flex: 0 0 22px; }
+.payment-unavailable strong { display: block; color: var(--navy); font-size: .88rem; }
+.payment-unavailable p { margin: 4px 0 0; color: #6d6878; font-size: .78rem; line-height: 1.5; }
 .start-test-dialog [data-slot="dialog-footer"] { margin: 4px -28px -28px; padding: 16px 28px; }
 .test-later-button, .test-start-button { min-height: 42px; padding: 0 17px; border-radius: 10px; cursor: pointer; font-size: .8rem; font-weight: 800; }
 .test-later-button { border: 1px solid #d9d1e4; color: #625b70; background: white; }
