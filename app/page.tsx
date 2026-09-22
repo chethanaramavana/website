@@ -273,10 +273,20 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 
 function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
-  const isFreePaper = pendingChapter === 'Real Numbers';
+  const [paymentConfirmed, setPaymentConfirmed] = useState(false);
+  const isAvailablePaper = pendingChapter === 'Real Numbers';
+
+  function openChapter(nextChapter: string) {
+    setPendingChapter(nextChapter);
+    setPaymentConfirmed(
+      nextChapter === 'Real Numbers'
+      && localStorage.getItem('rmc-real-numbers-payment-confirmed') === 'yes',
+    );
+  }
 
   function beginTest() {
-    if (!pendingChapter || !isFreePaper) return;
+    if (!pendingChapter || !isAvailablePaper || !paymentConfirmed) return;
+    localStorage.setItem('rmc-real-numbers-payment-confirmed', 'yes');
     onOpenChapter(pendingChapter);
     setPendingChapter(null);
   }
@@ -292,7 +302,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
         <div className="list-heading"><h2>Chapters</h2><span>14 folders</span></div>
         <div className="chapter-grid">
           {chapters.map((item, index) => (
-            <button key={item} className="chapter-folder" type="button" onClick={() => setPendingChapter(item)}>
+            <button key={item} className="chapter-folder" type="button" onClick={() => openChapter(item)}>
               <span className="chapter-folder-icon"><Folder /></span>
               <span className="chapter-number">Chapter {String(index + 1).padStart(2, '0')}</span>
               <strong>{item}</strong>
@@ -303,30 +313,44 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
       </section>
 
       <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) setPendingChapter(null); }}>
-        <DialogContent className="start-test-dialog">
+        <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
           <DialogHeader>
             <span className="start-test-icon"><ShieldCheck /></span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            <DialogTitle>Do you want to write the test now?</DialogTitle>
+            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
-              {isFreePaper
-                ? 'Your first question paper is free. Start when you are ready and complete it in one sitting.'
-                : 'This paper will cost ₹30 when it is ready. The secure payment step will appear here before the test begins.'}
+              {isAvailablePaper
+                ? 'Scan the PhonePe QR, pay exactly ₹30 and confirm below before starting.'
+                : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
-          <div className={`test-price-card ${isFreePaper ? 'free' : ''}`}>
-            <span>{isFreePaper ? 'First paper' : 'Test access'}</span>
-            <strong>{isFreePaper ? 'FREE' : '₹30'}</strong>
-          </div>
-          <ul className="test-start-points">
-            <li>Answer MCQs on the screen.</li>
-            <li>Write longer answers on paper and upload clear photos.</li>
-            <li>Submit only after completing the full test.</li>
-          </ul>
+          {isAvailablePaper ? (
+            <div className="payment-gate">
+              <div className="payment-qr-card">
+                <img src="/phonepe-payment-qr.png" alt="PhonePe QR code for payment to CHETHANA R V" />
+                <a href="/phonepe-payment-qr.png" download>Save QR image</a>
+              </div>
+              <div className="payment-steps">
+                <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
+                <ol>
+                  <li>Scan the QR using PhonePe or another UPI app.</li>
+                  <li>Enter and pay exactly <strong>₹30</strong>.</li>
+                  <li>Before paying, check that the receiver is <strong>CHETHANA R V</strong>.</li>
+                </ol>
+                <p className="payment-safety-note"><ShieldCheck /> Never share your UPI PIN or OTP with this website. Keep the payment confirmation or transaction ID.</p>
+                <label className="payment-confirmation">
+                  <input type="checkbox" checked={paymentConfirmed} onChange={(event) => setPaymentConfirmed(event.target.checked)} />
+                  <span><strong>I have paid ₹30</strong><small>The website does not verify PhonePe automatically yet.</small></span>
+                </label>
+              </div>
+            </div>
+          ) : (
+            <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
+          )}
           <DialogFooter>
             <DialogClose render={<button className="test-later-button" type="button" />}>Not now</DialogClose>
-            <button className="test-start-button" type="button" onClick={beginTest} disabled={!isFreePaper}>
-              {isFreePaper ? 'Yes, start free test' : 'Paper coming soon'}
+            <button className="test-start-button" type="button" onClick={beginTest} disabled={!isAvailablePaper || !paymentConfirmed}>
+              {isAvailablePaper ? 'I have paid — Start test' : 'Paper coming soon'}
             </button>
           </DialogFooter>
         </DialogContent>
@@ -638,7 +662,7 @@ function RealNumbersPaper({ onHome, onChapters }: { onHome: () => void; onChapte
       <article className="question-paper">
         <header className="paper-heading">
           <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
-          <div className="paper-kicker"><span>Free practice test</span><strong>Paper 01</strong></div>
+          <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper 01</strong></div>
           <p>CBSE Mathematics (Standard) · Grade 10</p>
           <h1>Chapter 1 — Real Numbers</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
@@ -945,7 +969,7 @@ function LegalDialog({ type }: { type: 'terms' | 'privacy' }) {
         {isTerms ? (
           <div className="legal-copy">
             <section><h3>Learning use</h3><p>The question papers and feedback are provided for educational practice. They are not official examination papers or school results.</p></section>
-            <section><h3>Access and payment</h3><p>Any fee, validity period and access conditions will be shown clearly before payment. This private preview does not collect payments.</p></section>
+            <section><h3>Access and payment</h3><p>The ₹30 chapter fee and payment QR are shown before the test opens. QR payment confirmation is currently declared by the student and is not automatically verified by PhonePe.</p></section>
             <section><h3>Student work</h3><p>Students should upload only their own answers. Practice material may not be copied, resold or shared outside the permitted access.</p></section>
             <section><h3>Assessment</h3><p>Marks and comments are learning guidance. Students should follow their school and board instructions for official examinations.</p></section>
           </div>
