@@ -371,21 +371,30 @@ function ChaptersView({ onHome, onBoard }: { onHome: () => void; onBoard: () => 
       </section>
 
       <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) setPendingChapter(null); }}>
-        <DialogContent className="start-test-dialog">
+        <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
           <DialogHeader>
-            <span className="start-test-icon">{isAvailablePaper ? <LockKeyhole /> : <ShieldCheck />}</span>
+            <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            <DialogTitle>{isAvailablePaper ? 'Secure payment is being connected' : 'This paper is coming soon'}</DialogTitle>
+            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 for this test' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'This paid test is temporarily locked. Please do not make a QR payment yet.'
+                ? 'Scan the QR below and keep your payment transaction ID.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
           {isAvailablePaper ? (
-            <div className="payment-unavailable">
-              <LockKeyhole />
-              <div><strong>Test access paused</strong><p>The paper will open automatically only after a verified online payment is connected.</p></div>
+            <div className="payment-locked-gate">
+              <div className="payment-qr-card qr-only-card">
+                <img src="/phonepe-qr-only.png" alt="QR code for ₹30 chapter test payment" />
+                <a href="/phonepe-qr-only.png" download>Save QR</a>
+              </div>
+              <div className="payment-locked-copy">
+                <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
+                <div className="payment-unavailable">
+                  <LockKeyhole />
+                  <div><strong>Secure verification required</strong><p>The paper remains locked until confirmed payment access is connected.</p></div>
+                </div>
+              </div>
             </div>
           ) : (
             <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
