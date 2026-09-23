@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, CheckCircle2, FileText, Loader2, RefreshCw, Save } from 'lucide-react';
+import { ArrowLeft, Check, CheckCircle2, CreditCard, FileText, Loader2, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
 
 const paperReviews = {
   'real-numbers-01': {
@@ -53,28 +53,45 @@ type Detail = {
   marks: Mark[];
 };
 
+type PaymentRequest = {
+  id: string;
+  student_name: string;
+  paper_id: keyof typeof paperReviews;
+  transaction_id: string;
+  amount_paise: number;
+  status: 'pending' | 'approved' | 'rejected';
+  created_at: string;
+  reviewed_at: string | null;
+};
+
 async function readJson(response: Response) {
   const payload = await response.json() as Record<string, unknown>;
-  if (!response.ok) throw new Error(String(payload.error ?? 'Something went wrong.'));
+  if (!response.ok) throw new Error(typeof payload.error === 'string' ? payload.error : 'Something went wrong.');
   return payload;
 }
 
 export default function TeacherReviewPage() {
   const [submissions, setSubmissions] = useState<Summary[]>([]);
+  const [payments, setPayments] = useState<PaymentRequest[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [detail, setDetail] = useState<Detail | null>(null);
   const [marks, setMarks] = useState<Record<string, number>>({});
   const [feedback, setFeedback] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [paymentAction, setPaymentAction] = useState('');
   const [message, setMessage] = useState('');
 
   async function loadList() {
     setLoading(true);
     setMessage('');
     try {
-      const payload = await readJson(await fetch('/api/teacher/submissions', { cache: 'no-store' }));
-      setSubmissions(payload.submissions as Summary[]);
+      const [submissionPayload, paymentPayload] = await Promise.all([
+        readJson(await fetch('/api/teacher/submissions', { cache: 'no-store' })),
+        readJson(await fetch('/api/teacher/payments', { cache: 'no-store' })),
+      ]);
+      setSubmissions(submissionPayload.submissions as Summary[]);
+      setPayments(paymentPayload.payments as PaymentRequest[]);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Submissions could not be loaded.');
     } finally {
@@ -113,13 +130,31 @@ export default function TeacherReviewPage() {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ marks, feedback }),
       }));
-      setMessage(`Marks saved. Total: ${payload.totalScore}/40.`);
+      setMessage(`Marks saved. Total: ${Number(payload.totalScore ?? 0)}/40.`);
       await loadList();
       await openSubmission(selectedId);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Marks could not be saved.');
     } finally {
       setSaving(false);
+    }
+  }
+
+  async function reviewPayment(id: string, status: 'approved' | 'rejected') {
+    setPaymentAction(id);
+    setMessage('');
+    try {
+      await readJson(await fetch('/api/teacher/payments', {
+        method: 'PATCH',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ id, status }),
+      }));
+      await loadList();
+      setMessage(status === 'approved' ? 'Payment approved. The student’s question paper will now open.' : 'Payment request rejected.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'The payment decision could not be saved.');
+    } finally {
+      setPaymentAction('');
     }
   }
 
@@ -131,7 +166,37 @@ export default function TeacherReviewPage() {
         <button type="button" onClick={() => void loadList()} aria-label="Refresh submissions"><RefreshCw /></button>
       </header>
 
-      {message && <div className="teacher-message" role="status">{message}</div>}
+      {message && <div className="teacher-message" aria-live="polite">{message}</div>}
+
+      <section className="payment-review-section" aria-labelledby="payment-review-title">
+        <header>
+          <div><p>Test access</p><h2 id="payment-review-title">Payment requests</h2></div>
+          <span>{payments.filter((payment) => payment.status === 'pending').length} waiting</span>
+        </header>
+        <div className="payment-review-warning"><ShieldCheck /><span><strong>Check PhonePe before approving.</strong> Match the ₹30 credit and transaction ID with your PhonePe history. Approval immediately unlocks that paper.</span></div>
+        {loading ? <div className="teacher-loading"><Loader2 /> Loading payment requests…</div> : payments.length === 0 ? (
+          <div className="payment-review-empty"><CreditCard /><span>No payment requests yet.</span></div>
+        ) : (
+          <div className="payment-request-list">
+            {payments.map((payment) => (
+              <article key={payment.id} className={`payment-request-card ${payment.status}`}>
+                <div className="payment-request-copy">
+                  <span className="payment-request-status">{payment.status}</span>
+                  <strong>{payment.student_name}</strong>
+                  <small>{paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small>
+                </div>
+                <div className="payment-transaction"><span>Transaction ID</span><strong>{payment.transaction_id}</strong><small>₹{(payment.amount_paise / 100).toFixed(0)}</small></div>
+                {payment.status === 'pending' ? (
+                  <div className="payment-review-actions">
+                    <button type="button" className="reject" onClick={() => void reviewPayment(payment.id, 'rejected')} disabled={paymentAction === payment.id}><X /> Reject</button>
+                    <button type="button" className="approve" onClick={() => void reviewPayment(payment.id, 'approved')} disabled={paymentAction === payment.id}>{paymentAction === payment.id ? <Loader2 /> : <Check />} Approve</button>
+                  </div>
+                ) : <span className={`payment-reviewed ${payment.status}`}>{payment.status === 'approved' ? <Check /> : <X />}{payment.status}</span>}
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
 
       <div className="teacher-workspace">
         <aside className="submission-list" aria-label="Student submissions">

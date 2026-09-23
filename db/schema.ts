@@ -45,3 +45,19 @@ export const questionMarks = sqliteTable('question_marks', {
 }, (table) => [
   primaryKey({ columns: [table.submissionId, table.questionNumber] }),
 ]);
+
+export const paymentRequests = sqliteTable('payment_requests', {
+  id: text('id').primaryKey(),
+  userId: text('user_id').notNull(),
+  studentName: text('student_name').notNull(),
+  paperId: text('paper_id').notNull(),
+  transactionId: text('transaction_id').notNull(),
+  amountPaise: integer('amount_paise').notNull().default(3000),
+  status: text('status').notNull().default('pending'),
+  createdAt: text('created_at').notNull().default(sql`CURRENT_TIMESTAMP`),
+  reviewedAt: text('reviewed_at'),
+}, (table) => [
+  uniqueIndex('idx_payment_requests_transaction_id').on(table.transactionId),
+  index('idx_payment_requests_status_created').on(table.status, table.createdAt),
+  index('idx_payment_requests_user_id').on(table.userId),
+]);

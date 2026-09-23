@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
@@ -341,12 +341,127 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
   );
 }
 
-function ChaptersView({ onHome, onBoard }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
+type PaymentStatus = 'idle' | 'submitting' | 'pending' | 'approved' | 'rejected';
+
+function paymentAccessStorageKey(paperId: string) {
+  return `rmc-${paperId}-payment-access`;
+}
+
+function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
+  const [paymentStudentName, setPaymentStudentName] = useState('');
+  const [transactionId, setTransactionId] = useState('');
+  const [paymentRequestId, setPaymentRequestId] = useState('');
+  const [paymentRequestKey, setPaymentRequestKey] = useState('');
+  const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
+  const [paymentMessage, setPaymentMessage] = useState('');
   const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
+  const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+
+  const checkPaymentStatus = useCallback(async (requestId: string, requestKey: string, chapterName: PaperDefinition['chapter']) => {
+    try {
+      const response = await fetch(`/api/payment-requests?id=${encodeURIComponent(requestId)}`, {
+        cache: 'no-store',
+        headers: { 'x-attempt-key': requestKey },
+      });
+      const payload = await response.json() as { request?: { status?: PaymentStatus }; error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'Payment status could not be checked.');
+      const nextStatus = payload.request?.status;
+      if (nextStatus === 'approved') {
+        setPaymentStatus('approved');
+        setPaymentMessage('Payment approved. Opening your question paper…');
+        setPendingChapter(null);
+        onOpenChapter(chapterName);
+      } else if (nextStatus === 'rejected') {
+        localStorage.removeItem(paymentAccessStorageKey(paperDefinitions[chapterName].id));
+        setPaymentRequestId('');
+        setPaymentRequestKey('');
+        setPaymentStatus('rejected');
+        setPaymentMessage('This payment could not be verified. Check the transaction ID and submit again.');
+      } else {
+        setPaymentStatus('pending');
+        setPaymentMessage('Waiting for the teacher to verify your ₹30 payment…');
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Payment status could not be checked.';
+      if (/not found/i.test(message)) {
+        localStorage.removeItem(paymentAccessStorageKey(paperDefinitions[chapterName].id));
+        setPaymentRequestId('');
+        setPaymentRequestKey('');
+        setPaymentStatus('idle');
+      }
+      setPaymentMessage(message);
+    }
+  }, [onOpenChapter]);
+
+  useEffect(() => {
+    if (paymentStatus !== 'pending' || !paymentRequestId || !paymentRequestKey || !pendingChapter || !selectedPaper) return;
+    const chapterName = pendingChapter as PaperDefinition['chapter'];
+    const interval = window.setInterval(() => {
+      void checkPaymentStatus(paymentRequestId, paymentRequestKey, chapterName);
+    }, 4000);
+    return () => window.clearInterval(interval);
+  }, [paymentStatus, paymentRequestId, paymentRequestKey, pendingChapter, selectedPaper, checkPaymentStatus]);
 
   function openChapter(nextChapter: string) {
+    setPaymentStudentName('');
+    setTransactionId('');
+    setPaymentRequestId('');
+    setPaymentRequestKey('');
+    setPaymentStatus('idle');
+    setPaymentMessage('');
     setPendingChapter(nextChapter);
+    const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
+    if (!paper) return;
+    const saved = localStorage.getItem(paymentAccessStorageKey(paper.id));
+    if (!saved) return;
+    try {
+      const access = JSON.parse(saved) as { id?: string; key?: string };
+      if (!access.id || !access.key) return;
+      setPaymentRequestId(access.id);
+      setPaymentRequestKey(access.key);
+      setPaymentStatus('pending');
+      setPaymentMessage('Checking your payment approval…');
+      void checkPaymentStatus(access.id, access.key, nextChapter as PaperDefinition['chapter']);
+    } catch {
+      localStorage.removeItem(paymentAccessStorageKey(paper.id));
+    }
+  }
+
+  async function submitPaymentRequest() {
+    if (!selectedPaper || !pendingChapter) return;
+    const name = paymentStudentName.trim();
+    const transaction = transactionId.trim().replace(/\s+/g, '').toUpperCase();
+    if (name.length < 2) {
+      setPaymentMessage('Please enter the student name.');
+      return;
+    }
+    if (!/^[A-Z0-9-]{8,50}$/.test(transaction)) {
+      setPaymentMessage('Enter the UPI transaction ID shown after payment (at least 8 letters or numbers).');
+      return;
+    }
+
+    const requestId = crypto.randomUUID();
+    const requestKey = crypto.randomUUID();
+    setPaymentStatus('submitting');
+    setPaymentMessage('Sending payment details for verification…');
+    try {
+      const response = await fetch('/api/payment-requests', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-attempt-key': requestKey },
+        body: JSON.stringify({ id: requestId, studentName: name, paperId: selectedPaper.id, transactionId: transaction }),
+      });
+      const payload = await response.json() as { error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'Payment details could not be submitted.');
+      localStorage.setItem(paymentAccessStorageKey(selectedPaper.id), JSON.stringify({ id: requestId, key: requestKey }));
+      setPaymentRequestId(requestId);
+      setPaymentRequestKey(requestKey);
+      setPaymentStatus('pending');
+      setPaymentMessage('Payment submitted. Keep this page open while the teacher verifies it.');
+    } catch (error) {
+      setPaymentStatus('idle');
+      setPaymentMessage(error instanceof Error ? error.message : 'Payment details could not be submitted.');
+    }
   }
 
   return (
@@ -375,10 +490,10 @@ function ChaptersView({ onHome, onBoard }: { onHome: () => void; onBoard: () => 
           <DialogHeader>
             <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 for this test' : 'This paper is coming soon'}</DialogTitle>
+            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'Scan the QR below and keep your payment transaction ID.'
+                ? 'Scan the QR, pay exactly ₹30 and submit the transaction ID shown in PhonePe.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
@@ -390,10 +505,19 @@ function ChaptersView({ onHome, onBoard }: { onHome: () => void; onBoard: () => 
               </div>
               <div className="payment-locked-copy">
                 <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
-                <div className="payment-unavailable">
-                  <LockKeyhole />
-                  <div><strong>Secure verification required</strong><p>The paper remains locked until confirmed payment access is connected.</p></div>
-                </div>
+                {paymentStatus === 'pending' ? (
+                  <div className="payment-pending" aria-live="polite">
+                    <Loader2 />
+                    <div><strong>Waiting for teacher approval</strong><p>{paymentMessage}</p><small>This page checks automatically. The paper will open here after approval.</small></div>
+                  </div>
+                ) : (
+                  <div className="payment-form">
+                    <label htmlFor="payment-student-name"><span>Student name</span><input id="payment-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
+                    <label htmlFor="payment-transaction-id"><span>UPI transaction ID</span><input id="payment-transaction-id" value={transactionId} onChange={(event) => setTransactionId(event.target.value)} maxLength={50} autoCapitalize="characters" placeholder="Shown after successful payment" /></label>
+                    <button type="button" onClick={() => void submitPaymentRequest()} disabled={paymentStatus === 'submitting'}>{paymentStatus === 'submitting' ? <Loader2 /> : <ShieldCheck />}{paymentStatus === 'submitting' ? 'Submitting…' : 'Submit payment for approval'}</button>
+                    <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || 'The teacher will check the payment before this paper opens.'}</p>
+                  </div>
+                )}
               </div>
             </div>
           ) : (
