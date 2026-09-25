@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, Check, CheckCircle2, CreditCard, FileText, Loader2, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
+import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
+import type { PaperDefinition } from '@/lib/papers';
 
 const paperReviews = {
   'real-numbers-01': {
@@ -9,9 +10,9 @@ const paperReviews = {
     writtenQuestions: [
       { number: 17, marks: 2, text: 'HCF of 378 and 504 using prime factorisation' },
       { number: 18, marks: 2, text: 'Show that 7√5 is irrational' },
-      { number: 19, marks: 2, text: 'Least number divisible by 45, 60 and 75' },
+      { number: 19, marks: 2, text: 'Smallest number divisible by 644 and 462' },
       { number: 20, marks: 3, text: 'Find the other integer using HCF and LCM' },
-      { number: 21, marks: 3, text: 'Prove that 3 + 2√5 is irrational' },
+      { number: 21, marks: 3, text: 'Prove that 4√2 + 5/3 is irrational' },
       { number: 22, marks: 3, text: 'Arrange boys and girls in equal rows' },
       { number: 23, marks: 5, text: 'Irrationality proof for √3 and 5 + 2√3' },
       { number: 24, marks: 4, text: 'Mathematics Day token case study' },
@@ -81,6 +82,13 @@ export default function TeacherReviewPage() {
   const [saving, setSaving] = useState(false);
   const [paymentAction, setPaymentAction] = useState('');
   const [message, setMessage] = useState('');
+  const [teacherView, setTeacherView] = useState<'reviews' | 'papers'>('reviews');
+  const [papers, setPapers] = useState<PaperDefinition[]>([]);
+  const [editingPaper, setEditingPaper] = useState<PaperDefinition | null>(null);
+  const [paperAnswerKeys, setPaperAnswerKeys] = useState<Record<string, Record<number, number>>>({});
+  const [paperSolutions, setPaperSolutions] = useState<Record<string, Record<number, string>>>({});
+  const [paperLoading, setPaperLoading] = useState(false);
+  const [paperSaving, setPaperSaving] = useState(false);
 
   async function loadList() {
     setLoading(true);
@@ -158,6 +166,66 @@ export default function TeacherReviewPage() {
     }
   }
 
+  async function openPaperLibrary() {
+    setTeacherView('papers');
+    if (papers.length) return;
+    setPaperLoading(true);
+    setMessage('');
+    try {
+      const payload = await readJson(await fetch('/api/teacher/papers', { cache: 'no-store' })) as { papers: Array<{ paper: PaperDefinition; answerKey: Record<number, number>; writtenSolutions: Record<number, string> }> };
+      const loaded = payload.papers.map((entry) => entry.paper);
+      setPapers(loaded);
+      setPaperAnswerKeys(Object.fromEntries(payload.papers.map((entry) => [entry.paper.id, entry.answerKey])));
+      setPaperSolutions(Object.fromEntries(payload.papers.map((entry) => [entry.paper.id, entry.writtenSolutions])));
+      setEditingPaper(structuredClone(loaded[0]));
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Question papers could not be loaded.');
+    } finally {
+      setPaperLoading(false);
+    }
+  }
+
+  function updateMcq(index: number, field: 'question' | 'source', value: string) {
+    setEditingPaper((current) => current ? { ...current, mcqs: current.mcqs.map((item, itemIndex) => itemIndex === index ? { ...item, [field]: value || undefined } : item) } : current);
+  }
+
+  function updateOption(questionIndex: number, optionIndex: number, value: string) {
+    setEditingPaper((current) => current ? { ...current, mcqs: current.mcqs.map((item, itemIndex) => itemIndex === questionIndex ? { ...item, options: item.options.map((option, index) => index === optionIndex ? value : option) } : item) } : current);
+  }
+
+  function updateAssertion(index: number, field: 'assertion' | 'reason', value: string) {
+    setEditingPaper((current) => current ? { ...current, assertions: current.assertions.map((item, itemIndex) => itemIndex === index ? { ...item, [field]: value } : item) } : current);
+  }
+
+  function updateWritten(number: number, value: string) {
+    setEditingPaper((current) => current ? { ...current, written: { ...current.written, [number]: value } } : current);
+  }
+
+  function updateCorrectAnswer(number: number, value: number) {
+    if (!editingPaper) return;
+    setPaperAnswerKeys((current) => ({ ...current, [editingPaper.id]: { ...(current[editingPaper.id] ?? {}), [number]: value } }));
+  }
+
+  function updateWrittenSolution(number: number, value: string) {
+    if (!editingPaper) return;
+    setPaperSolutions((current) => ({ ...current, [editingPaper.id]: { ...(current[editingPaper.id] ?? {}), [number]: value } }));
+  }
+
+  async function saveQuestionPaper() {
+    if (!editingPaper) return;
+    setPaperSaving(true);
+    setMessage('');
+    try {
+      await readJson(await fetch('/api/teacher/papers', { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ paper: editingPaper, answerKey: paperAnswerKeys[editingPaper.id], writtenSolutions: paperSolutions[editingPaper.id] }) }));
+      setPapers((current) => current.map((paper) => paper.id === editingPaper.id ? structuredClone(editingPaper) : paper));
+      setMessage(`${editingPaper.chapter} question paper saved. Students will see the updated version.`);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Question paper could not be saved.');
+    } finally {
+      setPaperSaving(false);
+    }
+  }
+
   return (
     <main className="teacher-shell">
       <header className="teacher-header">
@@ -168,7 +236,12 @@ export default function TeacherReviewPage() {
 
       {message && <div className="teacher-message" aria-live="polite">{message}</div>}
 
-      <section className="payment-review-section" aria-labelledby="payment-review-title">
+      <nav className="teacher-mode-nav" aria-label="Teacher workspace">
+        <button className={teacherView === 'reviews' ? 'active' : ''} type="button" onClick={() => setTeacherView('reviews')}><FileText /> Student tests</button>
+        <button className={teacherView === 'papers' ? 'active' : ''} type="button" onClick={() => void openPaperLibrary()}><Pencil /> Question papers</button>
+      </nav>
+
+      <section className={`payment-review-section ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`} aria-labelledby="payment-review-title">
         <header>
           <div><p>Test access</p><h2 id="payment-review-title">Payment requests</h2></div>
           <span>{payments.filter((payment) => payment.status === 'pending').length} waiting</span>
@@ -198,7 +271,7 @@ export default function TeacherReviewPage() {
         )}
       </section>
 
-      <div className="teacher-workspace">
+      <div className={`teacher-workspace ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`}>
         <aside className="submission-list" aria-label="Student submissions">
           <div className="submission-list-heading"><strong>Submitted tests</strong><span>{submissions.length}</span></div>
           {loading ? <div className="teacher-loading"><Loader2 /> Loading submissions…</div> : submissions.length === 0 ? (
@@ -257,6 +330,34 @@ export default function TeacherReviewPage() {
           )}
         </section>
       </div>
+
+      {teacherView === 'papers' && (
+        <section className="paper-editor-workspace">
+          <aside className="paper-editor-list">
+            <div><p>Teacher library</p><h2>Question papers</h2></div>
+            {paperLoading ? <span className="teacher-loading"><Loader2 /> Loading papers…</span> : papers.map((paper) => (
+              <button className={editingPaper?.id === paper.id ? 'active' : ''} type="button" key={paper.id} onClick={() => setEditingPaper(structuredClone(paper))}>
+                <BookOpen /><span><strong>{paper.chapter}</strong><small>Paper {paper.paperNumber}</small></span>
+              </button>
+            ))}
+          </aside>
+          <div className="paper-editor-panel">
+            {!editingPaper ? <div className="review-placeholder"><BookOpen /><h2>Select a question paper</h2></div> : (
+              <>
+                <header className="paper-editor-heading"><div><p>Grade 10 · CBSE</p><h2>{editingPaper.chapter}</h2><span>Changes are published only after you press Save paper.</span></div><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save paper'}</button></header>
+                <div className="paper-editor-general">
+                  <label>Paper instruction<textarea value={editingPaper.focus} onChange={(event) => setEditingPaper({ ...editingPaper, focus: event.target.value })} /></label>
+                  <label>Case-study introduction<textarea value={editingPaper.caseStudy} onChange={(event) => setEditingPaper({ ...editingPaper, caseStudy: event.target.value })} /></label>
+                </div>
+                <section className="paper-editor-section"><h3>Multiple-choice questions</h3>{editingPaper.mcqs.map((question, questionIndex) => <article key={question.number} className="paper-editor-question"><strong>{question.number}</strong><div><label>Question<textarea value={question.question} onChange={(event) => updateMcq(questionIndex, 'question', event.target.value)} /></label><div className="paper-editor-options">{question.options.map((option, optionIndex) => <label key={optionIndex}>Option {String.fromCharCode(65 + optionIndex)}<input value={option} onChange={(event) => updateOption(questionIndex, optionIndex, event.target.value)} /></label>)}</div><label className="paper-answer-select">Correct option<select value={paperAnswerKeys[editingPaper.id]?.[question.number] ?? 0} onChange={(event) => updateCorrectAnswer(question.number, Number(event.target.value))}>{question.options.map((_option, optionIndex) => <option value={optionIndex} key={optionIndex}>{String.fromCharCode(65 + optionIndex)}</option>)}</select></label><label>Previous-exam label (optional)<input value={question.source ?? ''} onChange={(event) => updateMcq(questionIndex, 'source', event.target.value)} placeholder="Example: CBSE Board 2025 · Set 30/2/2 · Q6" /></label></div></article>)}</section>
+                <section className="paper-editor-section"><h3>Assertion and reason</h3>{editingPaper.assertions.map((question, index) => <article key={question.number} className="paper-editor-question"><strong>{question.number}</strong><div><label>Assertion<textarea value={question.assertion} onChange={(event) => updateAssertion(index, 'assertion', event.target.value)} /></label><label>Reason<textarea value={question.reason} onChange={(event) => updateAssertion(index, 'reason', event.target.value)} /></label><label className="paper-answer-select">Correct option<select value={paperAnswerKeys[editingPaper.id]?.[question.number] ?? 0} onChange={(event) => updateCorrectAnswer(question.number, Number(event.target.value))}>{['A','B','C','D'].map((option, optionIndex) => <option value={optionIndex} key={option}>{option}</option>)}</select></label></div></article>)}</section>
+                <section className="paper-editor-section"><h3>Written questions and model solutions</h3>{[17,18,19,20,21,22,23,24].map((number) => <article key={number} className="paper-editor-question"><strong>{number}</strong><div><label>Question<textarea value={Array.isArray(editingPaper.written[number]) ? (editingPaper.written[number] as string[]).join('\n') : editingPaper.written[number] as string} onChange={(event) => updateWritten(number, event.target.value)} /></label><label>Model solution<textarea value={paperSolutions[editingPaper.id]?.[number] ?? ''} onChange={(event) => updateWrittenSolution(number, event.target.value)} /></label></div></article>)}</section>
+                <footer className="paper-editor-save"><span>Review every changed question before publishing.</span><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save question paper'}</button></footer>
+              </>
+            )}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

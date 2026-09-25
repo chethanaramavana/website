@@ -12,20 +12,22 @@ export function getRequestUser(request: Request): RequestUser | null {
 }
 
 export function getAttemptOwner(request: Request): RequestUser | null {
+  const signedInUser = getRequestUser(request);
+  if (signedInUser) return signedInUser;
   const attemptKey = request.headers.get('x-attempt-key')?.trim() ?? '';
   if (!attemptKeyPattern.test(attemptKey)) return null;
-  const signedInUser = getRequestUser(request);
   return {
     userId: `attempt:${attemptKey}`,
-    email: signedInUser?.email ?? 'Not provided',
+    email: 'Not provided',
   };
 }
 
 export function ownsAttempt(request: Request, storedUserId: string): boolean {
-  const attemptOwner = getAttemptOwner(request);
   const signedInUser = getRequestUser(request);
+  const attemptKey = request.headers.get('x-attempt-key')?.trim() ?? '';
+  const attemptUserId = attemptKeyPattern.test(attemptKey) ? `attempt:${attemptKey}` : '';
   return Boolean(
-    (attemptOwner && storedUserId === attemptOwner.userId)
+    (attemptUserId && storedUserId === attemptUserId)
     || (signedInUser && storedUserId === signedInUser.userId),
   );
 }

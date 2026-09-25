@@ -14,19 +14,24 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     if (!submission || !ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
     const assessment = getPaperAssessment(submission.paper_id);
     if (!assessment) return jsonError('This question paper is no longer available.', 400);
+    const savedPaper = await db.prepare('SELECT content_json FROM paper_content WHERE paper_id = ?').bind(submission.paper_id).first<{ content_json: string }>();
+    const savedDocument = savedPaper ? JSON.parse(savedPaper.content_json) as { answerKey?: Record<number, number>; writtenSolutions?: Record<number, string> } : null;
+    const savedAnswerKey = savedDocument?.answerKey ?? null;
+    const answerKey = savedAnswerKey ?? assessment.mcqAnswerKey;
+    const writtenSolutions = savedDocument?.writtenSolutions ?? assessment.writtenSolutions;
     if (submission.status !== 'draft') {
       return Response.json({
         id,
         status: submission.status,
         mcqScore: submission.mcq_score,
-        mcqMaximum: Object.keys(assessment.mcqAnswerKey).length,
-        correctAnswers: assessment.mcqAnswerKey,
-        writtenSolutions: assessment.writtenSolutions,
+        mcqMaximum: Object.keys(answerKey).length,
+        correctAnswers: answerKey,
+        writtenSolutions,
       });
     }
 
     const answers = JSON.parse(submission.mcq_answers) as Record<string, number>;
-    if (Object.keys(answers).length !== Object.keys(assessment.mcqAnswerKey).length) return jsonError('Please answer every MCQ.', 400);
+    if (Object.keys(answers).length !== Object.keys(answerKey).length) return jsonError('Please answer every MCQ.', 400);
     const uploads = await db.prepare(`
       SELECT question_number, COUNT(*) AS file_count FROM answer_uploads
       WHERE submission_id = ? GROUP BY question_number
@@ -35,7 +40,7 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     const missing = Object.keys(writtenQuestionMarks).map(Number).filter((question) => !uploadedQuestions.has(question));
     if (missing.length) return jsonError(`Upload an answer for question${missing.length > 1 ? 's' : ''} ${missing.join(', ')}.`, 400);
 
-    const score = scoreMcqs(answers, assessment.mcqAnswerKey);
+    const score = scoreMcqs(answers, answerKey);
     await db.prepare(`
       UPDATE submissions SET status = 'submitted', mcq_score = ?, submitted_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP WHERE id = ? AND user_id = ? AND status = 'draft'
@@ -44,9 +49,9 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
       id,
       status: 'submitted',
       mcqScore: score,
-      mcqMaximum: Object.keys(assessment.mcqAnswerKey).length,
-      correctAnswers: assessment.mcqAnswerKey,
-      writtenSolutions: assessment.writtenSolutions,
+      mcqMaximum: Object.keys(answerKey).length,
+      correctAnswers: answerKey,
+      writtenSolutions,
     });
   } catch (error) {
     console.error('finalize submission failed', error);

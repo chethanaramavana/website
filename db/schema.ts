@@ -61,3 +61,10 @@ export const paymentRequests = sqliteTable('payment_requests', {
   index('idx_payment_requests_status_created').on(table.status, table.createdAt),
   index('idx_payment_requests_user_id').on(table.userId),
 ]);
+
+export const paperContent = sqliteTable('paper_content', {
+  paperId: text('paper_id').primaryKey(),
+  contentJson: text('content_json').notNull(),
+  updatedBy: text('updated_by').notNull(),
+  updatedAt: text('updated_at').notNull().default(sql`CURRENT_TIMESTAMP`),
+});

@@ -19,6 +19,7 @@ import {
   Send,
   ShieldCheck,
   Upload,
+  UserRound,
   X,
 } from 'lucide-react';
 
@@ -251,6 +252,7 @@ export default function HomePage() {
           <span className="brand-mark"><img src="/ramavana-logo.png" alt="" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
+        <a className="student-login-link" href="/student"><UserRound /><span>Student login</span></a>
       </header>
 
       {!board ? (
@@ -344,6 +346,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 }
 
 type PaymentStatus = 'idle' | 'submitting' | 'pending' | 'approved' | 'rejected';
+type StudentRecords = { signedIn: boolean; email?: string; access: string[] };
 
 function paymentAccessStorageKey(paperId: string) {
   return `rmc-${paperId}-payment-access`;
@@ -357,8 +360,16 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   const [paymentRequestKey, setPaymentRequestKey] = useState('');
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
+  const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
   const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
   const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+
+  useEffect(() => {
+    void fetch('/api/student/records', { cache: 'no-store' })
+      .then((response) => response.ok ? response.json() as Promise<StudentRecords> : null)
+      .then((records) => { if (records) setStudentRecords(records); })
+      .catch(() => {});
+  }, []);
 
   const checkPaymentStatus = useCallback(async (requestId: string, requestKey: string, chapterName: PaperDefinition['chapter']) => {
     try {
@@ -406,6 +417,11 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   }, [paymentStatus, paymentRequestId, paymentRequestKey, pendingChapter, selectedPaper, checkPaymentStatus]);
 
   function openChapter(nextChapter: string) {
+    const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
+    if (paper && studentRecords?.access.includes(paper.id)) {
+      onOpenChapter(nextChapter);
+      return;
+    }
     setPaymentStudentName('');
     setTransactionId('');
     setPaymentRequestId('');
@@ -413,7 +429,6 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     setPaymentStatus('idle');
     setPaymentMessage('');
     setPendingChapter(nextChapter);
-    const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
     if (!paper) return;
     const saved = localStorage.getItem(paymentAccessStorageKey(paper.id));
     if (!saved) return;
@@ -503,6 +518,11 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
             <div className="chapter-access-content">
               {pendingChapter === 'Real Numbers' && <RealNumbersRevision />}
               <div className="payment-divider"><span>Take the chapter test</span></div>
+              {studentRecords?.signedIn ? (
+                <div className="student-payment-status"><CheckCircle2 /><span><strong>Student account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
+              ) : (
+                <a className="student-payment-login" href="/student"><UserRound /><span><strong>Sign in before paying</strong><small>Your paid chapter and marks will then be available on any device.</small></span><ChevronRight /></a>
+              )}
               <div className="payment-locked-gate">
                 <div className="payment-qr-card qr-only-card">
                   <img src="/phonepe-qr-only.png" alt="QR code for ₹30 chapter test payment" />
@@ -638,6 +658,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
     writtenSolutions: Record<string, string>;
   } | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
+  const [currentPaper, setCurrentPaper] = useState(paper);
   const saveSequence = useRef(0);
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
@@ -648,6 +669,15 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
     || Object.values(writtenFiles).some((files) => files.length)
     || Object.values(savedUploads).some((files) => files.length),
   );
+
+  useEffect(() => {
+    let cancelled = false;
+    void fetch(`/api/papers/${encodeURIComponent(paper.id)}`, { cache: 'no-store' })
+      .then(async (response) => response.ok ? response.json() as Promise<{ paper: PaperDefinition }> : null)
+      .then((payload) => { if (!cancelled && payload?.paper) setCurrentPaper(payload.paper); })
+      .catch(() => {});
+    return () => { cancelled = true; };
+  }, [paper.id]);
 
   async function readResponse(response: Response) {
     const payload = await response.json() as Record<string, unknown>;
@@ -880,7 +910,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
-        <Breadcrumb items={['CBSE', 'Grade 10', paper.chapter]} onHome={() => requestExit(onHome)} />
+        <Breadcrumb items={['CBSE', 'Grade 10', currentPaper.chapter]} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
           <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
           <button className="print-button" type="button" onClick={() => window.print()}><Printer /> Print paper</button>
@@ -890,9 +920,9 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
       <article className="question-paper">
         <header className="paper-heading">
           <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
-          <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {paper.paperNumber}</strong></div>
+          <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>CBSE Mathematics (Standard) · Grade 10</p>
-          <h1>Chapter {paper.chapterNumber} — {paper.chapter}</h1>
+          <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
         </header>
 
@@ -912,13 +942,13 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
             <li>This paper contains 24 compulsory questions divided into Sections A to E.</li>
             <li>Tick one correct option for each MCQ. Write descriptive answers on paper, then upload the scan below the matching question.</li>
             <li>Show the required steps and reasoning. Use of calculators is not allowed.</li>
-            <li>{paper.focus}</li>
+            <li>{currentPaper.focus}</li>
           </ol>
         </section>
 
         <PaperSection title="Section A" subtitle="Questions 1–16 carry 1 mark each." marks="16 × 1 = 16">
           <div className="mcq-list">
-            {paper.mcqs.map((item) => (
+            {currentPaper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
                 <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
                 <div className="option-grid">
@@ -938,7 +968,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
             <ol type="A">{assertionReasonOptions.map((option) => <li key={option}>{option}</li>)}</ol>
           </div>
 
-          {paper.assertions.map((item) => (
+          {currentPaper.assertions.map((item) => (
             <AssertionQuestion
               key={item.number}
               number={item.number}
@@ -951,26 +981,26 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={paper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={paper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
           <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} onFilesChange={(files) => updateWrittenFiles(23, files)}>
-            <QuestionContent value={paper.written[23]} />
+            <QuestionContent value={currentPaper.written[23]} />
           </WrittenQuestion>
         </PaperSection>
 
         <PaperSection title="Section E" subtitle="Question 24 is a case-study question carrying 4 marks." marks="1 × 4 = 4">
           <div className="case-study">
             <div className="case-study-label">Case study</div>
-            <p>{paper.caseStudy}</p>
+            <p>{currentPaper.caseStudy}</p>
           </div>
           <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} onFilesChange={(files) => updateWrittenFiles(24, files)}>
-            <QuestionContent value={paper.written[24]} />
+            <QuestionContent value={currentPaper.written[24]} />
           </WrittenQuestion>
         </PaperSection>
 
@@ -993,7 +1023,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
             <div className="answer-review-section">
               <h3>Section A — MCQ answers</h3>
               <div className="mcq-answer-review">
-                {paper.mcqs.map((item) => {
+                {currentPaper.mcqs.map((item) => {
                   const studentAnswer = answers[String(item.number)];
                   const correctAnswer = result.correctAnswers[String(item.number)];
                   const isCorrect = studentAnswer === correctAnswer;
