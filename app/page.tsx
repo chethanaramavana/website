@@ -64,8 +64,9 @@ const realNumbersMcqs = [
   },
   {
     number: 2,
-    question: 'The HCF of 96 and 404 is',
-    options: ['2', '4', '8', '12'],
+    question: 'The HCF of 40, 110 and 360 is',
+    options: ['40', '110', '360', '10'],
+    source: 'CBSE Board 2025 · Set 30/2/2 · Q6',
   },
   {
     number: 3,
@@ -158,10 +159,11 @@ type PaperDefinition = {
   chapter: 'Real Numbers' | 'Some Applications of Trigonometry';
   chapterNumber: number;
   paperNumber: string;
-  mcqs: readonly { number: number; question: string; options: readonly string[] }[];
+  mcqs: readonly { number: number; question: string; options: readonly string[]; source?: string }[];
   assertions: readonly { number: number; assertion: string; reason: string }[];
   focus: string;
   written: Record<number, string | readonly string[]>;
+  questionSources?: Record<number, string>;
   caseStudy: string;
 };
 
@@ -176,12 +178,16 @@ const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
     written: {
       17: 'Using prime factorisation, find the HCF of 378 and 504.',
       18: 'Show that 7√5 is irrational.',
-      19: 'Find the least positive number that is exactly divisible by 45, 60 and 75.',
+      19: 'Find the smallest number which is divisible by both 644 and 462.',
       20: 'The HCF and LCM of two positive integers are 18 and 756 respectively. If one integer is 108, find the other integer and verify your answer using prime factorisation.',
-      21: 'Prove that 3 + 2√5 is irrational.',
+      21: 'Prove that 4√2 + 5/3 is an irrational number, given that √2 is irrational.',
       22: 'A school has 144 boys and 180 girls. They are to be arranged in rows so that every row has the same number of students and no row mixes boys and girls. Find the greatest possible number of students in each row. Also find the number of rows of boys and girls.',
       23: ['(a) Prove that √3 is irrational.', '(b) Hence, prove that 5 + 2√3 is irrational.'],
       24: ['(a) Write the prime factorisation of 210. [1]', '(b) Find the greatest possible number of identical packets. [1]', '(c) Find the number of red, blue and gold tokens in each packet. Hence find the total number of tokens in one packet. [2]'],
+    },
+    questionSources: {
+      19: 'CBSE Board 2025 · Set 30/3/2 · Q23(a)',
+      21: 'CBSE Board 2025 · Set 30/3/2 · Q26',
     },
     caseStudy: 'For Mathematics Day, a teacher has 84 red tokens, 126 blue tokens and 210 gold tokens. She wants to make the greatest possible number of identical prize packets, using every token and placing the same number of each colour in every packet.',
   },
@@ -494,26 +500,30 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
             </DialogDescription>
           </DialogHeader>
           {isAvailablePaper ? (
-            <div className="payment-locked-gate">
-              <div className="payment-qr-card qr-only-card">
-                <img src="/phonepe-qr-only.png" alt="QR code for ₹30 chapter test payment" />
-                <a href="/phonepe-qr-only.png" download>Save QR</a>
-              </div>
-              <div className="payment-locked-copy">
-                <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
-                {paymentStatus === 'pending' ? (
-                  <div className="payment-pending" aria-live="polite">
-                    <Loader2 />
-                    <div><strong>Waiting for teacher approval</strong><p>{paymentMessage}</p><small>This page checks automatically. The paper will open here after approval.</small></div>
-                  </div>
-                ) : (
-                  <div className="payment-form">
-                    <label htmlFor="payment-student-name"><span>Student name</span><input id="payment-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
-                    <label htmlFor="payment-transaction-id"><span>UPI transaction ID</span><input id="payment-transaction-id" value={transactionId} onChange={(event) => setTransactionId(event.target.value)} maxLength={50} autoCapitalize="characters" placeholder="Shown after successful payment" /></label>
-                    <button type="button" onClick={() => void submitPaymentRequest()} disabled={paymentStatus === 'submitting'}>{paymentStatus === 'submitting' ? <Loader2 /> : <ShieldCheck />}{paymentStatus === 'submitting' ? 'Submitting…' : 'Submit payment for approval'}</button>
-                    <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || 'The teacher will check the payment before this paper opens.'}</p>
-                  </div>
-                )}
+            <div className="chapter-access-content">
+              {pendingChapter === 'Real Numbers' && <RealNumbersRevision />}
+              <div className="payment-divider"><span>Take the chapter test</span></div>
+              <div className="payment-locked-gate">
+                <div className="payment-qr-card qr-only-card">
+                  <img src="/phonepe-qr-only.png" alt="QR code for ₹30 chapter test payment" />
+                  <a href="/phonepe-qr-only.png" download>Save QR</a>
+                </div>
+                <div className="payment-locked-copy">
+                  <div className="test-price-card"><span>Chapter test access</span><strong>₹30</strong></div>
+                  {paymentStatus === 'pending' ? (
+                    <div className="payment-pending" aria-live="polite">
+                      <Loader2 />
+                      <div><strong>Waiting for teacher approval</strong><p>{paymentMessage}</p><small>This page checks automatically. The paper will open here after approval.</small></div>
+                    </div>
+                  ) : (
+                    <div className="payment-form">
+                      <label htmlFor="payment-student-name"><span>Student name</span><input id="payment-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
+                      <label htmlFor="payment-transaction-id"><span>UPI transaction ID</span><input id="payment-transaction-id" value={transactionId} onChange={(event) => setTransactionId(event.target.value)} maxLength={50} autoCapitalize="characters" placeholder="Shown after successful payment" /></label>
+                      <button type="button" onClick={() => void submitPaymentRequest()} disabled={paymentStatus === 'submitting'}>{paymentStatus === 'submitting' ? <Loader2 /> : <ShieldCheck />}{paymentStatus === 'submitting' ? 'Submitting…' : 'Submit payment for approval'}</button>
+                      <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || 'The teacher will check the payment before this paper opens.'}</p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ) : (
@@ -547,6 +557,55 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
         <button type="button" onClick={onChapters}><ArrowLeft /> Back to chapters</button>
       </section>
     </div>
+  );
+}
+
+function RealNumbersRevision() {
+  return (
+    <details className="revision-sheet">
+      <summary>
+        <span><BookOpen /></span>
+        <div><small>Free study sheet</small><strong>Quick Revision: Important Results &amp; Methods</strong><em>Read before taking the test</em></div>
+        <b>Open</b>
+      </summary>
+      <div className="revision-sheet-body">
+        <section>
+          <h3>Fundamental Theorem of Arithmetic</h3>
+          <p>Every composite number can be expressed as a product of primes, and this factorisation is unique apart from the order of the prime factors.</p>
+          <div className="revision-example"><span>Example</span><strong>1260 = 2² × 3² × 5 × 7</strong></div>
+        </section>
+        <section>
+          <h3>HCF and LCM by prime factorisation</h3>
+          <ul>
+            <li><strong>HCF:</strong> take each common prime with its smallest power.</li>
+            <li><strong>LCM:</strong> take every prime present with its greatest power.</li>
+            <li>For two positive integers a and b: <strong>HCF(a, b) × LCM(a, b) = a × b</strong>.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Useful exponent checks</h3>
+          <ul>
+            <li>A perfect square has an even exponent for every prime factor.</li>
+            <li>A perfect cube has an exponent divisible by 3 for every prime factor.</li>
+            <li>If a prime p divides n², then p also divides n.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Irrationality proof method</h3>
+          <ol>
+            <li>Assume the given number is rational.</li>
+            <li>Rearrange the equation to make √2, √3 or √5 equal to a rational number.</li>
+            <li>This contradicts the known irrationality of that square root.</li>
+            <li>Therefore, the original number is irrational.</li>
+          </ol>
+          <p className="revision-tip"><strong>Remember:</strong> rational + irrational is irrational, and a non-zero rational × irrational is irrational.</p>
+        </section>
+        <section className="revision-checklist">
+          <h3>Before you finish an answer</h3>
+          <p>Show the prime factorisation, state the rule you used, keep fractions in lowest terms, and end every proof with a clear conclusion.</p>
+        </section>
+      </div>
+    </details>
   );
 }
 
@@ -861,7 +920,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
           <div className="mcq-list">
             {paper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
-                <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b></legend>
+                <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
@@ -892,11 +951,11 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={paper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={paper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={paper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
@@ -1023,9 +1082,14 @@ function PaperSection({ title, subtitle, marks, children }: { title: string; sub
   );
 }
 
-function WrittenQuestion({ number, marks, children, files, savedFiles, isSaving, onFilesChange }: {
+function QuestionSource({ value }: { value: string }) {
+  return <span className="question-source" title="Verified against an official CBSE question paper"><CheckCircle2 /> Previous exam: {value}</span>;
+}
+
+function WrittenQuestion({ number, marks, source, children, files, savedFiles, isSaving, onFilesChange }: {
   number: number;
   marks: number;
+  source?: string;
   children: ReactNode;
   files: File[];
   savedFiles: SavedUpload[];
@@ -1045,7 +1109,7 @@ function WrittenQuestion({ number, marks, children, files, savedFiles, isSaving,
     <div className="paper-question written-question-wrap">
       <div className="written-question">
         <strong>{number}.</strong>
-        <div>{children}</div>
+        <div>{children}{source && <QuestionSource value={source} />}</div>
         <b>[{marks}]</b>
       </div>
       <div className="answer-upload-row">

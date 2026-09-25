@@ -149,6 +149,33 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .test-start-points li { position: relative; padding-left: 23px; line-height: 1.45; }
 .test-start-points li:before { content: '✓'; width: 16px; height: 16px; position: absolute; left: 0; top: 1px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--blue); font-size: .62rem; font-weight: 900; }
 .start-test-dialog.payment-dialog { max-width: 780px !important; max-height: min(92vh, 860px); overflow-y: auto; }
+.chapter-access-content { display: grid; gap: 18px; }
+.revision-sheet { overflow: hidden; border: 1px solid #cfdfe8; border-radius: 17px; background: #f6fbfd; }
+.revision-sheet summary { min-height: 76px; padding: 14px 16px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; color: var(--navy); cursor: pointer; list-style: none; }
+.revision-sheet summary::-webkit-details-marker { display: none; }
+.revision-sheet summary > span { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px; color: white; background: var(--blue); }
+.revision-sheet summary > span svg { width: 20px; }
+.revision-sheet summary div { display: grid; gap: 2px; }
+.revision-sheet summary small { color: #2d7566; font-size: .62rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.revision-sheet summary strong { font: 700 .94rem/1.3 Georgia, serif; }
+.revision-sheet summary em { color: #6f7f86; font-size: .68rem; font-style: normal; }
+.revision-sheet summary > b { padding: 6px 9px; border-radius: 9px; color: var(--primary); background: white; font-size: .65rem; }
+.revision-sheet[open] summary { border-bottom: 1px solid #d9e5eb; }
+.revision-sheet[open] summary > b::after { content: ' notes'; }
+.revision-sheet-body { padding: 17px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.revision-sheet-body section { padding: 14px; border: 1px solid #dbe7eb; border-radius: 12px; background: white; }
+.revision-sheet-body h3 { margin: 0 0 7px; color: var(--navy); font: 700 .86rem/1.3 Georgia, serif; }
+.revision-sheet-body p, .revision-sheet-body li { color: #53656d; font-size: .72rem; line-height: 1.55; }
+.revision-sheet-body p { margin: 0; }
+.revision-sheet-body ul, .revision-sheet-body ol { margin: 0; padding-left: 18px; }
+.revision-sheet-body li + li { margin-top: 5px; }
+.revision-example { margin-top: 10px; padding: 9px 10px; display: grid; gap: 3px; border-radius: 9px; color: var(--navy); background: #eef5ff; }
+.revision-example span { color: #5e7280; font-size: .58rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
+.revision-example strong { font-size: .75rem; }
+.revision-tip { margin-top: 10px !important; padding: 9px 10px; border-radius: 9px; background: #fff6dc; }
+.revision-checklist { grid-column: 1 / -1; border-color: #d5e8de !important; background: #f1fbf6 !important; }
+.payment-divider { display: flex; align-items: center; gap: 10px; color: #7b7483; font-size: .64rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.payment-divider::before, .payment-divider::after { content: ''; height: 1px; flex: 1; background: #e5e0e9; }
 .payment-gate { display: grid; grid-template-columns: minmax(220px, .9fr) minmax(260px, 1.1fr); gap: 22px; align-items: center; }
 .payment-qr-card { padding: 12px; display: grid; justify-items: center; gap: 8px; border: 1px solid #e2d9eb; border-radius: 17px; background: #fff; box-shadow: 0 10px 28px rgba(53,38,87,.08); }
 .payment-qr-card img { width: min(100%, 300px); max-height: 430px; object-fit: contain; border-radius: 10px; }
@@ -239,6 +266,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .exam-section > header p { margin: 3px 0 0; color: #dce7ed; font-size: .69rem; line-height: 1.35; }
 .exam-section > header > span { flex: 0 0 auto; font-size: .72rem; font-weight: 850; }
 .paper-question { margin: 0; padding: 16px 0; border: 0; border-bottom: 1px solid #dce1e3; font-size: .92rem; line-height: 1.6; }
+.question-source { width: fit-content; margin-top: 7px; padding: 5px 8px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid #c9e2d6; border-radius: 999px; color: #24654f; background: #eff9f4; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .61rem; font-weight: 800; line-height: 1.25; }
+.question-source svg { width: 13px; height: 13px; flex: 0 0 13px; }
+.paper-question legend .question-source { grid-column: 2 / -1; }
 .paper-question legend { width: 100%; padding: 0; display: grid; grid-template-columns: auto 1fr auto; gap: 8px; }
 .paper-question legend > b, .paper-question legend > em { color: #56666d; font-size: .72rem; font-style: normal; font-weight: 700; }
 .mcq-question legend { display: block; }
@@ -541,6 +571,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .start-test-dialog [data-slot="dialog-footer"] { margin: 4px -22px -22px; padding: 14px 22px; }
   .payment-gate { grid-template-columns: 1fr; gap: 16px; }
   .payment-locked-gate { grid-template-columns: 1fr; gap: 16px; }
+  .revision-sheet-body { grid-template-columns: 1fr; padding: 12px; }
+  .revision-checklist { grid-column: auto; }
+  .revision-sheet summary { padding: 12px; }
+  .revision-sheet summary > b { display: none; }
   .payment-qr-card img { max-height: 360px; }
   .test-later-button, .test-start-button { width: 100%; }
   .chapter-empty-view { min-height: 520px; }
