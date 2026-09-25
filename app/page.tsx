@@ -245,10 +245,6 @@ export default function HomePage() {
           <span className="brand-mark"><img src="/ramavana-logo.png" alt="" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
-        <div className="header-actions">
-          <a className="teacher-link" href="/teacher">Teacher review</a>
-          <span className="private-badge"><LockKeyhole /> Private</span>
-        </div>
       </header>
 
       {!board ? (
