@@ -252,7 +252,7 @@ export default function HomePage() {
           <span className="brand-mark"><img src="/ramavana-logo.png" alt="" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
-        <a className="student-login-link" href="/student"><UserRound /><span>Student login</span></a>
+        <a className="student-login-link" href="/student"><UserRound /><span>Log in / Sign up</span></a>
       </header>
 
       {!board ? (
@@ -347,6 +347,16 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 
 type PaymentStatus = 'idle' | 'submitting' | 'pending' | 'approved' | 'rejected';
 type StudentRecords = { signedIn: boolean; email?: string; access: string[] };
+type RazorpayStatus = 'idle' | 'starting' | 'verifying';
+
+type RazorpaySuccess = { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string };
+type RazorpayCheckout = { open: () => void; on: (event: string, handler: (response: { error?: { description?: string } }) => void) => void };
+
+declare global {
+  interface Window {
+    Razorpay?: new (options: Record<string, unknown>) => RazorpayCheckout;
+  }
+}
 
 function paymentAccessStorageKey(paperId: string) {
   return `rmc-${paperId}-payment-access`;
@@ -359,6 +369,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   const [paymentRequestId, setPaymentRequestId] = useState('');
   const [paymentRequestKey, setPaymentRequestKey] = useState('');
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
+  const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
   const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
@@ -427,6 +438,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     setPaymentRequestId('');
     setPaymentRequestKey('');
     setPaymentStatus('idle');
+    setRazorpayStatus('idle');
     setPaymentMessage('');
     setPendingChapter(nextChapter);
     if (!paper) return;
@@ -481,6 +493,98 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     }
   }
 
+  async function startRazorpayPayment() {
+    if (!selectedPaper || !pendingChapter) return;
+    if (!studentRecords?.signedIn) {
+      setPaymentMessage('Please log in or sign up before paying. This keeps the chapter and marks on the student account.');
+      return;
+    }
+    const name = paymentStudentName.trim();
+    if (name.length < 2) {
+      setPaymentMessage('Please enter the student name.');
+      return;
+    }
+
+    setRazorpayStatus('starting');
+    setPaymentMessage('Opening secure Razorpay checkout…');
+    try {
+      const orderResponse = await fetch('/api/razorpay/order', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ studentName: name, paperId: selectedPaper.id }),
+      });
+      const order = await orderResponse.json() as { keyId?: string; orderId?: string; amount?: number; currency?: string; alreadyPaid?: boolean; error?: string };
+      if (!orderResponse.ok) throw new Error(order.error ?? 'Razorpay could not start the payment.');
+      if (order.alreadyPaid) {
+        setPendingChapter(null);
+        onOpenChapter(pendingChapter);
+        return;
+      }
+      if (!order.keyId || !order.orderId || !order.amount || !order.currency) throw new Error('Razorpay returned an incomplete order.');
+
+      if (!window.Razorpay) {
+        await new Promise<void>((resolve, reject) => {
+          const existing = document.querySelector<HTMLScriptElement>('script[data-ramavana-razorpay]');
+          if (existing) {
+            existing.addEventListener('load', () => resolve(), { once: true });
+            existing.addEventListener('error', () => reject(new Error('Razorpay checkout could not load.')), { once: true });
+            return;
+          }
+          const script = document.createElement('script');
+          script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+          script.async = true;
+          script.dataset.ramavanaRazorpay = 'true';
+          script.onload = () => resolve();
+          script.onerror = () => reject(new Error('Razorpay checkout could not load.'));
+          document.head.appendChild(script);
+        });
+      }
+      if (!window.Razorpay) throw new Error('Razorpay checkout is unavailable.');
+
+      const chapterName = pendingChapter;
+      const checkout = new window.Razorpay({
+        key: order.keyId,
+        amount: order.amount,
+        currency: order.currency,
+        name: 'Ramavana Mathematical Center',
+        description: `${selectedPaper.chapter} chapter test`,
+        order_id: order.orderId,
+        prefill: { name, email: studentRecords.email },
+        notes: { chapter: selectedPaper.chapter },
+        theme: { color: '#5936a7' },
+        modal: { ondismiss: () => { setRazorpayStatus('idle'); setPaymentMessage('Payment was not completed. You can try again when ready.'); } },
+        handler: async (response: RazorpaySuccess) => {
+          setRazorpayStatus('verifying');
+          setPaymentMessage('Payment received. Verifying and opening your paper…');
+          try {
+            const verifyResponse = await fetch('/api/razorpay/verify', {
+              method: 'POST',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(response),
+            });
+            const verified = await verifyResponse.json() as { approved?: boolean; error?: string };
+            if (!verifyResponse.ok || !verified.approved) throw new Error(verified.error ?? 'Payment verification failed.');
+            setPaymentStatus('approved');
+            setPendingChapter(null);
+            onOpenChapter(chapterName);
+          } catch (error) {
+            setRazorpayStatus('idle');
+            setPaymentMessage(error instanceof Error ? error.message : 'Payment verification failed.');
+          }
+        },
+      });
+      checkout.on('payment.failed', (response) => {
+        setRazorpayStatus('idle');
+        setPaymentMessage(response.error?.description ?? 'Payment failed. No chapter access was charged.');
+      });
+      checkout.open();
+      setRazorpayStatus('idle');
+    } catch (error) {
+      setRazorpayStatus('idle');
+      setPaymentMessage(error instanceof Error ? error.message : 'Razorpay could not start the payment.');
+    }
+  }
+
   return (
     <div className="content-view">
       <Breadcrumb items={['CBSE', 'Grade 10']} onHome={onHome} onFirstItem={onBoard} />
@@ -510,7 +614,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
             <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'Scan the QR, pay exactly ₹30 and submit the transaction ID shown in PhonePe.'
+                ? 'Log in once, pay securely and the question paper will open automatically.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
@@ -521,8 +625,16 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
               {studentRecords?.signedIn ? (
                 <div className="student-payment-status"><CheckCircle2 /><span><strong>Student account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
               ) : (
-                <a className="student-payment-login" href="/student"><UserRound /><span><strong>Sign in before paying</strong><small>Your paid chapter and marks will then be available on any device.</small></span><ChevronRight /></a>
+                <a className="student-payment-login" href="/student"><UserRound /><span><strong>Log in / Sign up before paying</strong><small>Your paid chapter and marks will then be available on any device.</small></span><ChevronRight /></a>
               )}
+              <div className="razorpay-checkout-card">
+                <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
+                <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
+                <button type="button" onClick={() => void startRazorpayPayment()} disabled={!studentRecords?.signedIn || razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
+                <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || (studentRecords?.signedIn ? 'Razorpay will handle UPI, cards and other available methods.' : 'Log in or sign up to continue.')}</p>
+              </div>
+              <details className="manual-payment-fallback">
+                <summary>Temporary QR payment option</summary>
               <div className="payment-locked-gate">
                 <div className="payment-qr-card qr-only-card">
                   <img src="/phonepe-qr-only.png" alt="QR code for ₹30 chapter test payment" />
@@ -545,6 +657,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
                   )}
                 </div>
               </div>
+              </details>
             </div>
           ) : (
             <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
@@ -582,50 +695,11 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
 
 function RealNumbersRevision() {
   return (
-    <details className="revision-sheet">
-      <summary>
-        <span><BookOpen /></span>
-        <div><small>Free study sheet</small><strong>Quick Revision: Important Results &amp; Methods</strong><em>Read before taking the test</em></div>
-        <b>Open</b>
-      </summary>
-      <div className="revision-sheet-body">
-        <section>
-          <h3>Fundamental Theorem of Arithmetic</h3>
-          <p>Every composite number can be expressed as a product of primes, and this factorisation is unique apart from the order of the prime factors.</p>
-          <div className="revision-example"><span>Example</span><strong>1260 = 2² × 3² × 5 × 7</strong></div>
-        </section>
-        <section>
-          <h3>HCF and LCM by prime factorisation</h3>
-          <ul>
-            <li><strong>HCF:</strong> take each common prime with its smallest power.</li>
-            <li><strong>LCM:</strong> take every prime present with its greatest power.</li>
-            <li>For two positive integers a and b: <strong>HCF(a, b) × LCM(a, b) = a × b</strong>.</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Useful exponent checks</h3>
-          <ul>
-            <li>A perfect square has an even exponent for every prime factor.</li>
-            <li>A perfect cube has an exponent divisible by 3 for every prime factor.</li>
-            <li>If a prime p divides n², then p also divides n.</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Irrationality proof method</h3>
-          <ol>
-            <li>Assume the given number is rational.</li>
-            <li>Rearrange the equation to make √2, √3 or √5 equal to a rational number.</li>
-            <li>This contradicts the known irrationality of that square root.</li>
-            <li>Therefore, the original number is irrational.</li>
-          </ol>
-          <p className="revision-tip"><strong>Remember:</strong> rational + irrational is irrational, and a non-zero rational × irrational is irrational.</p>
-        </section>
-        <section className="revision-checklist">
-          <h3>Before you finish an answer</h3>
-          <p>Show the prime factorisation, state the rule you used, keep fractions in lowest terms, and end every proof with a clear conclusion.</p>
-        </section>
-      </div>
-    </details>
+    <a className="revision-sheet revision-link" href="/notes/real-numbers" target="_blank">
+      <span><BookOpen /></span>
+      <div><small>Free chapter notes</small><strong>Real Numbers Study Guide</strong><em>Clear explanations, worked examples and practice · 3 pages</em></div>
+      <b>Open notes <ArrowRight /></b>
+    </a>
   );
 }
 
