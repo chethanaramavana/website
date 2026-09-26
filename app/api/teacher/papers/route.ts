@@ -14,7 +14,7 @@ export async function GET(request: Request) {
   try {
     const rows = await getDatabase().prepare('SELECT paper_id, content_json, updated_at FROM paper_content').all<{ paper_id: string; content_json: string; updated_at: string }>();
     const saved = new Map(rows.results.map((row) => [row.paper_id, row]));
-    const papers = Object.values(paperDefinitionsById).map((fallback) => {
+    const papers = Object.values(paperDefinitionsById).sort((left, right) => left.chapterNumber - right.chapterNumber).map((fallback) => {
       const row = saved.get(fallback.id);
       const assessment = getPaperAssessment(fallback.id)!;
       const savedDocument = row ? JSON.parse(row.content_json) as Partial<PaperDocument> : null;

@@ -33,6 +33,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { paperDefinitions as sharedPaperDefinitions } from '@/lib/papers';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -156,8 +157,8 @@ const assertionReasonOptions = [
 ] as const;
 
 type PaperDefinition = {
-  id: 'real-numbers-01' | 'applications-trigonometry-01';
-  chapter: 'Real Numbers' | 'Some Applications of Trigonometry';
+  id: string;
+  chapter: string;
   chapterNumber: number;
   paperNumber: string;
   mcqs: readonly { number: number; question: string; options: readonly string[]; source?: string }[];
@@ -212,6 +213,8 @@ const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
     caseStudy: 'A surveyor observes the top of a tower at an angle of elevation of 45°. After walking 40 m directly towards the tower, the angle becomes 60°. The surveyor’s eye level is taken at ground level for this calculation.',
   },
 };
+
+Object.assign(paperDefinitions, sharedPaperDefinitions);
 
 type BoardName = (typeof boards)[number]['name'];
 
@@ -620,7 +623,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
           </DialogHeader>
           {isAvailablePaper ? (
             <div className="chapter-access-content">
-              {pendingChapter === 'Real Numbers' && <RealNumbersRevision />}
+              {selectedPaper && <ChapterNotesLink paper={selectedPaper} />}
               <div className="payment-divider"><span>Take the chapter test</span></div>
               {studentRecords?.signedIn ? (
                 <div className="student-payment-status"><CheckCircle2 /><span><strong>Student account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
@@ -693,11 +696,12 @@ function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome:
   );
 }
 
-function RealNumbersRevision() {
+function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
+  const slug = paper.id.replace(/-01$/, '');
   return (
-    <a className="revision-sheet revision-link" href="/notes/real-numbers" target="_blank">
+    <a className="revision-sheet revision-link" href={`/notes/${slug}`} target="_blank">
       <span><BookOpen /></span>
-      <div><small>Free chapter notes</small><strong>Real Numbers Study Guide</strong><em>Clear explanations, worked examples and practice · 3 pages</em></div>
+      <div><small>Free chapter notes</small><strong>{paper.chapter} Study Guide</strong><em>Clear explanations, worked examples and practice · 3 pages</em></div>
       <b>Open notes <ArrowRight /></b>
     </a>
   );

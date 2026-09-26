@@ -1,8 +1,10 @@
+import { additionalPaperDefinitions } from './papers-additional';
+
 export type QuestionSource = string;
 
 export type PaperDefinition = {
-  id: 'real-numbers-01' | 'applications-trigonometry-01';
-  chapter: 'Real Numbers' | 'Some Applications of Trigonometry';
+  id: string;
+  chapter: string;
   chapterNumber: number;
   paperNumber: string;
   mcqs: { number: number; question: string; options: string[]; source?: QuestionSource }[];
@@ -13,7 +15,7 @@ export type PaperDefinition = {
   caseStudy: string;
 };
 
-export const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
+const basePaperDefinitions: Record<string, PaperDefinition> = {
   'Real Numbers': {
     id: 'real-numbers-01',
     chapter: 'Real Numbers',
@@ -93,9 +95,14 @@ export const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinitio
   },
 };
 
+export const paperDefinitions: Record<string, PaperDefinition> = {
+  ...basePaperDefinitions,
+  ...additionalPaperDefinitions,
+};
+
 export const paperDefinitionsById = Object.fromEntries(
   Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
-) as Record<PaperDefinition['id'], PaperDefinition>;
+) as Record<string, PaperDefinition>;
 
 export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!value || typeof value !== 'object') return false;

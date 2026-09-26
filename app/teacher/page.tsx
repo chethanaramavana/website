@@ -2,40 +2,21 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
-import type { PaperDefinition } from '@/lib/papers';
+import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 
-const paperReviews = {
-  'real-numbers-01': {
-    title: 'Real Numbers · Paper 01',
-    writtenQuestions: [
-      { number: 17, marks: 2, text: 'HCF of 378 and 504 using prime factorisation' },
-      { number: 18, marks: 2, text: 'Show that 7√5 is irrational' },
-      { number: 19, marks: 2, text: 'Smallest number divisible by 644 and 462' },
-      { number: 20, marks: 3, text: 'Find the other integer using HCF and LCM' },
-      { number: 21, marks: 3, text: 'Prove that 4√2 + 5/3 is irrational' },
-      { number: 22, marks: 3, text: 'Arrange boys and girls in equal rows' },
-      { number: 23, marks: 5, text: 'Irrationality proof for √3 and 5 + 2√3' },
-      { number: 24, marks: 4, text: 'Mathematics Day token case study' },
-    ],
-  },
-  'applications-trigonometry-01': {
-    title: 'Some Applications of Trigonometry · Paper 01',
-    writtenQuestions: [
-      { number: 17, marks: 2, text: 'Height of a tree from its shadow' },
-      { number: 18, marks: 2, text: 'Ground distance of a ladder from a wall' },
-      { number: 19, marks: 2, text: 'Height of a kite using its string' },
-      { number: 20, marks: 3, text: 'Height of a tower from one observation' },
-      { number: 21, marks: 3, text: 'Tower viewed from the top of a building' },
-      { number: 22, marks: 3, text: 'Tower viewed from two points' },
-      { number: 23, marks: 5, text: 'Lighthouse and two boats' },
-      { number: 24, marks: 4, text: 'Surveyor and tower case study' },
-    ],
-  },
-} as const;
+const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
+const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
+  title: `${paper.chapter} · Paper ${paper.paperNumber}`,
+  writtenQuestions: Object.entries(paper.written).map(([number, value]) => ({
+    number: Number(number),
+    marks: writtenMarks[Number(number)],
+    text: Array.isArray(value) ? value.join(' ') : value,
+  })),
+}])) as Record<string, { title: string; writtenQuestions: { number: number; marks: number; text: string }[] }>;
 
 type Summary = {
   id: string;
-  paper_id: keyof typeof paperReviews;
+  paper_id: string;
   student_name: string;
   user_email: string;
   status: 'submitted' | 'marked';
@@ -57,7 +38,7 @@ type Detail = {
 type PaymentRequest = {
   id: string;
   student_name: string;
-  paper_id: keyof typeof paperReviews;
+  paper_id: string;
   transaction_id: string;
   amount_paise: number;
   status: 'pending' | 'approved' | 'rejected';

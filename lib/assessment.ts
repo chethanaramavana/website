@@ -1,3 +1,5 @@
+import { additionalPaperAssessments } from './assessment-additional';
+
 export const writtenQuestionMarks: Record<number, number> = {
   17: 2, 18: 2, 19: 2, 20: 3, 21: 3, 22: 3, 23: 5, 24: 4,
 };
@@ -8,7 +10,7 @@ type PaperAssessment = {
   writtenSolutions: Record<number, string>;
 };
 
-export const paperAssessments: Record<string, PaperAssessment> = {
+const basePaperAssessments: Record<string, PaperAssessment> = {
   'real-numbers-01': {
     title: 'Real Numbers · Paper 01',
     mcqAnswerKey: {
@@ -43,6 +45,11 @@ export const paperAssessments: Record<string, PaperAssessment> = {
       24: 'Use tan θ = height/horizontal distance. If the original distance is x and the height is h, then h/x = tan 45° and h/(x − 40) = tan 60°. Hence h = x and x = √3(x − 40). Solving gives x = h = 60 + 20√3 m.',
     },
   },
+};
+
+export const paperAssessments: Record<string, PaperAssessment> = {
+  ...basePaperAssessments,
+  ...additionalPaperAssessments,
 };
 
 export function getPaperAssessment(paperId: string) {
