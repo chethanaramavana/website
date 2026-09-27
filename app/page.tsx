@@ -2,18 +2,23 @@
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import {
+  Archive,
   ArrowLeft,
   ArrowRight,
   BookOpen,
   Camera,
   CheckCircle2,
   ChevronRight,
+  ExternalLink,
+  FileText,
   Folder,
   FolderOpen,
   GraduationCap,
+  Headphones,
   Home,
   LockKeyhole,
   Loader2,
+  Mail,
   Printer,
   Save,
   Send,
@@ -39,6 +44,30 @@ const boards = [
   { name: 'CBSE', ready: true },
   { name: 'ICSE', ready: false },
   { name: 'IGCSE', ready: false },
+] as const;
+
+const helpDeskEmail = 'chethanamanasa21@gmail.com';
+const helpDeskPhone = '+91 93539 28169';
+
+const previousPaperResources = [
+  {
+    label: 'Board examination papers',
+    detail: 'Class 10 papers from recent CBSE examinations, arranged year-wise.',
+    href: 'https://www.cbse.gov.in/cbsenew/question-paper.html',
+    action: 'Open CBSE archive',
+  },
+  {
+    label: 'Sample papers & marking schemes',
+    detail: 'Official sample papers with the corresponding CBSE marking schemes.',
+    href: 'https://cbseacademic.nic.in/sqp_archive.html',
+    action: 'View sample-paper archive',
+  },
+  {
+    label: 'Class 10 question bank',
+    detail: 'Competency-focused questions published by the CBSE Academic Unit.',
+    href: 'https://cbseacademic.nic.in/qbclass10.html',
+    action: 'Open question bank',
+  },
 ] as const;
 
 const chapters = [
@@ -255,7 +284,15 @@ export default function HomePage() {
           <span className="brand-mark"><img src="/ramavana-logo.png" alt="" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
-        <a className="student-login-link" href="/student"><UserRound /><span>Log in / Sign up</span></a>
+        <nav className="primary-nav" aria-label="Main navigation">
+          <a href="/#study-library">Study Library</a>
+          <a href="/#previous-papers">Previous Papers</a>
+          <a href="#help-desk">Help Desk</a>
+        </nav>
+        <div className="account-links">
+          <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
+          <a className="student-login-link" href="/student"><UserRound /><span>Student Login</span></a>
+        </div>
       </header>
 
       {!board ? (
@@ -267,6 +304,19 @@ export default function HomePage() {
       ) : (
         <ChapterView chapter={chapter} onHome={goHome} onChapters={() => setChapter(null)} />
       )}
+
+      <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
+        <span className="help-desk-icon"><Headphones /></span>
+        <div className="help-desk-copy">
+          <p>Need assistance?</p>
+          <h2 id="help-desk-title">Ramavana Help Desk</h2>
+          <span>For login, payment and test-submission support.</span>
+        </div>
+        <div className="help-desk-contacts">
+          {helpDeskPhone && <a href={`tel:${helpDeskPhone.replace(/\s/g, '')}`}><span>Call us</span><strong>{helpDeskPhone}</strong></a>}
+          <a href={`mailto:${helpDeskEmail}`}><Mail /><span><small>Email us</small><strong>{helpDeskEmail}</strong></span></a>
+        </div>
+      </section>
 
       <footer className="site-footer">
         <div className="footer-brand"><strong>Ramavana Mathematical Center</strong><span>Learn · Practise · Progress</span></div>
@@ -299,7 +349,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           <span className="math-note note-two">√2</span>
         </div>
       </section>
-      <section className="library-section" aria-labelledby="curriculum-title">
+      <section className="library-section" id="study-library" aria-labelledby="curriculum-title">
         <div className="section-heading">
           <div><p>Ready to begin?</p><h2 id="curriculum-title">Where do you study?</h2><span>Tap your board and start practising.</span></div>
         </div>
@@ -313,6 +363,28 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
             </button>
           ))}
         </div>
+      </section>
+      <section className="previous-papers-section" id="previous-papers" aria-labelledby="previous-papers-title">
+        <div className="previous-papers-heading">
+          <span className="previous-papers-icon"><Archive /></span>
+          <div>
+            <p>Learn from the real pattern</p>
+            <h2 id="previous-papers-title">Previous CBSE Papers</h2>
+            <span>Use authentic board resources to understand question styles, difficulty and marking.</span>
+          </div>
+        </div>
+        <div className="previous-paper-grid">
+          {previousPaperResources.map((resource, index) => (
+            <a key={resource.label} className="previous-paper-card" href={resource.href} target="_blank" rel="noreferrer">
+              <span className={`paper-resource-number resource-${index + 1}`}>{String(index + 1).padStart(2, '0')}</span>
+              <FileText />
+              <strong>{resource.label}</strong>
+              <p>{resource.detail}</p>
+              <span className="paper-resource-action">{resource.action} <ExternalLink /></span>
+            </a>
+          ))}
+        </div>
+        <p className="official-resource-note"><ShieldCheck /> These links open official CBSE resources in a new tab. Ramavana does not copy or alter the original papers.</p>
       </section>
     </div>
   );
