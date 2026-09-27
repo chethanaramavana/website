@@ -619,6 +619,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .mark-field { display: grid; grid-template-columns: auto 50px auto; align-items: center; gap: 6px; color: #65747b; font-size: .7rem; font-weight: 800; }
 .mark-field input { width: 50px; height: 36px; padding: 0 5px; border: 1px solid #cfc6dc; border-radius: 8px; color: var(--navy); background: white; text-align: center; }
 .mark-field em { font-style: normal; }
+.evaluation-sheet { grid-column: 1 / -1; overflow: hidden; border: 1px solid #d9d1e8; border-radius: 11px; background: #faf8fe; }
+.evaluation-sheet summary { min-height: 44px; padding: 10px 13px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--primary); cursor: pointer; font-size: .8rem; font-weight: 850; }
+.evaluation-sheet summary strong { padding: 4px 8px; border-radius: 10px; color: #775515; background: #fff0c9; font-size: .7rem; white-space: nowrap; }
+.evaluation-model-answer { padding: 13px; border-top: 1px solid #e5dfee; background: white; }
+.evaluation-model-answer > span { color: var(--rust); font-size: .7rem; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
+.evaluation-model-answer p { margin: 6px 0 0; color: #3e535d; font-size: .82rem; line-height: 1.6; }
+.evaluation-sheet ol { margin: 0; padding: 12px 13px 14px 42px; display: grid; gap: 7px; }
+.evaluation-sheet li { padding-left: 3px; color: #40545e; font-size: .8rem; line-height: 1.5; }
+.evaluation-sheet li::marker { color: var(--primary); font-weight: 900; }
+.evaluation-sheet li span { margin-right: 12px; }
+.evaluation-sheet li strong { float: right; padding: 2px 6px; border-radius: 8px; color: #287057; background: #e5f6ef; font-size: .67rem; white-space: nowrap; }
 .teacher-feedback { margin-top: 18px; }
 .teacher-feedback label { display: block; margin-bottom: 6px; font-size: .76rem; font-weight: 850; }
 .teacher-feedback textarea { width: 100%; min-height: 105px; padding: 12px; resize: vertical; border: 1px solid #d8d1df; border-radius: 10px; color: #364d58; background: #fdfcfe; font: .8rem/1.5 var(--font-geist-sans), Arial, sans-serif; }
@@ -657,6 +668,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .paper-editor-question > strong { color: var(--rust); font-size: .72rem; }
 .paper-editor-question textarea { min-height: 72px; resize: vertical; }
 .paper-editor-question > div { display: grid; gap: 10px; }
+.paper-marking-editor { overflow: hidden; border: 1px solid #d9d1e8; border-radius: 11px; background: #faf8fe; }
+.paper-marking-editor > header { padding: 11px 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid #e5dfee; }
+.paper-marking-editor > header span, .paper-marking-editor > header strong { display: block; }
+.paper-marking-editor > header span { color: var(--primary); font-size: .78rem; font-weight: 900; }
+.paper-marking-editor > header strong { margin-top: 2px; color: #6f7880; font-size: .68rem; }
+.paper-marking-editor > header em { color: #287057; font-size: .7rem; font-style: normal; font-weight: 850; }
+.paper-marking-editor > div { padding: 10px; display: grid; gap: 7px; }
+.paper-marking-editor > div > label { grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; gap: 8px; }
+.paper-marking-editor label > b { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--primary); font-size: .67rem; }
+.paper-marking-editor label > textarea { min-height: 52px; }
+.paper-marking-editor label > span { color: #287057; font-size: .7rem; font-weight: 850; white-space: nowrap; }
 .paper-editor-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .paper-editor-question input, .paper-editor-question select { min-height: 39px; }
 .paper-answer-select { width: 160px; }
@@ -881,6 +903,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .teacher-header { grid-template-columns: auto 1fr auto; gap: 10px; }
   .teacher-header > a { width: 38px; height: 38px; justify-content: center; font-size: 0; }
   .teacher-header h1 { font-size: 1.55rem; }
+  .evaluation-sheet li strong { float: none; margin-top: 5px; display: table; }
+  .paper-marking-editor > header { align-items: flex-start; flex-direction: column; }
+  .paper-marking-editor > div > label { grid-template-columns: 24px 1fr; }
+  .paper-marking-editor label > span { grid-column: 2; }
   .payment-review-section { padding: 15px; }
   .payment-request-card { grid-template-columns: 1fr; gap: 10px; }
   .payment-review-actions { width: 100%; }

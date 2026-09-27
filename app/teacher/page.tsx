@@ -29,10 +29,13 @@ type Summary = {
 
 type Upload = { id: string; question_number: number; file_name: string; content_type: string; size_bytes: number };
 type Mark = { question_number: number; marks_awarded: number; feedback: string };
+type MarkingStep = { criterion: string; marks: number };
+type ReviewQuestion = { number: number; marks: number; text: string; modelSolution: string; markingScheme: MarkingStep[] };
 type Detail = {
   submission: Summary & { teacher_feedback: string };
   uploads: Upload[];
   marks: Mark[];
+  guide: { title: string; writtenQuestions: ReviewQuestion[] };
 };
 
 type PaymentRequest = {
@@ -68,6 +71,7 @@ export default function TeacherReviewPage() {
   const [editingPaper, setEditingPaper] = useState<PaperDefinition | null>(null);
   const [paperAnswerKeys, setPaperAnswerKeys] = useState<Record<string, Record<number, number>>>({});
   const [paperSolutions, setPaperSolutions] = useState<Record<string, Record<number, string>>>({});
+  const [paperMarkingSchemes, setPaperMarkingSchemes] = useState<Record<string, Record<number, MarkingStep[]>>>({});
   const [paperLoading, setPaperLoading] = useState(false);
   const [paperSaving, setPaperSaving] = useState(false);
 
@@ -95,9 +99,8 @@ export default function TeacherReviewPage() {
     try {
       const payload = await readJson(await fetch(`/api/teacher/submissions/${id}`, { cache: 'no-store' })) as unknown as Detail;
       setDetail(payload);
-      const paper = paperReviews[payload.submission.paper_id] ?? paperReviews['real-numbers-01'];
       const savedMarks = Object.fromEntries(payload.marks.map((mark) => [String(mark.question_number), mark.marks_awarded]));
-      setMarks(Object.fromEntries(paper.writtenQuestions.map((question) => [String(question.number), savedMarks[String(question.number)] ?? 0])));
+      setMarks(Object.fromEntries(payload.guide.writtenQuestions.map((question) => [String(question.number), savedMarks[String(question.number)] ?? 0])));
       setFeedback(payload.submission.teacher_feedback ?? '');
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'This submission could not be loaded.');
@@ -107,7 +110,10 @@ export default function TeacherReviewPage() {
   useEffect(() => { void loadList(); }, []);
 
   const writtenTotal = useMemo(() => Object.values(marks).reduce((sum, mark) => sum + (Number(mark) || 0), 0), [marks]);
-  const selectedPaper = detail ? (paperReviews[detail.submission.paper_id] ?? paperReviews['real-numbers-01']) : paperReviews['real-numbers-01'];
+  const selectedPaper: Detail['guide'] = detail?.guide ?? {
+    ...paperReviews['real-numbers-01'],
+    writtenQuestions: paperReviews['real-numbers-01'].writtenQuestions.map((question) => ({ ...question, modelSolution: '', markingScheme: [] })),
+  };
 
   async function saveMarks() {
     if (!selectedId) return;
@@ -153,11 +159,12 @@ export default function TeacherReviewPage() {
     setPaperLoading(true);
     setMessage('');
     try {
-      const payload = await readJson(await fetch('/api/teacher/papers', { cache: 'no-store' })) as { papers: Array<{ paper: PaperDefinition; answerKey: Record<number, number>; writtenSolutions: Record<number, string> }> };
+      const payload = await readJson(await fetch('/api/teacher/papers', { cache: 'no-store' })) as { papers: Array<{ paper: PaperDefinition; answerKey: Record<number, number>; writtenSolutions: Record<number, string>; markingSchemes: Record<number, MarkingStep[]> }> };
       const loaded = payload.papers.map((entry) => entry.paper);
       setPapers(loaded);
       setPaperAnswerKeys(Object.fromEntries(payload.papers.map((entry) => [entry.paper.id, entry.answerKey])));
       setPaperSolutions(Object.fromEntries(payload.papers.map((entry) => [entry.paper.id, entry.writtenSolutions])));
+      setPaperMarkingSchemes(Object.fromEntries(payload.papers.map((entry) => [entry.paper.id, entry.markingSchemes])));
       setEditingPaper(structuredClone(loaded[0]));
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Question papers could not be loaded.');
@@ -184,12 +191,23 @@ export default function TeacherReviewPage() {
 
   function updateCorrectAnswer(number: number, value: number) {
     if (!editingPaper) return;
-    setPaperAnswerKeys((current) => ({ ...current, [editingPaper.id]: { ...(current[editingPaper.id] ?? {}), [number]: value } }));
+    setPaperAnswerKeys((current) => ({ ...current, [editingPaper.id]: { ...current[editingPaper.id], [number]: value } }));
   }
 
   function updateWrittenSolution(number: number, value: string) {
     if (!editingPaper) return;
-    setPaperSolutions((current) => ({ ...current, [editingPaper.id]: { ...(current[editingPaper.id] ?? {}), [number]: value } }));
+    setPaperSolutions((current) => ({ ...current, [editingPaper.id]: { ...current[editingPaper.id], [number]: value } }));
+  }
+
+  function updateMarkingCriterion(number: number, stepIndex: number, value: string) {
+    if (!editingPaper) return;
+    setPaperMarkingSchemes((current) => ({
+      ...current,
+      [editingPaper.id]: {
+        ...current[editingPaper.id],
+        [number]: (current[editingPaper.id]?.[number] ?? []).map((step, index) => index === stepIndex ? { ...step, criterion: value } : step),
+      },
+    }));
   }
 
   async function saveQuestionPaper() {
@@ -197,7 +215,7 @@ export default function TeacherReviewPage() {
     setPaperSaving(true);
     setMessage('');
     try {
-      await readJson(await fetch('/api/teacher/papers', { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ paper: editingPaper, answerKey: paperAnswerKeys[editingPaper.id], writtenSolutions: paperSolutions[editingPaper.id] }) }));
+      await readJson(await fetch('/api/teacher/papers', { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ paper: editingPaper, answerKey: paperAnswerKeys[editingPaper.id], writtenSolutions: paperSolutions[editingPaper.id], markingSchemes: paperMarkingSchemes[editingPaper.id] }) }));
       setPapers((current) => current.map((paper) => paper.id === editingPaper.id ? structuredClone(editingPaper) : paper));
       setMessage(`${editingPaper.chapter} question paper saved. Students will see the updated version.`);
     } catch (error) {
@@ -293,6 +311,15 @@ export default function TeacherReviewPage() {
                         ))}
                       </div>
                       <label className="mark-field"><span>Marks</span><input type="number" min="0" max={question.marks} value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
+                      <details className="evaluation-sheet">
+                        <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
+                        <div className="evaluation-model-answer"><span>Model solution</span><p>{question.modelSolution}</p></div>
+                        <ol>
+                          {question.markingScheme.map((step, index) => (
+                            <li key={`${question.number}-${index}`}><span>{step.criterion}</span><strong>{step.marks} mark</strong></li>
+                          ))}
+                        </ol>
+                      </details>
                     </article>
                   );
                 })}
@@ -332,7 +359,7 @@ export default function TeacherReviewPage() {
                 </div>
                 <section className="paper-editor-section"><h3>Multiple-choice questions</h3>{editingPaper.mcqs.map((question, questionIndex) => <article key={question.number} className="paper-editor-question"><strong>{question.number}</strong><div><label>Question<textarea value={question.question} onChange={(event) => updateMcq(questionIndex, 'question', event.target.value)} /></label><div className="paper-editor-options">{question.options.map((option, optionIndex) => <label key={optionIndex}>Option {String.fromCharCode(65 + optionIndex)}<input value={option} onChange={(event) => updateOption(questionIndex, optionIndex, event.target.value)} /></label>)}</div><label className="paper-answer-select">Correct option<select value={paperAnswerKeys[editingPaper.id]?.[question.number] ?? 0} onChange={(event) => updateCorrectAnswer(question.number, Number(event.target.value))}>{question.options.map((_option, optionIndex) => <option value={optionIndex} key={optionIndex}>{String.fromCharCode(65 + optionIndex)}</option>)}</select></label><label>Previous-exam label (optional)<input value={question.source ?? ''} onChange={(event) => updateMcq(questionIndex, 'source', event.target.value)} placeholder="Example: CBSE Board 2025 · Set 30/2/2 · Q6" /></label></div></article>)}</section>
                 <section className="paper-editor-section"><h3>Assertion and reason</h3>{editingPaper.assertions.map((question, index) => <article key={question.number} className="paper-editor-question"><strong>{question.number}</strong><div><label>Assertion<textarea value={question.assertion} onChange={(event) => updateAssertion(index, 'assertion', event.target.value)} /></label><label>Reason<textarea value={question.reason} onChange={(event) => updateAssertion(index, 'reason', event.target.value)} /></label><label className="paper-answer-select">Correct option<select value={paperAnswerKeys[editingPaper.id]?.[question.number] ?? 0} onChange={(event) => updateCorrectAnswer(question.number, Number(event.target.value))}>{['A','B','C','D'].map((option, optionIndex) => <option value={optionIndex} key={option}>{option}</option>)}</select></label></div></article>)}</section>
-                <section className="paper-editor-section"><h3>Written questions and model solutions</h3>{[17,18,19,20,21,22,23,24].map((number) => <article key={number} className="paper-editor-question"><strong>{number}</strong><div><label>Question<textarea value={Array.isArray(editingPaper.written[number]) ? (editingPaper.written[number] as string[]).join('\n') : editingPaper.written[number] as string} onChange={(event) => updateWritten(number, event.target.value)} /></label><label>Model solution<textarea value={paperSolutions[editingPaper.id]?.[number] ?? ''} onChange={(event) => updateWrittenSolution(number, event.target.value)} /></label></div></article>)}</section>
+                <section className="paper-editor-section"><h3>Written questions, solutions and evaluation sheets</h3>{[17,18,19,20,21,22,23,24].map((number) => <article key={number} className="paper-editor-question"><strong>{number}</strong><div><label>Question<textarea value={Array.isArray(editingPaper.written[number]) ? (editingPaper.written[number] as string[]).join('\n') : editingPaper.written[number] as string} onChange={(event) => updateWritten(number, event.target.value)} /></label><label>Model solution<textarea value={paperSolutions[editingPaper.id]?.[number] ?? ''} onChange={(event) => updateWrittenSolution(number, event.target.value)} /></label><div className="paper-marking-editor"><header><div><span>Evaluation sheet</span><strong>{writtenMarks[number]} one-mark steps</strong></div><em>{writtenMarks[number]} / {writtenMarks[number]} marks allocated</em></header><div>{(paperMarkingSchemes[editingPaper.id]?.[number] ?? []).map((step, stepIndex) => <label key={`${number}-${stepIndex}`}><b>{stepIndex + 1}</b><textarea value={step.criterion} maxLength={700} onChange={(event) => updateMarkingCriterion(number, stepIndex, event.target.value)} /><span>{step.marks} mark</span></label>)}</div></div></div></article>)}</section>
                 <footer className="paper-editor-save"><span>Review every changed question before publishing.</span><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save question paper'}</button></footer>
               </>
             )}

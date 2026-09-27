@@ -1,5 +1,12 @@
-import { writtenQuestionMarks } from '@/lib/assessment';
+import { buildDefaultMarkingSchemes, getPaperAssessment, writtenQuestionMarks, type MarkingStep } from '@/lib/assessment';
+import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
+
+type SavedPaperDocument = {
+  paper?: PaperDefinition;
+  writtenSolutions?: Record<number, string>;
+  markingSchemes?: Record<number, MarkingStep[]>;
+};
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
@@ -12,11 +19,35 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         teacher_feedback, submitted_at, marked_at FROM submissions WHERE id = ? AND status != 'draft'
     `).bind(id).first();
     if (!submission) return jsonError('Submission not found.', 404);
-    const [uploads, marks] = await Promise.all([
+    const paperId = String(submission.paper_id);
+    const assessment = getPaperAssessment(paperId);
+    const fallbackPaper = paperDefinitionsById[paperId];
+    if (!assessment || !fallbackPaper) return jsonError('This question paper is unavailable.', 404);
+    const [uploads, marks, savedPaper] = await Promise.all([
       db.prepare(`SELECT id, question_number, file_name, content_type, size_bytes FROM answer_uploads WHERE submission_id = ? ORDER BY question_number, created_at`).bind(id).all(),
       db.prepare(`SELECT question_number, marks_awarded, feedback FROM question_marks WHERE submission_id = ? ORDER BY question_number`).bind(id).all(),
+      db.prepare('SELECT content_json FROM paper_content WHERE paper_id = ?').bind(paperId).first<{ content_json: string }>(),
     ]);
-    return Response.json({ submission, uploads: uploads.results, marks: marks.results });
+    const savedDocument = savedPaper ? JSON.parse(savedPaper.content_json) as SavedPaperDocument : null;
+    const paper = savedDocument?.paper ?? fallbackPaper;
+    const writtenSolutions = savedDocument?.writtenSolutions ?? assessment.writtenSolutions;
+    const markingSchemes = savedDocument?.markingSchemes ?? buildDefaultMarkingSchemes(writtenSolutions);
+    const writtenQuestions = Object.entries(paper.written).map(([numberText, value]) => {
+      const number = Number(numberText);
+      return {
+        number,
+        marks: writtenQuestionMarks[number],
+        text: Array.isArray(value) ? value.join(' ') : value,
+        modelSolution: writtenSolutions[number] ?? '',
+        markingScheme: markingSchemes[number] ?? [],
+      };
+    });
+    return Response.json({
+      submission,
+      uploads: uploads.results,
+      marks: marks.results,
+      guide: { title: `${paper.chapter} · Paper ${paper.paperNumber}`, writtenQuestions },
+    });
   } catch (error) {
     console.error('teacher submission detail failed', error);
     return jsonError('This submission could not be loaded.', 500);

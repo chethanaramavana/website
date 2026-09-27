@@ -1,8 +1,27 @@
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 import { isPaperDefinition, paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
-import { getPaperAssessment } from '@/lib/assessment';
+import { buildDefaultMarkingSchemes, getPaperAssessment, writtenQuestionMarks, type MarkingStep } from '@/lib/assessment';
 
-type PaperDocument = { paper: PaperDefinition; answerKey: Record<number, number>; writtenSolutions: Record<number, string> };
+type PaperDocument = {
+  paper: PaperDefinition;
+  answerKey: Record<number, number>;
+  writtenSolutions: Record<number, string>;
+  markingSchemes?: Record<number, MarkingStep[]>;
+};
+
+function isValidMarkingScheme(value: unknown): value is Record<number, MarkingStep[]> {
+  if (!value || typeof value !== 'object') return false;
+  return Object.entries(writtenQuestionMarks).every(([questionText, maximum]) => {
+    const steps = (value as Record<number, unknown>)[Number(questionText)];
+    return Array.isArray(steps)
+      && steps.length === maximum
+      && steps.every((step) => step && typeof step === 'object'
+        && (step as MarkingStep).marks === 1
+        && typeof (step as MarkingStep).criterion === 'string'
+        && (step as MarkingStep).criterion.trim().length > 0
+        && (step as MarkingStep).criterion.length <= 700);
+  });
+}
 
 function requireAdmin(request: Request) {
   const user = getRequestUser(request);
@@ -18,10 +37,14 @@ export async function GET(request: Request) {
       const row = saved.get(fallback.id);
       const assessment = getPaperAssessment(fallback.id)!;
       const savedDocument = row ? JSON.parse(row.content_json) as Partial<PaperDocument> : null;
+      const writtenSolutions = savedDocument?.writtenSolutions ?? assessment.writtenSolutions;
       return {
         paper: savedDocument?.paper ?? fallback,
         answerKey: savedDocument?.answerKey ?? assessment.mcqAnswerKey,
-        writtenSolutions: savedDocument?.writtenSolutions ?? assessment.writtenSolutions,
+        writtenSolutions,
+        markingSchemes: isValidMarkingScheme(savedDocument?.markingSchemes)
+          ? savedDocument.markingSchemes
+          : buildDefaultMarkingSchemes(writtenSolutions),
         updatedAt: row?.updated_at ?? null,
       };
     });
@@ -37,14 +60,15 @@ export async function PATCH(request: Request) {
   const user = requireAdmin(request);
   if (!user) return jsonError('Teacher access is required.', 403);
   try {
-    const body = await request.json() as { paper?: unknown; answerKey?: Record<number, number>; writtenSolutions?: Record<number, string> };
+    const body = await request.json() as { paper?: unknown; answerKey?: Record<number, number>; writtenSolutions?: Record<number, string>; markingSchemes?: Record<number, MarkingStep[]> };
     if (!isPaperDefinition(body.paper)) return jsonError('Please check the question paper fields.', 400);
     const paper = body.paper;
     const fallback = paperDefinitionsById[paper.id];
     if (!fallback || fallback.chapter !== paper.chapter) return jsonError('This question paper cannot be changed.', 400);
     if (!body.answerKey || !Array.from({ length: 16 }, (_, index) => index + 1).every((number) => Number.isInteger(body.answerKey?.[number]) && Number(body.answerKey?.[number]) >= 0 && Number(body.answerKey?.[number]) <= 3)) return jsonError('Choose the correct option for every objective question.', 400);
-    if (!body.writtenSolutions || ![17,18,19,20,21,22,23,24].every((number) => typeof body.writtenSolutions?.[number] === 'string' && String(body.writtenSolutions?.[number]).length <= 3000)) return jsonError('Add a model solution for every written question.', 400);
-    const document: PaperDocument = { paper, answerKey: body.answerKey, writtenSolutions: body.writtenSolutions };
+    if (!body.writtenSolutions || ![17,18,19,20,21,22,23,24].every((number) => typeof body.writtenSolutions?.[number] === 'string' && String(body.writtenSolutions?.[number]).trim().length > 0 && String(body.writtenSolutions?.[number]).length <= 3000)) return jsonError('Add a model solution for every written question.', 400);
+    if (!isValidMarkingScheme(body.markingSchemes)) return jsonError('Complete the mark-by-mark evaluation sheet for every written question.', 400);
+    const document: PaperDocument = { paper, answerKey: body.answerKey, writtenSolutions: body.writtenSolutions, markingSchemes: body.markingSchemes };
     await getDatabase().prepare(`INSERT INTO paper_content (paper_id, content_json, updated_by, updated_at)
       VALUES (?, ?, ?, CURRENT_TIMESTAMP)
       ON CONFLICT(paper_id) DO UPDATE SET content_json = excluded.content_json,

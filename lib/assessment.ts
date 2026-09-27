@@ -4,13 +4,60 @@ export const writtenQuestionMarks: Record<number, number> = {
   17: 2, 18: 2, 19: 2, 20: 3, 21: 3, 22: 3, 23: 5, 24: 4,
 };
 
-type PaperAssessment = {
+export type MarkingStep = {
+  criterion: string;
+  marks: number;
+};
+
+type PaperAssessmentSource = {
   title: string;
   mcqAnswerKey: Record<number, number>;
   writtenSolutions: Record<number, string>;
 };
 
-const basePaperAssessments: Record<string, PaperAssessment> = {
+export type PaperAssessment = PaperAssessmentSource & {
+  markingSchemes: Record<number, MarkingStep[]>;
+};
+
+const markingStageLabels: Record<number, string[]> = {
+  2: ['Correct method or mathematical setup', 'Accurate working and final answer'],
+  3: ['Correct formula, theorem or setup', 'Accurate substitution and intermediate working', 'Correct final answer with units or conclusion'],
+  4: ['First required result', 'Second required result', 'Correct remaining calculation', 'Complete final answer with units or conclusion'],
+  5: ['Correct theorem, formula or initial setup', 'Correct substitution, construction or diagram', 'Accurate intermediate working', 'Completion of every required part', 'Correct final answer and conclusion'],
+};
+
+function solutionFragments(solution: string) {
+  return solution
+    .replace(/\s+(?=\([a-z]\)\s)/gi, ' | ')
+    .split(/\s+\|\s+|(?<=[.!?])\s+(?=[A-Z(])|;\s+|,\s+(?=(?:so|hence|therefore|giving|then)\b)/i)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function groupFragments(fragments: string[], count: number) {
+  return Array.from({ length: count }, (_, index) => {
+    const start = Math.floor((index * fragments.length) / count);
+    const end = Math.floor(((index + 1) * fragments.length) / count);
+    return fragments.slice(start, Math.max(start + 1, end)).join(' ');
+  });
+}
+
+export function buildDefaultMarkingSchemes(writtenSolutions: Record<number, string>) {
+  return Object.fromEntries(Object.entries(writtenQuestionMarks).map(([questionText, maximum]) => {
+    const question = Number(questionText);
+    const solution = writtenSolutions[question] ?? '';
+    const fragments = solutionFragments(solution);
+    const labels = markingStageLabels[maximum] ?? Array.from({ length: maximum }, (_, index) => `Correct step ${index + 1}`);
+    const allocated = fragments.length >= maximum ? groupFragments(fragments, maximum) : fragments;
+    const steps = labels.map((label, index) => ({
+      criterion: allocated[index] ? `${label}: ${allocated[index]}` : `${label}, following the model solution shown above.`,
+      marks: 1,
+    }));
+    return [question, steps];
+  }));
+}
+
+const basePaperAssessments: Record<string, PaperAssessmentSource> = {
   'real-numbers-01': {
     title: 'Real Numbers · Paper 01',
     mcqAnswerKey: {
@@ -47,10 +94,17 @@ const basePaperAssessments: Record<string, PaperAssessment> = {
   },
 };
 
-export const paperAssessments: Record<string, PaperAssessment> = {
+const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
   ...basePaperAssessments,
   ...additionalPaperAssessments,
 };
+
+export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(
+  Object.entries(paperAssessmentSources).map(([paperId, assessment]) => [paperId, {
+    ...assessment,
+    markingSchemes: buildDefaultMarkingSchemes(assessment.writtenSolutions),
+  }]),
+);
 
 export function getPaperAssessment(paperId: string) {
   return paperAssessments[paperId] ?? null;
