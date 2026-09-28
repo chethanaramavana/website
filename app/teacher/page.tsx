@@ -45,6 +45,7 @@ type PaymentRequest = {
   transaction_id: string;
   amount_paise: number;
   status: 'pending' | 'approved' | 'rejected';
+  payment_source: 'manual' | 'razorpay';
   created_at: string;
   reviewed_at: string | null;
 };
@@ -243,9 +244,9 @@ export default function TeacherReviewPage() {
       <section className={`payment-review-section ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`} aria-labelledby="payment-review-title">
         <header>
           <div><p>Test access</p><h2 id="payment-review-title">Payment requests</h2></div>
-          <span>{payments.filter((payment) => payment.status === 'pending').length} waiting</span>
+          <span>{payments.filter((payment) => payment.status === 'pending' && payment.payment_source === 'manual').length} waiting for review</span>
         </header>
-        <div className="payment-review-warning"><ShieldCheck /><span><strong>Check PhonePe before approving.</strong> Match the ₹30 credit and transaction ID with your PhonePe history. Approval immediately unlocks that paper.</span></div>
+        <div className="payment-review-warning"><ShieldCheck /><span><strong>Review only manual QR payments.</strong> Match those ₹30 credits with PhonePe before approving. Razorpay orders are checked automatically and cannot be approved here.</span></div>
         {loading ? <div className="teacher-loading"><Loader2 /> Loading payment requests…</div> : payments.length === 0 ? (
           <div className="payment-review-empty"><CreditCard /><span>No payment requests yet.</span></div>
         ) : (
@@ -253,16 +254,18 @@ export default function TeacherReviewPage() {
             {payments.map((payment) => (
               <article key={payment.id} className={`payment-request-card ${payment.status}`}>
                 <div className="payment-request-copy">
-                  <span className="payment-request-status">{payment.status}</span>
+                  <span className="payment-request-status">{payment.payment_source === 'razorpay' ? `Razorpay · ${payment.status}` : payment.status}</span>
                   <strong>{payment.student_name}</strong>
                   <small>{paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small>
                 </div>
-                <div className="payment-transaction"><span>Transaction ID</span><strong>{payment.transaction_id}</strong><small>₹{(payment.amount_paise / 100).toFixed(0)}</small></div>
-                {payment.status === 'pending' ? (
+                <div className="payment-transaction"><span>{payment.payment_source === 'razorpay' ? 'Razorpay order' : 'Transaction ID'}</span><strong>{payment.transaction_id}</strong><small>₹{(payment.amount_paise / 100).toFixed(0)}</small></div>
+                {payment.status === 'pending' && payment.payment_source === 'manual' ? (
                   <div className="payment-review-actions">
                     <button type="button" className="reject" onClick={() => void reviewPayment(payment.id, 'rejected')} disabled={paymentAction === payment.id}><X /> Reject</button>
                     <button type="button" className="approve" onClick={() => void reviewPayment(payment.id, 'approved')} disabled={paymentAction === payment.id}>{paymentAction === payment.id ? <Loader2 /> : <Check />} Approve</button>
                   </div>
+                ) : payment.status === 'pending' ? (
+                  <span className="payment-reviewed pending"><Loader2 /> Automatic verification</span>
                 ) : <span className={`payment-reviewed ${payment.status}`}>{payment.status === 'approved' ? <Check /> : <X />}{payment.status}</span>}
               </article>
             ))}

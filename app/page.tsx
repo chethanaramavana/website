@@ -422,10 +422,10 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 
 type PaymentStatus = 'idle' | 'submitting' | 'pending' | 'approved' | 'rejected';
 type StudentRecords = { signedIn: boolean; email?: string; access: string[] };
-type RazorpayStatus = 'idle' | 'starting' | 'verifying';
+type RazorpayStatus = 'idle' | 'starting' | 'checkout' | 'verifying';
 
 type RazorpaySuccess = { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string };
-type RazorpayCheckout = { open: () => void; on: (event: string, handler: (response: { error?: { description?: string } }) => void) => void };
+type RazorpayCheckout = { open: () => void; close?: () => void; on: (event: string, handler: (response: { error?: { description?: string } }) => void) => void };
 
 declare global {
   interface Window {
@@ -447,6 +447,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
+  const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
   const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
 
@@ -456,6 +457,13 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
       .then((records) => { if (records) setStudentRecords(records); })
       .catch(() => {});
   }, []);
+
+  const stopRazorpayRecoveryTimer = useCallback(() => {
+    if (razorpayRecoveryTimerRef.current !== null) window.clearInterval(razorpayRecoveryTimerRef.current);
+    razorpayRecoveryTimerRef.current = null;
+  }, []);
+
+  useEffect(() => () => stopRazorpayRecoveryTimer(), [stopRazorpayRecoveryTimer]);
 
   const checkPaymentStatus = useCallback(async (requestId: string, requestKey: string, chapterName: PaperDefinition['chapter']) => {
     try {
@@ -493,6 +501,45 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     }
   }, [onOpenChapter]);
 
+  const checkRazorpayStatus = useCallback(async (chapterName: PaperDefinition['chapter'], options: { silent?: boolean } = {}) => {
+    const paper = paperDefinitions[chapterName];
+    if (!paper || !studentRecords?.signedIn) return false;
+    if (!options.silent) {
+      setRazorpayStatus('verifying');
+      setPaymentMessage('Checking Razorpay for a completed payment…');
+    }
+    try {
+      const response = await fetch('/api/razorpay/status', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ paperId: paper.id }),
+      });
+      const payload = await response.json() as { approved?: boolean; status?: 'none' | 'pending' | 'approved'; error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'The payment status could not be checked.');
+      if (payload.approved) {
+        setRazorpayStatus('idle');
+        setPaymentStatus('approved');
+        setPaymentMessage('Payment verified. Opening your question paper…');
+        setPendingChapter(null);
+        onOpenChapter(chapterName);
+        return true;
+      }
+      if (!options.silent) {
+        setRazorpayStatus('idle');
+        setPaymentMessage(payload.status === 'pending'
+          ? 'Razorpay has not confirmed a completed payment yet. You can reopen checkout or check again.'
+          : 'No earlier Razorpay payment was found for this chapter.');
+      }
+      return false;
+    } catch (error) {
+      if (!options.silent) {
+        setRazorpayStatus('idle');
+        setPaymentMessage(error instanceof Error ? error.message : 'The payment status could not be checked.');
+      }
+      return false;
+    }
+  }, [onOpenChapter, studentRecords?.signedIn]);
+
   useEffect(() => {
     if (paymentStatus !== 'pending' || !paymentRequestId || !paymentRequestKey || !pendingChapter || !selectedPaper) return;
     const chapterName = pendingChapter as PaperDefinition['chapter'];
@@ -518,7 +565,10 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     setPendingChapter(nextChapter);
     if (!paper) return;
     const saved = localStorage.getItem(paymentAccessStorageKey(paper.id));
-    if (!saved) return;
+    if (!saved) {
+      if (studentRecords?.signedIn) void checkRazorpayStatus(nextChapter as PaperDefinition['chapter']);
+      return;
+    }
     try {
       const access = JSON.parse(saved) as { id?: string; key?: string };
       if (!access.id || !access.key) return;
@@ -617,6 +667,8 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
       if (!window.Razorpay) throw new Error('Razorpay checkout is unavailable.');
 
       const chapterName = pendingChapter;
+      let recoveryInFlight = false;
+      stopRazorpayRecoveryTimer();
       const checkout = new window.Razorpay({
         key: order.keyId,
         amount: order.amount,
@@ -627,15 +679,22 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
         prefill: { name, email: studentRecords.email },
         notes: { chapter: selectedPaper.chapter },
         theme: { color: '#5936a7' },
-        modal: { ondismiss: () => { setRazorpayStatus('idle'); setPaymentMessage('Payment was not completed. You can try again when ready.'); } },
+        modal: { ondismiss: () => {
+          stopRazorpayRecoveryTimer();
+          void checkRazorpayStatus(chapterName);
+        } },
         handler: async (response: RazorpaySuccess) => {
+          stopRazorpayRecoveryTimer();
           setRazorpayStatus('verifying');
           setPaymentMessage('Payment received. Verifying and opening your paper…');
+          const verifyController = new AbortController();
+          const verifyTimeout = window.setTimeout(() => verifyController.abort(), 15000);
           try {
             const verifyResponse = await fetch('/api/razorpay/verify', {
               method: 'POST',
               headers: { 'content-type': 'application/json' },
               body: JSON.stringify(response),
+              signal: verifyController.signal,
             });
             const verified = await verifyResponse.json() as { approved?: boolean; error?: string };
             if (!verifyResponse.ok || !verified.approved) throw new Error(verified.error ?? 'Payment verification failed.');
@@ -643,17 +702,32 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
             setPendingChapter(null);
             onOpenChapter(chapterName);
           } catch (error) {
-            setRazorpayStatus('idle');
-            setPaymentMessage(error instanceof Error ? error.message : 'Payment verification failed.');
+            const recovered = await checkRazorpayStatus(chapterName);
+            if (!recovered) setPaymentMessage(error instanceof Error ? `${error.message} Check the completed payment again.` : 'Payment verification failed. Check the completed payment again.');
+          } finally {
+            window.clearTimeout(verifyTimeout);
           }
         },
       });
       checkout.on('payment.failed', (response) => {
+        stopRazorpayRecoveryTimer();
         setRazorpayStatus('idle');
         setPaymentMessage(response.error?.description ?? 'Payment failed. No chapter access was charged.');
       });
       checkout.open();
-      setRazorpayStatus('idle');
+      setRazorpayStatus('checkout');
+      razorpayRecoveryTimerRef.current = window.setInterval(() => {
+        if (recoveryInFlight) return;
+        recoveryInFlight = true;
+        void checkRazorpayStatus(chapterName, { silent: true })
+          .then((recovered) => {
+            if (recovered) {
+              stopRazorpayRecoveryTimer();
+              checkout.close?.();
+            }
+          })
+          .finally(() => { recoveryInFlight = false; });
+      }, 4000);
     } catch (error) {
       setRazorpayStatus('idle');
       setPaymentMessage(error instanceof Error ? error.message : 'Razorpay could not start the payment.');
@@ -705,8 +779,9 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
               <div className="razorpay-checkout-card">
                 <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
                 <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
-                <button type="button" onClick={() => void startRazorpayPayment()} disabled={!studentRecords?.signedIn || razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
+                <button type="button" onClick={() => void startRazorpayPayment()} disabled={!studentRecords?.signedIn || razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'checkout' ? 'Checkout in progress…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
                 <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || (studentRecords?.signedIn ? 'Razorpay will handle UPI, cards and other available methods.' : 'Log in or sign up to continue.')}</p>
+                {studentRecords?.signedIn && selectedPaper && <button className="razorpay-recovery-button" type="button" onClick={() => void checkRazorpayStatus(selectedPaper.chapter)} disabled={razorpayStatus !== 'idle'}><CheckCircle2 /> Check a completed payment</button>}
               </div>
               <details className="manual-payment-fallback">
                 <summary>Temporary QR payment option</summary>

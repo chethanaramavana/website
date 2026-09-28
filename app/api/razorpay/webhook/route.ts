@@ -18,7 +18,10 @@ export async function POST(request: Request) {
     const payment = event.payload?.payment?.entity;
     if ((event.event === 'payment.captured' || event.event === 'order.paid') && payment?.order_id && payment.amount === 3000 && payment.currency === 'INR' && payment.status === 'captured') {
       await getDatabase().prepare(
-        `UPDATE payment_requests SET status = 'approved', reviewed_at = CURRENT_TIMESTAMP WHERE transaction_id = ? AND amount_paise = 3000`,
+        `UPDATE payment_requests
+         SET status = 'approved', reviewed_at = CURRENT_TIMESTAMP
+         WHERE transaction_id = ? AND amount_paise = 3000 AND status = 'pending'
+           AND substr(transaction_id, 1, 6) = 'order_'`,
       ).bind(payment.order_id).run();
     }
     return Response.json({ received: true });

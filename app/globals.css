@@ -235,6 +235,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .razorpay-checkout-card > button svg { width: 17px; }
 .razorpay-checkout-card > button svg.lucide-loader-2 { animation: spin 1s linear infinite; }
 .razorpay-checkout-card .payment-form-message { grid-column: 1 / -1; margin: -2px 0 0; }
+.razorpay-checkout-card > .razorpay-recovery-button { grid-column: 1 / -1; min-height: 36px; width: fit-content; padding: 0 12px; border: 1px solid #cfc1e8; color: #5936a7; background: white; }
+.razorpay-checkout-card > .razorpay-recovery-button:disabled { opacity: .55; }
 .manual-payment-fallback { overflow: hidden; border: 1px solid #e5e0e9; border-radius: 14px; background: #fff; }
 .manual-payment-fallback > summary { padding: 13px 15px; color: #6b6474; cursor: pointer; font-size: .72rem; font-weight: 800; }
 .manual-payment-fallback[open] > summary { border-bottom: 1px solid #ece7ef; }
@@ -578,6 +580,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .payment-reviewed { display: inline-flex; align-items: center; gap: 4px; font-size: .68rem; font-weight: 850; text-transform: capitalize; }
 .payment-reviewed.approved { color: #287057; }
 .payment-reviewed.rejected { color: #974b43; }
+.payment-reviewed.pending { color: #6f50a7; }
+.payment-reviewed.pending svg { animation: spin 1s linear infinite; }
 .payment-review-empty { min-height: 75px; display: flex; align-items: center; justify-content: center; gap: 8px; color: #7d878c; font-size: .76rem; }
 .payment-review-empty svg { width: 20px; }
 .teacher-workspace { width: min(100%, 1240px); min-height: calc(100vh - 130px); margin: 0 auto; display: grid; grid-template-columns: 330px 1fr; overflow: hidden; border: 1px solid #ded8e6; border-radius: 20px; background: white; box-shadow: 0 22px 60px rgba(43,37,70,.10); }

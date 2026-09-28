@@ -3,6 +3,7 @@ import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } f
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
 const AMOUNT_PAISE = 3000;
+const orderIdPattern = /^order_[a-zA-Z0-9]+$/;
 
 export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
@@ -27,6 +28,25 @@ export async function POST(request: Request) {
       `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND status = 'approved' LIMIT 1`,
     ).bind(user.userId, paperId).first<{ id: string }>();
     if (existing) return Response.json({ alreadyPaid: true, paperId });
+
+    const pendingOrder = await database.prepare(
+      `SELECT transaction_id
+       FROM payment_requests
+       WHERE user_id = ? AND paper_id = ? AND status = 'pending'
+         AND substr(transaction_id, 1, 6) = 'order_'
+       ORDER BY created_at DESC
+       LIMIT 1`,
+    ).bind(user.userId, paperId).first<{ transaction_id: string }>();
+    if (pendingOrder && orderIdPattern.test(pendingOrder.transaction_id)) {
+      return Response.json({
+        keyId: config.keyId,
+        orderId: pendingOrder.transaction_id,
+        amount: AMOUNT_PAISE,
+        currency: 'INR',
+        paperId,
+        resumed: true,
+      });
+    }
 
     const requestId = crypto.randomUUID();
     const orderResponse = await fetch('https://api.razorpay.com/v1/orders', {
