@@ -1,6 +1,6 @@
 import { getPaperAssessment } from '@/lib/assessment';
-import { getRazorpayConfiguration, razorpayAuthorization } from '@/lib/razorpay';
-import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
+import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
+import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
 const AMOUNT_PAISE = 3000;
 
@@ -12,6 +12,9 @@ export async function POST(request: Request) {
     if (!user) return jsonError('Please log in or sign up before paying.', 401);
     const config = getRazorpayConfiguration();
     if (!config) return jsonError('Razorpay is waiting for account approval. Please use the temporary QR option.', 503);
+    if (config.testMode && !isAdmin(user) && !isRazorpayTestUser(user.email)) {
+      return jsonError('Online payment is being tested. Paid chapter access will open after live payments are enabled.', 503);
+    }
 
     const body = await request.json() as { studentName?: unknown; paperId?: unknown };
     const studentName = typeof body.studentName === 'string' ? body.studentName.trim() : '';

@@ -1374,7 +1374,7 @@ function LegalDialog({ type }: { type: 'terms' | 'privacy' }) {
         {isTerms ? (
           <div className="legal-copy">
             <section><h3>Learning use</h3><p>The question papers and feedback are provided for educational practice. They are not official examination papers or school results.</p></section>
-            <section><h3>Access and payment</h3><p>The ₹30 chapter fee and payment QR are shown before the test opens. QR payment confirmation is currently declared by the student and is not automatically verified by PhonePe.</p></section>
+            <section><h3>Access and payment</h3><p>The ₹30 chapter fee is collected through Razorpay and chapter access opens only after secure server verification. A temporary QR payment may require teacher review before access is granted.</p></section>
             <section><h3>Student work</h3><p>Students should upload only their own answers. Practice material may not be copied, resold or shared outside the permitted access.</p></section>
             <section><h3>Assessment</h3><p>Marks and comments are learning guidance. Students should follow their school and board instructions for official examinations.</p></section>
           </div>

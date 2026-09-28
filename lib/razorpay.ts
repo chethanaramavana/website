@@ -6,7 +6,12 @@ export function getRazorpayConfiguration() {
   const keyId = env.RAZORPAY_KEY_ID?.trim();
   const keySecret = env.RAZORPAY_KEY_SECRET?.trim();
   if (!keyId || !keySecret) return null;
-  return { keyId, keySecret };
+  return { keyId, keySecret, testMode: keyId.startsWith('rzp_test_') };
+}
+
+export function isRazorpayTestUser(email: string) {
+  const testerEmail = env.RAZORPAY_TESTER_EMAIL?.trim().toLowerCase();
+  return Boolean(testerEmail && email.toLowerCase() === testerEmail);
 }
 
 export async function hmacSha256Hex(secret: string, value: string) {

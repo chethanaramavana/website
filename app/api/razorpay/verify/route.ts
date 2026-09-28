@@ -1,5 +1,5 @@
-import { constantTimeEqual, getRazorpayConfiguration, hmacSha256Hex, razorpayAuthorization } from '@/lib/razorpay';
-import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
+import { constantTimeEqual, getRazorpayConfiguration, hmacSha256Hex, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
+import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
 const idPattern = /^(order|pay)_[a-zA-Z0-9]+$/;
 
@@ -11,6 +11,9 @@ export async function POST(request: Request) {
     if (!user) return jsonError('Please log in again to verify the payment.', 401);
     const config = getRazorpayConfiguration();
     if (!config) return jsonError('Razorpay is not configured.', 503);
+    if (config.testMode && !isAdmin(user) && !isRazorpayTestUser(user.email)) {
+      return jsonError('This test payment account is not authorised.', 403);
+    }
 
     const body = await request.json() as Record<string, unknown>;
     const orderId = typeof body.razorpay_order_id === 'string' ? body.razorpay_order_id : '';

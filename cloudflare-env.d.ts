@@ -5,6 +5,7 @@ declare namespace Cloudflare {
     ADMIN_EMAIL?: string;
     RAZORPAY_KEY_ID?: string;
     RAZORPAY_KEY_SECRET?: string;
+    RAZORPAY_TESTER_EMAIL?: string;
     RAZORPAY_WEBHOOK_SECRET?: string;
   }
 }
