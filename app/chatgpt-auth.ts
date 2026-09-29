@@ -1,5 +1,6 @@
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { normalizeAccountEmail } from '@/lib/identity';
 
 export type ChatGPTUser = { userId: string; displayName: string; email: string; fullName: string | null };
 
@@ -14,7 +15,8 @@ export async function getChatGPTUser(): Promise<ChatGPTUser | null> {
   const fullName = encodedFullName && requestHeaders.get('oai-authenticated-user-full-name-encoding') === 'percent-encoded-utf-8'
     ? safeDecode(encodedFullName)
     : null;
-  return { userId, email: email.toLowerCase(), fullName, displayName: fullName ?? email };
+  const normalizedEmail = normalizeAccountEmail(email);
+  return { userId, email: normalizedEmail, fullName, displayName: fullName ?? normalizedEmail };
 }
 
 export async function requireChatGPTUser(returnTo: string): Promise<ChatGPTUser> {

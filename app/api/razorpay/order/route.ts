@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const user = getRequestUser(request);
     if (!user) return jsonError('Please log in or sign up before paying.', 401);
     const config = getRazorpayConfiguration();
-    if (!config) return jsonError('Razorpay is waiting for account approval. Please use the temporary QR option.', 503);
+    if (!config) return jsonError('Secure online payment is temporarily unavailable. Please try again later.', 503);
     if (config.testMode && !isAdmin(user) && !isRazorpayTestUser(user.email)) {
       return jsonError('Online payment is being tested. Paid chapter access will open after live payments are enabled.', 503);
     }
@@ -34,6 +34,7 @@ export async function POST(request: Request) {
        FROM payment_requests
        WHERE user_id = ? AND paper_id = ? AND status = 'pending'
          AND substr(transaction_id, 1, 6) = 'order_'
+         AND created_at >= datetime('now', '-14 minutes')
        ORDER BY created_at DESC
        LIMIT 1`,
     ).bind(user.userId, paperId).first<{ transaction_id: string }>();

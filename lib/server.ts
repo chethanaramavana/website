@@ -1,4 +1,5 @@
 import { env } from 'cloudflare:workers';
+import { normalizeAccountEmail } from '@/lib/identity';
 
 export type RequestUser = { userId: string; email: string };
 
@@ -8,7 +9,7 @@ export function getRequestUser(request: Request): RequestUser | null {
   const userId = request.headers.get('oai-authenticated-user-id');
   const email = request.headers.get('oai-authenticated-user-email');
   if (!userId || !email) return null;
-  return { userId, email: email.toLowerCase() };
+  return { userId, email: normalizeAccountEmail(email) };
 }
 
 export function getAttemptOwner(request: Request): RequestUser | null {
