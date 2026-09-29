@@ -11,7 +11,7 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
     <main className="notes-shell">
       <nav className="notes-toolbar"><a href="/"><ArrowLeft /> Back to chapters</a><NotesPrintButton /></nav>
       <article className="notes-page notes-cover-page">
-        <header className="notes-title-block"><span className="notes-book-icon"><BookOpen /></span><p>CBSE · Grade 10 Mathematics · Chapter {notes.number}</p><h1>{notes.chapter}</h1><h2>{notes.subtitle}</h2><div className="notes-title-rule" /><p className="notes-lead">Important ideas and formulae to revise before attempting the chapter test.</p></header>
+        <header className="notes-title-block"><span className="notes-book-icon"><BookOpen /></span><p>CBSE · Grade {notes.grade ?? 10} Mathematics · Chapter {notes.number}</p><h1>{notes.chapter}</h1><h2>{notes.subtitle}</h2><div className="notes-title-rule" /><p className="notes-lead">{notes.book ? `${notes.book} · ` : ''}Important ideas and methods to revise before attempting the chapter test.</p></header>
         <section className="notes-concept-grid">{notes.concepts.map((concept, index) => <div className="notes-rule-card" key={concept.title}><span>{String(index+1).padStart(2,'0')}</span><h3>{concept.title}</h3><p>{concept.text}</p></div>)}</section>
         <section className="notes-formula-list"><p>Essential formulae</p>{notes.formulas.map((formula) => <strong key={formula}>{formula}</strong>)}</section>
         <footer className="notes-page-number">Ramavana Mathematical Center · 1 / 3</footer>

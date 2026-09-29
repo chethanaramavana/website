@@ -136,6 +136,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .folder-content { padding-top: 25px; border-top: 1px solid #d6dfe2; }
 .list-heading { margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; }
 .list-heading h2 { margin: 0; color: var(--navy); font: 600 1.35rem Georgia, serif; }
+.grade-folder-list { display: grid; gap: 14px; }
 .grade-folder { width: min(100%, 620px); padding: 22px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; border: 1px solid #ded3f2; border-radius: 18px; color: var(--navy); background: linear-gradient(120deg, #ffffff, #f4f0ff); cursor: pointer; text-align: left; box-shadow: 0 14px 38px rgba(53,38,87,.10); transition: .18s ease; }
 .grade-folder:hover { transform: translateY(-3px); border-color: var(--blue); box-shadow: 0 18px 43px rgba(14,51,72,.11); }
 .grade-folder .folder-icon { --folder-color: #5936a7; width: 58px; height: 58px; }

@@ -32,7 +32,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>No payment needed again on this account.</small></span><a href="/">Open chapter</a></article> : null;
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · No payment needed again.</small></span><a href="/">Open chapter</a></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">
@@ -41,7 +41,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
               const paper = paperDefinitionsById[submission.paper_id];
               return <a key={submission.id} href={`/student/results/${submission.id}`}>
                 <span className={`student-result-icon ${submission.status}`}>{submission.status === 'marked' ? <CheckCircle2 /> : <Clock3 />}</span>
-                <span><strong>{paper?.chapter ?? 'Chapter test'}</strong><small>{new Date(submission.submitted_at).toLocaleString()}</small></span>
+                <span><strong>{paper?.chapter ?? 'Chapter test'}</strong><small>Grade {paper?.grade ?? 10} · {new Date(submission.submitted_at).toLocaleString()}</small></span>
                 <em>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</em>
               </a>;
             })}</div> : <div className="student-account-empty"><Clock3 /><span>Submitted tests and marks will appear here.</span></div>}

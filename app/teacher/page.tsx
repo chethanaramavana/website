@@ -6,7 +6,7 @@ import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
-  title: `${paper.chapter} · Paper ${paper.paperNumber}`,
+  title: `Grade ${paper.grade ?? 10} · ${paper.chapter} · Paper ${paper.paperNumber}`,
   writtenQuestions: Object.entries(paper.written).map(([number, value]) => ({
     number: Number(number),
     marks: writtenMarks[Number(number)],
@@ -348,14 +348,14 @@ export default function TeacherReviewPage() {
             <div><p>Teacher library</p><h2>Question papers</h2></div>
             {paperLoading ? <span className="teacher-loading"><Loader2 /> Loading papers…</span> : papers.map((paper) => (
               <button className={editingPaper?.id === paper.id ? 'active' : ''} type="button" key={paper.id} onClick={() => setEditingPaper(structuredClone(paper))}>
-                <BookOpen /><span><strong>{paper.chapter}</strong><small>Paper {paper.paperNumber}</small></span>
+                <BookOpen /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · Paper {paper.paperNumber}</small></span>
               </button>
             ))}
           </aside>
           <div className="paper-editor-panel">
             {!editingPaper ? <div className="review-placeholder"><BookOpen /><h2>Select a question paper</h2></div> : (
               <>
-                <header className="paper-editor-heading"><div><p>Grade 10 · CBSE</p><h2>{editingPaper.chapter}</h2><span>Changes are published only after you press Save paper.</span></div><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save paper'}</button></header>
+                <header className="paper-editor-heading"><div><p>Grade {editingPaper.grade ?? 10} · CBSE{editingPaper.book ? ` · ${editingPaper.book}` : ''}</p><h2>{editingPaper.chapter}</h2><span>Changes are published only after you press Save paper.</span></div><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save paper'}</button></header>
                 <div className="paper-editor-general">
                   <label>Paper instruction<textarea value={editingPaper.focus} onChange={(event) => setEditingPaper({ ...editingPaper, focus: event.target.value })} /></label>
                   <label>Case-study introduction<textarea value={editingPaper.caseStudy} onChange={(event) => setEditingPaper({ ...editingPaper, caseStudy: event.target.value })} /></label>

@@ -70,7 +70,7 @@ const previousPaperResources = [
   },
 ] as const;
 
-const chapters = [
+const grade10Chapters = [
   'Real Numbers',
   'Polynomials',
   'Pair of Linear Equations in Two Variables',
@@ -86,6 +86,21 @@ const chapters = [
   'Statistics',
   'Probability',
 ];
+
+const grade6Chapters = [
+  'Patterns in Mathematics',
+  'Lines and Angles',
+  'Number Play',
+  'Data Handling and Presentation',
+  'Prime Time',
+  'Perimeter and Area',
+  'Fractions',
+  'Playing with Constructions',
+  'Symmetry',
+  'The Other Side of Zero',
+];
+
+const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters };
 
 const realNumbersMcqs = [
   {
@@ -190,6 +205,8 @@ type PaperDefinition = {
   chapter: string;
   chapterNumber: number;
   paperNumber: string;
+  grade?: number;
+  book?: string;
   mcqs: readonly { number: number; question: string; options: readonly string[]; source?: string }[];
   assertions: readonly { number: number; assertion: string; reason: string }[];
   focus: string;
@@ -249,24 +266,24 @@ type BoardName = (typeof boards)[number]['name'];
 
 export default function HomePage() {
   const [board, setBoard] = useState<BoardName | null>(null);
-  const [gradeOpen, setGradeOpen] = useState(false);
+  const [grade, setGrade] = useState<number | null>(null);
   const [chapter, setChapter] = useState<string | null>(null);
 
   function goHome() {
     setBoard(null);
-    setGradeOpen(false);
+    setGrade(null);
     setChapter(null);
   }
 
   function openBoard(nextBoard: BoardName) {
     setBoard(nextBoard);
-    setGradeOpen(false);
+    setGrade(null);
     setChapter(null);
   }
 
-  function openGrade() {
+  function openGrade(nextGrade: number) {
     const currentScrollPosition = window.scrollY;
-    setGradeOpen(true);
+    setGrade(nextGrade);
     setChapter(null);
     requestAnimationFrame(() => {
       window.scrollTo({ top: currentScrollPosition, behavior: 'auto' });
@@ -297,12 +314,12 @@ export default function HomePage() {
 
       {!board ? (
         <HomeView onOpenBoard={openBoard} />
-      ) : !gradeOpen ? (
+      ) : grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} />
+        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} />
       ) : (
-        <ChapterView chapter={chapter} onHome={goHome} onChapters={() => setChapter(null)} />
+        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onChapters={() => setChapter(null)} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
@@ -338,7 +355,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           <p className="hero-kicker"><BookOpen /> Built for exam practice</p>
           <h1 id="hero-title">Maths gets easier when you practise the <span>right questions.</span></h1>
           <p className="hero-intro">Work chapter by chapter with exam-style MCQs, mark-wise questions and handwritten-answer uploads.</p>
-          <button className="hero-action" type="button" onClick={() => onOpenBoard('CBSE')}>Start Grade 10 CBSE <ArrowRight /></button>
+          <button className="hero-action" type="button" onClick={() => onOpenBoard('CBSE')}>Start CBSE practice <ArrowRight /></button>
           <div className="hero-highlights" aria-label="Practice features">
             <span>Exam-style</span><span>Chapter-wise</span><span>Write & upload</span>
           </div>
@@ -358,7 +375,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
             <button key={item.name} className={`folder-card board-folder board-${index + 1}`} type="button" onClick={() => onOpenBoard(item.name)}>
               <span className="folder-icon"><Folder /></span>
               <span className="folder-copy"><strong>{item.name}</strong></span>
-              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grade 10' : 'Coming soon'}</span>
+              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6 & 10' : 'Coming soon'}</span>
               <ChevronRight className="folder-arrow" />
             </button>
           ))}
@@ -390,7 +407,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
   );
 }
 
-function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: () => void; onOpenGrade: () => void }) {
+function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: () => void; onOpenGrade: (grade: number) => void }) {
   const isCbse = board === 'CBSE';
   return (
     <div className="content-view">
@@ -401,12 +418,19 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>1 folder</span></div>
-          <button className="grade-folder" type="button" onClick={onOpenGrade}>
-            <span className="folder-icon"><GraduationCap /></span>
-            <span><small>CBSE Mathematics</small><strong>Grade 10</strong><em>14 chapters</em></span>
-            <ChevronRight />
-          </button>
+          <div className="list-heading"><h2>Grades</h2><span>2 folders</span></div>
+          <div className="grade-folder-list">
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE · Ganita Prakash</small><strong>Grade 6</strong><em>10 chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(10)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE Mathematics</small><strong>Grade 10</strong><em>14 chapters</em></span>
+              <ChevronRight />
+            </button>
+          </div>
         </section>
       ) : (
         <section className="empty-folder">
@@ -433,7 +457,7 @@ declare global {
   }
 }
 
-function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
+function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStudentName, setPaymentStudentName] = useState('');
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
@@ -442,7 +466,9 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
   const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const razorpayRecoveryAttemptsRef = useRef(0);
-  const isAvailablePaper = pendingChapter !== null && pendingChapter in paperDefinitions;
+  const chapters = chaptersByGrade[grade] ?? [];
+  const pendingPaper = pendingChapter ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+  const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
   const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
 
   useEffect(() => {
@@ -500,7 +526,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
 
   function openChapter(nextChapter: string) {
     const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
-    if (paper && studentRecords?.access.includes(paper.id)) {
+    if (paper && (paper.grade ?? 10) === grade && studentRecords?.access.includes(paper.id)) {
       onOpenChapter(nextChapter);
       return;
     }
@@ -509,7 +535,7 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
     setRazorpayStatus('idle');
     setPaymentMessage('');
     setPendingChapter(nextChapter);
-    if (!paper) return;
+    if (!paper || (paper.grade ?? 10) !== grade) return;
     if (studentRecords?.signedIn) void checkRazorpayStatus(nextChapter as PaperDefinition['chapter']);
   }
 
@@ -641,13 +667,13 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
 
   return (
     <div className="content-view">
-      <Breadcrumb items={['CBSE', 'Grade 10']} onHome={onHome} onFirstItem={onBoard} />
+      <Breadcrumb items={['CBSE', `Grade ${grade}`]} onHome={onHome} onFirstItem={onBoard} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>CBSE Mathematics</p><h1>Grade 10</h1><span>Chapter folders</span></div>
+        <div><p>CBSE Mathematics</p><h1>Grade {grade}</h1><span>{grade === 6 ? 'Ganita Prakash · ' : ''}Chapter folders</span></div>
       </section>
       <section className="folder-content">
-        <div className="list-heading"><h2>Chapters</h2><span>14 folders</span></div>
+        <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} folders</span></div>
         <div className="chapter-grid">
           {chapters.map((item, index) => (
             <button key={item} className="chapter-folder" type="button" onClick={() => openChapter(item)}>
@@ -701,18 +727,18 @@ function ChaptersView({ onHome, onBoard, onOpenChapter }: { onHome: () => void; 
   );
 }
 
-function ChapterView({ chapter, onHome, onChapters }: { chapter: string; onHome: () => void; onChapters: () => void }) {
+function ChapterView({ grade, chapter, onHome, onChapters }: { grade: number; chapter: string; onHome: () => void; onChapters: () => void }) {
   const paper = paperDefinitions[chapter as PaperDefinition['chapter']];
-  if (paper) {
+  if (paper && (paper.grade ?? 10) === grade) {
     return <ChapterPaper paper={paper} onHome={onHome} onChapters={onChapters} />;
   }
 
   return (
     <div className="content-view">
-      <Breadcrumb items={['CBSE', 'Grade 10', chapter]} onHome={onHome} />
+      <Breadcrumb items={['CBSE', `Grade ${grade}`, chapter]} onHome={onHome} />
       <section className="chapter-empty-view">
         <span className="chapter-open-icon"><FolderOpen /></span>
-        <p>Grade 10 · CBSE Mathematics</p>
+        <p>Grade {grade} · CBSE Mathematics</p>
         <h1>{chapter}</h1>
         <div className="gold-rule" />
         <strong>Chapter folder created</strong>
@@ -1015,7 +1041,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
-        <Breadcrumb items={['CBSE', 'Grade 10', currentPaper.chapter]} onHome={() => requestExit(onHome)} />
+        <Breadcrumb items={['CBSE', `Grade ${currentPaper.grade ?? 10}`, currentPaper.chapter]} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
           <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
           <button className="print-button" type="button" onClick={() => window.print()}><Printer /> Print paper</button>
@@ -1026,7 +1052,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
         <header className="paper-heading">
           <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
-          <p>CBSE Mathematics (Standard) · Grade 10</p>
+          <p>CBSE Mathematics{(currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
         </header>

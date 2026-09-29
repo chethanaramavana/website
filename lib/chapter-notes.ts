@@ -1,7 +1,11 @@
+import { grade6Notes } from './grade6-notes';
+
 export type ChapterNotes = {
   slug: string;
   chapter: string;
   number: number;
+  grade?: number;
+  book?: string;
   subtitle: string;
   concepts: { title: string; text: string }[];
   formulas: string[];
@@ -209,6 +213,7 @@ export const chapterNotesBySlug: Record<string, ChapterNotes> = Object.fromEntri
       {question:'Die: P(prime).',answer:'1/2',marks:2},{question:'Deck: P(king).',answer:'1/13',marks:2},{question:'Bag 3 red,2 blue: P(not blue).',answer:'3/5',marks:2},{question:'Two dice: P(sum 7).',answer:'1/6',marks:3},{question:'Choose 1–30: P(multiple of 5).',answer:'1/5',marks:3},{question:'Cards 1–20: P(prime or multiple of 4).',answer:'12/20=3/5',marks:4},
     ], tips:['“At least one” often suits the complement method.','Do not count outcomes twice in unions.','A probability above 1 signals a counting error.'],
   }),
+  ...grade6Notes,
 ].map((item) => [item.slug, item]));
 
 export function getChapterNotes(slug: string) {

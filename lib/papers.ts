@@ -1,4 +1,5 @@
 import { additionalPaperDefinitions } from './papers-additional';
+import { grade6PaperDefinitions } from './grade6-papers';
 
 export type QuestionSource = string;
 
@@ -7,6 +8,8 @@ export type PaperDefinition = {
   chapter: string;
   chapterNumber: number;
   paperNumber: string;
+  grade?: number;
+  book?: string;
   mcqs: { number: number; question: string; options: string[]; source?: QuestionSource }[];
   assertions: { number: number; assertion: string; reason: string }[];
   focus: string;
@@ -98,6 +101,7 @@ const basePaperDefinitions: Record<string, PaperDefinition> = {
 export const paperDefinitions: Record<string, PaperDefinition> = {
   ...basePaperDefinitions,
   ...additionalPaperDefinitions,
+  ...grade6PaperDefinitions,
 };
 
 export const paperDefinitionsById = Object.fromEntries(
