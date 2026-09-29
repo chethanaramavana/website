@@ -24,7 +24,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
       <header className="student-account-header">
         <a href="/"><ArrowLeft /> Chapters</a>
         <div><p>Student account</p><h1>{displayName}</h1><span>{email}</span></div>
-        <a href="/signout-with-chatgpt?return_to=%2F" target="_top"><LogOut /> Sign out</a>
+        <a href="/api/auth/signout?return_to=%2F"><LogOut /> Sign out</a>
       </header>
       {error ? <div className="student-account-error">{error}</div> : !records ? <div className="student-account-loading"><Loader2 /> Loading your tests…</div> : (
         <>

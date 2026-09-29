@@ -8,7 +8,7 @@ const maxFileSize = 10 * 1024 * 1024;
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-    const owner = getAttemptOwner(request);
+    const owner = await getAttemptOwner(request);
     if (!owner) return jsonError('Please reopen the test page and try again.', 401);
     const { id } = await context.params;
     const url = new URL(request.url);
@@ -29,7 +29,7 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     const db = getDatabase();
     const submission = await db.prepare('SELECT user_id, status FROM submissions WHERE id = ?')
       .bind(id).first<{ user_id: string; status: string }>();
-    if (!submission || !ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
+    if (!submission || !await ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
     if (submission.status !== 'draft') return jsonError('This test has already been submitted.', 409);
 
     const objectKey = `submissions/${id}/${question}/${uploadId}`;

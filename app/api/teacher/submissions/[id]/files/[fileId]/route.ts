@@ -2,7 +2,7 @@ import { getBucket, getDatabase, getRequestUser, isAdmin, jsonError } from '@/li
 
 export async function GET(request: Request, context: { params: Promise<{ id: string; fileId: string }> }) {
   try {
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user || !isAdmin(user)) return jsonError('Teacher access only.', 403);
     const { id, fileId } = await context.params;
     const file = await getDatabase().prepare(`

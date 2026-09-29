@@ -23,13 +23,13 @@ function isValidMarkingScheme(value: unknown): value is Record<number, MarkingSt
   });
 }
 
-function requireAdmin(request: Request) {
-  const user = getRequestUser(request);
+async function requireAdmin(request: Request) {
+  const user = await getRequestUser(request);
   return user && isAdmin(user) ? user : null;
 }
 
 export async function GET(request: Request) {
-  if (!requireAdmin(request)) return jsonError('Teacher access is required.', 403);
+  if (!await requireAdmin(request)) return jsonError('Teacher access is required.', 403);
   try {
     const rows = await getDatabase().prepare('SELECT paper_id, content_json, updated_at FROM paper_content').all<{ paper_id: string; content_json: string; updated_at: string }>();
     const saved = new Map(rows.results.map((row) => [row.paper_id, row]));
@@ -57,7 +57,7 @@ export async function GET(request: Request) {
 
 export async function PATCH(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-  const user = requireAdmin(request);
+  const user = await requireAdmin(request);
   if (!user) return jsonError('Teacher access is required.', 403);
   try {
     const body = await request.json() as { paper?: unknown; answerKey?: Record<number, number>; writtenSolutions?: Record<number, string>; markingSchemes?: Record<number, MarkingStep[]> };

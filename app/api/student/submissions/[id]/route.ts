@@ -2,14 +2,14 @@ import { getPaperAssessment } from '@/lib/assessment';
 import { getDatabase, getRequestUser, jsonError } from '@/lib/server';
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
-  const user = getRequestUser(request);
+  const user = await getRequestUser(request);
   if (!user) return jsonError('Student sign in is required.', 401);
   try {
     const { id } = await context.params;
     const db = getDatabase();
     const submission = await db.prepare(`SELECT id, paper_id, student_name, status, mcq_answers, mcq_score,
       written_score, total_score, teacher_feedback, submitted_at, marked_at
-      FROM submissions WHERE id = ? AND user_id = ? AND status != 'draft'`).bind(id, user.userId).first<Record<string, unknown>>();
+      FROM submissions WHERE id = ? AND (user_id = ? OR lower(user_email) = ?) AND status != 'draft'`).bind(id, user.userId, user.email).first<Record<string, unknown>>();
     if (!submission) return jsonError('This result was not found in your account.', 404);
     const assessment = getPaperAssessment(String(submission.paper_id));
     if (!assessment) return jsonError('This question paper is unavailable.', 404);

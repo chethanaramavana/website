@@ -36,7 +36,6 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from '@/components/ui/dialog';
 import { paperDefinitions as sharedPaperDefinitions } from '@/lib/papers';
 
@@ -308,7 +307,7 @@ export default function HomePage() {
         </nav>
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <a className="student-login-link" href="/student"><UserRound /><span>Student Login</span></a>
+          <a className="student-login-link" href="/student"><UserRound /><span>Google Login</span></a>
         </div>
       </header>
 
@@ -338,8 +337,8 @@ export default function HomePage() {
       <footer className="site-footer">
         <div className="footer-brand"><strong>Ramavana Mathematical Center</strong><span>Learn · Practise · Progress</span></div>
         <nav className="footer-links" aria-label="Legal information">
-          <LegalDialog type="terms" />
-          <LegalDialog type="privacy" />
+          <a className="legal-link" href="/terms">Terms &amp; Conditions</a>
+          <a className="legal-link" href="/privacy-policy">Privacy Policy</a>
         </nav>
         <span className="footer-copy">© 2026 Ramavana</span>
       </footer>
@@ -445,7 +444,14 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
 }
 
 type PaymentStatus = 'idle' | 'approved' | 'rejected';
-type StudentRecords = { signedIn: boolean; email?: string; access: string[] };
+type StudentSubmission = {
+  id: string;
+  paper_id: string;
+  student_name: string;
+  status: 'submitted' | 'marked';
+  submitted_at: string;
+};
+type StudentRecords = { signedIn: boolean; email?: string; access: string[]; submissions: StudentSubmission[] };
 type RazorpayStatus = 'idle' | 'starting' | 'checkout' | 'verifying';
 
 type RazorpaySuccess = { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string };
@@ -470,6 +476,9 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
   const pendingPaper = pendingChapter ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
   const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
   const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+  const completedSubmission = selectedPaper
+    ? studentRecords?.submissions.find((submission) => submission.paper_id === selectedPaper.id)
+    : undefined;
 
   useEffect(() => {
     void fetch('/api/student/records', { cache: 'no-store' })
@@ -526,9 +535,12 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
 
   function openChapter(nextChapter: string) {
     const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
-    if (paper && (paper.grade ?? 10) === grade && studentRecords?.access.includes(paper.id)) {
-      onOpenChapter(nextChapter);
-      return;
+    if (paper && (paper.grade ?? 10) === grade && studentRecords?.signedIn) {
+      const earlierSubmission = studentRecords.submissions.find((submission) => submission.paper_id === paper.id);
+      if (!earlierSubmission && studentRecords.access.includes(paper.id)) {
+        onOpenChapter(nextChapter);
+        return;
+      }
     }
     setPaymentStudentName('');
     setPaymentStatus('idle');
@@ -691,10 +703,24 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
           <DialogHeader>
             <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            <DialogTitle>{isAvailablePaper ? 'Pay ₹30 to open this test' : 'This paper is coming soon'}</DialogTitle>
+            <DialogTitle>{isAvailablePaper
+              ? studentRecords === null
+                ? 'Checking your account…'
+                : !studentRecords.signedIn
+                  ? 'Sign in with Google to continue'
+                  : completedSubmission
+                    ? 'Your completed paper is ready'
+                    : 'Pay ₹30 to open this test'
+              : 'This paper is coming soon'}</DialogTitle>
             <DialogDescription>
               {isAvailablePaper
-                ? 'Log in once, pay securely and the question paper will open automatically.'
+                ? studentRecords === null
+                  ? 'Please wait while we check your student account.'
+                  : !studentRecords.signedIn
+                    ? 'Sign in once to keep paid chapters, completed papers and marks available on every device.'
+                    : completedSubmission
+                      ? 'Open your most recent completed paper, answers and teacher feedback.'
+                      : 'Enter the student name, pay securely and the question paper will open automatically.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
           </DialogHeader>
@@ -702,18 +728,28 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
             <div className="chapter-access-content">
               {selectedPaper && <ChapterNotesLink paper={selectedPaper} />}
               <div className="payment-divider"><span>Take the chapter test</span></div>
-              {studentRecords?.signedIn ? (
-                <div className="student-payment-status"><CheckCircle2 /><span><strong>Student account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
+              {studentRecords === null ? (
+                <div className="student-payment-loading"><Loader2 /><span>Checking login and chapter access…</span></div>
+              ) : !studentRecords.signedIn ? (
+                <a className="student-payment-login google-login-action" href="/api/auth/google?return_to=%2Fstudent"><UserRound /><span><strong>Continue with Google</strong><small>We use only your Google account email to identify your student account.</small></span><ChevronRight /></a>
+              ) : completedSubmission ? (
+                <div className="completed-paper-card">
+                  <CheckCircle2 />
+                  <span><strong>{completedSubmission.student_name || 'Completed paper'}</strong><small>Submitted {new Date(completedSubmission.submitted_at).toLocaleString()} · {completedSubmission.status === 'marked' ? 'Marks available' : 'Awaiting written-paper marking'}</small></span>
+                  <a href={`/student/results/${encodeURIComponent(completedSubmission.id)}`}>Open last completed paper</a>
+                </div>
               ) : (
-                <a className="student-payment-login" href="/student"><UserRound /><span><strong>Log in / Sign up before paying</strong><small>Your paid chapter and marks will then be available on any device.</small></span><ChevronRight /></a>
+                <>
+                  <div className="student-payment-status"><CheckCircle2 /><span><strong>Google account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
+                  <div className="razorpay-checkout-card">
+                    <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
+                    <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
+                    <button type="button" onClick={() => void startRazorpayPayment()} disabled={razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'checkout' ? 'Checkout in progress…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
+                    <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || 'Payment verification is automatic. Failed or cancelled payments do not unlock the paper.'}</p>
+                    {selectedPaper && <button className="razorpay-recovery-button" type="button" onClick={() => void checkRazorpayStatus(selectedPaper.chapter)} disabled={razorpayStatus !== 'idle'}><CheckCircle2 /> Check a completed payment</button>}
+                  </div>
+                </>
               )}
-              <div className="razorpay-checkout-card">
-                <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
-                <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
-                <button type="button" onClick={() => void startRazorpayPayment()} disabled={!studentRecords?.signedIn || razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'checkout' ? 'Checkout in progress…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
-                <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || (studentRecords?.signedIn ? 'Payment verification is automatic. Failed or cancelled payments do not unlock the paper.' : 'Log in or sign up to continue.')}</p>
-                {studentRecords?.signedIn && selectedPaper && <button className="razorpay-recovery-button" type="button" onClick={() => void checkRazorpayStatus(selectedPaper.chapter)} disabled={razorpayStatus !== 'idle'}><CheckCircle2 /> Check a completed payment</button>}
-              </div>
             </div>
           ) : (
             <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
@@ -1342,33 +1378,3 @@ function Breadcrumb({ items, onHome, onFirstItem }: { items: string[]; onHome: (
   );
 }
 
-function LegalDialog({ type }: { type: 'terms' | 'privacy' }) {
-  const isTerms = type === 'terms';
-  return (
-    <Dialog>
-      <DialogTrigger render={<button className="legal-link" type="button" />}>{isTerms ? 'Terms & Conditions' : 'Privacy Policy'}</DialogTrigger>
-      <DialogContent className="legal-dialog">
-        <DialogHeader>
-          <DialogTitle>{isTerms ? 'Terms & Conditions' : 'Privacy Policy'}</DialogTitle>
-          <DialogDescription>Ramavana Mathematical Center</DialogDescription>
-        </DialogHeader>
-        {isTerms ? (
-          <div className="legal-copy">
-            <section><h3>Learning use</h3><p>The question papers and feedback are provided for educational practice. They are not official examination papers or school results.</p></section>
-            <section><h3>Access and payment</h3><p>The ₹30 chapter fee is collected through Razorpay. Chapter access opens automatically only after Razorpay confirms a successful payment, and the approved chapter remains in the student account.</p></section>
-            <section><h3>Student work</h3><p>Students should upload only their own answers. Practice material may not be copied, resold or shared outside the permitted access.</p></section>
-            <section><h3>Assessment</h3><p>Marks and comments are learning guidance. Students should follow their school and board instructions for official examinations.</p></section>
-          </div>
-        ) : (
-          <div className="legal-copy">
-            <section><h3>Information used</h3><p>We may use a student’s name, selected answers, uploaded answer sheets and payment confirmation only to provide access, marking and support.</p></section>
-            <section><h3>Payment safety</h3><p>Ramavana will never ask for a UPI PIN, bank password, card PIN or one-time password inside this website.</p></section>
-            <section><h3>Uploads</h3><p>Answer-sheet images are used for assessment and are not sold. Access is limited to the people and services needed to operate the learning experience.</p></section>
-            <section><h3>Control</h3><p>Students or parents may request correction or deletion of submitted information through the centre’s published contact channel.</p></section>
-          </div>
-        )}
-        <p className="legal-review-note">Last updated: September 2026</p>
-      </DialogContent>
-    </Dialog>
-  );
-}

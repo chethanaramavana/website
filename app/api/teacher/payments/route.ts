@@ -1,7 +1,7 @@
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
-function requireAdmin(request: Request) {
-  const user = getRequestUser(request);
+async function requireAdmin(request: Request) {
+  const user = await getRequestUser(request);
   return user && isAdmin(user) ? user : null;
 }
 
@@ -10,7 +10,7 @@ function textField(value: unknown) {
 }
 
 export async function GET(request: Request) {
-  if (!requireAdmin(request)) return jsonError('Teacher access is required.', 403);
+  if (!await requireAdmin(request)) return jsonError('Teacher access is required.', 403);
 
   try {
     const result = await getDatabase().prepare(
@@ -29,7 +29,7 @@ export async function GET(request: Request) {
 
 export async function PATCH(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-  if (!requireAdmin(request)) return jsonError('Teacher access is required.', 403);
+  if (!await requireAdmin(request)) return jsonError('Teacher access is required.', 403);
 
   try {
     const body = await request.json() as Record<string, unknown>;

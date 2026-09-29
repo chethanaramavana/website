@@ -24,7 +24,7 @@ export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
 
   try {
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user) return jsonError('Please log in again to check the payment.', 401);
     const config = getRazorpayConfiguration();
     if (!config) return jsonError('Razorpay is not configured.', 503);

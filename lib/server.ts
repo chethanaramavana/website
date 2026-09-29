@@ -1,19 +1,17 @@
 import { env } from 'cloudflare:workers';
-import { normalizeAccountEmail } from '@/lib/identity';
+import { getGoogleUserFromRequest } from '@/lib/google-auth';
 
 export type RequestUser = { userId: string; email: string };
 
 const attemptKeyPattern = /^[a-zA-Z0-9-]{20,80}$/;
 
-export function getRequestUser(request: Request): RequestUser | null {
-  const userId = request.headers.get('oai-authenticated-user-id');
-  const email = request.headers.get('oai-authenticated-user-email');
-  if (!userId || !email) return null;
-  return { userId, email: normalizeAccountEmail(email) };
+export async function getRequestUser(request: Request): Promise<RequestUser | null> {
+  const user = await getGoogleUserFromRequest(request);
+  return user ? { userId: user.userId, email: user.email } : null;
 }
 
-export function getAttemptOwner(request: Request): RequestUser | null {
-  const signedInUser = getRequestUser(request);
+export async function getAttemptOwner(request: Request): Promise<RequestUser | null> {
+  const signedInUser = await getRequestUser(request);
   if (signedInUser) return signedInUser;
   const attemptKey = request.headers.get('x-attempt-key')?.trim() ?? '';
   if (!attemptKeyPattern.test(attemptKey)) return null;
@@ -23,8 +21,8 @@ export function getAttemptOwner(request: Request): RequestUser | null {
   };
 }
 
-export function ownsAttempt(request: Request, storedUserId: string): boolean {
-  const signedInUser = getRequestUser(request);
+export async function ownsAttempt(request: Request, storedUserId: string): Promise<boolean> {
+  const signedInUser = await getRequestUser(request);
   const attemptKey = request.headers.get('x-attempt-key')?.trim() ?? '';
   const attemptUserId = attemptKeyPattern.test(attemptKey) ? `attempt:${attemptKey}` : '';
   return Boolean(

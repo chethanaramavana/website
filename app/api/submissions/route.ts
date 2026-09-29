@@ -5,7 +5,7 @@ const attemptIdPattern = /^[a-zA-Z0-9-]{20,80}$/;
 
 export async function GET(request: Request) {
   try {
-    const owner = getAttemptOwner(request);
+    const owner = await getAttemptOwner(request);
     if (!owner) return jsonError('Please reopen the test page and try again.', 401);
     const id = new URL(request.url).searchParams.get('attemptId')?.trim() ?? '';
     if (!attemptIdPattern.test(id)) return jsonError('Invalid test attempt.', 400);
@@ -23,7 +23,7 @@ export async function GET(request: Request) {
       mcq_answers: string;
     }>();
     if (!submission) return Response.json({ found: false });
-    if (!ownsAttempt(request, submission.user_id)) return jsonError('This saved test belongs to another student.', 403);
+    if (!await ownsAttempt(request, submission.user_id)) return jsonError('This saved test belongs to another student.', 403);
 
     const uploads = await db.prepare(`
       SELECT id, question_number, file_name FROM answer_uploads
@@ -51,7 +51,7 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
   try {
     if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-    const owner = getAttemptOwner(request);
+    const owner = await getAttemptOwner(request);
     if (!owner) return jsonError('Please reopen the test page and try again.', 401);
 
     const payload = await request.json() as {
@@ -82,7 +82,7 @@ export async function POST(request: Request) {
 
     const row = await db.prepare('SELECT id, user_id, paper_id, status FROM submissions WHERE id = ?')
       .bind(id).first<{ id: string; user_id: string; paper_id: string; status: string }>();
-    if (!row || !ownsAttempt(request, row.user_id)) return jsonError('This test attempt belongs to another student.', 403);
+    if (!row || !await ownsAttempt(request, row.user_id)) return jsonError('This test attempt belongs to another student.', 403);
     if (row.paper_id !== paperId) return jsonError('This saved attempt belongs to a different question paper.', 409);
     if (row.status !== 'draft') return Response.json({ id, status: row.status });
 

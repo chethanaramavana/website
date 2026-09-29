@@ -1,5 +1,6 @@
 import { ArrowLeft, BookOpen, CheckCircle2, Lightbulb } from 'lucide-react';
 import NotesPrintButton from './print-button';
+import NotesBranding from '../notes-branding';
 
 export const metadata = {
   title: 'Real Numbers Notes | Ramavana Mathematical Center',
@@ -15,6 +16,7 @@ export default function RealNumbersNotesPage() {
       </nav>
 
       <article className="notes-page notes-cover-page">
+        <NotesBranding />
         <header className="notes-title-block">
           <span className="notes-book-icon"><BookOpen /></span>
           <p>CBSE · Grade 10 Mathematics · Chapter 1</p>
@@ -67,6 +69,7 @@ export default function RealNumbersNotesPage() {
       </article>
 
       <article className="notes-page">
+        <NotesBranding />
         <header className="notes-running-header"><span>Real Numbers</span><b>Methods &amp; Proofs</b></header>
         <section className="notes-section">
           <span className="notes-section-number">03</span>
@@ -113,6 +116,7 @@ export default function RealNumbersNotesPage() {
       </article>
 
       <article className="notes-page">
+        <NotesBranding />
         <header className="notes-running-header"><span>Real Numbers</span><b>Practice</b></header>
         <section className="notes-practice-heading">
           <p>Check your understanding</p>

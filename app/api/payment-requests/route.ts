@@ -17,7 +17,7 @@ export async function GET(request: Request) {
       'SELECT id, user_id, paper_id, status, created_at, reviewed_at FROM payment_requests WHERE id = ? LIMIT 1',
     ).bind(id).first<Record<string, string | null>>();
 
-    if (!row || !ownsAttempt(request, String(row.user_id))) return jsonError('Payment request not found.', 404);
+    if (!row || !await ownsAttempt(request, String(row.user_id))) return jsonError('Payment request not found.', 404);
     return Response.json({
       request: {
         id: row.id,
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
 
   try {
-    const owner = getAttemptOwner(request);
+    const owner = await getAttemptOwner(request);
     if (!owner) return jsonError('This browser could not start payment verification. Please refresh and try again.', 401);
 
     const body = await request.json() as Record<string, unknown>;

@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
 
   try {
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user) return jsonError('Please log in or sign up before paying.', 401);
     const config = getRazorpayConfiguration();
     if (!config) return jsonError('Secure online payment is temporarily unavailable. Please try again later.', 503);

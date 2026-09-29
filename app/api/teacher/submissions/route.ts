@@ -2,7 +2,7 @@ import { getDatabase, getRequestUser, isAdmin, jsonError } from '@/lib/server';
 
 export async function GET(request: Request) {
   try {
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user || !isAdmin(user)) return jsonError('Teacher access only.', 403);
     const rows = await getDatabase().prepare(`
       SELECT id, paper_id, student_name, user_email, status, mcq_score, written_score, total_score,

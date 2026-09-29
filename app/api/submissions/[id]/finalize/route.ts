@@ -4,14 +4,14 @@ import { getAttemptOwner, getDatabase, jsonError, ownsAttempt, sameOrigin } from
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-    const owner = getAttemptOwner(request);
+    const owner = await getAttemptOwner(request);
     if (!owner) return jsonError('Please reopen the test page and try again.', 401);
     const { id } = await context.params;
     const db = getDatabase();
     const submission = await db.prepare(`
       SELECT user_id, paper_id, status, mcq_answers, mcq_score FROM submissions WHERE id = ?
     `).bind(id).first<{ user_id: string; paper_id: string; status: string; mcq_answers: string; mcq_score: number }>();
-    if (!submission || !ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
+    if (!submission || !await ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
     const assessment = getPaperAssessment(submission.paper_id);
     if (!assessment) return jsonError('This question paper is no longer available.', 400);
     const savedPaper = await db.prepare('SELECT content_json FROM paper_content WHERE paper_id = ?').bind(submission.paper_id).first<{ content_json: string }>();

@@ -224,6 +224,15 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .student-payment-login strong, .student-payment-login small, .student-payment-status strong, .student-payment-status small { display: block; }
 .student-payment-login strong, .student-payment-status strong { font-size: .76rem; }
 .student-payment-login small, .student-payment-status small { margin-top: 3px; color: #6c747c; font-size: .66rem; line-height: 1.35; }
+.student-payment-loading { min-height: 76px; padding: 14px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #d9dfe3; border-radius: 13px; color: #607078; background: #f8fafb; font-size: .76rem; font-weight: 750; }
+.student-payment-loading svg { width: 19px; animation: spin 1s linear infinite; }
+.google-login-action { min-height: 78px; }
+.completed-paper-card { padding: 15px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; border: 1px solid #bddfcf; border-radius: 14px; color: #276b54; background: #eff9f4; }
+.completed-paper-card > svg { width: 24px; }
+.completed-paper-card strong, .completed-paper-card small { display: block; }
+.completed-paper-card strong { color: var(--navy); font-size: .8rem; }
+.completed-paper-card small { margin-top: 4px; color: #64746e; font-size: .68rem; line-height: 1.4; }
+.completed-paper-card a { min-height: 39px; padding: 0 13px; display: inline-flex; align-items: center; border-radius: 9px; color: white; background: #28785f; font-size: .72rem; font-weight: 850; text-decoration: none; text-align: center; }
 .razorpay-checkout-card { padding: 18px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 13px 16px; border: 1px solid #d7caef; border-radius: 16px; background: linear-gradient(135deg, #faf8ff, #f3effd); }
 .razorpay-checkout-card > div { grid-column: 1 / -1; display: grid; gap: 3px; }
 .razorpay-checkout-card > div span { color: #7c58b9; font-size: .62rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
@@ -284,7 +293,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .notes-toolbar a, .notes-print-hint { min-height: 42px; padding: 0 14px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid #d3dde1; border-radius: 11px; color: #314c59; background: white; font: 750 .76rem var(--font-geist-sans), Arial, sans-serif; text-decoration: none; }
 .notes-toolbar svg { width: 17px; }
 .notes-print-hint { cursor: pointer; }
-.notes-page { width: min(100%, 850px); min-height: 1120px; margin: 0 auto 28px; padding: 62px 70px 48px; position: relative; border: 1px solid #d8e1e4; color: #334e59; background: #fffdfa; box-shadow: 0 18px 52px rgba(26,53,64,.13); }
+.notes-page { width: min(100%, 850px); min-height: 1120px; margin: 0 auto 28px; padding: 62px 70px 48px; position: relative; isolation: isolate; overflow: hidden; border: 1px solid #d8e1e4; color: #334e59; background: #fffdfa; box-shadow: 0 18px 52px rgba(26,53,64,.13); }
+.notes-page::before { content: ''; position: absolute; z-index: 0; width: 430px; height: 430px; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: .025; background: url('/ramavana-mark.png') center / contain no-repeat; pointer-events: none; }
+.notes-page > * { position: relative; z-index: 1; }
+.notes-page-logo { position: absolute; z-index: 2; width: 42px; height: 42px; left: 18px; top: 14px; border-radius: 50%; object-fit: cover; }
 .notes-title-block { padding: 20px 10px 34px; text-align: center; }
 .notes-book-icon { width: 64px; height: 64px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 18px; color: white; background: linear-gradient(145deg, #178f9a, #0b6978); box-shadow: 7px 7px 0 #d7eceb; }
 .notes-book-icon svg { width: 30px; }
@@ -759,9 +771,34 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .footer-brand strong { color: var(--navy); font: 700 .9rem Georgia, serif; }
 .footer-brand span { margin-top: 5px; color: #80798c; font-size: .7rem; letter-spacing: .06em; }
 .footer-links { display: flex; align-items: center; gap: 18px; }
-.legal-link { padding: 4px 0; border: 0; color: #514376; background: transparent; cursor: pointer; font-size: .75rem; font-weight: 750; }
+.legal-link { padding: 4px 0; border: 0; color: #514376; background: transparent; cursor: pointer; font-size: .75rem; font-weight: 750; text-decoration: none; }
 .legal-link:hover { color: var(--rust); }
 .footer-copy { color: #8d8797; white-space: nowrap; }
+
+/* Dedicated legal pages */
+.legal-page-shell { min-height: 100vh; padding: 22px 18px 72px; color: #2c4450; background: radial-gradient(circle at 10% 0, rgba(91,57,166,.12), transparent 28%), #f2f5f6; }
+.legal-page-header { width: min(100%, 920px); margin: 0 auto 18px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.legal-page-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); text-decoration: none; }
+.legal-page-brand img { width: 48px; height: 48px; border-radius: 50%; }
+.legal-page-brand strong, .legal-page-brand small { display: block; }
+.legal-page-brand strong { font: 700 1.05rem Georgia, serif; }
+.legal-page-brand small { margin-top: 2px; color: #6a747a; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.legal-page-home { min-height: 40px; padding: 0 14px; display: inline-flex; align-items: center; border: 1px solid #d8d0e4; border-radius: 10px; color: var(--primary); background: white; font-size: .78rem; font-weight: 800; text-decoration: none; }
+.legal-page-card { width: min(100%, 920px); margin: 0 auto; padding: clamp(30px, 6vw, 68px); border: 1px solid #dce3e6; border-radius: 24px; background: white; box-shadow: 0 18px 48px rgba(29,52,64,.1); }
+.legal-page-kicker { margin: 0 0 8px; color: var(--rust); font-size: .76rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.legal-page-card > h1 { margin: 0; color: var(--navy); font: 600 clamp(2.5rem, 7vw, 4.5rem)/1 Georgia, serif; letter-spacing: -.045em; }
+.legal-page-updated { margin: 13px 0 0; color: #727d82; font-size: .85rem; }
+.legal-page-intro { margin: 28px 0 36px; padding: 20px 22px; border-left: 4px solid var(--teal); color: #405a65; background: #eff8f8; font-size: 1rem; line-height: 1.7; }
+.legal-page-card section { margin-top: 30px; }
+.legal-page-card section h2 { margin: 0 0 10px; color: var(--navy); font: 700 1.25rem/1.35 Georgia, serif; }
+.legal-page-card section p, .legal-page-card section li { color: #4d6068; font-size: 1rem; line-height: 1.72; }
+.legal-page-card section p { margin: 0; }
+.legal-page-card section p + p { margin-top: 12px; }
+.legal-page-card section ul { margin: 8px 0 0; padding-left: 22px; }
+.legal-page-card section li + li { margin-top: 8px; }
+.legal-page-card a { color: #533297; }
+.legal-page-footer { margin-top: 40px; padding-top: 22px; display: flex; flex-wrap: wrap; gap: 12px 24px; border-top: 1px solid #e1e6e8; }
+.legal-page-footer a { font-size: .9rem; font-weight: 800; }
 
 .qr-dialog { max-width: 390px !important; padding: 24px !important; border-radius: 18px !important; background: var(--paper) !important; }
 .qr-dialog [data-slot="dialog-header"] { align-items: center; padding: 4px 18px 0; text-align: center; }
@@ -857,6 +894,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .payment-locked-gate { grid-template-columns: 1fr; gap: 16px; }
   .razorpay-checkout-card { grid-template-columns: 1fr; align-items: stretch; }
   .razorpay-checkout-card > button { width: 100%; }
+  .completed-paper-card { grid-template-columns: auto 1fr; }
+  .completed-paper-card a { grid-column: 1 / -1; justify-content: center; }
   .revision-sheet-body { grid-template-columns: 1fr; padding: 12px; }
   .revision-checklist { grid-column: auto; }
   .revision-sheet summary { padding: 12px; }
@@ -903,6 +942,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .footer-links { gap: 20px; }
   .footer-copy { grid-column: auto; }
   .legal-dialog { width: calc(100% - 24px) !important; padding: 22px !important; }
+  .legal-page-shell { padding: 12px 10px 38px; }
+  .legal-page-header { align-items: flex-start; }
+  .legal-page-brand small { display: none; }
+  .legal-page-home { padding: 0 10px; font-size: .7rem; }
+  .legal-page-card { padding: 28px 20px; border-radius: 18px; }
+  .legal-page-intro { padding: 16px; }
   .teacher-shell { padding: 14px; }
   .teacher-mode-nav button { flex: 1; justify-content: center; }
   .teacher-header { grid-template-columns: auto 1fr auto; gap: 10px; }
@@ -961,6 +1006,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .notes-shell { padding: 0; background: white; }
   .notes-toolbar { display: none; }
   .notes-page { width: 210mm; min-height: 297mm; margin: 0; padding: 17mm 18mm 14mm; border: 0; box-shadow: none; page-break-after: always; }
+  .notes-page::before { width: 120mm; height: 120mm; opacity: .045; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .notes-page-logo { width: 11mm; height: 11mm; left: 5mm; top: 4mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .notes-page:last-child { page-break-after: auto; }
   .notes-page-number { left: 18mm; right: 18mm; bottom: 9mm; }
   @page { size: A4; margin: 13mm; }

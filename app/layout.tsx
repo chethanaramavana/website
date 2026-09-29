@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: 'Ramavana Mathematical Center | Mathematics Practice',
   description:
     'Chapter-wise mathematics practice for CBSE, ICSE and IGCSE students.',
+  icons: {
+    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '64x64' }],
+    shortcut: '/favicon.png',
+    apple: '/ramavana-mark.png',
+  },
 };
 
 export default function RootLayout({

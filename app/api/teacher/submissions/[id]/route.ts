@@ -10,7 +10,7 @@ type SavedPaperDocument = {
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user || !isAdmin(user)) return jsonError('Teacher access only.', 403);
     const { id } = await context.params;
     const db = getDatabase();
@@ -57,7 +57,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
 export async function PATCH(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     if (!sameOrigin(request)) return jsonError('Invalid request origin.', 403);
-    const user = getRequestUser(request);
+    const user = await getRequestUser(request);
     if (!user || !isAdmin(user)) return jsonError('Teacher access only.', 403);
     const { id } = await context.params;
     const payload = await request.json() as { marks?: Record<string, number>; feedback?: string };
