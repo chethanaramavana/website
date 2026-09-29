@@ -1,5 +1,6 @@
 import { env } from 'cloudflare:workers';
 import { getGoogleUserFromRequest } from '@/lib/google-auth';
+import { isTeacherEmail } from '@/lib/identity';
 
 export type RequestUser = { userId: string; email: string };
 
@@ -32,8 +33,7 @@ export async function ownsAttempt(request: Request, storedUserId: string): Promi
 }
 
 export function isAdmin(user: RequestUser): boolean {
-  const adminEmail = env.ADMIN_EMAIL?.trim().toLowerCase();
-  return Boolean(adminEmail && user.email === adminEmail);
+  return isTeacherEmail(user.email);
 }
 
 export function getDatabase(): D1Database {

@@ -25,7 +25,10 @@ export async function GET(request: Request) {
     prompt: 'select_account',
   }).toString();
 
-  const response = Response.redirect(authorizationUrl, 302);
+  const response = new Response(null, {
+    status: 302,
+    headers: { location: authorizationUrl.toString() },
+  });
   response.headers.append('set-cookie', authCookie(OAUTH_STATE_COOKIE, cookieValue, OAUTH_STATE_MAX_AGE, request));
   response.headers.set('cache-control', 'no-store');
   return response;

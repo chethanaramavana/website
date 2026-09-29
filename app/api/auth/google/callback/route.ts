@@ -57,7 +57,10 @@ export async function GET(request: Request) {
 
     const session = await createGoogleSession({ sub: identity.sub, email: identity.email });
     const destination = new URL(storedState.returnTo, new URL(request.url).origin);
-    const response = Response.redirect(destination, 302);
+    const response = new Response(null, {
+      status: 302,
+      headers: { location: destination.toString() },
+    });
     response.headers.append('set-cookie', authCookie(SESSION_COOKIE, session, SESSION_MAX_AGE, request));
     response.headers.append('set-cookie', clearAuthCookie(OAUTH_STATE_COOKIE, request));
     response.headers.set('cache-control', 'no-store');
