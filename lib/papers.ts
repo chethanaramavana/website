@@ -3,6 +3,16 @@ import { grade6PaperDefinitions } from './grade6-papers';
 
 export type QuestionSource = string;
 
+export type QuestionVisual =
+  | 'triangular-dots'
+  | 'angle-pair'
+  | 'bar-graph'
+  | 'l-shape'
+  | 'fraction-strip'
+  | 'circle-radius'
+  | 'half-turn'
+  | 'integer-path';
+
 export type PaperDefinition = {
   id: string;
   chapter: string;
@@ -15,6 +25,7 @@ export type PaperDefinition = {
   focus: string;
   written: Record<number, string | string[]>;
   questionSources?: Record<number, QuestionSource>;
+  questionVisuals?: Partial<Record<number, QuestionVisual>>;
   caseStudy: string;
 };
 
@@ -108,11 +119,14 @@ export const paperDefinitionsById = Object.fromEntries(
   Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
 
+const questionVisualTypes = new Set<QuestionVisual>(['triangular-dots', 'angle-pair', 'bar-graph', 'l-shape', 'fraction-strip', 'circle-radius', 'half-turn', 'integer-path']);
+
 export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!value || typeof value !== 'object') return false;
   const paper = value as Partial<PaperDefinition>;
   if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== 14) return false;
   if (!Array.isArray(paper.assertions) || paper.assertions.length !== 2 || !paper.written) return false;
+  if (paper.questionVisuals && (typeof paper.questionVisuals !== 'object' || Object.entries(paper.questionVisuals).some(([number, visual]) => !Number.isInteger(Number(number)) || !questionVisualTypes.has(visual as QuestionVisual)))) return false;
   if (paper.mcqs.some((item) => !item || typeof item.question !== 'string' || item.question.length > 600 || !Array.isArray(item.options) || item.options.length !== 4 || item.options.some((option) => typeof option !== 'string' || option.length > 250))) return false;
   if (paper.assertions.some((item) => !item || typeof item.assertion !== 'string' || typeof item.reason !== 'string')) return false;
   return [17, 18, 19, 20, 21, 22, 23, 24].every((number) => typeof paper.written?.[number] === 'string' || Array.isArray(paper.written?.[number]));

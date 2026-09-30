@@ -1,4 +1,4 @@
-import { getPaperAssessment, scoreMcqs, writtenQuestionMarks } from '@/lib/assessment';
+import { getPaperAssessment, scoreMcqs } from '@/lib/assessment';
 import { getAttemptOwner, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
 
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
@@ -31,15 +31,6 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     }
 
     const answers = JSON.parse(submission.mcq_answers) as Record<string, number>;
-    if (Object.keys(answers).length !== Object.keys(answerKey).length) return jsonError('Please answer every MCQ.', 400);
-    const uploads = await db.prepare(`
-      SELECT question_number, COUNT(*) AS file_count FROM answer_uploads
-      WHERE submission_id = ? GROUP BY question_number
-    `).bind(id).all<{ question_number: number; file_count: number }>();
-    const uploadedQuestions = new Set(uploads.results.map((row) => row.question_number));
-    const missing = Object.keys(writtenQuestionMarks).map(Number).filter((question) => !uploadedQuestions.has(question));
-    if (missing.length) return jsonError(`Upload an answer for question${missing.length > 1 ? 's' : ''} ${missing.join(', ')}.`, 400);
-
     const score = scoreMcqs(answers, answerKey);
     await db.prepare(`
       UPDATE submissions SET status = 'submitted', mcq_score = ?, submitted_at = CURRENT_TIMESTAMP,

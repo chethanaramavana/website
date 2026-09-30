@@ -232,7 +232,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .completed-paper-card strong, .completed-paper-card small { display: block; }
 .completed-paper-card strong { color: var(--navy); font-size: .8rem; }
 .completed-paper-card small { margin-top: 4px; color: #64746e; font-size: .68rem; line-height: 1.4; }
-.completed-paper-card a { min-height: 39px; padding: 0 13px; display: inline-flex; align-items: center; border-radius: 9px; color: white; background: #28785f; font-size: .72rem; font-weight: 850; text-decoration: none; text-align: center; }
+.completed-paper-actions { display: flex; align-items: center; gap: 7px; }
+.completed-paper-actions a, .completed-paper-actions button { min-height: 39px; padding: 0 13px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9px; font-size: .72rem; font-weight: 850; text-align: center; white-space: nowrap; }
+.completed-paper-actions a { color: white; background: #28785f; text-decoration: none; }
+.completed-paper-actions button { border: 1px solid #76ad98; color: #21654f; background: white; cursor: pointer; }
+.completed-paper-actions button:hover { color: white; background: #28785f; }
 .razorpay-checkout-card { padding: 18px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 13px 16px; border: 1px solid #d7caef; border-radius: 16px; background: linear-gradient(135deg, #faf8ff, #f3effd); }
 .razorpay-checkout-card > div { grid-column: 1 / -1; display: grid; gap: 3px; }
 .razorpay-checkout-card > div span { color: #7c58b9; font-size: .62rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
@@ -431,6 +435,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .mcq-question legend { display: block; }
 .mcq-question legend > strong { margin-right: 5px; }
 .mcq-question legend > b { float: right; margin-left: 8px; }
+.question-visual { width: min(100%, 430px); margin: 13px 0 8px 22px; padding: 10px 14px 7px; border: 1px solid #d9e2e5; border-radius: 10px; background: #f8fbfc; }
+.question-visual svg { width: 100%; max-height: 185px; display: block; overflow: visible; }
+.question-visual svg path, .question-visual svg circle, .question-visual svg polygon, .question-visual svg rect { stroke: #173f5a; stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.question-visual svg circle:not([r="3"]) { fill: #6c4cb4; stroke: white; }
+.question-visual svg text { fill: #304d5c; font: 700 12px var(--font-geist-sans), Arial, sans-serif; }
+.question-visual svg .diagram-fill, .question-visual svg rect.diagram-fill { fill: #d9cef3; stroke: #5936a7; }
+.question-visual svg rect:not(.diagram-fill) { fill: white; }
+.question-visual svg rect.diagram-bar { fill: #3f9187; stroke: #21665f; }
+.question-visual svg .diagram-guide { stroke: #b36a28; stroke-width: 1.8; }
+.question-visual svg .diagram-turn, .question-visual svg .diagram-arrow { stroke: #c25b3f; stroke-width: 2; stroke-dasharray: 5 4; }
+.question-visual svg .diagram-arrow.second { stroke: #268478; }
 .option-grid { margin: 11px 0 0 22px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 18px; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .79rem; }
 .option-grid label { min-height: 34px; display: flex; align-items: center; cursor: pointer; }
 .option-grid input, .assertion-options input { position: absolute; opacity: 0; pointer-events: none; }
@@ -505,6 +520,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .submit-summary span, .submit-summary strong { padding: 12px; border-radius: 10px; text-align: center; font-size: .78rem; }
 .submit-summary span { color: #4f5668; background: #f5f3f8; }
 .submit-summary strong { grid-column: 1 / -1; color: #286d55; background: #eaf8f1; }
+.submit-warning-list { margin: 0; padding: 13px 15px; border: 1px solid #ecd49d; border-radius: 10px; color: #6b5422; background: #fff8e7; font-size: .76rem; line-height: 1.55; }
+.submit-warning-list strong, .submit-warning-list span { display: block; }
+.submit-warning-list span + span { margin-top: 4px; }
 .submission-success-icon { width: 58px; height: 58px; display: grid; place-items: center; border-radius: 50%; color: white; background: #2c8b67; box-shadow: 0 12px 25px rgba(44,139,103,.24); }
 .submission-success-icon svg { width: 29px; }
 .instant-score { padding: 18px; display: flex; align-items: center; justify-content: space-between; border-radius: 12px; color: #29315f; background: #f0edff; }
@@ -895,7 +913,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .razorpay-checkout-card { grid-template-columns: 1fr; align-items: stretch; }
   .razorpay-checkout-card > button { width: 100%; }
   .completed-paper-card { grid-template-columns: auto 1fr; }
-  .completed-paper-card a { grid-column: 1 / -1; justify-content: center; }
+  .completed-paper-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
   .revision-sheet-body { grid-template-columns: 1fr; padding: 12px; }
   .revision-checklist { grid-column: auto; }
   .revision-sheet summary { padding: 12px; }

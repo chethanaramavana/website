@@ -37,7 +37,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { paperDefinitions as sharedPaperDefinitions } from '@/lib/papers';
+import { paperDefinitions as sharedPaperDefinitions, type QuestionVisual } from '@/lib/papers';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -211,6 +211,7 @@ type PaperDefinition = {
   focus: string;
   written: Record<number, string | readonly string[]>;
   questionSources?: Record<number, string>;
+  questionVisuals?: Partial<Record<number, QuestionVisual>>;
   caseStudy: string;
 };
 
@@ -719,7 +720,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
                   : !studentRecords.signedIn
                     ? 'Sign in once to keep paid chapters, completed papers and marks available on every device.'
                     : completedSubmission
-                      ? 'Open your most recent completed paper, answers and teacher feedback.'
+                      ? 'Review your most recent paper or start another attempt without paying again.'
                       : 'Enter the student name, pay securely and the question paper will open automatically.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
             </DialogDescription>
@@ -736,7 +737,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
                 <div className="completed-paper-card">
                   <CheckCircle2 />
                   <span><strong>{completedSubmission.student_name || 'Completed paper'}</strong><small>Submitted {new Date(completedSubmission.submitted_at).toLocaleString()} · {completedSubmission.status === 'marked' ? 'Marks available' : 'Awaiting written-paper marking'}</small></span>
-                  <a href={`/student/results/${encodeURIComponent(completedSubmission.id)}`}>Open last completed paper</a>
+                  <div className="completed-paper-actions"><a href={`/student/results/${encodeURIComponent(completedSubmission.id)}`}>Open last paper</a><button type="button" onClick={() => { const chapterName = pendingChapter; setPendingChapter(null); if (chapterName) onOpenChapter(chapterName); }}>Retake free</button></div>
                 </div>
               ) : (
                 <>
@@ -812,6 +813,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
   const [uploadingQuestions, setUploadingQuestions] = useState<Record<number, boolean>>({});
   const [saveMessage, setSaveMessage] = useState('Your answers will save automatically.');
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [submissionGaps, setSubmissionGaps] = useState<{ mcqs: number[]; written: number[] }>({ mcqs: [], written: [] });
   const [exitAction, setExitAction] = useState<{ run: () => void } | null>(null);
   const [exitSaving, setExitSaving] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -1026,9 +1028,6 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
 
   function validateTest() {
     if (studentName.trim().length < 2) return 'Enter the student name at the top of the paper.';
-    if (Object.keys(answers).length !== 16) return `Answer all 16 MCQs. ${16 - Object.keys(answers).length} remaining.`;
-    const missingUploads = writtenQuestions.filter((question) => !(writtenFiles[question]?.length) && !(savedUploads[question]?.length));
-    if (missingUploads.length) return `Upload written answers for question${missingUploads.length > 1 ? 's' : ''} ${missingUploads.join(', ')}.`;
     const largeFile = Object.values(writtenFiles).flat().find((file) => file.size > 10 * 1024 * 1024);
     if (largeFile) return `${largeFile.name} is larger than 10 MB. Choose a smaller photo or PDF.`;
     return '';
@@ -1037,7 +1036,12 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
   function requestSubmission() {
     const error = validateTest();
     setSubmissionError(error);
-    if (!error) setConfirmOpen(true);
+    if (error) return;
+    setSubmissionGaps({
+      mcqs: Array.from({ length: 16 }, (_, index) => index + 1).filter((number) => answers[String(number)] === undefined),
+      written: writtenQuestions.filter((question) => !(writtenFiles[question]?.length) && !(savedUploads[question]?.length)),
+    });
+    setConfirmOpen(true);
   }
 
   async function submitTest() {
@@ -1118,6 +1122,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
             {currentPaper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
                 <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
+                {currentPaper.questionVisuals?.[item.number] && <QuestionDiagram kind={currentPaper.questionVisuals[item.number]!} />}
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
@@ -1194,10 +1199,11 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
                   const studentAnswer = answers[String(item.number)];
                   const correctAnswer = result.correctAnswers[String(item.number)];
                   const isCorrect = studentAnswer === correctAnswer;
+                  const studentAnswerText = studentAnswer === undefined ? 'Not answered' : `${String.fromCharCode(65 + studentAnswer)}. ${item.options[studentAnswer]}`;
                   return (
                     <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={item.number}>
                       <div><strong>Question {item.number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
-                      <p><span>Your answer</span><b>{String.fromCharCode(65 + studentAnswer)}. {item.options[studentAnswer]}</b></p>
+                      <p><span>Your answer</span><b>{studentAnswerText}</b></p>
                       <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {item.options[correctAnswer]}</b></p>
                     </div>
                   );
@@ -1206,10 +1212,11 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
                   const studentAnswer = answers[String(number)];
                   const correctAnswer = result.correctAnswers[String(number)];
                   const isCorrect = studentAnswer === correctAnswer;
+                  const studentAnswerText = studentAnswer === undefined ? 'Not answered' : `${String.fromCharCode(65 + studentAnswer)}. ${assertionReasonOptions[studentAnswer]}`;
                   return (
                     <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={number}>
                       <div><strong>Question {number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
-                      <p><span>Your answer</span><b>{String.fromCharCode(65 + studentAnswer)}. {assertionReasonOptions[studentAnswer]}</b></p>
+                      <p><span>Your answer</span><b>{studentAnswerText}</b></p>
                       <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}</b></p>
                     </div>
                   );
@@ -1232,9 +1239,10 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
 
       <Dialog open={confirmOpen} onOpenChange={setConfirmOpen}>
         <DialogContent className="submit-confirm-dialog">
-          <DialogHeader><span className="start-test-icon"><Send /></span><DialogTitle>Submit your completed test?</DialogTitle><DialogDescription>You will not be able to change this attempt after it is submitted.</DialogDescription></DialogHeader>
-          <div className="submit-summary"><span>16 MCQ answers</span><span>8 written answers</span><strong>40 marks</strong></div>
-          <DialogFooter><button className="test-later-button" type="button" onClick={() => setConfirmOpen(false)}>Check again</button><button className="test-start-button" type="button" onClick={() => void submitTest()}>Yes, submit test</button></DialogFooter>
+          <DialogHeader><span className="start-test-icon"><Send /></span><DialogTitle>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'Some questions are unanswered' : 'Submit your completed test?'}</DialogTitle><DialogDescription>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'You can go back and answer them, or submit anyway if you do not know the answers. Unanswered questions will receive no marks.' : 'You will not be able to change this attempt after it is submitted.'}</DialogDescription></DialogHeader>
+          <div className="submit-summary"><span>{16 - submissionGaps.mcqs.length}/16 MCQs answered</span><span>{8 - submissionGaps.written.length}/8 written answers uploaded</span><strong>40 marks</strong></div>
+          {(submissionGaps.mcqs.length > 0 || submissionGaps.written.length > 0) && <div className="submit-warning-list"><strong>Not answered</strong>{submissionGaps.mcqs.length > 0 && <span>MCQs: {submissionGaps.mcqs.join(', ')}</span>}{submissionGaps.written.length > 0 && <span>Written questions: {submissionGaps.written.join(', ')}</span>}</div>}
+          <DialogFooter><button className="test-later-button" type="button" onClick={() => setConfirmOpen(false)}>Go back to paper</button><button className="test-start-button" type="button" onClick={() => void submitTest()}>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'Submit anyway' : 'Yes, submit test'}</button></DialogFooter>
         </DialogContent>
       </Dialog>
 
@@ -1268,6 +1276,32 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
 
 function QuestionContent({ value }: { value: string | readonly string[] }) {
   return Array.isArray(value) ? <>{value.map((line) => <span key={line}>{line}</span>)}</> : <>{value}</>;
+}
+
+function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
+  if (kind === 'triangular-dots') {
+    const dots = [[120, 24], [103, 49], [137, 49], [86, 74], [120, 74], [154, 74], [69, 99], [103, 99], [137, 99], [171, 99]];
+    return <figure className="question-visual"><svg viewBox="0 0 240 125" role="img" aria-label="Figure 4 triangular dot pattern with four rows and ten dots">{dots.map(([cx, cy], index) => <circle key={index} cx={cx} cy={cy} r="7" />)}<text x="120" y="120" textAnchor="middle">Figure 4</text></svg></figure>;
+  }
+  if (kind === 'angle-pair') {
+    return <figure className="question-visual"><svg viewBox="0 0 240 145" role="img" aria-label="Right angle AOC split by ray OB, with angle AOB equal to 37 degrees"><path d="M45 120 L45 24 M45 120 L198 120 M45 120 L142 50" /><path className="diagram-guide" d="M45 98 L67 98 L67 120" /><text x="34" y="22">A</text><text x="145" y="48">B</text><text x="202" y="125">C</text><text x="30" y="136">O</text><text x="63" y="82">37°</text><text x="112" y="111">?</text></svg></figure>;
+  }
+  if (kind === 'bar-graph') {
+    return <figure className="question-visual"><svg viewBox="0 0 260 155" role="img" aria-label="Bar graph with values A 4, B 7, C 5 and D 6"><path d="M35 15 V125 H240" />{[4,7,5,6].map((value, index) => <g key={index}><rect className="diagram-bar" x={55 + index * 44} y={125 - value * 14} width="24" height={value * 14} /><text x={67 + index * 44} y={142} textAnchor="middle">{String.fromCharCode(65 + index)}</text><text x={67 + index * 44} y={119 - value * 14} textAnchor="middle">{value}</text></g>)}</svg></figure>;
+  }
+  if (kind === 'l-shape') {
+    return <figure className="question-visual"><svg viewBox="0 0 260 165" role="img" aria-label="Ten by eight centimetre rectangle with a four by three centimetre corner removed"><path className="diagram-fill" d="M35 25 H225 V85 H149 V145 H35 Z" /><path d="M35 25 H225 V85 H149 V145 H35 Z" /><text x="130" y="18" textAnchor="middle">10 cm</text><text x="21" y="88" textAnchor="middle" transform="rotate(-90 21 88)">8 cm</text><text x="187" y="105" textAnchor="middle">4 cm</text><text x="157" y="119" transform="rotate(-90 157 119)">3 cm</text></svg></figure>;
+  }
+  if (kind === 'fraction-strip') {
+    return <figure className="question-visual"><svg viewBox="0 0 260 105" role="img" aria-label="Fraction strip divided into four equal parts with three parts shaded">{[0,1,2,3].map((index) => <rect key={index} className={index < 3 ? 'diagram-fill' : ''} x={30 + index * 50} y="25" width="50" height="42" />)}<text x="130" y="91" textAnchor="middle">3/4 shaded</text></svg></figure>;
+  }
+  if (kind === 'circle-radius') {
+    return <figure className="question-visual"><svg viewBox="0 0 260 155" role="img" aria-label="Circle with horizontal diameter AB of ten centimetres and radius OP"><circle cx="130" cy="76" r="58" /><path d="M72 76 H188 M130 76 L156 24" /><circle cx="130" cy="76" r="3" /><text x="60" y="81">A</text><text x="193" y="81">B</text><text x="122" y="92">O</text><text x="158" y="21">P</text><text x="130" y="70" textAnchor="middle">10 cm</text></svg></figure>;
+  }
+  if (kind === 'half-turn') {
+    return <figure className="question-visual"><svg viewBox="0 0 150 125" role="img" aria-label="Block letter Z shape with half-turn rotational symmetry"><polygon className="diagram-fill" points="20,18 130,18 130,42 65,83 130,83 130,107 20,107 20,83 85,42 20,42" /><path className="diagram-turn" d="M40 66 A42 42 0 0 1 109 40" /><text x="75" y="122" textAnchor="middle">turn about the centre</text></svg></figure>;
+  }
+  return <figure className="question-visual"><svg viewBox="0 0 300 125" role="img" aria-label="Number line showing a move from minus three to two, then back to minus two"><path d="M25 75 H275" />{Array.from({ length: 10 }, (_, index) => index - 5).map((number, index) => <g key={number}><path d={`M${35 + index * 25} 68 V82`} /><text x={35 + index * 25} y="101" textAnchor="middle">{number}</text></g>)}<path className="diagram-arrow first" d="M85 55 Q148 10 210 55" /><path className="diagram-arrow second" d="M210 42 Q160 5 110 42" /><text x="148" y="19" textAnchor="middle">+5</text><text x="160" y="39" textAnchor="middle">−4</text></svg></figure>;
 }
 
 function PaperSection({ title, subtitle, marks, children }: { title: string; subtitle: string; marks: string; children: ReactNode }) {
