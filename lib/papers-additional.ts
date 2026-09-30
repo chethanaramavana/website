@@ -36,6 +36,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       24: ['A rectangular garden has length (x + 3) m and breadth (x − 1) m. Its area is represented by p(x).', '(a) Write p(x). [1]', '(b) Find p(7). [1]', '(c) If the area is 45 m², find the positive value of x. [2]'],
     },
     questionSources: { 20: source, 23: source },
+    questionVisuals: { 9: 'parabola-roots' },
     caseStudy: 'A rectangular garden has length (x + 3) metres and breadth (x − 1) metres. Its area is represented by a polynomial p(x).',
   },
   'Pair of Linear Equations in Two Variables': {
@@ -69,7 +70,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'Five years ago, a mother was seven times as old as her daughter. Five years later, she will be three times as old. Find their present ages.',
       23: ['A fraction becomes 1/3 when 1 is subtracted from its numerator and becomes 1/2 when 1 is added to its denominator.', '(a) Form two linear equations. (b) Find the fraction.'],
       24: ['At a school fair, 2 adult tickets and 3 student tickets cost ₹390, while 3 adult tickets and 2 student tickets cost ₹410.', '(a) Form the equations. [1]', '(b) Find each ticket price. [2]', '(c) Find the cost of 4 adult and 5 student tickets. [1]'],
-    }, caseStudy: 'A school fair sells adult and student tickets. Two adult tickets and three student tickets cost ₹390; three adult tickets and two student tickets cost ₹410.',
+    }, questionVisuals: { 4: 'intersecting-lines' }, caseStudy: 'A school fair sells adult and student tickets. Two adult tickets and three student tickets cost ₹390; three adult tickets and two student tickets cost ₹410.',
   },
   'Quadratic Equations': {
     id: 'quadratic-equations-01', chapter: 'Quadratic Equations', chapterNumber: 4, paperNumber: '01', focus: 'Identify, solve and interpret quadratic equations using factorisation and the quadratic formula.',
@@ -99,7 +100,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'A train travels 360 km at a uniform speed. If the speed were 5 km/h more, the journey would take 1 hour less. Find the original speed.',
       23: ['The area of a rectangular field is 528 m². Its length is 1 m more than twice its breadth.', '(a) Form the quadratic equation. (b) Find its dimensions.'],
       24: ['A ball is thrown upward and its height after t seconds is h = 20t − 5t².', '(a) Find the height after 1 second. [1]', '(b) When is the height 15 m? [2]', '(c) When does the ball return to the ground? [1]'],
-    }, caseStudy: 'A ball is thrown vertically upward. Its height h metres after t seconds is modelled by h = 20t − 5t².',
+    }, questionVisuals: { 4: 'parabola-roots' }, caseStudy: 'A ball is thrown vertically upward. Its height h metres after t seconds is modelled by h = 20t − 5t².',
   },
   'Arithmetic Progressions': {
     id: 'arithmetic-progressions-01', chapter: 'Arithmetic Progressions', chapterNumber: 5, paperNumber: '01', focus: 'Recognise APs and use nth-term and sum formulae in direct and contextual problems.',
@@ -160,7 +161,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'In a right triangle, the altitude from the right angle divides the hypotenuse into segments of 9 cm and 16 cm. Find the altitude.',
       23: ['In ΔABC, D and E lie on AB and AC with DE ∥ BC. AD = 4 cm, DB = 6 cm and AC = 15 cm.', '(a) Prove ΔADE ~ ΔABC. (b) Find AE and DE/BC.'],
       24: ['A 1.5 m pole casts a 2 m shadow while a tree casts a 12 m shadow at the same time.', '(a) Why are the triangles similar? [1]', '(b) Write the proportional relation. [1]', '(c) Find the height of the tree. [2]'],
-    }, caseStudy: 'At the same instant, a 1.5 m pole casts a 2 m shadow and a nearby tree casts a 12 m shadow on level ground.',
+    }, questionVisuals: { 7: 'similar-triangles' }, caseStudy: 'At the same instant, a 1.5 m pole casts a 2 m shadow and a nearby tree casts a 12 m shadow on level ground.',
   },
   'Coordinate Geometry': {
     id: 'coordinate-geometry-01', chapter: 'Coordinate Geometry', chapterNumber: 7, paperNumber: '01', focus: 'Use distance, section and midpoint formulae and determine areas from coordinates.',
@@ -190,7 +191,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'Find the value of k if (3, k), (5, 4) and (7, 6) are collinear.',
       23: ['A(−4, 0), B(4, 0) and C(0, 6) form a triangle.', '(a) Find AB, BC and CA. (b) Name the triangle. (c) Find its area.'],
       24: ['Three metro stations are A(0,0), B(6,0) and C(6,8), with coordinates measured in kilometres.', '(a) Find AB. [1]', '(b) Find BC. [1]', '(c) Find the direct distance AC and the distance saved by travelling directly. [2]'],
-    }, caseStudy: 'On a city map, three metro stations have coordinates A(0, 0), B(6, 0) and C(6, 8), measured in kilometres.',
+    }, questionVisuals: { 14: 'coordinate-line' }, caseStudy: 'On a city map, three metro stations have coordinates A(0, 0), B(6, 0) and C(6, 8), measured in kilometres.',
   },
   'Introduction to Trigonometry': {
     id: 'introduction-trigonometry-01', chapter: 'Introduction to Trigonometry', chapterNumber: 8, paperNumber: '01', focus: 'Use trigonometric ratios, standard values, complementary angles and identities.',
@@ -217,10 +218,10 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
     written: {
       17: 'If sin A = 5/13, find cos A and tan A.', 18: 'Evaluate: 2 sin 30° cos 60° + tan 45°.', 19: 'Prove that (1 − sin²A)/cos²A = 1.',
       20: 'If tan A = 3/4, evaluate (sin A + cos A)/(sin A − cos A).', 21: 'Prove that (sec A − tan A)(sec A + tan A) = 1.',
-      22: 'If sin(A + B) = 1 and cos(A − B) = √3/2, where A and B are acute, find A and B.',
+      22: 'If sin(A + B) = 1 and cos(A − B) = √3/2, where A and B are acute and A > B, find A and B.',
       23: ['Prove: (1 + tan²A)/(1 + cot²A) = tan²A.', 'Hence evaluate the expression for A = 45°.'],
       24: ['A right-triangular ramp has base 12 m and height 5 m.', '(a) Find the hypotenuse. [1]', '(b) Find sin θ and cos θ for the angle θ at the lower end. [2]', '(c) Verify sin²θ + cos²θ = 1. [1]'],
-    }, caseStudy: 'A right-triangular accessibility ramp has a horizontal base of 12 m and a vertical height of 5 m. Let θ be the angle the ramp makes with the ground.',
+    }, questionVisuals: { 6: 'right-triangle' }, caseStudy: 'A right-triangular accessibility ramp has a horizontal base of 12 m and a vertical height of 5 m. Let θ be the angle the ramp makes with the ground.',
   },
   Circles: {
     id: 'circles-01', chapter: 'Circles', chapterNumber: 10, paperNumber: '01', focus: 'Apply tangent theorems and properties of radii, chords and external points.',
@@ -252,7 +253,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'Two concentric circles have radii 5 cm and 13 cm. Find the length of a chord of the larger circle tangent to the smaller circle.',
       23: ['From P, tangents PA and PB touch a circle with centre O. OP = 10 cm and radius = 6 cm.', '(a) Find PA. (b) Prove OP bisects ∠APB.'],
       24: ['A circular park has centre O. From an external point P, two paths PA and PB touch the park at A and B. OP = 25 m and radius = 7 m.', '(a) State ∠OAP. [1]', '(b) Find PA. [2]', '(c) Compare PA and PB. [1]'],
-    }, caseStudy: 'A circular park has centre O and radius 7 m. From an external point P, 25 m from O, two straight paths PA and PB touch the park.',
+    }, questionVisuals: { 10: 'circle-tangents' }, caseStudy: 'A circular park has centre O and radius 7 m. From an external point P, 25 m from O, two straight paths PA and PB touch the park.',
   },
   'Areas Related to Circles': {
     id: 'areas-circles-01', chapter: 'Areas Related to Circles', chapterNumber: 11, paperNumber: '01', focus: 'Calculate circumference, sector, arc and segment measures in combined figures.',
@@ -283,7 +284,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'A circular garden of radius 14 m is surrounded by a 3.5 m wide path. Find the area of the path.',
       23: ['A square of side 14 cm contains four quadrants of radius 7 cm, one at each corner.', '(a) Find the total area of the quadrants. (b) Find the unshaded area inside the square.'],
       24: ['A sprinkler waters a sector of radius 21 m through an angle of 120°.', '(a) Find the arc length. [2]', '(b) Find the watered area. [2]'],
-    }, caseStudy: 'A rotating sprinkler waters a sector of a circular lawn. Its range is 21 m and it turns through an angle of 120°.',
+    }, questionVisuals: { 3: 'circle-sector' }, caseStudy: 'A rotating sprinkler waters a sector of a circular lawn. Its range is 21 m and it turns through an angle of 120°.',
   },
   'Surface Areas and Volumes': {
     id: 'surface-areas-volumes-01', chapter: 'Surface Areas and Volumes', chapterNumber: 12, paperNumber: '01', focus: 'Use surface-area and volume formulae for cylinders, cones, spheres and combinations.',
@@ -314,7 +315,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'A cylindrical tank of radius 1.4 m and height 3 m is filled with water. Find its capacity in litres.',
       23: ['A toy is in the form of a cone mounted on a hemisphere. The common radius is 7 cm and cone height is 24 cm.', '(a) Find the slant height. (b) Find the exposed surface area.'],
       24: ['A cylindrical glass has internal radius 3.5 cm and height 12 cm.', '(a) Find its capacity. [2]', '(b) How many full glasses fill a 4.62 litre container? [2]'],
-    }, caseStudy: 'A cylindrical drinking glass has internal radius 3.5 cm and height 12 cm. A water container holds 4.62 litres.',
+    }, questionVisuals: { 10: 'solid-comparison' }, caseStudy: 'A cylindrical drinking glass has internal radius 3.5 cm and height 12 cm. A water container holds 4.62 litres.',
   },
   Statistics: {
     id: 'statistics-01', chapter: 'Statistics', chapterNumber: 13, paperNumber: '01', focus: 'Calculate mean, median and mode of grouped data and interpret cumulative frequencies.',
@@ -345,7 +346,7 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'Find the mode for classes 10–20, 20–30, 30–40, 40–50 with frequencies 4, 9, 15, 7.',
       23: ['The marks of 40 students are grouped as 0–10: 5, 10–20: 8, 20–30: 15, 30–40: 8, 40–50: 4.', '(a) Find cumulative frequencies. (b) Find the median.'],
       24: ['Daily study time of students is grouped as 0–1 h: 4, 1–2 h: 8, 2–3 h: 12, 3–4 h: 6.', '(a) Total students. [1]', '(b) Modal class. [1]', '(c) Mean study time using class marks. [2]'],
-    }, caseStudy: 'A teacher records daily study time: 0–1 hour: 4 students, 1–2: 8, 2–3: 12 and 3–4: 6.',
+    }, questionVisuals: { 13: 'ogive' }, caseStudy: 'A teacher records daily study time: 0–1 hour: 4 students, 1–2: 8, 2–3: 12 and 3–4: 6.',
   },
   Probability: {
     id: 'probability-01', chapter: 'Probability', chapterNumber: 14, paperNumber: '01', focus: 'Use equally likely outcomes, complements and simple experiments with coins, dice and cards.',
@@ -376,6 +377,6 @@ export const additionalPaperDefinitions: Record<string, PaperDefinition> = {
       22: 'Two dice are thrown. Find the probability that the sum is 8.',
       23: ['Cards numbered 1 to 30 are mixed and one card is drawn.', '(a) Find P(multiple of 3). (b) Find P(prime number). (c) Find P(neither).'],
       24: ['A game wheel has 12 equal sectors numbered 1 to 12.', '(a) P(even number). [1]', '(b) P(multiple of 3). [1]', '(c) P(prime or multiple of 4). [2]'],
-    }, caseStudy: 'A game wheel is divided into 12 equal sectors numbered 1 to 12. A fair spin stops on one sector.',
+    }, questionVisuals: { 8: 'coin-outcomes' }, caseStudy: 'A game wheel is divided into 12 equal sectors numbered 1 to 12. A fair spin stops on one sector.',
   },
 };

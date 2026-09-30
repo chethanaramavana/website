@@ -11,7 +11,18 @@ export type QuestionVisual =
   | 'fraction-strip'
   | 'circle-radius'
   | 'half-turn'
-  | 'integer-path';
+  | 'integer-path'
+  | 'intersecting-lines'
+  | 'parabola-roots'
+  | 'similar-triangles'
+  | 'coordinate-line'
+  | 'right-triangle'
+  | 'tower-angle'
+  | 'circle-tangents'
+  | 'circle-sector'
+  | 'solid-comparison'
+  | 'ogive'
+  | 'coin-outcomes';
 
 export type PaperDefinition = {
   id: string;
@@ -106,6 +117,7 @@ const basePaperDefinitions: Record<string, PaperDefinition> = {
       24: ['(a) Name the trigonometric ratio that relates height and horizontal distance. [1]', '(b) If the original distance is x metres, write the two equations for the observations. [1]', '(c) Find the original distance from the tower and the height of the tower. [2]'],
     },
     caseStudy: 'A surveyor observes the top of a tower at an angle of elevation of 45°. After walking 40 m directly towards the tower, the angle becomes 60°. The surveyor’s eye level is taken at ground level for this calculation.',
+    questionVisuals: { 2: 'tower-angle' },
   },
 };
 
@@ -119,7 +131,11 @@ export const paperDefinitionsById = Object.fromEntries(
   Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
 
-const questionVisualTypes = new Set<QuestionVisual>(['triangular-dots', 'angle-pair', 'bar-graph', 'l-shape', 'fraction-strip', 'circle-radius', 'half-turn', 'integer-path']);
+const questionVisualTypes = new Set<QuestionVisual>([
+  'triangular-dots', 'angle-pair', 'bar-graph', 'l-shape', 'fraction-strip', 'circle-radius', 'half-turn', 'integer-path',
+  'intersecting-lines', 'parabola-roots', 'similar-triangles', 'coordinate-line', 'right-triangle', 'tower-angle',
+  'circle-tangents', 'circle-sector', 'solid-comparison', 'ogive', 'coin-outcomes',
+]);
 
 export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!value || typeof value !== 'object') return false;

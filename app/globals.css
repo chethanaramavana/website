@@ -399,7 +399,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 
 .question-paper { padding: clamp(28px, 6vw, 66px); border: 1px solid #d4d8d9; border-radius: 4px; color: #17262d; background: #fff; box-shadow: 0 22px 60px rgba(20,46,61,.12); font-family: Georgia, 'Times New Roman', serif; }
 .paper-heading { text-align: center; }
-.paper-heading > img { width: min(370px, 74%); height: 124px; margin: -20px auto -7px; display: block; object-fit: cover; object-position: 50% 50%; mix-blend-mode: multiply; }
+.paper-heading > img { width: min(315px, 68%); height: auto; margin: -22px auto -4px; display: block; object-fit: contain; }
 .paper-kicker { margin-top: 5px; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #884023; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .67rem; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
 .paper-heading > p { margin: 22px 0 4px; color: #324c5c; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .paper-heading h1 { margin: 0; color: var(--navy); font: 600 clamp(1.8rem, 5vw, 2.75rem)/1.12 Georgia, serif; letter-spacing: -.025em; }
@@ -445,6 +445,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .question-visual svg rect.diagram-bar { fill: #3f9187; stroke: #21665f; }
 .question-visual svg .diagram-guide { stroke: #b36a28; stroke-width: 1.8; }
 .question-visual svg .diagram-turn, .question-visual svg .diagram-arrow { stroke: #c25b3f; stroke-width: 2; stroke-dasharray: 5 4; }
+.question-visual svg .diagram-curve { stroke: #6c4cb4; stroke-width: 3; }
 .question-visual svg .diagram-arrow.second { stroke: #268478; }
 .option-grid { margin: 11px 0 0 22px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 18px; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: .79rem; }
 .option-grid label { min-height: 34px; display: flex; align-items: center; cursor: pointer; }
@@ -931,7 +932,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .paper-toolbar-actions .print-button { width: 38px; padding: 0; justify-content: center; }
   .paper-toolbar-actions .print-button { font-size: 0; }
   .question-paper { padding: 24px 18px 36px; border-right: 0; border-left: 0; box-shadow: 0 12px 35px rgba(20,46,61,.09); }
-  .paper-heading > img { width: 92%; height: 90px; margin-top: -12px; }
+  .paper-heading > img { width: min(78%, 285px); height: auto; margin-top: -14px; }
   .paper-heading > p { margin-top: 17px; font-size: .68rem; }
   .paper-meta { font-size: .7rem; }
   .student-fields { grid-template-columns: 1fr; gap: 10px; }
@@ -1034,7 +1035,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .site-shell:before, .site-header, .site-footer, .paper-toolbar, .answer-upload-row, .draft-save-bar, .test-submit-panel, .answer-review { display: none !important; }
   .paper-page { width: 100%; min-height: auto; padding: 0; }
   .question-paper { padding: 0; border: 0; box-shadow: none; }
-  .paper-heading > img { height: 90px; margin-top: -15px; }
+  .paper-heading > img { width: 68mm; height: auto; margin-top: -8mm; }
   .paper-question, .case-study, .paper-instructions { break-inside: avoid; }
   .exam-section > header { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .option-grid label > span { min-height: 30px; }

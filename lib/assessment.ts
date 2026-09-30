@@ -62,7 +62,7 @@ const basePaperAssessments: Record<string, PaperAssessmentSource> = {
   'real-numbers-01': {
     title: 'Real Numbers · Paper 01',
     mcqAnswerKey: {
-      1: 0, 2: 3, 3: 2, 4: 2, 5: 2, 6: 1, 7: 2, 8: 1,
+      1: 0, 2: 3, 3: 2, 4: 2, 5: 0, 6: 1, 7: 2, 8: 1,
       9: 1, 10: 2, 11: 1, 12: 2, 13: 0, 14: 0, 15: 0, 16: 2,
     },
     writtenSolutions: {

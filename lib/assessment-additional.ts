@@ -17,7 +17,7 @@ export const additionalPaperAssessments: Record<string, PaperAssessment> = {
   },
   'linear-equations-01': {
     title:'Pair of Linear Equations in Two Variables · Paper 01',
-    mcqAnswerKey:{1:1,2:2,3:1,4:1,5:1,6:0,7:3,8:1,9:2,10:2,11:0,12:1,13:1,14:1,15:0,16:3},
+    mcqAnswerKey:{1:1,2:2,3:1,4:1,5:1,6:1,7:3,8:1,9:2,10:2,11:0,12:1,13:1,14:1,15:0,16:3},
     writtenSolutions:{
       17:'From x−y=2, y=x−2. Substitution in 2x+y=7 gives 3x=9, so x=3 and y=1.',
       18:'3/6 = 2/4 but 5/9 is different. The lines are parallel and distinct, so the pair is inconsistent and has no solution.',
@@ -76,7 +76,7 @@ export const additionalPaperAssessments: Record<string, PaperAssessment> = {
       19:'Using the section formula for ratio 1:2 gives ((1·8+2·2)/3,(1·9+2·(−3))/3)=(4,1).',
       20:'Each successive displacement is (4,−4); alternatively the triangle area is zero. Hence the points are collinear.',
       21:'The base on the x-axis is from −1 to 4, length 5; height is 3. Area=1/2×5×3=15/2 square units.',
-      22:'Area zero: 3(4−6)+5(6−k)+7(k−4)=0 gives 2k−8=0, so k=4.',
+      22:'Area zero: 3(4−6)+5(6−k)+7(k−4)=0 gives 2k−4=0, so k=2. Equivalently, the line through (5,4) and (7,6) is y=x−1, which gives y=2 when x=3.',
       23:'AB=8, AC=BC=√52=2√13, so the triangle is isosceles. Area=1/2×8×6=24 square units.',
       24:'AB=6 km, BC=8 km and AC=√(6²+8²)=10 km. Direct travel saves (6+8)−10=4 km.',
     },

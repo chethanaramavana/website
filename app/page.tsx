@@ -19,7 +19,6 @@ import {
   LockKeyhole,
   Loader2,
   Mail,
-  Printer,
   Save,
   Send,
   ShieldCheck,
@@ -1084,13 +1083,12 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
         <Breadcrumb items={['CBSE', `Grade ${currentPaper.grade ?? 10}`, currentPaper.chapter]} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
           <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
-          <button className="print-button" type="button" onClick={() => window.print()}><Printer /> Print paper</button>
         </div>
       </div>
 
       <article className="question-paper">
         <header className="paper-heading">
-          <img src="/ramavana-logo.png" alt="Ramavana Mathematical Center" />
+          <img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Center" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>CBSE Mathematics{(currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
@@ -1301,7 +1299,40 @@ function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
   if (kind === 'half-turn') {
     return <figure className="question-visual"><svg viewBox="0 0 150 125" role="img" aria-label="Block letter Z shape with half-turn rotational symmetry"><polygon className="diagram-fill" points="20,18 130,18 130,42 65,83 130,83 130,107 20,107 20,83 85,42 20,42" /><path className="diagram-turn" d="M40 66 A42 42 0 0 1 109 40" /><text x="75" y="122" textAnchor="middle">turn about the centre</text></svg></figure>;
   }
-  return <figure className="question-visual"><svg viewBox="0 0 300 125" role="img" aria-label="Number line showing a move from minus three to two, then back to minus two"><path d="M25 75 H275" />{Array.from({ length: 10 }, (_, index) => index - 5).map((number, index) => <g key={number}><path d={`M${35 + index * 25} 68 V82`} /><text x={35 + index * 25} y="101" textAnchor="middle">{number}</text></g>)}<path className="diagram-arrow first" d="M85 55 Q148 10 210 55" /><path className="diagram-arrow second" d="M210 42 Q160 5 110 42" /><text x="148" y="19" textAnchor="middle">+5</text><text x="160" y="39" textAnchor="middle">−4</text></svg></figure>;
+  if (kind === 'integer-path') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 125" role="img" aria-label="Number line showing a move from minus three to two, then back to minus two"><path d="M25 75 H275" />{Array.from({ length: 10 }, (_, index) => index - 5).map((number, index) => <g key={number}><path d={`M${35 + index * 25} 68 V82`} /><text x={35 + index * 25} y="101" textAnchor="middle">{number}</text></g>)}<path className="diagram-arrow first" d="M85 55 Q148 10 210 55" /><path className="diagram-arrow second" d="M210 42 Q160 5 110 42" /><text x="148" y="19" textAnchor="middle">+5</text><text x="160" y="39" textAnchor="middle">−4</text></svg></figure>;
+  }
+  if (kind === 'intersecting-lines') {
+    return <figure className="question-visual"><svg viewBox="0 0 280 150" role="img" aria-label="Two straight lines intersect at one point"><path d="M34 125 L238 28 M48 22 L246 130" /><circle cx="143" cy="73" r="3" /><text x="151" y="68">one solution</text><text x="25" y="136">l₁</text><text x="250" y="139">l₂</text></svg></figure>;
+  }
+  if (kind === 'parabola-roots') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 170" role="img" aria-label="A parabola crossing the x-axis at two distinct points"><path d="M26 112 H276 M150 18 V148" /><path className="diagram-curve" d="M58 28 Q150 212 242 28" /><circle cx="102" cy="112" r="3" /><circle cx="198" cy="112" r="3" /><text x="95" y="132">α</text><text x="202" y="132">β</text><text x="255" y="105">x</text><text x="157" y="28">y</text></svg></figure>;
+  }
+  if (kind === 'similar-triangles') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 180" role="img" aria-label="Triangle ABC with DE parallel to BC"><path d="M150 18 L45 154 H255 Z M109 72 H191" /><text x="148" y="14">A</text><text x="31" y="165">B</text><text x="260" y="165">C</text><text x="96" y="70">D</text><text x="194" y="70">E</text><text x="122" y="63">∥</text></svg></figure>;
+  }
+  if (kind === 'coordinate-line') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 180" role="img" aria-label="Coordinate plane showing the collinear points one two, two four and three six"><path d="M24 150 H276 M64 166 V18" /><path className="diagram-guide" d="M95 125 L126 100 L157 75" /><circle cx="95" cy="125" r="3" /><circle cx="126" cy="100" r="3" /><circle cx="157" cy="75" r="3" /><text x="82" y="140">(1,2)</text><text x="130" y="96">(2,4)</text><text x="161" y="70">(3,6)</text></svg></figure>;
+  }
+  if (kind === 'right-triangle') {
+    return <figure className="question-visual"><svg viewBox="0 0 280 170" role="img" aria-label="Right triangle with sides three, four and five and angle theta"><path d="M42 140 H236 L42 30 Z" /><path className="diagram-guide" d="M42 120 H62 V140" /><path className="diagram-guide" d="M197 140 A39 39 0 0 0 205 116" /><text x="28" y="86">3</text><text x="135" y="157">4</text><text x="143" y="77">5</text><text x="199" y="133">θ</text></svg></figure>;
+  }
+  if (kind === 'tower-angle') {
+    return <figure className="question-visual"><svg viewBox="0 0 310 175" role="img" aria-label="Thirty metre horizontal distance to a vertical tower with a forty-five degree line of sight"><path d="M32 145 H278 M235 145 V28 M32 145 L235 28" /><path className="diagram-guide" d="M215 145 V125 H235" /><path className="diagram-guide" d="M70 145 A38 38 0 0 0 65 126" /><text x="105" y="162">30 m</text><text x="43" y="136">45°</text><text x="242" y="86">h</text></svg></figure>;
+  }
+  if (kind === 'circle-tangents') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 180" role="img" aria-label="Two tangents from external point P touch a circle at A and B"><circle cx="110" cy="90" r="58" /><path d="M110 90 L148 46 M110 90 L148 134 M148 46 L264 90 L148 134 M110 90 L264 90" /><circle cx="110" cy="90" r="3" /><text x="97" y="105">O</text><text x="145" y="40">A</text><text x="145" y="150">B</text><text x="269" y="95">P</text><text x="198" y="87">60°</text></svg></figure>;
+  }
+  if (kind === 'circle-sector') {
+    return <figure className="question-visual"><svg viewBox="0 0 250 180" role="img" aria-label="A ninety degree sector, one quarter of a circle"><path className="diagram-fill" d="M55 145 A90 90 0 0 1 145 55 L145 145 Z" /><path d="M55 145 A90 90 0 0 1 145 55 L145 145 Z" /><path className="diagram-guide" d="M126 145 A19 19 0 0 1 145 126" /><circle cx="145" cy="145" r="3" /><text x="112" y="124">90°</text><text x="151" y="160">O</text></svg></figure>;
+  }
+  if (kind === 'solid-comparison') {
+    return <figure className="question-visual"><svg viewBox="0 0 320 185" role="img" aria-label="A cylinder and cone with equal base radius and height"><ellipse cx="85" cy="35" rx="45" ry="13" /><path d="M40 35 V145 M130 35 V145" /><ellipse cx="85" cy="145" rx="45" ry="13" /><ellipse cx="235" cy="145" rx="45" ry="13" /><path d="M190 145 L235 35 L280 145 M235 35 V145" /><text x="85" y="177" textAnchor="middle">cylinder</text><text x="235" y="177" textAnchor="middle">cone</text><text x="140" y="92">h</text><text x="242" y="92">h</text></svg></figure>;
+  }
+  if (kind === 'ogive') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 175" role="img" aria-label="Cumulative frequency curve rising across class boundaries"><path d="M35 18 V145 H275" /><path className="diagram-curve" d="M45 136 C86 130 90 112 126 105 S174 74 202 57 S237 31 265 24" /><circle cx="83" cy="124" r="3" /><circle cx="126" cy="105" r="3" /><circle cx="173" cy="78" r="3" /><circle cx="222" cy="44" r="3" /><text x="148" y="166" textAnchor="middle">upper class boundary</text><text x="13" y="90" transform="rotate(-90 13 90)">cumulative frequency</text></svg></figure>;
+  }
+  return <figure className="question-visual"><svg viewBox="0 0 300 180" role="img" aria-label="Outcome tree for tossing two coins, showing HH, HT, TH and TT"><path d="M40 90 L115 45 M40 90 L115 135 M115 45 L220 22 M115 45 L220 68 M115 135 L220 112 M115 135 L220 158" /><text x="28" y="95">start</text><text x="78" y="57">H</text><text x="78" y="128">T</text><text x="152" y="29">H</text><text x="152" y="65">T</text><text x="152" y="116">H</text><text x="152" y="153">T</text><text x="229" y="27">HH</text><text x="229" y="73">HT</text><text x="229" y="117">TH</text><text x="229" y="163">TT</text></svg></figure>;
 }
 
 function PaperSection({ title, subtitle, marks, children }: { title: string; subtitle: string; marks: string; children: ReactNode }) {
