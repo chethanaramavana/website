@@ -34,7 +34,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><a href="/">Open chapter</a></article> : null;
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><a href={`/?paper=${encodeURIComponent(paper.id)}`}>Open chapter</a></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">

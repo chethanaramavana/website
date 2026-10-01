@@ -36,7 +36,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { paperDefinitions as sharedPaperDefinitions, type QuestionVisual } from '@/lib/papers';
+import { paperDefinitions as sharedPaperDefinitions, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -268,6 +268,7 @@ export default function HomePage() {
   const [grade, setGrade] = useState<number | null>(null);
   const [chapter, setChapter] = useState<string | null>(null);
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
+  const [requestedPaperId, setRequestedPaperId] = useState<string | null>(null);
 
   const loadStudentRecords = useCallback(async () => {
     try {
@@ -281,13 +282,41 @@ export default function HomePage() {
 
   useEffect(() => { void loadStudentRecords(); }, [loadStudentRecords]);
 
+  useEffect(() => {
+    setRequestedPaperId(new URLSearchParams(window.location.search).get('paper'));
+  }, []);
+
+  useEffect(() => {
+    if (!requestedPaperId || studentRecords === null) return;
+
+    const requestedPaper = paperDefinitionsById[requestedPaperId];
+    const hasAccess = studentRecords.access.includes(requestedPaperId)
+      || studentRecords.submissions.some((submission) => submission.paper_id === requestedPaperId);
+
+    if (requestedPaper && studentRecords.signedIn && hasAccess) {
+      setBoard('CBSE');
+      setGrade(requestedPaper.grade ?? 10);
+      setChapter(requestedPaper.chapter);
+    } else {
+      window.history.replaceState(null, '', '/');
+    }
+    setRequestedPaperId(null);
+  }, [requestedPaperId, studentRecords]);
+
+  function clearRequestedPaper() {
+    if (window.location.search) window.history.replaceState(null, '', window.location.pathname);
+    setRequestedPaperId(null);
+  }
+
   function goHome() {
+    clearRequestedPaper();
     setBoard(null);
     setGrade(null);
     setChapter(null);
   }
 
   function openBoard(nextBoard: BoardName) {
+    clearRequestedPaper();
     setBoard(nextBoard);
     setGrade(null);
     setChapter(null);
@@ -304,6 +333,11 @@ export default function HomePage() {
 
   function openChapter(nextChapter: string) {
     setChapter(nextChapter);
+  }
+
+  function returnToChapters() {
+    clearRequestedPaper();
+    setChapter(null);
   }
 
   return (
@@ -331,7 +365,7 @@ export default function HomePage() {
       ) : !chapter ? (
         <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
-        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onChapters={() => setChapter(null)} />
+        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onChapters={returnToChapters} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
