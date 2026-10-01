@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
-import Link from 'next/link';
 import {
   Archive,
   ArrowLeft,
@@ -419,7 +418,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         </nav>
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <Link className="student-login-link" href="/student" prefetch><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></Link>
+          <a className="student-login-link" href="/student" aria-label="Open student account"><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></a>
         </div>
       </header>
 
