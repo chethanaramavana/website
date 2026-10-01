@@ -5,7 +5,8 @@ import { ArrowLeft, BookOpen, CheckCircle2, Clock3, Loader2, LogOut } from 'luci
 import { paperDefinitionsById } from '@/lib/papers';
 
 type Submission = { id: string; paper_id: keyof typeof paperDefinitionsById; student_name: string; status: 'submitted' | 'marked'; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string; marked_at: string | null };
-type Records = { access: string[]; submissions: Submission[] };
+type Payment = { paper_id: string; student_name: string; transaction_id: string; amount_paise: number; created_at: string; reviewed_at: string | null; payment_source: 'razorpay' | 'manual' };
+type Records = { displayName?: string; access: string[]; payments: Payment[]; submissions: Submission[] };
 
 export default function StudentDashboard({ displayName, email }: { displayName: string; email: string }) {
   const [records, setRecords] = useState<Records | null>(null);
@@ -23,7 +24,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
     <main className="student-account-shell">
       <header className="student-account-header">
         <a href="/"><ArrowLeft /> Chapters</a>
-        <div><p>Student account</p><h1>{displayName}</h1><span>{email}</span></div>
+        <div><p>Student account</p><h1>{records?.displayName || displayName}</h1><span>{email}</span></div>
         <a href="/api/auth/signout?return_to=%2F"><LogOut /> Sign out</a>
       </header>
       {error ? <div className="student-account-error">{error}</div> : !records ? <div className="student-account-loading"><Loader2 /> Loading your tests…</div> : (
@@ -32,7 +33,8 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · No payment needed again.</small></span><a href="/">Open chapter</a></article> : null;
+              const payment = records.payments.find((item) => item.paper_id === paperId);
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><a href="/">Open chapter</a></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">

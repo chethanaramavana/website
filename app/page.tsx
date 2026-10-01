@@ -267,6 +267,19 @@ export default function HomePage() {
   const [board, setBoard] = useState<BoardName | null>(null);
   const [grade, setGrade] = useState<number | null>(null);
   const [chapter, setChapter] = useState<string | null>(null);
+  const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
+
+  const loadStudentRecords = useCallback(async () => {
+    try {
+      const response = await fetch('/api/student/records', { cache: 'no-store' });
+      if (!response.ok) return;
+      setStudentRecords(await response.json() as StudentRecords);
+    } catch {
+      // Account data is helpful but must never block the public chapter library.
+    }
+  }, []);
+
+  useEffect(() => { void loadStudentRecords(); }, [loadStudentRecords]);
 
   function goHome() {
     setBoard(null);
@@ -297,7 +310,7 @@ export default function HomePage() {
     <main className="site-shell">
       <header className="site-header">
         <button className="brand-lockup" type="button" onClick={goHome} aria-label="Ramavana home">
-          <span className="brand-mark"><img src="/ramavana-logo.png" alt="" /></span>
+          <span className="brand-mark"><img src="/ramavana-logo.webp" alt="" width="720" height="393" decoding="async" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <nav className="primary-nav" aria-label="Main navigation">
@@ -307,7 +320,7 @@ export default function HomePage() {
         </nav>
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <a className="student-login-link" href="/student"><UserRound /><span>Google Login</span></a>
+          <a className="student-login-link" href="/student"><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></a>
         </div>
       </header>
 
@@ -316,7 +329,7 @@ export default function HomePage() {
       ) : grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} />
+        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
         <ChapterView grade={grade} chapter={chapter} onHome={goHome} onChapters={() => setChapter(null)} />
       )}
@@ -360,7 +373,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           </div>
         </div>
         <div className="hero-visual" aria-label="Students learning mathematics together">
-          <div className="study-photo-shape"><img src="/students-studying.png" alt="High-school students solving mathematics together with books and pens" /></div>
+          <div className="study-photo-shape"><img src="/students-studying.webp" alt="High-school students solving mathematics together with books and pens" width="1200" height="600" decoding="async" fetchPriority="high" /></div>
           <span className="math-note note-one">x² + y²</span>
           <span className="math-note note-two">√2</span>
         </div>
@@ -451,7 +464,8 @@ type StudentSubmission = {
   status: 'submitted' | 'marked';
   submitted_at: string;
 };
-type StudentRecords = { signedIn: boolean; email?: string; access: string[]; submissions: StudentSubmission[] };
+type StudentPayment = { paper_id: string; student_name: string; transaction_id: string; amount_paise: number; created_at: string; reviewed_at: string | null; payment_source: 'razorpay' | 'manual' };
+type StudentRecords = { signedIn: boolean; email?: string; displayName?: string; access: string[]; payments: StudentPayment[]; submissions: StudentSubmission[] };
 type RazorpayStatus = 'idle' | 'starting' | 'checkout' | 'verifying';
 
 type RazorpaySuccess = { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string };
@@ -463,13 +477,12 @@ declare global {
   }
 }
 
-function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void }) {
+function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, refreshStudentRecords }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStudentName, setPaymentStudentName] = useState('');
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
-  const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
   const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const razorpayRecoveryAttemptsRef = useRef(0);
   const chapters = chaptersByGrade[grade] ?? [];
@@ -479,13 +492,6 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
   const completedSubmission = selectedPaper
     ? studentRecords?.submissions.find((submission) => submission.paper_id === selectedPaper.id)
     : undefined;
-
-  useEffect(() => {
-    void fetch('/api/student/records', { cache: 'no-store' })
-      .then((response) => response.ok ? response.json() as Promise<StudentRecords> : null)
-      .then((records) => { if (records) setStudentRecords(records); })
-      .catch(() => {});
-  }, []);
 
   const stopRazorpayRecoveryTimer = useCallback(() => {
     if (razorpayRecoveryTimerRef.current !== null) window.clearInterval(razorpayRecoveryTimerRef.current);
@@ -510,6 +516,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
       const payload = await response.json() as { approved?: boolean; status?: 'none' | 'pending' | 'approved'; error?: string };
       if (!response.ok) throw new Error(payload.error ?? 'The payment status could not be checked.');
       if (payload.approved) {
+        void refreshStudentRecords();
         setRazorpayStatus('idle');
         setPaymentStatus('approved');
         setPaymentMessage('Payment verified. Opening your question paper…');
@@ -531,7 +538,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
       }
       return false;
     }
-  }, [onOpenChapter, studentRecords?.signedIn]);
+  }, [onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
 
   function openChapter(nextChapter: string) {
     const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
@@ -542,7 +549,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
         return;
       }
     }
-    setPaymentStudentName('');
+    setPaymentStudentName(studentRecords?.displayName ?? '');
     setPaymentStatus('idle');
     setRazorpayStatus('idle');
     setPaymentMessage('');
@@ -574,6 +581,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
       const order = await orderResponse.json() as { keyId?: string; orderId?: string; amount?: number; currency?: string; alreadyPaid?: boolean; error?: string };
       if (!orderResponse.ok) throw new Error(order.error ?? 'Razorpay could not start the payment.');
       if (order.alreadyPaid) {
+        void refreshStudentRecords();
         setPendingChapter(null);
         onOpenChapter(pendingChapter);
         return;
@@ -633,6 +641,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
             });
             const verified = await verifyResponse.json() as { approved?: boolean; error?: string };
             if (!verifyResponse.ok || !verified.approved) throw new Error(verified.error ?? 'Payment verification failed.');
+            void refreshStudentRecords();
             setPaymentStatus('approved');
             setPendingChapter(null);
             onOpenChapter(chapterName);
@@ -740,7 +749,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter }: { grade: number
                 </div>
               ) : (
                 <>
-                  <div className="student-payment-status"><CheckCircle2 /><span><strong>Google account connected</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
+                  <div className="student-payment-status"><CheckCircle2 /><span><strong>{studentRecords.displayName || 'Google account connected'}</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
                   <div className="razorpay-checkout-card">
                     <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
                     <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
@@ -1088,7 +1097,7 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
 
       <article className="question-paper">
         <header className="paper-heading">
-          <img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Center" />
+          <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Center" width="720" height="720" decoding="async" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>CBSE Mathematics{(currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>

@@ -29,6 +29,7 @@ type GoogleIdTokenClaims = {
   azp?: string;
   email?: string;
   email_verified?: boolean;
+  name?: string;
   exp?: number;
   nonce?: string;
 };
@@ -140,7 +141,7 @@ export async function verifyGoogleIdToken(idToken: string, clientId: string, non
       || claims.email_verified !== true
       || !claims.exp
       || claims.exp <= Math.floor(Date.now() / 1000)) return null;
-    return { sub: claims.sub, email: claims.email };
+    return { sub: claims.sub, email: claims.email, name: claims.name?.trim() || null };
   } catch {
     return null;
   }

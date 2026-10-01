@@ -19,7 +19,7 @@ export async function GET(request: Request) {
     client_id: config.clientId,
     redirect_uri: googleCallbackUrl(request),
     response_type: 'code',
-    scope: 'openid email',
+    scope: 'openid email profile',
     state: payload.state,
     nonce: payload.nonce,
     prompt: 'select_account',

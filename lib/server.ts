@@ -2,13 +2,13 @@ import { env } from 'cloudflare:workers';
 import { getGoogleUserFromRequest } from '@/lib/google-auth';
 import { isTeacherEmail } from '@/lib/identity';
 
-export type RequestUser = { userId: string; email: string };
+export type RequestUser = { userId: string; email: string; displayName: string; fullName: string | null };
 
 const attemptKeyPattern = /^[a-zA-Z0-9-]{20,80}$/;
 
 export async function getRequestUser(request: Request): Promise<RequestUser | null> {
   const user = await getGoogleUserFromRequest(request);
-  return user ? { userId: user.userId, email: user.email } : null;
+  return user ? { userId: user.userId, email: user.email, displayName: user.displayName, fullName: user.fullName } : null;
 }
 
 export async function getAttemptOwner(request: Request): Promise<RequestUser | null> {
@@ -19,6 +19,8 @@ export async function getAttemptOwner(request: Request): Promise<RequestUser | n
   return {
     userId: `attempt:${attemptKey}`,
     email: 'Not provided',
+    displayName: 'Student',
+    fullName: null,
   };
 }
 

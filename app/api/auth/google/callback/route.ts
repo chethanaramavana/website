@@ -55,7 +55,7 @@ export async function GET(request: Request) {
       return authError('Google could not verify this email address.', request, 403);
     }
 
-    const session = await createGoogleSession({ sub: identity.sub, email: identity.email });
+    const session = await createGoogleSession({ sub: identity.sub, email: identity.email, name: identity.name });
     const destination = new URL(storedState.returnTo, new URL(request.url).origin);
     const response = new Response(null, {
       status: 302,

@@ -737,6 +737,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .student-access-list strong, .student-access-list small, .student-results-list strong, .student-results-list small { display: block; }
 .student-access-list strong, .student-results-list strong { color: var(--navy); font-size: .8rem; }
 .student-access-list small, .student-results-list small { margin-top: 3px; font-size: .66rem; }
+.student-access-list small b { color: #287057; font-weight: 900; }
 .student-access-list a { color: var(--primary); font-size: .7rem; font-weight: 850; text-decoration: none; }
 .student-result-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; color: #805b1d; background: #fff1ce; }
 .student-result-icon.marked { color: #267058; background: #e7f7f0; }
