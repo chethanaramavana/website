@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import Link from 'next/link';
 import {
   Archive,
   ArrowLeft,
@@ -263,12 +264,28 @@ Object.assign(paperDefinitions, sharedPaperDefinitions);
 
 type BoardName = (typeof boards)[number]['name'];
 
-export default function HomePage() {
-  const [board, setBoard] = useState<BoardName | null>(null);
-  const [grade, setGrade] = useState<number | null>(null);
-  const [chapter, setChapter] = useState<string | null>(null);
+type HomePageProps = {
+  initialBoard?: BoardName | null;
+  initialGrade?: number | null;
+  initialChapterNumber?: number | null;
+};
+
+function chapterPath(grade: number, chapterName: string) {
+  const chapterNumber = (chaptersByGrade[grade] ?? []).indexOf(chapterName) + 1;
+  return chapterNumber > 0 ? `/cbse/grade-${grade}/ch-${chapterNumber}` : `/cbse/grade-${grade}`;
+}
+
+export default function HomePage({ initialBoard = null, initialGrade = null, initialChapterNumber = null }: HomePageProps = {}) {
+  const initialChapter = initialGrade && initialChapterNumber
+    ? chaptersByGrade[initialGrade]?.[initialChapterNumber - 1] ?? null
+    : null;
+  const initialPaper = initialChapter ? paperDefinitions[initialChapter as PaperDefinition['chapter']] : null;
+  const [board, setBoard] = useState<BoardName | null>(initialBoard);
+  const [grade, setGrade] = useState<number | null>(initialGrade);
+  const [chapter, setChapter] = useState<string | null>(initialPaper ? null : initialChapter);
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
-  const [requestedPaperId, setRequestedPaperId] = useState<string | null>(null);
+  const [requestedPaperId, setRequestedPaperId] = useState<string | null>(initialPaper?.id ?? null);
+  const [routePaymentChapter, setRoutePaymentChapter] = useState<string | null>(null);
 
   const loadStudentRecords = useCallback(async () => {
     try {
@@ -283,10 +300,6 @@ export default function HomePage() {
   useEffect(() => { void loadStudentRecords(); }, [loadStudentRecords]);
 
   useEffect(() => {
-    setRequestedPaperId(new URLSearchParams(window.location.search).get('paper'));
-  }, []);
-
-  useEffect(() => {
     if (!requestedPaperId || studentRecords === null) return;
 
     const requestedPaper = paperDefinitionsById[requestedPaperId];
@@ -298,18 +311,24 @@ export default function HomePage() {
       setGrade(requestedPaper.grade ?? 10);
       setChapter(requestedPaper.chapter);
     } else {
-      window.history.replaceState(null, '', '/');
+      setRoutePaymentChapter(requestedPaper?.chapter ?? null);
     }
     setRequestedPaperId(null);
   }, [requestedPaperId, studentRecords]);
 
+  function updateAddress(path: string, replace = false) {
+    if (window.location.pathname === path && !window.location.search) return;
+    window.history[replace ? 'replaceState' : 'pushState'](null, '', path);
+  }
+
   function clearRequestedPaper() {
-    if (window.location.search) window.history.replaceState(null, '', window.location.pathname);
     setRequestedPaperId(null);
+    setRoutePaymentChapter(null);
   }
 
   function goHome() {
     clearRequestedPaper();
+    updateAddress('/');
     setBoard(null);
     setGrade(null);
     setChapter(null);
@@ -317,6 +336,7 @@ export default function HomePage() {
 
   function openBoard(nextBoard: BoardName) {
     clearRequestedPaper();
+    updateAddress(nextBoard === 'CBSE' ? '/cbse' : '/');
     setBoard(nextBoard);
     setGrade(null);
     setChapter(null);
@@ -324,6 +344,8 @@ export default function HomePage() {
 
   function openGrade(nextGrade: number) {
     const currentScrollPosition = window.scrollY;
+    clearRequestedPaper();
+    updateAddress(`/cbse/grade-${nextGrade}`);
     setGrade(nextGrade);
     setChapter(null);
     requestAnimationFrame(() => {
@@ -332,13 +354,56 @@ export default function HomePage() {
   }
 
   function openChapter(nextChapter: string) {
+    if (grade !== null) updateAddress(chapterPath(grade, nextChapter));
     setChapter(nextChapter);
+    requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'auto' }));
   }
 
   function returnToChapters() {
     clearRequestedPaper();
+    if (grade !== null) updateAddress(`/cbse/grade-${grade}`);
     setChapter(null);
   }
+
+  useEffect(() => {
+    const handleBackOrForward = () => {
+      const path = window.location.pathname;
+      if (path === '/') {
+        clearRequestedPaper();
+        setBoard(null);
+        setGrade(null);
+        setChapter(null);
+        return;
+      }
+      if (path === '/cbse' || path === '/cbse/') {
+        clearRequestedPaper();
+        setBoard('CBSE');
+        setGrade(null);
+        setChapter(null);
+        return;
+      }
+      const match = path.match(/^\/cbse\/grade-(6|10)(?:\/ch-(\d+))?\/?$/);
+      if (!match) return;
+      const nextGrade = Number(match[1]);
+      const nextChapter = match[2] ? chaptersByGrade[nextGrade]?.[Number(match[2]) - 1] ?? null : null;
+      clearRequestedPaper();
+      setBoard('CBSE');
+      setGrade(nextGrade);
+      const nextPaper = nextChapter ? paperDefinitions[nextChapter as PaperDefinition['chapter']] : null;
+      const hasAccess = nextPaper && studentRecords?.signedIn && (
+        studentRecords.access.includes(nextPaper.id)
+        || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
+      );
+      if (nextPaper && !hasAccess) {
+        setChapter(null);
+        setRoutePaymentChapter(nextChapter);
+      } else {
+        setChapter(nextChapter);
+      }
+    };
+    window.addEventListener('popstate', handleBackOrForward);
+    return () => window.removeEventListener('popstate', handleBackOrForward);
+  }, [studentRecords]);
 
   return (
     <main className="site-shell">
@@ -354,7 +419,7 @@ export default function HomePage() {
         </nav>
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <a className="student-login-link" href="/student"><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></a>
+          <Link className="student-login-link" href="/student" prefetch><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></Link>
         </div>
       </header>
 
@@ -363,9 +428,9 @@ export default function HomePage() {
       ) : grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
+        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
-        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onChapters={returnToChapters} />
+        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard('CBSE')} onChapters={returnToChapters} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
@@ -457,7 +522,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
   const isCbse = board === 'CBSE';
   return (
     <div className="content-view">
-      <Breadcrumb items={[board]} onHome={onHome} />
+      <Breadcrumb items={[{ label: board }]} onHome={onHome} />
       <section className="folder-page-heading">
         <span className="large-folder"><FolderOpen /></span>
         <div><p>Board</p><h1>{board}</h1><span>Mathematics</span></div>
@@ -511,9 +576,8 @@ declare global {
   }
 }
 
-function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, refreshStudentRecords }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
+function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
-  const [paymentStudentName, setPaymentStudentName] = useState('');
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
@@ -533,6 +597,36 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
   }, []);
 
   useEffect(() => () => stopRazorpayRecoveryTimer(), [stopRazorpayRecoveryTimer]);
+
+  useEffect(() => {
+    if (initialPendingChapter) setPendingChapter(initialPendingChapter);
+  }, [initialPendingChapter]);
+
+  function openPaperAfterDialog(chapterName: string) {
+    setPendingChapter(null);
+    window.setTimeout(() => {
+      const root = document.documentElement;
+      const body = document.body;
+      root.removeAttribute('data-base-ui-scroll-locked');
+      root.style.overflowX = '';
+      root.style.overflowY = '';
+      root.style.scrollbarGutter = '';
+      root.style.scrollBehavior = '';
+      body.style.position = '';
+      body.style.height = '';
+      body.style.width = '';
+      body.style.boxSizing = '';
+      body.style.overflowX = '';
+      body.style.overflowY = '';
+      body.style.scrollBehavior = '';
+      onOpenChapter(chapterName);
+    }, 120);
+  }
+
+  useEffect(() => {
+    if (!pendingChapter || !selectedPaper || !studentRecords?.signedIn || completedSubmission) return;
+    if (studentRecords.access.includes(selectedPaper.id)) openPaperAfterDialog(pendingChapter);
+  }, [completedSubmission, pendingChapter, selectedPaper, studentRecords]);
 
   const checkRazorpayStatus = useCallback(async (chapterName: PaperDefinition['chapter'], options: { silent?: boolean } = {}) => {
     const paper = paperDefinitions[chapterName];
@@ -554,8 +648,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
         setRazorpayStatus('idle');
         setPaymentStatus('approved');
         setPaymentMessage('Payment verified. Opening your question paper…');
-        setPendingChapter(null);
-        onOpenChapter(chapterName);
+        openPaperAfterDialog(chapterName);
         return true;
       }
       if (!options.silent) {
@@ -583,7 +676,6 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
         return;
       }
     }
-    setPaymentStudentName(studentRecords?.displayName ?? '');
     setPaymentStatus('idle');
     setRazorpayStatus('idle');
     setPaymentMessage('');
@@ -598,11 +690,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
       setPaymentMessage('Please log in or sign up before paying. This keeps the chapter and marks on the student account.');
       return;
     }
-    const name = paymentStudentName.trim();
-    if (name.length < 2) {
-      setPaymentMessage('Please enter the student name.');
-      return;
-    }
+    const name = studentRecords.displayName?.trim() || studentRecords.email?.split('@')[0] || 'Student';
 
     setRazorpayStatus('starting');
     setPaymentMessage('Opening secure Razorpay checkout…');
@@ -616,8 +704,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
       if (!orderResponse.ok) throw new Error(order.error ?? 'Razorpay could not start the payment.');
       if (order.alreadyPaid) {
         void refreshStudentRecords();
-        setPendingChapter(null);
-        onOpenChapter(pendingChapter);
+        openPaperAfterDialog(pendingChapter);
         return;
       }
       if (!order.keyId || !order.orderId || !order.amount || !order.currency) throw new Error('Razorpay returned an incomplete order.');
@@ -677,8 +764,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
             if (!verifyResponse.ok || !verified.approved) throw new Error(verified.error ?? 'Payment verification failed.');
             void refreshStudentRecords();
             setPaymentStatus('approved');
-            setPendingChapter(null);
-            onOpenChapter(chapterName);
+            openPaperAfterDialog(chapterName);
           } catch (error) {
             const recovered = await checkRazorpayStatus(chapterName);
             if (!recovered) setPaymentMessage(error instanceof Error ? `${error.message} Check the completed payment again.` : 'Payment verification failed. Check the completed payment again.');
@@ -722,7 +808,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
 
   return (
     <div className="content-view">
-      <Breadcrumb items={['CBSE', `Grade ${grade}`]} onHome={onHome} onFirstItem={onBoard} />
+      <Breadcrumb items={[{ label: 'CBSE', onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
         <div><p>CBSE Mathematics</p><h1>Grade {grade}</h1><span>{grade === 6 ? 'Ganita Prakash · ' : ''}Chapter folders</span></div>
@@ -755,17 +841,15 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
                     ? 'Your completed paper is ready'
                     : 'Pay ₹30 to open this test'
               : 'This paper is coming soon'}</DialogTitle>
-            <DialogDescription>
+            {(!isAvailablePaper || studentRecords === null || !studentRecords.signedIn || completedSubmission) && <DialogDescription>
               {isAvailablePaper
                 ? studentRecords === null
                   ? 'Please wait while we check your student account.'
                   : !studentRecords.signedIn
                     ? 'Sign in once to keep paid chapters, completed papers and marks available on every device.'
-                    : completedSubmission
-                      ? 'Review your most recent paper or start another attempt without paying again.'
-                      : 'Enter the student name, pay securely and the question paper will open automatically.'
+                    : 'Review your most recent paper or start another attempt without paying again.'
                 : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
-            </DialogDescription>
+            </DialogDescription>}
           </DialogHeader>
           {isAvailablePaper ? (
             <div className="chapter-access-content">
@@ -783,38 +867,36 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, studentRecords, r
                 </div>
               ) : (
                 <>
-                  <div className="student-payment-status"><CheckCircle2 /><span><strong>{studentRecords.displayName || 'Google account connected'}</strong><small>{studentRecords.email} · Approved chapters open without another payment.</small></span></div>
-                  <div className="razorpay-checkout-card">
-                    <div><span>Secure automatic payment</span><strong>₹30 · Razorpay</strong><small>After successful verification, this paper opens immediately and stays in the student account.</small></div>
-                    <label htmlFor="razorpay-student-name"><span>Student name</span><input id="razorpay-student-name" value={paymentStudentName} onChange={(event) => setPaymentStudentName(event.target.value)} maxLength={80} autoComplete="name" placeholder="Enter your full name" /></label>
-                    <button type="button" onClick={() => void startRazorpayPayment()} disabled={razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'checkout' ? 'Checkout in progress…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
-                    <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage || 'Payment verification is automatic. Failed or cancelled payments do not unlock the paper.'}</p>
-                    {selectedPaper && <button className="razorpay-recovery-button" type="button" onClick={() => void checkRazorpayStatus(selectedPaper.chapter)} disabled={razorpayStatus !== 'idle'}><CheckCircle2 /> Check a completed payment</button>}
+                  <div className="student-payment-status subtle"><CheckCircle2 /><span><strong>{studentRecords.displayName || 'Google account connected'}</strong><small>{studentRecords.email}</small></span></div>
+                  <div className="razorpay-checkout-actions">
+                    <button className="razorpay-pay-button" type="button" onClick={() => void startRazorpayPayment()} disabled={razorpayStatus !== 'idle'}>{razorpayStatus !== 'idle' ? <Loader2 /> : <ShieldCheck />}{razorpayStatus === 'starting' ? 'Opening checkout…' : razorpayStatus === 'checkout' ? 'Checkout in progress…' : razorpayStatus === 'verifying' ? 'Verifying payment…' : 'Pay ₹30 securely'}</button>
+                    {selectedPaper && <button className="razorpay-recovery-link" type="button" onClick={() => void checkRazorpayStatus(selectedPaper.chapter)} disabled={razorpayStatus !== 'idle'}>Check a completed payment</button>}
                   </div>
+                  {paymentMessage && <p className={`payment-form-message ${paymentStatus === 'rejected' ? 'error' : ''}`} aria-live="polite">{paymentMessage}</p>}
                 </>
               )}
             </div>
           ) : (
             <div className="test-price-card"><span>Test access</span><strong>₹30</strong></div>
           )}
-          <DialogFooter>
+          {!isAvailablePaper && <DialogFooter>
             <DialogClose render={<button className="test-later-button" type="button" />}>Close</DialogClose>
-          </DialogFooter>
+          </DialogFooter>}
         </DialogContent>
       </Dialog>
     </div>
   );
 }
 
-function ChapterView({ grade, chapter, onHome, onChapters }: { grade: number; chapter: string; onHome: () => void; onChapters: () => void }) {
+function ChapterView({ grade, chapter, onHome, onBoard, onChapters }: { grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const paper = paperDefinitions[chapter as PaperDefinition['chapter']];
   if (paper && (paper.grade ?? 10) === grade) {
-    return <ChapterPaper paper={paper} onHome={onHome} onChapters={onChapters} />;
+    return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
 
   return (
     <div className="content-view">
-      <Breadcrumb items={['CBSE', `Grade ${grade}`, chapter]} onHome={onHome} />
+      <Breadcrumb items={[{ label: 'CBSE', onClick: onBoard }, { label: `Grade ${grade}`, onClick: onChapters }, { label: chapter }]} onHome={onHome} />
       <section className="chapter-empty-view">
         <span className="chapter-open-icon"><FolderOpen /></span>
         <p>Grade {grade} · CBSE Mathematics</p>
@@ -841,7 +923,7 @@ function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
 
 type SavedUpload = { id: string; fileName: string };
 
-function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; onHome: () => void; onChapters: () => void }) {
+function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefinition; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const attemptIdKey = `rmc-${paper.id}-attempt-id`;
   const attemptSecretKey = `rmc-${paper.id}-attempt-secret`;
   const [studentName, setStudentName] = useState('');
@@ -1123,7 +1205,11 @@ function ChapterPaper({ paper, onHome, onChapters }: { paper: PaperDefinition; o
   return (
     <div className="content-view paper-page">
       <div className="paper-toolbar">
-        <Breadcrumb items={['CBSE', `Grade ${currentPaper.grade ?? 10}`, currentPaper.chapter]} onHome={() => requestExit(onHome)} />
+        <Breadcrumb items={[
+          { label: 'CBSE', onClick: () => requestExit(onBoard) },
+          { label: `Grade ${currentPaper.grade ?? 10}`, onClick: () => requestExit(onChapters) },
+          { label: currentPaper.chapter },
+        ]} onHome={() => requestExit(onHome)} />
         <div className="paper-toolbar-actions">
           <button type="button" onClick={() => requestExit(onChapters)}><ArrowLeft /> Chapters</button>
         </div>
@@ -1475,12 +1561,12 @@ function AssertionQuestion({ number, assertion, reason, selected, onChange }: { 
   );
 }
 
-function Breadcrumb({ items, onHome, onFirstItem }: { items: string[]; onHome: () => void; onFirstItem?: () => void }) {
+function Breadcrumb({ items, onHome }: { items: { label: string; onClick?: () => void }[]; onHome: () => void }) {
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       <button type="button" onClick={onHome}><Home /><span>Home</span></button>
       {items.map((item, index) => (
-        <span key={`${item}-${index}`}><ChevronRight />{index === 0 && onFirstItem ? <button type="button" onClick={onFirstItem}>{item}</button> : <em>{item}</em>}</span>
+        <span key={`${item.label}-${index}`}><ChevronRight />{item.onClick ? <button type="button" onClick={item.onClick}>{item.label}</button> : <em>{item.label}</em>}</span>
       ))}
     </nav>
   );

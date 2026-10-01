@@ -178,8 +178,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .test-start-points { margin: 0; padding: 0; display: grid; gap: 9px; list-style: none; color: #5e5968; font-size: .8rem; }
 .test-start-points li { position: relative; padding-left: 23px; line-height: 1.45; }
 .test-start-points li:before { content: '✓'; width: 16px; height: 16px; position: absolute; left: 0; top: 1px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--blue); font-size: .62rem; font-weight: 900; }
-.start-test-dialog.payment-dialog { max-width: 780px !important; max-height: min(92vh, 860px); overflow-y: auto; }
-.chapter-access-content { display: grid; gap: 18px; }
+.start-test-dialog.payment-dialog { max-width: 680px !important; max-height: min(92vh, 820px); overflow-y: auto; }
+.chapter-access-content { display: grid; gap: 14px; }
 .revision-sheet { overflow: hidden; border: 1px solid #cfdfe8; border-radius: 17px; background: #f6fbfd; }
 .revision-link { min-height: 88px; padding: 15px 17px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 13px; color: var(--navy); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .revision-link:hover { transform: translateY(-2px); border-color: #8fc3cf; box-shadow: 0 12px 28px rgba(13,86,102,.11); }
@@ -218,7 +218,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .payment-divider::before, .payment-divider::after { content: ''; height: 1px; flex: 1; background: #e5e0e9; }
 .student-payment-login, .student-payment-status { min-height: 62px; padding: 11px 13px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; border-radius: 13px; text-decoration: none; }
 .student-payment-login { border: 1px solid #d9cdef; color: var(--primary); background: #f8f5ff; }
-.student-payment-status { border: 1px solid #c9e2d6; color: #267058; background: #eff9f4; }
+.student-payment-status { border: 1px solid #d8e5df; color: #497065; background: #f8fbfa; }
+.student-payment-status.subtle { min-height: 48px; padding: 8px 11px; border-radius: 10px; }
+.student-payment-status.subtle > svg:first-child { width: 17px; color: #4c8a77; }
 .student-payment-login > svg:first-child, .student-payment-status > svg:first-child { width: 21px; }
 .student-payment-login > svg:last-child { width: 16px; }
 .student-payment-login strong, .student-payment-login small, .student-payment-status strong, .student-payment-status small { display: block; }
@@ -237,20 +239,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .completed-paper-actions a { color: white; background: #28785f; text-decoration: none; }
 .completed-paper-actions button { border: 1px solid #76ad98; color: #21654f; background: white; cursor: pointer; }
 .completed-paper-actions button:hover { color: white; background: #28785f; }
-.razorpay-checkout-card { padding: 18px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 13px 16px; border: 1px solid #d7caef; border-radius: 16px; background: linear-gradient(135deg, #faf8ff, #f3effd); }
-.razorpay-checkout-card > div { grid-column: 1 / -1; display: grid; gap: 3px; }
-.razorpay-checkout-card > div span { color: #7c58b9; font-size: .62rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
-.razorpay-checkout-card > div strong { color: var(--navy); font: 700 1.05rem Georgia, serif; }
-.razorpay-checkout-card > div small { color: #6e6978; font-size: .69rem; line-height: 1.45; }
-.razorpay-checkout-card label { display: grid; gap: 6px; color: var(--navy); font-size: .7rem; font-weight: 850; }
-.razorpay-checkout-card input { width: 100%; height: 43px; padding: 0 12px; border: 1px solid #d5ccdf; border-radius: 10px; color: #314c59; background: white; font: .82rem var(--font-geist-sans), Arial, sans-serif; }
-.razorpay-checkout-card > button { min-height: 43px; padding: 0 17px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-radius: 10px; color: white; background: linear-gradient(135deg, #6842b8, #4c2d92); cursor: pointer; font-size: .76rem; font-weight: 850; white-space: nowrap; }
-.razorpay-checkout-card > button:disabled { opacity: .55; cursor: not-allowed; }
-.razorpay-checkout-card > button svg { width: 17px; }
-.razorpay-checkout-card > button svg.lucide-loader-2 { animation: spin 1s linear infinite; }
-.razorpay-checkout-card .payment-form-message { grid-column: 1 / -1; margin: -2px 0 0; }
-.razorpay-checkout-card > .razorpay-recovery-button { grid-column: 1 / -1; min-height: 36px; width: fit-content; padding: 0 12px; border: 1px solid #cfc1e8; color: #5936a7; background: white; }
-.razorpay-checkout-card > .razorpay-recovery-button:disabled { opacity: .55; }
+.razorpay-checkout-actions { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.razorpay-pay-button { min-height: 46px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 11px; color: white; background: var(--primary); cursor: pointer; font-size: .8rem; font-weight: 850; }
+.razorpay-pay-button:disabled { opacity: .58; cursor: wait; }
+.razorpay-pay-button svg { width: 17px; }
+.razorpay-pay-button svg.lucide-loader-2 { animation: spin 1s linear infinite; }
+.razorpay-recovery-link { padding: 4px 0; border: 0; color: #62449a; background: transparent; cursor: pointer; font-size: .73rem; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.razorpay-recovery-link:disabled { opacity: .55; cursor: wait; }
+.chapter-access-content > .payment-form-message { min-height: 0; padding: 9px 11px; border-radius: 9px; background: #f7f5f9; }
 .manual-payment-fallback { overflow: hidden; border: 1px solid #e5e0e9; border-radius: 14px; background: #fff; }
 .manual-payment-fallback > summary { padding: 13px 15px; color: #6b6474; cursor: pointer; font-size: .72rem; font-weight: 800; }
 .manual-payment-fallback[open] > summary { border-bottom: 1px solid #ece7ef; }

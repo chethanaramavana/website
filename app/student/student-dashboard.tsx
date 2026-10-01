@@ -1,24 +1,27 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle2, Clock3, Loader2, LogOut } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
+import type { StudentRecordsPayload } from '@/lib/student-records';
 
 type Submission = { id: string; paper_id: keyof typeof paperDefinitionsById; student_name: string; status: 'submitted' | 'marked'; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string; marked_at: string | null };
 type Payment = { paper_id: string; student_name: string; transaction_id: string; amount_paise: number; created_at: string; reviewed_at: string | null; payment_source: 'razorpay' | 'manual' };
-type Records = { displayName?: string; access: string[]; payments: Payment[]; submissions: Submission[] };
+type Records = Pick<StudentRecordsPayload, 'displayName' | 'access' | 'payments' | 'submissions'>;
 
-export default function StudentDashboard({ displayName, email }: { displayName: string; email: string }) {
-  const [records, setRecords] = useState<Records | null>(null);
+export default function StudentDashboard({ displayName, email, initialRecords }: { displayName: string; email: string; initialRecords: StudentRecordsPayload | null }) {
+  const [records, setRecords] = useState<Records | null>(initialRecords);
   const [error, setError] = useState('');
 
   useEffect(() => {
+    if (initialRecords) return;
     void fetch('/api/student/records', { cache: 'no-store' }).then(async (response) => {
       const payload = await response.json() as Records & { error?: string };
       if (!response.ok) throw new Error(payload.error ?? 'Account could not be loaded.');
       setRecords(payload);
     }).catch((reason) => setError(reason instanceof Error ? reason.message : 'Account could not be loaded.'));
-  }, []);
+  }, [initialRecords]);
 
   return (
     <main className="student-account-shell">
@@ -34,7 +37,7 @@ export default function StudentDashboard({ displayName, email }: { displayName: 
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><a href={`/?paper=${encodeURIComponent(paper.id)}`}>Open chapter</a></article> : null;
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><Link href={`/cbse/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`}>Open chapter</Link></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">
