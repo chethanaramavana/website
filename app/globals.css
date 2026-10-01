@@ -36,11 +36,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .primary-nav a { padding: 9px 1px; color: #514c64; font-size: .76rem; font-weight: 800; text-decoration: none; white-space: nowrap; }
 .primary-nav a:hover { color: var(--primary); }
 .account-links { display: flex; align-items: center; gap: 8px; }
-.teacher-login-link, .student-login-link { min-height: 40px; padding: 0 13px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid #d8cfe6; border-radius: 12px; color: var(--primary); background: rgba(255,255,255,.8); font-size: .76rem; font-weight: 850; text-decoration: none; white-space: nowrap; }
+.teacher-login-link, .student-login-link, .student-logout-link { min-height: 40px; padding: 0 13px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid #d8cfe6; border-radius: 12px; color: var(--primary); background: rgba(255,255,255,.8); font-size: .76rem; font-weight: 850; text-decoration: none; white-space: nowrap; }
 .teacher-login-link { border-color: transparent; color: white; background: var(--primary); box-shadow: 0 7px 18px rgba(89,54,167,.18); }
 .teacher-login-link:hover { background: #452786; }
 .student-login-link:hover { border-color: var(--primary); background: white; }
-.teacher-login-link svg, .student-login-link svg { width: 17px; }
+.student-logout-link { padding: 0 10px; color: #6d6676; border-color: #dfd9e4; }
+.student-logout-link:hover { color: #8f4039; border-color: #deb9b5; background: #fff7f5; }
+.teacher-login-link svg, .student-login-link svg, .student-logout-link svg { width: 17px; }
 .brand-lockup { padding: 0; display: inline-flex; align-items: center; gap: 11px; border: 0; color: var(--navy); background: transparent; cursor: pointer; text-align: left; }
 .brand-mark { width: 52px; height: 52px; position: relative; overflow: hidden; flex: 0 0 52px; border: 1px solid #e8deef; border-radius: 50%; background: white; box-shadow: 0 7px 22px rgba(58,42,92,.12); }
 .brand-mark img { width: 160px; max-width: none; height: auto; position: absolute; left: -54px; top: -5px; }
@@ -296,7 +298,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .notes-page { width: min(100%, 850px); min-height: 1120px; margin: 0 auto 28px; padding: 62px 70px 48px; position: relative; isolation: isolate; overflow: hidden; border: 1px solid #d8e1e4; color: #334e59; background: #fffdfa; box-shadow: 0 18px 52px rgba(26,53,64,.13); }
 .notes-page::before { content: ''; position: absolute; z-index: 0; width: 430px; height: 430px; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: .025; background: url('/ramavana-mark.png') center / contain no-repeat; pointer-events: none; }
 .notes-page > * { position: relative; z-index: 1; }
-.notes-page-logo { position: absolute; z-index: 2; width: 42px; height: 42px; left: 18px; top: 14px; border-radius: 50%; object-fit: cover; }
+.notes-page-branding { position: absolute; z-index: 2; left: 18px; top: 14px; display: inline-flex; align-items: center; gap: 9px; color: #17344d; }
+.notes-page-branding img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
+.notes-page-branding strong { font: 700 .68rem/1.25 Georgia, serif; letter-spacing: .035em; }
+.math-typeset { font-variant-numeric: lining-nums; }
+.math-typeset.formula { color: #103b5d; font-family: 'Cambria Math', 'STIX Two Math', 'Times New Roman', serif; font-size: 1.02em; letter-spacing: .012em; }
+.math-typeset sup, .math-typeset sub { position: relative; font-size: .72em; line-height: 0; }
+.math-typeset sup { vertical-align: .55em; }
+.math-typeset sub { vertical-align: -.2em; }
 .notes-title-block { padding: 20px 10px 34px; text-align: center; }
 .notes-book-icon { width: 64px; height: 64px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 18px; color: white; background: linear-gradient(145deg, #178f9a, #0b6978); box-shadow: 7px 7px 0 #d7eceb; }
 .notes-book-icon svg { width: 30px; }
@@ -873,8 +882,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .brand-mark { width: 46px; height: 46px; flex-basis: 46px; }
   .brand-mark img { width: 142px; left: -48px; top: -4px; }
   .account-links { gap: 5px; }
-  .teacher-login-link, .student-login-link { width: 39px; min-height: 39px; padding: 0; justify-content: center; }
-  .teacher-login-link span, .student-login-link span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .teacher-login-link, .student-login-link, .student-logout-link { width: 39px; min-height: 39px; padding: 0; justify-content: center; }
+  .teacher-login-link span, .student-login-link span, .student-logout-link span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .qr-trigger { width: 36px; padding: 0; justify-content: center; }
   .qr-trigger span { display: none; }
   .home-view { padding-top: 14px; }
@@ -1051,7 +1060,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .notes-toolbar { display: none; }
   .notes-page { width: 210mm; min-height: 297mm; margin: 0; padding: 17mm 18mm 14mm; border: 0; box-shadow: none; page-break-after: always; }
   .notes-page::before { width: 120mm; height: 120mm; opacity: .045; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .notes-page-logo { width: 11mm; height: 11mm; left: 5mm; top: 4mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .notes-page-branding { left: 5mm; top: 4mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .notes-page-branding img { width: 11mm; height: 11mm; }
+  .notes-page-branding strong { font-size: 8pt; }
   .notes-page:last-child { page-break-after: auto; }
   .notes-page-number { left: 18mm; right: 18mm; bottom: 9mm; }
   @page { size: A4; margin: 13mm; }

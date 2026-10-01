@@ -1,3 +1,3 @@
 export default function NotesBranding() {
-  return <img className="notes-page-logo" src="/ramavana-mark.png" alt="Ramavana Mathematical Center" />;
+  return <div className="notes-page-branding"><img src="/ramavana-mark.png" alt="" /><strong>Ramavana Mathematical Centre</strong></div>;
 }

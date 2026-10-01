@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ramavana Mathematical Center | Mathematics Practice',
+  title: 'Ramavana Mathematical Centre | Mathematics Practice',
   description:
     'Chapter-wise mathematics practice for CBSE, ICSE and IGCSE students.',
   icons: {

@@ -18,6 +18,7 @@ import {
   Home,
   LockKeyhole,
   Loader2,
+  LogOut,
   Mail,
   Save,
   Send,
@@ -419,6 +420,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
           <a className="student-login-link" href="/student" aria-label="Open student account"><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></a>
+          {studentRecords?.signedIn && <a className="student-logout-link" href="/api/auth/signout?return_to=%2F" aria-label="Sign out"><LogOut /><span>Logout</span></a>}
         </div>
       </header>
 
@@ -446,7 +448,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       </section>
 
       <footer className="site-footer">
-        <div className="footer-brand"><strong>Ramavana Mathematical Center</strong><span>Learn · Practise · Progress</span></div>
+        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span></div>
         <nav className="footer-links" aria-label="Legal information">
           <a className="legal-link" href="/terms">Terms &amp; Conditions</a>
           <a className="legal-link" href="/privacy-policy">Privacy Policy</a>
@@ -680,7 +682,6 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
     setPaymentMessage('');
     setPendingChapter(nextChapter);
     if (!paper || (paper.grade ?? 10) !== grade) return;
-    if (studentRecords?.signedIn) void checkRazorpayStatus(nextChapter as PaperDefinition['chapter']);
   }
 
   async function startRazorpayPayment() {
@@ -735,7 +736,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
         key: order.keyId,
         amount: order.amount,
         currency: order.currency,
-        name: 'Ramavana Mathematical Center',
+        name: 'Ramavana Mathematical Centre',
         description: `${selectedPaper.chapter} chapter test`,
         order_id: order.orderId,
         prefill: { name, email: studentRecords.email },
@@ -1216,7 +1217,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
       <article className="question-paper">
         <header className="paper-heading">
-          <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Center" width="720" height="720" decoding="async" />
+          <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Centre" width="720" height="720" decoding="async" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>CBSE Mathematics{(currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
