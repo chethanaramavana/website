@@ -1,4 +1,5 @@
 import { grade6Notes } from './grade6-notes';
+import { grade12Notes } from './grade12-notes';
 
 export type ChapterNotes = {
   slug: string;
@@ -214,6 +215,7 @@ export const chapterNotesBySlug: Record<string, ChapterNotes> = Object.fromEntri
     ], tips:['“At least one” often suits the complement method.','Do not count outcomes twice in unions.','A probability above 1 signals a counting error.'],
   }),
   ...grade6Notes,
+  ...grade12Notes,
 ].map((item) => [item.slug, item]));
 
 export function getChapterNotes(slug: string) {

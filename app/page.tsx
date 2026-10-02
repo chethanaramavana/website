@@ -37,6 +37,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import MathText from '@/app/notes/math-text';
 import { paperDefinitions as sharedPaperDefinitions, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
 
 const boards = [
@@ -99,7 +100,23 @@ const grade6Chapters = [
   'The Other Side of Zero',
 ];
 
-const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters };
+const grade12Chapters = [
+  'Relations and Functions',
+  'Inverse Trigonometric Functions',
+  'Matrices',
+  'Determinants',
+  'Continuity and Differentiability',
+  'Applications of Derivatives',
+  'Integrals',
+  'Applications of Integrals',
+  'Differential Equations',
+  'Vector Algebra',
+  'Three Dimensional Geometry',
+  'Linear Programming',
+  'Probability',
+];
+
+const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters, 12: grade12Chapters };
 
 const realNumbersMcqs = [
   {
@@ -382,7 +399,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         setChapter(null);
         return;
       }
-      const match = path.match(/^\/cbse\/grade-(6|10)(?:\/ch-(\d+))?\/?$/);
+      const match = path.match(/^\/cbse\/grade-(6|10|12)(?:\/ch-(\d+))?\/?$/);
       if (!match) return;
       const nextGrade = Number(match[1]);
       const nextChapter = match[2] ? chaptersByGrade[nextGrade]?.[Number(match[2]) - 1] ?? null : null;
@@ -487,7 +504,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
             <button key={item.name} className={`folder-card board-folder board-${index + 1}`} type="button" onClick={() => onOpenBoard(item.name)}>
               <span className="folder-icon"><Folder /></span>
               <span className="folder-copy"><strong>{item.name}</strong></span>
-              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6 & 10' : 'Coming soon'}</span>
+              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6, 10 & 12' : 'Coming soon'}</span>
               <ChevronRight className="folder-arrow" />
             </button>
           ))}
@@ -530,7 +547,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>2 folders</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>3 folders</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
@@ -540,6 +557,11 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(10)}>
               <span className="folder-icon"><GraduationCap /></span>
               <span><small>CBSE Mathematics</small><strong>Grade 10</strong><em>14 chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(12)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE Mathematics · Part II</small><strong>Grade 12</strong><em>13 chapters · Integrals ready</em></span>
               <ChevronRight />
             </button>
           </div>
@@ -1248,13 +1270,13 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           <div className="mcq-list">
             {currentPaper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
-                <legend><strong>{item.number}.</strong> {item.question} <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
+                <legend><strong>{item.number}.</strong> <MathText>{item.question}</MathText> <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
                 {currentPaper.questionVisuals?.[item.number] && <QuestionDiagram kind={currentPaper.questionVisuals[item.number]!} />}
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
                       <input type="radio" name={`question-${item.number}`} checked={answers[String(item.number)] === index} onChange={() => setAnswers((current) => ({ ...current, [String(item.number)]: index }))} />
-                      <span><em>{String.fromCharCode(65 + index)}</em>{option}</span>
+                      <span><em>{String.fromCharCode(65 + index)}</em><MathText formula>{option}</MathText></span>
                     </label>
                   ))}
                 </div>
@@ -1296,7 +1318,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
         <PaperSection title="Section E" subtitle="Question 24 is a case-study question carrying 4 marks." marks="1 × 4 = 4">
           <div className="case-study">
             <div className="case-study-label">Case study</div>
-            <p>{currentPaper.caseStudy}</p>
+            <p><MathText>{currentPaper.caseStudy}</MathText></p>
           </div>
           <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} onFilesChange={(files) => updateWrittenFiles(24, files)}>
             <QuestionContent value={currentPaper.written[24]} />
@@ -1356,7 +1378,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <p className="solution-note">Use these to compare your method. Your teacher will still review your uploaded work and award the written-answer marks.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><strong>Question {number}</strong><p>{result.writtenSolutions[String(number)]}</p></article>
+                  <article key={number}><strong>Question {number}</strong><p><MathText>{result.writtenSolutions[String(number)]}</MathText></p></article>
                 ))}
               </div>
             </div>
@@ -1402,7 +1424,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 }
 
 function QuestionContent({ value }: { value: string | readonly string[] }) {
-  return Array.isArray(value) ? <>{value.map((line) => <span key={line}>{line}</span>)}</> : <>{value}</>;
+  return Array.isArray(value) ? <>{value.map((line) => <span key={line}><MathText>{line}</MathText></span>)}</> : <MathText>{value as string}</MathText>;
 }
 
 function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
@@ -1551,7 +1573,7 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
 function AssertionQuestion({ number, assertion, reason, selected, onChange }: { number: number; assertion: string; reason: string; selected?: number; onChange: (answer: number) => void }) {
   return (
     <fieldset className="paper-question assertion-question">
-      <legend><strong>{number}.</strong> <span><b>Assertion (A):</b> {assertion}<br /><b>Reason (R):</b> {reason}</span><em>[1]</em></legend>
+      <legend><strong>{number}.</strong> <span><b>Assertion (A):</b> <MathText>{assertion}</MathText><br /><b>Reason (R):</b> <MathText>{reason}</MathText></span><em>[1]</em></legend>
       <div className="assertion-options">
         {assertionReasonOptions.map((_, index) => (
           <label key={index}><input type="radio" name={`question-${number}`} checked={selected === index} onChange={() => onChange(index)} /><span>{String.fromCharCode(65 + index)}</span></label>
