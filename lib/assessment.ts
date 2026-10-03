@@ -1,5 +1,6 @@
 import { additionalPaperAssessments } from './assessment-additional';
 import { grade6PaperAssessments } from './grade6-papers';
+import { grade11PaperAssessments } from './grade11-papers';
 import { grade12PaperAssessments } from './grade12-papers';
 
 export const writtenQuestionMarks: Record<number, number> = {
@@ -100,6 +101,7 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
   ...basePaperAssessments,
   ...additionalPaperAssessments,
   ...grade6PaperAssessments,
+  ...grade11PaperAssessments,
   ...grade12PaperAssessments,
 };
 

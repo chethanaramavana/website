@@ -33,7 +33,7 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
         <NotesBranding />
         <header className="notes-running-header"><span>{notes.chapter}</span><b>Practice</b></header>
         <section className="notes-practice-heading"><p>Check your understanding</p><h2>Practice before the test</h2><span>Show every important step and include units where required.</span></section>
-        <section className="notes-practice-list">{notes.practice.map((item,index)=><div key={item.question}><b>{index+1}</b><p><MathText>{item.question}</MathText></p><em>{item.marks} marks</em></div>)}</section>
+        <section className="notes-practice-list">{notes.practice.map((item,index)=><div key={item.question}><b>{index+1}</b><p><MathText>{item.question}</MathText></p><em>{item.marks} {item.marks === 1 ? 'mark' : 'marks'}</em></div>)}</section>
         <section className="notes-answer-check"><h3>Quick answer check</h3>{notes.practice.map((item,index)=><p key={item.answer}><strong>{index+1}.</strong> <MathText formula>{item.answer}</MathText></p>)}</section>
         <footer className="notes-page-number">Ramavana Mathematical Centre · 3 / 3</footer>
       </article>

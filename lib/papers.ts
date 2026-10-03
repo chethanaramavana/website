@@ -1,5 +1,6 @@
 import { additionalPaperDefinitions } from './papers-additional';
 import { grade6PaperDefinitions } from './grade6-papers';
+import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 
 export type QuestionSource = string;
@@ -126,12 +127,19 @@ export const paperDefinitions: Record<string, PaperDefinition> = {
   ...basePaperDefinitions,
   ...additionalPaperDefinitions,
   ...grade6PaperDefinitions,
+  ...grade11PaperDefinitions,
   ...grade12PaperDefinitions,
 };
 
 export const paperDefinitionsById = Object.fromEntries(
   Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
+
+export function getPaperDefinition(grade: number, chapter: string) {
+  return Object.values(paperDefinitionsById).find(
+    (paper) => (paper.grade ?? 10) === grade && paper.chapter === chapter,
+  ) ?? null;
+}
 
 const questionVisualTypes = new Set<QuestionVisual>([
   'triangular-dots', 'angle-pair', 'bar-graph', 'l-shape', 'fraction-strip', 'circle-radius', 'half-turn', 'integer-path',

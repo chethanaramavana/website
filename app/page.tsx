@@ -38,7 +38,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import MathText from '@/app/notes/math-text';
-import { paperDefinitions as sharedPaperDefinitions, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
+import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -116,7 +116,24 @@ const grade12Chapters = [
   'Probability',
 ];
 
-const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters, 12: grade12Chapters };
+const grade11Chapters = [
+  'Sets',
+  'Relations and Functions',
+  'Trigonometric Functions',
+  'Complex Numbers and Quadratic Equations',
+  'Linear Inequalities',
+  'Permutations and Combinations',
+  'Binomial Theorem',
+  'Sequences and Series',
+  'Straight Lines',
+  'Conic Sections',
+  'Introduction to Three-dimensional Geometry',
+  'Limits and Derivatives',
+  'Statistics',
+  'Probability',
+];
+
+const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters };
 
 const realNumbersMcqs = [
   {
@@ -277,7 +294,12 @@ const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
   },
 };
 
-Object.assign(paperDefinitions, sharedPaperDefinitions);
+function getPaperForChapter(grade: number, chapterName: string) {
+  return getSharedPaperDefinition(grade, chapterName)
+    ?? (((paperDefinitions[chapterName] && (paperDefinitions[chapterName].grade ?? 10) === grade)
+      ? paperDefinitions[chapterName]
+      : null));
+}
 
 type BoardName = (typeof boards)[number]['name'];
 
@@ -296,7 +318,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   const initialChapter = initialGrade && initialChapterNumber
     ? chaptersByGrade[initialGrade]?.[initialChapterNumber - 1] ?? null
     : null;
-  const initialPaper = initialChapter ? paperDefinitions[initialChapter as PaperDefinition['chapter']] : null;
+  const initialPaper = initialChapter && initialGrade ? getPaperForChapter(initialGrade, initialChapter) : null;
   const [board, setBoard] = useState<BoardName | null>(initialBoard);
   const [grade, setGrade] = useState<number | null>(initialGrade);
   const [chapter, setChapter] = useState<string | null>(initialPaper ? null : initialChapter);
@@ -399,14 +421,14 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         setChapter(null);
         return;
       }
-      const match = path.match(/^\/cbse\/grade-(6|10|12)(?:\/ch-(\d+))?\/?$/);
+      const match = path.match(/^\/cbse\/grade-(6|10|11|12)(?:\/ch-(\d+))?\/?$/);
       if (!match) return;
       const nextGrade = Number(match[1]);
       const nextChapter = match[2] ? chaptersByGrade[nextGrade]?.[Number(match[2]) - 1] ?? null : null;
       clearRequestedPaper();
       setBoard('CBSE');
       setGrade(nextGrade);
-      const nextPaper = nextChapter ? paperDefinitions[nextChapter as PaperDefinition['chapter']] : null;
+      const nextPaper = nextChapter ? getPaperForChapter(nextGrade, nextChapter) : null;
       const hasAccess = nextPaper && studentRecords?.signedIn && (
         studentRecords.access.includes(nextPaper.id)
         || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
@@ -504,7 +526,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
             <button key={item.name} className={`folder-card board-folder board-${index + 1}`} type="button" onClick={() => onOpenBoard(item.name)}>
               <span className="folder-icon"><Folder /></span>
               <span className="folder-copy"><strong>{item.name}</strong></span>
-              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6, 10 & 12' : 'Coming soon'}</span>
+              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6, 10, 11 & 12' : 'Coming soon'}</span>
               <ChevronRight className="folder-arrow" />
             </button>
           ))}
@@ -547,7 +569,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>3 folders</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>4 folders</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
@@ -557,6 +579,11 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(10)}>
               <span className="folder-icon"><GraduationCap /></span>
               <span><small>CBSE Mathematics</small><strong>Grade 10</strong><em>14 chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(11)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE · NCERT Mathematics</small><strong>Grade 11</strong><em>14 chapter tests ready</em></span>
               <ChevronRight />
             </button>
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(12)}>
@@ -607,9 +634,9 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
   const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const razorpayRecoveryAttemptsRef = useRef(0);
   const chapters = chaptersByGrade[grade] ?? [];
-  const pendingPaper = pendingChapter ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+  const pendingPaper = pendingChapter ? getPaperForChapter(grade, pendingChapter) : null;
   const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
-  const selectedPaper = isAvailablePaper ? paperDefinitions[pendingChapter as PaperDefinition['chapter']] : null;
+  const selectedPaper = isAvailablePaper ? pendingPaper : null;
   const completedSubmission = selectedPaper
     ? studentRecords?.submissions.find((submission) => submission.paper_id === selectedPaper.id)
     : undefined;
@@ -652,7 +679,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
   }, [completedSubmission, pendingChapter, selectedPaper, studentRecords]);
 
   const checkRazorpayStatus = useCallback(async (chapterName: PaperDefinition['chapter'], options: { silent?: boolean } = {}) => {
-    const paper = paperDefinitions[chapterName];
+    const paper = getPaperForChapter(grade, chapterName);
     if (!paper || !studentRecords?.signedIn) return false;
     if (!options.silent) {
       setRazorpayStatus('verifying');
@@ -688,10 +715,10 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
       }
       return false;
     }
-  }, [onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
+  }, [grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
 
   function openChapter(nextChapter: string) {
-    const paper = paperDefinitions[nextChapter as PaperDefinition['chapter']];
+    const paper = getPaperForChapter(grade, nextChapter);
     if (paper && (paper.grade ?? 10) === grade && studentRecords?.signedIn) {
       const earlierSubmission = studentRecords.submissions.find((submission) => submission.paper_id === paper.id);
       if (!earlierSubmission && studentRecords.access.includes(paper.id)) {
@@ -911,7 +938,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
 }
 
 function ChapterView({ grade, chapter, onHome, onBoard, onChapters }: { grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
-  const paper = paperDefinitions[chapter as PaperDefinition['chapter']];
+  const paper = getPaperForChapter(grade, chapter);
   if (paper && (paper.grade ?? 10) === grade) {
     return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }

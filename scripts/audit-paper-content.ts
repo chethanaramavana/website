@@ -4,7 +4,7 @@ import { paperDefinitionsById } from '../lib/papers';
 const errors: string[] = [];
 const papers = Object.values(paperDefinitionsById);
 
-if (papers.length !== 25) errors.push(`Expected 25 papers, found ${papers.length}.`);
+if (papers.length !== 39) errors.push(`Expected 39 papers, found ${papers.length}.`);
 
 for (const paper of papers) {
   const assessment = paperAssessments[paper.id];
@@ -61,6 +61,6 @@ if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${papers.length} papers (${byGrade['6']} Grade 6, ${byGrade['10']} Grade 10, ${byGrade['12']} Grade 12).`);
+  console.log(`Validated ${papers.length} papers (${byGrade['6']} Grade 6, ${byGrade['10']} Grade 10, ${byGrade['11']} Grade 11, ${byGrade['12']} Grade 12).`);
   console.log(`Checked ${papers.length * 16} objective answers and ${papers.length * 8} written model solutions.`);
 }
