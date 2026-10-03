@@ -13,6 +13,10 @@ export const submissions = sqliteTable('submissions', {
   writtenScore: integer('written_score'),
   totalScore: integer('total_score'),
   teacherFeedback: text('teacher_feedback').notNull().default(''),
+  startedAtMs: integer('started_at_ms'),
+  workDeadlineAtMs: integer('work_deadline_at_ms'),
+  uploadDeadlineAtMs: integer('upload_deadline_at_ms'),
+  submissionReason: text('submission_reason'),
   createdAt: text('created_at').notNull().default(sql`CURRENT_TIMESTAMP`),
   submittedAt: text('submitted_at'),
   markedAt: text('marked_at'),
@@ -20,6 +24,7 @@ export const submissions = sqliteTable('submissions', {
 }, (table) => [
   index('idx_submissions_user_id').on(table.userId),
   index('idx_submissions_submitted_at').on(table.submittedAt),
+  index('idx_submissions_status_upload_deadline').on(table.status, table.uploadDeadlineAtMs),
 ]);
 
 export const answerUploads = sqliteTable('answer_uploads', {
@@ -44,6 +49,21 @@ export const questionMarks = sqliteTable('question_marks', {
   feedback: text('feedback').notNull().default(''),
 }, (table) => [
   primaryKey({ columns: [table.submissionId, table.questionNumber] }),
+]);
+
+export const submissionFeedback = sqliteTable('submission_feedback', {
+  submissionId: text('submission_id').primaryKey().references(() => submissions.id, { onDelete: 'cascade' }),
+  userId: text('user_id').notNull(),
+  paperId: text('paper_id').notNull(),
+  uploadEase: integer('upload_ease').notNull(),
+  questionQuality: integer('question_quality').notNull(),
+  difficultyFit: integer('difficulty_fit').notNull(),
+  mathClarity: integer('math_clarity').notNull(),
+  notesSolutions: integer('notes_solutions').notNull(),
+  createdAt: text('created_at').notNull().default(sql`CURRENT_TIMESTAMP`),
+  updatedAt: text('updated_at').notNull().default(sql`CURRENT_TIMESTAMP`),
+}, (table) => [
+  index('idx_submission_feedback_paper_id').on(table.paperId),
 ]);
 
 export const paymentRequests = sqliteTable('payment_requests', {

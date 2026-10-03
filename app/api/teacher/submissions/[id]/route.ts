@@ -23,10 +23,11 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     const assessment = getPaperAssessment(paperId);
     const fallbackPaper = paperDefinitionsById[paperId];
     if (!assessment || !fallbackPaper) return jsonError('This question paper is unavailable.', 404);
-    const [uploads, marks, savedPaper] = await Promise.all([
+    const [uploads, marks, savedPaper, studentFeedback] = await Promise.all([
       db.prepare(`SELECT id, question_number, file_name, content_type, size_bytes FROM answer_uploads WHERE submission_id = ? ORDER BY question_number, created_at`).bind(id).all(),
       db.prepare(`SELECT question_number, marks_awarded, feedback FROM question_marks WHERE submission_id = ? ORDER BY question_number`).bind(id).all(),
       db.prepare('SELECT content_json FROM paper_content WHERE paper_id = ?').bind(paperId).first<{ content_json: string }>(),
+      db.prepare(`SELECT upload_ease, question_quality, difficulty_fit, math_clarity, notes_solutions FROM submission_feedback WHERE submission_id = ?`).bind(id).first(),
     ]);
     const savedDocument = savedPaper ? JSON.parse(savedPaper.content_json) as SavedPaperDocument : null;
     const paper = savedDocument?.paper ?? fallbackPaper;
@@ -46,6 +47,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       submission,
       uploads: uploads.results,
       marks: marks.results,
+      studentFeedback,
       guide: { title: `${paper.chapter} · Paper ${paper.paperNumber}`, writtenQuestions },
     });
   } catch (error) {

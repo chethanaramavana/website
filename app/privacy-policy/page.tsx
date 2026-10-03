@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
           <h2>2. Information we collect</h2>
           <ul>
             <li><strong>Google account information:</strong> when a visitor chooses Google Login, we receive the Google account’s verified email address and a stable account identifier. We do not request access to Gmail, Google Drive, contacts or passwords.</li>
-            <li><strong>Student and learning information:</strong> the student name entered for a test, selected answers, uploaded handwritten answer sheets or PDFs, test status, marks, teacher feedback and submission dates.</li>
+            <li><strong>Student and learning information:</strong> the student name entered for a test, selected answers, uploaded handwritten answer sheets or PDFs, test status, marks, teacher feedback, optional test-experience ratings and submission dates.</li>
             <li><strong>Purchase records:</strong> the chapter purchased, amount, Razorpay order or payment reference, payment status and date. Ramavana does not receive or store card numbers, UPI PINs, banking passwords or one-time passwords.</li>
             <li><strong>Essential technical information:</strong> secure login and anti-forgery cookies, and limited hosting or security logs needed to deliver the website, diagnose failures and prevent misuse.</li>
           </ul>

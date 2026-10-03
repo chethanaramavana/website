@@ -1,5 +1,6 @@
 import { writtenQuestionMarks } from '@/lib/assessment';
 import { getAttemptOwner, getBucket, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
+import { finalizeSubmission, getSubmissionPhase, getTimedSubmission } from '@/lib/submission-lifecycle';
 
 const safeId = /^[a-zA-Z0-9-]{10,100}$/;
 const allowedTypes = new Set(['image/jpeg', 'image/png', 'image/webp', 'application/pdf']);
@@ -27,10 +28,13 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     if (!request.body) return jsonError('The selected file is empty.', 400);
 
     const db = getDatabase();
-    const submission = await db.prepare('SELECT user_id, status FROM submissions WHERE id = ?')
-      .bind(id).first<{ user_id: string; status: string }>();
+    const submission = await getTimedSubmission(db, id);
     if (!submission || !await ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
     if (submission.status !== 'draft') return jsonError('This test has already been submitted.', 409);
+    if (getSubmissionPhase(submission) === 'expired') {
+      await finalizeSubmission(db, submission, { reason: 'timeout' });
+      return jsonError('The test has been submitted because time ended.', 409);
+    }
 
     const objectKey = `submissions/${id}/${question}/${uploadId}`;
     await getBucket().put(objectKey, request.body, { httpMetadata: { contentType } });

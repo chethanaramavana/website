@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
+import MathText from '@/app/notes/math-text';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
@@ -35,6 +36,7 @@ type Detail = {
   submission: Summary & { teacher_feedback: string };
   uploads: Upload[];
   marks: Mark[];
+  studentFeedback: { upload_ease: number; question_quality: number; difficulty_fit: number; math_clarity: number; notes_solutions: number } | null;
   guide: { title: string; writtenQuestions: ReviewQuestion[] };
 };
 
@@ -318,7 +320,7 @@ export default function TeacherReviewPage() {
                   const questionUploads = detail.uploads.filter((upload) => upload.question_number === question.number);
                   return (
                     <article className="written-review" key={question.number}>
-                      <div className="written-review-copy"><strong>Question {question.number}</strong><p>{question.text}</p></div>
+                      <div className="written-review-copy"><strong>Question {question.number}</strong><p><MathText>{question.text}</MathText></p></div>
                       <div className="answer-files">
                         {questionUploads.map((upload, index) => (
                           <a key={upload.id} href={`/api/teacher/submissions/${detail.submission.id}/files/${upload.id}`} target="_blank" rel="noreferrer">
@@ -329,7 +331,7 @@ export default function TeacherReviewPage() {
                       <label className="mark-field"><span>Marks</span><input type="number" min="0" max={question.marks} value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
                       <details className="evaluation-sheet">
                         <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
-                        <div className="evaluation-model-answer"><span>Model solution</span><p>{question.modelSolution}</p></div>
+                        <div className="evaluation-model-answer"><span>Model solution</span><p><MathText>{question.modelSolution}</MathText></p></div>
                         <ol>
                           {question.markingScheme.map((step, index) => (
                             <li key={`${question.number}-${index}`}><span>{step.criterion}</span><strong>{step.marks} mark</strong></li>
@@ -340,6 +342,19 @@ export default function TeacherReviewPage() {
                   );
                 })}
               </div>
+
+              {detail.studentFeedback && (
+                <section className="student-experience-feedback">
+                  <div><p>Student experience</p><h3>Five-star feedback</h3></div>
+                  {[
+                    ['Answer upload', detail.studentFeedback.upload_ease],
+                    ['Question quality', detail.studentFeedback.question_quality],
+                    ['Difficulty level', detail.studentFeedback.difficulty_fit],
+                    ['Mathematical clarity', detail.studentFeedback.math_clarity],
+                    ['Notes & solutions', detail.studentFeedback.notes_solutions],
+                  ].map(([label, rating]) => <p key={String(label)}><span>{label}</span><strong aria-label={`${rating} out of 5 stars`}>{'★'.repeat(Number(rating))}{'☆'.repeat(5 - Number(rating))}</strong></p>)}
+                </section>
+              )}
 
               <div className="teacher-feedback">
                 <label htmlFor="teacher-feedback">Overall feedback</label>

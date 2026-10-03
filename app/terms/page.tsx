@@ -40,6 +40,7 @@ export default function TermsPage() {
         <section>
           <h2>4. Student submissions</h2>
           <p>Students must submit only work they are authorised to share. Uploaded answers may be viewed by authorised teachers for marking and support. Do not upload unrelated personal information, another person’s work, unlawful material, malicious files or content that infringes someone else’s rights.</p>
+          <p>Timed tests continue running if the page is refreshed or left. When the displayed answering time ends, objective answers are locked and the saved attempt is submitted automatically after the answer-upload period finishes.</p>
         </section>
 
         <section>

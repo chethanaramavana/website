@@ -1,4 +1,5 @@
 import { getDatabase, type RequestUser } from '@/lib/server';
+import { finalizeExpiredSubmissions } from '@/lib/submission-lifecycle';
 
 export type StudentSubmissionRecord = {
   id: string;
@@ -34,6 +35,7 @@ export type StudentRecordsPayload = {
 
 export async function getStudentRecordsForUser(user: RequestUser): Promise<StudentRecordsPayload> {
   const db = getDatabase();
+  await finalizeExpiredSubmissions(db, user.userId);
   const [payments, submissions] = await Promise.all([
     db.prepare(`SELECT paper_id, student_name, transaction_id, amount_paise, created_at, reviewed_at,
       CASE WHEN substr(transaction_id, 1, 6) = 'order_' THEN 'razorpay' ELSE 'manual' END AS payment_source

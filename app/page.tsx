@@ -23,6 +23,8 @@ import {
   Save,
   Send,
   ShieldCheck,
+  Star,
+  Timer,
   Upload,
   UserRound,
   X,
@@ -1022,6 +1024,23 @@ function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
 }
 
 type SavedUpload = { id: string; fileName: string };
+type AttemptTiming = { startedAtMs: number; workDeadlineAtMs: number; uploadDeadlineAtMs: number };
+
+const feedbackQuestions = [
+  { key: 'uploadEase', label: 'Was it easy to upload your answers?' },
+  { key: 'questionQuality', label: 'How would you rate the quality and relevance of the questions?' },
+  { key: 'difficultyFit', label: 'Was the difficulty level appropriate for your grade?' },
+  { key: 'mathClarity', label: 'Were the instructions and mathematical equations clear?' },
+  { key: 'notesSolutions', label: 'How useful were the chapter notes and model solutions?' },
+] as const;
+
+function formatExamTime(totalSeconds: number) {
+  const safeSeconds = Math.max(0, totalSeconds);
+  const hours = Math.floor(safeSeconds / 3600);
+  const minutes = Math.floor((safeSeconds % 3600) / 60);
+  const seconds = safeSeconds % 60;
+  return `${hours > 0 ? `${String(hours).padStart(2, '0')}:` : ''}${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
 
 function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefinition; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const attemptIdKey = `rmc-${paper.id}-attempt-id`;
@@ -1047,14 +1066,27 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     id: string;
     mcqScore: number;
     mcqMaximum: number;
+    answers: Record<string, number>;
     correctAnswers: Record<string, number>;
     writtenSolutions: Record<string, string>;
   } | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
   const [currentPaper, setCurrentPaper] = useState(paper);
+  const [timing, setTiming] = useState<AttemptTiming | null>(null);
+  const [clockNow, setClockNow] = useState(0);
+  const [showTimeWarning, setShowTimeWarning] = useState(false);
+  const [attemptStartError, setAttemptStartError] = useState('');
+  const [autoSubmitRetry, setAutoSubmitRetry] = useState(0);
   const saveSequence = useRef(0);
+  const saveChain = useRef<Promise<void>>(Promise.resolve());
+  const clockAnchor = useRef<{ serverNowMs: number; performanceNow: number } | null>(null);
+  const warnedAtFifteen = useRef(false);
+  const autoSubmitStarted = useRef(false);
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
+  const remainingSeconds = timing ? Math.max(0, Math.ceil((timing.workDeadlineAtMs - clockNow) / 1000)) : 90 * 60;
+  const workLocked = Boolean(timing && clockNow >= timing.workDeadlineAtMs);
+  const uploadLocked = Boolean(timing && clockNow >= timing.uploadDeadlineAtMs);
   const isSaving = savingDraft || Object.values(uploadingQuestions).some(Boolean);
   const hasWork = Boolean(
     studentName.trim()
@@ -1079,16 +1111,24 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   }
 
   async function saveDraftMetadata(successMessage = 'Saved automatically.') {
-    if (!draftLoaded || !attemptId || !attemptKey || result) return;
+    if (!draftLoaded || !attemptId || !attemptKey || result || workLocked) return;
     const sequence = ++saveSequence.current;
     setSavingDraft(true);
     setSaveMessage('Saving answers…');
+    const snapshot = { attemptId, paperId: paper.id, studentName: studentName.trim(), answers: { ...answers } };
     try {
-      await readResponse(await fetch('/api/submissions', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
-        body: JSON.stringify({ attemptId, paperId: paper.id, studentName: studentName.trim(), answers }),
-      }));
+      const queuedSave = saveChain.current.then(async () => {
+        const payload = await readResponse(await fetch('/api/submissions', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
+          body: JSON.stringify(snapshot),
+        }));
+        if (typeof payload.serverNowMs === 'number') {
+          clockAnchor.current = { serverNowMs: payload.serverNowMs, performanceNow: performance.now() };
+        }
+      });
+      saveChain.current = queuedSave.catch(() => {});
+      await queuedSave;
       if (sequence === saveSequence.current) setSaveMessage(successMessage);
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Answers could not be saved.';
@@ -1100,15 +1140,14 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   }
 
   async function uploadQuestionFiles(question: number, files: File[]) {
-    if (!files.length || !attemptId || !attemptKey) return;
+    if (!files.length || !attemptId || !attemptKey || uploadLocked) return;
     setUploadingQuestions((current) => ({ ...current, [question]: true }));
     setSaveMessage(`Saving answer for question ${question}…`);
     try {
-      const startingIndex = savedUploads[question]?.length ?? 0;
       const uploaded: SavedUpload[] = [];
       for (let index = 0; index < files.length; index += 1) {
         const file = files[index];
-        const uploadId = `${attemptId}-${question}-${startingIndex + index}`;
+        const uploadId = crypto.randomUUID();
         const response = await fetch(`/api/submissions/${attemptId}/upload?question=${question}`, {
           method: 'POST',
           headers: {
@@ -1152,7 +1191,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   async function saveEverything() {
     setSubmissionError('');
     try {
-      await saveDraftMetadata('Answers saved.');
+      if (!workLocked) await saveDraftMetadata('Answers saved.');
       const pending = writtenQuestions
         .map((question) => ({ question, files: writtenFiles[question] ?? [] }))
         .filter((entry) => entry.files.length);
@@ -1166,6 +1205,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   }
 
   function updateWrittenFiles(question: number, files: File[]) {
+    if (uploadLocked) return;
     setWrittenFiles((current) => ({ ...current, [question]: files }));
     if (files.length) void saveQuestionFiles(question, files);
   }
@@ -1188,27 +1228,25 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
   useEffect(() => {
     let cancelled = false;
-    const createCredentials = () => {
-      const id = crypto.randomUUID();
-      const secret = crypto.randomUUID();
-      localStorage.setItem(attemptIdKey, id);
-      localStorage.setItem(attemptSecretKey, secret);
-      return { id, secret };
-    };
-    const storedId = localStorage.getItem(attemptIdKey);
-    const storedSecret = localStorage.getItem(attemptSecretKey);
-    const credentials = storedId && storedSecret ? { id: storedId, secret: storedSecret } : createCredentials();
-    setAttemptId(credentials.id);
-    setAttemptKey(credentials.secret);
-
+    const secret = localStorage.getItem(attemptSecretKey) ?? crypto.randomUUID();
+    localStorage.setItem(attemptSecretKey, secret);
+    setAttemptKey(secret);
     void (async () => {
       try {
-        const payload = await readResponse(await fetch(`/api/submissions?attemptId=${encodeURIComponent(credentials.id)}`, {
-          cache: 'no-store',
-          headers: { 'x-attempt-key': credentials.secret },
+        const payload = await readResponse(await fetch('/api/submissions/start', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-attempt-key': secret },
+          body: JSON.stringify({ paperId: paper.id }),
         }));
         if (cancelled) return;
-        if (payload.found && payload.status === 'draft') {
+        const startedAttemptId = String(payload.id ?? '');
+        setAttemptId(startedAttemptId);
+        localStorage.setItem(attemptIdKey, startedAttemptId);
+        if (typeof payload.serverNowMs === 'number') {
+          clockAnchor.current = { serverNowMs: payload.serverNowMs, performanceNow: performance.now() };
+          setClockNow(payload.serverNowMs);
+        }
+        if (payload.status === 'draft') {
           setStudentName(String(payload.studentName ?? ''));
           setAnswers((payload.answers ?? {}) as Record<string, number>);
           const grouped: Record<number, SavedUpload[]> = {};
@@ -1217,14 +1255,26 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             grouped[upload.question] = [...(grouped[upload.question] ?? []), { id: upload.id, fileName: upload.fileName }];
           });
           setSavedUploads(grouped);
-          setSaveMessage('Your saved answers have been restored.');
-        } else if (payload.found) {
-          const next = createCredentials();
-          setAttemptId(next.id);
-          setAttemptKey(next.secret);
+          setTiming({
+            startedAtMs: Number(payload.startedAtMs),
+            workDeadlineAtMs: Number(payload.workDeadlineAtMs),
+            uploadDeadlineAtMs: Number(payload.uploadDeadlineAtMs),
+          });
+          setSaveMessage(uploads.length ? 'Your saved answers have been restored.' : 'Your answers will save automatically.');
+        } else {
+          setAnswers((payload.answers ?? {}) as Record<string, number>);
+          setResult({
+            id: startedAttemptId,
+            mcqScore: Number(payload.mcqScore),
+            mcqMaximum: Number(payload.mcqMaximum),
+            answers: (payload.answers ?? {}) as Record<string, number>,
+            correctAnswers: payload.correctAnswers as Record<string, number>,
+            writtenSolutions: payload.writtenSolutions as Record<string, string>,
+          });
+          localStorage.removeItem(attemptIdKey);
         }
-      } catch {
-        if (!cancelled) setSaveMessage('Could not check saved answers. Your new answers will still save automatically.');
+      } catch (error) {
+        if (!cancelled) setAttemptStartError(error instanceof Error ? error.message : 'The timed test could not be started.');
       } finally {
         if (!cancelled) setDraftLoaded(true);
       }
@@ -1233,12 +1283,43 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   }, [attemptIdKey, attemptSecretKey]);
 
   useEffect(() => {
-    if (!draftLoaded || !attemptId || !attemptKey || result) return;
+    if (!draftLoaded || !attemptId || !attemptKey || result || workLocked) return;
     const timer = window.setTimeout(() => {
       void saveDraftMetadata().catch(() => {});
     }, 900);
     return () => window.clearTimeout(timer);
-  }, [studentName, answers, draftLoaded, attemptId, attemptKey, result]);
+  }, [studentName, answers, draftLoaded, attemptId, attemptKey, result, workLocked]);
+
+  useEffect(() => {
+    if (!timing || result) return;
+    const updateClock = () => {
+      const anchor = clockAnchor.current;
+      setClockNow(anchor ? anchor.serverNowMs + (performance.now() - anchor.performanceNow) : Date.now());
+    };
+    updateClock();
+    const timer = window.setInterval(updateClock, 1000);
+    document.addEventListener('visibilitychange', updateClock);
+    window.addEventListener('focus', updateClock);
+    return () => {
+      window.clearInterval(timer);
+      document.removeEventListener('visibilitychange', updateClock);
+      window.removeEventListener('focus', updateClock);
+    };
+  }, [timing, result]);
+
+  useEffect(() => {
+    if (!timing || result || warnedAtFifteen.current || remainingSeconds > 15 * 60 || remainingSeconds <= 0) return;
+    warnedAtFifteen.current = true;
+    setShowTimeWarning(true);
+    const timer = window.setTimeout(() => setShowTimeWarning(false), 12000);
+    return () => window.clearTimeout(timer);
+  }, [remainingSeconds, result, timing]);
+
+  useEffect(() => {
+    if (!uploadLocked || result || submitting || autoSubmitStarted.current || !draftLoaded) return;
+    autoSubmitStarted.current = true;
+    void submitTest(true);
+  }, [uploadLocked, result, submitting, draftLoaded, autoSubmitRetry]);
 
   useEffect(() => {
     if (!hasWork || result) return;
@@ -1268,26 +1349,30 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     setConfirmOpen(true);
   }
 
-  async function submitTest() {
+  async function submitTest(automatic = false) {
     setConfirmOpen(false);
     setSubmitting(true);
     setSubmissionError('');
     try {
-      setProgress('Saving your completed test…');
-      if (!(await saveEverything())) {
-        setProgress('');
-        return;
+      if (!automatic) {
+        setProgress('Saving your completed test…');
+        if (!(await saveEverything())) {
+          setProgress('');
+          return;
+        }
       }
 
-      setProgress('Finishing your submission…');
+      setProgress(automatic ? 'Time is over. Submitting your saved work…' : 'Finishing your submission…');
       const final = await readResponse(await fetch(`/api/submissions/${attemptId}/finalize`, {
         method: 'POST',
-        headers: { 'x-attempt-key': attemptKey },
+        headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
+        body: JSON.stringify(automatic ? {} : { answers }),
       }));
       setResult({
         id: String(final.id),
         mcqScore: Number(final.mcqScore),
         mcqMaximum: Number(final.mcqMaximum),
+        answers: (final.answers ?? {}) as Record<string, number>,
         correctAnswers: final.correctAnswers as Record<string, number>,
         writtenSolutions: final.writtenSolutions as Record<string, string>,
       });
@@ -1297,13 +1382,35 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     } catch (error) {
       setProgress('');
       setSubmissionError(error instanceof Error ? error.message : 'The test could not be submitted. Please try again.');
+      if (automatic) {
+        window.setTimeout(() => {
+          autoSubmitStarted.current = false;
+          setAutoSubmitRetry((current) => current + 1);
+        }, 5000);
+      }
     } finally {
       setSubmitting(false);
     }
   }
 
+  if (!draftLoaded) {
+    return <div className="content-view test-starting"><Loader2 /><strong>Preparing your timed test…</strong><span>Your saved attempt and secure timer are being loaded.</span></div>;
+  }
+
+  if (attemptStartError) {
+    return <div className="content-view test-starting error"><ShieldCheck /><strong>The test could not be opened</strong><span>{attemptStartError}</span><button type="button" onClick={onChapters}><ArrowLeft /> Return to chapters</button></div>;
+  }
+
   return (
     <div className="content-view paper-page">
+      {!result && timing && (
+        <aside className={`exam-timer ${remainingSeconds <= 15 * 60 ? 'warning' : ''} ${workLocked ? 'upload-only' : ''}`} aria-live="polite">
+          <Timer />
+          <span>{workLocked ? 'Answering time ended' : 'Time left'}<strong>{formatExamTime(remainingSeconds)}</strong></span>
+          {workLocked && <small>Save any remaining answer scans now.</small>}
+        </aside>
+      )}
+      {showTimeWarning && <div className="time-warning-toast" role="alert"><Timer /><span><strong>15 minutes left</strong><small>Review your answers and begin preparing your answer scans.</small></span></div>}
       <div className="paper-toolbar">
         <Breadcrumb items={[
           { label: currentPaper.board ?? 'CBSE', onClick: () => requestExit(onBoard) },
@@ -1325,7 +1432,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
         </header>
 
         <section className="student-fields" aria-label="Student details">
-          <label>Student name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your name" /></label>
+          <label>Student name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your name" disabled={workLocked} /></label>
           <label>Date <span>{new Date().toLocaleDateString()}</span></label>
         </section>
 
@@ -1340,6 +1447,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             <li>This paper contains 24 compulsory questions divided into Sections A to E.</li>
             <li>Tick one correct option for each MCQ. Write descriptive answers on paper, then upload the scan below the matching question.</li>
             <li>Show the required steps and reasoning. Use of calculators is not allowed.</li>
+            <li>The timer continues if you leave or refresh this page. Submit before the displayed time ends.</li>
             <li>{currentPaper.focus}</li>
           </ol>
         </section>
@@ -1353,7 +1461,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
-                      <input type="radio" name={`question-${item.number}`} checked={answers[String(item.number)] === index} onChange={() => setAnswers((current) => ({ ...current, [String(item.number)]: index }))} />
+                      <input type="radio" name={`question-${item.number}`} checked={answers[String(item.number)] === index} disabled={workLocked} onChange={() => setAnswers((current) => ({ ...current, [String(item.number)]: index }))} />
                       <span><em>{String.fromCharCode(65 + index)}</em><MathText formula>{option}</MathText></span>
                     </label>
                   ))}
@@ -1374,21 +1482,22 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               assertion={item.assertion}
               reason={item.reason}
               selected={answers[String(item.number)]}
+              disabled={workLocked}
               onChange={(answer) => setAnswers((current) => ({ ...current, [String(item.number)]: answer }))}
             />
           ))}
         </PaperSection>
 
         <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
-          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} onFilesChange={(files) => updateWrittenFiles(23, files)}>
+          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(23, files)}>
             <QuestionContent value={currentPaper.written[23]} />
           </WrittenQuestion>
         </PaperSection>
@@ -1398,7 +1507,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             <div className="case-study-label">Case study</div>
             <p><MathText>{currentPaper.caseStudy}</MathText></p>
           </div>
-          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} onFilesChange={(files) => updateWrittenFiles(24, files)}>
+          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(24, files)}>
             <QuestionContent value={currentPaper.written[24]} />
           </WrittenQuestion>
         </PaperSection>
@@ -1407,7 +1516,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
         <section className="test-submit-panel">
           <div><p>Finished the paper?</p><h2>Submit for marking</h2><span>Your MCQs will be checked immediately. Written answers will be sent securely to the teacher.</span></div>
-          <button className="save-answers-button" type="button" onClick={() => void saveEverything()} disabled={!draftLoaded || isSaving || submitting || Boolean(result)}>{isSaving ? <Loader2 /> : <Save />}{isSaving ? 'Saving…' : 'Save answers'}</button>
+          <button className="save-answers-button" type="button" onClick={() => void saveEverything()} disabled={!draftLoaded || isSaving || submitting || Boolean(result) || uploadLocked}>{isSaving ? <Loader2 /> : <Save />}{isSaving ? 'Saving…' : workLocked ? 'Save scans' : 'Save answers'}</button>
           <button type="button" onClick={requestSubmission} disabled={submitting || Boolean(result)}>{submitting ? <Loader2 /> : result ? <CheckCircle2 /> : <Send />}{submitting ? 'Submitting…' : result ? 'Submitted' : 'Submit test'}</button>
           {(submissionError || progress) && <p className={submissionError ? 'submit-error' : 'submit-progress'} role="status">{submissionError || progress}</p>}
         </section>
@@ -1416,27 +1525,33 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           <section className="answer-review" id="answer-review" aria-labelledby="answer-review-title">
             <header className="answer-review-header">
               <div><p>Unlocked after submission</p><h2 id="answer-review-title">Answers and model solutions</h2></div>
-              <span><CheckCircle2 /> Submitted</span>
+              <span><CheckCircle2 /> Objective marks: {result.mcqScore}/{result.mcqMaximum}</span>
             </header>
+
+            <div className="answer-review-score">
+              <span><strong>{result.mcqScore}</strong> correct</span>
+              <span><strong>{Object.keys(result.answers).length - result.mcqScore}</strong> incorrect</span>
+              <span><strong>{result.mcqMaximum - Object.keys(result.answers).length}</strong> unanswered</span>
+              <span><strong>Pending</strong> written marks</span>
+            </div>
 
             <div className="answer-review-section">
               <h3>Section A — MCQ answers</h3>
               <div className="mcq-answer-review">
                 {currentPaper.mcqs.map((item) => {
-                  const studentAnswer = answers[String(item.number)];
+                  const studentAnswer = result.answers[String(item.number)];
                   const correctAnswer = result.correctAnswers[String(item.number)];
                   const isCorrect = studentAnswer === correctAnswer;
-                  const studentAnswerText = studentAnswer === undefined ? 'Not answered' : `${String.fromCharCode(65 + studentAnswer)}. ${item.options[studentAnswer]}`;
                   return (
                     <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={item.number}>
                       <div><strong>Question {item.number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
-                      <p><span>Your answer</span><b>{studentAnswerText}</b></p>
-                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {item.options[correctAnswer]}</b></p>
+                      <p><span>Your answer</span><b>{studentAnswer === undefined ? 'Not answered' : <>{String.fromCharCode(65 + studentAnswer)}. <MathText>{item.options[studentAnswer]}</MathText></>}</b></p>
+                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. <MathText>{item.options[correctAnswer]}</MathText></b></p>
                     </div>
                   );
                 })}
                 {[15, 16].map((number) => {
-                  const studentAnswer = answers[String(number)];
+                  const studentAnswer = result.answers[String(number)];
                   const correctAnswer = result.correctAnswers[String(number)];
                   const isCorrect = studentAnswer === correctAnswer;
                   const studentAnswerText = studentAnswer === undefined ? 'Not answered' : `${String.fromCharCode(65 + studentAnswer)}. ${assertionReasonOptions[studentAnswer]}`;
@@ -1460,6 +1575,8 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                 ))}
               </div>
             </div>
+
+            <TestFeedback submissionId={result.id} attemptKey={attemptKey} />
           </section>
         )}
       </article>
@@ -1475,7 +1592,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
       <Dialog open={exitAction !== null} onOpenChange={(open) => { if (!open && !exitSaving) setExitAction(null); }}>
         <DialogContent className="submit-confirm-dialog">
-          <DialogHeader><span className="start-test-icon"><ArrowLeft /></span><DialogTitle>Do you want to exit the test?</DialogTitle><DialogDescription>Your answers are saved automatically. You can return to this chapter later and continue from where you stopped.</DialogDescription></DialogHeader>
+          <DialogHeader><span className="start-test-icon"><ArrowLeft /></span><DialogTitle>Do you want to exit the test?</DialogTitle><DialogDescription>Your saved answers will remain here, but the exam timer continues while you are away.</DialogDescription></DialogHeader>
           <DialogFooter>
             <button className="test-later-button" type="button" onClick={() => setExitAction(null)} disabled={exitSaving}>Continue test</button>
             <button className="test-start-button" type="button" onClick={() => void saveAndExit()} disabled={exitSaving}>{exitSaving ? <Loader2 /> : <Save />}{exitSaving ? 'Saving…' : 'Save and exit'}</button>
@@ -1486,14 +1603,19 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
       <Dialog open={result !== null && !showAnswers} onOpenChange={() => {}}>
         <DialogContent className="submission-success-dialog">
           <DialogHeader><span className="submission-success-icon"><CheckCircle2 /></span><DialogTitle>Test submitted successfully</DialogTitle><DialogDescription>Your answer sheets are now available in the teacher review area.</DialogDescription></DialogHeader>
-          <div className="instant-score"><span>MCQ score</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
-          <p>Written-answer marks and teacher feedback will be added after review.</p>
+          <div className="submission-result-grid">
+            <span><small>Correct</small><strong>{result?.mcqScore}</strong></span>
+            <span><small>Incorrect</small><strong>{result ? Object.keys(result.answers).length - result.mcqScore : 0}</strong></span>
+            <span><small>Unanswered</small><strong>{result ? result.mcqMaximum - Object.keys(result.answers).length : 0}</strong></span>
+          </div>
+          <div className="instant-score"><span>Objective marks</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
+          <p>Your correct and incorrect answers are ready to review. The final mark out of 40 will appear after the teacher marks your uploaded written work.</p>
           <DialogFooter className="submission-success-actions">
             <button className="test-later-button" type="button" onClick={onHome}>Return home</button>
             <button className="test-start-button" type="button" onClick={() => {
               setShowAnswers(true);
               requestAnimationFrame(() => document.getElementById('answer-review')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
-            }}><BookOpen /> View answers</button>
+            }}><BookOpen /> View answers &amp; feedback</button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
@@ -1503,6 +1625,86 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
 function QuestionContent({ value }: { value: string | readonly string[] }) {
   return Array.isArray(value) ? <>{value.map((line) => <span key={line}><MathText>{line}</MathText></span>)}</> : <MathText>{value as string}</MathText>;
+}
+
+function TestFeedback({ submissionId, attemptKey }: { submissionId: string; attemptKey: string }) {
+  type FeedbackKey = (typeof feedbackQuestions)[number]['key'];
+  const [ratings, setRatings] = useState<Partial<Record<FeedbackKey, number>>>({});
+  const [saving, setSaving] = useState(false);
+  const [message, setMessage] = useState('');
+  const complete = feedbackQuestions.every((question) => ratings[question.key]);
+
+  useEffect(() => {
+    let cancelled = false;
+    void fetch(`/api/submissions/${encodeURIComponent(submissionId)}/feedback`, {
+      cache: 'no-store',
+      headers: { 'x-attempt-key': attemptKey },
+    }).then(async (response) => {
+      if (!response.ok) return;
+      const payload = await response.json() as { feedback?: Record<string, number> | null };
+      if (!cancelled && payload.feedback) {
+        setRatings({
+          uploadEase: payload.feedback.upload_ease,
+          questionQuality: payload.feedback.question_quality,
+          difficultyFit: payload.feedback.difficulty_fit,
+          mathClarity: payload.feedback.math_clarity,
+          notesSolutions: payload.feedback.notes_solutions,
+        });
+        setMessage('Thank you. Your feedback has been saved.');
+      }
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [attemptKey, submissionId]);
+
+  async function submitFeedback() {
+    if (!complete) {
+      setMessage('Please rate all five questions.');
+      return;
+    }
+    setSaving(true);
+    setMessage('');
+    try {
+      const response = await fetch(`/api/submissions/${encodeURIComponent(submissionId)}/feedback`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-attempt-key': attemptKey },
+        body: JSON.stringify(ratings),
+      });
+      const payload = await response.json() as { error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'Feedback could not be saved.');
+      setMessage('Thank you. Your feedback has been saved.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'Feedback could not be saved.');
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <section className="test-feedback" aria-labelledby="test-feedback-title">
+      <header><p>Help us improve</p><h3 id="test-feedback-title">Rate your test experience</h3><span>Select 1 to 5 stars for each question.</span></header>
+      <div className="test-feedback-questions">
+        {feedbackQuestions.map((question, index) => (
+          <div key={question.key}>
+            <label>{index + 1}. {question.label}</label>
+            <span className="star-rating" role="radiogroup" aria-label={question.label}>
+              {[1, 2, 3, 4, 5].map((rating) => (
+                <button
+                  type="button"
+                  key={rating}
+                  className={(ratings[question.key] ?? 0) >= rating ? 'selected' : ''}
+                  role="radio"
+                  aria-checked={ratings[question.key] === rating}
+                  aria-label={`${rating} out of 5 stars`}
+                  onClick={() => { setRatings((current) => ({ ...current, [question.key]: rating })); setMessage(''); }}
+                ><Star /></button>
+              ))}
+            </span>
+          </div>
+        ))}
+      </div>
+      <footer><button type="button" onClick={() => void submitFeedback()} disabled={!complete || saving}>{saving ? <Loader2 /> : <Send />}{saving ? 'Saving…' : 'Send feedback'}</button>{message && <p role="status">{message}</p>}</footer>
+    </section>
+  );
 }
 
 function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
@@ -1520,7 +1722,7 @@ function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
     return <figure className="question-visual"><svg viewBox="0 0 260 165" role="img" aria-label="Ten by eight centimetre rectangle with a four by three centimetre corner removed"><path className="diagram-fill" d="M35 25 H225 V85 H149 V145 H35 Z" /><path d="M35 25 H225 V85 H149 V145 H35 Z" /><text x="130" y="18" textAnchor="middle">10 cm</text><text x="21" y="88" textAnchor="middle" transform="rotate(-90 21 88)">8 cm</text><text x="187" y="105" textAnchor="middle">4 cm</text><text x="157" y="119" transform="rotate(-90 157 119)">3 cm</text></svg></figure>;
   }
   if (kind === 'fraction-strip') {
-    return <figure className="question-visual"><svg viewBox="0 0 260 105" role="img" aria-label="Fraction strip divided into four equal parts with three parts shaded">{[0,1,2,3].map((index) => <rect key={index} className={index < 3 ? 'diagram-fill' : ''} x={30 + index * 50} y="25" width="50" height="42" />)}<text x="130" y="91" textAnchor="middle">3/4 shaded</text></svg></figure>;
+    return <figure className="question-visual"><svg viewBox="0 0 260 105" role="img" aria-label="Fraction strip divided into four equal parts with three parts shaded">{[0,1,2,3].map((index) => <rect key={index} className={index < 3 ? 'diagram-fill' : ''} x={30 + index * 50} y="25" width="50" height="42" />)}<text x="130" y="91" textAnchor="middle">¾ shaded</text></svg></figure>;
   }
   if (kind === 'circle-radius') {
     return <figure className="question-visual"><svg viewBox="0 0 260 155" role="img" aria-label="Circle with horizontal diameter AB of ten centimetres and radius OP"><circle cx="130" cy="76" r="58" /><path d="M72 76 H188 M130 76 L156 24" /><circle cx="130" cy="76" r="3" /><text x="60" y="81">A</text><text x="193" y="81">B</text><text x="122" y="92">O</text><text x="158" y="21">P</text><text x="130" y="70" textAnchor="middle">10 cm</text></svg></figure>;
@@ -1591,7 +1793,7 @@ function QuestionSource({ value }: { value: string }) {
   return <span className="question-source" title="Verified against the cited source"><CheckCircle2 /> Previous exam: {value}</span>;
 }
 
-function WrittenQuestion({ number, marks, source, children, files, savedFiles, isSaving, onFilesChange }: {
+function WrittenQuestion({ number, marks, source, children, files, savedFiles, isSaving, disabled, onFilesChange }: {
   number: number;
   marks: number;
   source?: string;
@@ -1599,13 +1801,14 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
   files: File[];
   savedFiles: SavedUpload[];
   isSaving: boolean;
+  disabled: boolean;
   onFilesChange: (files: File[]) => void;
 }) {
   const cameraInputId = `answer-camera-${number}`;
   const fileInputId = `answer-file-${number}`;
 
   function addFiles(fileList: FileList | null) {
-    if (!fileList) return;
+    if (!fileList || disabled) return;
     const availableSlots = Math.max(0, 4 - savedFiles.length);
     onFilesChange([...files, ...Array.from(fileList)].slice(0, availableSlots));
   }
@@ -1624,6 +1827,7 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
           type="file"
           accept="image/*"
           capture="environment"
+          disabled={disabled}
           onChange={(event) => addFiles(event.target.files)}
         />
         <label className="answer-upload camera-upload" htmlFor={cameraInputId}>
@@ -1636,6 +1840,7 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
           type="file"
           accept=".jpg,.jpeg,.png,.webp,.pdf"
           multiple
+          disabled={disabled}
           onChange={(event) => addFiles(event.target.files)}
         />
         <label className="answer-upload" htmlFor={fileInputId}>
@@ -1662,13 +1867,13 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
   );
 }
 
-function AssertionQuestion({ number, assertion, reason, selected, onChange }: { number: number; assertion: string; reason: string; selected?: number; onChange: (answer: number) => void }) {
+function AssertionQuestion({ number, assertion, reason, selected, disabled, onChange }: { number: number; assertion: string; reason: string; selected?: number; disabled: boolean; onChange: (answer: number) => void }) {
   return (
     <fieldset className="paper-question assertion-question">
       <legend><strong>{number}.</strong> <span><b>Assertion (A):</b> <MathText>{assertion}</MathText><br /><b>Reason (R):</b> <MathText>{reason}</MathText></span><em>[1]</em></legend>
       <div className="assertion-options">
         {assertionReasonOptions.map((_, index) => (
-          <label key={index}><input type="radio" name={`question-${number}`} checked={selected === index} onChange={() => onChange(index)} /><span>{String.fromCharCode(65 + index)}</span></label>
+          <label key={index}><input type="radio" name={`question-${number}`} checked={selected === index} disabled={disabled} onChange={() => onChange(index)} /><span>{String.fromCharCode(65 + index)}</span></label>
         ))}
       </div>
     </fieldset>

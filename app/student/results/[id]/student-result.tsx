@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, Clock3, Loader2 } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { PaperDefinition } from '@/lib/papers';
+import MathText from '@/app/notes/math-text';
 
 type ResultPayload = {
   submission: { paper_id: keyof typeof paperDefinitionsById; student_name: string; status: string; mcq_answers: Record<string, number>; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string };
@@ -45,16 +46,16 @@ export default function StudentResult({ id }: { id: string }) {
     <section className="student-result-section"><h2>Objective-question review</h2><div className="student-mcq-review">{paper?.mcqs.map((question) => {
       const chosen = result.submission.mcq_answers[String(question.number)];
       const correct = result.correctAnswers[String(question.number)];
-      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p>{question.question}</p><span>Your answer: {String.fromCharCode(65 + chosen)} · Correct: {String.fromCharCode(65 + correct)}</span></article>;
+      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p><MathText>{question.question}</MathText></p><span>Your answer: {chosen === undefined ? 'Not answered' : <>{String.fromCharCode(65 + chosen)}. <MathText>{question.options[chosen]}</MathText></>}<br />Correct answer: {String.fromCharCode(65 + correct)}. <MathText>{question.options[correct]}</MathText></span></article>;
     })}{paper?.assertions.map((question) => {
       const chosen = result.submission.mcq_answers[String(question.number)];
       const correct = result.correctAnswers[String(question.number)];
-      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p>Assertion: {question.assertion} Reason: {question.reason}</p><span>Your answer: {String.fromCharCode(65 + chosen)} · Correct: {String.fromCharCode(65 + correct)}</span></article>;
+      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p>Assertion: <MathText>{question.assertion}</MathText> Reason: <MathText>{question.reason}</MathText></p><span>Your answer: {chosen === undefined ? 'Not answered' : String.fromCharCode(65 + chosen)} · Correct: {String.fromCharCode(65 + correct)}</span></article>;
     })}</div></section>
     <section className="student-result-section"><h2>Written marks and model solutions</h2><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
       const mark = result.marks.find((entry) => entry.question_number === number);
       const value = paper?.written[number];
-      return <article key={number}><div><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded} marks` : 'Awaiting marks'}</em></div><p>{Array.isArray(value) ? value.join(' ') : value}</p><span>{result.writtenSolutions[String(number)]}</span></article>;
+      return <article key={number}><div><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded} marks` : 'Awaiting marks'}</em></div><p><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p><span><MathText>{result.writtenSolutions[String(number)]}</MathText></span></article>;
     })}</div></section>
   </main>;
 }
