@@ -111,6 +111,19 @@ export default function TeacherReviewPage() {
   useEffect(() => { void loadList(); }, []);
 
   const writtenTotal = useMemo(() => Object.values(marks).reduce((sum, mark) => sum + (Number(mark) || 0), 0), [marks]);
+  const papersByGrade = useMemo(() => {
+    const grouped = new Map<number, PaperDefinition[]>();
+    papers.forEach((paper) => {
+      const grade = paper.grade ?? 10;
+      grouped.set(grade, [...(grouped.get(grade) ?? []), paper]);
+    });
+    return Array.from(grouped.entries())
+      .sort(([left], [right]) => left - right)
+      .map(([grade, gradePapers]) => ({
+        grade,
+        papers: gradePapers.sort((left, right) => (left.chapterNumber ?? 0) - (right.chapterNumber ?? 0)),
+      }));
+  }, [papers]);
   const selectedPaper: Detail['guide'] = detail?.guide ?? {
     ...paperReviews['real-numbers-01'],
     writtenQuestions: paperReviews['real-numbers-01'].writtenQuestions.map((question) => ({ ...question, modelSolution: '', markingScheme: [] })),
@@ -346,10 +359,15 @@ export default function TeacherReviewPage() {
         <section className="paper-editor-workspace">
           <aside className="paper-editor-list">
             <div><p>Teacher library</p><h2>Question papers</h2></div>
-            {paperLoading ? <span className="teacher-loading"><Loader2 /> Loading papers…</span> : papers.map((paper) => (
-              <button className={editingPaper?.id === paper.id ? 'active' : ''} type="button" key={paper.id} onClick={() => setEditingPaper(structuredClone(paper))}>
-                <BookOpen /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · Paper {paper.paperNumber}</small></span>
-              </button>
+            {paperLoading ? <span className="teacher-loading"><Loader2 /> Loading papers…</span> : papersByGrade.map(({ grade, papers: gradePapers }) => (
+              <section className="paper-grade-group" key={grade} aria-labelledby={`teacher-grade-${grade}`}>
+                <h3 id={`teacher-grade-${grade}`}>Grade {grade}<span>{gradePapers.length} {gradePapers.length === 1 ? 'chapter' : 'chapters'}</span></h3>
+                {gradePapers.map((paper) => (
+                  <button className={`paper-editor-paper ${editingPaper?.id === paper.id ? 'active' : ''}`} type="button" key={paper.id} onClick={() => setEditingPaper(structuredClone(paper))}>
+                    <BookOpen /><span><strong>{paper.chapter}</strong><small>Chapter {paper.chapterNumber} · Paper {paper.paperNumber}</small></span>
+                  </button>
+                ))}
+              </section>
             ))}
           </aside>
           <div className="paper-editor-panel">

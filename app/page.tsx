@@ -583,12 +583,12 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
             </button>
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(11)}>
               <span className="folder-icon"><GraduationCap /></span>
-              <span><small>CBSE · NCERT Mathematics</small><strong>Grade 11</strong><em>14 chapter tests ready</em></span>
+              <span><small>CBSE · NCERT Mathematics</small><strong>Grade 11</strong><em>14 chapters</em></span>
               <ChevronRight />
             </button>
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(12)}>
               <span className="folder-icon"><GraduationCap /></span>
-              <span><small>CBSE Mathematics · Part II</small><strong>Grade 12</strong><em>13 chapters · Integrals ready</em></span>
+              <span><small>CBSE Mathematics · Part II</small><strong>Grade 12</strong><em>13 chapters</em></span>
               <ChevronRight />
             </button>
           </div>
@@ -596,7 +596,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       ) : (
         <section className="empty-folder">
           <span><Folder /></span>
-          <h2>This folder is ready.</h2>
+          <h2>Chapters are coming soon.</h2>
           <p>Grades and chapters will be added later.</p>
           <button type="button" onClick={onHome}><ArrowLeft /> Back to curricula</button>
         </section>
@@ -887,7 +887,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
                 : !studentRecords.signedIn
                   ? 'Sign in with Google to continue'
                   : completedSubmission
-                    ? 'Your completed paper is ready'
+                    ? 'Your completed paper is available'
                     : 'Pay ₹30 to open this test'
               : 'This paper is coming soon'}</DialogTitle>
             {(!isAvailablePaper || studentRecords === null || !studentRecords.signedIn || completedSubmission) && <DialogDescription>
@@ -897,7 +897,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
                   : !studentRecords.signedIn
                     ? 'Sign in once to keep paid chapters, completed papers and marks available on every device.'
                     : 'Review your most recent paper or start another attempt without paying again.'
-                : 'This chapter folder is ready. Its question paper and payment access will be added later.'}
+                : 'This chapter’s question paper and payment access will be added later.'}
             </DialogDescription>}
           </DialogHeader>
           {isAvailablePaper ? (

@@ -144,12 +144,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 14,
-        "question": "If A = {1, 2, 3, 4} and B = {3, 4, 5}, then (A − B) ∪ (B − A) is",
+        "question": "Which of the following sets is infinite?",
         "options": [
-          "{3, 4}",
-          "{1, 2, 5}",
-          "{1, 2, 3, 4, 5}",
-          "{1, 2}"
+          "{x ∈ N : x < 10}",
+          "{x ∈ Z : −3 ≤ x ≤ 3}",
+          "{x ∈ R : 0 < x < 1}",
+          "{p : p is a prime divisor of 60}"
         ]
       }
     ],
@@ -194,7 +194,7 @@ const seeds: ChapterSeed[] = [
       1,
       0,
       2,
-      1,
+      2,
       2,
       2
     ],
@@ -237,12 +237,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 3,
-        "question": "If A has 2 elements and B has 3 elements, the number of relations from A to B is",
+        "question": "An element of R × R × R has the form",
         "options": [
-          "6",
-          "8",
-          "32",
-          "64"
+          "a real number x",
+          "an ordered pair (x, y)",
+          "an ordered triple (x, y, z)",
+          "an unordered set {x, y, z}"
         ]
       },
       {
@@ -386,7 +386,7 @@ const seeds: ChapterSeed[] = [
     "answerKey": [
       1,
       1,
-      3,
+      2,
       0,
       1,
       0,
@@ -490,12 +490,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 8,
-        "question": "tan 75° equals",
+        "question": "The domain of f(x) = tan x is",
         "options": [
-          "2−√3",
-          "2+√3",
-          "√3−1",
-          "√3+1"
+          "R",
+          "R − {nπ : n ∈ Z}",
+          "R − {(2n + 1)π/2 : n ∈ Z}",
+          "[−1, 1]"
         ]
       },
       {
@@ -577,7 +577,7 @@ const seeds: ChapterSeed[] = [
       "19": "Prove that sin(x+y)sin(x−y)=sin²x−sin²y.",
       "20": "If cos x=−12/13 and x lies in the third quadrant, find sin 2x, cos 2x and tan 2x.",
       "21": "Prove that (sin 3x + sin x)/(cos 3x + cos x)=tan 2x wherever the expressions are defined.",
-      "22": "Prove that cos 20° cos 40° cos 80°=1/8.",
+      "22": "Sketch y = 2 sin x for 0 ≤ x ≤ 2π, marking its zeros and extrema. Hence state its range and least positive period.",
       "23": "Prove that (sin x+sin 3x+sin 5x)/(cos x+cos 3x+cos 5x)=tan 3x, wherever the denominator is non-zero. Hence evaluate the ratio when x=10°.",
       "24": [
         "(a) State the period of T. (1)",
@@ -594,7 +594,7 @@ const seeds: ChapterSeed[] = [
       1,
       0,
       1,
-      1,
+      2,
       0,
       2,
       0,
@@ -610,7 +610,7 @@ const seeds: ChapterSeed[] = [
       "19": "sin(x+y)sin(x−y)=(sin x cos y+cos x sin y)(sin x cos y−cos x sin y)=sin²x cos²y−cos²x sin²y=sin²x(1−sin²y)−(1−sin²x)sin²y=sin²x−sin²y.",
       "20": "In quadrant III, sin x=−5/13. Thus sin2x=2sinx cosx=120/169; cos2x=cos²x−sin²x=(144−25)/169=119/169; tan2x=sin2x/cos2x=120/119.",
       "21": "Using sum-to-product, sin3x+sinx=2sin2x cosx and cos3x+cosx=2cos2x cosx. Their ratio is tan2x after cancelling 2cosx, wherever cancellation and the original ratio are defined.",
-      "22": "Use sin2θ=2sinθcosθ successively: sin160°=2sin80°cos80°=4sin40°cos40°cos80°=8sin20°cos20°cos40°cos80°. Since sin160°=sin20° and sin20°≠0, cos20°cos40°cos80°=1/8.",
+      "22": "Plot the points (0, 0), (π/2, 2), (π, 0), (3π/2, −2) and (2π, 0), then join them with a smooth sine curve. The zeros are x = 0, π and 2π; the maximum is 2 at x = π/2 and the minimum is −2 at x = 3π/2. The range is [−2, 2] and the least positive period is 2π.",
       "23": "sinx+sin5x=2sin3x cos2x, so the numerator is sin3x(1+2cos2x). Similarly cosx+cos5x=2cos3x cos2x, so the denominator is cos3x(1+2cos2x). The ratio is tan3x wherever defined. At x=10°, it is tan30°=1/√3.",
       "24": "(a) sin(πt/6) has period 2π/(π/6)=12 hours. (b) T(3)=25+4sin(π/2)=29°C. (c) Since −1≤sin≤1, 21≤T≤29. T(9)=25+4sin(3π/2)=21°C, which is 4°C below the mean 25°C."
     }
@@ -753,12 +753,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 14,
-        "question": "i²⁰²⁶ equals",
+        "question": "Which equation most directly motivates introducing i = √(−1)?",
         "options": [
-          "1",
-          "i",
-          "−1",
-          "−i"
+          "x² − 1 = 0",
+          "x² + 1 = 0",
+          "x² − 4 = 0",
+          "x² − x = 0"
         ]
       }
     ],
@@ -795,7 +795,7 @@ const seeds: ChapterSeed[] = [
       1,
       1,
       1,
-      2,
+      1,
       0,
       2,
       3,
@@ -1182,7 +1182,7 @@ const seeds: ChapterSeed[] = [
     ],
     "written": {
       "17": "How many three-digit even numbers can be formed from the digits 1, 2, 3, 4, 5 and 6 without repetition?",
-      "18": "A four-member team is chosen from 6 boys and 5 girls. In how many ways can the team contain exactly 2 girls?",
+      "18": "Using the definitions of ⁿPᵣ and ⁿCᵣ, establish ⁿPᵣ = r! · ⁿCᵣ. Hence evaluate ⁸C₃ if ⁸P₃ = 336.",
       "19": "Find the number of distinct arrangements of the letters of BANANA.",
       "20": "How many five-digit numbers divisible by 5 can be formed from the digits 0, 1, 2, 3, 4, 5 and 6 without repetition?",
       "21": "Nine seats are in a row. In how many ways can 4 seats be selected so that no two selected seats are adjacent?",
@@ -1215,7 +1215,7 @@ const seeds: ChapterSeed[] = [
     ],
     "solutions": {
       "17": "The units digit has 3 choices: 2, 4 or 6. After it is chosen, the hundreds digit has 5 choices and the tens digit has 4 choices. Hence the number is 3 × 5 × 4 = 60.",
-      "18": "Choose 2 girls from 5 and 2 boys from 6. The required number is ⁵C₂ × ⁶C₂ = 10 × 15 = 150.",
+      "18": "By definition, ⁿPᵣ = n!/(n−r)! and ⁿCᵣ = n!/[r!(n−r)!]. Therefore r! · ⁿCᵣ = n!/(n−r)! = ⁿPᵣ. Hence ⁸C₃ = ⁸P₃/3! = 336/6 = 56.",
       "19": "BANANA has 6 letters, with A repeated 3 times and N repeated 2 times. The number of distinct arrangements is 6!/(3!2!) = 60.",
       "20": "A number divisible by 5 ends in 0 or 5. If it ends in 0, the remaining places can be filled in 6 × 5 × 4 × 3 = 360 ways. If it ends in 5, the first digit has 5 non-zero choices and the remaining three places have 5 × 4 × 3 choices, giving 300 ways. Total = 360 + 300 = 660.",
       "21": "Let the selected seat numbers be x₁ < x₂ < x₃ < x₄ with gaps of at least 2. Put yᵢ = xᵢ − (i − 1). Then 1 ≤ y₁ < y₂ < y₃ < y₄ ≤ 6. Thus the count is ⁶C₄ = 15.",
@@ -1390,7 +1390,7 @@ const seeds: ChapterSeed[] = [
       "20": "Simplify (x + 1)⁵ + (x − 1)⁵ using binomial expansions.",
       "21": "Use the binomial theorem to prove that 7ⁿ − 6n − 1 is divisible by 36 for every positive integer n.",
       "22": "Show that (1 + x)⁵ − (1 − x)⁵ = 10x + 20x³ + 2x⁵. Hence evaluate (3/2)⁵ − (1/2)⁵.",
-      "23": "Construct the Pascal-triangle row for power 6 from the row for power 5. Hence expand (2x − 1)⁶ completely.",
+      "23": "State the binomial theorem for a positive integral index. Using Pascal’s identity, prove the result by passing from n = k to n = k + 1.",
       "24": [
         "(a) Write the Pascal coefficients for power 4. [1]",
         "(b) Expand (1 + r)⁴. [1]",
@@ -1423,7 +1423,7 @@ const seeds: ChapterSeed[] = [
       "20": "Add the two expansions. Terms containing even powers contributed with opposite signs inside the odd power cancel appropriately, leaving (x + 1)⁵ + (x − 1)⁵ = 2x⁵ + 20x³ + 10x.",
       "21": "Expand 7ⁿ = (1 + 6)ⁿ = 1 + 6n + 36·ⁿC₂ + 6³·ⁿC₃ + ···. Every term after 1 + 6n contains the factor 36. Therefore 7ⁿ − 6n − 1 is divisible by 36.",
       "22": "Subtract the expansions of (1 − x)⁵ from (1 + x)⁵. The even-power terms cancel, giving 10x + 20x³ + 2x⁵. Put x = 1/2: (3/2)⁵ − (1/2)⁵ = 5 + 5/2 + 1/16 = 121/16.",
-      "23": "The power-5 row is 1, 5, 10, 10, 5, 1. Adding adjacent entries gives the power-6 row 1, 6, 15, 20, 15, 6, 1. Hence (2x − 1)⁶ = 64x⁶ − 192x⁵ + 240x⁴ − 160x³ + 60x² − 12x + 1.",
+      "23": "For every positive integer n, (a+b)ⁿ = Σ from r=0 to n of ⁿCᵣaⁿ⁻ʳbʳ. The formula is true for n=1. Assume it holds for n=k. Multiplying by a+b gives two sums: Σ from r=0 to k of ᵏCᵣaᵏ⁺¹⁻ʳbʳ and Σ from r=1 to k+1 of ᵏCᵣ₋₁aᵏ⁺¹⁻ʳbʳ. The end terms are aᵏ⁺¹ and bᵏ⁺¹. For 1≤r≤k, combine like powers and use Pascal’s identity ᵏCᵣ + ᵏCᵣ₋₁ = ᵏ⁺¹Cᵣ. This produces Σ from r=0 to k+1 of ᵏ⁺¹Cᵣaᵏ⁺¹⁻ʳbʳ, proving the result for k+1 and hence for every positive integral index.",
       "24": "(a) The coefficients are 1, 4, 6, 4, 1. (b) (1 + r)⁴ = 1 + 4r + 6r² + 4r³ + r⁴. (c) At r = 0.05, the factor is 1.21550625. The value is ₹10000 × 1.21550625 = ₹12,155.0625, or ₹12,155.06 to the nearest paise."
     }
   },
@@ -1591,7 +1591,7 @@ const seeds: ChapterSeed[] = [
       "18": "In a GP, the fourth term is 54 and the seventh term is 1458. Find the first term and the common ratio.",
       "19": "Find the sum to infinity of 12 − 6 + 3 − 3/2 + ….",
       "20": "Find the sum 5 + 15 + 45 + … + 3645.",
-      "21": "Insert four geometric means between 1 and 243.",
+      "21": "How many terms of the GP 3, 6, 12, … are required to give a sum of 3069?",
       "22": "Two positive numbers have arithmetic mean 13 and geometric mean 12. Find the numbers.",
       "23": "A ball is dropped from a height of 12 m. After each impact it rises to two-thirds of the preceding height. Find the total distance travelled by the ball before it comes to rest.",
       "24": [
@@ -1624,7 +1624,7 @@ const seeds: ChapterSeed[] = [
       "18": "Let the first term be a and ratio be r. Then ar³ = 54 and ar⁶ = 1458. Dividing gives r³ = 27, so r = 3. Therefore a = 54/27 = 2.",
       "19": "Here a = 12 and r = −1/2, with |r| < 1. The sum is a/(1 − r) = 12/[1 − (−1/2)] = 8.",
       "20": "The last term satisfies 5·3ⁿ⁻¹ = 3645, so 3ⁿ⁻¹ = 729 = 3⁶ and n = 7. Thus S₇ = 5(3⁷ − 1)/(3 − 1) = 5465.",
-      "21": "Let 1, G₁, G₂, G₃, G₄, 243 be a GP. Then r⁵ = 243 = 3⁵, so r = 3. The inserted means are 3, 9, 27 and 81.",
+      "21": "Here a=3 and r=2. The finite sum is Sₙ=3(2ⁿ−1)/(2−1)=3069. Hence 2ⁿ−1=1023, so 2ⁿ=1024=2¹⁰. Therefore n=10 terms are required.",
       "22": "If the numbers are x and y, then x + y = 26 and xy = 144. Hence they are roots of t² − 26t + 144 = 0 = (t − 8)(t − 18). The numbers are 8 and 18.",
       "23": "The initial downward distance is 12 m. Rebound heights form the infinite GP 8, 16/3, 32/9, … with ratio 2/3 and sum 8/(1 − 2/3) = 24 m. Every rebound height is travelled upward and downward, so total distance = 12 + 2(24) = 60 m.",
       "24": "(a) Second month = ₹500(1.1) = ₹550. (b) Third month = ₹500(1.1)² = ₹605. (c) The first four amounts are ₹500, ₹550, ₹605 and ₹665.50. Their sum is ₹2,320.50."
@@ -1891,12 +1891,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 6,
-        "question": "The vertices of x²/16 − y²/9 = 1 are",
+        "question": "The vertices of y²/16 − x²/9 = 1 are",
         "options": [
-          "(±3, 0)",
-          "(0, ±3)",
           "(±4, 0)",
-          "(0, ±4)"
+          "(0, ±4)",
+          "(±3, 0)",
+          "(0, ±3)"
         ]
       },
       {
@@ -1971,12 +1971,12 @@ const seeds: ChapterSeed[] = [
       },
       {
         "number": 14,
-        "question": "The point (3, 4) lies on",
+        "question": "The foci of x²/9 + y²/25 = 1 are",
         "options": [
-          "x² + y² = 16",
-          "x² + y² = 20",
-          "x² + y² = 25",
-          "x² + y² = 36"
+          "(±4, 0)",
+          "(0, ±4)",
+          "(±5, 0)",
+          "(0, ±5)"
         ]
       }
     ],
@@ -1996,7 +1996,7 @@ const seeds: ChapterSeed[] = [
       "17": "Find the equation and directrix of the parabola with vertex at the origin and focus (2, 0).",
       "18": "An ellipse has vertices (±5, 0) and foci (±3, 0). Find its standard equation.",
       "19": "For the hyperbola x²/9 − y²/16 = 1, find the foci and eccentricity.",
-      "20": "Find the equation of the circle centred at the origin and passing through (6, 8). Also state its intercepts on the coordinate axes.",
+      "20": "Find the equation of the circle with centre (2, −3) passing through (5, 1). Determine whether (−1, 1) lies on it.",
       "21": "A point on the parabola y² = 16x has ordinate 4. Find its abscissa and its distance from the focus.",
       "22": "For the ellipse x²/36 + y²/20 = 1, find the foci, eccentricity and length of the latus rectum.",
       "23": "A hyperbola has vertices (±4, 0) and eccentricity 5/4. Find its standard equation, foci, directrices and length of its latus rectum.",
@@ -2013,7 +2013,7 @@ const seeds: ChapterSeed[] = [
       3,
       1,
       1,
-      2,
+      1,
       3,
       1,
       2,
@@ -2021,7 +2021,7 @@ const seeds: ChapterSeed[] = [
       2,
       1,
       1,
-      2,
+      1,
       0,
       3
     ],
@@ -2029,7 +2029,7 @@ const seeds: ChapterSeed[] = [
       "17": "For y² = 4ax, the focus is (a, 0) and directrix is x = −a. Here a = 2. Thus the equation is y² = 8x and the directrix is x = −2.",
       "18": "Here a = 5 and c = 3. For an ellipse, b² = a² − c² = 25 − 9 = 16. Hence the equation is x²/25 + y²/16 = 1.",
       "19": "For x²/a² − y²/b² = 1, c² = a² + b² = 9 + 16 = 25, so c = 5. The foci are (±5, 0) and eccentricity e = c/a = 5/3.",
-      "20": "The radius is √(6² + 8²) = 10. Therefore the equation is x² + y² = 100. The intercepts are (±10, 0) and (0, ±10).",
+      "20": "The radius satisfies r²=(5−2)²+[1−(−3)]²=9+16=25. Hence the circle is (x−2)²+(y+3)²=25. For (−1,1), the left side is (−3)²+4²=9+16=25, so the point lies on the circle.",
       "21": "Putting y = 4 in y² = 16x gives 16 = 16x, so x = 1. The focus is (4, 0). The distance from (1, 4) to (4, 0) is √[(1 − 4)² + 4²] = 5.",
       "22": "Here a² = 36, b² = 20, so c² = 16 and c = 4. The foci are (±4, 0). The eccentricity is e = c/a = 2/3. The latus-rectum length is 2b²/a = 40/6 = 20/3.",
       "23": "Here a = 4 and e = 5/4, so c = ae = 5. Since c² = a² + b², b² = 25 − 16 = 9. The equation is x²/16 − y²/9 = 1. The foci are (±5, 0), the directrices are x = ±a/e = ±16/5, and the latus-rectum length is 2b²/a = 18/4 = 9/2.",
@@ -2407,12 +2407,12 @@ const seeds: ChapterSeed[] = [
       "22": "For x ≠ 0, differentiate y = sin x/x.",
       "23": "The displacement of a particle is s(t) = t³ − 6t² + 9t metres. (i) Find its velocity function. (ii) Find the positive times when it is at rest. (iii) Find its velocity at t = 4 seconds.",
       "24": [
-        "(a) Find the average rate of change of T from t = 1 to t = 3. [1]",
-        "(b) Find the instantaneous rate dT/dt. [1]",
-        "(c) Find the instantaneous rates at t = 1 and t = 3, and state whether the temperature is falling or rising at each time. [2]"
+        "(a) Find the coordinates of P. [1]",
+        "(b) Find dy/dx. [1]",
+        "(c) Find the slope and equation of the tangent at P. [2]"
       ]
     },
-    "caseStudy": "During a controlled experiment, the temperature after t minutes is T(t) = t² − 4t + 20 degrees Celsius, for 0 ≤ t ≤ 4.",
+    "caseStudy": "A parabolic arch is modelled by y = x² − 4x + 7. The point P on the arch has x-coordinate 3.",
     "answerKey": [
       2,
       1,
@@ -2439,7 +2439,7 @@ const seeds: ChapterSeed[] = [
       "21": "By the product rule, y′ = 2x sin x + (x² + 1) cos x.",
       "22": "By the quotient rule, y′ = [x cos x − sin x]/x².",
       "23": "(i) v(t) = ds/dt = 3t² − 12t + 9 = 3(t − 1)(t − 3). (ii) v(t) = 0 at t = 1 s and t = 3 s. (iii) v(4) = 3(16) − 48 + 9 = 9 m/s.",
-      "24": "(a) [T(3) − T(1)]/(3 − 1) = (17 − 17)/2 = 0 °C/min. (b) dT/dt = 2t − 4. (c) At t = 1, dT/dt = −2 °C/min, so the temperature is falling; at t = 3, dT/dt = 2 °C/min, so it is rising."
+      "24": "(a) At x=3, y=3²−4(3)+7=4, so P=(3,4). (b) dy/dx=2x−4. (c) At x=3 the slope is 2. Hence y−4=2(x−3), or y=2x−2."
     }
   },
   {
@@ -2605,7 +2605,7 @@ const seeds: ChapterSeed[] = [
       "17": "For the data 12, 7, 15, 10, 6, find the range and the mean deviation about the mean.",
       "18": "Find the variance and standard deviation of 2, 2, 4, 4.",
       "19": "The values 1, 2 and 5 have frequencies 2, k and 1 respectively. If the mean is 9/4, find k.",
-      "20": "Find the mean deviation about the mean for 1, 3, 5, 7, 9.",
+      "20": "For x = 2, 4, 6, 8 with respective frequencies 1, 2, 2, 1, find the median and mean deviation about the median.",
       "21": "The values 10, 20 and 30 have frequencies 2, 3 and 5 respectively. Find the mean, variance and standard deviation.",
       "22": "For the grouped distribution with class intervals 0–10, 10–20, 20–30 and frequencies 2, 4, 2 respectively, find the variance and standard deviation.",
       "23": "For values x = 10, 20, 30, 40, 50 with respective frequencies f = 1, 2, 4, 2, 1, find the mean, mean deviation about the mean, variance and standard deviation.",
@@ -2638,7 +2638,7 @@ const seeds: ChapterSeed[] = [
       "17": "The mean is (12 + 7 + 15 + 10 + 6)/5 = 10. Range = 15 − 6 = 9. Mean deviation about 10 = (2 + 3 + 5 + 0 + 4)/5 = 14/5 = 2.8.",
       "18": "The mean is 3. The squared deviations are 1, 1, 1, 1, so variance = 4/4 = 1 and standard deviation = √1 = 1.",
       "19": "The total frequency is k + 3 and Σfx = 2(1) + k(2) + 1(5) = 7 + 2k. Thus (7 + 2k)/(k + 3) = 9/4. Hence 28 + 8k = 9k + 27, giving k = 1.",
-      "20": "The mean is 5. The absolute deviations are 4, 2, 0, 2, 4. Hence mean deviation = 12/5 = 2.4.",
+      "20": "The expanded data are 2, 4, 4, 6, 6, 8, so the median is (4+6)/2=5. The weighted sum of absolute deviations about 5 is 1(3)+2(1)+2(1)+1(3)=10. With total frequency 6, the mean deviation about the median is 10/6=5/3.",
       "21": "N = 10, Σfx = 230, so mean = 23. Also Σfx² = 5900. Variance = 5900/10 − 23² = 590 − 529 = 61. Standard deviation = √61.",
       "22": "The class marks are 5, 15, 25 and N = 8. The mean is [2(5) + 4(15) + 2(25)]/8 = 15. Variance = [2(5 − 15)² + 4(0)² + 2(25 − 15)²]/8 = 50. Standard deviation = √50 = 5√2.",
       "23": "By symmetry, the mean is 30. N = 10. The sum of weighted absolute deviations is 1(20) + 2(10) + 4(0) + 2(10) + 1(20) = 80, so mean deviation = 8. The sum of weighted squared deviations is 1(400) + 2(100) + 0 + 2(100) + 1(400) = 1200, so variance = 120 and standard deviation = √120 = 2√30.",
@@ -2811,7 +2811,7 @@ const seeds: ChapterSeed[] = [
       "20": "An integer is selected at random from 1 to 30. Find the probability that it is divisible by 2 or by 5.",
       "21": "One card is drawn from a standard deck of 52 cards. Find the probability that it is a king or a heart.",
       "22": "In a class of 40 students, 22 like cricket, 18 like badminton and 10 like both. If a student is selected at random, find the probabilities that the student (i) likes at least one game, (ii) likes neither game, and (iii) likes exactly one game.",
-      "23": "For two events A and B, P(A) = 0.55, P(B) = 0.45 and P(A ∩ B) = 0.25. Find (i) P(A ∪ B), (ii) the probability of neither A nor B, (iii) the probability of A only, (iv) the probability of B only, and (v) the probability of exactly one of A or B.",
+      "23": "(i) Using the probability axioms, prove P(A′) = 1 − P(A). (ii) If A ⊆ B, prove P(B − A) = P(B) − P(A), and hence P(A) ≤ P(B). (iii) If A ⊆ B, P(A) = 0.35 and P(B) = 0.60, find P(B − A).",
       "24": [
         "(a) Find the probability that a selected student uses a bus or a bicycle. [1]",
         "(b) Find the probability that the student uses neither. [1]",
@@ -2844,7 +2844,7 @@ const seeds: ChapterSeed[] = [
       "20": "There are 15 multiples of 2, 6 multiples of 5 and 3 multiples of both 2 and 5. Hence the favourable count is 15 + 6 − 3 = 18, and the probability is 18/30 = 3/5.",
       "21": "There are 4 kings and 13 hearts, with the king of hearts counted in both. Thus the favourable count is 4 + 13 − 1 = 16, so the probability is 16/52 = 4/13.",
       "22": "At least one = 22 + 18 − 10 = 30 students, so the probability is 30/40 = 3/4. Neither = 10 students, so its probability is 1/4. Exactly one = (22 − 10) + (18 − 10) = 20 students, so its probability is 1/2.",
-      "23": "(i) P(A ∪ B) = 0.55 + 0.45 − 0.25 = 0.75. (ii) Neither = 1 − 0.75 = 0.25. (iii) A only = 0.55 − 0.25 = 0.30. (iv) B only = 0.45 − 0.25 = 0.20. (v) Exactly one = 0.30 + 0.20 = 0.50.",
+      "23": "(i) A and A′ are disjoint and A∪A′ is the certain event, so 1=P(A∪A′)=P(A)+P(A′). Hence P(A′)=1−P(A). (ii) If A⊆B, then B=A∪(B−A) is a disjoint union. Therefore P(B)=P(A)+P(B−A), so P(B−A)=P(B)−P(A). Since probabilities are non-negative, P(A)≤P(B). (iii) P(B−A)=0.60−0.35=0.25.",
       "24": "(a) The union contains 70 + 45 − 20 = 95 students, so the probability is 95/120 = 19/24. (b) Neither contains 120 − 95 = 25 students, so the probability is 25/120 = 5/24. (c) Exactly one contains (70 − 20) + (45 − 20) = 75 students, so the probability is 75/120 = 5/8."
     }
   }

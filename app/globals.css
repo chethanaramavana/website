@@ -684,9 +684,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .paper-editor-list { padding: 20px; border-right: 1px solid #e7e2ec; background: #fbf9fd; }
 .paper-editor-list > div p, .paper-editor-heading p { margin: 0 0 3px; color: var(--rust); font-size: .65rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .paper-editor-list h2 { margin: 0 0 14px; font: 700 1.35rem Georgia, serif; }
-.paper-editor-list > button { width: 100%; margin-top: 8px; padding: 12px; display: flex; align-items: center; gap: 10px; border: 1px solid #e4dfe9; border-radius: 11px; color: #62717a; background: white; cursor: pointer; text-align: left; }
-.paper-editor-list > button.active { border-color: #795bb9; background: #f2edff; }
-.paper-editor-list > button > svg { width: 19px; flex: 0 0 19px; color: var(--primary); }
+.paper-grade-group { margin-top: 18px; }
+.paper-grade-group + .paper-grade-group { padding-top: 18px; border-top: 1px solid #e5deeb; }
+.paper-grade-group h3 { margin: 0 0 6px; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; color: var(--navy); font: 700 .9rem Georgia, serif; }
+.paper-grade-group h3 span { color: #7b8790; font: 700 .59rem/1.2 Arial, sans-serif; letter-spacing: .05em; text-transform: uppercase; }
+.paper-editor-list .paper-editor-paper { width: 100%; margin-top: 8px; padding: 12px; display: flex; align-items: center; gap: 10px; border: 1px solid #e4dfe9; border-radius: 11px; color: #62717a; background: white; cursor: pointer; text-align: left; }
+.paper-editor-list .paper-editor-paper.active { border-color: #795bb9; background: #f2edff; }
+.paper-editor-list .paper-editor-paper > svg { width: 19px; flex: 0 0 19px; color: var(--primary); }
 .paper-editor-list strong, .paper-editor-list small { display: block; }
 .paper-editor-list strong { color: var(--navy); font-size: .76rem; }
 .paper-editor-list small { margin-top: 2px; font-size: .64rem; }
