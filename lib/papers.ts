@@ -1,5 +1,6 @@
 import { additionalPaperDefinitions } from './papers-additional';
 import { grade6PaperDefinitions } from './grade6-papers';
+import { icse6PaperDefinitions } from './icse6-papers';
 import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 
@@ -14,6 +15,10 @@ export type QuestionVisual =
   | 'circle-radius'
   | 'half-turn'
   | 'integer-path'
+  | 'set-diagram'
+  | 'line-ray-segment'
+  | 'cube-net'
+  | 'pictograph'
   | 'intersecting-lines'
   | 'parabola-roots'
   | 'similar-triangles'
@@ -31,6 +36,7 @@ export type PaperDefinition = {
   chapter: string;
   chapterNumber: number;
   paperNumber: string;
+  board?: 'CBSE' | 'ICSE';
   grade?: number;
   book?: string;
   mcqs: { number: number; question: string; options: string[]; source?: QuestionSource }[];
@@ -129,20 +135,22 @@ export const paperDefinitions: Record<string, PaperDefinition> = {
   ...grade6PaperDefinitions,
   ...grade11PaperDefinitions,
   ...grade12PaperDefinitions,
+  ...icse6PaperDefinitions,
 };
 
 export const paperDefinitionsById = Object.fromEntries(
   Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
 
-export function getPaperDefinition(grade: number, chapter: string) {
+export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE') {
   return Object.values(paperDefinitionsById).find(
-    (paper) => (paper.grade ?? 10) === grade && paper.chapter === chapter,
+    (paper) => (paper.board ?? 'CBSE') === board && (paper.grade ?? 10) === grade && paper.chapter === chapter,
   ) ?? null;
 }
 
 const questionVisualTypes = new Set<QuestionVisual>([
   'triangular-dots', 'angle-pair', 'bar-graph', 'l-shape', 'fraction-strip', 'circle-radius', 'half-turn', 'integer-path',
+  'set-diagram', 'line-ray-segment', 'cube-net', 'pictograph',
   'intersecting-lines', 'parabola-roots', 'similar-triangles', 'coordinate-line', 'right-triangle', 'tower-angle',
   'circle-tangents', 'circle-sector', 'solid-comparison', 'ogive', 'coin-outcomes',
 ]);

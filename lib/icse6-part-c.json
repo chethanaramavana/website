@@ -1,0 +1,1821 @@
+{
+  "papers": [
+    {
+      "id": "icse6-basic-geometry-01",
+      "chapter": "Basic Geometrical Ideas",
+      "chapterNumber": 13,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Name basic figures precisely, distinguish boundaries and regions, and use the correct vocabulary for angles, triangles, quadrilaterals and circles.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "A straight path that extends endlessly in both directions is a",
+          "options": [
+            "line",
+            "ray",
+            "line segment",
+            "arc"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "Use the diagram. Which displayed figure has exactly one endpoint and extends endlessly in one direction?",
+          "options": [
+            "line",
+            "ray",
+            "line segment",
+            "closed curve"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "A figure whose boundary has no gap is called a",
+          "options": [
+            "ray",
+            "open figure",
+            "closed figure",
+            "line"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "A boundary made entirely of line segments is a",
+          "options": [
+            "linear boundary",
+            "curvilinear boundary",
+            "circular region",
+            "ray"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which figure has a curvilinear boundary?",
+          "options": [
+            "triangle",
+            "rectangle",
+            "circle",
+            "line segment"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "A point lying within the boundary of a closed figure lies in its",
+          "options": [
+            "exterior",
+            "interior",
+            "vertex",
+            "arc"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The common endpoint of the two rays forming an angle is its",
+          "options": [
+            "arm",
+            "vertex",
+            "side",
+            "chord"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "The arms of an angle are",
+          "options": [
+            "two rays with a common endpoint",
+            "two circles with one centre",
+            "two parallel segments",
+            "two closed curves"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "A triangle has",
+          "options": [
+            "2 sides and 3 vertices",
+            "3 sides and 4 vertices",
+            "3 sides and 3 vertices",
+            "4 sides and 3 vertices"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the diagram. AB is a diameter of 10 cm and O is the centre. The length OP is",
+          "options": [
+            "2.5 cm",
+            "5 cm",
+            "10 cm",
+            "20 cm"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "The longest chord of a circle is its",
+          "options": [
+            "radius",
+            "arc",
+            "centre",
+            "diameter"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "The region of a circle enclosed by two radii and the arc between them is a",
+          "options": [
+            "chord",
+            "sector",
+            "segment",
+            "semicircle"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Which statement describes a convex quadrilateral?",
+          "options": [
+            "The segment joining any two interior points stays inside it.",
+            "It must have a curved side.",
+            "One of its diagonals must lie outside it.",
+            "It has exactly three vertices."
+          ]
+        },
+        {
+          "number": 14,
+          "question": "The boundary of a circle is called its",
+          "options": [
+            "diameter",
+            "circumference",
+            "radius",
+            "interior"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "2": "line-ray-segment",
+        "10": "circle-radius"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "A line segment has two endpoints.",
+          "reason": "A line segment is the bounded part of a line between two points."
+        },
+        {
+          "number": 16,
+          "assertion": "Every closed figure has only a linear boundary.",
+          "reason": "A circle is a closed figure with a curvilinear boundary."
+        }
+      ],
+      "written": {
+        "17": "State one difference among a line, a ray and a line segment, based on their endpoints.",
+        "18": "Explain the difference between an open figure and a closed figure. Give one example of each.",
+        "19": "Rays OA and OB form ∠AOB. Name its vertex and its two arms.",
+        "20": "In triangle ABC, D is the midpoint of BC and AE is drawn perpendicular to BC at E. Name AD and AE, and state whether a point outside the triangle lies in its interior or exterior.",
+        "21": "A closed figure is bounded by one line segment and one curved arc. Does its boundary contain linear parts, curvilinear parts or both? Explain and give a familiar example.",
+        "22": "A circle has centre O and radius 4.5 cm. State the lengths of any radius and any diameter. Explain the difference between a chord and a diameter.",
+        "23": [
+          "ABCD is a convex quadrilateral and diagonal AC is drawn.",
+          "(a) List its four sides and four vertices.",
+          "(b) Name the two triangles formed by AC.",
+          "(c) State why AC lies inside the quadrilateral and explain how this relates to convexity."
+        ],
+        "24": [
+          "(a) Name segment OA. [1]",
+          "(b) Name segment AB. [1]",
+          "(c) State whether Q and R lie in the interior or exterior of the garden. [2]"
+        ]
+      },
+      "caseStudy": "A circular garden has centre O. Points A and B are opposite points on its boundary, so segment AB passes through O. Point Q lies inside the garden and point R lies outside it.",
+      "answerKey": [
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        3,
+        1,
+        0,
+        1,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "A line has no endpoints and extends both ways; a ray has one endpoint and extends in one direction; a line segment has two endpoints.",
+        "18": "An open figure has a gap or unjoined ends, for example an arc. A closed figure has a complete boundary with no gap, for example a triangle or circle.",
+        "19": "The vertex is O. The arms are rays OA and OB.",
+        "20": "AD joins vertex A to the midpoint of the opposite side, so AD is a median. AE is perpendicular from vertex A to the opposite side, so AE is an altitude. A point outside the triangle lies in its exterior.",
+        "21": "The boundary contains both: the straight segment is linear and the arc is curvilinear. A semicircular region is a familiar example.",
+        "22": "Every radius is 4.5 cm and every diameter is 2 × 4.5 = 9 cm. A chord joins any two points on the circle; a diameter is a chord that passes through the centre.",
+        "23": "(a) Sides AB, BC, CD and DA; vertices A, B, C and D. (b) ΔABC and ΔACD. (c) In a convex quadrilateral, diagonal AC lies wholly in or on the quadrilateral; except for endpoints A and C, it lies in the interior.",
+        "24": "(a) OA is a radius. (b) AB is a diameter. (c) Q is in the interior and R is in the exterior."
+      }
+    },
+    {
+      "id": "icse6-angles-triangles-quadrilaterals-01",
+      "chapter": "Angles, Triangles and Quadrilaterals",
+      "chapterNumber": 14,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Measure segments and angles accurately, recognise line relationships, and classify triangles, quadrilaterals and polygons by their defining properties.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The most suitable instrument for measuring a line segment is a",
+          "options": [
+            "ruler",
+            "protractor",
+            "compass only",
+            "set of counters"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The instrument used to measure an angle in degrees is a",
+          "options": [
+            "divider",
+            "ruler",
+            "protractor",
+            "weighing scale"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Two lines in the same plane that never meet are",
+          "options": [
+            "intersecting",
+            "parallel",
+            "perpendicular",
+            "curved"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Perpendicular lines meet to form an angle of",
+          "options": [
+            "30°",
+            "45°",
+            "60°",
+            "90°"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Two distinct lines that meet at one point are",
+          "options": [
+            "intersecting",
+            "parallel",
+            "rays only",
+            "closed figures"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "An angle whose two arms overlap without any turn measures",
+          "options": [
+            "0°",
+            "90°",
+            "180°",
+            "360°"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "An angle greater than 180° but less than 360° is",
+          "options": [
+            "acute",
+            "obtuse",
+            "straight",
+            "reflex"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "Use the diagram. OA is perpendicular to OC and ∠AOB = 37°. Find ∠BOC.",
+          "options": [
+            "37°",
+            "43°",
+            "53°",
+            "143°"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "A triangle with side lengths 5 cm, 5 cm and 8 cm is",
+          "options": [
+            "scalene",
+            "isosceles",
+            "equilateral",
+            "right-angled"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "A triangle with angles 45°, 45° and 90° is",
+          "options": [
+            "acute scalene",
+            "obtuse isosceles",
+            "equilateral",
+            "right-angled isosceles"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "A quadrilateral with exactly one pair of opposite sides parallel is a",
+          "options": [
+            "trapezium",
+            "parallelogram",
+            "rectangle",
+            "rhombus"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "A quadrilateral whose opposite sides are parallel is a",
+          "options": [
+            "triangle",
+            "parallelogram",
+            "pentagon",
+            "circle"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "A square is",
+          "options": [
+            "only a rectangle",
+            "only a rhombus",
+            "neither a rectangle nor a rhombus",
+            "both a rectangle and a rhombus"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "A polygon with eight sides is an",
+          "options": [
+            "hexagon",
+            "heptagon",
+            "octagon",
+            "nonagon"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "8": "angle-pair"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Every square is a rectangle.",
+          "reason": "A square has opposite sides equal and parallel and has four right angles."
+        },
+        {
+          "number": 16,
+          "assertion": "Every rhombus has four right angles.",
+          "reason": "Every rhombus has four equal sides."
+        }
+      ],
+      "written": {
+        "17": "A point M lies on segment AB. If AB = 8.6 cm and AM = 3.2 cm, find MB. State how a ruler should be aligned to measure AB.",
+        "18": "Classify these angles: 38°, 146°, 180° and 235°.",
+        "19": "Distinguish parallel, intersecting and perpendicular lines. Give one familiar example of each.",
+        "20": "Classify each triangle using the stated side or angle information: (a) sides 6 cm, 6 cm, 10 cm; (b) angles 45°, 45°, 90°; (c) sides 4 cm, 5 cm, 6 cm.",
+        "21": "Identify each quadrilateral: (a) four equal sides and four right angles; (b) opposite sides equal and parallel with four right angles, but adjacent sides unequal; (c) four equal sides but no right angle.",
+        "22": "Name the polygons having 3, 4, 5, 6, 7 and 8 sides respectively. Then distinguish a regular polygon from a non-regular polygon.",
+        "23": [
+          "Complete a property table for parallelogram, rectangle, rhombus and square using these headings: opposite sides parallel, all sides equal, and four right angles.",
+          "(a) Mark which properties apply to each figure.",
+          "(b) Use the table to explain why every square is both a rectangle and a rhombus."
+        ],
+        "24": [
+          "(a) State the relationship between roads l and m. [1]",
+          "(b) State the relationship of road n to roads l and m. [1]",
+          "(c) Classify the triangular plot and the signboard. [2]"
+        ]
+      },
+      "caseStudy": "On a map, roads l and m never meet. Road n crosses each at 90°. A triangular plot has sides 5 m, 5 m and 8 m. A signboard has four equal sides and four right angles.",
+      "answerKey": [
+        0,
+        2,
+        1,
+        3,
+        0,
+        0,
+        3,
+        2,
+        1,
+        3,
+        0,
+        1,
+        3,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "MB = AB − AM = 8.6 − 3.2 = 5.4 cm. Place the ruler’s zero mark at A and align its straight edge along AB.",
+        "18": "38° acute; 146° obtuse; 180° straight; 235° reflex.",
+        "19": "Parallel lines in one plane never meet, such as opposite edges of a ruler. Intersecting lines meet at a point, such as crossed paths. Perpendicular lines intersect at 90°, such as adjacent edges of a rectangular page.",
+        "20": "(a) Isosceles triangle. (b) Right-angled isosceles triangle. (c) Scalene triangle.",
+        "21": "(a) Square. (b) Rectangle. (c) Rhombus.",
+        "22": "3 triangle, 4 quadrilateral, 5 pentagon, 6 hexagon, 7 heptagon, 8 octagon. A regular polygon has all sides equal and all angles equal; a polygon that does not satisfy both conditions is non-regular.",
+        "23": "Parallelogram: opposite sides parallel—yes; all sides equal—not necessarily; four right angles—not necessarily. Rectangle: yes, not necessarily, yes. Rhombus: yes, yes, not necessarily. Square: yes, yes, yes. Therefore a square satisfies the defining properties of both a rectangle and a rhombus.",
+        "24": "(a) l and m are parallel. (b) n is perpendicular to both l and m. (c) The plot is an isosceles triangle and the signboard is a square."
+      }
+    },
+    {
+      "id": "icse6-3d-shapes-nets-01",
+      "chapter": "Three-Dimensional Shapes and Nets",
+      "chapterNumber": 15,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Identify common solids, count their faces, edges and vertices, and connect each solid with a valid net.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "A solid whose six faces are congruent squares is a",
+          "options": [
+            "cube",
+            "cuboid",
+            "cylinder",
+            "cone"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "A closed drink can is most closely shaped like a",
+          "options": [
+            "sphere",
+            "cone",
+            "cylinder",
+            "tetrahedron"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "An ice-cream cone is most closely shaped like a",
+          "options": [
+            "cylinder",
+            "cone",
+            "cube",
+            "sphere"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The number of vertices of a cube is",
+          "options": [
+            "4",
+            "6",
+            "12",
+            "8"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The number of edges of a cuboid is",
+          "options": [
+            "6",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "A tetrahedron has how many triangular faces?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "A triangular prism has how many vertices?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "A square pyramid has how many edges?",
+          "options": [
+            "5",
+            "8",
+            "9",
+            "12"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "A cylinder has how many flat circular faces?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the diagram. The shown net folds to form a",
+          "options": [
+            "cube",
+            "cone",
+            "cylinder",
+            "tetrahedron"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "A net of a closed cylinder consists of",
+          "options": [
+            "one rectangle only",
+            "two rectangles and one circle",
+            "one sector and one circle",
+            "one rectangle and two equal circles"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "A net of a cone consists of",
+          "options": [
+            "two equal circles",
+            "one circular sector and one circle",
+            "six squares",
+            "four triangles"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Which solid has no edges and no vertices?",
+          "options": [
+            "sphere",
+            "cone",
+            "cylinder",
+            "cube"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "A solid has two congruent square bases and four rectangular side faces, with height different from the base side. It is a",
+          "options": [
+            "square pyramid",
+            "triangular prism",
+            "square prism",
+            "cube"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "10": "cube-net"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "A tetrahedron has four triangular faces.",
+          "reason": "It has one triangular base and three triangular side faces."
+        },
+        {
+          "number": 16,
+          "assertion": "A sphere has one vertex.",
+          "reason": "A sphere has no corners or vertices."
+        }
+      ],
+      "written": {
+        "17": "Name the solid most closely modelled by each object: (a) a die, (b) a cereal box, (c) a closed tin can, (d) a football.",
+        "18": "State the number of faces, edges and vertices of (a) a cube and (b) a tetrahedron.",
+        "19": "Describe the two-dimensional pieces needed to make a net of (a) a closed cylinder and (b) a cone.",
+        "20": "Compare a triangular prism and a tetrahedron by stating the shapes and number of their faces, and their numbers of edges and vertices.",
+        "21": "A cuboid measures 5 cm×3 cm×2 cm. List the six rectangles in its net, grouping congruent faces into pairs.",
+        "22": "A solid has one square face, four triangular faces, eight edges and five vertices. Identify the solid and explain how the given facts confirm your answer.",
+        "23": [
+          "A designer is preparing nets for three solid models.",
+          "(a) State the pieces in a cube net. [1]",
+          "(b) State the pieces in a closed-cylinder net and explain which edges join. [2]",
+          "(c) State the pieces in a tetrahedron net and explain how they meet. [2]"
+        ],
+        "24": [
+          "(a) How many flat faces does the box have? [1]",
+          "(b) How many vertices does it have? [1]",
+          "(c) List the dimensions of the six rectangles in its net, grouping equal rectangles together. [2]"
+        ]
+      },
+      "caseStudy": "A bakery designs a cuboid gift box measuring 8 cm×5 cm×3 cm and first opens the design into a flat net.",
+      "answerKey": [
+        0,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        1,
+        2,
+        0,
+        3,
+        1,
+        0,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "(a) Die: cube. (b) Cereal box: cuboid. (c) Closed tin can: cylinder. (d) Football: sphere.",
+        "18": "A cube has 6 faces, 12 edges and 8 vertices. A tetrahedron has 4 faces, 6 edges and 4 vertices.",
+        "19": "A closed-cylinder net contains one rectangle for the curved surface and two equal circles for the flat faces. A cone net contains one circular sector for the curved surface and one circle for the base.",
+        "20": "A triangular prism has 2 triangular and 3 rectangular faces, so F=5, E=9 and V=6. A tetrahedron has 4 triangular faces, so F=4, E=6 and V=4.",
+        "21": "The net has two 5 cm×3 cm rectangles, two 5 cm×2 cm rectangles and two 3 cm×2 cm rectangles. Each congruent pair becomes a pair of opposite faces.",
+        "22": "The solid is a square pyramid. Its square base and four triangular side faces give 5 faces; four base edges and four slant edges give 8 edges; the four base corners and apex give 5 vertices.",
+        "23": "(a) A cube net has six congruent squares. (b) A closed-cylinder net has one rectangle and two equal circles; the rectangle's opposite straight edges join, and its other two edges wrap around the circular boundaries. (c) A tetrahedron net has four triangles; one may be used as the base and the other three fold up along its three sides.",
+        "24": "(a) The cuboid has 6 flat faces. (b) It has 8 vertices. (c) Its net contains two 8 cm×5 cm rectangles, two 8 cm×3 cm rectangles and two 5 cm×3 cm rectangles."
+      }
+    },
+    {
+      "id": "icse6-symmetry-practical-geometry-01",
+      "chapter": "Symmetry and Practical Geometry",
+      "chapterNumber": 16,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Recognise reflection symmetry and use a ruler, protractor and compass to make accurate geometric constructions.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "A line that divides a figure into two matching mirror halves is called a",
+          "options": [
+            "radius",
+            "line of symmetry",
+            "ray",
+            "diagonal"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "A point and its mirror image lie",
+          "options": [
+            "on the same side of the mirror line",
+            "at unequal distances from the mirror line",
+            "at equal perpendicular distances on opposite sides",
+            "only on the mirror line"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "A rectangle that is not a square has how many lines of symmetry?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "A scalene triangle has how many lines of symmetry?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which instrument is used to measure and draw an angle of a given size?",
+          "options": [
+            "compass",
+            "divider",
+            "protractor",
+            "set of counters"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "A compass is used mainly to",
+          "options": [
+            "measure mass",
+            "draw circles and equal-radius arcs",
+            "read temperatures",
+            "write angle measures"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The perpendicular bisector of a segment meets it",
+          "options": [
+            "at an endpoint",
+            "at any angle",
+            "away from its midpoint",
+            "at its midpoint at 90°"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "A 60° angle is constructed with a compass by using",
+          "options": [
+            "equal-radius arcs that form an equilateral triangle",
+            "a semicircle only",
+            "unequal arcs from unrelated centres",
+            "a ruler without arcs"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Bisecting a 60° angle gives two angles of",
+          "options": [
+            "15°",
+            "30°",
+            "45°",
+            "120°"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the diagram. OA is perpendicular to OC and ∠AOB=37°. Find ∠BOC.",
+          "options": [
+            "37°",
+            "43°",
+            "53°",
+            "143°"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "Use the diagram. AB is a diameter of 10 cm, O is the centre and OP is a radius. The length of OP is",
+          "options": [
+            "2.5 cm",
+            "5 cm",
+            "10 cm",
+            "20 cm"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Two perpendicular lines meet at",
+          "options": [
+            "30°",
+            "60°",
+            "90°",
+            "180°"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "To copy an angle accurately at a new vertex, use",
+          "options": [
+            "a ruler only",
+            "a protractor only with no ray",
+            "freehand drawing",
+            "a compass and straightedge"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "Bisecting a 90° angle produces two angles of",
+          "options": [
+            "45°",
+            "60°",
+            "90°",
+            "180°"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "10": "angle-pair",
+        "11": "circle-radius"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "A point on the perpendicular bisector of AB is equidistant from A and B.",
+          "reason": "Every point on the perpendicular bisector of a segment is equally distant from its endpoints."
+        },
+        {
+          "number": 16,
+          "assertion": "Reflection changes the size of a figure.",
+          "reason": "Reflection preserves lengths and angle measures."
+        }
+      ],
+      "written": {
+        "17": "Draw a line segment AB of length 7.2 cm and describe how you check its length accurately.",
+        "18": "Draw a point P and a mirror line l with P 3 cm from l. Construct the reflected point P′ and state its distance from l.",
+        "19": "Using a protractor, construct ∠AOB=75°. Write the essential alignment and reading steps.",
+        "20": "Construct the perpendicular bisector of a segment XY=8 cm. If it meets XY at M, draw the circle with centre M passing through X and Y. State the length of each half and the angle made with XY.",
+        "21": "Using a compass and straightedge, construct a 60° angle and then bisect it to obtain 30°. Write the steps.",
+        "22": "Construct a 90° angle using ruler and compass and bisect it to obtain 45°. Write the steps.",
+        "23": [
+          "Use ruler and compass for each construction.",
+          "(a) Construct an angle of 120°. [2]",
+          "(b) Copy the 120° angle at a new vertex without measuring it. [2]",
+          "(c) Bisect the copied angle and state each resulting angle. [1]"
+        ],
+        "24": [
+          "(a) What angle must each required perpendicular make with l? [1]",
+          "(b) For the perpendicular at P, what two points should first be marked on l? [1]",
+          "(c) Describe how to construct the perpendicular from Q to l using compass arcs and a straightedge. [2]"
+        ]
+      },
+      "caseStudy": "A surveyor marks a straight boundary l. Point P lies on l and point Q lies outside l. She must construct a perpendicular to l at P and another perpendicular from Q to l.",
+      "answerKey": [
+        1,
+        2,
+        1,
+        0,
+        2,
+        1,
+        3,
+        0,
+        1,
+        2,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "Use a ruler to mark A, align the zero mark with A, mark B at 7.2 cm and join AB. Recheck that A is at 0 and B at 7.2 cm, viewing the ruler vertically to avoid parallax.",
+        "18": "Draw the perpendicular from P to l and let it meet l at M. Extend PM to the other side of l and mark P′ so that MP′=MP=3 cm. Thus P′ is 3 cm from l.",
+        "19": "Draw ray OA. Place the protractor centre at O and its baseline along OA. Read from the 0° aligned with OA, mark 75°, and draw ray OB through the mark.",
+        "20": "Draw XY=8 cm. With equal compass radius greater than 4 cm, draw intersecting arcs above and below from X and Y. Join the arc intersections; this line meets XY at M. Then XM=MY=4 cm and the bisector meets XY at 90°. Set the compass to MX=4 cm and, with centre M, draw the circle through X and Y.",
+        "21": "Draw ray OA. With centre O draw an arc meeting OA at A. With the same radius and centre A, cut the arc at B; join OB to obtain 60°. Draw equal arcs from A and B to meet at C, then join OC. The bisector gives two 30° angles.",
+        "22": "Draw a straight line through O and mark A and X on opposite sides of O so that OA=OX. With centres A and X and the same radius greater than OA, draw arcs meeting at B; join OB. Since OB is the perpendicular bisector of AX, ∠AOB=90°. To bisect it, draw an arc centred at O cutting OA and OB at P and Q, draw equal arcs from P and Q to meet at R, and join OR. The two resulting angles are 45° each.",
+        "23": "(a) Construct 60° by equal-radius arcs, then step the same chord once more on the arc to locate 120° and join it to the vertex. (b) At the new vertex draw a ray, copy an arc across the original angle, transfer the chord between its two crossings to the new arc, and join the new vertex to the transferred point. (c) Bisecting 120° gives two angles of 60°.",
+        "24": "(a) Each perpendicular makes 90° with l. (b) Mark two points A and B on l at equal distances from P. (c) With centre Q draw an arc cutting l at A and B. With centres A and B and equal radius, draw arcs meeting at R on the opposite side of l from Q. Join Q to R; QR is perpendicular to l."
+      }
+    },
+    {
+      "id": "icse6-mensuration-conversions-01",
+      "chapter": "Perimeter, Area and Unit Conversions",
+      "chapterNumber": 17,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Distinguish perimeter from area, apply rectangle and square formulae, compare shapes and convert everyday units accurately.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "Perimeter is the",
+          "options": [
+            "space covered by a surface",
+            "distance around a closed figure",
+            "number of squares inside a figure",
+            "length of one side only"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The area of a rectangle of length l and breadth b is",
+          "options": [
+            "l + b",
+            "2(l + b)",
+            "l × b",
+            "l ÷ b"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "The perimeter of a square of side 7 cm is",
+          "options": [
+            "14 cm",
+            "21 cm",
+            "28 cm",
+            "49 cm"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which is a suitable unit for the area of a notebook cover?",
+          "options": [
+            "cm",
+            "cm²",
+            "kg",
+            "mL"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "A rectangle 12 cm long and 5 cm broad has area",
+          "options": [
+            "17 cm²",
+            "34 cm²",
+            "60 cm²",
+            "120 cm²"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "A square has perimeter 48 m. Its side is",
+          "options": [
+            "8 m",
+            "10 m",
+            "12 m",
+            "16 m"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Two rectangles with the same perimeter",
+          "options": [
+            "must have the same area",
+            "may have different areas",
+            "must be squares",
+            "cannot have whole-number sides"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "2 kg 350 g equals",
+          "options": [
+            "2,035 g",
+            "2,350 g",
+            "2,500 g",
+            "23,500 g"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "2 h 45 min equals",
+          "options": [
+            "125 min",
+            "145 min",
+            "165 min",
+            "245 min"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the diagram. A 4 cm × 3 cm corner is removed from a 10 cm × 8 cm rectangle. The remaining area is",
+          "options": [
+            "56 cm²",
+            "68 cm²",
+            "72 cm²",
+            "80 cm²"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "₹7.50 equals",
+          "options": [
+            "75 paise",
+            "107 paise",
+            "705 paise",
+            "750 paise"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "3 L 250 mL equals",
+          "options": [
+            "325 mL",
+            "3,025 mL",
+            "3,250 mL",
+            "32,500 mL"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "The perimeter of a rectangle 9 cm long and 6 cm broad is",
+          "options": [
+            "15 cm",
+            "30 cm",
+            "45 cm",
+            "54 cm"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "1 day 6 hours equals",
+          "options": [
+            "25 h",
+            "26 h",
+            "30 h",
+            "36 h"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "10": "l-shape"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Rectangles with the same perimeter can have different areas.",
+          "reason": "Keeping the sum of length and breadth fixed does not always keep their product fixed."
+        },
+        {
+          "number": 16,
+          "assertion": "The area of a square floor should be written in metres.",
+          "reason": "Area measures the number of square units covering a surface."
+        }
+      ],
+      "written": {
+        "17": "Find the perimeter and area of a rectangle measuring 14 cm by 9 cm.",
+        "18": "A square has perimeter 64 cm. Find its side and area.",
+        "19": "Convert (a) 4 kg 75 g into grams and (b) 2 h 35 min into minutes.",
+        "20": "A 10 cm × 6 cm rectangle and a square have the same perimeter. Find the side and area of the square, then compare the two areas.",
+        "21": "A container holds 5 L 750 mL of juice. If 2 L 925 mL is used, find the amount left in millilitres and in litres and millilitres.",
+        "22": "A programme begins at 9:35 a.m. and ends at 12:20 p.m. Find its duration in hours and minutes and also in minutes.",
+        "23": [
+          "A school has 48 m of fencing. It can make either a square enclosure or a rectangular enclosure 16 m long.",
+          "(a) Find the side and area of the square enclosure.",
+          "(b) Find the breadth and area of the rectangular enclosure.",
+          "(c) Which enclosure has the greater area, and by how much?"
+        ],
+        "24": [
+          "(a) Find the perimeter of the garden. [1]",
+          "(b) Find the length of fencing needed after allowing for the gate. [1]",
+          "(c) Find the area to be grassed and the total cost of grassing it. [2]"
+        ]
+      },
+      "caseStudy": "A rectangular school garden is 12 m long and 8 m broad. A 2 m-wide gate is left unfenced, and grassing costs ₹45 per square metre.",
+      "answerKey": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "Perimeter = 2(14 + 9) = 46 cm. Area = 14 × 9 = 126 cm².",
+        "18": "Side = 64 ÷ 4 = 16 cm. Area = 16² = 256 cm².",
+        "19": "(a) 4 kg 75 g = 4,000 g + 75 g = 4,075 g. (b) 2 h 35 min = 2 × 60 + 35 = 155 min.",
+        "20": "The rectangle has perimeter 2(10 + 6) = 32 cm and area 10 × 6 = 60 cm². The square side is 32 ÷ 4 = 8 cm, so its area is 8² = 64 cm². The square has 4 cm² more area.",
+        "21": "5 L 750 mL = 5,750 mL and 2 L 925 mL = 2,925 mL. Amount left = 5,750 − 2,925 = 2,825 mL = 2 L 825 mL.",
+        "22": "From 9:35 a.m. to 10:00 a.m. is 25 min, to 12:00 noon is 2 h more, and to 12:20 p.m. is 20 min more. Total = 2 h 45 min = 165 min.",
+        "23": "(a) Square side = 48 ÷ 4 = 12 m; area = 12² = 144 m². (b) For the rectangle, 2(16 + b) = 48, so 16 + b = 24 and b = 8 m; area = 16 × 8 = 128 m². (c) The square has the greater area by 144 − 128 = 16 m².",
+        "24": "(a) Perimeter = 2(12 + 8) = 40 m. (b) Fencing needed = 40 − 2 = 38 m. (c) Area = 12 × 8 = 96 m²; cost = 96 × ₹45 = ₹4,320."
+      }
+    },
+    {
+      "id": "icse6-data-handling-01",
+      "chapter": "Data Handling",
+      "chapterNumber": 18,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Organise small data sets, read and construct scaled displays, and calculate mean and median with clear reasoning.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "Tally marks are usually grouped in sets of",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "10"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The frequency of a value tells",
+          "options": [
+            "how often it occurs",
+            "its place value",
+            "the graph colour",
+            "the largest observation only"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "In a pictograph, ★ represents 3 books. Four stars represent",
+          "options": [
+            "7 books",
+            "9 books",
+            "12 books",
+            "15 books"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The bars in a bar graph should have",
+          "options": [
+            "equal widths",
+            "different widths",
+            "no spaces",
+            "curved tops"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The median of 2, 4, 5, 7, 9 is",
+          "options": [
+            "4",
+            "5",
+            "5.4",
+            "7"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "Use the pictograph. Each dot represents 2 books. How many books does Group A have?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The mean of 4, 6 and 8 is",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "18"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "The median of 2, 4, 6 and 8 is",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "20"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "A frequency table has frequencies 3, 5, 4 and 2. The total number of observations is",
+          "options": [
+            "9",
+            "12",
+            "14",
+            "15"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the bar graph. By how many does the total for B and D exceed the total for A and C?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "For values 20, 40, 60 and 80, a convenient bar-graph scale is",
+          "options": [
+            "1 division = 1",
+            "1 division = 3",
+            "1 division = 10",
+            "1 division = 25"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Three complete tally groups of five and two extra tally marks represent",
+          "options": [
+            "13",
+            "15",
+            "17",
+            "32"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Five observations have mean 6. Their total is",
+          "options": [
+            "11",
+            "25",
+            "30",
+            "36"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "The median of 7, 3, 9, 5 and 5 is",
+          "options": [
+            "3",
+            "5",
+            "5.8",
+            "7"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "6": "pictograph",
+        "10": "bar-graph"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "A bar graph needs a stated scale.",
+          "reason": "The scale tells the value represented by each unit of bar height or length."
+        },
+        {
+          "number": 16,
+          "assertion": "The median of a data set must always be one of its observations.",
+          "reason": "For an even number of observations, the median is the mean of the two middle observations after arranging the data."
+        }
+      ],
+      "written": {
+        "17": "Prepare a frequency table for 2, 3, 2, 4, 5, 3, 2, 4.",
+        "18": "Find the mean of 6, 8, 5, 7 and 9.",
+        "19": "Find the median of 12, 7, 9, 15, 8 and 10.",
+        "20": "Draw or describe a pictograph for Red House 16 plants, Blue House 24 plants and Green House 12 plants, using ● = 4 plants.",
+        "21": "Construct or describe a bar graph for notebooks sold on Monday 12, Tuesday 18, Wednesday 15 and Thursday 9, using scale 1 unit = 3 notebooks. Include a title and labels.",
+        "22": "For the data 2, 4, 4, 5, 10, find the mean and median and state the difference between them.",
+        "23": [
+          "The numbers of books borrowed on five days are 10, 15, 25, 20 and 30.",
+          "(a) Find the mean.",
+          "(b) Find the median.",
+          "(c) Describe bar heights using scale 1 unit = 5 books."
+        ],
+        "24": [
+          "(a) Find the total number of students surveyed. [1]",
+          "(b) Find the mean number of students per fruit category. [1]",
+          "(c) Using ● = 4 students, state the number of symbols for each fruit and identify the most popular fruit. [2]"
+        ]
+      },
+      "caseStudy": "A class survey records favourite fruits: apples 12 students, bananas 8, oranges 16 and grapes 4.",
+      "answerKey": [
+        2,
+        0,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "Frequencies are: 2 → 3, 3 → 2, 4 → 2 and 5 → 1. The frequencies total 8 observations.",
+        "18": "Mean = (6 + 8 + 5 + 7 + 9) ÷ 5 = 35 ÷ 5 = 7.",
+        "19": "Arrange the data: 7, 8, 9, 10, 12, 15. Median = (9 + 10) ÷ 2 = 9.5.",
+        "20": "With ● = 4 plants: Red House needs 16 ÷ 4 = 4 symbols, Blue House needs 24 ÷ 4 = 6 symbols, and Green House needs 12 ÷ 4 = 3 symbols. Add the title, category labels and key.",
+        "21": "Use days on the horizontal axis and notebooks on the vertical axis. At scale 1 unit = 3 notebooks, the bar heights are Monday 4 units, Tuesday 6 units, Wednesday 5 units and Thursday 3 units. Use equal-width bars, equal gaps, labels and a title.",
+        "22": "Mean = (2 + 4 + 4 + 5 + 10) ÷ 5 = 25 ÷ 5 = 5. The ordered data already gives median = 4. Their difference is 5 − 4 = 1.",
+        "23": "(a) Mean = (10 + 15 + 25 + 20 + 30) ÷ 5 = 100 ÷ 5 = 20 books. (b) In order 10, 15, 20, 25, 30, the median is 20 books. (c) The bar heights are 2, 3, 5, 4 and 6 units respectively.",
+        "24": "(a) Total = 12 + 8 + 16 + 4 = 40 students. (b) Mean = 40 ÷ 4 = 10 students. (c) Apples need 3 symbols, bananas 2, oranges 4 and grapes 1. Oranges are the most popular."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "slug": "icse6-basic-geometry",
+      "chapter": "Basic Geometrical Ideas",
+      "number": 13,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Lines, Boundaries, Regions & Circle Vocabulary",
+      "concepts": [
+        {
+          "title": "Line family",
+          "text": "A line extends endlessly in both directions, a ray begins at one endpoint, and a line segment is bounded by two endpoints."
+        },
+        {
+          "title": "Figures and regions",
+          "text": "An open figure has a gap; a closed figure has a complete boundary that separates its interior from its exterior."
+        },
+        {
+          "title": "Boundaries and vertices",
+          "text": "A linear boundary uses line segments and a curvilinear boundary uses curves; one boundary may contain both kinds. Two rays with a common vertex form an angle, whose interior is the region between its arms and whose exterior is the remaining region."
+        },
+        {
+          "title": "Polygons and circles",
+          "text": "A triangle has sides, vertices, angles, interior and exterior, a median from a vertex to the opposite midpoint, and an altitude perpendicular to the opposite side. A convex quadrilateral has sides, vertices, angles, diagonals, adjacent and opposite sides, interior and exterior. Circle vocabulary includes centre, radius, diameter, chord, arc, sector, segment, semicircle and circumference."
+        }
+      ],
+      "formulas": [
+        "Diameter = 2 × radius",
+        "Radius = diameter ÷ 2",
+        "Triangle: 3 sides, 3 vertices, 3 angles",
+        "Quadrilateral: 4 sides, 4 vertices, 4 angles",
+        "Triangle median: vertex to midpoint of opposite side",
+        "Triangle altitude: perpendicular from vertex to opposite side"
+      ],
+      "method": [
+        "Check whether the figure has endpoints or a complete boundary.",
+        "Identify straight, curved or mixed parts of the boundary.",
+        "Name vertices and sides in their order around the figure.",
+        "For a circle, first locate the centre and then decide whether a segment is a radius, chord or diameter."
+      ],
+      "example": {
+        "question": "In a circle with centre O, AB passes through O and has endpoints on the circle; OP joins O to the circle. Name AB and OP if AB = 12 cm.",
+        "steps": [
+          "AB is a chord through the centre, so it is a diameter.",
+          "OP joins the centre to the circle, so it is a radius.",
+          "A radius is half a diameter: 12 ÷ 2 = 6."
+        ],
+        "answer": "AB is a 12 cm diameter and OP is a 6 cm radius."
+      },
+      "practice": [
+        {
+          "question": "How many endpoints do a line, ray and segment have?",
+          "answer": "0, 1 and 2 respectively",
+          "marks": 2
+        },
+        {
+          "question": "Classify a triangle as open or closed and its boundary as linear or curvilinear.",
+          "answer": "Closed with a linear boundary",
+          "marks": 2
+        },
+        {
+          "question": "In triangle ABC, D is the midpoint of BC and AE ⟂ BC. Name AD and AE.",
+          "answer": "AD is a median and AE is an altitude.",
+          "marks": 2
+        },
+        {
+          "question": "A circle has radius 7.5 cm. Find its diameter.",
+          "answer": "15 cm",
+          "marks": 2
+        },
+        {
+          "question": "Distinguish a sector from a segment of a circle.",
+          "answer": "A sector is bounded by two radii and an arc; a segment is bounded by a chord and its arc.",
+          "marks": 3
+        },
+        {
+          "question": "For convex quadrilateral PQRS, list its sides and diagonals, name one pair each of adjacent and opposite sides, and locate a point enclosed by its boundary.",
+          "answer": "Sides PQ, QR, RS, SP; diagonals PR, QS; for example PQ and QR are adjacent, while PQ and RS are opposite; an enclosed point lies in the interior.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "A segment is finite even though the line containing it extends endlessly.",
+        "A closed figure separates interior from exterior; for an angle, the region between its arms is the interior and the remaining region is the exterior.",
+        "Every diameter is a chord, but not every chord is a diameter."
+      ]
+    },
+    {
+      "slug": "icse6-angles-triangles-quadrilaterals",
+      "chapter": "Angles, Triangles and Quadrilaterals",
+      "number": 14,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Measurement, Classification & Polygon Families",
+      "concepts": [
+        {
+          "title": "Measurement and line relationships",
+          "text": "Use a ruler from its zero mark for segments and a protractor from the correct zero scale for angles. Lines may be parallel, intersecting or perpendicular."
+        },
+        {
+          "title": "Angle types",
+          "text": "Angles are classified by their measure as zero, acute, right, obtuse, straight, reflex or complete."
+        },
+        {
+          "title": "Triangles",
+          "text": "By sides, triangles are scalene, isosceles or equilateral; by angles, they are acute-angled, right-angled or obtuse-angled."
+        },
+        {
+          "title": "Quadrilaterals and polygons",
+          "text": "Trapezium, parallelogram, rectangle, rhombus and square are identified by side and angle properties. Polygons from three to eight sides have standard names; a regular polygon has all sides and all angles equal, while a non-regular polygon does not."
+        }
+      ],
+      "formulas": [
+        "Zero angle: θ = 0°; acute angle: 0° < θ < 90°",
+        "Right angle: θ = 90°",
+        "Obtuse angle: 90° < θ < 180°",
+        "Straight angle: θ = 180°",
+        "Reflex angle: 180° < θ < 360°",
+        "Complete angle: θ = 360°"
+      ],
+      "method": [
+        "Measure the required segment or angle with the instrument aligned at zero.",
+        "Compare the result with the defining lengths, angle ranges or parallel-side conditions.",
+        "Classify a triangle separately by sides and by angles when enough information is given.",
+        "State the most specific quadrilateral or polygon name and verify every defining property."
+      ],
+      "example": {
+        "question": "A triangle has two equal sides, and the included angle between them measures 100°. Classify it.",
+        "steps": [
+          "Two sides are equal, so it is isosceles by sides.",
+          "One angle is greater than 90° and less than 180°, so it is obtuse-angled.",
+          "Combine both descriptions."
+        ],
+        "answer": "An obtuse-angled isosceles triangle."
+      },
+      "practice": [
+        {
+          "question": "Classify 0°, 72°, 90°, 135°, 180°, 250° and 360°.",
+          "answer": "Zero, acute, right, obtuse, straight, reflex, complete",
+          "marks": 3
+        },
+        {
+          "question": "A 9.4 cm segment is divided at 4.1 cm. Find the other part.",
+          "answer": "5.3 cm",
+          "marks": 2
+        },
+        {
+          "question": "Classify a triangle with sides 7 cm, 7 cm, 7 cm.",
+          "answer": "Equilateral",
+          "marks": 2
+        },
+        {
+          "question": "Name a quadrilateral with four equal sides but not necessarily right angles.",
+          "answer": "Rhombus",
+          "marks": 2
+        },
+        {
+          "question": "Name polygons with 6, 7 and 8 sides, and state what makes any polygon regular.",
+          "answer": "Hexagon, heptagon, octagon; a regular polygon has all sides equal and all angles equal.",
+          "marks": 3
+        },
+        {
+          "question": "Explain why every square is both a rectangle and a rhombus.",
+          "answer": "It has four right angles like a rectangle and four equal sides like a rhombus",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Read the protractor scale that begins at the aligned arm.",
+        "Equal sides and equal angles describe different triangle classifications.",
+        "Choose the most specific name: a four-equal-sided right-angled quadrilateral is a square."
+      ]
+    },
+    {
+      "slug": "icse6-3d-shapes-nets",
+      "chapter": "Three-Dimensional Shapes and Nets",
+      "number": 15,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Solids, Elements & Foldable Nets",
+      "concepts": [
+        {
+          "title": "Recognising solids",
+          "text": "A cube, cuboid, cylinder, sphere and cone can be identified by their flat faces, curved surfaces, bases and corners. Prisms and pyramids are named from the shapes of their bases."
+        },
+        {
+          "title": "Faces, edges and vertices",
+          "text": "A face is a flat surface, an edge is where faces meet, and a vertex is a corner where edges meet. For curved solids, distinguish flat faces from curved surfaces and circular edges."
+        },
+        {
+          "title": "Prisms and pyramids",
+          "text": "A prism has two congruent parallel bases joined by side faces. A pyramid has one base and triangular side faces meeting at one apex; a tetrahedron is a triangular pyramid."
+        },
+        {
+          "title": "Nets",
+          "text": "A net is a flat arrangement of faces that folds without overlap to make a solid. Different valid nets may form the same solid."
+        }
+      ],
+      "formulas": [
+        "Cube/cuboid: F=6, E=12, V=8",
+        "Triangular prism: F=5, E=9, V=6",
+        "Tetrahedron: F=4, E=6, V=4",
+        "Square pyramid: F=5, E=8, V=5",
+        "Closed-cylinder net=1 rectangle+2 equal circles",
+        "Cone net=1 circular sector+1 circle"
+      ],
+      "method": [
+        "Identify the shape and number of its bases.",
+        "Count flat faces first, then edges and vertices systematically.",
+        "For a net, match every piece with a face or curved surface of the solid.",
+        "Mentally fold adjoining edges and check that no faces overlap or remain open."
+      ],
+      "example": {
+        "question": "Describe a triangular prism and the pieces in its net.",
+        "steps": [
+          "Identify its two congruent triangular bases.",
+          "The three pairs of corresponding base edges are joined by three rectangular faces.",
+          "Count all elements: F=5, E=9 and V=6."
+        ],
+        "answer": "Its net contains two congruent triangles and three rectangles; the solid has 5 faces, 9 edges and 6 vertices."
+      },
+      "practice": [
+        {
+          "question": "State F, E and V for a cube.",
+          "answer": "F=6, E=12, V=8",
+          "marks": 2
+        },
+        {
+          "question": "State F, E and V for a square pyramid.",
+          "answer": "F=5, E=8, V=5",
+          "marks": 2
+        },
+        {
+          "question": "Name a solid with one curved surface and no edge or vertex.",
+          "answer": "Sphere",
+          "marks": 1
+        },
+        {
+          "question": "List the pieces in a closed-cylinder net.",
+          "answer": "One rectangle and two equal circles",
+          "marks": 2
+        },
+        {
+          "question": "List the pieces in a cone net.",
+          "answer": "One circular sector and one circle",
+          "marks": 2
+        },
+        {
+          "question": "Explain why four triangles can form a tetrahedron net.",
+          "answer": "One triangle is the base and three triangles fold up along its sides to meet and close the solid.",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Count every edge once, even though two faces meet there.",
+        "Use “flat face” and “curved surface” to avoid ambiguity for cones and cylinders.",
+        "A collection with the correct faces is a valid net only if it folds without overlap."
+      ]
+    },
+    {
+      "slug": "icse6-symmetry-practical-geometry",
+      "chapter": "Symmetry and Practical Geometry",
+      "number": 16,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Reflection, Angles & Exact Constructions",
+      "concepts": [
+        {
+          "title": "Reflection symmetry",
+          "text": "A line of symmetry acts like a mirror: each point and its image lie at equal perpendicular distances on opposite sides of the line."
+        },
+        {
+          "title": "Perpendicular bisector",
+          "text": "A perpendicular bisector passes through the midpoint of a segment at 90°. Every point on it is equidistant from the segment's endpoints."
+        },
+        {
+          "title": "Angle constructions",
+          "text": "A protractor measures any required angle. Equal-radius compass arcs construct 60°, stepping twice gives 120°, and angle bisectors produce 30° and 45° from 60° and 90°."
+        },
+        {
+          "title": "Copying and circles",
+          "text": "A compass transfers equal lengths and angles. A circle is determined by its centre and radius, so the compass opening must remain fixed while drawing it."
+        }
+      ],
+      "formulas": [
+        "Perpendicular lines meet at 90°",
+        "An angle bisector gives θ/2 and θ/2",
+        "60°÷2=30°; 90°÷2=45°; 120°÷2=60°",
+        "On a perpendicular bisector: PA=PB",
+        "Diameter=2×radius"
+      ],
+      "method": [
+        "Draw and label the base ray, line or segment accurately.",
+        "Use the stated centre and the same compass radius for matching arcs.",
+        "Join only the required points with a straightedge and keep construction arcs visible.",
+        "Measure or use symmetry properties to verify the completed construction."
+      ],
+      "example": {
+        "question": "Construct 60° at O and bisect it.",
+        "steps": [
+          "Draw ray OA and an arc centred at O crossing OA at A.",
+          "With the same radius centred at A, mark B on the arc and join OB; ∠AOB=60°.",
+          "Draw equal arcs from A and B to meet at C, then join OC."
+        ],
+        "answer": "OC bisects the 60° angle, producing two 30° angles."
+      },
+      "practice": [
+        {
+          "question": "Draw AB=6.5 cm.",
+          "answer": "A correctly measured 6.5 cm segment",
+          "marks": 1
+        },
+        {
+          "question": "Construct the perpendicular bisector of a 10 cm segment.",
+          "answer": "It meets the segment at 5 cm and at 90°",
+          "marks": 3
+        },
+        {
+          "question": "Construct 120° using a compass.",
+          "answer": "Step two equal 60° chords around an arc from the base ray",
+          "marks": 3
+        },
+        {
+          "question": "Bisect a constructed 90° angle.",
+          "answer": "Two 45° angles",
+          "marks": 2
+        },
+        {
+          "question": "Reflect a point 4 cm from a mirror line.",
+          "answer": "Its image is 4 cm from the line on the opposite perpendicular",
+          "marks": 2
+        },
+        {
+          "question": "Draw a circle with centre O and diameter 8 cm.",
+          "answer": "Use radius 4 cm",
+          "marks": 2
+        }
+      ],
+      "tips": [
+        "Do not change the compass opening while drawing equal arcs.",
+        "Place the protractor centre exactly on the vertex and read from the correct zero.",
+        "Construction arcs are evidence of the method, so leave them visible."
+      ]
+    },
+    {
+      "slug": "icse6-mensuration-conversions",
+      "chapter": "Perimeter, Area and Unit Conversions",
+      "number": 17,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Boundaries, Surfaces & Everyday Measures",
+      "concepts": [
+        {
+          "title": "Perimeter and area",
+          "text": "Perimeter measures the distance around a closed figure in linear units. Area measures the surface covered inside it in square units."
+        },
+        {
+          "title": "Rectangles and squares",
+          "text": "Use length and breadth for a rectangle. In a square all four sides are equal, so its rectangle formulae reduce to expressions involving one side."
+        },
+        {
+          "title": "Same perimeter, different area",
+          "text": "Shapes can have an equal boundary length but different areas. For rectangles with a fixed perimeter, changing length and breadth can change their product."
+        },
+        {
+          "title": "Unit conversions",
+          "text": "Convert quantities to the same unit before calculating. Multiply when changing to a smaller unit and divide when changing to a larger unit."
+        }
+      ],
+      "formulas": [
+        "Rectangle perimeter = 2(l + b)",
+        "Rectangle area = l × b",
+        "Square perimeter = 4s",
+        "Square area = s²",
+        "1 kg = 1,000 g; 1 L = 1,000 mL",
+        "1 h = 60 min; ₹1 = 100 paise"
+      ],
+      "method": [
+        "Draw or identify the shape and label every known dimension.",
+        "Decide whether the question asks for perimeter, area or a unit conversion.",
+        "Convert all quantities to compatible units and apply the correct formula.",
+        "Check the size of the answer and attach a linear or square unit as appropriate."
+      ],
+      "example": {
+        "question": "A rectangle 14 cm by 6 cm and a square have the same perimeter. Find the square’s side and compare their areas.",
+        "steps": [
+          "Rectangle perimeter = 2(14 + 6) = 40 cm.",
+          "Square side = 40 ÷ 4 = 10 cm.",
+          "Rectangle area = 14 × 6 = 84 cm²; square area = 10² = 100 cm².",
+          "Difference = 100 − 84 = 16 cm²."
+        ],
+        "answer": "The square side is 10 cm, and its area is 16 cm² greater."
+      },
+      "practice": [
+        {
+          "question": "Find the perimeter and area of a rectangle 11 cm by 7 cm.",
+          "answer": "Perimeter = 36 cm; area = 77 cm².",
+          "marks": 2
+        },
+        {
+          "question": "A square has perimeter 44 m. Find its side and area.",
+          "answer": "Side = 11 m; area = 121 m².",
+          "marks": 2
+        },
+        {
+          "question": "Convert 3 kg 85 g to grams.",
+          "answer": "3,085 g",
+          "marks": 1
+        },
+        {
+          "question": "Convert 4 L 250 mL to millilitres.",
+          "answer": "4,250 mL",
+          "marks": 1
+        },
+        {
+          "question": "A film begins at 2:40 p.m. and ends at 4:55 p.m. Find its duration.",
+          "answer": "2 h 15 min, or 135 min.",
+          "marks": 3
+        },
+        {
+          "question": "A rectangle 13 cm by 7 cm and a square have perimeter 40 cm. Compare their areas.",
+          "answer": "Rectangle area = 91 cm²; square side = 10 cm and area = 100 cm²; square is greater by 9 cm².",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Perimeter uses units such as cm; area uses square units such as cm².",
+        "Convert first when measurements are written in mixed units.",
+        "Equal perimeters do not guarantee equal areas."
+      ]
+    },
+    {
+      "slug": "icse6-data-handling",
+      "chapter": "Data Handling",
+      "number": 18,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Tables, Scaled Graphs, Mean & Median",
+      "concepts": [
+        {
+          "title": "Collecting and organising data",
+          "text": "Raw observations become easier to read when sorted into categories and recorded with tallies and frequencies. Each tally bundle of five supports quick counting."
+        },
+        {
+          "title": "Pictographs",
+          "text": "A pictograph represents quantities with repeated symbols. Its key or scale must be used to translate each symbol into the number it represents."
+        },
+        {
+          "title": "Bar graphs",
+          "text": "A bar graph uses equal-width bars and a uniform scale. A clear title, labelled axes and equal gaps make comparisons reliable."
+        },
+        {
+          "title": "Mean and median",
+          "text": "The mean shares the total equally among all observations. The median is the middle after ordering; with an even count it is the mean of the two middle values."
+        }
+      ],
+      "formulas": [
+        "Total observations = sum of all frequencies",
+        "Pictograph value = number of symbols × value of one symbol",
+        "Bar value = bar height in scale units × value of one unit",
+        "Mean = sum of observations ÷ number of observations",
+        "Even-count median = sum of the two middle values ÷ 2"
+      ],
+      "method": [
+        "Collect the observations and arrange them when order is needed.",
+        "Use tallies or a frequency table to check that every observation is counted once.",
+        "Read the key or choose a convenient uniform scale before drawing a pictograph or bar graph.",
+        "Calculate mean or median carefully, then check it against the range of the data."
+      ],
+      "example": {
+        "question": "Find the mean and median of 4, 7, 5, 9, 5 and 6.",
+        "steps": [
+          "Add the observations: 4 + 7 + 5 + 9 + 5 + 6 = 36.",
+          "Mean = 36 ÷ 6 = 6.",
+          "Arrange the data: 4, 5, 5, 6, 7, 9.",
+          "Median = (5 + 6) ÷ 2 = 5.5."
+        ],
+        "answer": "Mean = 6; median = 5.5."
+      },
+      "practice": [
+        {
+          "question": "Prepare a frequency table for 1, 2, 1, 3, 2, 1, 4.",
+          "answer": "1 → 3, 2 → 2, 3 → 1, 4 → 1.",
+          "marks": 2
+        },
+        {
+          "question": "If ◆ represents 5 trees, how many trees do 6 symbols represent?",
+          "answer": "30 trees",
+          "marks": 1
+        },
+        {
+          "question": "Find the mean of 3, 6, 8, 5 and 8.",
+          "answer": "30 ÷ 5 = 6",
+          "marks": 2
+        },
+        {
+          "question": "Find the median of 11, 5, 7, 9 and 6.",
+          "answer": "Ordered data: 5, 6, 7, 9, 11; median = 7.",
+          "marks": 2
+        },
+        {
+          "question": "Find the median of 4, 10, 6, 8, 12 and 2.",
+          "answer": "Ordered data: 2, 4, 6, 8, 10, 12; median = (6 + 8) ÷ 2 = 7.",
+          "marks": 3
+        },
+        {
+          "question": "Describe bar heights for A 15, B 25, C 10 and D 20 using scale 1 unit = 5.",
+          "answer": "A: 3 units, B: 5 units, C: 2 units, D: 4 units, with title and labelled axes.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Always arrange observations before finding the median.",
+        "A graph is incomplete without a title, labels and a scale or key.",
+        "Check that the sum of frequencies equals the number of raw observations."
+      ]
+    }
+  ]
+}
+

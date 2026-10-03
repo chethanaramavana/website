@@ -6,7 +6,7 @@ import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
-  title: `Grade ${paper.grade ?? 10} · ${paper.chapter} · Paper ${paper.paperNumber}`,
+  title: `${paper.board ?? 'CBSE'} · Grade ${paper.grade ?? 10} · ${paper.chapter} · Paper ${paper.paperNumber}`,
   writtenQuestions: Object.entries(paper.written).map(([number, value]) => ({
     number: Number(number),
     marks: writtenMarks[Number(number)],
@@ -121,7 +121,7 @@ export default function TeacherReviewPage() {
       .sort(([left], [right]) => left - right)
       .map(([grade, gradePapers]) => ({
         grade,
-        papers: gradePapers.sort((left, right) => (left.chapterNumber ?? 0) - (right.chapterNumber ?? 0)),
+        papers: gradePapers.sort((left, right) => (left.board ?? 'CBSE').localeCompare(right.board ?? 'CBSE') || (left.chapterNumber ?? 0) - (right.chapterNumber ?? 0)),
       }));
   }, [papers]);
   const selectedPaper: Detail['guide'] = detail?.guide ?? {
@@ -364,7 +364,7 @@ export default function TeacherReviewPage() {
                 <h3 id={`teacher-grade-${grade}`}>Grade {grade}<span>{gradePapers.length} {gradePapers.length === 1 ? 'chapter' : 'chapters'}</span></h3>
                 {gradePapers.map((paper) => (
                   <button className={`paper-editor-paper ${editingPaper?.id === paper.id ? 'active' : ''}`} type="button" key={paper.id} onClick={() => setEditingPaper(structuredClone(paper))}>
-                    <BookOpen /><span><strong>{paper.chapter}</strong><small>Chapter {paper.chapterNumber} · Paper {paper.paperNumber}</small></span>
+                    <BookOpen /><span><strong>{paper.chapter}</strong><small>{paper.board ?? 'CBSE'} · Chapter {paper.chapterNumber} · Paper {paper.paperNumber}</small></span>
                   </button>
                 ))}
               </section>
@@ -373,7 +373,7 @@ export default function TeacherReviewPage() {
           <div className="paper-editor-panel">
             {!editingPaper ? <div className="review-placeholder"><BookOpen /><h2>Select a question paper</h2></div> : (
               <>
-                <header className="paper-editor-heading"><div><p>Grade {editingPaper.grade ?? 10} · CBSE{editingPaper.book ? ` · ${editingPaper.book}` : ''}</p><h2>{editingPaper.chapter}</h2><span>Changes are published only after you press Save paper.</span></div><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save paper'}</button></header>
+                <header className="paper-editor-heading"><div><p>Grade {editingPaper.grade ?? 10} · {editingPaper.board ?? 'CBSE'}{editingPaper.book ? ` · ${editingPaper.book}` : ''}</p><h2>{editingPaper.chapter}</h2><span>Changes are published only after you press Save paper.</span></div><button type="button" onClick={() => void saveQuestionPaper()} disabled={paperSaving}>{paperSaving ? <Loader2 /> : <Save />}{paperSaving ? 'Saving…' : 'Save paper'}</button></header>
                 <div className="paper-editor-general">
                   <label>Paper instruction<textarea value={editingPaper.focus} onChange={(event) => setEditingPaper({ ...editingPaper, focus: event.target.value })} /></label>
                   <label>Case-study introduction<textarea value={editingPaper.caseStudy} onChange={(event) => setEditingPaper({ ...editingPaper, caseStudy: event.target.value })} /></label>

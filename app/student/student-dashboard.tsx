@@ -37,7 +37,8 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><Link href={`/cbse/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`}>Open chapter</Link></article> : null;
+              const board = paper?.board ?? 'CBSE';
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>{board} · Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><Link href={`/${board.toLowerCase()}/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`}>Open chapter</Link></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">
@@ -46,7 +47,7 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
               const paper = paperDefinitionsById[submission.paper_id];
               return <a key={submission.id} href={`/student/results/${submission.id}`}>
                 <span className={`student-result-icon ${submission.status}`}>{submission.status === 'marked' ? <CheckCircle2 /> : <Clock3 />}</span>
-                <span><strong>{paper?.chapter ?? 'Chapter test'}</strong><small>Grade {paper?.grade ?? 10} · {new Date(submission.submitted_at).toLocaleString()}</small></span>
+                <span><strong>{paper?.chapter ?? 'Chapter test'}</strong><small>{paper?.board ?? 'CBSE'} · Grade {paper?.grade ?? 10} · {new Date(submission.submitted_at).toLocaleString()}</small></span>
                 <em>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</em>
               </a>;
             })}</div> : <div className="student-account-empty"><Clock3 /><span>Submitted tests and marks will appear here.</span></div>}

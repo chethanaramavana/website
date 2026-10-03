@@ -42,9 +42,11 @@ import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, t
 
 const boards = [
   { name: 'CBSE', ready: true },
-  { name: 'ICSE', ready: false },
+  { name: 'ICSE', ready: true },
   { name: 'IGCSE', ready: false },
 ] as const;
+
+type BoardName = (typeof boards)[number]['name'];
 
 const helpDeskEmail = 'chethanamanasa21@gmail.com';
 const helpDeskPhone = '+91 93539 28169';
@@ -133,7 +135,36 @@ const grade11Chapters = [
   'Probability',
 ];
 
-const chaptersByGrade: Record<number, string[]> = { 6: grade6Chapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters };
+const icseGrade6Chapters = [
+  'Knowing Our Numbers',
+  'Whole Numbers',
+  'Playing with Numbers',
+  'Integers',
+  'Sets',
+  'Fractions',
+  'Decimals',
+  'Ratio and Proportion',
+  'Percentage and Unitary Method',
+  'Speed, Time and Distance',
+  'Algebraic Expressions',
+  'Simple Linear Equations',
+  'Basic Geometrical Ideas',
+  'Angles, Triangles and Quadrilaterals',
+  'Three-Dimensional Shapes and Nets',
+  'Symmetry and Practical Geometry',
+  'Perimeter, Area and Unit Conversions',
+  'Data Handling',
+];
+
+const chaptersByBoard: Record<BoardName, Record<number, string[]>> = {
+  CBSE: { 6: grade6Chapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters },
+  ICSE: { 6: icseGrade6Chapters },
+  IGCSE: {},
+};
+
+function chaptersFor(board: BoardName | null, grade: number) {
+  return board ? chaptersByBoard[board][grade] ?? [] : [];
+}
 
 const realNumbersMcqs = [
   {
@@ -238,6 +269,7 @@ type PaperDefinition = {
   chapter: string;
   chapterNumber: number;
   paperNumber: string;
+  board?: 'CBSE' | 'ICSE';
   grade?: number;
   book?: string;
   mcqs: readonly { number: number; question: string; options: readonly string[]; source?: string }[];
@@ -294,14 +326,13 @@ const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
   },
 };
 
-function getPaperForChapter(grade: number, chapterName: string) {
-  return getSharedPaperDefinition(grade, chapterName)
-    ?? (((paperDefinitions[chapterName] && (paperDefinitions[chapterName].grade ?? 10) === grade)
+function getPaperForChapter(board: BoardName, grade: number, chapterName: string) {
+  if (board === 'IGCSE') return null;
+  return getSharedPaperDefinition(grade, chapterName, board)
+    ?? (((board === 'CBSE' && paperDefinitions[chapterName] && (paperDefinitions[chapterName].grade ?? 10) === grade)
       ? paperDefinitions[chapterName]
       : null));
 }
-
-type BoardName = (typeof boards)[number]['name'];
 
 type HomePageProps = {
   initialBoard?: BoardName | null;
@@ -309,16 +340,20 @@ type HomePageProps = {
   initialChapterNumber?: number | null;
 };
 
-function chapterPath(grade: number, chapterName: string) {
-  const chapterNumber = (chaptersByGrade[grade] ?? []).indexOf(chapterName) + 1;
-  return chapterNumber > 0 ? `/cbse/grade-${grade}/ch-${chapterNumber}` : `/cbse/grade-${grade}`;
+function boardPath(board: BoardName) {
+  return `/${board.toLowerCase()}`;
+}
+
+function chapterPath(board: BoardName, grade: number, chapterName: string) {
+  const chapterNumber = chaptersFor(board, grade).indexOf(chapterName) + 1;
+  return chapterNumber > 0 ? `${boardPath(board)}/grade-${grade}/ch-${chapterNumber}` : `${boardPath(board)}/grade-${grade}`;
 }
 
 export default function HomePage({ initialBoard = null, initialGrade = null, initialChapterNumber = null }: HomePageProps = {}) {
   const initialChapter = initialGrade && initialChapterNumber
-    ? chaptersByGrade[initialGrade]?.[initialChapterNumber - 1] ?? null
+    ? chaptersFor(initialBoard, initialGrade)[initialChapterNumber - 1] ?? null
     : null;
-  const initialPaper = initialChapter && initialGrade ? getPaperForChapter(initialGrade, initialChapter) : null;
+  const initialPaper = initialChapter && initialGrade && initialBoard ? getPaperForChapter(initialBoard, initialGrade, initialChapter) : null;
   const [board, setBoard] = useState<BoardName | null>(initialBoard);
   const [grade, setGrade] = useState<number | null>(initialGrade);
   const [chapter, setChapter] = useState<string | null>(initialPaper ? null : initialChapter);
@@ -346,7 +381,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       || studentRecords.submissions.some((submission) => submission.paper_id === requestedPaperId);
 
     if (requestedPaper && studentRecords.signedIn && hasAccess) {
-      setBoard('CBSE');
+      setBoard(requestedPaper.board ?? 'CBSE');
       setGrade(requestedPaper.grade ?? 10);
       setChapter(requestedPaper.chapter);
     } else {
@@ -375,16 +410,17 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
 
   function openBoard(nextBoard: BoardName) {
     clearRequestedPaper();
-    updateAddress(nextBoard === 'CBSE' ? '/cbse' : '/');
+    updateAddress(nextBoard === 'IGCSE' ? '/' : boardPath(nextBoard));
     setBoard(nextBoard);
     setGrade(null);
     setChapter(null);
   }
 
   function openGrade(nextGrade: number) {
+    if (!board) return;
     const currentScrollPosition = window.scrollY;
     clearRequestedPaper();
-    updateAddress(`/cbse/grade-${nextGrade}`);
+    updateAddress(`${boardPath(board)}/grade-${nextGrade}`);
     setGrade(nextGrade);
     setChapter(null);
     requestAnimationFrame(() => {
@@ -393,14 +429,14 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }
 
   function openChapter(nextChapter: string) {
-    if (grade !== null) updateAddress(chapterPath(grade, nextChapter));
+    if (board && grade !== null) updateAddress(chapterPath(board, grade, nextChapter));
     setChapter(nextChapter);
     requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'auto' }));
   }
 
   function returnToChapters() {
     clearRequestedPaper();
-    if (grade !== null) updateAddress(`/cbse/grade-${grade}`);
+    if (board && grade !== null) updateAddress(`${boardPath(board)}/grade-${grade}`);
     setChapter(null);
   }
 
@@ -414,21 +450,24 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         setChapter(null);
         return;
       }
-      if (path === '/cbse' || path === '/cbse/') {
+      const boardMatch = path.match(/^\/(cbse|icse)\/?$/);
+      if (boardMatch) {
         clearRequestedPaper();
-        setBoard('CBSE');
+        setBoard(boardMatch[1].toUpperCase() as BoardName);
         setGrade(null);
         setChapter(null);
         return;
       }
-      const match = path.match(/^\/cbse\/grade-(6|10|11|12)(?:\/ch-(\d+))?\/?$/);
+      const match = path.match(/^\/(cbse|icse)\/grade-(6|10|11|12)(?:\/ch-(\d+))?\/?$/);
       if (!match) return;
-      const nextGrade = Number(match[1]);
-      const nextChapter = match[2] ? chaptersByGrade[nextGrade]?.[Number(match[2]) - 1] ?? null : null;
+      const nextBoard = match[1].toUpperCase() as BoardName;
+      const nextGrade = Number(match[2]);
+      if (!chaptersFor(nextBoard, nextGrade).length) return;
+      const nextChapter = match[3] ? chaptersFor(nextBoard, nextGrade)[Number(match[3]) - 1] ?? null : null;
       clearRequestedPaper();
-      setBoard('CBSE');
+      setBoard(nextBoard);
       setGrade(nextGrade);
-      const nextPaper = nextChapter ? getPaperForChapter(nextGrade, nextChapter) : null;
+      const nextPaper = nextChapter ? getPaperForChapter(nextBoard, nextGrade, nextChapter) : null;
       const hasAccess = nextPaper && studentRecords?.signedIn && (
         studentRecords.access.includes(nextPaper.id)
         || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
@@ -468,9 +507,9 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       ) : grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView grade={grade} onHome={goHome} onBoard={() => openBoard('CBSE')} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
+        <ChaptersView board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
-        <ChapterView grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard('CBSE')} onChapters={returnToChapters} />
+        <ChapterView board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
@@ -526,7 +565,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
             <button key={item.name} className={`folder-card board-folder board-${index + 1}`} type="button" onClick={() => onOpenBoard(item.name)}>
               <span className="folder-icon"><Folder /></span>
               <span className="folder-copy"><strong>{item.name}</strong></span>
-              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.ready ? 'Grades 6, 10, 11 & 12' : 'Coming soon'}</span>
+              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.name === 'CBSE' ? 'Grades 6, 10, 11 & 12' : item.name === 'ICSE' ? 'Grade 6' : 'Coming soon'}</span>
               <ChevronRight className="folder-arrow" />
             </button>
           ))}
@@ -560,6 +599,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
 
 function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: () => void; onOpenGrade: (grade: number) => void }) {
   const isCbse = board === 'CBSE';
+  const isIcse = board === 'ICSE';
   return (
     <div className="content-view">
       <Breadcrumb items={[{ label: board }]} onHome={onHome} />
@@ -589,6 +629,17 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(12)}>
               <span className="folder-icon"><GraduationCap /></span>
               <span><small>CBSE Mathematics · Part II</small><strong>Grade 12</strong><em>13 chapters</em></span>
+              <ChevronRight />
+            </button>
+          </div>
+        </section>
+      ) : isIcse ? (
+        <section className="folder-content">
+          <div className="list-heading"><h2>Grades</h2><span>1 folder</span></div>
+          <div className="grade-folder-list">
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>ICSE · CISCE Upper Primary Curriculum</small><strong>Grade 6</strong><em>18 chapters</em></span>
               <ChevronRight />
             </button>
           </div>
@@ -626,15 +677,15 @@ declare global {
   }
 }
 
-function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords }: { grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
+function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords }: { board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
   const [paymentMessage, setPaymentMessage] = useState('');
   const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const razorpayRecoveryAttemptsRef = useRef(0);
-  const chapters = chaptersByGrade[grade] ?? [];
-  const pendingPaper = pendingChapter ? getPaperForChapter(grade, pendingChapter) : null;
+  const chapters = chaptersFor(board, grade);
+  const pendingPaper = pendingChapter ? getPaperForChapter(board, grade, pendingChapter) : null;
   const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
   const selectedPaper = isAvailablePaper ? pendingPaper : null;
   const completedSubmission = selectedPaper
@@ -679,7 +730,7 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
   }, [completedSubmission, pendingChapter, selectedPaper, studentRecords]);
 
   const checkRazorpayStatus = useCallback(async (chapterName: PaperDefinition['chapter'], options: { silent?: boolean } = {}) => {
-    const paper = getPaperForChapter(grade, chapterName);
+    const paper = getPaperForChapter(board, grade, chapterName);
     if (!paper || !studentRecords?.signedIn) return false;
     if (!options.silent) {
       setRazorpayStatus('verifying');
@@ -715,10 +766,10 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
       }
       return false;
     }
-  }, [grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
+  }, [board, grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
 
   function openChapter(nextChapter: string) {
-    const paper = getPaperForChapter(grade, nextChapter);
+    const paper = getPaperForChapter(board, grade, nextChapter);
     if (paper && (paper.grade ?? 10) === grade && studentRecords?.signedIn) {
       const earlierSubmission = studentRecords.submissions.find((submission) => submission.paper_id === paper.id);
       if (!earlierSubmission && studentRecords.access.includes(paper.id)) {
@@ -857,10 +908,10 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
 
   return (
     <div className="content-view">
-      <Breadcrumb items={[{ label: 'CBSE', onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
+      <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>CBSE Mathematics</p><h1>Grade {grade}</h1><span>{grade === 6 ? 'Ganita Prakash · ' : ''}Chapter folders</span></div>
+        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? 'CISCE Upper Primary · ' : ''}Chapter folders</span></div>
       </section>
       <section className="folder-content">
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} folders</span></div>
@@ -937,18 +988,18 @@ function ChaptersView({ grade, onHome, onBoard, onOpenChapter, initialPendingCha
   );
 }
 
-function ChapterView({ grade, chapter, onHome, onBoard, onChapters }: { grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
-  const paper = getPaperForChapter(grade, chapter);
+function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters }: { board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
+  const paper = getPaperForChapter(board, grade, chapter);
   if (paper && (paper.grade ?? 10) === grade) {
     return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
 
   return (
     <div className="content-view">
-      <Breadcrumb items={[{ label: 'CBSE', onClick: onBoard }, { label: `Grade ${grade}`, onClick: onChapters }, { label: chapter }]} onHome={onHome} />
+      <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}`, onClick: onChapters }, { label: chapter }]} onHome={onHome} />
       <section className="chapter-empty-view">
         <span className="chapter-open-icon"><FolderOpen /></span>
-        <p>Grade {grade} · CBSE Mathematics</p>
+        <p>Grade {grade} · {board} Mathematics</p>
         <h1>{chapter}</h1>
         <div className="gold-rule" />
         <strong>Chapter folder created</strong>
@@ -1255,7 +1306,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     <div className="content-view paper-page">
       <div className="paper-toolbar">
         <Breadcrumb items={[
-          { label: 'CBSE', onClick: () => requestExit(onBoard) },
+          { label: currentPaper.board ?? 'CBSE', onClick: () => requestExit(onBoard) },
           { label: `Grade ${currentPaper.grade ?? 10}`, onClick: () => requestExit(onChapters) },
           { label: currentPaper.chapter },
         ]} onHome={() => requestExit(onHome)} />
@@ -1268,7 +1319,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
         <header className="paper-heading">
           <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Centre" width="720" height="720" decoding="async" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
-          <p>CBSE Mathematics{(currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
+          <p>{currentPaper.board ?? 'CBSE'} Mathematics{(currentPaper.board ?? 'CBSE') === 'CBSE' && (currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
           <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
         </header>
@@ -1480,6 +1531,20 @@ function QuestionDiagram({ kind }: { kind: QuestionVisual }) {
   if (kind === 'integer-path') {
     return <figure className="question-visual"><svg viewBox="0 0 300 125" role="img" aria-label="Number line showing a move from minus three to two, then back to minus two"><path d="M25 75 H275" />{Array.from({ length: 10 }, (_, index) => index - 5).map((number, index) => <g key={number}><path d={`M${35 + index * 25} 68 V82`} /><text x={35 + index * 25} y="101" textAnchor="middle">{number}</text></g>)}<path className="diagram-arrow first" d="M85 55 Q148 10 210 55" /><path className="diagram-arrow second" d="M210 42 Q160 5 110 42" /><text x="148" y="19" textAnchor="middle">+5</text><text x="160" y="39" textAnchor="middle">−4</text></svg></figure>;
   }
+  if (kind === 'set-diagram') {
+    return <figure className="question-visual"><svg viewBox="0 0 280 150" role="img" aria-label="Set A containing the even numbers two, four, six and eight, with five outside the set"><rect x="18" y="16" width="244" height="118" rx="8" /><ellipse className="diagram-fill" cx="122" cy="75" rx="76" ry="45" /><text x="53" y="43">A</text><text x="83" y="80">2</text><text x="119" y="58">4</text><text x="158" y="80">6</text><text x="119" y="104">8</text><text x="224" y="78">5</text></svg></figure>;
+  }
+  if (kind === 'line-ray-segment') {
+    return <figure className="question-visual"><svg viewBox="0 0 300 175" role="img" aria-label="A line, a ray and a line segment shown separately"><defs><marker id="diagram-arrow-head" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 Z" /></marker></defs><path d="M35 38 H265" markerStart="url(#diagram-arrow-head)" markerEnd="url(#diagram-arrow-head)" /><text x="150" y="27" textAnchor="middle">line</text><circle cx="52" cy="88" r="4" /><path d="M52 88 H260" markerEnd="url(#diagram-arrow-head)" /><text x="150" y="78" textAnchor="middle">ray</text><circle cx="55" cy="139" r="4" /><circle cx="245" cy="139" r="4" /><path d="M55 139 H245" /><text x="150" y="164" textAnchor="middle">line segment</text></svg></figure>;
+  }
+  if (kind === 'cube-net') {
+    const squares = [[90,55],[130,55],[170,55],[210,55],[130,15],[130,95]];
+    return <figure className="question-visual"><svg viewBox="0 0 330 155" role="img" aria-label="A valid net of a cube made from six equal squares">{squares.map(([x,y], index) => <rect key={index} className={index % 2 === 0 ? 'diagram-fill' : ''} x={x} y={y} width="40" height="40" />)}<text x="165" y="150" textAnchor="middle">six equal square faces</text></svg></figure>;
+  }
+  if (kind === 'pictograph') {
+    const rows = [['A',4],['B',3],['C',5]] as const;
+    return <figure className="question-visual"><svg viewBox="0 0 310 175" role="img" aria-label="Pictograph for groups A, B and C, where each dot represents two books">{rows.map(([label,count], row) => <g key={label}><text x="35" y={36 + row * 42}>{label}</text>{Array.from({ length: count }, (_, index) => <circle className="diagram-bar" key={index} cx={75 + index * 36} cy={31 + row * 42} r="10" />)}</g>)}<circle className="diagram-bar" cx="73" cy="157" r="7" /><text x="88" y="162">= 2 books</text></svg></figure>;
+  }
   if (kind === 'intersecting-lines') {
     return <figure className="question-visual"><svg viewBox="0 0 280 150" role="img" aria-label="Two straight lines intersect at one point"><path d="M34 125 L238 28 M48 22 L246 130" /><circle cx="143" cy="73" r="3" /><text x="151" y="68">one solution</text><text x="25" y="136">l₁</text><text x="250" y="139">l₂</text></svg></figure>;
   }
@@ -1523,7 +1588,7 @@ function PaperSection({ title, subtitle, marks, children }: { title: string; sub
 }
 
 function QuestionSource({ value }: { value: string }) {
-  return <span className="question-source" title="Verified against an official CBSE question paper"><CheckCircle2 /> Previous exam: {value}</span>;
+  return <span className="question-source" title="Verified against the cited source"><CheckCircle2 /> Previous exam: {value}</span>;
 }
 
 function WrittenQuestion({ number, marks, source, children, files, savedFiles, isSaving, onFilesChange }: {

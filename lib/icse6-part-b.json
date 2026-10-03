@@ -1,0 +1,1796 @@
+{
+  "papers": [
+    {
+      "id": "icse6-decimals-01",
+      "chapter": "Decimals",
+      "chapterNumber": 7,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Use decimal place value accurately, convert terminating decimals and fractions, and solve two-step problems involving money, mass, length and temperature.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The place value of 4 in 36.407 is",
+          "options": [
+            "0.04",
+            "0.4",
+            "4",
+            "400"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The decimal form of 37/100 is",
+          "options": [
+            "3.7",
+            "0.037",
+            "0.37",
+            "37"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "0.625 written as a fraction in simplest form is",
+          "options": [
+            "5/8",
+            "25/40",
+            "625/100",
+            "3/5"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which comparison is correct?",
+          "options": [
+            "4.8 > 4.08",
+            "4.8 < 4.08",
+            "4.8 = 4.08",
+            "4.08 = 4.80"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which decimal is equal to 3.5?",
+          "options": [
+            "3.05",
+            "3.50",
+            "0.35",
+            "35.0"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "7.35 + 2.8 equals",
+          "options": [
+            "9.15",
+            "9.43",
+            "10.15",
+            "10.43"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "12 − 3.475 equals",
+          "options": [
+            "8.425",
+            "8.475",
+            "9.525",
+            "8.525"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "The change from ₹50 after spending ₹27.65 is",
+          "options": [
+            "₹22.35",
+            "₹22.45",
+            "₹23.35",
+            "₹32.35"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "2 kg 75 g written in kilograms is",
+          "options": [
+            "2.75 kg",
+            "2.750 kg",
+            "2.075 kg",
+            "2.0075 kg"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "6 m 8 cm written in metres is",
+          "options": [
+            "6.8 m",
+            "6.08 m",
+            "6.008 m",
+            "6.80 m"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "A temperature of 18.6°C falls by 7.9°C. The new temperature is",
+          "options": [
+            "10.7°C",
+            "11.3°C",
+            "10.3°C",
+            "26.5°C"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "0.4 written as a fraction in simplest form is",
+          "options": [
+            "4/100",
+            "2/5",
+            "4/5",
+            "1/4"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "The terminating decimal equal to 3/8 is",
+          "options": [
+            "0.38",
+            "0.35",
+            "0.375",
+            "0.83"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "The least of 0.56, 0.506, 0.65 and 0.605 is",
+          "options": [
+            "0.56",
+            "0.506",
+            "0.65",
+            "0.605"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "0.7 and 0.70 have the same value.",
+          "reason": "Adding zeros to the right of the last decimal digit does not change the value."
+        },
+        {
+          "number": 16,
+          "assertion": "0.09 is greater than 0.1.",
+          "reason": "Writing the decimals with equal places as 0.09 and 0.10 shows that 0.09 < 0.10."
+        }
+      ],
+      "written": {
+        "17": "Write 54.307 in expanded form. State the place value of 3 and of 7.",
+        "18": "Convert (a) 7/20 to a decimal and (b) 0.875 to a fraction in simplest form.",
+        "19": "Arrange in ascending order: 2.05, 2.5, 2.005, 2.055.",
+        "20": "Asha has ₹500. She buys a book for ₹126.75 and a geometry box for ₹84.60. How much money is left?",
+        "21": "A sack contains 12 kg 350 g of grain. First 3 kg 875 g and then 1 kg 625 g are removed. Find the mass left.",
+        "22": "At noon the temperature is 28.4°C. It rises by 3.75°C and later falls by 6.9°C. Find the final temperature.",
+        "23": [
+          "A roll contains 25.50 m of ribbon. Four pieces measuring 4.75 m, 6.85 m, 3.40 m and 2.95 m are cut from it.",
+          "(a) Find the total length of the first two pieces.",
+          "(b) Find the total length of all four pieces.",
+          "(c) Find the ribbon left in metres and centimetres."
+        ],
+        "24": [
+          "(a) How much money remains after buying only the notebook? [1]",
+          "(b) Find the total amount spent. [1]",
+          "(c) Find the final amount left. Is it enough to buy another item costing ₹60? State the shortage, if any. [2]"
+        ]
+      },
+      "caseStudy": "Maya has ₹250.00. She buys a notebook for ₹68.75 and an art kit for ₹124.50.",
+      "answerKey": [
+        1,
+        2,
+        0,
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "54.307 = 50 + 4 + 0.3 + 0.007. The place value of 3 is 0.3 (three tenths), and the place value of 7 is 0.007 (seven thousandths).",
+        "18": "(a) 7/20 = 35/100 = 0.35. (b) 0.875 = 875/1000 = 7/8.",
+        "19": "Using equal decimal places: 2.005, 2.050, 2.055, 2.500. Therefore 2.005 < 2.05 < 2.055 < 2.5.",
+        "20": "Total spent = ₹126.75 + ₹84.60 = ₹211.35. Money left = ₹500.00 − ₹211.35 = ₹288.65.",
+        "21": "12 kg 350 g = 12.350 kg. Mass removed = 3.875 kg + 1.625 kg = 5.500 kg. Mass left = 12.350 − 5.500 = 6.850 kg = 6 kg 850 g.",
+        "22": "After the rise: 28.40 + 3.75 = 32.15°C. Final temperature = 32.15 − 6.90 = 25.25°C.",
+        "23": "(a) 4.75 + 6.85 = 11.60 m. (b) 11.60 + 3.40 + 2.95 = 17.95 m. (c) 25.50 − 17.95 = 7.55 m = 755 cm.",
+        "24": "(a) ₹250.00 − ₹68.75 = ₹181.25. (b) ₹68.75 + ₹124.50 = ₹193.25. (c) ₹250.00 − ₹193.25 = ₹56.75. It is not enough for an item costing ₹60; the shortage is ₹3.25."
+      }
+    },
+    {
+      "id": "icse6-ratio-proportion-01",
+      "chapter": "Ratio and Proportion",
+      "chapterNumber": 8,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Compare like quantities using ratios, generate equivalent ratios, and verify or complete proportions.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "18:24 in simplest form is",
+          "options": [
+            "2:3",
+            "3:4",
+            "4:3",
+            "6:8"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The ratio obtained by reversing the order in 5:8 is",
+          "options": [
+            "5:8",
+            "5/8",
+            "8:5",
+            "13:8"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "2 m : 50 cm equals",
+          "options": [
+            "2:50",
+            "4:1",
+            "1:4",
+            "200:1"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which statement best distinguishes a ratio from a fraction?",
+          "options": [
+            "A ratio must always be less than 1.",
+            "A fraction can compare quantities with different units without conversion.",
+            "A fraction commonly represents a part of a whole, while a ratio compares two quantities.",
+            "A ratio and a fraction always mean exactly the same thing."
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which ratio is equivalent to 7:9?",
+          "options": [
+            "21:27",
+            "14:27",
+            "28:45",
+            "35:54"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "If 4:7 = 20:x, then x equals",
+          "options": [
+            "28",
+            "32",
+            "35",
+            "40"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Which pair of ratios forms a proportion?",
+          "options": [
+            "6:9 and 10:15",
+            "4:7 and 12:20",
+            "5:8 and 15:20",
+            "7:12 and 21:30"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "In 3:5 = 12:20, the extremes are",
+          "options": [
+            "5 and 12",
+            "3 and 20",
+            "3 and 12",
+            "5 and 20"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "In 3:5 = 12:20, the means are",
+          "options": [
+            "3 and 20",
+            "3 and 12",
+            "5 and 12",
+            "5 and 20"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "If a:b = c:d, then",
+          "options": [
+            "ad = bc",
+            "ab = cd",
+            "ac = bd",
+            "a + d = b + c"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "The ratio of boys to girls is 4:5. If there are 28 boys, the number of girls is",
+          "options": [
+            "32",
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Red and blue beads are in the ratio 3:7. If there are 21 red beads, the total number of beads is",
+          "options": [
+            "49",
+            "63",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Which pair does not form a proportion?",
+          "options": [
+            "2:3 and 8:12",
+            "5:7 and 15:21",
+            "4:9 and 12:27",
+            "3:4 and 12:15"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "If A:B = 2:3 and B:C = 4:5, then A:B:C is",
+          "options": [
+            "2:4:5",
+            "6:12:15",
+            "8:12:15",
+            "8:6:15"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Multiplying both terms of a ratio by the same non-zero number gives an equivalent ratio.",
+          "reason": "The value of the quotient represented by the ratio remains unchanged."
+        },
+        {
+          "number": 16,
+          "assertion": "A ratio must always represent a part of one whole.",
+          "reason": "A ratio can compare two quantities of the same kind, whereas a fraction often represents part of a whole."
+        }
+      ],
+      "written": {
+        "17": "Reduce 84:126 to simplest form and write two other ratios equivalent to it.",
+        "18": "Find the ratio 2 m 40 cm : 1 m 20 cm in simplest form.",
+        "19": "Check whether 12, 18, 20 and 30 are in proportion, in the given order.",
+        "20": "Find x if 7:11 = x:44. Verify the proportion using the products of extremes and means.",
+        "21": "The ratio of boys to girls in a class is 5:4 and the class has 45 students. Find the numbers of boys and girls.",
+        "22": "A recipe uses flour and sugar in the ratio 3:2. Write an equivalent ratio to find the sugar needed when 750 g of flour is used.",
+        "23": [
+          "Three school houses A, B and C have students in the ratios A:B = 3:5 and B:C = 10:7. There are 460 students altogether.",
+          "(a) Find the combined ratio A:B:C.",
+          "(b) Find the number of students in each house.",
+          "(c) Verify that the numbers for A and B have ratio 3:5."
+        ],
+        "24": [
+          "(a) Reduce the dimensions of the first poster to a simplest ratio. [1]",
+          "(b) Find the width of the second poster. [1]",
+          "(c) A third poster has width 52 cm. Find its height and verify the proportion by cross-products. [2]"
+        ]
+      },
+      "caseStudy": "An art club makes rectangular posters whose width and height are always in the ratio 4:3. The first poster is 32 cm by 24 cm, and a second poster has height 30 cm.",
+      "answerKey": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        3,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "84:126 = (84 ÷ 42):(126 ÷ 42) = 2:3. Two equivalent ratios are 4:6 and 6:9.",
+        "18": "Convert to one unit: 2 m 40 cm = 240 cm and 1 m 20 cm = 120 cm. The ratio is 240:120 = 2:1.",
+        "19": "12:18 = 2:3 and 20:30 = 2:3, so the four numbers are in proportion. Equivalently, 12 × 30 = 18 × 20 = 360.",
+        "20": "7/11 = x/44, so 11x = 7 × 44 and x = 28. Verification: extremes 7 × 44 = 308; means 11 × 28 = 308.",
+        "21": "Total parts = 5 + 4 = 9. Each part represents 45 ÷ 9 = 5 students. Boys = 5 × 5 = 25; girls = 4 × 5 = 20.",
+        "22": "3:2 = 750:x. Since 3 × 250 = 750, multiply both terms by 250: 750:500. Therefore 500 g of sugar is needed.",
+        "23": "Make the B terms equal: A:B = 3:5 = 6:10 and B:C = 10:7, so A:B:C = 6:10:7. Total parts = 23 and each part is 460 ÷ 23 = 20. Hence A = 120, B = 200 and C = 140. Also 120:200 = 3:5.",
+        "24": "(a) 32:24 = 4:3. (b) 4:3 = w:30, so w = 40 cm. (c) 4:3 = 52:h gives h = 39 cm. Verification: 4 × 39 = 3 × 52 = 156."
+      }
+    },
+    {
+      "id": "icse6-percentage-unitary-method-01",
+      "chapter": "Percentage and Unitary Method",
+      "chapterNumber": 9,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Interpret percent as an amount out of 100 and use direct unitary reasoning in simple daily-life situations.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The word percent means",
+          "options": [
+            "per ten",
+            "per thousand",
+            "per hundred",
+            "per one"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "37% written as a fraction is",
+          "options": [
+            "37/10",
+            "37/100",
+            "100/37",
+            "3/7"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "1/4 written as a percentage is",
+          "options": [
+            "25%",
+            "40%",
+            "50%",
+            "75%"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The fraction 60/100 is",
+          "options": [
+            "6%",
+            "16%",
+            "60%",
+            "600%"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "25% of 80 is",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "40"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "10% of 350 is",
+          "options": [
+            "3.5",
+            "10",
+            "30",
+            "35"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "In a class of 40 students, 30% travel by bus. The number travelling by bus is",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "30"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "If 100% of a quantity is 250, then 1% of it is",
+          "options": [
+            "0.25",
+            "2.5",
+            "25",
+            "250"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Five identical notebooks cost ₹60. The cost of one notebook is",
+          "options": [
+            "₹5",
+            "₹10",
+            "₹12",
+            "₹15"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "One pen costs ₹18. At the same rate, seven pens cost",
+          "options": [
+            "₹25",
+            "₹108",
+            "₹116",
+            "₹126"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "Eight metres of cloth cost ₹560. At the same rate, five metres cost",
+          "options": [
+            "₹280",
+            "₹350",
+            "₹400",
+            "₹448"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Four identical boxes contain 48 chalks in all. Seven such boxes contain",
+          "options": [
+            "56 chalks",
+            "72 chalks",
+            "84 chalks",
+            "96 chalks"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "15% of 200 is",
+          "options": [
+            "30",
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "Which is the greatest?",
+          "options": [
+            "40%",
+            "3/8",
+            "1/2",
+            "45/100"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "20%=1/5.",
+          "reason": "20%=20/100, which reduces to 1/5."
+        },
+        {
+          "number": 16,
+          "assertion": "If 4 pens cost ₹52, then 8 pens cost ₹26 at the same rate.",
+          "reason": "In direct variation, doubling the number of identical items doubles their total cost."
+        }
+      ],
+      "written": {
+        "17": "Convert: (a) 45% to a fraction in simplest form, (b) 3/5 to a percentage.",
+        "18": "Find 35% of 240.",
+        "19": "Seven identical erasers cost ₹84. Find the cost of (a) one eraser and (b) five erasers.",
+        "20": "A school has 160 students in Grade 6. If 25% cycle to school, find the number who cycle and the number who do not.",
+        "21": "Nine kilograms of rice cost ₹495. Find the cost of 6 kg at the same rate by the unitary method.",
+        "22": "Eight identical packets contain 200 biscuits altogether. How many biscuits will 14 such packets contain? Show the value for one packet first.",
+        "23": [
+          "A school prints 360 worksheets. It gives 45% of them to Grade 6.",
+          "(a) Find the number given to Grade 6. [2]",
+          "(b) Find the number left. [1]",
+          "(c) The remaining worksheets are placed equally in files of 9. Find the number of files needed. [2]"
+        ],
+        "24": [
+          "(a) How many oranges are in one basket? [1]",
+          "(b) At the same rate, how many oranges are needed for 15 baskets? [1]",
+          "(c) If 25% of those oranges are set aside, find the number set aside and the number remaining. [2]"
+        ]
+      },
+      "caseStudy": "A fruit stall packs 48 oranges equally into 6 identical baskets. Every basket contains the same number of oranges.",
+      "answerKey": [
+        2,
+        1,
+        0,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        0,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "(a) 45%=45/100=9/20. (b) 3/5=(3×20)/(5×20)=60/100=60%.",
+        "18": "35% of 240=35/100×240=84.",
+        "19": "One eraser costs ₹84÷7=₹12. Five erasers cost ₹12×5=₹60.",
+        "20": "Students who cycle=25/100×160=40. Students who do not cycle=160−40=120.",
+        "21": "Cost of 1 kg=₹495÷9=₹55. Cost of 6 kg=₹55×6=₹330.",
+        "22": "Biscuits in 1 packet=200÷8=25. Biscuits in 14 packets=25×14=350.",
+        "23": "(a) 45% of 360=45/100×360=162 worksheets. (b) Left=360−162=198 worksheets. (c) Number of files=198÷9=22.",
+        "24": "(a) One basket has 48÷6=8 oranges. (b) Fifteen baskets need 8×15=120 oranges. (c) Set aside=25/100×120=30 oranges; remaining=120−30=90 oranges."
+      }
+    },
+    {
+      "id": "icse6-speed-time-distance-01",
+      "chapter": "Speed, Time and Distance",
+      "chapterNumber": 10,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Choose the correct direct relationship among speed, time and distance, and keep units consistent.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "Speed is calculated by",
+          "options": [
+            "distance÷time",
+            "time÷distance",
+            "distance×time",
+            "distance+time"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "An object moving at speed s for time t covers distance",
+          "options": [
+            "s÷t",
+            "t÷s",
+            "s×t",
+            "s+t"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "The time taken to cover distance d at speed s is",
+          "options": [
+            "s÷d",
+            "d÷s",
+            "d×s",
+            "d−s"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "A car covers 120 km in 3 hours. Its speed is",
+          "options": [
+            "30 km/h",
+            "40 km/h",
+            "60 km/h",
+            "360 km/h"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "A bus travels at 45 km/h for 4 hours. The distance covered is",
+          "options": [
+            "49 km",
+            "90 km",
+            "160 km",
+            "180 km"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "The time needed to cover 150 km at 50 km/h is",
+          "options": [
+            "2 h",
+            "2.5 h",
+            "3 h",
+            "7.5 h"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Which is a unit of speed?",
+          "options": [
+            "km",
+            "km/h",
+            "h/km",
+            "h"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "At a fixed speed, travelling for a longer time gives",
+          "options": [
+            "a smaller distance",
+            "the same distance",
+            "a greater distance",
+            "zero distance"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Cyclist A moves at 18 km/h and cyclist B at 15 km/h for the same time. Cyclist A covers",
+          "options": [
+            "a greater distance",
+            "a smaller distance",
+            "the same distance",
+            "no distance"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "90 minutes is equal to",
+          "options": [
+            "1 h",
+            "1.25 h",
+            "1.5 h",
+            "2 h"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "A cyclist travels at 12 km/h for 30 minutes. The distance covered is",
+          "options": [
+            "4 km",
+            "6 km",
+            "12 km",
+            "24 km"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "A child walks 5 km in 1 hour. The speed is",
+          "options": [
+            "1 km/h",
+            "4 km/h",
+            "5 km/h",
+            "6 km/h"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Car A covers 180 km in 3 h; Car B covers 200 km in 4 h. Which is faster?",
+          "options": [
+            "Car A",
+            "Car B",
+            "Both have the same speed",
+            "There is not enough information"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "At 8 km/h, the distance covered in 45 minutes is",
+          "options": [
+            "4 km",
+            "5 km",
+            "6 km",
+            "8 km"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "An object that covers 60 km in 2 hours has speed 30 km/h.",
+          "reason": "Speed=distance÷time."
+        },
+        {
+          "number": 16,
+          "assertion": "At a fixed speed, doubling the travel time halves the distance covered.",
+          "reason": "At a fixed speed, distance increases directly with time."
+        }
+      ],
+      "written": {
+        "17": "A van covers 150 km in 5 hours. Find its speed.",
+        "18": "Find the distance covered at 18 km/h in 3 hours.",
+        "19": "How long will it take to cover 96 km at 32 km/h?",
+        "20": "A cyclist travels at 14 km/h for 2 h 30 min. Find the distance covered.",
+        "21": "A bus covers 210 km in 3 hours. At the same speed, how far will it travel in 5 hours?",
+        "22": "Meera walks 12 km in 3 hours. Tara walks 15 km in 3 hours. Find each speed and state who is faster and by how much.",
+        "23": [
+          "A runner completes 5 laps of a 400 m track in 20 minutes.",
+          "(a) Find the total distance covered. [1]",
+          "(b) Find the runner's speed in metres per minute. [2]",
+          "(c) At the same speed, find the distance covered in 35 minutes. [2]"
+        ],
+        "24": [
+          "(a) Find the distance covered in 2 hours. [1]",
+          "(b) Find the time needed to cover 144 km. [1]",
+          "(c) If it leaves at 9:15 a.m. and travels for 2 h 30 min, find its arrival time and the distance covered. [2]"
+        ]
+      },
+      "caseStudy": "A school bus travels along a steady route at a constant speed of 48 km/h.",
+      "answerKey": [
+        0,
+        2,
+        1,
+        1,
+        3,
+        2,
+        1,
+        2,
+        0,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "Speed=distance÷time=150÷5=30 km/h.",
+        "18": "Distance=speed×time=18×3=54 km.",
+        "19": "Time=distance÷speed=96÷32=3 hours.",
+        "20": "2 h 30 min=2.5 h. Distance=14×2.5=35 km.",
+        "21": "Speed=210÷3=70 km/h. In 5 hours, distance=70×5=350 km.",
+        "22": "Meera's speed=12÷3=4 km/h. Tara's speed=15÷3=5 km/h. Tara is faster by 5−4=1 km/h.",
+        "23": "(a) Total distance=5×400=2000 m. (b) Speed=2000÷20=100 m/min. (c) Distance in 35 min=100×35=3500 m.",
+        "24": "(a) Distance=48×2=96 km. (b) Time=144÷48=3 h. (c) 9:15 a.m.+2 h 30 min=11:45 a.m.; distance=48×2.5=120 km."
+      }
+    },
+    {
+      "id": "icse6-algebraic-expressions-01",
+      "chapter": "Algebraic Expressions",
+      "chapterNumber": 11,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Recognise algebraic language, classify terms and polynomials, generalise patterns, frame expressions and evaluate them accurately.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "In the expression 7x + 5, the variable is",
+          "options": [
+            "7",
+            "x",
+            "5",
+            "12"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The coefficient of a in −9a + 4 is",
+          "options": [
+            "9",
+            "−9",
+            "4",
+            "−4"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "The constant term in 5p² − 3p − 8 is",
+          "options": [
+            "5",
+            "−3",
+            "−8",
+            "p"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which term is like 6m²?",
+          "options": [
+            "−4m²",
+            "4m",
+            "6n²",
+            "m³"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The value of 4x − 3 when x = 5 is",
+          "options": [
+            "13",
+            "17",
+            "20",
+            "23"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "Three less than twice a number n is represented by",
+          "options": [
+            "3 − 2n",
+            "2(n − 3)",
+            "2n − 3",
+            "3n − 2"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The perimeter of a square of side s is",
+          "options": [
+            "s + 4",
+            "4s",
+            "s²",
+            "2s"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "The degree of 2y³ − 5y + 1 is",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "How many terms are there in 4x² − 3x + 7?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "7"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Which is a polynomial in x?",
+          "options": [
+            "3x² − 2x + 1",
+            "5 ÷ x + 1",
+            "√x + 4",
+            "x⁻¹ + 2"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "The nth term of the pattern 5, 9, 13, 17, … is",
+          "options": [
+            "4n",
+            "4n + 1",
+            "5n − 1",
+            "n + 4"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Which expression is a binomial?",
+          "options": [
+            "7x²",
+            "3y − 5",
+            "p² + 2p + 1",
+            "6"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "If a = 3 and b = −2, then 2a + b equals",
+          "options": [
+            "8",
+            "4",
+            "−4",
+            "1"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "The sum of the square of x and 6 is",
+          "options": [
+            "(x + 6)²",
+            "2x + 6",
+            "x² + 6",
+            "6x²"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "3x and −5x are like terms.",
+          "reason": "Like terms have the same variable factors raised to the same powers."
+        },
+        {
+          "number": 16,
+          "assertion": "The degree of y² − 2y + 7 is 2.",
+          "reason": "The degree of a polynomial is found by adding the degrees of all its terms."
+        }
+      ],
+      "written": {
+        "17": "For 6x² − 5x + 9, list the terms and state the coefficient of x², the coefficient of x and the constant term.",
+        "18": "Evaluate 3a² − 2b when a = 2 and b = 5.",
+        "19": "Five notebooks cost ₹n each and one pen costs ₹12. Frame an expression for the total cost and find its value when n = 18.",
+        "20": "A row of adjoining squares uses 4 matchsticks for one square, 7 for two squares and 10 for three squares. Write the rule for n squares and find the number of matchsticks needed for 10 squares.",
+        "21": "Classify each as a monomial, binomial or trinomial, and state its degree: (a) 7x², (b) 3y − 5, (c) p² + 2p + 1.",
+        "22": "Riya saves ₹p each week and also receives a one-time gift of ₹50. Frame an expression for her total after 6 weeks, state its coefficient and constant term, and evaluate it for p = 75.",
+        "23": [
+          "A school arranges transport using x buses with 42 seats in each bus and 3 vans with y seats in each van.",
+          "(a) Frame an expression for the total number of seats.",
+          "(b) State the coefficient of x and the coefficient of y.",
+          "(c) Find the total number of seats when x = 5 and y = 8."
+        ],
+        "24": [
+          "(a) How many matchsticks are needed for 2 tiles? [1]",
+          "(b) Write an expression for the number of matchsticks needed for n tiles. [1]",
+          "(c) Find the number needed for 15 tiles and explain what the coefficient of n represents. [2]"
+        ]
+      },
+      "caseStudy": "Square tiles are placed in one straight row. The first tile needs 4 matchsticks around it, and each new tile shares one side with the previous tile.",
+      "answerKey": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      "solutions": {
+        "17": "The terms are 6x², −5x and 9. The coefficient of x² is 6, the coefficient of x is −5, and the constant term is 9.",
+        "18": "3a² − 2b = 3(2²) − 2(5) = 12 − 10 = 2.",
+        "19": "Total cost = ₹(5n + 12). For n = 18, 5n + 12 = 5 × 18 + 12 = 102. The total cost is ₹102.",
+        "20": "The numbers increase by 3, so the rule is 4 + 3(n − 1) = 3n + 1. For n = 10, 3 × 10 + 1 = 31 matchsticks.",
+        "21": "(a) 7x² is a monomial of degree 2. (b) 3y − 5 is a binomial of degree 1. (c) p² + 2p + 1 is a trinomial of degree 2.",
+        "22": "Her total is represented by 6p + 50. Its coefficient is 6 and its constant term is 50. For p = 75, 6 × 75 + 50 = 450 + 50 = ₹500.",
+        "23": "(a) Total seats = 42x + 3y. (b) The coefficient of x is 42 and the coefficient of y is 3. (c) For x = 5 and y = 8, 42 × 5 + 3 × 8 = 210 + 24 = 234 seats.",
+        "24": "(a) Two tiles need 4 + 3 = 7 matchsticks. (b) The expression is 4 + 3(n − 1) = 3n + 1. (c) For n = 15, 3 × 15 + 1 = 46 matchsticks. The coefficient 3 means that each additional tile contributes 3 matchsticks."
+      }
+    },
+    {
+      "id": "icse6-linear-equations-01",
+      "chapter": "Simple Linear Equations",
+      "chapterNumber": 12,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Form, solve and verify introductory linear equations in one variable, including meaningful everyday problems.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The solution of x + 9 = 15 is",
+          "options": [
+            "6",
+            "9",
+            "15",
+            "24"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "If 7x = 56, then x =",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "49"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "The solution of p ÷ 5 = 7 is",
+          "options": [
+            "2",
+            "12",
+            "35",
+            "−35"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "If 20 − y = 8, then y =",
+          "options": [
+            "8",
+            "12",
+            "20",
+            "28"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The solution of 3n + 4 = 25 is",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "If x ÷ 4 − 3 = 5, then x =",
+          "options": [
+            "8",
+            "20",
+            "32",
+            "36"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Twice a number increased by 5 is 19. The equation is",
+          "options": [
+            "2x + 5 = 19",
+            "2(x + 5) = 19",
+            "x + 10 = 19",
+            "5x + 2 = 19"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "Which value satisfies 4x − 1 = 11?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Which operation keeps an equation balanced?",
+          "options": [
+            "Add the same number to both sides",
+            "Add a number to only the left side",
+            "Multiply only the right side",
+            "Change the sign of one side only"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "The solution of x − 7 = −2 is",
+          "options": [
+            "−9",
+            "−5",
+            "5",
+            "9"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "A square has perimeter 36 cm and side x cm. The equation is",
+          "options": [
+            "x + 4 = 36",
+            "4x = 36",
+            "x² = 36",
+            "2x = 36"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "One-fourth of a number is 6. The equation is",
+          "options": [
+            "4x = 6",
+            "x − 4 = 6",
+            "x ÷ 4 = 6",
+            "x + 4 = 6"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Which equation has x = 10 as its solution?",
+          "options": [
+            "x + 2 = 14",
+            "3x = 30",
+            "x ÷ 5 = 5",
+            "2x − 4 = 10"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "If 2(x + 3) = 18, then x =",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "x = 7 is a solution of 2x + 3 = 17.",
+          "reason": "Substituting a solution for the variable makes the two sides equal."
+        },
+        {
+          "number": 16,
+          "assertion": "The equation 5x = 20 is solved by subtracting 5 from both sides.",
+          "reason": "Performing the same operation on both sides preserves equality."
+        }
+      ],
+      "written": {
+        "17": "Solve x + 18 = 47 and verify the answer.",
+        "18": "Solve 7m = 84 and verify the answer.",
+        "19": "A number decreased by 9 is 23. Form an equation and find the number.",
+        "20": "Solve 4x + 7 = 35, showing each balancing step.",
+        "21": "Solve 3(y − 2) = 24 and verify the solution.",
+        "22": "Five identical notebooks and a pen costing ₹15 cost ₹140 altogether. Form an equation and find the cost of one notebook.",
+        "23": [
+          "The length of a rectangle is 4 cm more than its breadth. Its perimeter is 36 cm.",
+          "(a) Let the breadth be x cm and form a linear equation.",
+          "(b) Solve the equation.",
+          "(c) Find the length and breadth of the rectangle."
+        ],
+        "24": [
+          "(a) Write an expression for the total cost of r rides including the entry fee. [1]",
+          "(b) Form the equation for the given total cost. [1]",
+          "(c) Solve the equation to find r and verify your answer. [2]"
+        ]
+      },
+      "caseStudy": "At a school fair, a student pays an entry fee of ₹20 and ₹8 for each ride. The student spends ₹68 altogether.",
+      "answerKey": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "x + 18 = 47, so x = 47 − 18 = 29. Verification: 29 + 18 = 47.",
+        "18": "7m = 84, so m = 84 ÷ 7 = 12. Verification: 7 × 12 = 84.",
+        "19": "Let the number be x. Then x − 9 = 23, so x = 23 + 9 = 32.",
+        "20": "4x + 7 = 35. Subtract 7 from both sides: 4x = 28. Divide both sides by 4: x = 7.",
+        "21": "3(y − 2) = 24. Divide both sides by 3: y − 2 = 8. Add 2 to both sides: y = 10. Verification: 3(10 − 2) = 3 × 8 = 24.",
+        "22": "Let the cost of one notebook be ₹n. Then 5n + 15 = 140. Thus 5n = 125 and n = 25. One notebook costs ₹25.",
+        "23": "(a) Breadth = x cm and length = (x + 4) cm. Since 2(length + breadth) = 36, 2[(x + 4) + x] = 36, or 4x + 8 = 36. (b) 4x = 28, so x = 7. (c) Breadth = 7 cm and length = 11 cm. Check: 2(7 + 11) = 36 cm.",
+        "24": "(a) Total cost = ₹(20 + 8r). (b) The equation is 20 + 8r = 68. (c) 8r = 48, so r = 6. Verification: 20 + 8 × 6 = 68. The student took 6 rides."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "slug": "icse6-decimals",
+      "chapter": "Decimals",
+      "number": 7,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Place Value, Terminating Decimals & Everyday Measures",
+      "concepts": [
+        {
+          "title": "Decimal place value",
+          "text": "Digits to the right of the decimal point represent tenths, hundredths, thousandths and successively smaller parts."
+        },
+        {
+          "title": "Comparing decimals",
+          "text": "Write trailing zeros so the decimals have equal places, then compare from the greatest place to the smallest."
+        },
+        {
+          "title": "Fractions and decimals",
+          "text": "A decimal fraction has denominator 10, 100, 1,000 and so on. Convert only fractions with terminating decimal forms in this chapter."
+        },
+        {
+          "title": "Operations in context",
+          "text": "Align decimal points for addition and subtraction, and express money, mass, length or temperature in one unit before operating."
+        }
+      ],
+      "formulas": [
+        "Digit value = digit × value of its place",
+        "a/10ⁿ gives a decimal with n decimal places after necessary zero padding",
+        "Appending trailing zeros does not change a decimal’s value",
+        "1 kg = 1,000 g",
+        "1 m = 100 cm",
+        "₹1 = 100 paise"
+      ],
+      "method": [
+        "Convert all quantities to the same unit.",
+        "Write decimals with their decimal points vertically aligned.",
+        "Add trailing zeros where needed, then add or subtract by place value.",
+        "Check the size, unit and decimal placement of the answer."
+      ],
+      "example": {
+        "question": "A parcel weighs 3 kg 450 g. After removing 1 kg 875 g, what mass remains?",
+        "steps": [
+          "Write the masses as 3.450 kg and 1.875 kg.",
+          "Align decimal points and subtract: 3.450 − 1.875 = 1.575.",
+          "Convert 0.575 kg to 575 g."
+        ],
+        "answer": "1.575 kg, or 1 kg 575 g."
+      },
+      "practice": [
+        {
+          "question": "Find the place value of 5 in 14.052.",
+          "answer": "0.05, or five hundredths",
+          "marks": 2
+        },
+        {
+          "question": "Convert 13/40 to a decimal.",
+          "answer": "0.325",
+          "marks": 2
+        },
+        {
+          "question": "Write 0.72 as a fraction in simplest form.",
+          "answer": "18/25",
+          "marks": 2
+        },
+        {
+          "question": "Evaluate 8.5 + 3.075 − 1.28.",
+          "answer": "10.295",
+          "marks": 3
+        },
+        {
+          "question": "From ₹200, subtract ₹68.75 and ₹49.90.",
+          "answer": "₹81.35",
+          "marks": 3
+        },
+        {
+          "question": "A temperature of 15.8°C rises by 4.65°C and falls by 7.3°C.",
+          "answer": "13.15°C",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Align decimal points, not the last digits.",
+        "A longer decimal is not automatically a larger number.",
+        "Retain unit zeros during working so that each place remains clear."
+      ]
+    },
+    {
+      "slug": "icse6-ratio-proportion",
+      "chapter": "Ratio and Proportion",
+      "number": 8,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Comparisons, Equivalent Ratios & Proportions",
+      "concepts": [
+        {
+          "title": "Ratio versus fraction",
+          "text": "A fraction commonly names part of one whole; a ratio compares two quantities in a stated order. A ratio can be greater than 1."
+        },
+        {
+          "title": "Like units and simplest form",
+          "text": "Convert both quantities to the same unit, then divide both terms by their HCF."
+        },
+        {
+          "title": "Equivalent ratios",
+          "text": "Multiplying or dividing both terms by the same non-zero number preserves the comparison."
+        },
+        {
+          "title": "Proportion",
+          "text": "Two equal ratios form a proportion. The product of the extremes equals the product of the means."
+        }
+      ],
+      "formulas": [
+        "a:b = a/b",
+        "a:b = ka:kb for k ≠ 0",
+        "If a:b = c:d, then ad = bc",
+        "For ratio m:n, total parts = m + n"
+      ],
+      "method": [
+        "Keep the quantities in the order named in the question.",
+        "Convert both quantities to the same unit.",
+        "Simplify by the HCF or form an equivalent ratio using one common factor.",
+        "For a proportion, verify that the cross-products are equal."
+      ],
+      "example": {
+        "question": "Find x if 9:15 = x:40.",
+        "steps": [
+          "Write 9/15 = x/40.",
+          "Cross-multiply: 15x = 9 × 40 = 360.",
+          "Divide by 15: x = 24."
+        ],
+        "answer": "x = 24; both ratios simplify to 3:5."
+      },
+      "practice": [
+        {
+          "question": "Reduce 72:108 to simplest form.",
+          "answer": "2:3",
+          "marks": 2
+        },
+        {
+          "question": "Find 1 m 50 cm : 50 cm.",
+          "answer": "3:1",
+          "marks": 2
+        },
+        {
+          "question": "Find x if 5:7 = x:42.",
+          "answer": "30",
+          "marks": 2
+        },
+        {
+          "question": "Check whether 8, 12, 14 and 21 are in proportion.",
+          "answer": "Yes; both ratios are 2:3",
+          "marks": 3
+        },
+        {
+          "question": "Divide 84 in the ratio 3:4.",
+          "answer": "36 and 48",
+          "marks": 3
+        },
+        {
+          "question": "If A:B = 2:5 and B:C = 10:7, find A:B:C.",
+          "answer": "4:10:7",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Order matters: a:b is generally not b:a.",
+        "Never compare measurements in different units.",
+        "Equal cross-products are a reliable final check for a proportion."
+      ]
+    },
+    {
+      "slug": "icse6-percentage-unitary-method",
+      "chapter": "Percentage and Unitary Method",
+      "number": 9,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Parts per Hundred & Direct Rates",
+      "concepts": [
+        {
+          "title": "Meaning of percent",
+          "text": "Percent means per hundred. Thus p% represents p parts out of every 100 equal parts."
+        },
+        {
+          "title": "Converting forms",
+          "text": "Write a percentage over 100 to obtain a fraction; rewrite a simple fraction with denominator 100 to obtain a percentage."
+        },
+        {
+          "title": "Percentage of a quantity",
+          "text": "To find p% of a quantity, multiply the quantity by p/100 and simplify before multiplying when possible."
+        },
+        {
+          "title": "Direct unitary method",
+          "text": "When more identical items give a proportionally larger total, first find the value of one item and then the value of the required number."
+        }
+      ],
+      "formulas": [
+        "p%=p/100",
+        "p% of Q=(p/100)×Q",
+        "a/b as a percent=(a/b)×100%",
+        "Value of 1 unit=total value÷number of units",
+        "Value of required units=value of 1 unit×required units"
+      ],
+      "method": [
+        "Identify whether the question asks for a percentage or a direct rate.",
+        "For percentage, write the percent as a fraction over 100.",
+        "For unitary method, divide to find the value of one unit.",
+        "Multiply by the required quantity and check that the direction is sensible."
+      ],
+      "example": {
+        "question": "Twelve books cost ₹300. Find the cost of 7 books, then find 20% of that cost.",
+        "steps": [
+          "Cost of 1 book=₹300÷12=₹25.",
+          "Cost of 7 books=₹25×7=₹175.",
+          "20% of ₹175=20/100×175=₹35."
+        ],
+        "answer": "Seven books cost ₹175, and 20% of this cost is ₹35."
+      },
+      "practice": [
+        {
+          "question": "Write 32% as a fraction in simplest form.",
+          "answer": "8/25",
+          "marks": 2
+        },
+        {
+          "question": "Write 3/4 as a percentage.",
+          "answer": "75%",
+          "marks": 2
+        },
+        {
+          "question": "Find 15% of 300.",
+          "answer": "45",
+          "marks": 2
+        },
+        {
+          "question": "Six pencils cost ₹54. Find the cost of one pencil.",
+          "answer": "₹9",
+          "marks": 1
+        },
+        {
+          "question": "Five kilograms of apples cost ₹400. Find the cost of 8 kg.",
+          "answer": "₹640",
+          "marks": 3
+        },
+        {
+          "question": "In a group of 240 children, 35% choose chess. How many choose chess?",
+          "answer": "84 children",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "The symbol % already includes division by 100.",
+        "In direct unitary problems, find one unit before scaling up.",
+        "Use estimation: a small percentage should be a smaller part of the whole."
+      ]
+    },
+    {
+      "slug": "icse6-speed-time-distance",
+      "chapter": "Speed, Time and Distance",
+      "number": 10,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Simple Motion & Consistent Units",
+      "concepts": [
+        {
+          "title": "Speed",
+          "text": "Speed tells how much distance is covered in one unit of time. A greater speed means more distance in the same time."
+        },
+        {
+          "title": "Distance",
+          "text": "At a fixed speed, distance increases directly with travel time."
+        },
+        {
+          "title": "Time",
+          "text": "Travel time is found by dividing the distance by the speed when both use matching units."
+        },
+        {
+          "title": "Units",
+          "text": "Use compatible units before applying a formula: hours with km/h and minutes with m/min, for example."
+        }
+      ],
+      "formulas": [
+        "Speed=distance÷time",
+        "Distance=speed×time",
+        "Time=distance÷speed",
+        "1 hour=60 minutes"
+      ],
+      "method": [
+        "Write the known distance, speed and time with units.",
+        "Convert time or distance so the units are compatible.",
+        "Choose the formula containing the required quantity.",
+        "Calculate and write the correct unit with the answer."
+      ],
+      "example": {
+        "question": "A scooter travels 126 km in 3 hours. How far will it travel in 5 hours at the same speed?",
+        "steps": [
+          "Speed=126÷3=42 km/h.",
+          "Distance in 5 h=42×5.",
+          "42×5=210."
+        ],
+        "answer": "210 km"
+      },
+      "practice": [
+        {
+          "question": "Find the speed for 96 km in 3 h.",
+          "answer": "32 km/h",
+          "marks": 2
+        },
+        {
+          "question": "Find the distance at 25 km/h for 4 h.",
+          "answer": "100 km",
+          "marks": 2
+        },
+        {
+          "question": "Find the time for 180 km at 60 km/h.",
+          "answer": "3 h",
+          "marks": 2
+        },
+        {
+          "question": "Convert 2 h 15 min to hours.",
+          "answer": "2.25 h",
+          "marks": 2
+        },
+        {
+          "question": "A cyclist travels at 16 km/h for 1 h 30 min. Find the distance.",
+          "answer": "24 km",
+          "marks": 3
+        },
+        {
+          "question": "A van covers 280 km in 4 h. How far at the same speed in 6 h?",
+          "answer": "420 km",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Never combine minutes directly with a speed given per hour.",
+        "Speed needs a distance unit divided by a time unit.",
+        "Check whether a faster speed or longer time should make the distance larger."
+      ]
+    },
+    {
+      "slug": "icse6-algebraic-expressions",
+      "chapter": "Algebraic Expressions",
+      "number": 11,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Variables, Terms, Patterns & Evaluation",
+      "concepts": [
+        {
+          "title": "Language of algebra",
+          "text": "A constant has a fixed value, a variable can take different values, and an unknown is a value to be found. An expression combines numbers, variables and operations without an equality sign."
+        },
+        {
+          "title": "Terms, factors and coefficients",
+          "text": "Terms are separated by + or − signs. Each term is a product of factors; its numerical factor is the coefficient, while a term without a variable is the constant term."
+        },
+        {
+          "title": "Polynomials and degree",
+          "text": "A polynomial with one term is a monomial, with two terms a binomial, and with three terms a trinomial; polynomials may also have more than three terms. Its degree is the greatest exponent of its variable with a non-zero coefficient."
+        },
+        {
+          "title": "Patterns and substitution",
+          "text": "A variable can express a rule that works for every position in a pattern. To evaluate an expression, replace each variable by its given value and follow the order of operations."
+        }
+      ],
+      "formulas": [
+        "A term = numerical coefficient × variable factor(s)",
+        "Degree of axⁿ = n, where a ≠ 0",
+        "Arithmetic pattern term = first term + (n − 1) × common increase",
+        "Perimeter of a square of side s = 4s",
+        "Perimeter of a rectangle = 2(l + b)"
+      ],
+      "method": [
+        "Separate the expression into terms, keeping each term’s sign.",
+        "Identify the variable factors, coefficients and constant term.",
+        "Translate each phrase into the required algebraic operation, or substitute the stated variable values.",
+        "Use the order of operations and check that the final value matches the context."
+      ],
+      "example": {
+        "question": "A hall has r rows of 18 chairs and 12 extra chairs at the front. Frame an expression for the total and evaluate it for r = 9.",
+        "steps": [
+          "The r equal rows contain 18r chairs.",
+          "Add the 12 extra chairs to get 18r + 12.",
+          "Substitute r = 9: 18 × 9 + 12.",
+          "Calculate 162 + 12 = 174."
+        ],
+        "answer": "The expression is 18r + 12, and the hall has 174 chairs when r = 9."
+      },
+      "practice": [
+        {
+          "question": "State the coefficient of x and the constant term in −8x + 11.",
+          "answer": "Coefficient of x = −8; constant term = 11.",
+          "marks": 2
+        },
+        {
+          "question": "Which term is like 5a²: −3a², 5a or 5b²?",
+          "answer": "−3a²",
+          "marks": 1
+        },
+        {
+          "question": "List the terms and numerical coefficients in 9p + 2q + 3.",
+          "answer": "Terms: 9p, 2q, 3; coefficients of p and q: 9 and 2; constant term: 3.",
+          "marks": 2
+        },
+        {
+          "question": "Evaluate 2m² − n for m = 3 and n = 4.",
+          "answer": "2 × 3² − 4 = 18 − 4 = 14",
+          "marks": 2
+        },
+        {
+          "question": "Write the nth term of 7, 12, 17, 22, … .",
+          "answer": "7 + 5(n − 1) = 5n + 2",
+          "marks": 3
+        },
+        {
+          "question": "A cinema ticket costs ₹t. Frame and evaluate the cost of 4 tickets plus a booking charge of ₹20 when t = 85.",
+          "answer": "4t + 20; for t = 85, the cost is ₹360.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "A minus sign belongs to the term that follows it.",
+        "Terms are like only when every variable and exponent matches.",
+        "Use brackets when substituting a negative value."
+      ]
+    },
+    {
+      "slug": "icse6-linear-equations",
+      "chapter": "Simple Linear Equations",
+      "number": 12,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Balancing, Solving & Verifying One-Variable Equations",
+      "concepts": [
+        {
+          "title": "Expression versus equation",
+          "text": "An expression has no equality sign. An equation states that two expressions are equal, and its solution is the value that makes this statement true."
+        },
+        {
+          "title": "The balance principle",
+          "text": "An equation stays balanced when the same valid operation is performed on both sides; any divisor used must be non-zero. Use inverse operations to isolate the variable."
+        },
+        {
+          "title": "Forming an equation",
+          "text": "Choose a variable for the unknown, translate the words into an expression, and use the given total or comparison to form an equality."
+        },
+        {
+          "title": "Verification",
+          "text": "Substitute the proposed solution into the original equation. It is correct only when the left-hand side and right-hand side have the same value."
+        }
+      ],
+      "formulas": [
+        "x + a = b ⟹ x = b − a",
+        "x − a = b ⟹ x = b + a",
+        "ax = b ⟹ x = b ÷ a, a ≠ 0",
+        "x ÷ a = b ⟹ x = ab, a ≠ 0",
+        "Do the same operation to both sides of an equation"
+      ],
+      "method": [
+        "Choose a variable and form the equation from the given information.",
+        "Undo addition or subtraction first using the same operation on both sides.",
+        "Undo multiplication or division to isolate the variable.",
+        "Substitute the answer into the original equation and confirm both sides are equal."
+      ],
+      "example": {
+        "question": "A taxi charges ₹40 as a fixed fee and ₹12 per kilometre. A journey costs ₹112. How many kilometres were travelled?",
+        "steps": [
+          "Let the distance be d km.",
+          "Form the equation 40 + 12d = 112.",
+          "Subtract 40: 12d = 72. Divide by 12: d = 6.",
+          "Verify: 40 + 12 × 6 = 112."
+        ],
+        "answer": "The journey was 6 km."
+      },
+      "practice": [
+        {
+          "question": "Solve x + 13 = 31.",
+          "answer": "x = 18",
+          "marks": 2
+        },
+        {
+          "question": "Solve y − 8 = 17.",
+          "answer": "y = 25",
+          "marks": 2
+        },
+        {
+          "question": "Solve 6m = 54.",
+          "answer": "m = 9",
+          "marks": 2
+        },
+        {
+          "question": "Solve p ÷ 7 = 5.",
+          "answer": "p = 35",
+          "marks": 2
+        },
+        {
+          "question": "Solve 3n + 5 = 26 and verify.",
+          "answer": "n = 7; 3 × 7 + 5 = 26.",
+          "marks": 3
+        },
+        {
+          "question": "Four identical pens and a ₹10 notebook cost ₹74. Form an equation and find the cost of one pen.",
+          "answer": "4p + 10 = 74, so p = ₹16.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Keep the variable term unchanged until its added or subtracted constant is removed.",
+        "Never perform an operation on only one side of an equation.",
+        "Verify in the original equation, not in a rearranged line."
+      ]
+    }
+  ]
+}
+

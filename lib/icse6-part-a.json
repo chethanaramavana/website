@@ -1,0 +1,1800 @@
+{
+  "papers": [
+    {
+      "id": "icse6-knowing-numbers-01",
+      "chapter": "Knowing Our Numbers",
+      "chapterNumber": 1,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Read, compare and operate on numbers up to eight digits, estimate sensibly, and convert length and mass units accurately.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The International form of 7,04,08,319 is",
+          "options": [
+            "7,040,831",
+            "704,083,190",
+            "70,408,319",
+            "70,040,831"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The place value of 6 in 3,64,21,508 is",
+          "options": [
+            "6,00,000",
+            "60,00,000",
+            "6,000",
+            "60,000"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Forty-two million three hundred five thousand eighteen is written in the Indian system as",
+          "options": [
+            "42,30,50,18",
+            "4,23,05,018",
+            "42,03,05,018",
+            "4,20,35,018"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The greatest eight-digit number is",
+          "options": [
+            "99,99,999",
+            "9,99,99,999",
+            "99,999",
+            "1,00,00,000"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which comparison is correct?",
+          "options": [
+            "5,08,43,210 > 50,843,201",
+            "5,08,43,210 < 50,843,201",
+            "5,08,43,210 = 50,843,201",
+            "The numbers cannot be compared"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "7,64,49,721 rounded to the nearest lakh is",
+          "options": [
+            "7,64,00,000",
+            "7,65,00,000",
+            "7,64,50,000",
+            "7,60,00,000"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Estimate 4,982 + 3,041 by rounding each number to the nearest thousand.",
+          "options": [
+            "7,000",
+            "8,000",
+            "9,000",
+            "8,030"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "36,00,000 ÷ 600 equals",
+          "options": [
+            "600",
+            "60,000",
+            "6,000",
+            "6,00,000"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "7 km 45 m equals",
+          "options": [
+            "745 m",
+            "7,045 m",
+            "7,450 m",
+            "70,045 m"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "3 kg 75 g equals",
+          "options": [
+            "375 g",
+            "3,750 g",
+            "3,075 g",
+            "30,075 g"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "4,875 × 206 equals",
+          "options": [
+            "10,04,250",
+            "9,75,000",
+            "10,33,500",
+            "1,00,425"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "9,600,000 ÷ 120 equals",
+          "options": [
+            "8,000",
+            "800,000",
+            "800",
+            "80,000"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "Estimate 498 × 201 by rounding each factor to the nearest hundred.",
+          "options": [
+            "10,000",
+            "100,000",
+            "1,000,000",
+            "99,000"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "One crore is equal to",
+          "options": [
+            "one hundred thousand",
+            "one million",
+            "ten million",
+            "one hundred million"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "The Indian numeral 4,53,20,107 and the International numeral 45,320,107 represent the same number.",
+          "reason": "Changing the comma grouping does not change the digits or their place values."
+        },
+        {
+          "number": 16,
+          "assertion": "6 km 75 m = 6,075 m.",
+          "reason": "1 km = 100 m."
+        }
+      ],
+      "written": {
+        "17": "Write 7,04,08,319 in words in both the Indian and International systems.",
+        "18": "Arrange in descending order: 5,09,87,654; 5,90,78,456; 5,98,07,465; 5,89,70,546.",
+        "19": "Convert (a) 8 km 375 m into metres and (b) 6 kg 45 g into grams.",
+        "20": "Evaluate 78,45,620 − 29,78,965 + 6,04,380.",
+        "21": "A factory packs 2,475 boxes with 36 bottles in each box. Estimate the number of bottles by rounding 2,475 to the nearest hundred and 36 to the nearest ten. Then find the exact number.",
+        "22": "A bus travels 12 km 450 m and then 8 km 875 m. Find the total distance travelled and the distance still left in a 30 km journey.",
+        "23": [
+          "A relief centre receives 248 cartons, each containing 187 food packets.",
+          "(a) Find the total number of packets received.",
+          "(b) After distributing 35,760 packets, find the number left.",
+          "(c) The remaining packets are shared equally among 8 vans. How many packets does each van carry?"
+        ],
+        "24": [
+          "(a) Find the wire length in the first group of rolls. [1]",
+          "(b) Find the wire length in the second group of rolls. [1]",
+          "(c) Find the total length in metres and then convert it to centimetres. [2]"
+        ]
+      },
+      "caseStudy": "For a science fair, a school buys 12 rolls of wire of 25 m each and 8 rolls of wire of 18 m each.",
+      "answerKey": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        0,
+        2
+      ],
+      "solutions": {
+        "17": "Indian system: seven crore four lakh eight thousand three hundred nineteen. International system: seventy million four hundred eight thousand three hundred nineteen.",
+        "18": "Descending order: 5,98,07,465 > 5,90,78,456 > 5,89,70,546 > 5,09,87,654.",
+        "19": "(a) 8 km 375 m = 8,000 m + 375 m = 8,375 m. (b) 6 kg 45 g = 6,000 g + 45 g = 6,045 g.",
+        "20": "78,45,620 − 29,78,965 = 48,66,655. Then 48,66,655 + 6,04,380 = 54,71,035.",
+        "21": "Estimate: 2,475 ≈ 2,500 and 36 ≈ 40, so about 2,500 × 40 = 1,00,000 bottles. Exact number: 2,475 × 36 = 2,475 × (30 + 6) = 74,250 + 14,850 = 89,100 bottles.",
+        "22": "Total = 12 km 450 m + 8 km 875 m = 21 km 325 m. Distance left = 30 km − 21 km 325 m = 8 km 675 m.",
+        "23": "(a) 248 × 187 = 46,376 packets. (b) 46,376 − 35,760 = 10,616 packets. (c) 10,616 ÷ 8 = 1,327 packets per van.",
+        "24": "(a) 12 × 25 = 300 m. (b) 8 × 18 = 144 m. (c) Total = 300 + 144 = 444 m = 44,400 cm."
+      }
+    },
+    {
+      "id": "icse6-whole-numbers-01",
+      "chapter": "Whole Numbers",
+      "chapterNumber": 2,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Connect natural and whole numbers on the number line and use operation properties and identities to calculate efficiently.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The set of whole numbers is",
+          "options": [
+            "{1, 2, 3, …}",
+            "{0, 1, 2, 3, …}",
+            "{−1, 0, 1, 2, …}",
+            "{0, 2, 4, 6, …}"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The whole number immediately to the right of 999 on a number line is",
+          "options": [
+            "998",
+            "999",
+            "1,000",
+            "1,001"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Which statement about 0 is correct?",
+          "options": [
+            "0 is the smallest natural number in every convention",
+            "0 has predecessor −1 in whole numbers",
+            "0 has no predecessor in the set of whole numbers",
+            "0 is not a whole number"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which calculation illustrates closure of whole numbers under addition?",
+          "options": [
+            "27 + 35 = 62",
+            "9 − 14 = −5",
+            "7 ÷ 2 = 3.5",
+            "5 ÷ 0 is undefined"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Whole numbers are not closed under",
+          "options": [
+            "addition",
+            "subtraction",
+            "multiplication",
+            "adding zero"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "The commutative property of addition is",
+          "options": [
+            "a + 0 = a",
+            "a + b = b + a",
+            "(a + b) + c = a + (b + c)",
+            "a(b + c) = ab + ac"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The associative property of multiplication is",
+          "options": [
+            "a × b = b × a",
+            "a × 1 = a",
+            "(a × b) × c = a × (b × c)",
+            "a × 0 = 0"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "The distributive property is written as",
+          "options": [
+            "a × (b + c) = a × b + a × c",
+            "a + (b + c) = (a + b) + c",
+            "a + b = b + a",
+            "a × 1 = a"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "The additive identity for whole numbers is",
+          "options": [
+            "0",
+            "1",
+            "−1",
+            "10"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "The multiplicative identity for whole numbers is",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "10"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "0 × 845 equals",
+          "options": [
+            "0",
+            "1",
+            "845",
+            "undefined"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "845 ÷ 1 equals",
+          "options": [
+            "0",
+            "1",
+            "845",
+            "undefined"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "0 ÷ 845 equals",
+          "options": [
+            "0",
+            "1",
+            "845",
+            "undefined"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "845 ÷ 0 is",
+          "options": [
+            "0",
+            "1",
+            "845",
+            "undefined"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "36 + 58 = 58 + 36.",
+          "reason": "Addition of whole numbers is commutative."
+        },
+        {
+          "number": 16,
+          "assertion": "0 is the multiplicative identity for whole numbers.",
+          "reason": "For every whole number a, a × 0 = 0."
+        }
+      ],
+      "written": {
+        "17": "Write the first five natural numbers and the first five whole numbers. State the difference between the two sets.",
+        "18": "Show 7 + 5 and 12 − 8 as movements on a number line.",
+        "19": "Name the property used in each: (a) 34 + 57 = 57 + 34; (b) 18 × (7 × 5) = (18 × 7) × 5.",
+        "20": "Use a suitable property to evaluate 125 × 48 + 125 × 52.",
+        "21": "Find 326 × 99 without long multiplication. State the property used.",
+        "22": "Explain, using multiplication, why 37 ÷ 0 is undefined. Also find 0 ÷ 37.",
+        "23": [
+          "Evaluate efficiently and name the main property used in each:",
+          "(a) 2,764 + 398 + 236 + 602",
+          "(b) 48 × 125 × 2",
+          "(c) 735 × 104 − 735 × 4"
+        ],
+        "24": [
+          "(a) Write a single expression for the total number of books. [1]",
+          "(b) Name the property that combines the two products. [1]",
+          "(c) Find the total number of books. [2]"
+        ]
+      },
+      "caseStudy": "A library has 24 shelves containing 125 books each and another 24 shelves containing 75 books each.",
+      "answerKey": [
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "Natural numbers: 1, 2, 3, 4, 5. Whole numbers: 0, 1, 2, 3, 4. Whole numbers include 0; natural numbers begin at 1 in the convention used here.",
+        "18": "For 7 + 5, start at 7 and move 5 units right to 12. For 12 − 8, start at 12 and move 8 units left to 4.",
+        "19": "(a) Commutative property of addition. (b) Associative property of multiplication.",
+        "20": "125 × 48 + 125 × 52 = 125 × (48 + 52) = 125 × 100 = 12,500, using the distributive property.",
+        "21": "326 × 99 = 326 × (100 − 1) = 32,600 − 326 = 32,274. This uses multiplication distributed over subtraction.",
+        "22": "If 37 ÷ 0 were a number q, then 0 × q would have to equal 37. But 0 × q = 0 for every q, so 37 ÷ 0 is undefined. Also, 0 ÷ 37 = 0 because 37 × 0 = 0.",
+        "23": "(a) Rearrange and group: (2,764 + 236) + (398 + 602) = 3,000 + 1,000 = 4,000; commutative and associative properties. (b) 48 × (125 × 2) = 48 × 250 = 12,000; associative property. (c) 735 × (104 − 4) = 735 × 100 = 73,500; distributive property.",
+        "24": "(a) 24 × 125 + 24 × 75. (b) Distributive property. (c) 24 × (125 + 75) = 24 × 200 = 4,800 books."
+      }
+    },
+    {
+      "id": "icse6-playing-with-numbers-01",
+      "chapter": "Playing with Numbers",
+      "chapterNumber": 3,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Simplify brackets and justify factor, multiple, divisibility, prime factorisation, HCF and LCM results.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "48 − {18 − (7 + 3)} equals",
+          "options": [
+            "30",
+            "38",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "Which is a factor of 54?",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Which is a multiple of 18?",
+          "options": [
+            "24",
+            "32",
+            "54",
+            "75"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which number is divisible by 11?",
+          "options": [
+            "2,718",
+            "2,728",
+            "2,738",
+            "2,748"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "Which number is divisible by 8?",
+          "options": [
+            "5,414",
+            "5,416",
+            "5,418",
+            "5,422"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "Which number is divisible by 6?",
+          "options": [
+            "4,175",
+            "4,176",
+            "4,178",
+            "4,180"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "Which number is prime?",
+          "options": [
+            "91",
+            "93",
+            "95",
+            "97"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "Which pair is co-prime?",
+          "options": [
+            "12 and 18",
+            "14 and 25",
+            "21 and 35",
+            "22 and 44"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "The prime factorisation of 360 is",
+          "options": [
+            "2² × 3² × 5",
+            "2³ × 3 × 5²",
+            "2³ × 3² × 5",
+            "2 × 3³ × 5"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "The HCF of 84 and 126 is",
+          "options": [
+            "14",
+            "21",
+            "42",
+            "252"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "The LCM of 18 and 24 is",
+          "options": [
+            "36",
+            "72",
+            "108",
+            "144"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "Two numbers have HCF 6 and LCM 180. If one number is 30, the other is",
+          "options": [
+            "36",
+            "45",
+            "60",
+            "90"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "The number 1 is",
+          "options": [
+            "prime",
+            "composite",
+            "neither prime nor composite",
+            "the smallest prime"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "The least number divisible by 8, 12 and 15 is",
+          "options": [
+            "60",
+            "90",
+            "120",
+            "240"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Every prime number greater than 2 is odd.",
+          "reason": "Every even number greater than 2 has 2 as a factor in addition to 1 and itself."
+        },
+        {
+          "number": 16,
+          "assertion": "If two positive numbers are co-prime, their LCM is their product.",
+          "reason": "For two positive numbers, HCF × LCM = product of the numbers, and co-prime numbers have HCF 1."
+        }
+      ],
+      "written": {
+        "17": "Simplify 120 − [36 − {18 − (9 − 4)}].",
+        "18": "Test whether 72,864 is divisible by 4, 8, 9 and 11. Give the reason for each answer.",
+        "19": "Express 1,386 as a product of prime factors.",
+        "20": "Find the HCF and LCM of 72 and 120 by prime factorisation. Verify that HCF × LCM = product of the two numbers.",
+        "21": "Find the smallest number greater than 18 which leaves remainder 5 when divided by 8, 12 and 18.",
+        "22": "The HCF and LCM of two numbers are 36 and 1,260. If one number is 180, find the other and verify the HCF.",
+        "23": [
+          "A teacher has 96 red, 144 blue and 168 green counters. She makes the greatest possible number of identical kits without leaving any counter.",
+          "(a) How many kits can she make?",
+          "(b) How many counters of each colour are in one kit?",
+          "(c) How many counters in total are in one kit?"
+        ],
+        "24": [
+          "(a) Write the prime factorisation of 12. [1]",
+          "(b) Find LCM(12, 18). [1]",
+          "(c) Find when all three bells next ring together and state the clock time. [2]"
+        ]
+      },
+      "caseStudy": "Three school bells ring at intervals of 12 minutes, 18 minutes and 30 minutes. They ring together at 9:00 a.m.",
+      "answerKey": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "solutions": {
+        "17": "9 − 4 = 5; 18 − 5 = 13; 36 − 13 = 23; 120 − 23 = 97.",
+        "18": "By 4: yes, because 64 is divisible by 4. By 8: yes, because 864 is divisible by 8. By 9: yes, because the digit sum is 27. By 11: yes, because (7 + 8 + 4) − (2 + 6) = 11, a multiple of 11.",
+        "19": "1,386 = 2 × 693 = 2 × 3 × 231 = 2 × 3² × 77 = 2 × 3² × 7 × 11.",
+        "20": "72 = 2³ × 3² and 120 = 2³ × 3 × 5. HCF = 2³ × 3 = 24; LCM = 2³ × 3² × 5 = 360. Then 24 × 360 = 8,640 = 72 × 120.",
+        "21": "LCM(8, 12, 18) = 72. A number leaving remainder 5 is 72 + 5 = 77. It is the smallest such number greater than 18.",
+        "22": "Other number = (36 × 1,260) ÷ 180 = 252. Since 180 = 2² × 3² × 5 and 252 = 2² × 3² × 7, their HCF is 2² × 3² = 36.",
+        "23": "HCF(96, 144, 168) = 24, so 24 kits can be made. Each kit has 96 ÷ 24 = 4 red, 144 ÷ 24 = 6 blue and 168 ÷ 24 = 7 green counters, for 4 + 6 + 7 = 17 counters in total.",
+        "24": "(a) 12 = 2² × 3. (b) LCM(12,18) = 36. (c) LCM(12,18,30) = 2² × 3² × 5 = 180 minutes = 3 hours, so the bells next ring together at 12:00 noon."
+      }
+    },
+    {
+      "id": "icse6-integers-01",
+      "chapter": "Integers",
+      "chapterNumber": 4,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Use the number line, signs and real-life changes to compare, add and subtract integers accurately.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "Which of the following is not an integer?",
+          "options": [
+            "−8",
+            "0",
+            "5",
+            "1/2"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The integer immediately to the right of −6 is",
+          "options": [
+            "−7",
+            "−6",
+            "−5",
+            "5"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Which is the greatest integer?",
+          "options": [
+            "−12",
+            "−3",
+            "−7",
+            "−1"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "Which comparison is correct?",
+          "options": [
+            "−9>−4",
+            "−9<−4",
+            "−9=−4",
+            "−4<−9"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The additive inverse of +14 is",
+          "options": [
+            "−14",
+            "0",
+            "14",
+            "1/14"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "Starting at −4 on a number line and moving 7 steps right gives",
+          "options": [
+            "−11",
+            "−3",
+            "3",
+            "11"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "−8+13 equals",
+          "options": [
+            "−21",
+            "−5",
+            "5",
+            "21"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "7+(−12) equals",
+          "options": [
+            "−19",
+            "−5",
+            "5",
+            "19"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "−6+(−5) equals",
+          "options": [
+            "−11",
+            "−1",
+            "1",
+            "11"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "4−9 equals",
+          "options": [
+            "−13",
+            "−5",
+            "5",
+            "13"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "−7−(−3) equals",
+          "options": [
+            "−10",
+            "−4",
+            "4",
+            "10"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "The temperature rises from −5°C to 6°C. The rise is",
+          "options": [
+            "1°C",
+            "6°C",
+            "10°C",
+            "11°C"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "A lift is at floor +2 and goes down 6 floors. It reaches",
+          "options": [
+            "floor −8",
+            "floor −4",
+            "floor +4",
+            "floor +8"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "Which list is in ascending order?",
+          "options": [
+            "−7, −2, 0, 3",
+            "−2, −7, 0, 3",
+            "3, 0, −2, −7",
+            "−7, 0, −2, 3"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "−4+9=5.",
+          "reason": "Adding a positive integer means moving to the right on the number line."
+        },
+        {
+          "number": 16,
+          "assertion": "−8 is greater than −3.",
+          "reason": "Of two points on a number line, the point farther left represents the smaller integer."
+        }
+      ],
+      "written": {
+        "17": "Mark −5, −1, 0 and 4 on a number line and write them in ascending order.",
+        "18": "Find: (a) −13+8, (b) 6−11.",
+        "19": "At dawn the temperature was −7°C. By noon it was 4°C. By how many degrees did it rise?",
+        "20": "Evaluate −18+27−14+5, showing the intermediate steps.",
+        "21": "A lift starts at floor −2, goes up 9 floors, down 12 floors and then up 4 floors. At which floor does it stop?",
+        "22": "Account A changes by −₹25, +₹40 and −₹18. Account B changes by +₹12, −₹20 and +₹4. Find each net change and state which is greater.",
+        "23": [
+          "A submarine is at −35 m relative to sea level.",
+          "(a) It rises 18 m. Find its new position. [1]",
+          "(b) It then descends 12 m and rises 9 m. Find its final position. [2]",
+          "(c) Find the total vertical distance travelled and state how far below sea level it finishes. [2]"
+        ],
+        "24": [
+          "(a) Find the score after the first two rounds. [1]",
+          "(b) Find the final score. [1]",
+          "(c) List the running scores and identify the lowest score and the round after which it occurs. [2]"
+        ]
+      },
+      "caseStudy": "A school quiz records correct answers as positive changes and penalties as negative changes. A score starts at 0 and changes in four rounds by +6, −4, −7 and +10 points.",
+      "answerKey": [
+        3,
+        2,
+        3,
+        1,
+        0,
+        2,
+        2,
+        1,
+        0,
+        1,
+        1,
+        3,
+        1,
+        0,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "From left to right the marked points are −5, −1, 0 and 4. Therefore the ascending order is −5<−1<0<4.",
+        "18": "(a) −13+8=−5. (b) 6−11=−5.",
+        "19": "Rise=4−(−7)=4+7=11°C.",
+        "20": "−18+27=9, 9−14=−5 and −5+5=0. Therefore the value is 0.",
+        "21": "The final floor is −2+9−12+4=7−12+4=−5+4=−1. The lift stops at floor −1.",
+        "22": "Account A: −25+40−18=15−18=−3. Account B: 12−20+4=−8+4=−4. Since −3>−4, Account A has the greater net change by ₹1.",
+        "23": "(a) −35+18=−17 m. (b) −17−12+9=−29+9=−20 m. (c) Total vertical distance=18+12+9=39 m; the final position is 20 m below sea level.",
+        "24": "(a) 0+6−4=2 points. (b) 2−7+10=5 points. (c) The running scores are 6, 2, −5 and 5. The lowest is −5 after round 3."
+      }
+    },
+    {
+      "id": "icse6-sets-01",
+      "chapter": "Sets",
+      "chapterNumber": 5,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Describe well-defined collections, represent them clearly, classify them and count distinct elements without repetition.",
+      "questionVisuals": { "3": "set-diagram" },
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "Which collection is well-defined?",
+          "options": [
+            "the clever students in a class",
+            "the months of a year having 30 days",
+            "the beautiful flowers in a garden",
+            "the difficult sums in a book"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The roster form of the set of vowels in the English alphabet is",
+          "options": [
+            "{a,b,c,d,e}",
+            "{a,e,o}",
+            "{a,e,i,o,u}",
+            "{vowels}"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "If A={2,4,6,8}, which statement is true?",
+          "options": [
+            "6∈A",
+            "5∈A",
+            "2∉A",
+            "8∉A"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The statement x∉B means",
+          "options": [
+            "x is the only element of B",
+            "x is not an element of B",
+            "B has no elements",
+            "x is the number of elements of B"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The cardinality of {red, blue, red, green} is",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "The set of months in a year is",
+          "options": [
+            "finite",
+            "infinite",
+            "empty",
+            "not a set"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The set of whole numbers is",
+          "options": [
+            "finite",
+            "infinite",
+            "empty",
+            "a one-element set"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "Which is an empty set?",
+          "options": [
+            "prime numbers less than 10",
+            "letters in the word SET",
+            "days in a week",
+            "months having 32 days"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Which symbol denotes the empty set?",
+          "options": [
+            "{0}",
+            "∅",
+            "{∅}",
+            "1"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "The roster form of {x:x is an even natural number less than 8} is",
+          "options": [
+            "{0,2,4,6,8}",
+            "{2,4,6,8}",
+            "{2,4,6}",
+            "{1,3,5,7}"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "The set {1,2,3,…} is",
+          "options": [
+            "empty",
+            "infinite",
+            "finite with three elements",
+            "not well-defined"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "If C={m,a,t,h}, then n(C) is",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "If L is the set of distinct letters in LEVEL, then n(L) is",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "Which roster set represents {x:x is a natural number and x<5}?",
+          "options": [
+            "{1,2,3,4}",
+            "{0,1,2,3,4}",
+            "{1,2,3,4,5}",
+            "{2,3,4}"
+          ]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "The cardinality of the empty set is 0.",
+          "reason": "The empty set contains no elements."
+        },
+        {
+          "number": 16,
+          "assertion": "The set of integers strictly between 5 and 6 is infinite.",
+          "reason": "There is no integer strictly between 5 and 6."
+        }
+      ],
+      "written": {
+        "17": "Write the set of vowels occurring in the word MATHEMATICS in roster form and find its cardinality.",
+        "18": "Represent the natural numbers greater than 3 but less than 9 in (a) roster form and (b) set-builder form.",
+        "19": "Classify each set as finite, infinite or empty: (a) days in a week, (b) whole numbers, (c) months having 32 days.",
+        "20": "For A={2,4,6,8,10}, write (a) a description in words, (b) a set-builder form and (c) n(A).",
+        "21": "Let B be the set of letters occurring in BALLOON. Write B in roster form, find n(B), and explain how repeated letters are treated.",
+        "22": "Let W={x:x is a whole number less than 4}. Write W in roster form, classify it and find n(W).",
+        "23": [
+          "Let P={x:x is a prime number less than 12} and let Q be the set of positive multiples of 5.",
+          "(a) Write P in roster form. [2]",
+          "(b) State n(P) and classify P. [1]",
+          "(c) Write the first five elements of Q and classify Q. [2]"
+        ],
+        "24": [
+          "(a) Write the set H of recorded colours in roster form. [1]",
+          "(b) Find n(H). [1]",
+          "(c) Classify H as finite, infinite or empty, and explain why repeated responses do not change its cardinality. [2]"
+        ]
+      },
+      "caseStudy": "A teacher organises survey responses as a set, listing each distinct response only once. A class survey records these house colours: Blue, Red, Green, Blue, Yellow, Red.",
+      "answerKey": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        3,
+        1,
+        2,
+        1,
+        3,
+        2,
+        0,
+        0,
+        3
+      ],
+      "solutions": {
+        "17": "The vowels occurring are A, E and I. Thus V={A,E,I} and n(V)=3.",
+        "18": "(a) {4,5,6,7,8}. (b) {x:x∈N and 3<x<9}.",
+        "19": "(a) Days in a week: finite. (b) Whole numbers: infinite. (c) Months having 32 days: empty.",
+        "20": "(a) A is the set of even natural numbers from 2 through 10. (b) A={x:x∈N, x is even and 2≤x≤10}. (c) n(A)=5.",
+        "21": "B={B,A,L,O,N} and n(B)=5. Each distinct element is written once, so the repeated L and O are not counted again.",
+        "22": "W={0,1,2,3}. It is a finite set and n(W)=4.",
+        "23": "(a) P={2,3,5,7,11}. (b) n(P)=5, so P is finite. (c) The first five elements of Q are 5,10,15,20,25; Q continues without end, so it is infinite.",
+        "24": "(a) H={Blue,Red,Green,Yellow}; repeated entries are written only once. (b) n(H)=4. (c) H is finite because it contains exactly four distinct elements. The repeated Blue and Red responses do not change n(H), since a set lists each distinct element only once."
+      }
+    },
+    {
+      "id": "icse6-fractions-01",
+      "chapter": "Fractions",
+      "chapterNumber": 6,
+      "paperNumber": "01",
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "focus": "Represent, compare and simplify fractions before carrying out accurate operations with manageable values.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "In 5/8, the numerator is",
+          "options": [
+            "5",
+            "8",
+            "13",
+            "3"
+          ]
+        },
+        {
+          "number": 2,
+          "question": "The division 7÷4 can be written as",
+          "options": [
+            "4/7",
+            "7",
+            "7/4",
+            "11"
+          ]
+        },
+        {
+          "number": 3,
+          "question": "Which is a proper fraction?",
+          "options": [
+            "9/7",
+            "7/7",
+            "5/8",
+            "11/4"
+          ]
+        },
+        {
+          "number": 4,
+          "question": "The mixed form of 17/5 is",
+          "options": [
+            "2 3/5",
+            "3 2/5",
+            "3 3/5",
+            "5 2/3"
+          ]
+        },
+        {
+          "number": 5,
+          "question": "The improper fraction equal to 2 3/4 is",
+          "options": [
+            "8/4",
+            "9/4",
+            "11/4",
+            "14/4"
+          ]
+        },
+        {
+          "number": 6,
+          "question": "Which is equivalent to 3/5?",
+          "options": [
+            "6/15",
+            "9/20",
+            "15/18",
+            "12/20"
+          ]
+        },
+        {
+          "number": 7,
+          "question": "The simplest form of 18/24 is",
+          "options": [
+            "2/3",
+            "3/5",
+            "3/4",
+            "4/3"
+          ]
+        },
+        {
+          "number": 8,
+          "question": "Which is greater?",
+          "options": [
+            "7/9",
+            "3/4",
+            "They are equal",
+            "They cannot be compared"
+          ]
+        },
+        {
+          "number": 9,
+          "question": "Which fraction lies between 1/2 and 3/4?",
+          "options": [
+            "3/8",
+            "1/2",
+            "5/8",
+            "4/5"
+          ]
+        },
+        {
+          "number": 10,
+          "question": "Use the fraction strip. If 3/4 of the strip is shaded, one half of the shaded part is",
+          "options": [
+            "1/4",
+            "3/8",
+            "1/2",
+            "3/4"
+          ]
+        },
+        {
+          "number": 11,
+          "question": "2/3+1/6 equals",
+          "options": [
+            "3/9",
+            "1/2",
+            "5/6",
+            "1"
+          ]
+        },
+        {
+          "number": 12,
+          "question": "5/6−1/4 equals",
+          "options": [
+            "2",
+            "1/2",
+            "2/3",
+            "7/12"
+          ]
+        },
+        {
+          "number": 13,
+          "question": "3/5×10/9 equals",
+          "options": [
+            "1/3",
+            "2/3",
+            "5/6",
+            "4/3"
+          ]
+        },
+        {
+          "number": 14,
+          "question": "3/4÷1/2 equals",
+          "options": [
+            "3/8",
+            "2/3",
+            "1 1/2",
+            "2"
+          ]
+        }
+      ],
+      "questionVisuals": {
+        "10": "fraction-strip"
+      },
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Multiplying the numerator and denominator of a fraction by the same non-zero number gives an equivalent fraction.",
+          "reason": "The fraction is multiplied by n/n, which equals 1 for n≠0."
+        },
+        {
+          "number": 16,
+          "assertion": "The reciprocal of 2 1/3 is 3/7.",
+          "reason": "First 2 1/3=7/3, and the reciprocal is found by interchanging the numerator and denominator."
+        }
+      ],
+      "written": {
+        "17": "Represent 5/6 on a number line and state whether it is a proper or improper fraction.",
+        "18": "Convert: (a) 4 3/7 to an improper fraction, (b) 31/6 to a mixed number.",
+        "19": "Compare 11/15 and 7/10 using a common denominator.",
+        "20": "Find 2 1/4+1 5/6. Give the answer as a mixed number in simplest form.",
+        "21": "Subtract 2 7/8 from 5 2/3. Give the answer in simplest form.",
+        "22": "Evaluate 3/5×15/14÷9/7, showing cancellation or simplification.",
+        "23": [
+          "A baker has 6 kg of flour. She uses 1 3/4 kg for bread and 2/3 kg for cakes.",
+          "(a) Find the total mass of flour used. [2]",
+          "(b) Find the mass of flour left. [2]",
+          "(c) If the flour left is shared equally among 4 containers, find the mass in each container. [1]"
+        ],
+        "24": [
+          "(a) How many pages does he read on Monday? [1]",
+          "(b) How many pages remain after Monday? [1]",
+          "(c) Find the pages read on Tuesday and the fraction of the whole book still unread after Tuesday. [2]"
+        ]
+      },
+      "caseStudy": "Aarav is reading a 240-page book. On Monday he reads 1/4 of the book. On Tuesday he reads 2/5 of the pages that remained after Monday.",
+      "answerKey": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        0,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        0,
+        0
+      ],
+      "solutions": {
+        "17": "Divide the interval from 0 to 1 into 6 equal parts and mark the fifth point from 0. Since 5<6, 5/6 is a proper fraction.",
+        "18": "(a) 4 3/7=(4×7+3)/7=31/7. (b) 31÷6 gives quotient 5 and remainder 1, so 31/6=5 1/6.",
+        "19": "Using denominator 30: 11/15=22/30 and 7/10=21/30. Therefore 11/15>7/10.",
+        "20": "2 1/4+1 5/6=9/4+11/6=27/12+22/12=49/12=4 1/12.",
+        "21": "5 2/3−2 7/8=17/3−23/8=136/24−69/24=67/24=2 19/24.",
+        "22": "3/5×15/14÷9/7=3/5×15/14×7/9. Cancelling common factors gives 1/2.",
+        "23": "(a) Used=1 3/4+2/3=7/4+2/3=21/12+8/12=29/12=2 5/12 kg. (b) Left=6−29/12=72/12−29/12=43/12=3 7/12 kg. (c) 43/12÷4=43/48 kg in each container.",
+        "24": "(a) Monday: 1/4×240=60 pages. (b) Remaining=240−60=180 pages. (c) Tuesday: 2/5×180=72 pages. Unread=180−72=108 pages, and 108/240=9/20 of the book."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "slug": "icse6-knowing-numbers",
+      "chapter": "Knowing Our Numbers",
+      "number": 1,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Eight-Digit Numbers, Estimation & Everyday Measures",
+      "concepts": [
+        {
+          "title": "Two numeration systems",
+          "text": "The Indian system groups digits as ones, thousands, lakhs and crores; the International system groups them as ones, thousands and millions."
+        },
+        {
+          "title": "Place value and comparison",
+          "text": "A digit’s place determines its value. Compare digit counts first, then compare equal-length numbers from the greatest place."
+        },
+        {
+          "title": "Operations and estimation",
+          "text": "Align place values for addition and subtraction. Estimate first so that an unreasonable exact answer is easy to notice."
+        },
+        {
+          "title": "Length and mass",
+          "text": "Convert larger units to smaller units by multiplication before combining measurements."
+        }
+      ],
+      "formulas": [
+        "1 crore = 100 lakh = 10 million",
+        "1 lakh = 100 thousand",
+        "1 km = 1,000 m",
+        "1 kg = 1,000 g",
+        "Estimate: round first, then calculate"
+      ],
+      "method": [
+        "Write the number in a place-value chart.",
+        "Insert commas according to the required numeration system.",
+        "Estimate the expected size before calculating exactly.",
+        "Convert every measurement to one unit and attach the correct unit to the answer."
+      ],
+      "example": {
+        "question": "Write 6,08,04,025 in the International system and round it to the nearest lakh.",
+        "steps": [
+          "The digits represent 60,804,025.",
+          "International form is 60,804,025.",
+          "The ten-thousands digit is 0, so 6,08,04,025 rounds down."
+        ],
+        "answer": "International form: 60,804,025; nearest lakh: 6,08,00,000."
+      },
+      "practice": [
+        {
+          "question": "Write 8,03,05,019 in the International system.",
+          "answer": "80,305,019",
+          "marks": 2
+        },
+        {
+          "question": "Find the place value of 7 in 4,72,18,650.",
+          "answer": "70,00,000",
+          "marks": 2
+        },
+        {
+          "question": "Round 3,86,47,251 to the nearest lakh.",
+          "answer": "3,86,00,000",
+          "marks": 2
+        },
+        {
+          "question": "Estimate 6,119 + 2,880 to the nearest thousand.",
+          "answer": "9,000",
+          "marks": 2
+        },
+        {
+          "question": "Convert 14 km 85 m to metres.",
+          "answer": "14,085 m",
+          "marks": 2
+        },
+        {
+          "question": "A store receives 325 cartons with 248 items each. Find the total.",
+          "answer": "80,600 items",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Do not read Indian comma groups as International groups.",
+        "Keep zeros that hold a place even when their value is zero.",
+        "An estimate should be close enough to check the exact answer, not replace it."
+      ]
+    },
+    {
+      "slug": "icse6-whole-numbers",
+      "chapter": "Whole Numbers",
+      "number": 2,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Number Line, Properties & Identities",
+      "concepts": [
+        {
+          "title": "Natural and whole numbers",
+          "text": "Natural numbers begin at 1 in this course. Whole numbers extend them by including 0."
+        },
+        {
+          "title": "Number line",
+          "text": "Whole numbers increase to the right. Addition moves right and subtraction moves left when the result remains a whole number."
+        },
+        {
+          "title": "Operation properties",
+          "text": "Addition and multiplication are closed, commutative and associative for whole numbers; multiplication distributes over addition and subtraction."
+        },
+        {
+          "title": "Zero and one",
+          "text": "Zero is the additive identity and one is the multiplicative identity. Division by zero is undefined."
+        }
+      ],
+      "formulas": [
+        "a + 0 = a",
+        "a × 1 = a",
+        "a + b = b + a; a × b = b × a",
+        "(a + b) + c = a + (b + c)",
+        "a × (b + c) = a × b + a × c",
+        "a ÷ 0 is undefined"
+      ],
+      "method": [
+        "Identify the operation and the whole numbers involved.",
+        "Choose the property that makes the calculation shorter.",
+        "Regroup or distribute without changing the value.",
+        "Check that the result belongs to the required number set."
+      ],
+      "example": {
+        "question": "Evaluate 248 × 97 + 248 × 3 efficiently.",
+        "steps": [
+          "Both products contain the common factor 248.",
+          "Use the distributive property: 248 × (97 + 3).",
+          "Compute 248 × 100."
+        ],
+        "answer": "24,800."
+      },
+      "practice": [
+        {
+          "question": "Write the first six whole numbers.",
+          "answer": "0, 1, 2, 3, 4, 5",
+          "marks": 1
+        },
+        {
+          "question": "Show 9 + 6 on a number line.",
+          "answer": "Move 6 units right from 9 to 15",
+          "marks": 2
+        },
+        {
+          "question": "Name the property: 47 × 19 = 19 × 47.",
+          "answer": "Commutative property of multiplication",
+          "marks": 2
+        },
+        {
+          "question": "Evaluate 75 × 36 + 75 × 64.",
+          "answer": "7,500",
+          "marks": 3
+        },
+        {
+          "question": "Find 504 × 101 using a property.",
+          "answer": "50,904",
+          "marks": 3
+        },
+        {
+          "question": "Explain why 25 ÷ 0 is undefined.",
+          "answer": "No number multiplied by 0 can give 25",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Subtraction and division are not commutative.",
+        "Zero is not the multiplicative identity; multiplying by zero gives zero.",
+        "Never assign a value to division by zero."
+      ]
+    },
+    {
+      "slug": "icse6-playing-with-numbers",
+      "chapter": "Playing with Numbers",
+      "number": 3,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Divisibility, Prime Factors, HCF & LCM",
+      "concepts": [
+        {
+          "title": "Brackets",
+          "text": "Simplify the innermost grouping first, then work outward while preserving every operation sign."
+        },
+        {
+          "title": "Factors and divisibility",
+          "text": "A factor divides exactly; a multiple is obtained by multiplication. Divisibility rules provide quick tests without full division."
+        },
+        {
+          "title": "Prime factorisation",
+          "text": "A prime has exactly two factors. Every composite number has a unique prime-factor product apart from order."
+        },
+        {
+          "title": "HCF and LCM",
+          "text": "HCF uses common primes with least powers; LCM uses every prime with the greatest required power."
+        }
+      ],
+      "formulas": [
+        "For two positive numbers: HCF × LCM = product",
+        "Divisible by 2, 5 or 10: last digit is even, 0 or 5, or 0 respectively",
+        "Divisible by 3 or 9: test the digit sum; divisible by 6: test both 2 and 3",
+        "Divisible by 4: test the last two digits",
+        "Divisible by 8: test the last three digits",
+        "Divisible by 11: alternating-place sums differ by a multiple of 11"
+      ],
+      "method": [
+        "Simplify brackets from the innermost pair outward.",
+        "Apply the relevant divisibility test before dividing.",
+        "Write each number as a product of primes.",
+        "Select least common powers for HCF and greatest required powers for LCM, then verify."
+      ],
+      "example": {
+        "question": "Find the HCF and LCM of 48 and 180.",
+        "steps": [
+          "48 = 2⁴ × 3 and 180 = 2² × 3² × 5.",
+          "HCF = 2² × 3 = 12.",
+          "LCM = 2⁴ × 3² × 5 = 720."
+        ],
+        "answer": "HCF = 12 and LCM = 720; 12 × 720 = 48 × 180."
+      },
+      "practice": [
+        {
+          "question": "Simplify 80 − [25 − (12 − 7)].",
+          "answer": "60",
+          "marks": 2
+        },
+        {
+          "question": "Test 45,936 for divisibility by 8 and 9.",
+          "answer": "Divisible by both",
+          "marks": 2
+        },
+        {
+          "question": "Prime-factorise 924.",
+          "answer": "2² × 3 × 7 × 11",
+          "marks": 2
+        },
+        {
+          "question": "Find HCF(84, 126).",
+          "answer": "42",
+          "marks": 2
+        },
+        {
+          "question": "Find LCM(24, 36, 90).",
+          "answer": "360",
+          "marks": 3
+        },
+        {
+          "question": "Three lights flash every 8, 12 and 30 seconds. When next together?",
+          "answer": "After 120 seconds",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "One is neither prime nor composite.",
+        "Use HCF for greatest equal groups and LCM for the next common occurrence.",
+        "For two numbers only, use the product relation as a final check."
+      ]
+    },
+    {
+      "slug": "icse6-integers",
+      "chapter": "Integers",
+      "number": 4,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Negative Numbers, Number Lines & Changes",
+      "concepts": [
+        {
+          "title": "Integers",
+          "text": "Integers are …,−3,−2,−1,0,1,2,3,… . Negative integers describe values below a reference point, while positive integers describe values above it."
+        },
+        {
+          "title": "Position and order",
+          "text": "Integers increase as we move right on a number line. Among negative integers, the one closer to zero is greater."
+        },
+        {
+          "title": "Opposites",
+          "text": "A number and its additive inverse lie at equal distances on opposite sides of zero and have sum zero."
+        },
+        {
+          "title": "Addition and subtraction",
+          "text": "A positive change moves right and a negative change moves left. Subtracting an integer is the same as adding its opposite."
+        }
+      ],
+      "formulas": [
+        "a+0=a",
+        "a+(−a)=0",
+        "a−b=a+(−b)",
+        "If a lies left of b, then a<b"
+      ],
+      "method": [
+        "Identify the starting integer and mark it on a number line.",
+        "Rewrite subtraction as addition of the opposite when helpful.",
+        "Move right for a positive addend and left for a negative addend.",
+        "Check the final sign against the direction and context."
+      ],
+      "example": {
+        "question": "Find −6+11−8.",
+        "steps": [
+          "Start at −6 and move 11 places right to 5.",
+          "Subtracting 8 means moving 8 places left.",
+          "5−8=−3."
+        ],
+        "answer": "−3"
+      },
+      "practice": [
+        {
+          "question": "Arrange −4, 2, −9 and 0 in ascending order.",
+          "answer": "−9,−4,0,2",
+          "marks": 2
+        },
+        {
+          "question": "Find −12+19.",
+          "answer": "7",
+          "marks": 1
+        },
+        {
+          "question": "Find 5−13.",
+          "answer": "−8",
+          "marks": 1
+        },
+        {
+          "question": "Find −8−(−5).",
+          "answer": "−3",
+          "marks": 2
+        },
+        {
+          "question": "A temperature of −3°C rises by 9°C.",
+          "answer": "6°C",
+          "marks": 2
+        },
+        {
+          "question": "A lift starts at floor 4, descends 9 floors and rises 2 floors.",
+          "answer": "floor −3",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Zero is an integer but is neither positive nor negative.",
+        "Farther left means smaller, even when both numbers are negative.",
+        "Keep the sign with each number when adding several changes."
+      ]
+    },
+    {
+      "slug": "icse6-sets",
+      "chapter": "Sets",
+      "number": 5,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Representation, Types & Cardinality",
+      "concepts": [
+        {
+          "title": "Well-defined collections",
+          "text": "A set is a well-defined collection of distinct objects, called elements. A description such as “beautiful pictures” is not precise enough to define a set."
+        },
+        {
+          "title": "Representation",
+          "text": "A set may be described in words, listed in roster form, or written in set-builder form using a rule."
+        },
+        {
+          "title": "Finite, infinite and empty",
+          "text": "A finite set ends, an infinite set continues without end, and the empty set has no elements."
+        },
+        {
+          "title": "Cardinality",
+          "text": "The cardinality n(A) counts the distinct elements of A. Repeated entries are counted only once, and order does not change the count."
+        }
+      ],
+      "formulas": [
+        "x∈A means x is an element of A",
+        "x∉A means x is not an element of A",
+        "n(A)=number of distinct elements of A",
+        "n(∅)=0"
+      ],
+      "method": [
+        "Check that the collection is described unambiguously.",
+        "Choose descriptive, roster or set-builder form as requested.",
+        "Remove repeated entries when writing roster form.",
+        "Count distinct elements and classify the set as finite, infinite or empty."
+      ],
+      "example": {
+        "question": "Write the set of distinct letters in SCHOOL and find its cardinality.",
+        "steps": [
+          "List the letters S, C, H, O, O, L.",
+          "Write the repeated O only once.",
+          "Count the distinct elements."
+        ],
+        "answer": "A={S,C,H,O,L}; n(A)=5, so A is finite."
+      },
+      "practice": [
+        {
+          "question": "Write the vowels in the English alphabet in roster form.",
+          "answer": "{a,e,i,o,u}",
+          "marks": 1
+        },
+        {
+          "question": "Classify the set of natural numbers.",
+          "answer": "Infinite",
+          "marks": 1
+        },
+        {
+          "question": "Find n({2,3,3,5,5,5}).",
+          "answer": "3",
+          "marks": 2
+        },
+        {
+          "question": "Write the whole numbers less than 5 in roster form.",
+          "answer": "{0,1,2,3,4}",
+          "marks": 2
+        },
+        {
+          "question": "Give one example of an empty set.",
+          "answer": "For example, the set of months having 32 days",
+          "marks": 2
+        },
+        {
+          "question": "Write {3,6,9,12} in set-builder form and find its cardinality.",
+          "answer": "{x:x is a positive multiple of 3 and x≤12}; cardinality 4",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Braces contain elements; ∅ has no element, but {∅} has one element.",
+        "Do not count a repeated element more than once.",
+        "Use an ellipsis only when the continuation rule is clear."
+      ]
+    },
+    {
+      "slug": "icse6-fractions",
+      "chapter": "Fractions",
+      "number": 6,
+      "grade": 6,
+      "board": "ICSE",
+      "book": "CISCE Mathematics",
+      "subtitle": "Equivalent Forms, Comparison & Operations",
+      "concepts": [
+        {
+          "title": "Meaning and representation",
+          "text": "A fraction a/b represents a÷b and b equal parts of a whole, of which a parts are selected. Fractions can be shown pictorially or on a number line."
+        },
+        {
+          "title": "Forms of fractions",
+          "text": "A proper fraction is less than 1; an improper fraction is at least 1 and can be rewritten as a whole or mixed number."
+        },
+        {
+          "title": "Equivalent and comparable",
+          "text": "Equivalent fractions name the same value. To compare unlike fractions, use a common denominator or cross-products."
+        },
+        {
+          "title": "Operations",
+          "text": "Add or subtract using a common denominator, multiply numerators and denominators, and divide by multiplying by the reciprocal."
+        }
+      ],
+      "formulas": [
+        "a/b=(a×n)/(b×n), n≠0",
+        "Mixed p a/b=(pb+a)/b",
+        "a/b+c/d=(ad+bc)/bd",
+        "a/b×c/d=ac/bd",
+        "a/b÷c/d=a/b×d/c, c≠0",
+        "Fraction of a quantity=fraction×quantity"
+      ],
+      "method": [
+        "Convert mixed numbers to improper fractions when operating.",
+        "For addition or subtraction, find a common denominator.",
+        "For multiplication or division, cancel common factors before multiplying.",
+        "Reduce the result and convert an improper answer to mixed form when useful."
+      ],
+      "example": {
+        "question": "Find 2 1/4+5/6.",
+        "steps": [
+          "Convert 2 1/4 to 9/4.",
+          "Use denominator 12: 9/4=27/12 and 5/6=10/12.",
+          "Add and convert: 37/12=3 1/12."
+        ],
+        "answer": "3 1/12"
+      },
+      "practice": [
+        {
+          "question": "Simplify 21/35.",
+          "answer": "3/5",
+          "marks": 2
+        },
+        {
+          "question": "Convert 3 2/7 to an improper fraction.",
+          "answer": "23/7",
+          "marks": 2
+        },
+        {
+          "question": "Compare 5/8 and 7/12.",
+          "answer": "5/8>7/12",
+          "marks": 2
+        },
+        {
+          "question": "Find 3/4+5/12.",
+          "answer": "1 1/6",
+          "marks": 2
+        },
+        {
+          "question": "Find 7/9×3/14.",
+          "answer": "1/6",
+          "marks": 2
+        },
+        {
+          "question": "Find 2 1/2÷5/6.",
+          "answer": "3",
+          "marks": 3
+        }
+      ],
+      "tips": [
+        "Never add denominators when adding fractions.",
+        "The reciprocal is used for division, not for addition or subtraction.",
+        "Estimate whether the answer should be below or above 1 before calculating."
+      ]
+    }
+  ]
+}
+
