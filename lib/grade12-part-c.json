@@ -1,0 +1,856 @@
+{
+  "papers": [
+    {
+      "id": "g12-vector-algebra-01",
+      "chapter": "Vector Algebra",
+      "chapterNumber": 10,
+      "paperNumber": "01",
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "focus": "Represent vectors through components, use section and projection formulas accurately, and connect dot and cross products with angles, perpendicularity and area.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The magnitude of 2î − 3ĵ + 6k̂ is",
+          "options": ["5", "6", "7", "7/2"]
+        },
+        {
+          "number": 2,
+          "question": "A unit vector in the direction of 2î + 2ĵ + k̂ is",
+          "options": ["⅓(2î + 2ĵ + k̂)", "½(2î + 2ĵ + k̂)", "⅓(î + ĵ + k̂)", "2î + 2ĵ + k̂"]
+        },
+        {
+          "number": 3,
+          "question": "The point P divides A(1, −2, 3) and B(4, 1, −3) internally in the ratio AP : PB = 2 : 1. The position vector of P is",
+          "options": ["2î − ĵ + k̂", "3î − k̂", "3î + k̂", "î − 3k̂"]
+        },
+        {
+          "number": 4,
+          "question": "If a⃗ and b⃗ are non-zero vectors and a⃗ · b⃗ = 0, then they are",
+          "options": ["parallel", "equal", "perpendicular", "collinear in the same direction"]
+        },
+        {
+          "number": 5,
+          "question": "The angle between î + ĵ and î − ĵ is",
+          "options": ["0", "π/6", "π/4", "π/2"]
+        },
+        {
+          "number": 6,
+          "question": "The scalar projection of a⃗ = 2î + ĵ − k̂ on b⃗ = î + 2ĵ + 2k̂ is",
+          "options": ["2", "⅔", "−⅔", "2/√6"]
+        },
+        {
+          "number": 7,
+          "question": "If |a⃗| = 3, |b⃗| = 4 and the angle between them is 30°, then |a⃗ × b⃗| equals",
+          "options": ["6", "6√3", "12", "12√3"]
+        },
+        {
+          "number": 8,
+          "question": "The vector î × ĵ is",
+          "options": ["−k̂", "0⃗", "k̂", "ĵ"]
+        },
+        {
+          "number": 9,
+          "question": "For any vectors a⃗ and b⃗, (a⃗ + b⃗) · (a⃗ − b⃗) equals",
+          "options": ["|a⃗|² + |b⃗|²", "|a⃗|² − |b⃗|²", "2a⃗ · b⃗", "0"]
+        },
+        {
+          "number": 10,
+          "question": "If |a⃗ + b⃗| = |a⃗ − b⃗| for non-zero vectors a⃗ and b⃗, then a⃗ and b⃗ are",
+          "options": ["perpendicular", "parallel", "equal", "oppositely directed"]
+        },
+        {
+          "number": 11,
+          "question": "The vector projection of a⃗ on a non-zero vector b⃗ is",
+          "options": ["(a⃗ · b⃗)b⃗", "(a⃗ · b⃗/|b⃗|)b⃗", "(a⃗ · b⃗/|b⃗|²)b⃗", "(a⃗ × b⃗/|b⃗|²)b⃗"]
+        },
+        {
+          "number": 12,
+          "question": "The area of the parallelogram whose adjacent sides are î + k̂ and î + ĵ is",
+          "options": ["1", "√2", "2", "√3"]
+        },
+        {
+          "number": 13,
+          "question": "If λî + 2ĵ − k̂ is parallel to 2î + 4ĵ − 2k̂, then λ equals",
+          "options": ["½", "1", "2", "4"]
+        },
+        {
+          "number": 14,
+          "question": "If l, m and n are the direction cosines of a vector, then",
+          "options": ["l² + m² + n² = 1", "l + m + n = 1", "lm + mn + nl = 1", "lmn = 1"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "The cross product of two parallel vectors is the zero vector.",
+          "reason": "The magnitude of a⃗ × b⃗ is |a⃗||b⃗| sin θ, and sin 0 = sin π = 0."
+        },
+        {
+          "number": 16,
+          "assertion": "If a⃗ · b⃗ = a⃗ · c⃗ for a non-zero vector a⃗, then b⃗ = c⃗.",
+          "reason": "The equality only gives a⃗ · (b⃗ − c⃗) = 0, so b⃗ − c⃗ may be a non-zero vector perpendicular to a⃗."
+        }
+      ],
+      "written": {
+        "17": "Find a unit vector directed from A(1, −2, 3) to B(4, 2, 3).",
+        "18": "Find the angle between a⃗ = î + ĵ + k̂ and b⃗ = 2î − ĵ + k̂.",
+        "19": "For a⃗ = 2î − ĵ + 2k̂ and b⃗ = î + 2ĵ − 2k̂, find the scalar projection and the vector projection of a⃗ on b⃗.",
+        "20": "The point P divides the line segment joining A(2, −1, 3) and B(8, 5, −3) internally in the ratio AP : PB = 2 : 1. Find the position vector of P and the distance OP, where O is the origin.",
+        "21": "Find the two unit vectors perpendicular to both a⃗ = î + 2ĵ + 3k̂ and b⃗ = 2î − ĵ + k̂.",
+        "22": "Find the area of triangle ABC with A(1, 0, 0), B(2, 1, 0) and C(1, 2, 2), using a vector product.",
+        "23": [
+          "Vectors a⃗, b⃗ and c⃗ satisfy a⃗ + b⃗ + c⃗ = 0⃗, |a⃗| = 3, |b⃗| = 4 and |c⃗| = 5.",
+          "(a) Prove that a⃗ and b⃗ are perpendicular.",
+          "(b) Find |b⃗ × c⃗| and the angle between b⃗ and c⃗."
+        ],
+        "24": [
+          "(a) Find |a⃗|. [1]",
+          "(b) Find a⃗ · b⃗. [1]",
+          "(c) Find the angle between the cables and the area of the triangle formed by them. [2]"
+        ]
+      },
+      "caseStudy": "Two support cables from a joint are represented by a⃗ = 2î + ĵ − 2k̂ and b⃗ = î − 2ĵ + 2k̂, with component lengths measured in metres.",
+      "answerKey": [2, 0, 1, 2, 3, 1, 0, 2, 1, 0, 2, 3, 1, 0, 0, 3],
+      "solutions": {
+        "17": "AB⃗ = (4 − 1)î + (2 + 2)ĵ + (3 − 3)k̂ = 3î + 4ĵ. Its magnitude is √(3² + 4²) = 5. Hence the required unit vector is (3î + 4ĵ)/5.",
+        "18": "a⃗ · b⃗ = 1(2) + 1(−1) + 1(1) = 2. Also |a⃗| = √3 and |b⃗| = √6. Therefore cos θ = 2/(√3√6) = √2/3, so θ = cos⁻¹(√2/3).",
+        "19": "a⃗ · b⃗ = 2(1) + (−1)(2) + 2(−2) = −4 and |b⃗| = √(1 + 4 + 4) = 3. The scalar projection is (a⃗ · b⃗)/|b⃗| = −4/3. The vector projection is [(a⃗ · b⃗)/|b⃗|²]b⃗ = −⁴⁄₉(î + 2ĵ − 2k̂).",
+        "20": "For AP : PB = 2 : 1, OP⃗ = [2OB⃗ + OA⃗]/3. Thus P = ((2×8 + 2)/3, (2×5 − 1)/3, (2×−3 + 3)/3) = (6, 3, −1). Hence OP⃗ = 6î + 3ĵ − k̂ and OP = √(36 + 9 + 1) = √46.",
+        "21": "A vector perpendicular to both is parallel to a⃗ × b⃗. Now a⃗ × b⃗ = |î ĵ k̂; 1 2 3; 2 −1 1| = 5î + 5ĵ − 5k̂ = 5(î + ĵ − k̂). Its magnitude is 5√3. Therefore the two required unit vectors are ±(î + ĵ − k̂)/√3.",
+        "22": "AB⃗ = î + ĵ and AC⃗ = 2ĵ + 2k̂. Their cross product is AB⃗ × AC⃗ = 2î − 2ĵ + 2k̂, whose magnitude is 2√3. The area of triangle ABC is half the parallelogram area, so it is ½(2√3) = √3 square units.",
+        "23": "Since c⃗ = −(a⃗ + b⃗), |c⃗|² = |a⃗ + b⃗|² = |a⃗|² + |b⃗|² + 2a⃗ · b⃗. Hence 25 = 9 + 16 + 2a⃗ · b⃗, giving a⃗ · b⃗ = 0; therefore a⃗ ⟂ b⃗. Also b⃗ × c⃗ = b⃗ × [−(a⃗ + b⃗)] = −b⃗ × a⃗ = a⃗ × b⃗, so |b⃗ × c⃗| = |a⃗||b⃗| = 12. Further, b⃗ · c⃗ = b⃗ · [−(a⃗ + b⃗)] = −16. If φ is the angle between b⃗ and c⃗, cos φ = −16/(4×5) = −4/5, so φ = cos⁻¹(−4/5).",
+        "24": "(a) |a⃗| = √(2² + 1² + (−2)²) = 3. (b) a⃗ · b⃗ = 2(1) + 1(−2) + (−2)(2) = −4. (c) Since |b⃗| = 3, cos θ = −4/9, so θ = cos⁻¹(−4/9). Also a⃗ × b⃗ = −2î − 6ĵ − 5k̂, whose magnitude is √65. The area of the triangle formed by the cable vectors is ½|a⃗ × b⃗| = √65/2 square metres."
+      }
+    },
+    {
+      "id": "g12-three-dimensional-geometry-01",
+      "chapter": "Three Dimensional Geometry",
+      "chapterNumber": 11,
+      "paperNumber": "01",
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "focus": "Read vector and Cartesian equations of lines, compare their directions, and use dot and cross products to determine angles, intersections and shortest distances.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The direction ratios of r⃗ = (î + 2ĵ − 3k̂) + λ(2î − ĵ + 2k̂) are",
+          "options": ["1, 2, −3", "2, −1, 2", "2, 1, −2", "−2, 1, 2"]
+        },
+        {
+          "number": 2,
+          "question": "A set of direction cosines corresponding to the direction ratios 2, −1, 2 is",
+          "options": ["⅔, −⅓, ⅔", "⅓, −⅓, ⅓", "⅔, ⅓, −⅔", "2, −1, 2"]
+        },
+        {
+          "number": 3,
+          "question": "The angle between lines having direction ratios 1, 1, 0 and 1, −1, 0 is",
+          "options": ["0", "π/4", "π/2", "π"]
+        },
+        {
+          "number": 4,
+          "question": "The point on r⃗ = (î + 2ĵ + 3k̂) + λ(2î − ĵ + k̂) corresponding to λ = 2 is",
+          "options": ["(3, 1, 4)", "(4, 0, 5)", "(5, 1, 4)", "(5, 0, 5)"]
+        },
+        {
+          "number": 5,
+          "question": "The Cartesian form of r⃗ = (î − 2ĵ + k̂) + λ(2î + ĵ − 2k̂) is",
+          "options": ["(x + 1)/2 = (y − 2) = (z + 1)/(−2)", "(x − 1)/2 = (y + 2) = (z − 1)/(−2)", "(x − 1) = (y + 2)/2 = (z − 1)/(−2)", "(x + 1)/2 = (y + 2) = (z − 1)/2"]
+        },
+        {
+          "number": 6,
+          "question": "Two distinct lines are parallel when their direction ratios are",
+          "options": ["proportional", "equal in sum", "perpendicular", "all positive"]
+        },
+        {
+          "number": 7,
+          "question": "Skew lines are lines that are",
+          "options": ["parallel and coplanar", "intersecting", "non-parallel and non-coplanar", "perpendicular and coplanar"]
+        },
+        {
+          "number": 8,
+          "question": "The distance between parallel lines r⃗ = a⃗₁ + λb⃗ and r⃗ = a⃗₂ + μb⃗ is",
+          "options": ["|(a⃗₂ − a⃗₁) · b⃗|", "|(a⃗₂ + a⃗₁) × b⃗|", "|(a⃗₂ − a⃗₁) × b⃗|", "|(a⃗₂ − a⃗₁) × b⃗|/|b⃗|"]
+        },
+        {
+          "number": 9,
+          "question": "The distance between r⃗ = λ(î + ĵ) and r⃗ = k̂ + μ(î + ĵ) is",
+          "options": ["0", "1", "√2", "2"]
+        },
+        {
+          "number": 10,
+          "question": "The shortest distance between two intersecting lines is",
+          "options": ["0", "1", "the distance between their initial points", "not defined"]
+        },
+        {
+          "number": 11,
+          "question": "A vector parallel to the line through A(x₁, y₁, z₁) and B(x₂, y₂, z₂) is",
+          "options": ["OA⃗ + OB⃗", "OA⃗ − OB⃗", "OB⃗ − OA⃗", "OA⃗ × OB⃗"]
+        },
+        {
+          "number": 12,
+          "question": "If l, m and n are the direction cosines of a line, then",
+          "options": ["l + m + n = 0", "lm + mn + nl = 1", "lmn = 1", "l² + m² + n² = 1"]
+        },
+        {
+          "number": 13,
+          "question": "The lines r⃗ = î + λ(ĵ + k̂) and r⃗ = î + ĵ + μ(k̂ − ĵ) intersect at",
+          "options": ["(1, 0, 0)", "(1, ½, ½)", "(1, 1, 1)", "(0, ½, ½)"]
+        },
+        {
+          "number": 14,
+          "question": "For non-parallel lines r⃗ = a⃗₁ + λb⃗₁ and r⃗ = a⃗₂ + μb⃗₂, their shortest distance is",
+          "options": ["|(a⃗₂ − a⃗₁) · (b⃗₁ × b⃗₂)|/|b⃗₁ × b⃗₂|", "|(a⃗₂ − a⃗₁) · b⃗₁|/|b⃗₁|", "|(a⃗₂ − a⃗₁) × b⃗₂|", "|b⃗₁ · b⃗₂|/(|b⃗₁||b⃗₂|)"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Two distinct lines with proportional direction ratios are parallel.",
+          "reason": "Proportional direction ratios represent the same or opposite direction."
+        },
+        {
+          "number": 16,
+          "assertion": "The direction ratios of a line are unique.",
+          "reason": "Every non-zero triple proportional to one set of direction ratios represents the same line direction."
+        }
+      ],
+      "written": {
+        "17": "Find the vector and Cartesian equations of the line through (2, −1, 3) having direction ratios 1, 2, −2.",
+        "18": "Find the angle between two lines whose direction ratios are 1, 2, 2 and 2, 1, −2.",
+        "19": "Show that the lines r⃗ = (î + k̂) + λ(î + ĵ) and r⃗ = (ĵ + k̂) + μ(î − ĵ) intersect, and find their point of intersection.",
+        "20": "Find the direction cosines of the line joining A(1, 2, 3) and B(4, 6, 3), and write its vector and Cartesian equations.",
+        "21": "Find the shortest distance between the parallel lines r⃗ = î + λ(î + 2ĵ + 2k̂) and r⃗ = ĵ + μ(î + 2ĵ + 2k̂).",
+        "22": "Show that the lines r⃗ = î + λ(î + ĵ) and r⃗ = ĵ + k̂ + μ(î + k̂) are skew, and find the shortest distance between them.",
+        "23": [
+          "Consider the lines L₁: r⃗ = î + λ(î + ĵ) and L₂: r⃗ = ĵ + k̂ + μ(ĵ + k̂).",
+          "(a) Show that L₁ and L₂ are skew.",
+          "(b) Find the points of closest approach on the two lines and hence their shortest distance."
+        ],
+        "24": [
+          "(a) Write the direction cosines of the sensor beam. [1]",
+          "(b) State the relation between the two paths and justify it. [1]",
+          "(c) Find the shortest distance between the two paths. [2]"
+        ]
+      },
+      "caseStudy": "A sensor beam follows r⃗ = (î + 2ĵ + k̂) + λ(2î − ĵ + 2k̂). A maintenance trolley follows r⃗ = (3î + ĵ + 2k̂) + μ(2î − ĵ + 2k̂). Coordinates are measured in metres.",
+      "answerKey": [1, 0, 2, 3, 1, 0, 2, 3, 1, 0, 2, 3, 1, 0, 0, 3],
+      "solutions": {
+        "17": "A position vector of the given point is 2î − ĵ + 3k̂ and a direction vector is î + 2ĵ − 2k̂. Hence the vector equation is r⃗ = (2î − ĵ + 3k̂) + λ(î + 2ĵ − 2k̂). Equating components gives the Cartesian form (x − 2) = (y + 1)/2 = (z − 3)/(−2).",
+        "18": "Let a⃗ = î + 2ĵ + 2k̂ and b⃗ = 2î + ĵ − 2k̂. Their dot product is 2 + 2 − 4 = 0. Since both are non-zero, cos θ = 0 and the angle is θ = π/2.",
+        "19": "A point on the first line is (1 + λ, λ, 1), while a point on the second is (μ, 1 − μ, 1). Equality of coordinates requires 1 + λ = μ and λ = 1 − μ. Substitution gives λ = 0 and μ = 1. Both lines therefore contain (1, 0, 1), so they intersect there.",
+        "20": "AB⃗ = (4 − 1)î + (6 − 2)ĵ + (3 − 3)k̂ = 3î + 4ĵ, and |AB⃗| = 5. Thus the direction cosines are 3/5, 4/5 and 0. A vector equation is r⃗ = (î + 2ĵ + 3k̂) + λ(3î + 4ĵ). The Cartesian equations are (x − 1)/3 = (y − 2)/4 with z = 3.",
+        "21": "Take a⃗₁ = î, a⃗₂ = ĵ and b⃗ = î + 2ĵ + 2k̂. Then a⃗₂ − a⃗₁ = −î + ĵ and (a⃗₂ − a⃗₁) × b⃗ = 2î + 2ĵ − 3k̂. Therefore the distance is √(4 + 4 + 9)/√(1 + 4 + 4) = √17/3.",
+        "22": "The direction vectors b⃗₁ = î + ĵ and b⃗₂ = î + k̂ are not proportional. Also b⃗₁ × b⃗₂ = î − ĵ − k̂. With a⃗₂ − a⃗₁ = −î + ĵ + k̂, the scalar product (a⃗₂ − a⃗₁) · (b⃗₁ × b⃗₂) = −3 ≠ 0. The lines are therefore non-coplanar and hence skew. Their shortest distance is |−3|/√3 = √3.",
+        "23": "The direction vectors are b⃗₁ = (1, 1, 0) and b⃗₂ = (0, 1, 1), so b⃗₁ × b⃗₂ = (1, −1, 1). With a⃗₂ − a⃗₁ = (−1, 1, 1), the scalar triple product is −1 ≠ 0; hence the lines are skew. Let P = (1 + λ, λ, 0) on L₁ and Q = (0, 1 + μ, 1 + μ) on L₂. For PQ⃗ to be perpendicular to both directions, μ − 2λ = 0 and 2 + 2μ − λ = 0. Thus λ = −⅔ and μ = −⁴⁄₃. Therefore P = (⅓, −⅔, 0), Q = (0, −⅓, −⅓), and PQ = √[(−⅓)² + (⅓)² + (−⅓)²] = 1/√3 = √3/3.",
+        "24": "(a) The direction vector is 2î − ĵ + 2k̂, whose magnitude is 3. Its direction cosines are ⅔, −⅓, ⅔. (b) The paths have the same direction vector and different initial points, so they are distinct parallel lines. (c) Let d⃗ = (3, 1, 2) − (1, 2, 1) = 2î − ĵ + k̂ and b⃗ = 2î − ĵ + 2k̂. Then d⃗ × b⃗ = −î − 2ĵ. Hence the shortest distance is |d⃗ × b⃗|/|b⃗| = √5/3 metres."
+      }
+    },
+    {
+      "id": "g12-linear-programming-01",
+      "chapter": "Linear Programming",
+      "chapterNumber": 12,
+      "paperNumber": "01",
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "focus": "Translate constraints faithfully, identify the feasible region from boundary lines and test its corner points while recognising infeasible, unbounded and multiple-optimum cases.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "In a linear programming problem, the objective function is",
+          "options": ["a boundary line only", "the linear expression to be maximised or minimised", "the common feasible region", "a non-negativity condition"]
+        },
+        {
+          "number": 2,
+          "question": "A linear restriction on the decision variables is called a",
+          "options": ["constraint", "corner point", "solution table", "profit line"]
+        },
+        {
+          "number": 3,
+          "question": "The feasible region of a linear programming problem is",
+          "options": ["the union of all excluded half-planes", "only the coordinate axes", "the common region satisfying every constraint", "always a bounded triangle"]
+        },
+        {
+          "number": 4,
+          "question": "If a non-empty feasible region is bounded, a finite optimum of a linear objective function occurs at",
+          "options": ["the origin only", "the midpoint of every edge", "any exterior point", "one or more corner points"]
+        },
+        {
+          "number": 5,
+          "question": "Which point satisfies x + 2y ≤ 8, x ≥ 0 and y ≥ 0?",
+          "options": ["(2, 3)", "(4, 3)", "(−1, 2)", "(6, 2)"]
+        },
+        {
+          "number": 6,
+          "question": "The boundary is 3x + 2y = 6 and the selected half-plane contains the origin. The corresponding inequality is",
+          "options": ["3x + 2y ≥ 6", "3x + 2y ≤ 6", "3x + 2y = 0", "3x + 2y < 0"]
+        },
+        {
+          "number": 7,
+          "question": "If an objective function has the same optimal value at two adjacent vertices, then",
+          "options": ["the problem is infeasible", "only their midpoint is optimal", "every point on the joining edge is optimal", "the feasible region must be empty"]
+        },
+        {
+          "number": 8,
+          "question": "For an unbounded feasible region, a linear objective function",
+          "options": ["never has a maximum", "never has a minimum", "always has both a maximum and a minimum", "may or may not have a finite optimum"]
+        },
+        {
+          "number": 9,
+          "question": "If no point satisfies all the constraints, the problem has",
+          "options": ["an empty feasible region", "infinitely many optimal solutions", "an unbounded optimum", "a unique corner point"]
+        },
+        {
+          "number": 10,
+          "question": "For vertices (0, 0), (4, 0), (2, 3) and (0, 4), the maximum of Z = 3x + 2y is attained at",
+          "options": ["(0, 0) only", "(0, 4) only", "both (4, 0) and (2, 3)", "all four vertices"]
+        },
+        {
+          "number": 11,
+          "question": "For a feasible region whose only vertices are (1, 4), (3, 1) and (5, 0), the values of Z = x + 2y are 9, 5 and 5. The minimum is attained",
+          "options": ["only at (1, 4)", "at every point of the edge joining (3, 1) and (5, 0)", "only at (3, 1)", "only at (5, 0)"]
+        },
+        {
+          "number": 12,
+          "question": "Product P uses 2 machine-hours and product Q uses 3 machine-hours. At most 60 machine-hours are available. If x and y are their quantities, the constraint is",
+          "options": ["2x + 3y ≤ 60", "2x + 3y ≥ 60", "3x + 2y ≤ 60", "2x + 3y = 60"]
+        },
+        {
+          "number": 13,
+          "question": "For x ≥ 0 and y ≥ 0 subject to x + y ≤ 5, x ≤ 3 and y ≤ 4, which point is a corner point of the feasible region?",
+          "options": ["(4, 1)", "(3, 3)", "(1, 5)", "(3, 2)"]
+        },
+        {
+          "number": 14,
+          "question": "An optimal feasible solution is a feasible point that",
+          "options": ["lies outside every boundary", "makes every variable zero", "gives the required best value of the objective function", "must have integral coordinates"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "If a linear objective function has a finite optimum over a non-empty polygonal feasible region, an optimum occurs at a corner point.",
+          "reason": "The corner-point principle permits the objective function to be tested at the vertices of the feasible region."
+        },
+        {
+          "number": 16,
+          "assertion": "Every unbounded feasible region gives an unbounded value of the objective function.",
+          "reason": "An objective function can have a finite maximum or minimum over an unbounded feasible region, depending on its direction of improvement."
+        }
+      ],
+      "questionVisuals": { "10": "lpp-feasible-region" },
+      "written": {
+        "17": "Check whether (2, 3) is feasible for x + y ≤ 6, x + 2y ≥ 7, x ≥ 0 and y ≥ 0. If it is feasible, find Z = 4x + y there.",
+        "18": "A workshop makes x chairs and y tables. A chair needs 2 units of wood and 3 labour-hours; a table needs 4 units of wood and 2 labour-hours. At most 40 units of wood and 30 labour-hours are available. Write the constraints and the objective function for maximising profit if profits are ₹200 per chair and ₹300 per table.",
+        "19": "A boundary line is 2x + y = 8, the feasible side contains the origin, and x, y ≥ 0. Write all constraints and find the intercepts of the boundary line.",
+        "20": "Solve graphically: maximise Z = 3x + 2y subject to x + y ≤ 4, x ≤ 2, y ≤ 3, x ≥ 0 and y ≥ 0. State the feasible vertices and the optimal solution.",
+        "21": "Solve graphically: minimise Z = x + 2y subject to x + y ≥ 4, x + 3y ≥ 6, x ≥ 0 and y ≥ 0. Explain why the unbounded feasible region still has a finite minimum.",
+        "22": "Maximise Z = 2x + 4y subject to x + 2y ≤ 8, x + y ≤ 6, x ≥ 0 and y ≥ 0. Identify every optimal solution and explain its graphical meaning.",
+        "23": [
+          "A workshop makes products A and B. Each unit of A uses 2 machine-hours and 1 labour-hour; each unit of B uses 1 machine-hour and 2 labour-hours. At most 100 machine-hours and 80 labour-hours are available. Profit is ₹300 on A and ₹400 on B.",
+          "Formulate the linear programming problem and solve it graphically to find the production plan and maximum profit."
+        ],
+        "24": [
+          "(a) Write the two resource constraints, including non-negativity. [1]",
+          "(b) List the corner points of the feasible region. [1]",
+          "(c) Find the maximum daily profit and explain why there are multiple optimal plans. [2]"
+        ]
+      },
+      "caseStudy": "A bakery prepares x standard hampers and y premium hampers daily. Packing capacity gives x + y ≤ 50, while ingredient points give 2x + 3y ≤ 120. Both quantities are non-negative. Profit is ₹40 per standard hamper and ₹60 per premium hamper. On a graph, the feasible region is the common first-quadrant region below both boundary lines.",
+      "answerKey": [1, 0, 2, 3, 0, 1, 2, 3, 0, 2, 1, 0, 3, 2, 0, 3],
+      "solutions": {
+        "17": "At (2, 3), x + y = 5 ≤ 6, x + 2y = 8 ≥ 7, and both coordinates are non-negative. The point is feasible. Its objective value is Z = 4(2) + 3 = 11.",
+        "18": "Let x and y denote the numbers of chairs and tables. Wood gives 2x + 4y ≤ 40, while labour gives 3x + 2y ≤ 30. Also x ≥ 0 and y ≥ 0. The objective is to maximise Z = 200x + 300y.",
+        "19": "Because the origin gives 0 ≤ 8, the selected half-plane is 2x + y ≤ 8. Together with the first-quadrant conditions, the constraints are 2x + y ≤ 8, x ≥ 0 and y ≥ 0. Setting y = 0 gives x = 4, and setting x = 0 gives y = 8, so the intercepts are (4, 0) and (0, 8).",
+        "20": "The boundary lines and axes enclose the vertices (0, 0), (2, 0), (2, 2), (1, 3) and (0, 3). The corresponding values of Z = 3x + 2y are 0, 6, 10, 9 and 6. Hence the maximum value is 10 at (2, 2). A correct graph shades the common region left of x = 2, below y = 3 and below x + y = 4 in the first quadrant.",
+        "21": "The lower boundary of the unbounded feasible region has vertices (6, 0), (3, 1) and (0, 4). The intersection (3, 1) follows from x + y = 4 and x + 3y = 6. Values of Z are 6, 5 and 8 respectively. Thus the minimum is 5 at (3, 1). Although the region extends indefinitely upward and to the right, Z = x + 2y increases in those directions, so no distant feasible point produces a smaller value.",
+        "22": "The feasible vertices are (0, 0), (6, 0), (4, 2) and (0, 4). The values of Z are 0, 12, 16 and 16. Moreover Z = 2(x + 2y), so every point on the feasible boundary segment x + 2y = 8 from (4, 2) to (0, 4) gives Z = 16. Graphically, the objective line at its farthest feasible position coincides with that entire edge.",
+        "23": "Let x and y be the quantities of A and B. The constraints are 2x + y ≤ 100, x + 2y ≤ 80, x ≥ 0 and y ≥ 0, and the objective is to maximise Z = 300x + 400y. The feasible vertices are (0, 0), (50, 0), (40, 20) and (0, 40); the middle point solves 2x + y = 100 and x + 2y = 80. The profit values are ₹0, ₹15,000, ₹20,000 and ₹16,000. Therefore the workshop should make 40 units of A and 20 units of B for a maximum profit of ₹20,000.",
+        "24": "(a) The constraints are x + y ≤ 50, 2x + 3y ≤ 120, x ≥ 0 and y ≥ 0. (b) The feasible vertices are (0, 0), (50, 0), (30, 20) and (0, 40). The intersection (30, 20) comes from solving x + y = 50 and 2x + 3y = 120. (c) For Z = 40x + 60y, the vertex values are ₹0, ₹2,000, ₹2,400 and ₹2,400. Since Z = 20(2x + 3y), every feasible point on the edge 2x + 3y = 120 from (30, 20) to (0, 40) yields the maximum ₹2,400, so there are infinitely many optimal production plans along that segment."
+      }
+    },
+    {
+      "id": "g12-probability-01",
+      "chapter": "Probability",
+      "chapterNumber": 13,
+      "paperNumber": "01",
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "focus": "Distinguish conditional probability from independence, apply multiplication and total-probability rules, and reverse conditioning correctly with Bayes’ theorem.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "For P(B) > 0, P(A | B) equals",
+          "options": ["P(A ∩ B)/P(B)", "P(A ∪ B)/P(B)", "P(A)/P(B)", "P(B | A)"]
+        },
+        {
+          "number": 2,
+          "question": "The multiplication theorem gives P(A ∩ B) as",
+          "options": ["P(A) + P(B)", "P(A)P(B)", "P(A)P(B | A)", "P(A | B)/P(B)"]
+        },
+        {
+          "number": 3,
+          "question": "Events A and B with positive probabilities are independent exactly when",
+          "options": ["P(A ∩ B) = 0", "P(A ∩ B) = P(A)P(B)", "P(A | B) = 0", "P(A ∪ B) = 1"]
+        },
+        {
+          "number": 4,
+          "question": "Two mutually exclusive events having positive probabilities are",
+          "options": ["always independent", "always equally likely", "complementary", "never independent"]
+        },
+        {
+          "number": 5,
+          "question": "If A and B are independent, P(A) = ½ and P(B) = ⅓, then P(A ∩ B) is",
+          "options": ["⅙", "⅕", "⅔", "⅚"]
+        },
+        {
+          "number": 6,
+          "question": "For the events in Question 5, P(A ∪ B) is",
+          "options": ["⅙", "½", "⅔", "⅚"]
+        },
+        {
+          "number": 7,
+          "question": "If P(A ∩ B) = ⅕ and P(B) = ½, then P(A | B) is",
+          "options": ["⅕", "⅖", "½", "⅗"]
+        },
+        {
+          "number": 8,
+          "question": "If B₁, B₂ and B₃ form a partition of the sample space, then P(A) equals",
+          "options": ["P(B₁) + P(B₂) + P(B₃)", "P(A | B₁) + P(A | B₂) + P(A | B₃)", "P(A ∩ B₁)P(A ∩ B₂)P(A ∩ B₃)", "Σ P(Bᵢ)P(A | Bᵢ), for i = 1, 2, 3"]
+        },
+        {
+          "number": 9,
+          "question": "Bayes’ theorem for a partition B₁, B₂, …, Bₙ gives P(Bⱼ | A) as",
+          "options": ["P(Bⱼ)P(A | Bⱼ)/ΣP(Bᵢ)P(A | Bᵢ)", "P(A)P(Bⱼ | A)", "P(A | Bⱼ)/P(Bⱼ)", "P(Bⱼ)/P(A)"]
+        },
+        {
+          "number": 10,
+          "question": "For P(B) > 0, P(A′ | B) equals",
+          "options": ["P(A | B)", "1 − P(A | B)", "1 − P(B | A)", "P(A′)/P(B)"]
+        },
+        {
+          "number": 11,
+          "question": "When two cards are drawn successively from a deck without replacement, the events describing the two card types are generally",
+          "options": ["impossible", "mutually exclusive", "dependent", "independent"]
+        },
+        {
+          "number": 12,
+          "question": "If A and B are independent, the probability that at least one occurs is",
+          "options": ["P(A)P(B)", "P(A) + P(B)", "1 − P(A)P(B)", "1 − [1 − P(A)][1 − P(B)]"]
+        },
+        {
+          "number": 13,
+          "question": "If A and B are independent, then",
+          "options": ["A′ and B are independent", "A and B are mutually exclusive", "P(A | B) = 0", "P(A ∩ B) = P(A) + P(B)"]
+        },
+        {
+          "number": 14,
+          "question": "A condition affects 1% of a population. A test is positive for 90% of affected people and for 10% of unaffected people. The probability that a person with a positive result is affected is",
+          "options": ["1/10", "9/100", "1/12", "9/10"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "Two mutually exclusive events with positive probabilities cannot be independent.",
+          "reason": "Their intersection has probability 0, whereas the product of their positive probabilities is greater than 0."
+        },
+        {
+          "number": 16,
+          "assertion": "P(A | B) = P(B | A) for every pair of events with positive probabilities.",
+          "reason": "P(A | B) = P(A ∩ B)/P(B), while P(B | A) = P(A ∩ B)/P(A)."
+        }
+      ],
+      "written": {
+        "17": "Given P(A) = 0.6, P(B) = 0.5 and P(A ∩ B) = 0.3, find P(A | B) and determine whether A and B are independent.",
+        "18": "A bag contains 5 red and 3 blue balls. Two balls are drawn successively without replacement. Find the probability that both are red.",
+        "19": "Independent events A and B satisfy P(A) = ⅔ and P(B) = ¼. Find the probability that exactly one of them occurs.",
+        "20": "Factory X supplies 60% of a company’s components and Factory Y supplies 40%. Their defect rates are 2% and 5% respectively. Find the probability that a randomly selected component is defective.",
+        "21": "Using the data in Question 20, find the probability that a defective component came from Factory Y.",
+        "22": "Two cards are drawn together from a standard deck of 52 cards. Find the probability that one is an ace and the other is a king.",
+        "23": [
+          "One of three boxes is chosen with probabilities ½, ⅓ and ⅙. Box I contains 2 red and 3 blue balls, Box II contains 4 red and 1 blue ball, and Box III contains 3 red and 2 blue balls. One ball is drawn from the chosen box.",
+          "(a) Find the probability that the ball is red.",
+          "(b) Given that it is red, find the probability that Box II was chosen.",
+          "(c) Given that it is red, find the probability that Box I or Box III was chosen."
+        ],
+        "24": [
+          "(a) Find P(D ∩ +), the probability that a person has the condition and tests positive. [1]",
+          "(b) Find the overall probability of a positive result. [1]",
+          "(c) Given a positive result, find the probability that the person actually has the condition. Interpret the result. [2]"
+        ]
+      },
+      "caseStudy": "A screening programme studies a condition present in 2% of a population. The test is positive for 95% of people who have the condition. It also gives a positive result for 4% of people who do not have the condition. Let D denote having the condition and + denote a positive result.",
+      "answerKey": [0, 2, 1, 3, 0, 2, 1, 3, 0, 1, 2, 3, 0, 2, 0, 3],
+      "solutions": {
+        "17": "P(A | B) = P(A ∩ B)/P(B) = 0.3/0.5 = 0.6. Also P(A)P(B) = 0.6×0.5 = 0.3 = P(A ∩ B). Hence A and B are independent.",
+        "18": "The first red ball has probability ⅝. After it is removed, 4 red balls remain among 7 balls, so P(second red | first red) = ⁴⁄₇. Therefore P(both red) = ⅝×⁴⁄₇ = ⁵⁄₁₄.",
+        "19": "Exactly one occurs through A ∩ B′ or A′ ∩ B. By independence, the probability is (⅔)(¾) + (⅓)(¼) = ½ + ¹⁄₁₂ = ⁷⁄₁₂.",
+        "20": "Let D be the event that a component is defective. By total probability, P(D) = P(X)P(D | X) + P(Y)P(D | Y) = 0.60(0.02) + 0.40(0.05) = 0.012 + 0.020 = 0.032 = ⁴⁄₁₂₅.",
+        "21": "By Bayes’ theorem, P(Y | D) = P(Y)P(D | Y)/P(D) = 0.40(0.05)/0.032 = 0.020/0.032 = ⅝.",
+        "22": "There are C(52, 2) = 1326 unordered pairs of cards. A favourable pair is formed by choosing 1 of 4 aces and 1 of 4 kings, giving 4×4 = 16 pairs. Hence the probability is 16/1326 = ⁸⁄₆₆₃.",
+        "23": "Let R denote a red ball. By total probability, P(R) = (½)(⅖) + (⅓)(⅘) + (⅙)(⅗) = ⅕ + ⁴⁄₁₅ + ¹⁄₁₀ = ¹⁷⁄₃₀. For Box II, P(II | R) = [(⅓)(⅘)]/(¹⁷⁄₃₀) = (⁴⁄₁₅)(³⁰⁄₁₇) = ⁸⁄₁₇. The joint probability of choosing Box I or III and obtaining red is ⅕ + ¹⁄₁₀ = ³⁄₁₀, so P(I or III | R) = (³⁄₁₀)/(¹⁷⁄₃₀) = ⁹⁄₁₇.",
+        "24": "(a) P(D ∩ +) = P(D)P(+ | D) = 0.02×0.95 = 0.019. (b) P(+) = 0.02(0.95) + 0.98(0.04) = 0.019 + 0.0392 = 0.0582. (c) By Bayes’ theorem, P(D | +) = 0.019/0.0582 = ⁹⁵⁄₂₉₁ ≈ 0.3265. Thus only about 32.65% of positive results represent people who actually have the condition; the lower value is caused by false positives in the much larger unaffected group."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "slug": "g12-vector-algebra",
+      "chapter": "Vector Algebra",
+      "number": 10,
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "subtitle": "Components, Products, Projections & Areas",
+      "concepts": [
+        {
+          "title": "Vectors and components",
+          "text": "A vector has magnitude and direction. In three dimensions, a⃗ = a₁î + a₂ĵ + a₃k̂ and |a⃗| = √(a₁² + a₂² + a₃²). Equal vectors have equal corresponding components."
+        },
+        {
+          "title": "Position and section vectors",
+          "text": "The position vector locates a point from the origin. If P divides AB internally in the ratio m : n, then OP⃗ is the weighted average [mOB⃗ + nOA⃗]/(m + n)."
+        },
+        {
+          "title": "Scalar product",
+          "text": "The dot product measures directional alignment. It finds angles, tests perpendicularity, and gives scalar or vector projections."
+        },
+        {
+          "title": "Vector product",
+          "text": "The cross product is perpendicular to both factors. Its magnitude is the area of the parallelogram determined by the vectors; half of it is the corresponding triangle area."
+        }
+      ],
+      "formulas": [
+        "|a⃗| = √(a₁² + a₂² + a₃²); a unit vector along a⃗ is a⃗/|a⃗|",
+        "If AP : PB = m : n, OP⃗ = [mOB⃗ + nOA⃗]/(m + n)",
+        "a⃗ · b⃗ = |a⃗||b⃗| cos θ = a₁b₁ + a₂b₂ + a₃b₃",
+        "Scalar projection of a⃗ on b⃗ = (a⃗ · b⃗)/|b⃗|",
+        "Vector projection of a⃗ on b⃗ = [(a⃗ · b⃗)/|b⃗|²]b⃗",
+        "|a⃗ × b⃗| = |a⃗||b⃗| sin θ",
+        "Parallelogram area = |a⃗ × b⃗|; triangle area = ½|a⃗ × b⃗|",
+        "î × ĵ = k̂, ĵ × k̂ = î, k̂ × î = ĵ; reversing the order changes the sign"
+      ],
+      "method": [
+        "Write every vector in component form and preserve the order of coordinates.",
+        "Choose the dot product for angles, perpendicularity and projection; choose the cross product for a common perpendicular or area.",
+        "For a division point, identify which weight multiplies each endpoint before substituting.",
+        "Check a result through magnitude, direction and units; a unit vector must have magnitude 1."
+      ],
+      "example": {
+        "question": "Find the area of the triangle whose adjacent side vectors are a⃗ = î + ĵ and b⃗ = î + k̂.",
+        "steps": [
+          "Compute a⃗ × b⃗ = (î + ĵ) × (î + k̂) = î − ĵ − k̂.",
+          "Its magnitude is √(1 + 1 + 1) = √3.",
+          "A triangle has half the area of the parallelogram on the same two vectors."
+        ],
+        "answer": "Area = √3/2 square units."
+      },
+      "practice": [
+        {
+          "question": "Find the magnitude of 3î − 4ĵ + 12k̂.",
+          "answer": "13",
+          "marks": 2
+        },
+        {
+          "question": "Find a unit vector along 2î − 2ĵ + k̂.",
+          "answer": "⅓(2î − 2ĵ + k̂)",
+          "marks": 2
+        },
+        {
+          "question": "Find the angle between î + ĵ and î − ĵ.",
+          "answer": "π/2",
+          "marks": 2
+        },
+        {
+          "question": "Find the projection of 2î + 3ĵ on î + ĵ.",
+          "answer": "Scalar projection = 5/√2; vector projection = ⁵⁄₂(î + ĵ).",
+          "marks": 3
+        },
+        {
+          "question": "Find the area of the parallelogram on î + 2ĵ and 2î + k̂.",
+        "answer": "√21 square units",
+          "marks": 3
+        },
+        {
+          "question": "A(1, 2, −1), B(7, −1, 5); find the point dividing AB internally in the ratio 2 : 1.",
+          "answer": "(5, 0, 3)",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "The dot product is a scalar; the cross product is a vector.",
+        "For b⃗ × a⃗, reverse the sign of a⃗ × b⃗.",
+        "Use |b⃗|², not |b⃗|, in the vector-projection formula.",
+        "Scalar triple product and equations of planes are outside the current chapter scope."
+      ]
+    },
+    {
+      "slug": "g12-three-dimensional-geometry",
+      "chapter": "Three Dimensional Geometry",
+      "number": 11,
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "subtitle": "Lines, Angles, Intersections & Shortest Distance",
+      "concepts": [
+        {
+          "title": "Direction ratios and cosines",
+          "text": "Any non-zero proportional triple gives direction ratios of a line. Dividing a direction vector by its magnitude gives direction cosines l, m and n satisfying l² + m² + n² = 1."
+        },
+        {
+          "title": "Equation of a line",
+          "text": "A line through position vector a⃗ and parallel to b⃗ is r⃗ = a⃗ + λb⃗. Component equations lead directly to its Cartesian symmetric form."
+        },
+        {
+          "title": "Relative position of lines",
+          "text": "Proportional directions give parallel or coincident lines. Non-proportional lines may intersect if their component equations have a common solution; otherwise they may be skew."
+        },
+        {
+          "title": "Shortest distance",
+          "text": "The shortest joining segment is perpendicular to both line directions. A cross product supplies the common perpendicular direction and leads to compact distance formulas."
+        }
+      ],
+      "formulas": [
+        "Line through a⃗ parallel to b⃗: r⃗ = a⃗ + λb⃗",
+        "Cartesian form: (x − x₁)/a = (y − y₁)/b = (z − z₁)/c",
+        "cos θ = |b⃗₁ · b⃗₂|/(|b⃗₁||b⃗₂|) for the acute angle between two lines",
+        "Parallel-line distance = |(a⃗₂ − a⃗₁) × b⃗|/|b⃗|",
+        "Non-parallel-line distance = |(a⃗₂ − a⃗₁) · (b⃗₁ × b⃗₂)|/|b⃗₁ × b⃗₂|",
+        "Lines are coplanar when (a⃗₂ − a⃗₁) · (b⃗₁ × b⃗₂) = 0"
+      ],
+      "method": [
+        "Extract one point and one direction vector from each line.",
+        "First test whether the direction vectors are proportional.",
+        "For a possible intersection, equate components and solve the parameters consistently.",
+        "For shortest distance, use the parallel or non-parallel formula only after classifying the lines."
+      ],
+      "example": {
+        "question": "Find the shortest distance between r⃗ = λ(î + ĵ) and r⃗ = k̂ + μ(î + ĵ).",
+        "steps": [
+          "The common direction is b⃗ = î + ĵ, so the lines are parallel.",
+          "The difference between chosen points is d⃗ = k̂.",
+          "d⃗ × b⃗ = −î + ĵ, whose magnitude is √2; |b⃗| = √2."
+        ],
+        "answer": "Shortest distance = √2/√2 = 1 unit."
+      },
+      "practice": [
+        {
+          "question": "Write the direction cosines for direction ratios 1, 2, 2.",
+          "answer": "⅓, ⅔, ⅔",
+          "marks": 2
+        },
+        {
+          "question": "Write the line through (1, −2, 3) parallel to 2î + ĵ − k̂.",
+          "answer": "r⃗ = î − 2ĵ + 3k̂ + λ(2î + ĵ − k̂)",
+          "marks": 2
+        },
+        {
+          "question": "Find the angle between directions (1, 1, 0) and (1, −1, 0).",
+          "answer": "π/2",
+          "marks": 2
+        },
+        {
+          "question": "Check whether r⃗ = λ(î + ĵ) and r⃗ = î + ĵ + μ(î − ĵ) intersect.",
+        "answer": "They intersect at î + ĵ, the point (1, 1, 0).",
+          "marks": 3
+        },
+        {
+          "question": "Find the distance between r⃗ = λî and r⃗ = ĵ + μî.",
+          "answer": "1 unit",
+          "marks": 3
+        },
+        {
+          "question": "Find the foot from (1, 1, 1) to r⃗ = λ(î + ĵ + k̂).",
+          "answer": "The point already lies on the line, so the foot is (1, 1, 1) and the distance is 0.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Direction ratios are not unique; direction cosines are normalised ratios with a chosen orientation.",
+        "Use the same parameter within one line but different parameters for different lines.",
+        "A zero shortest distance for non-parallel lines means they intersect.",
+        "Equations of planes and angles involving planes are outside the current syllabus."
+      ]
+    },
+    {
+      "slug": "g12-linear-programming",
+      "chapter": "Linear Programming",
+      "number": 12,
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "subtitle": "Constraints, Feasible Regions & Optimisation",
+      "concepts": [
+        {
+          "title": "Decision variables and objective",
+          "text": "Decision variables represent the unknown quantities. The objective function is a linear expression whose maximum or minimum models the stated goal."
+        },
+        {
+          "title": "Constraints and half-planes",
+          "text": "Each linear inequality selects one side of its boundary line. Non-negativity conditions usually restrict the model to the first quadrant."
+        },
+        {
+          "title": "Feasible region",
+          "text": "The feasible region is the intersection of all selected half-planes. It may be bounded, unbounded or empty; every feasible solution lies in or on it."
+        },
+        {
+          "title": "Corner-point principle",
+          "text": "When a finite optimum exists, at least one corner point attains it. Equal optimum values at adjacent vertices make every point on their joining edge optimal."
+        }
+      ],
+      "formulas": [
+        "Objective function: Z = ax + by",
+        "A boundary line is obtained by replacing ≤ or ≥ in a constraint by =",
+        "Feasible region = common intersection of all constraint half-planes",
+        "At each corner (x, y), objective value = ax + by",
+        "Equal optimum values at adjacent vertices imply multiple optimal solutions along that edge"
+      ],
+      "method": [
+        "Define the decision variables and state that they are non-negative.",
+        "Translate every resource or demand statement into a linear inequality.",
+        "Draw each boundary line from reliable intercepts and test a point to choose its half-plane.",
+        "List the feasible corner points, evaluate the objective at each, and interpret the best value in context."
+      ],
+      "example": {
+        "question": "Maximise Z = 3x + 2y subject to x + y ≤ 4, x ≤ 2, x ≥ 0 and y ≥ 0.",
+        "steps": [
+          "The feasible vertices are (0, 0), (2, 0), (2, 2) and (0, 4).",
+          "The corresponding values of Z are 0, 6, 10 and 8.",
+          "The greatest value occurs at (2, 2)."
+        ],
+        "answer": "Maximum Z = 10 at (2, 2)."
+      },
+      "practice": [
+        {
+          "question": "Test whether (2, 1) satisfies x + 2y ≤ 5, x ≥ 0, y ≥ 0.",
+          "answer": "Yes; 2 + 2(1) = 4 ≤ 5.",
+          "marks": 2
+        },
+        {
+          "question": "Write the constraint: each item uses 3 hours and at most 48 hours are available.",
+          "answer": "3x ≤ 48, with x ≥ 0.",
+          "marks": 2
+        },
+        {
+          "question": "Find the intercepts of 2x + 3y = 12.",
+          "answer": "(6, 0) and (0, 4)",
+          "marks": 2
+        },
+        {
+          "question": "Maximise Z = x + y over vertices (0, 0), (4, 0), (2, 3), (0, 2).",
+          "answer": "Maximum 5 at (2, 3).",
+          "marks": 3
+        },
+        {
+          "question": "Explain what an empty feasible region means.",
+          "answer": "The constraints are inconsistent, so no feasible solution exists.",
+          "marks": 3
+        },
+        {
+          "question": "Maximise Z = 2x + 4y subject to x + 2y ≤ 8, x + y ≤ 6, x, y ≥ 0.",
+          "answer": "Maximum 16 at every point on the segment from (4, 2) to (0, 4).",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "A boundary line is not the feasible region; shade only the common side of every constraint.",
+        "An unbounded feasible region does not automatically mean that no finite optimum exists.",
+        "Check all feasible vertices, including intersections with the axes.",
+        "The graphical syllabus uses two variables and at most three non-trivial constraints; simplex methods are outside scope."
+      ]
+    },
+    {
+      "slug": "g12-probability",
+      "chapter": "Probability",
+      "number": 13,
+      "board": "CBSE",
+      "grade": 12,
+      "book": "Mathematics Part II",
+      "subtitle": "Conditional Probability, Independence & Bayes’ Theorem",
+      "concepts": [
+        {
+          "title": "Conditional probability",
+          "text": "P(A | B) measures the chance of A after learning that B occurred. The conditioning event becomes the reduced sample space and must have positive probability."
+        },
+        {
+          "title": "Multiplication and independence",
+          "text": "The multiplication theorem builds an intersection through conditional probability. Independent events leave each other’s probabilities unchanged."
+        },
+        {
+          "title": "Total probability",
+          "text": "A partition breaks the sample space into disjoint exhaustive cases. Add the probability of reaching the event through each case."
+        },
+        {
+          "title": "Bayes’ theorem",
+          "text": "Bayes’ theorem reverses conditioning. It updates the prior probability of each cause after observing a result."
+        }
+      ],
+      "formulas": [
+        "P(A | B) = P(A ∩ B)/P(B), where P(B) > 0",
+        "P(A ∩ B) = P(A)P(B | A) = P(B)P(A | B)",
+        "A and B independent ⇔ P(A ∩ B) = P(A)P(B)",
+        "For a partition B₁, …, Bₙ: P(A) = ΣP(Bᵢ)P(A | Bᵢ)",
+        "P(Bⱼ | A) = P(Bⱼ)P(A | Bⱼ)/ΣP(Bᵢ)P(A | Bᵢ)",
+        "P(A′ | B) = 1 − P(A | B)"
+      ],
+      "method": [
+        "Name the events and identify clearly which event is conditioned on which.",
+        "Draw a probability tree when an experiment occurs in stages or through several sources.",
+        "Use total probability to find the overall observed-event probability before applying Bayes’ theorem.",
+        "Check that branch probabilities sum to 1 and that the final answer lies from 0 to 1."
+      ],
+      "example": {
+        "question": "A factory supplies 70% of items with a 2% defect rate; another supplies 30% with a 5% defect rate. Given a defect, find the probability it came from the second factory.",
+        "steps": [
+          "P(D) = 0.70(0.02) + 0.30(0.05) = 0.029.",
+          "P(second factory ∩ D) = 0.30(0.05) = 0.015.",
+          "Apply Bayes’ theorem: 0.015/0.029."
+        ],
+        "answer": "P(second factory | defect) = 15/29."
+      },
+      "practice": [
+        {
+          "question": "If P(A ∩ B) = 0.2 and P(B) = 0.5, find P(A | B).",
+          "answer": "0.4",
+          "marks": 2
+        },
+        {
+          "question": "Independent A and B have probabilities ½ and ⅕. Find P(A ∩ B).",
+          "answer": "¹⁄₁₀",
+          "marks": 2
+        },
+        {
+          "question": "A bag has 4 red and 6 blue balls. Find P(second red | first red) without replacement.",
+          "answer": "⅓",
+          "marks": 2
+        },
+        {
+          "question": "Sources X and Y supply ¾ and ¼ of items; defect rates are 2% and 6%. Find P(defect).",
+          "answer": "0.03",
+          "marks": 3
+        },
+        {
+          "question": "Using the previous data, find P(Y | defect).",
+          "answer": "½",
+          "marks": 3
+        },
+        {
+          "question": "Two cards are drawn without replacement. Find the probability both are aces.",
+          "answer": "¹⁄₂₂₁",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "P(A | B) and P(B | A) are generally different.",
+        "Mutually exclusive positive-probability events are not independent.",
+        "Without replacement usually creates dependence; with replacement often restores independence.",
+        "Random variables and probability distributions are outside the current CBSE chapter scope."
+      ]
+    }
+  ]
+}

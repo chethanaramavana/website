@@ -1,13 +1,16 @@
 import type { ChapterNotes } from './chapter-notes';
+import partA from './grade12-part-a.json';
+import partB from './grade12-part-b.json';
+import partC from './grade12-part-c.json';
 
 const note = (value: ChapterNotes): ChapterNotes => ({
   ...value,
+  board: 'CBSE',
   grade: 12,
-  book: 'NCERT Mathematics Part II',
+  book: value.book?.startsWith('NCERT ') ? value.book : `NCERT ${value.book ?? 'Mathematics Part II'}`,
 });
 
-export const grade12Notes: ChapterNotes[] = [
-  note({
+const integralsNotes = note({
     slug: 'g12-integrals',
     chapter: 'Integrals',
     number: 7,
@@ -57,5 +60,13 @@ export const grade12Notes: ChapterNotes[] = [
       'In integration by parts, choose u so that differentiating it makes the remaining integral simpler.',
       'Use absolute-value signs with logarithms obtained from ∫ dx/x.',
     ],
-  }),
-];
+  });
+
+const importedNotes = [
+  ...partA.notes,
+  ...partB.notes,
+  ...partC.notes,
+] as unknown as ChapterNotes[];
+
+export const grade12Notes: ChapterNotes[] = [...importedNotes.map(note), integralsNotes]
+  .sort((first, second) => first.number - second.number);

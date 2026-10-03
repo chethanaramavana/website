@@ -1,11 +1,15 @@
 import type { PaperDefinition } from './papers';
+import partA from './grade12-part-a.json';
+import partB from './grade12-part-b.json';
+import partC from './grade12-part-c.json';
 
-type ChapterSeed = Omit<PaperDefinition, 'grade' | 'book' | 'paperNumber'> & {
+type ChapterSeed = Omit<PaperDefinition, 'paperNumber'> & {
+  paperNumber?: string;
   answerKey: number[];
   solutions: Record<number, string>;
 };
 
-const seeds: ChapterSeed[] = [
+const integralsSeed: ChapterSeed =
   {
     id: 'g12-integrals-01',
     chapter: 'Integrals',
@@ -65,15 +69,24 @@ const seeds: ChapterSeed[] = [
       23: 'Replace x by π/2 − x. Then I = ∫₀^(π/2) (π/2 − x)/(sin x + cos x)² dx. Adding this to the original expression gives 2I = (π/2)J, where J = ∫₀^(π/2) dx/(sin x + cos x)². Since sin x + cos x = √2 cos(x − π/4), J = ½[tan(x − π/4)]₀^(π/2) = 1. Therefore, I = π/4.',
       24: '(a) By the Fundamental Theorem of Calculus, F′(x) = 3x² − 4x + 2. (b) F(0) = 0. (c) An antiderivative is t³ − 2t² + 2t. Thus F(2) = 4, F(1) = 1, and F(2) − F(1) = 3.',
     },
-  },
-];
+  };
+
+const importedSeeds = [
+  ...partA.papers,
+  ...partB.papers,
+  ...partC.papers,
+] as unknown as ChapterSeed[];
+
+const seeds = [...importedSeeds, integralsSeed]
+  .sort((first, second) => first.chapterNumber - second.chapterNumber);
 
 export const grade12PaperDefinitions: Record<string, PaperDefinition> = Object.fromEntries(
-  seeds.map(({ answerKey: _answerKey, solutions: _solutions, ...paper }) => [paper.chapter, {
+  seeds.map(({ answerKey: _answerKey, solutions: _solutions, ...paper }) => [paper.id, {
     ...paper,
+    board: 'CBSE' as const,
     grade: 12,
-    book: 'NCERT Mathematics Part II',
-    paperNumber: '01',
+    book: paper.book?.startsWith('NCERT ') ? paper.book : `NCERT ${paper.book ?? 'Mathematics Part II'}`,
+    paperNumber: paper.paperNumber ?? '01',
   }]),
 );
 

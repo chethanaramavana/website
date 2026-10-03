@@ -5,7 +5,7 @@ import { paperDefinitionsById } from '../lib/papers';
 const errors: string[] = [];
 const papers = Object.values(paperDefinitionsById);
 
-if (papers.length !== 57) errors.push(`Expected 57 papers, found ${papers.length}.`);
+if (papers.length !== 69) errors.push(`Expected 69 papers, found ${papers.length}.`);
 
 const paperIds = papers.map((paper) => paper.id);
 if (new Set(paperIds).size !== paperIds.length) errors.push('Paper IDs are not unique.');
@@ -77,6 +77,45 @@ for (const paper of papers) {
   }
 }
 
+const grade12Papers = papers
+  .filter((paper) => (paper.board ?? 'CBSE') === 'CBSE' && paper.grade === 12)
+  .sort((first, second) => first.chapterNumber - second.chapterNumber);
+const expectedGrade12Chapters = [
+  'Relations and Functions', 'Inverse Trigonometric Functions', 'Matrices', 'Determinants',
+  'Continuity and Differentiability', 'Applications of Derivatives', 'Integrals',
+  'Applications of Integrals', 'Differential Equations', 'Vector Algebra',
+  'Three Dimensional Geometry', 'Linear Programming', 'Probability',
+];
+if (grade12Papers.length !== 13) errors.push(`Expected 13 CBSE Grade 12 papers, found ${grade12Papers.length}.`);
+for (const [index, chapter] of expectedGrade12Chapters.entries()) {
+  const paper = grade12Papers.find((candidate) => candidate.chapterNumber === index + 1);
+  if (paper?.chapter !== chapter) errors.push(`CBSE Grade 12 Chapter ${index + 1}: expected “${chapter}”, found “${paper?.chapter ?? 'missing'}”.`);
+  if (paper) {
+    const assessment = paperAssessments[paper.id];
+    if (paper.mcqs.length !== 14 || paper.assertions.length !== 2) errors.push(`${paper.id}: expected 14 MCQs and 2 assertion–reason questions.`);
+    if (Object.keys(assessment?.mcqAnswerKey ?? {}).length !== 16) errors.push(`${paper.id}: expected 16 objective answers.`);
+    const content = JSON.stringify(paper);
+    if (/\d\s*\*\s*\d/.test(content) || /<=|>=|!=|\^\d/.test(content)) errors.push(`${paper.id}: contains unformatted ASCII mathematical notation.`);
+  }
+}
+
+const grade12Notes = Object.values(chapterNotesBySlug)
+  .filter((notes) => (notes.board ?? 'CBSE') === 'CBSE' && notes.grade === 12)
+  .sort((first, second) => first.number - second.number);
+if (grade12Notes.length !== 13) errors.push(`Expected 13 CBSE Grade 12 note sets, found ${grade12Notes.length}.`);
+for (const notes of grade12Notes) {
+  if (notes.concepts.length < 4 || notes.formulas.length < 3 || notes.method.length < 4 || notes.practice.length !== 6 || notes.tips.length < 3) {
+    errors.push(`${notes.slug}: Grade 12 notes are missing required concepts, formulae, method steps, practice or tips.`);
+  }
+  const notesText = JSON.stringify(notes);
+  if (/\d\s*\*\s*\d/.test(notesText) || /<=|>=|!=|\^\d/.test(notesText)) errors.push(`${notes.slug}: contains unformatted ASCII mathematical notation.`);
+}
+for (const paper of grade12Papers) {
+  const notesSlug = paper.id.replace(/-01$/, '');
+  const notes = chapterNotesBySlug[notesSlug];
+  if (!notes || notes.chapter !== paper.chapter || notes.number !== paper.chapterNumber) errors.push(`${paper.id}: matching Grade 12 notes are missing or misnumbered.`);
+}
+
 const icseNotes = Object.values(chapterNotesBySlug).filter((notes) => notes.board === 'ICSE');
 if (icseNotes.length !== 18) errors.push(`Expected 18 ICSE Grade 6 note sets, found ${icseNotes.length}.`);
 for (const notes of icseNotes) {
@@ -106,4 +145,5 @@ if (errors.length) {
   console.log(`Validated ${papers.length} papers: ${Object.entries(byBoardAndGrade).map(([group, count]) => `${count} ${group}`).join(', ')}.`);
   console.log(`Checked ${papers.length * 16} objective answers and ${papers.length * 8} written model solutions.`);
   console.log(`Checked ${icseNotes.length} ICSE Grade 6 note sets.`);
+  console.log(`Checked ${grade12Notes.length} CBSE Grade 12 note sets.`);
 }

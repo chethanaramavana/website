@@ -1,0 +1,414 @@
+{
+  "papers": [
+    {
+      "id": "g12-continuity-differentiability-01",
+      "chapter": "Continuity and Differentiability",
+      "chapterNumber": 5,
+      "paperNumber": "01",
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "focus": "Test continuity first, then choose the correct derivative rule for composite, implicit, inverse-trigonometric, logarithmic, exponential or parametric forms; verify second derivatives carefully.",
+      "mcqs": [
+        { "number": 1, "question": "The function f(x) is defined by f(x) = kx + 1 for x ≤ 2 and f(x) = 3x − 1 for x > 2. For f to be continuous at x = 2, k equals", "options": ["1", "2", "3", "4"] },
+        { "number": 2, "question": "At x = 0, the function f(x) = |x| is", "options": ["continuous and differentiable", "continuous but not differentiable", "differentiable but not continuous", "neither continuous nor differentiable"] },
+        { "number": 3, "question": "lim x→0 (e²ˣ − 1)/x equals", "options": ["0", "1", "2", "e²"] },
+        { "number": 4, "question": "If a function is differentiable at x = a, then it must be", "options": ["continuous at x = a", "constant near x = a", "twice differentiable at x = a", "discontinuous at x = a"] },
+        { "number": 5, "question": "d/dx [sin(x²)] is", "options": ["cos(x²)", "2x sin(x²)", "2x cos(x²)", "x² cos x"] },
+        { "number": 6, "question": "d/dx [exp(tan x)] is", "options": ["exp(tan x) sec²x", "exp(tan x) tan x", "eˣ sec²x", "sec²(eˣ)"] },
+        { "number": 7, "question": "d/dx [sin⁻¹(2x)] is", "options": ["1/√(1 − 4x²)", "2/√(1 − 4x²)", "2/√(1 − 2x²)", "−2/√(1 − 4x²)"] },
+        { "number": 8, "question": "For x > −1, d/dx [tan⁻¹((1 − x)/(1 + x))] is", "options": ["1/(1 + x²)", "−1/(1 + x²)", "−2/(1 + x²)", "1/(1 − x²)"] },
+        { "number": 9, "question": "If x² + y² = 25, then dy/dx is", "options": ["x/y", "−x/y", "−y/x", "2x + 2y"] },
+        { "number": 10, "question": "d/dx [log(1 + x²)] is", "options": ["1/(1 + x²)", "2/(1 + x²)", "2x/(1 + x²)", "log(2x)"] },
+        { "number": 11, "question": "For x > 0, if y = xˣ, then dy/dx is", "options": ["xˣ log x", "xˣ(1 + log x)", "xˣ⁻¹", "xˣ(1 + x)"] },
+        { "number": 12, "question": "If x = t² and y = t³ with t ≠ 0, then dy/dx is", "options": ["2t/3", "3t/2", "3t²/2", "t"] },
+        { "number": 13, "question": "If y = eˣ sin x, then d²y/dx² is", "options": ["2eˣ sin x", "2eˣ cos x", "eˣ(sin x + cos x)", "0"] },
+        { "number": 14, "question": "For x > 0, if y = log x, then d²y/dx² is", "options": ["1/x²", "−1/x²", "−1/x", "2/x³"] }
+      ],
+      "assertions": [
+        { "number": 15, "assertion": "Every function differentiable at x = a is continuous at x = a.", "reason": "If f′(a) exists, then lim h→0 [f(a + h) − f(a)] = lim h→0 h·[f(a + h) − f(a)]/h = 0." },
+        { "number": 16, "assertion": "The second derivative of y = ax + b is zero.", "reason": "The first derivative of y = ax + b is the constant a." }
+      ],
+      "written": {
+        "17": "Find k so that f(x) = kx + 2 for x ≤ 1 and f(x) = x² + 2x for x > 1 is continuous at x = 1.",
+        "18": "Differentiate y = tan⁻¹(eˣ) with respect to x.",
+        "19": "If x² + xy + y² = 7, find dy/dx at the point (1, 2).",
+        "20": "Using logarithmic differentiation, find dy/dx when y = (x² + 1)ˣ.",
+        "21": "If x = a cos θ and y = a sin θ, find d²y/dx².",
+        "22": "If y = eˣ(sin x + cos x), find d²y/dx².",
+        "23": ["The function f is defined by f(x) = ax + b for x < 1 and f(x) = x² for x ≥ 1.", "(a) Find a and b so that f is continuous and differentiable at x = 1.", "(b) With these values, examine whether f is twice differentiable at x = 1."],
+        "24": ["(a) Find dx/dθ. [1]", "(b) Find dy/dθ. [1]", "(c) Find dy/dx and d²y/dx² at θ = π/4. [2]"]
+      },
+      "caseStudy": "An architect models an elliptical arch parametrically by x = 4 cos θ and y = 3 sin θ, where 0 < θ < π.",
+      "answerKey": [1, 1, 2, 0, 2, 0, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0],
+      "solutions": {
+        "17": "Continuity at x = 1 requires the left value and right-hand limit to be equal. Thus k + 2 = 1² + 2(1) = 3, so k = 1.",
+        "18": "Let u = eˣ. Since d(tan⁻¹u)/dx = u′/(1 + u²), dy/dx = eˣ/(1 + e²ˣ).",
+        "19": "Differentiate implicitly: 2x + x(dy/dx) + y + 2y(dy/dx) = 0. Hence dy/dx = −(2x + y)/(x + 2y). At (1, 2), dy/dx = −4/5.",
+        "20": "Take logarithms: log y = x log(x² + 1). Differentiating gives (1/y)(dy/dx) = log(x² + 1) + 2x²/(x² + 1). Therefore dy/dx = (x² + 1)ˣ[log(x² + 1) + 2x²/(x² + 1)].",
+        "21": "dy/dx = (dy/dθ)/(dx/dθ) = (a cos θ)/(−a sin θ) = −cot θ. Therefore d²y/dx² = [d(−cot θ)/dθ]/(dx/dθ) = csc²θ/(−a sin θ) = −1/(a sin³θ).",
+        "22": "First, dy/dx = eˣ(sin x + cos x) + eˣ(cos x − sin x) = 2eˣ cos x. Hence d²y/dx² = 2eˣ(cos x − sin x).",
+        "23": "For continuity at x = 1, a + b = 1. The left derivative is a and the right derivative of x² at 1 is 2, so a = 2 and b = −1. With these values f is continuous and differentiable. However, the derivative is 2 for x < 1 and 2x for x > 1. Its left derivative at 1 is 0 while its right derivative is 2, so f is not twice differentiable at x = 1.",
+        "24": "(a) dx/dθ = −4 sin θ. (b) dy/dθ = 3 cos θ. (c) dy/dx = −(3/4)cot θ, so at θ = π/4 the slope is −3/4. Also d²y/dx² = [d(−(3/4)cot θ)/dθ]/(−4 sin θ) = −3/(16 sin³θ). At θ = π/4 this is −3√2/8."
+      }
+    },
+    {
+      "id": "g12-applications-derivatives-01",
+      "chapter": "Applications of Derivatives",
+      "chapterNumber": 6,
+      "paperNumber": "01",
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "focus": "Translate changing quantities before differentiating, use derivative signs to identify monotonicity, and justify extrema with the first- or second-derivative test.",
+      "mcqs": [
+        { "number": 1, "question": "The radius of a circle increases at 2 cm/s. When r = 5 cm, its area increases at", "options": ["10π cm²/s", "20π cm²/s", "25π cm²/s", "40π cm²/s"] },
+        { "number": 2, "question": "The radius of a sphere increases at 0.1 cm/s. When r = 3 cm, its volume increases at", "options": ["9π/10 cm³/s", "9π/5 cm³/s", "18π/5 cm³/s", "36π/5 cm³/s"] },
+        { "number": 3, "question": "The function f(x) = x³ − 3x is increasing on", "options": ["(−1, 1)", "(−∞, −1) ∪ (1, ∞)", "(−∞, 1)", "(−1, ∞)"] },
+        { "number": 4, "question": "The function f(x) = x/(1 + x²) is decreasing on", "options": ["(−1, 1)", "(−∞, −1) ∪ (1, ∞)", "(0, ∞)", "(−∞, ∞)"] },
+        { "number": 5, "question": "For f(x) = x³ − 6x² + 9x, the local maximum value is", "options": ["0", "1", "3", "4"] },
+        { "number": 6, "question": "For f(x) = x³ − 6x² + 9x, the local minimum occurs at", "options": ["x = 0", "x = 1", "x = 2", "x = 3"] },
+        { "number": 7, "question": "For x > 0, the critical point of f(x) = x + 1/x is", "options": ["x = 1/2", "x = 1", "x = 2", "x = 4"] },
+        { "number": 8, "question": "For f(x) = x⁴, the second-derivative test at x = 0 is", "options": ["conclusive for a maximum", "conclusive for a minimum", "inconclusive", "not applicable because f′(0) ≠ 0"] },
+        { "number": 9, "question": "The absolute minimum of f(x) = x² − 4x + 5 on [0, 3] is", "options": ["0", "1", "2", "5"] },
+        { "number": 10, "question": "The absolute maximum of f(x) = x² − 4x + 5 on [0, 3] is", "options": ["1", "2", "4", "5"] },
+        { "number": 11, "question": "A particle has displacement s = t³ − 6t² + 9t. It is instantaneously at rest at", "options": ["t = 0 only", "t = 1 only", "t = 3 only", "t = 1 and t = 3"] },
+        { "number": 12, "question": "The greatest possible product of two positive numbers whose sum is 20 is", "options": ["20", "50", "100", "200"] },
+        { "number": 13, "question": "For x > 0, f(x) = log x − x has its maximum at", "options": ["x = 1/e", "x = 1", "x = e", "x = 2"] },
+        { "number": 14, "question": "A profit function is P(x) = −2x² + 80x − 300. The profit is greatest when x equals", "options": ["10", "20", "30", "40"] }
+      ],
+      "assertions": [
+        { "number": 15, "assertion": "If f′(x) > 0 throughout an interval, then f is increasing on that interval.", "reason": "The derivative is the instantaneous rate of change; if this rate is positive throughout an interval, function values increase as x increases." },
+        { "number": 16, "assertion": "If f′(a) = 0 and f″(a) < 0, then f has a local maximum at x = a.", "reason": "A negative second derivative makes the graph locally concave downward at the critical point." }
+      ],
+      "written": {
+        "17": "The radius of a circle increases at 0.5 cm/s. Find the rate of increase of its area when the radius is 3 cm.",
+        "18": "Find the intervals on which f(x) = x³ − 3x² is increasing or decreasing.",
+        "19": "For x > 0, find the minimum value of x + 4/x.",
+        "20": "A rectangle has perimeter 40 m. Find its dimensions for maximum area.",
+        "21": "For x ≥ 0, find the intervals on which f(x) = x²e⁻ˣ is increasing or decreasing.",
+        "22": "The radius of a spherical balloon increases at 0.2 cm/s. Find the rate of increase of its volume when the radius is 6 cm.",
+        "23": "Squares of side x cm are cut from each corner of a 24 cm square sheet and the sides are folded to form an open box. Find x for maximum volume and find that maximum volume.",
+        "24": ["(a) Find the marginal profit P′(x). [1]", "(b) Find the critical production level. [1]", "(c) Use the second-derivative test to justify that the profit is maximum there, and find the maximum profit. [2]"]
+      },
+      "caseStudy": "A workshop models its daily profit, in hundreds of rupees, by P(x) = −x² + 60x − 500, where x is the number of components produced in a day.",
+      "answerKey": [1, 2, 1, 1, 3, 3, 1, 2, 1, 3, 3, 2, 1, 1, 0, 0],
+      "solutions": {
+        "17": "A = πr², so dA/dt = 2πr·dr/dt. At r = 3 and dr/dt = 0.5, dA/dt = 2π(3)(0.5) = 3π cm²/s.",
+        "18": "f′(x) = 3x² − 6x = 3x(x − 2). This is positive for x < 0 and x > 2, and negative for 0 < x < 2. Thus f is increasing on (−∞, 0) and (2, ∞), and decreasing on (0, 2).",
+        "19": "Let f(x) = x + 4/x. Then f′(x) = 1 − 4/x², so the positive critical point is x = 2. Since f″(x) = 8/x³ > 0, this is a minimum. The minimum value is f(2) = 4.",
+        "20": "Let the sides be x and 20 − x. Area A = x(20 − x) = 20x − x². Then A′ = 20 − 2x = 0 gives x = 10, and A″ = −2 < 0. The maximum-area rectangle is 10 m by 10 m.",
+        "21": "Differentiate: f′(x) = 2xe⁻ˣ − x²e⁻ˣ = xe⁻ˣ(2 − x). For x > 0, both x and e⁻ˣ are positive, so f′(x) > 0 on (0, 2) and f′(x) < 0 on (2, ∞). Hence f is increasing on (0, 2) and decreasing on (2, ∞); x = 0 is the endpoint of the domain.",
+        "22": "V = (4/3)πr³, so dV/dt = 4πr²·dr/dt. At r = 6 and dr/dt = 0.2, dV/dt = 4π(36)(0.2) = 144π/5 cm³/s.",
+        "23": "The box dimensions are (24 − 2x) cm by (24 − 2x) cm by x cm, with 0 < x < 12. Thus V = x(24 − 2x)² and V′ = (24 − 2x)(24 − 6x). The interior critical point is x = 4. The volume is zero at the endpoints and V(4) = 4(16)² = 1024 cm³, so the maximum occurs when x = 4 cm.",
+        "24": "(a) P′(x) = 60 − 2x. (b) P′(x) = 0 gives x = 30 components. (c) P″(x) = −2 < 0, so x = 30 gives a maximum. P(30) = −900 + 1800 − 500 = 400 hundreds of rupees, or ₹40,000."
+      }
+    },
+    {
+      "id": "g12-applications-integrals-01",
+      "chapter": "Applications of Integrals",
+      "chapterNumber": 8,
+      "paperNumber": "01",
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part II",
+      "focus": "Sketch the bounded region, choose vertical or horizontal strips, locate every intersection, and integrate upper minus lower or right minus left without confusing signed integral with geometric area.",
+      "mcqs": [
+        { "number": 1, "question": "The area bounded by y = x, the x-axis and x = 2 is", "options": ["1", "2", "3", "4"] },
+        { "number": 2, "question": "The area under y = x² from x = 0 to x = 1 is", "options": ["1/2", "1/3", "2/3", "1"] },
+        { "number": 3, "question": "The area enclosed by y = x and y = x² between their points of intersection is", "options": ["1/3", "1/6", "1/2", "2/3"] },
+        { "number": 4, "question": "The area enclosed by y² = 4ax and x = a, where a > 0, is", "options": ["4a²/3", "2a²", "8a²/3", "4a²"] },
+        { "number": 5, "question": "The area enclosed by x² + y² = a² is", "options": ["πa²", "2πa²", "πa²/2", "4πa²"] },
+        { "number": 6, "question": "The area of the upper semicircle x² + y² = a² is", "options": ["πa²/4", "πa²/2", "πa²", "2πa²"] },
+        { "number": 7, "question": "The area enclosed by x²/a² + y²/b² = 1 is", "options": ["π(a + b)", "πab", "2πab", "ab/2"] },
+        { "number": 8, "question": "The area between y = |x| and y = 1 for −1 ≤ x ≤ 1 is", "options": ["1/2", "1", "3/2", "2"] },
+        { "number": 9, "question": "The curves y = x² and y = 2x intersect at x-values", "options": ["−2 and 0", "0 and 1", "0 and 2", "1 and 2"] },
+        { "number": 10, "question": "The area bounded by y = x² and y = 4 is", "options": ["16/3", "8", "32/3", "16"] },
+        { "number": 11, "question": "The curves x = y² and x = 2y intersect at y-values", "options": ["−2 and 0", "0 and 1", "0 and 2", "1 and 2"] },
+        { "number": 12, "question": "If f(x) ≤ 0 on [a, b], then the geometric area between y = f(x) and the x-axis is", "options": ["∫ₐᵇ f(x) dx", "−∫ₐᵇ f(x) dx", "0", "f(b) − f(a)"] },
+        { "number": 13, "question": "The area under the upper branch of y² = 4x from x = 0 to x = 1 is", "options": ["2/3", "1", "4/3", "2"] },
+        { "number": 14, "question": "The area between the upper semicircle x² + y² = 4 and the x-axis is", "options": ["π", "2π", "4π", "8π"] }
+      ],
+      "assertions": [
+        { "number": 15, "assertion": "A definite integral may be zero even when the total geometric area between the curve and the x-axis is positive.", "reason": "Areas above and below the x-axis enter a definite integral with opposite signs and may cancel." },
+        { "number": 16, "assertion": "The area enclosed by x²/a² + y²/b² = 1 is πab.", "reason": "Scaling the unit circle by factors a and b in perpendicular directions multiplies its area by ab." }
+      ],
+      "questionVisuals": { "3": "area-between-curves" },
+      "written": {
+        "17": "Find the area under the line y = 2x + 1 from x = 0 to x = 2.",
+        "18": "Find the area of the part of x² + y² = 16 lying in the first quadrant.",
+        "19": "Find the area enclosed by y = x and y = x².",
+        "20": "Find the area enclosed by y = 2x and y = x².",
+        "21": "Find the area bounded by y² = 4x and x = 4.",
+        "22": "Find the area in the first quadrant enclosed by the ellipse x²/16 + y²/9 = 1 and the coordinate axes.",
+        "23": ["Sketch the region bounded by the parabola y² = 4x and the line x = y.", "Find the area of the bounded region by integrating with respect to y."],
+        "24": ["(a) Find the points where the arch meets the walkway. [1]", "(b) Find the maximum height of the arch. [1]", "(c) Find the area of the opening under the arch. [2]"]
+      },
+      "caseStudy": "A pedestrian arch is modelled by the standard parabola x² = −4y above the walkway y = −4, with the vertex as origin and distances measured in metres.",
+      "answerKey": [1, 1, 1, 2, 0, 1, 1, 1, 2, 2, 2, 1, 2, 1, 0, 0],
+      "solutions": {
+        "17": "The required area is ∫₀² (2x + 1) dx = [x² + x]₀² = 4 + 2 = 6 square units.",
+        "18": "The circle has radius 4. Its first-quadrant part is one quarter of the circle, so the area is (1/4)π(4)² = 4π square units.",
+        "19": "The curves meet where x = x², giving x = 0 and x = 1. On [0, 1], y = x lies above y = x². Area = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/6 square unit.",
+        "20": "The intersections satisfy x² = 2x, so x = 0, 2. On [0, 2], the line is above the parabola. Area = ∫₀² (2x − x²) dx = [x² − x³/3]₀² = 4/3 square units.",
+        "21": "Write the parabola as x = y²/4. It meets x = 4 at y = −4 and y = 4. Using horizontal strips, area = ∫₋₄⁴ (4 − y²/4) dy = 2[4y − y³/12]₀⁴ = 64/3 square units.",
+        "22": "The ellipse has semi-axes 4 and 3. The region in the first quadrant is one quarter of the ellipse, so its area is (1/4)π(4)(3) = 3π square units.",
+        "23": "Write the parabola as x = y²/4. Intersections with x = y satisfy y²/4 = y, so y = 0, 4. For 0 ≤ y ≤ 4, the line x = y is the right boundary and the parabola is the left boundary. Area = ∫₀⁴ (y − y²/4) dy = [y²/2 − y³/12]₀⁴ = 8/3 square units.",
+        "24": "(a) Put y = −4 in x² = −4y: x² = 16, so the arch meets the walkway at (−4, −4) and (4, −4). (b) The vertex is (0, 0), which is 4 m above the walkway. (c) Since y = −x²/4, area = ∫₋₄⁴ [−x²/4 − (−4)] dx = 2[4x − x³/12]₀⁴ = 64/3 m²."
+      }
+    },
+    {
+      "id": "g12-differential-equations-01",
+      "chapter": "Differential Equations",
+      "chapterNumber": 9,
+      "paperNumber": "01",
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part II",
+      "focus": "Classify the equation before solving: separate variables when possible, substitute y = vx for a homogeneous equation, and use the integrating factor for a first-order linear equation.",
+      "mcqs": [
+        { "number": 1, "question": "The order of d²y/dx² + (dy/dx)³ + y = 0 is", "options": ["1", "2", "3", "0"] },
+        { "number": 2, "question": "The degree of (d²y/dx²)² + dy/dx = 0 is", "options": ["1", "2", "3", "not defined"] },
+        { "number": 3, "question": "The general solution of dy/dx = 3y is", "options": ["y = 3x + C", "y = Ce³ˣ", "y = Ceˣ/3", "y = 3eˣ + C"] },
+        { "number": 4, "question": "The particular solution of dy/dx = −y satisfying y(0) = 5 is", "options": ["y = 5eˣ", "y = e⁻⁵ˣ", "y = 5e⁻ˣ", "y = 5 − x"] },
+        { "number": 5, "question": "Which equation is directly separable?", "options": ["dy/dx = x/y", "dy/dx + xy = x", "dy/dx = (x + y)/x", "dy/dx + y = x²"] },
+        { "number": 6, "question": "A first-order equation dy/dx = F(x, y) is homogeneous when its right-hand side can be written as", "options": ["F(x + y)", "F(xy)", "F(y/x)", "F(x) + F(y)"] },
+        { "number": 7, "question": "The standard substitution for a homogeneous equation in y and x is", "options": ["y = u + x", "y = vx", "y = v + x²", "x = vy²"] },
+        { "number": 8, "question": "The integrating factor of dy/dx + P(x)y = Q(x) is", "options": ["∫P(x) dx", "exp(∫P(x) dx)", "exp(∫Q(x) dx)", "P(x)/Q(x)"] },
+        { "number": 9, "question": "The general solution of dy/dx + 2y = 0 is", "options": ["y = Ce²ˣ", "y = Ce⁻²ˣ", "y = 2x + C", "y = C − 2x"] },
+        { "number": 10, "question": "The general solution of dy/dx = y/x is", "options": ["y = Cx", "y = C/x", "y = x + C", "y = Ceˣ"] },
+        { "number": 11, "question": "The general solution of (1 + x²)dy/dx = 2xy is", "options": ["y = C/(1 + x²)", "y = C(1 + x²)", "y = C tan⁻¹x", "y = Ceˣ²"] },
+        { "number": 12, "question": "A particular solution of dy/dx + y = x is", "options": ["y = x + 1", "y = x − 1", "y = x²/2", "y = e⁻ˣ"] },
+        { "number": 13, "question": "The integrating factor of dx/dy + 2x = y is", "options": ["e²ˣ", "e²ʸ", "2eʸ", "y²"] },
+        { "number": 14, "question": "The order and degree of d³y/dx³ + (dy/dx)² = 0 are respectively", "options": ["3 and 1", "3 and 2", "2 and 3", "1 and 3"] }
+      ],
+      "assertions": [
+        { "number": 15, "assertion": "y = Ce⁻ˣ is the general solution of dy/dx + y = 0.", "reason": "It satisfies the equation and contains one arbitrary constant, matching the first order of the equation." },
+        { "number": 16, "assertion": "dy/dx = (x + y)/(x − y) is a homogeneous differential equation.", "reason": "Replacing x and y by λx and λy leaves the right-hand side unchanged." }
+      ],
+      "written": {
+        "17": "Find the order and degree of d²y/dx² + (dy/dx)³ = 0.",
+        "18": "Find the particular solution of dy/dx = 2y satisfying y(0) = 3.",
+        "19": "Solve (1 + y²)dy/dx = 1 + x².",
+        "20": "Solve the homogeneous differential equation dy/dx = (x + y)/x.",
+        "21": "Solve the linear differential equation dy/dx + y = x.",
+        "22": "Solve dx/dy + x tan y = sin y.",
+        "23": "Solve dy/dx = (x + y)/(x − y), and find the particular solution satisfying y = 0 when x = 1.",
+        "24": ["(a) State the order and degree of the equation. [1]", "(b) Write its integrating factor. [1]", "(c) Find M(t) and hence the amount present after 2 hours. [2]"]
+      },
+      "caseStudy": "A medicine is supplied to a chamber at a constant rate while it is removed proportionally to the amount M(t) present. The model is dM/dt + M/2 = 4, with M(0) = 0, where t is measured in hours.",
+      "answerKey": [1, 1, 1, 2, 0, 2, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0],
+      "solutions": {
+        "17": "The highest derivative is d²y/dx², so the order is 2. The equation is polynomial in its derivatives and the highest-order derivative has power 1, so the degree is 1.",
+        "18": "Separate variables: dy/y = 2 dx. Hence log|y| = 2x + C, so y = Ce²ˣ. Since y(0) = 3, C = 3. Therefore y = 3e²ˣ.",
+        "19": "Separate variables: (1 + y²)dy = (1 + x²)dx. Integrating gives y + y³/3 = x + x³/3 + C.",
+        "20": "Write y = vx, so dy/dx = v + x(dv/dx). The equation becomes v + x(dv/dx) = 1 + v, hence x(dv/dx) = 1. Thus v = log|x| + C. Since v = y/x, the solution is y = x[log|x| + C].",
+        "21": "This is linear with integrating factor exp(∫1 dx) = eˣ. Hence d(yeˣ)/dx = xeˣ. Integrating, yeˣ = eˣ(x − 1) + C. Therefore y = x − 1 + Ce⁻ˣ.",
+        "22": "Treat x as a function of y. The integrating factor is exp(∫tan y dy) = sec y. Multiplying gives d(x sec y)/dy = tan y. Hence x sec y = ∫tan y dy = log|sec y| + C.",
+        "23": "Put y = vx, so dy/dx = v + x(dv/dx). Then v + x(dv/dx) = (1 + v)/(1 − v), giving (1 − v)/(1 + v²) dv = dx/x. Integration gives tan⁻¹v − (1/2)log(1 + v²) = log|x| + C. With v = y/x, this simplifies to tan⁻¹(y/x) − (1/2)log(x² + y²) = C. The condition (x, y) = (1, 0) gives C = 0. Thus tan⁻¹(y/x) = (1/2)log(x² + y²).",
+        "24": "(a) The order is 1 and the degree is 1. (b) The integrating factor is exp(∫(1/2)dt) = exp(t/2). (c) Multiplying by the integrating factor gives d[M exp(t/2)]/dt = 4 exp(t/2). Hence M exp(t/2) = 8 exp(t/2) + C and M = 8 + C exp(−t/2). Since M(0) = 0, C = −8. Therefore M(t) = 8[1 − exp(−t/2)], and M(2) = 8(1 − e⁻¹)."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "slug": "g12-continuity-differentiability",
+      "chapter": "Continuity and Differentiability",
+      "number": 5,
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Continuity, Composite Rules & Higher Derivatives",
+      "concepts": [
+        { "title": "Continuity at a point", "text": "A function is continuous at x = a when the left-hand limit, right-hand limit and f(a) all exist and are equal. Piecewise functions must be checked at their joining points." },
+        { "title": "Differentiability and continuity", "text": "Differentiability at a point implies continuity there, but continuity alone does not guarantee differentiability. Corners, cusps and vertical tangents require special care." },
+        { "title": "Composite and implicit functions", "text": "Use the chain rule from the outer function inward. For an implicit relation, differentiate every term with respect to x and collect the terms containing dy/dx." },
+        { "title": "Special derivative forms", "text": "Logarithmic differentiation is efficient for variable powers and products. Parametric derivatives use dy/dx = (dy/dt)/(dx/dt), and the same idea gives the second derivative." }
+      ],
+      "formulas": [
+        "Continuity at a: lim x→a⁻ f(x) = lim x→a⁺ f(x) = f(a)",
+        "d[f(g(x))]/dx = f′(g(x))g′(x)",
+        "d(sin⁻¹x)/dx = 1/√(1 − x²)",
+        "d(cos⁻¹x)/dx = −1/√(1 − x²)",
+        "d(tan⁻¹x)/dx = 1/(1 + x²)",
+        "d(eᵘ)/dx = eᵘ du/dx; d(log u)/dx = (1/u)du/dx",
+        "For x > 0, d(xˣ)/dx = xˣ(1 + log x)",
+        "For x = f(t), y = g(t): dy/dx = (dy/dt)/(dx/dt)",
+        "d²y/dx² = [d(dy/dx)/dt]/(dx/dt)"
+      ],
+      "method": [
+        "For continuity, check only the points where the defining expression changes or may be undefined.",
+        "Identify whether the function is composite, implicit, logarithmic or parametric before differentiating.",
+        "Apply the relevant rule one layer at a time and keep every chain-rule factor.",
+        "Simplify the result and, for a second derivative, differentiate the complete first derivative again."
+      ],
+      "example": {
+        "question": "If x = a cos θ and y = a sin θ, find d²y/dx².",
+        "steps": ["First find dy/dx = (a cos θ)/(−a sin θ) = −cot θ.", "Differentiate −cot θ with respect to θ to obtain csc²θ.", "Divide by dx/dθ = −a sin θ."],
+        "answer": "d²y/dx² = −1/(a sin³θ)."
+      },
+      "practice": [
+        { "question": "Find k if f(x) = kx + 1 for x ≤ 1 and f(x) = x² + 1 for x > 1 is continuous at 1.", "answer": "k = 1", "marks": 2 },
+        { "question": "Differentiate sin⁻¹(3x).", "answer": "3/√(1 − 9x²)", "marks": 2 },
+        { "question": "If x² + y² = 10, find dy/dx.", "answer": "−x/y", "marks": 2 },
+        { "question": "Differentiate y = (1 + x²)ˣ logarithmically.", "answer": "dy/dx = (1 + x²)ˣ[log(1 + x²) + 2x²/(1 + x²)]", "marks": 3 },
+        { "question": "If x = t² and y = t³, find d²y/dx² for t ≠ 0.", "answer": "3/(4t)", "marks": 3 },
+        { "question": "If y = eˣ sin x, find d²y/dx².", "answer": "2eˣ cos x", "marks": 3 }
+      ],
+      "tips": [
+        "A continuous function can still fail to be differentiable.",
+        "When differentiating implicitly, dy/dx accompanies every derivative involving y.",
+        "Inverse-trigonometric derivatives need both the correct sign and the chain-rule factor.",
+        "For parametric second derivatives, divide the derivative of dy/dx by dx/dt; do not merely differentiate with respect to t."
+      ]
+    },
+    {
+      "slug": "g12-applications-derivatives",
+      "chapter": "Applications of Derivatives",
+      "number": 6,
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Rates, Monotonicity & Optimisation",
+      "concepts": [
+        { "title": "Related rates", "text": "Express the quantities in one equation, differentiate with respect to time, and substitute the values only after differentiation." },
+        { "title": "Increasing and decreasing", "text": "On an interval, f′(x) > 0 indicates increase and f′(x) < 0 indicates decrease. Critical numbers divide the domain into sign-test intervals." },
+        { "title": "Local extrema", "text": "A change of f′ from positive to negative gives a local maximum; a change from negative to positive gives a local minimum." },
+        { "title": "Absolute extrema and modelling", "text": "On a closed interval compare critical points and endpoints. In a word problem, define the variable and its feasible domain before maximising or minimising." }
+      ],
+      "formulas": [
+        "If f′(x) > 0 on an interval, f is increasing there",
+        "If f′(x) < 0 on an interval, f is decreasing there",
+        "If f′(a) = 0 and f″(a) < 0, f has a local maximum at a",
+        "If f′(a) = 0 and f″(a) > 0, f has a local minimum at a",
+        "Circle: A = πr², so dA/dt = 2πr·dr/dt",
+        "Sphere: V = (4/3)πr³, so dV/dt = 4πr²·dr/dt",
+        "Cylinder: V = πr²h",
+        "Rectangle with perimeter 2p: A = x(p − x)"
+      ],
+      "method": [
+        "Define the changing or decision variable and write its valid domain.",
+        "Rewrite the required quantity as a function of one variable whenever optimising.",
+        "Differentiate, locate critical points, and make a sign table or use the second-derivative test.",
+        "Check endpoints when relevant and state the final answer with units and context."
+      ],
+      "example": {
+        "question": "A rectangle has perimeter 40 m. Find its maximum area.",
+        "steps": ["Let the sides be x and 20 − x, so A = x(20 − x).", "A′ = 20 − 2x, which is zero at x = 10.", "A″ = −2 < 0, so this critical point gives a maximum."],
+        "answer": "The rectangle is 10 m by 10 m and its maximum area is 100 m²."
+      },
+      "practice": [
+        { "question": "The radius of a circle grows at 1 cm/s. Find dA/dt when r = 4 cm.", "answer": "8π cm²/s", "marks": 2 },
+        { "question": "Find where f(x) = x² − 4x is increasing.", "answer": "(2, ∞)", "marks": 2 },
+        { "question": "Find the local extrema of f(x) = x³ − 3x.", "answer": "Local maximum 2 at x = −1; local minimum −2 at x = 1", "marks": 3 },
+        { "question": "Find the minimum value of x + 9/x for x > 0.", "answer": "6 at x = 3", "marks": 3 },
+        { "question": "Two positive numbers have sum 30. Find their maximum product.", "answer": "225, when both numbers are 15", "marks": 3 },
+        { "question": "Find the absolute maximum and minimum of x² − 2x + 3 on [0, 4].", "answer": "Minimum 2 at x = 1; maximum 11 at x = 4", "marks": 4 }
+      ],
+      "tips": [
+        "In related rates, differentiate before inserting the numerical instant.",
+        "A critical point need not be an extremum; test the derivative sign or second derivative.",
+        "The second-derivative test is inconclusive when f″(a) = 0.",
+        "A closed-interval absolute extremum may occur at an endpoint."
+      ]
+    },
+    {
+      "slug": "g12-applications-integrals",
+      "chapter": "Applications of Integrals",
+      "number": 8,
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part II",
+      "subtitle": "Areas Under and Between Standard Curves",
+      "concepts": [
+        { "title": "Geometric area", "text": "A definite integral is signed, but geometric area is non-negative. Split the interval wherever a curve crosses the axis or the upper and lower boundaries change." },
+        { "title": "Vertical strips", "text": "When boundaries are naturally y = f(x), integrate upper curve minus lower curve with respect to x." },
+        { "title": "Horizontal strips", "text": "When boundaries are naturally x = g(y), integrate right curve minus left curve with respect to y." },
+        { "title": "Standard conics", "text": "Use symmetry for circles, ellipses and parabolas, but still find the exact intersection points that bound the required region." }
+      ],
+      "formulas": [
+        "Area under y = f(x) ≥ 0 on [a, b]: A = ∫ₐᵇ f(x) dx",
+        "Area between curves: A = ∫ₐᵇ [upper − lower] dx",
+        "Horizontal-strip area: A = ∫_c^d [right − left] dy",
+        "Circle x² + y² = a²: area = πa²",
+        "Ellipse x²/a² + y²/b² = 1: area = πab",
+        "Parabola y² = 4ax: x = y²/(4a)",
+        "Parabola x² = 4ay: y = x²/(4a)"
+      ],
+      "method": [
+        "Sketch both boundaries and shade the required region.",
+        "Solve the boundary equations together to find all intersection points.",
+        "Choose vertical or horizontal strips so that the limits and boundary functions stay simple.",
+        "Integrate the positive width or height, splitting the region when a boundary changes."
+      ],
+      "example": {
+        "question": "Find the area enclosed by y = x and y = x².",
+        "steps": ["Solve x = x² to obtain x = 0 and x = 1.", "On [0, 1], y = x is above y = x².", "Evaluate ∫₀¹ (x − x²) dx."],
+        "answer": "The enclosed area is 1/6 square unit."
+      },
+      "practice": [
+        { "question": "Find the area under y = 3x from x = 0 to x = 2.", "answer": "6 square units", "marks": 2 },
+        { "question": "Find the area of a quadrant of the circle x² + y² = 25.", "answer": "25π/4 square units", "marks": 2 },
+        { "question": "Find the area enclosed by y = x and y = x².", "answer": "1/6 square unit", "marks": 3 },
+        { "question": "Find the area enclosed by y = 2x and y = x².", "answer": "4/3 square units", "marks": 3 },
+        { "question": "Find the area bounded by y = x² and y = 9.", "answer": "36 square units", "marks": 3 },
+        { "question": "Find the first-quadrant area of x²/25 + y²/9 = 1.", "answer": "15π/4 square units", "marks": 4 }
+      ],
+      "tips": [
+        "Always sketch before choosing limits.",
+        "Geometric area uses positive strip lengths, not an unexamined signed integral.",
+        "For side-opening parabolas, integrating with respect to y is often shorter.",
+        "Use symmetry only after confirming that both the curve and required region are symmetric."
+      ]
+    },
+    {
+      "slug": "g12-differential-equations",
+      "chapter": "Differential Equations",
+      "number": 9,
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part II",
+      "subtitle": "Classification, Separation, Homogeneous & Linear Forms",
+      "concepts": [
+        { "title": "Order, degree and solutions", "text": "Order is the order of the highest derivative. Degree is the power of that derivative after the equation is polynomial in derivatives. A general solution contains the appropriate arbitrary constant; an initial condition selects a particular solution." },
+        { "title": "Separation of variables", "text": "Rewrite the equation so that all y terms multiply dy and all x terms multiply dx, then integrate both sides." },
+        { "title": "Homogeneous first-order equations", "text": "If dy/dx is a function of y/x, put y = vx. Then dy/dx = v + x(dv/dx), producing a separable equation in v and x." },
+        { "title": "Linear first-order equations", "text": "Write the equation as dy/dx + P(x)y = Q(x), multiply by its integrating factor, and recognise the left side as the derivative of a product. The corresponding x-as-a-function-of-y form is treated similarly." }
+      ],
+      "formulas": [
+        "General first-order linear form: dy/dx + P(x)y = Q(x)",
+        "Integrating factor = exp(∫P(x) dx)",
+        "After multiplying: d[y·IF]/dx = Q(x)·IF",
+        "Linear form in x: dx/dy + P(y)x = Q(y)",
+        "For a homogeneous equation, y = vx and dy/dx = v + x(dv/dx)",
+        "If dy/dx = g(x)h(y), then dy/h(y) = g(x)dx",
+        "The general solution of dy/dx = ky is y = Ceᵏˣ"
+      ],
+      "method": [
+        "Identify the order, degree and structural type before solving.",
+        "Use separation when x and y factors can be placed on opposite sides.",
+        "For a homogeneous right-hand side, substitute y = vx and then separate v and x.",
+        "For a linear equation, standardise the coefficient of the first derivative, find the integrating factor, integrate, and apply any initial condition."
+      ],
+      "example": {
+        "question": "Solve dy/dx + y = x.",
+        "steps": ["Here P(x) = 1, so the integrating factor is eˣ.", "Multiplying gives d(yeˣ)/dx = xeˣ.", "Integrate: yeˣ = eˣ(x − 1) + C."],
+        "answer": "y = x − 1 + Ce⁻ˣ."
+      },
+      "practice": [
+        { "question": "Find the order and degree of (d²y/dx²)³ + dy/dx = 0.", "answer": "Order 2, degree 3", "marks": 2 },
+        { "question": "Solve dy/dx = 4y.", "answer": "y = Ce⁴ˣ", "marks": 2 },
+        { "question": "Solve y(dy/dx) = x.", "answer": "y² − x² = C", "marks": 2 },
+        { "question": "Solve dy/dx = 1 + y/x.", "answer": "y = x[log|x| + C]", "marks": 3 },
+        { "question": "Solve dy/dx + 2y = eˣ.", "answer": "y = eˣ/3 + Ce⁻²ˣ", "marks": 3 },
+        { "question": "Solve dx/dy + x = y.", "answer": "x = y − 1 + Ce⁻ʸ", "marks": 3 }
+      ],
+      "tips": [
+        "Degree is defined only after radicals or fractions involving derivatives have been removed and the equation is polynomial in derivatives.",
+        "Do not confuse a homogeneous differential equation with a homogeneous linear equation.",
+        "Include the arbitrary constant only once in a general solution.",
+        "For dx/dy + P(y)x = Q(y), the integrating factor is a function of y."
+      ]
+    }
+  ]
+}

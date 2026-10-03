@@ -29,7 +29,10 @@ export type QuestionVisual =
   | 'circle-sector'
   | 'solid-comparison'
   | 'ogive'
-  | 'coin-outcomes';
+  | 'coin-outcomes'
+  | 'inverse-cosine-graph'
+  | 'area-between-curves'
+  | 'lpp-feasible-region';
 
 export type PaperDefinition = {
   id: string;
@@ -153,6 +156,7 @@ const questionVisualTypes = new Set<QuestionVisual>([
   'set-diagram', 'line-ray-segment', 'cube-net', 'pictograph',
   'intersecting-lines', 'parabola-roots', 'similar-triangles', 'coordinate-line', 'right-triangle', 'tower-angle',
   'circle-tangents', 'circle-sector', 'solid-comparison', 'ogive', 'coin-outcomes',
+  'inverse-cosine-graph', 'area-between-curves', 'lpp-feasible-region',
 ]);
 
 export function isPaperDefinition(value: unknown): value is PaperDefinition {

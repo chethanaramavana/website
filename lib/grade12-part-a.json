@@ -1,0 +1,859 @@
+{
+  "papers": [
+    {
+      "id": "g12-relations-functions-01",
+      "chapter": "Relations and Functions",
+      "chapterNumber": 1,
+      "focus": "Classify relations through reflexivity, symmetry and transitivity, and test functions carefully for one-one and onto behaviour.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "On A = {1, 2, 3}, the relation R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)} is",
+          "options": ["reflexive and symmetric but not transitive", "an equivalence relation", "symmetric and transitive but not reflexive", "reflexive only"]
+        },
+        {
+          "number": 2,
+          "question": "The relation R on R defined by xRy if x ≤ y is",
+          "options": ["reflexive and transitive but not symmetric", "symmetric and transitive but not reflexive", "reflexive and symmetric but not transitive", "an equivalence relation"]
+        },
+        {
+          "number": 3,
+          "question": "On Z, xRy if x − y is divisible by 3. Then R is",
+          "options": ["reflexive only", "symmetric only", "transitive only", "an equivalence relation"]
+        },
+        {
+          "number": 4,
+          "question": "On A = {1, 2, 3}, the relation {(1, 1), (2, 2)} is not reflexive because",
+          "options": ["(1, 2) is missing", "(2, 1) is missing", "(3, 3) is missing", "(1, 3) is missing"]
+        },
+        {
+          "number": 5,
+          "question": "The function f: R → R defined by f(x) = 2x − 5 is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        },
+        {
+          "number": 6,
+          "question": "The function f: R → R defined by f(x) = x² is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        },
+        {
+          "number": 7,
+          "question": "If N = {1, 2, 3, …}, then f: N → N defined by f(n) = n + 1 is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        },
+        {
+          "number": 8,
+          "question": "The function f: [0, ∞) → [0, ∞) defined by f(x) = x² is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        },
+        {
+          "number": 9,
+          "question": "If a finite set A has 3 elements and a finite set B has 4 elements, then a function f: A → B cannot be",
+          "options": ["one-one", "onto", "constant", "many-one"]
+        },
+        {
+          "number": 10,
+          "question": "If A and B are finite sets with n(A) = n(B), then every one-one function f: A → B is necessarily",
+          "options": ["constant", "onto", "many-one", "undefined at one element"]
+        },
+        {
+          "number": 11,
+          "question": "The function f: R → [0, ∞) defined by f(x) = |x| is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        },
+        {
+          "number": 12,
+          "question": "On A = {1, 2, 3}, the relation R = {(1, 2), (2, 1)} is",
+          "options": ["reflexive only", "symmetric but neither reflexive nor transitive", "transitive but not symmetric", "an equivalence relation"]
+        },
+        {
+          "number": 13,
+          "question": "For the relation on Z defined by xRy if x − y is divisible by 4, the equivalence class [2] is",
+          "options": ["{…, −6, −2, 2, 6, 10, …}", "{…, −8, −4, 0, 4, 8, …}", "{2, 4, 6, 8, …}", "{−2, 2}"]
+        },
+        {
+          "number": 14,
+          "question": "The function f: R → R defined by f(x) = x³ is",
+          "options": ["one-one but not onto", "onto but not one-one", "both one-one and onto", "neither one-one nor onto"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "The identity relation on a non-empty set A is an equivalence relation.",
+          "reason": "The identity relation is reflexive, symmetric and transitive."
+        },
+        {
+          "number": 16,
+          "assertion": "Every onto function is one-one.",
+          "reason": "The function f: R → [0, ∞) defined by f(x) = x² is onto but not one-one."
+        }
+      ],
+      "written": {
+        "17": "On Z, define xRy if x − y is even. Verify that R is reflexive, symmetric and transitive.",
+        "18": "Show that f: R → R defined by f(x) = 3x + 2 is one-one.",
+        "19": "For N = {1, 2, 3, …}, examine whether f: N → N defined by f(n) = 2n is one-one and onto.",
+        "20": "On Z, define xRy if x − y is divisible by 5. Prove that R is an equivalence relation and write the equivalence class [2].",
+        "21": "For f: R → R defined by f(x) = x² − 4x + 7, show that f is not one-one and find its range.",
+        "22": "Show that f: [−1, ∞) → [−1, ∞) defined by f(x) = x² + 2x is both one-one and onto.",
+        "23": "On A = {1, 2, 3, 4}, define aRb if a − b is even. Prove that R is an equivalence relation. Find all distinct equivalence classes and the quotient set A/R.",
+        "24": [
+          "(a) Write the domain and codomain of f. [1]",
+          "(b) Is f one-one? Give a reason. [1]",
+          "(c) Is f onto? Hence state whether f is bijective. [2]"
+        ]
+      },
+      "caseStudy": "A school assigns four students P, Q, R and S to four distinct lockers 101, 102, 103 and 104 by the function f = {(P, 102), (Q, 104), (R, 101), (S, 103)}.",
+      "answerKey": [1, 0, 3, 2, 2, 3, 0, 2, 1, 1, 1, 1, 0, 2, 0, 3],
+      "solutions": {
+        "17": "For every x ∈ Z, x − x = 0 is even, so R is reflexive. If xRy, then x − y is even; hence y − x = −(x − y) is even, so R is symmetric. If xRy and yRz, then x − y and y − z are even, so x − z = (x − y) + (y − z) is even. Thus R is transitive and therefore an equivalence relation.",
+        "18": "Let f(a) = f(b). Then 3a + 2 = 3b + 2, so 3a = 3b and hence a = b. Therefore distinct inputs cannot have the same image, and f is one-one.",
+        "19": "If f(a) = f(b), then 2a = 2b, so a = b; therefore f is one-one. Every image 2n is even, so no odd natural number, such as 1, has a preimage. Hence f is not onto N.",
+        "20": "For every x ∈ Z, x − x = 0 is divisible by 5, so R is reflexive. If 5 divides x − y, then it divides y − x, so R is symmetric. If 5 divides x − y and y − z, it divides their sum x − z, so R is transitive. Thus R is an equivalence relation. The class [2] = {5k + 2 : k ∈ Z} = {…, −8, −3, 2, 7, 12, …}.",
+        "21": "Write f(x) = (x − 2)² + 3. Since f(1) = f(3) = 4 while 1 ≠ 3, f is not one-one. Also (x − 2)² ≥ 0, so f(x) ≥ 3, and every y ≥ 3 occurs for x = 2 + √(y − 3). Therefore the range is [3, ∞).",
+        "22": "Write f(x) = (x + 1)² − 1. On [−1, ∞), if x₁ < x₂, then 0 ≤ x₁ + 1 < x₂ + 1, so (x₁ + 1)² < (x₂ + 1)²; hence f is one-one. For any y ≥ −1, choose x = −1 + √(y + 1), which lies in the domain. Then f(x) = y, so f is onto. Therefore f is bijective.",
+        "23": "For every a ∈ A, a − a = 0 is even, so R is reflexive. If a − b is even, then b − a is even, so R is symmetric. If a − b and b − c are even, then a − c is even, so R is transitive. Thus R is an equivalence relation. The distinct classes are [1] = [3] = {1, 3} and [2] = [4] = {2, 4}. Hence A/R = {{1, 3}, {2, 4}}.",
+        "24": "(a) The domain is {P, Q, R, S} and the codomain is {101, 102, 103, 104}. (b) The four students have four different images, so f is one-one. (c) Every locker in the codomain is assigned to a student, so f is onto. Therefore f is bijective."
+      },
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "paperNumber": "01"
+    },
+    {
+      "id": "g12-inverse-trigonometric-functions-01",
+      "chapter": "Inverse Trigonometric Functions",
+      "chapterNumber": 2,
+      "focus": "Use domains, principal-value ranges and the graphs of inverse trigonometric functions before simplifying any expression.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The principal value of sin⁻¹(1/2) is",
+          "options": ["π/6", "π/3", "5π/6", "−π/6"]
+        },
+        {
+          "number": 2,
+          "question": "The principal value of cos⁻¹(−1/2) is",
+          "options": ["π/3", "2π/3", "4π/3", "−2π/3"]
+        },
+        {
+          "number": 3,
+          "question": "The principal value of tan⁻¹(−1) is",
+          "options": ["π/4", "3π/4", "−π/4", "−3π/4"]
+        },
+        {
+          "number": 4,
+          "question": "The domain of sin⁻¹x is",
+          "options": ["R", "[−1, 1]", "(−1, 1)", "[0, 1]"]
+        },
+        {
+          "number": 5,
+          "question": "The principal-value range of tan⁻¹x is",
+          "options": ["[−π/2, π/2]", "(−π/2, π/2)", "[0, π]", "(0, π)"]
+        },
+        {
+          "number": 6,
+          "question": "sin(sin⁻¹(3/5)) equals",
+          "options": ["4/5", "3/5", "−3/5", "5/3"]
+        },
+        {
+          "number": 7,
+          "question": "cos(cos⁻¹(−2/3)) equals",
+          "options": ["2/3", "−2/3", "√5/3", "−√5/3"]
+        },
+        {
+          "number": 8,
+          "question": "sin⁻¹(sin(5π/6)) equals",
+          "options": ["5π/6", "π/6", "−π/6", "−5π/6"]
+        },
+        {
+          "number": 9,
+          "question": "cos⁻¹(cos(4π/3)) equals",
+          "options": ["4π/3", "−2π/3", "2π/3", "π/3"]
+        },
+        {
+          "number": 10,
+          "question": "tan⁻¹(tan(3π/4)) equals",
+          "options": ["3π/4", "π/4", "−π/4", "−3π/4"]
+        },
+        {
+          "number": 11,
+          "question": "For x ∈ [−1, 1], sin⁻¹x + cos⁻¹x equals",
+          "options": ["0", "π/4", "π/2", "π"]
+        },
+        {
+          "number": 12,
+          "question": "For x > 0, tan⁻¹x + tan⁻¹(1/x) equals",
+          "options": ["0", "π/4", "π/2", "π"]
+        },
+        {
+          "number": 13,
+          "question": "Which inverse trigonometric function is represented by the displayed decreasing curve from (−1, π) to (1, 0)?",
+          "options": ["y = sin⁻¹x", "y = cos⁻¹x", "y = tan⁻¹x", "y = cot⁻¹x"]
+        },
+        {
+          "number": 14,
+          "question": "Using the principal-value range (0, π), cot⁻¹(−√3) equals",
+          "options": ["π/6", "5π/6", "−π/6", "2π/3"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "sin⁻¹(sin(3π/4)) = π/4.",
+          "reason": "The principal-value range of sin⁻¹ is [−π/2, π/2], and sin(3π/4) = sin(π/4)."
+        },
+        {
+          "number": 16,
+          "assertion": "tan⁻¹x is defined for every real x.",
+          "reason": "The principal-value range of tan⁻¹x is [−π/2, π/2]."
+        }
+      ],
+      "questionVisuals": { "13": "inverse-cosine-graph" },
+      "written": {
+        "17": "Evaluate sin⁻¹(−√3/2) + cos⁻¹(1/2) using principal values.",
+        "18": "Find the principal value of cos⁻¹(cos(7π/6)).",
+        "19": "If θ = sin⁻¹(3/5), find tan θ.",
+        "20": "Prove that sin⁻¹x + cos⁻¹x = π/2 for −1 ≤ x ≤ 1.",
+        "21": "Evaluate tan⁻¹(1/2) + tan⁻¹(1/3), giving a principal value.",
+        "22": "If θ = cos⁻¹(3/5), evaluate sin 2θ and cos 2θ.",
+        "23": "Evaluate tan⁻¹(1/2) + tan⁻¹(1/5) + tan⁻¹(1/8), carefully justifying the principal value.",
+        "24": [
+          "(a) Find θ when x = 5 cm. [1]",
+          "(b) Find θ when x = −5 cm. [1]",
+          "(c) For x = −5 cm, find the perpendicular distance of the tip from the horizontal axis and explain why the controller reports a unique angle. [2]"
+        ]
+      },
+      "caseStudy": "A robotic arm has length 10 cm. If x is the horizontal coordinate of its tip, its controller reports the principal angle θ = cos⁻¹(x/10), where 0 ≤ θ ≤ π.",
+      "answerKey": [0, 1, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 0, 2],
+      "solutions": {
+        "17": "Since −π/2 ≤ −π/3 ≤ π/2, sin⁻¹(−√3/2) = −π/3. Also cos⁻¹(1/2) = π/3. Their sum is 0.",
+        "18": "The angle 7π/6 is outside the range [0, π]. Since cos(7π/6) = −√3/2 and 5π/6 lies in [0, π], cos⁻¹(cos(7π/6)) = 5π/6.",
+        "19": "Because θ = sin⁻¹(3/5), θ ∈ [−π/2, π/2] and here θ is acute. Take opposite side 3 and hypotenuse 5, so the adjacent side is 4. Therefore tan θ = 3/4.",
+        "20": "Let θ = sin⁻¹x, so θ ∈ [−π/2, π/2] and sin θ = x. Then cos(π/2 − θ) = x. Also π/2 − θ ∈ [0, π], the principal range of cos⁻¹. Hence cos⁻¹x = π/2 − θ, giving sin⁻¹x + cos⁻¹x = π/2.",
+        "21": "Let α = tan⁻¹(1/2) and β = tan⁻¹(1/3). Both are positive and α + β < π/2. Then tan(α + β) = [(1/2) + (1/3)]/[1 − (1/2)(1/3)] = (5/6)/(5/6) = 1. Therefore α + β = π/4.",
+        "22": "Here cos θ = 3/5 and θ ∈ [0, π]. Since cos θ is positive, θ is acute and sin θ = 4/5. Thus sin 2θ = 2sin θ cos θ = 24/25, and cos 2θ = cos²θ − sin²θ = 9/25 − 16/25 = −7/25.",
+        "23": "Let α = tan⁻¹(1/2) and β = tan⁻¹(1/5). Then tan(α + β) = [(1/2) + (1/5)]/[1 − (1/2)(1/5)] = (7/10)/(9/10) = 7/9. Let γ = tan⁻¹(1/8). Therefore tan(α + β + γ) = [(7/9) + (1/8)]/[1 − (7/9)(1/8)] = (65/72)/(65/72) = 1. All three angles are positive and their sum is less than π/2, so the principal value is π/4.",
+        "24": "(a) θ = cos⁻¹(1/2) = π/3. (b) θ = cos⁻¹(−1/2) = 2π/3. (c) The perpendicular distance is 10sin(2π/3) = 5√3 cm. The range [0, π] makes cos strictly decreasing, so each x/10 ∈ [−1, 1] corresponds to exactly one reported principal angle."
+      },
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "paperNumber": "01"
+    },
+    {
+      "id": "g12-matrices-01",
+      "chapter": "Matrices",
+      "chapterNumber": 3,
+      "focus": "Work fluently with order, equality, transpose, symmetry and matrix operations, while respecting non-commutativity and inverse conditions.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The order of the matrix [1 2 3; 4 5 6] is",
+          "options": ["2 × 2", "2 × 3", "3 × 2", "3 × 3"]
+        },
+        {
+          "number": 2,
+          "question": "If [x 2; 3 y] = [4 2; 3 −1], then (x, y) is",
+          "options": ["(4, −1)", "(−1, 4)", "(4, 1)", "(2, 3)"]
+        },
+        {
+          "number": 3,
+          "question": "If A is a matrix of order 2 × 3, then Aᵀ has order",
+          "options": ["2 × 3", "3 × 2", "2 × 2", "3 × 3"]
+        },
+        {
+          "number": 4,
+          "question": "A square matrix A is symmetric when",
+          "options": ["Aᵀ = A", "Aᵀ = −A", "A² = A", "A² = O"]
+        },
+        {
+          "number": 5,
+          "question": "Every diagonal entry of a real skew-symmetric matrix is",
+          "options": ["1", "−1", "0", "arbitrary"]
+        },
+        {
+          "number": 6,
+          "question": "If A = [1 2; 3 4] and B = [2 0; 1 2], then AB is",
+          "options": ["[4 4; 10 8]", "[2 4; 7 10]", "[3 2; 7 8]", "[4 2; 8 10]"]
+        },
+        {
+          "number": 7,
+          "question": "For the matrices A and B in Question 6, BA is",
+          "options": ["[4 4; 10 8]", "[2 4; 7 10]", "[2 2; 6 8]", "[4 6; 4 10]"]
+        },
+        {
+          "number": 8,
+          "question": "For every matrix A of order m × n, IₘA equals",
+          "options": ["Iₙ", "A", "Aᵀ", "O"]
+        },
+        {
+          "number": 9,
+          "question": "If A = [1 −2; 3 0] and B = [2 1; −1 4], then A + B is",
+          "options": ["[3 −1; 2 4]", "[−1 −3; 4 −4]", "[2 −2; −3 0]", "[3 1; −2 4]"]
+        },
+        {
+          "number": 10,
+          "question": "If a square matrix A satisfies A² = I, then A⁻¹ is",
+          "options": ["I", "−A", "A", "A²"]
+        },
+        {
+          "number": 11,
+          "question": "For conformable matrices A and B, (AB)ᵀ equals",
+          "options": ["AᵀBᵀ", "BᵀAᵀ", "ABᵀ", "BAᵀ"]
+        },
+        {
+          "number": 12,
+          "question": "The symmetric part of a square matrix A is",
+          "options": ["A + Aᵀ", "½(A + Aᵀ)", "½(A − Aᵀ)", "A − Aᵀ"]
+        },
+        {
+          "number": 13,
+          "question": "Which pair gives two non-zero matrices whose product is the zero matrix?",
+          "options": ["A = [1 0; 0 1], B = [0 0; 0 0]", "A = [1 1; 1 1], B = [1 −1; −1 1]", "A = [1 0; 0 2], B = [2 0; 0 1]", "A = [0 1; 1 0], B = [0 1; 1 0]"]
+        },
+        {
+          "number": 14,
+          "question": "If 2A − [1 0; 0 1] = [3 2; 4 5], then A is",
+          "options": ["[1 1; 2 2]", "[2 1; 2 3]", "[2 2; 4 6]", "[4 2; 4 6]"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "For square matrices A and B, AB = O does not necessarily imply A = O or B = O.",
+          "reason": "There exist non-zero square matrices whose product is the zero matrix."
+        },
+        {
+          "number": 16,
+          "assertion": "The product of any two symmetric matrices of the same order is symmetric.",
+          "reason": "If A and B are symmetric, then (AB)ᵀ = BA, so AB is symmetric when AB = BA."
+        }
+      ],
+      "written": {
+        "17": "If [x + y 2; 3 x − y] = [5 2; 3 1], find x and y.",
+        "18": "For A = [1 −1; 2 3] and B = [3 2; 0 −1], find 2A − B.",
+        "19": "For A = [1 1; 0 1] and B = [1 0; 1 1], calculate AB and BA, and hence show that matrix multiplication is not commutative.",
+        "20": "Express A = [2 3; −1 4] as the sum of a symmetric matrix and a skew-symmetric matrix.",
+        "21": "Find the matrix X if 2X + [1 −1; 2 0] = [5 3; −2 6].",
+        "22": "Prove that the inverse of a square matrix, if it exists, is unique.",
+        "23": "For A = [1 2; −1 3], find S = ½(A + Aᵀ) and K = ½(A − Aᵀ). Verify that S is symmetric, K is skew-symmetric and A = S + K.",
+        "24": [
+          "(a) State the order of Q and interpret q₂₁. [1]",
+          "(b) Find the total number of each item sold over the two days. [1]",
+          "(c) If the price row matrix is P = [₹40 ₹30 ₹20], calculate PQ and interpret its entries. [2]"
+        ]
+      },
+      "caseStudy": "A school canteen records quantities of sandwiches, juice boxes and fruit cups sold on Monday and Tuesday in the matrix Q = [12 15; 10 18; 8 12]. Rows represent the three items in that order and columns represent the two days.",
+      "answerKey": [1, 0, 1, 0, 2, 0, 1, 1, 0, 2, 1, 1, 1, 1, 0, 3],
+      "solutions": {
+        "17": "Equality of matrices gives x + y = 5 and x − y = 1. Adding, 2x = 6, so x = 3. Then y = 2.",
+        "18": "2A = [2 −2; 4 6]. Therefore 2A − B = [2 − 3, −2 − 2; 4 − 0, 6 − (−1)] = [−1 −4; 4 7].",
+        "19": "AB = [1 1; 0 1][1 0; 1 1] = [2 1; 1 1]. On the other hand, BA = [1 0; 1 1][1 1; 0 1] = [1 1; 1 2]. Since AB ≠ BA, matrix multiplication is not commutative.",
+        "20": "Aᵀ = [2 −1; 3 4]. The symmetric part is ½(A + Aᵀ) = ½[4 2; 2 8] = [2 1; 1 4]. The skew-symmetric part is ½(A − Aᵀ) = ½[0 4; −4 0] = [0 2; −2 0]. Their sum is [2 3; −1 4] = A.",
+        "21": "2X = [5 3; −2 6] − [1 −1; 2 0] = [4 4; −4 6]. Hence X = [2 2; −2 3].",
+        "22": "Suppose B and C are both inverses of A. Then AB = BA = I and AC = CA = I. Now B = BI = B(AC) = (BA)C = IC = C. Hence any inverse of A must equal every other inverse, so the inverse is unique.",
+        "23": "Aᵀ = [1 −1; 2 3]. Thus S = ½[2 1; 1 6] = [1 1/2; 1/2 3], and K = ½[0 3; −3 0] = [0 3/2; −3/2 0]. Direct transposition gives Sᵀ = S and Kᵀ = −K. Finally S + K = [1 2; −1 3] = A.",
+        "24": "(a) Q has order 3 × 2. The entry q₂₁ = 10 means 10 juice boxes were sold on Monday. (b) The row totals are 27 sandwiches, 28 juice boxes and 20 fruit cups. (c) PQ = [40 30 20][12 15; 10 18; 8 12] = [₹940 ₹1,380]. These are the canteen revenues on Monday and Tuesday respectively."
+      },
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "paperNumber": "01"
+    },
+    {
+      "id": "g12-determinants-01",
+      "chapter": "Determinants",
+      "chapterNumber": 4,
+      "focus": "Use determinant properties efficiently, connect cofactors with inverses, and apply determinants to areas and linear systems.",
+      "mcqs": [
+        {
+          "number": 1,
+          "question": "The value of |2 3; 1 4| is",
+          "options": ["5", "8", "11", "−5"]
+        },
+        {
+          "number": 2,
+          "question": "The system x + 2y = 3 and 2x + 4y = 6 has",
+          "options": ["no solution", "one solution", "infinitely many solutions", "exactly two solutions"]
+        },
+        {
+          "number": 3,
+          "question": "If two rows of a determinant are interchanged, its value",
+          "options": ["is doubled", "is halved", "changes sign", "remains unchanged"]
+        },
+        {
+          "number": 4,
+          "question": "A determinant having two identical rows has value",
+          "options": ["0", "1", "−1", "equal to the sum of its entries"]
+        },
+        {
+          "number": 5,
+          "question": "The value of |2 1 3; 0 −4 5; 0 0 6| is",
+          "options": ["48", "−48", "24", "−24"]
+        },
+        {
+          "number": 6,
+          "question": "For A = [1 2 3; 0 4 5; 1 0 6], the cofactor A₁₂ is",
+          "options": ["−5", "5", "3", "−3"]
+        },
+        {
+          "number": 7,
+          "question": "If A is a 3 × 3 matrix and |A| = 2, then |3A| equals",
+          "options": ["6", "18", "27", "54"]
+        },
+        {
+          "number": 8,
+          "question": "For every square matrix A",
+          "options": ["|Aᵀ| = −|A|", "|Aᵀ| = |A|", "|Aᵀ| = 0", "|Aᵀ| = |A|²"]
+        },
+        {
+          "number": 9,
+          "question": "For square matrices A and B of the same order, |AB| equals",
+          "options": ["|A| + |B|", "|A| − |B|", "|A||B|", "|A|/|B|"]
+        },
+        {
+          "number": 10,
+          "question": "A square matrix A is invertible exactly when",
+          "options": ["|A| = 0", "|A| ≠ 0", "A is symmetric", "all entries of A are non-zero"]
+        },
+        {
+          "number": 11,
+          "question": "The area of the triangle with vertices (0, 0), (4, 0) and (0, 3) is",
+          "options": ["6 square units", "12 square units", "7 square units", "3 square units"]
+        },
+        {
+          "number": 12,
+          "question": "If |x 1; 2 3| = 0, then x equals",
+          "options": ["2/3", "3/2", "−2/3", "−3/2"]
+        },
+        {
+          "number": 13,
+          "question": "For a square matrix A of order n, A(adj A) equals",
+          "options": ["Aᵀ", "I", "|A|I", "|A|A"]
+        },
+        {
+          "number": 14,
+          "question": "A system of three linear equations in three variables has a unique solution when the determinant of its coefficient matrix is",
+          "options": ["zero", "non-zero", "one only", "negative only"]
+        }
+      ],
+      "assertions": [
+        {
+          "number": 15,
+          "assertion": "If |A| = 0, then A⁻¹ does not exist.",
+          "reason": "A square matrix is invertible if and only if its determinant is non-zero."
+        },
+        {
+          "number": 16,
+          "assertion": "The value of a determinant remains unchanged when any two rows are interchanged.",
+          "reason": "Interchanging any two rows changes the sign of a determinant."
+        }
+      ],
+      "written": {
+        "17": "Evaluate |1 2 3; 0 1 4; 5 6 0|.",
+        "18": "For A = [1 2; 3 4], find the cofactors A₁₁ and A₁₂.",
+        "19": "Using determinants, find the area of the triangle with vertices (1, 1), (4, 1) and (2, 5).",
+        "20": "Using determinant properties, evaluate |1 2 3; 2 4 6; 4 5 6| without a full expansion.",
+        "21": "Using the inverse-matrix method, solve 2x + y = 5 and x − y = 1.",
+        "22": "Examine the consistency of the equations 2x + 3y = 7 and 4x + 6y = 15.",
+        "23": "Using the inverse of the coefficient matrix, solve x + y + z = 6, x + 2y + 3z = 14 and 2x + y + 2z = 10.",
+        "24": [
+          "(a) Write the determinant expression for the area of ΔABC. [1]",
+          "(b) Find the area of ΔABC. [1]",
+          "(c) By comparing the areas of ΔAPB, ΔBPC and ΔCPA with the area of ΔABC, determine whether P lies inside the garden. [2]"
+        ]
+      },
+      "caseStudy": "A triangular garden has vertices A(1, 1), B(5, 1) and C(3, 5). A fountain is planned at P(3, 3). The designer uses determinants to check its position.",
+      "answerKey": [0, 2, 2, 0, 1, 1, 3, 1, 2, 1, 0, 0, 2, 1, 0, 3],
+      "solutions": {
+        "17": "Expanding along the first row gives 1(0 − 24) − 2(0 − 20) + 3(0 − 5) = −24 + 40 − 15 = 1.",
+        "18": "A₁₁ = (−1)¹⁺¹M₁₁ = 4. Also M₁₂ = 3, so A₁₂ = (−1)¹⁺²M₁₂ = −3.",
+        "19": "Area = ½|1(1 − 5) + 4(5 − 1) + 2(1 − 1)| = ½|−4 + 16| = 6 square units.",
+        "20": "The second row is exactly twice the first row. A determinant with two proportional rows is zero. Hence the determinant equals 0.",
+        "21": "Write AX = B with A = [2 1; 1 −1], X = [x; y] and B = [5; 1]. Since |A| = −3, A⁻¹ = (−1/3)[−1 −1; −1 2] = [1/3 1/3; 1/3 −2/3]. Thus X = A⁻¹B = [2; 1], so x = 2 and y = 1.",
+        "22": "The coefficient determinant D = |2 3; 4 6| = 12 − 12 = 0. Replacing the first column, Dₓ = |7 3; 15 6| = 42 − 45 = −3 ≠ 0. Hence the equations are inconsistent and have no solution.",
+        "23": "Let A = [1 1 1; 1 2 3; 2 1 2] and B = [6; 14; 10]. Here |A| = 2 and adj A = [1 −1 1; 4 0 −2; −3 1 1]. Therefore A⁻¹ = ½[1 −1 1; 4 0 −2; −3 1 1]. Hence X = A⁻¹B = ½[2; 4; 6] = [1; 2; 3]. Thus x = 1, y = 2 and z = 3.",
+        "24": "(a) Area = ½|1(1 − 5) + 5(5 − 1) + 3(1 − 1)|. (b) The area is ½|−4 + 20| = 8 square units. (c) Using the same determinant formula, area(ΔAPB) = 4, area(ΔBPC) = 2 and area(ΔCPA) = 2 square units. Their sum is 8 square units, equal to area(ΔABC), with all three component areas positive. Therefore P lies inside the garden."
+      },
+      "grade": 12,
+      "board": "CBSE",
+      "book": "NCERT Mathematics Part I",
+      "paperNumber": "01"
+    }
+  ],
+  "notes": [
+    {
+      "slug": "g12-relations-functions",
+      "chapter": "Relations and Functions",
+      "number": 1,
+      "grade": 12,
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Equivalence Relations, One-One & Onto Functions",
+      "concepts": [
+        {
+          "title": "Relation on a set",
+          "text": "A relation R on A is any subset of A × A. Its ordered pairs determine which elements are related, so the order of each pair matters."
+        },
+        {
+          "title": "Three relation properties",
+          "text": "Reflexive means every a is related to itself, symmetric means aRb forces bRa, and transitive means aRb together with bRc forces aRc."
+        },
+        {
+          "title": "Equivalence relation",
+          "text": "A relation that is reflexive, symmetric and transitive is an equivalence relation. Its equivalence classes partition the set into disjoint groups."
+        },
+        {
+          "title": "One-one and onto",
+          "text": "A one-one function never gives the same image to two different inputs. An onto function reaches every element of its stated codomain."
+        },
+        {
+          "title": "Bijective function",
+          "text": "A function that is both one-one and onto is bijective. Always use the stated domain and codomain when testing these properties."
+        }
+      ],
+      "formulas": [
+        "Reflexive: (a, a) ∈ R for every a ∈ A",
+        "Symmetric: aRb ⇒ bRa",
+        "Transitive: aRb and bRc ⇒ aRc",
+        "Equivalence relation = reflexive + symmetric + transitive",
+        "One-one: f(a) = f(b) ⇒ a = b",
+        "Onto: for every y in the codomain, there exists x in the domain such that f(x) = y",
+        "Bijective = one-one and onto"
+      ],
+      "method": [
+        "For a relation, test reflexivity, symmetry and transitivity separately and state a counterexample whenever a property fails.",
+        "To test one-one algebraically, start with f(a) = f(b) and try to deduce a = b.",
+        "To test onto, set y = f(x), solve for x and check that the resulting x belongs to the domain for every codomain value y.",
+        "For an equivalence relation, form classes by collecting every element related to a chosen representative and remove duplicate classes."
+      ],
+      "example": {
+        "question": "On Z, define xRy if x − y is divisible by 4. Show that R is an equivalence relation and find [1].",
+        "steps": [
+          "Since x − x = 0 is divisible by 4, R is reflexive.",
+          "Divisibility of x − y by 4 implies divisibility of y − x, so R is symmetric.",
+          "If 4 divides x − y and y − z, it divides their sum x − z, so R is transitive."
+        ],
+        "answer": "R is an equivalence relation and [1] = {4k + 1 : k ∈ Z} = {…, −7, −3, 1, 5, 9, …}."
+      },
+      "practice": [
+        {
+          "question": "On A = {1, 2}, is R = {(1, 1), (2, 2)} an equivalence relation?",
+          "answer": "Yes; it is reflexive, symmetric and transitive.",
+          "marks": 2
+        },
+        {
+          "question": "State which property fails for ≤ on R.",
+          "answer": "Symmetry fails; for example, 2 ≤ 3 but 3 ≰ 2.",
+          "marks": 2
+        },
+        {
+          "question": "Test whether f: R → R, f(x) = 5x − 1, is one-one.",
+          "answer": "It is one-one because f(a) = f(b) gives 5a − 1 = 5b − 1 and hence a = b.",
+          "marks": 2
+        },
+        {
+          "question": "Test whether f: R → [0, ∞), f(x) = x², is one-one and onto.",
+          "answer": "It is onto but not one-one, since f(a) = f(−a).",
+          "marks": 3
+        },
+        {
+          "question": "For xRy ⇔ x − y is divisible by 3 on Z, write [0], [1] and [2].",
+          "answer": "[0] = {3k}, [1] = {3k + 1}, [2] = {3k + 2}, where k ∈ Z.",
+          "marks": 3
+        },
+        {
+          "question": "Show that f: [0, ∞) → [1, ∞), f(x) = x² + 1, is bijective.",
+          "answer": "It is strictly increasing on [0, ∞), hence one-one; for each y ≥ 1, x = √(y − 1) gives f(x) = y, hence it is onto.",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "One counterexample is enough to disprove a relation property.",
+        "Do not confuse range with codomain when checking onto.",
+        "A function can be one-one without being onto, or onto without being one-one.",
+        "Equal equivalence classes should be written only once in the quotient set.",
+        "Binary operations and composition of functions are not included in the 2026–27 summative scope for this chapter."
+      ]
+    },
+    {
+      "slug": "g12-inverse-trigonometric-functions",
+      "chapter": "Inverse Trigonometric Functions",
+      "number": 2,
+      "grade": 12,
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Principal Values, Domains, Ranges & Graphs",
+      "concepts": [
+        {
+          "title": "Why principal branches are needed",
+          "text": "Trigonometric functions are periodic and not one-one on R. Restricting them to suitable intervals makes their inverses functions with one principal value for each input."
+        },
+        {
+          "title": "Sine and cosine inverses",
+          "text": "sin⁻¹ maps [−1, 1] to [−π/2, π/2], while cos⁻¹ maps [−1, 1] to [0, π]. These ranges decide the correct quadrant."
+        },
+        {
+          "title": "Tangent and cotangent inverses",
+          "text": "tan⁻¹ has domain R and range (−π/2, π/2). With the NCERT convention, cot⁻¹ has domain R and range (0, π)."
+        },
+        {
+          "title": "Composition requires care",
+          "text": "sin(sin⁻¹x) = x on [−1, 1], but sin⁻¹(sin θ) equals θ only when θ already lies in the principal range of sin⁻¹."
+        },
+        {
+          "title": "Graphs",
+          "text": "The graph of an inverse function is the reflection of the restricted original graph in y = x. Endpoints and asymptotes follow from the principal range."
+        }
+      ],
+      "formulas": [
+        "sin⁻¹: domain [−1, 1], range [−π/2, π/2]",
+        "cos⁻¹: domain [−1, 1], range [0, π]",
+        "tan⁻¹: domain R, range (−π/2, π/2)",
+        "cot⁻¹: domain R, range (0, π)",
+        "sin⁻¹x + cos⁻¹x = π/2 for −1 ≤ x ≤ 1",
+        "tan⁻¹x + tan⁻¹(1/x) = π/2 for x > 0 and −π/2 for x < 0",
+        "tan⁻¹u + tan⁻¹v = tan⁻¹((u + v)/(1 − uv)), with quadrant adjustment when required"
+      ],
+      "method": [
+        "Write the principal-value range of the inverse function before evaluating an angle.",
+        "Replace a non-principal angle by a coterminal or allied angle having the same trigonometric value inside that range.",
+        "For algebraic expressions, draw a right triangle after setting θ equal to the inverse-trigonometric expression.",
+        "When adding inverse tangents, calculate the tangent of the sum and then use signs and size to select the correct principal angle."
+      ],
+      "example": {
+        "question": "Find the principal value of sin⁻¹(sin(5π/6)).",
+        "steps": [
+          "The angle 5π/6 is outside [−π/2, π/2].",
+          "Use sin(5π/6) = sin(π/6) = 1/2.",
+          "The angle π/6 lies in the principal range of sin⁻¹."
+        ],
+        "answer": "sin⁻¹(sin(5π/6)) = π/6."
+      },
+      "practice": [
+        {
+          "question": "Evaluate cos⁻¹(−√3/2).",
+          "answer": "5π/6",
+          "marks": 2
+        },
+        {
+          "question": "Evaluate tan⁻¹(tan(−2π/3)).",
+          "answer": "π/3",
+          "marks": 2
+        },
+        {
+          "question": "If θ = cos⁻¹(4/5), find sin θ.",
+          "answer": "3/5",
+          "marks": 2
+        },
+        {
+          "question": "Evaluate sin⁻¹(1/2) + cos⁻¹(1/2).",
+          "answer": "π/2",
+          "marks": 3
+        },
+        {
+          "question": "Evaluate tan⁻¹(1/2) + tan⁻¹(1/3).",
+          "answer": "π/4",
+          "marks": 3
+        },
+        {
+          "question": "If θ = sin⁻¹(5/13), find cos 2θ.",
+          "answer": "119/169",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "sin⁻¹x means inverse sine, not 1/(sin x).",
+        "Never return an angle outside the stated principal-value range.",
+        "The endpoints ±π/2 are excluded from the range of tan⁻¹.",
+        "Check the sign of every square root from the principal quadrant.",
+        "For an inverse-tangent sum, a tangent value alone does not determine the quadrant."
+      ]
+    },
+    {
+      "slug": "g12-matrices",
+      "chapter": "Matrices",
+      "number": 3,
+      "grade": 12,
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Operations, Transpose, Symmetry & Invertibility",
+      "concepts": [
+        {
+          "title": "Order and equality",
+          "text": "An m × n matrix has m rows and n columns. Two matrices are equal only when their orders match and all corresponding entries are equal."
+        },
+        {
+          "title": "Matrix operations",
+          "text": "Addition requires equal orders. The product AB exists when the number of columns of A equals the number of rows of B, and its entries are row-by-column products."
+        },
+        {
+          "title": "Transpose and special matrices",
+          "text": "Transposition swaps rows and columns. A symmetric matrix satisfies Aᵀ = A, while a skew-symmetric matrix satisfies Aᵀ = −A and therefore has zero diagonal entries."
+        },
+        {
+          "title": "Non-commutativity",
+          "text": "Even when both AB and BA exist, they need not be equal. Non-zero matrices can also multiply to the zero matrix."
+        },
+        {
+          "title": "Inverse",
+          "text": "An inverse A⁻¹, if it exists, satisfies AA⁻¹ = A⁻¹A = I. The inverse of a square matrix is unique."
+        }
+      ],
+      "formulas": [
+        "AB is defined when columns of A = rows of B",
+        "(AB)ᵀ = BᵀAᵀ",
+        "(A + B)ᵀ = Aᵀ + Bᵀ",
+        "Symmetric matrix: Aᵀ = A",
+        "Skew-symmetric matrix: Aᵀ = −A",
+        "A = ½(A + Aᵀ) + ½(A − Aᵀ)",
+        "AA⁻¹ = A⁻¹A = I"
+      ],
+      "method": [
+        "Write the order of each matrix and check compatibility before adding or multiplying.",
+        "For a product entry, pair one complete row of the first matrix with one complete column of the second.",
+        "When transposing a product, reverse the factor order as well as transposing each factor.",
+        "To split a square matrix, compute ½(A + Aᵀ) and ½(A − Aᵀ), then verify their symmetry properties."
+      ],
+      "example": {
+        "question": "Express A = [2 3; −1 4] as the sum of a symmetric and a skew-symmetric matrix.",
+        "steps": [
+          "Find Aᵀ = [2 −1; 3 4].",
+          "Compute ½(A + Aᵀ) = [2 1; 1 4].",
+          "Compute ½(A − Aᵀ) = [0 2; −2 0]."
+        ],
+        "answer": "A = [2 1; 1 4] + [0 2; −2 0], the required symmetric and skew-symmetric parts."
+      },
+      "practice": [
+        {
+          "question": "State the order of [1 0 −2; 3 4 5].",
+          "answer": "2 × 3",
+          "marks": 2
+        },
+        {
+          "question": "Find [1 2; 0 3] + [2 −1; 4 0].",
+          "answer": "[3 1; 4 3]",
+          "marks": 2
+        },
+        {
+          "question": "Find the transpose of [1 2 3; 4 5 6].",
+          "answer": "[1 4; 2 5; 3 6]",
+          "marks": 2
+        },
+        {
+          "question": "For A = [1 2; 0 1] and B = [1 0; 3 1], find AB.",
+          "answer": "[7 2; 3 1]",
+          "marks": 3
+        },
+        {
+          "question": "Find X if 3X = [6 −3; 9 12].",
+          "answer": "X = [2 −1; 3 4]",
+          "marks": 3
+        },
+        {
+          "question": "Split A = [1 4; 2 3] into its symmetric and skew-symmetric parts.",
+          "answer": "Symmetric part [1 3; 3 3]; skew-symmetric part [0 1; −1 0].",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "Matrix multiplication is row by column, not entry by entry.",
+        "AB and BA may have different orders or one may not exist.",
+        "In (AB)ᵀ, reverse the order to BᵀAᵀ.",
+        "A skew-symmetric real matrix always has zero diagonal entries.",
+        "Do not cancel a matrix factor unless the required inverse is known to exist."
+      ]
+    },
+    {
+      "slug": "g12-determinants",
+      "chapter": "Determinants",
+      "number": 4,
+      "grade": 12,
+      "book": "NCERT Mathematics Part I",
+      "subtitle": "Properties, Adjoint, Area & Linear Systems",
+      "concepts": [
+        {
+          "title": "Determinant and expansion",
+          "text": "A determinant assigns a scalar to a square matrix. For order 3, expand along the row or column that makes the arithmetic shortest."
+        },
+        {
+          "title": "Minors and cofactors",
+          "text": "The minor Mᵢⱼ is obtained by deleting row i and column j. The cofactor Aᵢⱼ = (−1)ⁱ⁺ʲMᵢⱼ carries the alternating sign pattern."
+        },
+        {
+          "title": "Determinant properties",
+          "text": "Interchanging two rows changes the sign; equal or proportional rows give zero; and adding a multiple of one row to another leaves the value unchanged."
+        },
+        {
+          "title": "Adjoint and inverse",
+          "text": "The adjoint is the transpose of the cofactor matrix. A square matrix is invertible exactly when its determinant is non-zero."
+        },
+        {
+          "title": "Applications",
+          "text": "Determinants give triangle areas and diagnose linear systems. A non-zero coefficient determinant guarantees a unique solution."
+        }
+      ],
+      "formulas": [
+        "|a b; c d| = ad − bc",
+        "Aᵢⱼ = (−1)ⁱ⁺ʲMᵢⱼ",
+        "A(adj A) = (adj A)A = |A|I",
+        "A⁻¹ = (adj A)/|A|, when |A| ≠ 0",
+        "|AB| = |A||B| and |Aᵀ| = |A|",
+        "For n × n A, |kA| = kⁿ|A|",
+        "Area of triangle = ½|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|"
+      ],
+      "method": [
+        "Look for zeros, equal rows, proportional rows or a useful row operation before expanding a determinant.",
+        "For cofactors, write the checkerboard signs +, −, +; −, +, −; +, −, + before calculating minors.",
+        "To find an inverse, compute the determinant first; stop if it is zero, otherwise transpose the cofactor matrix and divide by the determinant.",
+        "For a linear system AX = B, establish |A| ≠ 0, calculate A⁻¹ and then use X = A⁻¹B."
+      ],
+      "example": {
+        "question": "Find the inverse of A = [2 1; 1 1].",
+        "steps": [
+          "|A| = 2(1) − 1(1) = 1 ≠ 0.",
+          "The cofactor matrix is [1 −1; −1 2], which is already symmetric.",
+          "Divide adj A by |A|."
+        ],
+        "answer": "A⁻¹ = [1 −1; −1 2]."
+      },
+      "practice": [
+        {
+          "question": "Evaluate |3 2; 1 4|.",
+          "answer": "10",
+          "marks": 2
+        },
+        {
+          "question": "Find the cofactor A₁₂ of A = [2 3; 4 5].",
+          "answer": "−4",
+          "marks": 2
+        },
+        {
+          "question": "If |A| = −2 for a 3 × 3 matrix, find |2A|.",
+          "answer": "−16",
+          "marks": 2
+        },
+        {
+          "question": "Find the area of the triangle with vertices (0, 0), (6, 0), (2, 4).",
+          "answer": "12 square units",
+          "marks": 3
+        },
+        {
+          "question": "Find the inverse of [3 1; 2 1].",
+          "answer": "[1 −1; −2 3]",
+          "marks": 3
+        },
+        {
+          "question": "Using the inverse-matrix method, solve x + y = 5 and 2x − y = 1.",
+          "answer": "x = 2, y = 3",
+          "marks": 4
+        }
+      ],
+      "tips": [
+        "A determinant is a number; a matrix is an array.",
+        "The cofactor sign depends on i + j, not on the sign of the entry.",
+        "Use determinant properties before a long expansion.",
+        "A zero determinant means no inverse, but a system may then have either no solution or infinitely many solutions.",
+        "Use the absolute value when a determinant gives an area."
+      ]
+    }
+  ]
+}
