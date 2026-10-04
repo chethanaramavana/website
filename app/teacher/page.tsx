@@ -328,7 +328,7 @@ export default function TeacherReviewPage() {
                           </a>
                         ))}
                       </div>
-                      <label className="mark-field"><span>Marks</span><input type="number" min="0" max={question.marks} value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
+                      <label className="mark-field"><span>Marks <small>½ allowed</small></span><input type="number" min="0" max={question.marks} step={question.marks > 1 ? 0.5 : 1} inputMode="decimal" value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
                       <details className="evaluation-sheet">
                         <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
                         <div className="evaluation-model-answer"><span>Model solution</span><p><MathText>{question.modelSolution}</MathText></p></div>

@@ -1,10 +1,19 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { ArrowLeft, CheckCircle2, Clock3, Loader2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Clock3, Loader2, Minus, X } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { PaperDefinition } from '@/lib/papers';
+import { writtenQuestionMarks } from '@/lib/assessment';
+import { getBriefMcqSolution, getBriefSolution } from '@/lib/brief-solutions';
 import MathText from '@/app/notes/math-text';
+
+const assertionReasonOptions = [
+  'Both Assertion and Reason are true, and Reason is the correct explanation of Assertion.',
+  'Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion.',
+  'Assertion is true, but Reason is false.',
+  'Assertion is false, but Reason is true.',
+];
 
 type ResultPayload = {
   submission: { paper_id: keyof typeof paperDefinitionsById; student_name: string; status: string; mcq_answers: Record<string, number>; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string };
@@ -46,16 +55,47 @@ export default function StudentResult({ id }: { id: string }) {
     <section className="student-result-section"><h2>Objective-question review</h2><div className="student-mcq-review">{paper?.mcqs.map((question) => {
       const chosen = result.submission.mcq_answers[String(question.number)];
       const correct = result.correctAnswers[String(question.number)];
-      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p><MathText>{question.question}</MathText></p><span>Your answer: {chosen === undefined ? 'Not answered' : <>{String.fromCharCode(65 + chosen)}. <MathText>{question.options[chosen]}</MathText></>}<br />Correct answer: {String.fromCharCode(65 + correct)}. <MathText>{question.options[correct]}</MathText></span></article>;
+      const isCorrect = chosen === correct;
+      const status = isCorrect ? 'Correct' : chosen === undefined ? 'Not answered' : 'Incorrect';
+      const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
+      const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
+      return <article className={outcome} key={question.number}>
+        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : chosen === undefined ? <Minus /> : <X />}</span>
+        <div className="student-review-copy">
+          <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
+          <p><MathText>{question.question}</MathText></p>
+          {!isCorrect && <div className="student-quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correct)}. <MathText>{question.options[correct]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+        </div>
+      </article>;
     })}{paper?.assertions.map((question) => {
       const chosen = result.submission.mcq_answers[String(question.number)];
       const correct = result.correctAnswers[String(question.number)];
-      return <article className={chosen === correct ? 'correct' : 'incorrect'} key={question.number}><strong>Question {question.number}</strong><p>Assertion: <MathText>{question.assertion}</MathText> Reason: <MathText>{question.reason}</MathText></p><span>Your answer: {chosen === undefined ? 'Not answered' : String.fromCharCode(65 + chosen)} · Correct: {String.fromCharCode(65 + correct)}</span></article>;
+      const isCorrect = chosen === correct;
+      const status = isCorrect ? 'Correct' : chosen === undefined ? 'Not answered' : 'Incorrect';
+      const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
+      const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
+      return <article className={outcome} key={question.number}>
+        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : chosen === undefined ? <Minus /> : <X />}</span>
+        <div className="student-review-copy">
+          <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
+          <p><b>Assertion:</b> <MathText>{question.assertion}</MathText> <b>Reason:</b> <MathText>{question.reason}</MathText></p>
+          {!isCorrect && <div className="student-quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correct)}. {assertionReasonOptions[correct]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+        </div>
+      </article>;
     })}</div></section>
-    <section className="student-result-section"><h2>Written marks and model solutions</h2><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
+    <section className="student-result-section"><h2>Written marks and brief solutions</h2><p className="student-solution-note">Your teacher can award partial marks when your method is partly correct.</p><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
       const mark = result.marks.find((entry) => entry.question_number === number);
       const value = paper?.written[number];
-      return <article key={number}><div><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded} marks` : 'Awaiting marks'}</em></div><p><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p><span><MathText>{result.writtenSolutions[String(number)]}</MathText></span></article>;
+      const maximum = writtenQuestionMarks[number];
+      const outcome = !mark ? 'pending' : mark.marks_awarded === maximum ? 'full' : mark.marks_awarded > 0 ? 'partial' : 'zero';
+      return <article className={outcome} key={number}>
+        <span className="student-written-number">{number}</span>
+        <div className="student-written-copy">
+          <div className="student-written-heading"><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
+          <p className="student-written-question"><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p>
+          <div className="student-written-solution"><span>Brief solution</span><p><MathText>{getBriefSolution(result.submission.paper_id, number, result.writtenSolutions[String(number)])}</MathText></p></div>
+        </div>
+      </article>;
     })}</div></section>
   </main>;
 }

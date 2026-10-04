@@ -64,11 +64,14 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
     const { id } = await context.params;
     const payload = await request.json() as { marks?: Record<string, number>; feedback?: string };
     const marks = payload.marks ?? {};
+    const normalizedMarks: Record<string, number> = {};
     for (const [questionText, maximum] of Object.entries(writtenQuestionMarks)) {
       const awarded = marks[questionText];
-      if (!Number.isInteger(awarded) || awarded < 0 || awarded > maximum) {
-        return jsonError(`Enter a mark from 0 to ${maximum} for question ${questionText}.`, 400);
+      const increment = maximum > 1 ? 0.5 : 1;
+      if (!Number.isFinite(awarded) || !Number.isInteger(awarded / increment) || awarded < 0 || awarded > maximum) {
+        return jsonError(`Enter a mark from 0 to ${maximum} in ${increment}-mark steps for question ${questionText}.`, 400);
       }
+      normalizedMarks[questionText] = awarded;
     }
     const feedback = (payload.feedback ?? '').trim().slice(0, 2000);
     const db = getDatabase();
@@ -80,8 +83,8 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
       INSERT INTO question_marks (submission_id, question_number, marks_awarded, feedback)
       VALUES (?, ?, ?, '')
       ON CONFLICT(submission_id, question_number) DO UPDATE SET marks_awarded = excluded.marks_awarded
-    `).bind(id, Number(questionText), marks[questionText]));
-    const writtenScore = Object.values(marks).reduce((sum, mark) => sum + mark, 0);
+    `).bind(id, Number(questionText), normalizedMarks[questionText]));
+    const writtenScore = Object.values(normalizedMarks).reduce((sum, mark) => sum + mark, 0);
     statements.push(db.prepare(`
       UPDATE submissions SET status = 'marked', written_score = ?, total_score = ?, teacher_feedback = ?,
         marked_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = ?

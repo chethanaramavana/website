@@ -21,6 +21,7 @@ import {
   LogOut,
   Mail,
   MapPin,
+  Minus,
   Save,
   Send,
   ShieldCheck,
@@ -42,6 +43,7 @@ import {
 } from '@/components/ui/dialog';
 import MathText from '@/app/notes/math-text';
 import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
+import { getBriefMcqSolution, getBriefSolution } from '@/lib/brief-solutions';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -1565,17 +1567,23 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             </div>
 
             <div className="answer-review-section">
-              <h3>Section A — MCQ answers</h3>
+              <h3>Section A — Objective-question review</h3>
               <div className="mcq-answer-review">
                 {currentPaper.mcqs.map((item) => {
                   const studentAnswer = result.answers[String(item.number)];
                   const correctAnswer = result.correctAnswers[String(item.number)];
                   const isCorrect = studentAnswer === correctAnswer;
+                  const status = isCorrect ? 'Correct' : studentAnswer === undefined ? 'Not answered' : 'Incorrect';
+                  const outcome = isCorrect ? 'correct' : studentAnswer === undefined ? 'unanswered' : 'incorrect';
+                  const briefSolution = getBriefMcqSolution(currentPaper.id, item.number);
                   return (
-                    <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={item.number}>
-                      <div><strong>Question {item.number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
-                      <p><span>Your answer</span><b>{studentAnswer === undefined ? 'Not answered' : <>{String.fromCharCode(65 + studentAnswer)}. <MathText>{item.options[studentAnswer]}</MathText></>}</b></p>
-                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. <MathText>{item.options[correctAnswer]}</MathText></b></p>
+                    <div className={`answer-review-card ${outcome}`} key={item.number}>
+                      <span className="answer-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : studentAnswer === undefined ? <Minus /> : <X />}</span>
+                      <div className="answer-review-card-copy">
+                        <div className="answer-review-card-heading"><strong>Question {item.number}</strong><span className="answer-status">{status}</span></div>
+                        <p className="answer-review-question"><MathText>{item.question}</MathText></p>
+                        {!isCorrect && <div className="quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correctAnswer)}. <MathText>{item.options[correctAnswer]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+                      </div>
                     </div>
                   );
                 })}
@@ -1583,12 +1591,17 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                   const studentAnswer = result.answers[String(number)];
                   const correctAnswer = result.correctAnswers[String(number)];
                   const isCorrect = studentAnswer === correctAnswer;
-                  const studentAnswerText = studentAnswer === undefined ? 'Not answered' : `${String.fromCharCode(65 + studentAnswer)}. ${assertionReasonOptions[studentAnswer]}`;
+                  const status = isCorrect ? 'Correct' : studentAnswer === undefined ? 'Not answered' : 'Incorrect';
+                  const outcome = isCorrect ? 'correct' : studentAnswer === undefined ? 'unanswered' : 'incorrect';
+                  const briefSolution = getBriefMcqSolution(currentPaper.id, number);
                   return (
-                    <div className={`answer-review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={number}>
-                      <div><strong>Question {number}</strong><span className="answer-status">{isCorrect ? 'Correct' : 'Check answer'}</span></div>
-                      <p><span>Your answer</span><b>{studentAnswerText}</b></p>
-                      <p><span>Correct answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}</b></p>
+                    <div className={`answer-review-card ${outcome}`} key={number}>
+                      <span className="answer-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : studentAnswer === undefined ? <Minus /> : <X />}</span>
+                      <div className="answer-review-card-copy">
+                        <div className="answer-review-card-heading"><strong>Question {number}</strong><span className="answer-status">{status}</span></div>
+                        <p className="answer-review-question"><b>Assertion:</b> <MathText>{currentPaper.assertions.find((item) => item.number === number)?.assertion ?? ''}</MathText> <b>Reason:</b> <MathText>{currentPaper.assertions.find((item) => item.number === number)?.reason ?? ''}</MathText></p>
+                        {!isCorrect && <div className="quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+                      </div>
                     </div>
                   );
                 })}
@@ -1596,11 +1609,11 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             </div>
 
             <div className="answer-review-section written-solution-section">
-              <h3>Sections B–E — Model solutions</h3>
-              <p className="solution-note">Use these to compare your method. Your teacher will still review your uploaded work and award the written-answer marks.</p>
+              <h3>Sections B–E — Brief solutions</h3>
+              <p className="solution-note">Compare these key steps with your working. Your teacher will review the method and can award partial marks.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><strong>Question {number}</strong><p><MathText>{result.writtenSolutions[String(number)]}</MathText></p></article>
+                  <article key={number}><span className="written-solution-number">{number}</span><div><strong>Brief solution</strong><p><MathText>{getBriefSolution(currentPaper.id, number, result.writtenSolutions[String(number)])}</MathText></p></div></article>
                 ))}
               </div>
             </div>
