@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ramavanamath.com'),
   title: 'Ramavana Mathematical Centre | Mathematics Practice',
   description:
     'Chapter-wise mathematics practice for CBSE, ICSE and IGCSE students.',
@@ -20,6 +21,30 @@ export const metadata: Metadata = {
     icon: [{ url: '/favicon.png', type: 'image/png', sizes: '64x64' }],
     shortcut: '/favicon.png',
     apple: '/ramavana-mark.png',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://ramavanamath.com',
+    siteName: 'Ramavana Mathematical Centre',
+    title: 'Ramavana Mathematical Centre | Mathematics Practice',
+    description:
+      'Clear chapter notes and exam-style mathematics practice for Grades 5 to 12.',
+    images: [
+      {
+        url: '/ramavana-pamphlet-whatsapp.jpg',
+        width: 1749,
+        height: 2481,
+        alt: 'Ramavana Mathematical Centre student pamphlet',
+        type: 'image/jpeg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ramavana Mathematical Centre | Mathematics Practice',
+    description:
+      'Clear chapter notes and exam-style mathematics practice for Grades 5 to 12.',
+    images: ['/ramavana-pamphlet-whatsapp.jpg'],
   },
 };
 
