@@ -285,8 +285,8 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
     case 'polynomial':
       return <>
         {axis}
-        <path d="M125 72C180 260 250 260 320 95C390 260 460 260 525 72" className="visual-curve" />
-        <circle cx="165" cy="160" r="6" className="visual-dot-gold"/><circle cx="475" cy="160" r="6" className="visual-dot-gold"/>
+        <path d="M90 230C130 230 140 160 170 160S220 65 270 85S300 160 330 160S385 245 430 225S470 160 500 160S540 90 560 95" className="visual-curve" />
+        <circle cx="170" cy="160" r="6" className="visual-dot-gold"/><circle cx="330" cy="160" r="6" className="visual-dot-gold"/><circle cx="500" cy="160" r="6" className="visual-dot-gold"/>
         <text x="320" y="305" textAnchor="middle" className="visual-small">x-intercepts are real zeroes</text>
       </>;
     case 'quadratic':
@@ -354,7 +354,7 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
     case 'mapping':
       return <>
         <ellipse cx="180" cy="160" rx="78" ry="120" className="visual-set-a"/><ellipse cx="460" cy="160" rx="78" ry="120" className="visual-set-b"/>
-        {[95,145,195,245].map((y,i)=><circle key={`a${y}`} cx="180" cy={y} r="7" className="visual-dot"/>)}{[105,160,215].map(y=><circle key={`b${y}`} cx="460" cy={y} r="7" className="visual-dot-gold"/>)}
+        {[95,145,195,245].map(y=><circle key={`a${y}`} cx="180" cy={y} r="7" className="visual-dot"/>)}{[105,160,215].map(y=><circle key={`b${y}`} cx="460" cy={y} r="7" className="visual-dot-gold"/>)}
         <path d="M190 95 448 105M190 145 448 160M190 195 448 215M190 245 448 215" className="visual-arrow"/>{[[448,105],[448,160],[448,215]].map(([x,y])=><path key={y} d={`m${x} ${y}-12-7v14Z`} className="visual-accent-fill"/>)}
         <text x="180" y="35" textAnchor="middle" className="visual-small">domain</text><text x="460" y="35" textAnchor="middle" className="visual-small">codomain</text>
       </>;
@@ -407,7 +407,7 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
     case 'determinant':
       return <>
         <path d="M140 240 260 75 500 75 380 240Z" className="visual-feasible"/><path d="M140 240 260 75M140 240 380 240M260 75 500 75M380 240 500 75" className="visual-line"/><path d="M140 240 500 75" className="visual-guide"/>
-        <text x="320" y="160" textAnchor="middle" className="visual-number">|ad − bc|</text><text x="320" y="287" textAnchor="middle" className="visual-small">signed area scale</text>
+        <text x="320" y="160" textAnchor="middle" className="visual-number">ad − bc</text><text x="320" y="287" textAnchor="middle" className="visual-small">signed area scale</text>
       </>;
     case 'continuity':
       return <>
@@ -415,11 +415,19 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
         <text x="135" y="270" className="visual-small">continuous</text><text x="260" y="75" className="visual-small">hole: limit exists</text><text x="450" y="260" className="visual-small">jump</text>
       </>;
     case 'calculus-area':
-    case 'between-curves':
       return <>
         {axis}<path d="M100 220C180 245 220 80 330 100S455 220 540 75" className="visual-curve"/>
         {Array.from({length:12},(_,i)=><rect key={i} x={145+i*27} y={118+Math.abs(i-6)*7} width="23" height={42-Math.abs(i-6)*2} className="visual-strip"/>)}
         <path d="M145 160H465" className="visual-gold"/><text x="315" y="285" textAnchor="middle" className="visual-label">∫ f(x) dx accumulates thin strips</text>
+      </>;
+    case 'between-curves':
+      return <>
+        {axis}
+        <path d="M110 165Q320 35 530 165" className="visual-curve"/>
+        <path d="M110 165Q320 295 530 165" className="visual-gold"/>
+        {[[145,145,185],[180,125,205],[215,110,220],[250,100,230],[285,95,235],[320,95,235],[355,95,235],[390,100,230],[425,110,220],[460,125,205],[495,145,185]].map(([x,y1,y2])=><path key={x} d={`M${x} ${y1}V${y2}`} className="visual-strip-line"/>)}
+        <circle cx="110" cy="165" r="6" className="visual-dot-gold"/><circle cx="530" cy="165" r="6" className="visual-dot-gold"/>
+        <text x="320" y="285" textAnchor="middle" className="visual-label">∫ [top − bottom] dx</text>
       </>;
     case 'slope-field':
       return <>
@@ -441,8 +449,8 @@ export default function NotesVisual({ notes }: { notes: ChapterNotes }) {
   return (
     <figure className="study-visual">
       <div className="study-visual-heading"><span>See the idea</span><h3>{meta.title}</h3></div>
-      <svg viewBox="0 0 640 320" role="img" aria-label={`${meta.caption} This diagram supports ${notes.chapter}.`}>
-        <title>{meta.caption}</title>
+      <svg viewBox="0 0 640 320" aria-labelledby={`notes-visual-title-${notes.slug}`}>
+        <title id={`notes-visual-title-${notes.slug}`}>{meta.caption} This diagram supports {notes.chapter}.</title>
         <Diagram kind={kind} />
       </svg>
       <figcaption>{meta.caption}</figcaption>

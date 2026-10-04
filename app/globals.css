@@ -467,6 +467,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .visual-feasible { fill: rgba(22,140,146,.16); stroke: #168c92; }
 .visual-hole { fill: #fffdfa; stroke: #168c92; stroke-width: 2.5; }
 .visual-strip { fill: rgba(210,155,45,.34); stroke: #d29b2d; stroke-width: .8; }
+.visual-strip-line { fill: none; stroke: #d29b2d; stroke-width: 2; opacity: .72; }
 .visual-field { fill: none; stroke: #8ea7ae; stroke-width: 1.2; stroke-linecap: round; }
 
 .study-concept-list { display: grid; gap: 13px; }
