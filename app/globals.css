@@ -864,10 +864,30 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .help-desk-contacts span, .help-desk-contacts small, .help-desk-contacts strong { display: block; }
 .help-desk-contacts small, .help-desk-contacts a > span:first-child { color: #7a7287; font-size: .62rem; font-weight: 750; }
 .help-desk-contacts strong { margin-top: 2px; font-size: .73rem; }
+.centre-location { width: min(100% - 40px, 1180px); position: relative; z-index: 1; margin: 0 auto 24px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr); overflow: hidden; border: 1px solid #ded7ea; border-radius: 24px; background: #fff; box-shadow: 0 15px 38px rgba(42,49,95,.09); }
+.centre-location-copy { padding: 34px 32px; display: flex; flex-direction: column; justify-content: center; }
+.centre-location-kicker { margin: 0 0 10px; display: inline-flex; align-items: center; gap: 7px; color: var(--rust); font-size: .7rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+.centre-location-kicker svg { width: 17px; height: 17px; }
+.centre-location h2 { margin: 0; max-width: 520px; color: var(--navy); font: 700 clamp(1.55rem, 2.4vw, 2.2rem)/1.08 Georgia, serif; }
+.centre-location-address { margin: 14px 0 0; max-width: 560px; color: #5f6975; font-size: .83rem; line-height: 1.65; }
+.centre-location-actions { margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.centre-location-actions a { text-decoration: none; font-weight: 800; }
+.centre-location-primary { min-height: 46px; padding: 10px 15px; display: inline-flex; align-items: center; gap: 8px; border-radius: 13px; color: #fff; background: var(--primary); box-shadow: 0 9px 20px rgba(89,54,167,.19); }
+.centre-location-primary:hover { background: #4e2e98; }
+.centre-location-primary svg { width: 16px; height: 16px; }
+.centre-location-primary svg:last-child { width: 14px; opacity: .82; }
+.centre-location-website { padding: 8px 3px; color: var(--teal); font-size: .8rem; }
+.centre-location-website:hover { color: var(--rust); }
+.centre-location-map { min-height: 330px; position: relative; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 20% 20%, rgba(22,141,148,.16), transparent 32%), radial-gradient(circle at 78% 74%, rgba(89,54,167,.14), transparent 34%), #f0edf6; }
+.centre-location-map-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 8px; color: #6f6585; font-size: .78rem; font-weight: 800; }
+.centre-location-map-fallback svg { width: 19px; height: 19px; color: var(--rust); }
+.centre-location-map iframe { width: 100%; height: 100%; min-height: 330px; position: relative; z-index: 1; display: block; border: 0; background: transparent; }
 .site-footer { width: min(100% - 40px, 1180px); min-height: 108px; position: relative; z-index: 1; margin: 0 auto; padding: 25px 0 34px; display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 28px; border-top: 1px solid rgba(89,54,167,.16); color: #736f82; font-size: .76rem; }
 .footer-brand strong, .footer-brand span { display: block; }
 .footer-brand strong { color: var(--navy); font: 700 .9rem Georgia, serif; }
 .footer-brand span { margin-top: 5px; color: #80798c; font-size: .7rem; letter-spacing: .06em; }
+.footer-brand a { margin-top: 7px; display: inline-block; color: var(--primary); font-size: .7rem; font-weight: 800; text-decoration: none; }
+.footer-brand a:hover { color: var(--rust); }
 .footer-links { display: flex; align-items: center; gap: 18px; }
 .legal-link { padding: 4px 0; border: 0; color: #514376; background: transparent; cursor: pointer; font-size: .75rem; font-weight: 750; text-decoration: none; }
 .legal-link:hover { color: var(--rust); }
@@ -949,7 +969,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 }
 
 @media (max-width: 580px) {
-  .site-header, .home-view, .content-view, .help-desk, .site-footer { width: min(100% - 24px, 1060px); }
+  .site-header, .home-view, .content-view, .help-desk, .centre-location, .site-footer { width: min(100% - 24px, 1060px); }
   .site-header { min-height: 70px; grid-template-columns: auto auto; justify-content: space-between; }
   .brand-name { display: none; }
   .brand-mark { width: 46px; height: 46px; flex-basis: 46px; }
@@ -1053,6 +1073,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
   .help-desk { padding: 20px; grid-template-columns: auto 1fr; align-items: start; }
   .help-desk-contacts { grid-column: 1 / -1; width: 100%; }
   .help-desk-contacts a { width: 100%; justify-content: center; }
+  .centre-location { grid-template-columns: 1fr; }
+  .centre-location-copy { padding: 25px 20px; }
+  .centre-location-map, .centre-location-map iframe { min-height: 280px; }
+  .centre-location-actions { align-items: stretch; flex-direction: column; }
+  .centre-location-primary { justify-content: center; }
+  .centre-location-website { text-align: center; }
   .site-footer { grid-template-columns: 1fr; gap: 17px; text-align: center; justify-items: center; }
   .footer-links { gap: 20px; }
   .footer-copy { grid-column: auto; }
@@ -1120,7 +1146,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 }
 
 @media (max-width: 400px) {
-  .site-header, .home-view, .content-view, .help-desk, .site-footer { width: min(100% - 16px, 1060px); }
+  .site-header, .home-view, .content-view, .help-desk, .centre-location, .site-footer { width: min(100% - 16px, 1060px); }
   .brand-mark { width: 42px; height: 42px; flex-basis: 42px; }
   .brand-mark img { width: 130px; left: -44px; }
   .learning-hero { padding: 25px 17px 20px; border-radius: 20px; }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import Link from 'next/link';
 import {
   Archive,
   ArrowLeft,
@@ -20,6 +21,7 @@ import {
   Loader2,
   LogOut,
   Mail,
+  MapPin,
   Save,
   Send,
   ShieldCheck,
@@ -52,6 +54,8 @@ type BoardName = (typeof boards)[number]['name'];
 
 const helpDeskEmail = 'chethanamanasa21@gmail.com';
 const helpDeskPhone = '+91 93539 28169';
+const googleMapsUrl = 'https://www.google.com/maps?cid=9059168596499950165';
+const googleMapsEmbedUrl = 'https://www.google.com/maps?q=place_id%3AChIJDawjBHkVrjsRVerAStehuH0&output=embed';
 
 const previousPaperResources = [
   {
@@ -527,8 +531,34 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         </div>
       </section>
 
+      {board === null && (
+        <section className="centre-location" id="location" aria-labelledby="location-title">
+          <div className="centre-location-copy">
+            <p className="centre-location-kicker"><MapPin /> Visit Ramavana</p>
+            <h2 id="location-title">Find us in HSR Layout, Bengaluru</h2>
+            <p className="centre-location-address">Near Sobha Daffodil, Haralur, PWD Quarters, 1st Sector, HSR Layout, Harlur, Bengaluru, Karnataka 560102.</p>
+            <div className="centre-location-actions">
+              <a className="centre-location-primary" href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                <MapPin /> Open in Google Maps <ExternalLink />
+              </a>
+              <Link className="centre-location-website" href="/">ramavanamath.com</Link>
+            </div>
+          </div>
+          <div className="centre-location-map">
+            <span className="centre-location-map-fallback"><MapPin /> Interactive Google map</span>
+            <iframe
+              title="Ramavana Mathematical Centre location on Google Maps"
+              src={googleMapsEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </section>
+      )}
+
       <footer className="site-footer">
-        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span></div>
+        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span><Link href="/">ramavanamath.com</Link></div>
         <nav className="footer-links" aria-label="Legal information">
           <a className="legal-link" href="/terms">Terms &amp; Conditions</a>
           <a className="legal-link" href="/privacy-policy">Privacy Policy</a>
