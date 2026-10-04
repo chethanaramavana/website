@@ -55,7 +55,7 @@ type BoardName = (typeof boards)[number]['name'];
 const helpDeskEmail = 'chethanamanasa21@gmail.com';
 const helpDeskPhone = '+91 93539 28169';
 const googleMapsUrl = 'https://www.google.com/maps?cid=9059168596499950165';
-const googleMapsEmbedUrl = 'https://www.google.com/maps?q=place_id%3AChIJDawjBHkVrjsRVerAStehuH0&output=embed';
+const googleMapsEmbedUrl = 'https://www.google.com/maps?q=12.9011804,77.6539704&z=16&output=embed';
 
 const previousPaperResources = [
   {
