@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle2, Clock3, Loader2, LogOut } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { StudentRecordsPayload } from '@/lib/student-records';
@@ -38,7 +37,7 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
               const board = paper?.board ?? 'CBSE';
-              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>{board} · Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><Link href={`/${board.toLowerCase()}/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`}>Open chapter</Link></article> : null;
+              return paper ? <article key={paperId}><CheckCircle2 /><span><strong>{paper.chapter}</strong><small>{board} · Grade {paper.grade ?? 10} · {payment ? <><b>₹{(payment.amount_paise / 100).toFixed(0)} paid</b> via {payment.payment_source === 'razorpay' ? 'Razorpay' : 'manual payment'} on {new Date(`${payment.created_at}Z`).toLocaleDateString()}</> : 'No payment needed again.'}</small></span><a href={`/${board.toLowerCase()}/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`}>Open chapter</a></article> : null;
             })}</div> : <div className="student-account-empty"><BookOpen /><span>Your approved chapters will appear here.</span></div>}
           </section>
           <section className="student-results-section">

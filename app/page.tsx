@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
-import Link from 'next/link';
 import {
   Archive,
   ArrowLeft,
@@ -541,7 +540,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
               <a className="centre-location-primary" href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
                 <MapPin /> Open in Google Maps <ExternalLink />
               </a>
-              <Link className="centre-location-website" href="/">ramavanamath.com</Link>
+              <a className="centre-location-website" href="/">ramavanamath.com</a>
             </div>
           </div>
           <div className="centre-location-map">
@@ -558,7 +557,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       )}
 
       <footer className="site-footer">
-        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span><Link href="/">ramavanamath.com</Link></div>
+        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span><a href="/">ramavanamath.com</a></div>
         <nav className="footer-links" aria-label="Legal information">
           <a className="legal-link" href="/terms">Terms &amp; Conditions</a>
           <a className="legal-link" href="/privacy-policy">Privacy Policy</a>
