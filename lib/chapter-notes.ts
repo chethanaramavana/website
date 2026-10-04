@@ -23,6 +23,27 @@ const notes = (value: ChapterNotes) => value;
 
 export const chapterNotesBySlug: Record<string, ChapterNotes> = Object.fromEntries([
   notes({
+    slug:'real-numbers', chapter:'Real Numbers', number:1, grade:10, board:'CBSE', book:'NCERT Mathematics', subtitle:'Prime Factorisation, HCF, LCM & Irrationality',
+    concepts:[
+      {title:'Fundamental Theorem of Arithmetic',text:'Every composite number has a unique prime factorisation, apart from the order of its prime factors. This lets us compare numbers using their prime-power building blocks.'},
+      {title:'HCF and LCM',text:'The HCF uses each common prime with its least exponent. The LCM uses every required prime with its greatest exponent.'},
+      {title:'Euclid’s division idea',text:'For positive integers a and b, a=bq+r with 0≤r<b. Repeating the division with the divisor and remainder eventually gives the HCF.'},
+      {title:'Irrational numbers',text:'An irrational number cannot be written as p/q for integers p and non-zero q. A contradiction proof assumes such a fraction exists and exposes an impossible common factor.'},
+    ],
+    formulas:['For positive a,b: HCF(a,b)×LCM(a,b)=a×b','Euclid’s division lemma: a=bq+r, 0≤r<b','A rational number p/q in lowest form has a terminating decimal exactly when q=2ᵐ5ⁿ','If p is prime and p divides a², then p divides a'],
+    method:['Prime-factorise each number or begin Euclid’s division algorithm.','For HCF choose common primes with the least powers; for LCM choose all primes with greatest powers.','In a decimal question, first reduce the fraction to lowest form and inspect the denominator.','In an irrationality proof, state the assumption clearly and finish by naming the contradiction.'],
+    example:{question:'Use prime factorisation to find the HCF and LCM of 72 and 120.',steps:['72=2³×3² and 120=2³×3×5.','HCF=2³×3=24 because the common primes use their least powers.','LCM=2³×3²×5=360 because every prime uses its greatest power.'],answer:'HCF=24 and LCM=360; check: 24×360=72×120.'},
+    practice:[
+      {question:'Prime-factorise 1,260.',answer:'1,260=2²×3²×5×7',marks:2},
+      {question:'Find the HCF and LCM of 96 and 404.',answer:'HCF=4; LCM=9,696',marks:2},
+      {question:'Decide whether 13/160 has a terminating decimal expansion.',answer:'Yes; 160=2⁵×5',marks:2},
+      {question:'Use Euclid’s algorithm to find HCF(867,255).',answer:'HCF=51',marks:3},
+      {question:'Show that 6ⁿ cannot end in 0 for any natural number n.',answer:'6ⁿ=2ⁿ3ⁿ has no factor 5, so it cannot be divisible by 10',marks:3},
+      {question:'Prove that √5 is irrational.',answer:'Assuming √5=p/q in lowest form forces 5 to divide both p and q, a contradiction',marks:4},
+    ],
+    tips:['Prime factorisation is unique only up to the order of factors.','Reduce a fraction before applying the denominator test.','HCF takes least exponents; LCM takes greatest exponents.','A contradiction proof must identify exactly which original assumption becomes impossible.'],
+  }),
+  notes({
     slug:'polynomials', chapter:'Polynomials', number:2, subtitle:'Zeroes, Coefficients & Division Algorithm',
     concepts:[
       {title:'Polynomial and degree',text:'A polynomial in x has non-negative integral powers of x. Its degree is the greatest power with a non-zero coefficient.'},

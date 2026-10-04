@@ -10,7 +10,7 @@ from reportlab.pdfgen import canvas
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "output" / "pdf" / "ramavana-mathematical-centre-pamphlet.pdf"
+OUTPUT = ROOT / "output" / "pdf" / "ramavana-mathematical-centre-pamphlet-v2.pdf"
 TMP = ROOT / "tmp" / "pdfs"
 LOGO = ROOT / "public" / "ramavana-paper-logo.png"
 PHOTO = ROOT / "public" / "students-studying.png"
@@ -140,7 +140,7 @@ def make_pdf():
     safe_x = 10 * mm
     top = page_h - 11 * mm
     logo_size = 24 * mm
-    c.drawImage(str(LOGO), safe_x, top - logo_size, logo_size, logo_size, preserveAspectRatio=True, mask="auto")
+    c.drawImage(str(LOGO), safe_x, top - logo_size + 3 * mm, logo_size, logo_size, preserveAspectRatio=True, mask="auto")
 
     header_x = safe_x + logo_size + 5 * mm
     c.setFillColor(PURPLE)
@@ -151,7 +151,7 @@ def make_pdf():
     c.drawString(header_x, top - 11.1 * mm, "Ramavana Mathematical Centre")
     c.setFillColor(MUTED)
     c.setFont(FONTS["BrandSans"], 7.3)
-    c.drawString(header_x, top - 16.1 * mm, "Chapter-wise mathematics learning and exam practice")
+    c.drawString(header_x, top - 16.1 * mm, "Mathematics learning and exam practice for Grades 5 to 12")
 
     hero_x = safe_x
     hero_y = 126 * mm
@@ -191,7 +191,7 @@ def make_pdf():
     c.roundRect(safe_x, pill_y, hero_w, 8 * mm, 7, stroke=0, fill=1)
     c.setFillColor(TEAL)
     c.setFont(FONTS["BrandSansBold"], 7.4)
-    pill_text = "CBSE - Grades 6, 10, 11 & 12        ICSE - Grade 6"
+    pill_text = "MATHEMATICS FOR GRADES 5 TO 12        CBSE & ICSE"
     c.drawCentredString(page_w / 2, pill_y + 2.8 * mm, pill_text)
 
     gap = 4 * mm

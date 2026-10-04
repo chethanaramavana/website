@@ -1047,7 +1047,7 @@ function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
   return (
     <a className="revision-sheet revision-link" href={`/notes/${slug}`} target="_blank">
       <span><BookOpen /></span>
-      <div><small>Free chapter notes</small><strong>{paper.chapter} Study Guide</strong><em>Clear explanations, worked examples and practice · 3 pages</em></div>
+      <div><small>Free chapter notes</small><strong>{paper.chapter} Learning Guide</strong><em>Visual explanations, worked reasoning and self-check practice</em></div>
       <b>Open notes <ArrowRight /></b>
     </a>
   );
