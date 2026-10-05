@@ -7,12 +7,14 @@ import NotesVisual, { getNotesVisualMeta, getNotesVisualKind } from './notes-vis
 import { foundationExamples, shortcuts } from './teaching-support';
 import CircleTeaching, { CircleRules, CircleWorkedMethod } from './circle-teaching';
 import TrigExplanation from './trig-explanation';
+import { IndianNumberSystem, InternationalNumberSystem } from './number-systems';
+import WholeNumbersDocument from './whole-numbers-document';
 
 const reflectionPrompts = [
-  'Can you explain this idea in your own words without using the formula?',
-  'Which part of the diagram or example makes this rule believable?',
-  'What information must you identify before applying this idea?',
-  'How could you check that an answer using this idea is sensible?',
+  'Explain this idea in your own words.',
+  'What stays the same? What changes?',
+  'What do you know? What do you need to find?',
+  'How can you check your answer?',
 ];
 
 function Footer({ label }: { label: string }) {
@@ -24,13 +26,14 @@ function RunningHeader({ notes, label }: { notes: ChapterNotes; label: string })
 }
 
 export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
+  if (notes.slug === 'icse6-whole-numbers') return <WholeNumbersDocument />;
   const boardPath = (notes.board ?? 'CBSE').toLowerCase();
   const chapterPath = `/${boardPath}/grade-${notes.grade ?? 10}/ch-${notes.number}`;
   const visualMeta = getNotesVisualMeta(notes);
   const kind = getNotesVisualKind(notes);
   const shortcut = shortcuts[kind];
-  const extraExamples = (notes.grade ?? 10) <= 6 ? foundationExamples[kind] ?? [] : [];
-  const goals = notes.concepts.slice(0, 4).map((concept) => `${concept.title}: explain the idea and recognise when it is useful.`);
+  const extraExamples = (notes.grade ?? 10) <= 6 && notes.slug !== 'icse6-knowing-numbers' ? foundationExamples[kind] ?? [] : [];
+  const goals = notes.concepts.slice(0, 4).map((concept) => concept.title);
 
   return (
     <main className="notes-shell study-notes-shell">
@@ -44,7 +47,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           <h1>{notes.chapter}</h1>
           <h2>{notes.subtitle}</h2>
           <div className="study-cover-rule" />
-          <p className="study-cover-lead">A student-friendly learning guide with clear ideas, a visual model, worked reasoning and practice you can check yourself.</p>
+          <p className="study-cover-lead">Learn the ideas. Follow the examples. Try the questions.</p>
         </header>
 
         <section className="study-hook">
@@ -64,7 +67,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <Footer label="Start here" />
       </article>
 
-      <article className="notes-page study-concepts-page">
+      {kind === 'circle' && <article className="notes-page study-concepts-page">
         <NotesBranding />
         <RunningHeader notes={notes} label="Connect · See · Understand" />
         <section className="study-connection">
@@ -76,14 +79,15 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <aside className="study-before"><strong>How to read this picture</strong><p>{visualMeta.caption}</p><p>Trace the labelled parts with your finger. Match them to the idea below before substituting numbers into a rule. Pictures illustrate relationships; use the given measurements rather than measuring the drawing.</p></aside>
         {kind === 'circle' && <CircleTeaching />}
         <Footer label="Picture and meaning" />
-      </article>
+      </article>}
 
+      {notes.slug === 'icse6-knowing-numbers' && <><article className="notes-page"><NotesBranding /><RunningHeader notes={notes} label="Indian number names" /><IndianNumberSystem /><Footer label="Read in crores and lakhs" /></article><article className="notes-page"><NotesBranding /><RunningHeader notes={notes} label="International number names" /><InternationalNumberSystem /><Footer label="Read in millions" /></article></>}
       {Array.from({ length: Math.ceil(notes.concepts.length / 2) }, (_, page) => <article className="notes-page study-concepts-page" key={`concepts-${page}`}>
         <NotesBranding /><RunningHeader notes={notes} label="Ideas · Rules" />
         <section className="study-concepts" aria-labelledby={`${notes.slug}-ideas-${page}`}>
           <div className="study-section-heading compact">
             <p>Core ideas</p>
-            <h2 id={`${notes.slug}-ideas-${page}`}>Build the meaning before using a rule</h2>
+            <h2 id={`${notes.slug}-ideas-${page}`}>Understand the ideas</h2>
           </div>
           <div className="study-concept-list">
             {notes.concepts.slice(page * 2, page * 2 + 2).map((concept, localIndex) => {
@@ -94,7 +98,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
                 <div>
                   <h3>{concept.title}</h3>
                   <p><MathText>{concept.text}</MathText></p>
-                  <NotesVisual notes={notes} conceptIndex={index} />
+                  {notes.slug !== 'icse6-knowing-numbers' && (kind === 'circle' || kind === 'heights' || index === 0) && <NotesVisual notes={notes} conceptIndex={index} />}
                   <p className="study-think"><Lightbulb /> <strong>Think:</strong> {reflectionPrompts[index % reflectionPrompts.length]}</p>
                 </div>
               </section>
@@ -107,7 +111,6 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
       <article className="notes-page study-concepts-page">
         <NotesBranding /><RunningHeader notes={notes} label="Picture · Explanation · Calculation" />
         {kind === 'heights' || kind === 'trigonometry' ? <TrigExplanation /> : kind === 'circle' ? <CircleRules /> : <section className="study-rule-bank study-connected-rules">
-          <NotesVisual notes={notes} />
           <div>{notes.formulas.map((formula) => <p key={formula}><MathText formula>{formula}</MathText></p>)}</div>
         </section>}
         <Footer label="Learn the ideas" />
@@ -117,12 +120,11 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <NotesBranding />
         <RunningHeader notes={notes} label="Method · Worked Reasoning" />
         <section className="study-method-intro">
-          <p>Use this method as a guide, not as a sentence to memorise. Ask yourself why each step is needed.</p>
+          <p>Follow the steps, then try the example yourself.</p>
         </section>
 
         {kind === 'circle' ? <CircleWorkedMethod /> : <><section className="study-method" aria-labelledby={`${notes.slug}-method`}>
-          <NotesVisual notes={notes} />
-          <div className="study-section-heading compact"><p>A dependable route</p><h2 id={`${notes.slug}-method`}>How to approach the question</h2></div>
+          <div className="study-section-heading compact"><h2 id={`${notes.slug}-method`}>How to solve it</h2></div>
           <ol>
             {notes.method.map((step, index) => (
               <li key={step}>
@@ -149,14 +151,13 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
 
       {extraExamples.map((example, index) => <article className="notes-page study-method-page" key={example.question}>
         <NotesBranding /><RunningHeader notes={notes} label={`Build confidence · Example ${index + 2}`} />
-        <NotesVisual notes={notes} />
         <section className="study-worked-example">
           <div className="study-example-label"><Lightbulb /> Another way to practise the idea</div>
           <h2><MathText>{example.question}</MathText></h2>
           <ol>{example.steps.map((step, i) => <li key={step}><b>Step {i + 1}</b><p><MathText>{step}</MathText></p></li>)}</ol>
           <div className="study-example-answer"><span>Answer</span><strong><MathText formula>{example.answer}</MathText></strong></div>
         </section>
-        <aside className="study-before"><strong>Now explain it yourself</strong><p>Cover the working, solve the question again, and explain why each operation is needed. Use the chapter picture as a model, not as a drawing to scale.</p></aside>
+        <aside className="study-before"><strong>Your turn</strong><p>Cover the working and try again. Explain each step aloud.</p></aside>
         <Footer label={`Extra worked example ${index + 2}`} />
       </article>)}
 
@@ -165,7 +166,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <RunningHeader notes={notes} label="Try · Check · Improve" />
         <section className="study-section-heading">
           <p>Check your understanding</p>
-          <h2>Try first. Open the answer only after you have shown your steps.</h2>
+          <h2>Try first, then check.</h2>
         </section>
 
         <section className="study-practice-list">
@@ -177,7 +178,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
                 <small>{index < 3 ? 'Warm-up' : index < 5 ? 'Apply the idea' : 'Challenge'} · {item.marks} {item.marks === 1 ? 'mark' : 'marks'}</small>
                 <details className="study-answer">
                   <summary>Check answer</summary>
-                  <div><strong><MathText formula>{item.answer}</MathText></strong><p>Compare the method and notation as well as the final value. If yours differs, return to the first step where the two solutions separate.</p></div>
+                  <div><strong><MathText formula>{item.answer}</MathText></strong><p>If your answer is different, check your steps one at a time.</p></div>
                 </details>
               </div>
             </div>

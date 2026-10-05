@@ -536,6 +536,33 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .study-ratio-explanations .circle-equation { padding: 16px; background: #eef7f6; border-left: 3px solid #16858d; font-size: 1.2rem; }
 .study-connected-rules { break-inside: auto; }
 .study-connected-rules > .study-visual { margin-top: 0; }
+.number-system-lesson { color: #25475b; font: 400 1rem/1.65 Arial, sans-serif; }
+.number-system-lesson h2, .number-system-lesson h3 { color: #163f60; }
+.number-chart table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: .88rem; }
+.number-chart caption { text-align: left; padding: 8px 0; font-weight: 700; }
+.number-chart th, .number-chart td { padding: 8px 6px; border: 1px solid #c7dcdf; overflow-wrap: anywhere; text-align: left; }
+.number-chart thead { background: #163f60; color: white; }
+.number-chart tbody tr:nth-child(even) { background: #eaf6f5; }
+.number-periods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 22px 0 12px; }
+.number-periods.indian-periods { grid-template-columns: repeat(4, 1fr); }
+.number-periods span { padding: 12px 4px; border-radius: 10px; text-align: center; background: #e8f6f5; color: #155563; }
+.number-periods b { display: block; font-size: 1.6rem; }
+.number-spoken { padding: 16px; background: #f0f2ff; border-left: 4px solid #6550a6; }
+.number-system-lesson li { margin: 8px 0; }
+.simple-notes-page { font: 400 1rem/1.65 Arial, sans-serif; }
+.simple-notes-page h2 { margin: 16px 0 22px; color: #163f60; font-size: 1.65rem; line-height: 1.3; }
+.simple-notes-page h3 { margin: 20px 0 8px; color: #155a68; font-size: 1.1rem; }
+.simple-maths-picture { margin: 16px 0 22px; padding: 12px; border-radius: 12px; background: #eef8f7; break-inside: avoid; }
+.simple-maths-picture svg { display: block; width: 100%; height: auto; }
+.simple-maths-picture figcaption { padding: 8px 0; color: #335768; }
+.simple-equation { padding: 12px 16px; color: #163f60; background: #edf5fa; border-left: 3px solid #16858d; }
+.simple-number-neighbours { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 16px 0; }
+.simple-number-neighbours span { padding: 12px 4px; text-align: center; background: #edf5fa; border-radius: 10px; }
+.simple-number-neighbours b { display: block; font-size: 1.6rem; }
+.simple-rule-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.simple-rule-table th, .simple-rule-table td { padding: 10px 8px; text-align: left; border: 1px solid #cadfe0; }
+.simple-rule-table th { background: #eef8f7; }
+.simple-check { margin: 20px 0; break-inside: avoid; }
 .study-symbol-key { display: grid; grid-template-columns: 50px 1fr; gap: 8px 14px; padding: 18px; background: #eef7f6; border-radius: 12px; }
 .study-symbol-key dt { font-weight: 800; color: #127680; }
 .study-symbol-key dd { margin: 0; }

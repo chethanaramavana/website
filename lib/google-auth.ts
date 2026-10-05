@@ -40,7 +40,8 @@ let googleJwksCache: { keys: GoogleJwk[]; expiresAt: number } | null = null;
 
 export const SESSION_COOKIE = 'rmc_google_session';
 export const OAUTH_STATE_COOKIE = 'rmc_google_oauth';
-export const SESSION_MAX_AGE = 60 * 60 * 24 * 30;
+// Persistent cookie, renewed on return visits rather than a browser-session cookie.
+export const SESSION_MAX_AGE = 60 * 60 * 24 * 365;
 export const OAUTH_STATE_MAX_AGE = 60 * 10;
 
 const encoder = new TextEncoder();
@@ -96,6 +97,16 @@ export async function readOAuthState(cookieHeader: string | null) {
 
 export async function getGoogleUserFromRequest(request: Request): Promise<GoogleUser | null> {
   return getGoogleUserFromCookieHeader(request.headers.get('cookie'));
+}
+
+export async function renewedGoogleSession(request: Request) {
+  const config = getGoogleConfiguration();
+  if (!config) return null;
+  const payload = await verifyPayload<SessionPayload>(readCookie(request.headers.get('cookie'), SESSION_COOKIE), config.authSecret);
+  if (!payload?.sub || !payload.email) return null;
+  // Existing 30-day sessions migrate on the next visit. Avoid rewriting new cookies.
+  if (payload.exp - Math.floor(Date.now() / 1000) > SESSION_MAX_AGE - 60 * 60 * 24) return null;
+  return createGoogleSession(payload);
 }
 
 export async function getGoogleUserFromCookieHeader(cookieHeader: string | null): Promise<GoogleUser | null> {

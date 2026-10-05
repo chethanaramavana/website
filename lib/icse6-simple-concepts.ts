@@ -1,0 +1,105 @@
+// Teach with a concrete example before introducing the mathematical term.
+export const icse6SimpleConcepts: Record<string, { title: string; text: string }[]> = Object.fromEntries(Object.entries({
+  'icse6-knowing-numbers': [
+    ['Two ways to read the same number', 'Indian names use lakhs and crores. International names use millions. 1,00,00,000 and 10,000,000 are the same number: one crore, or ten million.'],
+    ['A digit gets its value from its place', 'In 472, the 4 means 400, the 7 means 70 and the 2 means 2. To compare numbers with the same number of digits, compare from the left.'],
+    ['Estimate before calculating', 'An estimate is a nearby, easy answer. For 198 + 304, use 200 + 300 = 500. The exact answer, 502, is close to our estimate.'],
+    ['Use the same unit', '1 km = 1000 m and 1 kg = 1000 g. Before adding 2 km and 300 m, change 2 km to 2000 m. Then the total is 2300 m.'],
+  ],
+  'icse6-playing-with-numbers': [
+    ['Do the brackets first', 'In 3 × (4 + 2), add 4 + 2 first, then multiply: 3 × 6 = 18. For brackets inside brackets, begin with the innermost pair.'],
+    ['Factors and multiples', '3 is a factor of 12 because 12 ÷ 3 = 4 with no remainder. Multiples of 3 are 3, 6, 9, 12, … . A divisibility test helps you check exact division quickly.'],
+    ['Build a number using primes', 'A prime has exactly two positive factors: 1 and itself. For example, 7 is prime. Break 12 into prime factors: 12 = 2 × 2 × 3. The number 1 is not prime.'],
+    ['HCF and LCM', 'HCF is the largest factor shared by two numbers. The HCF of 6 and 8 is 2. LCM is their smallest shared positive multiple. The LCM of 6 and 8 is 24.'],
+  ],
+  'icse6-integers': [
+    ['Numbers below zero', 'Integers include …, −3, −2, −1, 0, 1, 2, 3, … . A temperature of −2°C is two degrees below zero. Fractions are not integers.'],
+    ['Read the number line', 'Numbers farther right are greater. So −2 is greater than −5: it is nearer zero on the right.'],
+    ['Opposite numbers', '3 and −3 are the same distance from zero, on opposite sides. They add to zero. The opposite of −7 is 7.'],
+    ['Add and subtract', 'Add a positive number: move right. Add a negative number: move left. To subtract, add the opposite: 5 − (−2) = 5 + 2 = 7.'],
+  ],
+  'icse6-sets': [
+    ['A clear collection', 'A set is a collection where we can decide exactly what belongs. “Even numbers below 10” is clear; “nice numbers” depends on opinion, so it is not clear.'],
+    ['List the members', 'Use braces to list the members: A = {2, 4, 6, 8}. Each member is called an element. Write repeated elements only once.'],
+    ['Small, endless or empty', 'A finite set has a fixed number of members. An infinite set keeps going, such as all counting numbers. An empty set has no members, written ∅.'],
+    ['Count the members', 'The number of members is called cardinality. If A = {2, 4, 6}, then n(A) = 3. The empty set has cardinality 0.'],
+  ],
+  'icse6-fractions': [
+    ['Equal parts of a whole', 'In 3/4, the denominator 4 says the whole has four equal parts. The numerator 3 says we take three of them. Unequal parts do not make a fair fraction model.'],
+    ['Three forms', '3/4 is proper: it is less than 1. 5/4 is improper: it is greater than 1. The same value can be written as the mixed number 1 and 1/4.'],
+    ['Different names, same amount', '1/2 = 2/4: both cover half the same whole. Multiply or divide the numerator and denominator by the same nonzero number to make an equivalent fraction.'],
+    ['Calculate with fractions', 'For addition or subtraction, make the denominators equal first: 1/2 + 1/4 = 2/4 + 1/4 = 3/4. For multiplication, multiply the numerators and the denominators.'],
+  ],
+  'icse6-decimals': [
+    ['Places after the decimal point', 'In 2.37, the 3 means three tenths and the 7 means seven hundredths. So 2.37 = 2 + 3/10 + 7/100.'],
+    ['Compare one place at a time', '2.5 = 2.50. Compare 2.50 and 2.35: the tenths digit is larger in 2.50, so 2.5 is greater. Extra zeros on the right do not change a decimal’s value.'],
+    ['Fractions can be decimals', '3/10 = 0.3 and 27/100 = 0.27. The denominator tells you whether to use tenths, hundredths or thousandths.'],
+    ['Line up the places', 'For addition and subtraction, put decimal points underneath each other. 2.40 + 0.35 = 2.75. Keep the unit in a money or measurement answer.'],
+  ],
+  'icse6-ratio-proportion': [
+    ['Compare two quantities', 'A ratio 2:3 means two equal parts of the first quantity for three of the second. If there are 2 red and 3 blue counters, red:blue = 2:3, but the fraction that is red is 2/5.'],
+    ['Match units, then simplify', 'To compare 1 m and 50 cm, use centimetres: 100:50 = 2:1. Divide both parts by their common factor.'],
+    ['Keep the comparison unchanged', '2:3 and 4:6 are equivalent ratios. Both quantities were multiplied by 2, so their relationship stayed the same.'],
+    ['Two equal ratios make a proportion', '2:3 = 4:6 is a proportion. To test it, compare the cross-products: 2 × 6 = 3 × 4 = 12.'],
+  ],
+  'icse6-percentage-unitary-method': [
+    ['Percent means out of 100', '25% means 25 out of 100 equal parts. It is the same as 25/100 = 1/4.'],
+    ['Fraction, decimal and percent', '1/2 = 0.5 = 50%. Multiply a decimal by 100 to write it as a percent; divide a percent by 100 to write it as a decimal.'],
+    ['Find a percent of an amount', 'To find 10% of 80, calculate 10/100 × 80 = 8. For a discount, subtract this amount from the original price.'],
+    ['Find one, then find many', 'If 4 pencils cost ₹20, one costs ₹5. Seven pencils at the same price cost 7 × 5 = ₹35. This is the unitary method.'],
+  ],
+  'icse6-speed-time-distance': [
+    ['How far in one unit of time?', 'Speed tells us distance per unit time. Travelling 18 km in 2 hours at a steady speed gives 18/2 = 9 km/h.'],
+    ['Find the distance', 'Distance = speed × time. At a steady 9 km/h for 3 hours, the distance is 9 × 3 = 27 km.'],
+    ['Find the time', 'Time = distance/speed. A 20 km journey at a steady 10 km/h takes 20/10 = 2 hours.'],
+    ['Keep the units matched', 'If speed is in km/h, time must be in hours. Thirty minutes is 1/2 hour, not 30 hours.'],
+  ],
+  'icse6-algebraic-expressions': [
+    ['A letter stands for a number', 'If a notebook costs x rupees, three notebooks cost 3x rupees. A letter lets us write a rule before we know the number.'],
+    ['Parts of an expression', 'In 4x + 7, the terms are 4x and 7. The coefficient of x is 4. The factors of the term 4x are 4 and x.'],
+    ['Names for expressions', 'A monomial has one term, a binomial two and a trinomial three. In 2x² + 3x + 1, the highest power of x is 2, so its degree is 2.'],
+    ['Put a number in place of the letter', 'If x = 5, then 2x + 3 = 2 × 5 + 3 = 13. This is substitution. Multiply before adding.'],
+  ],
+  'icse6-linear-equations': [
+    ['An equation has an equals sign', '2x + 3 is an expression. 2x + 3 = 11 is an equation: it says the two sides have the same value.'],
+    ['Keep both sides equal', 'Whatever you add, subtract, multiply or divide on one side, do the same on the other. For x + 4 = 9, subtract 4 from both sides to get x = 5.'],
+    ['Turn words into an equation', '“Three more than a number is ten” becomes x + 3 = 10. Name the unknown first, then write what the sentence says.'],
+    ['Check the answer', 'For x + 3 = 10, the answer is x = 7. Put it back: 7 + 3 = 10. Both sides match, so the answer works.'],
+  ],
+  'icse6-basic-geometry': [
+    ['Line, ray and segment', 'A segment has two endpoints. A ray has one starting point and continues in one direction. A line continues in both directions. Arrowheads show where it continues.'],
+    ['Open and closed shapes', 'A closed shape joins back to its starting point and encloses an inside region. An open shape has a gap.'],
+    ['Sides and corners', 'A vertex is a corner. An edge or side joins two corners. Trace the outside boundary without counting a side twice.'],
+    ['Straight sides and circles', 'A polygon is a closed shape made from straight sides. A circle is not a polygon. A radius joins the centre of a circle to its boundary.'],
+  ],
+  'icse6-angles-triangles-quadrilaterals': [
+    ['An angle is a turn', 'An angle is measured in degrees. A quarter turn is 90°. Perpendicular lines meet at 90°; parallel lines stay the same distance apart.'],
+    ['Name the size of the angle', 'Acute: less than 90°. Right: 90°. Obtuse: between 90° and 180°. Straight: 180°. Reflex: between 180° and 360°.'],
+    ['Triangles have three sides', 'The three inside angles total 180°. An equilateral triangle has three equal sides; an isosceles triangle has two equal sides; a scalene triangle has no equal sides.'],
+    ['Four sides make a quadrilateral', 'Its four inside angles total 360°. A square has four equal sides and four right angles. A rectangle has four right angles and equal opposite sides.'],
+  ],
+  'icse6-3d-shapes-nets': [
+    ['Solid shapes have depth', 'A cube, cuboid, cylinder, cone and sphere are solid shapes. A cube has square faces; a cuboid has rectangular faces.'],
+    ['Faces, edges and vertices', 'A face is a flat surface, an edge is where two flat faces meet, and a vertex is a corner. A cube has 6 faces, 12 edges and 8 vertices.'],
+    ['Prism or pyramid?', 'A prism has two matching, parallel end faces. A pyramid has one polygon base, with triangular faces meeting at an apex.'],
+    ['Fold a net', 'A net is a flat arrangement of faces that folds into a solid. A cube net has six squares, arranged so they do not overlap when folded.'],
+  ],
+  'icse6-symmetry-practical-geometry': [
+    ['Fold and match', 'A line of symmetry divides a shape into two matching halves. Imagine folding on that line: the halves should fit exactly.'],
+    ['Split a segment in half at 90°', 'A perpendicular bisector crosses a segment at its midpoint and makes a right angle. Equal compass arcs from both endpoints help locate it.'],
+    ['Construct an angle', 'For a 60° angle, use equal-radius arcs to make an equilateral triangle. Bisect it to make 30°. A bisector splits an angle into two equal angles.'],
+    ['Keep the compass opening fixed', 'To draw a circle of radius 3 cm, set the compass to 3 cm, keep its point at the centre and turn it once. To copy a length, keep that same opening.'],
+  ],
+  'icse6-mensuration-conversions': [
+    ['Boundary or inside?', 'Perimeter measures the outside boundary. Area measures how much flat surface is covered inside. Perimeter uses cm or m; area uses cm² or m².'],
+    ['Rectangle and square', 'For a rectangle, area = length × width and perimeter = 2 × (length + width). For a square, all four sides are equal.'],
+    ['Same fence, different space', 'A 5 cm by 1 cm rectangle and a 4 cm by 2 cm rectangle both have perimeter 12 cm. Their areas are 5 cm² and 8 cm², so equal perimeter does not mean equal area.'],
+    ['Convert before calculating', '1 m = 100 cm. A square metre is 100 cm × 100 cm = 10,000 cm². Area conversion uses the square of the length conversion.'],
+  ],
+  'icse6-data-handling': [
+    ['Organise your information', 'Data are collected facts or measurements. Put the values in a table. Tally marks help count how often each value occurs.'],
+    ['Read the picture key', 'In a pictograph, one symbol may stand for several items. If one star means 4 books, three stars mean 12 books.'],
+    ['Read the bar scale', 'A bar graph uses heights to show amounts. Read the axis labels and scale first. If each interval is 5 students, four intervals mean 20 students.'],
+    ['Mean and median', 'Mean: add the values and divide by how many there are. Median: arrange the values in order and find the middle; with two middle values, use their mean.'],
+  ],
+}).map(([slug, ideas]) => [slug, ideas.map(([title, text]) => ({title,text}))]));
