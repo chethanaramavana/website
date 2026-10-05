@@ -326,8 +326,9 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
       </>;
     case 'circle':
       return <>
-        <circle cx="255" cy="165" r="105" className="visual-circle"/><circle cx="255" cy="165" r="6" className="visual-dot"/><path d="M255 165 338 230M338 230 470 62" className="visual-line"/><path d="M326 221 335 209 347 218" className="visual-gold"/>
-        <text x="235" y="153" className="visual-small">O</text><text x="346" y="250" className="visual-small">T</text><text x="460" y="112" className="visual-label">tangent</text>
+        <circle cx="190" cy="160" r="100" className="visual-circle"/><circle cx="190" cy="160" r="5" className="visual-dot"/>
+        <path d="M190 160 230 68.35 440 160 190 160" className="visual-line"/><path d="M225.2 79.35 236.2 84.15 241 73.15" className="visual-gold"/>
+        <text x="164" y="184" className="visual-small">O</text><text x="226" y="51" className="visual-small">T</text><text x="451" y="167" className="visual-small">P</text><text x="160" y="112" className="visual-small">radius OT</text><text x="325" y="92" className="visual-small">tangent PT</text><text x="302" y="186" className="visual-small">OP</text>
       </>;
     case 'sector':
       return <>

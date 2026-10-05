@@ -482,8 +482,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .study-rule-bank { margin-top: 16px; padding: 16px 18px; break-inside: avoid; border-left: 4px solid var(--study-teal); border-radius: 0 13px 13px 0; background: #edf7f7; }
 .study-rule-bank > span { color: #277b80; font-size: .61rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .study-rule-bank h3 { margin: 4px 0 11px; color: var(--study-navy); font: 700 .98rem/1.35 Georgia, serif; }
-.study-rule-bank > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.study-rule-bank p { margin: 0; padding: 8px 10px; border-radius: 8px; color: #173f60; background: rgba(255,255,255,.8); font: 700 .75rem/1.5 Georgia, serif; }
+.study-rule-bank > div { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.study-rule-bank p { margin: 0; padding: 12px 14px; border-radius: 8px; color: #173f60; background: rgba(255,255,255,.8); font: 700 .95rem/1.8 Georgia, serif; }
 
 .study-method-intro { margin-bottom: 24px; border-color: #ead6a4; background: #fff9e9; }
 .study-method ol, .study-worked-example ol { margin: 0; padding: 0; display: grid; gap: 11px; list-style: none; }
@@ -522,10 +522,18 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .study-revision-ideas svg { width: 16px; color: #278068; }
 .study-formula-bank { display: grid; align-content: start; gap: 9px; background: linear-gradient(145deg, #edf3ff, #f4f1fc); }
 .study-formula-bank div { padding: 7px 9px; border-radius: 8px; color: #173f60; background: rgba(255,255,255,.7); font: 700 .74rem/1.45 Georgia, serif; }
+.circle-teaching { color: #25475b; font-size: .95rem; line-height: 1.7; }
+.circle-teaching h3 { color: #163f60; margin: 24px 0 8px; }
+.circle-teaching svg { width: 100%; height: auto; background: #f4fafb; border-radius: 16px; }
+.study-symbol-key { display: grid; grid-template-columns: 50px 1fr; gap: 8px 14px; padding: 18px; background: #eef7f6; border-radius: 12px; }
+.study-symbol-key dt { font-weight: 800; color: #127680; }
+.study-symbol-key dd { margin: 0; }
+.study-tangent-count { display: grid; gap: 12px; }
+.study-tangent-count span { padding: 14px; border-left: 4px solid #16858d; background: #f1f7fa; }
 .study-watch-out { margin-top: 16px; border-color: #ead6a4; background: #fff9e9; }
 .study-watch-out ul, .study-ready-check ul { margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; list-style: none; }
 .study-watch-out li { display: grid; grid-template-columns: 22px 1fr; gap: 7px; color: #655e4e; font-size: .72rem; line-height: 1.45; }
-.study-watch-out li > span { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--study-coral); font-weight: 900; }
+.study-watch-out li > span:first-child { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--study-coral); font-weight: 900; }
 .study-ready-check { margin-top: 16px; background: #eff8f5; }
 .study-ready-check li { position: relative; padding-left: 23px; color: #47635c; font-size: .72rem; line-height: 1.45; }
 .study-ready-check li::before { content: ''; position: absolute; left: 0; top: .1em; width: 13px; height: 13px; border: 2px solid #4d9b84; border-radius: 3px; background: white; }

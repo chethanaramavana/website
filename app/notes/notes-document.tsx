@@ -3,20 +3,15 @@ import type { ChapterNotes } from '@/lib/chapter-notes';
 import NotesPrintButton from './real-numbers/print-button';
 import NotesBranding from './notes-branding';
 import MathText from './math-text';
-import NotesVisual, { getNotesVisualMeta } from './notes-visual';
+import NotesVisual, { getNotesVisualMeta, getNotesVisualKind } from './notes-visual';
+import { foundationExamples, shortcuts } from './teaching-support';
+import CircleTeaching from './circle-teaching';
 
 const reflectionPrompts = [
   'Can you explain this idea in your own words without using the formula?',
   'Which part of the diagram or example makes this rule believable?',
   'What information must you identify before applying this idea?',
   'How could you check that an answer using this idea is sensible?',
-];
-
-const methodReasons = [
-  'This turns the words into clear mathematical information.',
-  'This helps you choose a method instead of guessing.',
-  'This keeps the reasoning organised and easy to check.',
-  'This catches sign, unit and substitution errors before you finish.',
 ];
 
 function Footer({ label }: { label: string }) {
@@ -31,6 +26,9 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
   const boardPath = (notes.board ?? 'CBSE').toLowerCase();
   const chapterPath = `/${boardPath}/grade-${notes.grade ?? 10}/ch-${notes.number}`;
   const visualMeta = getNotesVisualMeta(notes);
+  const kind = getNotesVisualKind(notes);
+  const shortcut = shortcuts[kind];
+  const extraExamples = (notes.grade ?? 10) <= 6 ? foundationExamples[kind] ?? [] : [];
   const goals = notes.concepts.slice(0, 4).map((concept) => `${concept.title}: explain the idea and recognise when it is useful.`);
 
   return (
@@ -74,7 +72,13 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         </section>
 
         <NotesVisual notes={notes} />
+        <aside className="study-before"><strong>How to read this picture</strong><p>{visualMeta.caption}</p><p>Trace the labelled parts with your finger. Match them to the idea below before substituting numbers into a rule. Pictures illustrate relationships; use the given measurements rather than measuring the drawing.</p></aside>
+        {kind === 'circle' && <CircleTeaching />}
+        <Footer label="Picture and meaning" />
+      </article>
 
+      <article className="notes-page study-concepts-page">
+        <NotesBranding /><RunningHeader notes={notes} label="Ideas · Rules" />
         <section className="study-concepts" aria-labelledby={`${notes.slug}-ideas`}>
           <div className="study-section-heading compact">
             <p>Core ideas</p>
@@ -114,7 +118,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
             {notes.method.map((step, index) => (
               <li key={step}>
                 <b>{index + 1}</b>
-                <div><p><MathText>{step}</MathText></p><small>{methodReasons[index % methodReasons.length]}</small></div>
+                <div><p><MathText>{step}</MathText></p></div>
               </li>
             ))}
           </ol>
@@ -128,11 +132,24 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         </section>
 
         <aside className="study-why-box">
-          <strong>Why this method works</strong>
-          <p>The method identifies the mathematical structure before calculation, keeps each decision visible, and leaves a final result that can be checked against the original question.</p>
+          <strong>Shortcut: {shortcut[0]}</strong>
+          <p><MathText>{shortcut[1]}</MathText></p>
         </aside>
         <Footer label="Worked reasoning" />
       </article>
+
+      {extraExamples.map((example, index) => <article className="notes-page study-method-page" key={example.question}>
+        <NotesBranding /><RunningHeader notes={notes} label={`Build confidence · Example ${index + 2}`} />
+        <NotesVisual notes={notes} />
+        <section className="study-worked-example">
+          <div className="study-example-label"><Lightbulb /> Another way to practise the idea</div>
+          <h2><MathText>{example.question}</MathText></h2>
+          <ol>{example.steps.map((step, i) => <li key={step}><b>Step {i + 1}</b><p><MathText>{step}</MathText></p></li>)}</ol>
+          <div className="study-example-answer"><span>Answer</span><strong><MathText formula>{example.answer}</MathText></strong></div>
+        </section>
+        <aside className="study-before"><strong>Now explain it yourself</strong><p>Cover the working, solve the question again, and explain why each operation is needed. Use the chapter picture as a model, not as a drawing to scale.</p></aside>
+        <Footer label={`Extra worked example ${index + 2}`} />
+      </article>)}
 
       <article className="notes-page study-practice-page">
         <NotesBranding />
@@ -165,7 +182,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <RunningHeader notes={notes} label="Remember · Review · Continue" />
         <section className="study-section-heading">
           <p>Rapid revision</p>
-          <h2>The chapter on one page</h2>
+          <h2>Keep the important ideas together</h2>
         </section>
 
         <section className="study-revision-grid">

@@ -245,7 +245,7 @@ function readCaretValue(value: string, caretIndex: number) {
 function formatPlainText(value: string) {
   return value
     .split(/(https?:\/\/\S+|\/api\/\S+)/gi)
-    .map((part) => /^(?:https?:\/\/|\/api\/)/i.test(part) ? part : part.replace(/\s*([=+×÷±≤≥≈<>])\s*/g, ' $1 '))
+    .map((part) => /^(?:https?:\/\/|\/api\/)/i.test(part) ? part : part.replace(/\s*([=+×÷±≤≥≈<>⊥∥−])\s*/g, ' $1 '))
     .join('')
     .replace(/\\\//g, '/');
 }
