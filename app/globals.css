@@ -304,10 +304,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .math-typeset { font-variant-numeric: lining-nums; }
 .math-typeset.formula, .math-fraction, .math-integral, .math-root { font-family: 'Cambria Math', 'STIX Two Math', Georgia, 'Times New Roman', serif; }
 .math-typeset.formula { color: #103b5d; font-size: 1.04em; letter-spacing: .004em; }
-.math-typeset sup, .math-typeset sub { position: relative; font-size: .7em; line-height: 0; }
-.math-typeset sup { vertical-align: .62em; }
-.math-typeset sub { vertical-align: -.22em; }
-.math-fraction { display: inline-grid; grid-template-rows: auto auto; place-items: center; min-width: .8em; margin: 0 .1em; vertical-align: -.48em; line-height: 1.02; white-space: nowrap; }
+.math-typeset sup, .math-typeset sub { position: static; top: auto; bottom: auto; font-size: .7em; line-height: 0; }
+.math-typeset sup { vertical-align: super; }
+.math-typeset sub { vertical-align: sub; }
+.math-fraction { display: inline-grid; grid-template-rows: auto auto; place-items: center; min-width: .8em; margin: 0 .14em; vertical-align: middle; line-height: 1.15; white-space: nowrap; }
 .math-fraction-numerator { width: 100%; padding: 0 .16em .08em; border-bottom: .065em solid currentColor; text-align: center; }
 .math-fraction-denominator { padding: .08em .16em 0; text-align: center; }
 .math-integral { display: inline-flex; align-items: center; margin: 0 .1em 0 .04em; vertical-align: -.36em; white-space: nowrap; }
@@ -316,9 +316,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .math-integral-limits { min-width: .9em; margin-left: -.08em; display: grid; align-self: stretch; grid-template-rows: 1fr 1fr; place-items: center start; font-size: .56em; line-height: 1; }
 .math-integral-limits > span:first-child { align-self: start; }
 .math-integral-limits > span:last-child { align-self: end; }
-.math-root { display: inline-flex; align-items: flex-start; margin: 0 .06em; vertical-align: -.08em; white-space: nowrap; }
-.math-root-symbol { font-size: 1.24em; line-height: 1; }
-.math-radicand { margin-left: -.04em; padding: .03em .08em 0; border-top: .065em solid currentColor; line-height: 1.08; }
+.math-root { display: inline-flex; align-items: stretch; margin: 0 .06em; vertical-align: middle; white-space: nowrap; }
+.math-root-symbol { display: flex; align-items: center; font-size: 1.5em; line-height: 1; }
+.math-radicand { margin-left: -.04em; padding: .15em .12em .06em; border-top: .065em solid currentColor; line-height: 1.5; }
 .notes-title-block { padding: 20px 10px 34px; text-align: center; }
 .notes-book-icon { width: 64px; height: 64px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 18px; color: white; background: linear-gradient(145deg, #178f9a, #0b6978); box-shadow: 7px 7px 0 #d7eceb; }
 .notes-book-icon svg { width: 30px; }
@@ -525,6 +525,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .circle-teaching { color: #25475b; font-size: .95rem; line-height: 1.7; }
 .circle-teaching h3 { color: #163f60; margin: 24px 0 8px; }
 .circle-teaching svg { width: 100%; height: auto; background: #f4fafb; border-radius: 16px; }
+.study-rule-bank .circle-rule-explanations { display: block; }
+.circle-rule-explanations section { margin: 18px 0 28px; break-inside: avoid; }
+.study-rule-bank .circle-rule-explanations p { background: transparent; padding: 6px 0; font: 400 1rem/1.7 Arial, sans-serif; }
+.study-rule-bank .circle-rule-explanations .circle-equation { background: white; padding: 16px; font-size: 1.15rem; }
+.study-rule-bank:has(.circle-rule-explanations), .study-worked-example:has(svg) { break-inside: auto; }
+.circle-teaching .study-worked-example li { break-inside: avoid; }
+.circle-teaching .study-before { break-inside: auto; }
 .study-symbol-key { display: grid; grid-template-columns: 50px 1fr; gap: 8px 14px; padding: 18px; background: #eef7f6; border-radius: 12px; }
 .study-symbol-key dt { font-weight: 800; color: #127680; }
 .study-symbol-key dd { margin: 0; }

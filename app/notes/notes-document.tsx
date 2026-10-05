@@ -5,7 +5,7 @@ import NotesBranding from './notes-branding';
 import MathText from './math-text';
 import NotesVisual, { getNotesVisualMeta, getNotesVisualKind } from './notes-visual';
 import { foundationExamples, shortcuts } from './teaching-support';
-import CircleTeaching from './circle-teaching';
+import CircleTeaching, { CircleRules, CircleWorkedMethod } from './circle-teaching';
 
 const reflectionPrompts = [
   'Can you explain this idea in your own words without using the formula?',
@@ -77,31 +77,39 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
         <Footer label="Picture and meaning" />
       </article>
 
-      <article className="notes-page study-concepts-page">
+      {Array.from({ length: Math.ceil(notes.concepts.length / 2) }, (_, page) => <article className="notes-page study-concepts-page" key={`concepts-${page}`}>
         <NotesBranding /><RunningHeader notes={notes} label="Ideas · Rules" />
-        <section className="study-concepts" aria-labelledby={`${notes.slug}-ideas`}>
+        <section className="study-concepts" aria-labelledby={`${notes.slug}-ideas-${page}`}>
           <div className="study-section-heading compact">
             <p>Core ideas</p>
-            <h2 id={`${notes.slug}-ideas`}>Build the meaning before using a rule</h2>
+            <h2 id={`${notes.slug}-ideas-${page}`}>Build the meaning before using a rule</h2>
           </div>
           <div className="study-concept-list">
-            {notes.concepts.map((concept, index) => (
+            {notes.concepts.slice(page * 2, page * 2 + 2).map((concept, localIndex) => {
+              const index = page * 2 + localIndex;
+              return (
               <section className="study-concept" key={concept.title}>
                 <span className="study-concept-number">{String(index + 1).padStart(2, '0')}</span>
                 <div>
                   <h3>{concept.title}</h3>
                   <p><MathText>{concept.text}</MathText></p>
+                  <NotesVisual notes={notes} conceptIndex={index} />
                   <p className="study-think"><Lightbulb /> <strong>Think:</strong> {reflectionPrompts[index % reflectionPrompts.length]}</p>
                 </div>
               </section>
-            ))}
+            ); })}
           </div>
+        </section>
+        <Footer label={`Visual concepts ${page * 2 + 1}–${Math.min(page * 2 + 2, notes.concepts.length)}`} />
+      </article>)}
+
+      <article className="notes-page study-concepts-page">
+        <NotesBranding /><RunningHeader notes={notes} label="Understand the formulae" />
           <section className="study-rule-bank">
             <span>Maths form</span>
             <h3>Rules and formulae to connect with the ideas</h3>
-            <div>{notes.formulas.map((formula) => <p key={formula}><MathText formula>{formula}</MathText></p>)}</div>
+            {kind === 'circle' ? <CircleRules /> : <div>{notes.formulas.map((formula) => <p key={formula}><MathText formula>{formula}</MathText></p>)}</div>}
           </section>
-        </section>
         <Footer label="Learn the ideas" />
       </article>
 
@@ -112,7 +120,8 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           <p>Use this method as a guide, not as a sentence to memorise. Ask yourself why each step is needed.</p>
         </section>
 
-        <section className="study-method" aria-labelledby={`${notes.slug}-method`}>
+        {kind === 'circle' ? <CircleWorkedMethod /> : <><section className="study-method" aria-labelledby={`${notes.slug}-method`}>
+          <NotesVisual notes={notes} />
           <div className="study-section-heading compact"><p>A dependable route</p><h2 id={`${notes.slug}-method`}>How to approach the question</h2></div>
           <ol>
             {notes.method.map((step, index) => (
@@ -129,7 +138,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           <h2><MathText>{notes.example.question}</MathText></h2>
           <ol>{notes.example.steps.map((step, index) => <li key={step}><b>Step {index + 1}</b><p><MathText>{step}</MathText></p></li>)}</ol>
           <div className="study-example-answer"><span>Answer</span><strong><MathText formula>{notes.example.answer}</MathText></strong></div>
-        </section>
+        </section></>}
 
         <aside className="study-why-box">
           <strong>Shortcut: {shortcut[0]}</strong>
@@ -192,7 +201,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           </div>
           <div className="study-formula-bank">
             <h3>Formula and fact bank</h3>
-            {notes.formulas.map((formula) => <div key={formula}><MathText formula>{formula}</MathText></div>)}
+            {kind === 'circle' ? <><p>O = centre; T = contact; P = outside point; OT = radius; OP = centre-to-P distance; PT = tangent.</p><div><MathText formula>OT ⊥ PT</MathText></div><div><MathText formula>PT = √(OP² − OT²)</MathText></div><p>A and B are two contacts from the same point P.</p><div><MathText formula>PA = PB</MathText></div></> : notes.formulas.map((formula) => <div key={formula}><MathText formula>{formula}</MathText></div>)}
           </div>
         </section>
 

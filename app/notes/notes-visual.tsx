@@ -1,4 +1,5 @@
 import type { ChapterNotes } from '@/lib/chapter-notes';
+import { TangentPicture } from './circle-teaching';
 
 export type NotesVisualKind =
   | 'patterns' | 'angles' | 'place-value' | 'data' | 'factors' | 'area'
@@ -322,7 +323,11 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
     case 'heights':
       return <>
         <path d="M105 250H535V75Z" className="visual-shape"/><path d="M505 250v-30h30" className="visual-line"/><path d="M170 250A65 65 0 0 1 156 211" className="visual-accent"/>
-        <text x="180" y="230" className="visual-label">θ</text><text x="305" y="282" textAnchor="middle" className="visual-small">adjacent / horizontal distance</text><text x="550" y="170" className="visual-small">opposite / height</text><text x="330" y="140" className="visual-small">hypotenuse / line of sight</text>
+        <path d="M335 108 357 135" className="visual-guide" />
+        <text x="180" y="230" className="visual-label">θ</text>
+        <text x="315" y="278" textAnchor="middle" className="visual-small">adjacent side</text><text x="315" y="300" textAnchor="middle" className="visual-small">horizontal distance</text>
+        <text x="545" y="166" className="visual-small">opposite</text><text x="545" y="188" className="visual-small">height</text>
+        <text x="310" y="76" textAnchor="middle" className="visual-small">hypotenuse</text><text x="310" y="98" textAnchor="middle" className="visual-small">line of sight</text>
       </>;
     case 'circle':
       return <>
@@ -444,17 +449,41 @@ function Diagram({ kind }: { kind: NotesVisualKind }) {
   }
 }
 
-export default function NotesVisual({ notes }: { notes: ChapterNotes }) {
+function HeightsConcept({ index }: { index: number }) {
+  const labels = <g fontSize="17" fontFamily="Arial, sans-serif" fill="#184562"><text x="78" y="272">observer</text><text x="482" y="272">object</text></g>;
+  if (index === 1 || index === 2) return <>
+    <path d="M80 70H550M80 230H550" stroke="#718995" strokeWidth="2" strokeDasharray="6 5" />
+    <path d="M105 230 515 70" stroke="#16858d" strokeWidth="3" />
+    <path d="M165 230A60 60 0 0 0 161 208M455 70A60 60 0 0 0 459 92" stroke="#d65e4b" strokeWidth="3" fill="none" />
+    <g fontSize="17" fontFamily="Arial, sans-serif" fill="#184562"><text x="155" y="188">elevation θ</text><text x="354" y="119">depression θ</text><text x="80" y="46">upper horizontal</text><text x="350" y="257">lower horizontal</text><text x="126" y="302">Parallel horizontals → equal alternate interior angles</text></g>
+    <circle cx="105" cy="230" r="5" fill="#184562" /><circle cx="515" cy="70" r="5" fill="#184562" />
+  </>;
+  if (index === 3) return <>
+    <path d="M80 260H550M130 260V210M500 260V60M130 210H500M130 210 500 60" stroke="#16858d" strokeWidth="3" fill="none" />
+    <path d="M480 210V190H500" stroke="#184562" strokeWidth="2" fill="none" />
+    <g fontSize="17" fontFamily="Arial, sans-serif" fill="#184562"><text x="78" y="185">eye level</text><text x="143" y="243">eye height e</text><text x="280" y="287">ground distance d</text><text x="506" y="138">h − e</text><text x="270" y="84">line of sight</text><text x="163" y="200">θ</text><text x="270" y="315">total height h = d tan θ + e</text></g>
+  </>;
+  return <>
+    <path d="M105 245H525V70M105 245 525 70" stroke="#16858d" strokeWidth="3" fill="none" />
+    <circle cx="105" cy="245" r="5" fill="#d65e4b" /><circle cx="525" cy="70" r="5" fill="#d65e4b" />
+    <g fontSize="17" fontFamily="Arial, sans-serif" fill="#184562"><text x="210" y="116">line of sight: eye to object</text><text x="315" y="278" textAnchor="middle">horizontal distance</text><text x="534" y="156">vertical</text><text x="534" y="180">height</text></g>{labels}
+  </>;
+}
+
+export default function NotesVisual({ notes, conceptIndex }: { notes: ChapterNotes; conceptIndex?: number }) {
   const kind = getNotesVisualKind(notes);
   const meta = visualMeta[kind];
+  const id = `notes-visual-title-${notes.slug}-${conceptIndex ?? 'overview'}`;
+  const heightCaptions = ['Trace the straight segment from the observer’s eye to the object. That segment is the line of sight.', 'Both angles are measured from a horizontal, not from a vertical. Elevation looks upward; depression looks downward.', 'The two horizontal lines are parallel. The line of sight is a transversal, so the marked alternate interior angles are equal.', 'The triangle starts at eye level. Its vertical side is h − e; add the eye height e to obtain the total height h.'];
   return (
     <figure className="study-visual">
-      <div className="study-visual-heading"><span>See the idea</span><h3>{meta.title}</h3></div>
-      <svg viewBox="0 0 640 320" aria-labelledby={`notes-visual-title-${notes.slug}`}>
-        <title id={`notes-visual-title-${notes.slug}`}>{meta.caption} This diagram supports {notes.chapter}.</title>
-        <Diagram kind={kind} />
+      <div className="study-visual-heading"><span>See the idea</span><h3>{conceptIndex === undefined ? meta.title : notes.concepts[conceptIndex].title}</h3></div>
+      {kind === 'circle' && conceptIndex !== undefined && conceptIndex < 3 ? <TangentPicture both={conceptIndex === 2} /> : <svg viewBox="0 0 640 320" aria-labelledby={id}>
+        <title id={id}>{`${meta.caption} This diagram supports ${notes.chapter}.`}</title>
+        {kind === 'heights' && conceptIndex !== undefined ? <HeightsConcept index={conceptIndex} /> : <Diagram kind={kind} />}
       </svg>
-      <figcaption>{meta.caption}</figcaption>
+      }
+      <figcaption>{kind === 'heights' && conceptIndex !== undefined ? heightCaptions[conceptIndex] : meta.caption}</figcaption>
     </figure>
   );
 }
