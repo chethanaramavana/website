@@ -6,6 +6,7 @@ import MathText from './math-text';
 import NotesVisual, { getNotesVisualMeta, getNotesVisualKind } from './notes-visual';
 import { foundationExamples, shortcuts } from './teaching-support';
 import CircleTeaching, { CircleRules, CircleWorkedMethod } from './circle-teaching';
+import TrigExplanation from './trig-explanation';
 
 const reflectionPrompts = [
   'Can you explain this idea in your own words without using the formula?',
@@ -104,12 +105,11 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
       </article>)}
 
       <article className="notes-page study-concepts-page">
-        <NotesBranding /><RunningHeader notes={notes} label="Understand the formulae" />
-          <section className="study-rule-bank">
-            <span>Maths form</span>
-            <h3>Rules and formulae to connect with the ideas</h3>
-            {kind === 'circle' ? <CircleRules /> : <div>{notes.formulas.map((formula) => <p key={formula}><MathText formula>{formula}</MathText></p>)}</div>}
-          </section>
+        <NotesBranding /><RunningHeader notes={notes} label="Picture · Explanation · Calculation" />
+        {kind === 'heights' || kind === 'trigonometry' ? <TrigExplanation /> : kind === 'circle' ? <CircleRules /> : <section className="study-rule-bank study-connected-rules">
+          <NotesVisual notes={notes} />
+          <div>{notes.formulas.map((formula) => <p key={formula}><MathText formula>{formula}</MathText></p>)}</div>
+        </section>}
         <Footer label="Learn the ideas" />
       </article>
 
@@ -201,7 +201,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           </div>
           <div className="study-formula-bank">
             <h3>Formula and fact bank</h3>
-            {kind === 'circle' ? <><p>O = centre; T = contact; P = outside point; OT = radius; OP = centre-to-P distance; PT = tangent.</p><div><MathText formula>OT ⊥ PT</MathText></div><div><MathText formula>PT = √(OP² − OT²)</MathText></div><p>A and B are two contacts from the same point P.</p><div><MathText formula>PA = PB</MathText></div></> : notes.formulas.map((formula) => <div key={formula}><MathText formula>{formula}</MathText></div>)}
+            {kind === 'circle' ? <><p>O = centre; T = contact; P = outside point; OT = radius; OP = centre-to-P distance; PT = tangent.</p><div><MathText formula>OT ⊥ PT</MathText></div><div><MathText formula>PT = √(OP² − OT²)</MathText></div><p>A and B are two contacts from the same point P.</p><div><MathText formula>PA = PB</MathText></div></> : kind === 'heights' || kind === 'trigonometry' ? <><p>h = opposite; d = adjacent; l = hypotenuse, measured from the chosen angle θ.</p><div><MathText formula>tan θ = h/d</MathText></div><div><MathText formula>sin θ = h/l</MathText></div><div><MathText formula>cos θ = d/l</MathText></div></> : notes.formulas.map((formula) => <div key={formula}><MathText formula>{formula}</MathText></div>)}
           </div>
         </section>
 

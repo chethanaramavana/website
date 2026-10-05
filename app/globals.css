@@ -532,6 +532,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .study-rule-bank:has(.circle-rule-explanations), .study-worked-example:has(svg) { break-inside: auto; }
 .circle-teaching .study-worked-example li { break-inside: avoid; }
 .circle-teaching .study-before { break-inside: auto; }
+.study-ratio-explanations section { margin: 24px 0; break-inside: avoid; }
+.study-ratio-explanations .circle-equation { padding: 16px; background: #eef7f6; border-left: 3px solid #16858d; font-size: 1.2rem; }
+.study-connected-rules { break-inside: auto; }
+.study-connected-rules > .study-visual { margin-top: 0; }
 .study-symbol-key { display: grid; grid-template-columns: 50px 1fr; gap: 8px 14px; padding: 18px; background: #eef7f6; border-radius: 12px; }
 .study-symbol-key dt { font-weight: 800; color: #127680; }
 .study-symbol-key dd { margin: 0; }
