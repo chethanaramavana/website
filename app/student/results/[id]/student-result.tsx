@@ -5,7 +5,8 @@ import { ArrowLeft, CheckCircle2, Clock3, Loader2, Minus, X } from 'lucide-react
 import { paperDefinitionsById } from '@/lib/papers';
 import type { PaperDefinition } from '@/lib/papers';
 import { writtenQuestionMarks } from '@/lib/assessment';
-import { getBriefMcqSolution, getBriefSolution } from '@/lib/brief-solutions';
+import { getBriefMcqSolution } from '@/lib/brief-solutions';
+import SolutionSteps from '@/app/solution-steps';
 import MathText from '@/app/notes/math-text';
 
 const assertionReasonOptions = [
@@ -50,7 +51,7 @@ export default function StudentResult({ id }: { id: string }) {
       <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/24</strong></div>
       <div><span>Total</span><strong>{result.submission.total_score ?? 'Pending'}{result.submission.total_score !== null ? '/40' : ''}</strong></div>
     </section>
-    {result.submission.status === 'marked' ? <div className="student-marked-status"><CheckCircle2 /> Marked by teacher</div> : <div className="student-pending-status"><Clock3 /> Written answers are awaiting teacher review.</div>}
+    {result.submission.status === 'marked' ? <div className="student-marked-status"><CheckCircle2 /> Marked by teacher</div> : <div className="student-pending-status"><Clock3 /> Your teacher will review your written answers within 24 hours of submission. Written marks and the final score will appear here after review.</div>}
     {result.submission.teacher_feedback && <section className="student-feedback-card"><h2>Teacher feedback</h2><p>{result.submission.teacher_feedback}</p></section>}
     <section className="student-result-section"><h2>Objective-question review</h2><div className="student-mcq-review">{paper?.mcqs.map((question) => {
       const chosen = result.submission.mcq_answers[String(question.number)];
@@ -64,7 +65,7 @@ export default function StudentResult({ id }: { id: string }) {
         <div className="student-review-copy">
           <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
           <p><MathText>{question.question}</MathText></p>
-          {!isCorrect && <div className="student-quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correct)}. <MathText>{question.options[correct]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+          <div className="student-quick-solution"><span>Answer</span><b>{String.fromCharCode(65 + correct)}. <MathText>{question.options[correct]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>
         </div>
       </article>;
     })}{paper?.assertions.map((question) => {
@@ -79,11 +80,11 @@ export default function StudentResult({ id }: { id: string }) {
         <div className="student-review-copy">
           <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
           <p><b>Assertion:</b> <MathText>{question.assertion}</MathText> <b>Reason:</b> <MathText>{question.reason}</MathText></p>
-          {!isCorrect && <div className="student-quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correct)}. {assertionReasonOptions[correct]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+          <div className="student-quick-solution"><span>Answer</span><b>{String.fromCharCode(65 + correct)}. {assertionReasonOptions[correct]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>
         </div>
       </article>;
     })}</div></section>
-    <section className="student-result-section"><h2>Written marks and brief solutions</h2><p className="student-solution-note">Your teacher can award partial marks when your method is partly correct.</p><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
+    <section className="student-result-section"><h2>Written answers — step-by-step solutions</h2><p className="student-solution-note">Use these model solutions to practise writing your method clearly. They are not marks for your uploaded work; your teacher will assess that separately and award partial marks where appropriate.</p><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
       const mark = result.marks.find((entry) => entry.question_number === number);
       const value = paper?.written[number];
       const maximum = writtenQuestionMarks[number];
@@ -93,7 +94,8 @@ export default function StudentResult({ id }: { id: string }) {
         <div className="student-written-copy">
           <div className="student-written-heading"><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
           <p className="student-written-question"><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p>
-          <div className="student-written-solution"><span>Brief solution</span><p><MathText>{getBriefSolution(result.submission.paper_id, number, result.writtenSolutions[String(number)])}</MathText></p></div>
+          {number === 24 && paper?.caseStudy && <p className="student-written-question"><MathText>{paper.caseStudy}</MathText></p>}
+          <div className="student-written-solution"><span>Model solution</span><SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div>
         </div>
       </article>;
     })}</div></section>

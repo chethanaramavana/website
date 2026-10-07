@@ -43,7 +43,8 @@ import {
 } from '@/components/ui/dialog';
 import MathText from '@/app/notes/math-text';
 import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
-import { getBriefMcqSolution, getBriefSolution } from '@/lib/brief-solutions';
+import { getBriefMcqSolution } from '@/lib/brief-solutions';
+import SolutionSteps from '@/app/solution-steps';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -1582,7 +1583,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                       <div className="answer-review-card-copy">
                         <div className="answer-review-card-heading"><strong>Question {item.number}</strong><span className="answer-status">{status}</span></div>
                         <p className="answer-review-question"><MathText>{item.question}</MathText></p>
-                        {!isCorrect && <div className="quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correctAnswer)}. <MathText>{item.options[correctAnswer]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+                        <div className="quick-solution"><span>Answer</span><b>{String.fromCharCode(65 + correctAnswer)}. <MathText>{item.options[correctAnswer]}</MathText>{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>
                       </div>
                     </div>
                   );
@@ -1600,7 +1601,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                       <div className="answer-review-card-copy">
                         <div className="answer-review-card-heading"><strong>Question {number}</strong><span className="answer-status">{status}</span></div>
                         <p className="answer-review-question"><b>Assertion:</b> <MathText>{currentPaper.assertions.find((item) => item.number === number)?.assertion ?? ''}</MathText> <b>Reason:</b> <MathText>{currentPaper.assertions.find((item) => item.number === number)?.reason ?? ''}</MathText></p>
-                        {!isCorrect && <div className="quick-solution"><span>{briefSolution ? 'Brief solution' : 'Brief correction'}</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>}
+                        <div className="quick-solution"><span>Answer</span><b>{String.fromCharCode(65 + correctAnswer)}. {assertionReasonOptions[correctAnswer]}{briefSolution && <> — <MathText>{briefSolution}</MathText></>}</b></div>
                       </div>
                     </div>
                   );
@@ -1609,11 +1610,11 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             </div>
 
             <div className="answer-review-section written-solution-section">
-              <h3>Sections B–E — Brief solutions</h3>
-              <p className="solution-note">Compare these key steps with your working. Your teacher will review the method and can award partial marks.</p>
+              <h3>Sections B–E — Step-by-step solutions</h3>
+              <p className="solution-note">Your teacher will review your written answers within 24 hours of submission and award partial marks where appropriate. Until then, practise with the model solutions below. Your final score will appear in your student account after review.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><span className="written-solution-number">{number}</span><div><strong>Brief solution</strong><p><MathText>{getBriefSolution(currentPaper.id, number, result.writtenSolutions[String(number)])}</MathText></p></div></article>
+                  <article key={number}><span className="written-solution-number">{number}</span><div><strong>Question {number}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <p><MathText>{currentPaper.caseStudy}</MathText></p>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
                 ))}
               </div>
             </div>
@@ -1651,7 +1652,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             <span><small>Unanswered</small><strong>{result ? result.mcqMaximum - Object.keys(result.answers).length : 0}</strong></span>
           </div>
           <div className="instant-score"><span>Objective marks</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
-          <p>Your correct and incorrect answers are ready to review. The final mark out of 40 will appear after the teacher marks your uploaded written work.</p>
+          <p>All answers and step-by-step model solutions are available now. Your teacher will review your written answers within 24 hours of submission. The final mark out of 40 will appear in your student account after review.</p>
           <DialogFooter className="submission-success-actions">
             <button className="test-later-button" type="button" onClick={onHome}>Return home</button>
             <button className="test-start-button" type="button" onClick={() => {

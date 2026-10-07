@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
+import SolutionSteps from '@/app/solution-steps';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
@@ -298,6 +299,7 @@ export default function TeacherReviewPage() {
               <span><strong>{submission.student_name}</strong><small>{paperReviews[submission.paper_id]?.title ?? 'Chapter test'}</small></span>
               <em className={submission.status}>{submission.status === 'marked' ? 'Marked' : 'Review'}</em>
               <small>{new Date(submission.submitted_at).toLocaleString()}</small>
+              {submission.status !== 'marked' && <small className="teacher-review-due">Review by {new Date(new Date(submission.submitted_at).getTime() + 24 * 60 * 60 * 1000).toLocaleString()} (within 24 hours)</small>}
               <b>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</b>
             </button>
           ))}
@@ -331,7 +333,7 @@ export default function TeacherReviewPage() {
                       <label className="mark-field"><span>Marks <small>½ allowed</small></span><input type="number" min="0" max={question.marks} step={question.marks > 1 ? 0.5 : 1} inputMode="decimal" value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
                       <details className="evaluation-sheet">
                         <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
-                        <div className="evaluation-model-answer"><span>Model solution</span><p><MathText>{question.modelSolution}</MathText></p></div>
+                        <div className="evaluation-model-answer"><span>Model solution</span><SolutionSteps solution={question.modelSolution} /></div>
                         <ol>
                           {question.markingScheme.map((step, index) => (
                             <li key={`${question.number}-${index}`}><span>{step.criterion}</span><strong>{step.marks} mark</strong></li>

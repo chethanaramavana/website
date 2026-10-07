@@ -1082,6 +1082,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .student-written-solution { padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.78); }
 .student-written-solution > span { color: var(--written-accent); font-size: .59rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
 .student-written-solution > p { margin: 4px 0 0; color: #354e59; font: 560 .76rem/1.58 var(--font-geist-sans), Arial, sans-serif; }
+.exam-solution-steps { margin: 12px 0 0; padding-left: 1.65em; color: #254b5b; font: 500 1rem/1.8 var(--font-geist-sans), Arial, sans-serif; }
+.exam-solution-steps li { padding: 6px 0 6px 8px; overflow-wrap: anywhere; }
+.exam-solution-steps li + li { border-top: 1px solid #e0ece9; }
+.exam-solution-steps li::marker { color: #167d78; font-weight: 800; }
+.teacher-review-due { color: #805b1d !important; line-height: 1.5; }
+.student-pending-status { font-size: .9rem; line-height: 1.6; align-items: flex-start; }
+.student-pending-status svg { flex-shrink: 0; margin-top: 3px; }
 
 .help-desk { width: min(100% - 40px, 1180px); position: relative; z-index: 1; margin: 0 auto 24px; padding: 24px 26px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; border: 1px solid #e1d7ef; border-radius: 22px; background: linear-gradient(105deg, #f3eeff, #fff 58%, #ecf9f7); box-shadow: 0 13px 34px rgba(53,38,87,.08); }
 .help-desk-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; color: white; background: var(--rust); box-shadow: 0 9px 20px rgba(232,95,87,.23); }
