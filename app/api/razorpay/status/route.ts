@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     const chapter = quizChapter(paperId);
-    if (!(chapter && chapter > 1) && !getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     const database = getDatabase();
     const paymentRequest = await database.prepare(
