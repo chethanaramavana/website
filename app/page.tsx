@@ -966,8 +966,8 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
           <DialogHeader>
             <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
-            {board === 'CBSE' && grade === 10 && pendingChapter === 'Real Numbers' && <a className="revision-sheet revision-link" href="/cbse/grade-10/ch-1/free-mcq"><Folder /><div><small>Free practice folder · No login or payment</small><strong>Real Numbers — 50 MCQs</strong><em>8 assertion–reason questions · Instant marks &amp; worked solutions</em></div><b>Open free quiz</b></a>}
-            <DialogTitle>{board === 'CBSE' && grade === 10 && pendingChapter === 'Real Numbers' ? 'Choose your Real Numbers practice' : isAvailablePaper
+            {board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") && <a className="revision-sheet revision-link" href={`/cbse/grade-10/ch-${chapters.indexOf(pendingChapter ?? "") + 1}/free-mcq`}><Folder /><div><small>Free practice folder · Google login · No payment</small><strong>{pendingChapter} — 50 MCQs</strong><em>8 assertion–reason questions · Instant marks &amp; worked solutions</em></div><b>Open free quiz</b></a>}
+            <DialogTitle>{board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? 'Choose your chapter practice' : isAvailablePaper
               ? studentRecords === null
                 ? 'Checking your account…'
                 : !studentRecords.signedIn
@@ -977,7 +977,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
                     : 'Pay ₹30 to open this test'
               : 'This paper is coming soon'}</DialogTitle>
             {(!isAvailablePaper || studentRecords === null || !studentRecords.signedIn || completedSubmission) && <DialogDescription>
-              {board === 'CBSE' && grade === 10 && pendingChapter === 'Real Numbers' ? 'The 50-MCQ practice above is completely free. The separate full chapter test below uses your student account.' : isAvailablePaper
+              {board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? 'The 50-MCQ practice above is completely free. Sign in to save your score for your teacher.' : isAvailablePaper
                 ? studentRecords === null
                   ? 'Please wait while we check your student account.'
                   : !studentRecords.signedIn
@@ -1943,4 +1943,5 @@ function Breadcrumb({ items, onHome }: { items: { label: string; onClick?: () =>
     </nav>
   );
 }
+
 

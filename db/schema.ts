@@ -1,6 +1,20 @@
 import { sql } from 'drizzle-orm';
 import { index, integer, primaryKey, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
 
+export const freeQuizAttempts = sqliteTable('free_quiz_attempts', {
+  id: text('id').primaryKey(),
+  userId: text('user_id').notNull(),
+  userEmail: text('user_email').notNull(),
+  studentName: text('student_name').notNull(),
+  quizId: text('quiz_id').notNull(),
+  answersJson: text('answers_json').notNull(),
+  questionsJson: text('questions_json').notNull(),
+  score: integer('score').notNull(),
+  total: integer('total').notNull(),
+  answered: integer('answered').notNull(),
+  submittedAt: text('submitted_at').notNull(),
+}, table => [index('idx_free_quiz_attempts_submitted').on(table.submittedAt)]);
+
 export const submissions = sqliteTable('submissions', {
   id: text('id').primaryKey(),
   userId: text('user_id').notNull(),
