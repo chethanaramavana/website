@@ -968,8 +968,9 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
           <DialogHeader>
             <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
             <p className="start-test-chapter">{pendingChapter}</p>
+            {board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' && <a className="revision-sheet revision-link" href="/cbse/grade-11/ch-2/free-mcq"><Folder /><div><small>Free MCQ practice · Google login</small><strong>Relations and Functions — 50 MCQs</strong><em>Medium to difficult · 8 assertion–reason · Marks &amp; worked solutions</em></div><b>Open free quiz</b></a>}
             {board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") && <a className="revision-sheet revision-link" href={`/cbse/grade-10/ch-${chapters.indexOf(pendingChapter ?? "") + 1}/free-mcq`}><Folder /><div><small>{(quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? "Free MCQ practice · Google login" : "MCQ practice · ₹20 per chapter"}</small><strong>{pendingChapter} — 50 MCQs</strong><em>8 assertion–reason questions · Instant marks &amp; worked solutions</em></div><b>{(quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? 'Open free quiz' : 'Open ₹20 MCQs'}</b></a>}
-            <DialogTitle>{board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? 'Choose your chapter practice' : isAvailablePaper
+            <DialogTitle>{board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' ? 'Choose your chapter practice' : board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? 'Choose your chapter practice' : isAvailablePaper
               ? studentRecords === null
                 ? 'Checking your account…'
                 : !studentRecords.signedIn
@@ -979,7 +980,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
                     : 'Pay ₹30 to open this test'
               : 'This paper is coming soon'}</DialogTitle>
             {(!isAvailablePaper || studentRecords === null || !studentRecords.signedIn || completedSubmission) && <DialogDescription>
-              {board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? ((quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? 'The 50-MCQ practice above is free. Sign in to save your score for your teacher.' : 'The 50-MCQ quiz costs ₹20 for this chapter. Includes worked solutions and repeat attempts.') : isAvailablePaper
+              {board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' ? 'The 50-MCQ quiz is free. Sign in to save your answers and marks for your teacher.' : board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? ((quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? 'The 50-MCQ practice above is free. Sign in to save your score for your teacher.' : 'The 50-MCQ quiz costs ₹20 for this chapter. Includes worked solutions and repeat attempts.') : isAvailablePaper
                 ? studentRecords === null
                   ? 'Please wait while we check your student account.'
                   : !studentRecords.signedIn
