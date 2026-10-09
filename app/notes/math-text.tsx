@@ -106,7 +106,10 @@ function readRightOperand(value: string, slashIndex: number): Operand | null {
   let end = start;
   if (value[end] === '−' || value[end] === '-') end += 1;
   const atomStart = end;
-  while (end < value.length && atomCharacter.test(value[end])) end += 1;
+  while (end < value.length && atomCharacter.test(value[end])) {
+    if (value[end] === '.' && !/\d/.test(value[end + 1] ?? '')) break;
+    end += 1;
+  }
   if (end === atomStart) return null;
 
   const functionName = plainAtom(value.slice(start, end));
@@ -215,7 +218,7 @@ function findFraction(value: string): FractionMatch | null {
     const leftUnit = plainAtom(left.value).toLowerCase();
     const rightUnit = plainAtom(right.value).toLowerCase();
     if (units.has(leftUnit) && units.has(rightUnit)) continue;
-    if (/^\d{4}$/u.test(leftUnit) && /^\d{1,4}$/u.test(rightUnit)) continue;
+    // Four-digit numerators are valid mathematics too (for example 2160/12).
 
     const candidate = {
       start: left.start,
@@ -307,7 +310,10 @@ function renderAtoms(value: string, keyPrefix: string): ReactNode[] {
           end = closeIndex + 1;
         }
       } else {
-        while (end < value.length && atomCharacter.test(value[end])) radicand += value[end++];
+        while (end < value.length && atomCharacter.test(value[end])) {
+          if (value[end] === '.' && !/\d/.test(value[end + 1] ?? '')) break;
+          radicand += value[end++];
+        }
       }
       if (radicand) {
         nodes.push(

@@ -3,6 +3,8 @@
 import { useRef, useState } from 'react';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { questions } from './questions';
+import MathText from '@/app/notes/math-text';
+import SolutionSteps from '@/app/solution-steps';
 
 export default function Quiz() {
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -25,10 +27,10 @@ export default function Quiz() {
       {submitted ? <section className="fq-result" ref={result} tabIndex={-1} aria-label="Quiz results"><span>Your result</span><h2>{score} / {questions.length}</h2><p>{Math.round(score / questions.length * 100)}% · {score} correct · {answered - score} incorrect · {questions.length - answered} unanswered</p><p>Review all solutions below, including questions you skipped.</p><button onClick={() => { setSubmitted(false); setAnswers({}); window.scrollTo({ top: 0 }); }}>Try again free</button></section> : <div className="fq-progress" aria-live="polite"><strong>{answered} / {questions.length} answered</strong><a href="#submit-quiz">Go to submit</a><progress value={answered} max={questions.length} aria-label="Questions answered" /></div>}
       <div className="fq-questions">{questions.map((q, i) => <section className="fq-question" key={i} aria-labelledby={`question-${i}`}>
         <div className="fq-question-meta"><span>Question {i + 1}</span><span>{q.assertion ? 'Assertion–reason' : q.topic} · 1 mark</span></div>
-        <h2 id={`question-${i}`}>{q.prompt}</h2>
+        <h2 id={`question-${i}`}><MathText>{q.prompt}</MathText></h2>
         {!submitted ? <RadioGroup aria-labelledby={`question-${i}`} value={answers[i] === undefined ? null : String(answers[i])} onValueChange={value => { if (value !== null) { setAnswers(a => ({ ...a, [i]: Number(value) })); setConfirm(false); } }}>
-          {q.options.map((option, j) => <label className={`fq-option ${answers[i] === j ? 'selected' : ''}`} key={j}><RadioGroupItem value={String(j)} /><span><b>{String.fromCharCode(65 + j)}.</b> {option}</span></label>)}
-        </RadioGroup> : <><ul className="fq-review-options">{q.options.map((option, j) => <li key={j} className={j === q.answer ? 'correct' : answers[i] === j ? 'incorrect' : ''}><b>{String.fromCharCode(65 + j)}.</b> {option}{j === q.answer && <strong> — Correct answer</strong>}{answers[i] === j && <em> — Your answer</em>}</li>)}</ul><div className="fq-solution"><strong>{answers[i] === undefined ? 'Unanswered · 0/1' : answers[i] === q.answer ? 'Correct · 1/1' : 'Incorrect · 0/1'}</strong><h3>Worked solution</h3><p>{q.solution}</p></div></>}
+          {q.options.map((option, j) => <label className={`fq-option ${answers[i] === j ? 'selected' : ''}`} key={j}><RadioGroupItem value={String(j)} /><span><b>{String.fromCharCode(65 + j)}.</b> <MathText>{option}</MathText></span></label>)}
+        </RadioGroup> : <><ul className="fq-review-options">{q.options.map((option, j) => <li key={j} className={j === q.answer ? 'correct' : answers[i] === j ? 'incorrect' : ''}><b>{String.fromCharCode(65 + j)}.</b> <MathText>{option}</MathText>{j === q.answer && <strong> — Correct answer</strong>}{answers[i] === j && <em> — Your answer</em>}</li>)}</ul><div className="fq-solution"><strong>{answers[i] === undefined ? 'Unanswered · 0/1' : answers[i] === q.answer ? 'Correct · 1/1' : 'Incorrect · 0/1'}</strong><h3>Worked solution</h3><SolutionSteps solution={q.solution} /></div></>}
         {!submitted && answers[i] !== undefined && <button className="fq-clear" onClick={() => { setAnswers(a => { const next = { ...a }; delete next[i]; return next; }); setConfirm(false); }}>Clear answer</button>}
       </section>)}</div>
       {!submitted && <section className="fq-submit" id="submit-quiz"><h2>Ready to check your answers?</h2><p>{answered} answered · {questions.length - answered} unanswered. Unanswered questions receive 0 marks.</p>{confirm ? <div role="alert"><p>You still have {questions.length - answered} unanswered questions. Submit this attempt?</p><button onClick={submit}>Submit and see results</button><button className="fq-secondary" onClick={() => setConfirm(false)}>Keep answering</button></div> : <button onClick={() => answered < questions.length ? setConfirm(true) : submit()}>Submit quiz</button>}</section>}
@@ -36,3 +38,4 @@ export default function Quiz() {
     </main>
   </div>;
 }
+
