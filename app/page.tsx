@@ -875,6 +875,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         description: `${selectedPaper.chapter} chapter test`,
         order_id: order.orderId,
         prefill: { name, email: studentRecords.email },
+        hidden: { contact: true, email: true },
         notes: { chapter: selectedPaper.chapter },
         theme: { color: '#5936a7' },
         modal: { ondismiss: () => {
