@@ -1,3 +1,4 @@
+import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
@@ -34,7 +35,8 @@ export async function POST(request: Request) {
 
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
-    if (!getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
+    const chapter = quizChapter(paperId);
+    if (!(chapter && chapter > 1) && !getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     const database = getDatabase();
     const paymentRequest = await database.prepare(

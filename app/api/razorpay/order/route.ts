@@ -1,8 +1,9 @@
+import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
-const AMOUNT_PAISE = 3000;
+
 const orderIdPattern = /^order_[a-zA-Z0-9]+$/;
 
 export async function POST(request: Request) {
@@ -21,8 +22,10 @@ export async function POST(request: Request) {
     const studentName = typeof body.studentName === 'string' ? body.studentName.trim() : '';
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
-    if (!getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
+    const chapter = quizChapter(paperId);
+    if (!(chapter && chapter > 1) && !getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
 
+    const AMOUNT_PAISE = chapter ? quizPrice(chapter) : 3000;
     const database = getDatabase();
     const existing = await database.prepare(
       `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND status = 'approved' LIMIT 1`,
@@ -32,12 +35,12 @@ export async function POST(request: Request) {
     const pendingOrder = await database.prepare(
       `SELECT transaction_id
        FROM payment_requests
-       WHERE user_id = ? AND paper_id = ? AND status = 'pending'
+       WHERE user_id = ? AND paper_id = ? AND status = 'pending' AND amount_paise = ?
          AND substr(transaction_id, 1, 6) = 'order_'
          AND created_at >= datetime('now', '-14 minutes')
        ORDER BY created_at DESC
        LIMIT 1`,
-    ).bind(user.userId, paperId).first<{ transaction_id: string }>();
+    ).bind(user.userId, paperId, AMOUNT_PAISE).first<{ transaction_id: string }>();
     if (pendingOrder && orderIdPattern.test(pendingOrder.transaction_id)) {
       return Response.json({
         keyId: config.keyId,

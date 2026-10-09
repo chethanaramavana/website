@@ -16,13 +16,13 @@ export async function POST(request: Request) {
       payload?: { payment?: { entity?: { id?: string; order_id?: string; amount?: number; currency?: string; status?: string } } };
     };
     const payment = event.payload?.payment?.entity;
-    if ((event.event === 'payment.captured' || event.event === 'order.paid') && payment?.order_id && payment.amount === 3000 && payment.currency === 'INR' && payment.status === 'captured') {
+    if ((event.event === 'payment.captured' || event.event === 'order.paid') && payment?.order_id && (payment.amount === 3000 || payment.amount === 2000) && payment.currency === 'INR' && payment.status === 'captured') {
       await getDatabase().prepare(
         `UPDATE payment_requests
          SET status = 'approved', reviewed_at = CURRENT_TIMESTAMP
-         WHERE transaction_id = ? AND amount_paise = 3000 AND status = 'pending'
+         WHERE transaction_id = ? AND amount_paise = ? AND status = 'pending'
            AND substr(transaction_id, 1, 6) = 'order_'`,
-      ).bind(payment.order_id).run();
+      ).bind(payment.order_id, payment.amount).run();
     }
     return Response.json({ received: true });
   } catch (error) {
