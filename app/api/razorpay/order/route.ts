@@ -1,4 +1,4 @@
-import { getIntegralsProduct } from '@/lib/integrals-products';
+import { getIntegralsProduct, integralsPricePaise } from '@/lib/integrals-products';
 import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
@@ -26,11 +26,11 @@ export async function POST(request: Request) {
     const chapter = quizChapter(paperId);
     if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
-    const AMOUNT_PAISE = chapter ? quizPrice(chapter) : 3000;
+    const AMOUNT_PAISE = chapter ? quizPrice(chapter) : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : 3000;
     const database = getDatabase();
     const existing = await database.prepare(
-      `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND status = 'approved' LIMIT 1`,
-    ).bind(user.userId, paperId).first<{ id: string }>();
+      `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND amount_paise = ? AND status = 'approved' LIMIT 1`,
+    ).bind(user.userId, paperId, AMOUNT_PAISE).first<{ id: string }>();
     if (existing) return Response.json({ alreadyPaid: true, paperId });
 
     const pendingOrder = await database.prepare(

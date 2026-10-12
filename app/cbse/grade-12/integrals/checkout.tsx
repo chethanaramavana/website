@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-export default function IntegralsCheckout({id,title,name,email}:{id:string;title:string;name:string;email:string}) {
+export default function IntegralsCheckout({id,title,name,email,amount}:{id:string;title:string;name:string;email:string;amount:number}) {
   const [busy,setBusy]=useState(false),[message,setMessage]=useState('');
   async function recover() {
     setBusy(true);setMessage('Checking payment…');
@@ -15,10 +15,10 @@ export default function IntegralsCheckout({id,title,name,email}:{id:string;title
       const r=await fetch('/api/razorpay/order',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({paperId:id,studentName:name})});
       const order=await r.json() as {error?:string;alreadyPaid?:boolean;keyId:string;orderId:string;amount:number;currency:string};
       if(!r.ok)throw new Error(order.error);if(order.alreadyPaid){window.location.reload();return;}
-      if(order.amount!==3000||order.currency!=='INR')throw new Error('Unexpected payment amount. Please contact your teacher.');
+      if(order.amount!==amount||order.currency!=='INR')throw new Error('Unexpected payment amount. Please contact your teacher.');
       const checkout=new window.Razorpay({key:order.keyId,order_id:order.orderId,amount:order.amount,currency:order.currency,name:'Ramavana Mathematical Centre',description:`${title} — online paper and worked solutions`,prefill:{name,email},hidden:{contact:true,email:true},theme:{color:'#5936a7'},modal:{ondismiss:()=>{setBusy(false);setMessage('Checkout closed. If you paid, use “Check completed payment”.');}},handler:async(response:Record<string,string>)=>{setMessage('Verifying payment…');try{const verify=await fetch('/api/razorpay/verify',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(response)});const p=await verify.json() as {approved?:boolean;error?:string};if(!verify.ok||!p.approved)throw new Error(p.error||'Verification pending.');window.location.reload();}catch(e){setMessage(`${e instanceof Error?e.message:'Verification pending.'} Use “Check completed payment” before paying again.`);setBusy(false);}}});
       checkout.on('payment.failed',()=>{setBusy(false);setMessage('Payment was not completed. You can retry or check an earlier payment.');});checkout.open();
     }catch(e){setMessage(e instanceof Error?e.message:'Payment could not start.');setBusy(false);}
   }
-  return <div className="integrals-checkout"><button disabled={busy} onClick={pay}>{busy?'Please wait…':'Unlock paper — ₹30'}</button><button className="integrals-recover" disabled={busy} onClick={recover}>Check completed payment</button><p role="status">{message}</p></div>;
+  return <div className="integrals-checkout"><button disabled={busy} onClick={pay}>{busy?'Please wait…':`Unlock test — ₹${amount/100}`}</button><button className="integrals-recover" disabled={busy} onClick={recover}>Check completed payment</button><p role="status">{message}</p></div>;
 }
