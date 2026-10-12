@@ -268,7 +268,7 @@ export default function TeacherReviewPage() {
           <div className="payment-review-empty"><CreditCard /><span>No payment requests yet.</span></div>
         ) : (
           <div className="payment-request-list">
-            {payments.map((payment) => (
+            {payments.filter((payment) => !(payment.payment_source === 'razorpay' && payment.status === 'pending')).map((payment) => (
               <article key={payment.id} className={`payment-request-card ${payment.status}`}>
                 <div className="payment-request-copy">
                   <span className="payment-request-status">{payment.payment_source === 'razorpay' ? `Razorpay · ${payment.status}` : payment.status}</span>
@@ -286,6 +286,19 @@ export default function TeacherReviewPage() {
                 ) : <span className={`payment-reviewed ${payment.status}`}>{payment.status === 'approved' ? <Check /> : <X />}{payment.status}</span>}
               </article>
             ))}
+            {payments.some((payment) => payment.payment_source === 'razorpay' && payment.status === 'pending') && (
+              <details className="pending-online-payments">
+                <summary>Pending online payments</summary>
+                <p>Checked automatically. No teacher action is needed.</p>
+                {payments.filter((payment) => payment.payment_source === 'razorpay' && payment.status === 'pending').map((payment) => (
+                  <div key={payment.id} className="pending-online-payment-row">
+                    <span>{payment.student_name}<small>{paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small></span>
+                    <span>{payment.transaction_id}</span>
+                    <span>₹{(payment.amount_paise / 100).toFixed(0)} · Pending</span>
+                  </div>
+                ))}
+              </details>
+            )}
           </div>
         )}
       </section>
