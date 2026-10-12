@@ -23,6 +23,8 @@ export async function POST(request: Request) {
   const score = questions.filter((q, i) => answers[i] === q.answer).length;
   try {
     if (!await hasMcqAccess(user, quiz.chapter, quiz.grade)) return jsonError('Pay ₹20 to unlock this chapter’s MCQ quiz.', 402);
+    // Integrals is instant self-practice; older clients also must not create teacher records.
+    if (quiz.grade === 12 && quiz.chapter === 7) return Response.json({ id: body.id, score, total: questions.length, answers }, { headers: { 'cache-control': 'no-store' } });
     const db = getDatabase();
     // A retry after a lost response must not create a second teacher record.
     await db.prepare(`INSERT INTO free_quiz_attempts (id, user_id, user_email, student_name, quiz_id, answers_json, questions_json, score, total, answered, submitted_at)
