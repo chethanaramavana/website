@@ -1,13 +1,13 @@
 {
   "integrals-pdf-board-01": [
     {
-      "q": "An antiderivative of $4x^{3}$ is",
+      "q": "An antiderivative of $4 x^{3}$ is",
       "a": "(D) $x^{4}$",
-      "s": "The power rule gives $x^{4}+C$. Differentiation verifies the chosen option. [1]",
+      "s": "The power rule gives $x^{4} + C$. Differentiation verifies the chosen option. [1]",
       "opts": [
-        "$4x^{4}$",
+        "$4 x^{4}$",
         "$x^{3}$",
-        "$x^{4}/4$",
+        "$\\frac{x^{4}}{4}$",
         "$x^{4}$"
       ],
       "marks": 1,
@@ -16,9 +16,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1(2x+2)\\dx$ is",
+      "q": "The value of $\\int_0^1 (2 x + 2) \\dx$ is",
       "a": "(C) $3$",
-      "s": "Use $[1x^2+2x]_0^1=3$. [1]",
+      "s": "Use $[1 x^2 + 2 x]_0^1 = 3$. [1]",
       "opts": [
         "$2$",
         "$6$",
@@ -31,14 +31,14 @@
       "negative": 0
     },
     {
-      "q": "If $\\int e^{5x}\\dx=Ae^{5x}+C$, then $A=$",
+      "q": "If $\\int e^{5 x} \\dx = A e^{5 x} + C$, then $A =$",
       "a": "(B) $\\frac{1}{5}$",
-      "s": "Differentiate the proposed answer: $A(5)e^{5x}=e^{5x}$. [1]",
+      "s": "Differentiate the proposed answer: $A (5) e^{5 x} = e^{5 x}$. [1]",
       "opts": [
         "$1$",
         "$\\frac{1}{5}$",
         "$5$",
-        "$-\\frac{1}{5}$"
+        "$- \\frac{1}{5}$"
       ],
       "marks": 1,
       "alt": null,
@@ -46,14 +46,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{2x}{x^2+6}\\dx$ equals",
-      "a": "(A) $\\ln(x^2+6)+C$",
-      "s": "Choose $u=x^2+6$, so $du=2x\\,dx$. The integral is $\\ln u+C$. [1]",
+      "q": "$\\int \\frac{2 x}{x^2 + 6} \\dx$ equals",
+      "a": "(A) $\\ln (x^2 + 6) + C$",
+      "s": "Choose $u = x^2 + 6$, so $d u = 2 x \\, d x$. The integral is $\\ln u + C$. [1]",
       "opts": [
-        "$\\ln(x^2+6)+C$",
-        "$2\\ln(x^2+6)+C$",
-        "$\\tan^{-1}x+C$",
-        "$1/(x^2+6)+C$"
+        "$\\ln (x^2 + 6) + C$",
+        "$2 \\ln (x^2 + 6) + C$",
+        "$\\tan^{- 1} x + C$",
+        "$\\frac{1}{(x^2 + 6)} + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -61,13 +61,13 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_{-2}^{2}\\frac{x^3}{1+x^4}\\dx$ is",
+      "q": "The value of $\\int_{- 2}^{2} \\frac{x^3}{1 + x^4} \\dx$ is",
       "a": "(D) $0$",
       "s": "The denominator is positive and even; the numerator is odd. The integrand is continuous and odd. [1]",
       "opts": [
         "$2$",
         "$4$",
-        "$-2$",
+        "$- 2$",
         "$0$"
       ],
       "marks": 1,
@@ -76,13 +76,13 @@
       "negative": 0
     },
     {
-      "q": "If $\\int_1^4 f(x)dx=7$, then $\\int_4^1 2f(x)dx=$",
-      "a": "(C) $-14$",
-      "s": "Reversing the limits multiplies by $-1$, and linearity supplies the factor $2$. [1]",
+      "q": "If $\\int_1^4 f (x) d x = 7$, then $\\int_4^1 2 f (x) d x =$",
+      "a": "(C) $- 14$",
+      "s": "Reversing the limits multiplies by $- 1$, and linearity supplies the factor $2$. [1]",
       "opts": [
         "$7$",
-        "$-7$",
-        "$-14$",
+        "$- 7$",
+        "$- 14$",
         "$14$"
       ],
       "marks": 1,
@@ -91,14 +91,14 @@
       "negative": 0
     },
     {
-      "q": "The derivative of $\\int_0^{2x}(1+t^2)dt$ is",
-      "a": "(B) $2(1+4x^2)$",
+      "q": "The derivative of $\\int_0^{2 x} (1 + t^2) d t$ is",
+      "a": "(B) $2 (1 + 4 x^2)$",
       "s": "Apply the fundamental theorem and multiply by the derivative $2$ of the upper limit. [1]",
       "opts": [
-        "$4x$",
-        "$2(1+4x^2)$",
-        "$1+4x^2$",
-        "$2(1+x^2)$"
+        "$4 x$",
+        "$2 (1 + 4 x^2)$",
+        "$1 + 4 x^2$",
+        "$2 (1 + x^2)$"
       ],
       "marks": 1,
       "alt": null,
@@ -106,14 +106,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\cos(4x)\\dx$ equals",
-      "a": "(A) $\\frac{1}{4}\\sin(4x)+C$",
-      "s": "Reverse the chain rule for sine. The coefficient must be $1/4$. [1]",
+      "q": "$\\int \\cos (4 x) \\dx$ equals",
+      "a": "(A) $\\frac{1}{4} \\sin (4 x) + C$",
+      "s": "Reverse the chain rule for sine. The coefficient must be $\\frac{1}{4}$. [1]",
       "opts": [
-        "$\\frac{1}{4}\\sin(4x)+C$",
-        "$4\\sin(4x)+C$",
-        "$-\\frac{1}{4}\\sin(4x)+C$",
-        "$\\cos(4x)+C$"
+        "$\\frac{1}{4} \\sin (4 x) + C$",
+        "$4 \\sin (4 x) + C$",
+        "$- \\frac{1}{4} \\sin (4 x) + C$",
+        "$\\cos (4 x) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -121,9 +121,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^{2}(2-x)\\dx$ is",
+      "q": "The value of $\\int_0^{2} (2 - x) \\dx$ is",
       "a": "(D) $2$",
-      "s": "Integrate: $[2x-x^2/2]_0^{2}=2$. [1]",
+      "s": "Integrate: $[2 x - \\frac{x^2}{2}]_0^{2} = 2$. [1]",
       "opts": [
         "$4$",
         "$1$",
@@ -136,14 +136,14 @@
       "negative": 0
     },
     {
-      "q": "For $x>0$, $\\int\\frac{dx}{2x}$ equals",
-      "a": "(C) $\\frac{1}{2}\\ln x+C$",
-      "s": "Take the constant $1/2$ outside $\\int dx/x$. [1]",
+      "q": "For $x > 0$, $\\int \\frac{d x}{2 x}$ equals",
+      "a": "(C) $\\frac{1}{2} \\ln x + C$",
+      "s": "Take the constant $\\frac{1}{2}$ outside $\\int \\frac{d x}{x}$. [1]",
       "opts": [
-        "$\\ln x+C$",
-        "$-1/(2x)+C$",
-        "$\\frac{1}{2}\\ln x+C$",
-        "$2\\ln x+C$"
+        "$\\ln x + C$",
+        "$- \\frac{1}{(2 x)} + C$",
+        "$\\frac{1}{2} \\ln x + C$",
+        "$2 \\ln x + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -151,9 +151,9 @@
       "negative": 0
     },
     {
-      "q": "If $f(2-x)=f(x)$ and $\\int_0^{2}f(x)dx=6$, then $\\int_0^{2}xf(x)dx=$",
+      "q": "If $f (2 - x) = f (x)$ and $\\int_0^{2} f (x) d x = 6$, then $\\int_0^{2} x f (x) d x =$",
       "a": "(B) $6$",
-      "s": "Reflect and add: $2I=2\\int_0^{2}f=6(2)$. [1]",
+      "s": "Reflect and add: $2 I = 2 \\int_0^{2} f = 6 (2)$. [1]",
       "opts": [
         "$2$",
         "$6$",
@@ -166,14 +166,14 @@
       "negative": 0
     },
     {
-      "q": "A suitable substitution for $\\int x^2\\sqrt{2+x^3}\\dx$ is",
-      "a": "(A) $u=2+x^3$",
-      "s": "The chosen inner function has differential $du=3x^2dx$, matching the numerator. [1]",
+      "q": "A suitable substitution for $\\int x^2 \\sqrt{2 + x^3} \\dx$ is",
+      "a": "(A) $u = 2 + x^3$",
+      "s": "The chosen inner function has differential $d u = 3 x^2 d x$, matching the numerator. [1]",
       "opts": [
-        "$u=2+x^3$",
-        "$u=x^2$",
-        "$u=2+x^2$",
-        "$u=1/x$"
+        "$u = 2 + x^3$",
+        "$u = x^2$",
+        "$u = 2 + x^2$",
+        "$u = \\frac{1}{x}$"
       ],
       "marks": 1,
       "alt": null,
@@ -181,11 +181,11 @@
       "negative": 0
     },
     {
-      "q": "The coefficient of $\\ln|x+1|$ in $\\int\\frac{dx}{(x+1)(x+4)}$ is",
+      "q": "The coefficient of $\\ln |x + 1|$ in $\\int \\frac{d x}{(x + 1) (x + 4)}$ is",
       "a": "(D) $\\frac{1}{3}$",
-      "s": "Write the integrand as $\\frac1{3}(\\frac1{x+1}-\\frac1{x+4})$. [1]",
+      "s": "Write the integrand as $\\frac1{3} (\\frac1{x + 1} - \\frac1{x + 4})$. [1]",
       "opts": [
-        "$-\\frac{1}{3}$",
+        "$- \\frac{1}{3}$",
         "$3$",
         "$1$",
         "$\\frac{1}{3}$"
@@ -196,14 +196,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{dx}{4+x^2}$ equals",
-      "a": "(C) $\\frac{1}{2}\\tan^{-1}(x/2)+C$",
-      "s": "Use the standard formula with $a=2$. [1]",
+      "q": "$\\int \\frac{d x}{4 + x^2}$ equals",
+      "a": "(C) $\\frac{1}{2} \\tan^{- 1} (\\frac{x}{2}) + C$",
+      "s": "Use the standard formula with $a = 2$. [1]",
       "opts": [
-        "$\\tan^{-1}(x/2)+C$",
-        "$\\frac{1}{2}\\sin^{-1}(x/2)+C$",
-        "$\\frac{1}{2}\\tan^{-1}(x/2)+C$",
-        "$2\\tan^{-1}(x/2)+C$"
+        "$\\tan^{- 1} (\\frac{x}{2}) + C$",
+        "$\\frac{1}{2} \\sin^{- 1} (\\frac{x}{2}) + C$",
+        "$\\frac{1}{2} \\tan^{- 1} (\\frac{x}{2}) + C$",
+        "$2 \\tan^{- 1} (\\frac{x}{2}) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -211,69 +211,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1 (2+1) x^{2}\\dx$ is",
-      "a": "(B) $1$",
-      "s": "The antiderivative is $x^{3}$. Its endpoint difference is $1$. [1]",
-      "opts": [
-        "$0$",
-        "$1$",
-        "$3$",
-        "$\\frac{1}{3}$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "If $F\\prime(x)=f(x)$ and $G(x)=F(x)+9$, then $G\\prime(x)$ is",
-      "a": "(A) $f(x)$",
-      "s": "The derivative of the added constant is zero. [1]",
-      "opts": [
-        "$f(x)$",
-        "$f(x)+9$",
-        "$9f(x)$",
-        "$0$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "For $x>0$, $\\int\\frac{(\\ln x)^{2}}x\\dx$ equals",
-      "a": "(D) $\\frac{1}{3}(\\ln x)^{3}+C$",
-      "s": "Set $u=\\ln x$. Integrate $u^{2}du$. [1]",
-      "opts": [
-        "$(\\ln x)^{3}+C$",
-        "$\\frac{1}{2}(\\ln x)^{2}+C$",
-        "$x(\\ln x)^{2}+C$",
-        "$\\frac{1}{3}(\\ln x)^{3}+C$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "The value of $\\int_0^{\\pi/2} 2\\sin x\\dx$ is",
-      "a": "(C) $2$",
-      "s": "The antiderivative is $-2\\cos x$. Evaluation gives $2$. [1]",
-      "opts": [
-        "$4$",
-        "$1$",
-        "$2$",
-        "$0$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "Assertion: $\\int_{-2}^{2}(x^3+2)dx=8$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
+      "q": "Assertion: $\\int_{- 2}^{2} (x^3 + 2) d x = 8$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
       "a": "(A)",
-      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2(2\\cdot2)=8$. The reason explains the cancellation used. [1]",
+      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2 (2 \\cdot 2) = 8$. The reason explains the cancellation used. [1]",
       "opts": [
         "Both statements are true and the reason explains the assertion.",
         "Both statements are true but the reason does not explain the assertion.",
@@ -286,7 +226,7 @@
       "negative": 0
     },
     {
-      "q": "Assertion: $\\int_0^{2}(x-2/2)dx$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
+      "q": "Assertion: $\\int_0^{2} (x - \\frac{2}{2}) d x$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
       "a": "(D)",
       "s": "The signed integral is zero, but two nonzero triangular areas have positive sum. The assertion is false; the reason is true. [1]",
       "opts": [
@@ -301,15 +241,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int(4x+1)^3dx$.",
-      "a": "$(4x+1)^4/16+C$",
-      "s": "Let $u=4x+1$, $dx=du/4$ [1]. Integrate $u^3/4$ to obtain the stated result [1].",
+      "q": "Evaluate $\\int (4 x + 1)^3 d x$.",
+      "a": "$\\frac{(4 x + 1)^4}{16} + C$",
+      "s": "Let $u = 4 x + 1$, $d x = \\frac{d u}{4}$ [1]. Integrate $\\frac{u^3}{4}$ to obtain the stated result [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Evaluate $\\int\\sin(2x+1)dx$.",
-        "a": "$-\\cos(2x+1)/2+C$",
-        "s": "Let $u=2x+1$, $du=2dx$ [1]. Integrate $\\sin u$ and divide by $2$ [1].",
+        "q": "Evaluate $\\int \\sin (2 x + 1) d x$.",
+        "a": "$- \\frac{\\cos (2 x + 1)}{2} + C$",
+        "s": "Let $u = 2 x + 1$, $d u = 2 d x$ [1]. Integrate $\\sin u$ and divide by $2$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -318,9 +258,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{x}{2+x^2}dx$.",
-      "a": "$\\frac12\\ln(\\frac{3}{2})$",
-      "s": "Use $u=2+x^2$, giving limits $2,3$ [1]. Then $I=\\frac12[\\ln u]_2^{3}$ [1].",
+      "q": "Evaluate $\\int_0^1 \\frac{x}{2 + x^2} d x$.",
+      "a": "$\\frac12 \\ln (\\frac{3}{2})$",
+      "s": "Use $u = 2 + x^2$, giving limits $2 , 3$ [1]. Then $I = \\frac12 [\\ln u]_2^{3}$ [1].",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -328,15 +268,15 @@
       "negative": 0
     },
     {
-      "q": "Find $a$ if $\\int_0^2(ax+2)dx=10$.",
-      "a": "$a=3$",
-      "s": "The integral is $2a+4$ [1]. Set it equal to $10$ and solve to get $a=3$ [1].",
+      "q": "Find $a$ if $\\int_0^2 (a x + 2) d x = 10$.",
+      "a": "$a = 3$",
+      "s": "The integral is $2 a + 4$ [1]. Set it equal to $10$ and solve to get $a = 3$ [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Find $b$ if $\\int_1^3(2x+b)dx=12$.",
-        "a": "$b=2$",
-        "s": "The integral is $4(2)+2b$ [1]. Equating to $12$ gives $b=2$ [1].",
+        "q": "Find $b$ if $\\int_1^3 (2 x + b) d x = 12$.",
+        "a": "$b = 2$",
+        "s": "The integral is $4 (2) + 2 b$ [1]. Equating to $12$ gives $b = 2$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -345,35 +285,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\frac{2+\\sin x}{4+\\sin x+\\cos x}dx$.",
-      "a": "$\\pi/4$",
-      "s": "Reflection $x\\mapsto\\pi/2-x$ interchanges sine and cosine in the numerator [1]. Adding the two forms gives $2I=\\pi/2$, hence $I=\\pi/4$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Find the antiderivative of $3x^{2}$ that vanishes at $x=1$.",
-      "a": "$x^{3}-1$",
-      "s": "The general antiderivative is $x^{3}+C$ [1]. At $x=1$, the condition yields $C=-1$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int x e^{2x}dx$.",
-      "a": "$e^{2x}(2x-1)/4+C$",
-      "s": "Choose $u=x$, $dv=e^{2x}dx$ [1]. Then $I=xe^{2x}/2-\\frac1{2}\\int e^{2x}dx$ [1]. Integrate the remaining exponential and simplify [1].",
+      "q": "Evaluate $\\int x e^{2 x} d x$.",
+      "a": "$\\frac{e^{2 x} (2 x - 1)}{4} + C$",
+      "s": "Choose $u = x$, $d v = e^{2 x} d x$ [1]. Then $I = \\frac{x e^{2 x}}{2} - \\frac1{2} \\int e^{2 x} d x$ [1]. Integrate the remaining exponential and simplify [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int x\\cos(2x)dx$.",
-        "a": "$x\\sin(2x)/2+\\cos(2x)/4+C$",
-        "s": "Take $u=x$, $dv=\\cos(2x)dx$ [1]. Parts gives $x\\sin(2x)/2-\\frac1{2}\\int\\sin(2x)dx$ [1]. Integrate to obtain the answer [1].",
+        "q": "Evaluate $\\int x \\cos (2 x) d x$.",
+        "a": "$\\frac{x \\sin (2 x)}{2} + \\frac{\\cos (2 x)}{4} + C$",
+        "s": "Take $u = x$, $d v = \\cos (2 x) d x$ [1]. Parts gives $\\frac{x \\sin (2 x)}{2} - \\frac1{2} \\int \\sin (2 x) d x$ [1]. Integrate to obtain the answer [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -382,15 +302,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int\\frac{dx}{(x+2)(x+5)}$.",
-      "a": "$\\frac13\\ln\\left|\\frac{x+2}{x+5}\\right|+C$",
-      "s": "Write $A/(x+2)+B/(x+5)$ [1]. Comparing coefficients gives $A=1/3,B=-1/3$ [1]. Integrate both logarithmic terms [1].",
+      "q": "Evaluate $\\int \\frac{d x}{(x + 2) (x + 5)}$.",
+      "a": "$\\frac13 \\ln \\left |\\frac{x + 2}{x + 5} \\right| + C$",
+      "s": "Write $\\frac{A}{(x + 2)} + \\frac{B}{(x + 5)}$ [1]. Comparing coefficients gives $A = \\frac{1}{3} , B = - \\frac{1}{3}$ [1]. Integrate both logarithmic terms [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int\\frac{x}{x^2+4x+8}dx$.",
-        "a": "$\\frac12\\ln((x+2)^2+4)-1\\tan^{-1}((x+2)/2)+C$",
-        "s": "Write $x=(x+2)-2$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
+        "q": "Evaluate $\\int \\frac{x}{x^2 + 4 x + 8} d x$.",
+        "a": "$\\frac12 \\ln ((x + 2)^2 + 4) - 1 \\tan^{- 1} (\\frac{(x + 2)}{2}) + C$",
+        "s": "Write $x = (x + 2) - 2$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -399,9 +319,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{3}|x-2|dx$.",
+      "q": "Evaluate $\\int_0^{3} |x - 2| d x$.",
       "a": "$\\frac{5}{2}$",
-      "s": "The sign changes at $x=2$ [1]. Split into $\\int_0^{2}(2-x)dx+\\int_{2}^{3}(x-2)dx$ [1]. These have values $2$ and $1/2$ [1].",
+      "s": "The sign changes at $x = 2$ [1]. Split into $\\int_0^{2} (2 - x) d x + \\int_{2}^{3} (x - 2) d x$ [1]. These have values $2$ and $\\frac{1}{2}$ [1].",
       "opts": null,
       "marks": 3,
       "alt": null,
@@ -409,15 +329,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{4x+1}{2x^2+x+2}dx$.",
-      "a": "$\\ln(\\frac{5}{2})$",
-      "s": "Let $u=2x^2+x+2$, so $du=(4x+1)dx$ [1]. New bounds are $2,5$ [1]. Evaluate $[\\ln u]_2^{5}$ [1].",
+      "q": "Evaluate $\\int \\frac{4 x^2 + 2 x + 5}{(x + 1) (x^2 + 1)} d x$, showing the decomposition.",
+      "a": "$\\frac{7}{2} \\ln |x + 1| + \\frac{1}{4} \\ln (x^2 + 1) + \\frac{3}{2} \\tan^{- 1} x + C$",
+      "s": "Write $\\frac{A}{(x + 1)} + \\frac{(B x + D)}{(x^2 + 1)}$ [1]. Clearing denominators gives $A + B = 4$, $B + D = 2$, $A + D = 5$ [1]. Thus $A = \\frac{7}{2}$, $B = \\frac{1}{2}$, $D = \\frac{3}{2}$ [1]. Integrate $\\frac{A}{(x + 1)}$ and $\\frac{B x}{(x^2 + 1)}$ [1], then $\\frac{D}{(x^2 + 1)}$ and add $C$ [1].",
       "opts": null,
-      "marks": 3,
+      "marks": 5,
       "alt": {
-        "q": "Evaluate $\\int_0^1\\frac{x^2}{2+x^3}dx$.",
-        "a": "$\\frac13\\ln(\\frac{3}{2})$",
-        "s": "Put $u=2+x^3$, $du=3x^2dx$ [1]. Bounds become $2,3$ [1]. Integrate $du/(3u)$ [1].",
+        "q": "Evaluate $\\int x^2 e^{2 x} d x$, showing both uses of integration by parts.",
+        "a": "$e^{2 x} \\left (\\frac{x^2}{2} - \\frac{2 x}{4} + \\frac2{8} \\right) + C$",
+        "s": "Choose $u = x^2$, $d v = e^{2 x} d x$ [1]. Then $I = \\frac{x^2 e^{2 x}}{2} - \\frac2{2} \\int x e^{2 x} d x$ [1]. Apply parts to the remaining integral [1] to get $\\frac{x e^{2 x}}{2} - \\frac{e^{2 x}}{4}$ [1]. Substitute and simplify [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -426,103 +346,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_1^{e} 2x\\ln x\\,dx$.",
-      "a": "$\\frac{1}{2}(e^2+1)$",
-      "s": "Use $u=\\ln x$, $dv=2x\\,dx$ [1]. The antiderivative is $1x^2\\ln x-\\frac{1}{2}x^2$ [1]. Endpoint subtraction gives $\\frac{1}{2}(e^2+1)$ [1].",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{dx}{\\sqrt{12-4x-x^2}}$.",
-      "a": "$\\sin^{-1}((x+2)/4)+C$",
-      "s": "Complete the square: the radicand is $16-(x+2)^2$ [1]. Set $u=(x+2)/4$ [1]. The integral becomes $\\int du/\\sqrt{1-u^2}$ [1], valid for $|x+2|<4$.",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{4x^2+2x+5}{(x+1)(x^2+1)}dx$, showing the decomposition.",
-      "a": "$\\frac{7}{2}\\ln|x+1|+\\frac{1}{4}\\ln(x^2+1)+\\frac{3}{2}\\tan^{-1}x+C$",
-      "s": "Write $A/(x+1)+(Bx+D)/(x^2+1)$ [1]. Clearing denominators gives $A+B=4$, $B+D=2$, $A+D=5$ [1]. Thus $A=\\frac{7}{2}$, $B=\\frac{1}{2}$, $D=\\frac{3}{2}$ [1]. Integrate $A/(x+1)$ and $Bx/(x^2+1)$ [1], then $D/(x^2+1)$ and add $C$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int x^2e^{2x}dx$, showing both uses of integration by parts.",
-        "a": "$e^{2x}\\left(\\frac{x^2}{2}-\\frac{2x}{4}+\\frac2{8}\\right)+C$",
-        "s": "Choose $u=x^2$, $dv=e^{2x}dx$ [1]. Then $I=x^2e^{2x}/2-\\frac2{2}\\int xe^{2x}dx$ [1]. Apply parts to the remaining integral [1] to get $xe^{2x}/2-e^{2x}/4$ [1]. Substitute and simplify [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Let $I=\\int_0^{\\pi/2}\\frac{dx}{4\\cos^2x+\\sin^2x}$. Evaluate $I$ by substitution, and hence evaluate $J=\\int_0^{\\pi/2}\\frac{x\\,dx}{4\\cos^2x+\\sin^2x}+\\int_0^{\\pi/2}\\frac{x\\,dx}{4\\sin^2x+\\cos^2x}$.",
-      "a": "$I=\\pi/4,\\quad J=\\pi^2/8$",
-      "s": "Put $t=\\tan x$ and transform to $I=\\int_0^\\infty dt/(4+t^2)$ [1]. Its antiderivative is $\\frac1{2}\\tan^{-1}(t/2)$ [1], so $I=\\pi/4$ [1]. Reflect the second integral in $J$; it becomes the first denominator with numerator $\\pi/2-x$ [1]. Add the numerators to get $J=(\\pi/2)I=\\pi^2/8$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\sqrt{16-x^2}\\,dx$ using $x=4\\sin\\theta$, and then evaluate the definite integral from $0$ to $4/2$.",
-      "a": "$\\frac{x}{2}\\sqrt{16-x^2}+\\frac{16}2\\sin^{-1}(x/4)+C;\\quad 16\\left(\\frac{\\sqrt3}{8}+\\frac\\pi{12}\\right)$",
-      "s": "Choose $-\\pi/2<\\theta<\\pi/2$ so the root is $4\\cos\\theta$ [1]. The integral becomes $16\\int\\cos^2\\theta d\\theta$ [1]. Use $\\cos^2\\theta=(1+\\cos2\\theta)/2$ and integrate [1]. Return to $x$ [1]. At the upper endpoint $\\theta=\\pi/6$; subtract the zero lower-endpoint value to get the stated number [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int\\frac{x^2}{\\sqrt{16-x^2}}dx$ and then evaluate it from $0$ to $4/2$.",
-        "a": "$\\frac{16}2\\sin^{-1}(x/4)-\\frac{x}{2}\\sqrt{16-x^2}+C;\\quad 16\\left(\\frac\\pi{12}-\\frac{\\sqrt3}{8}\\right)$",
-        "s": "Set $x=4\\sin\\theta$ with the usual principal range [1]. The integral is $16\\int\\sin^2\\theta d\\theta$ [1]. Apply the half-angle identity and integrate [1]. Return to $x$ [1] and evaluate at $\\theta=\\pi/6$ and $0$ [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "For continuous $f$ on $[0,4]$, prove the reflection identity for its definite integral. Then evaluate $\\int_0^{4}\\frac{(x+2)^3}{(x+2)^3+(6-x)^3}dx$. Finally explain why the answer lies strictly between $0$ and $4$.",
-      "a": "$2$",
-      "s": "Use $u=4-x$ and $dx=-du$; reverse the transformed limits to establish the identity [2]. For the given integrand reflection interchanges the two cubes [1]. Their fractions add to $1$, so $2I=4$ [1]. Both cubes are positive throughout the interval; the fraction lies strictly between $0$ and $1$, establishing the bound [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A pump delivers liquid at rate $r(t)=2t+2$ litres per minute for $0\\leq t\\leq4$. Let $V(t)=\\int_0^t r(s)ds$. (i) State $V(0)$. [1] (ii) Find $V\\prime(2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
+      "q": "A pump delivers liquid at rate $r (t) = 2 t + 2$ litres per minute for $0 \\leq t \\leq 4$. Let $V (t) = \\int_0^t r (s) d s$. (i) State $V (0)$. [1] (ii) Find $V' (2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
       "a": "(i) $0$; (ii) $6$; (iii) $12$ litres; OR $6$ litres/minute.",
-      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V\\prime(2)=r(2)=6$ [1]. (iii) Integrate $r$: $\\int_1^3r(t)dt=[1t^2+2t]_1^3$ [1], which equals $12$ litres [1]. OR Average rate is $\\frac14\\int_0^4r(t)dt$ [1] $=6$ litres/minute [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A sensor records $s(t)=t-2$ on $0\\leq t\\leq4$. A signed total is $S=\\int_0^{4}s(t)dt$, while total signal magnitude is $M=\\int_0^{4}|s(t)|dt$. (i) When does the signal change sign? [1] (ii) Find $S$. [1] (iii) Find $M$, showing the split. [2] \\textbf{OR} Find the mean magnitude $M/(4)$. [2]",
-      "a": "(i) $t=2$; (ii) $0$; (iii) $4$; OR $1$.",
-      "s": "(i) Solve $t-2=0$ [1]. (ii) Symmetry or endpoint evaluation gives $S=0$ [1]. (iii) Split at $2$ [1]; each triangular contribution is $2$, so $M=4$ [1]. OR Compute the same total $M=4$ [1] and divide by $4$ to obtain $1$ [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A teaching model uses $f(x)=ax+2$ on $[0,2]$. Calibration requires $\\int_0^2 f(x)dx=12$. (i) Write the integral in terms of $a$. [1] (ii) Determine $a$. [1] (iii) For $F(x)=\\int_0^xf(t)dt$, find $F(1)$ and explain whether $F$ is increasing on $[0,2]$. [2]",
-      "a": "(i) $2a+4$; (ii) $a=4$; (iii) $F(1)=4$, strictly increasing.",
-      "s": "(i) Integrate $ax+2$ to get $2a+4$ [1]. (ii) Equate to $12$ and solve [1]. (iii) $F(x)=2x^2+2x$, so $F(1)=4$ [1]. Since $F\\prime(x)=4x+2>0$ on the interval, it is strictly increasing [1].",
+      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V' (2) = r (2) = 6$ [1]. (iii) Integrate $r$: $\\int_1^3 r (t) d t = [1 t^2 + 2 t]_1^3$ [1], which equals $12$ litres [1]. OR Average rate is $\\frac14 \\int_0^4 r (t) d t$ [1] $= 6$ litres/minute [1].",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -532,14 +358,14 @@
   ],
   "integrals-pdf-board-02": [
     {
-      "q": "An antiderivative of $5x^{4}$ is",
+      "q": "An antiderivative of $5 x^{4}$ is",
       "a": "(C) $x^{5}$",
-      "s": "The power rule gives $x^{5}+C$. Differentiation verifies the chosen option. [1]",
+      "s": "The power rule gives $x^{5} + C$. Differentiation verifies the chosen option. [1]",
       "opts": [
         "$x^{4}$",
-        "$x^{5}/5$",
+        "$\\frac{x^{5}}{5}$",
         "$x^{5}$",
-        "$5x^{5}$"
+        "$5 x^{5}$"
       ],
       "marks": 1,
       "alt": null,
@@ -547,9 +373,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1(3x+2)\\dx$ is",
+      "q": "The value of $\\int_0^1 (3 x + 2) \\dx$ is",
       "a": "(B) $\\frac{7}{2}$",
-      "s": "Use $[\\frac{3}{2}x^2+2x]_0^1=\\frac{7}{2}$. [1]",
+      "s": "Use $[\\frac{3}{2} x^2 + 2 x]_0^1 = \\frac{7}{2}$. [1]",
       "opts": [
         "$7$",
         "$\\frac{7}{2}$",
@@ -562,13 +388,13 @@
       "negative": 0
     },
     {
-      "q": "If $\\int e^{6x}\\dx=Ae^{6x}+C$, then $A=$",
+      "q": "If $\\int e^{6 x} \\dx = A e^{6 x} + C$, then $A =$",
       "a": "(A) $\\frac{1}{6}$",
-      "s": "Differentiate the proposed answer: $A(6)e^{6x}=e^{6x}$. [1]",
+      "s": "Differentiate the proposed answer: $A (6) e^{6 x} = e^{6 x}$. [1]",
       "opts": [
         "$\\frac{1}{6}$",
         "$6$",
-        "$-\\frac{1}{6}$",
+        "$- \\frac{1}{6}$",
         "$1$"
       ],
       "marks": 1,
@@ -577,14 +403,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{2x}{x^2+7}\\dx$ equals",
-      "a": "(D) $\\ln(x^2+7)+C$",
-      "s": "Choose $u=x^2+7$, so $du=2x\\,dx$. The integral is $\\ln u+C$. [1]",
+      "q": "$\\int \\frac{2 x}{x^2 + 7} \\dx$ equals",
+      "a": "(D) $\\ln (x^2 + 7) + C$",
+      "s": "Choose $u = x^2 + 7$, so $d u = 2 x \\, d x$. The integral is $\\ln u + C$. [1]",
       "opts": [
-        "$2\\ln(x^2+7)+C$",
-        "$\\tan^{-1}x+C$",
-        "$1/(x^2+7)+C$",
-        "$\\ln(x^2+7)+C$"
+        "$2 \\ln (x^2 + 7) + C$",
+        "$\\tan^{- 1} x + C$",
+        "$\\frac{1}{(x^2 + 7)} + C$",
+        "$\\ln (x^2 + 7) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -592,12 +418,12 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_{-3}^{3}\\frac{x^3}{1+x^4}\\dx$ is",
+      "q": "The value of $\\int_{- 3}^{3} \\frac{x^3}{1 + x^4} \\dx$ is",
       "a": "(C) $0$",
       "s": "The denominator is positive and even; the numerator is odd. The integrand is continuous and odd. [1]",
       "opts": [
         "$6$",
-        "$-3$",
+        "$- 3$",
         "$0$",
         "$3$"
       ],
@@ -607,12 +433,12 @@
       "negative": 0
     },
     {
-      "q": "If $\\int_1^4 f(x)dx=8$, then $\\int_4^1 3f(x)dx=$",
-      "a": "(B) $-24$",
-      "s": "Reversing the limits multiplies by $-1$, and linearity supplies the factor $3$. [1]",
+      "q": "If $\\int_1^4 f (x) d x = 8$, then $\\int_4^1 3 f (x) d x =$",
+      "a": "(B) $- 24$",
+      "s": "Reversing the limits multiplies by $- 1$, and linearity supplies the factor $3$. [1]",
       "opts": [
-        "$-8$",
-        "$-24$",
+        "$- 8$",
+        "$- 24$",
         "$24$",
         "$8$"
       ],
@@ -622,14 +448,14 @@
       "negative": 0
     },
     {
-      "q": "The derivative of $\\int_0^{3x}(1+t^2)dt$ is",
-      "a": "(A) $3(1+9x^2)$",
+      "q": "The derivative of $\\int_0^{3 x} (1 + t^2) d t$ is",
+      "a": "(A) $3 (1 + 9 x^2)$",
       "s": "Apply the fundamental theorem and multiply by the derivative $3$ of the upper limit. [1]",
       "opts": [
-        "$3(1+9x^2)$",
-        "$1+9x^2$",
-        "$3(1+x^2)$",
-        "$9x$"
+        "$3 (1 + 9 x^2)$",
+        "$1 + 9 x^2$",
+        "$3 (1 + x^2)$",
+        "$9 x$"
       ],
       "marks": 1,
       "alt": null,
@@ -637,14 +463,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\cos(5x)\\dx$ equals",
-      "a": "(D) $\\frac{1}{5}\\sin(5x)+C$",
-      "s": "Reverse the chain rule for sine. The coefficient must be $1/5$. [1]",
+      "q": "$\\int \\cos (5 x) \\dx$ equals",
+      "a": "(D) $\\frac{1}{5} \\sin (5 x) + C$",
+      "s": "Reverse the chain rule for sine. The coefficient must be $\\frac{1}{5}$. [1]",
       "opts": [
-        "$5\\sin(5x)+C$",
-        "$-\\frac{1}{5}\\sin(5x)+C$",
-        "$\\cos(5x)+C$",
-        "$\\frac{1}{5}\\sin(5x)+C$"
+        "$5 \\sin (5 x) + C$",
+        "$- \\frac{1}{5} \\sin (5 x) + C$",
+        "$\\cos (5 x) + C$",
+        "$\\frac{1}{5} \\sin (5 x) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -652,9 +478,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^{3}(3-x)\\dx$ is",
+      "q": "The value of $\\int_0^{3} (3 - x) \\dx$ is",
       "a": "(C) $\\frac{9}{2}$",
-      "s": "Integrate: $[3x-x^2/2]_0^{3}=\\frac{9}{2}$. [1]",
+      "s": "Integrate: $[3 x - \\frac{x^2}{2}]_0^{3} = \\frac{9}{2}$. [1]",
       "opts": [
         "$\\frac{3}{2}$",
         "$0$",
@@ -667,14 +493,14 @@
       "negative": 0
     },
     {
-      "q": "For $x>0$, $\\int\\frac{dx}{3x}$ equals",
-      "a": "(B) $\\frac{1}{3}\\ln x+C$",
-      "s": "Take the constant $1/3$ outside $\\int dx/x$. [1]",
+      "q": "For $x > 0$, $\\int \\frac{d x}{3 x}$ equals",
+      "a": "(B) $\\frac{1}{3} \\ln x + C$",
+      "s": "Take the constant $\\frac{1}{3}$ outside $\\int \\frac{d x}{x}$. [1]",
       "opts": [
-        "$-1/(3x)+C$",
-        "$\\frac{1}{3}\\ln x+C$",
-        "$3\\ln x+C$",
-        "$\\ln x+C$"
+        "$- \\frac{1}{(3 x)} + C$",
+        "$\\frac{1}{3} \\ln x + C$",
+        "$3 \\ln x + C$",
+        "$\\ln x + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -682,9 +508,9 @@
       "negative": 0
     },
     {
-      "q": "If $f(3-x)=f(x)$ and $\\int_0^{3}f(x)dx=6$, then $\\int_0^{3}xf(x)dx=$",
+      "q": "If $f (3 - x) = f (x)$ and $\\int_0^{3} f (x) d x = 6$, then $\\int_0^{3} x f (x) d x =$",
       "a": "(A) $9$",
-      "s": "Reflect and add: $2I=3\\int_0^{3}f=6(3)$. [1]",
+      "s": "Reflect and add: $2 I = 3 \\int_0^{3} f = 6 (3)$. [1]",
       "opts": [
         "$9$",
         "$10$",
@@ -697,14 +523,14 @@
       "negative": 0
     },
     {
-      "q": "A suitable substitution for $\\int x^2\\sqrt{3+x^3}\\dx$ is",
-      "a": "(D) $u=3+x^3$",
-      "s": "The chosen inner function has differential $du=3x^2dx$, matching the numerator. [1]",
+      "q": "A suitable substitution for $\\int x^2 \\sqrt{3 + x^3} \\dx$ is",
+      "a": "(D) $u = 3 + x^3$",
+      "s": "The chosen inner function has differential $d u = 3 x^2 d x$, matching the numerator. [1]",
       "opts": [
-        "$u=x^2$",
-        "$u=3+x^2$",
-        "$u=1/x$",
-        "$u=3+x^3$"
+        "$u = x^2$",
+        "$u = 3 + x^2$",
+        "$u = \\frac{1}{x}$",
+        "$u = 3 + x^3$"
       ],
       "marks": 1,
       "alt": null,
@@ -712,14 +538,14 @@
       "negative": 0
     },
     {
-      "q": "The coefficient of $\\ln|x+1|$ in $\\int\\frac{dx}{(x+1)(x+5)}$ is",
+      "q": "The coefficient of $\\ln |x + 1|$ in $\\int \\frac{d x}{(x + 1) (x + 5)}$ is",
       "a": "(C) $\\frac{1}{4}$",
-      "s": "Write the integrand as $\\frac1{4}(\\frac1{x+1}-\\frac1{x+5})$. [1]",
+      "s": "Write the integrand as $\\frac1{4} (\\frac1{x + 1} - \\frac1{x + 5})$. [1]",
       "opts": [
         "$4$",
         "$1$",
         "$\\frac{1}{4}$",
-        "$-\\frac{1}{4}$"
+        "$- \\frac{1}{4}$"
       ],
       "marks": 1,
       "alt": null,
@@ -727,14 +553,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{dx}{9+x^2}$ equals",
-      "a": "(B) $\\frac{1}{3}\\tan^{-1}(x/3)+C$",
-      "s": "Use the standard formula with $a=3$. [1]",
+      "q": "$\\int \\frac{d x}{9 + x^2}$ equals",
+      "a": "(B) $\\frac{1}{3} \\tan^{- 1} (\\frac{x}{3}) + C$",
+      "s": "Use the standard formula with $a = 3$. [1]",
       "opts": [
-        "$\\frac{1}{3}\\sin^{-1}(x/3)+C$",
-        "$\\frac{1}{3}\\tan^{-1}(x/3)+C$",
-        "$3\\tan^{-1}(x/3)+C$",
-        "$\\tan^{-1}(x/3)+C$"
+        "$\\frac{1}{3} \\sin^{- 1} (\\frac{x}{3}) + C$",
+        "$\\frac{1}{3} \\tan^{- 1} (\\frac{x}{3}) + C$",
+        "$3 \\tan^{- 1} (\\frac{x}{3}) + C$",
+        "$\\tan^{- 1} (\\frac{x}{3}) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -742,69 +568,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1 (3+1) x^{3}\\dx$ is",
-      "a": "(A) $1$",
-      "s": "The antiderivative is $x^{4}$. Its endpoint difference is $1$. [1]",
-      "opts": [
-        "$1$",
-        "$4$",
-        "$\\frac{1}{4}$",
-        "$0$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "If $F\\prime(x)=f(x)$ and $G(x)=F(x)+10$, then $G\\prime(x)$ is",
-      "a": "(D) $f(x)$",
-      "s": "The derivative of the added constant is zero. [1]",
-      "opts": [
-        "$f(x)+10$",
-        "$10f(x)$",
-        "$0$",
-        "$f(x)$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "For $x>0$, $\\int\\frac{(\\ln x)^{3}}x\\dx$ equals",
-      "a": "(C) $\\frac{1}{4}(\\ln x)^{4}+C$",
-      "s": "Set $u=\\ln x$. Integrate $u^{3}du$. [1]",
-      "opts": [
-        "$\\frac{1}{3}(\\ln x)^{3}+C$",
-        "$x(\\ln x)^{3}+C$",
-        "$\\frac{1}{4}(\\ln x)^{4}+C$",
-        "$(\\ln x)^{4}+C$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "The value of $\\int_0^{\\pi/2} 3\\sin x\\dx$ is",
-      "a": "(B) $3$",
-      "s": "The antiderivative is $-3\\cos x$. Evaluation gives $3$. [1]",
-      "opts": [
-        "$\\frac{3}{2}$",
-        "$3$",
-        "$0$",
-        "$6$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "Assertion: $\\int_{-3}^{3}(x^3+2)dx=12$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
+      "q": "Assertion: $\\int_{- 3}^{3} (x^3 + 2) d x = 12$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
       "a": "(A)",
-      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2(2\\cdot3)=12$. The reason explains the cancellation used. [1]",
+      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2 (2 \\cdot 3) = 12$. The reason explains the cancellation used. [1]",
       "opts": [
         "Both statements are true and the reason explains the assertion.",
         "Both statements are true but the reason does not explain the assertion.",
@@ -817,7 +583,7 @@
       "negative": 0
     },
     {
-      "q": "Assertion: $\\int_0^{3}(x-3/2)dx$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
+      "q": "Assertion: $\\int_0^{3} (x - \\frac{3}{2}) d x$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
       "a": "(D)",
       "s": "The signed integral is zero, but two nonzero triangular areas have positive sum. The assertion is false; the reason is true. [1]",
       "opts": [
@@ -832,15 +598,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int(6x+1)^3dx$.",
-      "a": "$(6x+1)^4/24+C$",
-      "s": "Let $u=6x+1$, $dx=du/6$ [1]. Integrate $u^3/6$ to obtain the stated result [1].",
+      "q": "Evaluate $\\int (6 x + 1)^3 d x$.",
+      "a": "$\\frac{(6 x + 1)^4}{24} + C$",
+      "s": "Let $u = 6 x + 1$, $d x = \\frac{d u}{6}$ [1]. Integrate $\\frac{u^3}{6}$ to obtain the stated result [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Evaluate $\\int\\sin(3x+1)dx$.",
-        "a": "$-\\cos(3x+1)/3+C$",
-        "s": "Let $u=3x+1$, $du=3dx$ [1]. Integrate $\\sin u$ and divide by $3$ [1].",
+        "q": "Evaluate $\\int \\sin (3 x + 1) d x$.",
+        "a": "$- \\frac{\\cos (3 x + 1)}{3} + C$",
+        "s": "Let $u = 3 x + 1$, $d u = 3 d x$ [1]. Integrate $\\sin u$ and divide by $3$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -849,9 +615,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{x}{3+x^2}dx$.",
-      "a": "$\\frac12\\ln(\\frac{4}{3})$",
-      "s": "Use $u=3+x^2$, giving limits $3,4$ [1]. Then $I=\\frac12[\\ln u]_3^{4}$ [1].",
+      "q": "Evaluate $\\int_0^1 \\frac{x}{3 + x^2} d x$.",
+      "a": "$\\frac12 \\ln (\\frac{4}{3})$",
+      "s": "Use $u = 3 + x^2$, giving limits $3 , 4$ [1]. Then $I = \\frac12 [\\ln u]_3^{4}$ [1].",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -859,15 +625,15 @@
       "negative": 0
     },
     {
-      "q": "Find $a$ if $\\int_0^2(ax+3)dx=14$.",
-      "a": "$a=4$",
-      "s": "The integral is $2a+6$ [1]. Set it equal to $14$ and solve to get $a=4$ [1].",
+      "q": "Find $a$ if $\\int_0^2 (a x + 3) d x = 14$.",
+      "a": "$a = 4$",
+      "s": "The integral is $2 a + 6$ [1]. Set it equal to $14$ and solve to get $a = 4$ [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Find $b$ if $\\int_1^3(3x+b)dx=18$.",
-        "a": "$b=3$",
-        "s": "The integral is $4(3)+2b$ [1]. Equating to $18$ gives $b=3$ [1].",
+        "q": "Find $b$ if $\\int_1^3 (3 x + b) d x = 18$.",
+        "a": "$b = 3$",
+        "s": "The integral is $4 (3) + 2 b$ [1]. Equating to $18$ gives $b = 3$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -876,35 +642,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\frac{3+\\sin x}{6+\\sin x+\\cos x}dx$.",
-      "a": "$\\pi/4$",
-      "s": "Reflection $x\\mapsto\\pi/2-x$ interchanges sine and cosine in the numerator [1]. Adding the two forms gives $2I=\\pi/2$, hence $I=\\pi/4$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Find the antiderivative of $4x^{3}$ that vanishes at $x=1$.",
-      "a": "$x^{4}-1$",
-      "s": "The general antiderivative is $x^{4}+C$ [1]. At $x=1$, the condition yields $C=-1$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int x e^{3x}dx$.",
-      "a": "$e^{3x}(3x-1)/9+C$",
-      "s": "Choose $u=x$, $dv=e^{3x}dx$ [1]. Then $I=xe^{3x}/3-\\frac1{3}\\int e^{3x}dx$ [1]. Integrate the remaining exponential and simplify [1].",
+      "q": "Evaluate $\\int x e^{3 x} d x$.",
+      "a": "$\\frac{e^{3 x} (3 x - 1)}{9} + C$",
+      "s": "Choose $u = x$, $d v = e^{3 x} d x$ [1]. Then $I = \\frac{x e^{3 x}}{3} - \\frac1{3} \\int e^{3 x} d x$ [1]. Integrate the remaining exponential and simplify [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int x\\cos(3x)dx$.",
-        "a": "$x\\sin(3x)/3+\\cos(3x)/9+C$",
-        "s": "Take $u=x$, $dv=\\cos(3x)dx$ [1]. Parts gives $x\\sin(3x)/3-\\frac1{3}\\int\\sin(3x)dx$ [1]. Integrate to obtain the answer [1].",
+        "q": "Evaluate $\\int x \\cos (3 x) d x$.",
+        "a": "$\\frac{x \\sin (3 x)}{3} + \\frac{\\cos (3 x)}{9} + C$",
+        "s": "Take $u = x$, $d v = \\cos (3 x) d x$ [1]. Parts gives $\\frac{x \\sin (3 x)}{3} - \\frac1{3} \\int \\sin (3 x) d x$ [1]. Integrate to obtain the answer [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -913,15 +659,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int\\frac{dx}{(x+3)(x+6)}$.",
-      "a": "$\\frac13\\ln\\left|\\frac{x+3}{x+6}\\right|+C$",
-      "s": "Write $A/(x+3)+B/(x+6)$ [1]. Comparing coefficients gives $A=1/3,B=-1/3$ [1]. Integrate both logarithmic terms [1].",
+      "q": "Evaluate $\\int \\frac{d x}{(x + 3) (x + 6)}$.",
+      "a": "$\\frac13 \\ln \\left |\\frac{x + 3}{x + 6} \\right| + C$",
+      "s": "Write $\\frac{A}{(x + 3)} + \\frac{B}{(x + 6)}$ [1]. Comparing coefficients gives $A = \\frac{1}{3} , B = - \\frac{1}{3}$ [1]. Integrate both logarithmic terms [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int\\frac{x}{x^2+6x+13}dx$.",
-        "a": "$\\frac12\\ln((x+3)^2+4)-\\frac{3}{2}\\tan^{-1}((x+3)/2)+C$",
-        "s": "Write $x=(x+3)-3$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
+        "q": "Evaluate $\\int \\frac{x}{x^2 + 6 x + 13} d x$.",
+        "a": "$\\frac12 \\ln ((x + 3)^2 + 4) - \\frac{3}{2} \\tan^{- 1} (\\frac{(x + 3)}{2}) + C$",
+        "s": "Write $x = (x + 3) - 3$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -930,9 +676,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{4}|x-3|dx$.",
+      "q": "Evaluate $\\int_0^{4} |x - 3| d x$.",
       "a": "$5$",
-      "s": "The sign changes at $x=3$ [1]. Split into $\\int_0^{3}(3-x)dx+\\int_{3}^{4}(x-3)dx$ [1]. These have values $\\frac{9}{2}$ and $1/2$ [1].",
+      "s": "The sign changes at $x = 3$ [1]. Split into $\\int_0^{3} (3 - x) d x + \\int_{3}^{4} (x - 3) d x$ [1]. These have values $\\frac{9}{2}$ and $\\frac{1}{2}$ [1].",
       "opts": null,
       "marks": 3,
       "alt": null,
@@ -940,15 +686,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{6x+1}{3x^2+x+2}dx$.",
-      "a": "$\\ln(3)$",
-      "s": "Let $u=3x^2+x+2$, so $du=(6x+1)dx$ [1]. New bounds are $2,6$ [1]. Evaluate $[\\ln u]_2^{6}$ [1].",
+      "q": "Evaluate $\\int \\frac{6 x^2 + 3 x + 7}{(x + 1) (x^2 + 1)} d x$, showing the decomposition.",
+      "a": "$5 \\ln |x + 1| + \\frac{1}{2} \\ln (x^2 + 1) + 2 \\tan^{- 1} x + C$",
+      "s": "Write $\\frac{A}{(x + 1)} + \\frac{(B x + D)}{(x^2 + 1)}$ [1]. Clearing denominators gives $A + B = 6$, $B + D = 3$, $A + D = 7$ [1]. Thus $A = 5$, $B = 1$, $D = 2$ [1]. Integrate $\\frac{A}{(x + 1)}$ and $\\frac{B x}{(x^2 + 1)}$ [1], then $\\frac{D}{(x^2 + 1)}$ and add $C$ [1].",
       "opts": null,
-      "marks": 3,
+      "marks": 5,
       "alt": {
-        "q": "Evaluate $\\int_0^1\\frac{x^2}{3+x^3}dx$.",
-        "a": "$\\frac13\\ln(\\frac{4}{3})$",
-        "s": "Put $u=3+x^3$, $du=3x^2dx$ [1]. Bounds become $3,4$ [1]. Integrate $du/(3u)$ [1].",
+        "q": "Evaluate $\\int x^2 e^{3 x} d x$, showing both uses of integration by parts.",
+        "a": "$e^{3 x} \\left (\\frac{x^2}{3} - \\frac{2 x}{9} + \\frac2{27} \\right) + C$",
+        "s": "Choose $u = x^2$, $d v = e^{3 x} d x$ [1]. Then $I = \\frac{x^2 e^{3 x}}{3} - \\frac2{3} \\int x e^{3 x} d x$ [1]. Apply parts to the remaining integral [1] to get $\\frac{x e^{3 x}}{3} - \\frac{e^{3 x}}{9}$ [1]. Substitute and simplify [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -957,103 +703,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_1^{e} 3x\\ln x\\,dx$.",
-      "a": "$\\frac{3}{4}(e^2+1)$",
-      "s": "Use $u=\\ln x$, $dv=3x\\,dx$ [1]. The antiderivative is $\\frac{3}{2}x^2\\ln x-\\frac{3}{4}x^2$ [1]. Endpoint subtraction gives $\\frac{3}{4}(e^2+1)$ [1].",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{dx}{\\sqrt{21-4x-x^2}}$.",
-      "a": "$\\sin^{-1}((x+2)/5)+C$",
-      "s": "Complete the square: the radicand is $25-(x+2)^2$ [1]. Set $u=(x+2)/5$ [1]. The integral becomes $\\int du/\\sqrt{1-u^2}$ [1], valid for $|x+2|<5$.",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{6x^2+3x+7}{(x+1)(x^2+1)}dx$, showing the decomposition.",
-      "a": "$5\\ln|x+1|+\\frac{1}{2}\\ln(x^2+1)+2\\tan^{-1}x+C$",
-      "s": "Write $A/(x+1)+(Bx+D)/(x^2+1)$ [1]. Clearing denominators gives $A+B=6$, $B+D=3$, $A+D=7$ [1]. Thus $A=5$, $B=1$, $D=2$ [1]. Integrate $A/(x+1)$ and $Bx/(x^2+1)$ [1], then $D/(x^2+1)$ and add $C$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int x^2e^{3x}dx$, showing both uses of integration by parts.",
-        "a": "$e^{3x}\\left(\\frac{x^2}{3}-\\frac{2x}{9}+\\frac2{27}\\right)+C$",
-        "s": "Choose $u=x^2$, $dv=e^{3x}dx$ [1]. Then $I=x^2e^{3x}/3-\\frac2{3}\\int xe^{3x}dx$ [1]. Apply parts to the remaining integral [1] to get $xe^{3x}/3-e^{3x}/9$ [1]. Substitute and simplify [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Let $I=\\int_0^{\\pi/2}\\frac{dx}{9\\cos^2x+\\sin^2x}$. Evaluate $I$ by substitution, and hence evaluate $J=\\int_0^{\\pi/2}\\frac{x\\,dx}{9\\cos^2x+\\sin^2x}+\\int_0^{\\pi/2}\\frac{x\\,dx}{9\\sin^2x+\\cos^2x}$.",
-      "a": "$I=\\pi/6,\\quad J=\\pi^2/12$",
-      "s": "Put $t=\\tan x$ and transform to $I=\\int_0^\\infty dt/(9+t^2)$ [1]. Its antiderivative is $\\frac1{3}\\tan^{-1}(t/3)$ [1], so $I=\\pi/6$ [1]. Reflect the second integral in $J$; it becomes the first denominator with numerator $\\pi/2-x$ [1]. Add the numerators to get $J=(\\pi/2)I=\\pi^2/12$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\sqrt{25-x^2}\\,dx$ using $x=5\\sin\\theta$, and then evaluate the definite integral from $0$ to $5/2$.",
-      "a": "$\\frac{x}{2}\\sqrt{25-x^2}+\\frac{25}2\\sin^{-1}(x/5)+C;\\quad 25\\left(\\frac{\\sqrt3}{8}+\\frac\\pi{12}\\right)$",
-      "s": "Choose $-\\pi/2<\\theta<\\pi/2$ so the root is $5\\cos\\theta$ [1]. The integral becomes $25\\int\\cos^2\\theta d\\theta$ [1]. Use $\\cos^2\\theta=(1+\\cos2\\theta)/2$ and integrate [1]. Return to $x$ [1]. At the upper endpoint $\\theta=\\pi/6$; subtract the zero lower-endpoint value to get the stated number [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int\\frac{x^2}{\\sqrt{25-x^2}}dx$ and then evaluate it from $0$ to $5/2$.",
-        "a": "$\\frac{25}2\\sin^{-1}(x/5)-\\frac{x}{2}\\sqrt{25-x^2}+C;\\quad 25\\left(\\frac\\pi{12}-\\frac{\\sqrt3}{8}\\right)$",
-        "s": "Set $x=5\\sin\\theta$ with the usual principal range [1]. The integral is $25\\int\\sin^2\\theta d\\theta$ [1]. Apply the half-angle identity and integrate [1]. Return to $x$ [1] and evaluate at $\\theta=\\pi/6$ and $0$ [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "For continuous $f$ on $[0,5]$, prove the reflection identity for its definite integral. Then evaluate $\\int_0^{5}\\frac{(x+2)^3}{(x+2)^3+(7-x)^3}dx$. Finally explain why the answer lies strictly between $0$ and $5$.",
-      "a": "$\\frac{5}{2}$",
-      "s": "Use $u=5-x$ and $dx=-du$; reverse the transformed limits to establish the identity [2]. For the given integrand reflection interchanges the two cubes [1]. Their fractions add to $1$, so $2I=5$ [1]. Both cubes are positive throughout the interval; the fraction lies strictly between $0$ and $1$, establishing the bound [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A pump delivers liquid at rate $r(t)=3t+2$ litres per minute for $0\\leq t\\leq4$. Let $V(t)=\\int_0^t r(s)ds$. (i) State $V(0)$. [1] (ii) Find $V\\prime(2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
+      "q": "A pump delivers liquid at rate $r (t) = 3 t + 2$ litres per minute for $0 \\leq t \\leq 4$. Let $V (t) = \\int_0^t r (s) d s$. (i) State $V (0)$. [1] (ii) Find $V' (2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
       "a": "(i) $0$; (ii) $8$; (iii) $16$ litres; OR $8$ litres/minute.",
-      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V\\prime(2)=r(2)=8$ [1]. (iii) Integrate $r$: $\\int_1^3r(t)dt=[\\frac{3}{2}t^2+2t]_1^3$ [1], which equals $16$ litres [1]. OR Average rate is $\\frac14\\int_0^4r(t)dt$ [1] $=8$ litres/minute [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A sensor records $s(t)=t-3$ on $0\\leq t\\leq6$. A signed total is $S=\\int_0^{6}s(t)dt$, while total signal magnitude is $M=\\int_0^{6}|s(t)|dt$. (i) When does the signal change sign? [1] (ii) Find $S$. [1] (iii) Find $M$, showing the split. [2] \\textbf{OR} Find the mean magnitude $M/(6)$. [2]",
-      "a": "(i) $t=3$; (ii) $0$; (iii) $9$; OR $\\frac{3}{2}$.",
-      "s": "(i) Solve $t-3=0$ [1]. (ii) Symmetry or endpoint evaluation gives $S=0$ [1]. (iii) Split at $3$ [1]; each triangular contribution is $\\frac{9}{2}$, so $M=9$ [1]. OR Compute the same total $M=9$ [1] and divide by $6$ to obtain $\\frac{3}{2}$ [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A teaching model uses $f(x)=ax+3$ on $[0,2]$. Calibration requires $\\int_0^2 f(x)dx=18$. (i) Write the integral in terms of $a$. [1] (ii) Determine $a$. [1] (iii) For $F(x)=\\int_0^xf(t)dt$, find $F(1)$ and explain whether $F$ is increasing on $[0,2]$. [2]",
-      "a": "(i) $2a+6$; (ii) $a=6$; (iii) $F(1)=6$, strictly increasing.",
-      "s": "(i) Integrate $ax+3$ to get $2a+6$ [1]. (ii) Equate to $18$ and solve [1]. (iii) $F(x)=3x^2+3x$, so $F(1)=6$ [1]. Since $F\\prime(x)=6x+3>0$ on the interval, it is strictly increasing [1].",
+      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V' (2) = r (2) = 8$ [1]. (iii) Integrate $r$: $\\int_1^3 r (t) d t = [\\frac{3}{2} t^2 + 2 t]_1^3$ [1], which equals $16$ litres [1]. OR Average rate is $\\frac14 \\int_0^4 r (t) d t$ [1] $= 8$ litres/minute [1].",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1063,13 +715,13 @@
   ],
   "integrals-pdf-board-03": [
     {
-      "q": "An antiderivative of $6x^{5}$ is",
+      "q": "An antiderivative of $6 x^{5}$ is",
       "a": "(B) $x^{6}$",
-      "s": "The power rule gives $x^{6}+C$. Differentiation verifies the chosen option. [1]",
+      "s": "The power rule gives $x^{6} + C$. Differentiation verifies the chosen option. [1]",
       "opts": [
-        "$x^{6}/6$",
+        "$\\frac{x^{6}}{6}$",
         "$x^{6}$",
-        "$6x^{6}$",
+        "$6 x^{6}$",
         "$x^{5}$"
       ],
       "marks": 1,
@@ -1078,9 +730,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1(4x+2)\\dx$ is",
+      "q": "The value of $\\int_0^1 (4 x + 2) \\dx$ is",
       "a": "(A) $4$",
-      "s": "Use $[2x^2+2x]_0^1=4$. [1]",
+      "s": "Use $[2 x^2 + 2 x]_0^1 = 4$. [1]",
       "opts": [
         "$4$",
         "$6$",
@@ -1093,12 +745,12 @@
       "negative": 0
     },
     {
-      "q": "If $\\int e^{7x}\\dx=Ae^{7x}+C$, then $A=$",
+      "q": "If $\\int e^{7 x} \\dx = A e^{7 x} + C$, then $A =$",
       "a": "(D) $\\frac{1}{7}$",
-      "s": "Differentiate the proposed answer: $A(7)e^{7x}=e^{7x}$. [1]",
+      "s": "Differentiate the proposed answer: $A (7) e^{7 x} = e^{7 x}$. [1]",
       "opts": [
         "$7$",
-        "$-\\frac{1}{7}$",
+        "$- \\frac{1}{7}$",
         "$1$",
         "$\\frac{1}{7}$"
       ],
@@ -1108,14 +760,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{2x}{x^2+8}\\dx$ equals",
-      "a": "(C) $\\ln(x^2+8)+C$",
-      "s": "Choose $u=x^2+8$, so $du=2x\\,dx$. The integral is $\\ln u+C$. [1]",
+      "q": "$\\int \\frac{2 x}{x^2 + 8} \\dx$ equals",
+      "a": "(C) $\\ln (x^2 + 8) + C$",
+      "s": "Choose $u = x^2 + 8$, so $d u = 2 x \\, d x$. The integral is $\\ln u + C$. [1]",
       "opts": [
-        "$\\tan^{-1}x+C$",
-        "$1/(x^2+8)+C$",
-        "$\\ln(x^2+8)+C$",
-        "$2\\ln(x^2+8)+C$"
+        "$\\tan^{- 1} x + C$",
+        "$\\frac{1}{(x^2 + 8)} + C$",
+        "$\\ln (x^2 + 8) + C$",
+        "$2 \\ln (x^2 + 8) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -1123,11 +775,11 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_{-4}^{4}\\frac{x^3}{1+x^4}\\dx$ is",
+      "q": "The value of $\\int_{- 4}^{4} \\frac{x^3}{1 + x^4} \\dx$ is",
       "a": "(B) $0$",
       "s": "The denominator is positive and even; the numerator is odd. The integrand is continuous and odd. [1]",
       "opts": [
-        "$-4$",
+        "$- 4$",
         "$0$",
         "$4$",
         "$8$"
@@ -1138,14 +790,14 @@
       "negative": 0
     },
     {
-      "q": "If $\\int_1^4 f(x)dx=9$, then $\\int_4^1 4f(x)dx=$",
-      "a": "(A) $-36$",
-      "s": "Reversing the limits multiplies by $-1$, and linearity supplies the factor $4$. [1]",
+      "q": "If $\\int_1^4 f (x) d x = 9$, then $\\int_4^1 4 f (x) d x =$",
+      "a": "(A) $- 36$",
+      "s": "Reversing the limits multiplies by $- 1$, and linearity supplies the factor $4$. [1]",
       "opts": [
-        "$-36$",
+        "$- 36$",
         "$36$",
         "$9$",
-        "$-9$"
+        "$- 9$"
       ],
       "marks": 1,
       "alt": null,
@@ -1153,14 +805,14 @@
       "negative": 0
     },
     {
-      "q": "The derivative of $\\int_0^{4x}(1+t^2)dt$ is",
-      "a": "(D) $4(1+16x^2)$",
+      "q": "The derivative of $\\int_0^{4 x} (1 + t^2) d t$ is",
+      "a": "(D) $4 (1 + 16 x^2)$",
       "s": "Apply the fundamental theorem and multiply by the derivative $4$ of the upper limit. [1]",
       "opts": [
-        "$1+16x^2$",
-        "$4(1+x^2)$",
-        "$16x$",
-        "$4(1+16x^2)$"
+        "$1 + 16 x^2$",
+        "$4 (1 + x^2)$",
+        "$16 x$",
+        "$4 (1 + 16 x^2)$"
       ],
       "marks": 1,
       "alt": null,
@@ -1168,14 +820,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\cos(6x)\\dx$ equals",
-      "a": "(C) $\\frac{1}{6}\\sin(6x)+C$",
-      "s": "Reverse the chain rule for sine. The coefficient must be $1/6$. [1]",
+      "q": "$\\int \\cos (6 x) \\dx$ equals",
+      "a": "(C) $\\frac{1}{6} \\sin (6 x) + C$",
+      "s": "Reverse the chain rule for sine. The coefficient must be $\\frac{1}{6}$. [1]",
       "opts": [
-        "$-\\frac{1}{6}\\sin(6x)+C$",
-        "$\\cos(6x)+C$",
-        "$\\frac{1}{6}\\sin(6x)+C$",
-        "$6\\sin(6x)+C$"
+        "$- \\frac{1}{6} \\sin (6 x) + C$",
+        "$\\cos (6 x) + C$",
+        "$\\frac{1}{6} \\sin (6 x) + C$",
+        "$6 \\sin (6 x) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -1183,9 +835,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^{4}(4-x)\\dx$ is",
+      "q": "The value of $\\int_0^{4} (4 - x) \\dx$ is",
       "a": "(B) $8$",
-      "s": "Integrate: $[4x-x^2/2]_0^{4}=8$. [1]",
+      "s": "Integrate: $[4 x - \\frac{x^2}{2}]_0^{4} = 8$. [1]",
       "opts": [
         "$0$",
         "$8$",
@@ -1198,14 +850,14 @@
       "negative": 0
     },
     {
-      "q": "For $x>0$, $\\int\\frac{dx}{4x}$ equals",
-      "a": "(A) $\\frac{1}{4}\\ln x+C$",
-      "s": "Take the constant $1/4$ outside $\\int dx/x$. [1]",
+      "q": "For $x > 0$, $\\int \\frac{d x}{4 x}$ equals",
+      "a": "(A) $\\frac{1}{4} \\ln x + C$",
+      "s": "Take the constant $\\frac{1}{4}$ outside $\\int \\frac{d x}{x}$. [1]",
       "opts": [
-        "$\\frac{1}{4}\\ln x+C$",
-        "$4\\ln x+C$",
-        "$\\ln x+C$",
-        "$-1/(4x)+C$"
+        "$\\frac{1}{4} \\ln x + C$",
+        "$4 \\ln x + C$",
+        "$\\ln x + C$",
+        "$- \\frac{1}{(4 x)} + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -1213,9 +865,9 @@
       "negative": 0
     },
     {
-      "q": "If $f(4-x)=f(x)$ and $\\int_0^{4}f(x)dx=6$, then $\\int_0^{4}xf(x)dx=$",
+      "q": "If $f (4 - x) = f (x)$ and $\\int_0^{4} f (x) d x = 6$, then $\\int_0^{4} x f (x) d x =$",
       "a": "(D) $12$",
-      "s": "Reflect and add: $2I=4\\int_0^{4}f=6(4)$. [1]",
+      "s": "Reflect and add: $2 I = 4 \\int_0^{4} f = 6 (4)$. [1]",
       "opts": [
         "$13$",
         "$24$",
@@ -1228,14 +880,14 @@
       "negative": 0
     },
     {
-      "q": "A suitable substitution for $\\int x^2\\sqrt{4+x^3}\\dx$ is",
-      "a": "(C) $u=4+x^3$",
-      "s": "The chosen inner function has differential $du=3x^2dx$, matching the numerator. [1]",
+      "q": "A suitable substitution for $\\int x^2 \\sqrt{4 + x^3} \\dx$ is",
+      "a": "(C) $u = 4 + x^3$",
+      "s": "The chosen inner function has differential $d u = 3 x^2 d x$, matching the numerator. [1]",
       "opts": [
-        "$u=4+x^2$",
-        "$u=1/x$",
-        "$u=4+x^3$",
-        "$u=x^2$"
+        "$u = 4 + x^2$",
+        "$u = \\frac{1}{x}$",
+        "$u = 4 + x^3$",
+        "$u = x^2$"
       ],
       "marks": 1,
       "alt": null,
@@ -1243,13 +895,13 @@
       "negative": 0
     },
     {
-      "q": "The coefficient of $\\ln|x+1|$ in $\\int\\frac{dx}{(x+1)(x+6)}$ is",
+      "q": "The coefficient of $\\ln |x + 1|$ in $\\int \\frac{d x}{(x + 1) (x + 6)}$ is",
       "a": "(B) $\\frac{1}{5}$",
-      "s": "Write the integrand as $\\frac1{5}(\\frac1{x+1}-\\frac1{x+6})$. [1]",
+      "s": "Write the integrand as $\\frac1{5} (\\frac1{x + 1} - \\frac1{x + 6})$. [1]",
       "opts": [
         "$1$",
         "$\\frac{1}{5}$",
-        "$-\\frac{1}{5}$",
+        "$- \\frac{1}{5}$",
         "$5$"
       ],
       "marks": 1,
@@ -1258,14 +910,14 @@
       "negative": 0
     },
     {
-      "q": "$\\int\\frac{dx}{16+x^2}$ equals",
-      "a": "(A) $\\frac{1}{4}\\tan^{-1}(x/4)+C$",
-      "s": "Use the standard formula with $a=4$. [1]",
+      "q": "$\\int \\frac{d x}{16 + x^2}$ equals",
+      "a": "(A) $\\frac{1}{4} \\tan^{- 1} (\\frac{x}{4}) + C$",
+      "s": "Use the standard formula with $a = 4$. [1]",
       "opts": [
-        "$\\frac{1}{4}\\tan^{-1}(x/4)+C$",
-        "$4\\tan^{-1}(x/4)+C$",
-        "$\\tan^{-1}(x/4)+C$",
-        "$\\frac{1}{4}\\sin^{-1}(x/4)+C$"
+        "$\\frac{1}{4} \\tan^{- 1} (\\frac{x}{4}) + C$",
+        "$4 \\tan^{- 1} (\\frac{x}{4}) + C$",
+        "$\\tan^{- 1} (\\frac{x}{4}) + C$",
+        "$\\frac{1}{4} \\sin^{- 1} (\\frac{x}{4}) + C$"
       ],
       "marks": 1,
       "alt": null,
@@ -1273,69 +925,9 @@
       "negative": 0
     },
     {
-      "q": "The value of $\\int_0^1 (4+1) x^{4}\\dx$ is",
-      "a": "(D) $1$",
-      "s": "The antiderivative is $x^{5}$. Its endpoint difference is $1$. [1]",
-      "opts": [
-        "$5$",
-        "$\\frac{1}{5}$",
-        "$0$",
-        "$1$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "If $F\\prime(x)=f(x)$ and $G(x)=F(x)+11$, then $G\\prime(x)$ is",
-      "a": "(C) $f(x)$",
-      "s": "The derivative of the added constant is zero. [1]",
-      "opts": [
-        "$11f(x)$",
-        "$0$",
-        "$f(x)$",
-        "$f(x)+11$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "For $x>0$, $\\int\\frac{(\\ln x)^{4}}x\\dx$ equals",
-      "a": "(B) $\\frac{1}{5}(\\ln x)^{5}+C$",
-      "s": "Set $u=\\ln x$. Integrate $u^{4}du$. [1]",
-      "opts": [
-        "$x(\\ln x)^{4}+C$",
-        "$\\frac{1}{5}(\\ln x)^{5}+C$",
-        "$(\\ln x)^{5}+C$",
-        "$\\frac{1}{4}(\\ln x)^{4}+C$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "The value of $\\int_0^{\\pi/2} 4\\sin x\\dx$ is",
-      "a": "(A) $4$",
-      "s": "The antiderivative is $-4\\cos x$. Evaluation gives $4$. [1]",
-      "opts": [
-        "$4$",
-        "$0$",
-        "$8$",
-        "$2$"
-      ],
-      "marks": 1,
-      "alt": null,
-      "type": "single",
-      "negative": 0
-    },
-    {
-      "q": "Assertion: $\\int_{-4}^{4}(x^3+2)dx=16$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
+      "q": "Assertion: $\\int_{- 4}^{4} (x^3 + 2) d x = 16$. Reason: the integral of an integrable odd function over a symmetric interval is zero.",
       "a": "(A)",
-      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2(2\\cdot4)=16$. The reason explains the cancellation used. [1]",
+      "s": "The $x^3$ contribution is zero by oddness, and the constant contributes $2 (2 \\cdot 4) = 16$. The reason explains the cancellation used. [1]",
       "opts": [
         "Both statements are true and the reason explains the assertion.",
         "Both statements are true but the reason does not explain the assertion.",
@@ -1348,7 +940,7 @@
       "negative": 0
     },
     {
-      "q": "Assertion: $\\int_0^{4}(x-4/2)dx$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
+      "q": "Assertion: $\\int_0^{4} (x - \\frac{4}{2}) d x$ is the total geometric area between the graph and the axis on that interval. Reason: definite integration adds signed contributions.",
       "a": "(D)",
       "s": "The signed integral is zero, but two nonzero triangular areas have positive sum. The assertion is false; the reason is true. [1]",
       "opts": [
@@ -1363,15 +955,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int(8x+1)^3dx$.",
-      "a": "$(8x+1)^4/32+C$",
-      "s": "Let $u=8x+1$, $dx=du/8$ [1]. Integrate $u^3/8$ to obtain the stated result [1].",
+      "q": "Evaluate $\\int (8 x + 1)^3 d x$.",
+      "a": "$\\frac{(8 x + 1)^4}{32} + C$",
+      "s": "Let $u = 8 x + 1$, $d x = \\frac{d u}{8}$ [1]. Integrate $\\frac{u^3}{8}$ to obtain the stated result [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Evaluate $\\int\\sin(4x+1)dx$.",
-        "a": "$-\\cos(4x+1)/4+C$",
-        "s": "Let $u=4x+1$, $du=4dx$ [1]. Integrate $\\sin u$ and divide by $4$ [1].",
+        "q": "Evaluate $\\int \\sin (4 x + 1) d x$.",
+        "a": "$- \\frac{\\cos (4 x + 1)}{4} + C$",
+        "s": "Let $u = 4 x + 1$, $d u = 4 d x$ [1]. Integrate $\\sin u$ and divide by $4$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -1380,9 +972,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{x}{4+x^2}dx$.",
-      "a": "$\\frac12\\ln(\\frac{5}{4})$",
-      "s": "Use $u=4+x^2$, giving limits $4,5$ [1]. Then $I=\\frac12[\\ln u]_4^{5}$ [1].",
+      "q": "Evaluate $\\int_0^1 \\frac{x}{4 + x^2} d x$.",
+      "a": "$\\frac12 \\ln (\\frac{5}{4})$",
+      "s": "Use $u = 4 + x^2$, giving limits $4 , 5$ [1]. Then $I = \\frac12 [\\ln u]_4^{5}$ [1].",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -1390,15 +982,15 @@
       "negative": 0
     },
     {
-      "q": "Find $a$ if $\\int_0^2(ax+4)dx=18$.",
-      "a": "$a=5$",
-      "s": "The integral is $2a+8$ [1]. Set it equal to $18$ and solve to get $a=5$ [1].",
+      "q": "Find $a$ if $\\int_0^2 (a x + 4) d x = 18$.",
+      "a": "$a = 5$",
+      "s": "The integral is $2 a + 8$ [1]. Set it equal to $18$ and solve to get $a = 5$ [1].",
       "opts": null,
       "marks": 2,
       "alt": {
-        "q": "Find $b$ if $\\int_1^3(4x+b)dx=24$.",
-        "a": "$b=4$",
-        "s": "The integral is $4(4)+2b$ [1]. Equating to $24$ gives $b=4$ [1].",
+        "q": "Find $b$ if $\\int_1^3 (4 x + b) d x = 24$.",
+        "a": "$b = 4$",
+        "s": "The integral is $4 (4) + 2 b$ [1]. Equating to $24$ gives $b = 4$ [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -1407,35 +999,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\frac{4+\\sin x}{8+\\sin x+\\cos x}dx$.",
-      "a": "$\\pi/4$",
-      "s": "Reflection $x\\mapsto\\pi/2-x$ interchanges sine and cosine in the numerator [1]. Adding the two forms gives $2I=\\pi/2$, hence $I=\\pi/4$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Find the antiderivative of $5x^{4}$ that vanishes at $x=1$.",
-      "a": "$x^{5}-1$",
-      "s": "The general antiderivative is $x^{5}+C$ [1]. At $x=1$, the condition yields $C=-1$ [1].",
-      "opts": null,
-      "marks": 2,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int x e^{4x}dx$.",
-      "a": "$e^{4x}(4x-1)/16+C$",
-      "s": "Choose $u=x$, $dv=e^{4x}dx$ [1]. Then $I=xe^{4x}/4-\\frac1{4}\\int e^{4x}dx$ [1]. Integrate the remaining exponential and simplify [1].",
+      "q": "Evaluate $\\int x e^{4 x} d x$.",
+      "a": "$\\frac{e^{4 x} (4 x - 1)}{16} + C$",
+      "s": "Choose $u = x$, $d v = e^{4 x} d x$ [1]. Then $I = \\frac{x e^{4 x}}{4} - \\frac1{4} \\int e^{4 x} d x$ [1]. Integrate the remaining exponential and simplify [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int x\\cos(4x)dx$.",
-        "a": "$x\\sin(4x)/4+\\cos(4x)/16+C$",
-        "s": "Take $u=x$, $dv=\\cos(4x)dx$ [1]. Parts gives $x\\sin(4x)/4-\\frac1{4}\\int\\sin(4x)dx$ [1]. Integrate to obtain the answer [1].",
+        "q": "Evaluate $\\int x \\cos (4 x) d x$.",
+        "a": "$\\frac{x \\sin (4 x)}{4} + \\frac{\\cos (4 x)}{16} + C$",
+        "s": "Take $u = x$, $d v = \\cos (4 x) d x$ [1]. Parts gives $\\frac{x \\sin (4 x)}{4} - \\frac1{4} \\int \\sin (4 x) d x$ [1]. Integrate to obtain the answer [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -1444,15 +1016,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int\\frac{dx}{(x+4)(x+7)}$.",
-      "a": "$\\frac13\\ln\\left|\\frac{x+4}{x+7}\\right|+C$",
-      "s": "Write $A/(x+4)+B/(x+7)$ [1]. Comparing coefficients gives $A=1/3,B=-1/3$ [1]. Integrate both logarithmic terms [1].",
+      "q": "Evaluate $\\int \\frac{d x}{(x + 4) (x + 7)}$.",
+      "a": "$\\frac13 \\ln \\left |\\frac{x + 4}{x + 7} \\right| + C$",
+      "s": "Write $\\frac{A}{(x + 4)} + \\frac{B}{(x + 7)}$ [1]. Comparing coefficients gives $A = \\frac{1}{3} , B = - \\frac{1}{3}$ [1]. Integrate both logarithmic terms [1].",
       "opts": null,
       "marks": 3,
       "alt": {
-        "q": "Evaluate $\\int\\frac{x}{x^2+8x+20}dx$.",
-        "a": "$\\frac12\\ln((x+4)^2+4)-2\\tan^{-1}((x+4)/2)+C$",
-        "s": "Write $x=(x+4)-4$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
+        "q": "Evaluate $\\int \\frac{x}{x^2 + 8 x + 20} d x$.",
+        "a": "$\\frac12 \\ln ((x + 4)^2 + 4) - 2 \\tan^{- 1} (\\frac{(x + 4)}{2}) + C$",
+        "s": "Write $x = (x + 4) - 4$ and complete the square [1]. The first term integrates to half the logarithm [1]; the second gives the stated arctangent term [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -1461,9 +1033,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^{5}|x-4|dx$.",
+      "q": "Evaluate $\\int_0^{5} |x - 4| d x$.",
       "a": "$\\frac{17}{2}$",
-      "s": "The sign changes at $x=4$ [1]. Split into $\\int_0^{4}(4-x)dx+\\int_{4}^{5}(x-4)dx$ [1]. These have values $8$ and $1/2$ [1].",
+      "s": "The sign changes at $x = 4$ [1]. Split into $\\int_0^{4} (4 - x) d x + \\int_{4}^{5} (x - 4) d x$ [1]. These have values $8$ and $\\frac{1}{2}$ [1].",
       "opts": null,
       "marks": 3,
       "alt": null,
@@ -1471,15 +1043,15 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_0^1\\frac{8x+1}{4x^2+x+2}dx$.",
-      "a": "$\\ln(\\frac{7}{2})$",
-      "s": "Let $u=4x^2+x+2$, so $du=(8x+1)dx$ [1]. New bounds are $2,7$ [1]. Evaluate $[\\ln u]_2^{7}$ [1].",
+      "q": "Evaluate $\\int \\frac{8 x^2 + 4 x + 9}{(x + 1) (x^2 + 1)} d x$, showing the decomposition.",
+      "a": "$\\frac{13}{2} \\ln |x + 1| + \\frac{3}{4} \\ln (x^2 + 1) + \\frac{5}{2} \\tan^{- 1} x + C$",
+      "s": "Write $\\frac{A}{(x + 1)} + \\frac{(B x + D)}{(x^2 + 1)}$ [1]. Clearing denominators gives $A + B = 8$, $B + D = 4$, $A + D = 9$ [1]. Thus $A = \\frac{13}{2}$, $B = \\frac{3}{2}$, $D = \\frac{5}{2}$ [1]. Integrate $\\frac{A}{(x + 1)}$ and $\\frac{B x}{(x^2 + 1)}$ [1], then $\\frac{D}{(x^2 + 1)}$ and add $C$ [1].",
       "opts": null,
-      "marks": 3,
+      "marks": 5,
       "alt": {
-        "q": "Evaluate $\\int_0^1\\frac{x^2}{4+x^3}dx$.",
-        "a": "$\\frac13\\ln(\\frac{5}{4})$",
-        "s": "Put $u=4+x^3$, $du=3x^2dx$ [1]. Bounds become $4,5$ [1]. Integrate $du/(3u)$ [1].",
+        "q": "Evaluate $\\int x^2 e^{4 x} d x$, showing both uses of integration by parts.",
+        "a": "$e^{4 x} \\left (\\frac{x^2}{4} - \\frac{2 x}{16} + \\frac2{64} \\right) + C$",
+        "s": "Choose $u = x^2$, $d v = e^{4 x} d x$ [1]. Then $I = \\frac{x^2 e^{4 x}}{4} - \\frac2{4} \\int x e^{4 x} d x$ [1]. Apply parts to the remaining integral [1] to get $\\frac{x e^{4 x}}{4} - \\frac{e^{4 x}}{16}$ [1]. Substitute and simplify [1].",
         "opts": null,
         "marks": null,
         "alt": null
@@ -1488,103 +1060,9 @@
       "negative": 0
     },
     {
-      "q": "Evaluate $\\int_1^{e} 4x\\ln x\\,dx$.",
-      "a": "$1(e^2+1)$",
-      "s": "Use $u=\\ln x$, $dv=4x\\,dx$ [1]. The antiderivative is $2x^2\\ln x-1x^2$ [1]. Endpoint subtraction gives $1(e^2+1)$ [1].",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{dx}{\\sqrt{32-4x-x^2}}$.",
-      "a": "$\\sin^{-1}((x+2)/6)+C$",
-      "s": "Complete the square: the radicand is $36-(x+2)^2$ [1]. Set $u=(x+2)/6$ [1]. The integral becomes $\\int du/\\sqrt{1-u^2}$ [1], valid for $|x+2|<6$.",
-      "opts": null,
-      "marks": 3,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\frac{8x^2+4x+9}{(x+1)(x^2+1)}dx$, showing the decomposition.",
-      "a": "$\\frac{13}{2}\\ln|x+1|+\\frac{3}{4}\\ln(x^2+1)+\\frac{5}{2}\\tan^{-1}x+C$",
-      "s": "Write $A/(x+1)+(Bx+D)/(x^2+1)$ [1]. Clearing denominators gives $A+B=8$, $B+D=4$, $A+D=9$ [1]. Thus $A=\\frac{13}{2}$, $B=\\frac{3}{2}$, $D=\\frac{5}{2}$ [1]. Integrate $A/(x+1)$ and $Bx/(x^2+1)$ [1], then $D/(x^2+1)$ and add $C$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int x^2e^{4x}dx$, showing both uses of integration by parts.",
-        "a": "$e^{4x}\\left(\\frac{x^2}{4}-\\frac{2x}{16}+\\frac2{64}\\right)+C$",
-        "s": "Choose $u=x^2$, $dv=e^{4x}dx$ [1]. Then $I=x^2e^{4x}/4-\\frac2{4}\\int xe^{4x}dx$ [1]. Apply parts to the remaining integral [1] to get $xe^{4x}/4-e^{4x}/16$ [1]. Substitute and simplify [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Let $I=\\int_0^{\\pi/2}\\frac{dx}{16\\cos^2x+\\sin^2x}$. Evaluate $I$ by substitution, and hence evaluate $J=\\int_0^{\\pi/2}\\frac{x\\,dx}{16\\cos^2x+\\sin^2x}+\\int_0^{\\pi/2}\\frac{x\\,dx}{16\\sin^2x+\\cos^2x}$.",
-      "a": "$I=\\pi/8,\\quad J=\\pi^2/16$",
-      "s": "Put $t=\\tan x$ and transform to $I=\\int_0^\\infty dt/(16+t^2)$ [1]. Its antiderivative is $\\frac1{4}\\tan^{-1}(t/4)$ [1], so $I=\\pi/8$ [1]. Reflect the second integral in $J$; it becomes the first denominator with numerator $\\pi/2-x$ [1]. Add the numerators to get $J=(\\pi/2)I=\\pi^2/16$ [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "Evaluate $\\int\\sqrt{36-x^2}\\,dx$ using $x=6\\sin\\theta$, and then evaluate the definite integral from $0$ to $6/2$.",
-      "a": "$\\frac{x}{2}\\sqrt{36-x^2}+\\frac{36}2\\sin^{-1}(x/6)+C;\\quad 36\\left(\\frac{\\sqrt3}{8}+\\frac\\pi{12}\\right)$",
-      "s": "Choose $-\\pi/2<\\theta<\\pi/2$ so the root is $6\\cos\\theta$ [1]. The integral becomes $36\\int\\cos^2\\theta d\\theta$ [1]. Use $\\cos^2\\theta=(1+\\cos2\\theta)/2$ and integrate [1]. Return to $x$ [1]. At the upper endpoint $\\theta=\\pi/6$; subtract the zero lower-endpoint value to get the stated number [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": {
-        "q": "Evaluate $\\int\\frac{x^2}{\\sqrt{36-x^2}}dx$ and then evaluate it from $0$ to $6/2$.",
-        "a": "$\\frac{36}2\\sin^{-1}(x/6)-\\frac{x}{2}\\sqrt{36-x^2}+C;\\quad 36\\left(\\frac\\pi{12}-\\frac{\\sqrt3}{8}\\right)$",
-        "s": "Set $x=6\\sin\\theta$ with the usual principal range [1]. The integral is $36\\int\\sin^2\\theta d\\theta$ [1]. Apply the half-angle identity and integrate [1]. Return to $x$ [1] and evaluate at $\\theta=\\pi/6$ and $0$ [1].",
-        "opts": null,
-        "marks": null,
-        "alt": null
-      },
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "For continuous $f$ on $[0,6]$, prove the reflection identity for its definite integral. Then evaluate $\\int_0^{6}\\frac{(x+2)^3}{(x+2)^3+(8-x)^3}dx$. Finally explain why the answer lies strictly between $0$ and $6$.",
-      "a": "$3$",
-      "s": "Use $u=6-x$ and $dx=-du$; reverse the transformed limits to establish the identity [2]. For the given integrand reflection interchanges the two cubes [1]. Their fractions add to $1$, so $2I=6$ [1]. Both cubes are positive throughout the interval; the fraction lies strictly between $0$ and $1$, establishing the bound [1].",
-      "opts": null,
-      "marks": 5,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A pump delivers liquid at rate $r(t)=4t+2$ litres per minute for $0\\leq t\\leq4$. Let $V(t)=\\int_0^t r(s)ds$. (i) State $V(0)$. [1] (ii) Find $V\\prime(2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
+      "q": "A pump delivers liquid at rate $r (t) = 4 t + 2$ litres per minute for $0 \\leq t \\leq 4$. Let $V (t) = \\int_0^t r (s) d s$. (i) State $V (0)$. [1] (ii) Find $V' (2)$. [1] (iii) Find the volume delivered during minutes 1 to 3. [2] \\textbf{OR} Find the average delivery rate over minutes 0 to 4. [2]",
       "a": "(i) $0$; (ii) $10$; (iii) $20$ litres; OR $10$ litres/minute.",
-      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V\\prime(2)=r(2)=10$ [1]. (iii) Integrate $r$: $\\int_1^3r(t)dt=[2t^2+2t]_1^3$ [1], which equals $20$ litres [1]. OR Average rate is $\\frac14\\int_0^4r(t)dt$ [1] $=10$ litres/minute [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A sensor records $s(t)=t-4$ on $0\\leq t\\leq8$. A signed total is $S=\\int_0^{8}s(t)dt$, while total signal magnitude is $M=\\int_0^{8}|s(t)|dt$. (i) When does the signal change sign? [1] (ii) Find $S$. [1] (iii) Find $M$, showing the split. [2] \\textbf{OR} Find the mean magnitude $M/(8)$. [2]",
-      "a": "(i) $t=4$; (ii) $0$; (iii) $16$; OR $2$.",
-      "s": "(i) Solve $t-4=0$ [1]. (ii) Symmetry or endpoint evaluation gives $S=0$ [1]. (iii) Split at $4$ [1]; each triangular contribution is $8$, so $M=16$ [1]. OR Compute the same total $M=16$ [1] and divide by $8$ to obtain $2$ [1].",
-      "opts": null,
-      "marks": 4,
-      "alt": null,
-      "type": "written",
-      "negative": 0
-    },
-    {
-      "q": "A teaching model uses $f(x)=ax+4$ on $[0,2]$. Calibration requires $\\int_0^2 f(x)dx=24$. (i) Write the integral in terms of $a$. [1] (ii) Determine $a$. [1] (iii) For $F(x)=\\int_0^xf(t)dt$, find $F(1)$ and explain whether $F$ is increasing on $[0,2]$. [2]",
-      "a": "(i) $2a+8$; (ii) $a=8$; (iii) $F(1)=8$, strictly increasing.",
-      "s": "(i) Integrate $ax+4$ to get $2a+8$ [1]. (ii) Equate to $24$ and solve [1]. (iii) $F(x)=4x^2+4x$, so $F(1)=8$ [1]. Since $F\\prime(x)=8x+4>0$ on the interval, it is strictly increasing [1].",
+      "s": "(i) Equal endpoints give zero [1]. (ii) The fundamental theorem gives $V' (2) = r (2) = 10$ [1]. (iii) Integrate $r$: $\\int_1^3 r (t) d t = [2 t^2 + 2 t]_1^3$ [1], which equals $20$ litres [1]. OR Average rate is $\\frac14 \\int_0^4 r (t) d t$ [1] $= 10$ litres/minute [1].",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1594,14 +1072,14 @@
   ],
   "integrals-pdf-main-01": [
     {
-      "q": "The value of $\\int_0^1\\frac{x^3}{3+x^2}dx$ is",
-      "a": "(D) $\\frac12\\left[1-3\\ln(\\frac{4}{3})\\right]$",
-      "s": "Divide $x^3/(3+x^2)=x-3x/(3+x^2)$. Integrate the two terms to obtain $[x^2/2-(3/2)\\ln(3+x^2)]_0^1$, giving the chosen expression.",
+      "q": "The value of $\\int_0^1 \\frac{x^3}{3 + x^2} d x$ is",
+      "a": "(D) $\\frac12 \\left [1 - 3 \\ln (\\frac{4}{3}) \\right]$",
+      "s": "Divide $\\frac{x^3}{(3 + x^2)} = x - \\frac{3 x}{(3 + x^2)}$. Integrate the two terms to obtain $[\\frac{x^2}{2} - (\\frac{3}{2}) \\ln (3 + x^2)]_0^1$, giving the chosen expression.",
       "opts": [
-        "$\\frac12\\ln(\\frac{4}{3})$",
-        "$1-3\\ln(\\frac{4}{3})$",
-        "$\\frac12\\left[1+3\\ln(\\frac{4}{3})\\right]$",
-        "$\\frac12\\left[1-3\\ln(\\frac{4}{3})\\right]$"
+        "$\\frac12 \\ln (\\frac{4}{3})$",
+        "$1 - 3 \\ln (\\frac{4}{3})$",
+        "$\\frac12 \\left [1 + 3 \\ln (\\frac{4}{3}) \\right]$",
+        "$\\frac12 \\left [1 - 3 \\ln (\\frac{4}{3}) \\right]$"
       ],
       "marks": 4,
       "alt": null,
@@ -1609,9 +1087,9 @@
       "negative": 1
     },
     {
-      "q": "Let $I=\\int_0^{3}\\frac{(x+2)^4}{(x+2)^4+(5-x)^4}dx$. Then $I=$",
+      "q": "Let $I = \\int_0^{3} \\frac{(x + 2)^4}{(x + 2)^4 + (5 - x)^4} d x$. Then $I =$",
       "a": "(C) $\\frac{3}{2}$",
-      "s": "Under $x\\mapsto3-x$, the two fourth powers exchange places. Add the two integrands to get $1$. Thus $2I=3$.",
+      "s": "Under $x \\mapsto 3 - x$, the two fourth powers exchange places. Add the two integrands to get $1$. Thus $2 I = 3$.",
       "opts": [
         "$\\frac{3}{4}$",
         "$1$",
@@ -1624,11 +1102,11 @@
       "negative": 1
     },
     {
-      "q": "If $F(x)=\\int_{x}^{x^2}\\frac{dt}{3+t^2}$, then $F\\prime(1)=$",
+      "q": "If $F (x) = \\int_{x}^{x^2} \\frac{d t}{3 + t^2}$, then $F' (1) =$",
       "a": "(B) $\\frac{1}{4}$",
-      "s": "$F\\prime(x)=2x/(3+x^4)-1/(3+x^2)$. At $x=1$, this is $(2-1)/4$.",
+      "s": "$F' (x) = \\frac{2 x}{(3 + x^4)} - \\frac{1}{(3 + x^2)}$. At $x = 1$, this is $\\frac{(2 - 1)}{4}$.",
       "opts": [
-        "$-\\frac{1}{4}$",
+        "$- \\frac{1}{4}$",
         "$\\frac{1}{4}$",
         "$\\frac{1}{2}$",
         "$0$"
@@ -1639,14 +1117,14 @@
       "negative": 1
     },
     {
-      "q": "The limit $\\lim_{n\\to\\infty}\\sum_{r=1}^n\\frac{n}{(3n+r)^2}$ equals",
+      "q": "The limit $\\lim_{n \\to \\infty} \\sum_{r = 1}^n \\frac{n}{(3 n + r)^2}$ equals",
       "a": "(A) $\\frac{1}{12}$",
-      "s": "The summand is $(1/n)/(3+r/n)^2$. Integrate $1/(3+x)^2$ from $0$ to $1$ to get $1/3-1/4$.",
+      "s": "The summand is $\\frac{(\\frac{1}{n})}{(3 + \\frac{r}{n})^2}$. Integrate $\\frac{1}{(3 + x)^2}$ from $0$ to $1$ to get $\\frac{1}{3} - \\frac{1}{4}$.",
       "opts": [
         "$\\frac{1}{12}$",
         "$\\frac{1}{3}$",
         "$\\frac{1}{4}$",
-        "$\\ln(\\frac{4}{3})$"
+        "$\\ln (\\frac{4}{3})$"
       ],
       "marks": 4,
       "alt": null,
@@ -1654,14 +1132,14 @@
       "negative": 1
     },
     {
-      "q": "For $a\\in\\R$, the minimum of $\\int_0^2(x-a)^2dx+3(a-1)^2$ is",
-      "a": "(D) $2/3$",
-      "s": "$\\int_0^2(x-a)^2dx=2(a-1)^2+2/3$. Adding the second term leaves $(5)(a-1)^2+2/3$, minimized at $a=1$.",
+      "q": "For $a \\in \\R$, the minimum of $\\int_0^2 (x - a)^2 d x + 3 (a - 1)^2$ is",
+      "a": "(D) $\\frac{2}{3}$",
+      "s": "$\\int_0^2 (x - a)^2 d x = 2 (a - 1)^2 + \\frac{2}{3}$. Adding the second term leaves $(5) (a - 1)^2 + \\frac{2}{3}$, minimized at $a = 1$.",
       "opts": [
-        "$1/3$",
+        "$\\frac{1}{3}$",
         "$3$",
         "$0$",
-        "$2/3$"
+        "$\\frac{2}{3}$"
       ],
       "marks": 4,
       "alt": null,
@@ -1669,14 +1147,14 @@
       "negative": 1
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\frac{\\sin x\\cos x}{1+3\\sin^2x}dx$.",
-      "a": "(C) $\\frac{1}{6}\\ln4$",
-      "s": "Let $u=1+3\\sin^2x$, $du=6\\sin x\\cos x\\,dx$. The limits are $1,4$, so the result is $\\ln(4)/6$.",
+      "q": "Evaluate $\\int_0^{\\frac{\\pi}{2}} \\frac{\\sin x \\cos x}{1 + 3 \\sin^2 x} d x$.",
+      "a": "(C) $\\frac{1}{6} \\ln 4$",
+      "s": "Let $u = 1 + 3 \\sin^2 x$, $d u = 6 \\sin x \\cos x \\, d x$. The limits are $1 , 4$, so the result is $\\frac{\\ln (4)}{6}$.",
       "opts": [
-        "$\\frac{1}{2}\\ln4$",
+        "$\\frac{1}{2} \\ln 4$",
         "$\\frac{1}{4}$",
-        "$\\frac{1}{6}\\ln4$",
-        "$\\frac{1}{3}\\ln4$"
+        "$\\frac{1}{6} \\ln 4$",
+        "$\\frac{1}{3} \\ln 4$"
       ],
       "marks": 4,
       "alt": null,
@@ -1684,14 +1162,14 @@
       "negative": 1
     },
     {
-      "q": "If $f(x)=3+\\int_0^x f(t)dt$ for all real $x$, with continuous $f$, then $\\int_0^{\\ln2} f(x)dx=$",
+      "q": "If $f (x) = 3 + \\int_0^x f (t) d t$ for all real $x$, with continuous $f$, then $\\int_0^{\\ln 2} f (x) d x =$",
       "a": "(B) $3$",
-      "s": "Differentiation gives $f\\prime=f$, $f(0)=3$. Thus $f(x)=3e^x$ and the integral is $3(2-1)$.",
+      "s": "Differentiation gives $f' = f$, $f (0) = 3$. Thus $f (x) = 3 e^x$ and the integral is $3 (2 - 1)$.",
       "opts": [
         "$0$",
         "$3$",
         "$6$",
-        "$3\\ln2$"
+        "$3 \\ln 2$"
       ],
       "marks": 4,
       "alt": null,
@@ -1699,14 +1177,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\frac{x^2+1}{(x+3)^2}dx$ is",
-      "a": "(A) $1-2(3)\\ln(\\frac{4}{3})+\\frac{5}{6}$",
-      "s": "Set $u=x+3$. Then $(x^2+1)/(x+3)^2=1-6/u+10/u^2$. Integrate between $u=3$ and $4$; the last contribution is $(10)(1/3-1/4)$.",
+      "q": "The value of $\\int_0^1 \\frac{x^2 + 1}{(x + 3)^2} d x$ is",
+      "a": "(A) $1 - 2 (3) \\ln (\\frac{4}{3}) + \\frac{5}{6}$",
+      "s": "Set $u = x + 3$. Then $\\frac{(x^2 + 1)}{(x + 3)^2} = 1 - \\frac{6}{u} + \\frac{10}{u^2}$. Integrate between $u = 3$ and $4$; the last contribution is $(10) (\\frac{1}{3} - \\frac{1}{4})$.",
       "opts": [
-        "$1-2(3)\\ln(\\frac{4}{3})+\\frac{5}{6}$",
-        "$1+\\frac{5}{6}$",
-        "$1-2(3)\\ln(\\frac{4}{3})$",
-        "$1+2(3)\\ln(\\frac{4}{3})$"
+        "$1 - 2 (3) \\ln (\\frac{4}{3}) + \\frac{5}{6}$",
+        "$1 + \\frac{5}{6}$",
+        "$1 - 2 (3) \\ln (\\frac{4}{3})$",
+        "$1 + 2 (3) \\ln (\\frac{4}{3})$"
       ],
       "marks": 4,
       "alt": null,
@@ -1714,9 +1192,9 @@
       "negative": 1
     },
     {
-      "q": "If $f$ is continuous and $f(3-x)=f(x)$ on $[0,3]$, and $\\int_0^{3}f=2$, then $\\int_0^{3}(3x+1)f(x)dx=$",
+      "q": "If $f$ is continuous and $f (3 - x) = f (x)$ on $[0 , 3]$, and $\\int_0^{3} f = 2$, then $\\int_0^{3} (3 x + 1) f (x) d x =$",
       "a": "(D) $11$",
-      "s": "Reflection gives $\\int xf=( 3/2)\\int f=3$. Therefore the requested value is $3(3)+2$.",
+      "s": "Reflection gives $\\int x f = (\\frac{3}{2}) \\int f = 3$. Therefore the requested value is $3 (3) + 2$.",
       "opts": [
         "$20$",
         "$9$",
@@ -1729,14 +1207,14 @@
       "negative": 1
     },
     {
-      "q": "$\\int\\frac{e^x}{(e^x+3)(e^x+5)}dx$ equals",
-      "a": "(C) $\\frac12\\ln\\left(\\frac{e^x+3}{e^x+5}\\right)+C$",
-      "s": "Let $u=e^x$, $du=e^xdx$. Partial fractions give $\\frac12[1/(u+3)-1/(u+5)]$. Both logarithm arguments are positive.",
+      "q": "$\\int \\frac{e^x}{(e^x + 3) (e^x + 5)} d x$ equals",
+      "a": "(C) $\\frac12 \\ln \\left (\\frac{e^x + 3}{e^x + 5} \\right) + C$",
+      "s": "Let $u = e^x$, $d u = e^x d x$. Partial fractions give $\\frac12 [\\frac{1}{(u + 3)} - \\frac{1}{(u + 5)}]$. Both logarithm arguments are positive.",
       "opts": [
-        "$-\\frac12\\ln\\left(\\frac{e^x+3}{e^x+5}\\right)+C$",
-        "$\\frac12\\ln(e^x+3)+C$",
-        "$\\frac12\\ln\\left(\\frac{e^x+3}{e^x+5}\\right)+C$",
-        "$\\ln\\left(\\frac{e^x+3}{e^x+5}\\right)+C$"
+        "$- \\frac12 \\ln \\left (\\frac{e^x + 3}{e^x + 5} \\right) + C$",
+        "$\\frac12 \\ln (e^x + 3) + C$",
+        "$\\frac12 \\ln \\left (\\frac{e^x + 3}{e^x + 5} \\right) + C$",
+        "$\\ln \\left (\\frac{e^x + 3}{e^x + 5} \\right) + C$"
       ],
       "marks": 4,
       "alt": null,
@@ -1744,14 +1222,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1 x^{3}\\ln x\\,dx$, interpreted as an endpoint limit, is",
-      "a": "(B) $-\\frac{1}{16}$",
-      "s": "Parts on $[\\varepsilon,1]$ gives $[x^{4}\\ln x/4]_\\varepsilon^1-\\frac1{4}\\int_\\varepsilon^1x^{3}dx$. Since $\\varepsilon^{4}\\ln\\varepsilon\\to0$, the answer is $-1/16$.",
+      "q": "The value of $\\int_0^1 x^{3} \\ln x \\, d x$, interpreted as an endpoint limit, is",
+      "a": "(B) $- \\frac{1}{16}$",
+      "s": "Parts on $[\\varepsilon , 1]$ gives $[\\frac{x^{4} \\ln x}{4}]_\\varepsilon^1 - \\frac1{4} \\int_\\varepsilon^1 x^{3} d x$. Since $\\varepsilon^{4} \\ln \\varepsilon \\to 0$, the answer is $- \\frac{1}{16}$.",
       "opts": [
         "$0$",
-        "$-\\frac{1}{16}$",
+        "$- \\frac{1}{16}$",
         "$\\frac{1}{16}$",
-        "$-\\frac{1}{4}$"
+        "$- \\frac{1}{4}$"
       ],
       "marks": 4,
       "alt": null,
@@ -1759,9 +1237,9 @@
       "negative": 1
     },
     {
-      "q": "For $I=\\int_{-3}^{3}\\frac{x^2}{1+e^x}dx$, the value of $I$ is",
+      "q": "For $I = \\int_{- 3}^{3} \\frac{x^2}{1 + e^x} d x$, the value of $I$ is",
       "a": "(A) $9$",
-      "s": "Reflect $x\\mapsto-x$. The two weights $1/(1+e^x)$ and $1/(1+e^{-x})$ sum to $1$. Hence $2I=\\int_{-3}^{3}x^2dx=2(27)/3$.",
+      "s": "Reflect $x \\mapsto - x$. The two weights $\\frac{1}{(1 + e^x)}$ and $\\frac{1}{(1 + e^{- x})}$ sum to $1$. Hence $2 I = \\int_{- 3}^{3} x^2 d x = \\frac{2 (27)}{3}$.",
       "opts": [
         "$9$",
         "$18$",
@@ -1774,9 +1252,9 @@
       "negative": 1
     },
     {
-      "q": "The average value of $|x-1|$ over $[0,3]$ is",
+      "q": "The average value of $|x - 1|$ over $[0 , 3]$ is",
       "a": "(D) $\\frac{5}{6}$",
-      "s": "Split at $1$. The integral is the sum of triangular areas $1/2+(2)^2/2$. Divide by the interval length $3$.",
+      "s": "Split at $1$. The integral is the sum of triangular areas $\\frac{1}{2} + \\frac{(2)^2}{2}$. Divide by the interval length $3$.",
       "opts": [
         "$\\frac{5}{2}$",
         "$\\frac{3}{2}$",
@@ -1789,14 +1267,14 @@
       "negative": 1
     },
     {
-      "q": "For $x>0$, an antiderivative of $\\frac{1}{x\\sqrt{3+\\ln x}}$ on $x>e^{-3}$ is",
-      "a": "(C) $2\\sqrt{3+\\ln x}+C$",
-      "s": "Put $u=3+\\ln x$, so $du=dx/x$. Integrate $u^{-1/2}$ to get $2\\sqrt{u}+C$. The stated domain ensures $u>0$.",
+      "q": "For $x > 0$, an antiderivative of $\\frac{1}{x \\sqrt{3 + \\ln x}}$ on $x > e^{- 3}$ is",
+      "a": "(C) $2 \\sqrt{3 + \\ln x} + C$",
+      "s": "Put $u = 3 + \\ln x$, so $d u = \\frac{d x}{x}$. Integrate $u^{- \\frac{1}{2}}$ to get $2 \\sqrt{u} + C$. The stated domain ensures $u > 0$.",
       "opts": [
-        "$\\ln(3+\\ln x)+C$",
-        "$-2/\\sqrt{3+\\ln x}+C$",
-        "$2\\sqrt{3+\\ln x}+C$",
-        "$\\sqrt{3+\\ln x}+C$"
+        "$\\ln (3 + \\ln x) + C$",
+        "$- \\frac{2}{\\sqrt{3 + \\ln x}} + C$",
+        "$2 \\sqrt{3 + \\ln x} + C$",
+        "$\\sqrt{3 + \\ln x} + C$"
       ],
       "marks": 4,
       "alt": null,
@@ -1804,9 +1282,9 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^{\\pi/2}\\sin(3x)\\cos x\\,dx$ is",
+      "q": "The value of $\\int_0^{\\frac{\\pi}{2}} \\sin (3 x) \\cos x \\, d x$ is",
       "a": "(B) $\\frac{1}{2}$",
-      "s": "Use $2\\sin(3x)\\cos x=\\sin(4x)+\\sin(2x)$. Both frequencies are even; for the chosen odd $k=3$, one frequency is divisible by $4$ and integrates to zero, the other contributes $2/(k\\pm1)$. Direct endpoint evaluation gives $1/2$.",
+      "s": "Use $2 \\sin (3 x) \\cos x = \\sin (4 x) + \\sin (2 x)$. Both frequencies are even; for the chosen odd $k = 3$, one frequency is divisible by $4$ and integrates to zero, the other contributes $\\frac{2}{(k \\pm 1)}$. Direct endpoint evaluation gives $\\frac{1}{2}$.",
       "opts": [
         "$\\frac{1}{3}$",
         "$\\frac{1}{2}$",
@@ -1819,9 +1297,9 @@
       "negative": 1
     },
     {
-      "q": "Let $A(x)=\\int_0^x(t-2)(t-6)dt$. The number of local extrema of $A$ on $\\R$ is",
+      "q": "Let $A (x) = \\int_0^x (t - 2) (t - 6) d t$. The number of local extrema of $A$ on $\\R$ is",
       "a": "(A) $2$",
-      "s": "$A\\prime=(x-2)(x-6)$. It changes from positive to negative at $2$ and from negative to positive at $6$. Thus there are exactly two local extrema.",
+      "s": "$A' = (x - 2) (x - 6)$. It changes from positive to negative at $2$ and from negative to positive at $6$. Thus there are exactly two local extrema.",
       "opts": [
         "$2$",
         "$0$",
@@ -1834,9 +1312,9 @@
       "negative": 1
     },
     {
-      "q": "If $g(x)=x^3+3x$ and $h=g^{-1}$, then $\\int_0^{4}h(y)dy=$",
+      "q": "If $g (x) = x^3 + 3 x$ and $h = g^{- 1}$, then $\\int_0^{4} h (y) d y =$",
       "a": "(D) $\\frac{9}{4}$",
-      "s": "$g\\prime(x)=3x^2+3>0$. Substitute $y=g(x)$, so the bounds are $x=0,1$. The integral is $\\int_0^1x(3x^2+3)dx=3/4+\\frac{3}{2}$.",
+      "s": "$g' (x) = 3 x^2 + 3 > 0$. Substitute $y = g (x)$, so the bounds are $x = 0 , 1$. The integral is $\\int_0^1 x (3 x^2 + 3) d x = \\frac{3}{4} + \\frac{3}{2}$.",
       "opts": [
         "$2$",
         "$\\frac{7}{4}$",
@@ -1849,12 +1327,12 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\frac{x^{2}}{(1+x^{3})^2}dx$ is",
+      "q": "The value of $\\int_0^1 \\frac{x^{2}}{(1 + x^{3})^2} d x$ is",
       "a": "(C) $\\frac{1}{6}$",
-      "s": "Put $u=1+x^{3}$. The integral becomes $\\frac1{3}\\int_1^2u^{-2}du=1/6$.",
+      "s": "Put $u = 1 + x^{3}$. The integral becomes $\\frac1{3} \\int_1^2 u^{- 2} d u = \\frac{1}{6}$.",
       "opts": [
         "$\\frac{1}{12}$",
-        "$\\ln2/3$",
+        "$\\frac{\\ln 2}{3}$",
         "$\\frac{1}{6}$",
         "$\\frac{1}{3}$"
       ],
@@ -1864,14 +1342,14 @@
       "negative": 1
     },
     {
-      "q": "If $f$ is continuous on $[0,1]$ and $\\int_0^1f(x)dx=3$, which bound always holds?",
-      "a": "(B) $\\int_0^1 f(x)^2dx\\geq9$",
-      "s": "Integrate $(f-3)^2\\geq0$. Expansion gives $\\int f^2-2(3)\\int f+9\\geq0$, hence $\\int f^2\\geq9$. Nonconstant continuous functions show that equality is not forced.",
+      "q": "If $f$ is continuous on $[0 , 1]$ and $\\int_0^1 f (x) d x = 3$, which bound always holds?",
+      "a": "(B) $\\int_0^1 f (x)^2 d x \\geq 9$",
+      "s": "Integrate $(f - 3)^2 \\geq 0$. Expansion gives $\\int f^2 - 2 (3) \\int f + 9 \\geq 0$, hence $\\int f^2 \\geq 9$. Nonconstant continuous functions show that equality is not forced.",
       "opts": [
-        "$\\int_0^1 f(x)^2dx<9$",
-        "$\\int_0^1 f(x)^2dx\\geq9$",
-        "$\\int_0^1 f(x)^2dx\\leq9$",
-        "$\\int_0^1 f(x)^2dx=9$"
+        "$\\int_0^1 f (x)^2 d x < 9$",
+        "$\\int_0^1 f (x)^2 d x \\geq 9$",
+        "$\\int_0^1 f (x)^2 d x \\leq 9$",
+        "$\\int_0^1 f (x)^2 d x = 9$"
       ],
       "marks": 4,
       "alt": null,
@@ -1879,14 +1357,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\left(3x^{2}\\tan^{-1}x+\\frac{x^{3}}{1+x^2}\\right)dx$ is",
-      "a": "(A) $\\pi/4$",
-      "s": "The integrand is the derivative of $x^{3}\\tan^{-1}x$ by the product rule. Evaluate that product at $1$ and $0$.",
+      "q": "The value of $\\int_0^1 \\left (3 x^{2} \\tan^{- 1} x + \\frac{x^{3}}{1 + x^2} \\right) d x$ is",
+      "a": "(A) $\\frac{\\pi}{4}$",
+      "s": "The integrand is the derivative of $x^{3} \\tan^{- 1} x$ by the product rule. Evaluate that product at $1$ and $0$.",
       "opts": [
-        "$\\pi/4$",
-        "$\\pi/2$",
-        "$\\pi/12$",
-        "$\\ln2$"
+        "$\\frac{\\pi}{4}$",
+        "$\\frac{\\pi}{2}$",
+        "$\\frac{\\pi}{12}$",
+        "$\\ln 2$"
       ],
       "marks": 4,
       "alt": null,
@@ -1894,9 +1372,9 @@
       "negative": 1
     },
     {
-      "q": "If $I=\\int_0^1 x(1-x)^{3}dx$, enter $(20)I$.",
+      "q": "If $I = \\int_0^1 x (1 - x)^{3} d x$, enter $(20) I$.",
       "a": "$1$",
-      "s": "With $u=1-x$, $I=\\int_0^1(u^{3}-u^{4})du=1/4-1/5=1/20$. Multiply by the stated factor.",
+      "s": "With $u = 1 - x$, $I = \\int_0^1 (u^{3} - u^{4}) d u = \\frac{1}{4} - \\frac{1}{5} = \\frac{1}{20}$. Multiply by the stated factor.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1904,9 +1382,9 @@
       "negative": 1
     },
     {
-      "q": "Enter $2\\int_0^{3}\\lfloor2x\\rfloor dx$.",
+      "q": "Enter $2 \\int_0^{3} \\lfloor 2 x \\rfloor d x$.",
       "a": "$15$",
-      "s": "There are $6$ intervals of width $1/2$ with values $0$ through $5$. Multiplying the integral by $2$ gives $0+1+\\cdots+5=15$.",
+      "s": "There are $6$ intervals of width $\\frac{1}{2}$ with values $0$ through $5$. Multiplying the integral by $2$ gives $0 + 1 + \\cdots + 5 = 15$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1914,9 +1392,9 @@
       "negative": 1
     },
     {
-      "q": "If $\\int_0^1(ax^2+3x)dx=\\frac{17}{6}$, enter $a$.",
+      "q": "If $\\int_0^1 (a x^2 + 3 x) d x = \\frac{17}{6}$, enter $a$.",
       "a": "$4$",
-      "s": "The integral is $a/3+\\frac{3}{2}$. Multiply by $6$ to get $2a+9=17$. Therefore $a=4$.",
+      "s": "The integral is $\\frac{a}{3} + \\frac{3}{2}$. Multiply by $6$ to get $2 a + 9 = 17$. Therefore $a = 4$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1924,9 +1402,9 @@
       "negative": 1
     },
     {
-      "q": "Let $B(x)=\\int_0^x(x-t)(t^2+3)dt$. Enter $B\\prime\\prime(2)$.",
+      "q": "Let $B (x) = \\int_0^x (x - t) (t^2 + 3) d t$. Enter $B'' (2)$.",
       "a": "$7$",
-      "s": "Differentiate the product decomposition $B=x\\int_0^x(t^2+3)dt-\\int_0^xt(t^2+3)dt$. The endpoint terms cancel, so $B\\prime=\\int_0^x(t^2+3)dt$ and $B\\prime\\prime=x^2+3$. At $2$, the value is $7$.",
+      "s": "Differentiate the product decomposition $B = x \\int_0^x (t^2 + 3) d t - \\int_0^x t (t^2 + 3) d t$. The endpoint terms cancel, so $B' = \\int_0^x (t^2 + 3) d t$ and $B'' = x^2 + 3$. At $2$, the value is $7$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1934,9 +1412,9 @@
       "negative": 1
     },
     {
-      "q": "For $I=\\int_0^{\\pi/2}\\sin^3x\\cos^3x\\,dx$, enter $36I$.",
+      "q": "For $I = \\int_0^{\\frac{\\pi}{2}} \\sin^3 x \\cos^3 x \\, d x$, enter $36 I$.",
       "a": "$3$",
-      "s": "Put $u=\\sin x$ and write $\\cos^2x=1-u^2$. Then $I=\\int_0^1(u^3-u^5)du=1/4-1/6=1/12$. Multiplying by $36$ gives $3$.",
+      "s": "Put $u = \\sin x$ and write $\\cos^2 x = 1 - u^2$. Then $I = \\int_0^1 (u^3 - u^5) d u = \\frac{1}{4} - \\frac{1}{6} = \\frac{1}{12}$. Multiplying by $36$ gives $3$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -1946,14 +1424,14 @@
   ],
   "integrals-pdf-main-02": [
     {
-      "q": "The value of $\\int_0^1\\frac{x^3}{5+x^2}dx$ is",
-      "a": "(C) $\\frac12\\left[1-5\\ln(\\frac{6}{5})\\right]$",
-      "s": "Divide $x^3/(5+x^2)=x-5x/(5+x^2)$. Integrate the two terms to obtain $[x^2/2-(5/2)\\ln(5+x^2)]_0^1$, giving the chosen expression.",
+      "q": "The value of $\\int_0^1 \\frac{x^3}{5 + x^2} d x$ is",
+      "a": "(C) $\\frac12 \\left [1 - 5 \\ln (\\frac{6}{5}) \\right]$",
+      "s": "Divide $\\frac{x^3}{(5 + x^2)} = x - \\frac{5 x}{(5 + x^2)}$. Integrate the two terms to obtain $[\\frac{x^2}{2} - (\\frac{5}{2}) \\ln (5 + x^2)]_0^1$, giving the chosen expression.",
       "opts": [
-        "$1-5\\ln(\\frac{6}{5})$",
-        "$\\frac12\\left[1+5\\ln(\\frac{6}{5})\\right]$",
-        "$\\frac12\\left[1-5\\ln(\\frac{6}{5})\\right]$",
-        "$\\frac12\\ln(\\frac{6}{5})$"
+        "$1 - 5 \\ln (\\frac{6}{5})$",
+        "$\\frac12 \\left [1 + 5 \\ln (\\frac{6}{5}) \\right]$",
+        "$\\frac12 \\left [1 - 5 \\ln (\\frac{6}{5}) \\right]$",
+        "$\\frac12 \\ln (\\frac{6}{5})$"
       ],
       "marks": 4,
       "alt": null,
@@ -1961,9 +1439,9 @@
       "negative": 1
     },
     {
-      "q": "Let $I=\\int_0^{5}\\frac{(x+2)^4}{(x+2)^4+(7-x)^4}dx$. Then $I=$",
+      "q": "Let $I = \\int_0^{5} \\frac{(x + 2)^4}{(x + 2)^4 + (7 - x)^4} d x$. Then $I =$",
       "a": "(B) $\\frac{5}{2}$",
-      "s": "Under $x\\mapsto5-x$, the two fourth powers exchange places. Add the two integrands to get $1$. Thus $2I=5$.",
+      "s": "Under $x \\mapsto 5 - x$, the two fourth powers exchange places. Add the two integrands to get $1$. Thus $2 I = 5$.",
       "opts": [
         "$1$",
         "$\\frac{5}{2}$",
@@ -1976,14 +1454,14 @@
       "negative": 1
     },
     {
-      "q": "If $F(x)=\\int_{x}^{x^2}\\frac{dt}{5+t^2}$, then $F\\prime(1)=$",
+      "q": "If $F (x) = \\int_{x}^{x^2} \\frac{d t}{5 + t^2}$, then $F' (1) =$",
       "a": "(A) $\\frac{1}{6}$",
-      "s": "$F\\prime(x)=2x/(5+x^4)-1/(5+x^2)$. At $x=1$, this is $(2-1)/6$.",
+      "s": "$F' (x) = \\frac{2 x}{(5 + x^4)} - \\frac{1}{(5 + x^2)}$. At $x = 1$, this is $\\frac{(2 - 1)}{6}$.",
       "opts": [
         "$\\frac{1}{6}$",
         "$\\frac{1}{3}$",
         "$0$",
-        "$-\\frac{1}{6}$"
+        "$- \\frac{1}{6}$"
       ],
       "marks": 4,
       "alt": null,
@@ -1991,13 +1469,13 @@
       "negative": 1
     },
     {
-      "q": "The limit $\\lim_{n\\to\\infty}\\sum_{r=1}^n\\frac{n}{(5n+r)^2}$ equals",
+      "q": "The limit $\\lim_{n \\to \\infty} \\sum_{r = 1}^n \\frac{n}{(5 n + r)^2}$ equals",
       "a": "(D) $\\frac{1}{30}$",
-      "s": "The summand is $(1/n)/(5+r/n)^2$. Integrate $1/(5+x)^2$ from $0$ to $1$ to get $1/5-1/6$.",
+      "s": "The summand is $\\frac{(\\frac{1}{n})}{(5 + \\frac{r}{n})^2}$. Integrate $\\frac{1}{(5 + x)^2}$ from $0$ to $1$ to get $\\frac{1}{5} - \\frac{1}{6}$.",
       "opts": [
         "$\\frac{1}{5}$",
         "$\\frac{1}{6}$",
-        "$\\ln(\\frac{6}{5})$",
+        "$\\ln (\\frac{6}{5})$",
         "$\\frac{1}{30}$"
       ],
       "marks": 4,
@@ -2006,14 +1484,14 @@
       "negative": 1
     },
     {
-      "q": "For $a\\in\\R$, the minimum of $\\int_0^2(x-a)^2dx+5(a-1)^2$ is",
-      "a": "(C) $2/3$",
-      "s": "$\\int_0^2(x-a)^2dx=2(a-1)^2+2/3$. Adding the second term leaves $(7)(a-1)^2+2/3$, minimized at $a=1$.",
+      "q": "For $a \\in \\R$, the minimum of $\\int_0^2 (x - a)^2 d x + 5 (a - 1)^2$ is",
+      "a": "(C) $\\frac{2}{3}$",
+      "s": "$\\int_0^2 (x - a)^2 d x = 2 (a - 1)^2 + \\frac{2}{3}$. Adding the second term leaves $(7) (a - 1)^2 + \\frac{2}{3}$, minimized at $a = 1$.",
       "opts": [
         "$5$",
         "$0$",
-        "$2/3$",
-        "$1/3$"
+        "$\\frac{2}{3}$",
+        "$\\frac{1}{3}$"
       ],
       "marks": 4,
       "alt": null,
@@ -2021,14 +1499,14 @@
       "negative": 1
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\frac{\\sin x\\cos x}{1+5\\sin^2x}dx$.",
-      "a": "(B) $\\frac{1}{10}\\ln6$",
-      "s": "Let $u=1+5\\sin^2x$, $du=10\\sin x\\cos x\\,dx$. The limits are $1,6$, so the result is $\\ln(6)/10$.",
+      "q": "Evaluate $\\int_0^{\\frac{\\pi}{2}} \\frac{\\sin x \\cos x}{1 + 5 \\sin^2 x} d x$.",
+      "a": "(B) $\\frac{1}{10} \\ln 6$",
+      "s": "Let $u = 1 + 5 \\sin^2 x$, $d u = 10 \\sin x \\cos x \\, d x$. The limits are $1 , 6$, so the result is $\\frac{\\ln (6)}{10}$.",
       "opts": [
         "$\\frac{1}{6}$",
-        "$\\frac{1}{10}\\ln6$",
-        "$\\frac{1}{5}\\ln6$",
-        "$\\frac{1}{2}\\ln6$"
+        "$\\frac{1}{10} \\ln 6$",
+        "$\\frac{1}{5} \\ln 6$",
+        "$\\frac{1}{2} \\ln 6$"
       ],
       "marks": 4,
       "alt": null,
@@ -2036,13 +1514,13 @@
       "negative": 1
     },
     {
-      "q": "If $f(x)=5+\\int_0^x f(t)dt$ for all real $x$, with continuous $f$, then $\\int_0^{\\ln2} f(x)dx=$",
+      "q": "If $f (x) = 5 + \\int_0^x f (t) d t$ for all real $x$, with continuous $f$, then $\\int_0^{\\ln 2} f (x) d x =$",
       "a": "(A) $5$",
-      "s": "Differentiation gives $f\\prime=f$, $f(0)=5$. Thus $f(x)=5e^x$ and the integral is $5(2-1)$.",
+      "s": "Differentiation gives $f' = f$, $f (0) = 5$. Thus $f (x) = 5 e^x$ and the integral is $5 (2 - 1)$.",
       "opts": [
         "$5$",
         "$10$",
-        "$5\\ln2$",
+        "$5 \\ln 2$",
         "$0$"
       ],
       "marks": 4,
@@ -2051,14 +1529,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\frac{x^2+1}{(x+5)^2}dx$ is",
-      "a": "(D) $1-2(5)\\ln(\\frac{6}{5})+\\frac{13}{15}$",
-      "s": "Set $u=x+5$. Then $(x^2+1)/(x+5)^2=1-10/u+26/u^2$. Integrate between $u=5$ and $6$; the last contribution is $(26)(1/5-1/6)$.",
+      "q": "The value of $\\int_0^1 \\frac{x^2 + 1}{(x + 5)^2} d x$ is",
+      "a": "(D) $1 - 2 (5) \\ln (\\frac{6}{5}) + \\frac{13}{15}$",
+      "s": "Set $u = x + 5$. Then $\\frac{(x^2 + 1)}{(x + 5)^2} = 1 - \\frac{10}{u} + \\frac{26}{u^2}$. Integrate between $u = 5$ and $6$; the last contribution is $(26) (\\frac{1}{5} - \\frac{1}{6})$.",
       "opts": [
-        "$1+\\frac{13}{15}$",
-        "$1-2(5)\\ln(\\frac{6}{5})$",
-        "$1+2(5)\\ln(\\frac{6}{5})$",
-        "$1-2(5)\\ln(\\frac{6}{5})+\\frac{13}{15}$"
+        "$1 + \\frac{13}{15}$",
+        "$1 - 2 (5) \\ln (\\frac{6}{5})$",
+        "$1 + 2 (5) \\ln (\\frac{6}{5})$",
+        "$1 - 2 (5) \\ln (\\frac{6}{5}) + \\frac{13}{15}$"
       ],
       "marks": 4,
       "alt": null,
@@ -2066,9 +1544,9 @@
       "negative": 1
     },
     {
-      "q": "If $f$ is continuous and $f(5-x)=f(x)$ on $[0,5]$, and $\\int_0^{5}f=2$, then $\\int_0^{5}(3x+1)f(x)dx=$",
+      "q": "If $f$ is continuous and $f (5 - x) = f (x)$ on $[0 , 5]$, and $\\int_0^{5} f = 2$, then $\\int_0^{5} (3 x + 1) f (x) d x =$",
       "a": "(C) $17$",
-      "s": "Reflection gives $\\int xf=( 5/2)\\int f=5$. Therefore the requested value is $3(5)+2$.",
+      "s": "Reflection gives $\\int x f = (\\frac{5}{2}) \\int f = 5$. Therefore the requested value is $3 (5) + 2$.",
       "opts": [
         "$15$",
         "$2$",
@@ -2081,14 +1559,14 @@
       "negative": 1
     },
     {
-      "q": "$\\int\\frac{e^x}{(e^x+5)(e^x+7)}dx$ equals",
-      "a": "(B) $\\frac12\\ln\\left(\\frac{e^x+5}{e^x+7}\\right)+C$",
-      "s": "Let $u=e^x$, $du=e^xdx$. Partial fractions give $\\frac12[1/(u+5)-1/(u+7)]$. Both logarithm arguments are positive.",
+      "q": "$\\int \\frac{e^x}{(e^x + 5) (e^x + 7)} d x$ equals",
+      "a": "(B) $\\frac12 \\ln \\left (\\frac{e^x + 5}{e^x + 7} \\right) + C$",
+      "s": "Let $u = e^x$, $d u = e^x d x$. Partial fractions give $\\frac12 [\\frac{1}{(u + 5)} - \\frac{1}{(u + 7)}]$. Both logarithm arguments are positive.",
       "opts": [
-        "$\\frac12\\ln(e^x+5)+C$",
-        "$\\frac12\\ln\\left(\\frac{e^x+5}{e^x+7}\\right)+C$",
-        "$\\ln\\left(\\frac{e^x+5}{e^x+7}\\right)+C$",
-        "$-\\frac12\\ln\\left(\\frac{e^x+5}{e^x+7}\\right)+C$"
+        "$\\frac12 \\ln (e^x + 5) + C$",
+        "$\\frac12 \\ln \\left (\\frac{e^x + 5}{e^x + 7} \\right) + C$",
+        "$\\ln \\left (\\frac{e^x + 5}{e^x + 7} \\right) + C$",
+        "$- \\frac12 \\ln \\left (\\frac{e^x + 5}{e^x + 7} \\right) + C$"
       ],
       "marks": 4,
       "alt": null,
@@ -2096,13 +1574,13 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1 x^{5}\\ln x\\,dx$, interpreted as an endpoint limit, is",
-      "a": "(A) $-\\frac{1}{36}$",
-      "s": "Parts on $[\\varepsilon,1]$ gives $[x^{6}\\ln x/6]_\\varepsilon^1-\\frac1{6}\\int_\\varepsilon^1x^{5}dx$. Since $\\varepsilon^{6}\\ln\\varepsilon\\to0$, the answer is $-1/36$.",
+      "q": "The value of $\\int_0^1 x^{5} \\ln x \\, d x$, interpreted as an endpoint limit, is",
+      "a": "(A) $- \\frac{1}{36}$",
+      "s": "Parts on $[\\varepsilon , 1]$ gives $[\\frac{x^{6} \\ln x}{6}]_\\varepsilon^1 - \\frac1{6} \\int_\\varepsilon^1 x^{5} d x$. Since $\\varepsilon^{6} \\ln \\varepsilon \\to 0$, the answer is $- \\frac{1}{36}$.",
       "opts": [
-        "$-\\frac{1}{36}$",
+        "$- \\frac{1}{36}$",
         "$\\frac{1}{36}$",
-        "$-\\frac{1}{6}$",
+        "$- \\frac{1}{6}$",
         "$0$"
       ],
       "marks": 4,
@@ -2111,9 +1589,9 @@
       "negative": 1
     },
     {
-      "q": "For $I=\\int_{-5}^{5}\\frac{x^2}{1+e^x}dx$, the value of $I$ is",
+      "q": "For $I = \\int_{- 5}^{5} \\frac{x^2}{1 + e^x} d x$, the value of $I$ is",
       "a": "(D) $\\frac{125}{3}$",
-      "s": "Reflect $x\\mapsto-x$. The two weights $1/(1+e^x)$ and $1/(1+e^{-x})$ sum to $1$. Hence $2I=\\int_{-5}^{5}x^2dx=2(125)/3$.",
+      "s": "Reflect $x \\mapsto - x$. The two weights $\\frac{1}{(1 + e^x)}$ and $\\frac{1}{(1 + e^{- x})}$ sum to $1$. Hence $2 I = \\int_{- 5}^{5} x^2 d x = \\frac{2 (125)}{3}$.",
       "opts": [
         "$\\frac{250}{3}$",
         "$0$",
@@ -2126,9 +1604,9 @@
       "negative": 1
     },
     {
-      "q": "The average value of $|x-1|$ over $[0,5]$ is",
+      "q": "The average value of $|x - 1|$ over $[0 , 5]$ is",
       "a": "(C) $\\frac{17}{10}$",
-      "s": "Split at $1$. The integral is the sum of triangular areas $1/2+(4)^2/2$. Divide by the interval length $5$.",
+      "s": "Split at $1$. The integral is the sum of triangular areas $\\frac{1}{2} + \\frac{(4)^2}{2}$. Divide by the interval length $5$.",
       "opts": [
         "$\\frac{5}{2}$",
         "$4$",
@@ -2141,14 +1619,14 @@
       "negative": 1
     },
     {
-      "q": "For $x>0$, an antiderivative of $\\frac{1}{x\\sqrt{5+\\ln x}}$ on $x>e^{-5}$ is",
-      "a": "(B) $2\\sqrt{5+\\ln x}+C$",
-      "s": "Put $u=5+\\ln x$, so $du=dx/x$. Integrate $u^{-1/2}$ to get $2\\sqrt{u}+C$. The stated domain ensures $u>0$.",
+      "q": "For $x > 0$, an antiderivative of $\\frac{1}{x \\sqrt{5 + \\ln x}}$ on $x > e^{- 5}$ is",
+      "a": "(B) $2 \\sqrt{5 + \\ln x} + C$",
+      "s": "Put $u = 5 + \\ln x$, so $d u = \\frac{d x}{x}$. Integrate $u^{- \\frac{1}{2}}$ to get $2 \\sqrt{u} + C$. The stated domain ensures $u > 0$.",
       "opts": [
-        "$-2/\\sqrt{5+\\ln x}+C$",
-        "$2\\sqrt{5+\\ln x}+C$",
-        "$\\sqrt{5+\\ln x}+C$",
-        "$\\ln(5+\\ln x)+C$"
+        "$- \\frac{2}{\\sqrt{5 + \\ln x}} + C$",
+        "$2 \\sqrt{5 + \\ln x} + C$",
+        "$\\sqrt{5 + \\ln x} + C$",
+        "$\\ln (5 + \\ln x) + C$"
       ],
       "marks": 4,
       "alt": null,
@@ -2156,9 +1634,9 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^{\\pi/2}\\sin(5x)\\cos x\\,dx$ is",
+      "q": "The value of $\\int_0^{\\frac{\\pi}{2}} \\sin (5 x) \\cos x \\, d x$ is",
       "a": "(A) $\\frac{1}{6}$",
-      "s": "Use $2\\sin(5x)\\cos x=\\sin(6x)+\\sin(4x)$. Both frequencies are even; for the chosen odd $k=5$, one frequency is divisible by $4$ and integrates to zero, the other contributes $2/(k\\pm1)$. Direct endpoint evaluation gives $1/6$.",
+      "s": "Use $2 \\sin (5 x) \\cos x = \\sin (6 x) + \\sin (4 x)$. Both frequencies are even; for the chosen odd $k = 5$, one frequency is divisible by $4$ and integrates to zero, the other contributes $\\frac{2}{(k \\pm 1)}$. Direct endpoint evaluation gives $\\frac{1}{6}$.",
       "opts": [
         "$\\frac{1}{6}$",
         "$\\frac{5}{24}$",
@@ -2171,9 +1649,9 @@
       "negative": 1
     },
     {
-      "q": "Let $A(x)=\\int_0^x(t-2)(t-8)dt$. The number of local extrema of $A$ on $\\R$ is",
+      "q": "Let $A (x) = \\int_0^x (t - 2) (t - 8) d t$. The number of local extrema of $A$ on $\\R$ is",
       "a": "(D) $2$",
-      "s": "$A\\prime=(x-2)(x-8)$. It changes from positive to negative at $2$ and from negative to positive at $8$. Thus there are exactly two local extrema.",
+      "s": "$A' = (x - 2) (x - 8)$. It changes from positive to negative at $2$ and from negative to positive at $8$. Thus there are exactly two local extrema.",
       "opts": [
         "$0$",
         "$1$",
@@ -2186,9 +1664,9 @@
       "negative": 1
     },
     {
-      "q": "If $g(x)=x^3+5x$ and $h=g^{-1}$, then $\\int_0^{6}h(y)dy=$",
+      "q": "If $g (x) = x^3 + 5 x$ and $h = g^{- 1}$, then $\\int_0^{6} h (y) d y =$",
       "a": "(C) $\\frac{13}{4}$",
-      "s": "$g\\prime(x)=3x^2+5>0$. Substitute $y=g(x)$, so the bounds are $x=0,1$. The integral is $\\int_0^1x(3x^2+5)dx=3/4+\\frac{5}{2}$.",
+      "s": "$g' (x) = 3 x^2 + 5 > 0$. Substitute $y = g (x)$, so the bounds are $x = 0 , 1$. The integral is $\\int_0^1 x (3 x^2 + 5) d x = \\frac{3}{4} + \\frac{5}{2}$.",
       "opts": [
         "$\\frac{11}{4}$",
         "$6$",
@@ -2201,11 +1679,11 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\frac{x^{4}}{(1+x^{5})^2}dx$ is",
+      "q": "The value of $\\int_0^1 \\frac{x^{4}}{(1 + x^{5})^2} d x$ is",
       "a": "(B) $\\frac{1}{10}$",
-      "s": "Put $u=1+x^{5}$. The integral becomes $\\frac1{5}\\int_1^2u^{-2}du=1/10$.",
+      "s": "Put $u = 1 + x^{5}$. The integral becomes $\\frac1{5} \\int_1^2 u^{- 2} d u = \\frac{1}{10}$.",
       "opts": [
-        "$\\ln2/5$",
+        "$\\frac{\\ln 2}{5}$",
         "$\\frac{1}{10}$",
         "$\\frac{1}{5}$",
         "$\\frac{1}{20}$"
@@ -2216,14 +1694,14 @@
       "negative": 1
     },
     {
-      "q": "If $f$ is continuous on $[0,1]$ and $\\int_0^1f(x)dx=5$, which bound always holds?",
-      "a": "(A) $\\int_0^1 f(x)^2dx\\geq25$",
-      "s": "Integrate $(f-5)^2\\geq0$. Expansion gives $\\int f^2-2(5)\\int f+25\\geq0$, hence $\\int f^2\\geq25$. Nonconstant continuous functions show that equality is not forced.",
+      "q": "If $f$ is continuous on $[0 , 1]$ and $\\int_0^1 f (x) d x = 5$, which bound always holds?",
+      "a": "(A) $\\int_0^1 f (x)^2 d x \\geq 25$",
+      "s": "Integrate $(f - 5)^2 \\geq 0$. Expansion gives $\\int f^2 - 2 (5) \\int f + 25 \\geq 0$, hence $\\int f^2 \\geq 25$. Nonconstant continuous functions show that equality is not forced.",
       "opts": [
-        "$\\int_0^1 f(x)^2dx\\geq25$",
-        "$\\int_0^1 f(x)^2dx\\leq25$",
-        "$\\int_0^1 f(x)^2dx=25$",
-        "$\\int_0^1 f(x)^2dx<25$"
+        "$\\int_0^1 f (x)^2 d x \\geq 25$",
+        "$\\int_0^1 f (x)^2 d x \\leq 25$",
+        "$\\int_0^1 f (x)^2 d x = 25$",
+        "$\\int_0^1 f (x)^2 d x < 25$"
       ],
       "marks": 4,
       "alt": null,
@@ -2231,14 +1709,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^1\\left(5x^{4}\\tan^{-1}x+\\frac{x^{5}}{1+x^2}\\right)dx$ is",
-      "a": "(D) $\\pi/4$",
-      "s": "The integrand is the derivative of $x^{5}\\tan^{-1}x$ by the product rule. Evaluate that product at $1$ and $0$.",
+      "q": "The value of $\\int_0^1 \\left (5 x^{4} \\tan^{- 1} x + \\frac{x^{5}}{1 + x^2} \\right) d x$ is",
+      "a": "(D) $\\frac{\\pi}{4}$",
+      "s": "The integrand is the derivative of $x^{5} \\tan^{- 1} x$ by the product rule. Evaluate that product at $1$ and $0$.",
       "opts": [
-        "$\\pi/2$",
-        "$\\pi/20$",
-        "$\\ln2$",
-        "$\\pi/4$"
+        "$\\frac{\\pi}{2}$",
+        "$\\frac{\\pi}{20}$",
+        "$\\ln 2$",
+        "$\\frac{\\pi}{4}$"
       ],
       "marks": 4,
       "alt": null,
@@ -2246,9 +1724,9 @@
       "negative": 1
     },
     {
-      "q": "If $I=\\int_0^1 x(1-x)^{5}dx$, enter $(42)I$.",
+      "q": "If $I = \\int_0^1 x (1 - x)^{5} d x$, enter $(42) I$.",
       "a": "$1$",
-      "s": "With $u=1-x$, $I=\\int_0^1(u^{5}-u^{6})du=1/6-1/7=1/42$. Multiply by the stated factor.",
+      "s": "With $u = 1 - x$, $I = \\int_0^1 (u^{5} - u^{6}) d u = \\frac{1}{6} - \\frac{1}{7} = \\frac{1}{42}$. Multiply by the stated factor.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2256,9 +1734,9 @@
       "negative": 1
     },
     {
-      "q": "Enter $2\\int_0^{5}\\lfloor2x\\rfloor dx$.",
+      "q": "Enter $2 \\int_0^{5} \\lfloor 2 x \\rfloor d x$.",
       "a": "$45$",
-      "s": "There are $10$ intervals of width $1/2$ with values $0$ through $9$. Multiplying the integral by $2$ gives $0+1+\\cdots+9=45$.",
+      "s": "There are $10$ intervals of width $\\frac{1}{2}$ with values $0$ through $9$. Multiplying the integral by $2$ gives $0 + 1 + \\cdots + 9 = 45$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2266,9 +1744,9 @@
       "negative": 1
     },
     {
-      "q": "If $\\int_0^1(ax^2+5x)dx=\\frac{9}{2}$, enter $a$.",
+      "q": "If $\\int_0^1 (a x^2 + 5 x) d x = \\frac{9}{2}$, enter $a$.",
       "a": "$6$",
-      "s": "The integral is $a/3+\\frac{5}{2}$. Multiply by $6$ to get $2a+15=27$. Therefore $a=6$.",
+      "s": "The integral is $\\frac{a}{3} + \\frac{5}{2}$. Multiply by $6$ to get $2 a + 15 = 27$. Therefore $a = 6$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2276,9 +1754,9 @@
       "negative": 1
     },
     {
-      "q": "Let $B(x)=\\int_0^x(x-t)(t^2+5)dt$. Enter $B\\prime\\prime(2)$.",
+      "q": "Let $B (x) = \\int_0^x (x - t) (t^2 + 5) d t$. Enter $B'' (2)$.",
       "a": "$9$",
-      "s": "Differentiate the product decomposition $B=x\\int_0^x(t^2+5)dt-\\int_0^xt(t^2+5)dt$. The endpoint terms cancel, so $B\\prime=\\int_0^x(t^2+5)dt$ and $B\\prime\\prime=x^2+5$. At $2$, the value is $9$.",
+      "s": "Differentiate the product decomposition $B = x \\int_0^x (t^2 + 5) d t - \\int_0^x t (t^2 + 5) d t$. The endpoint terms cancel, so $B' = \\int_0^x (t^2 + 5) d t$ and $B'' = x^2 + 5$. At $2$, the value is $9$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2286,9 +1764,9 @@
       "negative": 1
     },
     {
-      "q": "For $I=\\int_0^{\\pi/2}\\sin^3x\\cos^3x\\,dx$, enter $60I$.",
+      "q": "For $I = \\int_0^{\\frac{\\pi}{2}} \\sin^3 x \\cos^3 x \\, d x$, enter $60 I$.",
       "a": "$5$",
-      "s": "Put $u=\\sin x$ and write $\\cos^2x=1-u^2$. Then $I=\\int_0^1(u^3-u^5)du=1/4-1/6=1/12$. Multiplying by $60$ gives $5$.",
+      "s": "Put $u = \\sin x$ and write $\\cos^2 x = 1 - u^2$. Then $I = \\int_0^1 (u^3 - u^5) d u = \\frac{1}{4} - \\frac{1}{6} = \\frac{1}{12}$. Multiplying by $60$ gives $5$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2298,14 +1776,14 @@
   ],
   "integrals-pdf-advanced-01": [
     {
-      "q": "Continuous $f$ satisfies $f(x)+f(2-x)=x^2-2x+6$ for $0\\leq x\\leq2$. Find $\\int_0^2(x-1)^2 f(x)dx$.",
-      "a": "(C) $28/15$",
-      "s": "The weight $(x-1)^2$ is unchanged by reflection. Adding the reflected integrals gives $2I=\\int_0^2(x-1)^2[(x-1)^2+5]dx$. Set $u=x-1$ to get $2I=2/5+10/3=56/15$, hence $I=28/15$.",
+      "q": "Continuous $f$ satisfies $f (x) + f (2 - x) = x^2 - 2 x + 6$ for $0 \\leq x \\leq 2$. Find $\\int_0^2 (x - 1)^2 f (x) d x$.",
+      "a": "(C) $\\frac{28}{15}$",
+      "s": "The weight $(x - 1)^2$ is unchanged by reflection. Adding the reflected integrals gives $2 I = \\int_0^2 (x - 1)^2 [(x - 1)^2 + 5] d x$. Set $u = x - 1$ to get $2 I = \\frac{2}{5} + \\frac{10}{3} = \\frac{56}{15}$, hence $I = \\frac{28}{15}$.",
       "opts": [
-        "$8/3$",
-        "$56/15$",
-        "$28/15$",
-        "$14/15$"
+        "$\\frac{8}{3}$",
+        "$\\frac{56}{15}$",
+        "$\\frac{28}{15}$",
+        "$\\frac{14}{15}$"
       ],
       "marks": 3,
       "alt": null,
@@ -2313,14 +1791,14 @@
       "negative": 1
     },
     {
-      "q": "If $(a,b)$ minimizes $\\int_0^1(x^2-ax-b)^2dx$ over $\\R^2$, then $a+b=$",
-      "a": "(B) $5/6$",
-      "s": "Differentiating the quadratic expression with respect to $a,b$ yields $a/3+b/2=1/4$ and $a/2+b=1/3$. Solving gives $a=1,b=-1/6$. This is the unique minimum: a nonzero change $(u,v)$ adds $\\int_0^1(ux+v)^2dx>0$, because the residual is orthogonal to both $x$ and $1$.",
+      "q": "If $(a , b)$ minimizes $\\int_0^1 (x^2 - a x - b)^2 d x$ over $\\R^2$, then $a + b =$",
+      "a": "(B) $\\frac{5}{6}$",
+      "s": "Differentiating the quadratic expression with respect to $a , b$ yields $\\frac{a}{3} + \\frac{b}{2} = \\frac{1}{4}$ and $\\frac{a}{2} + b = \\frac{1}{3}$. Solving gives $a = 1 , b = - \\frac{1}{6}$. This is the unique minimum: a nonzero change $(u , v)$ adds $\\int_0^1 (u x + v)^2 d x > 0$, because the residual is orthogonal to both $x$ and $1$.",
       "opts": [
-        "$2/3$",
-        "$5/6$",
-        "$1/6$",
-        "$7/6$"
+        "$\\frac{2}{3}$",
+        "$\\frac{5}{6}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{7}{6}$"
       ],
       "marks": 3,
       "alt": null,
@@ -2328,13 +1806,13 @@
       "negative": 1
     },
     {
-      "q": "Evaluate $\\int_0^1\\left(\\frac{\\ln(1+x)}{1+x^2}+\\frac{\\tan^{-1}x}{1+x}\\right)dx$.",
-      "a": "(A) $\\frac\\pi4\\ln2$",
-      "s": "The integrand is the derivative of $\\ln(1+x)\\tan^{-1}x$. The product is $\\ln2\\cdot\\pi/4$ at $1$ and zero at $0$.",
+      "q": "Evaluate $\\int_0^1 \\left (\\frac{\\ln (1 + x)}{1 + x^2} + \\frac{\\tan^{- 1} x}{1 + x} \\right) d x$.",
+      "a": "(A) $\\frac\\pi4 \\ln 2$",
+      "s": "The integrand is the derivative of $\\ln (1 + x) \\tan^{- 1} x$. The product is $\\frac{\\ln 2 \\cdot \\pi}{4}$ at $1$ and zero at $0$.",
       "opts": [
-        "$\\frac\\pi4\\ln2$",
-        "$\\frac\\pi2\\ln2$",
-        "$\\ln2$",
+        "$\\frac\\pi4 \\ln 2$",
+        "$\\frac\\pi2 \\ln 2$",
+        "$\\ln 2$",
         "$\\frac\\pi4$"
       ],
       "marks": 3,
@@ -2343,14 +1821,14 @@
       "negative": 1
     },
     {
-      "q": "Let $h$ be the inverse of $g(x)=x^3+x$ on $[1,2]$. Find $\\int_2^{10}h(y)dy$.",
-      "a": "(D) $51/4$",
-      "s": "$g\\prime=3x^2+1>0$. Substitute $y=g(x)$ to obtain $\\int_1^2x(3x^2+1)dx=[3x^4/4+x^2/2]_1^2=(12+2)-(3/4+1/2)=51/4$.",
+      "q": "Let $h$ be the inverse of $g (x) = x^3 + x$ on $[1 , 2]$. Find $\\int_2^{10} h (y) d y$.",
+      "a": "(D) $\\frac{51}{4}$",
+      "s": "$g' = 3 x^2 + 1 > 0$. Substitute $y = g (x)$ to obtain $\\int_1^2 x (3 x^2 + 1) d x = [\\frac{3 x^4}{4} + \\frac{x^2}{2}]_1^2 = (12 + 2) - (\\frac{3}{4} + \\frac{1}{2}) = \\frac{51}{4}$.",
       "opts": [
-        "$21/4$",
+        "$\\frac{21}{4}$",
         "$18$",
-        "$27/2$",
-        "$51/4$"
+        "$\\frac{27}{2}$",
+        "$\\frac{51}{4}$"
       ],
       "marks": 3,
       "alt": null,
@@ -2358,14 +1836,14 @@
       "negative": 1
     },
     {
-      "q": "Let $J(a)=\\int_0^2|x-a|dx$ for real $a$. Select all true statements.",
+      "q": "Let $J (a) = \\int_0^2 |x - a| d x$ for real $a$. Select all true statements.",
       "a": "(A), (C), (D)",
-      "s": "For $a\\leq0$, $J=2-2a$; for $0\\leq a\\leq2$, $J=a^2-2a+2=(a-1)^2+1$; for $a\\geq2$, $J=2a-2$. These establish A, C and D. B is false since $J(1)=1$ but $J(-1)=4$.",
+      "s": "For $a \\leq 0$, $J = 2 - 2 a$; for $0 \\leq a \\leq 2$, $J = a^2 - 2 a + 2 = (a - 1)^2 + 1$; for $a \\geq 2$, $J = 2 a - 2$. These establish A, C and D. B is false since $J (1) = 1$ but $J (- 1) = 4$.",
       "opts": [
         "The minimum value of $J$ is $1$.",
         "$J$ is an even function of $a$.",
-        "$J\\prime\\prime(a)=2$ for $0<a<2$.",
-        "$J(a)=2a-2$ for $a\\geq2$."
+        "$J'' (a) = 2$ for $0 < a < 2$.",
+        "$J (a) = 2 a - 2$ for $a \\geq 2$."
       ],
       "marks": 4,
       "alt": null,
@@ -2373,14 +1851,14 @@
       "negative": 1
     },
     {
-      "q": "Let $f$ be continuous and strictly positive on $[0,4]$, with $f(4-x)=f(x)$ and $\\int_0^4 f(x)dx=3$. Select all true statements.",
+      "q": "Let $f$ be continuous and strictly positive on $[0 , 4]$, with $f (4 - x) = f (x)$ and $\\int_0^4 f (x) d x = 3$. Select all true statements.",
       "a": "(A), (B), (D)",
-      "s": "Reflection gives $\\int xf=2\\int f=6$, proving A and B. Also $\\int(x-2)^2f>0$ because $f>0$ and the square is positive away from $2$. Expansion gives $\\int x^2f-4(6)+4(3)>0$, so $\\int x^2f>12$. Thus C is false and D true.",
+      "s": "Reflection gives $\\int x f = 2 \\int f = 6$, proving A and B. Also $\\int (x - 2)^2 f > 0$ because $f > 0$ and the square is positive away from $2$. Expansion gives $\\int x^2 f - 4 (6) + 4 (3) > 0$, so $\\int x^2 f > 12$. Thus C is false and D true.",
       "opts": [
-        "$\\int_0^4xf(x)dx=6$.",
-        "$\\int_0^4(x-2)f(x)dx=0$.",
-        "$\\int_0^4x^2f(x)dx=12$.",
-        "$\\int_0^4x^2f(x)dx>12$."
+        "$\\int_0^4 x f (x) d x = 6$.",
+        "$\\int_0^4 (x - 2) f (x) d x = 0$.",
+        "$\\int_0^4 x^2 f (x) d x = 12$.",
+        "$\\int_0^4 x^2 f (x) d x > 12$."
       ],
       "marks": 4,
       "alt": null,
@@ -2388,14 +1866,14 @@
       "negative": 1
     },
     {
-      "q": "For integers $n\\geq0$, let $R_n=\\int_0^1x^n/(1+x)dx$. Select all true statements.",
+      "q": "For integers $n \\geq 0$, let $R_n = \\int_0^1 \\frac{x^n}{(1 + x)} d x$. Select all true statements.",
       "a": "(A), (B), (C)",
-      "s": "A follows by adding the integrands. B follows because $x^{n+1}<x^n$ on $(0,1)$. For C, write $(n+1)R_n-1/2=(n+1)\\int_0^1x^n(1-x)/[2(1+x)]dx$. This lies between $0$ and $(n+1)\\int_0^1x^n(1-x)dx/2=1/[2(n+2)]$, which tends to zero. D is false since $1/(1+x)<1$ on $(0,1)$.",
+      "s": "A follows by adding the integrands. B follows because $x^{n + 1} < x^n$ on $(0 , 1)$. For C, write $(n + 1) R_n - \\frac{1}{2} = (n + 1) \\int_0^1 \\frac{x^n (1 - x)}{[2 (1 + x)]} d x$. This lies between $0$ and $(n + 1) \\int_0^1 \\frac{x^n (1 - x) d x}{2} = \\frac{1}{[2 (n + 2)]}$, which tends to zero. D is false since $\\frac{1}{(1 + x)} < 1$ on $(0 , 1)$.",
       "opts": [
-        "$R_n+R_{n+1}=1/(n+1)$.",
-        "$R_{n+1}<R_n$.",
-        "$\\lim_{n\\to\\infty}(n+1)R_n=1/2$.",
-        "$R_n\\geq1/(n+1)$."
+        "$R_n + R_{n + 1} = \\frac{1}{(n + 1)}$.",
+        "$R_{n + 1} < R_n$.",
+        "$\\lim_{n \\to \\infty} (n + 1) R_n = \\frac{1}{2}$.",
+        "$R_n \\geq \\frac{1}{(n + 1)}$."
       ],
       "marks": 4,
       "alt": null,
@@ -2403,14 +1881,14 @@
       "negative": 1
     },
     {
-      "q": "Let $F(x)=\\int_0^x(t^2-6t+5)dt$ for real $x$. Select all true statements.",
+      "q": "Let $F (x) = \\int_0^x (t^2 - 6 t + 5) d t$ for real $x$. Select all true statements.",
       "a": "(A), (B), (D)",
-      "s": "$F\\prime=(x-1)(x-5)$ has signs $+,-,+$ on the three intervals. This proves A and B and disproves C. Direct integration gives $F=x^3/3-3x^2+5x$, and hence $F(5)=-25/3$.",
+      "s": "$F' = (x - 1) (x - 5)$ has signs $+ , - , +$ on the three intervals. This proves A and B and disproves C. Direct integration gives $F = \\frac{x^3}{3} - 3 x^2 + 5 x$, and hence $F (5) = - \\frac{25}{3}$.",
       "opts": [
-        "$F$ has a local maximum at $x=1$.",
-        "$F$ has a local minimum at $x=5$.",
-        "$F$ is strictly increasing on $(1,5)$.",
-        "$F(5)=-25/3$."
+        "$F$ has a local maximum at $x = 1$.",
+        "$F$ has a local minimum at $x = 5$.",
+        "$F$ is strictly increasing on $(1 , 5)$.",
+        "$F (5) = - \\frac{25}{3}$."
       ],
       "marks": 4,
       "alt": null,
@@ -2418,9 +1896,9 @@
       "negative": 1
     },
     {
-      "q": "Continuous $f$ satisfies $f(x)=2+\\int_0^x3t^2 f(t)dt$. Enter $\\ln(f(1)/2)$.",
+      "q": "Continuous $f$ satisfies $f (x) = 2 + \\int_0^x 3 t^2 f (t) d t$. Enter $\\ln (\\frac{f (1)}{2})$.",
       "a": "$1$",
-      "s": "$f\\prime=3x^2f$ and $f(0)=2$. The derivative of $e^{-x^3}f(x)$ is zero; consequently $f=2e^{x^3}$. Thus $\\ln(f(1)/2)=\\ln e=1$.",
+      "s": "$f' = 3 x^2 f$ and $f (0) = 2$. The derivative of $e^{- x^3} f (x)$ is zero; consequently $f = 2 e^{x^3}$. Thus $\\ln (\\frac{f (1)}{2}) = \\ln e = 1$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2428,9 +1906,9 @@
       "negative": 0
     },
     {
-      "q": "Let $I=\\int_0^1x^2(1-x)^4dx$. Enter $105I$.",
+      "q": "Let $I = \\int_0^1 x^2 (1 - x)^4 d x$. Enter $105 I$.",
       "a": "$1$",
-      "s": "Expand $(1-x)^4$ and integrate: $I=1/3-1+6/5-2/3+1/7=1/105$. Alternatively, repeated parts gives $2!4!/7!=1/105$.",
+      "s": "Expand $(1 - x)^4$ and integrate: $I = \\frac{1}{3} - 1 + \\frac{6}{5} - \\frac{2}{3} + \\frac{1}{7} = \\frac{1}{105}$. Alternatively, repeated parts gives $\\frac{2! 4!}{7!} = \\frac{1}{105}$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2438,9 +1916,9 @@
       "negative": 0
     },
     {
-      "q": "Let $f$ be continuous on $[0,3]$ and satisfy $f(x)+f(3-x)=4$. Enter $\\int_0^3(x^2-3x+5)f(x)dx$.",
+      "q": "Let $f$ be continuous on $[0 , 3]$ and satisfy $f (x) + f (3 - x) = 4$. Enter $\\int_0^3 (x^2 - 3 x + 5) f (x) d x$.",
       "a": "$21$",
-      "s": "The weight $w(x)=x^2-3x+5$ is symmetric about $3/2$. Thus $2I=4\\int_0^3w(x)dx=4(9-27/2+15)=42$. Hence $I=21$.",
+      "s": "The weight $w (x) = x^2 - 3 x + 5$ is symmetric about $\\frac{3}{2}$. Thus $2 I = 4 \\int_0^3 w (x) d x = 4 (9 - \\frac{27}{2} + 15) = 42$. Hence $I = 21$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2448,9 +1926,9 @@
       "negative": 0
     },
     {
-      "q": "Let $L=\\lim_{n\\to\\infty}\\frac1n\\sum_{r=1}^n\\frac{(r/n)^2}{1+(r/n)^3}$. Enter $e^{3L}$.",
+      "q": "Let $L = \\lim_{n \\to \\infty} \\frac1n \\sum_{r = 1}^n \\frac{(\\frac{r}{n})^2}{1 + (\\frac{r}{n})^3}$. Enter $e^{3 L}$.",
       "a": "$2$",
-      "s": "The limit is $\\int_0^1x^2/(1+x^3)dx$. Substitute $u=1+x^3$ to get $L=\\ln2/3$, so $e^{3L}=2$.",
+      "s": "The limit is $\\int_0^1 \\frac{x^2}{(1 + x^3)} d x$. Substitute $u = 1 + x^3$ to get $L = \\frac{\\ln 2}{3}$, so $e^{3 L} = 2$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2458,14 +1936,14 @@
       "negative": 0
     },
     {
-      "q": "Match each integral to its value.\\par\\textbf{List I}\\par (P) $\\int_0^1(6x^2+2)dx$\\par \\quad (Q) $\\int_0^1\\frac{6x}{1+3x^2}dx$\\par \\quad (R) $\\int_0^{\\sqrt3}\\frac{dx}{1+x^2}$\\par \\quad (S) $\\int_0^1 12x(1-x)dx$\\par \\textbf{List II}\\par (1) $2$\\quad (2) $\\ln4$\\quad (3) $4$\\quad (4) $\\pi/3$\\quad (5) $3$",
-      "a": "(D) $P\\to3$, $Q\\to2$, $R\\to4$, $S\\to1$",
-      "s": "P: $[2x^3+2x]_0^1=4$, matching 3. Q: $[\\ln(1+3x^2)]_0^1=\\ln4$, matching 2. R: $[\\tan^{-1}x]_0^{\\sqrt3}=\\pi/3$, matching 4. S: $[6x^2-4x^3]_0^1=2$, matching 1.",
+      "q": "Match each integral to its value.\\par\\textbf{List I}\\par (P) $\\int_0^1 (6 x^2 + 2) d x$\\par \\quad (Q) $\\int_0^1 \\frac{6 x}{1 + 3 x^2} d x$\\par \\quad (R) $\\int_0^{\\sqrt3} \\frac{d x}{1 + x^2}$\\par \\quad (S) $\\int_0^1 12 x (1 - x) d x$\\par \\textbf{List II}\\par (1) $2$\\quad (2) $\\ln 4$\\quad (3) $4$\\quad (4) $\\frac{\\pi}{3}$\\quad (5) $3$",
+      "a": "(D) $P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+      "s": "P: $[2 x^3 + 2 x]_0^1 = 4$, matching 3. Q: $[\\ln (1 + 3 x^2)]_0^1 = \\ln 4$, matching 2. R: $[\\tan^{- 1} x]_0^{\\sqrt3} = \\frac{\\pi}{3}$, matching 4. S: $[6 x^2 - 4 x^3]_0^1 = 2$, matching 1.",
       "opts": [
-        "$P\\to1$, $Q\\to2$, $R\\to3$, $S\\to4$",
-        "$P\\to1$, $Q\\to2$, $R\\to4$, $S\\to3$",
-        "$P\\to1$, $Q\\to3$, $R\\to2$, $S\\to4$",
-        "$P\\to3$, $Q\\to2$, $R\\to4$, $S\\to1$"
+        "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+        "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+        "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+        "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
       ],
       "marks": 4,
       "alt": null,
@@ -2473,14 +1951,14 @@
       "negative": 1
     },
     {
-      "q": "Let $A(x)=\\int_0^x(t^3-2t+4)dt$. Match each quantity.\\par\\textbf{List I}\\par (P) $A\\prime(0)$\\par \\quad (Q) $A\\prime\\prime(1)$\\par \\quad (R) $A(2)$\\par \\quad (S) $A\\prime(2)$\\par \\textbf{List II}\\par (1) $1$\\quad (2) $8$\\quad (3) $4$\\quad (4) $0$\\quad (5) $2$",
-      "a": "(C) $P\\to3$, $Q\\to1$, $R\\to2$, $S\\to2$",
-      "s": "$A\\prime=x^3-2x+4$, $A\\prime\\prime=3x^2-2$, and $A=x^4/4-x^2+4x$. Hence the four quantities are $4,1,8,8$. The same List II value can legitimately match two entries.",
+      "q": "Let $A (x) = \\int_0^x (t^3 - 2 t + 4) d t$. Match each quantity.\\par\\textbf{List I}\\par (P) $A' (0)$\\par \\quad (Q) $A'' (1)$\\par \\quad (R) $A (2)$\\par \\quad (S) $A' (2)$\\par \\textbf{List II}\\par (1) $1$\\quad (2) $8$\\quad (3) $4$\\quad (4) $0$\\quad (5) $2$",
+      "a": "(C) $P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 2$",
+      "s": "$A' = x^3 - 2 x + 4$, $A'' = 3 x^2 - 2$, and $A = \\frac{x^4}{4} - x^2 + 4 x$. Hence the four quantities are $4 , 1 , 8 , 8$. The same List II value can legitimately match two entries.",
       "opts": [
-        "$P\\to1$, $Q\\to2$, $R\\to3$, $S\\to2$",
-        "$P\\to1$, $Q\\to3$, $R\\to2$, $S\\to2$",
-        "$P\\to3$, $Q\\to1$, $R\\to2$, $S\\to2$",
-        "$P\\to1$, $Q\\to2$, $R\\to2$, $S\\to3$"
+        "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 2$",
+        "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 2$",
+        "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 2$",
+        "$P \\to 1$, $Q \\to 2$, $R \\to 2$, $S \\to 3$"
       ],
       "marks": 4,
       "alt": null,
@@ -2488,14 +1966,14 @@
       "negative": 1
     },
     {
-      "q": "For $K_n=\\int_0^1x^n dx$, match each quantity.\\par\\textbf{List I}\\par (P) $12(K_1-K_2)$\\par \\quad (Q) $20(K_3-K_4)$\\par \\quad (R) $30(K_4-K_5)$\\par \\quad (S) $12K_2$\\par \\textbf{List II}\\par (1) $1$\\quad (2) $2$\\quad (3) $3$\\quad (4) $4$\\quad (5) $5$",
-      "a": "(B) $P\\to2$, $Q\\to1$, $R\\to1$, $S\\to4$",
-      "s": "$K_n=1/(n+1)$. Thus P is $12(1/2-1/3)=2$; Q is $20(1/4-1/5)=1$; R is $30(1/5-1/6)=1$; S is $12/3=4$.",
+      "q": "For $K_n = \\int_0^1 x^n d x$, match each quantity.\\par\\textbf{List I}\\par (P) $12 (K_1 - K_2)$\\par \\quad (Q) $20 (K_3 - K_4)$\\par \\quad (R) $30 (K_4 - K_5)$\\par \\quad (S) $12 K_2$\\par \\textbf{List II}\\par (1) $1$\\quad (2) $2$\\quad (3) $3$\\quad (4) $4$\\quad (5) $5$",
+      "a": "(B) $P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 4$",
+      "s": "$K_n = \\frac{1}{(n + 1)}$. Thus P is $12 (\\frac{1}{2} - \\frac{1}{3}) = 2$; Q is $20 (\\frac{1}{4} - \\frac{1}{5}) = 1$; R is $30 (\\frac{1}{5} - \\frac{1}{6}) = 1$; S is $\\frac{12}{3} = 4$.",
       "opts": [
-        "$P\\to1$, $Q\\to2$, $R\\to1$, $S\\to4$",
-        "$P\\to2$, $Q\\to1$, $R\\to1$, $S\\to4$",
-        "$P\\to1$, $Q\\to1$, $R\\to2$, $S\\to4$",
-        "$P\\to1$, $Q\\to1$, $R\\to4$, $S\\to2$"
+        "$P \\to 1$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+        "$P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 4$",
+        "$P \\to 1$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+        "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
       ],
       "marks": 4,
       "alt": null,
@@ -2503,14 +1981,14 @@
       "negative": 1
     },
     {
-      "q": "Let $H(a)=\\int_0^2(x-a)^2dx$. Match each quantity.\\par\\textbf{List I}\\par (P) $H(1)$\\par \\quad (Q) $H\\prime(0)$\\par \\quad (R) $H\\prime\\prime(3)$\\par \\quad (S) $H(0)$\\par \\textbf{List II}\\par (1) $-4$\\quad (2) $4$\\quad (3) $2/3$\\quad (4) $8/3$\\quad (5) $0$",
-      "a": "(A) $P\\to3$, $Q\\to1$, $R\\to2$, $S\\to4$",
-      "s": "$H(a)=2a^2-4a+8/3$, $H\\prime=4a-4$, $H\\prime\\prime=4$. Thus the entries are $2/3,-4,4,8/3$ in order.",
+      "q": "Let $H (a) = \\int_0^2 (x - a)^2 d x$. Match each quantity.\\par\\textbf{List I}\\par (P) $H (1)$\\par \\quad (Q) $H' (0)$\\par \\quad (R) $H'' (3)$\\par \\quad (S) $H (0)$\\par \\textbf{List II}\\par (1) $- 4$\\quad (2) $4$\\quad (3) $\\frac{2}{3}$\\quad (4) $\\frac{8}{3}$\\quad (5) $0$",
+      "a": "(A) $P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+      "s": "$H (a) = 2 a^2 - 4 a + \\frac{8}{3}$, $H' = 4 a - 4$, $H'' = 4$. Thus the entries are $\\frac{2}{3} , - 4 , 4 , \\frac{8}{3}$ in order.",
       "opts": [
-        "$P\\to3$, $Q\\to1$, $R\\to2$, $S\\to4$",
-        "$P\\to1$, $Q\\to2$, $R\\to3$, $S\\to4$",
-        "$P\\to1$, $Q\\to2$, $R\\to4$, $S\\to3$",
-        "$P\\to1$, $Q\\to3$, $R\\to2$, $S\\to4$"
+        "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+        "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+        "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+        "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
       ],
       "marks": 4,
       "alt": null,
@@ -2520,14 +1998,14 @@
   ],
   "integrals-pdf-advanced-02": [
     {
-      "q": "For $a>0$, define $I(a)=\\int_0^1\\frac{a}{(a+x)^2}dx$. The equation $I(a)=1/4$ has solution",
-      "a": "(C) $a=3$",
-      "s": "Integrate to get $I(a)=[-a/(a+x)]_0^1=1-a/(a+1)=1/(a+1)$. Thus $a+1=4$ and $a=3$. Positivity ensures there is no pole.",
+      "q": "For $a > 0$, define $I (a) = \\int_0^1 \\frac{a}{(a + x)^2} d x$. The equation $I (a) = \\frac{1}{4}$ has solution",
+      "a": "(C) $a = 3$",
+      "s": "Integrate to get $I (a) = [- \\frac{a}{(a + x)}]_0^1 = 1 - \\frac{a}{(a + 1)} = \\frac{1}{(a + 1)}$. Thus $a + 1 = 4$ and $a = 3$. Positivity ensures there is no pole.",
       "opts": [
-        "$a=4$",
-        "$a=2$",
-        "$a=3$",
-        "$a=1/3$"
+        "$a = 4$",
+        "$a = 2$",
+        "$a = 3$",
+        "$a = \\frac{1}{3}$"
       ],
       "marks": 3,
       "alt": null,
@@ -2535,9 +2013,9 @@
       "negative": 1
     },
     {
-      "q": "Let $f$ be continuous on $[0,1]$, with $\\int_0^1f=0$ and $\\int_0^1xf=1$. The smallest possible value of $\\int_0^1f^2$ is",
+      "q": "Let $f$ be continuous on $[0 , 1]$, with $\\int_0^1 f = 0$ and $\\int_0^1 x f = 1$. The smallest possible value of $\\int_0^1 f^2$ is",
       "a": "(B) $12$",
-      "s": "$\\int_0^1(x-1/2)f=1$. Cauchy--Schwarz gives $1\\leq(\\int_0^1(x-1/2)^2)(\\int f^2)=(1/12)\\int f^2$. Equality is attained by $f(x)=12x-6$, which satisfies both conditions. Hence the minimum is 12.",
+      "s": "$\\int_0^1 (x - \\frac{1}{2}) f = 1$. Cauchy--Schwarz gives $1 \\leq (\\int_0^1 (x - \\frac{1}{2})^2) (\\int f^2) = (\\frac{1}{12}) \\int f^2$. Equality is attained by $f (x) = 12 x - 6$, which satisfies both conditions. Hence the minimum is 12.",
       "opts": [
         "$4$",
         "$12$",
@@ -2550,13 +2028,13 @@
       "negative": 1
     },
     {
-      "q": "Let $F(x)=\\int_0^x\\frac{dt}{1+t^2}$ and $G(x)=\\int_0^xF(t)dt$. Then $G(1)+\\frac12\\ln2=$",
-      "a": "(A) $\\pi/4$",
-      "s": "$F(x)=\\tan^{-1}x$. Integration by parts gives $G(1)=[x\\tan^{-1}x]_0^1-\\int_0^1x/(1+x^2)dx=\\pi/4-\\frac12\\ln2$.",
+      "q": "Let $F (x) = \\int_0^x \\frac{d t}{1 + t^2}$ and $G (x) = \\int_0^x F (t) d t$. Then $G (1) + \\frac12 \\ln 2 =$",
+      "a": "(A) $\\frac{\\pi}{4}$",
+      "s": "$F (x) = \\tan^{- 1} x$. Integration by parts gives $G (1) = [x \\tan^{- 1} x]_0^1 - \\int_0^1 \\frac{x}{(1 + x^2)} d x = \\frac{\\pi}{4} - \\frac12 \\ln 2$.",
       "opts": [
-        "$\\pi/4$",
-        "$\\pi/2$",
-        "$\\ln2$",
+        "$\\frac{\\pi}{4}$",
+        "$\\frac{\\pi}{2}$",
+        "$\\ln 2$",
         "$1$"
       ],
       "marks": 3,
@@ -2565,14 +2043,14 @@
       "negative": 1
     },
     {
-      "q": "The value of $\\int_0^{\\pi}\\frac{x\\sin^2x}{2+\\cos^2x}dx$ is",
-      "a": "(D) $\\frac{\\pi^2}{2}(\\sqrt{3/2}-1)$",
-      "s": "The weight is symmetric under $x\\mapsto\\pi-x$, so $I=(\\pi/2)J$ where $J=\\int_0^\\pi\\sin^2x/(2+\\cos^2x)dx$. Write the fraction as $3/(2+\\cos^2x)-1$. Substitution $t=\\tan x$ on $[0,\\pi/2)$ and symmetry give $\\int_0^\\pi dx/(2+\\cos^2x)=\\pi/\\sqrt6$. Thus $J=\\pi(\\sqrt{3/2}-1)$, yielding the answer.",
+      "q": "The value of $\\int_0^{\\pi} \\frac{x \\sin^2 x}{2 + \\cos^2 x} d x$ is",
+      "a": "(D) $\\frac{\\pi^2}{2} (\\sqrt{\\frac{3}{2}} - 1)$",
+      "s": "The weight is symmetric under $x \\mapsto \\pi - x$, so $I = (\\frac{\\pi}{2}) J$ where $J = \\int_0^\\pi \\frac{\\sin^2 x}{(2 + \\cos^2 x)} d x$. Write the fraction as $\\frac{3}{(2 + \\cos^2 x)} - 1$. Substitution $t = \\tan x$ on $\\left[0,\\frac{\\pi}{2}\\right)$ and symmetry give $\\int_0^\\pi \\frac{d x}{(2 + \\cos^2 x)} = \\frac{\\pi}{\\sqrt6}$. Thus $J = \\pi (\\sqrt{\\frac{3}{2}} - 1)$, yielding the answer.",
       "opts": [
-        "$\\pi^2(\\sqrt{3/2}-1)$",
-        "$\\pi^2/4$",
-        "$\\frac{\\pi^2}{2}(1-\\sqrt{2/3})$",
-        "$\\frac{\\pi^2}{2}(\\sqrt{3/2}-1)$"
+        "$\\pi^2 (\\sqrt{\\frac{3}{2}} - 1)$",
+        "$\\frac{\\pi^2}{4}$",
+        "$\\frac{\\pi^2}{2} (1 - \\sqrt{\\frac{2}{3}})$",
+        "$\\frac{\\pi^2}{2} (\\sqrt{\\frac{3}{2}} - 1)$"
       ],
       "marks": 3,
       "alt": null,
@@ -2580,14 +2058,14 @@
       "negative": 1
     },
     {
-      "q": "Let $T_n=\\int_0^1x^n(1-x)^2dx$ for integers $n\\geq0$. Select all true statements.",
+      "q": "Let $T_n = \\int_0^1 x^n (1 - x)^2 d x$ for integers $n \\geq 0$. Select all true statements.",
       "a": "(A), (B), (C)",
-      "s": "Expansion gives $T_n=1/(n+1)-2/(n+2)+1/(n+3)$, simplifying to A. The ratio in B follows immediately and is less than one, proving C. The formula gives $n^2T_n\\to0$, so D is false.",
+      "s": "Expansion gives $T_n = \\frac{1}{(n + 1)} - \\frac{2}{(n + 2)} + \\frac{1}{(n + 3)}$, simplifying to A. The ratio in B follows immediately and is less than one, proving C. The formula gives $n^2 T_n \\to 0$, so D is false.",
       "opts": [
-        "$T_n=2/[(n+1)(n+2)(n+3)]$.",
-        "$T_{n+1}/T_n=(n+1)/(n+4)$.",
+        "$T_n = \\frac{2}{[(n + 1) (n + 2) (n + 3)]}$.",
+        "$\\frac{T_{n + 1}}{T_n} = \\frac{(n + 1)}{(n + 4)}$.",
         "$T_n$ is strictly decreasing.",
-        "$n^2T_n\\to2$ as $n\\to\\infty$."
+        "$n^2 T_n \\to 2$ as $n \\to \\infty$."
       ],
       "marks": 4,
       "alt": null,
@@ -2595,14 +2073,14 @@
       "negative": 1
     },
     {
-      "q": "Let $f$ be continuous on $[-2,2]$ with $f(-x)=f(x)$. Select all statements that must hold.",
+      "q": "Let $f$ be continuous on $[- 2 , 2]$ with $f (- x) = f (x)$. Select all statements that must hold.",
       "a": "(A), (B), (D)",
-      "s": "A and D follow from oddness and evenness. For B, reflect and add the reciprocal exponential weights, which sum to one: $2I=\\int_{-2}^2f=2\\int_0^2f$. C fails for $f=1$: pairing $x$ and $-x$ gives $x(1-e^x)/(1+e^x)<0$ for $x>0$, so the integral is negative.",
+      "s": "A and D follow from oddness and evenness. For B, reflect and add the reciprocal exponential weights, which sum to one: $2 I = \\int_{- 2}^2 f = 2 \\int_0^2 f$. C fails for $f = 1$: pairing $x$ and $- x$ gives $\\frac{x (1 - e^x)}{(1 + e^x)} < 0$ for $x > 0$, so the integral is negative.",
       "opts": [
-        "$\\int_{-2}^2xf(x)dx=0$.",
-        "$\\int_{-2}^2f(x)/(1+e^x)dx=\\int_0^2f(x)dx$.",
-        "$\\int_{-2}^2xf(x)/(1+e^x)dx=0$.",
-        "$\\int_{-2}^2f(x)dx=2\\int_0^2f(x)dx$."
+        "$\\int_{- 2}^2 x f (x) d x = 0$.",
+        "$\\int_{- 2}^2 \\frac{f (x)}{(1 + e^x)} d x = \\int_0^2 f (x) d x$.",
+        "$\\int_{- 2}^2 \\frac{x f (x)}{(1 + e^x)} d x = 0$.",
+        "$\\int_{- 2}^2 f (x) d x = 2 \\int_0^2 f (x) d x$."
       ],
       "marks": 4,
       "alt": null,
@@ -2610,14 +2088,14 @@
       "negative": 1
     },
     {
-      "q": "Let $P(x)=\\int_0^x|t-2|dt$ on $\\R$. Select all true statements.",
+      "q": "Let $P (x) = \\int_0^x |t - 2| d t$ on $\\R$. Select all true statements.",
       "a": "(A), (B), (D)",
-      "s": "The integrand is continuous, so $P\\prime(x)=|x-2|$ everywhere, proving A. For any $a<b$, the integral of $|t-2|$ over $[a,b]$ is positive, proving strict increase despite the derivative vanishing at one point. The left and right derivatives of $P\\prime$ at 2 are $-1$ and $1$, disproving C. Two triangles each of area 2 give D.",
+      "s": "The integrand is continuous, so $P' (x) = |x - 2|$ everywhere, proving A. For any $a < b$, the integral of $|t - 2|$ over $[a , b]$ is positive, proving strict increase despite the derivative vanishing at one point. The left and right derivatives of $P'$ at 2 are $- 1$ and $1$, disproving C. Two triangles each of area 2 give D.",
       "opts": [
         "$P$ is differentiable everywhere.",
         "$P$ is strictly increasing on $\\R$.",
-        "$P\\prime\\prime(2)$ exists.",
-        "$P(4)=4$."
+        "$P'' (2)$ exists.",
+        "$P (4) = 4$."
       ],
       "marks": 4,
       "alt": null,
@@ -2625,14 +2103,14 @@
       "negative": 1
     },
     {
-      "q": "Let $f$ be continuously differentiable and strictly increasing on $[0,2]$, with $f(0)=1$, $f(2)=7$, and $\\int_0^2f=6$. Let $g=f^{-1}$. Select all true statements.",
+      "q": "Let $f$ be continuously differentiable and strictly increasing on $[0 , 2]$, with $f (0) = 1$, $f (2) = 7$, and $\\int_0^2 f = 6$. Let $g = f^{- 1}$. Select all true statements.",
       "a": "(A), (B), (D)",
-      "s": "Parts gives $\\int_0^2xf\\prime(x)dx=[xf]_0^2-\\int_0^2f=14-6=8$. Substitution $y=f(x)$ identifies the inverse integral with the same value, proving A and B and disproving C. Dividing by interval length 6 gives $8/6=4/3$, proving D.",
+      "s": "Parts gives $\\int_0^2 x f' (x) d x = [x f]_0^2 - \\int_0^2 f = 14 - 6 = 8$. Substitution $y = f (x)$ identifies the inverse integral with the same value, proving A and B and disproving C. Dividing by interval length 6 gives $\\frac{8}{6} = \\frac{4}{3}$, proving D.",
       "opts": [
-        "$\\int_1^7g(y)dy=8$.",
-        "$\\int_0^2xf\\prime(x)dx=8$.",
-        "$\\int_1^7g(y)dy=6$.",
-        "The average value of $g$ on $[1,7]$ is $4/3$."
+        "$\\int_1^7 g (y) d y = 8$.",
+        "$\\int_0^2 x f' (x) d x = 8$.",
+        "$\\int_1^7 g (y) d y = 6$.",
+        "The average value of $g$ on $[1 , 7]$ is $\\frac{4}{3}$."
       ],
       "marks": 4,
       "alt": null,
@@ -2640,14 +2118,14 @@
       "negative": 1
     },
     {
-      "q": "For $a\\in[0,1]$, let $Q(a)=\\int_0^1(x-a)^4dx$. Select all true statements.",
+      "q": "For $a \\in [0 , 1]$, let $Q (a) = \\int_0^1 (x - a)^4 d x$. Select all true statements.",
       "a": "(A), (B), (C)",
-      "s": "Integrating gives $Q(a)=[a^5+(1-a)^5]/5$, proving A. Then $Q\\prime=a^4-(1-a)^4$, zero only at $1/2$, and $Q\\prime\\prime=4a^3+4(1-a)^3>0$, proving B and C. The minimum is $2(1/2)^5/5=1/80$, so D is false.",
+      "s": "Integrating gives $Q (a) = \\frac{[a^5 + (1 - a)^5]}{5}$, proving A. Then $Q' = a^4 - (1 - a)^4$, zero only at $\\frac{1}{2}$, and $Q'' = 4 a^3 + 4 (1 - a)^3 > 0$, proving B and C. The minimum is $\\frac{2 (\\frac{1}{2})^5}{5} = \\frac{1}{80}$, so D is false.",
       "opts": [
-        "$Q(a)=Q(1-a)$.",
-        "$Q$ has its unique minimum at $a=1/2$.",
-        "$Q\\prime\\prime(a)>0$ throughout $[0,1]$.",
-        "The minimum value of $Q$ is $1/40$."
+        "$Q (a) = Q (1 - a)$.",
+        "$Q$ has its unique minimum at $a = \\frac{1}{2}$.",
+        "$Q'' (a) > 0$ throughout $[0 , 1]$.",
+        "The minimum value of $Q$ is $\\frac{1}{40}$."
       ],
       "marks": 4,
       "alt": null,
@@ -2655,9 +2133,9 @@
       "negative": 1
     },
     {
-      "q": "Let $L=\\lim_{n\\to\\infty}\\frac1n\\sum_{r=1}^n\\frac1{1+3r/n}$. Enter $e^{3L}$.",
+      "q": "Let $L = \\lim_{n \\to \\infty} \\frac1n \\sum_{r = 1}^n \\frac1{1 + \\frac{3 r}{n}}$. Enter $e^{3 L}$.",
       "a": "$4$",
-      "s": "The sum tends to $\\int_0^1dx/(1+3x)=\\ln4/3$. Exponentiation gives $e^{3L}=4$.",
+      "s": "The sum tends to $\\int_0^1 \\frac{d x}{(1 + 3 x)} = \\frac{\\ln 4}{3}$. Exponentiation gives $e^{3 L} = 4$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2665,9 +2143,9 @@
       "negative": 0
     },
     {
-      "q": "Continuous $f$ satisfies $f(x)=4+\\int_0^x2f(t)dt$. Enter $\\int_0^{\\ln3/2}f(x)dx$.",
+      "q": "Continuous $f$ satisfies $f (x) = 4 + \\int_0^x 2 f (t) d t$. Enter $\\int_0^{\\frac{\\ln 3}{2}} f (x) d x$.",
       "a": "$4$",
-      "s": "Differentiate: $f\\prime=2f$, $f(0)=4$, so $f=4e^{2x}$. The integral is $[2e^{2x}]_0^{\\ln3/2}=2(3-1)=4$.",
+      "s": "Differentiate: $f' = 2 f$, $f (0) = 4$, so $f = 4 e^{2 x}$. The integral is $[2 e^{2 x}]_0^{\\frac{\\ln 3}{2}} = 2 (3 - 1) = 4$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2675,9 +2153,9 @@
       "negative": 0
     },
     {
-      "q": "If $I=\\int_0^1\\frac{x^2}{\\sqrt{1+x^3}}dx$, enter $(1+3I/2)^2$.",
+      "q": "If $I = \\int_0^1 \\frac{x^2}{\\sqrt{1 + x^3}} d x$, enter $(1 + \\frac{3 I}{2})^2$.",
       "a": "$2$",
-      "s": "Substitute $u=1+x^3$, giving $I=\\frac13\\int_1^2u^{-1/2}du=\\frac23(\\sqrt2-1)$. Hence $1+3I/2=\\sqrt2$ and the square is 2.",
+      "s": "Substitute $u = 1 + x^3$, giving $I = \\frac13 \\int_1^2 u^{- \\frac{1}{2}} d u = \\frac23 (\\sqrt2 - 1)$. Hence $1 + \\frac{3 I}{2} = \\sqrt2$ and the square is 2.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2685,9 +2163,9 @@
       "negative": 0
     },
     {
-      "q": "Let $F(x)=\\int_0^x(t-1)(t-4)dt$. Enter $2[F(1)-F(4)]$.",
+      "q": "Let $F (x) = \\int_0^x (t - 1) (t - 4) d t$. Enter $2 [F (1) - F (4)]$.",
       "a": "$9$",
-      "s": "$F=x^3/3-5x^2/2+4x$. Its values are $F(1)=11/6$ and $F(4)=-8/3$. The difference is $27/6=9/2$, and doubling gives 9.",
+      "s": "$F = \\frac{x^3}{3} - \\frac{5 x^2}{2} + 4 x$. Its values are $F (1) = \\frac{11}{6}$ and $F (4) = - \\frac{8}{3}$. The difference is $\\frac{27}{6} = \\frac{9}{2}$, and doubling gives 9.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2695,9 +2173,9 @@
       "negative": 0
     },
     {
-      "q": "Let $I=\\int_0^2(x-1)^2\\{3+(x-1)^5\\}dx$. Enter $I$.",
+      "q": "Let $I = \\int_0^2 (x - 1)^2 \\{ 3 + (x - 1)^5 \\} d x$. Enter $I$.",
       "a": "$2$",
-      "s": "Put $u=x-1$, giving $\\int_{-1}^1(3u^2+u^7)du$. The odd part vanishes and $3\\int_{-1}^1u^2du=3(2/3)=2$.",
+      "s": "Put $u = x - 1$, giving $\\int_{- 1}^1 (3 u^2 + u^7) d u$. The odd part vanishes and $3 \\int_{- 1}^1 u^2 d u = 3 (\\frac{2}{3}) = 2$.",
       "opts": null,
       "marks": 4,
       "alt": null,
@@ -2705,9 +2183,9 @@
       "negative": 0
     },
     {
-      "q": "\\textbf{Common stem for Questions 15 and 16.} Let $A(x)=\\int_0^x(t^2-2t)dt$ for $0\\leq x\\leq3$. Enter the number of distinct zeros of $A$ in $[0,3]$.",
+      "q": "\\textbf{Common stem for Questions 15 and 16.} Let $A (x) = \\int_0^x (t^2 - 2 t) d t$ for $0 \\leq x \\leq 3$. Enter the number of distinct zeros of $A$ in $[0 , 3]$.",
       "a": "$2$",
-      "s": "$A(x)=x^3/3-x^2=x^2(x-3)/3$. Its distinct zeros in the interval are $0$ and $3$. The double root at zero is counted once.",
+      "s": "$A (x) = \\frac{x^3}{3} - x^2 = \\frac{x^2 (x - 3)}{3}$. Its distinct zeros in the interval are $0$ and $3$. The double root at zero is counted once.",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -2715,9 +2193,9 @@
       "negative": 0
     },
     {
-      "q": "Using the common stem for Questions 15 and 16, enter $12\\int_0^3|A(x)|dx$.",
+      "q": "Using the common stem for Questions 15 and 16, enter $12 \\int_0^3 |A (x)| d x$.",
       "a": "$27$",
-      "s": "$A(x)\\leq0$ on $[0,3]$. Thus $\\int_0^3|A|=\\int_0^3(x^2-x^3/3)dx=[x^3/3-x^4/12]_0^3=9/4$. Multiply by 12 to get 27.",
+      "s": "$A (x) \\leq 0$ on $[0 , 3]$. Thus $\\int_0^3 |A| = \\int_0^3 (x^2 - \\frac{x^3}{3}) d x = [\\frac{x^3}{3} - \\frac{x^4}{12}]_0^3 = \\frac{9}{4}$. Multiply by 12 to get 27.",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -2725,9 +2203,9 @@
       "negative": 0
     },
     {
-      "q": "\\textbf{Common stem for Questions 17 and 18.} For $a\\in\\R$ define $J(a)=\\int_0^2(x^2-a)^2dx$. If $a_0$ is the unique minimizing parameter, enter $3a_0$.",
+      "q": "\\textbf{Common stem for Questions 17 and 18.} For $a \\in \\R$ define $J (a) = \\int_0^2 (x^2 - a)^2 d x$. If $a_0$ is the unique minimizing parameter, enter $3 a_0$.",
       "a": "$4$",
-      "s": "$J(a)=32/5-16a/3+2a^2$. Hence $J\\prime=4a-16/3$, giving $a_0=4/3$. The second derivative is 4, so this is the unique global minimum; $3a_0=4$.",
+      "s": "$J (a) = \\frac{32}{5} - \\frac{16 a}{3} + 2 a^2$. Hence $J' = 4 a - \\frac{16}{3}$, giving $a_0 = \\frac{4}{3}$. The second derivative is 4, so this is the unique global minimum; $3 a_0 = 4$.",
       "opts": null,
       "marks": 2,
       "alt": null,
@@ -2735,9 +2213,9 @@
       "negative": 0
     },
     {
-      "q": "Using the common stem for Questions 17 and 18, enter $45J(a_0)$.",
+      "q": "Using the common stem for Questions 17 and 18, enter $45 J (a_0)$.",
       "a": "$128$",
-      "s": "Complete the square: $J(a)=2(a-4/3)^2+128/45$. Thus $J(a_0)=128/45$ and multiplying by 45 gives 128.",
+      "s": "Complete the square: $J (a) = 2 (a - \\frac{4}{3})^2 + \\frac{128}{45}$. Thus $J (a_0) = \\frac{128}{45}$ and multiplying by 45 gives 128.",
       "opts": null,
       "marks": 2,
       "alt": null,
