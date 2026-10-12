@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { ArrowLeft, BookOpen, CheckCircle2, Clock3, Loader2, LogOut } from 'lucide-react';
+import { getIntegralsProduct, integralsPath } from '@/lib/integrals-products';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { StudentRecordsPayload } from '@/lib/student-records';
 
@@ -34,6 +35,8 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
           <section className="student-access-section">
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
+              const pdf = getIntegralsProduct(paperId);
+              if (pdf) return <article key={paperId}><CheckCircle2/><span><strong>Integrals · {pdf.title}</strong><small>Grade 12 · PDF questions and worked solutions</small></span><a href={`${integralsPath}#${pdf.id}`}>Download paper</a></article>;
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
               const board = paper?.board ?? 'CBSE';

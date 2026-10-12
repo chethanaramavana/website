@@ -804,6 +804,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   }, [board, grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
 
   function openChapter(nextChapter: string) {
+    if (board === 'CBSE' && grade === 12 && nextChapter === 'Integrals') { window.location.assign('/cbse/grade-12/integrals'); return; }
     const paper = getPaperForChapter(board, grade, nextChapter);
     if (paper && (paper.grade ?? 10) === grade && studentRecords?.signedIn) {
       const earlierSubmission = studentRecords.submissions.find((submission) => submission.paper_id === paper.id);

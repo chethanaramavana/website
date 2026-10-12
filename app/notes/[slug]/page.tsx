@@ -16,5 +16,5 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const notes = getChapterNotes(slug);
   if (!notes) return <main className="notes-missing"><h1>Notes are being prepared.</h1><a href="/">Back to chapters</a></main>;
-  return <NotesDocument notes={notes} />;
+  return <>{slug === 'g12-integrals' && <aside style={{padding:'20px',textAlign:'center',background:'#eee7f9'}}><a href="/cbse/grade-12/integrals">Expanded Integrals notes, 50 free practice questions and CBSE / JEE papers →</a></aside>}<NotesDocument notes={notes} /></>;
 }

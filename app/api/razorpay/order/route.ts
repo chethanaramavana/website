@@ -1,3 +1,4 @@
+import { getIntegralsProduct } from '@/lib/integrals-products';
 import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
@@ -23,7 +24,7 @@ export async function POST(request: Request) {
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
     const chapter = quizChapter(paperId);
-    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     const AMOUNT_PAISE = chapter ? quizPrice(chapter) : 3000;
     const database = getDatabase();
