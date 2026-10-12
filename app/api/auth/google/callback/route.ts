@@ -10,6 +10,8 @@ import {
   readOAuthState,
   verifyGoogleIdToken,
 } from '@/lib/google-auth';
+import { recordPresence } from '@/lib/student-activity';
+import { normalizeAccountEmail } from '@/lib/identity';
 
 type GoogleTokenResponse = {
   access_token?: string;
@@ -56,6 +58,10 @@ export async function GET(request: Request) {
     }
 
     const session = await createGoogleSession({ sub: identity.sub, email: identity.email, name: identity.name });
+    try {
+      const email=normalizeAccountEmail(identity.email);
+      await recordPresence({userId:`google:${identity.sub}`,email,displayName:identity.name?.trim()||email,fullName:identity.name?.trim()||null},true);
+    } catch(error) { console.error('Sign-in activity recording failed',error); }
     const destination = new URL(storedState.returnTo, new URL(request.url).origin);
     const response = new Response(null, {
       status: 302,

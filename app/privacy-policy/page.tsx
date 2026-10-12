@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
       <article className="legal-page-card">
         <p className="legal-page-kicker">Privacy and data protection</p>
         <h1>Privacy Policy</h1>
-        <p className="legal-page-updated">Last updated: 29 September 2026</p>
+        <p className="legal-page-updated">Last updated: 12 October 2026</p>
         <p className="legal-page-intro">This policy explains what information Ramavana Mathematical Center collects through ramavanamath.com, why we use it, which service providers help us operate the website, and the choices available to students and parents.</p>
 
         <section>
@@ -32,6 +32,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Google account information:</strong> when a visitor chooses Google Login, we receive the Google account’s verified email address and a stable account identifier. We do not request access to Gmail, Google Drive, contacts or passwords.</li>
             <li><strong>Student and learning information:</strong> the student name entered for a test, selected answers, uploaded handwritten answer sheets or PDFs, test status, marks, teacher feedback, optional test-experience ratings and submission dates.</li>
             <li><strong>Purchase records:</strong> the chapter purchased, amount, Razorpay order or payment reference, payment status and date. Ramavana does not receive or store card numbers, UPI PINs, banking passwords or one-time passwords.</li>
+            <li><strong>Learning activity:</strong> sign-in times and counts, recent signed-in visits, and which free or paid tests are opened, started or submitted, with the number of questions answered. Authorised teachers can view this activity to follow participation. A recent page check-in indicates that the page is active, not that the student is necessarily answering. We do not collect keystrokes, camera recordings or activity on other websites.</li>
             <li><strong>Essential technical information:</strong> secure login and anti-forgery cookies, and limited hosting or security logs needed to deliver the website, diagnose failures and prevent misuse.</li>
           </ul>
         </section>

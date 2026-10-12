@@ -1,5 +1,6 @@
 'use client';
 import { quizPrice } from '@/lib/free-quizzes/catalog';
+import { useTestActivity } from '@/app/student-activity';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import {
@@ -1119,6 +1120,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   const clockAnchor = useRef<{ serverNowMs: number; performanceNow: number } | null>(null);
   const warnedAtFifteen = useRef(false);
   const autoSubmitStarted = useRef(false);
+  useTestActivity(paper.id,Object.keys(answers).length+Object.values(savedUploads).filter(files=>files.length>0).length,Boolean(result),Boolean(attemptId));
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
   const remainingSeconds = timing ? Math.max(0, Math.ceil((timing.workDeadlineAtMs - clockNow) / 1000)) : 90 * 60;
@@ -1472,6 +1474,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           <label>Student name <input value={studentName} onChange={(event) => setStudentName(event.target.value)} maxLength={80} placeholder="Enter your name" disabled={workLocked} /></label>
           <label>Date <span>{new Date().toLocaleDateString()}</span></label>
         </section>
+        <p className="activity-student-notice">Your teacher can see when you open, attempt and submit this test.</p>
 
         <section className={`draft-save-bar ${submissionError ? 'error' : ''}`} aria-live="polite">
           <span>{isSaving ? <Loader2 /> : <ShieldCheck />}</span>

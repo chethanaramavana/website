@@ -5,6 +5,7 @@ import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
 import SolutionSteps from '@/app/solution-steps';
+import StudentActivity from './student-activity';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
@@ -258,6 +259,7 @@ export default function TeacherReviewPage() {
         <button className={teacherView === 'papers' ? 'active' : ''} type="button" onClick={() => void openPaperLibrary()}><Pencil /> Question papers</button>
       </nav>
 
+      {teacherView === 'reviews' && <StudentActivity />}
       <section className={`payment-review-section ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`} aria-labelledby="payment-review-title">
         <header>
           <div><p>Test access</p><h2 id="payment-review-title">Payment requests</h2></div>
