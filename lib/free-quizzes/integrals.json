@@ -1,0 +1,602 @@
+[
+  {
+    "prompt": "Evaluate $\\int(7x^3-4x+9)\\dx$.",
+    "options": [
+      "$7x^4-4x^2+9+C$",
+      "$7x^4/4-2x^2+9x+C$",
+      "$21x^2-4+C$",
+      "$7x^4/4-4x^2+9x+C$"
+    ],
+    "answer": 1,
+    "solution": "Integrate each term separately. The power rule raises the exponent by one and divides by that new exponent. Thus $7(x^4/4)-4(x^2/2)+9x+C$ is the required family. Differentiation gives the original integrand.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int(5\\sqrt{x}-3/x^2)\\dx$, $x>0$.",
+    "options": [
+      "$\\frac{10}{3}x^{3/2}+3/x+C$",
+      "$10x^{3/2}/3-3/x+C$",
+      "$5x^{3/2}+3/x+C$",
+      "$5/(2\\sqrt x)+6/x^3+C$"
+    ],
+    "answer": 0,
+    "solution": "Write the integrand as $5x^{1/2}-3x^{-2}$. Its integral is $5x^{3/2}/(3/2)-3x^{-1}/(-1)+C$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Find $F$ if $F\\prime(x)=6x^2-5$ and $F(2)=7$.",
+    "options": [
+      "$2x^3-5x-1$",
+      "$2x^3-5x+7$",
+      "$6x^3-5x+1$",
+      "$F(x)=2x^3-5x+1$"
+    ],
+    "answer": 3,
+    "solution": "First $F(x)=2x^3-5x+C$. At $x=2$, $7=16-10+C$, so $C=1$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int(4\\cos 3x-5\\sin 2x)\\dx$.",
+    "options": [
+      "$4\\sin3x+5\\cos2x+C$",
+      "$4\\sin3x/3-5\\cos2x/2+C$",
+      "$\\frac43\\sin3x+\\frac52\\cos2x+C$",
+      "$12\\sin3x+10\\cos2x+C$"
+    ],
+    "answer": 2,
+    "solution": "The derivative of $\\sin3x$ is $3\\cos3x$, and that of $\\cos2x$ is $-2\\sin2x$. Divide by these inner derivatives.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int(2e^{4x}+3^x)\\dx$.",
+    "options": [
+      "$8e^{4x}+3^x\\ln3+C$",
+      "$\\frac12e^{4x}+3^x/\\ln3+C$",
+      "$e^{4x}/2+3^x\\ln3+C$",
+      "$e^{4x}/4+3^x/\\ln3+C$"
+    ],
+    "answer": 1,
+    "solution": "Use $\\int e^{ax}dx=e^{ax}/a$ and $\\int b^x dx=b^x/\\ln b$. Both denominators are necessary.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{6x}{3x^2+8}\\dx$.",
+    "options": [
+      "$\\ln(3x^2+8)+C$",
+      "$\\ln(3x^2+8)/6+C$",
+      "$3\\ln(3x^2+8)+C$",
+      "$1/(3x^2+8)+C$"
+    ],
+    "answer": 0,
+    "solution": "Put $u=3x^2+8$; then $du=6x\\,dx$. The integral becomes $\\int du/u=\\ln u+C$. Here $u>0$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int x(2x^2+5)^4\\dx$.",
+    "options": [
+      "$(2x^2+5)^5/5+C$",
+      "$(2x^2+5)^5/10+C$",
+      "$(2x^2+5)^4/16+C$",
+      "$(2x^2+5)^5/20+C$"
+    ],
+    "answer": 3,
+    "solution": "With $u=2x^2+5$, $du=4x\\,dx$. Hence the integral is $\\frac14\\int u^4du=u^5/20+C$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{\\cos x}{4+\\sin x}\\dx$.",
+    "options": [
+      "$-\\ln(4+\\sin x)+C$",
+      "$\\ln(4+\\cos x)+C$",
+      "$\\ln(4+\\sin x)+C$",
+      "$1/(4+\\sin x)+C$"
+    ],
+    "answer": 2,
+    "solution": "Choose $u=4+\\sin x$ so that $du=\\cos x\\,dx$. Since $u\\geq3$, the logarithm is defined without an absolute-value sign.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{9+4x^2}$.",
+    "options": [
+      "$\\tan^{-1}(2x/3)/3+C$",
+      "$\\frac16\\tan^{-1}(2x/3)+C$",
+      "$\\tan^{-1}(3x/2)/6+C$",
+      "$\\tan^{-1}(2x/3)/2+C$"
+    ],
+    "answer": 1,
+    "solution": "Put $u=2x/3$, so $dx=3du/2$ and the denominator is $9(1+u^2)$. This gives $\\frac16\\int du/(1+u^2)$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{\\sqrt{25-9x^2}}$, $|x|<5/3$.",
+    "options": [
+      "$\\frac13\\sin^{-1}(3x/5)+C$",
+      "$\\sin^{-1}(3x/5)+C$",
+      "$\\sin^{-1}(3x/5)/5+C$",
+      "$\\cos^{-1}(3x/5)/3+C$"
+    ],
+    "answer": 0,
+    "solution": "Let $u=3x/5$. Then $dx=5du/3$ and the root is $5\\sqrt{1-u^2}$. Integrate the inverse-sine form.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{2x+7}{x^2+7x+15}\\dx$.",
+    "options": [
+      "$\\ln(x^2+7x+15)/2+C$",
+      "$1/(x^2+7x+15)+C$",
+      "$\\tan^{-1}(x+7)+C$",
+      "$\\ln(x^2+7x+15)+C$"
+    ],
+    "answer": 3,
+    "solution": "The numerator is the derivative of the denominator. The denominator is $(x+7/2)^2+11/4>0$, so direct logarithmic substitution applies.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{x^2+6x+13}$.",
+    "options": [
+      "$2\\tan^{-1}((x+3)/2)+C$",
+      "$\\tan^{-1}((x+3)/2)+C$",
+      "$\\frac12\\tan^{-1}((x+3)/2)+C$",
+      "$\\ln(x^2+6x+13)+C$"
+    ],
+    "answer": 2,
+    "solution": "Complete the square: $x^2+6x+13=(x+3)^2+4$. Set $u=x+3$ and use the arctangent formula with $a=2$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{(x+2)(x+5)}$.",
+    "options": [
+      "$\\ln|(x+5)/(x+2)|/3+C$",
+      "$\\frac13\\ln\\left|\\frac{x+2}{x+5}\\right|+C$",
+      "$\\ln|(x+2)/(x+5)|+C$",
+      "$\\ln|(x+2)(x+5)|/3+C$"
+    ],
+    "answer": 1,
+    "solution": "Write $1/[(x+2)(x+5)]=\\frac13[1/(x+2)-1/(x+5)]$. Integrate on an interval avoiding $-2,-5$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{3x+8}{x^2+5x+6}\\dx$.",
+    "options": [
+      "$2\\ln|x+2|+\\ln|x+3|+C$",
+      "$\\ln|x+2|+2\\ln|x+3|+C$",
+      "$2\\ln|x+2|-\\ln|x+3|+C$",
+      "$\\ln|x^2+5x+6|+C$"
+    ],
+    "answer": 0,
+    "solution": "Factor the denominator. Solve $3x+8=A(x+3)+B(x+2)$ to obtain $A=2,B=1$. Integrate the two simple fractions.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{x^2+2}{x^2+4}\\dx$.",
+    "options": [
+      "$x+\\tan^{-1}(x/2)+C$",
+      "$x-2\\tan^{-1}(x/2)+C$",
+      "$x-\\tan^{-1}(2x)+C$",
+      "$x-\\tan^{-1}(x/2)+C$"
+    ],
+    "answer": 3,
+    "solution": "Division gives $1-2/(x^2+4)$. Since $\\int dx/(x^2+4)=\\frac12\\tan^{-1}(x/2)$, the result follows.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int x e^{3x}\\dx$.",
+    "options": [
+      "$xe^{3x}/3+C$",
+      "$e^{3x}(3x+1)/9+C$",
+      "$e^{3x}(3x-1)/9+C$",
+      "$e^{3x}(x-1)/3+C$"
+    ],
+    "answer": 2,
+    "solution": "Choose $u=x$, $dv=e^{3x}dx$, giving $du=dx$, $v=e^{3x}/3$. Then $uv-\\int vdu=xe^{3x}/3-e^{3x}/9+C$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int x\\sin 4x\\dx$.",
+    "options": [
+      "$-x\\cos4x/4-\\sin4x/16+C$",
+      "$-x\\cos4x/4+\\sin4x/16+C$",
+      "$x\\cos4x/4+\\sin4x/16+C$",
+      "$-x\\cos4x+\\sin4x/4+C$"
+    ],
+    "answer": 1,
+    "solution": "Integration by parts with $u=x$ and $v=-\\cos4x/4$ gives $-x\\cos4x/4+\\frac14\\int\\cos4x\\,dx$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\ln(2x)\\dx$, $x>0$.",
+    "options": [
+      "$x\\ln(2x)-x+C$",
+      "$x\\ln(2x)+x+C$",
+      "$x\\ln(2x)-2x+C$",
+      "$\\ln(2x)/x+C$"
+    ],
+    "answer": 0,
+    "solution": "Use $u=\\ln(2x)$, $dv=dx$. As $du=dx/x$, the remaining integral is $\\int1\\,dx=x$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int x^2\\ln x\\dx$, $x>0$.",
+    "options": [
+      "$x^3\\ln x/3+x^3/9+C$",
+      "$x^3\\ln x-x^3/3+C$",
+      "$x^3\\ln x/3-x^3/3+C$",
+      "$\\frac{x^3}{3}\\ln x-\\frac{x^3}{9}+C$"
+    ],
+    "answer": 3,
+    "solution": "Take $u=\\ln x$, $dv=x^2dx$. Subtract $\\frac13\\int x^2dx$ from $x^3\\ln x/3$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\sin^2(3x)\\dx$.",
+    "options": [
+      "$x/2+\\sin6x/12+C$",
+      "$x-\\sin6x/6+C$",
+      "$x/2-\\sin6x/12+C$",
+      "$x/2-\\sin3x/6+C$"
+    ],
+    "answer": 2,
+    "solution": "Use $\\sin^2(3x)=(1-\\cos6x)/2$. Integrate the constant term and cosine term separately.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\sin^3x\\cos x\\dx$.",
+    "options": [
+      "$\\sin^4x+C$",
+      "$\\sin^4x/4+C$",
+      "$-\\cos^4x/4+C$",
+      "$\\sin^3x/3+C$"
+    ],
+    "answer": 1,
+    "solution": "With $u=\\sin x$, $du=\\cos x\\,dx$, the integral is $\\int u^3du=u^4/4+C$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\sec^2x\\tan^2x\\dx$ on an interval without poles.",
+    "options": [
+      "$\\tan^3x/3+C$",
+      "$\\tan^2x/2+C$",
+      "$\\sec^3x/3+C$",
+      "$\\tan^3x+C$"
+    ],
+    "answer": 0,
+    "solution": "Put $u=\\tan x$; $du=\\sec^2x\\,dx$. Integrate $u^2$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{\\sqrt{x}+2}$, $x>0$.",
+    "options": [
+      "$2\\sqrt x-2\\ln(\\sqrt x+2)+C$",
+      "$2\\sqrt x+4\\ln(\\sqrt x+2)+C$",
+      "$\\ln(\\sqrt x+2)+C$",
+      "$2\\sqrt{x}-4\\ln(\\sqrt{x}+2)+C$"
+    ],
+    "answer": 3,
+    "solution": "Put $t=\\sqrt{x}$, $dx=2t\\,dt$. Divide: $2t/(t+2)=2-4/(t+2)$. Integrate and replace $t$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{dx}{x(3+\\ln x)^2}$, $x>0$, $x\\ne e^{-3}$.",
+    "options": [
+      "$1/(3+\\ln x)+C$",
+      "$\\ln|3+\\ln x|+C$",
+      "$-1/(3+\\ln x)+C$",
+      "$-(3+\\ln x)^{-2}+C$"
+    ],
+    "answer": 2,
+    "solution": "Set $u=3+\\ln x$, so $du=dx/x$. Then $\\int u^{-2}du=-u^{-1}+C$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int\\frac{2x+1}{\\sqrt{x^2+x+6}}\\dx$.",
+    "options": [
+      "$\\sqrt{x^2+x+6}+C$",
+      "$2\\sqrt{x^2+x+6}+C$",
+      "$\\ln(x^2+x+6)+C$",
+      "$2(x^2+x+6)^{3/2}/3+C$"
+    ],
+    "answer": 1,
+    "solution": "Set $u=x^2+x+6$, $du=(2x+1)dx$. Integrating $u^{-1/2}$ gives $2\\sqrt u$.",
+    "topic": "Antiderivatives"
+  },
+  {
+    "prompt": "Evaluate $\\int_{-1}^{2}(3x^2+2)\\dx$.",
+    "options": [
+      "$15$",
+      "$12$",
+      "$18$",
+      "$21$"
+    ],
+    "answer": 0,
+    "solution": "An antiderivative is $x^3+2x$. Subtract its value $-3$ at $-1$ from its value $12$ at $2$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^2\\frac{x}{x^2+5}\\dx$.",
+    "options": [
+      "$\\ln(9/5)$",
+      "$\\tfrac12\\ln(5/9)$",
+      "$\\ln(3/5)$",
+      "$\\frac12\\ln(9/5)$"
+    ],
+    "answer": 3,
+    "solution": "Put $u=x^2+5$. The limits become $5,9$ and the integral becomes $\\frac12\\int_5^9du/u$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^{\\pi/6}\\sin3x\\dx$.",
+    "options": [
+      "$1/2$",
+      "$2/3$",
+      "$1/3$",
+      "$1/6$"
+    ],
+    "answer": 2,
+    "solution": "An antiderivative is $-\\cos3x/3$. Its endpoint difference is $0-(-1/3)$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_1^3\\frac{dx}{(x+1)^2}$.",
+    "options": [
+      "$1/2$",
+      "$1/4$",
+      "$1/8$",
+      "$3/4$"
+    ],
+    "answer": 1,
+    "solution": "Use $-1/(x+1)$. The difference is $-1/4+1/2=1/4$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_{-2}^{2}\\frac{x^5}{3+x^2}\\dx$.",
+    "options": [
+      "$0$",
+      "$1$",
+      "$-1$",
+      "$2$"
+    ],
+    "answer": 0,
+    "solution": "The numerator is odd and the denominator is even and positive. Therefore the integrand is continuous and odd, so its integral on the symmetric interval vanishes.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_{-2}^{2}(x^4+3x^2)\\dx$.",
+    "options": [
+      "$72/5$",
+      "$144$",
+      "$36/5$",
+      "$144/5$"
+    ],
+    "answer": 3,
+    "solution": "The integrand is even. Twice the integral from $0$ to $2$ is $2[x^5/5+x^3]_0^2=2(32/5+8)=144/5$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^5\\frac{(x+1)^2}{(x+1)^2+(6-x)^2}\\dx$.",
+    "options": [
+      "$5$",
+      "$-5/2$",
+      "$5/2$",
+      "$1/2$"
+    ],
+    "answer": 2,
+    "solution": "Call the integral $I$ and replace $x$ by $5-x$. The reflected numerator is $(6-x)^2$. Adding the two forms gives $2I=\\int_0^5 1\\,dx=5$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^3|2x-1|\\dx$.",
+    "options": [
+      "$9/2$",
+      "$13/2$",
+      "$11/2$",
+      "$15/2$"
+    ],
+    "answer": 1,
+    "solution": "The sign changes at $x=1/2$. Hence $I=\\int_0^{1/2}(1-2x)dx+\\int_{1/2}^{3}(2x-1)dx=1/4+25/4=13/2$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "For $f(x)=x+2$ on $[0,1]$ and $f(x)=4-x$ on $(1,3]$, find $\\int_0^3 f(x)\\dx$.",
+    "options": [
+      "$13/2$",
+      "$5/2$",
+      "$9/2$",
+      "$15/2$"
+    ],
+    "answer": 0,
+    "solution": "Split at $1$. The first part is $[x^2/2+2x]_0^1=5/2$. The second is $[4x-x^2/2]_1^3=4$. Add them.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^{5/2}\\lfloor2x\\rfloor\\dx$.",
+    "options": [
+      "$4$",
+      "$6$",
+      "$7$",
+      "$5$"
+    ],
+    "answer": 3,
+    "solution": "On the five intervals $[k/2,(k+1)/2)$ the value is $k$, for $k=0,1,2,3,4$. Sum the rectangle areas: $(0+1+2+3+4)/2=5$. Endpoint values do not alter the integral.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^1 x\\ln(1+x^2)\\dx$.",
+    "options": [
+      "$\\ln2+1/2$",
+      "$1-\\ln2$",
+      "$\\ln2-1/2$",
+      "$\\ln2$"
+    ],
+    "answer": 2,
+    "solution": "Put $u=1+x^2$. Then $I=\\frac12\\int_1^2\\ln u\\,du=\\frac12[u\\ln u-u]_1^2=\\ln2-1/2$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^2 x e^{2x}\\dx$.",
+    "options": [
+      "$(3e^4-1)/4$",
+      "$(3e^4+1)/4$",
+      "$(e^4+1)/4$",
+      "$e^4-1$"
+    ],
+    "answer": 1,
+    "solution": "Parts gives $e^{2x}(2x-1)/4$. At the endpoints the values are $3e^4/4$ and $-1/4$. Subtract.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^{\\pi/2}\\frac{\\sin x\\cos x}{2+\\sin^2x}\\dx$.",
+    "options": [
+      "$\\frac12\\ln(3/2)$",
+      "$\\ln(3/2)$",
+      "$\\tfrac12\\ln(2/3)$",
+      "$\\ln3/2$"
+    ],
+    "answer": 0,
+    "solution": "Let $u=2+\\sin^2x$, $du=2\\sin x\\cos x\\,dx$. The transformed bounds are $2,3$.",
+    "topic": "Definite integrals"
+  },
+  {
+    "prompt": "Find $G\\prime(x)$ for $G(x)=\\int_1^{x^2}(1+t^4)\\dt$.",
+    "options": [
+      "$1+x^8$",
+      "$2x(1+x^4)$",
+      "$8x^7$",
+      "$2x(1+x^8)$"
+    ],
+    "answer": 3,
+    "solution": "The fundamental theorem gives the integrand at the upper limit, multiplied by the derivative of that limit. Thus $G\\prime(x)=(1+(x^2)^4)(2x)$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Find $H\\prime(x)$ for $H(x)=\\int_x^{3x}\\frac{dt}{1+t^2}$.",
+    "options": [
+      "$1/(1+9x^2)-1/(1+x^2)$",
+      "$3/(1+3x^2)-1/(1+x^2)$",
+      "$\\frac3{1+9x^2}-\\frac1{1+x^2}$",
+      "$3/(1+9x^2)+1/(1+x^2)$"
+    ],
+    "answer": 2,
+    "solution": "The upper endpoint contributes $3/(1+9x^2)$. Subtract the lower endpoint contribution $1/(1+x^2)$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Evaluate $\\lim_{n\\to\\infty}\\frac1n\\sum_{r=1}^n\\frac1{3+r/n}$.",
+    "options": [
+      "$\\ln(3/4)$",
+      "$\\ln(4/3)$",
+      "$\\ln(4/3)/2$",
+      "$1/3$"
+    ],
+    "answer": 1,
+    "solution": "This is a right-endpoint Riemann sum on $[0,1]$ for $f(x)=1/(3+x)$. The limit is $\\int_0^1dx/(3+x)=[\\ln(3+x)]_0^1$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Evaluate $\\lim_{n\\to\\infty}\\sum_{r=1}^n\\frac{r^2}{n^3+nr^2}$.",
+    "options": [
+      "$1-\\pi/4$",
+      "$\\pi/4-1$",
+      "$1+\\pi/4$",
+      "$1-\\pi/2$"
+    ],
+    "answer": 0,
+    "solution": "Each term equals $\\frac1n\\frac{(r/n)^2}{1+(r/n)^2}$. Integrate $x^2/(1+x^2)=1-1/(1+x^2)$ from $0$ to $1$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Find $c$ such that $\\int_0^3(x-c)(x+1)\\dx=0$.",
+    "options": [
+      "$3/5$",
+      "$6/5$",
+      "$12/5$",
+      "$9/5$"
+    ],
+    "answer": 3,
+    "solution": "Expand and integrate: $\\int_0^3(x^2+x)dx=27/2$ and $\\int_0^3(x+1)dx=15/2$. Thus $27/2-c(15/2)=0$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Find the minimum of $J(a)=\\int_{-1}^{2}(x-a)^2\\dx$ over real $a$.",
+    "options": [
+      "Minimum $9/4$ at $a=-1/2$",
+      "Minimum $5/2$ at $a=1/2$",
+      "Minimum $9/4$ at $a=1/2$",
+      "Maximum $9/4$ at $a=1/2$"
+    ],
+    "answer": 2,
+    "solution": "Integration gives $J(a)=3a^2-3a+3=3(a-1/2)^2+9/4$. A square is nonnegative, establishing both the minimum and its unique location.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^1\\frac{x^3}{1+x^2}\\dx$.",
+    "options": [
+      "$(1+\\ln2)/2$",
+      "$(1-\\ln2)/2$",
+      "$1-\\ln2$",
+      "$\\ln2/2$"
+    ],
+    "answer": 1,
+    "solution": "Divide $x^3/(1+x^2)=x-x/(1+x^2)$. The first integral is $1/2$ and the second is $\\frac12\\ln2$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Evaluate $\\int_0^{\\pi/2}\\frac{dx}{9\\cos^2x+4\\sin^2x}$.",
+    "options": [
+      "$\\pi/12$",
+      "$\\pi/6$",
+      "$\\pi/24$",
+      "$\\pi/8$"
+    ],
+    "answer": 0,
+    "solution": "Use $t=\\tan x$ for $x<\\pi/2$ and take the limit as $t\\to\\infty$. The integral is $\\int_0^\\infty dt/(9+4t^2)=[\\frac16\\tan^{-1}(2t/3)]_0^\\infty=\\pi/12$. The original integrand is continuous at the endpoint.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Let $I_n=\\int_0^1 x^n(1-x)^3\\dx$ for integers $n\\geq0$. Find $I_n$.",
+    "options": [
+      "$2/[(n+1)(n+2)(n+3)]$",
+      "$6/[(n+1)(n+2)(n+3)]$",
+      "$1/(n+4)$",
+      "$\\frac6{(n+1)(n+2)(n+3)(n+4)}$"
+    ],
+    "answer": 3,
+    "solution": "Integrate by parts with $dv=x^n dx$ and $u=(1-x)^3$. The endpoint product vanishes, giving $I_n=\\frac3{n+1}\\int_0^1x^{n+1}(1-x)^2dx$. Repeat twice, then use $\\int_0^1x^{n+3}dx=1/(n+4)$.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Let $f(x)=3+\\int_0^x2tf(t)\\,dt$. Find $\\int_0^1xf(x)\\,dx$.",
+    "options": [
+      "$3(e-1)$",
+      "$3(e+1)/2$",
+      "$3(e-1)/2$",
+      "$(e-1)/2$"
+    ],
+    "answer": 2,
+    "solution": "Differentiate to get $f\\prime=2xf$ with $f(0)=3$. Equivalently $(e^{-x^2}f(x))\\prime=0$, so $f(x)=3e^{x^2}$. Substitute $u=x^2$ in the requested integral.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "For $I=\\int_0^1 dx/(x^4+5)$, which strict bound is valid?",
+    "options": [
+      "$0<I<1/6$",
+      "$1/6<I<1/5$",
+      "$1/5<I<1/4$",
+      "$1/4<I<1/3$"
+    ],
+    "answer": 1,
+    "solution": "For $0<x<1$, $5<5+x^4<6$, so $1/6<1/(5+x^4)<1/5$. Integrate over the unit interval. The inequalities are strict on an interval of positive length, so equality is impossible.",
+    "topic": "Deeper applications"
+  },
+  {
+    "prompt": "Let $F(x)=\\int_0^x(t-1)(t-3)\\dt$. Find its stationary points and classify them.",
+    "options": [
+      "Local maximum at $1$, local minimum at $3$",
+      "Local minimum at $1$, local maximum at $3$",
+      "Local maxima at both $1$ and $3$",
+      "No local extrema"
+    ],
+    "answer": 0,
+    "solution": "$F\\prime(x)=(x-1)(x-3)$ is positive for $x<1$, negative for $1<x<3$, and positive for $x>3$. The two sign changes give the classification. Integration gives $F=x^3/3-2x^2+3x$, so the stationary values are $4/3$ and $0$.",
+    "topic": "Deeper applications"
+  }
+]

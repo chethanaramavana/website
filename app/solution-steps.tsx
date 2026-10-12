@@ -2,6 +2,7 @@ import MathText from '@/app/notes/math-text';
 
 /** Preserve the complete authored solution, including every subpart. */
 export function splitSolutionSteps(solution: string) {
+  if(solution.includes("$")) return solution.trim().split(/\n+/).filter(Boolean);
   return solution.trim()
     .split(/\n+|;\s*|(?<=[.!?])\s+(?=[A-Z(])|\s+(?=\([a-z]\)\s)/)
     .map((step) => step.trim())

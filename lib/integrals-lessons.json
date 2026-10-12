@@ -1,0 +1,738 @@
+[
+  {
+    "title": "Integration begins with a derivative",
+    "lead": "Look for the function whose rate of change you have been given.",
+    "ideas": [
+      "If $F\\prime(x)=f(x)$, then $F$ is an antiderivative of $f$. For instance, $x^3$, $x^3+4$ and $x^3-9$ all have derivative $3x^2$. An indefinite integral records this whole family: $$\\int f(x)\\,dx=F(x)+C.$$ The constant is determined only when an extra value is given.",
+      "An integral with limits is different: $\\int_a^b f(x)\\,dx$ is accumulated signed change. If a rate is below zero, its contribution is negative. A definite integral is a number; an indefinite integral is a family of functions.",
+      "Linearity is useful: $\\int(af+bg)=a\\int f+b\\int g$. Integration does not distribute over products or quotients. Choose a method after simplifying the integrand."
+    ],
+    "examples": [
+      {
+        "title": "Recover a quantity",
+        "question": "$F\\prime(x)=9x^2-4$ and $F(1)=8$. Find $F(x)$.",
+        "steps": [
+          "Integrate term by term: $F(x)=3x^3-4x+C$.",
+          "Use the given value: $8=3-4+C$, so $C=9$.",
+          "Therefore $F(x)=3x^3-4x+9$. Differentiate and substitute $x=1$ to check both conditions."
+        ]
+      },
+      {
+        "title": "Why the interval matters",
+        "question": "Find $\\int 1/x\\,dx$.",
+        "steps": [
+          "The derivative of $\\ln|x|$ is $1/x$ for $x\\ne0$.",
+          "The answer is $\\ln|x|+C$ on an interval avoiding zero. Constants on $(-\\infty,0)$ and $(0,\\infty)$ may be different.",
+          "You cannot apply the ordinary fundamental theorem across the pole at zero."
+        ]
+      }
+    ],
+    "trap": "Do not write $\\int_a^b f=F(b)+C$. The same constant cancels from $F(b)-F(a)$.",
+    "check": "If $G\\prime(x)=4x-3$ and $G(2)=1$, find $G(0)$.",
+    "answer": "$G=2x^2-3x+C$. At $2$, $1=2+C$, so $G(0)=C=-1$.",
+    "visual": null
+  },
+  {
+    "title": "Build a reliable formula bank",
+    "lead": "Every standard integral is a differentiation rule read backwards.",
+    "ideas": [
+      "For $n\\ne-1$, $\\int x^n\\,dx=x^{n+1}/(n+1)+C$. For $n=-1$, use $\\ln|x|+C$. Also $\\int e^{ax}dx=e^{ax}/a+C$ for $a\\ne0$, and $\\int b^xdx=b^x/\\ln b+C$ for $b>0$, $b\\ne1$.",
+      "$$\\begin{aligned}\\int\\sin x\\,dx&=-\\cos x+C&\\int\\cos x\\,dx&=\\sin x+C\\\\\\int\\sec^2x\\,dx&=\\tan x+C&\\int\\csc^2x\\,dx&=-\\cot x+C\\\\\\int\\sec x\\tan x\\,dx&=\\sec x+C&\\int\\csc x\\cot x\\,dx&=-\\csc x+C\\end{aligned}$$",
+      "$$\\begin{aligned}\\int\\tan x\\,dx&=-\\ln|\\cos x|+C\\\\\\int\\cot x\\,dx&=\\ln|\\sin x|+C\\\\\\int\\sec x\\,dx&=\\ln|\\sec x+\\tan x|+C\\\\\\int\\csc x\\,dx&=\\ln|\\csc x-\\cot x|+C\\end{aligned}$$ Work on an interval without a pole. For a linear inner expression $ax+b$, divide the antiderivative by $a$.",
+      "For $a>0$: $$\\int\\frac{dx}{a^2+x^2}=\\frac1a\\tan^{-1}\\frac xa+C,\\qquad \\int\\frac{dx}{\\sqrt{a^2-x^2}}=\\sin^{-1}\\frac xa+C.$$ The second formula needs $|x|<a$ for its derivative to be finite."
+    ],
+    "examples": [
+      {
+        "title": "Rewrite before applying a rule",
+        "question": "Evaluate $\\int(6\\sqrt{x}+5/x^2-2/x)\\,dx$, $x>0$.",
+        "steps": [
+          "Write $6x^{1/2}+5x^{-2}-2x^{-1}$.",
+          "The three integrals are $4x^{3/2}$, $-5/x$ and $-2\\ln x$.",
+          "Combine them: $4x^{3/2}-5/x-2\\ln x+C$."
+        ]
+      },
+      {
+        "title": "Scale an inverse-trigonometric form",
+        "question": "Evaluate $\\int dx/(16+9x^2)$.",
+        "steps": [
+          "Put $u=3x/4$, so $dx=4du/3$ and the denominator is $16(1+u^2)$.",
+          "The integral becomes $\\frac1{12}\\int du/(1+u^2)$.",
+          "Answer: $\\frac1{12}\\tan^{-1}(3x/4)+C$."
+        ]
+      }
+    ],
+    "trap": "The coefficient in $\\int dx/(a^2+x^2)$ is $1/a$, not $1/a^2$.",
+    "check": "Evaluate $\\int(3e^{2x}+\\cos5x)\\,dx$.",
+    "answer": "$\\frac32e^{2x}+\\frac15\\sin5x+C$.",
+    "visual": null
+  },
+  {
+    "title": "Substitution: recognise the inner derivative",
+    "lead": "A good substitution removes complexity from both the expression and its differential.",
+    "ideas": [
+      "The chain rule says $\\frac{d}{dx}F(g(x))=F\\prime(g(x))g\\prime(x)$. Reverse it: $$\\int f(g(x))g\\prime(x)\\,dx=\\int f(u)\\,du,\\qquad u=g(x).$$ Write $du$ explicitly. If only a constant factor is missing, compensate for that factor outside the integral.",
+      "Three useful signals are $f\\prime/f$, $f\\prime\\,f^n$ and $f\\prime/\\sqrt{f}$. They lead to $\\ln|f|$, $f^{n+1}/(n+1)$ and $2\\sqrt f$, respectively. The first formula requires $f\\ne0$.",
+      "For a definite integral, change the bounds at the same time. You may keep the new variable throughout; there is no need to substitute back before evaluating."
+    ],
+    "examples": [
+      {
+        "title": "A derivative hidden in the numerator",
+        "question": "Evaluate $\\int(4x+3)/(2x^2+3x+7)\\,dx$.",
+        "steps": [
+          "The numerator is exactly the derivative of $u=2x^2+3x+7$.",
+          "Thus $I=\\int du/u=\\ln u+C$.",
+          "Since $2x^2+3x+7>0$, the answer is $\\ln(2x^2+3x+7)+C$."
+        ]
+      },
+      {
+        "title": "Change the limits too",
+        "question": "Evaluate $\\int_0^2 x\\sqrt{3x^2+1}\\,dx$.",
+        "steps": [
+          "Put $u=3x^2+1$, so $du=6x\\,dx$. The bounds become $1$ and $13$.",
+          "$I=\\frac16\\int_1^{13}u^{1/2}du=\\frac19[u^{3/2}]_1^{13}$.",
+          "Answer: $(13\\sqrt{13}-1)/9$."
+        ]
+      }
+    ],
+    "trap": "After changing to $u$, do not use the old $x$-bounds on an antiderivative in $u$.",
+    "check": "Evaluate $\\int_0^1 2x/(5+x^2)^2\\,dx$.",
+    "answer": "Use $u=5+x^2$: $[-1/u]_5^6=1/30$.",
+    "visual": null
+  },
+  {
+    "title": "Rational functions: divide, factor, decompose",
+    "lead": "The denominator tells you which simpler fractions are possible.",
+    "ideas": [
+      "If the numerator degree is at least the denominator degree, divide first. For distinct linear factors use $A/(x-a)+B/(x-b)$. A repeated factor $(x-a)^m$ needs every power from $1$ to $m$. An irreducible quadratic needs a linear numerator.",
+      "After clearing denominators, compare coefficients or substitute convenient values. For a quadratic denominator, try writing the numerator as a multiple of its derivative plus a constant; complete the square for the leftover part."
+    ],
+    "examples": [
+      {
+        "title": "Repeated factors",
+        "question": "Evaluate $\\int(2x+5)/[(x+1)^2(x+3)]\\,dx$.",
+        "steps": [
+          "Write the fraction as $A/(x+1)+B/(x+1)^2+D/(x+3)$.",
+          "At $x=-1$, $3=2B$, so $B=3/2$. At $x=-3$, $-1=4D$, so $D=-1/4$. Comparing $x^2$ gives $A=1/4$.",
+          "Integrate: $\\frac14\\ln|x+1|-\\frac{3}{2(x+1)}-\\frac14\\ln|x+3|+C$."
+        ]
+      },
+      {
+        "title": "A quadratic that does not factor over the reals",
+        "question": "Evaluate $\\int(3x+8)/(x^2+4x+8)\\,dx$.",
+        "steps": [
+          "Split the numerator: $3x+8=\\frac32(2x+4)+2$.",
+          "The derivative part integrates to $\\frac32\\ln(x^2+4x+8)$.",
+          "The remainder is $2\\int dx/[(x+2)^2+4]=\\tan^{-1}((x+2)/2)$. Add $C$."
+        ]
+      }
+    ],
+    "trap": "For $(x+1)^2$, writing only $A/(x+1)^2$ loses a necessary term.",
+    "check": "Evaluate $\\int(x^2+3)/(x^2+1)\\,dx$.",
+    "answer": "Divide to get $1+2/(x^2+1)$. The result is $x+2\\tan^{-1}x+C$.",
+    "visual": null
+  },
+  {
+    "title": "Integration by parts: make the next integral easier",
+    "lead": "Choose the factor that becomes simpler when differentiated.",
+    "ideas": [
+      "From $(uv)\\prime=u\\prime v+uv\\prime$, $$\\int u\\,dv=uv-\\int v\\,du.$$ Choose a differentiable $u$ and a $dv$ you can actually integrate. A memory aid about the order of functions is only a starting point; judge the integral that remains.",
+      "For powers of $x$ multiplied by an exponential or sine/cosine, repeat parts until the polynomial disappears. Some integrals return to the original integral; collect those terms algebraically."
+    ],
+    "examples": [
+      {
+        "title": "Two rounds of parts",
+        "question": "Evaluate $\\int x^2e^{2x}\\,dx$.",
+        "steps": [
+          "With $u=x^2$, $dv=e^{2x}dx$, obtain $I=x^2e^{2x}/2-\\int xe^{2x}dx$.",
+          "For $J=\\int xe^{2x}dx$, parts gives $J=xe^{2x}/2-e^{2x}/4$.",
+          "Therefore $I=e^{2x}(x^2/2-x/2+1/4)+C$."
+        ]
+      },
+      {
+        "title": "When the original integral returns",
+        "question": "Evaluate $I=\\int e^x\\cos2x\\,dx$.",
+        "steps": [
+          "Integrate $e^x$ and differentiate $\\cos2x$: $I=e^x\\cos2x+2J$, where $J=\\int e^x\\sin2x\\,dx$.",
+          "In the same way $J=e^x\\sin2x-2I$.",
+          "Substitution gives $5I=e^x(\\cos2x+2\\sin2x)$. Thus $I=e^x(\\cos2x+2\\sin2x)/5+C$."
+        ]
+      }
+    ],
+    "trap": "The minus sign in $uv-\\int v\\,du$ is essential; a negative derivative can then turn that subtraction into addition.",
+    "check": "Evaluate $\\int_1^e x\\ln x\\,dx$.",
+    "answer": "Parts gives $[x^2\\ln x/2-x^2/4]_1^e=(e^2+1)/4$.",
+    "visual": null
+  },
+  {
+    "title": "Trigonometric powers and rationalisation",
+    "lead": "Use identities to create a substitution, rather than expanding blindly.",
+    "ideas": [
+      "For $\\sin^m x\\cos^n x$, save a cosine factor if $n$ is odd and use $u=\\sin x$; save a sine factor if $m$ is odd and use $u=\\cos x$. If both powers are even, half-angle identities reduce them.",
+      "For a rational expression in $\\sin x$ and $\\cos x$, $t=\\tan(x/2)$ gives $\\sin x=2t/(1+t^2)$, $\\cos x=(1-t^2)/(1+t^2)$ and $dx=2dt/(1+t^2)$. It is a general method, but a simpler substitution should be preferred when available.",
+      "In a definite integral, split the interval if the chosen tangent substitution has a pole inside it. Algebraic cancellation must not hide a discontinuity."
+    ],
+    "examples": [
+      {
+        "title": "Odd cosine power",
+        "question": "Evaluate $\\int\\sin^4x\\cos^3x\\,dx$.",
+        "steps": [
+          "Save $\\cos x\\,dx$ and write $\\cos^2x=1-\\sin^2x$.",
+          "With $u=\\sin x$, integrate $u^4(1-u^2)$.",
+          "Answer: $\\sin^5x/5-\\sin^7x/7+C$."
+        ]
+      },
+      {
+        "title": "A half-angle substitution",
+        "question": "Evaluate $\\int_0^{\\pi/2}dx/(2+\\sin x)$.",
+        "steps": [
+          "Put $t=\\tan(x/2)$; $t$ goes from $0$ to $1$. The transformed integrand is $dt/(t^2+t+1)$.",
+          "Complete the square: $t^2+t+1=(t+1/2)^2+3/4$.",
+          "$I=\\frac2{\\sqrt3}[\\tan^{-1}((2t+1)/\\sqrt3)]_0^1=\\pi/(3\\sqrt3)$."
+        ]
+      }
+    ],
+    "trap": "An identity such as $\\sqrt{\\cos^2x}=\\cos x$ is false when $\\cos x<0$; the root is $|\\cos x|$.",
+    "check": "Evaluate $\\int\\sin^2(2x)\\,dx$.",
+    "answer": "Use $(1-\\cos4x)/2$: $x/2-\\sin4x/8+C$.",
+    "visual": null
+  },
+  {
+    "title": "Radicals and standard algebraic forms",
+    "lead": "Choose a substitution that turns the root into a familiar identity.",
+    "ideas": [
+      "For $\\sqrt{a^2-x^2}$, use $x=a\\sin\\theta$ with a range where $\\cos\\theta\\ge0$. For $\\sqrt{x^2+a^2}$, use $x=a\\tan\\theta$. For $\\sqrt{x^2-a^2}$, a secant substitution works on a suitable interval.",
+      "Useful results, for $a>0$, are $$\\int\\frac{dx}{\\sqrt{x^2+a^2}}=\\ln|x+\\sqrt{x^2+a^2}|+C,$$ $$\\int\\frac{dx}{\\sqrt{x^2-a^2}}=\\ln|x+\\sqrt{x^2-a^2}|+C,$$ and $$\\int\\frac{dx}{x^2-a^2}=\\frac1{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C.$$ Respect the real domain and avoid the poles.",
+      "Completing the square connects a general quadratic radical to these forms. For a numerator $px+q$, separate a multiple of the derivative of the quadratic before making a more elaborate substitution."
+    ],
+    "examples": [
+      {
+        "title": "Derive the semicircle antiderivative",
+        "question": "Evaluate $\\int\\sqrt{9-x^2}\\,dx$, $|x|<3$.",
+        "steps": [
+          "Set $x=3\\sin\\theta$, $-\\pi/2<\\theta<\\pi/2$. Then $dx=3\\cos\\theta d\\theta$ and the root is $3\\cos\\theta$.",
+          "Integrate $9\\cos^2\\theta=\\frac92(1+\\cos2\\theta)$.",
+          "Return to $x$: $\\frac x2\\sqrt{9-x^2}+\\frac92\\sin^{-1}(x/3)+C$."
+        ]
+      },
+      {
+        "title": "A root made linear",
+        "question": "Evaluate $\\int dx/(\\sqrt{x}+3)$, $x>0$.",
+        "steps": [
+          "Put $t=\\sqrt{x}$, so $dx=2t\\,dt$.",
+          "Division gives $2t/(t+3)=2-6/(t+3)$.",
+          "Integrate and substitute back: $2\\sqrt{x}-6\\ln(\\sqrt{x}+3)+C$."
+        ]
+      }
+    ],
+    "trap": "Carry the transformed $dx$ through the substitution; replacing just the radical is not enough.",
+    "check": "Evaluate $\\int dx/\\sqrt{16-(x+2)^2}$.",
+    "answer": "With $u=x+2$, the answer is $\\sin^{-1}((x+2)/4)+C$, for $|x+2|<4$.",
+    "visual": null
+  },
+  {
+    "title": "Definite integrals: accumulation and the fundamental theorem",
+    "lead": "The area picture explains both the signs and the endpoint subtraction.",
+    "ideas": [
+      "For continuous $f$, let $A(x)=\\int_a^x f(t)dt$. A small increase $h$ adds a thin strip with approximate signed area $f(x)h$. Taking the limit gives $A\\prime(x)=f(x)$.",
+      "If $F\\prime=f$, then $A-F$ has derivative zero; evaluate at $a$ to obtain $$\\int_a^b f(x)dx=F(b)-F(a).$$ Also $\\int_a^b f=-\\int_b^a f$ and $\\int_a^b f+\\int_b^c f=\\int_a^c f$.",
+      "Geometric area uses $\\int_a^b|f(x)|dx$. Signed accumulation uses $\\int_a^b f(x)dx$. These agree only when the integrand is nonnegative throughout the interval."
+    ],
+    "examples": [
+      {
+        "title": "A zero integral can hide nonzero area",
+        "question": "Compare $\\int_0^2(x-1)dx$ with $\\int_0^2|x-1|dx$.",
+        "steps": [
+          "The first is $[x^2/2-x]_0^2=0$. The negative and positive triangles cancel.",
+          "The second is $\\int_0^1(1-x)dx+\\int_1^2(x-1)dx=1/2+1/2=1$.",
+          "Zero accumulated change does not mean that nothing happened."
+        ]
+      },
+      {
+        "title": "Do not integrate through a pole",
+        "question": "Why is $[-1/x]_{-1}^1=-2$ not the value of $\\int_{-1}^1 dx/x^2$?",
+        "steps": [
+          "The integrand is undefined at zero, so the interval must be split there.",
+          "$\\int_\\varepsilon^1 x^{-2}dx=1/\\varepsilon-1\\to+\\infty$. The left part also diverges.",
+          "The improper integral does not converge. Endpoint subtraction across the pole was invalid."
+        ]
+      }
+    ],
+    "trap": "Continuity is a sufficient hypothesis for the form of the fundamental theorem used here. Check it before using the formula mechanically.",
+    "check": "If $A(x)=\\int_2^x(t^2+1)dt$, find $A(2)$ and $A\\prime(2)$.",
+    "answer": "$A(2)=0$ because its bounds coincide; $A\\prime(2)=2^2+1=5$.",
+    "visual": "area"
+  },
+  {
+    "title": "Reflection: make two difficult integrands add to something simple",
+    "lead": "Before searching for an antiderivative, compare the integrand with its mirror image.",
+    "ideas": [
+      "The substitution $x=a+b-t$ proves $$\\int_a^b f(x)dx=\\int_a^b f(a+b-x)dx.$$ The reversed limits and negative differential cancel. If the sum of the two integrands simplifies, add the two expressions for the same integral.",
+      "On $[0,a]$, if $f(a-x)=f(x)$, then $$\\int_0^a xf(x)dx=\\frac a2\\int_0^a f(x)dx.$$ Proof: reflection changes $x$ to $a-x$ while leaving $f$ unchanged; add the two forms. More generally, split any weight into a symmetric part and an antisymmetric part about $a/2$.",
+      "A common pattern is $h(x)/[h(x)+h(a-x)]$ with a nonzero denominator: its integral is $a/2$. For sine and cosine on $[0,\\pi/2]$, reflection interchanges the two functions."
+    ],
+    "examples": [
+      {
+        "title": "A high power that does not need expansion",
+        "question": "Evaluate $I=\\int_0^4 (x+2)^5/[(x+2)^5+(6-x)^5]\\,dx$.",
+        "steps": [
+          "Replace $x$ by $4-x$. The numerator becomes $(6-x)^5$ and the denominator stays unchanged.",
+          "Adding gives $2I=\\int_0^4 1\\,dx=4$.",
+          "So $I=2$. Positivity of both fifth powers on this interval ensures the denominator never vanishes."
+        ]
+      },
+      {
+        "title": "A symmetric weight",
+        "question": "Evaluate $\\int_0^3 x[(x-3/2)^4+2]dx$.",
+        "steps": [
+          "The bracket $f(x)$ satisfies $f(3-x)=f(x)$, so $I=\\frac32\\int_0^3f(x)dx$.",
+          "With $u=x-3/2$, $\\int_0^3f=2\\int_0^{3/2}(u^4+2)du=243/80+6=723/80$.",
+          "Therefore $I=2169/160$."
+        ]
+      }
+    ],
+    "trap": "The weighted midpoint identity needs symmetry of $f$; it is not true for every integrand.",
+    "check": "Evaluate $\\int_0^{\\pi/2}\\sin^6x/(\\sin^6x+\\cos^6x)dx$.",
+    "answer": "Reflection interchanges numerator terms, giving twice the integral as $\\pi/2$. Answer: $\\pi/4$.",
+    "visual": "reflection"
+  },
+  {
+    "title": "Parity, periodicity and weighted periods",
+    "lead": "Translate the interval when the symmetry is not centred at zero.",
+    "ideas": [
+      "If $f(-x)=-f(x)$, an integrable odd function has zero integral over $[-a,a]$. If $f(-x)=f(x)$, the integral is twice its value over $[0,a]$. A shift $u=x-c$ reveals symmetry about $x=c$.",
+      "For an integrable function of period $T$, every interval of length $T$ has the same integral, and $\\int_0^{nT}f=n\\int_0^T f$. Split the interval into complete periods and a remainder.",
+      "For a weighted periodic integral, let $A=\\int_0^T f(t)dt$ and $B=\\int_0^T tf(t)dt$. In the $k$th period use $x=t+kT$. Summing gives $$\\int_0^{nT}xf(x)dx=nB+\\frac{Tn(n-1)}2A.$$ The weight itself is not periodic."
+    ],
+    "examples": [
+      {
+        "title": "Oddness hidden by a shift",
+        "question": "Evaluate $\\int_1^5 (x-3)^3/[1+(x-3)^2]dx$.",
+        "steps": [
+          "Put $u=x-3$; the bounds are $-2$ and $2$.",
+          "$u^3/(1+u^2)$ is continuous and odd.",
+          "The integral is $0$, without finding an antiderivative."
+        ]
+      },
+      {
+        "title": "Weighted repeating arches",
+        "question": "Evaluate $\\int_0^{3\\pi}x|\\sin x|dx$.",
+        "steps": [
+          "$|\\sin x|$ has period $T=\\pi$. On one period, $A=\\int_0^\\pi\\sin xdx=2$.",
+          "Reflection or parts gives $B=\\int_0^\\pi x\\sin xdx=\\pi$.",
+          "For $n=3$, the formula gives $3\\pi+\\pi(3)(2)(2)/2=9\\pi$."
+        ]
+      }
+    ],
+    "trap": "An odd function with a nonintegrable singularity does not automatically have an integral of zero.",
+    "check": "Evaluate $\\int_0^{4\\pi}|\\cos x|dx$.",
+    "answer": "The period is $\\pi$ and one-period integral is $2$. Thus the answer is $8$.",
+    "visual": null
+  },
+  {
+    "title": "Modulus, floor and fractional part",
+    "lead": "Split exactly where the formula changes.",
+    "ideas": [
+      "For $|g(x)|$, locate all zeros of $g$ in the interval, make a sign chart, and integrate the correct signed expression on each subinterval. For $\\lfloor g(x)\\rfloor$, split where $g(x)$ crosses an integer.",
+      "The fractional part is $\\{x\\}=x-\\lfloor x\\rfloor$. On $[k,k+1)$, use $x=k+t$ so that $\\{x\\}=t$. A value at an isolated endpoint does not change a Riemann integral.",
+      "Do not replace $\\lfloor x^2\\rfloor$ by $(\\lfloor x\\rfloor)^2$. The breakpoints of the former occur at square roots of integers."
+    ],
+    "examples": [
+      {
+        "title": "A floor function inside a product",
+        "question": "Evaluate $\\int_0^2x\\lfloor x^2\\rfloor dx$.",
+        "steps": [
+          "Put $u=x^2$, so $x\\,dx=du/2$ and $u\\in[0,4]$.",
+          "On the four unit intervals, $\\lfloor u\\rfloor$ equals $0,1,2,3$.",
+          "Thus $I=\\frac12(0+1+2+3)=3$."
+        ]
+      },
+      {
+        "title": "A weighted fractional part",
+        "question": "Evaluate $\\int_0^3x\\{x\\}dx$.",
+        "steps": [
+          "On $[k,k+1)$ use $x=k+t$, giving $x\\{x\\}=kt+t^2$.",
+          "Its integral over the piece is $k/2+1/3$.",
+          "For $k=0,1,2$, the total is $1/3+5/6+4/3=5/2$."
+        ]
+      }
+    ],
+    "trap": "For a nonmonotone inner function, the same integer may be crossed more than once. Find every breakpoint.",
+    "check": "Evaluate $\\int_0^2|x^2-1|dx$.",
+    "answer": "Split at $1$: $\\int_0^1(1-x^2)dx+\\int_1^2(x^2-1)dx=2/3+4/3=2$.",
+    "visual": "floor"
+  },
+  {
+    "title": "Riemann sums: read the width and the sample point",
+    "lead": "A sum becomes an integral only after its scaling is identified.",
+    "ideas": [
+      "For continuous $f$ on $[a,b]$, $$\\lim_{n\\to\\infty}\\frac{b-a}{n}\\sum_{r=1}^n f\\left(a+\\frac{(b-a)r}{n}\\right)=\\int_a^b f(x)dx.$$ Left endpoints and midpoint samples have the same limit. The factor $(b-a)/n$ is the strip width.",
+      "In rational sums, divide each occurrence of $r$ by $n$ and factor out the matching power of $n$. Check that one overall factor $1/n$ remains. Missing this factor changes the limit completely.",
+      "Finite products can be handled by logarithms when all factors are positive. A product of many factors close to $1$ often becomes an exponential of an integral; justify the approximation uniformly over the samples."
+    ],
+    "examples": [
+      {
+        "title": "A disguised sum",
+        "question": "Find $\\lim_{n\\to\\infty}\\sum_{r=1}^n n/(4n^2+r^2)$.",
+        "steps": [
+          "Rewrite as $\\frac1n\\sum_{r=1}^n1/[4+(r/n)^2]$.",
+          "The limit is $\\int_0^1dx/(4+x^2)$.",
+          "Answer: $\\frac12\\tan^{-1}(1/2)$."
+        ]
+      },
+      {
+        "title": "A product becomes accumulation",
+        "question": "Find $\\lim_{n\\to\\infty}\\prod_{r=1}^n(1+2r/n^2)$.",
+        "steps": [
+          "Let the product be $P_n$. Since $0\\le2r/n^2\\le2/n$, use $\\ln(1+u)=u+O(u^2)$ uniformly.",
+          "$\\ln P_n=\\sum 2r/n^2+O(n/n^2)=(n+1)/n+O(1/n)\\to1$.",
+          "Therefore $P_n\\to e$. The logarithmic error tends to zero, which justifies replacing the factors by their first-order effect."
+        ]
+      }
+    ],
+    "trap": "Not every expression containing a sum is a Riemann sum. Establish both the sample points and their width.",
+    "check": "Find $\\lim\\limits_{n\\to\\infty}\\frac1n\\sum\\limits_{r=1}^n\\sqrt{1+3r/n}$.",
+    "answer": "The limit is $\\int_0^1\\sqrt{1+3x}dx=14/9$.",
+    "visual": "riemann"
+  },
+  {
+    "title": "Variable limits, integral equations and local behaviour",
+    "lead": "Differentiate the accumulated quantity before trying to evaluate it.",
+    "ideas": [
+      "For continuous $f$ and differentiable bounds, $$\\frac d{dx}\\int_{u(x)}^{v(x)}f(t)dt=f(v(x))v\\prime(x)-f(u(x))u\\prime(x).$$ Both endpoint chain-rule factors matter.",
+      "An equation defining $f$ through an integral may turn into a differential equation. After differentiating, retain the value obtained from the original equation at a convenient point; differentiation alone can lose that condition.",
+      "For $F(x)=\\int_a^x f(t)dt$, zeros of $f$ are stationary points of $F$. They are extrema only when $f$ changes sign. The sign chart is often more useful than an explicit formula for $F$."
+    ],
+    "examples": [
+      {
+        "title": "Both endpoints move",
+        "question": "Find $F\\prime(1)$ if $F(x)=\\int_x^{x^2+1}dt/(1+t^2)$.",
+        "steps": [
+          "$F\\prime(x)=2x/[1+(x^2+1)^2]-1/(1+x^2)$.",
+          "At $x=1$, this is $2/5-1/2=-1/10$."
+        ]
+      },
+      {
+        "title": "An integral equation",
+        "question": "Continuous $f$ satisfies $f(x)=3+\\int_0^x2t f(t)dt$. Find $f(1)$.",
+        "steps": [
+          "The equation makes $f$ differentiable, with $f\\prime(x)=2xf(x)$ and $f(0)=3$.",
+          "Differentiate the product $e^{-x^2}f(x)$: its derivative is zero.",
+          "The product is therefore $3$ everywhere. Thus $f(x)=3e^{x^2}$ and $f(1)=3e$."
+        ]
+      },
+      {
+        "title": "A stationary point without a turn",
+        "question": "For $F(x)=\\int_0^x(t-1)^2(t-3)dt$, classify the stationary points.",
+        "steps": [
+          "$F\\prime=(x-1)^2(x-3)$ vanishes at $1$ and $3$.",
+          "It is negative on both sides of $1$ and changes from negative to positive at $3$.",
+          "So $1$ is not an extremum, whereas $3$ is a local minimum."
+        ]
+      }
+    ],
+    "trap": "The integration variable is a dummy variable; differentiate through the moving bounds, not by treating that dummy variable as $x$.",
+    "check": "If $H(x)=\\int_0^x(x-t)(t^2+2)dt$, find $H\\prime\\prime(1)$.",
+    "answer": "Write $H=x\\int_0^x(t^2+2)dt-\\int_0^xt(t^2+2)dt$. Endpoint terms cancel in $H\\prime$, so $H\\prime\\prime=x^2+2$ and the answer is $3$.",
+    "visual": null
+  },
+  {
+    "title": "Inverse functions and composition",
+    "lead": "A difficult inverse can disappear after changing the variable.",
+    "ideas": [
+      "Let $g$ be continuously differentiable and strictly monotone on $[a,b]$. Substitution $y=g(x)$ and integration by parts give $$\\int_{g(a)}^{g(b)}g^{-1}(y)dy=[xg(x)]_a^b-\\int_a^b g(x)dx.$$ The oriented-limit form also works for a decreasing $g$.",
+      "For an integral of $f(g(x))g\\prime(x)$, substitute $u=g(x)$ directly. The same idea works when $f$ is defined implicitly, or when $f$ itself is an accumulated integral."
+    ],
+    "examples": [
+      {
+        "title": "No cubic inverse formula needed",
+        "question": "$g(x)=x^3+2x$ on $[1,2]$. Evaluate $\\int_3^{12}g^{-1}(y)dy$.",
+        "steps": [
+          "$g\\prime=3x^2+2>0$, so the inverse exists on this interval.",
+          "The endpoint product difference is $2(12)-1(3)=21$.",
+          "$\\int_1^2g(x)dx=[x^4/4+x^2]_1^2=27/4$. The answer is $21-27/4=57/4$."
+        ]
+      },
+      {
+        "title": "A nested accumulated function",
+        "question": "Let $F(x)=\\int_0^x e^{-t^2}dt$ and $F(2)=c$. Evaluate $\\int_0^2 F(x)e^{-x^2}dx$.",
+        "steps": [
+          "$F\\prime(x)=e^{-x^2}$. Set $u=F(x)$, so $du=e^{-x^2}dx$.",
+          "The bounds become $0$ and $c$.",
+          "The result is $\\int_0^c u\\,du=c^2/2$, although $F$ has no elementary formula."
+        ]
+      }
+    ],
+    "trap": "An inverse-function formula needs a one-to-one function on the selected interval; a globally nonmonotone function may still work on a suitable restricted interval.",
+    "check": "If increasing $g$ has $g(0)=2$, $g(3)=8$ and $\\int_0^3g=14$, find $\\int_2^8g^{-1}$.",
+    "answer": "The boundary term is $3(8)-0(2)=24$. Subtract $14$ to obtain $10$.",
+    "visual": null
+  },
+  {
+    "title": "Reduction formulae and beta-type integrals",
+    "lead": "Relate the difficult integral to a simpler member of the same family.",
+    "ideas": [
+      "Let $I_n=\\int_0^{\\pi/2}\\sin^n xdx$. Integration by parts with $u=\\sin^{n-1}x$ and $dv=\\sin xdx$ gives $I_n=(n-1)(I_{n-2}-I_n)$ for integer $n\\ge2$. Therefore $$I_n=\\frac{n-1}{n}I_{n-2},\\qquad I_0=\\pi/2,\\ I_1=1.$$",
+      "For nonnegative integers $m,n$, repeated parts gives $$\\int_0^1x^m(1-x)^ndx=\\frac{m!n!}{(m+n+1)!}.$$ To see the recurrence, integrate $(1-x)^n$ and differentiate $x^m$: $B_{m,n}=mB_{m-1,n+1}/(n+1)$ for $m\\ge1$. Finish with $B_{0,k}=1/(k+1)$.",
+      "Reflection also gives $B_{m,n}=B_{n,m}$. This is a useful independent check and a quick way to choose the shorter reduction."
+    ],
+    "examples": [
+      {
+        "title": "A high even power",
+        "question": "Evaluate $\\int_0^{\\pi/2}\\sin^8x\\,dx$.",
+        "steps": [
+          "Apply the reduction four times: $I_8=\\frac78\\frac56\\frac34\\frac12I_0$.",
+          "Thus $I_8=35\\pi/256$."
+        ]
+      },
+      {
+        "title": "An exact rational value",
+        "question": "Evaluate $\\int_0^1x^3(1-x)^2dx$.",
+        "steps": [
+          "The factorial form gives $3!2!/6!=1/60$.",
+          "Check by expansion: $\\int_0^1(x^3-2x^4+x^5)dx=1/4-2/5+1/6=1/60$."
+        ]
+      }
+    ],
+    "trap": "Do not use the integer factorial formula for arbitrary real exponents without replacing factorials by the appropriate beta/gamma expressions and checking convergence.",
+    "check": "Evaluate $30\\int_0^1x(1-x)^4dx$.",
+    "answer": "The integral is $1!4!/6!=1/30$, so the required value is $1$.",
+    "visual": null
+  },
+  {
+    "title": "Inequalities and least possible values",
+    "lead": "Sometimes a bound is the answer; an antiderivative is unnecessary.",
+    "ideas": [
+      "If $m\\le f\\le M$ on $[a,b]$ with $a<b$, then $m(b-a)\\le\\int_a^bf\\le M(b-a)$. Pointwise inequalities integrate in the same direction. If a continuous nonnegative function is positive somewhere, its integral is strictly positive.",
+      "Integrate a square: $\\int(f-cg)^2\\ge0$ for every real $c$. The discriminant of this quadratic in $c$ cannot be positive. This proves Cauchy–Schwarz: $$(\\int_a^b fg)^2\\le(\\int_a^bf^2)(\\int_a^bg^2).$$ Equality holds when the two functions are proportional (apart from sets of integral measure zero).",
+      "With $g=1$, $\\int_a^b f^2\\ge(\\int_a^bf)^2/(b-a)$. Always test whether the equality function is allowed by every condition."
+    ],
+    "examples": [
+      {
+        "title": "A lower bound with an attainable equality",
+        "question": "Continuous $f$ on $[0,2]$ satisfies $\\int_0^2f=8$. Find the least possible $\\int_0^2f^2$.",
+        "steps": [
+          "Expand $\\int_0^2(f-4)^2\\ge0$.",
+          "This gives $\\int f^2-8(8)+32\\ge0$, so $\\int f^2\\ge32$.",
+          "The constant function $f=4$ meets the condition and gives $32$, so the lower bound is attained."
+        ]
+      },
+      {
+        "title": "Two constraints require a better comparison",
+        "question": "Continuous $f$ on $[0,1]$ satisfies $\\int_0^1f=0$ and $\\int_0^1xf=2$. Find the least $\\int_0^1f^2$.",
+        "steps": [
+          "Because $\\int f=0$, $\\int(x-1/2)f=2$.",
+          "Cauchy–Schwarz gives $4\\le(\\int_0^1(x-1/2)^2dx)\\int f^2=\\frac1{12}\\int f^2$.",
+          "The lower bound is $48$. Equality requires $f=k(x-1/2)$. The moment condition gives $k=24$, and $f=24x-12$ satisfies both constraints."
+        ]
+      }
+    ],
+    "trap": "A numerical lower bound is not necessarily a minimum: you must show an admissible function attains equality.",
+    "check": "For positive continuous $f$ on $[0,1]$ with $\\int f=3$, prove $\\int 1/f\\ge1/3$.",
+    "answer": "Apply Cauchy–Schwarz to $\\sqrt f$ and $1/\\sqrt f$: $1\\le(\\int f)(\\int1/f)=3\\int1/f$. Equality holds for $f=3$.",
+    "visual": null
+  },
+  {
+    "title": "Parameters inside integrals",
+    "lead": "A parameter can turn an awkward logarithm into a rational function.",
+    "ideas": [
+      "If $f(x,a)$ and its partial derivative with respect to $a$ are continuous on a fixed compact rectangle, then $$\\frac d{da}\\int_u^v f(x,a)dx=\\int_u^v\\frac{\\partial f}{\\partial a}(x,a)dx.$$ This is a sufficient condition; improper endpoint cases require additional justification.",
+      "Use an easy parameter value to determine the integration constant after integrating back. A parameter method is not complete until that value is checked.",
+      "If endpoints also depend on the parameter, include their contributions as well as the integral of the partial derivative."
+    ],
+    "examples": [
+      {
+        "title": "A logarithmic integral",
+        "question": "For $a>0$, evaluate $I(a)=\\int_0^1\\ln(1+ax)dx$.",
+        "steps": [
+          "Differentiate: $I\\prime(a)=\\int_0^1x/(1+ax)dx=1/a-\\ln(1+a)/a^2$.",
+          "Alternatively, to integrate back efficiently, integration by parts in the original integral gives $I=\\ln(1+a)-aI\\prime(a)$.",
+          "Hence $I(a)=((1+a)\\ln(1+a)-a)/a$. Its limit at $a=0$ is $0$, consistent with the original definition."
+        ]
+      },
+      {
+        "title": "A moving parameter and a moving endpoint",
+        "question": "Find $H\\prime(a)$ for $H(a)=\\int_0^a\\ln(1+at)dt$, $a>0$.",
+        "steps": [
+          "The upper endpoint contributes $\\ln(1+a^2)$. The integral term is $\\int_0^a t/(1+at)dt$.",
+          "The latter equals $1-\\ln(1+a^2)/a^2$.",
+          "Thus $H\\prime(a)=1+(1-a^{-2})\\ln(1+a^2)$."
+        ]
+      }
+    ],
+    "trap": "If you differentiate only the integrand when the bounds move, the endpoint terms are lost.",
+    "check": "Find $\\frac d{da}\\int_0^1e^{ax}dx$ at $a=0$.",
+    "answer": "Continuity permits differentiation under the integral. At $a=0$ the integrand is $x$, so the answer is $1/2$.",
+    "visual": null
+  },
+  {
+    "title": "Logarithmic symmetry and improper endpoints",
+    "lead": "A singular endpoint may still have a finite integral, but it must be handled as a limit.",
+    "ideas": [
+      "Near zero, $\\ln x$ diverges, yet $\\int_0^1\\ln xdx=-1$ because $x\\ln x\\to0$. By contrast, $\\int_0^1dx/x$ diverges. A large value near an endpoint alone does not decide convergence.",
+      "To derive the log-sine result, put $L=\\int_0^{\\pi/2}\\ln(\\sin x)dx$. Reflection gives the same value with cosine. Therefore $2L=\\int_0^{\\pi/2}\\ln(\\sin2x)dx-(\\pi/2)\\ln2$. Substituting $u=2x$ and reflecting on $[0,\\pi]$ makes the first integral equal to $L$. Thus $$L=-\\frac\\pi2\\ln2.$$ The logarithmic endpoint singularities are integrable, so these changes can be justified by truncated limits.",
+      "For a parameter $a>0$, $\\ln(a\\sin x)=\\ln a+\\ln(\\sin x)$. This simple separation produces many exact values without inventing a new antiderivative."
+    ],
+    "examples": [
+      {
+        "title": "A shifted log-sine value",
+        "question": "Evaluate $\\int_0^{\\pi/2}\\ln(4\\sin x)dx$.",
+        "steps": [
+          "Separate the logarithm: $(\\pi/2)\\ln4+L$.",
+          "Use $L=-(\\pi/2)\\ln2$.",
+          "The result is $(\\pi/2)\\ln2$."
+        ]
+      },
+      {
+        "title": "An improper integral with a symmetric weight",
+        "question": "Evaluate $\\int_0^\\pi x\\ln(2\\sin x)dx$.",
+        "steps": [
+          "The logarithmic singularities at $0$ and $\\pi$ are integrable. The function $f(x)=\\ln(2\\sin x)$ satisfies $f(\\pi-x)=f(x)$.",
+          "Reflection gives $I=(\\pi/2)\\int_0^\\pi\\ln(2\\sin x)dx$.",
+          "The remaining integral is $\\pi\\ln2+2(-\\pi\\ln2/2)=0$. Therefore $I=0$."
+        ]
+      }
+    ],
+    "trap": "Do not apply a remembered log-sine or symmetry result to a different angle without checking the interval and transformed function.",
+    "check": "Evaluate $\\int_0^{\\pi/2}\\ln(\\tan x)dx$.",
+    "answer": "Split as $\\ln\\sin x-\\ln\\cos x$. The two convergent improper integrals agree by reflection, giving $0$.",
+    "visual": null
+  },
+  {
+    "title": "Combine two ideas: a demanding problem is often two familiar steps",
+    "lead": "Look for what can be simplified before committing to a long calculation.",
+    "ideas": [
+      "A useful sequence is: check the domain; look for a symmetry; simplify the transformed sum; then choose a substitution or inequality. Several advanced questions become short only after the first structural observation.",
+      "When $f(x)+f(a-x)$ is known, you may determine an integral against a symmetric weight without determining $f$. If the weight is not symmetric, separate it into its reflected sum and difference first."
+    ],
+    "examples": [
+      {
+        "title": "A functional relation with a weight",
+        "question": "Continuous $f$ satisfies $f(x)+f(2-x)=x^2-2x+8$ on $[0,2]$. Find $I=\\int_0^2(x-1)^2f(x)dx$.",
+        "steps": [
+          "The weight $(x-1)^2$ is unchanged by $x\\mapsto2-x$. Reflect and add: $2I=\\int_0^2(x-1)^2(x^2-2x+8)dx$.",
+          "Put $u=x-1$. The integral becomes $\\int_{-1}^1(u^4+7u^2)du=2/5+14/3=76/15$.",
+          "Therefore $I=38/15$. There is no need to solve for $f$ individually."
+        ]
+      },
+      {
+        "title": "Reflection followed by tangent substitution",
+        "question": "Evaluate $I=\\int_0^\\pi x\\sin^2x/(3+\\cos^2x)dx$.",
+        "steps": [
+          "The fraction is symmetric about $\\pi/2$, so $I=(\\pi/2)J$, where $J=\\int_0^\\pi\\sin^2x/(3+\\cos^2x)dx$.",
+          "Write the fraction as $4/(3+\\cos^2x)-1$. On $[0,\\pi/2)$, put $t=\\tan x$: $\\int dx/(3+\\cos^2x)=\\int_0^\\infty dt/(4+3t^2)=\\pi/(4\\sqrt3)$.",
+          "Doubling gives $J=2\\pi/\\sqrt3-\\pi$. Hence $I=(\\pi^2/2)(2/\\sqrt3-1)$."
+        ]
+      },
+      {
+        "title": "Minimise an integral with respect to a constant",
+        "question": "Find the minimum of $J(a)=\\int_0^3(x^2-a)^2dx$ over real $a$.",
+        "steps": [
+          "Expand and integrate: $J=243/5-18a+3a^2$.",
+          "Complete the square: $J=3(a-3)^2+108/5$.",
+          "The minimum is $108/5$, attained at $a=3$. This equals the average of $x^2$ on $[0,3]$."
+        ]
+      }
+    ],
+    "trap": "A long expression does not necessarily need a long antiderivative. First ask which part stays unchanged by reflection or substitution.",
+    "check": "If continuous $f$ on $[0,4]$ has $f(x)+f(4-x)=6$, find $\\int_0^4(x-2)^2f(x)dx$.",
+    "answer": "The weight is symmetric. Twice the required integral is $6\\int_{-2}^2u^2du=32$. The answer is $16$.",
+    "visual": null
+  },
+  {
+    "title": "Limits involving accumulated functions",
+    "lead": "Use the local behaviour of the integrand and keep the first nonzero term.",
+    "ideas": [
+      "If $f$ is continuous at $a$, the average over a shrinking interval tends to $f(a)$: $\\lim_{h\\to0}\\frac1h\\int_a^{a+h}f(t)dt=f(a)$. This works from either side with oriented limits.",
+      "When the leading term vanishes, expand to the necessary order, or apply the fundamental theorem and L’Hôpital’s rule where its hypotheses hold. An expansion $f(t)=c t^m+o(t^m)$ near zero gives $\\int_0^xf(t)dt=cx^{m+1}/(m+1)+o(x^{m+1})$ for integer $m\\ge0$.",
+      "For two moving bounds near the same point, account for the difference of the corresponding powers. Do not replace a small integral by its width times a value that is itself zero without examining the next term."
+    ],
+    "examples": [
+      {
+        "title": "A vanishing first-order term",
+        "question": "Find $\\lim_{x\\to0}x^{-3}\\int_0^x\\ln(1+2t^2)dt$.",
+        "steps": [
+          "As $t\\to0$, $\\ln(1+2t^2)=2t^2+O(t^4)$.",
+          "The integral is $2x^3/3+O(x^5)$.",
+          "Dividing by $x^3$ gives the limit $2/3$."
+        ]
+      },
+      {
+        "title": "Two endpoints, one small interval",
+        "question": "Find $\\lim_{x\\to0}x^{-3}\\int_x^{2x}(1-\\cos t)dt$.",
+        "steps": [
+          "Use $1-\\cos t=t^2/2+O(t^4)$.",
+          "The leading integral is $[t^3/6]_x^{2x}=7x^3/6$. The remainder is $O(x^5)$.",
+          "The limit is $7/6$, from both sides."
+        ]
+      }
+    ],
+    "trap": "If the denominator vanishes to third order, a first-order approximation may be too weak to determine the limit.",
+    "check": "Find $\\lim_{x\\to0}x^{-2}\\int_0^x\\sin(3t)dt$.",
+    "answer": "$\\sin3t=3t+O(t^3)$ gives an integral $3x^2/2+O(x^4)$, hence $3/2$.",
+    "visual": null
+  },
+  {
+    "title": "Recurrences, bounds and a limiting constant",
+    "lead": "Two relations can determine an asymptotic value without an explicit formula.",
+    "ideas": [
+      "Let $R_n=\\int_0^1x^n/(1+x)dx$. The identity $x^n/(1+x)+x^{n+1}/(1+x)=x^n$ gives $R_n+R_{n+1}=1/(n+1)$. Since $0<x<1$, the sequence is positive and decreasing.",
+      "To find its scale, write $1/(1+x)=1/2+(1-x)/[2(1+x)]$. Then $$0\\le R_n-\\frac1{2(n+1)}\\le\\frac12\\int_0^1x^n(1-x)dx=\\frac1{2(n+1)(n+2)}.$$ Multiplication by $n+1$ and squeezing gives $(n+1)R_n\\to1/2$.",
+      "This method explains why samples close to $x=1$ dominate: $x^n$ becomes small away from that endpoint. The coefficient is the endpoint value of the remaining continuous factor."
+    ],
+    "examples": [
+      {
+        "title": "Use a recurrence to avoid long division",
+        "question": "Find $R_3=\\int_0^1x^3/(1+x)dx$.",
+        "steps": [
+          "$R_0=\\ln2$. Next $R_1=1-\\ln2$ and $R_2=1/2-R_1=\\ln2-1/2$.",
+          "$R_3=1/3-R_2=5/6-\\ln2$."
+        ]
+      },
+      {
+        "title": "A different endpoint coefficient",
+        "question": "Find $\\lim_{n\\to\\infty}(n+1)\\int_0^1x^n/(2+x)dx$.",
+        "steps": [
+          "Write $1/(2+x)=1/3+(1-x)/[3(2+x)]$.",
+          "The error above $1/[3(n+1)]$ lies between $0$ and $1/[6(n+1)(n+2)]$.",
+          "After multiplying by $n+1$, the error tends to zero. The limit is $1/3$."
+        ]
+      }
+    ],
+    "trap": "From $R_n+R_{n+1}\\to0$ alone you cannot infer the value of $nR_n$; scaling needs a quantitative bound.",
+    "check": "Find $\\lim_{n\\to\\infty}(n+1)\\int_0^1x^n(3+x)dx$.",
+    "answer": "The expression is $3+(n+1)/(n+2)$, so the limit is $4$.",
+    "visual": null
+  },
+  {
+    "title": "Reciprocal substitutions on an infinite interval",
+    "lead": "The transformation x to 1/x can exchange powers in the numerator.",
+    "ideas": [
+      "In a convergent improper integral on $(0,\\infty)$, $x=1/t$ changes $dx$ to $-dt/t^2$. Track both the differential and reversed limits. This can pair rational functions of $x$ and $1/x$.",
+      "An improper substitution can be justified on finite truncated intervals and then by taking limits. Establish convergence before combining the transformed expressions."
+    ],
+    "examples": [
+      {
+        "title": "Pair two rational integrals",
+        "question": "Evaluate $I=\\int_0^\\infty dx/(x^4+5x^2+1)$.",
+        "steps": [
+          "The integrand is bounded near zero and behaves like $x^{-4}$ at infinity, so the integral converges.",
+          "Reciprocal substitution gives $I=\\int_0^\\infty x^2dx/(x^4+5x^2+1)$. Add: $2I=\\int_0^\\infty(1+x^2)dx/(x^4+5x^2+1)$.",
+          "Put $u=x-1/x$. Since $du=(1+1/x^2)dx$ and $(x^4+5x^2+1)/x^2=u^2+7$, $2I=\\int_{-\\infty}^{\\infty}du/(u^2+7)=\\pi/\\sqrt7$. Thus $I=\\pi/(2\\sqrt7)$."
+        ]
+      },
+      {
+        "title": "A family, with its condition",
+        "question": "For $a>-2$, evaluate $I(a)=\\int_0^\\infty dx/(x^4+ax^2+1)$.",
+        "steps": [
+          "For $x>0$, the denominator divided by $x^2$ is $(x-1/x)^2+a+2>0$. The integral converges at both endpoints.",
+          "Reflect reciprocally and add exactly as above. The denominator becomes $u^2+a+2$.",
+          "Therefore $I(a)=\\pi/[2\\sqrt{a+2}]$. At $a=-2$, a pole at $x=1$ destroys convergence."
+        ]
+      }
+    ],
+    "trap": "The parameter condition is part of the result. An expression containing a square root is not proof that the original integral converges.",
+    "check": "Evaluate $\\int_0^\\infty x^2dx/(x^4+7x^2+1)$.",
+    "answer": "Reciprocal substitution makes this equal to $I(7)$. The result is $\\pi/6$.",
+    "visual": null
+  }
+]

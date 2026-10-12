@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Tex from './tex';
 
 const superscripts: Record<string, string> = {
   '⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9',
@@ -377,5 +378,6 @@ function renderExpression(value: string, keyPrefix = 'math'): ReactNode[] {
 }
 
 export default function MathText({ children, formula = false }: { children: string; formula?: boolean }) {
+  if (children.includes('$')) return <Tex>{children}</Tex>;
   return <span className={formula ? 'math-typeset formula' : 'math-typeset'}>{renderExpression(children.trim())}</span>;
 }

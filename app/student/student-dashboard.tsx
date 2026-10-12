@@ -36,7 +36,7 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
               const pdf = getIntegralsProduct(paperId);
-              if (pdf) return <article key={paperId}><CheckCircle2/><span><strong>Integrals · {pdf.title}</strong><small>Grade 12 · PDF questions and worked solutions</small></span><a href={`${integralsPath}#${pdf.id}`}>Download paper</a></article>;
+              if (pdf) return <article key={paperId}><CheckCircle2/><span><strong>Integrals · {pdf.title}</strong><small>Grade 12 · Online paper and worked solutions</small></span><a href={`${integralsPath}/papers/${pdf.id}`}>Open paper</a></article>;
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];
               const payment = records.payments.find((item) => item.paper_id === paperId);
               const board = paper?.board ?? 'CBSE';
