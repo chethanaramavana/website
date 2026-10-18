@@ -501,8 +501,8 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <nav className="primary-nav" aria-label="Main navigation">
+          <a href="/#study-library">CBSE &amp; ICSE</a>
           <a href="/maths-basics">Maths Basics</a>
-          <a href="/#study-library">Grade-wise Practice</a>
           <a href="/#previous-papers">Previous Papers</a>
           <a href="#help-desk">Help Desk</a>
         </nav>
@@ -581,14 +581,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
         <div><p className="home-eyebrow">RAMAVANA MATHEMATICAL CENTRE</p><h1 id="hero-title">Understand maths.<br/><span>Build confidence.</span></h1><p>Start with the basics, practise your chapter or prepare for your next exam.</p></div>
         <img src="/students-studying.webp" alt="Students working through mathematics together" width="1200" height="600" fetchPriority="high"/>
       </section>
-      <section className="home-choices" aria-labelledby="home-choices-title">
-        <h2 id="home-choices-title">What would you like to learn?</h2>
-        <div className="home-choice-grid">
-          <a className="home-choice choice-basics" href="/maths-basics"><span className="home-choice-icon"><FolderOpen/></span><span className="home-choice-tag">BUILD YOUR FOUNDATION</span><h3>Maths Step by Step</h3><p>Struggling with maths basics? Learn one small step at a time.</p><small>Common foundations · Grades 5–10</small><strong>Start free <ArrowRight/></strong></a>
-          <a className="home-choice choice-grades" href="#study-library"><span className="home-choice-icon"><BookOpen/></span><span className="home-choice-tag">PRACTISE YOUR CHAPTER</span><h3>Grade-wise practice</h3><p>Find notes, MCQs and question papers for your board and grade.</p><small>CBSE · ICSE</small><strong>Choose your board <ArrowRight/></strong></a>
-          <a className="home-choice choice-exams" href="#previous-papers"><span className="home-choice-icon"><FileText/></span><span className="home-choice-tag">PREPARE FOR EXAMS</span><h3>Previous papers</h3><p>Explore official CBSE papers, sample papers and marking schemes.</p><small>Official CBSE resources</small><strong>Browse papers <ArrowRight/></strong></a>
-        </div>
-      </section>
+      <div className="home-board-and-basics">
       <section className="library-section" id="study-library" aria-labelledby="curriculum-title">
         <div className="section-heading">
           <div><h2 id="curriculum-title">Choose your board</h2><span>Then choose your grade and chapter.</span></div>
@@ -604,6 +597,10 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           ))}
         </div>
       </section>
+        <aside className="home-basics-side" aria-labelledby="basics-side-title">
+          <a className="home-choice choice-basics" href="/maths-basics"><span className="home-choice-icon"><FolderOpen/></span><h2 id="basics-side-title">Make your maths<br/>basics clear.</h2><p>Need help with numbers, multiplication, fractions or word problems? Start here.</p><small>Maths Step by Step · Grades 5–10</small><strong>Start learning — first topic free <ArrowRight/></strong></a>
+        </aside>
+      </div>
       <section className="previous-papers-section" id="previous-papers" aria-labelledby="previous-papers-title">
         <div className="previous-papers-heading">
           <span className="previous-papers-icon"><Archive /></span>
