@@ -1,3 +1,5 @@
+import {canBuyBasics,hasBasicsPackage} from '@/lib/basics-access';
+import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct, integralsPricePaise } from '@/lib/integrals-products';
 import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
@@ -24,9 +26,10 @@ export async function POST(request: Request) {
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
     const chapter = quizChapter(paperId);
-    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
-    const AMOUNT_PAISE = chapter ? quizPrice(chapter) : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : 3000;
+    if(getBasicsProduct(paperId)){if(await hasBasicsPackage(user,paperId==='maths-basics-5-8'?'base':'extension'))return Response.json({alreadyPaid:true,paperId});if(!await canBuyBasics(user,paperId))return jsonError('Complete the free first level in this folder before unlocking the package. Refresh this page to see your current price.',403);}
+    const AMOUNT_PAISE = getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:chapter ? quizPrice(chapter) : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : 3000;
     const database = getDatabase();
     const existing = await database.prepare(
       `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND amount_paise = ? AND status = 'approved' LIMIT 1`,

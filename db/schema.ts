@@ -1,6 +1,12 @@
 import { sql } from 'drizzle-orm';
 import { index, integer, primaryKey, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
 
+export const basicsProgress=sqliteTable('basics_progress',{
+  userId:text('user_id').notNull(),topicSlug:text('topic_slug').notNull(),
+  stateJson:text('state_json').notNull().default('{}'),revision:integer('revision').notNull().default(0),
+  completed:integer('completed').notNull().default(0),score:integer('score'),updatedAtMs:integer('updated_at_ms').notNull(),
+},table=>[primaryKey({columns:[table.userId,table.topicSlug]})]);
+
 export const studentPresence = sqliteTable('student_presence', {
   userId: text('user_id').primaryKey(),
   email: text('email').notNull(),

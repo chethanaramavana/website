@@ -35,6 +35,7 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
           <section className="student-access-section">
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {
+              if(paperId.startsWith('maths-basics-'))return <a className="student-access-card" key={paperId} href="/maths-basics"><strong>Maths Step by Step</strong><span>Your maths folders · Continue learning →</span></a>;
               const pdf = getIntegralsProduct(paperId);
               if (pdf) return <article key={paperId}><CheckCircle2/><span><strong>Integrals · {pdf.title}</strong><small>Grade 12 · Online paper and worked solutions</small></span><a href={`${integralsPath}/papers/${pdf.id}`}>Open paper</a></article>;
               const paper = paperDefinitionsById[paperId as keyof typeof paperDefinitionsById];

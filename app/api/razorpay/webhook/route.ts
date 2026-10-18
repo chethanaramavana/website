@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       payload?: { payment?: { entity?: { id?: string; order_id?: string; amount?: number; currency?: string; status?: string } } };
     };
     const payment = event.payload?.payment?.entity;
-    if ((event.event === 'payment.captured' || event.event === 'order.paid') && payment?.order_id && (payment.amount === 3000 || payment.amount === 2000) && payment.currency === 'INR' && payment.status === 'captured') {
+    if ((event.event === 'payment.captured' || event.event === 'order.paid') && payment?.order_id && (payment.amount === 3000 || payment.amount === 2000 || payment.amount === 15000 || payment.amount === 20000 || payment.amount === 35000) && payment.currency === 'INR' && payment.status === 'captured') {
       await getDatabase().prepare(
         `UPDATE payment_requests
          SET status = 'approved', reviewed_at = CURRENT_TIMESTAMP

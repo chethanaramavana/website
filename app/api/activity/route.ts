@@ -1,3 +1,4 @@
+import {canOpenBasicsAny} from '@/lib/basics-access';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 import { activityPaper, recordPresence } from '@/lib/student-activity';
 import { hasMcqAccess } from '@/lib/mcq-access';
@@ -18,6 +19,7 @@ export async function POST(request: Request) {
     const paper=activityPaper(body.paperId);
     if (!paper || !Number.isInteger(body.answered) || body.answered<0 || body.answered>paper.total) return jsonError('Invalid test.',400);
     if (!isAdmin(user)) {
+      if(paper.kind==='basics'&&!await canOpenBasicsAny(user,paper.slug))return jsonError('Level access required.',403);
       if (paper.kind==='quiz' && !await hasMcqAccess(user,paper.chapter!,paper.grade!)) return jsonError('Test access required.',403);
       if (paper.kind==='integrals' && !await hasIntegralsAccess(user,body.paperId)) return jsonError('Test access required.',403);
       if (paper.kind==='paper') {

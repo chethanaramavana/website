@@ -88,8 +88,8 @@
         "remember": "A digit and its value are different: the digit is 7, but its value may be 700."
       },
       {
-        "title": "Compare and estimate",
-        "explain": "Compare whole numbers by their number of digits, then from the left. Estimation helps you check whether an answer makes sense.",
+        "title": "Compare and order whole numbers",
+        "explain": "Compare the number of digits first. If two numbers have the same number of digits, compare from the left until a pair of digits differs. On a number line, the number farther right is greater.",
         "visual": {
           "kind": "numberline",
           "min": 0,
@@ -99,21 +99,21 @@
           "caption": "7 is farther right than 4, so 7 > 4."
         },
         "steps": [
-          "3,481 > 3,418: thousands and hundreds match; compare 8 tens with 1 ten.",
-          "To round 368 to the nearest ten, look at the ones digit 8. Round up to 370.",
-          "A library has 198 storybooks and 303 science books. About 200 + 300 = 500 books."
+          "3,481 > 3,418: thousands and hundreds match; 8 tens is greater than 1 ten.",
+          "In ascending order, 907, 970 and 790 become 790, 907, 970.",
+          "999 is followed by 1,000: ten hundreds make one thousand."
         ],
         "practice": [
           {
-            "prompt": "Round 542 to the nearest ten.",
-            "answer": "540",
-            "solution": "The ones digit 2 is below 5, so round down to 540.",
+            "prompt": "Which number comes just after 999?",
+            "answer": "1000",
+            "solution": "Add one: 999 + 1 = 1,000.",
             "options": null
           },
           {
             "prompt": "Which is greatest?",
             "answer": "6,120",
-            "solution": "Compare thousands first, then hundreds and tens.",
+            "solution": "Thousands match; compare hundreds, then tens.",
             "options": [
               "6,012",
               "6,102",
@@ -122,7 +122,7 @@
             ]
           }
         ],
-        "remember": "Use > for greater than, < for less than, and = for equal to. An estimate is not the exact answer."
+        "remember": "Ascending means smallest to largest. Descending means largest to smallest."
       }
     ],
     "test": [
@@ -145,10 +145,13 @@
         "options": null
       },
       {
-        "prompt": "Round 787 to the nearest ten.",
-        "answer": "790",
-        "solution": "The ones digit 7 tells us to round up.",
-        "options": null
+        "prompt": "Which is greater: 3,468 or 3,486?",
+        "answer": "3,486",
+        "solution": "Thousands and hundreds match; 8 tens is greater than 6 tens.",
+        "options": [
+          "3,468",
+          "3,486"
+        ]
       },
       {
         "prompt": "Which number is less than 5,406?",
@@ -437,6 +440,181 @@
         "prompt": "A trip has 53 people and 10 seats per van. How many vans?",
         "answer": "6",
         "solution": "Five vans seat 50, so a sixth is needed.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "estimation",
+    "title": "Estimation and rounding",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "What does an estimate tell us?",
+        "explain": "An estimate is a sensible nearby value, not a guess with no reasoning. Use one when an exact count is unnecessary or to check a calculation. Choose a unit of rounding that suits the situation.",
+        "visual": {
+          "kind": "numberline",
+          "min": 190,
+          "max": 200,
+          "start": 198,
+          "end": 200,
+          "caption": "198 is only 2 away from 200. It is 8 away from 190."
+        },
+        "steps": [
+          "A hall has 198 visitors. Saying “about 200” gives a useful idea of the crowd.",
+          "A bill of ₹198 must still be paid exactly; an estimate does not replace the bill.",
+          "For 198 + 303, nearby hundreds give 200 + 300 = about 500. The exact sum is 501."
+        ],
+        "practice": [
+          {
+            "prompt": "Which is a useful estimate of 398 people to the nearest hundred?",
+            "answer": "400",
+            "solution": "398 is 2 away from 400.",
+            "options": [
+              "300",
+              "400",
+              "40",
+              "4,000"
+            ]
+          },
+          {
+            "prompt": "A bill is exactly ₹247. Does rounding it to ₹250 change the amount owed?",
+            "answer": "No",
+            "solution": "Rounding helps planning; the actual bill remains ₹247.",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        ],
+        "remember": "An estimate should state its accuracy, such as “to the nearest ten”."
+      },
+      {
+        "title": "Round to the nearest ten, hundred or thousand",
+        "explain": "Find the two neighbouring multiples of the unit. Compare distances. Choose the nearer one. If exactly halfway, this course rounds a positive number up.",
+        "visual": {
+          "kind": "rounding",
+          "low": 340,
+          "high": 350,
+          "value": 347,
+          "caption": "347 is 7 from 340 and 3 from 350, so it rounds to 350."
+        },
+        "steps": [
+          "347 to the nearest ten: neighbours 340 and 350; choose 350.",
+          "347 to the nearest hundred: neighbours 300 and 400; choose 300.",
+          "3,650 to the nearest hundred: exactly between 3,600 and 3,700; choose 3,700.",
+          "4,499 to the nearest thousand is 4,000. Compare directly with 4,500; do not round in several stages."
+        ],
+        "practice": [
+          {
+            "prompt": "Round 764 to the nearest ten.",
+            "answer": "760",
+            "solution": "764 is 4 from 760 and 6 from 770.",
+            "options": null
+          },
+          {
+            "prompt": "Round 2,650 to the nearest hundred.",
+            "answer": "2700",
+            "solution": "It is halfway, so round up to 2,700.",
+            "options": null
+          }
+        ],
+        "remember": "The same number can round differently depending on the place requested."
+      },
+      {
+        "title": "Estimate sums and differences",
+        "explain": "Round each quantity to the requested place, then calculate with the rounded numbers. Write “about” or ≈, not an exact equals sign. Mixed rounding may make an estimate too high or too low.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "₹287 + ₹412",
+            "≈ ₹300 + ₹400",
+            "≈ ₹700"
+          ]
+        },
+        "steps": [
+          "For 287 + 412, round each to the nearest hundred: 300 + 400 = 700. Exact sum: 699.",
+          "For 824 − 391, nearest hundreds give 800 − 400 = 400. Exact difference: 433.",
+          "If small differences matter, use tens instead: 820 − 390 = about 430."
+        ],
+        "practice": [
+          {
+            "prompt": "Estimate 486 + 218 by rounding each number to the nearest hundred.",
+            "answer": "700",
+            "solution": "500 + 200 = 700.",
+            "options": null
+          },
+          {
+            "prompt": "Estimate 763 − 326 by rounding each number to the nearest ten.",
+            "answer": "430",
+            "solution": "760 − 330 = 430.",
+            "options": null
+          }
+        ],
+        "remember": "Round the quantities as instructed before calculating. Rounding only the final exact answer is a different method."
+      },
+      {
+        "title": "Estimate products, quotients and check answers",
+        "explain": "For multiplication use nearby easy numbers. For division choose compatible numbers that divide easily. Compare the estimate with the proposed answer to catch place-value errors.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "19 × 42 ≈ 20 × 40 = 800",
+            "Exact: 19 × 42 = 798",
+            "7,980 is about ten times too large"
+          ]
+        },
+        "steps": [
+          "19 × 42 is about 20 × 40 = 800. An answer of 7,980 cannot be reasonable.",
+          "To estimate 397 ÷ 8, use 400 ÷ 8 = 50. The exact result is slightly below 50.",
+          "For 6 items at ₹49 each, plan about 6 × ₹50 = ₹300. Actual cost ₹294."
+        ],
+        "practice": [
+          {
+            "prompt": "Estimate 29 × 61 by rounding each factor to the nearest ten.",
+            "answer": "1800",
+            "solution": "30 × 60 = 1,800.",
+            "options": null
+          },
+          {
+            "prompt": "Use 600 ÷ 6 to estimate 598 ÷ 6.",
+            "answer": "100",
+            "solution": "600 ÷ 6 = 100; the exact answer is slightly less.",
+            "options": null
+          }
+        ],
+        "remember": "Reasonable does not mean certainly correct. Check the exact calculation when accuracy is needed."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Round 853 to the nearest ten.",
+        "answer": "850",
+        "solution": "853 is closer to 850 than 860.",
+        "options": null
+      },
+      {
+        "prompt": "Round 4,750 to the nearest hundred.",
+        "answer": "4800",
+        "solution": "Halfway between 4,700 and 4,800: round up.",
+        "options": null
+      },
+      {
+        "prompt": "Estimate 612 + 289 using nearest hundreds.",
+        "answer": "900",
+        "solution": "600 + 300 = 900.",
+        "options": null
+      },
+      {
+        "prompt": "Estimate 48 × 21 using nearest tens.",
+        "answer": "1000",
+        "solution": "50 × 20 = 1,000.",
+        "options": null
+      },
+      {
+        "prompt": "Use 420 ÷ 7 to estimate 418 ÷ 7.",
+        "answer": "60",
+        "solution": "Compatible numbers: 420 ÷ 7 = 60.",
         "options": null
       }
     ]
@@ -2419,6 +2597,922 @@
           "1/3",
           "1/2",
           "2/3"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rational-numbers",
+    "title": "Rational numbers",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Fractions can be negative too",
+        "explain": "A rational number can be written p/q, where p and q are integers and q is not zero. Integers, terminating decimals and recurring decimals are rational numbers.",
+        "visual": {
+          "kind": "fraction",
+          "parts": 4,
+          "filled": 3,
+          "caption": "The magnitude of −3/4 is three quarters. The minus sign places it left of zero."
+        },
+        "steps": [
+          "−3/4 = 3/(−4) = −0.75.",
+          "−1/4 is greater than −3/4 because it is closer to zero.",
+          "A rational number has infinitely many equivalent forms: −3/4 = −6/8."
+        ],
+        "practice": [
+          {
+            "prompt": "Which is greater?",
+            "answer": "−1/4",
+            "solution": "On a number line −1/4 is to the right of −3/4.",
+            "options": [
+              "−1/4",
+              "−3/4"
+            ]
+          },
+          {
+            "prompt": "Write −0.5 as a fraction.",
+            "answer": "−1/2",
+            "solution": "−0.5 = −5/10 = −1/2.",
+            "options": [
+              "−1/2",
+              "1/2",
+              "−5",
+              "−2"
+            ]
+          }
+        ],
+        "remember": "Zero is rational: 0 = 0/1. A denominator can never be zero."
+      },
+      {
+        "title": "Calculate with signed fractions",
+        "explain": "Use common denominators for addition and subtraction. Multiply fractions using the sign rules. To divide by a nonzero fraction, multiply by its reciprocal.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "−2/3 + 5/6",
+            "−4/6 + 5/6",
+            "1/6"
+          ]
+        },
+        "steps": [
+          "−2/3 + 5/6 = 1/6.",
+          "(−3/5) × (−10/9) = 30/45 = 2/3.",
+          "(−3/4) ÷ (1/8) = (−3/4) × 8 = −6."
+        ],
+        "practice": [
+          {
+            "prompt": "Find −1/2 + 3/4.",
+            "answer": "1/4",
+            "solution": "−2/4 + 3/4 = 1/4.",
+            "options": [
+              "1/4",
+              "−1/4",
+              "1/2",
+              "5/4"
+            ]
+          },
+          {
+            "prompt": "Find (−2/3) ÷ (1/6).",
+            "answer": "-4",
+            "solution": "−2/3 × 6 = −4.",
+            "options": null
+          }
+        ],
+        "remember": "Subtraction of a negative adds the positive opposite."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Is −7 rational?",
+        "answer": "Yes",
+        "solution": "−7 = −7/1.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "prompt": "Find −3/5 + 1/5.",
+        "answer": "−2/5",
+        "solution": "Add signed numerators.",
+        "options": [
+          "−2/5",
+          "−4/5",
+          "2/5",
+          "−2/10"
+        ]
+      },
+      {
+        "prompt": "Find (−1/2) × (−8).",
+        "answer": "4",
+        "solution": "Two negatives give a positive.",
+        "options": null
+      },
+      {
+        "prompt": "Find (3/4) ÷ (−3/8).",
+        "answer": "-2",
+        "solution": "3/4 × (−8/3) = −2.",
+        "options": null
+      },
+      {
+        "prompt": "Which is between −1 and 0?",
+        "answer": "−2/3",
+        "solution": "−2/3 is about −0.667.",
+        "options": [
+          "−2/3",
+          "2/3",
+          "−3/2",
+          "−2"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "real-numbers",
+    "title": "Real numbers and roots",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "Rational or irrational?",
+        "explain": "Rational numbers have terminating or recurring decimal forms. An irrational number has a non-terminating decimal with no repeating block. Both belong to the real numbers.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "√49 = 7 → rational",
+            "√50 = 5√2 → irrational",
+            "0.333… = 1/3 → rational"
+          ]
+        },
+        "steps": [
+          "A root of a perfect square is an integer, such as √81 = 9.",
+          "√18 = √(9×2) = 3√2.",
+          "0.121212… repeats the block 12, so it is rational."
+        ],
+        "practice": [
+          {
+            "prompt": "Simplify √72.",
+            "answer": "6√2",
+            "solution": "72 = 36×2.",
+            "options": [
+              "6√2",
+              "36√2",
+              "8√2",
+              "6√3"
+            ]
+          },
+          {
+            "prompt": "Which is irrational?",
+            "answer": "√7",
+            "solution": "7 is not a perfect square.",
+            "options": [
+              "√7",
+              "0.25",
+              "3/7",
+              "√9"
+            ]
+          }
+        ],
+        "remember": "A long decimal display alone does not prove that a number is irrational."
+      },
+      {
+        "title": "Root operations and rationalising",
+        "explain": "For non-negative a and b, √a × √b = √(ab). Combine only like root terms. Multiply numerator and denominator by the same nonzero expression when rationalising.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "3√2 + 4√2 = 7√2",
+            "1/√3 = √3/3",
+            "(√5 + 2)(√5 − 2) = 1"
+          ]
+        },
+        "steps": [
+          "√12 × √3 = √36 = 6.",
+          "1/√3 × √3/√3 = √3/3.",
+          "(a+b)(a−b)=a²−b² helps with two-term denominators."
+        ],
+        "practice": [
+          {
+            "prompt": "Find √8 × √2.",
+            "answer": "4",
+            "solution": "√16 = 4.",
+            "options": null
+          },
+          {
+            "prompt": "Simplify 2√5 + 3√5.",
+            "answer": "5√5",
+            "solution": "Add the coefficients of the same root.",
+            "options": [
+              "5√5",
+              "5√10",
+              "6√5",
+              "5"
+            ]
+          }
+        ],
+        "remember": "√(a+b) is generally not √a + √b."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find √196.",
+        "answer": "14",
+        "solution": "14² = 196.",
+        "options": null
+      },
+      {
+        "prompt": "Simplify √45.",
+        "answer": "3√5",
+        "solution": "45 = 9×5.",
+        "options": [
+          "3√5",
+          "9√5",
+          "5√3",
+          "3√15"
+        ]
+      },
+      {
+        "prompt": "Find √6 × √24.",
+        "answer": "12",
+        "solution": "√144 = 12.",
+        "options": null
+      },
+      {
+        "prompt": "Is 0.272727… rational?",
+        "answer": "Yes",
+        "solution": "The digits repeat in a fixed block.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "prompt": "Rationalise 1/√7.",
+        "answer": "√7/7",
+        "solution": "Multiply top and bottom by √7.",
+        "options": [
+          "√7/7",
+          "√7",
+          "7√7",
+          "1/7"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "identities",
+    "title": "Algebraic identities and factorisation",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "See an identity as an area",
+        "explain": "An identity is true for every permitted value of its variables. Expanding (a+b)² gives a²+2ab+b² because the square splits into four regions.",
+        "visual": {
+          "kind": "identity",
+          "caption": "The square of side a+b splits into a², ab, ab and b²."
+        },
+        "steps": [
+          "(x+4)² = x²+8x+16.",
+          "(x−4)² = x²−8x+16.",
+          "(x+4)(x−4) = x²−16."
+        ],
+        "practice": [
+          {
+            "prompt": "Coefficient of x in (x+6)²?",
+            "answer": "12",
+            "solution": "The middle term is 2×x×6 = 12x.",
+            "options": null
+          },
+          {
+            "prompt": "Find 49² using (50−1)².",
+            "answer": "2401",
+            "solution": "2500−100+1 = 2401.",
+            "options": null
+          }
+        ],
+        "remember": "The middle term 2ab is essential in a square of a sum."
+      },
+      {
+        "title": "Factorise by reversing multiplication",
+        "explain": "First remove a common factor if one exists. Then look for an identity or a pair of numbers whose sum and product match a quadratic expression.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "x² + 7x + 12",
+            "x² + 3x + 4x + 12",
+            "(x+3)(x+4)"
+          ]
+        },
+        "steps": [
+          "6x² + 9x = 3x(2x+3).",
+          "x²−25 = (x−5)(x+5).",
+          "x²+7x+12 = (x+3)(x+4): 3+4=7 and 3×4=12."
+        ],
+        "practice": [
+          {
+            "prompt": "Factorise x²−36.",
+            "answer": "(x−6)(x+6)",
+            "solution": "Use the difference of two squares.",
+            "options": [
+              "(x−6)(x+6)",
+              "(x−6)²",
+              "(x+6)²",
+              "x(x−36)"
+            ]
+          },
+          {
+            "prompt": "Find the positive missing number: x²+9x+20=(x+4)(x+□).",
+            "answer": "5",
+            "solution": "4+5=9 and 4×5=20.",
+            "options": null
+          }
+        ],
+        "remember": "Check a factorisation by expanding it again."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Coefficient of x in (x−3)²?",
+        "answer": "-6",
+        "solution": "−2×3x = −6x.",
+        "options": null
+      },
+      {
+        "prompt": "Constant term in (x+7)²?",
+        "answer": "49",
+        "solution": "7² = 49.",
+        "options": null
+      },
+      {
+        "prompt": "Find 102×98 using an identity.",
+        "answer": "9996",
+        "solution": "(100+2)(100−2) = 10000−4.",
+        "options": null
+      },
+      {
+        "prompt": "Factorise 5x²+10x.",
+        "answer": "5x(x+2)",
+        "solution": "Take out the common factor 5x.",
+        "options": [
+          "5x(x+2)",
+          "5(x+2)",
+          "5x(x+10)",
+          "x(5x+2)"
+        ]
+      },
+      {
+        "prompt": "In x²+8x+15=(x+3)(x+k), find k.",
+        "answer": "5",
+        "solution": "3+5=8 and 3×5=15.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "coordinate-basics",
+    "title": "Coordinates and linear graphs",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "An ordered pair fixes a point",
+        "explain": "The first coordinate is horizontal distance from the origin; the second is vertical distance. Signs specify direction. The order matters.",
+        "visual": {
+          "kind": "coordinates",
+          "x": 3,
+          "y": 2,
+          "caption": "P(3,2): move 3 right, then 2 up."
+        },
+        "steps": [
+          "(3,2) and (2,3) are different points.",
+          "(−2,4) is left of the y-axis and above the x-axis.",
+          "Points on the x-axis have y=0. Points on the y-axis have x=0."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the y-coordinate of (−5,7)?",
+            "answer": "7",
+            "solution": "The second coordinate is y.",
+            "options": null
+          },
+          {
+            "prompt": "A point on the y-axis has x equal to what?",
+            "answer": "0",
+            "solution": "There is no horizontal displacement.",
+            "options": null
+          }
+        ],
+        "remember": "The axes meet at (0,0), the origin."
+      },
+      {
+        "title": "A linear equation has many solutions",
+        "explain": "A pair (x,y) solves an equation if substituting both values makes it true. A linear equation in two variables represents a straight line.",
+        "visual": {
+          "kind": "lineargraph",
+          "caption": "The line y=2x+1 passes through (0,1), (1,3) and (2,5)."
+        },
+        "steps": [
+          "For y=2x+1: x=0 gives y=1; x=1 gives y=3; x=2 gives y=5.",
+          "Plot these points and join them with a straight line.",
+          "For x+y=7, (2,5) is one of infinitely many solutions."
+        ],
+        "practice": [
+          {
+            "prompt": "For y=3x−2, find y when x=4.",
+            "answer": "10",
+            "solution": "3×4−2 = 10.",
+            "options": null
+          },
+          {
+            "prompt": "Does (3,4) satisfy x+y=7?",
+            "answer": "Yes",
+            "solution": "3+4=7.",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        ],
+        "remember": "One equation in two variables usually does not determine one unique pair."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "x-coordinate of (−6,8)?",
+        "answer": "-6",
+        "solution": "The first coordinate is x.",
+        "options": null
+      },
+      {
+        "prompt": "y-coordinate of a point on the x-axis?",
+        "answer": "0",
+        "solution": "All points on the x-axis have y=0.",
+        "options": null
+      },
+      {
+        "prompt": "For y=4x+3, find y at x=2.",
+        "answer": "11",
+        "solution": "8+3 = 11.",
+        "options": null
+      },
+      {
+        "prompt": "For x+y=9 and x=5, find y.",
+        "answer": "4",
+        "solution": "9−5=4.",
+        "options": null
+      },
+      {
+        "prompt": "Which point lies in the third quadrant?",
+        "answer": "(−2,−3)",
+        "solution": "Both coordinates are negative.",
+        "options": [
+          "(−2,−3)",
+          "(2,3)",
+          "(−2,3)",
+          "(2,−3)"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "linear-pairs",
+    "title": "Solving two equations together",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "Two conditions, one pair",
+        "explain": "A solution must satisfy both equations at the same time. Think of the equations as two clues about the same unknown quantities.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "x + y = 11",
+            "x − y = 3",
+            "Add: 2x = 14 → x = 7, y = 4"
+          ]
+        },
+        "steps": [
+          "Adding these equations cancels y because +y and −y add to zero.",
+          "Substitute x=7 into x+y=11 to get y=4.",
+          "Check both clues: 7+4=11 and 7−4=3."
+        ],
+        "practice": [
+          {
+            "prompt": "If x+y=13 and x−y=5, find x.",
+            "answer": "9",
+            "solution": "Add: 2x=18, so x=9.",
+            "options": null
+          },
+          {
+            "prompt": "For the same equations, find y.",
+            "answer": "4",
+            "solution": "13−9=4.",
+            "options": null
+          }
+        ],
+        "remember": "Always check the pair in both original equations."
+      },
+      {
+        "title": "Turn a situation into two equations",
+        "explain": "Choose variables with clear meanings and keep the units consistent. One statement gives one equation; the second independent statement gives another.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "2 pens + 1 notebook = ₹44",
+            "1 pen + 1 notebook = ₹32",
+            "Subtract → 1 pen = ₹12"
+          ]
+        },
+        "steps": [
+          "Let p be the price of a pen and n the price of a notebook.",
+          "2p+n=44 and p+n=32. Subtract to get p=12.",
+          "Then n=32−12=20. Two pens and one notebook cost 24+20=44."
+        ],
+        "practice": [
+          {
+            "prompt": "A pen and a pad cost ₹35. Two pens and a pad cost ₹47. Find the pen price.",
+            "answer": "12",
+            "solution": "Subtract the two costs: 47−35=12.",
+            "options": null
+          },
+          {
+            "prompt": "For those prices, find the pad price.",
+            "answer": "23",
+            "solution": "35−12=23.",
+            "options": null
+          }
+        ],
+        "remember": "Parallel distinct lines have no common solution; coincident lines have infinitely many."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "x+y=18 and x−y=4. Find x.",
+        "answer": "11",
+        "solution": "Add: 2x=22.",
+        "options": null
+      },
+      {
+        "prompt": "For x+y=18 and x−y=4, find y.",
+        "answer": "7",
+        "solution": "18−11=7.",
+        "options": null
+      },
+      {
+        "prompt": "2x+y=19 and x+y=12. Find x.",
+        "answer": "7",
+        "solution": "Subtract the second equation from the first.",
+        "options": null
+      },
+      {
+        "prompt": "A ticket and a snack cost ₹90; two tickets and a snack cost ₹145. Find one ticket price.",
+        "answer": "55",
+        "solution": "145−90=55.",
+        "options": null
+      },
+      {
+        "prompt": "Do x+y=4 and x+y=6 have a common solution?",
+        "answer": "No",
+        "solution": "The same sum cannot be both 4 and 6.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "quadratic-foundations",
+    "title": "Quadratics and number patterns",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "A squared unknown changes the equation",
+        "explain": "A quadratic equation has the form ax²+bx+c=0 with a≠0. If a product is zero, at least one factor is zero. This gives a way to solve a factorised quadratic.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "x² − 5x + 6 = 0",
+            "(x−2)(x−3) = 0",
+            "x = 2 or x = 3"
+          ]
+        },
+        "steps": [
+          "Find numbers whose sum is −5 and product is 6: −2 and −3.",
+          "Set each factor equal to zero.",
+          "Check: 2²−5×2+6=0 and 3²−5×3+6=0."
+        ],
+        "practice": [
+          {
+            "prompt": "Which are the roots of x²−7x+12=0?",
+            "answer": "3 and 4",
+            "solution": "(x−3)(x−4)=0.",
+            "options": [
+              "3 and 4",
+              "−3 and −4",
+              "2 and 6",
+              "1 and 12"
+            ]
+          },
+          {
+            "prompt": "A square has area 81 cm². Find its side in cm.",
+            "answer": "9",
+            "solution": "s²=81; a length is positive, so s=9.",
+            "options": null
+          }
+        ],
+        "remember": "An equation may have two roots, but a word problem can rule out a negative length."
+      },
+      {
+        "title": "An arithmetic progression adds the same amount",
+        "explain": "In an arithmetic progression, the difference between consecutive terms is constant. To reach the nth term from the first term, add the difference n−1 times.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "5 → 9 → 13 → 17",
+            "Common difference = 4",
+            "aₙ = 5 + (n−1)×4"
+          ]
+        },
+        "steps": [
+          "The 10th term is 5+9×4=41.",
+          "For 20,17,14,… the difference is −3.",
+          "In 2,4,8,16,… the differences change, so this is not an arithmetic progression."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the 6th term of 3,8,13,…",
+            "answer": "28",
+            "solution": "3+5×5=28.",
+            "options": null
+          },
+          {
+            "prompt": "Find the common difference of 24,19,14,…",
+            "answer": "-5",
+            "solution": "19−24=−5.",
+            "options": null
+          }
+        ],
+        "remember": "Use n−1 steps, not n, when starting from the first term."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Roots of x²−9=0?",
+        "answer": "−3 and 3",
+        "solution": "(x−3)(x+3)=0.",
+        "options": [
+          "−3 and 3",
+          "3 only",
+          "−9 and 9",
+          "0 and 9"
+        ]
+      },
+      {
+        "prompt": "Positive root of x²−6x+8=0 that is larger?",
+        "answer": "4",
+        "solution": "The roots are 2 and 4.",
+        "options": null
+      },
+      {
+        "prompt": "Find the 8th term of 4,7,10,…",
+        "answer": "25",
+        "solution": "4+7×3=25.",
+        "options": null
+      },
+      {
+        "prompt": "Find the next term: 30,26,22,…",
+        "answer": "18",
+        "solution": "Subtract 4.",
+        "options": null
+      },
+      {
+        "prompt": "Is 1,3,9,27 an arithmetic progression?",
+        "answer": "No",
+        "solution": "The differences are 2,6,18.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coordinate-distance",
+    "title": "Distance and midpoint",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "Distance makes a right triangle",
+        "explain": "Horizontal change is x₂−x₁ and vertical change is y₂−y₁. The segment joining the points is the hypotenuse of a right triangle, so its length is √[(x₂−x₁)²+(y₂−y₁)²].",
+        "visual": {
+          "kind": "distance",
+          "caption": "From A(1,1) to B(5,4): 4 units across, 3 units up, 5 units along the segment."
+        },
+        "steps": [
+          "A(1,1), B(5,4): horizontal change=4, vertical change=3.",
+          "Distance²=4²+3²=25, so distance=5.",
+          "Distance is never negative; swapping the points gives the same result."
+        ],
+        "practice": [
+          {
+            "prompt": "Distance from (0,0) to (6,8)?",
+            "answer": "10",
+            "solution": "√(36+64)=10.",
+            "options": null
+          },
+          {
+            "prompt": "Distance from (−2,3) to (4,3)?",
+            "answer": "6",
+            "solution": "The points share y=3, so the horizontal distance is 4−(−2)=6.",
+            "options": null
+          }
+        ],
+        "remember": "Square the whole coordinate difference, including its sign."
+      },
+      {
+        "title": "Midpoint means halfway in both directions",
+        "explain": "Average the x-coordinates and average the y-coordinates separately. The midpoint is ((x₁+x₂)/2, (y₁+y₂)/2).",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "A(−2,1) and B(6,5)",
+            "Average x: (−2+6)/2 = 2",
+            "Average y: (1+5)/2 = 3 → M(2,3)"
+          ]
+        },
+        "steps": [
+          "The midpoint of (−2,1) and (6,5) is (2,3).",
+          "The midpoint need not have integer coordinates.",
+          "For (0,0) and (3,5), the midpoint is (1.5,2.5)."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the x-coordinate of the midpoint of (2,3) and (8,7).",
+            "answer": "5",
+            "solution": "(2+8)/2=5.",
+            "options": null
+          },
+          {
+            "prompt": "Find the y-coordinate of the same midpoint.",
+            "answer": "5",
+            "solution": "(3+7)/2=5.",
+            "options": null
+          }
+        ],
+        "remember": "Do not mix an x-coordinate with a y-coordinate in the average."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Distance from (0,0) to (5,12)?",
+        "answer": "13",
+        "solution": "√(25+144)=13.",
+        "options": null
+      },
+      {
+        "prompt": "Distance from (3,−4) to (3,2)?",
+        "answer": "6",
+        "solution": "Vertical distance=2−(−4)=6.",
+        "options": null
+      },
+      {
+        "prompt": "Midpoint x-coordinate for (−6,2) and (4,8)?",
+        "answer": "-1",
+        "solution": "(−6+4)/2=−1.",
+        "options": null
+      },
+      {
+        "prompt": "Midpoint y-coordinate for (−6,2) and (4,8)?",
+        "answer": "5",
+        "solution": "(2+8)/2=5.",
+        "options": null
+      },
+      {
+        "prompt": "Does swapping the two endpoints change the distance?",
+        "answer": "No",
+        "solution": "The squared differences stay the same.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "similarity-trigonometry",
+    "title": "Similar triangles and trigonometry",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "Same shape, different size",
+        "explain": "Similar triangles have equal corresponding angles and proportional corresponding sides. A scale factor multiplies every corresponding length by the same number.",
+        "visual": {
+          "kind": "similar",
+          "caption": "Two right triangles with sides 3,4,5 and 6,8,10. Every length is doubled."
+        },
+        "steps": [
+          "The triangles 3,4,5 and 6,8,10 have scale factor 2.",
+          "A length of 7 cm becomes 21 cm under scale factor 3.",
+          "Areas scale by the square of the length factor: doubling lengths multiplies area by 4."
+        ],
+        "practice": [
+          {
+            "prompt": "A triangle is enlarged by factor 3. A 5 cm side becomes how many cm?",
+            "answer": "15",
+            "solution": "5×3=15.",
+            "options": null
+          },
+          {
+            "prompt": "If lengths are multiplied by 3, areas are multiplied by what?",
+            "answer": "9",
+            "solution": "3²=9.",
+            "options": null
+          }
+        ],
+        "remember": "Match corresponding sides before forming ratios."
+      },
+      {
+        "title": "Name sides from the chosen angle",
+        "explain": "In a right triangle, the hypotenuse is opposite the right angle. Relative to an acute angle θ, the opposite side is across from θ and the adjacent side touches θ but is not the hypotenuse.",
+        "visual": {
+          "kind": "trig",
+          "caption": "For the marked angle θ: opposite=3, adjacent=4 and hypotenuse=5."
+        },
+        "steps": [
+          "sin θ = opposite/hypotenuse = 3/5.",
+          "cos θ = adjacent/hypotenuse = 4/5.",
+          "tan θ = opposite/adjacent = 3/4. The ratios stay the same in a similar triangle."
+        ],
+        "practice": [
+          {
+            "prompt": "Opposite=5 and hypotenuse=13. What is sin θ?",
+            "answer": "5/13",
+            "solution": "Use opposite divided by hypotenuse.",
+            "options": [
+              "5/13",
+              "13/5",
+              "12/13",
+              "5/12"
+            ]
+          },
+          {
+            "prompt": "Opposite=6 and adjacent=8. What is tan θ?",
+            "answer": "3/4",
+            "solution": "6/8 simplifies to 3/4.",
+            "options": [
+              "3/4",
+              "4/3",
+              "3/5",
+              "4/5"
+            ]
+          }
+        ],
+        "remember": "These side-ratio definitions apply to the acute angles of a right triangle."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Scale factor from a 4 cm side to its corresponding 10 cm side?",
+        "answer": "2.5",
+        "solution": "10/4=2.5.",
+        "options": null
+      },
+      {
+        "prompt": "Length scale factor 4 gives area factor?",
+        "answer": "16",
+        "solution": "4²=16.",
+        "options": null
+      },
+      {
+        "prompt": "Opposite=8 and hypotenuse=17. Find sin θ.",
+        "answer": "8/17",
+        "solution": "Opposite/hypotenuse.",
+        "options": [
+          "8/17",
+          "15/17",
+          "8/15",
+          "17/8"
+        ]
+      },
+      {
+        "prompt": "Adjacent=12 and hypotenuse=13. Find cos θ.",
+        "answer": "12/13",
+        "solution": "Adjacent/hypotenuse.",
+        "options": [
+          "12/13",
+          "5/13",
+          "12/5",
+          "13/12"
+        ]
+      },
+      {
+        "prompt": "Opposite=9 and adjacent=12. Find tan θ.",
+        "answer": "3/4",
+        "solution": "9/12=3/4.",
+        "options": [
+          "3/4",
+          "4/3",
+          "3/5",
+          "4/5"
         ]
       }
     ]

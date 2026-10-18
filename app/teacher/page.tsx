@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
+import { getBasicsProduct } from '@/lib/basics-catalog';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
 import SolutionSteps from '@/app/solution-steps';
@@ -275,7 +276,7 @@ export default function TeacherReviewPage() {
                 <div className="payment-request-copy">
                   <span className="payment-request-status">{payment.payment_source === 'razorpay' ? `Razorpay · ${payment.status}` : payment.status}</span>
                   <strong>{payment.student_name}</strong>
-                  <small>{paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small>
+                  <small>{getBasicsProduct(payment.paper_id)?.title ?? paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small>
                 </div>
                 <div className="payment-transaction"><span>{payment.payment_source === 'razorpay' ? 'Razorpay order' : 'Transaction ID'}</span><strong>{payment.transaction_id}</strong><small>₹{(payment.amount_paise / 100).toFixed(0)}</small></div>
                 {payment.status === 'pending' && payment.payment_source === 'manual' ? (
@@ -294,7 +295,7 @@ export default function TeacherReviewPage() {
                 <p>Checked automatically. No teacher action is needed.</p>
                 {payments.filter((payment) => payment.payment_source === 'razorpay' && payment.status === 'pending').map((payment) => (
                   <div key={payment.id} className="pending-online-payment-row">
-                    <span>{payment.student_name}<small>{paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small></span>
+                    <span>{payment.student_name}<small>{getBasicsProduct(payment.paper_id)?.title ?? paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small></span>
                     <span>{payment.transaction_id}</span>
                     <span>₹{(payment.amount_paise / 100).toFixed(0)} · Pending</span>
                   </div>

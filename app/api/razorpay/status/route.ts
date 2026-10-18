@@ -1,3 +1,4 @@
+import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct } from '@/lib/integrals-products';
 import { quizChapter, quizPrice } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
@@ -37,7 +38,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     const chapter = quizChapter(paperId);
-    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     const database = getDatabase();
     const paymentRequest = await database.prepare(
