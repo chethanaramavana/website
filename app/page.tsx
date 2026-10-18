@@ -501,7 +501,8 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <nav className="primary-nav" aria-label="Main navigation">
-          <a href="/#study-library">Study Library</a>
+          <a href="/maths-basics">Maths Basics</a>
+          <a href="/#study-library">Grade-wise Practice</a>
           <a href="/#previous-papers">Previous Papers</a>
           <a href="#help-desk">Help Desk</a>
         </nav>
@@ -575,32 +576,22 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
 
 function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) {
   return (
-    <div className="home-view">
-      <section className="learning-hero" aria-labelledby="hero-title">
-        <div className="hero-copy">
-          <p className="hero-kicker"><BookOpen /> Built for exam practice</p>
-          <h1 id="hero-title">Maths gets easier when you practise the <span>right questions.</span></h1>
-          <p className="hero-intro">Work chapter by chapter with exam-style MCQs, mark-wise questions and handwritten-answer uploads.</p>
-          <button className="hero-action" type="button" onClick={() => onOpenBoard('CBSE')}>Start CBSE practice <ArrowRight /></button>
-          <div className="hero-highlights" aria-label="Practice features">
-            <span>Exam-style</span><span>Chapter-wise</span><span>Write & upload</span>
-          </div>
-        </div>
-        <div className="hero-visual" aria-label="Students learning mathematics together">
-          <div className="study-photo-shape"><img src="/students-studying.webp" alt="High-school students solving mathematics together with books and pens" width="1200" height="600" decoding="async" fetchPriority="high" /></div>
-          <span className="math-note note-one">x² + y²</span>
-          <span className="math-note note-two">√2</span>
-        </div>
+    <div className="home-view home-organised">
+      <section className="home-welcome" aria-labelledby="hero-title">
+        <div><p className="home-eyebrow">RAMAVANA MATHEMATICAL CENTRE</p><h1 id="hero-title">Understand maths.<br/><span>Build confidence.</span></h1><p>Start with the basics, practise your chapter or prepare for your next exam.</p></div>
+        <img src="/students-studying.webp" alt="Students working through mathematics together" width="1200" height="600" fetchPriority="high"/>
       </section>
-      <section className="library-section" aria-labelledby="basics-folder-title">
-        <div className="section-heading"><div><p>Build your basics. Grow your confidence.</p><h2 id="basics-folder-title">Struggling with maths basics?</h2><span>Start where you are and learn one small step at a time.</span></div></div>
-        <a href="/maths-basics" className="folder-card board-folder board-1" style={{textDecoration:'none',maxWidth:720}}>
-          <span className="folder-icon"><FolderOpen /></span><span className="folder-copy"><strong>Maths Step by Step</strong><small>Common foundations · Grades 5–10</small></span><span className="folder-status ready">First topic free</span><ChevronRight className="folder-arrow" />
-        </a>
+      <section className="home-choices" aria-labelledby="home-choices-title">
+        <h2 id="home-choices-title">What would you like to learn?</h2>
+        <div className="home-choice-grid">
+          <a className="home-choice choice-basics" href="/maths-basics"><span className="home-choice-icon"><FolderOpen/></span><span className="home-choice-tag">BUILD YOUR FOUNDATION</span><h3>Maths Step by Step</h3><p>Struggling with maths basics? Learn one small step at a time.</p><small>Common foundations · Grades 5–10</small><strong>Start free <ArrowRight/></strong></a>
+          <a className="home-choice choice-grades" href="#study-library"><span className="home-choice-icon"><BookOpen/></span><span className="home-choice-tag">PRACTISE YOUR CHAPTER</span><h3>Grade-wise practice</h3><p>Find notes, MCQs and question papers for your board and grade.</p><small>CBSE · ICSE</small><strong>Choose your board <ArrowRight/></strong></a>
+          <a className="home-choice choice-exams" href="#previous-papers"><span className="home-choice-icon"><FileText/></span><span className="home-choice-tag">PREPARE FOR EXAMS</span><h3>Previous papers</h3><p>Explore official CBSE papers, sample papers and marking schemes.</p><small>Official CBSE resources</small><strong>Browse papers <ArrowRight/></strong></a>
+        </div>
       </section>
       <section className="library-section" id="study-library" aria-labelledby="curriculum-title">
         <div className="section-heading">
-          <div><p>Ready to begin?</p><h2 id="curriculum-title">Where do you study?</h2><span>Tap your board and start practising.</span></div>
+          <div><h2 id="curriculum-title">Choose your board</h2><span>Then choose your grade and chapter.</span></div>
         </div>
         <div className="board-grid">
           {boards.map((item, index) => (
