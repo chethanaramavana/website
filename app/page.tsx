@@ -592,6 +592,12 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           <span className="math-note note-two">√2</span>
         </div>
       </section>
+      <section className="library-section" aria-labelledby="basics-folder-title">
+        <div className="section-heading"><div><p>Build your basics. Grow your confidence.</p><h2 id="basics-folder-title">Struggling with maths basics?</h2><span>Start where you are and learn one small step at a time.</span></div></div>
+        <a href="/maths-basics" className="folder-card board-folder board-1" style={{textDecoration:'none',maxWidth:720}}>
+          <span className="folder-icon"><FolderOpen /></span><span className="folder-copy"><strong>Maths Step by Step</strong><small>Common foundations · Grades 5–10</small></span><span className="folder-status ready">First topic free</span><ChevronRight className="folder-arrow" />
+        </a>
+      </section>
       <section className="library-section" id="study-library" aria-labelledby="curriculum-title">
         <div className="section-heading">
           <div><p>Ready to begin?</p><h2 id="curriculum-title">Where do you study?</h2><span>Tap your board and start practising.</span></div>

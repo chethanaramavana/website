@@ -1,0 +1,164 @@
+{
+  "slug": "numbers",
+  "title": "Counting, whole numbers and place value",
+  "tier": "free",
+  "concepts": [
+    {
+      "title": "Natural numbers and zero",
+      "explain": "Touch each object once as you count. The last number tells you how many objects there are. Here we use natural numbers 1, 2, 3, … . Whole numbers also include 0.",
+      "visual": {
+        "kind": "counters",
+        "groups": [
+          5,
+          3,
+          0
+        ],
+        "labels": [
+          "5 shells",
+          "3 shells",
+          "0 shells"
+        ]
+      },
+      "steps": [
+        "Five shells and three shells make eight shells.",
+        "An empty collection has 0 objects. Zero is a number, not an empty answer."
+      ],
+      "practice": [
+        {
+          "prompt": "An empty basket contains how many mangoes?",
+          "answer": "0",
+          "solution": "An empty basket has 0 mangoes.",
+          "options": null
+        },
+        {
+          "prompt": "Which is a whole number but is not a natural number in this course?",
+          "answer": "0",
+          "solution": "Our natural numbers start at 1; whole numbers start at 0.",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "10"
+          ]
+        }
+      ],
+      "remember": "Zero is neither positive nor negative. There is no largest natural number."
+    },
+    {
+      "title": "Tens, hundreds and thousands",
+      "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. A digit gets its value from its position.",
+      "visual": {
+        "kind": "place",
+        "digits": [
+          2,
+          4,
+          6
+        ],
+        "labels": [
+          "Hundreds",
+          "Tens",
+          "Ones"
+        ]
+      },
+      "steps": [
+        "246 = 200 + 40 + 6.",
+        "The digit 4 is in the tens place, so its value is 40.",
+        "In 2,406, the zero keeps the tens place: 2,000 + 400 + 0 + 6."
+      ],
+      "practice": [
+        {
+          "prompt": "What is the value of 7 in 3,752?",
+          "answer": "700",
+          "solution": "7 is in the hundreds place: 7 × 100 = 700.",
+          "options": null
+        },
+        {
+          "prompt": "Which number means 5 hundreds, 0 tens and 9 ones?",
+          "answer": "509",
+          "solution": "500 + 0 + 9 = 509.",
+          "options": [
+            "590",
+            "509",
+            "59",
+            "5,009"
+          ]
+        }
+      ],
+      "remember": "A digit and its value are different: the digit is 7, but its value may be 700."
+    },
+    {
+      "title": "Compare and estimate",
+      "explain": "Compare whole numbers by their number of digits, then from the left. Estimation helps you check whether an answer makes sense.",
+      "visual": {
+        "kind": "numberline",
+        "min": 0,
+        "max": 10,
+        "start": 4,
+        "end": 7,
+        "caption": "7 is farther right than 4, so 7 > 4."
+      },
+      "steps": [
+        "3,481 > 3,418: thousands and hundreds match; compare 8 tens with 1 ten.",
+        "To round 368 to the nearest ten, look at the ones digit 8. Round up to 370.",
+        "A library has 198 storybooks and 303 science books. About 200 + 300 = 500 books."
+      ],
+      "practice": [
+        {
+          "prompt": "Round 542 to the nearest ten.",
+          "answer": "540",
+          "solution": "The ones digit 2 is below 5, so round down to 540.",
+          "options": null
+        },
+        {
+          "prompt": "Which is greatest?",
+          "answer": "6,120",
+          "solution": "Compare thousands first, then hundreds and tens.",
+          "options": [
+            "6,012",
+            "6,102",
+            "6,120",
+            "6,021"
+          ]
+        }
+      ],
+      "remember": "Use > for greater than, < for less than, and = for equal to. An estimate is not the exact answer."
+    }
+  ],
+  "test": [
+    {
+      "prompt": "What is the smallest whole number?",
+      "answer": "0",
+      "solution": "Whole numbers begin with 0.",
+      "options": null
+    },
+    {
+      "prompt": "What is the value of 8 in 4,836?",
+      "answer": "800",
+      "solution": "8 hundreds = 800.",
+      "options": null
+    },
+    {
+      "prompt": "Write the number: 6 hundreds, 2 tens and 4 ones.",
+      "answer": "624",
+      "solution": "600 + 20 + 4 = 624.",
+      "options": null
+    },
+    {
+      "prompt": "Round 787 to the nearest ten.",
+      "answer": "790",
+      "solution": "The ones digit 7 tells us to round up.",
+      "options": null
+    },
+    {
+      "prompt": "Which number is less than 5,406?",
+      "answer": "5,399",
+      "solution": "5,399 has fewer hundreds than 5,406.",
+      "options": [
+        "5,460",
+        "5,406",
+        "5,399",
+        "5,604"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2426 @@
+[
+  {
+    "slug": "numbers",
+    "title": "Counting, whole numbers and place value",
+    "tier": "free",
+    "concepts": [
+      {
+        "title": "Natural numbers and zero",
+        "explain": "Touch each object once as you count. The last number tells you how many objects there are. Here we use natural numbers 1, 2, 3, … . Whole numbers also include 0.",
+        "visual": {
+          "kind": "counters",
+          "groups": [
+            5,
+            3,
+            0
+          ],
+          "labels": [
+            "5 shells",
+            "3 shells",
+            "0 shells"
+          ]
+        },
+        "steps": [
+          "Five shells and three shells make eight shells.",
+          "An empty collection has 0 objects. Zero is a number, not an empty answer."
+        ],
+        "practice": [
+          {
+            "prompt": "An empty basket contains how many mangoes?",
+            "answer": "0",
+            "solution": "An empty basket has 0 mangoes.",
+            "options": null
+          },
+          {
+            "prompt": "Which is a whole number but is not a natural number in this course?",
+            "answer": "0",
+            "solution": "Our natural numbers start at 1; whole numbers start at 0.",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "10"
+            ]
+          }
+        ],
+        "remember": "Zero is neither positive nor negative. There is no largest natural number."
+      },
+      {
+        "title": "Tens, hundreds and thousands",
+        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. A digit gets its value from its position.",
+        "visual": {
+          "kind": "place",
+          "digits": [
+            2,
+            4,
+            6
+          ],
+          "labels": [
+            "Hundreds",
+            "Tens",
+            "Ones"
+          ]
+        },
+        "steps": [
+          "246 = 200 + 40 + 6.",
+          "The digit 4 is in the tens place, so its value is 40.",
+          "In 2,406, the zero keeps the tens place: 2,000 + 400 + 0 + 6."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the value of 7 in 3,752?",
+            "answer": "700",
+            "solution": "7 is in the hundreds place: 7 × 100 = 700.",
+            "options": null
+          },
+          {
+            "prompt": "Which number means 5 hundreds, 0 tens and 9 ones?",
+            "answer": "509",
+            "solution": "500 + 0 + 9 = 509.",
+            "options": [
+              "590",
+              "509",
+              "59",
+              "5,009"
+            ]
+          }
+        ],
+        "remember": "A digit and its value are different: the digit is 7, but its value may be 700."
+      },
+      {
+        "title": "Compare and estimate",
+        "explain": "Compare whole numbers by their number of digits, then from the left. Estimation helps you check whether an answer makes sense.",
+        "visual": {
+          "kind": "numberline",
+          "min": 0,
+          "max": 10,
+          "start": 4,
+          "end": 7,
+          "caption": "7 is farther right than 4, so 7 > 4."
+        },
+        "steps": [
+          "3,481 > 3,418: thousands and hundreds match; compare 8 tens with 1 ten.",
+          "To round 368 to the nearest ten, look at the ones digit 8. Round up to 370.",
+          "A library has 198 storybooks and 303 science books. About 200 + 300 = 500 books."
+        ],
+        "practice": [
+          {
+            "prompt": "Round 542 to the nearest ten.",
+            "answer": "540",
+            "solution": "The ones digit 2 is below 5, so round down to 540.",
+            "options": null
+          },
+          {
+            "prompt": "Which is greatest?",
+            "answer": "6,120",
+            "solution": "Compare thousands first, then hundreds and tens.",
+            "options": [
+              "6,012",
+              "6,102",
+              "6,120",
+              "6,021"
+            ]
+          }
+        ],
+        "remember": "Use > for greater than, < for less than, and = for equal to. An estimate is not the exact answer."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "What is the smallest whole number?",
+        "answer": "0",
+        "solution": "Whole numbers begin with 0.",
+        "options": null
+      },
+      {
+        "prompt": "What is the value of 8 in 4,836?",
+        "answer": "800",
+        "solution": "8 hundreds = 800.",
+        "options": null
+      },
+      {
+        "prompt": "Write the number: 6 hundreds, 2 tens and 4 ones.",
+        "answer": "624",
+        "solution": "600 + 20 + 4 = 624.",
+        "options": null
+      },
+      {
+        "prompt": "Round 787 to the nearest ten.",
+        "answer": "790",
+        "solution": "The ones digit 7 tells us to round up.",
+        "options": null
+      },
+      {
+        "prompt": "Which number is less than 5,406?",
+        "answer": "5,399",
+        "solution": "5,399 has fewer hundreds than 5,406.",
+        "options": [
+          "5,460",
+          "5,406",
+          "5,399",
+          "5,604"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "addition-subtraction",
+    "title": "Addition and subtraction",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Join and compare groups",
+        "explain": "Addition combines amounts. Subtraction can mean taking away, finding what is missing, or comparing two amounts. Draw the quantities before choosing the operation.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            8,
+            5
+          ],
+          "labels": [
+            "Asha: 8 stickers",
+            "Dev: 5 stickers"
+          ]
+        },
+        "steps": [
+          "Together: 8 + 5 = 13 stickers.",
+          "Difference: 8 − 5 = 3 stickers.",
+          "Dev needs 3 more to have the same number as Asha."
+        ],
+        "practice": [
+          {
+            "prompt": "Mira has 9 beads and receives 6 more. How many now?",
+            "answer": "15",
+            "solution": "Join the amounts: 9 + 6 = 15.",
+            "options": null
+          },
+          {
+            "prompt": "A bag has 14 apples and another has 9. How many more are in the first?",
+            "answer": "5",
+            "solution": "Compare by subtraction: 14 − 9 = 5.",
+            "options": null
+          }
+        ],
+        "remember": "“More” does not always tell you to add. “How many more?” often asks for a difference."
+      },
+      {
+        "title": "Addition with regrouping",
+        "explain": "Keep ones under ones and tens under tens. When a column contains ten or more, exchange ten of that unit for one unit in the next column.",
+        "visual": {
+          "kind": "column",
+          "a": 268,
+          "b": 157,
+          "op": "+",
+          "result": 425
+        },
+        "steps": [
+          "Ones: 8 + 7 = 15. Write 5 ones and carry 1 ten.",
+          "Tens: 6 + 5 + 1 = 12 tens. Write 2 tens and carry 1 hundred.",
+          "Hundreds: 2 + 1 + 1 = 4. The sum is 425."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 176 + 248.",
+            "answer": "424",
+            "solution": "6 + 8 = 14; 7 + 4 + 1 = 12; 1 + 2 + 1 = 4. Total 424.",
+            "options": null
+          },
+          {
+            "prompt": "A school buys 235 pencils and then 187 pencils. Find the total.",
+            "answer": "422",
+            "solution": "235 + 187 = 422 pencils.",
+            "options": null
+          }
+        ],
+        "remember": "A carried 1 means one ten, one hundred or another place-value unit—not always one single object."
+      },
+      {
+        "title": "Subtraction with regrouping",
+        "explain": "Exchange a larger unit when a column does not contain enough. Regrouping changes how the number is written, but not its value.",
+        "visual": {
+          "kind": "column",
+          "a": 502,
+          "b": 178,
+          "op": "−",
+          "result": 324
+        },
+        "steps": [
+          "502 is 5 hundreds, 0 tens and 2 ones.",
+          "Exchange: 4 hundreds, 9 tens and 12 ones still make 502.",
+          "12 − 8 = 4; 9 − 7 = 2; 4 − 1 = 3. So 502 − 178 = 324.",
+          "Check: 324 + 178 = 502."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 604 − 286.",
+            "answer": "318",
+            "solution": "Regroup 604 as 5 hundreds, 9 tens and 14 ones; subtract to get 318.",
+            "options": null
+          },
+          {
+            "prompt": "You pay ₹500 for a ₹368 bag. What is the change?",
+            "answer": "132",
+            "solution": "500 − 368 = 132. Check: 368 + 132 = 500.",
+            "options": null
+          }
+        ],
+        "remember": "Subtract the lower number from the upper number in each column after regrouping; do not reverse individual digits."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 357 + 286.",
+        "answer": "643",
+        "solution": "Add with regrouping: 643.",
+        "options": null
+      },
+      {
+        "prompt": "Find 703 − 458.",
+        "answer": "245",
+        "solution": "Regroup through the zero; the difference is 245.",
+        "options": null
+      },
+      {
+        "prompt": "Two shelves hold 128 and 96 books. How many altogether?",
+        "answer": "224",
+        "solution": "128 + 96 = 224.",
+        "options": null
+      },
+      {
+        "prompt": "A team scores 72; another scores 58. What is the difference?",
+        "answer": "14",
+        "solution": "72 − 58 = 14.",
+        "options": null
+      },
+      {
+        "prompt": "Find the missing number: 249 + □ = 600.",
+        "answer": "351",
+        "solution": "600 − 249 = 351.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "multiplication-division",
+    "title": "Multiplication and division",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Equal groups and times tables",
+        "explain": "Multiplication counts equal groups. Learn a table by building or splitting groups, not only by reciting it.",
+        "visual": {
+          "kind": "array",
+          "rows": 4,
+          "cols": 6,
+          "caption": "4 rows of 6 counters: 4 × 6 = 24"
+        },
+        "steps": [
+          "6 + 6 + 6 + 6 = 24.",
+          "4 × 6 and 6 × 4 both count 24 counters.",
+          "To find 7 × 6, use 5 × 6 + 2 × 6 = 30 + 12 = 42."
+        ],
+        "practice": [
+          {
+            "prompt": "There are 8 packets with 4 biscuits each. How many biscuits?",
+            "answer": "32",
+            "solution": "8 equal groups of 4: 8 × 4 = 32.",
+            "options": null
+          },
+          {
+            "prompt": "Find 9 × 7 using 10 × 7 − 7.",
+            "answer": "63",
+            "solution": "70 − 7 = 63.",
+            "options": null
+          }
+        ],
+        "remember": "Unequal groups cannot be counted by multiplying the number of groups by just one group’s size."
+      },
+      {
+        "title": "Multiply using place value",
+        "explain": "Break a number into tens and ones. Each part must be multiplied. The written method is a shorter record of these partial products.",
+        "visual": {
+          "kind": "area",
+          "width": 13,
+          "height": 4,
+          "split": 10,
+          "caption": "13 × 4 = (10 × 4) + (3 × 4) = 52"
+        },
+        "steps": [
+          "For 36 × 24, split 24 into 20 + 4.",
+          "36 × 4 = 144; 36 × 20 = 720.",
+          "Add the partial products: 144 + 720 = 864.",
+          "Estimate: 40 × 20 = 800, so 864 is reasonable."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 23 × 6.",
+            "answer": "138",
+            "solution": "20 × 6 + 3 × 6 = 120 + 18 = 138.",
+            "options": null
+          },
+          {
+            "prompt": "Find 42 × 13.",
+            "answer": "546",
+            "solution": "42 × 10 + 42 × 3 = 420 + 126 = 546.",
+            "options": null
+          }
+        ],
+        "remember": "In the tens row, multiply by 20, not by 2. The place-value zero matters."
+      },
+      {
+        "title": "Sharing, grouping and remainders",
+        "explain": "Division can share a total equally or count how many equal groups fit. A remainder is what is left after making complete groups.",
+        "visual": {
+          "kind": "groups",
+          "groups": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "labels": [
+            "Group 1",
+            "Group 2",
+            "Group 3",
+            "Group 4"
+          ]
+        },
+        "steps": [
+          "16 counters shared among 4 groups gives 4 in each: 16 ÷ 4 = 4.",
+          "For 157 ÷ 6: 15 tens ÷ 6 gives 2 tens, with 3 tens left.",
+          "Bring down 7 ones: 37 ÷ 6 gives 6 ones, remainder 1. So 157 ÷ 6 = 26 remainder 1.",
+          "Check: 6 × 26 + 1 = 157. If 157 children need 6-seat vans, 27 vans are needed."
+        ],
+        "practice": [
+          {
+            "prompt": "144 pencils are packed 12 per box. How many boxes?",
+            "answer": "12",
+            "solution": "12 × 12 = 144, so 144 ÷ 12 = 12.",
+            "options": null
+          },
+          {
+            "prompt": "29 children travel in cars with 4 child seats each. How many cars are needed?",
+            "answer": "8",
+            "solution": "29 ÷ 4 = 7 remainder 1. Seven cars leave one child, so use eight.",
+            "options": null
+          }
+        ],
+        "remember": "The remainder must be smaller than the divisor. Division by zero is undefined."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 8 × 9.",
+        "answer": "72",
+        "solution": "8 × 10 − 8 = 72.",
+        "options": null
+      },
+      {
+        "prompt": "Find 27 × 14.",
+        "answer": "378",
+        "solution": "270 + 108 = 378.",
+        "options": null
+      },
+      {
+        "prompt": "Find 168 ÷ 7.",
+        "answer": "24",
+        "solution": "7 × 24 = 168.",
+        "options": null
+      },
+      {
+        "prompt": "What is the remainder when 95 is divided by 8?",
+        "answer": "7",
+        "solution": "8 × 11 = 88; 95 − 88 = 7.",
+        "options": null
+      },
+      {
+        "prompt": "A trip has 53 people and 10 seats per van. How many vans?",
+        "answer": "6",
+        "solution": "Five vans seat 50, so a sixth is needed.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "integers",
+    "title": "Integers and directed changes",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Numbers on both sides of zero",
+        "explain": "Positive and negative numbers describe opposite directions from a chosen zero: above or below sea level, gain or loss, or warmer or colder than 0°C.",
+        "visual": {
+          "kind": "numberline",
+          "min": -6,
+          "max": 6,
+          "start": -4,
+          "end": 2,
+          "caption": "−4 < 2 because −4 lies to the left of 2."
+        },
+        "steps": [
+          "Integers are …, −3, −2, −1, 0, 1, 2, 3, … .",
+          "−2 is greater than −5 because it is farther right.",
+          "The distance of −5 from zero is 5; this is its absolute value."
+        ],
+        "practice": [
+          {
+            "prompt": "Which is greater?",
+            "answer": "−3",
+            "solution": "−3 lies to the right of −8.",
+            "options": [
+              "−8",
+              "−3"
+            ]
+          },
+          {
+            "prompt": "What is the distance of −7 from zero?",
+            "answer": "7",
+            "solution": "Distance is non-negative: 7 units.",
+            "options": null
+          }
+        ],
+        "remember": "A larger negative numeral can represent a smaller number: −90 < −9."
+      },
+      {
+        "title": "Add and subtract integers",
+        "explain": "On a number line, add a positive number by moving right and a negative number by moving left. Subtracting a number means adding its opposite.",
+        "visual": {
+          "kind": "numberline",
+          "min": -6,
+          "max": 6,
+          "start": -3,
+          "end": 2,
+          "caption": "Start at −3 and move 5 right: −3 + 5 = 2."
+        },
+        "steps": [
+          "−3 + 5 = 2: five rightward steps from −3.",
+          "4 + (−7) = −3: seven leftward steps from 4.",
+          "−2 − (−6) = −2 + 6 = 4.",
+          "A temperature rises from −4°C by 9°C: −4 + 9 = 5°C."
+        ],
+        "practice": [
+          {
+            "prompt": "Find −8 + 13.",
+            "answer": "5",
+            "solution": "Move 13 right from −8 to 5.",
+            "options": null
+          },
+          {
+            "prompt": "Find 3 − (−4).",
+            "answer": "7",
+            "solution": "Subtracting −4 adds its opposite: 3 + 4 = 7.",
+            "options": null
+          }
+        ],
+        "remember": "For unlike signs in addition, compare magnitudes. Do not apply multiplication sign rules to addition."
+      },
+      {
+        "title": "Multiply and divide signed numbers",
+        "explain": "Equal repeated losses give a negative total. The sign pattern for products extends consistently: same signs give a positive result; different signs give a negative result. Division uses the same sign pattern.",
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "3 × (−4)",
+              "−12"
+            ],
+            [
+              "2 × (−4)",
+              "−8"
+            ],
+            [
+              "1 × (−4)",
+              "−4"
+            ],
+            [
+              "0 × (−4)",
+              "0"
+            ],
+            [
+              "(−1) × (−4)",
+              "4"
+            ]
+          ],
+          "caption": "Each step reduces the first factor by 1; the product increases by 4."
+        },
+        "steps": [
+          "A loss of ₹6 on each of 5 days is 5 × (−6) = −30.",
+          "(−7) × (−3) = 21.",
+          "(−48) ÷ 6 = −8 because 6 × (−8) = −48.",
+          "0 ÷ (−5) = 0, but (−5) ÷ 0 is undefined."
+        ],
+        "practice": [
+          {
+            "prompt": "Find (−9) × (−4).",
+            "answer": "36",
+            "solution": "Two negative factors give a positive product: 36.",
+            "options": null
+          },
+          {
+            "prompt": "Find 63 ÷ (−7).",
+            "answer": "-9",
+            "solution": "Different signs give a negative quotient: −9.",
+            "options": null
+          }
+        ],
+        "remember": "“Two negatives make a positive” applies to multiplication and division, not to −4 + (−3)."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Which is the smallest?",
+        "answer": "−12",
+        "solution": "The leftmost number is −12.",
+        "options": [
+          "−12",
+          "−2",
+          "0",
+          "5"
+        ]
+      },
+      {
+        "prompt": "Find −14 + 9.",
+        "answer": "-5",
+        "solution": "14 negative units and 9 positive units leave 5 negative units.",
+        "options": null
+      },
+      {
+        "prompt": "Find −6 − (−11).",
+        "answer": "5",
+        "solution": "−6 + 11 = 5.",
+        "options": null
+      },
+      {
+        "prompt": "Find (−8) × 7.",
+        "answer": "-56",
+        "solution": "Different signs: −56.",
+        "options": null
+      },
+      {
+        "prompt": "At −3°C, temperature falls by 8°C. Find the new temperature.",
+        "answer": "-11",
+        "solution": "−3 − 8 = −11°C.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "operation-order",
+    "title": "DMAS and brackets",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Equal priority: work from left to right",
+        "explain": "Multiplication and division have equal priority. Addition and subtraction have equal priority. Do the multiplication/division stage first, then the addition/subtraction stage.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "24 ÷ 6 × 2",
+            "4 × 2",
+            "8"
+          ],
+          "caption": "Division comes first here because it is farther left—not because D always beats M."
+        },
+        "steps": [
+          "18 − 6 + 2 = 12 + 2 = 14.",
+          "5 + 3 × 4 = 5 + 12 = 17.",
+          "24 ÷ 6 × 2 = 4 × 2 = 8."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 30 ÷ 5 × 3.",
+            "answer": "18",
+            "solution": "Work left to right: 6 × 3 = 18.",
+            "options": null
+          },
+          {
+            "prompt": "Find 20 − 7 + 4.",
+            "answer": "17",
+            "solution": "Work left to right: 13 + 4 = 17.",
+            "options": null
+          }
+        ],
+        "remember": "DMAS does not mean “do every division before every multiplication.”"
+      },
+      {
+        "title": "Brackets and a story calculation",
+        "explain": "Brackets group an amount that must be calculated first. If powers occur, evaluate them after brackets and before multiplication/division.",
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "3 × (8 + 2) − 4",
+            "3 × 10 − 4",
+            "30 − 4",
+            "26"
+          ],
+          "caption": "Three packs contain 8 red and 2 blue pens each; 4 pens are used."
+        },
+        "steps": [
+          "Each pack contains 8 + 2 = 10 pens.",
+          "Three packs contain 3 × 10 = 30 pens.",
+          "After using 4, there are 30 − 4 = 26 pens.",
+          "Compare 2 × 3² = 18 with (2 × 3)² = 36."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 7 × (9 − 5) + 3.",
+            "answer": "31",
+            "solution": "Brackets: 4. Multiply: 28. Add: 31.",
+            "options": null
+          },
+          {
+            "prompt": "Find 4 + 2³ × 3.",
+            "answer": "28",
+            "solution": "Power 2³ = 8; multiply 8 × 3 = 24; add 4 to get 28.",
+            "options": null
+          }
+        ],
+        "remember": "Read the story before writing an expression. Brackets must represent the intended groups."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 48 ÷ 8 × 2.",
+        "answer": "12",
+        "solution": "6 × 2 = 12.",
+        "options": null
+      },
+      {
+        "prompt": "Find 25 − 9 + 6.",
+        "answer": "22",
+        "solution": "16 + 6 = 22.",
+        "options": null
+      },
+      {
+        "prompt": "Find 6 + 5 × 7.",
+        "answer": "41",
+        "solution": "Multiply first: 6 + 35 = 41.",
+        "options": null
+      },
+      {
+        "prompt": "Find (18 + 6) ÷ 3.",
+        "answer": "8",
+        "solution": "24 ÷ 3 = 8.",
+        "options": null
+      },
+      {
+        "prompt": "Five boxes have 6 pencils each; 8 pencils are given away. How many remain?",
+        "answer": "22",
+        "solution": "5 × 6 − 8 = 22.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "factors-multiples",
+    "title": "Factors, multiples and primes",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Factors make exact rectangles",
+        "explain": "A positive factor divides a positive whole number without a remainder. Find factor pairs by arranging all the counters into complete rectangular arrays.",
+        "visual": {
+          "kind": "factorpairs",
+          "n": 18,
+          "pairs": [
+            [
+              1,
+              18
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        "steps": [
+          "18 = 1 × 18 = 2 × 9 = 3 × 6.",
+          "The positive factors are 1, 2, 3, 6, 9 and 18.",
+          "4 is not a factor: 18 ÷ 4 leaves a remainder."
+        ],
+        "practice": [
+          {
+            "prompt": "How many positive factors does 10 have?",
+            "answer": "4",
+            "solution": "The factors are 1, 2, 5 and 10.",
+            "options": null
+          },
+          {
+            "prompt": "Which is a factor of 28?",
+            "answer": "7",
+            "solution": "28 ÷ 7 = 4 exactly.",
+            "options": [
+              "3",
+              "5",
+              "7",
+              "9"
+            ]
+          }
+        ],
+        "remember": "List both numbers in every factor pair, but count a repeated factor only once."
+      },
+      {
+        "title": "Multiples and divisibility",
+        "explain": "Multiples are obtained by multiplying by whole numbers. Positive multiples keep going forever. Divisibility rules help you test for factors.",
+        "visual": {
+          "kind": "multiples",
+          "a": 3,
+          "b": 7,
+          "limit": 28
+        },
+        "steps": [
+          "Positive multiples of 7 are 7, 14, 21, 28, … . Zero is also a multiple of 7.",
+          "Divisible by 2: even last digit; by 5: last digit 0 or 5; by 10: last digit 0.",
+          "For 3 or 9, add the digits. 351 has digit sum 9, so it is divisible by both 3 and 9.",
+          "For 4, check the last two digits: 516 is divisible by 4 because 16 is."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the sixth positive multiple of 7?",
+            "answer": "42",
+            "solution": "7 × 6 = 42.",
+            "options": null
+          },
+          {
+            "prompt": "Which number is divisible by 9?",
+            "answer": "243",
+            "solution": "2 + 4 + 3 = 9.",
+            "options": [
+              "241",
+              "242",
+              "243",
+              "244"
+            ]
+          }
+        ],
+        "remember": "A factor fits into a number. A multiple is made by multiplying that number."
+      },
+      {
+        "title": "Prime and composite numbers",
+        "explain": "A prime is a positive whole number greater than 1 with exactly two positive factors. A composite number has more than two.",
+        "visual": {
+          "kind": "factorpairs",
+          "n": 15,
+          "pairs": [
+            [
+              1,
+              15
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        "steps": [
+          "13 has only 1 and 13 as factors, so it is prime.",
+          "15 has 1, 3, 5 and 15, so it is composite.",
+          "1 has only one positive factor, so it is neither prime nor composite.",
+          "2 is the only even prime."
+        ],
+        "practice": [
+          {
+            "prompt": "Which is prime?",
+            "answer": "19",
+            "solution": "19 has only factors 1 and 19.",
+            "options": [
+              "21",
+              "25",
+              "19",
+              "27"
+            ]
+          },
+          {
+            "prompt": "How many positive factors does a prime number have?",
+            "answer": "2",
+            "solution": "Exactly two: 1 and itself.",
+            "options": null
+          }
+        ],
+        "remember": "Odd does not mean prime: 9, 15 and 21 are odd composite numbers."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Which divides 32 exactly?",
+        "answer": "8",
+        "solution": "32 ÷ 8 = 4.",
+        "options": [
+          "3",
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "prompt": "What is the fifth positive multiple of 9?",
+        "answer": "45",
+        "solution": "9 × 5 = 45.",
+        "options": null
+      },
+      {
+        "prompt": "Is 1 prime, composite or neither?",
+        "answer": "Neither",
+        "solution": "1 has only one factor.",
+        "options": [
+          "Prime",
+          "Composite",
+          "Neither"
+        ]
+      },
+      {
+        "prompt": "Which is divisible by 4?",
+        "answer": "732",
+        "solution": "Its last two digits, 32, are divisible by 4.",
+        "options": [
+          "730",
+          "731",
+          "732",
+          "734"
+        ]
+      },
+      {
+        "prompt": "How many positive factors does 16 have?",
+        "answer": "5",
+        "solution": "1, 2, 4, 8 and 16.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "hcf-lcm",
+    "title": "HCF, LCM and word problems",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Prime factorisation",
+        "explain": "Break a composite number into factors until every factor is prime. Different factor trees lead to the same prime factors, apart from order.",
+        "visual": {
+          "kind": "tree",
+          "n": 60,
+          "left": 6,
+          "right": 10,
+          "leaves": [
+            2,
+            3,
+            2,
+            5
+          ]
+        },
+        "steps": [
+          "60 = 6 × 10.",
+          "6 = 2 × 3 and 10 = 2 × 5.",
+          "So 60 = 2 × 2 × 3 × 5 = 2² × 3 × 5."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the missing prime in 42 = 2 × 3 × □?",
+            "answer": "7",
+            "solution": "42 ÷ 6 = 7.",
+            "options": null
+          },
+          {
+            "prompt": "How many factors of 2 appear in the prime factorisation of 40?",
+            "answer": "3",
+            "solution": "40 = 2 × 2 × 2 × 5.",
+            "options": null
+          }
+        ],
+        "remember": "The leaves of a completed prime factor tree must all be prime; 1 is not a prime factor."
+      },
+      {
+        "title": "HCF: largest equal groups or lengths",
+        "explain": "The highest common factor is the greatest positive number that divides all the given numbers. Use it when something must fit exactly into each amount.",
+        "visual": {
+          "kind": "strips",
+          "lengths": [
+            24,
+            36
+          ],
+          "unit": 12,
+          "caption": "24 cm and 36 cm ribbons cut into the longest equal pieces: 12 cm."
+        },
+        "steps": [
+          "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.",
+          "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+          "The largest common factor is 12. Cut 2 pieces from 24 cm and 3 from 36 cm.",
+          "With prime factors, keep only common primes, using the smaller power."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the HCF of 14 and 35.",
+            "answer": "7",
+            "solution": "Common factors are 1 and 7; the greatest is 7.",
+            "options": null
+          },
+          {
+            "prompt": "20 red and 30 blue beads form the greatest possible number of identical packets, with none left. How many packets?",
+            "answer": "10",
+            "solution": "HCF(20,30)=10. Each packet has 2 red and 3 blue beads.",
+            "options": null
+          }
+        ],
+        "remember": "In the bead problem, HCF gives the number of packets—not the total beads per packet."
+      },
+      {
+        "title": "LCM: first shared repeat",
+        "explain": "The least common multiple is the smallest positive number that is a multiple of all the given numbers. Use it for events repeating together or the smallest common total.",
+        "visual": {
+          "kind": "multiples",
+          "a": 4,
+          "b": 6,
+          "limit": 24
+        },
+        "steps": [
+          "A bell rings every 4 minutes; another every 6 minutes. They ring together now.",
+          "Their positive common multiples start at 12, then 24. They next ring together after 12 minutes.",
+          "With prime factors, use every prime needed, taking the larger power.",
+          "HCF divides into both amounts; LCM is divisible by both amounts."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the LCM of 6 and 15.",
+            "answer": "30",
+            "solution": "6=2×3 and 15=3×5. LCM=2×3×5=30.",
+            "options": null
+          },
+          {
+            "prompt": "Two lights flash every 8 and 12 seconds, together now. After how many seconds do they next flash together?",
+            "answer": "24",
+            "solution": "The first common positive multiple of 8 and 12 is 24.",
+            "options": null
+          }
+        ],
+        "remember": "The word “greatest” or “smallest” alone is not enough. Decide whether you need a common divisor or a common multiple."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find the HCF of 18 and 42.",
+        "answer": "6",
+        "solution": "18=2×3² and 42=2×3×7; common product 2×3=6.",
+        "options": null
+      },
+      {
+        "prompt": "Find the LCM of 9 and 12.",
+        "answer": "36",
+        "solution": "Use 2²×3²=36.",
+        "options": null
+      },
+      {
+        "prompt": "32 and 48 sweets must form the greatest number of identical gift bags. How many bags?",
+        "answer": "16",
+        "solution": "HCF(32,48)=16; each has 2 of one kind and 3 of the other.",
+        "options": null
+      },
+      {
+        "prompt": "Two buses depart every 10 and 15 minutes, together at 9:00. How many minutes until their next shared departure?",
+        "answer": "30",
+        "solution": "LCM(10,15)=30, so the time is 9:30.",
+        "options": null
+      },
+      {
+        "prompt": "What is the missing factor in 84 = 2 × 2 × 3 × □?",
+        "answer": "7",
+        "solution": "4×3=12; 84÷12=7.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "fractions",
+    "title": "Fractions",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Equal parts and equivalent fractions",
+        "explain": "A fraction compares selected equal parts with the whole. The denominator counts equal parts in the whole; the numerator counts parts selected.",
+        "visual": {
+          "kind": "fraction",
+          "parts": 8,
+          "filled": 3
+        },
+        "steps": [
+          "3 shaded parts out of 8 equal parts represent 3/8.",
+          "Multiplying numerator and denominator by the same nonzero number keeps the value: 3/8 = 6/16.",
+          "11/4 = 2¾ because 11 = 2×4 + 3."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the missing numerator: 2/5 = □/20?",
+            "answer": "8",
+            "solution": "Multiply both numerator and denominator by 4.",
+            "options": null
+          },
+          {
+            "prompt": "Write the numerator when 3¼ is written as an improper fraction.",
+            "answer": "13",
+            "solution": "3×4+1=13, so the fraction is 13/4.",
+            "options": null
+          }
+        ],
+        "remember": "Equal parts must be equal in size, not merely equal in number."
+      },
+      {
+        "title": "Calculate with fractions",
+        "explain": "For addition or subtraction, first use equal-sized parts. For multiplication, multiply numerators and denominators. Division by a nonzero fraction multiplies by its reciprocal.",
+        "visual": {
+          "kind": "fraction",
+          "parts": 12,
+          "filled": 7
+        },
+        "steps": [
+          "1/3 + 1/4 = 4/12 + 3/12 = 7/12.",
+          "3/4 − 1/6 = 9/12 − 2/12 = 7/12.",
+          "2/3 × 3/5 = 6/15 = 2/5.",
+          "3/4 ÷ 1/8 = 3/4 × 8 = 6: six eighths fit in three quarters."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the numerator of 2/7 + 3/7 in simplest form?",
+            "answer": "5",
+            "solution": "Same denominator: (2+3)/7 = 5/7.",
+            "options": null
+          },
+          {
+            "prompt": "How many quarter-litre cups fill 2 litres?",
+            "answer": "8",
+            "solution": "2 ÷ 1/4 = 8 cups.",
+            "options": null
+          }
+        ],
+        "remember": "Do not add denominators: 1/5 + 2/5 = 3/5, not 3/10."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Simplify 9/15.",
+        "answer": "3/5",
+        "solution": "Divide both by 3.",
+        "options": [
+          "3/5",
+          "9/5",
+          "3/15",
+          "1/5"
+        ]
+      },
+      {
+        "prompt": "Find 1/2 + 1/3.",
+        "answer": "5/6",
+        "solution": "Use sixths: 3/6+2/6.",
+        "options": [
+          "2/5",
+          "5/6",
+          "1/6",
+          "2/6"
+        ]
+      },
+      {
+        "prompt": "Find 3/5 of 25.",
+        "answer": "15",
+        "solution": "25÷5×3=15.",
+        "options": null
+      },
+      {
+        "prompt": "Find 5/6 − 1/2.",
+        "answer": "1/3",
+        "solution": "5/6−3/6=2/6=1/3.",
+        "options": [
+          "1/3",
+          "2/4",
+          "4/6",
+          "1/2"
+        ]
+      },
+      {
+        "prompt": "How many halves fit in 5 wholes?",
+        "answer": "10",
+        "solution": "5 ÷ 1/2 = 10.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "decimals",
+    "title": "Decimals and money",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Tenths and hundredths",
+        "explain": "A decimal extends place value to parts smaller than one. Ten hundredths make one tenth. Trailing zeros after the decimal point do not change the value.",
+        "visual": {
+          "kind": "hundred",
+          "filled": 37
+        },
+        "steps": [
+          "37 shaded squares out of 100 represent 0.37.",
+          "0.37 = 3/10 + 7/100.",
+          "0.6 = 0.60 > 0.57. Compare equal place-value columns."
+        ],
+        "practice": [
+          {
+            "prompt": "How many hundredths are in 0.45?",
+            "answer": "45",
+            "solution": "0.45=45/100.",
+            "options": null
+          },
+          {
+            "prompt": "Which is larger?",
+            "answer": "0.8",
+            "solution": "0.8=0.80, and 80 hundredths exceeds 75.",
+            "options": [
+              "0.75",
+              "0.8"
+            ]
+          }
+        ],
+        "remember": "More decimal digits do not necessarily mean a larger number."
+      },
+      {
+        "title": "Decimal operations",
+        "explain": "Line up decimal points to add or subtract. For multiplication, count the total decimal places. For division, scale both numbers by the same power of ten if the divisor is a decimal.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            12.5,
+            7.75
+          ],
+          "labels": [
+            "₹12.50",
+            "₹7.75"
+          ]
+        },
+        "steps": [
+          "₹12.50 + ₹7.75 = ₹20.25.",
+          "3.6 × 0.4 = 1.44 because 36×4=144 and there are two decimal places.",
+          "4.8 ÷ 0.6 = 48 ÷ 6 = 8."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 5.25 + 2.8.",
+            "answer": "8.05",
+            "solution": "Write 2.80, then add to 5.25.",
+            "options": null
+          },
+          {
+            "prompt": "Find 7.2 ÷ 0.9.",
+            "answer": "8",
+            "solution": "Multiply both by 10: 72÷9=8.",
+            "options": null
+          }
+        ],
+        "remember": "Only scale both dividend and divisor by the same amount; scaling just one changes the answer."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 0.4 + 0.08.",
+        "answer": "0.48",
+        "solution": "4 tenths + 8 hundredths = 48 hundredths.",
+        "options": null
+      },
+      {
+        "prompt": "Find 9.6 − 3.85.",
+        "answer": "5.75",
+        "solution": "9.60−3.85=5.75.",
+        "options": null
+      },
+      {
+        "prompt": "Find 1.5 × 0.2.",
+        "answer": "0.3",
+        "solution": "15×2=30 with two decimal places: 0.30.",
+        "options": null
+      },
+      {
+        "prompt": "Find 6.3 ÷ 0.7.",
+        "answer": "9",
+        "solution": "63÷7=9.",
+        "options": null
+      },
+      {
+        "prompt": "Four pens cost ₹8.50 each. Find the total cost.",
+        "answer": "34",
+        "solution": "4×8.50=34.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "ratio",
+    "title": "Ratio, rate and proportion",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Compare parts and find one unit",
+        "explain": "A ratio compares quantities in the stated order. A rate compares different units, such as rupees per kilogram. Convert to the same units before forming a ratio of like quantities.",
+        "visual": {
+          "kind": "counters",
+          "groups": [
+            3,
+            5
+          ],
+          "labels": [
+            "Red: 3",
+            "Blue: 5"
+          ]
+        },
+        "steps": [
+          "Red : blue = 3 : 5. Red : all = 3 : 8.",
+          "If 4 notebooks cost ₹72, one costs 72÷4=₹18.",
+          "Seven notebooks cost 7×18=₹126."
+        ],
+        "practice": [
+          {
+            "prompt": "Simplify 12:18.",
+            "answer": "2:3",
+            "solution": "Divide both by 6.",
+            "options": [
+              "2:3",
+              "3:2",
+              "1:3",
+              "2:6"
+            ]
+          },
+          {
+            "prompt": "5 kg rice costs ₹240. What is the cost per kg?",
+            "answer": "48",
+            "solution": "240÷5=48.",
+            "options": null
+          }
+        ],
+        "remember": "A part-to-part ratio is not a fraction of the whole."
+      },
+      {
+        "title": "Direct and inverse proportion",
+        "explain": "In direct proportion, the ratio stays constant. In inverse proportion, the product stays constant. Use these models only when the stated conditions stay the same.",
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "1 identical pen",
+              "₹9"
+            ],
+            [
+              "2 identical pens",
+              "₹18"
+            ],
+            [
+              "3 identical pens",
+              "₹27"
+            ]
+          ],
+          "caption": "Cost = 9 × number of pens"
+        },
+        "steps": [
+          "At the same price, twice as many pens cost twice as much.",
+          "For a fixed job, twice as many equally productive workers take half as long, assuming they do not hinder each other.",
+          "6 workers × 8 days = 48 worker-days; 12 workers need 48÷12=4 days."
+        ],
+        "practice": [
+          {
+            "prompt": "At ₹15 each, what do 6 pens cost?",
+            "answer": "90",
+            "solution": "15×6=90.",
+            "options": null
+          },
+          {
+            "prompt": "4 identical taps fill a tank in 12 minutes. How long would 8 taps take under the same conditions?",
+            "answer": "6",
+            "solution": "4×12=48 tap-minutes; 48÷8=6.",
+            "options": null
+          }
+        ],
+        "remember": "Not every relationship is proportional. A taxi with a fixed starting charge is one counterexample."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Simplify 15:25.",
+        "answer": "3:5",
+        "solution": "Divide both by 5.",
+        "options": [
+          "3:5",
+          "5:3",
+          "3:10",
+          "1:5"
+        ]
+      },
+      {
+        "prompt": "3 metres cost ₹96. What do 5 metres cost?",
+        "answer": "160",
+        "solution": "96÷3×5=160.",
+        "options": null
+      },
+      {
+        "prompt": "A 2:7 ratio has how many parts altogether?",
+        "answer": "9",
+        "solution": "2+7=9.",
+        "options": null
+      },
+      {
+        "prompt": "5 equally productive workers finish in 18 days. How many days for 10?",
+        "answer": "9",
+        "solution": "Same job: 5×18÷10=9.",
+        "options": null
+      },
+      {
+        "prompt": "Convert 1 m : 25 cm to simplest form.",
+        "answer": "4:1",
+        "solution": "100 cm:25 cm=4:1.",
+        "options": [
+          "1:25",
+          "4:1",
+          "1:4",
+          "25:1"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "percentages",
+    "title": "Percentages, profit and interest",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Percent means per hundred",
+        "explain": "A percentage is a fraction out of 100. To find a percent of a quantity, multiply the quantity by that percentage divided by 100.",
+        "visual": {
+          "kind": "hundred",
+          "filled": 25
+        },
+        "steps": [
+          "25% = 25/100 = 1/4 = 0.25.",
+          "15% of ₹240 = 240×15/100 = ₹36.",
+          "18 correct answers out of 24 give 18/24×100 = 75%."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 30% of 90.",
+            "answer": "27",
+            "solution": "90×30÷100=27.",
+            "options": null
+          },
+          {
+            "prompt": "What percentage is 7 out of 20?",
+            "answer": "35",
+            "solution": "7/20×100=35%.",
+            "options": null
+          }
+        ],
+        "remember": "Identify the whole: percentages compare with a base amount."
+      },
+      {
+        "title": "Discount, profit and simple interest",
+        "explain": "Discount is calculated on marked price; profit percent is usually calculated on cost price. Simple interest uses the original principal throughout.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            500,
+            100
+          ],
+          "labels": [
+            "Marked price ₹500",
+            "Discount 20% = ₹100"
+          ]
+        },
+        "steps": [
+          "A 20% discount on ₹500 is ₹100, so pay ₹400.",
+          "Cost ₹200, selling price ₹250: profit ₹50; profit percent = 50/200×100 = 25%.",
+          "Simple interest = principal × annual rate × years ÷ 100. On ₹1,500 at 6% for 2 years: interest ₹180; amount ₹1,680."
+        ],
+        "practice": [
+          {
+            "prompt": "A ₹800 item has a 10% discount. What is the selling price?",
+            "answer": "720",
+            "solution": "Discount ₹80; 800−80=720.",
+            "options": null
+          },
+          {
+            "prompt": "Find simple interest on ₹2,000 at 5% per year for 3 years.",
+            "answer": "300",
+            "solution": "2000×5×3÷100=300.",
+            "options": null
+          }
+        ],
+        "remember": "An increase of 10% followed by a decrease of 10% does not return to the starting value."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 12% of 250.",
+        "answer": "30",
+        "solution": "250×12/100=30.",
+        "options": null
+      },
+      {
+        "prompt": "Write 0.45 as a percentage.",
+        "answer": "45",
+        "solution": "0.45×100=45%.",
+        "options": null
+      },
+      {
+        "prompt": "Cost ₹400, sale ₹460. What is profit percent?",
+        "answer": "15",
+        "solution": "60/400×100=15%.",
+        "options": null
+      },
+      {
+        "prompt": "Find interest on ₹3,000 at 4% for 2 years.",
+        "answer": "240",
+        "solution": "3000×4×2/100=240.",
+        "options": null
+      },
+      {
+        "prompt": "A ₹600 bag is discounted 25%. Find its new price.",
+        "answer": "450",
+        "solution": "25% of 600=150; 600−150=450.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "powers-roots",
+    "title": "Powers, squares and roots",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Repeated multiplication",
+        "explain": "A power records repeated multiplication. The base is the repeated factor and the exponent counts how many factors.",
+        "visual": {
+          "kind": "array",
+          "rows": 5,
+          "cols": 5,
+          "caption": "5² = 5 × 5 = 25"
+        },
+        "steps": [
+          "3⁴ = 3×3×3×3 = 81.",
+          "For the same nonzero base: aᵐ×aⁿ=aᵐ⁺ⁿ and aᵐ÷aⁿ=aᵐ⁻ⁿ.",
+          "a⁰=1 for a≠0; a⁻ⁿ=1/aⁿ."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 2⁵.",
+            "answer": "32",
+            "solution": "2×2×2×2×2=32.",
+            "options": null
+          },
+          {
+            "prompt": "Find 7⁰.",
+            "answer": "1",
+            "solution": "Any nonzero number to power 0 is 1.",
+            "options": null
+          }
+        ],
+        "remember": "3² means 3×3, not 3×2."
+      },
+      {
+        "title": "Square and cube roots",
+        "explain": "A square root reverses squaring; a cube root reverses cubing. The symbol √ means the non-negative square root.",
+        "visual": {
+          "kind": "cube",
+          "side": 3,
+          "caption": "A 3 by 3 by 3 cube contains 27 unit cubes."
+        },
+        "steps": [
+          "√49 = 7 because 7²=49.",
+          "∛27 = 3 because 3³=27.",
+          "√(36/81)=6/9=2/3.",
+          "Although x²=49 has solutions ±7, √49 itself is 7."
+        ],
+        "practice": [
+          {
+            "prompt": "Find √121.",
+            "answer": "11",
+            "solution": "11²=121.",
+            "options": null
+          },
+          {
+            "prompt": "Find ∛64.",
+            "answer": "4",
+            "solution": "4³=64.",
+            "options": null
+          }
+        ],
+        "remember": "In general √(a+b) is not √a+√b."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 4³.",
+        "answer": "64",
+        "solution": "4×4×4=64.",
+        "options": null
+      },
+      {
+        "prompt": "Find √144.",
+        "answer": "12",
+        "solution": "12²=144.",
+        "options": null
+      },
+      {
+        "prompt": "Find ∛125.",
+        "answer": "5",
+        "solution": "5³=125.",
+        "options": null
+      },
+      {
+        "prompt": "Find 2³ × 2².",
+        "answer": "32",
+        "solution": "2⁵=32.",
+        "options": null
+      },
+      {
+        "prompt": "Find 10⁻².",
+        "answer": "0.01",
+        "solution": "1/100=0.01.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "algebra",
+    "title": "Algebraic expressions",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Letters stand for numbers",
+        "explain": "A variable represents a number that may be unknown or may vary. A term includes its sign. A coefficient multiplies the variable.",
+        "visual": {
+          "kind": "algebra",
+          "x": 3,
+          "units": 2,
+          "caption": "3x + 2: three identical x-boxes and two units"
+        },
+        "steps": [
+          "In 3x+2, 3 is the coefficient of x and 2 is the constant term.",
+          "If x=4, then 3x+2 = 3×4+2 = 14.",
+          "If a ticket costs ₹p, five tickets cost ₹5p."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 4x−3 when x=5.",
+            "answer": "17",
+            "solution": "4×5−3=17.",
+            "options": null
+          },
+          {
+            "prompt": "What is the coefficient of y in −6y+9?",
+            "answer": "-6",
+            "solution": "The sign belongs to the term: coefficient −6.",
+            "options": null
+          }
+        ],
+        "remember": "A variable is a number, not a label for an object. 3x means 3×x."
+      },
+      {
+        "title": "Like terms and brackets",
+        "explain": "Like terms have the same variable part, including powers. Combine their coefficients. Multiply every term inside a bracket when expanding.",
+        "visual": {
+          "kind": "algebra",
+          "x": 5,
+          "units": 3,
+          "caption": "2x + 3x + 3 = 5x + 3"
+        },
+        "steps": [
+          "2x + 3x + 3 = 5x + 3.",
+          "4(x+2)=4x+8.",
+          "3a×2a=6a², while 3a+2a=5a."
+        ],
+        "practice": [
+          {
+            "prompt": "Simplify 7x−2x.",
+            "answer": "5x",
+            "solution": "Subtract coefficients 7−2.",
+            "options": [
+              "5x",
+              "5",
+              "9x",
+              "5x²"
+            ]
+          },
+          {
+            "prompt": "Find 3(x+4) when x=2.",
+            "answer": "18",
+            "solution": "3×(2+4)=18, or 3x+12=18.",
+            "options": null
+          }
+        ],
+        "remember": "x and x² are not like terms. Addition and multiplication follow different rules."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Find 2a+7 for a=6.",
+        "answer": "19",
+        "solution": "12+7=19.",
+        "options": null
+      },
+      {
+        "prompt": "Coefficient of x in 9−4x?",
+        "answer": "-4",
+        "solution": "The coefficient includes the minus sign.",
+        "options": null
+      },
+      {
+        "prompt": "Simplify 3y+5y.",
+        "answer": "8y",
+        "solution": "3+5=8.",
+        "options": [
+          "8y",
+          "15y",
+          "8y²",
+          "15y²"
+        ]
+      },
+      {
+        "prompt": "Expand 2(x+5).",
+        "answer": "2x+10",
+        "solution": "Multiply both terms by 2.",
+        "options": [
+          "2x+5",
+          "2x+10",
+          "x+10",
+          "7x"
+        ]
+      },
+      {
+        "prompt": "Find x²+1 for x=−3.",
+        "answer": "10",
+        "solution": "(−3)²+1=9+1=10.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "equations",
+    "title": "Simple equations",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Keep both sides balanced",
+        "explain": "An equation states that two expressions have the same value. Do the same operation to both sides to keep equality true.",
+        "visual": {
+          "kind": "balance",
+          "left": "x + 5",
+          "right": "12",
+          "caption": "Remove 5 from both sides: x = 7"
+        },
+        "steps": [
+          "x+5=12 → x+5−5=12−5 → x=7.",
+          "For 4x=28, divide both sides by 4: x=7.",
+          "Substitute back to check the original equation."
+        ],
+        "practice": [
+          {
+            "prompt": "Solve x+9=23.",
+            "answer": "14",
+            "solution": "Subtract 9 from both sides.",
+            "options": null
+          },
+          {
+            "prompt": "Solve 6x=54.",
+            "answer": "9",
+            "solution": "Divide both sides by 6.",
+            "options": null
+          }
+        ],
+        "remember": "An expression has no equals sign; an equation does."
+      },
+      {
+        "title": "Build an equation from a story",
+        "explain": "Name the unknown and describe the relationship before calculating. Keep units in your final answer.",
+        "visual": {
+          "kind": "balance",
+          "left": "3x + 4",
+          "right": "25",
+          "caption": "Three equal notebook prices plus a ₹4 cover cost ₹25."
+        },
+        "steps": [
+          "Let one notebook cost ₹x. Then 3x+4=25.",
+          "Subtract 4: 3x=21. Divide by 3: x=7.",
+          "Each notebook costs ₹7. Check: 3×7+4=25."
+        ],
+        "practice": [
+          {
+            "prompt": "Solve 5x−6=29.",
+            "answer": "7",
+            "solution": "5x=35, so x=7.",
+            "options": null
+          },
+          {
+            "prompt": "A number doubled and increased by 9 is 31. Find the number.",
+            "answer": "11",
+            "solution": "2x+9=31 → 2x=22 → x=11.",
+            "options": null
+          }
+        ],
+        "remember": "Do not guess the operation from one word. Write the complete relationship."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Solve x−8=17.",
+        "answer": "25",
+        "solution": "Add 8 to both sides.",
+        "options": null
+      },
+      {
+        "prompt": "Solve 7x=63.",
+        "answer": "9",
+        "solution": "Divide by 7.",
+        "options": null
+      },
+      {
+        "prompt": "Solve 3x+2=20.",
+        "answer": "6",
+        "solution": "3x=18 → x=6.",
+        "options": null
+      },
+      {
+        "prompt": "Solve x/4=8.",
+        "answer": "32",
+        "solution": "Multiply both sides by 4.",
+        "options": null
+      },
+      {
+        "prompt": "Four tickets and a ₹10 fee cost ₹110. Find one ticket’s price.",
+        "answer": "25",
+        "solution": "4x+10=110 → x=25.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "angles",
+    "title": "Lines and angles",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Measure a turn",
+        "explain": "An angle measures the turn between two rays with the same endpoint. A right angle is 90°, a straight angle 180°, and a full turn 360°.",
+        "visual": {
+          "kind": "angle",
+          "degrees": 60,
+          "caption": "60° is an acute angle: smaller than a right angle."
+        },
+        "steps": [
+          "Acute: between 0° and 90°. Obtuse: between 90° and 180°.",
+          "Complementary angles sum to 90°; supplementary angles sum to 180°.",
+          "An angle of 35° has complement 55°."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the supplement of 125°.",
+            "answer": "55",
+            "solution": "180−125=55°.",
+            "options": null
+          },
+          {
+            "prompt": "What type of angle is 110°?",
+            "answer": "Obtuse",
+            "solution": "110° lies between 90° and 180°.",
+            "options": [
+              "Acute",
+              "Right",
+              "Obtuse",
+              "Straight"
+            ]
+          }
+        ],
+        "remember": "Longer rays do not make an angle larger; the turn determines the angle."
+      },
+      {
+        "title": "Intersecting and parallel lines",
+        "explain": "Opposite angles at an intersection are equal. Adjacent angles on a straight line add to 180°. When parallel lines meet a transversal, corresponding and alternate interior angles are equal.",
+        "visual": {
+          "kind": "parallel",
+          "angle": 65
+        },
+        "steps": [
+          "If one angle at an intersection is 65°, its opposite is 65°.",
+          "Its adjacent angle is 180−65=115°.",
+          "Corresponding angles are equal only when the two lines are parallel."
+        ],
+        "practice": [
+          {
+            "prompt": "An angle and its adjacent angle form a straight line. One is 72°. Find the other.",
+            "answer": "108",
+            "solution": "180−72=108°.",
+            "options": null
+          },
+          {
+            "prompt": "One angle at an intersection is 47°. Find its vertically opposite angle.",
+            "answer": "47",
+            "solution": "Vertically opposite angles are equal.",
+            "options": null
+          }
+        ],
+        "remember": "A diagram is not proof of parallel lines; look for stated conditions or matching marks."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "How many degrees in a full turn?",
+        "answer": "360",
+        "solution": "One complete rotation is 360°.",
+        "options": null
+      },
+      {
+        "prompt": "Find the complement of 28°.",
+        "answer": "62",
+        "solution": "90−28=62°.",
+        "options": null
+      },
+      {
+        "prompt": "Find the supplement of 139°.",
+        "answer": "41",
+        "solution": "180−139=41°.",
+        "options": null
+      },
+      {
+        "prompt": "An angle is 84°. Find its vertically opposite angle.",
+        "answer": "84",
+        "solution": "Opposite angles are equal.",
+        "options": null
+      },
+      {
+        "prompt": "Corresponding angles on parallel lines: one is 118°. Find the other.",
+        "answer": "118",
+        "solution": "Corresponding angles are equal.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "shapes",
+    "title": "Triangles and quadrilaterals",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Triangle facts",
+        "explain": "A triangle has three sides. Its interior angles total 180°. The sum of any two side lengths must be greater than the third.",
+        "visual": {
+          "kind": "triangle",
+          "labels": [
+            "50°",
+            "60°",
+            "70°"
+          ],
+          "caption": "50° + 60° + 70° = 180°"
+        },
+        "steps": [
+          "Equilateral: 3 equal sides and 3 angles of 60°.",
+          "Isosceles: at least 2 equal sides; angles opposite them are equal.",
+          "If two angles are 45° and 65°, the third is 180−45−65=70°."
+        ],
+        "practice": [
+          {
+            "prompt": "Two triangle angles are 35° and 85°. Find the third.",
+            "answer": "60",
+            "solution": "180−35−85=60°.",
+            "options": null
+          },
+          {
+            "prompt": "Can 2 cm, 3 cm and 6 cm form a triangle?",
+            "answer": "No",
+            "solution": "2+3=5 is less than 6.",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        ],
+        "remember": "A triangle inequality is strict. Lengths 2, 3 and 5 form a straight segment, not a triangle."
+      },
+      {
+        "title": "Four-sided shapes",
+        "explain": "A quadrilateral’s interior angles total 360°. A parallelogram has opposite sides parallel. Rectangles, rhombi and squares are special parallelograms.",
+        "visual": {
+          "kind": "rectangle",
+          "width": 8,
+          "height": 4,
+          "caption": "Rectangle: four right angles and equal opposite sides"
+        },
+        "steps": [
+          "A rectangle has four right angles. A rhombus has four equal sides.",
+          "A square has both properties. Every square is a rectangle, but not every rectangle is a square.",
+          "Three quadrilateral angles are 80°, 95°, 105°; the fourth is 360−280=80°."
+        ],
+        "practice": [
+          {
+            "prompt": "Three quadrilateral angles are 90°, 70° and 120°. Find the fourth.",
+            "answer": "80",
+            "solution": "360−90−70−120=80°.",
+            "options": null
+          },
+          {
+            "prompt": "Is every square a rectangle?",
+            "answer": "Yes",
+            "solution": "A square meets the definition of rectangle.",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        ],
+        "remember": "Classify using properties, not the orientation or appearance of the drawing."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "An equilateral triangle has each angle equal to how many degrees?",
+        "answer": "60",
+        "solution": "180÷3=60°.",
+        "options": null
+      },
+      {
+        "prompt": "Triangle angles 40° and 75°: find the third.",
+        "answer": "65",
+        "solution": "180−115=65°.",
+        "options": null
+      },
+      {
+        "prompt": "What is the sum of quadrilateral angles?",
+        "answer": "360",
+        "solution": "A diagonal divides it into two triangles.",
+        "options": null
+      },
+      {
+        "prompt": "A parallelogram has one angle 110°. Find an adjacent angle.",
+        "answer": "70",
+        "solution": "Adjacent angles sum to 180°.",
+        "options": null
+      },
+      {
+        "prompt": "Can 4, 5 and 8 be triangle side lengths?",
+        "answer": "Yes",
+        "solution": "All three pair sums exceed the remaining side.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "symmetry",
+    "title": "Symmetry and constructions",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Reflections and rotations",
+        "explain": "A line of symmetry divides a shape into matching mirror halves. Rotational symmetry means a shape fits itself before completing a full turn.",
+        "visual": {
+          "kind": "symmetry",
+          "caption": "The dashed line divides this shape into matching halves."
+        },
+        "steps": [
+          "A non-square rectangle has 2 lines of symmetry and rotational order 2.",
+          "A square has 4 lines and rotational order 4.",
+          "Rotational order 4 means a match every 360÷4=90°."
+        ],
+        "practice": [
+          {
+            "prompt": "How many lines of symmetry does a square have?",
+            "answer": "4",
+            "solution": "Two diagonals and two lines through opposite side midpoints.",
+            "options": null
+          },
+          {
+            "prompt": "A shape matches every 120° turn. What is its rotational order?",
+            "answer": "3",
+            "solution": "360÷120=3.",
+            "options": null
+          }
+        ],
+        "remember": "A diagonal of a non-square rectangle is not a line of symmetry."
+      },
+      {
+        "title": "Construct and read scale drawings",
+        "explain": "Use a ruler for lengths and a protractor for angles. A perpendicular bisector passes through a segment’s midpoint at 90°. A scale relates drawing distance to actual distance.",
+        "visual": {
+          "kind": "construction",
+          "length": 8,
+          "caption": "Equal compass arcs above and below AB locate its perpendicular bisector."
+        },
+        "steps": [
+          "Open a compass to more than half AB. Draw equal-radius arcs from A and B.",
+          "Join the two arc intersections. The joining line bisects AB at 90°.",
+          "At scale 1 cm:2 m, a 5 cm line represents 10 m."
+        ],
+        "practice": [
+          {
+            "prompt": "A segment is 14 cm long. How far is its midpoint from an endpoint?",
+            "answer": "7",
+            "solution": "14÷2=7 cm.",
+            "options": null
+          },
+          {
+            "prompt": "At scale 1 cm:3 m, what actual distance does 4 cm represent?",
+            "answer": "12",
+            "solution": "4×3=12 m.",
+            "options": null
+          }
+        ],
+        "remember": "A perpendicular line need not bisect a segment. A perpendicular bisector must do both."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "How many lines of symmetry does an equilateral triangle have?",
+        "answer": "3",
+        "solution": "One from each vertex to the opposite midpoint.",
+        "options": null
+      },
+      {
+        "prompt": "What is the rotational order of a square?",
+        "answer": "4",
+        "solution": "It matches at each 90° turn.",
+        "options": null
+      },
+      {
+        "prompt": "Half of a 17 cm segment is how many cm?",
+        "answer": "8.5",
+        "solution": "17÷2=8.5.",
+        "options": null
+      },
+      {
+        "prompt": "Scale 1 cm:5 m. A 6 cm drawing represents how many metres?",
+        "answer": "30",
+        "solution": "6×5=30.",
+        "options": null
+      },
+      {
+        "prompt": "At what angle does a perpendicular bisector cross its segment?",
+        "answer": "90",
+        "solution": "Perpendicular means 90°.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "area-perimeter",
+    "title": "Perimeter and area",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Boundary and surface",
+        "explain": "Perimeter measures distance around a boundary. Area measures how much surface is covered. Count unit squares to understand area before using formulas.",
+        "visual": {
+          "kind": "area",
+          "width": 7,
+          "height": 4,
+          "caption": "7 columns × 4 rows = 28 square units; perimeter = 22 units."
+        },
+        "steps": [
+          "Rectangle perimeter = 2(length+breadth). For 7 cm by 4 cm: 22 cm.",
+          "Rectangle area = length×breadth = 28 cm².",
+          "A square of side s has perimeter 4s and area s²."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the perimeter of a 9 cm by 5 cm rectangle.",
+            "answer": "28",
+            "solution": "2×(9+5)=28 cm.",
+            "options": null
+          },
+          {
+            "prompt": "Find the area of a square with side 6 cm.",
+            "answer": "36",
+            "solution": "6×6=36 cm².",
+            "options": null
+          }
+        ],
+        "remember": "Perimeter uses units such as cm; area uses square units such as cm²."
+      },
+      {
+        "title": "Triangles, parallelograms and trapeziums",
+        "explain": "Use the perpendicular height, not the sloping side. A triangle occupies half of a matching parallelogram. Split composite figures into familiar pieces.",
+        "visual": {
+          "kind": "triangle",
+          "labels": [
+            "base 10 cm",
+            "height 6 cm",
+            ""
+          ],
+          "caption": "Triangle area = ½ × 10 × 6 = 30 cm²"
+        },
+        "steps": [
+          "Triangle area = ½×base×height.",
+          "Parallelogram area = base×height.",
+          "Trapezium area = ½×(sum of parallel sides)×height. Parallel sides 8 and 14 cm, height 5 cm: area 55 cm²."
+        ],
+        "practice": [
+          {
+            "prompt": "Find a triangle’s area with base 12 cm and perpendicular height 7 cm.",
+            "answer": "42",
+            "solution": "½×12×7=42 cm².",
+            "options": null
+          },
+          {
+            "prompt": "A parallelogram has base 9 cm and height 4 cm. Find its area.",
+            "answer": "36",
+            "solution": "9×4=36 cm².",
+            "options": null
+          }
+        ],
+        "remember": "Draw the height perpendicular to the base; it may lie outside an obtuse triangle."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Perimeter of a square of side 11 cm?",
+        "answer": "44",
+        "solution": "4×11=44.",
+        "options": null
+      },
+      {
+        "prompt": "Area of a 13 cm by 4 cm rectangle?",
+        "answer": "52",
+        "solution": "13×4=52.",
+        "options": null
+      },
+      {
+        "prompt": "Triangle base 8 cm, height 9 cm: area?",
+        "answer": "36",
+        "solution": "½×8×9=36.",
+        "options": null
+      },
+      {
+        "prompt": "Trapezium parallel sides 6 and 10 cm, height 4 cm: area?",
+        "answer": "32",
+        "solution": "½×16×4=32.",
+        "options": null
+      },
+      {
+        "prompt": "A 6 m by 5 m floor uses 1 m² tiles. How many tiles, ignoring gaps?",
+        "answer": "30",
+        "solution": "Area 30 m²; each tile covers 1 m².",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "solids",
+    "title": "Solids, surface area and volume",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Faces, edges and nets",
+        "explain": "A solid occupies space. Flat surfaces are faces; faces meet along edges, and edges meet at vertices. A net unfolds a solid’s surface onto a plane.",
+        "visual": {
+          "kind": "cube",
+          "side": 4,
+          "caption": "Cube: 6 square faces, 12 edges, 8 vertices"
+        },
+        "steps": [
+          "A cuboid has 6 rectangular faces, 12 edges and 8 vertices.",
+          "A cube has six equal square faces.",
+          "A cylinder has two flat circular faces and one curved surface."
+        ],
+        "practice": [
+          {
+            "prompt": "How many vertices does a cuboid have?",
+            "answer": "8",
+            "solution": "There are four on the top and four on the bottom.",
+            "options": null
+          },
+          {
+            "prompt": "How many square faces does a cube have?",
+            "answer": "6",
+            "solution": "Top, bottom, front, back, left and right.",
+            "options": null
+          }
+        ],
+        "remember": "A curved surface is not a polygonal face. Use the description stated in a question."
+      },
+      {
+        "title": "Measure capacity and covering",
+        "explain": "Volume counts unit cubes filling a solid. Surface area counts square units covering it. Capacity is often measured in litres.",
+        "visual": {
+          "kind": "cube",
+          "side": 5,
+          "caption": "A cube of side 5 cm has volume 125 cm³ and total surface area 150 cm²."
+        },
+        "steps": [
+          "Cuboid volume = length×breadth×height. 8×3×2=48 cm³.",
+          "Cuboid total surface area = 2(lb+bh+hl).",
+          "Cube volume = s³; total surface area = 6s².",
+          "1 litre = 1,000 cm³; 1 mL = 1 cm³."
+        ],
+        "practice": [
+          {
+            "prompt": "Volume of a 6 cm by 4 cm by 3 cm cuboid?",
+            "answer": "72",
+            "solution": "6×4×3=72 cm³.",
+            "options": null
+          },
+          {
+            "prompt": "How many litres are 2,500 cm³?",
+            "answer": "2.5",
+            "solution": "2500÷1000=2.5 litres.",
+            "options": null
+          }
+        ],
+        "remember": "Area measures covering; volume measures filling. Do not interchange cm² and cm³."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "How many edges has a cube?",
+        "answer": "12",
+        "solution": "Four top, four bottom, four vertical.",
+        "options": null
+      },
+      {
+        "prompt": "Volume of a cube of side 4 cm?",
+        "answer": "64",
+        "solution": "4³=64.",
+        "options": null
+      },
+      {
+        "prompt": "Total surface area of a cube of side 3 cm?",
+        "answer": "54",
+        "solution": "6×3²=54.",
+        "options": null
+      },
+      {
+        "prompt": "How many cm³ are in 3 litres?",
+        "answer": "3000",
+        "solution": "3×1000=3000.",
+        "options": null
+      },
+      {
+        "prompt": "Volume of a 10 cm by 5 cm by 2 cm box?",
+        "answer": "100",
+        "solution": "10×5×2=100.",
+        "options": null
+      }
+    ]
+  },
+  {
+    "slug": "data-chance",
+    "title": "Data, graphs and chance",
+    "tier": "base",
+    "concepts": [
+      {
+        "title": "Read, organise and summarise data",
+        "explain": "A frequency is how often a value occurs. Read the labels and scale before interpreting a graph. Mean shares the total equally; median is the middle ordered value; mode is most frequent.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            4,
+            7,
+            5
+          ],
+          "labels": [
+            "Monday: 4",
+            "Tuesday: 7",
+            "Wednesday: 5"
+          ]
+        },
+        "steps": [
+          "Tuesday has 7 books borrowed, the largest of these three counts.",
+          "For 2, 4, 4, 6: mean=(2+4+4+6)÷4=4; median=4; mode=4.",
+          "Range = largest−smallest = 6−2=4."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the mean of 3, 7 and 8.",
+            "answer": "6",
+            "solution": "Total 18 divided by 3 values is 6.",
+            "options": null
+          },
+          {
+            "prompt": "Find the median of 9, 2, 5.",
+            "answer": "5",
+            "solution": "Order 2,5,9; the middle is 5.",
+            "options": null
+          }
+        ],
+        "remember": "For an even number of data values, median is the mean of the two middle values."
+      },
+      {
+        "title": "Probability of equally likely outcomes",
+        "explain": "Probability measures chance from 0 to 1. For a finite set of equally likely outcomes, divide favourable outcomes by total possible outcomes.",
+        "visual": {
+          "kind": "counters",
+          "groups": [
+            3,
+            2
+          ],
+          "labels": [
+            "Red: 3",
+            "Blue: 2"
+          ]
+        },
+        "steps": [
+          "From 3 red and 2 blue equally sized counters mixed in a bag, P(red)=3/5.",
+          "For a fair die, P(even)=3/6=1/2.",
+          "Impossible events have probability 0; certain events have probability 1."
+        ],
+        "practice": [
+          {
+            "prompt": "A fair die has how many possible outcomes?",
+            "answer": "6",
+            "solution": "1,2,3,4,5,6.",
+            "options": null
+          },
+          {
+            "prompt": "What is the probability of heads on a fair coin?",
+            "answer": "1/2",
+            "solution": "One favourable outcome out of two equally likely outcomes.",
+            "options": [
+              "0",
+              "1/2",
+              "1",
+              "2"
+            ]
+          }
+        ],
+        "remember": "Counting outcomes this way needs equal likelihood; do not assume all real-world events are equally likely."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "Mean of 5, 9 and 10?",
+        "answer": "8",
+        "solution": "24÷3=8.",
+        "options": null
+      },
+      {
+        "prompt": "Median of 1, 4, 7, 10?",
+        "answer": "5.5",
+        "solution": "(4+7)÷2=5.5.",
+        "options": null
+      },
+      {
+        "prompt": "Mode of 2, 3, 3, 5?",
+        "answer": "3",
+        "solution": "3 occurs most often.",
+        "options": null
+      },
+      {
+        "prompt": "Range of 6, 8, 15?",
+        "answer": "9",
+        "solution": "15−6=9.",
+        "options": null
+      },
+      {
+        "prompt": "Probability of a number greater than 4 on a fair die?",
+        "answer": "1/3",
+        "solution": "5 and 6: 2/6=1/3.",
+        "options": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ]
+      }
+    ]
+  }
+]

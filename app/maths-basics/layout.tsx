@@ -1,0 +1,2 @@
+import './basics.css';
+export default function BasicsLayout({children}:{children:React.ReactNode}) { return <main className="basics"><nav className="basics-nav"><a href="/"><img src="/ramavana-mark.png" alt="Ramavana Mathematical Centre"/> Ramavana</a><a href="/maths-basics">Maths Step by Step</a><a href="/student">My account</a></nav>{children}<footer><a href="/">Home</a> · <a href="/privacy-policy">Privacy policy</a></footer></main>; }
