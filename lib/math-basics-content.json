@@ -2866,7 +2866,7 @@
     "concepts": [
       {
         "title": "See an identity as an area",
-        "explain": "An identity is true for every permitted value of its variables. Expanding (a+b)² gives a²+2ab+b² because the square splits into four regions.",
+        "explain": "An identity is an equation that is true for every value of its variables. The square of a sum means multiplying the whole sum by itself. In the picture, the square of side a + b contains one a² region, two ab regions and one b² region. Together their areas give a² + 2ab + b².",
         "visual": {
           "kind": "identity",
           "caption": "The square of side a+b splits into a², ab, ab and b²."
@@ -2880,17 +2880,43 @@
           {
             "prompt": "Coefficient of x in (x+6)²?",
             "answer": "12",
-            "solution": "The middle term is 2×x×6 = 12x.",
+            "solution": "Use $(a+b)^2=a^2+2ab+b^2$ with $a=x$ and $b=6$. $$\\begin{aligned}(x+6)^2&=x^2+2\\times x\\times6+6^2\\\\&=x^2+12x+36\\end{aligned}$$ The coefficient of $x$ is the number multiplying $x$. In $12x$, that number is $12$.",
             "options": null
           },
           {
             "prompt": "Find 49² using (50−1)².",
             "answer": "2401",
-            "solution": "2500−100+1 = 2401.",
+            "solution": "Write $49=50-1$, so $49^2=(50-1)^2$. Use $(a-b)^2=a^2-2ab+b^2$ with $a=50$ and $b=1$. $$\\begin{aligned}49^2&=50^2-2\\times50\\times1+1^2\\\\&=2500-100+1\\\\&=2400+1\\\\&=2401\\end{aligned}$$ Here $50^2=2500$, twice the product is $2\\times50\\times1=100$, and $1^2=1$. The last term is added. Remember: $49^2$ means $49\\times49$.",
             "options": null
           }
         ],
-        "remember": "The middle term 2ab is essential in a square of a sum."
+        "remember": "The middle term 2ab is essential in a square of a sum.",
+        "workedExamples": [
+          {
+            "title": "Square of a sum",
+            "formula": "$(a+b)^2=a^2+2ab+b^2$",
+            "meaning": "Square the first term, add twice the product of the two terms, then add the square of the second term. The two rectangles in the picture give ab + ab = 2ab.",
+            "substitution": "To expand $(x+4)^2$, take $a=x$ and $b=4$.",
+            "working": "$$\\begin{aligned}(x+4)^2&=x^2+2\\times x\\times4+4^2\\\\&=x^2+8x+16\\end{aligned}$$",
+            "conclusion": "The middle term is $2\\times x\\times4=8x$. Squaring a sum does not mean squaring each term alone."
+          },
+          {
+            "title": "Square of a difference",
+            "formula": "$(a-b)^2=a^2-2ab+b^2$",
+            "meaning": "Square the first term, subtract twice the product, then add the square of the second term. The final term is positive because a negative multiplied by a negative is positive.",
+            "substitution": "To expand $(x-4)^2$, take $a=x$ and $b=4$.",
+            "working": "$$\\begin{aligned}(x-4)^2&=x^2-2\\times x\\times4+4^2\\\\&=x^2-8x+16\\end{aligned}$$",
+            "conclusion": "The middle term is $-8x$, but the last term is $+16$."
+          },
+          {
+            "title": "Product of a sum and a difference",
+            "formula": "$(a+b)(a-b)=a^2-b^2$",
+            "meaning": "The two brackets have the same terms, with opposite signs between them. When expanded, the middle terms cancel.",
+            "substitution": "For $(x+4)(x-4)$, take $a=x$ and $b=4$.",
+            "working": "$$\\begin{aligned}(x+4)(x-4)&=x^2-4x+4x-16\\\\&=x^2-16\\end{aligned}$$",
+            "conclusion": "Using the identity directly: $x^2-4^2=x^2-16$. There is no middle term because $-4x+4x=0$."
+          }
+        ]
       },
       {
         "title": "Factorise by reversing multiplication",

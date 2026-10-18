@@ -1,0 +1,3 @@
+import Tex from '@/app/notes/tex';
+export type WorkedExample={title:string;formula:string;meaning:string;substitution:string;working:string;conclusion:string};
+export default function WorkedExamples({examples}:{examples:WorkedExample[]}){return <div className="basics-worked-examples"><h3>Let’s work it out</h3>{examples.map((e,i)=><section className="basics-worked-card" key={e.title}><h4>{i+1}. {e.title}</h4><p className="basics-formula"><Tex>{e.formula}</Tex></p><p>{e.meaning}</p><p><Tex>{e.substitution}</Tex></p><div className="basics-working"><Tex>{e.working}</Tex></div><p><Tex>{e.conclusion}</Tex></p></section>)}</div>;}
