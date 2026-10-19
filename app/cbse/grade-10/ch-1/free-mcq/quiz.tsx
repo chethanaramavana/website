@@ -7,35 +7,39 @@ import { quizId, quizPath, quizPrice } from '@/lib/free-quizzes/catalog';
 import MathText from '@/app/notes/math-text';
 import SolutionSteps from '@/app/solution-steps';
 import { useTestActivity } from '@/app/student-activity';
+import {useMcqDraft} from '@/app/use-mcq-draft';
 
-export default function Quiz({ displayName, questions, chapter, title, grade = 10 }: { displayName: string; questions: Question[]; chapter: number; title: string; grade?: number }) {
+export default function Quiz({ userId, displayName, questions, chapter, title, grade = 10 }: { userId:string; displayName: string; questions: Question[]; chapter: number; title: string; grade?: number }) {
   const instantOnly = grade === 12 && chapter === 7;
-  const [answers, setAnswers] = useState<Record<number, number>>({});
-  const [submitted, setSubmitted] = useState(false);
+  const {state:draft,update,flush,ready,message,error}=useMcqDraft(quizId(chapter,grade),userId);
+  const {answers,submitted}=draft;
+  const setAnswers=(fn:(a:Record<number,number>)=>Record<number,number>)=>update(d=>({...d,answers:fn(d.answers)}));
   const [confirm, setConfirm] = useState(false);
   const [copied, setCopied] = useState('');
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState('');
   const [savedScore, setSavedScore] = useState<number | null>(null);
-  const attemptId = useRef<string | null>(null);
+
   const result = useRef<HTMLElement>(null);
   const answered = Object.keys(answers).length;
   useTestActivity(quizId(chapter,grade),answered,submitted);
   const score = savedScore ?? questions.filter((q, i) => answers[i] === q.answer).length;
   async function submit() {
-    if (saving) return;
+    if (saving || !ready) return;
+    setSaving(true);
+    if(!await flush()){setSaving(false);return;}
     if (instantOnly) {
-      setSubmitted(true); setConfirm(false);
+      update(d=>({...d,submitted:true})); await flush(); setSaving(false); setConfirm(false);
       setTimeout(() => { result.current?.focus(); result.current?.scrollIntoView({ block: 'start' }); }, 0);
       return;
     }
     setSaving(true); setSaveError('');
-    attemptId.current ??= crypto.randomUUID();
+
     try {
-      const response = await fetch('/api/free-quiz', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: attemptId.current, quizId: quizId(chapter,grade), answers }) });
+      const response = await fetch('/api/free-quiz', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: draft.attemptId, quizId: quizId(chapter,grade), answers }) });
       const payload = await response.json() as { error?: string; answers: Record<number, number>; score: number };
       if (!response.ok) throw new Error(payload.error || 'Your result could not be saved. Please try again.');
-      setAnswers(payload.answers); setSavedScore(payload.score); setSubmitted(true); setConfirm(false);
+      setSavedScore(payload.score); update(d=>({...d,answers:payload.answers,submitted:true})); await flush(); setSaving(false); setConfirm(false);
       setTimeout(() => { result.current?.focus(); result.current?.scrollIntoView({ block: 'start' }); }, 0);
     } catch (error) { setSaveError(error instanceof Error ? error.message : 'Unable to connect. Please try submitting again.'); }
     finally { setSaving(false); }
@@ -44,12 +48,14 @@ export default function Quiz({ displayName, questions, chapter, title, grade = 1
     try { await navigator.clipboard.writeText(window.location.href.split('?')[0].split('#')[0]); setCopied('Link copied'); }
     catch { setCopied('Copy the address from your browser to share this quiz.'); }
   }
+  if(!ready)return <div className="free-quiz"><main><h1>{title}</h1><p role="status">{message}</p>{error&&<button onClick={()=>window.location.reload()}>Retry loading answers</button>}</main></div>;
   return <div className="free-quiz">
     <header className="fq-header"><a href="/" style={{display:"flex",alignItems:"center",gap:12}}><img src="/ramavana-mark.png" alt="Ramavana mathematical logo" style={{width:54,height:54,objectFit:"contain"}}/>Ramavana <span>Mathematical Centre</span></a><button onClick={share}>Copy student link</button><span role="status">{copied}</span></header>
     <main><p>Signed in as <strong>{displayName}</strong> · <a href={`/api/auth/signout?return_to=${encodeURIComponent(quizPath(chapter,grade))}`}>Sign out</a></p><p className="activity-student-notice">Your teacher can see when you open, attempt and submit this test.</p>
       <nav aria-label="Breadcrumb"><a href={`/cbse/grade-${grade}`}>CBSE Class {grade}</a><span> / </span><a href={`/cbse/grade-${grade}/ch-${chapter}`}>{title}</a><span> / MCQ practice</span></nav>
-      <section className="fq-intro"><span className="fq-badge">{quizPrice(chapter,grade) === 0?'FREE · NO PAYMENT':'MCQ ACCESS UNLOCKED'}</span><h1>{title}</h1><h2>50-question MCQ practice</h2><p>Practise concepts and applications from this chapter. {questions.some(q=>q.assertion) && <>Includes {questions.filter(q => q.assertion).length} assertion–reason questions.</>}</p><p><strong>50 marks</strong> · 1 mark each · No negative marking · Untimed</p><p>{instantOnly ? "Choose one answer for each question. Submit to see your score, correct answers and worked solutions." : "Submit when you are ready to see your overall marks and a worked solution for every question. Your submitted answers and score are saved for your teacher. Keep this page open until you submit."}</p></section>
-      {submitted ? <section className="fq-result" ref={result} tabIndex={-1} aria-label="Quiz results"><span>Your result</span><h2>{score} / {questions.length}</h2><p>{Math.round(score / questions.length * 100)}% · {score} correct · {answered - score} incorrect · {questions.length - answered} unanswered</p><p>{instantOnly ? "Your quiz has been scored automatically." : "Your result has been saved for your teacher."} Review all solutions below, including questions you skipped.</p><button onClick={() => { setSubmitted(false); setAnswers({}); setSavedScore(null); attemptId.current = null; window.scrollTo({ top: 0 }); }}>Try again</button></section> : <div className="fq-progress" aria-live="polite"><strong>{answered} / {questions.length} answered</strong><a href="#submit-quiz">Go to submit</a><progress value={answered} max={questions.length} aria-label="Questions answered" /></div>}
+      <section className="fq-intro"><span className="fq-badge">{quizPrice(chapter,grade) === 0?'FREE · NO PAYMENT':'MCQ ACCESS UNLOCKED'}</span><h1>{title}</h1><h2>50-question MCQ practice</h2><p>Practise concepts and applications from this chapter. {questions.some(q=>q.assertion) && <>Includes {questions.filter(q => q.assertion).length} assertion–reason questions.</>}</p><p><strong>50 marks</strong> · 1 mark each · No negative marking · Untimed</p><p>{instantOnly ? "Choose one answer for each question. Submit to see your score, correct answers and worked solutions." : "Submit when you are ready to see your overall marks and a worked solution for every question. Your submitted answers and score are saved for your teacher. You can return using the same Google account to continue your saved answers."}</p></section>
+      <p role="status">{message}{error&&<> <button onClick={()=>void flush()}>Retry saving</button></>}</p>
+      {submitted ? <section className="fq-result" ref={result} tabIndex={-1} aria-label="Quiz results"><span>Your result</span><h2>{score} / {questions.length}</h2><p>{Math.round(score / questions.length * 100)}% · {score} correct · {answered - score} incorrect · {questions.length - answered} unanswered</p><p>{instantOnly ? "Your quiz has been scored automatically." : "Your result has been saved for your teacher."} Review all solutions below, including questions you skipped.</p><button onClick={() => { update(()=>({answers:{},submitted:false,attemptId:crypto.randomUUID()})); setSavedScore(null); window.scrollTo({ top: 0 }); }}>Try again</button></section> : <div className="fq-progress" aria-live="polite"><strong>{answered} / {questions.length} answered</strong><a href="#submit-quiz">Go to submit</a><progress value={answered} max={questions.length} aria-label="Questions answered" /></div>}
       <div className="fq-questions">{questions.map((q, i) => <section className="fq-question" key={i} aria-labelledby={`question-${i}`}>
         <div className="fq-question-meta"><span>Question {i + 1}</span>{!instantOnly && <span>{q.assertion ? 'Assertion–reason' : q.topic} · 1 mark</span>}</div>
         <h2 id={`question-${i}`}><MathText>{q.prompt}</MathText></h2>

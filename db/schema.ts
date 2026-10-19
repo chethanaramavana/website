@@ -128,3 +128,8 @@ export const paperContent = sqliteTable('paper_content', {
   updatedBy: text('updated_by').notNull(),
   updatedAt: text('updated_at').notNull().default(sql`CURRENT_TIMESTAMP`),
 });
+
+export const mcqDrafts=sqliteTable('mcq_drafts',{
+ userId:text('user_id').notNull(),quizId:text('quiz_id').notNull(),
+ stateJson:text('state_json').notNull(),revision:integer('revision').notNull(),updatedAtMs:integer('updated_at_ms').notNull(),
+},table=>[primaryKey({columns:[table.userId,table.quizId]})]);
