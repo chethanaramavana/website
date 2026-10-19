@@ -7,7 +7,7 @@ import { getIntegralsProduct } from './integrals-products';
 
 export function activityPaper(id: string) {
   const basics=basicsOutline.find(t=>id==='maths-basics-'+t.slug);
-  if(basics)return {title:`Maths Step by Step · ${basics.title}`,free:basicsCourses.some(c=>c.topics[0]===basics.slug),total:5,kind:'basics' as const,slug:basics.slug};
+  if(basics)return {title:`Maths Step by Step · ${basics.title}`,free:basicsCourses.some(c=>c.topics[0]===basics.slug),total:10,kind:'basics' as const,slug:basics.slug};
   const product = getIntegralsProduct(id);
   if (product) return { title: `Grade 12 · ${product.title}`, free: false, total: id.includes('mcq-20') ? 20 : id.includes('board') ? 24 : id.includes('main') ? 25 : id.endsWith('01') ? 16 : 18, kind: 'integrals' as const };
   const match = /^cbse-(10|11|12)-ch-(\d+)-50$/.exec(id);

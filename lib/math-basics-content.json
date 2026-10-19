@@ -43,7 +43,11 @@
             ]
           }
         ],
-        "remember": "Zero is neither positive nor negative. There is no largest natural number."
+        "remember": "Zero is neither positive nor negative. There is no largest natural number.",
+        "teaching": [
+          "Count one object at a time: 1, 2, 3 and so on are natural numbers. When there are no objects, the count is 0. Including zero gives the whole numbers. Both lists continue without end.",
+          "Each step right on a number line increases a whole number by 1. The successor of 9 is 10; its predecessor is 8. Zero has no predecessor among whole numbers. Move each object once when counting so nothing is missed or counted twice."
+        ]
       },
       {
         "title": "Tens, hundreds and thousands",
@@ -85,7 +89,11 @@
             ]
           }
         ],
-        "remember": "A digit and its value are different: the digit is 7, but its value may be 700."
+        "remember": "A digit and its value are different: the digit is 7, but its value may be 700.",
+        "teaching": [
+          "Ten ones can be exchanged for one ten without changing the total. Ten tens make one hundred, and ten hundreds make one thousand. Moving a digit one place left makes its value ten times as large.",
+          "In 4,072, the 4 means 4,000, the 0 holds the hundreds place, the 7 means 70 and the 2 means 2. Thus 4,072 = 4,000 + 70 + 2. Removing the zero would give 472, a different number."
+        ]
       },
       {
         "title": "Compare and order whole numbers",
@@ -122,7 +130,11 @@
             ]
           }
         ],
-        "remember": "Ascending means smallest to largest. Descending means largest to smallest."
+        "remember": "Ascending means smallest to largest. Descending means largest to smallest.",
+        "teaching": [
+          "Compare the number of digits first, ignoring leading zeros. A four-digit whole number is greater than a three-digit whole number. If the lengths match, compare from the left until the first unequal digits.",
+          "For 5,399 and 5,406, the thousands match. The hundreds are 3 and 4, so 5,399 < 5,406. Later digits cannot change that decision. Ascending order means smallest to largest. In a story, identify whether you need the largest amount, the smallest or the difference."
+        ]
       }
     ],
     "test": [
@@ -162,6 +174,41 @@
           "5,406",
           "5,399",
           "5,604"
+        ]
+      },
+      {
+        "prompt": "What number comes immediately before 10,000?",
+        "answer": "9999",
+        "solution": "One less means subtract 1: 10,000 − 1 = 9,999.",
+        "options": null
+      },
+      {
+        "prompt": "Write 5,000 + 700 + 9 as one number.",
+        "answer": "5709",
+        "solution": "There are 5 thousands, 7 hundreds, 0 tens and 9 ones: 5,709.",
+        "options": null
+      },
+      {
+        "prompt": "How many tens make 400?",
+        "answer": "40",
+        "solution": "One ten is 10. Divide 400 by 10 to get 40 tens.",
+        "options": null
+      },
+      {
+        "prompt": "A library labels books from 1 to 36. How many labels are used?",
+        "answer": "36",
+        "solution": "Each natural number from 1 through 36 labels one book, giving 36 labels.",
+        "options": null
+      },
+      {
+        "prompt": "Which list is in ascending order?",
+        "answer": "408, 480, 804",
+        "solution": "Ascending means smallest to largest. Compare hundreds first, then tens.",
+        "options": [
+          "408, 480, 804",
+          "804, 480, 408",
+          "480, 408, 804",
+          "408, 804, 480"
         ]
       }
     ]
@@ -204,7 +251,11 @@
             "options": null
           }
         ],
-        "remember": "“More” does not always tell you to add. “How many more?” often asks for a difference."
+        "remember": "“More” does not always tell you to add. “How many more?” often asks for a difference.",
+        "teaching": [
+          "Addition combines amounts: 12 books and 7 more give 12 + 7 = 19 books. Subtraction can mean taking away, finding a missing part or comparing amounts. A shelf with 19 books has 7 more than a shelf with 12.",
+          "Draw the amounts as bars. Two parts with a missing whole suggest addition. A whole and one known part suggest subtraction. Read the complete situation rather than choosing from one word: “I have 7 more than you; I have 19” asks for 19 − 7."
+        ]
       },
       {
         "title": "Addition with regrouping",
@@ -235,7 +286,11 @@
             "options": null
           }
         ],
-        "remember": "A carried 1 means one ten, one hundred or another place-value unit—not always one single object."
+        "remember": "A carried 1 means one ten, one hundred or another place-value unit—not always one single object.",
+        "teaching": [
+          "Write ones below ones, tens below tens and hundreds below hundreds. Start at the right. If a column totals ten or more, exchange ten units for one unit in the next column. This is regrouping; the total value stays the same.",
+          "For 268 + 157, 8 + 7 = 15 ones: write 5 and carry 1 ten. Then 6 + 5 + 1 = 12 tens: write 2 and carry 1 hundred. Finally 2 + 1 + 1 = 4 hundreds, giving 425. An estimate near 430 checks the size."
+        ]
       },
       {
         "title": "Subtraction with regrouping",
@@ -267,7 +322,11 @@
             "options": null
           }
         ],
-        "remember": "Subtract the lower number from the upper number in each column after regrouping; do not reverse individual digits."
+        "remember": "Subtract the lower number from the upper number in each column after regrouping; do not reverse individual digits.",
+        "teaching": [
+          "Align the place-value columns. If a column has too few units to subtract, exchange one unit from the next column for ten smaller units. If that next column is zero, first exchange from a nonzero column farther left.",
+          "For 502 − 178, exchange to get 4 hundreds, 10 tens and 2 ones, then 4 hundreds, 9 tens and 12 ones. Subtract each column: 12 − 8 = 4, 9 − 7 = 2 and 4 − 1 = 3. Check: 324 + 178 = 502."
+        ]
       }
     ],
     "test": [
@@ -299,6 +358,36 @@
         "prompt": "Find the missing number: 249 + □ = 600.",
         "answer": "351",
         "solution": "600 − 249 = 351.",
+        "options": null
+      },
+      {
+        "prompt": "Find 486 + 175.",
+        "answer": "661",
+        "solution": "Ones: 6+5=11. Tens: 8+7+1=16. Hundreds: 4+1+1=6. The sum is 661.",
+        "options": null
+      },
+      {
+        "prompt": "Find 900 − 367.",
+        "answer": "533",
+        "solution": "Regroup 900 as 8 hundreds, 9 tens and 10 ones. Subtract each column: 533.",
+        "options": null
+      },
+      {
+        "prompt": "A bus has 47 passengers. 18 leave and 9 enter. How many are on the bus now?",
+        "answer": "38",
+        "solution": "Subtract those leaving, then add those entering: 47−18+9=29+9=38.",
+        "options": null
+      },
+      {
+        "prompt": "Find the missing number: □ − 156 = 289.",
+        "answer": "445",
+        "solution": "Add the amount removed to the remainder: 289+156=445. Check: 445−156=289.",
+        "options": null
+      },
+      {
+        "prompt": "Mina has ₹275 and needs ₹430. How much more does she need?",
+        "answer": "155",
+        "solution": "Find the difference: 430−275=155. Check: 275+155=430.",
         "options": null
       }
     ]
@@ -336,7 +425,11 @@
             "options": null
           }
         ],
-        "remember": "Unequal groups cannot be counted by multiplying the number of groups by just one group’s size."
+        "remember": "Unequal groups cannot be counted by multiplying the number of groups by just one group’s size.",
+        "teaching": [
+          "Multiplication counts equal groups. Four packets with six pencils each contain 6 + 6 + 6 + 6 = 4 × 6 = 24 pencils. Four rows of six dots can be turned into six rows of four, showing 4 × 6 = 6 × 4.",
+          "Build unfamiliar facts from known ones. Split 7 × 6 into five groups and two groups: 30 + 12 = 42. Multiplying by 1 leaves the number unchanged; multiplying by 0 gives zero. Unequal groups must be added separately."
+        ]
       },
       {
         "title": "Multiply using place value",
@@ -368,7 +461,11 @@
             "options": null
           }
         ],
-        "remember": "In the tens row, multiply by 20, not by 2. The place-value zero matters."
+        "remember": "In the tens row, multiply by 20, not by 2. The place-value zero matters.",
+        "teaching": [
+          "Split a multi-digit multiplier by place value. In 36 × 24, the 24 means 20 + 4, so calculate both 36 × 20 and 36 × 4, then add the partial products.",
+          "First 36 × 4 = 144. Next 36 × 20 = 720, because twenty is two tens. Adding gives 720 + 144 = 864. The zero in 720 records place value. Estimate 40 × 20 = 800 to check that the answer is a sensible size."
+        ]
       },
       {
         "title": "Sharing, grouping and remainders",
@@ -408,7 +505,11 @@
             "options": null
           }
         ],
-        "remember": "The remainder must be smaller than the divisor. Division by zero is undefined."
+        "remember": "The remainder must be smaller than the divisor. Division by zero is undefined.",
+        "teaching": [
+          "Division shares a total equally or counts equal groups. Sharing 24 pencils among 6 children gives 4 each. Packing 24 pencils into groups of 6 gives 4 groups. Multiplication checks both: 6 × 4 = 24.",
+          "For 157 ÷ 6, 6 × 26 = 156, leaving 1. A remainder must be smaller than the divisor. If 157 people need six-seat vans, 26 vans leave one person behind, so 27 vans are needed. Interpret the remainder in the story."
+        ]
       }
     ],
     "test": [
@@ -440,6 +541,36 @@
         "prompt": "A trip has 53 people and 10 seats per van. How many vans?",
         "answer": "6",
         "solution": "Five vans seat 50, so a sixth is needed.",
+        "options": null
+      },
+      {
+        "prompt": "Find 46 × 13.",
+        "answer": "598",
+        "solution": "Split 13 into 10+3: 46×10+46×3=460+138=598.",
+        "options": null
+      },
+      {
+        "prompt": "Find 252 ÷ 9.",
+        "answer": "28",
+        "solution": "9×20=180 and 9×8=72. Together 180+72=252, so the quotient is 28.",
+        "options": null
+      },
+      {
+        "prompt": "Each packet holds 18 crayons. How many crayons are in 7 packets?",
+        "answer": "126",
+        "solution": "Equal groups call for multiplication: 7×18=7×(10+8)=70+56=126.",
+        "options": null
+      },
+      {
+        "prompt": "What is the quotient when 173 is divided by 5, leaving a remainder?",
+        "answer": "34",
+        "solution": "5×34=170 and 173−170=3. The quotient is 34 and the remainder is 3.",
+        "options": null
+      },
+      {
+        "prompt": "A ribbon 96 cm long is cut into 8 equal pieces. How long is each piece, in cm?",
+        "answer": "12",
+        "solution": "Share the total equally: 96÷8=12. Check: 8×12=96.",
         "options": null
       }
     ]
@@ -487,7 +618,11 @@
             ]
           }
         ],
-        "remember": "An estimate should state its accuracy, such as “to the nearest ten”."
+        "remember": "An estimate should state its accuracy, such as “to the nearest ten”.",
+        "teaching": [
+          "An estimate is a sensible nearby value when an exact count is difficult or unnecessary. Use ≈ for an approximation and = for exact equality. An estimate should be close enough for its purpose.",
+          "For 198 children, you might say about 200. But planning only 190 seats would leave children standing. Decide whether you are checking a calculation, planning supplies or describing a large amount before choosing how closely to estimate."
+        ]
       },
       {
         "title": "Round to the nearest ten, hundred or thousand",
@@ -519,7 +654,11 @@
             "options": null
           }
         ],
-        "remember": "The same number can round differently depending on the place requested."
+        "remember": "The same number can round differently depending on the place requested.",
+        "teaching": [
+          "To round 347 to the nearest ten, locate 340 and 350. Their distances from 347 are 7 and 3, so choose 350. At the midpoint, the usual school rule for positive numbers is to round up.",
+          "For 3,462 to the nearest hundred, compare with the midpoint 3,450 between 3,400 and 3,500: round to 3,500. To the nearest thousand, compare with 3,500 between 3,000 and 4,000: round to 3,000. Always identify the requested place."
+        ]
       },
       {
         "title": "Estimate sums and differences",
@@ -551,7 +690,11 @@
             "options": null
           }
         ],
-        "remember": "Round the quantities as instructed before calculating. Rounding only the final exact answer is a different method."
+        "remember": "Round the quantities as instructed before calculating. Rounding only the final exact answer is a different method.",
+        "teaching": [
+          "Choose a rounding place that makes the calculation easy but keeps useful detail. For 398 + 207, use 400 + 200 = 600. The exact sum is 605. Rounding inputs can make the final estimate slightly larger or smaller.",
+          "For 504 − 496, rounding to hundreds gives 500 − 500 = 0 and hides the gap. Here the exact difference 8 is more useful. An estimation method should suit the question, rather than follow the same rounding rule every time."
+        ]
       },
       {
         "title": "Estimate products, quotients and check answers",
@@ -583,7 +726,11 @@
             "options": null
           }
         ],
-        "remember": "Reasonable does not mean certainly correct. Check the exact calculation when accuracy is needed."
+        "remember": "Reasonable does not mean certainly correct. Check the exact calculation when accuracy is needed.",
+        "teaching": [
+          "Use nearby easy factors for products: 49 × 21 ≈ 50 × 20 = 1,000. For division, choose compatible numbers: 398 ÷ 8 ≈ 400 ÷ 8 = 50. You do not need to round both numbers to the same place.",
+          "Compare an exact result with your estimate. An answer of 10,029 for 49 × 21 is far from 1,000 and signals an error; the correct product is 1,029. A close estimate helps check size but does not prove every digit is correct."
+        ]
       }
     ],
     "test": [
@@ -616,6 +763,39 @@
         "answer": "60",
         "solution": "Compatible numbers: 420 ÷ 7 = 60.",
         "options": null
+      },
+      {
+        "prompt": "Round 6,349 to the nearest hundred.",
+        "answer": "6300",
+        "solution": "The neighbouring hundreds are 6,300 and 6,400. The distances are 49 and 51, so choose 6,300.",
+        "options": null
+      },
+      {
+        "prompt": "Round 8,501 to the nearest thousand.",
+        "answer": "9000",
+        "solution": "8,501 is above the midpoint 8,500, so it rounds to 9,000.",
+        "options": null
+      },
+      {
+        "prompt": "Estimate 918 − 486 by rounding each number to the nearest hundred.",
+        "answer": "400",
+        "solution": "Round 918 to 900 and 486 to 500, then subtract: 900−500=400.",
+        "options": null
+      },
+      {
+        "prompt": "Estimate 38 × 52 by rounding each factor to the nearest ten.",
+        "answer": "2000",
+        "solution": "38 rounds to 40 and 52 rounds to 50. Multiply: 40×50=2,000.",
+        "options": null
+      },
+      {
+        "prompt": "A student says 21 × 39 = 8,190. Is the answer reasonable?",
+        "answer": "No",
+        "solution": "20×40=800 is a useful estimate. 8,190 is about ten times too large. The exact answer is 819.",
+        "options": [
+          "Yes",
+          "No"
+        ]
       }
     ]
   },
@@ -657,7 +837,11 @@
             "options": null
           }
         ],
-        "remember": "A larger negative numeral can represent a smaller number: −90 < −9."
+        "remember": "A larger negative numeral can represent a smaller number: −90 < −9.",
+        "teaching": [
+          "Negative numbers describe positions below a reference, such as temperatures below zero. Integers include negative whole numbers, zero and positive whole numbers. On the number line, values increase from left to right.",
+          "Zero is neither positive nor negative. The number −5 is smaller than −2 because it lies farther left. Opposites such as 4 and −4 are equally far from zero. Their distance from zero is called their absolute value."
+        ]
       },
       {
         "title": "Add and subtract integers",
@@ -690,7 +874,11 @@
             "options": null
           }
         ],
-        "remember": "For unlike signs in addition, compare magnitudes. Do not apply multiplication sign rules to addition."
+        "remember": "For unlike signs in addition, compare magnitudes. Do not apply multiplication sign rules to addition.",
+        "teaching": [
+          "Adding a positive integer moves right on the number line; adding a negative integer moves left. From −3, adding 5 reaches 2, while adding −5 reaches −8.",
+          "Subtraction means adding the opposite: 4 − (−3) = 4 + 3 = 7. With the same signs, add the sizes and keep the sign. With opposite signs, subtract the smaller size from the larger and use the sign of the number farther from zero."
+        ]
       },
       {
         "title": "Multiply and divide signed numbers",
@@ -741,7 +929,11 @@
             "options": null
           }
         ],
-        "remember": "“Two negatives make a positive” applies to multiplication and division, not to −4 + (−3)."
+        "remember": "“Two negatives make a positive” applies to multiplication and division, not to −4 + (−3).",
+        "teaching": [
+          "First multiply the positive sizes, then decide the sign. One negative factor gives a negative product; two negative factors give a positive product. Four groups of a loss of three give 4 × (−3) = −12.",
+          "In the pattern 2 × (−3) = −6, 1 × (−3) = −3 and 0 × (−3) = 0, the results increase by 3 each step. The next is (−1) × (−3) = 3. Division follows the same sign pattern because it reverses multiplication. Division by zero is undefined."
+        ]
       }
     ],
     "test": [
@@ -779,6 +971,41 @@
         "answer": "-11",
         "solution": "−3 − 8 = −11°C.",
         "options": null
+      },
+      {
+        "prompt": "Find (−63) ÷ (−9).",
+        "answer": "7",
+        "solution": "The signs are the same, so the result is positive. 63÷9=7.",
+        "options": null
+      },
+      {
+        "prompt": "Find −12 − 7.",
+        "answer": "-19",
+        "solution": "Subtracting 7 moves 7 places left from −12: −19.",
+        "options": null
+      },
+      {
+        "prompt": "Find 15 + (−15).",
+        "answer": "0",
+        "solution": "A number and its opposite have sum zero.",
+        "options": null
+      },
+      {
+        "prompt": "An elevator moves from floor −2 to floor 5. How many floors does it rise?",
+        "answer": "7",
+        "solution": "From −2 to 0 is 2 floors and from 0 to 5 is 5 more: 2+5=7.",
+        "options": null
+      },
+      {
+        "prompt": "Which statement is true?",
+        "answer": "−4 > −9",
+        "solution": "−4 lies to the right of −9 on a number line.",
+        "options": [
+          "−4 > −9",
+          "−9 > −4",
+          "−4 = −9",
+          "−4 > 0"
+        ]
       }
     ]
   },
@@ -818,7 +1045,11 @@
             "options": null
           }
         ],
-        "remember": "DMAS does not mean “do every division before every multiplication.”"
+        "remember": "DMAS does not mean “do every division before every multiplication.”",
+        "teaching": [
+          "Multiplication and division have equal priority: work left to right. Then do addition and subtraction left to right. DMAS does not mean division always comes before multiplication or addition before subtraction.",
+          "For 24 ÷ 6 × 2, calculate 4 × 2 = 8. For 18 − 5 + 2, calculate 13 + 2 = 15. Rewrite the remaining expression at each step so you do not lose a term."
+        ]
       },
       {
         "title": "Brackets and a story calculation",
@@ -853,7 +1084,11 @@
             "options": null
           }
         ],
-        "remember": "Read the story before writing an expression. Brackets must represent the intended groups."
+        "remember": "Read the story before writing an expression. Brackets must represent the intended groups.",
+        "teaching": [
+          "Do brackets first, then powers, then multiplication and division, then addition and subtraction. For nested brackets, start with the innermost group.",
+          "In 3 × (8 + 2) − 4, first add to get 10, multiply to get 30, then subtract to get 26. This can represent three packs of eight pencils and two pens, with four items given away. Brackets keep the contents of each pack together."
+        ]
       }
     ],
     "test": [
@@ -885,6 +1120,36 @@
         "prompt": "Five boxes have 6 pencils each; 8 pencils are given away. How many remain?",
         "answer": "22",
         "solution": "5 × 6 − 8 = 22.",
+        "options": null
+      },
+      {
+        "prompt": "Find 42 ÷ 7 + 3 × 5.",
+        "answer": "21",
+        "solution": "Complete division and multiplication first: 6+15=21.",
+        "options": null
+      },
+      {
+        "prompt": "Find 30 − 12 ÷ 3.",
+        "answer": "26",
+        "solution": "Divide first: 12÷3=4. Then 30−4=26.",
+        "options": null
+      },
+      {
+        "prompt": "Find 4 × (9 − 2) + 6.",
+        "answer": "34",
+        "solution": "Brackets: 9−2=7. Multiply: 4×7=28. Add: 28+6=34.",
+        "options": null
+      },
+      {
+        "prompt": "Find 36 ÷ 3 ÷ 2.",
+        "answer": "6",
+        "solution": "Equal-priority divisions go left to right: 36÷3=12, then 12÷2=6.",
+        "options": null
+      },
+      {
+        "prompt": "Three packets contain 12 biscuits each. Two children each eat 5 biscuits. How many remain?",
+        "answer": "26",
+        "solution": "Start with 3×12=36 biscuits. Subtract 2×5=10 eaten: 36−10=26.",
         "options": null
       }
     ]
@@ -939,7 +1204,11 @@
             ]
           }
         ],
-        "remember": "List both numbers in every factor pair, but count a repeated factor only once."
+        "remember": "List both numbers in every factor pair, but count a repeated factor only once.",
+        "teaching": [
+          "A factor divides a whole number exactly, leaving no remainder. Arrange 18 counters in complete equal rows: 1 × 18, 2 × 9 and 3 × 6. Each rectangle names a factor pair.",
+          "The factors are 1, 2, 3, 6, 9 and 18. Stop when pairs repeat in reverse. A positive whole number has finitely many factors, each at most the number itself. In packing problems, a factor gives a group size with no leftovers."
+        ]
       },
       {
         "title": "Multiples and divisibility",
@@ -975,7 +1244,11 @@
             ]
           }
         ],
-        "remember": "A factor fits into a number. A multiple is made by multiplying that number."
+        "remember": "A factor fits into a number. A multiple is made by multiplying that number.",
+        "teaching": [
+          "Multiples are totals made from equal groups: 7, 14, 21 and 28 are positive multiples of 7. Factors divide a number; multiples are made by multiplying it. Thus 7 is a factor of 21 and 21 is a multiple of 7.",
+          "An even last digit means divisibility by 2; a final 0 or 5 means divisibility by 5. For 3 or 9, test the digit sum; for 4, test the last two digits. Since 324 has digit sum 9 and last two digits 24, it is divisible by 3, 9 and 4."
+        ]
       },
       {
         "title": "Prime and composite numbers",
@@ -1019,7 +1292,11 @@
             "options": null
           }
         ],
-        "remember": "Odd does not mean prime: 9, 15 and 21 are odd composite numbers."
+        "remember": "Odd does not mean prime: 9, 15 and 21 are odd composite numbers.",
+        "teaching": [
+          "A prime has exactly two positive factors: 1 and itself. A composite has more than two. The number 13 cannot form a rectangle with both sides greater than 1, whereas 15 = 3 × 5 can.",
+          "The number 1 is neither prime nor composite. The number 2 is the only even prime, because larger even numbers have 2 as an extra factor. To test a larger number, try prime divisors up to its square root: any larger factor must have a smaller partner."
+        ]
       }
     ],
     "test": [
@@ -1066,6 +1343,44 @@
         "answer": "5",
         "solution": "1, 2, 4, 8 and 16.",
         "options": null
+      },
+      {
+        "prompt": "How many positive factors does 20 have?",
+        "answer": "6",
+        "solution": "Pair the factors: 1×20, 2×10 and 4×5. The six factors are 1,2,4,5,10,20.",
+        "options": null
+      },
+      {
+        "prompt": "What is the seventh positive multiple of 6?",
+        "answer": "42",
+        "solution": "The nth positive multiple is the number multiplied by n: 6×7=42.",
+        "options": null
+      },
+      {
+        "prompt": "Which number is prime?",
+        "answer": "29",
+        "solution": "29 has only 1 and 29 as positive factors. The other options have additional factors.",
+        "options": [
+          "21",
+          "27",
+          "29",
+          "33"
+        ]
+      },
+      {
+        "prompt": "Is 432 divisible by 9?",
+        "answer": "Yes",
+        "solution": "Its digit sum is 4+3+2=9. Since 9 is divisible by 9, so is 432.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "prompt": "A teacher arranges 28 counters in equal rows of 4. How many rows are made?",
+        "answer": "7",
+        "solution": "4 is a factor of 28 because 4×7=28. There are 7 rows.",
+        "options": null
       }
     ]
   },
@@ -1108,7 +1423,11 @@
             "options": null
           }
         ],
-        "remember": "The leaves of a completed prime factor tree must all be prime; 1 is not a prime factor."
+        "remember": "The leaves of a completed prime factor tree must all be prime; 1 is not a prime factor.",
+        "teaching": [
+          "Prime factorisation writes an integer greater than 1 as a product of primes. Start with any factor pair, split each composite factor again, and stop when every branch of the factor tree is prime.",
+          "For 60, one route is 6 × 10 = 2 × 3 × 2 × 5, so 60 = 2² × 3 × 5. Different trees give the same prime factors in a different order. Keep repeated factors and multiply them back to check."
+        ]
       },
       {
         "title": "HCF: largest equal groups or lengths",
@@ -1142,7 +1461,11 @@
             "options": null
           }
         ],
-        "remember": "In the bead problem, HCF gives the number of packets—not the total beads per packet."
+        "remember": "In the bead problem, HCF gives the number of packets—not the total beads per packet.",
+        "teaching": [
+          "The highest common factor is the largest number dividing all given numbers exactly. Use it when cutting different quantities into the largest equal parts with nothing left over. Each part must divide every quantity.",
+          "For 24 cm and 36 cm ribbons, 24 = 2³ × 3 and 36 = 2² × 3². Keep only the shared prime copies: 2² × 3 = 12. Pieces of 12 cm give two pieces from one ribbon and three from the other. Extra prime copies would fail to divide one ribbon."
+        ]
       },
       {
         "title": "LCM: first shared repeat",
@@ -1173,7 +1496,11 @@
             "options": null
           }
         ],
-        "remember": "The word “greatest” or “smallest” alone is not enough. Decide whether you need a common divisor or a common multiple."
+        "remember": "The word “greatest” or “smallest” alone is not enough. Decide whether you need a common divisor or a common multiple.",
+        "teaching": [
+          "The least common multiple is the smallest positive multiple shared by all given numbers. Use it for the first time repeating events coincide or the smallest equal total made from different pack sizes.",
+          "For bells ringing every 4 and 6 minutes, use 4 = 2² and 6 = 2 × 3. Keep enough prime copies for both: 2² × 3 = 12. The first common time is 12 minutes. HCF uses shared copies; LCM uses the greatest required power of each prime."
+        ]
       }
     ],
     "test": [
@@ -1205,6 +1532,36 @@
         "prompt": "What is the missing factor in 84 = 2 × 2 × 3 × □?",
         "answer": "7",
         "solution": "4×3=12; 84÷12=7.",
+        "options": null
+      },
+      {
+        "prompt": "Find the HCF of 28 and 42.",
+        "answer": "14",
+        "solution": "28=2×2×7 and 42=2×3×7. The common prime factors give 2×7=14.",
+        "options": null
+      },
+      {
+        "prompt": "Find the LCM of 8 and 14.",
+        "answer": "56",
+        "solution": "8=2³ and 14=2×7. Use the highest power of each prime: 2³×7=56.",
+        "options": null
+      },
+      {
+        "prompt": "Ribbons of 45 cm and 60 cm are cut into the longest possible equal pieces with no waste. Find each piece length, in cm.",
+        "answer": "15",
+        "solution": "The length must divide both 45 and 60. Their HCF is 15, so each piece is 15 cm long.",
+        "options": null
+      },
+      {
+        "prompt": "Two lights flash every 6 and 15 seconds. Starting together, after how many seconds do they next flash together?",
+        "answer": "30",
+        "solution": "Use the LCM of 6 and 15. Multiples first coincide at 30 seconds.",
+        "options": null
+      },
+      {
+        "prompt": "Find the HCF of the prime numbers 11 and 17.",
+        "answer": "1",
+        "solution": "Distinct primes have no common factor greater than 1, so their HCF is 1.",
         "options": null
       }
     ]
@@ -1241,7 +1598,11 @@
             "options": null
           }
         ],
-        "remember": "Equal parts must be equal in size, not merely equal in number."
+        "remember": "Equal parts must be equal in size, not merely equal in number.",
+        "teaching": [
+          "The denominator tells how many equal parts make one whole; the numerator counts the chosen parts. In 3/8, three of eight equal parts are selected. Unequal pieces cannot be counted as equal eighths.",
+          "Splitting each part in two gives 3/8 = 6/16 without changing the amount. Multiply or divide both parts of a fraction by the same nonzero number. For 11/4, division gives two wholes and three quarters, so 11/4 = 2¾."
+        ]
       },
       {
         "title": "Calculate with fractions",
@@ -1271,7 +1632,11 @@
             "options": null
           }
         ],
-        "remember": "Do not add denominators: 1/5 + 2/5 = 3/5, not 3/10."
+        "remember": "Do not add denominators: 1/5 + 2/5 = 3/5, not 3/10.",
+        "teaching": [
+          "For addition and subtraction, first make the piece sizes equal using a common denominator. For 1/3 + 1/4, use twelfths: 4/12 + 3/12 = 7/12. Add numerators while keeping the denominator.",
+          "Multiplication finds a part of a part: 2/3 × 3/5 = 6/15 = 2/5. Division asks how many portions fit: 3/4 ÷ 1/8 = 6 because three quarters contain six eighths. Multiplying by the reciprocal performs this division. Never divide by zero."
+        ]
       }
     ],
     "test": [
@@ -1300,7 +1665,7 @@
       {
         "prompt": "Find 3/5 of 25.",
         "answer": "15",
-        "solution": "25÷5×3=15.",
+        "solution": "Find one fifth first, then take three such parts: 25÷5×3=15.",
         "options": null
       },
       {
@@ -1318,6 +1683,51 @@
         "prompt": "How many halves fit in 5 wholes?",
         "answer": "10",
         "solution": "5 ÷ 1/2 = 10.",
+        "options": null
+      },
+      {
+        "prompt": "Simplify 14/21.",
+        "answer": "2/3",
+        "solution": "Divide the numerator and denominator by their HCF, 7.",
+        "options": [
+          "2/3",
+          "3/2",
+          "7/14",
+          "1/3"
+        ]
+      },
+      {
+        "prompt": "Find 2/7 + 3/7.",
+        "answer": "5/7",
+        "solution": "The parts have the same size, so add the numerators and keep denominator 7.",
+        "options": [
+          "5/7",
+          "5/14",
+          "1/7",
+          "6/7"
+        ]
+      },
+      {
+        "prompt": "Find 3/4 × 2/3.",
+        "answer": "1/2",
+        "solution": "Multiply: 6/12. Simplify by dividing top and bottom by 6.",
+        "options": [
+          "1/2",
+          "5/7",
+          "2/7",
+          "3/2"
+        ]
+      },
+      {
+        "prompt": "Find 2/5 ÷ 1/10.",
+        "answer": "4",
+        "solution": "Multiply by the reciprocal: 2/5×10=20/5=4.",
+        "options": null
+      },
+      {
+        "prompt": "A 32-page booklet has 3/8 of its pages illustrated. How many pages are illustrated?",
+        "answer": "12",
+        "solution": "One eighth is 32÷8=4 pages. Three eighths is 3×4=12 pages.",
         "options": null
       }
     ]
@@ -1356,7 +1766,11 @@
             ]
           }
         ],
-        "remember": "More decimal digits do not necessarily mean a larger number."
+        "remember": "More decimal digits do not necessarily mean a larger number.",
+        "teaching": [
+          "Decimal places continue place value to the right of ones: tenths, hundredths, then thousandths. Thus 0.37 = 3/10 + 7/100 = 37/100. These digits represent parts of one whole.",
+          "Trailing decimal zeros do not change value: 0.5 = 0.50. Compare 0.50 with 0.37 by tenths, then hundredths. Do not compare the digits 5 and 37 as though both were whole numbers."
+        ]
       },
       {
         "title": "Decimal operations",
@@ -1391,7 +1805,11 @@
             "options": null
           }
         ],
-        "remember": "Only scale both dividend and divisor by the same amount; scaling just one changes the answer."
+        "remember": "Only scale both dividend and divisor by the same amount; scaling just one changes the answer.",
+        "teaching": [
+          "For addition and subtraction, align decimal points so equal place values meet. Add trailing zeros when helpful: 12.5 + 7.75 becomes 12.50 + 7.75 = 20.25.",
+          "For 3.6 × 0.4, calculate 36 × 4 = 144 and account for two decimal places to get 1.44. For division, scale both quantities equally: 4.8 ÷ 0.6 = 48 ÷ 6 = 8. Estimate to check the decimal point."
+        ]
       }
     ],
     "test": [
@@ -1416,13 +1834,43 @@
       {
         "prompt": "Find 6.3 ÷ 0.7.",
         "answer": "9",
-        "solution": "63÷7=9.",
+        "solution": "Multiply both dividend and divisor by ten to make the divisor whole: 63÷7=9.",
         "options": null
       },
       {
         "prompt": "Four pens cost ₹8.50 each. Find the total cost.",
         "answer": "34",
-        "solution": "4×8.50=34.",
+        "solution": "Multiply the price of one pen by the number of pens: 4×8.50=34.",
+        "options": null
+      },
+      {
+        "prompt": "Find 4.75 + 2.6.",
+        "answer": "7.35",
+        "solution": "Write 2.6 as 2.60, align decimal points, and add: 4.75+2.60=7.35.",
+        "options": null
+      },
+      {
+        "prompt": "Find 8 − 2.37.",
+        "answer": "5.63",
+        "solution": "Write 8 as 8.00. Subtract with aligned decimal places: 8.00−2.37=5.63.",
+        "options": null
+      },
+      {
+        "prompt": "Find 0.7 × 0.8.",
+        "answer": "0.56",
+        "solution": "7×8=56. The factors have two decimal places altogether, giving 0.56.",
+        "options": null
+      },
+      {
+        "prompt": "Find 7.2 ÷ 0.9.",
+        "answer": "8",
+        "solution": "Multiply both numbers by 10: 72÷9=8. The quotient is unchanged.",
+        "options": null
+      },
+      {
+        "prompt": "A jug contains 2.5 litres. After pouring out 0.85 litres, how many litres remain?",
+        "answer": "1.65",
+        "solution": "Subtract the amount poured: 2.50−0.85=1.65 litres.",
         "options": null
       }
     ]
@@ -1470,7 +1918,11 @@
             "options": null
           }
         ],
-        "remember": "A part-to-part ratio is not a fraction of the whole."
+        "remember": "A part-to-part ratio is not a fraction of the whole.",
+        "teaching": [
+          "A red-to-blue ratio of 3:5 means three equal shares of red for every five of blue. There are eight shares altogether, not five. The order of the named quantities matters.",
+          "For 40 counters, each share is 40 ÷ 8 = 5. Red gets 15 and blue gets 25. Convert measurements to the same unit before making a ratio. For a constant price rate, find the price of one item, then multiply."
+        ]
       },
       {
         "title": "Direct and inverse proportion",
@@ -1512,7 +1964,11 @@
             "options": null
           }
         ],
-        "remember": "Not every relationship is proportional. A taxi with a fixed starting charge is one counterexample."
+        "remember": "Not every relationship is proportional. A taxi with a fixed starting charge is one counterexample.",
+        "teaching": [
+          "In direct proportion, doubling one quantity doubles the other because the rate stays fixed. If four notebooks cost 60 rupees, one costs 15 and seven cost 105. Cost divided by count stays constant.",
+          "In inverse proportion, the product stays constant. For a fixed job and equally fast workers, twice as many workers take half the time, assuming they can work together without delay. Identify what stays fixed before choosing the model."
+        ]
       }
     ],
     "test": [
@@ -1536,7 +1992,7 @@
       {
         "prompt": "A 2:7 ratio has how many parts altogether?",
         "answer": "9",
-        "solution": "2+7=9.",
+        "solution": "Add the shares in both parts of the ratio: 2+7=9.",
         "options": null
       },
       {
@@ -1555,6 +2011,41 @@
           "1:4",
           "25:1"
         ]
+      },
+      {
+        "prompt": "Simplify 18:30.",
+        "answer": "3:5",
+        "solution": "Divide both parts by their HCF, 6.",
+        "options": [
+          "3:5",
+          "5:3",
+          "6:10",
+          "3:10"
+        ]
+      },
+      {
+        "prompt": "Five pens cost ₹65. What do eight pens cost?",
+        "answer": "104",
+        "solution": "One pen costs 65÷5=13 rupees. Eight pens cost 8×13=104 rupees.",
+        "options": null
+      },
+      {
+        "prompt": "Divide 48 in the ratio 1:3. Find the smaller share.",
+        "answer": "12",
+        "solution": "There are 1+3=4 equal parts. One part is 48÷4=12; the smaller share is one part.",
+        "options": null
+      },
+      {
+        "prompt": "At a constant speed, 3 hours cover 180 km. How many kilometres are covered in 5 hours?",
+        "answer": "300",
+        "solution": "The speed is 180÷3=60 km per hour. In 5 hours the distance is 60×5=300 km.",
+        "options": null
+      },
+      {
+        "prompt": "Eight equally productive workers take 6 days for a job. How many days would 12 workers take under the same conditions?",
+        "answer": "4",
+        "solution": "The job needs 8×6=48 worker-days. Divide by 12 workers: 48÷12=4 days.",
+        "options": null
       }
     ]
   },
@@ -1589,7 +2080,11 @@
             "options": null
           }
         ],
-        "remember": "Identify the whole: percentages compare with a base amount."
+        "remember": "Identify the whole: percentages compare with a base amount.",
+        "teaching": [
+          "Percent means per hundred: 35% = 35/100 = 0.35. To find a percentage of an amount, multiply that amount by the percentage fraction.",
+          "For 20% of 250, calculate 20/100 × 250 = 50. Alternatively find 10%, which is 25, and double it. To express a part as a percentage, divide the part by the whole and multiply by 100. Thus 20 out of 50 is 40%."
+        ]
       },
       {
         "title": "Discount, profit and simple interest",
@@ -1624,7 +2119,11 @@
             "options": null
           }
         ],
-        "remember": "An increase of 10% followed by a decrease of 10% does not return to the starting value."
+        "remember": "An increase of 10% followed by a decrease of 10% does not return to the starting value.",
+        "teaching": [
+          "Identify the base amount before calculating. Discount is usually a percentage of marked price, while profit or loss is a percentage of cost price. Calculate the change, then add or subtract it as required.",
+          "A 15% discount on 800 rupees is 120 rupees, leaving 680 rupees to pay. Simple interest uses the same principal each year: $I=\\dfrac{PRT}{100}$ when rate is percent per year and time is years. Convert months to years, and add interest to principal only when the total amount is asked."
+        ]
       }
     ],
     "test": [
@@ -1656,6 +2155,36 @@
         "prompt": "A ₹600 bag is discounted 25%. Find its new price.",
         "answer": "450",
         "solution": "25% of 600=150; 600−150=450.",
+        "options": null
+      },
+      {
+        "prompt": "Find 35% of 80.",
+        "answer": "28",
+        "solution": "35/100×80=28. Alternatively, 30% is 24 and 5% is 4; add to get 28.",
+        "options": null
+      },
+      {
+        "prompt": "A pupil answers 27 out of 30 questions correctly. What percentage is correct?",
+        "answer": "90",
+        "solution": "27/30×100=90%. Enter the percentage number 90.",
+        "options": null
+      },
+      {
+        "prompt": "An item costs ₹350 and sells for ₹420. What is the profit in rupees?",
+        "answer": "70",
+        "solution": "Profit is selling price minus cost price: 420−350=70.",
+        "options": null
+      },
+      {
+        "prompt": "A ₹800 item has a 15% discount. Find the amount to pay.",
+        "answer": "680",
+        "solution": "Discount=15/100×800=120. Amount to pay=800−120=680.",
+        "options": null
+      },
+      {
+        "prompt": "Find simple interest on ₹2,000 at 5% per year for 3 years.",
+        "answer": "300",
+        "solution": "$I=\\dfrac{PRT}{100}=\\dfrac{2000\\times5\\times3}{100}=300$ rupees.",
         "options": null
       }
     ]
@@ -1693,7 +2222,11 @@
             "options": null
           }
         ],
-        "remember": "3² means 3×3, not 3×2."
+        "remember": "3² means 3×3, not 3×2.",
+        "teaching": [
+          "A power represents repeated multiplication: 2⁴ = 2 × 2 × 2 × 2 = 16. The base is the repeated factor and the exponent counts the factors. It does not mean 2 × 4.",
+          "With the same base, multiplying joins factors: 2³ × 2² = 2⁵. Dividing cancels factors: 2⁵ ÷ 2² = 2³. These rules require the same base, and division requires a nonzero base. They do not apply to addition: 2² + 2³ = 12."
+        ]
       },
       {
         "title": "Square and cube roots",
@@ -1723,32 +2256,36 @@
             "options": null
           }
         ],
-        "remember": "In general √(a+b) is not √a+√b."
+        "remember": "In general √(a+b) is not √a+√b.",
+        "teaching": [
+          "A square of side 7 has area 49 square units. A square root reverses squaring, so √49 = 7. The root symbol names the nonnegative square root, although both 7 and −7 square to 49.",
+          "A cube root reverses cubing: ∛125 = 5 because 5³ = 125. Locate unfamiliar roots between known squares: 36 < 40 < 49 gives 6 < √40 < 7. Roots need not be whole numbers."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Find 4³.",
         "answer": "64",
-        "solution": "4×4×4=64.",
+        "solution": "A cube means multiplying three copies of the base: 4×4×4=64.",
         "options": null
       },
       {
         "prompt": "Find √144.",
         "answer": "12",
-        "solution": "12²=144.",
+        "solution": "The square root is the nonnegative number whose square is the original number: 12²=144.",
         "options": null
       },
       {
         "prompt": "Find ∛125.",
         "answer": "5",
-        "solution": "5³=125.",
+        "solution": "The cube root is the number whose cube is the original number: 5³=125.",
         "options": null
       },
       {
         "prompt": "Find 2³ × 2².",
         "answer": "32",
-        "solution": "2⁵=32.",
+        "solution": "For equal bases, add exponents when multiplying: 2³ × 2² = 2⁵. Then 2⁵=32.",
         "options": null
       },
       {
@@ -1756,6 +2293,41 @@
         "answer": "0.01",
         "solution": "1/100=0.01.",
         "options": null
+      },
+      {
+        "prompt": "Find 5³.",
+        "answer": "125",
+        "solution": "5³ means 5×5×5=25×5=125.",
+        "options": null
+      },
+      {
+        "prompt": "Find √225.",
+        "answer": "15",
+        "solution": "15×15=225, so the non-negative square root is 15.",
+        "options": null
+      },
+      {
+        "prompt": "Find ∛216.",
+        "answer": "6",
+        "solution": "6×6×6=216, so the cube root is 6.",
+        "options": null
+      },
+      {
+        "prompt": "Find 3⁴ ÷ 3².",
+        "answer": "9",
+        "solution": "For the same nonzero base, subtract exponents: 3⁴÷3²=3²=9.",
+        "options": null
+      },
+      {
+        "prompt": "Find 2⁻³.",
+        "answer": "1/8",
+        "solution": "A negative exponent means a reciprocal: 2⁻³=1/(2³)=1/8.",
+        "options": [
+          "1/8",
+          "−8",
+          "−6",
+          "8"
+        ]
       }
     ]
   },
@@ -1792,7 +2364,11 @@
             "options": null
           }
         ],
-        "remember": "A variable is a number, not a label for an object. 3x means 3×x."
+        "remember": "A variable is a number, not a label for an object. 3x means 3×x.",
+        "teaching": [
+          "A letter can represent an unknown or changing number. In 3x + 5, the term 3x means 3 × x, its coefficient is 3 and the constant is 5. When x = 4, substitution gives 3 × 4 + 5 = 17.",
+          "An expression describes a value; an equation states that two values are equal. Label what a letter means, including its unit. If x is the price of one pencil, 3x is the price of three; adding 5 might represent a fixed extra charge."
+        ]
       },
       {
         "title": "Like terms and brackets",
@@ -1827,14 +2403,18 @@
             "options": null
           }
         ],
-        "remember": "x and x² are not like terms. Addition and multiplication follow different rules."
+        "remember": "x and x² are not like terms. Addition and multiplication follow different rules.",
+        "teaching": [
+          "Like terms have the same letter part and powers. Three lots of x plus five lots give 3x + 5x = 8x. But x and x² are different kinds of terms and cannot be combined in this way.",
+          "A factor outside brackets multiplies every term: 3(x + 4) = 3x + 12. A minus sign must also reach every term: −2(x − 3) = −2x + 6. Expand, collect like terms, then check by substituting a small value into both forms."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Find 2a+7 for a=6.",
         "answer": "19",
-        "solution": "12+7=19.",
+        "solution": "Substitute a = 6: 2a + 7 = 2 × 6 + 7. Therefore 12+7=19.",
         "options": null
       },
       {
@@ -1846,7 +2426,7 @@
       {
         "prompt": "Simplify 3y+5y.",
         "answer": "8y",
-        "solution": "3+5=8.",
+        "solution": "The letter parts match, so add their coefficients: 3+5=8.",
         "options": [
           "8y",
           "15y",
@@ -1869,6 +2449,46 @@
         "prompt": "Find x²+1 for x=−3.",
         "answer": "10",
         "solution": "(−3)²+1=9+1=10.",
+        "options": null
+      },
+      {
+        "prompt": "Find 5p−3 when p=4.",
+        "answer": "17",
+        "solution": "Replace p by 4: 5×4−3=20−3=17.",
+        "options": null
+      },
+      {
+        "prompt": "Coefficient of y in 6y−11?",
+        "answer": "6",
+        "solution": "The coefficient is the number multiplying y, which is 6.",
+        "options": null
+      },
+      {
+        "prompt": "Simplify 7a−2a.",
+        "answer": "5a",
+        "solution": "Like terms share the same variable part. Subtract the coefficients: 7−2=5.",
+        "options": [
+          "5a",
+          "9a",
+          "5",
+          "5a²"
+        ]
+      },
+      {
+        "prompt": "Expand 3(x−2).",
+        "answer": "3x−6",
+        "solution": "Multiply both terms inside the bracket by 3: 3×x−3×2.",
+        "options": [
+          "3x−6",
+          "3x−2",
+          "x−6",
+          "3x+6"
+        ]
+      },
+      {
+        "prompt": "Find 2x² when x=−4.",
+        "answer": "32",
+        "solution": "Square first: (−4)²=16. Then multiply by 2: 2×16=32.",
         "options": null
       }
     ]
@@ -1906,7 +2526,11 @@
             "options": null
           }
         ],
-        "remember": "An expression has no equals sign; an equation does."
+        "remember": "An expression has no equals sign; an equation does.",
+        "teaching": [
+          "An equation is like a balanced scale. Performing the same operation on both sides keeps it balanced. Undo addition with subtraction and multiplication with division by a nonzero number.",
+          "For 3x + 4 = 25, subtract 4 from both sides to get 3x = 21. Divide both sides by 3 to get x = 7. Check: 3 × 7 + 4 = 25. “Moving a term” is shorthand for these equal operations."
+        ]
       },
       {
         "title": "Build an equation from a story",
@@ -1936,7 +2560,11 @@
             "options": null
           }
         ],
-        "remember": "Do not guess the operation from one word. Write the complete relationship."
+        "remember": "Do not guess the operation from one word. Write the complete relationship.",
+        "teaching": [
+          "Read a story once for the situation and again for the quantities. Choose a letter for the unknown, then translate each statement. Three identical tickets plus a 4-rupee fee costing 25 rupees gives 3x + 4 = 25.",
+          "After solving, return to the story: x = 7 means each ticket costs 7 rupees. Substitute into the total and include the unit. A negative count of objects is a reason to revisit the model or arithmetic."
+        ]
       }
     ],
     "test": [
@@ -1968,6 +2596,36 @@
         "prompt": "Four tickets and a ₹10 fee cost ₹110. Find one ticket’s price.",
         "answer": "25",
         "solution": "4x+10=110 → x=25.",
+        "options": null
+      },
+      {
+        "prompt": "Solve x+19=42.",
+        "answer": "23",
+        "solution": "Subtract 19 from both sides: x=42−19=23.",
+        "options": null
+      },
+      {
+        "prompt": "Solve 6x−5=31.",
+        "answer": "6",
+        "solution": "Add 5 to both sides: 6x=36. Divide by 6: x=6.",
+        "options": null
+      },
+      {
+        "prompt": "Solve 2(x+3)=22.",
+        "answer": "8",
+        "solution": "Divide both sides by 2: x+3=11. Subtract 3: x=8.",
+        "options": null
+      },
+      {
+        "prompt": "Solve x/5+2=9.",
+        "answer": "35",
+        "solution": "Subtract 2: x/5=7. Multiply by 5: x=35.",
+        "options": null
+      },
+      {
+        "prompt": "Three identical notebooks and a ₹12 pen cost ₹87. Find one notebook price.",
+        "answer": "25",
+        "solution": "Let a notebook cost x rupees. 3x+12=87, so 3x=75 and x=25.",
         "options": null
       }
     ]
@@ -2009,7 +2667,11 @@
             ]
           }
         ],
-        "remember": "Longer rays do not make an angle larger; the turn determines the angle."
+        "remember": "Longer rays do not make an angle larger; the turn determines the angle.",
+        "teaching": [
+          "An angle measures a turn between two rays meeting at a vertex. A quarter-turn is 90°, a half-turn is 180° and a complete turn is 360°. Making the rays longer does not change the angle.",
+          "Centre a protractor at the vertex and align its baseline with one ray. Use the scale starting at zero on that ray. Complementary angles total 90°; supplementary angles total 180°. Subtract the known part from the appropriate total."
+        ]
       },
       {
         "title": "Intersecting and parallel lines",
@@ -2037,7 +2699,11 @@
             "options": null
           }
         ],
-        "remember": "A diagram is not proof of parallel lines; look for stated conditions or matching marks."
+        "remember": "A diagram is not proof of parallel lines; look for stated conditions or matching marks.",
+        "teaching": [
+          "Opposite angles at an intersection are vertically opposite and equal. Adjacent angles on a straight line add to 180°. Use these facts to work around an intersection one angle at a time.",
+          "When a transversal crosses parallel lines, corresponding and alternate interior angles are equal. Interior angles on the same side total 180°. Confirm that the lines are parallel; their appearance alone is not enough. State the relationship before calculating."
+        ]
       }
     ],
     "test": [
@@ -2050,7 +2716,7 @@
       {
         "prompt": "Find the complement of 28°.",
         "answer": "62",
-        "solution": "90−28=62°.",
+        "solution": "Complementary angles add to 90°. Subtract the given angle: 90−28=62°.",
         "options": null
       },
       {
@@ -2069,6 +2735,41 @@
         "prompt": "Corresponding angles on parallel lines: one is 118°. Find the other.",
         "answer": "118",
         "solution": "Corresponding angles are equal.",
+        "options": null
+      },
+      {
+        "prompt": "How many degrees are in three right angles?",
+        "answer": "270",
+        "solution": "A right angle is 90°. Three give 3×90=270°.",
+        "options": null
+      },
+      {
+        "prompt": "Two angles on a straight line are 47° and x°. Find x.",
+        "answer": "133",
+        "solution": "A straight angle is 180°. Subtract: 180−47=133°.",
+        "options": null
+      },
+      {
+        "prompt": "Around a point, three angles are 90°, 120° and x°. Find x.",
+        "answer": "150",
+        "solution": "Angles around a point total 360°. Thus x=360−90−120=150°.",
+        "options": null
+      },
+      {
+        "prompt": "What type of angle is 125°?",
+        "answer": "Obtuse",
+        "solution": "125° is greater than 90° and less than 180°.",
+        "options": [
+          "Acute",
+          "Right",
+          "Obtuse",
+          "Straight"
+        ]
+      },
+      {
+        "prompt": "Alternate interior angles on parallel lines: one is 73°. Find the other.",
+        "answer": "73",
+        "solution": "Alternate interior angles are equal when the lines are parallel.",
         "options": null
       }
     ]
@@ -2112,7 +2813,11 @@
             ]
           }
         ],
-        "remember": "A triangle inequality is strict. Lengths 2, 3 and 5 form a straight segment, not a triangle."
+        "remember": "A triangle inequality is strict. Lengths 2, 3 and 5 form a straight segment, not a triangle.",
+        "teaching": [
+          "A triangle has three sides, and its interior angles total 180°. An isosceles triangle has two equal sides and equal opposite angles. An equilateral triangle has all three angles equal to 60°.",
+          "The sum of any two side lengths must be greater than the third. Sides 3, 4 and 8 cannot form a triangle because 3 + 4 is too short to meet across a side of 8. Check this before using proposed triangle measurements."
+        ]
       },
       {
         "title": "Four-sided shapes",
@@ -2145,14 +2850,18 @@
             ]
           }
         ],
-        "remember": "Classify using properties, not the orientation or appearance of the drawing."
+        "remember": "Classify using properties, not the orientation or appearance of the drawing.",
+        "teaching": [
+          "A diagonal divides a quadrilateral into two triangles, so its interior angles total 360°. Side and angle properties distinguish parallelograms, rectangles, rhombuses and squares.",
+          "A rectangle has four right angles; a rhombus has four equal sides. A square has both properties, so it is also a rectangle and a rhombus. A parallelogram has equal opposite sides and angles; do not assume all four are equal."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "An equilateral triangle has each angle equal to how many degrees?",
         "answer": "60",
-        "solution": "180÷3=60°.",
+        "solution": "The three equal angles of an equilateral triangle total 180°. Divide equally: 180÷3=60°.",
         "options": null
       },
       {
@@ -2181,6 +2890,39 @@
           "Yes",
           "No"
         ]
+      },
+      {
+        "prompt": "An isosceles triangle has a vertex angle of 40°. Find each equal base angle.",
+        "answer": "70",
+        "solution": "The other two angles total 180−40=140°. They are equal, so each is 140÷2=70°.",
+        "options": null
+      },
+      {
+        "prompt": "A triangle has angles 90° and 35°. Find the third angle.",
+        "answer": "55",
+        "solution": "Subtract known angles from 180°: 180−90−35=55°.",
+        "options": null
+      },
+      {
+        "prompt": "Can 2 cm, 3 cm and 6 cm be sides of a triangle?",
+        "answer": "No",
+        "solution": "The sum 2+3=5 is less than 6, so the sides cannot close to form a triangle.",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "prompt": "Three quadrilateral angles are 90°, 85° and 95°. Find the fourth.",
+        "answer": "90",
+        "solution": "The total is 360°. Known angles sum to 270°, leaving 90°.",
+        "options": null
+      },
+      {
+        "prompt": "A parallelogram has one angle 68°. Find its opposite angle.",
+        "answer": "68",
+        "solution": "Opposite angles of a parallelogram are equal.",
+        "options": null
       }
     ]
   },
@@ -2215,7 +2957,11 @@
             "options": null
           }
         ],
-        "remember": "A diagonal of a non-square rectangle is not a line of symmetry."
+        "remember": "A diagonal of a non-square rectangle is not a line of symmetry.",
+        "teaching": [
+          "A line of symmetry divides a figure into halves that match exactly when folded. Matching points lie at the same perpendicular distance on opposite sides of the fold. A figure can have no symmetry lines, one or several.",
+          "Rotational symmetry means a figure matches itself after a turn smaller than 360°. A nonsquare rectangle matches after 180°, giving order 2. A square matches every 90°, giving order 4. Reflection and rotation are different movements; test each separately."
+        ]
       },
       {
         "title": "Construct and read scale drawings",
@@ -2244,7 +2990,11 @@
             "options": null
           }
         ],
-        "remember": "A perpendicular line need not bisect a segment. A perpendicular bisector must do both."
+        "remember": "A perpendicular line need not bisect a segment. A perpendicular bisector must do both.",
+        "teaching": [
+          "Construct from the given measurements rather than copying the appearance of a sketch. Draw and label a starting side, then locate the other points with a ruler, compass or protractor. Keep construction marks that explain your method.",
+          "A scale drawing keeps length ratios constant. If 1 cm represents 2 m, a 5 cm line represents 10 m. Convert units before comparing. Doubling both dimensions makes the area four times as large, so a length scale factor cannot be applied directly to area."
+        ]
       }
     ],
     "test": [
@@ -2263,19 +3013,49 @@
       {
         "prompt": "Half of a 17 cm segment is how many cm?",
         "answer": "8.5",
-        "solution": "17÷2=8.5.",
+        "solution": "A midpoint divides a segment into two equal lengths: 17÷2=8.5.",
         "options": null
       },
       {
         "prompt": "Scale 1 cm:5 m. A 6 cm drawing represents how many metres?",
         "answer": "30",
-        "solution": "6×5=30.",
+        "solution": "Each centimetre on the drawing represents 5 metres, so multiply by six: 6×5=30.",
         "options": null
       },
       {
         "prompt": "At what angle does a perpendicular bisector cross its segment?",
         "answer": "90",
         "solution": "Perpendicular means 90°.",
+        "options": null
+      },
+      {
+        "prompt": "How many lines of symmetry does a non-square rectangle have?",
+        "answer": "2",
+        "solution": "One line passes through the midpoints of the long sides and one through the short sides. Diagonals are not symmetry lines.",
+        "options": null
+      },
+      {
+        "prompt": "A shape has rotational order 6. Find its smallest positive matching turn in degrees.",
+        "answer": "60",
+        "solution": "Divide a full turn by the order: 360÷6=60°.",
+        "options": null
+      },
+      {
+        "prompt": "A map scale is 1 cm:4 km. How many kilometres does 7 cm represent?",
+        "answer": "28",
+        "solution": "Each centimetre represents 4 km, so 7×4=28 km.",
+        "options": null
+      },
+      {
+        "prompt": "A drawing scale is 1 cm:3 m. How many centimetres represent 24 m?",
+        "answer": "8",
+        "solution": "Divide the actual distance by metres per centimetre: 24÷3=8 cm.",
+        "options": null
+      },
+      {
+        "prompt": "A perpendicular bisector meets a 26 cm segment at its midpoint. Find either half-length in cm.",
+        "answer": "13",
+        "solution": "A midpoint divides a segment equally: 26÷2=13 cm.",
         "options": null
       }
     ]
@@ -2313,7 +3093,11 @@
             "options": null
           }
         ],
-        "remember": "Perimeter uses units such as cm; area uses square units such as cm²."
+        "remember": "Perimeter uses units such as cm; area uses square units such as cm².",
+        "teaching": [
+          "Perimeter is the distance around a boundary, measured in length units. Area is the surface inside, measured in square units. A fence needs perimeter; floor covering needs area.",
+          "For a rectangle 8 cm by 5 cm, perimeter is 8 + 5 + 8 + 5 = 26 cm. Area is 8 × 5 = 40 square centimetres because there are five rows of eight unit squares. In a compound shape, distinguish outer edges from internal dividing lines."
+        ]
       },
       {
         "title": "Triangles, parallelograms and trapeziums",
@@ -2346,38 +3130,72 @@
             "options": null
           }
         ],
-        "remember": "Draw the height perpendicular to the base; it may lie outside an obtuse triangle."
+        "remember": "Draw the height perpendicular to the base; it may lie outside an obtuse triangle.",
+        "teaching": [
+          "A parallelogram rearranges into a rectangle with the same base and perpendicular height, so its area is base times height. A triangle is half a matching parallelogram, giving half the base times perpendicular height.",
+          "Height must meet the base at a right angle; a sloping side is usually not height. A trapezium has area half the sum of its parallel sides times their perpendicular separation. Mark these lengths on the picture before substituting into a formula."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Perimeter of a square of side 11 cm?",
         "answer": "44",
-        "solution": "4×11=44.",
+        "solution": "A square has four equal sides. Add all four, or multiply one side by four: 4×11=44.",
         "options": null
       },
       {
         "prompt": "Area of a 13 cm by 4 cm rectangle?",
         "answer": "52",
-        "solution": "13×4=52.",
+        "solution": "Multiply length by breadth to count the unit squares: 13×4=52.",
         "options": null
       },
       {
         "prompt": "Triangle base 8 cm, height 9 cm: area?",
         "answer": "36",
-        "solution": "½×8×9=36.",
+        "solution": "A triangle has half the area of a parallelogram with the same base and perpendicular height: ½×8×9=36.",
         "options": null
       },
       {
         "prompt": "Trapezium parallel sides 6 and 10 cm, height 4 cm: area?",
         "answer": "32",
-        "solution": "½×16×4=32.",
+        "solution": "Add the parallel sides, multiply by perpendicular height and halve: ½×16×4=32.",
         "options": null
       },
       {
         "prompt": "A 6 m by 5 m floor uses 1 m² tiles. How many tiles, ignoring gaps?",
         "answer": "30",
         "solution": "Area 30 m²; each tile covers 1 m².",
+        "options": null
+      },
+      {
+        "prompt": "Find the perimeter of a rectangle 9 cm long and 6 cm wide.",
+        "answer": "30",
+        "solution": "Add all four sides: 9+6+9+6=30 cm, or use 2(9+6).",
+        "options": null
+      },
+      {
+        "prompt": "Find the area of a square of side 12 cm.",
+        "answer": "144",
+        "solution": "Area=side×side=12×12=144 cm².",
+        "options": null
+      },
+      {
+        "prompt": "A parallelogram has base 11 cm and perpendicular height 5 cm. Find its area.",
+        "answer": "55",
+        "solution": "Area=base×height=11×5=55 cm².",
+        "options": null
+      },
+      {
+        "prompt": "A triangle has area 48 cm² and base 12 cm. Find its perpendicular height.",
+        "answer": "8",
+        "solution": "48=1/2×12×h=6h, so h=48÷6=8 cm.",
+        "options": null
+      },
+      {
+        "prompt": "A rectangular garden 14 m by 8 m needs fencing with a 2 m gate left open. How many metres of fencing are needed?",
+        "answer": "42",
+        "solution": "Perimeter=2(14+8)=44 m. Leave 2 m for the gate: 44−2=42 m.",
         "options": null
       }
     ]
@@ -2414,7 +3232,11 @@
             "options": null
           }
         ],
-        "remember": "A curved surface is not a polygonal face. Use the description stated in a question."
+        "remember": "A curved surface is not a polygonal face. Use the description stated in a question.",
+        "teaching": [
+          "A solid is three-dimensional. Flat surfaces are faces, edges are where faces meet, and vertices are corners. A net lays surfaces flat to show how they fold together.",
+          "A cube has six square faces, twelve edges and eight vertices. A cuboid also has six faces, but they need not all be squares. Remember hidden edges. Curved solids need different descriptions: a cylinder has two flat circular faces and a curved surface."
+        ]
       },
       {
         "title": "Measure capacity and covering",
@@ -2444,7 +3266,11 @@
             "options": null
           }
         ],
-        "remember": "Area measures covering; volume measures filling. Do not interchange cm² and cm³."
+        "remember": "Area measures covering; volume measures filling. Do not interchange cm² and cm³.",
+        "teaching": [
+          "Volume counts unit cubes inside. A cuboid has length times breadth cubes in each layer and height layers, giving length × breadth × height. Surface area measures the outside covering instead.",
+          "A box 5 cm by 4 cm by 3 cm has volume 60 cubic centimetres. Its total surface area is twice the sum of its three different face areas. Use consistent units. Capacity measures what a container holds: 1 cubic centimetre equals 1 millilitre; 1,000 millilitres equals 1 litre."
+        ]
       }
     ],
     "test": [
@@ -2457,13 +3283,13 @@
       {
         "prompt": "Volume of a cube of side 4 cm?",
         "answer": "64",
-        "solution": "4³=64.",
+        "solution": "A cube contains side × side × side unit cubes: 4³=64.",
         "options": null
       },
       {
         "prompt": "Total surface area of a cube of side 3 cm?",
         "answer": "54",
-        "solution": "6×3²=54.",
+        "solution": "There are six square faces, each of area 3² square centimetres: 6×3²=54.",
         "options": null
       },
       {
@@ -2476,6 +3302,36 @@
         "prompt": "Volume of a 10 cm by 5 cm by 2 cm box?",
         "answer": "100",
         "solution": "10×5×2=100.",
+        "options": null
+      },
+      {
+        "prompt": "How many vertices does a cuboid have?",
+        "answer": "8",
+        "solution": "A cuboid has four vertices on its top face and four on its bottom face, giving 8.",
+        "options": null
+      },
+      {
+        "prompt": "Find the volume of a cuboid 7 cm by 4 cm by 3 cm.",
+        "answer": "84",
+        "solution": "Volume=length×breadth×height=7×4×3=84 cm³.",
+        "options": null
+      },
+      {
+        "prompt": "Find the total surface area of a cube of side 5 cm.",
+        "answer": "150",
+        "solution": "Each square face has area 25 cm². Six faces give 6×25=150 cm².",
+        "options": null
+      },
+      {
+        "prompt": "How many litres are equal to 4,500 cm³?",
+        "answer": "4.5",
+        "solution": "1 litre=1,000 cm³. Divide 4,500 by 1,000 to get 4.5 litres.",
+        "options": null
+      },
+      {
+        "prompt": "Find the total surface area of a cuboid 5 cm by 3 cm by 2 cm.",
+        "answer": "62",
+        "solution": "Use 2(lb+bh+hl)=2(15+6+10)=2×31=62 cm².",
         "options": null
       }
     ]
@@ -2520,7 +3376,11 @@
             "options": null
           }
         ],
-        "remember": "For an even number of data values, median is the mean of the two middle values."
+        "remember": "For an even number of data values, median is the mean of the two middle values.",
+        "teaching": [
+          "Organise observations before calculating. The mean shares the total equally, the median is the middle value after sorting, and the mode is the most frequent value. The range is largest minus smallest.",
+          "For 2, 3, 3, 8, the mean is 16 ÷ 4 = 4. The median is the average of the two middle values, 3; the mode is 3; the range is 6. An unusual large value can move the mean without changing the median."
+        ]
       },
       {
         "title": "Probability of equally likely outcomes",
@@ -2560,14 +3420,18 @@
             ]
           }
         ],
-        "remember": "Counting outcomes this way needs equal likelihood; do not assume all real-world events are equally likely."
+        "remember": "Counting outcomes this way needs equal likelihood; do not assume all real-world events are equally likely.",
+        "teaching": [
+          "List possible outcomes before finding probability. For equally likely outcomes, divide the number of favourable outcomes by the total. An impossible event has probability 0; a certain event has probability 1.",
+          "A fair die has six outcomes, three of them even, so the probability of an even result is 3/6 = 1/2. Equal likelihood matters: simple outcome counting is not enough for an unfair die. Probability describes a long-run tendency, not a promise about the next throw."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Mean of 5, 9 and 10?",
         "answer": "8",
-        "solution": "24÷3=8.",
+        "solution": "Add the observations: 5 + 9 + 10 = 24. Divide by the three observations: 24÷3=8.",
         "options": null
       },
       {
@@ -2585,7 +3449,7 @@
       {
         "prompt": "Range of 6, 8, 15?",
         "answer": "9",
-        "solution": "15−6=9.",
+        "solution": "Range is the largest value minus the smallest: 15−6=9.",
         "options": null
       },
       {
@@ -2598,6 +3462,41 @@
           "1/2",
           "2/3"
         ]
+      },
+      {
+        "prompt": "Find the mean of 6, 8, 10 and 12.",
+        "answer": "9",
+        "solution": "Add to get 36 and divide by the four values: 36÷4=9.",
+        "options": null
+      },
+      {
+        "prompt": "Find the median of 9, 2, 7, 4 and 6.",
+        "answer": "6",
+        "solution": "Order the values: 2,4,6,7,9. The third value, 6, is in the middle.",
+        "options": null
+      },
+      {
+        "prompt": "Find the range of 11, 5, 18 and 9.",
+        "answer": "13",
+        "solution": "The maximum is 18 and the minimum is 5. Range=18−5=13.",
+        "options": null
+      },
+      {
+        "prompt": "A bag has 4 red and 6 blue identical balls. Find the probability of choosing red.",
+        "answer": "2/5",
+        "solution": "There are 4 favourable outcomes among 10 equally likely balls: 4/10=2/5.",
+        "options": [
+          "2/5",
+          "3/5",
+          "4/6",
+          "1/4"
+        ]
+      },
+      {
+        "prompt": "What is the probability of rolling a 7 on a standard six-sided die?",
+        "answer": "0",
+        "solution": "The possible results are 1 through 6. Rolling 7 is impossible, so its probability is 0.",
+        "options": null
       }
     ]
   },
@@ -2642,7 +3541,11 @@
             ]
           }
         ],
-        "remember": "Zero is rational: 0 = 0/1. A denominator can never be zero."
+        "remember": "Zero is rational: 0 = 0/1. A denominator can never be zero.",
+        "teaching": [
+          "A rational number is an integer divided by a nonzero integer. A negative sign can be in front of the fraction or on exactly one of its parts: −3/4 = 3/(−4) = −0.75. Two negative parts give a positive fraction.",
+          "Compare negative fractions on a number line. Since −1/4 is farther right than −3/4, it is greater. Multiply both parts by the same nonzero number to make equivalent forms: −3/4 = −6/8. A denominator can never be zero."
+        ]
       },
       {
         "title": "Calculate with signed fractions",
@@ -2679,14 +3582,18 @@
             "options": null
           }
         ],
-        "remember": "Subtraction of a negative adds the positive opposite."
+        "remember": "Subtraction of a negative adds the positive opposite.",
+        "teaching": [
+          "Use a positive common denominator for addition, then add the signed numerators. For −2/3 + 5/6, first write −2/3 = −4/6. Then −4/6 + 5/6 = 1/6.",
+          "Apply integer sign rules when multiplying fractions: (−2/3) × (−3/4) = 6/12 = 1/2. For division, multiply by the reciprocal of the nonzero divisor. Brackets around negative factors make the signs easier to follow."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Is −7 rational?",
         "answer": "Yes",
-        "solution": "−7 = −7/1.",
+        "solution": "It can be expressed as an integer over a nonzero integer: −7 = −7/1.",
         "options": [
           "Yes",
           "No"
@@ -2725,6 +3632,51 @@
           "−3/2",
           "−2"
         ]
+      },
+      {
+        "prompt": "Find −5/8 + 1/4.",
+        "answer": "−3/8",
+        "solution": "Use denominator 8: −5/8+2/8=−3/8.",
+        "options": [
+          "−3/8",
+          "−4/12",
+          "3/8",
+          "−7/8"
+        ]
+      },
+      {
+        "prompt": "Find (−3/7) × (14/9).",
+        "answer": "−2/3",
+        "solution": "The signs differ, so the product is negative. Simplify −42/63 to −2/3.",
+        "options": [
+          "−2/3",
+          "2/3",
+          "−3/2",
+          "−6/7"
+        ]
+      },
+      {
+        "prompt": "Find (−5/6) ÷ (−5/12).",
+        "answer": "2",
+        "solution": "Multiply by the reciprocal: (−5/6)×(−12/5)=60/30=2.",
+        "options": null
+      },
+      {
+        "prompt": "Which fraction equals −0.2?",
+        "answer": "−1/5",
+        "solution": "−0.2=−2/10=−1/5.",
+        "options": [
+          "−1/5",
+          "−1/2",
+          "1/5",
+          "−2"
+        ]
+      },
+      {
+        "prompt": "Find 7/9 + (−7/9).",
+        "answer": "0",
+        "solution": "These are opposite numbers, so their sum is zero.",
+        "options": null
       }
     ]
   },
@@ -2773,7 +3725,11 @@
             ]
           }
         ],
-        "remember": "A long decimal display alone does not prove that a number is irrational."
+        "remember": "A long decimal display alone does not prove that a number is irrational.",
+        "teaching": [
+          "Rational numbers have terminating or eventually repeating decimals. Irrational numbers have decimals that never terminate or settle into a repeating pattern. Together they form the real numbers on the number line.",
+          "Not every root is irrational: √49 = 7 is rational, but √2 is irrational. Since 1.4² = 1.96 and 1.5² = 2.25, √2 lies between 1.4 and 1.5. A rounded decimal approximates the irrational value; it does not equal it exactly."
+        ]
       },
       {
         "title": "Root operations and rationalising",
@@ -2810,20 +3766,24 @@
             ]
           }
         ],
-        "remember": "√(a+b) is generally not √a + √b."
+        "remember": "√(a+b) is generally not √a + √b.",
+        "teaching": [
+          "Separate a perfect-square factor to simplify a root: √45 = √(9 × 5) = 3√5. Like roots combine as like terms: 2√5 + 3√5 = 5√5. Unlike roots cannot normally be collected into one term.",
+          "For 2/√5, multiply numerator and denominator by √5 to get 2√5/5. This works because √5 × √5 = 5 and the multiplying fraction equals 1. Square roots do not distribute over addition; for example, √(9 + 16) = 5, whereas √9 + √16 = 7."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Find √196.",
         "answer": "14",
-        "solution": "14² = 196.",
+        "solution": "The required square root is nonnegative. Check its square: 14² = 196.",
         "options": null
       },
       {
         "prompt": "Simplify √45.",
         "answer": "3√5",
-        "solution": "45 = 9×5.",
+        "solution": "Separate the perfect square: √45 = √(9 × 5) = 3√5, because 45 = 9×5.",
         "options": [
           "3√5",
           "9√5",
@@ -2834,7 +3794,7 @@
       {
         "prompt": "Find √6 × √24.",
         "answer": "12",
-        "solution": "√144 = 12.",
+        "solution": "Combine the nonnegative roots: √6 × √24 = √(6 × 24). Therefore √144 = 12.",
         "options": null
       },
       {
@@ -2855,6 +3815,56 @@
           "√7",
           "7√7",
           "1/7"
+        ]
+      },
+      {
+        "prompt": "Simplify √98.",
+        "answer": "7√2",
+        "solution": "98=49×2, so √98=√49×√2=7√2.",
+        "options": [
+          "7√2",
+          "49√2",
+          "2√7",
+          "14"
+        ]
+      },
+      {
+        "prompt": "Find √5 × √20.",
+        "answer": "10",
+        "solution": "Multiply inside the root: √(5×20)=√100=10.",
+        "options": null
+      },
+      {
+        "prompt": "Simplify 8√3−5√3.",
+        "answer": "3√3",
+        "solution": "The root parts match, so subtract coefficients: (8−5)√3=3√3.",
+        "options": [
+          "3√3",
+          "3",
+          "3√0",
+          "13√3"
+        ]
+      },
+      {
+        "prompt": "Which number is rational?",
+        "answer": "√64",
+        "solution": "√64=8, which is an integer and therefore rational.",
+        "options": [
+          "√2",
+          "√3",
+          "√5",
+          "√64"
+        ]
+      },
+      {
+        "prompt": "Rationalise 2/√5.",
+        "answer": "2√5/5",
+        "solution": "Multiply numerator and denominator by √5: 2√5/5.",
+        "options": [
+          "2√5/5",
+          "√5/2",
+          "2√5",
+          "2/5"
         ]
       }
     ]
@@ -2916,6 +3926,10 @@
             "working": "$$\\begin{aligned}(x+4)(x-4)&=x^2-4x+4x-16\\\\&=x^2-16\\end{aligned}$$",
             "conclusion": "Using the identity directly: $x^2-4^2=x^2-16$. There is no middle term because $-4x+4x=0$."
           }
+        ],
+        "teaching": [
+          "An identity is true for every allowed value of its letters. Expand (a + b)² as (a + b)(a + b). Multiplying every term gives a² + ab + ab + b². The two middle rectangles combine to make 2ab.",
+          "For (x + 4)², identify a = x and b = 4. The middle term is 2 × x × 4 = 8x and the final square is 16. With subtraction, the middle term becomes negative but the final square stays positive. Follow each substitution in the examples below."
         ]
       },
       {
@@ -2953,7 +3967,11 @@
             "options": null
           }
         ],
-        "remember": "Check a factorisation by expanding it again."
+        "remember": "Check a factorisation by expanding it again.",
+        "teaching": [
+          "Factorisation reverses expansion by writing a sum or difference as a product. First look for a common factor: 6x + 12 = 6(x + 2). Multiplying the brackets back checks the result.",
+          "For x² + 8x + 16, the outside terms are x² and 4², and the middle is 2 × x × 4, so it is (x + 4)². For x² − 16, the difference of squares gives (x + 4)(x − 4). Check both signs and the middle term."
+        ]
       }
     ],
     "test": [
@@ -2966,7 +3984,7 @@
       {
         "prompt": "Constant term in (x+7)²?",
         "answer": "49",
-        "solution": "7² = 49.",
+        "solution": "In (x + 7)² = x² + 14x + 49, the constant is the square of 7: 7² = 49.",
         "options": null
       },
       {
@@ -2990,6 +4008,41 @@
         "prompt": "In x²+8x+15=(x+3)(x+k), find k.",
         "answer": "5",
         "solution": "3+5=8 and 3×5=15.",
+        "options": null
+      },
+      {
+        "prompt": "Find the coefficient of x in (x+9)².",
+        "answer": "18",
+        "solution": "Using (a+b)²=a²+2ab+b² gives x²+18x+81, so the coefficient is 18.",
+        "options": null
+      },
+      {
+        "prompt": "Find the constant term in (x−8)².",
+        "answer": "64",
+        "solution": "The expansion is x²−16x+64. The constant term is (−8)²=64.",
+        "options": null
+      },
+      {
+        "prompt": "Find 103² using (100+3)².",
+        "answer": "10609",
+        "solution": "100²+2×100×3+3²=10000+600+9=10609.",
+        "options": null
+      },
+      {
+        "prompt": "Factorise x²−81.",
+        "answer": "(x−9)(x+9)",
+        "solution": "Use a²−b²=(a−b)(a+b) with a=x and b=9.",
+        "options": [
+          "(x−9)(x+9)",
+          "(x−9)²",
+          "(x+9)²",
+          "x(x−81)"
+        ]
+      },
+      {
+        "prompt": "Find k: x²+11x+24=(x+3)(x+k).",
+        "answer": "8",
+        "solution": "The numbers must add to 11 and multiply to 24. Since 3+8=11 and 3×8=24, k=8.",
         "options": null
       }
     ]
@@ -3027,7 +4080,11 @@
             "options": null
           }
         ],
-        "remember": "The axes meet at (0,0), the origin."
+        "remember": "The axes meet at (0,0), the origin.",
+        "teaching": [
+          "The horizontal x-axis and vertical y-axis meet at the origin, (0, 0). An ordered pair gives the horizontal coordinate first and vertical coordinate second. Changing their order usually changes the point.",
+          "To plot (−3, 2), move three units left and two up from the origin. Negative x means left; negative y means down. Points on the y-axis have x = 0; points on the x-axis have y = 0."
+        ]
       },
       {
         "title": "A linear equation has many solutions",
@@ -3058,7 +4115,11 @@
             ]
           }
         ],
-        "remember": "One equation in two variables usually does not determine one unique pair."
+        "remember": "One equation in two variables usually does not determine one unique pair.",
+        "teaching": [
+          "An equation in two variables can have many solution pairs. For x + y = 5, choosing x = 1 gives y = 4, while x = 2 gives y = 3. Both satisfy the condition.",
+          "Make a table, check each pair in the equation, then plot on axes with a consistent scale. Draw the line through the points. Points on the line are solutions; points off it fail the equation. One equation usually does not determine a unique pair."
+        ]
       }
     ],
     "test": [
@@ -3077,13 +4138,13 @@
       {
         "prompt": "For y=4x+3, find y at x=2.",
         "answer": "11",
-        "solution": "8+3 = 11.",
+        "solution": "Substitute x = 2: y = 4 × 2 + 3. Hence 8+3 = 11.",
         "options": null
       },
       {
         "prompt": "For x+y=9 and x=5, find y.",
         "answer": "4",
-        "solution": "9−5=4.",
+        "solution": "Subtract x = 5 from both sides of x + y = 9: 9−5=4.",
         "options": null
       },
       {
@@ -3095,6 +4156,44 @@
           "(2,3)",
           "(−2,3)",
           "(2,−3)"
+        ]
+      },
+      {
+        "prompt": "What is the x-coordinate of a point on the y-axis?",
+        "answer": "0",
+        "solution": "Every point on the y-axis has no horizontal displacement, so x=0.",
+        "options": null
+      },
+      {
+        "prompt": "Which quadrant contains (4,−7)?",
+        "answer": "Fourth",
+        "solution": "x is positive and y is negative, which describes the fourth quadrant.",
+        "options": [
+          "First",
+          "Second",
+          "Third",
+          "Fourth"
+        ]
+      },
+      {
+        "prompt": "For y=5x−4, find y when x=3.",
+        "answer": "11",
+        "solution": "Substitute x=3: y=15−4=11.",
+        "options": null
+      },
+      {
+        "prompt": "For 2x+y=12 and x=4, find y.",
+        "answer": "4",
+        "solution": "Substitute: 8+y=12. Subtract 8 to get y=4.",
+        "options": null
+      },
+      {
+        "prompt": "Does (2,5) satisfy y=3x−1?",
+        "answer": "Yes",
+        "solution": "3×2−1=6−1=5, matching the given y-coordinate.",
+        "options": [
+          "Yes",
+          "No"
         ]
       }
     ]
@@ -3134,7 +4233,11 @@
             "options": null
           }
         ],
-        "remember": "Always check the pair in both original equations."
+        "remember": "Always check the pair in both original equations.",
+        "teaching": [
+          "Two equations describe two conditions on the same unknowns. A solution must satisfy both. Elimination cancels an unknown by adding or subtracting equations; substitution replaces one unknown with an equivalent expression.",
+          "For x + y = 9 and x − y = 3, add to get 2x = 12. Hence x = 6 and substitution gives y = 3. Check both original equations. On a graph, the solution is an intersection; distinct parallel lines have no common solution."
+        ]
       },
       {
         "title": "Turn a situation into two equations",
@@ -3166,7 +4269,11 @@
             "options": null
           }
         ],
-        "remember": "Parallel distinct lines have no common solution; coincident lines have infinitely many."
+        "remember": "Parallel distinct lines have no common solution; coincident lines have infinitely many.",
+        "teaching": [
+          "Use two letters when a story has two different unknown quantities. Define them before making equations. A total number of tickets and their total cost give different conditions when adult and child prices differ.",
+          "Three adult tickets at x rupees and two child tickets at y rupees cost 3x + 2y, not 5xy. After solving, verify both the count and cost. State what each answer means and include the units."
+        ]
       }
     ],
     "test": [
@@ -3179,7 +4286,7 @@
       {
         "prompt": "For x+y=18 and x−y=4, find y.",
         "answer": "7",
-        "solution": "18−11=7.",
+        "solution": "Adding the equations gives 2x = 22, so x = 11. Substitute into x + y = 18: 18−11=7.",
         "options": null
       },
       {
@@ -3191,7 +4298,7 @@
       {
         "prompt": "A ticket and a snack cost ₹90; two tickets and a snack cost ₹145. Find one ticket price.",
         "answer": "55",
-        "solution": "145−90=55.",
+        "solution": "The second purchase has exactly one extra ticket and the same snack. Subtract the costs: 145−90=55.",
         "options": null
       },
       {
@@ -3201,6 +4308,41 @@
         "options": [
           "Yes",
           "No"
+        ]
+      },
+      {
+        "prompt": "x+y=20 and x−y=6. Find x.",
+        "answer": "13",
+        "solution": "Add the equations: 2x=26. Divide by 2: x=13.",
+        "options": null
+      },
+      {
+        "prompt": "For x+y=20 and x−y=6, find y.",
+        "answer": "7",
+        "solution": "Substitute x=13 in x+y=20: y=20−13=7.",
+        "options": null
+      },
+      {
+        "prompt": "3x+y=23 and x+y=11. Find x.",
+        "answer": "6",
+        "solution": "Subtract the second equation from the first: 2x=12, so x=6.",
+        "options": null
+      },
+      {
+        "prompt": "Two pens and a notebook cost ₹62. One pen and the same notebook cost ₹47. Find the notebook price.",
+        "answer": "32",
+        "solution": "Subtract the bills to find one pen: 62−47=15. Notebook price=47−15=32.",
+        "options": null
+      },
+      {
+        "prompt": "How many solutions do x+y=5 and 2x+2y=10 have?",
+        "answer": "Infinitely many",
+        "solution": "The second equation is twice the first, so both describe the same line.",
+        "options": [
+          "None",
+          "One",
+          "Two",
+          "Infinitely many"
         ]
       }
     ]
@@ -3245,7 +4387,11 @@
             "options": null
           }
         ],
-        "remember": "An equation may have two roots, but a word problem can rule out a negative length."
+        "remember": "An equation may have two roots, but a word problem can rule out a negative length.",
+        "teaching": [
+          "A quadratic equation has highest power 2. Arrange it with zero on one side before factorising. A product is zero only when at least one factor is zero; this lets us solve simpler equations.",
+          "For x² − 5x + 6 = 0, choose −2 and −3: their product is 6 and sum is −5. Then (x − 2)(x − 3) = 0 gives x = 2 or x = 3. Check each root. Do not divide away a factor that might be zero."
+        ]
       },
       {
         "title": "An arithmetic progression adds the same amount",
@@ -3277,7 +4423,11 @@
             "options": null
           }
         ],
-        "remember": "Use n−1 steps, not n, when starting from the first term."
+        "remember": "Use n−1 steps, not n, when starting from the first term.",
+        "teaching": [
+          "An arithmetic progression has a constant difference between consecutive terms. For 5, 8, 11, 14, the first term is 5 and each jump is 3. There is one jump to the second term and two to the third.",
+          "The nth term uses n − 1 jumps: aₙ = a + (n − 1)d. The tenth term here is 5 + 9 × 3 = 32. A sequence that repeatedly multiplies is not generally an arithmetic progression. Check consecutive differences first."
+        ]
       }
     ],
     "test": [
@@ -3301,7 +4451,7 @@
       {
         "prompt": "Find the 8th term of 4,7,10,…",
         "answer": "25",
-        "solution": "4+7×3=25.",
+        "solution": "The first term is 4 and each jump is 3. Reaching term 8 takes seven jumps: 4+7×3=25.",
         "options": null
       },
       {
@@ -3318,6 +4468,41 @@
           "Yes",
           "No"
         ]
+      },
+      {
+        "prompt": "Find the roots of x²−8x+15=0.",
+        "answer": "3 and 5",
+        "solution": "Factorise: (x−3)(x−5)=0, so x=3 or x=5.",
+        "options": [
+          "3 and 5",
+          "−3 and −5",
+          "1 and 15",
+          "2 and 6"
+        ]
+      },
+      {
+        "prompt": "A square has area 121 cm². Find its side length in cm.",
+        "answer": "11",
+        "solution": "s²=121 gives s=±11. A side length is positive, so choose 11 cm.",
+        "options": null
+      },
+      {
+        "prompt": "Find the 12th term of 2, 6, 10, …",
+        "answer": "46",
+        "solution": "The difference is 4. Use aₙ=a+(n−1)d: 2+11×4=46.",
+        "options": null
+      },
+      {
+        "prompt": "Find the common difference of 17, 11, 5, …",
+        "answer": "-6",
+        "solution": "Subtract a term from the next: 11−17=−6.",
+        "options": null
+      },
+      {
+        "prompt": "Find the 5th term of 25, 22, 19, …",
+        "answer": "13",
+        "solution": "The common difference is −3. The fifth term is 25+4×(−3)=13.",
+        "options": null
       }
     ]
   },
@@ -3352,7 +4537,11 @@
             "options": null
           }
         ],
-        "remember": "Square the whole coordinate difference, including its sign."
+        "remember": "Square the whole coordinate difference, including its sign.",
+        "teaching": [
+          "The horizontal and vertical differences between points form the legs of a right triangle. The straight-line distance is the hypotenuse: square both differences, add and take the square root.",
+          "From (1, 2) to (4, 6), differences are 3 and 4, so distance is √(3² + 4²) = 5 units. Subtract in the same order for both coordinates. Adding unsquared differences measures a different path, not the straight-line distance."
+        ]
       },
       {
         "title": "Midpoint means halfway in both directions",
@@ -3384,7 +4573,11 @@
             "options": null
           }
         ],
-        "remember": "Do not mix an x-coordinate with a y-coordinate in the average."
+        "remember": "Do not mix an x-coordinate with a y-coordinate in the average.",
+        "teaching": [
+          "A midpoint is halfway along a line segment. Average the x-coordinates for the horizontal halfway position and average the y-coordinates for the vertical halfway position.",
+          "For (2, 1) and (8, 5), the midpoint is (5, 3), because (2 + 8)/2 = 5 and (1 + 5)/2 = 3. Negative coordinates work the same way. Each midpoint coordinate should lie between its two endpoint coordinates."
+        ]
       }
     ],
     "test": [
@@ -3409,7 +4602,7 @@
       {
         "prompt": "Midpoint y-coordinate for (−6,2) and (4,8)?",
         "answer": "5",
-        "solution": "(2+8)/2=5.",
+        "solution": "The midpoint y-coordinate is the average of the endpoint y-coordinates: (2+8)/2=5.",
         "options": null
       },
       {
@@ -3420,6 +4613,36 @@
           "Yes",
           "No"
         ]
+      },
+      {
+        "prompt": "Distance between (−1,2) and (2,6)?",
+        "answer": "5",
+        "solution": "Changes are 3 and 4. Distance=√(3²+4²)=√25=5 units.",
+        "options": null
+      },
+      {
+        "prompt": "Distance between (−5,−2) and (3,−2)?",
+        "answer": "8",
+        "solution": "The y-coordinates match. Horizontal distance=3−(−5)=8 units.",
+        "options": null
+      },
+      {
+        "prompt": "Midpoint x-coordinate for (−8,−3) and (2,7)?",
+        "answer": "-3",
+        "solution": "Average the x-coordinates: (−8+2)/2=−6/2=−3.",
+        "options": null
+      },
+      {
+        "prompt": "Midpoint y-coordinate for (−8,−3) and (2,7)?",
+        "answer": "2",
+        "solution": "Average the y-coordinates: (−3+7)/2=4/2=2.",
+        "options": null
+      },
+      {
+        "prompt": "A segment starts at (0,0) and has midpoint (3,4). Find the other endpoint’s x-coordinate.",
+        "answer": "6",
+        "solution": "If the other x-coordinate is x, then (0+x)/2=3. Multiply by 2: x=6.",
+        "options": null
       }
     ]
   },
@@ -3454,7 +4677,11 @@
             "options": null
           }
         ],
-        "remember": "Match corresponding sides before forming ratios."
+        "remember": "Match corresponding sides before forming ratios.",
+        "teaching": [
+          "Similar triangles have equal corresponding angles and proportional corresponding sides. Mark matching vertices first. A scale factor of 3 multiplies every corresponding length by 3.",
+          "Areas scale by the square of the length factor, so a length factor of 3 gives an area factor of 9. Write side ratios in the same corresponding order, then solve for an unknown length. Appearance alone does not prove similarity."
+        ]
       },
       {
         "title": "Name sides from the chosen angle",
@@ -3492,20 +4719,24 @@
             ]
           }
         ],
-        "remember": "These side-ratio definitions apply to the acute angles of a right triangle."
+        "remember": "These side-ratio definitions apply to the acute angles of a right triangle.",
+        "teaching": [
+          "The hypotenuse is opposite the right angle and is the longest side. Choose another angle: its opposite side faces it, and its adjacent leg touches it. Opposite and adjacent change when you choose the other acute angle.",
+          "Sine is opposite divided by hypotenuse; cosine is adjacent divided by hypotenuse; tangent is opposite divided by adjacent. In a 3–4–5 triangle with opposite side 3, these are 3/5, 4/5 and 3/4. Label sides before selecting the ratio involving your known and unknown lengths."
+        ]
       }
     ],
     "test": [
       {
         "prompt": "Scale factor from a 4 cm side to its corresponding 10 cm side?",
         "answer": "2.5",
-        "solution": "10/4=2.5.",
+        "solution": "Divide the new length by the corresponding original length: 10/4=2.5.",
         "options": null
       },
       {
         "prompt": "Length scale factor 4 gives area factor?",
         "answer": "16",
-        "solution": "4²=16.",
+        "solution": "Area changes in two dimensions, so square the length scale factor: 4²=16.",
         "options": null
       },
       {
@@ -3533,12 +4764,57 @@
       {
         "prompt": "Opposite=9 and adjacent=12. Find tan θ.",
         "answer": "3/4",
-        "solution": "9/12=3/4.",
+        "solution": "Tangent is opposite divided by adjacent. Substitute and simplify: 9/12=3/4.",
         "options": [
           "3/4",
           "4/3",
           "3/5",
           "4/5"
+        ]
+      },
+      {
+        "prompt": "Similar triangles have corresponding sides 6 cm and 15 cm. A 4 cm side of the smaller triangle corresponds to how many cm in the larger?",
+        "answer": "10",
+        "solution": "The length scale factor is 15/6=2.5. Multiply 4 by 2.5 to get 10 cm.",
+        "options": null
+      },
+      {
+        "prompt": "Two similar figures have length scale factor 5. What is the area scale factor?",
+        "answer": "25",
+        "solution": "Area scales with the square of the length factor: 5²=25.",
+        "options": null
+      },
+      {
+        "prompt": "Opposite=7 and hypotenuse=25. Find sin θ.",
+        "answer": "7/25",
+        "solution": "Use $\\sin\\theta=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}$=7/25.",
+        "options": [
+          "7/25",
+          "24/25",
+          "7/24",
+          "25/7"
+        ]
+      },
+      {
+        "prompt": "Adjacent=8 and hypotenuse=17. Find cos θ.",
+        "answer": "8/17",
+        "solution": "Use $\\cos\\theta=\\dfrac{\\text{adjacent}}{\\text{hypotenuse}}$=8/17.",
+        "options": [
+          "8/17",
+          "15/17",
+          "8/15",
+          "17/8"
+        ]
+      },
+      {
+        "prompt": "Opposite=12 and adjacent=5. Find tan θ.",
+        "answer": "12/5",
+        "solution": "Use $\\tan\\theta=\\dfrac{\\text{opposite}}{\\text{adjacent}}$=12/5.",
+        "options": [
+          "12/5",
+          "5/12",
+          "12/13",
+          "5/13"
         ]
       }
     ]

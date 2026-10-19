@@ -255,6 +255,7 @@ export default function TeacherReviewPage() {
       {message && <div className="teacher-message" aria-live="polite">{message}</div>}
 
       <nav className="teacher-mode-nav" aria-label="Teacher workspace">
+        <a href="/maths-basics" style={{padding:"12px 18px",fontWeight:700}}>Verify Maths Step by Step</a>
         <a href="/teacher/free-mcq" style={{padding:'12px 18px',fontWeight:700}}>MCQ results</a>
         <button className={teacherView === 'reviews' ? 'active' : ''} type="button" onClick={() => setTeacherView('reviews')}><FileText /> Student tests</button>
         <button className={teacherView === 'papers' ? 'active' : ''} type="button" onClick={() => void openPaperLibrary()}><Pencil /> Question papers</button>
