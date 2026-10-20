@@ -41,3 +41,6 @@ next-env.d.ts
 /.sites-runtime/
 # Local teaching source documents are not part of the hosted application.
 /materials/
+
+# Owner-provided identity reference is local-only.
+/docs/reference/Ramavana Identity.pdf
