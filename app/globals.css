@@ -1507,3 +1507,29 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 @media(max-width:640px){.garden-home .site-header{grid-template-columns:1fr auto;gap:12px;padding:14px 0;min-height:0}.garden-home .brand-name{display:block}.garden-home .brand-name strong{font-size:.88rem}.garden-home .brand-name small{font-size:.46rem;letter-spacing:.05em}.garden-home .brand-lockup{gap:7px}.garden-home .primary-nav{display:flex;grid-column:1/-1;grid-row:2;justify-content:space-between;gap:7px;flex-wrap:wrap;padding-top:7px;border-top:1px solid #e2e4d4}.garden-home .primary-nav a{font-size:.66rem;padding:6px 0}.garden-home .account-links{grid-column:2;grid-row:1}}
 /* Shared warm learning palette for the inner pages. */
 .site-shell{border-image:none;border-top-color:#285b45;background:#fffaf0}.site-shell:before{display:none}.content-view .folder-page-heading{background:#e8efdf;border-radius:20px;padding:28px;margin-top:24px}.content-view .folder-page-heading h1{color:#234b3d}.content-view .large-folder{color:#285b45;background:#dce8d4}.board-1{--folder-color:#285b45;--folder-tint:#e1f0f2}.board-2{--folder-color:#a36e2e;--folder-tint:#f9ebce}.board-3{--folder-color:#a94432;--folder-tint:#fae8df}.primary-nav a{color:#345447}.site-header{border-bottom-color:#dedfce}
+
+/* Board and chapter folders share the homepage's warm, readable palette. */
+.content-view .grade-folder-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.content-view .grade-folder, .content-view .chapter-folder { --card-ink: #235866; --card-tint: #e1f0f2; --card-line: #bad3d7; width: 100%; background: var(--card-tint); border-color: var(--card-line); box-shadow: none; }
+.content-view .grade-folder:nth-child(4n+2), .content-view .chapter-folder:nth-child(4n+2) { --card-ink: #79551e; --card-tint: #f9ebce; --card-line: #e5d3a4; }
+.content-view .grade-folder:nth-child(4n+3), .content-view .chapter-folder:nth-child(4n+3) { --card-ink: #285b45; --card-tint: #e8efdf; --card-line: #c5d5b7; }
+.content-view .grade-folder:nth-child(4n+4), .content-view .chapter-folder:nth-child(4n+4) { --card-ink: #963d2e; --card-tint: #fae8df; --card-line: #e9c7b8; }
+.content-view .grade-folder { min-height: 160px; padding: 26px; border-radius: 18px; }
+.content-view .grade-folder .folder-icon { color: var(--card-ink); background: #fffaf0; box-shadow: none; border: 1px solid var(--card-line); }
+.content-view .grade-folder strong { color: #234b3d; font-size: 1.65rem; margin: 6px 0; }
+.content-view .grade-folder small { color: #52635b; line-height: 1.5; }
+.content-view .grade-folder em, .content-view .grade-folder > svg { color: var(--card-ink); }
+.content-view .chapter-grid { gap: 16px; }
+.content-view .chapter-folder { min-height: 145px; padding: 24px 38px 24px 20px; border-radius: 16px; column-gap: 14px; }
+.content-view .chapter-folder-icon { color: var(--card-ink); background: #fffaf0; }
+.content-view .chapter-folder-icon svg { fill: none; }
+.content-view .chapter-number, .content-view .chapter-folder > svg { color: var(--card-ink); }
+.content-view .chapter-folder strong { font-size: 1.04rem; line-height: 1.4; margin-top: 8px; }
+.content-view .grade-folder:hover, .content-view .chapter-folder:hover { border-color: var(--card-ink); box-shadow: 0 8px 20px #234b3d12; }
+.content-view .grade-folder:focus-visible, .content-view .chapter-folder:focus-visible { outline: 3px solid var(--card-ink); outline-offset: 4px; }
+.content-view .folder-content { border-top-color: #dedfce; }
+.content-view .list-heading { margin-bottom: 22px; }
+.content-view .large-folder { box-shadow: none; }
+.start-test-icon { background: #285b45; box-shadow: none; }
+@media(max-width:760px) { .content-view .chapter-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:560px) { .content-view .grade-folder-list, .content-view .chapter-grid { grid-template-columns: 1fr; gap: 13px; } .content-view .grade-folder { min-height: 124px; padding: 20px; gap: 15px; } .content-view .chapter-folder { min-height: 108px; } .content-view .folder-page-heading { padding: 20px; gap: 16px; } .content-view .large-folder { width: 60px; height: 60px; flex-basis: 60px; border-radius: 15px; } }
