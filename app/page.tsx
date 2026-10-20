@@ -474,10 +474,10 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }, [studentRecords]);
 
   return (
-    <main className="site-shell">
+    <main className={`site-shell ${board === null ? 'garden-home' : ''}`}>
       <header className="site-header">
         <button className="brand-lockup" type="button" onClick={goHome} aria-label="Ramavana home">
-          <span className="brand-mark"><img src="/ramavana-logo.webp" alt="" width="720" height="393" decoding="async" /></span>
+          <span className="brand-mark"><img src="/ramavana-mark.png" alt="Ramavana logo" width="256" height="256" decoding="async" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <nav className="primary-nav" aria-label="Main navigation">
@@ -556,32 +556,38 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
 
 function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) {
   return (
-    <div className="home-view home-organised">
-      <section className="home-welcome" aria-labelledby="hero-title">
-        <div><p className="home-eyebrow">RAMAVANA MATHEMATICAL CENTRE</p><h1 id="hero-title">Understand maths.<br/><span>Build confidence.</span></h1><p>Start with the basics, practise your chapter or prepare for your next exam.</p></div>
-        <img src="/students-studying.webp" alt="Students working through mathematics together" width="1200" height="600" fetchPriority="high"/>
-      </section>
-      <div className="home-board-and-basics">
-      <section className="library-section" id="study-library" aria-labelledby="curriculum-title">
-        <div className="section-heading">
-          <div><h2 id="curriculum-title">Choose your board</h2><span>Then choose your grade and chapter.</span></div>
+    <div className="home-view garden-view">
+      <section className="garden-hero" aria-labelledby="hero-title">
+        <div className="garden-copy">
+          <p className="garden-eyebrow">A little curiosity. A new discovery.</p>
+          <h1 id="hero-title">Maths makes sense,<br/><em>step by step.</em></h1>
+          <p>See the idea. Understand the steps. Build confidence with every question.</p>
+          <a className="garden-button" href="#study-library">Start learning <ArrowRight/></a>
+          <span className="garden-caption">Notes, practice and tests · At your own pace</span>
         </div>
-        <div className="board-grid">
-          {boards.map((item, index) => (
-            <button key={item.name} className={`folder-card board-folder board-${index + 1}`} type="button" onClick={() => onOpenBoard(item.name)}>
-              <span className="folder-icon"><Folder /></span>
-              <span className="folder-copy"><strong>{item.name}</strong></span>
-              <span className={`folder-status ${item.ready ? 'ready' : ''}`}>{item.name === 'CBSE' ? 'Grades 6, 10, 11 & 12' : item.name === 'ICSE' ? 'Grade 6' : 'Coming soon'}</span>
-              <ChevronRight className="folder-arrow" />
+        <div className="garden-art"><img src="/maths-garden.webp" alt="Two children exploring mathematics together in a garden with books and geometric shapes" width="1536" height="1024" fetchPriority="high"/></div>
+      </section>
+      <section id="study-library" className="garden-library" aria-labelledby="curriculum-title">
+        <div className="garden-section-heading"><div><p>Your next small step</p><h2 id="curriculum-title">Where shall we begin?</h2></div><span>Choose your board, then your grade.</span></div>
+        <div className="garden-paths">
+          {boards.filter(item => item.ready).map((item, index) => (
+            <button key={item.name} className={`garden-board garden-board-${index}`} type="button" onClick={() => onOpenBoard(item.name)}>
+              <span className="garden-board-top"><BookOpen/><ArrowRight/></span>
+              <h3>{item.name}</h3><p>Explore chapter notes,<br/>practise and test yourself.</p>
+              <span className="garden-grade-label">{item.name === 'CBSE' ? 'Grades 6, 10, 11 & 12' : 'Grade 6'}</span>
+              <svg className="garden-books" viewBox="0 0 270 95" aria-hidden="true"><path d="M30 75 Q85 58 134 76 Q184 58 240 75 L240 27 Q184 9 134 29 Q85 9 30 27Z" fill="#fffdf4" stroke="currentColor" strokeWidth="2"/><path d="M134 29V76M44 38Q84 24 119 40M44 50Q84 36 119 52M150 40Q188 24 224 38M150 52Q188 36 224 50" fill="none" stroke="currentColor" strokeWidth="2" opacity=".5"/><path d="M20 81Q82 66 134 83Q187 66 250 81" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round"/></svg>
+              <strong>Choose your grade <ChevronRight/></strong>
             </button>
           ))}
+          <a className="garden-basics" href="/maths-basics"><span className="garden-free">First topic free</span><h3>Make your<br/>basics clear.</h3><p>Numbers, multiplication, fractions or word problems — take it one idea at a time.</p><small>Maths Step by Step · Grades 5–10</small><span className="garden-basics-action">Start free <ArrowRight/></span><span className="garden-symbols" aria-hidden="true">+ &nbsp; − &nbsp; × &nbsp; ÷</span></a>
         </div>
+        <button className="garden-coming" onClick={() => onOpenBoard('IGCSE')} type="button">IGCSE <span>Coming soon</span><ChevronRight/></button>
       </section>
-        <aside className="home-basics-side" aria-labelledby="basics-side-title">
-          <a className="home-choice choice-basics" href="/maths-basics"><span className="home-choice-icon"><FolderOpen/></span><h2 id="basics-side-title">Make your maths<br/>basics clear.</h2><p>Need help with numbers, multiplication, fractions or word problems? Start here.</p><small>Maths Step by Step · Grades 5–10</small><strong>Start learning — first topic free <ArrowRight/></strong></a>
-        </aside>
-      </div>
-
+      <section className="garden-discover" aria-labelledby="discover-title"><p className="garden-eyebrow">Pictures make ideas click</p><h2 id="discover-title">Small steps. Strong understanding.</h2><div className="garden-ideas">
+        <div><svg viewBox="0 0 160 110" role="img" aria-label="A circle divided into two equal halves"><path d="M80 10A45 45 0 0 0 80 100Z" fill="#f4ce79"/><circle cx="80" cy="55" r="45" fill="none" stroke="#245d4b" strokeWidth="2"/><path d="M80 10V100" stroke="#245d4b" strokeWidth="2"/></svg><h3>See the concept</h3><p>Pictures and examples bring the idea to life.</p></div>
+        <div><svg viewBox="0 0 160 110" role="img" aria-label="A right-angled triangle"><path d="M30 90V18L135 90Z" fill="#dceee7" stroke="#245d4b" strokeWidth="2"/><path d="M30 74H46V90" fill="none" stroke="#245d4b" strokeWidth="2"/><circle cx="30" cy="18" r="4" fill="#d66a4d"/><circle cx="135" cy="90" r="4" fill="#d66a4d"/></svg><h3>Follow each step</h3><p>Worked examples explain how and why.</p></div>
+        <div><svg viewBox="0 0 160 110" role="img" aria-label="Steps rising from left to right"><path d="M20 95V75H50V55H80V35H110V15H140V95Z" fill="#f4ce79" stroke="#245d4b" strokeWidth="2"/><path d="M50 75V95M80 55V95M110 35V95" stroke="#245d4b" strokeWidth="2"/></svg><h3>Grow with practice</h3><p>Try questions, check answers and keep learning.</p></div>
+      </div></section>
     </div>
   );
 }
