@@ -11,8 +11,8 @@ export default async function IntegralsLibrary() {
   const access = new Set<string>();
   if (user) try { for (const p of integralsProducts) if (await hasIntegralsAccess(user, p.id)) access.add(p.id); } catch { accessFailed = true; }
   return <main className="integrals-library">
-    <a className="integrals-brand" href="/"><img src="/ramavana-mark.png" alt="Ramavana mathematical logo"/><span>Ramavana<br/><small>Mathematical Centre</small></span></a><nav><a href="/">Ramavana Mathematical Centre</a><span> / </span><a href="/cbse/grade-12">CBSE Grade 12</a>{user && <a className="integrals-account" href="/student">My account</a>}</nav>
-    <header><span className="integrals-eyebrow">CHAPTER 07 · GRADE 12</span><h1>Integrals</h1><p>Build the method. Understand the reasoning. Practise with confidence.</p><p>Indefinite and definite integration, from first steps to advanced problems.</p></header>
+    <nav><a href="/">Ramavana Mathematical Centre</a><span> / </span><a href="/cbse/grade-12">CBSE Grade 12</a>{user && <a className="integrals-account" href="/student">My account</a>}</nav>
+    <header><span className="integrals-eyebrow">CHAPTER 07 · GRADE 12</span><h1>Integrals</h1><p>Indefinite and definite integration, from first steps to advanced problems.</p></header>
     <section aria-labelledby="free-integrals"><h2 id="free-integrals">Learn and practise — free</h2><div className="integrals-grid">
       <article><span className="integrals-tag">FREE</span><h3>Complete chapter notes</h3><p>22 clear lessons, 46 worked examples and interactive diagrams. From antiderivatives to reflection, Riemann sums, integral equations and parameter methods.</p><a className="integrals-button" href="/notes/g12-integrals">Read chapter notes</a></article>
       <article><span className="integrals-tag">FREE</span><h3>50-question MCQ practice</h3><p>Answer 50 MCQs online. Submit to get your score immediately, then see the correct answers and step-by-step solutions.</p><a className="integrals-button" href="/cbse/grade-12/ch-7/free-mcq">Start free MCQ practice</a></article>

@@ -3,6 +3,76 @@ import { useId } from 'react';
 /** Exact mathematical constructions, selected by the chapter's subject. */
 export default function ChapterFigure({ title }: { title: string }) {
   const id = useId().replace(/:/g, '');
-  const kind = /fraction|rational|decimal/i.test(title) ? 'fraction' : /angle|line|triangle|construction|trigonometry/i.test(title) ? 'triangle' : /data|statistic|probability/i.test(title) ? 'bars' : /circle|symmetry|mensuration|area|volume/i.test(title) ? 'circle' : /function|equation|polynomial|coordinate|derivative|integral/i.test(title) ? 'graph' : 'dots';
-  return <svg className="chapter-figure" viewBox="0 0 180 120" aria-hidden="true"><defs><pattern id={id} width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="1" fill="#C9D2DF" /></pattern></defs><rect width="180" height="120" fill={`url(#${id})`} /><g fill="none" stroke="#011E47" strokeWidth="2">{kind === 'fraction' ? <><path d="M30 36H150V84H30Z" /><path d="M30 36H120V84H30Z" fill="#F4E0AE" /><path d="M60 36V84M90 36V84M120 36V84" /></> : kind === 'triangle' ? <><path d="M36 96V24L144 96Z" fill="#F4E0AE" fillOpacity=".7" /><path d="M36 80H52V96" /><path d="M36 96H144" stroke="#D9A231" strokeWidth="3" /></> : kind === 'bars' ? <><path d="M24 24V96H156" /><path d="M48 96V72H66V96M84 96V48H102V96M120 96V24H138V96" fill="#F4E0AE" /></> : kind === 'circle' ? <><circle cx="90" cy="60" r="42" /><path d="M90 18A42 42 0 0 1 132 60H90Z" fill="#D9A231" /><path d="M48 60H132M90 18V102" strokeDasharray="4 4" /></> : kind === 'graph' ? <><path d="M24 96H156M42 108V12" /><path d="M48 90Q90 90 138 18" stroke="#D9A231" strokeWidth="3" /></> : <>{[1,2,3,4].flatMap((count, row) => Array.from({length:count}, (_, col) => <circle key={`${row}-${col}`} cx={90-(count-1)*12+col*24} cy={24+row*24} r="5" fill={row === 3 ? '#D9A231' : '#011E47'} stroke="none" />))}</>}</g></svg>;
+  const kind = /fraction|rational|decimal/i.test(title)
+    ? 'fraction'
+    : /angle|line|triangle|construction|trigonometry/i.test(title)
+      ? 'triangle'
+      : /data|statistic|probability/i.test(title)
+        ? 'bars'
+        : /circle|symmetry|mensuration|area|volume/i.test(title)
+          ? 'circle'
+          : /function|equation|polynomial|coordinate|derivative|integral/i.test(
+                title,
+              )
+            ? 'graph'
+            : 'dots';
+  return (
+    <svg className="chapter-figure" viewBox="0 0 180 120" aria-hidden="true">
+      <defs>
+        <pattern id={id} width="12" height="12" patternUnits="userSpaceOnUse">
+          <circle cx="6" cy="6" r="1" fill="#C9D2DF" />
+        </pattern>
+      </defs>
+      <rect width="180" height="120" fill={`url(#${id})`} />
+      <g fill="none" stroke="#011E47" strokeWidth="2">
+        {kind === 'fraction' ? (
+          <>
+            <path d="M30 36H150V84H30Z" />
+            <path d="M30 36H120V84H30Z" fill="#F4E0AE" />
+            <path d="M60 36V84M90 36V84M120 36V84" />
+          </>
+        ) : kind === 'triangle' ? (
+          <>
+            <path d="M36 96V24L144 96Z" fill="#F4E0AE" fillOpacity=".7" />
+            <path d="M36 80H52V96" />
+            <path d="M36 96H144" stroke="#D9A231" strokeWidth="3" />
+          </>
+        ) : kind === 'bars' ? (
+          <>
+            <path d="M24 24V96H156" />
+            <path
+              d="M48 96V72H66V96M84 96V48H102V96M120 96V24H138V96"
+              fill="#F4E0AE"
+            />
+          </>
+        ) : kind === 'circle' ? (
+          <>
+            <circle cx="90" cy="60" r="42" />
+            <path d="M90 18A42 42 0 0 1 132 60H90Z" fill="#D9A231" />
+            <path d="M48 60H132M90 18V102" strokeDasharray="4 4" />
+          </>
+        ) : kind === 'graph' ? (
+          <>
+            <path d="M24 96H156M42 108V12" />
+            <path d="M48 90Q90 90 138 18" stroke="#D9A231" strokeWidth="3" />
+          </>
+        ) : (
+          <>
+            {[1, 2, 3, 4].flatMap((count, row) =>
+              Array.from({ length: count }, (_, col) => (
+                <circle
+                  key={`${row}-${col}`}
+                  cx={90 - (count - 1) * 12 + col * 24}
+                  cy={24 + row * 24}
+                  r="5"
+                  fill={row === 3 ? '#D9A231' : '#011E47'}
+                  stroke="none"
+                />
+              )),
+            )}
+          </>
+        )}
+      </g>
+    </svg>
+  );
 }

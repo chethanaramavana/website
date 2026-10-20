@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
-import Tex from './notes/tex';
 import WeeklyProblemBoard from './weekly-problem';
 import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
 import HomepageConcepts from './homepage-concepts';

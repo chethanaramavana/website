@@ -1,5 +1,7 @@
 import { requireGoogleUser } from '@/app/google-auth';
 import { isTeacherEmail } from '@/lib/identity';
+import LearningHeader from '../learning-header';
+import { SiteFooter } from '../brand';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,5 +16,5 @@ export default async function TeacherLayout({ children }: { children: React.Reac
       </main>
     );
   }
-  return children;
+  return <div className="identity-learning"><LearningHeader signedIn />{children}<SiteFooter /></div>;
 }

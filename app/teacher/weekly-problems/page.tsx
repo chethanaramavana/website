@@ -2,18 +2,193 @@
 import { useEffect, useState } from 'react';
 import type { WeeklyProblem } from '@/lib/weekly-problems';
 import Tex from '@/app/notes/tex';
-const empty: WeeklyProblem = {number:1,question:'',solution:'',published:false,solutionVisible:false};
+const empty: WeeklyProblem = {
+  number: 1,
+  question: '',
+  solution: '',
+  published: false,
+  solutionVisible: false,
+};
 export default function ProblemEditor() {
-  const [problems,setProblems] = useState<WeeklyProblem[]>([]);
-  const [draft,setDraft] = useState<WeeklyProblem>(empty);
-  const [message,setMessage] = useState('');
-  const [ready,setReady] = useState(false);
-  const [saving,setSaving] = useState(false);
-  const [dirty,setDirty] = useState(false);
-  useEffect(() => { void fetch('/api/teacher/weekly-problems',{cache:'no-store'}).then(async r => { const data=await r.json() as {problems:WeeklyProblem[];error?:string}; if(!r.ok) throw new Error(data.error); setProblems(data.problems); setDraft({...empty,number:Math.max(0,...data.problems.map((p:WeeklyProblem)=>p.number))+1}); setReady(true); }).catch(reason => setMessage(reason.message)); },[]);
-  useEffect(() => { if (!dirty) return; const guard = (event:BeforeUnloadEvent) => { event.preventDefault(); event.returnValue=''; }; window.addEventListener('beforeunload',guard); return () => window.removeEventListener('beforeunload',guard); },[dirty]);
-  function change(value:Partial<WeeklyProblem>) { setDraft({...draft,...value}); setDirty(true); setMessage(''); }
-  async function save() { setSaving(true); setMessage(''); try { const r=await fetch('/api/teacher/weekly-problems',{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify(draft)}); const data=await r.json() as {error?:string}; if(!r.ok) throw new Error(data.error); setProblems([...problems.filter(p=>p.number!==draft.number),draft].sort((a,b)=>b.number-a.number)); setDirty(false); setMessage(draft.published ? 'Saved and published.' : 'Draft saved.'); } catch(reason) { setMessage((reason as Error).message); } finally { setSaving(false); } }
-  function select(problem:WeeklyProblem) { if (dirty && !window.confirm('Discard unsaved changes?')) return; setDraft(problem); setDirty(false); setMessage(''); }
-  return <main className="teacher-shell problem-editor"><a href="/teacher">← Teacher workspace</a><h1>Weekly problems</h1><p>Write a question and solution. Publish the question when ready, then reveal the solution when you choose. Use $…$ for mathematics.</p><label>Choose a problem<select disabled={!ready || saving} value={problems.some(p=>p.number===draft.number) ? draft.number : 'new'} onChange={event => select(event.target.value==='new' ? {...empty,number:Math.max(0,...problems.map(p=>p.number))+1} : problems.find(p=>p.number===Number(event.target.value))!)}><option value="new">New problem</option>{problems.map(p=><option key={p.number} value={p.number}>No. {p.number} · {p.published ? 'Published' : 'Draft'}</option>)}</select></label><form onSubmit={event=>{event.preventDefault();void save();}}><fieldset disabled={!ready || saving}><label>Problem number<input type="number" min="1" max="99999" required value={draft.number} readOnly /></label><label>Question<textarea rows={5} required maxLength={10000} value={draft.question} onChange={event=>change({question:event.target.value})} /></label><label>Solution<textarea rows={7} maxLength={20000} value={draft.solution} onChange={event=>change({solution:event.target.value})} /></label><label className="problem-checkbox"><input type="checkbox" checked={draft.published} onChange={event=>change({published:event.target.checked})} /> Publish question on the website</label><label className="problem-checkbox"><input type="checkbox" checked={draft.solutionVisible} onChange={event=>change({solutionVisible:event.target.checked})} /> Reveal solution to students</label><button type="submit">{saving ? 'Saving…' : draft.published ? 'Save and publish' : 'Save draft'}</button></fieldset></form><p role="status">{message}</p><section className="problem-editor-preview"><h2>Preview · No. {draft.number}</h2><Tex>{draft.question}</Tex><h3>Solution preview</h3><Tex>{draft.solution}</Tex><p>This preview does not publish anything.</p></section></main>;
+  const [problems, setProblems] = useState<WeeklyProblem[]>([]);
+  const [draft, setDraft] = useState<WeeklyProblem>(empty);
+  const [message, setMessage] = useState('');
+  const [ready, setReady] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [dirty, setDirty] = useState(false);
+  useEffect(() => {
+    void fetch('/api/teacher/weekly-problems', { cache: 'no-store' })
+      .then(async (r) => {
+        const data = (await r.json()) as {
+          problems: WeeklyProblem[];
+          error?: string;
+        };
+        if (!r.ok) throw new Error(data.error);
+        setProblems(data.problems);
+        setDraft({
+          ...empty,
+          number:
+            Math.max(0, ...data.problems.map((p: WeeklyProblem) => p.number)) +
+            1,
+        });
+        setReady(true);
+      })
+      .catch((reason) => setMessage(reason.message));
+  }, []);
+  useEffect(() => {
+    if (!dirty) return;
+    const guard = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', guard);
+    return () => window.removeEventListener('beforeunload', guard);
+  }, [dirty]);
+  function change(value: Partial<WeeklyProblem>) {
+    setDraft({ ...draft, ...value });
+    setDirty(true);
+    setMessage('');
+  }
+  async function save() {
+    setSaving(true);
+    setMessage('');
+    try {
+      const r = await fetch('/api/teacher/weekly-problems', {
+        method: 'PUT',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(draft),
+      });
+      const data = (await r.json()) as { error?: string };
+      if (!r.ok) throw new Error(data.error);
+      setProblems(
+        [...problems.filter((p) => p.number !== draft.number), draft].sort(
+          (a, b) => b.number - a.number,
+        ),
+      );
+      setDirty(false);
+      setMessage(draft.published ? 'Saved and published.' : 'Draft saved.');
+    } catch (reason) {
+      setMessage((reason as Error).message);
+    } finally {
+      setSaving(false);
+    }
+  }
+  function select(problem: WeeklyProblem) {
+    if (dirty && !window.confirm('Discard unsaved changes?')) return;
+    setDraft(problem);
+    setDirty(false);
+    setMessage('');
+  }
+  return (
+    <main className="teacher-shell problem-editor">
+      <a href="/teacher">← Teacher workspace</a>
+      <h1>Weekly problems</h1>
+      <p>
+        Write a question and solution. Publish the question when ready, then
+        reveal the solution when you choose. Use $…$ for mathematics.
+      </p>
+      <label>
+        Choose a problem
+        <select
+          disabled={!ready || saving}
+          value={
+            problems.some((p) => p.number === draft.number)
+              ? draft.number
+              : 'new'
+          }
+          onChange={(event) =>
+            select(
+              event.target.value === 'new'
+                ? {
+                    ...empty,
+                    number: Math.max(0, ...problems.map((p) => p.number)) + 1,
+                  }
+                : problems.find(
+                    (p) => p.number === Number(event.target.value),
+                  )!,
+            )
+          }
+        >
+          <option value="new">New problem</option>
+          {problems.map((p) => (
+            <option key={p.number} value={p.number}>
+              No. {p.number} · {p.published ? 'Published' : 'Draft'}
+            </option>
+          ))}
+        </select>
+      </label>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          void save();
+        }}
+      >
+        <fieldset disabled={!ready || saving}>
+          <label>
+            Problem number
+            <input
+              type="number"
+              min="1"
+              max="99999"
+              required
+              value={draft.number}
+              readOnly
+            />
+          </label>
+          <label>
+            Question
+            <textarea
+              rows={5}
+              required
+              maxLength={10000}
+              value={draft.question}
+              onChange={(event) => change({ question: event.target.value })}
+            />
+          </label>
+          <label>
+            Solution
+            <textarea
+              rows={7}
+              maxLength={20000}
+              value={draft.solution}
+              onChange={(event) => change({ solution: event.target.value })}
+            />
+          </label>
+          <label className="problem-checkbox">
+            <input
+              type="checkbox"
+              checked={draft.published}
+              onChange={(event) => change({ published: event.target.checked })}
+            />{' '}
+            Publish question on the website
+          </label>
+          <label className="problem-checkbox">
+            <input
+              type="checkbox"
+              checked={draft.solutionVisible}
+              onChange={(event) =>
+                change({ solutionVisible: event.target.checked })
+              }
+            />{' '}
+            Reveal solution to students
+          </label>
+          <button type="submit">
+            {saving
+              ? 'Saving…'
+              : draft.published
+                ? 'Save and publish'
+                : 'Save draft'}
+          </button>
+        </fieldset>
+      </form>
+      <p role="status">{message}</p>
+      <section className="problem-editor-preview">
+        <h2>Preview · No. {draft.number}</h2>
+        <Tex>{draft.question}</Tex>
+        <h3>Solution preview</h3>
+        <Tex>{draft.solution}</Tex>
+        <p>This preview does not publish anything.</p>
+      </section>
+    </main>
+  );
 }

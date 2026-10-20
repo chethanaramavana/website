@@ -1,5 +1,6 @@
 'use client';
 
+import TeacherTick from '@/app/teacher-mark';
 import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, Clock3, Loader2, Minus, X } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
@@ -45,7 +46,7 @@ export default function StudentResult({ id }: { id: string }) {
   const paper = savedPaper ?? paperDefinitionsById[result.submission.paper_id];
   return <main className="student-result-page">
     <a className="student-result-back" href="/student"><ArrowLeft /> Student account</a>
-    <header><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
+    <header><img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Centre" width="170" height="170" /><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
     <section className="student-score-card">
       <div><span>MCQ</span><strong>{result.submission.mcq_score}/16</strong></div>
       <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/24</strong></div>
@@ -61,7 +62,7 @@ export default function StudentResult({ id }: { id: string }) {
       const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
       const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
       return <article className={outcome} key={question.number}>
-        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : chosen === undefined ? <Minus /> : <X />}</span>
+        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <TeacherTick /> : chosen === undefined ? <Minus /> : <X />}</span>
         <div className="student-review-copy">
           <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
           <p><MathText>{question.question}</MathText></p>
@@ -76,7 +77,7 @@ export default function StudentResult({ id }: { id: string }) {
       const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
       const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
       return <article className={outcome} key={question.number}>
-        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <CheckCircle2 /> : chosen === undefined ? <Minus /> : <X />}</span>
+        <span className="student-review-icon" aria-hidden="true">{isCorrect ? <TeacherTick /> : chosen === undefined ? <Minus /> : <X />}</span>
         <div className="student-review-copy">
           <div className="student-review-heading"><strong>Question {question.number}</strong><em>{status}</em></div>
           <p><b>Assertion:</b> <MathText>{question.assertion}</MathText> <b>Reason:</b> <MathText>{question.reason}</MathText></p>

@@ -28,8 +28,8 @@ The parent-value section is headed “Study the chapter. Attempt a paper. Review
 
 - Preserve the supplied crest: no recolouring, redrawing, outlines, shadows, effects or cropping of the artwork.
 - The owner explicitly authorises removing the background from `public/ramavana-mark.png` to create a transparent header asset. Preserve the original file and save the transparent export separately. Background removal is the only approved alteration.
-- The latest local header trial is 60px tall, with the unlettered crest displayed at 44px. Try “Ramavana” in title case, Newsreader weight 500 with tight tracking, and “Mathematical Centre” beneath at 11px. This follows the owner's request for a more compact header and a more refined wordmark. Keep Baloo for the rest of the interface.
-- The owner subsequently asked to step back and rethink the complete header identity. Keep the current trial unchanged until a new direction is agreed; do not continue swapping wordmark fonts as a substitute for agreeing the crest/name/subtitle arrangement.
+- The approved header direction is the preserved unlettered crest beside the original supplied RAMAVANA lettering, with no subtitle. Keep the compact 60px header. Use `public/ramavana-wordmark.png`, isolated from the supplied logo by `scripts/extract-wordmark.py`; keep the source untouched. Do not substitute a newly typed approximation.
+- The footer uses a large RAMAVANA wordmark and the full name “Ramavana Mathematical Centre”, with Bengaluru and organisation-level attribution.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
 - The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
@@ -38,7 +38,7 @@ The parent-value section is headed “Study the chapter. Attempt a paper. Review
 
 Load Shrikhand, Baloo Tamma 2 (weights 400–800), Source Serif 4 (400, 600 and italic), and Newsreader (500, for the wordmark only) from Google Fonts.
 
-- **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`. The owner explicitly requested the dark painted-sign offset shadow on the weekly-problem number too.
+- **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen, except the report-card marks column, where the owner explicitly approved Shrikhand in every marks cell. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`. The owner explicitly requested the dark painted-sign offset shadow on the weekly-problem number too.
 - **Baloo Tamma 2:** headings at 800; buttons and menus at 600–700; interface and body text at 400 and 17–18px. Use for Kannada text too.
 - **Source Serif 4:** lesson text, exam-paper prose and teacher remarks. Remarks are italic. Render mathematics through KaTeX, retaining its compatible mathematical fonts for correct symbols and layout.
 
@@ -75,7 +75,7 @@ Avoid mandala borders, paisley, temple arches, saffron gradients, Latin fonts st
 
 Eventually trace SVG ticks, crosses and circles from the teacher's supplied red-pen samples. Until those arrive, use a simple stroked tick. A correct answer draws the tick once over 320ms.
 
-Use a round red “ಭೇಷ್! / WELL DONE” stamp, rotated about −13 degrees, for papers scoring at least 80%. The owner still needs to confirm whether it appears beside each qualifying paper or once for an overall report score; do not silently invent an aggregate rule.
+Use a round red “ಭೇಷ್! / WELL DONE” stamp, rotated about −13 degrees, for papers scoring at least 80%. The owner approved a stamp beside each qualifying paper. Use its final score, including automatically completed MCQ papers. Do not stamp partial MCQ marks while written marking is pending.
 
 Respect `prefers-reduced-motion` throughout the website, including marking feedback, artwork transitions and scrolling. Show the completed feedback immediately when reduced motion is requested.
 
@@ -90,7 +90,7 @@ Replace the separate results lists with one report table while retaining access 
 5. Set marks in Shrikhand red and remarks in Source Serif 4 italic red. Set tests not yet taken in `#4E5B70`.
 6. End with “Issued [date]” and “Ramavana Mathematical Centre” above a signature line; do not identify an individual teacher.
 
-The requirement for Shrikhand marks across a long report table needs to be reconciled with the maximum of two Shrikhand items per screen before implementation; preserve both requirements here rather than silently dropping either.
+The owner explicitly approved the report-table exception to the two-item Shrikhand limit. Use red Shrikhand for all marks cells; untaken tests retain muted dashes.
 
 ## Weekly problem
 
@@ -127,15 +127,22 @@ Implement and validate coherent milestones, with GitHub pushes as required by `A
 
 ### Current review scope
 
-The owner approved the foundation and homepage first. Develop and review locally at the normal homepage route; a `/v2` route is unnecessary when using local preview. Do not deploy these iterations to Sites. Keep the public site unchanged until the owner requests publication. Once the homepage is approved, extend the design to grades, chapters and the full learning path. The weekly-problem editor and report-card workflow belong to subsequent implementation; label any homepage sample problem as a preview rather than implying that the publishing workflow already exists.
+The homepage was approved and the owner requested the full learning flow. Review locally at the normal routes. Do not deploy to Sites until requested.
+
+Implemented locally: shared crest/wordmark and large footer, board and grade libraries, uniform diagram cards, public chapter overviews, free notes, MCQ access and review styling, timed written-paper styling, Maths Basics and Integrals presentation, consolidated student report, per-paper stamps, a Number Play Kaprekar toy, and teacher-controlled weekly problems with an archive.
+
+Chapter overviews are public. Starting a written paper uses the existing authentication and payment checks; `?paper=1` restores that intent on refresh and after sign-in. Existing APIs continue to control access, timers, drafts, uploads, payment verification and marking. No new teaching content is implied for chapters whose materials are still being prepared.
+
+The weekly editor is `/teacher/weekly-problems`. Question publication and solution visibility are independent; hidden solutions are omitted from the public API. The new table is migration `drizzle/0008_weekly_problems.sql`. It has been added to the local preview database only; apply the normal migrations during an explicitly requested deployment. Until a problem is published, the homepage labels its sample as a preview.
+
+`/design-review` provides clearly labelled synthetic report records, a real paper extract and sample MCQ feedback for local visual review without creating accounts or attempts. It returns not-found outside development. Example result links are disabled. Production sign-in, payment and teacher publishing require an authenticated integration check with the appropriate configuration; they have not been exercised by making real transactions during this redesign.
 
 ## Review criteria
 
 Check the homepage, chapter cards, lesson pages, quizzes, exam papers, teacher area and student report at mobile and desktop widths. Confirm readable mathematics, keyboard access, visible focus, colour contrast and reduced-motion behaviour. Preserve crest proportions and transparency. Keep existing student records, payments, draft answers and teacher marking functional.
 
+Run `node scripts/check-learning-flow.cjs` for the Kaprekar, report-row and weekly-validation checks, plus TypeScript and the production build. The Kaprekar check covers all 9,990 valid four-digit inputs. Check that public routes load and unauthenticated teacher editor reads/writes return 403.
+
 ## Remaining owner input
 
-- Stamp placement: each qualifying paper or overall report.
-- Teacher red-pen samples when available; simple ticks are authorised in the meantime.
-
-The two-item Shrikhand limit and report-table marks also require an explicit design resolution before implementing the report.
+Teacher red-pen samples when available; simple stroked ticks are authorised in the meantime. Report typography and stamp placement are resolved.

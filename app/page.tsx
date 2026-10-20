@@ -494,7 +494,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       {grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView onBrowseChapter={(name) => { clearRequestedPaper(); if (board && grade) updateAddress(chapterPath(board, grade, name)); setChapter(name); window.scrollTo({top: 0}); }} board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
+        <ChaptersView onCloseAccess={() => { const previous = routePaymentChapter; setRoutePaymentChapter(null); if (previous) setChapter(previous); }} onBrowseChapter={(name) => { clearRequestedPaper(); if (board && grade) updateAddress(chapterPath(board, grade, name)); setChapter(name); window.scrollTo({top: 0}); }} board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
         <ChapterView takingPaper={takingPaper} onStartPaper={() => { setRoutePaymentChapter(chapter); setChapter(null); }} board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
       )}
@@ -623,7 +623,7 @@ declare global {
   }
 }
 
-function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords, onBrowseChapter }: { onBrowseChapter: (chapter: string) => void; board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
+function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords, onBrowseChapter, onCloseAccess }: { onCloseAccess: () => void; onBrowseChapter: (chapter: string) => void; board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
@@ -713,23 +713,6 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       return false;
     }
   }, [board, grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
-
-  function openChapter(nextChapter: string) {
-    if (board === 'CBSE' && grade === 12 && nextChapter === 'Integrals') { window.location.assign('/cbse/grade-12/integrals'); return; }
-    const paper = getPaperForChapter(board, grade, nextChapter);
-    if (paper && (paper.grade ?? 10) === grade && studentRecords?.signedIn) {
-      const earlierSubmission = studentRecords.submissions.find((submission) => submission.paper_id === paper.id);
-      if (!earlierSubmission && studentRecords.access.includes(paper.id)) {
-        onOpenChapter(nextChapter);
-        return;
-      }
-    }
-    setPaymentStatus('idle');
-    setRazorpayStatus('idle');
-    setPaymentMessage('');
-    setPendingChapter(nextChapter);
-    if (!paper || (paper.grade ?? 10) !== grade) return;
-  }
 
   async function startRazorpayPayment() {
     if (!selectedPaper || !pendingChapter) return;
@@ -875,7 +858,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         </div>
       </section>
 
-      <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) setPendingChapter(null); }}>
+      <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) { setPendingChapter(null); onCloseAccess(); } }}>
         <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
           <DialogHeader>
             <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
@@ -940,6 +923,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
 
 function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takingPaper, onStartPaper }: { takingPaper: boolean; onStartPaper: () => void; board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const paper = getPaperForChapter(board, grade, chapter);
+  const isIntegrals = board === 'CBSE' && grade === 12 && chapter === 'Integrals';
   if (takingPaper && paper && (paper.grade ?? 10) === grade) {
     return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
@@ -949,7 +933,7 @@ function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takin
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}`, onClick: onChapters }, { label: chapter }]} onHome={onHome} />
       <section className="chapter-overview-heading"><div><p className="rmc-eyebrow">{board} · Grade {grade} · Chapter {chaptersFor(board, grade).indexOf(chapter) + 1}</p><h1>{chapter}</h1><p>Choose what you want to work on.</p></div><ChapterFigure title={chapter} /></section>
       <section className="chapter-resource-grid" aria-label="Chapter materials">
-        {paper ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-01$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={onStartPaper}><FileText /><span className="rmc-eyebrow">90 minutes · 40 marks</span><h2>Written practice paper</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button></> : board === 'CBSE' && grade === 12 && chapter === 'Integrals' ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Open chapter notes, practice papers and worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
+        {paper && !isIntegrals ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-01$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={onStartPaper}><FileText /><span className="rmc-eyebrow">90 minutes · 40 marks</span><h2>Written practice paper</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button></> : isIntegrals ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Open chapter notes, practice papers and worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
         {board === 'CBSE' && quizListings.filter(q => q.grade === grade && q.title === chapter).map(q => <a key={q.id} className="chapter-resource" href={q.path}><CheckCircle2 /><span className="rmc-eyebrow">50 questions · {quizPrice(q.chapter, q.grade) === 0 ? 'Free' : `₹${quizPrice(q.chapter, q.grade)/100}`}</span><h2>MCQ practice</h2><p>Saved answers, instant marks and worked solutions after submission.</p><span className="rmc-card-action">Start the quiz <ArrowRight /></span></a>)}
       </section>
       {board === 'CBSE' && grade === 6 && chapter === 'Number Play' && <KaprekarToy />}
