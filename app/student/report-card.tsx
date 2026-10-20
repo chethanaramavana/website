@@ -1,6 +1,7 @@
 import { reportRows } from '@/lib/report-card';
 import type { StudentRecordsPayload } from '@/lib/student-records';
 import { WellDoneStamp } from '../teacher-mark';
+import ReportDownload from './report-download';
 
 export default function ReportCard({
   records,
@@ -19,8 +20,22 @@ export default function ReportCard({
     ...new Set(rows.flatMap((row) => (row.book ? [row.book] : []))),
   ];
   const date = new Date();
-  const year =
-    date.getMonth() >= 3 ? date.getFullYear() : date.getFullYear() - 1;
+  const calendarYear = Number(
+    date.toLocaleString('en', { year: 'numeric', timeZone: 'Asia/Kolkata' }),
+  );
+  const month = Number(
+    date.toLocaleString('en', { month: 'numeric', timeZone: 'Asia/Kolkata' }),
+  );
+  const year = month >= 4 ? calendarYear : calendarYear - 1;
+  const yearLabel = `${year}–${String(year + 1).slice(-2)}`;
+  const issued = date.toLocaleDateString('en-IN', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Asia/Kolkata',
+  });
+  const classes = grades.length ? grades.join(', ') : 'Not recorded';
+  const bookLabel = books.length ? books.join(' · ') : 'Chapter materials';
   return (
     <article className="report-card">
       <header className="report-heading">
@@ -30,24 +45,34 @@ export default function ReportCard({
           height="170"
           alt="Ramavana Mathematical Centre"
         />
-        <h1>
-          Progress report · {year}–{String(year + 1).slice(-2)}
-        </h1>
+        <div className="report-identity-copy">
+          <h1>Progress report · {yearLabel}</h1>
+          <dl className="report-identification">
+            <div>
+              <dt>Student</dt>
+              <dd>{records.displayName || name}</dd>
+            </div>
+            <div>
+              <dt>Class</dt>
+              <dd>{classes}</dd>
+            </div>
+            <div>
+              <dt>Book</dt>
+              <dd>{bookLabel}</dd>
+            </div>
+          </dl>
+        </div>
+        <ReportDownload
+          report={{
+            name: records.displayName || name,
+            classes,
+            books: bookLabel,
+            year: yearLabel,
+            issued,
+            rows,
+          }}
+        />
       </header>
-      <dl className="report-identification">
-        <div>
-          <dt>Student</dt>
-          <dd>{records.displayName || name}</dd>
-        </div>
-        <div>
-          <dt>Class</dt>
-          <dd>{grades.length ? grades.join(', ') : 'Not recorded'}</dd>
-        </div>
-        <div>
-          <dt>Book</dt>
-          <dd>{books.length ? books.join(' · ') : 'Chapter materials'}</dd>
-        </div>
-      </dl>
       <div
         className="report-table-scroll"
         tabIndex={0}

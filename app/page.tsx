@@ -1002,8 +1002,10 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   const workLocked = Boolean(timing && clockNow >= timing.workDeadlineAtMs);
   const uploadLocked = Boolean(timing && clockNow >= timing.uploadDeadlineAtMs);
   const isSaving = savingDraft || Object.values(uploadingQuestions).some(Boolean);
+  const allowNavigation = useRef(false);
+  const initialStudentName = useRef<string | null>(null);
   const hasWork = Boolean(
-    studentName.trim()
+    (initialStudentName.current !== null && studentName.trim() !== initialStudentName.current.trim())
     || Object.keys(answers).length
     || Object.values(writtenFiles).some((files) => files.length)
     || Object.values(savedUploads).some((files) => files.length),
@@ -1129,6 +1131,21 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     else setExitAction({ run: action });
   }
 
+  useEffect(() => {
+    const interceptLink = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const anchor = (event.target as HTMLElement)?.closest('a[href]') as HTMLAnchorElement | null;
+      if (!anchor || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
+      const destination = new URL(anchor.href, window.location.href);
+      if (destination.origin !== window.location.origin || (destination.pathname === window.location.pathname && destination.search === window.location.search)) return;
+      if (!hasWork || result) return;
+      event.preventDefault();
+      requestExit(() => window.location.assign(destination.href));
+    };
+    document.addEventListener('click', interceptLink);
+    return () => document.removeEventListener('click', interceptLink);
+  }, [hasWork, result]);
+
   async function saveAndExit() {
     if (!exitAction) return;
     setExitSaving(true);
@@ -1137,6 +1154,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     if (!saved) return;
     const action = exitAction.run;
     setExitAction(null);
+    allowNavigation.current = true;
     action();
   }
 
@@ -1161,6 +1179,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           setClockNow(payload.serverNowMs);
         }
         if (payload.status === 'draft') {
+          initialStudentName.current = String(payload.studentName ?? '');
           setStudentName(String(payload.studentName ?? ''));
           setAnswers((payload.answers ?? {}) as Record<string, number>);
           const grouped: Record<number, SavedUpload[]> = {};
@@ -1238,6 +1257,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   useEffect(() => {
     if (!hasWork || result) return;
     const confirmBrowserExit = (event: BeforeUnloadEvent) => {
+      if (allowNavigation.current) return;
       event.preventDefault();
       event.returnValue = '';
     };

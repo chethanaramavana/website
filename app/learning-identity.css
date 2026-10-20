@@ -1,4 +1,52 @@
 /* Shared learning identity. Assessment and payment logic remains in its routes. */
+.report-card .report-heading { display:grid; grid-template-columns:100px minmax(0,1fr) auto; align-items:center; gap:24px; padding:24px; margin-bottom:28px; border:1px solid #dce2e9; border-radius:10px; text-align:left; background:#fff; }
+.report-card .report-heading>img { width:100px; height:100px; object-fit:contain; margin:0; }
+.report-card .report-heading h1 { font-size:13px; letter-spacing:.1em; margin:0 0 14px; }
+.report-heading .report-identification { display:grid; grid-template-columns:48px minmax(0,1fr); gap:7px 12px; border:0; margin:0; padding:0; }
+.report-heading .report-identification>div { display:contents; }
+.report-heading .report-identification dt { font-size:13px; }
+.report-heading .report-identification dd { font-size:16px; line-height:1.4; overflow-wrap:anywhere; }
+.report-download .rmc-button { min-height:42px; padding:10px 16px 7px; gap:8px; white-space:nowrap; font-size:15px; }
+.report-download p { max-width:190px; font-size:14px; color:#b0300e; line-height:1.4; margin-top:8px; }
+.report-download button:disabled { opacity:.7; cursor:wait; }
+@media(max-width:900px) { .report-card .report-heading { grid-template-columns:90px minmax(0,1fr); gap:20px; padding:20px; } .report-card .report-heading>img { width:90px; height:90px; } .report-download { grid-column:1/-1; justify-self:end; } }
+@media(max-width:500px) { .report-card .report-heading { grid-template-columns:70px minmax(0,1fr); padding:14px; gap:14px; } .report-card .report-heading>img { width:70px; height:70px; } .report-card .report-heading h1 { font-size:12px; } .report-heading .report-identification { grid-template-columns:1fr; gap:3px; } .report-heading .report-identification dd { margin-bottom:5px; } }
+@media print { .report-download { display:none; } }
+.identity-home a.rmc-button { color:#fff; }
+.identity-home a.rmc-button-outline { color:#011e47; }
+.identity-home .rmc-hero { align-items:start; padding-block:30px 34px; }
+.rmc-concept-visual { position:relative; }
+.rmc-concept-visual .rmc-concept-controls { position:absolute; inset:0; display:flex; justify-content:space-between; align-items:center; margin:0; padding:10px; pointer-events:none; }
+.rmc-concept-visual .rmc-concept-controls>button { pointer-events:auto; width:34px; height:34px; border:0; box-shadow:0 1px 8px #011e4720; opacity:.95; }
+.rmc-hero-figure .rmc-concept-caption { min-height:0; padding-top:10px; }
+.rmc-concept-caption .rmc-concept-explanation { margin-top:3px!important; }
+.rmc-concept-caption .rmc-concept-formula { min-height:0; margin-top:2px!important; }
+.rmc-footer .rmc-footer-top { align-items:baseline; }
+.rmc-footer .rmc-footer-top>p { margin:0; font-size:15px; color:#4e5b70; }
+.rmc-footer-lockup { display:grid; grid-template-columns:1fr 7.2727fr; align-items:center; gap:clamp(10px,2vw,24px); margin:40px 0 28px; text-decoration:none; }
+.rmc-footer .rmc-footer-lockup .rmc-footer-crest,.rmc-footer .rmc-footer-lockup .rmc-footer-wordmark { display:block; width:100%; height:auto; margin:0; }
+.identity-learning .basics-folders { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.identity-learning .basics-folder { display:flex; flex-direction:column; align-items:start; padding:22px; border-radius:10px; }
+.identity-learning .basics-folder svg { width:40px; height:30px; }
+.identity-learning .basics-folder h3 { font-size:25px; margin:16px 0 4px; }
+.identity-learning .basics-folder p { font-size:16px; line-height:1.55; margin:8px 0 18px; }
+.identity-learning .basics-folder>span { margin-top:auto; font-size:16px; }
+.identity-learning .basics-learning { grid-template-columns:260px minmax(0,1fr); gap:36px; align-items:start; }
+.identity-learning .basics .basics-text-link { display:inline-flex; align-items:center; gap:7px; background:transparent; border:0; border-radius:0; padding:0; min-height:32px; color:#011e47; font:600 16px/1.4 var(--rmc-interface); text-decoration:none; }
+.identity-learning .basics .basics-text-link:hover { text-decoration:underline; text-underline-offset:4px; }
+.basics-text-link svg { width:17px; height:17px; }
+.identity-learning .basics .basics-concept-menu { padding:20px; background:#fff; border:1px solid #dce2e9; border-radius:10px; min-width:0; }
+.identity-learning .basics-concept-menu h2 { font-size:21px; margin:0 0 16px; }
+.basics-concept-menu ol { list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+.identity-learning .basics .basics-concept-menu button { display:grid; grid-template-columns:24px 1fr auto; align-items:start; gap:8px; width:100%; min-height:46px; text-align:left; padding:10px; background:#fff; color:#011e47; border:1px solid transparent; border-radius:7px; font:400 16px/1.5 var(--rmc-interface); cursor:pointer; }
+.identity-learning .basics .basics-concept-menu button.selected { background:#f4f6f9; border-color:#011e47; font-weight:600; }
+.basics-menu-number { color:#4e5b70; font-size:14px; padding-top:2px; }
+.basics-concept-menu button>svg { width:16px; height:16px; margin-top:3px; }
+.identity-learning .basics .basics-concept-menu .basics-level-test { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:20px; border:1px solid #011e47; border-radius:999px; font-weight:600; }
+.identity-learning .basics .basics-concept-menu button:disabled { opacity:1; background:#f4f6f9; border-color:#dce2e9; color:#4e5b70; cursor:not-allowed; }
+@media(max-width:1000px) { .identity-learning .basics-folders { grid-template-columns:repeat(2,minmax(0,1fr)); } .identity-learning .basics-learning { grid-template-columns:230px minmax(0,1fr); gap:24px; } }
+@media(max-width:760px) { .identity-learning .basics-learning { grid-template-columns:1fr; } .identity-learning .basics-concept-menu ol { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); } }
+@media(max-width:600px) { .identity-learning .basics-folders { grid-template-columns:1fr; } .identity-learning .basics-folder { display:grid; grid-template-columns:40px 1fr; column-gap:14px; padding:20px; } .identity-learning .basics-folder h3 { margin:0; } .identity-learning .basics-folder p,.identity-learning .basics-folder>span { grid-column:2; } .rmc-footer .rmc-footer-top { align-items:start; } }
 .rmc-brand .rmc-wordmark-stack { display:flex; flex-direction:column; gap:4px; }
 .rmc-brand .rmc-wordmark-stack small { font:600 10px/1 'Source Serif 4',serif; letter-spacing:.1em; text-transform:uppercase; padding:0; }
 .rmc-footer-logo { display:inline-block; }

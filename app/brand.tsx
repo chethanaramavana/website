@@ -30,30 +30,33 @@ export function SiteFooter() {
   return (
     <footer className="rmc-footer rmc-container">
       <div className="rmc-footer-top">
-        <div>
-          <a className="rmc-footer-logo" href="/">
-            <img
-              src="/ramavana-paper-logo.png"
-              width="120"
-              height="120"
-              alt="Ramavana Mathematical Centre"
-            />
-          </a>
-          <p>Run by professional mathematicians · Bengaluru</p>
-        </div>
+        <p>Run by professional mathematicians · Bengaluru</p>
         <nav aria-label="Footer navigation">
           <a href="/teacher">Teacher log in</a>
           <a href="/terms">Terms</a>
           <a href="/privacy-policy">Privacy</a>
         </nav>
       </div>
-      <img
-        className="rmc-footer-wordmark"
-        src="/ramavana-wordmark.svg"
-        width="320"
-        height="44"
-        alt="RAMAVANA"
-      />
+      <a
+        className="rmc-footer-lockup"
+        href="/"
+        aria-label="Ramavana Mathematical Centre home"
+      >
+        <img
+          className="rmc-footer-crest"
+          src="/ramavana-crest-transparent.png"
+          width="256"
+          height="256"
+          alt=""
+        />
+        <img
+          className="rmc-footer-wordmark"
+          src="/ramavana-wordmark.svg"
+          width="320"
+          height="44"
+          alt="RAMAVANA"
+        />
+      </a>
       <small>© 2026 Ramavana Mathematical Centre</small>
     </footer>
   );
