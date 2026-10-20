@@ -12,7 +12,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
       <a className="rmc-skip" href="#main-content">Skip to content</a>
       <header className="rmc-header rmc-container">
         <a className="rmc-brand" href="/" aria-label="Ramavana Mathematical Centre home">
-          <img src="/ramavana-paper-logo.png" alt="" width="72" height="72" />
+          <img src="/ramavana-crest-transparent.png" alt="" width="52" height="52" />
           <span><strong>RAMAVANA</strong><small>Mathematical Centre</small></span>
         </a>
         <button className="rmc-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="homepage-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>

@@ -9,5 +9,5 @@
       "verification": "Visually checked: ten figures arranged in rows of 1, 2, 3 and 4. The image is generated artwork, not a commissioned folk-art work. The WebP is a compressed delivery version of the source PNG."
     }
   ],
-  "crest": "The imagegen background-removal attempt changed crest details and was rejected. Do not use that generated crest."
+  "crest": "The imagegen background-removal attempt changed crest details and was rejected. The owner subsequently approved pixel-preserving background removal. scripts/extract-crest.py exports public/ramavana-crest-transparent.png from public/ramavana-mark.png, preserving every RGB value, the original 256x256 canvas and internal white details while removing exterior alpha. Do not use the generated crest."
 }

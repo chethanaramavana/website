@@ -25,7 +25,7 @@ Pair the hero with one mathematical artwork panel. The reference shows groups of
 - Use the crest without lettering in the header at 52px. Beside it, set “RAMAVANA” in Baloo Tamma 2, weight 800, letter spacing 0.16em, with “Mathematical Centre” below at 13px.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
-- In the first local homepage preview, use the existing full transparent crest. The imagegen background-removal attempt changed details and was rejected. A faithful crest-only export can replace it later; pixel-preserving background removal is awaiting the owner's optional preference. The full crest's lettering needs additional image space in the header to keep the emblem legible.
+- The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
 
 ## Typography
 

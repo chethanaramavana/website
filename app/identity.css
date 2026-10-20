@@ -21,7 +21,7 @@
 .rmc-skip:focus { top: 15px; }
 .rmc-header { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 32px; border-bottom: 1px solid var(--rmc-rule); }
 .rmc-brand { display: flex; align-items: center; gap: 13px; text-decoration: none; flex: 0 0 auto; }
-.rmc-brand img { display: block; width: 72px; height: 72px; object-fit: contain; }
+.rmc-brand img { display: block; width: 52px; height: 52px; object-fit: contain; }
 .rmc-brand span { display: block; }
 .rmc-brand strong { display: block; font: 800 23px/1.2 var(--rmc-interface); letter-spacing: .16em; padding-top: 5px; }
 .rmc-brand small { display: block; font-size: 13px; line-height: 1.5; letter-spacing: .035em; }
@@ -147,7 +147,7 @@
   .rmc-brand { gap: 10px; }
   .rmc-brand strong { font-size: 20px; }
   .rmc-brand small { font-size: 12px; }
-  .rmc-brand img { width: 60px; height: 60px; }
+  .rmc-brand img { width: 52px; height: 52px; }
   .rmc-hero { grid-template-columns: 1fr; gap: 34px; padding-block: 36px; }
   .rmc-hero h1 { font-size: clamp(45px, 12vw, 60px); margin-top: 15px; }
   .rmc-hero .rmc-eyebrow { font-size: 11px; }
