@@ -28,8 +28,8 @@ The parent-value section is headed “Study the chapter. Attempt a paper. Review
 
 - Preserve the supplied crest: no recolouring, redrawing, outlines, shadows, effects or cropping of the artwork.
 - The owner explicitly authorises removing the background from `public/ramavana-mark.png` to create a transparent header asset. Preserve the original file and save the transparent export separately. Background removal is the only approved alteration.
-- The approved header direction is the preserved unlettered crest beside the original supplied RAMAVANA lettering, with no subtitle. Keep the compact 60px header. Use `public/ramavana-wordmark.png`, isolated from the supplied logo by `scripts/extract-wordmark.py`; keep the source untouched. Do not substitute a newly typed approximation.
-- The footer uses a large RAMAVANA wordmark and the full name “Ramavana Mathematical Centre”, with Bengaluru and organisation-level attribution.
+- The approved header direction is the preserved unlettered crest beside the original supplied RAMAVANA lettering, with a small “Mathematical Center” subtitle in Source Serif 4, following the latest owner feedback. Keep the compact 60px header. Use the faithfully traced `public/ramavana-wordmark.svg` in the header and oversized footer; retain the original PNG and supplied logo. `scripts/trace-wordmark.py` reproduces the vector trace. Do not trace or redraw the crest.
+- The footer uses the full supplied crest in its upper identity area and a large, crisp SVG RAMAVANA wordmark below, with Bengaluru and organisation-level attribution. The full name remains in the crest, accessible text and copyright.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
 - The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
@@ -146,3 +146,13 @@ Run `node scripts/check-learning-flow.cjs` for the Kaprekar, report-row and week
 ## Remaining owner input
 
 Teacher red-pen samples when available; simple stroked ticks are authorised in the meantime. Report typography and stamp placement are resolved.
+
+## Latest review refinements
+
+- Keep notes compact and child-friendly. Remove the large book icon from covers, long introductory labels and repeated reading instructions. Use a short curiosity prompt beside the ink-and-gold question icon. Retain mathematical explanations, worked steps, practice questions and answers. Notes have natural section heights on screen, with print rules retained.
+- Use one calm white style for every Maths Basics grade card. The hero diagram follows the same six dots through counting, two equal groups of three, and the equation 2 × x = 6. Labels and formulae must clear the steps.
+- Use Google's unmodified pre-approved light pill sign-in image, sourced from its official branding bundle (`public/google-sign-in-source.txt`). The written-paper access dialog has a short title, a simple free-notes row and the Google button, without repeated explanations or decorative shield icons.
+- Correct optical vertical alignment for Baloo numbers and labels in learning goals, breadcrumbs, level rows and pill buttons.
+- Local mock sign-in is available at `/dev-login`, also reached by the regular Google sign-in action during localhost development. Student and teacher are fixed test identities; a banner identifies them. Student access is seeded only into the local database with clearly labelled fixture transactions. Google credentials and Razorpay are not used. Mock login and cookies are disabled in production builds and on non-loopback hosts.
+
+Verification: local student opens a timed written paper and can save an MCQ answer back to the report. Local teacher can read the weekly editor; the student is denied. A separate production-build server returned 404 for mock login and 403 for teacher access with a forged mock cookie; student records stayed signed out. Run `node scripts/check-local-preview-auth.cjs` for the build-mode/host/role guards.

@@ -10,7 +10,7 @@ The GitHub remote is `git@github.com:chethanaramavana/website.git`. Preserve the
 
 Read `DESIGN.md` before changing website aesthetics. Follow later explicit owner decisions when they update the guide. Use imagegen for decorative artwork and exact SVGs for mathematical diagrams. Preserve the crest; background removal from the supplied header crest is explicitly authorised.
 
-The owner specifically approved pixel-preserving crest background removal instead of imagegen. `scripts/extract-crest.py` changes only exterior alpha and preserves the original RGB values, canvas and internal white details. Use `public/ramavana-crest-transparent.png` beside the original extracted `public/ramavana-wordmark.png` in shared headers, without a subtitle; retain the untouched sources. Keep the full organisation name and a large wordmark in the footer.
+The owner specifically approved pixel-preserving crest background removal instead of imagegen. `scripts/extract-crest.py` changes only exterior alpha and preserves the original RGB values, canvas and internal white details. Use `public/ramavana-crest-transparent.png` beside the faithfully traced `public/ramavana-wordmark.svg` in shared headers, with a small “Mathematical Center” subtitle; retain the untouched sources. Keep the full organisation name and a large wordmark in the footer.
 
 For the current redesign, run and review the homepage and full learning flow locally. The owner approved extending beyond the homepage on 20 October 2026. Do not publish to Sites until the owner requests deployment. Use the normal homepage route for local iterations; no `/v2` route is needed. Describe the organisation as run by professional mathematicians, with no individual teacher attribution or biodata.
 
@@ -27,3 +27,11 @@ Verify the push and report its result. If authentication, network access or perm
 ## Reference materials
 
 `materials/` is intentionally excluded from Git as local teaching source material. Keep the reference PDFs there and do not publish them as website assets. Tell the owner that these local-only materials are not included in a GitHub push.
+
+## Local mock sign-in
+
+The owner explicitly requested mock Google login for local testing. In development on localhost, normal Google sign-in opens `/dev-login`, offering fixed student and teacher test accounts. `/api/dev/login` seeds clearly labelled local access fixtures for the student; it never contacts Razorpay or Google. The banner identifies mock sessions and allows switching or signing out. Production builds and non-loopback hosts reject the mock route and ignore the mock cookie. Preserve these guards.
+
+If the preview database is incomplete, start the dev server once, then run `python scripts/setup-local-preview.py`. It completes existing local Miniflare tables without replacing records and never connects to remote D1. The bundled Python executable can be used when Python is absent from PATH. Keep the current local D1/R2 bindings in `vite.config.ts`; do not point mock tests at remote storage.
+
+Verify auth changes with `node scripts/check-local-preview-auth.cjs` and the production build. Production must return 404 for `/dev-login` and POST `/api/dev/login`, ignore `rmc_local_preview` cookies, and deny teacher APIs without a real authorised session.

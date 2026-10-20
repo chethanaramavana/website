@@ -180,7 +180,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, va
 .test-start-points { margin: 0; padding: 0; display: grid; gap: 9px; list-style: none; color: #5e5968; font-size: .8rem; }
 .test-start-points li { position: relative; padding-left: 23px; line-height: 1.45; }
 .test-start-points li:before { content: '✓'; width: 16px; height: 16px; position: absolute; left: 0; top: 1px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--blue); font-size: .62rem; font-weight: 900; }
-.start-test-dialog.payment-dialog { max-width: 680px !important; max-height: min(92vh, 820px); overflow-y: auto; }
+.start-test-dialog.payment-dialog { max-width: 460px; max-height: min(92vh, 820px); overflow-y: auto; }
 .chapter-access-content { display: grid; gap: 14px; }
 .revision-sheet { overflow: hidden; border: 1px solid #cfdfe8; border-radius: 17px; background: #f6fbfd; }
 .revision-link { min-height: 88px; padding: 15px 17px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 13px; color: var(--navy); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }

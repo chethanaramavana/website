@@ -4,7 +4,7 @@ import { getGoogleUserFromCookieHeader, safeReturnTo, type GoogleUser } from '@/
 
 export async function getGoogleUser(): Promise<GoogleUser | null> {
   const requestHeaders = await headers();
-  return getGoogleUserFromCookieHeader(requestHeaders.get('cookie'));
+  return getGoogleUserFromCookieHeader(requestHeaders.get('cookie'), requestHeaders.get('host'));
 }
 
 export async function requireGoogleUser(returnTo: string): Promise<GoogleUser> {

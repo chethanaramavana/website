@@ -1,4 +1,5 @@
+import { getGoogleUser } from '../google-auth';
 import './basics.css';
 import LearningHeader from '../learning-header';
 import { SiteFooter } from '../brand';
-export default function BasicsLayout({children}:{children:React.ReactNode}) { return <div className="identity-learning"><LearningHeader /><main className="basics">{children}</main><SiteFooter /></div>; }
+export default async function BasicsLayout({children}:{children:React.ReactNode}) { const user=await getGoogleUser(); return <div className="identity-learning"><LearningHeader signedIn={!!user} /><main className="basics">{children}</main><SiteFooter /></div>; }

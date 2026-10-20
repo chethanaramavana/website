@@ -1,3 +1,55 @@
-import {basicsCourses} from '@/lib/basics-catalog';
-export const metadata={title:'Maths Step by Step | Ramavana',description:'Choose your grade and strengthen the maths foundations you need.'};
-export default function BasicsHome(){return <><header className="basics-hero"><div><span className="basics-label">Maths Step by Step</span><h1>Make your maths<br/>basics clear.</h1><p>Choose your grade. Learn with pictures, try each concept and build confidence one step at a time.</p></div><svg viewBox="0 0 400 340" role="img" aria-label="Steps from numbers to algebra"><path d="M30 295H125V225H220V150H315V75H380" fill="none" stroke="#cabdeb" strokeWidth="28" strokeLinejoin="round"/>{[0,1,2].map(i=><circle key={i} cx={53+i*24} cy="262" r="8" fill="#15776a"/>)}<text x="145" y="190">3 × 4</text><text x="246" y="114">x + 2</text><circle cx="350" cy="42" r="23" fill="#ffd17c"/><path d="m340 42 7 7 13-16" fill="none" stroke="#704a13" strokeWidth="4"/></svg></header><section><h2>Choose your folder</h2><div className="basics-folders">{basicsCourses.map(c=><a className="basics-folder" href={`/maths-basics/${c.id}`} key={c.id}><svg viewBox="0 0 64 48" aria-hidden="true"><path d="M3 10V4h23l7 8h28v32H3Z" fill="#dcd1ef" stroke="#7857a1" strokeWidth="2"/><path d="M3 17h58v27H3Z" fill="#ece5f5" stroke="#7857a1" strokeWidth="2"/></svg><h3>{c.title}</h3><strong>{c.subtitle}</strong><p>{c.description}</p><span>Open folder →</span></a>)}</div></section></>;}
+import LearningSteps from './learning-steps';
+import { basicsCourses } from '@/lib/basics-catalog';
+export const metadata = {
+  title: 'Maths Step by Step | Ramavana',
+  description:
+    'Choose your grade and strengthen the maths foundations you need.',
+};
+export default function BasicsHome() {
+  return (
+    <>
+      <header className="basics-hero">
+        <div>
+          <span className="basics-label">Maths Step by Step</span>
+          <h1>
+            Make your maths
+            <br />
+            basics clear.
+          </h1>
+          <p>Choose your grade. Learn with pictures, then try the questions.</p>
+        </div>
+        <LearningSteps />
+      </header>
+      <section>
+        <h2>Choose your grade</h2>
+        <div className="basics-folders">
+          {basicsCourses.map((c) => (
+            <a
+              className="basics-folder"
+              href={`/maths-basics/${c.id}`}
+              key={c.id}
+            >
+              <svg viewBox="0 0 64 48" aria-hidden="true">
+                <path
+                  d="M3 10V4h23l7 8h28v32H3Z"
+                  fill="#F4E0AE"
+                  stroke="#011E47"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M3 17h58v27H3Z"
+                  fill="#fff"
+                  stroke="#011E47"
+                  strokeWidth="2"
+                />
+              </svg>
+              <h3>{c.title}</h3>
+              <p>{c.description}</p>
+              <span>Open folder →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}

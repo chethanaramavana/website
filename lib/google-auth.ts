@@ -1,5 +1,6 @@
 import { env } from 'cloudflare:workers';
 import { normalizeAccountEmail } from '@/lib/identity';
+import { previewUser } from './local-preview-auth';
 
 export type GoogleUser = {
   userId: string;
@@ -96,7 +97,7 @@ export async function readOAuthState(cookieHeader: string | null) {
 }
 
 export async function getGoogleUserFromRequest(request: Request): Promise<GoogleUser | null> {
-  return getGoogleUserFromCookieHeader(request.headers.get('cookie'));
+  return getGoogleUserFromCookieHeader(request.headers.get('cookie'), new URL(request.url).host);
 }
 
 export async function renewedGoogleSession(request: Request) {
@@ -109,7 +110,9 @@ export async function renewedGoogleSession(request: Request) {
   return createGoogleSession(payload);
 }
 
-export async function getGoogleUserFromCookieHeader(cookieHeader: string | null): Promise<GoogleUser | null> {
+export async function getGoogleUserFromCookieHeader(cookieHeader: string | null, host?: string | null): Promise<GoogleUser | null> {
+  const localUser = previewUser(cookieHeader, host);
+  if (localUser) return localUser;
   const config = getGoogleConfiguration();
   if (!config) return null;
   const payload = await verifyPayload<SessionPayload>(readCookie(cookieHeader, SESSION_COOKIE), config.authSecret);

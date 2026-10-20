@@ -5,6 +5,7 @@ import './identity.css';
 import './learning-identity.css';
 import SessionRenewal from './session-renewal';
 import StudentPresence from './student-activity';
+import LocalPreviewBanner from './local-preview-banner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LocalPreviewBanner />
         {children}
         <SessionRenewal />
         <StudentPresence />

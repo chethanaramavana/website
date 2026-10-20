@@ -1,4 +1,5 @@
 'use client';
+import GoogleSignIn from './google-sign-in';
 import LearningHeader from './learning-header';
 import { SiteFooter } from './brand';
 import ChapterFigure from './chapter-figure';
@@ -861,37 +862,19 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       <Dialog open={pendingChapter !== null} onOpenChange={(open) => { if (!open) { setPendingChapter(null); onCloseAccess(); } }}>
         <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
           <DialogHeader>
-            <span className="start-test-icon">{isAvailablePaper ? <ShieldCheck /> : <LockKeyhole />}</span>
+
             <p className="start-test-chapter">{pendingChapter}</p>
-            {board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' && <a className="revision-sheet revision-link" href="/cbse/grade-11/ch-2/free-mcq"><Folder /><div><small>Free MCQ practice · Google login</small><strong>Relations and Functions — 50 MCQs</strong><em>Medium to difficult · 8 assertion–reason · Marks &amp; worked solutions</em></div><b>Open free quiz</b></a>}
-            {board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") && <a className="revision-sheet revision-link" href={`/cbse/grade-10/ch-${chapters.indexOf(pendingChapter ?? "") + 1}/free-mcq`}><Folder /><div><small>{(quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? "Free MCQ practice · Google login" : "MCQ practice · ₹20 per chapter"}</small><strong>{pendingChapter} — 50 MCQs</strong><em>8 assertion–reason questions · Instant marks &amp; worked solutions</em></div><b>{(quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? 'Open free quiz' : 'Open ₹20 MCQs'}</b></a>}
-            <DialogTitle>{board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' ? 'Choose your chapter practice' : board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? 'Choose your chapter practice' : isAvailablePaper
-              ? studentRecords === null
-                ? 'Checking your account…'
-                : !studentRecords.signedIn
-                  ? 'Sign in with Google to continue'
-                  : completedSubmission
-                    ? 'Your completed paper is available'
-                    : 'Pay ₹30 to open this test'
-              : 'This paper is coming soon'}</DialogTitle>
-            {(!isAvailablePaper || studentRecords === null || !studentRecords.signedIn || completedSubmission) && <DialogDescription>
-              {board === 'CBSE' && grade === 11 && pendingChapter === 'Relations and Functions' ? 'The 50-MCQ quiz is free. Sign in to save your answers and marks for your teacher.' : board === 'CBSE' && grade === 10 && chapters.includes(pendingChapter ?? "") ? ((quizPrice(chapters.indexOf(pendingChapter ?? "") + 1) === 0) ? 'The 50-MCQ practice above is free. Sign in to save your score for your teacher.' : 'The 50-MCQ quiz costs ₹20 for this chapter. Includes worked solutions and repeat attempts.') : isAvailablePaper
-                ? studentRecords === null
-                  ? 'Please wait while we check your student account.'
-                  : !studentRecords.signedIn
-                    ? 'Sign in once to keep paid chapters, completed papers and marks available on every device.'
-                    : 'Review your most recent paper or start another attempt without paying again.'
-                : 'This chapter’s question paper and payment access will be added later.'}
-            </DialogDescription>}
+            <DialogTitle>{!isAvailablePaper ? 'Coming soon' : studentRecords === null ? 'One moment…' : !studentRecords.signedIn ? 'Sign in' : completedSubmission ? 'Your paper' : 'Written paper · ₹30'}</DialogTitle>
+            <DialogDescription className="sr-only">{pendingChapter} written practice paper.</DialogDescription>
           </DialogHeader>
           {isAvailablePaper ? (
             <div className="chapter-access-content">
               {selectedPaper && <ChapterNotesLink paper={selectedPaper} />}
-              <div className="payment-divider"><span>Take the chapter test</span></div>
+
               {studentRecords === null ? (
                 <div className="student-payment-loading"><Loader2 /><span>Checking login and chapter access…</span></div>
               ) : !studentRecords.signedIn ? (
-                <a className="student-payment-login google-login-action" href={`/api/auth/google?return_to=${encodeURIComponent(chapterPath(board, grade, pendingChapter ?? '') + '?paper=1')}`}><UserRound /><span><strong>Continue with Google</strong><small>We use only your Google account email to identify your student account.</small></span><ChevronRight /></a>
+                <GoogleSignIn href={`/api/auth/google?return_to=${encodeURIComponent(chapterPath(board, grade, pendingChapter ?? '') + '?paper=1')}`} />
               ) : completedSubmission ? (
                 <div className="completed-paper-card">
                   <CheckCircle2 />
@@ -947,8 +930,8 @@ function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
   return (
     <a className="revision-sheet revision-link" href={`/notes/${slug}`} target="_blank">
       <span><BookOpen /></span>
-      <div><small>Free chapter notes</small><strong>{paper.chapter} Learning Guide</strong><em>Visual explanations, worked reasoning and self-check practice</em></div>
-      <b>Open notes <ArrowRight /></b>
+      <div><strong>Chapter notes</strong><small>Free</small></div>
+      <b>Read <ArrowRight /></b>
     </a>
   );
 }

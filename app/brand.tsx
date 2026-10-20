@@ -12,13 +12,16 @@ export default function Brand() {
         height="44"
         alt=""
       />
-      <img
-        className="rmc-wordmark"
-        src="/ramavana-wordmark.png"
-        width="320"
-        height="44"
-        alt="RAMAVANA"
-      />
+      <span className="rmc-wordmark-stack">
+        <img
+          className="rmc-wordmark"
+          src="/ramavana-wordmark.svg"
+          width="320"
+          height="44"
+          alt="RAMAVANA"
+        />
+        <small>Mathematical Center</small>
+      </span>
     </a>
   );
 }
@@ -28,7 +31,14 @@ export function SiteFooter() {
     <footer className="rmc-footer rmc-container">
       <div className="rmc-footer-top">
         <div>
-          <strong>Ramavana Mathematical Centre</strong>
+          <a className="rmc-footer-logo" href="/">
+            <img
+              src="/ramavana-paper-logo.png"
+              width="120"
+              height="120"
+              alt="Ramavana Mathematical Centre"
+            />
+          </a>
           <p>Run by professional mathematicians · Bengaluru</p>
         </div>
         <nav aria-label="Footer navigation">
@@ -39,7 +49,7 @@ export function SiteFooter() {
       </div>
       <img
         className="rmc-footer-wordmark"
-        src="/ramavana-wordmark.png"
+        src="/ramavana-wordmark.svg"
         width="320"
         height="44"
         alt="RAMAVANA"

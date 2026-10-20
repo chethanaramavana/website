@@ -7,8 +7,11 @@ import {
   googleCallbackUrl,
   safeReturnTo,
 } from '@/lib/google-auth';
+import { localPreviewEnabled } from '@/lib/local-preview-auth';
 
 export async function GET(request: Request) {
+  const localUrl = new URL(request.url);
+  if (localPreviewEnabled(localUrl.host)) return new Response(null, {status:302,headers:{location:`/dev-login?return_to=${encodeURIComponent(safeReturnTo(localUrl.searchParams.get('return_to')))}`,'cache-control':'no-store'}});
   const config = getGoogleConfiguration();
   if (!config) return new Response('Google login is temporarily unavailable.', { status: 503 });
   const requestUrl = new URL(request.url);
