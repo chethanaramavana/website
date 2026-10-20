@@ -34,6 +34,7 @@
 .notes-shell .study-goals li span { font:400 18px/1.4 var(--rmc-reading); color:#011e47; }
 .notes-shell .study-method li>b { line-height:1; padding-top:3px; }
 .identity-learning .basics-folder:nth-child(n) { background:#fff; border-color:#dce2e9; }
+.identity-learning .basics-folder span { color:#011e47; }
 .identity-learning .basics .basics-button { display:inline-flex; justify-content:center; align-items:center; gap:10px; min-height:48px; padding:12px 22px 8px; line-height:1.4; }
 .identity-learning .basics-outline>div { display:grid; grid-template-columns:30px 1fr auto; align-items:center; gap:12px; }
 .identity-learning .basics-outline>div>span,.identity-learning .basics-outline>div>a,.identity-learning .basics-outline>div>small { display:block; margin:0; padding-top:4px; line-height:1.4; }
