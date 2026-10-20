@@ -4,7 +4,6 @@ import { useTestActivity } from '@/app/student-activity';
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import {
-  Archive,
   ArrowLeft,
   ArrowRight,
   BookOpen,
@@ -61,26 +60,7 @@ const helpDeskPhone = '+91 93539 28169';
 const googleMapsUrl = 'https://www.google.com/maps?cid=9059168596499950165';
 const googleMapsEmbedUrl = 'https://www.google.com/maps?q=12.9011804,77.6539704&z=16&output=embed';
 
-const previousPaperResources = [
-  {
-    label: 'Board examination papers',
-    detail: 'Class 10 papers from recent CBSE examinations, arranged year-wise.',
-    href: 'https://www.cbse.gov.in/cbsenew/question-paper.html',
-    action: 'Open CBSE archive',
-  },
-  {
-    label: 'Sample papers & marking schemes',
-    detail: 'Official sample papers with the corresponding CBSE marking schemes.',
-    href: 'https://cbseacademic.nic.in/sqp_archive.html',
-    action: 'View sample-paper archive',
-  },
-  {
-    label: 'Class 10 question bank',
-    detail: 'Competency-focused questions published by the CBSE Academic Unit.',
-    href: 'https://cbseacademic.nic.in/qbclass10.html',
-    action: 'Open question bank',
-  },
-] as const;
+
 
 const grade10Chapters = [
   'Real Numbers',
@@ -503,7 +483,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         <nav className="primary-nav" aria-label="Main navigation">
           <a href="/#study-library">CBSE &amp; ICSE</a>
           <a href="/maths-basics">Maths Basics</a>
-          <a href="/#previous-papers">Previous Papers</a>
+          <a href="/previous-papers">Previous Papers</a>
           <a href="#help-desk">Help Desk</a>
         </nav>
         <div className="account-links">
@@ -601,28 +581,7 @@ function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) 
           <a className="home-choice choice-basics" href="/maths-basics"><span className="home-choice-icon"><FolderOpen/></span><h2 id="basics-side-title">Make your maths<br/>basics clear.</h2><p>Need help with numbers, multiplication, fractions or word problems? Start here.</p><small>Maths Step by Step · Grades 5–10</small><strong>Start learning — first topic free <ArrowRight/></strong></a>
         </aside>
       </div>
-      <section className="previous-papers-section" id="previous-papers" aria-labelledby="previous-papers-title">
-        <div className="previous-papers-heading">
-          <span className="previous-papers-icon"><Archive /></span>
-          <div>
-            <p>Learn from the real pattern</p>
-            <h2 id="previous-papers-title">Previous CBSE Papers</h2>
-            <span>Use authentic board resources to understand question styles, difficulty and marking.</span>
-          </div>
-        </div>
-        <div className="previous-paper-grid">
-          {previousPaperResources.map((resource, index) => (
-            <a key={resource.label} className="previous-paper-card" href={resource.href} target="_blank" rel="noreferrer">
-              <span className={`paper-resource-number resource-${index + 1}`}>{String(index + 1).padStart(2, '0')}</span>
-              <FileText />
-              <strong>{resource.label}</strong>
-              <p>{resource.detail}</p>
-              <span className="paper-resource-action">{resource.action} <ExternalLink /></span>
-            </a>
-          ))}
-        </div>
-        <p className="official-resource-note"><ShieldCheck /> These links open official CBSE resources in a new tab. Ramavana does not copy or alter the original papers.</p>
-      </section>
+
     </div>
   );
 }
