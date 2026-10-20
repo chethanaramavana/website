@@ -5,6 +5,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import Tex from './notes/tex';
 import { homepageProblem } from '@/lib/homepage-content';
 import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
+import HomepageConcepts from './homepage-concepts';
 
 export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,10 +33,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
             <div className="rmc-actions"><a className="rmc-button" href="#syllabus">Choose your syllabus<ArrowDown aria-hidden="true" /></a><a className="rmc-text-link" href="/maths-basics/numbers">Try a free lesson<ArrowUpRight aria-hidden="true" /></a></div>
             <p className="rmc-curriculum-note">For CBSE and ICSE students.</p>
           </div>
-          <figure className="rmc-hero-figure">
-            <div className="rmc-art-panel"><img src="/artwork/triangular-dancers.webp" alt="Ten white geometric dancers in rows of one, two, three and four, beneath a gold sun on a navy background" width="1536" height="1024" fetchPriority="high" /></div>
-            <figcaption><span><Tex>{'$1 + 2 + 3 + 4 = 10$'}</Tex></span><span>Four rows of dancers form the fourth triangular number.</span></figcaption>
-          </figure>
+          <HomepageConcepts />
         </section>
 
         <section className="rmc-weekly" aria-labelledby="weekly-title">
