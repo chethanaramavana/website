@@ -18,7 +18,7 @@ Keep the hero clear and spacious, with the parent-facing headline “Understand 
 
 Use direct, useful copy for navigation and syllabus cards. The board section is headed “Choose your board”, without an introductory eyebrow or an extra explanation alongside it. Card descriptions state which materials are available, such as chapter notes, worked examples and practice papers. Avoid vague promises or slogans such as “Your next step”, “exam-ready understanding” and “a strong foundation” in place of information.
 
-Pair the hero with one mathematical artwork panel. The reference shows groups of 1, 3, 6 and 10 dancers forming triangular numbers, with a caption explaining the mathematics. Put the weekly-problem board immediately beneath the hero. Keep Bengaluru location and contact information accessible; retain Terms, Privacy and teacher access in the footer.
+Pair the hero with one mathematical artwork panel. The current illustration shows four rows containing 1, 2, 3 and 4 dancers. Make the meaning explicit in the caption: “1 + 2 + 3 + 4 = 10”, followed by “Four rows of dancers form the fourth triangular number.” Put the weekly-problem board immediately beneath the hero. Keep Bengaluru location and contact information accessible; retain Terms, Privacy and teacher access in the footer.
 
 Give Maths Basics a substantial standalone section, with the heading “Strengthen the skills your child needs”, specific topics and a clear free-lesson link. Use exact mathematical graphics, such as the same fraction represented by a partitioned bar and a number line, rather than decorative icons.
 
@@ -28,14 +28,14 @@ The parent-value section is headed “Study the chapter. Attempt a paper. Review
 
 - Preserve the supplied crest: no recolouring, redrawing, outlines, shadows, effects or cropping of the artwork.
 - The owner explicitly authorises removing the background from `public/ramavana-mark.png` to create a transparent header asset. Preserve the original file and save the transparent export separately. Background removal is the only approved alteration.
-- Use the crest without lettering in the header at 52px. The owner approved trying Newsreader at weight 600 for “RAMAVANA”, with restrained tracking and “Mathematical Centre” below at 13px. Trim the header to approximately 80px tall. Keep Baloo for the rest of the interface.
+- The latest local header trial is 60px tall, with the unlettered crest displayed at 44px. Try “Ramavana” in title case, Newsreader weight 500 with tight tracking, and “Mathematical Centre” beneath at 11px. This follows the owner's request for a more compact header and a more refined wordmark. Keep Baloo for the rest of the interface.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
 - The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
 
 ## Typography
 
-Load Shrikhand, Baloo Tamma 2 (weights 400–800), Source Serif 4 (400, 600 and italic), and Newsreader (600, for the wordmark only) from Google Fonts.
+Load Shrikhand, Baloo Tamma 2 (weights 400–800), Source Serif 4 (400, 600 and italic), and Newsreader (500, for the wordmark only) from Google Fonts.
 
 - **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`. The owner explicitly requested the dark painted-sign offset shadow on the weekly-problem number too.
 - **Baloo Tamma 2:** headings at 800; buttons and menus at 600–700; interface and body text at 400 and 17–18px. Use for Kannada text too.

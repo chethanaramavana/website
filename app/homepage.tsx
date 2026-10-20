@@ -13,8 +13,8 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
       <a className="rmc-skip" href="#main-content">Skip to content</a>
       <header className="rmc-header rmc-container">
         <a className="rmc-brand" href="/" aria-label="Ramavana Mathematical Centre home">
-          <img src="/ramavana-crest-transparent.png" alt="" width="52" height="52" />
-          <span><strong>RAMAVANA</strong><small>Mathematical Centre</small></span>
+          <img src="/ramavana-crest-transparent.png" alt="" width="44" height="44" />
+          <span><strong>Ramavana</strong><small>Mathematical Centre</small></span>
         </a>
         <button className="rmc-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="homepage-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <nav id="homepage-nav" className={`rmc-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation" onClick={() => setMenuOpen(false)}>
@@ -34,7 +34,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
           </div>
           <figure className="rmc-hero-figure">
             <div className="rmc-art-panel"><img src="/artwork/triangular-dancers.webp" alt="Ten white geometric dancers in rows of one, two, three and four, beneath a gold sun on a navy background" width="1536" height="1024" fetchPriority="high" /></div>
-            <figcaption><span>One more row. A new pattern.</span><span>Ten dancers make the fourth triangular number.</span></figcaption>
+            <figcaption><span><Tex>{'$1 + 2 + 3 + 4 = 10$'}</Tex></span><span>Four rows of dancers form the fourth triangular number.</span></figcaption>
           </figure>
         </section>
 
