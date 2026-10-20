@@ -8,7 +8,7 @@ import type { StudentRecordsPayload } from '@/lib/student-records';
 
 type Submission = { id: string; paper_id: keyof typeof paperDefinitionsById; student_name: string; status: 'submitted' | 'marked'; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string; marked_at: string | null };
 type Payment = { paper_id: string; student_name: string; transaction_id: string; amount_paise: number; created_at: string; reviewed_at: string | null; payment_source: 'razorpay' | 'manual' };
-type Records = Pick<StudentRecordsPayload, 'displayName' | 'access' | 'payments' | 'submissions'>;
+type Records = Pick<StudentRecordsPayload, 'displayName' | 'access' | 'payments' | 'submissions' | 'mcqDrafts' | 'mcqResults'>;
 
 export default function StudentDashboard({ displayName, email, initialRecords }: { displayName: string; email: string; initialRecords: StudentRecordsPayload | null }) {
   const [records, setRecords] = useState<Records | null>(initialRecords);
@@ -32,6 +32,8 @@ export default function StudentDashboard({ displayName, email, initialRecords }:
       </header>
       {error ? <div className="student-account-error">{error}</div> : !records ? <div className="student-account-loading"><Loader2 /> Loading your tests…</div> : (
         <>
+          <section className="student-results-section"><h2>Continue your MCQ tests</h2><p>Saved answers for {email}. Use this same Google account when you return.</p>{records.mcqDrafts?.length?<div className="student-results-list">{records.mcqDrafts.map(q=><a key={q.quizId} href={q.path}><span><strong>{q.title}</strong><small>{q.answered} / {q.total} answered · Saved</small></span><em>Continue test →</em></a>)}</div>:<p>No unfinished saved MCQ tests for this account.</p>}</section>
+          <section className="student-results-section"><h2>Your MCQ marks</h2>{records.mcqResults?.length?<div className="student-results-list">{records.mcqResults.map(q=><a key={q.id} href={`/student/mcq/${q.id}`}><span><strong>{q.title}</strong><small>{new Date(q.submitted).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})}</small></span><em>{q.score} / {q.total} · View answers →</em></a>)}</div>:<p>Submit a quiz to see your marks and answer review here.</p>}</section>
           <section className="student-access-section">
             <div><p>Paid once, available anytime</p><h2>Your chapter access</h2></div>
             {records.access.length ? <div className="student-access-list">{records.access.map((paperId) => {

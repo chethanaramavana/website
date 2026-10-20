@@ -11,3 +11,5 @@
 .fq-solution .exam-solution-steps{padding-left:1.5em}
 .fq-solution .exam-solution-steps li{padding:8px 0;line-height:1.95}
 .free-quiz [data-slot="radio-group"]{gap:12px}
+
+.free-quiz .fq-review-options li.correct{background:#dcfce7;border:2px solid #15803d;color:#14532d}.free-quiz .fq-review-options li.incorrect{background:#fee2e2;border:2px solid #b91c1c;color:#991b1b}.fq-correct{color:#15803d}.fq-incorrect{color:#b91c1c}

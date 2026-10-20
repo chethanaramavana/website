@@ -7,7 +7,8 @@ export async function GET(request:Request){
  const quiz=freeQuizzes.find(q=>q.id===new URL(request.url).searchParams.get('quiz'));if(!quiz)return jsonError('Unknown quiz.',400);
  if(!await hasMcqAccess(user,quiz.chapter,quiz.grade))return jsonError('Unlock this quiz first.',403);
  const row=await getDatabase().prepare('SELECT state_json,revision FROM mcq_drafts WHERE user_id=? AND quiz_id=?').bind(user.userId,quiz.id).first<{state_json:string;revision:number}>();
- const state:McqDraft=row?JSON.parse(row.state_json):emptyMcqDraft();
+ let state:McqDraft=row?JSON.parse(row.state_json):emptyMcqDraft();
+ if(!row){const prior=await getDatabase().prepare('SELECT id,answers_json FROM free_quiz_attempts WHERE user_id=? AND quiz_id=? ORDER BY submitted_at DESC LIMIT 1').bind(user.userId,quiz.id).first<{id:string;answers_json:string}>();if(prior)state={attemptId:prior.id,answers:JSON.parse(prior.answers_json),submitted:true};}
  if(state.attemptId){const result=await getDatabase().prepare('SELECT answers_json FROM free_quiz_attempts WHERE id=? AND user_id=? AND quiz_id=?').bind(state.attemptId,user.userId,quiz.id).first<{answers_json:string}>();if(result){state.answers=JSON.parse(result.answers_json);state.submitted=true;}}
  return Response.json({state,revision:row?.revision||0},{headers:{'Cache-Control':'no-store'}});
  }catch{return jsonError('Could not load your answers. Retry before starting.',503);}

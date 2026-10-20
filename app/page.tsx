@@ -508,7 +508,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         </nav>
         <div className="account-links">
           <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <a className="student-login-link" href="/student" aria-label="Open student account"><UserRound /><span>{studentRecords?.signedIn ? studentRecords.displayName || studentRecords.email : 'Student Login'}</span></a>
+          <a className="student-login-link" href="/student" aria-label="My tests and saved answers"><UserRound /><span>{studentRecords?.signedIn ? 'My tests' : 'Student Login'}</span></a>
           {studentRecords?.signedIn && <a className="student-logout-link" href="/api/auth/signout?return_to=%2F" aria-label="Sign out"><LogOut /><span>Logout</span></a>}
         </div>
       </header>

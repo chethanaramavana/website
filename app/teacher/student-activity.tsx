@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 type Account={user_id:string;email:string;name:string;last_sign_in_ms:number|null;sign_in_count:number;last_seen_ms:number;teacher:boolean};
 type Attempt={id:string;name:string;email:string;teacher:boolean;opened_at_ms:number;started_at_ms:number|null;last_seen_ms:number;submitted_at_ms:number|null;answered:number;paper:{title:string;free:boolean;total:number}|null};
-type Data={now:number;accounts:Account[];attempts:Attempt[]};
+type Data={results:{id:string;title:string;student_name:string;user_email:string;score:number;total:number;answered:number;submitted_at:string;teacher:boolean}[];now:number;accounts:Account[];attempts:Attempt[]};
 const date=(n:number|null)=>n?new Date(n).toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'Not recorded yet';
 export default function StudentActivity(){
   const[data,setData]=useState<Data|null>(null),[error,setError]=useState(''),[showTeachers,setShowTeachers]=useState(false);
@@ -15,6 +15,8 @@ export default function StudentActivity(){
     {error&&<p role="alert">{error}</p>}
     <label className="activity-teacher-toggle"><input type="checkbox" checked={showTeachers} onChange={e=>setShowTeachers(e.target.checked)}/> Include teacher accounts</label>
     {!data&&!error?<p>Loading student activity…</p>:<>
+      <h3>Submitted MCQ marks</h3><p>These are scored results. Unfinished tests show an answered count only until the student submits.</p>
+      {data?.results?.filter(r=>showTeachers||!r.teacher).length?<div className="activity-table-scroll"><table><thead><tr><th>Student</th><th>Quiz</th><th>Marks</th><th>Answered</th><th>Review</th></tr></thead><tbody>{data.results.filter(r=>showTeachers||!r.teacher).map(r=><tr key={r.id}><td>{r.student_name}<small>{r.user_email}</small></td><td>{r.title}</td><td><strong>{r.score} / {r.total}</strong></td><td>{r.answered} / {r.total}</td><td><a href={`/teacher/free-mcq/${r.id}`}>View answers →</a></td></tr>)}</tbody></table></div>:<p>No submitted MCQ results yet.</p>}<p><a href="/teacher/free-mcq">All MCQ results →</a></p>
       <h3>Test activity</h3>
       {!attempts.length?<p>No test activity recorded yet.</p>:<div className="activity-table-scroll"><table><thead><tr><th>Student</th><th>Test</th><th>Status</th><th>Progress</th><th>Started / opened</th><th>Last activity</th></tr></thead><tbody>{attempts.map(a=><tr key={a.id}><td>{a.name}{a.teacher?' (teacher)':''}<small>{a.email}</small></td><td>{a.paper?.title??'Test'}<small>{a.paper?.free?'Free':'Paid'}</small></td><td>{a.submitted_at_ms?'Submitted':active(a.last_seen_ms)?a.started_at_ms?'Taking test · active':'Test opened · active':a.started_at_ms?'Inactive · unfinished':'Opened · inactive'}</td><td>{a.answered} / {a.paper?.total??'—'} answered</td><td>{date(a.started_at_ms??a.opened_at_ms)}</td><td>{date(a.submitted_at_ms??a.last_seen_ms)}</td></tr>)}</tbody></table></div>}
       <h3>Sign-ins and recent visits</h3>
