@@ -39,7 +39,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
 
         <section className="rmc-weekly" aria-labelledby="weekly-title">
           <div className="rmc-problem-number" aria-label={`Problem number ${homepageProblem.number}`}>No. {homepageProblem.number}</div>
-          <div className="rmc-problem-content"><h2 id="weekly-title" className="rmc-eyebrow">This week’s problem · Ramavana</h2><p className="rmc-problem-question"><Tex>{homepageProblem.question}</Tex></p>
+          <div className="rmc-problem-content"><h2 id="weekly-title">This week’s problem</h2><p className="rmc-problem-question"><Tex>{homepageProblem.question}</Tex></p>
             <details className="rmc-solution"><summary>Explore the solution<ArrowRight aria-hidden="true" /></summary><div><p><Tex>{homepageProblem.solution}</Tex></p><p><Tex>{homepageProblem.working}</Tex></p></div></details>
             <span className="rmc-preview-edition">Preview edition · From our problem notebook</span>
           </div>
@@ -47,10 +47,10 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         </section>
 
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
-          <div className="rmc-section-heading"><div><p className="rmc-eyebrow">Find your starting point</p><h2 id="syllabus-title">Your syllabus. Your next step.</h2></div><p>Choose a board, then a grade.<br />We’ll take it from there.</p></div>
+          <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>
           <div id="study-library" className="rmc-board-grid">
-            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 10, 11 &amp; 12</span><h3>CBSE</h3><p>From the first idea to<br />exam-ready understanding.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
-            <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grade 6</span><h3>ICSE</h3><p>A clear explanation.<br />A strong foundation.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
+            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
+            <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grade 6</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />and practice papers for Class 6.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
           </div>
           <div className="rmc-basics"><div className="rmc-basics-label"><span>Maths Basics</span><small>Grades 5–10</small></div><div><h3>A little revision goes a long way.</h3><p>Numbers, fractions, algebra and more. Revisit an idea, one step at a time.</p></div><a className="rmc-button rmc-button-outline" href="/maths-basics">Start with the basics<ArrowRight aria-hidden="true" /></a></div>
           <p className="rmc-coming">IGCSE is on the way. CBSE and ICSE are ready to explore.</p>

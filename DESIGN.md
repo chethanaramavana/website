@@ -16,13 +16,15 @@ Use a compact header with Syllabus, Maths Basics, Past papers, Contact and Log i
 
 Keep the hero clear and spacious: a short teaching proposition, supporting copy about chapter notes, worked examples and timed CBSE/ICSE papers, and two actions: “Choose your syllabus” and “Try a free lesson”. Describe the organisation as “run by professional mathematicians”. Use organisation-level attribution throughout; do not name an individual teacher, use “[Name], PhD”, or add teacher biographies. Biodata may be added much later if the owner requests it.
 
+Use direct, useful copy for navigation and syllabus cards. The board section is headed “Choose your board”, without an introductory eyebrow or an extra explanation alongside it. Card descriptions state which materials are available, such as chapter notes, worked examples and practice papers. Avoid vague promises or slogans such as “Your next step”, “exam-ready understanding” and “a strong foundation” in place of information.
+
 Pair the hero with one mathematical artwork panel. The reference shows groups of 1, 3, 6 and 10 dancers forming triangular numbers, with a caption explaining the mathematics. Put the weekly-problem board immediately beneath the hero. Keep Bengaluru location and contact information accessible; retain Terms, Privacy and teacher access in the footer.
 
 ## Crest and header
 
 - Preserve the supplied crest: no recolouring, redrawing, outlines, shadows, effects or cropping of the artwork.
 - The owner explicitly authorises removing the background from `public/ramavana-mark.png` to create a transparent header asset. Preserve the original file and save the transparent export separately. Background removal is the only approved alteration.
-- Use the crest without lettering in the header at 52px. Beside it, set “RAMAVANA” in Baloo Tamma 2, weight 800, letter spacing 0.16em, with “Mathematical Centre” below at 13px.
+- Use the crest without lettering in the header at 52px. The owner subsequently requested serif lettering matching the supplied logo instead of Baloo for “RAMAVANA”. Use a bold classical serif wordmark (Times New Roman/Times), with restrained tracking, and “Mathematical Centre” below at 13px. Keep Baloo for the rest of the interface.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
 - The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
@@ -31,7 +33,7 @@ Pair the hero with one mathematical artwork panel. The reference shows groups of
 
 Load Shrikhand, Baloo Tamma 2 (weights 400–800), and Source Serif 4 (400, 600 and italic) from Google Fonts.
 
-- **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`.
+- **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`. The owner explicitly requested the dark painted-sign offset shadow on the weekly-problem number too.
 - **Baloo Tamma 2:** headings at 800; buttons and menus at 600–700; interface and body text at 400 and 17–18px. Use for Kannada text too.
 - **Source Serif 4:** lesson text, exam-paper prose and teacher remarks. Remarks are italic. Render mathematics through KaTeX, retaining its compatible mathematical fonts for correct symbols and layout.
 
@@ -50,11 +52,7 @@ Use white as the paper surface. Artwork may freely combine ink, red, gold, highl
 
 Buttons are pills with `border-radius: 999px`. Primary buttons have an ink background and white text. Secondary buttons use a 1.5px ink outline.
 
-Highlight one key phrase per screen with:
-
-```css
-background: linear-gradient(transparent 55%, #F4E0AE 55%, #F4E0AE 92%, transparent 92%);
-```
+Highlight one key phrase per screen in `#F4E0AE`. After reviewing the first homepage, the owner requested a subtler treatment instead of the large rectangular band. Use a thin, slightly angled marker stroke tucked behind the lower part of the letters, with no large block extending below the word. Size and position the stroke independently of the font's inline box.
 
 ## Artwork and chapter figures
 
@@ -94,7 +92,7 @@ The requirement for Shrikhand marks across a long report table needs to be recon
 Place a board directly below the homepage hero, on a highlighter panel with a 10px radius. Include:
 
 - “No. n” in Shrikhand red.
-- “THIS WEEK'S PROBLEM · RAMAVANA”, with organisation-level attribution.
+- A prominent “This week’s problem” heading in Baloo at weight 800, approximately 26px on desktop and 24px on mobile, rather than small uppercase eyebrow text. Use organisation-level attribution where attribution is needed.
 - Problem text in Source Serif 4 at 21px, with KaTeX mathematics.
 - Links to earlier problems and their solutions.
 
