@@ -1,3 +1,5 @@
+import LearningHeader from '../learning-header';
+import { SiteFooter } from '../brand';
 import { Archive, FileText, ExternalLink, ShieldCheck } from 'lucide-react';
 
 const previousPaperResources = [
@@ -22,12 +24,12 @@ const previousPaperResources = [
 ] as const;
 
 export default function PreviousPapersPage() {
-  return (<main className="site-shell"><header className="site-header"><a href="/" className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></a><nav className="primary-nav"><a href="/">← Home</a><a href="/#study-library">CBSE &amp; ICSE</a><a href="/maths-basics">Maths Basics</a></nav></header>
+  return (<main className="site-shell"><LearningHeader />
       <section className="previous-papers-section" id="previous-papers" aria-labelledby="previous-papers-title">
         <div className="previous-papers-heading">
           <span className="previous-papers-icon"><Archive /></span>
           <div>
-            <p>Learn from the real pattern</p>
+            <p>Official CBSE resources</p>
             <h1 id="previous-papers-title">Previous CBSE Papers</h1>
             <span>Use authentic board resources to understand question styles, difficulty and marking.</span>
           </div>
@@ -45,5 +47,5 @@ export default function PreviousPapersPage() {
         </div>
         <p className="official-resource-note"><ShieldCheck /> These links open official CBSE resources in a new tab. Ramavana does not copy or alter the original papers.</p>
       </section>
-</main>);
+<SiteFooter /></main>);
 }

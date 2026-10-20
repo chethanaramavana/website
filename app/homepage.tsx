@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import Tex from './notes/tex';
-import { homepageProblem } from '@/lib/homepage-content';
+import WeeklyProblemBoard from './weekly-problem';
 import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
 import HomepageConcepts from './homepage-concepts';
+import Brand, { SiteFooter } from './brand';
 
 export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,10 +14,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
     <div className="identity-home">
       <a className="rmc-skip" href="#main-content">Skip to content</a>
       <header className="rmc-header rmc-container">
-        <a className="rmc-brand" href="/" aria-label="Ramavana Mathematical Centre home">
-          <img src="/ramavana-crest-transparent.png" alt="" width="44" height="44" />
-          <span><strong>Ramavana</strong><small>Mathematical Centre</small></span>
-        </a>
+        <Brand />
         <button className="rmc-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="homepage-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <nav id="homepage-nav" className={`rmc-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation" onClick={() => setMenuOpen(false)}>
           <a href="#syllabus">Syllabus</a><a href="/maths-basics">Maths Basics</a><a href="/previous-papers">Past papers</a><a href="#contact">Contact</a>
@@ -36,14 +34,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
           <HomepageConcepts />
         </section>
 
-        <section className="rmc-weekly" aria-labelledby="weekly-title">
-          <div className="rmc-problem-number" aria-label={`Problem number ${homepageProblem.number}`}>No. {homepageProblem.number}</div>
-          <div className="rmc-problem-content"><h2 id="weekly-title">This week’s problem</h2><p className="rmc-problem-question"><Tex>{homepageProblem.question}</Tex></p>
-            <details className="rmc-solution"><summary>Explore the solution<ArrowRight aria-hidden="true" /></summary><div><p><Tex>{homepageProblem.solution}</Tex></p><p><Tex>{homepageProblem.working}</Tex></p></div></details>
-            <span className="rmc-preview-edition">Preview edition · From our problem notebook</span>
-          </div>
-          <svg className="rmc-problem-sketch" viewBox="0 0 100 100" aria-hidden="true"><defs><pattern id="problem-dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="1" fill="#011E47" opacity=".25" /></pattern></defs><rect width="100" height="100" fill="url(#problem-dots)"/><path d="M18 78H78L48 18Z" fill="none" stroke="#011E47" strokeWidth="1.5"/><path d="M18 78H78V18H18Z" fill="none" stroke="#011E47" strokeWidth="1.5" strokeDasharray="3 4"/></svg>
-        </section>
+        <WeeklyProblemBoard />
 
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
           <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>
@@ -59,7 +50,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
 
         <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a></div></section>
       </main>
-      <footer className="rmc-footer rmc-container"><div><span lang="kn">ರಾಮವನ</span><p>Mathematical Centre · Bengaluru</p></div><nav aria-label="Footer navigation"><a href="/teacher">Teacher log in</a><a href="/terms">Terms</a><a href="/privacy-policy">Privacy</a></nav><small>© 2026 Ramavana</small></footer>
+      <SiteFooter />
     </div>
   );
 }

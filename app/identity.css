@@ -29,12 +29,12 @@
 .rmc-nav>a { font-size: 16px; font-weight: 600; text-decoration: none; white-space: nowrap; }
 .rmc-nav>a:not(.rmc-button):hover { text-decoration: underline; text-underline-offset: 5px; }
 .rmc-menu-toggle { display: none; }
-.identity-home .rmc-button { display: inline-flex; justify-content: center; align-items: center; gap: 20px; min-height: 50px; padding: 12px 23px 9px; border: 1.5px solid var(--rmc-ink); border-radius: 999px; background: var(--rmc-ink); color: white; font: 600 17px/1.4 var(--rmc-interface); text-decoration: none; cursor: pointer; transition: background .16s; }
-.identity-home .rmc-button:hover { background: #14375e; }
-.identity-home .rmc-button-outline { color: var(--rmc-ink); background: transparent; }
-.identity-home .rmc-button-outline:hover { background: #f3f6fa; }
+.rmc-button { display: inline-flex; justify-content: center; align-items: center; gap: 20px; min-height: 50px; padding: 12px 23px 9px; border: 1.5px solid var(--rmc-ink); border-radius: 999px; background: var(--rmc-ink); color: white; font: 600 17px/1.4 var(--rmc-interface); text-decoration: none; cursor: pointer; transition: background .16s; }
+.rmc-button:hover { background: #14375e; }
+.rmc-button-outline { color: var(--rmc-ink); background: transparent; }
+.rmc-button-outline:hover { background: #f3f6fa; }
 .rmc-button svg,.rmc-text-link svg { width: 17px; height: 17px; flex: 0 0 auto; margin-top: -3px; }
-.identity-home .rmc-login { min-height: 41px; padding: 8px 19px 5px; font-size: 16px; gap: 15px; }
+.rmc-login { min-height: 41px; padding: 8px 19px 5px; font-size: 16px; gap: 15px; }
 .rmc-hero { display: grid; grid-template-columns: 1.08fr 1fr; gap: 55px; align-items: center; padding-block: 58px 48px; }
 .rmc-eyebrow { display: block; font: 600 12px/1.7 var(--rmc-interface); letter-spacing: .13em; text-transform: uppercase; }
 .rmc-hero h1 { font-size: clamp(42px, 4.15vw, 60px); font-weight: 800; line-height: 1.12; letter-spacing: -.035em; margin: 17px 0 20px; }

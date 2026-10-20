@@ -26,7 +26,7 @@ export type StudentPaymentRecord = {
 };
 
 export type StudentMcqDraft={quizId:string;title:string;path:string;answered:number;total:number;updated:number};
-export type StudentMcqResult={id:string;title:string;score:number;total:number;submitted:string};
+export type StudentMcqResult={id:string;quizId?:string;title:string;score:number;total:number;submitted:string};
 export type StudentRecordsPayload = {
   mcqDrafts:StudentMcqDraft[];
   mcqResults:StudentMcqResult[];
@@ -54,7 +54,7 @@ export async function getStudentRecordsForUser(user: RequestUser): Promise<Stude
     db.prepare('SELECT id,quiz_id,score,total,submitted_at FROM free_quiz_attempts WHERE user_id=? ORDER BY submitted_at DESC LIMIT 100').bind(user.userId).all<{id:string;quiz_id:string;score:number;total:number;submitted_at:string}>(),
   ]);
   const mcqDrafts=drafts.results.flatMap(row=>{const q=freeQuizzes.find(q=>q.id===row.quiz_id);const state=JSON.parse(row.state_json);if(!q||state.submitted||!Object.keys(state.answers||{}).length||quizResults.results.some(r=>r.id===state.attemptId))return [];return [{quizId:q.id,title:`Grade ${q.grade} · ${q.title}`,path:q.path,answered:Object.keys(state.answers).length,total:q.questions.length,updated:row.updated_at_ms}];});
-  const mcqResults=quizResults.results.map(row=>({id:row.id,title:freeQuizzes.find(q=>q.id===row.quiz_id)?.title||'Chapter MCQ',score:row.score,total:row.total,submitted:row.submitted_at}));
+  const mcqResults=quizResults.results.map(row=>({id:row.id,quizId:row.quiz_id,title:freeQuizzes.find(q=>q.id===row.quiz_id)?.title||'Chapter MCQ',score:row.score,total:row.total,submitted:row.submitted_at}));
   const latestPayments = [...new Map(payments.results.map((payment) => [payment.paper_id, payment])).values()];
   const access = new Set(latestPayments.map((row) => row.paper_id));
   for (const submission of submissions.results) access.add(submission.paper_id);

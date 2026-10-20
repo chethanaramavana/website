@@ -133,3 +133,12 @@ export const mcqDrafts=sqliteTable('mcq_drafts',{
  userId:text('user_id').notNull(),quizId:text('quiz_id').notNull(),
  stateJson:text('state_json').notNull(),revision:integer('revision').notNull(),updatedAtMs:integer('updated_at_ms').notNull(),
 },table=>[primaryKey({columns:[table.userId,table.quizId]})]);
+
+export const weeklyProblems = sqliteTable('weekly_problems', {
+  number: integer('number').primaryKey(),
+  question: text('question').notNull(),
+  solution: text('solution').notNull(),
+  published: integer('published').notNull().default(0),
+  solutionVisible: integer('solution_visible').notNull().default(0),
+  updatedAt: text('updated_at').notNull().default(sql`CURRENT_TIMESTAMP`),
+});

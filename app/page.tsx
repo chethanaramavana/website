@@ -1,4 +1,9 @@
 'use client';
+import LearningHeader from './learning-header';
+import { SiteFooter } from './brand';
+import ChapterFigure from './chapter-figure';
+import KaprekarToy from './kaprekar-toy';
+import { quizListings } from '@/lib/free-quizzes/catalog';
 import { quizPrice } from '@/lib/free-quizzes/catalog';
 import { useTestActivity } from '@/app/student-activity';
 
@@ -347,9 +352,11 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   const initialPaper = initialChapter && initialGrade && initialBoard ? getPaperForChapter(initialBoard, initialGrade, initialChapter) : null;
   const [board, setBoard] = useState<BoardName | null>(initialBoard);
   const [grade, setGrade] = useState<number | null>(initialGrade);
-  const [chapter, setChapter] = useState<string | null>(initialPaper ? null : initialChapter);
+  const [chapter, setChapter] = useState<string | null>(initialChapter);
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
-  const [requestedPaperId, setRequestedPaperId] = useState<string | null>(initialPaper?.id ?? null);
+  const [requestedPaperId, setRequestedPaperId] = useState<string | null>(null);
+  const [takingPaper, setTakingPaper] = useState(false);
+  useEffect(() => { if (initialPaper && new URLSearchParams(window.location.search).has('paper')) { setChapter(null); setRequestedPaperId(initialPaper.id); } }, []);
   const [routePaymentChapter, setRoutePaymentChapter] = useState<string | null>(null);
 
   const loadStudentRecords = useCallback(async () => {
@@ -374,6 +381,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
     if (requestedPaper && studentRecords.signedIn && hasAccess) {
       setBoard(requestedPaper.board ?? 'CBSE');
       setGrade(requestedPaper.grade ?? 10);
+      setTakingPaper(true);
       setChapter(requestedPaper.chapter);
     } else {
       setRoutePaymentChapter(requestedPaper?.chapter ?? null);
@@ -387,6 +395,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }
 
   function clearRequestedPaper() {
+    setTakingPaper(false);
     setRequestedPaperId(null);
     setRoutePaymentChapter(null);
   }
@@ -420,7 +429,8 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }
 
   function openChapter(nextChapter: string) {
-    if (board && grade !== null) updateAddress(chapterPath(board, grade, nextChapter));
+    if (board && grade !== null) updateAddress(`${chapterPath(board, grade, nextChapter)}?paper=1`);
+    setTakingPaper(true);
     setChapter(nextChapter);
     requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'auto' }));
   }
@@ -463,10 +473,11 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         studentRecords.access.includes(nextPaper.id)
         || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
       );
-      if (nextPaper && !hasAccess) {
+      if (nextPaper && new URLSearchParams(window.location.search).has('paper') && !hasAccess) {
         setChapter(null);
         setRoutePaymentChapter(nextChapter);
       } else {
+        setTakingPaper(new URLSearchParams(window.location.search).has('paper') && !!hasAccess);
         setChapter(nextChapter);
       }
     };
@@ -478,30 +489,14 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
 
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <button className="brand-lockup" type="button" onClick={goHome} aria-label="Ramavana home">
-          <span className="brand-mark"><img src="/ramavana-mark.png" alt="Ramavana logo" width="256" height="256" decoding="async" /></span>
-          <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
-        </button>
-        <nav className="primary-nav" aria-label="Main navigation">
-          <a href="/#syllabus">CBSE &amp; ICSE</a>
-          <a href="/maths-basics">Maths Basics</a>
-          <a href="/previous-papers">Previous Papers</a>
-          <a href="#help-desk">Help Desk</a>
-        </nav>
-        <div className="account-links">
-          <a className="teacher-login-link" href="/teacher"><ShieldCheck /><span>Teacher Login</span></a>
-          <a className="student-login-link" href="/student" aria-label="My tests and saved answers"><UserRound /><span>{studentRecords?.signedIn ? 'My tests' : 'Student Login'}</span></a>
-          {studentRecords?.signedIn && <a className="student-logout-link" href="/api/auth/signout?return_to=%2F" aria-label="Sign out"><LogOut /><span>Logout</span></a>}
-        </div>
-      </header>
+      <LearningHeader signedIn={studentRecords?.signedIn ?? false} />
 
       {grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
+        <ChaptersView onBrowseChapter={(name) => { clearRequestedPaper(); if (board && grade) updateAddress(chapterPath(board, grade, name)); setChapter(name); window.scrollTo({top: 0}); }} board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
-        <ChapterView board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
+        <ChapterView takingPaper={takingPaper} onStartPaper={() => { setRoutePaymentChapter(chapter); setChapter(null); }} board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
@@ -543,14 +538,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         </section>
       )}
 
-      <footer className="site-footer">
-        <div className="footer-brand"><strong>Ramavana Mathematical Centre</strong><span>Learn · Practise · Progress</span><a href="/">ramavanamath.com</a></div>
-        <nav className="footer-links" aria-label="Legal information">
-          <a className="legal-link" href="/terms">Terms &amp; Conditions</a>
-          <a className="legal-link" href="/privacy-policy">Privacy Policy</a>
-        </nav>
-        <span className="footer-copy">© 2026 Ramavana</span>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
@@ -567,7 +555,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>4 folders</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>4 grades</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
@@ -593,7 +581,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
         </section>
       ) : isIcse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>1 folder</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>1 grade</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
@@ -635,7 +623,7 @@ declare global {
   }
 }
 
-function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords }: { board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
+function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords, onBrowseChapter }: { onBrowseChapter: (chapter: string) => void; board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
@@ -801,7 +789,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         prefill: { name, email: studentRecords.email },
         hidden: { contact: true, email: true },
         notes: { chapter: selectedPaper.chapter },
-        theme: { color: '#5936a7' },
+        theme: { color: '#011E47' },
         modal: { ondismiss: () => {
           setRazorpayStatus('verifying');
           setPaymentMessage('Checkout closed. Automatically checking whether a payment completed…');
@@ -871,16 +859,16 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? 'CISCE Upper Primary · ' : ''}Chapter folders</span></div>
+        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? 'CISCE Upper Primary · ' : ''}Chapters</span></div>
       </section>
       <section className="folder-content">
-        <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} folders</span></div>
+        <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>
         <div className="chapter-grid">
           {chapters.map((item, index) => (
-            <button key={item} className="chapter-folder" type="button" onClick={() => openChapter(item)}>
-              <span className="chapter-folder-icon"><Folder /></span>
+            <button key={item} className="chapter-folder" type="button" onClick={() => onBrowseChapter(item)}>
+              <ChapterFigure title={item} />
               <span className="chapter-number">Chapter {String(index + 1).padStart(2, '0')}</span>
-              <strong>{item}</strong>
+              <strong>{item}</strong><span className="chapter-card-status">{getPaperForChapter(board, grade, item) ? 'Notes & practice' : board === 'CBSE' && grade === 12 && item === 'Integrals' ? 'Notes & practice' : 'Materials coming soon'}</span>
               <ChevronRight />
             </button>
           ))}
@@ -920,7 +908,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
               {studentRecords === null ? (
                 <div className="student-payment-loading"><Loader2 /><span>Checking login and chapter access…</span></div>
               ) : !studentRecords.signedIn ? (
-                <a className="student-payment-login google-login-action" href="/api/auth/google?return_to=%2Fstudent"><UserRound /><span><strong>Continue with Google</strong><small>We use only your Google account email to identify your student account.</small></span><ChevronRight /></a>
+                <a className="student-payment-login google-login-action" href={`/api/auth/google?return_to=${encodeURIComponent(chapterPath(board, grade, pendingChapter ?? '') + '?paper=1')}`}><UserRound /><span><strong>Continue with Google</strong><small>We use only your Google account email to identify your student account.</small></span><ChevronRight /></a>
               ) : completedSubmission ? (
                 <div className="completed-paper-card">
                   <CheckCircle2 />
@@ -950,24 +938,22 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   );
 }
 
-function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters }: { board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
+function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takingPaper, onStartPaper }: { takingPaper: boolean; onStartPaper: () => void; board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const paper = getPaperForChapter(board, grade, chapter);
-  if (paper && (paper.grade ?? 10) === grade) {
+  if (takingPaper && paper && (paper.grade ?? 10) === grade) {
     return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
 
   return (
     <div className="content-view">
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}`, onClick: onChapters }, { label: chapter }]} onHome={onHome} />
-      <section className="chapter-empty-view">
-        <span className="chapter-open-icon"><FolderOpen /></span>
-        <p>Grade {grade} · {board} Mathematics</p>
-        <h1>{chapter}</h1>
-        <div className="gold-rule" />
-        <strong>Chapter folder created</strong>
-        <span>Question sets will be added here next.</span>
-        <button type="button" onClick={onChapters}><ArrowLeft /> Back to chapters</button>
+      <section className="chapter-overview-heading"><div><p className="rmc-eyebrow">{board} · Grade {grade} · Chapter {chaptersFor(board, grade).indexOf(chapter) + 1}</p><h1>{chapter}</h1><p>Choose what you want to work on.</p></div><ChapterFigure title={chapter} /></section>
+      <section className="chapter-resource-grid" aria-label="Chapter materials">
+        {paper ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-01$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={onStartPaper}><FileText /><span className="rmc-eyebrow">90 minutes · 40 marks</span><h2>Written practice paper</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button></> : board === 'CBSE' && grade === 12 && chapter === 'Integrals' ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Open chapter notes, practice papers and worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
+        {board === 'CBSE' && quizListings.filter(q => q.grade === grade && q.title === chapter).map(q => <a key={q.id} className="chapter-resource" href={q.path}><CheckCircle2 /><span className="rmc-eyebrow">50 questions · {quizPrice(q.chapter, q.grade) === 0 ? 'Free' : `₹${quizPrice(q.chapter, q.grade)/100}`}</span><h2>MCQ practice</h2><p>Saved answers, instant marks and worked solutions after submission.</p><span className="rmc-card-action">Start the quiz <ArrowRight /></span></a>)}
       </section>
+      {board === 'CBSE' && grade === 6 && chapter === 'Number Play' && <KaprekarToy />}
+
     </div>
   );
 }

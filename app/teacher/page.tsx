@@ -248,13 +248,13 @@ export default function TeacherReviewPage() {
     <main className="teacher-shell">
       <header className="teacher-header">
         <a href="/"><ArrowLeft /> Student website</a>
-        <div><p>Ramavana Mathematical Center</p><h1>Teacher review</h1></div>
+        <div><p>Ramavana Mathematical Centre</p><h1>Teacher review</h1></div>
         <button type="button" onClick={() => void loadList()} aria-label="Refresh submissions"><RefreshCw /></button>
       </header>
 
       {message && <div className="teacher-message" aria-live="polite">{message}</div>}
 
-      <nav className="teacher-mode-nav" aria-label="Teacher workspace">
+      <nav className="teacher-mode-nav" aria-label="Teacher workspace"><a href="/teacher/weekly-problems" style={{padding:12,fontWeight:700}}>Weekly problems</a>
         <a href="/maths-basics" style={{padding:"12px 18px",fontWeight:700}}>Verify Maths Step by Step</a>
         <a href="/teacher/free-mcq" style={{padding:'12px 18px',fontWeight:700}}>MCQ results</a>
         <button className={teacherView === 'reviews' ? 'active' : ''} type="button" onClick={() => setTeacherView('reviews')}><FileText /> Student tests</button>
