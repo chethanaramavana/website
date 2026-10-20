@@ -170,3 +170,10 @@ Verification: local student opens a timed written paper and can save an MCQ answ
 ### Notes alignment and paper timing
 
 Use SVG warning marks instead of punctuation glyphs in notes. On screen, notes footers follow the content with a clear gap; keep their print positioning. Centre arrow and breadcrumb icons optically with Baloo labels. The paper timer sits in a compact sticky upper-right status row. Its time warning shares that row, offers a dismiss button and clears after twelve seconds independently of the per-second clock updates.
+
+
+### Teacher workspace
+
+Student tests is the default view. Keep Activity, Payments and Question papers in compact navigation beside MCQ results, weekly problems and Maths Basics. Navigation controls are 36px high with optically centred labels; secondary refresh controls are 34px. Use rectangular submission cards with separate student/status, chapter, metadata and score rows, and filters for all, to review and marked papers. Marking stays beside the queue on desktop and below it on mobile.
+
+Payment requests show pending manual payments first; completed payments live under collapsed history. Keep PhonePe verification guidance and automatic Razorpay verification distinct. Never expose manual approval for Razorpay orders. Activity has a prominent All MCQ results action and a small Refresh control. Use ink, neutral borders, quiet grey panels and the shared interface font throughout. Teacher dates use IST, including the 24-hour review deadline.

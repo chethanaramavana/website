@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, BookOpen, Check, CheckCircle2, CreditCard, FileText, Loader2, Pencil, RefreshCw, Save, ShieldCheck, X } from 'lucide-react';
-import { getBasicsProduct } from '@/lib/basics-catalog';
+import { ArrowLeft, BookOpen, CheckCircle2, FileText, Loader2, Pencil, RefreshCw, Save } from 'lucide-react';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
 import SolutionSteps from '@/app/solution-steps';
 import StudentActivity from './student-activity';
+import PaymentRequests from './payment-requests';
+import { teacherDate } from './teacher-date';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
@@ -72,7 +73,8 @@ export default function TeacherReviewPage() {
   const [saving, setSaving] = useState(false);
   const [paymentAction, setPaymentAction] = useState('');
   const [message, setMessage] = useState('');
-  const [teacherView, setTeacherView] = useState<'reviews' | 'papers'>('reviews');
+  const [teacherView, setTeacherView] = useState<'reviews' | 'papers' | 'activity' | 'payments'>('reviews');
+  const [submissionFilter, setSubmissionFilter] = useState<'all' | 'review' | 'marked'>('all');
   const [papers, setPapers] = useState<PaperDefinition[]>([]);
   const [editingPaper, setEditingPaper] = useState<PaperDefinition | null>(null);
   const [paperAnswerKeys, setPaperAnswerKeys] = useState<Record<string, Record<number, number>>>({});
@@ -248,79 +250,43 @@ export default function TeacherReviewPage() {
     <main className="teacher-shell">
       <header className="teacher-header">
         <a href="/"><ArrowLeft /> Student website</a>
-        <div><p>Ramavana Mathematical Centre</p><h1>Teacher review</h1></div>
+        <div><p>Ramavana Mathematical Centre</p><h1>Teacher workspace</h1></div>
         <button type="button" onClick={() => void loadList()} aria-label="Refresh submissions"><RefreshCw /></button>
       </header>
 
       {message && <div className="teacher-message" aria-live="polite">{message}</div>}
 
-      <nav className="teacher-mode-nav" aria-label="Teacher workspace"><a href="/teacher/weekly-problems" style={{padding:12,fontWeight:700}}>Weekly problems</a>
-        <a href="/maths-basics" style={{padding:"12px 18px",fontWeight:700}}>Verify Maths Step by Step</a>
-        <a href="/teacher/free-mcq" style={{padding:'12px 18px',fontWeight:700}}>MCQ results</a>
-        <button className={teacherView === 'reviews' ? 'active' : ''} type="button" onClick={() => setTeacherView('reviews')}><FileText /> Student tests</button>
-        <button className={teacherView === 'papers' ? 'active' : ''} type="button" onClick={() => void openPaperLibrary()}><Pencil /> Question papers</button>
+      <nav className="teacher-mode-nav" aria-label="Teacher workspace">
+        <button className={teacherView === 'reviews' ? 'active' : ''} aria-pressed={teacherView === 'reviews'} type="button" onClick={() => setTeacherView('reviews')}><FileText /><span>Student tests</span></button>
+        <button className={teacherView === 'activity' ? 'active' : ''} aria-pressed={teacherView === 'activity'} type="button" onClick={() => setTeacherView('activity')}><span>Activity</span></button>
+        <button className={teacherView === 'payments' ? 'active' : ''} aria-pressed={teacherView === 'payments'} type="button" onClick={() => setTeacherView('payments')}><span>Payments</span>{payments.some(p => p.status === 'pending' && p.payment_source === 'manual') && <b>{payments.filter(p => p.status === 'pending' && p.payment_source === 'manual').length}</b>}</button>
+        <button className={teacherView === 'papers' ? 'active' : ''} aria-pressed={teacherView === 'papers'} type="button" onClick={() => void openPaperLibrary()}><Pencil /><span>Question papers</span></button>
+        <a href="/teacher/free-mcq"><span>MCQ results</span></a>
+        <a href="/teacher/weekly-problems"><span>Weekly problems</span></a>
+        <a href="/maths-basics"><span>Maths Basics</span></a>
       </nav>
 
-      {teacherView === 'reviews' && <StudentActivity />}
-      <section className={`payment-review-section ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`} aria-labelledby="payment-review-title">
-        <header>
-          <div><p>Test access</p><h2 id="payment-review-title">Payment requests</h2></div>
-          <span>{payments.filter((payment) => payment.status === 'pending' && payment.payment_source === 'manual').length} waiting for review</span>
-        </header>
-        <div className="payment-review-warning"><ShieldCheck /><span><strong>Review only manual QR payments.</strong> Match those ₹30 credits with PhonePe before approving. Razorpay orders are checked automatically and cannot be approved here.</span></div>
-        {loading ? <div className="teacher-loading"><Loader2 /> Loading payment requests…</div> : payments.length === 0 ? (
-          <div className="payment-review-empty"><CreditCard /><span>No payment requests yet.</span></div>
-        ) : (
-          <div className="payment-request-list">
-            {payments.filter((payment) => !(payment.payment_source === 'razorpay' && payment.status === 'pending')).map((payment) => (
-              <article key={payment.id} className={`payment-request-card ${payment.status}`}>
-                <div className="payment-request-copy">
-                  <span className="payment-request-status">{payment.payment_source === 'razorpay' ? `Razorpay · ${payment.status}` : payment.status}</span>
-                  <strong>{payment.student_name}</strong>
-                  <small>{getBasicsProduct(payment.paper_id)?.title ?? paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small>
-                </div>
-                <div className="payment-transaction"><span>{payment.payment_source === 'razorpay' ? 'Razorpay order' : 'Transaction ID'}</span><strong>{payment.transaction_id}</strong><small>₹{(payment.amount_paise / 100).toFixed(0)}</small></div>
-                {payment.status === 'pending' && payment.payment_source === 'manual' ? (
-                  <div className="payment-review-actions">
-                    <button type="button" className="reject" onClick={() => void reviewPayment(payment.id, 'rejected')} disabled={paymentAction === payment.id}><X /> Reject</button>
-                    <button type="button" className="approve" onClick={() => void reviewPayment(payment.id, 'approved')} disabled={paymentAction === payment.id}>{paymentAction === payment.id ? <Loader2 /> : <Check />} Approve</button>
-                  </div>
-                ) : payment.status === 'pending' ? (
-                  <span className="payment-reviewed pending"><Loader2 /> Automatic verification</span>
-                ) : <span className={`payment-reviewed ${payment.status}`}>{payment.status === 'approved' ? <Check /> : <X />}{payment.status}</span>}
-              </article>
-            ))}
-            {payments.some((payment) => payment.payment_source === 'razorpay' && payment.status === 'pending') && (
-              <details className="pending-online-payments">
-                <summary>Pending online payments</summary>
-                <p>Checked automatically. No teacher action is needed.</p>
-                {payments.filter((payment) => payment.payment_source === 'razorpay' && payment.status === 'pending').map((payment) => (
-                  <div key={payment.id} className="pending-online-payment-row">
-                    <span>{payment.student_name}<small>{getBasicsProduct(payment.paper_id)?.title ?? paperReviews[payment.paper_id]?.title ?? 'Chapter test'} · {new Date(payment.created_at).toLocaleString()}</small></span>
-                    <span>{payment.transaction_id}</span>
-                    <span>₹{(payment.amount_paise / 100).toFixed(0)} · Pending</span>
-                  </div>
-                ))}
-              </details>
-            )}
-          </div>
-        )}
-      </section>
+      {teacherView === 'activity' && <StudentActivity />}
+      {teacherView === 'payments' && <PaymentRequests payments={payments} loading={loading} paymentAction={paymentAction} onReview={reviewPayment} />}
 
       <div className={`teacher-workspace ${teacherView !== 'reviews' ? 'teacher-hidden' : ''}`}>
         <aside className="submission-list" aria-label="Student submissions">
-          <div className="submission-list-heading"><strong>Submitted tests</strong><span>{submissions.length}</span></div>
+          <div className="submission-list-heading"><div><strong>Student tests</strong><p>Choose a paper to mark.</p></div><span>{submissions.length}</span></div>
+          <div className="submission-filters" aria-label="Filter submissions">
+            {(['all', 'review', 'marked'] as const).map(filter => <button key={filter} type="button" aria-pressed={submissionFilter === filter} onClick={() => setSubmissionFilter(filter)}>{filter === 'all' ? 'All' : filter === 'review' ? 'To review' : 'Marked'}<span>{submissions.filter(s => filter === 'all' || (filter === 'marked' ? s.status === 'marked' : s.status !== 'marked')).length}</span></button>)}
+          </div>
           {loading ? <div className="teacher-loading"><Loader2 /> Loading submissions…</div> : submissions.length === 0 ? (
             <div className="teacher-empty"><FileText /><strong>No tests submitted yet</strong><span>Completed student papers will appear here.</span></div>
-          ) : submissions.map((submission) => (
-            <button key={submission.id} type="button" className={selectedId === submission.id ? 'active' : ''} onClick={() => void openSubmission(submission.id)}>
-              <span><strong>{submission.student_name}</strong><small>{paperReviews[submission.paper_id]?.title ?? 'Chapter test'}</small></span>
-              <em className={submission.status}>{submission.status === 'marked' ? 'Marked' : 'Review'}</em>
-              <small>{new Date(submission.submitted_at).toLocaleString()}</small>
-              {submission.status !== 'marked' && <small className="teacher-review-due">Review by {new Date(new Date(submission.submitted_at).getTime() + 24 * 60 * 60 * 1000).toLocaleString()} (within 24 hours)</small>}
-              <b>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</b>
-            </button>
-          ))}
+          ) : <div className="submission-cards">{submissions.filter(s => submissionFilter === 'all' || (submissionFilter === 'marked' ? s.status === 'marked' : s.status !== 'marked')).map((submission) => {
+            const paper = paperDefinitionsById[submission.paper_id];
+            return <button key={submission.id} type="button" className={`submission-card ${selectedId === submission.id ? 'active' : ''}`} aria-pressed={selectedId === submission.id} onClick={() => void openSubmission(submission.id)}>
+              <span className="submission-card-top"><strong>{submission.student_name}</strong><em className={submission.status}>{submission.status === 'marked' ? 'Marked' : 'To review'}</em></span>
+              <span className="submission-card-chapter">{paper?.chapter ?? 'Chapter test'}</span>
+              <span className="submission-card-meta">{paper?.board ?? 'CBSE'} · Grade {paper?.grade ?? 10} · Paper {paper?.paperNumber ?? '01'}</span>
+              <span className="submission-card-bottom"><time>{teacherDate(submission.submitted_at)}</time><b>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</b></span>
+              {submission.status !== 'marked' && <span className="teacher-review-due">Review by {teacherDate(submission.submitted_at, 24)}</span>}
+            </button>;
+          })}{!submissions.some(s => submissionFilter === 'all' || (submissionFilter === 'marked' ? s.status === 'marked' : s.status !== 'marked')) && <p className="submission-filter-empty">{submissionFilter === 'review' ? 'All caught up. No papers waiting for review.' : 'No marked papers yet.'}</p>}</div>}
         </aside>
 
         <section className="review-panel">

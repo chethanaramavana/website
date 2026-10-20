@@ -1,3 +1,4 @@
+import './teacher.css';
 import { requireGoogleUser } from '@/app/google-auth';
 import { isTeacherEmail } from '@/lib/identity';
 import LearningHeader from '../learning-header';
