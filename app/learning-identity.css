@@ -47,8 +47,8 @@
 @media(max-width:1000px) { .identity-learning .basics-folders { grid-template-columns:repeat(2,minmax(0,1fr)); } .identity-learning .basics-learning { grid-template-columns:230px minmax(0,1fr); gap:24px; } }
 @media(max-width:760px) { .identity-learning .basics-learning { grid-template-columns:1fr; } .identity-learning .basics-concept-menu ol { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); } }
 @media(max-width:600px) { .identity-learning .basics-folders { grid-template-columns:1fr; } .identity-learning .basics-folder { display:grid; grid-template-columns:40px 1fr; column-gap:14px; padding:20px; } .identity-learning .basics-folder h3 { margin:0; } .identity-learning .basics-folder p,.identity-learning .basics-folder>span { grid-column:2; } .rmc-footer .rmc-footer-top { align-items:start; } }
-.rmc-brand .rmc-wordmark-stack { display:flex; flex-direction:column; gap:4px; }
-.rmc-brand .rmc-wordmark-stack small { font:600 10px/1 'Source Serif 4',serif; letter-spacing:.1em; text-transform:uppercase; padding:0; }
+.rmc-brand .rmc-wordmark-stack { display:flex; flex-direction:column; align-items:center; gap:4px; }
+.rmc-brand .rmc-wordmark-stack small { font:600 9px/1 'Source Serif 4',serif; letter-spacing:.07em; text-transform:uppercase; padding:0; text-align:center; white-space:nowrap; }
 .rmc-footer-logo { display:inline-block; }
 .rmc-footer-logo img { width:120px; height:120px; object-fit:contain; }
 .google-sign-in { display:inline-flex; align-items:center; justify-content:center; padding:0!important; border:0!important; background:transparent!important; box-shadow:none!important; border-radius:999px; width:180px; height:40px; }
