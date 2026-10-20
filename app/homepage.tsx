@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import Tex from './notes/tex';
 import { homepageProblem } from '@/lib/homepage-content';
+import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
 
 export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,11 +26,11 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
       <main id="main-content" className="rmc-container">
         <section className="rmc-hero" aria-labelledby="homepage-title">
           <div className="rmc-hero-copy">
-            <p className="rmc-eyebrow">A mathematical centre. A curious mind.</p>
-            <h1 id="homepage-title">Make sense<br />of the <span className="rmc-highlight">maths.</span></h1>
-            <p className="rmc-intro">Chapter notes, worked examples and timed papers for CBSE and ICSE. Room to ask why, and the steps to understand how.</p>
+            <p className="rmc-authority">Run by professional mathematicians.</p>
+            <h1 id="homepage-title">Understand the maths.<br />Prepare for the <span className="rmc-highlight">exam.</span></h1>
+            <p className="rmc-intro">Chapter notes explain the concepts. Worked examples show the steps. Exam-style papers give your child a chance to practise before the real test.</p>
             <div className="rmc-actions"><a className="rmc-button" href="#syllabus">Choose your syllabus<ArrowDown aria-hidden="true" /></a><a className="rmc-text-link" href="/maths-basics/numbers">Try a free lesson<ArrowUpRight aria-hidden="true" /></a></div>
-            <p className="rmc-byline">Run by professional mathematicians.<br />Made for the way you learn.</p>
+            <p className="rmc-curriculum-note">For CBSE and ICSE students.</p>
           </div>
           <figure className="rmc-hero-figure">
             <div className="rmc-art-panel"><img src="/artwork/triangular-dancers.webp" alt="Ten white geometric dancers in rows of one, two, three and four, beneath a gold sun on a navy background" width="1536" height="1024" fetchPriority="high" /></div>
@@ -49,17 +50,14 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
           <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>
           <div id="study-library" className="rmc-board-grid">
-            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
-            <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grade 6</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />and practice papers for Class 6.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
+            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />{' '}and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
+            <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grade 6</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />{' '}and practice papers for Class 6.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
           </div>
-          <div className="rmc-basics"><div className="rmc-basics-label"><span>Maths Basics</span><small>Grades 5–10</small></div><div><h3>A little revision goes a long way.</h3><p>Numbers, fractions, algebra and more. Revisit an idea, one step at a time.</p></div><a className="rmc-button rmc-button-outline" href="/maths-basics">Start with the basics<ArrowRight aria-hidden="true" /></a></div>
           <p className="rmc-coming">IGCSE is on the way. CBSE and ICSE are ready to explore.</p>
         </section>
 
-        <section className="rmc-learning" aria-labelledby="learning-title">
-          <div className="rmc-section-heading"><div><p className="rmc-eyebrow">Understanding comes first</p><h2 id="learning-title">More than getting the answer.</h2></div><a className="rmc-text-link" href="/maths-basics/numbers">See a lesson<ArrowUpRight aria-hidden="true" /></a></div>
-          <div className="rmc-learning-grid"><article><span className="rmc-step">01 / READ</span><h3>Find the idea.</h3><p>Clear notes and precise diagrams make room for the question behind the rule.</p></article><article><span className="rmc-step">02 / WORK IT THROUGH</span><h3>Follow the reasoning.</h3><p>Worked examples connect each step, so the method makes sense.</p></article><article><span className="rmc-step">03 / PRACTISE</span><h3>Make it your own.</h3><p>Try questions, take a timed paper and learn from marks and feedback.</p></article></div>
-        </section>
+        <MathsBasicsFeature />
+        <ParentValueSection />
 
         <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a></div></section>
       </main>

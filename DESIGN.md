@@ -14,24 +14,28 @@ Draw the identity from mathematics and everyday Indian school and craft traditio
 
 Use a compact header with Syllabus, Maths Basics, Past papers, Contact and Log in as the reference navigation, preserving practical access to the existing student and teacher areas.
 
-Keep the hero clear and spacious: a short teaching proposition, supporting copy about chapter notes, worked examples and timed CBSE/ICSE papers, and two actions: “Choose your syllabus” and “Try a free lesson”. Describe the organisation as “run by professional mathematicians”. Use organisation-level attribution throughout; do not name an individual teacher, use “[Name], PhD”, or add teacher biographies. Biodata may be added much later if the owner requests it.
+Keep the hero clear and spacious, with the parent-facing headline “Understand the maths. Prepare for the exam.” Explain the offering concretely: chapter notes explain concepts, worked examples show steps, and exam-style papers provide practice before the real test. Retain “Choose your syllabus” and “Try a free lesson” as the actions. Place “Run by professional mathematicians” prominently above the headline, replacing the previous vague eyebrow and small byline. Use organisation-level attribution throughout; do not name an individual teacher, use “[Name], PhD”, or add teacher biographies. Biodata may be added much later if the owner requests it.
 
 Use direct, useful copy for navigation and syllabus cards. The board section is headed “Choose your board”, without an introductory eyebrow or an extra explanation alongside it. Card descriptions state which materials are available, such as chapter notes, worked examples and practice papers. Avoid vague promises or slogans such as “Your next step”, “exam-ready understanding” and “a strong foundation” in place of information.
 
 Pair the hero with one mathematical artwork panel. The reference shows groups of 1, 3, 6 and 10 dancers forming triangular numbers, with a caption explaining the mathematics. Put the weekly-problem board immediately beneath the hero. Keep Bengaluru location and contact information accessible; retain Terms, Privacy and teacher access in the footer.
 
+Give Maths Basics a substantial standalone section, with the heading “Strengthen the skills your child needs”, specific topics and a clear free-lesson link. Use exact mathematical graphics, such as the same fraction represented by a partitioned bar and a number line, rather than decorative icons.
+
+The parent-value section is headed “Study the chapter. Attempt a paper. Review the marks.” Give exam-style papers the largest panel and illustrate it with an extract from an actual existing paper. Supporting panels explain chapter notes and worked examples, plus marks and feedback. Distinguish automatic MCQ scoring from teacher marking of submitted written papers. Any sample remark must be clearly labelled as an example; do not invent student results, testimonials or guarantees.
+
 ## Crest and header
 
 - Preserve the supplied crest: no recolouring, redrawing, outlines, shadows, effects or cropping of the artwork.
 - The owner explicitly authorises removing the background from `public/ramavana-mark.png` to create a transparent header asset. Preserve the original file and save the transparent export separately. Background removal is the only approved alteration.
-- Use the crest without lettering in the header at 52px. The owner subsequently requested serif lettering matching the supplied logo instead of Baloo for “RAMAVANA”. Use a bold classical serif wordmark (Times New Roman/Times), with restrained tracking, and “Mathematical Centre” below at 13px. Keep Baloo for the rest of the interface.
+- Use the crest without lettering in the header at 52px. The owner approved trying Newsreader at weight 600 for “RAMAVANA”, with restrained tracking and “Mathematical Centre” below at 13px. Trim the header to approximately 80px tall. Keep Baloo for the rest of the interface.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
 - The owner explicitly approved pixel-preserving exterior-background removal after rejecting imagegen's altered result. The local header uses `public/ramavana-crest-transparent.png`, exported from the original header crest by `scripts/extract-crest.py`. Keep the original canvas and RGB values, preserve internal white details, and change exterior alpha only. Use the original full transparent crest on papers and reports.
 
 ## Typography
 
-Load Shrikhand, Baloo Tamma 2 (weights 400–800), and Source Serif 4 (400, 600 and italic) from Google Fonts.
+Load Shrikhand, Baloo Tamma 2 (weights 400–800), Source Serif 4 (400, 600 and italic), and Newsreader (600, for the wordmark only) from Google Fonts.
 
 - **Shrikhand:** numerals and short number labels only, including chapter numbers, scores, “No. 12” and a toy's final answer. At most two Shrikhand items per screen. On light backgrounds use gold `#D9A231` with `text-shadow: 2px 2px 0 #011E47`. Scores and weekly-problem numbers use red `#B0300E`. The owner explicitly requested the dark painted-sign offset shadow on the weekly-problem number too.
 - **Baloo Tamma 2:** headings at 800; buttons and menus at 600–700; interface and body text at 400 and 17–18px. Use for Kannada text too.
