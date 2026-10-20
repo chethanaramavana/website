@@ -644,7 +644,7 @@
     {
       "q": "Evaluate $\\int x^3\\ln x\\,dx$, $x>0$.",
       "a": "$\\frac{x^4}{4}\\ln x-\\frac{x^4}{16}+C$",
-      "s": "Choose $u=\\ln x$, $dv=x^3\\,dx$, so $du=dx/x$ and $v=x^4/4$. [1 mark] By parts, $$I=\\frac{x^4}{4}\\ln x-\\frac14\\int x^3\\,dx.$$ [1 mark] Therefore $I=\\frac{x^4}{4}\\ln x-\\frac{x^4}{16}+C$. [1 mark]",
+      "s": "Choose $u=\\ln x$, $dv=x^3\\,dx$, so $du=\\frac{dx}{x}$ and $v=\\frac{x^4}{4}$. [1 mark] By parts, $$I=\\frac{x^4}{4}\\ln x-\\frac14\\int x^3\\,dx.$$ [1 mark] Therefore $I=\\frac{x^4}{4}\\ln x-\\frac{x^4}{16}+C$. [1 mark]",
       "opts": null,
       "marks": 3,
       "alt": {
@@ -1764,7 +1764,7 @@
       "negative": 1
     },
     {
-      "q": "Let $I=\\int_0^{\\pi/2}\\sin^5x\\cos^3x\\,dx$. Enter $48I$.",
+      "q": "Let $I=\\int_0^{\\frac{\\pi}{2}}\\sin^5 x\\cos^3 x\\,dx$. Enter $48I$.",
       "a": "$2$",
       "s": "Put $u=\\sin x$. Then $$I=\\int_0^1u^5(1-u^2)\\,du=\\frac16-\\frac18=\\frac1{24}.$$ Hence $48I=2$. Correct answer: +4; incorrect: −1; unanswered: 0.",
       "opts": null,
@@ -2263,7 +2263,7 @@
         "$\\ln(1+e^x)+C$"
       ],
       "a": "(C) $2\\sqrt{1+e^x}+C$",
-      "s": "Let $u=1+e^x$, $du=e^x\\,dx$. Thus $$\\int u^{-1/2}\\,du=2\\sqrt u+C=2\\sqrt{1+e^x}+C.$$",
+      "s": "Let $u=1+e^x$, $du=e^x\\,dx$. Thus $$\\int u^{-\\frac{1}{2}}\\,du=2\\sqrt u+C=2\\sqrt{1+e^x}+C.$$",
       "marks": 1,
       "type": "single",
       "negative": 0,
@@ -2375,7 +2375,7 @@
       "alt": null
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/4}\\tan x\\,dx$.",
+      "q": "Evaluate $\\int_0^{\\frac{\\pi}{4}}\\tan x\\,dx$.",
       "opts": [
         "$\\ln2$",
         "$-\\frac12\\ln2$",
@@ -2383,7 +2383,7 @@
         "$\\frac\\pi4$"
       ],
       "a": "(C) $\\frac12\\ln2$",
-      "s": "Since $\\int\\tan x\\,dx=-\\ln|\\cos x|$, $$I=[-\\ln(\\cos x)]_0^{\\pi/4}=-\\ln\\frac1{\\sqrt2}=\\frac12\\ln2.$$",
+      "s": "Since $\\int\\tan x\\,dx=-\\ln|\\cos x|$, $$I=[-\\ln (\\cos x)]_0^{\\frac{\\pi}{4}}=-\\ln \\frac1{\\sqrt2}=\\frac12\\ln 2.$$",
       "marks": 1,
       "type": "single",
       "negative": 0,
@@ -2398,7 +2398,7 @@
         "$\\frac32$"
       ],
       "a": "(D) $\\frac32$",
-      "s": "Let $u=\\ln x$, $du=dx/x$. The limits are $0,1$, giving $$\\int_0^1(1+u)\\,du=\\left[u+\\frac{u^2}{2}\\right]_0^1=\\frac32.$$",
+      "s": "Let $u=\\ln x$, $du=\\frac{dx}{x}$. The limits are $0,1$, giving $$\\int_0^1(1+u)\\,du=\\left[u+\\frac{u^2}{2}\\right]_0^1=\\frac32.$$",
       "marks": 1,
       "type": "single",
       "negative": 0,
@@ -2465,7 +2465,7 @@
       "alt": null
     },
     {
-      "q": "Find $k$ if $\\int_0^{\\pi/2}(k\\sin x+\\cos2x)\\,dx=4$.",
+      "q": "Find $k$ if $\\int_0^{\\frac{\\pi}{2}}(k\\sin x+\\cos 2x)\\,dx=4$.",
       "opts": [
         "$4$",
         "$2$",
@@ -2473,7 +2473,7 @@
         "$3$"
       ],
       "a": "(A) $4$",
-      "s": "Here $\\int_0^{\\pi/2}\\sin x\\,dx=1$ and $\\int_0^{\\pi/2}\\cos2x\\,dx=0$. The given equation reduces to $k=4$.",
+      "s": "Here $\\int_0^{\\frac{\\pi}{2}}\\sin x\\,dx=1$ and $\\int_0^{\\frac{\\pi}{2}}\\cos 2x\\,dx=0$. The given equation reduces to $k=4$.",
       "marks": 1,
       "type": "single",
       "negative": 0,
@@ -2510,7 +2510,7 @@
       "alt": null
     },
     {
-      "q": "Evaluate $\\int_0^{\\pi/2}\\sin^2(2x)\\,dx$.",
+      "q": "Evaluate $\\int_0^{\\frac{\\pi}{2}}\\sin^2 (2x)\\,dx$.",
       "opts": [
         "$\\frac\\pi2$",
         "$\\frac\\pi8$",
@@ -2518,7 +2518,7 @@
         "$\\frac\\pi4$"
       ],
       "a": "(D) $\\frac\\pi4$",
-      "s": "Use $\\sin^2(2x)=\\frac12(1-\\cos4x)$. Then $$I=\\left[\\frac x2-\\frac{\\sin4x}{8}\\right]_0^{\\pi/2}=\\frac\\pi4.$$",
+      "s": "Use $\\sin^2(2x)=\\frac12(1-\\cos4x)$. Then $$I=\\left[\\frac x2-\\frac{\\sin 4x}{8}\\right]_0^{\\frac{\\pi}{2}}=\\frac\\pi4.$$",
       "marks": 1,
       "type": "single",
       "negative": 0,

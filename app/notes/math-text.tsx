@@ -64,6 +64,10 @@ function readLeftOperand(value: string, slashIndex: number): Operand | null {
   if (')]}'.includes(finalCharacter)) {
     let start = findOpeningBracket(value, end - 1);
     if (start < 0) return null;
+    if (start > 0 && value[start - 1] === '^') {
+      const base = readLeftOperand(value, start - 1);
+      if (base) return { start: base.start, end, value: value.slice(base.start, end), grouped: false };
+    }
     let prefixEnd = start;
     while (prefixEnd > 0 && /\s/.test(value[prefixEnd - 1])) prefixEnd -= 1;
     let prefixStart = prefixEnd;
@@ -76,6 +80,10 @@ function readLeftOperand(value: string, slashIndex: number): Operand | null {
   let start = end;
   while (start > 0 && atomCharacter.test(value[start - 1])) start -= 1;
   if (start === end) return null;
+  if (start > 0 && value[start - 1] === '^') {
+    const base = readLeftOperand(value, start - 1);
+    if (base) start = base.start;
+  }
 
   const previousText = value.slice(0, start);
   const functionMatch = previousText.match(/(?:^|\s)(sin|cos|tan|sec|cosec|cot|log|ln)\s+$/);
@@ -93,6 +101,10 @@ function readRightOperand(value: string, slashIndex: number): Operand | null {
     if (closeIndex < 0) return null;
     let end = closeIndex + 1;
     while (end < value.length && superscriptCharacters.has(value[end])) end += 1;
+    if (value[end] === '^') {
+      const exponent = readCaretValue(value, end);
+      if (exponent) end = exponent.end;
+    }
     return { start, end, value: value.slice(start, end), grouped: true };
   }
 
@@ -112,6 +124,10 @@ function readRightOperand(value: string, slashIndex: number): Operand | null {
     end += 1;
   }
   if (end === atomStart) return null;
+  if (value[end] === '^') {
+    const exponent = readCaretValue(value, end);
+    if (exponent) end = exponent.end;
+  }
 
   const functionName = plainAtom(value.slice(start, end));
   if (functionNames.has(functionName)) {
@@ -140,6 +156,7 @@ function plainAtom(value: string) {
 
 function isClearMathOperand(operand: Operand) {
   if (operand.grouped) return true;
+  if (/^[\d\p{L}]+(?:\^(?:\{[^{}]+\}|\([^()]+\)|[\d\p{L}]+))$/u.test(operand.value)) return true;
   const compact = operand.value.replace(/\s+/g, '');
   const base = plainAtom(compact);
   if (!base) return false;
@@ -242,7 +259,8 @@ function readCaretValue(value: string, caretIndex: number) {
     if (closeIndex >= 0) return { value: value.slice(start + 1, closeIndex), end: closeIndex + 1 };
   }
   let end = start;
-  while (end < value.length && !/[\s,;=+×÷<>_^]/.test(value[end])) end += 1;
+  if (value[end] === '-' || value[end] === '−') end += 1;
+  while (end < value.length && !/[\s,;=+×÷<>_^/)\]}−-]/.test(value[end])) end += 1;
   return end > start ? { value: value.slice(start, end), end } : null;
 }
 
