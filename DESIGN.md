@@ -14,7 +14,7 @@ Draw the identity from mathematics and everyday Indian school and craft traditio
 
 Use a compact header with Syllabus, Maths Basics, Past papers, Contact and Log in as the reference navigation, preserving practical access to the existing student and teacher areas.
 
-Keep the hero clear and spacious: a short teaching proposition, supporting copy about chapter notes, worked examples and timed CBSE/ICSE papers, and two actions: “Choose your syllabus” and “Try a free lesson”. The PDF's sample headline is “Maths, taught by a mathematician.” Its “[Name], PhD” attribution is a placeholder: confirm the teacher's preferred name and qualification before publishing those claims.
+Keep the hero clear and spacious: a short teaching proposition, supporting copy about chapter notes, worked examples and timed CBSE/ICSE papers, and two actions: “Choose your syllabus” and “Try a free lesson”. Describe the organisation as “run by professional mathematicians”. Use organisation-level attribution throughout; do not name an individual teacher, use “[Name], PhD”, or add teacher biographies. Biodata may be added much later if the owner requests it.
 
 Pair the hero with one mathematical artwork panel. The reference shows groups of 1, 3, 6 and 10 dancers forming triangular numbers, with a caption explaining the mathematics. Put the weekly-problem board immediately beneath the hero. Keep Bengaluru location and contact information accessible; retain Terms, Privacy and teacher access in the footer.
 
@@ -25,6 +25,7 @@ Pair the hero with one mathematical artwork panel. The reference shows groups of
 - Use the crest without lettering in the header at 52px. Beside it, set “RAMAVANA” in Baloo Tamma 2, weight 800, letter spacing 0.16em, with “Mathematical Centre” below at 13px.
 - Use the supplied full crest with lettering, centred at about 170px wide on plain paper, at the head of every exam paper, report card and certificate. `public/ramavana-paper-logo.png` already has transparency.
 - The owner confirms these represent the same crest, with and without lettering. Choose the appropriate supplied version for each context; do not regenerate the crest with imagegen.
+- In the first local homepage preview, use the existing full transparent crest. The imagegen background-removal attempt changed details and was rejected. A faithful crest-only export can replace it later; pixel-preserving background removal is awaiting the owner's optional preference. The full crest's lettering needs additional image space in the header to keep the emblem legible.
 
 ## Typography
 
@@ -84,16 +85,16 @@ Replace the separate results lists with one report table while retaining access 
 3. Add a ruled identification line with Student, Class and Book. Derive class and book from available student and paper records; do not invent profile values. Where the student spans multiple classes or books, keep the context explicit.
 4. Use one table: Chapter | Paper | Marks | Remark.
 5. Set marks in Shrikhand red and remarks in Source Serif 4 italic red. Set tests not yet taken in `#4E5B70`.
-6. End with “Issued [date]” and the teacher's name above a signature line.
+6. End with “Issued [date]” and “Ramavana Mathematical Centre” above a signature line; do not identify an individual teacher.
 
-The teacher's display name remains to be supplied. The requirement for Shrikhand marks across a long report table needs to be reconciled with the maximum of two Shrikhand items per screen before implementation; preserve both requirements here rather than silently dropping either.
+The requirement for Shrikhand marks across a long report table needs to be reconciled with the maximum of two Shrikhand items per screen before implementation; preserve both requirements here rather than silently dropping either.
 
 ## Weekly problem
 
 Place a board directly below the homepage hero, on a highlighter panel with a 10px radius. Include:
 
 - “No. n” in Shrikhand red.
-- “THIS WEEK'S PROBLEM · SET BY [NAME]”.
+- “THIS WEEK'S PROBLEM · RAMAVANA”, with organisation-level attribution.
 - Problem text in Source Serif 4 at 21px, with KaTeX mathematics.
 - Links to earlier problems and their solutions.
 
@@ -121,13 +122,16 @@ Use Indian English, including “Centre” and “practise”, rupees and day–
 
 Implement and validate coherent milestones, with GitHub pushes as required by `AGENTS.md`. This guide records the redesign; saving it does not itself change or deploy the website interface.
 
+### Current review scope
+
+The owner approved the foundation and homepage first. Develop and review locally at the normal homepage route; a `/v2` route is unnecessary when using local preview. Do not deploy these iterations to Sites. Keep the public site unchanged until the owner requests publication. Once the homepage is approved, extend the design to grades, chapters and the full learning path. The weekly-problem editor and report-card workflow belong to subsequent implementation; label any homepage sample problem as a preview rather than implying that the publishing workflow already exists.
+
 ## Review criteria
 
 Check the homepage, chapter cards, lesson pages, quizzes, exam papers, teacher area and student report at mobile and desktop widths. Confirm readable mathematics, keyboard access, visible focus, colour contrast and reduced-motion behaviour. Preserve crest proportions and transparency. Keep existing student records, payments, draft answers and teacher marking functional.
 
 ## Remaining owner input
 
-- Teacher name for weekly-problem attribution and report signature, and confirmation of any qualification used in homepage copy.
 - Stamp placement: each qualifying paper or overall report.
 - Teacher red-pen samples when available; simple ticks are authorised in the meantime.
 

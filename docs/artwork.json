@@ -1,0 +1,13 @@
+{
+  "tool": "Built-in image_gen imagegen tool",
+  "date": "2026-10-20",
+  "assets": [
+    {
+      "source": "public/artwork/triangular-dancers.png",
+      "webAsset": "public/artwork/triangular-dancers.webp",
+      "prompt": "Use case: illustration-story. Asset type: single decorative artwork panel for Ramavana Mathematical Centre homepage. Create a beautiful restrained Warli-inspired geometric folk-art illustration, white pigment figures on a solid deep ink navy #011E47 background. Landscape composition approx 3:2, generous empty navy margin all sides. The main motif: a joyful triangular arrangement of ten small human figures (one on top row, two second row, three third row, four bottom row) composed from small circle heads, two opposed triangles as bodies, simple arms and legs. A sun in muted gold #D9A231 in the upper right, a few delicate white dotted and geometric accents, simple ground line. Warm, lyrical rhythm but clean and spare. White figures with subtle painted texture, flat graphic editorial finish. Palette ONLY navy #011E47, white, sparse gold #D9A231. No text, letters, numerals, logos, gradients, shadows, photographed paper, UI controls, borders, mandalas, temples, paisley or mascots. Fill the entire rectangular canvas with navy. This is decorative art; the website renders mathematical captions separately.",
+      "verification": "Visually checked: ten figures arranged in rows of 1, 2, 3 and 4. The image is generated artwork, not a commissioned folk-art work. The WebP is a compressed delivery version of the source PNG."
+    }
+  ],
+  "crest": "The imagegen background-removal attempt changed crest details and was rejected. Do not use that generated crest."
+}

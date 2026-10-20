@@ -10,6 +10,10 @@ The GitHub remote is `git@github.com:chethanaramavana/website.git`. Preserve the
 
 Read `DESIGN.md` before changing website aesthetics. Follow later explicit owner decisions when they update the guide. Use imagegen for decorative artwork and exact SVGs for mathematical diagrams. Preserve the crest; background removal from the supplied header crest is explicitly authorised.
 
+For the current redesign, run and review the foundation and homepage locally. Do not publish to Sites until the owner requests deployment. Use the normal homepage route for local iterations; no `/v2` route is needed. Describe the organisation as run by professional mathematicians, with no individual teacher attribution or biodata.
+
+Start local development with `npm run dev -- --host 127.0.0.1 --port 3000` from this folder. Hot reload applies source edits without deployment. If Node is not on PATH, use the bundled Node executable returned by `load_workspace_dependencies` with `node_modules/vinext/dist/cli.js dev --host 127.0.0.1 --port 3000`. Existing public learning routes can be previewed locally; testing production Google sign-in or payment integration requires appropriate local configuration and is separate from homepage visual review.
+
 ## GitHub synchronisation
 
 The owner requests periodic pushes to GitHub during project work. Commit and push after meaningful, validated milestones and at the end of a change session when there are completed changes. For long tasks, push coherent checkpoints rather than leaving a large backlog until the end. This is a working convention, not a scheduled automation.

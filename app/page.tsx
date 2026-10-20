@@ -46,6 +46,7 @@ import MathText from '@/app/notes/math-text';
 import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
 import SolutionSteps from '@/app/solution-steps';
+import Homepage from './homepage';
 
 const boards = [
   { name: 'CBSE', ready: true },
@@ -473,15 +474,17 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
     return () => window.removeEventListener('popstate', handleBackOrForward);
   }, [studentRecords]);
 
+  if (board === null) return <Homepage signedIn={studentRecords?.signedIn ?? false} />;
+
   return (
-    <main className={`site-shell ${board === null ? 'garden-home' : ''}`}>
+    <main className="site-shell">
       <header className="site-header">
         <button className="brand-lockup" type="button" onClick={goHome} aria-label="Ramavana home">
           <span className="brand-mark"><img src="/ramavana-mark.png" alt="Ramavana logo" width="256" height="256" decoding="async" /></span>
           <span className="brand-name"><strong>Ramavana</strong><small>Mathematical Center</small></span>
         </button>
         <nav className="primary-nav" aria-label="Main navigation">
-          <a href="/#study-library">CBSE &amp; ICSE</a>
+          <a href="/#syllabus">CBSE &amp; ICSE</a>
           <a href="/maths-basics">Maths Basics</a>
           <a href="/previous-papers">Previous Papers</a>
           <a href="#help-desk">Help Desk</a>
@@ -493,9 +496,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         </div>
       </header>
 
-      {!board ? (
-        <HomeView onOpenBoard={openBoard} />
-      ) : grade === null ? (
+      {grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
         <ChaptersView board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
@@ -551,44 +552,6 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         <span className="footer-copy">© 2026 Ramavana</span>
       </footer>
     </main>
-  );
-}
-
-function HomeView({ onOpenBoard }: { onOpenBoard: (board: BoardName) => void }) {
-  return (
-    <div className="home-view garden-view">
-      <section className="garden-hero" aria-labelledby="hero-title">
-        <div className="garden-copy">
-          <p className="garden-eyebrow">A little curiosity. A new discovery.</p>
-          <h1 id="hero-title">Maths makes sense,<br/><em>step by step.</em></h1>
-          <p>See the idea. Understand the steps. Build confidence with every question.</p>
-          <a className="garden-button" href="#study-library">Start learning <ArrowRight/></a>
-          <span className="garden-caption">Notes, practice and tests · At your own pace</span>
-        </div>
-        <div className="garden-art"><img src="/maths-garden.webp" alt="Two children exploring mathematics together in a garden with books and geometric shapes" width="1536" height="1024" fetchPriority="high"/></div>
-      </section>
-      <section id="study-library" className="garden-library" aria-labelledby="curriculum-title">
-        <div className="garden-section-heading"><div><p>Your next small step</p><h2 id="curriculum-title">Where shall we begin?</h2></div><span>Choose your board, then your grade.</span></div>
-        <div className="garden-paths">
-          {boards.filter(item => item.ready).map((item, index) => (
-            <button key={item.name} className={`garden-board garden-board-${index}`} type="button" onClick={() => onOpenBoard(item.name)}>
-              <span className="garden-board-top"><BookOpen/><ArrowRight/></span>
-              <h3>{item.name}</h3><p>Explore chapter notes,<br/>practise and test yourself.</p>
-              <span className="garden-grade-label">{item.name === 'CBSE' ? 'Grades 6, 10, 11 & 12' : 'Grade 6'}</span>
-              <svg className="garden-books" viewBox="0 0 270 95" aria-hidden="true"><path d="M30 75 Q85 58 134 76 Q184 58 240 75 L240 27 Q184 9 134 29 Q85 9 30 27Z" fill="#fffdf4" stroke="currentColor" strokeWidth="2"/><path d="M134 29V76M44 38Q84 24 119 40M44 50Q84 36 119 52M150 40Q188 24 224 38M150 52Q188 36 224 50" fill="none" stroke="currentColor" strokeWidth="2" opacity=".5"/><path d="M20 81Q82 66 134 83Q187 66 250 81" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round"/></svg>
-              <strong>Choose your grade <ChevronRight/></strong>
-            </button>
-          ))}
-          <a className="garden-basics" href="/maths-basics"><span className="garden-free">First topic free</span><h3>Make your<br/>basics clear.</h3><p>Numbers, multiplication, fractions or word problems — take it one idea at a time.</p><small>Maths Step by Step · Grades 5–10</small><span className="garden-basics-action">Start free <ArrowRight/></span><span className="garden-symbols" aria-hidden="true">+ &nbsp; − &nbsp; × &nbsp; ÷</span></a>
-        </div>
-        <button className="garden-coming" onClick={() => onOpenBoard('IGCSE')} type="button">IGCSE <span>Coming soon</span><ChevronRight/></button>
-      </section>
-      <section className="garden-discover" aria-labelledby="discover-title"><p className="garden-eyebrow">Pictures make ideas click</p><h2 id="discover-title">Small steps. Strong understanding.</h2><div className="garden-ideas">
-        <div><svg viewBox="0 0 160 110" role="img" aria-label="A circle divided into two equal halves"><path d="M80 10A45 45 0 0 0 80 100Z" fill="#f4ce79"/><circle cx="80" cy="55" r="45" fill="none" stroke="#245d4b" strokeWidth="2"/><path d="M80 10V100" stroke="#245d4b" strokeWidth="2"/></svg><h3>See the concept</h3><p>Pictures and examples bring the idea to life.</p></div>
-        <div><svg viewBox="0 0 160 110" role="img" aria-label="A right-angled triangle"><path d="M30 90V18L135 90Z" fill="#dceee7" stroke="#245d4b" strokeWidth="2"/><path d="M30 74H46V90" fill="none" stroke="#245d4b" strokeWidth="2"/><circle cx="30" cy="18" r="4" fill="#d66a4d"/><circle cx="135" cy="90" r="4" fill="#d66a4d"/></svg><h3>Follow each step</h3><p>Worked examples explain how and why.</p></div>
-        <div><svg viewBox="0 0 160 110" role="img" aria-label="Steps rising from left to right"><path d="M20 95V75H50V55H80V35H110V15H140V95Z" fill="#f4ce79" stroke="#245d4b" strokeWidth="2"/><path d="M50 75V95M80 55V95M110 35V95" stroke="#245d4b" strokeWidth="2"/></svg><h3>Grow with practice</h3><p>Try questions, check answers and keep learning.</p></div>
-      </div></section>
-    </div>
   );
 }
 
