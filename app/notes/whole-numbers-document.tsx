@@ -40,7 +40,7 @@ const checks = [
 ];
 
 export default function WholeNumbersDocument() {
-  return <main className="notes-shell study-notes-shell"><nav className="notes-toolbar"><a href="/icse/grade-6/ch-2"><ArrowLeft /> Back to chapter</a><NotesPrintButton /></nav>
+  return <main className="notes-shell study-notes-shell"><nav className="notes-toolbar"><a href="/icse/grade-6/ch-2"><ArrowLeft /><span>Back to chapter</span></a><NotesPrintButton /></nav>
     <Page title="What are whole numbers?">
       <p>We count with 1, 2, 3, 4, … . These are called <strong>natural numbers</strong> in this course.</p>
       <p>Add zero to this list and we get <strong>whole numbers</strong>:</p><p className="simple-equation"><MathText formula>0, 1, 2, 3, 4, 5, …</MathText></p>

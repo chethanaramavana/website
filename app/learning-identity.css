@@ -65,7 +65,9 @@
 .start-test-dialog .revision-sheet b svg { width:16px; height:16px; }
 .breadcrumbs,.breadcrumbs>span,.breadcrumbs button { line-height:1; }
 .breadcrumbs>span,.breadcrumbs button { display:inline-flex; align-items:center; gap:6px; }
-.breadcrumbs button,.breadcrumbs em { padding-top:3px; }
+.breadcrumbs button { padding:4px; }
+.breadcrumbs em { padding:0; }
+.breadcrumbs .breadcrumb-label { display:inline-block; transform:translateY(2px); }
 .breadcrumbs svg { height:14px; align-self:center; }
 .notes-shell .study-cover { padding:30px 0 18px; text-align:left; }
 .notes-shell .study-cover h1 { font-size:clamp(30px,4vw,44px); line-height:1.15; margin:8px 0; }
@@ -345,3 +347,21 @@ button.chapter-resource { cursor:pointer; }
 }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; scroll-behavior:auto!important; } }
 @media print { .rmc-header,.rmc-footer,.help-desk,.chapter-overview-heading,.chapter-resource-grid { display:none!important; } .question-paper,.notes-page { box-shadow:none; border:0; } }
+
+/* Optical alignment for Baloo labels; SVG warning marks avoid font-baseline drift. */
+.notes-toolbar a>span { transform:translateY(2px); }
+.notes-toolbar a>svg { width:17px; height:17px; flex:none; }
+.notes-shell .study-watch-out .study-warning-icon { width:22px; height:22px; margin-top:5px; fill:#b0300e; stroke:#fff; stroke-width:2; }
+@media screen {
+ .notes-shell .notes-page-number { position:static; margin-top:24px; padding-top:12px; }
+ .exam-status { position:sticky; top:8px; z-index:45; display:flex; align-items:start; justify-content:end; gap:8px; margin:0 0 12px auto; width:fit-content; max-width:100%; }
+ .exam-status .exam-timer { position:static; min-width:0; width:124px; padding:7px 10px; grid-template-columns:18px 1fr; gap:7px; border-radius:8px; box-shadow:0 2px 10px #011e4710; }
+ .exam-status .exam-timer>svg { width:18px; height:18px; }
+ .exam-status .exam-timer>span { font-size:10px; }
+ .exam-status .exam-timer strong { font-size:17px; line-height:1.2; }
+ .exam-status .time-warning-toast { position:static; transform:none; min-width:0; width:250px; max-width:calc(100vw - 172px); padding:8px 10px; gap:8px; align-items:start; border-radius:8px; box-shadow:0 2px 10px #011e4710; }
+ .exam-status .time-warning-toast strong { font-size:13px; }
+ .exam-status .time-warning-toast small { font-size:12px; }
+ .time-warning-toast button { display:grid; place-items:center; flex:none; width:24px; height:24px; border:0; background:transparent; color:inherit; font:20px/1 Arial,sans-serif; cursor:pointer; }
+}
+@media print { .exam-status { display:none!important; } }

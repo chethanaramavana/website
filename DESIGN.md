@@ -165,3 +165,8 @@ Verification: local student opens a timed written paper and can save an MCQ answ
 - The report header is one bordered box: crest on the left, student/class/book beside it and Download Report on the right. The PDF contains only the report, including marks, remarks and qualifying stamps. Generate it locally in the browser from the report data; include repeated table headings and page numbers for long reports. Keep the prepared download link available until the report unmounts.
 - Report fonts in public/fonts are OFL licensed. scripts/prepare-report-fonts.py reproduces static Baloo and Source Serif fonts from the official Google Fonts sources. Full Baloo embedding preserves its composite glyph outlines. Run node scripts/check-report-pdf.cjs and render the generated PDFs to check short reports, long remarks and continuation pages.
 - Written-paper header links use the existing save-and-exit dialog when answers or uploads exist. An unchanged prefilled student name does not count as unsaved work. Successful saving permits the chosen navigation without a second browser warning.
+
+
+### Notes alignment and paper timing
+
+Use SVG warning marks instead of punctuation glyphs in notes. On screen, notes footers follow the content with a clear gap; keep their print positioning. Centre arrow and breadcrumb icons optically with Baloo labels. The paper timer sits in a compact sticky upper-right status row. Its time warning shares that row, offers a dismiss button and clears after twelve seconds independently of the per-second clock updates.

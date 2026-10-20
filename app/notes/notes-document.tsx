@@ -1,6 +1,6 @@
 import DiscoveryIcon from './discovery-icon';
 import { chapterHooks } from './chapter-hooks';
-import { ArrowLeft, CheckCircle2, Lightbulb } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Lightbulb, CircleAlert } from 'lucide-react';
 import type { ChapterNotes } from '@/lib/chapter-notes';
 import NotesPrintButton from './real-numbers/print-button';
 import NotesBranding from './notes-branding';
@@ -61,7 +61,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
     <main className="notes-shell study-notes-shell">
       <nav className="notes-toolbar">
         <a href={chapterPath}>
-          <ArrowLeft /> Back to chapter
+          <ArrowLeft /><span>Back to chapter</span>
         </a>
         <NotesPrintButton />
       </nav>
@@ -426,7 +426,7 @@ export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
           <ul>
             {notes.tips.map((tip) => (
               <li key={tip}>
-                <span>!</span>
+                <CircleAlert className="study-warning-icon" aria-hidden="true" />
                 <MathText>{tip}</MathText>
               </li>
             ))}

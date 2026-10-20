@@ -1244,9 +1244,13 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     if (!timing || result || warnedAtFifteen.current || remainingSeconds > 15 * 60 || remainingSeconds <= 0) return;
     warnedAtFifteen.current = true;
     setShowTimeWarning(true);
+  }, [remainingSeconds, result, timing]);
+
+  useEffect(() => {
+    if (!showTimeWarning) return;
     const timer = window.setTimeout(() => setShowTimeWarning(false), 12000);
     return () => window.clearTimeout(timer);
-  }, [remainingSeconds, result, timing]);
+  }, [showTimeWarning]);
 
   useEffect(() => {
     if (!uploadLocked || result || submitting || autoSubmitStarted.current || !draftLoaded) return;
@@ -1337,14 +1341,14 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
   return (
     <div className="content-view paper-page">
-      {!result && timing && (
+      {!result && timing && <div className="exam-status">
+      {showTimeWarning && <div className="time-warning-toast" role="alert"><span><strong>{remainingSeconds >= 14 * 60 ? '15 minutes left' : 'Time running short'}</strong><small>Review your answers and prepare your scans.</small></span><button type="button" aria-label="Dismiss time warning" onClick={() => setShowTimeWarning(false)}>×</button></div>}
         <aside className={`exam-timer ${remainingSeconds <= 15 * 60 ? 'warning' : ''} ${workLocked ? 'upload-only' : ''}`} aria-live="polite">
           <Timer />
           <span>{workLocked ? 'Answering time ended' : 'Time left'}<strong>{formatExamTime(remainingSeconds)}</strong></span>
           {workLocked && <small>Save any remaining answer scans now.</small>}
         </aside>
-      )}
-      {showTimeWarning && <div className="time-warning-toast" role="alert"><Timer /><span><strong>15 minutes left</strong><small>Review your answers and begin preparing your answer scans.</small></span></div>}
+      </div>}
       <div className="paper-toolbar">
         <Breadcrumb items={[
           { label: currentPaper.board ?? 'CBSE', onClick: () => requestExit(onBoard) },
@@ -1838,9 +1842,9 @@ function AssertionQuestion({ number, assertion, reason, selected, disabled, onCh
 function Breadcrumb({ items, onHome }: { items: { label: string; onClick?: () => void }[]; onHome: () => void }) {
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
-      <button type="button" onClick={onHome}><Home /><span>Home</span></button>
+      <button type="button" onClick={onHome}><Home /><span className="breadcrumb-label">Home</span></button>
       {items.map((item, index) => (
-        <span key={`${item.label}-${index}`}><ChevronRight />{item.onClick ? <button type="button" onClick={item.onClick}>{item.label}</button> : <em>{item.label}</em>}</span>
+        <span key={`${item.label}-${index}`}><ChevronRight />{item.onClick ? <button type="button" onClick={item.onClick}><span className="breadcrumb-label">{item.label}</span></button> : <em><span className="breadcrumb-label">{item.label}</span></em>}</span>
       ))}
     </nav>
   );
