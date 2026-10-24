@@ -143,6 +143,12 @@ Check the homepage, chapter cards, lesson pages, quizzes, exam papers, teacher a
 
 Run `node scripts/check-learning-flow.cjs` for the Kaprekar, report-row and weekly-validation checks, plus TypeScript and the production build. The Kaprekar check covers all 9,990 valid four-digit inputs. Check that public routes load and unauthenticated teacher editor reads/writes return 403.
 
+## Maths Basics guided reading — 24 October 2026
+
+The owner requested a lesson that students want to explore rather than a page of notes. Shared concept pages now put the diagram before supporting explanations, separate the reasoning into short numbered sections, show worked steps in an example panel, and finish with a concise takeaway before the existing practice flow.
+
+The first “Natural numbers and zero” concept opens with a curiosity question and a shell counter that can be emptied to discover zero. Natural and whole numbers appear side by side; predecessor and successor are explored with one-step controls, explicitly showing that zero has no predecessor among whole numbers. These exploratory controls do not award progress or unlock tests. Preserve the course convention that natural numbers start at 1, existing questions, saving and access rules. Reading text uses Source Serif 4; headings and controls retain Baloo Tamma 2. Review locally before any requested deployment.
+
 ## Remaining owner input
 
 Teacher red-pen samples when available; simple stroked ticks are authorised in the meantime. Report typography and stamp placement are resolved.
