@@ -37,26 +37,44 @@ function CountTheStars(){
    <button type="button" className="lesson-add" onClick={()=>setCount(0)} disabled={count===0}><RotateCcw aria-hidden="true"/>Count again</button>
   </div>
   <div className="story-natural-notation">
-   <div><h4>These are the natural numbers.</h4><p>We use them to count stars, fingers, books and many other things. We write their family as <strong>ℕ</strong>.</p><p className="lesson-sequence"><Tex>{'$\\mathbb{N}=\\{1,2,3,\\ldots\\}$'}</Tex></p><p className="lesson-small-note">Try your own hand: 1, 2, 3, 4, 5. Natural numbers keep going—there is no last one.</p></div>
+   <div><h4>These are the natural numbers.</h4><p>We use them to count stars, fingers, books and many other things. We write their family as <strong>ℕ</strong>.</p><p className="lesson-sequence"><Tex>{'$\\mathbb{N}=\\{1,2,3,\\ldots\\}$'}</Tex></p><p className="lesson-small-note">Try your own hand: 1, 2, 3, 4, 5.</p></div>
    <FiveFingers/>
   </div>
  </section>;
 }
 
-function House({number,current=false}:{number:number|null;current?:boolean}){
- return <svg viewBox="0 0 160 160" aria-hidden="true" className="story-house">
-  {number===null?<><path d="M15 145H145" stroke="#c9d2df" strokeWidth="2" strokeDasharray="5 5"/><text x="80" y="105" textAnchor="middle" fill="#4e5b70" fontSize="30">—</text></>:<>
-   <path d="M20 65H140V145H20Z" fill={current?'#f4e0ae':'#f4f6f9'} stroke="#011e47" strokeWidth="2"/>
-   <path d="M9 65 80 10 151 65Z" fill={current?'#011e47':'#e4eaf1'} stroke="#011e47" strokeWidth="2"/>
-   <rect x="54" y="88" width="52" height="57" rx="3" fill="#fff" stroke="#011e47" strokeWidth="2"/>
-   <text x="80" y="123" textAnchor="middle" fill="#011e47" fontSize="28">{number}</text>
-  </>}
+function StoryQuestion({title,options,correct,explanation}:{title:string;options:string[];correct:number;explanation:string}){
+ const [answer,setAnswer]=useState<number|null>(null);
+ return <fieldset className="story-question">
+  <legend>{title}</legend>
+  <div className="story-answer-options">{options.map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div>
+  <div role="status" aria-live="polite" aria-atomic="true">{answer!==null&&<p className={`story-answer-feedback ${answer===correct?'is-correct':'try-again'}`}><strong>{answer===correct?'Well done!':'Let’s look again.'}</strong> {explanation}{answer!==correct&&' Choose another option to try again.'}</p>}</div>
+ </fieldset>;
+}
+
+function NumberSteps({number}:{number:number}){
+ return <svg viewBox="0 0 640 250" role="img" aria-label={`Asha stands on step ${number}. ${number===0?'There is no whole-number step before zero.':`Step ${number-1} is one less.`} Step ${number+1} is one more.`} className="story-number-steps">
+  {[[90,170,number===0?null:number-1],[270,120,number],[450,70,number+1]].map(([x,y,n],i)=><g key={i}>
+   <path d={`M${x} ${y}h140v60h-140Z`} fill={i===1?'#f4e0ae':'#f4f6f9'} stroke="#011e47" strokeWidth="2" strokeDasharray={n===null?'5 5':undefined}/>
+   <text x={Number(x)+70} y={Number(y)+40} textAnchor="middle" fill="#011e47" fontSize="30">{n===null?'—':n}</text>
+   <text x={Number(x)+70} y={Number(y)-15} textAnchor="middle" fill="#4e5b70" fontSize="15">{['One step down','Asha is here','One step up'][i]}</text>
+   {i===1&&<><circle cx={Number(x)+70} cy={Number(y)-75} r="13" fill="#011e47"/><path d={`M${Number(x)+70} ${Number(y)-62}v26m0-17-17 10m17-10 17 10m-17 7-14 16m14-16 14 16`} stroke="#011e47" strokeWidth="4" fill="none" strokeLinecap="round"/></>}
+  </g>)}
  </svg>;
+}
+
+function LargestNumberQuestion(){
+ const [answer,setAnswer]=useState<number|null>(null);
+ return <section className="story-infinity" aria-labelledby="largest-number-title">
+  <h3 id="largest-number-title">Is there a largest natural number?</h3>
+  <fieldset className="story-question"><legend>What do you think?</legend><div className="story-answer-options">{['Yes, there is a largest natural number.','No, there is no largest natural number.'].map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div><div role="status" aria-live="polite">{answer===0&&<p className="story-answer-feedback try-again">Try adding 1 to the number you think is largest. Does that give you a bigger natural number? Have another try.</p>}{answer===1&&<p className="story-answer-feedback is-correct"><strong>Good thinking!</strong> Now choose the reason.</p>}</div></fieldset>
+  {answer===1&&<StoryQuestion title="Why is there no largest natural number?" options={['Adding 1 to any natural number gives a larger natural number.','Because zero is a whole number.','Because 1 is the first natural number.']} correct={0} explanation="Whatever natural number you choose, adding 1 gives a larger one. Even 999,999 + 1 = 1,000,000. So the natural numbers never end."/>}
+ </section>;
 }
 
 export default function NumberStories(){
  const [count,setCount]=useState(3);
- const [number,setNumber]=useState(9);
+ const [number,setNumber]=useState(5);
  return <>
   <CountTheStars/>
   <section className="number-story story-zero" aria-labelledby="picnic-story-title">
@@ -84,24 +102,27 @@ export default function NumberStories(){
     <div><h4>Natural numbers</h4><p className="lesson-sequence"><Tex>{'$\\mathbb{N}=\\{1,2,3,\\ldots\\}$'}</Tex></p><p>Asha starts at 1 when she counts the stars.</p></div>
     <div><h4>Whole numbers</h4><p className="lesson-sequence"><Tex>{'$\\mathbb{W}=\\{0,1,2,3,\\ldots\\}$'}</Tex></p><p>Zero lets her describe the empty basket too.</p></div>
    </div>
-   <p className="lesson-small-note">In this course, natural numbers start at 1, and we use W for whole numbers. Both families continue without end.</p>
+   <StoryQuestion title="Which statement is true?" options={['Every natural number is a whole number.','Every whole number is a natural number.']} correct={0} explanation="All the natural numbers—1, 2, 3 and so on—also belong to the whole numbers. But 0 is a whole number and is not a natural number. So the first statement is true."/>
   </section>
-  <section className="number-story lesson-neighbours" aria-labelledby="street-story-title">
-   <span className="lesson-kicker">3 · A walk along Asha’s street</span>
-   <h3 id="street-story-title">Who lives just before? Who lives just after?</h3>
-   <p>Asha starts at house 9. Her friend just before her is at house 8. One house after hers is house 10. In our story, the street starts at house 0 and the numbers increase to the right.</p>
-   <p>Walk with Asha: the number <strong>just before</strong> is the <strong>predecessor</strong>. The number <strong>just after</strong> is the <strong>successor</strong>.</p>
-   <div className="lesson-neighbour-diagram story-street" aria-live="polite" aria-atomic="true">
-    <div><span>Predecessor</span><House number={number===0?null:number-1}/><strong className="sr-only">{number===0?'None':number-1}</strong><small>{number===0?'No whole number before 0':'One less'}</small></div>
-    <div className="lesson-current-number"><span>Asha is here</span><House number={number} current/><strong className="sr-only">{number}</strong><small>Her number now</small></div>
-    <div><span>Successor</span><House number={number+1}/><strong className="sr-only">{number+1}</strong><small>One more</small></div>
+  <section className="number-story lesson-neighbours" aria-labelledby="steps-story-title">
+   <span className="lesson-kicker">3 · Asha climbs the number steps</span>
+   <h3 id="steps-story-title">One step down. One step up.</h3>
+   <p>Asha is playing on steps labelled 0, 1, 2, 3 and so on. She starts on step 5. One step down takes her to 4; one step up takes her to 6.</p>
+   <NumberSteps number={number}/>
+   <div className="lesson-neighbour-diagram" aria-live="polite" aria-atomic="true">
+    <div><span>Predecessor</span><strong>{number===0?'—':number-1}</strong><small>{number===0?'No whole number before 0':'One less'}</small></div>
+    <div className="lesson-current-number"><span>Current number</span><strong>{number}</strong></div>
+    <div><span>Successor</span><strong>{number+1}</strong><small>One more</small></div>
    </div>
-   <p className="story-street-status" aria-live="polite">{number===0?'Asha has reached house 0. There is no house before it on this whole-number street.':`Asha is at ${number}. Her predecessor is ${number-1}; her successor is ${number+1}.`}</p>
+   <p>The <strong>predecessor</strong> is the number just before: subtract 1. The <strong>successor</strong> is the number just after: add 1.</p>
    <div className="lesson-controls lesson-number-controls">
-    <button type="button" onClick={()=>setNumber(n=>n-1)} disabled={number===0}><ArrowLeft aria-hidden="true"/>Walk left</button>
-    <button type="button" onClick={()=>setNumber(n=>n+1)} disabled={number>=999}><ArrowRight aria-hidden="true"/>Walk right</button>
+    <button type="button" onClick={()=>setNumber(n=>n-1)} disabled={number===0}><ArrowLeft aria-hidden="true"/>One step down</button>
+    <button type="button" onClick={()=>setNumber(n=>n+1)} disabled={number>=20}><ArrowRight aria-hidden="true"/>One step up</button>
    </div>
-   {number>=999&&<p className="lesson-small-note">This picture explorer stops at 999. The whole numbers keep going: the next is 1,000.</p>}
+   {number===0&&<p className="lesson-small-note">Asha is at 0. There is no whole number before 0. Its successor is 1.</p>}
+   {number>=20&&<p className="lesson-small-note">This picture stops at step 20. The numbers continue: 21, 22, 23…</p>}
+   <StoryQuestion title="Asha reaches step 12. What are its predecessor and successor?" options={['11 and 13','10 and 14','13 and 11']} correct={0} explanation="One less than 12 is 11, its predecessor. One more than 12 is 13, its successor."/>
   </section>
+  <LargestNumberQuestion/>
  </>;
 }

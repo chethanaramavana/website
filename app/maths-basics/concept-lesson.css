@@ -100,3 +100,16 @@
  .story-count-caption { gap:14px; font-size:16px; }
  .story-street>div { padding:14px 4px; }
 }
+
+/* Low-stakes thinking prompts stay separate from assessed practice. */
+.identity-learning .basics .story-question { min-width:0; margin:28px 0 8px; padding:22px; border:1px solid #dce2e9; border-radius:10px; background:#f7f9fc; }
+.story-question legend { max-width:100%; padding:0 6px; color:#011e47; font:700 20px/1.5 var(--rmc-interface); }
+.story-answer-options { display:grid; gap:10px; }
+.identity-learning .basics .story-answer-options button { display:block; width:100%; min-height:48px; padding:14px 18px; border:1.5px solid #aebbc9; border-radius:8px; text-align:left; color:#011e47; background:#fff; font:600 17px/1.5 var(--rmc-interface); cursor:pointer; }
+.identity-learning .basics .story-answer-options button[aria-pressed="true"] { border-color:#011e47; background:#e9eef5; box-shadow:inset 4px 0 #011e47; }
+.story-answer-options button:focus-visible { outline:3px solid #d9a231; outline-offset:3px; }
+.identity-learning .basics .concept-lesson .story-answer-feedback { margin:18px 0 0; padding:14px 16px; font:400 18px/1.65 var(--rmc-reading); border-left:3px solid #d9a231; background:#fffcf4; }
+.identity-learning .basics .concept-lesson .story-answer-feedback.is-correct { border-color:#26745c; background:#edf6f1; }
+.story-number-steps { display:block; width:100%; height:auto; margin:22px 0 0; }
+.story-number-steps text { font-family:var(--rmc-reading); }
+@media(max-width:600px) { .identity-learning .basics .story-question { padding:18px 14px; } .story-question legend { font-size:18px; } }
