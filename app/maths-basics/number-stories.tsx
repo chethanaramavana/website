@@ -57,7 +57,7 @@ function NumberSteps({number}:{number:number}){
   {[[90,170,number===0?null:number-1],[270,120,number],[450,70,number+1]].map(([x,y,n],i)=><g key={i}>
    <path d={`M${x} ${y}h140v60h-140Z`} fill={i===1?'#f4e0ae':'#f4f6f9'} stroke="#011e47" strokeWidth="2" strokeDasharray={n===null?'5 5':undefined}/>
    <text x={Number(x)+70} y={Number(y)+40} textAnchor="middle" fill="#011e47" fontSize="30">{n===null?'—':n}</text>
-   <text x={Number(x)+70} y={Number(y)-15} textAnchor="middle" fill="#4e5b70" fontSize="15">{['One step down','Asha is here','One step up'][i]}</text>
+   {i!==1&&<text x={Number(x)+70} y={Number(y)-15} textAnchor="middle" fill="#4e5b70" fontSize="15">{i===0?'One step down':'One step up'}</text>}
    {i===1&&<><circle cx={Number(x)+70} cy={Number(y)-75} r="13" fill="#011e47"/><path d={`M${Number(x)+70} ${Number(y)-62}v26m0-17-17 10m17-10 17 10m-17 7-14 16m14-16 14 16`} stroke="#011e47" strokeWidth="4" fill="none" strokeLinecap="round"/></>}
   </g>)}
  </svg>;
