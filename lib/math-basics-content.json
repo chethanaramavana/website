@@ -51,7 +51,7 @@
       },
       {
         "title": "Tens, hundreds and thousands",
-        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. A digit gets its value from its position.",
+        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. A digit’s place value depends on its position in the number.",
         "visual": {
           "kind": "place",
           "digits": [
@@ -67,14 +67,14 @@
         },
         "steps": [
           "246 = 200 + 40 + 6.",
-          "The digit 4 is in the tens place, so its value is 40.",
+          "The digit 4 is in the tens place, so its place value is 40.",
           "In 2,406, the zero keeps the tens place: 2,000 + 400 + 0 + 6."
         ],
         "practice": [
           {
-            "prompt": "What is the value of 7 in 3,752?",
+            "prompt": "What is the place value of 7 in 3,752?",
             "answer": "700",
-            "solution": "7 is in the hundreds place: 7 × 100 = 700.",
+            "solution": "7 is in the hundreds place, so its place value is 7 × 100 = 700.",
             "options": null
           },
           {
@@ -89,10 +89,10 @@
             ]
           }
         ],
-        "remember": "A digit and its value are different: the digit is 7, but its value may be 700.",
+        "remember": "A digit and its place value are different. In 3,752, the digit 7 is in the hundreds place, so its place value is 700.",
         "teaching": [
-          "Ten ones can be exchanged for one ten without changing the total. Ten tens make one hundred, and ten hundreds make one thousand. Moving a digit one place left makes its value ten times as large.",
-          "In 4,072, the 4 means 4,000, the 0 holds the hundreds place, the 7 means 70 and the 2 means 2. Thus 4,072 = 4,000 + 70 + 2. Removing the zero would give 472, a different number."
+          "Ten ones can be exchanged for one ten without changing the total. Ten tens make one hundred, and ten hundreds make one thousand. Moving a digit one place left makes its place value ten times as large.",
+          "In 4,072, the place values are 4,000 for 4, 0 for 0, 70 for 7 and 2 for 2. The zero holds the hundreds place. Thus 4,072 = 4,000 + 70 + 2. Removing the zero would give 472, a different number."
         ]
       },
       {
@@ -145,9 +145,9 @@
         "options": null
       },
       {
-        "prompt": "What is the value of 8 in 4,836?",
+        "prompt": "What is the place value of 8 in 4,836?",
         "answer": "800",
-        "solution": "8 hundreds = 800.",
+        "solution": "8 is in the hundreds place, so its place value is 8 hundreds = 800.",
         "options": null
       },
       {
