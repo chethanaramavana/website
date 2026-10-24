@@ -119,3 +119,26 @@
 .face-place-digits .is-selected { background:#f4e0ae; border-color:#011e47; }
 .identity-learning .basics .face-place-lesson .lesson-controls button[aria-pressed="false"] { background:#fff; color:#011e47; }
 @media(max-width:600px) { .identity-learning .basics .story-question { padding:18px 14px; } .story-question legend { font-size:18px; } }
+
+.identity-learning .basics .answer-mark.is-incorrect { color:#b0300e; background:#fff1ed; border-left:3px solid #b0300e; }
+.identity-learning .basics .answer-mark.is-correct { color:#215e49; background:#edf6f1; border-left:3px solid #26745c; }
+.answer-mark>strong { display:flex; align-items:center; gap:8px; }
+.answer-mark>strong svg { width:22px; height:22px; flex-shrink:0; stroke-width:2.5; }
+.identity-learning .basics .answer-mark p { margin:6px 0; }
+.comparison-place-grid { margin:22px 0; border:1px solid #dce2e9; border-radius:8px; overflow:hidden; }
+.comparison-place-grid>div { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); text-align:center; }
+.comparison-place-grid span[role="columnheader"] { padding:12px 4px; background:#f4f6f9; font:600 14px/1.5 var(--rmc-interface); }
+.comparison-place-grid strong { padding:14px 4px; border-top:1px solid #dce2e9; font:600 30px/1.4 var(--rmc-reading); }
+.comparison-place-grid .compare-active { background:#f4e0ae; }
+.comparison-notice { padding:10px 18px; background:#f7f9fc; border-left:3px solid #d9a231; }
+.identity-learning .basics .comparison-lab .comparison-subheading { margin-top:36px; }
+.identity-learning .basics .comparison-lab .lesson-controls button[aria-pressed="false"] { color:#011e47; background:white; }
+.comparison-sliders { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.comparison-sliders label { display:grid; gap:12px; font:600 17px/1.5 var(--rmc-interface); }
+.comparison-sliders input { width:100%; min-height:40px; accent-color:#011e47; }
+.comparison-sliders label:first-child input { accent-color:#b57b16; }
+.comparison-number-line { display:block; width:100%; height:auto; }
+.comparison-order { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:24px; text-align:center; }
+.comparison-order strong { display:block; border:1.5px solid #011e47; border-radius:6px; background:#f4e0ae; padding:16px 4px; font:600 28px/1.3 var(--rmc-reading); }
+.comparison-order span { display:block; margin-top:8px; font:600 14px/1.5 var(--rmc-interface); }
+@media(max-width:600px) { .comparison-sliders { grid-template-columns:1fr; } .comparison-place-grid span[role="columnheader"] { font-size:11px; } }

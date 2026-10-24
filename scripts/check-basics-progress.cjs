@@ -24,3 +24,8 @@ const catalog=load('lib/basics-catalog.ts');for(const c of catalog.basicsCourses
 const allTopics=JSON.parse(fs.readFileSync('lib/math-basics-content.json','utf8'));for(const t of allTopics){assert.equal(t.test.length,10,t.slug);assert.equal(new Set(t.test.map(q=>q.prompt)).size,10,t.slug);for(const q of t.test){assert(q.solution.length>10);if(q.options){assert(q.options.includes(q.answer),t.slug+q.prompt);assert.equal(new Set(q.options).size,q.options.length);}}for(const c of t.concepts)assert.equal(c.teaching.length,2);}
 user=null;assert.equal((await get()).status,401);r=await route.POST(new Request('https://test.invalid/api/basics/progress',{method:'POST',headers:{origin:'https://evil.invalid'},body:'{}'}));assert.equal(r.status,403);console.log('PASS: actual progress handlers and SQLite: restore, scores, separate accounts, stale-save rejection, completion, retry, price validation, locks and origin checks.');})().catch(e=>{console.error(e);process.exitCode=1});
 
+
+// Entering the next lesson must preserve assessment data while opening concept 1.
+const savedTest=types.emptyBasicsProgress();savedTest.index=2;savedTest.test=true;savedTest.submitted=true;savedTest.answers={'0':'0'};savedTest.practice={'0-0':'8'};savedTest.understood={'0':true};
+const lesson=types.openBasicsLesson(savedTest);
+assert.equal(lesson.index,0);assert.equal(lesson.test,false);assert.equal(lesson.submitted,true);assert.equal(lesson.answers,savedTest.answers);assert.equal(lesson.practice,savedTest.practice);assert.equal(lesson.understood,savedTest.understood);assert.equal(savedTest.test,true);

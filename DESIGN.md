@@ -191,3 +191,7 @@ Payment requests show pending manual payments first; completed payments live und
 ### Number lesson feedback — 24 October 2026
 
 The owner requested removal of the introductory Asha summary, the course-convention footnote, the repeated worked recap and the unrelated final takeaway. Natural/whole-number membership now has selectable answers with praise or a corrective explanation. The predecessor/successor example uses numbered steps and includes an unscored thinking question. The ending asks whether a largest natural number exists, then asks for a reason, with feedback on each choice. These checks do not change assessed practice, saved progress or unlocking. Keep the convention that natural numbers start at 1, as shown in the two number families.
+
+### Comparison activities and test feedback
+
+The owner requested visual simulations for comparing and ordering whole numbers. Use highlighted place-value columns that advance one comparison at a time, adjustable dots on a number line and a smallest-to-largest staircase. Mark incorrect practice and test answers with an SVG cross and red feedback, then show the correct answer and explanation. Correct answers have a tick; submitted level tests show total marks and correct/incorrect counts. Hide routine saving/saved text but retain autosave, errors and retry controls. Continuing to the next level explicitly opens its first concept while preserving existing answers, completion and assessment rules.

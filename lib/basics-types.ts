@@ -5,3 +5,5 @@ export const emptyBasicsProgress=():BasicsProgress=>({index:0,understood:{},prac
 export function basicsMatch(value:string,answer:string){const normal=(s:string)=>s.trim().replace(/,/g,'').replace(/−/g,'-');const a=normal(value),b=normal(answer);return a!==''&&(a===b||(/^[-+]?\d+(\.\d+)?$/.test(a)&&/^[-+]?\d+(\.\d+)?$/.test(b)&&Number(a)===Number(b)));}
 
 export function reopenExpandedTest(state:BasicsProgress,count:number):BasicsProgress {return state.submitted&&Array.from({length:count},(_,i)=>state.answers?.[i]?.trim()).some(v=>!v)?{...state,submitted:false,test:true}:state;}
+
+export function openBasicsLesson(state:BasicsProgress):BasicsProgress{return {...state,index:0,test:false};}
