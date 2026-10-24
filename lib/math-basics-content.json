@@ -51,7 +51,7 @@
       },
       {
         "title": "Tens, hundreds and thousands",
-        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. A digit’s place value depends on its position in the number.",
+        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. The face value of a digit is the digit itself. Its place value depends on its position in the number.",
         "visual": {
           "kind": "place",
           "digits": [
@@ -89,7 +89,7 @@
             ]
           }
         ],
-        "remember": "A digit and its place value are different. In 3,752, the digit 7 is in the hundreds place, so its place value is 700.",
+        "remember": "Face value is the digit itself; place value depends on its position. In 3,752, the face value of 7 is 7, and its place value is 700.",
         "teaching": [
           "Ten ones can be exchanged for one ten without changing the total. Ten tens make one hundred, and ten hundreds make one thousand. Moving a digit one place left makes its place value ten times as large.",
           "In 4,072, the place values are 4,000 for 4, 0 for 0, 70 for 7 and 2 for 2. The zero holds the hundreds place. Thus 4,072 = 4,000 + 70 + 2. Removing the zero would give 472, a different number."

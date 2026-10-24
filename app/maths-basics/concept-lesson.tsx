@@ -2,6 +2,7 @@
 
 import {basicsStories} from '@/lib/basics-stories';
 import NumberStories from './number-stories';
+import FacePlaceValue from './face-place-value';
 import type {BasicsTopic} from '@/lib/basics-types';
 import TopicPicture from './topic-picture';
 import ComparingNumbers from './comparing-numbers';
@@ -22,6 +23,7 @@ export default function ConceptLesson({topic,index}:{topic:BasicsTopic;index:num
    {story&&<section className="lesson-story-opening" aria-label="A story to start"><h3>{story.title}</h3><p><Tex>{story.scene}</Tex></p></section>}
    <div className="lesson-picture-first"><TopicPicture slug={topic.slug} index={index} v={concept.visual}/></div>
    {story&&<><div className="lesson-story-question"><strong>What do you think?</strong><p><Tex>{story.question}</Tex></p></div><section className="lesson-story-bridge" aria-label="Connect the story to the maths"><span className="lesson-kicker">Connect the story to the maths</span><p><Tex>{concept.explain}</Tex></p></section></>}
+   {topic.slug==='numbers'&&index===1&&<FacePlaceValue/>}
    {!!concept.teaching?.length&&<section className="lesson-thinking" aria-label="Why it works"><span className="lesson-kicker">Why it works</span><ol>{concept.teaching.map((paragraph,i)=><li key={i}><span aria-hidden="true">{i+1}</span><p><Tex>{paragraph}</Tex></p></li>)}</ol></section>}
   </>}
   {!discoverZero&&<><section className="lesson-worked" aria-label="Worked example">

@@ -112,4 +112,10 @@
 .identity-learning .basics .concept-lesson .story-answer-feedback.is-correct { border-color:#26745c; background:#edf6f1; }
 .story-number-steps { display:block; width:100%; height:auto; margin:22px 0 0; }
 .story-number-steps text { font-family:var(--rmc-reading); }
+.face-place-example { margin-top:20px; padding:22px; border:1px solid #dce2e9; border-radius:10px; background:#f7f9fc; }
+.face-place-digits { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; text-align:center; }
+.face-place-digits span { display:block; color:#4e5b70; font:600 15px/1.5 var(--rmc-interface); }
+.face-place-digits strong { display:block; margin-top:8px; padding:12px 4px; font:600 36px/1.3 var(--rmc-reading); border:1px solid #dce2e9; border-radius:6px; background:#fff; }
+.face-place-digits .is-selected { background:#f4e0ae; border-color:#011e47; }
+.identity-learning .basics .face-place-lesson .lesson-controls button[aria-pressed="false"] { background:#fff; color:#011e47; }
 @media(max-width:600px) { .identity-learning .basics .story-question { padding:18px 14px; } .story-question legend { font-size:18px; } }
