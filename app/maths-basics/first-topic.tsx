@@ -1,4 +1,5 @@
  'use client';
+import SuccessPraise from './success-praise';
 import {useState,useEffect} from 'react';
 import { ArrowLeft, Check, X, LockKeyhole } from 'lucide-react';
 import {useTestActivity} from '@/app/student-activity';
@@ -7,7 +8,7 @@ import {useBasicsProgress} from './use-progress';
 import ConceptLesson from './concept-lesson';
 import Tex from './math-text';
 function Answer({q,value,onChange,disabled=false,id}:{q:Question;value:string;onChange:(v:string)=>void;disabled?:boolean;id:string}){return q.options?<fieldset disabled={disabled}><legend><Tex>{q.prompt}</Tex></legend>{q.options.map(o=><label key={o}><input type="radio" name={id} value={o} checked={value===o} onChange={()=>onChange(o)}/><Tex>{o}</Tex></label>)}</fieldset>:<label className="basics-numeric"><Tex>{q.prompt}</Tex><input aria-label={q.prompt} inputMode="decimal" value={value} disabled={disabled} onChange={e=>onChange(e.target.value)} placeholder="Your answer"/></label>;}
-function AnswerFeedback({correct,answer,solution}:{correct:boolean;answer:string;solution:string}){return <div className={`basics-feedback answer-mark ${correct?'is-correct':'is-incorrect'}`} role="status"><strong>{correct?<Check aria-hidden="true"/>:<X aria-hidden="true"/>}{correct?'Correct!':'Incorrect.'}</strong>{!correct&&<p><Tex>{`Correct answer: ${answer}`}</Tex></p>}<div className="basics-solution"><Tex>{solution}</Tex></div></div>;}
+function AnswerFeedback({correct,answer,solution}:{correct:boolean;answer:string;solution:string}){return <div className={`basics-feedback answer-mark ${correct?'is-correct':'is-incorrect'}`} role="status"><strong>{correct?<Check aria-hidden="true"/>:<X aria-hidden="true"/>}{correct?<SuccessPraise>Correct! Well done.</SuccessPraise>:'Incorrect.'}</strong>{!correct&&<p><Tex>{`Correct answer: ${answer}`}</Tex></p>}<div className="basics-solution"><Tex>{solution}</Tex></div></div>;}
 function TestActivity({slug,answered,submitted}:{slug:string;answered:number;submitted:boolean}){useTestActivity('maths-basics-'+slug,answered,submitted,true);return null;}
 export default function FirstTopic({topic,userId,level,next,courseId,teacherMode=false}:{topic:BasicsTopic;teacherMode?:boolean;courseId:string;userId:string;level:number;next:{slug:string;title:string}|null}){
  const {state:s,update,flush,ready,message,error,completed}=useBasicsProgress(topic.slug,userId,courseId,topic.test.length);const[busy,setBusy]=useState(false);

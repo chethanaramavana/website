@@ -1,4 +1,5 @@
 'use client';
+import SuccessPraise from './success-praise';
 
 import {useState} from 'react';
 import {ArrowLeft,ArrowRight,Minus,Plus,RotateCcw} from 'lucide-react';
@@ -48,7 +49,7 @@ function StoryQuestion({title,options,correct,explanation}:{title:string;options
  return <fieldset className="story-question">
   <legend>{title}</legend>
   <div className="story-answer-options">{options.map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div>
-  <div role="status" aria-live="polite" aria-atomic="true">{answer!==null&&<p className={`story-answer-feedback ${answer===correct?'is-correct':'try-again'}`}><strong>{answer===correct?'Well done!':'Let’s look again.'}</strong> {explanation}{answer!==correct&&' Choose another option to try again.'}</p>}</div>
+  <div role="status" aria-live="polite" aria-atomic="true">{answer!==null&&<p className={`story-answer-feedback ${answer===correct?'is-correct':'try-again'}`}><strong>{answer===correct?<SuccessPraise/>:'Let’s look again.'}</strong> {explanation}{answer!==correct&&' Choose another option to try again.'}</p>}</div>
  </fieldset>;
 }
 
@@ -67,7 +68,7 @@ function LargestNumberQuestion(){
  const [answer,setAnswer]=useState<number|null>(null);
  return <section className="story-infinity" aria-labelledby="largest-number-title">
   <h3 id="largest-number-title">Is there a largest natural number?</h3>
-  <fieldset className="story-question"><legend>What do you think?</legend><div className="story-answer-options">{['Yes, there is a largest natural number.','No, there is no largest natural number.'].map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div><div role="status" aria-live="polite">{answer===0&&<p className="story-answer-feedback try-again">Try adding 1 to the number you think is largest. Does that give you a bigger natural number? Have another try.</p>}{answer===1&&<p className="story-answer-feedback is-correct"><strong>Good thinking!</strong> Now choose the reason.</p>}</div></fieldset>
+  <fieldset className="story-question"><legend>What do you think?</legend><div className="story-answer-options">{['Yes, there is a largest natural number.','No, there is no largest natural number.'].map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div><div role="status" aria-live="polite">{answer===0&&<p className="story-answer-feedback try-again">Try adding 1 to the number you think is largest. Does that give you a bigger natural number? Have another try.</p>}{answer===1&&<p className="story-answer-feedback is-correct"><strong><SuccessPraise>Good thinking!</SuccessPraise></strong> Now choose the reason.</p>}</div></fieldset>
   {answer===1&&<StoryQuestion title="Why is there no largest natural number?" options={['Adding 1 to any natural number gives a larger natural number.','Because zero is a whole number.','Because 1 is the first natural number.']} correct={0} explanation="Whatever natural number you choose, adding 1 gives a larger one. Even 999,999 + 1 = 1,000,000. So the natural numbers never end."/>}
  </section>;
 }

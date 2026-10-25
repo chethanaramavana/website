@@ -4,3 +4,6 @@ walk(JSON.parse(fs.readFileSync('lib/math-basics-content.json','utf8')));
 for(const s of ['−3/4 = 3/(−4) = −0.75','−1/4 is greater than −3/4 because it is closer to zero.','−2/3 + 5/6','−4/6 + 5/6','1/6','(x+4)² = x²+8x+16.','A triangle has a 5 cm side.','√18 = √(9×2) = 3√2.','(x₁+x₂)/2','a⁰=1 for a≠0; a⁻ⁿ=1/aⁿ.','aᵐ×aⁿ=aᵐ⁺ⁿ','11/4 = 2¾','∛27 = 3','25% = 1/4'])console.log(s+' => '+f(s));
 fs.writeFileSync('work/math-notation-audit.json',JSON.stringify(suspicious,null,2));console.log('Validated '+formulas+' expressions. Remaining slash/root strings: '+suspicious.length);
 assert(f('−2/3 + 5/6').includes('\\dfrac{2}{3}'));assert.equal(f('A triangle has a side.'),'A triangle has a side.');assert.equal(f('$x^2$'),'$x^2$');
+
+assert(f('Find the missing number: \u25a1 \u2212 156 = 289.').includes(String.raw`\boxed{\phantom{00}} - 156 = 289`));
+assert(f('249 + \u25a1 = 600').includes(String.raw`249 + \boxed{\phantom{00}} = 600`));

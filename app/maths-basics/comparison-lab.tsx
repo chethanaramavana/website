@@ -1,4 +1,5 @@
 'use client';
+import SuccessPraise from './success-praise';
 
 import {useState} from 'react';
 
@@ -40,7 +41,7 @@ export default function ComparisonLab(){
   <p>Choose the smallest number left each time.</p>
   <div className="lesson-controls" role="group" aria-label="Numbers to put in ascending order">{[907,970,790].map(n=><button type="button" key={n} disabled={order.includes(n)} onClick={()=>selectNumber(n)}>{n}</button>)}</div>
   <div className="comparison-order" aria-label="Your ascending order">{[0,1,2].map((_,i)=><div key={i} style={{paddingTop:(2-i)*24}}><strong>{order[i]??'?'}</strong><span>{['Smallest','Next','Largest'][i]}</span></div>)}</div>
-  <p role="status">{order.length===3?'Well done! 790 < 907 < 970. Ascending order means smallest to largest.':hint}</p>
+  <p role="status">{order.length===3?<><SuccessPraise/> 790 &lt; 907 &lt; 970. Ascending order means smallest to largest.</>:hint.startsWith('Well done!')?<><SuccessPraise/> That is the smallest number left.</>:hint}</p>
   <div className="lesson-controls"><button type="button" className="lesson-add" onClick={()=>{setOrder([]);setHint('');}}>Try the staircase again</button></div>
  </section>;
 }

@@ -1,4 +1,5 @@
 'use client';
+import SuccessPraise from './success-praise';
 
 import {useState} from 'react';
 
@@ -21,6 +22,6 @@ export default function FacePlaceValue(){
    <p>In <strong>{example.number}</strong>, the face value of 7 is <strong>7</strong>. Its place value is <strong>7 × {example.unit} = {example.value}</strong>.</p>
   </div>
   <p className="lesson-small-note">For the digit 0, both its face value and its place value are 0. It still holds a place in the number.</p>
-  <fieldset className="story-question"><legend>In 375, what are the face value and place value of 7?</legend><div className="story-answer-options">{['Face value 7; place value 70','Face value 70; place value 7','Face value 7; place value 700'].map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div><div role="status" aria-live="polite" aria-atomic="true">{answer!==null&&<p className={`story-answer-feedback ${answer===0?'is-correct':'try-again'}`}><strong>{answer===0?'Well done!':'Let’s look again.'}</strong> The digit itself is 7, so its face value is 7. It is in the tens place, so its place value is 7 × 10 = 70.{answer!==0&&' Try another option.'}</p>}</div></fieldset>
+  <fieldset className="story-question"><legend>In 375, what are the face value and place value of 7?</legend><div className="story-answer-options">{['Face value 7; place value 70','Face value 70; place value 7','Face value 7; place value 700'].map((option,i)=><button type="button" key={option} aria-pressed={answer===i} onClick={()=>setAnswer(i)}>{option}</button>)}</div><div role="status" aria-live="polite" aria-atomic="true">{answer!==null&&<p className={`story-answer-feedback ${answer===0?'is-correct':'try-again'}`}><strong>{answer===0?<SuccessPraise/>:'Let’s look again.'}</strong> The digit itself is 7, so its face value is 7. It is in the tens place, so its place value is 7 × 10 = 70.{answer!==0&&' Try another option.'}</p>}</div></fieldset>
  </section>;
 }

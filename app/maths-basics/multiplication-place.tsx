@@ -1,0 +1,12 @@
+'use client';
+
+import {useState} from 'react';
+import Tex from './math-text';
+
+export function MultiplicationSplit(){return <section className="multiplication-split" aria-labelledby="split-packets-title"><h3 id="split-packets-title">Two smaller piles. One big total.</h3><p>Asha has 24 packets, with 36 stickers in each. She makes two piles: <strong>20 packets</strong> and <strong>4 packets</strong>. Count the stickers in both piles, then put the totals together.</p><figure className="packet-picture"><div className="packet-piles"><div><span>20 packets</span><strong>720</strong><small>stickers</small></div><div><span>4 packets</span><strong>144</strong><small>stickers</small></div></div><figcaption>Each packet has 36 stickers.</figcaption></figure><div className="multiplication-split-lines"><p><Tex>{'36 × 20 = 720'}</Tex></p><p><Tex>{'36 × 4 = 144'}</Tex></p><p><strong><Tex>{'720 + 144 = 864'}</Tex> stickers altogether.</strong></p></div><p>That is the <strong>distributive property</strong>: multiply both parts, then add.</p><p><Tex>{'36 × (20 + 4) = 36 × 20 + 36 × 4'}</Tex></p></section>;}
+
+export function MultiplicationWritten(){
+ const [step,setStep]=useState(0);
+ const notes=['Split 24 into 20 + 4. Start with the 4 ones.','Multiply the ones: 36 × 4 = 144.','Now multiply the tens: the 2 in 24 means 20, so 36 × 20 = 720.','Add both rows: 144 + 720 = 864.'];
+ return <div className="multiplication-written"><h3>Keep the digits in their places</h3><p>Follow the same two piles in the written method.</p><table aria-label="Written multiplication of 36 by 24"><thead><tr><th scope="col">Operation</th><th scope="col">Hundreds</th><th scope="col">Tens</th><th scope="col">Ones</th></tr></thead><tbody><tr><td></td><td></td><td>3</td><td>6</td></tr><tr className="written-rule"><td>×</td><td></td><td>2</td><td>4</td></tr>{step>=1&&<tr><th scope="row">36 × 4</th><td>1</td><td>4</td><td>4</td></tr>}{step>=2&&<tr className="written-tens"><th scope="row">36 × 20</th><td>7</td><td>2</td><td>0</td></tr>}{step>=3&&<tr className="written-total"><th scope="row">Total</th><td>8</td><td>6</td><td>4</td></tr>}</tbody></table><p className="written-explanation" aria-live="polite" aria-atomic="true"><Tex>{notes[step]}</Tex></p><div className="lesson-controls"><button type="button" disabled={step===3} onClick={()=>setStep(n=>n+1)}>{['Multiply the ones','Multiply the tens','Add both rows','All done'][step]}</button><button type="button" className="lesson-add" onClick={()=>setStep(0)}>Start again</button></div></div>;
+}

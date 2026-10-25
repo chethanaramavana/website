@@ -425,10 +425,10 @@
             "options": null
           }
         ],
-        "remember": "Unequal groups cannot be counted by multiplying the number of groups by just one group’s size.",
+        "remember": "Check the groups first: multiplication counts equal groups. Each row in our garden has the same number of flowers.",
         "teaching": [
-          "Multiplication counts equal groups. Four packets with six pencils each contain 6 + 6 + 6 + 6 = 4 × 6 = 24 pencils. Four rows of six dots can be turned into six rows of four, showing 4 × 6 = 6 × 4.",
-          "Build unfamiliar facts from known ones. Split 7 × 6 into five groups and two groups: 30 + 12 = 42. Multiplying by 1 leaves the number unchanged; multiplying by 0 gives zero. Unequal groups must be added separately."
+          "Picture 4 rows with 6 flowers in every row. Count along: 6, 12, 18, 24! Turn the arrangement and you have 6 rows of 4. Same flowers, same total: 4 × 6 = 6 × 4 = 24.",
+          "Want 7 rows of 6? Start with 5 rows: 30 flowers. Add 2 more rows: 12 flowers. Altogether, 30 + 12 = 42. One row keeps the group’s number; zero rows gives zero. If the rows have different numbers, count and add each row separately."
         ]
       },
       {
