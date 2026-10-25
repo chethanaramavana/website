@@ -7,3 +7,5 @@ assert(f('−2/3 + 5/6').includes('\\dfrac{2}{3}'));assert.equal(f('A triangle h
 
 assert(f('Find the missing number: \u25a1 \u2212 156 = 289.').includes(String.raw`\boxed{\phantom{00}} - 156 = 289`));
 assert(f('249 + \u25a1 = 600').includes(String.raw`249 + \boxed{\phantom{00}} = 600`));
+
+assert.equal(f('The lift changes by \u22124 floors.'),'The lift changes by $-4$ floors.');

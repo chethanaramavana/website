@@ -20,5 +20,6 @@ function equation(source:string){
 }
 export function basicsMathText(source:string){return source.split(/(\$\$[\s\S]*?\$\$|\$[^$]+\$)/g).map(part=>part.startsWith('$')?part:part.replace(expression,match=>{
  if(!/[\d⁰¹²³⁴⁵⁶⁷⁸⁹ᵐⁿ½¼¾□√∛+−\-×÷*/=<>≈≠≤≥→πθ]/.test(match)&&!['x','y'].includes(match))return match;
- return '$'+equation(match)+'$';
+ const prose=match.match(/^(?:by|as)\s+(?=[+−-]\s*\d)/i);
+ return prose?prose[0]+'$'+equation(match.slice(prose[0].length))+'$':'$'+equation(match)+'$';
 })).join('');}
