@@ -43,6 +43,7 @@ def paste(im,asset,x,y):im.paste(asset,(int(x),int(y)),asset if asset.mode=='RGB
 def branding(im,w):
     c=fit(crest,(88,88));a=fit(word,(260,65));paste(im,c,36,24);paste(im,a,134,40)
     d=ImageDraw.Draw(im)
+    d.text((264,91),'Mathematical Centre',font=base.font(21),fill='#011e47',anchor='mt')
     d.text((w-35,56),'Ramavanamath.com',font=base.font(25),fill='#011e47',anchor='rt')
 def headline(d,s,w,y,size):return base.text(d,s,w,y,size,True)
 def frame(i,u,portrait):
@@ -63,6 +64,7 @@ def frame(i,u,portrait):
         cy=410 if portrait else 180
         c=fit(crest,(350,350));paste(im,c,(w-c.width)//2,cy)
         a=fit(word,(760,170));paste(im,a,(w-a.width)//2,cy+365)
+        base.text(d,'Mathematical Centre',w,cy+520,36)
         headline(d,title,w,cy+570,52)
         headline(d,'Visit Ramavanamath.com',w,cy+675,59)
     else:
