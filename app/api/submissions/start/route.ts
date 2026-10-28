@@ -1,4 +1,5 @@
 import { getPaperAssessment } from '@/lib/assessment';
+import { RELATIONS_TEST_ID } from '@/lib/paper-format';
 import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
 import { finalizeSubmission, freshTiming, getSubmissionPhase, type TimedSubmission } from '@/lib/submission-lifecycle';
 
@@ -20,7 +21,7 @@ export async function POST(request: Request) {
       WHERE (user_id = ? OR lower(user_email) = ?) AND paper_id = ? AND status != 'draft'
       LIMIT 1
     `).bind(user.userId, paperId, user.userId, user.email.toLowerCase(), paperId).first<{ allowed: number }>();
-    if (!access) return jsonError('Payment or prior chapter access is required before starting this test.', 403);
+    if (!access && paperId !== RELATIONS_TEST_ID) return jsonError('Payment or prior chapter access is required before starting this test.', 403);
 
     let submission = await db.prepare(`
       SELECT id, user_id, paper_id, status, mcq_answers, mcq_score,
@@ -32,7 +33,7 @@ export async function POST(request: Request) {
 
     if (!submission) {
       const id = crypto.randomUUID();
-      const timing = freshTiming();
+      const timing = freshTiming(Date.now(), paperId === RELATIONS_TEST_ID ? 60 * 60 * 1000 : undefined);
       const studentName = (user.fullName ?? user.displayName ?? user.email.split('@')[0]).trim().slice(0, 80);
       await db.prepare(`
         INSERT INTO submissions
@@ -46,7 +47,7 @@ export async function POST(request: Request) {
         FROM submissions WHERE id = ?
       `).bind(id).first<TimedSubmission>();
     } else if (submission.started_at_ms === null || submission.work_deadline_at_ms === null || submission.upload_deadline_at_ms === null) {
-      const timing = freshTiming();
+      const timing = freshTiming(Date.now(), paperId === RELATIONS_TEST_ID ? 60 * 60 * 1000 : undefined);
       await db.prepare(`
         UPDATE submissions SET started_at_ms = ?, work_deadline_at_ms = ?, upload_deadline_at_ms = ?,
           updated_at = CURRENT_TIMESTAMP WHERE id = ? AND status = 'draft'

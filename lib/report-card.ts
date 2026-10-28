@@ -1,3 +1,4 @@
+import { objectiveMaximum, paperMaximum } from './paper-format';
 import { paperDefinitionsById } from './papers';
 import { getIntegralsProduct, integralsPath } from './integrals-products';
 import { quizListings } from './free-quizzes/catalog';
@@ -40,7 +41,7 @@ export function reportRows(
         ? (paper.book ?? `${paper.board ?? 'CBSE'} Mathematics`)
         : undefined,
       score: marked ? submission.total_score! : submission.mcq_score,
-      maximum: marked ? 40 : 16,
+      maximum: marked ? paperMaximum(submission.paper_id) : objectiveMaximum(submission.paper_id),
       remark:
         submission.teacher_feedback ||
         (marked

@@ -3,6 +3,7 @@ import { grade6PaperDefinitions } from './grade6-papers';
 import { icse6PaperDefinitions } from './icse6-papers';
 import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
+import { relationsTestDefinition } from './relations-test-definition';
 
 export type QuestionSource = string;
 
@@ -142,7 +143,7 @@ export const paperDefinitions: Record<string, PaperDefinition> = {
 };
 
 export const paperDefinitionsById = Object.fromEntries(
-  Object.values(paperDefinitions).map((paper) => [paper.id, paper]),
+  [...Object.values(paperDefinitions), relationsTestDefinition].map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
 
 export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE') {

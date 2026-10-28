@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, Clock3, Loader2, Minus, X } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { PaperDefinition } from '@/lib/papers';
-import { writtenQuestionMarks } from '@/lib/assessment';
+import { writtenQuestionMarks, objectiveMaximum, paperMaximum, displayQuestion } from '@/lib/paper-format';
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
 import SolutionSteps from '@/app/solution-steps';
 import MathText from '@/app/notes/math-text';
@@ -21,6 +21,7 @@ type ResultPayload = {
   submission: { paper_id: keyof typeof paperDefinitionsById; student_name: string; status: string; mcq_answers: Record<string, number>; mcq_score: number; written_score: number | null; total_score: number | null; teacher_feedback: string; submitted_at: string };
   correctAnswers: Record<string, number>;
   writtenSolutions: Record<string, string>;
+  objectiveSolutions?: Record<string, string>;
   marks: Array<{ question_number: number; marks_awarded: number; feedback: string }>;
 };
 
@@ -48,9 +49,9 @@ export default function StudentResult({ id }: { id: string }) {
     <a className="student-result-back" href="/student"><ArrowLeft /> Student account</a>
     <header><img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Centre" width="170" height="170" /><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
     <section className="student-score-card">
-      <div><span>MCQ</span><strong>{result.submission.mcq_score}/16</strong></div>
+      <div><span>MCQ</span><strong>{result.submission.mcq_score}/{objectiveMaximum(result.submission.paper_id)}</strong></div>
       <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/24</strong></div>
-      <div><span>Total</span><strong>{result.submission.total_score ?? 'Pending'}{result.submission.total_score !== null ? '/40' : ''}</strong></div>
+      <div><span>Total</span><strong>{result.submission.total_score ?? 'Pending'}{result.submission.total_score !== null ? `/${paperMaximum(result.submission.paper_id)}` : ''}</strong></div>
     </section>
     {result.submission.status === 'marked' ? <div className="student-marked-status"><CheckCircle2 /> Marked by teacher</div> : <div className="student-pending-status"><Clock3 /> Your teacher will review your written answers within 24 hours of submission. Written marks and the final score will appear here after review.</div>}
     {result.submission.teacher_feedback && <section className="student-feedback-card"><h2>Teacher feedback</h2><p>{result.submission.teacher_feedback}</p></section>}
@@ -60,7 +61,7 @@ export default function StudentResult({ id }: { id: string }) {
       const isCorrect = chosen === correct;
       const status = isCorrect ? 'Correct' : chosen === undefined ? 'Not answered' : 'Incorrect';
       const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
-      const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
+      const briefSolution = result.objectiveSolutions?.[question.number] ?? getBriefMcqSolution(result.submission.paper_id, question.number);
       return <article className={outcome} key={question.number}>
         <span className="student-review-icon" aria-hidden="true">{isCorrect ? <TeacherTick /> : chosen === undefined ? <Minus /> : <X />}</span>
         <div className="student-review-copy">
@@ -75,7 +76,7 @@ export default function StudentResult({ id }: { id: string }) {
       const isCorrect = chosen === correct;
       const status = isCorrect ? 'Correct' : chosen === undefined ? 'Not answered' : 'Incorrect';
       const outcome = isCorrect ? 'correct' : chosen === undefined ? 'unanswered' : 'incorrect';
-      const briefSolution = getBriefMcqSolution(result.submission.paper_id, question.number);
+      const briefSolution = result.objectiveSolutions?.[question.number] ?? getBriefMcqSolution(result.submission.paper_id, question.number);
       return <article className={outcome} key={question.number}>
         <span className="student-review-icon" aria-hidden="true">{isCorrect ? <TeacherTick /> : chosen === undefined ? <Minus /> : <X />}</span>
         <div className="student-review-copy">
@@ -91,9 +92,9 @@ export default function StudentResult({ id }: { id: string }) {
       const maximum = writtenQuestionMarks[number];
       const outcome = !mark ? 'pending' : mark.marks_awarded === maximum ? 'full' : mark.marks_awarded > 0 ? 'partial' : 'zero';
       return <article className={outcome} key={number}>
-        <span className="student-written-number">{number}</span>
+        <span className="student-written-number">{displayQuestion(result.submission.paper_id, number)}</span>
         <div className="student-written-copy">
-          <div className="student-written-heading"><strong>Question {number}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
+          <div className="student-written-heading"><strong>Question {displayQuestion(result.submission.paper_id, number)}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
           <p className="student-written-question"><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p>
           {number === 24 && paper?.caseStudy && <p className="student-written-question"><MathText>{paper.caseStudy}</MathText></p>}
           <div className="student-written-solution"><span>Model solution</span><SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div>

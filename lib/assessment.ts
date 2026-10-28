@@ -3,6 +3,8 @@ import { grade6PaperAssessments } from './grade6-papers';
 import { icse6PaperAssessments } from './icse6-papers';
 import { grade11PaperAssessments } from './grade11-papers';
 import { grade12PaperAssessments } from './grade12-papers';
+import { relationsPracticePaper } from './relations-practice-paper';
+import { RELATIONS_TEST_ID } from './paper-format';
 
 export const writtenQuestionMarks: Record<number, number> = {
   17: 2, 18: 2, 19: 2, 20: 3, 21: 3, 22: 3, 23: 5, 24: 4,
@@ -99,6 +101,11 @@ const basePaperAssessments: Record<string, PaperAssessmentSource> = {
 };
 
 const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
+  [RELATIONS_TEST_ID]: {
+    title: 'Class 11 · Relations and Functions · Free 30-mark test',
+    mcqAnswerKey: {1:1,2:0,3:2,4:2,5:3,6:0},
+    writtenSolutions: Object.fromEntries(relationsPracticePaper.filter(q => q.number >= 7).map(q => [q.number + 10, q.solution])),
+  },
   ...basePaperAssessments,
   ...additionalPaperAssessments,
   ...grade6PaperAssessments,

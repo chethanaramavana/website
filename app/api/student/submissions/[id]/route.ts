@@ -1,5 +1,7 @@
 import { getPaperAssessment } from '@/lib/assessment';
 import { getDatabase, getRequestUser, jsonError } from '@/lib/server';
+import { RELATIONS_TEST_ID } from '@/lib/paper-format';
+import { relationsPracticePaper } from '@/lib/relations-practice-paper';
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   const user = await getRequestUser(request);
@@ -22,8 +24,9 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       submission: { ...submission, mcq_answers: JSON.parse(String(submission.mcq_answers ?? '{}')) },
       correctAnswers: savedDocument?.answerKey ?? assessment.mcqAnswerKey,
       writtenSolutions: savedDocument?.writtenSolutions ?? assessment.writtenSolutions,
+      objectiveSolutions: submission.paper_id === RELATIONS_TEST_ID ? Object.fromEntries(relationsPracticePaper.filter(q => q.number <= 6).map(q => [q.number, q.solution])) : {},
       marks: marks.results,
-    });
+    }, { headers: { 'Cache-Control': 'private, no-store' } });
   } catch (error) {
     console.error('student result failed', error);
     return jsonError('Your result could not be loaded.', 500);

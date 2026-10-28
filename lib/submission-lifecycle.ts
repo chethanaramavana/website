@@ -23,11 +23,11 @@ export function getSubmissionPhase(submission: Pick<TimedSubmission, 'work_deadl
   return 'answering';
 }
 
-export function freshTiming(nowMs = Date.now()) {
+export function freshTiming(nowMs = Date.now(), answeringTimeMs = ANSWERING_TIME_MS) {
   return {
     startedAtMs: nowMs,
-    workDeadlineAtMs: nowMs + ANSWERING_TIME_MS,
-    uploadDeadlineAtMs: nowMs + ANSWERING_TIME_MS + UPLOAD_BUFFER_MS,
+    workDeadlineAtMs: nowMs + answeringTimeMs,
+    uploadDeadlineAtMs: nowMs + answeringTimeMs + UPLOAD_BUFFER_MS,
   };
 }
 

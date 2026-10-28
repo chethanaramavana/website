@@ -1,0 +1,112 @@
+[
+  {
+    "number": 1,
+    "marks": 1,
+    "section": "A",
+    "question": "If $(2x-y,\\,x+y)=(4,\\,5)$, find $xy$.",
+    "options": [
+      "$3$",
+      "$6$",
+      "$9$",
+      "$15$"
+    ]
+  },
+  {
+    "number": 2,
+    "marks": 1,
+    "section": "A",
+    "question": "Let $A=\\{1,2\\}$ and $B=\\{2,3,4\\}$. Find $n\\big((A\\times B)\\cap(B\\times A)\\big)$.",
+    "options": [
+      "$1$",
+      "$2$",
+      "$6$",
+      "$12$"
+    ]
+  },
+  {
+    "number": 3,
+    "marks": 1,
+    "section": "A",
+    "question": "The domain of $f(x)=\\dfrac{\\sqrt{x+2}}{x-1}$ is",
+    "options": [
+      "$[-2,\\infty)$",
+      "$(-2,1)\\cup(1,\\infty)$",
+      "$[-2,1)\\cup(1,\\infty)$",
+      "$(-\\infty,-2]\\setminus\\{1\\}$"
+    ]
+  },
+  {
+    "number": 4,
+    "marks": 1,
+    "section": "A",
+    "question": "For $x\\in\\mathbb R\\setminus\\mathbb Z$, the value of $\\lfloor x\\rfloor+\\lfloor-x\\rfloor$ is",
+    "options": [
+      "$0$",
+      "$1$",
+      "$-1$",
+      "$2\\lfloor x\\rfloor$"
+    ]
+  },
+  {
+    "number": 5,
+    "marks": 1,
+    "section": "A",
+    "question": "Assertion: $f(x)=\\dfrac{x^2-4}{x-2}$ and $g(x)=x+2$, each on its largest real domain and with codomain $\\mathbb R$, are equal functions.\nReason: Equal functions must have the same domain and the same value at every element of that domain.",
+    "assertion": true
+  },
+  {
+    "number": 6,
+    "marks": 1,
+    "section": "A",
+    "question": "Assertion: For $f:\\mathbb R\\to\\mathbb R$, $f(x)=(x-3)^2+2$, the range is $[2,\\infty)$.\nReason: $(x-3)^2$ takes every non-negative real value as $x$ varies over $\\mathbb R$.",
+    "assertion": true
+  },
+  {
+    "number": 7,
+    "marks": 2,
+    "section": "B",
+    "question": "Let $A=\\{-2,-1,0,1,2\\}$, $B=\\{0,1,4,9\\}$ and $R=\\{(x,y)\\in A\\times B:y=x^2\\}$. Write $R$ in roster form. State its domain, codomain and range, and decide whether it defines a function from $A$ to $B$."
+  },
+  {
+    "number": 8,
+    "marks": 2,
+    "section": "B",
+    "question": "Find the largest real domain of $h(x)=\\dfrac{1}{\\sqrt{9-x^2}}$. Explain whether the endpoints belong to the domain."
+  },
+  {
+    "number": 9,
+    "marks": 2,
+    "section": "B",
+    "question": "For $p(x)=\\log_2(x-1)$, find the domain and the value of $x$ for which $p(x)=3$.\nOR\nFor $q(x)=2^x+1$, find the range and the value of $x$ for which $q(x)=9$."
+  },
+  {
+    "number": 10,
+    "marks": 3,
+    "section": "C",
+    "question": "Let $A=\\{1,2,3\\}$ and $B=\\{2,4,6\\}$. Define $R=\\{(x,y)\\in A\\times B:x<y\\}$. List all ordered pairs of $R$, state its domain and range, and explain why $R$ is not a function from $A$ to $B$."
+  },
+  {
+    "number": 11,
+    "marks": 3,
+    "section": "C",
+    "question": "Let $f(x)=\\sqrt{x-1}$ and $g(x)=\\sqrt{5-x}$, each on its largest real domain. Find the domains of $f+g$, $fg$ and $f/g$. Justify any difference between them."
+  },
+  {
+    "number": 12,
+    "marks": 3,
+    "section": "C",
+    "question": "Sketch $y=|x-2|-1$. State its vertex and intercepts, and find its range when the domain is restricted to $[0,5]$.\nOR\nSketch $y=\\lfloor x\\rfloor$ on $[-1,2)$. Clearly indicate open and closed endpoints, and state the range."
+  },
+  {
+    "number": 13,
+    "marks": 5,
+    "section": "D",
+    "question": "Consider $f(x)=\\dfrac{2x-3}{x+1}$ on its largest real domain, with codomain $\\mathbb R$.\n(a) Find its domain. [1]\n(b) Write $f(x)$ in the form $a+\\dfrac{b}{x+1}$. [1]\n(c) Prove that $2$ is not in its range. [1]\n(d) For an arbitrary $y\\neq2$, find an allowed input $x$ for which $f(x)=y$. Hence state the range. [2]"
+  },
+  {
+    "number": 14,
+    "marks": 4,
+    "section": "E",
+    "question": "A parcel service charges ₹40 for a mass up to and including 1 kg, and ₹15 for every additional kilogram or part of a kilogram. It accepts parcels with real mass $m$ satisfying $0<m\\leq4$. Let $C(m)$ be the charge in rupees.\n(a) Find $C(1)$ and $C(1.01)$. [1]\n(b) Write $C(m)$ as a piecewise function on its complete domain. [2]\n(c) State its range. Is $C$ a function even though two different masses can have the same charge? Explain. [1]"
+  }
+]

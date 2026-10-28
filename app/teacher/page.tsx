@@ -8,6 +8,7 @@ import SolutionSteps from '@/app/solution-steps';
 import StudentActivity from './student-activity';
 import PaymentRequests from './payment-requests';
 import { teacherDate } from './teacher-date';
+import { objectiveMaximum, paperMaximum, displayQuestion } from '@/lib/paper-format';
 
 const writtenMarks: Record<number, number> = { 17:2, 18:2, 19:2, 20:3, 21:3, 22:3, 23:5, 24:4 };
 const paperReviews = Object.fromEntries(Object.values(paperDefinitionsById).map((paper) => [paper.id, {
@@ -146,7 +147,7 @@ export default function TeacherReviewPage() {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ marks, feedback }),
       }));
-      setMessage(`Marks saved. Total: ${Number(payload.totalScore ?? 0)}/40.`);
+      setMessage(`Marks saved. Total: ${Number(payload.totalScore ?? 0)}/${paperMaximum(detail!.submission.paper_id)}.`);
       await loadList();
       await openSubmission(selectedId);
     } catch (error) {
@@ -283,7 +284,7 @@ export default function TeacherReviewPage() {
               <span className="submission-card-top"><strong>{submission.student_name}</strong><em className={submission.status}>{submission.status === 'marked' ? 'Marked' : 'To review'}</em></span>
               <span className="submission-card-chapter">{paper?.chapter ?? 'Chapter test'}</span>
               <span className="submission-card-meta">{paper?.board ?? 'CBSE'} · Grade {paper?.grade ?? 10} · Paper {paper?.paperNumber ?? '01'}</span>
-              <span className="submission-card-bottom"><time>{teacherDate(submission.submitted_at)}</time><b>{submission.status === 'marked' ? `${submission.total_score}/40` : `MCQ ${submission.mcq_score}/16`}</b></span>
+              <span className="submission-card-bottom"><time>{teacherDate(submission.submitted_at)}</time><b>{submission.status === 'marked' ? `${submission.total_score}/${paperMaximum(submission.paper_id)}` : `MCQ ${submission.mcq_score}/${objectiveMaximum(submission.paper_id)}`}</b></span>
               {submission.status !== 'marked' && <span className="teacher-review-due">Review by {teacherDate(submission.submitted_at, 24)}</span>}
             </button>;
           })}{!submissions.some(s => submissionFilter === 'all' || (submissionFilter === 'marked' ? s.status === 'marked' : s.status !== 'marked')) && <p className="submission-filter-empty">{submissionFilter === 'review' ? 'All caught up. No papers waiting for review.' : 'No marked papers yet.'}</p>}</div>}
@@ -298,7 +299,7 @@ export default function TeacherReviewPage() {
             <>
               <header className="review-heading">
                 <div><p>{selectedPaper.title}</p><h2>{detail.submission.student_name}</h2><span>{detail.submission.user_email}</span></div>
-                <div className="mcq-score"><span>MCQ score</span><strong>{detail.submission.mcq_score}/16</strong></div>
+                <div className="mcq-score"><span>MCQ score</span><strong>{detail.submission.mcq_score}/{objectiveMaximum(detail.submission.paper_id)}</strong></div>
               </header>
 
               <div className="written-review-list">
@@ -306,7 +307,7 @@ export default function TeacherReviewPage() {
                   const questionUploads = detail.uploads.filter((upload) => upload.question_number === question.number);
                   return (
                     <article className="written-review" key={question.number}>
-                      <div className="written-review-copy"><strong>Question {question.number}</strong><p><MathText>{question.text}</MathText></p></div>
+                      <div className="written-review-copy"><strong>Question {displayQuestion(detail.submission.paper_id, question.number)}</strong><p><MathText>{question.text}</MathText></p></div>
                       <div className="answer-files">
                         {questionUploads.map((upload, index) => (
                           <a key={upload.id} href={`/api/teacher/submissions/${detail.submission.id}/files/${upload.id}`} target="_blank" rel="noreferrer">
@@ -347,8 +348,8 @@ export default function TeacherReviewPage() {
                 <textarea id="teacher-feedback" value={feedback} onChange={(event) => setFeedback(event.target.value)} maxLength={2000} placeholder="Write a short comment for the student…" />
               </div>
               <footer className="review-actions">
-                <span>MCQ {detail.submission.mcq_score}/16 + Written {writtenTotal}/24</span>
-                <strong>Total {detail.submission.mcq_score + writtenTotal}/40</strong>
+                <span>MCQ {detail.submission.mcq_score}/{objectiveMaximum(detail.submission.paper_id)} + Written {writtenTotal}/24</span>
+                <strong>Total {detail.submission.mcq_score + writtenTotal}/{paperMaximum(detail.submission.paper_id)}</strong>
                 <button type="button" onClick={() => void saveMarks()} disabled={saving}>{saving ? <Loader2 /> : detail.submission.status === 'marked' ? <CheckCircle2 /> : <Save />}{saving ? 'Saving…' : 'Save marks'}</button>
               </footer>
             </>
