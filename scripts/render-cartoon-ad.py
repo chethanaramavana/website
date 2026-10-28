@@ -5,12 +5,36 @@ maths graphics, captured website cards, original crest, serif type and clean cut
 """
 from pathlib import Path
 import sys,importlib.util,subprocess
-from PIL import Image,ImageDraw
+from PIL import Image,ImageDraw,ImageFont
+import functools
 sys.dont_write_bytecode=True
 P=Path(__file__).resolve().parents[1]
 s=importlib.util.spec_from_file_location('ad',P/'scripts/render-ad-rebuild.py')
 ad=importlib.util.module_from_spec(s);s.loader.exec_module(ad)
-R=P/'outputs/video-maths-basics/cartoon-v20';R.mkdir(exist_ok=True)
+R=P/'outputs/video-maths-basics/ad-type-v21';R.mkdir(exist_ok=True)
+original_font=ad.font
+@functools.lru_cache(None)
+def advertising_font(n,bold=False):
+    if bold:
+        f=ImageFont.truetype(str(P/'tmp/report-font-sources/balootamma2-BalooTamma2[wght].ttf'),round(n*1.12))
+        f.set_variation_by_axes([800])
+        return f
+    return original_font(n,False)
+ad.font=advertising_font
+original_txt=ad.txt
+def advertising_text(d,s,x,y,n=48,bold=False,anchor='lt',fill=ad.INK):
+    # A single thin accent guides the eye without adding decorative backgrounds.
+    if bold and n>=60 and any(k in s.lower() for k in ['parents','fractions','visually','learned']):
+        b=d.textbbox((x,y),s,font=ad.font(n,bold),anchor=anchor)
+        d.line((b[0],b[3]+9,min(b[2],b[0]+155),b[3]+9),fill=ad.GOLD,width=6)
+    original_txt(d,s,x,y,n,bold,anchor,fill)
+ad.txt=advertising_text
+def mathematical_fraction(d,x,y,a,b,n=70):
+    f=original_font(n,True)
+    d.text((x,y),str(a),font=f,fill=ad.INK,anchor='mt')
+    d.line((x-n*.45,y+n*1.08,x+n*.45,y+n*1.08),fill=ad.INK,width=4)
+    d.text((x,y+n*1.22),str(b),font=f,fill=ad.INK,anchor='mt')
+ad.fraction=mathematical_fraction
 student=Image.open(R/'assets/cartoon-student.png').convert('RGBA')
 SCENES=[(0,4),(1,2),(2,3),(3,4),(4,5),(5,5),(6,3),(8,4)]
 def frame(i,u,portrait):
@@ -35,11 +59,11 @@ def frame(i,u,portrait):
     return im
 def render(portrait):
     label='Mobile' if portrait else 'Widescreen';w,h=(1080,1920) if portrait else (1920,1080)
-    audio=ad.B/'wording-v15'/f'Ramavana-Polished-Wording-{label}.mp4'
-    target=R/f'Ramavana-Cartoon-Advert-{label}.mp4'
+    audio=ad.B/'cartoon-v20'/f'Ramavana-Cartoon-Advert-{label}.mp4'
+    target=R/f'Ramavana-Advert-Type-{label}.mp4'
     p=subprocess.Popen([ad.FF,'-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{w}x{h}','-r','24','-i','pipe:0',
         '-i',str(audio),'-map','0:v:0','-map','1:a:0','-t','30','-c:v','libx264','-preset','veryfast','-crf','18','-threads','4',
-        '-pix_fmt','yuv420p','-af','afade=t=out:st=28.5:d=1.5','-c:a','aac','-b:a','256k','-movflags','+faststart',str(target)],stdin=subprocess.PIPE)
+        '-pix_fmt','yuv420p','-c:a','copy','-movflags','+faststart',str(target)],stdin=subprocess.PIPE)
     for i,duration in SCENES:
         for k in range(duration*24):p.stdin.write(frame(i,k/(duration*24-1),portrait).tobytes())
         print(label,'scene',i,flush=True)
