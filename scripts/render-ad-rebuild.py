@@ -7,7 +7,7 @@ from pathlib import Path
 import sys,subprocess,importlib.util,json,math,functools
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 sys.dont_write_bytecode=True
-P=Path(__file__).resolve().parents[1];B=P/'outputs/video-maths-basics';R=B/'clear-copy-v17'
+P=Path(__file__).resolve().parents[1];B=P/'outputs/video-maths-basics';R=B/'clean-transitions-v18'
 spec=importlib.util.spec_from_file_location('music',P/'scripts/render-parents-ad.py')
 music=importlib.util.module_from_spec(spec);spec.loader.exec_module(music)
 FF=music.source.FF;FPS=24;DUR=[5,3,4,5,6,6,4,4,6]
@@ -126,18 +126,16 @@ def frame(i,u,portrait):
     return im
 def render(portrait):
     label='Mobile' if portrait else 'Widescreen';w,h=(1080,1920) if portrait else (1920,1080)
-    target=R/f'Ramavana-Clear-Wording-{label}.mp4'
+    target=R/f'Ramavana-Clean-Transitions-{label}.mp4'
     # Copy the approved music bit-for-bit while revising on-screen captions.
     audio_source=B/'wording-v15'/f'Ramavana-Polished-Wording-{label}.mp4'
     p=subprocess.Popen([FF,'-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{w}x{h}','-r',str(FPS),'-i','pipe:0',
         '-i',str(audio_source),'-map','0:v:0','-map','1:a:0','-c:v','libx264','-preset','veryfast','-crf','18','-threads','4','-pix_fmt','yuv420p','-c:a','copy','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
-    old=None
     for i,duration in enumerate(DUR):
         for k in range(duration*FPS):
             im=frame(i,k/(duration*FPS-1),portrait)
-            if old is not None and k<8:im=Image.blend(old,im,ease((k+1)/8))
             p.stdin.write(im.tobytes())
-        old=im;print(label,'scene',i+1,flush=True)
+        print(label,'scene',i+1,flush=True)
     p.stdin.close();assert p.wait()==0
 if __name__=='__main__':
     R.mkdir(exist_ok=True)
