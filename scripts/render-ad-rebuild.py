@@ -7,7 +7,7 @@ from pathlib import Path
 import sys,subprocess,importlib.util,json,math,functools
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 sys.dont_write_bytecode=True
-P=Path(__file__).resolve().parents[1];B=P/'outputs/video-maths-basics';R=B/'wording-v15'
+P=Path(__file__).resolve().parents[1];B=P/'outputs/video-maths-basics';R=B/'typography-v16'
 spec=importlib.util.spec_from_file_location('music',P/'scripts/render-parents-ad.py')
 music=importlib.util.module_from_spec(spec);spec.loader.exec_module(music)
 FF=music.source.FF;FPS=24;DUR=[5,3,4,5,6,6,4,4,6]
@@ -21,7 +21,12 @@ gdir=B/'story-v13/assets';g=Image.open(gdir/'grade-choices.png').convert('RGB');
 g=g.crop(tuple(round(v*s) for v in [r['x'],r['y'],r['x']+r['w'],r['y']+r['h']]))
 cards=[g.crop((round(i*292*g.width/1152),0,round((i*292+276)*g.width/1152),g.height)) for i in range(4)]
 @functools.lru_cache(None)
-def font(n,bold=False):return ImageFont.truetype('C:/Windows/Fonts/'+('seguisb.ttf' if bold else 'segoeui.ttf'),n)
+def font(n,bold=False):
+    if bold:
+        f=ImageFont.truetype(str(P/'tmp/report-font-sources/sourceserif4-SourceSerif4[opsz,wght].ttf'),n)
+        f.set_variation_by_axes([650,32])
+        return f
+    return ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',n)
 def ease(t):return .5-.5*math.cos(math.pi*max(0,min(1,t)))
 def txt(d,s,x,y,n=48,bold=False,anchor='lt',fill=INK):d.text((x,y),s,font=font(n,bold),fill=fill,anchor=anchor)
 def lines(d,s,x,y,width,n,bold=False):
@@ -33,8 +38,8 @@ def lines(d,s,x,y,width,n,bold=False):
             if d.textlength(test,font=font(n,bold))>width and row:out.append(row);row=word
             else:row=test
         out.append(row)
-    for i,row in enumerate(out):txt(d,row,x,y+i*n*1.26,n,bold)
-    return len(out)*n*1.26
+    for i,row in enumerate(out):txt(d,row,x,y+i*n*1.22,n,bold)
+    return len(out)*n*1.22
 def place(im,asset,box):
     x,y,w,h=map(int,box);a=ImageOps.contain(asset,(w,h),Image.Resampling.LANCZOS)
     im.paste(a,(x+(w-a.width)//2,y+(h-a.height)//2),a if a.mode=='RGBA' else None)
@@ -121,9 +126,11 @@ def frame(i,u,portrait):
     return im
 def render(portrait):
     label='Mobile' if portrait else 'Widescreen';w,h=(1080,1920) if portrait else (1920,1080)
-    target=R/f'Ramavana-Polished-Wording-{label}.mp4'
+    target=R/f'Ramavana-Refined-Type-{label}.mp4'
+    # Preserve the approved music bit-for-bit; only rendered typography changes.
+    audio_source=B/'wording-v15'/f'Ramavana-Polished-Wording-{label}.mp4'
     p=subprocess.Popen([FF,'-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{w}x{h}','-r',str(FPS),'-i','pipe:0',
-        '-i',str(R/'original-instrumental.wav'),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','4','-pix_fmt','yuv420p','-c:a','aac','-b:a','256k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
+        '-i',str(audio_source),'-map','0:v:0','-map','1:a:0','-c:v','libx264','-preset','veryfast','-crf','18','-threads','4','-pix_fmt','yuv420p','-c:a','copy','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
     old=None
     for i,duration in enumerate(DUR):
         for k in range(duration*FPS):
@@ -133,7 +140,7 @@ def render(portrait):
         old=im;print(label,'scene',i+1,flush=True)
     p.stdin.close();assert p.wait()==0
 if __name__=='__main__':
-    R.mkdir(exist_ok=True);music.ROOT=R;music.TOTAL=sum(DUR);music.music()
+    R.mkdir(exist_ok=True)
     for portrait in [False,True]:
         for i in range(len(DUR)):frame(i,.8,portrait).save(R/f'frame-{i}-{portrait}.jpg')
     render(False);render(True)
