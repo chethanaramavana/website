@@ -1,7 +1,7 @@
 """30-second music-only advert: one cartoon student, in the opening only.
 
 No parent photographs or repeated character scenes. Preserve the existing exact
-maths graphics, captured website cards, original crest, serif type and clean cuts.
+maths graphics, captured website cards, original crest, rounded type and clean cuts.
 """
 from pathlib import Path
 import sys,importlib.util,subprocess
@@ -11,7 +11,7 @@ sys.dont_write_bytecode=True
 P=Path(__file__).resolve().parents[1]
 s=importlib.util.spec_from_file_location('ad',P/'scripts/render-ad-rebuild.py')
 ad=importlib.util.module_from_spec(s);s.loader.exec_module(ad)
-R=P/'outputs/video-maths-basics/ad-type-v21';R.mkdir(exist_ok=True)
+R=P/'outputs/video-maths-basics/ad-type-v22';R.mkdir(exist_ok=True)
 original_font=ad.font
 @functools.lru_cache(None)
 def advertising_font(n,bold=False):
@@ -35,7 +35,7 @@ def mathematical_fraction(d,x,y,a,b,n=70):
     d.line((x-n*.45,y+n*1.08,x+n*.45,y+n*1.08),fill=ad.INK,width=4)
     d.text((x,y+n*1.22),str(b),font=f,fill=ad.INK,anchor='mt')
 ad.fraction=mathematical_fraction
-student=Image.open(R/'assets/cartoon-student.png').convert('RGBA')
+student=Image.open(P/'outputs/video-maths-basics/ad-type-v21/assets/cartoon-student.png').convert('RGBA')
 SCENES=[(0,4),(1,2),(2,3),(3,4),(4,5),(5,5),(6,3),(8,4)]
 def frame(i,u,portrait):
     if i not in [0,1]:return ad.frame(i,u,portrait)
@@ -53,8 +53,15 @@ def frame(i,u,portrait):
         x,y,bw,bh=box;y+=int(30*(1-ad.ease(u/.25)))
         ad.place(im,student,(x,y,bw,bh))
     else:
-        ad.lines(d,'We’re here to help.',70,650 if portrait else 430,w-140,78,True)
-        ad.lines(d,'Maths explained clearly.',70,800 if portrait else 570,w-140,44)
+        # A centred two-line title gives this short reassurance its own presence.
+        size=118 if portrait else 138
+        top=660 if portrait else 315
+        gap=155 if portrait else 175
+        ad.txt(d,'We’re here',w/2,top,size,True,anchor='mt')
+        ad.txt(d,'to help.',w/2,top+gap,size,True,anchor='mt')
+        accent=top+gap+135
+        d.line((w/2-95,accent,w/2+95,accent),fill=ad.GOLD,width=7)
+        ad.txt(d,'Maths explained clearly.',w/2,accent+58,46,anchor='mt')
     ad.brand(im,w)
     return im
 def render(portrait):
