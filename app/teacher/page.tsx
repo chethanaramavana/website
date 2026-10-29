@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, BookOpen, CheckCircle2, FileText, Loader2, Pencil, RefreshCw, Save } from 'lucide-react';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
@@ -102,7 +102,29 @@ export default function TeacherReviewPage() {
     }
   }
 
+  const unsavedCorrections = useRef(new Set<string>());
+  const trackCorrections = useCallback((fileId: string, dirty: boolean) => {
+    if (dirty) unsavedCorrections.current.add(fileId); else unsavedCorrections.current.delete(fileId);
+  }, []);
+  useEffect(() => {
+    const guard = (event: MouseEvent) => {
+      const link = (event.target as Element)?.closest?.('a[href]');
+      if (link && unsavedCorrections.current.size) {
+        event.preventDefault(); event.stopPropagation();
+        setMessage('Please wait for corrections to save, or retry the save, before leaving this paper.');
+      }
+    };
+    document.addEventListener('click', guard, true);
+    return () => document.removeEventListener('click', guard, true);
+  }, []);
+
+  function changeTeacherView(view: typeof teacherView) {
+    if (unsavedCorrections.current.size) { setMessage('Please save pending corrections before leaving this paper.'); return; }
+    setTeacherView(view);
+  }
+
   async function openSubmission(id: string) {
+    if (unsavedCorrections.current.size) { setMessage('Please wait for corrections to save, or retry the save, before opening another paper.'); return; }
     setSelectedId(id);
     setDetail(null);
     setMessage('');
@@ -140,6 +162,7 @@ export default function TeacherReviewPage() {
 
   async function saveMarks() {
     if (!selectedId) return;
+    if (unsavedCorrections.current.size) { setMessage('Please wait for corrections to save, or retry the save, before saving marks.'); return; }
     setSaving(true);
     setMessage('');
     try {
@@ -177,7 +200,8 @@ export default function TeacherReviewPage() {
   }
 
   async function openPaperLibrary() {
-    setTeacherView('papers');
+    if (unsavedCorrections.current.size) { setMessage('Please save pending corrections before leaving this paper.'); return; }
+    changeTeacherView('papers');
     if (papers.length) return;
     setPaperLoading(true);
     setMessage('');
@@ -259,9 +283,9 @@ export default function TeacherReviewPage() {
       {message && <div className="teacher-message" aria-live="polite">{message}</div>}
 
       <nav className="teacher-mode-nav" aria-label="Teacher workspace">
-        <button className={teacherView === 'reviews' ? 'active' : ''} aria-pressed={teacherView === 'reviews'} type="button" onClick={() => setTeacherView('reviews')}><FileText /><span>Student tests</span></button>
-        <button className={teacherView === 'activity' ? 'active' : ''} aria-pressed={teacherView === 'activity'} type="button" onClick={() => setTeacherView('activity')}><span>Activity</span></button>
-        <button className={teacherView === 'payments' ? 'active' : ''} aria-pressed={teacherView === 'payments'} type="button" onClick={() => setTeacherView('payments')}><span>Payments</span>{payments.some(p => p.status === 'pending' && p.payment_source === 'manual') && <b>{payments.filter(p => p.status === 'pending' && p.payment_source === 'manual').length}</b>}</button>
+        <button className={teacherView === 'reviews' ? 'active' : ''} aria-pressed={teacherView === 'reviews'} type="button" onClick={() => changeTeacherView('reviews')}><FileText /><span>Student tests</span></button>
+        <button className={teacherView === 'activity' ? 'active' : ''} aria-pressed={teacherView === 'activity'} type="button" onClick={() => changeTeacherView('activity')}><span>Activity</span></button>
+        <button className={teacherView === 'payments' ? 'active' : ''} aria-pressed={teacherView === 'payments'} type="button" onClick={() => changeTeacherView('payments')}><span>Payments</span>{payments.some(p => p.status === 'pending' && p.payment_source === 'manual') && <b>{payments.filter(p => p.status === 'pending' && p.payment_source === 'manual').length}</b>}</button>
         <button className={teacherView === 'papers' ? 'active' : ''} aria-pressed={teacherView === 'papers'} type="button" onClick={() => void openPaperLibrary()}><Pencil /><span>Question papers</span></button>
         <a href="/teacher/free-mcq"><span>MCQ results</span></a>
         <a href="/teacher/weekly-problems"><span>Weekly problems</span></a>
@@ -311,7 +335,7 @@ export default function TeacherReviewPage() {
                       <div className="written-review-copy"><strong>Question {displayQuestion(detail.submission.paper_id, question.number)}</strong><p><MathText>{question.text}</MathText></p></div>
                       <label className="mark-field"><span>Marks <small>½ allowed</small></span><input type="number" min="0" max={question.marks} step={question.marks > 1 ? 0.5 : 1} inputMode="decimal" value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
                       <div className="answer-marking-workspace">
-                        <AnswerViewer key={`${detail.submission.id}-${question.number}`} submissionId={detail.submission.id} files={questionUploads} question={displayQuestion(detail.submission.paper_id, question.number)} />
+                        <AnswerViewer key={`${detail.submission.id}-${question.number}`} submissionId={detail.submission.id} files={questionUploads} onDirty={trackCorrections} question={displayQuestion(detail.submission.paper_id, question.number)} />
                       <details className="evaluation-sheet" open>
                         <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
                         <div className="evaluation-model-answer"><span>Model solution</span><SolutionSteps solution={question.modelSolution} /></div>
