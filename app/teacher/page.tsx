@@ -6,6 +6,7 @@ import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import MathText from '@/app/notes/math-text';
 import SolutionSteps from '@/app/solution-steps';
 import StudentActivity from './student-activity';
+import AnswerViewer from './answer-viewer';
 import PaymentRequests from './payment-requests';
 import { teacherDate } from './teacher-date';
 import { objectiveMaximum, paperMaximum, displayQuestion } from '@/lib/paper-format';
@@ -308,23 +309,19 @@ export default function TeacherReviewPage() {
                   return (
                     <article className="written-review" key={question.number}>
                       <div className="written-review-copy"><strong>Question {displayQuestion(detail.submission.paper_id, question.number)}</strong><p><MathText>{question.text}</MathText></p></div>
-                      <div className="answer-files">
-                        {questionUploads.map((upload, index) => (
-                          <a key={upload.id} href={`/api/teacher/submissions/${detail.submission.id}/files/${upload.id}`} target="_blank" rel="noreferrer">
-                            <FileText /> Answer {index + 1}<small>{upload.file_name}</small>
-                          </a>
-                        ))}
-                      </div>
                       <label className="mark-field"><span>Marks <small>½ allowed</small></span><input type="number" min="0" max={question.marks} step={question.marks > 1 ? 0.5 : 1} inputMode="decimal" value={marks[String(question.number)] ?? 0} onChange={(event) => setMarks((current) => ({ ...current, [String(question.number)]: Number(event.target.value) }))} /><em>/ {question.marks}</em></label>
-                      <details className="evaluation-sheet">
+                      <div className="answer-marking-workspace">
+                        <AnswerViewer key={`${detail.submission.id}-${question.number}`} submissionId={detail.submission.id} files={questionUploads} question={displayQuestion(detail.submission.paper_id, question.number)} />
+                      <details className="evaluation-sheet" open>
                         <summary><span>Answer key &amp; evaluation sheet</span><strong>{question.marks} marks</strong></summary>
                         <div className="evaluation-model-answer"><span>Model solution</span><SolutionSteps solution={question.modelSolution} /></div>
                         <ol>
                           {question.markingScheme.map((step, index) => (
-                            <li key={`${question.number}-${index}`}><span>{step.criterion}</span><strong>{step.marks} mark</strong></li>
+                            <li key={`${question.number}-${index}`}><span><MathText>{step.criterion}</MathText></span><strong>{step.marks} {step.marks === 1 ? 'mark' : 'marks'}</strong></li>
                           ))}
                         </ol>
                       </details>
+                      </div>
                     </article>
                   );
                 })}

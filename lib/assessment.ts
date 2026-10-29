@@ -5,6 +5,7 @@ import { grade11PaperAssessments } from './grade11-papers';
 import { grade12PaperAssessments } from './grade12-papers';
 import { relationsPracticePaper } from './relations-practice-paper';
 import { RELATIONS_TEST_ID } from './paper-format';
+import { relationsMarking } from './relations-marking';
 
 export const writtenQuestionMarks: Record<number, number> = {
   17: 2, 18: 2, 19: 2, 20: 3, 21: 3, 22: 3, 23: 5, 24: 4,
@@ -33,6 +34,8 @@ const markingStageLabels: Record<number, string[]> = {
 };
 
 function solutionFragments(solution: string) {
+  // Never split a LaTeX expression at its punctuation.
+  if (solution.includes('$')) return solution.split(/\n+/).map(part => part.trim()).filter(Boolean);
   return solution
     .replace(/\s+(?=\([a-z]\)\s)/gi, ' | ')
     .split(/\s+\|\s+|(?<=[.!?])\s+(?=[A-Z(])|;\s+|,\s+(?=(?:so|hence|therefore|giving|then)\b)/i)
@@ -117,7 +120,7 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
 export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(
   Object.entries(paperAssessmentSources).map(([paperId, assessment]) => [paperId, {
     ...assessment,
-    markingSchemes: buildDefaultMarkingSchemes(assessment.writtenSolutions),
+    markingSchemes: paperId === RELATIONS_TEST_ID ? relationsMarking : buildDefaultMarkingSchemes(assessment.writtenSolutions),
   }]),
 );
 

@@ -32,7 +32,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     const savedDocument = savedPaper ? JSON.parse(savedPaper.content_json) as SavedPaperDocument : null;
     const paper = savedDocument?.paper ?? fallbackPaper;
     const writtenSolutions = savedDocument?.writtenSolutions ?? assessment.writtenSolutions;
-    const markingSchemes = savedDocument?.markingSchemes ?? buildDefaultMarkingSchemes(writtenSolutions);
+    const markingSchemes = savedDocument?.markingSchemes ?? (savedDocument?.writtenSolutions ? buildDefaultMarkingSchemes(writtenSolutions) : assessment.markingSchemes);
     const writtenQuestions = Object.entries(paper.written).map(([numberText, value]) => {
       const number = Number(numberText);
       return {

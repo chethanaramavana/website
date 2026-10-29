@@ -123,3 +123,38 @@
  .teacher-shell .payment-request-card.pending.manual .payment-transaction { grid-column:1/-1; }
  .teacher-shell .payment-request-card.pending.manual .payment-review-actions { grid-column:1/-1; grid-row:3; }
 }
+
+/* Keep the student's work and the marking guide in one correction workspace. */
+.identity-learning .teacher-shell { width:min(1600px,calc(100% - 48px)); }
+.teacher-shell .teacher-workspace { grid-template-columns:260px minmax(0,1fr); }
+.teacher-shell .review-panel { min-width:0; padding:22px; }
+.answer-marking-workspace { grid-column:1 / -1; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px; align-items:start; min-width:0; }
+.answer-marking-workspace > .evaluation-sheet { grid-column:auto; min-width:0; }
+.answer-preview { min-width:0; border:1px solid #dce2e9; background:#fff; border-radius:6px; overflow:hidden; }
+.answer-preview-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding:12px; background:#f4f6f9; font:14px/1.4 var(--rmc-interface); }
+.answer-preview-toolbar label { display:flex; align-items:center; gap:6px; min-width:0; }
+.answer-preview-toolbar select { max-width:180px; min-height:32px; border:1px solid #c9d2df; border-radius:4px; background:white; color:#011e47; }
+.answer-preview-filename { margin:0; padding:8px 12px; font:12px/1.4 var(--rmc-interface); overflow-wrap:anywhere; color:#4e5b70; }
+.answer-image-scroll { height: min(680px,70vh); overflow:auto; background:#e9edf2; }
+.answer-image-scroll img { display:block; max-width:none; height:auto; }
+.answer-pdf { display:block; width:100%; height: min(680px,70vh); border:0; }
+.answer-preview-empty { padding:24px; background:#f4f6f9; color:#4e5b70; font:15px/1.5 var(--rmc-interface); }
+.teacher-shell .evaluation-sheet li { font:17px/1.8 var(--rmc-reading); color:#011e47; overflow-wrap:anywhere; }
+.teacher-shell .evaluation-sheet li span { margin-right:0; }
+.teacher-shell .evaluation-sheet .katex { font-size:1.05em; }
+.teacher-shell .evaluation-sheet .katex-display { overflow-x:auto; overflow-y:hidden; padding:8px 0; }
+.teacher-shell .evaluation-sheet .evaluation-model-answer ol { padding:12px 0 0 24px; gap:16px; }
+.teacher-shell .evaluation-sheet > ol { border-top:1px solid #dce2e9; padding:16px 16px 16px 38px; gap:16px; }
+.teacher-shell .evaluation-sheet > ol > li > strong { float:none; display:table; margin-top:6px; font:600 13px/1.5 var(--rmc-interface); }
+@media(max-width:1100px) {
+  .teacher-shell .teacher-workspace { grid-template-columns:1fr; }
+  .teacher-shell .submission-list { border-right:0; border-bottom:1px solid #dce2e9; }
+  .teacher-shell .submission-cards { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); max-height:260px; overflow:auto; }
+}
+@media(max-width:700px) {
+  .identity-learning .teacher-shell { width:calc(100% - 24px); }
+  .teacher-shell .review-panel { padding:12px; }
+  .answer-marking-workspace { grid-template-columns:1fr; }
+}
+.teacher-shell .evaluation-model-answer { overflow-x:auto; }
+.teacher-shell .evaluation-sheet > ol > li { overflow-x:auto; }

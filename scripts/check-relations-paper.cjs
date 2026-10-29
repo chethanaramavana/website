@@ -9,3 +9,9 @@ for(let x=-9.9;x<10;x+=.2){if(Math.abs(x-Math.round(x))>1e-8)assert.equal(Math.f
 for(const y of [-100,-3,0,1,1.99,2.01,3,100]){const x=(y+3)/(2-y);assert.notEqual(x,-1);assert(Math.abs((2*x-3)/(x+1)-y)<1e-8);}
 const charge=m=>40+15*(Math.ceil(m)-1);assert.deepEqual([1,1.01,2,2.01,3,3.01,4].map(charge),[40,55,55,70,70,85,85]);
 console.log(`PASS: 14 questions, 30 marks, ${formulas} valid KaTeX expressions; relation enumeration, floor identity, rational range and tariff boundaries checked.`);
+const {relationsMarking}=require('../lib/relations-marking.ts');
+for(const [number,steps] of Object.entries(relationsMarking)) {
+  assert.equal(steps.reduce((sum,step)=>sum+step.marks,0),qs.find(q=>q.number===Number(number)-10).marks);
+  for(const step of steps) for(const m of step.criterion.matchAll(/\$([^$]+)\$/g)) katex.renderToString(m[1],{throwOnError:true,strict:'error'});
+}
+console.log('PASS: all written marking allocations total correctly and all marking criteria render as valid mathematics.');
