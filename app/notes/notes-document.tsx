@@ -24,7 +24,7 @@ import WholeNumbersDocument from './whole-numbers-document';
 function Footer({ label }: { label: string }) {
   return (
     <footer className="notes-page-number">
-      Ramavana Mathematical Centre · {label}
+      Ramavana Mathematical Center · {label}
     </footer>
   );
 }

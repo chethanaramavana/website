@@ -46,7 +46,7 @@ export function ParentValueSection() {
           </div>
           <figure className="rmc-paper-preview">
             <div className="rmc-paper-sheet">
-              <img src="/ramavana-paper-logo.png" width="110" height="110" alt="Ramavana Mathematical Centre" loading="lazy" />
+              <img src="/ramavana-paper-logo.png" width="110" height="110" alt="Ramavana Mathematical Center" loading="lazy" />
               <div className="rmc-paper-context">CBSE · Class 10</div>
               <h4>Real Numbers</h4>
               <div className="rmc-paper-meta"><span>Paper 01</span><span>40 marks · 90 minutes</span></div>

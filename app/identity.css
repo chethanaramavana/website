@@ -148,6 +148,13 @@
 .rmc-contact-details h3 { font-size: 24px; font-weight: 700; }
 .rmc-contact-details>a { display: block; font-size: 17px; text-underline-offset: 4px; width: fit-content; overflow-wrap: anywhere; }
 .rmc-contact-details>a:first-of-type { margin-top: 20px; }
+.rmc-chat-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.rmc-contact-details .rmc-chat-button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; font-size: 16px; font-weight: 700; text-decoration: none; color: #ffffff; }
+.rmc-chat-whatsapp { background: #136c3a; }
+.rmc-chat-whatsapp:hover { background: #0e5329; }
+.rmc-chat-telegram { background: #1f5f8f; }
+.rmc-chat-telegram:hover { background: #164769; }
+.rmc-contact p.rmc-chat-note { font-size: 15px; }
 .rmc-footer { border-top: 1px solid var(--rmc-ink); padding-block: 25px 29px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .rmc-footer>div>span { font-size: 24px; font-weight: 700; }
 .rmc-footer p { color: var(--rmc-muted); font-size: 12px; }

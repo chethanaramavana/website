@@ -77,7 +77,7 @@ export default function WeeklyProblemBoard({
               <>
                 <span className="rmc-preview-edition">
                   {problems?.length
-                    ? 'Ramavana Mathematical Centre'
+                    ? 'Ramavana Mathematical Center'
                     : failed
                       ? 'Preview problem · Published problems are temporarily unavailable'
                       : 'Preview edition · From our problem notebook'}

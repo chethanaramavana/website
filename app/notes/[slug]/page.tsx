@@ -6,7 +6,7 @@ import IntegralsOnline from '../integrals-online';
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const notes = getChapterNotes(slug);
-  if (!notes) return { title: 'Chapter notes | Ramavana Mathematical Centre' };
+  if (!notes) return { title: 'Chapter notes | Ramavana Mathematical Center' };
   return {
     title: `${notes.chapter} Notes | Grade ${notes.grade ?? 10} Mathematics`,
     description: `Student-friendly ${notes.board ?? 'CBSE'} Grade ${notes.grade ?? 10} ${notes.chapter} notes with visual explanations, worked examples and practice.`,

@@ -7,6 +7,10 @@ import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
 import HomepageConcepts from './homepage-concepts';
 import Brand, { SiteFooter } from './brand';
 
+// Paste the public Telegram channel link here (for example 'https://t.me/ramavanamath'). The button stays hidden while this is empty.
+const telegramChannelUrl = '';
+const whatsAppUrl = 'https://wa.me/919353928169?text=' + encodeURIComponent('Hello Ramavana Mathematical Center, I would like to know more about maths practice for my child.');
+
 export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -47,7 +51,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <MathsBasicsFeature />
         <ParentValueSection />
 
-        <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a></div></section>
+        <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a><div className="rmc-chat-actions"><a className="rmc-chat-button rmc-chat-whatsapp" href={whatsAppUrl} target="_blank" rel="noopener noreferrer">Say hello on WhatsApp</a>{telegramChannelUrl && <a className="rmc-chat-button rmc-chat-telegram" href={telegramChannelUrl} target="_blank" rel="noopener noreferrer">Join the free Telegram channel</a>}</div>{telegramChannelUrl && <p className="rmc-chat-note">New question papers and weekly problems arrive first on Telegram.</p>}</div></section>
       </main>
       <SiteFooter />
     </div>

@@ -3,7 +3,7 @@ export default function Brand() {
     <a
       className="rmc-brand"
       href="/"
-      aria-label="Ramavana Mathematical Centre home"
+      aria-label="Ramavana Mathematical Center home"
     >
       <img
         className="rmc-crest"
@@ -40,7 +40,7 @@ export function SiteFooter() {
       <a
         className="rmc-footer-lockup"
         href="/"
-        aria-label="Ramavana Mathematical Centre home"
+        aria-label="Ramavana Mathematical Center home"
       >
         <img
           className="rmc-footer-crest"
@@ -57,7 +57,7 @@ export function SiteFooter() {
           alt="RAMAVANA"
         />
       </a>
-      <small>© 2026 Ramavana Mathematical Centre</small>
+      <small>© 2026 Ramavana Mathematical Center</small>
     </footer>
   );
 }

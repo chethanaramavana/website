@@ -43,7 +43,7 @@ export default function ReportCard({
           src="/ramavana-paper-logo.png"
           width="170"
           height="170"
-          alt="Ramavana Mathematical Centre"
+          alt="Ramavana Mathematical Center"
         />
         <div className="report-identity-copy">
           <h1>Progress report · {yearLabel}</h1>
@@ -156,7 +156,7 @@ export default function ReportCard({
           })}
         </p>
         <div>
-          <span>Ramavana Mathematical Centre</span>
+          <span>Ramavana Mathematical Center</span>
           <small>Run by professional mathematicians</small>
         </div>
       </footer>

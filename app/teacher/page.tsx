@@ -276,7 +276,7 @@ export default function TeacherReviewPage() {
     <main className="teacher-shell">
       <header className="teacher-header">
         <a href="/"><ArrowLeft /> Student website</a>
-        <div><p>Ramavana Mathematical Centre</p><h1>Teacher workspace</h1></div>
+        <div><p>Ramavana Mathematical Center</p><h1>Teacher workspace</h1></div>
         <button type="button" onClick={() => void loadList()} aria-label="Refresh submissions"><RefreshCw /></button>
       </header>
 

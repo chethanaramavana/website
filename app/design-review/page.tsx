@@ -76,7 +76,7 @@ export default function DesignReview() {
               src="/ramavana-paper-logo.png"
               width="170"
               height="170"
-              alt="Ramavana Mathematical Centre"
+              alt="Ramavana Mathematical Center"
             />
             <p>CBSE Mathematics · Grade 10 · Local preview</p>
             <h1>Chapter 1 — Real Numbers</h1>

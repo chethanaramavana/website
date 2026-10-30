@@ -529,7 +529,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
           <div className="centre-location-map">
             <span className="centre-location-map-fallback"><MapPin /> Interactive Google map</span>
             <iframe
-              title="Ramavana Mathematical Centre location on Google Maps"
+              title="Ramavana Mathematical Center location on Google Maps"
               src={googleMapsEmbedUrl}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -767,7 +767,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         key: order.keyId,
         amount: order.amount,
         currency: order.currency,
-        name: 'Ramavana Mathematical Centre',
+        name: 'Ramavana Mathematical Center',
         description: `${selectedPaper.chapter} chapter test`,
         order_id: order.orderId,
         prefill: { name, email: studentRecords.email },
@@ -1363,7 +1363,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
 
       <article className="question-paper">
         <header className="paper-heading">
-          <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Centre" width="720" height="720" decoding="async" />
+          <img src="/ramavana-paper-logo.webp" alt="Ramavana Mathematical Center" width="720" height="720" decoding="async" />
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>{currentPaper.board ?? 'CBSE'} Mathematics{(currentPaper.board ?? 'CBSE') === 'CBSE' && (currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>

@@ -28,7 +28,7 @@ export async function createReportPdf(
   const pdf = await PDFDocument.create();
   pdf.registerFontkit(fontkit);
   pdf.setTitle(`Progress report ${report.year} - ${report.name}`);
-  pdf.setAuthor('Ramavana Mathematical Centre');
+  pdf.setAuthor('Ramavana Mathematical Center');
   const [uiBytes, italicBytes, marksBytes, crestBytes] = await Promise.all([
     readAsset('/fonts/BalooTamma2-Regular.ttf'),
     readAsset('/fonts/SourceSerif4-Italic.ttf'),
@@ -283,7 +283,7 @@ export async function createReportPdf(
     header(true);
   }
   text(`Issued ${report.issued}`, M, y - 28, ui, 10, muted);
-  text('Ramavana Mathematical Centre', W - M - 205, y - 28, ui, 11);
+  text('Ramavana Mathematical Center', W - M - 205, y - 28, ui, 11);
   text('Run by professional mathematicians', W - M - 205, y - 46, ui, 9, muted);
   page.drawLine({
     start: { x: W - M - 205, y: y - 68 },
@@ -293,7 +293,7 @@ export async function createReportPdf(
   });
   const pages = pdf.getPages();
   pages.forEach((p, index) => {
-    p.drawText('Ramavana Mathematical Centre', {
+    p.drawText('Ramavana Mathematical Center', {
       x: M,
       y: 24,
       font: ui,

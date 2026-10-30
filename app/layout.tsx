@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ramavanamath.com'),
-  title: 'Ramavana Mathematical Centre | Mathematics Practice',
+  title: 'Ramavana Mathematical Center | Mathematics Practice',
   description:
     'Chapter-wise mathematics practice for CBSE, ICSE and IGCSE students.',
   icons: {
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://ramavanamath.com',
-    siteName: 'Ramavana Mathematical Centre',
-    title: 'Ramavana Mathematical Centre | Mathematics Practice',
+    siteName: 'Ramavana Mathematical Center',
+    title: 'Ramavana Mathematical Center | Mathematics Practice',
     description:
       'Clear chapter notes and exam-style mathematics practice for Grades 5 to 12.',
     images: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
         url: '/ramavana-pamphlet-whatsapp.jpg',
         width: 1749,
         height: 2481,
-        alt: 'Ramavana Mathematical Centre student pamphlet',
+        alt: 'Ramavana Mathematical Center student pamphlet',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ramavana Mathematical Centre | Mathematics Practice',
+    title: 'Ramavana Mathematical Center | Mathematics Practice',
     description:
       'Clear chapter notes and exam-style mathematics practice for Grades 5 to 12.',
     images: ['/ramavana-pamphlet-whatsapp.jpg'],

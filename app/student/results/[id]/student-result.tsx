@@ -47,7 +47,7 @@ export default function StudentResult({ id }: { id: string }) {
   const paper = savedPaper ?? paperDefinitionsById[result.submission.paper_id];
   return <main className="student-result-page">
     <a className="student-result-back" href="/student"><ArrowLeft /> Student account</a>
-    <header><img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Centre" width="170" height="170" /><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
+    <header><img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Center" width="170" height="170" /><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
     <section className="student-score-card">
       <div><span>MCQ</span><strong>{result.submission.mcq_score}/{objectiveMaximum(result.submission.paper_id)}</strong></div>
       <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/24</strong></div>

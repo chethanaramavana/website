@@ -5,7 +5,7 @@ import NotesPrintButton from './real-numbers/print-button';
 import MathText from './math-text';
 
 function Page({ title, children }: { title: string; children: ReactNode }) {
-  return <article className="notes-page simple-notes-page"><NotesBranding /><header className="notes-running-header"><span>ICSE · Grade 6 · Whole Numbers</span></header><h2>{title}</h2>{children}<footer className="notes-page-number">Ramavana Mathematical Centre · {title}</footer></article>;
+  return <article className="notes-page simple-notes-page"><NotesBranding /><header className="notes-running-header"><span>ICSE · Grade 6 · Whole Numbers</span></header><h2>{title}</h2>{children}<footer className="notes-page-number">Ramavana Mathematical Center · {title}</footer></article>;
 }
 
 function NumberLine({ subtract = false }: { subtract?: boolean }) {
