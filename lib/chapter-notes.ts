@@ -1,5 +1,6 @@
 import { grade6Notes } from './grade6-notes';
 import { icse6Notes } from './icse6-notes';
+import { icseUpperNotes } from './icse-upper-papers';
 import { grade11Notes } from './grade11-notes';
 import { grade12Notes } from './grade12-notes';
 
@@ -242,6 +243,7 @@ export const chapterNotesBySlug: Record<string, ChapterNotes> = Object.fromEntri
   ...grade11Notes,
   ...grade12Notes,
   ...icse6Notes,
+  ...icseUpperNotes,
 ].map((item) => [item.slug, item]));
 
 export function getChapterNotes(slug: string) {

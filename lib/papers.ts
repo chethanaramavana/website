@@ -1,9 +1,11 @@
 import { additionalPaperDefinitions } from './papers-additional';
 import { grade6PaperDefinitions } from './grade6-papers';
 import { icse6PaperDefinitions } from './icse6-papers';
+import { icseUpperPaperDefinitions } from './icse-upper-papers';
 import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 import { relationsTestDefinition } from './relations-test-definition';
+import { isThirtyMarkPaper } from './paper-format';
 
 export type QuestionSource = string;
 
@@ -140,16 +142,27 @@ export const paperDefinitions: Record<string, PaperDefinition> = {
   ...grade11PaperDefinitions,
   ...grade12PaperDefinitions,
   ...icse6PaperDefinitions,
+  ...icseUpperPaperDefinitions,
 };
 
 export const paperDefinitionsById = Object.fromEntries(
   [...Object.values(paperDefinitions), relationsTestDefinition].map((paper) => [paper.id, paper]),
 ) as Record<string, PaperDefinition>;
 
-export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE') {
+// Additional numbered papers for a chapter that already has a main paper (for example Paper 02).
+export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02']);
+
+export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE', paperNumber?: string) {
   return Object.values(paperDefinitionsById).find(
-    (paper) => (paper.board ?? 'CBSE') === board && (paper.grade ?? 10) === grade && paper.chapter === chapter,
+    (paper) => (paper.board ?? 'CBSE') === board && (paper.grade ?? 10) === grade && paper.chapter === chapter
+      && (paperNumber ? paper.paperNumber === paperNumber : !additionalChapterPaperIds.has(paper.id)),
   ) ?? null;
+}
+
+export function getAdditionalChapterPapers(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE') {
+  return Object.values(paperDefinitionsById).filter(
+    (paper) => additionalChapterPaperIds.has(paper.id) && (paper.board ?? 'CBSE') === board && (paper.grade ?? 10) === grade && paper.chapter === chapter,
+  );
 }
 
 const questionVisualTypes = new Set<QuestionVisual>([
@@ -163,7 +176,7 @@ const questionVisualTypes = new Set<QuestionVisual>([
 export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!value || typeof value !== 'object') return false;
   const paper = value as Partial<PaperDefinition>;
-  if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== 14) return false;
+  if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== (isThirtyMarkPaper(paper.id) ? 4 : 14)) return false;
   if (!Array.isArray(paper.assertions) || paper.assertions.length !== 2 || !paper.written) return false;
   if (paper.questionVisuals && (typeof paper.questionVisuals !== 'object' || Object.entries(paper.questionVisuals).some(([number, visual]) => !Number.isInteger(Number(number)) || !questionVisualTypes.has(visual as QuestionVisual)))) return false;
   if (paper.mcqs.some((item) => !item || typeof item.question !== 'string' || item.question.length > 600 || !Array.isArray(item.options) || item.options.length !== 4 || item.options.some((option) => typeof option !== 'string' || option.length > 250))) return false;

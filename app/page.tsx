@@ -49,8 +49,10 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import MathText from '@/app/notes/math-text';
-import { getPaperDefinition as getSharedPaperDefinition, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
+import { getPaperDefinition as getSharedPaperDefinition, getAdditionalChapterPapers, additionalChapterPaperIds, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
+import { answeringMinutes, displayQuestion, objectiveMaximum, paperMaximum } from '@/lib/paper-format';
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
+import { icseUpperChapters } from '@/lib/icse-upper-papers';
 import SolutionSteps from '@/app/solution-steps';
 import Homepage from './homepage';
 
@@ -155,7 +157,7 @@ const icseGrade6Chapters = [
 
 const chaptersByBoard: Record<BoardName, Record<number, string[]>> = {
   CBSE: { 6: grade6Chapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters },
-  ICSE: { 6: icseGrade6Chapters },
+  ICSE: { 6: icseGrade6Chapters, ...icseUpperChapters },
   IGCSE: {},
 };
 
@@ -323,12 +325,27 @@ const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
   },
 };
 
-function getPaperForChapter(board: BoardName, grade: number, chapterName: string) {
+function getPaperForChapter(board: BoardName, grade: number, chapterName: string, paperNumber?: string) {
   if (board === 'IGCSE') return null;
+  if (paperNumber) return getSharedPaperDefinition(grade, chapterName, board, paperNumber);
   return getSharedPaperDefinition(grade, chapterName, board)
     ?? (((board === 'CBSE' && paperDefinitions[chapterName] && (paperDefinitions[chapterName].grade ?? 10) === grade)
       ? paperDefinitions[chapterName]
       : null));
+}
+
+// `?paper=1` opens the main paper. `?paper=2` opens Paper 02 of the same chapter.
+function paperNumberFromSearch(search: string) {
+  const value = new URLSearchParams(search).get('paper');
+  return value && /^\d+$/.test(value) && Number(value) > 1 ? String(Number(value)).padStart(2, '0') : undefined;
+}
+
+function paperQuery(paperNumber?: string) {
+  return `?paper=${paperNumber ? Number(paperNumber) : 1}`;
+}
+
+function paperVariant(paper: { id: string; paperNumber: string } | null | undefined) {
+  return paper && additionalChapterPaperIds.has(paper.id) ? paper.paperNumber : undefined;
 }
 
 type HomePageProps = {
@@ -357,7 +374,15 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   const [studentRecords, setStudentRecords] = useState<StudentRecords | null>(null);
   const [requestedPaperId, setRequestedPaperId] = useState<string | null>(null);
   const [takingPaper, setTakingPaper] = useState(false);
-  useEffect(() => { if (initialPaper && new URLSearchParams(window.location.search).has('paper')) { setChapter(null); setRequestedPaperId(initialPaper.id); } }, []);
+  const [paperNumber, setPaperNumber] = useState<string | undefined>(undefined);
+  useEffect(() => {
+    if (!initialPaper || !new URLSearchParams(window.location.search).has('paper')) return;
+    const variant = paperNumberFromSearch(window.location.search);
+    const variantPaper = variant && initialBoard && initialGrade && initialChapter ? getPaperForChapter(initialBoard, initialGrade, initialChapter, variant) : null;
+    setPaperNumber(paperVariant(variantPaper));
+    setChapter(null);
+    setRequestedPaperId((variantPaper ?? initialPaper).id);
+  }, []);
   const [routePaymentChapter, setRoutePaymentChapter] = useState<string | null>(null);
 
   const loadStudentRecords = useCallback(async () => {
@@ -379,6 +404,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
     const hasAccess = studentRecords.access.includes(requestedPaperId)
       || studentRecords.submissions.some((submission) => submission.paper_id === requestedPaperId);
 
+    setPaperNumber(paperVariant(requestedPaper));
     if (requestedPaper && studentRecords.signedIn && hasAccess) {
       setBoard(requestedPaper.board ?? 'CBSE');
       setGrade(requestedPaper.grade ?? 10);
@@ -396,6 +422,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }
 
   function clearRequestedPaper() {
+    setPaperNumber(undefined);
     setTakingPaper(false);
     setRequestedPaperId(null);
     setRoutePaymentChapter(null);
@@ -430,7 +457,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
   }
 
   function openChapter(nextChapter: string) {
-    if (board && grade !== null) updateAddress(`${chapterPath(board, grade, nextChapter)}?paper=1`);
+    if (board && grade !== null) updateAddress(`${chapterPath(board, grade, nextChapter)}${paperQuery(paperNumber)}`);
     setTakingPaper(true);
     setChapter(nextChapter);
     requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'auto' }));
@@ -460,7 +487,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
         setChapter(null);
         return;
       }
-      const match = path.match(/^\/(cbse|icse)\/grade-(6|10|11|12)(?:\/ch-(\d+))?\/?$/);
+      const match = path.match(/^\/(cbse|icse)\/grade-(5|6|7|8|9|10|11|12)(?:\/ch-(\d+))?\/?$/);
       if (!match) return;
       const nextBoard = match[1].toUpperCase() as BoardName;
       const nextGrade = Number(match[2]);
@@ -469,7 +496,9 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       clearRequestedPaper();
       setBoard(nextBoard);
       setGrade(nextGrade);
-      const nextPaper = nextChapter ? getPaperForChapter(nextBoard, nextGrade, nextChapter) : null;
+      const variant = paperNumberFromSearch(window.location.search);
+      const nextPaper = nextChapter ? (variant ? getPaperForChapter(nextBoard, nextGrade, nextChapter, variant) : null) ?? getPaperForChapter(nextBoard, nextGrade, nextChapter) : null;
+      setPaperNumber(paperVariant(nextPaper));
       const hasAccess = nextPaper && studentRecords?.signedIn && (
         studentRecords.access.includes(nextPaper.id)
         || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
@@ -495,9 +524,9 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       {grade === null ? (
         <BoardView board={board} onHome={goHome} onOpenGrade={openGrade} />
       ) : !chapter ? (
-        <ChaptersView onCloseAccess={() => { const previous = routePaymentChapter; setRoutePaymentChapter(null); if (previous) setChapter(previous); }} onBrowseChapter={(name) => { clearRequestedPaper(); if (board && grade) updateAddress(chapterPath(board, grade, name)); setChapter(name); window.scrollTo({top: 0}); }} board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
+        <ChaptersView onCloseAccess={() => { const previous = routePaymentChapter; setRoutePaymentChapter(null); if (previous) setChapter(previous); }} onBrowseChapter={(name) => { clearRequestedPaper(); if (board && grade) updateAddress(chapterPath(board, grade, name)); setChapter(name); window.scrollTo({top: 0}); }} board={board} grade={grade} onHome={goHome} onBoard={() => openBoard(board)} onOpenChapter={openChapter} initialPendingChapter={routePaymentChapter} paperNumber={paperNumber} studentRecords={studentRecords} refreshStudentRecords={loadStudentRecords} />
       ) : (
-        <ChapterView takingPaper={takingPaper} onStartPaper={() => { setRoutePaymentChapter(chapter); setChapter(null); }} board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
+        <ChapterView takingPaper={takingPaper} paperNumber={paperNumber} onStartPaper={(variant) => { setPaperNumber(variant); setRoutePaymentChapter(chapter); setChapter(null); }} board={board} grade={grade} chapter={chapter} onHome={goHome} onBoard={() => openBoard(board)} onChapters={returnToChapters} />
       )}
 
       <section className="help-desk" id="help-desk" aria-labelledby="help-desk-title">
@@ -547,6 +576,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
 function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: () => void; onOpenGrade: (grade: number) => void }) {
   const isCbse = board === 'CBSE';
   const isIcse = board === 'ICSE';
+  const icseGrades = Object.keys(chaptersByBoard.ICSE).map(Number).sort((a, b) => a - b);
   return (
     <div className="content-view">
       <Breadcrumb items={[{ label: board }]} onHome={onHome} />
@@ -582,13 +612,15 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
         </section>
       ) : isIcse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>1 grade</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>{icseGrades.length} {icseGrades.length === 1 ? 'grade' : 'grades'}</span></div>
           <div className="grade-folder-list">
-            <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
-              <span className="folder-icon"><GraduationCap /></span>
-              <span><small>ICSE · CISCE Upper Primary Curriculum</small><strong>Grade 6</strong><em>18 chapters</em></span>
-              <ChevronRight />
-            </button>
+            {icseGrades.map((icseGrade) => (
+              <button key={icseGrade} className="grade-folder" type="button" onClick={() => onOpenGrade(icseGrade)}>
+                <span className="folder-icon"><GraduationCap /></span>
+                <span><small>{icseGrade === 6 ? 'ICSE · CISCE Upper Primary Curriculum' : icseGrade >= 11 ? 'ISC · Selina Concise Mathematics' : 'ICSE · Selina Concise Mathematics'}</small><strong>Grade {icseGrade}</strong><em>{chaptersFor('ICSE', icseGrade).length} chapters</em></span>
+                <ChevronRight />
+              </button>
+            ))}
           </div>
         </section>
       ) : (
@@ -624,7 +656,7 @@ declare global {
   }
 }
 
-function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, studentRecords, refreshStudentRecords, onBrowseChapter, onCloseAccess }: { onCloseAccess: () => void; onBrowseChapter: (chapter: string) => void; board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
+function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPendingChapter, paperNumber, studentRecords, refreshStudentRecords, onBrowseChapter, onCloseAccess }: { paperNumber?: string; onCloseAccess: () => void; onBrowseChapter: (chapter: string) => void; board: BoardName; grade: number; onHome: () => void; onBoard: () => void; onOpenChapter: (chapter: string) => void; initialPendingChapter?: string | null; studentRecords: StudentRecords | null; refreshStudentRecords: () => Promise<void> }) {
   const [pendingChapter, setPendingChapter] = useState<string | null>(null);
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('idle');
   const [razorpayStatus, setRazorpayStatus] = useState<RazorpayStatus>('idle');
@@ -632,7 +664,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   const razorpayRecoveryTimerRef = useRef<number | null>(null);
   const razorpayRecoveryAttemptsRef = useRef(0);
   const chapters = chaptersFor(board, grade);
-  const pendingPaper = pendingChapter ? getPaperForChapter(board, grade, pendingChapter) : null;
+  const pendingPaper = pendingChapter ? getPaperForChapter(board, grade, pendingChapter, paperNumber) : null;
   const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
   const selectedPaper = isAvailablePaper ? pendingPaper : null;
   const completedSubmission = selectedPaper
@@ -677,7 +709,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   }, [completedSubmission, pendingChapter, selectedPaper, studentRecords]);
 
   const checkRazorpayStatus = useCallback(async (chapterName: PaperDefinition['chapter'], options: { silent?: boolean } = {}) => {
-    const paper = getPaperForChapter(board, grade, chapterName);
+    const paper = getPaperForChapter(board, grade, chapterName, paperNumber);
     if (!paper || !studentRecords?.signedIn) return false;
     if (!options.silent) {
       setRazorpayStatus('verifying');
@@ -713,7 +745,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       }
       return false;
     }
-  }, [board, grade, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
+  }, [board, grade, paperNumber, onOpenChapter, refreshStudentRecords, studentRecords?.signedIn]);
 
   async function startRazorpayPayment() {
     if (!selectedPaper || !pendingChapter) return;
@@ -768,7 +800,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         amount: order.amount,
         currency: order.currency,
         name: 'Ramavana Mathematical Center',
-        description: `${selectedPaper.chapter} chapter test`,
+        description: `${selectedPaper.chapter} chapter test${paperNumber ? ` · Paper ${selectedPaper.paperNumber}` : ''}`,
         order_id: order.orderId,
         prefill: { name, email: studentRecords.email },
         hidden: { contact: true, email: true },
@@ -843,7 +875,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? 'CISCE Upper Primary · ' : ''}Chapters</span></div>
+        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
       </section>
       <section className="folder-content">
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>
@@ -863,7 +895,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         <DialogContent className={`start-test-dialog ${isAvailablePaper ? 'payment-dialog' : ''}`}>
           <DialogHeader>
 
-            <p className="start-test-chapter">{pendingChapter}</p>
+            <p className="start-test-chapter">{pendingChapter}{paperNumber && selectedPaper ? ` · Paper ${selectedPaper.paperNumber}` : ''}</p>
             <DialogTitle>{!isAvailablePaper ? 'Coming soon' : studentRecords === null ? 'One moment…' : !studentRecords.signedIn ? 'Sign in' : completedSubmission ? 'Your paper' : 'Written paper · ₹30'}</DialogTitle>
             <DialogDescription className="sr-only">{pendingChapter} written practice paper.</DialogDescription>
           </DialogHeader>
@@ -874,7 +906,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
               {studentRecords === null ? (
                 <div className="student-payment-loading"><Loader2 /><span>Checking login and chapter access…</span></div>
               ) : !studentRecords.signedIn ? (
-                <GoogleSignIn href={`/api/auth/google?return_to=${encodeURIComponent(chapterPath(board, grade, pendingChapter ?? '') + '?paper=1')}`} />
+                <GoogleSignIn href={`/api/auth/google?return_to=${encodeURIComponent(chapterPath(board, grade, pendingChapter ?? '') + paperQuery(paperNumber))}`} />
               ) : completedSubmission ? (
                 <div className="completed-paper-card">
                   <CheckCircle2 />
@@ -904,11 +936,13 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   );
 }
 
-function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takingPaper, onStartPaper }: { takingPaper: boolean; onStartPaper: () => void; board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
+function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takingPaper, onStartPaper, paperNumber }: { takingPaper: boolean; onStartPaper: (paperNumber?: string) => void; paperNumber?: string; board: BoardName; grade: number; chapter: string; onHome: () => void; onBoard: () => void; onChapters: () => void }) {
   const paper = getPaperForChapter(board, grade, chapter);
+  const activePaper = (paperNumber ? getPaperForChapter(board, grade, chapter, paperNumber) : null) ?? paper;
+  const extraPapers = board === 'IGCSE' ? [] : getAdditionalChapterPapers(grade, chapter, board);
   const isIntegrals = board === 'CBSE' && grade === 12 && chapter === 'Integrals';
-  if (takingPaper && paper && (paper.grade ?? 10) === grade) {
-    return <ChapterPaper paper={paper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
+  if (takingPaper && activePaper && (activePaper.grade ?? 10) === grade) {
+    return <ChapterPaper key={activePaper.id} paper={activePaper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
 
   return (
@@ -917,7 +951,7 @@ function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takin
       <section className="chapter-overview-heading"><div><p className="rmc-eyebrow">{board} · Grade {grade} · Chapter {chaptersFor(board, grade).indexOf(chapter) + 1}</p><h1>{chapter}</h1><p>Choose what you want to work on.</p></div><ChapterFigure title={chapter} /></section>
       <section className="chapter-resource-grid" aria-label="Chapter materials">
         {board === 'CBSE' && grade === 11 && chapter === 'Relations and Functions' && <a className="chapter-resource" href="/cbse/grade-11/ch-2/free-paper"><FileText /><span className="rmc-eyebrow">60 minutes · 30 marks · Free</span><h2>Free chapter practice paper</h2><p>Answer MCQs and upload written working. Submit the test to unlock solutions and send your answers for teacher marking.</p><span className="rmc-card-action">Open free paper <ArrowRight /></span></a>}
-        {paper && !isIntegrals ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-01$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={onStartPaper}><FileText /><span className="rmc-eyebrow">90 minutes · 40 marks</span><h2>Written practice paper</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button></> : isIntegrals ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Open chapter notes, practice papers and worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
+        {paper && !isIntegrals ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-0[1-9]$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={() => onStartPaper()}><FileText /><span className="rmc-eyebrow">{answeringMinutes(paper.id)} minutes · {paperMaximum(paper.id)} marks</span><h2>Written practice paper{extraPapers.length ? ' · Paper 01' : ''}</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button>{extraPapers.map((extra) => <button key={extra.id} className="chapter-resource" onClick={() => onStartPaper(extra.paperNumber)}><FileText /><span className="rmc-eyebrow">{answeringMinutes(extra.id)} minutes · {paperMaximum(extra.id)} marks{extra.book ? ` · ${extra.book}` : ''}</span><h2>Written practice paper · Paper {extra.paperNumber}</h2><p>A second paper for this chapter. Answer MCQs, then upload your written working for marking. ₹30 paper access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button>)}</> : isIntegrals ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Open chapter notes, practice papers and worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
         {board === 'CBSE' && quizListings.filter(q => q.grade === grade && q.title === chapter).map(q => <a key={q.id} className="chapter-resource" href={q.path}><CheckCircle2 /><span className="rmc-eyebrow">50 questions · {quizPrice(q.chapter, q.grade) === 0 ? 'Free' : `₹${quizPrice(q.chapter, q.grade)/100}`}</span><h2>MCQ practice</h2><p>Saved answers, instant marks and worked solutions after submission.</p><span className="rmc-card-action">Start the quiz <ArrowRight /></span></a>)}
       </section>
       {board === 'CBSE' && grade === 6 && chapter === 'Number Play' && <KaprekarToy />}
@@ -927,7 +961,7 @@ function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takin
 }
 
 function ChapterNotesLink({ paper }: { paper: PaperDefinition }) {
-  const slug = paper.id.replace(/-01$/, '');
+  const slug = paper.id.replace(/-0[1-9]$/, '');
   return (
     <a className="revision-sheet revision-link" href={`/notes/${slug}`} target="_blank">
       <span><BookOpen /></span>
@@ -999,7 +1033,12 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
   useTestActivity(paper.id,Object.keys(answers).length+Object.values(savedUploads).filter(files=>files.length>0).length,Boolean(result),Boolean(attemptId));
 
   const writtenQuestions = [17, 18, 19, 20, 21, 22, 23, 24];
-  const remainingSeconds = timing ? Math.max(0, Math.ceil((timing.workDeadlineAtMs - clockNow) / 1000)) : 90 * 60;
+  // 30-mark papers have 6 objective questions and show written questions as 7–14.
+  const objectiveCount = objectiveMaximum(paper.id);
+  const totalMarks = paperMaximum(paper.id);
+  const paperMinutes = answeringMinutes(paper.id);
+  const shownNumber = (number: number) => displayQuestion(paper.id, number);
+  const remainingSeconds = timing ? Math.max(0, Math.ceil((timing.workDeadlineAtMs - clockNow) / 1000)) : paperMinutes * 60;
   const workLocked = Boolean(timing && clockNow >= timing.workDeadlineAtMs);
   const uploadLocked = Boolean(timing && clockNow >= timing.uploadDeadlineAtMs);
   const isSaving = savingDraft || Object.values(uploadingQuestions).some(Boolean);
@@ -1282,7 +1321,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
     setSubmissionError(error);
     if (error) return;
     setSubmissionGaps({
-      mcqs: Array.from({ length: 16 }, (_, index) => index + 1).filter((number) => answers[String(number)] === undefined),
+      mcqs: Array.from({ length: objectiveCount }, (_, index) => index + 1).filter((number) => answers[String(number)] === undefined),
       written: writtenQuestions.filter((question) => !(writtenFiles[question]?.length) && !(savedUploads[question]?.length)),
     });
     setConfirmOpen(true);
@@ -1367,7 +1406,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           <div className="paper-kicker"><span>Chapter practice test</span><strong>Paper {currentPaper.paperNumber}</strong></div>
           <p>{currentPaper.board ?? 'CBSE'} Mathematics{(currentPaper.board ?? 'CBSE') === 'CBSE' && (currentPaper.grade ?? 10) === 10 ? ' (Standard)' : ''} · Grade {currentPaper.grade ?? 10}{currentPaper.book ? ` · ${currentPaper.book}` : ''}</p>
           <h1>Chapter {currentPaper.chapterNumber} — {currentPaper.chapter}</h1>
-          <div className="paper-meta"><span>Time: 90 minutes</span><span>Maximum marks: 40</span></div>
+          <div className="paper-meta"><span>Time: {paperMinutes} minutes</span><span>Maximum marks: {totalMarks}</span></div>
         </header>
 
         <section className="student-fields" aria-label="Student details">
@@ -1384,7 +1423,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
         <section className="paper-instructions">
           <h2>General instructions</h2>
           <ol>
-            <li>This paper contains 24 compulsory questions divided into Sections A to E.</li>
+            <li>This paper contains {objectiveCount + 8} compulsory questions divided into Sections A to E.</li>
             <li>Tick one correct option for each MCQ. Write descriptive answers on paper, then upload the scan below the matching question.</li>
             <li>Show the required steps and reasoning. Use of calculators is not allowed.</li>
             <li>The timer continues if you leave or refresh this page. Submit before the displayed time ends.</li>
@@ -1392,7 +1431,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           </ol>
         </section>
 
-        <PaperSection title="Section A" subtitle="Questions 1–16 carry 1 mark each." marks="16 × 1 = 16">
+        <PaperSection title="Section A" subtitle={`Questions 1–${objectiveCount} carry 1 mark each.`} marks={`${objectiveCount} × 1 = ${objectiveCount}`}>
           <div className="mcq-list">
             {currentPaper.mcqs.map((item) => (
               <fieldset className="paper-question mcq-question" key={item.number}>
@@ -1411,7 +1450,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           </div>
 
           <div className="assertion-note">
-            <strong>For Questions 15 and 16, choose the correct option:</strong>
+            <strong>For Questions {currentPaper.assertions.map((item) => item.number).join(' and ')}, choose the correct option:</strong>
             <ol type="A">{assertionReasonOptions.map((option) => <li key={option}>{option}</li>)}</ol>
           </div>
 
@@ -1428,31 +1467,31 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           ))}
         </PaperSection>
 
-        <PaperSection title="Section B" subtitle="Questions 17–19 are Very Short Answer questions carrying 2 marks each." marks="3 × 2 = 6">
-          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+        <PaperSection title="Section B" subtitle={`Questions ${shownNumber(17)}–${shownNumber(19)} are Very Short Answer questions carrying 2 marks each.`} marks="3 × 2 = 6">
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
-        <PaperSection title="Section C" subtitle="Questions 20–22 are Short Answer questions carrying 3 marks each." marks="3 × 3 = 9">
-          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+        <PaperSection title="Section C" subtitle={`Questions ${shownNumber(20)}–${shownNumber(22)} are Short Answer questions carrying 3 marks each.`} marks="3 × 3 = 9">
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
         </PaperSection>
 
-        <PaperSection title="Section D" subtitle="Question 23 is a Long Answer question carrying 5 marks." marks="1 × 5 = 5">
-          <WrittenQuestion number={23} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(23, files)}>
+        <PaperSection title="Section D" subtitle={`Question ${shownNumber(23)} is a Long Answer question carrying 5 marks.`} marks="1 × 5 = 5">
+          <WrittenQuestion number={23} label={shownNumber(23)} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(23, files)}>
             <QuestionContent value={currentPaper.written[23]} />
           </WrittenQuestion>
         </PaperSection>
 
-        <PaperSection title="Section E" subtitle="Question 24 is a case-study question carrying 4 marks." marks="1 × 4 = 4">
+        <PaperSection title="Section E" subtitle={`Question ${shownNumber(24)} is a case-study question carrying 4 marks.`} marks="1 × 4 = 4">
           <div className="case-study">
             <div className="case-study-label">Case study</div>
             <p><MathText>{currentPaper.caseStudy}</MathText></p>
           </div>
-          <WrittenQuestion number={24} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(24, files)}>
+          <WrittenQuestion number={24} label={shownNumber(24)} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(24, files)}>
             <QuestionContent value={currentPaper.written[24]} />
           </WrittenQuestion>
         </PaperSection>
 
-        <footer className="paper-end"><span>— End of question paper —</span><strong>Total: 40 marks</strong></footer>
+        <footer className="paper-end"><span>— End of question paper —</span><strong>Total: {totalMarks} marks</strong></footer>
 
         <section className="test-submit-panel">
           <div><p>Finished the paper?</p><h2>Submit for marking</h2><span>Your MCQs will be checked immediately. Written answers will be sent securely to the teacher.</span></div>
@@ -1496,7 +1535,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
                     </div>
                   );
                 })}
-                {[15, 16].map((number) => {
+                {currentPaper.assertions.map((item) => item.number).map((number) => {
                   const studentAnswer = result.answers[String(number)];
                   const correctAnswer = result.correctAnswers[String(number)];
                   const isCorrect = studentAnswer === correctAnswer;
@@ -1522,7 +1561,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <p className="solution-note">Your teacher will review your written answers within 24 hours of submission and award partial marks where appropriate. Until then, practise with the model solutions below. Your final score will appear in your student account after review.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><span className="written-solution-number">{number}</span><div><strong>Question {number}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <p><MathText>{currentPaper.caseStudy}</MathText></p>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
+                  <article key={number}><span className="written-solution-number">{shownNumber(number)}</span><div><strong>Question {shownNumber(number)}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <p><MathText>{currentPaper.caseStudy}</MathText></p>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
                 ))}
               </div>
             </div>
@@ -1535,8 +1574,8 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
       <Dialog open={confirmOpen} onOpenChange={setConfirmOpen}>
         <DialogContent className="submit-confirm-dialog">
           <DialogHeader><span className="start-test-icon"><Send /></span><DialogTitle>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'Some questions are unanswered' : 'Submit your completed test?'}</DialogTitle><DialogDescription>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'You can go back and answer them, or submit anyway if you do not know the answers. Unanswered questions will receive no marks.' : 'You will not be able to change this attempt after it is submitted.'}</DialogDescription></DialogHeader>
-          <div className="submit-summary"><span>{16 - submissionGaps.mcqs.length}/16 MCQs answered</span><span>{8 - submissionGaps.written.length}/8 written answers uploaded</span><strong>40 marks</strong></div>
-          {(submissionGaps.mcqs.length > 0 || submissionGaps.written.length > 0) && <div className="submit-warning-list"><strong>Not answered</strong>{submissionGaps.mcqs.length > 0 && <span>MCQs: {submissionGaps.mcqs.join(', ')}</span>}{submissionGaps.written.length > 0 && <span>Written questions: {submissionGaps.written.join(', ')}</span>}</div>}
+          <div className="submit-summary"><span>{objectiveCount - submissionGaps.mcqs.length}/{objectiveCount} MCQs answered</span><span>{8 - submissionGaps.written.length}/8 written answers uploaded</span><strong>{totalMarks} marks</strong></div>
+          {(submissionGaps.mcqs.length > 0 || submissionGaps.written.length > 0) && <div className="submit-warning-list"><strong>Not answered</strong>{submissionGaps.mcqs.length > 0 && <span>MCQs: {submissionGaps.mcqs.join(', ')}</span>}{submissionGaps.written.length > 0 && <span>Written questions: {submissionGaps.written.map(shownNumber).join(', ')}</span>}</div>}
           <DialogFooter><button className="test-later-button" type="button" onClick={() => setConfirmOpen(false)}>Go back to paper</button><button className="test-start-button" type="button" onClick={() => void submitTest()}>{submissionGaps.mcqs.length || submissionGaps.written.length ? 'Submit anyway' : 'Yes, submit test'}</button></DialogFooter>
         </DialogContent>
       </Dialog>
@@ -1560,7 +1599,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
             <span><small>Unanswered</small><strong>{result ? result.mcqMaximum - Object.keys(result.answers).length : 0}</strong></span>
           </div>
           <div className="instant-score"><span>Objective marks</span><strong>{result?.mcqScore}/{result?.mcqMaximum}</strong></div>
-          <p>All answers and step-by-step model solutions are available now. Your teacher will review your written answers within 24 hours of submission. The final mark out of 40 will appear in your student account after review.</p>
+          <p>All answers and step-by-step model solutions are available now. Your teacher will review your written answers within 24 hours of submission. The final mark out of {totalMarks} will appear in your student account after review.</p>
           <DialogFooter className="submission-success-actions">
             <button className="test-later-button" type="button" onClick={onHome}>Return home</button>
             <button className="test-start-button" type="button" onClick={() => {
@@ -1753,8 +1792,9 @@ function QuestionSource({ value }: { value: string }) {
   return <span className="question-source" title="Verified against the cited source"><CheckCircle2 /> Previous exam: {value}</span>;
 }
 
-function WrittenQuestion({ number, marks, source, children, files, savedFiles, isSaving, disabled, onFilesChange }: {
+function WrittenQuestion({ number, label, marks, source, children, files, savedFiles, isSaving, disabled, onFilesChange }: {
   number: number;
+  label?: number;
   marks: number;
   source?: string;
   children: ReactNode;
@@ -1776,7 +1816,7 @@ function WrittenQuestion({ number, marks, source, children, files, savedFiles, i
   return (
     <div className="paper-question written-question-wrap">
       <div className="written-question">
-        <strong>{number}.</strong>
+        <strong>{label ?? number}.</strong>
         <div>{children}{source && <QuestionSource value={source} />}</div>
         <b>[{marks}]</b>
       </div>

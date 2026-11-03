@@ -1,5 +1,6 @@
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 import { isPaperDefinition, paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
+import { objectiveMaximum } from '@/lib/paper-format';
 import { buildDefaultMarkingSchemes, getPaperAssessment, writtenQuestionMarks, type MarkingStep } from '@/lib/assessment';
 
 type PaperDocument = {
@@ -65,7 +66,7 @@ export async function PATCH(request: Request) {
     const paper = body.paper;
     const fallback = paperDefinitionsById[paper.id];
     if (!fallback || fallback.chapter !== paper.chapter) return jsonError('This question paper cannot be changed.', 400);
-    if (!body.answerKey || !Array.from({ length: 16 }, (_, index) => index + 1).every((number) => Number.isInteger(body.answerKey?.[number]) && Number(body.answerKey?.[number]) >= 0 && Number(body.answerKey?.[number]) <= 3)) return jsonError('Choose the correct option for every objective question.', 400);
+    if (!body.answerKey || !Array.from({ length: objectiveMaximum(paper.id) }, (_, index) => index + 1).every((number) => Number.isInteger(body.answerKey?.[number]) && Number(body.answerKey?.[number]) >= 0 && Number(body.answerKey?.[number]) <= 3)) return jsonError('Choose the correct option for every objective question.', 400);
     if (!body.writtenSolutions || ![17,18,19,20,21,22,23,24].every((number) => typeof body.writtenSolutions?.[number] === 'string' && String(body.writtenSolutions?.[number]).trim().length > 0 && String(body.writtenSolutions?.[number]).length <= 3000)) return jsonError('Add a model solution for every written question.', 400);
     if (!isValidMarkingScheme(body.markingSchemes)) return jsonError('Complete the mark-by-mark evaluation sheet for every written question.', 400);
     const document: PaperDocument = { paper, answerKey: body.answerKey, writtenSolutions: body.writtenSolutions, markingSchemes: body.markingSchemes };

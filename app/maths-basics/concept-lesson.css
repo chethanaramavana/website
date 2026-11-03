@@ -257,3 +257,26 @@
 
 .lab-fraction-whole .lab-cells { height:120px; grid-auto-rows:minmax(0,1fr); }
 .lab-fraction-whole .lab-cells>span { aspect-ratio:auto; min-height:0; }
+/* Fraction cutting lab: larger picture, animated cuts, goal and colour key */
+.fcut-goal { margin:4px 0 0; padding:12px 14px; background:#fbf6ea; border:1px solid #ead9b0; border-radius:8px; color:#011e47; font:500 17px/1.6 var(--rmc-interface); }
+.fcut-bar { display:block; width:100%; height:auto; margin:6px 0 2px; }
+.fcut-cuts { transition:opacity .45s ease; }
+.fcut-legend { display:flex; flex-wrap:wrap; gap:8px 20px; margin:2px 0 6px; color:#011e47; font:500 15px/1.5 var(--rmc-interface); }
+.fcut-legend span::before { content:""; display:inline-block; vertical-align:middle; margin-right:8px; }
+.fcut-key-old::before { width:24px; border-top:4px solid #011e47; }
+.fcut-key-new::before { width:24px; border-top:3px dashed #b0300e; }
+.fcut-key-shade::before { width:18px; height:14px; background:#f4e0ae; border:3px solid #d9a231; border-radius:3px; }
+.fcut-eq { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:16px 0 10px; color:#011e47; font:600 28px/1.2 var(--rmc-reading); }
+.fcut-frac { display:inline-flex; flex-direction:column; align-items:center; vertical-align:middle; line-height:1.15; }
+.fcut-frac>span:first-child { border-bottom:2px solid currentColor; padding:0 6px 2px; }
+.fcut-frac>span:last-child { padding-top:2px; }
+.fcut-goal .fcut-frac { font-size:15px; margin:0 2px; }
+.fcut-new { color:#b0300e; font-size:22px; }
+.fcut-pop { animation:fcut-pop .35s ease-out; }
+@keyframes fcut-pop { from { transform:scale(1.25); color:#b0300e; } to { transform:scale(1); } }
+.fcut-hint { margin:6px 0; color:#4a5568; font:500 16px/1.5 var(--rmc-interface); }
+.fcut-success { display:flex; gap:12px; align-items:flex-start; margin:8px 0; padding:12px 14px; border-left:4px solid #286146; background:#eef6f0; color:#205238; font:500 16px/1.5 var(--rmc-interface); }
+.fcut-success p { margin:0; }
+.fcut-success svg { flex:0 0 26px; width:26px; height:26px; margin-top:2px; }
+@media(prefers-reduced-motion:reduce) { .fcut-cuts { transition:none; } .fcut-pop { animation:none; } }
+@media(max-width:600px) { .fcut-eq { font-size:23px; gap:10px; } .fcut-new { font-size:18px; } }

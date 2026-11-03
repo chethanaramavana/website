@@ -1,0 +1,940 @@
+{
+ "papers": [
+  {
+   "id": "icse10-gst-01",
+   "chapter": "GST (Goods and Services Tax)",
+   "chapterNumber": 1,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Intra-state and inter-state supply, CGST, SGST, IGST, input tax credit and the GST chain. Give money answers in rupees.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "An article is sold for ₹2,000 within a state. The GST rate is 12%. The CGST charged is",
+     "options": [
+      "₹240",
+      "₹120",
+      "₹60",
+      "₹12"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A sale from a dealer in Karnataka to a dealer in Kerala attracts",
+     "options": [
+      "CGST only",
+      "SGST only",
+      "IGST",
+      "CGST and SGST"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A dealer buys goods for ₹5,000 and sells them for ₹6,000 in the same state. GST is 18%. The net GST he pays to the government is",
+     "options": [
+      "₹180",
+      "₹1,080",
+      "₹900",
+      "₹90"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The input tax credit of a dealer is the",
+     "options": [
+      "tax he collects on his sales",
+      "tax he paid on his purchases",
+      "price of the goods without tax",
+      "tax paid by the final consumer"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "For an intra-state sale with GST at 18%, CGST = SGST = 9%.",
+     "reason": "For an intra-state sale, GST is divided equally between the Central and the State Government."
+    },
+    {
+     "number": 6,
+     "assertion": "The final consumer pays GST only on the value added by the retailer.",
+     "reason": "Each dealer in the chain pays tax to the government only on the value that he adds."
+    }
+   ],
+   "written": {
+    "17": "A TV is marked at ₹30,000. The shopkeeper gives a 10% discount. GST is 28%. Find the amount that the customer pays.",
+    "18": "An article is sold within a state for ₹4,500. The GST rate is 12%. Find the CGST, the SGST and the total amount paid by the buyer.",
+    "19": "A customer pays ₹2,360 for an article. This amount includes GST at 18%. Find the price of the article before GST.",
+    "20": "A sells an article to B for ₹10,000. B sells it to C for ₹12,000. A, B and C are in the same state. GST is 12%. Find the GST that A pays, the input tax credit of B and the net GST that B pays.",
+    "21": "A manufacturer in Mumbai sells a machine to a dealer in Bengaluru for ₹25,000. The dealer sells it to a customer in Bengaluru for ₹30,000. GST is 18%. Find the IGST paid by the manufacturer and the net CGST and SGST paid by the dealer.",
+    "22": "A retailer buys an article for ₹8,000. He marks it 25% above the cost price and gives a 10% discount. GST is 12% at every stage within the state. Find the selling price before tax and the net GST paid by the retailer.",
+    "23": [
+     "A sells an article to B for ₹5,000. B sells it to C for ₹7,000. C sells it to a consumer for ₹9,000. All are in the same state and GST is 18%.",
+     "(a) Find the GST that each of A, B and C pays to the government.",
+     "(b) Find the total GST that the government receives.",
+     "(c) Find the amount that the consumer pays."
+    ],
+    "24": [
+     "(a) Find the CGST paid by the manufacturer. [1]",
+     "(b) Find the input tax credit of the dealer. [1]",
+     "(c) Find the net GST paid by the dealer and the amount paid by the consumer. [2]"
+    ]
+   },
+   "caseStudy": "A manufacturer in Pune sells a machine to a dealer in Pune for ₹40,000. The dealer sells it to a consumer in Pune for ₹50,000. The GST rate is 12%.",
+   "answerKey": [
+    1,
+    2,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Price after discount = 90% of ₹30,000 = ₹27,000. GST = 28% of ₹27,000 = ₹7,560. Amount paid = ₹27,000 + ₹7,560 = ₹34,560.",
+    "18": "GST = 12% of ₹4,500 = ₹540. CGST = SGST = ₹270 each. Total amount = ₹4,500 + ₹540 = ₹5,040.",
+    "19": "Let the price be ₹x. Then x + 0.18x = 2,360, so 1.18x = 2,360 and x = ₹2,000.",
+    "20": "GST paid by A = 12% of ₹10,000 = ₹1,200. Input tax credit of B = ₹1,200. Output GST of B = 12% of ₹12,000 = ₹1,440. Net GST paid by B = ₹1,440 − ₹1,200 = ₹240.",
+    "21": "IGST paid by the manufacturer = 18% of ₹25,000 = ₹4,500. Output GST of the dealer = 18% of ₹30,000 = ₹5,400. Net GST = ₹5,400 − ₹4,500 = ₹900, so CGST = ₹450 and SGST = ₹450.",
+    "22": "Marked price = 125% of ₹8,000 = ₹10,000. Selling price = 90% of ₹10,000 = ₹9,000. Output GST = ₹1,080 and input GST = 12% of ₹8,000 = ₹960. Net GST = ₹120.",
+    "23": "(a) A pays 18% of ₹5,000 = ₹900. B pays ₹1,260 − ₹900 = ₹360. C pays ₹1,620 − ₹1,260 = ₹360. (b) Total GST = ₹900 + ₹360 + ₹360 = ₹1,620, which equals the GST on the final price. (c) The consumer pays ₹9,000 + ₹1,620 = ₹10,620.",
+    "24": "(a) GST on ₹40,000 = ₹4,800, so CGST = ₹2,400. (b) Input tax credit of the dealer = ₹4,800. (c) Output GST = 12% of ₹50,000 = ₹6,000. Net GST = ₹6,000 − ₹4,800 = ₹1,200. The consumer pays ₹50,000 + ₹6,000 = ₹56,000."
+   }
+  },
+  {
+   "id": "icse10-banking-01",
+   "chapter": "Banking (Recurring Deposit Accounts)",
+   "chapterNumber": 2,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Recurring deposit accounts: interest, maturity value, monthly instalment, rate and time. Use I = P × n(n + 1)/(2 × 12) × r/100.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "For a recurring deposit of ₹500 per month for 12 months, the equivalent principal for one month is",
+     "options": [
+      "₹6,000",
+      "₹39,000",
+      "₹78,000",
+      "₹3,250"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The interest on a recurring deposit of ₹200 per month for 6 months at 8% per annum is",
+     "options": [
+      "₹28",
+      "₹56",
+      "₹96",
+      "₹14"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The total money deposited in a recurring deposit of ₹1,000 per month for 2 years is",
+     "options": [
+      "₹12,000",
+      "₹2,400",
+      "₹26,000",
+      "₹24,000"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "In the formula I = P × n(n + 1)/(2 × 12) × r/100, the letter n stands for the",
+     "options": [
+      "rate of interest",
+      "number of years",
+      "number of monthly instalments",
+      "monthly deposit"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "In a recurring deposit, the first instalment earns interest for all n months.",
+     "reason": "The bank pays simple interest on a recurring deposit account."
+    },
+    {
+     "number": 6,
+     "assertion": "The maturity value of a deposit of ₹400 per month for 10 months at 6% per annum is ₹4,000.",
+     "reason": "Maturity value = total money deposited + interest."
+    }
+   ],
+   "written": {
+    "17": "Rahul deposits ₹600 per month in a recurring deposit for 1 year at 10% per annum. Find the interest.",
+    "18": "Find the maturity value of a recurring deposit of ₹800 per month for 18 months at 9% per annum.",
+    "19": "A recurring deposit account for 2 years has a total deposit of ₹14,400. Find the monthly instalment and the equivalent principal for one month.",
+    "20": "Mrs. Sen deposits ₹500 per month for 2 years. She receives ₹12,750 at maturity. Find the rate of interest.",
+    "21": "A recurring deposit account for 3 years at 8% per annum has a maturity value of ₹40,440. Find the monthly instalment.",
+    "22": "Kiran deposits ₹300 per month at 8% per annum and gets ₹156 as interest. Find the time for which the account was held.",
+    "23": [
+     "Mr. Rao deposits ₹1,500 per month for 2 years at 7% per annum. Mrs. Rao deposits ₹2,000 per month for 18 months at 8% per annum.",
+     "(a) Find the interest that each person earns.",
+     "(b) Find the maturity value of each account.",
+     "(c) Who earns more interest, and by how much?"
+    ],
+    "24": [
+     "(a) Find the total amount that Meena deposits. [1]",
+     "(b) Find the value of n(n + 1)/2 for this account. [1]",
+     "(c) Find the interest and the maturity value. [2]"
+    ]
+   },
+   "caseStudy": "Meena opens a recurring deposit account. She deposits ₹250 every month for 4 years. The bank pays simple interest at 7.5% per annum.",
+   "answerKey": [
+    1,
+    0,
+    3,
+    2,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "n = 12. I = 600 × (12 × 13)/(2 × 12) × 10/100 = 600 × 6.5 × 0.1 = ₹390.",
+    "18": "n = 18. I = 800 × (18 × 19)/(2 × 12) × 9/100 = 800 × 14.25 × 0.09 = ₹1,026. Maturity value = 800 × 18 + 1,026 = 14,400 + 1,026 = ₹15,426.",
+    "19": "Monthly instalment = ₹14,400 ÷ 24 = ₹600. Equivalent principal = 600 × (24 × 25)/2 = ₹1,80,000.",
+    "20": "Total deposit = 500 × 24 = ₹12,000, so I = ₹750. I = 500 × (24 × 25)/(2 × 12) × r/100 = 125r. Hence 125r = 750 and r = 6%.",
+    "21": "n = 36. I = P × (36 × 37)/(2 × 12) × 8/100 = 4.44P. Maturity value = 36P + 4.44P = 40.44P = 40,440, so P = ₹1,000.",
+    "22": "I = 300 × n(n + 1)/24 × 8/100 = n(n + 1). So n(n + 1) = 156 = 12 × 13, and n = 12. The account was held for 12 months (1 year).",
+    "23": "(a) Mr. Rao: I = 1,500 × (24 × 25)/24 × 7/100 = ₹2,625. Mrs. Rao: I = 2,000 × (18 × 19)/24 × 8/100 = ₹2,280. (b) Mr. Rao: 36,000 + 2,625 = ₹38,625. Mrs. Rao: 36,000 + 2,280 = ₹38,280. (c) Mr. Rao earns ₹345 more interest.",
+    "24": "(a) Total deposit = 250 × 48 = ₹12,000. (b) n(n + 1)/2 = 48 × 49/2 = 1,176. (c) I = 250 × 1,176/12 × 7.5/100 = ₹1,837.50. Maturity value = ₹12,000 + ₹1,837.50 = ₹13,837.50."
+   }
+  },
+  {
+   "id": "icse10-shares-dividend-01",
+   "chapter": "Shares and Dividend",
+   "chapterNumber": 3,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Nominal and market value, premium and discount, dividend, annual income and rate of return.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A ₹100 share is quoted at ₹120. The share is at",
+     "options": [
+      "par",
+      "a premium of ₹20",
+      "a discount of ₹20",
+      "a discount of 20%"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The dividend on 50 shares of nominal value ₹10 at 12% is",
+     "options": [
+      "₹600",
+      "₹6",
+      "₹60",
+      "₹120"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The number of ₹50 shares that ₹8,000 buys at ₹80 each is",
+     "options": [
+      "100",
+      "160",
+      "80",
+      "125"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The rate of return on a 10% ₹100 share bought at ₹125 is",
+     "options": [
+      "10%",
+      "12.5%",
+      "25%",
+      "8%"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Dividend is calculated on the nominal value of a share.",
+     "reason": "A share bought at a premium costs more than its face value."
+    },
+    {
+     "number": 6,
+     "assertion": "If the market value of a share is more than its face value, the rate of return is less than the dividend rate.",
+     "reason": "Rate of return = dividend rate × nominal value ÷ market value."
+    }
+   ],
+   "written": {
+    "17": "Find the market value of 120 shares of ₹25 each at a premium of ₹4.",
+    "18": "Find the annual income from 300 shares of ₹10 each when the dividend is 15%.",
+    "19": "A man buys ₹50 shares at ₹60. The dividend is 12%. Find the percentage return on his investment.",
+    "20": "Rita invests ₹21,000 in ₹100 shares at ₹140. The dividend is 14%. Find the number of shares, her annual income and her percentage return.",
+    "21": "How much must a man invest in 9% ₹100 shares at ₹120 to get an annual income of ₹1,800?",
+    "22": "A man sells 200 ₹100 shares at ₹125. He invests the money in 10% ₹50 shares at ₹40. Find the number of new shares and his new annual income.",
+    "23": [
+     "Two investments are offered: (i) 12% ₹100 shares at ₹150, (ii) 10% ₹50 shares at ₹40.",
+     "(a) Find the rate of return of each investment and state which is better.",
+     "(b) A man puts ₹15,000 in each investment. Find his total annual income."
+    ],
+    "24": [
+     "(a) Find the number of shares that Asha buys. [1]",
+     "(b) Find her annual dividend. [1]",
+     "(c) Find her percentage return. She later sells all the shares at ₹95 each. Find her gain. [2]"
+    ]
+   },
+   "caseStudy": "Asha has ₹45,000. She buys ₹100 shares of a company at ₹90 each. The company pays a dividend of 8% per annum.",
+   "answerKey": [
+    1,
+    2,
+    0,
+    3,
+    1,
+    0
+   ],
+   "solutions": {
+    "17": "Market value of one share = ₹25 + ₹4 = ₹29. Total = 120 × ₹29 = ₹3,480.",
+    "18": "Dividend per share = 15% of ₹10 = ₹1.50. Income = 300 × ₹1.50 = ₹450.",
+    "19": "Dividend per share = 12% of ₹50 = ₹6. Return = 6/60 × 100 = 10%.",
+    "20": "Number of shares = 21,000 ÷ 140 = 150. Income = 150 × ₹14 = ₹2,100. Return = 2,100/21,000 × 100 = 10%.",
+    "21": "Each share gives ₹9. Shares needed = 1,800 ÷ 9 = 200. Investment = 200 × ₹120 = ₹24,000.",
+    "22": "Money from the sale = 200 × ₹125 = ₹25,000. New shares = 25,000 ÷ 40 = 625. Income = 625 × ₹5 = ₹3,125.",
+    "23": "(a) (i) Return = 12/150 × 100 = 8%. (ii) Return = 5/40 × 100 = 12.5%. Investment (ii) is better. (b) (i) 15,000 ÷ 150 = 100 shares, income ₹1,200. (ii) 15,000 ÷ 40 = 375 shares, income 375 × ₹5 = ₹1,875. Total = ₹3,075.",
+    "24": "(a) Shares = 45,000 ÷ 90 = 500. (b) Dividend = 500 × ₹8 = ₹4,000. (c) Return = 4,000/45,000 × 100 = 8 8/9 % ≈ 8.89%. Sale value = 500 × ₹95 = ₹47,500, so the gain = ₹2,500."
+   }
+  },
+  {
+   "id": "icse10-linear-inequations-01",
+   "chapter": "Linear Inequations (in one variable)",
+   "chapterNumber": 4,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Solve linear inequations, write solution sets for N, W, Z and R, and show the solution on a number line.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The solution set of 2x − 3 < 7, x ∈ N, is",
+     "options": [
+      "{1, 2, 3, 4, 5}",
+      "{1, 2, 3, 4}",
+      "{0, 1, 2, 3, 4}",
+      "{5, 6, 7, …}"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If −3x > 12, then",
+     "options": [
+      "x > −4",
+      "x < 4",
+      "x < −4",
+      "x > 4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The solution set of −2 ≤ x < 3, x ∈ Z, is",
+     "options": [
+      "{−2, −1, 0, 1, 2}",
+      "{−1, 0, 1, 2}",
+      "{−2, −1, 0, 1, 2, 3}",
+      "{−1, 0, 1, 2, 3}"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The largest x ∈ W that satisfies 5x + 2 ≤ 20 is",
+     "options": [
+      "4",
+      "2",
+      "0",
+      "3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Multiplying both sides of x > 2 by −1 gives −x < −2.",
+     "reason": "When both sides of an inequation are multiplied by a negative number, the sign of inequality is reversed."
+    },
+    {
+     "number": 6,
+     "assertion": "The solution set of 3x + 1 > 3x − 4, x ∈ R, is R.",
+     "reason": "An inequation with the same x term on both sides never has a solution."
+    }
+   ],
+   "written": {
+    "17": "Solve 3 − 2x ≥ x − 12, x ∈ N, and write the solution set.",
+    "18": "Solve x/3 + 2 < x/2 + 1, x ∈ R. Show the solution on a number line.",
+    "19": "Solve −4 ≤ 2x − 6 < 4, x ∈ Z, and write the solution set.",
+    "20": "Solve −1/3 ≤ x/2 − 4/3 < 1/6, x ∈ R. Show the solution on a number line.",
+    "21": "A = {x : 11x − 5 > 7x + 3, x ∈ R} and B = {x : 18x − 9 ≥ 15 + 12x, x ∈ R}. Find A ∩ B and show it on a number line.",
+    "22": "Solve 2(x − 1) < 3x − 1 ≤ 2x + 3, x ∈ Z. Write the solution set and find the sum of its elements.",
+    "23": [
+     "Solve 2x − 5 ≤ 5x + 4 < 11.",
+     "(a) Write the solution set when x ∈ Z.",
+     "(b) Show it on a number line.",
+     "(c) Write the solution set when x ∈ W."
+    ],
+    "24": [
+     "(a) Write an inequation for the distance x km. [1]",
+     "(b) Solve the inequation. [1]",
+     "(c) The distance is a whole number of kilometres. List the possible distances and state how many there are. [2]"
+    ]
+   },
+   "caseStudy": "A taxi charges a fixed fare of ₹50 and ₹15 per km. Ravi wants to spend at least ₹200 and at most ₹350 on one ride.",
+   "answerKey": [
+    1,
+    2,
+    0,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "3 − 2x ≥ x − 12 gives 15 ≥ 3x, so x ≤ 5. Solution set = {1, 2, 3, 4, 5}.",
+    "18": "Multiply by 6: 2x + 12 < 3x + 6, so x > 6. On the number line, draw an open circle at 6 and shade to the right.",
+    "19": "Add 6: 2 ≤ 2x < 10, so 1 ≤ x < 5. Solution set = {1, 2, 3, 4}.",
+    "20": "Multiply by 6: −2 ≤ 3x − 8 < 1, so 6 ≤ 3x < 9 and 2 ≤ x < 3. Draw a closed circle at 2 and an open circle at 3, and shade between them.",
+    "21": "A: 4x > 8, so x > 2. B: 6x ≥ 24, so x ≥ 4. A ∩ B = {x : x ≥ 4, x ∈ R}. Draw a closed circle at 4 and shade to the right.",
+    "22": "2x − 2 < 3x − 1 gives x > −1. 3x − 1 ≤ 2x + 3 gives x ≤ 4. Solution set = {0, 1, 2, 3, 4}. Sum = 10.",
+    "23": "2x − 5 ≤ 5x + 4 gives x ≥ −3. 5x + 4 < 11 gives x < 7/5. (a) {−3, −2, −1, 0, 1}. (b) Mark solid dots at −3, −2, −1, 0 and 1. (c) {0, 1}.",
+    "24": "(a) 200 ≤ 50 + 15x ≤ 350. (b) 150 ≤ 15x ≤ 300, so 10 ≤ x ≤ 20. (c) x ∈ {10, 11, 12, …, 20}. There are 11 possible distances."
+   }
+  },
+  {
+   "id": "icse10-quadratic-equations-01",
+   "chapter": "Quadratic Equations",
+   "chapterNumber": 5,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Solve quadratic equations by factorisation and by formula, and use the discriminant for the nature of roots.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The discriminant of 2x² − 5x + 3 = 0 is",
+     "options": [
+      "49",
+      "1",
+      "−1",
+      "−49"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The roots of x² − 7x + 12 = 0 are",
+     "options": [
+      "3, 4",
+      "−3, −4",
+      "2, 6",
+      "−3, 4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If x = 2 is a root of x² + kx − 10 = 0, then k is",
+     "options": [
+      "−3",
+      "5",
+      "3",
+      "−5"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The equation x² + 4x + 5 = 0 has",
+     "options": [
+      "two equal real roots",
+      "two distinct real roots",
+      "exactly one root",
+      "no real roots"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The roots of x² − 6x + 9 = 0 are real and equal.",
+     "reason": "If b² − 4ac = 0, a quadratic equation has two equal real roots."
+    },
+    {
+     "number": 6,
+     "assertion": "(x + 1)² = x² + 3 is a quadratic equation.",
+     "reason": "A quadratic equation has degree 2."
+    }
+   ],
+   "written": {
+    "17": "Solve by factorisation: 6x² − x − 2 = 0.",
+    "18": "Find k if kx² − 6x + 1 = 0 has equal roots.",
+    "19": "Solve x² − 4x − 1 = 0. Give the roots correct to two decimal places.",
+    "20": "Solve: 2x/(x − 4) + (2x − 5)/(x − 3) = 25/3, x ≠ 3, 4.",
+    "21": "Solve 3x² − 5x − 4 = 0 by the quadratic formula. Give the roots correct to two decimal places.",
+    "22": "Find the nature of the roots of 4x² − 12x + 9 = 0. If the roots are real, find them.",
+    "23": [
+     "(a) One root of 2x² + px − 15 = 0 is 3. Find p and the other root.",
+     "(b) Find the values of m for which x² + 2(m − 1)x + (m + 5) = 0 has equal roots."
+    ],
+    "24": [
+     "(a) Taking the width as x m, form a quadratic equation. [1]",
+     "(b) Solve the equation. [1]",
+     "(c) Find the length, the width and the perimeter of the garden. [2]"
+    ]
+   },
+   "caseStudy": "A rectangular garden has a length that is 5 m more than its width. The area of the garden is 150 m².",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "6x² − 4x + 3x − 2 = 2x(3x − 2) + 1(3x − 2) = (3x − 2)(2x + 1) = 0. So x = 2/3 or x = −1/2.",
+    "18": "Equal roots need b² − 4ac = 0: 36 − 4k = 0, so k = 9.",
+    "19": "x = [4 ± √(16 + 4)]/2 = 2 ± √5. So x ≈ 4.24 or x ≈ −0.24.",
+    "20": "Combine: (4x² − 19x + 20)/(x² − 7x + 12) = 25/3. Then 12x² − 57x + 60 = 25x² − 175x + 300, so 13x² − 118x + 240 = 0. D = 118² − 4 × 13 × 240 = 1,444 = 38². x = (118 ± 38)/26, so x = 6 or x = 40/13.",
+    "21": "a = 3, b = −5, c = −4. D = 25 + 48 = 73. x = (5 ± √73)/6 = (5 ± 8.544)/6. So x ≈ 2.26 or x ≈ −0.59.",
+    "22": "D = 144 − 144 = 0, so the roots are real and equal. x = 12/8 = 3/2 (both roots).",
+    "23": "(a) 2(9) + 3p − 15 = 0, so p = −1. The equation is 2x² − x − 15 = (2x + 5)(x − 3) = 0, so the other root is −5/2. (b) Equal roots: 4(m − 1)² − 4(m + 5) = 0. So m² − 3m − 4 = 0 and (m − 4)(m + 1) = 0. Hence m = 4 or m = −1.",
+    "24": "(a) x(x + 5) = 150, so x² + 5x − 150 = 0. (b) (x + 15)(x − 10) = 0, so x = 10 (a width cannot be −15). (c) Width = 10 m, length = 15 m, perimeter = 2(10 + 15) = 50 m."
+   }
+  }
+ ],
+ "notes": [
+  {
+   "slug": "icse10-gst",
+   "chapter": "GST (Goods and Services Tax)",
+   "number": 1,
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "CGST, SGST, IGST & Input Tax Credit",
+   "concepts": [
+    {
+     "title": "What GST is",
+     "text": "GST is a tax on the supply of goods and services. The tax is a percentage of the selling price (taxable value)."
+    },
+    {
+     "title": "Intra-state supply",
+     "text": "When the seller and the buyer are in the same state, GST is split equally into CGST (Centre) and SGST (State)."
+    },
+    {
+     "title": "Inter-state supply",
+     "text": "When the seller and the buyer are in different states, the full GST is charged as IGST."
+    },
+    {
+     "title": "Input tax credit",
+     "text": "A dealer subtracts the GST that he paid on purchases (input) from the GST that he collects on sales (output). He pays only the difference."
+    }
+   ],
+   "formulas": [
+    "GST = rate% × taxable value",
+    "Intra-state: CGST = SGST = ½ × GST",
+    "Inter-state: IGST = GST",
+    "Net GST payable = Output GST − Input GST",
+    "Amount paid by buyer = selling price + GST",
+    "Price before tax = amount × 100 ÷ (100 + rate)"
+   ],
+   "method": [
+    "Find the taxable value first (apply any discount before tax).",
+    "Calculate the GST at the given rate.",
+    "Decide intra-state or inter-state, then split into CGST and SGST or keep as IGST.",
+    "For a chain of dealers, find output GST and input GST for each dealer and subtract."
+   ],
+   "example": {
+    "question": "A dealer buys goods for ₹20,000 and sells them for ₹25,000 in the same state. GST is 5%. Find the CGST and the SGST that the dealer pays.",
+    "steps": [
+     "Input GST of A = 5% of ₹20,000 = ₹1,000.",
+     "Output GST of A = 5% of ₹25,000 = ₹1,250.",
+     "Net GST = ₹250, so CGST = SGST = ₹125."
+    ],
+    "answer": "The dealer pays CGST ₹125 and SGST ₹125."
+   },
+   "practice": [
+    {
+     "question": "Find the GST on ₹1,500 at 18%.",
+     "answer": "₹270",
+     "marks": 2
+    },
+    {
+     "question": "Split ₹540 GST for an intra-state sale.",
+     "answer": "CGST ₹270, SGST ₹270",
+     "marks": 2
+    },
+    {
+     "question": "Find the price before tax if the bill is ₹1,120 with 12% GST.",
+     "answer": "₹1,000",
+     "marks": 2
+    },
+    {
+     "question": "A dealer buys for ₹6,000 and sells for ₹7,500. GST 12%. Find the net GST.",
+     "answer": "₹180",
+     "marks": 3
+    },
+    {
+     "question": "Find the amount paid for an article marked ₹2,500 with 20% discount and 18% GST.",
+     "answer": "₹2,360",
+     "marks": 3
+    },
+    {
+     "question": "A→B ₹8,000, B→C ₹10,000, same state, GST 18%. Find the tax each pays.",
+     "answer": "A ₹1,440; B ₹360",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Apply the discount before you calculate GST.",
+    "For inter-state sales, use IGST, not CGST and SGST.",
+    "The total GST collected in a chain equals the GST on the final selling price."
+   ]
+  },
+  {
+   "slug": "icse10-banking",
+   "chapter": "Banking (Recurring Deposit Accounts)",
+   "number": 2,
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Interest, Maturity Value & Missing Quantities",
+   "concepts": [
+    {
+     "title": "Recurring deposit",
+     "text": "A fixed sum P is deposited every month for n months. The bank pays simple interest at r% per annum."
+    },
+    {
+     "title": "Equivalent principal",
+     "text": "The instalments earn interest for n, n − 1, …, 1 months. Together they act like P × n(n + 1)/2 kept for one month."
+    },
+    {
+     "title": "Maturity value",
+     "text": "At the end, the depositor gets all the instalments plus the interest."
+    },
+    {
+     "title": "Finding unknowns",
+     "text": "If the maturity value is known, write MV = Pn + I and solve for P, r or n."
+    }
+   ],
+   "formulas": [
+    "I = P × n(n + 1)/(2 × 12) × r/100",
+    "Maturity value = P × n + I",
+    "Total deposit = P × n",
+    "n is the number of months (2 years → n = 24)"
+   ],
+   "method": [
+    "Change the time to months.",
+    "Find n(n + 1)/2 and divide by 12.",
+    "Multiply by P and by r/100 to get the interest.",
+    "Add the total deposit to get the maturity value."
+   ],
+   "example": {
+    "question": "Find the maturity value of ₹1,200 per month for 1 year at 8%.",
+    "steps": [
+     "n = 12, n(n + 1)/2 = 78.",
+     "I = 1,200 × 78/12 × 8/100 = ₹624.",
+     "MV = 1,200 × 12 + 624 = ₹15,024."
+    ],
+    "answer": "₹15,024"
+   },
+   "practice": [
+    {
+     "question": "Find n(n + 1)/2 for 2 years.",
+     "answer": "300",
+     "marks": 2
+    },
+    {
+     "question": "Find the total deposit of ₹750 for 15 months.",
+     "answer": "₹11,250",
+     "marks": 2
+    },
+    {
+     "question": "Find the interest on ₹100 per month for 12 months at 12%.",
+     "answer": "₹78",
+     "marks": 2
+    },
+    {
+     "question": "Find the maturity value of ₹400 per month for 2 years at 10%.",
+     "answer": "₹10,600",
+     "marks": 3
+    },
+    {
+     "question": "A deposit of ₹600 per month for 20 months gives ₹525 interest. Find r.",
+     "answer": "5%",
+     "marks": 3
+    },
+    {
+     "question": "Find P if MV = ₹7,668 for 1 year at 12%.",
+     "answer": "₹600",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Always use n in months.",
+    "The interest is simple interest, not compound interest.",
+    "Check the units: the interest is in rupees and r is per annum."
+   ]
+  },
+  {
+   "slug": "icse10-shares-dividend",
+   "chapter": "Shares and Dividend",
+   "number": 3,
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Face Value, Market Value, Income & Return",
+   "concepts": [
+    {
+     "title": "Nominal (face) value",
+     "text": "The value printed on the share. The dividend is always calculated on this value."
+    },
+    {
+     "title": "Market value",
+     "text": "The price at which the share is bought or sold. It can be at par, at a premium or at a discount."
+    },
+    {
+     "title": "Dividend",
+     "text": "The part of the profit that the company pays to shareholders, as a percentage of the nominal value."
+    },
+    {
+     "title": "Rate of return",
+     "text": "The income as a percentage of the money invested. It depends on the market value."
+    }
+   ],
+   "formulas": [
+    "Number of shares = investment ÷ market value of one share",
+    "Dividend = number of shares × rate% × nominal value",
+    "Rate of return = annual income ÷ investment × 100",
+    "Premium: MV > NV; discount: MV < NV"
+   ],
+   "method": [
+    "Find the number of shares from the investment and the market value.",
+    "Find the dividend on one share from the nominal value.",
+    "Multiply to get the annual income.",
+    "Divide by the investment for the rate of return."
+   ],
+   "example": {
+    "question": "₹9,600 is invested in 8% ₹100 shares at ₹120. Find the income and the return.",
+    "steps": [
+     "Shares = 9,600 ÷ 120 = 80.",
+     "Income = 80 × ₹8 = ₹640.",
+     "Return = 640/9,600 × 100 = 6⅔%."
+    ],
+    "answer": "₹640 and 6⅔%"
+   },
+   "practice": [
+    {
+     "question": "Find the cost of 40 ₹10 shares at ₹2 discount.",
+     "answer": "₹320",
+     "marks": 2
+    },
+    {
+     "question": "Find the dividend on 150 ₹20 shares at 10%.",
+     "answer": "₹300",
+     "marks": 2
+    },
+    {
+     "question": "Find the return on 15% ₹100 shares at ₹125.",
+     "answer": "12%",
+     "marks": 2
+    },
+    {
+     "question": "Find the investment needed for ₹1,200 income from 12% ₹100 shares at ₹110.",
+     "answer": "₹11,000",
+     "marks": 3
+    },
+    {
+     "question": "Compare 10% ₹100 at ₹125 and 9% ₹100 at ₹108.",
+     "answer": "8% and 8⅓%; the second is better",
+     "marks": 3
+    },
+    {
+     "question": "Sell 100 ₹100 shares at ₹150 and buy 10% ₹50 shares at ₹60. Find the new income.",
+     "answer": "₹1,250",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Dividend uses the nominal value; the number of shares uses the market value.",
+    "A higher rate of return means a better investment.",
+    "Write the premium or discount as a value per share before you multiply."
+   ]
+  },
+  {
+   "slug": "icse10-linear-inequations",
+   "chapter": "Linear Inequations (in one variable)",
+   "number": 4,
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Solving, Solution Sets & Number Lines",
+   "concepts": [
+    {
+     "title": "Inequation",
+     "text": "A statement with <, >, ≤ or ≥. A linear inequation has the variable with power 1."
+    },
+    {
+     "title": "Replacement set",
+     "text": "The set from which x takes values: N, W, Z or R. The solution set is the part of it that satisfies the inequation."
+    },
+    {
+     "title": "Rules",
+     "text": "You can add, subtract, multiply or divide both sides by the same number. Multiplying or dividing by a negative number reverses the sign."
+    },
+    {
+     "title": "Combined inequations",
+     "text": "Solve each part, then take the values that satisfy both (the intersection)."
+    }
+   ],
+   "formulas": [
+    "a < b ⇒ a + c < b + c",
+    "a < b, c > 0 ⇒ ac < bc",
+    "a < b, c < 0 ⇒ ac > bc",
+    "N = {1, 2, 3, …}, W = {0, 1, 2, …}, Z = {…, −1, 0, 1, …}"
+   ],
+   "method": [
+    "Remove fractions by multiplying by the LCM.",
+    "Collect the x terms on one side.",
+    "Divide by the coefficient of x and reverse the sign if it is negative.",
+    "Write the solution set for the given replacement set and draw the number line."
+   ],
+   "example": {
+    "question": "Solve 5 − 2x ≤ 11, x ∈ Z, x < 2.",
+    "steps": [
+     "−2x ≤ 6, so x ≥ −3.",
+     "Combine with x < 2.",
+     "Solution set = {−3, −2, −1, 0, 1}."
+    ],
+    "answer": "{−3, −2, −1, 0, 1}"
+   },
+   "practice": [
+    {
+     "question": "Solve 4x − 1 < 11, x ∈ W.",
+     "answer": "{0, 1, 2}",
+     "marks": 2
+    },
+    {
+     "question": "Solve −2x ≥ 8, x ∈ R.",
+     "answer": "x ≤ −4",
+     "marks": 2
+    },
+    {
+     "question": "Solve 1 < 2x − 3 ≤ 7, x ∈ N.",
+     "answer": "{3, 4, 5}",
+     "marks": 2
+    },
+    {
+     "question": "Solve x/2 − 1 > x/3, x ∈ R.",
+     "answer": "x > 6",
+     "marks": 3
+    },
+    {
+     "question": "Solve 3x − 4 ≤ x + 2 < 2x + 5, x ∈ Z.",
+     "answer": "{−2, −1, 0, 1, 2, 3}",
+     "marks": 3
+    },
+    {
+     "question": "A = {x : 2x + 1 > 5, x ∈ R}, B = {x : x − 3 ≤ 4, x ∈ R}. Find A ∩ B.",
+     "answer": "2 < x ≤ 7",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Use an open circle for < or > and a closed circle for ≤ or ≥ on R.",
+    "For N, W or Z, mark separate dots.",
+    "Check one value from your answer in the original inequation."
+   ]
+  },
+  {
+   "slug": "icse10-quadratic-equations",
+   "chapter": "Quadratic Equations",
+   "number": 5,
+   "grade": 10,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Factorisation, Formula & Nature of Roots",
+   "concepts": [
+    {
+     "title": "Standard form",
+     "text": "A quadratic equation is ax² + bx + c = 0 with a ≠ 0. It has at most two roots."
+    },
+    {
+     "title": "Factorisation",
+     "text": "Split the middle term into two parts whose product is ac and whose sum is b. Then use 'if pq = 0, then p = 0 or q = 0'."
+    },
+    {
+     "title": "Quadratic formula",
+     "text": "x = [−b ± √(b² − 4ac)]/(2a) solves every quadratic equation."
+    },
+    {
+     "title": "Discriminant",
+     "text": "D = b² − 4ac. D > 0: two distinct real roots. D = 0: two equal real roots. D < 0: no real roots."
+    }
+   ],
+   "formulas": [
+    "x = [−b ± √(b² − 4ac)]/(2a)",
+    "D = b² − 4ac",
+    "Equal roots: x = −b/(2a)",
+    "If α is a root, then aα² + bα + c = 0"
+   ],
+   "method": [
+    "Write the equation in the form ax² + bx + c = 0.",
+    "Try factorisation first.",
+    "If it does not factorise, use the formula.",
+    "Check the roots in the original equation, and reject values that make a denominator zero."
+   ],
+   "example": {
+    "question": "Solve 2x² + x − 6 = 0.",
+    "steps": [
+     "ac = −12. Split x as 4x − 3x.",
+     "2x² + 4x − 3x − 6 = 2x(x + 2) − 3(x + 2).",
+     "(2x − 3)(x + 2) = 0."
+    ],
+    "answer": "x = 3/2 or x = −2"
+   },
+   "practice": [
+    {
+     "question": "Solve x² − 9x + 20 = 0.",
+     "answer": "4, 5",
+     "marks": 2
+    },
+    {
+     "question": "Find D for x² + x + 1 = 0.",
+     "answer": "−3; no real roots",
+     "marks": 2
+    },
+    {
+     "question": "Find k if x² + kx + 16 = 0 has equal roots.",
+     "answer": "k = ±8",
+     "marks": 2
+    },
+    {
+     "question": "Solve x² − 6x + 4 = 0 to two decimal places.",
+     "answer": "5.24, 0.76",
+     "marks": 3
+    },
+    {
+     "question": "Solve 1/(x − 2) + 2/(x − 1) = 6/x, x ≠ 0, 1, 2.",
+     "answer": "x = 3 or 4/3",
+     "marks": 3
+    },
+    {
+     "question": "One root of x² − 5x + k = 0 is 2. Find k and the other root.",
+     "answer": "k = 6; other root 3",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Write the equation in standard form before you find a, b and c.",
+    "Keep the sign of b when you use the formula.",
+    "In word problems, reject a root that does not make sense."
+   ]
+  }
+ ]
+}

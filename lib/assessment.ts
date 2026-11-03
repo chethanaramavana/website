@@ -1,6 +1,7 @@
 import { additionalPaperAssessments } from './assessment-additional';
 import { grade6PaperAssessments } from './grade6-papers';
 import { icse6PaperAssessments } from './icse6-papers';
+import { icseUpperPaperAssessments } from './icse-upper-papers';
 import { grade11PaperAssessments } from './grade11-papers';
 import { grade12PaperAssessments } from './grade12-papers';
 import { relationsPracticePaper } from './relations-practice-paper';
@@ -115,6 +116,7 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
   ...grade11PaperAssessments,
   ...grade12PaperAssessments,
   ...icse6PaperAssessments,
+  ...icseUpperPaperAssessments,
 };
 
 export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(
