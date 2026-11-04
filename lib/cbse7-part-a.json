@@ -1,0 +1,1780 @@
+{
+ "papers": [
+  {
+   "id": "g7-large-numbers-01",
+   "chapter": "Large Numbers Around Us",
+   "chapterNumber": 1,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Reading and writing large numbers in the Indian and international systems, comparing, rounding and estimating.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "1 crore is equal to",
+     "options": [
+      "10 lakh",
+      "100 lakh",
+      "1,000 lakh",
+      "10,000 lakh"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "In the Indian system, 4,05,30,000 is read as",
+     "options": [
+      "four crore five lakh thirty thousand",
+      "forty crore five lakh thirty thousand",
+      "four crore fifty lakh thirty thousand",
+      "four lakh five thousand thirty"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "1 million is equal to",
+     "options": [
+      "1 lakh",
+      "1 crore",
+      "10 lakh",
+      "100 lakh"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "7,48,256 rounded to the nearest thousand is",
+     "options": [
+      "7,50,000",
+      "7,49,000",
+      "7,48,300",
+      "7,48,000"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "10 lakh is the same as 1 million.",
+     "reason": "1 lakh is written with five zeros."
+    },
+    {
+     "number": 6,
+     "assertion": "9,99,999 + 1 = 1 crore.",
+     "reason": "The smallest 7-digit number is 10,00,000."
+    }
+   ],
+   "written": {
+    "17": "Write 6,52,07,040 in words in the Indian system. Then write it with international commas and in words in the international system.",
+    "18": "Using each of the digits 3, 0, 7, 5, 1 and 9 once, write the largest and the smallest 6-digit numbers.",
+    "19": "Estimate 4,876 × 312 by rounding each number to its greatest place. Then find the exact product.",
+    "20": "City A has a population of 28,45,600 and City B has 31,09,750. Which city has more people, and by how many? Write the difference in words.",
+    "21": "(a) How many lakhs make 3 crore? (b) How many thousands make 5 lakh? (c) How many millions make 2 crore?",
+    "22": "A school collects ₹1,250 from each of its 1,836 students. Find the total amount and write it in words in the Indian system.",
+    "23": [
+     "A factory makes 45,000 bottles every day.",
+     "(a) How many bottles does it make in 30 days?",
+     "(b) The bottles are packed in boxes of 24. How many boxes are filled?",
+     "(c) Write the number of bottles in (a) in the international system, in figures and in words."
+    ],
+    "24": [
+     "(a) Write the number of seats in words (Indian system). [1]",
+     "(b) Find the ticket money when every seat is sold. Write it in lakhs and crores. [1]",
+     "(c) 85,000 people come on day 1 and the stadium is full on day 2. Find the total attendance, and how many fewer people came than two full days. [2]"
+    ]
+   },
+   "caseStudy": "A stadium has 1,32,000 seats. Each ticket costs ₹250.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "Six crore fifty-two lakh seven thousand forty. International: 65,207,040 = sixty-five million two hundred seven thousand forty.",
+    "18": "Largest = 9,75,310. Smallest = 1,03,579 (0 cannot be the first digit).",
+    "19": "Estimate: 5,000 × 300 = 15,00,000. Exact: 4,876 × 312 = 15,21,312.",
+    "20": "City B. 31,09,750 − 28,45,600 = 2,64,150, that is, two lakh sixty-four thousand one hundred fifty.",
+    "21": "(a) 300 lakh (1 crore = 100 lakh). (b) 500 thousand (1 lakh = 100 thousand). (c) 20 million (1 crore = 10 million).",
+    "22": "1,250 × 1,836 = ₹22,95,000, that is, twenty-two lakh ninety-five thousand rupees.",
+    "23": "(a) 45,000 × 30 = 13,50,000 bottles. (b) 13,50,000 ÷ 24 = 56,250 boxes. (c) 1,350,000: one million three hundred fifty thousand.",
+    "24": "(a) One lakh thirty-two thousand. (b) 1,32,000 × 250 = ₹3,30,00,000 = ₹3 crore 30 lakh. (c) Total = 85,000 + 1,32,000 = 2,17,000. Two full days = 2,64,000, so 47,000 fewer people."
+   }
+  },
+  {
+   "id": "g7-arithmetic-expressions-01",
+   "chapter": "Arithmetic Expressions",
+   "chapterNumber": 2,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Writing and evaluating arithmetic expressions, terms, swapping and grouping, removing brackets and the distributive property.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The value of 30 − 4 × 5 is",
+     "options": [
+      "130",
+      "10",
+      "26",
+      "50"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The terms of 12 − 5 + 7 × 2 are",
+     "options": [
+      "12, −5, 7 × 2",
+      "12, 5, 7, 2",
+      "12 − 5, 7 × 2",
+      "12, −5 + 7, 2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "25 − (10 − 4) is the same as",
+     "options": [
+      "25 − 10 − 4",
+      "25 + 10 − 4",
+      "25 − 10 + 4",
+      "25 + 10 + 4"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "8 × 99 is the same as",
+     "options": [
+      "8 × 100 + 8",
+      "8 + 100 − 1",
+      "800 − 1",
+      "8 × 100 − 8"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "47 + 38 − 47 = 38.",
+     "reason": "Terms can be added in any order."
+    },
+    {
+     "number": 6,
+     "assertion": "40 ÷ 4 ÷ 2 = 20.",
+     "reason": "Division is not associative: (40 ÷ 4) ÷ 2 is not the same as 40 ÷ (4 ÷ 2)."
+    }
+   ],
+   "written": {
+    "17": "Find the value of 48 − 6 × 4 + 10.",
+    "18": "Put brackets in 5 + 3 × 4 − 2 so that its value is 30.",
+    "19": "Without calculating, say which is greater: 237 − 85 or 237 − 95. Give a reason.",
+    "20": "Remove the brackets and simplify: 120 − (45 − 15) + (30 − 8).",
+    "21": "Use the distributive property to find (a) 25 × 48 + 25 × 52, (b) 97 × 15.",
+    "22": "Ravi buys 4 notebooks at ₹35 each and 3 pens at ₹12 each. He pays with a ₹200 note. Write one expression for his change and find it.",
+    "23": [
+     "A shop had 250 eggs. It sold 12 trays of 12 eggs each and then received 5 trays of 30 eggs each.",
+     "(a) Write one expression for the number of eggs now and find its value.",
+     "(b) Simplify 8 × (25 + 17) − 8 × 17 in a smart way.",
+     "(c) Is 56 − (20 − 6) equal to 56 − 20 − 6? Show why."
+    ],
+    "24": [
+     "(a) Write an expression for the cost of the tickets and find it. [1]",
+     "(b) Find the total cost including popcorn. [1]",
+     "(c) They use a ₹150 discount coupon and pay with ₹2,000. Write one expression for the change and find it. [2]"
+    ]
+   },
+   "caseStudy": "A cinema ticket costs ₹180 for an adult and ₹120 for a child. A family of 2 adults and 3 children goes to the cinema. Each of the 5 people buys popcorn for ₹90.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Multiply first: 48 − 24 + 10 = 34.",
+    "18": "(5 + 3) × 4 − 2 = 32 − 2 = 30.",
+    "19": "237 − 85 is greater, because we subtract a smaller number from the same number.",
+    "20": "120 − 45 + 15 + 30 − 8 = 112.",
+    "21": "(a) 25 × (48 + 52) = 25 × 100 = 2,500. (b) (100 − 3) × 15 = 1,500 − 45 = 1,455.",
+    "22": "200 − (4 × 35 + 3 × 12) = 200 − (140 + 36) = 200 − 176 = ₹24.",
+    "23": "(a) 250 − 12 × 12 + 5 × 30 = 250 − 144 + 150 = 256 eggs. (b) 8 × 25 + 8 × 17 − 8 × 17 = 8 × 25 = 200. (c) No. 56 − (20 − 6) = 56 − 14 = 42, but 56 − 20 − 6 = 30. Removing the bracket after a minus sign changes −6 to +6.",
+    "24": "(a) 2 × 180 + 3 × 120 = 360 + 360 = ₹720. (b) 720 + 5 × 90 = ₹1,170. (c) 2,000 − (2 × 180 + 3 × 120 + 5 × 90 − 150) = 2,000 − 1,020 = ₹980."
+   }
+  },
+  {
+   "id": "g7-decimals-intro-01",
+   "chapter": "A Peek Beyond the Point",
+   "chapterNumber": 3,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Decimal place value, comparing decimals, the number line, adding and subtracting decimals, and units of measurement.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "3 tenths and 7 hundredths is",
+     "options": [
+      "3.7",
+      "0.37",
+      "0.037",
+      "37"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The greatest of 0.5, 0.45, 0.405 and 0.054 is",
+     "options": [
+      "0.5",
+      "0.45",
+      "0.405",
+      "0.054"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "7 cm 6 mm in centimetres is",
+     "options": [
+      "76 cm",
+      "0.76 cm",
+      "7.6 cm",
+      "7.06 cm"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "4.2 + 0.85 equals",
+     "options": [
+      "4.27",
+      "12.7",
+      "4.105",
+      "5.05"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "0.70 = 0.7.",
+     "reason": "Zeros at the end after the decimal point do not change the value."
+    },
+    {
+     "number": 6,
+     "assertion": "0.3 > 0.25.",
+     "reason": "A decimal with more digits is always greater."
+    }
+   ],
+   "written": {
+    "17": "Write as decimals: (a) 5 + 3/10 + 4/100, (b) 27/100.",
+    "18": "Arrange in ascending order: 2.05, 2.5, 2.005, 2.55.",
+    "19": "Convert: (a) 3 kg 250 g into kg, (b) ₹45 and 5 paise into rupees.",
+    "20": "Find 12.75 + 3.6 − 5.08.",
+    "21": "Mark 0.3 and 0.75 on a number line. Find the number halfway between them.",
+    "22": "Riya ran 2.45 km on Monday and 3.8 km on Tuesday. How much more did she run on Tuesday? What is the total distance?",
+    "23": [
+     "Sana buys a bag for ₹125.50, a book for ₹48.75 and shoes for ₹210.25. She pays with a ₹500 note.",
+     "(a) Find the total cost.",
+     "(b) Find the change.",
+     "(c) Can she also buy a pen box for ₹99.90 with the change? How much is left?"
+    ],
+    "24": [
+     "(a) Find the total length that is cut. [1]",
+     "(b) Find the length that is left. [1]",
+     "(c) How many more pieces of 0.45 m can be cut from the rest, and what is left? [2]"
+    ]
+   },
+   "caseStudy": "A ribbon is 5 m long. Pieces of 1.25 m, 0.8 m and 1.6 m are cut from it.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "(a) 5.34 (b) 0.27",
+    "18": "2.005, 2.05, 2.5, 2.55",
+    "19": "(a) 3.25 kg (250 g = 0.25 kg) (b) ₹45.05 (5 paise = ₹0.05)",
+    "20": "12.75 + 3.60 = 16.35; 16.35 − 5.08 = 11.27.",
+    "21": "Halfway = (0.3 + 0.75) ÷ 2 = 1.05 ÷ 2 = 0.525.",
+    "22": "3.80 − 2.45 = 1.35 km more. Total = 2.45 + 3.80 = 6.25 km.",
+    "23": "(a) 125.50 + 48.75 + 210.25 = ₹384.50. (b) 500 − 384.50 = ₹115.50. (c) Yes. 115.50 − 99.90 = ₹15.60 is left.",
+    "24": "(a) 1.25 + 0.80 + 1.60 = 3.65 m. (b) 5.00 − 3.65 = 1.35 m. (c) 0.45 + 0.45 + 0.45 = 1.35, so 3 pieces, and nothing is left."
+   }
+  },
+  {
+   "id": "g7-letter-numbers-01",
+   "chapter": "Expressions using Letter-Numbers",
+   "chapterNumber": 4,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Using letters for numbers, forming expressions from situations, finding values, like terms and simplifying.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "'5 more than twice a number n' is",
+     "options": [
+      "5n + 2",
+      "2n + 5",
+      "2(n + 5)",
+      "2 + 5n"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The value of 3x − 4 when x = 6 is",
+     "options": [
+      "14",
+      "22",
+      "2",
+      "18"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which pair are like terms?",
+     "options": [
+      "3a and 3b",
+      "2x and x²",
+      "−4p and 7p",
+      "5 and 5y"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "7m − 3 + 2m + 8 simplifies to",
+     "options": [
+      "9m + 11",
+      "5m + 5",
+      "14m",
+      "9m + 5"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "4a + 3a = 7a.",
+     "reason": "A variable is a letter that stands for a number."
+    },
+    {
+     "number": 6,
+     "assertion": "2(x + 3) = 2x + 3.",
+     "reason": "A number outside a bracket multiplies every term inside the bracket."
+    }
+   ],
+   "written": {
+    "17": "Write expressions: (a) 7 less than y, (b) the cost of p pens at ₹12 each.",
+    "18": "Find the value of 5a − 2b when a = 4 and b = 3.",
+    "19": "Simplify 6p + 4q − 2p + q.",
+    "20": "A row of squares is made with matchsticks: 1 square uses 4 sticks, 2 squares use 7, 3 squares use 10. Write a rule for n squares and find the sticks for 15 squares.",
+    "21": "Simplify 3(2x − 5) − 2(x − 4), and find its value when x = 5.",
+    "22": "A rectangle has length (2a + 3) cm and breadth (a − 1) cm. Write its perimeter in simplest form and find it when a = 4.",
+    "23": [
+     "Meera is m years old. Her brother is 3 years older than her. Her mother's age is 2 years less than 4 times Meera's age.",
+     "(a) Write the brother's and the mother's ages.",
+     "(b) Write and simplify the sum of the three ages.",
+     "(c) Find the sum when m = 9."
+    ],
+    "24": [
+     "(a) Find the fare for 1 km and for 5 km. [1]",
+     "(b) Write an expression for the fare for d km. [1]",
+     "(c) Find the fare for 12 km, and the distance for a fare of ₹240. [2]"
+    ]
+   },
+   "caseStudy": "An auto charges ₹30 for the first km and ₹15 for each further km.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "(a) y − 7 (b) 12p",
+    "18": "5 × 4 − 2 × 3 = 20 − 6 = 14.",
+    "19": "(6p − 2p) + (4q + q) = 4p + 5q.",
+    "20": "Each new square adds 3 sticks: 3n + 1. For 15 squares: 46 sticks.",
+    "21": "6x − 15 − 2x + 8 = 4x − 7. At x = 5: 20 − 7 = 13.",
+    "22": "2[(2a + 3) + (a − 1)] = 2(3a + 2) = 6a + 4. At a = 4: 28 cm.",
+    "23": "(a) Brother: m + 3. Mother: 4m − 2. (b) m + (m + 3) + (4m − 2) = 6m + 1. (c) 6 × 9 + 1 = 55 years.",
+    "24": "(a) ₹30 and 30 + 4 × 15 = ₹90. (b) 30 + 15(d − 1) = 15d + 15. (c) 15 × 12 + 15 = ₹195. 15d + 15 = 240 gives d = 15 km."
+   }
+  },
+  {
+   "id": "g7-parallel-lines-01",
+   "chapter": "Parallel and Intersecting Lines",
+   "chapterNumber": 5,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Linear pairs, vertically opposite angles, parallel lines and a transversal: corresponding, alternate and interior angles.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Vertically opposite angles are",
+     "options": [
+      "supplementary",
+      "equal",
+      "complementary",
+      "always 90°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Two angles form a linear pair and one is 65°. The other is",
+     "options": [
+      "115°",
+      "25°",
+      "65°",
+      "295°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "When a transversal cuts two parallel lines, alternate angles are",
+     "options": [
+      "supplementary",
+      "unequal",
+      "equal",
+      "right angles"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Interior angles on the same side of a transversal between two parallel lines add up to",
+     "options": [
+      "90°",
+      "360°",
+      "100°",
+      "180°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If ∠1 = 70° and ∠2 is its corresponding angle for two parallel lines, then ∠2 = 70°.",
+     "reason": "Corresponding angles are equal when the lines are parallel."
+    },
+    {
+     "number": 6,
+     "assertion": "Two lines that do not meet on the page are always parallel.",
+     "reason": "Parallel lines never meet, however far they are extended."
+    }
+   ],
+   "written": {
+    "17": "Two lines intersect, and one of the angles is 48°. Find the other three angles.",
+    "18": "A transversal cuts two parallel lines l and m. One angle at l is 110°. Find its corresponding angle at m and the co-interior angle.",
+    "19": "Interior angles on the same side of a transversal are 75° and 105°. Are the lines parallel? Give a reason.",
+    "20": "Angles x and (2x + 30)° form a linear pair. Find both angles.",
+    "21": "Lines l ∥ m. Alternate interior angles are (3y − 10)° and (2y + 25)°. Find y and the angle.",
+    "22": "Draw a triangle ABC and a line through A parallel to BC. Use alternate angles to show that ∠A + ∠B + ∠C = 180°.",
+    "23": [
+     "Line t cuts parallel lines l and m. At l, the four angles are ∠1 (top-left), ∠2 (top-right), ∠3 (bottom-left) and ∠4 (bottom-right). At m, the angles ∠5, ∠6, ∠7 and ∠8 are in the same positions.",
+     "∠2 = 65°.",
+     "(a) Find ∠1, ∠3 and ∠4.",
+     "(b) Find ∠5, ∠6, ∠7 and ∠8.",
+     "(c) Name one pair of alternate angles and one pair of corresponding angles."
+    ],
+    "24": [
+     "(a) What angle does the road make with the second track? Give the reason. [1]",
+     "(b) Find the other angle that the road makes with the first track. [1]",
+     "(c) A second road is parallel to the first road. What angles does it make with the tracks? Give the reason. [2]"
+    ]
+   },
+   "caseStudy": "Two railway tracks are parallel. A straight road crosses both tracks and makes an angle of 72° with the first track.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "48° (vertically opposite) and 132°, 132° (linear pairs).",
+    "18": "Corresponding angle = 110°. Co-interior angle = 180° − 110° = 70°.",
+    "19": "Yes. 75° + 105° = 180°, so the co-interior angles are supplementary and the lines are parallel.",
+    "20": "x + 2x + 30 = 180, so x = 50. The angles are 50° and 130°.",
+    "21": "3y − 10 = 2y + 25, so y = 35. The angle = 95°.",
+    "22": "Draw DE through A parallel to BC. ∠DAB = ∠B and ∠EAC = ∠C (alternate angles). ∠DAB + ∠A + ∠EAC = 180° (straight line). So ∠A + ∠B + ∠C = 180°.",
+    "23": "(a) ∠3 = 65° (vertically opposite), ∠1 = ∠4 = 115° (linear pair). (b) Corresponding angles: ∠5 = 115°, ∠6 = 65°, ∠7 = 65°, ∠8 = 115°. (c) Alternate: ∠3 and ∠6. Corresponding: ∠2 and ∠6.",
+    "24": "(a) 72°, corresponding angles (the tracks are parallel). (b) 180° − 72° = 108° (linear pair). (c) 72° and 108°, because corresponding angles are equal for parallel lines."
+   }
+  }
+ ],
+ "notes": [
+  {
+   "slug": "g7-large-numbers",
+   "chapter": "Large Numbers Around Us",
+   "number": 1,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Lakhs, Crores, Millions & Estimation",
+   "concepts": [
+    {
+     "title": "The Indian place-value system",
+     "text": "The places from the right are: ones, tens, hundreds, thousands, ten thousands, lakhs, ten lakhs, crores, ten crores."
+    },
+    {
+     "title": "The international system",
+     "text": "Many countries group digits in threes: ones, thousands, millions, billions. Example: 65,207,040 = sixty-five million two hundred seven thousand forty."
+    },
+    {
+     "title": "Comparing and forming numbers",
+     "text": "A number with more digits is larger. If two numbers have the same number of digits, compare from the left: the first place where the digits differ decides."
+    },
+    {
+     "title": "Rounding and estimation",
+     "text": "To round to the nearest thousand, look at the hundreds digit. If it is 5 or more, round up; otherwise round down. 7,48,256 → 7,48,000."
+    }
+   ],
+   "formulas": [
+    "1 lakh = 1,00,000",
+    "1 crore = 1,00,00,000 = 100 lakh",
+    "10 lakh = 1 million",
+    "1 crore = 10 million"
+   ],
+   "method": [
+    "Put commas in the correct system first.",
+    "Read each comma group with its place name.",
+    "For conversions, use 10 lakh = 1 million.",
+    "Estimate first, then calculate exactly and compare."
+   ],
+   "example": {
+    "question": "Write 6,52,07,040 in words in both systems.",
+    "steps": [
+     "Indian: six crore fifty-two lakh seven thousand forty.",
+     "International commas: 65,207,040."
+    ],
+    "answer": "Sixty-five million two hundred seven thousand forty"
+   },
+   "practice": [
+    {
+     "question": "Write 2,05,00,600 in words.",
+     "answer": "Two crore five lakh six hundred",
+     "marks": 2
+    },
+    {
+     "question": "How many lakhs in 1 crore?",
+     "answer": "100",
+     "marks": 2
+    },
+    {
+     "question": "Write 3 million in the Indian system.",
+     "answer": "30,00,000",
+     "marks": 2
+    },
+    {
+     "question": "Round 54,678 to the nearest thousand.",
+     "answer": "55,000",
+     "marks": 2
+    },
+    {
+     "question": "Smallest 6-digit number with digits 4, 0, 2, 8, 6, 1.",
+     "answer": "1,02,468",
+     "marks": 2
+    },
+    {
+     "question": "Estimate 3,912 × 198.",
+     "answer": "4,000 × 200 = 8,00,000",
+     "marks": 3
+    },
+    {
+     "question": "Difference between 1 crore and 99,99,999.",
+     "answer": "1",
+     "marks": 2
+    },
+    {
+     "question": "Write 45,600,000 in the Indian system and in words.",
+     "answer": "4,56,00,000; four crore fifty-six lakh",
+     "marks": 3
+    },
+    {
+     "question": "A town has 3,45,780 people. Another has 2,98,450. Find the total.",
+     "answer": "6,44,230",
+     "marks": 3
+    },
+    {
+     "question": "A shop sells 2,450 items a day for 365 days. Find the total.",
+     "answer": "8,94,250",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Indian: 3-2-2 commas.",
+    "International: 3-3-3 commas.",
+    "Round with the digit just to the right."
+   ],
+   "intro": "Lakhs, crores and millions appear in news, prices and populations. In this chapter you learn to read and write very large numbers, change between the Indian and the international systems, compare them, and estimate answers quickly.",
+   "before": [
+    "read numbers up to 99,999",
+    "know place values: ones, tens, hundreds, thousands",
+    "multiply by 10, 100 and 1,000"
+   ],
+   "glossary": [
+    {
+     "term": "Place value",
+     "meaning": "The value of a digit because of its position. In 5,32,000 the 5 means 5 lakh."
+    },
+    {
+     "term": "Lakh",
+     "meaning": "1,00,000 (one hundred thousand)."
+    },
+    {
+     "term": "Crore",
+     "meaning": "1,00,00,000 (one hundred lakh, or ten million)."
+    },
+    {
+     "term": "Million",
+     "meaning": "1,000,000 (ten lakh)."
+    },
+    {
+     "term": "Estimate",
+     "meaning": "A quick answer that is close to the exact answer, found with rounded numbers."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "The Indian place-value system",
+     "text": [
+      "The places from the right are: ones, tens, hundreds, thousands, ten thousands, lakhs, ten lakhs, crores, ten crores.",
+      "Commas: put the first comma after 3 digits from the right, then after every 2 digits. Example: 6,52,07,040.",
+      "Read each group with its name: six crore, fifty-two lakh, seven thousand, forty."
+     ],
+     "points": [
+      "Indian commas: 3, then 2, 2, 2 …"
+     ],
+     "formulas": [
+      "1 lakh = 1,00,000",
+      "1 crore = 100 lakh = 1,00,00,000"
+     ],
+     "example": {
+      "question": "Write 30,08,400 in words.",
+      "steps": [
+       "30 → thirty lakh.",
+       "08 → eight thousand.",
+       "400 → four hundred."
+      ],
+      "answer": "Thirty lakh eight thousand four hundred"
+     }
+    },
+    {
+     "title": "The international system",
+     "text": [
+      "Many countries group digits in threes: ones, thousands, millions, billions. Example: 65,207,040 = sixty-five million two hundred seven thousand forty.",
+      "Useful links: 10 lakh = 1 million; 1 crore = 10 million; 100 crore = 1 billion."
+     ],
+     "points": [
+      "International commas: every 3 digits."
+     ],
+     "formulas": [
+      "1 million = 10 lakh",
+      "1 crore = 10 million",
+      "1 billion = 100 crore"
+     ]
+    },
+    {
+     "title": "Comparing and forming numbers",
+     "text": [
+      "A number with more digits is larger. If two numbers have the same number of digits, compare from the left: the first place where the digits differ decides.",
+      "For the largest number from given digits, arrange them from biggest to smallest. For the smallest, arrange from smallest to biggest, but do not start with 0."
+     ]
+    },
+    {
+     "title": "Rounding and estimation",
+     "text": [
+      "To round to the nearest thousand, look at the hundreds digit. If it is 5 or more, round up; otherwise round down. 7,48,256 → 7,48,000.",
+      "To estimate a product or sum, round each number first, then calculate. The estimate tells you whether your exact answer is sensible."
+     ],
+     "points": [
+      "Look at the digit to the right of the place you round to."
+     ],
+     "example": {
+      "question": "Round 3,67,520 to the nearest lakh.",
+      "steps": [
+       "The lakh digit is 3; the next digit (ten thousands) is 6.",
+       "6 ≥ 5, so round up."
+      ],
+      "answer": "4,00,000"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "type": "Words in both systems",
+     "question": "Write 6,52,07,040 in words in both systems.",
+     "steps": [
+      "Indian: six crore fifty-two lakh seven thousand forty.",
+      "International commas: 65,207,040."
+     ],
+     "answer": "Sixty-five million two hundred seven thousand forty"
+    },
+    {
+     "type": "Conversion",
+     "question": "How many millions make 2 crore?",
+     "steps": [
+      "1 crore = 10 million."
+     ],
+     "answer": "20 million"
+    },
+    {
+     "type": "Difference",
+     "question": "Find the difference between 31,09,750 and 28,45,600.",
+     "steps": [
+      "Subtract column by column."
+     ],
+     "answer": "2,64,150"
+    },
+    {
+     "type": "Rounding",
+     "question": "Round 7,48,256 to the nearest thousand and the nearest lakh.",
+     "steps": [
+      "Hundreds digit 2 < 5 → 7,48,000.",
+      "Ten-thousands digit 4 < 5 → 7,00,000."
+     ],
+     "answer": "7,48,000 and 7,00,000"
+    },
+    {
+     "type": "Estimation",
+     "question": "Estimate 4,876 × 312.",
+     "steps": [
+      "Round: 5,000 and 300.",
+      "5,000 × 300 = 15,00,000."
+     ],
+     "answer": "About 15 lakh"
+    },
+    {
+     "type": "Word problem",
+     "question": "₹1,250 from each of 1,836 students. Find the total.",
+     "steps": [
+      "1,250 × 1,836 = 22,95,000."
+     ],
+     "answer": "₹22,95,000"
+    }
+   ],
+   "mistakes": [
+    "Using international commas when the question asks for the Indian system.",
+    "Starting the smallest number with 0.",
+    "Forgetting that 1 crore = 100 lakh (not 10 lakh).",
+    "Rounding by looking at the wrong digit."
+   ],
+   "checklist": [
+    "Check the comma pattern.",
+    "Write number names with hyphens: fifty-two.",
+    "Show the estimate and the exact answer.",
+    "Write units (₹, people) in answers."
+   ]
+  },
+  {
+   "slug": "g7-arithmetic-expressions",
+   "chapter": "Arithmetic Expressions",
+   "number": 2,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Terms, Brackets & Order of Operations",
+   "concepts": [
+    {
+     "title": "Order of operations",
+     "text": "Calculate in this order: (1) brackets, (2) multiplication and division from left to right, (3) addition and subtraction from left to right."
+    },
+    {
+     "title": "Terms, swapping and grouping",
+     "text": "Think of subtraction as adding a negative term: 12 − 5 + 14 = 12 + (−5) + 14. Then you can add the terms in any order and in any groups."
+    },
+    {
+     "title": "Removing brackets",
+     "text": "A + sign before a bracket: remove the bracket and keep the signs. 20 + (8 − 3) = 20 + 8 − 3."
+    },
+    {
+     "title": "The distributive property",
+     "text": "a × (b + c) = a × b + a × c, and a × (b − c) = a × b − a × c."
+    }
+   ],
+   "formulas": [
+    "Order: brackets, × and ÷, then + and −",
+    "a − (b − c) = a − b + c",
+    "a × (b + c) = ab + ac"
+   ],
+   "method": [
+    "Write the expression from the story.",
+    "Mark the terms.",
+    "Do brackets, then × and ÷, then + and −.",
+    "Use the distributive property for smart calculation."
+   ],
+   "example": {
+    "question": "Find 30 − 4 × 5.",
+    "steps": [
+     "4 × 5 = 20.",
+     "30 − 20."
+    ],
+    "answer": "10"
+   },
+   "practice": [
+    {
+     "question": "Find 18 + 6 × 3.",
+     "answer": "36",
+     "marks": 2
+    },
+    {
+     "question": "Find (18 + 6) × 3.",
+     "answer": "72",
+     "marks": 2
+    },
+    {
+     "question": "Find 100 − (35 + 15).",
+     "answer": "50",
+     "marks": 2
+    },
+    {
+     "question": "Find 64 ÷ 8 × 2.",
+     "answer": "16",
+     "marks": 2
+    },
+    {
+     "question": "Use the distributive property: 12 × 105.",
+     "answer": "1,260",
+     "marks": 2
+    },
+    {
+     "question": "Simplify 75 − (25 − 10) + 5.",
+     "answer": "65",
+     "marks": 2
+    },
+    {
+     "question": "Find 99 × 23.",
+     "answer": "2,277",
+     "marks": 3
+    },
+    {
+     "question": "Write and find: 3 bags of 25 kg and 2 bags of 40 kg, minus 15 kg used.",
+     "answer": "3 × 25 + 2 × 40 − 15 = 140 kg",
+     "marks": 3
+    },
+    {
+     "question": "Find 36 × 7 + 36 × 3.",
+     "answer": "360",
+     "marks": 3
+    },
+    {
+     "question": "A bus has 52 seats. 4 buses carry 180 children and 15 teachers. Write and find the number of empty seats.",
+     "answer": "4 × 52 − (180 + 15) = 13",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "× and ÷ before + and −.",
+    "Minus before a bracket changes the signs inside.",
+    "Use (100 − 3) tricks for 97, 98, 99."
+   ],
+   "intro": "An arithmetic expression is a calculation written with numbers and operations, such as 200 − 4 × 35. In this chapter you learn the correct order to calculate, how to split an expression into terms, and how brackets and the distributive property make calculations easier.",
+   "before": [
+    "add, subtract, multiply and divide whole numbers",
+    "know that 'of' means multiply"
+   ],
+   "glossary": [
+    {
+     "term": "Expression",
+     "meaning": "Numbers joined by +, −, × or ÷, such as 13 + 2 × 6."
+    },
+    {
+     "term": "Value",
+     "meaning": "The single number that the expression equals."
+    },
+    {
+     "term": "Term",
+     "meaning": "A part of the expression that is added. In 12 − 5 + 7 × 2 the terms are 12, −5 and 7 × 2."
+    },
+    {
+     "term": "Brackets",
+     "meaning": "They show which part to calculate first."
+    },
+    {
+     "term": "Distributive property",
+     "meaning": "a × (b + c) = a × b + a × c."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Order of operations",
+     "text": [
+      "Calculate in this order: (1) brackets, (2) multiplication and division from left to right, (3) addition and subtraction from left to right.",
+      "Example: 30 − 4 × 5 = 30 − 20 = 10. If you subtract first, you get 130, which is wrong."
+     ],
+     "points": [
+      "Brackets → × and ÷ → + and −."
+     ],
+     "example": {
+      "question": "Find 48 − 6 × 4 + 10.",
+      "steps": [
+       "6 × 4 = 24.",
+       "48 − 24 + 10 = 34."
+      ],
+      "answer": "34"
+     }
+    },
+    {
+     "title": "Terms, swapping and grouping",
+     "text": [
+      "Think of subtraction as adding a negative term: 12 − 5 + 14 = 12 + (−5) + 14. Then you can add the terms in any order and in any groups.",
+      "This makes mental maths easy: 47 + 38 − 47 = (47 − 47) + 38 = 38."
+     ],
+     "points": [
+      "Move a term together with its sign."
+     ]
+    },
+    {
+     "title": "Removing brackets",
+     "text": [
+      "A + sign before a bracket: remove the bracket and keep the signs. 20 + (8 − 3) = 20 + 8 − 3.",
+      "A − sign before a bracket: remove the bracket and change every sign inside. 25 − (10 − 4) = 25 − 10 + 4."
+     ],
+     "points": [
+      "Minus before a bracket changes every sign inside."
+     ],
+     "example": {
+      "question": "Simplify 120 − (45 − 15) + (30 − 8).",
+      "steps": [
+       "120 − 45 + 15 + 30 − 8.",
+       "= 112."
+      ],
+      "answer": "112"
+     }
+    },
+    {
+     "title": "The distributive property",
+     "text": [
+      "a × (b + c) = a × b + a × c, and a × (b − c) = a × b − a × c.",
+      "Use it to calculate quickly: 97 × 15 = (100 − 3) × 15 = 1,500 − 45 = 1,455. Also 25 × 48 + 25 × 52 = 25 × 100 = 2,500."
+     ],
+     "formulas": [
+      "a × (b + c) = a × b + a × c",
+      "a × (b − c) = a × b − a × c"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Order of operations",
+     "question": "Find 30 − 4 × 5.",
+     "steps": [
+      "4 × 5 = 20.",
+      "30 − 20."
+     ],
+     "answer": "10"
+    },
+    {
+     "type": "Brackets to reach a value",
+     "question": "Put brackets in 5 + 3 × 4 − 2 to get 30.",
+     "steps": [
+      "Try (5 + 3) × 4 − 2 = 32 − 2."
+     ],
+     "answer": "(5 + 3) × 4 − 2"
+    },
+    {
+     "type": "Compare without calculating",
+     "question": "Which is greater: 237 − 85 or 237 − 95?",
+     "steps": [
+      "Same starting number; subtracting less leaves more."
+     ],
+     "answer": "237 − 85"
+    },
+    {
+     "type": "Distributive",
+     "question": "Find 97 × 15.",
+     "steps": [
+      "(100 − 3) × 15 = 1,500 − 45."
+     ],
+     "answer": "1,455"
+    },
+    {
+     "type": "Change from a note",
+     "question": "Ravi buys 4 notebooks at ₹35 and 3 pens at ₹12 and pays ₹200. Find the change.",
+     "steps": [
+      "Cost = 4 × 35 + 3 × 12 = 176.",
+      "200 − 176."
+     ],
+     "answer": "₹24"
+    },
+    {
+     "type": "Bracket after minus",
+     "question": "Is 56 − (20 − 6) = 56 − 20 − 6?",
+     "steps": [
+      "56 − 14 = 42.",
+      "56 − 20 − 6 = 30."
+     ],
+     "answer": "No; the correct form is 56 − 20 + 6"
+    }
+   ],
+   "mistakes": [
+    "Adding or subtracting before multiplying.",
+    "Not changing signs after removing a bracket with a minus sign in front.",
+    "Moving a term without its sign.",
+    "Dividing from right to left."
+   ],
+   "checklist": [
+    "Write each step on a new line.",
+    "Underline the part you calculate first.",
+    "Check your answer with an estimate.",
+    "Write ₹ in money answers."
+   ]
+  },
+  {
+   "slug": "g7-decimals-intro",
+   "chapter": "A Peek Beyond the Point",
+   "number": 3,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Tenths, Hundredths & Decimal Place Value",
+   "concepts": [
+    {
+     "title": "Place value after the point",
+     "text": "Each place to the right is one-tenth of the place before it: ones, tenths, hundredths, thousandths."
+    },
+    {
+     "title": "Comparing decimals",
+     "text": "Compare the whole parts first. If they are equal, compare tenths, then hundredths, and so on."
+    },
+    {
+     "title": "Decimals on the number line",
+     "text": "Divide each unit into 10 equal parts to mark tenths. 0.3 is the third mark after 0."
+    },
+    {
+     "title": "Adding and subtracting decimals",
+     "text": "Write the numbers so that the decimal points are in one column. Fill empty places with zeros. Then add or subtract as with whole numbers and keep the point in the same column."
+    }
+   ],
+   "formulas": [
+    "0.1 = 1/10, 0.01 = 1/100",
+    "1 cm = 10 mm, 1 kg = 1,000 g, ₹1 = 100 paise"
+   ],
+   "method": [
+    "Line up the decimal points.",
+    "Add zeros to make equal decimal places.",
+    "Calculate as with whole numbers.",
+    "Put the point in the answer under the other points."
+   ],
+   "example": {
+    "question": "Write 5 + 3/10 + 4/100 as a decimal.",
+    "steps": [
+     "Tenths digit 3, hundredths digit 4."
+    ],
+    "answer": "5.34"
+   },
+   "practice": [
+    {
+     "question": "Write 7/10 + 9/100 as a decimal.",
+     "answer": "0.79",
+     "marks": 2
+    },
+    {
+     "question": "Which is greater: 0.6 or 0.58?",
+     "answer": "0.6",
+     "marks": 2
+    },
+    {
+     "question": "Write 45 mm in cm.",
+     "answer": "4.5 cm",
+     "marks": 2
+    },
+    {
+     "question": "Find 6.4 + 2.75.",
+     "answer": "9.15",
+     "marks": 2
+    },
+    {
+     "question": "Find 10 − 3.46.",
+     "answer": "6.54",
+     "marks": 2
+    },
+    {
+     "question": "Write ₹7 and 50 paise in rupees.",
+     "answer": "₹7.50",
+     "marks": 2
+    },
+    {
+     "question": "Arrange 1.1, 1.01, 1.11, 1.001 in descending order.",
+     "answer": "1.11, 1.1, 1.01, 1.001",
+     "marks": 3
+    },
+    {
+     "question": "A bottle holds 1.5 L. 0.65 L is used. How much is left?",
+     "answer": "0.85 L",
+     "marks": 3
+    },
+    {
+     "question": "Find 23.5 − 8.75 + 4.25.",
+     "answer": "19",
+     "marks": 3
+    },
+    {
+     "question": "A tailor has 10 m of cloth. He uses 2.75 m, 3.4 m and 1.85 m. How much is left?",
+     "answer": "2 m",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Equal decimal places make comparison easy.",
+    "Line up the points.",
+    "Know unit conversions."
+   ],
+   "intro": "Not every quantity is a whole number: 7.6 cm, ₹45.05, 2.45 km. Decimals let us write parts of a whole using place value. In this chapter you learn what each digit after the point means, and how to compare, add and subtract decimals.",
+   "before": [
+    "understand tenths and hundredths as fractions (3/10, 7/100)",
+    "add and subtract whole numbers in columns"
+   ],
+   "glossary": [
+    {
+     "term": "Decimal point",
+     "meaning": "The dot that separates the whole part from the part less than one."
+    },
+    {
+     "term": "Tenths",
+     "meaning": "The first place after the point: 0.1 = 1/10."
+    },
+    {
+     "term": "Hundredths",
+     "meaning": "The second place: 0.01 = 1/100."
+    },
+    {
+     "term": "Thousandths",
+     "meaning": "The third place: 0.001 = 1/1,000."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Place value after the point",
+     "text": [
+      "Each place to the right is one-tenth of the place before it: ones, tenths, hundredths, thousandths.",
+      "In 5.34, the 3 means 3 tenths (3/10) and the 4 means 4 hundredths (4/100). So 5.34 = 5 + 3/10 + 4/100."
+     ],
+     "points": [
+      "0.1 = 1/10, 0.01 = 1/100, 0.001 = 1/1,000."
+     ]
+    },
+    {
+     "title": "Comparing decimals",
+     "text": [
+      "Compare the whole parts first. If they are equal, compare tenths, then hundredths, and so on.",
+      "Write the decimals with the same number of places by adding zeros at the end: 0.5 = 0.500, 0.45 = 0.450, 0.405. Now 0.500 is the greatest."
+     ],
+     "points": [
+      "Adding zeros at the end does not change the value."
+     ],
+     "example": {
+      "question": "Arrange 2.05, 2.5, 2.005, 2.55 in ascending order.",
+      "steps": [
+       "Write as 2.050, 2.500, 2.005, 2.550.",
+       "Compare."
+      ],
+      "answer": "2.005, 2.05, 2.5, 2.55"
+     }
+    },
+    {
+     "title": "Decimals on the number line",
+     "text": [
+      "Divide each unit into 10 equal parts to mark tenths. 0.3 is the third mark after 0.",
+      "The number halfway between two decimals is their sum divided by 2."
+     ]
+    },
+    {
+     "title": "Adding and subtracting decimals",
+     "text": [
+      "Write the numbers so that the decimal points are in one column. Fill empty places with zeros. Then add or subtract as with whole numbers and keep the point in the same column.",
+      "Units: 1 cm = 10 mm, so 6 mm = 0.6 cm. 1 kg = 1,000 g, so 250 g = 0.25 kg. ₹1 = 100 paise, so 5 paise = ₹0.05."
+     ],
+     "points": [
+      "Line up the decimal points."
+     ],
+     "formulas": [
+      "1 mm = 0.1 cm",
+      "1 g = 0.001 kg",
+      "1 paisa = ₹0.01"
+     ],
+     "example": {
+      "question": "Find 12.75 + 3.6 − 5.08.",
+      "steps": [
+       "12.75 + 3.60 = 16.35.",
+       "16.35 − 5.08 = 11.27."
+      ],
+      "answer": "11.27"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "type": "Place value",
+     "question": "Write 5 + 3/10 + 4/100 as a decimal.",
+     "steps": [
+      "Tenths digit 3, hundredths digit 4."
+     ],
+     "answer": "5.34"
+    },
+    {
+     "type": "Compare",
+     "question": "Which is greatest: 0.5, 0.45, 0.405, 0.054?",
+     "steps": [
+      "0.500, 0.450, 0.405, 0.054."
+     ],
+     "answer": "0.5"
+    },
+    {
+     "type": "Units",
+     "question": "Write 3 kg 250 g in kg.",
+     "steps": [
+      "250 g = 0.25 kg."
+     ],
+     "answer": "3.25 kg"
+    },
+    {
+     "type": "Add and subtract",
+     "question": "Find 12.75 + 3.6 − 5.08.",
+     "steps": [
+      "16.35 − 5.08."
+     ],
+     "answer": "11.27"
+    },
+    {
+     "type": "Shopping",
+     "question": "Total of ₹125.50, ₹48.75 and ₹210.25, and the change from ₹500.",
+     "steps": [
+      "Total = ₹384.50.",
+      "500 − 384.50."
+     ],
+     "answer": "₹384.50 and ₹115.50"
+    },
+    {
+     "type": "Halfway",
+     "question": "Find the number halfway between 0.3 and 0.75.",
+     "steps": [
+      "(0.3 + 0.75) ÷ 2 = 1.05 ÷ 2."
+     ],
+     "answer": "0.525"
+    }
+   ],
+   "mistakes": [
+    "Thinking 0.25 > 0.3 because 25 > 3.",
+    "Not lining up the decimal points.",
+    "Writing 5 paise as ₹0.5.",
+    "Writing 6 mm as 0.06 cm."
+   ],
+   "checklist": [
+    "Line up points in columns.",
+    "Write units in the answer.",
+    "Check money answers have two decimal places.",
+    "Estimate first: 12.75 + 3.6 − 5.08 ≈ 13 + 4 − 5 = 12."
+   ]
+  },
+  {
+   "slug": "g7-letter-numbers",
+   "chapter": "Expressions using Letter-Numbers",
+   "number": 4,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Variables, Forming & Simplifying Expressions",
+   "concepts": [
+    {
+     "title": "Writing expressions from words",
+     "text": "Read each phrase carefully. 'more than' means add, 'less than' means subtract (in the right order), 'times' or 'twice' means multiply."
+    },
+    {
+     "title": "Finding the value",
+     "text": "Replace each letter by its number and calculate with the order of operations. Write the number in brackets if it is negative."
+    },
+    {
+     "title": "Like terms and simplifying",
+     "text": "Only like terms can be added or subtracted: 7m + 2m = 9m. 7m and 8 cannot be combined."
+    },
+    {
+     "title": "Brackets and patterns",
+     "text": "A number outside a bracket multiplies every term inside: 3(2x − 5) = 6x − 15. A minus sign changes the signs: −2(x − 4) = −2x + 8."
+    }
+   ],
+   "formulas": [
+    "a(b + c) = ab + ac",
+    "Like terms: add coefficients"
+   ],
+   "method": [
+    "Name what each letter stands for.",
+    "Translate words into symbols carefully.",
+    "Expand brackets, then collect like terms.",
+    "Substitute and calculate."
+   ],
+   "example": {
+    "question": "Write '5 more than twice n'.",
+    "steps": [
+     "Twice n = 2n.",
+     "Add 5."
+    ],
+    "answer": "2n + 5"
+   },
+   "practice": [
+    {
+     "question": "Write '8 times a number x, minus 3'.",
+     "answer": "8x − 3",
+     "marks": 2
+    },
+    {
+     "question": "Find 2y + 7 when y = 9.",
+     "answer": "25",
+     "marks": 2
+    },
+    {
+     "question": "Simplify 5a + 3 − 2a + 4.",
+     "answer": "3a + 7",
+     "marks": 2
+    },
+    {
+     "question": "Simplify 4(x + 2).",
+     "answer": "4x + 8",
+     "marks": 2
+    },
+    {
+     "question": "Find p² + 2p when p = 3.",
+     "answer": "15",
+     "marks": 2
+    },
+    {
+     "question": "Simplify 7x − (2x − 5).",
+     "answer": "5x + 5",
+     "marks": 2
+    },
+    {
+     "question": "Simplify 2(3m + 4) + 3(m − 2).",
+     "answer": "9m + 2",
+     "marks": 3
+    },
+    {
+     "question": "Cost of a pens at ₹10 and b books at ₹45. Find it for a = 3, b = 2.",
+     "answer": "10a + 45b; ₹120",
+     "marks": 3
+    },
+    {
+     "question": "Triangles with matchsticks: 3, 5, 7, … Write the rule.",
+     "answer": "2n + 1",
+     "marks": 3
+    },
+    {
+     "question": "A rectangle has length 3x and breadth x + 2. Find its perimeter and its value for x = 4.",
+     "answer": "8x + 4; 36",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "'less than' reverses the order.",
+    "Only like terms combine.",
+    "Multiply every term in a bracket."
+   ],
+   "intro": "In algebra, a letter stands for a number that can change or that we do not know yet. Letter-numbers let us write one rule for many cases, like 'the fare for d km'. In this chapter you learn to write expressions, find their values and simplify them.",
+   "before": [
+    "use the order of operations",
+    "add and subtract integers"
+   ],
+   "glossary": [
+    {
+     "term": "Variable",
+     "meaning": "A letter that stands for a number, such as n or x."
+    },
+    {
+     "term": "Expression",
+     "meaning": "Numbers and letters joined by operations, such as 3n + 1."
+    },
+    {
+     "term": "Term",
+     "meaning": "A part of an expression joined by + or −. 3n + 1 has terms 3n and 1."
+    },
+    {
+     "term": "Coefficient",
+     "meaning": "The number that multiplies the letter. In 3n, it is 3."
+    },
+    {
+     "term": "Like terms",
+     "meaning": "Terms with the same letter part, such as 4p and −7p."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Writing expressions from words",
+     "text": [
+      "Read each phrase carefully. 'more than' means add, 'less than' means subtract (in the right order), 'times' or 'twice' means multiply.",
+      "'7 less than y' is y − 7, not 7 − y. 'Twice a number, then add 5' is 2n + 5."
+     ],
+     "points": [
+      "'less than' reverses the order."
+     ]
+    },
+    {
+     "title": "Finding the value",
+     "text": [
+      "Replace each letter by its number and calculate with the order of operations. Write the number in brackets if it is negative.",
+      "5a − 2b at a = 4, b = 3: 5 × 4 − 2 × 3 = 14."
+     ],
+     "example": {
+      "question": "Find 3x − 4 when x = 6.",
+      "steps": [
+       "3 × 6 = 18.",
+       "18 − 4."
+      ],
+      "answer": "14"
+     }
+    },
+    {
+     "title": "Like terms and simplifying",
+     "text": [
+      "Only like terms can be added or subtracted: 7m + 2m = 9m. 7m and 8 cannot be combined.",
+      "Group like terms together with their signs, then add the coefficients: 7m − 3 + 2m + 8 = 9m + 5."
+     ],
+     "points": [
+      "Unlike terms stay separate."
+     ]
+    },
+    {
+     "title": "Brackets and patterns",
+     "text": [
+      "A number outside a bracket multiplies every term inside: 3(2x − 5) = 6x − 15. A minus sign changes the signs: −2(x − 4) = −2x + 8.",
+      "Patterns: find how much is added each time. If it is 3 each time and the first is 4, the rule is 3n + 1."
+     ],
+     "formulas": [
+      "a(b + c) = ab + ac"
+     ],
+     "example": {
+      "question": "Simplify 3(2x − 5) − 2(x − 4).",
+      "steps": [
+       "6x − 15 − 2x + 8.",
+       "Collect like terms."
+      ],
+      "answer": "4x − 7"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "type": "Form an expression",
+     "question": "Write '5 more than twice n'.",
+     "steps": [
+      "Twice n = 2n.",
+      "Add 5."
+     ],
+     "answer": "2n + 5"
+    },
+    {
+     "type": "Value",
+     "question": "Find 5a − 2b when a = 4, b = 3.",
+     "steps": [
+      "20 − 6."
+     ],
+     "answer": "14"
+    },
+    {
+     "type": "Simplify",
+     "question": "Simplify 6p + 4q − 2p + q.",
+     "steps": [
+      "6p − 2p = 4p; 4q + q = 5q."
+     ],
+     "answer": "4p + 5q"
+    },
+    {
+     "type": "Pattern",
+     "question": "Squares of matchsticks: 4, 7, 10, … Rule and 15th case.",
+     "steps": [
+      "Add 3 each time: 3n + 1.",
+      "3 × 15 + 1."
+     ],
+     "answer": "3n + 1; 46"
+    },
+    {
+     "type": "Brackets",
+     "question": "Simplify 3(2x − 5) − 2(x − 4) and find it at x = 5.",
+     "steps": [
+      "4x − 7.",
+      "20 − 7."
+     ],
+     "answer": "13"
+    },
+    {
+     "type": "Fare",
+     "question": "Fare = ₹30 for the first km and ₹15 for each further km. Expression for d km.",
+     "steps": [
+      "30 + 15(d − 1).",
+      "= 15d + 15."
+     ],
+     "answer": "15d + 15"
+    }
+   ],
+   "mistakes": [
+    "Writing 7 − y for '7 less than y'.",
+    "Adding unlike terms: 7m + 8 = 15m.",
+    "Multiplying only the first term inside a bracket.",
+    "Forgetting to change signs after a minus before a bracket."
+   ],
+   "checklist": [
+    "Write 'Let n = …' if the letter is not given.",
+    "Expand all brackets first.",
+    "Collect like terms with their signs.",
+    "Check by substituting a small number."
+   ]
+  },
+  {
+   "slug": "g7-parallel-lines",
+   "chapter": "Parallel and Intersecting Lines",
+   "number": 5,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Angles at Intersections & Transversals",
+   "concepts": [
+    {
+     "title": "Angles at a crossing",
+     "text": "When two lines cross, four angles form. Neighbouring angles make a linear pair (sum 180°). Opposite angles are vertically opposite and equal."
+    },
+    {
+     "title": "Parallel lines and a transversal",
+     "text": "A transversal crossing two parallel lines makes 8 angles: 4 at each crossing, in matching positions."
+    },
+    {
+     "title": "Testing whether lines are parallel",
+     "text": "The rules also work backwards. If corresponding angles are equal, or alternate angles are equal, or co-interior angles add to 180°, then the lines are parallel."
+    },
+    {
+     "title": "Equations with angles and the triangle angle sum",
+     "text": "When angles are written with x, use the rule (equal or 180°) to form an equation and solve it."
+    }
+   ],
+   "formulas": [
+    "Linear pair = 180°",
+    "Vertically opposite angles are equal",
+    "Parallel lines: corresponding and alternate angles equal; co-interior sum 180°"
+   ],
+   "method": [
+    "Mark the given angle on the figure.",
+    "Name the angle pair (linear, vertically opposite, corresponding, alternate, co-interior).",
+    "Use 'equal' or '180°'.",
+    "Write the reason with each answer."
+   ],
+   "example": {
+    "question": "One angle is 48°. Find the others.",
+    "steps": [
+     "Opposite = 48°.",
+     "Neighbours = 132°."
+    ],
+    "answer": "48°, 132°, 132°"
+   },
+   "practice": [
+    {
+     "question": "Find the angle that makes a linear pair with 37°.",
+     "answer": "143°",
+     "marks": 2
+    },
+    {
+     "question": "Two lines cross; one angle is 90°. Find the others.",
+     "answer": "All are 90°",
+     "marks": 2
+    },
+    {
+     "question": "Alternate angle of 58° (parallel lines).",
+     "answer": "58°",
+     "marks": 2
+    },
+    {
+     "question": "Co-interior angle of 125°.",
+     "answer": "55°",
+     "marks": 2
+    },
+    {
+     "question": "Vertically opposite angles are (4x − 10)° and (2x + 30)°. Find x.",
+     "answer": "20",
+     "marks": 3
+    },
+    {
+     "question": "Are lines parallel if corresponding angles are 80° and 85°?",
+     "answer": "No",
+     "marks": 2
+    },
+    {
+     "question": "The angles of a triangle are x, 2x and 3x. Find them.",
+     "answer": "30°, 60°, 90°",
+     "marks": 3
+    },
+    {
+     "question": "Angles in a linear pair are in the ratio 2 : 7. Find them.",
+     "answer": "40° and 140°",
+     "marks": 3
+    },
+    {
+     "question": "l ∥ m. Co-interior angles are (x + 20)° and (2x + 10)°. Find x.",
+     "answer": "50",
+     "marks": 3
+    },
+    {
+     "question": "Explain why the angle sum of a triangle is 180° using parallel lines.",
+     "answer": "Line through a vertex parallel to the opposite side; alternate angles; straight angle",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "F: corresponding equal.",
+    "Z: alternate equal.",
+    "C: co-interior add to 180°."
+   ],
+   "intro": "When two lines cross, they make four angles with simple rules. When a third line crosses two parallel lines, eight angles appear, and they are linked in pairs. In this chapter you learn these pairs and use them to find unknown angles and to prove the angle sum of a triangle.",
+   "before": [
+    "measure angles with a protractor",
+    "know that a straight angle is 180° and a full turn is 360°"
+   ],
+   "glossary": [
+    {
+     "term": "Intersecting lines",
+     "meaning": "Lines that cross at one point."
+    },
+    {
+     "term": "Linear pair",
+     "meaning": "Two adjacent angles on a straight line. They add to 180°."
+    },
+    {
+     "term": "Vertically opposite angles",
+     "meaning": "The angles opposite each other at a crossing. They are equal."
+    },
+    {
+     "term": "Parallel lines",
+     "meaning": "Lines in a plane that never meet."
+    },
+    {
+     "term": "Transversal",
+     "meaning": "A line that crosses two or more lines."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Angles at a crossing",
+     "text": [
+      "When two lines cross, four angles form. Neighbouring angles make a linear pair (sum 180°). Opposite angles are vertically opposite and equal.",
+      "If one angle is 48°, the opposite angle is 48°, and the other two are 180° − 48° = 132°."
+     ],
+     "points": [
+      "Linear pair: 180°.",
+      "Vertically opposite: equal."
+     ]
+    },
+    {
+     "title": "Parallel lines and a transversal",
+     "text": [
+      "A transversal crossing two parallel lines makes 8 angles: 4 at each crossing, in matching positions.",
+      "Corresponding angles (same position at each crossing) are equal. Alternate interior angles (inside the lines, on opposite sides of the transversal, forming a 'Z') are equal. Interior angles on the same side (forming a 'C' or 'U') add to 180°."
+     ],
+     "points": [
+      "F-shape: corresponding. Z-shape: alternate. C-shape: co-interior."
+     ]
+    },
+    {
+     "title": "Testing whether lines are parallel",
+     "text": [
+      "The rules also work backwards. If corresponding angles are equal, or alternate angles are equal, or co-interior angles add to 180°, then the lines are parallel."
+     ],
+     "example": {
+      "question": "Co-interior angles are 75° and 105°. Are the lines parallel?",
+      "steps": [
+       "75° + 105° = 180°."
+      ],
+      "answer": "Yes"
+     }
+    },
+    {
+     "title": "Equations with angles and the triangle angle sum",
+     "text": [
+      "When angles are written with x, use the rule (equal or 180°) to form an equation and solve it.",
+      "Angle sum of a triangle: draw a line through one vertex parallel to the opposite side. The alternate angles copy the two base angles, and the three angles on the straight line add to 180°."
+     ],
+     "formulas": [
+      "∠A + ∠B + ∠C = 180°"
+     ],
+     "example": {
+      "question": "x and 2x + 30 form a linear pair. Find x.",
+      "steps": [
+       "x + 2x + 30 = 180.",
+       "3x = 150."
+      ],
+      "answer": "x = 50"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "type": "Crossing lines",
+     "question": "One angle is 48°. Find the others.",
+     "steps": [
+      "Opposite = 48°.",
+      "Neighbours = 132°."
+     ],
+     "answer": "48°, 132°, 132°"
+    },
+    {
+     "type": "Corresponding",
+     "question": "Angle at l is 110°. Corresponding angle at m?",
+     "steps": [
+      "Corresponding angles are equal."
+     ],
+     "answer": "110°"
+    },
+    {
+     "type": "Linear pair equation",
+     "question": "x and 2x + 30 form a linear pair.",
+     "steps": [
+      "3x + 30 = 180."
+     ],
+     "answer": "50° and 130°"
+    },
+    {
+     "type": "Alternate equation",
+     "question": "Alternate angles (3y − 10)° and (2y + 25)°.",
+     "steps": [
+      "3y − 10 = 2y + 25."
+     ],
+     "answer": "y = 35, angle 95°"
+    },
+    {
+     "type": "Eight angles",
+     "question": "∠2 = 65° at the top-right. Find all.",
+     "steps": [
+      "∠3 = 65°, ∠1 = ∠4 = 115°.",
+      "Same pattern at m."
+     ],
+     "answer": "65° and 115° in matching positions"
+    },
+    {
+     "type": "Angle sum proof",
+     "question": "Show the angles of a triangle add to 180°.",
+     "steps": [
+      "Line through A parallel to BC.",
+      "Alternate angles copy ∠B and ∠C."
+     ],
+     "answer": "∠A + ∠B + ∠C = 180°"
+    }
+   ],
+   "mistakes": [
+    "Mixing up alternate and corresponding angles.",
+    "Using 'equal' for co-interior angles (they add to 180°).",
+    "Assuming lines are parallel without being told.",
+    "Not giving reasons."
+   ],
+   "checklist": [
+    "Write the reason after each angle.",
+    "Use the F, Z, C shapes.",
+    "Check that angles on a line add to 180°.",
+    "State 'l ∥ m' when you use parallel-line rules."
+   ]
+  }
+ ]
+}

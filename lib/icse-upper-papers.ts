@@ -5,6 +5,9 @@ import g10b from './icse10-part-b.json';
 import g10c from './icse10-part-c.json';
 import g10d from './icse10-part-d.json';
 import g10e from './icse10-part-e.json';
+import g7a from './cbse7-part-a.json';
+import g7b from './cbse7-part-b.json';
+import g7c from './cbse7-part-c.json';
 import g10na from './icse10-notes-detail-a.json';
 import g10nb from './icse10-notes-detail-b.json';
 import g10nc from './icse10-notes-detail-c.json';
@@ -16,16 +19,17 @@ import type { PaperDefinition } from './papers';
 type PaperSeed = PaperDefinition & { answerKey: number[]; solutions: Record<number, string> };
 type Part = { papers: unknown[]; notes: unknown[] };
 
-const parts: Part[] = [g10a, g10b, g10c, g10d, g10e];
+// ICSE Grade 10 (Selina) and CBSE Grade 7 (Ganita Prakash). Papers and notes carry their own board and grade.
+const parts: Part[] = [g10a, g10b, g10c, g10d, g10e, g7a, g7b, g7c];
 
 const seeds = parts.flatMap((part) => part.papers as PaperSeed[]);
 
 export const icseUpperPaperDefinitions: Record<string, PaperDefinition> = Object.fromEntries(
-  seeds.map(({ answerKey: _answerKey, solutions: _solutions, ...paper }) => [`ICSE${paper.grade}:${paper.chapter}`, paper]),
+  seeds.map(({ answerKey: _answerKey, solutions: _solutions, ...paper }) => [`${paper.board ?? 'ICSE'}${paper.grade}:${paper.chapter}`, paper]),
 );
 
 export const icseUpperPaperAssessments = Object.fromEntries(seeds.map((paper) => [paper.id, {
-  title: `${paper.chapter} · ICSE Grade ${paper.grade} · Paper ${paper.paperNumber}`,
+  title: `${paper.chapter} · ${paper.board ?? 'ICSE'} Grade ${paper.grade} · Paper ${paper.paperNumber}`,
   mcqAnswerKey: Object.fromEntries(paper.answerKey.map((answer, index) => [index + 1, answer])),
   writtenSolutions: paper.solutions,
 }]));
@@ -35,16 +39,16 @@ const noteDetails = { ...g10na, ...g10nb, ...g10nc, ...g10nd, ...g10ne } as Reco
 
 export const icseUpperNotes = parts.flatMap((part) => (part.notes as ChapterNotes[]).map((notes) => ({ ...notes, ...(noteDetails[notes.slug] ?? {}) })));
 
-/** Chapter names in book order, by grade. */
-export const icseUpperChapters: Record<number, string[]> = seeds.reduce<Record<number, string[]>>((byGrade, paper) => {
-  const grade = paper.grade ?? 10;
-  (byGrade[grade] ??= []).push(paper.chapter);
+/** Chapter names in book order, by board and grade. */
+function chaptersByGrade(board: 'CBSE' | 'ICSE') {
+  const byGrade: Record<number, string[]> = {};
+  for (const paper of seeds.filter((seed) => (seed.board ?? 'ICSE') === board).sort((a, b) => (a.chapterNumber ?? 0) - (b.chapterNumber ?? 0))) {
+    (byGrade[paper.grade ?? 10] ??= []).push(paper.chapter);
+  }
   return byGrade;
-}, {});
-for (const grade of Object.keys(icseUpperChapters)) {
-  const order = new Map(seeds.filter((paper) => paper.grade === Number(grade)).map((paper) => [paper.chapter, paper.chapterNumber]));
-  icseUpperChapters[Number(grade)].sort((a, b) => (order.get(a) ?? 0) - (order.get(b) ?? 0));
 }
+export const icseUpperChapters = chaptersByGrade('ICSE');
+export const cbseExtraChapters = chaptersByGrade('CBSE');
 
 /** Paper ids that use the 30-mark format. */
 export const icseUpperPaperIds: ReadonlySet<string> = new Set(seeds.map((paper) => paper.id));

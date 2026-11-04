@@ -52,7 +52,7 @@ import MathText from '@/app/notes/math-text';
 import { getPaperDefinition as getSharedPaperDefinition, getAdditionalChapterPapers, additionalChapterPaperIds, paperDefinitionsById, type QuestionVisual } from '@/lib/papers';
 import { answeringMinutes, displayQuestion, objectiveMaximum, paperMaximum } from '@/lib/paper-format';
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
-import { icseUpperChapters } from '@/lib/icse-upper-papers';
+import { cbseExtraChapters, icseUpperChapters } from '@/lib/icse-upper-papers';
 import SolutionSteps from '@/app/solution-steps';
 import Homepage from './homepage';
 
@@ -156,7 +156,7 @@ const icseGrade6Chapters = [
 ];
 
 const chaptersByBoard: Record<BoardName, Record<number, string[]>> = {
-  CBSE: { 6: grade6Chapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters },
+  CBSE: { 6: grade6Chapters, ...cbseExtraChapters, 10: grade10Chapters, 11: grade11Chapters, 12: grade12Chapters },
   ICSE: { 6: icseGrade6Chapters, ...icseUpperChapters },
   IGCSE: {},
 };
@@ -586,11 +586,16 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>4 grades</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>5 grades</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
               <span><small>CBSE · Ganita Prakash</small><strong>Grade 6</strong><em>10 chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(7)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE · Ganita Prakash Parts 1 &amp; 2</small><strong>Grade 7</strong><em>{chaptersFor('CBSE', 7).length} chapters</em></span>
               <ChevronRight />
             </button>
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(10)}>
@@ -875,7 +880,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && grade === 6 ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
+        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && (grade === 6 || grade === 7) ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
       </section>
       <section className="folder-content">
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>

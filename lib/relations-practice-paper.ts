@@ -20,7 +20,7 @@ OR: $2^x$ takes every positive real value, so the range of $q$ is $(1,\infty)$. 
   { number: 10, marks: 3, section: 'C', question: String.raw`Let $A=\{1,2,3\}$ and $B=\{2,4,6\}$. Define $R=\{(x,y)\in A\times B:x<y\}$. List all ordered pairs of $R$, state its domain and range, and explain why $R$ is not a function from $A$ to $B$.`, solution: String.raw`$R=\{(1,2),(1,4),(1,6),(2,4),(2,6),(3,4),(3,6)\}$. [1]
 Domain $=\{1,2,3\}$ and range $=\{2,4,6\}$. [1]
 It is not a function: the input $1$, for example, has three distinct images $2,4,6$. A function permits exactly one image per input. [1]` },
-  { number: 11, marks: 3, section: 'C', question: String.raw`Let $f(x)=\sqrt{x-1}$ and $g(x)=\sqrt{5-x}$, each on its largest real domain. Find the domains of $f+g$, $fg$ and $f/g$. Justify any difference between them.`, solution: String.raw`$D_f=[1,\infty)$ and $D_g=(-\infty,5]$, so $D_{f+g}=D_f\cap D_g=[1,5]$. [1]
+  { number: 11, marks: 3, section: 'C', question: String.raw`Let $f(x)=\sqrt{x-1}$ and $g(x)=\sqrt{5-x}$, each on its largest real domain. Find the domains of $f+g$, $fg$ and $\frac{f}{g}$. Justify any difference between them.`, solution: String.raw`$D_f=[1,\infty)$ and $D_g=(-\infty,5]$, so $D_{f+g}=D_f\cap D_g=[1,5]$. [1]
 The product is also defined on the intersection: $D_{fg}=[1,5]$. [1]
 For the quotient, $g(x)\neq0$ additionally requires $x\neq5$. Hence $D_{f/g}=[1,5)$. At $x=1$ the numerator is zero but the denominator is $2$, so this endpoint remains. [1]` },
   { number: 12, marks: 3, section: 'C', question: String.raw`Sketch $y=|x-2|-1$. State its vertex and intercepts, and find its range when the domain is restricted to $[0,5]$.

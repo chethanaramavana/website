@@ -261,3 +261,13 @@
 @media (prefers-reduced-motion: reduce) {
   .identity-home *, .identity-home *::before, .identity-home *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+/* WhatsApp group bar at the top of the home page */
+.rmc-group-bar { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 18px; padding:10px 16px; background:#136c3a; color:#ffffff; text-align:center; }
+.rmc-group-bar p { margin:0; font-size:15px; line-height:1.4; }
+.rmc-group-bar a { display:inline-flex; align-items:center; gap:6px; min-height:40px; padding:0 18px; border-radius:999px; background:#ffffff; color:#0e5329; font-size:15px; font-weight:700; text-decoration:none; }
+.rmc-group-bar a:hover { background:#e7f5ec; }
+.rmc-group-bar a:focus-visible { outline:3px solid #d9a231; outline-offset:2px; }
+.rmc-group-bar svg { width:16px; height:16px; }
+.rmc-chat-group { background:#0e5329; }
+.rmc-chat-group:hover { background:#0a3f1f; }
+@media(max-width:600px) { .rmc-group-bar span { display:block; } }

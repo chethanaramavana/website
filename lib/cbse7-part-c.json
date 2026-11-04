@@ -1,0 +1,1696 @@
+{
+ "papers": [
+  {
+   "id": "g7-hcf-lcm-01",
+   "chapter": "Finding Common Ground",
+   "chapterNumber": 11,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Common factors and multiples, HCF and LCM by listing and by prime factorisation, and word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The HCF of 12 and 18 is",
+     "options": [
+      "3",
+      "6",
+      "36",
+      "2"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The LCM of 4 and 6 is",
+     "options": [
+      "12",
+      "24",
+      "2",
+      "10"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The HCF of two co-prime numbers is",
+     "options": [
+      "0",
+      "their product",
+      "1",
+      "the smaller number"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "HCF × LCM of 8 and 12 is",
+     "options": [
+      "20",
+      "4",
+      "24",
+      "96"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The LCM of 5 and 7 is 35.",
+     "reason": "5 and 7 are both odd numbers."
+    },
+    {
+     "number": 6,
+     "assertion": "The HCF of 18 and 24 is 72.",
+     "reason": "The LCM of two numbers is a multiple of both numbers."
+    }
+   ],
+   "written": {
+    "17": "Write 84 and 90 as products of primes, and find their HCF.",
+    "18": "Find the LCM of 15, 20 and 25.",
+    "19": "The HCF of 24 and x is 6 and their LCM is 120. Find x.",
+    "20": "A room is 360 cm by 600 cm. Find the side of the largest square tile that covers the floor exactly, and the number of tiles.",
+    "21": "Three bells ring every 12, 15 and 20 minutes. They ring together at 8:00 a.m. When will they next ring together?",
+    "22": "Find the smallest number that leaves remainder 2 when divided by 6, 8 or 10.",
+    "23": [
+     "A fruit seller has 48 apples, 72 oranges and 96 bananas. He packs them in boxes. Each box has only one kind of fruit, and every box has the same number of fruits.",
+     "(a) Find the largest possible number of fruits in each box.",
+     "(b) Find the number of boxes for each fruit.",
+     "(c) Find the total number of boxes."
+    ],
+    "24": [
+     "(a) After how many minutes are they together at the start again? [1]",
+     "(b) How many rounds has each runner finished by then? [1]",
+     "(c) How many times are they together at the start in 2 hours (not counting the beginning)? [2]"
+    ]
+   },
+   "caseStudy": "Asha and Bina run on a circular track. Asha takes 6 minutes per round and Bina takes 8 minutes. They start together.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "84 = 2² × 3 × 7 and 90 = 2 × 3² × 5. HCF = 2 × 3 = 6.",
+    "18": "15 = 3 × 5, 20 = 2² × 5, 25 = 5². LCM = 2² × 3 × 5² = 300.",
+    "19": "HCF × LCM = product: 6 × 120 = 24 × x, so x = 30.",
+    "20": "HCF(360, 600) = 120 cm. Tiles = (360 ÷ 120) × (600 ÷ 120) = 3 × 5 = 15.",
+    "21": "LCM(12, 15, 20) = 60 minutes. At 9:00 a.m.",
+    "22": "LCM(6, 8, 10) = 120. The number is 120 + 2 = 122.",
+    "23": "(a) HCF(48, 72, 96) = 24. (b) Apples 2, oranges 3, bananas 4 boxes. (c) 9 boxes.",
+    "24": "(a) LCM(6, 8) = 24 minutes. (b) Asha 4 rounds, Bina 3 rounds. (c) 120 ÷ 24 = 5 times."
+   }
+  },
+  {
+   "id": "g7-decimals-operations-01",
+   "chapter": "Another Peek Beyond the Point",
+   "chapterNumber": 12,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Multiplying and dividing decimals, multiplying and dividing by powers of 10, and fractions as terminating or repeating decimals.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "0.3 × 0.2 equals",
+     "options": [
+      "0.6",
+      "0.06",
+      "0.006",
+      "6"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "4.8 ÷ 0.6 equals",
+     "options": [
+      "8",
+      "0.8",
+      "80",
+      "2.88"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "3/8 as a decimal is",
+     "options": [
+      "0.38",
+      "3.8",
+      "0.375",
+      "0.83"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "1/3 as a decimal is",
+     "options": [
+      "0.3",
+      "0.33",
+      "3.33",
+      "0.333… (repeating)"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "2.5 × 10 = 25.",
+     "reason": "Multiplying by 10 moves the decimal point one place to the right."
+    },
+    {
+     "number": 6,
+     "assertion": "1/6 has a terminating decimal.",
+     "reason": "A fraction in lowest terms has a terminating decimal when its denominator has no prime factors other than 2 and 5."
+    }
+   ],
+   "written": {
+    "17": "Find 2.35 × 1.4.",
+    "18": "Find 7.56 ÷ 1.8.",
+    "19": "Write as decimals: (a) 7/20, (b) 5/11.",
+    "20": "Petrol costs ₹102.50 per litre. Find the cost of 12.4 litres.",
+    "21": "A ribbon 9.6 m long is cut into pieces of 0.32 m. How many pieces are there?",
+    "22": "Which of these have terminating decimals: 7/40, 2/9, 3/25? Write the decimals.",
+    "23": [
+     "A rectangular floor is 6.5 m long and 4.2 m wide.",
+     "(a) Find its area.",
+     "(b) Carpet costs ₹85.50 per m². Find the cost of carpeting the floor.",
+     "(c) Find the perimeter of the floor."
+    ],
+    "24": [
+     "(a) Find the cost of 1 kg. [1]",
+     "(b) Find the cost of 3.5 kg. [1]",
+     "(c) How many packets of 0.75 kg can be filled from the bag, and how much rice is left? [2]"
+    ]
+   },
+   "caseStudy": "A 25 kg bag of rice costs ₹1,312.50.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "235 × 14 = 3,290; 3 decimal places → 3.290 = 3.29.",
+    "18": "7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2.",
+    "19": "(a) 7/20 = 35/100 = 0.35. (b) 5/11 = 0.4545… = 0.45 repeating.",
+    "20": "102.50 × 12.4 = ₹1,271.",
+    "21": "9.6 ÷ 0.32 = 960 ÷ 32 = 30 pieces.",
+    "22": "7/40 = 0.175 and 3/25 = 0.12 terminate. 2/9 = 0.222… repeats (9 = 3²).",
+    "23": "(a) 6.5 × 4.2 = 27.3 m². (b) 27.3 × 85.50 = ₹2,334.15. (c) 2 × (6.5 + 4.2) = 21.4 m.",
+    "24": "(a) 1,312.50 ÷ 25 = ₹52.50. (b) 52.50 × 3.5 = ₹183.75. (c) 25 ÷ 0.75 = 33.33…, so 33 packets (24.75 kg) and 0.25 kg left."
+   }
+  },
+  {
+   "id": "g7-data-01",
+   "chapter": "Connecting the Dots…",
+   "chapterNumber": 13,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Statistical questions, the mean, the median and the range of data, dot plots and comparing two sets of data.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The mean of 2, 7, 9, 4, 3 is",
+     "options": [
+      "4",
+      "5",
+      "7",
+      "25"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The median of 3, 8, 1, 9, 5 is",
+     "options": [
+      "5",
+      "8",
+      "1",
+      "26/5"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The range of 12, 7, 20, 15 is",
+     "options": [
+      "20",
+      "8",
+      "13",
+      "27"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A statistical question is one that",
+     "options": [
+      "has one exact answer",
+      "asks for a person's name",
+      "cannot be answered",
+      "expects variation in the data"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The median of 2, 3, 7, 20 is 5.",
+     "reason": "For an even number of values, the median is the mean of the two middle values after ordering."
+    },
+    {
+     "number": 6,
+     "assertion": "The median of 1, 4, 6, 9, 20 is 6.",
+     "reason": "The mean of 2, 4 and 9 is 5."
+    }
+   ],
+   "written": {
+    "17": "Find the mean of 6, 2, 9, 5, 4, 6, 3, 5.",
+    "18": "Find the median of 25, 24, 26, 28, 30, 35.",
+    "19": "Which is a statistical question: (a) How tall is our class teacher? (b) How tall are the students in our class? Explain.",
+    "20": "The mean of five numbers is 12. Four of them are 10, 14, 9 and 15. Find the fifth number.",
+    "21": "Batter A scored 20, 45, 30, 50, 35 and batter B scored 10, 90, 5, 60, 15 in five matches. Find the mean and the range for each. Who is more consistent?",
+    "22": "For the data 3, 4, 4, 5, 5, 5, 6, 7, draw a dot plot and find the mean and the median.",
+    "23": [
+     "The weekly pocket money (₹) of 7 students is 50, 60, 55, 300, 65, 45, 70.",
+     "(a) Find the mean.",
+     "(b) Find the median.",
+     "(c) Which value better describes a typical student? Why?"
+    ],
+    "24": [
+     "(a) Write the highest and the lowest temperature. [1]",
+     "(b) Find the range. [1]",
+     "(c) Find the mean and the median. [2]"
+    ]
+   },
+   "caseStudy": "The maximum temperatures (°C) in a week were 31, 33, 30, 34, 32, 35, 29.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    1
+   ],
+   "solutions": {
+    "17": "Sum = 40, count = 8. Mean = 5.",
+    "18": "Ordered: 24, 25, 26, 28, 30, 35. Median = (26 + 28) ÷ 2 = 27.",
+    "19": "(b). Its answers vary from student to student; (a) has one fixed answer.",
+    "20": "Total = 12 × 5 = 60. Fifth = 60 − 48 = 12.",
+    "21": "Mean A = 180/5 = 36, range 30. Mean B = 180/5 = 36, range 85. A is more consistent (smaller range).",
+    "22": "Dots: one over 3, two over 4, three over 5, one over 6, one over 7. Mean = 39/8 = 4.875. Median = (5 + 5) ÷ 2 = 5.",
+    "23": "(a) 645 ÷ 7 ≈ ₹92.14. (b) Ordered: 45, 50, 55, 60, 65, 70, 300. Median = ₹60. (c) The median, because the single large value 300 pulls the mean up.",
+    "24": "(a) 35°C and 29°C. (b) 6°C. (c) Mean = 224 ÷ 7 = 32°C. Ordered middle value = 32°C."
+   }
+  },
+  {
+   "id": "g7-constructions-tilings-01",
+   "chapter": "Constructions and Tilings",
+   "chapterNumber": 14,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Perpendicular bisectors, angle bisectors, constructing angles and parallel lines with ruler and compasses, and tilings with regular polygons. For construction questions, draw neatly and upload a photo of your drawing.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The tool used to draw arcs is the",
+     "options": [
+      "protractor",
+      "compass",
+      "set square",
+      "eraser"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Every point on the perpendicular bisector of AB is",
+     "options": [
+      "equidistant from A and B",
+      "closer to A",
+      "on AB only",
+      "at distance AB from A"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which regular polygon can tile a floor by itself?",
+     "options": [
+      "Pentagon",
+      "Octagon",
+      "Hexagon",
+      "Heptagon"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The interior angle of a regular hexagon is",
+     "options": [
+      "60°",
+      "90°",
+      "108°",
+      "120°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Regular pentagons cannot tile a floor without gaps.",
+     "reason": "108° does not divide 360° exactly."
+    },
+    {
+     "number": 6,
+     "assertion": "Squares and regular octagons can be used together to tile a floor.",
+     "reason": "The interior angle of a regular octagon is 120°."
+    }
+   ],
+   "written": {
+    "17": "Draw AB = 8 cm. Construct its perpendicular bisector. Write the steps.",
+    "18": "Construct an angle of 60°, and bisect it to get 30°.",
+    "19": "Explain why equilateral triangles can tile a floor.",
+    "20": "Draw a line l and a point P not on it. Construct a line through P parallel to l. Write the steps.",
+    "21": "Find the interior angle of a regular octagon. Can regular octagons alone tile a floor? Explain.",
+    "22": "Construct a 90° angle at a point on a line, and bisect it to get 45°.",
+    "23": [
+     "Check whether each set of regular polygons can meet at one point without gaps.",
+     "(a) 3 regular hexagons",
+     "(b) 2 regular octagons and 1 square",
+     "(c) 2 equilateral triangles and 2 regular hexagons"
+    ],
+    "24": [
+     "(a) Find the interior angle of a regular hexagon. [1]",
+     "(b) How many tiles meet at each corner point? [1]",
+     "(c) If equilateral triangle tiles of side 10 cm are used instead, how many meet at a point? Find the perimeter of one triangle tile. [2]"
+    ]
+   },
+   "caseStudy": "A floor is covered with regular hexagonal tiles of side 10 cm.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "With centre A and radius more than 4 cm, draw arcs above and below AB. Repeat from B with the same radius. Join the two crossing points.",
+    "18": "Draw a ray OA. With centre O, draw an arc to cut OA at P. With centre P and the same radius, cut the arc at Q. ∠QOP = 60°. Bisect it: arcs from P and Q meet at R; OR gives 30°.",
+    "19": "Each angle is 60°, and 6 × 60° = 360°, so six triangles fit round a point with no gap.",
+    "20": "Draw a line through P that cuts l at Q. Copy the angle at Q at point P in the corresponding position. The new line is parallel to l (corresponding angles are equal).",
+    "21": "180° × (8 − 2) ÷ 8 = 135°. 360 ÷ 135 is not a whole number, so octagons alone cannot tile.",
+    "22": "Draw a semicircle arc on the line at the point, mark 60° and 120° arcs, and bisect between them to get 90°. Then bisect the 90° angle to get 45°.",
+    "23": "(a) 3 × 120° = 360°: yes. (b) 135° + 135° + 90° = 360°: yes. (c) 60° + 60° + 120° + 120° = 360°: yes.",
+    "24": "(a) 120°. (b) 360 ÷ 120 = 3. (c) 360 ÷ 60 = 6 triangles. Perimeter = 3 × 10 = 30 cm."
+   }
+  },
+  {
+   "id": "g7-finding-the-unknown-01",
+   "chapter": "Finding the Unknown",
+   "chapterNumber": 15,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Forming and solving simple equations by balancing, and using equations to solve word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The solution of x + 7 = 15 is",
+     "options": [
+      "22",
+      "8",
+      "7",
+      "15"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If 3x = 27, then x is",
+     "options": [
+      "9",
+      "24",
+      "30",
+      "81"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If x/4 = 5, then x is",
+     "options": [
+      "1.25",
+      "9",
+      "20",
+      "4/5"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The solution of 2x − 5 = 11 is",
+     "options": [
+      "3",
+      "6",
+      "16",
+      "8"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If 5x = 35, then x = 7.",
+     "reason": "Dividing both sides by the same non-zero number keeps an equation balanced."
+    },
+    {
+     "number": 6,
+     "assertion": "x = 3 is the solution of 4x + 1 = 15.",
+     "reason": "You can check a solution by substituting it into the equation."
+    }
+   ],
+   "written": {
+    "17": "Solve 3x + 4 = 25.",
+    "18": "Solve 5(y − 2) = 30.",
+    "19": "A number is doubled and then increased by 9. The result is 35. Form an equation and find the number.",
+    "20": "Solve 4x − 7 = 2x + 9.",
+    "21": "The perimeter of a rectangle is 54 cm. Its length is 3 cm more than its breadth. Find the length and the breadth.",
+    "22": "Raju is 4 times as old as his son. After 5 years, the sum of their ages will be 60. Find their present ages.",
+    "23": [
+     "A notebook costs ₹15 more than a pen. 3 pens and 2 notebooks cost ₹180.",
+     "(a) Taking the cost of a pen as ₹p, form an equation.",
+     "(b) Solve it.",
+     "(c) Find the cost of a notebook, and of 5 pens and 5 notebooks."
+    ],
+    "24": [
+     "(a) Form an equation. [1]",
+     "(b) Solve it to find the adult fare. [1]",
+     "(c) Find the child fare and the cost for 4 adults and 2 children. [2]"
+    ]
+   },
+   "caseStudy": "An adult ticket costs ₹x and a child ticket costs ₹40 less. A family of 2 adults and 3 children pays ₹780.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "3x = 21, so x = 7.",
+    "18": "y − 2 = 6, so y = 8.",
+    "19": "2n + 9 = 35, so 2n = 26 and n = 13.",
+    "20": "2x = 16, so x = 8.",
+    "21": "2(b + 3 + b) = 54, so 4b + 6 = 54 and b = 12. Length = 15 cm.",
+    "22": "Son s, Raju 4s. (s + 5) + (4s + 5) = 60, so 5s = 50 and s = 10. Son 10, Raju 40.",
+    "23": "(a) 3p + 2(p + 15) = 180. (b) 5p + 30 = 180, so p = 30. (c) Notebook ₹45. 5 × 30 + 5 × 45 = ₹375.",
+    "24": "(a) 2x + 3(x − 40) = 780. (b) 5x − 120 = 780, so x = 180. (c) Child ₹140. 4 × 180 + 2 × 140 = ₹1,000."
+   }
+  }
+ ],
+ "notes": [
+  {
+   "slug": "g7-hcf-lcm",
+   "chapter": "Finding Common Ground",
+   "number": 11,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Common Factors, Common Multiples, HCF & LCM",
+   "concepts": [
+    {
+     "title": "Listing method",
+     "text": "Write the factors of each number and pick the largest common one: factors of 12 and 18 → common 1, 2, 3, 6 → HCF 6."
+    },
+    {
+     "title": "Prime factorisation method",
+     "text": "Write each number as a product of primes. HCF = product of the common primes with the smaller powers. LCM = product of all primes with the larger powers."
+    },
+    {
+     "title": "HCF × LCM",
+     "text": "For two numbers a and b: HCF × LCM = a × b. Use it to find a missing number."
+    },
+    {
+     "title": "HCF or LCM? Reading word problems",
+     "text": "HCF: 'largest', 'greatest size', 'equal groups', 'tiles', 'boxes', 'cut into equal pieces'."
+    }
+   ],
+   "formulas": [
+    "HCF: common primes, smaller powers",
+    "LCM: all primes, larger powers",
+    "HCF × LCM = a × b",
+    "Remainder r: LCM + r"
+   ],
+   "method": [
+    "Decide: HCF or LCM?",
+    "Factorise into primes.",
+    "Choose the powers.",
+    "Multiply and answer in words."
+   ],
+   "example": {
+    "question": "HCF of 84 and 90.",
+    "steps": [
+     "2² × 3 × 7 and 2 × 3² × 5."
+    ],
+    "answer": "6"
+   },
+   "practice": [
+    {
+     "question": "HCF of 36 and 48.",
+     "answer": "12",
+     "marks": 2
+    },
+    {
+     "question": "LCM of 9 and 12.",
+     "answer": "36",
+     "marks": 2
+    },
+    {
+     "question": "Are 14 and 15 co-prime?",
+     "answer": "Yes",
+     "marks": 2
+    },
+    {
+     "question": "Prime factorise 180.",
+     "answer": "2² × 3² × 5",
+     "marks": 2
+    },
+    {
+     "question": "LCM of 6, 9, 15.",
+     "answer": "90",
+     "marks": 2
+    },
+    {
+     "question": "HCF of 45, 75, 105.",
+     "answer": "15",
+     "marks": 2
+    },
+    {
+     "question": "Two numbers have HCF 4 and LCM 72. One is 24. Find the other.",
+     "answer": "12",
+     "marks": 3
+    },
+    {
+     "question": "Smallest number divisible by 12, 18 and 30.",
+     "answer": "180",
+     "marks": 3
+    },
+    {
+     "question": "Three ropes 64 m, 80 m, 96 m are cut into equal pieces of greatest length. Find the length and the number of pieces.",
+     "answer": "16 m, 15 pieces",
+     "marks": 3
+    },
+    {
+     "question": "Traffic lights change every 48 s, 72 s and 108 s. They change together at 7:00 a.m. When next?",
+     "answer": "After 432 s, at 7:07:12 a.m.",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Largest equal part → HCF.",
+    "Next time together → LCM.",
+    "HCF × LCM = product (two numbers)."
+   ],
+   "intro": "When two things share something in common, maths can find it. HCF finds the biggest equal group size; LCM finds when repeating events meet again. In this chapter you learn both, with quick methods and many real-life uses.",
+   "before": [
+    "list factors and multiples",
+    "know prime numbers up to 50"
+   ],
+   "glossary": [
+    {
+     "term": "Factor",
+     "meaning": "A number that divides another exactly. Factors of 12: 1, 2, 3, 4, 6, 12."
+    },
+    {
+     "term": "Multiple",
+     "meaning": "A number in the times table: multiples of 4: 4, 8, 12, …"
+    },
+    {
+     "term": "HCF",
+     "meaning": "Highest common factor: the largest number that divides all the given numbers."
+    },
+    {
+     "term": "LCM",
+     "meaning": "Lowest common multiple: the smallest number that all the given numbers divide."
+    },
+    {
+     "term": "Co-prime",
+     "meaning": "Two numbers whose HCF is 1, such as 8 and 15."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Listing method",
+     "text": [
+      "Write the factors of each number and pick the largest common one: factors of 12 and 18 → common 1, 2, 3, 6 → HCF 6.",
+      "Write multiples and pick the smallest common one: multiples of 4 and 6 → 12, 24, … → LCM 12."
+     ]
+    },
+    {
+     "title": "Prime factorisation method",
+     "text": [
+      "Write each number as a product of primes. HCF = product of the common primes with the smaller powers. LCM = product of all primes with the larger powers.",
+      "84 = 2² × 3 × 7 and 90 = 2 × 3² × 5. HCF = 2 × 3 = 6. LCM = 2² × 3² × 5 × 7 = 1,260."
+     ],
+     "points": [
+      "HCF: common, smaller powers. LCM: all, larger powers."
+     ],
+     "example": {
+      "question": "Find the LCM of 15, 20 and 25.",
+      "steps": [
+       "3 × 5, 2² × 5, 5².",
+       "Take 2², 3, 5²."
+      ],
+      "answer": "300"
+     }
+    },
+    {
+     "title": "HCF × LCM",
+     "text": [
+      "For two numbers a and b: HCF × LCM = a × b. Use it to find a missing number.",
+      "Check: 8 and 12 → HCF 4, LCM 24, and 4 × 24 = 96 = 8 × 12."
+     ],
+     "formulas": [
+      "HCF × LCM = a × b (two numbers)"
+     ]
+    },
+    {
+     "title": "HCF or LCM? Reading word problems",
+     "text": [
+      "HCF: 'largest', 'greatest size', 'equal groups', 'tiles', 'boxes', 'cut into equal pieces'.",
+      "LCM: 'next time together', 'smallest number divisible by', 'bells', 'traffic lights', 'runners'.",
+      "For remainders: the smallest number leaving remainder r when divided by a, b, c is LCM(a, b, c) + r."
+     ],
+     "points": [
+      "Largest piece → HCF. Next meeting → LCM."
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "HCF by primes",
+     "question": "HCF of 84 and 90.",
+     "steps": [
+      "2² × 3 × 7 and 2 × 3² × 5."
+     ],
+     "answer": "6"
+    },
+    {
+     "type": "LCM of three",
+     "question": "LCM of 15, 20, 25.",
+     "steps": [
+      "2² × 3 × 5²."
+     ],
+     "answer": "300"
+    },
+    {
+     "type": "Missing number",
+     "question": "HCF 6, LCM 120, one number 24.",
+     "steps": [
+      "6 × 120 = 24 × x."
+     ],
+     "answer": "30"
+    },
+    {
+     "type": "Tiles",
+     "question": "Largest square tile for 360 cm × 600 cm.",
+     "steps": [
+      "HCF = 120."
+     ],
+     "answer": "120 cm, 15 tiles"
+    },
+    {
+     "type": "Bells",
+     "question": "Bells every 12, 15, 20 minutes from 8:00.",
+     "steps": [
+      "LCM = 60."
+     ],
+     "answer": "9:00 a.m."
+    },
+    {
+     "type": "Remainder",
+     "question": "Smallest number leaving 2 when divided by 6, 8, 10.",
+     "steps": [
+      "LCM 120 + 2."
+     ],
+     "answer": "122"
+    }
+   ],
+   "mistakes": [
+    "Using LCM for a 'largest size' question.",
+    "Taking larger powers for HCF.",
+    "Forgetting to add the remainder.",
+    "Using HCF × LCM = product for three numbers (it works only for two)."
+   ],
+   "checklist": [
+    "Write the prime factorisation in index form.",
+    "State HCF or LCM before calculating.",
+    "Answer in the units of the question.",
+    "Check that the HCF divides each number."
+   ]
+  },
+  {
+   "slug": "g7-decimals-operations",
+   "chapter": "Another Peek Beyond the Point",
+   "number": 12,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Multiplying & Dividing Decimals",
+   "concepts": [
+    {
+     "title": "Multiplying and dividing by 10, 100, 1,000",
+     "text": "× 10 moves the point 1 place right; × 100 moves it 2 places; × 1,000 moves it 3 places. Division moves it left in the same way."
+    },
+    {
+     "title": "Multiplying decimals",
+     "text": "Multiply as if there were no points. Then count the total decimal places in both numbers, and put that many places in the answer."
+    },
+    {
+     "title": "Dividing decimals",
+     "text": "Make the divisor a whole number: multiply both numbers by the same power of 10. 7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2."
+    },
+    {
+     "title": "Fractions to decimals",
+     "text": "Divide the numerator by the denominator: 3/8 = 0.375. Or make the denominator 10, 100 or 1,000: 7/20 = 35/100 = 0.35."
+    }
+   ],
+   "formulas": [
+    "× 10ⁿ: point moves n places right",
+    "Product places = sum of places",
+    "a ÷ b = (a × 10ⁿ) ÷ (b × 10ⁿ)",
+    "Terminates ⇔ denominator = 2ᵐ × 5ⁿ"
+   ],
+   "method": [
+    "Estimate the answer first.",
+    "Multiply as whole numbers.",
+    "Place the decimal point by counting places.",
+    "For division, make the divisor whole first."
+   ],
+   "example": {
+    "question": "2.35 × 1.4.",
+    "steps": [
+     "235 × 14 = 3,290; 3 places."
+    ],
+    "answer": "3.29"
+   },
+   "practice": [
+    {
+     "question": "Find 0.7 × 0.08.",
+     "answer": "0.056",
+     "marks": 2
+    },
+    {
+     "question": "Find 3.6 ÷ 0.04.",
+     "answer": "90",
+     "marks": 2
+    },
+    {
+     "question": "Write 9/25 as a decimal.",
+     "answer": "0.36",
+     "marks": 2
+    },
+    {
+     "question": "Find 4.25 × 100.",
+     "answer": "425",
+     "marks": 2
+    },
+    {
+     "question": "Find 63.9 ÷ 1,000.",
+     "answer": "0.0639",
+     "marks": 2
+    },
+    {
+     "question": "Write 2/3 as a decimal.",
+     "answer": "0.666…",
+     "marks": 2
+    },
+    {
+     "question": "Find 12.5 × 0.24.",
+     "answer": "3",
+     "marks": 3
+    },
+    {
+     "question": "A pen costs ₹7.75. Find the cost of 24 pens.",
+     "answer": "₹186",
+     "marks": 3
+    },
+    {
+     "question": "How many 0.25 L glasses from 7.5 L of juice?",
+     "answer": "30",
+     "marks": 3
+    },
+    {
+     "question": "A car uses 6.4 L of petrol for 89.6 km. Find the distance per litre and the petrol for 210 km.",
+     "answer": "14 km per litre; 15 L",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Count places for products.",
+    "Make the divisor whole.",
+    "Only 2s and 5s → terminating."
+   ],
+   "intro": "In Chapter 3 you added and subtracted decimals. Now you multiply and divide them, as you do when you find the cost of 12.4 litres of petrol. You also learn why some fractions give decimals that end and others repeat forever.",
+   "before": [
+    "add and subtract decimals",
+    "multiply and divide whole numbers",
+    "know place value after the decimal point"
+   ],
+   "glossary": [
+    {
+     "term": "Decimal places",
+     "meaning": "The number of digits after the point. 2.35 has 2 decimal places."
+    },
+    {
+     "term": "Terminating decimal",
+     "meaning": "A decimal that ends, such as 0.375."
+    },
+    {
+     "term": "Repeating decimal",
+     "meaning": "A decimal in which a digit or group repeats forever, such as 0.333…"
+    },
+    {
+     "term": "Power of 10",
+     "meaning": "10, 100, 1,000, …"
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Multiplying and dividing by 10, 100, 1,000",
+     "text": [
+      "× 10 moves the point 1 place right; × 100 moves it 2 places; × 1,000 moves it 3 places. Division moves it left in the same way.",
+      "2.5 × 10 = 25; 3.7 ÷ 100 = 0.037."
+     ],
+     "points": [
+      "Count the zeros = places to move."
+     ]
+    },
+    {
+     "title": "Multiplying decimals",
+     "text": [
+      "Multiply as if there were no points. Then count the total decimal places in both numbers, and put that many places in the answer.",
+      "0.3 × 0.2: 3 × 2 = 6, with 2 places → 0.06."
+     ],
+     "points": [
+      "Total places in the question = places in the answer."
+     ],
+     "example": {
+      "question": "Find 2.35 × 1.4.",
+      "steps": [
+       "235 × 14 = 3,290.",
+       "2 + 1 = 3 places."
+      ],
+      "answer": "3.29"
+     }
+    },
+    {
+     "title": "Dividing decimals",
+     "text": [
+      "Make the divisor a whole number: multiply both numbers by the same power of 10. 7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2.",
+      "This does not change the answer, because both numbers grow by the same factor."
+     ],
+     "points": [
+      "Move both points the same number of places."
+     ]
+    },
+    {
+     "title": "Fractions to decimals",
+     "text": [
+      "Divide the numerator by the denominator: 3/8 = 0.375. Or make the denominator 10, 100 or 1,000: 7/20 = 35/100 = 0.35.",
+      "In lowest terms, if the denominator has only 2s and 5s as prime factors, the decimal terminates. Otherwise it repeats: 1/3 = 0.333…, 5/11 = 0.4545…"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Multiply",
+     "question": "2.35 × 1.4.",
+     "steps": [
+      "235 × 14 = 3,290; 3 places."
+     ],
+     "answer": "3.29"
+    },
+    {
+     "type": "Divide",
+     "question": "7.56 ÷ 1.8.",
+     "steps": [
+      "75.6 ÷ 18."
+     ],
+     "answer": "4.2"
+    },
+    {
+     "type": "Fraction to decimal",
+     "question": "5/11.",
+     "steps": [
+      "Long division repeats 45."
+     ],
+     "answer": "0.4545…"
+    },
+    {
+     "type": "Money",
+     "question": "12.4 L at ₹102.50.",
+     "steps": [
+      "102.50 × 12.4."
+     ],
+     "answer": "₹1,271"
+    },
+    {
+     "type": "Pieces",
+     "question": "9.6 m into 0.32 m pieces.",
+     "steps": [
+      "960 ÷ 32."
+     ],
+     "answer": "30"
+    },
+    {
+     "type": "Terminating test",
+     "question": "Does 2/9 terminate?",
+     "steps": [
+      "9 = 3²."
+     ],
+     "answer": "No; 0.222…"
+    }
+   ],
+   "mistakes": [
+    "Wrong number of decimal places in a product.",
+    "Moving the point in only one number when dividing.",
+    "Thinking every fraction gives a terminating decimal.",
+    "Not checking with an estimate."
+   ],
+   "checklist": [
+    "Show the count of decimal places.",
+    "Estimate: 2.35 × 1.4 ≈ 2 × 1.5 = 3.",
+    "Write money to two places.",
+    "Use a bar for repeating digits if you can."
+   ]
+  },
+  {
+   "slug": "g7-data",
+   "chapter": "Connecting the Dots…",
+   "number": 13,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Statistical Questions, Mean, Median & Range",
+   "concepts": [
+    {
+     "title": "Statistical questions and statements",
+     "text": "'How tall is Ravi?' has one answer. 'How tall are the students of Class 7?' expects many different answers: it is a statistical question."
+    },
+    {
+     "title": "The mean",
+     "text": "Add all the values and divide by how many there are. Mean of 2, 7, 9, 4, 3 = 25 ÷ 5 = 5."
+    },
+    {
+     "title": "The median",
+     "text": "Arrange the data in order. If the count is odd, the median is the middle value. If it is even, the median is the mean of the two middle values."
+    },
+    {
+     "title": "Range and comparing data",
+     "text": "Range = highest − lowest. A small range means the data are close together (consistent)."
+    }
+   ],
+   "formulas": [
+    "Mean = sum ÷ count",
+    "Median = middle value (ordered)",
+    "Range = max − min"
+   ],
+   "method": [
+    "Order the data.",
+    "Find the sum and count for the mean.",
+    "Find the middle for the median.",
+    "Find max − min for the range, and interpret."
+   ],
+   "example": {
+    "question": "Mean of 6, 2, 9, 5, 4, 6, 3, 5.",
+    "steps": [
+     "Sum 40, count 8."
+    ],
+    "answer": "5"
+   },
+   "practice": [
+    {
+     "question": "Mean of 10, 20, 30, 40.",
+     "answer": "25",
+     "marks": 2
+    },
+    {
+     "question": "Median of 7, 3, 9, 1, 5.",
+     "answer": "5",
+     "marks": 2
+    },
+    {
+     "question": "Range of 45, 62, 38, 70.",
+     "answer": "32",
+     "marks": 2
+    },
+    {
+     "question": "Median of 4, 8, 6, 2.",
+     "answer": "5",
+     "marks": 2
+    },
+    {
+     "question": "Is 'What is your shoe size?' asked to the whole class a statistical question?",
+     "answer": "Yes",
+     "marks": 2
+    },
+    {
+     "question": "Mean of 1.5, 2.5, 3.5.",
+     "answer": "2.5",
+     "marks": 2
+    },
+    {
+     "question": "The mean of 6 numbers is 15. One number 30 is removed. Find the new mean.",
+     "answer": "12",
+     "marks": 3
+    },
+    {
+     "question": "Marks: 35, 40, 38, 95, 37. Which is better, mean or median? Find both.",
+     "answer": "Mean 49, median 38; the median",
+     "marks": 3
+    },
+    {
+     "question": "Find x if the mean of 4, 7, x, 9 is 7.",
+     "answer": "8",
+     "marks": 3
+    },
+    {
+     "question": "Heights (cm): 142, 150, 138, 155, 147, 150. Find the mean, the median and the range.",
+     "answer": "147, 148.5, 17",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Order first for the median.",
+    "Mean = sum ÷ count.",
+    "Range shows spread."
+   ],
+   "intro": "Data are collections of numbers about the world: marks, prices, heights. In this chapter you learn to ask good statistical questions and to describe data with one 'representative value' (the mean or the median) and its spread (the range).",
+   "before": [
+    "add and divide numbers, including decimals",
+    "arrange numbers in order"
+   ],
+   "glossary": [
+    {
+     "term": "Data",
+     "meaning": "A collection of numbers or facts."
+    },
+    {
+     "term": "Statistical question",
+     "meaning": "A question whose answer depends on data that varies."
+    },
+    {
+     "term": "Mean (average)",
+     "meaning": "Sum of the values ÷ number of values."
+    },
+    {
+     "term": "Median",
+     "meaning": "The middle value after arranging the data in order."
+    },
+    {
+     "term": "Range",
+     "meaning": "Highest value − lowest value. It measures spread."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Statistical questions and statements",
+     "text": [
+      "'How tall is Ravi?' has one answer. 'How tall are the students of Class 7?' expects many different answers: it is a statistical question.",
+      "A statistical statement describes data, for example 'Most students in our class are between 140 cm and 150 cm tall.'"
+     ]
+    },
+    {
+     "title": "The mean",
+     "text": [
+      "Add all the values and divide by how many there are. Mean of 2, 7, 9, 4, 3 = 25 ÷ 5 = 5.",
+      "If the mean and the number of values are known, total = mean × number. Use this to find a missing value."
+     ],
+     "formulas": [
+      "Mean = sum ÷ count",
+      "Sum = mean × count"
+     ],
+     "example": {
+      "question": "The mean of five numbers is 12; four are 10, 14, 9, 15. Find the fifth.",
+      "steps": [
+       "Total = 60.",
+       "60 − 48."
+      ],
+      "answer": "12"
+     }
+    },
+    {
+     "title": "The median",
+     "text": [
+      "Arrange the data in order. If the count is odd, the median is the middle value. If it is even, the median is the mean of the two middle values.",
+      "The median is not affected much by one very large or very small value, so it is often better than the mean for such data."
+     ],
+     "points": [
+      "Always order the data first."
+     ]
+    },
+    {
+     "title": "Range and comparing data",
+     "text": [
+      "Range = highest − lowest. A small range means the data are close together (consistent).",
+      "To compare two groups, compare their means (or medians) and their ranges. A dot plot shows each value as a dot above a number line."
+     ],
+     "formulas": [
+      "Range = max − min"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Mean",
+     "question": "Mean of 6, 2, 9, 5, 4, 6, 3, 5.",
+     "steps": [
+      "Sum 40, count 8."
+     ],
+     "answer": "5"
+    },
+    {
+     "type": "Median even count",
+     "question": "Median of 24, 25, 26, 28, 30, 35.",
+     "steps": [
+      "(26 + 28) ÷ 2."
+     ],
+     "answer": "27"
+    },
+    {
+     "type": "Missing value",
+     "question": "Mean of five is 12; four are 10, 14, 9, 15.",
+     "steps": [
+      "60 − 48."
+     ],
+     "answer": "12"
+    },
+    {
+     "type": "Consistency",
+     "question": "A: 20, 45, 30, 50, 35; B: 10, 90, 5, 60, 15.",
+     "steps": [
+      "Means 36 and 36.",
+      "Ranges 30 and 85."
+     ],
+     "answer": "A is more consistent"
+    },
+    {
+     "type": "Outlier",
+     "question": "Pocket money 50, 60, 55, 300, 65, 45, 70.",
+     "steps": [
+      "Mean ≈ 92.14, median 60."
+     ],
+     "answer": "The median represents better"
+    },
+    {
+     "type": "Temperatures",
+     "question": "31, 33, 30, 34, 32, 35, 29.",
+     "steps": [
+      "Sum 224.",
+      "Ordered middle 32."
+     ],
+     "answer": "Mean 32°C, median 32°C, range 6°C"
+    }
+   ],
+   "mistakes": [
+    "Finding the median without ordering.",
+    "Taking only one middle value for an even count.",
+    "Dividing by the wrong count for the mean.",
+    "Calling range the highest value."
+   ],
+   "checklist": [
+    "Write the ordered list.",
+    "Show the sum and the count.",
+    "State which value is better and why.",
+    "Give units."
+   ]
+  },
+  {
+   "slug": "g7-constructions-tilings",
+   "chapter": "Constructions and Tilings",
+   "number": 14,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Compass Constructions & Tessellations",
+   "concepts": [
+    {
+     "title": "Perpendicular bisector",
+     "text": "Open the compasses to more than half of AB. Draw arcs above and below AB from A, then from B with the same radius. Join the two crossing points."
+    },
+    {
+     "title": "Angles of 60°, 30°, 90° and 45°",
+     "text": "60°: from the vertex, draw an arc; from where it cuts the arm, cut the arc again with the same radius. Join."
+    },
+    {
+     "title": "Parallel line through a point",
+     "text": "Draw any line through P that crosses l. Copy the angle that it makes with l at P, in the corresponding position. The equal corresponding angles make the new line parallel to l."
+    },
+    {
+     "title": "Which shapes tile?",
+     "text": "At each corner of a tiling, the angles must add to exactly 360°."
+    }
+   ],
+   "formulas": [
+    "Interior angle = 180°(n − 2)/n",
+    "Sum round a point = 360°"
+   ],
+   "method": [
+    "Draw a rough sketch.",
+    "Construct with compasses; keep arcs.",
+    "Label every point.",
+    "For tilings, add the angles at a point."
+   ],
+   "example": {
+    "question": "Steps for the perpendicular bisector of AB.",
+    "steps": [
+     "Equal arcs from A and B above and below.",
+     "Join the crossing points."
+    ],
+    "answer": "Perpendicular bisector drawn"
+   },
+   "practice": [
+    {
+     "question": "Interior angle of a regular pentagon.",
+     "answer": "108°",
+     "marks": 2
+    },
+    {
+     "question": "How many squares meet at a point in a tiling?",
+     "answer": "4",
+     "marks": 2
+    },
+    {
+     "question": "Bisect a 90° angle. What angle do you get?",
+     "answer": "45°",
+     "marks": 2
+    },
+    {
+     "question": "Can regular decagons (144°) tile alone?",
+     "answer": "No",
+     "marks": 2
+    },
+    {
+     "question": "Interior angle of a regular 12-gon.",
+     "answer": "150°",
+     "marks": 2
+    },
+    {
+     "question": "Do 1 square + 2 octagons fit at a point?",
+     "answer": "Yes",
+     "marks": 2
+    },
+    {
+     "question": "Write the steps to construct 120°.",
+     "answer": "Construct 60° twice along the arc",
+     "marks": 3
+    },
+    {
+     "question": "Do 3 triangles + 2 squares fit at a point?",
+     "answer": "60 × 3 + 90 × 2 = 360: yes",
+     "marks": 3
+    },
+    {
+     "question": "Construct 75°.",
+     "answer": "Bisect between 60° and 90°",
+     "marks": 3
+    },
+    {
+     "question": "Show that 1 triangle + 2 dodecagons (150°) fit at a point.",
+     "answer": "60 + 150 + 150 = 360",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Fixed radius for each pair of arcs.",
+    "Bisect to halve an angle.",
+    "Tiles must total 360° at a corner."
+   ],
+   "intro": "With only a ruler and compasses, you can draw exact right angles, 60° angles and parallel lines. In this chapter you learn these constructions and then use angle facts to see which tile shapes can cover a floor without gaps.",
+   "before": [
+    "use a ruler and compasses",
+    "know the angle sum of a triangle and that angles round a point add to 360°"
+   ],
+   "glossary": [
+    {
+     "term": "Perpendicular bisector",
+     "meaning": "A line at 90° through the mid-point of a segment."
+    },
+    {
+     "term": "Angle bisector",
+     "meaning": "A ray that splits an angle into two equal parts."
+    },
+    {
+     "term": "Regular polygon",
+     "meaning": "All sides equal and all angles equal."
+    },
+    {
+     "term": "Tiling (tessellation)",
+     "meaning": "Covering a surface with shapes, without gaps or overlaps."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Perpendicular bisector",
+     "text": [
+      "Open the compasses to more than half of AB. Draw arcs above and below AB from A, then from B with the same radius. Join the two crossing points.",
+      "Every point on this line is the same distance from A and B."
+     ]
+    },
+    {
+     "title": "Angles of 60°, 30°, 90° and 45°",
+     "text": [
+      "60°: from the vertex, draw an arc; from where it cuts the arm, cut the arc again with the same radius. Join.",
+      "Bisect any angle: from the two points where an arc cuts the arms, draw equal arcs inside; join the vertex to their crossing point. Bisect 60° for 30°, 90° for 45°."
+     ],
+     "points": [
+      "Keep the compass width fixed during each step."
+     ]
+    },
+    {
+     "title": "Parallel line through a point",
+     "text": [
+      "Draw any line through P that crosses l. Copy the angle that it makes with l at P, in the corresponding position. The equal corresponding angles make the new line parallel to l."
+     ]
+    },
+    {
+     "title": "Which shapes tile?",
+     "text": [
+      "At each corner of a tiling, the angles must add to exactly 360°.",
+      "Interior angle of a regular polygon with n sides = 180° × (n − 2) ÷ n. Triangle 60°, square 90°, pentagon 108°, hexagon 120°, octagon 135°.",
+      "Only regular triangles, squares and hexagons tile alone. Mixtures also work if the angles at a point add to 360°."
+     ],
+     "formulas": [
+      "Interior angle = 180°(n − 2)/n",
+      "Angles at a point = 360°"
+     ],
+     "example": {
+      "question": "Can regular pentagons tile alone?",
+      "steps": [
+       "Angle = 108°.",
+       "360 ÷ 108 is not whole."
+      ],
+      "answer": "No"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "type": "Bisector",
+     "question": "Steps for the perpendicular bisector of AB.",
+     "steps": [
+      "Equal arcs from A and B above and below.",
+      "Join the crossing points."
+     ],
+     "answer": "Perpendicular bisector drawn"
+    },
+    {
+     "type": "30° angle",
+     "question": "Construct 30°.",
+     "steps": [
+      "Construct 60°.",
+      "Bisect it."
+     ],
+     "answer": "30°"
+    },
+    {
+     "type": "Tiling",
+     "question": "Why do equilateral triangles tile?",
+     "steps": [
+      "6 × 60° = 360°."
+     ],
+     "answer": "They fit round a point"
+    },
+    {
+     "type": "Octagon",
+     "question": "Interior angle of a regular octagon.",
+     "steps": [
+      "180 × 6 ÷ 8."
+     ],
+     "answer": "135°"
+    },
+    {
+     "type": "Mixed tiling",
+     "question": "2 octagons + 1 square at a point?",
+     "steps": [
+      "135 + 135 + 90."
+     ],
+     "answer": "360°: yes"
+    },
+    {
+     "type": "Parallel line",
+     "question": "Line through P parallel to l.",
+     "steps": [
+      "Copy the corresponding angle at P."
+     ],
+     "answer": "Parallel line drawn"
+    }
+   ],
+   "mistakes": [
+    "Changing the compass width in the middle of a step.",
+    "Erasing construction arcs.",
+    "Using 180°(n − 2) without dividing by n.",
+    "Forgetting that angles at a point must total exactly 360°."
+   ],
+   "checklist": [
+    "Keep arcs visible.",
+    "Write the steps of construction.",
+    "Show the 360° check for tilings.",
+    "Measure angles with a protractor to check."
+   ]
+  },
+  {
+   "slug": "g7-finding-the-unknown",
+   "chapter": "Finding the Unknown",
+   "number": 15,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Simple Linear Equations",
+   "concepts": [
+    {
+     "title": "The balance idea",
+     "text": "An equation stays true if you add, subtract, multiply or divide both sides by the same number (not dividing by 0)."
+    },
+    {
+     "title": "Brackets and unknowns on both sides",
+     "text": "Expand brackets first, or divide both sides by the number outside: 5(y − 2) = 30 → y − 2 = 6 → y = 8."
+    },
+    {
+     "title": "Checking a solution",
+     "text": "Put the value back into the original equation. If both sides are equal, the solution is correct."
+    },
+    {
+     "title": "Word problems",
+     "text": "Step 1: let a letter stand for the unknown. Step 2: write the other quantities using that letter. Step 3: form the equation from the condition. Step 4: solve and check. Step 5: answer in words with units."
+    }
+   ],
+   "formulas": [
+    "If a = b, then a + c = b + c, a − c = b − c, ac = bc, a/c = b/c (c ≠ 0)"
+   ],
+   "method": [
+    "Let the unknown be a letter.",
+    "Form the equation.",
+    "Solve by balancing.",
+    "Check and answer in words."
+   ],
+   "example": {
+    "question": "Solve 3x + 4 = 25.",
+    "steps": [
+     "3x = 21."
+    ],
+    "answer": "x = 7"
+   },
+   "practice": [
+    {
+     "question": "Solve x − 9 = 14.",
+     "answer": "23",
+     "marks": 2
+    },
+    {
+     "question": "Solve 7x = 63.",
+     "answer": "9",
+     "marks": 2
+    },
+    {
+     "question": "Solve x/3 + 2 = 6.",
+     "answer": "12",
+     "marks": 2
+    },
+    {
+     "question": "Solve 2(x + 4) = 18.",
+     "answer": "5",
+     "marks": 2
+    },
+    {
+     "question": "Solve 9 − 2x = 1.",
+     "answer": "4",
+     "marks": 2
+    },
+    {
+     "question": "Solve 6x + 5 = 4x + 15.",
+     "answer": "5",
+     "marks": 2
+    },
+    {
+     "question": "The sum of three consecutive numbers is 72. Find them.",
+     "answer": "23, 24, 25",
+     "marks": 3
+    },
+    {
+     "question": "A father is 30 years older than his son. In 5 years he will be 3 times as old. Find the son's age.",
+     "answer": "10 years",
+     "marks": 3
+    },
+    {
+     "question": "I think of a number, multiply it by 5 and subtract 12. I get 48. Find the number.",
+     "answer": "12",
+     "marks": 3
+    },
+    {
+     "question": "₹500 is shared between A and B so that A gets ₹80 more than B. Find each share.",
+     "answer": "A ₹290, B ₹210",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Undo in reverse order.",
+    "Same operation on both sides.",
+    "Check the answer."
+   ],
+   "intro": "An equation is like a balance: both sides weigh the same. To find the unknown number, you do the same thing to both sides until the letter is alone. In this chapter you learn to solve equations and to turn word problems into equations.",
+   "before": [
+    "use letter-numbers (Chapter 4)",
+    "work with integers and fractions"
+   ],
+   "glossary": [
+    {
+     "term": "Equation",
+     "meaning": "A statement that two expressions are equal, such as 2x + 9 = 35."
+    },
+    {
+     "term": "Unknown (variable)",
+     "meaning": "The letter whose value we want."
+    },
+    {
+     "term": "Solution",
+     "meaning": "The value that makes the equation true."
+    },
+    {
+     "term": "LHS and RHS",
+     "meaning": "The left-hand side and the right-hand side of the = sign."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "The balance idea",
+     "text": [
+      "An equation stays true if you add, subtract, multiply or divide both sides by the same number (not dividing by 0).",
+      "Undo operations in reverse order: in 3x + 4 = 25, first subtract 4, then divide by 3."
+     ],
+     "points": [
+      "Whatever you do to one side, do to the other."
+     ],
+     "example": {
+      "question": "Solve 3x + 4 = 25.",
+      "steps": [
+       "Subtract 4: 3x = 21.",
+       "Divide by 3."
+      ],
+      "answer": "x = 7"
+     }
+    },
+    {
+     "title": "Brackets and unknowns on both sides",
+     "text": [
+      "Expand brackets first, or divide both sides by the number outside: 5(y − 2) = 30 → y − 2 = 6 → y = 8.",
+      "If x appears on both sides, move the x terms to one side and the numbers to the other: 4x − 7 = 2x + 9 → 2x = 16 → x = 8."
+     ]
+    },
+    {
+     "title": "Checking a solution",
+     "text": [
+      "Put the value back into the original equation. If both sides are equal, the solution is correct.",
+      "Check x = 8 in 4x − 7 = 2x + 9: LHS = 25, RHS = 25. Correct."
+     ],
+     "points": [
+      "Always check."
+     ]
+    },
+    {
+     "title": "Word problems",
+     "text": [
+      "Step 1: let a letter stand for the unknown. Step 2: write the other quantities using that letter. Step 3: form the equation from the condition. Step 4: solve and check. Step 5: answer in words with units.",
+      "Common forms: perimeter 2(l + b); ages now and after n years; costs 'more than' or 'less than'."
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Two steps",
+     "question": "Solve 3x + 4 = 25.",
+     "steps": [
+      "3x = 21."
+     ],
+     "answer": "x = 7"
+    },
+    {
+     "type": "Brackets",
+     "question": "Solve 5(y − 2) = 30.",
+     "steps": [
+      "y − 2 = 6."
+     ],
+     "answer": "y = 8"
+    },
+    {
+     "type": "Both sides",
+     "question": "Solve 4x − 7 = 2x + 9.",
+     "steps": [
+      "2x = 16."
+     ],
+     "answer": "x = 8"
+    },
+    {
+     "type": "Number",
+     "question": "Doubled and increased by 9 gives 35.",
+     "steps": [
+      "2n + 9 = 35."
+     ],
+     "answer": "13"
+    },
+    {
+     "type": "Rectangle",
+     "question": "Perimeter 54 cm, length = breadth + 3.",
+     "steps": [
+      "2(2b + 3) = 54."
+     ],
+     "answer": "12 cm and 15 cm"
+    },
+    {
+     "type": "Ages",
+     "question": "Raju = 4 × son; after 5 years sum = 60.",
+     "steps": [
+      "5s + 10 = 60."
+     ],
+     "answer": "10 and 40 years"
+    }
+   ],
+   "mistakes": [
+    "Doing an operation on one side only.",
+    "Forgetting to multiply every term inside a bracket.",
+    "Sign errors when moving terms.",
+    "Not answering the actual question (for example giving b, when the length is asked)."
+   ],
+   "checklist": [
+    "Write 'Let … = x'.",
+    "Write each step on a new line.",
+    "Check by substitution.",
+    "Give units."
+   ]
+  }
+ ]
+}

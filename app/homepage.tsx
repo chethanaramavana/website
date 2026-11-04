@@ -9,6 +9,8 @@ import Brand, { SiteFooter } from './brand';
 
 // Paste the public Telegram channel link here (for example 'https://t.me/ramavanamath'). The button stays hidden while this is empty.
 const telegramChannelUrl = '';
+// Public WhatsApp group for updates. It shows at the top of the home page and in the contact section.
+const whatsAppGroupUrl = 'https://chat.whatsapp.com/IMcqW8TeBDSEOlLlEwYmhU';
 const whatsAppUrl = 'https://wa.me/919353928169?text=' + encodeURIComponent('Hello Ramavana Mathematical Center, I would like to know more about maths practice for my child.');
 
 export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
@@ -16,6 +18,10 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
   return (
     <div className="identity-home">
       <a className="rmc-skip" href="#main-content">Skip to content</a>
+      <div className="rmc-group-bar" role="region" aria-label="WhatsApp group">
+        <p><strong>Exams are near.</strong> <span>Join our free WhatsApp group for updates and exam tips.</span></p>
+        <a href={whatsAppGroupUrl} target="_blank" rel="noopener noreferrer">Join the group<ArrowUpRight aria-hidden="true" /></a>
+      </div>
       <header className="rmc-header rmc-container">
         <Brand />
         <button className="rmc-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="homepage-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
@@ -42,7 +48,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
           <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>
           <div id="study-library" className="rmc-board-grid">
-            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />{' '}and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
+            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 7, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />{' '}and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
             <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6 &amp; 10</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />{' '}and practice papers.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
           </div>
           <p className="rmc-coming">IGCSE is on the way. CBSE and ICSE are ready to explore.</p>
@@ -51,7 +57,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <MathsBasicsFeature />
         <ParentValueSection />
 
-        <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a><div className="rmc-chat-actions"><a className="rmc-chat-button rmc-chat-whatsapp" href={whatsAppUrl} target="_blank" rel="noopener noreferrer">Say hello on WhatsApp</a>{telegramChannelUrl && <a className="rmc-chat-button rmc-chat-telegram" href={telegramChannelUrl} target="_blank" rel="noopener noreferrer">Join the free Telegram channel</a>}</div>{telegramChannelUrl && <p className="rmc-chat-note">New question papers and weekly problems arrive first on Telegram.</p>}</div></section>
+        <section id="contact" className="rmc-contact" aria-labelledby="contact-title"><div><p className="rmc-eyebrow">Online, and here in Bengaluru</p><h2 id="contact-title">A place for questions.</h2><p>Visit us near Sobha Daffodil, Haralur,<br />HSR Layout, Bengaluru 560102.</p><a className="rmc-text-link" href="https://www.google.com/maps/search/?api=1&query=Ramavana+Mathematical+Centre+Haralur+Bengaluru" target="_blank" rel="noopener noreferrer">Find us on the map<ArrowUpRight aria-hidden="true" /></a></div><div className="rmc-contact-details"><h3>Let’s talk maths.</h3><p>For classes, learning materials or help<br />with your account, get in touch.</p><a href="tel:+919353928169">+91 93539 28169</a><a href="mailto:chethanamanasa21@gmail.com">chethanamanasa21@gmail.com</a><div className="rmc-chat-actions"><a className="rmc-chat-button rmc-chat-group" href={whatsAppGroupUrl} target="_blank" rel="noopener noreferrer">Join our WhatsApp group</a><a className="rmc-chat-button rmc-chat-whatsapp" href={whatsAppUrl} target="_blank" rel="noopener noreferrer">Say hello on WhatsApp</a>{telegramChannelUrl && <a className="rmc-chat-button rmc-chat-telegram" href={telegramChannelUrl} target="_blank" rel="noopener noreferrer">Join the free Telegram channel</a>}</div>{telegramChannelUrl && <p className="rmc-chat-note">New question papers and weekly problems arrive first on Telegram.</p>}</div></section>
       </main>
       <SiteFooter />
     </div>

@@ -1,0 +1,1729 @@
+{
+ "papers": [
+  {
+   "id": "g7-number-play-01",
+   "chapter": "Number Play",
+   "chapterNumber": 6,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Odd and even numbers (parity), magic squares, Virahānka–Fibonacci numbers and digit puzzles.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "odd + odd is always",
+     "options": [
+      "odd",
+      "even",
+      "sometimes odd",
+      "zero"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The magic sum of a 3 × 3 magic square that uses 1 to 9 is",
+     "options": [
+      "15",
+      "45",
+      "12",
+      "18"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The number after 1, 2, 3, 5, 8, 13 in the Virahānka sequence is",
+     "options": [
+      "18",
+      "26",
+      "21",
+      "20"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The sum of 5 odd numbers is",
+     "options": [
+      "even",
+      "zero",
+      "a multiple of 5",
+      "odd"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The sum of the first 10 odd numbers is 100.",
+     "reason": "The sum of the first n odd numbers is n²."
+    },
+    {
+     "number": 6,
+     "assertion": "The product of an odd number and an even number is even.",
+     "reason": "The product of two odd numbers is even."
+    }
+   ],
+   "written": {
+    "17": "Without adding, say whether 23 + 45 + 67 + 89 is odd or even. Give the reason.",
+    "18": "A 3 × 3 magic square uses 1 to 9. Its top row is 2, 7, 6 and its centre is 5. Complete the square.",
+    "19": "Write the first 10 Virahānka numbers starting 1, 2, ….",
+    "20": "A rhythm of 6 beats is made with short syllables (1 beat) and long syllables (2 beats). How many different rhythms are there? Explain.",
+    "21": "AB is a 2-digit number. AB + BA = 121 and A − B = 3. Find AB.",
+    "22": "(a) Can 7 odd numbers add up to 50? (b) Can 3 numbers from {1, 3, 5, 7, 9} add up to 20? Explain using parity.",
+    "23": [
+     "Add 3 to each number of the 1-to-9 magic square to use the numbers 4 to 12.",
+     "(a) Find the new magic sum.",
+     "(b) Find the centre number.",
+     "(c) Write the complete magic square."
+    ],
+    "24": [
+     "(a) List the possible positions after 1 move. [1]",
+     "(b) List the possible positions after 2 moves. [1]",
+     "(c) Can the token be at 30 after exactly 7 moves? Explain. [2]"
+    ]
+   },
+   "caseStudy": "A token starts at 0 on a number track. Each move jumps 3 steps or 5 steps forward.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "Four odd numbers: odd + odd = even, and even + even = even. So the sum is even (it is 224).",
+    "18": "2 7 6 / 9 5 1 / 4 3 8. Every row, column and diagonal adds to 15.",
+    "19": "1, 2, 3, 5, 8, 13, 21, 34, 55, 89.",
+    "20": "Each rhythm ends in a short or a long syllable, so count(n) = count(n − 1) + count(n − 2). Counts: 1, 2, 3, 5, 8, 13. There are 13 rhythms.",
+    "21": "AB + BA = 11(A + B) = 121, so A + B = 11. With A − B = 3: A = 7, B = 4. AB = 74.",
+    "22": "(a) No. The sum of an odd count of odd numbers is odd, and 50 is even. (b) No. Three odd numbers add to an odd number, and 20 is even.",
+    "23": "(a) 15 + 3 × 3 = 24. (b) 5 + 3 = 8. (c) 5 10 9 / 12 8 4 / 7 6 11.",
+    "24": "(a) 3 or 5. (b) 6, 8 or 10. (c) No. Each jump is odd, and 7 odd numbers add to an odd number. 30 is even."
+   }
+  },
+  {
+   "id": "g7-triangles-01",
+   "chapter": "A Tale of Three Intersecting Lines",
+   "chapterNumber": 7,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "The triangle inequality, constructing triangles with ruler and compasses, the angle sum property, isosceles and equilateral triangles, and exterior angles.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Can 3 cm, 4 cm and 8 cm be the sides of a triangle?",
+     "options": [
+      "Yes, a scalene triangle",
+      "No",
+      "Yes, an isosceles triangle",
+      "Yes, a right triangle"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Two angles of a triangle are 50° and 60°. The third angle is",
+     "options": [
+      "70°",
+      "80°",
+      "90°",
+      "60°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Each angle of an equilateral triangle is",
+     "options": [
+      "90°",
+      "45°",
+      "60°",
+      "30°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "An exterior angle of a triangle is equal to",
+     "options": [
+      "the sum of all three angles",
+      "the adjacent interior angle",
+      "the difference of the interior opposite angles",
+      "the sum of the two interior opposite angles"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A triangle cannot have two right angles.",
+     "reason": "The angles of a triangle add up to 180°."
+    },
+    {
+     "number": 6,
+     "assertion": "Sides 5 cm, 5 cm and 11 cm make an isosceles triangle.",
+     "reason": "An isosceles triangle has two equal sides."
+    }
+   ],
+   "written": {
+    "17": "Check whether a triangle is possible with sides (a) 6, 7, 12 cm, (b) 4, 9, 13 cm.",
+    "18": "The angles of a triangle are in the ratio 2 : 3 : 4. Find them.",
+    "19": "The vertex angle of an isosceles triangle is 40°. Find its base angles.",
+    "20": "Construct a triangle with sides 5 cm, 6 cm and 7 cm. Write the steps of construction.",
+    "21": "An exterior angle of a triangle is 110° and one interior opposite angle is 45°. Find the other two angles of the triangle.",
+    "22": "Two sides of a triangle are 6 cm and 9 cm. Between which two values must the third side lie?",
+    "23": [
+     "In triangle ABC, ∠A = x, ∠B = 2x and ∠C = 3x.",
+     "(a) Find x.",
+     "(b) Find the three angles.",
+     "(c) Name the type of triangle and the side opposite the largest angle."
+    ],
+    "24": [
+     "(a) Can CA be 15 km? Give a reason. [1]",
+     "(b) Between which values must CA lie? [1]",
+     "(c) If ∠B = 90° and ∠A = 37°, find ∠C. [2]"
+    ]
+   },
+   "caseStudy": "Three villages A, B and C are joined by straight roads. AB = 8 km and BC = 6 km.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) Yes: 6 + 7 = 13 > 12. (b) No: 4 + 9 = 13, which is not greater than 13.",
+    "18": "2x + 3x + 4x = 180, so x = 20. The angles are 40°, 60° and 80°.",
+    "19": "Each base angle = (180° − 40°) ÷ 2 = 70°.",
+    "20": "Draw BC = 6 cm. With centre B and radius 5 cm, draw an arc. With centre C and radius 7 cm, draw another arc to cut it at A. Join AB and AC.",
+    "21": "Other interior opposite angle = 110° − 45° = 65°. Third angle = 180° − 110° = 70°.",
+    "22": "9 − 6 < x < 9 + 6, so 3 cm < x < 15 cm.",
+    "23": "(a) x + 2x + 3x = 180, so x = 30. (b) 30°, 60°, 90°. (c) A right triangle. The longest side is AB, opposite ∠C = 90°.",
+    "24": "(a) No: 8 + 6 = 14 < 15. (b) 8 − 6 < CA < 8 + 6, so 2 km < CA < 14 km. (c) ∠C = 180° − 90° − 37° = 53°."
+   }
+  },
+  {
+   "id": "g7-working-with-fractions-01",
+   "chapter": "Working with Fractions",
+   "chapterNumber": 8,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Fraction of a quantity, multiplying fractions and mixed numbers, reciprocals, dividing fractions and word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "3/4 × 8 equals",
+     "options": [
+      "32/3",
+      "6",
+      "3/32",
+      "11/4"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "2/3 × 3/5 equals",
+     "options": [
+      "2/5",
+      "6/8",
+      "5/8",
+      "10/9"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The reciprocal of 7/9 is",
+     "options": [
+      "7/9",
+      "−7/9",
+      "9/7",
+      "1"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "3/4 ÷ 1/2 equals",
+     "options": [
+      "3/8",
+      "1/2",
+      "2/3",
+      "3/2"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "1/2 × 1/3 is smaller than 1/2.",
+     "reason": "1/2 and 1/3 are both unit fractions."
+    },
+    {
+     "number": 6,
+     "assertion": "6 ÷ 1/2 = 3.",
+     "reason": "Dividing by a fraction is the same as multiplying by its reciprocal."
+    }
+   ],
+   "written": {
+    "17": "Find (a) 2/5 of 45, (b) 3/4 of 2 hours, in minutes.",
+    "18": "Multiply 2 1/3 × 1 1/2.",
+    "19": "Divide 5/6 ÷ 10/9.",
+    "20": "A car runs 14 1/2 km on 1 litre of petrol. How far does it run on 6 3/4 litres?",
+    "21": "A rope 12 m long is cut into pieces of 3/4 m each. How many pieces are there?",
+    "22": "Simplify 3/5 × (2/3 + 1/6).",
+    "23": [
+     "Meena has ₹600. She spends 1/3 of it on books and 1/4 of the remaining money on food.",
+     "(a) How much does she spend on books?",
+     "(b) How much does she spend on food?",
+     "(c) What fraction of the ₹600 is left?"
+    ],
+    "24": [
+     "(a) How much sugar is needed for 6 people? [1]",
+     "(b) How much flour is needed for 6 people? [1]",
+     "(c) How many 1/4-cup scoops of flour is that? How much sugar is needed for 10 people? [2]"
+    ]
+   },
+   "caseStudy": "A recipe for 4 people uses 2/3 cup of sugar and 1 1/2 cups of flour.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "(a) 2/5 × 45 = 18. (b) 3/4 × 120 = 90 minutes.",
+    "18": "7/3 × 3/2 = 7/2 = 3 1/2.",
+    "19": "5/6 × 9/10 = 45/60 = 3/4.",
+    "20": "29/2 × 27/4 = 783/8 = 97 7/8 km.",
+    "21": "12 ÷ 3/4 = 12 × 4/3 = 16 pieces.",
+    "22": "2/3 + 1/6 = 5/6. 3/5 × 5/6 = 1/2.",
+    "23": "(a) 1/3 × 600 = ₹200. (b) Remaining ₹400; 1/4 × 400 = ₹100. (c) Left = ₹300 = 300/600 = 1/2.",
+    "24": "(a) 2/3 × 6/4 = 1 cup. (b) 3/2 × 6/4 = 9/4 = 2 1/4 cups. (c) 9/4 ÷ 1/4 = 9 scoops. Sugar for 10: 2/3 × 10/4 = 5/3 = 1 2/3 cups."
+   }
+  },
+  {
+   "id": "g7-geometric-twins-01",
+   "chapter": "Geometric Twins",
+   "chapterNumber": 9,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Congruent figures, the SSS, SAS, ASA, AAS and RHS conditions, corresponding parts, and isosceles triangles.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Congruent figures have",
+     "options": [
+      "the same shape only",
+      "the same shape and the same size",
+      "the same size only",
+      "the same colour"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which is NOT a condition for congruence?",
+     "options": [
+      "AAA",
+      "SSS",
+      "SAS",
+      "ASA"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If ΔABC ≅ ΔPQR, then AB is equal to",
+     "options": [
+      "QR",
+      "PR",
+      "PQ",
+      "RP"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The RHS condition is used only for",
+     "options": [
+      "all triangles",
+      "equilateral triangles",
+      "obtuse triangles",
+      "right triangles"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Triangles with sides 3, 4, 5 cm and 5, 3, 4 cm are congruent.",
+     "reason": "SSS: three pairs of equal sides give congruent triangles."
+    },
+    {
+     "number": 6,
+     "assertion": "Two triangles whose angles are all 60° are always congruent.",
+     "reason": "Equal angles fix the shape of a triangle but not its size."
+    }
+   ],
+   "written": {
+    "17": "Name the condition: (a) AB = PQ, BC = QR, ∠B = ∠Q. (b) ∠A = ∠P, ∠B = ∠Q, AB = PQ.",
+    "18": "ΔABC ≅ ΔDEF, ∠A = 50° and ∠E = 70°. Find ∠B, ∠C and ∠F.",
+    "19": "In ΔABC, AB = AC and ∠B = 65°. Find ∠C and ∠A.",
+    "20": "In quadrilateral ABCD, AB = AD and CB = CD. Prove that ΔABC ≅ ΔADC, and hence ∠B = ∠D.",
+    "21": "In ΔABC, AB = AC and AD bisects ∠A, with D on BC. Prove that BD = DC.",
+    "22": "Two right triangles have equal hypotenuses of 10 cm and one equal side of 6 cm. Are they congruent? Name the condition.",
+    "23": [
+     "AB and CD are line segments that bisect each other at O.",
+     "(a) Prove that ΔAOC ≅ ΔBOD.",
+     "(b) Show that AC = BD.",
+     "(c) Show that AC ∥ BD."
+    ],
+    "24": [
+     "(a) Find XY. [1]",
+     "(b) Find ∠Y. [1]",
+     "(c) If ∠P = 37°, find ∠X and ∠Z. [2]"
+    ]
+   },
+   "caseStudy": "Two shelf brackets are congruent triangles: ΔPQR ≅ ΔXYZ, with PQ = 12 cm, QR = 9 cm and ∠Q = 90°.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) SAS. (b) ASA.",
+    "18": "∠B = ∠E = 70°. ∠C = 180° − 50° − 70° = 60°. ∠F = ∠C = 60°.",
+    "19": "∠C = 65° (base angles). ∠A = 180° − 130° = 50°.",
+    "20": "AB = AD, CB = CD, and AC is common. So ΔABC ≅ ΔADC (SSS), and ∠B = ∠D (corresponding parts).",
+    "21": "AB = AC, ∠BAD = ∠CAD, AD is common. So ΔABD ≅ ΔACD (SAS), and BD = DC.",
+    "22": "Yes, by RHS (right angle, hypotenuse and one side equal).",
+    "23": "(a) OA = OB, OC = OD (bisect), ∠AOC = ∠BOD (vertically opposite). So ΔAOC ≅ ΔBOD (SAS). (b) AC = BD (corresponding parts). (c) ∠OAC = ∠OBD (corresponding parts); these are alternate angles, so AC ∥ BD.",
+    "24": "(a) XY = PQ = 12 cm. (b) ∠Y = ∠Q = 90°. (c) ∠X = ∠P = 37°. ∠Z = 180° − 90° − 37° = 53°."
+   }
+  },
+  {
+   "id": "g7-integers-01",
+   "chapter": "Operations with Integers",
+   "chapterNumber": 10,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Addition and subtraction of integers, sign rules for multiplication and division, properties and real-life uses.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "(−6) × 4 equals",
+     "options": [
+      "24",
+      "−24",
+      "−10",
+      "2"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "(−48) ÷ (−6) equals",
+     "options": [
+      "8",
+      "−8",
+      "−42",
+      "54"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "(−3) × (−2) × (−5) equals",
+     "options": [
+      "30",
+      "10",
+      "−30",
+      "−10"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The temperature is 5°C and falls by 12°C. The new temperature is",
+     "options": [
+      "17°C",
+      "7°C",
+      "−17°C",
+      "−7°C"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "(−1) × (−1) × (−1) = −1.",
+     "reason": "A product with an odd number of negative factors is negative."
+    },
+    {
+     "number": 6,
+     "assertion": "0 ÷ (−20) = 0.",
+     "reason": "Any integer divided by 0 is 0."
+    }
+   ],
+   "written": {
+    "17": "Find (−15) + 8 − (−7).",
+    "18": "Find (−12) × 5 + (−8) × (−4).",
+    "19": "Find (−144) ÷ 12 ÷ (−3).",
+    "20": "In a quiz, each correct answer gets +5 and each wrong answer gets −2. Ravi has 8 correct and 6 wrong answers. Find his score.",
+    "21": "Use the distributive property to find (−25) × 37 + (−25) × 63.",
+    "22": "A submarine is at −120 m. It rises 40 m every minute. Where is it after 2 minutes? After how many minutes does it reach the surface?",
+    "23": [
+     "The temperatures (°C) on five days are: −3, 2, −5, 4, −8.",
+     "(a) Find the highest and the lowest temperature.",
+     "(b) Find the difference between them.",
+     "(c) Find the average temperature."
+    ],
+    "24": [
+     "(a) Find the floor after it goes down. [1]",
+     "(b) Find the final floor. [1]",
+     "(c) Each floor is 3 m high. Find the total distance moved, and the final position compared with the start, in metres. [2]"
+    ]
+   },
+   "caseStudy": "A lift starts at floor 6. Floor 0 is the ground, and basements are negative. The lift goes down 9 floors, then up 4 floors.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "−15 + 8 + 7 = 0.",
+    "18": "−60 + 32 = −28.",
+    "19": "−12 ÷ (−3) = 4.",
+    "20": "8 × 5 + 6 × (−2) = 40 − 12 = 28.",
+    "21": "(−25) × (37 + 63) = (−25) × 100 = −2,500.",
+    "22": "−120 + 80 = −40 m. It reaches 0 after 120 ÷ 40 = 3 minutes.",
+    "23": "(a) Highest 4°C, lowest −8°C. (b) 4 − (−8) = 12°C. (c) (−3 + 2 − 5 + 4 − 8) ÷ 5 = −10 ÷ 5 = −2°C.",
+    "24": "(a) 6 − 9 = −3. (b) −3 + 4 = 1. (c) 13 floors × 3 = 39 m moved. Final is 5 floors below the start: −15 m."
+   }
+  }
+ ],
+ "notes": [
+  {
+   "slug": "g7-number-play",
+   "chapter": "Number Play",
+   "number": 6,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Parity, Magic Squares & Virahānka Numbers",
+   "concepts": [
+    {
+     "title": "Parity rules",
+     "text": "even + even = even, odd + odd = even, odd + even = odd. even × anything = even, odd × odd = odd."
+    },
+    {
+     "title": "Sums of odd numbers",
+     "text": "1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. The sum of the first n odd numbers is n²."
+    },
+    {
+     "title": "Magic squares",
+     "text": "For 1 to 9, the total is 45 and there are 3 rows, so the magic sum is 45 ÷ 3 = 15. The centre must be 5."
+    },
+    {
+     "title": "Virahānka–Fibonacci numbers and digit puzzles",
+     "text": "Start 1, 2 and add the last two: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. These count the rhythms of n beats made from 1-beat and 2-beat syllables."
+    }
+   ],
+   "formulas": [
+    "odd + odd = even; odd + even = odd",
+    "1 + 3 + … (n odd numbers) = n²",
+    "Magic sum (1–9) = 15",
+    "Vₙ = Vₙ₋₁ + Vₙ₋₂"
+   ],
+   "method": [
+    "Look for odd/even patterns first.",
+    "For magic squares, find the magic sum and the centre.",
+    "For sequences, find the rule.",
+    "For digit puzzles, write numbers with place value."
+   ],
+   "example": {
+    "question": "Can 7 odd numbers add to 50?",
+    "steps": [
+     "7 odd numbers give an odd sum.",
+     "50 is even."
+    ],
+    "answer": "No"
+   },
+   "practice": [
+    {
+     "question": "Is 135 + 246 + 357 odd or even?",
+     "answer": "Even (two odds and one even)",
+     "marks": 2
+    },
+    {
+     "question": "Sum of the first 15 odd numbers.",
+     "answer": "225",
+     "marks": 2
+    },
+    {
+     "question": "Next number: 13, 21, 34, ?",
+     "answer": "55",
+     "marks": 2
+    },
+    {
+     "question": "Magic sum of a 3 × 3 square using 2, 4, 6, …, 18.",
+     "answer": "30",
+     "marks": 2
+    },
+    {
+     "question": "Is the product 13 × 27 × 41 odd or even?",
+     "answer": "Odd",
+     "marks": 2
+    },
+    {
+     "question": "Can 4 odd numbers add up to 31?",
+     "answer": "No; 4 odds give an even sum",
+     "marks": 2
+    },
+    {
+     "question": "AB + BA = 77 and A > B, B = 2. Find AB.",
+     "answer": "52",
+     "marks": 3
+    },
+    {
+     "question": "How many rhythms of 7 beats?",
+     "answer": "21",
+     "marks": 3
+    },
+    {
+     "question": "Multiply every entry of the 1–9 magic square by 2. Find the new magic sum.",
+     "answer": "30",
+     "marks": 3
+    },
+    {
+     "question": "Show with parity that 1 + 2 + 3 + … + 10 is odd.",
+     "answer": "Five odd numbers (1, 3, 5, 7, 9): odd count of odds; sum = 55",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Count the odds to decide parity.",
+    "Magic sum = total ÷ 3.",
+    "Each Virahānka number = sum of the previous two."
+   ],
+   "intro": "This chapter treats you as a number detective. You find patterns, use odd and even to decide if something is possible, build magic squares, and meet a famous sequence first described by the Indian scholar Virahānka. These ideas train logical thinking that helps in every chapter.",
+   "before": [
+    "know odd and even numbers",
+    "add numbers quickly in your head"
+   ],
+   "glossary": [
+    {
+     "term": "Parity",
+     "meaning": "Whether a number is odd or even."
+    },
+    {
+     "term": "Magic square",
+     "meaning": "A grid of numbers where every row, column and diagonal has the same sum (the magic sum)."
+    },
+    {
+     "term": "Virahānka numbers",
+     "meaning": "1, 2, 3, 5, 8, 13, … Each number is the sum of the two before it. They are also called Fibonacci numbers."
+    },
+    {
+     "term": "Cryptarithm",
+     "meaning": "A sum in which digits are replaced by letters."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Parity rules",
+     "text": [
+      "even + even = even, odd + odd = even, odd + even = odd. even × anything = even, odd × odd = odd.",
+      "The sum of many numbers is odd exactly when the count of odd numbers in it is odd.",
+      "Parity can prove that something is impossible without calculating."
+     ],
+     "points": [
+      "Count the odd numbers in a sum."
+     ],
+     "example": {
+      "question": "Is 23 + 45 + 67 + 89 odd or even?",
+      "steps": [
+       "Four odd numbers.",
+       "An even count of odds gives an even sum."
+      ],
+      "answer": "Even"
+     }
+    },
+    {
+     "title": "Sums of odd numbers",
+     "text": [
+      "1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. The sum of the first n odd numbers is n².",
+      "You can see this with dots: each new odd number adds an L-shaped border to a square."
+     ],
+     "formulas": [
+      "1 + 3 + 5 + … (n terms) = n²"
+     ]
+    },
+    {
+     "title": "Magic squares",
+     "text": [
+      "For 1 to 9, the total is 45 and there are 3 rows, so the magic sum is 45 ÷ 3 = 15. The centre must be 5.",
+      "If you add the same number k to every entry, the magic sum increases by 3k. If you multiply every entry by k, the magic sum is multiplied by k."
+     ],
+     "points": [
+      "Magic sum of 1–9 square = 15, centre = 5."
+     ]
+    },
+    {
+     "title": "Virahānka–Fibonacci numbers and digit puzzles",
+     "text": [
+      "Start 1, 2 and add the last two: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. These count the rhythms of n beats made from 1-beat and 2-beat syllables.",
+      "In digit puzzles, use place value: a 2-digit number AB = 10A + B. So AB + BA = 11(A + B)."
+     ],
+     "formulas": [
+      "AB = 10A + B"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Parity",
+     "question": "Can 7 odd numbers add to 50?",
+     "steps": [
+      "7 odd numbers give an odd sum.",
+      "50 is even."
+     ],
+     "answer": "No"
+    },
+    {
+     "type": "Magic square",
+     "question": "Complete a 1–9 magic square with top row 2, 7, 6.",
+     "steps": [
+      "Magic sum 15, centre 5.",
+      "Middle row 9, 5, 1; bottom row 4, 3, 8."
+     ],
+     "answer": "2 7 6 / 9 5 1 / 4 3 8"
+    },
+    {
+     "type": "Sequence",
+     "question": "Find the 10th Virahānka number.",
+     "steps": [
+      "1, 2, 3, 5, 8, 13, 21, 34, 55, 89."
+     ],
+     "answer": "89"
+    },
+    {
+     "type": "Rhythms",
+     "question": "How many rhythms of 6 beats?",
+     "steps": [
+      "Counts 1, 2, 3, 5, 8, 13."
+     ],
+     "answer": "13"
+    },
+    {
+     "type": "Digit puzzle",
+     "question": "AB + BA = 121 and A − B = 3.",
+     "steps": [
+      "11(A + B) = 121 → A + B = 11.",
+      "A = 7, B = 4."
+     ],
+     "answer": "74"
+    },
+    {
+     "type": "Odd numbers sum",
+     "question": "Find 1 + 3 + 5 + … + 19.",
+     "steps": [
+      "There are 10 odd numbers.",
+      "10²."
+     ],
+     "answer": "100"
+    }
+   ],
+   "mistakes": [
+    "Thinking odd × even is odd.",
+    "Using 45 as the magic sum (that is the total, not the row sum).",
+    "Starting the Virahānka sequence wrongly.",
+    "Writing AB as A × B."
+   ],
+   "checklist": [
+    "State the parity rule you use.",
+    "Check every row, column and diagonal of a magic square.",
+    "Write the rule for the sequence.",
+    "Check digit answers in the original puzzle."
+   ]
+  },
+  {
+   "slug": "g7-triangles",
+   "chapter": "A Tale of Three Intersecting Lines",
+   "number": 7,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Triangles: Existence, Construction & Angle Sum",
+   "concepts": [
+    {
+     "title": "When can three lengths make a triangle?",
+     "text": "Try to build a triangle with sticks 3, 4 and 8 cm: the two short sticks cannot reach each other. A triangle exists only if each pair of sides adds to more than the third side."
+    },
+    {
+     "title": "Constructing a triangle from three sides",
+     "text": "Draw the longest side as the base. Open the compasses to the second length and draw an arc from one end. Open to the third length and draw an arc from the other end. Where the arcs cross is the third vertex."
+    },
+    {
+     "title": "Angle sum and exterior angles",
+     "text": "Through one vertex, draw a line parallel to the opposite side. Alternate angles show that the three angles fill a straight line, so they add to 180°."
+    },
+    {
+     "title": "Isosceles and equilateral triangles",
+     "text": "In an isosceles triangle, the angles opposite the equal sides (base angles) are equal. In an equilateral triangle, all angles are 60°."
+    }
+   ],
+   "formulas": [
+    "Two sides > third side",
+    "Angle sum = 180°",
+    "Exterior angle = sum of interior opposite angles",
+    "Equilateral: each angle 60°"
+   ],
+   "method": [
+    "Check existence with the triangle inequality.",
+    "Use the angle sum to form an equation.",
+    "Use isosceles properties for equal angles.",
+    "Give reasons with each step."
+   ],
+   "example": {
+    "question": "Is a triangle possible with 4, 9, 13 cm?",
+    "steps": [
+     "4 + 9 = 13, not greater than 13."
+    ],
+    "answer": "No"
+   },
+   "practice": [
+    {
+     "question": "Is a triangle possible with 2, 3, 6 cm?",
+     "answer": "No",
+     "marks": 2
+    },
+    {
+     "question": "Third angle if two are 35° and 75°.",
+     "answer": "70°",
+     "marks": 2
+    },
+    {
+     "question": "Base angles of an isosceles triangle with vertex 100°.",
+     "answer": "40° each",
+     "marks": 2
+    },
+    {
+     "question": "Can a triangle have angles 90°, 60°, 40°?",
+     "answer": "No; the sum is 190°",
+     "marks": 2
+    },
+    {
+     "question": "Exterior angle 120°, interior opposite angles equal. Find them.",
+     "answer": "60° each",
+     "marks": 2
+    },
+    {
+     "question": "Range of the third side for sides 7 and 10.",
+     "answer": "3 < x < 17",
+     "marks": 2
+    },
+    {
+     "question": "Angles x, x + 20, x + 40. Find them.",
+     "answer": "40°, 60°, 80°",
+     "marks": 3
+    },
+    {
+     "question": "One angle of a right triangle is 28°. Find the third.",
+     "answer": "62°",
+     "marks": 3
+    },
+    {
+     "question": "In triangle PQR, PQ = PR and ∠Q = 55°. Find ∠P.",
+     "answer": "70°",
+     "marks": 3
+    },
+    {
+     "question": "Construct an equilateral triangle of side 5 cm and measure an angle.",
+     "answer": "60°",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Shorter two sides must beat the longest.",
+    "Angles add to 180°.",
+    "Exterior angle = two far angles."
+   ],
+   "intro": "Three lines that cross each other in pairs make a triangle. In this chapter you find out when three lengths can make a triangle, how to construct a triangle accurately, and why the three angles always add up to 180°.",
+   "before": [
+    "use a ruler, compasses and a protractor",
+    "know parallel-line angles (Chapter 5)"
+   ],
+   "glossary": [
+    {
+     "term": "Triangle inequality",
+     "meaning": "In any triangle, the sum of any two sides is greater than the third side."
+    },
+    {
+     "term": "Scalene, isosceles, equilateral",
+     "meaning": "No sides equal; two sides equal; all three sides equal."
+    },
+    {
+     "term": "Angle sum property",
+     "meaning": "The three angles of a triangle add to 180°."
+    },
+    {
+     "term": "Exterior angle",
+     "meaning": "The angle between one side and the extension of the next side."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "When can three lengths make a triangle?",
+     "text": [
+      "Try to build a triangle with sticks 3, 4 and 8 cm: the two short sticks cannot reach each other. A triangle exists only if each pair of sides adds to more than the third side.",
+      "Quick test: check that the two shorter sides add to more than the longest side.",
+      "If two sides are a and b, the third side x must satisfy a − b < x < a + b."
+     ],
+     "points": [
+      "Two shorter sides > longest side."
+     ],
+     "formulas": [
+      "|a − b| < c < a + b"
+     ]
+    },
+    {
+     "title": "Constructing a triangle from three sides",
+     "text": [
+      "Draw the longest side as the base. Open the compasses to the second length and draw an arc from one end. Open to the third length and draw an arc from the other end. Where the arcs cross is the third vertex.",
+      "You can also construct a triangle from two sides and the angle between them, or from two angles and the side between them."
+     ],
+     "points": [
+      "Keep the arcs; they show your construction."
+     ]
+    },
+    {
+     "title": "Angle sum and exterior angles",
+     "text": [
+      "Through one vertex, draw a line parallel to the opposite side. Alternate angles show that the three angles fill a straight line, so they add to 180°.",
+      "An exterior angle equals the sum of the two interior opposite angles."
+     ],
+     "formulas": [
+      "∠A + ∠B + ∠C = 180°",
+      "Exterior angle = sum of the interior opposite angles"
+     ],
+     "example": {
+      "question": "The angles are in the ratio 2 : 3 : 4. Find them.",
+      "steps": [
+       "2x + 3x + 4x = 180.",
+       "x = 20."
+      ],
+      "answer": "40°, 60°, 80°"
+     }
+    },
+    {
+     "title": "Isosceles and equilateral triangles",
+     "text": [
+      "In an isosceles triangle, the angles opposite the equal sides (base angles) are equal. In an equilateral triangle, all angles are 60°.",
+      "The largest angle is opposite the longest side, and the smallest angle is opposite the shortest side."
+     ],
+     "points": [
+      "Equal sides ↔ equal opposite angles."
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Existence",
+     "question": "Is a triangle possible with 4, 9, 13 cm?",
+     "steps": [
+      "4 + 9 = 13, not greater than 13."
+     ],
+     "answer": "No"
+    },
+    {
+     "type": "Ratio of angles",
+     "question": "Angles in ratio 2 : 3 : 4.",
+     "steps": [
+      "9x = 180, x = 20."
+     ],
+     "answer": "40°, 60°, 80°"
+    },
+    {
+     "type": "Isosceles",
+     "question": "Vertex angle 40°. Base angles?",
+     "steps": [
+      "(180 − 40) ÷ 2."
+     ],
+     "answer": "70° each"
+    },
+    {
+     "type": "Exterior angle",
+     "question": "Exterior 110°, one opposite interior 45°.",
+     "steps": [
+      "Other = 65°.",
+      "Third = 70°."
+     ],
+     "answer": "65° and 70°"
+    },
+    {
+     "type": "Range of a side",
+     "question": "Sides 6 cm and 9 cm. Range of the third side.",
+     "steps": [
+      "9 − 6 < x < 9 + 6."
+     ],
+     "answer": "3 cm < x < 15 cm"
+    },
+    {
+     "type": "Construction",
+     "question": "Construct a triangle with sides 5, 6, 7 cm.",
+     "steps": [
+      "Base 6 cm; arcs of 5 cm and 7 cm from the ends.",
+      "Join to the crossing point."
+     ],
+     "answer": "Triangle drawn with arcs shown"
+    }
+   ],
+   "mistakes": [
+    "Checking only one pair of sides.",
+    "Using ≥ instead of > in the triangle inequality.",
+    "Forgetting that base angles are equal in an isosceles triangle.",
+    "Erasing construction arcs."
+   ],
+   "checklist": [
+    "Write the inequality check in full.",
+    "Form an equation with the angle sum.",
+    "Write units: cm, °.",
+    "Keep arcs in constructions."
+   ]
+  },
+  {
+   "slug": "g7-working-with-fractions",
+   "chapter": "Working with Fractions",
+   "number": 8,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Multiplying & Dividing Fractions",
+   "concepts": [
+    {
+     "title": "Fraction of a quantity",
+     "text": "To find 2/5 of 45, divide 45 into 5 equal parts (9 each) and take 2 parts: 18. This is the same as 2/5 × 45."
+    },
+    {
+     "title": "Multiplying fractions",
+     "text": "Multiply the numerators and multiply the denominators: a/b × c/d = (a × c)/(b × d). Simplify before multiplying when you can."
+    },
+    {
+     "title": "Dividing fractions",
+     "text": "Dividing by a fraction asks 'how many of these fit?'. 12 ÷ 3/4 asks how many 3/4 m pieces fit in 12 m: 16."
+    },
+    {
+     "title": "Word problems with fractions",
+     "text": "'Of the rest' means first find what is left, then take the fraction of that."
+    }
+   ],
+   "formulas": [
+    "a/b × c/d = ac/bd",
+    "a/b ÷ c/d = a/b × d/c",
+    "Reciprocal of a/b is b/a"
+   ],
+   "method": [
+    "Change mixed numbers to improper fractions.",
+    "Change 'of' to ×, and ÷ to × reciprocal.",
+    "Cancel common factors.",
+    "Simplify and write as a mixed number if needed."
+   ],
+   "example": {
+    "question": "Find 2/5 of 45.",
+    "steps": [
+     "45 ÷ 5 = 9.",
+     "9 × 2."
+    ],
+    "answer": "18"
+   },
+   "practice": [
+    {
+     "question": "Find 3/8 of 64.",
+     "answer": "24",
+     "marks": 2
+    },
+    {
+     "question": "Find 4/7 × 21/8.",
+     "answer": "3/2",
+     "marks": 2
+    },
+    {
+     "question": "Reciprocal of 2 1/2.",
+     "answer": "2/5",
+     "marks": 2
+    },
+    {
+     "question": "Find 7/10 ÷ 7/5.",
+     "answer": "1/2",
+     "marks": 2
+    },
+    {
+     "question": "Find 1 1/4 × 2 2/5.",
+     "answer": "3",
+     "marks": 2
+    },
+    {
+     "question": "How many 1/3 kg packets from 5 kg?",
+     "answer": "15",
+     "marks": 2
+    },
+    {
+     "question": "Find 2/3 of 3/4 of 120.",
+     "answer": "60",
+     "marks": 3
+    },
+    {
+     "question": "A tank holds 40 L. It is 3/5 full. How many litres more fill it?",
+     "answer": "16 L",
+     "marks": 3
+    },
+    {
+     "question": "Simplify (3/4 − 1/3) ÷ 5/6.",
+     "answer": "1/2",
+     "marks": 3
+    },
+    {
+     "question": "A plot of 3 1/2 acres is shared equally by 4 brothers. Each gives 1/7 of his share to a school. How much does the school get?",
+     "answer": "1/2 acre",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Multiply across; divide by flipping.",
+    "'of' means ×.",
+    "Mixed → improper first."
+   ],
+   "intro": "You already add and subtract fractions. In this chapter you learn to multiply and divide them, and to answer everyday questions such as 'how much is 3/4 of 2 hours?' and 'how many 3/4 m pieces from 12 m?'",
+   "before": [
+    "find equivalent fractions and simplify",
+    "change mixed numbers to improper fractions"
+   ],
+   "glossary": [
+    {
+     "term": "Proper fraction",
+     "meaning": "Numerator smaller than denominator, such as 3/4."
+    },
+    {
+     "term": "Mixed number",
+     "meaning": "A whole number and a fraction, such as 2 1/3 = 7/3."
+    },
+    {
+     "term": "Reciprocal",
+     "meaning": "The fraction turned upside down: the reciprocal of 7/9 is 9/7. A number × its reciprocal = 1."
+    },
+    {
+     "term": "'of'",
+     "meaning": "'of' means multiply: 2/5 of 45 = 2/5 × 45."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Fraction of a quantity",
+     "text": [
+      "To find 2/5 of 45, divide 45 into 5 equal parts (9 each) and take 2 parts: 18. This is the same as 2/5 × 45.",
+      "Change units if needed: 3/4 of 2 hours = 3/4 of 120 minutes = 90 minutes."
+     ]
+    },
+    {
+     "title": "Multiplying fractions",
+     "text": [
+      "Multiply the numerators and multiply the denominators: a/b × c/d = (a × c)/(b × d). Simplify before multiplying when you can.",
+      "Area picture: 2/3 × 3/5 is the shaded part of a rectangle split into 3 × 5 = 15 small parts, with 2 × 3 = 6 shaded: 6/15 = 2/5.",
+      "For mixed numbers, change them to improper fractions first."
+     ],
+     "points": [
+      "Cancel common factors first."
+     ],
+     "formulas": [
+      "a/b × c/d = ac/bd"
+     ],
+     "example": {
+      "question": "Multiply 2 1/3 × 1 1/2.",
+      "steps": [
+       "7/3 × 3/2.",
+       "Cancel 3: 7/2."
+      ],
+      "answer": "3 1/2"
+     }
+    },
+    {
+     "title": "Dividing fractions",
+     "text": [
+      "Dividing by a fraction asks 'how many of these fit?'. 12 ÷ 3/4 asks how many 3/4 m pieces fit in 12 m: 16.",
+      "Rule: to divide by a fraction, multiply by its reciprocal. a/b ÷ c/d = a/b × d/c."
+     ],
+     "points": [
+      "Keep, change, flip: keep the first, change ÷ to ×, flip the second."
+     ],
+     "formulas": [
+      "a/b ÷ c/d = a/b × d/c"
+     ],
+     "example": {
+      "question": "Divide 5/6 ÷ 10/9.",
+      "steps": [
+       "5/6 × 9/10.",
+       "= 45/60."
+      ],
+      "answer": "3/4"
+     }
+    },
+    {
+     "title": "Word problems with fractions",
+     "text": [
+      "'Of the rest' means first find what is left, then take the fraction of that.",
+      "Scaling a recipe: multiply each quantity by (new number of people) ÷ (old number of people)."
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Fraction of a quantity",
+     "question": "Find 2/5 of 45.",
+     "steps": [
+      "45 ÷ 5 = 9.",
+      "9 × 2."
+     ],
+     "answer": "18"
+    },
+    {
+     "type": "Mixed numbers",
+     "question": "2 1/3 × 1 1/2.",
+     "steps": [
+      "7/3 × 3/2 = 7/2."
+     ],
+     "answer": "3 1/2"
+    },
+    {
+     "type": "Division",
+     "question": "How many 3/4 m pieces from 12 m?",
+     "steps": [
+      "12 × 4/3."
+     ],
+     "answer": "16"
+    },
+    {
+     "type": "Car and petrol",
+     "question": "14 1/2 km per litre, 6 3/4 litres.",
+     "steps": [
+      "29/2 × 27/4 = 783/8."
+     ],
+     "answer": "97 7/8 km"
+    },
+    {
+     "type": "Of the rest",
+     "question": "₹600: 1/3 on books, 1/4 of the rest on food. Fraction left?",
+     "steps": [
+      "Books ₹200, rest ₹400.",
+      "Food ₹100, left ₹300."
+     ],
+     "answer": "1/2"
+    },
+    {
+     "type": "Recipe scaling",
+     "question": "2/3 cup sugar for 4 people. Sugar for 6 people?",
+     "steps": [
+      "2/3 × 6/4."
+     ],
+     "answer": "1 cup"
+    }
+   ],
+   "mistakes": [
+    "Adding denominators when multiplying.",
+    "Flipping the first fraction instead of the second.",
+    "Not changing mixed numbers to improper fractions.",
+    "Taking 'of the rest' of the original amount."
+   ],
+   "checklist": [
+    "Show the reciprocal step.",
+    "Cancel before multiplying.",
+    "Write the answer in lowest terms.",
+    "Use units."
+   ]
+  },
+  {
+   "slug": "g7-geometric-twins",
+   "chapter": "Geometric Twins",
+   "number": 9,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Congruent Figures & Triangle Congruence",
+   "concepts": [
+    {
+     "title": "Congruent figures",
+     "text": "Two figures are congruent if one can be placed exactly on the other. Two line segments are congruent if they have the same length; two angles are congruent if they have the same measure."
+    },
+    {
+     "title": "Conditions for congruent triangles",
+     "text": "SSS: three sides equal. SAS: two sides and the angle between them equal. ASA: two angles and the side between them equal. AAS: two angles and a side not between them equal. RHS: in right triangles, the hypotenuse and one side equal."
+    },
+    {
+     "title": "Writing a congruence proof",
+     "text": "List three pairs of equal parts, with a reason for each (given, common side, vertically opposite angles, alternate angles)."
+    },
+    {
+     "title": "Isosceles triangles",
+     "text": "If two sides of a triangle are equal, the angles opposite them are equal. This can be proved by joining the vertex to the mid-point of the base (SSS)."
+    }
+   ],
+   "formulas": [
+    "SSS, SAS, ASA, AAS, RHS",
+    "AAA and SSA do not prove congruence",
+    "CPCT"
+   ],
+   "method": [
+    "Name the two triangles.",
+    "Write three pairs of equal parts with reasons.",
+    "State the condition.",
+    "Use CPCT for the result."
+   ],
+   "example": {
+    "question": "AB = PQ, BC = QR, ∠B = ∠Q.",
+    "steps": [
+     "The angle is between the two sides."
+    ],
+    "answer": "SAS"
+   },
+   "practice": [
+    {
+     "question": "ΔABC ≅ ΔXYZ. Write the side equal to BC.",
+     "answer": "YZ",
+     "marks": 2
+    },
+    {
+     "question": "Which condition: three sides equal?",
+     "answer": "SSS",
+     "marks": 2
+    },
+    {
+     "question": "Can AAA prove congruence?",
+     "answer": "No",
+     "marks": 2
+    },
+    {
+     "question": "ΔPQR ≅ ΔLMN, ∠P = 40°, ∠M = 75°. Find ∠N.",
+     "answer": "65°",
+     "marks": 2
+    },
+    {
+     "question": "Isosceles triangle, base angle 50°. Find the vertex angle.",
+     "answer": "80°",
+     "marks": 2
+    },
+    {
+     "question": "Name the condition: ∠A = ∠P, ∠B = ∠Q, BC = QR.",
+     "answer": "AAS",
+     "marks": 2
+    },
+    {
+     "question": "In ΔABC, AB = AC and ∠A = 40°. Find ∠B.",
+     "answer": "70°",
+     "marks": 3
+    },
+    {
+     "question": "Prove that the diagonal of a square divides it into two congruent triangles.",
+     "answer": "SSS (or SAS) with the diagonal common",
+     "marks": 3
+    },
+    {
+     "question": "Two triangles have sides 4, 5, 6 cm and 6, 4, 5 cm. Are they congruent?",
+     "answer": "Yes, SSS",
+     "marks": 3
+    },
+    {
+     "question": "AB = AC, D is the mid-point of BC. Prove that AD ⟂ BC.",
+     "answer": "ΔABD ≅ ΔACD (SSS), so ∠ADB = ∠ADC = 90°",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "SAS needs the included angle.",
+    "AAA gives the same shape only.",
+    "Order of letters = matching parts."
+   ],
+   "intro": "Two figures that match exactly, like two copies of the same coin, are 'geometric twins'. Mathematicians call them congruent. In this chapter you learn how to check that two triangles are congruent using only three measurements, and how to use this to prove facts.",
+   "before": [
+    "know the angle sum of a triangle",
+    "know vertically opposite and alternate angles"
+   ],
+   "glossary": [
+    {
+     "term": "Congruent",
+     "meaning": "Same shape and same size. One figure fits exactly on the other."
+    },
+    {
+     "term": "≅",
+     "meaning": "The symbol for 'is congruent to'."
+    },
+    {
+     "term": "Corresponding parts",
+     "meaning": "Sides and angles that match. In ΔABC ≅ ΔPQR, A ↔ P, B ↔ Q, C ↔ R."
+    },
+    {
+     "term": "CPCT",
+     "meaning": "Corresponding parts of congruent triangles are equal."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Congruent figures",
+     "text": [
+      "Two figures are congruent if one can be placed exactly on the other. Two line segments are congruent if they have the same length; two angles are congruent if they have the same measure.",
+      "The order of letters matters. ΔABC ≅ ΔPQR means AB = PQ, BC = QR, CA = RP and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R."
+     ],
+     "points": [
+      "Match the vertices in order."
+     ]
+    },
+    {
+     "title": "Conditions for congruent triangles",
+     "text": [
+      "SSS: three sides equal. SAS: two sides and the angle between them equal. ASA: two angles and the side between them equal. AAS: two angles and a side not between them equal. RHS: in right triangles, the hypotenuse and one side equal.",
+      "AAA is NOT a condition: equal angles give the same shape but can give different sizes.",
+      "SSA (angle not between the two sides) is also not a condition in general."
+     ],
+     "points": [
+      "The angle in SAS must be between the two sides."
+     ]
+    },
+    {
+     "title": "Writing a congruence proof",
+     "text": [
+      "List three pairs of equal parts, with a reason for each (given, common side, vertically opposite angles, alternate angles).",
+      "Name the condition and write the congruence with matching letters. Then use CPCT to state the required result."
+     ],
+     "example": {
+      "question": "AB = AD, CB = CD in ABCD. Prove ∠B = ∠D.",
+      "steps": [
+       "AB = AD (given), CB = CD (given), AC common.",
+       "ΔABC ≅ ΔADC (SSS).",
+       "∠B = ∠D (CPCT)."
+      ],
+      "answer": "Proved"
+     }
+    },
+    {
+     "title": "Isosceles triangles",
+     "text": [
+      "If two sides of a triangle are equal, the angles opposite them are equal. This can be proved by joining the vertex to the mid-point of the base (SSS).",
+      "If two angles are equal, the sides opposite them are equal."
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Name the condition",
+     "question": "AB = PQ, BC = QR, ∠B = ∠Q.",
+     "steps": [
+      "The angle is between the two sides."
+     ],
+     "answer": "SAS"
+    },
+    {
+     "type": "Corresponding angles",
+     "question": "ΔABC ≅ ΔDEF, ∠A = 50°, ∠E = 70°.",
+     "steps": [
+      "∠B = ∠E = 70°.",
+      "∠C = 60°, ∠F = 60°."
+     ],
+     "answer": "70°, 60°, 60°"
+    },
+    {
+     "type": "Isosceles",
+     "question": "AB = AC, ∠B = 65°.",
+     "steps": [
+      "∠C = 65°.",
+      "∠A = 50°."
+     ],
+     "answer": "65° and 50°"
+    },
+    {
+     "type": "Kite proof",
+     "question": "Prove ∠B = ∠D in kite ABCD with AB = AD, CB = CD.",
+     "steps": [
+      "SSS with AC common."
+     ],
+     "answer": "∠B = ∠D by CPCT"
+    },
+    {
+     "type": "Bisecting segments",
+     "question": "AB and CD bisect each other at O. Prove AC = BD.",
+     "steps": [
+      "SAS with vertically opposite angles."
+     ],
+     "answer": "AC = BD by CPCT"
+    },
+    {
+     "type": "Right triangles",
+     "question": "Hypotenuse 10 cm and one side 6 cm in both.",
+     "steps": [
+      "Right angle, hypotenuse, side."
+     ],
+     "answer": "Congruent by RHS"
+    }
+   ],
+   "mistakes": [
+    "Using AAA as a congruence condition.",
+    "Writing vertices in the wrong order.",
+    "Using SAS when the angle is not between the sides.",
+    "Not giving reasons."
+   ],
+   "checklist": [
+    "Write reasons in brackets.",
+    "Match vertices in order.",
+    "Name the condition.",
+    "Finish with CPCT."
+   ]
+  },
+  {
+   "slug": "g7-integers",
+   "chapter": "Operations with Integers",
+   "number": 10,
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "subtitle": "Multiplying & Dividing Integers",
+   "concepts": [
+    {
+     "title": "Adding and subtracting (revision)",
+     "text": "Adding a negative number moves left on the number line. Subtracting a negative number is the same as adding the positive: 8 − (−7) = 8 + 7."
+    },
+    {
+     "title": "Multiplying integers",
+     "text": "Positive × positive = positive. Positive × negative = negative: 4 × (−6) means four groups of −6 = −24."
+    },
+    {
+     "title": "Dividing integers",
+     "text": "Division follows the same sign rules: (−48) ÷ (−6) = 8 and (−48) ÷ 6 = −8."
+    },
+    {
+     "title": "Properties and real-life problems",
+     "text": "Multiplication of integers is commutative and associative, and it distributes over addition: a × (b + c) = a × b + a × c."
+    }
+   ],
+   "formulas": [
+    "(+)(+) = +, (−)(−) = +, (+)(−) = −",
+    "Same rules for ÷",
+    "a − (−b) = a + b",
+    "Division by 0 is not defined"
+   ],
+   "method": [
+    "Decide the sign first.",
+    "Then work with the sizes of the numbers.",
+    "Use the distributive property for smart calculation.",
+    "Check with a number-line picture."
+   ],
+   "example": {
+    "question": "Find (−15) + 8 − (−7).",
+    "steps": [
+     "−15 + 8 + 7."
+    ],
+    "answer": "0"
+   },
+   "practice": [
+    {
+     "question": "Find (−9) × (−7).",
+     "answer": "63",
+     "marks": 2
+    },
+    {
+     "question": "Find 56 ÷ (−8).",
+     "answer": "−7",
+     "marks": 2
+    },
+    {
+     "question": "Find (−4) × 3 × (−5).",
+     "answer": "60",
+     "marks": 2
+    },
+    {
+     "question": "Find −18 − (−25).",
+     "answer": "7",
+     "marks": 2
+    },
+    {
+     "question": "Find (−2)⁴.",
+     "answer": "16",
+     "marks": 2
+    },
+    {
+     "question": "Find (−1)⁹⁹.",
+     "answer": "−1",
+     "marks": 2
+    },
+    {
+     "question": "Find (−36) ÷ (−4) × (−2).",
+     "answer": "−18",
+     "marks": 3
+    },
+    {
+     "question": "A diver at −30 m goes down 4 m every minute for 5 minutes. Find the new depth.",
+     "answer": "−50 m",
+     "marks": 3
+    },
+    {
+     "question": "Find 15 × (−8) + 15 × 18 using the distributive property.",
+     "answer": "150",
+     "marks": 3
+    },
+    {
+     "question": "A shop makes a profit of ₹40 on each pen and a loss of ₹15 on each notebook. It sells 30 pens and 50 notebooks. Find the net result.",
+     "answer": "Profit ₹450",
+     "marks": 4
+    }
+   ],
+   "tips": [
+    "Even number of negatives → positive.",
+    "Subtracting a negative → add.",
+    "Never divide by zero."
+   ],
+   "intro": "Integers include negative numbers such as −8, used for temperatures below zero, debts, and floors below ground. You already add and subtract integers. In this chapter you learn the sign rules for multiplying and dividing them, and why those rules make sense.",
+   "before": [
+    "add and subtract integers on a number line",
+    "know that subtracting a negative is adding"
+   ],
+   "glossary": [
+    {
+     "term": "Integer",
+     "meaning": "A whole number that can be positive, negative or zero: …, −2, −1, 0, 1, 2, …"
+    },
+    {
+     "term": "Additive inverse",
+     "meaning": "The number that adds to give 0: the inverse of −7 is 7."
+    },
+    {
+     "term": "Product",
+     "meaning": "The result of multiplication."
+    },
+    {
+     "term": "Quotient",
+     "meaning": "The result of division."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Adding and subtracting (revision)",
+     "text": [
+      "Adding a negative number moves left on the number line. Subtracting a negative number is the same as adding the positive: 8 − (−7) = 8 + 7.",
+      "Use the 'tokens' idea: positive and negative tokens cancel in pairs."
+     ],
+     "points": [
+      "a − (−b) = a + b"
+     ]
+    },
+    {
+     "title": "Multiplying integers",
+     "text": [
+      "Positive × positive = positive. Positive × negative = negative: 4 × (−6) means four groups of −6 = −24.",
+      "Negative × negative = positive. The pattern shows why: (−6) × 2 = −12, (−6) × 1 = −6, (−6) × 0 = 0, (−6) × (−1) = 6 (the answers go up by 6 each time).",
+      "For many factors: count the negative signs. Even count → positive; odd count → negative."
+     ],
+     "points": [
+      "Same signs → positive; different signs → negative."
+     ],
+     "example": {
+      "question": "Find (−3) × (−2) × (−5).",
+      "steps": [
+       "Three negatives: the product is negative.",
+       "3 × 2 × 5 = 30."
+      ],
+      "answer": "−30"
+     }
+    },
+    {
+     "title": "Dividing integers",
+     "text": [
+      "Division follows the same sign rules: (−48) ÷ (−6) = 8 and (−48) ÷ 6 = −8.",
+      "0 ÷ (non-zero) = 0. Division by 0 is not defined."
+     ],
+     "points": [
+      "Never divide by 0."
+     ]
+    },
+    {
+     "title": "Properties and real-life problems",
+     "text": [
+      "Multiplication of integers is commutative and associative, and it distributes over addition: a × (b + c) = a × b + a × c.",
+      "Use integers for scores with penalties, temperatures, heights above and below sea level, and lifts."
+     ],
+     "formulas": [
+      "a × (b + c) = ab + ac"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "type": "Mixed signs",
+     "question": "Find (−15) + 8 − (−7).",
+     "steps": [
+      "−15 + 8 + 7."
+     ],
+     "answer": "0"
+    },
+    {
+     "type": "Two products",
+     "question": "(−12) × 5 + (−8) × (−4).",
+     "steps": [
+      "−60 + 32."
+     ],
+     "answer": "−28"
+    },
+    {
+     "type": "Chain division",
+     "question": "(−144) ÷ 12 ÷ (−3).",
+     "steps": [
+      "−12 ÷ (−3)."
+     ],
+     "answer": "4"
+    },
+    {
+     "type": "Quiz score",
+     "question": "8 correct (+5), 6 wrong (−2).",
+     "steps": [
+      "40 − 12."
+     ],
+     "answer": "28"
+    },
+    {
+     "type": "Distributive",
+     "question": "(−25) × 37 + (−25) × 63.",
+     "steps": [
+      "(−25) × 100."
+     ],
+     "answer": "−2,500"
+    },
+    {
+     "type": "Average temperature",
+     "question": "−3, 2, −5, 4, −8.",
+     "steps": [
+      "Sum −10.",
+      "÷ 5."
+     ],
+     "answer": "−2°C"
+    }
+   ],
+   "mistakes": [
+    "Thinking (−)(−) is negative.",
+    "Treating 8 − (−7) as 1.",
+    "Saying a number ÷ 0 = 0.",
+    "Counting negative signs wrongly in long products."
+   ],
+   "checklist": [
+    "Write the sign rule you use.",
+    "Put negative numbers in brackets.",
+    "Check the sign at the end.",
+    "Give units in word problems."
+   ]
+  }
+ ]
+}
