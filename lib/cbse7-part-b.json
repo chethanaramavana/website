@@ -522,20 +522,20 @@
    "subtitle": "Parity, Magic Squares & Virahānka Numbers",
    "concepts": [
     {
-     "title": "Parity rules",
-     "text": "even + even = even, odd + odd = even, odd + even = odd. even × anything = even, odd × odd = odd."
+     "title": "Odd and even: the pairing test",
+     "text": "Count the odd numbers in a sum. An even count of odd numbers gives an even sum. An odd count gives an odd sum."
     },
     {
-     "title": "Sums of odd numbers",
-     "text": "1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. The sum of the first n odd numbers is n²."
+     "title": "Proving 'impossible' with parity",
+     "text": "To show that something is impossible, look for an odd/even mismatch."
+    },
+    {
+     "title": "Adding odd numbers makes squares",
+     "text": "The sum of the first n odd numbers is n²."
     },
     {
      "title": "Magic squares",
-     "text": "For 1 to 9, the total is 45 and there are 3 rows, so the magic sum is 45 ÷ 3 = 15. The centre must be 5."
-    },
-    {
-     "title": "Virahānka–Fibonacci numbers and digit puzzles",
-     "text": "Start 1, 2 and add the last two: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. These count the rhythms of n beats made from 1-beat and 2-beat syllables."
+     "text": "Magic sum = total of all numbers ÷ number of rows. In a 1–9 square, the centre is always 5."
     }
    ],
    "formulas": [
@@ -615,78 +615,350 @@
     "Magic sum = total ÷ 3.",
     "Each Virahānka number = sum of the previous two."
    ],
-   "intro": "This chapter treats you as a number detective. You find patterns, use odd and even to decide if something is possible, build magic squares, and meet a famous sequence first described by the Indian scholar Virahānka. These ideas train logical thinking that helps in every chapter.",
+   "intro": "Thatha loves puzzles. Every evening he gives Anu a number riddle: 'Can five odd numbers add up to 20?' 'Can you fill a grid so that every line has the same sum?' You use odd and even numbers, magic squares and a famous Indian number pattern to solve puzzles without long calculations.",
    "before": [
     "know odd and even numbers",
     "add numbers quickly in your head"
    ],
-   "glossary": [
-    {
-     "term": "Parity",
-     "meaning": "Whether a number is odd or even."
-    },
-    {
-     "term": "Magic square",
-     "meaning": "A grid of numbers where every row, column and diagonal has the same sum (the magic sum)."
-    },
-    {
-     "term": "Virahānka numbers",
-     "meaning": "1, 2, 3, 5, 8, 13, … Each number is the sum of the two before it. They are also called Fibonacci numbers."
-    },
-    {
-     "term": "Cryptarithm",
-     "meaning": "A sum in which digits are replaced by letters."
-    }
-   ],
    "lessons": [
     {
-     "title": "Parity rules",
+     "title": "Numbers can tell us things",
+     "story": "Ten children stand in a line. Each child says how many children in front of them are taller. The first child always says 0. From these numbers alone, Anu can find the tallest child!",
      "text": [
-      "even + even = even, odd + odd = even, odd + even = odd. even × anything = even, odd × odd = odd.",
-      "The sum of many numbers is odd exactly when the count of odd numbers in it is odd.",
-      "Parity can prove that something is impossible without calculating."
+      "The tallest child sees nobody taller in front, so says 0. A child who says 0 is taller than everyone in front.",
+      "A similar idea: in a grid of numbers, a supercell is a number that is bigger than all its neighbours (left, right, above, below). The smallest number in a grid can never be a supercell."
      ],
-     "points": [
-      "Count the odd numbers in a sum."
-     ],
-     "example": {
-      "question": "Is 23 + 45 + 67 + 89 odd or even?",
-      "steps": [
-       "Four odd numbers.",
-       "An even count of odds gives an even sum."
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "12",
+        "45",
+        "9"
+       ],
+       [
+        "30",
+        "18",
+        "52"
+       ],
+       [
+        "7",
+        "25",
+        "14"
+       ]
       ],
-      "answer": "Even"
-     }
+      "gold": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "caption": "Gold cells are supercells: each is bigger than all its neighbours."
+     },
+     "think": {
+      "question": "Is 18 (centre) a supercell in this grid?",
+      "answer": "No. Its neighbours 45, 30, 52 and 25 are bigger."
+     },
+     "aha": "Numbers can carry information. Read what a number says about its position or neighbours."
     },
     {
-     "title": "Sums of odd numbers",
+     "title": "Odd and even: the pairing test",
+     "story": "Anu has 7 chocolates and wants to share them with her brother so that each gets the same number. She makes pairs, and one chocolate is left over.",
      "text": [
-      "1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. The sum of the first n odd numbers is n².",
-      "You can see this with dots: each new odd number adds an L-shaped border to a square."
+      "A number is even if its objects can be put into pairs with nothing left over. It is odd if exactly one object is left. 6 = 3 pairs (even). 7 = 3 pairs + 1 (odd).",
+      "Add two odd numbers: the two left-over objects make a new pair, so odd + odd = even. Odd + even leaves one object alone, so it is odd. Even + even is even."
      ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Adding",
+       "lines": [
+        "even + even = even",
+        "odd + odd = even",
+        "odd + even = odd"
+       ]
+      },
+      "right": {
+       "title": "Multiplying",
+       "lines": [
+        "even × anything = even",
+        "odd × odd = odd"
+       ]
+      },
+      "caption": "The parity rules come from pairing objects."
+     },
+     "think": {
+      "question": "Is 23 + 45 + 67 + 89 odd or even?",
+      "answer": "Four odd numbers make two pairs of 'left-overs', so the sum is even (it is 224)."
+     },
+     "aha": "Count the odd numbers in a sum. An even count of odd numbers gives an even sum. An odd count gives an odd sum."
+    },
+    {
+     "title": "Proving 'impossible' with parity",
+     "story": "Thatha asks, 'Can you choose 3 numbers from 1, 3, 5, 7, 9 that add up to 20?' Anu tries for ten minutes and fails. Thatha says, 'You can stop. It is impossible, and I can prove it in one line.'",
+     "text": [
+      "All five numbers are odd. Three odd numbers give an odd sum, because the count of odd numbers (3) is odd. 20 is even. An odd sum can never be 20.",
+      "This is the power of parity: you do not need to try every case. One rule settles the question."
+     ],
+     "picture": {
+      "kind": "tokens",
+      "positive": 3,
+      "negative": 0,
+      "caption": "Three odd numbers: two 'left-over' ones pair up, and one is always alone, so the sum is odd."
+     },
+     "think": {
+      "question": "Can 7 odd numbers add up to 50?",
+      "answer": "No. 7 odd numbers give an odd sum, and 50 is even."
+     },
+     "aha": "To show that something is impossible, look for an odd/even mismatch."
+    },
+    {
+     "title": "Parity of expressions",
+     "story": "Ravi says, 'n × (n + 1) is always even.' Anu tries 3 × 4 = 12, 6 × 7 = 42, 9 × 10 = 90. It works! But why?",
+     "text": [
+      "2n is always even (it is 2 times a number), and 2n + 1 is always odd. So any even number can be written 2n, and any odd number 2n + 1.",
+      "n and n + 1 are consecutive numbers, so one of them is even. An even number times anything is even, so n(n + 1) is always even.",
+      "In a grid: a rectangle of a × b small squares has an odd number of squares only if both a and b are odd."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Always even",
+       "lines": [
+        "2n",
+        "n(n + 1)",
+        "odd + odd"
+       ]
+      },
+      "right": {
+       "title": "Always odd",
+       "lines": [
+        "2n + 1",
+        "odd × odd",
+        "even + odd"
+       ]
+      },
+      "caption": "Parity of expressions."
+     },
+     "think": {
+      "question": "Is n² + n always even?",
+      "answer": "Yes: n² + n = n(n + 1)."
+     },
+     "aha": "Even numbers have the form 2n, odd numbers 2n + 1. Use these forms to prove parity facts."
+    },
+    {
+     "title": "Adding odd numbers makes squares",
+     "story": "Anu arranges buttons. She puts 1 button, then adds 3 around it in an L shape, then 5 more, then 7 more. Each time she gets a perfect square!",
+     "text": [
+      "1 = 1 × 1. 1 + 3 = 4 = 2 × 2. 1 + 3 + 5 = 9 = 3 × 3. 1 + 3 + 5 + 7 = 16 = 4 × 4.",
+      "Each new odd number is an L-shaped border that makes the square one size bigger. So the sum of the first n odd numbers is n × n = n²."
+     ],
+     "picture": {
+      "kind": "area",
+      "rows": 4,
+      "cols": 4,
+      "shadeRows": 3,
+      "shadeCols": 3,
+      "label": "1 + 3 + 5 + 7 = 4 × 4",
+      "caption": "The gold 3 × 3 square plus a blue L of 7 makes a 4 × 4 square."
+     },
+     "think": {
+      "question": "Find 1 + 3 + 5 + … + 19 without adding.",
+      "answer": "There are 10 odd numbers, so the sum is 10² = 100."
+     },
+     "aha": "The sum of the first n odd numbers is n².",
      "formulas": [
       "1 + 3 + 5 + … (n terms) = n²"
      ]
     },
     {
      "title": "Magic squares",
+     "story": "Thatha draws a 3 × 3 grid. 'Put the numbers 1 to 9 in it, so that every row, every column and both diagonals add up to the same number.'",
      "text": [
-      "For 1 to 9, the total is 45 and there are 3 rows, so the magic sum is 45 ÷ 3 = 15. The centre must be 5.",
-      "If you add the same number k to every entry, the magic sum increases by 3k. If you multiply every entry by k, the magic sum is multiplied by k."
+      "First find the magic sum. 1 + 2 + … + 9 = 45. The 3 rows share this total equally, so each row adds to 45 ÷ 3 = 15.",
+      "The centre number is used by 4 lines (a row, a column and two diagonals). It must be 5, the middle number. Then pair the other numbers around it: 2 and 8, 4 and 6, 1 and 9, 3 and 7 (each pair adds to 10)."
      ],
-     "points": [
-      "Magic sum of 1–9 square = 15, centre = 5."
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "2",
+        "7",
+        "6"
+       ],
+       [
+        "9",
+        "5",
+        "1"
+       ],
+       [
+        "4",
+        "3",
+        "8"
+       ]
+      ],
+      "gold": [
+       [
+        1,
+        1
+       ]
+      ],
+      "caption": "Every row, column and diagonal adds to 15. The centre is 5."
+     },
+     "think": {
+      "question": "If you add 1 to every number of this magic square, what is the new magic sum?",
+      "answer": "Each line has 3 numbers, so the sum grows by 3: 18."
+     },
+     "aha": "Magic sum = total of all numbers ÷ number of rows. In a 1–9 square, the centre is always 5."
+    },
+    {
+     "title": "A famous 4 × 4 magic square",
+     "story": "At the Parshvanath temple in Khajuraho, carved about 1,000 years ago, there is a 4 × 4 square of numbers. Every row, column and diagonal adds up to 34!",
+     "text": [
+      "It uses the numbers 1 to 16. Their total is 136, and there are 4 rows, so the magic sum is 136 ÷ 4 = 34. This square is called the Chautisa Yantra ('chautis' means 34).",
+      "In 1356, the Indian mathematician Narayana Pandita wrote methods to make magic squares of many sizes. Magic squares appear in art and culture all over the world."
+     ],
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "7",
+        "12",
+        "1",
+        "14"
+       ],
+       [
+        "2",
+        "13",
+        "8",
+        "11"
+       ],
+       [
+        "16",
+        "3",
+        "10",
+        "5"
+       ],
+       [
+        "9",
+        "6",
+        "15",
+        "4"
+       ]
+      ],
+      "gold": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "caption": "The Chautisa Yantra: every row, column and diagonal adds to 34."
+     },
+     "think": {
+      "question": "Check the gold diagonal of the Chautisa Yantra.",
+      "answer": "7 + 13 + 10 + 4 = 34."
+     },
+     "aha": "Magic sum = total of all numbers ÷ number of rows. For 1 to 16 it is 34."
+    },
+    {
+     "title": "Virahānka's rhythm numbers",
+     "story": "More than 1,300 years ago, the scholar Virahānka asked: how many rhythms of n beats can you make from short syllables (1 beat) and long syllables (2 beats)?",
+     "text": [
+      "1 beat: only S (1 way). 2 beats: SS or L (2 ways). 3 beats: SSS, SL, LS (3 ways). 4 beats: 5 ways.",
+      "Every rhythm ends with S or with L. If it ends with S, the rest is a rhythm of (n − 1) beats. If it ends with L, the rest is a rhythm of (n − 2) beats. So each count is the sum of the two counts before it: 1, 2, 3, 5, 8, 13, 21, …"
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "1 beat: 1",
+       "2 beats: 2",
+       "3 beats: 1 + 2 = 3",
+       "4 beats: 2 + 3 = 5",
+       "5 beats: 3 + 5 = 8"
+      ],
+      "caption": "Each number is the sum of the two before it."
+     },
+     "think": {
+      "question": "How many rhythms of 6 beats are there?",
+      "answer": "5 + 8 = 13."
+     },
+     "aha": "Virahānka numbers: 1, 2, 3, 5, 8, 13, … Each number is the sum of the previous two.",
+     "formulas": [
+      "Vₙ = Vₙ₋₁ + Vₙ₋₂"
      ]
     },
     {
-     "title": "Virahānka–Fibonacci numbers and digit puzzles",
+     "title": "Digits in disguise",
+     "story": "Thatha writes a puzzle: A + A + A = BA. Each letter is one digit, and BA is a 2-digit number. 'Find A and B.'",
      "text": [
-      "Start 1, 2 and add the last two: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. These count the rhythms of n beats made from 1-beat and 2-beat syllables.",
-      "In digit puzzles, use place value: a 2-digit number AB = 10A + B. So AB + BA = 11(A + B)."
+      "BA means 10B + A. So 3A = 10B + A, which gives 2A = 10B, so A = 5B.",
+      "A is one digit, so B = 1 and A = 5. Check: 5 + 5 + 5 = 15. ✓ Use place value and small cases to break the code."
      ],
-     "formulas": [
-      "AB = 10A + B"
-     ]
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "",
+        "",
+        "A"
+       ],
+       [
+        "+",
+        "",
+        "A"
+       ],
+       [
+        "+",
+        "",
+        "A"
+       ],
+       [
+        "",
+        "B",
+        "A"
+       ]
+      ],
+      "gold": [
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "caption": "A + A + A = BA. The answer: 5 + 5 + 5 = 15."
+     },
+     "think": {
+      "question": "AB + BA = 99 and A − B = 1. Find AB.",
+      "answer": "11(A + B) = 99, so A + B = 9; A = 5, B = 4: 54."
+     },
+     "aha": "Write each 'word' with place value (BA = 10B + A), then solve."
     }
    ],
    "examples": [
@@ -766,20 +1038,20 @@
    "subtitle": "Triangles: Existence, Construction & Angle Sum",
    "concepts": [
     {
-     "title": "When can three lengths make a triangle?",
-     "text": "Try to build a triangle with sticks 3, 4 and 8 cm: the two short sticks cannot reach each other. A triangle exists only if each pair of sides adds to more than the third side."
+     "title": "Will the sticks meet?",
+     "text": "Two shorter sides together must be longer than the longest side."
     },
     {
-     "title": "Constructing a triangle from three sides",
-     "text": "Draw the longest side as the base. Open the compasses to the second length and draw an arc from one end. Open to the third length and draw an arc from the other end. Where the arcs cross is the third vertex."
+     "title": "How long can the third side be?",
+     "text": "Difference < third side < sum."
     },
     {
-     "title": "Angle sum and exterior angles",
-     "text": "Through one vertex, draw a line parallel to the opposite side. Alternate angles show that the three angles fill a straight line, so they add to 180°."
+     "title": "Drawing a triangle exactly",
+     "text": "Draw the base, swing two arcs, join to where they cross."
     },
     {
-     "title": "Isosceles and equilateral triangles",
-     "text": "In an isosceles triangle, the angles opposite the equal sides (base angles) are equal. In an equilateral triangle, all angles are 60°."
+     "title": "The 180° secret",
+     "text": "The three angles of a triangle always add up to 180°."
     }
    ],
    "formulas": [
@@ -858,82 +1130,247 @@
     "Angles add to 180°.",
     "Exterior angle = two far angles."
    ],
-   "intro": "Three lines that cross each other in pairs make a triangle. In this chapter you find out when three lengths can make a triangle, how to construct a triangle accurately, and why the three angles always add up to 180°.",
+   "intro": "Anu and Ravi make triangles with sticks for a school project. Sometimes the sticks fit, and sometimes they just cannot meet. 'Why?' asks Ravi.",
    "before": [
     "use a ruler, compasses and a protractor",
     "know parallel-line angles (Chapter 5)"
    ],
-   "glossary": [
-    {
-     "term": "Triangle inequality",
-     "meaning": "In any triangle, the sum of any two sides is greater than the third side."
-    },
-    {
-     "term": "Scalene, isosceles, equilateral",
-     "meaning": "No sides equal; two sides equal; all three sides equal."
-    },
-    {
-     "term": "Angle sum property",
-     "meaning": "The three angles of a triangle add to 180°."
-    },
-    {
-     "term": "Exterior angle",
-     "meaning": "The angle between one side and the extension of the next side."
-    }
-   ],
    "lessons": [
     {
-     "title": "When can three lengths make a triangle?",
+     "title": "Will the sticks meet?",
+     "story": "Ravi takes sticks of 3 cm, 4 cm and 8 cm. He lays the 8 cm stick down and lifts the other two from its ends. They do not even touch!",
      "text": [
-      "Try to build a triangle with sticks 3, 4 and 8 cm: the two short sticks cannot reach each other. A triangle exists only if each pair of sides adds to more than the third side.",
-      "Quick test: check that the two shorter sides add to more than the longest side.",
-      "If two sides are a and b, the third side x must satisfy a − b < x < a + b."
+      "The two short sticks together are only 3 + 4 = 7 cm long. They cannot stretch across 8 cm. To make a triangle, the two shorter sides together must be longer than the longest side.",
+      "With 4 cm, 9 cm and 13 cm, the short sticks add to exactly 13. They lie flat on top of the long stick, and there is no triangle."
      ],
-     "points": [
-      "Two shorter sides > longest side."
-     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "3, 4, 8 cm",
+       "lines": [
+        "3 + 4 = 7",
+        "7 < 8",
+        "No triangle"
+       ]
+      },
+      "right": {
+       "title": "5, 6, 7 cm",
+       "lines": [
+        "5 + 6 = 11",
+        "11 > 7",
+        "Triangle!"
+       ]
+      },
+      "caption": "The two shorter sides must add to more than the longest side."
+     },
+     "think": {
+      "question": "Can 6 cm, 7 cm and 12 cm make a triangle?",
+      "answer": "Yes: 6 + 7 = 13 > 12."
+     },
+     "aha": "Two shorter sides together must be longer than the longest side.",
      "formulas": [
-      "|a − b| < c < a + b"
+      "a + b > c (c is the longest side)"
      ]
     },
     {
-     "title": "Constructing a triangle from three sides",
+     "title": "How long can the third side be?",
+     "story": "Anu has sticks of 6 cm and 9 cm. 'Which third stick can I use?' she asks.",
      "text": [
-      "Draw the longest side as the base. Open the compasses to the second length and draw an arc from one end. Open to the third length and draw an arc from the other end. Where the arcs cross is the third vertex.",
-      "You can also construct a triangle from two sides and the angle between them, or from two angles and the side between them."
+      "If the third side is very short, the two sides almost close up: it must be more than 9 − 6 = 3 cm. If it is very long, the two sides almost lie flat: it must be less than 9 + 6 = 15 cm.",
+      "So the third side x must be between the difference and the sum: 3 cm < x < 15 cm."
      ],
-     "points": [
-      "Keep the arcs; they show your construction."
-     ]
-    },
-    {
-     "title": "Angle sum and exterior angles",
-     "text": [
-      "Through one vertex, draw a line parallel to the opposite side. Alternate angles show that the three angles fill a straight line, so they add to 180°.",
-      "An exterior angle equals the sum of the two interior opposite angles."
-     ],
-     "formulas": [
-      "∠A + ∠B + ∠C = 180°",
-      "Exterior angle = sum of the interior opposite angles"
-     ],
-     "example": {
-      "question": "The angles are in the ratio 2 : 3 : 4. Find them.",
-      "steps": [
-       "2x + 3x + 4x = 180.",
-       "x = 20."
+     "picture": {
+      "kind": "numberline",
+      "from": 0,
+      "to": 18,
+      "step": 3,
+      "points": [
+       {
+        "value": 3,
+        "label": "too short"
+       },
+       {
+        "value": 15,
+        "label": "too long"
+       },
+       {
+        "value": 9,
+        "label": "works",
+        "gold": true
+       }
       ],
-      "answer": "40°, 60°, 80°"
-     }
+      "caption": "The third side must lie strictly between 3 cm and 15 cm."
+     },
+     "think": {
+      "question": "Two sides are 7 cm and 10 cm. Write the range of the third side.",
+      "answer": "3 cm < x < 17 cm."
+     },
+     "aha": "Difference < third side < sum."
     },
     {
-     "title": "Isosceles and equilateral triangles",
+     "title": "Drawing a triangle exactly",
+     "story": "The teacher asks for a triangle with sides 5 cm, 6 cm and 7 cm. Ravi draws it 'by eye' and it looks wrong. Anu uses compasses.",
      "text": [
-      "In an isosceles triangle, the angles opposite the equal sides (base angles) are equal. In an equilateral triangle, all angles are 60°.",
-      "The largest angle is opposite the longest side, and the smallest angle is opposite the shortest side."
+      "Step 1: draw the base BC = 6 cm. Step 2: open the compasses to 5 cm, put the point on B and draw an arc. Step 3: open to 7 cm, put the point on C and draw another arc. Step 4: the arcs cross at A. Join AB and AC.",
+      "Each arc shows all the points that are a fixed distance from one end. Where the two arcs cross, A is at the right distance from both B and C."
      ],
-     "points": [
-      "Equal sides ↔ equal opposite angles."
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Draw base BC = 6 cm",
+       "Arc of 5 cm from B",
+       "Arc of 7 cm from C",
+       "Arcs cross at A: join"
+      ],
+      "caption": "Constructing a triangle from three sides."
+     },
+     "think": {
+      "question": "Why must you keep the arcs on your drawing?",
+      "answer": "They show the teacher how you found A; they earn marks."
+     },
+     "aha": "Draw the base, swing two arcs, join to where they cross."
+    },
+    {
+     "title": "Why the arcs work: circles",
+     "story": "Anu ties a string to a pin and swings a pencil around it. She gets a circle. 'Every point on it is the same distance from the pin!'",
+     "text": [
+      "All points at a fixed distance from a centre make a circle. An arc is a piece of that circle. So an arc of radius 5 cm from B shows every point that is 5 cm from B.",
+      "Equilateral triangle: draw AB, and draw arcs of radius AB from both A and B. The crossing point C is the same distance from A and B as AB itself, so all three sides are equal."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "C",
+       "A",
+       "B"
+      ],
+      "sides": [
+       "5 cm",
+       "5 cm",
+       "5 cm"
+      ],
+      "angles": [
+       "60°",
+       "60°",
+       "60°"
+      ],
+      "caption": "Arcs of the same radius from A and B meet at C: an equilateral triangle."
+     },
+     "think": {
+      "question": "Two arcs of radius 3 cm are drawn from A and B, with AB = 8 cm. Do they meet?",
+      "answer": "No: 3 + 3 = 6 < 8. This is the triangle rule again!"
+     },
+     "aha": "An arc shows all points at one distance from its centre. Where two arcs cross, both distances are right."
+    },
+    {
+     "title": "Two sides and an angle, or two angles and a side",
+     "story": "The teacher asks for triangle PQR with PQ = 5 cm, ∠Q = 60° and QR = 6 cm. Another triangle has ∠A = 50°, ∠B = 70° and AB = 6 cm.",
+     "text": [
+      "Two sides and the angle between them (SAS): draw QR = 6 cm, make a 60° angle at Q, mark P on that arm at 5 cm, and join PR.",
+      "Two angles and the side between them (ASA): draw AB = 6 cm, make 50° at A and 70° at B. The two arms meet at C.",
+      "Do triangles always exist? No: angles of 100° and 90° add to 190°, which is more than 180°, so the arms never meet."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Draw the given side",
+       "Make the given angle(s)",
+       "Mark the other side, or let arms meet",
+       "Join and label"
+      ],
+      "caption": "Constructing with SAS or ASA."
+     },
+     "think": {
+      "question": "Can a triangle have ∠A = 110° and ∠B = 75°?",
+      "answer": "No. 110 + 75 = 185 > 180."
+     },
+     "aha": "SAS: side, angle, side. ASA: angle, side, angle. Two angles must add to less than 180°."
+    },
+    {
+     "title": "The 180° secret",
+     "story": "Anu tears the three corners off a paper triangle and puts them side by side. They make a perfect straight line. She tries a thin triangle and a fat triangle. It works every time!",
+     "text": [
+      "A straight line is 180°, so the three angles of every triangle add up to 180°. (In Chapter 5 we proved this with a parallel line.)",
+      "So if you know two angles, you know the third. Angles in the ratio 2 : 3 : 4 are 2x, 3x and 4x with 9x = 180°, so x = 20° and the angles are 40°, 60° and 80°."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "A",
+       "B",
+       "C"
+      ],
+      "angles": [
+       "80°",
+       "40°",
+       "60°"
+      ],
+      "caption": "40° + 60° + 80° = 180°."
+     },
+     "think": {
+      "question": "Can a triangle have two right angles?",
+      "answer": "No. 90° + 90° = 180° leaves 0° for the third angle."
+     },
+     "aha": "The three angles of a triangle always add up to 180°.",
+     "formulas": [
+      "∠A + ∠B + ∠C = 180°"
      ]
+    },
+    {
+     "title": "Special triangles and the outside angle",
+     "story": "Ravi extends one side of his triangle past the corner. A new angle appears outside. 'Is there a rule for this one too?'",
+     "text": [
+      "The outside angle (exterior angle) and the inside angle next to it make a straight line, so they add to 180°. The three inside angles also add to 180°. So the exterior angle must equal the sum of the two far (interior opposite) angles.",
+      "In an isosceles triangle, the two equal sides have equal angles opposite them. In an equilateral triangle, all three angles are 60°."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Isosceles",
+       "lines": [
+        "two equal sides",
+        "two equal base angles",
+        "vertex 40° → base 70°, 70°"
+       ]
+      },
+      "right": {
+       "title": "Exterior angle",
+       "lines": [
+        "= sum of the two far angles",
+        "far angles 45° and 65°",
+        "exterior = 110°"
+       ]
+      },
+      "caption": "Two quick rules that save time."
+     },
+     "think": {
+      "question": "An exterior angle is 110° and one far angle is 45°. Find the other far angle.",
+      "answer": "110° − 45° = 65°."
+     },
+     "aha": "Exterior angle = sum of the two interior opposite angles. Equal sides face equal angles."
+    },
+    {
+     "title": "Altitudes: the height of a triangle",
+     "story": "Ravi wants to know the height of his triangular kite. Thatha says, 'Drop a straight line from the top, at right angles to the bottom edge.'",
+     "text": [
+      "An altitude is the perpendicular line from a vertex to the opposite side (or to that side extended). Every triangle has three altitudes, and they meet at one point.",
+      "In an obtuse triangle, two altitudes fall outside the triangle, so you must extend the sides. To construct one, use a set square or construct a perpendicular from the vertex."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "A",
+       "B",
+       "C"
+      ],
+      "altitude": true,
+      "caption": "The altitude from A meets BC at a right angle."
+     },
+     "think": {
+      "question": "How many altitudes does a triangle have?",
+      "answer": "Three, one from each vertex."
+     },
+     "aha": "An altitude is perpendicular to a side and passes through the opposite vertex."
     }
    ],
    "examples": [
@@ -1011,20 +1448,20 @@
    "subtitle": "Multiplying & Dividing Fractions",
    "concepts": [
     {
-     "title": "Fraction of a quantity",
-     "text": "To find 2/5 of 45, divide 45 into 5 equal parts (9 each) and take 2 parts: 18. This is the same as 2/5 × 45."
+     "title": "A fraction of something",
+     "text": "'Of' means multiply. To find 2/5 of a quantity, divide by 5 and multiply by 2."
     },
     {
-     "title": "Multiplying fractions",
-     "text": "Multiply the numerators and multiply the denominators: a/b × c/d = (a × c)/(b × d). Simplify before multiplying when you can."
+     "title": "Fraction × fraction: a picture",
+     "text": "Multiply the numerators and multiply the denominators. Cancel common factors first."
     },
     {
-     "title": "Dividing fractions",
-     "text": "Dividing by a fraction asks 'how many of these fit?'. 12 ÷ 3/4 asks how many 3/4 m pieces fit in 12 m: 16."
+     "title": "Mixed numbers",
+     "text": "Always change mixed numbers into improper fractions before multiplying or dividing."
     },
     {
-     "title": "Word problems with fractions",
-     "text": "'Of the rest' means first find what is left, then take the fraction of that."
+     "title": "Dividing: how many fit?",
+     "text": "To divide by a fraction, multiply by its reciprocal: keep, change, flip."
     }
    ],
    "formulas": [
@@ -1103,86 +1540,211 @@
     "'of' means ×.",
     "Mixed → improper first."
    ],
-   "intro": "You already add and subtract fractions. In this chapter you learn to multiply and divide them, and to answer everyday questions such as 'how much is 3/4 of 2 hours?' and 'how many 3/4 m pieces from 12 m?'",
+   "intro": "Anu's mother bakes a cake and asks her to take 3/4 of the 2 cups of sugar. Then Thatha wants to cut a 12 m rope into pieces of 3/4 m. How much sugar? How many pieces?",
    "before": [
     "find equivalent fractions and simplify",
     "change mixed numbers to improper fractions"
    ],
-   "glossary": [
-    {
-     "term": "Proper fraction",
-     "meaning": "Numerator smaller than denominator, such as 3/4."
-    },
-    {
-     "term": "Mixed number",
-     "meaning": "A whole number and a fraction, such as 2 1/3 = 7/3."
-    },
-    {
-     "term": "Reciprocal",
-     "meaning": "The fraction turned upside down: the reciprocal of 7/9 is 9/7. A number × its reciprocal = 1."
-    },
-    {
-     "term": "'of'",
-     "meaning": "'of' means multiply: 2/5 of 45 = 2/5 × 45."
-    }
-   ],
    "lessons": [
     {
-     "title": "Fraction of a quantity",
+     "title": "A fraction of something",
+     "story": "Mother says, 'Use 2/5 of the 45 sweets for the guests.' Anu wonders how many that is.",
      "text": [
-      "To find 2/5 of 45, divide 45 into 5 equal parts (9 each) and take 2 parts: 18. This is the same as 2/5 × 45.",
-      "Change units if needed: 3/4 of 2 hours = 3/4 of 120 minutes = 90 minutes."
-     ]
+      "2/5 means: cut into 5 equal parts and take 2 of them. 45 ÷ 5 = 9 in each part. 2 parts = 18 sweets.",
+      "In maths, 'of' means multiply: 2/5 of 45 = 2/5 × 45 = 90/5 = 18."
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 5,
+        "shaded": 2,
+        "label": "2/5 of 45"
+       }
+      ],
+      "caption": "45 sweets in 5 equal parts of 9. Two parts = 18."
+     },
+     "think": {
+      "question": "How many minutes is 3/4 of 2 hours?",
+      "answer": "2 hours = 120 minutes; 3/4 × 120 = 90 minutes."
+     },
+     "aha": "'Of' means multiply. To find 2/5 of a quantity, divide by 5 and multiply by 2."
     },
     {
-     "title": "Multiplying fractions",
+     "title": "Fraction × fraction: a picture",
+     "story": "Anu has 2/3 of a chocolate bar. She gives 3/5 of her piece to Ravi. What part of the whole bar does Ravi get?",
      "text": [
-      "Multiply the numerators and multiply the denominators: a/b × c/d = (a × c)/(b × d). Simplify before multiplying when you can.",
-      "Area picture: 2/3 × 3/5 is the shaded part of a rectangle split into 3 × 5 = 15 small parts, with 2 × 3 = 6 shaded: 6/15 = 2/5.",
-      "For mixed numbers, change them to improper fractions first."
+      "Draw a rectangle for the whole bar. Cut it into 3 rows and shade 2 rows (2/3). Cut it into 5 columns and take 3 columns (3/5). The overlap is 2 × 3 = 6 small boxes out of 3 × 5 = 15.",
+      "So 2/3 × 3/5 = 6/15 = 2/5. The rule: multiply the tops and multiply the bottoms."
      ],
-     "points": [
-      "Cancel common factors first."
-     ],
+     "picture": {
+      "kind": "area",
+      "rows": 3,
+      "cols": 5,
+      "shadeRows": 2,
+      "shadeCols": 3,
+      "label": "2/3 × 3/5 = 6/15",
+      "caption": "The gold boxes show 2/3 of 3/5: 6 out of 15."
+     },
+     "think": {
+      "question": "Find 4/7 × 21/8.",
+      "answer": "Cancel first: 4/8 = 1/2 and 21/7 = 3, so 1/2 × 3 = 3/2."
+     },
+     "aha": "Multiply the numerators and multiply the denominators. Cancel common factors first.",
      "formulas": [
       "a/b × c/d = ac/bd"
-     ],
-     "example": {
-      "question": "Multiply 2 1/3 × 1 1/2.",
-      "steps": [
-       "7/3 × 3/2.",
-       "Cancel 3: 7/2."
-      ],
-      "answer": "3 1/2"
-     }
+     ]
     },
     {
-     "title": "Dividing fractions",
+     "title": "Mixed numbers",
+     "story": "Thatha's car runs 14 1/2 km on one litre of petrol. How far does it go on 6 3/4 litres?",
      "text": [
-      "Dividing by a fraction asks 'how many of these fit?'. 12 ÷ 3/4 asks how many 3/4 m pieces fit in 12 m: 16.",
-      "Rule: to divide by a fraction, multiply by its reciprocal. a/b ÷ c/d = a/b × d/c."
+      "Change each mixed number to an improper fraction first: 14 1/2 = 29/2 and 6 3/4 = 27/4.",
+      "Then multiply: 29/2 × 27/4 = 783/8 = 97 7/8 km."
      ],
-     "points": [
-      "Keep, change, flip: keep the first, change ÷ to ×, flip the second."
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "14 1/2 → 29/2",
+       "6 3/4 → 27/4",
+       "29 × 27 = 783; 2 × 4 = 8",
+       "783/8 = 97 7/8"
+      ],
+      "caption": "Mixed → improper → multiply → back to mixed."
+     },
+     "think": {
+      "question": "Find 2 1/3 × 1 1/2.",
+      "answer": "7/3 × 3/2 = 7/2 = 3 1/2."
+     },
+     "aha": "Always change mixed numbers into improper fractions before multiplying or dividing."
+    },
+    {
+     "title": "Does multiplying always make bigger?",
+     "story": "Ravi says, 'Multiplying always makes a number bigger.' Anu works out 10 × 1/2 = 5. 'It got smaller!'",
+     "text": [
+      "Multiplying by a proper fraction (less than 1) gives a smaller answer: you take only a part. Multiplying by 1 gives the same number. Multiplying by an improper fraction (more than 1) gives a bigger answer.",
+      "Properties: a × b = b × a (order does not matter), (a × b) × c = a × (b × c), a × 1 = a and a × 0 = 0. These are true for fractions too."
      ],
+     "picture": {
+      "kind": "numberline",
+      "from": 0,
+      "to": 20,
+      "step": 5,
+      "points": [
+       {
+        "value": 5,
+        "label": "10 × 1/2"
+       },
+       {
+        "value": 10,
+        "label": "10 × 1"
+       },
+       {
+        "value": 15,
+        "label": "10 × 3/2",
+        "gold": true
+       }
+      ],
+      "caption": "× less than 1 → smaller; × more than 1 → bigger."
+     },
+     "think": {
+      "question": "Without calculating, is 7/8 × 25 more or less than 25?",
+      "answer": "Less, because 7/8 is less than 1."
+     },
+     "aha": "× a number less than 1 makes smaller; × a number more than 1 makes bigger."
+    },
+    {
+     "title": "Dividing: how many fit?",
+     "story": "Thatha cuts a 12 m rope into pieces of 3/4 m. 'How many pieces?' he asks.",
+     "text": [
+      "Division asks how many times one quantity fits into another. Each metre gives 4 quarters, so 12 m has 48 quarters. Each piece uses 3 quarters, so there are 48 ÷ 3 = 16 pieces.",
+      "The quick rule: dividing by a fraction is multiplying by its reciprocal (turn it upside down). 12 ÷ 3/4 = 12 × 4/3 = 16."
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 4,
+        "shaded": 3,
+        "label": "1 m"
+       },
+       {
+        "parts": 4,
+        "shaded": 3,
+        "label": "1 m",
+        "gold": true
+       }
+      ],
+      "caption": "Each metre is 4 quarters; one piece uses 3 quarters."
+     },
+     "think": {
+      "question": "How many 1/3 kg packets can be filled from 5 kg?",
+      "answer": "5 ÷ 1/3 = 5 × 3 = 15."
+     },
+     "aha": "To divide by a fraction, multiply by its reciprocal: keep, change, flip.",
      "formulas": [
       "a/b ÷ c/d = a/b × d/c"
-     ],
-     "example": {
-      "question": "Divide 5/6 ÷ 10/9.",
-      "steps": [
-       "5/6 × 9/10.",
-       "= 45/60."
-      ],
-      "answer": "3/4"
-     }
+     ]
     },
     {
-     "title": "Word problems with fractions",
+     "title": "Fraction word problems",
+     "story": "Meena has ₹600. She spends 1/3 on books, then 1/4 of the remaining money on food. What fraction of ₹600 is left?",
      "text": [
-      "'Of the rest' means first find what is left, then take the fraction of that.",
-      "Scaling a recipe: multiply each quantity by (new number of people) ÷ (old number of people)."
-     ]
+      "Read carefully: 'of the remaining money' means first find what is left. Books: 1/3 × 600 = ₹200, so ₹400 remains.",
+      "Food: 1/4 × 400 = ₹100. Left: 400 − 100 = ₹300, which is 300/600 = 1/2 of the money."
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 3,
+        "shaded": 1,
+        "label": "books"
+       },
+       {
+        "parts": 4,
+        "shaded": 1,
+        "label": "food (of rest)",
+        "gold": true
+       }
+      ],
+      "caption": "Take 1/3 of the whole, then 1/4 of what remains."
+     },
+     "think": {
+      "question": "A recipe for 4 people needs 2/3 cup of sugar. How much for 6 people?",
+      "answer": "2/3 × 6/4 = 1 cup."
+     },
+     "aha": "Find the remaining amount first when a question says 'of the rest'."
+    },
+    {
+     "title": "Fractional relations",
+     "story": "Ravi's height is 4/5 of Anu's height. Anu is 150 cm tall. How tall is Ravi? And Anu's height is what fraction of Ravi's?",
+     "text": [
+      "Ravi = 4/5 × 150 = 120 cm.",
+      "If A is 4/5 of B, then B is 5/4 of A: flip the fraction. Check: 5/4 × 120 = 150. ✓"
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 5,
+        "shaded": 5,
+        "label": "Anu"
+       },
+       {
+        "parts": 5,
+        "shaded": 4,
+        "label": "Ravi",
+        "gold": true
+       }
+      ],
+      "caption": "Ravi is 4 parts when Anu is 5 parts."
+     },
+     "think": {
+      "question": "A is 2/3 of B, and A = 18. Find B.",
+      "answer": "B = 3/2 × 18 = 27."
+     },
+     "aha": "If A is p/q of B, then B is q/p of A."
     }
    ],
    "examples": [
@@ -1260,20 +1822,20 @@
    "subtitle": "Congruent Figures & Triangle Congruence",
    "concepts": [
     {
-     "title": "Congruent figures",
-     "text": "Two figures are congruent if one can be placed exactly on the other. Two line segments are congruent if they have the same length; two angles are congruent if they have the same measure."
+     "title": "What congruent means",
+     "text": "Congruent = same shape and same size. Write matching vertices in the same order."
     },
     {
-     "title": "Conditions for congruent triangles",
-     "text": "SSS: three sides equal. SAS: two sides and the angle between them equal. ASA: two angles and the side between them equal. AAS: two angles and a side not between them equal. RHS: in right triangles, the hypotenuse and one side equal."
+     "title": "Do we need all six measurements?",
+     "text": "Three well-chosen matching parts are enough: SSS, SAS, ASA, AAS or RHS."
     },
     {
-     "title": "Writing a congruence proof",
-     "text": "List three pairs of equal parts, with a reason for each (given, common side, vertically opposite angles, alternate angles)."
+     "title": "Two traps: AAA and SSA",
+     "text": "AAA and SSA do not prove congruence."
     },
     {
-     "title": "Isosceles triangles",
-     "text": "If two sides of a triangle are equal, the angles opposite them are equal. This can be proved by joining the vertex to the mid-point of the base (SSS)."
+     "title": "Writing a twin proof",
+     "text": "Name the triangles, give three equal parts with reasons, name the condition, then use CPCT."
     }
    ],
    "formulas": [
@@ -1351,73 +1913,186 @@
     "AAA gives the same shape only.",
     "Order of letters = matching parts."
    ],
-   "intro": "Two figures that match exactly, like two copies of the same coin, are 'geometric twins'. Mathematicians call them congruent. In this chapter you learn how to check that two triangles are congruent using only three measurements, and how to use this to prove facts.",
+   "intro": "Anu finds two identical leaves on the ground and places one exactly on top of the other. They match perfectly. 'Twins!' she laughs. In mathematics, shapes that match exactly are called congruent.",
    "before": [
     "know the angle sum of a triangle",
     "know vertically opposite and alternate angles"
    ],
-   "glossary": [
-    {
-     "term": "Congruent",
-     "meaning": "Same shape and same size. One figure fits exactly on the other."
-    },
-    {
-     "term": "≅",
-     "meaning": "The symbol for 'is congruent to'."
-    },
-    {
-     "term": "Corresponding parts",
-     "meaning": "Sides and angles that match. In ΔABC ≅ ΔPQR, A ↔ P, B ↔ Q, C ↔ R."
-    },
-    {
-     "term": "CPCT",
-     "meaning": "Corresponding parts of congruent triangles are equal."
-    }
-   ],
    "lessons": [
     {
-     "title": "Congruent figures",
+     "title": "What congruent means",
+     "story": "Anu traces a stamp onto paper, cuts it out and places it on another stamp. Every edge matches.",
      "text": [
-      "Two figures are congruent if one can be placed exactly on the other. Two line segments are congruent if they have the same length; two angles are congruent if they have the same measure.",
-      "The order of letters matters. ΔABC ≅ ΔPQR means AB = PQ, BC = QR, CA = RP and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R."
+      "Two figures are congruent if one can be placed exactly on the other: same shape and same size. We use the symbol ≅.",
+      "The order of letters matters. ΔABC ≅ ΔPQR means A matches P, B matches Q and C matches R. So AB = PQ, BC = QR, CA = RP, and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R."
      ],
-     "points": [
-      "Match the vertices in order."
-     ]
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "ΔABC",
+       "lines": [
+        "AB = 5 cm",
+        "BC = 6 cm",
+        "∠B = 50°"
+       ]
+      },
+      "right": {
+       "title": "ΔPQR",
+       "lines": [
+        "PQ = 5 cm",
+        "QR = 6 cm",
+        "∠Q = 50°"
+       ]
+      },
+      "caption": "Matching letters show matching parts."
+     },
+     "think": {
+      "question": "If ΔABC ≅ ΔXYZ, which side equals BC?",
+      "answer": "YZ."
+     },
+     "aha": "Congruent = same shape and same size. Write matching vertices in the same order."
     },
     {
-     "title": "Conditions for congruent triangles",
+     "title": "Do we need all six measurements?",
+     "story": "A triangle has 3 sides and 3 angles. Ravi says, 'To check twins, we must measure all six!' Thatha says, 'Three are enough, if you choose wisely.'",
      "text": [
-      "SSS: three sides equal. SAS: two sides and the angle between them equal. ASA: two angles and the side between them equal. AAS: two angles and a side not between them equal. RHS: in right triangles, the hypotenuse and one side equal.",
-      "AAA is NOT a condition: equal angles give the same shape but can give different sizes.",
-      "SSA (angle not between the two sides) is also not a condition in general."
+      "SSS: if all three sides match, the triangle is fixed, so the triangles are congruent. Try it with sticks: three fixed lengths make only one shape.",
+      "SAS: two sides and the angle between them. ASA: two angles and the side between them. AAS: two angles and any matching side. RHS: in right triangles, the hypotenuse and one side."
      ],
-     "points": [
-      "The angle in SAS must be between the two sides."
-     ]
-    },
-    {
-     "title": "Writing a congruence proof",
-     "text": [
-      "List three pairs of equal parts, with a reason for each (given, common side, vertically opposite angles, alternate angles).",
-      "Name the condition and write the congruence with matching letters. Then use CPCT to state the required result."
-     ],
-     "example": {
-      "question": "AB = AD, CB = CD in ABCD. Prove ∠B = ∠D.",
+     "picture": {
+      "kind": "flow",
       "steps": [
-       "AB = AD (given), CB = CD (given), AC common.",
-       "ΔABC ≅ ΔADC (SSS).",
-       "∠B = ∠D (CPCT)."
+       "SSS: 3 sides",
+       "SAS: 2 sides + angle between",
+       "ASA / AAS: 2 angles + a side",
+       "RHS: right angle, hypotenuse, side"
       ],
-      "answer": "Proved"
-     }
+      "caption": "Five ways to prove two triangles congruent."
+     },
+     "think": {
+      "question": "AB = PQ, BC = QR and ∠B = ∠Q. Which condition is this?",
+      "answer": "SAS (the angle is between the two sides)."
+     },
+     "aha": "Three well-chosen matching parts are enough: SSS, SAS, ASA, AAS or RHS."
+    },
+    {
+     "title": "Two traps: AAA and SSA",
+     "story": "Anu draws a small equilateral triangle and a big one. All their angles are 60°. 'Twins?' she asks.",
+     "text": [
+      "No. Equal angles give the same shape but not the same size. So AAA does not prove congruence.",
+      "SSA (an angle that is NOT between the two sides) can also give two different triangles. So only use SAS when the angle is between the two sides."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Small triangle",
+       "lines": [
+        "angles 60°, 60°, 60°",
+        "sides 3 cm"
+       ]
+      },
+      "right": {
+       "title": "Big triangle",
+       "lines": [
+        "angles 60°, 60°, 60°",
+        "sides 6 cm"
+       ]
+      },
+      "caption": "Same angles, different sizes: not congruent."
+     },
+     "think": {
+      "question": "Can AAA prove two triangles congruent?",
+      "answer": "No. It only proves the same shape."
+     },
+     "aha": "AAA and SSA do not prove congruence."
+    },
+    {
+     "title": "Writing a twin proof",
+     "story": "Quadrilateral ABCD looks like a kite: AB = AD and CB = CD. Thatha asks Anu to prove that ∠B = ∠D.",
+     "text": [
+      "Draw the diagonal AC. Compare ΔABC and ΔADC: AB = AD (given), CB = CD (given), and AC = AC (common side).",
+      "So ΔABC ≅ ΔADC by SSS. Matching parts of congruent triangles are equal (CPCT), so ∠B = ∠D."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Name the two triangles",
+       "List 3 equal pairs with reasons",
+       "State the condition (SSS …)",
+       "Use CPCT for the answer"
+      ],
+      "caption": "The four steps of a congruence proof."
+     },
+     "think": {
+      "question": "What does CPCT stand for?",
+      "answer": "Corresponding Parts of Congruent Triangles (are equal)."
+     },
+     "aha": "Name the triangles, give three equal parts with reasons, name the condition, then use CPCT."
     },
     {
      "title": "Isosceles triangles",
+     "story": "Ravi folds an isosceles triangle along the line from the top to the middle of the base. The two halves match exactly!",
      "text": [
-      "If two sides of a triangle are equal, the angles opposite them are equal. This can be proved by joining the vertex to the mid-point of the base (SSS).",
-      "If two angles are equal, the sides opposite them are equal."
-     ]
+      "The fold line splits the triangle into two congruent triangles (SSS). So the two base angles match: angles opposite equal sides are equal.",
+      "If AB = AC and ∠B = 65°, then ∠C = 65° and ∠A = 180° − 130° = 50°."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "A",
+       "B",
+       "C"
+      ],
+      "sides": [
+       "AB",
+       "BC",
+       "AC"
+      ],
+      "angles": [
+       "50°",
+       "65°",
+       "65°"
+      ],
+      "caption": "AB = AC, so ∠B = ∠C."
+     },
+     "think": {
+      "question": "An isosceles triangle has vertex angle 100°. Find the base angles.",
+      "answer": "(180° − 100°) ÷ 2 = 40° each."
+     },
+     "aha": "Equal sides face equal angles."
+    },
+    {
+     "title": "Twins in real life: why triangles are strong",
+     "story": "Ravi makes a square and a triangle from straws and pins. He pushes the square: it squashes into a slanted shape. He pushes the triangle: it does not move at all!",
+     "text": [
+      "By SSS, three fixed sides fix the whole triangle. Its shape cannot change. A square with fixed sides can still change its angles.",
+      "That is why bridges, roof trusses, electricity towers and bicycle frames are built from triangles. Factories also make congruent parts so that any spare part fits."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Square frame",
+       "lines": [
+        "4 fixed sides",
+        "angles can change",
+        "it squashes"
+       ]
+      },
+      "right": {
+       "title": "Triangle frame",
+       "lines": [
+        "3 fixed sides",
+        "shape is fixed (SSS)",
+        "it stays rigid"
+       ]
+      },
+      "caption": "Triangles are rigid; squares are not."
+     },
+     "think": {
+      "question": "How can you make a square frame rigid?",
+      "answer": "Add a diagonal rod: it splits the square into two triangles."
+     },
+     "aha": "Three fixed sides fix a triangle completely. This makes triangles strong."
     }
    ],
    "examples": [
@@ -1495,20 +2170,20 @@
    "subtitle": "Multiplying & Dividing Integers",
    "concepts": [
     {
-     "title": "Adding and subtracting (revision)",
-     "text": "Adding a negative number moves left on the number line. Subtracting a negative number is the same as adding the positive: 8 − (−7) = 8 + 7."
+     "title": "Numbers below zero",
+     "text": "Right means bigger, left means smaller. Below zero, the numbers are negative."
     },
     {
-     "title": "Multiplying integers",
-     "text": "Positive × positive = positive. Positive × negative = negative: 4 × (−6) means four groups of −6 = −24."
+     "title": "Tokens: plus and minus cancel",
+     "text": "A + and a − token make 0. Subtracting a negative means adding."
     },
     {
-     "title": "Dividing integers",
-     "text": "Division follows the same sign rules: (−48) ÷ (−6) = 8 and (−48) ÷ 6 = −8."
+     "title": "Multiplying with a negative",
+     "text": "Positive × negative = negative."
     },
     {
-     "title": "Properties and real-life problems",
-     "text": "Multiplication of integers is commutative and associative, and it distributes over addition: a × (b + c) = a × b + a × c."
+     "title": "Why negative × negative is positive",
+     "text": "Same signs give a positive answer. Different signs give a negative answer."
     }
    ],
    "formulas": [
@@ -1587,78 +2262,383 @@
     "Subtracting a negative → add.",
     "Never divide by zero."
    ],
-   "intro": "Integers include negative numbers such as −8, used for temperatures below zero, debts, and floors below ground. You already add and subtract integers. In this chapter you learn the sign rules for multiplying and dividing them, and why those rules make sense.",
+   "intro": "Anu visits Shimla in winter. The temperature at noon is 5°C and at night it falls by 12°C. It goes below zero! You learn why negative × negative is positive, using patterns and tokens instead of just remembering a rule.",
    "before": [
     "add and subtract integers on a number line",
     "know that subtracting a negative is adding"
    ],
-   "glossary": [
-    {
-     "term": "Integer",
-     "meaning": "A whole number that can be positive, negative or zero: …, −2, −1, 0, 1, 2, …"
-    },
-    {
-     "term": "Additive inverse",
-     "meaning": "The number that adds to give 0: the inverse of −7 is 7."
-    },
-    {
-     "term": "Product",
-     "meaning": "The result of multiplication."
-    },
-    {
-     "term": "Quotient",
-     "meaning": "The result of division."
-    }
-   ],
    "lessons": [
     {
-     "title": "Adding and subtracting (revision)",
+     "title": "The carrom coin game",
+     "story": "Anu and Ravi play a game on a number line drawn on the carrom board. Forward moves are +, backward moves are −. The coin starts at 0 and moves +3, −5, then +4.",
      "text": [
-      "Adding a negative number moves left on the number line. Subtracting a negative number is the same as adding the positive: 8 − (−7) = 8 + 7.",
-      "Use the 'tokens' idea: positive and negative tokens cancel in pairs."
+      "0 + 3 = 3. Then 3 − 5 = −2 (it goes past zero). Then −2 + 4 = 2. The coin ends at 2.",
+      "The game shows that adding a negative number is the same as moving backward."
      ],
-     "points": [
-      "a − (−b) = a + b"
-     ]
-    },
-    {
-     "title": "Multiplying integers",
-     "text": [
-      "Positive × positive = positive. Positive × negative = negative: 4 × (−6) means four groups of −6 = −24.",
-      "Negative × negative = positive. The pattern shows why: (−6) × 2 = −12, (−6) × 1 = −6, (−6) × 0 = 0, (−6) × (−1) = 6 (the answers go up by 6 each time).",
-      "For many factors: count the negative signs. Even count → positive; odd count → negative."
-     ],
-     "points": [
-      "Same signs → positive; different signs → negative."
-     ],
-     "example": {
-      "question": "Find (−3) × (−2) × (−5).",
-      "steps": [
-       "Three negatives: the product is negative.",
-       "3 × 2 × 5 = 30."
+     "picture": {
+      "kind": "numberline",
+      "from": -4,
+      "to": 5,
+      "step": 1,
+      "points": [
+       {
+        "value": 0,
+        "label": "start"
+       },
+       {
+        "value": 2,
+        "label": "end",
+        "gold": true
+       }
       ],
-      "answer": "−30"
-     }
+      "jumps": [
+       {
+        "from": 0,
+        "to": 3,
+        "label": "+3"
+       },
+       {
+        "from": 3,
+        "to": -2,
+        "label": "−5"
+       },
+       {
+        "from": -2,
+        "to": 2,
+        "label": "+4"
+       }
+      ],
+      "caption": "+3, −5, +4 takes the coin from 0 to 2."
+     },
+     "think": {
+      "question": "Start at 1 and move −4, −3, +5. Where is the coin?",
+      "answer": "1 − 4 − 3 + 5 = −1."
+     },
+     "aha": "Forward = add a positive number. Backward = add a negative number."
     },
     {
-     "title": "Dividing integers",
+     "title": "Numbers below zero",
+     "story": "The thermometer shows 5°C. At night it drops 12 degrees. Anu counts down: 4, 3, 2, 1, 0, −1, … −7.",
      "text": [
-      "Division follows the same sign rules: (−48) ÷ (−6) = 8 and (−48) ÷ 6 = −8.",
-      "0 ÷ (non-zero) = 0. Division by 0 is not defined."
+      "Integers are the whole numbers with their negatives: …, −3, −2, −1, 0, 1, 2, 3, … On a number line, positive numbers go right and negative numbers go left.",
+      "Adding moves right; subtracting moves left. 5 − 12 = −7."
      ],
-     "points": [
-      "Never divide by 0."
-     ]
+     "picture": {
+      "kind": "numberline",
+      "from": -8,
+      "to": 6,
+      "step": 1,
+      "points": [
+       {
+        "value": 5,
+        "label": "noon"
+       },
+       {
+        "value": -7,
+        "label": "night",
+        "gold": true
+       }
+      ],
+      "jumps": [
+       {
+        "from": 5,
+        "to": -7,
+        "label": "− 12"
+       }
+      ],
+      "caption": "Starting at 5 and moving 12 steps left lands on −7."
+     },
+     "think": {
+      "question": "The temperature is −3°C and rises by 8°C. What is it now?",
+      "answer": "−3 + 8 = 5°C."
+     },
+     "aha": "Right means bigger, left means smaller. Below zero, the numbers are negative."
     },
     {
-     "title": "Properties and real-life problems",
+     "title": "Tokens: plus and minus cancel",
+     "story": "Thatha gives Anu blue tokens (+1) and gold tokens (−1). 'A blue and a gold together make zero,' he says.",
      "text": [
-      "Multiplication of integers is commutative and associative, and it distributes over addition: a × (b + c) = a × b + a × c.",
-      "Use integers for scores with penalties, temperatures, heights above and below sea level, and lifts."
+      "5 blue and 3 gold: the 3 pairs cancel, and 2 blue remain. So 5 + (−3) = 2.",
+      "Subtracting a negative is the same as adding a positive: 8 − (−7) = 8 + 7 = 15. Taking away a debt makes you richer!"
      ],
+     "picture": {
+      "kind": "tokens",
+      "positive": 5,
+      "negative": 3,
+      "caption": "3 pairs of + and − cancel; +2 remains."
+     },
+     "think": {
+      "question": "Find −15 + 8 − (−7).",
+      "answer": "−15 + 8 + 7 = 0."
+     },
+     "aha": "A + and a − token make 0. Subtracting a negative means adding."
+    },
+    {
+     "title": "Multiplying with a negative",
+     "story": "Anu loses ₹6 every day for 4 days. 'How much has my money changed?'",
+     "text": [
+      "Losing ₹6 four times is (−6) + (−6) + (−6) + (−6) = −24. So 4 × (−6) = −24. A positive times a negative is negative.",
+      "Order does not matter in multiplication, so (−6) × 4 = −24 as well."
+     ],
+     "picture": {
+      "kind": "numberline",
+      "from": -24,
+      "to": 0,
+      "step": 6,
+      "jumps": [
+       {
+        "from": 0,
+        "to": -6,
+        "label": "−6"
+       },
+       {
+        "from": -6,
+        "to": -12,
+        "label": "−6"
+       },
+       {
+        "from": -12,
+        "to": -18,
+        "label": "−6"
+       },
+       {
+        "from": -18,
+        "to": -24,
+        "label": "−6"
+       }
+      ],
+      "caption": "Four jumps of −6 land on −24."
+     },
+     "think": {
+      "question": "Find 7 × (−5).",
+      "answer": "−35."
+     },
+     "aha": "Positive × negative = negative."
+    },
+    {
+     "title": "Why negative × negative is positive",
+     "story": "Ravi says, 'A minus times a minus giving a plus is just a rule to memorise.' Thatha says, 'No, there is a pattern. Watch.'",
+     "text": [
+      "Look at this column: (−6) × 2 = −12, (−6) × 1 = −6, (−6) × 0 = 0. Each time the second number goes down by 1, the answer goes UP by 6.",
+      "Continue the pattern: (−6) × (−1) = 6, (−6) × (−2) = 12. So negative × negative is positive. With many factors, count the negatives: even count → positive, odd count → negative."
+     ],
+     "picture": {
+      "kind": "table",
+      "head": true,
+      "rows": [
+       [
+        "(−6) ×",
+        "2",
+        "1",
+        "0",
+        "−1",
+        "−2"
+       ],
+       [
+        "answer",
+        "−12",
+        "−6",
+        "0",
+        "6",
+        "12"
+       ]
+      ],
+      "gold": [
+       [
+        1,
+        4
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "caption": "The answers go up by 6 each step, so they become positive."
+     },
+     "think": {
+      "question": "Find (−3) × (−2) × (−5).",
+      "answer": "Three negatives (odd count), so negative: −30."
+     },
+     "aha": "Same signs give a positive answer. Different signs give a negative answer.",
      "formulas": [
-      "a × (b + c) = ab + ac"
+      "(+)(+) = +, (−)(−) = +, (+)(−) = −"
      ]
+    },
+    {
+     "title": "Brahmagupta's rules: fortune and debt",
+     "story": "About 1,400 years ago, in 628 CE, the Indian mathematician Brahmagupta wrote rules for positive and negative numbers. He called positive numbers 'fortunes' and negative numbers 'debts'.",
+     "text": [
+      "His rules: fortune × fortune = fortune. Debt × debt = fortune. Fortune × debt = debt. Division follows the same rules.",
+      "He also wrote that a number minus itself is zero, and that a debt subtracted from zero becomes a fortune: 0 − (−5) = 5. These are the same rules we use today."
+     ],
+     "picture": {
+      "kind": "table",
+      "head": true,
+      "rows": [
+       [
+        "×",
+        "+ (fortune)",
+        "− (debt)"
+       ],
+       [
+        "+ (fortune)",
+        "+",
+        "−"
+       ],
+       [
+        "− (debt)",
+        "−",
+        "+"
+       ]
+      ],
+      "gold": [
+       [
+        2,
+        2
+       ]
+      ],
+      "caption": "Brahmagupta's sign rules for × and ÷."
+     },
+     "think": {
+      "question": "Use the rules: (−12) ÷ (−3).",
+      "answer": "Debt ÷ debt = fortune: +4."
+     },
+     "aha": "Same signs give a positive result. Different signs give a negative result."
+    },
+    {
+     "title": "Division is multiplication backwards",
+     "story": "Ravi asks, 'Why is (−48) ÷ 6 = −8?' Anu answers with a multiplication.",
+     "text": [
+      "Division asks: what times 6 gives −48? Since 6 × (−8) = −48, the answer is −8. Every division fact comes from a multiplication fact.",
+      "0 ÷ 5 = 0, because 5 × 0 = 0. But 5 ÷ 0 has no answer: no number times 0 gives 5. So division by 0 is not defined."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Multiplication",
+       "lines": [
+        "6 × (−8) = −48",
+        "(−6) × (−8) = 48",
+        "5 × 0 = 0"
+       ]
+      },
+      "right": {
+       "title": "Division",
+       "lines": [
+        "(−48) ÷ 6 = −8",
+        "48 ÷ (−6) = −8",
+        "0 ÷ 5 = 0"
+       ]
+      },
+      "caption": "Each division fact is a multiplication fact read backwards."
+     },
+     "think": {
+      "question": "Find (−56) ÷ (−7) and check with multiplication.",
+      "answer": "8, because (−7) × 8 = −56."
+     },
+     "aha": "a ÷ b = c means b × c = a. Division by 0 is not possible."
+    },
+    {
+     "title": "Rules that never change",
+     "story": "Anu notices that 3 + (−7) = (−7) + 3 and (−2) × 5 = 5 × (−2). 'Can I always swap?' she asks.",
+     "text": [
+      "For + and ×, you can swap the order (commutative) and change the grouping (associative): (a + b) + c = a + (b + c). Also a × (b + c) = a × b + a × c (distributive).",
+      "For − and ÷, you cannot swap: 5 − 3 = 2 but 3 − 5 = −2.",
+      "Special numbers: a + 0 = a, a × 1 = a, a × 0 = 0, a × (−1) = −a, and a + (−a) = 0."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Can swap and regroup",
+       "lines": [
+        "a + b = b + a",
+        "a × b = b × a",
+        "(a + b) + c = a + (b + c)"
+       ]
+      },
+      "right": {
+       "title": "Cannot swap",
+       "lines": [
+        "5 − 3 ≠ 3 − 5",
+        "8 ÷ 2 ≠ 2 ÷ 8",
+        "(10 − 5) − 2 ≠ 10 − (5 − 2)"
+       ]
+      },
+      "caption": "Properties of operations on integers."
+     },
+     "think": {
+      "question": "Find (−25) × 37 + (−25) × 63 quickly.",
+      "answer": "(−25) × (37 + 63) = (−25) × 100 = −2,500."
+     },
+     "aha": "Swap and regroup freely for + and ×, never for − and ÷."
+    },
+    {
+     "title": "A magic grid of integers",
+     "story": "Thatha gives Anu a 3 × 3 grid. 'Use the numbers −4 to 4, once each, so that every row, column and diagonal adds to 0.'",
+     "text": [
+      "The total of −4 to 4 is 0, so each of the 3 rows must add to 0 ÷ 3 = 0. The centre must be the middle number, 0.",
+      "A quick way: take the 1-to-9 magic square and subtract 5 from every number. Every line had sum 15, and now each line loses 3 × 5 = 15, so every sum becomes 0."
+     ],
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "−3",
+        "2",
+        "1"
+       ],
+       [
+        "4",
+        "0",
+        "−4"
+       ],
+       [
+        "−1",
+        "−2",
+        "3"
+       ]
+      ],
+      "gold": [
+       [
+        1,
+        1
+       ]
+      ],
+      "caption": "Every row, column and diagonal adds to 0."
+     },
+     "think": {
+      "question": "Add 2 to every number in this grid. What is the new magic sum?",
+      "answer": "Each line gains 3 × 2 = 6, so the sum is 6."
+     },
+     "aha": "Adding the same number to every cell keeps a magic square magic."
+    },
+    {
+     "title": "Dividing integers and real-life problems",
+     "story": "In a quiz, a correct answer gets +5 and a wrong answer gets −2. Ravi has 8 correct and 6 wrong. What is his score?",
+     "text": [
+      "Score = 8 × 5 + 6 × (−2) = 40 − 12 = 28.",
+      "Division follows the same sign rules as multiplication: (−48) ÷ (−6) = 8 and (−48) ÷ 6 = −8. Never divide by 0: it has no answer."
+     ],
+     "picture": {
+      "kind": "bars",
+      "labels": [
+       "correct",
+       "wrong",
+       "total"
+      ],
+      "values": [
+       40,
+       12,
+       28
+      ],
+      "gold": 2,
+      "caption": "+40 for correct answers, −12 for wrong ones: the score is 28."
+     },
+     "think": {
+      "question": "A submarine at −120 m rises 40 m every minute. When does it reach the surface?",
+      "answer": "120 ÷ 40 = 3 minutes."
+     },
+     "aha": "Division uses the same sign rules. Division by zero is not allowed."
     }
    ],
    "examples": [

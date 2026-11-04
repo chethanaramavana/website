@@ -522,20 +522,20 @@
    "subtitle": "Common Factors, Common Multiples, HCF & LCM",
    "concepts": [
     {
-     "title": "Listing method",
-     "text": "Write the factors of each number and pick the largest common one: factors of 12 and 18 → common 1, 2, 3, 6 → HCF 6."
+     "title": "Factors and multiples",
+     "text": "Factors divide a number exactly. Multiples are the times table of a number."
     },
     {
-     "title": "Prime factorisation method",
-     "text": "Write each number as a product of primes. HCF = product of the common primes with the smaller powers. LCM = product of all primes with the larger powers."
+     "title": "HCF: the biggest equal group",
+     "text": "HCF = the largest number that divides all the given numbers. It answers 'biggest equal group' questions."
     },
     {
-     "title": "HCF × LCM",
-     "text": "For two numbers a and b: HCF × LCM = a × b. Use it to find a missing number."
+     "title": "LCM: when do they meet again?",
+     "text": "LCM = the smallest number that all the given numbers divide. It answers 'next time together' questions."
     },
     {
-     "title": "HCF or LCM? Reading word problems",
-     "text": "HCF: 'largest', 'greatest size', 'equal groups', 'tiles', 'boxes', 'cut into equal pieces'."
+     "title": "The prime-factor shortcut",
+     "text": "HCF: shared primes with the smaller powers. LCM: all primes with the larger powers."
     }
    ],
    "formulas": [
@@ -614,79 +614,236 @@
     "Next time together → LCM.",
     "HCF × LCM = product (two numbers)."
    ],
-   "intro": "When two things share something in common, maths can find it. HCF finds the biggest equal group size; LCM finds when repeating events meet again. In this chapter you learn both, with quick methods and many real-life uses.",
+   "intro": "Anu's class is packing gift boxes: 48 apples, 72 oranges and 96 bananas, with the same number of fruits in every box. And two runners on a track want to know when they will meet at the start again. Both puzzles are about finding common ground between numbers.",
    "before": [
     "list factors and multiples",
     "know prime numbers up to 50"
    ],
-   "glossary": [
-    {
-     "term": "Factor",
-     "meaning": "A number that divides another exactly. Factors of 12: 1, 2, 3, 4, 6, 12."
-    },
-    {
-     "term": "Multiple",
-     "meaning": "A number in the times table: multiples of 4: 4, 8, 12, …"
-    },
-    {
-     "term": "HCF",
-     "meaning": "Highest common factor: the largest number that divides all the given numbers."
-    },
-    {
-     "term": "LCM",
-     "meaning": "Lowest common multiple: the smallest number that all the given numbers divide."
-    },
-    {
-     "term": "Co-prime",
-     "meaning": "Two numbers whose HCF is 1, such as 8 and 15."
-    }
-   ],
    "lessons": [
     {
-     "title": "Listing method",
+     "title": "Factors and multiples",
+     "story": "Anu arranges 12 chairs in equal rows: 1 row of 12, 2 rows of 6, 3 rows of 4, … Ravi counts in 4s: 4, 8, 12, 16 …",
      "text": [
-      "Write the factors of each number and pick the largest common one: factors of 12 and 18 → common 1, 2, 3, 6 → HCF 6.",
-      "Write multiples and pick the smallest common one: multiples of 4 and 6 → 12, 24, … → LCM 12."
-     ]
+      "The factors of 12 are the numbers that divide 12 exactly: 1, 2, 3, 4, 6, 12. They are the possible row sizes.",
+      "The multiples of 4 are the numbers in the 4 times table: 4, 8, 12, 16, … A number has a few factors but endless multiples."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Factors of 12",
+       "lines": [
+        "1, 2, 3, 4, 6, 12",
+        "(they divide 12)"
+       ]
+      },
+      "right": {
+       "title": "Multiples of 4",
+       "lines": [
+        "4, 8, 12, 16, 20, …",
+        "(the 4 times table)"
+       ]
+      },
+      "caption": "Factors divide a number. Multiples are made from it."
+     },
+     "think": {
+      "question": "List the factors of 18.",
+      "answer": "1, 2, 3, 6, 9, 18."
+     },
+     "aha": "Factors divide a number exactly. Multiples are the times table of a number."
     },
     {
-     "title": "Prime factorisation method",
+     "title": "HCF: the biggest equal group",
+     "story": "Anu has 12 red and 18 blue balloons. She wants to make bunches with the same number of balloons in each, and all balloons used, one colour per bunch. What is the biggest bunch size?",
      "text": [
-      "Write each number as a product of primes. HCF = product of the common primes with the smaller powers. LCM = product of all primes with the larger powers.",
-      "84 = 2² × 3 × 7 and 90 = 2 × 3² × 5. HCF = 2 × 3 = 6. LCM = 2² × 3² × 5 × 7 = 1,260."
+      "The bunch size must be a factor of 12 and a factor of 18: a common factor. Common factors are 1, 2, 3 and 6.",
+      "The biggest one is 6. This is the Highest Common Factor, HCF(12, 18) = 6. She makes 2 red and 3 blue bunches."
      ],
-     "points": [
-      "HCF: common, smaller powers. LCM: all, larger powers."
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Factors of 12",
+       "lines": [
+        "1, 2, 3, 4, 6, 12"
+       ]
+      },
+      "right": {
+       "title": "Factors of 18",
+       "lines": [
+        "1, 2, 3, 6, 9, 18",
+        "common: 1, 2, 3, 6",
+        "HCF = 6"
+       ]
+      },
+      "caption": "The largest common factor is the HCF."
+     },
+     "think": {
+      "question": "Find the HCF of 36 and 48.",
+      "answer": "Common factors 1, 2, 3, 4, 6, 12, so HCF = 12."
+     },
+     "aha": "HCF = the largest number that divides all the given numbers. It answers 'biggest equal group' questions."
+    },
+    {
+     "title": "LCM: when do they meet again?",
+     "story": "Asha runs one round in 6 minutes and Bina in 8 minutes. They start together. When are they next at the start together?",
+     "text": [
+      "Asha is at the start at 6, 12, 18, 24, … minutes (multiples of 6). Bina is there at 8, 16, 24, … (multiples of 8).",
+      "The first common time is 24 minutes. This is the Lowest Common Multiple, LCM(6, 8) = 24."
      ],
-     "example": {
-      "question": "Find the LCM of 15, 20 and 25.",
-      "steps": [
-       "3 × 5, 2² × 5, 5².",
-       "Take 2², 3, 5²."
+     "picture": {
+      "kind": "numberline",
+      "from": 0,
+      "to": 24,
+      "step": 2,
+      "points": [
+       {
+        "value": 6,
+        "label": "A"
+       },
+       {
+        "value": 12,
+        "label": "A"
+       },
+       {
+        "value": 18,
+        "label": "A"
+       },
+       {
+        "value": 8,
+        "label": "B"
+       },
+       {
+        "value": 16,
+        "label": "B"
+       },
+       {
+        "value": 24,
+        "label": "together!",
+        "gold": true
+       }
       ],
-      "answer": "300"
-     }
+      "caption": "The first time both are at the start is minute 24."
+     },
+     "think": {
+      "question": "Find the LCM of 4 and 6.",
+      "answer": "Multiples of 4: 4, 8, 12 …; of 6: 6, 12 … LCM = 12."
+     },
+     "aha": "LCM = the smallest number that all the given numbers divide. It answers 'next time together' questions."
     },
     {
-     "title": "HCF × LCM",
+     "title": "The prime-factor shortcut",
+     "story": "For big numbers like 84 and 90, listing factors takes too long. Thatha shows Anu a factor tree.",
      "text": [
-      "For two numbers a and b: HCF × LCM = a × b. Use it to find a missing number.",
-      "Check: 8 and 12 → HCF 4, LCM 24, and 4 × 24 = 96 = 8 × 12."
+      "Break each number into primes: 84 = 2 × 2 × 3 × 7 and 90 = 2 × 3 × 3 × 5.",
+      "HCF: take the primes they share, as many times as both have them: 2 × 3 = 6. LCM: take every prime the greatest number of times it appears: 2 × 2 × 3 × 3 × 5 × 7 = 1,260."
      ],
+     "picture": {
+      "kind": "tree",
+      "root": "84",
+      "children": [
+       {
+        "label": "4",
+        "children": [
+         "2",
+         "2"
+        ]
+       },
+       {
+        "label": "21",
+        "children": [
+         "3",
+         "7"
+        ]
+       }
+      ],
+      "caption": "84 = 4 × 21 = 2 × 2 × 3 × 7. The gold circles are primes."
+     },
+     "think": {
+      "question": "For two numbers, check that HCF × LCM = the product.",
+      "answer": "6 × 1,260 = 7,560 = 84 × 90. ✓"
+     },
+     "aha": "HCF: shared primes with the smaller powers. LCM: all primes with the larger powers.",
      "formulas": [
       "HCF × LCM = a × b (two numbers)"
      ]
     },
     {
-     "title": "HCF or LCM? Reading word problems",
+     "title": "A quick ladder and some patterns",
+     "story": "Thatha shows Anu a fast way to find the HCF and LCM of 12 and 18 together, in a 'ladder'.",
      "text": [
-      "HCF: 'largest', 'greatest size', 'equal groups', 'tiles', 'boxes', 'cut into equal pieces'.",
-      "LCM: 'next time together', 'smallest number divisible by', 'bells', 'traffic lights', 'runners'.",
-      "For remainders: the smallest number leaving remainder r when divided by a, b, c is LCM(a, b, c) + r."
+      "Divide both numbers by a prime that divides both: 2 → 6 and 9. Then 3 → 2 and 3. Stop when no prime divides both.",
+      "HCF = the primes on the left: 2 × 3 = 6. LCM = the left primes × the numbers at the bottom: 2 × 3 × 2 × 3 = 36.",
+      "Patterns: the HCF of two consecutive numbers is 1. For co-prime numbers, LCM = product. If one number divides the other, the HCF is the smaller and the LCM is the larger. The HCF always divides the LCM."
      ],
-     "points": [
-      "Largest piece → HCF. Next meeting → LCM."
-     ]
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "2",
+        "12",
+        "18"
+       ],
+       [
+        "3",
+        "6",
+        "9"
+       ],
+       [
+        "",
+        "2",
+        "3"
+       ]
+      ],
+      "gold": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "caption": "Ladder method: HCF = 2 × 3 = 6; LCM = 2 × 3 × 2 × 3 = 36."
+     },
+     "think": {
+      "question": "Find the HCF and LCM of 9 and 10 without working.",
+      "answer": "They are consecutive, so HCF = 1 and LCM = 90."
+     },
+     "aha": "Ladder: divide both by common primes. HCF = left primes. LCM = left primes × bottom numbers."
+    },
+    {
+     "title": "HCF or LCM? Reading the question",
+     "story": "Ravi always mixes them up. Thatha gives him a trick: listen to the question's words.",
+     "text": [
+      "HCF words: 'largest', 'greatest size', 'equal groups', 'tiles', 'boxes', 'cut into equal pieces'. The answer is SMALLER than (or equal to) the numbers.",
+      "LCM words: 'next time together', 'smallest number divisible by', 'bells ring together', 'lights change together'. The answer is BIGGER than (or equal to) the numbers.",
+      "For remainders: the smallest number that leaves remainder 2 when divided by 6, 8 and 10 is LCM + 2 = 120 + 2 = 122."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "HCF",
+       "lines": [
+        "largest tile",
+        "equal boxes of fruit",
+        "answer ≤ the numbers"
+       ]
+      },
+      "right": {
+       "title": "LCM",
+       "lines": [
+        "bells ring together",
+        "runners meet again",
+        "answer ≥ the numbers"
+       ]
+      },
+      "caption": "The words in the question tell you which to use."
+     },
+     "think": {
+      "question": "Three bells ring every 12, 15 and 20 minutes, together at 8:00. When next?",
+      "answer": "LCM = 60 minutes, so at 9:00."
+     },
+     "aha": "Splitting into equal parts → HCF. Meeting again → LCM."
     }
    ],
    "examples": [
@@ -762,20 +919,20 @@
    "subtitle": "Multiplying & Dividing Decimals",
    "concepts": [
     {
-     "title": "Multiplying and dividing by 10, 100, 1,000",
-     "text": "× 10 moves the point 1 place right; × 100 moves it 2 places; × 1,000 moves it 3 places. Division moves it left in the same way."
+     "title": "Sliding the point",
+     "text": "× 10ⁿ: move the point n places right. ÷ 10ⁿ: move it n places left."
     },
     {
      "title": "Multiplying decimals",
-     "text": "Multiply as if there were no points. Then count the total decimal places in both numbers, and put that many places in the answer."
+     "text": "Multiply as whole numbers, then give the answer as many decimal places as the question has altogether."
     },
     {
      "title": "Dividing decimals",
-     "text": "Make the divisor a whole number: multiply both numbers by the same power of 10. 7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2."
+     "text": "Move the point in both numbers by the same number of places until the divisor is whole."
     },
     {
-     "title": "Fractions to decimals",
-     "text": "Divide the numerator by the denominator: 3/8 = 0.375. Or make the denominator 10, 100 or 1,000: 7/20 = 35/100 = 0.35."
+     "title": "Fractions that stop and fractions that repeat",
+     "text": "In lowest terms, a denominator with only 2s and 5s gives a terminating decimal; any other prime gives a repeating one."
     }
    ],
    "formulas": [
@@ -854,75 +1011,207 @@
     "Make the divisor whole.",
     "Only 2s and 5s → terminating."
    ],
-   "intro": "In Chapter 3 you added and subtracted decimals. Now you multiply and divide them, as you do when you find the cost of 12.4 litres of petrol. You also learn why some fractions give decimals that end and others repeat forever.",
+   "intro": "Thatha fills 12.4 litres of petrol at ₹102.50 per litre. 'What is the bill?' he asks Anu. Then he cuts a 9.6 m ribbon into 0.32 m pieces.",
    "before": [
     "add and subtract decimals",
     "multiply and divide whole numbers",
     "know place value after the decimal point"
    ],
-   "glossary": [
-    {
-     "term": "Decimal places",
-     "meaning": "The number of digits after the point. 2.35 has 2 decimal places."
-    },
-    {
-     "term": "Terminating decimal",
-     "meaning": "A decimal that ends, such as 0.375."
-    },
-    {
-     "term": "Repeating decimal",
-     "meaning": "A decimal in which a digit or group repeats forever, such as 0.333…"
-    },
-    {
-     "term": "Power of 10",
-     "meaning": "10, 100, 1,000, …"
-    }
-   ],
    "lessons": [
     {
-     "title": "Multiplying and dividing by 10, 100, 1,000",
+     "title": "Sliding the point",
+     "story": "Anu multiplies 2.5 × 10 and gets 25. Then 2.5 × 100 = 250. 'The digits stay the same. Only the point moves!'",
      "text": [
-      "× 10 moves the point 1 place right; × 100 moves it 2 places; × 1,000 moves it 3 places. Division moves it left in the same way.",
-      "2.5 × 10 = 25; 3.7 ÷ 100 = 0.037."
+      "Multiplying by 10 makes every digit 10 times bigger, so each digit moves one place left: the point moves 1 place right. × 100 moves it 2 places, × 1,000 moves it 3 places.",
+      "Dividing moves the point to the left: 3.7 ÷ 100 = 0.037."
      ],
-     "points": [
-      "Count the zeros = places to move."
-     ]
+     "picture": {
+      "kind": "placevalue",
+      "heads": [
+       "Hundreds",
+       "Tens",
+       "Ones",
+       "•",
+       "Tenths"
+      ],
+      "digits": [
+       "2",
+       "5",
+       "0",
+       ".",
+       "0"
+      ],
+      "gold": [
+       0,
+       1
+      ],
+      "caption": "2.5 × 100 = 250: each digit moves two places to the left."
+     },
+     "think": {
+      "question": "Find 63.9 ÷ 1,000.",
+      "answer": "0.0639."
+     },
+     "aha": "× 10ⁿ: move the point n places right. ÷ 10ⁿ: move it n places left."
     },
     {
      "title": "Multiplying decimals",
+     "story": "Anu finds 0.3 × 0.2. Ravi says 0.6. Anu draws a picture.",
      "text": [
-      "Multiply as if there were no points. Then count the total decimal places in both numbers, and put that many places in the answer.",
-      "0.3 × 0.2: 3 × 2 = 6, with 2 places → 0.06."
+      "0.3 is 3 tenths and 0.2 is 2 tenths. In a 10 × 10 square, 3 tenths of 2 tenths is 6 small squares out of 100, that is 0.06. Ravi was wrong.",
+      "Quick method: multiply as whole numbers (3 × 2 = 6), then count the decimal places in the question (1 + 1 = 2) and put that many places in the answer: 0.06."
      ],
-     "points": [
-      "Total places in the question = places in the answer."
-     ],
-     "example": {
+     "picture": {
+      "kind": "area",
+      "rows": 10,
+      "cols": 10,
+      "shadeRows": 3,
+      "shadeCols": 2,
+      "label": "0.3 × 0.2 = 0.06",
+      "caption": "The gold overlap is 6 out of 100 small squares."
+     },
+     "think": {
       "question": "Find 2.35 × 1.4.",
-      "steps": [
-       "235 × 14 = 3,290.",
-       "2 + 1 = 3 places."
+      "answer": "235 × 14 = 3,290; 2 + 1 = 3 places: 3.290 = 3.29."
+     },
+     "aha": "Multiply as whole numbers, then give the answer as many decimal places as the question has altogether."
+    },
+    {
+     "title": "Can multiplying make a number smaller?",
+     "story": "Ravi multiplies 8 × 0.5 and gets 4. 'Multiplication made it smaller! Is my calculator broken?'",
+     "text": [
+      "No. Multiplying by a number less than 1 makes the answer smaller: 0.5 is a half, so 8 × 0.5 = 4. Multiplying by 1 keeps it the same. Multiplying by a number more than 1 makes it bigger.",
+      "Division works the other way: dividing by a number less than 1 makes the answer bigger. 6 ÷ 0.5 = 12, because twelve halves make 6."
+     ],
+     "picture": {
+      "kind": "numberline",
+      "from": 0,
+      "to": 16,
+      "step": 2,
+      "points": [
+       {
+        "value": 4,
+        "label": "8 × 0.5"
+       },
+       {
+        "value": 8,
+        "label": "8 × 1"
+       },
+       {
+        "value": 12,
+        "label": "8 × 1.5",
+        "gold": true
+       }
       ],
-      "answer": "3.29"
-     }
+      "caption": "× less than 1 → smaller. × more than 1 → bigger."
+     },
+     "think": {
+      "question": "Is 45 × 0.9 more or less than 45?",
+      "answer": "Less, because 0.9 is less than 1 (it is 40.5)."
+     },
+     "aha": "× a decimal less than 1 makes smaller. ÷ a decimal less than 1 makes bigger."
     },
     {
      "title": "Dividing decimals",
+     "story": "Thatha cuts a 9.6 m ribbon into pieces of 0.32 m. How many pieces?",
      "text": [
-      "Make the divisor a whole number: multiply both numbers by the same power of 10. 7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2.",
-      "This does not change the answer, because both numbers grow by the same factor."
+      "Dividing by a decimal is hard, so first make the divisor a whole number. Multiply both numbers by 100: 9.6 ÷ 0.32 = 960 ÷ 32 = 30 pieces.",
+      "This does not change the answer, because both numbers grow by the same factor, like sharing 960 paise instead of ₹9.60."
      ],
-     "points": [
-      "Move both points the same number of places."
-     ]
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "9.6 ÷ 0.32",
+       "× 100 on both",
+       "960 ÷ 32",
+       "= 30 pieces"
+      ],
+      "caption": "Make the divisor a whole number first."
+     },
+     "think": {
+      "question": "Find 7.56 ÷ 1.8.",
+      "answer": "75.6 ÷ 18 = 4.2."
+     },
+     "aha": "Move the point in both numbers by the same number of places until the divisor is whole."
     },
     {
-     "title": "Fractions to decimals",
+     "title": "Long division with decimals",
+     "story": "Anu shares 7 rotis equally among 4 friends. Each gets more than 1 roti, but how much more?",
      "text": [
-      "Divide the numerator by the denominator: 3/8 = 0.375. Or make the denominator 10, 100 or 1,000: 7/20 = 35/100 = 0.35.",
-      "In lowest terms, if the denominator has only 2s and 5s as prime factors, the decimal terminates. Otherwise it repeats: 1/3 = 0.333…, 5/11 = 0.4545…"
-     ]
+      "7 ÷ 4 = 1 remainder 3. Put a decimal point and add a zero: 30 ÷ 4 = 7 remainder 2. Add another zero: 20 ÷ 4 = 5. So 7 ÷ 4 = 1.75.",
+      "Sometimes the remainders repeat forever: 2 ÷ 3 = 0.666…",
+      "Special divisors: ÷ 0.1 = × 10, ÷ 0.5 = × 2, ÷ 0.25 = × 4. If the divisor is halved, the quotient doubles."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "7 ÷ 4 = 1 r 3",
+       "30 ÷ 4 = 7 r 2",
+       "20 ÷ 4 = 5 r 0",
+       "7 ÷ 4 = 1.75"
+      ],
+      "caption": "Add zeros after the decimal point and keep dividing."
+     },
+     "think": {
+      "question": "Find 9 ÷ 0.25 in your head.",
+      "answer": "÷ 0.25 = × 4, so 36."
+     },
+     "aha": "Keep dividing by adding zeros after the decimal point. ÷ 0.5 means × 2."
+    },
+    {
+     "title": "Fractions that stop and fractions that repeat",
+     "story": "Anu changes 3/8 into a decimal: 0.375. It stops. Then she tries 1/3: 0.3333… The 3s never end!",
+     "text": [
+      "To change a fraction to a decimal, divide the top by the bottom. Sometimes the division ends (terminating decimal). Sometimes a digit or group repeats forever (repeating decimal).",
+      "The secret is in the denominator (in lowest terms). If its only prime factors are 2 and 5, the decimal stops, because it can become 10, 100, 1,000 … Otherwise it repeats. 7/20 = 35/100 = 0.35 stops; 5/11 = 0.4545… repeats."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Stops",
+       "lines": [
+        "3/8 = 0.375 (8 = 2³)",
+        "7/20 = 0.35 (20 = 2² × 5)",
+        "3/25 = 0.12"
+       ]
+      },
+      "right": {
+       "title": "Repeats",
+       "lines": [
+        "1/3 = 0.333…",
+        "2/9 = 0.222…",
+        "5/11 = 0.4545…"
+       ]
+      },
+      "caption": "Only 2s and 5s in the denominator → the decimal stops."
+     },
+     "think": {
+      "question": "Does 1/6 terminate?",
+      "answer": "No. 6 = 2 × 3 has a 3, so 1/6 = 0.1666… repeats."
+     },
+     "aha": "In lowest terms, a denominator with only 2s and 5s gives a terminating decimal; any other prime gives a repeating one."
+    },
+    {
+     "title": "Money and measurement problems",
+     "story": "Thatha's petrol bill: 12.4 litres at ₹102.50. Anu estimates first: about 12 × 100 = ₹1,200.",
+     "text": [
+      "Exact: 102.50 × 12.4 = 1,271. The bill is ₹1,271, close to the estimate, so the answer makes sense.",
+      "Always estimate first. If your exact answer is far from the estimate, check the decimal point."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Estimate: 100 × 12 ≈ 1,200",
+       "Exact: 10250 × 124",
+       "Places: 2 + 1 = 3",
+       "₹1,271.000 = ₹1,271"
+      ],
+      "caption": "Estimate, calculate, then compare."
+     },
+     "think": {
+      "question": "A pen costs ₹7.75. Find the cost of 24 pens.",
+      "answer": "₹186."
+     },
+     "aha": "Estimate first; it catches a misplaced decimal point."
     }
    ],
    "examples": [
@@ -998,20 +1287,20 @@
    "subtitle": "Statistical Questions, Mean, Median & Range",
    "concepts": [
     {
-     "title": "Statistical questions and statements",
-     "text": "'How tall is Ravi?' has one answer. 'How tall are the students of Class 7?' expects many different answers: it is a statistical question."
+     "title": "Questions with many answers",
+     "text": "A statistical question expects answers that vary."
     },
     {
-     "title": "The mean",
-     "text": "Add all the values and divide by how many there are. Mean of 2, 7, 9, 4, 3 = 25 ÷ 5 = 5."
+     "title": "The mean: sharing equally",
+     "text": "Mean = total ÷ number of values. It is the 'fair share' value."
     },
     {
-     "title": "The median",
-     "text": "Arrange the data in order. If the count is odd, the median is the middle value. If it is even, the median is the mean of the two middle values."
+     "title": "The median: the middle one",
+     "text": "Order the data first. The median is the middle value; one extreme value cannot move it much."
     },
     {
-     "title": "Range and comparing data",
-     "text": "Range = highest − lowest. A small range means the data are close together (consistent)."
+     "title": "Range: how spread out?",
+     "text": "Range = highest − lowest. A small range means consistent data."
     }
    ],
    "formulas": [
@@ -1089,79 +1378,220 @@
     "Mean = sum ÷ count.",
     "Range shows spread."
    ],
-   "intro": "Data are collections of numbers about the world: marks, prices, heights. In this chapter you learn to ask good statistical questions and to describe data with one 'representative value' (the mean or the median) and its spread (the range).",
+   "intro": "Anu's class wants to know: who is more consistent, batter A or batter B? Which town has costlier onions? Questions like these are answered with data.",
    "before": [
     "add and divide numbers, including decimals",
     "arrange numbers in order"
    ],
-   "glossary": [
-    {
-     "term": "Data",
-     "meaning": "A collection of numbers or facts."
-    },
-    {
-     "term": "Statistical question",
-     "meaning": "A question whose answer depends on data that varies."
-    },
-    {
-     "term": "Mean (average)",
-     "meaning": "Sum of the values ÷ number of values."
-    },
-    {
-     "term": "Median",
-     "meaning": "The middle value after arranging the data in order."
-    },
-    {
-     "term": "Range",
-     "meaning": "Highest value − lowest value. It measures spread."
-    }
-   ],
    "lessons": [
     {
-     "title": "Statistical questions and statements",
+     "title": "Questions with many answers",
+     "story": "Ravi asks, 'How tall is our teacher?' Anu asks, 'How tall are the students in our class?'",
      "text": [
-      "'How tall is Ravi?' has one answer. 'How tall are the students of Class 7?' expects many different answers: it is a statistical question.",
-      "A statistical statement describes data, for example 'Most students in our class are between 140 cm and 150 cm tall.'"
-     ]
-    },
-    {
-     "title": "The mean",
-     "text": [
-      "Add all the values and divide by how many there are. Mean of 2, 7, 9, 4, 3 = 25 ÷ 5 = 5.",
-      "If the mean and the number of values are known, total = mean × number. Use this to find a missing value."
+      "Ravi's question has one answer. Anu's question has many different answers, because heights vary from student to student. A question that expects varied data is a statistical question.",
+      "To answer it, we collect data and describe it with a few numbers: a typical value and a measure of spread."
      ],
-     "formulas": [
-      "Mean = sum ÷ count",
-      "Sum = mean × count"
-     ],
-     "example": {
-      "question": "The mean of five numbers is 12; four are 10, 14, 9, 15. Find the fifth.",
-      "steps": [
-       "Total = 60.",
-       "60 − 48."
+     "picture": {
+      "kind": "dotplot",
+      "values": [
+       138,
+       140,
+       140,
+       142,
+       143,
+       143,
+       143,
+       145,
+       147,
+       150
       ],
-      "answer": "12"
-     }
+      "min": 136,
+      "max": 152,
+      "caption": "Heights of 10 students (cm): the values vary, so we need statistics."
+     },
+     "think": {
+      "question": "Is 'What is your shoe size?', asked to the whole class, a statistical question?",
+      "answer": "Yes, the answers vary."
+     },
+     "aha": "A statistical question expects answers that vary."
     },
     {
-     "title": "The median",
+     "title": "The mean: sharing equally",
+     "story": "Shreyas bounces a ball on his bat in 8 tries: 6, 2, 9, 5, 4, 6, 3, 5 bounces. 'What is my usual score?'",
      "text": [
-      "Arrange the data in order. If the count is odd, the median is the middle value. If it is even, the median is the mean of the two middle values.",
-      "The median is not affected much by one very large or very small value, so it is often better than the mean for such data."
+      "Imagine pouring all the bounces together and sharing them equally among the 8 tries. Total = 40. 40 ÷ 8 = 5. The mean (average) is 5.",
+      "If you know the mean and the number of values, the total is mean × number. Use this to find a missing value."
      ],
-     "points": [
-      "Always order the data first."
+     "picture": {
+      "kind": "bars",
+      "labels": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "values": [
+       6,
+       2,
+       9,
+       5,
+       4,
+       6,
+       3,
+       5
+      ],
+      "gold": 3,
+      "caption": "Levelling the bars to the same height gives the mean, 5."
+     },
+     "think": {
+      "question": "The mean of five numbers is 12. Four are 10, 14, 9, 15. Find the fifth.",
+      "answer": "Total = 60, so the fifth = 60 − 48 = 12."
+     },
+     "aha": "Mean = total ÷ number of values. It is the 'fair share' value.",
+     "formulas": [
+      "Mean = sum ÷ count"
      ]
     },
     {
-     "title": "Range and comparing data",
+     "title": "The median: the middle one",
+     "story": "Seven friends get pocket money: ₹50, 60, 55, 300, 65, 45, 70. The mean is about ₹92. 'But nobody except one gets that much!' says Anu.",
      "text": [
-      "Range = highest − lowest. A small range means the data are close together (consistent).",
-      "To compare two groups, compare their means (or medians) and their ranges. A dot plot shows each value as a dot above a number line."
+      "Arrange the values in order: 45, 50, 55, 60, 65, 70, 300. The middle value is ₹60. This is the median.",
+      "For an even number of values, the median is the mean of the two middle values. The median is not pulled up by one very large value, so here it describes a typical friend better than the mean."
      ],
+     "picture": {
+      "kind": "dotplot",
+      "values": [
+       45,
+       50,
+       55,
+       60,
+       65,
+       70
+      ],
+      "min": 40,
+      "max": 80,
+      "mark": {
+       "value": 60,
+       "label": "median 60"
+      },
+      "caption": "(300 is far off the scale.) The middle value is 60."
+     },
+     "think": {
+      "question": "Find the median of 25, 24, 26, 28, 30, 35.",
+      "answer": "Ordered middle values 26 and 28: median = 27."
+     },
+     "aha": "Order the data first. The median is the middle value; one extreme value cannot move it much."
+    },
+    {
+     "title": "Mean or median: which to use?",
+     "story": "Two shops sell onions. Anu writes the monthly prices for each shop and must say where onions are usually cheaper.",
+     "text": [
+      "If the data has no very large or very small values, the mean and the median are close, and either works.",
+      "If one or two values are extreme (like ₹300 pocket money among ₹50–₹70), use the median. The mean gets pulled towards the extreme value.",
+      "The mean need not be one of the data values (the mean of 2 and 3 is 2.5), but it always lies between the smallest and the largest value."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Use the mean",
+       "lines": [
+        "values are close together",
+        "no extreme values",
+        "you want a fair share"
+       ]
+      },
+      "right": {
+       "title": "Use the median",
+       "lines": [
+        "one or two extreme values",
+        "you want a typical value",
+        "data is very uneven"
+       ]
+      },
+      "caption": "Choosing the representative value."
+     },
+     "think": {
+      "question": "Marks: 35, 40, 38, 95, 37. Which describes a typical mark better?",
+      "answer": "The median (38). The mean (49) is pulled up by 95."
+     },
+     "aha": "Extreme values pull the mean; the median stays in the middle."
+    },
+    {
+     "title": "Range: how spread out?",
+     "story": "Batter A scored 20, 45, 30, 50, 35. Batter B scored 10, 90, 5, 60, 15. Both have mean 36. Who is more reliable?",
+     "text": [
+      "Range = highest − lowest. A: 50 − 20 = 30. B: 90 − 5 = 85.",
+      "A smaller range means the values stay close together. A is more consistent, even though both have the same mean."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Batter A",
+       "lines": [
+        "20, 45, 30, 50, 35",
+        "mean 36",
+        "range 30"
+       ]
+      },
+      "right": {
+       "title": "Batter B",
+       "lines": [
+        "10, 90, 5, 60, 15",
+        "mean 36",
+        "range 85"
+       ]
+      },
+      "caption": "Same mean, very different spread."
+     },
+     "think": {
+      "question": "Find the range of 12, 7, 20, 15.",
+      "answer": "20 − 7 = 13."
+     },
+     "aha": "Range = highest − lowest. A small range means consistent data.",
      "formulas": [
       "Range = max − min"
      ]
+    },
+    {
+     "title": "Telling the story of data",
+     "story": "The maximum temperatures of a week are 31, 33, 30, 34, 32, 35, 29 °C. Anu writes a report for the class notice board.",
+     "text": [
+      "Mean = 224 ÷ 7 = 32°C. Median (ordered middle) = 32°C. Range = 35 − 29 = 6°C.",
+      "Statistical statement: 'This week was warm, with a typical maximum of 32°C, and the days were similar (range 6°C).'"
+     ],
+     "picture": {
+      "kind": "bars",
+      "labels": [
+       "M",
+       "T",
+       "W",
+       "T",
+       "F",
+       "S",
+       "S"
+      ],
+      "values": [
+       31,
+       33,
+       30,
+       34,
+       32,
+       35,
+       29
+      ],
+      "gold": 5,
+      "caption": "Daily maximum temperatures (°C)."
+     },
+     "think": {
+      "question": "Which is a better typical value when one value is extreme: mean or median?",
+      "answer": "The median."
+     },
+     "aha": "Describe data with a typical value (mean or median) and a spread (range)."
     }
    ],
    "examples": [
@@ -1239,20 +1669,20 @@
    "subtitle": "Compass Constructions & Tessellations",
    "concepts": [
     {
-     "title": "Perpendicular bisector",
-     "text": "Open the compasses to more than half of AB. Draw arcs above and below AB from A, then from B with the same radius. Join the two crossing points."
+     "title": "Cutting a line exactly in half",
+     "text": "Equal arcs from both ends cross on the perpendicular bisector."
     },
     {
-     "title": "Angles of 60°, 30°, 90° and 45°",
-     "text": "60°: from the vertex, draw an arc; from where it cuts the arm, cut the arc again with the same radius. Join."
+     "title": "Angles without a protractor",
+     "text": "Same radius three times makes an equilateral triangle, which gives 60°. Bisect to halve an angle."
     },
     {
-     "title": "Parallel line through a point",
-     "text": "Draw any line through P that crosses l. Copy the angle that it makes with l at P, in the corresponding position. The equal corresponding angles make the new line parallel to l."
+     "title": "Parallel lines with compasses",
+     "text": "Copy a corresponding angle to draw a parallel line."
     },
     {
-     "title": "Which shapes tile?",
-     "text": "At each corner of a tiling, the angles must add to exactly 360°."
+     "title": "Which tiles fit?",
+     "text": "Shapes tile when their angles at each corner add up to exactly 360°."
     }
    ],
    "formulas": [
@@ -1330,72 +1760,273 @@
     "Bisect to halve an angle.",
     "Tiles must total 360° at a corner."
    ],
-   "intro": "With only a ruler and compasses, you can draw exact right angles, 60° angles and parallel lines. In this chapter you learn these constructions and then use angle facts to see which tile shapes can cover a floor without gaps.",
+   "intro": "Anu's school is laying a new floor with tiles. 'Why are tiles always squares or hexagons, and never pentagons?' she asks. Thatha answers with angles.",
    "before": [
     "use a ruler and compasses",
     "know the angle sum of a triangle and that angles round a point add to 360°"
    ],
-   "glossary": [
-    {
-     "term": "Perpendicular bisector",
-     "meaning": "A line at 90° through the mid-point of a segment."
-    },
-    {
-     "term": "Angle bisector",
-     "meaning": "A ray that splits an angle into two equal parts."
-    },
-    {
-     "term": "Regular polygon",
-     "meaning": "All sides equal and all angles equal."
-    },
-    {
-     "term": "Tiling (tessellation)",
-     "meaning": "Covering a surface with shapes, without gaps or overlaps."
-    }
-   ],
    "lessons": [
     {
-     "title": "Perpendicular bisector",
+     "title": "Drawing an eye with arcs",
+     "story": "Anu's art teacher asks her to draw an eye shape using only compasses. 'Where do I put the compass point?'",
      "text": [
-      "Open the compasses to more than half of AB. Draw arcs above and below AB from A, then from B with the same radius. Join the two crossing points.",
-      "Every point on this line is the same distance from A and B."
-     ]
-    },
-    {
-     "title": "Angles of 60°, 30°, 90° and 45°",
-     "text": [
-      "60°: from the vertex, draw an arc; from where it cuts the arm, cut the arc again with the same radius. Join.",
-      "Bisect any angle: from the two points where an arc cuts the arms, draw equal arcs inside; join the vertex to their crossing point. Bisect 60° for 30°, 90° for 45°."
+      "Draw a line AB. With the point on A and a radius bigger than AB, draw an arc above B. With the point on B and the same radius, draw a matching arc. The two arcs make the upper eyelid.",
+      "Repeat below the line for the lower eyelid, and draw a small circle in the middle for the pupil. Every arc is part of a circle whose centre is the compass point."
      ],
-     "points": [
-      "Keep the compass width fixed during each step."
-     ]
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Draw line AB",
+       "Arc from A",
+       "Arc from B (same radius)",
+       "Repeat below; add pupil"
+      ],
+      "caption": "Arcs from the two ends make an eye."
+     },
+     "think": {
+      "question": "What stays the same along an arc?",
+      "answer": "The distance from the compass point (the radius)."
+     },
+     "aha": "Every arc is part of a circle. The compass point is the centre."
     },
     {
-     "title": "Parallel line through a point",
+     "title": "Cutting a line exactly in half",
+     "story": "Anu must mark the exact middle of an 8 cm strip without measuring 4 cm.",
      "text": [
-      "Draw any line through P that crosses l. Copy the angle that it makes with l at P, in the corresponding position. The equal corresponding angles make the new line parallel to l."
-     ]
-    },
-    {
-     "title": "Which shapes tile?",
-     "text": [
-      "At each corner of a tiling, the angles must add to exactly 360°.",
-      "Interior angle of a regular polygon with n sides = 180° × (n − 2) ÷ n. Triangle 60°, square 90°, pentagon 108°, hexagon 120°, octagon 135°.",
-      "Only regular triangles, squares and hexagons tile alone. Mixtures also work if the angles at a point add to 360°."
+      "Open the compasses to more than half the length. From A, draw arcs above and below the line. Keep the same opening and draw arcs from B. Join the two crossing points.",
+      "This line cuts AB in half at a right angle: it is the perpendicular bisector. Every point on it is the same distance from A and B."
      ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Compasses > half of AB",
+       "Arcs from A, above and below",
+       "Same arcs from B",
+       "Join the crossings"
+      ],
+      "caption": "Constructing the perpendicular bisector."
+     },
+     "think": {
+      "question": "Why must the compass opening be more than half of AB?",
+      "answer": "Otherwise the arcs from A and B do not cross."
+     },
+     "aha": "Equal arcs from both ends cross on the perpendicular bisector."
+    },
+    {
+     "title": "A right angle the Śulba-sūtra way",
+     "story": "About 2,800 years ago, Indian builders made fire altars with exact right angles. They had no protractors, only ropes and pegs.",
+     "text": [
+      "The Śulba-sūtras describe a rope with knots that divide it into 3, 4 and 5 equal parts. Stretch it into a triangle: the angle between the 3 and 4 parts is exactly 90°.",
+      "With compasses: to draw 90° at a point P on a line, mark two points at the same distance on both sides of P, then construct the perpendicular bisector of those two points. It passes through P at 90°."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "The rope",
+       "lines": [
+        "12 equal parts",
+        "knots after 3 and 7 parts",
+        "stretch into a triangle: 3, 4, 5"
+       ]
+      },
+      "right": {
+       "title": "The result",
+       "lines": [
+        "the 3-part and 4-part sides",
+        "meet at exactly 90°",
+        "(9 + 16 = 25)"
+       ]
+      },
+      "caption": "A 3-4-5 rope triangle gives a right angle."
+     },
+     "think": {
+      "question": "Would a rope triangle of 6, 8 and 10 parts also give 90°?",
+      "answer": "Yes; it is the 3-4-5 triangle doubled."
+     },
+     "aha": "3-4-5 triangles make right angles. Compasses can also build 90° with a perpendicular bisector."
+    },
+    {
+     "title": "Angles without a protractor",
+     "story": "Ravi has no protractor, but he needs a 60° angle.",
+     "text": [
+      "From the vertex O, draw an arc that cuts the arm at P. With the same opening, put the compass point on P and cut the arc at Q. ∠POQ = 60°, because O, P and Q make an equilateral triangle.",
+      "To halve any angle, draw equal arcs from the two points on its arms and join the vertex to where they cross. Halve 60° for 30°, and halve 90° for 45°."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "Q",
+       "O",
+       "P"
+      ],
+      "angles": [
+       "60°",
+       "60°",
+       "60°"
+      ],
+      "caption": "OP = PQ = OQ, so the triangle is equilateral and ∠POQ = 60°."
+     },
+     "think": {
+      "question": "How can you construct 120°?",
+      "answer": "Step off the 60° arc twice along the circle."
+     },
+     "aha": "Same radius three times makes an equilateral triangle, which gives 60°. Bisect to halve an angle."
+    },
+    {
+     "title": "Copying an angle",
+     "story": "Ravi must draw an angle exactly equal to one in his book, without a protractor.",
+     "text": [
+      "With centre at the book angle's vertex, draw an arc cutting both arms. With the same radius, draw an arc from the start of your new ray.",
+      "Measure the gap between the two crossings on the book angle with your compasses. Use that gap to cut your new arc. Join the vertex to that point. The angles are equal, because the triangles are congruent (SSS)."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Arc on the given angle",
+       "Same arc on the new ray",
+       "Copy the gap width",
+       "Join to the new point"
+      ],
+      "caption": "Copying an angle with compasses."
+     },
+     "think": {
+      "question": "Why are the two angles equal?",
+      "answer": "The two triangles have three equal sides (SSS)."
+     },
+     "aha": "Same radius, same gap: the copied angle is exactly equal."
+    },
+    {
+     "title": "Parallel lines with compasses",
+     "story": "Anu needs a line through point P parallel to line l.",
+     "text": [
+      "Draw any line through P that crosses l. It makes an angle with l. Copy the same angle at P, in the same position (corresponding angle).",
+      "Equal corresponding angles mean the lines are parallel (Chapter 5)."
+     ],
+     "picture": {
+      "kind": "transversal",
+      "labels": [
+       "",
+       "60°",
+       "",
+       "",
+       "",
+       "60°",
+       "",
+       ""
+      ],
+      "caption": "Copying the 60° angle at P gives a line parallel to l."
+     },
+     "think": {
+      "question": "Which angle rule makes this construction work?",
+      "answer": "Equal corresponding angles mean parallel lines."
+     },
+     "aha": "Copy a corresponding angle to draw a parallel line."
+    },
+    {
+     "title": "Hexagons, stars and arches",
+     "story": "Anu draws a circle and, keeping the same compass opening, steps around it. Exactly six steps fit!",
+     "text": [
+      "The side of a regular hexagon equals the radius of its circle. Mark the six points and join them in order: a regular hexagon. Each angle at the centre is 60°.",
+      "Join every second point instead: two overlapping triangles make a six-pointed star. Arches in buildings are drawn with arcs from two centres on the base line."
+     ],
+     "picture": {
+      "kind": "tiles",
+      "shape": "hexagon",
+      "caption": "Regular hexagons; each side equals the radius of its circle."
+     },
+     "think": {
+      "question": "How many 60° angles make a full turn at the centre?",
+      "answer": "6 × 60° = 360°."
+     },
+     "aha": "The radius steps exactly 6 times around its circle, giving a regular hexagon."
+    },
+    {
+     "title": "Which tiles fit?",
+     "story": "At a corner of the floor, several tiles meet at one point. Thatha says, 'The angles at that point must add up to exactly 360°, with no gap and no overlap.'",
+     "text": [
+      "A regular polygon with n sides has each angle 180° × (n − 2) ÷ n. Triangle 60°, square 90°, pentagon 108°, hexagon 120°.",
+      "6 triangles: 6 × 60° = 360° ✓. 4 squares: 4 × 90° = 360° ✓. 3 hexagons: 3 × 120° = 360° ✓. Pentagons: 360 ÷ 108 is not a whole number, so gaps appear."
+     ],
+     "picture": {
+      "kind": "tiles",
+      "shape": "hexagon",
+      "caption": "Three hexagons meet at each corner: 3 × 120° = 360°."
+     },
+     "think": {
+      "question": "Can regular octagons (135°) tile a floor alone?",
+      "answer": "No. 360 ÷ 135 is not a whole number."
+     },
+     "aha": "Shapes tile when their angles at each corner add up to exactly 360°.",
      "formulas": [
       "Interior angle = 180°(n − 2)/n",
-      "Angles at a point = 360°"
+      "Angles round a point = 360°"
+     ]
+    },
+    {
+     "title": "Tangrams",
+     "story": "Thatha cuts a square of card into 7 pieces: 2 large triangles, 1 medium triangle, 2 small triangles, a small square and a parallelogram. 'This is a tangram,' he says.",
+     "text": [
+      "You can rearrange the 7 pieces into animals, people and boats. All the shapes have the same area as the original square, because no piece is lost.",
+      "The 2 large triangles together make half of the square. A small triangle is 1/16 of the square, and the small square, the parallelogram and the medium triangle are each 2 small triangles."
      ],
-     "example": {
-      "question": "Can regular pentagons tile alone?",
-      "steps": [
-       "Angle = 108°.",
-       "360 ÷ 108 is not whole."
-      ],
-      "answer": "No"
-     }
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Pieces",
+       "lines": [
+        "2 large triangles",
+        "1 medium triangle",
+        "2 small triangles",
+        "1 square, 1 parallelogram"
+       ]
+      },
+      "right": {
+       "title": "Area (small triangle = 1)",
+       "lines": [
+        "large triangle = 4",
+        "medium triangle = 2",
+        "square = 2",
+        "parallelogram = 2 (total 16)"
+       ]
+      },
+      "caption": "The 7 tangram pieces always make the same total area."
+     },
+     "think": {
+      "question": "What fraction of the whole square is one large triangle?",
+      "answer": "4/16 = 1/4."
+     },
+     "aha": "Rearranging pieces changes the shape but never the area."
+    },
+    {
+     "title": "Mixing tiles",
+     "story": "Anu sees a floor with octagons and small squares. 'Two kinds of tiles together?'",
+     "text": [
+      "At each corner: 135° + 135° + 90° = 360°. So 2 octagons and 1 square fit.",
+      "Other mixes: 2 triangles + 2 hexagons (60 + 60 + 120 + 120 = 360) and 3 triangles + 2 squares (180 + 180 = 360)."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "2 octagons + 1 square",
+       "lines": [
+        "135° + 135° + 90°",
+        "= 360° ✓"
+       ]
+      },
+      "right": {
+       "title": "2 triangles + 2 hexagons",
+       "lines": [
+        "60° + 60° + 120° + 120°",
+        "= 360° ✓"
+       ]
+      },
+      "caption": "Mixed tiles work when the angles at a corner total 360°."
+     },
+     "think": {
+      "question": "Do 1 triangle and 2 regular 12-gons (150° each) fit at a point?",
+      "answer": "60 + 150 + 150 = 360: yes."
+     },
+     "aha": "Any mix works if the angles at each corner total 360°."
     }
    ],
    "examples": [
@@ -1473,20 +2104,20 @@
    "subtitle": "Simple Linear Equations",
    "concepts": [
     {
-     "title": "The balance idea",
-     "text": "An equation stays true if you add, subtract, multiply or divide both sides by the same number (not dividing by 0)."
+     "title": "An equation is a balance",
+     "text": "Whatever you do to one side, do to the other side."
     },
     {
-     "title": "Brackets and unknowns on both sides",
-     "text": "Expand brackets first, or divide both sides by the number outside: 5(y − 2) = 30 → y − 2 = 6 → y = 8."
+     "title": "Solving step by step",
+     "text": "Undo the last operation first. Check the answer by putting it back into the equation."
     },
     {
-     "title": "Checking a solution",
-     "text": "Put the value back into the original equation. If both sides are equal, the solution is correct."
+     "title": "Letters on both sides",
+     "text": "Move the letter terms to one side and the numbers to the other, using the same step on both sides."
     },
     {
-     "title": "Word problems",
-     "text": "Step 1: let a letter stand for the unknown. Step 2: write the other quantities using that letter. Step 3: form the equation from the condition. Step 4: solve and check. Step 5: answer in words with units."
+     "title": "From story to equation",
+     "text": "Choose a letter, write the other quantities with it, form the equation, solve, then answer in words."
     }
    ],
    "formulas": [
@@ -1562,70 +2193,236 @@
     "Same operation on both sides.",
     "Check the answer."
    ],
-   "intro": "An equation is like a balance: both sides weigh the same. To find the unknown number, you do the same thing to both sides until the letter is alone. In this chapter you learn to solve equations and to turn word problems into equations.",
+   "intro": "Thatha puts 2 small bags of marbles and 9 loose marbles on one side of a balance, and 35 marbles on the other. The balance is level. 'How many marbles are in each bag?' he asks. This is the method of solving equations.",
    "before": [
     "use letter-numbers (Chapter 4)",
     "work with integers and fractions"
    ],
-   "glossary": [
-    {
-     "term": "Equation",
-     "meaning": "A statement that two expressions are equal, such as 2x + 9 = 35."
-    },
-    {
-     "term": "Unknown (variable)",
-     "meaning": "The letter whose value we want."
-    },
-    {
-     "term": "Solution",
-     "meaning": "The value that makes the equation true."
-    },
-    {
-     "term": "LHS and RHS",
-     "meaning": "The left-hand side and the right-hand side of the = sign."
-    }
-   ],
    "lessons": [
     {
-     "title": "The balance idea",
+     "title": "An equation is a balance",
+     "story": "Both sides of Thatha's balance weigh the same. Anu writes what she sees: 2b + 9 = 35, where b is the number of marbles in one bag.",
      "text": [
-      "An equation stays true if you add, subtract, multiply or divide both sides by the same number (not dividing by 0).",
-      "Undo operations in reverse order: in 3x + 4 = 25, first subtract 4, then divide by 3."
+      "An equation says two sides are equal, just like a level balance. The letter is the unknown we want to find.",
+      "If you add or remove the same amount from both sides, the balance stays level. If you double or halve both sides, it still stays level."
      ],
-     "points": [
-      "Whatever you do to one side, do to the other."
+     "picture": {
+      "kind": "balance",
+      "left": "2b + 9",
+      "right": "35",
+      "caption": "Both sides weigh the same."
+     },
+     "think": {
+      "question": "What happens if you remove 9 marbles from one side only?",
+      "answer": "The balance tips. You must remove 9 from both sides."
+     },
+     "aha": "Whatever you do to one side, do to the other side."
+    },
+    {
+     "title": "Solving step by step",
+     "story": "Anu removes the 9 loose marbles from both sides. Now 2 bags balance 26 marbles.",
+     "text": [
+      "2b + 9 = 35. Subtract 9 from both sides: 2b = 26. Divide both sides by 2: b = 13. Each bag has 13 marbles.",
+      "Undo the operations in reverse order. The equation added 9 last, so undo that first; then undo the ×2."
      ],
-     "example": {
+     "picture": {
+      "kind": "balance",
+      "left": "2b",
+      "right": "26",
+      "caption": "After removing 9 from each side: 2b = 26, so b = 13."
+     },
+     "think": {
       "question": "Solve 3x + 4 = 25.",
-      "steps": [
-       "Subtract 4: 3x = 21.",
-       "Divide by 3."
-      ],
-      "answer": "x = 7"
-     }
+      "answer": "3x = 21, so x = 7."
+     },
+     "aha": "Undo the last operation first. Check the answer by putting it back into the equation."
     },
     {
-     "title": "Brackets and unknowns on both sides",
+     "title": "Letters on both sides",
+     "story": "Ravi solves 4x − 7 = 2x + 9. 'There is x on both sides!'",
      "text": [
-      "Expand brackets first, or divide both sides by the number outside: 5(y − 2) = 30 → y − 2 = 6 → y = 8.",
-      "If x appears on both sides, move the x terms to one side and the numbers to the other: 4x − 7 = 2x + 9 → 2x = 16 → x = 8."
-     ]
-    },
-    {
-     "title": "Checking a solution",
-     "text": [
-      "Put the value back into the original equation. If both sides are equal, the solution is correct.",
-      "Check x = 8 in 4x − 7 = 2x + 9: LHS = 25, RHS = 25. Correct."
+      "Remove 2x from both sides: 2x − 7 = 9. Add 7 to both sides: 2x = 16. So x = 8.",
+      "Check: 4 × 8 − 7 = 25 and 2 × 8 + 9 = 25. Both sides are equal, so x = 8 is correct."
      ],
-     "points": [
-      "Always check."
-     ]
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "4x − 7 = 2x + 9",
+       "− 2x: 2x − 7 = 9",
+       "+ 7: 2x = 16",
+       "÷ 2: x = 8"
+      ],
+      "caption": "Collect the letters on one side and the numbers on the other."
+     },
+     "think": {
+      "question": "Solve 6x + 5 = 4x + 15.",
+      "answer": "2x = 10, so x = 5."
+     },
+     "aha": "Move the letter terms to one side and the numbers to the other, using the same step on both sides."
     },
     {
-     "title": "Word problems",
+     "title": "Equations from matchstick patterns",
+     "story": "Anu's row of squares uses 3n + 1 matchsticks (Chapter 4). She has 61 matchsticks. 'How many squares can I make?'",
      "text": [
-      "Step 1: let a letter stand for the unknown. Step 2: write the other quantities using that letter. Step 3: form the equation from the condition. Step 4: solve and check. Step 5: answer in words with units.",
-      "Common forms: perimeter 2(l + b); ages now and after n years; costs 'more than' or 'less than'."
+      "Write the equation: 3n + 1 = 61. Subtract 1: 3n = 60. Divide by 3: n = 20 squares.",
+      "Patterns give rules, and rules give equations. If the result is not a whole number, that number of sticks does not fit the pattern exactly."
+     ],
+     "picture": {
+      "kind": "sticks",
+      "squares": 4,
+      "caption": "n squares need 3n + 1 sticks."
+     },
+     "think": {
+      "question": "Can exactly 50 sticks make a row of squares?",
+      "answer": "3n + 1 = 50 gives n = 49/3, not a whole number. No."
+     },
+     "aha": "Turn the pattern rule into an equation, then solve it."
+    },
+    {
+     "title": "From story to equation",
+     "story": "'A rectangle has a perimeter of 54 cm. Its length is 3 cm more than its breadth.' Anu writes a plan.",
+     "text": [
+      "Step 1: let the breadth be b cm. Step 2: the length is b + 3. Step 3: perimeter = 2 × (length + breadth), so 2(b + 3 + b) = 54.",
+      "Step 4: 4b + 6 = 54, so 4b = 48 and b = 12. Step 5: answer in words: breadth 12 cm, length 15 cm."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Let b = breadth",
+       "Length = b + 3",
+       "2(2b + 3) = 54",
+       "b = 12 cm, length 15 cm"
+      ],
+      "caption": "Story → letter → equation → answer."
+     },
+     "think": {
+      "question": "The sum of three consecutive numbers is 72. Find them.",
+      "answer": "n + (n + 1) + (n + 2) = 72, so n = 23: 23, 24, 25."
+     },
+     "aha": "Choose a letter, write the other quantities with it, form the equation, solve, then answer in words."
+    },
+    {
+     "title": "Ages and money problems",
+     "story": "Raju is 4 times as old as his son. In 5 years, the sum of their ages will be 60. How old are they now?",
+     "text": [
+      "Let the son be s years. Raju is 4s. In 5 years: (s + 5) + (4s + 5) = 60.",
+      "5s + 10 = 60, so 5s = 50 and s = 10. The son is 10 and Raju is 40. Check: 15 + 45 = 60. ✓"
+     ],
+     "picture": {
+      "kind": "table",
+      "head": true,
+      "rows": [
+       [
+        "",
+        "Now",
+        "In 5 years"
+       ],
+       [
+        "Son",
+        "s",
+        "s + 5"
+       ],
+       [
+        "Raju",
+        "4s",
+        "4s + 5"
+       ]
+      ],
+      "gold": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "caption": "A table keeps ages organised."
+     },
+     "think": {
+      "question": "₹500 is shared so that A gets ₹80 more than B. Find each share.",
+      "answer": "b + (b + 80) = 500, so b = 210: B ₹210, A ₹290."
+     },
+     "aha": "Use a table for ages: add the same number of years to every person."
+    },
+    {
+     "title": "Making your own equations",
+     "story": "Thatha says, 'Every equation is built from a simple truth.' He starts with x = 4.",
+     "text": [
+      "Do the same thing to both sides: × 3 → 3x = 12. + 5 → 3x + 5 = 17. The equation 3x + 5 = 17 still has the solution x = 4.",
+      "Solving is just building in reverse: − 5 then ÷ 3 takes you back to x = 4."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "x = 4",
+       "× 3: 3x = 12",
+       "+ 5: 3x + 5 = 17",
+       "Solve: undo + 5, then ÷ 3"
+      ],
+      "caption": "Build an equation forwards; solve it backwards."
+     },
+     "think": {
+      "question": "Build an equation with solution y = 2 using two steps.",
+      "answer": "For example: × 5 → 5y = 10, − 3 → 5y − 3 = 7."
+     },
+     "aha": "Doing the same thing to both sides builds equations; undoing it solves them."
+    },
+    {
+     "title": "Mind the mistake, mend the mistake",
+     "story": "Ravi solved three equations and got them all wrong. Anu checks each step.",
+     "text": [
+      "x + 5 = 9 → x = 9 + 5 is wrong: to remove +5, subtract 5 from both sides, so x = 4.",
+      "3x = 12 → x = 12 − 3 is wrong: 3x means 3 × x, so divide: x = 4.",
+      "2(x + 3) = 14 → 2x + 3 = 14 is wrong: 2 multiplies both terms, so 2x + 6 = 14 and x = 4."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Wrong step",
+       "lines": [
+        "x + 5 = 9 → x = 14",
+        "3x = 12 → x = 9",
+        "2(x + 3) → 2x + 3"
+       ]
+      },
+      "right": {
+       "title": "Right step",
+       "lines": [
+        "x = 9 − 5 = 4",
+        "x = 12 ÷ 3 = 4",
+        "2(x + 3) = 2x + 6"
+       ]
+      },
+      "caption": "Undo with the opposite operation."
+     },
+     "think": {
+      "question": "Check x = 4 in 2(x + 3) = 14.",
+      "answer": "2 × 7 = 14. ✓"
+     },
+     "aha": "Undo + with −, and × with ÷. Always check the answer in the original equation."
+    },
+    {
+     "title": "A pinch of history: the magic formula",
+     "story": "Indian mathematicians like Brahmagupta solved equations more than 1,300 years ago. They described a rule that solves every equation of the form ax + b = c.",
+     "text": [
+      "Start with ax + b = c. Subtract b: ax = c − b. Divide by a: x = (c − b) ÷ a. This works for any numbers a, b, c with a ≠ 0.",
+      "Example: 4x + 7 = 31 gives x = (31 − 7) ÷ 4 = 24 ÷ 4 = 6."
+     ],
+     "picture": {
+      "kind": "balance",
+      "left": "ax + b",
+      "right": "c",
+      "caption": "Remove b from both sides, then divide by a: x = (c − b) ÷ a."
+     },
+     "think": {
+      "question": "Use the formula for 5x − 3 = 22.",
+      "answer": "b = −3, so x = (22 + 3) ÷ 5 = 5."
+     },
+     "aha": "For ax + b = c, the solution is x = (c − b) ÷ a.",
+     "formulas": [
+      "ax + b = c ⇒ x = (c − b) ÷ a"
      ]
     }
    ],

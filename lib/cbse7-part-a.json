@@ -523,20 +523,20 @@
    "subtitle": "Lakhs, Crores, Millions & Estimation",
    "concepts": [
     {
-     "title": "The Indian place-value system",
-     "text": "The places from the right are: ones, tens, hundreds, thousands, ten thousands, lakhs, ten lakhs, crores, ten crores."
+     "title": "How big is one lakh?",
+     "text": "Every place is 10 times the place on its right. 1 lakh = 100 thousand, and 1 crore = 100 lakh."
     },
     {
-     "title": "The international system",
-     "text": "Many countries group digits in threes: ones, thousands, millions, billions. Example: 65,207,040 = sixty-five million two hundred seven thousand forty."
+     "title": "Reading a big number in the Indian way",
+     "text": "Indian commas go 3, then 2, 2, 2 … Read each comma group with its name: crore, lakh, thousand."
     },
     {
-     "title": "Comparing and forming numbers",
-     "text": "A number with more digits is larger. If two numbers have the same number of digits, compare from the left: the first place where the digits differ decides."
+     "title": "Anu's cousin says 'million'",
+     "text": "10 lakh = 1 million. 1 crore = 10 million. 100 crore = 1 billion."
     },
     {
-     "title": "Rounding and estimation",
-     "text": "To round to the nearest thousand, look at the hundreds digit. If it is 5 or more, round up; otherwise round down. 7,48,256 → 7,48,000."
+     "title": "Which number is bigger?",
+     "text": "Compare from the left. The first place where the digits differ decides which number is bigger."
     }
    ],
    "formulas": [
@@ -616,98 +616,285 @@
     "International: 3-3-3 commas.",
     "Round with the digit just to the right."
    ],
-   "intro": "Lakhs, crores and millions appear in news, prices and populations. In this chapter you learn to read and write very large numbers, change between the Indian and the international systems, compare them, and estimate answers quickly.",
+   "intro": "Anu's school wants to collect one lakh bottle caps for a recycling drive. 'One lakh? Is that a lot?' asks Anu. Her grandfather, Thatha, smiles and says, 'Let us find out together.'",
    "before": [
     "read numbers up to 99,999",
     "know place values: ones, tens, hundreds, thousands",
     "multiply by 10, 100 and 1,000"
    ],
-   "glossary": [
-    {
-     "term": "Place value",
-     "meaning": "The value of a digit because of its position. In 5,32,000 the 5 means 5 lakh."
-    },
-    {
-     "term": "Lakh",
-     "meaning": "1,00,000 (one hundred thousand)."
-    },
-    {
-     "term": "Crore",
-     "meaning": "1,00,00,000 (one hundred lakh, or ten million)."
-    },
-    {
-     "term": "Million",
-     "meaning": "1,000,000 (ten lakh)."
-    },
-    {
-     "term": "Estimate",
-     "meaning": "A quick answer that is close to the exact answer, found with rounded numbers."
-    }
-   ],
    "lessons": [
     {
-     "title": "The Indian place-value system",
+     "title": "How big is one lakh?",
+     "story": "Thatha asks, 'If you count one bottle cap every second, day and night, how long will you take to count one lakh caps?' Anu guesses, 'Maybe one hour?'",
      "text": [
-      "The places from the right are: ones, tens, hundreds, thousands, ten thousands, lakhs, ten lakhs, crores, ten crores.",
-      "Commas: put the first comma after 3 digits from the right, then after every 2 digits. Example: 6,52,07,040.",
-      "Read each group with its name: six crore, fifty-two lakh, seven thousand, forty."
+      "Let us see. One hour has 60 × 60 = 3,600 seconds. One lakh seconds is 1,00,000 ÷ 3,600 ≈ 28 hours. Anu would count for more than one full day without sleeping!",
+      "Each new place is 10 times the place before it: 10 ones make a ten, 10 tens make a hundred, and so on. One lakh is 100 thousands."
      ],
-     "points": [
-      "Indian commas: 3, then 2, 2, 2 …"
-     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "1 thousand = 1,000",
+       "× 10 → ten thousand = 10,000",
+       "× 10 → one lakh = 1,00,000",
+       "× 10 → ten lakh = 10,00,000",
+       "× 10 → one crore = 1,00,00,000"
+      ],
+      "caption": "Each step to the next place multiplies by 10."
+     },
+     "think": {
+      "question": "How many ₹500 notes make one lakh rupees?",
+      "answer": "1,00,000 ÷ 500 = 200 notes."
+     },
+     "aha": "Every place is 10 times the place on its right. 1 lakh = 100 thousand, and 1 crore = 100 lakh.",
      "formulas": [
       "1 lakh = 1,00,000",
       "1 crore = 100 lakh = 1,00,00,000"
+     ]
+    },
+    {
+     "title": "Reading a big number in the Indian way",
+     "story": "Thatha reads the newspaper: 'The new stadium earned ₹6,52,07,040 this year.' Anu stares at the long number. 'How do I even read that?'",
+     "text": [
+      "Look at the commas. In the Indian system, the first comma comes after 3 digits from the right, then after every 2 digits. Each comma group has a name.",
+      "Read from the left, group by group: 6 crore, 52 lakh, 07 thousand, 040. So the number is six crore fifty-two lakh seven thousand forty."
      ],
-     "example": {
-      "question": "Write 30,08,400 in words.",
-      "steps": [
-       "30 → thirty lakh.",
-       "08 → eight thousand.",
-       "400 → four hundred."
+     "picture": {
+      "kind": "placevalue",
+      "heads": [
+       "Crores",
+       "Ten lakhs",
+       "Lakhs",
+       "Ten thousands",
+       "Thousands",
+       "Hundreds",
+       "Tens",
+       "Ones"
       ],
-      "answer": "Thirty lakh eight thousand four hundred"
+      "digits": [
+       "6",
+       "5",
+       "2",
+       "0",
+       "7",
+       "0",
+       "4",
+       "0"
+      ],
+      "gold": [
+       0,
+       1,
+       2
+      ],
+      "caption": "6,52,07,040 in the Indian place-value chart."
+     },
+     "think": {
+      "question": "Read 30,08,400 aloud.",
+      "answer": "Thirty lakh eight thousand four hundred."
+     },
+     "aha": "Indian commas go 3, then 2, 2, 2 … Read each comma group with its name: crore, lakh, thousand.",
+     "example": {
+      "question": "Write 2,05,00,600 in words.",
+      "steps": [
+       "2 → two crore.",
+       "05 → five lakh.",
+       "00 → no thousands.",
+       "600 → six hundred."
+      ],
+      "answer": "Two crore five lakh six hundred"
      }
     },
     {
-     "title": "The international system",
+     "title": "Anu's cousin says 'million'",
+     "story": "Anu's cousin in Canada calls on video. 'Our city has about 3 million people,' she says. Anu is confused: 'What is a million in lakhs?'",
      "text": [
-      "Many countries group digits in threes: ones, thousands, millions, billions. Example: 65,207,040 = sixty-five million two hundred seven thousand forty.",
-      "Useful links: 10 lakh = 1 million; 1 crore = 10 million; 100 crore = 1 billion."
+      "Many countries group digits in threes: ones, thousands, millions, billions. The same number can be written in both systems.",
+      "Ten lakh and one million are the same amount. One crore is ten million. So 3 million = 30 lakh."
      ],
-     "points": [
-      "International commas: every 3 digits."
-     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Indian system",
+       "lines": [
+        "10,00,000 = ten lakh",
+        "1,00,00,000 = one crore",
+        "6,52,07,040 = 6 crore 52 lakh …"
+       ]
+      },
+      "right": {
+       "title": "International system",
+       "lines": [
+        "1,000,000 = one million",
+        "10,000,000 = ten million",
+        "65,207,040 = 65 million …"
+       ]
+      },
+      "caption": "The same numbers with two kinds of commas."
+     },
+     "think": {
+      "question": "How many millions make 2 crore?",
+      "answer": "1 crore = 10 million, so 2 crore = 20 million."
+     },
+     "aha": "10 lakh = 1 million. 1 crore = 10 million. 100 crore = 1 billion.",
      "formulas": [
-      "1 million = 10 lakh",
-      "1 crore = 10 million",
-      "1 billion = 100 crore"
+      "10 lakh = 1 million",
+      "1 crore = 10 million"
      ]
     },
     {
-     "title": "Comparing and forming numbers",
+     "title": "Which number is bigger?",
+     "story": "City A has 28,45,600 people and City B has 31,09,750. Anu's friend Ravi says, 'City A has an 8, so it is bigger!' Is he right?",
      "text": [
-      "A number with more digits is larger. If two numbers have the same number of digits, compare from the left: the first place where the digits differ decides.",
-      "For the largest number from given digits, arrange them from biggest to smallest. For the smallest, arrange from smallest to biggest, but do not start with 0."
-     ]
-    },
-    {
-     "title": "Rounding and estimation",
-     "text": [
-      "To round to the nearest thousand, look at the hundreds digit. If it is 5 or more, round up; otherwise round down. 7,48,256 → 7,48,000.",
-      "To estimate a product or sum, round each number first, then calculate. The estimate tells you whether your exact answer is sensible."
+      "First count the digits. If one number has more digits, it is bigger. Here both numbers have 7 digits.",
+      "Then compare from the left. The first place where the digits differ decides. In the ten-lakhs place, City A has 2 and City B has 3. So City B is bigger. The 8 later on does not matter."
      ],
-     "points": [
-      "Look at the digit to the right of the place you round to."
-     ],
-     "example": {
-      "question": "Round 3,67,520 to the nearest lakh.",
-      "steps": [
-       "The lakh digit is 3; the next digit (ten thousands) is 6.",
-       "6 ≥ 5, so round up."
+     "picture": {
+      "kind": "table",
+      "head": true,
+      "rows": [
+       [
+        "",
+        "10 L",
+        "L",
+        "10 Th",
+        "Th",
+        "H",
+        "T",
+        "O"
+       ],
+       [
+        "City A",
+        "2",
+        "8",
+        "4",
+        "5",
+        "6",
+        "0",
+        "0"
+       ],
+       [
+        "City B",
+        "3",
+        "1",
+        "0",
+        "9",
+        "7",
+        "5",
+        "0"
+       ]
       ],
-      "answer": "4,00,000"
+      "gold": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "caption": "The first different digit from the left decides."
+     },
+     "think": {
+      "question": "Make the largest 6-digit number with 3, 0, 7, 5, 1, 9 (each once).",
+      "answer": "Put the digits from biggest to smallest: 9,75,310."
+     },
+     "aha": "Compare from the left. The first place where the digits differ decides which number is bigger.",
+     "example": {
+      "question": "Make the smallest 6-digit number with 3, 0, 7, 5, 1, 9.",
+      "steps": [
+       "Smallest digit first, but not 0.",
+       "1, then 0, then 3, 5, 7, 9."
+      ],
+      "answer": "1,03,579"
      }
+    },
+    {
+     "title": "A calculator with only a few buttons",
+     "story": "Ravi's toy calculator is broken. Only six buttons work: +1,00,000, +10,000, +1,000, +100, +10 and +1. He wants the screen to show 5,08,632, starting from 0.",
+     "text": [
+      "Each digit tells how many times to press the button for its place. 5 lakhs → press +1,00,000 five times. 0 ten-thousands → do not press +10,000. 8 thousands → press +1,000 eight times, and so on.",
+      "Total presses = 5 + 0 + 8 + 6 + 3 + 2 = 24. Place value is like a set of special buttons: the digit counts the presses."
+     ],
+     "picture": {
+      "kind": "placevalue",
+      "heads": [
+       "Lakhs",
+       "Ten thousands",
+       "Thousands",
+       "Hundreds",
+       "Tens",
+       "Ones"
+      ],
+      "digits": [
+       "5",
+       "0",
+       "8",
+       "6",
+       "3",
+       "2"
+      ],
+      "gold": [
+       0,
+       2
+      ],
+      "caption": "Each digit = number of presses of that place's button."
+     },
+     "think": {
+      "question": "What is the fewest number of presses to show 70,005?",
+      "answer": "7 presses of +10,000 and 5 presses of +1: 12 presses."
+     },
+     "aha": "A digit in a place tells how many of that place's unit the number has."
+    },
+    {
+     "title": "Quick guesses: rounding and estimating",
+     "story": "Thatha asks, 'About how much is 4,876 × 312? You have five seconds!' Anu has no time to multiply. She needs a quick, sensible guess.",
+     "text": [
+      "To round, look at the digit just to the right of the place you are rounding to. If it is 5 or more, round up. If it is less than 5, round down.",
+      "To estimate, round each number first and then calculate: 4,876 → 5,000 and 312 → 300. So 4,876 × 312 ≈ 15,00,000. The exact answer is 15,21,312, which is close. An estimate helps you catch a wrong answer."
+     ],
+     "picture": {
+      "kind": "numberline",
+      "from": 747,
+      "to": 750,
+      "step": 1,
+      "points": [
+       {
+        "value": 748.256,
+        "label": "7,48,256",
+        "gold": true
+       }
+      ],
+      "caption": "Numbers in thousands: 7,48,256 is nearer to 7,48,000 than to 7,49,000."
+     },
+     "think": {
+      "question": "Round 3,67,520 to the nearest lakh.",
+      "answer": "The next digit after the lakh digit is 6 (5 or more), so round up: 4,00,000."
+     },
+     "aha": "Round, then calculate. A good estimate tells you whether your exact answer makes sense."
+    },
+    {
+     "title": "Patterns in products",
+     "story": "Thatha asks, 'What is 300 × 4,000?' Anu answers in two seconds: 12 lakh. 'How did you do that?'",
+     "text": [
+      "Multiply the non-zero parts: 3 × 4 = 12. Then count the zeros at the ends: 300 has 2 zeros and 4,000 has 3 zeros, so 5 zeros in all. 12 followed by 5 zeros is 12,00,000.",
+      "Careful: 50 × 40 = 2,000, not 200. Here 5 × 4 = 20 already ends in a zero, so the answer has one extra zero.",
+      "How big is one crore? If you count one number every second, day and night, one crore seconds is about 116 days, almost 4 months!"
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "300 × 4,000",
+       "3 × 4 = 12",
+       "zeros: 2 + 3 = 5",
+       "12,00,000"
+      ],
+      "caption": "Multiply the front digits, then add on the zeros."
+     },
+     "think": {
+      "question": "Find 500 × 6,000.",
+      "answer": "5 × 6 = 30, then 2 + 3 = 5 more zeros: 30,00,000 (30 lakh)."
+     },
+     "aha": "Multiply the non-zero parts, then write all the zeros from both numbers."
     }
    ],
    "examples": [
@@ -786,20 +973,20 @@
    "subtitle": "Terms, Brackets & Order of Operations",
    "concepts": [
     {
-     "title": "Order of operations",
-     "text": "Calculate in this order: (1) brackets, (2) multiplication and division from left to right, (3) addition and subtraction from left to right."
+     "title": "A story in one line",
+     "text": "An expression is a story written in numbers. Its value is the answer to the story."
     },
     {
-     "title": "Terms, swapping and grouping",
-     "text": "Think of subtraction as adding a negative term: 12 − 5 + 14 = 12 + (−5) + 14. Then you can add the terms in any order and in any groups."
+     "title": "Who goes first?",
+     "text": "Brackets first, then × and ÷, then + and −."
     },
     {
-     "title": "Removing brackets",
-     "text": "A + sign before a bracket: remove the bracket and keep the signs. 20 + (8 − 3) = 20 + 8 − 3."
+     "title": "Terms: the pieces you can move",
+     "text": "A term moves together with its sign. Swap and group terms to calculate smartly."
     },
     {
-     "title": "The distributive property",
-     "text": "a × (b + c) = a × b + a × c, and a × (b − c) = a × b − a × c."
+     "title": "Opening brackets",
+     "text": "A minus before a bracket flips every sign inside the bracket."
     }
    ],
    "formulas": [
@@ -878,86 +1065,184 @@
     "Minus before a bracket changes the signs inside.",
     "Use (100 − 3) tricks for 97, 98, 99."
    ],
-   "intro": "An arithmetic expression is a calculation written with numbers and operations, such as 200 − 4 × 35. In this chapter you learn the correct order to calculate, how to split an expression into terms, and how brackets and the distributive property make calculations easier.",
+   "intro": "Anu goes shopping with ₹200. She buys 4 notebooks and 3 pens. How much change will she get? She writes one line of maths for the whole story. This one line is an arithmetic expression.",
    "before": [
     "add, subtract, multiply and divide whole numbers",
     "know that 'of' means multiply"
    ],
-   "glossary": [
-    {
-     "term": "Expression",
-     "meaning": "Numbers joined by +, −, × or ÷, such as 13 + 2 × 6."
-    },
-    {
-     "term": "Value",
-     "meaning": "The single number that the expression equals."
-    },
-    {
-     "term": "Term",
-     "meaning": "A part of the expression that is added. In 12 − 5 + 7 × 2 the terms are 12, −5 and 7 × 2."
-    },
-    {
-     "term": "Brackets",
-     "meaning": "They show which part to calculate first."
-    },
-    {
-     "term": "Distributive property",
-     "meaning": "a × (b + c) = a × b + a × c."
-    }
-   ],
    "lessons": [
     {
-     "title": "Order of operations",
+     "title": "A story in one line",
+     "story": "At the stationery shop, a notebook costs ₹35 and a pen costs ₹12. Anu buys 4 notebooks and 3 pens and pays with ₹200.",
      "text": [
-      "Calculate in this order: (1) brackets, (2) multiplication and division from left to right, (3) addition and subtraction from left to right.",
-      "Example: 30 − 4 × 5 = 30 − 20 = 10. If you subtract first, you get 130, which is wrong."
+      "Anu writes the whole story as one expression: 200 − (4 × 35 + 3 × 12). Each part of the story is a part of the expression.",
+      "The value of an expression is the single number it equals. Here 4 × 35 = 140, 3 × 12 = 36, and 140 + 36 = 176. So the change is 200 − 176 = ₹24."
      ],
-     "points": [
-      "Brackets → × and ÷ → + and −."
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "4 notebooks: 4 × 35 = 140",
+       "3 pens: 3 × 12 = 36",
+       "Total: 140 + 36 = 176",
+       "Change: 200 − 176 = ₹24"
+      ],
+      "caption": "The story, step by step."
+     },
+     "think": {
+      "question": "Write one expression for: 2 adult tickets at ₹180 and 3 child tickets at ₹120.",
+      "answer": "2 × 180 + 3 × 120 = 720."
+     },
+     "aha": "An expression is a story written in numbers. Its value is the answer to the story."
+    },
+    {
+     "title": "Who goes first?",
+     "story": "Ravi calculates 30 − 4 × 5 and gets 130. Anu gets 10. 'We cannot both be right!' says Ravi.",
+     "text": [
+      "Everyone in the world follows the same rule, so that one expression has only one value: first brackets, then multiplication and division (left to right), then addition and subtraction (left to right).",
+      "So 30 − 4 × 5 = 30 − 20 = 10. Anu is right. Ravi subtracted first, which is not allowed."
      ],
-     "example": {
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Brackets ( )",
+       "× and ÷ (left to right)",
+       "+ and − (left to right)"
+      ],
+      "caption": "The order of operations."
+     },
+     "think": {
       "question": "Find 48 − 6 × 4 + 10.",
+      "answer": "6 × 4 = 24 first. Then 48 − 24 + 10 = 34."
+     },
+     "aha": "Brackets first, then × and ÷, then + and −."
+    },
+    {
+     "title": "Comparing without calculating",
+     "story": "Thatha writes two expressions: 1,023 + 1,034 and 1,022 + 1,035. 'Which is bigger? Do not add!'",
+     "text": [
+      "The first number went down by 1 and the second went up by 1. The changes cancel, so both sums are equal.",
+      "For subtraction, think about what changes: 245 − 98 is bigger than 245 − 99, because we take away less. For multiplication, 63 × 4 = 63 × 3 + 63 is bigger than 64 × 3 = 63 × 3 + 3."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "1,023 + 1,034",
+       "lines": [
+        "first number +1",
+        "second number −1"
+       ]
+      },
+      "right": {
+       "title": "1,022 + 1,035",
+       "lines": [
+        "the changes cancel",
+        "both sums are equal"
+       ]
+      },
+      "caption": "Look at how the numbers change, not at the totals."
+     },
+     "think": {
+      "question": "Without calculating, which is bigger: 97 + 34 or 99 + 32?",
+      "answer": "They are equal: +2 on the first number and −2 on the second."
+     },
+     "aha": "Compare expressions by looking at how each number changes."
+    },
+    {
+     "title": "Terms: the pieces you can move",
+     "story": "Thatha writes 47 + 38 − 47 on the board. 'Can you do this in one second?' Anu laughs: 'The 47s cancel! The answer is 38.'",
+     "text": [
+      "Think of an expression as a sum of terms. In 12 − 5 + 14, the terms are 12, −5 and 14. A term carries its sign with it.",
+      "Terms can be added in any order and in any groups. So you can move −47 next to +47, and they make 0."
+     ],
+     "picture": {
+      "kind": "tokens",
+      "positive": 5,
+      "negative": 3,
+      "caption": "A + and a − of the same size cancel, just like +47 and −47."
+     },
+     "think": {
+      "question": "Find 125 + 67 − 25 quickly.",
+      "answer": "Group 125 − 25 = 100, then 100 + 67 = 167."
+     },
+     "aha": "A term moves together with its sign. Swap and group terms to calculate smartly."
+    },
+    {
+     "title": "Opening brackets",
+     "story": "Anu has ₹25. She gives away (₹10 − ₹4), that is ₹6. Ravi writes 25 − 10 − 4 and gets 11. Anu gets 19. Who is correct?",
+     "text": [
+      "When a minus sign stands before a bracket, it applies to everything inside. So 25 − (10 − 4) = 25 − 10 + 4 = 19. Anu is correct.",
+      "When a plus sign stands before a bracket, remove the bracket and keep the signs: 20 + (8 − 3) = 20 + 8 − 3."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "+ before a bracket",
+       "lines": [
+        "20 + (8 − 3)",
+        "= 20 + 8 − 3",
+        "signs stay the same"
+       ]
+      },
+      "right": {
+       "title": "− before a bracket",
+       "lines": [
+        "25 − (10 − 4)",
+        "= 25 − 10 + 4",
+        "every sign inside flips"
+       ]
+      },
+      "caption": "A minus sign before a bracket flips every sign inside."
+     },
+     "think": {
+      "question": "Simplify 120 − (45 − 15).",
+      "answer": "120 − 45 + 15 = 90."
+     },
+     "aha": "A minus before a bracket flips every sign inside the bracket."
+    },
+    {
+     "title": "Tinker the terms",
+     "story": "Anu's expression is 25 − 8 + 12 = 29. Ravi changes the 8 into 10. 'Now what is the value?' he asks.",
+     "text": [
+      "The term −8 became −10. It became 2 smaller, so the whole value becomes 2 smaller: 29 − 2 = 27.",
+      "If the term +12 becomes +15, the value becomes 3 bigger. Inside a bracket after a minus sign, the effect flips: in 30 − (5 + 4), if 4 becomes 5, the value goes DOWN by 1."
+     ],
+     "picture": {
+      "kind": "flow",
       "steps": [
-       "6 × 4 = 24.",
-       "48 − 24 + 10 = 34."
+       "25 − 8 + 12 = 29",
+       "change −8 to −10",
+       "the term is 2 smaller",
+       "value = 27"
       ],
-      "answer": "34"
-     }
+      "caption": "Change a term, and the value changes by the same amount."
+     },
+     "think": {
+      "question": "In 50 − (12 − 5), the 5 becomes 7. What happens to the value?",
+      "answer": "−(12 − 5) = −12 + 5, so the term +5 becomes +7: the value goes up by 2, from 43 to 45."
+     },
+     "aha": "Changing one term by an amount changes the value by the same amount, with the term's sign."
     },
     {
-     "title": "Terms, swapping and grouping",
+     "title": "The distributive trick",
+     "story": "Thatha buys 15 mangoes at ₹97 each. Anu calculates the bill in her head in two seconds. How?",
      "text": [
-      "Think of subtraction as adding a negative term: 12 − 5 + 14 = 12 + (−5) + 14. Then you can add the terms in any order and in any groups.",
-      "This makes mental maths easy: 47 + 38 − 47 = (47 − 47) + 38 = 38."
+      "She thinks of ₹97 as ₹100 − ₹3. Then 15 × 97 = 15 × 100 − 15 × 3 = 1,500 − 45 = 1,455.",
+      "This is the distributive property: a × (b + c) = a × b + a × c. You can also use it backwards: 25 × 48 + 25 × 52 = 25 × (48 + 52) = 25 × 100 = 2,500."
      ],
-     "points": [
-      "Move a term together with its sign."
-     ]
-    },
-    {
-     "title": "Removing brackets",
-     "text": [
-      "A + sign before a bracket: remove the bracket and keep the signs. 20 + (8 − 3) = 20 + 8 − 3.",
-      "A − sign before a bracket: remove the bracket and change every sign inside. 25 − (10 − 4) = 25 − 10 + 4."
-     ],
-     "points": [
-      "Minus before a bracket changes every sign inside."
-     ],
-     "example": {
-      "question": "Simplify 120 − (45 − 15) + (30 − 8).",
-      "steps": [
-       "120 − 45 + 15 + 30 − 8.",
-       "= 112."
-      ],
-      "answer": "112"
-     }
-    },
-    {
-     "title": "The distributive property",
-     "text": [
-      "a × (b + c) = a × b + a × c, and a × (b − c) = a × b − a × c.",
-      "Use it to calculate quickly: 97 × 15 = (100 − 3) × 15 = 1,500 − 45 = 1,455. Also 25 × 48 + 25 × 52 = 25 × 100 = 2,500."
-     ],
+     "picture": {
+      "kind": "area",
+      "rows": 4,
+      "cols": 10,
+      "shadeRows": 4,
+      "shadeCols": 7,
+      "label": "4 × 10 = 4 × 7 + 4 × 3",
+      "caption": "A 4 by 10 grid split into two parts shows a × (b + c) = a × b + a × c."
+     },
+     "think": {
+      "question": "Find 99 × 23 in your head.",
+      "answer": "(100 − 1) × 23 = 2,300 − 23 = 2,277."
+     },
+     "aha": "a × (b + c) = a × b + a × c. Turn awkward numbers into friendly ones like 100.",
      "formulas": [
       "a × (b + c) = a × b + a × c",
       "a × (b − c) = a × b − a × c"
@@ -1040,20 +1325,20 @@
    "subtitle": "Tenths, Hundredths & Decimal Place Value",
    "concepts": [
     {
-     "title": "Place value after the point",
-     "text": "Each place to the right is one-tenth of the place before it: ones, tenths, hundredths, thousandths."
+     "title": "Living between whole numbers",
+     "text": "A decimal point separates whole units from the parts of a unit. 1 mm = 0.1 cm."
     },
     {
-     "title": "Comparing decimals",
-     "text": "Compare the whole parts first. If they are equal, compare tenths, then hundredths, and so on."
+     "title": "Tenths, hundredths, thousandths",
+     "text": "Moving one place to the right makes a digit 10 times smaller: 0.1 = 1/10, 0.01 = 1/100."
     },
     {
-     "title": "Decimals on the number line",
-     "text": "Divide each unit into 10 equal parts to mark tenths. 0.3 is the third mark after 0."
+     "title": "Is 0.25 bigger than 0.3?",
+     "text": "Make the decimal places equal by adding zeros, then compare place by place from the left."
     },
     {
      "title": "Adding and subtracting decimals",
-     "text": "Write the numbers so that the decimal points are in one column. Fill empty places with zeros. Then add or subtract as with whole numbers and keep the point in the same column."
+     "text": "Line up the points. Fill gaps with zeros. Then calculate as with whole numbers."
     }
    ],
    "formulas": [
@@ -1130,87 +1415,288 @@
     "Line up the points.",
     "Know unit conversions."
    ],
-   "intro": "Not every quantity is a whole number: 7.6 cm, ₹45.05, 2.45 km. Decimals let us write parts of a whole using place value. In this chapter you learn what each digit after the point means, and how to compare, add and subtract decimals.",
+   "intro": "Anu measures her pencil. It is longer than 7 cm but shorter than 8 cm. How can she write its exact length? She needs numbers that live between the whole numbers.",
    "before": [
     "understand tenths and hundredths as fractions (3/10, 7/100)",
     "add and subtract whole numbers in columns"
    ],
-   "glossary": [
-    {
-     "term": "Decimal point",
-     "meaning": "The dot that separates the whole part from the part less than one."
-    },
-    {
-     "term": "Tenths",
-     "meaning": "The first place after the point: 0.1 = 1/10."
-    },
-    {
-     "term": "Hundredths",
-     "meaning": "The second place: 0.01 = 1/100."
-    },
-    {
-     "term": "Thousandths",
-     "meaning": "The third place: 0.001 = 1/1,000."
-    }
-   ],
    "lessons": [
     {
-     "title": "Place value after the point",
+     "title": "Living between whole numbers",
+     "story": "Anu's pencil is 7 cm and 6 small marks long. Each small mark on her ruler is 1 millimetre, and 10 millimetres make 1 centimetre.",
      "text": [
-      "Each place to the right is one-tenth of the place before it: ones, tenths, hundredths, thousandths.",
-      "In 5.34, the 3 means 3 tenths (3/10) and the 4 means 4 hundredths (4/100). So 5.34 = 5 + 3/10 + 4/100."
+      "One centimetre is cut into 10 equal parts. Each part is one-tenth of a centimetre. So 6 marks are 6 tenths, written 0.6 cm. The pencil is 7.6 cm long.",
+      "The dot is the decimal point. Digits on its left are whole units. Digits on its right are parts of a unit."
      ],
-     "points": [
-      "0.1 = 1/10, 0.01 = 1/100, 0.001 = 1/1,000."
-     ]
-    },
-    {
-     "title": "Comparing decimals",
-     "text": [
-      "Compare the whole parts first. If they are equal, compare tenths, then hundredths, and so on.",
-      "Write the decimals with the same number of places by adding zeros at the end: 0.5 = 0.500, 0.45 = 0.450, 0.405. Now 0.500 is the greatest."
-     ],
-     "points": [
-      "Adding zeros at the end does not change the value."
-     ],
-     "example": {
-      "question": "Arrange 2.05, 2.5, 2.005, 2.55 in ascending order.",
-      "steps": [
-       "Write as 2.050, 2.500, 2.005, 2.550.",
-       "Compare."
+     "picture": {
+      "kind": "numberline",
+      "from": 7,
+      "to": 8,
+      "step": 0.1,
+      "points": [
+       {
+        "value": 7.6,
+        "label": "7.6 cm",
+        "gold": true
+       }
       ],
-      "answer": "2.005, 2.05, 2.5, 2.55"
-     }
+      "caption": "Between 7 and 8 there are 10 tenths. The pencil ends at 7.6."
+     },
+     "think": {
+      "question": "Write 3 cm 4 mm in cm.",
+      "answer": "4 mm = 0.4 cm, so 3.4 cm."
+     },
+     "aha": "A decimal point separates whole units from the parts of a unit. 1 mm = 0.1 cm."
     },
     {
-     "title": "Decimals on the number line",
+     "title": "Tenths, hundredths, thousandths",
+     "story": "Thatha shows Anu a ₹1 coin and 100 one-paisa coins from his old collection. 'One paisa is one hundredth of a rupee,' he says.",
      "text": [
-      "Divide each unit into 10 equal parts to mark tenths. 0.3 is the third mark after 0.",
-      "The number halfway between two decimals is their sum divided by 2."
-     ]
+      "Each place to the right of the point is one-tenth of the place before it: tenths, hundredths, thousandths.",
+      "In 5.34, the 3 is in the tenths place (3/10) and the 4 is in the hundredths place (4/100). So 5.34 = 5 + 3/10 + 4/100."
+     ],
+     "picture": {
+      "kind": "placevalue",
+      "heads": [
+       "Tens",
+       "Ones",
+       "•",
+       "Tenths",
+       "Hundredths",
+       "Thousandths"
+      ],
+      "digits": [
+       "0",
+       "5",
+       ".",
+       "3",
+       "4",
+       "0"
+      ],
+      "gold": [
+       3,
+       4
+      ],
+      "caption": "5.34 in the place-value chart."
+     },
+     "think": {
+      "question": "What does the 7 mean in 0.075?",
+      "answer": "7 hundredths (7/100)."
+     },
+     "aha": "Moving one place to the right makes a digit 10 times smaller: 0.1 = 1/10, 0.01 = 1/100."
+    },
+    {
+     "title": "Fractions that become decimals",
+     "story": "Mother cuts a pizza into 4 equal slices. Anu eats 3 slices, that is 3/4. 'How do I write 3/4 as a decimal?'",
+     "text": [
+      "Make the denominator 10, 100 or 1,000. 3/4 = 75/100, because 4 × 25 = 100. 75 hundredths is written 0.75.",
+      "Some useful ones: 1/2 = 5/10 = 0.5, 1/4 = 0.25, 1/5 = 2/10 = 0.2, 3/25 = 12/100 = 0.12."
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 4,
+        "shaded": 3,
+        "label": "3/4"
+       },
+       {
+        "parts": 100,
+        "shaded": 75,
+        "label": "75/100",
+        "gold": true
+       }
+      ],
+      "caption": "3/4 and 75/100 cover the same length: 0.75."
+     },
+     "think": {
+      "question": "Write 2/5 as a decimal.",
+      "answer": "2/5 = 4/10 = 0.4."
+     },
+     "aha": "Change the denominator to 10, 100 or 1,000, then write the decimal."
+    },
+    {
+     "title": "Is 0.25 bigger than 0.3?",
+     "story": "Ravi says, '0.25 is bigger than 0.3, because 25 is bigger than 3.' Anu is not sure.",
+     "text": [
+      "Write both numbers with the same number of decimal places: 0.25 and 0.30. Now compare: 30 hundredths is more than 25 hundredths. So 0.3 is bigger.",
+      "Adding zeros at the end after the point does not change a decimal: 0.3 = 0.30 = 0.300."
+     ],
+     "picture": {
+      "kind": "fraction",
+      "rows": [
+       {
+        "parts": 10,
+        "shaded": 3,
+        "label": "0.3"
+       },
+       {
+        "parts": 20,
+        "shaded": 5,
+        "label": "0.25",
+        "gold": true
+       }
+      ],
+      "caption": "0.3 covers more of the strip than 0.25."
+     },
+     "think": {
+      "question": "Arrange 2.05, 2.5, 2.005, 2.55 from smallest to largest.",
+      "answer": "Write 2.050, 2.500, 2.005, 2.550. So 2.005, 2.05, 2.5, 2.55."
+     },
+     "aha": "Make the decimal places equal by adding zeros, then compare place by place from the left."
+    },
+    {
+     "title": "Which decimal is closest?",
+     "story": "Ravi is 1.47 m tall. 'Am I closer to 1.4 m or to 1.5 m?' he asks.",
+     "text": [
+      "Look at the number line between 1.4 and 1.5. 1.47 is 0.07 away from 1.4 but only 0.03 away from 1.5. So 1.5 m is closer.",
+      "To find the closest whole number to 6.49, look at the tenths digit: 4 is less than 5, so 6.49 is closer to 6."
+     ],
+     "picture": {
+      "kind": "numberline",
+      "from": 1.4,
+      "to": 1.5,
+      "step": 0.01,
+      "points": [
+       {
+        "value": 1.47,
+        "label": "1.47",
+        "gold": true
+       }
+      ],
+      "caption": "1.47 is 3 small steps from 1.5 and 7 steps from 1.4."
+     },
+     "think": {
+      "question": "Which is closer to 3: 2.9 or 3.08?",
+      "answer": "3.08 (0.08 away) is closer than 2.9 (0.1 away)."
+     },
+     "aha": "Measure the distance on the number line. The smaller distance is the closer number."
     },
     {
      "title": "Adding and subtracting decimals",
+     "story": "Anu buys a bag for ₹125.50 and a book for ₹48.75. She pays with ₹500. How much change does she get?",
      "text": [
-      "Write the numbers so that the decimal points are in one column. Fill empty places with zeros. Then add or subtract as with whole numbers and keep the point in the same column.",
-      "Units: 1 cm = 10 mm, so 6 mm = 0.6 cm. 1 kg = 1,000 g, so 250 g = 0.25 kg. ₹1 = 100 paise, so 5 paise = ₹0.05."
+      "Write the numbers so that the decimal points are one under the other. Fill empty places with zeros. Then add or subtract as usual, and keep the point in the same column.",
+      "125.50 + 48.75 = 174.25. Change = 500.00 − 174.25 = ₹325.75."
      ],
-     "points": [
-      "Line up the decimal points."
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "",
+        "1",
+        "2",
+        "5",
+        ".",
+        "5",
+        "0"
+       ],
+       [
+        "+",
+        "",
+        "4",
+        "8",
+        ".",
+        "7",
+        "5"
+       ],
+       [
+        "",
+        "1",
+        "7",
+        "4",
+        ".",
+        "2",
+        "5"
+       ]
+      ],
+      "gold": [
+       [
+        2,
+        4
+       ]
+      ],
+      "caption": "Line up the decimal points in one column."
+     },
+     "think": {
+      "question": "Find 12.75 + 3.6 − 5.08.",
+      "answer": "12.75 + 3.60 = 16.35; 16.35 − 5.08 = 11.27."
+     },
+     "aha": "Line up the points. Fill gaps with zeros. Then calculate as with whole numbers."
+    },
+    {
+     "title": "Decimals in measurement",
+     "story": "Thatha buys 3 kg 250 g of rice and pays ₹45 and 5 paise for a stamp. Anu writes both using decimals.",
+     "text": [
+      "1 kg = 1,000 g, so 250 g = 250/1,000 kg = 0.25 kg. The rice is 3.25 kg.",
+      "₹1 = 100 paise, so 5 paise = ₹0.05. The stamp costs ₹45.05 (not ₹45.5)."
      ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Length and weight",
+       "lines": [
+        "1 cm = 10 mm → 6 mm = 0.6 cm",
+        "1 kg = 1,000 g → 250 g = 0.25 kg"
+       ]
+      },
+      "right": {
+       "title": "Money",
+       "lines": [
+        "₹1 = 100 paise",
+        "5 paise = ₹0.05",
+        "50 paise = ₹0.50"
+       ]
+      },
+      "caption": "Change smaller units into decimals of the bigger unit."
+     },
+     "think": {
+      "question": "Write 2 kg 75 g in kg.",
+      "answer": "75 g = 0.075 kg, so 2.075 kg."
+     },
+     "aha": "Divide by 10, 100 or 1,000 to change a small unit into a decimal of the big unit.",
      "formulas": [
       "1 mm = 0.1 cm",
       "1 g = 0.001 kg",
       "1 paisa = ₹0.01"
+     ]
+    },
+    {
+     "title": "Decimal sequences and quick estimates",
+     "story": "Anu counts in steps of 0.2: 0.2, 0.4, 0.6, 0.8, 1.0, 1.2 … 'It is just like counting by 2s!'",
+     "text": [
+      "A decimal sequence adds or subtracts the same decimal each time. 4.5, 4.25, 4.0, 3.75 … subtracts 0.25 each time.",
+      "To estimate a decimal sum, round each number to the nearest whole number first: 12.75 + 3.6 − 5.08 ≈ 13 + 4 − 5 = 12. The exact answer 11.27 is close, so it is sensible."
      ],
-     "example": {
-      "question": "Find 12.75 + 3.6 − 5.08.",
-      "steps": [
-       "12.75 + 3.60 = 16.35.",
-       "16.35 − 5.08 = 11.27."
+     "picture": {
+      "kind": "numberline",
+      "from": 0,
+      "to": 1.2,
+      "step": 0.2,
+      "jumps": [
+       {
+        "from": 0,
+        "to": 0.2,
+        "label": "+0.2"
+       },
+       {
+        "from": 0.2,
+        "to": 0.4,
+        "label": "+0.2"
+       },
+       {
+        "from": 0.4,
+        "to": 0.6,
+        "label": "+0.2"
+       }
       ],
-      "answer": "11.27"
-     }
+      "caption": "Equal jumps of 0.2 make a decimal sequence."
+     },
+     "think": {
+      "question": "Find the next term: 3.75, 3.5, 3.25, …",
+      "answer": "Each term is 0.25 less, so 3.0."
+     },
+     "aha": "Find the step between terms. Round to whole numbers to estimate."
     }
    ],
    "examples": [
@@ -1287,20 +1773,20 @@
    "subtitle": "Variables, Forming & Simplifying Expressions",
    "concepts": [
     {
-     "title": "Writing expressions from words",
-     "text": "Read each phrase carefully. 'more than' means add, 'less than' means subtract (in the right order), 'times' or 'twice' means multiply."
+     "title": "A letter that stands for a number",
+     "text": "A letter can stand for any number. One rule with a letter covers every case."
+    },
+    {
+     "title": "Turning words into expressions",
+     "text": "'less than' reverses the order: 7 less than y is y − 7."
     },
     {
      "title": "Finding the value",
-     "text": "Replace each letter by its number and calculate with the order of operations. Write the number in brackets if it is negative."
+     "text": "Substitute the number for the letter, then calculate in the correct order."
     },
     {
-     "title": "Like terms and simplifying",
-     "text": "Only like terms can be added or subtracted: 7m + 2m = 9m. 7m and 8 cannot be combined."
-    },
-    {
-     "title": "Brackets and patterns",
-     "text": "A number outside a bracket multiplies every term inside: 3(2x − 5) = 6x − 15. A minus sign changes the signs: −2(x − 4) = −2x + 8."
+     "title": "Like terms: apples with apples",
+     "text": "Only like terms combine. Add their coefficients and keep the letter."
     }
    ],
    "formulas": [
@@ -1378,86 +1864,254 @@
     "Only like terms combine.",
     "Multiply every term in a bracket."
    ],
-   "intro": "In algebra, a letter stands for a number that can change or that we do not know yet. Letter-numbers let us write one rule for many cases, like 'the fare for d km'. In this chapter you learn to write expressions, find their values and simplify them.",
+   "intro": "Anu builds squares in a row with matchsticks. For 1 square she needs 4 sticks, for 2 squares 7 sticks, for 3 squares 10 sticks. 'How many for 100 squares?' asks Thatha. Instead of building them all, Anu writes a rule with a letter. Letters that stand for numbers are the start of algebra.",
    "before": [
     "use the order of operations",
     "add and subtract integers"
    ],
-   "glossary": [
-    {
-     "term": "Variable",
-     "meaning": "A letter that stands for a number, such as n or x."
-    },
-    {
-     "term": "Expression",
-     "meaning": "Numbers and letters joined by operations, such as 3n + 1."
-    },
-    {
-     "term": "Term",
-     "meaning": "A part of an expression joined by + or −. 3n + 1 has terms 3n and 1."
-    },
-    {
-     "term": "Coefficient",
-     "meaning": "The number that multiplies the letter. In 3n, it is 3."
-    },
-    {
-     "term": "Like terms",
-     "meaning": "Terms with the same letter part, such as 4p and −7p."
-    }
-   ],
    "lessons": [
     {
-     "title": "Writing expressions from words",
+     "title": "A letter that stands for a number",
+     "story": "Anu builds squares in a row. Every new square needs only 3 new sticks, because it shares one side with the square before it.",
      "text": [
-      "Read each phrase carefully. 'more than' means add, 'less than' means subtract (in the right order), 'times' or 'twice' means multiply.",
-      "'7 less than y' is y − 7, not 7 − y. 'Twice a number, then add 5' is 2n + 5."
+      "The first square needs 4 sticks: 1 + 3. Two squares need 1 + 3 + 3 = 7. For n squares, Anu needs 1 + 3 × n sticks, written 3n + 1.",
+      "Here n is a letter-number (a variable). It can be any counting number. The rule works for all of them."
      ],
-     "points": [
-      "'less than' reverses the order."
-     ]
+     "picture": {
+      "kind": "sticks",
+      "squares": 4,
+      "caption": "One starting stick (gold), then 3 new sticks for each square."
+     },
+     "think": {
+      "question": "How many sticks for 100 squares?",
+      "answer": "3 × 100 + 1 = 301."
+     },
+     "aha": "A letter can stand for any number. One rule with a letter covers every case."
+    },
+    {
+     "title": "Turning words into expressions",
+     "story": "Thatha gives clues: 'My age is 5 more than twice your mother's age.' Anu writes it with a letter.",
+     "text": [
+      "'more than' means add, 'less than' means subtract in the reverse order, 'times' or 'twice' means multiply.",
+      "If the mother's age is m, then Thatha's age is 2m + 5. Careful: '7 less than y' is y − 7, not 7 − y."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Words",
+       "lines": [
+        "5 more than n",
+        "7 less than y",
+        "twice a number n",
+        "cost of p pens at ₹12"
+       ]
+      },
+      "right": {
+       "title": "Expression",
+       "lines": [
+        "n + 5",
+        "y − 7",
+        "2n",
+        "12p"
+       ]
+      },
+      "caption": "Translate words into letter-number expressions."
+     },
+     "think": {
+      "question": "Write '3 less than four times x'.",
+      "answer": "4x − 3."
+     },
+     "aha": "'less than' reverses the order: 7 less than y is y − 7."
+    },
+    {
+     "title": "Short ways to write: 3a, ab and a²",
+     "story": "Ravi writes 3 × a + a × b + a × a. Thatha says, 'Mathematicians write this much faster.'",
+     "text": [
+      "We leave out the × sign between a number and a letter, or between two letters: 3 × a = 3a and a × b = ab. The number is written first: a × 3 = 3a.",
+      "a × a is written a² (a squared). 1 × a is just a. Careful: 3a means 3 × a, not thirty-something. If a = 4, then 3a = 12."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Long form",
+       "lines": [
+        "3 × a",
+        "a × b",
+        "a × a",
+        "1 × y"
+       ]
+      },
+      "right": {
+       "title": "Short form",
+       "lines": [
+        "3a",
+        "ab",
+        "a²",
+        "y"
+       ]
+      },
+      "caption": "Leave out the × sign and write the number first."
+     },
+     "think": {
+      "question": "Find 2xy when x = 3 and y = 4.",
+      "answer": "2 × 3 × 4 = 24."
+     },
+     "aha": "3a means 3 × a, ab means a × b, and a² means a × a."
     },
     {
      "title": "Finding the value",
+     "story": "An auto fare is ₹30 for the first km and ₹15 for each extra km. Anu writes the fare for d km as 15d + 15. What is the fare for 12 km?",
      "text": [
-      "Replace each letter by its number and calculate with the order of operations. Write the number in brackets if it is negative.",
-      "5a − 2b at a = 4, b = 3: 5 × 4 − 2 × 3 = 14."
+      "To find the value, replace the letter by the number and follow the order of operations.",
+      "For d = 12: 15 × 12 + 15 = 180 + 15 = ₹195."
      ],
-     "example": {
-      "question": "Find 3x − 4 when x = 6.",
+     "picture": {
+      "kind": "flow",
       "steps": [
-       "3 × 6 = 18.",
-       "18 − 4."
+       "Rule: 15d + 15",
+       "Put d = 12",
+       "15 × 12 = 180",
+       "180 + 15 = ₹195"
       ],
-      "answer": "14"
-     }
+      "caption": "Substitute, then calculate."
+     },
+     "think": {
+      "question": "Find 5a − 2b when a = 4 and b = 3.",
+      "answer": "20 − 6 = 14."
+     },
+     "aha": "Substitute the number for the letter, then calculate in the correct order."
     },
     {
-     "title": "Like terms and simplifying",
+     "title": "Like terms: apples with apples",
+     "story": "Ravi says, '3 apples + 2 apples = 5 apples, but 3 apples + 2 bananas is not 5 of anything.' Thatha nods: 'Letters work the same way.'",
      "text": [
-      "Only like terms can be added or subtracted: 7m + 2m = 9m. 7m and 8 cannot be combined.",
-      "Group like terms together with their signs, then add the coefficients: 7m − 3 + 2m + 8 = 9m + 5."
+      "Terms with the same letter part are like terms: 4p and −7p. Terms with different letter parts are unlike terms: 3a and 3b.",
+      "Only like terms can be combined: add their numbers (coefficients). 7m − 3 + 2m + 8 = 9m + 5."
      ],
-     "points": [
-      "Unlike terms stay separate."
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Like terms (combine)",
+       "lines": [
+        "4p and −7p",
+        "x and 5x",
+        "3m² and m²",
+        "4p − 7p = −3p"
+       ]
+      },
+      "right": {
+       "title": "Unlike terms (keep apart)",
+       "lines": [
+        "3a and 3b",
+        "2x and x²",
+        "5 and 5y",
+        "3a + 3b stays as it is"
+       ]
+      },
+      "caption": "Same letter part → like terms."
+     },
+     "think": {
+      "question": "Simplify 6p + 4q − 2p + q.",
+      "answer": "4p + 5q."
+     },
+     "aha": "Only like terms combine. Add their coefficients and keep the letter."
+    },
+    {
+     "title": "Opening brackets with letters",
+     "story": "Anu has 3 bags, and each bag has (2x − 5) marbles. How many marbles are there?",
+     "text": [
+      "3 bags of (2x − 5) is 3 × 2x − 3 × 5 = 6x − 15. The number outside multiplies every term inside.",
+      "A minus sign changes the signs: −2(x − 4) = −2x + 8. So 3(2x − 5) − 2(x − 4) = 6x − 15 − 2x + 8 = 4x − 7."
+     ],
+     "picture": {
+      "kind": "area",
+      "rows": 3,
+      "cols": 8,
+      "shadeRows": 3,
+      "shadeCols": 5,
+      "label": "3 × (5 + 3) = 3 × 5 + 3 × 3",
+      "caption": "The number outside multiplies each part inside."
+     },
+     "think": {
+      "question": "Simplify 4(x + 2).",
+      "answer": "4x + 8."
+     },
+     "aha": "Multiply every term inside the bracket. A minus in front flips the signs.",
+     "formulas": [
+      "a(b + c) = ab + ac"
      ]
     },
     {
-     "title": "Brackets and patterns",
+     "title": "Patterns that algebra explains",
+     "story": "Anu draws a 2 × 2 box on a calendar around 8, 9, 15 and 16. The diagonals add up the same: 8 + 16 = 24 and 9 + 15 = 24. Is this always true?",
      "text": [
-      "A number outside a bracket multiplies every term inside: 3(2x − 5) = 6x − 15. A minus sign changes the signs: −2(x − 4) = −2x + 8.",
-      "Patterns: find how much is added each time. If it is 3 each time and the first is 4, the rule is 3n + 1."
+      "Call the top-left number n. Then the box is n, n + 1 (next day), n + 7 (one week later) and n + 8.",
+      "Diagonal 1: n + (n + 8) = 2n + 8. Diagonal 2: (n + 1) + (n + 7) = 2n + 8. They are always equal! Letters let us prove a pattern for every case at once."
      ],
-     "formulas": [
-      "a(b + c) = ab + ac"
-     ],
-     "example": {
-      "question": "Simplify 3(2x − 5) − 2(x − 4).",
-      "steps": [
-       "6x − 15 − 2x + 8.",
-       "Collect like terms."
+     "picture": {
+      "kind": "table",
+      "rows": [
+       [
+        "n",
+        "n + 1"
+       ],
+       [
+        "n + 7",
+        "n + 8"
+       ]
       ],
-      "answer": "4x − 7"
-     }
+      "gold": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "caption": "Any 2 × 2 calendar box: both diagonals add up to 2n + 8."
+     },
+     "think": {
+      "question": "Show that the sum of three consecutive numbers is 3 times the middle one.",
+      "answer": "(m − 1) + m + (m + 1) = 3m."
+     },
+     "aha": "Write a pattern with letters to prove that it works every time."
+    },
+    {
+     "title": "Mind the mistake, mend the mistake",
+     "story": "Ravi's homework has four answers marked wrong. Anu helps him find each mistake.",
+     "text": [
+      "2a + 3b = 5ab is wrong: 2a and 3b are unlike terms, so the answer stays 2a + 3b. a + a = a² is wrong: a + a = 2a.",
+      "3(x + 2) = 3x + 2 is wrong: the 3 multiplies both terms, so 3x + 6. −(a − b) = −a − b is wrong: the minus flips both signs, so −a + b."
+     ],
+     "picture": {
+      "kind": "compare",
+      "left": {
+       "title": "Wrong",
+       "lines": [
+        "2a + 3b = 5ab",
+        "a + a = a²",
+        "3(x + 2) = 3x + 2",
+        "−(a − b) = −a − b"
+       ]
+      },
+      "right": {
+       "title": "Right",
+       "lines": [
+        "2a + 3b (stays)",
+        "a + a = 2a",
+        "3(x + 2) = 3x + 6",
+        "−(a − b) = −a + b"
+       ]
+      },
+      "caption": "The four most common algebra mistakes."
+     },
+     "think": {
+      "question": "Is 5x − x = 5?",
+      "answer": "No. 5x − 1x = 4x."
+     },
+     "aha": "Check: are the terms like? Did the bracket number multiply every term? Did the minus flip every sign?"
     }
    ],
    "examples": [
@@ -1537,20 +2191,20 @@
    "subtitle": "Angles at Intersections & Transversals",
    "concepts": [
     {
-     "title": "Angles at a crossing",
-     "text": "When two lines cross, four angles form. Neighbouring angles make a linear pair (sum 180°). Opposite angles are vertically opposite and equal."
+     "title": "When two roads cross",
+     "text": "Linear pair: add to 180°. Vertically opposite angles: equal."
     },
     {
-     "title": "Parallel lines and a transversal",
-     "text": "A transversal crossing two parallel lines makes 8 angles: 4 at each crossing, in matching positions."
+     "title": "Lines that never meet",
+     "text": "A transversal crossing two parallel lines makes 8 angles in two matching groups of 4."
     },
     {
-     "title": "Testing whether lines are parallel",
-     "text": "The rules also work backwards. If corresponding angles are equal, or alternate angles are equal, or co-interior angles add to 180°, then the lines are parallel."
+     "title": "Three angle-pair rules (F, Z, C)",
+     "text": "F: corresponding angles are equal. Z: alternate angles are equal. C: co-interior angles add to 180°."
     },
     {
-     "title": "Equations with angles and the triangle angle sum",
-     "text": "When angles are written with x, use the rule (equal or 180°) to form an equation and solve it."
+     "title": "Are these lines parallel?",
+     "text": "Equal F or Z angles, or C angles adding to 180°, prove that two lines are parallel."
     }
    ],
    "formulas": [
@@ -1629,85 +2283,196 @@
     "Z: alternate equal.",
     "C: co-interior add to 180°."
    ],
-   "intro": "When two lines cross, they make four angles with simple rules. When a third line crosses two parallel lines, eight angles appear, and they are linked in pairs. In this chapter you learn these pairs and use them to find unknown angles and to prove the angle sum of a triangle.",
+   "intro": "Anu stands on a railway bridge. Below her, two straight tracks run side by side and never meet, and a road crosses them. 'Look at all the angles!' she says.",
    "before": [
     "measure angles with a protractor",
     "know that a straight angle is 180° and a full turn is 360°"
    ],
-   "glossary": [
-    {
-     "term": "Intersecting lines",
-     "meaning": "Lines that cross at one point."
-    },
-    {
-     "term": "Linear pair",
-     "meaning": "Two adjacent angles on a straight line. They add to 180°."
-    },
-    {
-     "term": "Vertically opposite angles",
-     "meaning": "The angles opposite each other at a crossing. They are equal."
-    },
-    {
-     "term": "Parallel lines",
-     "meaning": "Lines in a plane that never meet."
-    },
-    {
-     "term": "Transversal",
-     "meaning": "A line that crosses two or more lines."
-    }
-   ],
    "lessons": [
     {
-     "title": "Angles at a crossing",
+     "title": "When two roads cross",
+     "story": "Two straight roads cross like an X. Anu measures one angle: 48°. Thatha says, 'Now you know all four angles without measuring!'",
      "text": [
-      "When two lines cross, four angles form. Neighbouring angles make a linear pair (sum 180°). Opposite angles are vertically opposite and equal.",
-      "If one angle is 48°, the opposite angle is 48°, and the other two are 180° − 48° = 132°."
+      "Angles side by side on a straight line make a linear pair. They add up to 180°. So the neighbour of 48° is 132°.",
+      "Angles opposite each other at the crossing are vertically opposite. They are equal. So the four angles are 48°, 132°, 48°, 132°."
      ],
-     "points": [
-      "Linear pair: 180°.",
-      "Vertically opposite: equal."
-     ]
-    },
-    {
-     "title": "Parallel lines and a transversal",
-     "text": [
-      "A transversal crossing two parallel lines makes 8 angles: 4 at each crossing, in matching positions.",
-      "Corresponding angles (same position at each crossing) are equal. Alternate interior angles (inside the lines, on opposite sides of the transversal, forming a 'Z') are equal. Interior angles on the same side (forming a 'C' or 'U') add to 180°."
-     ],
-     "points": [
-      "F-shape: corresponding. Z-shape: alternate. C-shape: co-interior."
-     ]
-    },
-    {
-     "title": "Testing whether lines are parallel",
-     "text": [
-      "The rules also work backwards. If corresponding angles are equal, or alternate angles are equal, or co-interior angles add to 180°, then the lines are parallel."
-     ],
-     "example": {
-      "question": "Co-interior angles are 75° and 105°. Are the lines parallel?",
-      "steps": [
-       "75° + 105° = 180°."
+     "picture": {
+      "kind": "crossing",
+      "labels": [
+       "132°",
+       "48°",
+       "132°",
+       "48°"
       ],
-      "answer": "Yes"
-     }
+      "caption": "Opposite angles are equal; neighbouring angles add to 180°."
+     },
+     "think": {
+      "question": "One angle at a crossing is 90°. What are the other three?",
+      "answer": "All are 90°."
+     },
+     "aha": "Linear pair: add to 180°. Vertically opposite angles: equal.",
+     "formulas": [
+      "Linear pair = 180°",
+      "Vertically opposite angles are equal"
+     ]
     },
     {
-     "title": "Equations with angles and the triangle angle sum",
+     "title": "Lines that never meet",
+     "story": "The two railway tracks stay the same distance apart forever. Thatha says they are parallel.",
      "text": [
-      "When angles are written with x, use the rule (equal or 180°) to form an equation and solve it.",
-      "Angle sum of a triangle: draw a line through one vertex parallel to the opposite side. The alternate angles copy the two base angles, and the three angles on the straight line add to 180°."
+      "Parallel lines are lines in the same flat surface that never meet, however far you extend them. We write l ∥ m.",
+      "A line that crosses two other lines is called a transversal. The road over the tracks is a transversal. It makes 8 angles: 4 at each track."
      ],
+     "picture": {
+      "kind": "transversal",
+      "labels": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "caption": "A transversal t crossing parallel lines l and m makes 8 angles."
+     },
+     "think": {
+      "question": "Can two lines that do not meet on your page still meet later?",
+      "answer": "Yes, if they are not parallel. They may meet when extended."
+     },
+     "aha": "A transversal crossing two parallel lines makes 8 angles in two matching groups of 4."
+    },
+    {
+     "title": "Perpendicular lines and paper folding",
+     "story": "Anu folds a sheet of paper once to make a crease. Then she folds the crease onto itself. When she opens the paper, two creases cross like a plus sign.",
+     "text": [
+      "Lines that meet at a right angle (90°) are perpendicular. We write AB ⊥ CD. All four angles at the crossing are 90°.",
+      "Now fold two creases that are both perpendicular to the same line. They never meet: lines perpendicular to the same line are parallel."
+     ],
+     "picture": {
+      "kind": "crossing",
+      "labels": [
+       "90°",
+       "90°",
+       "90°",
+       "90°"
+      ],
+      "caption": "Perpendicular lines make four right angles. (Drawn slanted; each angle is 90°.)"
+     },
+     "think": {
+      "question": "Can two lines that are both perpendicular to a third line meet?",
+      "answer": "No. In a flat surface they are parallel."
+     },
+     "aha": "Perpendicular lines meet at 90°. Two lines perpendicular to the same line are parallel."
+    },
+    {
+     "title": "Three angle-pair rules (F, Z, C)",
+     "story": "Anu notices that the angle the road makes with the first track looks exactly like the angle it makes with the second track.",
+     "text": [
+      "Corresponding angles are in the same position at each crossing (an F shape). They are equal.",
+      "Alternate angles are inside the two lines, on opposite sides of the transversal (a Z shape). They are equal.",
+      "Co-interior angles are inside the two lines, on the same side (a C shape). They add up to 180°."
+     ],
+     "picture": {
+      "kind": "transversal",
+      "labels": [
+       "115°",
+       "65°",
+       "65°",
+       "115°",
+       "115°",
+       "65°",
+       "65°",
+       "115°"
+      ],
+      "caption": "With ∠2 = 65°, every other angle is 65° or 115°."
+     },
+     "think": {
+      "question": "If one co-interior angle is 125°, what is the other?",
+      "answer": "180° − 125° = 55°."
+     },
+     "aha": "F: corresponding angles are equal. Z: alternate angles are equal. C: co-interior angles add to 180°."
+    },
+    {
+     "title": "Are these lines parallel?",
+     "story": "Ravi draws two lines and a transversal. The co-interior angles are 75° and 105°. 'Are my lines parallel?' he asks.",
+     "text": [
+      "The rules work backwards too. If corresponding angles are equal, or alternate angles are equal, or co-interior angles add to 180°, the lines are parallel.",
+      "75° + 105° = 180°, so Ravi's lines are parallel."
+     ],
+     "picture": {
+      "kind": "flow",
+      "steps": [
+       "Measure an angle pair",
+       "Equal F or Z angles?",
+       "Or C angles = 180°?",
+       "Then the lines are parallel"
+      ],
+      "caption": "How to test for parallel lines."
+     },
+     "think": {
+      "question": "Corresponding angles are 80° and 85°. Are the lines parallel?",
+      "answer": "No. Corresponding angles of parallel lines are equal."
+     },
+     "aha": "Equal F or Z angles, or C angles adding to 180°, prove that two lines are parallel."
+    },
+    {
+     "title": "Drawing parallel lines and a famous illusion",
+     "story": "Anu slides a set square along a ruler and draws a line at each stop. All her lines come out parallel.",
+     "text": [
+      "Each line makes the same angle with the ruler, so the corresponding angles are equal. Equal corresponding angles mean parallel lines.",
+      "Illusion: if you draw short slanted marks across parallel lines, the lines can look bent or tilted. Your eyes can be fooled, so always check with angles or measurement."
+     ],
+     "picture": {
+      "kind": "transversal",
+      "labels": [
+       "",
+       "70°",
+       "",
+       "",
+       "",
+       "70°",
+       "",
+       ""
+      ],
+      "caption": "Sliding the set square keeps the corresponding angle at 70°, so the lines are parallel."
+     },
+     "think": {
+      "question": "Why does sliding a set square along a ruler give parallel lines?",
+      "answer": "Every line makes the same corresponding angle with the ruler."
+     },
+     "aha": "Equal corresponding angles give parallel lines. Do not trust your eyes; check with angles."
+    },
+    {
+     "title": "Why a triangle's angles make 180°",
+     "story": "Anu cuts the three corners off a paper triangle and puts them side by side. They make a perfect straight line! Thatha asks, 'Can you prove it always happens?'",
+     "text": [
+      "Draw a line through the top corner A, parallel to the base BC. The angle on the left of A equals ∠B (alternate angles), and the angle on the right equals ∠C (alternate angles).",
+      "Together with ∠A, these three angles make a straight line, which is 180°. So ∠A + ∠B + ∠C = 180° for every triangle."
+     ],
+     "picture": {
+      "kind": "triangle",
+      "vertices": [
+       "A",
+       "B",
+       "C"
+      ],
+      "angles": [
+       "∠A",
+       "∠B",
+       "∠C"
+      ],
+      "caption": "A line through A parallel to BC copies ∠B and ∠C next to ∠A."
+     },
+     "think": {
+      "question": "Two angles of a triangle are 50° and 60°. Find the third.",
+      "answer": "180° − 110° = 70°."
+     },
+     "aha": "The three angles of any triangle add up to 180°.",
      "formulas": [
       "∠A + ∠B + ∠C = 180°"
-     ],
-     "example": {
-      "question": "x and 2x + 30 form a linear pair. Find x.",
-      "steps": [
-       "x + 2x + 30 = 180.",
-       "3x = 150."
-      ],
-      "answer": "x = 50"
-     }
+     ]
     }
    ],
    "examples": [

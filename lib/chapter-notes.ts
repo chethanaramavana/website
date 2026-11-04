@@ -1,3 +1,4 @@
+import type { StoryPictureSpec } from '@/app/notes/story-picture';
 import { grade6Notes } from './grade6-notes';
 import { icse6Notes } from './icse6-notes';
 import { icseUpperNotes } from './icse-upper-papers';
@@ -28,6 +29,11 @@ export type ChapterNotes = {
     points?: string[];
     formulas?: string[];
     example?: { question: string; steps: string[]; answer: string };
+    /** Story-style teaching: a short scene, a picture, a pause question and the key idea. */
+    story?: string;
+    picture?: StoryPictureSpec;
+    think?: { question: string; answer: string };
+    aha?: string;
   }[];
   examples?: { type: string; question: string; steps: string[]; answer: string }[];
   mistakes?: string[];

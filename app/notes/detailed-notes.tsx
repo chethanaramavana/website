@@ -5,6 +5,7 @@ import MathText from './math-text';
 import NotesBranding from './notes-branding';
 import NotesVisual from './notes-visual';
 import NotesPrintButton from './real-numbers/print-button';
+import StoryPicture from './story-picture';
 
 type Worked = { question: string; steps: string[]; answer: string };
 
@@ -70,20 +71,10 @@ export default function DetailedNotesDocument({ notes }: { notes: ChapterNotes }
             <p><MathText>{notes.intro}</MathText></p>
           </section>
         )}
-        <section className="study-goals" aria-labelledby={`${notes.slug}-goals`}>
-          <div className="study-section-heading"><h2 id={`${notes.slug}-goals`}>In these notes</h2></div>
-          <ol>
-            {lessons.map((lesson, index) => (
-              <li key={lesson.title}><b>{index + 1}</b><span>{lesson.title}</span></li>
-            ))}
-            <li><b>{lessons.length + 1}</b><span>Solved exam questions ({examples.length})</span></li>
-            <li><b>{lessons.length + 2}</b><span>Common mistakes, exam checklist and practice</span></li>
-          </ol>
-        </section>
         <Footer label="Start here" />
       </article>
 
-      {(notes.before?.length || notes.glossary?.length) ? (
+      {notes.before?.length ? (
         <article className="notes-page study-concepts-page">
           <NotesBranding />
           <RunningHeader notes={notes} label="Get ready" />
@@ -93,20 +84,7 @@ export default function DetailedNotesDocument({ notes }: { notes: ChapterNotes }
               <ul>{notes.before.map((item) => <li key={item}><MathText>{item}</MathText></li>)}</ul>
             </section>
           ) : null}
-          {notes.glossary?.length ? (
-            <section className="study-concepts">
-              <div className="study-section-heading compact"><h2>Words you must know</h2></div>
-              <div className="study-concept-list">
-                {notes.glossary.map((entry, index) => (
-                  <section className="study-concept" key={entry.term}>
-                    <span className="study-concept-number">{String(index + 1).padStart(2, '0')}</span>
-                    <div><h3>{entry.term}</h3><p><MathText>{entry.meaning}</MathText></p></div>
-                  </section>
-                ))}
-              </div>
-            </section>
-          ) : null}
-          <Footer label="Words and basics" />
+          <Footer label="Get ready" />
         </article>
       ) : null}
 
@@ -116,8 +94,16 @@ export default function DetailedNotesDocument({ notes }: { notes: ChapterNotes }
           <RunningHeader notes={notes} label={`Lesson ${index + 1} of ${lessons.length}`} />
           <section className="study-concepts">
             <div className="study-section-heading compact"><h2>{index + 1}. {lesson.title}</h2></div>
+            {lesson.story && <aside className="story-scene"><span>Story</span><p><MathText>{lesson.story}</MathText></p></aside>}
             {lesson.text.map((paragraph) => <p className="detailed-notes-paragraph" key={paragraph}><MathText>{paragraph}</MathText></p>)}
-            {index === 0 && <NotesVisual notes={notes} conceptIndex={0} />}
+            {lesson.picture ? <StoryPicture spec={lesson.picture} /> : index === 0 && <NotesVisual notes={notes} conceptIndex={0} />}
+            {lesson.think && (
+              <details className="story-think">
+                <summary><b>Stop and think:</b> <MathText>{lesson.think.question}</MathText></summary>
+                <p><MathText>{lesson.think.answer}</MathText></p>
+              </details>
+            )}
+            {lesson.aha && <aside className="story-aha"><span>Aha!</span><p><MathText>{lesson.aha}</MathText></p></aside>}
             {lesson.points?.length ? (
               <div className="study-revision-ideas">
                 <h3>Remember</h3>
