@@ -1,0 +1,1078 @@
+{
+ "icse10-trigonometric-identities": {
+  "intro": "An identity is an equation that is true for every angle. In this chapter you learn three basic identities and how to use them to prove other results. These notes start from the right triangle, so that you see where each identity comes from, and then show a clear method for every proof.",
+  "before": [
+   "know sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent",
+   "know the reciprocals cosec θ, sec θ, cot θ",
+   "use (a + b)², (a − b)² and a² − b²"
+  ],
+  "glossary": [
+   {
+    "term": "Identity",
+    "meaning": "An equation that is true for all values of the angle for which both sides are defined."
+   },
+   {
+    "term": "Reciprocal ratios",
+    "meaning": "cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ."
+   },
+   {
+    "term": "Quotient ratios",
+    "meaning": "tan θ = sin θ/cos θ and cot θ = cos θ/sin θ."
+   },
+   {
+    "term": "Complementary angles",
+    "meaning": "Two angles that add to 90°, such as 35° and 55°."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Where sin²θ + cos²θ = 1 comes from",
+    "text": [
+     "Take a right triangle with hypotenuse h, opposite side p and adjacent side b. Pythagoras: p² + b² = h².",
+     "Divide by h²: (p/h)² + (b/h)² = 1. But p/h = sin θ and b/h = cos θ. So sin²θ + cos²θ = 1.",
+     "This identity can be used in three forms: sin²θ = 1 − cos²θ, cos²θ = 1 − sin²θ, and sin²θ + cos²θ = 1."
+    ],
+    "points": [
+     "sin²θ means (sin θ)²."
+    ],
+    "formulas": [
+     "sin²θ + cos²θ = 1"
+    ]
+   },
+   {
+    "title": "The other two identities",
+    "text": [
+     "Divide sin²θ + cos²θ = 1 by cos²θ: tan²θ + 1 = sec²θ. So sec²θ − tan²θ = 1.",
+     "Divide by sin²θ instead: 1 + cot²θ = cosec²θ. So cosec²θ − cot²θ = 1.",
+     "Useful factorised forms: (sec θ − tan θ)(sec θ + tan θ) = 1 and (cosec θ − cot θ)(cosec θ + cot θ) = 1."
+    ],
+    "formulas": [
+     "1 + tan²θ = sec²θ",
+     "1 + cot²θ = cosec²θ"
+    ]
+   },
+   {
+    "title": "How to prove an identity",
+    "text": [
+     "1. Start with the more complicated side. Leave the other side alone.",
+     "2. If you are stuck, change everything into sin θ and cos θ.",
+     "3. Use an identity to replace expressions such as 1 − sin²θ, sec²θ − 1 and so on.",
+     "4. Combine fractions with a common denominator, and look for a² − b² patterns.",
+     "5. Stop when you reach the other side, and write 'LHS = RHS'."
+    ],
+    "points": [
+     "Never move terms across the = sign in a proof."
+    ],
+    "example": {
+     "question": "Prove that tan θ + cot θ = sec θ cosec θ.",
+     "steps": [
+      "LHS = sin θ/cos θ + cos θ/sin θ.",
+      "= (sin²θ + cos²θ)/(sin θ cos θ) = 1/(sin θ cos θ).",
+      "= sec θ cosec θ = RHS."
+     ],
+     "answer": "Proved"
+    }
+   },
+   {
+    "title": "Complementary angles",
+    "text": [
+     "sin(90° − θ) = cos θ and cos(90° − θ) = sin θ. Also tan(90° − θ) = cot θ and sec(90° − θ) = cosec θ.",
+     "Example: sin 35°/cos 55° = cos 55°/cos 55° = 1. And tan 40° × tan 50° = tan 40° × cot 40° = 1."
+    ],
+    "points": [
+     "Look for two angles that add to 90°."
+    ],
+    "formulas": [
+     "sin(90° − θ) = cos θ",
+     "tan(90° − θ) = cot θ"
+    ]
+   },
+   {
+    "title": "Finding ratios from one given ratio",
+    "text": [
+     "If one ratio is given, draw a right triangle with those sides, find the third side by Pythagoras, then read the other ratios.",
+     "Example: sin θ = 3/5 → opposite 3, hypotenuse 5, adjacent 4. So cos θ = 4/5 and tan θ = 3/4."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Simple proof",
+    "question": "Prove that (1 − sin²θ) sec²θ = 1.",
+    "steps": [
+     "1 − sin²θ = cos²θ.",
+     "cos²θ × 1/cos²θ = 1."
+    ],
+    "answer": "Proved"
+   },
+   {
+    "type": "Squares",
+    "question": "Prove that (sin A + cosec A)² + (cos A + sec A)² = 7 + tan²A + cot²A.",
+    "steps": [
+     "Expand: sin²A + 2 + cosec²A + cos²A + 2 + sec²A.",
+     "= 1 + 4 + (1 + cot²A) + (1 + tan²A)."
+    ],
+    "answer": "7 + tan²A + cot²A"
+   },
+   {
+    "type": "Square root",
+    "question": "Prove that √[(1 + sin A)/(1 − sin A)] = sec A + tan A.",
+    "steps": [
+     "Multiply inside by (1 + sin A)/(1 + sin A).",
+     "= √[(1 + sin A)²/cos²A] = (1 + sin A)/cos A."
+    ],
+    "answer": "sec A + tan A"
+   },
+   {
+    "type": "Fractions",
+    "question": "Prove that cos A/(1 − tan A) + sin A/(1 − cot A) = sin A + cos A.",
+    "steps": [
+     "First term = cos²A/(cos A − sin A).",
+     "Second term = sin²A/(sin A − cos A) = −sin²A/(cos A − sin A).",
+     "Sum = (cos²A − sin²A)/(cos A − sin A)."
+    ],
+    "answer": "cos A + sin A"
+   },
+   {
+    "type": "Complementary",
+    "question": "Evaluate sin 35°/cos 55° + cos 22°/sin 68°.",
+    "steps": [
+     "sin 35° = cos 55°.",
+     "cos 22° = sin 68°."
+    ],
+    "answer": "2"
+   },
+   {
+    "type": "Given sec + tan",
+    "question": "If sec θ + tan θ = p, find sin θ in terms of p.",
+    "steps": [
+     "sec θ − tan θ = 1/p.",
+     "sec θ = (p + 1/p)/2, tan θ = (p − 1/p)/2.",
+     "sin θ = tan θ ÷ sec θ."
+    ],
+    "answer": "(p² − 1)/(p² + 1)"
+   }
+  ],
+  "mistakes": [
+   "Writing sin²θ as sin θ².",
+   "Working on both sides at once and moving terms across =.",
+   "Cancelling sin from sin A/sin B.",
+   "Forgetting that sec²θ − 1 = tan²θ.",
+   "Sign errors when you combine fractions."
+  ],
+  "checklist": [
+   "Choose the harder side.",
+   "Convert to sin and cos when stuck.",
+   "Write each step on a new line.",
+   "Name the identity used.",
+   "End with 'LHS = RHS'."
+  ],
+  "practice": [
+   {
+    "question": "Simplify sin²θ + sin²θ cot²θ.",
+    "answer": "1",
+    "marks": 2
+   },
+   {
+    "question": "Simplify (sec θ − 1)(sec θ + 1).",
+    "answer": "tan²θ",
+    "marks": 2
+   },
+   {
+    "question": "Evaluate tan 40° × tan 50°.",
+    "answer": "1",
+    "marks": 2
+   },
+   {
+    "question": "If sin θ = 5/13, find cos θ and tan θ.",
+    "answer": "12/13, 5/12",
+    "marks": 2
+   },
+   {
+    "question": "Prove (1 + tan²A)/(1 + cot²A) = tan²A.",
+    "answer": "sec²A/cosec²A = tan²A",
+    "marks": 3
+   },
+   {
+    "question": "Prove (1 − cos θ)/sin θ = sin θ/(1 + cos θ).",
+    "answer": "Cross-multiply: 1 − cos²θ = sin²θ",
+    "marks": 3
+   },
+   {
+    "question": "Prove sin⁴θ − cos⁴θ = 2sin²θ − 1.",
+    "answer": "(sin² − cos²)(sin² + cos²) = sin² − (1 − sin²)",
+    "marks": 3
+   },
+   {
+    "question": "Prove sec⁴A − sec²A = tan⁴A + tan²A.",
+    "answer": "sec²A(sec²A − 1) = (1 + tan²A)tan²A",
+    "marks": 3
+   },
+   {
+    "question": "Evaluate cos 60° cos 30° − sin 60° sin 30°.",
+    "answer": "0",
+    "marks": 2
+   },
+   {
+    "question": "Prove (cosec A − sin A)(sec A − cos A) = sin A cos A.",
+    "answer": "(cos²A/sin A)(sin²A/cos A)",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-heights-distances": {
+  "intro": "You cannot climb every tower to measure it. But if you know how far away you are and the angle you look up, trigonometry gives the height. This chapter uses right triangles to find heights and distances. These notes show how to draw the figure, choose the correct ratio, and handle questions with two triangles.",
+  "before": [
+   "know sin, cos and tan of 30°, 45° and 60°",
+   "solve linear equations",
+   "use √3 ≈ 1.732"
+  ],
+  "glossary": [
+   {
+    "term": "Line of sight",
+    "meaning": "The line from the eye to the object."
+   },
+   {
+    "term": "Angle of elevation",
+    "meaning": "The angle between the horizontal and the line of sight when you look UP."
+   },
+   {
+    "term": "Angle of depression",
+    "meaning": "The angle between the horizontal and the line of sight when you look DOWN."
+   },
+   {
+    "term": "Horizontal distance",
+    "meaning": "The distance along the ground to the foot of the object."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Draw the figure",
+    "text": [
+     "Draw the object as a vertical line, the ground as a horizontal line, and the line of sight. Mark the right angle at the foot of the object.",
+     "Mark the given angle at the eye of the observer. Label the unknown height h and the unknown distance x."
+    ],
+    "points": [
+     "A good figure is half the answer."
+    ]
+   },
+   {
+    "title": "Choose the ratio",
+    "text": [
+     "If the question involves the height and the horizontal distance, use tan θ = height/distance.",
+     "If it involves a slant length (a ladder, a string, a rope), use sin θ = height/slant or cos θ = distance/slant.",
+     "Values: tan 30° = 1/√3, tan 45° = 1, tan 60° = √3, sin 30° = 1/2, sin 60° = √3/2, cos 60° = 1/2, cos 30° = √3/2."
+    ],
+    "formulas": [
+     "tan θ = h/x",
+     "sin θ = h/slant",
+     "cos θ = x/slant"
+    ],
+    "example": {
+     "question": "From 40 m away, the angle of elevation of a tower's top is 60°. Find the height.",
+     "steps": [
+      "tan 60° = h/40.",
+      "h = 40√3 ≈ 69.28 m."
+     ],
+     "answer": "69.28 m"
+    }
+   },
+   {
+    "title": "Angle of depression",
+    "text": [
+     "Looking down from the top of a cliff, the angle of depression is measured below the horizontal at the top.",
+     "The horizontal at the top is parallel to the ground. So the angle of depression equals the angle of elevation from the object up to the top (alternate angles). Put this angle inside the triangle at the ground point."
+    ],
+    "points": [
+     "Angle of depression = angle of elevation from the other end."
+    ]
+   },
+   {
+    "title": "Two triangles",
+    "text": [
+     "Many questions have two angles from two points, or a building and a tower. Draw both triangles, write one equation for each, and use the common length.",
+     "Example: angles 30° and 60° from two points on the same side, 40 m apart. Let the nearer point be x m away. h = x√3 and h = (x + 40)/√3. So 3x = x + 40, x = 20 and h = 20√3 ≈ 34.64 m."
+    ],
+    "points": [
+     "Write the common side once and use it in both equations."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Kite",
+    "question": "A kite string is 60 m long and makes 30° with the ground. Find the height.",
+    "steps": [
+     "sin 30° = h/60."
+    ],
+    "answer": "30 m"
+   },
+   {
+    "type": "Broken tree",
+    "question": "A tree breaks; the top touches the ground 10 m from the foot at 30°. Find the original height.",
+    "steps": [
+     "Standing part = 10 tan 30° = 10/√3.",
+     "Broken part = 10/cos 30° = 20/√3.",
+     "Total = 30/√3 = 10√3."
+    ],
+    "answer": "≈ 17.32 m"
+   },
+   {
+    "type": "Building and tower",
+    "question": "From the top of a 60 m building, the angles of depression of the top and bottom of a tower are 30° and 60°. Find the tower's height.",
+    "steps": [
+     "Distance d = 60/tan 60° = 20√3 m.",
+     "Drop to the tower top = d tan 30° = 20 m.",
+     "Tower = 60 − 20."
+    ],
+    "answer": "40 m"
+   },
+   {
+    "type": "Ship and cliff",
+    "question": "A man 16 m above the water sees a cliff top at 60° elevation and the base at 30° depression. Find the distance and the cliff height.",
+    "steps": [
+     "d = 16/tan 30° = 16√3 ≈ 27.71 m.",
+     "Above the deck: d tan 60° = 48 m.",
+     "Cliff = 48 + 16."
+    ],
+    "answer": "27.71 m and 64 m"
+   },
+   {
+    "type": "Two boats",
+    "question": "From a 75 m lighthouse, the angles of depression of two boats on the same side are 45° and 30°. Find the distance between them.",
+    "steps": [
+     "Near boat: 75 m. Far boat: 75√3 m.",
+     "Difference = 75(√3 − 1)."
+    ],
+    "answer": "≈ 54.9 m"
+   },
+   {
+    "type": "Shadow",
+    "question": "Find the angle of elevation of the sun when the shadow of a pole is √3 times its height.",
+    "steps": [
+     "tan θ = h/(√3 h) = 1/√3."
+    ],
+    "answer": "30°"
+   }
+  ],
+  "mistakes": [
+   "Putting the angle of depression at the wrong place in the triangle.",
+   "Using sin when the slant length is not involved.",
+   "Forgetting to add the observer's height or the deck height.",
+   "Rounding √3 too early.",
+   "Not drawing a figure."
+  ],
+  "checklist": [
+   "Draw and label the figure.",
+   "Write the ratio in words before numbers.",
+   "Keep √3 until the last line.",
+   "Round to the required decimal places.",
+   "Give units (m)."
+  ],
+  "practice": [
+   {
+    "question": "Height of a tower whose top is at 60° from 10 m away.",
+    "answer": "10√3 ≈ 17.32 m",
+    "marks": 2
+   },
+   {
+    "question": "Shadow of a 12 m pole when the sun's elevation is 45°.",
+    "answer": "12 m",
+    "marks": 2
+   },
+   {
+    "question": "A ladder 8 m long makes 30° with the wall. Height reached on the wall.",
+    "answer": "4√3 ≈ 6.93 m",
+    "marks": 2
+   },
+   {
+    "question": "From a 100 m cliff, the angle of depression of a boat is 30°. Distance of the boat.",
+    "answer": "100√3 ≈ 173.2 m",
+    "marks": 3
+   },
+   {
+    "question": "Angles 45° and 60° from two points 20 m apart on one side. Find the height.",
+    "answer": "≈ 47.32 m",
+    "marks": 4
+   },
+   {
+    "question": "From a 90 m tower, angles of depression of two cars on one side are 30° and 60°. Distance between the cars.",
+    "answer": "60√3 ≈ 103.92 m",
+    "marks": 3
+   },
+   {
+    "question": "A 1.5 m tall boy sees the top of a 31.5 m building at 60°. How far is he from the building?",
+    "answer": "30/√3 = 10√3 ≈ 17.32 m",
+    "marks": 3
+   },
+   {
+    "question": "The angle of elevation of the top of a tower changes from 30° to 60° as you walk 30 m towards it. Find the height.",
+    "answer": "15√3 ≈ 25.98 m",
+    "marks": 3
+   },
+   {
+    "question": "A pole 6 m high casts a shadow 2√3 m long. Find the sun's elevation.",
+    "answer": "60°",
+    "marks": 2
+   },
+   {
+    "question": "A string of a kite is 100 m and makes 60° with the ground. Find the height of the kite.",
+    "answer": "50√3 ≈ 86.6 m",
+    "marks": 2
+   }
+  ]
+ },
+ "icse10-graphical-representation": {
+  "intro": "Large data is easier to understand as a graph. In this chapter you draw a histogram to see the shape of the data and to estimate the mode, and an ogive (cumulative frequency curve) to estimate the median and quartiles. The board exam usually has one full graph question, so these notes give exact steps for both graphs.",
+  "before": [
+   "make a frequency table with class intervals",
+   "add cumulative totals",
+   "choose a scale on graph paper"
+  ],
+  "glossary": [
+   {
+    "term": "Class interval",
+    "meaning": "A group such as 10–20. Here 10 is the lower limit and 20 is the upper limit."
+   },
+   {
+    "term": "Frequency",
+    "meaning": "How many values fall in a class."
+   },
+   {
+    "term": "Cumulative frequency (cf)",
+    "meaning": "The running total of the frequencies up to the end of a class."
+   },
+   {
+    "term": "Histogram",
+    "meaning": "Bars drawn side by side, with no gaps, for class intervals."
+   },
+   {
+    "term": "Ogive",
+    "meaning": "A smooth curve of cumulative frequency against upper class limits."
+   },
+   {
+    "term": "Quartiles",
+    "meaning": "Q₁ (lower quartile) at n/4, median at n/2, Q₃ (upper quartile) at 3n/4. IQR = Q₃ − Q₁."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Cumulative frequency table",
+    "text": [
+     "Add a column 'cf'. The first cf is the first frequency. Each next cf = previous cf + this frequency. The last cf must equal n, the total.",
+     "Example: frequencies 5, 8, 12, 10, 5 give cf 5, 13, 25, 35, 40."
+    ],
+    "points": [
+     "The last cf = total number of observations."
+    ]
+   },
+   {
+    "title": "Histogram and mode",
+    "text": [
+     "Put the class intervals on the x-axis and the frequencies on the y-axis. Draw bars without gaps. If the first class does not start at 0, show a kink (zig-zag) on the x-axis.",
+     "To estimate the mode: in the tallest bar, join its top-left corner to the top-left corner of the next bar on the right, and its top-right corner to the top-right corner of the bar on the left. The two lines cross. Drop a perpendicular from the crossing point to the x-axis and read the mode.",
+     "Check with the formula: mode ≈ l + h(f₁ − f₀)/(2f₁ − f₀ − f₂)."
+    ],
+    "formulas": [
+     "Mode ≈ l + h(f₁ − f₀)/(2f₁ − f₀ − f₂)"
+    ],
+    "example": {
+     "question": "Estimate the mode: 10–20: 4, 20–30: 10, 30–40: 16, 40–50: 12, 50–60: 6.",
+     "steps": [
+      "Modal class 30–40: l = 30, h = 10, f₁ = 16, f₀ = 10, f₂ = 12.",
+      "Mode ≈ 30 + 10 × 6/10."
+     ],
+     "answer": "≈ 36"
+    }
+   },
+   {
+    "title": "Drawing an ogive",
+    "text": [
+     "Plot each upper class limit (x) against its cumulative frequency (y). Also plot the lower limit of the first class with cf 0.",
+     "Join the points with a smooth free-hand curve, not with straight lines.",
+     "Choose a scale that uses most of the graph paper, for example 2 cm = 10 units on both axes."
+    ],
+    "points": [
+     "Upper limit with cf.",
+     "Start from (first lower limit, 0)."
+    ]
+   },
+   {
+    "title": "Reading the median and quartiles",
+    "text": [
+     "Median: find n/2 on the y-axis. Draw a horizontal line to the curve, then a vertical line down to the x-axis. Read the value.",
+     "Q₁ at n/4 and Q₃ at 3n/4 in the same way. IQR = Q₃ − Q₁.",
+     "'How many are above 35?': draw up from 35 to the curve and across to read the cf. Then subtract it from n.",
+     "Always show the reading lines on the graph with dashes."
+    ],
+    "formulas": [
+     "Median at n/2",
+     "Q₁ at n/4, Q₃ at 3n/4",
+     "IQR = Q₃ − Q₁"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "cf table",
+    "question": "Write the cf for 0–10: 5, 10–20: 8, 20–30: 12, 30–40: 10, 40–50: 5.",
+    "steps": [
+     "Running totals."
+    ],
+    "answer": "5, 13, 25, 35, 40"
+   },
+   {
+    "type": "Median from ogive",
+    "question": "Marks: 0–10: 3, 10–20: 7, 20–30: 12, 30–40: 18, 40–50: 10. Estimate the median.",
+    "steps": [
+     "cf: 3, 10, 22, 40, 50. n/2 = 25.",
+     "The 25th value is in 30–40.",
+     "Estimate ≈ 30 + (25 − 22)/18 × 10."
+    ],
+    "answer": "≈ 31.7 marks"
+   },
+   {
+    "type": "Above a value",
+    "question": "For the same data, estimate the number of students scoring more than 35.",
+    "steps": [
+     "cf at 35 ≈ 22 + 9 = 31.",
+     "50 − 31."
+    ],
+    "answer": "≈ 19 students"
+   },
+   {
+    "type": "Quartiles and IQR",
+    "question": "Heights: 140–145: 4, 145–150: 6, 150–155: 10, 155–160: 12, 160–165: 8. Estimate the median, Q₁, Q₃ and IQR.",
+    "steps": [
+     "cf: 4, 10, 20, 32, 40.",
+     "Median at 20 → 155. Q₁ at 10 → 150.",
+     "Q₃ at 30 → 155 + 10/12 × 5 ≈ 159.2."
+    ],
+    "answer": "155 cm, 150 cm, 159.2 cm, IQR ≈ 9.2 cm"
+   },
+   {
+    "type": "Study time",
+    "question": "60 students: 0–30: 6, 30–60: 12, 60–90: 20, 90–120: 14, 120–150: 8. Estimate the median and the number studying over 90 minutes.",
+    "steps": [
+     "cf: 6, 18, 38, 52, 60.",
+     "Median ≈ 60 + (30 − 18)/20 × 30 = 78.",
+     "Over 90: 14 + 8."
+    ],
+    "answer": "78 minutes; 22 students"
+   },
+   {
+    "type": "Histogram mode",
+    "question": "Write the steps to estimate the mode from a histogram.",
+    "steps": [
+     "Draw the bars. In the tallest bar, draw two crossing lines to the neighbouring bars' corners.",
+     "Drop a perpendicular from the crossing point to the x-axis."
+    ],
+    "answer": "Read the mode on the x-axis"
+   }
+  ],
+  "mistakes": [
+   "Plotting cf against the class mark or the lower limit.",
+   "Joining the ogive points with straight lines.",
+   "Leaving gaps between histogram bars.",
+   "Reading the median at n instead of n/2.",
+   "Not showing a scale or the reading lines."
+  ],
+  "checklist": [
+   "Write the scale on the graph.",
+   "Label both axes.",
+   "Start the ogive at (first lower limit, 0).",
+   "Show dashed reading lines.",
+   "Write answers with units."
+  ],
+  "practice": [
+   {
+    "question": "Class mark of 25–35.",
+    "answer": "30",
+    "marks": 2
+   },
+   {
+    "question": "cf for frequencies 3, 5, 7.",
+    "answer": "3, 8, 15",
+    "marks": 2
+   },
+   {
+    "question": "Median position for n = 100.",
+    "answer": "50th",
+    "marks": 2
+   },
+   {
+    "question": "Q₃ position for n = 120.",
+    "answer": "90th",
+    "marks": 2
+   },
+   {
+    "question": "Q₁ = 32, Q₃ = 58. Find IQR.",
+    "answer": "26",
+    "marks": 2
+   },
+   {
+    "question": "Estimate the median for 0–10: 5, 10–20: 15, 20–30: 20, 30–40: 10.",
+    "answer": "22.5",
+    "marks": 3
+   },
+   {
+    "question": "For n = 80, at which cf do you read Q₁ and Q₃?",
+    "answer": "20 and 60",
+    "marks": 2
+   },
+   {
+    "question": "In an ogive, what is plotted on the x-axis?",
+    "answer": "Upper class limits",
+    "marks": 2
+   },
+   {
+    "question": "Estimate the mode: 0–10: 2, 10–20: 6, 20–30: 9, 30–40: 5.",
+    "answer": "20 + 10 × 3/7 ≈ 24.3",
+    "marks": 3
+   },
+   {
+    "question": "Data 0–20: 8, 20–40: 12, 40–60: 20, 60–80: 10. Estimate the median.",
+    "answer": "40 + (25 − 20)/20 × 20 = 45",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-central-tendency": {
+  "intro": "Mean, median and mode are three ways to describe the 'centre' or 'typical value' of data. In this chapter you find them for a simple list, for a frequency table, and for grouped data. These notes show which method to use and how to set out the table so that you do not lose marks.",
+  "before": [
+   "add, multiply and divide decimals",
+   "arrange numbers in order",
+   "make a frequency table"
+  ],
+  "glossary": [
+   {
+    "term": "Mean",
+    "meaning": "The sum of all values divided by the number of values."
+   },
+   {
+    "term": "Median",
+    "meaning": "The middle value after you arrange the data in order."
+   },
+   {
+    "term": "Mode",
+    "meaning": "The value that occurs most often."
+   },
+   {
+    "term": "Class mark",
+    "meaning": "The middle value of a class: (lower + upper)/2. It stands for the class in grouped data."
+   },
+   {
+    "term": "Assumed mean A",
+    "meaning": "A convenient value near the middle, used to make calculation easier."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Raw data",
+    "text": [
+     "Mean = (sum of values) ÷ (number of values). Example: 4, 7, 9, 12, 8 → sum 40, mean 8.",
+     "Median: arrange in order. If n is odd, take the middle value ((n + 1)/2-th). If n is even, take the mean of the two middle values (n/2-th and (n/2 + 1)-th).",
+     "Mode: the most frequent value."
+    ],
+    "points": [
+     "Arrange the data before you find the median."
+    ],
+    "formulas": [
+     "Mean = Σx/n"
+    ],
+    "example": {
+     "question": "Find the median of 12, 17, 3, 14, 5, 8, 7, 15.",
+     "steps": [
+      "Arranged: 3, 5, 7, 8, 12, 14, 15, 17.",
+      "n = 8, so take the 4th and 5th values: 8 and 12."
+     ],
+     "answer": "10"
+    }
+   },
+   {
+    "title": "Frequency tables (discrete data)",
+    "text": [
+     "Make columns x, f and fx. Mean = Σfx ÷ Σf.",
+     "Median: make a cf column. Find the position (n + 1)/2 or n/2 and read which x has that cf.",
+     "Mode: the x with the highest f."
+    ],
+    "formulas": [
+     "Mean = Σfx/Σf"
+    ],
+    "example": {
+     "question": "Find the mean: x = 5, 10, 15, 20 with f = 3, 7, 6, 4.",
+     "steps": [
+      "Σf = 20.",
+      "Σfx = 15 + 70 + 90 + 80 = 255."
+     ],
+     "answer": "12.75"
+    }
+   },
+   {
+    "title": "Grouped data: three methods for the mean",
+    "text": [
+     "Direct method: use the class mark as x. Mean = Σfx/Σf.",
+     "Short-cut (assumed mean) method: choose A, find d = x − A. Mean = A + Σfd/Σf.",
+     "Step-deviation method: if the class width is h, use t = (x − A)/h. Mean = A + h × Σft/Σf.",
+     "All three methods give the same answer. Use the one the question asks for."
+    ],
+    "formulas": [
+     "Mean = A + Σfd/Σf",
+     "Mean = A + h Σft/Σf"
+    ]
+   },
+   {
+    "title": "Median class and modal class",
+    "text": [
+     "For grouped data, the median class is the class where the cf first reaches n/2. The modal class is the class with the highest frequency.",
+     "The board exam usually asks for the estimate of the median and the mode from graphs (see the Graphical Representation chapter)."
+    ]
+   },
+   {
+    "title": "Changes to data",
+    "text": [
+     "If every value is increased by k, the mean increases by k. If every value is multiplied by k, the mean is multiplied by k.",
+     "If one value is replaced, find the old sum, change it, and divide by n again."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Replace a value",
+    "question": "The mean of 10 values is 15. One value 20 is replaced by 30. Find the new mean.",
+    "steps": [
+     "Old sum = 150.",
+     "New sum = 150 − 20 + 30 = 160."
+    ],
+    "answer": "16"
+   },
+   {
+    "type": "Grouped mean",
+    "question": "Find the mean: 0–10: 5, 10–20: 8, 20–30: 15, 30–40: 16, 40–50: 6.",
+    "steps": [
+     "x: 5, 15, 25, 35, 45. Σf = 50.",
+     "Σfx = 25 + 120 + 375 + 560 + 270 = 1,350."
+    ],
+    "answer": "27"
+   },
+   {
+    "type": "Missing frequency",
+    "question": "x = 11, 13, 15, 19, 21, 23 with f = 3, 6, 9, 13, p, 4. The mean is 18. Find p.",
+    "steps": [
+     "Σf = 35 + p, Σfx = 585 + 21p.",
+     "585 + 21p = 18(35 + p) = 630 + 18p."
+    ],
+    "answer": "p = 15"
+   },
+   {
+    "type": "Mean, median, mode",
+    "question": "x = 2, 3, 4, 5, 6 with f = 4, 7, 10, 6, 3. Find all three.",
+    "steps": [
+     "Σfx = 117, n = 30, mean = 3.9.",
+     "cf: 4, 11, 21, … The 15th and 16th values are 4.",
+     "Highest f is at 4."
+    ],
+    "answer": "Mean 3.9, median 4, mode 4"
+   },
+   {
+    "type": "Step-deviation",
+    "question": "Use A = 25 and h = 10 to find the mean of 0–10: 5, 10–20: 8, 20–30: 15, 30–40: 16, 40–50: 6.",
+    "steps": [
+     "t = −2, −1, 0, 1, 2.",
+     "Σft = −10 − 8 + 0 + 16 + 12 = 10.",
+     "Mean = 25 + 10 × 10/50."
+    ],
+    "answer": "27"
+   },
+   {
+    "type": "Cricket scores",
+    "question": "Scores: 34, 12, 56, 0, 45, 34, 78, 23, 34. Find the mean, median and mode, and the new mean after a 10th score of 84.",
+    "steps": [
+     "Sum = 316, mean ≈ 35.11.",
+     "Arranged middle (5th) value = 34.",
+     "Mode = 34. New mean = 400/10."
+    ],
+    "answer": "35.11, 34, 34; new mean 40"
+   }
+  ],
+  "mistakes": [
+   "Finding the median without arranging the data.",
+   "Using the class limits instead of the class marks.",
+   "Dividing Σfx by the number of classes instead of Σf.",
+   "Wrong signs in d or t.",
+   "For even n, taking only one middle value."
+  ],
+  "checklist": [
+   "Draw a neat table with headings x, f, fx (or d, t).",
+   "Show Σf and Σfx.",
+   "Write the formula before you substitute.",
+   "Arrange data before finding the median.",
+   "Round only at the end."
+  ],
+  "practice": [
+   {
+    "question": "Mean of 6, 8, 10, 12.",
+    "answer": "9",
+    "marks": 2
+   },
+   {
+    "question": "Median of 9, 2, 7, 4, 5.",
+    "answer": "5",
+    "marks": 2
+   },
+   {
+    "question": "Mode of 1, 2, 2, 3, 3, 3, 4.",
+    "answer": "3",
+    "marks": 2
+   },
+   {
+    "question": "Mean of 5 numbers is 12. The number 20 is removed. Find the new mean.",
+    "answer": "10",
+    "marks": 2
+   },
+   {
+    "question": "Median of 10, 12, 15, 18, 20, 25.",
+    "answer": "16.5",
+    "marks": 2
+   },
+   {
+    "question": "Mean of x = 10, 20, 30, 40 with f = 2, 3, 4, 1.",
+    "answer": "24",
+    "marks": 3
+   },
+   {
+    "question": "The mean of x, x + 2, x + 4, x + 6 is 11. Find x.",
+    "answer": "8",
+    "marks": 2
+   },
+   {
+    "question": "Find the median class of 0–10: 4, 10–20: 6, 20–30: 12, 30–40: 10, 40–50: 8.",
+    "answer": "20–30",
+    "marks": 3
+   },
+   {
+    "question": "Each of 8 values is increased by 3. The old mean was 20. Find the new mean.",
+    "answer": "23",
+    "marks": 2
+   },
+   {
+    "question": "Use the short-cut method with A = 35: 20–30: 5, 30–40: 10, 40–50: 5.",
+    "answer": "Σfd = −50 + 0 + 50 = 0, mean = 35",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-probability": {
+  "intro": "Probability measures how likely something is, on a scale from 0 (impossible) to 1 (certain). In this chapter you find probabilities by counting: coins, dice, cards and balls in a bag. The key skill is to list all outcomes correctly and count the favourable ones without missing or repeating any.",
+  "before": [
+   "simplify fractions",
+   "list outcomes in a systematic way",
+   "know a standard deck of 52 cards"
+  ],
+  "glossary": [
+   {
+    "term": "Experiment",
+    "meaning": "An action with several possible results, such as tossing a coin."
+   },
+   {
+    "term": "Outcome",
+    "meaning": "One possible result."
+   },
+   {
+    "term": "Sample space",
+    "meaning": "The list of all possible outcomes."
+   },
+   {
+    "term": "Event",
+    "meaning": "A set of outcomes, such as 'an even number'."
+   },
+   {
+    "term": "Equally likely",
+    "meaning": "Every outcome has the same chance."
+   },
+   {
+    "term": "Complement",
+    "meaning": "'Not E': all outcomes that are not in E."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The basic formula",
+    "text": [
+     "P(E) = number of favourable outcomes ÷ total number of outcomes, when all outcomes are equally likely.",
+     "0 ≤ P(E) ≤ 1. An impossible event has P = 0. A sure event has P = 1.",
+     "P(not E) = 1 − P(E). Use this when 'not E' is easier to count."
+    ],
+    "formulas": [
+     "P(E) = favourable ÷ total",
+     "P(not E) = 1 − P(E)"
+    ],
+    "example": {
+     "question": "A die is thrown. Find P(a number greater than 4).",
+     "steps": [
+      "Total = 6. Favourable: 5, 6."
+     ],
+     "answer": "2/6 = 1/3"
+    }
+   },
+   {
+    "title": "Coins and dice",
+    "text": [
+     "One coin: H, T (2 outcomes). Two coins: HH, HT, TH, TT (4). Three coins: 8 outcomes.",
+     "One die: 1 to 6. Two dice: 36 outcomes. Draw a 6 × 6 table of pairs (first die, second die) and count.",
+     "Example: P(sum 8) with two dice: (2, 6), (3, 5), (4, 4), (5, 3), (6, 2) → 5/36."
+    ],
+    "points": [
+     "Two dice → 36 outcomes; (2, 6) and (6, 2) are different."
+    ]
+   },
+   {
+    "title": "A deck of cards",
+    "text": [
+     "52 cards: 4 suits — hearts ♥ and diamonds ♦ (red), spades ♠ and clubs ♣ (black). Each suit has 13 cards: A, 2–10, J, Q, K.",
+     "Face cards: J, Q, K in each suit → 12 face cards. There are 4 aces, 4 kings, 26 red and 26 black cards.",
+     "Example: P(red king) = 2/52 = 1/26."
+    ],
+    "points": [
+     "Ace is NOT a face card."
+    ]
+   },
+   {
+    "title": "'Or' and overlap",
+    "text": [
+     "To count 'A or B', add the counts and subtract the outcomes that you counted twice (those in both A and B).",
+     "Example: cards 1–30, multiple of 4 or of 6. Multiples of 4: 7. Multiples of 6: 5. Both (12, 24): 2. Favourable = 7 + 5 − 2 = 10. P = 1/3."
+    ],
+    "points": [
+     "Subtract the overlap once."
+    ],
+    "formulas": [
+     "n(A or B) = n(A) + n(B) − n(A and B)"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Bag of balls",
+    "question": "A bag has 5 red, 3 green and 2 blue balls. Find P(green) and P(not red).",
+    "steps": [
+     "Total = 10.",
+     "P(not red) = 5/10."
+    ],
+    "answer": "3/10 and 1/2"
+   },
+   {
+    "type": "Two dice",
+    "question": "Two dice are thrown. Find P(doublet) and P(sum less than 5).",
+    "steps": [
+     "Doublets: 6, so 6/36.",
+     "Sums 2, 3, 4: (1,1), (1,2), (2,1), (1,3), (3,1), (2,2) → 6."
+    ],
+    "answer": "1/6 and 1/6"
+   },
+   {
+    "type": "Cards",
+    "question": "Find P(face card), P(black ace) and P(neither a heart nor a king).",
+    "steps": [
+     "12/52 = 3/13.",
+     "2/52 = 1/26.",
+     "Hearts 13 + other kings 3 = 16; neither = 36."
+    ],
+    "answer": "3/13, 1/26, 9/13"
+   },
+   {
+    "type": "Without replacement",
+    "question": "20 bulbs, 4 defective. A defective bulb is drawn and kept out. Find P(next bulb is good).",
+    "steps": [
+     "19 bulbs remain, 16 good."
+    ],
+    "answer": "16/19"
+   },
+   {
+    "type": "Three coins",
+    "question": "Three coins are tossed. Find P(exactly two heads), P(at least two heads) and P(no head).",
+    "steps": [
+     "8 outcomes. HHT, HTH, THH → 3.",
+     "Add HHH → 4.",
+     "TTT → 1."
+    ],
+    "answer": "3/8, 1/2, 1/8"
+   },
+   {
+    "type": "Spinner",
+    "question": "A spinner has numbers 1–8. Find P(prime) and P(odd or a multiple of 3).",
+    "steps": [
+     "Primes 2, 3, 5, 7 → 4/8.",
+     "Odd: 1, 3, 5, 7; add 6 → 5."
+    ],
+    "answer": "1/2 and 5/8"
+   }
+  ],
+  "mistakes": [
+   "Counting (2, 6) and (6, 2) as one outcome.",
+   "Calling the ace a face card.",
+   "Counting an overlap twice.",
+   "Giving a probability greater than 1.",
+   "Not reducing the total after 'without replacement'."
+  ],
+  "checklist": [
+   "Write the total number of outcomes first.",
+   "List the favourable outcomes.",
+   "Simplify every fraction.",
+   "Check that the answer is between 0 and 1.",
+   "Use 1 − P(E) for 'not' questions."
+  ],
+  "practice": [
+   {
+    "question": "P(head) for one coin.",
+    "answer": "1/2",
+    "marks": 2
+   },
+   {
+    "question": "P(ace) from a deck.",
+    "answer": "1/13",
+    "marks": 2
+   },
+   {
+    "question": "P(sum 12) with two dice.",
+    "answer": "1/36",
+    "marks": 2
+   },
+   {
+    "question": "Bag: 4 red, 6 white. P(white).",
+    "answer": "3/5",
+    "marks": 2
+   },
+   {
+    "question": "Three coins: P(at most one head).",
+    "answer": "1/2",
+    "marks": 3
+   },
+   {
+    "question": "Cards 1–20: P(prime).",
+    "answer": "2/5",
+    "marks": 2
+   },
+   {
+    "question": "Two dice: P(product is 6).",
+    "answer": "1/9",
+    "marks": 3
+   },
+   {
+    "question": "Two dice: P(the numbers differ by 2).",
+    "answer": "2/9",
+    "marks": 3
+   },
+   {
+    "question": "P(E) = 0.35. Find P(not E).",
+    "answer": "0.65",
+    "marks": 2
+   },
+   {
+    "question": "A card is drawn: P(red face card) and P(black card that is not a face card).",
+    "answer": "3/26 and 10/26 = 5/13",
+    "marks": 4
+   }
+  ]
+ }
+}

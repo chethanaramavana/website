@@ -1,0 +1,1117 @@
+{
+ "icse10-geometric-progression": {
+  "intro": "In a geometric progression (GP), each term is multiplied by the same number to get the next term, like 2, 6, 18, 54, …. GPs describe things that double, triple or shrink by a fixed fraction: bacteria, savings with growth, and bouncing balls. These notes give the formulas for any term and for the sum, with every exam question type.",
+  "before": [
+   "work with powers such as 2⁵ = 32 and (1/2)³ = 1/8",
+   "solve simple equations with powers, such as 3ⁿ = 81",
+   "solve quadratic equations"
+  ],
+  "glossary": [
+   {
+    "term": "Common ratio (r)",
+    "meaning": "Any term divided by the term just before it. r cannot be 0."
+   },
+   {
+    "term": "First term (a)",
+    "meaning": "The first number in the GP."
+   },
+   {
+    "term": "nth term (tₙ)",
+    "meaning": "tₙ = arⁿ⁻¹."
+   },
+   {
+    "term": "Sₙ",
+    "meaning": "The sum of the first n terms."
+   },
+   {
+    "term": "Geometric mean",
+    "meaning": "The geometric mean of two positive numbers a and b is √(ab)."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Is it a GP?",
+    "text": [
+     "Divide each term by the term before it. If every ratio is the same, the list is a GP and this ratio is r.",
+     "Example: 3, −6, 12, −24. Ratios: −6/3 = −2, 12/(−6) = −2. It is a GP with r = −2.",
+     "Three non-zero numbers a, b, c are in GP exactly when b² = ac."
+    ],
+    "points": [
+     "AP: same difference. GP: same ratio."
+    ],
+    "formulas": [
+     "r = t₂ ÷ t₁",
+     "a, b, c in GP ⇔ b² = ac"
+    ]
+   },
+   {
+    "title": "The nth term",
+    "text": [
+     "To reach term n, you multiply the first term by r exactly (n − 1) times. So tₙ = arⁿ⁻¹.",
+     "Example: 6th term of 2, 6, 18, … = 2 × 3⁵ = 2 × 243 = 486.",
+     "To find which term a number is, write arⁿ⁻¹ = number and write both sides as powers of the same base."
+    ],
+    "formulas": [
+     "tₙ = arⁿ⁻¹"
+    ],
+    "example": {
+     "question": "Which term of 2, 8, 32, … is 512?",
+     "steps": [
+      "a = 2, r = 4. 2 × 4ⁿ⁻¹ = 512, so 4ⁿ⁻¹ = 256 = 4⁴.",
+      "n − 1 = 4."
+     ],
+     "answer": "The 5th term"
+    }
+   },
+   {
+    "title": "Two terms given",
+    "text": [
+     "If two terms are given, divide one equation by the other. The a cancels and you get r.",
+     "Example: t₃ = 12 and t₆ = 96. ar² = 12 and ar⁵ = 96. Divide: r³ = 8, so r = 2 and a = 3."
+    ]
+   },
+   {
+    "title": "Sum of n terms",
+    "text": [
+     "For r ≠ 1: Sₙ = a(rⁿ − 1)/(r − 1). Use this form when r > 1.",
+     "When r < 1, the same formula is easier as Sₙ = a(1 − rⁿ)/(1 − r).",
+     "If r = 1, every term is a, so Sₙ = na."
+    ],
+    "points": [
+     "Check r = 1 separately."
+    ],
+    "formulas": [
+     "Sₙ = a(rⁿ − 1)/(r − 1), r > 1",
+     "Sₙ = a(1 − rⁿ)/(1 − r), r < 1"
+    ],
+    "example": {
+     "question": "Find the sum of the first 6 terms of 1, 1/2, 1/4, ….",
+     "steps": [
+      "a = 1, r = 1/2.",
+      "S₆ = (1 − 1/64)/(1/2) = 63/64 × 2."
+     ],
+     "answer": "63/32"
+    }
+   },
+   {
+    "title": "Three terms and growth problems",
+    "text": [
+     "When the product of three terms in GP is given, take them as a/r, a, ar. The product is a³, so you find a at once.",
+     "In growth problems, a quantity is multiplied by the same factor each period. After n periods, the amount is a × rⁿ (if a is the starting value at time 0)."
+    ],
+    "points": [
+     "Starting value at time 0 → after n periods: a rⁿ."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "nth term",
+    "question": "Find the 6th term of 2, 6, 18, ….",
+    "steps": [
+     "a = 2, r = 3.",
+     "t₆ = 2 × 3⁵."
+    ],
+    "answer": "486"
+   },
+   {
+    "type": "Find a and r",
+    "question": "The 3rd term of a GP is 12 and the 6th term is 96. Find a and r.",
+    "steps": [
+     "ar² = 12, ar⁵ = 96.",
+     "r³ = 8, r = 2, a = 3."
+    ],
+    "answer": "a = 3, r = 2"
+   },
+   {
+    "type": "Number of terms from the sum",
+    "question": "How many terms of 3, 6, 12, … give 381?",
+    "steps": [
+     "3(2ⁿ − 1) = 381.",
+     "2ⁿ − 1 = 127, so 2ⁿ = 128 = 2⁷."
+    ],
+    "answer": "7 terms"
+   },
+   {
+    "type": "Three terms",
+    "question": "Three numbers in GP have sum 13 and product 27. Find them.",
+    "steps": [
+     "Take a/r, a, ar. a³ = 27, so a = 3.",
+     "3/r + 3 + 3r = 13 gives 3r² − 10r + 3 = 0, so r = 3 or 1/3."
+    ],
+    "answer": "1, 3, 9"
+   },
+   {
+    "type": "Proof",
+    "question": "If a, b, c are in GP, prove that (a² + b²)(b² + c²) = (ab + bc)².",
+    "steps": [
+     "b² = ac.",
+     "LHS = (a² + ac)(ac + c²) = ac(a + c)².",
+     "RHS = b²(a + c)² = ac(a + c)²."
+    ],
+    "answer": "LHS = RHS"
+   },
+   {
+    "type": "Growth",
+    "question": "A culture has 500 bacteria. The number doubles every hour. After how many hours are there 64,000?",
+    "steps": [
+     "500 × 2ⁿ = 64,000.",
+     "2ⁿ = 128 = 2⁷."
+    ],
+    "answer": "7 hours"
+   }
+  ],
+  "mistakes": [
+   "Using (n) instead of (n − 1) as the power.",
+   "Adding r instead of multiplying.",
+   "Using the r > 1 form with r < 1 and getting signs wrong.",
+   "Forgetting that r can be negative.",
+   "Not writing both sides as powers of the same base."
+  ],
+  "checklist": [
+   "Write a and r before you substitute.",
+   "Use a/r, a, ar for three terms with a known product.",
+   "Divide two term equations to remove a.",
+   "Check your answer by writing the first few terms.",
+   "State the term number or the number of terms clearly."
+  ],
+  "practice": [
+   {
+    "question": "Find r for 81, 27, 9, ….",
+    "answer": "1/3",
+    "marks": 2
+   },
+   {
+    "question": "Find the 5th term of 2, −4, 8, ….",
+    "answer": "32",
+    "marks": 2
+   },
+   {
+    "question": "Find the geometric mean of 3 and 27.",
+    "answer": "9",
+    "marks": 2
+   },
+   {
+    "question": "Which term of 1, 3, 9, … is 729?",
+    "answer": "7th",
+    "marks": 2
+   },
+   {
+    "question": "Find the sum of 5 terms of 4, 12, 36, ….",
+    "answer": "484",
+    "marks": 3
+   },
+   {
+    "question": "t₂ = 6 and t₅ = 162. Find a and r.",
+    "answer": "a = 2, r = 3",
+    "marks": 3
+   },
+   {
+    "question": "Find x if x, x + 3, x + 9 are in GP.",
+    "answer": "x = 3",
+    "marks": 3
+   },
+   {
+    "question": "Find the sum of 1 + 2 + 4 + … + 256.",
+    "answer": "511",
+    "marks": 3
+   },
+   {
+    "question": "The first term of a GP is 5 and the sum of the first three terms is 155. Find r.",
+    "answer": "r = 5 or −6",
+    "marks": 3
+   },
+   {
+    "question": "A ball is dropped from 64 m. After each bounce it rises to half its height. Find the height after the 4th bounce.",
+    "answer": "4 m",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-reflection": {
+  "intro": "Reflection is like looking in a mirror. Every point moves to the other side of the mirror line, at the same distance. In coordinate geometry, the mirror can be the x-axis, the y-axis, the origin, or a line like x = 2. You only need a few simple rules.",
+  "before": [
+   "plot points in all four quadrants",
+   "read coordinates from graph paper",
+   "find the distance between two points on the same horizontal or vertical line"
+  ],
+  "glossary": [
+   {
+    "term": "Mirror line",
+    "meaning": "The line in which the reflection happens."
+   },
+   {
+    "term": "Image",
+    "meaning": "The point that you get after the reflection. The image of P is written P′."
+   },
+   {
+    "term": "Invariant point",
+    "meaning": "A point that does not move. Points on the mirror line are invariant."
+   },
+   {
+    "term": "Mₓ, M_y, M_O",
+    "meaning": "Short names for reflection in the x-axis, the y-axis and the origin."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Reflection in the x-axis and the y-axis",
+    "text": [
+     "In the x-axis, the point flips up–down. Its x-coordinate stays the same, and its y-coordinate changes sign: (x, y) → (x, −y). Example: (3, −5) → (3, 5).",
+     "In the y-axis, the point flips left–right. Its y-coordinate stays the same, and its x-coordinate changes sign: (x, y) → (−x, y). Example: (−2, 4) → (2, 4)."
+    ],
+    "points": [
+     "x-axis: change the sign of y.",
+     "y-axis: change the sign of x."
+    ],
+    "formulas": [
+     "Mₓ: (x, y) → (x, −y)",
+     "M_y: (x, y) → (−x, y)"
+    ]
+   },
+   {
+    "title": "Reflection in the origin",
+    "text": [
+     "Reflection in the origin turns the point through 180° about O. Both coordinates change sign: (x, y) → (−x, −y).",
+     "It has the same effect as reflecting in the x-axis and then in the y-axis (in either order)."
+    ],
+    "points": [
+     "Origin: change both signs."
+    ],
+    "formulas": [
+     "M_O: (x, y) → (−x, −y)"
+    ],
+    "example": {
+     "question": "Reflect (−2, 4) in the origin.",
+     "steps": [
+      "Change both signs."
+     ],
+     "answer": "(2, −4)"
+    }
+   },
+   {
+    "title": "Reflection in the lines x = a and y = a",
+    "text": [
+     "The line x = a is vertical. The image is as far to the other side as the point is from the line. The y-coordinate stays, and the new x-coordinate is 2a − x.",
+     "The line y = a is horizontal. The x-coordinate stays, and the new y-coordinate is 2a − y.",
+     "Example: (4, 1) in x = 2. The point is 2 units to the right of the line, so the image is 2 units to the left: (0, 1). By formula: 2 × 2 − 4 = 0."
+    ],
+    "formulas": [
+     "In x = a: (x, y) → (2a − x, y)",
+     "In y = a: (x, y) → (x, 2a − y)"
+    ],
+    "example": {
+     "question": "Reflect P(−3, 4) in the line y = 1.",
+     "steps": [
+      "x stays −3.",
+      "New y = 2 × 1 − 4 = −2."
+     ],
+     "answer": "(−3, −2)"
+    }
+   },
+   {
+    "title": "Invariant points and naming a reflection",
+    "text": [
+     "A point on the mirror line is its own image. So under Mₓ, the invariant points are those with y = 0, like (5, 0). Under M_y, they have x = 0.",
+     "To name the reflection that maps P to P′, compare the coordinates. If only y changes sign → x-axis. If only x changes sign → y-axis. If both change sign → origin. Otherwise, find the mid-point of PP′; the mirror line passes through it."
+    ]
+   },
+   {
+    "title": "Figures and graph questions",
+    "text": [
+     "To reflect a triangle, reflect each vertex, then join the images in the same order.",
+     "Reflection keeps lengths and angles. So the image triangle is congruent to the original, and it has the same area.",
+     "In graph questions, choose a scale of 1 cm = 1 unit, label every point, and use dashes for images (A′) and double dashes for a second reflection (A″)."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Two reflections",
+    "question": "P(2, −3) is reflected in the y-axis to P′, then P′ is reflected in the x-axis to P″. Find P′ and P″ and name the single transformation.",
+    "steps": [
+     "P′ = (−2, −3).",
+     "P″ = (−2, 3).",
+     "Both signs changed from P."
+    ],
+    "answer": "Reflection in the origin"
+   },
+   {
+    "type": "Find unknowns",
+    "question": "The image of A(a, 4) in the x-axis is (5, b). Find a and b.",
+    "steps": [
+     "x stays, y changes sign."
+    ],
+    "answer": "a = 5, b = −4"
+   },
+   {
+    "type": "Name the reflection",
+    "question": "Name the reflection that maps (3, −2) to (−3, 2).",
+    "steps": [
+     "Both signs change."
+    ],
+    "answer": "Reflection in the origin"
+   },
+   {
+    "type": "Line x = a",
+    "question": "Find the image of (−3, 4) in the line x = −1.",
+    "steps": [
+     "y stays 4.",
+     "New x = 2(−1) − (−3) = 1."
+    ],
+    "answer": "(1, 4)"
+   },
+   {
+    "type": "Triangle and area",
+    "question": "A(1, 2), B(4, 2), C(4, 5) are reflected in the x-axis. Find the images and the area of A′B′C′.",
+    "steps": [
+     "A′(1, −2), B′(4, −2), C′(4, −5).",
+     "A′B′ = 3, B′C′ = 3, right angle at B′."
+    ],
+    "answer": "Area = 4.5 square units"
+   },
+   {
+    "type": "Distance with images",
+    "question": "A(3, 1) is reflected in the origin to A′. B(3, 4) is reflected in the y-axis to B′. Find A′B′.",
+    "steps": [
+     "A′(−3, −1), B′(−3, 4).",
+     "Same x, so A′B′ = 4 − (−1)."
+    ],
+    "answer": "5 units"
+   }
+  ],
+  "mistakes": [
+   "Changing the wrong coordinate (x-axis changes y, not x).",
+   "Using −x for the line x = a instead of 2a − x.",
+   "Forgetting that points on the mirror line do not move.",
+   "Joining images in a different order.",
+   "Not using a scale on graph paper."
+  ],
+  "checklist": [
+   "Write the rule (Mₓ, M_y, M_O) before the image.",
+   "Label images A′, A″.",
+   "Check that the mirror line is the perpendicular bisector of PP′.",
+   "Write coordinates in brackets with a comma.",
+   "Name a single transformation when asked."
+  ],
+  "practice": [
+   {
+    "question": "Reflect (−4, 6) in the x-axis.",
+    "answer": "(−4, −6)",
+    "marks": 2
+   },
+   {
+    "question": "Reflect (2, −7) in the origin.",
+    "answer": "(−2, 7)",
+    "marks": 2
+   },
+   {
+    "question": "Reflect (3, 5) in the line y = 2.",
+    "answer": "(3, −1)",
+    "marks": 2
+   },
+   {
+    "question": "Name the invariant points under reflection in the y-axis.",
+    "answer": "All points (0, k)",
+    "marks": 2
+   },
+   {
+    "question": "(a, b) reflected in the y-axis is (−4, 3). Find a and b.",
+    "answer": "a = 4, b = 3",
+    "marks": 2
+   },
+   {
+    "question": "Reflect A(1, 4) in the x-axis and then in the y-axis. Name the single transformation.",
+    "answer": "(−1, −4); reflection in the origin",
+    "marks": 3
+   },
+   {
+    "question": "P(5, 2) is reflected in a line to P′(1, 2). Find the mirror line.",
+    "answer": "x = 3",
+    "marks": 3
+   },
+   {
+    "question": "Find the image of (6, −1) in the line x = 2 and then in the x-axis.",
+    "answer": "(−2, −1), then (−2, 1)",
+    "marks": 3
+   },
+   {
+    "question": "A(2, 3) is reflected in the y-axis to A′. Find AA′.",
+    "answer": "4 units",
+    "marks": 2
+   },
+   {
+    "question": "Plot A(2, 3), B(5, 3), C(5, 1). Reflect in the y-axis, then in the x-axis. Write all images.",
+    "answer": "A′(−2, 3), B′(−5, 3), C′(−5, 1); A″(−2, −3), B″(−5, −3), C″(−5, −1)",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-section-midpoint": {
+  "intro": "This chapter answers one question: if you walk along a straight line from point A to point B, where are you after a certain fraction of the way? The section formula gives the coordinates of that point. The mid-point and the centroid of a triangle are special cases.",
+  "before": [
+   "plot points and read coordinates",
+   "use the distance formula √((x₂ − x₁)² + (y₂ − y₁)²)",
+   "solve linear equations"
+  ],
+  "glossary": [
+   {
+    "term": "Divide in the ratio m : n",
+    "meaning": "P divides AB internally in m : n when AP : PB = m : n."
+   },
+   {
+    "term": "Mid-point",
+    "meaning": "The point that divides AB in the ratio 1 : 1."
+   },
+   {
+    "term": "Centroid",
+    "meaning": "The point where the three medians of a triangle meet. It divides each median in the ratio 2 : 1 from the vertex."
+   },
+   {
+    "term": "Trisection points",
+    "meaning": "The two points that divide AB into three equal parts."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The section formula",
+    "text": [
+     "Let A = (x₁, y₁) and B = (x₂, y₂). The point P that divides AB internally in the ratio m : n is P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n)).",
+     "Memory tip: m goes with the second point (B), and n goes with the first point (A). Each coordinate is a 'weighted average'.",
+     "Example: A(−1, 7), B(4, −3), ratio 2 : 3. x = (2 × 4 + 3 × (−1))/5 = 1. y = (2 × (−3) + 3 × 7)/5 = 3. P = (1, 3)."
+    ],
+    "points": [
+     "m with the second point, n with the first point."
+    ],
+    "formulas": [
+     "P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))"
+    ]
+   },
+   {
+    "title": "Mid-point",
+    "text": [
+     "Put m = n = 1. The mid-point of AB is ((x₁ + x₂)/2, (y₁ + y₂)/2).",
+     "If the mid-point and one end are given, use the formula backwards to find the other end."
+    ],
+    "formulas": [
+     "M = ((x₁ + x₂)/2, (y₁ + y₂)/2)"
+    ],
+    "example": {
+     "question": "M(3, −1) is the mid-point of AB, and A = (−2, 4). Find B.",
+     "steps": [
+      "(−2 + x)/2 = 3, so x = 8.",
+      "(4 + y)/2 = −1, so y = −6."
+     ],
+     "answer": "B = (8, −6)"
+    }
+   },
+   {
+    "title": "Finding an unknown ratio",
+    "text": [
+     "Take the ratio as k : 1. Write one coordinate of the section formula equal to the given value, and solve for k. Then write the ratio as k : 1 in simplest whole numbers.",
+     "If the point is on the x-axis, its y-coordinate is 0. If it is on the y-axis, its x-coordinate is 0."
+    ],
+    "points": [
+     "x-axis: y = 0. y-axis: x = 0."
+    ],
+    "example": {
+     "question": "Find the ratio in which the y-axis divides the join of A(−3, 5) and B(6, −1). Find the point.",
+     "steps": [
+      "x = (6k − 3)/(k + 1) = 0, so k = 1/2. Ratio 1 : 2.",
+      "y = (1 × (−1) + 2 × 5)/3 = 3."
+     ],
+     "answer": "1 : 2 at (0, 3)"
+    }
+   },
+   {
+    "title": "Centroid and parallelograms",
+    "text": [
+     "The centroid G of a triangle with vertices (x₁, y₁), (x₂, y₂), (x₃, y₃) is ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3).",
+     "The diagonals of a parallelogram bisect each other. So the mid-point of AC = the mid-point of BD. Use this to find a missing vertex."
+    ],
+    "formulas": [
+     "G = ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3)"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Section point",
+    "question": "Find the point that divides A(1, 2) and B(7, 8) in the ratio 1 : 2.",
+    "steps": [
+     "x = (1 × 7 + 2 × 1)/3 = 3.",
+     "y = (1 × 8 + 2 × 2)/3 = 4."
+    ],
+    "answer": "(3, 4)"
+   },
+   {
+    "type": "Ratio from a point",
+    "question": "In what ratio does P(2, 5) divide the join of A(−1, 2) and B(7, 10)?",
+    "steps": [
+     "(7k − 1)/(k + 1) = 2, so 5k = 3, k = 3/5.",
+     "Check y: (10 × 3 + 2 × 5)/8 = 5."
+    ],
+    "answer": "3 : 5"
+   },
+   {
+    "type": "Fourth vertex",
+    "question": "A(2, 3), B(4, 7), C(8, 5) are three vertices of parallelogram ABCD. Find D.",
+    "steps": [
+     "Mid-point of AC = (5, 4).",
+     "D = (2 × 5 − 4, 2 × 4 − 7)."
+    ],
+    "answer": "D = (6, 1)"
+   },
+   {
+    "type": "Centroid unknowns",
+    "question": "The centroid of the triangle with vertices (a, 1), (5, b), (−2, 4) is (2, 3). Find a and b.",
+    "steps": [
+     "(a + 3)/3 = 2.",
+     "(5 + b)/3 = 3."
+    ],
+    "answer": "a = 3, b = 4"
+   },
+   {
+    "type": "Trisection",
+    "question": "Find the points that trisect AB, where A(−4, 2) and B(8, 8).",
+    "steps": [
+     "P (1 : 2) = (0, 4).",
+     "Q (2 : 1) = (4, 6)."
+    ],
+    "answer": "(0, 4) and (4, 6)"
+   },
+   {
+    "type": "Axis and distance",
+    "question": "Find where the x-axis cuts the join of (1, −4) and (5, 4), and the distance of this point from the origin.",
+    "steps": [
+     "(4k − 4)/(k + 1) = 0, so k = 1 (mid-point).",
+     "Point = (3, 0)."
+    ],
+    "answer": "(3, 0), distance 3 units"
+   }
+  ],
+  "mistakes": [
+   "Putting m with the first point.",
+   "Forgetting that a point on the x-axis has y = 0.",
+   "Using the ratio k : 1 and not simplifying it.",
+   "Adding only two vertices for the centroid.",
+   "Sign errors with negative coordinates."
+  ],
+  "checklist": [
+   "Write A(x₁, y₁), B(x₂, y₂) and m : n before you substitute.",
+   "Use k : 1 for an unknown ratio.",
+   "Check the answer with the other coordinate.",
+   "For a parallelogram, use 'diagonals bisect each other'.",
+   "Give lengths with units."
+  ],
+  "practice": [
+   {
+    "question": "Find the mid-point of (−3, 5) and (7, −1).",
+    "answer": "(2, 2)",
+    "marks": 2
+   },
+   {
+    "question": "Find the centroid of (0, 0), (6, 0), (0, 9).",
+    "answer": "(2, 3)",
+    "marks": 2
+   },
+   {
+    "question": "(1, 2) is the mid-point of A(−1, 0) and B. Find B.",
+    "answer": "(3, 4)",
+    "marks": 2
+   },
+   {
+    "question": "Find the point dividing (2, 1) and (8, 7) in the ratio 2 : 1.",
+    "answer": "(6, 5)",
+    "marks": 2
+   },
+   {
+    "question": "Find the ratio in which (−1, 6) divides (−3, 10) and (6, −8).",
+    "answer": "2 : 7",
+    "marks": 3
+   },
+   {
+    "question": "Find where the x-axis cuts the join of (1, −4) and (5, 4).",
+    "answer": "(3, 0)",
+    "marks": 3
+   },
+   {
+    "question": "Three vertices of a parallelogram are (1, 2), (4, 3), (6, 6). Find the fourth.",
+    "answer": "(3, 5)",
+    "marks": 3
+   },
+   {
+    "question": "P(k, 2) lies on the join of A(2, −1) and B(5, 3). Find the ratio AP : PB and the value of k.",
+    "answer": "3 : 1, k = 17/4",
+    "marks": 3
+   },
+   {
+    "question": "The mid-point of (a, 4) and (2, b) is (3, 5). Find a and b.",
+    "answer": "a = 4, b = 6",
+    "marks": 2
+   },
+   {
+    "question": "A(−4, 2), B(8, 8). Find the length of AB and the trisection points.",
+    "answer": "AB = 6√5; (0, 4), (4, 6)",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-equation-of-line": {
+  "intro": "A straight line on a graph can be described by an equation such as y = 2x + 3. The number in front of x tells how steep the line is (its slope), and the constant tells where it cuts the y-axis. With these ideas you can write the equation of any line and decide when two lines are parallel or perpendicular.",
+  "before": [
+   "plot points and read coordinates",
+   "know tan 0°, 30°, 45°, 60°",
+   "solve simultaneous equations"
+  ],
+  "glossary": [
+   {
+    "term": "Slope (gradient) m",
+    "meaning": "Rise ÷ run: how much y goes up when x goes up by 1."
+   },
+   {
+    "term": "Inclination θ",
+    "meaning": "The angle that the line makes with the positive x-axis. m = tan θ."
+   },
+   {
+    "term": "y-intercept c",
+    "meaning": "The y-coordinate of the point where the line cuts the y-axis."
+   },
+   {
+    "term": "Parallel lines",
+    "meaning": "Lines with equal slopes."
+   },
+   {
+    "term": "Perpendicular lines",
+    "meaning": "Lines whose slopes multiply to −1."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Slope from two points or from an angle",
+    "text": [
+     "Through (x₁, y₁) and (x₂, y₂): m = (y₂ − y₁)/(x₂ − x₁). Keep the same order on top and bottom.",
+     "From the inclination: m = tan θ. θ = 45° gives m = 1; θ = 60° gives m = √3; θ = 0° gives m = 0.",
+     "A line parallel to the x-axis has slope 0. A line parallel to the y-axis (x = a) has no defined slope."
+    ],
+    "points": [
+     "Positive slope: line goes up to the right.",
+     "Negative slope: line goes down to the right."
+    ],
+    "formulas": [
+     "m = (y₂ − y₁)/(x₂ − x₁)",
+     "m = tan θ"
+    ],
+    "example": {
+     "question": "Find the slope of the line through (2, 3) and (6, 11).",
+     "steps": [
+      "m = (11 − 3)/(6 − 2) = 8/4."
+     ],
+     "answer": "2"
+    }
+   },
+   {
+    "title": "Equation of a line",
+    "text": [
+     "Slope–intercept form: y = mx + c. Use it when you know the slope and the y-intercept.",
+     "Point–slope form: y − y₁ = m(x − x₁). Use it when you know the slope and one point.",
+     "Two points: find m first, then use the point–slope form with either point."
+    ],
+    "formulas": [
+     "y = mx + c",
+     "y − y₁ = m(x − x₁)"
+    ],
+    "example": {
+     "question": "Find the equation of the line through (1, 4) and (3, 8).",
+     "steps": [
+      "m = (8 − 4)/(3 − 1) = 2.",
+      "y − 4 = 2(x − 1)."
+     ],
+     "answer": "y = 2x + 2"
+    }
+   },
+   {
+    "title": "Reading slope and intercept",
+    "text": [
+     "Make y the subject. The number in front of x is m and the constant is c.",
+     "Example: 4x + 5y = 20 → 5y = −4x + 20 → y = −4x/5 + 4. So m = −4/5, c = 4."
+    ],
+    "points": [
+     "Do not read m from ax + by = c directly; rearrange first."
+    ]
+   },
+   {
+    "title": "Parallel and perpendicular lines",
+    "text": [
+     "Parallel lines have the same slope. A perpendicular line has the negative reciprocal slope: if one slope is m, the other is −1/m.",
+     "To write the line through a point and parallel (or perpendicular) to a given line: find the given slope, change it if perpendicular, then use the point–slope form.",
+     "Points are collinear when the slope between the first two equals the slope between the last two."
+    ],
+    "points": [
+     "Parallel: m₁ = m₂.",
+     "Perpendicular: m₁ × m₂ = −1."
+    ],
+    "example": {
+     "question": "Find the line through (2, −3) perpendicular to 3x − 4y + 7 = 0.",
+     "steps": [
+      "Given slope = 3/4, so required slope = −4/3.",
+      "y + 3 = −4/3 (x − 2), so 3y + 9 = −4x + 8."
+     ],
+     "answer": "4x + 3y + 1 = 0"
+    }
+   },
+   {
+    "title": "Lines in a triangle",
+    "text": [
+     "Median: from a vertex to the mid-point of the opposite side. Find the mid-point, then the line through two points.",
+     "Altitude: from a vertex, perpendicular to the opposite side. Use the perpendicular slope.",
+     "Perpendicular bisector of AB: through the mid-point of AB, with slope −1/(slope of AB)."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "y-intercept",
+    "question": "Find the y-intercept of 3x − 2y + 8 = 0.",
+    "steps": [
+     "2y = 3x + 8, so y = 3x/2 + 4."
+    ],
+    "answer": "4"
+   },
+   {
+    "type": "Point and slope",
+    "question": "Find the line with slope −2 through (3, −1).",
+    "steps": [
+     "y + 1 = −2(x − 3)."
+    ],
+    "answer": "y = −2x + 5, or 2x + y − 5 = 0"
+   },
+   {
+    "type": "Parallel line, find k",
+    "question": "The line through (2, k) and (5, 9) is parallel to 2x − y + 3 = 0. Find k.",
+    "steps": [
+     "Given slope = 2.",
+     "(9 − k)/3 = 2."
+    ],
+    "answer": "k = 3"
+   },
+   {
+    "type": "Perpendicular bisector",
+    "question": "Find the perpendicular bisector of A(1, 3), B(5, −1).",
+    "steps": [
+     "Mid-point (3, 1). Slope AB = −1, so the bisector's slope = 1.",
+     "y − 1 = x − 3."
+    ],
+    "answer": "x − y − 2 = 0"
+   },
+   {
+    "type": "Median and altitude",
+    "question": "Triangle A(0, 4), B(−2, 0), C(4, 0). Find the median and the altitude through A.",
+    "steps": [
+     "Mid-point of BC = (1, 0). Slope = −4. Median: y = −4x + 4.",
+     "BC is horizontal, so the altitude is vertical: x = 0."
+    ],
+    "answer": "4x + y − 4 = 0 and x = 0"
+   },
+   {
+    "type": "Intersection",
+    "question": "Find where the lines y = 2x − 1 and x + y = 5 meet.",
+    "steps": [
+     "x + 2x − 1 = 5, so x = 2.",
+     "y = 3."
+    ],
+    "answer": "(2, 3)"
+   }
+  ],
+  "mistakes": [
+   "Different order in the numerator and the denominator of the slope.",
+   "Reading the slope from ax + by = c without rearranging.",
+   "Using the same slope for a perpendicular line.",
+   "Writing the slope of x = a as 0.",
+   "Sign errors when expanding y − y₁ = m(x − x₁)."
+  ],
+  "checklist": [
+   "Find m first, and write it on a separate line.",
+   "Write the form you use (point–slope).",
+   "Give the final equation as ax + by + c = 0 unless asked otherwise.",
+   "Check that the given point satisfies your equation.",
+   "For perpendicular lines, show m₁ × m₂ = −1."
+  ],
+  "practice": [
+   {
+    "question": "Slope through (−1, 2) and (3, 10).",
+    "answer": "2",
+    "marks": 2
+   },
+   {
+    "question": "Inclination of a line with slope √3.",
+    "answer": "60°",
+    "marks": 2
+   },
+   {
+    "question": "Slope of 2x + 3y = 6.",
+    "answer": "−2/3",
+    "marks": 2
+   },
+   {
+    "question": "Line with slope 3 and y-intercept −2.",
+    "answer": "y = 3x − 2",
+    "marks": 2
+   },
+   {
+    "question": "Line through (2, 1) perpendicular to y = 2x + 7.",
+    "answer": "x + 2y − 4 = 0",
+    "marks": 3
+   },
+   {
+    "question": "Find k if (1, 2), (3, 6), (k, 10) are collinear.",
+    "answer": "k = 5",
+    "marks": 3
+   },
+   {
+    "question": "Line through (−1, 3) parallel to the x-axis.",
+    "answer": "y = 3",
+    "marks": 2
+   },
+   {
+    "question": "Equation of the line with inclination 45° through (2, −1).",
+    "answer": "y = x − 3",
+    "marks": 2
+   },
+   {
+    "question": "A(1, 1), B(5, 3). Find the perpendicular bisector of AB.",
+    "answer": "2x + y − 8 = 0",
+    "marks": 3
+   },
+   {
+    "question": "Find the point where x − 2y + 4 = 0 meets the y-axis, and the slope of the line.",
+    "answer": "(0, 2), slope 1/2",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-similarity": {
+  "intro": "Two figures are similar when they have the same shape but maybe a different size, like a photo and its enlargement. In this chapter you learn the tests for similar triangles, how lengths and areas change, and how maps and models use scale.",
+  "before": [
+   "know corresponding angles and alternate angles with parallel lines",
+   "simplify ratios",
+   "convert cm, m and km"
+  ],
+  "glossary": [
+   {
+    "term": "Similar triangles",
+    "meaning": "Corresponding angles are equal, and corresponding sides are in the same ratio. Written ΔABC ~ ΔPQR."
+   },
+   {
+    "term": "Corresponding vertices",
+    "meaning": "Vertices in the same position: in ΔABC ~ ΔPQR, A matches P, B matches Q, C matches R."
+   },
+   {
+    "term": "Scale factor k",
+    "meaning": "The ratio of a length in the image to the corresponding length in the original."
+   },
+   {
+    "term": "Map scale 1 : n",
+    "meaning": "1 cm on the map is n cm on the ground."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Tests for similar triangles",
+    "text": [
+     "AA: two angles of one triangle equal two angles of the other.",
+     "SAS: one angle is equal, and the sides that make this angle are in the same ratio.",
+     "SSS: all three pairs of sides are in the same ratio.",
+     "In a proof, write the two triangles with matching vertices in order, give each equal angle a reason, then name the test."
+    ],
+    "points": [
+     "The order of letters matters: ΔABC ~ ΔPQR means AB/PQ = BC/QR = CA/RP."
+    ]
+   },
+   {
+    "title": "Basic proportionality (a line parallel to one side)",
+    "text": [
+     "In ΔABC, if DE ∥ BC with D on AB and E on AC, then ΔADE ~ ΔABC (AA: common angle A, and corresponding angles).",
+     "So AD/AB = AE/AC = DE/BC, and also AD/DB = AE/EC."
+    ],
+    "formulas": [
+     "DE ∥ BC ⇒ AD/DB = AE/EC"
+    ],
+    "example": {
+     "question": "In ΔABC, DE ∥ BC, AD = 3 cm, AB = 7.5 cm, AC = 10 cm. Find AE.",
+     "steps": [
+      "AD/AB = AE/AC.",
+      "AE = 3 × 10/7.5."
+     ],
+     "answer": "4 cm"
+    }
+   },
+   {
+    "title": "Areas of similar triangles",
+    "text": [
+     "If the sides are in the ratio k : 1, the areas are in the ratio k² : 1. Areas grow with the square of the scale factor.",
+     "Example: sides 4 cm and 6 cm (ratio 2 : 3) → areas 4 : 9.",
+     "If the areas are given, take the square root to get the side ratio."
+    ],
+    "points": [
+     "Area ratio = (side ratio)²."
+    ],
+    "formulas": [
+     "Area ratio = (side ratio)²"
+    ],
+    "example": {
+     "question": "ΔABC ~ ΔDEF with areas 64 cm² and 121 cm². EF = 15.4 cm. Find BC.",
+     "steps": [
+      "BC/EF = √(64/121) = 8/11.",
+      "BC = 15.4 × 8/11."
+     ],
+     "answer": "11.2 cm"
+    }
+   },
+   {
+    "title": "Right triangle with an altitude",
+    "text": [
+     "In ΔABC with ∠B = 90° and BD ⟂ AC, the three triangles ABC, ADB and BDC are all similar (AA).",
+     "From ΔADB ~ ΔBDC: AD/BD = BD/DC, so BD² = AD × DC."
+    ],
+    "formulas": [
+     "BD² = AD × DC"
+    ]
+   },
+   {
+    "title": "Maps and models",
+    "text": [
+     "For a scale 1 : n, a length on the map × n = the actual length. Then change units.",
+     "Area scale = 1 : n², and volume scale = 1 : n³.",
+     "Example: scale 1 : 25,000. 1 cm = 25,000 cm = 0.25 km. 1 cm² = 0.0625 km²."
+    ],
+    "points": [
+     "Lengths × n, areas × n², volumes × n³."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Area ratio",
+    "question": "ΔABC ~ ΔPQR, AB = 4 cm, PQ = 6 cm. Find the ratio of the areas.",
+    "steps": [
+     "Side ratio 2 : 3.",
+     "Area ratio = 4 : 9."
+    ],
+    "answer": "4 : 9"
+   },
+   {
+    "type": "Proof with altitude",
+    "question": "In ΔABC, ∠B = 90° and BD ⟂ AC. Prove that BD² = AD × DC.",
+    "steps": [
+     "In ΔADB and ΔBDC: ∠ADB = ∠BDC = 90°.",
+     "∠ABD = 90° − ∠A = ∠BCD.",
+     "ΔADB ~ ΔBDC (AA), so AD/BD = BD/DC."
+    ],
+    "answer": "BD² = AD × DC"
+   },
+   {
+    "type": "Trapezium",
+    "question": "In trapezium ABCD, AB ∥ DC, AB = 2DC, and the diagonals meet at O. Find area ΔAOB : area ΔCOD.",
+    "steps": [
+     "∠OAB = ∠OCD and ∠OBA = ∠ODC (alternate angles).",
+     "ΔAOB ~ ΔCOD (AA) with ratio 2 : 1."
+    ],
+    "answer": "4 : 1"
+   },
+   {
+    "type": "Shadow",
+    "question": "A 2 m stick casts a 1.5 m shadow. At the same time a tower casts a 21 m shadow. Find the tower's height.",
+    "steps": [
+     "Similar triangles (AA).",
+     "h/21 = 2/1.5."
+    ],
+    "answer": "28 m"
+   },
+   {
+    "type": "Trapezium part of a triangle",
+    "question": "DE ∥ BC and AD : DB = 2 : 3. Find area ΔADE : area of trapezium DBCE.",
+    "steps": [
+     "AD : AB = 2 : 5, so areas ΔADE : ΔABC = 4 : 25.",
+     "DBCE = 25 − 4 = 21 parts."
+    ],
+    "answer": "4 : 21"
+   },
+   {
+    "type": "Map area",
+    "question": "A map has scale 1 : 25,000. A lake has actual area 0.5 km². Find its area on the map.",
+    "steps": [
+     "1 cm = 0.25 km, so 1 cm² = 0.0625 km².",
+     "0.5 ÷ 0.0625 = 8."
+    ],
+    "answer": "8 cm²"
+   }
+  ],
+  "mistakes": [
+   "Writing similar triangles with vertices in the wrong order.",
+   "Using the side ratio for areas.",
+   "Forgetting to convert cm to km on maps.",
+   "Not giving a reason for each equal angle.",
+   "Using AD/AB = AE/EC (mixed parts)."
+  ],
+  "checklist": [
+   "Name both triangles with matching letters.",
+   "Give a reason for each equal angle.",
+   "State the test (AA, SAS, SSS).",
+   "Square the ratio for areas, cube it for volumes.",
+   "Write units in map and model answers."
+  ],
+  "practice": [
+   {
+    "question": "Area ratio for sides 3 : 5.",
+    "answer": "9 : 25",
+    "marks": 2
+   },
+   {
+    "question": "DE ∥ BC, AD = 4, DB = 6, AE = 6. Find EC.",
+    "answer": "9",
+    "marks": 2
+   },
+   {
+    "question": "Map 1 : 20,000. Actual length of 7 cm.",
+    "answer": "1.4 km",
+    "marks": 2
+   },
+   {
+    "question": "Model 1 : 50, model volume 120 cm³. Actual volume.",
+    "answer": "15 m³",
+    "marks": 3
+   },
+   {
+    "question": "Areas 25 : 36. Ratio of corresponding altitudes.",
+    "answer": "5 : 6",
+    "marks": 2
+   },
+   {
+    "question": "ΔABC ~ ΔPQR, BC = 8 cm, QR = 6 cm, area ABC = 48 cm². Find area PQR.",
+    "answer": "27 cm²",
+    "marks": 3
+   },
+   {
+    "question": "A 1 : 200 model ship is 60 cm long. Find the ship's length.",
+    "answer": "120 m",
+    "marks": 2
+   },
+   {
+    "question": "In ΔABC, D and E are mid-points of AB and AC. Find DE : BC and the area ratio.",
+    "answer": "1 : 2 and 1 : 4",
+    "marks": 3
+   },
+   {
+    "question": "Prove that ΔADE ~ ΔABC when DE ∥ BC.",
+    "answer": "∠A common; ∠ADE = ∠ABC (corresponding); AA",
+    "marks": 3
+   },
+   {
+    "question": "Map scale 1 : 50,000. A rectangular field is 3 cm × 2 cm on the map. Find the actual area in km².",
+    "answer": "1.5 km × 1 km = 1.5 km²",
+    "marks": 4
+   }
+  ]
+ }
+}

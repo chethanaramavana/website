@@ -20,6 +20,7 @@ import {
   InternationalNumberSystem,
 } from './number-systems';
 import WholeNumbersDocument from './whole-numbers-document';
+import DetailedNotesDocument from './detailed-notes';
 
 function Footer({ label }: { label: string }) {
   return (
@@ -46,6 +47,7 @@ function RunningHeader({
 
 export default function NotesDocument({ notes }: { notes: ChapterNotes }) {
   if (notes.slug === 'icse6-whole-numbers') return <WholeNumbersDocument />;
+  if (notes.lessons?.length) return <DetailedNotesDocument notes={notes} />;
   const boardPath = (notes.board ?? 'CBSE').toLowerCase();
   const chapterPath = `/${boardPath}/grade-${notes.grade ?? 10}/ch-${notes.number}`;
   const visualMeta = getNotesVisualMeta(notes);

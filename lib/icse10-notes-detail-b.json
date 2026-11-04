@@ -1,0 +1,1131 @@
+{
+ "icse10-quadratic-problems": {
+  "intro": "In this chapter the exam gives a story, not an equation. Your job is to turn the story into a quadratic equation, solve it, and then decide which root makes sense. The notes show the standard story types one by one: numbers, ages, geometry, speed, and cost.",
+  "before": [
+   "solve a quadratic equation by factorisation or by formula",
+   "use Pythagoras' theorem",
+   "use time = distance ÷ speed"
+  ],
+  "glossary": [
+   {
+    "term": "Unknown",
+    "meaning": "The quantity that you call x. Choose the one that the question asks for, if you can."
+   },
+   {
+    "term": "Condition",
+    "meaning": "The sentence in the question that gives an equal relation. It becomes your equation."
+   },
+   {
+    "term": "Reject a root",
+    "meaning": "A root that does not fit the story, for example a negative length, a negative speed or a fraction of a person."
+   },
+   {
+    "term": "Upstream and downstream",
+    "meaning": "A boat goes upstream against the current (speed u − v) and downstream with the current (speed u + v)."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "A four-step plan for every word problem",
+    "text": [
+     "Step 1: Let x be one unknown, and write every other quantity in terms of x.",
+     "Step 2: Find the condition in the question and write it as an equation.",
+     "Step 3: Simplify to ax² + bx + c = 0 and solve.",
+     "Step 4: Check both roots against the story. Reject the root that does not make sense, and write the answer in words with units."
+    ],
+    "points": [
+     "Always write 'Let x = …' as your first line. It earns marks."
+    ]
+   },
+   {
+    "title": "Number problems",
+    "text": [
+     "Two consecutive numbers: x and x + 1. Two consecutive odd (or even) numbers: x and x + 2. A number and its reciprocal: x and 1/x. A two-digit number with tens digit t and units digit u: 10t + u.",
+     "Example: the product of two consecutive positive even numbers is 168. x(x + 2) = 168, so x² + 2x − 168 = 0 and (x + 14)(x − 12) = 0. x = 12, so the numbers are 12 and 14."
+    ],
+    "points": [
+     "'Positive' in the question tells you to reject the negative root."
+    ]
+   },
+   {
+    "title": "Age problems",
+    "text": [
+     "Write the present ages in terms of x. 'n years ago' means subtract n from each age. 'After n years' means add n to each age.",
+     "Example: the product of Asha's age 5 years ago and her age 5 years later is 96. (x − 5)(x + 5) = 96, so x² = 121 and x = 11 years."
+    ]
+   },
+   {
+    "title": "Geometry problems",
+    "text": [
+     "Use the formula for area or perimeter, or Pythagoras' theorem for a right triangle.",
+     "Example: the hypotenuse of a right triangle is 13 cm, and the other two sides differ by 7 cm. x² + (x + 7)² = 169, so x² + 7x − 60 = 0 and (x + 12)(x − 5) = 0. The sides are 5 cm and 12 cm."
+    ],
+    "points": [
+     "A length is always positive."
+    ],
+    "formulas": [
+     "Rectangle: area = l × b, perimeter = 2(l + b)",
+     "Right triangle: a² + b² = c²"
+    ]
+   },
+   {
+    "title": "Speed, time and cost problems",
+    "text": [
+     "For speed problems, write each time as distance ÷ speed. 'Takes 1 hour less' means time at the slow speed − time at the fast speed = 1.",
+     "For cost problems, write the cost of one item as total cost ÷ number of items. 'Each costs ₹1 less' means old price − new price = 1.",
+     "These questions give fractions. Multiply both sides by the LCM to get a quadratic equation."
+    ],
+    "formulas": [
+     "Time = distance ÷ speed",
+     "Upstream speed = u − v; downstream speed = u + v",
+     "Cost of one item = total cost ÷ number"
+    ],
+    "example": {
+     "question": "A car covers 240 km. If its speed were 20 km/h more, it would take 1 hour less. Find its speed.",
+     "steps": [
+      "Let the speed be x km/h. 240/x − 240/(x + 20) = 1.",
+      "240(x + 20) − 240x = x(x + 20), so 4,800 = x² + 20x.",
+      "x² + 20x − 4,800 = 0, so (x + 80)(x − 60) = 0."
+     ],
+     "answer": "60 km/h"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "type": "Consecutive odd numbers",
+    "question": "The product of two consecutive positive odd numbers is 143. Find them.",
+    "steps": [
+     "Let them be x and x + 2.",
+     "x(x + 2) = 143, so x² + 2x − 143 = 0.",
+     "(x + 13)(x − 11) = 0. x is positive."
+    ],
+    "answer": "11 and 13"
+   },
+   {
+    "type": "Number and reciprocal",
+    "question": "A positive number exceeds its reciprocal by 3/2. Find the number.",
+    "steps": [
+     "Multiply by 2x: 2x² − 3x − 2 = 0.",
+     "(2x + 1)(x − 2) = 0.",
+     "x is positive."
+    ],
+    "answer": "x = 2"
+   },
+   {
+    "type": "Ages",
+    "question": "A father's age is the square of his son's age. One year ago, the father was 8 times as old as the son. Find their ages.",
+    "steps": [
+     "Let the son be x. Father = x².",
+     "x² − 1 = 8(x − 1), so x² − 8x + 7 = 0 and x = 7 or 1.",
+     "x = 1 gives a father aged 1, which is impossible."
+    ],
+    "answer": "Son 7 years, father 49 years"
+   },
+   {
+    "type": "Rectangle with diagonal",
+    "question": "The length of a rectangle is 7 cm more than its breadth. Its diagonal is 17 cm. Find the sides.",
+    "steps": [
+     "x² + (x + 7)² = 289.",
+     "2x² + 14x − 240 = 0, so x² + 7x − 120 = 0.",
+     "(x + 15)(x − 8) = 0, so x = 8."
+    ],
+    "answer": "8 cm and 15 cm"
+   },
+   {
+    "type": "Train speed",
+    "question": "A train covers 360 km at a uniform speed. If the speed were 5 km/h more, the journey would take 1 hour less. Find the speed.",
+    "steps": [
+     "360/x − 360/(x + 5) = 1.",
+     "1,800 = x² + 5x, so x² + 5x − 1,800 = 0.",
+     "(x + 45)(x − 40) = 0."
+    ],
+    "answer": "40 km/h"
+   },
+   {
+    "type": "Boat and stream",
+    "question": "A boat goes 24 km upstream and 24 km downstream. Its speed in still water is 18 km/h. The upstream trip takes 1 hour more. Find the speed of the stream.",
+    "steps": [
+     "24/(18 − x) − 24/(18 + x) = 1.",
+     "48x = 324 − x², so x² + 48x − 324 = 0.",
+     "(x + 54)(x − 6) = 0."
+    ],
+    "answer": "6 km/h"
+   },
+   {
+    "type": "Cost per item",
+    "question": "Books worth ₹80 are bought. With 4 more books for the same money, each book would cost ₹1 less. Find the number of books.",
+    "steps": [
+     "80/x − 80/(x + 4) = 1.",
+     "320 = x² + 4x, so (x + 20)(x − 16) = 0."
+    ],
+    "answer": "16 books"
+   }
+  ],
+  "mistakes": [
+   "Not writing what x stands for.",
+   "Forgetting brackets: 240/(x + 20), not 240/x + 20.",
+   "Subtracting the times in the wrong order.",
+   "Keeping the negative root.",
+   "Answering with x only when the question asks for two numbers or two sides."
+  ],
+  "checklist": [
+   "Write 'Let x = …'.",
+   "Write the equation in words, then in symbols.",
+   "Show the factorisation or the formula.",
+   "State which root you reject and why.",
+   "Answer every part with units."
+  ],
+  "practice": [
+   {
+    "question": "Two consecutive natural numbers have product 132. Find them.",
+    "answer": "11 and 12",
+    "marks": 2
+   },
+   {
+    "question": "A positive number plus its square is 90. Find it.",
+    "answer": "9",
+    "marks": 2
+   },
+   {
+    "question": "The sides of a right triangle are x, x + 1, x + 2. Find x.",
+    "answer": "3",
+    "marks": 2
+   },
+   {
+    "question": "The product of Asha's age 5 years ago and 5 years later is 96. Find her age.",
+    "answer": "11 years",
+    "marks": 2
+   },
+   {
+    "question": "A rectangle has perimeter 34 cm and area 60 cm². Find its sides.",
+    "answer": "12 cm and 5 cm",
+    "marks": 3
+   },
+   {
+    "question": "Two numbers differ by 3 and their product is 504. Find the positive pair.",
+    "answer": "21 and 24",
+    "marks": 3
+   },
+   {
+    "question": "₹400 is shared equally. With 10 more people, each gets ₹2 less. Find the number of people.",
+    "answer": "40",
+    "marks": 3
+   },
+   {
+    "question": "A two-digit number has digits that add to 9. The product of the number and its reversed number is 1,458. Find the number.",
+    "answer": "18 or 81",
+    "marks": 4
+   },
+   {
+    "question": "An aeroplane covers 1,500 km. It flies 100 km/h faster than planned and arrives 30 minutes early. Find the planned speed.",
+    "answer": "500 km/h",
+    "marks": 4
+   },
+   {
+    "question": "A shopkeeper buys pens for ₹600. With 5 fewer pens for the same money, each pen would cost ₹4 more. Find the number of pens.",
+    "answer": "30",
+    "marks": 3
+   }
+  ]
+ },
+ "icse10-ratio-proportion": {
+  "intro": "A ratio compares two quantities. A proportion says that two ratios are equal. In this chapter you learn the special names (fourth, third and mean proportional), the properties used in proofs, and the very useful 'componendo and dividendo' rule for solving equations.",
+  "before": [
+   "simplify a ratio such as 15 : 25 = 3 : 5",
+   "cross-multiply in a fraction equation",
+   "expand (a + b)² and (a − b)²"
+  ],
+  "glossary": [
+   {
+    "term": "Ratio",
+    "meaning": "a : b means a ÷ b. Both quantities must be in the same unit."
+   },
+   {
+    "term": "Proportion",
+    "meaning": "a : b = c : d. Then a and d are the extremes, b and c are the means, and ad = bc."
+   },
+   {
+    "term": "Fourth proportional",
+    "meaning": "x is the fourth proportional to a, b, c when a : b = c : x."
+   },
+   {
+    "term": "Mean proportional",
+    "meaning": "x is the mean proportional between a and b when a : x = x : b, so x = √(ab)."
+   },
+   {
+    "term": "Third proportional",
+    "meaning": "x is the third proportional to a and b when a : b = b : x, so x = b²/a."
+   },
+   {
+    "term": "Continued proportion",
+    "meaning": "a, b, c are in continued proportion when a : b = b : c, so b² = ac."
+   },
+   {
+    "term": "Duplicate and triplicate ratio",
+    "meaning": "The duplicate ratio of a : b is a² : b². The triplicate ratio is a³ : b³. The sub-duplicate ratio is √a : √b."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Proportion and the cross product",
+    "text": [
+     "Four numbers a, b, c, d are in proportion when a/b = c/d. Cross-multiply: ad = bc. Product of extremes = product of means.",
+     "Example: is 3, 5, 9, 15 a proportion? 3 × 15 = 45 and 5 × 9 = 45. Yes."
+    ],
+    "formulas": [
+     "a : b = c : d ⇔ ad = bc"
+    ]
+   },
+   {
+    "title": "Fourth, third and mean proportional",
+    "text": [
+     "Fourth proportional to a, b, c: a/b = c/x, so x = bc/a. For 3, 5, 9: x = 45/3 = 15.",
+     "Third proportional to a and b: a/b = b/x, so x = b²/a. For 2 and 6: x = 36/2 = 18.",
+     "Mean proportional between a and b: x² = ab, so x = √(ab). Between 4 and 25: x = √100 = 10."
+    ],
+    "points": [
+     "Third proportional: the second number is used twice.",
+     "Mean proportional: a square root."
+    ],
+    "formulas": [
+     "Fourth = bc/a",
+     "Third = b²/a",
+     "Mean = √(ab)"
+    ]
+   },
+   {
+    "title": "The k-method for proofs",
+    "text": [
+     "When the question gives equal ratios such as a/b = c/d, write each ratio = k. Then a = bk and c = dk.",
+     "Substitute into the left side and the right side separately and simplify. If both sides become the same expression, the result is proved.",
+     "For continued proportion a, b, c: put a/b = b/c = k. Then b = ck and a = ck²."
+    ],
+    "points": [
+     "Never cross the = sign while you prove. Simplify each side alone."
+    ],
+    "example": {
+     "question": "If a/b = c/d, prove that (a + b)/(c + d) = b/d.",
+     "steps": [
+      "Let a = bk, c = dk.",
+      "LHS = (bk + b)/(dk + d) = b(k + 1)/[d(k + 1)] = b/d.",
+      "RHS = b/d."
+     ],
+     "answer": "LHS = RHS"
+    }
+   },
+   {
+    "title": "Componendo and dividendo",
+    "text": [
+     "If a/b = c/d, then (a + b)/(a − b) = (c + d)/(c − d). In words: (sum)/(difference) on the left equals (sum)/(difference) on the right.",
+     "This rule is very useful for equations with square roots. Example: (x + 5)/(x − 5) = 3/1. Use the rule: [(x + 5) + (x − 5)]/[(x + 5) − (x − 5)] = (3 + 1)/(3 − 1), so 2x/10 = 4/2 and x = 10.",
+     "After squaring both sides, always check the answer in the original equation."
+    ],
+    "formulas": [
+     "a/b = c/d ⇒ (a + b)/(a − b) = (c + d)/(c − d)"
+    ]
+   },
+   {
+    "title": "Using ratios in daily life",
+    "text": [
+     "Mixtures, recipes and sharing use ratios. Write the parts as 5k and 2k, use the given information to find k, then answer.",
+     "Example: flour and sugar are mixed 5 : 2. With 7.5 kg of flour, 5k = 7.5, so k = 1.5 and sugar = 2k = 3 kg."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Simplify an expression",
+    "question": "If x : y = 5 : 3, find (3x − 2y) : (x + y).",
+    "steps": [
+     "Put x = 5k and y = 3k.",
+     "(15k − 6k) : (5k + 3k) = 9k : 8k."
+    ],
+    "answer": "9 : 8"
+   },
+   {
+    "type": "Mean and third proportional",
+    "question": "Find the mean proportional between 0.4 and 0.9, and the third proportional to 0.4 and 0.9.",
+    "steps": [
+     "Mean = √(0.36) = 0.6.",
+     "Third = 0.9²/0.4 = 0.81/0.4."
+    ],
+    "answer": "0.6 and 2.025"
+   },
+   {
+    "type": "Add a number",
+    "question": "What number must be added to each of 6, 15, 20 and 43 to make them proportional?",
+    "steps": [
+     "(6 + x)(43 + x) = (15 + x)(20 + x).",
+     "258 + 49x = 300 + 35x, so 14x = 42."
+    ],
+    "answer": "3"
+   },
+   {
+    "type": "Continued proportion proof",
+    "question": "If a, b, c are in continued proportion, prove that (a² + b²)/(b² + c²) = a/c.",
+    "steps": [
+     "b² = ac.",
+     "LHS = (a² + ac)/(ac + c²) = a(a + c)/[c(a + c)]."
+    ],
+    "answer": "a/c = RHS"
+   },
+   {
+    "type": "Componendo and dividendo",
+    "question": "Solve (3x + √(9x² − 5))/(3x − √(9x² − 5)) = 5.",
+    "steps": [
+     "C and D: 6x/[2√(9x² − 5)] = 6/4, so 2x = √(9x² − 5).",
+     "Square: 4x² = 9x² − 5, so x² = 1.",
+     "2x must be ≥ 0. Check x = 1: (3 + 2)/(3 − 2) = 5."
+    ],
+    "answer": "x = 1"
+   },
+   {
+    "type": "Two unknown numbers",
+    "question": "The mean proportional between two numbers is 12 and the third proportional to them is 96. Find the numbers.",
+    "steps": [
+     "ab = 144 and b²/a = 96.",
+     "a = 144/b, so b³ = 96 × 144 = 13,824 and b = 24.",
+     "a = 144/24."
+    ],
+    "answer": "6 and 24"
+   }
+  ],
+  "mistakes": [
+   "Using a ratio with different units.",
+   "Third proportional: using a² instead of b².",
+   "Cancelling terms across a + sign.",
+   "Forgetting to check a root after squaring.",
+   "Crossing the = sign in a proof."
+  ],
+  "checklist": [
+   "For equal ratios, use the k-method.",
+   "Write the property name (componendo and dividendo) when you use it.",
+   "Check roots in the original equation.",
+   "Give ratios in simplest form.",
+   "Write units in mixture questions."
+  ],
+  "practice": [
+   {
+    "question": "Find the fourth proportional to 2, 7, 6.",
+    "answer": "21",
+    "marks": 2
+   },
+   {
+    "question": "Find the mean proportional between 9 and 16.",
+    "answer": "12",
+    "marks": 2
+   },
+   {
+    "question": "Find the third proportional to 4 and 10.",
+    "answer": "25",
+    "marks": 2
+   },
+   {
+    "question": "If a : b = 2 : 3, find (3a + 2b) : (4a − b).",
+    "answer": "12 : 5",
+    "marks": 2
+   },
+   {
+    "question": "Find the duplicate ratio of 3 : 4.",
+    "answer": "9 : 16",
+    "marks": 2
+   },
+   {
+    "question": "If x/(y + z) = y/(z + x) = z/(x + y) and x + y + z ≠ 0, find each ratio.",
+    "answer": "1/2",
+    "marks": 3
+   },
+   {
+    "question": "Solve (√(x + 4) + √(x − 4))/(√(x + 4) − √(x − 4)) = 2.",
+    "answer": "x = 5",
+    "marks": 3
+   },
+   {
+    "question": "If 7x − 15y = 4x + y, find x : y.",
+    "answer": "16 : 3",
+    "marks": 3
+   },
+   {
+    "question": "If a/b = c/d, prove that (a² + c²)/(b² + d²) = ac/bd.",
+    "answer": "Put a = bk, c = dk; both sides = k²",
+    "marks": 4
+   },
+   {
+    "question": "Two numbers are in the ratio 3 : 5. If 9 is added to each, the ratio becomes 3 : 4. Find the numbers.",
+    "answer": "9 and 15",
+    "marks": 3
+   }
+  ]
+ },
+ "icse10-remainder-factor-theorems": {
+  "intro": "Long division of a polynomial takes time. The remainder theorem gives the remainder in one line, and the factor theorem tells you at once whether a bracket is a factor. With these two theorems you can find unknown coefficients and factorise cubic expressions completely.",
+  "before": [
+   "substitute a number into an expression, for example find 2x³ − x + 4 when x = −2",
+   "factorise quadratics",
+   "do long division of a polynomial by (x − a)"
+  ],
+  "glossary": [
+   {
+    "term": "Polynomial f(x)",
+    "meaning": "An expression such as 2x³ − 3x² + x − 5, with whole-number powers of x."
+   },
+   {
+    "term": "Zero of a divisor",
+    "meaning": "The value of x that makes the divisor 0. For x − 3 it is 3; for x + 2 it is −2; for 2x − 1 it is 1/2."
+   },
+   {
+    "term": "Remainder",
+    "meaning": "What is left after division. For a divisor of degree 1, the remainder is a number."
+   },
+   {
+    "term": "Factor",
+    "meaning": "A divisor that leaves remainder 0."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The remainder theorem",
+    "text": [
+     "When f(x) is divided by x − a, the remainder is f(a). So you do not need to divide; just substitute the zero of the divisor.",
+     "Example: the remainder when x³ − 2x² + 4 is divided by x − 2 is f(2) = 8 − 8 + 4 = 4.",
+     "For x + a, substitute x = −a. For ax − b, substitute x = b/a."
+    ],
+    "points": [
+     "Find the zero of the divisor, then substitute."
+    ],
+    "formulas": [
+     "Divisor x − a → remainder f(a)",
+     "Divisor x + a → remainder f(−a)",
+     "Divisor ax − b → remainder f(b/a)"
+    ],
+    "example": {
+     "question": "Find the remainder when 3x³ + 2x² − 5x + 1 is divided by x + 1.",
+     "steps": [
+      "Zero of x + 1 is −1.",
+      "f(−1) = −3 + 2 + 5 + 1."
+     ],
+     "answer": "5"
+    }
+   },
+   {
+    "title": "The factor theorem",
+    "text": [
+     "If f(a) = 0, the remainder is 0, so x − a divides f(x) exactly. Then x − a is a factor.",
+     "Conversely, if x − a is a factor, then f(a) = 0. Use this to find unknown coefficients."
+    ],
+    "points": [
+     "(x − a) is a factor ⇔ f(a) = 0"
+    ],
+    "example": {
+     "question": "Find k if x + 2 is a factor of x³ + kx² − 4x − 12.",
+     "steps": [
+      "f(−2) = −8 + 4k + 8 − 12 = 4k − 12.",
+      "Set it to 0."
+     ],
+     "answer": "k = 3"
+    }
+   },
+   {
+    "title": "Two unknowns",
+    "text": [
+     "If two factors or two remainders are given, you get two equations. Solve them together as simultaneous equations.",
+     "Example: x − 1 and x + 2 are factors of x³ + ax² + bx − 6. f(1) = 0 gives a + b = 5. f(−2) = 0 gives 2a − b = 7. Adding, 3a = 12, so a = 4 and b = 1."
+    ]
+   },
+   {
+    "title": "Factorise a cubic completely",
+    "text": [
+     "Step 1: Try small numbers that divide the constant term: ±1, ±2, ±3 … Find one value a with f(a) = 0. Then x − a is a factor.",
+     "Step 2: Divide f(x) by x − a to get a quadratic quotient.",
+     "Step 3: Factorise the quadratic. Write all three factors."
+    ],
+    "points": [
+     "Write the final answer as a product of three brackets."
+    ],
+    "example": {
+     "question": "Factorise x³ − 6x² + 11x − 6.",
+     "steps": [
+      "f(1) = 1 − 6 + 11 − 6 = 0, so x − 1 is a factor.",
+      "Dividing gives x² − 5x + 6.",
+      "x² − 5x + 6 = (x − 2)(x − 3)."
+     ],
+     "answer": "(x − 1)(x − 2)(x − 3)"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "type": "Remainder with 2x − 1",
+    "question": "Find the remainder when 2x² − 3x + 1 is divided by 2x − 1.",
+    "steps": [
+     "Zero = 1/2.",
+     "f(1/2) = 1/2 − 3/2 + 1."
+    ],
+    "answer": "0, so 2x − 1 is a factor"
+   },
+   {
+    "type": "Show a factor",
+    "question": "Show that 2x + 1 is a factor of 4x³ + 4x² − x − 1.",
+    "steps": [
+     "f(−1/2) = −1/2 + 1 + 1/2 − 1 = 0."
+    ],
+    "answer": "2x + 1 is a factor"
+   },
+   {
+    "type": "Remainder equals k",
+    "question": "When x³ + 2x² − kx + 4 is divided by x − 2, the remainder is k. Find k.",
+    "steps": [
+     "f(2) = 20 − 2k.",
+     "20 − 2k = k."
+    ],
+    "answer": "k = 20/3"
+   },
+   {
+    "type": "Two factors given",
+    "question": "x − 1 and x + 2 are factors of x³ + ax² + bx − 6. Find a and b, and the third factor.",
+    "steps": [
+     "a + b = 5 and 2a − b = 7, so a = 4, b = 1.",
+     "x³ + 4x² + x − 6 ÷ (x² + x − 2) = x + 3."
+    ],
+    "answer": "a = 4, b = 1; third factor x + 3"
+   },
+   {
+    "type": "Factorise and solve",
+    "question": "Show that x − 2 is a factor of 2x³ − 3x² − 3x + 2. Factorise it fully and solve f(x) = 0.",
+    "steps": [
+     "f(2) = 16 − 12 − 6 + 2 = 0.",
+     "Quotient = 2x² + x − 1 = (2x − 1)(x + 1).",
+     "f(x) = (x − 2)(2x − 1)(x + 1)."
+    ],
+    "answer": "x = 2, 1/2, −1"
+   },
+   {
+    "type": "Same remainder",
+    "question": "x³ + ax² + 3 and x³ − x + a leave the same remainder when divided by x − 2. Find a.",
+    "steps": [
+     "First: 8 + 4a + 3 = 11 + 4a.",
+     "Second: 8 − 2 + a = 6 + a.",
+     "11 + 4a = 6 + a, so 3a = −5."
+    ],
+    "answer": "a = −5/3"
+   }
+  ],
+  "mistakes": [
+   "Using f(a) for a divisor x + a (it must be f(−a)).",
+   "Arithmetic errors with negative powers: (−2)³ = −8.",
+   "Stopping after one factor when the question says 'completely'.",
+   "Using f(b) instead of f(b/a) for ax − b.",
+   "Forgetting the constant term when substituting."
+  ],
+  "checklist": [
+   "Write the zero of the divisor first.",
+   "Show each substitution in brackets: 2(−1)³.",
+   "State 'by the factor theorem' or 'by the remainder theorem'.",
+   "Check the final factors by multiplying back.",
+   "Write roots when the question says 'solve'."
+  ],
+  "practice": [
+   {
+    "question": "Find the remainder when x³ + 1 is divided by x − 1.",
+    "answer": "2",
+    "marks": 2
+   },
+   {
+    "question": "Is x − 2 a factor of x³ − 8?",
+    "answer": "Yes, f(2) = 0",
+    "marks": 2
+   },
+   {
+    "question": "Find k if x − 1 is a factor of 2x² + kx + 3.",
+    "answer": "k = −5",
+    "marks": 2
+   },
+   {
+    "question": "Find the remainder when 4x³ − 3x + 1 is divided by 2x + 1.",
+    "answer": "2",
+    "marks": 2
+   },
+   {
+    "question": "Factorise x³ + 2x² − x − 2.",
+    "answer": "(x − 1)(x + 1)(x + 2)",
+    "marks": 3
+   },
+   {
+    "question": "x − 2 and x + 3 are factors of x³ + px² + qx − 6. Find p and q.",
+    "answer": "p = 2, q = −5",
+    "marks": 3
+   },
+   {
+    "question": "Factorise x³ + 3x² − 4x − 12.",
+    "answer": "(x − 2)(x + 2)(x + 3)",
+    "marks": 3
+   },
+   {
+    "question": "Find a if x³ − ax² + 6x − a leaves remainder 0 when divided by x − 1.",
+    "answer": "a = 7/2",
+    "marks": 2
+   },
+   {
+    "question": "Factorise 2x³ + x² − 13x + 6.",
+    "answer": "(x − 2)(2x − 1)(x + 3)",
+    "marks": 4
+   },
+   {
+    "question": "Solve x³ − 7x + 6 = 0.",
+    "answer": "x = 1, 2, −3",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-matrices": {
+  "intro": "A matrix is a table of numbers in rows and columns. Matrices store data neatly, and you can add, subtract and multiply them with fixed rules. In these notes, a matrix is written row by row with '/' between rows: [1 2 / 3 4] has first row 1 2 and second row 3 4.",
+  "before": [
+   "add and multiply integers, including negative numbers",
+   "solve two simultaneous linear equations"
+  ],
+  "glossary": [
+   {
+    "term": "Matrix",
+    "meaning": "A rectangular arrangement of numbers in rows (across) and columns (down)."
+   },
+   {
+    "term": "Order",
+    "meaning": "A matrix with m rows and n columns has order m × n. [1 2 3 / 4 5 6] has order 2 × 3."
+   },
+   {
+    "term": "Square matrix",
+    "meaning": "A matrix with the same number of rows and columns."
+   },
+   {
+    "term": "Identity matrix I",
+    "meaning": "[1 0 / 0 1]. Multiplying by I leaves a matrix unchanged."
+   },
+   {
+    "term": "Zero matrix O",
+    "meaning": "A matrix with every element 0."
+   },
+   {
+    "term": "Equal matrices",
+    "meaning": "Same order and every pair of corresponding elements equal."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Order and equality",
+    "text": [
+     "Count rows first, then columns. A column matrix [3 / 4] has order 2 × 1. A row matrix [3 4] has order 1 × 2.",
+     "Two matrices are equal only when they have the same order and the elements in the same positions are equal. Use this to find unknowns: equate each position."
+    ],
+    "points": [
+     "Order = rows × columns."
+    ],
+    "example": {
+     "question": "Find x and y if [x + 1 4 / 2 y] = [3 4 / 2 −1].",
+     "steps": [
+      "Same positions: x + 1 = 3.",
+      "y = −1."
+     ],
+     "answer": "x = 2, y = −1"
+    }
+   },
+   {
+    "title": "Addition, subtraction and scalar multiplication",
+    "text": [
+     "Add or subtract matrices of the same order by adding or subtracting the elements in the same positions.",
+     "To multiply a matrix by a number k, multiply every element by k.",
+     "Example: A = [3 −2 / 1 4], B = [−1 5 / 2 0]. 2A − B = [6 −4 / 2 8] − [−1 5 / 2 0] = [7 −9 / 0 8]."
+    ],
+    "points": [
+     "You cannot add matrices of different orders."
+    ]
+   },
+   {
+    "title": "Matrix multiplication",
+    "text": [
+     "AB exists only when the number of columns of A equals the number of rows of B. The product has the rows of A and the columns of B.",
+     "To find the element in row i and column j of AB, multiply row i of A by column j of B element by element, and add.",
+     "Example: [2 1 / 0 3] × [1 −1 / 2 4]. Row 1 × column 1 = 2 × 1 + 1 × 2 = 4. Row 1 × column 2 = 2 × (−1) + 1 × 4 = 2. Row 2 × column 1 = 0 + 6 = 6. Row 2 × column 2 = 0 + 12 = 12. AB = [4 2 / 6 12]."
+    ],
+    "points": [
+     "Row of the first × column of the second.",
+     "In general AB ≠ BA."
+    ],
+    "formulas": [
+     "[a b / c d][p q / r s] = [ap + br, aq + bs / cp + dr, cq + ds]",
+     "(m × n)(n × p) → m × p"
+    ],
+    "example": {
+     "question": "Find [1 2 / 0 3][4 / 5].",
+     "steps": [
+      "Order: (2 × 2)(2 × 1) → 2 × 1.",
+      "Row 1: 4 + 10 = 14. Row 2: 0 + 15 = 15."
+     ],
+     "answer": "[14 / 15]"
+    }
+   },
+   {
+    "title": "Powers and equations with matrices",
+    "text": [
+     "A² means A × A. Do not square each element.",
+     "To find unknowns in a product, multiply first, then equate positions. You often get simultaneous equations.",
+     "Because AB ≠ BA in general, (A + B)² = A² + AB + BA + B², which is usually not A² + 2AB + B²."
+    ],
+    "points": [
+     "A² ≠ [a² b² / c² d²]."
+    ],
+    "example": {
+     "question": "A = [1 2 / 3 4]. Find A².",
+     "steps": [
+      "Row 1: 1 + 6 = 7, 2 + 8 = 10.",
+      "Row 2: 3 + 12 = 15, 6 + 16 = 22."
+     ],
+     "answer": "[7 10 / 15 22]"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "type": "Order of a product",
+    "question": "A is 2 × 3 and B is 3 × 2. Find the orders of AB and BA.",
+    "steps": [
+     "AB: (2 × 3)(3 × 2) → 2 × 2.",
+     "BA: (3 × 2)(2 × 3) → 3 × 3."
+    ],
+    "answer": "AB is 2 × 2; BA is 3 × 3"
+   },
+   {
+    "type": "Find X",
+    "question": "Find X if X + [2 1 / 0 3] = [5 4 / 1 7].",
+    "steps": [
+     "X = [5 4 / 1 7] − [2 1 / 0 3]."
+    ],
+    "answer": "X = [3 3 / 1 4]"
+   },
+   {
+    "type": "Show AB ≠ BA",
+    "question": "A = [2 1 / 0 3], B = [1 −1 / 2 4]. Find AB and BA.",
+    "steps": [
+     "AB = [4 2 / 6 12].",
+     "BA = [1 × 2 + (−1) × 0, 1 × 1 + (−1) × 3 / 2 × 2 + 4 × 0, 2 × 1 + 4 × 3] = [2 −2 / 4 14]."
+    ],
+    "answer": "AB ≠ BA"
+   },
+   {
+    "type": "Expression in A",
+    "question": "A = [1 2 / 3 4]. Find A² − 5A.",
+    "steps": [
+     "A² = [7 10 / 15 22].",
+     "5A = [5 10 / 15 20]."
+    ],
+    "answer": "[2 0 / 0 2] = 2I"
+   },
+   {
+    "type": "Equations from a product",
+    "question": "Find x and y if [2 1 / 3 −1][x / y] = [7 / 3].",
+    "steps": [
+     "2x + y = 7 and 3x − y = 3.",
+     "Adding: 5x = 10."
+    ],
+    "answer": "x = 2, y = 3"
+   },
+   {
+    "type": "Application",
+    "question": "Shop P sells 20 pens and 15 notebooks a day; shop Q sells 30 pens and 10 notebooks. A pen costs ₹10 and a notebook ₹40. Use matrices to find each shop's daily takings.",
+    "steps": [
+     "S = [20 15 / 30 10], C = [10 / 40].",
+     "SC = [200 + 600 / 300 + 400]."
+    ],
+    "answer": "[800 / 700]: P ₹800, Q ₹700"
+   }
+  ],
+  "mistakes": [
+   "Multiplying element by element instead of row × column.",
+   "Writing the order as columns × rows.",
+   "Assuming AB = BA.",
+   "Squaring each element to find A².",
+   "Adding matrices of different orders."
+  ],
+  "checklist": [
+   "Check that the product is defined before you multiply.",
+   "Write the order of the answer first.",
+   "Show each row × column sum.",
+   "Equate corresponding elements for unknowns.",
+   "Keep negative signs in brackets."
+  ],
+  "practice": [
+   {
+    "question": "Write the order of [1 2 3].",
+    "answer": "1 × 3",
+    "marks": 2
+   },
+   {
+    "question": "Find [2 3] + [1 −4].",
+    "answer": "[3 −1]",
+    "marks": 2
+   },
+   {
+    "question": "Find 3[1 −2 / 0 4].",
+    "answer": "[3 −6 / 0 12]",
+    "marks": 2
+   },
+   {
+    "question": "Find [1 2 / 3 4][1 / 1].",
+    "answer": "[3 / 7]",
+    "marks": 2
+   },
+   {
+    "question": "Find A² for A = [0 1 / 1 0].",
+    "answer": "[1 0 / 0 1]",
+    "marks": 2
+   },
+   {
+    "question": "Find x and y if [x 1 / 2 y][1 / 2] = [5 / 8].",
+    "answer": "x = 3, y = 3",
+    "marks": 3
+   },
+   {
+    "question": "A = [1 0 / 2 1]. Find A² and A³.",
+    "answer": "[1 0 / 4 1], [1 0 / 6 1]",
+    "marks": 3
+   },
+   {
+    "question": "A = [3 1 / −1 2]. Find A² − 5A + 7I.",
+    "answer": "[0 0 / 0 0]",
+    "marks": 4
+   },
+   {
+    "question": "Find x if [x 2] × [x / −3] = [10].",
+    "answer": "x² − 6 = 10, so x = ±4",
+    "marks": 3
+   },
+   {
+    "question": "If [2 3 / 1 0] X = [7 / 2], where X is 2 × 1, find X.",
+    "answer": "X = [2 / 1]",
+    "marks": 3
+   }
+  ]
+ },
+ "icse10-arithmetic-progression": {
+  "intro": "An arithmetic progression (AP) is a list of numbers that goes up or down by the same amount each time, like 3, 7, 11, 15, …. With two formulas you can find any term and the sum of many terms. These notes also show how to set up AP word problems.",
+  "before": [
+   "substitute into a formula",
+   "solve linear and quadratic equations",
+   "solve two simultaneous equations"
+  ],
+  "glossary": [
+   {
+    "term": "First term (a)",
+    "meaning": "The first number in the list."
+   },
+   {
+    "term": "Common difference (d)",
+    "meaning": "Any term minus the term just before it. It can be negative."
+   },
+   {
+    "term": "nth term (tₙ)",
+    "meaning": "The term in position n."
+   },
+   {
+    "term": "Sₙ",
+    "meaning": "The sum of the first n terms."
+   },
+   {
+    "term": "Last term (l)",
+    "meaning": "The final term of a finite AP."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Is it an AP?",
+    "text": [
+     "Find the difference between each pair of neighbouring terms. If every difference is the same, the list is an AP and this difference is d.",
+     "Example: 7, 3, −1, −5. Differences: −4, −4, −4. It is an AP with d = −4.",
+     "Three numbers p, q, r are in AP exactly when 2q = p + r."
+    ],
+    "points": [
+     "d = t₂ − t₁ = t₃ − t₂.",
+     "p, q, r in AP ⇔ 2q = p + r."
+    ]
+   },
+   {
+    "title": "The nth term",
+    "text": [
+     "To reach term n from the first term, you add d exactly (n − 1) times. So tₙ = a + (n − 1)d.",
+     "Example: 10th term of 2, 7, 12, … = 2 + 9 × 5 = 47.",
+     "To check if a number is a term, put tₙ equal to it and solve for n. If n is a natural number, it is a term. If not, it is not a term."
+    ],
+    "formulas": [
+     "tₙ = a + (n − 1)d"
+    ],
+    "example": {
+     "question": "Which term of 3, 8, 13, … is 248?",
+     "steps": [
+      "3 + 5(n − 1) = 248.",
+      "5(n − 1) = 245, so n − 1 = 49."
+     ],
+     "answer": "The 50th term"
+    }
+   },
+   {
+    "title": "Two terms given",
+    "text": [
+     "If two terms are given, write two equations and subtract them to find d. Then find a.",
+     "Example: t₄ = 11 and t₉ = 26. a + 3d = 11 and a + 8d = 26. Subtract: 5d = 15, so d = 3 and a = 2."
+    ]
+   },
+   {
+    "title": "Sum of n terms",
+    "text": [
+     "Write the sum forwards and backwards and add. Each pair adds to (first + last), and there are n pairs. So 2Sₙ = n(a + l) and Sₙ = n/2 (a + l).",
+     "If the last term is not known, put l = a + (n − 1)d: Sₙ = n/2 [2a + (n − 1)d].",
+     "If Sₙ is given as a formula in n, the nth term is tₙ = Sₙ − Sₙ₋₁, and the first term is S₁."
+    ],
+    "formulas": [
+     "Sₙ = n/2 [2a + (n − 1)d]",
+     "Sₙ = n/2 (a + l)",
+     "tₙ = Sₙ − Sₙ₋₁"
+    ],
+    "example": {
+     "question": "Find the sum of the first 25 terms of 7, 10, 13, ….",
+     "steps": [
+      "a = 7, d = 3, n = 25.",
+      "S = 25/2 [14 + 24 × 3] = 25/2 × 86."
+     ],
+     "answer": "1,075"
+    }
+   },
+   {
+    "title": "AP word problems",
+    "text": [
+     "Savings that grow by a fixed amount, seats in rows, and instalments that increase by a fixed amount are APs. Write a, d and n from the story.",
+     "If the question asks 'how many terms give this sum', you get a quadratic in n. Keep only natural-number values of n."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Check a term",
+    "question": "Is 301 a term of 5, 11, 17, …?",
+    "steps": [
+     "5 + 6(n − 1) = 301, so n − 1 = 296/6.",
+     "296/6 is not a whole number."
+    ],
+    "answer": "No"
+   },
+   {
+    "type": "Middle term condition",
+    "question": "Find k if k − 1, 2k + 1 and 4k − 1 are in AP.",
+    "steps": [
+     "2(2k + 1) = (k − 1) + (4k − 1).",
+     "4k + 2 = 5k − 2."
+    ],
+    "answer": "k = 4"
+   },
+   {
+    "type": "Sum of multiples",
+    "question": "Find the sum of all two-digit numbers divisible by 7.",
+    "steps": [
+     "14, 21, …, 98. n = (98 − 14)/7 + 1 = 13.",
+     "S = 13/2 (14 + 98)."
+    ],
+    "answer": "728"
+   },
+   {
+    "type": "Number of terms from the sum",
+    "question": "How many terms of 24, 21, 18, … give a sum of 78?",
+    "steps": [
+     "n/2 [48 − 3(n − 1)] = 78, so n² − 17n + 52 = 0.",
+     "(n − 4)(n − 13) = 0.",
+     "Both work: the 5th to 13th terms add to 0."
+    ],
+    "answer": "4 or 13 terms"
+   },
+   {
+    "type": "Sₙ given",
+    "question": "Sₙ = 3n² + 2n. Find the AP.",
+    "steps": [
+     "S₁ = 5 = t₁.",
+     "S₂ = 16, so t₂ = 11. d = 6."
+    ],
+    "answer": "5, 11, 17, …"
+   },
+   {
+    "type": "Savings",
+    "question": "Priya saves ₹50 in week 1, ₹60 in week 2, ₹70 in week 3, and so on. In how many weeks will she save ₹2,000 in total?",
+    "steps": [
+     "a = 50, d = 10.",
+     "n/2 [100 + 10(n − 1)] = 2,000, so n² + 9n − 400 = 0.",
+     "(n + 25)(n − 16) = 0."
+    ],
+    "answer": "16 weeks"
+   }
+  ],
+  "mistakes": [
+   "Using n instead of (n − 1) in tₙ.",
+   "Taking d as t₁ − t₂ (wrong order).",
+   "Accepting a fractional n.",
+   "Forgetting that d can be negative.",
+   "Mixing up tₙ (one term) and Sₙ (a sum)."
+  ],
+  "checklist": [
+   "Write a, d and n before you substitute.",
+   "Use tₙ for one term, Sₙ for a sum.",
+   "For two given terms, subtract the equations.",
+   "Check that n is a natural number.",
+   "Answer with units in word problems."
+  ],
+  "practice": [
+   {
+    "question": "Find d for 10, 7, 4, ….",
+    "answer": "−3",
+    "marks": 2
+   },
+   {
+    "question": "Find the 12th term of 2, 5, 8, ….",
+    "answer": "35",
+    "marks": 2
+   },
+   {
+    "question": "Find the sum of the first 10 odd numbers.",
+    "answer": "100",
+    "marks": 2
+   },
+   {
+    "question": "Which term of 5, 8, 11, … is 92?",
+    "answer": "30th",
+    "marks": 2
+   },
+   {
+    "question": "Find 3 + 7 + 11 + … + 99.",
+    "answer": "1,275",
+    "marks": 3
+   },
+   {
+    "question": "Three numbers in AP have sum 24 and product 440. Find them.",
+    "answer": "5, 8, 11",
+    "marks": 3
+   },
+   {
+    "question": "t₃ = 16 and t₇ − t₅ = 12. Find t₂₀.",
+    "answer": "118",
+    "marks": 3
+   },
+   {
+    "question": "How many terms of 3, 6, 9, … give 165?",
+    "answer": "10",
+    "marks": 3
+   },
+   {
+    "question": "Find the sum of all natural numbers between 100 and 200 that are divisible by 6.",
+    "answer": "17 numbers, sum 2,550",
+    "marks": 4
+   },
+   {
+    "question": "A man repays a loan of ₹3,250 by paying ₹20 in the first month and ₹15 more each month. How many months does it take?",
+    "answer": "20 months",
+    "marks": 4
+   }
+  ]
+ }
+}

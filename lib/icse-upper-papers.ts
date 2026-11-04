@@ -5,6 +5,11 @@ import g10b from './icse10-part-b.json';
 import g10c from './icse10-part-c.json';
 import g10d from './icse10-part-d.json';
 import g10e from './icse10-part-e.json';
+import g10na from './icse10-notes-detail-a.json';
+import g10nb from './icse10-notes-detail-b.json';
+import g10nc from './icse10-notes-detail-c.json';
+import g10nd from './icse10-notes-detail-d.json';
+import g10ne from './icse10-notes-detail-e.json';
 import type { ChapterNotes } from './chapter-notes';
 import type { PaperDefinition } from './papers';
 
@@ -25,7 +30,10 @@ export const icseUpperPaperAssessments = Object.fromEntries(seeds.map((paper) =>
   writtenSolutions: paper.solutions,
 }]));
 
-export const icseUpperNotes = parts.flatMap((part) => part.notes as ChapterNotes[]);
+// Detailed study notes (lessons, solved exam questions, mistakes, checklist, longer practice), keyed by notes slug.
+const noteDetails = { ...g10na, ...g10nb, ...g10nc, ...g10nd, ...g10ne } as Record<string, Partial<ChapterNotes>>;
+
+export const icseUpperNotes = parts.flatMap((part) => (part.notes as ChapterNotes[]).map((notes) => ({ ...notes, ...(noteDetails[notes.slug] ?? {}) })));
 
 /** Chapter names in book order, by grade. */
 export const icseUpperChapters: Record<number, string[]> = seeds.reduce<Record<number, string[]>>((byGrade, paper) => {

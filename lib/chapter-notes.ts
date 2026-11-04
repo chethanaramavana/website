@@ -18,6 +18,20 @@ export type ChapterNotes = {
   example: { question: string; steps: string[]; answer: string };
   practice: { question: string; answer: string; marks: number }[];
   tips: string[];
+  /** Optional detailed study notes. When `lessons` is present, the notes page uses the detailed layout. */
+  intro?: string;
+  before?: string[];
+  glossary?: { term: string; meaning: string }[];
+  lessons?: {
+    title: string;
+    text: string[];
+    points?: string[];
+    formulas?: string[];
+    example?: { question: string; steps: string[]; answer: string };
+  }[];
+  examples?: { type: string; question: string; steps: string[]; answer: string }[];
+  mistakes?: string[];
+  checklist?: string[];
 };
 
 const notes = (value: ChapterNotes) => value;

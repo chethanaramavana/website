@@ -1,0 +1,1100 @@
+{
+ "icse10-loci": {
+  "intro": "A locus is the path of all points that follow a rule, for example 'always 3 cm from a point'. Locus questions in the board exam ask you to construct two or more loci and find where they meet. These notes give the standard loci, the proof ideas, and step-by-step constructions.",
+  "before": [
+   "use a ruler and compasses",
+   "bisect a line segment and an angle",
+   "construct angles of 60°, 90°, 45° and 30°"
+  ],
+  "glossary": [
+   {
+    "term": "Locus",
+    "meaning": "The set of all points (and only those points) that satisfy a given condition."
+   },
+   {
+    "term": "Perpendicular bisector",
+    "meaning": "The line through the mid-point of a segment, at right angles to it."
+   },
+   {
+    "term": "Angle bisector",
+    "meaning": "The line that divides an angle into two equal angles."
+   },
+   {
+    "term": "Circumcentre",
+    "meaning": "The point where the perpendicular bisectors of the sides of a triangle meet. It is equidistant from the three vertices."
+   },
+   {
+    "term": "Incentre",
+    "meaning": "The point where the bisectors of the angles of a triangle meet. It is equidistant from the three sides."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The standard loci",
+    "text": [
+     "Fixed distance r from a point O → a circle with centre O and radius r.",
+     "Fixed distance d from a line l → two lines parallel to l, one on each side, at distance d.",
+     "Equidistant from two points A and B → the perpendicular bisector of AB.",
+     "Equidistant from two intersecting lines → the bisectors of the angles between the lines.",
+     "Equidistant from two parallel lines → the parallel line midway between them."
+    ],
+    "points": [
+     "Learn these five; almost every question uses two of them."
+    ]
+   },
+   {
+    "title": "Why the perpendicular bisector works",
+    "text": [
+     "Let P be any point on the perpendicular bisector of AB, with M the mid-point. In ΔPMA and ΔPMB: AM = BM, PM is common, and ∠PMA = ∠PMB = 90°. So the triangles are congruent (SAS) and PA = PB.",
+     "In the same way, a point on the bisector of ∠ABC is equidistant from BA and BC, because the two right triangles formed are congruent (AAS)."
+    ],
+    "points": [
+     "Exam proofs use congruent triangles."
+    ]
+   },
+   {
+    "title": "How to answer a construction question",
+    "text": [
+     "Step 1: Draw a rough sketch with the given measurements.",
+     "Step 2: Construct the figure accurately. Keep all construction arcs.",
+     "Step 3: Construct each locus. Label it, for example 'locus of points equidistant from A and B'.",
+     "Step 4: Mark the point(s) where the loci meet, measure as asked, and write the answer with units.",
+     "Step 5: Write the steps of construction if the question asks for them."
+    ],
+    "points": [
+     "Do not erase arcs.",
+     "Measure to the nearest millimetre."
+    ]
+   },
+   {
+    "title": "Circumcircle and incircle",
+    "text": [
+     "Circumcircle: draw the perpendicular bisectors of two sides. They meet at the circumcentre O. Draw the circle with centre O through any vertex.",
+     "Incircle: bisect two angles. They meet at the incentre I. Draw a perpendicular from I to one side; its length is the radius. Draw the circle.",
+     "The circumcentre of a right triangle is the mid-point of the hypotenuse. The circumcentre of an obtuse triangle lies outside the triangle."
+    ],
+    "formulas": [
+     "Circumradius R = abc/(4 × area)",
+     "Inradius r = area ÷ s, where s = (a + b + c)/2"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Describe a locus",
+    "question": "State the locus of the centre of a wheel of radius 35 cm rolling on a straight level road.",
+    "steps": [
+     "The centre is always 35 cm above the road."
+    ],
+    "answer": "A straight line parallel to the road, 35 cm above it"
+   },
+   {
+    "type": "Two loci",
+    "question": "AB = 7 cm. Find the points that are equidistant from A and B and 5 cm from A.",
+    "steps": [
+     "Locus 1: perpendicular bisector of AB.",
+     "Locus 2: circle (A, 5 cm). They meet at two points.",
+     "Each point is √(25 − 12.25) ≈ 3.57 cm from AB."
+    ],
+    "answer": "Two points, about 7.1 cm apart"
+   },
+   {
+    "type": "Point on two loci",
+    "question": "Construct ΔABC with AB = 7 cm, BC = 6 cm, ∠ABC = 60°. Find P equidistant from BA and BC, and from B and C. Measure PB.",
+    "steps": [
+     "Bisect ∠B.",
+     "Draw the perpendicular bisector of BC.",
+     "They meet at P. By calculation, PB = 3/cos 30° ≈ 3.46 cm."
+    ],
+    "answer": "PB ≈ 3.5 cm"
+   },
+   {
+    "type": "Circumcircle",
+    "question": "Construct ΔABC with AB = 5.5 cm, BC = 6 cm, CA = 4.5 cm and its circumcircle. Measure the radius.",
+    "steps": [
+     "Bisect AB and BC perpendicularly; they meet at O.",
+     "Draw the circle with centre O and radius OA."
+    ],
+    "answer": "About 3.1 cm"
+   },
+   {
+    "type": "Incircle",
+    "question": "Construct ΔABC with AB = 6 cm, ∠A = 60°, ∠B = 45° and its incircle. Measure the radius.",
+    "steps": [
+     "Bisect ∠A and ∠B; they meet at I.",
+     "Draw IM ⟂ AB. IM is the radius."
+    ],
+    "answer": "About 1.4 cm"
+   },
+   {
+    "type": "Proof",
+    "question": "Prove that any point on the bisector of an angle is equidistant from its arms.",
+    "steps": [
+     "Let P be on the bisector of ∠ABC. Draw PM ⟂ BA and PN ⟂ BC.",
+     "In ΔPBM and ΔPBN: ∠PBM = ∠PBN, ∠PMB = ∠PNB = 90°, PB common.",
+     "ΔPBM ≅ ΔPBN (AAS), so PM = PN."
+    ],
+    "answer": "Proved"
+   }
+  ],
+  "mistakes": [
+   "Drawing only one line for 'distance d from a line' (there are two).",
+   "Using the angle bisector when the condition is about two points.",
+   "Erasing construction arcs.",
+   "Measuring the radius of an incircle to a vertex instead of to a side.",
+   "Not labelling the loci."
+  ],
+  "checklist": [
+   "Draw a rough figure first.",
+   "Name every locus on the drawing.",
+   "Mark the required point clearly.",
+   "Write the measured value with units.",
+   "Write the steps of construction if asked."
+  ],
+  "practice": [
+   {
+    "question": "Locus of a point 4 cm from O.",
+    "answer": "Circle with centre O and radius 4 cm",
+    "marks": 2
+   },
+   {
+    "question": "Locus of points equidistant from two parallel lines.",
+    "answer": "The parallel line midway between them",
+    "marks": 2
+   },
+   {
+    "question": "Point equidistant from three vertices of a triangle.",
+    "answer": "Circumcentre",
+    "marks": 2
+   },
+   {
+    "question": "Point equidistant from the three sides of a triangle.",
+    "answer": "Incentre",
+    "marks": 2
+   },
+   {
+    "question": "Locus of centres of circles through A and B.",
+    "answer": "Perpendicular bisector of AB",
+    "marks": 2
+   },
+   {
+    "question": "Circumradius of a right triangle with legs 6 cm and 8 cm.",
+    "answer": "5 cm",
+    "marks": 3
+   },
+   {
+    "question": "Locus of points 2 cm from a line l.",
+    "answer": "Two lines parallel to l at 2 cm on each side",
+    "marks": 2
+   },
+   {
+    "question": "Where is the circumcentre of an obtuse triangle?",
+    "answer": "Outside the triangle",
+    "marks": 2
+   },
+   {
+    "question": "Inradius of a triangle with sides 6, 8, 10 cm.",
+    "answer": "2 cm",
+    "marks": 3
+   },
+   {
+    "question": "In ΔABC, find the point equidistant from B and C and from AB and AC. Name the two loci.",
+    "answer": "Perpendicular bisector of BC and bisector of ∠A",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-circles": {
+  "intro": "This chapter is about angles in a circle. Almost every question is solved with a small set of theorems: the angle at the centre, angles in the same segment, the angle in a semicircle, and cyclic quadrilaterals. These notes explain each theorem in simple words and show how to write the reasons in the exam.",
+  "before": [
+   "know angles on a straight line (180°) and the angle sum of a triangle (180°)",
+   "know that radii of the same circle are equal",
+   "know isosceles triangles"
+  ],
+  "glossary": [
+   {
+    "term": "Chord",
+    "meaning": "A line segment joining two points on the circle."
+   },
+   {
+    "term": "Arc",
+    "meaning": "A part of the circle. The minor arc is the smaller part; the major arc is the larger part."
+   },
+   {
+    "term": "Segment",
+    "meaning": "The region between a chord and an arc."
+   },
+   {
+    "term": "Angle at the centre",
+    "meaning": "An angle with its vertex at the centre O."
+   },
+   {
+    "term": "Angle at the circumference",
+    "meaning": "An angle with its vertex on the circle."
+   },
+   {
+    "term": "Cyclic quadrilateral",
+    "meaning": "A quadrilateral whose four vertices lie on one circle."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Angle at the centre is double",
+    "text": [
+     "Take a chord or an arc AB. The angle that it makes at the centre (∠AOB) is double the angle that it makes at any point C on the remaining part of the circle (∠ACB).",
+     "Example: ∠AOC = 130°, and B is on the major arc. ∠ABC = 130°/2 = 65°."
+    ],
+    "points": [
+     "∠ at centre = 2 × ∠ at circumference (same arc)."
+    ],
+    "formulas": [
+     "∠AOB = 2∠ACB"
+    ]
+   },
+   {
+    "title": "Angles in the same segment",
+    "text": [
+     "Angles on the same side of a chord, standing on the same arc, are equal. For example, if C and D are both on the major arc of chord AB, then ∠ACB = ∠ADB.",
+     "Trick: look for 'butterfly' or 'bow-tie' shapes. The two angles at the wing tips are equal."
+    ],
+    "points": [
+     "Same chord, same side → equal angles."
+    ]
+   },
+   {
+    "title": "Angle in a semicircle",
+    "text": [
+     "If AB is a diameter and C is any other point on the circle, then ∠ACB = 90°.",
+     "This is a special case of Lesson 1: the angle at the centre is 180°, so the angle at the circle is 90°."
+    ],
+    "points": [
+     "Diameter → right angle on the circle."
+    ],
+    "example": {
+     "question": "AB is a diameter and ∠CAB = 32°. Find ∠ABC.",
+     "steps": [
+      "∠ACB = 90° (angle in a semicircle).",
+      "∠ABC = 180° − 90° − 32°."
+     ],
+     "answer": "58°"
+    }
+   },
+   {
+    "title": "Cyclic quadrilaterals",
+    "text": [
+     "In a cyclic quadrilateral, opposite angles add up to 180°. So ∠A + ∠C = 180° and ∠B + ∠D = 180°.",
+     "The exterior angle of a cyclic quadrilateral equals the interior opposite angle.",
+     "A rectangle can always be drawn in a circle, but a general parallelogram cannot."
+    ],
+    "points": [
+     "Opposite angles: sum 180°.",
+     "Exterior angle = interior opposite angle."
+    ],
+    "formulas": [
+     "∠A + ∠C = 180°, ∠B + ∠D = 180°"
+    ]
+   },
+   {
+    "title": "How to write circle answers",
+    "text": [
+     "Mark all given angles on a rough figure. Write each new angle on its own line with its reason in brackets, for example '∠ACB = 90° (angle in a semicircle)'.",
+     "Look for isosceles triangles formed by two radii: their base angles are equal.",
+     "Equal chords subtend equal angles at the centre, and they are equidistant from the centre."
+    ],
+    "points": [
+     "Every angle needs a reason."
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Centre and circle",
+    "question": "O is the centre and ∠AOC = 130°. B is on the major arc, D on the minor arc. Find ∠ABC and ∠ADC.",
+    "steps": [
+     "∠ABC = 65° (angle at centre is double).",
+     "∠ADC = 180° − 65° = 115° (cyclic quadrilateral ABCD)."
+    ],
+    "answer": "65° and 115°"
+   },
+   {
+    "type": "Isosceles with radii",
+    "question": "O is the centre, AB is a chord, ∠OAB = 25°, C is on the major arc. Find ∠AOB and ∠ACB.",
+    "steps": [
+     "OA = OB, so ∠OBA = 25°.",
+     "∠AOB = 180° − 50° = 130°.",
+     "∠ACB = 65°."
+    ],
+    "answer": "130° and 65°"
+   },
+   {
+    "type": "Same segment",
+    "question": "ABCD is cyclic, ∠DBC = 40° and ∠BAC = 60°. Find ∠BDC, ∠CAD and ∠BCD.",
+    "steps": [
+     "∠BDC = ∠BAC = 60° (same segment).",
+     "∠CAD = ∠CBD = 40° (same segment).",
+     "∠BAD = 100°, so ∠BCD = 80° (cyclic quadrilateral)."
+    ],
+    "answer": "60°, 40°, 80°"
+   },
+   {
+    "type": "Equal chords proof",
+    "question": "Prove that equal chords of a circle subtend equal angles at the centre.",
+    "steps": [
+     "AB = CD, OA = OC, OB = OD (radii).",
+     "ΔAOB ≅ ΔCOD (SSS).",
+     "∠AOB = ∠COD (CPCT)."
+    ],
+    "answer": "Proved"
+   },
+   {
+    "type": "Diameter and a chord equal to the radius",
+    "question": "AB is a diameter and CD is a chord equal to the radius. AC and BD meet at P outside. Prove ∠APB = 60°.",
+    "steps": [
+     "ΔOCD is equilateral, so ∠COD = 60° and ∠CBD = 30°.",
+     "∠ACB = 90° (semicircle), so ∠PCB = 90°.",
+     "∠APB = 180° − 90° − 30°."
+    ],
+    "answer": "60°"
+   },
+   {
+    "type": "Track lamps",
+    "question": "A, B, C, D lie on a circle in order. ∠BAD = 85° and ∠ADB = 40°. Find ∠BCD, ∠ABD and ∠ACB.",
+    "steps": [
+     "∠BCD = 95° (cyclic quadrilateral).",
+     "∠ABD = 180° − 85° − 40° = 55°.",
+     "∠ACB = ∠ADB = 40° (same segment)."
+    ],
+    "answer": "95°, 55°, 40°"
+   }
+  ],
+  "mistakes": [
+   "Using 'same segment' for angles on opposite sides of a chord.",
+   "Halving when you should double (or the reverse).",
+   "Adding adjacent angles of a cyclic quadrilateral to 180°.",
+   "Not writing reasons.",
+   "Missing the isosceles triangle formed by two radii."
+  ],
+  "checklist": [
+   "Draw a neat rough figure and mark all known angles.",
+   "Name the arc each angle stands on.",
+   "Write one step per line with a reason.",
+   "Use the triangle angle sum to finish.",
+   "Check that your angles look sensible on the figure."
+  ],
+  "practice": [
+   {
+    "question": "Angle at the centre if the angle at the circle is 35°.",
+    "answer": "70°",
+    "marks": 2
+   },
+   {
+    "question": "Cyclic quadrilateral with ∠B = 115°. Find ∠D.",
+    "answer": "65°",
+    "marks": 2
+   },
+   {
+    "question": "AB is a diameter, ∠ABC = 55°. Find ∠BAC.",
+    "answer": "35°",
+    "marks": 2
+   },
+   {
+    "question": "Exterior angle at C of cyclic ABCD is 100°. Find ∠A.",
+    "answer": "100°",
+    "marks": 2
+   },
+   {
+    "question": "Chord AB subtends 80° at the centre. Find the angles on the major and minor arcs.",
+    "answer": "40° and 140°",
+    "marks": 3
+   },
+   {
+    "question": "ABCD is cyclic with AB = AD and ∠BCD = 70°. Find ∠ABD.",
+    "answer": "35°",
+    "marks": 3
+   },
+   {
+    "question": "O is the centre, ∠OBC = 20°, A on the major arc of BC. Find ∠BAC.",
+    "answer": "70°",
+    "marks": 3
+   },
+   {
+    "question": "In cyclic ABCD, ∠A = (2x + 10)° and ∠C = (3x − 5)°. Find x.",
+    "answer": "35",
+    "marks": 2
+   },
+   {
+    "question": "ABCD is cyclic with AB parallel to DC and ∠A = 70°. Find ∠B, ∠C and ∠D.",
+    "answer": "∠B = 70°, ∠C = 110°, ∠D = 110°",
+    "marks": 4
+   },
+   {
+    "question": "Prove that the angle in a semicircle is a right angle.",
+    "answer": "∠ at centre = 180°, so ∠ at circle = 90°",
+    "marks": 3
+   }
+  ]
+ },
+ "icse10-tangents-chords": {
+  "intro": "A tangent is a line that touches a circle at exactly one point. This chapter has three groups of results: tangent and radius, two tangents from one point, and lengths of chords and secants that cross. With these results and Pythagoras' theorem, you can solve all the board questions.",
+  "before": [
+   "use Pythagoras' theorem",
+   "know the circle angle theorems from the previous chapter",
+   "solve simple linear and quadratic equations"
+  ],
+  "glossary": [
+   {
+    "term": "Tangent",
+    "meaning": "A line that meets the circle at exactly one point, the point of contact."
+   },
+   {
+    "term": "Secant",
+    "meaning": "A line that cuts the circle at two points."
+   },
+   {
+    "term": "Alternate segment",
+    "meaning": "The segment on the other side of the chord from the tangent–chord angle."
+   },
+   {
+    "term": "External point",
+    "meaning": "A point outside the circle. Exactly two tangents can be drawn from it."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Tangent and radius",
+    "text": [
+     "The tangent at a point is perpendicular to the radius at that point. So ∠OTP = 90°, where T is the point of contact.",
+     "This makes a right triangle OTP, so PT² = OP² − OT². Example: OP = 13 cm, radius 5 cm → PT = √(169 − 25) = 12 cm."
+    ],
+    "points": [
+     "Always join the centre to the point of contact."
+    ],
+    "formulas": [
+     "OT ⟂ PT",
+     "PT = √(OP² − r²)"
+    ]
+   },
+   {
+    "title": "Two tangents from one point",
+    "text": [
+     "From an external point P, the two tangents PA and PB are equal: PA = PB.",
+     "They make equal angles with OP, and ∠APB + ∠AOB = 180° (because ∠OAP = ∠OBP = 90° in quadrilateral OAPB).",
+     "Because PA = PB, triangle PAB is isosceles."
+    ],
+    "points": [
+     "PA = PB.",
+     "∠APB + ∠AOB = 180°."
+    ],
+    "example": {
+     "question": "Tangents PA and PB, ∠PAB = 62°. Find ∠APB and ∠AOB.",
+     "steps": [
+      "PA = PB, so ∠PBA = 62°.",
+      "∠APB = 180° − 124° = 56°.",
+      "∠AOB = 180° − 56°."
+     ],
+     "answer": "56° and 124°"
+    }
+   },
+   {
+    "title": "Alternate segment theorem",
+    "text": [
+     "The angle between a tangent and a chord at the point of contact equals the angle that the chord makes in the alternate segment.",
+     "Example: tangent TA at A, chord AB, ∠TAB = 65°. For any point C on the arc on the other side, ∠ACB = 65°."
+    ]
+   },
+   {
+    "title": "Intersecting chords and secants",
+    "text": [
+     "If two chords AB and CD meet at P (inside or outside the circle), then PA × PB = PC × PD.",
+     "If PT is a tangent and PAB is a secant, then PT² = PA × PB.",
+     "Always measure each length from P. For a secant outside, PB = PA + AB."
+    ],
+    "points": [
+     "Measure from the point P."
+    ],
+    "formulas": [
+     "PA × PB = PC × PD",
+     "PT² = PA × PB"
+    ],
+    "example": {
+     "question": "PT is a tangent and PAB is a secant with PA = 4 cm, AB = 5 cm. Find PT.",
+     "steps": [
+      "PB = 4 + 5 = 9 cm.",
+      "PT² = 4 × 9 = 36."
+     ],
+     "answer": "6 cm"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "type": "Tangent length",
+    "question": "Find the tangent length from a point 13 cm from the centre of a circle of radius 5 cm.",
+    "steps": [
+     "PT² = 13² − 5² = 144."
+    ],
+    "answer": "12 cm"
+   },
+   {
+    "type": "Chords inside",
+    "question": "Chords AB and CD meet inside at P. PA = 6 cm, PB = 4 cm, PD = 3 cm. Find PC and CD.",
+    "steps": [
+     "6 × 4 = PC × 3, so PC = 8 cm.",
+     "CD = 8 + 3."
+    ],
+    "answer": "PC = 8 cm, CD = 11 cm"
+   },
+   {
+    "type": "Chords outside",
+    "question": "Chords AB and CD meet at P outside. PA = 3, AB = 9, PC = 4. Find CD.",
+    "steps": [
+     "PB = 12. 3 × 12 = 4 × PD, so PD = 9.",
+     "CD = 9 − 4."
+    ],
+    "answer": "5 cm"
+   },
+   {
+    "type": "Alternate segment",
+    "question": "O is the centre, TP is the tangent at P, ∠TPQ = 70°, R is on the major arc. Find ∠PRQ, ∠POQ and ∠OPQ.",
+    "steps": [
+     "∠PRQ = 70° (alternate segment).",
+     "∠POQ = 140° (angle at centre).",
+     "∠OPQ = 90° − 70° = 20°."
+    ],
+    "answer": "70°, 140°, 20°"
+   },
+   {
+    "type": "Parallel tangents proof",
+    "question": "Prove that tangents at the ends of a diameter are parallel.",
+    "steps": [
+     "Radius ⟂ tangent at each end, so both tangents make 90° with AB.",
+     "These are alternate angles."
+    ],
+    "answer": "The tangents are parallel"
+   },
+   {
+    "type": "Garden",
+    "question": "A circular garden has radius 7 m. A gate G is 25 m from the centre O. Paths GA and GB touch the garden. Find GA and the area of GAOB.",
+    "steps": [
+     "GA = √(625 − 49) = 24 m.",
+     "Area = 2 × ½ × 7 × 24."
+    ],
+    "answer": "GA = 24 m, area = 168 m²"
+   }
+  ],
+  "mistakes": [
+   "Forgetting the 90° between radius and tangent.",
+   "Using PA × AB instead of PA × PB.",
+   "Taking the alternate segment on the wrong side.",
+   "Thinking that the two tangents are of different lengths.",
+   "Not drawing the radius to the point of contact."
+  ],
+  "checklist": [
+   "Draw the radius to every point of contact.",
+   "Mark right angles at points of contact.",
+   "Name the theorem you use.",
+   "For lengths, write the product equation before solving.",
+   "Check the triangle angle sum."
+  ],
+  "practice": [
+   {
+    "question": "Tangent length from 10 cm with radius 6 cm.",
+    "answer": "8 cm",
+    "marks": 2
+   },
+   {
+    "question": "Chords: 3 × 8 = 4 × x. Find x.",
+    "answer": "6",
+    "marks": 2
+   },
+   {
+    "question": "Tangent–chord angle 48°. Angle in the alternate segment?",
+    "answer": "48°",
+    "marks": 2
+   },
+   {
+    "question": "∠APB = 70° for tangents PA and PB. Find ∠AOB.",
+    "answer": "110°",
+    "marks": 2
+   },
+   {
+    "question": "PT tangent, PA = 2, PB = 8. Find PT.",
+    "answer": "4",
+    "marks": 2
+   },
+   {
+    "question": "Tangents PA = 9 cm with ∠APB = 60°. Find AB.",
+    "answer": "9 cm",
+    "marks": 3
+   },
+   {
+    "question": "Tangent PT = 8 cm, radius 6 cm. Find OP.",
+    "answer": "10 cm",
+    "marks": 2
+   },
+   {
+    "question": "A circle touches all four sides of quadrilateral ABCD. Prove AB + CD = AD + BC.",
+    "answer": "Use equal tangents from each vertex",
+    "marks": 4
+   },
+   {
+    "question": "Two concentric circles have radii 5 cm and 3 cm. Find the chord of the larger circle that touches the smaller one.",
+    "answer": "8 cm",
+    "marks": 3
+   },
+   {
+    "question": "Chord PQ is parallel to the tangent at R. Prove that R is the mid-point of arc PQ (RP = RQ).",
+    "answer": "Alternate segment and alternate angles give ∠RPQ = ∠RQP",
+    "marks": 3
+   }
+  ]
+ },
+ "icse10-constructions-circles": {
+  "intro": "In this chapter you draw circles and tangents with only a ruler and compasses. The board exam gives about 3–4 marks for an accurate drawing, the arcs and a measured answer. These notes give the exact steps for each construction and the reason why it works.",
+  "before": [
+   "bisect a line segment",
+   "construct a perpendicular at a point on a line",
+   "construct angles of 60° and 90°"
+  ],
+  "glossary": [
+   {
+    "term": "Tangent at a point",
+    "meaning": "A line through the point, perpendicular to the radius there."
+   },
+   {
+    "term": "Tangents from an external point",
+    "meaning": "Two lines from the point that touch the circle."
+   },
+   {
+    "term": "Circumcircle",
+    "meaning": "The circle through the three vertices of a triangle."
+   },
+   {
+    "term": "Incircle",
+    "meaning": "The circle inside a triangle that touches all three sides."
+   },
+   {
+    "term": "Regular hexagon",
+    "meaning": "A hexagon with six equal sides and six equal angles."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Tangent at a point on the circle",
+    "text": [
+     "Steps: draw the circle with centre O and mark P on it. Join OP. At P, construct a 90° angle to OP. The line through P is the tangent.",
+     "Reason: the tangent is perpendicular to the radius at the point of contact."
+    ]
+   },
+   {
+    "title": "Tangents from an external point",
+    "text": [
+     "Steps: join O to the external point P. Bisect OP and mark its mid-point M. With centre M and radius MO, draw a circle. It cuts the given circle at A and B. Join PA and PB.",
+     "Reason: ∠OAP is an angle in a semicircle (OP is a diameter of the new circle), so ∠OAP = 90°. So PA is a tangent.",
+     "Check your measurement: PA = √(OP² − r²)."
+    ],
+    "points": [
+     "Bisect OP; draw the circle on OP as diameter."
+    ],
+    "formulas": [
+     "PA = √(OP² − r²)"
+    ],
+    "example": {
+     "question": "Draw tangents from P, 7 cm from O, to a circle of radius 3 cm. Find PA and ∠APB.",
+     "steps": [
+      "PA = √(49 − 9) = √40 ≈ 6.3 cm.",
+      "sin ∠APO = 3/7, so ∠APO ≈ 25.4°.",
+      "∠APB = 2 × 25.4°."
+     ],
+     "answer": "PA ≈ 6.3 cm, ∠APB ≈ 51°"
+    }
+   },
+   {
+    "title": "Circumcircle and incircle",
+    "text": [
+     "Circumcircle: draw the perpendicular bisectors of any two sides. They meet at O. Draw the circle with centre O and radius OA.",
+     "Incircle: draw the bisectors of any two angles. They meet at I. Draw a perpendicular from I to a side, meeting it at M. Draw the circle with centre I and radius IM.",
+     "For a right triangle, the circumcentre is the mid-point of the hypotenuse, so R = hypotenuse/2."
+    ],
+    "points": [
+     "Circumcircle → perpendicular bisectors. Incircle → angle bisectors."
+    ],
+    "formulas": [
+     "R = abc/(4 × area)",
+     "r = area ÷ s"
+    ]
+   },
+   {
+    "title": "Regular hexagon and its circles",
+    "text": [
+     "The side of a regular hexagon equals the radius of its circumcircle. So draw a circle with radius = side, and step off the side six times around it with compasses. Join the points.",
+     "For the incircle of the hexagon, bisect two angles (or two sides perpendicularly). The radius is side × √3/2."
+    ],
+    "formulas": [
+     "Hexagon: circumradius = side, inradius = side × √3/2"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "type": "Tangent from a point",
+    "question": "Draw a circle of radius 2.5 cm. Take P 6 cm from O. Construct a tangent and measure it.",
+    "steps": [
+     "Bisect OP; draw a circle on OP as diameter; join P to the meeting point.",
+     "PT = √(36 − 6.25) = √29.75 ≈ 5.45 cm."
+    ],
+    "answer": "About 5.5 cm"
+   },
+   {
+    "type": "Concentric circles",
+    "question": "Draw circles of radii 2 cm and 4 cm with the same centre. From a point on the larger circle, draw a tangent to the smaller circle and measure it.",
+    "steps": [
+     "Use the external-point construction.",
+     "Length = √(16 − 4) = √12 ≈ 3.46 cm."
+    ],
+    "answer": "About 3.5 cm"
+   },
+   {
+    "type": "Incircle",
+    "question": "Construct ΔABC with BC = 6 cm, AB = 5 cm, ∠ABC = 60°, and its incircle. Measure the radius.",
+    "steps": [
+     "Bisect ∠B and ∠C. Mark I.",
+     "Drop IM ⟂ BC; IM is the radius.",
+     "Check: AC² = 31, area ≈ 12.99, s ≈ 8.28, r ≈ 1.57."
+    ],
+    "answer": "About 1.6 cm"
+   },
+   {
+    "type": "Circumcircle of a right triangle",
+    "question": "Construct ΔABC with AB = 6 cm, BC = 8 cm, ∠B = 90° and its circumcircle.",
+    "steps": [
+     "Perpendicular bisectors meet at the mid-point of AC.",
+     "AC = 10 cm."
+    ],
+    "answer": "Radius 5 cm"
+   },
+   {
+    "type": "Hexagon",
+    "question": "Construct a regular hexagon of side 3 cm and its circumcircle.",
+    "steps": [
+     "Draw a circle of radius 3 cm.",
+     "Step off 3 cm chords six times; join the points."
+    ],
+    "answer": "Circumradius 3 cm"
+   },
+   {
+    "type": "Badge",
+    "question": "Find the radius of the circle through the corners of an equilateral triangle of side 6 cm.",
+    "steps": [
+     "Circumcentre = intersection of perpendicular bisectors.",
+     "R = 6/√3 = 2√3."
+    ],
+    "answer": "About 3.46 cm"
+   }
+  ],
+  "mistakes": [
+   "Drawing tangents 'by eye' without the construction.",
+   "Using angle bisectors for the circumcircle.",
+   "Measuring the incircle radius to a vertex.",
+   "Erasing construction arcs.",
+   "Not writing the measured length."
+  ],
+  "checklist": [
+   "Rough sketch first.",
+   "Use a sharp pencil and keep all arcs.",
+   "Label O, P, A, B, M clearly.",
+   "Write steps of construction when asked.",
+   "Check the measured value with a quick calculation."
+  ],
+  "practice": [
+   {
+    "question": "Tangent length from 10 cm with radius 6 cm.",
+    "answer": "8 cm",
+    "marks": 2
+   },
+   {
+    "question": "Circumradius of a right triangle with hypotenuse 13 cm.",
+    "answer": "6.5 cm",
+    "marks": 2
+   },
+   {
+    "question": "Circumradius of a regular hexagon of side 4 cm.",
+    "answer": "4 cm",
+    "marks": 2
+   },
+   {
+    "question": "Inradius of an equilateral triangle of side 6 cm.",
+    "answer": "√3 ≈ 1.73 cm",
+    "marks": 3
+   },
+   {
+    "question": "Inradius of a right triangle with legs 6 cm and 8 cm.",
+    "answer": "2 cm",
+    "marks": 3
+   },
+   {
+    "question": "Angle between tangents from P with OP = 6 cm and r = 3 cm.",
+    "answer": "60°",
+    "marks": 3
+   },
+   {
+    "question": "Write the steps to draw the tangent at a point P on a circle.",
+    "answer": "Join OP; draw a 90° angle at P",
+    "marks": 2
+   },
+   {
+    "question": "Why is the angle between radius and tangent 90° in the construction from an external point?",
+    "answer": "Angle in a semicircle",
+    "marks": 2
+   },
+   {
+    "question": "Inradius of a regular hexagon of side 4 cm.",
+    "answer": "2√3 ≈ 3.46 cm",
+    "marks": 3
+   },
+   {
+    "question": "OP = 5 cm, r = 3 cm. Find the tangent length and the angle APB.",
+    "answer": "4 cm, about 74°",
+    "marks": 4
+   }
+  ]
+ },
+ "icse10-cylinder-cone-sphere": {
+  "intro": "This chapter is about the surface area (how much material covers a solid) and the volume (how much it holds) of cylinders, cones, spheres and hemispheres. Board questions often join two solids, or melt one solid and make another. These notes explain each formula and the method for these mixed questions.",
+  "before": [
+   "find the area and circumference of a circle (πr² and 2πr)",
+   "use π = 22/7",
+   "convert units: 1 m = 100 cm, 1 litre = 1,000 cm³"
+  ],
+  "glossary": [
+   {
+    "term": "Curved surface area (CSA)",
+    "meaning": "The area of the curved part only."
+   },
+   {
+    "term": "Total surface area (TSA)",
+    "meaning": "Curved area + the flat faces."
+   },
+   {
+    "term": "Volume",
+    "meaning": "The space inside, in cubic units."
+   },
+   {
+    "term": "Slant height (l)",
+    "meaning": "For a cone, the length from the tip to the edge of the base: l = √(r² + h²)."
+   },
+   {
+    "term": "Hemisphere",
+    "meaning": "Half of a sphere."
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Cylinder",
+    "text": [
+     "Unroll the curved surface of a cylinder: it is a rectangle with width 2πr and height h. So CSA = 2πrh.",
+     "Add the two circular ends for TSA: 2πrh + 2πr² = 2πr(h + r). Volume = base area × height = πr²h."
+    ],
+    "formulas": [
+     "CSA = 2πrh",
+     "TSA = 2πr(h + r)",
+     "V = πr²h"
+    ],
+    "example": {
+     "question": "Find the CSA and the volume of a cylinder with r = 7 cm, h = 10 cm.",
+     "steps": [
+      "CSA = 2 × 22/7 × 7 × 10 = 440 cm².",
+      "V = 22/7 × 49 × 10 = 1,540 cm³."
+     ],
+     "answer": "440 cm², 1,540 cm³"
+    }
+   },
+   {
+    "title": "Cone",
+    "text": [
+     "The slant height is l = √(r² + h²) (Pythagoras). CSA = πrl. TSA = πr(l + r).",
+     "A cone holds one-third of the cylinder with the same base and height: V = ⅓πr²h."
+    ],
+    "points": [
+     "Use l for area, h for volume."
+    ],
+    "formulas": [
+     "l = √(r² + h²)",
+     "CSA = πrl",
+     "V = ⅓πr²h"
+    ],
+    "example": {
+     "question": "A cone has volume 1,232 cm³ and radius 7 cm. Find h and l.",
+     "steps": [
+      "⅓ × 22/7 × 49 × h = 1,232, so h = 24 cm.",
+      "l = √(49 + 576)."
+     ],
+     "answer": "h = 24 cm, l = 25 cm"
+    }
+   },
+   {
+    "title": "Sphere and hemisphere",
+    "text": [
+     "Sphere: surface area = 4πr², volume = (4/3)πr³.",
+     "Hemisphere: curved area = 2πr². A solid hemisphere also has a flat circle, so TSA = 3πr². Volume = (2/3)πr³.",
+     "If the radius is doubled, area becomes 4 times and volume becomes 8 times."
+    ],
+    "formulas": [
+     "Sphere: A = 4πr², V = (4/3)πr³",
+     "Hemisphere: CSA = 2πr², TSA = 3πr², V = (2/3)πr³"
+    ]
+   },
+   {
+    "title": "Combined solids",
+    "text": [
+     "For volume, add the volumes of the parts.",
+     "For surface area, add only the surfaces that you can see from outside. Where two solids join, the joined faces are hidden and are not counted.",
+     "Example: a toy is a cone on a hemisphere of the same radius. Surface = CSA of cone + CSA of hemisphere (no flat circles)."
+    ],
+    "points": [
+     "Volumes add; hidden surfaces do not count."
+    ]
+   },
+   {
+    "title": "Melting and recasting, and water level",
+    "text": [
+     "When a solid is melted and made into another shape, the volume stays the same. Write volume before = volume after, and solve.",
+     "If n small objects are made from one big object, n = big volume ÷ small volume.",
+     "When an object is dropped in water, the water displaced has the same volume as the object. For a cylinder of radius R, rise in level = volume of object ÷ (πR²)."
+    ],
+    "points": [
+     "Recasting: equal volumes."
+    ],
+    "example": {
+     "question": "A metal sphere of radius 6 cm is melted into a cylinder of radius 4 cm. Find the height.",
+     "steps": [
+      "(4/3)π × 216 = π × 16 × h.",
+      "288 = 16h."
+     ],
+     "answer": "18 cm"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "type": "Hemisphere",
+    "question": "Find the TSA of a solid hemisphere of radius 7 cm.",
+    "steps": [
+     "TSA = 3πr² = 3 × 22/7 × 49."
+    ],
+    "answer": "462 cm²"
+   },
+   {
+    "type": "Combined volume",
+    "question": "A solid is a cylinder (r = 3.5 cm, h = 10 cm) with a hemisphere on top. Find its volume.",
+    "steps": [
+     "Cylinder = 385 cm³.",
+     "Hemisphere = (2/3) × 22/7 × 42.875 ≈ 89.83 cm³."
+    ],
+    "answer": "≈ 474.83 cm³"
+   },
+   {
+    "type": "Number of shots",
+    "question": "How many lead shots of radius 0.5 cm can be made from a cuboid 11 cm × 7 cm × 4 cm?",
+    "steps": [
+     "Cuboid = 308 cm³. Shot = 11/21 cm³.",
+     "308 ÷ 11/21."
+    ],
+    "answer": "588"
+   },
+   {
+    "type": "Tent canvas",
+    "question": "A conical tent has radius 7 m and height 24 m. Find the canvas and its cost at ₹15 per m².",
+    "steps": [
+     "l = 25 m. CSA = 22/7 × 7 × 25 = 550 m².",
+     "Cost = 550 × 15."
+    ],
+    "answer": "550 m², ₹8,250"
+   },
+   {
+    "type": "Water rise",
+    "question": "A ball dropped in a cylindrical tub of radius 12 cm raises the water by 6.75 cm. Find the radius of the ball.",
+    "steps": [
+     "Displaced = π × 144 × 6.75 = 972π.",
+     "(4/3)πr³ = 972π, so r³ = 729."
+    ],
+    "answer": "9 cm"
+   },
+   {
+    "type": "Ice cream cones",
+    "question": "A cone (r = 3 cm, h = 14 cm) is filled with ice cream and topped by a hemisphere of radius 3 cm. How many can be filled from 10 litres?",
+    "steps": [
+     "Cone = 132 cm³, hemisphere = 396/7 ≈ 56.57 cm³.",
+     "Total ≈ 188.57 cm³. 10,000 ÷ 188.57 ≈ 53.03."
+    ],
+    "answer": "53 cones"
+   }
+  ],
+  "mistakes": [
+   "Using the diameter as the radius.",
+   "Using h instead of l for the curved area of a cone.",
+   "Counting hidden faces in a combined solid.",
+   "Mixing units (cm and m).",
+   "Rounding too early."
+  ],
+  "checklist": [
+   "Write r, h and l before you start.",
+   "Write the formula, then substitute.",
+   "For recasting, write 'volume of A = volume of B'.",
+   "Convert units first.",
+   "Give units: cm² for area, cm³ for volume."
+  ],
+  "practice": [
+   {
+    "question": "Volume of a cylinder r = 7 cm, h = 5 cm.",
+    "answer": "770 cm³",
+    "marks": 2
+   },
+   {
+    "question": "CSA of a cone r = 7 cm, l = 10 cm.",
+    "answer": "220 cm²",
+    "marks": 2
+   },
+   {
+    "question": "Volume of a sphere r = 3 cm (in π).",
+    "answer": "36π cm³",
+    "marks": 2
+   },
+   {
+    "question": "How many balls of radius 1 cm can be made from a sphere of radius 3 cm?",
+    "answer": "27",
+    "marks": 2
+   },
+   {
+    "question": "Water in a pipe of diameter 14 cm and length 1 m, in litres.",
+    "answer": "15.4 litres",
+    "marks": 3
+   },
+   {
+    "question": "A hemispherical bowl of radius 9 cm is emptied into a cylinder of radius 3 cm. Find the height of the water.",
+    "answer": "54 cm",
+    "marks": 3
+   },
+   {
+    "question": "Find the slant height of a cone with r = 5 cm and h = 12 cm.",
+    "answer": "13 cm",
+    "marks": 2
+   },
+   {
+    "question": "The radius of a sphere is doubled. How many times does its volume become?",
+    "answer": "8 times",
+    "marks": 2
+   },
+   {
+    "question": "Find the TSA of a cylinder r = 7 cm, h = 13 cm.",
+    "answer": "880 cm²",
+    "marks": 3
+   },
+   {
+    "question": "A cone of height 24 cm and radius 6 cm is melted into a sphere. Find its radius.",
+    "answer": "6 cm",
+    "marks": 4
+   }
+  ]
+ }
+}

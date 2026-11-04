@@ -5,13 +5,13 @@ export default function ChapterFigure({ title }: { title: string }) {
   const id = useId().replace(/:/g, '');
   const kind = /fraction|rational|decimal/i.test(title)
     ? 'fraction'
-    : /angle|line|triangle|construction|trigonometry/i.test(title)
+    : /angle|\blines?\b|triangle|construction|trigonometr|heights/i.test(title)
       ? 'triangle'
-      : /data|statistic|probability/i.test(title)
+      : /data|statistic|probability|graphical|tendency/i.test(title)
         ? 'bars'
-        : /circle|symmetry|mensuration|area|volume/i.test(title)
+        : /circle|symmetry|mensuration|area|volume|cylinder|cone|sphere|tangent|loci|reflection/i.test(title)
           ? 'circle'
-          : /function|equation|polynomial|coordinate|derivative|integral/i.test(
+          : /function|equation|polynomial|coordinate|derivative|integral|inequation|progression|mid-point|matri|factor theorem/i.test(
                 title,
               )
             ? 'graph'
