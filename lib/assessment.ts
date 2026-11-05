@@ -7,6 +7,7 @@ import { grade12PaperAssessments } from './grade12-papers';
 import { relationsPracticePaper } from './relations-practice-paper';
 import { RELATIONS_TEST_ID } from './paper-format';
 import { relationsMarking } from './relations-marking';
+import { fixAssessment } from './paper-fixes';
 
 export const writtenQuestionMarks: Record<number, number> = {
   17: 2, 18: 2, 19: 2, 20: 3, 21: 3, 22: 3, 23: 5, 24: 4,
@@ -120,7 +121,7 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
 };
 
 export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(
-  Object.entries(paperAssessmentSources).map(([paperId, assessment]) => [paperId, {
+  Object.entries(paperAssessmentSources).map(([paperId, unfixed]) => [paperId, fixAssessment(paperId, unfixed)] as const).map(([paperId, assessment]) => [paperId, {
     ...assessment,
     markingSchemes: paperId === RELATIONS_TEST_ID ? relationsMarking : buildDefaultMarkingSchemes(assessment.writtenSolutions),
   }]),

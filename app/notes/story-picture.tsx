@@ -18,7 +18,22 @@ export type StoryPictureSpec =
   | { kind: 'tree'; root: string; children: { label: string; children?: string[] }[]; caption?: string }
   | { kind: 'sticks'; squares: number; caption?: string }
   | { kind: 'bars'; labels: string[]; values: number[]; gold?: number; caption?: string }
-  | { kind: 'compare'; left: { title: string; lines: string[] }; right: { title: string; lines: string[] }; caption?: string };
+  | { kind: 'compare'; left: { title: string; lines: string[] }; right: { title: string; lines: string[] }; caption?: string }
+  /** A graph in maths coordinates: curves are point lists computed in advance. */
+  | { kind: 'plot'; x: [number, number]; y: [number, number]; step?: number; series?: { pts: [number, number][]; gold?: boolean; label?: string; dashed?: boolean }[]; points?: { p: [number, number]; label?: string; gold?: boolean }[]; segments?: { a: [number, number]; b: [number, number]; gold?: boolean; dashed?: boolean; label?: string }[]; caption?: string }
+  /** A free drawing in pixel coordinates (width 640, height h). */
+  | { kind: 'draw'; h?: number; items: DrawItem[]; caption?: string };
+
+export type DrawItem =
+  | { t: 'line'; p: [number, number, number, number]; s?: 'line' | 'accent' | 'gold' | 'guide' | 'red' }
+  | { t: 'poly'; pts: [number, number][]; fill?: 'blue' | 'gold' | 'none'; open?: boolean }
+  | { t: 'circle'; c: [number, number]; r: number; fill?: 'blue' | 'gold' | 'none' }
+  | { t: 'sector'; c: [number, number]; r: number; a1: number; a2: number; fill?: 'blue' | 'gold' }
+  | { t: 'arc'; c: [number, number]; r: number; a1: number; a2: number; s?: 'accent' | 'gold' }
+  | { t: 'text'; p: [number, number]; v: string; size?: 's' | 'm' | 'l'; anchor?: 'start' | 'middle' | 'end' }
+  | { t: 'dot'; p: [number, number]; gold?: boolean }
+  | { t: 'right'; p: [number, number]; d1: [number, number]; d2: [number, number] }
+  | { t: 'ellipse'; c: [number, number]; rx: number; ry: number; fill?: 'blue' | 'gold' | 'none'; dashed?: boolean };
 
 const W = 640;
 const arrowHead = (x: number, y: number, dir: 1 | -1, key?: string) => (
@@ -137,12 +152,16 @@ function Flow({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'flow' }> }) {
 
 function Table({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'table' }> }) {
   const rows = spec.rows.length, cols = Math.max(...spec.rows.map((r) => r.length));
-  const cw = Math.min(110, (W - 60) / cols), rh = Math.min(48, 240 / rows), left = (W - cw * cols) / 2, top = (300 - rh * rows) / 2;
+  const need = Array.from({ length: cols }, (_, c) => Math.max(70, ...spec.rows.map((r) => (r[c] ?? '').length * 11 + 24)));
+  const total = need.reduce((a, b) => a + b, 0), scale = Math.min(1, (W - 30) / total), fit = need.every((n) => n <= Math.min(110, (W - 60) / cols));
+  const widths = fit ? need.map(() => Math.min(110, (W - 60) / cols)) : need.map((n) => n * scale);
+  const xs = widths.reduce<number[]>((acc, w, i) => [...acc, acc[i] + w], [0]);
+  const rh = Math.min(48, 240 / rows), left = (W - xs[cols]) / 2, top = (300 - rh * rows) / 2;
   return <>{spec.rows.map((row, r) => row.map((cell, c) => {
     const gold = spec.gold?.some(([gr, gc]) => gr === r && gc === c), head = spec.head && r === 0;
     return <g key={`${r}-${c}`}>
-      <rect x={left + c * cw} y={top + r * rh} width={cw} height={rh} className={gold ? 'visual-card-gold' : head ? 'visual-card' : 'visual-fraction-empty'} />
-      <text x={left + c * cw + cw / 2} y={top + r * rh + rh / 2 + 6} textAnchor="middle" className={head ? 'visual-small' : 'visual-label'}>{cell}</text>
+      <rect x={left + xs[c]} y={top + r * rh} width={widths[c]} height={rh} className={gold ? 'visual-card-gold' : head ? 'visual-card' : 'visual-fraction-empty'} />
+      <text x={left + xs[c] + widths[c] / 2} y={top + r * rh + rh / 2 + 6} textAnchor="middle" className={head ? 'visual-small' : 'visual-label'} style={scale < 1 ? { fontSize: `${Math.max(11, 17 * scale)}px` } : undefined}>{cell}</text>
     </g>;
   }))}</>;
 }
@@ -237,6 +256,76 @@ function Bars({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'bars' }> }) {
   </>;
 }
 
+function Plot({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'plot' }> }) {
+  const L = 60, R = W - 30, T = 20, B = 280;
+  const [x0, x1] = spec.x, [y0, y1] = spec.y;
+  const X = (v: number) => L + ((v - x0) / (x1 - x0)) * (R - L);
+  const Y = (v: number) => B - ((v - y0) / (y1 - y0)) * (B - T);
+  const step = spec.step ?? 1;
+  const gx: number[] = [], gy: number[] = [];
+  for (let v = Math.ceil(x0 / step) * step; v <= x1 + 1e-9; v += step) gx.push(Math.round(v * 100) / 100);
+  for (let v = Math.ceil(y0 / step) * step; v <= y1 + 1e-9; v += step) gy.push(Math.round(v * 100) / 100);
+  const every = (n: number) => (n > 16 ? Math.ceil(n / 12) : 1);
+  const clip = (pts: [number, number][]) => pts.filter(([, y]) => y >= y0 - 0.001 && y <= y1 + 0.001);
+  return <>
+    {gx.map((v) => <path key={`gx${v}`} d={`M${X(v)} ${T}V${B}`} className="visual-grid" style={{ opacity: 0.35 }} />)}
+    {gy.map((v) => <path key={`gy${v}`} d={`M${L} ${Y(v)}H${R}`} className="visual-grid" style={{ opacity: 0.35 }} />)}
+    {y0 <= 0 && y1 >= 0 && <path d={`M${L} ${Y(0)}H${R}`} className="visual-line" />}
+    {x0 <= 0 && x1 >= 0 && <path d={`M${X(0)} ${T}V${B}`} className="visual-line" />}
+    {gx.filter((_, i) => i % every(gx.length) === 0 && true).map((v) => v !== 0 && <text key={`tx${v}`} x={X(v)} y={(y0 <= 0 && y1 >= 0 ? Y(0) : B) + 18} textAnchor="middle" className="visual-small">{String(v).replace('-', '−')}</text>)}
+    {gy.filter((_, i) => i % every(gy.length) === 0).map((v) => v !== 0 && <text key={`ty${v}`} x={(x0 <= 0 && x1 >= 0 ? X(0) : L) - 8} y={Y(v) + 5} textAnchor="end" className="visual-small">{String(v).replace('-', '−')}</text>)}
+    {(spec.series ?? []).map((sr, i) => {
+      const pts = clip(sr.pts);
+      if (pts.length < 2) return null;
+      const last = pts[pts.length - 1];
+      return <g key={`s${i}`}>
+        <path d={'M' + pts.map(([a, b]) => `${X(a).toFixed(1)} ${Y(b).toFixed(1)}`).join('L')} className={sr.gold ? 'visual-gold' : 'visual-curve'} style={sr.dashed ? { strokeDasharray: '7 6' } : undefined} />
+        {sr.label && <text x={Math.min(X(last[0]) + 6, R - 4)} y={Y(last[1]) - 8} textAnchor={X(last[0]) > R - 80 ? 'end' : 'start'} className="visual-label">{sr.label}</text>}
+      </g>;
+    })}
+    {(spec.segments ?? []).map((sg, i) => <g key={`g${i}`}>
+      <path d={`M${X(sg.a[0])} ${Y(sg.a[1])}L${X(sg.b[0])} ${Y(sg.b[1])}`} className={sg.gold ? 'visual-gold' : 'visual-accent'} style={sg.dashed ? { strokeDasharray: '6 5' } : undefined} />
+      {sg.label && <text x={(X(sg.a[0]) + X(sg.b[0])) / 2 + 8} y={(Y(sg.a[1]) + Y(sg.b[1])) / 2 - 8} className="visual-label">{sg.label}</text>}
+    </g>)}
+    {(spec.points ?? []).map((pt, i) => <g key={`p${i}`}>
+      <circle cx={X(pt.p[0])} cy={Y(pt.p[1])} r="6.5" className={pt.gold ? 'visual-dot-gold' : 'visual-dot'} />
+      {pt.label && <text x={X(pt.p[0]) + 10} y={Y(pt.p[1]) - 10} className="visual-label" style={{ fontSize: 15 }}>{pt.label}</text>}
+    </g>)}
+  </>;
+}
+
+function Draw({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'draw' }> }) {
+  const fillClass = (f?: string) => (f === 'gold' ? 'visual-shape-gold' : f === 'blue' ? 'visual-shape' : 'visual-circle');
+  const polar = (c: [number, number], r: number, a: number) => [c[0] + r * Math.cos((a * Math.PI) / 180), c[1] - r * Math.sin((a * Math.PI) / 180)];
+  return <>{spec.items.map((it, i) => {
+    switch (it.t) {
+      case 'line': {
+        const cls = it.s === 'accent' ? 'visual-accent' : it.s === 'gold' ? 'visual-gold' : it.s === 'guide' ? 'visual-guide' : it.s === 'red' ? 'visual-symmetry-line' : 'visual-line';
+        return <path key={i} d={`M${it.p[0]} ${it.p[1]}L${it.p[2]} ${it.p[3]}`} className={cls} />;
+      }
+      case 'poly': return <path key={i} d={'M' + it.pts.map(([a, b]) => `${a} ${b}`).join('L') + (it.open ? '' : 'Z')} className={it.open ? 'visual-line' : fillClass(it.fill)} />;
+      case 'circle': return <circle key={i} cx={it.c[0]} cy={it.c[1]} r={it.r} className={fillClass(it.fill)} />;
+      case 'ellipse': return <ellipse key={i} cx={it.c[0]} cy={it.c[1]} rx={it.rx} ry={it.ry} className={fillClass(it.fill)} style={it.dashed ? { strokeDasharray: '6 5' } : undefined} />;
+      case 'sector': {
+        const [ax, ay] = polar(it.c, it.r, it.a1), [bx, by] = polar(it.c, it.r, it.a2), large = Math.abs(it.a2 - it.a1) > 180 ? 1 : 0;
+        return <path key={i} d={`M${it.c[0]} ${it.c[1]}L${ax} ${ay}A${it.r} ${it.r} 0 ${large} 0 ${bx} ${by}Z`} className={it.fill === 'gold' ? 'visual-sector' : 'visual-shape'} />;
+      }
+      case 'arc': {
+        const [ax, ay] = polar(it.c, it.r, it.a1), [bx, by] = polar(it.c, it.r, it.a2), large = Math.abs(it.a2 - it.a1) > 180 ? 1 : 0;
+        return <path key={i} d={`M${ax} ${ay}A${it.r} ${it.r} 0 ${large} 0 ${bx} ${by}`} className={it.s === 'gold' ? 'visual-gold' : 'visual-accent'} />;
+      }
+      case 'text': return <text key={i} x={it.p[0]} y={it.p[1]} textAnchor={it.anchor ?? 'middle'} className={it.size === 's' ? 'visual-small' : it.size === 'l' ? 'visual-number' : 'visual-label'}>{it.v}</text>;
+      case 'dot': return <circle key={i} cx={it.p[0]} cy={it.p[1]} r="5.5" className={it.gold ? 'visual-dot-gold' : 'visual-dot'} />;
+      case 'right': {
+        const k = 14, [px, py] = it.p, [ux, uy] = it.d1, [vx, vy] = it.d2;
+        const n1 = Math.hypot(ux, uy) || 1, n2 = Math.hypot(vx, vy) || 1;
+        const a = [px + (ux / n1) * k, py + (uy / n1) * k], c = [px + (vx / n2) * k, py + (vy / n2) * k], b = [a[0] + (vx / n2) * k, a[1] + (vy / n2) * k];
+        return <path key={i} d={`M${a[0]} ${a[1]}L${b[0]} ${b[1]}L${c[0]} ${c[1]}`} className="visual-gold" style={{ strokeWidth: 2 }} />;
+      }
+    }
+  })}</>;
+}
+
 function Compare({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'compare' }> }) {
   const count = Math.max(...[spec.left, spec.right].map((c) => c.lines.flatMap((l) => wrap(l, 28)).length));
   const card = (x: number, gold: boolean, c: { title: string; lines: string[] }) => <g>
@@ -267,6 +356,8 @@ export default function StoryPicture({ spec }: { spec: StoryPictureSpec }) {
       case 'sticks': return <Sticks spec={spec} />;
       case 'bars': return <Bars spec={spec} />;
       case 'compare': return <Compare spec={spec} />;
+      case 'plot': return <Plot spec={spec} />;
+      case 'draw': return <Draw spec={spec} />;
     }
   })();
   // Crop each picture to the part that has content, so that no picture has a large empty band.
@@ -283,6 +374,7 @@ export default function StoryPicture({ spec }: { spec: StoryPictureSpec }) {
       case 'area': { const size = Math.min(40, 220 / Math.max(spec.rows, spec.cols)); return [25, size * spec.rows + (spec.label ? 60 : 30)]; }
       case 'fraction': { const h = Math.min(44, 220 / spec.rows.length); return [25, spec.rows.length * (h + 14) + 20]; }
       case 'bars': return [25, 260];
+      case 'draw': return [0, spec.h ?? 300];
       default: return [0, 300];
     }
   })();

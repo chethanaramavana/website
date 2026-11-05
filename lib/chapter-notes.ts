@@ -2,6 +2,7 @@ import type { StoryPictureSpec } from '@/app/notes/story-picture';
 import { grade6Notes } from './grade6-notes';
 import { icse6Notes } from './icse6-notes';
 import { icseUpperNotes } from './icse-upper-papers';
+import cbse10Details from './cbse10-notes-detail.json';
 import { grade11Notes } from './grade11-notes';
 import { grade12Notes } from './grade12-notes';
 
@@ -264,7 +265,11 @@ export const chapterNotesBySlug: Record<string, ChapterNotes> = Object.fromEntri
   ...grade12Notes,
   ...icse6Notes,
   ...icseUpperNotes,
-].map((item) => [item.slug, item]));
+].map((item) => {
+  // CBSE Grade 10: detailed story notes (lessons, pictures, solved board questions) replace the short notes.
+  const detail = (cbse10Details as Record<string, Partial<ChapterNotes>>)[item.slug];
+  return [item.slug, detail && (item.grade ?? 10) === 10 && (item.board ?? 'CBSE') === 'CBSE' ? { ...item, ...detail } : item];
+}));
 
 export function getChapterNotes(slug: string) {
   return chapterNotesBySlug[slug] ?? null;

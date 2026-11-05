@@ -5,6 +5,7 @@ import { icseUpperAdditionalPaperIds, icseUpperPaperDefinitions } from './icse-u
 import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 import { relationsTestDefinition } from './relations-test-definition';
+import { fixPaperDefinition } from './paper-fixes';
 import { isThirtyMarkPaper } from './paper-format';
 
 export type QuestionSource = string;
@@ -135,7 +136,7 @@ const basePaperDefinitions: Record<string, PaperDefinition> = {
   },
 };
 
-export const paperDefinitions: Record<string, PaperDefinition> = {
+const unfixedPaperDefinitions: Record<string, PaperDefinition> = {
   ...basePaperDefinitions,
   ...additionalPaperDefinitions,
   ...grade6PaperDefinitions,
@@ -144,6 +145,10 @@ export const paperDefinitions: Record<string, PaperDefinition> = {
   ...icse6PaperDefinitions,
   ...icseUpperPaperDefinitions,
 };
+
+export const paperDefinitions: Record<string, PaperDefinition> = Object.fromEntries(
+  Object.entries(unfixedPaperDefinitions).map(([key, paper]) => [key, fixPaperDefinition(paper)]),
+);
 
 export const paperDefinitionsById = Object.fromEntries(
   [...Object.values(paperDefinitions), relationsTestDefinition].map((paper) => [paper.id, paper]),
