@@ -1,7 +1,7 @@
 import { additionalPaperDefinitions } from './papers-additional';
 import { grade6PaperDefinitions } from './grade6-papers';
 import { icse6PaperDefinitions } from './icse6-papers';
-import { icseUpperPaperDefinitions } from './icse-upper-papers';
+import { icseUpperAdditionalPaperIds, icseUpperPaperDefinitions } from './icse-upper-papers';
 import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 import { relationsTestDefinition } from './relations-test-definition';
@@ -150,7 +150,7 @@ export const paperDefinitionsById = Object.fromEntries(
 ) as Record<string, PaperDefinition>;
 
 // Additional numbered papers for a chapter that already has a main paper (for example Paper 02).
-export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02']);
+export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02', ...icseUpperAdditionalPaperIds]);
 
 export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE', paperNumber?: string) {
   return Object.values(paperDefinitionsById).find(

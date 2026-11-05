@@ -68,7 +68,7 @@
     "18": "Using each of the digits 3, 0, 7, 5, 1 and 9 once, write the largest and the smallest 6-digit numbers.",
     "19": "Estimate 4,876 × 312 by rounding each number to its greatest place. Then find the exact product.",
     "20": "City A has a population of 28,45,600 and City B has 31,09,750. Which city has more people, and by how many? Write the difference in words.",
-    "21": "(a) How many lakhs make 3 crore? (b) How many thousands make 5 lakh? (c) How many millions make 2 crore?",
+    "21": "(a) Round 4,56,789 to the nearest thousand and to the nearest lakh. (b) Estimate 6,825 + 3,198 by rounding each number to the nearest hundred, then find the exact sum.",
     "22": "A school collects ₹1,250 from each of its 1,836 students. Find the total amount and write it in words in the Indian system.",
     "23": [
      "A factory makes 45,000 bottles every day.",
@@ -96,7 +96,7 @@
     "18": "Largest = 9,75,310. Smallest = 1,03,579 (0 cannot be the first digit).",
     "19": "Estimate: 5,000 × 300 = 15,00,000. Exact: 4,876 × 312 = 15,21,312.",
     "20": "City B. 31,09,750 − 28,45,600 = 2,64,150, that is, two lakh sixty-four thousand one hundred fifty.",
-    "21": "(a) 300 lakh (1 crore = 100 lakh). (b) 500 thousand (1 lakh = 100 thousand). (c) 20 million (1 crore = 10 million).",
+    "21": "(a) Nearest thousand: 4,57,000 (hundreds digit 7 ≥ 5). Nearest lakh: 5,00,000 (ten-thousands digit 5 ≥ 5). (b) Estimate 6,800 + 3,200 = 10,000. Exact: 10,023.",
     "22": "1,250 × 1,836 = ₹22,95,000, that is, twenty-two lakh ninety-five thousand rupees.",
     "23": "(a) 45,000 × 30 = 13,50,000 bottles. (b) 13,50,000 ÷ 24 = 56,250 boxes. (c) 1,350,000: one million three hundred fifty thousand.",
     "24": "(a) One lakh thirty-two thousand. (b) 1,32,000 × 250 = ₹3,30,00,000 = ₹3 crore 30 lakh. (c) Total = 85,000 + 1,32,000 = 2,17,000. Two full days = 2,64,000, so 47,000 fewer people."
@@ -144,12 +144,12 @@
     },
     {
      "number": 4,
-     "question": "8 × 99 is the same as",
+     "question": "In 40 − 15 + 8, the 15 is changed to 18. The new value is",
      "options": [
-      "8 × 100 + 8",
-      "8 + 100 − 1",
-      "800 − 1",
-      "8 × 100 − 8"
+      "36",
+      "33",
+      "38",
+      "30"
      ]
     }
    ],
@@ -168,7 +168,7 @@
    "written": {
     "17": "Find the value of 48 − 6 × 4 + 10.",
     "18": "Put brackets in 5 + 3 × 4 − 2 so that its value is 30.",
-    "19": "Without calculating, say which is greater: 237 − 85 or 237 − 95. Give a reason.",
+    "19": "Without calculating, compare and give reasons: (a) 1,023 + 1,034 and 1,022 + 1,035, (b) 63 × 4 and 64 × 3.",
     "20": "Remove the brackets and simplify: 120 − (45 − 15) + (30 − 8).",
     "21": "Use the distributive property to find (a) 25 × 48 + 25 × 52, (b) 97 × 15.",
     "22": "Ravi buys 4 notebooks at ₹35 each and 3 pens at ₹12 each. He pays with a ₹200 note. Write one expression for his change and find it.",
@@ -196,7 +196,7 @@
    "solutions": {
     "17": "Multiply first: 48 − 24 + 10 = 34.",
     "18": "(5 + 3) × 4 − 2 = 32 − 2 = 30.",
-    "19": "237 − 85 is greater, because we subtract a smaller number from the same number.",
+    "19": "(a) Equal: the first number goes down by 1 and the second goes up by 1. (b) 63 × 4 = 63 × 3 + 63 and 64 × 3 = 63 × 3 + 3, so 63 × 4 is greater (252 > 192).",
     "20": "120 − 45 + 15 + 30 − 8 = 112.",
     "21": "(a) 25 × (48 + 52) = 25 × 100 = 2,500. (b) (100 − 3) × 15 = 1,500 − 45 = 1,455.",
     "22": "200 − (4 × 35 + 3 × 12) = 200 − (140 + 36) = 200 − 176 = ₹24.",
@@ -268,11 +268,11 @@
     }
    ],
    "written": {
-    "17": "Write as decimals: (a) 5 + 3/10 + 4/100, (b) 27/100.",
+    "17": "(a) Write 3/4 and 2/25 as decimals. (b) Which is closer to 4: 3.92 or 4.1?",
     "18": "Arrange in ascending order: 2.05, 2.5, 2.005, 2.55.",
     "19": "Convert: (a) 3 kg 250 g into kg, (b) ₹45 and 5 paise into rupees.",
     "20": "Find 12.75 + 3.6 − 5.08.",
-    "21": "Mark 0.3 and 0.75 on a number line. Find the number halfway between them.",
+    "21": "(a) Write the next two terms: 1.25, 1.5, 1.75, … and 6.4, 6.1, 5.8, … (b) Estimate 18.7 + 9.4 − 6.95 to the nearest whole number, then find the exact value.",
     "22": "Riya ran 2.45 km on Monday and 3.8 km on Tuesday. How much more did she run on Tuesday? What is the total distance?",
     "23": [
      "Sana buys a bag for ₹125.50, a book for ₹48.75 and shoes for ₹210.25. She pays with a ₹500 note.",
@@ -296,11 +296,11 @@
     2
    ],
    "solutions": {
-    "17": "(a) 5.34 (b) 0.27",
+    "17": "(a) 3/4 = 75/100 = 0.75; 2/25 = 8/100 = 0.08. (b) 3.92 is 0.08 from 4 and 4.1 is 0.1 from 4, so 3.92 is closer.",
     "18": "2.005, 2.05, 2.5, 2.55",
     "19": "(a) 3.25 kg (250 g = 0.25 kg) (b) ₹45.05 (5 paise = ₹0.05)",
     "20": "12.75 + 3.60 = 16.35; 16.35 − 5.08 = 11.27.",
-    "21": "Halfway = (0.3 + 0.75) ÷ 2 = 1.05 ÷ 2 = 0.525.",
+    "21": "(a) +0.25: 2, 2.25. −0.3: 5.5, 5.2. (b) Estimate 19 + 9 − 7 = 21. Exact: 18.70 + 9.40 = 28.10; 28.10 − 6.95 = 21.15.",
     "22": "3.80 − 2.45 = 1.35 km more. Total = 2.45 + 3.80 = 6.25 km.",
     "23": "(a) 125.50 + 48.75 + 210.25 = ₹384.50. (b) 500 − 384.50 = ₹115.50. (c) Yes. 115.50 − 99.90 = ₹15.60 is left.",
     "24": "(a) 1.25 + 0.80 + 1.60 = 3.65 m. (b) 5.00 − 3.65 = 1.35 m. (c) 0.45 + 0.45 + 0.45 = 1.35, so 3 pieces, and nothing is left."
@@ -371,11 +371,11 @@
    ],
    "written": {
     "17": "Write expressions: (a) 7 less than y, (b) the cost of p pens at ₹12 each.",
-    "18": "Find the value of 5a − 2b when a = 4 and b = 3.",
+    "18": "Write in short form: (a) 4 × a × b, (b) y × y × 5. (c) Find 3ab when a = 2 and b = 5.",
     "19": "Simplify 6p + 4q − 2p + q.",
     "20": "A row of squares is made with matchsticks: 1 square uses 4 sticks, 2 squares use 7, 3 squares use 10. Write a rule for n squares and find the sticks for 15 squares.",
     "21": "Simplify 3(2x − 5) − 2(x − 4), and find its value when x = 5.",
-    "22": "A rectangle has length (2a + 3) cm and breadth (a − 1) cm. Write its perimeter in simplest form and find it when a = 4.",
+    "22": "Simplify (5x − 3y + 2) − (2x − 4y − 6), and find its value when x = 2 and y = 1.",
     "23": [
      "Meera is m years old. Her brother is 3 years older than her. Her mother's age is 2 years less than 4 times Meera's age.",
      "(a) Write the brother's and the mother's ages.",
@@ -399,11 +399,11 @@
    ],
    "solutions": {
     "17": "(a) y − 7 (b) 12p",
-    "18": "5 × 4 − 2 × 3 = 20 − 6 = 14.",
+    "18": "(a) 4ab. (b) 5y². (c) 3 × 2 × 5 = 30.",
     "19": "(6p − 2p) + (4q + q) = 4p + 5q.",
     "20": "Each new square adds 3 sticks: 3n + 1. For 15 squares: 46 sticks.",
     "21": "6x − 15 − 2x + 8 = 4x − 7. At x = 5: 20 − 7 = 13.",
-    "22": "2[(2a + 3) + (a − 1)] = 2(3a + 2) = 6a + 4. At a = 4: 28 cm.",
+    "22": "5x − 3y + 2 − 2x + 4y + 6 = 3x + y + 8. At x = 2, y = 1: 6 + 1 + 8 = 15.",
     "23": "(a) Brother: m + 3. Mother: 4m − 2. (b) m + (m + 3) + (4m − 2) = 6m + 1. (c) 6 × 9 + 1 = 55 years.",
     "24": "(a) ₹30 and 30 + 4 × 15 = ₹90. (b) 30 + 15(d − 1) = 15d + 15. (c) 15 × 12 + 15 = ₹195. 15d + 15 = 240 gives d = 15 km."
    }
@@ -420,12 +420,12 @@
    "mcqs": [
     {
      "number": 1,
-     "question": "Vertically opposite angles are",
+     "question": "Two lines that are both perpendicular to the same line are",
      "options": [
-      "supplementary",
-      "equal",
-      "complementary",
-      "always 90°"
+      "intersecting",
+      "parallel",
+      "perpendicular to each other",
+      "the same line"
      ]
     },
     {
@@ -474,7 +474,7 @@
    "written": {
     "17": "Two lines intersect, and one of the angles is 48°. Find the other three angles.",
     "18": "A transversal cuts two parallel lines l and m. One angle at l is 110°. Find its corresponding angle at m and the co-interior angle.",
-    "19": "Interior angles on the same side of a transversal are 75° and 105°. Are the lines parallel? Give a reason.",
+    "19": "Describe how to draw a line through a point P parallel to a line l using a ruler and a set square. Which angle fact makes the lines parallel?",
     "20": "Angles x and (2x + 30)° form a linear pair. Find both angles.",
     "21": "Lines l ∥ m. Alternate interior angles are (3y − 10)° and (2y + 25)°. Find y and the angle.",
     "22": "Draw a triangle ABC and a line through A parallel to BC. Use alternate angles to show that ∠A + ∠B + ∠C = 180°.",
@@ -503,7 +503,7 @@
    "solutions": {
     "17": "48° (vertically opposite) and 132°, 132° (linear pairs).",
     "18": "Corresponding angle = 110°. Co-interior angle = 180° − 110° = 70°.",
-    "19": "Yes. 75° + 105° = 180°, so the co-interior angles are supplementary and the lines are parallel.",
+    "19": "Place one edge of the set square along l and a ruler against its other edge. Hold the ruler still and slide the set square until its edge passes through P; draw the line. Each position makes equal corresponding angles with the ruler, so the lines are parallel.",
     "20": "x + 2x + 30 = 180, so x = 50. The angles are 50° and 130°.",
     "21": "3y − 10 = 2y + 25, so y = 35. The angle = 95°.",
     "22": "Draw DE through A parallel to BC. ∠DAB = ∠B and ∠EAC = ∠C (alternate angles). ∠DAB + ∠A + ∠EAC = 180° (straight line). So ∠A + ∠B + ∠C = 180°.",

@@ -65,7 +65,7 @@
    ],
    "written": {
     "17": "Write 84 and 90 as products of primes, and find their HCF.",
-    "18": "Find the LCM of 15, 20 and 25.",
+    "18": "Without long working, write the HCF and LCM of (a) 17 and 18, (b) 12 and 36. Give a reason.",
     "19": "The HCF of 24 and x is 6 and their LCM is 120. Find x.",
     "20": "A room is 360 cm by 600 cm. Find the side of the largest square tile that covers the floor exactly, and the number of tiles.",
     "21": "Three bells ring every 12, 15 and 20 minutes. They ring together at 8:00 a.m. When will they next ring together?",
@@ -93,7 +93,7 @@
    ],
    "solutions": {
     "17": "84 = 2² × 3 × 7 and 90 = 2 × 3² × 5. HCF = 2 × 3 = 6.",
-    "18": "15 = 3 × 5, 20 = 2² × 5, 25 = 5². LCM = 2² × 3 × 5² = 300.",
+    "18": "(a) Consecutive numbers: HCF = 1, LCM = 17 × 18 = 306. (b) 12 divides 36: HCF = 12, LCM = 36.",
     "19": "HCF × LCM = product: 6 × 120 = 24 × x, so x = 30.",
     "20": "HCF(360, 600) = 120 cm. Tiles = (360 ÷ 120) × (600 ÷ 120) = 3 × 5 = 15.",
     "21": "LCM(12, 15, 20) = 60 minutes. At 9:00 a.m.",
@@ -124,12 +124,12 @@
     },
     {
      "number": 2,
-     "question": "4.8 ÷ 0.6 equals",
+     "question": "7 ÷ 4 equals",
      "options": [
-      "8",
-      "0.8",
-      "80",
-      "2.88"
+      "1.75",
+      "1.3",
+      "1.43",
+      "17.5"
      ]
     },
     {
@@ -166,7 +166,7 @@
     }
    ],
    "written": {
-    "17": "Find 2.35 × 1.4.",
+    "17": "Without calculating, say whether each answer is more or less than 24: (a) 24 × 0.8, (b) 24 ÷ 0.8. Then find both.",
     "18": "Find 7.56 ÷ 1.8.",
     "19": "Write as decimals: (a) 7/20, (b) 5/11.",
     "20": "Petrol costs ₹102.50 per litre. Find the cost of 12.4 litres.",
@@ -194,7 +194,7 @@
     3
    ],
    "solutions": {
-    "17": "235 × 14 = 3,290; 3 decimal places → 3.290 = 3.29.",
+    "17": "(a) Less, because 0.8 < 1: 19.2. (b) More, because dividing by a number less than 1 gives more: 240 ÷ 8 = 30.",
     "18": "7.56 ÷ 1.8 = 75.6 ÷ 18 = 4.2.",
     "19": "(a) 7/20 = 35/100 = 0.35. (b) 5/11 = 0.4545… = 0.45 repeating.",
     "20": "102.50 × 12.4 = ₹1,271.",
@@ -318,12 +318,12 @@
    "mcqs": [
     {
      "number": 1,
-     "question": "The tool used to draw arcs is the",
+     "question": "Bisecting an angle of 120° gives an angle of",
      "options": [
-      "protractor",
-      "compass",
-      "set square",
-      "eraser"
+      "30°",
+      "60°",
+      "90°",
+      "240°"
      ]
     },
     {
@@ -372,7 +372,7 @@
    "written": {
     "17": "Draw AB = 8 cm. Construct its perpendicular bisector. Write the steps.",
     "18": "Construct an angle of 60°, and bisect it to get 30°.",
-    "19": "Explain why equilateral triangles can tile a floor.",
+    "19": "Write the steps to copy a given angle ∠ABC at a point P on a ray, using a ruler and compasses. Which congruence condition shows that the angles are equal?",
     "20": "Draw a line l and a point P not on it. Construct a line through P parallel to l. Write the steps.",
     "21": "Find the interior angle of a regular octagon. Can regular octagons alone tile a floor? Explain.",
     "22": "Construct a 90° angle at a point on a line, and bisect it to get 45°.",
@@ -400,7 +400,7 @@
    "solutions": {
     "17": "With centre A and radius more than 4 cm, draw arcs above and below AB. Repeat from B with the same radius. Join the two crossing points.",
     "18": "Draw a ray OA. With centre O, draw an arc to cut OA at P. With centre P and the same radius, cut the arc at Q. ∠QOP = 60°. Bisect it: arcs from P and Q meet at R; OR gives 30°.",
-    "19": "Each angle is 60°, and 6 × 60° = 360°, so six triangles fit round a point with no gap.",
+    "19": "With centre B, draw an arc cutting BA at D and BC at E. With the same radius and centre P, draw an arc cutting the ray at Q. Set the compasses to DE and, from Q, cut the arc at R. Join PR. ∠RPQ = ∠ABC because the two triangles are congruent by SSS.",
     "20": "Draw a line through P that cuts l at Q. Copy the angle at Q at point P in the corresponding position. The new line is parallel to l (corresponding angles are equal).",
     "21": "180° × (8 − 2) ÷ 8 = 135°. 360 ÷ 135 is not a whole number, so octagons alone cannot tile.",
     "22": "Draw a semicircle arc on the line at the point, mark 60° and 120° arcs, and bisect between them to get 90°. Then bisect the 90° angle to get 45°.",
@@ -420,12 +420,12 @@
    "mcqs": [
     {
      "number": 1,
-     "question": "The solution of x + 7 = 15 is",
+     "question": "A row of squares needs 3n + 1 matchsticks for n squares. How many squares use 31 matchsticks?",
      "options": [
-      "22",
       "8",
-      "7",
-      "15"
+      "10",
+      "11",
+      "31"
      ]
     },
     {
@@ -473,7 +473,7 @@
    ],
    "written": {
     "17": "Solve 3x + 4 = 25.",
-    "18": "Solve 5(y − 2) = 30.",
+    "18": "Use the rule x = (c − b) ÷ a for ax + b = c to solve 6x − 5 = 31. Check your answer.",
     "19": "A number is doubled and then increased by 9. The result is 35. Form an equation and find the number.",
     "20": "Solve 4x − 7 = 2x + 9.",
     "21": "The perimeter of a rectangle is 54 cm. Its length is 3 cm more than its breadth. Find the length and the breadth.",
@@ -501,7 +501,7 @@
    ],
    "solutions": {
     "17": "3x = 21, so x = 7.",
-    "18": "y − 2 = 6, so y = 8.",
+    "18": "a = 6, b = −5, c = 31: x = (31 + 5) ÷ 6 = 6. Check: 6 × 6 − 5 = 31. ✓",
     "19": "2n + 9 = 35, so 2n = 26 and n = 13.",
     "20": "2x = 16, so x = 8.",
     "21": "2(b + 3 + b) = 54, so 4b + 6 = 54 and b = 12. Length = 15 cm.",

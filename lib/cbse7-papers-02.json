@@ -1,0 +1,1535 @@
+{
+ "papers": [
+  {
+   "id": "g7-large-numbers-02",
+   "chapter": "Large Numbers Around Us",
+   "chapterNumber": 1,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A calculator has only the keys +1,000 and +100. The fewest presses to show 7,300 from 0 are",
+     "options": [
+      "73",
+      "10",
+      "8",
+      "17"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The best estimate of 49,612 × 198 is",
+     "options": [
+      "1,00,00,000",
+      "10,00,000",
+      "1,00,000",
+      "1,00,00,00,000"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The number of seconds in one day is",
+     "options": [
+      "8,640",
+      "24,000",
+      "86,400",
+      "3,600"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The number of zeros at the end of 25 × 40 × 500 is",
+     "options": [
+      "3",
+      "4",
+      "6",
+      "5"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "50 × 60 = 300.",
+     "reason": "5 × 6 = 30."
+    },
+    {
+     "number": 6,
+     "assertion": "300 × 5,000 = 15,00,000.",
+     "reason": "To multiply numbers ending in zeros, multiply the non-zero parts and then write all the zeros."
+    }
+   ],
+   "written": {
+    "17": "A calculator has the keys +1,00,000, +10,000, +1,000, +100, +10 and +1. Find the fewest presses to show 3,40,526 from 0. Which key is not used?",
+    "18": "If you count one number every second without stopping, about how many days will you take to count to 1 crore? Round to the nearest day.",
+    "19": "Find the two lakh neighbours of 7,63,250 and say which one is closer.",
+    "20": "A stadium has 1,32,000 seats. A city has 1 crore 32 lakh people. How many such stadiums would hold all the people of the city?",
+    "21": "Find without long multiplication: (a) 125 × 8 × 300, (b) 25 × 36 × 4.",
+    "22": "Using the digits 4, 0, 8, 2, 6 and 1 once each, write the 6-digit number that is closest to 5,00,000. Explain.",
+    "23": [
+     "A state has 6,85,42,000 people.",
+     "(a) Write the number in words in the Indian and the international systems.",
+     "(b) Round it to the nearest crore and to the nearest lakh.",
+     "(c) Each person uses about 135 litres of water a day. Use the population rounded to the nearest crore to estimate the daily water use."
+    ],
+    "24": [
+     "(a) Estimate the total number of pages by rounding each number to its greatest place. [1]",
+     "(b) Find the exact number of pages. [1]",
+     "(c) Why is the estimate in (a) far from the exact answer? Give a better estimate. [2]"
+    ]
+   },
+   "caseStudy": "A school library has 12,450 books. Each book has about 240 pages.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "3 + 4 + 0 + 5 + 2 + 6 = 20 presses. The +1,000 key is not used (the thousands digit is 0).",
+    "18": "1 day = 86,400 seconds. 1,00,00,000 ÷ 86,400 ≈ 115.7, so about 116 days.",
+    "19": "7,00,000 and 8,00,000. 8,00,000 − 7,63,250 = 36,750 and 7,63,250 − 7,00,000 = 63,250, so 8,00,000 is closer.",
+    "20": "1,32,00,000 ÷ 1,32,000 = 100 stadiums.",
+    "21": "(a) 125 × 8 = 1,000, so 1,000 × 300 = 3,00,000. (b) 25 × 4 = 100, so 100 × 36 = 3,600.",
+    "22": "Below 5,00,000 the largest is 4,86,210 (distance 13,790). Above it the smallest is 6,01,248 (distance 1,01,248). So 4,86,210 is closest.",
+    "23": "(a) Six crore eighty-five lakh forty-two thousand; 68,542,000 = sixty-eight million five hundred forty-two thousand. (b) 7 crore; 6,85,00,000 (the ten-thousands digit 4 is less than 5). (c) 7,00,00,000 × 135 = 945,00,00,000 litres, that is, about 945 crore litres a day.",
+    "24": "(a) 10,000 × 200 = 20,00,000. (b) 12,450 × 240 = 29,88,000. (c) Both numbers were rounded down a lot (12,450 → 10,000 and 240 → 200). Rounding 12,450 to 12,000 and keeping 240 gives 28,80,000, which is much closer."
+   }
+  },
+  {
+   "id": "g7-arithmetic-expressions-02",
+   "chapter": "Arithmetic Expressions",
+   "chapterNumber": 2,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which expression has the greatest value?",
+     "options": [
+      "(8 + 2) × 5",
+      "8 + 2 × 5",
+      "8 × 2 + 5",
+      "8 × (2 + 5)"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Without calculating, 999 + 1,001 equals",
+     "options": [
+      "2,000",
+      "1,999",
+      "2,001",
+      "1,000"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In 50 − (20 − x), if x increases by 3, the value",
+     "options": [
+      "decreases by 3",
+      "stays the same",
+      "increases by 3",
+      "increases by 6"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "14 × 101 is equal to",
+     "options": [
+      "1,400 + 1",
+      "14 + 101",
+      "1,400 + 14",
+      "1,414 + 14"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "36 − 15 + 15 = 36.",
+     "reason": "Subtraction of whole numbers is not commutative."
+    },
+    {
+     "number": 6,
+     "assertion": "(100 ÷ 10) ÷ 2 = 100 ÷ (10 ÷ 2).",
+     "reason": "Division is not associative."
+    }
+   ],
+   "written": {
+    "17": "Insert brackets to make each statement true: (a) 6 + 4 × 3 − 1 = 29, (b) 6 + 4 × 3 − 1 = 14.",
+    "18": "Without calculating, which is greater: 2,345 − 678 or 2,346 − 679? Explain.",
+    "19": "In 75 − 18 + 26 = 83, the 18 is changed to 21 and the 26 is changed to 30. Find the new value without calculating from the start.",
+    "20": "Use properties to find: (a) 125 × 37 × 8, (b) 49 × 101, (c) 236 + 499 + 64.",
+    "21": "Write a short story for the expression 500 − (3 × 45 + 2 × 60) and find its value.",
+    "22": "Simplify 360 − [48 + (72 − 30) − 15].",
+    "23": [
+     "Meena has ₹1,000. She buys 3 books at ₹125 each and 4 pens at ₹35 each. Ravi buys 2 books and 6 pens at the same prices.",
+     "(a) Write one expression for Meena's change and find it.",
+     "(b) Write one expression for how much more Meena spends than Ravi, and simplify it using terms.",
+     "(c) If every book becomes ₹5 cheaper, how much does Meena save?"
+    ],
+    "24": [
+     "(a) Write one expression for the number of passengers after stop 2 and find it. [1]",
+     "(b) Show how swapping and grouping the terms makes the calculation easy. [1]",
+     "(c) At stop 3, x people get off and 10 get on. Find x if there are then exactly 50 passengers. [2]"
+    ]
+   },
+   "caseStudy": "A bus starts with 42 passengers. At stop 1, 15 get off and 9 get on. At stop 2, 12 get off and 20 get on.",
+   "answerKey": [
+    3,
+    0,
+    2,
+    2,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "(a) (6 + 4) × 3 − 1 = 29. (b) 6 + 4 × (3 − 1) = 14.",
+    "18": "They are equal: both numbers went up by 1, so the difference does not change (1,667).",
+    "19": "−18 → −21 lowers the value by 3; +26 → +30 raises it by 4. New value = 83 − 3 + 4 = 84.",
+    "20": "(a) (125 × 8) × 37 = 37,000. (b) 49 × 100 + 49 = 4,949. (c) (236 + 64) + 499 = 799.",
+    "21": "Example: Asha has ₹500 and buys 3 books at ₹45 and 2 bags at ₹60. Value = 500 − (135 + 120) = 245, so ₹245 is left.",
+    "22": "72 − 30 = 42; 48 + 42 − 15 = 75; 360 − 75 = 285.",
+    "23": "(a) 1,000 − (3 × 125 + 4 × 35) = 1,000 − 515 = ₹485. (b) (3 × 125 + 4 × 35) − (2 × 125 + 6 × 35) = 125 − 2 × 35 = ₹55. (c) 3 × 5 = ₹15.",
+    "24": "(a) 42 − 15 + 9 − 12 + 20 = 44. (b) (42 + 9 + 20) − (15 + 12) = 71 − 27 = 44. (c) 44 − x + 10 = 50, so x = 4."
+   }
+  },
+  {
+   "id": "g7-decimals-intro-02",
+   "chapter": "A Peek Beyond the Point",
+   "chapterNumber": 3,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which decimal is closest to 2?",
+     "options": [
+      "1.9",
+      "2.08",
+      "2.15",
+      "1.85"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The next term of 0.15, 0.3, 0.45, … is",
+     "options": [
+      "0.5",
+      "0.55",
+      "0.6",
+      "0.65"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "3/8 written as a decimal is",
+     "options": [
+      "0.38",
+      "0.375",
+      "3.8",
+      "0.83"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The best estimate of 9.85 + 4.12 is",
+     "options": [
+      "13",
+      "15",
+      "15.5",
+      "14"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "2.1 < 2.09.",
+     "reason": "2.10 = 2.1."
+    },
+    {
+     "number": 6,
+     "assertion": "0.5 = 1/2.",
+     "reason": "0.5 means 5 tenths, and 5/10 = 1/2."
+    }
+   ],
+   "written": {
+    "17": "Write two decimals between 3.4 and 3.5.",
+    "18": "The part of a number line from 6 to 7 is divided into 10 equal parts. Which mark shows 6.7? Which decimal is exactly halfway between 6.7 and 6.8?",
+    "19": "Write the place value of 5 in (a) 3.056, (b) 50.6.",
+    "20": "Arrange in descending order: 3.2 m, 325 cm, 3 m 5 cm, 3.09 m.",
+    "21": "Find the missing digits: 4.□7 + 2.5□ = 7.33.",
+    "22": "A sequence starts at 10 and subtracts 0.35 each time. Find the 5th term, and the first term that is less than 8.",
+    "23": [
+     "Ravi's family travels 12.75 km by car, 48.6 km by train and 1.85 km on foot.",
+     "(a) Find the total distance.",
+     "(b) Estimate the total by rounding each distance to a whole number, and compare.",
+     "(c) How much farther do they travel by train than by car and on foot together?"
+    ],
+    "24": [
+     "(a) Find the cost of 2 kg of rice. [1]",
+     "(b) Find the cost of 2 kg of rice and 1 kg of dal. [1]",
+     "(c) Find Asha's change. Can she buy one more kg of dal with it? [2]"
+    ]
+   },
+   "caseStudy": "Rice costs ₹56.75 per kg and dal costs ₹112.40 per kg. Asha has ₹500.",
+   "answerKey": [
+    1,
+    2,
+    1,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "For example 3.42 and 3.45 (any decimals between 3.40 and 3.50).",
+    "18": "The 7th mark after 6. Halfway = (6.7 + 6.8) ÷ 2 = 6.75.",
+    "19": "(a) 5 hundredths = 0.05. (b) 5 tens = 50.",
+    "20": "In metres: 3.25, 3.2, 3.09, 3.05. So 325 cm, 3.2 m, 3.09 m, 3 m 5 cm.",
+    "21": "Hundredths: 7 + □ ends in 3, so □ = 6 (carry 1). Tenths: □ + 5 + 1 ends in 3, so □ = 7 (carry 1). Ones: 4 + 2 + 1 = 7. So 4.77 + 2.56 = 7.33.",
+    "22": "10, 9.65, 9.3, 8.95, 8.6 (5th term), 8.25, 7.9. The first term less than 8 is 7.9 (the 7th term).",
+    "23": "(a) 12.75 + 48.60 + 1.85 = 63.2 km. (b) 13 + 49 + 2 = 64 km, close to 63.2. (c) Car and foot = 14.6 km; 48.6 − 14.6 = 34 km.",
+    "24": "(a) 2 × 56.75 = ₹113.50. (b) 113.50 + 112.40 = ₹225.90. (c) 500 − 225.90 = ₹274.10. Yes: 274.10 − 112.40 = ₹161.70 is left."
+   }
+  },
+  {
+   "id": "g7-letter-numbers-02",
+   "chapter": "Expressions using Letter-Numbers",
+   "chapterNumber": 4,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The sum of two consecutive numbers, the smaller being n, is",
+     "options": [
+      "2n",
+      "n + 1",
+      "2n + 1",
+      "n² + 1"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If a = 3 and b = −2, then a² + ab equals",
+     "options": [
+      "3",
+      "15",
+      "−3",
+      "9"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The coefficient of x in 7 − 4x is",
+     "options": [
+      "7",
+      "4",
+      "−4",
+      "x"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "3(2p − q) − (p − 3q) simplifies to",
+     "options": [
+      "5p − 6q",
+      "5p",
+      "7p",
+      "5p + 6q"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "For every whole number n, 2n + 1 is odd.",
+     "reason": "2n is always even."
+    },
+    {
+     "number": 6,
+     "assertion": "x + x + x = 3x.",
+     "reason": "x × x × x = 3x."
+    }
+   ],
+   "written": {
+    "17": "Matchstick triangles are made in a row: 1 triangle uses 3 sticks, 2 use 5, 3 use 7. Write the rule for n triangles and find the sticks for 25 triangles.",
+    "18": "Find the mistake and correct it: 5a − (2a − 3) = 3a − 3.",
+    "19": "Think of a number, add 7, double the result, subtract 14 and divide by 2. Use algebra to show that you always get your starting number.",
+    "20": "Show that the sum of any three consecutive odd numbers is a multiple of 3.",
+    "21": "A rectangle's length is 3 more than twice its breadth b. Write expressions for its perimeter and its area, and find both when b = 4.",
+    "22": "Simplify 4(3x − 2y) − 3(2x − 5y) + 2(x + y) and find its value when x = −1 and y = 2.",
+    "23": [
+     "A pattern of figures has 1, 5, 9, 13, … tiles.",
+     "(a) Write the rule for the number of tiles in figure n.",
+     "(b) How many tiles are in figure 20?",
+     "(c) Which figure has 101 tiles?"
+    ],
+    "24": [
+     "(a) Find the bill for 15 GB. [1]",
+     "(b) Write an expression for the bill for g GB, where g > 10. [1]",
+     "(c) Find the bill for 32 GB, and the data used if the bill is ₹249. [2]"
+    ]
+   },
+   "caseStudy": "A phone plan costs ₹199 per month for up to 10 GB, plus ₹2 for every GB above 10 GB.",
+   "answerKey": [
+    2,
+    0,
+    2,
+    1,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "Each new triangle adds 2 sticks: 2n + 1. For 25 triangles: 51 sticks.",
+    "18": "The minus sign must change both signs: 5a − 2a + 3 = 3a + 3.",
+    "19": "Let the number be n: ((n + 7) × 2 − 14) ÷ 2 = (2n + 14 − 14) ÷ 2 = n.",
+    "20": "Let the middle odd number be m: (m − 2) + m + (m + 2) = 3m, a multiple of 3.",
+    "21": "Length 2b + 3. Perimeter = 2(2b + 3 + b) = 6b + 6 = 30. Area = b(2b + 3) = 2b² + 3b = 44 (b = 4).",
+    "22": "12x − 8y − 6x + 15y + 2x + 2y = 8x + 9y. At x = −1, y = 2: −8 + 18 = 10.",
+    "23": "(a) Add 4 each time: 4n − 3. (b) 4 × 20 − 3 = 77. (c) 4n − 3 = 101, so n = 26.",
+    "24": "(a) 199 + 2 × 5 = ₹209. (b) 199 + 2(g − 10) = 2g + 179. (c) 2 × 32 + 179 = ₹243. 2g + 179 = 249 gives g = 35 GB."
+   }
+  },
+  {
+   "id": "g7-parallel-lines-02",
+   "chapter": "Parallel and Intersecting Lines",
+   "chapterNumber": 5,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A transversal cuts two parallel lines. One interior angle is 3 times its co-interior angle. The larger angle is",
+     "options": [
+      "45°",
+      "135°",
+      "60°",
+      "120°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The angle between two perpendicular lines is",
+     "options": [
+      "90°",
+      "180°",
+      "45°",
+      "0°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The two angles of a linear pair are equal. Each angle is",
+     "options": [
+      "45°",
+      "180°",
+      "90°",
+      "60°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Three lines meet at one point and make six equal angles. Each angle is",
+     "options": [
+      "30°",
+      "45°",
+      "90°",
+      "60°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The bisectors of a linear pair of angles meet at 60°.",
+     "reason": "The two angles of a linear pair add up to 180°."
+    },
+    {
+     "number": 6,
+     "assertion": "A line perpendicular to one of two parallel lines is also perpendicular to the other.",
+     "reason": "Corresponding angles are equal when lines are parallel."
+    }
+   ],
+   "written": {
+    "17": "Vertically opposite angles are (5x − 20)° and (3x + 16)°. Find x and the angle.",
+    "18": "Explain how to make two parallel creases by folding a sheet of paper.",
+    "19": "l ∥ m and p ∥ q. Where l meets p, one angle is 70°. Find the angle in the same position where m meets q. Give reasons.",
+    "20": "AB ∥ CD and E is a point between them. ∠ABE = 40° and ∠CDE = 35°, on the same side. Find ∠BED. (Hint: draw a line through E parallel to AB.)",
+    "21": "Two co-interior angles are in the ratio 4 : 5. Find them, and the alternate angle of the larger one.",
+    "22": "Lines l and m are cut by a transversal. Alternate angles are (2x + 15)° and (3x − 20)°. For which x are l and m parallel? Find the angles.",
+    "23": [
+     "Line t cuts parallel lines l and m. One angle at l is (4y + 10)°, and the co-interior angle at m is (2y + 50)°.",
+     "(a) Find y.",
+     "(b) Find both angles.",
+     "(c) What can you say about t and the lines l and m?"
+    ],
+    "24": [
+     "(a) Find the other angle that the rail makes with the same step. [1]",
+     "(b) Find the angle that the rail makes with the next step in the same position. Give the reason. [1]",
+     "(c) If the rail made 75° with one step and 78° with the next, would the steps be parallel? Why does this matter? [2]"
+    ]
+   },
+   "caseStudy": "A ladder has parallel steps. Each side rail makes an angle of 75° with every step.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "5x − 20 = 3x + 16, so x = 18. The angle is 70°.",
+    "18": "Fold a crease l. Then fold l onto itself at two different places. Both new creases are perpendicular to l, so they are parallel to each other.",
+    "19": "70° (corresponding angles for l ∥ m, then again for p ∥ q).",
+    "20": "The line through E parallel to AB (and CD) splits ∠BED: 40° + 35° = 75° (alternate angles).",
+    "21": "4x + 5x = 180, x = 20: 80° and 100°. The alternate angle of 100° is 100°.",
+    "22": "2x + 15 = 3x − 20, so x = 35. Each angle is 85°.",
+    "23": "(a) 4y + 10 + 2y + 50 = 180, so y = 20. (b) 90° and 90°. (c) t is perpendicular to both l and m.",
+    "24": "(a) 180° − 75° = 105° (linear pair). (b) 75°, corresponding angles (the steps are parallel). (c) No: corresponding angles are not equal. The steps would not be level, so the ladder would be unsafe."
+   }
+  },
+  {
+   "id": "g7-number-play-02",
+   "chapter": "Number Play",
+   "chapterNumber": 6,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which expression is always even for a natural number n?",
+     "options": [
+      "n + 1",
+      "2n + 1",
+      "n(n + 1)",
+      "n²"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The 12th Virahānka number in 1, 2, 3, 5, 8, … is",
+     "options": [
+      "144",
+      "233",
+      "377",
+      "89"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In a 3 × 3 magic square that uses 1 to 9, the centre number is",
+     "options": [
+      "1",
+      "9",
+      "5",
+      "15"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Every number of the 1-to-9 magic square is doubled. The new magic sum is",
+     "options": [
+      "17",
+      "45",
+      "15",
+      "30"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The Chautisa Yantra at Khajuraho has magic sum 34.",
+     "reason": "A 4 × 4 square has 16 cells."
+    },
+    {
+     "number": 6,
+     "assertion": "In a grid of different numbers, the smallest number can be a supercell.",
+     "reason": "A supercell is greater than all its neighbours."
+    }
+   ],
+   "written": {
+    "17": "List all the supercells (numbers greater than all neighbours left, right, above and below) in the grid: 8, 15, 4 / 21, 6, 19 / 3, 11, 2.",
+    "18": "Is n² + n + 1 odd or even for every natural number n? Explain.",
+    "19": "A, B and C are digits. A + A = B, B + A = C and A + B + C = 12. Find A, B and C.",
+    "20": "AB is a 2-digit number. AB + BA = 132, and A is 2 more than B. Find AB.",
+    "21": "How many different rhythms of 8 beats can be made with short syllables (1 beat) and long syllables (2 beats)? Show the pattern.",
+    "22": "Can you fill a 3 × 3 grid with odd numbers so that every row adds up to an even number? Explain using parity.",
+    "23": [
+     "A 3 × 3 magic square uses the numbers 1 to 9. Its top row is 4, 9, 2.",
+     "(a) Write the magic sum and the centre number.",
+     "(b) Complete the magic square.",
+     "(c) Subtract 5 from every number. Write the new square and its magic sum."
+    ],
+    "24": [
+     "(a) Can the frog reach stone 7 in exactly 3 jumps? [1]",
+     "(b) In how many different orders of jumps can it reach stone 7 in 3 jumps? [1]",
+     "(c) Can it reach stone 10 in exactly 3 jumps? Explain. [2]"
+    ]
+   },
+   "caseStudy": "A frog sits on stone 0 of a row of stones numbered 0, 1, 2, … Each jump takes it 2 or 3 stones forward.",
+   "answerKey": [
+    2,
+    1,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "15 (neighbours 8, 4, 6), 21 (8, 6, 3), 19 (4, 6, 2) and 11 (6, 3, 2).",
+    "18": "Always odd: n² + n = n(n + 1) is even (one of n, n + 1 is even), and even + 1 is odd.",
+    "19": "B = 2A and C = 3A, so 6A = 12. A = 2, B = 4, C = 6.",
+    "20": "AB + BA = 11(A + B) = 132, so A + B = 12. With A − B = 2: A = 7, B = 5. AB = 75.",
+    "21": "Counts for 1 to 8 beats: 1, 2, 3, 5, 8, 13, 21, 34 (each is the sum of the two before). So 34 rhythms.",
+    "22": "No. Three odd numbers always add up to an odd number, so a row of three odd numbers can never be even.",
+    "23": "(a) Magic sum 15, centre 5. (b) 4 9 2 / 3 5 7 / 8 1 6. (c) −1 4 −3 / −2 0 2 / 3 −4 1, with magic sum 0.",
+    "24": "(a) Yes: 2 + 2 + 3 = 7. (b) 3 orders: 2, 2, 3; 2, 3, 2; 3, 2, 2. (c) No. The longest 3 jumps reach only 3 + 3 + 3 = 9."
+   }
+  },
+  {
+   "id": "g7-triangles-02",
+   "chapter": "A Tale of Three Intersecting Lines",
+   "chapterNumber": 7,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Two angles of a triangle are 75° and 75°. The triangle is",
+     "options": [
+      "equilateral",
+      "isosceles",
+      "right-angled",
+      "scalene"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which set can be the angles of a triangle?",
+     "options": [
+      "35°, 55°, 90°",
+      "60°, 60°, 70°",
+      "100°, 50°, 40°",
+      "45°, 45°, 100°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "An exterior angle of an equilateral triangle is",
+     "options": [
+      "60°",
+      "90°",
+      "120°",
+      "180°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "In an obtuse triangle, the number of altitudes that lie outside the triangle is",
+     "options": [
+      "0",
+      "1",
+      "3",
+      "2"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "An exterior angle of a triangle is always greater than every interior angle.",
+     "reason": "An exterior angle equals the sum of the two interior opposite angles."
+    },
+    {
+     "number": 6,
+     "assertion": "A triangle can be constructed with angles 60° and 70° and the side 5 cm between them.",
+     "reason": "The two given angles add up to less than 180°."
+    }
+   ],
+   "written": {
+    "17": "Can a triangle have sides 2.5 cm, 3.5 cm and 6 cm? Explain.",
+    "18": "In ΔABC, ∠A = 2∠B and ∠C = 72°. Find ∠A and ∠B.",
+    "19": "In a right triangle, one acute angle is twice the other. Find all three angles.",
+    "20": "Construct ΔABC with AB = 6 cm, ∠A = 45° and ∠B = 60° (ASA). Measure ∠C and check it with the angle sum property.",
+    "21": "In an isosceles triangle, the exterior angle at a base vertex is 110°. Find all three interior angles.",
+    "22": "The sides of a triangle are x, x + 3 and 2x − 2 (in cm), and its perimeter is 25 cm. Find the sides and check the triangle inequality.",
+    "23": [
+     "In ΔPQR, side QR is extended to S. ∠PRS = 120° and ∠Q : ∠P = 1 : 3.",
+     "(a) Find ∠P and ∠Q.",
+     "(b) Find ∠PRQ.",
+     "(c) Name the type of triangle and its longest side."
+    ],
+    "24": [
+     "(a) Can CA be 18 km? Explain. [1]",
+     "(b) Between which values must CA lie? [1]",
+     "(c) If ∠B = 90° and ∠A : ∠C = 2 : 3, find ∠A and ∠C. [2]"
+    ]
+   },
+   "caseStudy": "Three towers A, B and C are joined by straight cables. AB = 5 km and BC = 12 km.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "No: 2.5 + 3.5 = 6, which is not greater than 6. The sides would lie flat.",
+    "18": "2∠B + ∠B + 72° = 180°, so ∠B = 36° and ∠A = 72°.",
+    "19": "x + 2x = 90°, so 30°, 60° and 90°.",
+    "20": "Draw AB = 6 cm; construct 45° at A and 60° at B; the arms meet at C. ∠C = 180° − 45° − 60° = 75°, which matches the measurement.",
+    "21": "Base angle = 180° − 110° = 70°, so both base angles are 70° and the top angle is 40°.",
+    "22": "x + x + 3 + 2x − 2 = 25, so x = 6. Sides 6, 9 and 10 cm; 6 + 9 = 15 > 10, so the triangle exists.",
+    "23": "(a) ∠P + ∠Q = 120° (exterior angle), with ∠Q : ∠P = 1 : 3: ∠Q = 30°, ∠P = 90°. (b) ∠PRQ = 180° − 120° = 60°. (c) Right-angled at P; the longest side is QR.",
+    "24": "(a) No: 5 + 12 = 17 < 18. (b) 12 − 5 < CA < 12 + 5, so 7 km < CA < 17 km. (c) ∠A + ∠C = 90°: ∠A = 36°, ∠C = 54°."
+   }
+  },
+  {
+   "id": "g7-working-with-fractions-02",
+   "chapter": "Working with Fractions",
+   "chapterNumber": 8,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Without calculating, which is greater than 12?",
+     "options": [
+      "12 × 3/4",
+      "12 × 9/8",
+      "12 × 1/2",
+      "12 × 1/12"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If A is 3/4 of B, then B is what fraction of A?",
+     "options": [
+      "4/3",
+      "3/4",
+      "1/4",
+      "7/4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "1/2 of 1/3 of 1/4 of 240 is",
+     "options": [
+      "20",
+      "40",
+      "10",
+      "5"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many 2/5 kg bags can be filled from 6 kg of sugar?",
+     "options": [
+      "12",
+      "2.4",
+      "10",
+      "15"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "4/5 × 3/7 = 3/7 × 4/5.",
+     "reason": "Multiplication of fractions is commutative."
+    },
+    {
+     "number": 6,
+     "assertion": "Dividing a number by 1/3 makes it bigger.",
+     "reason": "Dividing by 1/3 is the same as dividing by 3."
+    }
+   ],
+   "written": {
+    "17": "Without calculating, arrange in ascending order: 18 × 5/6, 18 × 7/6, 18 × 1. Then check.",
+    "18": "Find the missing fraction: 3/4 × ? = 9/20.",
+    "19": "A tank is 2/3 full. After 1/4 of the water in it is used, what fraction of the tank is full?",
+    "20": "Simplify 2 1/2 × 1 3/5 ÷ 2 2/3.",
+    "21": "A ribbon 7 1/2 m long is cut into pieces of 5/8 m. How many pieces are there? If 4 pieces are used, how many metres of ribbon remain?",
+    "22": "Ravi reads 1/4 of a book on Monday and 2/3 of the remaining pages on Tuesday. 60 pages are left. How many pages does the book have?",
+    "23": [
+     "A field has an area of 4 1/2 hectares. 2/3 of it is used for wheat, and 3/4 of the rest is used for vegetables. The remaining part is a pond.",
+     "(a) Find the area for wheat.",
+     "(b) Find the area for vegetables.",
+     "(c) What fraction of the whole field is the pond?"
+    ],
+    "24": [
+     "(a) How much rice is used for one person? [1]",
+     "(b) How much rice is needed for 10 people? [1]",
+     "(c) The dal is what fraction of the rice? How much dal is needed for 10 people? [2]"
+    ]
+   },
+   "caseStudy": "A recipe for 6 people uses 1 1/2 cups of rice and 3/4 cup of dal.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "5/6 < 1 < 7/6, so 18 × 5/6 < 18 × 1 < 18 × 7/6: 15 < 18 < 21.",
+    "18": "? = 9/20 ÷ 3/4 = 9/20 × 4/3 = 3/5.",
+    "19": "2/3 × 3/4 = 1/2 of the tank remains full.",
+    "20": "5/2 × 8/5 = 4; 4 ÷ 8/3 = 4 × 3/8 = 3/2 = 1 1/2.",
+    "21": "15/2 ÷ 5/8 = 15/2 × 8/5 = 12 pieces. 8 pieces remain: 8 × 5/8 = 5 m.",
+    "22": "After Monday 3/4 remains. Tuesday reads 2/3 of it, so 1/3 × 3/4 = 1/4 of the book is left. 1/4 of the book = 60, so the book has 240 pages.",
+    "23": "(a) 2/3 × 9/2 = 3 ha. (b) Rest = 1 1/2 ha; 3/4 × 3/2 = 9/8 = 1 1/8 ha. (c) Pond = 3/2 − 9/8 = 3/8 ha; 3/8 ÷ 9/2 = 1/12 of the field.",
+    "24": "(a) 3/2 ÷ 6 = 1/4 cup. (b) 10 × 1/4 = 2 1/2 cups. (c) 3/4 ÷ 3/2 = 1/2. Dal for 10 = 1/2 × 2 1/2 = 1 1/4 cups."
+   }
+  },
+  {
+   "id": "g7-geometric-twins-02",
+   "chapter": "Geometric Twins",
+   "chapterNumber": 9,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "If ΔDEF ≅ ΔLMN, then ∠E is equal to",
+     "options": [
+      "∠L",
+      "∠M",
+      "∠N",
+      "∠D"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which information is NOT enough to prove two triangles congruent?",
+     "options": [
+      "three equal angles",
+      "three equal sides",
+      "two sides and the included angle",
+      "hypotenuse and one side (right triangles)"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In ΔABC, AB = AC and ∠A = 80°. Then ∠B is",
+     "options": [
+      "80°",
+      "40°",
+      "50°",
+      "100°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Two congruent triangles always have equal",
+     "options": [
+      "areas only",
+      "perimeters only",
+      "angles only",
+      "areas, perimeters and angles"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If ∠A = ∠P, AB = PQ and BC = QR, then ΔABC ≅ ΔPQR.",
+     "reason": "For SAS, the equal angle must be between the two equal sides."
+    },
+    {
+     "number": 6,
+     "assertion": "Two equilateral triangles of side 4 cm are congruent.",
+     "reason": "Triangles with three pairs of equal sides are congruent (SSS)."
+    }
+   ],
+   "written": {
+    "17": "In ΔABC, AB = 4 cm, BC = 5 cm, ∠B = 60°. In ΔPQR, PQ = 4 cm, QR = 5 cm, ∠Q = 60°. Are they congruent? Write the condition and the correspondence.",
+    "18": "Why does a wooden gate with a diagonal bar not sag? Use a congruence condition in your answer.",
+    "19": "ΔXYZ ≅ ΔLMN, XY = 7 cm, YZ = 9 cm and LN = 6 cm. Find the perimeter of ΔLMN.",
+    "20": "In ΔABC, D is the mid-point of BC and AD ⊥ BC. Prove that AB = AC.",
+    "21": "PQRS is a square with diagonal PR. Prove that ΔPQR ≅ ΔRSP, and find ∠QPR.",
+    "22": "In ΔABC and ΔDEF, ∠A = ∠D = 50°, ∠B = ∠E = 60° and AC = DF = 6 cm. Name the congruence condition and find ∠F.",
+    "23": [
+     "In ΔABC, AB = AC. BD is the altitude from B to AC, and CE is the altitude from C to AB.",
+     "(a) Show that ∠ABC = ∠ACB.",
+     "(b) Prove that ΔBEC ≅ ΔCDB.",
+     "(c) Hence show that BD = CE."
+    ],
+    "24": [
+     "(a) Show that ΔABC ≅ ΔADC. [1]",
+     "(b) If ∠BAD = 100°, find ∠BAC. [1]",
+     "(c) Kite PQRS has the same side lengths as ABCD. What extra measurement would prove the two kites congruent? Explain. [2]"
+    ]
+   },
+   "caseStudy": "Kite ABCD has AB = AD = 5 cm and CB = CD = 8 cm, with diagonal AC.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "Yes, by SAS (the 60° angle is between the equal sides). ΔABC ≅ ΔPQR with A ↔ P, B ↔ Q, C ↔ R.",
+    "18": "The diagonal splits the rectangle into triangles. By SSS, a triangle with fixed sides cannot change shape, so the gate stays rigid.",
+    "19": "LM = XY = 7 cm, MN = YZ = 9 cm, LN = 6 cm. Perimeter = 22 cm.",
+    "20": "In ΔABD and ΔACD: BD = DC, ∠ADB = ∠ADC = 90°, AD is common. So ΔABD ≅ ΔACD (SAS), and AB = AC (CPCT).",
+    "21": "PQ = RS, QR = SP (sides of a square) and PR is common, so ΔPQR ≅ ΔRSP (SSS). ΔPQR is a right isosceles triangle, so ∠QPR = 45°.",
+    "22": "AAS (two angles and a side not between them). ∠F = ∠C = 180° − 50° − 60° = 70°.",
+    "23": "(a) Angles opposite equal sides are equal. (b) ∠BEC = ∠CDB = 90°, BC is common, ∠EBC = ∠DCB, so ΔBEC ≅ ΔCDB (AAS). (c) BD = CE (CPCT).",
+    "24": "(a) AB = AD, CB = CD and AC is common, so they are congruent by SSS. (b) AC bisects ∠BAD, so ∠BAC = 50°. (c) The sides alone allow the kite to change shape. If one more part is equal, for example diagonal AC = PR or ∠A = ∠P, the triangles are congruent, so the kites are congruent."
+   }
+  },
+  {
+   "id": "g7-integers-02",
+   "chapter": "Operations with Integers",
+   "chapterNumber": 10,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A carrom coin at 0 moves +6, −9, +4 and −5. It stops at",
+     "options": [
+      "4",
+      "−4",
+      "−6",
+      "24"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which is true for all integers a and b?",
+     "options": [
+      "a × b = b × a",
+      "a − b = b − a",
+      "a ÷ b = b ÷ a",
+      "(a − b) − c = a − (b − c)"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The product of fifty factors of (−1) is",
+     "options": [
+      "−1",
+      "−50",
+      "1",
+      "50"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The product of two integers is −24 and their sum is 5. The integers are",
+     "options": [
+      "6 and −4",
+      "−8 and 3",
+      "−6 and 4",
+      "8 and −3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "(−8) × (−5) = 40.",
+     "reason": "Brahmagupta lived in India in the 7th century."
+    },
+    {
+     "number": 6,
+     "assertion": "Subtraction of integers is commutative.",
+     "reason": "5 − 3 = 2 but 3 − 5 = −2."
+    }
+   ],
+   "written": {
+    "17": "Complete the magic grid with the integers −4 to 4 (each once) so that every row, column and diagonal adds to 0. Top row: 1, −4, 3. Centre: 0.",
+    "18": "Find two integers whose product is −36 and whose sum is 5.",
+    "19": "Continue the pattern 3 × 2 = 6, 3 × 1 = 3, 3 × 0 = 0 for three more steps. What rule does it show?",
+    "20": "Find (−5) × 17 × (−20) in the easiest way. Name the properties you use.",
+    "21": "Is (−24 ÷ 6) ÷ (−2) equal to −24 ÷ [6 ÷ (−2)]? What does this show?",
+    "22": "A test has 20 questions: +4 for a correct answer, −1 for a wrong answer and 0 for no answer. Asha attempts 18 questions and scores 52. How many did she answer correctly?",
+    "23": [
+     "Use the sign rules for multiplication and division.",
+     "(a) Find (−7) × (−9).",
+     "(b) Find (−56) ÷ 8 and check your answer with multiplication.",
+     "(c) Find [(−3)² × (−2)³] ÷ (−6)."
+    ],
+    "24": [
+     "(a) Where is she after rising 5 m? [1]",
+     "(b) She then rises 3 m every second. How many seconds does she take to reach the surface? [1]",
+     "(c) Find the total vertical distance she travels from the platform to the surface. [2]"
+    ]
+   },
+   "caseStudy": "A diver starts on a platform 10 m above the water (+10 m). She dives to −14 m, then rises 5 m.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "Middle row: 2, 0, −2. Bottom row: −3, 4, −1. Check: columns 1 + 2 − 3 = 0, −4 + 0 + 4 = 0, 3 − 2 − 1 = 0; diagonals 1 + 0 − 1 = 0 and 3 + 0 − 3 = 0.",
+    "18": "9 and −4: 9 × (−4) = −36 and 9 + (−4) = 5.",
+    "19": "3 × (−1) = −3, 3 × (−2) = −6, 3 × (−3) = −9. A positive number times a negative number is negative.",
+    "20": "[(−5) × (−20)] × 17 = 100 × 17 = 1,700 (commutative and associative properties).",
+    "21": "(−4) ÷ (−2) = 2, but −24 ÷ (−3) = 8. They are not equal, so division is not associative.",
+    "22": "Let c be correct: 4c − (18 − c) = 52, so 5c = 70 and c = 14.",
+    "23": "(a) 63. (b) −7, because 8 × (−7) = −56. (c) 9 × (−8) = −72; −72 ÷ (−6) = 12.",
+    "24": "(a) −14 + 5 = −9 m. (b) 9 ÷ 3 = 3 seconds. (c) 24 m down (from +10 to −14) and 14 m up (from −14 to 0): 38 m."
+   }
+  },
+  {
+   "id": "g7-hcf-lcm-02",
+   "chapter": "Finding Common Ground",
+   "chapterNumber": 11,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The HCF of two consecutive numbers is",
+     "options": [
+      "0",
+      "1",
+      "their product",
+      "2"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If a divides b, the LCM of a and b is",
+     "options": [
+      "b",
+      "a",
+      "a × b",
+      "1"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The HCF of 2³ × 3² × 5 and 2² × 3³ × 7 is",
+     "options": [
+      "6",
+      "72",
+      "36",
+      "1,080"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Two numbers have HCF 6 and product 216. Their LCM is",
+     "options": [
+      "6",
+      "216",
+      "1,296",
+      "36"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Two numbers can have HCF 12 and LCM 90.",
+     "reason": "HCF × LCM = product of the two numbers."
+    },
+    {
+     "number": 6,
+     "assertion": "The HCF of two numbers always divides their LCM.",
+     "reason": "The HCF divides both numbers, and both numbers divide the LCM."
+    }
+   ],
+   "written": {
+    "17": "Use the ladder method to find the HCF and LCM of 24 and 36.",
+    "18": "Find the smallest number which, when increased by 5, is divisible by 12, 16 and 24.",
+    "19": "Find the greatest number that divides 70 and 125, leaving remainders 5 and 8.",
+    "20": "Three ropes of 120 cm, 168 cm and 216 cm are cut into equal pieces of the greatest possible length. Find the length and the number of pieces.",
+    "21": "Two numbers are co-prime and their LCM is 391. One number is 17. Find the other number and the HCF.",
+    "22": "Find the least 4-digit number that is divisible by 15, 20 and 30.",
+    "23": [
+     "Bus A leaves a depot every 25 minutes, bus B every 30 minutes and bus C every 40 minutes. All three leave together at 7:00 a.m.",
+     "(a) When do all three next leave together?",
+     "(b) How many times do A and B leave together from 7:00 a.m. to 7:00 p.m., counting 7:00 a.m.?",
+     "(c) Is the gap you used in (b) an HCF or an LCM? Why?"
+    ],
+    "24": [
+     "(a) Find the greatest number of students in each row. [1]",
+     "(b) Find the number of rows of boys and of girls. [1]",
+     "(c) Find the total number of rows. If each row must have 14 students instead, how many rows are there? [2]"
+    ]
+   },
+   "caseStudy": "A school has 252 boys and 308 girls. They stand in rows. Every row has the same number of students, and each row has only boys or only girls.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "24, 36 ÷ 2 → 12, 18; ÷ 2 → 6, 9; ÷ 3 → 2, 3. HCF = 2 × 2 × 3 = 12. LCM = 12 × 2 × 3 = 72.",
+    "18": "LCM(12, 16, 24) = 48. The number is 48 − 5 = 43.",
+    "19": "70 − 5 = 65 and 125 − 8 = 117. HCF(65, 117) = 13.",
+    "20": "HCF(120, 168, 216) = 24 cm. Pieces = 5 + 7 + 9 = 21.",
+    "21": "391 ÷ 17 = 23. The other number is 23, and the HCF is 1.",
+    "22": "LCM(15, 20, 30) = 60. 1,000 ÷ 60 ≈ 16.7, so 17 × 60 = 1,020.",
+    "23": "(a) LCM(25, 30, 40) = 600 minutes = 10 hours, at 5:00 p.m. (b) LCM(25, 30) = 150 minutes: 7:00, 9:30, 12:00, 2:30 and 5:00, so 5 times (the next, 7:30 p.m., is too late). (c) An LCM, because it is the first common multiple of 25 and 30.",
+    "24": "(a) HCF(252, 308) = 28. (b) 252 ÷ 28 = 9 rows of boys; 308 ÷ 28 = 11 rows of girls. (c) 20 rows. With 14 per row: 18 + 22 = 40 rows."
+   }
+  },
+  {
+   "id": "g7-decimals-operations-02",
+   "chapter": "Another Peek Beyond the Point",
+   "chapterNumber": 12,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which product is less than 5?",
+     "options": [
+      "5 × 1.2",
+      "5 × 0.9",
+      "5 × 1",
+      "5 × 3.5"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "36 ÷ 0.25 equals",
+     "options": [
+      "144",
+      "9",
+      "1.44",
+      "0.09"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which fraction has a repeating (non-terminating) decimal?",
+     "options": [
+      "7/8",
+      "9/20",
+      "5/12",
+      "3/25"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If 23 × 47 = 1,081, then 0.23 × 4.7 equals",
+     "options": [
+      "10.81",
+      "0.1081",
+      "108.1",
+      "1.081"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "15 ÷ 0.5 = 30.",
+     "reason": "Dividing by 0.5 is the same as multiplying by 2."
+    },
+    {
+     "number": 6,
+     "assertion": "0.4 × 0.4 = 0.16.",
+     "reason": "The product of two decimals is always greater than each of them."
+    }
+   ],
+   "written": {
+    "17": "Given 156 × 23 = 3,588, find (a) 15.6 × 2.3, (b) 35.88 ÷ 2.3.",
+    "18": "Find 13 ÷ 8 by long division.",
+    "19": "Without calculating, which is greater: 48 ÷ 0.6 or 48 × 0.6? Explain, then check.",
+    "20": "Write 7/12 as a decimal. Does it terminate? Explain using the denominator.",
+    "21": "A car travels 18.6 km on 1.2 litres of petrol. How far does it travel on 15 litres? Petrol costs ₹104.50 per litre. Find the cost of the petrol for this trip.",
+    "22": "The product of two decimals is 6.72. One of them is 2.4. Find the other, and check your answer.",
+    "23": [
+     "A rectangular garden is 12.5 m long and 8.4 m wide. Grass costs ₹45.50 per m² and fencing costs ₹62.75 per metre.",
+     "(a) Find the area of the garden.",
+     "(b) Find the cost of the grass.",
+     "(c) Find the cost of fencing the whole boundary."
+    ],
+    "24": [
+     "(a) How many bottles can be filled completely? [1]",
+     "(b) How much water is left over? [1]",
+     "(c) If 0.6 L bottles are used instead, how many are filled and how much is left? Which size wastes less? [2]"
+    ]
+   },
+   "caseStudy": "A tank has 24.6 litres of water. It is poured into bottles of 0.75 litre.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "(a) 35.88 (1 + 1 = 2 decimal places). (b) 15.6 (since 15.6 × 2.3 = 35.88).",
+    "18": "13 ÷ 8 = 1 remainder 5; 50 ÷ 8 = 6 r 2; 20 ÷ 8 = 2 r 4; 40 ÷ 8 = 5. So 1.625.",
+    "19": "48 ÷ 0.6 is greater: dividing by a number less than 1 gives more, multiplying gives less. 48 ÷ 0.6 = 80 and 48 × 0.6 = 28.8.",
+    "20": "7/12 = 0.58333… It does not terminate: 12 = 2² × 3, and the factor 3 makes it repeat.",
+    "21": "18.6 ÷ 1.2 = 15.5 km per litre, so 15 × 15.5 = 232.5 km. Cost = 15 × 104.50 = ₹1,567.50.",
+    "22": "6.72 ÷ 2.4 = 67.2 ÷ 24 = 2.8. Check: 2.4 × 2.8 = 6.72.",
+    "23": "(a) 12.5 × 8.4 = 105 m². (b) 105 × 45.50 = ₹4,777.50. (c) Perimeter = 2 × (12.5 + 8.4) = 41.8 m; 41.8 × 62.75 = ₹2,622.95.",
+    "24": "(a) 24.6 ÷ 0.75 = 32.8, so 32 bottles. (b) 24.6 − 32 × 0.75 = 24.6 − 24 = 0.6 L. (c) 24.6 ÷ 0.6 = 41 bottles exactly, with nothing left. The 0.6 L bottles waste less."
+   }
+  },
+  {
+   "id": "g7-data-02",
+   "chapter": "Connecting the Dots…",
+   "chapterNumber": 13,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Five numbers have a mean of 8. Their sum is",
+     "options": [
+      "13",
+      "40",
+      "8",
+      "1.6"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The median of 7, 3, 9, 3, 10, 5 is",
+     "options": [
+      "6",
+      "5",
+      "7",
+      "3"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If 5 is added to every value in a data set, the range",
+     "options": [
+      "increases by 5",
+      "decreases by 5",
+      "does not change",
+      "is multiplied by 5"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which is NOT a statistical question?",
+     "options": [
+      "How long do the students sleep?",
+      "What are the students' heights?",
+      "How many pets do the families have?",
+      "How old is the school principal?"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The mean of a data set must be one of its values.",
+     "reason": "The mean lies between the smallest and the largest value."
+    },
+    {
+     "number": 6,
+     "assertion": "The mean of 4, 6 and 11 is 7.",
+     "reason": "Mean = sum of the values ÷ number of values."
+    }
+   ],
+   "written": {
+    "17": "The mean of 6 numbers is 15. One more number is added, and the mean becomes 16. Find the new number.",
+    "18": "Make a set of 5 whole numbers whose mean is 10 and whose median is 8.",
+    "19": "The range of 12, 18, x and 25 is 20, and x is the smallest value. Find x.",
+    "20": "Heights (cm): 140, 142, 145, 145, 148, 150, 182. Find the mean and the median. Which better describes a typical student? Why?",
+    "21": "Prices (₹) at shop A: 20, 22, 25, 23, 30. At shop B: 18, 35, 19, 21, 27. Compare the shops using the mean and the range.",
+    "22": "The numbers of pets in 10 homes are 0, 1, 1, 2, 0, 3, 1, 2, 1, 4. Draw a dot plot and find the mean and the median.",
+    "23": [
+     "The marks of 10 students are 12, 15, 18, 15, 20, 9, 15, 17, 14, 15.",
+     "(a) Find the mean.",
+     "(b) Find the median.",
+     "(c) The mark 9 was a mistake and should be 19. Find the new mean and median."
+    ],
+    "24": [
+     "(a) Find the mean daily sale. [1]",
+     "(b) Find the median daily sale. [1]",
+     "(c) The owner says a typical day's sale is ₹16 thousand. Is this a good description? Which value would you report, and why? [2]"
+    ]
+   },
+   "caseStudy": "A shop's daily sales (in ₹ thousand) for one week are 12, 15, 11, 30, 14, 13, 17.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "Old total = 90; new total = 7 × 16 = 112. The new number is 22.",
+    "18": "Total must be 50 with middle value 8, for example 6, 7, 8, 9, 20.",
+    "19": "25 − x = 20, so x = 5.",
+    "20": "Mean = 1,052 ÷ 7 ≈ 150.3 cm. Median = 145 cm. The median is better, because the one height 182 pulls the mean up.",
+    "21": "Both means are ₹24. Ranges: A = 10, B = 17. Prices at shop A are steadier.",
+    "22": "Dots: 0 (two), 1 (four), 2 (two), 3 (one), 4 (one). Mean = 15 ÷ 10 = 1.5. Median = (1 + 1) ÷ 2 = 1.",
+    "23": "(a) 150 ÷ 10 = 15. (b) Ordered: 9, 12, 14, 15, 15, 15, 15, 17, 18, 20; median = 15. (c) New total 160, mean = 16. Ordered: 12, 14, 15, 15, 15, 15, 17, 18, 19, 20; median = 15.",
+    "24": "(a) 112 ÷ 7 = ₹16 thousand. (b) Ordered: 11, 12, 13, 14, 15, 17, 30; median = ₹14 thousand. (c) Not really: one very good day (30) pulls the mean up; six of the seven days were below 16. Report the median, ₹14 thousand."
+   }
+  },
+  {
+   "id": "g7-constructions-tilings-02",
+   "chapter": "Constructions and Tilings",
+   "chapterNumber": 14,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Ancient Indian builders made a right angle with a rope triangle whose sides were in the ratio",
+     "options": [
+      "2 : 3 : 4",
+      "3 : 4 : 5",
+      "1 : 1 : 1",
+      "5 : 5 : 8"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The radius of a circle can be stepped around the circle exactly",
+     "options": [
+      "6 times",
+      "4 times",
+      "8 times",
+      "3 times"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Joining alternate vertices of a regular hexagon gives",
+     "options": [
+      "a square",
+      "a pentagon",
+      "an equilateral triangle",
+      "a hexagon"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "In a tangram, the small square has the same area as",
+     "options": [
+      "one large triangle",
+      "the whole square",
+      "half the parallelogram",
+      "two small triangles"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "An angle copied with compasses is equal to the original angle.",
+     "reason": "Compasses are used to draw arcs."
+    },
+    {
+     "number": 6,
+     "assertion": "Regular octagons alone can tile a floor.",
+     "reason": "Each interior angle of a regular octagon is 135°."
+    }
+   ],
+   "written": {
+    "17": "Write the steps to construct a regular hexagon of side 4 cm.",
+    "18": "In a tangram, a small triangle has an area of 2 cm². Find the area of the whole square and of one large triangle.",
+    "19": "How can you check that a corner is 90° using only a rope with 12 equal parts? Explain.",
+    "20": "Construct an angle of 75° using a ruler and compasses. Write the steps.",
+    "21": "Draw any angle with a protractor, copy it with compasses, and check by measuring. Write the steps of copying.",
+    "22": "Can regular hexagons and squares together fill the space around one point? Use 120a + 90b = 360 with a ≥ 1 and b ≥ 1.",
+    "23": [
+     "Draw a circle of radius 3.5 cm.",
+     "(a) Construct a regular hexagon inside the circle.",
+     "(b) Join alternate vertices to make a six-pointed star.",
+     "(c) Find the angle at each tip of the star and the angle at the centre between two neighbouring vertices of the hexagon."
+    ],
+    "24": [
+     "(a) How many square tiles are needed? [1]",
+     "(b) Can the floor be tiled without cutting tiles? Explain using lengths and angles. [1]",
+     "(c) Equilateral triangle tiles of side 25 cm are used instead. How many meet at each corner point, and why do they fit? [2]"
+    ]
+   },
+   "caseStudy": "A floor is 5 m by 4 m. It is covered with square tiles of side 25 cm.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    1,
+    3
+   ],
+   "solutions": {
+    "17": "Draw a circle of radius 4 cm. Keeping the same opening, step around the circle from any point to mark 6 points. Join them in order.",
+    "18": "A small triangle is 1/16 of the square, so the square = 16 × 2 = 32 cm². A large triangle = 4 small triangles = 8 cm².",
+    "19": "Make a triangle with sides of 3, 4 and 5 parts. The angle between the 3-part and the 4-part sides is 90°. Place it in the corner.",
+    "20": "Construct 60° and 90° at the same point, then bisect the angle between them: 60° + 15° = 75°.",
+    "21": "Arc from the vertex cutting both arms; same arc on the new ray; copy the gap between the arm points; join. Measuring shows the two angles are equal.",
+    "22": "4a + 3b = 12 has whole-number solutions only a = 3, b = 0 or a = 0, b = 4. So no mixture of both shapes fits around a point.",
+    "23": "(a) Step the 3.5 cm radius around the circle six times and join the points. (b) The two triangles overlap to form a star. (c) Each tip is 60° (the triangles are equilateral); the angle at the centre is 360° ÷ 6 = 60°.",
+    "24": "(a) 500 ÷ 25 = 20 and 400 ÷ 25 = 16, so 20 × 16 = 320 tiles. (b) Yes: 25 cm divides 500 cm and 400 cm exactly, and 4 × 90° = 360° at each corner. (c) 6 triangles, because 6 × 60° = 360°."
+   }
+  },
+  {
+   "id": "g7-finding-the-unknown-02",
+   "chapter": "Finding the Unknown",
+   "chapterNumber": 15,
+   "paperNumber": "02",
+   "grade": 7,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), NCERT activities and reasoning questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "x = 4 is the solution of",
+     "options": [
+      "3x + 2 = 10",
+      "5x − 6 = 14",
+      "2x + 7 = 13",
+      "x/2 + 5 = 6"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Start with y = 3. Multiply both sides by 4, then subtract 5 from both sides. The new equation is",
+     "options": [
+      "4y − 5 = 7",
+      "4y − 5 = 12",
+      "4y + 5 = 7",
+      "y − 5 = 12"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A student solved x − 6 = 10 and wrote x = 4. The mistake is",
+     "options": [
+      "dividing by 6",
+      "adding 6 to one side only",
+      "subtracting 6 instead of adding 6",
+      "there is no mistake"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Using x = (c − b) ÷ a, the solution of 3x + 8 = 29 is",
+     "options": [
+      "37/3",
+      "13",
+      "21",
+      "7"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "x/3 = 4 gives x = 4/3.",
+     "reason": "To undo division by 3, multiply both sides by 3."
+    },
+    {
+     "number": 6,
+     "assertion": "The equations 2x + 3 = 11 and 4x + 6 = 22 have the same solution.",
+     "reason": "Multiplying both sides of an equation by the same number keeps it balanced."
+    }
+   ],
+   "written": {
+    "17": "Make two different equations, each with two operations, whose solution is x = 5.",
+    "18": "Find and correct the mistake: 4(x − 2) = 20 → 4x − 2 = 20 → x = 5.5.",
+    "19": "Matchstick triangles in a row use 2n + 1 sticks. How many triangles use 41 sticks? Can exactly 50 sticks be used? Explain.",
+    "20": "Solve (x + 4)/3 = (x − 2)/2.",
+    "21": "The sum of three consecutive even numbers is 78. Find the numbers.",
+    "22": "A number is multiplied by 7 and then 15 is subtracted. The result is 3 more than 5 times the number. Find the number.",
+    "23": [
+     "A bag has ₹10 and ₹5 coins: 45 coins in all, with a total value of ₹340.",
+     "(a) Let x be the number of ₹10 coins. Write the number of ₹5 coins and the total value in terms of x.",
+     "(b) Solve the equation.",
+     "(c) Find the number of ₹5 coins and check the total value."
+    ],
+    "24": [
+     "(a) Find the fare for 12 km. [1]",
+     "(b) Write an equation for the distance d if the fare is ₹482. [1]",
+     "(c) Solve it. Another taxi charges ₹20 per km with no fixed fee. For what distance are the two fares equal? [2]"
+    ]
+   },
+   "caseStudy": "A taxi charges a fixed ₹50 plus ₹18 per km.",
+   "answerKey": [
+    1,
+    0,
+    2,
+    3,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "For example 2x + 1 = 11 and 3x − 4 = 11 (any two correct equations).",
+    "18": "The 4 must multiply both terms: 4x − 8 = 20, so 4x = 28 and x = 7.",
+    "19": "2n + 1 = 41 gives n = 20 triangles. 2n + 1 is always odd, so 50 sticks cannot be used exactly.",
+    "20": "Multiply both sides by 6: 2(x + 4) = 3(x − 2), so 2x + 8 = 3x − 6 and x = 14.",
+    "21": "(n − 2) + n + (n + 2) = 78, so 3n = 78 and n = 26. The numbers are 24, 26 and 28.",
+    "22": "7n − 15 = 5n + 3, so 2n = 18 and n = 9.",
+    "23": "(a) ₹5 coins: 45 − x. Value: 10x + 5(45 − x) = 340. (b) 5x + 225 = 340, so x = 23. (c) 22 coins of ₹5. Check: 230 + 110 = 340.",
+    "24": "(a) 50 + 18 × 12 = ₹266. (b) 50 + 18d = 482. (c) d = (482 − 50) ÷ 18 = 24 km. 50 + 18d = 20d gives d = 25 km."
+   }
+  }
+ ],
+ "notes": []
+}
