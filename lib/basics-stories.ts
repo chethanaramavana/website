@@ -118,6 +118,7 @@ export const basicsStories:Record<string,BasicsStory[]>={
  'quadratic-foundations':[
   story('A small rectangular garden','Dev wants a rectangular garden with perimeter 10 units and area 6 square units. He calls one side x, so the other is 5 − x.','How does the area condition become an equation containing x²?'),
   story('Rows of seats for the show','The first row has 5 seats. Each new row has 4 more seats than the row before it. Asha records 5, 9, 13, 17…','Can she find a later row without writing every earlier term?'),
+  story('An equation that will not factorise','Dev tries to solve 2x² − 7x + 3 = 0 for a garden plan. Then he meets x² + 4x + 1 = 0, where no pair of whole numbers works.','Is there one method that works for every quadratic equation?'),
  ],
  'coordinate-distance':[
   story('A shortcut across the park','On a grid map, Dev walks from A(1,1) to B(5,4): 4 units across and 3 up. Asha draws a straight shortcut.','How does a right triangle help you find the shortcut’s length?'),
@@ -126,5 +127,6 @@ export const basicsStories:Record<string,BasicsStory[]>={
  'similarity-trigonometry':[
   story('Enlarging the class pennant','Dev enlarges a right-triangle pennant with sides 3, 4 and 5. Every side of the new pennant is twice as long.','Which lengths become 6, 8 and 10, and which features stay the same?'),
   story('Looking from one corner','Asha looks at a 3–4–5 right triangle from the marked angle θ. She names the opposite side, adjacent side and hypotenuse.','Why must you choose the angle before naming the opposite and adjacent sides?'),
+  story('A ladder at a special angle','Asha leans a 10 m ladder against a wall so that it makes 60° with the ground. She wants the exact height of the top without measuring.','Which special triangle gives the exact value of sin 60°?'),
  ],
 };

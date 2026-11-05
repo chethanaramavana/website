@@ -11,4 +11,7 @@ import {BalanceExperiment,PercentExperiment,GardenExperiment} from './visual-exp
 export const investigationTopics:Record<string,ComponentType<{index:number}>>={
  'addition-subtraction':AdditionLab,estimation:EstimationLab,integers:IntegerLab,'operation-order':OrderLab,'factors-multiples':FactorLab,'hcf-lcm':HcfLab,fractions:FractionLab,decimals:DecimalLab,ratio:RatioLab,percentages:({index})=>index===0?<PercentExperiment/>:<PercentageLab index={index}/>,'powers-roots':PowerLab,algebra:AlgebraLab,equations:BalanceExperiment,angles:AngleLab,shapes:ShapeLab,symmetry:SymmetryLab,'area-perimeter':({index})=>index===0?<><AreaLab index={index}/><GardenExperiment/></>:<AreaLab index={index}/>,solids:SolidLab,'data-chance':DataLab,'rational-numbers':RationalLab,'real-numbers':RealLab,identities:IdentityLab,'coordinate-basics':CoordinateLab,'linear-pairs':LinearPairLab,'quadratic-foundations':QuadraticLab,'coordinate-distance':DistanceLab,'similarity-trigonometry':SimilarityLab,
 };
+/** Topics whose later concepts have no lab yet: those concepts show the topic picture instead. */
+export const labConceptCount:Record<string,number>={};
+export function hasInvestigation(slug:string,index:number){return !!investigationTopics[slug]&&index<(labConceptCount[slug]??Infinity);}
 export default function InvestigationLab({slug,index}:{slug:string;index:number}){const Component=investigationTopics[slug];return Component?<Component key={`${slug}-${index}`} index={index}/>:null;}

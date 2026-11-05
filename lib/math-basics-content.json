@@ -4236,7 +4236,7 @@
         "remember": "Always check the pair in both original equations.",
         "teaching": [
           "Two equations describe two conditions on the same unknowns. A solution must satisfy both. Elimination cancels an unknown by adding or subtracting equations; substitution replaces one unknown with an equivalent expression.",
-          "For x + y = 9 and x − y = 3, add to get 2x = 12. Hence x = 6 and substitution gives y = 3. Check both original equations. On a graph, the solution is an intersection; distinct parallel lines have no common solution."
+          "For x + y = 11 and x − y = 3, add the equations to get 2x = 14. Hence x = 7, and substitution gives y = 4. Check both original equations. On a graph, the solution is an intersection; distinct parallel lines have no common solution."
         ]
       },
       {
@@ -4425,9 +4425,50 @@
         ],
         "remember": "Use n−1 steps, not n, when starting from the first term.",
         "teaching": [
-          "An arithmetic progression has a constant difference between consecutive terms. For 5, 8, 11, 14, the first term is 5 and each jump is 3. There is one jump to the second term and two to the third.",
-          "The nth term uses n − 1 jumps: aₙ = a + (n − 1)d. The tenth term here is 5 + 9 × 3 = 32. A sequence that repeatedly multiplies is not generally an arithmetic progression. Check consecutive differences first."
+          "An arithmetic progression has a constant difference between consecutive terms. For 5, 9, 13, 17, the first term is 5 and each jump is 4. There is one jump to the second term and two to the third.",
+          "The nth term uses n − 1 jumps: aₙ = a + (n − 1)d. The tenth term here is 5 + 9 × 4 = 41. A sequence that repeatedly multiplies is not generally an arithmetic progression. Check consecutive differences first."
         ]
+      },
+      {
+        "title": "The quadratic formula and the discriminant",
+        "explain": "Some quadratics do not factorise with whole numbers. The quadratic formula solves every equation ax² + bx + c = 0 with a ≠ 0. The number b² − 4ac, called the discriminant D, tells how many real roots there are before you solve.",
+        "teaching": [
+          "Write the equation as ax² + bx + c = 0 and read a, b and c with their signs. For 2x² − 7x + 3 = 0, a = 2, b = −7 and c = 3. The formula is $x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Here D = 49 − 24 = 25, so x = (7 ± 5)/4, which gives x = 3 or x = 1/2.",
+          "If D > 0, there are two different real roots. If D = 0, there are two equal roots. If D < 0, there is no real root, because no real number squares to a negative number."
+        ],
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "2x² − 7x + 3 = 0: a = 2, b = −7, c = 3",
+            "D = (−7)² − 4 × 2 × 3 = 25",
+            "x = (7 ± 5) ÷ 4 → x = 3 or x = 1/2"
+          ]
+        },
+        "steps": [
+          "Read a, b and c with their signs.",
+          "Find D = b² − 4ac first.",
+          "Substitute into x = (−b ± √D) ÷ 2a.",
+          "Check one root in the original equation: 2 × 3² − 7 × 3 + 3 = 0."
+        ],
+        "practice": [
+          {
+            "prompt": "Find the discriminant D of x² + 4x + 1 = 0.",
+            "answer": "12",
+            "solution": "D = b² − 4ac = 4² − 4 × 1 × 1 = 16 − 4 = 12.",
+            "options": null
+          },
+          {
+            "prompt": "How many real roots does x² − 6x + 9 = 0 have?",
+            "answer": "Two equal roots",
+            "solution": "D = 36 − 36 = 0, so the two roots are equal: x = 3 and x = 3.",
+            "options": [
+              "Two different roots",
+              "Two equal roots",
+              "No real roots"
+            ]
+          }
+        ],
+        "remember": "Find D = b² − 4ac first. D > 0: two different roots. D = 0: two equal roots. D < 0: no real roots."
       }
     ],
     "test": [
@@ -4443,9 +4484,9 @@
         ]
       },
       {
-        "prompt": "Positive root of x²−6x+8=0 that is larger?",
-        "answer": "4",
-        "solution": "The roots are 2 and 4.",
+        "prompt": "Use the discriminant: how many real roots does x² + 2x + 5 = 0 have?",
+        "answer": "0",
+        "solution": "D = b² − 4ac = 2² − 4 × 1 × 5 = 4 − 20 = −16. D is negative, so there are no real roots.",
         "options": null
       },
       {
@@ -4724,6 +4765,74 @@
           "The hypotenuse is opposite the right angle and is the longest side. Choose another angle: its opposite side faces it, and its adjacent leg touches it. Opposite and adjacent change when you choose the other acute angle.",
           "Sine is opposite divided by hypotenuse; cosine is adjacent divided by hypotenuse; tangent is opposite divided by adjacent. In a 3–4–5 triangle with opposite side 3, these are 3/5, 4/5 and 3/4. Label sides before selecting the ratio involving your known and unknown lengths."
         ]
+      },
+      {
+        "title": "Values for 30°, 45° and 60°",
+        "explain": "Two special triangles give the exact ratios for 30°, 45° and 60°. Half of a square gives 45°. Half of an equilateral triangle gives 30° and 60°.",
+        "teaching": [
+          "Cut a square of side 1 along a diagonal. Each half is a right triangle with sides 1, 1 and √2, and two angles of 45°. So sin 45° = cos 45° = 1/√2 and tan 45° = 1.",
+          "Cut an equilateral triangle of side 2 down its middle. Each half has sides 1, √3 and 2, with angles 30°, 60° and 90°. So sin 30° = cos 60° = 1/2 and sin 60° = cos 30° = √3/2. Tangent is sine divided by cosine, so tan 60° = √3."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "sin 30°",
+              "1/2"
+            ],
+            [
+              "cos 30°",
+              "√3/2"
+            ],
+            [
+              "sin 45° and cos 45°",
+              "1/√2"
+            ],
+            [
+              "tan 45°",
+              "1"
+            ],
+            [
+              "sin 60°",
+              "√3/2"
+            ],
+            [
+              "cos 60°",
+              "1/2"
+            ],
+            [
+              "tan 60°",
+              "√3"
+            ]
+          ],
+          "caption": "Exact values from the half-square and the half-equilateral triangle."
+        },
+        "steps": [
+          "Half-square: sides 1, 1, √2 → tan 45° = 1/1 = 1.",
+          "Half-equilateral triangle: sides 1, √3, 2 → sin 30° = 1/2.",
+          "tan 60° = sin 60° ÷ cos 60° = (√3/2) ÷ (1/2) = √3.",
+          "A 10 m ladder makes 60° with the ground. Its top is 10 × sin 60° = 5√3 m high."
+        ],
+        "practice": [
+          {
+            "prompt": "What is the exact value of sin 30°?",
+            "answer": "1/2",
+            "solution": "Half of an equilateral triangle of side 2 has opposite side 1 and hypotenuse 2 for the 30° angle.",
+            "options": [
+              "1/2",
+              "√3/2",
+              "1/√2",
+              "√3"
+            ]
+          },
+          {
+            "prompt": "Find 2 sin 30° + tan 45°.",
+            "answer": "2",
+            "solution": "2 × 1/2 + 1 = 1 + 1 = 2.",
+            "options": null
+          }
+        ],
+        "remember": "sin 30° = cos 60° = 1/2, sin 45° = cos 45° = 1/√2, sin 60° = cos 30° = √3/2, tan 45° = 1."
       }
     ],
     "test": [
@@ -4734,10 +4843,15 @@
         "options": null
       },
       {
-        "prompt": "Length scale factor 4 gives area factor?",
-        "answer": "16",
-        "solution": "Area changes in two dimensions, so square the length scale factor: 4²=16.",
-        "options": null
+        "prompt": "What is the exact value of cos 60°?",
+        "answer": "1/2",
+        "solution": "Half of an equilateral triangle: for the 60° angle, the adjacent side is 1 and the hypotenuse is 2.",
+        "options": [
+          "1/2",
+          "√3/2",
+          "1/√2",
+          "√3"
+        ]
       },
       {
         "prompt": "Opposite=8 and hypotenuse=17. Find sin θ.",
@@ -4796,15 +4910,10 @@
         ]
       },
       {
-        "prompt": "Adjacent=8 and hypotenuse=17. Find cos θ.",
-        "answer": "8/17",
-        "solution": "Use $\\cos\\theta=\\dfrac{\\text{adjacent}}{\\text{hypotenuse}}$=8/17.",
-        "options": [
-          "8/17",
-          "15/17",
-          "8/15",
-          "17/8"
-        ]
+        "prompt": "What is the exact value of tan 45°?",
+        "answer": "1",
+        "solution": "In the half-square, the opposite and adjacent sides are both 1, so tan 45° = 1/1 = 1.",
+        "options": null
       },
       {
         "prompt": "Opposite=12 and adjacent=5. Find tan θ.",

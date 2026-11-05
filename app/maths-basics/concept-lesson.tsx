@@ -12,7 +12,7 @@ import ComparingNumbers from './comparing-numbers';
 import WorkedExamples from './worked-examples';
 import Tex from './math-text';
 import DivisionStories from './division-stories';
-import InvestigationLab,{investigationTopics} from './labs/investigation-lab';
+import InvestigationLab,{hasInvestigation} from './labs/investigation-lab';
 import GuidedWorked from './labs/guided-worked';
 import {FoldReason} from './labs/lab-kit';
 
@@ -20,7 +20,7 @@ export default function ConceptLesson({topic,index}:{topic:BasicsTopic;index:num
  const concept=topic.concepts[index]||topic.concepts[0];
  const discoverZero=topic.slug==='numbers'&&index===0;
  const story=basicsStories[topic.slug]?.[index];
- const investigation=!!investigationTopics[topic.slug];
+ const investigation=hasInvestigation(topic.slug,index);
  if(topic.slug==='multiplication-division'&&index===2)return <div className="concept-lesson"><header className="lesson-opening"><span className="lesson-kicker">Concept {index+1} of {topic.concepts.length}</span><h2>{concept.title}</h2></header><DivisionStories/></div>;
  return <div className="concept-lesson">
   <header className="lesson-opening">
