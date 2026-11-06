@@ -1,0 +1,689 @@
+{
+ "kicker": "GRADE 11 · CHAPTER 9",
+ "title": "Straight Lines",
+ "back": {
+  "href": "/cbse/grade-11/ch-9",
+  "label": "Straight Lines"
+ },
+ "grade": {
+  "href": "/cbse/grade-11",
+  "label": "Grade 11"
+ },
+ "storeKey": "ramavana-straight-lines-ticks",
+ "sheet": [
+  {
+   "title": "Coordinate basics",
+   "items": [
+    "AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+    "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)",
+    "\\text{Section } m:n:\\ \\left(\\dfrac{mx_2+nx_1}{m+n},\\ \\dfrac{my_2+ny_1}{m+n}\\right)",
+    "\\text{Centroid}:\\ \\left(\\dfrac{x_1+x_2+x_3}{3},\\ \\dfrac{y_1+y_2+y_3}{3}\\right)",
+    "\\text{Area}=\\dfrac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|",
+    "A,B,C \\text{ collinear}\\iff \\text{Area}=0\\iff m_{AB}=m_{BC}"
+   ]
+  },
+  {
+   "title": "Slope",
+   "items": [
+    "m=\\dfrac{y_2-y_1}{x_2-x_1},\\ x_1\\ne x_2",
+    "m=\\tan\\theta,\\ 0^\\circ\\le\\theta<180^\\circ,\\ \\theta\\ne90^\\circ",
+    "\\text{Horizontal line}: m=0;\\quad \\text{vertical line}: m \\text{ not defined}"
+   ]
+  },
+  {
+   "title": "Two lines",
+   "items": [
+    "\\text{Parallel}: m_1=m_2",
+    "\\text{Perpendicular}: m_1m_2=-1",
+    "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|"
+   ]
+  },
+  {
+   "title": "Forms of a line",
+   "items": [
+    "\\text{Parallel to } x\\text{-axis}: y=b;\\quad \\text{parallel to } y\\text{-axis}: x=a",
+    "y-y_1=m(x-x_1)",
+    "y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)",
+    "y=mx+c",
+    "\\dfrac xa+\\dfrac yb=1"
+   ]
+  },
+  {
+   "title": "General equation",
+   "items": [
+    "Ax+By+C=0:\\ m=-\\dfrac AB",
+    "x\\text{-intercept}=-\\dfrac CA,\\quad y\\text{-intercept}=-\\dfrac CB",
+    "\\text{Parallel to } Ax+By+C=0:\\ Ax+By+k=0",
+    "\\text{Perpendicular to } Ax+By+C=0:\\ Bx-Ay+k=0",
+    "\\text{Concurrent: } L_1\\cap L_2 \\text{ lies on } L_3"
+   ]
+  },
+  {
+   "title": "Distance",
+   "items": [
+    "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}",
+    "d=\\dfrac{|C_1-C_2|}{\\sqrt{A^2+B^2}}",
+    "\\text{Foot}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{Ax_1+By_1+C}{A^2+B^2}",
+    "\\text{Image}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{2(Ax_1+By_1+C)}{A^2+B^2}"
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "title": "Coordinate basics",
+   "formulas": [
+    "AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+    "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)",
+    "\\text{Section } m:n:\\ \\left(\\dfrac{mx_2+nx_1}{m+n},\\ \\dfrac{my_2+ny_1}{m+n}\\right)",
+    "\\text{Centroid}:\\ \\left(\\dfrac{x_1+x_2+x_3}{3},\\ \\dfrac{y_1+y_2+y_3}{3}\\right)",
+    "\\text{Area}=\\dfrac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|",
+    "A,B,C \\text{ collinear}\\iff \\text{Area}=0\\iff m_{AB}=m_{BC}"
+   ],
+   "examples": [
+    {
+     "question": "Find the distance between $(-1,\\,3)$ and $(5,\\,-5)$.",
+     "use": [
+      "AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}"
+     ],
+     "steps": [
+      "$AB=\\sqrt{(5+1)^2+(-5-3)^2}=\\sqrt{36+64}$"
+     ],
+     "result": "$10$",
+     "type": "Distance"
+    },
+    {
+     "question": "Find the point that divides $A(1,\\,-2)$ and $B(7,\\,4)$ internally in the ratio $1:2$.",
+     "use": [
+      "\\text{Section } m:n:\\ \\left(\\dfrac{mx_2+nx_1}{m+n},\\ \\dfrac{my_2+ny_1}{m+n}\\right)"
+     ],
+     "steps": [
+      "$x=\\dfrac{1\\cdot7+2\\cdot1}{1+2}=3,\\qquad y=\\dfrac{1\\cdot4+2\\cdot(-2)}{1+2}=0$"
+     ],
+     "result": "$(3,\\,0)$",
+     "type": "Section formula"
+    },
+    {
+     "question": "Find the area of the triangle with vertices $(1,\\,1)$, $(4,\\,2)$ and $(2,\\,5)$.",
+     "use": [
+      "\\text{Area}=\\dfrac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|"
+     ],
+     "steps": [
+      "$=\\dfrac12\\left|1(2-5)+4(5-1)+2(1-2)\\right|=\\dfrac12\\left|-3+16-2\\right|$"
+     ],
+     "result": "$\\dfrac{11}{2}$ sq. units",
+     "type": "Area of a triangle"
+    },
+    {
+     "question": "Find $k$ if $(k,\\,3)$, $(2,\\,-1)$ and $(5,\\,1)$ are collinear.",
+     "use": [
+      "A,B,C \\text{ collinear}\\iff \\text{Area}=0\\iff m_{AB}=m_{BC}"
+     ],
+     "steps": [
+      "$k(-1-1)+2(1-3)+5(3+1)=0$",
+      "$-2k-4+20=0$"
+     ],
+     "result": "$k=8$",
+     "type": "Collinear points"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Slope of a line",
+   "formulas": [
+    "m=\\dfrac{y_2-y_1}{x_2-x_1},\\ x_1\\ne x_2",
+    "m=\\tan\\theta,\\ 0^\\circ\\le\\theta<180^\\circ,\\ \\theta\\ne90^\\circ",
+    "\\text{Horizontal line}: m=0;\\quad \\text{vertical line}: m \\text{ not defined}",
+    "A,B,C \\text{ collinear}\\iff \\text{Area}=0\\iff m_{AB}=m_{BC}"
+   ],
+   "examples": [
+    {
+     "question": "Find the slope of the line through $(3,\\,-2)$ and $(-1,\\,4)$.",
+     "use": [
+      "m=\\dfrac{y_2-y_1}{x_2-x_1},\\ x_1\\ne x_2"
+     ],
+     "steps": [
+      "$m=\\dfrac{4-(-2)}{-1-3}=\\dfrac{6}{-4}$"
+     ],
+     "result": "$-\\dfrac32$",
+     "type": "Slope from two points"
+    },
+    {
+     "question": "Find the inclination of a line with slope $-\\sqrt3$.",
+     "use": [
+      "m=\\tan\\theta,\\ 0^\\circ\\le\\theta<180^\\circ,\\ \\theta\\ne90^\\circ"
+     ],
+     "steps": [
+      "$\\tan\\theta=-\\sqrt3\\ \\Rightarrow\\ \\theta=180^\\circ-60^\\circ$"
+     ],
+     "result": "$\\theta=120^\\circ$",
+     "type": "Inclination"
+    },
+    {
+     "question": "The slope of the line through $(2,\\,-3)$ and $(k,\\,5)$ is $2$. Find $k$.",
+     "use": [
+      "m=\\dfrac{y_2-y_1}{x_2-x_1},\\ x_1\\ne x_2"
+     ],
+     "steps": [
+      "$\\dfrac{5-(-3)}{k-2}=2\\ \\Rightarrow\\ 8=2k-4$"
+     ],
+     "result": "$k=6$",
+     "type": "Unknown coordinate"
+    },
+    {
+     "question": "Show that $A(1,\\,-1)$, $B(2,\\,1)$ and $C(4,\\,5)$ are collinear.",
+     "use": [
+      "A,B,C \\text{ collinear}\\iff \\text{Area}=0\\iff m_{AB}=m_{BC}"
+     ],
+     "steps": [
+      "$m_{AB}=\\dfrac{1+1}{2-1}=2,\\qquad m_{BC}=\\dfrac{5-1}{4-2}=2$",
+      "$m_{AB}=m_{BC}$ and $B$ is common"
+     ],
+     "result": "$A$, $B$, $C$ are collinear.",
+     "type": "Collinearity by slopes"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Parallel lines, perpendicular lines and the angle between them",
+   "formulas": [
+    "\\text{Parallel}: m_1=m_2",
+    "\\text{Perpendicular}: m_1m_2=-1",
+    "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|"
+   ],
+   "examples": [
+    {
+     "question": "The line through $(-2,\\,6)$ and $(4,\\,8)$ is perpendicular to the line through $(8,\\,12)$ and $(x,\\,24)$. Find $x$.",
+     "use": [
+      "\\text{Perpendicular}: m_1m_2=-1"
+     ],
+     "steps": [
+      "$m_1=\\dfrac{8-6}{4+2}=\\dfrac13,\\qquad m_2=\\dfrac{24-12}{x-8}=\\dfrac{12}{x-8}$",
+      "$\\dfrac13\\cdot\\dfrac{12}{x-8}=-1\\ \\Rightarrow\\ x-8=-4$"
+     ],
+     "result": "$x=4$",
+     "type": "Perpendicular condition"
+    },
+    {
+     "question": "Find the acute angle between $y-\\sqrt3x-5=0$ and $\\sqrt3y-x+6=0$.",
+     "use": [
+      "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|"
+     ],
+     "steps": [
+      "$m_1=\\sqrt3,\\qquad m_2=\\dfrac1{\\sqrt3}$",
+      "$\\tan\\theta=\\left|\\dfrac{\\frac1{\\sqrt3}-\\sqrt3}{1+1}\\right|=\\left|\\dfrac{-\\frac2{\\sqrt3}}{2}\\right|=\\dfrac1{\\sqrt3}$"
+     ],
+     "result": "$30^\\circ$",
+     "type": "Angle between lines"
+    },
+    {
+     "question": "The angle between two lines is $\\dfrac\\pi4$ and the slope of one line is $\\dfrac12$. Find the slope of the other line.",
+     "use": [
+      "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|"
+     ],
+     "steps": [
+      "$\\left|\\dfrac{m-\\frac12}{1+\\frac m2}\\right|=1\\ \\Rightarrow\\ \\dfrac{2m-1}{2+m}=\\pm1$",
+      "$2m-1=2+m\\Rightarrow m=3;\\qquad 2m-1=-2-m\\Rightarrow m=-\\dfrac13$"
+     ],
+     "result": "$3$ or $-\\dfrac13$",
+     "type": "Unknown slope from an angle"
+    },
+    {
+     "question": "Show that the triangle with vertices $A(4,\\,4)$, $B(3,\\,5)$, $C(-1,\\,-1)$ is right-angled.",
+     "use": [
+      "\\text{Perpendicular}: m_1m_2=-1"
+     ],
+     "steps": [
+      "$m_{AB}=\\dfrac{5-4}{3-4}=-1,\\qquad m_{AC}=\\dfrac{-1-4}{-1-4}=1$",
+      "$m_{AB}\\cdot m_{AC}=-1\\ \\Rightarrow\\ AB\\perp AC$"
+     ],
+     "result": "Right angle at $A$.",
+     "type": "Right-angled triangle"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Point–slope and two-point forms",
+   "formulas": [
+    "\\text{Parallel to } x\\text{-axis}: y=b;\\quad \\text{parallel to } y\\text{-axis}: x=a",
+    "y-y_1=m(x-x_1)",
+    "y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)"
+   ],
+   "examples": [
+    {
+     "question": "Write the equations of the lines through $(-2,\\,3)$ parallel to the axes.",
+     "use": [
+      "\\text{Parallel to } x\\text{-axis}: y=b;\\quad \\text{parallel to } y\\text{-axis}: x=a"
+     ],
+     "steps": [
+      "Parallel to the $x$-axis: $y=3$",
+      "Parallel to the $y$-axis: $x=-2$"
+     ],
+     "result": "$y=3$ and $x=-2$",
+     "type": "Lines parallel to the axes"
+    },
+    {
+     "question": "Find the line through $(-4,\\,3)$ with slope $\\dfrac12$.",
+     "use": [
+      "y-y_1=m(x-x_1)"
+     ],
+     "steps": [
+      "$y-3=\\dfrac12(x+4)$",
+      "$2y-6=x+4$"
+     ],
+     "result": "$x-2y+10=0$",
+     "type": "Point–slope form"
+    },
+    {
+     "question": "Find the line through $(-1,\\,1)$ and $(2,\\,-4)$.",
+     "use": [
+      "y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)"
+     ],
+     "steps": [
+      "$m=\\dfrac{-4-1}{2+1}=-\\dfrac53$",
+      "$y-1=-\\dfrac53(x+1)\\ \\Rightarrow\\ 3y-3=-5x-5$"
+     ],
+     "result": "$5x+3y+2=0$",
+     "type": "Two-point form"
+    },
+    {
+     "question": "Find the line through the origin making $75^\\circ$ with the positive $x$-axis.",
+     "use": [
+      "m=\\tan\\theta,\\ 0^\\circ\\le\\theta<180^\\circ,\\ \\theta\\ne90^\\circ",
+      "y-y_1=m(x-x_1)"
+     ],
+     "steps": [
+      "$m=\\tan75^\\circ=\\tan(45^\\circ+30^\\circ)=\\dfrac{1+\\frac1{\\sqrt3}}{1-\\frac1{\\sqrt3}}=2+\\sqrt3$"
+     ],
+     "result": "$y=(2+\\sqrt3)\\,x$",
+     "type": "Line from an angle"
+    },
+    {
+     "question": "$A(2,\\,1)$, $B(-2,\\,3)$, $C(4,\\,5)$ are vertices of a triangle. Find the median through $A$.",
+     "use": [
+      "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)",
+      "y-y_1=m(x-x_1)"
+     ],
+     "steps": [
+      "Mid-point of $BC=(1,\\,4)$",
+      "$m=\\dfrac{4-1}{1-2}=-3,\\qquad y-1=-3(x-2)$"
+     ],
+     "result": "$3x+y-7=0$",
+     "type": "Median of a triangle"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Slope–intercept and intercept forms",
+   "formulas": [
+    "y=mx+c",
+    "\\dfrac xa+\\dfrac yb=1"
+   ],
+   "examples": [
+    {
+     "question": "Find the line with slope $-\\dfrac12$ and $y$-intercept $2$.",
+     "use": [
+      "y=mx+c"
+     ],
+     "steps": [
+      "$y=-\\dfrac12x+2\\ \\Rightarrow\\ 2y=-x+4$"
+     ],
+     "result": "$x+2y-4=0$",
+     "type": "Slope–intercept form"
+    },
+    {
+     "question": "Find the line with intercepts $-3$ and $2$ on the $x$- and $y$-axes.",
+     "use": [
+      "\\dfrac xa+\\dfrac yb=1"
+     ],
+     "steps": [
+      "$\\dfrac{x}{-3}+\\dfrac y2=1$",
+      "Multiply by $6$: $-2x+3y=6$"
+     ],
+     "result": "$2x-3y+6=0$",
+     "type": "Intercept form"
+    },
+    {
+     "question": "Find the line through $(2,\\,3)$ that makes equal intercepts on the axes.",
+     "use": [
+      "\\dfrac xa+\\dfrac yb=1"
+     ],
+     "steps": [
+      "$\\dfrac xa+\\dfrac ya=1\\ \\Rightarrow\\ x+y=a$",
+      "$(2,\\,3)$: $a=5$"
+     ],
+     "result": "$x+y=5$",
+     "type": "Equal intercepts"
+    },
+    {
+     "question": "$P(a,\\,b)$ is the mid-point of the segment of a line between the axes. Show that the line is $\\dfrac xa+\\dfrac yb=2$.",
+     "use": [
+      "\\dfrac xa+\\dfrac yb=1",
+      "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)"
+     ],
+     "steps": [
+      "Let the line meet the axes at $(p,\\,0)$ and $(0,\\,q)$. Mid-point $=\\left(\\dfrac p2,\\ \\dfrac q2\\right)=(a,\\,b)$",
+      "$p=2a,\\ q=2b\\ \\Rightarrow\\ \\dfrac{x}{2a}+\\dfrac{y}{2b}=1$"
+     ],
+     "result": "$\\dfrac xa+\\dfrac yb=2$",
+     "type": "Mid-point of the intercept"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "General equation of a line",
+   "formulas": [
+    "Ax+By+C=0:\\ m=-\\dfrac AB",
+    "x\\text{-intercept}=-\\dfrac CA,\\quad y\\text{-intercept}=-\\dfrac CB",
+    "\\text{Parallel to } Ax+By+C=0:\\ Ax+By+k=0",
+    "\\text{Perpendicular to } Ax+By+C=0:\\ Bx-Ay+k=0"
+   ],
+   "examples": [
+    {
+     "question": "Find the slope and intercepts of $3x-4y+10=0$.",
+     "use": [
+      "Ax+By+C=0:\\ m=-\\dfrac AB",
+      "x\\text{-intercept}=-\\dfrac CA,\\quad y\\text{-intercept}=-\\dfrac CB"
+     ],
+     "steps": [
+      "$m=-\\dfrac{3}{-4}=\\dfrac34$",
+      "$x\\text{-int}=-\\dfrac{10}{3},\\qquad y\\text{-int}=-\\dfrac{10}{-4}=\\dfrac52$"
+     ],
+     "result": "$m=\\dfrac34$, intercepts $-\\dfrac{10}{3}$ and $\\dfrac52$",
+     "type": "Read slope and intercepts"
+    },
+    {
+     "question": "Find the line through $(1,\\,-2)$ parallel to $3x+4y=7$.",
+     "use": [
+      "\\text{Parallel to } Ax+By+C=0:\\ Ax+By+k=0"
+     ],
+     "steps": [
+      "$3x+4y+k=0$",
+      "$(1,\\,-2)$: $3-8+k=0\\Rightarrow k=5$"
+     ],
+     "result": "$3x+4y+5=0$",
+     "type": "Parallel line"
+    },
+    {
+     "question": "Find the line perpendicular to $x-7y+5=0$ with $x$-intercept $3$.",
+     "use": [
+      "\\text{Perpendicular to } Ax+By+C=0:\\ Bx-Ay+k=0"
+     ],
+     "steps": [
+      "$7x+y+k=0$",
+      "$(3,\\,0)$: $21+k=0\\Rightarrow k=-21$"
+     ],
+     "result": "$7x+y-21=0$",
+     "type": "Perpendicular line"
+    },
+    {
+     "question": "Find $k$ if $3x-4y+7=0$ and $kx+2y-5=0$ are perpendicular.",
+     "use": [
+      "Ax+By+C=0:\\ m=-\\dfrac AB",
+      "\\text{Perpendicular}: m_1m_2=-1"
+     ],
+     "steps": [
+      "$m_1=\\dfrac34,\\qquad m_2=-\\dfrac k2$",
+      "$\\dfrac34\\cdot\\left(-\\dfrac k2\\right)=-1\\ \\Rightarrow\\ 3k=8$"
+     ],
+     "result": "$k=\\dfrac83$",
+     "type": "Condition on a coefficient"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Point of intersection and concurrent lines",
+   "formulas": [
+    "\\text{Concurrent: } L_1\\cap L_2 \\text{ lies on } L_3",
+    "y-y_1=m(x-x_1)"
+   ],
+   "examples": [
+    {
+     "question": "Find the point of intersection of $3x+2y=12$ and $x-y=-1$.",
+     "use": [],
+     "steps": [
+      "$x=y-1\\ \\Rightarrow\\ 3(y-1)+2y=12\\ \\Rightarrow\\ y=3$",
+      "$x=3-1=2$"
+     ],
+     "result": "$(2,\\,3)$",
+     "type": "Intersection"
+    },
+    {
+     "question": "Find $k$ if $3x+y-2=0$, $kx+2y-3=0$ and $2x-y-3=0$ are concurrent.",
+     "use": [
+      "\\text{Concurrent: } L_1\\cap L_2 \\text{ lies on } L_3"
+     ],
+     "steps": [
+      "Add the first and third: $5x-5=0\\Rightarrow x=1,\\ y=-1$",
+      "$(1,\\,-1)$ on the second: $k-2-3=0$"
+     ],
+     "result": "$k=5$",
+     "type": "Concurrent lines"
+    },
+    {
+     "question": "Find the line through the intersection of $x+y=5$ and $x-y=1$, parallel to $2x+y=1$.",
+     "use": [
+      "\\text{Parallel to } Ax+By+C=0:\\ Ax+By+k=0"
+     ],
+     "steps": [
+      "Intersection: $x=3,\\ y=2$",
+      "$2x+y+k=0$: $6+2+k=0\\Rightarrow k=-8$"
+     ],
+     "result": "$2x+y-8=0$",
+     "type": "Line through an intersection"
+    },
+    {
+     "question": "Find the area of the triangle formed by $y=x$, $x+y=4$ and $y=0$.",
+     "use": [
+      "\\text{Area}=\\dfrac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|"
+     ],
+     "steps": [
+      "Vertices: $(0,\\,0)$, $(4,\\,0)$, $(2,\\,2)$",
+      "Area $=\\dfrac12\\cdot4\\cdot2$"
+     ],
+     "result": "$4$ sq. units",
+     "type": "Triangle formed by lines"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Distance of a point from a line",
+   "formulas": [
+    "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}",
+    "d=\\dfrac{|C_1-C_2|}{\\sqrt{A^2+B^2}}",
+    "\\text{Foot}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{Ax_1+By_1+C}{A^2+B^2}",
+    "\\text{Image}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{2(Ax_1+By_1+C)}{A^2+B^2}"
+   ],
+   "examples": [
+    {
+     "question": "Find the distance of $(3,\\,-5)$ from $3x-4y-26=0$.",
+     "use": [
+      "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}"
+     ],
+     "steps": [
+      "$d=\\dfrac{|9+20-26|}{\\sqrt{9+16}}$"
+     ],
+     "result": "$\\dfrac35$",
+     "type": "Point to line"
+    },
+    {
+     "question": "Find the distance between $15x+8y-34=0$ and $15x+8y+31=0$.",
+     "use": [
+      "d=\\dfrac{|C_1-C_2|}{\\sqrt{A^2+B^2}}"
+     ],
+     "steps": [
+      "$d=\\dfrac{|-34-31|}{\\sqrt{225+64}}=\\dfrac{65}{17}$"
+     ],
+     "result": "$\\dfrac{65}{17}$",
+     "type": "Parallel lines"
+    },
+    {
+     "question": "Find the points on the $x$-axis whose distance from $\\dfrac x3+\\dfrac y4=1$ is $4$.",
+     "use": [
+      "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}"
+     ],
+     "steps": [
+      "Line: $4x+3y-12=0$. Point: $(a,\\,0)$",
+      "$\\dfrac{|4a-12|}{5}=4\\ \\Rightarrow\\ 4a-12=\\pm20$"
+     ],
+     "result": "$(8,\\,0)$ and $(-2,\\,0)$",
+     "type": "Unknown point"
+    },
+    {
+     "question": "Find the foot of the perpendicular from $(-1,\\,3)$ to $3x-4y-16=0$.",
+     "use": [
+      "\\text{Foot}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{Ax_1+By_1+C}{A^2+B^2}"
+     ],
+     "steps": [
+      "$\\dfrac{h+1}{3}=\\dfrac{k-3}{-4}=-\\dfrac{-3-12-16}{25}=\\dfrac{31}{25}$",
+      "$h=-1+\\dfrac{93}{25},\\qquad k=3-\\dfrac{124}{25}$"
+     ],
+     "result": "$\\left(\\dfrac{68}{25},\\ -\\dfrac{49}{25}\\right)$",
+     "type": "Foot of the perpendicular"
+    },
+    {
+     "question": "Find the image of $(3,\\,8)$ in the line $x+3y-7=0$.",
+     "use": [
+      "\\text{Image}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{2(Ax_1+By_1+C)}{A^2+B^2}"
+     ],
+     "steps": [
+      "$\\dfrac{h-3}{1}=\\dfrac{k-8}{3}=-\\dfrac{2(3+24-7)}{10}=-4$"
+     ],
+     "result": "$(-1,\\,-4)$",
+     "type": "Image in a line"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Board exam problems",
+   "formulas": [
+    "y-y_1=m(x-x_1)",
+    "\\text{Perpendicular}: m_1m_2=-1",
+    "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}",
+    "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)"
+   ],
+   "examples": [
+    {
+     "question": "Find the perpendicular bisector of $A(1,\\,1)$ and $B(3,\\,5)$.",
+     "use": [
+      "\\text{Mid-point}:\\ \\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)",
+      "\\text{Perpendicular}: m_1m_2=-1",
+      "y-y_1=m(x-x_1)"
+     ],
+     "steps": [
+      "Mid-point $=(2,\\,3)$, $\\ m_{AB}=2\\ \\Rightarrow\\ m=-\\dfrac12$",
+      "$y-3=-\\dfrac12(x-2)$"
+     ],
+     "result": "$x+2y-8=0$",
+     "type": "Perpendicular bisector"
+    },
+    {
+     "question": "For the triangle $A(2,\\,3)$, $B(4,\\,-1)$, $C(1,\\,2)$, find the altitude from $A$ and its length.",
+     "use": [
+      "\\text{Perpendicular}: m_1m_2=-1",
+      "y-y_1=m(x-x_1)",
+      "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}"
+     ],
+     "steps": [
+      "$m_{BC}=\\dfrac{2+1}{1-4}=-1\\ \\Rightarrow$ altitude slope $=1$: $\\ y-3=x-2$",
+      "$BC$: $x+y-3=0$. Length $=\\dfrac{|2+3-3|}{\\sqrt2}=\\sqrt2$"
+     ],
+     "result": "$x-y+1=0$, length $\\sqrt2$",
+     "type": "Altitude of a triangle"
+    },
+    {
+     "question": "The line through $(h,\\,3)$ and $(4,\\,1)$ meets $7x-9y-19=0$ at right angles. Find $h$.",
+     "use": [
+      "\\text{Perpendicular}: m_1m_2=-1"
+     ],
+     "steps": [
+      "Slope of the given line $=\\dfrac79\\ \\Rightarrow$ required slope $=-\\dfrac97$",
+      "$\\dfrac{1-3}{4-h}=-\\dfrac97\\ \\Rightarrow\\ 14=9(4-h)$"
+     ],
+     "result": "$h=\\dfrac{22}{9}$",
+     "type": "Unknown coordinate"
+    },
+    {
+     "question": "Fahrenheit $F$ and Celsius $C$ are linearly related: $C=0$ gives $F=32$ and $C=100$ gives $F=212$. Find $F$ when $C=37$.",
+     "use": [
+      "y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)"
+     ],
+     "steps": [
+      "$m=\\dfrac{212-32}{100-0}=\\dfrac95,\\qquad F-32=\\dfrac95C$",
+      "$F=\\dfrac95(37)+32=66.6+32$"
+     ],
+     "result": "$98.6$",
+     "type": "Application"
+    }
+   ],
+   "level": "board"
+  },
+  {
+   "title": "Challenge problems (JEE)",
+   "formulas": [
+    "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|",
+    "\\text{Bisectors}:\\ \\dfrac{a_1x+b_1y+c_1}{\\sqrt{a_1^2+b_1^2}}=\\pm\\dfrac{a_2x+b_2y+c_2}{\\sqrt{a_2^2+b_2^2}}",
+    "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}"
+   ],
+   "examples": [
+    {
+     "question": "Find the lines through $(2,\\,3)$ that make $45^\\circ$ with $x-2y=3$.",
+     "use": [
+      "\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|"
+     ],
+     "steps": [
+      "$\\left|\\dfrac{m-\\frac12}{1+\\frac m2}\\right|=1\\ \\Rightarrow\\ m=3$ or $m=-\\dfrac13$",
+      "$y-3=3(x-2)$ and $y-3=-\\dfrac13(x-2)$"
+     ],
+     "result": "$3x-y-3=0$ and $x+3y-11=0$",
+     "type": "Lines at a given angle"
+    },
+    {
+     "question": "Find the bisectors of the angles between $3x-4y+7=0$ and $12x+5y-2=0$.",
+     "use": [
+      "\\text{Bisectors}:\\ \\dfrac{a_1x+b_1y+c_1}{\\sqrt{a_1^2+b_1^2}}=\\pm\\dfrac{a_2x+b_2y+c_2}{\\sqrt{a_2^2+b_2^2}}"
+     ],
+     "steps": [
+      "$\\dfrac{3x-4y+7}{5}=\\pm\\dfrac{12x+5y-2}{13}$",
+      "$+$: $39x-52y+91=60x+25y-10$",
+      "$-$: $39x-52y+91=-60x-25y+10$"
+     ],
+     "result": "$21x+77y-101=0$ and $11x-3y+9=0$",
+     "type": "Angle bisectors"
+    },
+    {
+     "question": "Find the lines through $(3,\\,4)$ at distance $3$ from the origin.",
+     "use": [
+      "d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}"
+     ],
+     "steps": [
+      "Vertical line $x=3$: distance $=3$. It works.",
+      "$y-4=m(x-3)$: $\\dfrac{|4-3m|}{\\sqrt{1+m^2}}=3\\ \\Rightarrow\\ 16-24m+9m^2=9+9m^2\\ \\Rightarrow\\ m=\\dfrac7{24}$"
+     ],
+     "result": "$x=3$ and $7x-24y+75=0$",
+     "type": "Do not miss the vertical line"
+    },
+    {
+     "question": "Find the area of the triangle formed by $y=x$, $y=2x$ and $y=3x+4$.",
+     "use": [
+      "\\text{Area}=\\dfrac12\\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\right|"
+     ],
+     "steps": [
+      "Vertices: $(0,\\,0)$, $(-2,\\,-2)$, $(-4,\\,-8)$",
+      "Area $=\\dfrac12\\left|(-2)(-8)-(-4)(-2)\\right|=\\dfrac12|16-8|$"
+     ],
+     "result": "$4$ sq. units",
+     "type": "Triangle formed by lines"
+    }
+   ],
+   "level": "challenge"
+  }
+ ]
+}

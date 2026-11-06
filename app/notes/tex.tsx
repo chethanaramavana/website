@@ -3,7 +3,7 @@ import 'katex/dist/katex.min.css';
 import './tex.css';
 
 export default function Tex({ children }: { children: string }) {
-  const text = children.replace(/\\dx\b/g, '\\,dx').replace(/\\dt\b/g, '\\,dt').replace(/\\prime\\prime/g, "''").replace(/\\prime/g, "'").replace(/\\textbf\{([^{}]*)\}/g, '$1').replace(/\\par\b/g, '\n');
+  const text = children.replace(/\\dx\b/g, '\\,dx').replace(/\\dt\b/g, '\\,dt').replace(/\\prime\\prime/g, "''").replace(/\\prime/g, "'").replace(/\\par(?![a-zA-Z])/g, '\n').replace(/\\textbf\{([^{}]*)\}/g, '$1');
   return <span className="tex-prose">{text.split(/(\$\$[\s\S]*?\$\$|\$[^$]+\$)/g).map((part, i) => {
     if (!part.startsWith('$')) return <span key={i}>{part}</span>;
     const display = part.startsWith('$$');

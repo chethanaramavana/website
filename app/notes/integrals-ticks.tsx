@@ -1,24 +1,24 @@
 'use client';
 import {useEffect, useState} from 'react';
 
-const KEY = 'ramavana-integrals-ticks', EVENT = 'ramavana-integrals-ticks';
-function read(): number[] { try { const v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v.filter((n) => Number.isInteger(n)) : []; } catch { return []; } }
-function write(v: number[]) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch { /* storage blocked: the tick lasts for this visit only */ } window.dispatchEvent(new CustomEvent(EVENT, {detail: v})); }
-function useTicks() {
+const DEFAULT_KEY = 'ramavana-integrals-ticks';
+function read(KEY: string): number[] { try { const v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v.filter((n) => Number.isInteger(n)) : []; } catch { return []; } }
+function write(KEY: string, v: number[]) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch { /* storage blocked: the tick lasts for this visit only */ } window.dispatchEvent(new CustomEvent(KEY, {detail: v})); }
+function useTicks(KEY: string) {
   const [ticks, setTicks] = useState<number[]>([]);
   useEffect(() => {
-    const load = (e?: Event) => setTicks(e instanceof CustomEvent && Array.isArray(e.detail) ? e.detail : read());
+    const load = (e?: Event) => setTicks(e instanceof CustomEvent && Array.isArray(e.detail) ? e.detail : read(KEY));
     load();
-    window.addEventListener(EVENT, load); window.addEventListener('storage', load);
-    return () => { window.removeEventListener(EVENT, load); window.removeEventListener('storage', load); };
-  }, []);
+    window.addEventListener(KEY, load); window.addEventListener('storage', load);
+    return () => { window.removeEventListener(KEY, load); window.removeEventListener('storage', load); };
+  }, [KEY]);
   return ticks;
 }
 
 /** A large tick box at the end of each session. The student ticks it after understanding the session. */
-export function SessionTick({index, total}: {index: number; total: number}) {
-  const ticks = useTicks(), done = ticks.includes(index);
-  const toggle = () => write(done ? ticks.filter((t) => t !== index) : [...ticks, index].sort((a, b) => a - b));
+export function SessionTick({index, total, storeKey = DEFAULT_KEY}: {index: number; total: number; storeKey?: string}) {
+  const ticks = useTicks(storeKey), done = ticks.includes(index);
+  const toggle = () => write(storeKey, done ? ticks.filter((t) => t !== index) : [...ticks, index].sort((a, b) => a - b));
   const left = total - ticks.filter((t) => t < total).length - (done ? 0 : 1);
   return <div className={`ir-tick${done ? ' is-done' : ''}`}>
     <button type="button" aria-pressed={done} onClick={toggle}>
@@ -30,8 +30,8 @@ export function SessionTick({index, total}: {index: number; total: number}) {
 }
 
 /** A sticky progress bar with one chip for each session. */
-export function SessionProgress({titles}: {titles: string[]}) {
-  const ticks = useTicks(), done = ticks.filter((t) => t < titles.length).length, pct = Math.round(done / titles.length * 100);
+export function SessionProgress({titles, storeKey = DEFAULT_KEY}: {titles: string[]; storeKey?: string}) {
+  const ticks = useTicks(storeKey), done = ticks.filter((t) => t < titles.length).length, pct = Math.round(done / titles.length * 100);
   return <div className="ir-progress" aria-label="Your progress">
     <div className="ir-progress-top"><strong>Your progress</strong><span>{done} of {titles.length} sessions ticked · {pct}%</span></div>
     <div className="ir-bar" role="progressbar" aria-valuemin={0} aria-valuemax={titles.length} aria-valuenow={done}><span style={{width: `${pct}%`}} /></div>
