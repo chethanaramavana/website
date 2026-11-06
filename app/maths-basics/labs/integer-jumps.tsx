@@ -21,7 +21,7 @@ function Controls({stepper,total,nextLabel='Next jump'}:{stepper:ReturnType<type
 }
 
 /** A number line with a man who stands on a number, faces left or right, turns around and jumps. */
-export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEvery=1,marks=[],showMan=true}:{min:number;max:number;start:number;actions:Action[];step:number;label:string;labelEvery?:number;tickEvery?:number;marks?:number[];showMan?:boolean}){
+export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEvery=1,marks=[],showMan=true,sizeLabels=false}:{min:number;max:number;start:number;actions:Action[];step:number;label:string;labelEvery?:number;tickEvery?:number;marks?:number[];showMan?:boolean;sizeLabels?:boolean}){
  const X=(v:number)=>40+(v-min)*520/(max-min),axis=176;
  let pos=start,right=true;
  const done=actions.slice(0,step);
@@ -36,9 +36,9 @@ export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEver
   {ticks.map(v=><g key={v}><path d={`M${X(v)} ${axis-7}v14`} stroke={ink} strokeWidth={v===0?3:1.5}/>{v%labelEvery===0&&<text x={X(v)} y={axis+26} textAnchor="middle" fontSize={max-min>20?12:14} fontWeight={v===0?700:400} fill={ink}>{fmt(v)}</text>}</g>)}
   {marks.map(v=><circle key={v} cx={X(v)} cy={axis} r="6" fill={gold} stroke={ink}/>)}
   {min<0&&<text x="40" y="230" fontSize="13" fill={ink}>← negative side</text>}
-  {max>0&&<text x="560" y="230" textAnchor="end" fontSize="13" fill={ink}>positive side →</text>}
+  {max>0&&min<0&&<text x="560" y="230" textAnchor="end" fontSize="13" fill={ink}>positive side →</text>}
   {jumps.map((j,i)=>{const a=X(j.from),b=X(j.to),h=Math.min(70,16+Math.abs(b-a)*0.45),mid=(a+b)/2,d=b>a?1:-1;
-   return <g key={i}><path d={`M${a} ${axis-3}Q${mid} ${axis-3-2*h} ${b} ${axis-3}`} fill="none" stroke={j.back?'#2f6f9f':gold} strokeWidth="3" strokeDasharray={j.back?'7 5':undefined}/><path d={`M${b} ${axis-3}l${-7*d} -9l${3*d} 0z`} fill={j.back?'#2f6f9f':gold}/>{jumps.length<=12&&<text x={mid} y={axis-h-10} textAnchor="middle" fontSize="12" fill={ink}>{i+1}</text>}</g>;})}
+   return <g key={i}><path d={`M${a} ${axis-3}Q${mid} ${axis-3-2*h} ${b} ${axis-3}`} fill="none" stroke={j.back?'#2f6f9f':gold} strokeWidth="3" strokeDasharray={j.back?'7 5':undefined}/><path d={`M${b} ${axis-3}l${-7*d} -9l${3*d} 0z`} fill={j.back?'#2f6f9f':gold}/>{jumps.length<=12&&<text x={mid} y={axis-h-10} textAnchor="middle" fontSize="12" fontWeight={sizeLabels&&Math.abs(j.to-j.from)>1?700:400} fill={ink}>{sizeLabels?(Math.abs(j.to-j.from)>1?`+${Math.abs(j.to-j.from)}`:`+1`):i+1}</text>}</g>;})}
   <path d={`M${X(start)} ${axis+36}l-6 -8h12z`} fill={ink}/>
   {showMan&&<g className="int-man" style={{transform:`translate(${X(pos)}px,0px)`}}>
    <g key={step} className={last?.kind==='jump'?'int-hop':last?.kind==='turn'?'int-turn':''}>
@@ -208,6 +208,76 @@ export function DivisibilityLab(){
   <Why>
    <p>{yes.length?`${n} passes the tests for ${yes.join(', ')}. So ${yes.join(', ')} are factors of ${n}.`:`${n} passes none of these tests.`} Check one by dividing: {yes.length?`${n} ÷ ${yes[yes.length-1]} = ${n/yes[yes.length-1]}, with nothing left over.`:''}</p>
    <p>Each test looks at only a small part of the number, so it is quicker than long division.</p>
+  </Why>
+ </Lab>;
+}
+
+/** Addition of whole numbers: the man stands on the first number and walks forward. Big numbers: a jump of 10 first, then ones. */
+export function WholeAddJumpLab(){
+ const cases=[{name:'8 + 5',a:8,b:5},{name:'27 + 15',a:27,b:15},{name:'Make your own',a:0,b:0}];
+ const [pick,setPick]=useState(0),[ca,setA]=useState(6),[cb,setB]=useState(7);
+ const own=pick===2,a=own?ca:cases[pick].a,b=own?cb:cases[pick].b,result=a+b;
+ const tens=Math.floor(b/10),ones=b%10;
+ const actions:Action[]=[...Array.from({length:tens},(_,i):Action=>({kind:'jump',from:a+10*i,to:a+10*(i+1),back:false})),...unitJumps(a+10*tens,ones,1,false)];
+ const stepper=useStepper(actions.length,`${a},${b}`);
+ const finished=stepper.step>=actions.length;
+ const at=actions.slice(0,stepper.step).reduce((p,x)=>x.kind==='jump'?x.to:p,a);
+ const min=Math.max(0,Math.floor((a-2)/5)*5),max=Math.max(min+20,Math.ceil((result+2)/5)*5);
+ return <Lab title="Add by walking forward on the number line">
+  <Choices labels={cases.map(c=>c.name)} value={pick} onChange={setPick} label="Choose an addition"/>
+  {own&&<><Slider label="Start number" value={ca} min={0} max={20} onChange={setA}/><Slider label="Number to add" value={cb} min={0} max={15} onChange={setB}/></>}
+  <MathLine>{`${a} + ${b} = ${finished?result:'?'}`}</MathLine>
+  <JumpLine min={min} max={max} start={a} actions={actions} step={stepper.step} labelEvery={max-min>25?5:1} sizeLabels label={`Man starts at ${a} and walks forward ${b} steps to ${result}`}/>
+  <p className="int-status" aria-live="polite">{stepper.step===0?`He stands on ${a} and faces forward.`:finished?`He lands on ${result}.`:`He is on ${at}.`}</p>
+  <Controls stepper={stepper} total={actions.length}/>
+  <Why>
+   <p>{`Start on the first number, ${a}. Adding ${b} means walking forward ${b} steps. ${tens?`For a big number, take a jump of 10 first: ${a} + 10 = ${a+10}. Then ${ones} small steps of 1.`:'Count each step: one, two, three, …'} He stops on ${result}, so ${a} + ${b} = ${result}.`}</p>
+   <p>Start on the bigger number to save steps: 5 + 8 and 8 + 5 both make 13, but from 8 there are only 5 steps.</p>
+  </Why>
+ </Lab>;
+}
+
+function Frog({x,y,flip,color}:{x:number;y:number;flip:boolean;color:string}){
+ return <g className="int-man" style={{transform:`translate(${x}px,${y}px)`}}><g transform={`scale(1,${flip?-1:1})`}>
+  <ellipse cx="0" cy="-14" rx="14" ry="10" fill={color} stroke={ink} strokeWidth="2"/>
+  <circle cx="-6" cy="-24" r="4.5" fill="#fff" stroke={ink} strokeWidth="1.5"/><circle cx="6" cy="-24" r="4.5" fill="#fff" stroke={ink} strokeWidth="1.5"/>
+  <circle cx="-6" cy="-24" r="1.6" fill={ink}/><circle cx="6" cy="-24" r="1.6" fill={ink}/>
+  <path d="M-12 -6l-6 6M12 -6l6 6" stroke={ink} strokeWidth="2" strokeLinecap="round"/>
+ </g></g>;
+}
+
+/** LCM: two frogs start at 0. The frog that is behind always jumps next. The first number where both land is the LCM. */
+export function FrogsLcmLab(){
+ const pairs=[[4,6],[3,5],[6,8],[2,7]];
+ const [pick,setPick]=useState(0),[ca,setA]=useState(4),[cb,setB]=useState(10);
+ const own=pick===4,[p,q]=own?[ca,cb]:pairs[pick];
+ const moves:{frog:0|1;from:number;to:number}[]=[];
+ let pa=0,pb=0;while(!(pa===pb&&pa>0)&&moves.length<40){if(pa<=pb){moves.push({frog:0,from:pa,to:pa+p});pa+=p;}else{moves.push({frog:1,from:pb,to:pb+q});pb+=q;}}
+ const lcm=pa,stepper=useStepper(moves.length,`${p},${q}`),done=moves.slice(0,stepper.step),finished=stepper.step>=moves.length;
+ const posA=done.filter(m=>m.frog===0).at(-1)?.to??0,posB=done.filter(m=>m.frog===1).at(-1)?.to??0;
+ const landA=done.filter(m=>m.frog===0).map(m=>m.to),landB=done.filter(m=>m.frog===1).map(m=>m.to);
+ const max=Math.ceil((lcm+2)/5)*5,X=(v:number)=>40+v*520/max,axis=120,step=max>40?5:max>20?2:1;
+ const ticks=Array.from({length:max+1},(_,i)=>i);
+ return <Lab title="Two frogs: where do they first land together?">
+  <Choices labels={['4 and 6','3 and 5','6 and 8','2 and 7','Make your own']} value={pick} onChange={setPick} label="Choose the jump sizes"/>
+  {own&&<><Slider label="Gold frog jumps" value={ca} min={2} max={9} onChange={setA}/><Slider label="Navy frog jumps" value={cb} min={2} max={12} onChange={setB}/></>}
+  <svg className="lab-canvas int-jump" viewBox="0 30 600 190" role="img" aria-label={`Gold frog jumps in ${p}s, navy frog jumps in ${q}s. They first land together on ${lcm}.`}>
+   <line x1="34" y1={axis} x2="566" y2={axis} stroke={ink} strokeWidth="2"/>
+   {ticks.map(v=><g key={v}><path d={`M${X(v)} ${axis-5}v10`} stroke={ink} strokeWidth={v%step===0?1.5:.6}/></g>)}
+   {done.map((m,i)=>{const a=X(m.from),b=X(m.to),h=Math.min(46,10+(b-a)*0.4),up=m.frog===0;return <path key={i} d={`M${a} ${axis+(up?-4:4)}Q${(a+b)/2} ${axis+(up?-1:1)*(4+2*h)} ${b} ${axis+(up?-4:4)}`} fill="none" stroke={up?gold:ink} strokeWidth="2.5" strokeDasharray={up?undefined:'6 4'}/>;})}
+   {landA.map(v=><g key={'a'+v}><circle cx={X(v)} cy={axis} r="5" fill={gold} stroke={ink}/><text x={X(v)} y={axis-58} textAnchor="middle" fontSize="13" fontWeight="700" fill="#8a6514">{v}</text></g>)}
+   {landB.map(v=><g key={'b'+v}><circle cx={X(v)} cy={axis} r="5" fill={ink}/><text x={X(v)} y={axis+62} textAnchor="middle" fontSize="13" fontWeight="700" fill={ink}>{v}</text></g>)}
+   {finished&&<circle cx={X(lcm)} cy={axis} r="13" fill="none" stroke="#b0300e" strokeWidth="3"/>}
+   <text x={X(0)} y={axis+22} textAnchor="middle" fontSize="13" fill={ink}>0</text>
+   <Frog x={X(posA)} y={axis-8} flip={false} color={cream}/>
+   <Frog x={X(posB)} y={axis+44} flip={false} color={blue}/>
+  </svg>
+  <p className="int-status" aria-live="polite">{finished?`Both frogs land on ${lcm}.`:stepper.step===0?'Both frogs start at 0. The frog that is behind jumps next.':`Gold frog: ${landA.join(', ')||'0'}. Navy frog: ${landB.join(', ')||'0'}.`}</p>
+  <Controls stepper={stepper} total={moves.length}/>
+  <p><strong>{finished?`LCM of ${p} and ${q} = ${lcm}`:`LCM of ${p} and ${q} = ?`}</strong></p>
+  <Why>
+   <p>{`The gold frog lands on the multiples of ${p}. The navy frog lands on the multiples of ${q}. ${finished?`${lcm} is the first number on both lists, so it is the lowest common multiple.`:'Watch for the first number that both frogs land on.'}`}</p>
+   <p>{finished?`If they keep jumping, they meet again at ${2*lcm}, ${3*lcm}, … These are all common multiples, but ${lcm} is the lowest.${lcm===p*q?` Here the LCM is ${p} × ${q}, because ${p} and ${q} have no common factor except 1.`:` It is smaller than ${p} × ${q} = ${p*q}, because ${p} and ${q} share a common factor.`}`:'Use the LCM when two things repeat and you want the first time they happen together.'}</p>
   </Why>
  </Lab>;
 }

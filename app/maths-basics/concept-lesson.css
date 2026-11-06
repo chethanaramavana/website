@@ -280,3 +280,6 @@
 .fcut-success svg { flex:0 0 26px; width:26px; height:26px; margin-top:2px; }
 @media(prefers-reduced-motion:reduce) { .fcut-cuts { transition:none; } .fcut-pop { animation:none; } }
 @media(max-width:600px) { .fcut-eq { font-size:23px; gap:10px; } .fcut-new { font-size:18px; } }
+.garden-row { animation: garden-grow .45s ease; }
+@keyframes garden-grow { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .garden-row { animation: none; } }

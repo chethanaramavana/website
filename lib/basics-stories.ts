@@ -14,7 +14,7 @@ export const basicsStories:Record<string,BasicsStory[]>={
   story('The library lends its books','There are 502 books on the shelves. After 178 are borrowed, Dev counts what remains. The tens column starts with zero.','How can he exchange a hundred so that he can subtract the ones?'),
  ],
  'multiplication-division':[
-  story('Seats for the school show','The class sets out 4 rows of chairs, with 6 chairs in every row. Asha wants the total before the audience arrives.','Must she count every chair, or can the equal rows help?'),
+  story('Asha’s flower garden','Asha plants flowers in straight rows. She puts 6 flowers in every row and plants 4 rows.','Must she count every flower one by one, or can the equal rows help?'),
   story('A patchwork for the classroom','Dev makes a rectangular patchwork 13 squares wide and 4 squares high. He splits its width into 10 squares and 3 squares.','Can two smaller rectangles make the multiplication easier?'),
   story('Sharing the craft materials','Four groups are making posters. Asha gives each group 4 counters, arranging them in separate trays.','What does equal sharing look like? What if a few counters are left over?'),
  ],
@@ -44,7 +44,7 @@ export const basicsStories:Record<string,BasicsStory[]>={
  'hcf-lcm':[
   story('A packing puzzle with sixty counters','Asha splits 60 counters into 6 equal groups of 10. Then she keeps breaking the group sizes into smaller factors.','When can she stop splitting a factor?'),
   story('Ribbons for a celebration','Dev has ribbons 24 cm and 36 cm long. He wants the longest equal pieces that leave no ribbon unused.','What length could every piece have?'),
-  story('When will the lights meet again?','A blue light flashes every 4 seconds and a gold light every 6 seconds. They flash together at the start.','After how many seconds will they next flash together?'),
+  story('Two frogs on a number line','A gold frog jumps 4 steps at a time and a navy frog jumps 6 steps at a time. Both start at 0.','On which number will they first land together?'),
  ],
  fractions:[
   story('Sharing a snack fairly','Asha cuts a snack into 8 equal pieces. She puts 3 pieces on Dev’s plate and leaves the other pieces on the tray.','What fraction of the whole snack is on Dev’s plate? Why must the pieces be equal?'),
@@ -131,5 +131,11 @@ export const basicsStories:Record<string,BasicsStory[]>={
   story('Enlarging the class pennant','Dev enlarges a right-triangle pennant with sides 3, 4 and 5. Every side of the new pennant is twice as long.','Which lengths become 6, 8 and 10, and which features stay the same?'),
   story('Looking from one corner','Asha looks at a 3–4–5 right triangle from the marked angle θ. She names the opposite side, adjacent side and hypotenuse.','Why must you choose the angle before naming the opposite and adjacent sides?'),
   story('A ladder at a special angle','Asha leans a 10 m ladder against a wall so that it makes 60° with the ground. She wants the exact height of the top without measuring.','Which special triangle gives the exact value of sin 60°?'),
+ ],
+ 'circles':[
+  story('The round flower bed','Ravi ties a 5 m rope to a peg and walks around it, keeping the rope tight. He marks a round flower bed.','Which part of the circle is the peg, and which part is the rope?'),
+  story('A plank across a round pool','A plank of length 8 m lies across a round pool of radius 5 m. A rope hangs from the centre straight down to the middle of the plank.','How far is the plank from the centre of the pool?'),
+  story('Seats around a round stage','Meena and Kiran sit at different places on the same side of a round stage. Both look at the two ends of the stage curtain.','Why do they see the curtain at the same angle?'),
+  story('A bicycle wheel on the road','A bicycle wheel touches the road at one point. Two straight wires go from a nail outside the wheel and just touch its rim.','Why are the two wires equal in length?'),
  ],
 };

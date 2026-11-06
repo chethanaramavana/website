@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getChapterNotes } from '@/lib/chapter-notes';
 import NotesDocument from '../notes-document';
 import IntegralsOnline from '../integrals-online';
+import ExploreSims from '../explore-sims';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -18,5 +19,5 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
   if(slug === 'g12-integrals') return <IntegralsOnline/>;
   const notes = getChapterNotes(slug);
   if (!notes) return <main className="notes-missing"><h1>Notes are being prepared.</h1><a href="/">Back to chapters</a></main>;
-  return <>{slug === 'g12-integrals' && <aside style={{padding:'20px',textAlign:'center',background:'#eee7f9'}}><a href="/cbse/grade-12/integrals">Expanded Integrals notes, 50 free practice questions and CBSE / JEE papers →</a></aside>}<NotesDocument notes={notes} /></>;
+  return <>{slug === 'g12-integrals' && <aside style={{padding:'20px',textAlign:'center',background:'#eee7f9'}}><a href="/cbse/grade-12/integrals">Expanded Integrals notes, 50 free practice questions and CBSE / JEE papers →</a></aside>}<NotesDocument notes={notes} /><ExploreSims slug={slug} /></>;
 }

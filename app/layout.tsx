@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import './identity.css';
 import './learning-identity.css';
+import './paper-watermark.css';
 import SessionRenewal from './session-renewal';
 import StudentPresence from './student-activity';
 import LocalPreviewBanner from './local-preview-banner';

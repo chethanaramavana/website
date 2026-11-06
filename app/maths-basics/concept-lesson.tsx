@@ -29,13 +29,13 @@ export default function ConceptLesson({topic,index}:{topic:BasicsTopic;index:num
   </header>
   {discoverZero?<NumberStories/>:<>
    {story&&<section className="lesson-story-opening" aria-label="A story to start"><h3>{story.title}</h3><p><Tex>{story.scene}</Tex></p></section>}
-   {!investigation&&!(topic.slug==='factors-multiples'&&index===0)&&<div className="lesson-picture-first"><TopicPicture slug={topic.slug} index={index} v={concept.visual}/></div>}
+   {!investigation&&!(topic.slug==='factors-multiples'&&index===0)&&<div className="lesson-picture-first">{topic.slug==='multiplication-division'&&index===0?<MultiplicationGarden/>:<TopicPicture slug={topic.slug} index={index} v={concept.visual}/>}</div>}
    {story&&<><div className="lesson-story-question"><strong>What do you think?</strong><p><Tex>{story.question}</Tex></p></div>{<section className="lesson-story-bridge" aria-label="Connect the story to the maths"><span className="lesson-kicker">Connect the story to the maths</span><p><Tex>{concept.explain}</Tex></p></section>}</>}
    {topic.slug==='numbers'&&index===1&&<FacePlaceValue/>}
    {investigation?<><InvestigationLab slug={topic.slug} index={index}/>{!!concept.teaching?.length&&<section className="lesson-thinking" aria-label="Why it works"><span className="lesson-kicker">Why it works</span><ol>{concept.teaching.map((paragraph,i)=><li key={i}><span aria-hidden="true">{i+1}</span><p><Tex>{paragraph}</Tex></p></li>)}</ol></section>}</>:topic.slug==='numbers'&&index===2?<ComparisonLab/>:topic.slug==='multiplication-division'&&index===1?<MultiplicationSplit/>:!!concept.teaching?.length&&<section className="lesson-thinking" aria-label="Why it works"><span className="lesson-kicker">Why it works</span><ol>{concept.teaching.map((paragraph,i)=><li key={i}><span aria-hidden="true">{i+1}</span><p><Tex>{paragraph}</Tex></p></li>)}</ol></section>}
   </>}
   {!discoverZero&&<><section className="lesson-worked" aria-label="Worked example">
-   {topic.slug==='multiplication-division'&&index===0?<MultiplicationGarden/>:topic.slug==='multiplication-division'&&index===1?<MultiplicationWritten/>:topic.slug==='numbers'&&index===2?<ComparingNumbers/>:concept.workedExamples?<WorkedExamples examples={concept.workedExamples}/>:investigation?<GuidedWorked steps={concept.steps}/>:<><h3>Let’s work it out</h3><ol className="lesson-worked-steps">{concept.steps.map((step,i)=><li key={i}><Tex>{step}</Tex></li>)}</ol></>}
+   {topic.slug==='multiplication-division'&&index===1?<MultiplicationWritten/>:topic.slug==='numbers'&&index===2?<ComparingNumbers/>:concept.workedExamples?<WorkedExamples examples={concept.workedExamples}/>:investigation?<GuidedWorked steps={concept.steps}/>:<><h3>Let’s work it out</h3><ol className="lesson-worked-steps">{concept.steps.map((step,i)=><li key={i}><Tex>{step}</Tex></li>)}</ol></>}
   </section>
   <div className="lesson-takeaway"><strong>Take this with you</strong><p><Tex>{concept.remember}</Tex></p></div></>}
  </div>;

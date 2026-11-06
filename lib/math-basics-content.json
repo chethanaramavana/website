@@ -235,6 +235,7 @@
         },
         "steps": [
           "Together: 8 + 5 = 13 stickers.",
+          "On the number line: stand on 8 and walk 5 steps forward to 13.",
           "Difference: 8 − 5 = 3 stickers.",
           "Dev needs 3 more to have the same number as Asha."
         ],
@@ -400,17 +401,18 @@
     "concepts": [
       {
         "title": "Equal groups and times tables",
-        "explain": "Multiplication counts equal groups. Learn a table by building or splitting groups, not only by reciting it.",
+        "explain": "Multiplication counts equal groups quickly. 4 rows with 6 flowers in each row is 4 groups of 6. We write it as 4 × 6 and read it as “4 times 6”.",
         "visual": {
           "kind": "array",
           "rows": 4,
           "cols": 6,
-          "caption": "4 rows of 6 counters: 4 × 6 = 24"
+          "caption": "4 rows of 6 flowers: 4 × 6 = 24"
         },
         "steps": [
-          "6 + 6 + 6 + 6 = 24.",
-          "4 × 6 and 6 × 4 both count 24 counters.",
-          "To find 7 × 6, use 5 × 6 + 2 × 6 = 30 + 12 = 42."
+          "4 rows of 6: 6 + 6 + 6 + 6 = 24, so 4 × 6 = 24.",
+          "Turn it: 6 rows of 4 is also 24, so 4 × 6 = 6 × 4.",
+          "7 × 6 = 5 × 6 + 2 × 6 = 30 + 12 = 42.",
+          "9 × 7 = 10 × 7 − 7 = 70 − 7 = 63."
         ],
         "practice": [
           {
@@ -426,10 +428,10 @@
             "options": null
           }
         ],
-        "remember": "Check the groups first: multiplication counts equal groups. Each row in our garden has the same number of flowers.",
+        "remember": "Multiplication works only when every group is the same size. Rows × flowers in each row = total.",
         "teaching": [
-          "Picture 4 rows with 6 flowers in every row. Count along: 6, 12, 18, 24! Turn the arrangement and you have 6 rows of 4. Same flowers, same total: 4 × 6 = 6 × 4 = 24.",
-          "Want 7 rows of 6? Start with 5 rows: 30 flowers. Add 2 more rows: 12 flowers. Altogether, 30 + 12 = 42. One row keeps the group’s number; zero rows gives zero. If the rows have different numbers, count and add each row separately."
+          "Plant the garden one row at a time. Each new row adds 6 more flowers, so the total goes 6, 12, 18, 24. That is counting in 6s, and it is the same as 6 + 6 + 6 + 6. The short way to write it is 4 × 6 = 24.",
+          "The tricks help with facts you do not know yet. Turn the garden: 4 × 6 = 6 × 4. Split the rows: 7 × 6 = 5 × 6 + 2 × 6 = 30 + 12 = 42. One row less: 9 × 7 = 10 × 7 − 7 = 63."
         ]
       },
       {
@@ -1601,7 +1603,7 @@
       },
       {
         "title": "LCM: first shared repeat",
-        "explain": "The least common multiple is the smallest positive number that is a multiple of all the given numbers. Use it for events repeating together or the smallest common total.",
+        "explain": "The LCM (lowest common multiple) is the smallest number that is a multiple of both numbers. Two frogs jumping in 4s and 6s first land together on 12, so the LCM of 4 and 6 is 12.",
         "visual": {
           "kind": "multiples",
           "a": 4,
@@ -1609,10 +1611,10 @@
           "limit": 24
         },
         "steps": [
-          "A bell rings every 4 minutes; another every 6 minutes. They ring together now.",
-          "Their positive common multiples start at 12, then 24. They next ring together after 12 minutes.",
-          "With prime factors, use every prime needed, taking the larger power.",
-          "HCF divides into both amounts; LCM is divisible by both amounts."
+          "Gold frog (4s): 4, 8, 12, 16, …",
+          "Navy frog (6s): 6, 12, 18, …",
+          "First number on both lists: 12, so LCM(4, 6) = 12.",
+          "Bells that ring every 4 and every 6 minutes ring together again after 12 minutes."
         ],
         "practice": [
           {
@@ -1628,10 +1630,10 @@
             "options": null
           }
         ],
-        "remember": "The word “greatest” or “smallest” alone is not enough. Decide whether you need a common divisor or a common multiple.",
+        "remember": "HCF: the biggest number that divides both. LCM: the smallest number that both divide. HCF ≤ each number ≤ LCM.",
         "teaching": [
-          "The least common multiple is the smallest positive multiple shared by all given numbers. Use it for the first time repeating events coincide or the smallest equal total made from different pack sizes.",
-          "For bells ringing every 4 and 6 minutes, use 4 = 2² and 6 = 2 × 3. Keep enough prime copies for both: 2² × 3 = 12. The first common time is 12 minutes. HCF uses shared copies; LCM uses the greatest required power of each prime."
+          "List the multiples of each number until one appears in both lists. Multiples of 4: 4, 8, 12, 16, … Multiples of 6: 6, 12, 18, … The first shared number is 12, so the LCM is 12. Use the LCM when two things repeat and you want the first time they happen together.",
+          "With prime factors: 4 = 2 × 2 and 6 = 2 × 3. The LCM must contain every prime that either number needs, as many times as it is needed: 2 × 2 × 3 = 12. The HCF takes only the shared primes: 2. Notice that HCF × LCM = 2 × 12 = 24 = 4 × 6."
         ]
       }
     ],
@@ -5057,6 +5059,311 @@
           "12/13",
           "5/13"
         ]
+      }
+    ]
+  },
+  {
+    "slug": "circles",
+    "title": "Circles",
+    "tier": "extension",
+    "concepts": [
+      {
+        "title": "Parts of a circle",
+        "explain": "A circle is the set of all points at the same distance from a fixed point. The fixed point is the centre, and the fixed distance is the radius.",
+        "teaching": [
+          "The centre O is the fixed point. A radius joins O to a point on the circle. A chord joins any two points on the circle. A diameter is a chord through the centre, so the diameter is two radii: d = 2r.",
+          "A chord cuts the circle into a minor arc and a major arc. It also cuts the region into a minor segment and a major segment. A sector lies between two radii and an arc. A secant cuts the circle at two points. A tangent touches it at one point."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "Radius",
+              "centre to circle"
+            ],
+            [
+              "Diameter",
+              "chord through the centre, 2r"
+            ],
+            [
+              "Chord",
+              "joins two points on the circle"
+            ],
+            [
+              "Segment",
+              "region between a chord and an arc"
+            ],
+            [
+              "Sector",
+              "region between two radii and an arc"
+            ],
+            [
+              "Secant",
+              "line through two points of the circle"
+            ],
+            [
+              "Tangent",
+              "line that touches at one point"
+            ]
+          ],
+          "caption": "The parts of a circle with centre O."
+        },
+        "steps": [
+          "Radius 5 cm gives diameter 2 × 5 = 10 cm.",
+          "The diameter is the longest chord of a circle.",
+          "A chord makes two segments: the smaller is the minor segment, the larger is the major segment.",
+          "A secant meets the circle at two points. A tangent meets it at exactly one point."
+        ],
+        "practice": [
+          {
+            "prompt": "The radius of a circle is 7 cm. What is the diameter in cm?",
+            "answer": "14",
+            "solution": "Diameter = 2 × radius = 2 × 7 = 14 cm.",
+            "options": null
+          },
+          {
+            "prompt": "Which is the longest chord of a circle?",
+            "answer": "Diameter",
+            "solution": "A chord through the centre is longer than every other chord.",
+            "options": [
+              "Diameter",
+              "Radius",
+              "Secant",
+              "Tangent"
+            ]
+          }
+        ],
+        "remember": "Diameter = 2 × radius. The diameter is the longest chord."
+      },
+      {
+        "title": "Chords and the centre",
+        "explain": "The perpendicular from the centre to a chord cuts the chord into two equal halves. Equal chords are equally far from the centre.",
+        "teaching": [
+          "Draw OM perpendicular to chord AB. Triangles OMA and OMB are congruent (RHS), because OA = OB and OM is common. So AM = MB: the perpendicular from the centre bisects the chord.",
+          "Triangle OMA has a right angle at M, so AM² = r² − OM². If r = 5 and OM = 3, AM = 4 and AB = 8. Equal chords are equidistant from the centre, and the converse is also true."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "r = 5, OM = 3",
+              "AM = 4, AB = 8"
+            ],
+            [
+              "r = 13, OM = 5",
+              "AM = 12, AB = 24"
+            ],
+            [
+              "r = 10, OM = 6",
+              "AM = 8, AB = 16"
+            ]
+          ],
+          "caption": "Half chord AM = √(r² − OM²)."
+        },
+        "steps": [
+          "Draw the perpendicular OM from the centre to the chord AB.",
+          "Use Pythagoras in triangle OMA: AM² = OA² − OM².",
+          "r = 13, OM = 5: AM² = 169 − 25 = 144, so AM = 12.",
+          "Double it: AB = 2 × 12 = 24."
+        ],
+        "practice": [
+          {
+            "prompt": "The radius is 5 cm and a chord is 3 cm from the centre. Find the chord length in cm.",
+            "answer": "8",
+            "solution": "Half chord = √(25 − 9) = 4, so the chord = 8 cm.",
+            "options": null
+          },
+          {
+            "prompt": "A chord of length 16 cm is in a circle of radius 10 cm. How far is it from the centre in cm?",
+            "answer": "6",
+            "solution": "Half chord = 8. Distance = √(100 − 64) = 6 cm.",
+            "options": null
+          }
+        ],
+        "remember": "The perpendicular from the centre bisects the chord."
+      },
+      {
+        "title": "Angles in a circle",
+        "explain": "An arc makes an angle at the centre that is double the angle it makes at any point on the rest of the circle.",
+        "teaching": [
+          "Arc AB makes angle AOB at the centre and angle APB at a point P on the circle. ∠AOB = 2∠APB. So all angles in the same segment are equal, because each is half of the same angle at the centre.",
+          "If AB is a diameter, ∠AOB = 180°, so the angle in a semicircle is 90°. In a cyclic quadrilateral, all four vertices lie on the circle. Its opposite angles add to 180°."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "Angle at the centre",
+              "2 × angle at the circle"
+            ],
+            [
+              "Same segment",
+              "equal angles"
+            ],
+            [
+              "Semicircle",
+              "90°"
+            ],
+            [
+              "Cyclic quadrilateral",
+              "opposite angles add to 180°"
+            ]
+          ],
+          "caption": "Four facts about angles in a circle."
+        },
+        "steps": [
+          "∠AOB = 100° at the centre, so ∠APB = 100° ÷ 2 = 50°.",
+          "Q is in the same segment as P, so ∠AQB = 50° also.",
+          "AB is a diameter: the angle at P is 180° ÷ 2 = 90°.",
+          "In cyclic ABCD, ∠A = 70°, so ∠C = 180° − 70° = 110°."
+        ],
+        "practice": [
+          {
+            "prompt": "The angle at the centre is 120°. Find the angle at the circle on the same arc, in degrees.",
+            "answer": "60",
+            "solution": "The angle at the circle is half of the angle at the centre: 120 ÷ 2 = 60.",
+            "options": null
+          },
+          {
+            "prompt": "In a cyclic quadrilateral ABCD, ∠B = 95°. Find ∠D in degrees.",
+            "answer": "85",
+            "solution": "Opposite angles add to 180°: 180 − 95 = 85.",
+            "options": null
+          }
+        ],
+        "remember": "The angle in a semicircle is 90°."
+      },
+      {
+        "title": "Tangents to a circle",
+        "explain": "A tangent touches a circle at one point. The tangent is perpendicular to the radius at the point of contact.",
+        "teaching": [
+          "From a point inside the circle there is no tangent. From a point on the circle there is exactly one tangent. From a point outside the circle there are exactly two tangents.",
+          "The radius OA is perpendicular to the tangent PA. Triangles OAP and OBP are congruent (RHS), so PA = PB: the tangents from an outside point are equal. Pythagoras gives PA² = OP² − r²."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "P inside",
+              "no tangent"
+            ],
+            [
+              "P on the circle",
+              "one tangent"
+            ],
+            [
+              "P outside",
+              "two equal tangents"
+            ],
+            [
+              "r = 5, OP = 13",
+              "PA = PB = 12"
+            ]
+          ],
+          "caption": "The number of tangents depends on where P is."
+        },
+        "steps": [
+          "The angle between the radius and the tangent at the point of contact is 90°.",
+          "r = 5 and OP = 13: PA² = 169 − 25 = 144, so PA = 12.",
+          "The second tangent PB is also 12, because tangents from an outside point are equal."
+        ],
+        "practice": [
+          {
+            "prompt": "How many tangents can you draw from a point outside a circle?",
+            "answer": "2",
+            "solution": "There are exactly two tangents from an outside point.",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "Infinitely many"
+            ]
+          },
+          {
+            "prompt": "The radius is 6 cm and OP = 10 cm. Find the tangent length PA in cm.",
+            "answer": "8",
+            "solution": "PA = √(100 − 36) = √64 = 8 cm.",
+            "options": null
+          }
+        ],
+        "remember": "Radius ⟂ tangent, and the tangents from an outside point are equal."
+      }
+    ],
+    "test": [
+      {
+        "prompt": "The diameter of a circle is 18 cm. What is its radius in cm?",
+        "answer": "9",
+        "solution": "Radius = diameter ÷ 2 = 9 cm.",
+        "options": null
+      },
+      {
+        "prompt": "What is the region between a chord and its minor arc called?",
+        "answer": "Minor segment",
+        "solution": "A chord and an arc make a segment. The smaller one is the minor segment.",
+        "options": [
+          "Minor segment",
+          "Minor sector",
+          "Major segment",
+          "Major arc"
+        ]
+      },
+      {
+        "prompt": "A line meets a circle at two points. What is it called?",
+        "answer": "Secant",
+        "solution": "A secant cuts the circle at two points.",
+        "options": [
+          "Secant",
+          "Tangent",
+          "Radius",
+          "Arc"
+        ]
+      },
+      {
+        "prompt": "The radius is 13 cm and a chord is 12 cm from the centre. Find the chord length in cm.",
+        "answer": "10",
+        "solution": "Half chord = √(169 − 144) = 5, so the chord = 10 cm.",
+        "options": null
+      },
+      {
+        "prompt": "Two chords of a circle are equal. What is true about their distances from the centre?",
+        "answer": "They are equal",
+        "solution": "Equal chords are equidistant from the centre.",
+        "options": [
+          "They are equal",
+          "The first is double",
+          "They add to the radius",
+          "Nothing"
+        ]
+      },
+      {
+        "prompt": "An arc makes 35° at a point on the circle. What angle does it make at the centre, in degrees?",
+        "answer": "70",
+        "solution": "The angle at the centre is double: 2 × 35 = 70.",
+        "options": null
+      },
+      {
+        "prompt": "AB is a diameter and P is on the circle. Find ∠APB in degrees.",
+        "answer": "90",
+        "solution": "The angle in a semicircle is 90°.",
+        "options": null
+      },
+      {
+        "prompt": "In a cyclic quadrilateral, one angle is 64°. Find the opposite angle in degrees.",
+        "answer": "116",
+        "solution": "Opposite angles add to 180°: 180 − 64 = 116.",
+        "options": null
+      },
+      {
+        "prompt": "What is the angle between a tangent and the radius at the point of contact, in degrees?",
+        "answer": "90",
+        "solution": "The tangent is perpendicular to the radius.",
+        "options": null
+      },
+      {
+        "prompt": "Tangents PA and PB are drawn from P. PA = 7 cm. Find PB in cm.",
+        "answer": "7",
+        "solution": "Tangents from an outside point are equal.",
+        "options": null
       }
     ]
   }

@@ -1,0 +1,9 @@
+.rmc-login-page { display: grid; place-items: center; padding-block: 56px 80px; }
+.rmc-login-card { width: min(100%, 520px); display: grid; justify-items: center; gap: 14px; padding: 40px 32px; border: 1px solid var(--rmc-rule); border-radius: 16px; background: #fff; text-align: center; color: var(--rmc-ink); font-family: var(--rmc-interface); }
+.rmc-login-card img[alt=""] { width: 72px; height: 72px; object-fit: contain; }
+.rmc-login-card h1 { margin: 0; font: 800 34px/1.15 var(--rmc-interface); }
+.rmc-login-card p { margin: 0; color: var(--rmc-muted); font-size: 18px; line-height: 1.6; }
+.rmc-login-card .google-sign-in { margin: 10px 0 4px; }
+.rmc-login-card .rmc-login-small { font-size: 15px; }
+.rmc-login-card a:not(.google-sign-in) { color: var(--rmc-ink); text-underline-offset: 4px; }
+@media (max-width: 600px) { .rmc-login-card { padding: 30px 20px; } .rmc-login-card h1 { font-size: 28px; } }

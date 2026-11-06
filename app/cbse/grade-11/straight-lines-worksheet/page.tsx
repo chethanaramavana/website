@@ -8,7 +8,7 @@ import './worksheet.css';
 
 export const metadata: Metadata = {
   title: 'Free Straight Lines worksheet · Grade 11 | Ramavana',
-  description: 'A free CBSE Grade 11 Straight Lines practice worksheet: 40 questions in five sections, with a key-formula table. No login, no payment.',
+  description: 'A free CBSE Grade 11 Straight Lines practice worksheet: 40 questions in five sections, with a key-formula table. Free with a Google sign-in.',
 };
 
 type Part = { label: string; text: string };
@@ -18,7 +18,7 @@ function Parts({ parts }: { parts: Part[] }) {
   return <ol className="ws-parts">{parts.map((p, i) => <li key={i}><span className="ws-label">({p.label})</span> <Tex>{p.text}</Tex></li>)}</ol>;
 }
 
-/** A free worksheet: anyone can open it, print it or download the PDF. It has no answer key. */
+/** A free worksheet: signed-in students can open it, print it or download the PDF. It has no answer key. */
 export default function StraightLinesWorksheet() {
   return <main className="ws-page">
     <nav className="ws-actions" aria-label="Worksheet actions">

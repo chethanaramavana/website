@@ -1,0 +1,38 @@
+/* A faint Ramavana crest behind every question paper and worksheet.
+   The crest image already has very low opacity, so it never competes with the writing.
+   It repeats about once per printed page, and it prints. */
+.question-paper,
+.ws-sheet,
+.relations-paper,
+.online-paper { position: relative; isolation: isolate; }
+
+.question-paper::before,
+.ws-sheet::before,
+.relations-paper::before,
+.online-paper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/ramavana-paper-watermark.png') center 160px / min(62%, 420px) auto repeat-y;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Question boxes in the online papers are almost opaque; let the crest show through softly. */
+.online-paper .paper-question { background: rgba(255, 253, 251, 0.82); }
+
+@media (max-width: 600px) {
+  .question-paper::before,
+  .ws-sheet::before,
+  .relations-paper::before,
+  .online-paper::before { background-size: 78% auto; background-position: center 120px; }
+}
+
+@media print {
+  .question-paper::before,
+  .ws-sheet::before,
+  .relations-paper::before,
+  .online-paper::before { background-size: 60% auto; background-position: center 120px; }
+}

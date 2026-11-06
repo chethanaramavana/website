@@ -19,5 +19,5 @@ for(const topic of topics)for(let index=0;index<topic.concepts.length;index++){
  assert(html.includes('type="range"')||html.includes('type="button"'),`${topic.slug}/${index}: missing interaction`);
  rendered++;
 }
-assert.equal(rendered,71);assert.equal(investigations,65);
+assert.equal(rendered,75);assert.equal(investigations,69);
 console.log(`PASS: ${rendered} actual concept views rendered, including ${investigations} new investigations; visual, interaction, reasoning, finite values and KaTeX checks passed.`);
