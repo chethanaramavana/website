@@ -1,0 +1,87 @@
+[
+ {
+  "title": "Basic integrals",
+  "items": [
+   "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1",
+   "\\int\\dfrac{dx}{x}=\\ln|x|+C",
+   "\\int e^{ax}\\,dx=\\dfrac{e^{ax}}{a}+C",
+   "\\int a^x\\,dx=\\dfrac{a^x}{\\ln a}+C"
+  ]
+ },
+ {
+  "title": "Trigonometric integrals",
+  "items": [
+   "\\int\\sin x\\,dx=-\\cos x+C",
+   "\\int\\cos x\\,dx=\\sin x+C",
+   "\\int\\sec^2x\\,dx=\\tan x+C",
+   "\\int\\csc^2x\\,dx=-\\cot x+C",
+   "\\int\\sec x\\tan x\\,dx=\\sec x+C",
+   "\\int\\csc x\\cot x\\,dx=-\\csc x+C",
+   "\\int\\tan x\\,dx=\\ln|\\sec x|+C",
+   "\\int\\cot x\\,dx=\\ln|\\sin x|+C",
+   "\\int\\sec x\\,dx=\\ln|\\sec x+\\tan x|+C",
+   "\\int\\csc x\\,dx=\\ln|\\csc x-\\cot x|+C"
+  ]
+ },
+ {
+  "title": "Special integrals",
+  "items": [
+   "\\int\\dfrac{dx}{x^2-a^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{x-a}{x+a}\\right|+C",
+   "\\int\\dfrac{dx}{a^2-x^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{a+x}{a-x}\\right|+C",
+   "\\int\\dfrac{dx}{x^2+a^2}=\\dfrac1a\\tan^{-1}\\dfrac xa+C",
+   "\\int\\dfrac{dx}{\\sqrt{x^2-a^2}}=\\ln\\left|x+\\sqrt{x^2-a^2}\\right|+C",
+   "\\int\\dfrac{dx}{\\sqrt{a^2-x^2}}=\\sin^{-1}\\dfrac xa+C",
+   "\\int\\dfrac{dx}{\\sqrt{x^2+a^2}}=\\ln\\left|x+\\sqrt{x^2+a^2}\\right|+C"
+  ]
+ },
+ {
+  "title": "Integrals of square roots",
+  "items": [
+   "\\int\\sqrt{x^2+a^2}\\,dx=\\dfrac x2\\sqrt{x^2+a^2}+\\dfrac{a^2}{2}\\ln\\left|x+\\sqrt{x^2+a^2}\\right|+C",
+   "\\int\\sqrt{x^2-a^2}\\,dx=\\dfrac x2\\sqrt{x^2-a^2}-\\dfrac{a^2}{2}\\ln\\left|x+\\sqrt{x^2-a^2}\\right|+C",
+   "\\int\\sqrt{a^2-x^2}\\,dx=\\dfrac x2\\sqrt{a^2-x^2}+\\dfrac{a^2}{2}\\sin^{-1}\\dfrac xa+C"
+  ]
+ },
+ {
+  "title": "Methods",
+  "items": [
+   "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)",
+   "\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C",
+   "\\int[f(x)]^n f'(x)\\,dx=\\dfrac{[f(x)]^{n+1}}{n+1}+C",
+   "\\int(ax+b)^n\\,dx=\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C",
+   "\\int u\\,dv=uv-\\int v\\,du",
+   "\\int e^x\\left[f(x)+f'(x)\\right]dx=e^xf(x)+C"
+  ]
+ },
+ {
+  "title": "Partial fraction forms",
+  "items": [
+   "\\dfrac{px+q}{(x-a)(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{x-b}",
+   "\\dfrac{px+q}{(x-a)^2}=\\dfrac{A}{x-a}+\\dfrac{B}{(x-a)^2}",
+   "\\dfrac{px^2+qx+r}{(x-a)^2(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{(x-a)^2}+\\dfrac{C}{x-b}",
+   "\\dfrac{px^2+qx+r}{(x-a)(x^2+bx+c)}=\\dfrac{A}{x-a}+\\dfrac{Bx+C}{x^2+bx+c}"
+  ]
+ },
+ {
+  "title": "Useful identities",
+  "items": [
+   "\\sin^2x=\\dfrac{1-\\cos2x}{2},\\ \\cos^2x=\\dfrac{1+\\cos2x}{2}",
+   "2\\sin A\\cos B=\\sin(A+B)+\\sin(A-B)",
+   "\\tan^2x=\\sec^2x-1",
+   "t=\\tan\\dfrac x2:\\ \\sin x=\\dfrac{2t}{1+t^2},\\ \\cos x=\\dfrac{1-t^2}{1+t^2},\\ dx=\\dfrac{2\\,dt}{1+t^2}"
+  ]
+ },
+ {
+  "title": "Definite integrals",
+  "items": [
+   "\\int_a^b f(x)\\,dx=F(b)-F(a),\\ F'=f",
+   "\\int_a^b f=\\int_a^c f+\\int_c^b f",
+   "\\int_a^b f(x)\\,dx=\\int_a^b f(a+b-x)\\,dx",
+   "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx",
+   "\\int_{-a}^a f(x)\\,dx=0\\ \\text{if } f \\text{ is odd}",
+   "\\int_{-a}^a f(x)\\,dx=2\\int_0^a f(x)\\,dx\\ \\text{if } f \\text{ is even}",
+   "\\int_0^{2a} f(x)\\,dx=2\\int_0^a f(x)\\,dx\\ \\text{ if }\\ f(2a-x)=f(x)",
+   "\\int_0^{2a} f(x)\\,dx=0\\ \\text{ if }\\ f(2a-x)=-f(x)"
+  ]
+ }
+]

@@ -46,3 +46,21 @@
 @media(prefers-reduced-motion:reduce){.ir-tick.is-done .ir-box{animation:none}.ir-bar span{transition:none}}
 .ir-worked .tex-display{background:transparent;padding:6px 0;margin:4px 0}
 .ir-question,.ir-result{line-height:2}
+/* Compact solutions and formula sheet */
+.ir-sheet{padding:34px 0 10px}.ir-sheet h2{margin:0 0 14px}
+.ir-sheet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.ir-sheet-card{background:#fff;border:1px solid #e3d9ec;border-radius:16px;padding:14px 16px;box-shadow:0 4px 14px rgba(97,64,142,.06)}
+.ir-sheet-card h3{margin:0 0 6px;font:700 13px/1.4 system-ui;letter-spacing:.1em;text-transform:uppercase;color:#61408e}
+.ir-sheet-line{padding:6px 0;border-bottom:1px dashed #ece5f3;overflow-x:auto;font-size:16px}.ir-sheet-line:last-child{border-bottom:0}
+.ir-formulas{background:#f7f3fb;border:2px solid #d8c9ea;border-radius:16px;padding:12px 18px;margin:18px 0}
+.ir-formulas>.ir-label{color:#61408e}
+.ir-theory{margin:8px 0 4px;font-size:16px}.ir-theory summary{cursor:pointer;font:600 14px system-ui;color:#285b45}
+.ir-example{padding:18px 22px}
+.ir-question{margin:4px 0 12px}
+.ir-use{background:#fff8e6;border-left:5px solid #d9a231;border-radius:0 12px 12px 0;padding:8px 16px;margin:0 0 12px}
+.ir-use>.ir-label{color:#a2701a}.ir-use-line{overflow-x:auto;padding:3px 0}
+.ir-solution{padding:4px 2px}.ir-solution>.ir-label{color:#2f6b45}
+.ir-line{padding:7px 0 7px 14px;border-left:3px solid #d6e3d4;overflow-x:auto;line-height:2.1}
+.ir-result{margin-top:10px}
+@media(max-width:600px){.ir-sheet-grid{grid-template-columns:1fr}.ir-sheet-line,.ir-line,.ir-use-line{font-size:15px}}
+@media print{.ir-theory{display:none}}
