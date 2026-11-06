@@ -14,3 +14,6 @@ export const basicsProducts=[
 ] as const;
 export function getBasicsProduct(id:string){return basicsProducts.find(p=>p.id===id);}
 export function basicsLevelPath(course:string,topic:string){return `/maths-basics/${course}/${topic}`;}
+
+// A direct free sample for the foundations publicity link.
+export const isFreeBasicsSample = (courseId:string, slug:string) => courseId === 'foundations' && slug === 'integers';
