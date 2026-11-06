@@ -93,7 +93,7 @@ export default function DetailedNotesDocument({ notes }: { notes: ChapterNotes }
           <NotesBranding />
           <RunningHeader notes={notes} label={`Lesson ${index + 1} of ${lessons.length}`} />
           <section className="study-concepts">
-            <div className="study-section-heading compact"><h2>{index + 1}. {lesson.title}</h2></div>
+            <div className="study-section-heading compact"><h2>{index + 1}. <MathText>{lesson.title}</MathText></h2></div>
             {lesson.story && <aside className="story-scene"><span>Story</span><p><MathText>{lesson.story}</MathText></p></aside>}
             {lesson.text.map((paragraph) => <p className="detailed-notes-paragraph" key={paragraph}><MathText>{paragraph}</MathText></p>)}
             {lesson.picture ? <StoryPicture spec={lesson.picture} /> : index === 0 && <NotesVisual notes={notes} conceptIndex={0} />}

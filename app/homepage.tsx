@@ -26,7 +26,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <Brand />
         <button className="rmc-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="homepage-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <nav id="homepage-nav" className={`rmc-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation" onClick={() => setMenuOpen(false)}>
-          <a href="#syllabus">Syllabus</a><a href="/maths-basics">Maths Basics</a><a href="/previous-papers">Past papers</a><a href="#contact">Contact</a>
+          <a href="#syllabus">Syllabus</a><a href="/maths-basics">Maths Basics</a><a href="/previous-papers">Past papers</a><a href="/careers">Careers</a><a href="#contact">Contact</a>
           <a className="rmc-button rmc-button-outline rmc-login" href="/student">{signedIn ? 'My learning' : 'Log in'}<ArrowUpRight aria-hidden="true" /></a>
         </nav>
       </header>

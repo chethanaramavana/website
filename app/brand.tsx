@@ -32,6 +32,7 @@ export function SiteFooter() {
       <div className="rmc-footer-top">
         <p>Run by professional mathematicians · Bengaluru</p>
         <nav aria-label="Footer navigation">
+          <a href="/careers">Careers</a>
           <a href="/teacher">Teacher log in</a>
           <a href="/terms">Terms</a>
           <a href="/privacy-policy">Privacy</a>

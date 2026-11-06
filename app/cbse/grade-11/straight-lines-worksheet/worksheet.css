@@ -1,0 +1,38 @@
+.ws-page { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; color: #011e47; }
+.ws-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.ws-actions a, .ws-actions button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid #011e47; border-radius: 999px; background: #fff; color: #011e47; font: 600 14px/1.2 system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+.ws-actions svg { width: 16px; height: 16px; }
+.ws-sheet { background: #fff; border: 1px solid #dce2e9; border-radius: 12px; padding: 28px 30px; font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.55; }
+.ws-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 3px solid #d9a231; padding-bottom: 12px; flex-wrap: wrap; }
+.ws-head > div { text-align: right; font-family: system-ui, sans-serif; }
+.ws-head strong { display: block; font-size: 20px; }
+.ws-head span { font-size: 13px; color: #4e5b70; }
+.ws-meta { display: flex; gap: 24px; margin: 14px 0 6px; font: 14px system-ui, sans-serif; }
+.ws-meta span { flex: 1; border-bottom: 1px solid #9aa5b5; padding-bottom: 2px; }
+.ws-note { font: 13px/1.5 system-ui, sans-serif; background: #fbf4e3; border-left: 4px solid #d9a231; padding: 8px 12px; }
+.ws-section { display: flex; justify-content: space-between; background: #011e47; color: #fff; font: 700 15px system-ui, sans-serif; padding: 7px 12px; margin: 22px 0 10px; break-after: avoid; }
+.ws-section em { font-style: normal; font-weight: 400; color: #f4e0ae; }
+.ws-formulas { width: 100%; border-collapse: collapse; font-size: 15px; }
+.ws-formulas td { border: 1px solid #c9d1dc; padding: 6px 9px; vertical-align: middle; }
+.ws-formulas td:first-child { background: #f4f6f9; width: 45%; }
+.ws-question { margin: 8px 0 12px; break-inside: avoid; }
+.ws-question > p { margin: 0; }
+.ws-parts { list-style: none; padding-left: 24px; margin: 4px 0; }
+.ws-parts li { margin: 3px 0; }
+.ws-label { display: inline-block; min-width: 30px; }
+.ws-options { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 12px; padding-left: 28px; margin: 4px 0; }
+.ws-case { border: 1px solid #d9a231; border-radius: 8px; padding: 10px 14px; }
+.ws-or { text-align: center; font: 700 13px system-ui, sans-serif; margin: 6px 0; }
+.ws-end { text-align: center; margin-top: 26px; font: 13px system-ui, sans-serif; color: #4e5b70; }
+@media (max-width: 640px) {
+  .ws-sheet { padding: 18px 14px; font-size: 15px; }
+  .ws-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ws-head > div { text-align: left; }
+  .ws-formulas td:first-child { width: auto; }
+}
+@media print {
+  header.site-header, footer, .ws-actions { display: none !important; }
+  .ws-page { padding: 0; max-width: none; }
+  .ws-sheet { border: 0; padding: 0; }
+  .ws-section, .ws-note, .ws-formulas td:first-child { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

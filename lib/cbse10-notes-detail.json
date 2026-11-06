@@ -7772,8 +7772,8 @@
   ],
   "formulas": [
    "tan θ = height/distance",
-   "sin θ = height/line of sight",
-   "cos θ = distance/line of sight",
+   "$\\sin\\theta=\\dfrac{\\text{height}}{\\text{line of sight}}$",
+   "$\\cos\\theta=\\dfrac{\\text{distance}}{\\text{line of sight}}$",
    "Angle of depression = angle of elevation (alternate angles)"
   ],
   "method": [
@@ -10283,7 +10283,7 @@
      "question": "A die is thrown once. Find P(a number greater than 4).",
      "answer": "Favourable: 5, 6. P = 2/6 = 1/3."
     },
-    "aha": "P(E) = favourable outcomes / total outcomes, when all outcomes are equally likely.",
+    "aha": "$P(E)=\\dfrac{\\text{favourable outcomes}}{\\text{total outcomes}}$, when all outcomes are equally likely.",
     "formulas": [
      "P(E) = favourable/total",
      "0 ≤ P(E) ≤ 1"
@@ -10649,7 +10649,7 @@
   "concepts": [
    {
     "title": "Probability as a fraction",
-    "text": "P(E) = favourable outcomes / total outcomes, when all outcomes are equally likely."
+    "text": "$P(E)=\\dfrac{\\text{favourable outcomes}}{\\text{total outcomes}}$, when all outcomes are equally likely."
    },
    {
     "title": "Sure, impossible and 'not E'",

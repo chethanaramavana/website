@@ -1,4 +1,5 @@
 import type { ReactElement } from 'react';
+import MathText from './math-text';
 
 /** Picture types for story-style study notes. Each lesson can describe one picture as data. */
 export type StoryPictureSpec =
@@ -381,7 +382,7 @@ export default function StoryPicture({ spec }: { spec: StoryPictureSpec }) {
   return (
     <figure className="story-picture">
       <svg viewBox={`0 ${box[0]} ${W} ${box[1]}`} role="img" aria-label={spec.caption ?? spec.kind}>{body}</svg>
-      {spec.caption && <figcaption>{spec.caption}</figcaption>}
+      {spec.caption && <figcaption><MathText>{spec.caption}</MathText></figcaption>}
     </figure>
   );
 }

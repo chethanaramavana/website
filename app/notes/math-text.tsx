@@ -15,9 +15,13 @@ const subscripts: Record<string, string> = {
 
 const superscriptCharacters = new Set(Object.keys(superscripts));
 const subscriptCharacters = new Set(Object.keys(subscripts));
-const functionNames = new Set(['sin', 'cos', 'tan', 'sec', 'cosec', 'cot', 'log', 'ln']);
+const functionNames = new Set(['sin', 'cos', 'tan', 'sec', 'cosec', 'csc', 'cot', 'log', 'ln', 'ar']);
+// Words that name a quantity in a ratio: opposite/hypotenuse, height/distance, sin/cos.
+const mathWords = new Set(['opposite', 'adjacent', 'hypotenuse', 'opp', 'adj', 'hyp', 'height', 'distance', 'slant', 'shadow', 'base', 'perpendicular', 'favourable', 'total', 'area', 'perimeter', 'speed', 'time', 'sin', 'cos', 'tan', 'sec', 'cosec', 'cot', 'numerator', 'denominator', 'rate', 'price', 'gst', 'cost', 'profit', 'loss', 'difference']);
+// Short English words that must never become a letter product (odd/even, and/or, per/km).
+const shortWords = new Set(['an', 'as', 'at', 'be', 'by', 'do', 'go', 'he', 'if', 'in', 'is', 'it', 'me', 'my', 'no', 'of', 'on', 'or', 'so', 'to', 'up', 'us', 'we', 'add', 'all', 'and', 'any', 'are', 'but', 'can', 'for', 'has', 'his', 'how', 'its', 'may', 'new', 'not', 'now', 'odd', 'one', 'our', 'out', 'per', 'see', 'set', 'sum', 'the', 'two', 'use', 'was', 'who', 'why', 'yes', 'you', 'day', 'man', 'men', 'box', 'bag', 'pen', 'run', 'own', 'off', 'max', 'min', 'log', 'sin', 'cos', 'tan', 'sec', 'cot']);
 const units = new Set(['mm', 'cm', 'm', 'km', 's', 'min', 'h', 'hr', 'g', 'kg', 'ml', 'l']);
-const atomCharacter = /[\p{L}\p{N}.′'°πθφ√⁰¹²³⁴⁵⁶⁷⁸⁹ⁿˣⁱ⁺⁻⁼⁽⁾ᵃᵇᶜᵈᵉᶠᵍʰʲᵏˡᵐᵒᵖʳˢᵗᵘᵛʷʸᶻ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜₓ]/u;
+const atomCharacter = /[\p{L}\p{N}.′'°πθφ√Σ\u0304⁰¹²³⁴⁵⁶⁷⁸⁹ⁿˣⁱ⁺⁻⁼⁽⁾ᵃᵇᶜᵈᵉᶠᵍʰʲᵏˡᵐᵒᵖʳˢᵗᵘᵛʷʸᶻ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜₓ]/u;
 
 type Operand = { start: number; end: number; value: string; grouped: boolean };
 type FractionMatch = { start: number; end: number; numerator: string; denominator: string };
@@ -60,9 +64,12 @@ function readLeftOperand(value: string, slashIndex: number): Operand | null {
   let end = slashIndex;
   while (end > 0 && /\s/.test(value[end - 1])) end -= 1;
   if (end === 0) return null;
-  const finalCharacter = value[end - 1];
+  // A bracket raised to a power, such as Σ(x − x̄)²/n, is one grouped operand.
+  let bracketEnd = end;
+  while (bracketEnd > 0 && superscriptCharacters.has(value[bracketEnd - 1])) bracketEnd -= 1;
+  const finalCharacter = value[bracketEnd - 1];
   if (')]}'.includes(finalCharacter)) {
-    let start = findOpeningBracket(value, end - 1);
+    let start = findOpeningBracket(value, bracketEnd - 1);
     if (start < 0) return null;
     if (start > 0 && value[start - 1] === '^') {
       const base = readLeftOperand(value, start - 1);
@@ -72,7 +79,7 @@ function readLeftOperand(value: string, slashIndex: number): Operand | null {
     while (prefixEnd > 0 && /\s/.test(value[prefixEnd - 1])) prefixEnd -= 1;
     let prefixStart = prefixEnd;
     while (prefixStart > 0 && /\p{L}/u.test(value[prefixStart - 1])) prefixStart -= 1;
-    if (functionNames.has(value.slice(prefixStart, prefixEnd))) start = prefixStart;
+    if (functionNames.has(value.slice(prefixStart, prefixEnd)) || value.slice(prefixStart, prefixEnd) === 'Σ') start = prefixStart;
     else if (prefixEnd > 0 && value[prefixEnd - 1] === '√') start = prefixEnd - 1;
     return { start, end, value: value.slice(start, end), grouped: true };
   }
@@ -139,7 +146,10 @@ function readRightOperand(value: string, slashIndex: number): Operand | null {
         if (closeIndex >= 0) return { start, end: closeIndex + 1, value: value.slice(start, closeIndex + 1), grouped: true };
       } else {
         let argumentEnd = argumentStart;
-        while (argumentEnd < value.length && atomCharacter.test(value[argumentEnd])) argumentEnd += 1;
+        while (argumentEnd < value.length && atomCharacter.test(value[argumentEnd])) {
+          if (value[argumentEnd] === '.' && !/\d/.test(value[argumentEnd + 1] ?? '')) break;
+          argumentEnd += 1;
+        }
         if (argumentEnd > argumentStart) return { start, end: argumentEnd, value: value.slice(start, argumentEnd), grouped: false };
       }
     }
@@ -154,19 +164,36 @@ function plainAtom(value: string) {
     .trim();
 }
 
-function isClearMathOperand(operand: Operand) {
+function isClearMathOperand(operand: Operand, relaxed = true) {
   if (operand.grouped) return true;
   if (/^[\d\p{L}]+(?:\^(?:\{[^{}]+\}|\([^()]+\)|[\d\p{L}]+))$/u.test(operand.value)) return true;
   const compact = operand.value.replace(/\s+/g, '');
   const base = plainAtom(compact);
   if (!base) return false;
-  if (/^\d+(?:\.\d+)?$/u.test(base)) return true;
+  if (/^\d+(?:\.\d+)?°?$/u.test(base)) return true;
   if (/^[πθφ]$/u.test(base)) return true;
   if (/^d[\p{L}]$/u.test(base)) return true;
   if (/^\d*(?:√\d+|[\p{L}])$/u.test(base)) return true;
   if (/^[A-Z]{1,2}$/u.test(base)) return true;
   const words = operand.value.trim().split(/\s+/);
-  return words.length === 2 && functionNames.has(words[0]) && /^[\p{L}\p{N}]+$/u.test(plainAtom(words[1]));
+  if (words.length === 2 && functionNames.has(words[0]) && /^[\p{L}\p{N}]+$/u.test(plainAtom(words[1]).replace(/°/g, ''))) return true;
+  // The rules below read a slash between words as division, so they need a tight slash (a/b, not a / b).
+  if (!relaxed) return false;
+  // A function with a power or a multiple-angle argument: cos²A, sin²θ, sin2x.
+  if (/^(?:sin|cos|tan|sec|cosec|csc|cot)\d*[\p{L}]$/u.test(base)) return true;
+  // A product of a power and a root: r²√3.
+  if (/^[a-z]√\d+$/u.test(base)) return true;
+  // A named length squared: diagonal², side², radius².
+  if (/^(?:diagonal|side|radius|diameter|base|height)$/u.test(base) && /[²³]/u.test(compact)) return true;
+  // π with a coefficient and up to two letters: πr, 2πr, πt.
+  if (/^\d*π[a-z]{0,2}$/u.test(base)) return true;
+  // Σx², Σfx, x̄: a summation sign or an overbar on a short symbol.
+  const symbol = base.replace(/^Σ/u, '').replace(/\u0304/gu, '');
+  if (symbol !== base && /^[a-zα-ω][a-zα-ωᵢⱼ]{0,2}$/u.test(symbol)) return true;
+  // Short letter products (bc, abc, αβ), but not English words or units.
+  if (/^(?:[a-z]{2,3}|[α-ω]{2,3})$/u.test(base) && !shortWords.has(base) && !units.has(base)) return true;
+  // Named ratios such as opposite/hypotenuse or favourable/total.
+  return words.length === 1 && mathWords.has(base.toLowerCase());
 }
 
 function tokenContaining(value: string, index: number) {
@@ -224,8 +251,20 @@ function findFraction(value: string): FractionMatch | null {
     if (/^(?:https?:|www\.|\/api\/)/i.test(token)) continue;
 
     const left = readLeftOperand(value, index);
-    const right = readRightOperand(value, index);
-    if (!left || !right || !isClearMathOperand(left) || !isClearMathOperand(right)) continue;
+    let right = readRightOperand(value, index);
+    // N/2th observation: the ordinal ending is not part of the denominator.
+    const ordinal = right && !right.grouped ? right.value.match(/^(\d+)(?=(?:th|st|nd|rd)$)/u) : null;
+    if (right && ordinal) right = { start: right.start, end: right.start + ordinal[1].length, value: ordinal[1], grouped: false };
+    // 1/3πr²h means (1/3)πr²h: a number over a number that runs straight into π or a letter.
+    if (left && right && !right.grouped && /^\d+(?:\.\d+)?$/.test(left.value.trim())) {
+      const lead = right.value.match(/^(\d+)(?=[π\p{L}])/u);
+      if (lead && !units.has(plainAtom(right.value.slice(lead[1].length)).toLowerCase())) right = { start: right.start, end: right.start + lead[1].length, value: lead[1], grouped: false };
+    }
+    // A spaced slash (a / b) or a slash inside a path (grade-10/ch-1) needs the strict rules.
+    const relaxed = !/\s/.test(value[index - 1] ?? '') && !/\s/.test(value[index + 1] ?? '');
+    if (!left || !right || !isClearMathOperand(left, relaxed) || !isClearMathOperand(right, relaxed)) continue;
+    const classic = isClearMathOperand(left, false) && isClearMathOperand(right, false);
+    if (!classic && (value[right.end] === '-' || value[left.start - 1] === '-')) continue;
 
     let before = left.start - 1;
     let after = right.end;

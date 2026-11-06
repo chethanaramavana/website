@@ -30,6 +30,7 @@ export default function LearningHeader({
         <a href="/#syllabus">Syllabus</a>
         <a href="/maths-basics">Maths Basics</a>
         <a href="/previous-papers">Past papers</a>
+        <a href="/careers">Careers</a>
         <a href="/#contact">Contact</a>
         <a className="rmc-button rmc-button-outline rmc-login" href="/student">
           {signedIn ? 'My learning' : 'Log in'}

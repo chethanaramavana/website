@@ -1,4 +1,5 @@
 import type { ChapterNotes } from '@/lib/chapter-notes';
+import MathText from './math-text';
 import { TangentPicture } from './circle-teaching';
 
 export type NotesVisualKind =
@@ -523,7 +524,7 @@ export default function NotesVisual({ notes, conceptIndex }: { notes: ChapterNot
         {kind === 'heights' && conceptIndex !== undefined ? <HeightsConcept index={conceptIndex} /> : <Diagram kind={kind} />}
       </svg>
       }
-      <figcaption>{kind === 'heights' && conceptIndex !== undefined ? heightCaptions[conceptIndex] : meta.caption}</figcaption>
+      <figcaption><MathText>{kind === 'heights' && conceptIndex !== undefined ? heightCaptions[conceptIndex] : meta.caption}</MathText></figcaption>
     </figure>
   );
 }
