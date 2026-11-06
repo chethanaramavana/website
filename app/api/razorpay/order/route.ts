@@ -1,3 +1,4 @@
+import { recoverPurchase } from '@/lib/payment-recovery';
 import {canBuyBasics,hasBasicsPackage} from '@/lib/basics-access';
 import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct, integralsPricePaise } from '@/lib/integrals-products';
@@ -28,14 +29,12 @@ export async function POST(request: Request) {
     const chapter = quizChapter(paperId);
     if (!(chapter && quizPrice(chapter) > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
+    const recovered = await recoverPurchase(user.userId, paperId, config);
+    if (recovered.approved) return Response.json({ alreadyPaid: true, paperId });
+
     if(getBasicsProduct(paperId)){if(await hasBasicsPackage(user,paperId==='maths-basics-5-8'?'base':'extension'))return Response.json({alreadyPaid:true,paperId});if(!await canBuyBasics(user,paperId))return jsonError('Complete the free first level in this folder before unlocking the package. Refresh this page to see your current price.',403);}
     const AMOUNT_PAISE = getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:chapter ? quizPrice(chapter) : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : 3000;
     const database = getDatabase();
-    const existing = await database.prepare(
-      `SELECT id FROM payment_requests WHERE user_id = ? AND paper_id = ? AND amount_paise = ? AND status = 'approved' LIMIT 1`,
-    ).bind(user.userId, paperId, AMOUNT_PAISE).first<{ id: string }>();
-    if (existing) return Response.json({ alreadyPaid: true, paperId });
-
     const pendingOrder = await database.prepare(
       `SELECT transaction_id
        FROM payment_requests
@@ -85,6 +84,6 @@ export async function POST(request: Request) {
     return Response.json({ keyId: config.keyId, orderId: order.id, amount: AMOUNT_PAISE, currency: 'INR', paperId });
   } catch (error) {
     console.error('Razorpay order creation error', error);
-    return jsonError('Razorpay could not start the payment. Please try again.', 500);
+    return jsonError('Checkout could not start safely. Use Check completed payment before trying again.', 502);
   }
 }
