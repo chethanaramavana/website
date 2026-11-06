@@ -1,396 +1,338 @@
 {
- "formulas": [
-  {
-   "idea": "Slope through $(x_1,y_1)$ and $(x_2,y_2)$",
-   "formula": "$m=\\dfrac{y_2-y_1}{x_2-x_1},\\; x_1\\ne x_2$"
-  },
-  {
-   "idea": "Slope from inclination $\\theta$",
-   "formula": "$m=\\tan\\theta,\\;\\theta\\ne 90^\\circ$"
-  },
-  {
-   "idea": "Parallel lines",
-   "formula": "$m_1=m_2$"
-  },
-  {
-   "idea": "Perpendicular lines",
-   "formula": "$m_1m_2=-1$"
-  },
-  {
-   "idea": "Acute angle between two lines",
-   "formula": "$\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|$"
-  },
-  {
-   "idea": "Line parallel to the $x$-axis / $y$-axis",
-   "formula": "$y=b\\quad/\\quad x=a$"
-  },
-  {
-   "idea": "Point–slope form",
-   "formula": "$y-y_1=m(x-x_1)$"
-  },
-  {
-   "idea": "Two-point form",
-   "formula": "$y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)$"
-  },
-  {
-   "idea": "Slope–intercept form",
-   "formula": "$y=mx+c$"
-  },
-  {
-   "idea": "Intercept form",
-   "formula": "$\\dfrac{x}{a}+\\dfrac{y}{b}=1$"
-  },
-  {
-   "idea": "Slope of $Ax+By+C=0$",
-   "formula": "$m=-\\dfrac{A}{B}$"
-  },
-  {
-   "idea": "Distance of $(x_1,y_1)$ from $Ax+By+C=0$",
-   "formula": "$d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}$"
-  },
-  {
-   "idea": "Distance between $Ax+By+C_1=0$ and $Ax+By+C_2=0$",
-   "formula": "$d=\\dfrac{|C_1-C_2|}{\\sqrt{A^2+B^2}}$"
-  }
- ],
- "sections": [
-  {
-   "title": "Section A — Very short answer",
-   "marks": "1 mark each",
-   "questions": [
+  "formulas": [
     {
-     "n": 1,
-     "text": "Find the slope of the line through $(-3,\\,2)$ and $(5,\\,-6)$."
+      "idea": "Slope through $(x_1,y_1)$ and $(x_2,y_2)$",
+      "formula": "$m=\\dfrac{y_2-y_1}{x_2-x_1},\\; x_1\\ne x_2$"
     },
     {
-     "n": 2,
-     "text": "Find the inclination of a line whose slope is $-\\sqrt{3}$."
+      "idea": "Slope from inclination $\\theta$",
+      "formula": "$m=\\tan\\theta,\\;\\theta\\ne 90^\\circ$"
     },
     {
-     "n": 3,
-     "text": "The line through $(2,\\,k)$ and $(4,\\,7)$ is parallel to the line through $(0,\\,1)$ and $(3,\\,7)$. Find $k$."
+      "idea": "Parallel lines",
+      "formula": "$m_1=m_2$"
     },
     {
-     "n": 4,
-     "text": "Write the equation of the line through $(3,\\,-5)$ that is parallel to the $x$-axis."
+      "idea": "Perpendicular lines",
+      "formula": "$m_1m_2=-1$"
     },
     {
-     "n": 5,
-     "text": "Write the equation of the line with slope $\\dfrac{2}{3}$ and $y$-intercept $-4$."
+      "idea": "Acute angle between two lines",
+      "formula": "$\\tan\\theta=\\left|\\dfrac{m_2-m_1}{1+m_1m_2}\\right|$"
     },
     {
-     "n": 6,
-     "text": "Find the intercepts that the line $4x-3y+24=0$ makes on the two axes."
+      "idea": "Line parallel to the $x$-axis / $y$-axis",
+      "formula": "$y=b\\quad/\\quad x=a$"
     },
     {
-     "n": 7,
-     "text": "Find $k$ if the line $kx+4y-7=0$ is perpendicular to the line $3x-2y+5=0$."
+      "idea": "Point–slope form",
+      "formula": "$y-y_1=m(x-x_1)$"
     },
     {
-     "n": 8,
-     "text": "Find the acute angle between the line $x-y=4$ and the $y$-axis."
+      "idea": "Two-point form",
+      "formula": "$y-y_1=\\dfrac{y_2-y_1}{x_2-x_1}(x-x_1)$"
     },
     {
-     "n": 9,
-     "text": "Find the distance of the point $(-2,\\,3)$ from the line $12x-5y+1=0$."
+      "idea": "Slope–intercept form",
+      "formula": "$y=mx+c$"
     },
     {
-     "n": 10,
-     "text": "Find the distance between the parallel lines $5x-12y+7=0$ and $10x-24y-13=0$."
+      "idea": "Intercept form",
+      "formula": "$\\dfrac{x}{a}+\\dfrac{y}{b}=1$"
     },
     {
-     "n": 11,
-     "text": "A line passes through $(-2,\\,5)$. Its $x$-intercept and $y$-intercept are equal in size but opposite in sign. Write its equation."
+      "idea": "Slope of $Ax+By+C=0$",
+      "formula": "$m=-\\dfrac{A}{B}$"
     },
     {
-     "n": 12,
-     "text": "Fill in the blanks.",
-     "parts": [
-      {
-       "label": "a",
-       "text": "The slope of a line perpendicular to $2x+5y=9$ is ____________."
-      },
-      {
-       "label": "b",
-       "text": "The equation of the line parallel to the $y$-axis, 3 units to its left, is ____________."
-      },
-      {
-       "label": "c",
-       "text": "The line $3x+4y=12$ meets the $y$-axis at the point ____________."
-      },
-      {
-       "label": "d",
-       "text": "The equation of the line through the origin with inclination $60^\\circ$ is ____________."
-      },
-      {
-       "label": "e",
-       "text": "The perpendicular distance of the origin from the line $3x-4y=10$ is ____________."
-      },
-      {
-       "label": "f",
-       "text": "The slope of the line through $(a,\\,b)$ and $(b,\\,a)$, where $a\\ne b$, is ____________."
-      }
-     ]
+      "idea": "Distance of $(x_1,y_1)$ from $Ax+By+C=0$",
+      "formula": "$d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}$"
     },
     {
-     "n": 13,
-     "text": "State True or False.",
-     "parts": [
-      {
-       "label": "a",
-       "text": "The lines $2x-3y=5$ and $6y=4x+1$ are parallel."
-      },
-      {
-       "label": "b",
-       "text": "The slope of a vertical line is $0$."
-      },
-      {
-       "label": "c",
-       "text": "The point $(2,\\,-1)$ lies on the line $3x+2y=4$."
-      },
-      {
-       "label": "d",
-       "text": "The $y$-intercept of the line $2x-5y+10=0$ is $-2$."
-      },
-      {
-       "label": "e",
-       "text": "Two non-vertical lines with slopes $m_1$ and $m_2$ are perpendicular when $m_1m_2=-1$."
-      },
-      {
-       "label": "f",
-       "text": "The line $y=3$ is parallel to the $x$-axis."
-      }
-     ]
-    },
-    {
-     "n": 14,
-     "text": "The acute angle between the lines $\\sqrt{3}x-y+2=0$ and $x-\\sqrt{3}y-1=0$ is",
-     "options": [
-      "$15^\\circ$",
-      "$30^\\circ$",
-      "$45^\\circ$",
-      "$60^\\circ$"
-     ]
-    },
-    {
-     "n": 15,
-     "text": "The line $\\dfrac{x}{3}+\\dfrac{y}{4}=1$ meets the $x$-axis at $A$ and the $y$-axis at $B$. The length $AB$ is",
-     "options": [
-      "$5$",
-      "$7$",
-      "$12$",
-      "$25$"
-     ]
-    },
-    {
-     "n": 16,
-     "text": "The equation of the line through $(-4,\\,1)$ that is perpendicular to the $x$-axis is",
-     "options": [
-      "$y=1$",
-      "$x=-4$",
-      "$y=-4$",
-      "$x=1$"
-     ]
-    },
-    {
-     "n": 17,
-     "text": "The line through $(2,\\,1)$ parallel to $3x+y=5$ is",
-     "options": [
-      "$3x+y=7$",
-      "$x-3y=-1$",
-      "$3x-y=5$",
-      "$x+3y=5$"
-     ]
-    },
-    {
-     "n": 18,
-     "text": "The lines $2x+y-3=0$, $5x+ky-3=0$ and $3x-y-2=0$ pass through one point. The value of $k$ is",
-     "options": [
-      "$2$",
-      "$-2$",
-      "$3$",
-      "$-3$"
-     ]
-    },
-    {
-     "n": 19,
-     "text": "The foot of the perpendicular from $(1,\\,-2)$ to the line $x-y+1=0$ is",
-     "options": [
-      "$(-1,\\,0)$",
-      "$(0,\\,1)$",
-      "$(1,\\,2)$",
-      "$(-2,\\,-1)$"
-     ]
-    },
-    {
-     "n": 20,
-     "text": "A line through $P(3,\\,-2)$ meets the axes so that $P$ is the mid-point of the part between the axes. Its equation is",
-     "options": [
-      "$2x-3y=12$",
-      "$3x-2y=13$",
-      "$2x+3y=0$",
-      "$x-y=5$"
-     ]
-    },
-    {
-     "n": 21,
-     "text": "The triangle formed by the lines $x=0$, $y=0$ and $x+y=6$ is",
-     "options": [
-      "equilateral",
-      "right-angled and isosceles",
-      "obtuse-angled",
-      "scalene and acute-angled"
-     ]
+      "idea": "Distance between $Ax+By+C_1=0$ and $Ax+By+C_2=0$",
+      "formula": "$d=\\dfrac{|C_1-C_2|}{\\sqrt{A^2+B^2}}$"
     }
-   ]
-  },
-  {
-   "title": "Section B — Short answer",
-   "marks": "2 marks each",
-   "questions": [
+  ],
+  "sections": [
     {
-     "n": 22,
-     "text": "Find the equation of the line through $(2,\\,-3)$ that makes an angle of $135^\\circ$ with the positive $x$-axis."
+      "title": "Section A — Very short answer",
+      "marks": "1 mark each",
+      "questions": [
+        {
+          "n": 1,
+          "text": "Find the slope of the line through $(-3,\\,2)$ and $(5,\\,-6)$."
+        },
+        {
+          "n": 2,
+          "text": "Find the inclination of a line whose slope is $-\\sqrt{3}$."
+        },
+        {
+          "n": 3,
+          "text": "The line through $(2,\\,k)$ and $(4,\\,7)$ is parallel to the line through $(0,\\,1)$ and $(3,\\,7)$. Find $k$."
+        },
+        {
+          "n": 4,
+          "text": "Write the equation of the line with slope $\\dfrac{2}{3}$ and $y$-intercept $-4$."
+        },
+        {
+          "n": 5,
+          "text": "Find the intercepts that the line $4x-3y+24=0$ makes on the two axes."
+        },
+        {
+          "n": 6,
+          "text": "Find $k$ if the line $kx+4y-7=0$ is perpendicular to the line $3x-2y+5=0$."
+        },
+        {
+          "n": 7,
+          "text": "Find the distance of the point $(-2,\\,3)$ from the line $12x-5y+1=0$."
+        },
+        {
+          "n": 8,
+          "text": "Find the distance between the parallel lines $5x-12y+7=0$ and $10x-24y-13=0$."
+        },
+        {
+          "n": 9,
+          "text": "Fill in the blanks.",
+          "parts": [
+            {
+              "label": "a",
+              "text": "The slope of a line perpendicular to $2x+5y=9$ is ____________."
+            },
+            {
+              "label": "b",
+              "text": "The equation of the line parallel to the $y$-axis, 3 units to its left, is ____________."
+            },
+            {
+              "label": "c",
+              "text": "The line $3x+4y=12$ meets the $y$-axis at the point ____________."
+            },
+            {
+              "label": "d",
+              "text": "The equation of the line through the origin with inclination $60^\\circ$ is ____________."
+            },
+            {
+              "label": "e",
+              "text": "The perpendicular distance of the origin from the line $3x-4y=10$ is ____________."
+            },
+            {
+              "label": "f",
+              "text": "The slope of the line through $(a,\\,b)$ and $(b,\\,a)$, where $a\\ne b$, is ____________."
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "text": "State True or False.",
+          "parts": [
+            {
+              "label": "a",
+              "text": "The lines $2x-3y=5$ and $6y=4x+1$ are parallel."
+            },
+            {
+              "label": "b",
+              "text": "The slope of a vertical line is $0$."
+            },
+            {
+              "label": "c",
+              "text": "The point $(2,\\,-1)$ lies on the line $3x+2y=4$."
+            },
+            {
+              "label": "d",
+              "text": "The $y$-intercept of the line $2x-5y+10=0$ is $-2$."
+            },
+            {
+              "label": "e",
+              "text": "Two non-vertical lines with slopes $m_1$ and $m_2$ are perpendicular when $m_1m_2=-1$."
+            },
+            {
+              "label": "f",
+              "text": "The line $y=3$ is parallel to the $x$-axis."
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "text": "The acute angle between the lines $\\sqrt{3}x-y+2=0$ and $x-\\sqrt{3}y-1=0$ is",
+          "options": [
+            "$15^\\circ$",
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$60^\\circ$"
+          ]
+        },
+        {
+          "n": 12,
+          "text": "The equation of the line through $(-4,\\,1)$ that is perpendicular to the $x$-axis is",
+          "options": [
+            "$y=1$",
+            "$x=-4$",
+            "$y=-4$",
+            "$x=1$"
+          ]
+        },
+        {
+          "n": 13,
+          "text": "The line through $(2,\\,1)$ parallel to $3x+y=5$ is",
+          "options": [
+            "$3x+y=7$",
+            "$x-3y=-1$",
+            "$3x-y=5$",
+            "$x+3y=5$"
+          ]
+        },
+        {
+          "n": 14,
+          "text": "The lines $2x+y-3=0$, $5x+ky-3=0$ and $3x-y-2=0$ pass through one point. The value of $k$ is",
+          "options": [
+            "$2$",
+            "$-2$",
+            "$3$",
+            "$-3$"
+          ]
+        },
+        {
+          "n": 15,
+          "text": "The triangle formed by the lines $x=0$, $y=0$ and $x+y=6$ is",
+          "options": [
+            "equilateral",
+            "right-angled and isosceles",
+            "obtuse-angled",
+            "scalene and acute-angled"
+          ]
+        }
+      ]
     },
     {
-     "n": 23,
-     "text": "Find the equation of the line through $(-1,\\,4)$ and $(3,\\,-2)$. Write it in the form $ax+by+c=0$."
+      "title": "Section B — Short answer",
+      "marks": "2 marks each",
+      "questions": [
+        {
+          "n": 16,
+          "text": "Find the equation of the line through $(2,\\,-3)$ that makes an angle of $135^\\circ$ with the positive $x$-axis."
+        },
+        {
+          "n": 17,
+          "text": "Find the equation of the line through $(-1,\\,4)$ and $(3,\\,-2)$. Write it in the form $ax+by+c=0$."
+        },
+        {
+          "n": 18,
+          "text": "Find the equations of the lines whose $x$-intercept and $y$-intercept have sum $5$ and product $6$."
+        },
+        {
+          "n": 19,
+          "text": "Without finding any equation, show that the line through $(2,\\,5)$ and $(-1,\\,3)$ is perpendicular to the line through $(0,\\,0)$ and $(2,\\,-3)$."
+        },
+        {
+          "n": 20,
+          "text": "The vertices of a triangle are $A(2,\\,3)$, $B(-1,\\,0)$ and $C(4,\\,-2)$. Find the equation of the median through $A$."
+        }
+      ]
     },
     {
-     "n": 24,
-     "text": "Find the acute angle between two lines whose slopes are $2-\\sqrt{3}$ and $2+\\sqrt{3}$."
+      "title": "Section C — Short answer",
+      "marks": "3 marks each",
+      "questions": [
+        {
+          "n": 21,
+          "text": "Find the image of the point $(1,\\,2)$ in the line $2x-y+5=0$. (The line is the perpendicular bisector of the point and its image.)"
+        },
+        {
+          "n": 22,
+          "text": "Find the point where the lines $2x+3y=13$ and $5x-y=7$ meet. Then find the equation of the line through that point which is perpendicular to $3x-4y+1=0$."
+        },
+        {
+          "n": 23,
+          "text": "Find the equations of the lines through $(3,\\,-2)$ that make an angle of $60^\\circ$ with the line $\\sqrt{3}x+y=1$."
+        },
+        {
+          "n": 24,
+          "text": "Find all values of $k$ for which the point $(k,\\,2)$ is 4 units away from the line $3x+4y-6=0$."
+        },
+        {
+          "n": 25,
+          "text": "$A(2,\\,1)$ and $C(6,\\,5)$ are opposite vertices of a square $ABCD$. Find the equation of the diagonal $BD$, and the coordinates of $B$ and $D$."
+        }
+      ]
     },
     {
-     "n": 25,
-     "text": "Find the points on the $x$-axis that are 4 units away from the line $4x+3y=12$."
+      "title": "Section D — Long answer",
+      "marks": "5 marks each",
+      "questions": [
+        {
+          "n": 26,
+          "text": "Find the equations of all lines that pass through $(2,\\,3)$ and are at a distance of 2 units from the origin. (Do not forget a line that has no slope.)"
+        },
+        {
+          "n": 27,
+          "text": "The vertices $A(-2,\\,3)$ and $B(2,\\,1)$ of a rectangle $ABCD$ lie on the line $x+2y-4=0$. The vertex $C$ lies on the $x$-axis. Find the equations of the other three sides, and the coordinates of $C$ and $D$."
+        },
+        {
+          "n": 28,
+          "text": "A line meets the $x$-axis at $A$ and the $y$-axis at $B$. The point $P(3,\\,-4)$ divides $AB$ internally in the ratio $AP:PB=2:3$.",
+          "parts": [
+            {
+              "label": "a",
+              "text": "Find the coordinates of $A$ and $B$."
+            },
+            {
+              "label": "b",
+              "text": "Find the equation of the line."
+            },
+            {
+              "label": "c",
+              "text": "Find the length $AB$ and the area of $\\triangle OAB$, where $O$ is the origin."
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "text": "The vertices of a triangle are $A(0,\\,0)$, $B(6,\\,0)$ and $C(2,\\,4)$.",
+          "parts": [
+            {
+              "label": "a",
+              "text": "Find the equations of the altitudes from $A$ and from $C$, and hence the orthocentre."
+            },
+            {
+              "label": "b",
+              "text": "Find the equations of the perpendicular bisectors of $AB$ and $AC$, and hence the circumcentre."
+            },
+            {
+              "label": "c",
+              "text": "Check that the circumcentre is equally far from $A$, $B$ and $C$."
+            }
+          ]
+        }
+      ]
     },
     {
-     "n": 26,
-     "text": "Find the equations of the lines whose $x$-intercept and $y$-intercept have sum $5$ and product $6$."
-    },
-    {
-     "n": 27,
-     "text": "Without finding any equation, show that the line through $(2,\\,5)$ and $(-1,\\,3)$ is perpendicular to the line through $(0,\\,0)$ and $(2,\\,-3)$."
-    },
-    {
-     "n": 28,
-     "text": "The vertices of a triangle are $A(2,\\,3)$, $B(-1,\\,0)$ and $C(4,\\,-2)$. Find the equation of the median through $A$."
+      "title": "Section E — Case study",
+      "marks": "4 marks",
+      "questions": [
+        {
+          "n": 30,
+          "text": "A town planner draws a map on a coordinate grid, where 1 unit $=100$ m. The school is at the origin $O(0,\\,0)$. A straight main road runs along the line $3x+4y=24$. The town wants a footpath from the school to the road that is as short as possible.",
+          "parts": [
+            {
+              "label": "i",
+              "text": "Find the points where the road crosses the $x$-axis and the $y$-axis. (1 mark)"
+            },
+            {
+              "label": "ii",
+              "text": "Find the slope of the road. (1 mark)"
+            },
+            {
+              "label": "iii",
+              "text": "Find the length of the shortest footpath from the school to the road, in metres. (2 marks)"
+            }
+          ],
+          "orParts": [
+            {
+              "label": "iii",
+              "text": "Find the equation of the footpath that meets the road at right angles, and the point where it meets the road. (2 marks)"
+            }
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "title": "Section C — Short answer",
-   "marks": "3 marks each",
-   "questions": [
-    {
-     "n": 29,
-     "text": "The vertices of a triangle are $A(1,\\,4)$, $B(-2,\\,1)$ and $C(5,\\,-3)$. Find the equation of the altitude from $A$."
-    },
-    {
-     "n": 30,
-     "text": "Find the equation of the perpendicular bisector of the segment that joins $(3,\\,-1)$ and $(-5,\\,5)$."
-    },
-    {
-     "n": 31,
-     "text": "Find the image of the point $(1,\\,2)$ in the line $2x-y+5=0$. (The line is the perpendicular bisector of the point and its image.)"
-    },
-    {
-     "n": 32,
-     "text": "Find the point where the lines $2x+3y=13$ and $5x-y=7$ meet. Then find the equation of the line through that point which is perpendicular to $3x-4y+1=0$."
-    },
-    {
-     "n": 33,
-     "text": "Find the equations of the lines through $(3,\\,-2)$ that make an angle of $60^\\circ$ with the line $\\sqrt{3}x+y=1$."
-    },
-    {
-     "n": 34,
-     "text": "Find all values of $k$ for which the point $(k,\\,2)$ is 4 units away from the line $3x+4y-6=0$."
-    },
-    {
-     "n": 35,
-     "text": "$A(2,\\,1)$ and $C(6,\\,5)$ are opposite vertices of a square $ABCD$. Find the equation of the diagonal $BD$, and the coordinates of $B$ and $D$."
-    }
-   ]
-  },
-  {
-   "title": "Section D — Long answer",
-   "marks": "5 marks each",
-   "questions": [
-    {
-     "n": 36,
-     "text": "Find the equations of all lines that pass through $(2,\\,3)$ and are at a distance of 2 units from the origin. (Do not forget a line that has no slope.)"
-    },
-    {
-     "n": 37,
-     "text": "The vertices $A(-2,\\,3)$ and $B(2,\\,1)$ of a rectangle $ABCD$ lie on the line $x+2y-4=0$. The vertex $C$ lies on the $x$-axis. Find the equations of the other three sides, and the coordinates of $C$ and $D$."
-    },
-    {
-     "n": 38,
-     "text": "A line meets the $x$-axis at $A$ and the $y$-axis at $B$. The point $P(3,\\,-4)$ divides $AB$ internally in the ratio $AP:PB=2:3$.",
-     "parts": [
-      {
-       "label": "a",
-       "text": "Find the coordinates of $A$ and $B$."
-      },
-      {
-       "label": "b",
-       "text": "Find the equation of the line."
-      },
-      {
-       "label": "c",
-       "text": "Find the length $AB$ and the area of $\\triangle OAB$, where $O$ is the origin."
-      }
-     ]
-    },
-    {
-     "n": 39,
-     "text": "The vertices of a triangle are $A(0,\\,0)$, $B(6,\\,0)$ and $C(2,\\,4)$.",
-     "parts": [
-      {
-       "label": "a",
-       "text": "Find the equations of the altitudes from $A$ and from $C$, and hence the orthocentre."
-      },
-      {
-       "label": "b",
-       "text": "Find the equations of the perpendicular bisectors of $AB$ and $AC$, and hence the circumcentre."
-      },
-      {
-       "label": "c",
-       "text": "Check that the circumcentre is equally far from $A$, $B$ and $C$."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "title": "Section E — Case study",
-   "marks": "4 marks",
-   "questions": [
-    {
-     "n": 40,
-     "text": "A town planner draws a map on a coordinate grid, where 1 unit $=100$ m. The school is at the origin $O(0,\\,0)$. A straight main road runs along the line $3x+4y=24$. The town wants a footpath from the school to the road that is as short as possible.",
-     "parts": [
-      {
-       "label": "i",
-       "text": "Find the points where the road crosses the $x$-axis and the $y$-axis. (1 mark)"
-      },
-      {
-       "label": "ii",
-       "text": "Find the slope of the road. (1 mark)"
-      },
-      {
-       "label": "iii",
-       "text": "Find the length of the shortest footpath from the school to the road, in metres. (2 marks)"
-      }
-     ],
-     "orParts": [
-      {
-       "label": "iii",
-       "text": "Find the equation of the footpath that meets the road at right angles, and the point where it meets the road. (2 marks)"
-      }
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }

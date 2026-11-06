@@ -8,7 +8,7 @@ import './worksheet.css';
 
 export const metadata: Metadata = {
   title: 'Free Straight Lines worksheet · Grade 11 | Ramavana',
-  description: 'A free CBSE Grade 11 Straight Lines practice worksheet: 40 questions in five sections, with a key-formula table. Free with a Google sign-in.',
+  description: 'A free CBSE Grade 11 Straight Lines practice worksheet: 30 questions in five sections, with a key-formula table. Free with a Google sign-in.',
 };
 
 type Part = { label: string; text: string };
@@ -29,7 +29,7 @@ export default function StraightLinesWorksheet() {
     <article className="ws-sheet">
       <header className="ws-head"><Brand /><div><strong>Straight Lines</strong><span>Grade 11 · CBSE · Free practice worksheet</span></div></header>
       <div className="ws-meta"><span>Name:</span><span>Date:</span><span>Batch:</span></div>
-      <p className="ws-note">Solve every question in your notebook and show all working. Questions follow the current CBSE syllabus (2026–27). Normal form, general equation, family of lines and shifting of origin are not in the syllabus, so they are not asked here.</p>
+      <p className="ws-note">Solve every question in your notebook and show all working.</p>
       <h2 className="ws-section"><span>Key formulas</span></h2>
       <table className="ws-formulas"><tbody>{worksheet.formulas.map((f, i) => <tr key={i}><td><Tex>{f.idea}</Tex></td><td><Tex>{f.formula}</Tex></td></tr>)}</tbody></table>
       {worksheet.sections.map((section) => <section key={section.title}>

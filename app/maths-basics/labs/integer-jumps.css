@@ -16,3 +16,5 @@
 .div-table td,.div-table th{border:1px solid #c7cfd9;padding:7px 10px;text-align:left}
 .div-table .yes{color:#205238;font-weight:700}.div-table .no{color:#922707;font-weight:700}
 @media(prefers-reduced-motion:reduce){.int-man{transition:none}.int-hop,.int-turn{animation:none}}
+.frac-mul{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:12px;align-items:center}
+@media(max-width:560px){.frac-mul{grid-template-columns:1fr}}

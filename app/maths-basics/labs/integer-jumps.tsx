@@ -4,24 +4,24 @@ import {Lab,MathLine,Why,Choices,Slider,ink,gold,cream,blue,fmt} from './lab-kit
 import './integer-jumps.css';
 
 /** One move of the man: he turns around, or he jumps from one number to another. */
-type Action={kind:'turn'}|{kind:'jump';from:number;to:number;back:boolean};
+export type Action={kind:'turn'}|{kind:'jump';from:number;to:number;back:boolean};
 const signed=(n:number)=>n<0?`(${fmt(n)})`:fmt(n);
 const sign=(n:number)=>n<0?-1:1;
 
 /** Steps through the actions one at a time, or plays them all with a pause between moves. */
-function useStepper(total:number,resetKey:string){
+export function useStepper(total:number,resetKey:string){
  const [step,setStep]=useState(0),[playing,setPlaying]=useState(false);
  useEffect(()=>{setStep(0);setPlaying(false);},[resetKey]);
  useEffect(()=>{if(!playing)return;if(step>=total){setPlaying(false);return;}const t=setTimeout(()=>setStep(s=>s+1),step===0?250:700);return()=>clearTimeout(t);},[playing,step,total]);
  return {step,play:()=>{if(step>=total)setStep(0);setPlaying(true);},next:()=>{setPlaying(false);setStep(s=>Math.min(total,s+1));},reset:()=>{setPlaying(false);setStep(0);}};
 }
 
-function Controls({stepper,total,nextLabel='Next jump'}:{stepper:ReturnType<typeof useStepper>;total:number;nextLabel?:string}){
+export function Controls({stepper,total,nextLabel='Next jump'}:{stepper:ReturnType<typeof useStepper>;total:number;nextLabel?:string}){
  return <div className="lesson-controls"><button type="button" onClick={stepper.play}>▶ Play</button><button type="button" className="lesson-add" disabled={stepper.step>=total} onClick={stepper.next}>{nextLabel}</button><button type="button" className="lesson-add" onClick={stepper.reset}>Start again</button></div>;
 }
 
 /** A number line with a man who stands on a number, faces left or right, turns around and jumps. */
-export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEvery=1,marks=[],showMan=true,sizeLabels=false}:{min:number;max:number;start:number;actions:Action[];step:number;label:string;labelEvery?:number;tickEvery?:number;marks?:number[];showMan?:boolean;sizeLabels?:boolean}){
+export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEvery=1,marks=[],showMan=true,sizeLabels=false,format=fmt}:{min:number;max:number;start:number;actions:Action[];step:number;label:string;labelEvery?:number;tickEvery?:number;marks?:number[];showMan?:boolean;sizeLabels?:boolean;format?:(v:number)=>string}){
  const X=(v:number)=>40+(v-min)*520/(max-min),axis=176;
  let pos=start,right=true;
  const done=actions.slice(0,step);
@@ -33,7 +33,7 @@ export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEver
   {min<0&&<rect x={40} y={axis-5} width={X(0)-40} height={10} fill={blue}/>}
   {max>0&&<rect x={X(Math.max(0,min))} y={axis-5} width={560-X(Math.max(0,min))} height={10} fill={cream}/>}
   <line x1="34" y1={axis} x2="566" y2={axis} stroke={ink} strokeWidth="2"/>
-  {ticks.map(v=><g key={v}><path d={`M${X(v)} ${axis-7}v14`} stroke={ink} strokeWidth={v===0?3:1.5}/>{v%labelEvery===0&&<text x={X(v)} y={axis+26} textAnchor="middle" fontSize={max-min>20?12:14} fontWeight={v===0?700:400} fill={ink}>{fmt(v)}</text>}</g>)}
+  {ticks.map(v=><g key={v}><path d={`M${X(v)} ${axis-7}v14`} stroke={ink} strokeWidth={v===0?3:1.5}/>{v%labelEvery===0&&<text x={X(v)} y={axis+26} textAnchor="middle" fontSize={max-min>20?12:14} fontWeight={v===0?700:400} fill={ink}>{format(v)}</text>}</g>)}
   {marks.map(v=><circle key={v} cx={X(v)} cy={axis} r="6" fill={gold} stroke={ink}/>)}
   {min<0&&<text x="40" y="230" fontSize="13" fill={ink}>← negative side</text>}
   {max>0&&min<0&&<text x="560" y="230" textAnchor="end" fontSize="13" fill={ink}>positive side →</text>}
@@ -53,7 +53,7 @@ export function JumpLine({min,max,start,actions,step,label,labelEvery=1,tickEver
  </svg>;
 }
 
-const unitJumps=(from:number,count:number,dir:number,back:boolean):Action[]=>Array.from({length:count},(_,i)=>({kind:'jump',from:from+dir*i,to:from+dir*(i+1),back}));
+export const unitJumps=(from:number,count:number,dir:number,back:boolean):Action[]=>Array.from({length:count},(_,i)=>({kind:'jump',from:from+dir*i,to:from+dir*(i+1),back}));
 
 function RuleCards({current}:{current:'same'|'different'}){
  return <div className="int-rules"><div className={current==='same'?'is-current':''}><h4>Same signs</h4><p>Add the sizes. Keep the sign. 3 + 4 = 7 and (−3) + (−4) = −7.</p></div><div className={current==='different'?'is-current':''}><h4>Different signs</h4><p>Subtract the smaller size from the bigger size. Use the sign of the bigger size. 6 + (−2) = 4 and 2 + (−6) = −4.</p></div></div>;
