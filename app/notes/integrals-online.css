@@ -64,3 +64,4 @@
 .ir-result{margin-top:10px}
 @media(max-width:600px){.ir-sheet-grid{grid-template-columns:1fr}.ir-sheet-line,.ir-line,.ir-use-line{font-size:15px}}
 @media print{.ir-theory{display:none}}
+.ir-sub{font:17px/1.5 system-ui;color:#4c4358;margin:0 0 6px}

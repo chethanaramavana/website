@@ -5,7 +5,7 @@ import IntegralsVisual from './integrals-visuals';
 import {SessionProgress, SessionTick} from './integrals-ticks';
 import './integrals-online.css';
 
-type Worked = {title: string; question: string; use?: string[]; steps: string[]; result?: string; type?: string};
+type Worked = {title?: string; question: string; use?: string[]; steps: string[]; result?: string; type?: string};
 const math = (f: string) => `$${f}$`;
 
 function Example({e, label}: {e: Worked; label: string}) {
@@ -26,8 +26,9 @@ export default function IntegralsOnline() {
     <a className="ir-brand" href="/"><img src="/ramavana-mark.png" alt="Ramavana mathematical logo" /><span>Ramavana<br /><small>Mathematical Center</small></span></a>
     <nav><a href="/cbse/grade-12">Grade 12</a> / <a href="/cbse/grade-12/integrals">Integrals</a> / Notes</nav>
     <header>
-      <p className="ir-kicker">THE INTEGRALS CHAPTER</p>
-      <h1>Learn the formulas.<br /><em>Solve every type.</em></h1>
+      <p className="ir-kicker">GRADE 12 · CHAPTER 7</p>
+      <h1>Integrals</h1>
+      <p className="ir-sub">Formula sheet and {lessons.reduce((n, l) => n + l.examples.length, 0)} solved examples.</p>
       <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board} · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{lessons.length} (JEE)</p>
     </header>
     <section className="ir-sheet" id="formulas">
@@ -39,12 +40,9 @@ export default function IntegralsOnline() {
       <div className="ir-number">SESSION {String(i + 1).padStart(2, '0')} <span className={`ir-tag ${l.level}`}>{l.level === 'board' ? 'Board exam' : 'Challenge'}</span></div>
       <h2>{l.title}</h2>
       <div className="ir-formulas"><span className="ir-label">Formulas</span>{l.formulas.map((f, k) => <div key={k} className="ir-sheet-line"><Tex>{math(f)}</Tex></div>)}</div>
-      <details className="ir-theory"><summary>Read the theory</summary>{l.ideas.map((p, j) => <p key={j}><Tex>{p}</Tex></p>)}</details>
       {l.visual && <IntegralsVisual kind={l.visual} />}
       <div className="ir-worked">{(l.examples as Worked[]).map((e, j) => <Example key={j} e={e} label={`EXAMPLE ${j + 1}`} />)}
-        {(l.types as Worked[]).map((e, j) => <Example key={`t${j}`} e={e} label={`EXAMPLE ${l.examples.length + j + 1}`} />)}</div>
-      <aside className="ir-watch"><strong>Common mistake</strong><p><Tex>{l.trap}</Tex></p></aside>
-      <div className="ir-check"><strong>Your turn</strong><p><Tex>{l.check}</Tex></p><details><summary>Show the solution</summary><p><Tex>{l.answer}</Tex></p></details></div>
+</div>
       <SessionTick index={i} total={lessons.length} />
     </section>)}
     <footer><h2>Put the ideas to work</h2><p><a href="/cbse/grade-12/ch-7/free-mcq">Take the free 50-question MCQ practice →</a></p><p><a href="/cbse/grade-12/integrals">Choose a CBSE or JEE practice paper →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>

@@ -1,6 +1,6 @@
 [
  {
-  "title": "Integration begins with a derivative",
+  "title": "Integration as anti-derivative",
   "lead": "Look for the function whose rate of change you have been given.",
   "ideas": [
    "If $F\\prime(x)=f(x)$, then $F$ is an antiderivative of $f$. For instance, $x^3$, $x^3+4$ and $x^3-9$ all have derivative $3x^2$. An indefinite integral records this whole family: $$\\int f(x)\\,dx=F(x)+C.$$ The constant is determined only when an extra value is given.",
@@ -9,37 +9,6 @@
   ],
   "examples": [
    {
-    "title": "Recover a quantity",
-    "question": "$F'(x)=9x^2-4$ and $F(1)=8$. Find $F(x)$.",
-    "use": [
-     "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
-    ],
-    "steps": [
-     "$F(x)=\\displaystyle\\int(9x^2-4)\\,dx=9\\cdot\\frac{x^3}{3}-4x+C=3x^3-4x+C$",
-     "$F(1)=8:\\quad 3-4+C=8\\ \\Rightarrow\\ C=9$"
-    ],
-    "result": "$F(x)=3x^3-4x+9$"
-   },
-   {
-    "title": "Why the interval matters",
-    "question": "Find $\\int \\dfrac{1}{x}\\,dx$.",
-    "use": [
-     "\\int\\dfrac{dx}{x}=\\ln|x|+C"
-    ],
-    "steps": [
-     "$x>0:\\quad\\dfrac{d}{dx}\\ln x=\\dfrac1x$",
-     "$x<0:\\quad\\dfrac{d}{dx}\\ln(-x)=\\dfrac{-1}{-x}=\\dfrac1x$"
-    ],
-    "result": "$\\displaystyle\\int\\frac{dx}{x}=\\ln|x|+C,\\quad x\\ne0$"
-   }
-  ],
-  "trap": "Do not write $\\int_a^b f=F(b)+C$. The same constant cancels from $F(b)-F(a)$.",
-  "check": "If $G\\prime(x)=4x-3$ and $G(2)=1$, find $G(0)$.",
-  "answer": "$G=2x^2-3x+C$. At $2$, $1=2+C$, so $G(0)=C=-1$.",
-  "visual": null,
-  "types": [
-   {
-    "title": "Find an antiderivative by inspection",
     "question": "Find an antiderivative of $\\sin 2x$.",
     "use": [
      "\\int\\sin ax\\,dx=-\\dfrac{\\cos ax}{a}+C"
@@ -52,7 +21,6 @@
     "type": "Antiderivative by inspection"
    },
    {
-    "title": "Expand a product first",
     "question": "Evaluate $\\int (2x+1)(x-3)\\,dx$.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
@@ -65,7 +33,17 @@
     "type": "Polynomial after expanding"
    },
    {
-    "title": "Find a curve from its gradient",
+    "question": "$F'(x)=9x^2-4$ and $F(1)=8$. Find $F(x)$.",
+    "use": [
+     "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
+    ],
+    "steps": [
+     "$F(x)=\\displaystyle\\int(9x^2-4)\\,dx=9\\cdot\\frac{x^3}{3}-4x+C=3x^3-4x+C$",
+     "$F(1)=8:\\quad 3-4+C=8\\ \\Rightarrow\\ C=9$"
+    ],
+    "result": "$F(x)=3x^3-4x+9$"
+   },
+   {
     "question": "The gradient of a curve at any point $(x,y)$ is $2x+3$. The curve passes through $(1,\\,2)$. Find its equation.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
@@ -76,18 +54,39 @@
     ],
     "result": "$y=x^2+3x-2$",
     "type": "Curve through a given point"
+   },
+   {
+    "question": "$G'(x)=4x-3$ and $G(2)=1$. Find $G(0)$.",
+    "use": [
+     "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
+    ],
+    "steps": [
+     "$G(x)=2x^2-3x+C$",
+     "$G(2)=8-6+C=1\\ \\Rightarrow\\ C=-1$"
+    ],
+    "result": "$G(0)=-1$"
    }
   ],
+  "trap": "Do not write $\\int_a^b f=F(b)+C$. The same constant cancels from $F(b)-F(a)$.",
+  "check": "If $G\\prime(x)=4x-3$ and $G(2)=1$, find $G(0)$.",
+  "answer": "$G=2x^2-3x+C$. At $2$, $1=2+C$, so $G(0)=C=-1$.",
+  "visual": null,
+  "types": [],
   "formulas": [
-   "\\int f(x)\\,dx=F(x)+C\\iff F'(x)=f(x)",
+   "\\int f(x)\\,dx=F(x)+C\\iff \\dfrac{d}{dx}F(x)=f(x)",
    "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1",
+   "\\int\\dfrac{dx}{x}=\\ln|x|+C",
+   "\\int e^{ax}\\,dx=\\dfrac{e^{ax}}{a}+C",
+   "\\int\\sin x\\,dx=-\\cos x+C",
+   "\\int\\cos x\\,dx=\\sin x+C",
+   "\\int\\sin ax\\,dx=-\\dfrac{\\cos ax}{a}+C",
    "\\int k\\,f(x)\\,dx=k\\int f(x)\\,dx",
    "\\int[f\\pm g]\\,dx=\\int f\\,dx\\pm\\int g\\,dx"
   ],
   "level": "board"
  },
  {
-  "title": "Build a reliable formula bank",
+  "title": "Standard integrals",
   "lead": "Every standard integral is a differentiation rule read backwards.",
   "ideas": [
    "Power rule: increase the power by one, then divide by the new power. $$\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\qquad n\\ne-1.$$ This rule cannot be used when $n=-1$, because the denominator would be zero.",
@@ -101,7 +100,6 @@
   ],
   "examples": [
    {
-    "title": "Rewrite before applying a rule",
     "question": "Evaluate $\\int\\left(6\\sqrt{x}+\\dfrac{5}{x^2}-\\dfrac{2}{x}\\right)dx$, $x>0$.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1",
@@ -114,7 +112,6 @@
     "result": "$4x^{\\frac32}-\\dfrac5x-2\\ln x+C$"
    },
    {
-    "title": "Scale an inverse-trigonometric form",
     "question": "Evaluate $\\displaystyle\\int\\frac{1}{16+9x^2}\\,dx$.",
     "use": [
      "\\int\\dfrac{dx}{x^2+a^2}=\\dfrac1a\\tan^{-1}\\dfrac xa+C"
@@ -124,15 +121,8 @@
      "$=\\dfrac19\\cdot\\dfrac34\\tan^{-1}\\left(x\\div\\dfrac43\\right)+C$"
     ],
     "result": "$\\dfrac{1}{12}\\tan^{-1}\\left(\\dfrac{3x}{4}\\right)+C$"
-   }
-  ],
-  "trap": "The coefficient in $\\int \\frac{dx}{a^2+x^2}$ is $\\frac{1}{a}$, not $\\frac{1}{a^2}$.",
-  "check": "Evaluate $\\int(3e^{2x}+\\cos5x)\\,dx$.",
-  "answer": "$\\frac32e^{2x}+\\frac15\\sin5x+C$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "Divide by a power of x",
     "question": "Evaluate $\\displaystyle\\int\\frac{x^3+5x^2-4}{x^2}\\,dx$.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
@@ -145,7 +135,6 @@
     "type": "Divide, then use the power rule"
    },
    {
-    "title": "Use a trigonometric rule",
     "question": "Evaluate $\\displaystyle\\int\\frac{2-3\\sin x}{\\cos^2x}\\,dx$.",
     "use": [
      "\\int\\sec^2x\\,dx=\\tan x+C",
@@ -158,7 +147,6 @@
     "type": "Trigonometric formula bank"
    },
    {
-    "title": "Use an identity to remove a square",
     "question": "Evaluate $\\int\\tan^2x\\,dx$.",
     "use": [
      "\\tan^2x=\\sec^2x-1",
@@ -171,7 +159,6 @@
     "type": "Identity first"
    },
    {
-    "title": "Exponential functions",
     "question": "Evaluate $\\int\\left(e^{3x}+2^x\\right)dx$.",
     "use": [
      "\\int e^{ax}\\,dx=\\dfrac{e^{ax}}{a}+C",
@@ -182,8 +169,24 @@
     ],
     "result": "$\\dfrac{e^{3x}}{3}+\\dfrac{2^x}{\\ln2}+C$",
     "type": "Exponentials"
+   },
+   {
+    "question": "Evaluate $\\int(3e^{2x}+\\cos5x)\\,dx$.",
+    "use": [
+     "\\int e^{ax}\\,dx=\\dfrac{e^{ax}}{a}+C",
+     "\\int\\cos ax\\,dx=\\dfrac{\\sin ax}{a}+C"
+    ],
+    "steps": [
+     "$=3\\cdot\\dfrac{e^{2x}}{2}+\\dfrac{\\sin5x}{5}+C$"
+    ],
+    "result": "$\\dfrac32e^{2x}+\\dfrac15\\sin5x+C$"
    }
   ],
+  "trap": "The coefficient in $\\int \\frac{dx}{a^2+x^2}$ is $\\frac{1}{a}$, not $\\frac{1}{a^2}$.",
+  "check": "Evaluate $\\int(3e^{2x}+\\cos5x)\\,dx$.",
+  "answer": "$\\frac32e^{2x}+\\frac15\\sin5x+C$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1",
    "\\int\\dfrac{dx}{x}=\\ln|x|+C",
@@ -205,7 +208,7 @@
   "level": "board"
  },
  {
-  "title": "Substitution: recognise the inner derivative",
+  "title": "Integration by substitution",
   "lead": "A good substitution removes complexity from both the expression and its differential.",
   "ideas": [
    "The chain rule says $\\frac{d}{dx}F(g(x))=F\\prime(g(x))g\\prime(x)$. Reverse it: $$\\int f(g(x))g\\prime(x)\\,dx=\\int f(u)\\,du,\\qquad u=g(x).$$ Write $du$ explicitly. If only a constant factor is missing, compensate for that factor outside the integral.",
@@ -214,7 +217,6 @@
   ],
   "examples": [
    {
-    "title": "A derivative hidden in the numerator",
     "question": "Evaluate $\\displaystyle\\int\\frac{4x+3}{2x^2+3x+7}\\,dx$.",
     "use": [
      "\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C"
@@ -226,7 +228,6 @@
     "result": "$\\ln(2x^2+3x+7)+C$"
    },
    {
-    "title": "Change the limits too",
     "question": "Evaluate $\\displaystyle\\int_0^2 x\\sqrt{3x^2+1}\\,dx$.",
     "use": [
      "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)",
@@ -237,15 +238,8 @@
      "$I=\\dfrac16\\displaystyle\\int_1^{13}u^{\\frac12}\\,du=\\frac16\\cdot\\frac23\\left[u^{\\frac32}\\right]_1^{13}=\\frac19\\left(13^{\\frac32}-1\\right)$"
     ],
     "result": "$\\dfrac{13\\sqrt{13}-1}{9}$"
-   }
-  ],
-  "trap": "After changing to $u$, do not use the old $x$-bounds on an antiderivative in $u$.",
-  "check": "Evaluate $\\int_0^1 \\frac{2x}{(5+x^2)^2}\\,dx$.",
-  "answer": "Use $u=5+x^2$: $[-\\frac{1}{u}]_5^6=\\frac{1}{30}$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "A linear expression inside a power",
     "question": "Evaluate $\\int(3x-2)^5\\,dx$.",
     "use": [
      "\\int(ax+b)^n\\,dx=\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C"
@@ -257,7 +251,6 @@
     "type": "Linear inner expression"
    },
    {
-    "title": "A function times its derivative",
     "question": "Evaluate $\\displaystyle\\int\\frac{(\\ln x)^2}{x}\\,dx$.",
     "use": [
      "\\int[f(x)]^n f'(x)\\,dx=\\dfrac{[f(x)]^{n+1}}{n+1}+C"
@@ -270,7 +263,6 @@
     "type": "$f(x)^n\\,f'(x)$"
    },
    {
-    "title": "An exponential with an inverse function",
     "question": "Evaluate $\\displaystyle\\int\\frac{e^{\\tan^{-1}x}}{1+x^2}\\,dx$.",
     "use": [
      "\\int f'(x)e^{f(x)}\\,dx=e^{f(x)}+C"
@@ -283,7 +275,6 @@
     "type": "Inverse function in the power"
    },
    {
-    "title": "Derive the rule for tan x",
     "question": "Show that $\\int\\tan x\\,dx=\\ln|\\sec x|+C$.",
     "use": [
      "\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C"
@@ -295,8 +286,24 @@
     ],
     "result": "$\\ln|\\sec x|+C$",
     "type": "Derive a standard result"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^1 \\frac{2x}{(5+x^2)^2}\\,dx$.",
+    "use": [
+     "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)"
+    ],
+    "steps": [
+     "$u=5+x^2,\\ du=2x\\,dx;\\ \\ 0\\to5,\\ 1\\to6$",
+     "$=\\displaystyle\\int_5^6u^{-2}\\,du=\\left[-\\frac1u\\right]_5^6=-\\frac16+\\frac15$"
+    ],
+    "result": "$\\dfrac{1}{30}$"
    }
   ],
+  "trap": "After changing to $u$, do not use the old $x$-bounds on an antiderivative in $u$.",
+  "check": "Evaluate $\\int_0^1 \\frac{2x}{(5+x^2)^2}\\,dx$.",
+  "answer": "Use $u=5+x^2$: $[-\\frac{1}{u}]_5^6=\\frac{1}{30}$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)",
    "\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C",
@@ -307,7 +314,7 @@
   "level": "board"
  },
  {
-  "title": "Rational functions: divide, factor, decompose",
+  "title": "Partial fractions",
   "lead": "The denominator tells you which simpler fractions are possible.",
   "ideas": [
    "If the numerator degree is at least the denominator degree, divide first. For distinct linear factors use $\\frac{A}{x-a}+\\frac{B}{x-b}$. A repeated factor $(x-a)^m$ needs every power from $1$ to $m$. An irreducible quadratic needs a linear numerator.",
@@ -315,7 +322,6 @@
   ],
   "examples": [
    {
-    "title": "Repeated factors",
     "question": "Evaluate $\\displaystyle\\int\\frac{2x+5}{(x+1)^2(x+3)}\\,dx$.",
     "use": [
      "\\dfrac{px^2+qx+r}{(x-a)^2(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{(x-a)^2}+\\dfrac{C}{x-b}",
@@ -332,7 +338,6 @@
     "result": "$\\dfrac14\\ln\\left|\\dfrac{x+1}{x+3}\\right|-\\dfrac{3}{2(x+1)}+C$"
    },
    {
-    "title": "A quadratic that does not factor over the reals",
     "question": "Evaluate $\\displaystyle\\int\\frac{3x+8}{x^2+4x+8}\\,dx$.",
     "use": [
      "\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C",
@@ -344,15 +349,8 @@
      "$=\\dfrac32\\ln(x^2+4x+8)+2\\cdot\\dfrac12\\tan^{-1}\\dfrac{x+2}{2}+C$"
     ],
     "result": "$\\dfrac32\\ln(x^2+4x+8)+\\tan^{-1}\\left(\\dfrac{x+2}{2}\\right)+C$"
-   }
-  ],
-  "trap": "For $(x+1)^2$, writing only $\\frac{A}{(x+1)^2}$ loses a necessary term.",
-  "check": "Evaluate $\\int\\frac{x^2+3}{x^2+1}\\,dx$.",
-  "answer": "Divide to get $1+\\frac{2}{x^2+1}$. The result is $x+2\\tan^{-1}x+C$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "Distinct linear factors",
     "question": "Evaluate $\\displaystyle\\int\\frac{x}{(x+1)(x+2)}\\,dx$.",
     "use": [
      "\\dfrac{px+q}{(x-a)(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{x-b}",
@@ -367,7 +365,6 @@
     "type": "Distinct linear factors"
    },
    {
-    "title": "An improper fraction: divide first",
     "question": "Evaluate $\\displaystyle\\int\\frac{x^2+1}{x^2-5x+6}\\,dx$.",
     "use": [
      "\\dfrac{px+q}{(x-a)(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{x-b}",
@@ -382,7 +379,6 @@
     "type": "Improper fraction"
    },
    {
-    "title": "Substitute first, then partial fractions",
     "question": "Evaluate $\\displaystyle\\int\\frac{\\cos x}{(1-\\sin x)(2-\\sin x)}\\,dx$.",
     "use": [
      "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)",
@@ -395,8 +391,23 @@
     ],
     "result": "$\\ln\\left|\\dfrac{2-\\sin x}{1-\\sin x}\\right|+C$",
     "type": "Substitution with partial fractions"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int\\frac{x^2+3}{x^2+1}\\,dx$.",
+    "use": [
+     "\\int\\dfrac{dx}{x^2+a^2}=\\dfrac1a\\tan^{-1}\\dfrac xa+C"
+    ],
+    "steps": [
+     "$\\dfrac{x^2+3}{x^2+1}=1+\\dfrac{2}{x^2+1}$"
+    ],
+    "result": "$x+2\\tan^{-1}x+C$"
    }
   ],
+  "trap": "For $(x+1)^2$, writing only $\\frac{A}{(x+1)^2}$ loses a necessary term.",
+  "check": "Evaluate $\\int\\frac{x^2+3}{x^2+1}\\,dx$.",
+  "answer": "Divide to get $1+\\frac{2}{x^2+1}$. The result is $x+2\\tan^{-1}x+C$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\dfrac{px+q}{(x-a)(x-b)}=\\dfrac{A}{x-a}+\\dfrac{B}{x-b}",
    "\\dfrac{px+q}{(x-a)^2}=\\dfrac{A}{x-a}+\\dfrac{B}{(x-a)^2}",
@@ -409,7 +420,7 @@
   "level": "board"
  },
  {
-  "title": "Integration by parts: make the next integral easier",
+  "title": "Integration by parts",
   "lead": "Choose the factor that becomes simpler when differentiated.",
   "ideas": [
    "From $(uv)\\prime=u\\prime v+uv\\prime$, $$\\int u\\,dv=uv-\\int v\\,du.$$ Choose a differentiable $u$ and a $dv$ you can actually integrate. A memory aid about the order of functions is only a starting point; judge the integral that remains.",
@@ -417,7 +428,6 @@
   ],
   "examples": [
    {
-    "title": "Two rounds of parts",
     "question": "Evaluate $\\int x^2e^{2x}\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du",
@@ -432,7 +442,6 @@
     "result": "$\\dfrac{e^{2x}}{4}\\left(2x^2-2x+1\\right)+C$"
    },
    {
-    "title": "When the original integral returns",
     "question": "Evaluate $I=\\int e^x\\cos2x\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du"
@@ -444,15 +453,8 @@
      "$5I=e^x(\\cos2x+2\\sin2x)$"
     ],
     "result": "$\\dfrac{e^x(\\cos 2x+2\\sin 2x)}{5}+C$"
-   }
-  ],
-  "trap": "The minus sign in $uv-\\int v\\,du$ is essential; a negative derivative can then turn that subtraction into addition.",
-  "check": "Evaluate $\\int_1^e x\\ln x\\,dx$.",
-  "answer": "Parts gives $[\\frac{x^2\\ln x}{2}-\\frac{x^2}{4}]_1^e=\\frac{e^2+1}{4}$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "x times a trigonometric function",
     "question": "Evaluate $\\int x\\sin x\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du"
@@ -465,7 +467,6 @@
     "type": "Polynomial times sine or cosine"
    },
    {
-    "title": "A single logarithm",
     "question": "Evaluate $\\int\\ln x\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du"
@@ -478,7 +479,6 @@
     "type": "Logarithm alone"
    },
    {
-    "title": "An inverse trigonometric function",
     "question": "Evaluate $\\int\\tan^{-1}x\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du",
@@ -492,7 +492,6 @@
     "type": "Inverse trigonometric function alone"
    },
    {
-    "title": "The pattern $e^x\\left[f(x)+f'(x)\\right]$",
     "question": "Evaluate $\\int e^x\\left(\\tan x+\\sec^2x\\right)dx$.",
     "use": [
      "\\int e^x\\left[f(x)+f'(x)\\right]dx=e^xf(x)+C"
@@ -502,8 +501,24 @@
     ],
     "result": "$e^x\\tan x+C$",
     "type": "$e^x\\left[f+f'\\right]$ rule"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_1^e x\\ln x\\,dx$.",
+    "use": [
+     "\\int u\\,dv=uv-\\int v\\,du"
+    ],
+    "steps": [
+     "$u=\\ln x,\\ dv=x\\,dx\\ \\Rightarrow\\ du=\\dfrac{dx}{x},\\ v=\\dfrac{x^2}{2}$",
+     "$=\\left[\\dfrac{x^2\\ln x}{2}\\right]_1^e-\\displaystyle\\int_1^e\\frac x2\\,dx=\\frac{e^2}{2}-\\left[\\frac{x^2}{4}\\right]_1^e=\\frac{e^2}{2}-\\frac{e^2-1}{4}$"
+    ],
+    "result": "$\\dfrac{e^2+1}{4}$"
    }
   ],
+  "trap": "The minus sign in $uv-\\int v\\,du$ is essential; a negative derivative can then turn that subtraction into addition.",
+  "check": "Evaluate $\\int_1^e x\\ln x\\,dx$.",
+  "answer": "Parts gives $[\\frac{x^2\\ln x}{2}-\\frac{x^2}{4}]_1^e=\\frac{e^2+1}{4}$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\int u\\,dv=uv-\\int v\\,du",
    "\\int u\\,v\\,dx=u\\int v\\,dx-\\int\\left(u'\\int v\\,dx\\right)dx",
@@ -512,7 +527,7 @@
   "level": "board"
  },
  {
-  "title": "Trigonometric powers and rationalisation",
+  "title": "Trigonometric integrals",
   "lead": "Use identities to create a substitution, rather than expanding blindly.",
   "ideas": [
    "For $\\sin^m x\\cos^n x$, save a cosine factor if $n$ is odd and use $u=\\sin x$; save a sine factor if $m$ is odd and use $u=\\cos x$. If both powers are even, half-angle identities reduce them.",
@@ -521,7 +536,6 @@
   ],
   "examples": [
    {
-    "title": "Odd cosine power",
     "question": "Evaluate $\\int\\sin^4x\\cos^3x\\,dx$.",
     "use": [
      "\\cos^2x=1-\\sin^2x",
@@ -535,7 +549,6 @@
     "result": "$\\dfrac{\\sin^5 x}{5}-\\dfrac{\\sin^7 x}{7}+C$"
    },
    {
-    "title": "A half-angle substitution",
     "question": "Evaluate $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\frac{dx}{2+\\sin x}$.",
     "use": [
      "t=\\tan\\dfrac x2:\\ \\sin x=\\dfrac{2t}{1+t^2},\\ \\cos x=\\dfrac{1-t^2}{1+t^2},\\ dx=\\dfrac{2\\,dt}{1+t^2}",
@@ -547,15 +560,8 @@
      "$=\\dfrac{2}{\\sqrt3}\\left[\\tan^{-1}\\dfrac{2t+1}{\\sqrt3}\\right]_0^1=\\dfrac{2}{\\sqrt3}\\left(\\dfrac\\pi3-\\dfrac\\pi6\\right)$"
     ],
     "result": "$\\dfrac{\\pi}{3\\sqrt3}$"
-   }
-  ],
-  "trap": "An identity such as $\\sqrt{\\cos^2x}=\\cos x$ is false when $\\cos x<0$; the root is $|\\cos x|$.",
-  "check": "Evaluate $\\int\\sin^2(2x)\\,dx$.",
-  "answer": "Use $\\frac{1-\\cos 4x}{2}$: $\\frac{x}{2}-\\frac{\\sin 4x}{8}+C$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "Square of a sine",
     "question": "Evaluate $\\int\\sin^2(2x+5)\\,dx$.",
     "use": [
      "\\sin^2x=\\dfrac{1-\\cos2x}{2},\\ \\cos^2x=\\dfrac{1+\\cos2x}{2}"
@@ -567,7 +573,6 @@
     "type": "Even power: lower it"
    },
    {
-    "title": "Product of two different angles",
     "question": "Evaluate $\\int\\sin3x\\cos4x\\,dx$.",
     "use": [
      "2\\sin A\\cos B=\\sin(A+B)+\\sin(A-B)"
@@ -580,7 +585,6 @@
     "type": "Product to sum"
    },
    {
-    "title": "Odd power of sine alone",
     "question": "Evaluate $\\int\\sin^3x\\,dx$.",
     "use": [
      "\\sin^2x=1-\\cos^2x"
@@ -591,8 +595,23 @@
     ],
     "result": "$-\\cos x+\\dfrac{\\cos^3x}{3}+C$",
     "type": "Odd power: save one factor"
+   },
+   {
+    "question": "Evaluate $\\int\\sin^2(2x)\\,dx$.",
+    "use": [
+     "\\sin^2x=\\dfrac{1-\\cos2x}{2},\\ \\cos^2x=\\dfrac{1+\\cos2x}{2}"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int\\frac{1-\\cos4x}{2}\\,dx$"
+    ],
+    "result": "$\\dfrac{x}{2}-\\dfrac{\\sin 4x}{8}+C$"
    }
   ],
+  "trap": "An identity such as $\\sqrt{\\cos^2x}=\\cos x$ is false when $\\cos x<0$; the root is $|\\cos x|$.",
+  "check": "Evaluate $\\int\\sin^2(2x)\\,dx$.",
+  "answer": "Use $\\frac{1-\\cos 4x}{2}$: $\\frac{x}{2}-\\frac{\\sin 4x}{8}+C$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\sin^2x=\\dfrac{1-\\cos2x}{2},\\ \\cos^2x=\\dfrac{1+\\cos2x}{2}",
    "2\\sin A\\cos B=\\sin(A+B)+\\sin(A-B)",
@@ -603,7 +622,7 @@
   "level": "board"
  },
  {
-  "title": "Radicals and standard algebraic forms",
+  "title": "Special integrals and square roots",
   "lead": "Choose a substitution that turns the root into a familiar identity.",
   "ideas": [
    "For $\\sqrt{a^2-x^2}$, use $x=a\\sin\\theta$ with a range where $\\cos\\theta\\ge0$. For $\\sqrt{x^2+a^2}$, use $x=a\\tan\\theta$. For $\\sqrt{x^2-a^2}$, a secant substitution works on a suitable interval.",
@@ -612,7 +631,6 @@
   ],
   "examples": [
    {
-    "title": "Derive the semicircle antiderivative",
     "question": "Evaluate $\\int\\sqrt{9-x^2}\\,dx$, $|x|<3$.",
     "use": [
      "\\int\\sqrt{a^2-x^2}\\,dx=\\dfrac x2\\sqrt{a^2-x^2}+\\dfrac{a^2}{2}\\sin^{-1}\\dfrac xa+C"
@@ -625,7 +643,6 @@
     "result": "$\\dfrac x2\\sqrt{9-x^2}+\\dfrac92\\sin^{-1}\\left(\\dfrac{x}{3}\\right)+C$"
    },
    {
-    "title": "A root made linear",
     "question": "Evaluate $\\displaystyle\\int\\frac{dx}{\\sqrt{x}+3}$, $x>0$.",
     "use": [
      "\\int\\dfrac{dx}{x}=\\ln|x|+C"
@@ -635,15 +652,8 @@
      "$I=\\displaystyle\\int\\frac{2t}{t+3}\\,dt=\\int\\left(2-\\frac{6}{t+3}\\right)dt=2t-6\\ln|t+3|+C$"
     ],
     "result": "$2\\sqrt{x}-6\\ln(\\sqrt{x}+3)+C$"
-   }
-  ],
-  "trap": "Carry the transformed $dx$ through the substitution; replacing just the radical is not enough.",
-  "check": "Evaluate $\\int \\frac{dx}{\\sqrt{16-(x+2)^2}}$.",
-  "answer": "With $u=x+2$, the answer is $\\sin^{-1} (\\frac{x+2}{4})+C$, for $|x+2|<4$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "The form $\\dfrac{1}{x^2-a^2}$",
     "question": "Evaluate $\\displaystyle\\int\\frac{dx}{x^2-16}$.",
     "use": [
      "\\int\\dfrac{dx}{x^2-a^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{x-a}{x+a}\\right|+C"
@@ -655,7 +665,6 @@
     "type": "$\\dfrac{1}{x^2-a^2}$ form"
    },
    {
-    "title": "Complete the square under a root",
     "question": "Evaluate $\\displaystyle\\int\\frac{dx}{\\sqrt{x^2+2x+2}}$.",
     "use": [
      "\\int\\dfrac{dx}{\\sqrt{x^2+a^2}}=\\ln\\left|x+\\sqrt{x^2+a^2}\\right|+C"
@@ -668,7 +677,6 @@
     "type": "Quadratic under a root"
    },
    {
-    "title": "A linear numerator over a root",
     "question": "Evaluate $\\displaystyle\\int\\frac{x+2}{\\sqrt{x^2+2x+3}}\\,dx$.",
     "use": [
      "\\int\\dfrac{f'(x)}{\\sqrt{f(x)}}\\,dx=2\\sqrt{f(x)}+C",
@@ -682,7 +690,6 @@
     "type": "$\\dfrac{px+q}{\\sqrt{ax^2+bx+c}}$ form"
    },
    {
-    "title": "The root of a quadratic",
     "question": "Evaluate $\\int\\sqrt{x^2+4x+6}\\,dx$.",
     "use": [
      "\\int\\sqrt{x^2+a^2}\\,dx=\\dfrac x2\\sqrt{x^2+a^2}+\\dfrac{a^2}{2}\\ln\\left|x+\\sqrt{x^2+a^2}\\right|+C"
@@ -693,8 +700,23 @@
     ],
     "result": "$\\dfrac{x+2}{2}\\sqrt{x^2+4x+6}+\\ln\\left|x+2+\\sqrt{x^2+4x+6}\\right|+C$",
     "type": "$\\sqrt{x^2+a^2}$ form"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int \\frac{dx}{\\sqrt{16-(x+2)^2}}$.",
+    "use": [
+     "\\int\\dfrac{dx}{\\sqrt{a^2-x^2}}=\\sin^{-1}\\dfrac xa+C"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int\\frac{dx}{\\sqrt{4^2-(x+2)^2}}$"
+    ],
+    "result": "$\\sin^{-1}\\left(\\dfrac{x+2}{4}\\right)+C$"
    }
   ],
+  "trap": "Carry the transformed $dx$ through the substitution; replacing just the radical is not enough.",
+  "check": "Evaluate $\\int \\frac{dx}{\\sqrt{16-(x+2)^2}}$.",
+  "answer": "With $u=x+2$, the answer is $\\sin^{-1} (\\frac{x+2}{4})+C$, for $|x+2|<4$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\int\\dfrac{dx}{x^2-a^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{x-a}{x+a}\\right|+C",
    "\\int\\dfrac{dx}{a^2-x^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{a+x}{a-x}\\right|+C",
@@ -709,7 +731,7 @@
   "level": "board"
  },
  {
-  "title": "Definite integrals: accumulation and the fundamental theorem",
+  "title": "Definite integrals",
   "lead": "The area picture explains both the signs and the endpoint subtraction.",
   "ideas": [
    "For continuous $f$, let $A(x)=\\int_a^x f(t)dt$. A small increase $h$ adds a thin strip with approximate signed area $f(x)h$. Taking the limit gives $A\\prime(x)=f(x)$.",
@@ -718,7 +740,6 @@
   ],
   "examples": [
    {
-    "title": "A zero integral can hide nonzero area",
     "question": "Compare $\\displaystyle\\int_0^2(x-1)\\,dx$ with $\\displaystyle\\int_0^2|x-1|\\,dx$.",
     "use": [
      "\\int_a^b f(x)\\,dx=F(b)-F(a),\\ F'=f",
@@ -732,25 +753,6 @@
     "result": "$0$ and $1$"
    },
    {
-    "title": "Do not integrate through a pole",
-    "question": "Why is $\\left[-\\dfrac{1}{x}\\right]_{-1}^1=-2$ not the value of $\\displaystyle\\int_{-1}^1 \\frac{dx}{x^2}$?",
-    "use": [
-     "\\int_a^b f(x)\\,dx=F(b)-F(a),\\ F'=f"
-    ],
-    "steps": [
-     "$\\dfrac1{x^2}$ is not continuous at $x=0\\in[-1,1]$, so $F(b)-F(a)$ cannot be used.",
-     "$\\displaystyle\\int_\\varepsilon^1\\frac{dx}{x^2}=\\frac1\\varepsilon-1\\to\\infty\\ \\text{ as }\\ \\varepsilon\\to0^+$"
-    ],
-    "result": "The integral diverges."
-   }
-  ],
-  "trap": "Continuity is a sufficient hypothesis for the form of the fundamental theorem used here. Check it before using the formula mechanically.",
-  "check": "If $A(x)=\\int_2^x(t^2+1)dt$, find $A(2)$ and $A\\prime(2)$.",
-  "answer": "$A(2)=0$ because its bounds coincide; $A\\prime(2)=2^2+1=5$.",
-  "visual": "area",
-  "types": [
-   {
-    "title": "Direct use of the fundamental theorem",
     "question": "Evaluate $\\displaystyle\\int_1^2\\left(4x^3-5x^2+6x+9\\right)dx$.",
     "use": [
      "\\int_a^b f(x)\\,dx=F(b)-F(a),\\ F'=f",
@@ -764,7 +766,6 @@
     "type": "Polynomial, upper minus lower"
    },
    {
-    "title": "A trigonometric definite integral",
     "question": "Evaluate $\\displaystyle\\int_0^{\\frac\\pi2}\\cos^2x\\,dx$.",
     "use": [
      "\\sin^2x=\\dfrac{1-\\cos2x}{2},\\ \\cos^2x=\\dfrac{1+\\cos2x}{2}",
@@ -777,7 +778,6 @@
     "type": "Trigonometric, definite"
    },
    {
-    "title": "A standard form with limits",
     "question": "Evaluate $\\displaystyle\\int_2^3\\frac{dx}{x^2-1}$.",
     "use": [
      "\\int\\dfrac{dx}{x^2-a^2}=\\dfrac1{2a}\\ln\\left|\\dfrac{x-a}{x+a}\\right|+C"
@@ -789,7 +789,6 @@
     "type": "Standard form, definite"
    },
    {
-    "title": "Substitution in a definite integral",
     "question": "Evaluate $\\displaystyle\\int_0^1 xe^{x^2}\\,dx$.",
     "use": [
      "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)"
@@ -800,8 +799,24 @@
     ],
     "result": "$\\dfrac{e-1}{2}$",
     "type": "Substitution with new limits"
+   },
+   {
+    "question": "If $A(x)=\\displaystyle\\int_2^x(t^2+1)\\,dt$, find $A(2)$ and $A'(2)$.",
+    "use": [
+     "\\dfrac{d}{dx}\\int_a^x f(t)\\,dt=f(x)"
+    ],
+    "steps": [
+     "$A(2)=\\displaystyle\\int_2^2(t^2+1)\\,dt=0$",
+     "$A'(x)=x^2+1\\ \\Rightarrow\\ A'(2)=5$"
+    ],
+    "result": "$A(2)=0,\\ A'(2)=5$"
    }
   ],
+  "trap": "Continuity is a sufficient hypothesis for the form of the fundamental theorem used here. Check it before using the formula mechanically.",
+  "check": "If $A(x)=\\int_2^x(t^2+1)dt$, find $A(2)$ and $A\\prime(2)$.",
+  "answer": "$A(2)=0$ because its bounds coincide; $A\\prime(2)=2^2+1=5$.",
+  "visual": "area",
+  "types": [],
   "formulas": [
    "\\int_a^b f(x)\\,dx=F(b)-F(a),\\ F'=f",
    "\\int_a^b f=\\int_a^c f+\\int_c^b f",
@@ -811,7 +826,7 @@
   "level": "board"
  },
  {
-  "title": "Reflection: make two difficult integrands add to something simple",
+  "title": "Property: replace x by a − x",
   "lead": "Before searching for an antiderivative, compare the integrand with its mirror image.",
   "ideas": [
    "The substitution $x=a+b-t$ proves $$\\int_a^b f(x)dx=\\int_a^b f(a+b-x)dx.$$ The reversed limits and negative differential cancel. If the sum of the two integrands simplifies, add the two expressions for the same integral.",
@@ -820,7 +835,6 @@
   ],
   "examples": [
    {
-    "title": "A high power that does not need expansion",
     "question": "Evaluate $I=\\displaystyle\\int_0^4 \\frac{(x+2)^5}{(x+2)^5+(6-x)^5}\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
@@ -832,7 +846,6 @@
     "result": "$I=2$"
    },
    {
-    "title": "A symmetric weight",
     "question": "Evaluate $\\displaystyle\\int_0^3 x\\left[\\left(x-\\frac{3}{2}\\right)^4+2\\right]dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx",
@@ -845,15 +858,8 @@
      "$I=\\dfrac32\\cdot\\dfrac{723}{80}$"
     ],
     "result": "$\\dfrac{2169}{160}$"
-   }
-  ],
-  "trap": "The weighted midpoint identity needs symmetry of $f$; it is not true for every integrand.",
-  "check": "Evaluate $\\int_0^{\\frac{\\pi}{2}}\\frac{\\sin^6 x}{\\sin^6 x+\\cos^6 x}dx$.",
-  "answer": "Reflection interchanges numerator terms, giving twice the integral as $\\frac{\\pi}{2}$. Answer: $\\frac{\\pi}{4}$.",
-  "visual": "reflection",
-  "types": [
+   },
    {
-    "title": "The classic square-root pair",
     "question": "Evaluate $\\displaystyle\\int_0^{\\frac\\pi2}\\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x}+\\sqrt{\\cos x}}\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
@@ -866,7 +872,6 @@
     "type": "Sine and cosine swap"
    },
    {
-    "title": "Remove the x by reflection",
     "question": "Evaluate $\\displaystyle\\int_0^{\\pi}\\frac{x}{1+\\sin x}\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx",
@@ -879,8 +884,24 @@
     ],
     "result": "$\\pi$",
     "type": "Reflection removes the factor x"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\frac{\\sin^6 x}{\\sin^6 x+\\cos^6 x}\\,dx$.",
+    "use": [
+     "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
+    ],
+    "steps": [
+     "$x\\to\\dfrac\\pi2-x:\\quad I=\\displaystyle\\int_0^{\\frac\\pi2}\\frac{\\cos^6x}{\\cos^6x+\\sin^6x}\\,dx$",
+     "$2I=\\displaystyle\\int_0^{\\frac\\pi2}1\\,dx=\\frac\\pi2$"
+    ],
+    "result": "$\\dfrac{\\pi}{4}$"
    }
   ],
+  "trap": "The weighted midpoint identity needs symmetry of $f$; it is not true for every integrand.",
+  "check": "Evaluate $\\int_0^{\\frac{\\pi}{2}}\\frac{\\sin^6 x}{\\sin^6 x+\\cos^6 x}dx$.",
+  "answer": "Reflection interchanges numerator terms, giving twice the integral as $\\frac{\\pi}{2}$. Answer: $\\frac{\\pi}{4}$.",
+  "visual": "reflection",
+  "types": [],
   "formulas": [
    "\\int_a^b f(x)\\,dx=\\int_a^b f(a+b-x)\\,dx",
    "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
@@ -888,7 +909,7 @@
   "level": "board"
  },
  {
-  "title": "Parity, periodicity and weighted periods",
+  "title": "Odd, even and periodic functions",
   "lead": "Translate the interval when the symmetry is not centred at zero.",
   "ideas": [
    "If $f(-x)=-f(x)$, an integrable odd function has zero integral over $[-a,a]$. If $f(-x)=f(x)$, the integral is twice its value over $[0,a]$. A shift $u=x-c$ reveals symmetry about $x=c$.",
@@ -897,7 +918,6 @@
   ],
   "examples": [
    {
-    "title": "Oddness hidden by a shift",
     "question": "Evaluate $\\displaystyle\\int_1^5 \\frac{(x-3)^3}{1+(x-3)^2}\\,dx$.",
     "use": [
      "\\int_{-a}^a f(x)\\,dx=0\\ \\text{if } f \\text{ is odd}"
@@ -909,7 +929,6 @@
     "result": "$0$"
    },
    {
-    "title": "Weighted repeating arches",
     "question": "Evaluate $\\displaystyle\\int_0^{3\\pi}x|\\sin x|\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du"
@@ -920,15 +939,8 @@
      "$I=\\displaystyle\\sum_{k=0}^{2}(\\pi+2k\\pi)=\\pi+3\\pi+5\\pi$"
     ],
     "result": "$9\\pi$"
-   }
-  ],
-  "trap": "An odd function with a nonintegrable singularity does not automatically have an integral of zero.",
-  "check": "Evaluate $\\int_0^{4\\pi}|\\cos x|dx$.",
-  "answer": "The period is $\\pi$ and one-period integral is $2$. Thus the answer is $8$.",
-  "visual": null,
-  "types": [
+   },
    {
-    "title": "An odd power over a symmetric interval",
     "question": "Evaluate $\\displaystyle\\int_{-\\frac\\pi2}^{\\frac\\pi2}\\sin^7x\\,dx$.",
     "use": [
      "\\int_{-a}^a f(x)\\,dx=0\\ \\text{if } f \\text{ is odd}"
@@ -940,7 +952,6 @@
     "type": "Odd function"
    },
    {
-    "title": "Separate odd and even parts",
     "question": "Evaluate $\\displaystyle\\int_{-\\frac\\pi2}^{\\frac\\pi2}\\left(x^3+x\\cos x+\\tan^5x+1\\right)dx$.",
     "use": [
      "\\int_{-a}^a f(x)\\,dx=0\\ \\text{if } f \\text{ is odd}"
@@ -953,7 +964,6 @@
     "type": "Mixed odd and even terms"
    },
    {
-    "title": "An even function",
     "question": "Evaluate $\\displaystyle\\int_{-1}^{1}\\left(x^4+|x|\\right)dx$.",
     "use": [
      "\\int_{-a}^a f(x)\\,dx=2\\int_0^a f(x)\\,dx\\ \\text{if } f \\text{ is even}"
@@ -966,7 +976,6 @@
     "type": "Even function"
    },
    {
-    "title": "The property for $[0,\\,2a]$",
     "question": "Evaluate $\\displaystyle\\int_0^{\\pi}\\cos^5x\\,dx$.",
     "use": [
      "\\int_0^{2a} f(x)\\,dx=0\\ \\text{ if }\\ f(2a-x)=-f(x)"
@@ -976,8 +985,23 @@
     ],
     "result": "$0$",
     "type": "$\\int_0^{2a}$ property"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^{4\\pi}|\\cos x|\\,dx$.",
+    "use": [
+     "\\int_0^{nT}f=n\\int_0^Tf"
+    ],
+    "steps": [
+     "$|\\cos x|$ has period $\\pi$: $\\ I=4\\displaystyle\\int_0^\\pi|\\cos x|\\,dx=4\\cdot2\\int_0^{\\frac\\pi2}\\cos x\\,dx$"
+    ],
+    "result": "$8$"
    }
   ],
+  "trap": "An odd function with a nonintegrable singularity does not automatically have an integral of zero.",
+  "check": "Evaluate $\\int_0^{4\\pi}|\\cos x|dx$.",
+  "answer": "The period is $\\pi$ and one-period integral is $2$. Thus the answer is $8$.",
+  "visual": null,
+  "types": [],
   "formulas": [
    "\\int_{-a}^a f(x)\\,dx=0\\ \\text{if } f \\text{ is odd}",
    "\\int_{-a}^a f(x)\\,dx=2\\int_0^a f(x)\\,dx\\ \\text{if } f \\text{ is even}",
@@ -997,7 +1021,6 @@
   ],
   "examples": [
    {
-    "title": "A floor function inside a product",
     "question": "Evaluate $\\displaystyle\\int_0^2x\\lfloor x^2\\rfloor\\,dx$.",
     "use": [
      "\\int_a^b f=\\int_a^c f+\\int_c^b f"
@@ -1009,7 +1032,6 @@
     "result": "$3$"
    },
    {
-    "title": "A weighted fractional part",
     "question": "Evaluate $\\displaystyle\\int_0^3x\\{x\\}\\,dx$.",
     "use": [
      "\\int_a^b f=\\int_a^c f+\\int_c^b f"
@@ -1020,15 +1042,8 @@
      "$I=\\dfrac13+\\dfrac56+\\dfrac43$"
     ],
     "result": "$\\dfrac52$"
-   }
-  ],
-  "trap": "For a nonmonotone inner function, the same integer may be crossed more than once. Find every breakpoint.",
-  "check": "Evaluate $\\int_0^2|x^2-1|dx$.",
-  "answer": "Split at $1$: $\\int_0^1(1-x^2)dx+\\int_1^2(x^2-1)dx=\\frac{2}{3}+\\frac{4}{3}=2$.",
-  "visual": "floor",
-  "types": [
+   },
    {
-    "title": "One modulus",
     "question": "Evaluate $\\displaystyle\\int_{-5}^{5}|x+2|\\,dx$.",
     "use": [
      "\\int_a^b f=\\int_a^c f+\\int_c^b f"
@@ -1041,7 +1056,6 @@
     "type": "Single modulus"
    },
    {
-    "title": "A sum of moduli",
     "question": "Evaluate $\\displaystyle\\int_1^4\\left(|x-1|+|x-2|+|x-3|\\right)dx$.",
     "use": [
      "\\int_a^b f=\\int_a^c f+\\int_c^b f"
@@ -1056,7 +1070,6 @@
     "type": "Several moduli"
    },
    {
-    "title": "A modulus of a cubic",
     "question": "Evaluate $\\displaystyle\\int_{-1}^{2}\\left|x^3-x\\right|dx$.",
     "use": [
      "\\int_a^b f=\\int_a^c f+\\int_c^b f"
@@ -1068,8 +1081,23 @@
     ],
     "result": "$\\dfrac{11}{4}$",
     "type": "Modulus with several zeros"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^2|x^2-1|\\,dx$.",
+    "use": [
+     "\\int_a^b f=\\int_a^c f+\\int_c^b f"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int_0^1(1-x^2)\\,dx+\\int_1^2(x^2-1)\\,dx=\\frac23+\\frac43$"
+    ],
+    "result": "$2$"
    }
   ],
+  "trap": "For a nonmonotone inner function, the same integer may be crossed more than once. Find every breakpoint.",
+  "check": "Evaluate $\\int_0^2|x^2-1|dx$.",
+  "answer": "Split at $1$: $\\int_0^1(1-x^2)dx+\\int_1^2(x^2-1)dx=\\frac{2}{3}+\\frac{4}{3}=2$.",
+  "visual": "floor",
+  "types": [],
   "formulas": [
    "\\int_a^b f=\\int_a^c f+\\int_c^b f",
    "|x|=x\\ (x\\ge0),\\quad |x|=-x\\ (x<0)",
@@ -1079,7 +1107,7 @@
   "level": "board"
  },
  {
-  "title": "Riemann sums: read the width and the sample point",
+  "title": "Limit of a sum",
   "lead": "A sum becomes an integral only after its scaling is identified.",
   "ideas": [
    "For continuous $f$ on $[a,b]$, $$\\lim_{n\\to\\infty}\\frac{b-a}{n}\\sum_{r=1}^n f\\left(a+\\frac{(b-a)r}{n}\\right)=\\int_a^b f(x)dx.$$ Left endpoints and midpoint samples have the same limit. The factor $\\frac{b-a}{n}$ is the strip width.",
@@ -1088,7 +1116,6 @@
   ],
   "examples": [
    {
-    "title": "A disguised sum",
     "question": "Find $\\displaystyle\\lim_{n\\to\\infty}\\sum_{r=1}^n \\frac{n}{4n^2+r^2}$.",
     "use": [
      "\\lim_{n\\to\\infty}\\dfrac1n\\sum_{r=1}^n f\\left(\\dfrac rn\\right)=\\int_0^1 f(x)\\,dx",
@@ -1101,7 +1128,6 @@
     "result": "$\\dfrac12\\tan^{-1}\\left(\\dfrac{1}{2}\\right)$"
    },
    {
-    "title": "A product becomes accumulation",
     "question": "Find $\\displaystyle\\lim_{n\\to\\infty}\\prod_{r=1}^n\\left(1+\\frac{2r}{n^2}\\right)$.",
     "use": [
      "u-\\dfrac{u^2}{2}\\le\\ln(1+u)\\le u,\\ u\\ge0"
@@ -1112,6 +1138,16 @@
      "$\\ln P_n\\to1$"
     ],
     "result": "$e$"
+   },
+   {
+    "question": "Find $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{r=1}^n\\sqrt{1+\\frac{3r}{n}}$.",
+    "use": [
+     "\\lim_{n\\to\\infty}\\dfrac1n\\sum_{r=1}^n f\\left(\\dfrac rn\\right)=\\int_0^1 f(x)\\,dx"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int_0^1\\sqrt{1+3x}\\,dx=\\left[\\frac{2(1+3x)^{\\frac32}}{9}\\right]_0^1=\\frac29(8-1)$"
+    ],
+    "result": "$\\dfrac{14}{9}$"
    }
   ],
   "trap": "Not every expression containing a sum is a Riemann sum. Establish both the sample points and their width.",
@@ -1125,7 +1161,7 @@
   "level": "challenge"
  },
  {
-  "title": "Variable limits, integral equations and local behaviour",
+  "title": "Differentiating an integral",
   "lead": "Differentiate the accumulated quantity before trying to evaluate it.",
   "ideas": [
    "For continuous $f$ and differentiable bounds, $$\\frac d{dx}\\int_{u(x)}^{v(x)}f(t)dt=f(v(x))v\\prime(x)-f(u(x))u\\prime(x).$$ Both endpoint chain-rule factors matter.",
@@ -1134,7 +1170,6 @@
   ],
   "examples": [
    {
-    "title": "Both endpoints move",
     "question": "Find $F'(1)$ if $F(x)=\\displaystyle\\int_x^{x^2+1}\\frac{dt}{1+t^2}$.",
     "use": [
      "\\dfrac{d}{dx}\\int_{u(x)}^{v(x)}f(t)\\,dt=f(v)\\,v'-f(u)\\,u'"
@@ -1146,7 +1181,6 @@
     "result": "$-\\dfrac{1}{10}$"
    },
    {
-    "title": "An integral equation",
     "question": "Continuous $f$ satisfies $f(x)=3+\\displaystyle\\int_0^x2t f(t)\\,dt$. Find $f(1)$.",
     "use": [
      "\\dfrac{d}{dx}\\int_0^x g(t)\\,dt=g(x)"
@@ -1159,7 +1193,6 @@
     "result": "$f(1)=3e$"
    },
    {
-    "title": "A stationary point without a turn",
     "question": "For $F(x)=\\displaystyle\\int_0^x(t-1)^2(t-3)\\,dt$, classify the stationary points.",
     "use": [
      "\\dfrac{d}{dx}\\int_0^x f(t)\\,dt=f(x)"
@@ -1169,6 +1202,18 @@
      "$F'$: $\\ -$ on $(-\\infty,1)$, $\\ -$ on $(1,3)$, $\\ +$ on $(3,\\infty)$"
     ],
     "result": "$x=1$: no extremum. $x=3$: local minimum."
+   },
+   {
+    "question": "If $H(x)=\\displaystyle\\int_0^x(x-t)(t^2+2)\\,dt$, find $H''(1)$.",
+    "use": [
+     "\\dfrac{d}{dx}\\int_{u(x)}^{v(x)}f(t)\\,dt=f(v)\\,v'-f(u)\\,u'"
+    ],
+    "steps": [
+     "$H=x\\displaystyle\\int_0^x(t^2+2)\\,dt-\\int_0^xt(t^2+2)\\,dt$",
+     "$H'(x)=\\displaystyle\\int_0^x(t^2+2)\\,dt+x(x^2+2)-x(x^2+2)=\\int_0^x(t^2+2)\\,dt$",
+     "$H''(x)=x^2+2$"
+    ],
+    "result": "$H''(1)=3$"
    }
   ],
   "trap": "The integration variable is a dummy variable; differentiate through the moving bounds, not by treating that dummy variable as $x$.",
@@ -1183,7 +1228,7 @@
   "level": "challenge"
  },
  {
-  "title": "Inverse functions and composition",
+  "title": "Inverse functions",
   "lead": "A difficult inverse can disappear after changing the variable.",
   "ideas": [
    "Let $g$ be continuously differentiable and strictly monotone on $[a,b]$. Substitution $y=g(x)$ and integration by parts give $$\\int_{g(a)}^{g(b)}g^{-1}(y)dy=[xg(x)]_a^b-\\int_a^b g(x)dx.$$ The oriented-limit form also works for a decreasing $g$.",
@@ -1191,7 +1236,6 @@
   ],
   "examples": [
    {
-    "title": "No cubic inverse formula needed",
     "question": "$g(x)=x^3+2x$ on $[1,2]$. Evaluate $\\displaystyle\\int_3^{12}g^{-1}(y)\\,dy$.",
     "use": [
      "\\int_{g(a)}^{g(b)}g^{-1}(y)\\,dy=\\left[xg(x)\\right]_a^b-\\int_a^bg(x)\\,dx"
@@ -1204,7 +1248,6 @@
     "result": "$\\dfrac{57}{4}$"
    },
    {
-    "title": "A nested accumulated function",
     "question": "Let $F(x)=\\displaystyle\\int_0^x e^{-t^2}\\,dt$ and $F(2)=c$. Evaluate $\\displaystyle\\int_0^2 F(x)e^{-x^2}\\,dx$.",
     "use": [
      "\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du,\\ u=g(x)"
@@ -1214,6 +1257,16 @@
      "$\\displaystyle\\int_0^cu\\,du$"
     ],
     "result": "$\\dfrac{c^2}{2}$"
+   },
+   {
+    "question": "Increasing $g$ has $g(0)=2$, $g(3)=8$ and $\\displaystyle\\int_0^3g=14$. Find $\\displaystyle\\int_2^8g^{-1}(y)\\,dy$.",
+    "use": [
+     "\\int_{g(a)}^{g(b)}g^{-1}(y)\\,dy=\\left[xg(x)\\right]_a^b-\\int_a^bg(x)\\,dx"
+    ],
+    "steps": [
+     "$=\\left[3\\cdot8-0\\cdot2\\right]-14$"
+    ],
+    "result": "$10$"
    }
   ],
   "trap": "An inverse-function formula needs a one-to-one function on the selected interval; a globally nonmonotone function may still work on a suitable restricted interval.",
@@ -1227,7 +1280,7 @@
   "level": "challenge"
  },
  {
-  "title": "Reduction formulae and beta-type integrals",
+  "title": "Reduction formulae",
   "lead": "Relate the difficult integral to a simpler member of the same family.",
   "ideas": [
    "Let $I_n=\\int_0^{\\frac{\\pi}{2}}\\sin^n xdx$. Integration by parts with $u=\\sin^{n-1}x$ and $dv=\\sin xdx$ gives $I_n=(n-1)(I_{n-2}-I_n)$ for integer $n\\ge2$. Therefore $$I_n=\\frac{n-1}{n}I_{n-2},\\qquad I_0=\\frac{\\pi}{2},\\ I_1=1.$$",
@@ -1236,7 +1289,6 @@
   ],
   "examples": [
    {
-    "title": "A high even power",
     "question": "Evaluate $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\sin^8 x\\,dx$.",
     "use": [
      "I_n=\\dfrac{n-1}{n}I_{n-2}"
@@ -1247,7 +1299,6 @@
     "result": "$\\dfrac{35\\pi}{256}$"
    },
    {
-    "title": "An exact rational value",
     "question": "Evaluate $\\displaystyle\\int_0^1x^3(1-x)^2\\,dx$.",
     "use": [
      "\\int_0^1x^m(1-x)^n\\,dx=\\dfrac{m!\\,n!}{(m+n+1)!}"
@@ -1257,6 +1308,16 @@
      "Check: $\\displaystyle\\int_0^1(x^3-2x^4+x^5)\\,dx=\\frac14-\\frac25+\\frac16=\\frac1{60}$"
     ],
     "result": "$\\dfrac{1}{60}$"
+   },
+   {
+    "question": "Evaluate $30\\displaystyle\\int_0^1x(1-x)^4\\,dx$.",
+    "use": [
+     "\\int_0^1x^m(1-x)^n\\,dx=\\dfrac{m!\\,n!}{(m+n+1)!}"
+    ],
+    "steps": [
+     "$=30\\cdot\\dfrac{1!\\,4!}{6!}=30\\cdot\\dfrac{24}{720}$"
+    ],
+    "result": "$1$"
    }
   ],
   "trap": "Do not use the integer factorial formula for arbitrary real exponents without replacing factorials by the appropriate beta/gamma expressions and checking convergence.",
@@ -1271,7 +1332,7 @@
   "level": "challenge"
  },
  {
-  "title": "Inequalities and least possible values",
+  "title": "Inequalities",
   "lead": "Sometimes a bound is the answer; an antiderivative is unnecessary.",
   "ideas": [
    "If $m\\le f\\le M$ on $[a,b]$ with $a<b$, then $m(b-a)\\le\\int_a^bf\\le M(b-a)$. Pointwise inequalities integrate in the same direction. If a continuous nonnegative function is positive somewhere, its integral is strictly positive.",
@@ -1280,7 +1341,6 @@
   ],
   "examples": [
    {
-    "title": "A lower bound with an attainable equality",
     "question": "Continuous $f$ on $[0,2]$ satisfies $\\displaystyle\\int_0^2f=8$. Find the least possible $\\displaystyle\\int_0^2f^2$.",
     "use": [
      "\\int_a^b g(x)^2\\,dx\\ge0"
@@ -1292,7 +1352,6 @@
     "result": "$32$"
    },
    {
-    "title": "Two constraints require a better comparison",
     "question": "Continuous $f$ on $[0,1]$ satisfies $\\displaystyle\\int_0^1f=0$ and $\\displaystyle\\int_0^1xf=2$. Find the least $\\displaystyle\\int_0^1f^2$.",
     "use": [
      "\\left(\\int fg\\right)^2\\le\\int f^2\\int g^2"
@@ -1303,6 +1362,17 @@
      "$f=24x-12:\\ \\displaystyle\\int f=0,\\ \\int xf=2,\\ \\int f^2=48$"
     ],
     "result": "$48$"
+   },
+   {
+    "question": "Positive continuous $f$ on $[0,1]$ has $\\displaystyle\\int_0^1f=3$. Prove $\\displaystyle\\int_0^1\\frac1f\\ge\\frac13$.",
+    "use": [
+     "\\left(\\int fg\\right)^2\\le\\int f^2\\int g^2"
+    ],
+    "steps": [
+     "$\\left(\\displaystyle\\int_0^1\\sqrt f\\cdot\\frac{1}{\\sqrt f}\\,dx\\right)^2\\le\\int_0^1f\\int_0^1\\frac1f$",
+     "$1\\le3\\displaystyle\\int_0^1\\frac1f$"
+    ],
+    "result": "$\\displaystyle\\int_0^1\\frac1f\\ge\\frac13$"
    }
   ],
   "trap": "A numerical lower bound is not necessarily a minimum: you must show an admissible function attains equality.",
@@ -1326,7 +1396,6 @@
   ],
   "examples": [
    {
-    "title": "A logarithmic integral",
     "question": "For $a>0$, evaluate $I(a)=\\displaystyle\\int_0^1\\ln(1+ax)\\,dx$.",
     "use": [
      "\\int u\\,dv=uv-\\int v\\,du"
@@ -1338,7 +1407,6 @@
     "result": "$I(a)=\\dfrac{(1+a)\\ln (1+a)-a}{a}$"
    },
    {
-    "title": "A moving parameter and a moving endpoint",
     "question": "Find $H'(a)$ for $H(a)=\\displaystyle\\int_0^a\\ln(1+at)\\,dt$, $a>0$.",
     "use": [
      "\\dfrac{d}{da}\\int_0^{a}g(t,a)\\,dt=g(a,a)+\\int_0^a\\dfrac{\\partial g}{\\partial a}\\,dt"
@@ -1348,6 +1416,16 @@
      "$\\displaystyle\\int_0^a\\frac{t}{1+at}\\,dt=\\frac1a\\left[t-\\frac{\\ln(1+at)}{a}\\right]_0^a=1-\\frac{\\ln(1+a^2)}{a^2}$"
     ],
     "result": "$H'(a)=1+\\left(1-\\dfrac{1}{a^2}\\right)\\ln(1+a^2)$"
+   },
+   {
+    "question": "Find $\\dfrac{d}{da}\\displaystyle\\int_0^1e^{ax}\\,dx$ at $a=0$.",
+    "use": [
+     "\\dfrac{d}{da}\\int_0^1g(x,a)\\,dx=\\int_0^1\\dfrac{\\partial g}{\\partial a}\\,dx"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int_0^1xe^{ax}\\,dx\\Big|_{a=0}=\\int_0^1x\\,dx$"
+    ],
+    "result": "$\\dfrac12$"
    }
   ],
   "trap": "If you differentiate only the integrand when the bounds move, the endpoint terms are lost.",
@@ -1362,7 +1440,7 @@
   "level": "challenge"
  },
  {
-  "title": "Logarithmic symmetry and improper endpoints",
+  "title": "Log-sine integrals",
   "lead": "A singular endpoint may still have a finite integral, but it must be handled as a limit.",
   "ideas": [
    "Near zero, $\\ln x$ diverges, yet $\\int_0^1\\ln xdx=-1$ because $x\\ln x\\to0$. By contrast, $\\int_0^1\\frac{dx}{x}$ diverges. A large value near an endpoint alone does not decide convergence.",
@@ -1371,7 +1449,6 @@
   ],
   "examples": [
    {
-    "title": "A shifted log-sine value",
     "question": "Evaluate $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\ln (4\\sin x)\\,dx$.",
     "use": [
      "\\int_0^{\\frac\\pi2}\\ln\\sin x\\,dx=-\\dfrac\\pi2\\ln2"
@@ -1382,7 +1459,6 @@
     "result": "$\\dfrac{\\pi}{2}\\ln 2$"
    },
    {
-    "title": "An improper integral with a symmetric weight",
     "question": "Evaluate $\\displaystyle\\int_0^\\pi x\\ln(2\\sin x)\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
@@ -1390,6 +1466,17 @@
     "steps": [
      "$f(\\pi-x)=f(x)\\ \\Rightarrow\\ I=\\dfrac\\pi2\\displaystyle\\int_0^\\pi\\ln(2\\sin x)\\,dx$",
      "$\\displaystyle\\int_0^\\pi\\ln(2\\sin x)\\,dx=\\pi\\ln2+2\\left(-\\frac\\pi2\\ln2\\right)=0$"
+    ],
+    "result": "$0$"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\ln (\\tan x)\\,dx$.",
+    "use": [
+     "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
+    ],
+    "steps": [
+     "$=\\displaystyle\\int_0^{\\frac\\pi2}\\ln\\sin x\\,dx-\\int_0^{\\frac\\pi2}\\ln\\cos x\\,dx$",
+     "$x\\to\\dfrac\\pi2-x$ makes the two integrals equal"
     ],
     "result": "$0$"
    }
@@ -1406,7 +1493,7 @@
   "level": "challenge"
  },
  {
-  "title": "Combine two ideas: a demanding problem is often two familiar steps",
+  "title": "Mixed problems",
   "lead": "Look for what can be simplified before committing to a long calculation.",
   "ideas": [
    "A useful sequence is: check the domain; look for a symmetry; simplify the transformed sum; then choose a substitution or inequality. Several advanced questions become short only after the first structural observation.",
@@ -1414,7 +1501,6 @@
   ],
   "examples": [
    {
-    "title": "A functional relation with a weight",
     "question": "Continuous $f$ satisfies $f(x)+f(2-x)=x^2-2x+8$ on $[0,2]$. Find $I=\\displaystyle\\int_0^2(x-1)^2f(x)\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx",
@@ -1427,7 +1513,6 @@
     "result": "$\\dfrac{38}{15}$"
    },
    {
-    "title": "Reflection followed by tangent substitution",
     "question": "Evaluate $I=\\displaystyle\\int_0^\\pi \\frac{x\\sin^2 x}{3+\\cos^2 x}\\,dx$.",
     "use": [
      "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx",
@@ -1441,7 +1526,6 @@
     "result": "$\\dfrac{\\pi^2}{2}\\left(\\dfrac{2}{\\sqrt3}-1\\right)$"
    },
    {
-    "title": "Minimise an integral with respect to a constant",
     "question": "Find the minimum of $J(a)=\\displaystyle\\int_0^3(x^2-a)^2\\,dx$ over real $a$.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
@@ -1451,6 +1535,16 @@
      "$=3(a-3)^2+\\dfrac{108}{5}$"
     ],
     "result": "Minimum $\\dfrac{108}{5}$ at $a=3$"
+   },
+   {
+    "question": "Continuous $f$ on $[0,4]$ has $f(x)+f(4-x)=6$. Find $\\displaystyle\\int_0^4(x-2)^2f(x)\\,dx$.",
+    "use": [
+     "\\int_0^a f(x)\\,dx=\\int_0^a f(a-x)\\,dx"
+    ],
+    "steps": [
+     "$2I=\\displaystyle\\int_0^4(x-2)^2\\left[f(x)+f(4-x)\\right]dx=6\\int_{-2}^2u^2\\,du=6\\cdot\\frac{16}{3}=32$"
+    ],
+    "result": "$16$"
    }
   ],
   "trap": "A long expression does not necessarily need a long antiderivative. First ask which part stays unchanged by reflection or substitution.",
@@ -1466,7 +1560,7 @@
   "level": "challenge"
  },
  {
-  "title": "Limits involving accumulated functions",
+  "title": "Limits with integrals",
   "lead": "Use the local behaviour of the integrand and keep the first nonzero term.",
   "ideas": [
    "If $f$ is continuous at $a$, the average over a shrinking interval tends to $f(a)$: $\\lim_{h\\to0}\\frac1h\\int_a^{a+h}f(t)dt=f(a)$. This works from either side with oriented limits.",
@@ -1475,7 +1569,6 @@
   ],
   "examples": [
    {
-    "title": "A vanishing first-order term",
     "question": "Find $\\displaystyle\\lim_{x\\to0}\\frac{1}{x^3}\\int_0^x\\ln(1+2t^2)\\,dt$.",
     "use": [
      "\\lim\\dfrac{f}{g}=\\lim\\dfrac{f'}{g'}"
@@ -1486,7 +1579,6 @@
     "result": "$\\dfrac{2}{3}$"
    },
    {
-    "title": "Two endpoints, one small interval",
     "question": "Find $\\displaystyle\\lim_{x\\to0}\\frac{1}{x^3}\\int_x^{2x}(1-\\cos t)\\,dt$.",
     "use": [
      "\\dfrac{d}{dx}\\int_{u(x)}^{v(x)}f(t)\\,dt=f(v)\\,v'-f(u)\\,u'"
@@ -1495,6 +1587,16 @@
      "$\\dfrac00:\\quad\\lim\\dfrac{2(1-\\cos2x)-(1-\\cos x)}{3x^2}=\\lim\\dfrac{2\\cdot2x^2-\\frac{x^2}{2}}{3x^2}$"
     ],
     "result": "$\\dfrac{7}{6}$"
+   },
+   {
+    "question": "Find $\\displaystyle\\lim_{x\\to0}\\frac1{x^2}\\int_0^x\\sin(3t)\\,dt$.",
+    "use": [
+     "\\lim\\dfrac{f}{g}=\\lim\\dfrac{f'}{g'}"
+    ],
+    "steps": [
+     "$\\dfrac00:\\quad\\lim\\dfrac{\\sin3x}{2x}=\\dfrac32$"
+    ],
+    "result": "$\\dfrac{3}{2}$"
    }
   ],
   "trap": "If the denominator vanishes to third order, a first-order approximation may be too weak to determine the limit.",
@@ -1510,7 +1612,7 @@
   "level": "challenge"
  },
  {
-  "title": "Recurrences, bounds and a limiting constant",
+  "title": "Recurrences",
   "lead": "Two relations can determine an asymptotic value without an explicit formula.",
   "ideas": [
    "Let $R_n=\\int_0^1\\frac{x^n}{1+x}dx$. The identity $\\frac{x^n}{1+x}+\\frac{x^{n+1}}{1+x}=x^n$ gives $R_n+R_{n+1}=\\frac{1}{n+1}$. Since $0<x<1$, the sequence is positive and decreasing.",
@@ -1519,7 +1621,6 @@
   ],
   "examples": [
    {
-    "title": "Use a recurrence to avoid long division",
     "question": "Find $R_3=\\displaystyle\\int_0^1\\frac{x^3}{1+x}\\,dx$.",
     "use": [
      "R_n+R_{n+1}=\\dfrac1{n+1}"
@@ -1531,7 +1632,6 @@
     "result": "$\\dfrac{5}{6}-\\ln 2$"
    },
    {
-    "title": "A different endpoint coefficient",
     "question": "Find $\\displaystyle\\lim_{n\\to\\infty}(n+1)\\int_0^1\\frac{x^n}{2+x}\\,dx$.",
     "use": [
      "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
@@ -1542,6 +1642,16 @@
      "$0\\le(n+1)\\displaystyle\\int_0^1\\frac{x^n(1-x)}{3(2+x)}\\,dx\\le\\frac{1}{6(n+2)}\\to0$"
     ],
     "result": "$\\dfrac{1}{3}$"
+   },
+   {
+    "question": "Find $\\displaystyle\\lim_{n\\to\\infty}(n+1)\\int_0^1x^n(3+x)\\,dx$.",
+    "use": [
+     "\\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1}+C,\\ n\\ne-1"
+    ],
+    "steps": [
+     "$(n+1)\\left(\\dfrac{3}{n+1}+\\dfrac{1}{n+2}\\right)=3+\\dfrac{n+1}{n+2}$"
+    ],
+    "result": "$4$"
    }
   ],
   "trap": "From $R_n+R_{n+1}\\to0$ alone you cannot infer the value of $nR_n$; scaling needs a quantitative bound.",
@@ -1555,7 +1665,7 @@
   "level": "challenge"
  },
  {
-  "title": "Reciprocal substitutions on an infinite interval",
+  "title": "Reciprocal substitution",
   "lead": "The transformation $x\\mapsto\\frac{1}{x}$ can exchange powers in the numerator.",
   "ideas": [
    "In a convergent improper integral on $(0,\\infty)$, $x=\\frac{1}{t}$ changes $dx$ to $-\\frac{dt}{t^2}$. Track both the differential and reversed limits. This can pair rational functions of $x$ and $\\frac{1}{x}$.",
@@ -1563,7 +1673,6 @@
   ],
   "examples": [
    {
-    "title": "Pair two rational integrals",
     "question": "Evaluate $I=\\displaystyle\\int_0^\\infty \\frac{dx}{x^4+5x^2+1}$.",
     "use": [
      "\\int_{-\\infty}^{\\infty}\\dfrac{du}{u^2+a^2}=\\dfrac\\pi a"
@@ -1576,7 +1685,6 @@
     "result": "$I=\\dfrac{\\pi}{2\\sqrt7}$"
    },
    {
-    "title": "A family, with its condition",
     "question": "For $a>-2$, evaluate $I(a)=\\displaystyle\\int_0^\\infty \\frac{dx}{x^4+ax^2+1}$.",
     "use": [
      "\\int_{-\\infty}^{\\infty}\\dfrac{du}{u^2+a^2}=\\dfrac\\pi a"
@@ -1586,6 +1694,17 @@
      "$2I=\\displaystyle\\int_{-\\infty}^\\infty\\frac{du}{u^2+a+2}=\\frac{\\pi}{\\sqrt{a+2}}$"
     ],
     "result": "$I(a)=\\dfrac{\\pi}{2\\sqrt{a+2}}$"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\int_0^\\infty \\frac{x^2\\,dx}{x^4+7x^2+1}$.",
+    "use": [
+     "\\int_{-\\infty}^{\\infty}\\dfrac{du}{u^2+a^2}=\\dfrac\\pi a"
+    ],
+    "steps": [
+     "$x=\\dfrac1t$ gives $\\displaystyle\\int_0^\\infty\\frac{dx}{x^4+7x^2+1}$ = the same integral $I$",
+     "$2I=\\displaystyle\\int_{-\\infty}^\\infty\\frac{du}{u^2+9}=\\frac\\pi3$"
+    ],
+    "result": "$\\dfrac{\\pi}{6}$"
    }
   ],
   "trap": "The parameter condition is part of the result. An expression containing a square root is not proof that the original integral converges.",
