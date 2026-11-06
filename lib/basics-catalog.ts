@@ -1,4 +1,4 @@
-export const basicsRevisionTopics=["numbers","addition-subtraction","multiplication-division","factors-multiples","hcf-lcm","operation-order"] as const;
+export const basicsRevisionTopics=["numbers","addition-subtraction","multiplication-division","factors-multiples","hcf-lcm","operation-order","integers"] as const;
 const courseDefinitions=[
  {id:'foundations',title:'Grades 5–7',subtitle:'Build a strong foundation',description:'Numbers, calculation, estimation, fractions, algebra, shapes and measurement.',tier:'base',topics:['numbers','addition-subtraction','multiplication-division','estimation','integers','operation-order','factors-multiples','hcf-lcm','fractions','decimals','ratio','percentages','powers-roots','algebra','equations','angles','shapes','symmetry','area-perimeter','solids','data-chance']},
  {id:'grade-8',title:'Grade 8',subtitle:'Strengthen the skills you need',description:'Signed fractions, powers, expressions, equations, percentages, geometry and mensuration.',tier:'base',topics:['rational-numbers','powers-roots','algebra','equations','ratio','percentages','shapes','area-perimeter','solids','data-chance']},

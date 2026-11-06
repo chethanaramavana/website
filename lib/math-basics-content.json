@@ -50,8 +50,8 @@
         ]
       },
       {
-        "title": "Tens, hundreds and thousands",
-        "explain": "Ten ones can be exchanged for one ten. Ten tens make one hundred. The face value of a digit is the digit itself. Its place value depends on its position in the number.",
+        "title": "Hundreds, tens and ones",
+        "explain": "We write every number with the ten digits 0 to 9. The place of a digit tells us what it is worth. Ten ones make one ten. Ten tens make one hundred.",
         "visual": {
           "kind": "place",
           "digits": [
@@ -66,9 +66,10 @@
           ]
         },
         "steps": [
+          "246 = 2 hundreds + 4 tens + 6 ones.",
           "246 = 200 + 40 + 6.",
-          "The digit 4 is in the tens place, so its place value is 40.",
-          "In 2,406, the zero keeps the tens place: 2,000 + 400 + 0 + 6."
+          "The 4 is in the tens place, so it is worth 40.",
+          "In 406, the 0 says there are no tens: 406 = 400 + 6."
         ],
         "practice": [
           {
@@ -89,10 +90,10 @@
             ]
           }
         ],
-        "remember": "Face value is the digit itself; place value depends on its position. In 3,752, the face value of 7 is 7, and its place value is 700.",
+        "remember": "Face value: the digit you see. Place value: what it is worth in its place. In 3,752, the 7 has face value 7 and place value 700.",
         "teaching": [
-          "Ten ones can be exchanged for one ten without changing the total. Ten tens make one hundred, and ten hundreds make one thousand. Moving a digit one place left makes its place value ten times as large.",
-          "In 4,072, the place values are 4,000 for 4, 0 for 0, 70 for 7 and 2 for 2. The zero holds the hundreds place. Thus 4,072 = 4,000 + 70 + 2. Removing the zero would give 472, a different number."
+          "Think of pencils. 10 loose pencils are tied into 1 bundle: a ten. 10 bundles are packed into 1 box: a hundred. So 2 boxes, 4 bundles and 6 loose pencils are 200 + 40 + 6 = 246 pencils.",
+          "Every digit has a face value and a place value. The face value is the digit you see. The place value is what the digit is worth in its place. In 246, the 4 is in the tens place: its face value is 4 and its place value is 4 × 10 = 40. A 0 keeps a place empty: 406 means 4 hundreds, 0 tens and 6 ones."
         ]
       },
       {
@@ -801,146 +802,235 @@
   },
   {
     "slug": "integers",
-    "title": "Integers and directed changes",
+    "title": "Integers on the number line",
     "tier": "base",
     "concepts": [
       {
         "title": "Numbers on both sides of zero",
-        "explain": "Positive and negative numbers describe opposite directions from a chosen zero: above or below sea level, gain or loss, or warmer or colder than 0°C.",
+        "explain": "Zero is the middle of the number line. Numbers to the right of zero are positive: 1, 2, 3, … Numbers to the left of zero are negative: −1, −2, −3, … All of them together, with zero, are called integers.",
+        "teaching": [
+          "We use negative numbers for things below a starting level: floors below the ground, temperatures below 0°C, or money we owe. The ground floor is 0. One floor down is −1. Two floors down is −2.",
+          "On the number line, numbers get bigger as you go right. So −2 is bigger than −5, because −2 is to the right of −5. Zero is neither positive nor negative. The distance of a number from zero is its size: the size of −5 is 5."
+        ],
         "visual": {
           "kind": "numberline",
-          "min": -6,
-          "max": 6,
+          "min": -8,
+          "max": 8,
           "start": -4,
           "end": 2,
-          "caption": "−4 < 2 because −4 lies to the left of 2."
+          "caption": "−4 < 2 because −4 is to the left of 2."
         },
         "steps": [
-          "Integers are …, −3, −2, −1, 0, 1, 2, 3, … .",
-          "−2 is greater than −5 because it is farther right.",
-          "The distance of −5 from zero is 5; this is its absolute value."
+          "Integers: …, −3, −2, −1, 0, 1, 2, 3, …",
+          "−2 > −5, because −2 is to the right of −5.",
+          "−7 is 7 steps from zero, so its size is 7."
         ],
         "practice": [
           {
             "prompt": "Which is greater?",
             "answer": "−3",
-            "solution": "−3 lies to the right of −8.",
+            "solution": "−3 is to the right of −8 on the number line, so −3 > −8.",
             "options": [
               "−8",
               "−3"
             ]
           },
           {
-            "prompt": "What is the distance of −7 from zero?",
+            "prompt": "How many steps is −7 from zero?",
             "answer": "7",
-            "solution": "Distance is non-negative: 7 units.",
+            "solution": "−7 is 7 steps to the left of 0. Its size is 7.",
             "options": null
           }
         ],
-        "remember": "A larger negative numeral can represent a smaller number: −90 < −9.",
-        "teaching": [
-          "Negative numbers describe positions below a reference, such as temperatures below zero. Integers include negative whole numbers, zero and positive whole numbers. On the number line, values increase from left to right.",
-          "Zero is neither positive nor negative. The number −5 is smaller than −2 because it lies farther left. Opposites such as 4 and −4 are equally far from zero. Their distance from zero is called their absolute value."
-        ]
+        "remember": "Right is bigger. −1 is bigger than −10, even though 10 looks bigger."
       },
       {
-        "title": "Add and subtract integers",
-        "explain": "On a number line, add a positive number by moving right and a negative number by moving left. Subtracting a number means adding its opposite.",
+        "title": "Adding integers: the jumping man",
+        "explain": "Put a man on the first number, facing the positive side (to the right). If you add a positive number, he walks forward. If you add a negative number, he walks backward. The number where he stops is the answer.",
+        "teaching": [
+          "Four cases. Both positive: 3 + 4 = 7. Positive is bigger: 6 + (−2) = 4. Negative is bigger: 2 + (−6) = −4. Both negative: (−3) + (−4) = −7. Watch each case in the picture.",
+          "A quick rule. Same signs: add the sizes and keep the sign. Different signs: subtract the smaller size from the bigger size, and use the sign of the number with the bigger size. So 2 + (−6): 6 − 2 = 4, and 6 belongs to −6, so the answer is −4."
+        ],
         "visual": {
           "kind": "numberline",
-          "min": -6,
-          "max": 6,
-          "start": -3,
-          "end": 2,
-          "caption": "Start at −3 and move 5 right: −3 + 5 = 2."
+          "min": -8,
+          "max": 8,
+          "start": 2,
+          "end": -4,
+          "caption": "Start at 2 and walk 6 steps backward: 2 + (−6) = −4."
         },
         "steps": [
-          "−3 + 5 = 2: five rightward steps from −3.",
-          "4 + (−7) = −3: seven leftward steps from 4.",
-          "−2 − (−6) = −2 + 6 = 4.",
-          "A temperature rises from −4°C by 9°C: −4 + 9 = 5°C."
+          "3 + 4: start at 3, walk 4 steps forward. He stops at 7.",
+          "6 + (−2): start at 6, walk 2 steps backward. He stops at 4.",
+          "2 + (−6): start at 2, walk 6 steps backward. He passes 0 and stops at −4.",
+          "(−3) + (−4): start at −3, walk 4 steps backward. He stops at −7."
         ],
         "practice": [
           {
-            "prompt": "Find −8 + 13.",
-            "answer": "5",
-            "solution": "Move 13 right from −8 to 5.",
+            "prompt": "Find (−5) + 8.",
+            "answer": "3",
+            "solution": "Start at −5. 8 is positive, so walk 8 steps forward. Different signs: 8 − 5 = 3, and 8 is bigger, so the answer is +3.",
             "options": null
           },
           {
-            "prompt": "Find 3 − (−4).",
-            "answer": "7",
-            "solution": "Subtracting −4 adds its opposite: 3 + 4 = 7.",
+            "prompt": "Find (−2) + (−6).",
+            "answer": "-8",
+            "solution": "Start at −2. −6 is negative, so walk 6 steps backward. Same signs: 2 + 6 = 8, keep the minus sign: −8.",
             "options": null
           }
         ],
-        "remember": "For unlike signs in addition, compare magnitudes. Do not apply multiplication sign rules to addition.",
-        "teaching": [
-          "Adding a positive integer moves right on the number line; adding a negative integer moves left. From −3, adding 5 reaches 2, while adding −5 reaches −8.",
-          "Subtraction means adding the opposite: 4 − (−3) = 4 + 3 = 7. With the same signs, add the sizes and keep the sign. With opposite signs, subtract the smaller size from the larger and use the sign of the number farther from zero."
-        ]
+        "remember": "Adding a positive number: walk forward. Adding a negative number: walk backward."
       },
       {
-        "title": "Multiply and divide signed numbers",
-        "explain": "Equal repeated losses give a negative total. The sign pattern for products extends consistently: same signs give a positive result; different signs give a negative result. Division uses the same sign pattern.",
+        "title": "Subtracting integers: turn around",
+        "explain": "Subtraction has one extra move. The man starts on the first number facing the positive side. Minus means: turn around. Then, if the number is positive, he walks forward. If the number is negative, he walks backward.",
+        "teaching": [
+          "7 − 3: he turns to face the negative side and walks forward 3 steps, so he stops at 4. 3 − 7: he turns and walks forward 7 steps, so he passes 0 and stops at −4.",
+          "4 − (−3): he turns around. −3 is negative, so he walks backward 3 steps. Facing left, backward takes him to the right, so he stops at 7. This is why taking away a negative number is the same as adding: 4 − (−3) = 4 + 3 = 7."
+        ],
+        "visual": {
+          "kind": "numberline",
+          "min": -8,
+          "max": 8,
+          "start": 4,
+          "end": 7,
+          "caption": "4 − (−3): turn around, walk 3 steps backward, stop at 7."
+        },
+        "steps": [
+          "Subtracting a number = adding its opposite.",
+          "3 − 7 = 3 + (−7) = −4.",
+          "(−2) − 4 = (−2) + (−4) = −6.",
+          "4 − (−3) = 4 + 3 = 7.",
+          "(−5) − (−2) = (−5) + 2 = −3."
+        ],
+        "practice": [
+          {
+            "prompt": "Find 3 − 9.",
+            "answer": "-6",
+            "solution": "3 − 9 = 3 + (−9). Different signs: 9 − 3 = 6, and 9 is bigger, so the answer is −6.",
+            "options": null
+          },
+          {
+            "prompt": "Find (−1) − (−6).",
+            "answer": "5",
+            "solution": "(−1) − (−6) = (−1) + 6. Different signs: 6 − 1 = 5, and 6 is bigger, so the answer is 5.",
+            "options": null
+          }
+        ],
+        "remember": "Minus: turn around. Then positive: walk forward. Negative: walk backward."
+      },
+      {
+        "title": "Multiplying integers",
+        "explain": "a × b means a equal jumps, each of size b, starting from 0. If b is negative, every jump goes backward. If a is negative, the man turns around first. Same signs give a positive answer. Different signs give a negative answer.",
+        "teaching": [
+          "3 × 2: three jumps of 2 forward, so 6. 3 × (−2): three jumps of 2 backward, so −6. (−3) × 2: turn around, then three jumps of 2 forward, so −6.",
+          "(−3) × (−2): turn around, then three jumps of 2 backward. Facing left, backward means right, so he lands on 6. This is why two negative signs give a positive answer in multiplication."
+        ],
         "visual": {
           "kind": "pattern",
           "rows": [
             [
-              "3 × (−4)",
-              "−12"
+              "3 × (−2)",
+              "−6"
             ],
             [
-              "2 × (−4)",
-              "−8"
-            ],
-            [
-              "1 × (−4)",
+              "2 × (−2)",
               "−4"
             ],
             [
-              "0 × (−4)",
+              "1 × (−2)",
+              "−2"
+            ],
+            [
+              "0 × (−2)",
               "0"
             ],
             [
-              "(−1) × (−4)",
-              "4"
+              "(−1) × (−2)",
+              "2"
             ]
           ],
-          "caption": "Each step reduces the first factor by 1; the product increases by 4."
+          "caption": "Each step up the table adds 2. The pattern continues past zero."
         },
         "steps": [
-          "A loss of ₹6 on each of 5 days is 5 × (−6) = −30.",
-          "(−7) × (−3) = 21.",
-          "(−48) ÷ 6 = −8 because 6 × (−8) = −48.",
-          "0 ÷ (−5) = 0, but (−5) ÷ 0 is undefined."
+          "First multiply the sizes. Then choose the sign.",
+          "4 × (−3): sizes 4 × 3 = 12. Different signs, so −12.",
+          "(−5) × (−2): sizes 5 × 2 = 10. Same signs, so +10.",
+          "A loss of ₹6 a day for 5 days: 5 × (−6) = −30, so ₹30 lost."
         ],
         "practice": [
           {
-            "prompt": "Find (−9) × (−4).",
-            "answer": "36",
-            "solution": "Two negative factors give a positive product: 36.",
+            "prompt": "Find 4 × (−3).",
+            "answer": "-12",
+            "solution": "4 jumps of 3 backward land on −12. Different signs give a negative answer.",
             "options": null
           },
           {
-            "prompt": "Find 63 ÷ (−7).",
-            "answer": "-9",
-            "solution": "Different signs give a negative quotient: −9.",
+            "prompt": "Find (−6) × (−2).",
+            "answer": "12",
+            "solution": "Sizes: 6 × 2 = 12. Same signs give a positive answer: 12.",
             "options": null
           }
         ],
-        "remember": "“Two negatives make a positive” applies to multiplication and division, not to −4 + (−3).",
+        "remember": "Same signs: positive. Different signs: negative. This rule is for × and ÷ only, not for + and −."
+      },
+      {
+        "title": "Dividing integers",
+        "explain": "a ÷ b asks: if the man makes b equal jumps from 0 and lands on a, how long is each jump? The size is a's size divided by b's size. The sign rule is the same as for multiplication.",
         "teaching": [
-          "First multiply the positive sizes, then decide the sign. One negative factor gives a negative product; two negative factors give a positive product. Four groups of a loss of three give 4 × (−3) = −12.",
-          "In the pattern 2 × (−3) = −6, 1 × (−3) = −3 and 0 × (−3) = 0, the results increase by 3 each step. The next is (−1) × (−3) = 3. Division follows the same sign pattern because it reverses multiplication. Division by zero is undefined."
-        ]
+          "(−12) ÷ 3: three equal jumps must reach −12, so each jump is 4 steps backward. The answer is −4. Check: 3 × (−4) = −12.",
+          "12 ÷ (−3): the man turns around and makes 3 equal jumps to reach 12, which is behind him. So each jump is 4 steps backward: the answer is −4. And (−12) ÷ (−3) = 4. You can never divide by 0."
+        ],
+        "visual": {
+          "kind": "pattern",
+          "rows": [
+            [
+              "12 ÷ 3",
+              "4"
+            ],
+            [
+              "(−12) ÷ 3",
+              "−4"
+            ],
+            [
+              "12 ÷ (−3)",
+              "−4"
+            ],
+            [
+              "(−12) ÷ (−3)",
+              "4"
+            ]
+          ],
+          "caption": "Same signs give a positive answer. Different signs give a negative answer."
+        },
+        "steps": [
+          "(−20) ÷ 4: sizes 20 ÷ 4 = 5. Different signs, so −5.",
+          "(−20) ÷ (−4): sizes 5. Same signs, so +5.",
+          "Check every division with multiplication: 4 × (−5) = −20.",
+          "0 ÷ (−5) = 0, but (−5) ÷ 0 has no answer."
+        ],
+        "practice": [
+          {
+            "prompt": "Find (−18) ÷ 3.",
+            "answer": "-6",
+            "solution": "Sizes: 18 ÷ 3 = 6. Different signs give −6. Check: 3 × (−6) = −18.",
+            "options": null
+          },
+          {
+            "prompt": "Find (−20) ÷ (−5).",
+            "answer": "4",
+            "solution": "Sizes: 20 ÷ 5 = 4. Same signs give +4. Check: (−5) × 4 = −20.",
+            "options": null
+          }
+        ],
+        "remember": "Divide the sizes, then use the sign rule. Check with multiplication."
       }
     ],
     "test": [
       {
         "prompt": "Which is the smallest?",
         "answer": "−12",
-        "solution": "The leftmost number is −12.",
+        "solution": "−12 is farthest to the left on the number line.",
         "options": [
           "−12",
           "−2",
@@ -949,63 +1039,58 @@
         ]
       },
       {
-        "prompt": "Find −14 + 9.",
-        "answer": "-5",
-        "solution": "14 negative units and 9 positive units leave 5 negative units.",
+        "prompt": "Find 6 + (−9).",
+        "answer": "-3",
+        "solution": "Different signs: 9 − 6 = 3. 9 is bigger, so the answer is −3.",
         "options": null
       },
       {
-        "prompt": "Find −6 − (−11).",
+        "prompt": "Find (−4) + (−5).",
+        "answer": "-9",
+        "solution": "Same signs: 4 + 5 = 9, keep the minus sign: −9.",
+        "options": null
+      },
+      {
+        "prompt": "At −3°C, the temperature rises by 10°C. What is the new temperature in °C?",
+        "answer": "7",
+        "solution": "(−3) + 10: different signs, 10 − 3 = 7, and 10 is bigger, so 7°C.",
+        "options": null
+      },
+      {
+        "prompt": "Find 2 − 8.",
+        "answer": "-6",
+        "solution": "2 − 8 = 2 + (−8) = −6.",
+        "options": null
+      },
+      {
+        "prompt": "Find 5 − (−4).",
+        "answer": "9",
+        "solution": "5 − (−4) = 5 + 4 = 9.",
+        "options": null
+      },
+      {
+        "prompt": "Find (−3) − (−8).",
         "answer": "5",
-        "solution": "−6 + 11 = 5.",
+        "solution": "(−3) − (−8) = (−3) + 8 = 5.",
         "options": null
       },
       {
-        "prompt": "Find (−8) × 7.",
-        "answer": "-56",
-        "solution": "Different signs: −56.",
+        "prompt": "Find (−6) × 4.",
+        "answer": "-24",
+        "solution": "Sizes 6 × 4 = 24. Different signs, so −24.",
         "options": null
       },
       {
-        "prompt": "At −3°C, temperature falls by 8°C. Find the new temperature.",
-        "answer": "-11",
-        "solution": "−3 − 8 = −11°C.",
+        "prompt": "Find (−5) × (−3).",
+        "answer": "15",
+        "solution": "Sizes 5 × 3 = 15. Same signs, so +15.",
         "options": null
       },
       {
-        "prompt": "Find (−63) ÷ (−9).",
-        "answer": "7",
-        "solution": "The signs are the same, so the result is positive. 63÷9=7.",
+        "prompt": "Find (−20) ÷ 4.",
+        "answer": "-5",
+        "solution": "Sizes 20 ÷ 4 = 5. Different signs, so −5. Check: 4 × (−5) = −20.",
         "options": null
-      },
-      {
-        "prompt": "Find −12 − 7.",
-        "answer": "-19",
-        "solution": "Subtracting 7 moves 7 places left from −12: −19.",
-        "options": null
-      },
-      {
-        "prompt": "Find 15 + (−15).",
-        "answer": "0",
-        "solution": "A number and its opposite have sum zero.",
-        "options": null
-      },
-      {
-        "prompt": "An elevator moves from floor −2 to floor 5. How many floors does it rise?",
-        "answer": "7",
-        "solution": "From −2 to 0 is 2 floors and from 0 to 5 is 5 more: 2+5=7.",
-        "options": null
-      },
-      {
-        "prompt": "Which statement is true?",
-        "answer": "−4 > −9",
-        "solution": "−4 lies to the right of −9 on a number line.",
-        "options": [
-          "−4 > −9",
-          "−9 > −4",
-          "−4 = −9",
-          "−4 > 0"
-        ]
       }
     ]
   },
@@ -1160,8 +1245,12 @@
     "tier": "base",
     "concepts": [
       {
-        "title": "Factors make exact rectangles",
-        "explain": "A positive factor divides a positive whole number without a remainder. Find factor pairs by arranging all the counters into complete rectangular arrays.",
+        "title": "What is a factor?",
+        "explain": "A factor of a number divides it exactly, with nothing left over. 3 is a factor of 18, because 18 ÷ 3 = 6 with nothing left. 4 is not a factor of 18, because 18 ÷ 4 = 4 with 2 left over.",
+        "teaching": [
+          "Think of rows of seedlings. Put 18 seedlings in rows of 3: you get 6 full rows and none left over. So 3 and 6 are factors of 18. Together they make a factor pair, because 3 × 6 = 18.",
+          "To find all the factors, try 1, 2, 3, … in order and write each pair. For 18: 1 × 18, 2 × 9, 3 × 6. 4 and 5 do not divide 18. The next number, 6, is already in a pair, so stop. The factors of 18 are 1, 2, 3, 6, 9 and 18."
+        ],
         "visual": {
           "kind": "factorpairs",
           "n": 18,
@@ -1181,21 +1270,23 @@
           ]
         },
         "steps": [
-          "18 = 1 × 18 = 2 × 9 = 3 × 6.",
-          "The positive factors are 1, 2, 3, 6, 9 and 18.",
-          "4 is not a factor: 18 ÷ 4 leaves a remainder."
+          "Try 1: 1 × 18 = 18. Factors 1 and 18.",
+          "Try 2: 2 × 9 = 18. Factors 2 and 9.",
+          "Try 3: 3 × 6 = 18. Factors 3 and 6.",
+          "Try 4 and 5: they leave a remainder. Try 6: it is already in a pair, so stop.",
+          "Factors of 18: 1, 2, 3, 6, 9, 18."
         ],
         "practice": [
           {
-            "prompt": "How many positive factors does 10 have?",
+            "prompt": "How many factors does 10 have?",
             "answer": "4",
-            "solution": "The factors are 1, 2, 5 and 10.",
+            "solution": "10 = 1 × 10 = 2 × 5. The factors are 1, 2, 5 and 10: four factors.",
             "options": null
           },
           {
             "prompt": "Which is a factor of 28?",
             "answer": "7",
-            "solution": "28 ÷ 7 = 4 exactly.",
+            "solution": "28 ÷ 7 = 4 with nothing left over.",
             "options": [
               "3",
               "5",
@@ -1204,15 +1295,15 @@
             ]
           }
         ],
-        "remember": "List both numbers in every factor pair, but count a repeated factor only once.",
-        "teaching": [
-          "A factor divides a whole number exactly, leaving no remainder. Arrange 18 counters in complete equal rows: 1 × 18, 2 × 9 and 3 × 6. Each rectangle names a factor pair.",
-          "The factors are 1, 2, 3, 6, 9 and 18. Stop when pairs repeat in reverse. A positive whole number has finitely many factors, each at most the number itself. In packing problems, a factor gives a group size with no leftovers."
-        ]
+        "remember": "1 and the number itself are always factors. Every factor is smaller than or equal to the number."
       },
       {
-        "title": "Multiples and divisibility",
-        "explain": "Multiples are obtained by multiplying by whole numbers. Positive multiples keep going forever. Divisibility rules help you test for factors.",
+        "title": "What is a multiple?",
+        "explain": "The multiples of a number are the numbers you land on when you count in equal jumps of that number: the times table. The multiples of 3 are 3, 6, 9, 12, 15, … They go on for ever.",
+        "teaching": [
+          "Factor or multiple? They are two sides of one fact. 3 × 4 = 12, so 3 is a factor of 12, and 12 is a multiple of 3. A factor fits into the number. A multiple is made from the number.",
+          "To check if 20 is a multiple of 3, count in 3s: 18, 21. You jump over 20, so 20 is not a multiple of 3. Every number is a multiple of itself, and 0 is a multiple of every number."
+        ],
         "visual": {
           "kind": "multiples",
           "a": 3,
@@ -1220,39 +1311,84 @@
           "limit": 28
         },
         "steps": [
-          "Positive multiples of 7 are 7, 14, 21, 28, … . Zero is also a multiple of 7.",
-          "Divisible by 2: even last digit; by 5: last digit 0 or 5; by 10: last digit 0.",
-          "For 3 or 9, add the digits. 351 has digit sum 9, so it is divisible by both 3 and 9.",
-          "For 4, check the last two digits: 516 is divisible by 4 because 16 is."
+          "Multiples of 7: 7 × 1 = 7, 7 × 2 = 14, 7 × 3 = 21, 7 × 4 = 28, …",
+          "The sixth multiple of 7 is 7 × 6 = 42.",
+          "12 is a multiple of 3 and of 4, because 3 × 4 = 12.",
+          "3 and 4 are factors of 12."
         ],
         "practice": [
           {
-            "prompt": "What is the sixth positive multiple of 7?",
+            "prompt": "What is the sixth multiple of 7?",
             "answer": "42",
-            "solution": "7 × 6 = 42.",
+            "solution": "Count in 7s: 7, 14, 21, 28, 35, 42. Or 7 × 6 = 42.",
             "options": null
           },
           {
+            "prompt": "Is 24 a multiple of 5?",
+            "answer": "No",
+            "solution": "Count in 5s: 20, 25. 24 is jumped over, so it is not a multiple of 5.",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          }
+        ],
+        "remember": "Factors are small and fit in. Multiples are big and are made by multiplying."
+      },
+      {
+        "title": "Quick divisibility tests",
+        "explain": "A divisibility test tells you if a number divides exactly, without doing the division. Some tests look at the last digit. Some look at the sum of the digits.",
+        "teaching": [
+          "Look at the last digit. By 2: the last digit is 0, 2, 4, 6 or 8. By 5: the last digit is 0 or 5. By 10: the last digit is 0. Look at the last two digits for 4: 516 passes because 16 is in the 4 times table.",
+          "Add the digits for 3 and 9. 351: 3 + 5 + 1 = 9. 9 is in the 3 times table and in the 9 times table, so 351 is divisible by both 3 and 9. Check: 351 ÷ 9 = 39."
+        ],
+        "visual": {
+          "kind": "flow",
+          "rows": [
+            "Last digit → tests for 2, 5 and 10",
+            "Last two digits → test for 4",
+            "Sum of the digits → tests for 3 and 9"
+          ]
+        },
+        "steps": [
+          "246: last digit 6 is even, so divisible by 2.",
+          "246: 2 + 4 + 6 = 12, in the 3 times table, so divisible by 3.",
+          "735: last digit 5, so divisible by 5.",
+          "990: last digit 0 and 9 + 9 + 0 = 18, so divisible by 2, 3, 5, 9 and 10."
+        ],
+        "practice": [
+          {
             "prompt": "Which number is divisible by 9?",
             "answer": "243",
-            "solution": "2 + 4 + 3 = 9.",
+            "solution": "2 + 4 + 3 = 9, which is in the 9 times table.",
             "options": [
               "241",
               "242",
               "243",
               "244"
             ]
+          },
+          {
+            "prompt": "Which number is divisible by 4?",
+            "answer": "516",
+            "solution": "The last two digits, 16, are in the 4 times table.",
+            "options": [
+              "514",
+              "516",
+              "518",
+              "522"
+            ]
           }
         ],
-        "remember": "A factor fits into a number. A multiple is made by multiplying that number.",
-        "teaching": [
-          "Multiples are totals made from equal groups: 7, 14, 21 and 28 are positive multiples of 7. Factors divide a number; multiples are made by multiplying it. Thus 7 is a factor of 21 and 21 is a multiple of 7.",
-          "An even last digit means divisibility by 2; a final 0 or 5 means divisibility by 5. For 3 or 9, test the digit sum; for 4, test the last two digits. Since 324 has digit sum 9 and last two digits 24, it is divisible by 3, 9 and 4."
-        ]
+        "remember": "Last digit for 2, 5 and 10. Last two digits for 4. Digit sum for 3 and 9."
       },
       {
         "title": "Prime and composite numbers",
-        "explain": "A prime is a positive whole number greater than 1 with exactly two positive factors. A composite number has more than two.",
+        "explain": "A prime number has exactly two factors: 1 and itself. A composite number has more than two factors. You can make only one rectangle with a prime number of squares: one long row.",
+        "teaching": [
+          "13 has only the factors 1 and 13. With 13 squares, the only rectangle is 1 row of 13. So 13 is prime. 15 = 3 × 5, so 15 squares also make a 3 by 5 rectangle. So 15 is composite.",
+          "1 has only one factor, so it is neither prime nor composite. 2 is the only even prime: every bigger even number also has 2 as a factor. The primes below 20 are 2, 3, 5, 7, 11, 13, 17 and 19."
+        ],
         "visual": {
           "kind": "factorpairs",
           "n": 15,
@@ -1268,16 +1404,16 @@
           ]
         },
         "steps": [
-          "13 has only 1 and 13 as factors, so it is prime.",
-          "15 has 1, 3, 5 and 15, so it is composite.",
-          "1 has only one positive factor, so it is neither prime nor composite.",
-          "2 is the only even prime."
+          "13: factors 1 and 13 only, so prime.",
+          "15: factors 1, 3, 5, 15, so composite.",
+          "1: one factor only, so neither prime nor composite.",
+          "9 is odd, but 9 = 3 × 3, so 9 is composite."
         ],
         "practice": [
           {
             "prompt": "Which is prime?",
             "answer": "19",
-            "solution": "19 has only factors 1 and 19.",
+            "solution": "19 has only the factors 1 and 19.",
             "options": [
               "21",
               "25",
@@ -1286,24 +1422,20 @@
             ]
           },
           {
-            "prompt": "How many positive factors does a prime number have?",
+            "prompt": "How many factors does a prime number have?",
             "answer": "2",
-            "solution": "Exactly two: 1 and itself.",
+            "solution": "A prime has exactly two factors: 1 and itself.",
             "options": null
           }
         ],
-        "remember": "Odd does not mean prime: 9, 15 and 21 are odd composite numbers.",
-        "teaching": [
-          "A prime has exactly two positive factors: 1 and itself. A composite has more than two. The number 13 cannot form a rectangle with both sides greater than 1, whereas 15 = 3 × 5 can.",
-          "The number 1 is neither prime nor composite. The number 2 is the only even prime, because larger even numbers have 2 as an extra factor. To test a larger number, try prime divisors up to its square root: any larger factor must have a smaller partner."
-        ]
+        "remember": "Odd does not mean prime: 9, 15 and 21 are odd but composite."
       }
     ],
     "test": [
       {
         "prompt": "Which divides 32 exactly?",
         "answer": "8",
-        "solution": "32 ÷ 8 = 4.",
+        "solution": "32 ÷ 8 = 4 with nothing left over.",
         "options": [
           "3",
           "6",
@@ -1312,7 +1444,7 @@
         ]
       },
       {
-        "prompt": "What is the fifth positive multiple of 9?",
+        "prompt": "What is the fifth multiple of 9?",
         "answer": "45",
         "solution": "9 × 5 = 45.",
         "options": null
@@ -1330,7 +1462,7 @@
       {
         "prompt": "Which is divisible by 4?",
         "answer": "732",
-        "solution": "Its last two digits, 32, are divisible by 4.",
+        "solution": "The last two digits, 32, are in the 4 times table.",
         "options": [
           "730",
           "731",
@@ -1339,27 +1471,27 @@
         ]
       },
       {
-        "prompt": "How many positive factors does 16 have?",
+        "prompt": "How many factors does 16 have?",
         "answer": "5",
-        "solution": "1, 2, 4, 8 and 16.",
+        "solution": "1 × 16, 2 × 8, 4 × 4. The factors are 1, 2, 4, 8, 16: five factors (count 4 once).",
         "options": null
       },
       {
-        "prompt": "How many positive factors does 20 have?",
+        "prompt": "How many factors does 20 have?",
         "answer": "6",
-        "solution": "Pair the factors: 1×20, 2×10 and 4×5. The six factors are 1,2,4,5,10,20.",
+        "solution": "1 × 20, 2 × 10, 4 × 5. Six factors.",
         "options": null
       },
       {
-        "prompt": "What is the seventh positive multiple of 6?",
+        "prompt": "What is the seventh multiple of 6?",
         "answer": "42",
-        "solution": "The nth positive multiple is the number multiplied by n: 6×7=42.",
+        "solution": "6 × 7 = 42.",
         "options": null
       },
       {
         "prompt": "Which number is prime?",
         "answer": "29",
-        "solution": "29 has only 1 and 29 as positive factors. The other options have additional factors.",
+        "solution": "29 has only the factors 1 and 29.",
         "options": [
           "21",
           "27",
@@ -1370,7 +1502,7 @@
       {
         "prompt": "Is 432 divisible by 9?",
         "answer": "Yes",
-        "solution": "Its digit sum is 4+3+2=9. Since 9 is divisible by 9, so is 432.",
+        "solution": "4 + 3 + 2 = 9, which is in the 9 times table.",
         "options": [
           "Yes",
           "No"
@@ -1379,7 +1511,7 @@
       {
         "prompt": "A teacher arranges 28 counters in equal rows of 4. How many rows are made?",
         "answer": "7",
-        "solution": "4 is a factor of 28 because 4×7=28. There are 7 rows.",
+        "solution": "28 ÷ 4 = 7, so 4 is a factor of 28.",
         "options": null
       }
     ]

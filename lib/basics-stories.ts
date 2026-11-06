@@ -5,7 +5,7 @@ const story=(title:string,scene:string,question:string):BasicsStory=>({title,sce
 export const basicsStories:Record<string,BasicsStory[]>={
  numbers:[
   story('Asha’s counting adventures','A night sky, a picnic basket and a walk along her street give Asha three ways to think about numbers.','Where does counting begin—and what happens when nothing is left?'),
-  story('The school’s pencil store','Asha packs pencils into bundles of ten, then packs ten bundles into a box. She has 2 full boxes, 4 bundles and 6 loose pencils.','Can you count her pencils without opening every bundle?'),
+  story('Asha packs pencils','Asha ties 10 loose pencils into 1 bundle. She packs 10 bundles into 1 box. She has 2 boxes, 4 bundles and 6 loose pencils.','How many pencils does she have? Count the boxes, then the bundles, then the loose pencils.'),
   story('Two places on the path','Dev stops at marker 4 on a walking path. Asha walks on to marker 7. The markers increase by one as they go right.','Who has reached the larger number? How can the picture tell you?'),
  ],
  'addition-subtraction':[
@@ -25,18 +25,21 @@ export const basicsStories:Record<string,BasicsStory[]>={
   story('A suspicious bill','The class buys 19 art kits at ₹42 each. A bill reading ₹7,980 makes Asha pause.','How can 20 × 40 help her notice that something is wrong?'),
  ],
  integers:[
-  story('A lift with a ground floor','Dev starts at the ground floor, labelled 0. The basement floors are below zero; the upper floors are above it.','How would you describe a floor at −4 and a floor at 2?'),
-  story('Five floors up','Asha is at basement level −3. She takes the lift up 5 floors, passing through the ground floor.','Where does she finish? Follow each step on the picture.'),
-  story('Following the lift’s pattern','Each downward trip changes a lift’s position by −4 floors. Dev writes the changes for 3 trips, 2 trips, 1 trip and no trips.','What pattern do you notice? What would reversing one downward trip do?'),
+  story('A lift with a ground floor','Dev starts at the ground floor, labelled 0. The basement floors are below zero, and the upper floors are above it.','How would you describe a floor at −4 and a floor at 2?'),
+  story('The jumping game','Asha draws a number line in the playground. Dev stands on a number and faces the positive side. A positive number means walk forward; a negative number means walk backward.','Dev stands on 2 and must add −6. Where will he stop?'),
+  story('Turn around for minus','In the next round, Asha adds a new rule: a minus sign means Dev must turn around before he walks.','Dev stands on 4. How can 4 − (−3) take him to the right?'),
+  story('Equal jumps','Dev starts at 0 and makes 3 equal jumps of 2 steps each. Then Asha asks him to jump backward instead.','Where does he land each time? What happens if he turns around first?'),
+  story('How long is each jump?','Asha marks −12 on the line. Dev must reach it from 0 in 3 equal jumps.','How long must each jump be, and in which direction?'),
  ],
  'operation-order':[
   story('A second helping of stickers','Asha shares 24 stickers equally among 6 children. Then every child receives the same share once more.','For 24 ÷ 6 × 2, which calculation comes first when you read from the left?'),
   story('Packing the art table','Each of 3 packs contains 8 red pens and 2 blue pens. The class uses 4 pens.','Why should we find the pens in one pack before multiplying by 3?'),
  ],
  'factors-multiples':[
-  story('Planting eighteen seedlings','The gardening club has 18 seedlings. Dev wants straight rows, with the same number of seedlings in every row and none left over.','Which rectangular arrangements can he make?'),
-  story('Two practice schedules','One group practises every 3 days and another every 7 days. Asha marks their practice days on two tracks.','Which numbers appear on both tracks?'),
-  story('Fifteen children in rows','For a photograph, 15 children try standing in equal rows. One long row works, but they also find rows of 5.','What do these different arrangements tell you about 15?'),
+  story('Seedlings in rows','Dev has 18 seedlings. He wants to plant them in equal rows with none left over.','Which row sizes work? Which leave seedlings over?'),
+  story('Counting in threes','Asha jumps along a number line from 0, three steps at a time: 3, 6, 9, 12, …','Will she ever land on 20? How can you tell without jumping?'),
+  story('The quick checker','Dev has 246 stickers. He wants to know whether they share equally among 2, 3, 4, 5, 9 or 10 friends, without doing every division.','Which friends can share them equally?'),
+  story('Only one rectangle','Asha has 13 square tiles. However she arranges them, she can make only one rectangle: a single long row. With 15 tiles, she can make two different rectangles.','What is special about 13?'),
  ],
  'hcf-lcm':[
   story('A packing puzzle with sixty counters','Asha splits 60 counters into 6 equal groups of 10. Then she keeps breaking the group sizes into smaller factors.','When can she stop splitting a factor?'),
