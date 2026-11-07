@@ -1,0 +1,5012 @@
+{
+ "icse7-integers": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 1",
+  "title": "Integers",
+  "subtitle": "Number line, four operations, properties and BODMAS",
+  "back": {
+   "href": "/icse/grade-7/ch-1",
+   "label": "Integers"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-integers-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-1",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-1/mcq",
+    "label": "30 MCQs · Free →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Integers on the number line",
+    "items": [
+     "a<b\\iff a \\text{ lies to the left of } b",
+     "|a|=a\\ (a\\ge0),\\qquad |a|=-a\\ (a<0)"
+    ]
+   },
+   {
+    "title": "Adding and subtracting integers",
+    "items": [
+     "(-a)+(-b)=-(a+b)",
+     "a-b=a+(-b),\\qquad a-(-b)=a+b"
+    ]
+   },
+   {
+    "title": "Multiplying and dividing integers",
+    "items": [
+     "(+)\\times(+)=+,\\quad(-)\\times(-)=+,\\quad(+)\\times(-)=-",
+     "(-a)\\div b=-(a\\div b),\\quad(-a)\\div(-b)=a\\div b"
+    ]
+   },
+   {
+    "title": "Properties and BODMAS",
+    "items": [
+     "a+b=b+a,\\qquad a\\times b=b\\times a",
+     "(a+b)+c=a+(b+c),\\qquad(a\\times b)\\times c=a\\times(b\\times c)",
+     "a\\times(b+c)=a\\times b+a\\times c"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Integers on the number line",
+    "level": "board",
+    "ideas": [
+     "Integers: $\\dots,-3,-2,-1,0,1,2,3,\\dots$",
+     "On the number line, a number on the right is greater.",
+     "The absolute value $|a|$ is the distance of $a$ from $0$.",
+     "Every integer $a$ has an opposite $-a$, and $a+(-a)=0$."
+    ],
+    "formulas": [
+     "a<b\\iff a \\text{ lies to the left of } b",
+     "|a|=a\\ (a\\ge0),\\qquad |a|=-a\\ (a<0)"
+    ],
+    "examples": [
+     {
+      "question": "Which is greater: $-7$ or $-3$?",
+      "use": [
+       "a<b\\iff a \\text{ lies to the left of } b"
+      ],
+      "steps": [
+       "$-7$ lies to the left of $-3$ on the number line."
+      ],
+      "result": "$-3>-7$",
+      "type": "Compare"
+     },
+     {
+      "question": "Arrange in ascending order: $-5,\\ 3,\\ 0,\\ -8,\\ 6$.",
+      "use": [],
+      "steps": [
+       "Smallest is farthest left: $-8$, then $-5$, $0$, $3$, $6$."
+      ],
+      "result": "$-8<-5<0<3<6$",
+      "type": "Order"
+     },
+     {
+      "question": "Find $|-12|+|5|-|-3|$.",
+      "use": [
+       "|a|=-a\\ (a<0)"
+      ],
+      "steps": [
+       "$=12+5-3$"
+      ],
+      "result": "$14$",
+      "type": "Absolute value"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "integers",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Adding and subtracting integers",
+    "level": "board",
+    "ideas": [
+     "Same signs: add the sizes and keep the sign.",
+     "Different signs: subtract the sizes and take the sign of the bigger size.",
+     "To subtract, add the opposite: $a-b=a+(-b)$."
+    ],
+    "formulas": [
+     "(-a)+(-b)=-(a+b)",
+     "a-b=a+(-b),\\qquad a-(-b)=a+b"
+    ],
+    "examples": [
+     {
+      "question": "Find $(-8)+(-5)$.",
+      "use": [
+       "(-a)+(-b)=-(a+b)"
+      ],
+      "steps": [
+       "$=-(8+5)$"
+      ],
+      "result": "$-13$",
+      "type": "Same signs"
+     },
+     {
+      "question": "Find $(-12)+7$.",
+      "use": [],
+      "steps": [
+       "Sizes $12$ and $7$: $12-7=5$. Bigger size $12$ is negative."
+      ],
+      "result": "$-5$",
+      "type": "Different signs"
+     },
+     {
+      "question": "Find $6-(-9)$.",
+      "use": [
+       "a-(-b)=a+b"
+      ],
+      "steps": [
+       "$=6+9$"
+      ],
+      "result": "$15$",
+      "type": "Subtract a negative"
+     },
+     {
+      "question": "The temperature is $-4^\\circ$C. It rises by $9^\\circ$C. Find the new temperature.",
+      "use": [],
+      "steps": [
+       "$-4+9=5$"
+      ],
+      "result": "$5^\\circ$C",
+      "type": "Word problem"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "integers",
+      "index": 1
+     },
+     {
+      "slug": "integers",
+      "index": 2
+     }
+    ],
+    "experiment": {
+     "title": "Counters and zero pairs",
+     "steps": [
+      "Take red counters for $-1$ and blue counters for $+1$.",
+      "Show $(-5)+3$: put 5 red and 3 blue counters.",
+      "Remove each red–blue pair. A pair is zero."
+     ],
+     "result": "Two red counters remain, so $(-5)+3=-2$."
+    }
+   },
+   {
+    "title": "Multiplying and dividing integers",
+    "level": "board",
+    "ideas": [
+     "Same signs give a positive answer. Different signs give a negative answer.",
+     "An odd number of negative factors gives a negative product.",
+     "Division by $0$ is not defined."
+    ],
+    "formulas": [
+     "(+)\\times(+)=+,\\quad(-)\\times(-)=+,\\quad(+)\\times(-)=-",
+     "(-a)\\div b=-(a\\div b),\\quad(-a)\\div(-b)=a\\div b"
+    ],
+    "examples": [
+     {
+      "question": "Find $(-7)\\times(-6)$.",
+      "use": [
+       "(-)\\times(-)=+"
+      ],
+      "steps": [
+       "$7\\times6=42$, signs are the same."
+      ],
+      "result": "$42$",
+      "type": "Same signs"
+     },
+     {
+      "question": "Find $(-3)\\times4\\times(-5)$.",
+      "use": [],
+      "steps": [
+       "Two negative factors: positive. $3\\times4\\times5=60$"
+      ],
+      "result": "$60$",
+      "type": "Three factors"
+     },
+     {
+      "question": "Find $(-72)\\div8$.",
+      "use": [
+       "(-a)\\div b=-(a\\div b)"
+      ],
+      "steps": [
+       "$72\\div8=9$, signs are different."
+      ],
+      "result": "$-9$",
+      "type": "Division"
+     },
+     {
+      "question": "Find $(-1)^{5}$, that is $(-1)\\times(-1)\\times(-1)\\times(-1)\\times(-1)$.",
+      "use": [],
+      "steps": [
+       "Five negative factors: odd number, so negative."
+      ],
+      "result": "$-1$",
+      "type": "Odd number of negatives"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "integers",
+      "index": 3
+     },
+     {
+      "slug": "integers",
+      "index": 4
+     }
+    ]
+   },
+   {
+    "title": "Properties and BODMAS",
+    "level": "board",
+    "ideas": [
+     "Integers are closed under $+,\\ -,\\ \\times$ but not under $\\div$.",
+     "Addition and multiplication are commutative and associative.",
+     "Order of operations: Brackets, Of, Division, Multiplication, Addition, Subtraction (BODMAS).",
+     "Remove brackets in the order $(\\ ),\\ \\{\\ \\},\\ [\\ ]$."
+    ],
+    "formulas": [
+     "a+b=b+a,\\qquad a\\times b=b\\times a",
+     "(a+b)+c=a+(b+c),\\qquad(a\\times b)\\times c=a\\times(b\\times c)",
+     "a\\times(b+c)=a\\times b+a\\times c"
+    ],
+    "examples": [
+     {
+      "question": "Find $25\\times(-37)\\times4$.",
+      "use": [
+       "a\\times b=b\\times a"
+      ],
+      "steps": [
+       "$=(25\\times4)\\times(-37)=100\\times(-37)$"
+      ],
+      "result": "$-3700$",
+      "type": "Rearrange"
+     },
+     {
+      "question": "Find $(-15)\\times102$.",
+      "use": [
+       "a\\times(b+c)=a\\times b+a\\times c"
+      ],
+      "steps": [
+       "$=(-15)\\times100+(-15)\\times2=-1500-30$"
+      ],
+      "result": "$-1530$",
+      "type": "Distributive property"
+     },
+     {
+      "question": "Simplify $18-[6-\\{4-(5-3)\\}]$.",
+      "use": [],
+      "steps": [
+       "$(5-3)=2$",
+       "$\\{4-2\\}=2$",
+       "$[6-2]=4$",
+       "$18-4$"
+      ],
+      "result": "$14$",
+      "type": "Brackets"
+     },
+     {
+      "question": "Simplify $-8+24\\div(-6)\\times3$.",
+      "use": [],
+      "steps": [
+       "Division first: $24\\div(-6)=-4$",
+       "Then $(-4)\\times3=-12$",
+       "$-8-12$"
+      ],
+      "result": "$-20$",
+      "type": "BODMAS"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-rational-numbers": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 2",
+  "title": "Rational Numbers",
+  "subtitle": "Standard form, comparison and operations",
+  "back": {
+   "href": "/icse/grade-7/ch-2",
+   "label": "Rational Numbers"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-rational-numbers-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-2",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-2/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "What is a rational number?",
+    "items": [
+     "\\dfrac pq,\\ p,q\\in\\mathbb Z,\\ q\\ne0",
+     "\\dfrac pq=\\dfrac{p\\times m}{q\\times m}=\\dfrac{p\\div k}{q\\div k}",
+     "\\dfrac{-p}{q}=\\dfrac{p}{-q}=-\\dfrac pq"
+    ]
+   },
+   {
+    "title": "Comparing and ordering",
+    "items": [
+     "\\dfrac ab<\\dfrac cd\\iff ad<bc\\ \\ (b,d>0)",
+     "\\text{Rational between } x \\text{ and } y:\\ \\dfrac{x+y}{2}"
+    ]
+   },
+   {
+    "title": "Operations on rational numbers",
+    "items": [
+     "\\dfrac ab+\\dfrac cd=\\dfrac{ad+bc}{bd}",
+     "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}",
+     "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "What is a rational number?",
+    "level": "board",
+    "ideas": [
+     "A rational number has the form $\\dfrac pq$, where $p,q$ are integers and $q\\ne0$.",
+     "Every integer is rational: $5=\\dfrac51$.",
+     "Standard form: denominator positive, and numerator and denominator have no common factor.",
+     "Multiply or divide top and bottom by the same non-zero number: the value does not change."
+    ],
+    "formulas": [
+     "\\dfrac pq,\\ p,q\\in\\mathbb Z,\\ q\\ne0",
+     "\\dfrac pq=\\dfrac{p\\times m}{q\\times m}=\\dfrac{p\\div k}{q\\div k}",
+     "\\dfrac{-p}{q}=\\dfrac{p}{-q}=-\\dfrac pq"
+    ],
+    "examples": [
+     {
+      "question": "Write $\\dfrac{-36}{-48}$ in standard form.",
+      "use": [
+       "\\dfrac pq=\\dfrac{p\\div k}{q\\div k}"
+      ],
+      "steps": [
+       "HCF of $36$ and $48$ is $12$: $\\dfrac{-36\\div(-12)}{-48\\div(-12)}$"
+      ],
+      "result": "$\\dfrac34$",
+      "type": "Standard form"
+     },
+     {
+      "question": "Write $\\dfrac{45}{-60}$ in standard form.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{45}{-60}=\\dfrac{-45}{60}=\\dfrac{-45\\div15}{60\\div15}$"
+      ],
+      "result": "$\\dfrac{-3}{4}$",
+      "type": "Standard form"
+     },
+     {
+      "question": "Are $\\dfrac{3}{-5}$ and $\\dfrac{-6}{10}$ equal?",
+      "use": [],
+      "steps": [
+       "$\\dfrac{3}{-5}=\\dfrac{-3}{5}$ and $\\dfrac{-6}{10}=\\dfrac{-3}{5}$"
+      ],
+      "result": "Yes, they are equal.",
+      "type": "Equivalent"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "rational-numbers",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Comparing and ordering",
+    "level": "board",
+    "ideas": [
+     "Write each number with the same positive denominator, then compare the numerators.",
+     "Every positive rational number is greater than every negative one.",
+     "Between any two rational numbers there are infinitely many rational numbers."
+    ],
+    "formulas": [
+     "\\dfrac ab<\\dfrac cd\\iff ad<bc\\ \\ (b,d>0)",
+     "\\text{Rational between } x \\text{ and } y:\\ \\dfrac{x+y}{2}"
+    ],
+    "examples": [
+     {
+      "question": "Compare $\\dfrac{-3}{4}$ and $\\dfrac{-5}{6}$.",
+      "use": [],
+      "steps": [
+       "LCM of $4$ and $6$ is $12$: $\\dfrac{-9}{12}$ and $\\dfrac{-10}{12}$",
+       "$-9>-10$"
+      ],
+      "result": "$\\dfrac{-3}{4}>\\dfrac{-5}{6}$",
+      "type": "Compare"
+     },
+     {
+      "question": "Arrange in ascending order: $\\dfrac{-2}{3},\\ \\dfrac12,\\ \\dfrac{-5}{6},\\ \\dfrac34$.",
+      "use": [],
+      "steps": [
+       "Denominator $12$: $\\dfrac{-8}{12},\\ \\dfrac{6}{12},\\ \\dfrac{-10}{12},\\ \\dfrac{9}{12}$"
+      ],
+      "result": "$\\dfrac{-5}{6}<\\dfrac{-2}{3}<\\dfrac12<\\dfrac34$",
+      "type": "Order"
+     },
+     {
+      "question": "Find a rational number between $\\dfrac13$ and $\\dfrac12$.",
+      "use": [
+       "\\dfrac{x+y}{2}"
+      ],
+      "steps": [
+       "$\\dfrac12\\left(\\dfrac13+\\dfrac12\\right)=\\dfrac12\\cdot\\dfrac56$"
+      ],
+      "result": "$\\dfrac{5}{12}$",
+      "type": "Between two numbers"
+     }
+    ]
+   },
+   {
+    "title": "Operations on rational numbers",
+    "level": "board",
+    "ideas": [
+     "Add or subtract after making the denominators equal.",
+     "Multiply numerators together and denominators together.",
+     "To divide, multiply by the reciprocal. The reciprocal of $\\dfrac ab$ is $\\dfrac ba$."
+    ],
+    "formulas": [
+     "\\dfrac ab+\\dfrac cd=\\dfrac{ad+bc}{bd}",
+     "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}",
+     "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\dfrac{-5}{8}+\\dfrac{7}{12}$.",
+      "use": [
+       "\\dfrac ab+\\dfrac cd=\\dfrac{ad+bc}{bd}"
+      ],
+      "steps": [
+       "LCM $24$: $\\dfrac{-15}{24}+\\dfrac{14}{24}$"
+      ],
+      "result": "$\\dfrac{-1}{24}$",
+      "type": "Add"
+     },
+     {
+      "question": "Find $\\dfrac{-2}{3}-\\left(\\dfrac{-5}{6}\\right)$.",
+      "use": [],
+      "steps": [
+       "$=\\dfrac{-4}{6}+\\dfrac56$"
+      ],
+      "result": "$\\dfrac16$",
+      "type": "Subtract"
+     },
+     {
+      "question": "Find $\\dfrac{-4}{9}\\times\\dfrac{15}{-16}$.",
+      "use": [
+       "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}"
+      ],
+      "steps": [
+       "$=\\dfrac{-60}{-144}=\\dfrac{60}{144}$"
+      ],
+      "result": "$\\dfrac{5}{12}$",
+      "type": "Multiply"
+     },
+     {
+      "question": "Find $\\dfrac{-7}{12}\\div\\dfrac{14}{9}$.",
+      "use": [
+       "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+      ],
+      "steps": [
+       "$=\\dfrac{-7}{12}\\times\\dfrac{9}{14}=\\dfrac{-63}{168}$"
+      ],
+      "result": "$\\dfrac{-3}{8}$",
+      "type": "Divide"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "rational-numbers",
+      "index": 1
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-fractions": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 3",
+  "title": "Fractions",
+  "subtitle": "Types of fractions, the four operations and word problems",
+  "back": {
+   "href": "/icse/grade-7/ch-3",
+   "label": "Fractions"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-fractions-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-3",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-3/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Kinds of fractions",
+    "items": [
+     "a\\dfrac bc=\\dfrac{ac+b}{c}",
+     "\\dfrac ab=\\dfrac{a\\times k}{b\\times k}",
+     "\\dfrac ab<\\dfrac cd\\iff ad<bc"
+    ]
+   },
+   {
+    "title": "Adding and subtracting fractions",
+    "items": [
+     "\\dfrac ab\\pm\\dfrac cb=\\dfrac{a\\pm c}{b}",
+     "\\dfrac ab\\pm\\dfrac cd=\\dfrac{ad\\pm bc}{bd}"
+    ]
+   },
+   {
+    "title": "Multiplying and dividing fractions",
+    "items": [
+     "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}",
+     "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Kinds of fractions",
+    "level": "board",
+    "ideas": [
+     "Proper fraction: numerator less than denominator, for example $\\dfrac35$.",
+     "Improper fraction: numerator not less than denominator, for example $\\dfrac74$.",
+     "Mixed number: a whole number and a proper fraction, for example $1\\dfrac34$.",
+     "Equivalent fractions have the same value. Lowest terms: HCF of numerator and denominator is $1$."
+    ],
+    "formulas": [
+     "a\\dfrac bc=\\dfrac{ac+b}{c}",
+     "\\dfrac ab=\\dfrac{a\\times k}{b\\times k}",
+     "\\dfrac ab<\\dfrac cd\\iff ad<bc"
+    ],
+    "examples": [
+     {
+      "question": "Convert $3\\dfrac25$ to an improper fraction.",
+      "use": [
+       "a\\dfrac bc=\\dfrac{ac+b}{c}"
+      ],
+      "steps": [
+       "$\\dfrac{3\\times5+2}{5}$"
+      ],
+      "result": "$\\dfrac{17}{5}$",
+      "type": "Mixed to improper"
+     },
+     {
+      "question": "Reduce $\\dfrac{84}{126}$ to lowest terms.",
+      "use": [],
+      "steps": [
+       "HCF of $84$ and $126$ is $42$: $\\dfrac{84\\div42}{126\\div42}$"
+      ],
+      "result": "$\\dfrac23$",
+      "type": "Lowest terms"
+     },
+     {
+      "question": "Arrange in ascending order: $\\dfrac23,\\ \\dfrac58,\\ \\dfrac34$.",
+      "use": [],
+      "steps": [
+       "LCM $24$: $\\dfrac{16}{24},\\ \\dfrac{15}{24},\\ \\dfrac{18}{24}$"
+      ],
+      "result": "$\\dfrac58<\\dfrac23<\\dfrac34$",
+      "type": "Order"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "fractions",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Adding and subtracting fractions",
+    "level": "board",
+    "ideas": [
+     "Change the fractions to the same denominator (use the LCM).",
+     "For mixed numbers, change them to improper fractions first."
+    ],
+    "formulas": [
+     "\\dfrac ab\\pm\\dfrac cb=\\dfrac{a\\pm c}{b}",
+     "\\dfrac ab\\pm\\dfrac cd=\\dfrac{ad\\pm bc}{bd}"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\dfrac56+\\dfrac{3}{8}$.",
+      "use": [],
+      "steps": [
+       "LCM $24$: $\\dfrac{20}{24}+\\dfrac9{24}=\\dfrac{29}{24}$"
+      ],
+      "result": "$1\\dfrac5{24}$",
+      "type": "Add"
+     },
+     {
+      "question": "Find $4\\dfrac13-2\\dfrac34$.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{13}{3}-\\dfrac{11}{4}=\\dfrac{52}{12}-\\dfrac{33}{12}$"
+      ],
+      "result": "$\\dfrac{19}{12}=1\\dfrac7{12}$",
+      "type": "Subtract mixed"
+     },
+     {
+      "question": "A ribbon is $5\\dfrac12$ m long. Ravi cuts $1\\dfrac34$ m and then $2\\dfrac23$ m. How much is left?",
+      "use": [],
+      "steps": [
+       "Used $=\\dfrac74+\\dfrac83=\\dfrac{21+32}{12}=\\dfrac{53}{12}$",
+       "Left $=\\dfrac{66}{12}-\\dfrac{53}{12}$"
+      ],
+      "result": "$\\dfrac{13}{12}=1\\dfrac1{12}$ m",
+      "type": "Word problem"
+     }
+    ]
+   },
+   {
+    "title": "Multiplying and dividing fractions",
+    "level": "board",
+    "ideas": [
+     "Multiply numerators and multiply denominators. Cancel common factors first.",
+     "“Of” means multiply: $\\dfrac23$ of $45=\\dfrac23\\times45$.",
+     "To divide, multiply by the reciprocal of the divisor.",
+     "Simplify with BODMAS. “Of” comes before division."
+    ],
+    "formulas": [
+     "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}",
+     "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+    ],
+    "examples": [
+     {
+      "question": "Find $2\\dfrac25\\times1\\dfrac{7}{8}$.",
+      "use": [
+       "\\dfrac ab\\times\\dfrac cd=\\dfrac{ac}{bd}"
+      ],
+      "steps": [
+       "$\\dfrac{12}{5}\\times\\dfrac{15}{8}=\\dfrac{180}{40}$"
+      ],
+      "result": "$\\dfrac92=4\\dfrac12$",
+      "type": "Multiply"
+     },
+     {
+      "question": "Find $\\dfrac34$ of ₹$480$.",
+      "use": [],
+      "steps": [
+       "$\\dfrac34\\times480=3\\times120$"
+      ],
+      "result": "₹$360$",
+      "type": "Of"
+     },
+     {
+      "question": "Find $3\\dfrac34\\div1\\dfrac14$.",
+      "use": [
+       "\\dfrac ab\\div\\dfrac cd=\\dfrac ab\\times\\dfrac dc"
+      ],
+      "steps": [
+       "$\\dfrac{15}{4}\\times\\dfrac45$"
+      ],
+      "result": "$3$",
+      "type": "Divide"
+     },
+     {
+      "question": "Simplify $\\dfrac12+\\dfrac34\\div\\dfrac38\\text{ of }4$.",
+      "use": [],
+      "steps": [
+       "Of first: $\\dfrac38\\times4=\\dfrac32$",
+       "Division: $\\dfrac34\\div\\dfrac32=\\dfrac12$",
+       "$\\dfrac12+\\dfrac12$"
+      ],
+      "result": "$1$",
+      "type": "BODMAS"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "fractions",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Paper folding for multiplication",
+     "steps": [
+      "Fold a paper into $3$ equal parts across. Shade $2$ parts.",
+      "Fold it into $4$ equal parts down. Shade $3$ parts in a second colour.",
+      "Count the parts with both colours."
+     ],
+     "result": "$6$ of $12$ parts have both colours, so $\\dfrac23\\times\\dfrac34=\\dfrac6{12}=\\dfrac12$."
+    }
+   }
+  ]
+ },
+ "icse7-decimals": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 4",
+  "title": "Decimals",
+  "subtitle": "Place value, operations, conversions and recurring decimals",
+  "back": {
+   "href": "/icse/grade-7/ch-4",
+   "label": "Decimals"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-decimals-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-4",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-4/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Decimals and place value",
+    "items": [
+     "0.1=\\dfrac1{10},\\ 0.01=\\dfrac1{100},\\ 0.001=\\dfrac1{1000}",
+     "\\text{decimal}\\to\\text{fraction: } \\dfrac{\\text{number without point}}{10^{\\,\\text{decimal places}}}"
+    ]
+   },
+   {
+    "title": "Adding, subtracting and multiplying",
+    "items": [
+     "\\text{places in } a\\times b=\\text{places in } a+\\text{places in } b",
+     "a\\times10^n:\\ \\text{point moves } n \\text{ places right}"
+    ]
+   },
+   {
+    "title": "Dividing, and recurring decimals",
+    "items": [
+     "\\dfrac ab=\\dfrac{a\\times10^n}{b\\times10^n}",
+     "a\\div10^n:\\ \\text{point moves } n \\text{ places left}",
+     "\\dfrac13=0.\\overline3,\\quad\\dfrac{2}{11}=0.\\overline{18}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Decimals and place value",
+    "level": "board",
+    "ideas": [
+     "Places after the point: tenths, hundredths, thousandths.",
+     "Like decimals have the same number of decimal places. Add zeros at the end to make them like.",
+     "To compare, make them like decimals and compare from the left."
+    ],
+    "formulas": [
+     "0.1=\\dfrac1{10},\\ 0.01=\\dfrac1{100},\\ 0.001=\\dfrac1{1000}",
+     "\\text{decimal}\\to\\text{fraction: } \\dfrac{\\text{number without point}}{10^{\\,\\text{decimal places}}}"
+    ],
+    "examples": [
+     {
+      "question": "Write $2.375$ as a fraction in lowest terms.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{2375}{1000}=\\dfrac{19}{8}$"
+      ],
+      "result": "$\\dfrac{19}{8}=2\\dfrac38$",
+      "type": "Decimal to fraction"
+     },
+     {
+      "question": "Write $\\dfrac{7}{8}$ as a decimal.",
+      "use": [],
+      "steps": [
+       "$7\\div8=0.875$"
+      ],
+      "result": "$0.875$",
+      "type": "Fraction to decimal"
+     },
+     {
+      "question": "Arrange $0.5,\\ 0.48,\\ 0.505,\\ 0.4$ in ascending order.",
+      "use": [],
+      "steps": [
+       "Like decimals: $0.500,\\ 0.480,\\ 0.505,\\ 0.400$"
+      ],
+      "result": "$0.4<0.48<0.5<0.505$",
+      "type": "Compare"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "decimals",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Adding, subtracting and multiplying",
+    "level": "board",
+    "ideas": [
+     "Add or subtract with the decimal points in one column.",
+     "Multiply as whole numbers. The answer has as many decimal places as the two numbers together.",
+     "Multiply by $10,100,1000$: move the point $1,2,3$ places right."
+    ],
+    "formulas": [
+     "\\text{places in } a\\times b=\\text{places in } a+\\text{places in } b",
+     "a\\times10^n:\\ \\text{point moves } n \\text{ places right}"
+    ],
+    "examples": [
+     {
+      "question": "Find $12.5+3.075-8.6$.",
+      "use": [],
+      "steps": [
+       "$12.500+3.075=15.575$",
+       "$15.575-8.600$"
+      ],
+      "result": "$6.975$",
+      "type": "Add and subtract"
+     },
+     {
+      "question": "Find $2.4\\times0.15$.",
+      "use": [
+       "\\text{places in } a\\times b=\\text{places in } a+\\text{places in } b"
+      ],
+      "steps": [
+       "$24\\times15=360$",
+       "$1+2=3$ places: $0.360$"
+      ],
+      "result": "$0.36$",
+      "type": "Multiply"
+     },
+     {
+      "question": "Find $0.0357\\times100$.",
+      "use": [],
+      "steps": [
+       "Move the point 2 places right."
+      ],
+      "result": "$3.57$",
+      "type": "Power of 10"
+     }
+    ],
+    "experiment": {
+     "title": "Decimal grid",
+     "steps": [
+      "Draw a $10\\times10$ square grid. The whole grid is $1$.",
+      "Shade $3$ columns: this is $0.3$.",
+      "Shade $5$ more small squares in a new column."
+     ],
+     "result": "$35$ squares are shaded, so the grid shows $0.35$."
+    }
+   },
+   {
+    "title": "Dividing, and recurring decimals",
+    "level": "board",
+    "ideas": [
+     "Divide by a whole number: divide as usual and keep the point in place.",
+     "Divide by a decimal: move the point in both numbers until the divisor is a whole number.",
+     "A fraction gives a terminating decimal if its denominator (in lowest terms) has only the factors $2$ and $5$. Otherwise the decimal recurs."
+    ],
+    "formulas": [
+     "\\dfrac ab=\\dfrac{a\\times10^n}{b\\times10^n}",
+     "a\\div10^n:\\ \\text{point moves } n \\text{ places left}",
+     "\\dfrac13=0.\\overline3,\\quad\\dfrac{2}{11}=0.\\overline{18}"
+    ],
+    "examples": [
+     {
+      "question": "Find $7.56\\div0.12$.",
+      "use": [
+       "\\dfrac ab=\\dfrac{a\\times10^n}{b\\times10^n}"
+      ],
+      "steps": [
+       "$\\dfrac{756}{12}$"
+      ],
+      "result": "$63$",
+      "type": "Divide by decimal"
+     },
+     {
+      "question": "Find $45.6\\div1000$.",
+      "use": [],
+      "steps": [
+       "Move the point 3 places left."
+      ],
+      "result": "$0.0456$",
+      "type": "Power of 10"
+     },
+     {
+      "question": "Write $\\dfrac{5}{6}$ as a decimal.",
+      "use": [],
+      "steps": [
+       "$5\\div6=0.8333\\ldots$"
+      ],
+      "result": "$0.8\\overline3$",
+      "type": "Recurring"
+     },
+     {
+      "question": "A wire $14.4$ m long is cut into pieces of $0.36$ m. How many pieces?",
+      "use": [],
+      "steps": [
+       "$\\dfrac{14.4}{0.36}=\\dfrac{1440}{36}$"
+      ],
+      "result": "$40$ pieces",
+      "type": "Word problem"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "decimals",
+      "index": 1
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-exponents": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 5",
+  "title": "Exponents",
+  "subtitle": "Powers, laws of exponents and large numbers",
+  "back": {
+   "href": "/icse/grade-7/ch-5",
+   "label": "Exponents"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-exponents-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-5",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-5/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Powers",
+    "items": [
+     "a^n=\\underbrace{a\\times a\\times\\cdots\\times a}_{n}",
+     "(-1)^{\\text{even}}=1,\\qquad(-1)^{\\text{odd}}=-1",
+     "\\left(\\dfrac ab\\right)^n=\\dfrac{a^n}{b^n}"
+    ]
+   },
+   {
+    "title": "Laws of exponents",
+    "items": [
+     "a^m\\times a^n=a^{m+n}",
+     "a^m\\div a^n=a^{m-n}",
+     "(a^m)^n=a^{mn}",
+     "(ab)^n=a^nb^n",
+     "a^0=1\\ (a\\ne0)"
+    ]
+   },
+   {
+    "title": "Large numbers in standard form",
+    "items": [
+     "N=k\\times10^n,\\ 1\\le k<10",
+     "10^n=1\\underbrace{00\\ldots0}_{n}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Powers",
+    "level": "board",
+    "ideas": [
+     "$a^n$ means $a$ multiplied by itself $n$ times. $a$ is the base, $n$ is the exponent.",
+     "A negative base with an even exponent gives a positive answer. With an odd exponent, the answer is negative.",
+     "Write a number as a product of prime powers: $72=2^3\\times3^2$."
+    ],
+    "formulas": [
+     "a^n=\\underbrace{a\\times a\\times\\cdots\\times a}_{n}",
+     "(-1)^{\\text{even}}=1,\\qquad(-1)^{\\text{odd}}=-1",
+     "\\left(\\dfrac ab\\right)^n=\\dfrac{a^n}{b^n}"
+    ],
+    "examples": [
+     {
+      "question": "Find $(-2)^5$.",
+      "use": [],
+      "steps": [
+       "$(-2)(-2)(-2)(-2)(-2)$, odd exponent"
+      ],
+      "result": "$-32$",
+      "type": "Negative base"
+     },
+     {
+      "question": "Find $\\left(\\dfrac{2}{3}\\right)^4$.",
+      "use": [
+       "\\left(\\dfrac ab\\right)^n=\\dfrac{a^n}{b^n}"
+      ],
+      "steps": [
+       "$\\dfrac{2^4}{3^4}$"
+      ],
+      "result": "$\\dfrac{16}{81}$",
+      "type": "Fraction base"
+     },
+     {
+      "question": "Write $648$ as a product of prime powers.",
+      "use": [],
+      "steps": [
+       "$648=2\\times324=2\\times2\\times162=\\cdots=2^3\\times81$"
+      ],
+      "result": "$2^3\\times3^4$",
+      "type": "Prime powers"
+     }
+    ]
+   },
+   {
+    "title": "Laws of exponents",
+    "level": "board",
+    "ideas": [
+     "The laws work when the bases are the same.",
+     "Any non-zero number to the power $0$ is $1$."
+    ],
+    "formulas": [
+     "a^m\\times a^n=a^{m+n}",
+     "a^m\\div a^n=a^{m-n}",
+     "(a^m)^n=a^{mn}",
+     "(ab)^n=a^nb^n",
+     "a^0=1\\ (a\\ne0)"
+    ],
+    "examples": [
+     {
+      "question": "Simplify $2^5\\times2^3\\div2^4$.",
+      "use": [
+       "a^m\\times a^n=a^{m+n}",
+       "a^m\\div a^n=a^{m-n}"
+      ],
+      "steps": [
+       "$2^{5+3-4}=2^4$"
+      ],
+      "result": "$16$",
+      "type": "Same base"
+     },
+     {
+      "question": "Simplify $(3^2)^3\\div3^4$.",
+      "use": [
+       "(a^m)^n=a^{mn}"
+      ],
+      "steps": [
+       "$3^6\\div3^4=3^2$"
+      ],
+      "result": "$9$",
+      "type": "Power of a power"
+     },
+     {
+      "question": "Simplify $\\dfrac{25\\times5^4\\times t^8}{10^3\\times t^4}$.",
+      "use": [],
+      "steps": [
+       "$25=5^2$ and $10^3=2^3\\times5^3$",
+       "$\\dfrac{5^{6}\\,t^{8}}{2^3\\,5^3\\,t^4}=\\dfrac{5^3t^4}{2^3}$"
+      ],
+      "result": "$\\dfrac{125\\,t^4}{8}$",
+      "type": "Mixed bases"
+     },
+     {
+      "question": "Find $x$ if $5^{x}\\times5^{3}=5^{8}$.",
+      "use": [],
+      "steps": [
+       "$x+3=8$"
+      ],
+      "result": "$x=5$",
+      "type": "Find exponent"
+     },
+     {
+      "question": "Find $(2^0+3^0)\\times4^0$.",
+      "use": [
+       "a^0=1\\ (a\\ne0)"
+      ],
+      "steps": [
+       "$(1+1)\\times1$"
+      ],
+      "result": "$2$",
+      "type": "Zero exponent"
+     }
+    ],
+    "experiment": {
+     "title": "Paper folding",
+     "steps": [
+      "Fold a sheet of paper in half. Count the layers.",
+      "Fold again and count. Do this $5$ times.",
+      "Write each count as a power of $2$."
+     ],
+     "result": "The layers are $2,4,8,16,32$, that is $2^1,\\dots,2^5$. Each fold multiplies by $2$."
+    }
+   },
+   {
+    "title": "Large numbers in standard form",
+    "level": "board",
+    "ideas": [
+     "Standard form: $k\\times10^n$ with $1\\le k<10$.",
+     "Count how many places the point moves. Left move gives a positive $n$."
+    ],
+    "formulas": [
+     "N=k\\times10^n,\\ 1\\le k<10",
+     "10^n=1\\underbrace{00\\ldots0}_{n}"
+    ],
+    "examples": [
+     {
+      "question": "Write $3\\,84\\,00\\,000$ in standard form.",
+      "use": [
+       "N=k\\times10^n,\\ 1\\le k<10"
+      ],
+      "steps": [
+       "$3.84$ and the point moves $7$ places."
+      ],
+      "result": "$3.84\\times10^7$",
+      "type": "Standard form"
+     },
+     {
+      "question": "Write $5.06\\times10^5$ in usual form.",
+      "use": [],
+      "steps": [
+       "Move the point $5$ places right."
+      ],
+      "result": "$5\\,06\\,000$",
+      "type": "Usual form"
+     },
+     {
+      "question": "Expand $47{,}305$ using powers of $10$.",
+      "use": [],
+      "steps": [
+       "$4\\times10^4+7\\times10^3+3\\times10^2+0\\times10+5\\times10^0$"
+      ],
+      "result": "$4\\times10^4+7\\times10^3+3\\times10^2+5\\times10^0$",
+      "type": "Expanded form"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "powers-roots",
+      "index": 0
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-sets": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 6",
+  "title": "Set Concepts",
+  "subtitle": "Sets, notation, kinds of sets, subsets and Venn diagrams",
+  "back": {
+   "href": "/icse/grade-7/ch-6",
+   "label": "Set Concepts"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-sets-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-6",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-6/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Sets and notation",
+    "items": [
+     "n(A)=\\text{number of elements in } A"
+    ]
+   },
+   {
+    "title": "Kinds of sets",
+    "items": [
+     "A=B\\Rightarrow n(A)=n(B)",
+     "A\\leftrightarrow B\\iff n(A)=n(B)"
+    ]
+   },
+   {
+    "title": "Subsets, complement and Venn diagrams",
+    "items": [
+     "\\text{Number of subsets}=2^{n}",
+     "\\text{Number of proper subsets}=2^{n}-1",
+     "n(A')=n(\\xi)-n(A)"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Sets and notation",
+    "level": "board",
+    "ideas": [
+     "A set is a well-defined collection of objects. Each object is an element.",
+     "$a\\in A$: $a$ belongs to $A$. $a\\notin A$: $a$ does not belong to $A$.",
+     "Roster form lists the elements: $A=\\{2,4,6,8\\}$.",
+     "Set-builder form gives a rule: $A=\\{x: x \\text{ is an even number}, x<10\\}$.",
+     "Do not repeat an element in a set."
+    ],
+    "formulas": [
+     "n(A)=\\text{number of elements in } A"
+    ],
+    "examples": [
+     {
+      "question": "Write $A=\\{x: x\\in\\mathbb N, x \\text{ is a factor of } 12\\}$ in roster form. Find $n(A)$.",
+      "use": [],
+      "steps": [
+       "Factors of $12$: $1,2,3,4,6,12$"
+      ],
+      "result": "$A=\\{1,2,3,4,6,12\\}$, $n(A)=6$",
+      "type": "Roster form"
+     },
+     {
+      "question": "Write $B=\\{5,10,15,20,25\\}$ in set-builder form.",
+      "use": [],
+      "steps": [
+       "Multiples of $5$ up to $25$."
+      ],
+      "result": "$B=\\{x: x=5n,\\ n\\in\\mathbb N,\\ n\\le5\\}$",
+      "type": "Set-builder form"
+     },
+     {
+      "question": "Write the set of letters of the word ‘ASSESSMENT’.",
+      "use": [],
+      "steps": [
+       "Letters A, S, E, M, N, T (no repeats)."
+      ],
+      "result": "$\\{A,S,E,M,N,T\\}$",
+      "type": "No repeats"
+     }
+    ]
+   },
+   {
+    "title": "Kinds of sets",
+    "level": "board",
+    "ideas": [
+     "Empty set $\\varnothing$ or $\\{\\ \\}$: no elements.",
+     "Singleton set: one element.",
+     "Finite set: you can count all elements. Infinite set: you cannot.",
+     "Equal sets: the same elements. Equivalent sets: the same number of elements.",
+     "Universal set $\\xi$: the set that contains all sets in a problem."
+    ],
+    "formulas": [
+     "A=B\\Rightarrow n(A)=n(B)",
+     "A\\leftrightarrow B\\iff n(A)=n(B)"
+    ],
+    "examples": [
+     {
+      "question": "Is $\\{x: x\\in\\mathbb N,\\ 3<x<4\\}$ empty?",
+      "use": [],
+      "steps": [
+       "No natural number lies between $3$ and $4$."
+      ],
+      "result": "Yes, it is $\\varnothing$.",
+      "type": "Empty set"
+     },
+     {
+      "question": "$A=\\{1,2,3\\}$ and $B=\\{p,q,r\\}$. Are they equal or equivalent?",
+      "use": [],
+      "steps": [
+       "Different elements, but $n(A)=n(B)=3$."
+      ],
+      "result": "Equivalent, not equal.",
+      "type": "Equal or equivalent"
+     },
+     {
+      "question": "Is the set of natural numbers finite?",
+      "use": [],
+      "steps": [
+       "$1,2,3,\\dots$ never ends."
+      ],
+      "result": "No, it is infinite.",
+      "type": "Finite or infinite"
+     }
+    ]
+   },
+   {
+    "title": "Subsets, complement and Venn diagrams",
+    "level": "board",
+    "ideas": [
+     "$A\\subseteq B$: every element of $A$ is in $B$.",
+     "$\\varnothing$ and $A$ itself are subsets of every set $A$.",
+     "Complement $A'$: elements of $\\xi$ that are not in $A$.",
+     "In a Venn diagram, the rectangle is $\\xi$ and circles are the sets."
+    ],
+    "formulas": [
+     "\\text{Number of subsets}=2^{n}",
+     "\\text{Number of proper subsets}=2^{n}-1",
+     "n(A')=n(\\xi)-n(A)"
+    ],
+    "examples": [
+     {
+      "question": "Write all subsets of $\\{a,b,c\\}$.",
+      "use": [
+       "\\text{Number of subsets}=2^{n}"
+      ],
+      "steps": [
+       "$2^3=8$ subsets"
+      ],
+      "result": "$\\varnothing,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},\\{a,b,c\\}$",
+      "type": "Subsets"
+     },
+     {
+      "question": "$\\xi=\\{1,2,\\dots,10\\}$ and $A=\\{2,3,5,7\\}$. Find $A'$.",
+      "use": [
+       "n(A')=n(\\xi)-n(A)"
+      ],
+      "steps": [
+       "Remove $2,3,5,7$ from $\\xi$."
+      ],
+      "result": "$A'=\\{1,4,6,8,9,10\\}$",
+      "type": "Complement"
+     },
+     {
+      "question": "How many proper subsets has a set with $4$ elements?",
+      "use": [
+       "\\text{Number of proper subsets}=2^{n}-1"
+      ],
+      "steps": [
+       "$2^4-1$"
+      ],
+      "result": "$15$",
+      "type": "Count"
+     }
+    ],
+    "experiment": {
+     "title": "Sorting with hoops",
+     "steps": [
+      "Put two hoops on the floor, one for ‘even’ and one for ‘multiple of 3’. Let them overlap.",
+      "Place cards $1$ to $12$ in the correct places.",
+      "Cards in neither hoop stay outside, inside the room (the universal set)."
+     ],
+     "result": "$6$ and $12$ go in the overlap. $1,5,7,11$ stay outside both hoops."
+    }
+   }
+  ]
+ },
+ "icse7-ratio-proportion": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 7",
+  "title": "Ratio and Proportion",
+  "subtitle": "Ratios, dividing in a ratio, proportion and continued proportion",
+  "back": {
+   "href": "/icse/grade-7/ch-7",
+   "label": "Ratio and Proportion"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-ratio-proportion-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-7",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-7/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Ratio",
+    "items": [
+     "a:b=\\dfrac ab",
+     "a:b=ka:kb\\ (k\\ne0)",
+     "\\text{Share of } x \\text{ in } a:b=\\dfrac{a}{a+b}\\times x"
+    ]
+   },
+   {
+    "title": "Proportion",
+    "items": [
+     "a:b::c:d\\iff ad=bc",
+     "\\text{Fourth proportional: } d=\\dfrac{bc}{a}",
+     "\\text{Third proportional to } a,b:\\ c=\\dfrac{b^2}{a}",
+     "\\text{Mean proportional: } b=\\sqrt{ac}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Ratio",
+    "level": "board",
+    "ideas": [
+     "A ratio compares two quantities of the same kind in the same unit.",
+     "A ratio has no unit. Write it in lowest terms.",
+     "$a:b$ is greater than $c:d$ if $\\dfrac ab>\\dfrac cd$."
+    ],
+    "formulas": [
+     "a:b=\\dfrac ab",
+     "a:b=ka:kb\\ (k\\ne0)",
+     "\\text{Share of } x \\text{ in } a:b=\\dfrac{a}{a+b}\\times x"
+    ],
+    "examples": [
+     {
+      "question": "Find the ratio of $75$ paise to ₹$3$.",
+      "use": [
+       "a:b=\\dfrac ab"
+      ],
+      "steps": [
+       "Same unit: ₹$3=300$ paise",
+       "$75:300$"
+      ],
+      "result": "$1:4$",
+      "type": "Same units"
+     },
+     {
+      "question": "Which ratio is greater: $3:5$ or $5:8$?",
+      "use": [],
+      "steps": [
+       "$\\dfrac35=\\dfrac{24}{40}$ and $\\dfrac58=\\dfrac{25}{40}$"
+      ],
+      "result": "$5:8$ is greater.",
+      "type": "Compare"
+     },
+     {
+      "question": "Divide ₹$1800$ between Asha and Binu in the ratio $4:5$.",
+      "use": [
+       "\\text{Share of } x \\text{ in } a:b=\\dfrac{a}{a+b}\\times x"
+      ],
+      "steps": [
+       "Asha $=\\dfrac49\\times1800=800$",
+       "Binu $=\\dfrac59\\times1800=1000$"
+      ],
+      "result": "₹$800$ and ₹$1000$",
+      "type": "Divide in a ratio"
+     },
+     {
+      "question": "If $a:b=2:3$ and $b:c=4:5$, find $a:b:c$.",
+      "use": [],
+      "steps": [
+       "Make $b$ the same: $a:b=8:12$, $b:c=12:15$"
+      ],
+      "result": "$8:12:15$",
+      "type": "Combine ratios"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "ratio",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Proportion",
+    "level": "board",
+    "ideas": [
+     "Four numbers $a,b,c,d$ are in proportion if $a:b=c:d$.",
+     "$a$ and $d$ are the extremes. $b$ and $c$ are the means.",
+     "Three numbers $a,b,c$ are in continued proportion if $a:b=b:c$. Then $b$ is the mean proportional."
+    ],
+    "formulas": [
+     "a:b::c:d\\iff ad=bc",
+     "\\text{Fourth proportional: } d=\\dfrac{bc}{a}",
+     "\\text{Third proportional to } a,b:\\ c=\\dfrac{b^2}{a}",
+     "\\text{Mean proportional: } b=\\sqrt{ac}"
+    ],
+    "examples": [
+     {
+      "question": "Are $6,\\ 9,\\ 10,\\ 15$ in proportion?",
+      "use": [
+       "a:b::c:d\\iff ad=bc"
+      ],
+      "steps": [
+       "$ad=6\\times15=90$, $bc=9\\times10=90$"
+      ],
+      "result": "Yes",
+      "type": "Check"
+     },
+     {
+      "question": "Find the fourth proportional to $4,\\ 10,\\ 6$.",
+      "use": [
+       "\\text{Fourth proportional: } d=\\dfrac{bc}{a}"
+      ],
+      "steps": [
+       "$d=\\dfrac{10\\times6}{4}$"
+      ],
+      "result": "$15$",
+      "type": "Fourth proportional"
+     },
+     {
+      "question": "Find the third proportional to $4$ and $12$.",
+      "use": [
+       "\\text{Third proportional to } a,b:\\ c=\\dfrac{b^2}{a}"
+      ],
+      "steps": [
+       "$c=\\dfrac{144}{4}$"
+      ],
+      "result": "$36$",
+      "type": "Third proportional"
+     },
+     {
+      "question": "Find the mean proportional between $9$ and $16$.",
+      "use": [
+       "\\text{Mean proportional: } b=\\sqrt{ac}"
+      ],
+      "steps": [
+       "$\\sqrt{144}$"
+      ],
+      "result": "$12$",
+      "type": "Mean proportional"
+     },
+     {
+      "question": "Find $x$ if $x:15::8:20$.",
+      "use": [],
+      "steps": [
+       "$20x=15\\times8$"
+      ],
+      "result": "$x=6$",
+      "type": "Find the missing term"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "ratio",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Lemonade taste test",
+     "steps": [
+      "Mix $2$ spoons of syrup in $3$ cups of water. Taste it.",
+      "Mix $4$ spoons in $6$ cups. Taste it.",
+      "Mix $4$ spoons in $5$ cups. Taste it."
+     ],
+     "result": "The first two taste the same, because $2:3=4:6$. The third is sweeter, because $4:5>2:3$."
+    }
+   }
+  ]
+ },
+ "icse7-unitary-method": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 8",
+  "title": "Unitary Method",
+  "subtitle": "Direct and inverse variation, time and work",
+  "back": {
+   "href": "/icse/grade-7/ch-8",
+   "label": "Unitary Method"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-unitary-method-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-8",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-8/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Direct variation",
+    "items": [
+     "\\text{Value of 1 unit}=\\dfrac{\\text{total value}}{\\text{number of units}}",
+     "\\dfrac{x_1}{y_1}=\\dfrac{x_2}{y_2}"
+    ]
+   },
+   {
+    "title": "Inverse variation",
+    "items": [
+     "x_1y_1=x_2y_2"
+    ]
+   },
+   {
+    "title": "Time and work",
+    "items": [
+     "\\text{A's 1-day work}=\\dfrac1a",
+     "\\text{(A+B)'s 1-day work}=\\dfrac1a+\\dfrac1b",
+     "\\text{Days together}=\\dfrac{ab}{a+b}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Direct variation",
+    "level": "board",
+    "ideas": [
+     "Find the value of one unit first. Then find the value of the required units.",
+     "Direct variation: one quantity increases, the other increases in the same ratio.",
+     "More articles cost more money."
+    ],
+    "formulas": [
+     "\\text{Value of 1 unit}=\\dfrac{\\text{total value}}{\\text{number of units}}",
+     "\\dfrac{x_1}{y_1}=\\dfrac{x_2}{y_2}"
+    ],
+    "examples": [
+     {
+      "question": "$12$ pens cost ₹$180$. Find the cost of $20$ pens.",
+      "use": [
+       "\\text{Value of 1 unit}=\\dfrac{\\text{total value}}{\\text{number of units}}"
+      ],
+      "steps": [
+       "$1$ pen $=\\dfrac{180}{12}=15$",
+       "$20$ pens $=20\\times15$"
+      ],
+      "result": "₹$300$",
+      "type": "Direct"
+     },
+     {
+      "question": "A car uses $8$ L of petrol for $96$ km. How far does it go on $15$ L?",
+      "use": [],
+      "steps": [
+       "$1$ L $\\to\\dfrac{96}{8}=12$ km",
+       "$15\\times12$"
+      ],
+      "result": "$180$ km",
+      "type": "Direct"
+     },
+     {
+      "question": "A train covers $200$ km in $2\\dfrac12$ h. How long does it take for $340$ km?",
+      "use": [],
+      "steps": [
+       "$1$ km takes $\\dfrac{5}{2}\\div200=\\dfrac1{80}$ h",
+       "$340\\times\\dfrac1{80}=\\dfrac{17}{4}$"
+      ],
+      "result": "$4\\dfrac14$ h $=4$ h $15$ min",
+      "type": "Direct"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "ratio",
+      "index": 1
+     }
+    ]
+   },
+   {
+    "title": "Inverse variation",
+    "level": "board",
+    "ideas": [
+     "Inverse variation: one quantity increases, the other decreases in the same ratio.",
+     "More workers take fewer days. More speed takes less time.",
+     "First find the work for $1$ unit, then divide."
+    ],
+    "formulas": [
+     "x_1y_1=x_2y_2"
+    ],
+    "examples": [
+     {
+      "question": "$15$ men build a wall in $24$ days. How many days do $20$ men take?",
+      "use": [
+       "x_1y_1=x_2y_2"
+      ],
+      "steps": [
+       "$1$ man takes $15\\times24=360$ days",
+       "$20$ men take $\\dfrac{360}{20}$"
+      ],
+      "result": "$18$ days",
+      "type": "Inverse"
+     },
+     {
+      "question": "Food lasts $40$ days for $300$ soldiers. After $10$ days, $60$ soldiers leave. How long does the rest of the food last?",
+      "use": [],
+      "steps": [
+       "Food left lasts $300$ soldiers for $30$ days",
+       "$240$ soldiers: $\\dfrac{300\\times30}{240}$"
+      ],
+      "result": "$37\\dfrac12$ days",
+      "type": "Inverse"
+     }
+    ]
+   },
+   {
+    "title": "Time and work",
+    "level": "board",
+    "ideas": [
+     "If A does a work in $n$ days, A does $\\dfrac1n$ of the work in $1$ day.",
+     "Add the one-day work of people who work together.",
+     "Days $=\\dfrac{1}{\\text{one-day work}}$."
+    ],
+    "formulas": [
+     "\\text{A's 1-day work}=\\dfrac1a",
+     "\\text{(A+B)'s 1-day work}=\\dfrac1a+\\dfrac1b",
+     "\\text{Days together}=\\dfrac{ab}{a+b}"
+    ],
+    "examples": [
+     {
+      "question": "A does a work in $10$ days and B in $15$ days. In how many days do they do it together?",
+      "use": [
+       "\\text{(A+B)'s 1-day work}=\\dfrac1a+\\dfrac1b"
+      ],
+      "steps": [
+       "$\\dfrac1{10}+\\dfrac1{15}=\\dfrac{3+2}{30}=\\dfrac16$"
+      ],
+      "result": "$6$ days",
+      "type": "Together"
+     },
+     {
+      "question": "A and B together do a work in $12$ days. A alone does it in $20$ days. How long does B take alone?",
+      "use": [],
+      "steps": [
+       "B's 1-day work $=\\dfrac1{12}-\\dfrac1{20}=\\dfrac{5-3}{60}=\\dfrac1{30}$"
+      ],
+      "result": "$30$ days",
+      "type": "One alone"
+     },
+     {
+      "question": "Pipe A fills a tank in $6$ h. Pipe B empties it in $9$ h. Both are open. When is the tank full?",
+      "use": [],
+      "steps": [
+       "1-hour work $=\\dfrac16-\\dfrac19=\\dfrac{3-2}{18}=\\dfrac1{18}$"
+      ],
+      "result": "$18$ h",
+      "type": "Pipes"
+     },
+     {
+      "question": "A can do a work in $8$ days and B in $12$ days. They work together for $3$ days. Then A leaves. How long does B take to finish?",
+      "use": [],
+      "steps": [
+       "$3$ days: $3\\left(\\dfrac18+\\dfrac1{12}\\right)=3\\times\\dfrac5{24}=\\dfrac58$",
+       "Left $\\dfrac38$. B: $\\dfrac38\\div\\dfrac1{12}=\\dfrac{36}{8}$"
+      ],
+      "result": "$4\\dfrac12$ days",
+      "type": "One leaves"
+     }
+    ],
+    "experiment": {
+     "title": "Fill a bucket",
+     "steps": [
+      "Fill a bucket with one mug. Count the mugs, say $12$.",
+      "Use two mugs together, one by you and one by a friend.",
+      "Count the rounds."
+     ],
+     "result": "It takes $6$ rounds. Double the workers gives half the time: inverse variation."
+    }
+   }
+  ]
+ },
+ "icse7-percent": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 9",
+  "title": "Percent and Percentage",
+  "subtitle": "Conversions, percentage of a quantity, increase and decrease",
+  "back": {
+   "href": "/icse/grade-7/ch-9",
+   "label": "Percent and Percentage"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-percent-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-9",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-9/mcq",
+    "label": "30 MCQs · Free →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Percent and conversions",
+    "items": [
+     "x\\%=\\dfrac{x}{100}",
+     "\\dfrac ab=\\dfrac ab\\times100\\%"
+    ]
+   },
+   {
+    "title": "Percentage of a quantity",
+    "items": [
+     "x\\%\\text{ of } A=\\dfrac{x}{100}\\times A",
+     "\\dfrac ab\\times100\\%",
+     "\\text{Number}=\\dfrac{N\\times100}{x}"
+    ]
+   },
+   {
+    "title": "Increase and decrease",
+    "items": [
+     "\\text{Percent change}=\\dfrac{\\text{change}}{\\text{original}}\\times100\\%",
+     "\\text{New value}=\\text{original}\\times\\left(1\\pm\\dfrac{x}{100}\\right)"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Percent and conversions",
+    "level": "board",
+    "ideas": [
+     "Percent means ‘per hundred’: $x\\%=\\dfrac{x}{100}$.",
+     "To change a fraction or decimal to a percent, multiply by $100$.",
+     "To change a percent to a fraction, divide by $100$ and reduce."
+    ],
+    "formulas": [
+     "x\\%=\\dfrac{x}{100}",
+     "\\dfrac ab=\\dfrac ab\\times100\\%"
+    ],
+    "examples": [
+     {
+      "question": "Write $\\dfrac{3}{8}$ as a percent.",
+      "use": [
+       "\\dfrac ab=\\dfrac ab\\times100\\%"
+      ],
+      "steps": [
+       "$\\dfrac38\\times100=37.5$"
+      ],
+      "result": "$37.5\\%$",
+      "type": "Fraction to percent"
+     },
+     {
+      "question": "Write $45\\%$ as a fraction in lowest terms.",
+      "use": [
+       "x\\%=\\dfrac{x}{100}"
+      ],
+      "steps": [
+       "$\\dfrac{45}{100}$"
+      ],
+      "result": "$\\dfrac{9}{20}$",
+      "type": "Percent to fraction"
+     },
+     {
+      "question": "Write $0.065$ as a percent.",
+      "use": [],
+      "steps": [
+       "$0.065\\times100$"
+      ],
+      "result": "$6.5\\%$",
+      "type": "Decimal to percent"
+     },
+     {
+      "question": "Write $12\\dfrac12\\%$ as a fraction.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{25}{2}\\times\\dfrac1{100}$"
+      ],
+      "result": "$\\dfrac18$",
+      "type": "Percent to fraction"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "percentages",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Percentage of a quantity",
+    "level": "board",
+    "ideas": [
+     "$x\\%$ of $A$ means $\\dfrac{x}{100}\\times A$.",
+     "To find what percent $a$ is of $b$, use the same unit for both.",
+     "If $x\\%$ of a number is $N$, the number is $N\\times\\dfrac{100}{x}$."
+    ],
+    "formulas": [
+     "x\\%\\text{ of } A=\\dfrac{x}{100}\\times A",
+     "\\dfrac ab\\times100\\%",
+     "\\text{Number}=\\dfrac{N\\times100}{x}"
+    ],
+    "examples": [
+     {
+      "question": "Find $15\\%$ of ₹$640$.",
+      "use": [
+       "x\\%\\text{ of } A=\\dfrac{x}{100}\\times A"
+      ],
+      "steps": [
+       "$\\dfrac{15}{100}\\times640$"
+      ],
+      "result": "₹$96$",
+      "type": "Of a quantity"
+     },
+     {
+      "question": "What percent of $2$ kg is $250$ g?",
+      "use": [
+       "\\dfrac ab\\times100\\%"
+      ],
+      "steps": [
+       "$\\dfrac{250}{2000}\\times100$"
+      ],
+      "result": "$12.5\\%$",
+      "type": "What percent"
+     },
+     {
+      "question": "$35\\%$ of a number is $84$. Find the number.",
+      "use": [
+       "\\text{Number}=\\dfrac{N\\times100}{x}"
+      ],
+      "steps": [
+       "$\\dfrac{84\\times100}{35}$"
+      ],
+      "result": "$240$",
+      "type": "Find the whole"
+     },
+     {
+      "question": "In an exam, $40\\%$ is the pass mark. Ravi gets $185$ marks and fails by $15$ marks. Find the maximum marks.",
+      "use": [],
+      "steps": [
+       "Pass mark $=185+15=200$",
+       "$40\\%$ of $M=200$"
+      ],
+      "result": "$M=500$",
+      "type": "Exam problem"
+     }
+    ],
+    "experiment": {
+     "title": "Percent on a 10 × 10 grid",
+     "steps": [
+      "Take a $10\\times10$ grid of $100$ squares.",
+      "Shade $25$ squares in one colour and $40$ in another.",
+      "Count the unshaded squares."
+     ],
+     "result": "$35$ squares are unshaded, so $25\\%+40\\%+35\\%=100\\%$."
+    }
+   },
+   {
+    "title": "Increase and decrease",
+    "level": "board",
+    "ideas": [
+     "Percent change is always on the original value.",
+     "An increase of $x\\%$ multiplies the value by $\\left(1+\\dfrac x{100}\\right)$.",
+     "A decrease of $x\\%$ multiplies the value by $\\left(1-\\dfrac x{100}\\right)$."
+    ],
+    "formulas": [
+     "\\text{Percent change}=\\dfrac{\\text{change}}{\\text{original}}\\times100\\%",
+     "\\text{New value}=\\text{original}\\times\\left(1\\pm\\dfrac{x}{100}\\right)"
+    ],
+    "examples": [
+     {
+      "question": "The price of a book rises from ₹$250$ to ₹$290$. Find the percent increase.",
+      "use": [
+       "\\text{Percent change}=\\dfrac{\\text{change}}{\\text{original}}\\times100\\%"
+      ],
+      "steps": [
+       "Change $=40$",
+       "$\\dfrac{40}{250}\\times100$"
+      ],
+      "result": "$16\\%$",
+      "type": "Increase"
+     },
+     {
+      "question": "A town of $24{,}000$ people falls by $5\\%$. Find the new population.",
+      "use": [
+       "\\text{New value}=\\text{original}\\times\\left(1\\pm\\dfrac{x}{100}\\right)"
+      ],
+      "steps": [
+       "$24000\\times0.95$"
+      ],
+      "result": "$22{,}800$",
+      "type": "Decrease"
+     },
+     {
+      "question": "After a $20\\%$ increase, a salary is ₹$18{,}000$. Find the old salary.",
+      "use": [],
+      "steps": [
+       "$1.2\\times S=18000$"
+      ],
+      "result": "₹$15{,}000$",
+      "type": "Find the original"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-profit-loss-discount": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 10",
+  "title": "Profit, Loss and Discount",
+  "subtitle": "CP, SP, profit and loss percent, marked price and discount",
+  "back": {
+   "href": "/icse/grade-7/ch-10",
+   "label": "Profit, Loss and Discount"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-profit-loss-discount-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-10",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-10/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Profit and loss",
+    "items": [
+     "\\text{Profit}=SP-CP,\\qquad\\text{Loss}=CP-SP",
+     "\\text{Profit}\\%=\\dfrac{\\text{Profit}}{CP}\\times100",
+     "\\text{Loss}\\%=\\dfrac{\\text{Loss}}{CP}\\times100"
+    ]
+   },
+   {
+    "title": "Finding SP or CP",
+    "items": [
+     "SP=CP\\times\\dfrac{100+\\text{Profit}\\%}{100}",
+     "SP=CP\\times\\dfrac{100-\\text{Loss}\\%}{100}",
+     "CP=SP\\times\\dfrac{100}{100\\pm\\text{rate}}"
+    ]
+   },
+   {
+    "title": "Marked price and discount",
+    "items": [
+     "\\text{Discount}=MP-SP",
+     "\\text{Discount}\\%=\\dfrac{\\text{Discount}}{MP}\\times100",
+     "SP=MP\\times\\dfrac{100-\\text{Discount}\\%}{100}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Profit and loss",
+    "level": "board",
+    "ideas": [
+     "Cost price (CP): the price at which you buy. Selling price (SP): the price at which you sell.",
+     "Overheads (transport, repair) add to the CP.",
+     "Profit and loss percent are always on the CP."
+    ],
+    "formulas": [
+     "\\text{Profit}=SP-CP,\\qquad\\text{Loss}=CP-SP",
+     "\\text{Profit}\\%=\\dfrac{\\text{Profit}}{CP}\\times100",
+     "\\text{Loss}\\%=\\dfrac{\\text{Loss}}{CP}\\times100"
+    ],
+    "examples": [
+     {
+      "question": "A fan is bought for ₹$1500$ and sold for ₹$1725$. Find the profit percent.",
+      "use": [
+       "\\text{Profit}\\%=\\dfrac{\\text{Profit}}{CP}\\times100"
+      ],
+      "steps": [
+       "Profit $=225$",
+       "$\\dfrac{225}{1500}\\times100$"
+      ],
+      "result": "$15\\%$",
+      "type": "Profit percent"
+     },
+     {
+      "question": "A cycle is bought for ₹$2800$. ₹$200$ is spent on repairs. It is sold for ₹$2700$. Find the loss percent.",
+      "use": [
+       "\\text{Loss}\\%=\\dfrac{\\text{Loss}}{CP}\\times100"
+      ],
+      "steps": [
+       "CP $=3000$, loss $=300$",
+       "$\\dfrac{300}{3000}\\times100$"
+      ],
+      "result": "$10\\%$",
+      "type": "Overheads"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "percentages",
+      "index": 1
+     }
+    ]
+   },
+   {
+    "title": "Finding SP or CP",
+    "level": "board",
+    "ideas": [
+     "Profit: SP is more than CP. Loss: SP is less than CP.",
+     "Use the multiplier on the CP."
+    ],
+    "formulas": [
+     "SP=CP\\times\\dfrac{100+\\text{Profit}\\%}{100}",
+     "SP=CP\\times\\dfrac{100-\\text{Loss}\\%}{100}",
+     "CP=SP\\times\\dfrac{100}{100\\pm\\text{rate}}"
+    ],
+    "examples": [
+     {
+      "question": "CP $=$ ₹$640$, profit $=12\\dfrac12\\%$. Find SP.",
+      "use": [
+       "SP=CP\\times\\dfrac{100+\\text{Profit}\\%}{100}"
+      ],
+      "steps": [
+       "$640\\times\\dfrac{112.5}{100}$"
+      ],
+      "result": "₹$720$",
+      "type": "SP"
+     },
+     {
+      "question": "A watch is sold for ₹$1530$ at a loss of $15\\%$. Find the CP.",
+      "use": [
+       "CP=SP\\times\\dfrac{100}{100\\pm\\text{rate}}"
+      ],
+      "steps": [
+       "$1530\\times\\dfrac{100}{85}$"
+      ],
+      "result": "₹$1800$",
+      "type": "CP"
+     },
+     {
+      "question": "By selling $12$ pens for ₹$90$, a man loses $10\\%$. How many pens must he sell for ₹$90$ to gain $20\\%$?",
+      "use": [],
+      "steps": [
+       "CP of $12$ pens $=\\dfrac{90\\times100}{90}=100$, so CP of $1$ pen $=\\dfrac{100}{12}$",
+       "SP of $1$ pen at $20\\%$ gain $=\\dfrac{100}{12}\\times1.2=10$",
+       "$90\\div10$"
+      ],
+      "result": "$9$ pens",
+      "type": "Articles"
+     }
+    ]
+   },
+   {
+    "title": "Marked price and discount",
+    "level": "board",
+    "ideas": [
+     "Marked price (MP) is the price on the label.",
+     "Discount is always on the MP.",
+     "SP after discount $=$ MP $-$ discount."
+    ],
+    "formulas": [
+     "\\text{Discount}=MP-SP",
+     "\\text{Discount}\\%=\\dfrac{\\text{Discount}}{MP}\\times100",
+     "SP=MP\\times\\dfrac{100-\\text{Discount}\\%}{100}"
+    ],
+    "examples": [
+     {
+      "question": "MP $=$ ₹$2400$, discount $=15\\%$. Find SP.",
+      "use": [
+       "SP=MP\\times\\dfrac{100-\\text{Discount}\\%}{100}"
+      ],
+      "steps": [
+       "$2400\\times0.85$"
+      ],
+      "result": "₹$2040$",
+      "type": "SP after discount"
+     },
+     {
+      "question": "A shirt marked ₹$800$ is sold for ₹$680$. Find the discount percent.",
+      "use": [
+       "\\text{Discount}\\%=\\dfrac{\\text{Discount}}{MP}\\times100"
+      ],
+      "steps": [
+       "Discount $=120$",
+       "$\\dfrac{120}{800}\\times100$"
+      ],
+      "result": "$15\\%$",
+      "type": "Discount percent"
+     },
+     {
+      "question": "A shopkeeper marks goods $25\\%$ above CP and gives a $10\\%$ discount. Find his profit percent.",
+      "use": [],
+      "steps": [
+       "Take CP $=100$. MP $=125$",
+       "SP $=125\\times0.9=112.5$"
+      ],
+      "result": "Profit $12.5\\%$",
+      "type": "Mark-up and discount"
+     }
+    ],
+    "experiment": {
+     "title": "Shop role play",
+     "steps": [
+      "Make price tags for $5$ items with an MP.",
+      "A friend buys with a ‘$20\\%$ off’ card. Find each SP.",
+      "Tell your friend the CP. Find the profit or loss on each item."
+     ],
+     "result": "The discount is found on the MP, but the profit is found on the CP."
+    }
+   }
+  ]
+ },
+ "icse7-simple-interest": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 11",
+  "title": "Simple Interest",
+  "subtitle": "Interest, amount, and finding P, R or T",
+  "back": {
+   "href": "/icse/grade-7/ch-11",
+   "label": "Simple Interest"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-simple-interest-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-11",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-11/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Simple interest and amount",
+    "items": [
+     "SI=\\dfrac{P\\times R\\times T}{100}",
+     "A=P+SI"
+    ]
+   },
+   {
+    "title": "Finding P, R or T",
+    "items": [
+     "P=\\dfrac{100\\times SI}{R\\times T}",
+     "R=\\dfrac{100\\times SI}{P\\times T}",
+     "T=\\dfrac{100\\times SI}{P\\times R}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Simple interest and amount",
+    "level": "board",
+    "ideas": [
+     "Principal $P$: money borrowed or lent. Rate $R$: interest on ₹$100$ for $1$ year. Time $T$ in years.",
+     "Amount $A$ is the principal plus the interest.",
+     "Change months to years: $9$ months $=\\dfrac9{12}$ year. Change days to years: divide by $365$."
+    ],
+    "formulas": [
+     "SI=\\dfrac{P\\times R\\times T}{100}",
+     "A=P+SI"
+    ],
+    "examples": [
+     {
+      "question": "Find the SI on ₹$4500$ at $8\\%$ per annum for $3$ years.",
+      "use": [
+       "SI=\\dfrac{P\\times R\\times T}{100}"
+      ],
+      "steps": [
+       "$\\dfrac{4500\\times8\\times3}{100}$"
+      ],
+      "result": "₹$1080$",
+      "type": "SI"
+     },
+     {
+      "question": "Find the amount on ₹$6000$ at $9\\%$ per annum for $2$ years $6$ months.",
+      "use": [
+       "SI=\\dfrac{P\\times R\\times T}{100}",
+       "A=P+SI"
+      ],
+      "steps": [
+       "$T=\\dfrac52$",
+       "$SI=\\dfrac{6000\\times9\\times5}{200}=1350$",
+       "$A=6000+1350$"
+      ],
+      "result": "₹$7350$",
+      "type": "Amount"
+     },
+     {
+      "question": "Find the SI on ₹$7300$ at $5\\%$ per annum from $1$ March to $29$ May of the same year.",
+      "use": [],
+      "steps": [
+       "Days: $30+30+29=89$",
+       "$SI=\\dfrac{7300\\times5\\times89}{100\\times365}$"
+      ],
+      "result": "₹$89$",
+      "type": "Days"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "percentages",
+      "index": 1
+     }
+    ]
+   },
+   {
+    "title": "Finding P, R or T",
+    "level": "board",
+    "ideas": [
+     "Change the SI formula around to find the unknown.",
+     "If the amount is given, find $SI=A-P$ first."
+    ],
+    "formulas": [
+     "P=\\dfrac{100\\times SI}{R\\times T}",
+     "R=\\dfrac{100\\times SI}{P\\times T}",
+     "T=\\dfrac{100\\times SI}{P\\times R}"
+    ],
+    "examples": [
+     {
+      "question": "At what rate does ₹$2500$ give ₹$600$ as SI in $4$ years?",
+      "use": [
+       "R=\\dfrac{100\\times SI}{P\\times T}"
+      ],
+      "steps": [
+       "$\\dfrac{100\\times600}{2500\\times4}$"
+      ],
+      "result": "$6\\%$ per annum",
+      "type": "Rate"
+     },
+     {
+      "question": "In how many years does ₹$1600$ amount to ₹$2080$ at $7\\dfrac12\\%$?",
+      "use": [
+       "T=\\dfrac{100\\times SI}{P\\times R}"
+      ],
+      "steps": [
+       "$SI=480$",
+       "$\\dfrac{100\\times480}{1600\\times7.5}$"
+      ],
+      "result": "$4$ years",
+      "type": "Time"
+     },
+     {
+      "question": "What sum gives ₹$945$ as SI at $7\\%$ per annum in $3$ years?",
+      "use": [
+       "P=\\dfrac{100\\times SI}{R\\times T}"
+      ],
+      "steps": [
+       "$\\dfrac{100\\times945}{7\\times3}$"
+      ],
+      "result": "₹$4500$",
+      "type": "Principal"
+     },
+     {
+      "question": "A sum doubles itself in $8$ years at SI. Find the rate.",
+      "use": [],
+      "steps": [
+       "$SI=P$ in $8$ years",
+       "$R=\\dfrac{100\\times P}{P\\times8}$"
+      ],
+      "result": "$12\\dfrac12\\%$",
+      "type": "Doubles"
+     },
+     {
+      "question": "A sum amounts to ₹$3360$ in $2$ years and ₹$3900$ in $5$ years at SI. Find the sum and the rate.",
+      "use": [],
+      "steps": [
+       "SI for $3$ years $=540$, so for $1$ year $=180$",
+       "$P=3360-360=3000$",
+       "$R=\\dfrac{100\\times180}{3000}$"
+      ],
+      "result": "₹$3000$, $R=6\\%$",
+      "type": "Two amounts"
+     }
+    ],
+    "experiment": {
+     "title": "Bank passbook",
+     "steps": [
+      "Look at a bank passbook or a deposit receipt at home.",
+      "Note the principal, the rate and the time.",
+      "Find the interest with the formula and compare with the receipt."
+     ],
+     "result": "The receipt interest matches $\\dfrac{PRT}{100}$ for simple interest deposits."
+    }
+   }
+  ]
+ },
+ "icse7-speed-distance-time": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 12",
+  "title": "Speed, Distance and Time",
+  "subtitle": "Speed, unit conversion, average speed and trains",
+  "back": {
+   "href": "/icse/grade-7/ch-12",
+   "label": "Speed, Distance and Time"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-speed-distance-time-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-12",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-12/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Speed, distance and time",
+    "items": [
+     "\\text{Speed}=\\dfrac{\\text{Distance}}{\\text{Time}}",
+     "\\text{Distance}=\\text{Speed}\\times\\text{Time}",
+     "\\text{Time}=\\dfrac{\\text{Distance}}{\\text{Speed}}",
+     "1\\text{ km/h}=\\dfrac5{18}\\text{ m/s}"
+    ]
+   },
+   {
+    "title": "Average speed",
+    "items": [
+     "\\text{Average speed}=\\dfrac{\\text{Total distance}}{\\text{Total time}}",
+     "\\text{Same distance at } u \\text{ and } v:\\ \\dfrac{2uv}{u+v}"
+    ]
+   },
+   {
+    "title": "Trains and relative speed",
+    "items": [
+     "\\text{Distance}=\\text{length of train}+\\text{length of object}",
+     "\\text{Relative speed}=u-v\\ \\text{(same)},\\quad u+v\\ \\text{(opposite)}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Speed, distance and time",
+    "level": "board",
+    "ideas": [
+     "Speed is the distance covered in one unit of time.",
+     "Use the same units: km with hours, m with seconds.",
+     "To change km/h to m/s, multiply by $\\dfrac5{18}$. To change m/s to km/h, multiply by $\\dfrac{18}5$."
+    ],
+    "formulas": [
+     "\\text{Speed}=\\dfrac{\\text{Distance}}{\\text{Time}}",
+     "\\text{Distance}=\\text{Speed}\\times\\text{Time}",
+     "\\text{Time}=\\dfrac{\\text{Distance}}{\\text{Speed}}",
+     "1\\text{ km/h}=\\dfrac5{18}\\text{ m/s}"
+    ],
+    "examples": [
+     {
+      "question": "A bus covers $240$ km in $4$ h $48$ min. Find its speed.",
+      "use": [
+       "\\text{Speed}=\\dfrac{\\text{Distance}}{\\text{Time}}"
+      ],
+      "steps": [
+       "$T=4\\dfrac{48}{60}=\\dfrac{24}5$ h",
+       "$240\\div\\dfrac{24}{5}$"
+      ],
+      "result": "$50$ km/h",
+      "type": "Speed"
+     },
+     {
+      "question": "Change $72$ km/h to m/s.",
+      "use": [
+       "1\\text{ km/h}=\\dfrac5{18}\\text{ m/s}"
+      ],
+      "steps": [
+       "$72\\times\\dfrac5{18}$"
+      ],
+      "result": "$20$ m/s",
+      "type": "Conversion"
+     },
+     {
+      "question": "A boy walks at $5$ km/h. How long does he take for $1.5$ km?",
+      "use": [
+       "\\text{Time}=\\dfrac{\\text{Distance}}{\\text{Speed}}"
+      ],
+      "steps": [
+       "$\\dfrac{1.5}{5}=0.3$ h"
+      ],
+      "result": "$18$ min",
+      "type": "Time"
+     }
+    ],
+    "experiment": {
+     "title": "Your walking speed",
+     "steps": [
+      "Mark $50$ m in the school ground.",
+      "Walk the distance. A friend times you with a stopwatch.",
+      "Find your speed in m/s and in km/h."
+     ],
+     "result": "For example, $50$ m in $40$ s is $1.25$ m/s $=4.5$ km/h."
+    }
+   },
+   {
+    "title": "Average speed",
+    "level": "board",
+    "ideas": [
+     "Average speed is total distance divided by total time.",
+     "It is not the average of the two speeds, unless the times are equal."
+    ],
+    "formulas": [
+     "\\text{Average speed}=\\dfrac{\\text{Total distance}}{\\text{Total time}}",
+     "\\text{Same distance at } u \\text{ and } v:\\ \\dfrac{2uv}{u+v}"
+    ],
+    "examples": [
+     {
+      "question": "A car goes $120$ km at $40$ km/h and the next $120$ km at $60$ km/h. Find the average speed.",
+      "use": [
+       "\\text{Average speed}=\\dfrac{\\text{Total distance}}{\\text{Total time}}"
+      ],
+      "steps": [
+       "Times: $3$ h and $2$ h",
+       "$\\dfrac{240}{5}$"
+      ],
+      "result": "$48$ km/h",
+      "type": "Average speed"
+     },
+     {
+      "question": "A man cycles for $2$ h at $15$ km/h and walks for $1$ h at $6$ km/h. Find his average speed.",
+      "use": [],
+      "steps": [
+       "Distance $=30+6=36$ km",
+       "$\\dfrac{36}{3}$"
+      ],
+      "result": "$12$ km/h",
+      "type": "Average speed"
+     }
+    ]
+   },
+   {
+    "title": "Trains and relative speed",
+    "level": "board",
+    "ideas": [
+     "A train passing a pole covers its own length.",
+     "A train passing a platform or bridge covers its length plus the platform length.",
+     "Same direction: subtract the speeds. Opposite directions: add the speeds."
+    ],
+    "formulas": [
+     "\\text{Distance}=\\text{length of train}+\\text{length of object}",
+     "\\text{Relative speed}=u-v\\ \\text{(same)},\\quad u+v\\ \\text{(opposite)}"
+    ],
+    "examples": [
+     {
+      "question": "A train $180$ m long passes a pole in $12$ s. Find its speed in km/h.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{180}{12}=15$ m/s",
+       "$15\\times\\dfrac{18}5$"
+      ],
+      "result": "$54$ km/h",
+      "type": "Pole"
+     },
+     {
+      "question": "A train $240$ m long runs at $54$ km/h. How long does it take to cross a bridge $360$ m long?",
+      "use": [
+       "\\text{Distance}=\\text{length of train}+\\text{length of object}"
+      ],
+      "steps": [
+       "Speed $=15$ m/s, distance $=600$ m",
+       "$\\dfrac{600}{15}$"
+      ],
+      "result": "$40$ s",
+      "type": "Bridge"
+     },
+     {
+      "question": "Two trains $150$ m and $100$ m long run in opposite directions at $50$ km/h and $40$ km/h. How long do they take to cross each other?",
+      "use": [
+       "\\text{Relative speed}=u-v\\ \\text{(same)},\\quad u+v\\ \\text{(opposite)}"
+      ],
+      "steps": [
+       "Relative speed $=90$ km/h $=25$ m/s",
+       "$\\dfrac{250}{25}$"
+      ],
+      "result": "$10$ s",
+      "type": "Opposite directions"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-algebra": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 13",
+  "title": "Fundamental Concepts",
+  "subtitle": "Terms, like terms, operations on expressions and substitution",
+  "back": {
+   "href": "/icse/grade-7/ch-13",
+   "label": "Fundamental Concepts"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-algebra-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-13",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-13/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Terms and expressions",
+    "items": [
+     "\\text{Like terms: same variables with the same powers}"
+    ]
+   },
+   {
+    "title": "Adding and subtracting expressions",
+    "items": [
+     "ax+bx=(a+b)x",
+     "-(a-b+c)=-a+b-c"
+    ]
+   },
+   {
+    "title": "Multiplying and dividing; substitution",
+    "items": [
+     "x^m\\times x^n=x^{m+n}",
+     "(a+b)(c+d)=ac+ad+bc+bd",
+     "\\dfrac{a+b}{m}=\\dfrac am+\\dfrac bm"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Terms and expressions",
+    "level": "board",
+    "ideas": [
+     "A variable is a letter that stands for a number. A constant has a fixed value.",
+     "A term is a number, a variable, or their product. Terms are joined by $+$ or $-$.",
+     "The number part of a term is its coefficient: in $-7x^2y$ the coefficient is $-7$.",
+     "Monomial: one term. Binomial: two terms. Trinomial: three terms. Polynomial: one or more terms.",
+     "The degree of a polynomial is the highest power of the variable."
+    ],
+    "formulas": [
+     "\\text{Like terms: same variables with the same powers}"
+    ],
+    "examples": [
+     {
+      "question": "In $5x^2-3xy+7$, name the terms and the coefficient of $xy$.",
+      "use": [],
+      "steps": [
+       "Terms: $5x^2,\\ -3xy,\\ 7$"
+      ],
+      "result": "Trinomial, coefficient of $xy$ is $-3$",
+      "type": "Terms"
+     },
+     {
+      "question": "Pick the like terms: $3ab,\\ -5a^2b,\\ 7ba,\\ 2ab^2,\\ -ab$.",
+      "use": [
+       "\\text{Like terms: same variables with the same powers}"
+      ],
+      "steps": [
+       "$ab$ and $ba$ are the same."
+      ],
+      "result": "$3ab,\\ 7ba,\\ -ab$",
+      "type": "Like terms"
+     },
+     {
+      "question": "Write the degree of $4x^3-2x^5+x-9$.",
+      "use": [],
+      "steps": [
+       "Highest power is $5$."
+      ],
+      "result": "$5$",
+      "type": "Degree"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "algebra",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Adding and subtracting expressions",
+    "level": "board",
+    "ideas": [
+     "Add or subtract only like terms. Add their coefficients.",
+     "To subtract, change the sign of every term being subtracted, then add.",
+     "Remove brackets: a minus sign in front changes every sign inside."
+    ],
+    "formulas": [
+     "ax+bx=(a+b)x",
+     "-(a-b+c)=-a+b-c"
+    ],
+    "examples": [
+     {
+      "question": "Add $3x^2-5x+7$ and $-x^2+8x-10$.",
+      "use": [
+       "ax+bx=(a+b)x"
+      ],
+      "steps": [
+       "$(3-1)x^2+(-5+8)x+(7-10)$"
+      ],
+      "result": "$2x^2+3x-3$",
+      "type": "Add"
+     },
+     {
+      "question": "Subtract $4a-7b+3c$ from $6a-2b-5c$.",
+      "use": [
+       "-(a-b+c)=-a+b-c"
+      ],
+      "steps": [
+       "$6a-2b-5c-4a+7b-3c$"
+      ],
+      "result": "$2a+5b-8c$",
+      "type": "Subtract"
+     },
+     {
+      "question": "Simplify $5x-[3y-\\{2x-(y-x)\\}]$.",
+      "use": [],
+      "steps": [
+       "$(y-x)$: $2x-y+x=3x-y$",
+       "$3y-(3x-y)=4y-3x$",
+       "$5x-4y+3x$"
+      ],
+      "result": "$8x-4y$",
+      "type": "Brackets"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "identities",
+      "index": 1
+     }
+    ]
+   },
+   {
+    "title": "Multiplying and dividing; substitution",
+    "level": "board",
+    "ideas": [
+     "Multiply coefficients and add powers of the same variable.",
+     "Multiply each term of one bracket by each term of the other.",
+     "To divide by a monomial, divide each term.",
+     "Substitution: put the given values in place of the variables, then use BODMAS."
+    ],
+    "formulas": [
+     "x^m\\times x^n=x^{m+n}",
+     "(a+b)(c+d)=ac+ad+bc+bd",
+     "\\dfrac{a+b}{m}=\\dfrac am+\\dfrac bm"
+    ],
+    "examples": [
+     {
+      "question": "Find $(-3x^2y)\\times(4xy^3)$.",
+      "use": [
+       "x^m\\times x^n=x^{m+n}"
+      ],
+      "steps": [
+       "$(-3\\times4)\\,x^{2+1}y^{1+3}$"
+      ],
+      "result": "$-12x^3y^4$",
+      "type": "Monomials"
+     },
+     {
+      "question": "Find $(2x+3)(x-5)$.",
+      "use": [
+       "(a+b)(c+d)=ac+ad+bc+bd"
+      ],
+      "steps": [
+       "$2x^2-10x+3x-15$"
+      ],
+      "result": "$2x^2-7x-15$",
+      "type": "Binomials"
+     },
+     {
+      "question": "Divide $12x^3-8x^2+4x$ by $4x$.",
+      "use": [
+       "\\dfrac{a+b}{m}=\\dfrac am+\\dfrac bm"
+      ],
+      "steps": [
+       "$\\dfrac{12x^3}{4x}-\\dfrac{8x^2}{4x}+\\dfrac{4x}{4x}$"
+      ],
+      "result": "$3x^2-2x+1$",
+      "type": "Divide"
+     },
+     {
+      "question": "Find $a^2-2ab+3b^2$ when $a=-2$ and $b=3$.",
+      "use": [],
+      "steps": [
+       "$4-2(-2)(3)+3(9)=4+12+27$"
+      ],
+      "result": "$43$",
+      "type": "Substitution"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-linear-equations": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 14",
+  "title": "Simple Linear Equations",
+  "subtitle": "Solving equations and word problems",
+  "back": {
+   "href": "/icse/grade-7/ch-14",
+   "label": "Simple Linear Equations"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-linear-equations-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-14",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-14/mcq",
+    "label": "30 MCQs · Free →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Solving an equation",
+    "items": [
+     "a+x=b\\Rightarrow x=b-a",
+     "ax=b\\Rightarrow x=\\dfrac ba",
+     "\\dfrac xa=b\\Rightarrow x=ab"
+    ]
+   },
+   {
+    "title": "Word problems",
+    "items": [
+     "\\text{consecutive numbers: } x,\\ x+1,\\ x+2",
+     "\\text{consecutive even or odd: } x,\\ x+2,\\ x+4"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Solving an equation",
+    "level": "board",
+    "ideas": [
+     "An equation has an equal sign. A linear equation has the variable only with power $1$.",
+     "Do the same operation on both sides. The balance stays level.",
+     "Transpose: a term moves to the other side with the opposite operation.",
+     "Check the answer by putting it back in the equation."
+    ],
+    "formulas": [
+     "a+x=b\\Rightarrow x=b-a",
+     "ax=b\\Rightarrow x=\\dfrac ba",
+     "\\dfrac xa=b\\Rightarrow x=ab"
+    ],
+    "examples": [
+     {
+      "question": "Solve $3x-7=11$.",
+      "use": [],
+      "steps": [
+       "$3x=18$"
+      ],
+      "result": "$x=6$",
+      "type": "One step each side"
+     },
+     {
+      "question": "Solve $5(x-2)=3x+4$.",
+      "use": [],
+      "steps": [
+       "$5x-10=3x+4$",
+       "$2x=14$"
+      ],
+      "result": "$x=7$",
+      "type": "Brackets"
+     },
+     {
+      "question": "Solve $\\dfrac{x}{3}+\\dfrac{x}{4}=14$.",
+      "use": [],
+      "steps": [
+       "Multiply by $12$: $4x+3x=168$",
+       "$7x=168$"
+      ],
+      "result": "$x=24$",
+      "type": "Fractions"
+     },
+     {
+      "question": "Solve $\\dfrac{2x-1}{3}-\\dfrac{x+2}{4}=1$.",
+      "use": [],
+      "steps": [
+       "Multiply by $12$: $4(2x-1)-3(x+2)=12$",
+       "$8x-4-3x-6=12$",
+       "$5x=22$"
+      ],
+      "result": "$x=\\dfrac{22}5$",
+      "type": "Fractions"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "equations",
+      "index": 0
+     },
+     {
+      "slug": "equations",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Balance with cups",
+     "steps": [
+      "Put $3$ closed cups with the same number of marbles and $2$ loose marbles on the left pan.",
+      "Put $14$ loose marbles on the right pan. The pans balance.",
+      "Take $2$ marbles off each pan, then share the rest in $3$ groups."
+     ],
+     "result": "$3x+2=14$, so $3x=12$ and $x=4$. Each cup has $4$ marbles."
+    }
+   },
+   {
+    "title": "Word problems",
+    "level": "board",
+    "ideas": [
+     "Let the unknown be $x$. Write the equation from the words.",
+     "Solve it and answer the question in words with units."
+    ],
+    "formulas": [
+     "\\text{consecutive numbers: } x,\\ x+1,\\ x+2",
+     "\\text{consecutive even or odd: } x,\\ x+2,\\ x+4"
+    ],
+    "examples": [
+     {
+      "question": "The sum of three consecutive numbers is $72$. Find them.",
+      "use": [
+       "\\text{consecutive numbers: } x,\\ x+1,\\ x+2"
+      ],
+      "steps": [
+       "$3x+3=72$",
+       "$x=23$"
+      ],
+      "result": "$23,\\ 24,\\ 25$",
+      "type": "Consecutive"
+     },
+     {
+      "question": "A father is $3$ times as old as his son. In $12$ years he will be twice as old. Find their ages.",
+      "use": [],
+      "steps": [
+       "Son $x$, father $3x$",
+       "$3x+12=2(x+12)$",
+       "$x=12$"
+      ],
+      "result": "Son $12$ years, father $36$ years",
+      "type": "Ages"
+     },
+     {
+      "question": "The length of a rectangle is $5$ cm more than its breadth. Its perimeter is $50$ cm. Find the sides.",
+      "use": [],
+      "steps": [
+       "$2(x+x+5)=50$",
+       "$4x+10=50$, $x=10$"
+      ],
+      "result": "$15$ cm and $10$ cm",
+      "type": "Geometry"
+     },
+     {
+      "question": "Ravi has ₹$500$ in ₹$10$ and ₹$20$ notes, $35$ notes in all. How many of each?",
+      "use": [],
+      "steps": [
+       "$x$ notes of ₹$10$: $10x+20(35-x)=500$",
+       "$700-10x=500$, $x=20$"
+      ],
+      "result": "$20$ notes of ₹$10$, $15$ notes of ₹$20$",
+      "type": "Coins and notes"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-inequalities": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 15",
+  "title": "Inequalities",
+  "subtitle": "Inequations, replacement set, solution set and the number line",
+  "back": {
+   "href": "/icse/grade-7/ch-15",
+   "label": "Inequalities"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-inequalities-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-15",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-15/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Inequations and sets",
+    "items": [
+     "x<a:\\ x \\text{ is less than } a",
+     "x\\le a:\\ x \\text{ is less than or equal to } a"
+    ]
+   },
+   {
+    "title": "Rules for solving",
+    "items": [
+     "a<b\\Rightarrow a\\pm c<b\\pm c",
+     "a<b,\\ c>0\\Rightarrow ac<bc",
+     "a<b,\\ c<0\\Rightarrow ac>bc"
+    ]
+   },
+   {
+    "title": "Graphing on the number line",
+    "items": [
+     "\\bullet\\ \\text{included},\\qquad\\circ\\ \\text{not included}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Inequations and sets",
+    "level": "board",
+    "ideas": [
+     "An inequation uses $<,\\ >,\\ \\le$ or $\\ge$, for example $x+3<7$.",
+     "The replacement set is the set from which $x$ can take values.",
+     "The solution set is the set of values in the replacement set that make the inequation true.",
+     "$\\mathbb N=\\{1,2,3,\\dots\\}$, $\\mathbb W=\\{0,1,2,\\dots\\}$, $\\mathbb Z=\\{\\dots,-1,0,1,\\dots\\}$."
+    ],
+    "formulas": [
+     "x<a:\\ x \\text{ is less than } a",
+     "x\\le a:\\ x \\text{ is less than or equal to } a"
+    ],
+    "examples": [
+     {
+      "question": "Solve $x+3<7$, $x\\in\\mathbb N$.",
+      "use": [],
+      "steps": [
+       "$x<4$"
+      ],
+      "result": "$\\{1,2,3\\}$",
+      "type": "Natural numbers"
+     },
+     {
+      "question": "Solve $x-2\\ge-1$, $x\\in\\{-3,-2,-1,0,1,2,3\\}$.",
+      "use": [],
+      "steps": [
+       "$x\\ge1$"
+      ],
+      "result": "$\\{1,2,3\\}$",
+      "type": "Given set"
+     }
+    ]
+   },
+   {
+    "title": "Rules for solving",
+    "level": "board",
+    "ideas": [
+     "Add or subtract the same number on both sides: the sign stays.",
+     "Multiply or divide both sides by a positive number: the sign stays.",
+     "Multiply or divide both sides by a negative number: the sign reverses."
+    ],
+    "formulas": [
+     "a<b\\Rightarrow a\\pm c<b\\pm c",
+     "a<b,\\ c>0\\Rightarrow ac<bc",
+     "a<b,\\ c<0\\Rightarrow ac>bc"
+    ],
+    "examples": [
+     {
+      "question": "Solve $3x-5\\le10$, $x\\in\\mathbb W$.",
+      "use": [
+       "a<b,\\ c>0\\Rightarrow ac<bc"
+      ],
+      "steps": [
+       "$3x\\le15$",
+       "$x\\le5$"
+      ],
+      "result": "$\\{0,1,2,3,4,5\\}$",
+      "type": "Whole numbers"
+     },
+     {
+      "question": "Solve $-2x>6$, $x\\in\\mathbb Z$.",
+      "use": [
+       "a<b,\\ c<0\\Rightarrow ac>bc"
+      ],
+      "steps": [
+       "Divide by $-2$ and reverse: $x<-3$"
+      ],
+      "result": "$\\{\\dots,-6,-5,-4\\}$",
+      "type": "Negative divisor"
+     },
+     {
+      "question": "Solve $-3\\le 2x+1<7$, $x\\in\\mathbb Z$.",
+      "use": [],
+      "steps": [
+       "$-4\\le2x<6$",
+       "$-2\\le x<3$"
+      ],
+      "result": "$\\{-2,-1,0,1,2\\}$",
+      "type": "Double inequation"
+     },
+     {
+      "question": "Solve $\\dfrac{x}{2}+1>\\dfrac{x}{3}+2$, $x\\in\\mathbb N$, $x\\le10$.",
+      "use": [],
+      "steps": [
+       "Multiply by $6$: $3x+6>2x+12$",
+       "$x>6$"
+      ],
+      "result": "$\\{7,8,9,10\\}$",
+      "type": "Fractions"
+     }
+    ],
+    "experiment": {
+     "title": "Number line walk",
+     "steps": [
+      "Draw a number line from $-5$ to $5$ on the floor with chalk.",
+      "Stand on each integer and say if $2x+1<5$ is true.",
+      "Mark the true points with a dot."
+     ],
+     "result": "The dots are at $\\dots,-2,-1,0,1$. All integers less than $2$ work."
+    }
+   },
+   {
+    "title": "Graphing on the number line",
+    "level": "board",
+    "ideas": [
+     "For integers, mark the solution set with solid dots.",
+     "For real numbers, a filled dot means the end value is included and an open dot means it is not.",
+     "Draw a thick line between the end points for real numbers."
+    ],
+    "formulas": [
+     "\\bullet\\ \\text{included},\\qquad\\circ\\ \\text{not included}"
+    ],
+    "examples": [
+     {
+      "question": "Show $x\\in\\mathbb Z$, $-1<x\\le3$ on a number line.",
+      "use": [],
+      "steps": [
+       "Solution set $\\{0,1,2,3\\}$"
+      ],
+      "result": "Solid dots at $0,1,2,3$",
+      "type": "Integers"
+     },
+     {
+      "question": "Show $x\\in\\mathbb R$, $-2\\le x<1$.",
+      "use": [
+       "\\bullet\\ \\text{included},\\qquad\\circ\\ \\text{not included}"
+      ],
+      "steps": [
+       "Filled dot at $-2$, open dot at $1$, thick line between"
+      ],
+      "result": "Line segment from $-2$ (included) to $1$ (excluded)",
+      "type": "Real numbers"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-lines-angles": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 16",
+  "title": "Lines and Angles",
+  "subtitle": "Pairs of angles, transversals and parallel lines",
+  "back": {
+   "href": "/icse/grade-7/ch-16",
+   "label": "Lines and Angles"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-lines-angles-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-16",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-16/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Pairs of angles",
+    "items": [
+     "\\text{complement of } x=90^\\circ-x",
+     "\\text{supplement of } x=180^\\circ-x",
+     "\\text{linear pair: } a+b=180^\\circ",
+     "\\text{vertically opposite angles are equal}"
+    ]
+   },
+   {
+    "title": "Parallel lines and a transversal",
+    "items": [
+     "\\text{corresponding: } \\angle1=\\angle5",
+     "\\text{alternate: } \\angle3=\\angle6",
+     "\\text{co-interior: } \\angle3+\\angle5=180^\\circ"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Pairs of angles",
+    "level": "board",
+    "ideas": [
+     "Complementary angles add up to $90^\\circ$. Supplementary angles add up to $180^\\circ$.",
+     "Adjacent angles have a common vertex and a common arm, and no common inside points.",
+     "A linear pair is two adjacent angles on a straight line. They add up to $180^\\circ$.",
+     "Vertically opposite angles are equal.",
+     "Angles at a point add up to $360^\\circ$."
+    ],
+    "formulas": [
+     "\\text{complement of } x=90^\\circ-x",
+     "\\text{supplement of } x=180^\\circ-x",
+     "\\text{linear pair: } a+b=180^\\circ",
+     "\\text{vertically opposite angles are equal}"
+    ],
+    "examples": [
+     {
+      "question": "Find the complement of $37^\\circ$ and the supplement of $112^\\circ$.",
+      "use": [
+       "\\text{complement of } x=90^\\circ-x",
+       "\\text{supplement of } x=180^\\circ-x"
+      ],
+      "steps": [
+       "$90-37=53$ and $180-112=68$"
+      ],
+      "result": "$53^\\circ$ and $68^\\circ$",
+      "type": "Complement and supplement"
+     },
+     {
+      "question": "Two supplementary angles are in the ratio $4:5$. Find them.",
+      "use": [],
+      "steps": [
+       "$4x+5x=180$, $x=20$"
+      ],
+      "result": "$80^\\circ$ and $100^\\circ$",
+      "type": "Ratio"
+     },
+     {
+      "question": "An angle is $24^\\circ$ more than its complement. Find it.",
+      "use": [],
+      "steps": [
+       "$x=(90-x)+24$",
+       "$2x=114$"
+      ],
+      "result": "$57^\\circ$",
+      "type": "Equation"
+     },
+     {
+      "question": "Two lines cross. One angle is $3x+10^\\circ$ and the vertically opposite angle is $5x-30^\\circ$. Find $x$ and all four angles.",
+      "use": [
+       "\\text{vertically opposite angles are equal}"
+      ],
+      "steps": [
+       "$3x+10=5x-30$, $x=20$",
+       "Angle $=70^\\circ$, its linear pair $=110^\\circ$"
+      ],
+      "result": "$70^\\circ,110^\\circ,70^\\circ,110^\\circ$",
+      "type": "Vertically opposite"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "angles",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Parallel lines and a transversal",
+    "level": "board",
+    "ideas": [
+     "A transversal cuts two or more lines at different points.",
+     "If the lines are parallel:",
+     "corresponding angles are equal,",
+     "alternate interior angles are equal,",
+     "co-interior angles (same side) add up to $180^\\circ$.",
+     "If any one of these is true, the lines are parallel."
+    ],
+    "formulas": [
+     "\\text{corresponding: } \\angle1=\\angle5",
+     "\\text{alternate: } \\angle3=\\angle6",
+     "\\text{co-interior: } \\angle3+\\angle5=180^\\circ"
+    ],
+    "examples": [
+     {
+      "question": "$AB\\parallel CD$ and a transversal makes $\\angle1=65^\\circ$ at $AB$. Find the corresponding angle and the co-interior angle at $CD$.",
+      "use": [
+       "\\text{corresponding: } \\angle1=\\angle5",
+       "\\text{co-interior: } \\angle3+\\angle5=180^\\circ"
+      ],
+      "steps": [
+       "Corresponding angle $=65^\\circ$",
+       "Co-interior angle $=180-65$"
+      ],
+      "result": "$65^\\circ$ and $115^\\circ$",
+      "type": "Find angles"
+     },
+     {
+      "question": "Co-interior angles are $(2x+15)^\\circ$ and $(3x-10)^\\circ$. Find $x$.",
+      "use": [],
+      "steps": [
+       "$5x+5=180$"
+      ],
+      "result": "$x=35$",
+      "type": "Equation"
+     },
+     {
+      "question": "Two lines are cut by a transversal. The alternate angles are $72^\\circ$ and $72^\\circ$. Are the lines parallel?",
+      "use": [],
+      "steps": [
+       "Alternate angles are equal."
+      ],
+      "result": "Yes",
+      "type": "Test for parallel"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "angles",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Folding parallel lines",
+     "steps": [
+      "Fold a sheet of paper once. Fold it again parallel to the first fold.",
+      "Draw a slanting line across both folds.",
+      "Measure the eight angles with a protractor."
+     ],
+     "result": "Four angles are equal and the other four are equal. Each acute angle and obtuse angle add up to $180^\\circ$."
+    }
+   }
+  ]
+ },
+ "icse7-triangles": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 17",
+  "title": "Triangles",
+  "subtitle": "Kinds of triangles, angle sum, exterior angle and inequalities",
+  "back": {
+   "href": "/icse/grade-7/ch-17",
+   "label": "Triangles"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-triangles-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-17",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-17/mcq",
+    "label": "30 MCQs · Free →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Kinds of triangles",
+    "items": [
+     "AB=AC\\Rightarrow\\angle B=\\angle C"
+    ]
+   },
+   {
+    "title": "Angle sum and exterior angle",
+    "items": [
+     "\\angle A+\\angle B+\\angle C=180^\\circ",
+     "\\text{exterior angle}=\\text{sum of interior opposite angles}"
+    ]
+   },
+   {
+    "title": "Sides and angles",
+    "items": [
+     "a+b>c,\\quad b+c>a,\\quad c+a>b",
+     "|a-b|<c<a+b"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Kinds of triangles",
+    "level": "board",
+    "ideas": [
+     "By sides: scalene (no equal sides), isosceles (two equal sides), equilateral (three equal sides).",
+     "By angles: acute-angled, right-angled, obtuse-angled.",
+     "In an isosceles triangle, the angles opposite the equal sides are equal.",
+     "Each angle of an equilateral triangle is $60^\\circ$."
+    ],
+    "formulas": [
+     "AB=AC\\Rightarrow\\angle B=\\angle C"
+    ],
+    "examples": [
+     {
+      "question": "In $\\triangle ABC$, $AB=AC$ and $\\angle A=40^\\circ$. Find $\\angle B$.",
+      "use": [
+       "AB=AC\\Rightarrow\\angle B=\\angle C"
+      ],
+      "steps": [
+       "$\\angle B=\\angle C=\\dfrac{180-40}{2}$"
+      ],
+      "result": "$70^\\circ$",
+      "type": "Isosceles"
+     },
+     {
+      "question": "Name the triangle with angles $35^\\circ$, $55^\\circ$, $90^\\circ$.",
+      "use": [],
+      "steps": [
+       "One angle is $90^\\circ$. All angles are different."
+      ],
+      "result": "Right-angled scalene triangle",
+      "type": "Classify"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "shapes",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Angle sum and exterior angle",
+    "level": "board",
+    "ideas": [
+     "The three angles of a triangle add up to $180^\\circ$.",
+     "An exterior angle equals the sum of the two interior opposite angles.",
+     "An exterior angle is greater than each interior opposite angle."
+    ],
+    "formulas": [
+     "\\angle A+\\angle B+\\angle C=180^\\circ",
+     "\\text{exterior angle}=\\text{sum of interior opposite angles}"
+    ],
+    "examples": [
+     {
+      "question": "The angles of a triangle are in the ratio $2:3:4$. Find them.",
+      "use": [
+       "\\angle A+\\angle B+\\angle C=180^\\circ"
+      ],
+      "steps": [
+       "$9x=180$, $x=20$"
+      ],
+      "result": "$40^\\circ,60^\\circ,80^\\circ$",
+      "type": "Ratio"
+     },
+     {
+      "question": "An exterior angle of a triangle is $110^\\circ$. One interior opposite angle is $45^\\circ$. Find the other two angles.",
+      "use": [
+       "\\text{exterior angle}=\\text{sum of interior opposite angles}"
+      ],
+      "steps": [
+       "Other opposite angle $=110-45=65^\\circ$",
+       "Third angle $=180-110=70^\\circ$"
+      ],
+      "result": "$65^\\circ$ and $70^\\circ$",
+      "type": "Exterior angle"
+     },
+     {
+      "question": "In $\\triangle ABC$, $\\angle A=x$, $\\angle B=2x$ and $\\angle C=x+20^\\circ$. Find each angle.",
+      "use": [],
+      "steps": [
+       "$4x+20=180$, $x=40$"
+      ],
+      "result": "$40^\\circ,80^\\circ,60^\\circ$",
+      "type": "Equation"
+     }
+    ],
+    "experiment": {
+     "title": "Tear the corners",
+     "steps": [
+      "Cut a triangle from paper. Mark its corners $1,2,3$.",
+      "Tear off the three corners.",
+      "Place them side by side at one point on a straight line."
+     ],
+     "result": "The three corners make a straight angle: $\\angle1+\\angle2+\\angle3=180^\\circ$."
+    }
+   },
+   {
+    "title": "Sides and angles",
+    "level": "board",
+    "ideas": [
+     "The sum of any two sides is greater than the third side.",
+     "The difference of any two sides is less than the third side.",
+     "The greatest angle is opposite the greatest side. The smallest angle is opposite the smallest side."
+    ],
+    "formulas": [
+     "a+b>c,\\quad b+c>a,\\quad c+a>b",
+     "|a-b|<c<a+b"
+    ],
+    "examples": [
+     {
+      "question": "Can $4$ cm, $7$ cm and $12$ cm be the sides of a triangle?",
+      "use": [
+       "a+b>c,\\quad b+c>a,\\quad c+a>b"
+      ],
+      "steps": [
+       "$4+7=11<12$"
+      ],
+      "result": "No",
+      "type": "Triangle test"
+     },
+     {
+      "question": "Two sides of a triangle are $5$ cm and $9$ cm. Find the range of the third side.",
+      "use": [
+       "|a-b|<c<a+b"
+      ],
+      "steps": [
+       "$9-5<c<9+5$"
+      ],
+      "result": "$4<c<14$ cm",
+      "type": "Range"
+     },
+     {
+      "question": "In $\\triangle PQR$, $PQ=6$, $QR=8$, $PR=5$ cm. Name the greatest and the smallest angle.",
+      "use": [],
+      "steps": [
+       "Greatest side $QR$ is opposite $\\angle P$. Smallest side $PR$ is opposite $\\angle Q$."
+      ],
+      "result": "Greatest $\\angle P$, smallest $\\angle Q$",
+      "type": "Order of angles"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-pythagoras": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 18",
+  "title": "Pythagoras Theorem",
+  "subtitle": "The theorem, its converse and applications",
+  "back": {
+   "href": "/icse/grade-7/ch-18",
+   "label": "Pythagoras Theorem"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-pythagoras-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-18",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-18/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "The theorem",
+    "items": [
+     "\\text{hypotenuse}^2=\\text{base}^2+\\text{height}^2",
+     "AC^2=AB^2+BC^2\\ \\ (\\angle B=90^\\circ)"
+    ]
+   },
+   {
+    "title": "The converse and triplets",
+    "items": [
+     "c^2=a^2+b^2\\Rightarrow\\angle C=90^\\circ",
+     "(2m,\\ m^2-1,\\ m^2+1)\\text{ is a triplet}"
+    ]
+   },
+   {
+    "title": "Applications",
+    "items": [
+     "\\text{side}=\\sqrt{\\text{hyp}^2-\\text{other}^2}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The theorem",
+    "level": "board",
+    "ideas": [
+     "In a right-angled triangle, the side opposite the right angle is the hypotenuse. It is the longest side.",
+     "The square on the hypotenuse equals the sum of the squares on the other two sides."
+    ],
+    "formulas": [
+     "\\text{hypotenuse}^2=\\text{base}^2+\\text{height}^2",
+     "AC^2=AB^2+BC^2\\ \\ (\\angle B=90^\\circ)"
+    ],
+    "examples": [
+     {
+      "question": "The legs of a right triangle are $9$ cm and $12$ cm. Find the hypotenuse.",
+      "use": [
+       "\\text{hypotenuse}^2=\\text{base}^2+\\text{height}^2"
+      ],
+      "steps": [
+       "$h^2=81+144=225$"
+      ],
+      "result": "$15$ cm",
+      "type": "Find hypotenuse"
+     },
+     {
+      "question": "The hypotenuse is $26$ cm and one side is $10$ cm. Find the other side.",
+      "use": [],
+      "steps": [
+       "$x^2=676-100=576$"
+      ],
+      "result": "$24$ cm",
+      "type": "Find a side"
+     },
+     {
+      "question": "Find the diagonal of a rectangle $15$ cm by $8$ cm.",
+      "use": [],
+      "steps": [
+       "$d^2=225+64=289$"
+      ],
+      "result": "$17$ cm",
+      "type": "Diagonal"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "shapes",
+      "index": 0
+     }
+    ],
+    "experiment": {
+     "title": "Squares on the sides",
+     "steps": [
+      "Draw a right triangle with sides $3$ cm and $4$ cm on squared paper.",
+      "Draw a square on each side and count the unit squares.",
+      "Compare the big square with the two small squares."
+     ],
+     "result": "$9+16=25$, so the square on the hypotenuse equals the sum of the other two."
+    }
+   },
+   {
+    "title": "The converse and triplets",
+    "level": "board",
+    "ideas": [
+     "If $c^2=a^2+b^2$ for the longest side $c$, the triangle is right-angled.",
+     "A Pythagorean triplet is three natural numbers with $a^2+b^2=c^2$.",
+     "Multiples of a triplet are also triplets."
+    ],
+    "formulas": [
+     "c^2=a^2+b^2\\Rightarrow\\angle C=90^\\circ",
+     "(2m,\\ m^2-1,\\ m^2+1)\\text{ is a triplet}"
+    ],
+    "examples": [
+     {
+      "question": "Is a triangle with sides $7$, $24$, $25$ right-angled?",
+      "use": [
+       "c^2=a^2+b^2\\Rightarrow\\angle C=90^\\circ"
+      ],
+      "steps": [
+       "$49+576=625=25^2$"
+      ],
+      "result": "Yes",
+      "type": "Converse"
+     },
+     {
+      "question": "Is a triangle with sides $6$, $9$, $11$ right-angled?",
+      "use": [],
+      "steps": [
+       "$36+81=117\\ne121$"
+      ],
+      "result": "No",
+      "type": "Converse"
+     },
+     {
+      "question": "Write a triplet with $m=4$.",
+      "use": [
+       "(2m,\\ m^2-1,\\ m^2+1)\\text{ is a triplet}"
+      ],
+      "steps": [
+       "$8,\\ 15,\\ 17$"
+      ],
+      "result": "$(8,15,17)$",
+      "type": "Triplets"
+     }
+    ]
+   },
+   {
+    "title": "Applications",
+    "level": "board",
+    "ideas": [
+     "Draw a figure. Find the right angle. Then use the theorem.",
+     "A ladder against a wall: the ladder is the hypotenuse."
+    ],
+    "formulas": [
+     "\\text{side}=\\sqrt{\\text{hyp}^2-\\text{other}^2}"
+    ],
+    "examples": [
+     {
+      "question": "A $13$ m ladder reaches a window $12$ m high. How far is its foot from the wall?",
+      "use": [
+       "\\text{side}=\\sqrt{\\text{hyp}^2-\\text{other}^2}"
+      ],
+      "steps": [
+       "$\\sqrt{169-144}=\\sqrt{25}$"
+      ],
+      "result": "$5$ m",
+      "type": "Ladder"
+     },
+     {
+      "question": "A man goes $16$ km east and then $12$ km north. How far is he from the start?",
+      "use": [],
+      "steps": [
+       "$\\sqrt{256+144}=\\sqrt{400}$"
+      ],
+      "result": "$20$ km",
+      "type": "Directions"
+     },
+     {
+      "question": "The diagonals of a rhombus are $16$ cm and $30$ cm. Find a side.",
+      "use": [],
+      "steps": [
+       "Diagonals bisect at right angles: halves $8$ and $15$",
+       "$\\sqrt{64+225}=\\sqrt{289}$"
+      ],
+      "result": "$17$ cm",
+      "type": "Rhombus"
+     },
+     {
+      "question": "Two poles $11$ m and $6$ m high stand $12$ m apart. Find the distance between their tops.",
+      "use": [],
+      "steps": [
+       "Height difference $=5$ m",
+       "$\\sqrt{144+25}=\\sqrt{169}$"
+      ],
+      "result": "$13$ m",
+      "type": "Poles"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-symmetry": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 19",
+  "title": "Symmetry",
+  "subtitle": "Lines of symmetry, rotational symmetry and order",
+  "back": {
+   "href": "/icse/grade-7/ch-19",
+   "label": "Symmetry"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-symmetry-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-19",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-19/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Line symmetry",
+    "items": [
+     "\\text{regular } n\\text{-gon: } n \\text{ lines of symmetry}"
+    ]
+   },
+   {
+    "title": "Rotational symmetry",
+    "items": [
+     "\\text{angle}=\\dfrac{360^\\circ}{\\text{order}}",
+     "\\text{regular } n\\text{-gon: order } n"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Line symmetry",
+    "level": "board",
+    "ideas": [
+     "A figure has line symmetry if one half folds exactly onto the other half.",
+     "The fold line is the line (axis) of symmetry.",
+     "A regular polygon with $n$ sides has $n$ lines of symmetry.",
+     "A circle has infinitely many lines of symmetry."
+    ],
+    "formulas": [
+     "\\text{regular } n\\text{-gon: } n \\text{ lines of symmetry}"
+    ],
+    "examples": [
+     {
+      "question": "How many lines of symmetry has a rectangle (not a square)?",
+      "use": [],
+      "steps": [
+       "One through the middles of the long sides, one through the middles of the short sides. The diagonals do not work."
+      ],
+      "result": "$2$",
+      "type": "Rectangle"
+     },
+     {
+      "question": "How many lines of symmetry has a regular hexagon?",
+      "use": [
+       "\\text{regular } n\\text{-gon: } n \\text{ lines of symmetry}"
+      ],
+      "steps": [
+       "$n=6$"
+      ],
+      "result": "$6$",
+      "type": "Regular polygon"
+     },
+     {
+      "question": "Which capital letters among A, B, H, N, S, X have a vertical line of symmetry?",
+      "use": [],
+      "steps": [
+       "A, H, X fold left onto right. B folds top onto bottom only. N and S have none."
+      ],
+      "result": "A, H, X",
+      "type": "Letters"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "symmetry",
+      "index": 0
+     }
+    ],
+    "experiment": {
+     "title": "Ink blot",
+     "steps": [
+      "Fold a sheet in half and open it.",
+      "Drop some ink or paint on one side near the fold.",
+      "Fold again, press and open."
+     ],
+     "result": "The pattern is the same on both sides. The fold is the line of symmetry."
+    }
+   },
+   {
+    "title": "Rotational symmetry",
+    "level": "board",
+    "ideas": [
+     "A figure has rotational symmetry if it looks the same after a turn of less than $360^\\circ$ about its centre.",
+     "The order is the number of times it looks the same in one full turn.",
+     "Angle of rotation $=\\dfrac{360^\\circ}{\\text{order}}$.",
+     "Every figure looks the same after $360^\\circ$. If that is the only time, the order is $1$ (no rotational symmetry)."
+    ],
+    "formulas": [
+     "\\text{angle}=\\dfrac{360^\\circ}{\\text{order}}",
+     "\\text{regular } n\\text{-gon: order } n"
+    ],
+    "examples": [
+     {
+      "question": "Find the order and the angle of rotational symmetry of a square.",
+      "use": [
+       "\\text{angle}=\\dfrac{360^\\circ}{\\text{order}}"
+      ],
+      "steps": [
+       "Same after $90^\\circ,180^\\circ,270^\\circ,360^\\circ$"
+      ],
+      "result": "Order $4$, angle $90^\\circ$",
+      "type": "Square"
+     },
+     {
+      "question": "Find the order of rotational symmetry of the letter S.",
+      "use": [],
+      "steps": [
+       "Same after $180^\\circ$ and $360^\\circ$"
+      ],
+      "result": "Order $2$",
+      "type": "Letter"
+     },
+     {
+      "question": "Does an isosceles triangle (not equilateral) have rotational symmetry?",
+      "use": [],
+      "steps": [
+       "It looks the same only after $360^\\circ$."
+      ],
+      "result": "No (order $1$), but it has $1$ line of symmetry",
+      "type": "Both kinds"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "symmetry",
+      "index": 1
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-solids": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 20",
+  "title": "Recognition of Solids",
+  "subtitle": "Faces, edges and vertices, Euler's formula and nets",
+  "back": {
+   "href": "/icse/grade-7/ch-20",
+   "label": "Recognition of Solids"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-solids-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-20",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-20/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Solids and their parts",
+    "items": [
+     "\\text{Prism with } n\\text{-gon base: } F=n+2,\\ V=2n,\\ E=3n",
+     "\\text{Pyramid with } n\\text{-gon base: } F=n+1,\\ V=n+1,\\ E=2n"
+    ]
+   },
+   {
+    "title": "Euler's formula and nets",
+    "items": [
+     "F+V-E=2"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Solids and their parts",
+    "level": "board",
+    "ideas": [
+     "A solid has length, breadth and height.",
+     "A face is a flat surface. An edge is where two faces meet. A vertex is a corner.",
+     "A prism has two equal and parallel ends and rectangular side faces.",
+     "A pyramid has one base and triangular side faces that meet at a point.",
+     "A cylinder, cone and sphere have curved surfaces."
+    ],
+    "formulas": [
+     "\\text{Prism with } n\\text{-gon base: } F=n+2,\\ V=2n,\\ E=3n",
+     "\\text{Pyramid with } n\\text{-gon base: } F=n+1,\\ V=n+1,\\ E=2n"
+    ],
+    "examples": [
+     {
+      "question": "Find $F$, $V$, $E$ for a cuboid.",
+      "use": [
+       "\\text{Prism with } n\\text{-gon base: } F=n+2,\\ V=2n,\\ E=3n"
+      ],
+      "steps": [
+       "Base is a rectangle, $n=4$"
+      ],
+      "result": "$F=6,\\ V=8,\\ E=12$",
+      "type": "Cuboid"
+     },
+     {
+      "question": "Find $F$, $V$, $E$ for a pentagonal pyramid.",
+      "use": [
+       "\\text{Pyramid with } n\\text{-gon base: } F=n+1,\\ V=n+1,\\ E=2n"
+      ],
+      "steps": [
+       "$n=5$"
+      ],
+      "result": "$F=6,\\ V=6,\\ E=10$",
+      "type": "Pyramid"
+     },
+     {
+      "question": "Find $F$, $V$, $E$ for a triangular prism.",
+      "use": [],
+      "steps": [
+       "$n=3$"
+      ],
+      "result": "$F=5,\\ V=6,\\ E=9$",
+      "type": "Prism"
+     }
+    ]
+   },
+   {
+    "title": "Euler's formula and nets",
+    "level": "board",
+    "ideas": [
+     "For any solid with flat faces (polyhedron), $F+V-E=2$.",
+     "A net is a flat shape that folds into a solid.",
+     "A cube has $11$ different nets."
+    ],
+    "formulas": [
+     "F+V-E=2"
+    ],
+    "examples": [
+     {
+      "question": "Check Euler's formula for a cube.",
+      "use": [
+       "F+V-E=2"
+      ],
+      "steps": [
+       "$6+8-12$"
+      ],
+      "result": "$2$ ✓",
+      "type": "Check"
+     },
+     {
+      "question": "A polyhedron has $12$ faces and $30$ edges. Find the number of vertices.",
+      "use": [
+       "F+V-E=2"
+      ],
+      "steps": [
+       "$12+V-30=2$"
+      ],
+      "result": "$V=20$",
+      "type": "Find V"
+     },
+     {
+      "question": "Can a polyhedron have $10$ faces, $20$ edges and $15$ vertices?",
+      "use": [],
+      "steps": [
+       "$10+15-20=5\\ne2$"
+      ],
+      "result": "No",
+      "type": "Test"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "solids",
+      "index": 0
+     },
+     {
+      "slug": "solids",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Straws and clay",
+     "steps": [
+      "Use straws for edges and clay balls for vertices.",
+      "Build a cube, a square pyramid and a triangular prism.",
+      "Count $F$, $V$ and $E$ for each and work out $F+V-E$."
+     ],
+     "result": "Every model gives $F+V-E=2$."
+    }
+   }
+  ]
+ },
+ "icse7-congruency": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 21",
+  "title": "Congruency: Congruent Triangles",
+  "subtitle": "Congruence and the SSS, SAS, ASA and RHS conditions",
+  "back": {
+   "href": "/icse/grade-7/ch-21",
+   "label": "Congruency: Congruent Triangles"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-congruency-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-21",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-21/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Congruent figures",
+    "items": [
+     "\\triangle ABC\\cong\\triangle PQR\\Rightarrow AB=PQ,\\ BC=QR,\\ CA=RP",
+     "\\angle A=\\angle P,\\ \\angle B=\\angle Q,\\ \\angle C=\\angle R"
+    ]
+   },
+   {
+    "title": "Conditions for congruence",
+    "items": [
+     "SSS,\\quad SAS,\\quad ASA\\ (AAS),\\quad RHS"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Congruent figures",
+    "level": "board",
+    "ideas": [
+     "Two figures are congruent if they have the same shape and the same size.",
+     "Congruent figures cover each other exactly.",
+     "$\\triangle ABC\\cong\\triangle PQR$ means $A\\leftrightarrow P$, $B\\leftrightarrow Q$, $C\\leftrightarrow R$.",
+     "Corresponding parts of congruent triangles are equal (CPCT)."
+    ],
+    "formulas": [
+     "\\triangle ABC\\cong\\triangle PQR\\Rightarrow AB=PQ,\\ BC=QR,\\ CA=RP",
+     "\\angle A=\\angle P,\\ \\angle B=\\angle Q,\\ \\angle C=\\angle R"
+    ],
+    "examples": [
+     {
+      "question": "$\\triangle ABC\\cong\\triangle XYZ$. Write the parts equal to $BC$ and $\\angle C$.",
+      "use": [],
+      "steps": [
+       "$B\\leftrightarrow Y$, $C\\leftrightarrow Z$"
+      ],
+      "result": "$BC=YZ$, $\\angle C=\\angle Z$",
+      "type": "Corresponding parts"
+     },
+     {
+      "question": "Two line segments are congruent. One is $5.6$ cm. Find the other.",
+      "use": [],
+      "steps": [
+       "Congruent segments have equal length."
+      ],
+      "result": "$5.6$ cm",
+      "type": "Segments"
+     }
+    ],
+    "experiment": {
+     "title": "Trace and cover",
+     "steps": [
+      "Draw a triangle on paper and cut it out.",
+      "Use it as a stencil to draw a second triangle.",
+      "Place one on the other in different ways."
+     ],
+     "result": "They cover each other exactly when the matching corners meet: the triangles are congruent."
+    }
+   },
+   {
+    "title": "Conditions for congruence",
+    "level": "board",
+    "ideas": [
+     "SSS: three sides of one triangle equal three sides of the other.",
+     "SAS: two sides and the included angle are equal.",
+     "ASA: two angles and the included side are equal. (AAS also works.)",
+     "RHS: right angle, hypotenuse and one side are equal.",
+     "AAA does not prove congruence. Triangles can have the same angles but different sizes."
+    ],
+    "formulas": [
+     "SSS,\\quad SAS,\\quad ASA\\ (AAS),\\quad RHS"
+    ],
+    "examples": [
+     {
+      "question": "In $\\triangle ABC$ and $\\triangle PQR$, $AB=PQ=5$, $BC=QR=7$, $\\angle B=\\angle Q=50^\\circ$. Are they congruent?",
+      "use": [],
+      "steps": [
+       "Two sides and the included angle are equal."
+      ],
+      "result": "Yes, by SAS",
+      "type": "SAS"
+     },
+     {
+      "question": "$AB=AC$ and $AD$ is the bisector of $\\angle A$ in $\\triangle ABC$. Show that $BD=DC$.",
+      "use": [],
+      "steps": [
+       "In $\\triangle ABD$ and $\\triangle ACD$: $AB=AC$, $\\angle BAD=\\angle CAD$, $AD=AD$",
+       "$\\triangle ABD\\cong\\triangle ACD$ (SAS)"
+      ],
+      "result": "$BD=DC$ (CPCT)",
+      "type": "Proof"
+     },
+     {
+      "question": "In right triangles $ABC$ and $DEF$, $\\angle B=\\angle E=90^\\circ$, $AC=DF=13$ and $AB=DE=5$. Are they congruent?",
+      "use": [],
+      "steps": [
+       "Right angle, hypotenuse and one side are equal."
+      ],
+      "result": "Yes, by RHS",
+      "type": "RHS"
+     },
+     {
+      "question": "$\\angle A=\\angle P=60^\\circ$, $\\angle B=\\angle Q=70^\\circ$, $AB=PQ=6$ cm. Find $\\angle C$ and state the condition.",
+      "use": [],
+      "steps": [
+       "$\\angle C=180-130$"
+      ],
+      "result": "$\\angle C=50^\\circ$, ASA",
+      "type": "ASA"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "shapes",
+      "index": 0
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-constructions": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 22",
+  "title": "Constructions",
+  "subtitle": "Perpendiculars, bisectors, angles, parallel lines and triangles",
+  "back": {
+   "href": "/icse/grade-7/ch-22",
+   "label": "Constructions"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-constructions-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-22",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-22/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Bisectors and perpendiculars",
+    "items": [
+     "\\text{arcs radius}>\\tfrac12 AB\\ \\text{for the perpendicular bisector}"
+    ]
+   },
+   {
+    "title": "Special angles",
+    "items": [
+     "30=\\tfrac12(60),\\ 45=\\tfrac12(90),\\ 75=\\tfrac12(60+90),\\ 105=\\tfrac12(90+120),\\ 135=\\tfrac12(90+180)"
+    ]
+   },
+   {
+    "title": "Parallel lines and triangles",
+    "items": [
+     "\\text{equal corresponding angles}\\Rightarrow\\text{parallel lines}",
+     "a+b>c\\ \\text{(check before SSS)}"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Bisectors and perpendiculars",
+    "level": "board",
+    "ideas": [
+     "Use only a ruler and compasses. Do not rub out the arcs.",
+     "The perpendicular bisector of $AB$ cuts $AB$ at its midpoint at $90^\\circ$.",
+     "An angle bisector divides an angle into two equal angles."
+    ],
+    "formulas": [
+     "\\text{arcs radius}>\\tfrac12 AB\\ \\text{for the perpendicular bisector}"
+    ],
+    "examples": [
+     {
+      "question": "Draw the perpendicular bisector of $AB=6$ cm.",
+      "use": [],
+      "steps": [
+       "Centre $A$, radius more than $3$ cm: draw arcs above and below $AB$.",
+       "Centre $B$, same radius: arcs cut the first ones at $P$ and $Q$.",
+       "Join $PQ$."
+      ],
+      "result": "$PQ$ cuts $AB$ at $M$, $AM=MB=3$ cm, $\\angle PMB=90^\\circ$",
+      "type": "Perpendicular bisector"
+     },
+     {
+      "question": "Bisect $\\angle ABC=70^\\circ$.",
+      "use": [],
+      "steps": [
+       "Centre $B$: an arc cuts $BA$ at $D$ and $BC$ at $E$.",
+       "Centres $D$ and $E$, same radius: arcs meet at $F$.",
+       "Join $BF$."
+      ],
+      "result": "$\\angle ABF=\\angle FBC=35^\\circ$",
+      "type": "Angle bisector"
+     }
+    ],
+    "experiment": {
+     "title": "Paper folding",
+     "steps": [
+      "Draw a line segment $AB$ on tracing paper.",
+      "Fold so that $A$ falls on $B$. Crease and open.",
+      "Measure the angle between the crease and $AB$."
+     ],
+     "result": "The crease is the perpendicular bisector: it meets $AB$ at its midpoint at $90^\\circ$."
+    }
+   },
+   {
+    "title": "Special angles",
+    "level": "board",
+    "ideas": [
+     "$60^\\circ$: arc from the vertex, then the same radius from the cut point.",
+     "$120^\\circ$: two $60^\\circ$ steps on the same arc.",
+     "$90^\\circ$: bisect between $60^\\circ$ and $120^\\circ$.",
+     "$30^\\circ$, $45^\\circ$, $15^\\circ$: bisect $60^\\circ$, $90^\\circ$, $30^\\circ$.",
+     "$75^\\circ$: bisect between $60^\\circ$ and $90^\\circ$. $135^\\circ$: bisect between $90^\\circ$ and $180^\\circ$."
+    ],
+    "formulas": [
+     "30=\\tfrac12(60),\\ 45=\\tfrac12(90),\\ 75=\\tfrac12(60+90),\\ 105=\\tfrac12(90+120),\\ 135=\\tfrac12(90+180)"
+    ],
+    "examples": [
+     {
+      "question": "Construct $\\angle ABC=60^\\circ$.",
+      "use": [],
+      "steps": [
+       "Centre $B$: arc cuts $BC$ at $D$.",
+       "Centre $D$, same radius: arc cuts the first arc at $E$.",
+       "Join $BE$ and produce to $A$."
+      ],
+      "result": "$\\angle ABC=60^\\circ$",
+      "type": "60°"
+     },
+     {
+      "question": "Construct $75^\\circ$.",
+      "use": [
+       "30=\\tfrac12(60),\\ 45=\\tfrac12(90),\\ 75=\\tfrac12(60+90),\\ 105=\\tfrac12(90+120),\\ 135=\\tfrac12(90+180)"
+      ],
+      "steps": [
+       "Make $60^\\circ$ and $90^\\circ$ at the same point.",
+       "Bisect the angle between them."
+      ],
+      "result": "$75^\\circ$",
+      "type": "75°"
+     }
+    ]
+   },
+   {
+    "title": "Parallel lines and triangles",
+    "level": "board",
+    "ideas": [
+     "To draw a line through $P$ parallel to $AB$: copy an angle so that corresponding (or alternate) angles are equal.",
+     "A triangle can be drawn from SSS, SAS, ASA or RHS.",
+     "First draw a rough figure with the given parts marked."
+    ],
+    "formulas": [
+     "\\text{equal corresponding angles}\\Rightarrow\\text{parallel lines}",
+     "a+b>c\\ \\text{(check before SSS)}"
+    ],
+    "examples": [
+     {
+      "question": "Construct $\\triangle ABC$ with $AB=5$ cm, $BC=6$ cm, $CA=4.5$ cm.",
+      "use": [
+       "a+b>c\\ \\text{(check before SSS)}"
+      ],
+      "steps": [
+       "Draw $BC=6$ cm.",
+       "Centre $B$, radius $5$ cm: arc. Centre $C$, radius $4.5$ cm: arc. They meet at $A$.",
+       "Join $AB$ and $AC$."
+      ],
+      "result": "Required triangle (SSS)",
+      "type": "SSS"
+     },
+     {
+      "question": "Construct $\\triangle PQR$ with $QR=5.5$ cm, $\\angle Q=60^\\circ$, $\\angle R=45^\\circ$.",
+      "use": [],
+      "steps": [
+       "Draw $QR=5.5$ cm.",
+       "Make $60^\\circ$ at $Q$ and $45^\\circ$ at $R$.",
+       "The arms meet at $P$."
+      ],
+      "result": "Required triangle (ASA), $\\angle P=75^\\circ$",
+      "type": "ASA"
+     },
+     {
+      "question": "Construct a right triangle with hypotenuse $6$ cm and one side $4$ cm.",
+      "use": [],
+      "steps": [
+       "Draw $BC=4$ cm. Make $90^\\circ$ at $B$.",
+       "Centre $C$, radius $6$ cm: arc cuts the perpendicular at $A$.",
+       "Join $AC$."
+      ],
+      "result": "Required triangle (RHS)",
+      "type": "RHS"
+     },
+     {
+      "question": "Draw a line through $P$ parallel to $AB$.",
+      "use": [
+       "\\text{equal corresponding angles}\\Rightarrow\\text{parallel lines}"
+      ],
+      "steps": [
+       "Join $P$ to a point $Q$ on $AB$.",
+       "At $P$, copy $\\angle PQB$ in the corresponding position.",
+       "The new arm through $P$ is the parallel line."
+      ],
+      "result": "Line through $P$ parallel to $AB$",
+      "type": "Parallel line"
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-mensuration": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 23",
+  "title": "Mensuration",
+  "subtitle": "Perimeter and area of plane figures, circles, and volume of cuboids",
+  "back": {
+   "href": "/icse/grade-7/ch-23",
+   "label": "Mensuration"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-mensuration-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-23",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-23/mcq",
+    "label": "30 MCQs · Free →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Rectangles, squares and paths",
+    "items": [
+     "P_{\\text{rect}}=2(l+b),\\quad A_{\\text{rect}}=lb",
+     "P_{\\text{sq}}=4a,\\quad A_{\\text{sq}}=a^2",
+     "\\text{diagonal of square}=a\\sqrt2,\\quad A_{\\text{sq}}=\\tfrac12 d^2"
+    ]
+   },
+   {
+    "title": "Triangles, parallelograms and trapeziums",
+    "items": [
+     "A_{\\triangle}=\\tfrac12\\times b\\times h",
+     "A_{\\text{equilateral}}=\\dfrac{\\sqrt3}{4}a^2",
+     "A_{\\text{parallelogram}}=b\\times h",
+     "A_{\\text{trapezium}}=\\tfrac12(a+b)h",
+     "A_{\\text{rhombus}}=\\tfrac12 d_1d_2"
+    ]
+   },
+   {
+    "title": "Circles",
+    "items": [
+     "C=2\\pi r=\\pi d",
+     "A=\\pi r^2",
+     "\\text{revolutions}=\\dfrac{\\text{distance}}{2\\pi r}"
+    ]
+   },
+   {
+    "title": "Volume of cuboid and cube",
+    "items": [
+     "V_{\\text{cuboid}}=lbh",
+     "V_{\\text{cube}}=a^3",
+     "\\text{surface area of cuboid}=2(lb+bh+hl)",
+     "\\text{surface area of cube}=6a^2"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Rectangles, squares and paths",
+    "level": "board",
+    "ideas": [
+     "Perimeter is the length of the boundary. Area is the region inside.",
+     "Use the same unit for all lengths. $1\\text{ m}^2=10\\,000\\text{ cm}^2$.",
+     "Path area $=$ outer area $-$ inner area."
+    ],
+    "formulas": [
+     "P_{\\text{rect}}=2(l+b),\\quad A_{\\text{rect}}=lb",
+     "P_{\\text{sq}}=4a,\\quad A_{\\text{sq}}=a^2",
+     "\\text{diagonal of square}=a\\sqrt2,\\quad A_{\\text{sq}}=\\tfrac12 d^2"
+    ],
+    "examples": [
+     {
+      "question": "A rectangle is $18$ m by $12$ m. Find its perimeter and area.",
+      "use": [
+       "P_{\\text{rect}}=2(l+b),\\quad A_{\\text{rect}}=lb"
+      ],
+      "steps": [
+       "$P=2(30)$",
+       "$A=18\\times12$"
+      ],
+      "result": "$60$ m, $216\\text{ m}^2$",
+      "type": "Rectangle"
+     },
+     {
+      "question": "The diagonal of a square is $10$ cm. Find its area.",
+      "use": [
+       "\\text{diagonal of square}=a\\sqrt2,\\quad A_{\\text{sq}}=\\tfrac12 d^2"
+      ],
+      "steps": [
+       "$\\tfrac12\\times100$"
+      ],
+      "result": "$50\\text{ cm}^2$",
+      "type": "Square"
+     },
+     {
+      "question": "A garden $30$ m by $20$ m has a path $2$ m wide all round it outside. Find the area of the path.",
+      "use": [],
+      "steps": [
+       "Outer: $34\\times24=816$",
+       "Inner: $30\\times20=600$"
+      ],
+      "result": "$216\\text{ m}^2$",
+      "type": "Path outside"
+     },
+     {
+      "question": "Two cross roads, each $3$ m wide, run through the middle of a park $50$ m by $40$ m, parallel to its sides. Find their area.",
+      "use": [],
+      "steps": [
+       "$50\\times3+40\\times3-3\\times3$"
+      ],
+      "result": "$261\\text{ m}^2$",
+      "type": "Cross roads"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "area-perimeter",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Triangles, parallelograms and trapeziums",
+    "level": "board",
+    "ideas": [
+     "The height is perpendicular to the base.",
+     "Any side of a parallelogram can be the base, with its own height."
+    ],
+    "formulas": [
+     "A_{\\triangle}=\\tfrac12\\times b\\times h",
+     "A_{\\text{equilateral}}=\\dfrac{\\sqrt3}{4}a^2",
+     "A_{\\text{parallelogram}}=b\\times h",
+     "A_{\\text{trapezium}}=\\tfrac12(a+b)h",
+     "A_{\\text{rhombus}}=\\tfrac12 d_1d_2"
+    ],
+    "examples": [
+     {
+      "question": "Find the area of a triangle with base $14$ cm and height $9$ cm.",
+      "use": [
+       "A_{\\triangle}=\\tfrac12\\times b\\times h"
+      ],
+      "steps": [
+       "$\\tfrac12\\times14\\times9$"
+      ],
+      "result": "$63\\text{ cm}^2$",
+      "type": "Triangle"
+     },
+     {
+      "question": "A parallelogram has base $12$ cm and area $84\\text{ cm}^2$. Find its height.",
+      "use": [
+       "A_{\\text{parallelogram}}=b\\times h"
+      ],
+      "steps": [
+       "$h=\\dfrac{84}{12}$"
+      ],
+      "result": "$7$ cm",
+      "type": "Parallelogram"
+     },
+     {
+      "question": "The parallel sides of a trapezium are $15$ cm and $9$ cm. The distance between them is $8$ cm. Find its area.",
+      "use": [
+       "A_{\\text{trapezium}}=\\tfrac12(a+b)h"
+      ],
+      "steps": [
+       "$\\tfrac12\\times24\\times8$"
+      ],
+      "result": "$96\\text{ cm}^2$",
+      "type": "Trapezium"
+     },
+     {
+      "question": "The diagonals of a rhombus are $16$ cm and $12$ cm. Find its area.",
+      "use": [
+       "A_{\\text{rhombus}}=\\tfrac12 d_1d_2"
+      ],
+      "steps": [
+       "$\\tfrac12\\times16\\times12$"
+      ],
+      "result": "$96\\text{ cm}^2$",
+      "type": "Rhombus"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "area-perimeter",
+      "index": 1
+     }
+    ]
+   },
+   {
+    "title": "Circles",
+    "level": "board",
+    "ideas": [
+     "Circumference is the perimeter of a circle. Take $\\pi=\\dfrac{22}{7}$ unless told otherwise.",
+     "In one turn, a wheel moves a distance equal to its circumference.",
+     "Semicircle perimeter $=\\pi r+2r$."
+    ],
+    "formulas": [
+     "C=2\\pi r=\\pi d",
+     "A=\\pi r^2",
+     "\\text{revolutions}=\\dfrac{\\text{distance}}{2\\pi r}"
+    ],
+    "examples": [
+     {
+      "question": "Find the circumference and area of a circle of radius $14$ cm.",
+      "use": [
+       "C=2\\pi r=\\pi d",
+       "A=\\pi r^2"
+      ],
+      "steps": [
+       "$C=2\\times\\dfrac{22}7\\times14=88$",
+       "$A=\\dfrac{22}7\\times196=616$"
+      ],
+      "result": "$88$ cm, $616\\text{ cm}^2$",
+      "type": "Circle"
+     },
+     {
+      "question": "The circumference of a circle is $132$ cm. Find its area.",
+      "use": [],
+      "steps": [
+       "$2\\times\\dfrac{22}7\\times r=132$, $r=21$",
+       "$A=\\dfrac{22}7\\times441$"
+      ],
+      "result": "$1386\\text{ cm}^2$",
+      "type": "From circumference"
+     },
+     {
+      "question": "A wheel has diameter $70$ cm. How many turns does it make in $1.1$ km?",
+      "use": [
+       "\\text{revolutions}=\\dfrac{\\text{distance}}{2\\pi r}"
+      ],
+      "steps": [
+       "$C=\\dfrac{22}7\\times70=220$ cm",
+       "$\\dfrac{110000}{220}$"
+      ],
+      "result": "$500$",
+      "type": "Wheel"
+     },
+     {
+      "question": "Find the perimeter of a semicircle of radius $7$ cm.",
+      "use": [],
+      "steps": [
+       "$\\dfrac{22}7\\times7+14$"
+      ],
+      "result": "$36$ cm",
+      "type": "Semicircle"
+     }
+    ],
+    "experiment": {
+     "title": "String and a can",
+     "steps": [
+      "Wrap a string once round a can. Measure the string.",
+      "Measure the diameter of the can.",
+      "Divide the string length by the diameter."
+     ],
+     "result": "The answer is close to $3.14$, that is $\\pi$."
+    }
+   },
+   {
+    "title": "Volume of cuboid and cube",
+    "level": "board",
+    "ideas": [
+     "Volume is the space inside a solid.",
+     "$1\\text{ L}=1000\\text{ cm}^3$ and $1\\text{ m}^3=1000$ L."
+    ],
+    "formulas": [
+     "V_{\\text{cuboid}}=lbh",
+     "V_{\\text{cube}}=a^3",
+     "\\text{surface area of cuboid}=2(lb+bh+hl)",
+     "\\text{surface area of cube}=6a^2"
+    ],
+    "examples": [
+     {
+      "question": "Find the volume of a tank $2$ m by $1.5$ m by $1$ m in litres.",
+      "use": [
+       "V_{\\text{cuboid}}=lbh"
+      ],
+      "steps": [
+       "$V=3\\text{ m}^3$"
+      ],
+      "result": "$3000$ L",
+      "type": "Cuboid"
+     },
+     {
+      "question": "Find the volume and surface area of a cube of edge $6$ cm.",
+      "use": [
+       "V_{\\text{cube}}=a^3",
+       "\\text{surface area of cube}=6a^2"
+      ],
+      "steps": [
+       "$V=216$, $S=6\\times36$"
+      ],
+      "result": "$216\\text{ cm}^3$, $216\\text{ cm}^2$",
+      "type": "Cube"
+     },
+     {
+      "question": "How many bricks $25$ cm $\\times12.5$ cm $\\times7.5$ cm make a wall $10$ m $\\times30$ cm $\\times1.5$ m?",
+      "use": [],
+      "steps": [
+       "Wall $=1000\\times30\\times150=4\\,500\\,000\\text{ cm}^3$",
+       "Brick $=2343.75\\text{ cm}^3$"
+      ],
+      "result": "$1920$ bricks",
+      "type": "Bricks"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "solids",
+      "index": 1
+     }
+    ]
+   }
+  ]
+ },
+ "icse7-data-handling": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 24",
+  "title": "Data Handling",
+  "subtitle": "Tally tables, mean, median, mode, bar graphs and pie charts",
+  "back": {
+   "href": "/icse/grade-7/ch-24",
+   "label": "Data Handling"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-data-handling-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-24",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-24/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Organising data",
+    "items": [
+     "\\text{Range}=\\text{highest}-\\text{lowest}",
+     "\\text{tally: four strokes and one across}=5"
+    ]
+   },
+   {
+    "title": "Mean, median and mode",
+    "items": [
+     "\\text{Mean}=\\dfrac{\\text{sum of values}}{\\text{number of values}}",
+     "\\text{Median}=\\left(\\dfrac{n+1}{2}\\right)^{\\text{th}}\\text{ value } (n \\text{ odd})",
+     "\\text{Median}=\\tfrac12\\left[\\left(\\dfrac n2\\right)^{\\text{th}}+\\left(\\dfrac n2+1\\right)^{\\text{th}}\\right] (n \\text{ even})"
+    ]
+   },
+   {
+    "title": "Pie charts",
+    "items": [
+     "\\text{Central angle}=\\dfrac{\\text{value}}{\\text{total}}\\times360^\\circ"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Organising data",
+    "level": "board",
+    "ideas": [
+     "Raw data is data as collected. Arrange it in a frequency table with tally marks.",
+     "Range $=$ highest value $-$ lowest value.",
+     "A bar graph shows data with bars of equal width and equal gaps."
+    ],
+    "formulas": [
+     "\\text{Range}=\\text{highest}-\\text{lowest}",
+     "\\text{tally: four strokes and one across}=5"
+    ],
+    "examples": [
+     {
+      "question": "Marks: $7,5,8,7,6,9,7,5,8,7$. Make a frequency table and find the range.",
+      "use": [
+       "\\text{Range}=\\text{highest}-\\text{lowest}"
+      ],
+      "steps": [
+       "$5\\to2,\\ 6\\to1,\\ 7\\to4,\\ 8\\to2,\\ 9\\to1$",
+       "Range $=9-5$"
+      ],
+      "result": "Range $=4$",
+      "type": "Frequency table"
+     }
+    ]
+   },
+   {
+    "title": "Mean, median and mode",
+    "level": "board",
+    "ideas": [
+     "Mean is the sum divided by the number of values.",
+     "Median is the middle value after arranging in order.",
+     "If the number of values is even, the median is the mean of the two middle values.",
+     "Mode is the value that occurs most often."
+    ],
+    "formulas": [
+     "\\text{Mean}=\\dfrac{\\text{sum of values}}{\\text{number of values}}",
+     "\\text{Median}=\\left(\\dfrac{n+1}{2}\\right)^{\\text{th}}\\text{ value } (n \\text{ odd})",
+     "\\text{Median}=\\tfrac12\\left[\\left(\\dfrac n2\\right)^{\\text{th}}+\\left(\\dfrac n2+1\\right)^{\\text{th}}\\right] (n \\text{ even})"
+    ],
+    "examples": [
+     {
+      "question": "Find the mean of $12,15,18,20,25$.",
+      "use": [
+       "\\text{Mean}=\\dfrac{\\text{sum of values}}{\\text{number of values}}"
+      ],
+      "steps": [
+       "$\\dfrac{90}{5}$"
+      ],
+      "result": "$18$",
+      "type": "Mean"
+     },
+     {
+      "question": "Find the median of $8,3,11,6,9,4,7$.",
+      "use": [],
+      "steps": [
+       "Order: $3,4,6,7,8,9,11$",
+       "$4^{\\text{th}}$ value"
+      ],
+      "result": "$7$",
+      "type": "Median odd"
+     },
+     {
+      "question": "Find the median of $14,9,21,17,10,12$.",
+      "use": [],
+      "steps": [
+       "Order: $9,10,12,14,17,21$",
+       "$\\tfrac12(12+14)$"
+      ],
+      "result": "$13$",
+      "type": "Median even"
+     },
+     {
+      "question": "Find the mode of $3,5,2,5,7,3,5,8$.",
+      "use": [],
+      "steps": [
+       "$5$ occurs $3$ times."
+      ],
+      "result": "$5$",
+      "type": "Mode"
+     },
+     {
+      "question": "The mean of $6$ numbers is $15$. One number is removed and the mean becomes $14$. Find the removed number.",
+      "use": [],
+      "steps": [
+       "Sum before $=90$, after $=70$"
+      ],
+      "result": "$20$",
+      "type": "Mean problem"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "data-chance",
+      "index": 0
+     }
+    ]
+   },
+   {
+    "title": "Pie charts",
+    "level": "board",
+    "ideas": [
+     "A pie chart shows parts of a whole as sectors of a circle.",
+     "The whole circle is $360^\\circ$."
+    ],
+    "formulas": [
+     "\\text{Central angle}=\\dfrac{\\text{value}}{\\text{total}}\\times360^\\circ"
+    ],
+    "examples": [
+     {
+      "question": "A family earns ₹$36{,}000$: food ₹$12{,}000$, rent ₹$9000$, education ₹$6000$, savings ₹$9000$. Find the angles of the pie chart.",
+      "use": [
+       "\\text{Central angle}=\\dfrac{\\text{value}}{\\text{total}}\\times360^\\circ"
+      ],
+      "steps": [
+       "Food $\\dfrac{12}{36}\\times360=120^\\circ$",
+       "Rent $90^\\circ$, education $60^\\circ$, savings $90^\\circ$"
+      ],
+      "result": "$120^\\circ,90^\\circ,60^\\circ,90^\\circ$",
+      "type": "Pie chart"
+     }
+    ],
+    "experiment": {
+     "title": "Class survey",
+     "steps": [
+      "Ask $20$ classmates their favourite sport.",
+      "Make a tally table and a bar graph.",
+      "Find the angle for each sport and draw a pie chart."
+     ],
+     "result": "The angles add up to $360^\\circ$ and the bar heights add up to $20$."
+    }
+   }
+  ]
+ },
+ "icse7-probability": {
+  "kicker": "ICSE · GRADE 7 · CHAPTER 25",
+  "title": "Probability",
+  "subtitle": "Experiments, outcomes, events and the probability of an event",
+  "back": {
+   "href": "/icse/grade-7/ch-25",
+   "label": "Probability"
+  },
+  "grade": {
+   "href": "/icse/grade-7",
+   "label": "ICSE Grade 7"
+  },
+  "storeKey": "ramavana-icse7-probability-ticks",
+  "links": [
+   {
+    "href": "/icse/grade-7/ch-25",
+    "label": "30-mark exam paper →"
+   },
+   {
+    "href": "/icse/grade-7/ch-25/mcq",
+    "label": "30 MCQs · ₹30 →"
+   }
+  ],
+  "sheet": [
+   {
+    "title": "Experiments and outcomes",
+    "items": [
+     "\\text{coin: }\\{H,T\\},\\quad\\text{die: }\\{1,2,3,4,5,6\\}"
+    ]
+   },
+   {
+    "title": "Probability of an event",
+    "items": [
+     "P(E)=\\dfrac{\\text{number of favourable outcomes}}{\\text{total number of outcomes}}",
+     "0\\le P(E)\\le1",
+     "P(E)+P(\\text{not }E)=1"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Experiments and outcomes",
+    "level": "board",
+    "ideas": [
+     "A random experiment has outcomes that we cannot predict for sure. Example: tossing a coin.",
+     "The sample space is the set of all outcomes.",
+     "An event is a set of one or more outcomes.",
+     "Equally likely outcomes have the same chance."
+    ],
+    "formulas": [
+     "\\text{coin: }\\{H,T\\},\\quad\\text{die: }\\{1,2,3,4,5,6\\}"
+    ],
+    "examples": [
+     {
+      "question": "Write the sample space for tossing two coins.",
+      "use": [],
+      "steps": [
+       "First coin and second coin"
+      ],
+      "result": "$\\{HH,HT,TH,TT\\}$",
+      "type": "Sample space"
+     },
+     {
+      "question": "A die is thrown. List the outcomes of the event ‘a prime number’.",
+      "use": [],
+      "steps": [
+       "Primes up to $6$"
+      ],
+      "result": "$\\{2,3,5\\}$",
+      "type": "Event"
+     }
+    ]
+   },
+   {
+    "title": "Probability of an event",
+    "level": "board",
+    "ideas": [
+     "Probability measures the chance of an event, from $0$ to $1$.",
+     "An impossible event has probability $0$. A sure event has probability $1$.",
+     "$P(\\text{not } E)=1-P(E)$."
+    ],
+    "formulas": [
+     "P(E)=\\dfrac{\\text{number of favourable outcomes}}{\\text{total number of outcomes}}",
+     "0\\le P(E)\\le1",
+     "P(E)+P(\\text{not }E)=1"
+    ],
+    "examples": [
+     {
+      "question": "A die is thrown. Find $P(\\text{even number})$.",
+      "use": [
+       "P(E)=\\dfrac{\\text{number of favourable outcomes}}{\\text{total number of outcomes}}"
+      ],
+      "steps": [
+       "Even: $2,4,6$"
+      ],
+      "result": "$\\dfrac36=\\dfrac12$",
+      "type": "Die"
+     },
+     {
+      "question": "A bag has $5$ red, $3$ blue and $2$ green balls. One ball is drawn. Find $P(\\text{blue})$ and $P(\\text{not blue})$.",
+      "use": [
+       "P(E)+P(\\text{not }E)=1"
+      ],
+      "steps": [
+       "$P(\\text{blue})=\\dfrac3{10}$",
+       "$1-\\dfrac3{10}$"
+      ],
+      "result": "$\\dfrac3{10}$ and $\\dfrac7{10}$",
+      "type": "Bag"
+     },
+     {
+      "question": "A card is drawn from $1$ to $20$. Find $P(\\text{multiple of }3)$.",
+      "use": [],
+      "steps": [
+       "$3,6,9,12,15,18$: $6$ outcomes"
+      ],
+      "result": "$\\dfrac{6}{20}=\\dfrac3{10}$",
+      "type": "Cards"
+     },
+     {
+      "question": "Two coins are tossed. Find $P(\\text{at least one head})$.",
+      "use": [],
+      "steps": [
+       "$HH,HT,TH$: $3$ of $4$"
+      ],
+      "result": "$\\dfrac34$",
+      "type": "Two coins"
+     }
+    ],
+    "labs": [
+     {
+      "slug": "data-chance",
+      "index": 1
+     }
+    ],
+    "experiment": {
+     "title": "Toss a coin 50 times",
+     "steps": [
+      "Toss a coin $50$ times. Record H or T with tally marks.",
+      "Find $\\dfrac{\\text{number of heads}}{50}$.",
+      "Join the results of the whole class."
+     ],
+     "result": "Each result is near $\\dfrac12$. With more tosses, the class result comes closer to $\\dfrac12$."
+    }
+   }
+  ]
+ }
+}

@@ -9,6 +9,7 @@ import g7a from './cbse7-part-a.json';
 import g7b from './cbse7-part-b.json';
 import g7c from './cbse7-part-c.json';
 import g7p2 from './cbse7-papers-02.json';
+import icse7 from './icse7-part.json';
 import g10na from './icse10-notes-detail-a.json';
 import g10nb from './icse10-notes-detail-b.json';
 import g10nc from './icse10-notes-detail-c.json';
@@ -21,7 +22,7 @@ type PaperSeed = PaperDefinition & { answerKey: number[]; solutions: Record<numb
 type Part = { papers: unknown[]; notes: unknown[] };
 
 // ICSE Grade 10 (Selina) and CBSE Grade 7 (Ganita Prakash). Papers and notes carry their own board and grade.
-const parts: Part[] = [g10a, g10b, g10c, g10d, g10e, g7a, g7b, g7c, g7p2];
+const parts: Part[] = [g10a, g10b, g10c, g10d, g10e, g7a, g7b, g7c, g7p2, icse7];
 
 const seeds = parts.flatMap((part) => part.papers as PaperSeed[]);
 

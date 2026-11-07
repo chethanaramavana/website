@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     if (!paper || !Number.isInteger(body.answered) || body.answered<0 || body.answered>paper.total) return jsonError('Invalid test.',400);
     if (!isAdmin(user)) {
       if(paper.kind==='basics'&&!await canOpenBasicsAny(user,paper.slug))return jsonError('Level access required.',403);
-      if (paper.kind==='quiz' && !await hasMcqAccess(user,paper.chapter!,paper.grade!)) return jsonError('Test access required.',403);
+      if (paper.kind==='quiz' && !await hasMcqAccess(user,paper.chapter!,paper.grade!,'board' in paper ? paper.board : 'CBSE')) return jsonError('Test access required.',403);
       if (paper.kind==='integrals' && !await hasIntegralsAccess(user,body.paperId)) return jsonError('Test access required.',403);
       if (paper.kind==='paper') {
         const access=await getDatabase().prepare(`SELECT 1 FROM payment_requests WHERE user_id=? AND paper_id=? AND status='approved' UNION ALL SELECT 1 FROM submissions WHERE (user_id=? OR lower(user_email)=?) AND paper_id=? LIMIT 1`).bind(user.userId,body.paperId,user.userId,user.email.toLowerCase(),body.paperId).first();

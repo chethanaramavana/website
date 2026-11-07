@@ -2,7 +2,7 @@ import {basicsCourses} from './basics-catalog';
 import basicsOutline from './math-basics-outline.json';
 import { getDatabase, type RequestUser } from './server';
 import { paperDefinitionsById } from './papers';
-import { freeQuizChapters, quizPrice } from './free-quizzes/catalog';
+import { freeQuizChapters, icse7QuizChapters, quizInfo, quizPrice } from './free-quizzes/catalog';
 import { getIntegralsProduct } from './integrals-products';
 
 export function activityPaper(id: string) {
@@ -10,11 +10,13 @@ export function activityPaper(id: string) {
   if(basics)return {title:`Maths Step by Step · ${basics.title}`,free:basicsCourses.some(c=>c.topics[0]===basics.slug),total:10,kind:'basics' as const,slug:basics.slug};
   const product = getIntegralsProduct(id);
   if (product) return { title: `Grade 12 · ${product.title}`, free: false, total: id.includes('mcq-20') ? 20 : id.includes('board') ? 24 : id.includes('main') ? 25 : id.endsWith('01') ? 16 : 18, kind: 'integrals' as const };
+  const icse = quizInfo(id);
+  if (icse?.board === 'ICSE') return { title: `ICSE Grade 7 · ${icse7QuizChapters[icse.chapter-1]} · MCQ`, free: quizPrice(icse.chapter, 7, 'ICSE') === 0, total: 30, kind: 'quiz' as const, grade: 7, chapter: icse.chapter, board: 'ICSE' as const };
   const match = /^cbse-(10|11|12)-ch-(\d+)-50$/.exec(id);
   if (match) {
     const grade = Number(match[1]), chapter = Number(match[2]);
     const title = grade === 10 ? freeQuizChapters[chapter-1] : grade === 11 && chapter === 2 ? 'Relations and Functions' : grade === 12 && chapter === 7 ? 'Integrals' : null;
-    if (title) return { title: `Grade ${grade} · ${title} · MCQ`, free: quizPrice(chapter, grade) === 0, total: 50, kind: 'quiz' as const, grade, chapter };
+    if (title) return { title: `Grade ${grade} · ${title} · MCQ`, free: quizPrice(chapter, grade) === 0, total: 50, kind: 'quiz' as const, grade, chapter, board: 'CBSE' as const };
   }
   const p = paperDefinitionsById[id];
   return p ? { title: `${p.board ?? 'CBSE'} · Grade ${p.grade ?? 10} · ${p.chapter} · Paper ${p.paperNumber}`, free: false, total: 24, kind: 'paper' as const } : null;

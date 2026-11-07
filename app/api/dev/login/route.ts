@@ -27,7 +27,7 @@ export async function POST(request: Request) {
       ...Object.keys(paperDefinitionsById).map((id) => ({ id, amount: 3000 })),
       ...quizListings.map((q) => ({
         id: q.id,
-        amount: quizPrice(q.chapter, q.grade),
+        amount: quizPrice(q.chapter, q.grade, q.board),
       })),
       ...integralsProducts.map((p) => ({
         id: p.id,

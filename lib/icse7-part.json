@@ -1,0 +1,3332 @@
+{
+ "papers": [
+  {
+   "id": "icse7-integers-01",
+   "chapter": "Integers",
+   "chapterNumber": 1,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Operations on integers, properties, BODMAS and word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "(−5) × (−8) ÷ (−4) =",
+     "options": [
+      "40",
+      "−10",
+      "−40",
+      "10"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The additive inverse of −(−7) is",
+     "options": [
+      "−7",
+      "1/7",
+      "7",
+      "0"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "(−3) + [4 + (−5)] = [(−3) + 4] + (−5) shows the",
+     "options": [
+      "associative property",
+      "distributive property",
+      "closure property",
+      "commutative property"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "|−9| − |4| =",
+     "options": [
+      "−13",
+      "5",
+      "13",
+      "−5"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "(−6) × (−7) × (−1) is negative.",
+     "reason": "The product of an odd number of negative integers is negative."
+    },
+    {
+     "number": 6,
+     "assertion": "Integers are closed under division.",
+     "reason": "8 ÷ (−2) = −4 is an integer."
+    }
+   ],
+   "written": {
+    "17": "Evaluate (−25) + 48 + (−32) − (−14).",
+    "18": "Use the distributive property to find (−23) × 99.",
+    "19": "Arrange in ascending order: −11, 7, −3, 0, −15, 4.",
+    "20": "Simplify 45 − [38 − {60 ÷ 3 − (6 − 9 ÷ 3) ÷ 3}].",
+    "21": "Find the integer which (a) added to −28 gives 13; (b) subtracted from −5 gives 9; (c) multiplied by −9 gives 72.",
+    "22": "At noon the temperature is 12°C. It falls by 3°C every hour. Find the temperature at midnight. At what time is it −6°C?",
+    "23": [
+     "In a quiz, a correct answer gets +5, a wrong answer gets −2 and an unanswered question gets 0.",
+     "(a) Riya has 9 correct and 4 wrong answers. Find her score.",
+     "(b) Aman scores −6 with 2 correct answers. How many wrong answers did he give?",
+     "(c) Can a student with 3 correct answers score exactly 0? Give a reason."
+    ],
+    "24": [
+     "(a) The lift is at floor 5 and goes down 8 floors. Which floor is it at? [1]",
+     "(b) Find the change in height, in metres, from floor −2 to floor 7. [1]",
+     "(c) Starting at floor 0, the lift moves −4, +9, −7 and +3 floors. Find the final floor and the total distance travelled in metres. [2]"
+    ]
+   },
+   "caseStudy": "A lift starts at the ground floor (floor 0). Floors above ground are positive and basement floors are negative. Each floor is 3 m high.",
+   "answerKey": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "−25 + 48 − 32 + 14 = 5.",
+    "18": "(−23) × (100 − 1) = −2300 + 23 = −2277.",
+    "19": "−15, −11, −3, 0, 4, 7.",
+    "20": "9 ÷ 3 = 3; 6 − 3 = 3; 3 ÷ 3 = 1; 60 ÷ 3 = 20; 20 − 1 = 19; 38 − 19 = 19; 45 − 19 = 26.",
+    "21": "(a) 13 − (−28) = 41. (b) −5 − x = 9 ⇒ x = −14. (c) 72 ÷ (−9) = −8.",
+    "22": "12 hours: 12 + 12 × (−3) = −24°C. Fall needed to reach −6°C = 18°C = 6 hours, so 6 pm.",
+    "23": "(a) 9 × 5 + 4 × (−2) = 45 − 8 = 37. (b) 2 × 5 − 2w = −6 ⇒ 2w = 16 ⇒ w = 8. (c) 15 − 2w = 0 ⇒ w = 7.5, not a whole number, so no.",
+    "24": "(a) 5 − 8 = −3. (b) 7 − (−2) = 9 floors = 27 m upward. (c) −4 + 9 − 7 + 3 = 1, so floor 1. Distance = 4 + 9 + 7 + 3 = 23 floors = 69 m."
+   }
+  },
+  {
+   "id": "icse7-rational-numbers-01",
+   "chapter": "Rational Numbers",
+   "chapterNumber": 2,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Standard form, comparison and the four operations on rational numbers.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The standard form of 28/−42 is",
+     "options": [
+      "2/3",
+      "28/42",
+      "−4/6",
+      "−2/3"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "−2/5 + 3/10 =",
+     "options": [
+      "1/10",
+      "1/5",
+      "−1/5",
+      "−1/10"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The reciprocal of −5/8 is",
+     "options": [
+      "5/8",
+      "−8/5",
+      "−5/8",
+      "8/5"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which is the greatest: −1/2, −2/3, −3/4, −1/6?",
+     "options": [
+      "−3/4",
+      "−1/6",
+      "−1/2",
+      "−2/3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "−4/7 is a rational number.",
+     "reason": "−4 and 7 are integers and 7 ≠ 0."
+    },
+    {
+     "number": 6,
+     "assertion": "0 has a reciprocal.",
+     "reason": "Every rational number has a reciprocal."
+    }
+   ],
+   "written": {
+    "17": "Express −54/90 in standard form and write two rational numbers equivalent to it.",
+    "18": "Arrange in descending order: 2/3, −5/6, −1/4, 7/12.",
+    "19": "Find three rational numbers between −1/2 and 1/3.",
+    "20": "Simplify: (−3/8) + (5/12) − (−7/24).",
+    "21": "Simplify: (−5/6) × (9/−10) ÷ (−3/4).",
+    "22": "The sum of two rational numbers is −2/3. One of them is 5/9. Find the other.",
+    "23": [
+     "Meena has ₹4800.",
+     "(a) She spends 3/8 of it on books. How much does she spend?",
+     "(b) She gives 1/4 of the remaining money to her sister. How much does she give?",
+     "(c) What fraction of the ₹4800 is left with her?"
+    ],
+    "24": [
+     "(a) Write the change in water level as one rational number (use + for added, − for used). [1]",
+     "(b) What fraction of the tank is full at the end of the day? [1]",
+     "(c) The tank holds 1200 litres when full. How many litres are in it at the end of the day, and how many more litres are needed to fill it? [2]"
+    ]
+   },
+   "caseStudy": "A water tank holds 3/4 of its capacity. During the day, 5/12 of the full capacity is used and later 1/3 of the full capacity is added.",
+   "answerKey": [
+    3,
+    3,
+    1,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "HCF(54, 90) = 18: −54/90 = −3/5. Equivalent: −6/10, −9/15 (any two).",
+    "18": "In twelfths: 8, −10, −3, 7 ⇒ 2/3 > 7/12 > −1/4 > −5/6.",
+    "19": "In twelfths: −1/2 = −6/12, 1/3 = 4/12. Three numbers: −5/12, 0, 1/12 (any three between).",
+    "20": "LCM 24: −9/24 + 10/24 + 7/24 = 8/24 = 1/3.",
+    "21": "(−5/6) × (9/−10) = 45/60 = 3/4; 3/4 ÷ (−3/4) = −1.",
+    "22": "Other = −2/3 − 5/9 = −6/9 − 5/9 = −11/9.",
+    "23": "(a) 3/8 × 4800 = ₹1800. (b) Remaining 3000; 1/4 × 3000 = ₹750. (c) Left = 4800 − 1800 − 750 = 2250; 2250/4800 = 15/32.",
+    "24": "(a) −5/12 + 1/3 = −5/12 + 4/12 = −1/12. (b) 3/4 − 1/12 = 9/12 − 1/12 = 8/12 = 2/3. (c) 2/3 × 1200 = 800 L; 1200 − 800 = 400 L more."
+   }
+  },
+  {
+   "id": "icse7-fractions-01",
+   "chapter": "Fractions",
+   "chapterNumber": 3,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Kinds of fractions, the four operations, BODMAS and word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "4 2/7 as an improper fraction is",
+     "options": [
+      "26/7",
+      "30/7",
+      "34/7",
+      "42/7"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "2/3 ÷ 4/9 =",
+     "options": [
+      "2/3",
+      "3/2",
+      "8/27",
+      "4/3"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "3/5 of 2/3 of 45 is",
+     "options": [
+      "30",
+      "18",
+      "27",
+      "15"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which is greater: 5/7 or 7/10?",
+     "options": [
+      "7/10",
+      "they are equal",
+      "5/7",
+      "cannot say"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "1/2 × 4/5 = 2/5.",
+     "reason": "To multiply fractions, multiply the numerators and multiply the denominators."
+    },
+    {
+     "number": 6,
+     "assertion": "3/4 ÷ 3/2 = 2.",
+     "reason": "To divide by a fraction, multiply by its reciprocal."
+    }
+   ],
+   "written": {
+    "17": "Arrange in descending order: 3/5, 7/10, 2/3, 11/15.",
+    "18": "Simplify: 3 1/4 + 2 5/6 − 1 7/12.",
+    "19": "Find: (a) 2 1/4 × 3 1/3; (b) 4 2/3 ÷ 1 5/9.",
+    "20": "Simplify: 2/3 of 3/4 ÷ 1/2 + 1/4.",
+    "21": "A drum holds 25 1/2 L of oil. How many tins of 1 1/2 L each can be filled from it?",
+    "22": "Neha spends 1/3 of her pocket money on books and 1/4 on food. She saves the rest, which is ₹250. Find her pocket money.",
+    "23": [
+     "A field has an area of 4 1/2 hectares.",
+     "(a) 2/3 of the field has wheat. Find the area under wheat.",
+     "(b) 3/5 of the remaining area has vegetables. Find this area.",
+     "(c) What fraction of the whole field is left empty?"
+    ],
+    "24": [
+     "(a) How much rice is needed for 1 person? [1]",
+     "(b) How much dal is needed for 10 people? [1]",
+     "(c) Rita has 2 cups of milk. For how many people can she cook? Find the total cups of rice, dal and milk for 6 people. [2]"
+    ]
+   },
+   "caseStudy": "A recipe for 4 people uses 1 1/2 cups of rice, 3/4 cup of dal and 2/3 cup of milk.",
+   "answerKey": [
+    1,
+    1,
+    1,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "LCM 30: 18/30, 21/30, 20/30, 22/30 ⇒ 11/15 > 7/10 > 2/3 > 3/5.",
+    "18": "13/4 + 17/6 − 19/12 = 39/12 + 34/12 − 19/12 = 54/12 = 4 1/2.",
+    "19": "(a) 9/4 × 10/3 = 90/12 = 7 1/2. (b) 14/3 ÷ 14/9 = 14/3 × 9/14 = 3.",
+    "20": "2/3 of 3/4 = 1/2; 1/2 ÷ 1/2 = 1; 1 + 1/4 = 1 1/4.",
+    "21": "51/2 ÷ 3/2 = 51/2 × 2/3 = 17 tins.",
+    "22": "Spent 1/3 + 1/4 = 7/12, saved 5/12. 5/12 of money = 250 ⇒ money = ₹600.",
+    "23": "(a) 2/3 × 9/2 = 3 ha. (b) Remaining 3/2 ha; 3/5 × 3/2 = 9/10 ha. (c) Empty = 3/2 − 9/10 = 6/10 = 3/5 ha; 3/5 ÷ 9/2 = 2/15 of the field.",
+    "24": "(a) 3/2 ÷ 4 = 3/8 cup. (b) Dal per person 3/16; 10 × 3/16 = 15/8 = 1 7/8 cups. (c) Milk per person 1/6; 2 ÷ 1/6 = 12 people. For 6 people: rice 9/4, dal 9/8, milk 1; total = 18/8 + 9/8 + 8/8 = 35/8 = 4 3/8 cups."
+   }
+  },
+  {
+   "id": "icse7-decimals-01",
+   "chapter": "Decimals",
+   "chapterNumber": 4,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Place value, operations on decimals, conversions and recurring decimals.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "3.08 × 0.5 =",
+     "options": [
+      "0.154",
+      "1.504",
+      "15.4",
+      "1.54"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "8.4 ÷ 0.07 =",
+     "options": [
+      "120",
+      "1.2",
+      "12",
+      "1200"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "3/16 as a decimal is",
+     "options": [
+      "0.1875",
+      "0.316",
+      "0.18",
+      "1.875"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which gives a recurring decimal?",
+     "options": [
+      "3/12",
+      "5/9",
+      "11/40",
+      "7/25"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "0.125 = 1/8.",
+     "reason": "1/8 = 125/1000."
+    },
+    {
+     "number": 6,
+     "assertion": "1/12 gives a terminating decimal.",
+     "reason": "12 is an even number."
+    }
+   ],
+   "written": {
+    "17": "Arrange in descending order: 2.08, 2.8, 2.088, 2.808, 2.0808.",
+    "18": "Write as fractions in lowest terms: (a) 0.064 (b) 3.75.",
+    "19": "Find 15.2 − 7.865 + 4.3.",
+    "20": "Simplify: (2.5 × 0.6 + 0.75) ÷ 0.15.",
+    "21": "Write 4/7 as a decimal and show which digits recur.",
+    "22": "A shirt needs 2.25 m of cloth. How many shirts can be made from 31.5 m? Find the cost of the cloth used for one shirt at ₹84.40 per metre.",
+    "23": [
+     "Raj buys 2.5 kg apples at ₹128.40 per kg and 1.75 kg grapes at ₹96 per kg.",
+     "(a) Find the cost of the apples.",
+     "(b) Find the cost of the grapes.",
+     "(c) He gives ₹500. How much change does he get?"
+    ],
+    "24": [
+     "(a) Which lap was the fastest? [1]",
+     "(b) Find the total time for the four laps. [1]",
+     "(c) Find the average time per lap. By how many seconds was the slowest lap slower than the average? [2]"
+    ]
+   },
+   "caseStudy": "A runner records her times for four laps: 72.45 s, 70.8 s, 71.06 s and 69.69 s.",
+   "answerKey": [
+    3,
+    0,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Like decimals: 2.0800, 2.8000, 2.0880, 2.8080, 2.0808 ⇒ 2.808 > 2.8 > 2.088 > 2.0808 > 2.08.",
+    "18": "(a) 64/1000 = 8/125. (b) 375/100 = 15/4.",
+    "19": "15.200 − 7.865 = 7.335; 7.335 + 4.300 = 11.635.",
+    "20": "2.5 × 0.6 = 1.5; 1.5 + 0.75 = 2.25; 2.25 ÷ 0.15 = 225 ÷ 15 = 15.",
+    "21": "4 ÷ 7 = 0.571428571428… = 0.571428 with all six digits 571428 recurring.",
+    "22": "31.5 ÷ 2.25 = 3150 ÷ 225 = 14 shirts. Cost = 2.25 × 84.40 = ₹189.90.",
+    "23": "(a) 2.5 × 128.40 = ₹321. (b) 1.75 × 96 = ₹168. (c) 500 − (321 + 168) = ₹11.",
+    "24": "(a) Lap 4, 69.69 s. (b) 72.45 + 70.8 + 71.06 + 69.69 = 284 s. (c) Average = 284 ÷ 4 = 71 s. Slowest 72.45 − 71 = 1.45 s."
+   }
+  },
+  {
+   "id": "icse7-exponents-01",
+   "chapter": "Exponents",
+   "chapterNumber": 5,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Powers, laws of exponents and standard form.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "(−1)⁵⁰ + (−1)⁵¹ =",
+     "options": [
+      "−2",
+      "2",
+      "1",
+      "0"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "(2³)² ÷ 2⁴ =",
+     "options": [
+      "8",
+      "2",
+      "4",
+      "16"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "6,30,00,000 in standard form is",
+     "options": [
+      "6.3 × 10⁸",
+      "63 × 10⁶",
+      "6.3 × 10⁷",
+      "0.63 × 10⁸"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If 7ˣ ÷ 7² = 7⁵, then x =",
+     "options": [
+      "10",
+      "3",
+      "7",
+      "5/2"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "(−5)² = 25.",
+     "reason": "A negative number raised to an even power is positive."
+    },
+    {
+     "number": 6,
+     "assertion": "2³ = 3².",
+     "reason": "Both 2³ and 3² use the digits 2 and 3."
+    }
+   ],
+   "written": {
+    "17": "Express 2160 as a product of powers of prime factors.",
+    "18": "Simplify: (2⁵ × 3⁴ × 5) ÷ (2³ × 3² × 5).",
+    "19": "Find the value of: (a) (−3)⁴ − (−2)⁵ (b) (2/5)³ × (5/2)².",
+    "20": "Simplify and write in exponent form: (a⁴)³ × a⁵ ÷ (a²)⁶.",
+    "21": "Find x if (a) 2ˣ⁺¹ = 32 (b) (3/5)ˣ × (3/5)⁴ = (3/5)⁹.",
+    "22": "Write in standard form: (a) 4,05,00,000 (b) the speed of light, 300,000,000 m/s. Write 2.07 × 10⁶ in usual form.",
+    "23": [
+     "Simplify each expression.",
+     "(a) (2⁰ + 3⁰ + 4⁰) × 5²",
+     "(b) (3² × 3⁵) ÷ (3⁴)²",
+     "(c) (25 × t⁴) ÷ (5³ × 10 × t⁸) × 10⁰, and give the value when t = 1."
+    ],
+    "24": [
+     "(a) Write the number at 12 noon as 500 × 2ⁿ. [1]",
+     "(b) Find the number at 2 pm. [1]",
+     "(c) At what time does the colony first have more than 1,00,000 bacteria? Write that number in standard form. [2]"
+    ]
+   },
+   "caseStudy": "A bacteria colony doubles every hour. At 9 am there are 500 bacteria.",
+   "answerKey": [
+    3,
+    2,
+    2,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "2160 = 2⁴ × 3³ × 5.",
+    "18": "2⁵⁻³ × 3⁴⁻² × 5⁰ = 2² × 3² = 36.",
+    "19": "(a) 81 − (−32) = 113. (b) (2/5)³ × (5/2)² = 2³/5³ × 5²/2² = 2/5.",
+    "20": "a¹² × a⁵ ÷ a¹² = a⁵.",
+    "21": "(a) 32 = 2⁵ ⇒ x + 1 = 5 ⇒ x = 4. (b) x + 4 = 9 ⇒ x = 5.",
+    "22": "(a) 4.05 × 10⁷. (b) 3 × 10⁸ m/s. 2.07 × 10⁶ = 20,70,000.",
+    "23": "(a) 3 × 25 = 75. (b) 3⁷ ÷ 3⁸ = 1/3. (c) 5² t⁴ ÷ (5³ × 2 × 5 × t⁸) = 1/(2 × 5² × t⁴) = 1/(50t⁴); at t = 1 it is 1/50.",
+    "24": "(a) 3 hours: 500 × 2³. (b) 5 hours: 500 × 2⁵ = 16,000. (c) 500 × 2⁸ = 1,28,000 > 1,00,000 and 500 × 2⁷ = 64,000. So at 5 pm, 1.28 × 10⁵."
+   }
+  },
+  {
+   "id": "icse7-sets-01",
+   "chapter": "Set Concepts",
+   "chapterNumber": 6,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Sets, notation, kinds of sets, subsets, complement and Venn diagrams.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The number of elements in {x : x ∈ W, x < 5} is",
+     "options": [
+      "4",
+      "0",
+      "5",
+      "6"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which set is empty?",
+     "options": [
+      "{x : x ∈ N, x + 2 = 2}",
+      "{0}",
+      "{∅}",
+      "{x : x is even}"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The number of subsets of {1, 2, 3, 4} is",
+     "options": [
+      "15",
+      "16",
+      "8",
+      "4"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If ξ = {1, 2, 3, 4, 5} and A = {1, 3, 5}, then A′ =",
+     "options": [
+      "∅",
+      "{1, 2, 3, 4, 5}",
+      "{2, 4}",
+      "{1, 3, 5}"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "{1, 2, 3} and {a, b, c} are equivalent sets.",
+     "reason": "Equivalent sets have the same number of elements."
+    },
+    {
+     "number": 6,
+     "assertion": "{0} is an empty set.",
+     "reason": "0 is a whole number."
+    }
+   ],
+   "written": {
+    "17": "Write in roster form: (a) {x : x ∈ N, x is a factor of 18} (b) {x : x is a letter of the word ‘COMMITTEE’}.",
+    "18": "Write in set-builder form: (a) {2, 4, 6, 8, 10} (b) {1, 4, 9, 16, 25}.",
+    "19": "State whether each set is finite or infinite, and give a reason: (a) multiples of 7 (b) {x : x ∈ N, x < 50} (c) points on a circle.",
+    "20": "Write all the subsets of {p, q, r}. Mark the proper subsets.",
+    "21": "ξ = {x : x ∈ N, x ≤ 12}, A = {multiples of 3}, B = {even numbers}. List A′ and B′. Find n(A′) and n(B′).",
+    "22": "Which pairs are equal and which are only equivalent? A = {1, 3, 5}, B = {5, 1, 3}, C = {a, e, i, o}, D = {x : x is a vowel}, E = {2, 4, 6}.",
+    "23": [
+     "ξ = {1, 2, 3, …, 15}, P = {prime numbers}, Q = {odd numbers}.",
+     "(a) List P and Q.",
+     "(b) List the elements that are in both P and Q.",
+     "(c) Draw a Venn diagram and place all 15 numbers in it."
+    ],
+    "24": [
+     "(a) Take ξ = the class. Write n(ξ). [1]",
+     "(b) How many students play both games? [1]",
+     "(c) How many play only football and how many play only cricket? Show this in a Venn diagram. [2]"
+    ]
+   },
+   "caseStudy": "In a class of 40 students, every student plays football or cricket or both. 25 play football and 22 play cricket.",
+   "answerKey": [
+    2,
+    0,
+    1,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) {1, 2, 3, 6, 9, 18}. (b) {C, O, M, I, T, E}.",
+    "18": "(a) {x : x = 2n, n ∈ N, n ≤ 5}. (b) {x : x = n², n ∈ N, n ≤ 5}.",
+    "19": "(a) Infinite, the multiples never end. (b) Finite, 49 elements. (c) Infinite, a circle has infinitely many points.",
+    "20": "∅, {p}, {q}, {r}, {p, q}, {p, r}, {q, r}, {p, q, r}. All except {p, q, r} are proper subsets (7).",
+    "21": "A = {3, 6, 9, 12}, A′ = {1, 2, 4, 5, 7, 8, 10, 11}, n(A′) = 8. B = {2, 4, 6, 8, 10, 12}, B′ = {1, 3, 5, 7, 9, 11}, n(B′) = 6.",
+    "22": "A = B (same elements). C = D (vowels a, e, i, o, u: D has 5 elements, so C ≠ D and n(C) = 4, n(D) = 5, not equivalent). A, B and E are equivalent (3 elements each).",
+    "23": "(a) P = {2, 3, 5, 7, 11, 13}, Q = {1, 3, 5, 7, 9, 11, 13, 15}. (b) {3, 5, 7, 11, 13}. (c) Overlap: 3, 5, 7, 11, 13; only P: 2; only Q: 1, 9, 15; outside: 4, 6, 8, 10, 12, 14.",
+    "24": "(a) n(ξ) = 40. (b) 25 + 22 − 40 = 7. (c) Only football 25 − 7 = 18, only cricket 22 − 7 = 15."
+   }
+  },
+  {
+   "id": "icse7-ratio-proportion-01",
+   "chapter": "Ratio and Proportion",
+   "chapterNumber": 7,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Ratio, dividing in a ratio, proportion, and third, fourth and mean proportional.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The ratio of 500 g to 2 kg is",
+     "options": [
+      "4 : 1",
+      "250 : 1",
+      "1 : 4",
+      "5 : 2"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The mean proportional between 4 and 25 is",
+     "options": [
+      "14.5",
+      "29",
+      "10",
+      "100"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If 4 : 9 :: x : 27, then x =",
+     "options": [
+      "6",
+      "81",
+      "3",
+      "12"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "₹720 divided in 3 : 5. The smaller share is",
+     "options": [
+      "₹144",
+      "₹240",
+      "₹450",
+      "₹270"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "12, 18, 27 are in continued proportion.",
+     "reason": "12 × 27 = 18²."
+    },
+    {
+     "number": 6,
+     "assertion": "The ratio of 3 kg to 50 g is 3 : 50.",
+     "reason": "A ratio compares quantities in the same unit."
+    }
+   ],
+   "written": {
+    "17": "Express in lowest terms: (a) 1 h 20 min : 2 h (b) 2.5 m : 75 cm.",
+    "18": "Find the fourth proportional to 3, 12 and 15 and the third proportional to 5 and 15.",
+    "19": "If a : b = 3 : 4 and b : c = 6 : 7, find a : b : c.",
+    "20": "Divide ₹4500 among A, B and C in the ratio 2 : 3 : 4.",
+    "21": "Two numbers are in the ratio 5 : 7. If 6 is subtracted from each, the ratio becomes 3 : 5. Find the numbers.",
+    "22": "The ratio of the incomes of P and Q is 5 : 4. Each saves ₹2000. Their expenses are in the ratio 3 : 2. Find their incomes.",
+    "23": [
+     "A bag has red, blue and green marbles in the ratio 3 : 4 : 5. There are 96 marbles.",
+     "(a) Find the number of each colour.",
+     "(b) How many green marbles must be added so that red : green = 1 : 3?",
+     "(c) After (b), find the new ratio red : blue : green."
+    ],
+    "24": [
+     "(a) Find the number of girls. [1]",
+     "(b) Find the number of teachers. [1]",
+     "(c) 40 new girls join. Find the new ratio of boys to girls. How many teachers are needed now to keep the ratio 28 : 1? [2]"
+    ]
+   },
+   "caseStudy": "A school has 840 students. The ratio of boys to girls is 4 : 3. The ratio of students to teachers is 28 : 1.",
+   "answerKey": [
+    2,
+    2,
+    3,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) 80 min : 120 min = 2 : 3. (b) 250 cm : 75 cm = 10 : 3.",
+    "18": "Fourth: (12 × 15)/3 = 60. Third: 15²/5 = 45.",
+    "19": "a : b = 9 : 12, b : c = 12 : 14 ⇒ 9 : 12 : 14.",
+    "20": "Total parts 9: A = ₹1000, B = ₹1500, C = ₹2000.",
+    "21": "(5k − 6) : (7k − 6) = 3 : 5 ⇒ 25k − 30 = 21k − 18 ⇒ k = 3. Numbers 15 and 21.",
+    "22": "(5x − 2000) : (4x − 2000) = 3 : 2 ⇒ 10x − 4000 = 12x − 6000 ⇒ x = 1000. Incomes ₹5000 and ₹4000.",
+    "23": "(a) Parts 12, one part 8: red 24, blue 32, green 40. (b) Need green 72, add 32. (c) 24 : 32 : 72 = 3 : 4 : 9.",
+    "24": "(a) 3/7 × 840 = 360 girls. (b) 840 ÷ 28 = 30 teachers. (c) Boys 480, girls 400: 480 : 400 = 6 : 5. Students 880 ÷ 28 = 31.4…, so 32 teachers."
+   }
+  },
+  {
+   "id": "icse7-unitary-method-01",
+   "chapter": "Unitary Method",
+   "chapterNumber": 8,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Direct and inverse variation, and time and work.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "9 books cost ₹450. 14 books cost",
+     "options": [
+      "₹900",
+      "₹630",
+      "₹650",
+      "₹700"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "8 men do a job in 15 days. 12 men take",
+     "options": [
+      "22.5 days",
+      "10 days",
+      "12 days",
+      "18 days"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A does a work in 20 days and B in 30 days. Together they take",
+     "options": [
+      "50 days",
+      "10 days",
+      "12 days",
+      "25 days"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Speed and time for a fixed distance vary",
+     "options": [
+      "inversely",
+      "equally",
+      "not at all",
+      "directly"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If more workers do a job, the job takes fewer days.",
+     "reason": "The number of workers and the number of days vary inversely."
+    },
+    {
+     "number": 6,
+     "assertion": "A who does a work in 5 days does 1/10 of it in one day.",
+     "reason": "One-day work = 1 ÷ number of days."
+    }
+   ],
+   "written": {
+    "17": "A car travels 360 km on 24 L of petrol. How much petrol does it need for 525 km?",
+    "18": "25 workers can build a road in 36 days. How many workers are needed to build it in 30 days?",
+    "19": "A can do a piece of work in 12 days and B in 18 days. How long do they take together?",
+    "20": "A and B together can do a work in 15 days. A alone can do it in 20 days. How long does B alone take? What part of the work does B do in 5 days?",
+    "21": "A camp has food for 120 children for 25 days. After 5 days, 30 more children join. How long does the remaining food last?",
+    "22": "Pipe A fills a tank in 12 minutes and pipe B in 15 minutes. Pipe C empties it in 20 minutes. All three are opened together. How long does the tank take to fill?",
+    "23": [
+     "A can do a work in 10 days and B in 15 days.",
+     "(a) Find their one-day work together.",
+     "(b) They work together for 4 days. What part of the work is left?",
+     "(c) B finishes the rest alone. Find the total time taken for the work."
+    ],
+    "24": [
+     "(a) How many pages do the 3 machines print together in 1 hour? [1]",
+     "(b) How long do the 3 machines take for the order? [1]",
+     "(c) One machine breaks after 10 hours. How much longer do the other 2 machines take to finish the order? [2]"
+    ]
+   },
+   "caseStudy": "A printing press has 3 machines. Each machine prints 1200 pages per hour. A book order is 72,000 pages.",
+   "answerKey": [
+    3,
+    1,
+    2,
+    0,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "1 L → 15 km. 525 ÷ 15 = 35 L.",
+    "18": "25 × 36 = 900 worker-days. 900 ÷ 30 = 30 workers.",
+    "19": "1/12 + 1/18 = 5/36 ⇒ 36/5 = 7 1/5 days.",
+    "20": "B = 1/15 − 1/20 = 1/60 ⇒ 60 days. In 5 days B does 5/60 = 1/12 of the work.",
+    "21": "Remaining food lasts 120 children for 20 days = 2400 child-days. 2400 ÷ 150 = 16 days.",
+    "22": "1/12 + 1/15 − 1/20 = (5 + 4 − 3)/60 = 1/10 ⇒ 10 minutes.",
+    "23": "(a) 1/10 + 1/15 = 1/6. (b) 4/6 = 2/3 done; 1/3 left. (c) B: (1/3) ÷ (1/15) = 5 days. Total 4 + 5 = 9 days.",
+    "24": "(a) 3600 pages. (b) 72,000 ÷ 3600 = 20 h. (c) In 10 h: 36,000 pages. Left 36,000; 2 machines print 2400 per hour ⇒ 15 h more."
+   }
+  },
+  {
+   "id": "icse7-percent-01",
+   "chapter": "Percent and Percentage",
+   "chapterNumber": 9,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Conversions, percentage of a quantity, finding the whole, and percent increase and decrease.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "7/20 as a percent is",
+     "options": [
+      "35%",
+      "3.5%",
+      "28%",
+      "70%"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "20% of 20% of 500 is",
+     "options": [
+      "20",
+      "100",
+      "4",
+      "40"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A price falls from ₹500 to ₹425. The percent decrease is",
+     "options": [
+      "75%",
+      "12%",
+      "15%",
+      "17.6%"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If 8% of a number is 36, the number is",
+     "options": [
+      "288",
+      "45",
+      "450",
+      "2.88"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "x% of y = y% of x.",
+     "reason": "Both are equal to xy/100."
+    },
+    {
+     "number": 6,
+     "assertion": "A 50% increase followed by a 50% decrease brings a price back to the original.",
+     "reason": "The second change is found on the new price."
+    }
+   ],
+   "written": {
+    "17": "Express as percents: (a) 7/25 (b) 1.35 (c) 3/16.",
+    "18": "Find: (a) 12½% of ₹960 (b) what percent 45 minutes is of 3 hours.",
+    "19": "In a class of 45 students, 60% are girls. How many boys are there?",
+    "20": "A number increased by 15% becomes 828. Find the number.",
+    "21": "A student needs 33% to pass. She gets 247 marks and fails by 17 marks. Find the maximum marks.",
+    "22": "The population of a village was 12,500. It increased by 8% in the first year and decreased by 8% in the second year. Find the population after two years.",
+    "23": [
+     "Raman's monthly income is ₹40,000.",
+     "(a) He spends 25% on rent. Find the rent.",
+     "(b) He spends 30% of the remaining on food. Find the money spent on food.",
+     "(c) He saves the rest. What percent of his income does he save?"
+    ],
+    "24": [
+     "(a) How many students come by car? [1]",
+     "(b) How many more students walk than come by bus? [1]",
+     "(c) Next year, the number who come by bus increases by 20%, and the total stays 1200. Find the new percent who come by bus. [2]"
+    ]
+   },
+   "caseStudy": "A school has 1200 students. In a survey, 45% walk to school, 30% come by bus and the rest come by car.",
+   "answerKey": [
+    0,
+    0,
+    2,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) 28% (b) 135% (c) 18.75%.",
+    "18": "(a) 1/8 × 960 = ₹120. (b) 45/180 × 100 = 25%.",
+    "19": "Boys 40% of 45 = 18.",
+    "20": "1.15x = 828 ⇒ x = 720.",
+    "21": "Pass mark 264 = 33% of M ⇒ M = 800.",
+    "22": "12,500 × 1.08 = 13,500; 13,500 × 0.92 = 12,420.",
+    "23": "(a) ₹10,000. (b) Remaining ₹30,000; 30% = ₹9,000. (c) Saves 40,000 − 19,000 = ₹21,000 = 52.5%.",
+    "24": "(a) 25% of 1200 = 300. (b) Walk 540, bus 360: 180 more. (c) Bus 360 × 1.2 = 432; 432/1200 × 100 = 36%."
+   }
+  },
+  {
+   "id": "icse7-profit-loss-discount-01",
+   "chapter": "Profit, Loss and Discount",
+   "chapterNumber": 10,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Profit, loss, overheads, marked price and discount.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "CP ₹800, SP ₹920. Profit % =",
+     "options": [
+      "20%",
+      "13%",
+      "15%",
+      "12%"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "SP ₹1080 at 10% loss. CP =",
+     "options": [
+      "₹1188",
+      "₹1100",
+      "₹972",
+      "₹1200"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "MP ₹1250, discount 8%. SP =",
+     "options": [
+      "₹100",
+      "₹1100",
+      "₹1150",
+      "₹1242"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Marked 20% above CP with a 10% discount. Profit % =",
+     "options": [
+      "2%",
+      "10%",
+      "8%",
+      "12%"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A 20% discount on ₹500 gives SP ₹400.",
+     "reason": "Discount is found on the marked price."
+    },
+    {
+     "number": 6,
+     "assertion": "Profit percent is found on the selling price.",
+     "reason": "Profit = SP − CP."
+    }
+   ],
+   "written": {
+    "17": "A shopkeeper buys a table for ₹2400 and spends ₹100 on transport. He sells it for ₹2800. Find his profit percent.",
+    "18": "A mobile phone is sold for ₹9,775 at a profit of 15%. Find its cost price.",
+    "19": "A shirt is marked ₹1,200. The shop gives a discount of 12½%. Find the selling price.",
+    "20": "By selling 20 bulbs for ₹360, a shopkeeper gains 20%. Find the cost price of one bulb.",
+    "21": "A dealer marks his goods 30% above the cost price and allows a discount of 10%. Find his profit percent.",
+    "22": "A man sold two watches for ₹1,980 each. On one he gained 10% and on the other he lost 10%. Find his total gain or loss.",
+    "23": [
+     "A shopkeeper buys 50 kg of rice at ₹48 per kg.",
+     "(a) Find the total CP.",
+     "(b) He sells 30 kg at ₹56 per kg and the rest at ₹45 per kg. Find the total SP.",
+     "(c) Find his profit or loss percent."
+    ],
+    "24": [
+     "(a) Find the selling price during the sale. [1]",
+     "(b) Find the profit percent during the sale. [1]",
+     "(c) After the sale, he wants a profit of 35%. What discount percent can he give on the marked price? [2]"
+    ]
+   },
+   "caseStudy": "A shop sells a jacket. Its cost price is ₹2,000. The shopkeeper marks it at ₹3,000. During a sale, he gives a discount of 20%.",
+   "answerKey": [
+    2,
+    3,
+    2,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "CP = 2500, profit = 300; 300/2500 × 100 = 12%.",
+    "18": "9775 ÷ 1.15 = ₹8,500.",
+    "19": "1200 × 7/8 = ₹1,050.",
+    "20": "SP of 1 bulb = 18; CP = 18 ÷ 1.2 = ₹15.",
+    "21": "CP 100 → MP 130 → SP 117. Profit 17%.",
+    "22": "CPs: 1980 ÷ 1.1 = 1800 and 1980 ÷ 0.9 = 2200. Total CP 4000, SP 3960. Loss ₹40 (1%).",
+    "23": "(a) 50 × 48 = ₹2,400. (b) 30 × 56 + 20 × 45 = 1680 + 900 = ₹2,580. (c) Profit 180; 180/2400 × 100 = 7.5%.",
+    "24": "(a) 3000 × 0.8 = ₹2,400. (b) 400/2000 × 100 = 20%. (c) SP = 2000 × 1.35 = 2700. Discount = 300 = 10% of MP."
+   }
+  },
+  {
+   "id": "icse7-simple-interest-01",
+   "chapter": "Simple Interest",
+   "chapterNumber": 11,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Simple interest and amount, and finding the principal, rate or time.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "SI on ₹3200 at 6% for 2 years is",
+     "options": [
+      "₹3584",
+      "₹38.40",
+      "₹384",
+      "₹192"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A sum doubles in 10 years at SI. The rate is",
+     "options": [
+      "10%",
+      "5%",
+      "20%",
+      "12%"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "₹2000 amounts to ₹2600 in 5 years. The rate is",
+     "options": [
+      "5%",
+      "3%",
+      "12%",
+      "6%"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The time in years for 8 months is",
+     "options": [
+      "3/4",
+      "4/5",
+      "8/10",
+      "2/3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "SI on ₹1000 at 10% for 2 years is ₹200.",
+     "reason": "SI = PRT/100."
+    },
+    {
+     "number": 6,
+     "assertion": "The amount is always less than the principal.",
+     "reason": "Amount = P + SI."
+    }
+   ],
+   "written": {
+    "17": "Find the simple interest and amount on ₹8,400 at 7½% per annum for 3 years.",
+    "18": "Find the SI on ₹4,800 at 5% per annum for 146 days.",
+    "19": "At what rate percent does ₹5,000 amount to ₹6,200 in 4 years?",
+    "20": "In how many years does ₹2,500 amount to ₹3,250 at 6% per annum?",
+    "21": "What sum of money lent at 8% per annum amounts to ₹7,440 in 3 years?",
+    "22": "A sum of money amounts to ₹5,880 in 3 years and to ₹6,600 in 5 years at simple interest. Find the sum and the rate.",
+    "23": [
+     "Anu deposits ₹20,000 in a bank at 6% per annum simple interest.",
+     "(a) Find the interest after 3 years.",
+     "(b) Find the amount after 3 years.",
+     "(c) How many years will the deposit take to grow to ₹29,000?"
+    ],
+    "24": [
+     "(a) Find the interest Arun pays the bank in 2 years. [1]",
+     "(b) Find the interest Arun gets from the friend in 2 years. [1]",
+     "(c) Find Arun's gain in 2 years. After how many years does his gain become ₹1,500? [2]"
+    ]
+   },
+   "caseStudy": "Arun borrows ₹15,000 from a bank at 10% per annum simple interest. He lends the same money to a friend at 12½% per annum simple interest.",
+   "answerKey": [
+    2,
+    0,
+    3,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "SI = 8400 × 7.5 × 3/100 = ₹1,890. Amount = ₹10,290.",
+    "18": "T = 146/365 = 2/5. SI = 4800 × 5 × 2/500 = ₹96.",
+    "19": "SI = 1200. R = 120000/20000 = 6%.",
+    "20": "SI = 750. T = 75000/15000 = 5 years.",
+    "21": "P + P × 8 × 3/100 = 7440 ⇒ 1.24P = 7440 ⇒ P = ₹6,000.",
+    "22": "SI for 2 years = 720, for 1 year = 360. P = 5880 − 1080 = ₹4,800. R = 36000/4800 = 7.5%.",
+    "23": "(a) 20000 × 6 × 3/100 = ₹3,600. (b) ₹23,600. (c) SI = 9000 ⇒ T = 900000/120000 = 7.5 years.",
+    "24": "(a) 15000 × 10 × 2/100 = ₹3,000. (b) 15000 × 12.5 × 2/100 = ₹3,750. (c) Gain ₹750 in 2 years, ₹375 per year. 1500 ÷ 375 = 4 years."
+   }
+  },
+  {
+   "id": "icse7-speed-distance-time-01",
+   "chapter": "Speed, Distance and Time",
+   "chapterNumber": 12,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Speed, distance, time, unit conversion, average speed and trains.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "54 km/h in m/s is",
+     "options": [
+      "19.44 m/s",
+      "5 m/s",
+      "15 m/s",
+      "18 m/s"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A car runs 210 km in 3 h 30 min. Speed =",
+     "options": [
+      "65 km/h",
+      "60 km/h",
+      "63 km/h",
+      "70 km/h"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A train 120 m long passes a pole in 8 s. Speed =",
+     "options": [
+      "45 km/h",
+      "60 km/h",
+      "15 km/h",
+      "54 km/h"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Same distance at 40 and 60 km/h. Average speed =",
+     "options": [
+      "48 km/h",
+      "50 km/h",
+      "45 km/h",
+      "52 km/h"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A train crossing a bridge covers its length plus the bridge length.",
+     "reason": "The last coach must leave the bridge."
+    },
+    {
+     "number": 6,
+     "assertion": "The average speed for equal distances at 40 km/h and 60 km/h is 50 km/h.",
+     "reason": "Average speed = total distance ÷ total time."
+    }
+   ],
+   "written": {
+    "17": "Convert: (a) 90 km/h to m/s (b) 25 m/s to km/h.",
+    "18": "A cyclist covers 27 km in 1 h 48 min. Find his speed in km/h and in m/s.",
+    "19": "A train runs at 75 km/h. How far does it go in 3 h 12 min?",
+    "20": "A man goes to a town 60 km away at 30 km/h and returns at 20 km/h. Find his average speed for the whole journey.",
+    "21": "A train 280 m long runs at 72 km/h. Find the time it takes to cross (a) a pole (b) a platform 220 m long.",
+    "22": "Two trains 200 m and 160 m long run on parallel tracks. Find the time they take to cross each other if their speeds are 54 km/h and 36 km/h and they run (a) in opposite directions (b) in the same direction.",
+    "23": [
+     "Meera leaves home at 8:00 am and drives at 60 km/h. Her brother leaves the same home at 9:00 am on the same road at 80 km/h.",
+     "(a) How far ahead is Meera at 9:00 am?",
+     "(b) At what time does her brother catch up?",
+     "(c) How far from home are they at that time?"
+    ],
+    "24": [
+     "(a) Find the time for the first 24 km. [1]",
+     "(b) Find the time for the last 12 km. [1]",
+     "(c) Find the time the bus reaches the last stop and the average speed for the whole route, including the stop. [2]"
+    ]
+   },
+   "caseStudy": "A school bus route is 36 km long. The bus leaves school at 7:00 am. It drives the first 24 km at 48 km/h and stops for 6 minutes. It drives the rest at 40 km/h.",
+   "answerKey": [
+    2,
+    1,
+    3,
+    0,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) 90 × 5/18 = 25 m/s. (b) 25 × 18/5 = 90 km/h.",
+    "18": "T = 1.8 h; 27 ÷ 1.8 = 15 km/h = 15 × 5/18 = 25/6 m/s ≈ 4.17 m/s.",
+    "19": "75 × 3.2 = 240 km.",
+    "20": "Times 2 h and 3 h. 120 ÷ 5 = 24 km/h.",
+    "21": "Speed 20 m/s. (a) 280 ÷ 20 = 14 s. (b) 500 ÷ 20 = 25 s.",
+    "22": "Total length 360 m. (a) 90 km/h = 25 m/s: 360 ÷ 25 = 14.4 s. (b) 18 km/h = 5 m/s: 360 ÷ 5 = 72 s.",
+    "23": "(a) 60 km. (b) Relative speed 20 km/h; 60 ÷ 20 = 3 h ⇒ 12 noon. (c) 80 × 3 = 240 km.",
+    "24": "(a) 24 ÷ 48 = 0.5 h = 30 min. (b) 12 ÷ 40 = 0.3 h = 18 min. (c) Total 30 + 6 + 18 = 54 min ⇒ 7:54 am. Average = 36 ÷ 0.9 = 40 km/h."
+   }
+  },
+  {
+   "id": "icse7-algebra-01",
+   "chapter": "Fundamental Concepts",
+   "chapterNumber": 13,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Terms, like terms, operations on polynomials and substitution.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The coefficient of a in −7ab is",
+     "options": [
+      "b",
+      "7b",
+      "−7",
+      "−7b"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "(4x − 3y) − (x + 2y) =",
+     "options": [
+      "3x − y",
+      "3x − 5y",
+      "5x − 5y",
+      "3x + 5y"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "(x − 3)(x + 2) =",
+     "options": [
+      "x² − x − 6",
+      "x² − 6",
+      "x² − 5x − 6",
+      "x² + x − 6"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The degree of 3x⁴ − x + 2 is",
+     "options": [
+      "3",
+      "1",
+      "2",
+      "4"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "3xy and −5yx are like terms.",
+     "reason": "Like terms have the same variables with the same powers."
+    },
+    {
+     "number": 6,
+     "assertion": "x² and 2x are like terms.",
+     "reason": "Both terms have the variable x."
+    }
+   ],
+   "written": {
+    "17": "Add: 4a² − 3ab + b², −2a² + 5ab − 3b² and a² − ab + 4b².",
+    "18": "Subtract 3x² − 5x + 2 from 7x² + x − 6.",
+    "19": "Simplify: 3a − [2b − {4a − (3b − a)}].",
+    "20": "Multiply: (3x − 2y)(2x + 5y).",
+    "21": "Divide 18a⁴b³ − 12a³b² + 6a²b by 6a²b.",
+    "22": "If a = 2, b = −1 and c = 3, find the value of (a) a² + b² − c² (b) 2ab − 3bc + ca.",
+    "23": [
+     "The sides of a triangle are (3x − 2) cm, (2x + 5) cm and (x + 1) cm.",
+     "(a) Find the perimeter in terms of x.",
+     "(b) Find the perimeter when x = 4.",
+     "(c) The perimeter is 34 cm. Find x and the length of the longest side."
+    ],
+    "24": [
+     "(a) Write the area of the garden as a polynomial. [1]",
+     "(b) Write the length and breadth of the inner part (without the path). [1]",
+     "(c) Find the area of the path as a polynomial and its value when x = 5. [2]"
+    ]
+   },
+   "caseStudy": "A rectangular garden has length (2x + 5) m and breadth (x + 3) m. A path 1 m wide runs inside along all four sides.",
+   "answerKey": [
+    3,
+    1,
+    0,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(4 − 2 + 1)a² + (−3 + 5 − 1)ab + (1 − 3 + 4)b² = 3a² + ab + 2b².",
+    "18": "7x² + x − 6 − 3x² + 5x − 2 = 4x² + 6x − 8.",
+    "19": "(3b − a): 4a − 3b + a = 5a − 3b; 2b − 5a + 3b = 5b − 5a; 3a − 5b + 5a = 8a − 5b.",
+    "20": "6x² + 15xy − 4xy − 10y² = 6x² + 11xy − 10y².",
+    "21": "3a²b² − 2ab + 1.",
+    "22": "(a) 4 + 1 − 9 = −4. (b) 2(2)(−1) − 3(−1)(3) + 3(2) = −4 + 9 + 6 = 11.",
+    "23": "(a) 6x + 4 cm. (b) 28 cm. (c) 6x + 4 = 34 ⇒ x = 5. Sides 13, 15, 6: longest 15 cm.",
+    "24": "(a) (2x + 5)(x + 3) = 2x² + 11x + 15. (b) (2x + 3) m and (x + 1) m. (c) Inner area = 2x² + 5x + 3. Path = 6x + 12 m²; at x = 5 it is 42 m²."
+   }
+  },
+  {
+   "id": "icse7-linear-equations-01",
+   "chapter": "Simple Linear Equations",
+   "chapterNumber": 14,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Solving linear equations, including brackets and fractions, and word problems.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "4x + 7 = 31 gives x =",
+     "options": [
+      "24",
+      "6",
+      "4",
+      "9.5"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "(x − 1)/3 = 5 gives x =",
+     "options": [
+      "16",
+      "8/3",
+      "14",
+      "2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The sum of two consecutive numbers is 41. The larger is",
+     "options": [
+      "22",
+      "20",
+      "41",
+      "21"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If 2(x + 3) = 18, then x =",
+     "options": [
+      "9",
+      "6",
+      "12",
+      "7.5"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "x = 3 is the solution of 2x + 1 = 7.",
+     "reason": "2(3) + 1 = 7."
+    },
+    {
+     "number": 6,
+     "assertion": "x = 2 is the solution of 3x − 1 = 7.",
+     "reason": "Transposing changes + to −."
+    }
+   ],
+   "written": {
+    "17": "Solve: 4(2x − 3) − 3(x − 5) = 23.",
+    "18": "Solve: x/2 − x/5 = 6.",
+    "19": "Solve: (3x + 1)/4 − (x − 2)/3 = 2.",
+    "20": "The sum of three consecutive even numbers is 96. Find the numbers.",
+    "21": "A mother is 26 years older than her daughter. After 4 years, the mother will be three times as old as the daughter. Find their present ages.",
+    "22": "The length of a rectangle is twice its breadth. If the length is decreased by 4 m and the breadth is increased by 3 m, the rectangle becomes a square. Find the sides of the rectangle.",
+    "23": [
+     "A purse has ₹5, ₹2 and ₹1 coins. The number of ₹2 coins is twice the number of ₹5 coins. The number of ₹1 coins is 3 more than the number of ₹5 coins. The total is ₹83.",
+     "(a) Let the number of ₹5 coins be x. Write the total money in terms of x.",
+     "(b) Solve for x.",
+     "(c) Find the number of coins of each kind."
+    ],
+    "24": [
+     "(a) Let x notebooks cost ₹25. Write the cost of the other notebooks in terms of x. [1]",
+     "(b) Form the equation for the total bill. [1]",
+     "(c) Solve it and find the number of notebooks of each kind. [2]"
+    ]
+   },
+   "caseStudy": "A school orders 40 notebooks. Some notebooks cost ₹25 each and the others cost ₹40 each. The total bill is ₹1,300.",
+   "answerKey": [
+    1,
+    0,
+    3,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "8x − 12 − 3x + 15 = 23 ⇒ 5x = 20 ⇒ x = 4.",
+    "18": "3x/10 = 6 ⇒ x = 20.",
+    "19": "× 12: 9x + 3 − 4x + 8 = 24 ⇒ 5x = 13 ⇒ x = 13/5.",
+    "20": "x + x + 2 + x + 4 = 96 ⇒ x = 30: 30, 32, 34.",
+    "21": "Daughter x: x + 30 = 3(x + 4) ⇒ 2x = 18 ⇒ x = 9. Daughter 9, mother 35.",
+    "22": "2x − 4 = x + 3 ⇒ x = 7. Breadth 7 m, length 14 m.",
+    "23": "(a) 5x + 2(2x) + 1(x + 3) = 10x + 3. (b) 10x + 3 = 83 ⇒ x = 8. (c) ₹5 coins: 8, ₹2 coins: 16, ₹1 coins: 11. Check: 40 + 32 + 11 = 83.",
+    "24": "(a) 40(40 − x). (b) 25x + 40(40 − x) = 1300. (c) 1600 − 15x = 1300 ⇒ x = 20: 20 at ₹25 and 20 at ₹40."
+   }
+  },
+  {
+   "id": "icse7-inequalities-01",
+   "chapter": "Inequalities",
+   "chapterNumber": 15,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Inequations, replacement and solution sets, the rules for solving and graphs on the number line.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "x − 4 < 1, x ∈ N, gives",
+     "options": [
+      "{1, 2, 3, 4, 5}",
+      "{0, 1, 2, 3, 4}",
+      "{5}",
+      "{1, 2, 3, 4}"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "−3x ≤ 12 gives",
+     "options": [
+      "x ≤ 4",
+      "x ≥ −4",
+      "x ≤ −4",
+      "x ≥ 4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "−2 ≤ x < 1, x ∈ Z, gives",
+     "options": [
+      "{−1, 0, 1}",
+      "{−1, 0}",
+      "{−2, −1, 0}",
+      "{−2, −1, 0, 1}"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "x ∈ W, 3x < 2. The solution set is",
+     "options": [
+      "{1}",
+      "{0, 1}",
+      "{0}",
+      "∅"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "−2x < 8 gives x > −4.",
+     "reason": "Dividing by a negative number reverses the sign."
+    },
+    {
+     "number": 6,
+     "assertion": "x ∈ N, x < 1 gives {0}.",
+     "reason": "0 is less than 1."
+    }
+   ],
+   "written": {
+    "17": "Solve 2x − 3 < 7, x ∈ W, and write the solution set.",
+    "18": "Solve 5 − 3x ≥ −4, x ∈ N.",
+    "19": "Solve −4 < 3x + 2 ≤ 11, x ∈ Z, and show the solution on a number line.",
+    "20": "Solve x/3 + 1/2 ≤ x/4 + 1, x ∈ W.",
+    "21": "The replacement set is {−3, −2, −1, 0, 1, 2, 3}. Solve (a) x + 2 > 3 (b) 2x − 1 ≤ 1 (c) −x < 2.",
+    "22": "Solve 3(x − 2) ≥ 5x − 12, x ∈ N, and show the solution set on a number line.",
+    "23": [
+     "A taxi charges ₹50 to start and ₹12 per km. Ravi has ₹290.",
+     "(a) Write an inequation for the distance x km he can travel.",
+     "(b) Solve it for x ∈ W.",
+     "(c) What is the greatest whole number of km he can travel, and how much money is left?"
+    ],
+    "24": [
+     "(a) Write an inequation for the number of boxes x that the operator can carry with him. [1]",
+     "(b) Solve it for x ∈ W. [1]",
+     "(c) Find the greatest number of boxes. If each box weighed 40 kg, how many more boxes could he carry? [2]"
+    ]
+   },
+   "caseStudy": "A lift can carry at most 600 kg. The lift operator weighs 60 kg. Each box weighs 45 kg.",
+   "answerKey": [
+    3,
+    1,
+    2,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "2x < 10 ⇒ x < 5: {0, 1, 2, 3, 4}.",
+    "18": "−3x ≥ −9 ⇒ x ≤ 3: {1, 2, 3}.",
+    "19": "−6 < 3x ≤ 9 ⇒ −2 < x ≤ 3: {−1, 0, 1, 2, 3}. Solid dots at these points.",
+    "20": "× 12: 4x + 6 ≤ 3x + 12 ⇒ x ≤ 6: {0, 1, 2, 3, 4, 5, 6}.",
+    "21": "(a) x > 1: {2, 3}. (b) x ≤ 1: {−3, −2, −1, 0, 1}. (c) x > −2: {−1, 0, 1, 2, 3}.",
+    "22": "3x − 6 ≥ 5x − 12 ⇒ −2x ≥ −6 ⇒ x ≤ 3: {1, 2, 3}.",
+    "23": "(a) 50 + 12x ≤ 290. (b) 12x ≤ 240 ⇒ x ≤ 20: {0, 1, …, 20}. (c) 20 km, ₹0 left.",
+    "24": "(a) 60 + 45x ≤ 600. (b) 45x ≤ 540 ⇒ x ≤ 12: {0, 1, …, 12}. (c) 12 boxes. With 40 kg: 40x ≤ 540 ⇒ x ≤ 13.5 ⇒ 13 boxes, 1 more."
+   }
+  },
+  {
+   "id": "icse7-lines-angles-01",
+   "chapter": "Lines and Angles",
+   "chapterNumber": 16,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Complementary and supplementary angles, linear pairs, vertically opposite angles, and parallel lines.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The supplement of 3/5 of a right angle is",
+     "options": [
+      "144°",
+      "126°",
+      "54°",
+      "36°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Angles at a point: 150°, 90°, x. x =",
+     "options": [
+      "120°",
+      "30°",
+      "210°",
+      "60°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Co-interior angles on parallel lines are x and 2x. x =",
+     "options": [
+      "90°",
+      "30°",
+      "45°",
+      "60°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Vertically opposite angles 2x + 5 and 65. x =",
+     "options": [
+      "60",
+      "35",
+      "30",
+      "25"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If two lines are parallel, alternate angles are equal.",
+     "reason": "Corresponding angles on parallel lines are equal and vertically opposite angles are equal."
+    },
+    {
+     "number": 6,
+     "assertion": "40° and 60° are supplementary.",
+     "reason": "Supplementary angles add up to 180°."
+    }
+   ],
+   "written": {
+    "17": "Find the angle which is 2/3 of its complement.",
+    "18": "Two supplementary angles differ by 44°. Find them.",
+    "19": "Three lines meet at a point and form six angles. Five of them are 50°, 60°, 70°, 50° and 60°. Find the sixth angle and name the pairs of vertically opposite angles.",
+    "20": "AB ∥ CD. A transversal PQ cuts AB at M and CD at N, with A and D on opposite sides of PQ. ∠AMN = 72°. Find ∠MND, ∠DNQ and ∠BMN.",
+    "21": "Two parallel lines are cut by a transversal. A pair of co-interior angles are (5x − 20)° and (3x + 40)°. Find x and both angles.",
+    "22": "∠AOB and ∠BOC form a linear pair. ∠AOB = (2y + 10)° and ∠BOC = (3y − 5)°. Find y. Is OB the bisector of the straight angle AOC?",
+    "23": [
+     "Two straight lines AB and CD cross at O. ∠AOC = (4x − 10)° and ∠BOD = (2x + 30)°.",
+     "(a) Find x.",
+     "(b) Find ∠AOC and ∠AOD.",
+     "(c) Find the sum of all four angles at O."
+    ],
+    "24": [
+     "(a) What is the angle the road makes with the second rail on the same side (corresponding angle)? [1]",
+     "(b) Find the co-interior angle at the second rail. [1]",
+     "(c) A second road crosses at right angles to the rails. Find the angle between the two roads, and say which angle property you used. [2]"
+    ]
+   },
+   "caseStudy": "A railway track has two parallel rails. A straight road crosses the rails. The road makes an angle of 58° with the first rail on the left side.",
+   "answerKey": [
+    1,
+    0,
+    3,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "x = 2/3(90 − x) ⇒ 5x/3 = 60 ⇒ x = 36°.",
+    "18": "x + (x + 44) = 180 ⇒ x = 68: 68° and 112°.",
+    "19": "Sum 360: sixth = 360 − 290 = 70°. Opposite pairs: 50° and 50°, 60° and 60°, 70° and 70°.",
+    "20": "∠MND = 72° (alternate to ∠AMN). ∠DNQ = 180 − 72 = 108° (linear pair). ∠BMN = 180 − 72 = 108° (linear pair).",
+    "21": "8x + 20 = 180 ⇒ x = 20: 80° and 100°.",
+    "22": "5y + 5 = 180 ⇒ y = 35. ∠AOB = 80°, ∠BOC = 100°. Not equal, so OB is not the bisector.",
+    "23": "(a) Vertically opposite: 4x − 10 = 2x + 30 ⇒ x = 20. (b) ∠AOC = 70°, ∠AOD = 110°. (c) 360°.",
+    "24": "(a) 58°. (b) 180 − 58 = 122°. (c) The second road is perpendicular to the rails: angle between roads = 90 − 58 = 32° (the two angles at the crossing are complementary)."
+   }
+  },
+  {
+   "id": "icse7-triangles-01",
+   "chapter": "Triangles",
+   "chapterNumber": 17,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Kinds of triangles, the angle sum property, exterior angles and the triangle inequality.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The third angle of a triangle with angles 47° and 68° is",
+     "options": [
+      "65°",
+      "115°",
+      "55°",
+      "75°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which can be the sides of a triangle?",
+     "options": [
+      "5, 1, 3",
+      "2, 2, 5",
+      "4, 6, 9",
+      "3, 5, 9"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "An exterior angle is 125° and one opposite angle is 60°. The other is",
+     "options": [
+      "65°",
+      "185°",
+      "55°",
+      "120°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Base angles of an isosceles triangle are 55° each. The vertex angle is",
+     "options": [
+      "70°",
+      "125°",
+      "55°",
+      "110°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A triangle cannot have two obtuse angles.",
+     "reason": "The angles of a triangle add up to 180°."
+    },
+    {
+     "number": 6,
+     "assertion": "3 cm, 4 cm and 8 cm can form a triangle.",
+     "reason": "The sum of two sides is greater than the third side."
+    }
+   ],
+   "written": {
+    "17": "The angles of a triangle are in the ratio 3 : 5 : 7. Find the angles and name the triangle by its angles.",
+    "18": "In an isosceles triangle, the vertex angle is 30° more than each base angle. Find all three angles.",
+    "19": "One exterior angle of a triangle is 135°. The two interior opposite angles are in the ratio 2 : 3. Find all the angles of the triangle.",
+    "20": "In △ABC, ∠A − ∠B = 15° and ∠B − ∠C = 30°. Find ∠A, ∠B and ∠C.",
+    "21": "Two sides of a triangle are 6 cm and 10 cm. Find the range of the third side. If the third side is a whole number of cm, how many triangles are possible?",
+    "22": "In △PQR, PQ = 7 cm, QR = 4 cm and PR = 9 cm. Arrange the angles in ascending order and give a reason.",
+    "23": [
+     "In △ABC, AB = AC. The side BC is produced to D. ∠ACD = 112°.",
+     "(a) Find ∠ACB.",
+     "(b) Find ∠ABC and ∠BAC.",
+     "(c) Check that ∠ACD = ∠ABC + ∠BAC."
+    ],
+    "24": [
+     "(a) Find each base angle. [1]",
+     "(b) A support AD is drawn from A perpendicular to BC. Find ∠BAD. [1]",
+     "(c) The side BC is extended to E. Find the exterior angle ∠ACE and check it equals ∠A + ∠B. [2]"
+    ]
+   },
+   "caseStudy": "A roof truss is an isosceles triangle ABC with AB = AC. The base BC is horizontal. The angle at the top A is 110°.",
+   "answerKey": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "15x = 180, x = 12: 36°, 60°, 84°. All acute: acute-angled triangle.",
+    "18": "x + x + (x + 30) = 180 ⇒ x = 50: 50°, 50°, 80°.",
+    "19": "Third angle = 180 − 135 = 45°. Opposite angles 2x + 3x = 135 ⇒ x = 27: 54° and 81°. Angles 54°, 81°, 45°.",
+    "20": "∠B = ∠C + 30, ∠A = ∠C + 45. 3∠C + 75 = 180 ⇒ ∠C = 35°, ∠B = 65°, ∠A = 80°.",
+    "21": "4 < x < 16. Whole numbers 5 to 15: 11 triangles.",
+    "22": "Smallest side QR is opposite ∠P; PQ is opposite ∠R; largest PR is opposite ∠Q. ∠P < ∠R < ∠Q.",
+    "23": "(a) 180 − 112 = 68°. (b) ∠ABC = 68° (AB = AC), ∠BAC = 180 − 136 = 44°. (c) 68 + 44 = 112 ✓.",
+    "24": "(a) (180 − 110) ÷ 2 = 35°. (b) In △ABD, ∠BAD = 180 − 90 − 35 = 55°. (c) ∠ACE = 180 − 35 = 145° = 110° + 35° ✓."
+   }
+  },
+  {
+   "id": "icse7-pythagoras-01",
+   "chapter": "Pythagoras Theorem",
+   "chapterNumber": 18,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Pythagoras theorem, its converse, triplets and applications.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Legs 20 cm and 21 cm. Hypotenuse =",
+     "options": [
+      "30 cm",
+      "29 cm",
+      "41 cm",
+      "25 cm"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which is a triplet?",
+     "options": [
+      "9, 12, 16",
+      "11, 60, 62",
+      "12, 35, 37",
+      "12, 16, 21"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Diagonal of a square of side 7 cm =",
+     "options": [
+      "14 cm",
+      "49 cm",
+      "7 cm",
+      "7√2 cm"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A 10 m ladder reaches 8 m up a wall. Foot from wall =",
+     "options": [
+      "12.8 m",
+      "6 m",
+      "18 m",
+      "2 m"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "6, 8 and 10 form a right triangle.",
+     "reason": "6² + 8² = 10²."
+    },
+    {
+     "number": 6,
+     "assertion": "2, 3 and 4 form a right triangle.",
+     "reason": "The longest side is the hypotenuse."
+    }
+   ],
+   "written": {
+    "17": "In △PQR, ∠Q = 90°, PQ = 24 cm and QR = 7 cm. Find PR.",
+    "18": "Check whether these can be the sides of a right triangle: (a) 11, 60, 61 (b) 12, 15, 18.",
+    "19": "Find the perimeter of a rectangle whose length is 24 cm and diagonal is 25 cm.",
+    "20": "A ladder 17 m long reaches a window 15 m above the ground. Find the distance of its foot from the wall. If the foot moves 7 m farther from the wall, how high does the ladder reach now?",
+    "21": "The diagonals of a rhombus are 24 cm and 10 cm. Find the side and the perimeter of the rhombus.",
+    "22": "Two poles of heights 8 m and 14 m stand on level ground 8 m apart. Find the distance between their tops.",
+    "23": [
+     "In △ABC, AD ⟂ BC. AB = 13 cm, AD = 12 cm and DC = 16 cm.",
+     "(a) Find BD.",
+     "(b) Find AC.",
+     "(c) Find BC and the area of △ABC."
+    ],
+    "24": [
+     "(a) Find the distance Riya walks. [1]",
+     "(b) Find the length of the diagonal AC. [1]",
+     "(c) How much shorter is Tom's path? If both walk at 1.5 m/s, how many seconds earlier does Tom arrive? [2]"
+    ]
+   },
+   "caseStudy": "A rectangular park ABCD is 80 m long and 60 m wide. Riya walks from A to C along the sides AB and BC. Tom walks straight across the park along the diagonal AC.",
+   "answerKey": [
+    1,
+    2,
+    3,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "PR² = 576 + 49 = 625 ⇒ PR = 25 cm.",
+    "18": "(a) 121 + 3600 = 3721 = 61² ⇒ yes. (b) 144 + 225 = 369 ≠ 324 ⇒ no.",
+    "19": "Breadth = √(625 − 576) = 7 cm. Perimeter = 2(24 + 7) = 62 cm.",
+    "20": "Foot = √(289 − 225) = 8 m. New foot 15 m: height = √(289 − 225) = 8 m.",
+    "21": "Halves 12 and 5: side = √169 = 13 cm. Perimeter 52 cm.",
+    "22": "Difference 6 m: √(64 + 36) = 10 m.",
+    "23": "(a) BD = √(169 − 144) = 5 cm. (b) AC = √(144 + 256) = 20 cm. (c) BC = 21 cm; area = ½ × 21 × 12 = 126 cm².",
+    "24": "(a) 80 + 60 = 140 m. (b) √(6400 + 3600) = 100 m. (c) 40 m shorter. 40 ÷ 1.5 = 26⅔ s earlier."
+   }
+  },
+  {
+   "id": "icse7-symmetry-01",
+   "chapter": "Symmetry",
+   "chapterNumber": 19,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Line symmetry, rotational symmetry, order and angle of rotation.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A regular hexagon has an angle of rotation of",
+     "options": [
+      "60°",
+      "120°",
+      "90°",
+      "30°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The letter H has",
+     "options": [
+      "2 lines of symmetry",
+      "4 lines of symmetry",
+      "0",
+      "1 line of symmetry"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which has no line of symmetry?",
+     "options": [
+      "Kite",
+      "Square",
+      "Scalene triangle",
+      "Circle"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The order of rotational symmetry of a rectangle is",
+     "options": [
+      "2",
+      "0",
+      "1",
+      "4"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A square has 4 lines of symmetry.",
+     "reason": "A regular polygon with n sides has n lines of symmetry."
+    },
+    {
+     "number": 6,
+     "assertion": "A parallelogram has 2 lines of symmetry.",
+     "reason": "A parallelogram has rotational symmetry of order 2."
+    }
+   ],
+   "written": {
+    "17": "Draw a rectangle and a rhombus. Mark all their lines of symmetry. How many does each have?",
+    "18": "Write the number of lines of symmetry of: (a) a regular pentagon (b) an isosceles triangle (c) a semicircle (d) the letter M.",
+    "19": "Find the order of rotational symmetry and the angle of rotation of (a) an equilateral triangle (b) a regular octagon.",
+    "20": "From the letters A, H, I, N, S, X, Z, list those with (a) line symmetry only (b) rotational symmetry only (c) both.",
+    "21": "Copy a square grid. Shade squares so that the figure has exactly two lines of symmetry and rotational symmetry of order 2. Explain your figure.",
+    "22": "A regular polygon has rotational symmetry with angle 45°. Find the number of its sides and the number of its lines of symmetry.",
+    "23": [
+     "Look at the shapes: square, rectangle, rhombus, parallelogram, kite.",
+     "(a) Which shapes have exactly 2 lines of symmetry?",
+     "(b) Which shapes have rotational symmetry of order 2?",
+     "(c) Which shape has rotational symmetry of order 4, and what is its angle of rotation?"
+    ],
+    "24": [
+     "(a) How many lines of symmetry does the hexagonal bed have? [1]",
+     "(b) What is the order of rotational symmetry of the bed? [1]",
+     "(c) She places one bench at the middle of each side. Find the angle between two neighbouring benches as seen from the centre, and say whether the design still has 6 lines of symmetry. [2]"
+    ]
+   },
+   "caseStudy": "A garden designer makes a flower bed in the shape of a regular hexagon with a circular fountain in the middle.",
+   "answerKey": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Rectangle: 2 lines (through the middles of opposite sides). Rhombus: 2 lines (its diagonals).",
+    "18": "(a) 5 (b) 1 (c) 1 (d) 1.",
+    "19": "(a) Order 3, angle 120°. (b) Order 8, angle 45°.",
+    "20": "(a) A (b) N, S, Z (c) H, I, X.",
+    "21": "Example: shade a 2 × 4 block of squares in the centre (a rectangle). It folds about its two middle lines and looks the same after 180°.",
+    "22": "360 ÷ 45 = 8 sides. It has 8 lines of symmetry.",
+    "23": "(a) Rectangle, rhombus. (b) Rectangle, rhombus, parallelogram. (Square has order 4, kite has order 1.) (c) Square, 90°.",
+    "24": "(a) 6. (b) 6. (c) 360 ÷ 6 = 60°. Yes, the benches are placed symmetrically, so all 6 lines of symmetry stay."
+   }
+  },
+  {
+   "id": "icse7-solids-01",
+   "chapter": "Recognition of Solids",
+   "chapterNumber": 20,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Faces, edges and vertices of solids, Euler's formula and nets.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A pentagonal prism has how many faces?",
+     "options": [
+      "7",
+      "10",
+      "5",
+      "15"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "For a polyhedron, F = 8 and V = 12. E =",
+     "options": [
+      "2",
+      "20",
+      "18",
+      "22"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which solid has no vertex?",
+     "options": [
+      "Cone",
+      "Sphere",
+      "Pyramid",
+      "Cube"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A square pyramid has how many edges?",
+     "options": [
+      "12",
+      "5",
+      "4",
+      "8"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A cube satisfies Euler's formula.",
+     "reason": "For a cube, 6 + 8 − 12 = 2."
+    },
+    {
+     "number": 6,
+     "assertion": "A cylinder is a polyhedron.",
+     "reason": "A cylinder has two flat circular faces."
+    }
+   ],
+   "written": {
+    "17": "Copy and complete the table of F, V and E for: cube, triangular prism, square pyramid, hexagonal prism.",
+    "18": "Verify Euler's formula for (a) a pentagonal pyramid (b) a hexagonal prism.",
+    "19": "A polyhedron has 20 faces and 12 vertices. Find the number of edges.",
+    "20": "Name the solid: (a) 6 faces, 8 vertices, 12 edges, all faces squares (b) one circular base and one vertex (c) 5 faces, 5 vertices, 8 edges.",
+    "21": "Draw two different nets of a cube. Draw a net of a triangular prism.",
+    "22": "Can a polyhedron have (a) 4 faces, 4 vertices and 6 edges (b) 9 faces, 9 vertices and 15 edges? Give reasons.",
+    "23": [
+     "A prism has an n-sided base.",
+     "(a) Write F, V and E in terms of n.",
+     "(b) Show that F + V − E = 2.",
+     "(c) A prism has 24 edges. Find n, F and V."
+    ],
+    "24": [
+     "(a) Which blocks have curved surfaces? [1]",
+     "(b) Give F, V and E for the square pyramid and for the triangular prism. [1]",
+     "(c) Glue two equal cubes face to face. Find F, V and E of the new solid and check Euler's formula. [2]"
+    ]
+   },
+   "caseStudy": "A toy shop sells wooden blocks: a cube, a cuboid, a triangular prism, a square pyramid, a cylinder and a cone.",
+   "answerKey": [
+    0,
+    2,
+    1,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Cube 6, 8, 12. Triangular prism 5, 6, 9. Square pyramid 5, 5, 8. Hexagonal prism 8, 12, 18.",
+    "18": "(a) F = 6, V = 6, E = 10: 6 + 6 − 10 = 2. (b) F = 8, V = 12, E = 18: 8 + 12 − 18 = 2.",
+    "19": "20 + 12 − E = 2 ⇒ E = 30.",
+    "20": "(a) Cube (b) Cone (c) Square pyramid.",
+    "21": "Cube: cross shape and T shape (or any two of the 11). Triangular prism: 3 rectangles in a row with a triangle on each side of the middle rectangle.",
+    "22": "(a) 4 + 4 − 6 = 2: yes (a tetrahedron). (b) 9 + 9 − 15 = 3 ≠ 2: no.",
+    "23": "(a) F = n + 2, V = 2n, E = 3n. (b) n + 2 + 2n − 3n = 2. (c) 3n = 24 ⇒ n = 8, F = 10, V = 16.",
+    "24": "(a) Cylinder and cone. (b) Square pyramid: F = 5, V = 5, E = 8. Triangular prism: F = 5, V = 6, E = 9. (c) A cuboid 2 × 1 × 1: F = 6, V = 8, E = 12; 6 + 8 − 12 = 2."
+   }
+  },
+  {
+   "id": "icse7-congruency-01",
+   "chapter": "Congruency: Congruent Triangles",
+   "chapterNumber": 21,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Congruent figures, the SSS, SAS, ASA and RHS conditions, and CPCT.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "△LMN ≅ △XYZ. MN =",
+     "options": [
+      "YZ",
+      "XY",
+      "LN",
+      "XZ"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which does not prove congruence?",
+     "options": [
+      "AAA",
+      "RHS",
+      "SAS",
+      "SSS"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Two sides and the included angle equal gives",
+     "options": [
+      "RHS",
+      "SAS",
+      "SSS",
+      "ASA"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If △ABC ≅ △DEF and ∠E = 65°, then ∠B =",
+     "options": [
+      "90°",
+      "115°",
+      "65°",
+      "25°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Two equilateral triangles of side 4 cm are congruent.",
+     "reason": "Their three sides are equal (SSS)."
+    },
+    {
+     "number": 6,
+     "assertion": "Two triangles with the same three angles are congruent.",
+     "reason": "The angles of a triangle add up to 180°."
+    }
+   ],
+   "written": {
+    "17": "△ABC ≅ △PQR. Write the six pairs of equal parts.",
+    "18": "State the condition of congruence: (a) AB = PQ, BC = QR, CA = RP (b) ∠A = ∠P, AB = PQ, ∠B = ∠Q (c) ∠B = ∠Q = 90°, AC = PR, AB = PQ.",
+    "19": "In △ABC, AB = AC and D is the midpoint of BC. Prove that △ABD ≅ △ACD and that AD ⟂ BC.",
+    "20": "In quadrilateral ABCD, AB = CD and AD = BC. Prove that △ABC ≅ △CDA.",
+    "21": "PQ and RS bisect each other at O. Prove that △POR ≅ △QOS and PR = QS.",
+    "22": "In △ABC and △DEF, ∠A = ∠D = 45°, ∠B = ∠E = 75° and AB = DE = 6 cm. Are they congruent? Find ∠C and ∠F.",
+    "23": [
+     "ABC is an isosceles triangle with AB = AC. BD ⟂ AC and CE ⟂ AB.",
+     "(a) Name two right triangles that share the side BC.",
+     "(b) Prove that △BCE ≅ △CBD.",
+     "(c) Hence show that BD = CE."
+    ],
+    "24": [
+     "(a) Name the two triangles formed by AC. [1]",
+     "(b) State the condition that makes them congruent. [1]",
+     "(c) Use CPCT to show that ∠ABC = ∠ADC and that AC bisects ∠A. [2]"
+    ]
+   },
+   "caseStudy": "A kite ABCD has AB = AD = 25 cm and CB = CD = 40 cm. The diagonal AC is drawn.",
+   "answerKey": [
+    0,
+    0,
+    1,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "AB = PQ, BC = QR, CA = RP, ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R.",
+    "18": "(a) SSS (b) ASA (c) RHS.",
+    "19": "AB = AC, BD = DC, AD = AD ⇒ congruent (SSS). So ∠ADB = ∠ADC (CPCT). They form a linear pair, so each is 90°: AD ⟂ BC.",
+    "20": "AB = CD, BC = DA, AC = CA (common) ⇒ △ABC ≅ △CDA (SSS).",
+    "21": "OP = OQ, OR = OS, ∠POR = ∠QOS (vertically opposite) ⇒ congruent (SAS). PR = QS (CPCT).",
+    "22": "Yes, by ASA. ∠C = ∠F = 180 − 120 = 60°.",
+    "23": "(a) △BCE and △CBD. (b) ∠BEC = ∠CDB = 90°, BC common, ∠EBC = ∠DCB (AB = AC) ⇒ congruent (AAS). (c) BD = CE (CPCT).",
+    "24": "(a) △ABC and △ADC. (b) SSS: AB = AD, CB = CD, AC common. (c) ∠ABC = ∠ADC and ∠BAC = ∠DAC (CPCT), so AC bisects ∠A."
+   }
+  },
+  {
+   "id": "icse7-constructions-01",
+   "chapter": "Constructions",
+   "chapterNumber": 22,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Constructions with ruler and compasses: bisectors, special angles, parallel lines and triangles.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "75° is made by bisecting the angle between",
+     "options": [
+      "30° and 60°",
+      "60° and 90°",
+      "90° and 120°",
+      "45° and 90°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which cannot be a triangle?",
+     "options": [
+      "5, 6, 7",
+      "4, 4, 4",
+      "6, 8, 10",
+      "3, 4, 8"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Given QR, ∠Q and ∠R, the triangle is drawn by",
+     "options": [
+      "RHS",
+      "SAS",
+      "ASA",
+      "SSS"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Bisecting 30° gives",
+     "options": [
+      "45°",
+      "15°",
+      "60°",
+      "10°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A 90° angle can be made by bisecting a straight angle.",
+     "reason": "A straight angle is 180°."
+    },
+    {
+     "number": 6,
+     "assertion": "Any three lengths make a triangle.",
+     "reason": "The angles of a triangle add up to 180°."
+    }
+   ],
+   "written": {
+    "17": "Draw AB = 7 cm. Construct its perpendicular bisector. Measure AM and MB, where M is the point where it cuts AB.",
+    "18": "Construct ∠PQR = 120° with ruler and compasses. Bisect it and measure each part.",
+    "19": "Construct an angle of 75°. Write the steps of construction.",
+    "20": "Construct △ABC with AB = 5.5 cm, BC = 6 cm and CA = 4.8 cm. Bisect ∠B.",
+    "21": "Construct △PQR with QR = 6 cm, ∠Q = 45° and ∠R = 60°. Measure PQ and ∠P.",
+    "22": "Construct a right-angled △ABC with ∠B = 90°, hypotenuse AC = 6.5 cm and BC = 4 cm. Measure AB.",
+    "23": [
+     "Draw a line AB and a point P 3 cm above it.",
+     "(a) Draw a line through P parallel to AB using ruler and compasses.",
+     "(b) Write the steps you used.",
+     "(c) State the angle property that makes the lines parallel."
+    ],
+    "24": [
+     "(a) Find ∠A. [1]",
+     "(b) Which condition (SSS, SAS, ASA or RHS) is used for this construction? [1]",
+     "(c) Construct the triangle. Measure AB and say how it compares with BC. [2]"
+    ]
+   },
+   "caseStudy": "A carpenter wants to cut a triangular shelf ABC. The back edge BC is 8 cm on the drawing. The shelf meets the wall at B with ∠B = 90° and at C with ∠C = 45°.",
+   "answerKey": [
+    1,
+    3,
+    2,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Arcs with radius more than 3.5 cm from A and B, join the cuts. AM = MB = 3.5 cm.",
+    "18": "Mark two 60° steps on one arc to get 120°. Bisect: each part is 60°.",
+    "19": "Draw a line. At the point make 60° and 90° (bisect between 60° and 120°). Bisect the angle between 60° and 90° to get 75°.",
+    "20": "Draw BC = 6 cm, arcs 5.5 cm from B and 4.8 cm from C meet at A. Bisect ∠B by the arc method.",
+    "21": "Draw QR = 6 cm; make 45° at Q and 60° at R; they meet at P. ∠P = 75°. PQ ≈ 5.4 cm (6 sin 60° ÷ sin 75° ≈ 5.38 cm).",
+    "22": "Draw BC = 4 cm, 90° at B, arc 6.5 cm from C cuts at A. AB = √(42.25 − 16) ≈ 5.1 cm.",
+    "23": "(a)–(b) Join P to a point Q on AB. At P copy ∠PQB as a corresponding angle (arc at Q, same arc at P, copy the chord length). Draw the line. (c) Equal corresponding angles mean the lines are parallel.",
+    "24": "(a) 180 − 90 − 45 = 45°. (b) ASA. (c) AB = 8 cm, equal to BC, because ∠A = ∠C = 45° (isosceles right triangle)."
+   }
+  },
+  {
+   "id": "icse7-mensuration-01",
+   "chapter": "Mensuration",
+   "chapterNumber": 23,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Perimeter and area of plane figures, circles, paths, and volume and surface area of cuboids.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Area of a triangle with base 10 cm and height 7 cm =",
+     "options": [
+      "34 cm²",
+      "35 cm²",
+      "70 cm²",
+      "17 cm²"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Circumference of a circle of diameter 21 cm =",
+     "options": [
+      "66 cm",
+      "33 cm",
+      "132 cm",
+      "346.5 cm"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Volume of a cuboid 10 cm × 4 cm × 3 cm =",
+     "options": [
+      "17 cm³",
+      "164 cm³",
+      "40 cm³",
+      "120 cm³"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Area of a rhombus with diagonals 10 cm and 8 cm =",
+     "options": [
+      "80 cm²",
+      "18 cm²",
+      "20 cm²",
+      "40 cm²"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A square of side 4 cm has area 16 cm².",
+     "reason": "Area of a square = side²."
+    },
+    {
+     "number": 6,
+     "assertion": "A circle of radius 7 cm has area 44 cm².",
+     "reason": "Circumference = 2πr."
+    }
+   ],
+   "written": {
+    "17": "A rectangular field is 45 m long and 28 m wide. Find the cost of fencing it at ₹15 per metre and of levelling it at ₹4 per m².",
+    "18": "The area of a trapezium is 180 cm². Its parallel sides are 14 cm and 22 cm. Find the distance between them.",
+    "19": "Find the area of a circle whose circumference is 88 cm.",
+    "20": "A path 2.5 m wide runs inside along the boundary of a square garden of side 40 m. Find the area of the path.",
+    "21": "A wheel of radius 35 cm makes 450 turns. Find the distance it covers in metres.",
+    "22": "A cuboid tank is 3 m long, 2 m wide and 1.5 m deep. Find how many litres of water it holds. Find the area of sheet used for it if it is open at the top.",
+    "23": [
+     "A rectangular lawn is 60 m by 40 m. Two paths, each 4 m wide, cross at the centre parallel to the sides.",
+     "(a) Find the area of the two paths.",
+     "(b) Find the cost of gravelling the paths at ₹25 per m².",
+     "(c) Find the area of the lawn left for grass."
+    ],
+    "24": [
+     "(a) Find the area of the pond. [1]",
+     "(b) Find the area of the path round the pond. [1]",
+     "(c) Find the area of the park outside the pond and the path. Find the length of fencing needed round the outer edge of the path. [2]"
+    ]
+   },
+   "caseStudy": "A circular pond of radius 14 m is in the centre of a square park of side 56 m. A path 3.5 m wide runs round the pond on the outside. (Take π = 22/7.)",
+   "answerKey": [
+    1,
+    0,
+    3,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Perimeter 146 m: fencing ₹2,190. Area 1260 m²: levelling ₹5,040.",
+    "18": "180 = ½ × 36 × h ⇒ h = 10 cm.",
+    "19": "2πr = 88 ⇒ r = 14 cm. Area = 616 cm².",
+    "20": "Inner side 35 m: 1600 − 1225 = 375 m².",
+    "21": "C = 2 × 22/7 × 35 = 220 cm. 450 × 220 = 99,000 cm = 990 m.",
+    "22": "9 m³ = 9000 L. Sheet = lb + 2(bh + hl) = 6 + 2(3 + 4.5) = 21 m².",
+    "23": "(a) 60 × 4 + 40 × 4 − 16 = 384 m². (b) 384 × 25 = ₹9,600. (c) 2400 − 384 = 2016 m².",
+    "24": "(a) 22/7 × 196 = 616 m². (b) Outer radius 17.5: 22/7 × 306.25 = 962.5 m²; path = 962.5 − 616 = 346.5 m². (c) 3136 − 962.5 = 2173.5 m². Fencing = 2 × 22/7 × 17.5 = 110 m."
+   }
+  },
+  {
+   "id": "icse7-data-handling-01",
+   "chapter": "Data Handling",
+   "chapterNumber": 24,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Frequency tables, range, mean, median, mode, bar graphs and pie charts.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The mean of 5, 8, 11, 14, 17 is",
+     "options": [
+      "12",
+      "11",
+      "10",
+      "55"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The median of 13, 7, 9, 15, 10 is",
+     "options": [
+      "9",
+      "11",
+      "10",
+      "13"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The mode of 4, 6, 4, 7, 6, 4 is",
+     "options": [
+      "4",
+      "6",
+      "5.17",
+      "7"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "₹1500 out of ₹6000 in a pie chart has angle",
+     "options": [
+      "25°",
+      "90°",
+      "120°",
+      "60°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The median of 2, 3, 7, 9 is 5.",
+     "reason": "For an even number of values, the median is the mean of the two middle values."
+    },
+    {
+     "number": 6,
+     "assertion": "The mode of 2, 3, 3, 5 is 5.",
+     "reason": "The mode is the value that occurs most often."
+    }
+   ],
+   "written": {
+    "17": "The ages of 15 children are: 8, 9, 10, 9, 8, 11, 10, 9, 9, 12, 10, 8, 9, 11, 10. Make a frequency table with tally marks. Find the mode and the range.",
+    "18": "Find the mean of the first eight prime numbers.",
+    "19": "Find the median of 32, 45, 28, 51, 39, 44, 36, 47.",
+    "20": "The mean of 8 numbers is 25. If one number, 46, is wrongly copied as 64, find the correct mean.",
+    "21": "The mean weight of 5 boys is 42 kg. When a sixth boy joins, the mean becomes 43 kg. Find the weight of the sixth boy.",
+    "22": "Draw a bar graph for the number of books read in a month: Asha 8, Binu 5, Chetan 10, Deepa 7, Esha 4. Who read the most, and what is the mean number of books?",
+    "23": [
+     "A survey of 120 students on their favourite fruit gave: mango 45, apple 30, banana 20, grapes 25.",
+     "(a) Find the central angle for each fruit.",
+     "(b) Check that the angles add up to 360°.",
+     "(c) Draw the pie chart."
+    ],
+    "24": [
+     "(a) Find the mean temperature. [1]",
+     "(b) Find the median and the mode. [1]",
+     "(c) The next day is 30°C. Find the new mean and new median of the 8 days. [2]"
+    ]
+   },
+   "caseStudy": "The daily maximum temperatures (°C) in a town for one week were: 32, 35, 31, 35, 34, 33, 38.",
+   "answerKey": [
+    1,
+    2,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "8 → 3, 9 → 5, 10 → 4, 11 → 2, 12 → 1. Mode = 9. Range = 12 − 8 = 4.",
+    "18": "2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77; mean = 77/8 = 9.625.",
+    "19": "Order 28, 32, 36, 39, 44, 45, 47, 51: (39 + 44) ÷ 2 = 41.5.",
+    "20": "Wrong sum 200. Correct sum 200 − 64 + 46 = 182. Mean = 22.75.",
+    "21": "6 × 43 − 5 × 42 = 258 − 210 = 48 kg.",
+    "22": "Bars of heights 8, 5, 10, 7, 4. Chetan read the most. Mean = 34 ÷ 5 = 6.8 books.",
+    "23": "(a) Mango 135°, apple 90°, banana 60°, grapes 75°. (b) 135 + 90 + 60 + 75 = 360°. (c) Draw sectors with these angles.",
+    "24": "(a) 238 ÷ 7 = 34°C. (b) Order 31, 32, 33, 34, 35, 35, 38: median 34°C, mode 35°C. (c) Sum 268 ÷ 8 = 33.5°C. Order 30, 31, 32, 33, 34, 35, 35, 38: median (33 + 34) ÷ 2 = 33.5°C."
+   }
+  },
+  {
+   "id": "icse7-probability-01",
+   "chapter": "Probability",
+   "chapterNumber": 25,
+   "paperNumber": "01",
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "focus": "Random experiments, sample space, events and the probability of an event.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A die is thrown. P(3) =",
+     "options": [
+      "3/6",
+      "1/2",
+      "1/6",
+      "1/3"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Two coins. P(exactly one head) =",
+     "options": [
+      "1",
+      "1/4",
+      "1/2",
+      "3/4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If P(E) = 2/7, then P(not E) =",
+     "options": [
+      "2/7",
+      "1",
+      "5/7",
+      "7/2"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which is a sure event for one die?",
+     "options": [
+      "Getting 7",
+      "Getting 0",
+      "Getting 3",
+      "Getting a number ≤ 6"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The probability of getting a head with one coin is 1/2.",
+     "reason": "There are two equally likely outcomes and one is a head."
+    },
+    {
+     "number": 6,
+     "assertion": "A probability can be 1.5.",
+     "reason": "A probability is a number."
+    }
+   ],
+   "written": {
+    "17": "A die is thrown. Find the probability of getting (a) a number greater than 4 (b) an odd number (c) a number that is not 6.",
+    "18": "Two coins are tossed together. Write the sample space. Find P(two heads) and P(at least one tail).",
+    "19": "A bag has 6 red, 4 white and 5 black balls. One ball is drawn at random. Find P(white), P(not black) and P(red or white).",
+    "20": "A card is drawn from cards numbered 1 to 25. Find the probability that the number is (a) even (b) a multiple of 5 (c) a prime number.",
+    "21": "A letter is chosen at random from the word PROBABILITY. Find the probability that it is (a) B (b) a vowel (c) not I.",
+    "22": "In 200 tosses of a coin, there were 112 heads. Find the experimental probability of a head and of a tail. Compare with the theoretical probability.",
+    "23": [
+     "A spinner has 10 equal sectors numbered 1 to 10.",
+     "(a) Find P(a number less than 4).",
+     "(b) Find P(an even number greater than 5).",
+     "(c) Find P(a multiple of 2 or a multiple of 5)."
+    ],
+    "24": [
+     "(a) Find P(chocolate). [1]",
+     "(b) Find P(not vanilla). [1]",
+     "(c) 4 chocolate ice creams are sold first. Find the new probability that Tina gets chocolate and that she gets strawberry. [2]"
+    ]
+   },
+   "caseStudy": "A school canteen box has 12 chocolate, 8 strawberry and 10 vanilla ice creams. Tina takes one without looking.",
+   "answerKey": [
+    2,
+    2,
+    2,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "(a) 5, 6: 2/6 = 1/3. (b) 3/6 = 1/2. (c) 5/6.",
+    "18": "{HH, HT, TH, TT}. P(two heads) = 1/4. P(at least one tail) = 3/4.",
+    "19": "Total 15. P(white) = 4/15. P(not black) = 10/15 = 2/3. P(red or white) = 10/15 = 2/3.",
+    "20": "(a) 12/25 (b) 5/25 = 1/5 (c) primes 2, 3, 5, 7, 11, 13, 17, 19, 23: 9/25.",
+    "21": "11 letters: P, R, O, B, A, B, I, L, I, T, Y. (a) 2/11 (b) O, A, I, I: 4/11 (c) 9/11.",
+    "22": "P(head) = 112/200 = 0.56. P(tail) = 88/200 = 0.44. The theoretical value is 0.5 each; the results are close.",
+    "23": "(a) 1, 2, 3: 3/10. (b) 6, 8, 10: 3/10. (c) 2, 4, 5, 6, 8, 10: 6/10 = 3/5.",
+    "24": "(a) 12/30 = 2/5. (b) 20/30 = 2/3. (c) 26 left: P(chocolate) = 8/26 = 4/13, P(strawberry) = 8/26 = 4/13."
+   }
+  }
+ ],
+ "notes": [
+  {
+   "slug": "icse7-integers",
+   "chapter": "Integers",
+   "number": 1,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Number line, four operations, properties and BODMAS",
+   "concepts": [
+    {
+     "title": "Integers on the number line",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Adding and subtracting integers",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Multiplying and dividing integers",
+     "text": "Session 3: formulas and solved examples."
+    },
+    {
+     "title": "Properties and BODMAS",
+     "text": "Session 4: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-rational-numbers",
+   "chapter": "Rational Numbers",
+   "number": 2,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Standard form, comparison and operations",
+   "concepts": [
+    {
+     "title": "What is a rational number?",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Comparing and ordering",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Operations on rational numbers",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-fractions",
+   "chapter": "Fractions",
+   "number": 3,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Types of fractions, the four operations and word problems",
+   "concepts": [
+    {
+     "title": "Kinds of fractions",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Adding and subtracting fractions",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Multiplying and dividing fractions",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-decimals",
+   "chapter": "Decimals",
+   "number": 4,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Place value, operations, conversions and recurring decimals",
+   "concepts": [
+    {
+     "title": "Decimals and place value",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Adding, subtracting and multiplying",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Dividing, and recurring decimals",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-exponents",
+   "chapter": "Exponents",
+   "number": 5,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Powers, laws of exponents and large numbers",
+   "concepts": [
+    {
+     "title": "Powers",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Laws of exponents",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Large numbers in standard form",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-sets",
+   "chapter": "Set Concepts",
+   "number": 6,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Sets, notation, kinds of sets, subsets and Venn diagrams",
+   "concepts": [
+    {
+     "title": "Sets and notation",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Kinds of sets",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Subsets, complement and Venn diagrams",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-ratio-proportion",
+   "chapter": "Ratio and Proportion",
+   "number": 7,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Ratios, dividing in a ratio, proportion and continued proportion",
+   "concepts": [
+    {
+     "title": "Ratio",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Proportion",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-unitary-method",
+   "chapter": "Unitary Method",
+   "number": 8,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Direct and inverse variation, time and work",
+   "concepts": [
+    {
+     "title": "Direct variation",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Inverse variation",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Time and work",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-percent",
+   "chapter": "Percent and Percentage",
+   "number": 9,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Conversions, percentage of a quantity, increase and decrease",
+   "concepts": [
+    {
+     "title": "Percent and conversions",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Percentage of a quantity",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Increase and decrease",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-profit-loss-discount",
+   "chapter": "Profit, Loss and Discount",
+   "number": 10,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "CP, SP, profit and loss percent, marked price and discount",
+   "concepts": [
+    {
+     "title": "Profit and loss",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Finding SP or CP",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Marked price and discount",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-simple-interest",
+   "chapter": "Simple Interest",
+   "number": 11,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Interest, amount, and finding P, R or T",
+   "concepts": [
+    {
+     "title": "Simple interest and amount",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Finding P, R or T",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-speed-distance-time",
+   "chapter": "Speed, Distance and Time",
+   "number": 12,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Speed, unit conversion, average speed and trains",
+   "concepts": [
+    {
+     "title": "Speed, distance and time",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Average speed",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Trains and relative speed",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-algebra",
+   "chapter": "Fundamental Concepts",
+   "number": 13,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Terms, like terms, operations on expressions and substitution",
+   "concepts": [
+    {
+     "title": "Terms and expressions",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Adding and subtracting expressions",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Multiplying and dividing; substitution",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-linear-equations",
+   "chapter": "Simple Linear Equations",
+   "number": 14,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Solving equations and word problems",
+   "concepts": [
+    {
+     "title": "Solving an equation",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Word problems",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-inequalities",
+   "chapter": "Inequalities",
+   "number": 15,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Inequations, replacement set, solution set and the number line",
+   "concepts": [
+    {
+     "title": "Inequations and sets",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Rules for solving",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Graphing on the number line",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-lines-angles",
+   "chapter": "Lines and Angles",
+   "number": 16,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Pairs of angles, transversals and parallel lines",
+   "concepts": [
+    {
+     "title": "Pairs of angles",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Parallel lines and a transversal",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-triangles",
+   "chapter": "Triangles",
+   "number": 17,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Kinds of triangles, angle sum, exterior angle and inequalities",
+   "concepts": [
+    {
+     "title": "Kinds of triangles",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Angle sum and exterior angle",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Sides and angles",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-pythagoras",
+   "chapter": "Pythagoras Theorem",
+   "number": 18,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "The theorem, its converse and applications",
+   "concepts": [
+    {
+     "title": "The theorem",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "The converse and triplets",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Applications",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-symmetry",
+   "chapter": "Symmetry",
+   "number": 19,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Lines of symmetry, rotational symmetry and order",
+   "concepts": [
+    {
+     "title": "Line symmetry",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Rotational symmetry",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-solids",
+   "chapter": "Recognition of Solids",
+   "number": 20,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Faces, edges and vertices, Euler's formula and nets",
+   "concepts": [
+    {
+     "title": "Solids and their parts",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Euler's formula and nets",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-congruency",
+   "chapter": "Congruency: Congruent Triangles",
+   "number": 21,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Congruence and the SSS, SAS, ASA and RHS conditions",
+   "concepts": [
+    {
+     "title": "Congruent figures",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Conditions for congruence",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-constructions",
+   "chapter": "Constructions",
+   "number": 22,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Perpendiculars, bisectors, angles, parallel lines and triangles",
+   "concepts": [
+    {
+     "title": "Bisectors and perpendiculars",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Special angles",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Parallel lines and triangles",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-mensuration",
+   "chapter": "Mensuration",
+   "number": 23,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Perimeter and area of plane figures, circles, and volume of cuboids",
+   "concepts": [
+    {
+     "title": "Rectangles, squares and paths",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Triangles, parallelograms and trapeziums",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Circles",
+     "text": "Session 3: formulas and solved examples."
+    },
+    {
+     "title": "Volume of cuboid and cube",
+     "text": "Session 4: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-data-handling",
+   "chapter": "Data Handling",
+   "number": 24,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Tally tables, mean, median, mode, bar graphs and pie charts",
+   "concepts": [
+    {
+     "title": "Organising data",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Mean, median and mode",
+     "text": "Session 2: formulas and solved examples."
+    },
+    {
+     "title": "Pie charts",
+     "text": "Session 3: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  },
+  {
+   "slug": "icse7-probability",
+   "chapter": "Probability",
+   "number": 25,
+   "grade": 7,
+   "board": "ICSE",
+   "book": "Selina Concise Mathematics",
+   "subtitle": "Experiments, outcomes, events and the probability of an event",
+   "concepts": [
+    {
+     "title": "Experiments and outcomes",
+     "text": "Session 1: formulas and solved examples."
+    },
+    {
+     "title": "Probability of an event",
+     "text": "Session 2: formulas and solved examples."
+    }
+   ],
+   "formulas": [],
+   "method": [],
+   "example": {
+    "question": "",
+    "steps": [],
+    "answer": ""
+   },
+   "practice": [],
+   "tips": []
+  }
+ ]
+}

@@ -1,0 +1,9152 @@
+[
+ {
+  "chapter": 1,
+  "title": "Integers",
+  "questions": [
+   {
+    "prompt": "Which is the greatest: −5, −2, −9, −7?",
+    "options": [
+     "−9",
+     "−2",
+     "−7",
+     "−5"
+    ],
+    "answer": 1,
+    "solution": "On the number line, −2 lies farthest to the right.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "|−18| equals",
+    "options": [
+     "0",
+     "−18",
+     "1/18",
+     "18"
+    ],
+    "answer": 3,
+    "solution": "Absolute value is the distance from 0, so |−18| = 18.",
+    "topic": "Absolute value"
+   },
+   {
+    "prompt": "(−9) + (−6) =",
+    "options": [
+     "−15",
+     "15",
+     "−3",
+     "3"
+    ],
+    "answer": 0,
+    "solution": "Same signs: add 9 + 6 = 15 and keep the minus sign.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "(−14) + 9 =",
+    "options": [
+     "23",
+     "5",
+     "−5",
+     "−23"
+    ],
+    "answer": 2,
+    "solution": "Different signs: 14 − 9 = 5. The bigger size is negative, so −5.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "7 − (−8) =",
+    "options": [
+     "1",
+     "15",
+     "−15",
+     "−1"
+    ],
+    "answer": 1,
+    "solution": "Subtracting −8 means adding 8: 7 + 8 = 15.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "(−12) − (−5) =",
+    "options": [
+     "17",
+     "−17",
+     "−7",
+     "7"
+    ],
+    "answer": 2,
+    "solution": "(−12) + 5 = −7.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "(−6) × (−7) =",
+    "options": [
+     "13",
+     "−42",
+     "42",
+     "−13"
+    ],
+    "answer": 2,
+    "solution": "Same signs give a positive product: 42.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(−4) × 5 × (−3) =",
+    "options": [
+     "12",
+     "−12",
+     "60",
+     "−60"
+    ],
+    "answer": 2,
+    "solution": "Two negative factors give a positive product: 4 × 5 × 3 = 60.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(−96) ÷ 12 =",
+    "options": [
+     "84",
+     "−8",
+     "8",
+     "−84"
+    ],
+    "answer": 1,
+    "solution": "96 ÷ 12 = 8. Different signs, so −8.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "(−1) × (−1) × (−1) × (−1) × (−1) =",
+    "options": [
+     "1",
+     "−1",
+     "−5",
+     "5"
+    ],
+    "answer": 1,
+    "solution": "Five negative factors (odd number) give a negative product: −1.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "The additive inverse of −23 is",
+    "options": [
+     "−23",
+     "23",
+     "0",
+     "1/23"
+    ],
+    "answer": 1,
+    "solution": "−23 + 23 = 0, so the additive inverse is 23.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "The multiplicative identity for integers is",
+    "options": [
+     "−1",
+     "1",
+     "10",
+     "0"
+    ],
+    "answer": 1,
+    "solution": "a × 1 = a for every integer a.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "Which of these is not defined?",
+    "options": [
+     "0 ÷ (−5)",
+     "0 × (−5)",
+     "(−5) ÷ 1",
+     "(−5) ÷ 0"
+    ],
+    "answer": 3,
+    "solution": "Division by zero is not defined.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "25 × (−37) × 4 =",
+    "options": [
+     "−925",
+     "−148",
+     "3700",
+     "−3700"
+    ],
+    "answer": 3,
+    "solution": "(25 × 4) × (−37) = 100 × (−37) = −3700.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "Using the distributive property, (−15) × 102 =",
+    "options": [
+     "−1515",
+     "−1503",
+     "−1530",
+     "1530"
+    ],
+    "answer": 2,
+    "solution": "(−15) × 100 + (−15) × 2 = −1500 − 30 = −1530.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "The product of 21 negative integers and 2 positive integers is",
+    "options": [
+     "negative",
+     "positive",
+     "cannot be found",
+     "zero"
+    ],
+    "answer": 0,
+    "solution": "21 negative factors is an odd number, so the product is negative.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "a × (b + c) = a × b + a × c is the",
+    "options": [
+     "associative property",
+     "closure property",
+     "distributive property",
+     "commutative property"
+    ],
+    "answer": 2,
+    "solution": "Multiplication distributes over addition.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "Integers are not closed under",
+    "options": [
+     "multiplication",
+     "division",
+     "subtraction",
+     "addition"
+    ],
+    "answer": 1,
+    "solution": "5 ÷ 2 is not an integer.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "The temperature is −5°C. It rises by 12°C. The new temperature is",
+    "options": [
+     "−7°C",
+     "7°C",
+     "17°C",
+     "−17°C"
+    ],
+    "answer": 1,
+    "solution": "−5 + 12 = 7.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "A submarine is at −250 m. It rises 80 m. Its new position is",
+    "options": [
+     "170 m",
+     "−330 m",
+     "330 m",
+     "−170 m"
+    ],
+    "answer": 3,
+    "solution": "−250 + 80 = −170.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "18 − [6 − {4 − (5 − 3)}] =",
+    "options": [
+     "14",
+     "18",
+     "22",
+     "10"
+    ],
+    "answer": 0,
+    "solution": "(5 − 3) = 2, {4 − 2} = 2, [6 − 2] = 4, 18 − 4 = 14.",
+    "topic": "BODMAS"
+   },
+   {
+    "prompt": "−8 + 24 ÷ (−6) × 3 =",
+    "options": [
+     "−4",
+     "4",
+     "−20",
+     "−12"
+    ],
+    "answer": 2,
+    "solution": "24 ÷ (−6) = −4, then −4 × 3 = −12, and −8 − 12 = −20.",
+    "topic": "BODMAS"
+   },
+   {
+    "prompt": "The successor of −100 is",
+    "options": [
+     "−101",
+     "100",
+     "−99",
+     "99"
+    ],
+    "answer": 2,
+    "solution": "Successor = number + 1 = −99.",
+    "topic": "Number line"
+   },
+   {
+    "prompt": "How many integers lie between −4 and 3?",
+    "options": [
+     "5",
+     "7",
+     "6",
+     "8"
+    ],
+    "answer": 2,
+    "solution": "−3, −2, −1, 0, 1, 2: six integers.",
+    "topic": "Number line"
+   },
+   {
+    "prompt": "If a = −3 and b = 4, then a × b − a =",
+    "options": [
+     "15",
+     "9",
+     "−9",
+     "−15"
+    ],
+    "answer": 2,
+    "solution": "(−3)(4) − (−3) = −12 + 3 = −9.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "(−36) ÷ (−4) ÷ (−3) =",
+    "options": [
+     "−27",
+     "27",
+     "3",
+     "−3"
+    ],
+    "answer": 3,
+    "solution": "(−36) ÷ (−4) = 9, then 9 ÷ (−3) = −3.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "The sum of −7, 12, −15 and 8 is",
+    "options": [
+     "−42",
+     "42",
+     "2",
+     "−2"
+    ],
+    "answer": 3,
+    "solution": "(−7 − 15) + (12 + 8) = −22 + 20 = −2.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "−(−(−6)) =",
+    "options": [
+     "−6",
+     "0",
+     "−3",
+     "6"
+    ],
+    "answer": 0,
+    "solution": "−(−6) = 6, and −(6) = −6.",
+    "topic": "Opposites"
+   },
+   {
+    "prompt": "Which statement is true?",
+    "options": [
+     "−7 > −3",
+     "−7 > 0",
+     "|−7| < 3",
+     "|−7| > |−3|"
+    ],
+    "answer": 3,
+    "solution": "|−7| = 7 and |−3| = 3, and 7 > 3.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "A quiz gives +3 for a correct answer and −1 for a wrong answer. Sana has 8 correct and 5 wrong. Her score is",
+    "options": [
+     "24",
+     "19",
+     "29",
+     "−19"
+    ],
+    "answer": 1,
+    "solution": "8 × 3 + 5 × (−1) = 24 − 5 = 19.",
+    "topic": "Word problem"
+   }
+  ]
+ },
+ {
+  "chapter": 2,
+  "title": "Rational Numbers",
+  "questions": [
+   {
+    "prompt": "Which of these is not a rational number?",
+    "options": [
+     "5/0",
+     "−3/4",
+     "7",
+     "0"
+    ],
+    "answer": 0,
+    "solution": "A denominator cannot be 0.",
+    "topic": "Definition"
+   },
+   {
+    "prompt": "The standard form of −36/−48 is",
+    "options": [
+     "3/4",
+     "−3/4",
+     "36/48",
+     "−12/16"
+    ],
+    "answer": 0,
+    "solution": "Both signs cancel; 36/48 = 3/4.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "The standard form of 45/−60 is",
+    "options": [
+     "−3/4",
+     "−45/60",
+     "3/4",
+     "9/12"
+    ],
+    "answer": 0,
+    "solution": "45/−60 = −45/60 = −3/4.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "Which is equal to −2/3?",
+    "options": [
+     "−4/−6",
+     "4/6",
+     "−8/12",
+     "2/−6"
+    ],
+    "answer": 2,
+    "solution": "−8/12 = −2/3 after dividing by 4.",
+    "topic": "Equivalent"
+   },
+   {
+    "prompt": "Which is greater: −3/4 or −5/6?",
+    "options": [
+     "they are equal",
+     "−5/6",
+     "cannot be compared",
+     "−3/4"
+    ],
+    "answer": 3,
+    "solution": "−9/12 > −10/12.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "The smallest of 2/3, −1/2, −5/6, 1/4 is",
+    "options": [
+     "−1/2",
+     "2/3",
+     "−5/6",
+     "1/4"
+    ],
+    "answer": 2,
+    "solution": "In twelfths: 8, −6, −10, 3. The smallest is −10/12 = −5/6.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "A rational number between 1/3 and 1/2 is",
+    "options": [
+     "1/4",
+     "1/6",
+     "2/3",
+     "5/12"
+    ],
+    "answer": 3,
+    "solution": "(1/3 + 1/2) ÷ 2 = 5/12.",
+    "topic": "Between"
+   },
+   {
+    "prompt": "−5/8 + 7/12 =",
+    "options": [
+     "1/24",
+     "−1/24",
+     "−29/24",
+     "2/20"
+    ],
+    "answer": 1,
+    "solution": "−15/24 + 14/24 = −1/24.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "−2/3 − (−5/6) =",
+    "options": [
+     "3/2",
+     "1/6",
+     "−3/2",
+     "−1/6"
+    ],
+    "answer": 1,
+    "solution": "−4/6 + 5/6 = 1/6.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "(−4/9) × (15/−16) =",
+    "options": [
+     "−60/144",
+     "5/16",
+     "−5/12",
+     "5/12"
+    ],
+    "answer": 3,
+    "solution": "Two negatives give a positive: 60/144 = 5/12.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(−7/12) ÷ (14/9) =",
+    "options": [
+     "3/8",
+     "−8/3",
+     "−49/54",
+     "−3/8"
+    ],
+    "answer": 3,
+    "solution": "−7/12 × 9/14 = −63/168 = −3/8.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "The reciprocal of −3/7 is",
+    "options": [
+     "7/3",
+     "−3/7",
+     "−7/3",
+     "3/7"
+    ],
+    "answer": 2,
+    "solution": "Swap numerator and denominator; the sign stays.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "The additive inverse of 5/−9 is",
+    "options": [
+     "9/5",
+     "−9/5",
+     "5/9",
+     "−5/9"
+    ],
+    "answer": 2,
+    "solution": "5/−9 = −5/9, so the additive inverse is 5/9.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "Which rational number has no reciprocal?",
+    "options": [
+     "0",
+     "1/2",
+     "1",
+     "−1"
+    ],
+    "answer": 0,
+    "solution": "1/0 is not defined.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "The value of 3/4 × (−8/9) is",
+    "options": [
+     "−2/3",
+     "−3/2",
+     "2/3",
+     "−24/36"
+    ],
+    "answer": 0,
+    "solution": "−24/36 = −2/3.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "x/18 = −5/6. Then x =",
+    "options": [
+     "−3",
+     "15",
+     "−15",
+     "−30"
+    ],
+    "answer": 2,
+    "solution": "−5/6 = −15/18.",
+    "topic": "Equivalent"
+   },
+   {
+    "prompt": "Which of these is in standard form?",
+    "options": [
+     "−6/8",
+     "3/−4",
+     "6/−8",
+     "−3/4"
+    ],
+    "answer": 3,
+    "solution": "The denominator is positive and HCF(3, 4) = 1.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "(−1/2) + (−1/3) + (−1/6) =",
+    "options": [
+     "0",
+     "−1",
+     "−1/11",
+     "1"
+    ],
+    "answer": 1,
+    "solution": "−3/6 − 2/6 − 1/6 = −6/6 = −1.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "What must be added to −3/5 to get 1?",
+    "options": [
+     "−2/5",
+     "8/5",
+     "−8/5",
+     "2/5"
+    ],
+    "answer": 1,
+    "solution": "1 − (−3/5) = 8/5.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "What must be subtracted from 2/3 to get −1/6?",
+    "options": [
+     "1/2",
+     "5/6",
+     "1/6",
+     "−5/6"
+    ],
+    "answer": 1,
+    "solution": "2/3 − x = −1/6 ⇒ x = 4/6 + 1/6 = 5/6.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "The product of two rational numbers is −4/5. One of them is 2/3. The other is",
+    "options": [
+     "−8/15",
+     "6/5",
+     "−6/5",
+     "−5/6"
+    ],
+    "answer": 2,
+    "solution": "−4/5 ÷ 2/3 = −4/5 × 3/2 = −6/5.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "On a number line, −7/4 lies between",
+    "options": [
+     "−2 and −1",
+     "1 and 2",
+     "−3 and −2",
+     "−1 and 0"
+    ],
+    "answer": 0,
+    "solution": "−7/4 = −1¾, which lies between −2 and −1.",
+    "topic": "Number line"
+   },
+   {
+    "prompt": "Which is true?",
+    "options": [
+     "−3/7 < 1/7",
+     "−2/5 > −1/5",
+     "−1/2 > 0",
+     "5/−8 > 0"
+    ],
+    "answer": 0,
+    "solution": "Every negative number is less than every positive number.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "(2/5) × (−15/4) ÷ (−3/2) =",
+    "options": [
+     "−9/4",
+     "9/4",
+     "1",
+     "−1"
+    ],
+    "answer": 2,
+    "solution": "2/5 × (−15/4) = −3/2; (−3/2) ÷ (−3/2) = 1.",
+    "topic": "Operations"
+   },
+   {
+    "prompt": "How many rational numbers lie between 0 and 1?",
+    "options": [
+     "0",
+     "infinitely many",
+     "100",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "Between any two rational numbers there are infinitely many.",
+    "topic": "Between"
+   },
+   {
+    "prompt": "The sum of a rational number and its additive inverse is",
+    "options": [
+     "0",
+     "1",
+     "the number itself",
+     "−1"
+    ],
+    "answer": 0,
+    "solution": "a + (−a) = 0.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "The product of a non-zero rational number and its reciprocal is",
+    "options": [
+     "0",
+     "2",
+     "1",
+     "−1"
+    ],
+    "answer": 2,
+    "solution": "a × (1/a) = 1.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "Arrange −3/5, 1/10, −1/2 in ascending order.",
+    "options": [
+     "−3/5, −1/2, 1/10",
+     "1/10, −1/2, −3/5",
+     "−3/5, 1/10, −1/2",
+     "−1/2, −3/5, 1/10"
+    ],
+    "answer": 0,
+    "solution": "In tenths: −6, 1, −5. Ascending: −6, −5, 1.",
+    "topic": "Order"
+   },
+   {
+    "prompt": "(−5/6) × 0 =",
+    "options": [
+     "0",
+     "−5/6",
+     "not defined",
+     "5/6"
+    ],
+    "answer": 0,
+    "solution": "Any number multiplied by 0 is 0.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "A rope 7/2 m long is cut into pieces of 7/8 m each. The number of pieces is",
+    "options": [
+     "3",
+     "8",
+     "2",
+     "4"
+    ],
+    "answer": 3,
+    "solution": "7/2 ÷ 7/8 = 7/2 × 8/7 = 4.",
+    "topic": "Word problem"
+   }
+  ]
+ },
+ {
+  "chapter": 3,
+  "title": "Fractions",
+  "questions": [
+   {
+    "prompt": "Which is a proper fraction?",
+    "options": [
+     "7/4",
+     "3/8",
+     "9/2",
+     "5/5"
+    ],
+    "answer": 1,
+    "solution": "Numerator 3 is less than denominator 8.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "3 2/5 as an improper fraction is",
+    "options": [
+     "15/5",
+     "11/5",
+     "17/5",
+     "32/5"
+    ],
+    "answer": 2,
+    "solution": "(3 × 5 + 2)/5 = 17/5.",
+    "topic": "Mixed numbers"
+   },
+   {
+    "prompt": "29/6 as a mixed number is",
+    "options": [
+     "4 6/5",
+     "4 5/6",
+     "4 1/6",
+     "5 1/6"
+    ],
+    "answer": 1,
+    "solution": "29 = 6 × 4 + 5.",
+    "topic": "Mixed numbers"
+   },
+   {
+    "prompt": "84/126 in lowest terms is",
+    "options": [
+     "3/4",
+     "4/6",
+     "2/3",
+     "7/9"
+    ],
+    "answer": 2,
+    "solution": "Divide by HCF 42.",
+    "topic": "Lowest terms"
+   },
+   {
+    "prompt": "Which fraction is equivalent to 3/7?",
+    "options": [
+     "6/21",
+     "15/28",
+     "12/28",
+     "9/14"
+    ],
+    "answer": 2,
+    "solution": "3 × 4 = 12 and 7 × 4 = 28.",
+    "topic": "Equivalent"
+   },
+   {
+    "prompt": "The greatest of 2/3, 5/8, 3/4, 7/12 is",
+    "options": [
+     "7/12",
+     "2/3",
+     "3/4",
+     "5/8"
+    ],
+    "answer": 2,
+    "solution": "In 24ths: 16, 15, 18, 14.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "5/6 + 3/8 =",
+    "options": [
+     "1 5/24",
+     "29/48",
+     "1 1/24",
+     "8/14"
+    ],
+    "answer": 0,
+    "solution": "20/24 + 9/24 = 29/24 = 1 5/24.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "4 1/3 − 2 3/4 =",
+    "options": [
+     "2 7/12",
+     "1 7/12",
+     "2 1/12",
+     "1 5/12"
+    ],
+    "answer": 1,
+    "solution": "52/12 − 33/12 = 19/12.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "2 2/5 × 1 7/8 =",
+    "options": [
+     "3 3/4",
+     "2 14/40",
+     "4 1/2",
+     "4 1/4"
+    ],
+    "answer": 2,
+    "solution": "12/5 × 15/8 = 9/2.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "3/4 of ₹480 is",
+    "options": [
+     "₹360",
+     "₹640",
+     "₹120",
+     "₹320"
+    ],
+    "answer": 0,
+    "solution": "480 ÷ 4 × 3 = 360.",
+    "topic": "Of"
+   },
+   {
+    "prompt": "3 3/4 ÷ 1 1/4 =",
+    "options": [
+     "2 1/2",
+     "1/3",
+     "3",
+     "4 11/16"
+    ],
+    "answer": 2,
+    "solution": "15/4 × 4/5 = 3.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "The reciprocal of 2 1/3 is",
+    "options": [
+     "3/7",
+     "1/3",
+     "7/3",
+     "3"
+    ],
+    "answer": 0,
+    "solution": "2 1/3 = 7/3, reciprocal 3/7.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "1/2 + 3/4 ÷ 3/8 of 4 =",
+    "options": [
+     "7/8",
+     "4 1/2",
+     "2 1/2",
+     "1"
+    ],
+    "answer": 3,
+    "solution": "3/8 of 4 = 3/2; 3/4 ÷ 3/2 = 1/2; 1/2 + 1/2 = 1.",
+    "topic": "BODMAS"
+   },
+   {
+    "prompt": "What must be added to 3 2/5 to get 5?",
+    "options": [
+     "1 2/5",
+     "1 3/5",
+     "2 3/5",
+     "8 2/5"
+    ],
+    "answer": 1,
+    "solution": "5 − 17/5 = 8/5.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "By what must 2/3 be multiplied to get 8/9?",
+    "options": [
+     "4/3",
+     "16/27",
+     "3/4",
+     "2/3"
+    ],
+    "answer": 0,
+    "solution": "8/9 ÷ 2/3 = 8/9 × 3/2 = 4/3.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "A bottle holds 3/4 L. How many bottles fill 9 L?",
+    "options": [
+     "9",
+     "27/4",
+     "12",
+     "6 3/4"
+    ],
+    "answer": 2,
+    "solution": "9 ÷ 3/4 = 12.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "2/5 of a class of 40 are girls. The number of boys is",
+    "options": [
+     "16",
+     "15",
+     "24",
+     "20"
+    ],
+    "answer": 2,
+    "solution": "Girls 16, boys 40 − 16 = 24.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Which is the smallest?",
+    "options": [
+     "5/11",
+     "1/2",
+     "4/9",
+     "3/7"
+    ],
+    "answer": 3,
+    "solution": "Compare with 1/2: each is a little less; cross-multiply: 3/7 = 0.428…, 4/9 = 0.444…, 5/11 = 0.4545….",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "(1/2) × (2/3) × (3/4) × (4/5) =",
+    "options": [
+     "1/5",
+     "24/120",
+     "4/5",
+     "1/120"
+    ],
+    "answer": 0,
+    "solution": "Cancel: 1/5.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "7/8 − 1/3 =",
+    "options": [
+     "13/24",
+     "6/5",
+     "11/24",
+     "1/4"
+    ],
+    "answer": 0,
+    "solution": "21/24 − 8/24 = 13/24.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "0 ÷ 5/7 =",
+    "options": [
+     "7/5",
+     "0",
+     "not defined",
+     "5/7"
+    ],
+    "answer": 1,
+    "solution": "0 divided by any non-zero number is 0.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "Ravi reads 2/5 of a book on Monday and 1/3 on Tuesday. The fraction left is",
+    "options": [
+     "4/15",
+     "2/3",
+     "3/8",
+     "11/15"
+    ],
+    "answer": 0,
+    "solution": "1 − (6/15 + 5/15) = 4/15.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "A car runs 15 km on 1 L of petrol. On 3 1/2 L it runs",
+    "options": [
+     "52 1/2 km",
+     "45 km",
+     "48 1/2 km",
+     "50 km"
+    ],
+    "answer": 0,
+    "solution": "15 × 7/2 = 105/2 = 52.5.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "How many 1/6 are in 2 1/2?",
+    "options": [
+     "5/12",
+     "15",
+     "12",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "5/2 ÷ 1/6 = 15.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "If 3/5 of a number is 27, the number is",
+    "options": [
+     "16.2",
+     "15",
+     "81",
+     "45"
+    ],
+    "answer": 3,
+    "solution": "27 ÷ 3/5 = 45.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The sum of 1/4, 1/6 and 1/12 is",
+    "options": [
+     "1/2",
+     "1/3",
+     "5/12",
+     "3/22"
+    ],
+    "answer": 0,
+    "solution": "3/12 + 2/12 + 1/12 = 6/12.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "Which pair is equivalent?",
+    "options": [
+     "5/8, 8/5",
+     "2/3, 3/4",
+     "3/5, 5/7",
+     "4/6, 6/9"
+    ],
+    "answer": 3,
+    "solution": "Both equal 2/3.",
+    "topic": "Equivalent"
+   },
+   {
+    "prompt": "The product of 5/9 and its reciprocal is",
+    "options": [
+     "1",
+     "81/25",
+     "25/81",
+     "0"
+    ],
+    "answer": 0,
+    "solution": "A number times its reciprocal is 1.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "(2/3 + 1/6) ÷ 5/12 =",
+    "options": [
+     "2",
+     "1/2",
+     "5/18",
+     "3"
+    ],
+    "answer": 0,
+    "solution": "5/6 × 12/5 = 2.",
+    "topic": "BODMAS"
+   },
+   {
+    "prompt": "A tank is 5/8 full. After 30 L is used, it is 1/4 full. The capacity is",
+    "options": [
+     "120 L",
+     "80 L",
+     "60 L",
+     "48 L"
+    ],
+    "answer": 1,
+    "solution": "5/8 − 1/4 = 3/8 of capacity = 30 L, so capacity = 80 L.",
+    "topic": "Word problem"
+   }
+  ]
+ },
+ {
+  "chapter": 4,
+  "title": "Decimals",
+  "questions": [
+   {
+    "prompt": "In 47.385, the digit 8 is in the",
+    "options": [
+     "thousandths place",
+     "tens place",
+     "hundredths place",
+     "tenths place"
+    ],
+    "answer": 2,
+    "solution": "3 tenths, 8 hundredths, 5 thousandths.",
+    "topic": "Place value"
+   },
+   {
+    "prompt": "2.375 as a fraction in lowest terms is",
+    "options": [
+     "19/8",
+     "475/20",
+     "23/8",
+     "2375/100"
+    ],
+    "answer": 0,
+    "solution": "2375/1000 = 19/8.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "7/8 as a decimal is",
+    "options": [
+     "8.75",
+     "0.875",
+     "0.87",
+     "0.78"
+    ],
+    "answer": 1,
+    "solution": "7 ÷ 8 = 0.875.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "The greatest of 0.5, 0.48, 0.505, 0.4 is",
+    "options": [
+     "0.4",
+     "0.505",
+     "0.48",
+     "0.5"
+    ],
+    "answer": 1,
+    "solution": "0.505 > 0.500.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "12.5 + 3.075 − 8.6 =",
+    "options": [
+     "7.975",
+     "6.875",
+     "6.975",
+     "16.975"
+    ],
+    "answer": 2,
+    "solution": "15.575 − 8.6 = 6.975.",
+    "topic": "Add and subtract"
+   },
+   {
+    "prompt": "2.4 × 0.15 =",
+    "options": [
+     "36",
+     "0.036",
+     "0.36",
+     "3.6"
+    ],
+    "answer": 2,
+    "solution": "24 × 15 = 360 with 3 decimal places.",
+    "topic": "Multiply"
+   },
+   {
+    "prompt": "0.0357 × 100 =",
+    "options": [
+     "35.7",
+     "0.000357",
+     "3.57",
+     "0.357"
+    ],
+    "answer": 2,
+    "solution": "Move the point 2 places right.",
+    "topic": "Powers of 10"
+   },
+   {
+    "prompt": "7.56 ÷ 0.12 =",
+    "options": [
+     "630",
+     "63",
+     "0.63",
+     "6.3"
+    ],
+    "answer": 1,
+    "solution": "756 ÷ 12 = 63.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "45.6 ÷ 1000 =",
+    "options": [
+     "0.456",
+     "4.56",
+     "0.00456",
+     "0.0456"
+    ],
+    "answer": 3,
+    "solution": "Move the point 3 places left.",
+    "topic": "Powers of 10"
+   },
+   {
+    "prompt": "Which fraction gives a terminating decimal?",
+    "options": [
+     "2/7",
+     "3/40",
+     "5/6",
+     "1/3"
+    ],
+    "answer": 1,
+    "solution": "40 = 2³ × 5 has only 2 and 5.",
+    "topic": "Terminating"
+   },
+   {
+    "prompt": "2/11 as a decimal is",
+    "options": [
+     "0.18",
+     "0.2",
+     "0.181818… (18 repeats)",
+     "0.0202… (02 repeats)"
+    ],
+    "answer": 2,
+    "solution": "2 ÷ 11 = 0.181818…, so 18 repeats.",
+    "topic": "Recurring"
+   },
+   {
+    "prompt": "0.6 × 0.6 =",
+    "options": [
+     "1.2",
+     "0.36",
+     "0.036",
+     "3.6"
+    ],
+    "answer": 1,
+    "solution": "6 × 6 = 36 with 2 decimal places.",
+    "topic": "Multiply"
+   },
+   {
+    "prompt": "0.25 as a fraction in lowest terms is",
+    "options": [
+     "1/25",
+     "1/4",
+     "25/10",
+     "2/5"
+    ],
+    "answer": 1,
+    "solution": "25/100 = 1/4.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "₹5 and 75 paise in rupees is",
+    "options": [
+     "₹0.575",
+     "₹5.75",
+     "₹5.075",
+     "₹57.5"
+    ],
+    "answer": 1,
+    "solution": "75 paise = ₹0.75.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "3 km 45 m in km is",
+    "options": [
+     "3.045 km",
+     "3.0045 km",
+     "30.45 km",
+     "3.45 km"
+    ],
+    "answer": 0,
+    "solution": "45 m = 0.045 km.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "1.2 ÷ 0.04 =",
+    "options": [
+     "30",
+     "300",
+     "0.3",
+     "3"
+    ],
+    "answer": 0,
+    "solution": "120 ÷ 4 = 30.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "0.1 × 0.01 × 0.001 =",
+    "options": [
+     "0.000001",
+     "0.001",
+     "0.00001",
+     "0.0001"
+    ],
+    "answer": 0,
+    "solution": "Total 6 decimal places.",
+    "topic": "Multiply"
+   },
+   {
+    "prompt": "Which is equal to 0.4?",
+    "options": [
+     "4.0",
+     "0.04",
+     "4.00",
+     "0.400"
+    ],
+    "answer": 3,
+    "solution": "Zeros at the end do not change the value.",
+    "topic": "Like decimals"
+   },
+   {
+    "prompt": "5/6 as a decimal is",
+    "options": [
+     "0.56",
+     "0.83",
+     "0.838383… (83 repeats)",
+     "0.8333… (3 repeats)"
+    ],
+    "answer": 3,
+    "solution": "5 ÷ 6 = 0.8333…, only 3 repeats.",
+    "topic": "Recurring"
+   },
+   {
+    "prompt": "A pen costs ₹12.75. The cost of 8 pens is",
+    "options": [
+     "₹102",
+     "₹101",
+     "₹100.20",
+     "₹96.50"
+    ],
+    "answer": 0,
+    "solution": "12.75 × 8 = 102.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "A wire 14.4 m long is cut into pieces of 0.36 m. The number of pieces is",
+    "options": [
+     "400",
+     "0.4",
+     "40",
+     "4"
+    ],
+    "answer": 2,
+    "solution": "1440 ÷ 36 = 40.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "4.5 − 2.75 =",
+    "options": [
+     "1.75",
+     "2.75",
+     "1.25",
+     "2.25"
+    ],
+    "answer": 0,
+    "solution": "4.50 − 2.75 = 1.75.",
+    "topic": "Subtract"
+   },
+   {
+    "prompt": "Rounded to one decimal place, 7.46 is",
+    "options": [
+     "8.0",
+     "7.5",
+     "7.0",
+     "7.4"
+    ],
+    "answer": 1,
+    "solution": "Hundredths digit 6 ≥ 5, round up.",
+    "topic": "Rounding"
+   },
+   {
+    "prompt": "0.05 as a fraction in lowest terms is",
+    "options": [
+     "1/5",
+     "1/50",
+     "1/20",
+     "5/10"
+    ],
+    "answer": 2,
+    "solution": "5/100 = 1/20.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "(0.3)² =",
+    "options": [
+     "0.6",
+     "0.9",
+     "0.09",
+     "0.009"
+    ],
+    "answer": 2,
+    "solution": "0.3 × 0.3 = 0.09.",
+    "topic": "Multiply"
+   },
+   {
+    "prompt": "The product 0.25 × 4 is",
+    "options": [
+     "10",
+     "0.01",
+     "0.1",
+     "1"
+    ],
+    "answer": 3,
+    "solution": "0.25 × 4 = 1.00.",
+    "topic": "Multiply"
+   },
+   {
+    "prompt": "A car travels 52.5 km on 3.5 L of petrol. Its mileage is",
+    "options": [
+     "150 km/L",
+     "15 km/L",
+     "12 km/L",
+     "18 km/L"
+    ],
+    "answer": 1,
+    "solution": "52.5 ÷ 3.5 = 525 ÷ 35 = 15.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Which is the smallest?",
+    "options": [
+     "0.0701",
+     "0.07",
+     "0.7",
+     "0.071"
+    ],
+    "answer": 1,
+    "solution": "0.0700 < 0.0701 < 0.0710 < 0.7000.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "2.5 + 0.25 + 0.025 =",
+    "options": [
+     "3.0",
+     "0.775",
+     "2.775",
+     "2.75"
+    ],
+    "answer": 2,
+    "solution": "2.500 + 0.250 + 0.025 = 2.775.",
+    "topic": "Add"
+   },
+   {
+    "prompt": "Which fraction gives a recurring decimal?",
+    "options": [
+     "7/20",
+     "3/8",
+     "4/15",
+     "9/50"
+    ],
+    "answer": 2,
+    "solution": "15 = 3 × 5 has the factor 3.",
+    "topic": "Recurring"
+   }
+  ]
+ },
+ {
+  "chapter": 5,
+  "title": "Exponents",
+  "questions": [
+   {
+    "prompt": "In 7⁴, the base is",
+    "options": [
+     "7",
+     "4",
+     "2401",
+     "28"
+    ],
+    "answer": 0,
+    "solution": "The base is the number multiplied.",
+    "topic": "Powers"
+   },
+   {
+    "prompt": "(−2)⁵ =",
+    "options": [
+     "10",
+     "−10",
+     "32",
+     "−32"
+    ],
+    "answer": 3,
+    "solution": "Odd exponent with negative base gives a negative answer.",
+    "topic": "Negative base"
+   },
+   {
+    "prompt": "(2/3)⁴ =",
+    "options": [
+     "16/81",
+     "16/12",
+     "8/81",
+     "8/12"
+    ],
+    "answer": 0,
+    "solution": "2⁴/3⁴ = 16/81.",
+    "topic": "Fraction base"
+   },
+   {
+    "prompt": "648 as a product of prime powers is",
+    "options": [
+     "2² × 3⁴",
+     "2³ × 3⁴",
+     "2³ × 3³",
+     "2⁴ × 3³"
+    ],
+    "answer": 1,
+    "solution": "8 × 81 = 648.",
+    "topic": "Prime powers"
+   },
+   {
+    "prompt": "2⁵ × 2³ ÷ 2⁴ =",
+    "options": [
+     "2²",
+     "2¹²",
+     "2⁶",
+     "2⁴"
+    ],
+    "answer": 3,
+    "solution": "5 + 3 − 4 = 4.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "(3²)³ =",
+    "options": [
+     "3⁸",
+     "3⁶",
+     "3⁵",
+     "9³ is not equal"
+    ],
+    "answer": 1,
+    "solution": "(a^m)^n = a^(mn).",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "a⁰ (a ≠ 0) =",
+    "options": [
+     "0",
+     "a",
+     "not defined",
+     "1"
+    ],
+    "answer": 3,
+    "solution": "Any non-zero number to the power 0 is 1.",
+    "topic": "Zero exponent"
+   },
+   {
+    "prompt": "(2⁰ + 3⁰) × 4⁰ =",
+    "options": [
+     "0",
+     "9",
+     "2",
+     "1"
+    ],
+    "answer": 2,
+    "solution": "(1 + 1) × 1 = 2.",
+    "topic": "Zero exponent"
+   },
+   {
+    "prompt": "If 5ˣ × 5³ = 5⁸, then x =",
+    "options": [
+     "5",
+     "8/3",
+     "11",
+     "24"
+    ],
+    "answer": 0,
+    "solution": "x + 3 = 8.",
+    "topic": "Find exponent"
+   },
+   {
+    "prompt": "(−1)¹⁰¹ =",
+    "options": [
+     "1",
+     "101",
+     "−1",
+     "−101"
+    ],
+    "answer": 2,
+    "solution": "Odd exponent.",
+    "topic": "Negative base"
+   },
+   {
+    "prompt": "3,84,00,000 in standard form is",
+    "options": [
+     "384 × 10⁵",
+     "38.4 × 10⁶",
+     "3.84 × 10⁷",
+     "3.84 × 10⁸"
+    ],
+    "answer": 2,
+    "solution": "1 ≤ 3.84 < 10, point moves 7 places.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "5.06 × 10⁵ in usual form is",
+    "options": [
+     "50,60,000",
+     "5,060,000",
+     "5,06,000",
+     "50,600"
+    ],
+    "answer": 2,
+    "solution": "Move the point 5 places right.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "(2 × 3)⁴ =",
+    "options": [
+     "6⁸",
+     "2⁴ × 3⁴",
+     "2 × 3⁴",
+     "2⁴ × 3"
+    ],
+    "answer": 1,
+    "solution": "(ab)ⁿ = aⁿbⁿ.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "Which is greater: 2⁵ or 5²?",
+    "options": [
+     "2⁵",
+     "equal",
+     "5²",
+     "cannot say"
+    ],
+    "answer": 0,
+    "solution": "32 > 25.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "10⁶ is",
+    "options": [
+     "one million million",
+     "one crore",
+     "one lakh",
+     "ten lakh"
+    ],
+    "answer": 3,
+    "solution": "10⁶ = 10,00,000 = ten lakh.",
+    "topic": "Powers of 10"
+   },
+   {
+    "prompt": "(−3)⁴ =",
+    "options": [
+     "12",
+     "81",
+     "−81",
+     "−12"
+    ],
+    "answer": 1,
+    "solution": "Even exponent gives a positive answer.",
+    "topic": "Negative base"
+   },
+   {
+    "prompt": "x⁷ ÷ x³ =",
+    "options": [
+     "x²¹",
+     "x¹⁰",
+     "x⁴",
+     "x^(7/3)"
+    ],
+    "answer": 2,
+    "solution": "7 − 3 = 4.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "If 2ⁿ = 64, then n =",
+    "options": [
+     "6",
+     "5",
+     "32",
+     "8"
+    ],
+    "answer": 0,
+    "solution": "2⁶ = 64.",
+    "topic": "Find exponent"
+   },
+   {
+    "prompt": "(1/2)³ × 2³ =",
+    "options": [
+     "1/8",
+     "1/64",
+     "1",
+     "8"
+    ],
+    "answer": 2,
+    "solution": "(1/2 × 2)³ = 1.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "The value of 3⁴ − 4³ is",
+    "options": [
+     "17",
+     "1",
+     "0",
+     "−17"
+    ],
+    "answer": 0,
+    "solution": "81 − 64 = 17.",
+    "topic": "Powers"
+   },
+   {
+    "prompt": "The standard form of 7,20,000 is",
+    "options": [
+     "7.2 × 10⁴",
+     "0.72 × 10⁶",
+     "7.2 × 10⁵",
+     "72 × 10⁴"
+    ],
+    "answer": 2,
+    "solution": "7.2 with the point moved 5 places.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "The expanded form 4 × 10⁴ + 7 × 10³ + 3 × 10² + 5 equals",
+    "options": [
+     "47,305",
+     "4,73,05",
+     "4,735",
+     "47,350"
+    ],
+    "answer": 0,
+    "solution": "40000 + 7000 + 300 + 5.",
+    "topic": "Expanded form"
+   },
+   {
+    "prompt": "(a²b³)² =",
+    "options": [
+     "a⁴b⁹",
+     "a²b⁶",
+     "a⁴b⁶",
+     "a⁴b⁵"
+    ],
+    "answer": 2,
+    "solution": "Multiply each exponent by 2.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "25 × 5⁴ written as a power of 5 is",
+    "options": [
+     "5⁸",
+     "25⁴",
+     "5⁵",
+     "5⁶"
+    ],
+    "answer": 3,
+    "solution": "25 = 5², so 5²⁺⁴.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "(−2)³ × (−2)² =",
+    "options": [
+     "−32",
+     "−10",
+     "10",
+     "32"
+    ],
+    "answer": 0,
+    "solution": "(−2)⁵ = −32.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "Which is equal to 1?",
+    "options": [
+     "1⁰ + 1",
+     "0⁵",
+     "5⁰",
+     "(−1)³"
+    ],
+    "answer": 2,
+    "solution": "5⁰ = 1.",
+    "topic": "Zero exponent"
+   },
+   {
+    "prompt": "The distance from the Earth to the Sun is about 149,600,000 km. In standard form this is",
+    "options": [
+     "1496 × 10⁵ km",
+     "1.496 × 10⁷ km",
+     "14.96 × 10⁷ km",
+     "1.496 × 10⁸ km"
+    ],
+    "answer": 3,
+    "solution": "Point moves 8 places.",
+    "topic": "Standard form"
+   },
+   {
+    "prompt": "(5²)³ ÷ 5⁴ =",
+    "options": [
+     "125",
+     "5",
+     "25",
+     "1"
+    ],
+    "answer": 2,
+    "solution": "5⁶ ÷ 5⁴ = 5² = 25.",
+    "topic": "Laws"
+   },
+   {
+    "prompt": "If 3ˣ⁺¹ = 81, then x =",
+    "options": [
+     "27",
+     "3",
+     "2",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "81 = 3⁴, so x + 1 = 4.",
+    "topic": "Find exponent"
+   },
+   {
+    "prompt": "(3/4)² ÷ (3/4)⁵ × (3/4)³ =",
+    "options": [
+     "(3/4)¹⁰",
+     "0",
+     "3/4",
+     "1"
+    ],
+    "answer": 3,
+    "solution": "2 − 5 + 3 = 0, and (3/4)⁰ = 1.",
+    "topic": "Laws"
+   }
+  ]
+ },
+ {
+  "chapter": 6,
+  "title": "Set Concepts",
+  "questions": [
+   {
+    "prompt": "Which is a set?",
+    "options": [
+     "Tall students of a class",
+     "Beautiful flowers",
+     "Vowels of English",
+     "Good books"
+    ],
+    "answer": 2,
+    "solution": "Only the vowels are well-defined.",
+    "topic": "Definition"
+   },
+   {
+    "prompt": "If A = {1, 2, 3, 4, 6, 12}, then n(A) =",
+    "options": [
+     "5",
+     "6",
+     "12",
+     "28"
+    ],
+    "answer": 1,
+    "solution": "Count the elements.",
+    "topic": "Cardinal number"
+   },
+   {
+    "prompt": "The set of letters of ‘ASSESSMENT’ has",
+    "options": [
+     "6 elements",
+     "7 elements",
+     "5 elements",
+     "10 elements"
+    ],
+    "answer": 0,
+    "solution": "A, S, E, M, N, T.",
+    "topic": "Roster"
+   },
+   {
+    "prompt": "{x : x ∈ N, 3 < x < 4} is",
+    "options": [
+     "{3, 4}",
+     "an empty set",
+     "{4}",
+     "{3}"
+    ],
+    "answer": 1,
+    "solution": "No natural number lies between 3 and 4.",
+    "topic": "Empty set"
+   },
+   {
+    "prompt": "Which is a singleton set?",
+    "options": [
+     "{1, 2}",
+     "{0}",
+     "{ }",
+     "N"
+    ],
+    "answer": 1,
+    "solution": "It has exactly one element.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Which set is infinite?",
+    "options": [
+     "Even numbers",
+     "Months of a year",
+     "Letters of English",
+     "Days of a week"
+    ],
+    "answer": 0,
+    "solution": "Even numbers never end.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "A = {1, 2, 3} and B = {p, q, r}. Then A and B are",
+    "options": [
+     "equal",
+     "equivalent",
+     "neither",
+     "both equal and equivalent"
+    ],
+    "answer": 1,
+    "solution": "Same number of elements, different elements.",
+    "topic": "Equal and equivalent"
+   },
+   {
+    "prompt": "{a, b, c} = {c, a, b} because",
+    "options": [
+     "order matters",
+     "sets have the same elements",
+     "they are empty",
+     "they are equivalent only"
+    ],
+    "answer": 1,
+    "solution": "Order does not matter in a set.",
+    "topic": "Equal sets"
+   },
+   {
+    "prompt": "The number of subsets of {a, b, c} is",
+    "options": [
+     "6",
+     "9",
+     "3",
+     "8"
+    ],
+    "answer": 3,
+    "solution": "2³ = 8.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "The number of proper subsets of a set with 4 elements is",
+    "options": [
+     "4",
+     "16",
+     "15",
+     "8"
+    ],
+    "answer": 2,
+    "solution": "2⁴ − 1 = 15.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "Which is true?",
+    "options": [
+     "∅ ∈ A for every set A",
+     "n(∅) = 1",
+     "∅ ⊆ A for every set A",
+     "A ⊆ ∅ for every set A"
+    ],
+    "answer": 2,
+    "solution": "The empty set is a subset of every set.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "ξ = {1, …, 10} and A = {2, 3, 5, 7}. n(A′) =",
+    "options": [
+     "10",
+     "4",
+     "14",
+     "6"
+    ],
+    "answer": 3,
+    "solution": "10 − 4 = 6.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "In roster form, {x : x is a prime number less than 12} is",
+    "options": [
+     "{3, 5, 7, 11}",
+     "{2, 3, 5, 7, 9, 11}",
+     "{2, 3, 5, 7, 11}",
+     "{1, 2, 3, 5, 7, 11}"
+    ],
+    "answer": 2,
+    "solution": "1 is not prime; 9 is not prime.",
+    "topic": "Roster"
+   },
+   {
+    "prompt": "{5, 10, 15, 20, 25} in set-builder form is",
+    "options": [
+     "{x : x = n + 5}",
+     "{x : x = 5n, n ∈ N, n ≤ 5}",
+     "{x : x is odd}",
+     "{x : x < 25}"
+    ],
+    "answer": 1,
+    "solution": "Multiples of 5 up to 25.",
+    "topic": "Set-builder"
+   },
+   {
+    "prompt": "If 7 ∈ A, then",
+    "options": [
+     "7 belongs to A",
+     "7 is not in A",
+     "A = {7}",
+     "7 is a subset of A"
+    ],
+    "answer": 0,
+    "solution": "∈ means ‘belongs to’.",
+    "topic": "Notation"
+   },
+   {
+    "prompt": "The symbol for the universal set used in ICSE is",
+    "options": [
+     "ξ",
+     "∈",
+     "⊂",
+     "∅"
+    ],
+    "answer": 0,
+    "solution": "ξ (xi) is the universal set.",
+    "topic": "Notation"
+   },
+   {
+    "prompt": "A = {x : x is a letter of ‘LOYAL’}. Then A =",
+    "options": [
+     "{L, O, Y, A, L}",
+     "{L, Y}",
+     "{O, Y, A}",
+     "{L, O, Y, A}"
+    ],
+    "answer": 3,
+    "solution": "Do not repeat L.",
+    "topic": "Roster"
+   },
+   {
+    "prompt": "Which pair are equal sets?",
+    "options": [
+     "{1, 2}, {2, 3}",
+     "{a}, {a, b}",
+     "{1, 2}, {1, 2, 2}",
+     "{0}, ∅"
+    ],
+    "answer": 2,
+    "solution": "Repeats do not count, so both are {1, 2}.",
+    "topic": "Equal sets"
+   },
+   {
+    "prompt": "n(∅) =",
+    "options": [
+     "not defined",
+     "∅",
+     "0",
+     "1"
+    ],
+    "answer": 2,
+    "solution": "The empty set has no elements.",
+    "topic": "Empty set"
+   },
+   {
+    "prompt": "If A ⊆ B and B ⊆ A, then",
+    "options": [
+     "A is empty",
+     "B is empty",
+     "n(A) > n(B)",
+     "A = B"
+    ],
+    "answer": 3,
+    "solution": "Each has all the elements of the other.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "The set of whole numbers less than 1 is",
+    "options": [
+     "∅",
+     "{0}",
+     "{0, 1}",
+     "{1}"
+    ],
+    "answer": 1,
+    "solution": "Only 0.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "ξ = {a, b, c, d, e}, A = {a, e}. A′ =",
+    "options": [
+     "∅",
+     "{b, c, d}",
+     "{a, b, c, d, e}",
+     "{a, e}"
+    ],
+    "answer": 1,
+    "solution": "Elements of ξ not in A.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "The number of subsets of ∅ is",
+    "options": [
+     "infinite",
+     "2",
+     "1",
+     "0"
+    ],
+    "answer": 2,
+    "solution": "∅ itself; 2⁰ = 1.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "Which is a finite set?",
+    "options": [
+     "Natural numbers",
+     "Points on a line",
+     "{x : x ∈ N, x < 100}",
+     "{x : x is a multiple of 3}"
+    ],
+    "answer": 2,
+    "solution": "It has 99 elements.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "In a Venn diagram, the universal set is shown by",
+    "options": [
+     "a rectangle",
+     "a circle",
+     "a triangle",
+     "a dot"
+    ],
+    "answer": 0,
+    "solution": "The rectangle is ξ.",
+    "topic": "Venn"
+   },
+   {
+    "prompt": "If n(ξ) = 30 and n(A′) = 12, then n(A) =",
+    "options": [
+     "30",
+     "42",
+     "12",
+     "18"
+    ],
+    "answer": 3,
+    "solution": "30 − 12 = 18.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "The set of even prime numbers is",
+    "options": [
+     "a singleton",
+     "infinite",
+     "{2, 4}",
+     "empty"
+    ],
+    "answer": 0,
+    "solution": "Only 2.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "A set with 5 elements has how many subsets?",
+    "options": [
+     "32",
+     "25",
+     "31",
+     "10"
+    ],
+    "answer": 0,
+    "solution": "2⁵ = 32.",
+    "topic": "Subsets"
+   },
+   {
+    "prompt": "Which is correct for A = {1, {2}, 3}?",
+    "options": [
+     "{2} ⊆ A",
+     "{2} ∈ A",
+     "2 ∈ A",
+     "n(A) = 4"
+    ],
+    "answer": 1,
+    "solution": "{2} is an element of A.",
+    "topic": "Notation"
+   },
+   {
+    "prompt": "If A = {factors of 6} and B = {factors of 12}, then",
+    "options": [
+     "B ⊆ A",
+     "A = B",
+     "A and B have no common element",
+     "A ⊆ B"
+    ],
+    "answer": 3,
+    "solution": "1, 2, 3, 6 are all factors of 12.",
+    "topic": "Subsets"
+   }
+  ]
+ },
+ {
+  "chapter": 7,
+  "title": "Ratio and Proportion",
+  "questions": [
+   {
+    "prompt": "The ratio of 75 paise to ₹3 is",
+    "options": [
+     "1 : 4",
+     "75 : 3",
+     "4 : 1",
+     "25 : 1"
+    ],
+    "answer": 0,
+    "solution": "75 : 300 = 1 : 4.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "The ratio 48 : 60 in lowest terms is",
+    "options": [
+     "8 : 10",
+     "4 : 5",
+     "12 : 15",
+     "5 : 4"
+    ],
+    "answer": 1,
+    "solution": "HCF 12.",
+    "topic": "Lowest terms"
+   },
+   {
+    "prompt": "Which ratio is greater?",
+    "options": [
+     "they are equal",
+     "cannot say",
+     "3 : 5",
+     "5 : 8"
+    ],
+    "answer": 3,
+    "solution": "24/40 < 25/40.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "₹1800 divided in 4 : 5. The larger share is",
+    "options": [
+     "₹900",
+     "₹1000",
+     "₹1200",
+     "₹800"
+    ],
+    "answer": 1,
+    "solution": "5/9 × 1800.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "a : b = 2 : 3 and b : c = 4 : 5. a : b : c =",
+    "options": [
+     "8 : 12 : 10",
+     "2 : 3 : 5",
+     "2 : 12 : 5",
+     "8 : 12 : 15"
+    ],
+    "answer": 3,
+    "solution": "Make b = 12.",
+    "topic": "Combine"
+   },
+   {
+    "prompt": "6, 9, 10, 15 are",
+    "options": [
+     "in continued proportion",
+     "in proportion",
+     "not in proportion",
+     "equal"
+    ],
+    "answer": 1,
+    "solution": "6 × 15 = 9 × 10.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "The fourth proportional to 4, 10, 6 is",
+    "options": [
+     "2.4",
+     "24",
+     "12",
+     "15"
+    ],
+    "answer": 3,
+    "solution": "(10 × 6)/4.",
+    "topic": "Fourth proportional"
+   },
+   {
+    "prompt": "The third proportional to 4 and 12 is",
+    "options": [
+     "8",
+     "36",
+     "3",
+     "48"
+    ],
+    "answer": 1,
+    "solution": "12²/4.",
+    "topic": "Third proportional"
+   },
+   {
+    "prompt": "The mean proportional between 9 and 16 is",
+    "options": [
+     "144",
+     "25",
+     "12",
+     "12.5"
+    ],
+    "answer": 2,
+    "solution": "√144.",
+    "topic": "Mean proportional"
+   },
+   {
+    "prompt": "If x : 15 :: 8 : 20, then x =",
+    "options": [
+     "12",
+     "10",
+     "37.5",
+     "6"
+    ],
+    "answer": 3,
+    "solution": "20x = 120.",
+    "topic": "Missing term"
+   },
+   {
+    "prompt": "In a : b :: c : d, the means are",
+    "options": [
+     "c and d",
+     "b and c",
+     "a and b",
+     "a and d"
+    ],
+    "answer": 1,
+    "solution": "The middle terms are the means.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "The ratio of 2 hours to 40 minutes is",
+    "options": [
+     "20 : 1",
+     "3 : 1",
+     "1 : 3",
+     "1 : 20"
+    ],
+    "answer": 1,
+    "solution": "120 : 40 = 3 : 1.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "The ratio of 1.2 m to 80 cm is",
+    "options": [
+     "3 : 2",
+     "15 : 1",
+     "2 : 3",
+     "8 : 12"
+    ],
+    "answer": 0,
+    "solution": "120 : 80 = 3 : 2.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "The ratio of boys to girls is 5 : 3. There are 40 students. The number of girls is",
+    "options": [
+     "24",
+     "8",
+     "15",
+     "25"
+    ],
+    "answer": 2,
+    "solution": "3/8 × 40 = 15.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "Two numbers are in the ratio 3 : 7 and their sum is 80. The smaller number is",
+    "options": [
+     "56",
+     "21",
+     "30",
+     "24"
+    ],
+    "answer": 3,
+    "solution": "3/10 × 80.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "If 3 : x = x : 12, then x =",
+    "options": [
+     "4",
+     "6",
+     "36",
+     "9"
+    ],
+    "answer": 1,
+    "solution": "x² = 36.",
+    "topic": "Mean proportional"
+   },
+   {
+    "prompt": "The ratio 2 : 3 is the same as",
+    "options": [
+     "10 : 15",
+     "6 : 8",
+     "3 : 2",
+     "4 : 9"
+    ],
+    "answer": 0,
+    "solution": "Multiply both by 5.",
+    "topic": "Equivalent"
+   },
+   {
+    "prompt": "₹2400 is divided among A, B, C in the ratio 1 : 2 : 3. C gets",
+    "options": [
+     "₹400",
+     "₹800",
+     "₹1200",
+     "₹600"
+    ],
+    "answer": 2,
+    "solution": "3/6 × 2400.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "The inverse ratio of 4 : 7 is",
+    "options": [
+     "4 : 7",
+     "1/4 : 7",
+     "−4 : 7",
+     "7 : 4"
+    ],
+    "answer": 3,
+    "solution": "Swap the terms.",
+    "topic": "Inverse ratio"
+   },
+   {
+    "prompt": "If a : b = 3 : 4, then (2a + b) : (a + 2b) =",
+    "options": [
+     "7 : 11",
+     "11 : 10",
+     "10 : 11",
+     "6 : 8"
+    ],
+    "answer": 2,
+    "solution": "(6 + 4) : (3 + 8).",
+    "topic": "Ratio algebra"
+   },
+   {
+    "prompt": "What must be added to each of 7, 11 to make the ratio 3 : 4?",
+    "options": [
+     "1",
+     "3",
+     "5",
+     "4"
+    ],
+    "answer": 2,
+    "solution": "(7 + x) : (11 + x) = 3 : 4 ⇒ 28 + 4x = 33 + 3x ⇒ x = 5.",
+    "topic": "Ratio algebra"
+   },
+   {
+    "prompt": "2, 6, 18 are in continued proportion because",
+    "options": [
+     "6 ÷ 2 = 2",
+     "2 × 18 = 6²",
+     "18 − 6 = 6 − 2",
+     "2 + 18 = 6"
+    ],
+    "answer": 1,
+    "solution": "a × c = b².",
+    "topic": "Continued proportion"
+   },
+   {
+    "prompt": "The angles of a triangle are in the ratio 2 : 3 : 4. The largest angle is",
+    "options": [
+     "60°",
+     "90°",
+     "80°",
+     "40°"
+    ],
+    "answer": 2,
+    "solution": "4/9 × 180.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "A map uses 1 cm : 5 km. Two towns are 7.5 cm apart on the map. The real distance is",
+    "options": [
+     "37.5 km",
+     "12.5 km",
+     "75 km",
+     "7.5 km"
+    ],
+    "answer": 0,
+    "solution": "7.5 × 5.",
+    "topic": "Scale"
+   },
+   {
+    "prompt": "The ratio of the ages of A and B is 4 : 5. A is 24 years. B is",
+    "options": [
+     "29 years",
+     "20 years",
+     "25 years",
+     "30 years"
+    ],
+    "answer": 3,
+    "solution": "24 ÷ 4 × 5.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "Which can never be a ratio of two quantities?",
+    "options": [
+     "2 kg : 5 kg",
+     "5 kg : 3 m",
+     "3 m : 4 m",
+     "₹2 : ₹7"
+    ],
+    "answer": 1,
+    "solution": "Kilograms and metres are not of the same kind.",
+    "topic": "Same kind"
+   },
+   {
+    "prompt": "If 5x = 3y, then x : y =",
+    "options": [
+     "5 : 3",
+     "1 : 15",
+     "15 : 1",
+     "3 : 5"
+    ],
+    "answer": 3,
+    "solution": "x/y = 3/5.",
+    "topic": "Ratio algebra"
+   },
+   {
+    "prompt": "The fourth proportional to 0.4, 0.8 and 3 is",
+    "options": [
+     "6",
+     "12",
+     "1.5",
+     "2.4"
+    ],
+    "answer": 0,
+    "solution": "(0.8 × 3)/0.4.",
+    "topic": "Fourth proportional"
+   },
+   {
+    "prompt": "Milk and water are in the ratio 5 : 2 in 35 L of a mixture. The water is",
+    "options": [
+     "14 L",
+     "7 L",
+     "25 L",
+     "10 L"
+    ],
+    "answer": 3,
+    "solution": "2/7 × 35.",
+    "topic": "Divide"
+   },
+   {
+    "prompt": "Ratio of 1/2 to 1/3 is",
+    "options": [
+     "2 : 3",
+     "6 : 1",
+     "3 : 2",
+     "1 : 6"
+    ],
+    "answer": 2,
+    "solution": "(1/2) ÷ (1/3) = 3/2.",
+    "topic": "Ratio"
+   }
+  ]
+ },
+ {
+  "chapter": 8,
+  "title": "Unitary Method",
+  "questions": [
+   {
+    "prompt": "12 pens cost ₹180. 20 pens cost",
+    "options": [
+     "₹240",
+     "₹150",
+     "₹300",
+     "₹360"
+    ],
+    "answer": 2,
+    "solution": "15 × 20.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A car uses 8 L for 96 km. On 15 L it goes",
+    "options": [
+     "144 km",
+     "160 km",
+     "180 km",
+     "200 km"
+    ],
+    "answer": 2,
+    "solution": "12 km per litre.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "15 men build a wall in 24 days. 20 men build it in",
+    "options": [
+     "20 days",
+     "32 days",
+     "16 days",
+     "18 days"
+    ],
+    "answer": 3,
+    "solution": "360 ÷ 20.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "Which is an inverse variation?",
+    "options": [
+     "Distance and petrol used",
+     "Wages and days worked",
+     "Cost and number of pens",
+     "Speed and time for a fixed distance"
+    ],
+    "answer": 3,
+    "solution": "More speed, less time.",
+    "topic": "Kind of variation"
+   },
+   {
+    "prompt": "A does a work in 10 days and B in 15 days. Together they take",
+    "options": [
+     "12.5 days",
+     "5 days",
+     "6 days",
+     "25 days"
+    ],
+    "answer": 2,
+    "solution": "1/10 + 1/15 = 1/6.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "A and B together take 12 days; A alone 20 days. B alone takes",
+    "options": [
+     "32 days",
+     "24 days",
+     "8 days",
+     "30 days"
+    ],
+    "answer": 3,
+    "solution": "1/12 − 1/20 = 1/30.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "Pipe A fills a tank in 6 h, pipe B empties it in 9 h. With both open, it fills in",
+    "options": [
+     "3.6 h",
+     "18 h",
+     "15 h",
+     "3 h"
+    ],
+    "answer": 1,
+    "solution": "1/6 − 1/9 = 1/18.",
+    "topic": "Pipes"
+   },
+   {
+    "prompt": "A man earns ₹4500 in 9 days. In 15 days he earns",
+    "options": [
+     "₹5000",
+     "₹7500",
+     "₹2700",
+     "₹6750"
+    ],
+    "answer": 1,
+    "solution": "500 × 15.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "6 taps fill a tank in 4 h. 8 taps fill it in",
+    "options": [
+     "6 h",
+     "2 h",
+     "5 h",
+     "3 h"
+    ],
+    "answer": 3,
+    "solution": "24 ÷ 8.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "If A does 1/8 of a work in one day, A finishes it in",
+    "options": [
+     "8 days",
+     "4 days",
+     "1/8 day",
+     "16 days"
+    ],
+    "answer": 0,
+    "solution": "Days = 1 ÷ (1/8).",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "A train covers 200 km in 2.5 h. 340 km takes",
+    "options": [
+     "4 h 30 min",
+     "3 h 45 min",
+     "4 h 15 min",
+     "4 h"
+    ],
+    "answer": 2,
+    "solution": "80 km/h; 340 ÷ 80 = 4.25 h.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A can do a job in 4 days and B in 12 days. Together they take",
+    "options": [
+     "16 days",
+     "6 days",
+     "8 days",
+     "3 days"
+    ],
+    "answer": 3,
+    "solution": "(4 × 12)/(4 + 12) = 3.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "Food lasts 300 soldiers 40 days. After 10 days, 60 leave. The rest lasts",
+    "options": [
+     "37.5 days",
+     "50 days",
+     "35 days",
+     "30 days"
+    ],
+    "answer": 0,
+    "solution": "(300 × 30)/240.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "5 kg of sugar costs ₹215. 8 kg costs",
+    "options": [
+     "₹350",
+     "₹430",
+     "₹344",
+     "₹324"
+    ],
+    "answer": 2,
+    "solution": "43 × 8.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A cyclist at 12 km/h takes 5 h. At 15 km/h the same journey takes",
+    "options": [
+     "5 h",
+     "6.25 h",
+     "3 h",
+     "4 h"
+    ],
+    "answer": 3,
+    "solution": "60 km ÷ 15.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "A, B and C can do a work in 6, 12 and 24 days. Together they take",
+    "options": [
+     "42 days",
+     "7/24 day",
+     "14 days",
+     "24/7 days"
+    ],
+    "answer": 3,
+    "solution": "1/6 + 1/12 + 1/24 = 7/24.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "A can do a work in 8 days and B in 12 days. After 3 days together, A leaves. B finishes the rest in",
+    "options": [
+     "5 days",
+     "3 days",
+     "4.5 days",
+     "6 days"
+    ],
+    "answer": 2,
+    "solution": "Done 5/8; left 3/8 = 4.5 days for B.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "If 7 workers earn ₹3150 in a day, 12 workers earn",
+    "options": [
+     "₹5000",
+     "₹5400",
+     "₹6300",
+     "₹4800"
+    ],
+    "answer": 1,
+    "solution": "450 × 12.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A shopkeeper has fodder for 20 cows for 15 days. With 25 cows it lasts",
+    "options": [
+     "20 days",
+     "10 days",
+     "12 days",
+     "18.75 days"
+    ],
+    "answer": 2,
+    "solution": "(20 × 15)/25.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "Two pipes fill a tank in 10 h and 15 h. Both together fill it in",
+    "options": [
+     "6 h",
+     "5 h",
+     "25 h",
+     "12.5 h"
+    ],
+    "answer": 0,
+    "solution": "1/10 + 1/15 = 1/6.",
+    "topic": "Pipes"
+   },
+   {
+    "prompt": "In the unitary method, we first find",
+    "options": [
+     "the ratio only",
+     "the total",
+     "the value of many units",
+     "the value of one unit"
+    ],
+    "answer": 3,
+    "solution": "Unit value first.",
+    "topic": "Method"
+   },
+   {
+    "prompt": "A machine prints 450 pages in 9 minutes. In 1 hour it prints",
+    "options": [
+     "3000 pages",
+     "4050 pages",
+     "3600 pages",
+     "2700 pages"
+    ],
+    "answer": 0,
+    "solution": "50 pages per minute × 60.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "If 16 men finish a work in 10 days, how many men finish it in 8 days?",
+    "options": [
+     "18",
+     "12.8",
+     "20",
+     "24"
+    ],
+    "answer": 2,
+    "solution": "160 ÷ 8.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "A does half the work in 5 days. A does the whole work in",
+    "options": [
+     "15 days",
+     "5 days",
+     "2.5 days",
+     "10 days"
+    ],
+    "answer": 3,
+    "solution": "Twice the time for twice the work.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "A tap fills a tank in 3 h and a leak empties it in 12 h. The tank fills in",
+    "options": [
+     "9 h",
+     "2.4 h",
+     "4 h",
+     "15 h"
+    ],
+    "answer": 2,
+    "solution": "1/3 − 1/12 = 1/4.",
+    "topic": "Pipes"
+   },
+   {
+    "prompt": "x and y vary inversely. x = 6 when y = 10. When x = 15, y =",
+    "options": [
+     "9",
+     "1.5",
+     "4",
+     "25"
+    ],
+    "answer": 2,
+    "solution": "xy = 60.",
+    "topic": "Inverse"
+   },
+   {
+    "prompt": "x and y vary directly. x = 6 when y = 10. When x = 15, y =",
+    "options": [
+     "20",
+     "9",
+     "25",
+     "4"
+    ],
+    "answer": 2,
+    "solution": "y/x = 10/6.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A and B can do a work in 18 days, B and C in 24 days, A and C in 36 days. A, B and C together take",
+    "options": [
+     "26 days",
+     "12 days",
+     "16 days",
+     "13 days"
+    ],
+    "answer": 2,
+    "solution": "2(A+B+C) = 1/18 + 1/24 + 1/36 = 9/72 = 1/8, so A+B+C = 1/16.",
+    "topic": "Time and work"
+   },
+   {
+    "prompt": "A worker is paid ₹840 for 6 days. For 2 weeks of work (14 days) he gets",
+    "options": [
+     "₹2240",
+     "₹1960",
+     "₹1820",
+     "₹1680"
+    ],
+    "answer": 1,
+    "solution": "140 × 14.",
+    "topic": "Direct"
+   },
+   {
+    "prompt": "A can do 2/3 of a work in 10 days. The whole work takes A",
+    "options": [
+     "20/3 days",
+     "15 days",
+     "30 days",
+     "12 days"
+    ],
+    "answer": 1,
+    "solution": "10 ÷ (2/3) = 15.",
+    "topic": "Time and work"
+   }
+  ]
+ },
+ {
+  "chapter": 9,
+  "title": "Percent and Percentage",
+  "questions": [
+   {
+    "prompt": "3/8 as a percent is",
+    "options": [
+     "37.5%",
+     "3.75%",
+     "0.375%",
+     "38%"
+    ],
+    "answer": 0,
+    "solution": "3/8 × 100.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "45% as a fraction in lowest terms is",
+    "options": [
+     "9/20",
+     "9/2",
+     "45/10",
+     "4/5"
+    ],
+    "answer": 0,
+    "solution": "45/100 = 9/20.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "0.065 as a percent is",
+    "options": [
+     "0.65%",
+     "650%",
+     "6.5%",
+     "65%"
+    ],
+    "answer": 2,
+    "solution": "0.065 × 100.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "12½% as a fraction is",
+    "options": [
+     "1/4",
+     "1/12",
+     "1/8",
+     "12/100"
+    ],
+    "answer": 2,
+    "solution": "(25/2)/100 = 1/8.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "15% of ₹640 is",
+    "options": [
+     "₹64",
+     "₹106",
+     "₹9.60",
+     "₹96"
+    ],
+    "answer": 3,
+    "solution": "0.15 × 640.",
+    "topic": "Of a quantity"
+   },
+   {
+    "prompt": "250 g as a percent of 2 kg is",
+    "options": [
+     "8%",
+     "12.5%",
+     "125%",
+     "25%"
+    ],
+    "answer": 1,
+    "solution": "250/2000 × 100.",
+    "topic": "What percent"
+   },
+   {
+    "prompt": "35% of a number is 84. The number is",
+    "options": [
+     "294",
+     "240",
+     "29.4",
+     "120"
+    ],
+    "answer": 1,
+    "solution": "84 × 100/35.",
+    "topic": "Find the whole"
+   },
+   {
+    "prompt": "The price rises from ₹250 to ₹290. The percent increase is",
+    "options": [
+     "16%",
+     "13.8%",
+     "14%",
+     "40%"
+    ],
+    "answer": 0,
+    "solution": "40/250 × 100.",
+    "topic": "Increase"
+   },
+   {
+    "prompt": "24,000 decreases by 5%. The new value is",
+    "options": [
+     "22,000",
+     "22,800",
+     "23,880",
+     "25,200"
+    ],
+    "answer": 1,
+    "solution": "24000 × 0.95.",
+    "topic": "Decrease"
+   },
+   {
+    "prompt": "After a 20% increase, a value is 18,000. The original is",
+    "options": [
+     "16,000",
+     "14,400",
+     "15,000",
+     "21,600"
+    ],
+    "answer": 2,
+    "solution": "18000 ÷ 1.2.",
+    "topic": "Original"
+   },
+   {
+    "prompt": "1/4 as a percent is",
+    "options": [
+     "25%",
+     "4%",
+     "40%",
+     "0.25%"
+    ],
+    "answer": 0,
+    "solution": "100/4.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "2.5 as a percent is",
+    "options": [
+     "0.25%",
+     "25%",
+     "2.5%",
+     "250%"
+    ],
+    "answer": 3,
+    "solution": "2.5 × 100.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "What percent of 80 is 20?",
+    "options": [
+     "20%",
+     "60%",
+     "25%",
+     "4%"
+    ],
+    "answer": 2,
+    "solution": "20/80 × 100.",
+    "topic": "What percent"
+   },
+   {
+    "prompt": "40% is the pass mark. A student gets 185 and fails by 15. The maximum marks are",
+    "options": [
+     "400",
+     "500",
+     "550",
+     "462.5"
+    ],
+    "answer": 1,
+    "solution": "Pass mark 200 = 40% of 500.",
+    "topic": "Exam"
+   },
+   {
+    "prompt": "A student scores 432 out of 600. The percent is",
+    "options": [
+     "72%",
+     "43.2%",
+     "75%",
+     "68%"
+    ],
+    "answer": 0,
+    "solution": "432/600 × 100.",
+    "topic": "What percent"
+   },
+   {
+    "prompt": "60% of the students are boys. There are 360 girls. Total students =",
+    "options": [
+     "540",
+     "600",
+     "216",
+     "900"
+    ],
+    "answer": 3,
+    "solution": "Girls 40% = 360.",
+    "topic": "Find the whole"
+   },
+   {
+    "prompt": "Which is the largest?",
+    "options": [
+     "0.6",
+     "3/5",
+     "62%",
+     "0.61"
+    ],
+    "answer": 2,
+    "solution": "0.6, 0.62, 0.61, 0.6.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "50 paise as a percent of ₹2 is",
+    "options": [
+     "25%",
+     "2.5%",
+     "4%",
+     "50%"
+    ],
+    "answer": 0,
+    "solution": "50/200 × 100.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "A number is increased by 10% and then decreased by 10%. The net change is",
+    "options": [
+     "0%",
+     "1% decrease",
+     "1% increase",
+     "10% decrease"
+    ],
+    "answer": 1,
+    "solution": "1.1 × 0.9 = 0.99.",
+    "topic": "Successive"
+   },
+   {
+    "prompt": "5% of 5% of 400 is",
+    "options": [
+     "0.5",
+     "1",
+     "20",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "0.05 × 0.05 × 400 = 1.",
+    "topic": "Of a quantity"
+   },
+   {
+    "prompt": "x% of y is the same as",
+    "options": [
+     "y% of x",
+     "(x + y)%",
+     "100% of xy",
+     "x% of 100"
+    ],
+    "answer": 0,
+    "solution": "xy/100 both ways.",
+    "topic": "Property"
+   },
+   {
+    "prompt": "Air has 21% oxygen. Oxygen in 500 L of air is",
+    "options": [
+     "79 L",
+     "210 L",
+     "21 L",
+     "105 L"
+    ],
+    "answer": 3,
+    "solution": "0.21 × 500.",
+    "topic": "Of a quantity"
+   },
+   {
+    "prompt": "A bat costs ₹800 and its price falls by ₹120. The percent decrease is",
+    "options": [
+     "12%",
+     "15%",
+     "18%",
+     "20%"
+    ],
+    "answer": 1,
+    "solution": "120/800 × 100.",
+    "topic": "Decrease"
+   },
+   {
+    "prompt": "If 30% of x = 20% of y, then x : y =",
+    "options": [
+     "6 : 1",
+     "3 : 2",
+     "1 : 1",
+     "2 : 3"
+    ],
+    "answer": 3,
+    "solution": "0.3x = 0.2y ⇒ x/y = 2/3.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "72% of 25 + 25% of 72 =",
+    "options": [
+     "72",
+     "36",
+     "18",
+     "50"
+    ],
+    "answer": 1,
+    "solution": "18 + 18.",
+    "topic": "Of a quantity"
+   },
+   {
+    "prompt": "A salary of ₹20,000 is raised by 15%. The new salary is",
+    "options": [
+     "₹23,500",
+     "₹21,500",
+     "₹30,000",
+     "₹23,000"
+    ],
+    "answer": 3,
+    "solution": "20000 × 1.15.",
+    "topic": "Increase"
+   },
+   {
+    "prompt": "The percent of 1 hour that 12 minutes is",
+    "options": [
+     "20%",
+     "12%",
+     "25%",
+     "5%"
+    ],
+    "answer": 0,
+    "solution": "12/60 × 100.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "What must be added to 40% of 250 to get 140?",
+    "options": [
+     "60",
+     "40",
+     "100",
+     "30"
+    ],
+    "answer": 1,
+    "solution": "140 − 100.",
+    "topic": "Of a quantity"
+   },
+   {
+    "prompt": "A football team won 18 of its 24 matches. Its winning percent is",
+    "options": [
+     "72%",
+     "75%",
+     "66.7%",
+     "80%"
+    ],
+    "answer": 1,
+    "solution": "18/24 × 100.",
+    "topic": "What percent"
+   },
+   {
+    "prompt": "If the price of sugar rises by 25%, by what percent must a family cut use to keep the spending the same?",
+    "options": [
+     "20%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    "answer": 0,
+    "solution": "Use × 1/1.25 = 0.8.",
+    "topic": "Successive"
+   }
+  ]
+ },
+ {
+  "chapter": 10,
+  "title": "Profit, Loss and Discount",
+  "questions": [
+   {
+    "prompt": "CP ₹1500, SP ₹1725. Profit % =",
+    "options": [
+     "22.5%",
+     "15%",
+     "12%",
+     "13%"
+    ],
+    "answer": 1,
+    "solution": "225/1500 × 100.",
+    "topic": "Profit"
+   },
+   {
+    "prompt": "CP ₹2800 + repairs ₹200, SP ₹2700. Loss % =",
+    "options": [
+     "11.1%",
+     "3.6%",
+     "7%",
+     "10%"
+    ],
+    "answer": 3,
+    "solution": "300/3000 × 100.",
+    "topic": "Overheads"
+   },
+   {
+    "prompt": "CP ₹640, profit 12½%. SP =",
+    "options": [
+     "₹800",
+     "₹720",
+     "₹652.50",
+     "₹700"
+    ],
+    "answer": 1,
+    "solution": "640 × 1.125.",
+    "topic": "SP"
+   },
+   {
+    "prompt": "SP ₹1530 at a loss of 15%. CP =",
+    "options": [
+     "₹1300.50",
+     "₹1800",
+     "₹1700",
+     "₹1759.50"
+    ],
+    "answer": 1,
+    "solution": "1530 ÷ 0.85.",
+    "topic": "CP"
+   },
+   {
+    "prompt": "Profit or loss percent is found on",
+    "options": [
+     "SP",
+     "MP",
+     "CP",
+     "discount"
+    ],
+    "answer": 2,
+    "solution": "Always on CP.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "Discount is found on",
+    "options": [
+     "profit",
+     "CP",
+     "MP",
+     "SP"
+    ],
+    "answer": 2,
+    "solution": "Always on MP.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "MP ₹2400, discount 15%. SP =",
+    "options": [
+     "₹2040",
+     "₹2100",
+     "₹360",
+     "₹2385"
+    ],
+    "answer": 0,
+    "solution": "2400 × 0.85.",
+    "topic": "Discount"
+   },
+   {
+    "prompt": "MP ₹800, SP ₹680. Discount % =",
+    "options": [
+     "17.6%",
+     "12%",
+     "15%",
+     "20%"
+    ],
+    "answer": 2,
+    "solution": "120/800 × 100.",
+    "topic": "Discount"
+   },
+   {
+    "prompt": "Goods are marked 25% above CP and a 10% discount is given. Profit % =",
+    "options": [
+     "12.5%",
+     "10%",
+     "15%",
+     "35%"
+    ],
+    "answer": 0,
+    "solution": "1.25 × 0.9 = 1.125.",
+    "topic": "Mark-up"
+   },
+   {
+    "prompt": "SP = CP means",
+    "options": [
+     "no profit, no loss",
+     "loss",
+     "discount",
+     "profit"
+    ],
+    "answer": 0,
+    "solution": "The difference is 0.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A man buys 10 oranges for ₹50 and sells them at ₹6 each. Profit % =",
+    "options": [
+     "20%",
+     "16.7%",
+     "25%",
+     "10%"
+    ],
+    "answer": 0,
+    "solution": "CP ₹5, SP ₹6.",
+    "topic": "Profit"
+   },
+   {
+    "prompt": "A man sells an article at a 20% profit for ₹960. CP =",
+    "options": [
+     "₹768",
+     "₹780",
+     "₹800",
+     "₹1152"
+    ],
+    "answer": 2,
+    "solution": "960 ÷ 1.2.",
+    "topic": "CP"
+   },
+   {
+    "prompt": "A TV is bought for ₹12,000 and sold at a loss of 8%. SP =",
+    "options": [
+     "₹12,960",
+     "₹11,040",
+     "₹960",
+     "₹11,000"
+    ],
+    "answer": 1,
+    "solution": "12000 × 0.92.",
+    "topic": "SP"
+   },
+   {
+    "prompt": "By selling 12 pens for ₹90, a man loses 10%. For a 20% gain, he must sell for ₹90",
+    "options": [
+     "8 pens",
+     "9 pens",
+     "10 pens",
+     "11 pens"
+    ],
+    "answer": 1,
+    "solution": "CP per pen 100/12; SP for 20% gain = 10.",
+    "topic": "Articles"
+   },
+   {
+    "prompt": "The CP of 15 articles equals the SP of 12. Profit % =",
+    "options": [
+     "3%",
+     "20%",
+     "15%",
+     "25%"
+    ],
+    "answer": 3,
+    "solution": "Profit = 3 articles on 12 sold: 3/12 × 100.",
+    "topic": "Articles"
+   },
+   {
+    "prompt": "A shopkeeper gives two discounts of 10% each. The single equal discount is",
+    "options": [
+     "18%",
+     "20%",
+     "21%",
+     "19%"
+    ],
+    "answer": 3,
+    "solution": "0.9 × 0.9 = 0.81.",
+    "topic": "Successive discount"
+   },
+   {
+    "prompt": "A book marked ₹250 is sold for ₹225. The discount is",
+    "options": [
+     "₹25",
+     "both ₹25 and 10%",
+     "10%",
+     "₹225"
+    ],
+    "answer": 1,
+    "solution": "25/250 = 10%.",
+    "topic": "Discount"
+   },
+   {
+    "prompt": "An article is sold at 5% gain. If it were sold for ₹45 more, the gain would be 10%. CP =",
+    "options": [
+     "₹900",
+     "₹950",
+     "₹1000",
+     "₹450"
+    ],
+    "answer": 0,
+    "solution": "5% of CP = 45.",
+    "topic": "CP"
+   },
+   {
+    "prompt": "A man buys a radio for ₹1600 and spends ₹150 on transport. He sells it for ₹2100. Profit =",
+    "options": [
+     "₹350",
+     "₹200",
+     "₹650",
+     "₹500"
+    ],
+    "answer": 0,
+    "solution": "2100 − 1750.",
+    "topic": "Overheads"
+   },
+   {
+    "prompt": "A loss of 20% on SP ₹480 means CP is",
+    "options": [
+     "₹576",
+     "₹600",
+     "₹384",
+     "₹500"
+    ],
+    "answer": 1,
+    "solution": "480 ÷ 0.8.",
+    "topic": "CP"
+   },
+   {
+    "prompt": "MP ₹1500. After a discount, the SP is ₹1200. To get a 20% profit, CP must be",
+    "options": [
+     "₹1000",
+     "₹1250",
+     "₹1200",
+     "₹960"
+    ],
+    "answer": 0,
+    "solution": "1200 ÷ 1.2.",
+    "topic": "Mark-up"
+   },
+   {
+    "prompt": "A dealer sells two cycles at ₹3000 each, one at a 20% gain and one at a 20% loss. The result is",
+    "options": [
+     "no gain no loss",
+     "₹500 loss",
+     "₹250 gain",
+     "₹250 loss"
+    ],
+    "answer": 3,
+    "solution": "CPs 2500 and 3750 total 6250; SP 6000.",
+    "topic": "Two articles"
+   },
+   {
+    "prompt": "A shop offers ‘buy 3, get 1 free’. The discount percent is",
+    "options": [
+     "25%",
+     "20%",
+     "30%",
+     "33⅓%"
+    ],
+    "answer": 0,
+    "solution": "Pay for 3, get 4: 1/4 off.",
+    "topic": "Discount"
+   },
+   {
+    "prompt": "CP ₹450, profit ₹90. Profit % =",
+    "options": [
+     "20%",
+     "18%",
+     "16.7%",
+     "25%"
+    ],
+    "answer": 0,
+    "solution": "90/450 × 100.",
+    "topic": "Profit"
+   },
+   {
+    "prompt": "If the profit is 25% of the SP, the profit percent on the CP is",
+    "options": [
+     "20%",
+     "25%",
+     "33⅓%",
+     "50%"
+    ],
+    "answer": 2,
+    "solution": "SP 100, profit 25, CP 75: 25/75.",
+    "topic": "Profit"
+   },
+   {
+    "prompt": "A watch marked ₹2000 is sold at 12% discount. The customer pays",
+    "options": [
+     "₹1600",
+     "₹1880",
+     "₹1760",
+     "₹240"
+    ],
+    "answer": 2,
+    "solution": "2000 × 0.88.",
+    "topic": "Discount"
+   },
+   {
+    "prompt": "A man sells a chair for ₹720 and gains 20%. To gain 25%, he must sell it for",
+    "options": [
+     "₹765",
+     "₹780",
+     "₹900",
+     "₹750"
+    ],
+    "answer": 3,
+    "solution": "CP 600 × 1.25.",
+    "topic": "SP"
+   },
+   {
+    "prompt": "A fruit seller buys 100 mangoes for ₹1200. 10 rot. He sells the rest at ₹15 each. Profit % =",
+    "options": [
+     "10%",
+     "12.5%",
+     "25%",
+     "15%"
+    ],
+    "answer": 1,
+    "solution": "SP 90 × 15 = 1350; profit 150/1200.",
+    "topic": "Profit"
+   },
+   {
+    "prompt": "The SP of an article after a 20% discount is ₹640. MP =",
+    "options": [
+     "₹512",
+     "₹820",
+     "₹800",
+     "₹768"
+    ],
+    "answer": 2,
+    "solution": "640 ÷ 0.8.",
+    "topic": "MP"
+   },
+   {
+    "prompt": "A trader marks a price 40% above CP and gives a 20% discount. Profit % =",
+    "options": [
+     "16%",
+     "8%",
+     "20%",
+     "12%"
+    ],
+    "answer": 3,
+    "solution": "1.4 × 0.8 = 1.12.",
+    "topic": "Mark-up"
+   }
+  ]
+ },
+ {
+  "chapter": 11,
+  "title": "Simple Interest",
+  "questions": [
+   {
+    "prompt": "SI on ₹4500 at 8% for 3 years is",
+    "options": [
+     "₹1080",
+     "₹5580",
+     "₹1200",
+     "₹360"
+    ],
+    "answer": 0,
+    "solution": "4500 × 8 × 3/100.",
+    "topic": "SI"
+   },
+   {
+    "prompt": "The amount on ₹6000 at 9% for 2½ years is",
+    "options": [
+     "₹6135",
+     "₹7350",
+     "₹1350",
+     "₹7080"
+    ],
+    "answer": 1,
+    "solution": "SI 1350 + 6000.",
+    "topic": "Amount"
+   },
+   {
+    "prompt": "₹2500 gives ₹600 SI in 4 years. The rate is",
+    "options": [
+     "6%",
+     "24%",
+     "4%",
+     "5%"
+    ],
+    "answer": 0,
+    "solution": "60000/10000.",
+    "topic": "Rate"
+   },
+   {
+    "prompt": "₹1600 amounts to ₹2080 at 7½%. The time is",
+    "options": [
+     "6 years",
+     "4 years",
+     "5 years",
+     "3 years"
+    ],
+    "answer": 1,
+    "solution": "SI 480 = 1600 × 7.5 × T/100.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "The sum that gives ₹945 SI at 7% in 3 years is",
+    "options": [
+     "₹4000",
+     "₹4725",
+     "₹4500",
+     "₹1985"
+    ],
+    "answer": 2,
+    "solution": "94500/21.",
+    "topic": "Principal"
+   },
+   {
+    "prompt": "A sum doubles in 8 years at SI. The rate is",
+    "options": [
+     "8%",
+     "25%",
+     "12½%",
+     "10%"
+    ],
+    "answer": 2,
+    "solution": "SI = P in 8 years.",
+    "topic": "Doubles"
+   },
+   {
+    "prompt": "9 months is how many years?",
+    "options": [
+     "3/4",
+     "1/4",
+     "3/2",
+     "9/10"
+    ],
+    "answer": 0,
+    "solution": "9/12.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "In SI = PRT/100, R is",
+    "options": [
+     "the amount",
+     "the rate per annum",
+     "the principal",
+     "the time"
+    ],
+    "answer": 1,
+    "solution": "R is the rate percent per year.",
+    "topic": "Formula"
+   },
+   {
+    "prompt": "SI on ₹7300 at 5% for 89 days is",
+    "options": [
+     "₹98",
+     "₹73",
+     "₹89",
+     "₹365"
+    ],
+    "answer": 2,
+    "solution": "7300 × 5 × 89/36500.",
+    "topic": "Days"
+   },
+   {
+    "prompt": "Amount = ₹5600, SI = ₹600. The principal is",
+    "options": [
+     "₹6000",
+     "₹5000",
+     "₹4400",
+     "₹6200"
+    ],
+    "answer": 1,
+    "solution": "5600 − 600.",
+    "topic": "Amount"
+   },
+   {
+    "prompt": "A sum becomes 3 times itself in 20 years at SI. The rate is",
+    "options": [
+     "10%",
+     "20%",
+     "5%",
+     "15%"
+    ],
+    "answer": 0,
+    "solution": "SI = 2P in 20 years: R = 200/20.",
+    "topic": "Triples"
+   },
+   {
+    "prompt": "SI on ₹800 at 5% for 1 year is",
+    "options": [
+     "₹40",
+     "₹4",
+     "₹400",
+     "₹80"
+    ],
+    "answer": 0,
+    "solution": "800 × 5/100.",
+    "topic": "SI"
+   },
+   {
+    "prompt": "The SI on a sum for 3 years at 5% is ₹300. The sum is",
+    "options": [
+     "₹1500",
+     "₹2000",
+     "₹1000",
+     "₹4500"
+    ],
+    "answer": 1,
+    "solution": "30000/15.",
+    "topic": "Principal"
+   },
+   {
+    "prompt": "₹1200 at 6% for 5 years and ₹1500 at 4% for x years give the same SI. x =",
+    "options": [
+     "5",
+     "3",
+     "4",
+     "6"
+    ],
+    "answer": 3,
+    "solution": "360 = 60x.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "The time from 15 January to 31 March (non-leap year) is",
+    "options": [
+     "74 days",
+     "76 days",
+     "75 days",
+     "77 days"
+    ],
+    "answer": 2,
+    "solution": "16 + 28 + 31 = 75 (count 16–31 Jan).",
+    "topic": "Days"
+   },
+   {
+    "prompt": "A sum amounts to ₹3360 in 2 years and ₹3720 in 5 years. SI for 1 year is",
+    "options": [
+     "₹120",
+     "₹240",
+     "₹180",
+     "₹360"
+    ],
+    "answer": 0,
+    "solution": "360/3.",
+    "topic": "Two amounts"
+   },
+   {
+    "prompt": "For the same sum and rate, SI is",
+    "options": [
+     "inversely proportional to time",
+     "directly proportional to time",
+     "always constant",
+     "not related to time"
+    ],
+    "answer": 1,
+    "solution": "SI = (PR/100) × T.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "SI on ₹10,000 at 12% for 6 months is",
+    "options": [
+     "₹600",
+     "₹60",
+     "₹1200",
+     "₹7200"
+    ],
+    "answer": 0,
+    "solution": "10000 × 12 × 0.5/100.",
+    "topic": "SI"
+   },
+   {
+    "prompt": "If P = ₹5000, R = 10% and SI = ₹1500, then T =",
+    "options": [
+     "2 years",
+     "1.5 years",
+     "3 years",
+     "5 years"
+    ],
+    "answer": 2,
+    "solution": "150000/50000.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "At what rate does ₹6400 give ₹1600 SI in 5 years?",
+    "options": [
+     "4%",
+     "6.25%",
+     "2.5%",
+     "5%"
+    ],
+    "answer": 3,
+    "solution": "160000/32000.",
+    "topic": "Rate"
+   },
+   {
+    "prompt": "Amount on ₹2000 at 8% for 3 years is",
+    "options": [
+     "₹2400",
+     "₹2480",
+     "₹2160",
+     "₹480"
+    ],
+    "answer": 1,
+    "solution": "SI 480.",
+    "topic": "Amount"
+   },
+   {
+    "prompt": "Ravi borrows ₹4000 at 9% and lends it at 12% for 2 years. His gain is",
+    "options": [
+     "₹720",
+     "₹240",
+     "₹960",
+     "₹120"
+    ],
+    "answer": 1,
+    "solution": "3% of 4000 × 2.",
+    "topic": "Gain"
+   },
+   {
+    "prompt": "Which formula gives the time?",
+    "options": [
+     "T = 100 × SI ÷ (P × R)",
+     "T = SI × P × R ÷ 100",
+     "T = 100 × P ÷ (SI × R)",
+     "T = P × R ÷ (100 × SI)"
+    ],
+    "answer": 0,
+    "solution": "Change SI = PRT/100 around for T.",
+    "topic": "Formula"
+   },
+   {
+    "prompt": "SI on ₹1 for 1 year at 5% is",
+    "options": [
+     "₹0.50",
+     "5 paise",
+     "₹5",
+     "50 paise"
+    ],
+    "answer": 1,
+    "solution": "₹0.05.",
+    "topic": "SI"
+   },
+   {
+    "prompt": "The SI on ₹x at 10% for 2 years is ₹x/5. This is",
+    "options": [
+     "true only for x = 100",
+     "cannot say",
+     "false",
+     "true"
+    ],
+    "answer": 3,
+    "solution": "x × 10 × 2/100 = x/5.",
+    "topic": "Algebra"
+   },
+   {
+    "prompt": "In how many years does a sum double at 10% SI?",
+    "options": [
+     "10",
+     "12",
+     "5",
+     "20"
+    ],
+    "answer": 0,
+    "solution": "100/10.",
+    "topic": "Doubles"
+   },
+   {
+    "prompt": "A sum of ₹12,000 is lent at 7.5% for 4 years. SI is",
+    "options": [
+     "₹3600",
+     "₹900",
+     "₹3000",
+     "₹4000"
+    ],
+    "answer": 0,
+    "solution": "12000 × 7.5 × 4/100.",
+    "topic": "SI"
+   },
+   {
+    "prompt": "SI for 2 years is ₹400 and for 5 years is ₹1000 on the same sum at the same rate. This shows",
+    "options": [
+     "SI falls each year",
+     "the rate changes",
+     "SI is the same each year",
+     "SI grows each year"
+    ],
+    "answer": 2,
+    "solution": "₹200 every year.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "₹500 amounts to ₹600 in 4 years. At the same rate, ₹800 amounts in 4 years to",
+    "options": [
+     "₹960",
+     "₹880",
+     "₹900",
+     "₹1000"
+    ],
+    "answer": 0,
+    "solution": "Rate 5%; SI 160.",
+    "topic": "Amount"
+   },
+   {
+    "prompt": "The rate is doubled and the time is halved. The SI",
+    "options": [
+     "halves",
+     "stays the same",
+     "becomes four times",
+     "doubles"
+    ],
+    "answer": 1,
+    "solution": "R × T does not change.",
+    "topic": "Concept"
+   }
+  ]
+ },
+ {
+  "chapter": 12,
+  "title": "Speed, Distance and Time",
+  "questions": [
+   {
+    "prompt": "A bus covers 240 km in 4 h 48 min. Its speed is",
+    "options": [
+     "60 km/h",
+     "48 km/h",
+     "55 km/h",
+     "50 km/h"
+    ],
+    "answer": 3,
+    "solution": "240 ÷ 4.8.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "72 km/h in m/s is",
+    "options": [
+     "259.2 m/s",
+     "25 m/s",
+     "20 m/s",
+     "2 m/s"
+    ],
+    "answer": 2,
+    "solution": "72 × 5/18.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "15 m/s in km/h is",
+    "options": [
+     "60 km/h",
+     "54 km/h",
+     "4.17 km/h",
+     "45 km/h"
+    ],
+    "answer": 1,
+    "solution": "15 × 18/5.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "At 5 km/h, 1.5 km takes",
+    "options": [
+     "20 min",
+     "30 min",
+     "18 min",
+     "7.5 min"
+    ],
+    "answer": 2,
+    "solution": "0.3 h.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "A car goes 120 km at 40 km/h and 120 km at 60 km/h. Average speed =",
+    "options": [
+     "45 km/h",
+     "50 km/h",
+     "52 km/h",
+     "48 km/h"
+    ],
+    "answer": 3,
+    "solution": "240 ÷ 5.",
+    "topic": "Average"
+   },
+   {
+    "prompt": "A train 180 m long passes a pole in 12 s. Its speed is",
+    "options": [
+     "15 km/h",
+     "60 km/h",
+     "45 km/h",
+     "54 km/h"
+    ],
+    "answer": 3,
+    "solution": "15 m/s.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "A train 240 m long at 54 km/h crosses a 360 m bridge in",
+    "options": [
+     "60 s",
+     "16 s",
+     "24 s",
+     "40 s"
+    ],
+    "answer": 3,
+    "solution": "600 ÷ 15.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "Distance = 150 km, speed = 60 km/h. Time =",
+    "options": [
+     "2.5 h",
+     "0.4 h",
+     "9000 h",
+     "2 h"
+    ],
+    "answer": 0,
+    "solution": "150 ÷ 60.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "Speed 45 km/h for 2 h 20 min. Distance =",
+    "options": [
+     "99 km",
+     "105 km",
+     "100 km",
+     "90 km"
+    ],
+    "answer": 1,
+    "solution": "45 × 7/3.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "Two trains run in opposite directions at 50 km/h and 40 km/h. The relative speed is",
+    "options": [
+     "10 km/h",
+     "45 km/h",
+     "2000 km/h",
+     "90 km/h"
+    ],
+    "answer": 3,
+    "solution": "Add the speeds.",
+    "topic": "Relative"
+   },
+   {
+    "prompt": "Two cars run in the same direction at 70 km/h and 55 km/h. The relative speed is",
+    "options": [
+     "70 km/h",
+     "15 km/h",
+     "125 km/h",
+     "62.5 km/h"
+    ],
+    "answer": 1,
+    "solution": "Subtract the speeds.",
+    "topic": "Relative"
+   },
+   {
+    "prompt": "To cross a platform, a train covers",
+    "options": [
+     "its length + platform length",
+     "the platform length",
+     "its own length",
+     "half of both lengths"
+    ],
+    "answer": 0,
+    "solution": "The whole train must pass the whole platform.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "A man walks for 2 h at 15 km/h and 1 h at 6 km/h. Average speed =",
+    "options": [
+     "21 km/h",
+     "9 km/h",
+     "10.5 km/h",
+     "12 km/h"
+    ],
+    "answer": 3,
+    "solution": "36 ÷ 3.",
+    "topic": "Average"
+   },
+   {
+    "prompt": "Which is the fastest?",
+    "options": [
+     "700 m/min",
+     "12 m/s",
+     "36 km/h",
+     "0.2 km/s"
+    ],
+    "answer": 3,
+    "solution": "0.2 km/s = 200 m/s.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "A cheetah runs at 30 m/s. In km/h this is",
+    "options": [
+     "8.3 km/h",
+     "54 km/h",
+     "100 km/h",
+     "108 km/h"
+    ],
+    "answer": 3,
+    "solution": "30 × 18/5.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "A car travels 60 km in 45 min. Its speed is",
+    "options": [
+     "75 km/h",
+     "80 km/h",
+     "45 km/h",
+     "1.33 km/h"
+    ],
+    "answer": 1,
+    "solution": "60 ÷ 0.75.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "Same distance at 30 km/h and 20 km/h. Average speed =",
+    "options": [
+     "50 km/h",
+     "24 km/h",
+     "26 km/h",
+     "25 km/h"
+    ],
+    "answer": 1,
+    "solution": "2 × 30 × 20/50.",
+    "topic": "Average"
+   },
+   {
+    "prompt": "A train 150 m long passes a man standing on the platform in 10 s. Its speed is",
+    "options": [
+     "1.5 m/s",
+     "15 m/s",
+     "10 m/s",
+     "150 m/s"
+    ],
+    "answer": 1,
+    "solution": "150 ÷ 10.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "Two trains 150 m and 100 m long cross each other in opposite directions at 25 m/s relative speed in",
+    "options": [
+     "4 s",
+     "2 s",
+     "6 s",
+     "10 s"
+    ],
+    "answer": 3,
+    "solution": "250 ÷ 25.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "If speed is doubled, the time for the same distance",
+    "options": [
+     "stays the same",
+     "is doubled",
+     "becomes four times",
+     "is halved"
+    ],
+    "answer": 3,
+    "solution": "Time ∝ 1/speed.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "Ravi leaves at 7:40 am and reaches a town 63 km away at 9:25 am. His speed is",
+    "options": [
+     "35 km/h",
+     "36 km/h",
+     "30 km/h",
+     "42 km/h"
+    ],
+    "answer": 1,
+    "solution": "Time 1 h 45 min = 7/4 h; 63 ÷ 7/4.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "Sound travels at 330 m/s. Thunder is heard 3 s after lightning. The distance is",
+    "options": [
+     "330 m",
+     "990 m",
+     "110 m",
+     "1 km"
+    ],
+    "answer": 1,
+    "solution": "330 × 3.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "1 km/h is equal to",
+    "options": [
+     "1/60 m/s",
+     "1000 m/s",
+     "5/18 m/s",
+     "18/5 m/s"
+    ],
+    "answer": 2,
+    "solution": "1000 m ÷ 3600 s.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "A train at 90 km/h crosses a 300 m platform in 24 s. The length of the train is",
+    "options": [
+     "300 m",
+     "600 m",
+     "240 m",
+     "200 m"
+    ],
+    "answer": 0,
+    "solution": "25 m/s × 24 = 600 = L + 300.",
+    "topic": "Trains"
+   },
+   {
+    "prompt": "A car runs at 60 km/h for 1.5 h and at 80 km/h for 0.5 h. Total distance =",
+    "options": [
+     "140 km",
+     "70 km",
+     "120 km",
+     "130 km"
+    ],
+    "answer": 3,
+    "solution": "90 + 40.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "A man covers half a journey at 10 km/h and the other half at 15 km/h. Average speed =",
+    "options": [
+     "12.5 km/h",
+     "25 km/h",
+     "12 km/h",
+     "13 km/h"
+    ],
+    "answer": 2,
+    "solution": "2 × 10 × 15/25.",
+    "topic": "Average"
+   },
+   {
+    "prompt": "A thief runs at 8 km/h. A policeman starts 100 m behind at 10 km/h. Time to catch =",
+    "options": [
+     "6 min",
+     "5 min",
+     "2 min",
+     "3 min"
+    ],
+    "answer": 3,
+    "solution": "Relative 2 km/h; 0.1 km ÷ 2 = 0.05 h.",
+    "topic": "Relative"
+   },
+   {
+    "prompt": "The time taken to cover 400 m at 36 km/h is",
+    "options": [
+     "400 s",
+     "11.1 s",
+     "40 s",
+     "4 s"
+    ],
+    "answer": 2,
+    "solution": "10 m/s.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "Speed and time for a fixed distance are",
+    "options": [
+     "inversely proportional",
+     "directly proportional",
+     "equal",
+     "not related"
+    ],
+    "answer": 0,
+    "solution": "S × T = D.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A boy cycles 12 km at 8 km/h and walks back at 4 km/h. Average speed for the round trip =",
+    "options": [
+     "5 km/h",
+     "16/3 km/h",
+     "12 km/h",
+     "6 km/h"
+    ],
+    "answer": 1,
+    "solution": "24 km in 1.5 + 3 = 4.5 h.",
+    "topic": "Average"
+   }
+  ]
+ },
+ {
+  "chapter": 13,
+  "title": "Fundamental Concepts",
+  "questions": [
+   {
+    "prompt": "The coefficient of xy in 5x² − 3xy + 7 is",
+    "options": [
+     "7",
+     "5",
+     "3",
+     "−3"
+    ],
+    "answer": 3,
+    "solution": "The number with xy is −3.",
+    "topic": "Coefficient"
+   },
+   {
+    "prompt": "5x² − 3xy + 7 is a",
+    "options": [
+     "monomial",
+     "constant",
+     "trinomial",
+     "binomial"
+    ],
+    "answer": 2,
+    "solution": "Three terms.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Which are like terms?",
+    "options": [
+     "2ab² and 2a²b",
+     "3ab and 3a²b",
+     "3ab and 7ba",
+     "x and x²"
+    ],
+    "answer": 2,
+    "solution": "ab = ba.",
+    "topic": "Like terms"
+   },
+   {
+    "prompt": "The degree of 4x³ − 2x⁵ + x − 9 is",
+    "options": [
+     "9",
+     "4",
+     "3",
+     "5"
+    ],
+    "answer": 3,
+    "solution": "Highest power.",
+    "topic": "Degree"
+   },
+   {
+    "prompt": "(3x² − 5x + 7) + (−x² + 8x − 10) =",
+    "options": [
+     "4x² + 3x − 3",
+     "2x² − 13x + 17",
+     "2x² + 3x + 17",
+     "2x² + 3x − 3"
+    ],
+    "answer": 3,
+    "solution": "Add like terms.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "(6a − 2b − 5c) − (4a − 7b + 3c) =",
+    "options": [
+     "2a + 5b − 8c",
+     "2a − 9b − 2c",
+     "10a − 9b − 2c",
+     "2a + 5b + 8c"
+    ],
+    "answer": 0,
+    "solution": "Change signs, then add.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "5x − [3y − {2x − (y − x)}] =",
+    "options": [
+     "8x − 4y",
+     "2x − 2y",
+     "2x − 4y",
+     "8x − 2y"
+    ],
+    "answer": 0,
+    "solution": "Inner bracket first.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "(−3x²y) × (4xy³) =",
+    "options": [
+     "12x³y⁴",
+     "−12x³y⁴",
+     "−12x²y³",
+     "−7x³y⁴"
+    ],
+    "answer": 1,
+    "solution": "Multiply coefficients and add powers.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(2x + 3)(x − 5) =",
+    "options": [
+     "2x² − 7x + 15",
+     "2x² − 7x − 15",
+     "2x² − 13x − 15",
+     "2x² + 7x − 15"
+    ],
+    "answer": 1,
+    "solution": "2x² − 10x + 3x − 15.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(12x³ − 8x² + 4x) ÷ 4x =",
+    "options": [
+     "3x² − 2x",
+     "3x³ − 2x² + x",
+     "3x² − 2x + 1",
+     "3x² − 2x + 4x"
+    ],
+    "answer": 2,
+    "solution": "Divide each term.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "a² − 2ab + 3b² when a = −2, b = 3 is",
+    "options": [
+     "19",
+     "43",
+     "31",
+     "−5"
+    ],
+    "answer": 1,
+    "solution": "4 + 12 + 27.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "‘5 less than twice x’ is",
+    "options": [
+     "2 − 5x",
+     "2x − 5",
+     "2(x − 5)",
+     "5 − 2x"
+    ],
+    "answer": 1,
+    "solution": "Twice x is 2x, then subtract 5.",
+    "topic": "Writing expressions"
+   },
+   {
+    "prompt": "The sum of a and the product of b and c is",
+    "options": [
+     "a + bc",
+     "a + b + c",
+     "abc",
+     "(a + b)c"
+    ],
+    "answer": 0,
+    "solution": "Product of b and c is bc.",
+    "topic": "Writing expressions"
+   },
+   {
+    "prompt": "Which is a constant term in 3x² − 2x + 9?",
+    "options": [
+     "9",
+     "3",
+     "−2",
+     "x"
+    ],
+    "answer": 0,
+    "solution": "It has no variable.",
+    "topic": "Terms"
+   },
+   {
+    "prompt": "x × x × x × y × y =",
+    "options": [
+     "x³y²",
+     "5xy",
+     "3x2y",
+     "x²y³"
+    ],
+    "answer": 0,
+    "solution": "Count the factors.",
+    "topic": "Powers"
+   },
+   {
+    "prompt": "The number of terms in 4a²b − 3ab + 2b − 7 is",
+    "options": [
+     "2",
+     "4",
+     "3",
+     "5"
+    ],
+    "answer": 1,
+    "solution": "Four terms.",
+    "topic": "Terms"
+   },
+   {
+    "prompt": "7x − (3x − 2) =",
+    "options": [
+     "4x − 2",
+     "4x",
+     "4x + 2",
+     "10x − 2"
+    ],
+    "answer": 2,
+    "solution": "−(3x − 2) = −3x + 2.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "What must be added to 3x − 5 to get 7x + 2?",
+    "options": [
+     "4x − 3",
+     "4x − 7",
+     "4x + 7",
+     "10x − 3"
+    ],
+    "answer": 2,
+    "solution": "(7x + 2) − (3x − 5).",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "(x + 4)(x + 4) =",
+    "options": [
+     "x² + 16",
+     "2x + 8",
+     "x² + 4x + 16",
+     "x² + 8x + 16"
+    ],
+    "answer": 3,
+    "solution": "x² + 4x + 4x + 16.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "(−2a)³ =",
+    "options": [
+     "−2a³",
+     "−8a³",
+     "8a³",
+     "−6a³"
+    ],
+    "answer": 1,
+    "solution": "(−2)³ = −8.",
+    "topic": "Powers"
+   },
+   {
+    "prompt": "(15a³b² − 10a²b³) ÷ (−5a²b²) =",
+    "options": [
+     "3a − 2b",
+     "−3a + 2b",
+     "−3ab + 2",
+     "−3a − 2b"
+    ],
+    "answer": 1,
+    "solution": "15a³b² ÷ (−5a²b²) = −3a; −10a²b³ ÷ (−5a²b²) = 2b.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "If x = 2, then x³ − 2x² + x − 3 =",
+    "options": [
+     "1",
+     "−3",
+     "−1",
+     "3"
+    ],
+    "answer": 2,
+    "solution": "8 − 8 + 2 − 3.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "The coefficient of x² in −x²y is",
+    "options": [
+     "1",
+     "y",
+     "−1",
+     "−y"
+    ],
+    "answer": 3,
+    "solution": "Everything multiplied with x².",
+    "topic": "Coefficient"
+   },
+   {
+    "prompt": "The perimeter of a rectangle with sides (2x + 3) and (x − 1) is",
+    "options": [
+     "2x² + x − 3",
+     "3x + 2",
+     "6x + 4",
+     "6x + 2"
+    ],
+    "answer": 2,
+    "solution": "2[(2x + 3) + (x − 1)] = 2(3x + 2).",
+    "topic": "Application"
+   },
+   {
+    "prompt": "The area of a rectangle with sides 3a and (2a − b) is",
+    "options": [
+     "6a − 3ab",
+     "5a − b",
+     "6a² − b",
+     "6a² − 3ab"
+    ],
+    "answer": 3,
+    "solution": "3a × (2a − b).",
+    "topic": "Application"
+   },
+   {
+    "prompt": "Which is a binomial?",
+    "options": [
+     "x² + x + 1",
+     "x² − 1",
+     "5xy",
+     "7"
+    ],
+    "answer": 1,
+    "solution": "Two terms.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Subtract −3xy from 5xy.",
+    "options": [
+     "−2xy",
+     "8xy",
+     "2xy",
+     "−8xy"
+    ],
+    "answer": 1,
+    "solution": "5xy + 3xy.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "(a − b) − (b − a) =",
+    "options": [
+     "2a − 2b",
+     "2b − 2a",
+     "0",
+     "−2b"
+    ],
+    "answer": 0,
+    "solution": "a − b − b + a.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "If p = −1, q = 2, then p²q − pq² =",
+    "options": [
+     "−2",
+     "6",
+     "2",
+     "−6"
+    ],
+    "answer": 1,
+    "solution": "(1)(2) − (−1)(4) = 2 + 4.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "x² × x⁵ ÷ x³ =",
+    "options": [
+     "x²",
+     "x⁴",
+     "x⁷/³",
+     "x¹⁰"
+    ],
+    "answer": 1,
+    "solution": "2 + 5 − 3 = 4.",
+    "topic": "Powers"
+   }
+  ]
+ },
+ {
+  "chapter": 14,
+  "title": "Simple Linear Equations",
+  "questions": [
+   {
+    "prompt": "3x − 7 = 11 gives x =",
+    "options": [
+     "18",
+     "2",
+     "4/3",
+     "6"
+    ],
+    "answer": 3,
+    "solution": "3x = 18.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "5(x − 2) = 3x + 4 gives x =",
+    "options": [
+     "1",
+     "7",
+     "−7",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "2x = 14.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "x/3 + x/4 = 14 gives x =",
+    "options": [
+     "98",
+     "24",
+     "12",
+     "2"
+    ],
+    "answer": 1,
+    "solution": "7x/12 = 14.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "(2x − 1)/3 − (x + 2)/4 = 1 gives x =",
+    "options": [
+     "17/5",
+     "2",
+     "22/5",
+     "5/22"
+    ],
+    "answer": 2,
+    "solution": "5x − 10 = 12.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "Which is a linear equation?",
+    "options": [
+     "2x + 3 = 9",
+     "x³ = 8",
+     "x² = 4",
+     "x² + 1 = 5"
+    ],
+    "answer": 0,
+    "solution": "Power of x is 1.",
+    "topic": "Definition"
+   },
+   {
+    "prompt": "The sum of three consecutive numbers is 72. The smallest is",
+    "options": [
+     "24",
+     "25",
+     "23",
+     "22"
+    ],
+    "answer": 2,
+    "solution": "3x + 3 = 72.",
+    "topic": "Consecutive"
+   },
+   {
+    "prompt": "A father is 3 times his son's age. In 12 years he will be twice the son's age. The son is",
+    "options": [
+     "6 years",
+     "24 years",
+     "12 years",
+     "18 years"
+    ],
+    "answer": 2,
+    "solution": "3x + 12 = 2x + 24.",
+    "topic": "Ages"
+   },
+   {
+    "prompt": "Length is 5 cm more than breadth, perimeter 50 cm. Breadth =",
+    "options": [
+     "15 cm",
+     "12.5 cm",
+     "20 cm",
+     "10 cm"
+    ],
+    "answer": 3,
+    "solution": "4x + 10 = 50.",
+    "topic": "Geometry"
+   },
+   {
+    "prompt": "₹500 in 35 notes of ₹10 and ₹20. The number of ₹10 notes is",
+    "options": [
+     "10",
+     "20",
+     "25",
+     "15"
+    ],
+    "answer": 1,
+    "solution": "700 − 10x = 500.",
+    "topic": "Notes"
+   },
+   {
+    "prompt": "If x + 9 = 4, then x =",
+    "options": [
+     "13",
+     "−13",
+     "5",
+     "−5"
+    ],
+    "answer": 3,
+    "solution": "x = 4 − 9.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "If 0.4x = 6, then x =",
+    "options": [
+     "24",
+     "1.5",
+     "15",
+     "2.4"
+    ],
+    "answer": 2,
+    "solution": "6 ÷ 0.4.",
+    "topic": "Decimals"
+   },
+   {
+    "prompt": "If 2x/5 = 8, then x =",
+    "options": [
+     "20",
+     "3.2",
+     "16/5",
+     "40"
+    ],
+    "answer": 0,
+    "solution": "x = 8 × 5/2.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "If 7 − 2x = 15, then x =",
+    "options": [
+     "4",
+     "−11",
+     "−4",
+     "11"
+    ],
+    "answer": 2,
+    "solution": "−2x = 8.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "If 3(2x + 1) = 4(x + 2) + 1, then x =",
+    "options": [
+     "1",
+     "3",
+     "2",
+     "6"
+    ],
+    "answer": 1,
+    "solution": "6x + 3 = 4x + 9.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "A number added to its half gives 45. The number is",
+    "options": [
+     "22.5",
+     "15",
+     "90",
+     "30"
+    ],
+    "answer": 3,
+    "solution": "3x/2 = 45.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Twice a number decreased by 7 is 33. The number is",
+    "options": [
+     "20",
+     "40",
+     "13",
+     "26"
+    ],
+    "answer": 0,
+    "solution": "2x − 7 = 33.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The sum of two consecutive odd numbers is 56. The larger is",
+    "options": [
+     "28",
+     "31",
+     "27",
+     "29"
+    ],
+    "answer": 3,
+    "solution": "x + x + 2 = 56 ⇒ x = 27.",
+    "topic": "Consecutive"
+   },
+   {
+    "prompt": "The angles of a triangle are x, 2x and 3x. Then x =",
+    "options": [
+     "45°",
+     "60°",
+     "30°",
+     "20°"
+    ],
+    "answer": 2,
+    "solution": "6x = 180.",
+    "topic": "Geometry"
+   },
+   {
+    "prompt": "If (x + 3)/(x − 2) = 2, then x =",
+    "options": [
+     "7",
+     "−7",
+     "1",
+     "5"
+    ],
+    "answer": 0,
+    "solution": "x + 3 = 2x − 4.",
+    "topic": "Cross multiply"
+   },
+   {
+    "prompt": "Transposing −5 from left to right in x − 5 = 3 gives",
+    "options": [
+     "x = 5 − 3",
+     "x = 3 × 5",
+     "x = 3 + 5",
+     "x = 3 − 5"
+    ],
+    "answer": 2,
+    "solution": "Subtraction becomes addition.",
+    "topic": "Transpose"
+   },
+   {
+    "prompt": "A number is 12 more than another. Their sum is 68. The smaller is",
+    "options": [
+     "34",
+     "56",
+     "28",
+     "40"
+    ],
+    "answer": 2,
+    "solution": "2x + 12 = 68.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Rahul is 6 years older than Sita. 5 years ago, Rahul was twice as old as Sita. Sita's age now is",
+    "options": [
+     "16",
+     "6",
+     "12",
+     "11"
+    ],
+    "answer": 3,
+    "solution": "x + 1 = 2(x − 5) ⇒ x = 11.",
+    "topic": "Ages"
+   },
+   {
+    "prompt": "If 4x + 8 = 52, then x =",
+    "options": [
+     "44",
+     "11",
+     "15",
+     "13"
+    ],
+    "answer": 1,
+    "solution": "4x = 44.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "If 5x − 3 = 3x + 9, then 2x + 1 =",
+    "options": [
+     "11",
+     "6",
+     "13",
+     "7"
+    ],
+    "answer": 2,
+    "solution": "x = 6, 2x + 1 = 13.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "A sum of ₹1200 is shared between A and B so that A gets ₹200 more than B. B gets",
+    "options": [
+     "₹600",
+     "₹700",
+     "₹400",
+     "₹500"
+    ],
+    "answer": 3,
+    "solution": "2x + 200 = 1200.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "x/2 − x/3 = 4 gives x =",
+    "options": [
+     "24",
+     "4",
+     "12",
+     "8"
+    ],
+    "answer": 0,
+    "solution": "x/6 = 4.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "If 3x − 2 = 2x + 5, then x² =",
+    "options": [
+     "25",
+     "49",
+     "7",
+     "9"
+    ],
+    "answer": 1,
+    "solution": "x = 7.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "The cost of 3 pens and 2 pencils is ₹70. A pen costs ₹10 more than a pencil. A pencil costs",
+    "options": [
+     "₹8",
+     "₹18",
+     "₹10",
+     "₹12"
+    ],
+    "answer": 0,
+    "solution": "3(x + 10) + 2x = 70 ⇒ 5x = 40.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "A number divided by 4 and then increased by 6 gives 15. The number is",
+    "options": [
+     "9",
+     "36",
+     "84",
+     "60"
+    ],
+    "answer": 1,
+    "solution": "x/4 = 9.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Which value is a solution of 4x + 3 = 2x − 5?",
+    "options": [
+     "−4",
+     "1",
+     "4",
+     "−1"
+    ],
+    "answer": 0,
+    "solution": "2x = −8.",
+    "topic": "Check"
+   }
+  ]
+ },
+ {
+  "chapter": 15,
+  "title": "Inequalities",
+  "questions": [
+   {
+    "prompt": "The solution set of x + 3 < 7, x ∈ N, is",
+    "options": [
+     "{1, 2, 3}",
+     "{4}",
+     "{0, 1, 2, 3}",
+     "{1, 2, 3, 4}"
+    ],
+    "answer": 0,
+    "solution": "x < 4.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "x − 2 ≥ −1 means",
+    "options": [
+     "x ≤ 1",
+     "x ≥ −3",
+     "x ≤ −3",
+     "x ≥ 1"
+    ],
+    "answer": 3,
+    "solution": "Add 2.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "3x − 5 ≤ 10, x ∈ W, gives",
+    "options": [
+     "{5}",
+     "{0, 1, 2, 3, 4}",
+     "{0, 1, 2, 3, 4, 5}",
+     "{1, 2, 3, 4, 5}"
+    ],
+    "answer": 2,
+    "solution": "x ≤ 5.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "−2x > 6 gives",
+    "options": [
+     "x < −3",
+     "x > 3",
+     "x > −3",
+     "x < 3"
+    ],
+    "answer": 0,
+    "solution": "Dividing by a negative reverses the sign.",
+    "topic": "Rule"
+   },
+   {
+    "prompt": "−3 ≤ 2x + 1 < 7, x ∈ Z, gives",
+    "options": [
+     "{−2, −1, 0, 1, 2, 3}",
+     "{−1, 0, 1, 2}",
+     "{−2, −1, 0, 1, 2}",
+     "{−2, 3}"
+    ],
+    "answer": 2,
+    "solution": "−2 ≤ x < 3.",
+    "topic": "Double"
+   },
+   {
+    "prompt": "When both sides are multiplied by a negative number, the sign of inequality",
+    "options": [
+     "reverses",
+     "becomes =",
+     "stays",
+     "is removed"
+    ],
+    "answer": 0,
+    "solution": "Rule for negatives.",
+    "topic": "Rule"
+   },
+   {
+    "prompt": "x < 4, x ∈ W. The solution set is",
+    "options": [
+     "{1, 2, 3}",
+     "{0, 1, 2, 3}",
+     "{4}",
+     "{0, 1, 2, 3, 4}"
+    ],
+    "answer": 1,
+    "solution": "W starts at 0.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "2x + 3 > 9, x ∈ N. The smallest value of x is",
+    "options": [
+     "3",
+     "4",
+     "6",
+     "2"
+    ],
+    "answer": 1,
+    "solution": "x > 3.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "5 − x ≥ 2, x ∈ N. The solution set is",
+    "options": [
+     "{0, 1, 2, 3}",
+     "{1, 2}",
+     "{3, 4, 5}",
+     "{1, 2, 3}"
+    ],
+    "answer": 3,
+    "solution": "x ≤ 3.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "On a number line for x ∈ R, an open dot at 2 means",
+    "options": [
+     "x = 2",
+     "2 is included",
+     "x is an integer",
+     "2 is not included"
+    ],
+    "answer": 3,
+    "solution": "Open dot: not included.",
+    "topic": "Graph"
+   },
+   {
+    "prompt": "x/3 < 2, x ∈ N. The largest value of x is",
+    "options": [
+     "7",
+     "6",
+     "2",
+     "5"
+    ],
+    "answer": 3,
+    "solution": "x < 6.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "If x ∈ {−2, −1, 0, 1, 2} and 3x < 2, the solution set is",
+    "options": [
+     "{−2, −1, 0, 1}",
+     "{1, 2}",
+     "{0}",
+     "{−2, −1, 0}"
+    ],
+    "answer": 3,
+    "solution": "x < 2/3.",
+    "topic": "Given set"
+   },
+   {
+    "prompt": "If a < b, then −a ? −b",
+    "options": [
+     "≤",
+     "=",
+     "<",
+     ">"
+    ],
+    "answer": 3,
+    "solution": "Multiplying by −1 reverses.",
+    "topic": "Rule"
+   },
+   {
+    "prompt": "The solution of x + 5 > 5, x ∈ W, is",
+    "options": [
+     "{1, 2, 3, …}",
+     "∅",
+     "{5, 6, …}",
+     "{0, 1, 2, …}"
+    ],
+    "answer": 0,
+    "solution": "x > 0.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "x ∈ N and x < 1. The solution set is",
+    "options": [
+     "{−1, 0}",
+     "∅",
+     "{0}",
+     "{1}"
+    ],
+    "answer": 1,
+    "solution": "No natural number is less than 1.",
+    "topic": "Empty"
+   },
+   {
+    "prompt": "−1 < x ≤ 3, x ∈ Z, is",
+    "options": [
+     "{−1, 0, 1, 2}",
+     "{0, 1, 2, 3}",
+     "{0, 1, 2}",
+     "{−1, 0, 1, 2, 3}"
+    ],
+    "answer": 1,
+    "solution": "−1 is not included; 3 is.",
+    "topic": "Double"
+   },
+   {
+    "prompt": "4x − 1 ≥ 3x + 2 gives",
+    "options": [
+     "x ≥ −3",
+     "x ≤ 3",
+     "x ≥ 1",
+     "x ≥ 3"
+    ],
+    "answer": 3,
+    "solution": "Subtract 3x and add 1.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "x/2 + 1 > x/3 + 2 gives",
+    "options": [
+     "x > 1",
+     "x > 18",
+     "x < 6",
+     "x > 6"
+    ],
+    "answer": 3,
+    "solution": "3x + 6 > 2x + 12.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "Which number satisfies 2x − 1 < 5 and x > 0, x ∈ Z?",
+    "options": [
+     "1",
+     "3",
+     "4",
+     "0"
+    ],
+    "answer": 0,
+    "solution": "0 < x < 3.",
+    "topic": "Check"
+   },
+   {
+    "prompt": "The replacement set is",
+    "options": [
+     "the set from which x takes values",
+     "the answer",
+     "always N",
+     "the empty set"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "−x ≥ −4, x ∈ N, gives",
+    "options": [
+     "{4, 5, 6, …}",
+     "{1, 2, 3, 4}",
+     "∅",
+     "{1, 2, 3}"
+    ],
+    "answer": 1,
+    "solution": "x ≤ 4.",
+    "topic": "Rule"
+   },
+   {
+    "prompt": "If 3 − 2x ≤ 9, then",
+    "options": [
+     "x ≤ 3",
+     "x ≤ −3",
+     "x ≥ 3",
+     "x ≥ −3"
+    ],
+    "answer": 3,
+    "solution": "−2x ≤ 6 ⇒ x ≥ −3.",
+    "topic": "Rule"
+   },
+   {
+    "prompt": "Which is true for x ∈ Z, x ≤ −2?",
+    "options": [
+     "−1 is a solution",
+     "3 is a solution",
+     "0 is a solution",
+     "−2 is a solution"
+    ],
+    "answer": 3,
+    "solution": "≤ includes −2.",
+    "topic": "Check"
+   },
+   {
+    "prompt": "x ∈ W, 2x < 1. The solution set is",
+    "options": [
+     "{0, 1}",
+     "{1}",
+     "∅",
+     "{0}"
+    ],
+    "answer": 3,
+    "solution": "x < 1/2.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "The number of integers that satisfy −2 < x < 2 is",
+    "options": [
+     "2",
+     "4",
+     "3",
+     "5"
+    ],
+    "answer": 2,
+    "solution": "−1, 0, 1.",
+    "topic": "Count"
+   },
+   {
+    "prompt": "If x − 3 < 2x + 1, then",
+    "options": [
+     "x < 4",
+     "x > −4",
+     "x > 4",
+     "x < −4"
+    ],
+    "answer": 1,
+    "solution": "−4 < x.",
+    "topic": "Solve"
+   },
+   {
+    "prompt": "Solid dots on a number line show",
+    "options": [
+     "nothing",
+     "real numbers",
+     "only fractions",
+     "integer solutions"
+    ],
+    "answer": 3,
+    "solution": "For integers or naturals we use dots.",
+    "topic": "Graph"
+   },
+   {
+    "prompt": "x ∈ {1, 2, …, 10} and 2x + 1 ≥ 15. The solution set is",
+    "options": [
+     "{8, 9, 10}",
+     "{1, 2, …, 7}",
+     "{7}",
+     "{7, 8, 9, 10}"
+    ],
+    "answer": 3,
+    "solution": "x ≥ 7.",
+    "topic": "Given set"
+   },
+   {
+    "prompt": "(x − 1)/2 ≤ 2, x ∈ N, gives",
+    "options": [
+     "{5}",
+     "{0, 1, 2, 3, 4, 5}",
+     "{1, 2, 3, 4}",
+     "{1, 2, 3, 4, 5}"
+    ],
+    "answer": 3,
+    "solution": "x ≤ 5.",
+    "topic": "Fractions"
+   },
+   {
+    "prompt": "The greatest integer x with 5x − 3 < 17 is",
+    "options": [
+     "20",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 1,
+    "solution": "x < 4.",
+    "topic": "Solve"
+   }
+  ]
+ },
+ {
+  "chapter": 16,
+  "title": "Lines and Angles",
+  "questions": [
+   {
+    "prompt": "The complement of 37° is",
+    "options": [
+     "37°",
+     "143°",
+     "53°",
+     "63°"
+    ],
+    "answer": 2,
+    "solution": "90 − 37.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "The supplement of 112° is",
+    "options": [
+     "68°",
+     "22°",
+     "78°",
+     "248°"
+    ],
+    "answer": 0,
+    "solution": "180 − 112.",
+    "topic": "Supplement"
+   },
+   {
+    "prompt": "Supplementary angles in the ratio 4 : 5 are",
+    "options": [
+     "80°, 100°",
+     "60°, 120°",
+     "40°, 50°",
+     "72°, 108°"
+    ],
+    "answer": 0,
+    "solution": "9x = 180.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "An angle is 24° more than its complement. The angle is",
+    "options": [
+     "33°",
+     "66°",
+     "57°",
+     "45°"
+    ],
+    "answer": 2,
+    "solution": "2x = 114.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "A linear pair adds up to",
+    "options": [
+     "270°",
+     "90°",
+     "360°",
+     "180°"
+    ],
+    "answer": 3,
+    "solution": "Angles on a straight line.",
+    "topic": "Linear pair"
+   },
+   {
+    "prompt": "Vertically opposite angles are",
+    "options": [
+     "supplementary",
+     "complementary",
+     "adjacent",
+     "equal"
+    ],
+    "answer": 3,
+    "solution": "Property.",
+    "topic": "Vertically opposite"
+   },
+   {
+    "prompt": "Angles at a point add up to",
+    "options": [
+     "360°",
+     "180°",
+     "270°",
+     "90°"
+    ],
+    "answer": 0,
+    "solution": "A full turn.",
+    "topic": "At a point"
+   },
+   {
+    "prompt": "If two parallel lines are cut by a transversal, corresponding angles are",
+    "options": [
+     "supplementary",
+     "unequal",
+     "equal",
+     "complementary"
+    ],
+    "answer": 2,
+    "solution": "Property.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "If two parallel lines are cut by a transversal, co-interior angles add up to",
+    "options": [
+     "equal",
+     "180°",
+     "360°",
+     "90°"
+    ],
+    "answer": 1,
+    "solution": "Property.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "AB ∥ CD and an angle at AB is 65°. Its co-interior angle is",
+    "options": [
+     "65°",
+     "25°",
+     "295°",
+     "115°"
+    ],
+    "answer": 3,
+    "solution": "180 − 65.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "Co-interior angles (2x + 15)° and (3x − 10)°. x =",
+    "options": [
+     "39",
+     "25",
+     "41",
+     "35"
+    ],
+    "answer": 3,
+    "solution": "5x + 5 = 180.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "An angle equal to its supplement is",
+    "options": [
+     "60°",
+     "180°",
+     "45°",
+     "90°"
+    ],
+    "answer": 3,
+    "solution": "2x = 180.",
+    "topic": "Supplement"
+   },
+   {
+    "prompt": "An angle equal to its complement is",
+    "options": [
+     "60°",
+     "45°",
+     "90°",
+     "30°"
+    ],
+    "answer": 1,
+    "solution": "2x = 90.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "Lines cross; one angle is 3x + 10° and the opposite one is 5x − 30°. The angle is",
+    "options": [
+     "20°",
+     "40°",
+     "70°",
+     "110°"
+    ],
+    "answer": 2,
+    "solution": "x = 20.",
+    "topic": "Vertically opposite"
+   },
+   {
+    "prompt": "Three angles at a point are 120°, 85° and x. Then x =",
+    "options": [
+     "65°",
+     "175°",
+     "25°",
+     "155°"
+    ],
+    "answer": 3,
+    "solution": "360 − 205.",
+    "topic": "At a point"
+   },
+   {
+    "prompt": "Which pair can be a linear pair?",
+    "options": [
+     "40°, 50°",
+     "90°, 80°",
+     "100°, 100°",
+     "110°, 70°"
+    ],
+    "answer": 3,
+    "solution": "They add up to 180°.",
+    "topic": "Linear pair"
+   },
+   {
+    "prompt": "Two complementary angles differ by 20°. The larger is",
+    "options": [
+     "55°",
+     "45°",
+     "35°",
+     "100°"
+    ],
+    "answer": 0,
+    "solution": "x + (x − 20) = 90.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "If alternate interior angles are equal, the lines are",
+    "options": [
+     "intersecting",
+     "perpendicular",
+     "parallel",
+     "the same"
+    ],
+    "answer": 2,
+    "solution": "Test for parallel lines.",
+    "topic": "Test"
+   },
+   {
+    "prompt": "The supplement of a right angle is",
+    "options": [
+     "a right angle",
+     "an acute angle",
+     "a straight angle",
+     "an obtuse angle"
+    ],
+    "answer": 0,
+    "solution": "180 − 90 = 90.",
+    "topic": "Supplement"
+   },
+   {
+    "prompt": "The complement of (90 − x)° is",
+    "options": [
+     "(180 − x)°",
+     "(90 + x)°",
+     "90°",
+     "x°"
+    ],
+    "answer": 3,
+    "solution": "90 − (90 − x).",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "Angles on a straight line are x, 2x and 3x. x =",
+    "options": [
+     "30°",
+     "45°",
+     "20°",
+     "60°"
+    ],
+    "answer": 0,
+    "solution": "6x = 180.",
+    "topic": "Linear"
+   },
+   {
+    "prompt": "A transversal cuts two parallel lines. One interior angle is 3 times its co-interior angle. The smaller angle is",
+    "options": [
+     "30°",
+     "60°",
+     "45°",
+     "135°"
+    ],
+    "answer": 2,
+    "solution": "4x = 180.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "Which angles have a common vertex and a common arm?",
+    "options": [
+     "Alternate",
+     "Corresponding",
+     "Adjacent",
+     "Vertically opposite"
+    ],
+    "answer": 2,
+    "solution": "Definition.",
+    "topic": "Adjacent"
+   },
+   {
+    "prompt": "Two lines cross at right angles. The four angles are",
+    "options": [
+     "all 90°",
+     "two acute and two obtuse",
+     "all 180°",
+     "90°, 90°, 45°, 45°"
+    ],
+    "answer": 0,
+    "solution": "Vertically opposite and linear pairs.",
+    "topic": "Perpendicular"
+   },
+   {
+    "prompt": "If ∠1 and ∠2 are a linear pair and ∠1 = 4∠2, then ∠2 =",
+    "options": [
+     "36°",
+     "30°",
+     "45°",
+     "144°"
+    ],
+    "answer": 0,
+    "solution": "5∠2 = 180.",
+    "topic": "Linear pair"
+   },
+   {
+    "prompt": "The angle between the hands of a clock at 3:00 is",
+    "options": [
+     "90°",
+     "180°",
+     "60°",
+     "120°"
+    ],
+    "answer": 0,
+    "solution": "3 × 30°.",
+    "topic": "Application"
+   },
+   {
+    "prompt": "Corresponding angles 4x − 10° and 2x + 30° on parallel lines give x =",
+    "options": [
+     "20",
+     "10",
+     "25",
+     "40"
+    ],
+    "answer": 0,
+    "solution": "2x = 40.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "If an angle is 5/4 of its supplement, the angle is",
+    "options": [
+     "125°",
+     "100°",
+     "144°",
+     "80°"
+    ],
+    "answer": 1,
+    "solution": "x = 5/4(180 − x) ⇒ 9x/4 = 225.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "Alternate interior angles on parallel lines are",
+    "options": [
+     "equal",
+     "complementary",
+     "always 90°",
+     "supplementary"
+    ],
+    "answer": 0,
+    "solution": "Property.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "Two adjacent angles are 47° and 43°. Together they form",
+    "options": [
+     "an obtuse angle",
+     "a straight angle",
+     "a reflex angle",
+     "a right angle"
+    ],
+    "answer": 3,
+    "solution": "90°.",
+    "topic": "Adjacent"
+   }
+  ]
+ },
+ {
+  "chapter": 17,
+  "title": "Triangles",
+  "questions": [
+   {
+    "prompt": "A triangle with two equal sides is",
+    "options": [
+     "isosceles",
+     "scalene",
+     "equilateral",
+     "right-angled"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Each angle of an equilateral triangle is",
+    "options": [
+     "90°",
+     "30°",
+     "45°",
+     "60°"
+    ],
+    "answer": 3,
+    "solution": "180 ÷ 3.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "AB = AC and ∠A = 40°. ∠B =",
+    "options": [
+     "40°",
+     "50°",
+     "70°",
+     "140°"
+    ],
+    "answer": 2,
+    "solution": "(180 − 40) ÷ 2.",
+    "topic": "Isosceles"
+   },
+   {
+    "prompt": "The angles of a triangle are in the ratio 2 : 3 : 4. The largest is",
+    "options": [
+     "100°",
+     "90°",
+     "80°",
+     "60°"
+    ],
+    "answer": 2,
+    "solution": "4/9 × 180.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "An exterior angle is 110° and one interior opposite angle is 45°. The other opposite angle is",
+    "options": [
+     "70°",
+     "25°",
+     "155°",
+     "65°"
+    ],
+    "answer": 3,
+    "solution": "110 − 45.",
+    "topic": "Exterior angle"
+   },
+   {
+    "prompt": "Angles x, 2x, x + 20°. x =",
+    "options": [
+     "50°",
+     "35°",
+     "40°",
+     "45°"
+    ],
+    "answer": 2,
+    "solution": "4x + 20 = 180.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "Can 4 cm, 7 cm, 12 cm form a triangle?",
+    "options": [
+     "Only isosceles",
+     "Yes",
+     "Only right-angled",
+     "No"
+    ],
+    "answer": 3,
+    "solution": "4 + 7 < 12.",
+    "topic": "Triangle test"
+   },
+   {
+    "prompt": "Two sides are 5 cm and 9 cm. The third side can be",
+    "options": [
+     "10 cm",
+     "4 cm",
+     "14 cm",
+     "3 cm"
+    ],
+    "answer": 0,
+    "solution": "4 < c < 14.",
+    "topic": "Range"
+   },
+   {
+    "prompt": "In △PQR, PQ = 6, QR = 8, PR = 5. The greatest angle is",
+    "options": [
+     "∠R",
+     "all equal",
+     "∠Q",
+     "∠P"
+    ],
+    "answer": 3,
+    "solution": "Opposite the greatest side QR.",
+    "topic": "Order"
+   },
+   {
+    "prompt": "A triangle can have at most",
+    "options": [
+     "two right angles",
+     "three right angles",
+     "one right angle",
+     "two obtuse angles"
+    ],
+    "answer": 2,
+    "solution": "Two right angles already make 180°.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "If two angles of a triangle are 65° and 45°, the third is",
+    "options": [
+     "110°",
+     "60°",
+     "70°",
+     "80°"
+    ],
+    "answer": 2,
+    "solution": "180 − 110.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "Angles 35°, 55°, 90° make a",
+    "options": [
+     "obtuse triangle",
+     "acute triangle",
+     "right-angled scalene triangle",
+     "right-angled isosceles triangle"
+    ],
+    "answer": 2,
+    "solution": "One right angle, all different.",
+    "topic": "Classify"
+   },
+   {
+    "prompt": "An exterior angle of a triangle is always",
+    "options": [
+     "less than each interior opposite angle",
+     "90°",
+     "equal to the adjacent interior angle",
+     "greater than each interior opposite angle"
+    ],
+    "answer": 3,
+    "solution": "It equals their sum.",
+    "topic": "Exterior angle"
+   },
+   {
+    "prompt": "In a right-angled isosceles triangle, each acute angle is",
+    "options": [
+     "45°",
+     "30°",
+     "90°",
+     "60°"
+    ],
+    "answer": 0,
+    "solution": "(180 − 90) ÷ 2.",
+    "topic": "Isosceles"
+   },
+   {
+    "prompt": "If one angle of a triangle equals the sum of the other two, the triangle is",
+    "options": [
+     "right-angled",
+     "acute",
+     "equilateral",
+     "obtuse"
+    ],
+    "answer": 0,
+    "solution": "2x = 180, so x = 90.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "The exterior angles at B and C of △ABC are 120° and 110°. ∠A =",
+    "options": [
+     "70°",
+     "50°",
+     "130°",
+     "60°"
+    ],
+    "answer": 1,
+    "solution": "∠B = 60°, ∠C = 70°.",
+    "topic": "Exterior angle"
+   },
+   {
+    "prompt": "Which can be the sides of a triangle?",
+    "options": [
+     "1, 1, 3",
+     "5, 6, 10",
+     "3, 4, 8",
+     "2, 3, 5"
+    ],
+    "answer": 1,
+    "solution": "5 + 6 > 10.",
+    "topic": "Triangle test"
+   },
+   {
+    "prompt": "In △ABC, ∠A = 50° and ∠B = 60°. The longest side is",
+    "options": [
+     "AC",
+     "all equal",
+     "AB",
+     "BC"
+    ],
+    "answer": 2,
+    "solution": "∠C = 70° is the largest, opposite AB.",
+    "topic": "Order"
+   },
+   {
+    "prompt": "The vertex angle of an isosceles triangle is 100°. Each base angle is",
+    "options": [
+     "100°",
+     "40°",
+     "80°",
+     "50°"
+    ],
+    "answer": 1,
+    "solution": "(180 − 100) ÷ 2.",
+    "topic": "Isosceles"
+   },
+   {
+    "prompt": "A triangle has angles 3x, 4x, 5x. The smallest angle is",
+    "options": [
+     "30°",
+     "45°",
+     "60°",
+     "75°"
+    ],
+    "answer": 1,
+    "solution": "12x = 180, x = 15.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "The base angle of an isosceles triangle is 70°. The vertex angle is",
+    "options": [
+     "20°",
+     "110°",
+     "70°",
+     "40°"
+    ],
+    "answer": 3,
+    "solution": "180 − 140.",
+    "topic": "Isosceles"
+   },
+   {
+    "prompt": "An obtuse-angled triangle has",
+    "options": [
+     "no acute angle",
+     "three obtuse angles",
+     "two obtuse angles",
+     "one obtuse angle"
+    ],
+    "answer": 3,
+    "solution": "Only one can be obtuse.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "The sum of the exterior angles (one at each vertex) of a triangle is",
+    "options": [
+     "360°",
+     "270°",
+     "180°",
+     "540°"
+    ],
+    "answer": 0,
+    "solution": "3 × 180 − 180.",
+    "topic": "Exterior angle"
+   },
+   {
+    "prompt": "Sides 7 cm, 7 cm, 7 cm make a",
+    "options": [
+     "equilateral triangle",
+     "scalene triangle",
+     "right triangle",
+     "isosceles triangle only"
+    ],
+    "answer": 0,
+    "solution": "All sides equal.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "In △ABC, ∠B = ∠C and ∠A = 2∠B. ∠A =",
+    "options": [
+     "90°",
+     "60°",
+     "120°",
+     "45°"
+    ],
+    "answer": 0,
+    "solution": "4∠B = 180, ∠B = 45.",
+    "topic": "Equation"
+   },
+   {
+    "prompt": "If the sides of a triangle are 3 cm, 4 cm and x cm, x lies between",
+    "options": [
+     "0 and 12",
+     "3 and 4",
+     "4 and 7",
+     "1 and 7"
+    ],
+    "answer": 3,
+    "solution": "4 − 3 < x < 4 + 3.",
+    "topic": "Range"
+   },
+   {
+    "prompt": "Which is not possible?",
+    "options": [
+     "A triangle with angles 100°, 50°, 40°",
+     "A triangle with angles 60°, 60°, 60°",
+     "A triangle with angles 90°, 45°, 45°",
+     "A triangle with angles 120°, 40°, 20°"
+    ],
+    "answer": 0,
+    "solution": "100 + 50 + 40 = 190°, not 180°.",
+    "topic": "Angle sum"
+   },
+   {
+    "prompt": "In △PQR, ∠P = 30° and ∠Q = 80°. The smallest side is",
+    "options": [
+     "PR",
+     "all equal",
+     "PQ",
+     "QR"
+    ],
+    "answer": 3,
+    "solution": "Smallest angle ∠P is opposite QR.",
+    "topic": "Order"
+   },
+   {
+    "prompt": "An exterior angle of an equilateral triangle is",
+    "options": [
+     "60°",
+     "90°",
+     "120°",
+     "180°"
+    ],
+    "answer": 2,
+    "solution": "180 − 60.",
+    "topic": "Exterior angle"
+   },
+   {
+    "prompt": "The angles of a triangle are (x + 10)°, (2x − 20)° and (x + 30)°. x =",
+    "options": [
+     "35",
+     "45",
+     "50",
+     "40"
+    ],
+    "answer": 3,
+    "solution": "4x + 20 = 180.",
+    "topic": "Equation"
+   }
+  ]
+ },
+ {
+  "chapter": 18,
+  "title": "Pythagoras Theorem",
+  "questions": [
+   {
+    "prompt": "Legs 9 cm and 12 cm. Hypotenuse =",
+    "options": [
+     "15 cm",
+     "10.5 cm",
+     "21 cm",
+     "13 cm"
+    ],
+    "answer": 0,
+    "solution": "√225.",
+    "topic": "Hypotenuse"
+   },
+   {
+    "prompt": "Hypotenuse 26 cm, one side 10 cm. Other side =",
+    "options": [
+     "28 cm",
+     "24 cm",
+     "20 cm",
+     "16 cm"
+    ],
+    "answer": 1,
+    "solution": "√576.",
+    "topic": "Side"
+   },
+   {
+    "prompt": "Diagonal of a 15 cm × 8 cm rectangle =",
+    "options": [
+     "17 cm",
+     "19 cm",
+     "13 cm",
+     "23 cm"
+    ],
+    "answer": 0,
+    "solution": "√289.",
+    "topic": "Diagonal"
+   },
+   {
+    "prompt": "Which is a Pythagorean triplet?",
+    "options": [
+     "4, 5, 6",
+     "5, 12, 14",
+     "7, 24, 25",
+     "6, 9, 11"
+    ],
+    "answer": 2,
+    "solution": "49 + 576 = 625.",
+    "topic": "Triplet"
+   },
+   {
+    "prompt": "The longest side of a right triangle is",
+    "options": [
+     "the hypotenuse",
+     "the height",
+     "any side",
+     "the base"
+    ],
+    "answer": 0,
+    "solution": "Opposite the right angle.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "The triplet for m = 4 using (2m, m² − 1, m² + 1) is",
+    "options": [
+     "6, 8, 10",
+     "4, 15, 17",
+     "8, 16, 17",
+     "8, 15, 17"
+    ],
+    "answer": 3,
+    "solution": "2m = 8, m² − 1 = 15, m² + 1 = 17.",
+    "topic": "Triplet"
+   },
+   {
+    "prompt": "A 13 m ladder reaches 12 m up a wall. Its foot is from the wall",
+    "options": [
+     "25 m",
+     "√313 m",
+     "1 m",
+     "5 m"
+    ],
+    "answer": 3,
+    "solution": "√25.",
+    "topic": "Ladder"
+   },
+   {
+    "prompt": "16 km east and 12 km north. Distance from start =",
+    "options": [
+     "4 km",
+     "24 km",
+     "20 km",
+     "28 km"
+    ],
+    "answer": 2,
+    "solution": "√400.",
+    "topic": "Directions"
+   },
+   {
+    "prompt": "Rhombus diagonals 16 cm and 30 cm. Side =",
+    "options": [
+     "46 cm",
+     "17 cm",
+     "23 cm",
+     "34 cm"
+    ],
+    "answer": 1,
+    "solution": "Halves 8 and 15.",
+    "topic": "Rhombus"
+   },
+   {
+    "prompt": "Poles 11 m and 6 m, 12 m apart. Distance between tops =",
+    "options": [
+     "12 m",
+     "17 m",
+     "5 m",
+     "13 m"
+    ],
+    "answer": 3,
+    "solution": "√(144 + 25).",
+    "topic": "Poles"
+   },
+   {
+    "prompt": "Sides 6, 8, 10 form",
+    "options": [
+     "an acute triangle",
+     "an obtuse triangle",
+     "a right triangle",
+     "no triangle"
+    ],
+    "answer": 2,
+    "solution": "36 + 64 = 100.",
+    "topic": "Converse"
+   },
+   {
+    "prompt": "In △ABC with ∠B = 90°,",
+    "options": [
+     "AC² = AB² + BC²",
+     "AB = BC",
+     "AB² = BC² + AC²",
+     "BC² = AB² + AC²"
+    ],
+    "answer": 0,
+    "solution": "AC is the hypotenuse.",
+    "topic": "Statement"
+   },
+   {
+    "prompt": "The diagonal of a square of side 5 cm is",
+    "options": [
+     "√5 cm",
+     "5√2 cm",
+     "10 cm",
+     "25 cm"
+    ],
+    "answer": 1,
+    "solution": "√50.",
+    "topic": "Square"
+   },
+   {
+    "prompt": "Is 8, 15, 17 a triplet?",
+    "options": [
+     "Yes",
+     "No",
+     "Only if scaled",
+     "Cannot say"
+    ],
+    "answer": 0,
+    "solution": "64 + 225 = 289.",
+    "topic": "Triplet"
+   },
+   {
+    "prompt": "If the sides are 3k, 4k, 5k, the triangle is",
+    "options": [
+     "equilateral",
+     "obtuse",
+     "right-angled",
+     "isosceles"
+    ],
+    "answer": 2,
+    "solution": "A multiple of 3, 4, 5.",
+    "topic": "Triplet"
+   },
+   {
+    "prompt": "A right triangle has hypotenuse 10 cm and one side 6 cm. Its area is",
+    "options": [
+     "30 cm²",
+     "24 cm²",
+     "60 cm²",
+     "48 cm²"
+    ],
+    "answer": 1,
+    "solution": "Other side 8; ½ × 6 × 8.",
+    "topic": "Area"
+   },
+   {
+    "prompt": "The side of a square whose diagonal is 8√2 cm is",
+    "options": [
+     "8 cm",
+     "8√2 cm",
+     "16 cm",
+     "4 cm"
+    ],
+    "answer": 0,
+    "solution": "d = s√2.",
+    "topic": "Square"
+   },
+   {
+    "prompt": "Which sides form a right triangle?",
+    "options": [
+     "10, 20, 25",
+     "2, 3, 4",
+     "5, 6, 7",
+     "9, 40, 41"
+    ],
+    "answer": 3,
+    "solution": "81 + 1600 = 1681.",
+    "topic": "Converse"
+   },
+   {
+    "prompt": "A tree breaks at 5 m and the top touches the ground 12 m from its foot. The tree's height was",
+    "options": [
+     "13 m",
+     "22 m",
+     "17 m",
+     "18 m"
+    ],
+    "answer": 3,
+    "solution": "Broken part √(25 + 144) = 13, height 5 + 13.",
+    "topic": "Application"
+   },
+   {
+    "prompt": "The altitude of an equilateral triangle of side 2 cm is",
+    "options": [
+     "1 cm",
+     "3 cm",
+     "√3 cm",
+     "2√3 cm"
+    ],
+    "answer": 2,
+    "solution": "√(4 − 1).",
+    "topic": "Equilateral"
+   },
+   {
+    "prompt": "A 25 m ladder's foot is 7 m from a wall. It reaches a height of",
+    "options": [
+     "32 m",
+     "18 m",
+     "24 m",
+     "26 m"
+    ],
+    "answer": 2,
+    "solution": "√(625 − 49).",
+    "topic": "Ladder"
+   },
+   {
+    "prompt": "In a right triangle, if the legs are equal to 1, the hypotenuse is",
+    "options": [
+     "√2",
+     "√3",
+     "1",
+     "2"
+    ],
+    "answer": 0,
+    "solution": "√(1 + 1).",
+    "topic": "Hypotenuse"
+   },
+   {
+    "prompt": "Sides 5, 12, x form a right triangle with x the hypotenuse. x =",
+    "options": [
+     "√119",
+     "7",
+     "17",
+     "13"
+    ],
+    "answer": 3,
+    "solution": "√169.",
+    "topic": "Hypotenuse"
+   },
+   {
+    "prompt": "A rectangular field is 40 m by 30 m. Walking along the diagonal instead of two sides saves",
+    "options": [
+     "70 m",
+     "10 m",
+     "20 m",
+     "50 m"
+    ],
+    "answer": 2,
+    "solution": "70 − 50.",
+    "topic": "Application"
+   },
+   {
+    "prompt": "The triplet with smallest number 6 (using 2m) is",
+    "options": [
+     "6, 9, 12",
+     "6, 10, 12",
+     "6, 8, 10",
+     "6, 7, 8"
+    ],
+    "answer": 2,
+    "solution": "m = 3: 6, 8, 10.",
+    "topic": "Triplet"
+   },
+   {
+    "prompt": "Sides 20, 21, 29 form",
+    "options": [
+     "an obtuse triangle",
+     "a right triangle",
+     "an acute triangle",
+     "no triangle"
+    ],
+    "answer": 1,
+    "solution": "400 + 441 = 841.",
+    "topic": "Converse"
+   },
+   {
+    "prompt": "If AB = 12, BC = 5 and ∠B = 90°, then AC =",
+    "options": [
+     "13",
+     "√119",
+     "7",
+     "17"
+    ],
+    "answer": 0,
+    "solution": "√169.",
+    "topic": "Hypotenuse"
+   },
+   {
+    "prompt": "A plane flies 120 km north and 50 km west. Its distance from the start is",
+    "options": [
+     "110 km",
+     "130 km",
+     "70 km",
+     "170 km"
+    ],
+    "answer": 1,
+    "solution": "√(14400 + 2500).",
+    "topic": "Directions"
+   },
+   {
+    "prompt": "The perimeter of a right triangle with legs 20 cm and 15 cm is",
+    "options": [
+     "70 cm",
+     "50 cm",
+     "60 cm",
+     "35 cm"
+    ],
+    "answer": 2,
+    "solution": "Hypotenuse 25.",
+    "topic": "Perimeter"
+   },
+   {
+    "prompt": "Pythagoras theorem applies to",
+    "options": [
+     "right-angled triangles only",
+     "isosceles triangles only",
+     "all triangles",
+     "equilateral triangles only"
+    ],
+    "answer": 0,
+    "solution": "It needs a right angle.",
+    "topic": "Concept"
+   }
+  ]
+ },
+ {
+  "chapter": 19,
+  "title": "Symmetry",
+  "questions": [
+   {
+    "prompt": "The number of lines of symmetry of a rectangle (not a square) is",
+    "options": [
+     "1",
+     "4",
+     "2",
+     "0"
+    ],
+    "answer": 2,
+    "solution": "Diagonals are not lines of symmetry.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "A regular hexagon has",
+    "options": [
+     "6 lines of symmetry",
+     "12 lines of symmetry",
+     "2 lines of symmetry",
+     "3 lines of symmetry"
+    ],
+    "answer": 0,
+    "solution": "n lines for n sides.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "A circle has",
+    "options": [
+     "infinitely many lines of symmetry",
+     "1 line of symmetry",
+     "no line of symmetry",
+     "4 lines of symmetry"
+    ],
+    "answer": 0,
+    "solution": "Every diameter.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "A square has",
+    "options": [
+     "4 lines of symmetry",
+     "1 line of symmetry",
+     "2 lines of symmetry",
+     "8 lines of symmetry"
+    ],
+    "answer": 0,
+    "solution": "Two diagonals and two middle lines.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "An equilateral triangle has",
+    "options": [
+     "2 lines of symmetry",
+     "0 lines of symmetry",
+     "1 line of symmetry",
+     "3 lines of symmetry"
+    ],
+    "answer": 3,
+    "solution": "Each median.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "An isosceles triangle (not equilateral) has",
+    "options": [
+     "3 lines of symmetry",
+     "none",
+     "2 lines of symmetry",
+     "1 line of symmetry"
+    ],
+    "answer": 3,
+    "solution": "Through the vertex and the middle of the base.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "A scalene triangle has",
+    "options": [
+     "1 line of symmetry",
+     "2 lines of symmetry",
+     "no line of symmetry",
+     "3 lines of symmetry"
+    ],
+    "answer": 2,
+    "solution": "No equal sides.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "Which letter has no line of symmetry?",
+    "options": [
+     "N",
+     "O",
+     "A",
+     "H"
+    ],
+    "answer": 0,
+    "solution": "N has none; it has rotational symmetry.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "A parallelogram (not a rectangle or rhombus) has",
+    "options": [
+     "no line of symmetry",
+     "2 lines of symmetry",
+     "4 lines of symmetry",
+     "1 line of symmetry"
+    ],
+    "answer": 0,
+    "solution": "Folding never matches.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "A rhombus (not a square) has",
+    "options": [
+     "2 lines of symmetry",
+     "1 line of symmetry",
+     "no line of symmetry",
+     "4 lines of symmetry"
+    ],
+    "answer": 0,
+    "solution": "Its diagonals.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "The order of rotational symmetry of a square is",
+    "options": [
+     "4",
+     "1",
+     "2",
+     "8"
+    ],
+    "answer": 0,
+    "solution": "90° turns.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "The angle of rotation of a regular pentagon is",
+    "options": [
+     "108°",
+     "72°",
+     "60°",
+     "90°"
+    ],
+    "answer": 1,
+    "solution": "360 ÷ 5.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "The order of rotational symmetry of an equilateral triangle is",
+    "options": [
+     "3",
+     "2",
+     "6",
+     "1"
+    ],
+    "answer": 0,
+    "solution": "120° turns.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "The letter S has rotational symmetry of order",
+    "options": [
+     "4",
+     "2",
+     "3",
+     "1"
+    ],
+    "answer": 1,
+    "solution": "Same after 180°.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "A figure with order of rotational symmetry 1",
+    "options": [
+     "is a circle",
+     "is a square",
+     "has no rotational symmetry",
+     "has rotational symmetry"
+    ],
+    "answer": 2,
+    "solution": "Only the full turn.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "A rectangle has rotational symmetry of order",
+    "options": [
+     "1",
+     "0",
+     "4",
+     "2"
+    ],
+    "answer": 3,
+    "solution": "180° turn.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "An angle of rotation of 60° means the order is",
+    "options": [
+     "4",
+     "3",
+     "60",
+     "6"
+    ],
+    "answer": 3,
+    "solution": "360 ÷ 60.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "Which has both line and rotational symmetry?",
+    "options": [
+     "Letter N",
+     "Letter H",
+     "Letter Z",
+     "Letter S"
+    ],
+    "answer": 1,
+    "solution": "H has 2 lines and order 2.",
+    "topic": "Both"
+   },
+   {
+    "prompt": "Which has rotational symmetry but no line symmetry?",
+    "options": [
+     "Letter M",
+     "Letter T",
+     "Letter A",
+     "Letter Z"
+    ],
+    "answer": 3,
+    "solution": "Z has order 2, no line.",
+    "topic": "Both"
+   },
+   {
+    "prompt": "A regular octagon has how many lines of symmetry?",
+    "options": [
+     "8",
+     "4",
+     "6",
+     "16"
+    ],
+    "answer": 0,
+    "solution": "n = 8.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "The letter X has",
+    "options": [
+     "4 lines of symmetry",
+     "2 lines of symmetry",
+     "1 line of symmetry",
+     "no line of symmetry"
+    ],
+    "answer": 1,
+    "solution": "Vertical and horizontal.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "A kite has",
+    "options": [
+     "1 line of symmetry",
+     "2 lines of symmetry",
+     "4 lines of symmetry",
+     "no line of symmetry"
+    ],
+    "answer": 0,
+    "solution": "The long diagonal.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "An isosceles trapezium has",
+    "options": [
+     "3 lines of symmetry",
+     "2 lines of symmetry",
+     "1 line of symmetry",
+     "no line of symmetry"
+    ],
+    "answer": 2,
+    "solution": "Through the middles of the parallel sides.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "The number of lines of symmetry of the letter O (a circle-like ring) is",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "infinitely many"
+    ],
+    "answer": 3,
+    "solution": "Every line through the centre.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "A regular polygon has an angle of rotation of 40°. It has",
+    "options": [
+     "6 sides",
+     "9 sides",
+     "4 sides",
+     "40 sides"
+    ],
+    "answer": 1,
+    "solution": "360 ÷ 40.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "A semicircle has",
+    "options": [
+     "2 lines of symmetry",
+     "1 line of symmetry",
+     "no line of symmetry",
+     "infinitely many"
+    ],
+    "answer": 1,
+    "solution": "The perpendicular to the diameter.",
+    "topic": "Line symmetry"
+   },
+   {
+    "prompt": "Which number has a horizontal line of symmetry?",
+    "options": [
+     "7",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 2,
+    "solution": "3 folds top onto bottom.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "The mirror image of the letter b in a vertical mirror is",
+    "options": [
+     "p",
+     "d",
+     "b",
+     "q"
+    ],
+    "answer": 1,
+    "solution": "Left and right swap.",
+    "topic": "Reflection"
+   },
+   {
+    "prompt": "The order of rotational symmetry of a circle is",
+    "options": [
+     "infinite",
+     "2",
+     "360",
+     "1"
+    ],
+    "answer": 0,
+    "solution": "Any turn works.",
+    "topic": "Rotation"
+   },
+   {
+    "prompt": "The number of lines of symmetry of the letter E is",
+    "options": [
+     "2",
+     "0",
+     "3",
+     "1"
+    ],
+    "answer": 3,
+    "solution": "Horizontal only.",
+    "topic": "Letters"
+   }
+  ]
+ },
+ {
+  "chapter": 20,
+  "title": "Recognition of Solids",
+  "questions": [
+   {
+    "prompt": "A cuboid has",
+    "options": [
+     "6 faces, 8 vertices, 12 edges",
+     "8 faces, 6 vertices, 12 edges",
+     "4 faces, 4 vertices, 6 edges",
+     "6 faces, 12 vertices, 8 edges"
+    ],
+    "answer": 0,
+    "solution": "Prism with n = 4.",
+    "topic": "Prism"
+   },
+   {
+    "prompt": "A triangular prism has how many edges?",
+    "options": [
+     "9",
+     "5",
+     "6",
+     "12"
+    ],
+    "answer": 0,
+    "solution": "3n = 9.",
+    "topic": "Prism"
+   },
+   {
+    "prompt": "A pentagonal pyramid has how many vertices?",
+    "options": [
+     "6",
+     "5",
+     "10",
+     "7"
+    ],
+    "answer": 0,
+    "solution": "n + 1.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "Euler's formula is",
+    "options": [
+     "F + V − E = 2",
+     "F + E − V = 2",
+     "F + V + E = 2",
+     "V + E − F = 2"
+    ],
+    "answer": 0,
+    "solution": "For polyhedra.",
+    "topic": "Euler"
+   },
+   {
+    "prompt": "A polyhedron has 12 faces and 30 edges. V =",
+    "options": [
+     "40",
+     "18",
+     "16",
+     "20"
+    ],
+    "answer": 3,
+    "solution": "12 + V − 30 = 2.",
+    "topic": "Euler"
+   },
+   {
+    "prompt": "Which is not a polyhedron?",
+    "options": [
+     "Pyramid",
+     "Cube",
+     "Cylinder",
+     "Prism"
+    ],
+    "answer": 2,
+    "solution": "A cylinder has a curved surface.",
+    "topic": "Polyhedron"
+   },
+   {
+    "prompt": "A square pyramid has how many faces?",
+    "options": [
+     "6",
+     "5",
+     "8",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "1 base + 4 triangles.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "A cone has",
+    "options": [
+     "no flat face",
+     "1 flat face and 1 curved surface",
+     "2 flat faces",
+     "3 faces"
+    ],
+    "answer": 1,
+    "solution": "Circular base and curved surface.",
+    "topic": "Curved solids"
+   },
+   {
+    "prompt": "A cylinder has",
+    "options": [
+     "2 flat faces and 1 curved surface",
+     "3 flat faces",
+     "1 flat face",
+     "no curved surface"
+    ],
+    "answer": 0,
+    "solution": "Two circles and a curved surface.",
+    "topic": "Curved solids"
+   },
+   {
+    "prompt": "A sphere has",
+    "options": [
+     "one vertex",
+     "one curved surface, no edges, no vertices",
+     "one edge",
+     "two faces"
+    ],
+    "answer": 1,
+    "solution": "Only a curved surface.",
+    "topic": "Curved solids"
+   },
+   {
+    "prompt": "The number of edges of a hexagonal prism is",
+    "options": [
+     "8",
+     "18",
+     "12",
+     "6"
+    ],
+    "answer": 1,
+    "solution": "3 × 6.",
+    "topic": "Prism"
+   },
+   {
+    "prompt": "The number of faces of a hexagonal pyramid is",
+    "options": [
+     "12",
+     "6",
+     "7",
+     "8"
+    ],
+    "answer": 2,
+    "solution": "6 + 1.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "Check: can a solid have F = 10, E = 20, V = 15?",
+    "options": [
+     "Only a pyramid",
+     "Only a prism",
+     "No",
+     "Yes"
+    ],
+    "answer": 2,
+    "solution": "10 + 15 − 20 = 5.",
+    "topic": "Euler"
+   },
+   {
+    "prompt": "A net of a cube has",
+    "options": [
+     "8 squares",
+     "12 squares",
+     "4 squares",
+     "6 squares"
+    ],
+    "answer": 3,
+    "solution": "One square per face.",
+    "topic": "Nets"
+   },
+   {
+    "prompt": "A dice is a model of a",
+    "options": [
+     "cube",
+     "prism with 3 faces",
+     "sphere",
+     "cuboid"
+    ],
+    "answer": 0,
+    "solution": "Six equal square faces.",
+    "topic": "Shapes"
+   },
+   {
+    "prompt": "A tetrahedron (triangular pyramid) has",
+    "options": [
+     "3 faces, 3 vertices, 3 edges",
+     "4 faces, 6 vertices, 4 edges",
+     "6 faces, 4 vertices, 4 edges",
+     "4 faces, 4 vertices, 6 edges"
+    ],
+    "answer": 3,
+    "solution": "n = 3.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "The side faces of a prism are",
+    "options": [
+     "circles",
+     "rectangles",
+     "triangles",
+     "pentagons"
+    ],
+    "answer": 1,
+    "solution": "Definition.",
+    "topic": "Prism"
+   },
+   {
+    "prompt": "The side faces of a pyramid are",
+    "options": [
+     "rectangles",
+     "squares",
+     "triangles",
+     "circles"
+    ],
+    "answer": 2,
+    "solution": "They meet at the apex.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "A football is a model of a",
+    "options": [
+     "cylinder",
+     "sphere",
+     "cone",
+     "cube"
+    ],
+    "answer": 1,
+    "solution": "Round in all directions.",
+    "topic": "Shapes"
+   },
+   {
+    "prompt": "An ice-cream cone is a model of a",
+    "options": [
+     "sphere",
+     "cone",
+     "pyramid",
+     "cylinder"
+    ],
+    "answer": 1,
+    "solution": "One circular base and an apex.",
+    "topic": "Shapes"
+   },
+   {
+    "prompt": "A pipe is a model of a",
+    "options": [
+     "sphere",
+     "cone",
+     "cylinder",
+     "prism"
+    ],
+    "answer": 2,
+    "solution": "Two circular ends.",
+    "topic": "Shapes"
+   },
+   {
+    "prompt": "If V = 6 and E = 12 for a polyhedron, F =",
+    "options": [
+     "8",
+     "6",
+     "10",
+     "4"
+    ],
+    "answer": 0,
+    "solution": "F + 6 − 12 = 2.",
+    "topic": "Euler"
+   },
+   {
+    "prompt": "The number of vertices of an octagonal prism is",
+    "options": [
+     "10",
+     "8",
+     "24",
+     "16"
+    ],
+    "answer": 3,
+    "solution": "2 × 8.",
+    "topic": "Prism"
+   },
+   {
+    "prompt": "Which net cannot fold into a cube?",
+    "options": [
+     "6 squares in one straight line",
+     "A T of 6 squares",
+     "A cross of 6 squares",
+     "A staircase of 6 squares (2-2-2)"
+    ],
+    "answer": 0,
+    "solution": "Six in a row overlap.",
+    "topic": "Nets"
+   },
+   {
+    "prompt": "The number of edges meeting at each vertex of a cube is",
+    "options": [
+     "2",
+     "6",
+     "4",
+     "3"
+    ],
+    "answer": 3,
+    "solution": "Count at a corner.",
+    "topic": "Cube"
+   },
+   {
+    "prompt": "A brick is a model of a",
+    "options": [
+     "pyramid",
+     "cube",
+     "cylinder",
+     "cuboid"
+    ],
+    "answer": 3,
+    "solution": "Faces are rectangles.",
+    "topic": "Shapes"
+   },
+   {
+    "prompt": "A prism and a pyramid with the same base have",
+    "options": [
+     "no edges",
+     "different numbers of faces",
+     "the same number of faces",
+     "the same number of edges"
+    ],
+    "answer": 1,
+    "solution": "n + 2 versus n + 1.",
+    "topic": "Compare"
+   },
+   {
+    "prompt": "The Great Pyramid of Giza has a square base. It has how many edges?",
+    "options": [
+     "5",
+     "8",
+     "4",
+     "12"
+    ],
+    "answer": 1,
+    "solution": "2 × 4.",
+    "topic": "Pyramid"
+   },
+   {
+    "prompt": "A polyhedron with 8 faces and 6 vertices has edges",
+    "options": [
+     "10",
+     "16",
+     "12",
+     "14"
+    ],
+    "answer": 2,
+    "solution": "8 + 6 − E = 2.",
+    "topic": "Euler"
+   },
+   {
+    "prompt": "A solid with 7 faces and 10 vertices is a",
+    "options": [
+     "pentagonal prism",
+     "cube",
+     "hexagonal pyramid",
+     "triangular prism"
+    ],
+    "answer": 0,
+    "solution": "n + 2 = 7, 2n = 10.",
+    "topic": "Identify"
+   }
+  ]
+ },
+ {
+  "chapter": 21,
+  "title": "Congruency: Congruent Triangles",
+  "questions": [
+   {
+    "prompt": "Congruent figures have",
+    "options": [
+     "the same shape and size",
+     "different sizes",
+     "the same shape only",
+     "the same size only"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Definition"
+   },
+   {
+    "prompt": "△ABC ≅ △XYZ. BC equals",
+    "options": [
+     "XY",
+     "AB",
+     "XZ",
+     "YZ"
+    ],
+    "answer": 3,
+    "solution": "B ↔ Y, C ↔ Z.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "△ABC ≅ △XYZ. ∠C equals",
+    "options": [
+     "90°",
+     "∠Z",
+     "∠Y",
+     "∠X"
+    ],
+    "answer": 1,
+    "solution": "C ↔ Z.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "Which is not a condition of congruence?",
+    "options": [
+     "RHS",
+     "SSS",
+     "SAS",
+     "AAA"
+    ],
+    "answer": 3,
+    "solution": "Same angles can give different sizes.",
+    "topic": "Conditions"
+   },
+   {
+    "prompt": "AB = PQ, BC = QR, ∠B = ∠Q. The congruence condition is",
+    "options": [
+     "SAS",
+     "SSS",
+     "ASA",
+     "RHS"
+    ],
+    "answer": 0,
+    "solution": "Included angle.",
+    "topic": "SAS"
+   },
+   {
+    "prompt": "Right angle, hypotenuse and a side equal: condition",
+    "options": [
+     "SAS",
+     "SSS",
+     "ASA",
+     "RHS"
+    ],
+    "answer": 3,
+    "solution": "Definition.",
+    "topic": "RHS"
+   },
+   {
+    "prompt": "Two angles and the included side equal: condition",
+    "options": [
+     "RHS",
+     "ASA",
+     "SAS",
+     "SSS"
+    ],
+    "answer": 1,
+    "solution": "Definition.",
+    "topic": "ASA"
+   },
+   {
+    "prompt": "All three sides equal: condition",
+    "options": [
+     "AAA",
+     "SAS",
+     "SSS",
+     "ASA"
+    ],
+    "answer": 2,
+    "solution": "Definition.",
+    "topic": "SSS"
+   },
+   {
+    "prompt": "CPCT stands for",
+    "options": [
+     "Corresponding parts of congruent triangles",
+     "Congruent parts of corresponding triangles",
+     "Common parts of correct triangles",
+     "Corresponding points of the circle"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "Two squares are congruent if",
+    "options": [
+     "they have 4 sides",
+     "they are drawn on paper",
+     "their angles are equal",
+     "their sides are equal"
+    ],
+    "answer": 3,
+    "solution": "All angles are already 90°.",
+    "topic": "Figures"
+   },
+   {
+    "prompt": "Two circles are congruent if",
+    "options": [
+     "they touch",
+     "their radii are equal",
+     "they are drawn with ink",
+     "they have the same centre"
+    ],
+    "answer": 1,
+    "solution": "Radius fixes the size.",
+    "topic": "Figures"
+   },
+   {
+    "prompt": "△ABC ≅ △PQR. If ∠A = 50°, ∠B = 60°, then ∠R =",
+    "options": [
+     "70°",
+     "60°",
+     "110°",
+     "50°"
+    ],
+    "answer": 0,
+    "solution": "∠R = ∠C = 70°.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "In △ABD and △ACD, AB = AC, ∠BAD = ∠CAD, AD common. The condition is",
+    "options": [
+     "ASA",
+     "SAS",
+     "SSS",
+     "RHS"
+    ],
+    "answer": 1,
+    "solution": "Side, included angle, side.",
+    "topic": "SAS"
+   },
+   {
+    "prompt": "If △ABC ≅ △DEF by SSS, then ∠A =",
+    "options": [
+     "∠D",
+     "∠E",
+     "90°",
+     "∠F"
+    ],
+    "answer": 0,
+    "solution": "A ↔ D.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "Which pair of triangles must be congruent?",
+    "options": [
+     "Same three sides",
+     "Same three angles",
+     "Same two sides",
+     "Same area"
+    ],
+    "answer": 0,
+    "solution": "SSS.",
+    "topic": "Conditions"
+   },
+   {
+    "prompt": "Two triangles with equal angles but different sizes are",
+    "options": [
+     "not congruent",
+     "always right-angled",
+     "equilateral",
+     "congruent"
+    ],
+    "answer": 0,
+    "solution": "Same shape, different size.",
+    "topic": "AAA"
+   },
+   {
+    "prompt": "Line segments AB = 4 cm and CD = 4 cm are",
+    "options": [
+     "not congruent",
+     "parallel",
+     "perpendicular",
+     "congruent"
+    ],
+    "answer": 3,
+    "solution": "Equal lengths.",
+    "topic": "Segments"
+   },
+   {
+    "prompt": "Angles of 35° and 35° are",
+    "options": [
+     "congruent",
+     "not equal",
+     "supplementary",
+     "complementary"
+    ],
+    "answer": 0,
+    "solution": "Equal measures.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "△PQR ≅ △STU. PR corresponds to",
+    "options": [
+     "ST",
+     "SU",
+     "TU",
+     "QR"
+    ],
+    "answer": 1,
+    "solution": "P ↔ S, R ↔ U.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "To use RHS, the triangles must be",
+    "options": [
+     "obtuse",
+     "right-angled",
+     "isosceles",
+     "equilateral"
+    ],
+    "answer": 1,
+    "solution": "R means right angle.",
+    "topic": "RHS"
+   },
+   {
+    "prompt": "In ASA, the side must be",
+    "options": [
+     "opposite one angle",
+     "between the two angles",
+     "the hypotenuse",
+     "any side"
+    ],
+    "answer": 1,
+    "solution": "Included side.",
+    "topic": "ASA"
+   },
+   {
+    "prompt": "AAS is the same as",
+    "options": [
+     "SSS",
+     "RHS",
+     "ASA, because the third angle is then equal",
+     "SAS"
+    ],
+    "answer": 2,
+    "solution": "Angle sum gives the third angle.",
+    "topic": "AAS"
+   },
+   {
+    "prompt": "In △ABC, AB = AC and D is the midpoint of BC. Then △ABD ≅ △ACD by",
+    "options": [
+     "RHS only",
+     "AAA",
+     "SSS",
+     "SAS only"
+    ],
+    "answer": 2,
+    "solution": "AB = AC, BD = DC, AD common.",
+    "topic": "SSS"
+   },
+   {
+    "prompt": "If △ABC ≅ △ACB, the triangle is",
+    "options": [
+     "obtuse",
+     "isosceles with AB = AC",
+     "right-angled",
+     "scalene"
+    ],
+    "answer": 1,
+    "solution": "B ↔ C gives AB = AC.",
+    "topic": "Application"
+   },
+   {
+    "prompt": "Which is enough for SAS?",
+    "options": [
+     "AB, BC and ∠B",
+     "AB, BC and ∠C",
+     "AB, BC and ∠A",
+     "∠A, ∠B and AB"
+    ],
+    "answer": 0,
+    "solution": "∠B is between AB and BC.",
+    "topic": "SAS"
+   },
+   {
+    "prompt": "Two right triangles with hypotenuse 10 cm and one side 6 cm are",
+    "options": [
+     "similar but not congruent",
+     "congruent by RHS",
+     "not congruent",
+     "congruent by AAA"
+    ],
+    "answer": 1,
+    "solution": "RHS.",
+    "topic": "RHS"
+   },
+   {
+    "prompt": "A diagonal of a rectangle divides it into two triangles that are",
+    "options": [
+     "obtuse",
+     "equilateral",
+     "congruent",
+     "not congruent"
+    ],
+    "answer": 2,
+    "solution": "SSS (opposite sides equal, diagonal common).",
+    "topic": "Application"
+   },
+   {
+    "prompt": "If △ABC ≅ △PQR and AB = 5 cm, then PQ =",
+    "options": [
+     "10 cm",
+     "5 cm",
+     "2.5 cm",
+     "cannot say"
+    ],
+    "answer": 1,
+    "solution": "CPCT.",
+    "topic": "CPCT"
+   },
+   {
+    "prompt": "Which test uses no angle?",
+    "options": [
+     "RHS",
+     "ASA",
+     "SAS",
+     "SSS"
+    ],
+    "answer": 3,
+    "solution": "Only sides.",
+    "topic": "Conditions"
+   },
+   {
+    "prompt": "Congruence is shown by the symbol",
+    "options": [
+     "≅",
+     "∥",
+     "~",
+     "="
+    ],
+    "answer": 0,
+    "solution": "≅ means congruent.",
+    "topic": "Notation"
+   }
+  ]
+ },
+ {
+  "chapter": 22,
+  "title": "Constructions",
+  "questions": [
+   {
+    "prompt": "A perpendicular bisector of AB",
+    "options": [
+     "passes through the midpoint of AB at 90°",
+     "passes through A",
+     "bisects an angle",
+     "is parallel to AB"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Perpendicular bisector"
+   },
+   {
+    "prompt": "For the perpendicular bisector of AB = 6 cm, the arc radius must be",
+    "options": [
+     "more than 3 cm",
+     "exactly 3 cm",
+     "6 cm only",
+     "less than 3 cm"
+    ],
+    "answer": 0,
+    "solution": "More than half of AB.",
+    "topic": "Perpendicular bisector"
+   },
+   {
+    "prompt": "Bisecting a 70° angle gives",
+    "options": [
+     "20°",
+     "35°",
+     "140°",
+     "70°"
+    ],
+    "answer": 1,
+    "solution": "Half of 70°.",
+    "topic": "Angle bisector"
+   },
+   {
+    "prompt": "To construct 60°, the arcs from the vertex and the cut point have",
+    "options": [
+     "the same radius",
+     "radius 6 cm only",
+     "no arcs",
+     "different radii"
+    ],
+    "answer": 0,
+    "solution": "Equilateral triangle idea.",
+    "topic": "60°"
+   },
+   {
+    "prompt": "Which angle needs bisecting 60°?",
+    "options": [
+     "90°",
+     "30°",
+     "45°",
+     "120°"
+    ],
+    "answer": 1,
+    "solution": "30 = 60/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "Which angle needs bisecting 90°?",
+    "options": [
+     "75°",
+     "45°",
+     "15°",
+     "30°"
+    ],
+    "answer": 1,
+    "solution": "45 = 90/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "75° is constructed by bisecting the angle between",
+    "options": [
+     "30° and 60°",
+     "45° and 90°",
+     "90° and 120°",
+     "60° and 90°"
+    ],
+    "answer": 3,
+    "solution": "(60 + 90)/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "135° is constructed by bisecting the angle between",
+    "options": [
+     "60° and 120°",
+     "45° and 90°",
+     "90° and 180°",
+     "120° and 150°"
+    ],
+    "answer": 2,
+    "solution": "(90 + 180)/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "15° is constructed by bisecting",
+    "options": [
+     "90°",
+     "60°",
+     "45°",
+     "30°"
+    ],
+    "answer": 3,
+    "solution": "15 = 30/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "105° is constructed by bisecting the angle between",
+    "options": [
+     "60° and 90°",
+     "90° and 120°",
+     "120° and 180°",
+     "90° and 180°"
+    ],
+    "answer": 1,
+    "solution": "(90 + 120)/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "120° is made by",
+    "options": [
+     "a 45° step",
+     "bisecting 60°",
+     "two 60° steps on the same arc",
+     "bisecting 90°"
+    ],
+    "answer": 2,
+    "solution": "60 + 60.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "Which instruments are used in constructions?",
+    "options": [
+     "Set square only",
+     "Calculator",
+     "Protractor only",
+     "Ruler and compasses"
+    ],
+    "answer": 3,
+    "solution": "Euclid's tools.",
+    "topic": "Tools"
+   },
+   {
+    "prompt": "A triangle with sides 3 cm, 4 cm, 8 cm",
+    "options": [
+     "can be constructed",
+     "is right-angled",
+     "cannot be constructed",
+     "is equilateral"
+    ],
+    "answer": 2,
+    "solution": "3 + 4 < 8.",
+    "topic": "SSS"
+   },
+   {
+    "prompt": "To construct a triangle given BC, ∠B and ∠C, we use",
+    "options": [
+     "ASA",
+     "RHS",
+     "SAS",
+     "SSS"
+    ],
+    "answer": 0,
+    "solution": "Two angles and the included side.",
+    "topic": "ASA"
+   },
+   {
+    "prompt": "To construct a triangle given AB, BC and ∠B, we use",
+    "options": [
+     "SSS",
+     "SAS",
+     "ASA",
+     "RHS"
+    ],
+    "answer": 1,
+    "solution": "Included angle.",
+    "topic": "SAS"
+   },
+   {
+    "prompt": "In △PQR with ∠Q = 60° and ∠R = 45°, ∠P =",
+    "options": [
+     "75°",
+     "105°",
+     "60°",
+     "45°"
+    ],
+    "answer": 0,
+    "solution": "180 − 105.",
+    "topic": "ASA"
+   },
+   {
+    "prompt": "To draw a parallel line through P, we make",
+    "options": [
+     "equal corresponding angles",
+     "supplementary corresponding angles",
+     "a right angle only",
+     "a circle"
+    ],
+    "answer": 0,
+    "solution": "Converse of the parallel property.",
+    "topic": "Parallel lines"
+   },
+   {
+    "prompt": "Each angle of an equilateral triangle constructed with compasses is",
+    "options": [
+     "45°",
+     "30°",
+     "90°",
+     "60°"
+    ],
+    "answer": 3,
+    "solution": "All sides equal.",
+    "topic": "Equilateral"
+   },
+   {
+    "prompt": "A right triangle with hypotenuse 6 cm and a side 4 cm uses",
+    "options": [
+     "RHS",
+     "ASA",
+     "SAS",
+     "SSS"
+    ],
+    "answer": 0,
+    "solution": "Right angle, hypotenuse, side.",
+    "topic": "RHS"
+   },
+   {
+    "prompt": "Which triangle cannot be drawn?",
+    "options": [
+     "AB = 5, BC = 6, CA = 7",
+     "∠A = 60°, ∠B = 60°",
+     "∠A = 100°, ∠B = 90°",
+     "AB = 4, ∠A = 30°, AC = 6"
+    ],
+    "answer": 2,
+    "solution": "Two angles already exceed 180°.",
+    "topic": "Possible"
+   },
+   {
+    "prompt": "When constructing, the arcs must",
+    "options": [
+     "be drawn in ink only",
+     "be rubbed out",
+     "not be rubbed out",
+     "be very small"
+    ],
+    "answer": 2,
+    "solution": "They show the method.",
+    "topic": "Rules"
+   },
+   {
+    "prompt": "The angle bisector of a straight angle makes",
+    "options": [
+     "45°",
+     "60°",
+     "180°",
+     "90°"
+    ],
+    "answer": 3,
+    "solution": "Half of 180°.",
+    "topic": "Angle bisector"
+   },
+   {
+    "prompt": "The point where the perpendicular bisector cuts AB is",
+    "options": [
+     "B",
+     "A",
+     "the midpoint of AB",
+     "outside AB"
+    ],
+    "answer": 2,
+    "solution": "Definition.",
+    "topic": "Perpendicular bisector"
+   },
+   {
+    "prompt": "A rough figure is drawn",
+    "options": [
+     "only for circles",
+     "before the construction",
+     "after the construction",
+     "never"
+    ],
+    "answer": 1,
+    "solution": "It helps plan the steps.",
+    "topic": "Rules"
+   },
+   {
+    "prompt": "To construct 22½°, bisect",
+    "options": [
+     "90°",
+     "60°",
+     "45°",
+     "30°"
+    ],
+    "answer": 2,
+    "solution": "45/2.",
+    "topic": "Special angles"
+   },
+   {
+    "prompt": "Which given set makes a unique triangle?",
+    "options": [
+     "Two sides and an included angle",
+     "One side only",
+     "Three angles",
+     "Two angles only"
+    ],
+    "answer": 0,
+    "solution": "SAS.",
+    "topic": "Possible"
+   },
+   {
+    "prompt": "An isosceles triangle with base 5 cm and equal sides 6 cm is drawn by",
+    "options": [
+     "ASA",
+     "AAA",
+     "SSS",
+     "RHS"
+    ],
+    "answer": 2,
+    "solution": "Three sides known.",
+    "topic": "SSS"
+   },
+   {
+    "prompt": "Each base angle of a right isosceles triangle is",
+    "options": [
+     "90°",
+     "30°",
+     "60°",
+     "45°"
+    ],
+    "answer": 3,
+    "solution": "(180 − 90)/2.",
+    "topic": "Special triangles"
+   },
+   {
+    "prompt": "The construction of 90° at a point on a line can use",
+    "options": [
+     "copying 30°",
+     "bisecting 60°",
+     "the perpendicular at that point",
+     "bisecting 45°"
+    ],
+    "answer": 2,
+    "solution": "Bisect the straight angle.",
+    "topic": "90°"
+   },
+   {
+    "prompt": "To check a construction of 60°, you can",
+    "options": [
+     "use a calculator",
+     "measure it with a protractor",
+     "fold the paper randomly",
+     "draw more arcs"
+    ],
+    "answer": 1,
+    "solution": "Measure to check.",
+    "topic": "Check"
+   }
+  ]
+ },
+ {
+  "chapter": 23,
+  "title": "Mensuration",
+  "questions": [
+   {
+    "prompt": "The area of an 18 m by 12 m rectangle is",
+    "options": [
+     "108 m²",
+     "60 m²",
+     "216 m²",
+     "30 m²"
+    ],
+    "answer": 2,
+    "solution": "18 × 12.",
+    "topic": "Rectangle"
+   },
+   {
+    "prompt": "The perimeter of a square of side 9 cm is",
+    "options": [
+     "81 cm",
+     "18 cm",
+     "36 cm",
+     "27 cm"
+    ],
+    "answer": 2,
+    "solution": "4 × 9.",
+    "topic": "Square"
+   },
+   {
+    "prompt": "The area of a square with diagonal 10 cm is",
+    "options": [
+     "40 cm²",
+     "100 cm²",
+     "25 cm²",
+     "50 cm²"
+    ],
+    "answer": 3,
+    "solution": "½d².",
+    "topic": "Square"
+   },
+   {
+    "prompt": "A 30 m × 20 m garden has a 2 m path outside. Path area =",
+    "options": [
+     "184 m²",
+     "816 m²",
+     "200 m²",
+     "216 m²"
+    ],
+    "answer": 3,
+    "solution": "816 − 600.",
+    "topic": "Path"
+   },
+   {
+    "prompt": "Two 3 m cross roads in a 50 m × 40 m park cover",
+    "options": [
+     "261 m²",
+     "279 m²",
+     "270 m²",
+     "252 m²"
+    ],
+    "answer": 0,
+    "solution": "150 + 120 − 9.",
+    "topic": "Cross roads"
+   },
+   {
+    "prompt": "Area of a triangle with base 14 cm and height 9 cm =",
+    "options": [
+     "126 cm²",
+     "31.5 cm²",
+     "63 cm²",
+     "23 cm²"
+    ],
+    "answer": 2,
+    "solution": "½ × 14 × 9.",
+    "topic": "Triangle"
+   },
+   {
+    "prompt": "A parallelogram has base 12 cm and area 84 cm². Height =",
+    "options": [
+     "14 cm",
+     "6 cm",
+     "72 cm",
+     "7 cm"
+    ],
+    "answer": 3,
+    "solution": "84 ÷ 12.",
+    "topic": "Parallelogram"
+   },
+   {
+    "prompt": "Trapezium with parallel sides 15 and 9 cm, height 8 cm. Area =",
+    "options": [
+     "96 cm²",
+     "72 cm²",
+     "192 cm²",
+     "120 cm²"
+    ],
+    "answer": 0,
+    "solution": "½ × 24 × 8.",
+    "topic": "Trapezium"
+   },
+   {
+    "prompt": "Rhombus with diagonals 16 cm and 12 cm. Area =",
+    "options": [
+     "28 cm²",
+     "48 cm²",
+     "192 cm²",
+     "96 cm²"
+    ],
+    "answer": 3,
+    "solution": "½ × 16 × 12.",
+    "topic": "Rhombus"
+   },
+   {
+    "prompt": "Circumference of a circle of radius 14 cm =",
+    "options": [
+     "44 cm",
+     "616 cm",
+     "88 cm",
+     "176 cm"
+    ],
+    "answer": 2,
+    "solution": "2 × 22/7 × 14.",
+    "topic": "Circle"
+   },
+   {
+    "prompt": "Area of a circle of radius 14 cm =",
+    "options": [
+     "616 cm²",
+     "88 cm²",
+     "1232 cm²",
+     "308 cm²"
+    ],
+    "answer": 0,
+    "solution": "22/7 × 196.",
+    "topic": "Circle"
+   },
+   {
+    "prompt": "Circumference 132 cm. Radius =",
+    "options": [
+     "14 cm",
+     "21 cm",
+     "7 cm",
+     "42 cm"
+    ],
+    "answer": 1,
+    "solution": "132 ÷ (44/7).",
+    "topic": "Circle"
+   },
+   {
+    "prompt": "A wheel of diameter 70 cm makes how many turns in 1.1 km?",
+    "options": [
+     "250",
+     "1000",
+     "500",
+     "50"
+    ],
+    "answer": 2,
+    "solution": "110000 ÷ 220.",
+    "topic": "Wheel"
+   },
+   {
+    "prompt": "Perimeter of a semicircle of radius 7 cm =",
+    "options": [
+     "44 cm",
+     "29 cm",
+     "36 cm",
+     "22 cm"
+    ],
+    "answer": 2,
+    "solution": "22 + 14.",
+    "topic": "Semicircle"
+   },
+   {
+    "prompt": "Volume of a cube of edge 6 cm =",
+    "options": [
+     "36 cm³",
+     "72 cm³",
+     "108 cm³",
+     "216 cm³"
+    ],
+    "answer": 3,
+    "solution": "6³.",
+    "topic": "Cube"
+   },
+   {
+    "prompt": "A tank 2 m × 1.5 m × 1 m holds",
+    "options": [
+     "3000 L",
+     "300 L",
+     "30 L",
+     "3 L"
+    ],
+    "answer": 0,
+    "solution": "3 m³ = 3000 L.",
+    "topic": "Cuboid"
+   },
+   {
+    "prompt": "Surface area of a cube of edge 5 cm =",
+    "options": [
+     "100 cm²",
+     "150 cm²",
+     "125 cm²",
+     "25 cm²"
+    ],
+    "answer": 1,
+    "solution": "6 × 25.",
+    "topic": "Cube"
+   },
+   {
+    "prompt": "Area of an equilateral triangle of side 4 cm =",
+    "options": [
+     "8√3 cm²",
+     "16 cm²",
+     "2√3 cm²",
+     "4√3 cm²"
+    ],
+    "answer": 3,
+    "solution": "√3/4 × 16.",
+    "topic": "Triangle"
+   },
+   {
+    "prompt": "1 m² =",
+    "options": [
+     "10,000 cm²",
+     "100 cm²",
+     "1,00,000 cm²",
+     "1000 cm²"
+    ],
+    "answer": 0,
+    "solution": "100 × 100.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "If the side of a square is doubled, its area becomes",
+    "options": [
+     "the same",
+     "4 times",
+     "8 times",
+     "2 times"
+    ],
+    "answer": 1,
+    "solution": "(2a)² = 4a².",
+    "topic": "Square"
+   },
+   {
+    "prompt": "If the radius of a circle is doubled, its circumference becomes",
+    "options": [
+     "2 times",
+     "4 times",
+     "½ times",
+     "the same"
+    ],
+    "answer": 0,
+    "solution": "C ∝ r.",
+    "topic": "Circle"
+   },
+   {
+    "prompt": "A rectangle has area 96 cm² and length 12 cm. Its perimeter is",
+    "options": [
+     "20 cm",
+     "40 cm",
+     "48 cm",
+     "32 cm"
+    ],
+    "answer": 1,
+    "solution": "b = 8; 2(20).",
+    "topic": "Rectangle"
+   },
+   {
+    "prompt": "The cost of fencing a 25 m × 15 m field at ₹12 per m is",
+    "options": [
+     "₹4500",
+     "₹960",
+     "₹900",
+     "₹480"
+    ],
+    "answer": 1,
+    "solution": "Perimeter 80 m.",
+    "topic": "Cost"
+   },
+   {
+    "prompt": "A square field has area 1225 m². Its side is",
+    "options": [
+     "35 m",
+     "30.6 m",
+     "45 m",
+     "25 m"
+    ],
+    "answer": 0,
+    "solution": "√1225.",
+    "topic": "Square"
+   },
+   {
+    "prompt": "Volume of a cuboid 8 cm × 5 cm × 3 cm =",
+    "options": [
+     "16 cm³",
+     "120 cm³",
+     "158 cm³",
+     "60 cm³"
+    ],
+    "answer": 1,
+    "solution": "8 × 5 × 3.",
+    "topic": "Cuboid"
+   },
+   {
+    "prompt": "Area of a ring with radii 14 cm and 7 cm (π = 22/7) =",
+    "options": [
+     "616 cm²",
+     "308 cm²",
+     "462 cm²",
+     "154 cm²"
+    ],
+    "answer": 2,
+    "solution": "22/7 × (196 − 49).",
+    "topic": "Ring"
+   },
+   {
+    "prompt": "How many 2 cm cubes fit in a 10 cm × 6 cm × 4 cm box?",
+    "options": [
+     "30",
+     "240",
+     "60",
+     "120"
+    ],
+    "answer": 0,
+    "solution": "5 × 3 × 2.",
+    "topic": "Cubes"
+   },
+   {
+    "prompt": "The height of a triangle with area 48 cm² and base 12 cm is",
+    "options": [
+     "4 cm",
+     "24 cm",
+     "6 cm",
+     "8 cm"
+    ],
+    "answer": 3,
+    "solution": "2 × 48 ÷ 12.",
+    "topic": "Triangle"
+   },
+   {
+    "prompt": "A circular park has a diameter of 42 m. Its area is",
+    "options": [
+     "1386 m²",
+     "5544 m²",
+     "132 m²",
+     "693 m²"
+    ],
+    "answer": 0,
+    "solution": "22/7 × 21².",
+    "topic": "Circle"
+   },
+   {
+    "prompt": "The minute hand of a clock is 7 cm long. The distance its tip moves in 1 hour is",
+    "options": [
+     "22 cm",
+     "14 cm",
+     "44 cm",
+     "154 cm"
+    ],
+    "answer": 2,
+    "solution": "2 × 22/7 × 7.",
+    "topic": "Circle"
+   }
+  ]
+ },
+ {
+  "chapter": 24,
+  "title": "Data Handling",
+  "questions": [
+   {
+    "prompt": "The range of 7, 5, 8, 7, 6, 9 is",
+    "options": [
+     "7",
+     "5",
+     "9",
+     "4"
+    ],
+    "answer": 3,
+    "solution": "9 − 5.",
+    "topic": "Range"
+   },
+   {
+    "prompt": "The mean of 12, 15, 18, 20, 25 is",
+    "options": [
+     "20",
+     "15",
+     "90",
+     "18"
+    ],
+    "answer": 3,
+    "solution": "90 ÷ 5.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The median of 8, 3, 11, 6, 9, 4, 7 is",
+    "options": [
+     "8",
+     "9",
+     "6",
+     "7"
+    ],
+    "answer": 3,
+    "solution": "Middle of 3, 4, 6, 7, 8, 9, 11.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "The median of 14, 9, 21, 17, 10, 12 is",
+    "options": [
+     "12",
+     "15.5",
+     "14",
+     "13"
+    ],
+    "answer": 3,
+    "solution": "(12 + 14) ÷ 2.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "The mode of 3, 5, 2, 5, 7, 3, 5, 8 is",
+    "options": [
+     "4.75",
+     "8",
+     "5",
+     "3"
+    ],
+    "answer": 2,
+    "solution": "5 occurs most.",
+    "topic": "Mode"
+   },
+   {
+    "prompt": "The mean of 6 numbers is 15. One is removed and the mean becomes 14. The removed number is",
+    "options": [
+     "15",
+     "14",
+     "1",
+     "20"
+    ],
+    "answer": 3,
+    "solution": "90 − 70.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The central angle for ₹12,000 out of ₹36,000 is",
+    "options": [
+     "90°",
+     "120°",
+     "60°",
+     "33°"
+    ],
+    "answer": 1,
+    "solution": "⅓ × 360.",
+    "topic": "Pie chart"
+   },
+   {
+    "prompt": "The sum of all central angles of a pie chart is",
+    "options": [
+     "100°",
+     "360°",
+     "90°",
+     "180°"
+    ],
+    "answer": 1,
+    "solution": "A full circle.",
+    "topic": "Pie chart"
+   },
+   {
+    "prompt": "The mean of the first five natural numbers is",
+    "options": [
+     "3",
+     "15",
+     "5",
+     "2.5"
+    ],
+    "answer": 0,
+    "solution": "15 ÷ 5.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The mode of 1, 2, 2, 3, 3, 3, 4 is",
+    "options": [
+     "2",
+     "4",
+     "2.57",
+     "3"
+    ],
+    "answer": 3,
+    "solution": "3 occurs three times.",
+    "topic": "Mode"
+   },
+   {
+    "prompt": "In a bar graph, the bars have",
+    "options": [
+     "no gaps ever",
+     "equal width",
+     "circles on top",
+     "different widths"
+    ],
+    "answer": 1,
+    "solution": "Only heights differ.",
+    "topic": "Bar graph"
+   },
+   {
+    "prompt": "Five tally marks are written as",
+    "options": [
+     "|||||",
+     "||||",
+     "X",
+     "a bundle of four with a cross line"
+    ],
+    "answer": 3,
+    "solution": "Four strokes and one across.",
+    "topic": "Tally"
+   },
+   {
+    "prompt": "The median of the first 10 natural numbers is",
+    "options": [
+     "5",
+     "10",
+     "6",
+     "5.5"
+    ],
+    "answer": 3,
+    "solution": "(5 + 6) ÷ 2.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "If each value is increased by 3, the mean",
+    "options": [
+     "decreases by 3",
+     "stays the same",
+     "is tripled",
+     "increases by 3"
+    ],
+    "answer": 3,
+    "solution": "Sum rises by 3n.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The mean of 4, x, 8, 10 is 7. Then x =",
+    "options": [
+     "6",
+     "4",
+     "5",
+     "7"
+    ],
+    "answer": 0,
+    "solution": "22 + x = 28.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "A pie chart sector of 90° shows what fraction?",
+    "options": [
+     "1/2",
+     "1/4",
+     "1/9",
+     "1/3"
+    ],
+    "answer": 1,
+    "solution": "90/360.",
+    "topic": "Pie chart"
+   },
+   {
+    "prompt": "The mode of 10, 20, 20, 30, 30 is",
+    "options": [
+     "30",
+     "20 and 30",
+     "20",
+     "25"
+    ],
+    "answer": 1,
+    "solution": "Both occur twice (bimodal).",
+    "topic": "Mode"
+   },
+   {
+    "prompt": "The marks 45, 60, 52, 38, 70 have range",
+    "options": [
+     "25",
+     "32",
+     "70",
+     "38"
+    ],
+    "answer": 1,
+    "solution": "70 − 38.",
+    "topic": "Range"
+   },
+   {
+    "prompt": "The mean of 2, 4, 6, 8, 10, 12 is",
+    "options": [
+     "8",
+     "6",
+     "42",
+     "7"
+    ],
+    "answer": 3,
+    "solution": "42 ÷ 6.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "Which measure is the middle value?",
+    "options": [
+     "Median",
+     "Mode",
+     "Range",
+     "Mean"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "Which measure is the most frequent value?",
+    "options": [
+     "Mean",
+     "Median",
+     "Range",
+     "Mode"
+    ],
+    "answer": 3,
+    "solution": "Definition.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "In a pie chart, 25% of the data has a central angle of",
+    "options": [
+     "45°",
+     "25°",
+     "90°",
+     "180°"
+    ],
+    "answer": 2,
+    "solution": "0.25 × 360.",
+    "topic": "Pie chart"
+   },
+   {
+    "prompt": "The heights (cm) 150, 152, 148, 151, 149 have mean",
+    "options": [
+     "152 cm",
+     "151 cm",
+     "149 cm",
+     "150 cm"
+    ],
+    "answer": 3,
+    "solution": "750 ÷ 5.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The median of 5, 1, 9, 3 is",
+    "options": [
+     "5",
+     "4",
+     "4.5",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "Order 1, 3, 5, 9: (3 + 5) ÷ 2.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "The mean of 10 numbers is 20. Their sum is",
+    "options": [
+     "200",
+     "30",
+     "10",
+     "2"
+    ],
+    "answer": 0,
+    "solution": "10 × 20.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "Out of 40 students, 10 like cricket. Its angle in a pie chart is",
+    "options": [
+     "10°",
+     "40°",
+     "90°",
+     "36°"
+    ],
+    "answer": 2,
+    "solution": "10/40 × 360.",
+    "topic": "Pie chart"
+   },
+   {
+    "prompt": "Runs: 30, 45, 0, 60, 45. The mode is",
+    "options": [
+     "36",
+     "60",
+     "30",
+     "45"
+    ],
+    "answer": 3,
+    "solution": "45 occurs twice.",
+    "topic": "Mode"
+   },
+   {
+    "prompt": "Runs: 30, 45, 0, 60, 45. The mean is",
+    "options": [
+     "45",
+     "30",
+     "180",
+     "36"
+    ],
+    "answer": 3,
+    "solution": "180 ÷ 5.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "Runs: 30, 45, 0, 60, 45. The median is",
+    "options": [
+     "30",
+     "45",
+     "0",
+     "36"
+    ],
+    "answer": 1,
+    "solution": "Order 0, 30, 45, 45, 60.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "A pie chart has angles 100°, 80°, x and 60°. x =",
+    "options": [
+     "80°",
+     "100°",
+     "120°",
+     "180°"
+    ],
+    "answer": 2,
+    "solution": "360 − 240.",
+    "topic": "Pie chart"
+   }
+  ]
+ },
+ {
+  "chapter": 25,
+  "title": "Probability",
+  "questions": [
+   {
+    "prompt": "The sample space for one coin is",
+    "options": [
+     "{H}",
+     "{H, H, T}",
+     "{H, T}",
+     "{T}"
+    ],
+    "answer": 2,
+    "solution": "Two outcomes.",
+    "topic": "Sample space"
+   },
+   {
+    "prompt": "Two coins are tossed. The number of outcomes is",
+    "options": [
+     "2",
+     "3",
+     "8",
+     "4"
+    ],
+    "answer": 3,
+    "solution": "HH, HT, TH, TT.",
+    "topic": "Sample space"
+   },
+   {
+    "prompt": "A die is thrown. P(even) =",
+    "options": [
+     "1/3",
+     "1/2",
+     "2/3",
+     "1/6"
+    ],
+    "answer": 1,
+    "solution": "3/6.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "A die is thrown. P(prime) =",
+    "options": [
+     "1/6",
+     "2/3",
+     "1/2",
+     "1/3"
+    ],
+    "answer": 2,
+    "solution": "2, 3, 5.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "A bag has 5 red, 3 blue, 2 green. P(blue) =",
+    "options": [
+     "3/10",
+     "1/3",
+     "7/10",
+     "3/7"
+    ],
+    "answer": 0,
+    "solution": "3 of 10.",
+    "topic": "Bag"
+   },
+   {
+    "prompt": "P(not blue) for the same bag =",
+    "options": [
+     "5/10",
+     "7/10",
+     "3/10",
+     "1/2"
+    ],
+    "answer": 1,
+    "solution": "1 − 3/10.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "A card from 1 to 20. P(multiple of 3) =",
+    "options": [
+     "1/4",
+     "1/3",
+     "6/10",
+     "3/10"
+    ],
+    "answer": 3,
+    "solution": "6 of 20.",
+    "topic": "Cards"
+   },
+   {
+    "prompt": "Two coins. P(at least one head) =",
+    "options": [
+     "1/2",
+     "1",
+     "1/4",
+     "3/4"
+    ],
+    "answer": 3,
+    "solution": "3 of 4.",
+    "topic": "Two coins"
+   },
+   {
+    "prompt": "The probability of an impossible event is",
+    "options": [
+     "−1",
+     "0",
+     "1/2",
+     "1"
+    ],
+    "answer": 1,
+    "solution": "No favourable outcome.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "The probability of a sure event is",
+    "options": [
+     "1",
+     "0",
+     "100",
+     "1/2"
+    ],
+    "answer": 0,
+    "solution": "All outcomes favourable.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "Which cannot be a probability?",
+    "options": [
+     "1",
+     "3/2",
+     "0.7",
+     "0"
+    ],
+    "answer": 1,
+    "solution": "P cannot exceed 1.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A die is thrown. P(number greater than 6) =",
+    "options": [
+     "1",
+     "6/6",
+     "0",
+     "1/6"
+    ],
+    "answer": 2,
+    "solution": "Impossible.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "A die is thrown. P(number less than 7) =",
+    "options": [
+     "1",
+     "0",
+     "6/7",
+     "1/6"
+    ],
+    "answer": 0,
+    "solution": "Sure.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "If P(E) = 0.35, then P(not E) =",
+    "options": [
+     "1.35",
+     "0.65",
+     "0",
+     "0.35"
+    ],
+    "answer": 1,
+    "solution": "1 − 0.35.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "A letter is chosen from the word MATHEMATICS. P(M) =",
+    "options": [
+     "2/11",
+     "1/8",
+     "2/8",
+     "1/11"
+    ],
+    "answer": 0,
+    "solution": "M appears twice in 11 letters.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "A spinner has 8 equal parts numbered 1 to 8. P(number ≤ 3) =",
+    "options": [
+     "5/8",
+     "1/8",
+     "3/5",
+     "3/8"
+    ],
+    "answer": 3,
+    "solution": "1, 2, 3.",
+    "topic": "Spinner"
+   },
+   {
+    "prompt": "One coin is tossed. P(head) =",
+    "options": [
+     "0",
+     "1/4",
+     "1",
+     "1/2"
+    ],
+    "answer": 3,
+    "solution": "1 of 2.",
+    "topic": "Coin"
+   },
+   {
+    "prompt": "A die is thrown. P(multiple of 3) =",
+    "options": [
+     "1/6",
+     "1/2",
+     "1/3",
+     "2/3"
+    ],
+    "answer": 2,
+    "solution": "3, 6.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "Out of 30 students, 12 are girls. A student is chosen. P(boy) =",
+    "options": [
+     "2/5",
+     "12/30",
+     "3/5",
+     "1/2"
+    ],
+    "answer": 2,
+    "solution": "18/30.",
+    "topic": "Selection"
+   },
+   {
+    "prompt": "A box has 4 good and 6 faulty bulbs. P(good) =",
+    "options": [
+     "1/4",
+     "4/6",
+     "2/5",
+     "3/5"
+    ],
+    "answer": 2,
+    "solution": "4/10.",
+    "topic": "Box"
+   },
+   {
+    "prompt": "Two coins are tossed. P(no head) =",
+    "options": [
+     "1/4",
+     "3/4",
+     "1/2",
+     "0"
+    ],
+    "answer": 0,
+    "solution": "TT only.",
+    "topic": "Two coins"
+   },
+   {
+    "prompt": "Equally likely outcomes means",
+    "options": [
+     "each outcome has the same chance",
+     "only one outcome happens",
+     "the outcomes are impossible",
+     "the event is sure"
+    ],
+    "answer": 0,
+    "solution": "Definition.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A die is thrown. P(odd prime) =",
+    "options": [
+     "1/2",
+     "1/6",
+     "2/3",
+     "1/3"
+    ],
+    "answer": 3,
+    "solution": "3, 5.",
+    "topic": "Die"
+   },
+   {
+    "prompt": "A number is chosen from 1 to 10. P(perfect square) =",
+    "options": [
+     "1/5",
+     "2/5",
+     "1/10",
+     "3/10"
+    ],
+    "answer": 3,
+    "solution": "1, 4, 9.",
+    "topic": "Numbers"
+   },
+   {
+    "prompt": "The sum of the probabilities of all outcomes of an experiment is",
+    "options": [
+     "1",
+     "depends",
+     "0",
+     "100"
+    ],
+    "answer": 0,
+    "solution": "Total is sure.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A bag has only red balls. P(red) =",
+    "options": [
+     "0",
+     "1",
+     "cannot say",
+     "1/2"
+    ],
+    "answer": 1,
+    "solution": "Sure event.",
+    "topic": "Concept"
+   },
+   {
+    "prompt": "A die is thrown 60 times and 6 comes up 12 times. The experimental probability of 6 is",
+    "options": [
+     "1/5",
+     "1/6",
+     "6/60",
+     "1/12"
+    ],
+    "answer": 0,
+    "solution": "12/60.",
+    "topic": "Experimental"
+   },
+   {
+    "prompt": "A card from 1 to 50. P(number ending in 5) =",
+    "options": [
+     "1/5",
+     "1/50",
+     "1/25",
+     "1/10"
+    ],
+    "answer": 3,
+    "solution": "5, 15, 25, 35, 45: 5/50.",
+    "topic": "Cards"
+   },
+   {
+    "prompt": "A die is thrown. P(not 4) =",
+    "options": [
+     "1",
+     "1/6",
+     "5/6",
+     "4/6"
+    ],
+    "answer": 2,
+    "solution": "1 − 1/6.",
+    "topic": "Complement"
+   },
+   {
+    "prompt": "The probability of an event E satisfies",
+    "options": [
+     "P(E) = 2",
+     "0 ≤ P(E) ≤ 1",
+     "P(E) < 0",
+     "P(E) > 1"
+    ],
+    "answer": 1,
+    "solution": "Range of probability.",
+    "topic": "Concept"
+   }
+  ]
+ }
+]

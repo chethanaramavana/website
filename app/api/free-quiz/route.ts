@@ -22,7 +22,7 @@ export async function POST(request: Request) {
   }
   const score = questions.filter((q, i) => answers[i] === q.answer).length;
   try {
-    if (!await hasMcqAccess(user, quiz.chapter, quiz.grade)) return jsonError('Pay ₹20 to unlock this chapter’s MCQ quiz.', 402);
+    if (!await hasMcqAccess(user, quiz.chapter, quiz.grade, quiz.board)) return jsonError('Unlock this chapter’s MCQ quiz first.', 402);
     // Integrals is instant self-practice; older clients also must not create teacher records.
     if (quiz.grade === 12 && quiz.chapter === 7) return Response.json({ id: body.id, score, total: questions.length, answers }, { headers: { 'cache-control': 'no-store' } });
     const db = getDatabase();

@@ -1,10 +1,11 @@
 import Tex from './tex';
 import {SessionProgress, SessionTick} from './integrals-ticks';
 import './integrals-online.css';
+import NotesLab from './notes-lab';
 
 type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string};
-type Lesson = {title: string; level: string; formulas: string[]; examples: Worked[]};
-export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; sheet: {title: string; items: string[]}[]; lessons: Lesson[]};
+type Lesson = {title: string; level: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]};
+export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]};
 const math = (f: string) => `$${f}$`;
 
 function Example({e, label}: {e: Worked; label: string}) {
@@ -26,7 +27,7 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
     <header>
       <p className="ir-kicker">{data.kicker}</p>
       <h1>{data.title}</h1>
-      <p className="ir-sub">Formula sheet and {lessons.reduce((n, l) => n + l.examples.length, 0)} solved examples.</p>
+      <p className="ir-sub">{data.subtitle ? <>{data.subtitle} · </> : null}Formula sheet and {lessons.reduce((n, l) => n + l.examples.length, 0)} solved examples.</p>
       <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board}{board < lessons.length && <> · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{lessons.length} (JEE)</>}</p>
     </header>
     <section className="ir-sheet" id="formulas">
@@ -37,10 +38,13 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
     {lessons.map((l, i) => <section className="ir-lesson" id={`session-${i + 1}`} key={l.title}>
       <div className="ir-number">SESSION {String(i + 1).padStart(2, '0')} <span className={`ir-tag ${l.level}`}>{l.level === 'board' ? 'Board exam' : 'Challenge'}</span></div>
       <h2>{l.title}</h2>
+      {l.ideas && l.ideas.length > 0 && <div className="ir-ideas"><span className="ir-label">Key ideas</span><ul>{l.ideas.map((t, k) => <li key={k}><Tex>{t}</Tex></li>)}</ul></div>}
       <div className="ir-formulas"><span className="ir-label">Formulas</span>{l.formulas.map((f, k) => <div key={k} className="ir-sheet-line"><Tex>{math(f)}</Tex></div>)}</div>
+      {l.labs?.map((lab) => <div className="ir-lab" key={`${lab.slug}-${lab.index}`}><span className="ir-label">Try it · simulation</span><NotesLab slug={lab.slug} index={lab.index} /></div>)}
       <div className="ir-worked">{l.examples.map((e, j) => <Example key={j} e={e} label={`EXAMPLE ${j + 1}`} />)}</div>
+      {l.experiment && <div className="ir-exp"><span className="ir-label">Activity</span><h3><Tex>{l.experiment.title}</Tex></h3><ol>{l.experiment.steps.map((t, k) => <li key={k}><Tex>{t}</Tex></li>)}</ol><div className="ir-exp-result"><strong>What you see: </strong><Tex>{l.experiment.result}</Tex></div></div>}
       <SessionTick index={i} total={lessons.length} storeKey={data.storeKey} />
     </section>)}
-    <footer><h2>Put the ideas to work</h2><p><a href={data.back.href}>Practise the chapter questions →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
+    <footer><h2>Put the ideas to work</h2>{data.links ? <p className="ir-links">{data.links.map((x) => <a key={x.href} href={x.href}>{x.label}</a>)}</p> : <p><a href={data.back.href}>Practise the chapter questions →</a></p>}<small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
   </main>;
 }
