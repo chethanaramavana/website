@@ -543,7 +543,7 @@
      "−2/3",
      "−3/2",
      "2/3",
-     "−24/36"
+     "−8/27"
     ],
     "answer": 0,
     "solution": "−24/36 = −2/3.",
@@ -880,7 +880,7 @@
     "topic": "Reciprocal"
    },
    {
-    "prompt": "1/2 + 3/4 ÷ 3/8 of 4 =",
+    "prompt": "1/2 + (3/4) ÷ ((3/8) × 4) =",
     "options": [
      "7/8",
      "4 1/2",
@@ -955,7 +955,7 @@
     "prompt": "(1/2) × (2/3) × (3/4) × (4/5) =",
     "options": [
      "1/5",
-     "24/120",
+     "24/60",
      "4/5",
      "1/120"
     ],
@@ -1723,7 +1723,7 @@
     "prompt": "The expanded form 4 × 10⁴ + 7 × 10³ + 3 × 10² + 5 equals",
     "options": [
      "47,305",
-     "4,73,05",
+     "4,73,050",
      "4,735",
      "47,350"
     ],
@@ -2028,7 +2028,7 @@
    {
     "prompt": "A = {x : x is a letter of ‘LOYAL’}. Then A =",
     "options": [
-     "{L, O, Y, A, L}",
+     "{L, O, Y, A, S}",
      "{L, Y}",
      "{O, Y, A}",
      "{L, O, Y, A}"
@@ -2380,7 +2380,7 @@
     "topic": "Divide"
    },
    {
-    "prompt": "If 3 : x = x : 12, then x =",
+    "prompt": "For x > 0, if 3 : x = x : 12, then x =",
     "options": [
      "4",
      "6",
@@ -2500,7 +2500,7 @@
     "topic": "Ratio"
    },
    {
-    "prompt": "Which can never be a ratio of two quantities?",
+    "prompt": "Which pair cannot be compared as a ratio of quantities of the same kind?",
     "options": [
      "2 kg : 5 kg",
      "5 kg : 3 m",
@@ -3490,7 +3490,7 @@
     "topic": "Successive discount"
    },
    {
-    "prompt": "A book marked ₹250 is sold for ₹225. The discount is",
+    "prompt": "Which option gives both the discount amount and the discount percentage for a book marked ₹250 and sold for ₹225?",
     "options": [
      "₹25",
      "both ₹25 and 10%",
@@ -5440,7 +5440,7 @@
     "topic": "Solve"
    },
    {
-    "prompt": "Solid dots on a number line show",
+    "prompt": "For solutions restricted to integers, separate filled dots on a number line mark",
     "options": [
      "nothing",
      "real numbers",
@@ -5860,7 +5860,7 @@
   "title": "Triangles",
   "questions": [
    {
-    "prompt": "A triangle with two equal sides is",
+    "prompt": "A triangle with exactly two equal sides is",
     "options": [
      "isosceles",
      "scalene",
@@ -6760,19 +6760,19 @@
     "topic": "Rotation"
    },
    {
-    "prompt": "A figure with order of rotational symmetry 1",
+    "prompt": "A figure that matches itself only after a full turn has rotational symmetry of order",
     "options": [
-     "is a circle",
-     "is a square",
-     "has no rotational symmetry",
-     "has rotational symmetry"
+     "2",
+     "3",
+     "1",
+     "4"
     ],
     "answer": 2,
-    "solution": "Only the full turn.",
+    "solution": "Only the full 360° turn matches, so the order is 1.",
     "topic": "Rotation"
    },
    {
-    "prompt": "A rectangle has rotational symmetry of order",
+    "prompt": "A non-square rectangle has rotational symmetry of order",
     "options": [
      "1",
      "0",
@@ -6832,7 +6832,7 @@
     "topic": "Line symmetry"
    },
    {
-    "prompt": "The letter X has",
+    "prompt": "The two diagonals of a non-square rectangle, taken together, have how many lines of symmetry?",
     "options": [
      "4 lines of symmetry",
      "2 lines of symmetry",
@@ -6840,7 +6840,7 @@
      "no line of symmetry"
     ],
     "answer": 1,
-    "solution": "Vertical and horizontal.",
+    "solution": "The horizontal and vertical lines through the centre are the two lines of symmetry.",
     "topic": "Letters"
    },
    {
@@ -7126,7 +7126,7 @@
     "topic": "Nets"
    },
    {
-    "prompt": "A dice is a model of a",
+    "prompt": "What is the most specific shape of a standard six-faced die?",
     "options": [
      "cube",
      "prism with 3 faces",
@@ -7150,7 +7150,7 @@
     "topic": "Pyramid"
    },
    {
-    "prompt": "The side faces of a prism are",
+    "prompt": "The side faces of a right prism are",
     "options": [
      "circles",
      "rectangles",
@@ -7234,15 +7234,15 @@
     "topic": "Prism"
    },
    {
-    "prompt": "Which net cannot fold into a cube?",
+    "prompt": "Which statement about a cube net is false?",
     "options": [
-     "6 squares in one straight line",
-     "A T of 6 squares",
-     "A cross of 6 squares",
-     "A staircase of 6 squares (2-2-2)"
+     "All six squares may lie in one straight row",
+     "There must be six equal squares",
+     "The faces must fold without overlap",
+     "Each square becomes a different face"
     ],
     "answer": 0,
-    "solution": "Six in a row overlap.",
+    "solution": "Six squares in a straight row cannot fold to form all six faces of a cube without overlap.",
     "topic": "Nets"
    },
    {
@@ -7779,7 +7779,7 @@
      "60° and 120°",
      "45° and 90°",
      "90° and 180°",
-     "120° and 150°"
+     "120° and 180°"
     ],
     "answer": 2,
     "solution": "(90 + 180)/2.",
@@ -8791,7 +8791,7 @@
     "prompt": "The sample space for one coin is",
     "options": [
      "{H}",
-     "{H, H, T}",
+     "{HH, TT}",
      "{H, T}",
      "{T}"
     ],

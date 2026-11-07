@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),Module=require('node:module'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'), req=Module.createRequire(path.join(root,'package.json')),ts=req('typescript'),resolve=Module._resolveFilename;
+Module._resolveFilename=function(name,parent,...rest){let target=name.startsWith('@/')?path.join(root,name.slice(2)):name;if(name.startsWith('@/')||name.startsWith('.')){const base=name.startsWith('@/')?target:path.resolve(path.dirname(parent.filename),name);for(const ext of ['.tsx','.ts'])if(fs.existsSync(base+ext)){target=base+ext;break;}}return resolve.call(this,target,parent,...rest);};
+for(const ext of ['.ts','.tsx'])require.extensions[ext]=(mod,file)=>mod._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
+require.extensions['.css']=()=>{};
+const {quizPrice,quizId,quizInfo}=req('./lib/free-quizzes/catalog.ts'),banks=req('./lib/free-quizzes/icse7.json'),notes=req('./lib/icse7-notes.json'),{papers}=req('./lib/icse7-part.json');
+const free=new Set([1,9,14,17,23]);
+assert.equal(banks.length,25);assert.equal(papers.length,25);assert.equal(Object.keys(notes).length,25);
+for(const b of banks){const n=b.chapter,p=papers.find(p=>p.chapterNumber===n);assert(p);assert.equal(b.questions.length,30);assert.equal(quizPrice(n,7,'ICSE'),free.has(n)?0:3000);assert.deepEqual(quizInfo(quizId(n,7,'ICSE')),{board:'ICSE',grade:7,chapter:n});for(const q of b.questions){assert.equal(q.options.length,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(q.solution);assert.equal(new Set(q.options).size,4);}const note=notes[p.id.replace(/-01$/,'')];assert(note);assert.equal(note.links[0].href,`/icse/grade-7/ch-${n}/mcq`);assert.equal(note.links[1].href,`/icse/grade-7/ch-${n}?paper=1`);assert(note.links[1].label.includes('separate purchase'));assert(note.links[0].label.includes(free.has(n)?'Free':'₹30'));}
+// Equivalent fractions and repeated-set notation must not create second correct answers.
+function fraction(s){s=s.replaceAll('−','-');return /^-?\d+(\/\d+)?$/.test(s)?s.split('/').map(Number).reduce((a,b)=>a/b):null;}
+for(const [c,n] of [[2,15],[3,19]]){const q=banks[c-1].questions[n-1],answer=fraction(q.options[q.answer]);assert.equal(q.options.filter(o=>fraction(o)===answer).length,1);}
+assert.equal(papers[1].answerKey[5],3);assert.equal(papers[1].assertions[1].reason,'Every non-zero rational number has a reciprocal.');assert(!papers[5].solutions['22'].includes('C = D'));assert(papers[6].written['24'][2].includes('at most 28'));
+const page=fs.readFileSync(path.join(root,'app/page.tsx'),'utf8'),flow=page.slice(page.indexOf("{board === 'ICSE' && grade === 7 && paper ?"));assert(flow.indexOf('Step 1')<flow.indexOf('Step 2'));assert(flow.indexOf('Step 2')<flow.indexOf('Step 3'));assert(flow.includes('Separate ₹30 purchase'));
+const React=req('react'),{renderToStaticMarkup}=req('react-dom/server'),Notes=req('./app/notes/formula-notes.tsx').default;
+for(const note of Object.values(notes)){const html=renderToStaticMarkup(React.createElement(Notes,{data:note}));assert(!html.includes('katex-error'));assert(html.includes(note.links[0].href));assert(html.includes(note.links[1].href.replaceAll('&','&amp;')));}
+console.log('PASS: 750 MCQ structures, 25 paper/notes mappings, free/paid price matrix, duplicate-answer regressions, corrected paper fixtures, learning order and 25 rendered notes pages.');

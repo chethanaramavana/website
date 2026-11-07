@@ -162,7 +162,7 @@
     {
      "number": 6,
      "assertion": "0 has a reciprocal.",
-     "reason": "Every rational number has a reciprocal."
+     "reason": "Every non-zero rational number has a reciprocal."
     }
    ],
    "written": {
@@ -607,7 +607,7 @@
     "19": "(a) Infinite, the multiples never end. (b) Finite, 49 elements. (c) Infinite, a circle has infinitely many points.",
     "20": "∅, {p}, {q}, {r}, {p, q}, {p, r}, {q, r}, {p, q, r}. All except {p, q, r} are proper subsets (7).",
     "21": "A = {3, 6, 9, 12}, A′ = {1, 2, 4, 5, 7, 8, 10, 11}, n(A′) = 8. B = {2, 4, 6, 8, 10, 12}, B′ = {1, 3, 5, 7, 9, 11}, n(B′) = 6.",
-    "22": "A = B (same elements). C = D (vowels a, e, i, o, u: D has 5 elements, so C ≠ D and n(C) = 4, n(D) = 5, not equivalent). A, B and E are equivalent (3 elements each).",
+    "22": "A = B (the same elements). A, B and E each have 3 elements. Thus A and E, and B and E, are equivalent but not equal. C = {a, e, i, o} has 4 elements; D = {a, e, i, o, u} has 5. C and D are neither equal nor equivalent.",
     "23": "(a) P = {2, 3, 5, 7, 11, 13}, Q = {1, 3, 5, 7, 9, 11, 13, 15}. (b) {3, 5, 7, 11, 13}. (c) Overlap: 3, 5, 7, 11, 13; only P: 2; only Q: 1, 9, 15; outside: 4, 6, 8, 10, 12, 14.",
     "24": "(a) n(ξ) = 40. (b) 25 + 22 − 40 = 7. (c) Only football 25 − 7 = 18, only cricket 22 − 7 = 15."
    }
@@ -691,7 +691,7 @@
     "24": [
      "(a) Find the number of girls. [1]",
      "(b) Find the number of teachers. [1]",
-     "(c) 40 new girls join. Find the new ratio of boys to girls. How many teachers are needed now to keep the ratio 28 : 1? [2]"
+     "(c) 40 new girls join. Find the new ratio of boys to girls. What is the minimum total number of teachers needed so there are at most 28 students per teacher? [2]"
     ]
    },
    "caseStudy": "A school has 840 students. The ratio of boys to girls is 4 : 3. The ratio of students to teachers is 28 : 1.",
@@ -711,7 +711,7 @@
     "21": "(5k − 6) : (7k − 6) = 3 : 5 ⇒ 25k − 30 = 21k − 18 ⇒ k = 3. Numbers 15 and 21.",
     "22": "(5x − 2000) : (4x − 2000) = 3 : 2 ⇒ 10x − 4000 = 12x − 6000 ⇒ x = 1000. Incomes ₹5000 and ₹4000.",
     "23": "(a) Parts 12, one part 8: red 24, blue 32, green 40. (b) Need green 72, add 32. (c) 24 : 32 : 72 = 3 : 4 : 9.",
-    "24": "(a) 3/7 × 840 = 360 girls. (b) 840 ÷ 28 = 30 teachers. (c) Boys 480, girls 400: 480 : 400 = 6 : 5. Students 880 ÷ 28 = 31.4…, so 32 teachers."
+    "24": "(a) 3/7 × 840 = 360 girls. (b) 840 ÷ 28 = 30 teachers. (c) Boys 480, girls 400: 480 : 400 = 6 : 5. There are 880 students. Since 880 ÷ 28 = 31.4…, at least 32 teachers are needed (31 teachers can cover only 868 students at this limit)."
    }
   },
   {
@@ -1597,7 +1597,7 @@
     "17": "Find the angle which is 2/3 of its complement.",
     "18": "Two supplementary angles differ by 44°. Find them.",
     "19": "Three lines meet at a point and form six angles. Five of them are 50°, 60°, 70°, 50° and 60°. Find the sixth angle and name the pairs of vertically opposite angles.",
-    "20": "AB ∥ CD. A transversal PQ cuts AB at M and CD at N, with A and D on opposite sides of PQ. ∠AMN = 72°. Find ∠MND, ∠DNQ and ∠BMN.",
+    "20": "AB ∥ CD. A transversal PQ cuts AB at M and CD at N, with P, M, N, Q in that order and A and D on opposite sides of PQ. ∠AMN = 72°. Find ∠MND, ∠DNQ and ∠BMN.",
     "21": "Two parallel lines are cut by a transversal. A pair of co-interior angles are (5x − 20)° and (3x + 40)°. Find x and both angles.",
     "22": "∠AOB and ∠BOC form a linear pair. ∠AOB = (2y + 10)° and ∠BOC = (3y − 5)°. Find y. Is OB the bisector of the straight angle AOC?",
     "23": [
@@ -1794,7 +1794,7 @@
     {
      "number": 6,
      "assertion": "2, 3 and 4 form a right triangle.",
-     "reason": "The longest side is the hypotenuse."
+     "reason": "In a right-angled triangle, the hypotenuse is the longest side."
     }
    ],
    "written": {
@@ -1805,7 +1805,7 @@
     "21": "The diagonals of a rhombus are 24 cm and 10 cm. Find the side and the perimeter of the rhombus.",
     "22": "Two poles of heights 8 m and 14 m stand on level ground 8 m apart. Find the distance between their tops.",
     "23": [
-     "In △ABC, AD ⟂ BC. AB = 13 cm, AD = 12 cm and DC = 16 cm.",
+     "In △ABC, D lies on the segment BC and AD ⟂ BC. AB = 13 cm, AD = 12 cm and DC = 16 cm.",
      "(a) Find BD.",
      "(b) Find AC.",
      "(c) Find BC and the area of △ABC."
@@ -1848,7 +1848,7 @@
    "mcqs": [
     {
      "number": 1,
-     "question": "A regular hexagon has an angle of rotation of",
+     "question": "A regular hexagon has a smallest positive angle of rotation of",
      "options": [
       "60°",
       "120°",
@@ -1878,7 +1878,7 @@
     },
     {
      "number": 4,
-     "question": "The order of rotational symmetry of a rectangle is",
+     "question": "The order of rotational symmetry of a non-square rectangle is",
      "options": [
       "2",
       "0",
@@ -1895,19 +1895,19 @@
     },
     {
      "number": 6,
-     "assertion": "A parallelogram has 2 lines of symmetry.",
-     "reason": "A parallelogram has rotational symmetry of order 2."
+     "assertion": "A parallelogram that is neither a rectangle nor a rhombus has 2 lines of symmetry.",
+     "reason": "Such a parallelogram has rotational symmetry of order 2."
     }
    ],
    "written": {
-    "17": "Draw a rectangle and a rhombus. Mark all their lines of symmetry. How many does each have?",
-    "18": "Write the number of lines of symmetry of: (a) a regular pentagon (b) an isosceles triangle (c) a semicircle (d) the letter M.",
+    "17": "Draw a non-square rectangle and a non-square rhombus. Mark all their lines of symmetry. How many does each have?",
+    "18": "Write the number of lines of symmetry of: (a) a regular pentagon (b) a non-equilateral isosceles triangle (c) a semicircle (d) an ideal block capital M with matching left and right halves.",
     "19": "Find the order of rotational symmetry and the angle of rotation of (a) an equilateral triangle (b) a regular octagon.",
-    "20": "From the letters A, H, I, N, S, X, Z, list those with (a) line symmetry only (b) rotational symmetry only (c) both.",
+    "20": "Classify these figures as having (a) line symmetry only (b) rotational symmetry of order greater than 1 only (c) both: a non-equilateral isosceles triangle, a parallelogram that is neither a rectangle nor a rhombus, a square, and a non-square rectangle.",
     "21": "Copy a square grid. Shade squares so that the figure has exactly two lines of symmetry and rotational symmetry of order 2. Explain your figure.",
-    "22": "A regular polygon has rotational symmetry with angle 45°. Find the number of its sides and the number of its lines of symmetry.",
+    "22": "A regular polygon has a smallest positive angle of rotation of 45°. Find the number of its sides and the number of its lines of symmetry.",
     "23": [
-     "Look at the shapes: square, rectangle, rhombus, parallelogram, kite.",
+     "Consider a square, a non-square rectangle, a non-square rhombus, a parallelogram that is neither a rectangle nor a rhombus, and a kite that is not a rhombus.",
      "(a) Which shapes have exactly 2 lines of symmetry?",
      "(b) Which shapes have rotational symmetry of order 2?",
      "(c) Which shape has rotational symmetry of order 4, and what is its angle of rotation?"
@@ -1931,7 +1931,7 @@
     "17": "Rectangle: 2 lines (through the middles of opposite sides). Rhombus: 2 lines (its diagonals).",
     "18": "(a) 5 (b) 1 (c) 1 (d) 1.",
     "19": "(a) Order 3, angle 120°. (b) Order 8, angle 45°.",
-    "20": "(a) A (b) N, S, Z (c) H, I, X.",
+    "20": "(a) Non-equilateral isosceles triangle. (b) Parallelogram that is neither a rectangle nor a rhombus. (c) Square and non-square rectangle.",
     "21": "Example: shade a 2 × 4 block of squares in the centre (a rectangle). It folds about its two middle lines and looks the same after 180°.",
     "22": "360 ÷ 45 = 8 sides. It has 8 lines of symmetry.",
     "23": "(a) Rectangle, rhombus. (b) Rectangle, rhombus, parallelogram. (Square has order 4, kite has order 1.) (c) Square, 90°.",
@@ -2413,7 +2413,7 @@
     "17": "The ages of 15 children are: 8, 9, 10, 9, 8, 11, 10, 9, 9, 12, 10, 8, 9, 11, 10. Make a frequency table with tally marks. Find the mode and the range.",
     "18": "Find the mean of the first eight prime numbers.",
     "19": "Find the median of 32, 45, 28, 51, 39, 44, 36, 47.",
-    "20": "The mean of 8 numbers is 25. If one number, 46, is wrongly copied as 64, find the correct mean.",
+    "20": "The mean calculated from eight recorded values is 25. One value was recorded as 64 instead of 46. Find the corrected mean.",
     "21": "The mean weight of 5 boys is 42 kg. When a sixth boy joins, the mean becomes 43 kg. Find the weight of the sixth boy.",
     "22": "Draw a bar graph for the number of books read in a month: Asha 8, Binu 5, Chetan 10, Deepa 7, Esha 4. Who read the most, and what is the mean number of books?",
     "23": [
