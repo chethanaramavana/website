@@ -6,6 +6,10 @@ import WeeklyProblemBoard from './weekly-problem';
 import { MathsBasicsFeature, ParentValueSection } from './homepage-learning';
 import HomepageConcepts from './homepage-concepts';
 import Brand, { SiteFooter } from './brand';
+import './maths-around-us/nature.css';
+import { natureStories } from '@/lib/nature-stories';
+
+const latestNatureStory = natureStories[natureStories.length - 1];
 
 // Paste the public Telegram channel link here (for example 'https://t.me/ramavanamath'). The button stays hidden while this is empty.
 const telegramChannelUrl = '';
@@ -44,6 +48,8 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         </section>
 
         <WeeklyProblemBoard />
+
+        <a className="nature-home-card" href={latestNatureStory.href}><img src={latestNatureStory.poster} width="1080" height="1500" alt={latestNatureStory.title} loading="lazy"/><div><p className="rmc-eyebrow">Maths Around Us · No. {latestNatureStory.number}</p><h2>{latestNatureStory.title}</h2><p>{latestNatureStory.description}</p><strong>Discover the story →</strong></div></a>
 
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
           <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>

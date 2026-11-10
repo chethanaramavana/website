@@ -1,5 +1,11 @@
 # Ramavana website design guide
 
+## Maths Around Us — 10 November 2026
+
+The owner started a numbered picture-story series for WhatsApp and the public website. No. 1 is the honeycomb story, dated 10 November 2026; future stories are appended as No. 2, No. 3, and so on, with permanent links and no renumbering. Keep the original crest and wordmark intact on posters. Use generated artwork for nature scenes and exact code-authored diagrams for the mathematics. The public `/maths-around-us` archive and `/maths-around-us/1` story are available without sign-in and linked from the homepage. Do not imply that tomorrow's story has already been created or scheduled.
+
+Explain that equilateral triangles, squares and regular hexagons all tile a flat surface; regular pentagons leave a 36° corner gap, although some irregular pentagons can tile. Compare regular cells at equal area and the same drawing scale. State that the boundary comparison assumes equal wall height and thickness; the planar honeycomb theorem is not a full biological explanation of three-dimensional bee construction. Preserve the existing weekly problems and learning flows.
+
 Updated 20 October 2026. This is the main design brief for the existing Ramavana Mathematical Centre website. It consolidates the owner's identity brief and subsequent decisions. Later explicit owner instructions take precedence.
 
 The accompanying visual reference is `Ramavana Identity.pdf`, dated 20 October 2026, kept locally at `docs/reference/Ramavana Identity.pdf` and excluded from GitHub at the owner's request. Its sketches illustrate layout and identity, not production student data. This guide incorporates its direction; the owner's later approval of imagegen and header-background removal overrides the PDF's earlier restrictions in those two areas.
