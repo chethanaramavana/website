@@ -1,234 +1,234 @@
 {
-  "g8-squares-cubes-01": {
-    "1": "12 times12 is144.",
-    "2": "14 times14 is196, so14 is its positive square root.",
-    "3": "(−5) cubed is−125.",
-    "4": "7 squared is49; the last digit is9.",
-    "5": "Both statements are true; the reason explains the assertion. The product of two odd integers is odd.",
-    "6": "The assertion is false, while the reason is true. $9\\times9=81$."
-  },
-  "g8-power-play-01": {
-    "1": "Joining3 and4 factors of2 produces7 factors.",
-    "2": "For a non-zero base, dividing equal powers gives the zero power1.",
-    "3": "A negative exponent makes a reciprocal:2 cubed is8.",
-    "4": "0.0042 becomes4.2 after three decimal moves to the right; the exponent is−3.",
-    "5": "Both statements are true; the reason explains the assertion. $3^{-2}=\\frac{1}{9}>0$.",
-    "6": "The assertion is false, while the reason is true. Exponent addition applies to multiplication of powers, not addition."
-  },
-  "g8-story-numbers-01": {
-    "1": "The5 is in the ten-thousands place.",
-    "2": "There are no tens in406, so zero holds that position.",
-    "3": "Binary101 means4+0+1.",
-    "4": "Base two allows only the digits0 and1.",
-    "5": "Both statements are true; the reason explains the assertion. They add zero multiples of new higher places.",
-    "6": "The assertion is false, while the reason is true. The position of a digit determines its place value."
-  },
-  "g8-quadrilaterals-01": {
-    "1": "A diagonal gives two triangles, each with angle sum180°.",
-    "2": "In a parallelogram, one right angle forces all four to be right.",
-    "3": "Equal sides define a rhombus; equal diagonals are not required.",
-    "4": "Adjacent parallelogram angles add to180°, so subtract70°.",
-    "5": "Both statements are true; the reason explains the assertion. A square is a parallelogram with all four sides equal.",
-    "6": "The assertion is false, while the reason is true. A rectangle has equal diagonals, but a general parallelogram need not."
-  },
-  "g8-number-play-01": {
-    "1": "The digit sum of729 is18, a multiple of9.",
-    "2": "Write the odds as2a+1 and2b+1; their sum is2(a+b+1).",
-    "3": "The tens contribute10a and the ones contribute b.",
-    "4": "47=5×9+2; a remainder must be less than5.",
-    "5": "Both statements are true; the reason explains the assertion. Every multiple of 9 is a multiple of 3.",
-    "6": "The assertion is false, while the reason is true. Divisibility by 3 requires the digit sum to be divisible by 3."
-  },
-  "g8-distributive-multiplication-01": {
-    "1": "5×10+5×3=50+15.",
-    "2": "Multiply all four term pairs, then collect2x+3x.",
-    "3": "The two cross products are both ab.",
-    "4": "Both6x and12 contain a factor6.",
-    "5": "Both statements are true; the reason explains the assertion. Multiplication applies to every term with its sign.",
-    "6": "The assertion is false, while the reason is true. Expanding a square of a sum includes two cross products."
-  },
-  "g8-proportional-reasoning-1-01": {
-    "1": "Divide both entries by4.",
-    "2": "Divide the₹60 total among4 equal-price pens.",
-    "3": "Add the ratio parts3 and5.",
-    "4": "Each drawn centimetre stands for2 actual metres.",
-    "5": "Both statements are true; the reason explains the assertion. Multiplying numerator and denominator by the same non-zero number preserves a fraction.",
-    "6": "The assertion is false, while the reason is true. Equivalent ratios are formed by multiplying or dividing both entries by the same non-zero factor."
-  },
-  "g8-fractions-disguise-01": {
-    "1": "25 out of100 reduces by25 to one quarter.",
-    "2": "Multiply200 by15/100.",
-    "3": "Profit is the gain compared with the amount paid to acquire the item.",
-    "4": "First-year amount1100 earns110 in year two.",
-    "5": "Both statements are true; the reason explains the assertion. The second percentage is applied to the increased amount.",
-    "6": "The assertion is false, while the reason is true. Simple interest is calculated on the original principal."
-  },
-  "g8-pythagoras-01": {
-    "1": "The side opposite the right angle is the hypotenuse.",
-    "2": "6²+8²=36+64=100; the positive root is10.",
-    "3": "5²+12²=25+144=169=13².",
-    "4": "The unit-square diagonal squared is1²+1²=2.",
-    "5": "Both statements are true; the reason explains the assertion. Its longest-side square equals the sum of the other two squares.",
-    "6": "The assertion is false, while the reason is true. Pythagoras requires a right angle."
-  },
-  "g8-proportional-reasoning-2-01": {
-    "1": "2×50000=100000 cm=1 km.",
-    "2": "One quarter of a360° turn is90°.",
-    "3": "With a fixed job, workers×time is constant at equal rates.",
-    "4": "Add all three parts:2+3+5.",
-    "5": "Both statements are true; the reason explains the assertion. The product of constant speed and travel time equals the fixed distance.",
-    "6": "The assertion is false, while the reason is true. For a fixed job at equal rates, worker count and completion time are inversely proportional."
-  },
-  "g8-geometric-themes-01": {
-    "1": "Three of four equal smaller triangles remain.",
-    "2": "A cube has a top, bottom and four side faces.",
-    "3": "Three retained triangles each produce three:3×3=9.",
-    "4": "A net opens the surface into a flat arrangement of its faces.",
-    "5": "Both statements are true; the reason explains the assertion. A cube has 12 edges and 6 faces.",
-    "6": "The assertion is false, while the reason is true. A valid net must close without overlapping faces."
-  },
-  "g8-dots-lines-data-01": {
-    "1": "The total12 shared among3 observations is4.",
-    "2": "Sort to1,4,8; the middle entry is4.",
-    "3": "An added above-average observation pulls the shared value upward.",
-    "4": "Connecting consecutive time observations shows rises and falls.",
-    "5": "Both statements are true; the reason explains the assertion. The new total and new count increase in the same ratio as that mean.",
-    "6": "The assertion is false, while the reason is true. The mean is the total divided by the number of observations."
-  },
-  "g8-algebra-play-01": {
-    "1": "The next row is5,7, so the top is12.",
-    "2": "Double n first, then add5; the brackets would change the order.",
-    "3": "The balanced5-and5 pair gives25, greater than4×6=24.",
-    "4": "The tens place contributes10a, not a.",
-    "5": "Both statements are true; the reason explains the assertion. Valid algebra preserves equality for all values in its stated domain.",
-    "6": "The assertion is false, while the reason is true. The middle bottom entry is used in both sums, giving a+2b+c."
-  },
-  "g8-area-01": {
-    "1": "Half of10×6 is30.",
-    "2": "The height must meet the chosen base at a right angle.",
-    "3": "The100 centimetres along each side make100×100 unit squares.",
-    "4": "Half the product of diagonals is one half×6×8.",
-    "5": "Both statements are true; the reason explains the assertion. The triangle area is one half of base times perpendicular height.",
-    "6": "The assertion is false, while the reason is true. One metre equals 100 centimetres, so a square metre contains 100×100 small squares."
-  },
-  "g9-number-system-01": {
-    "1": "2 is not a perfect square, and its positive square root cannot be an integer ratio.",
-    "2": "5/8 is0.625, between0.5 and0.75.",
-    "3": "An eventually repeating decimal is rational; this one is27/99.",
-    "4": "The principal square root of25 is positive5.",
-    "5": "Both statements are true; the reason explains the assertion. Repeatedly taking the average produces a new rational strictly between the endpoints.",
-    "6": "The assertion is false, while the reason is true. A non-terminating repeating decimal is rational."
-  },
-  "g9-polynomials-01": {
-    "1": "The greatest non-zero variable exponent is3.",
-    "2": "A variable in the denominator creates a negative exponent.",
-    "3": "Setting2x−6=0 gives x=3.",
-    "4": "The coefficient of x gives the change in y per unit x.",
-    "5": "Both statements are true; the reason explains the assertion. Its variable exponent is zero.",
-    "6": "The assertion is false, while the reason is true. Polynomial exponents of x must be non-negative integers."
-  },
-  "g9-sequences-01": {
-    "1": "Each term increases by4.",
-    "2": "Each term is multiplied by3.",
-    "3": "There are nine jumps of3 after the first term2.",
-    "4": "The recurrence gives1,3,7 moves for1,2,3 discs.",
-    "5": "Both statements are true; the reason explains the assertion. The difference between successive terms is constant.",
-    "6": "The assertion is false, while the reason is true. A GP such as 1,2,4,8 is increasing but its successive differences vary."
-  },
-  "g9-identities-01": {
-    "1": "The cross product is twice x×3, which is6x.",
-    "2": "Use a difference of squares with a=x and b=4.",
-    "3": "The numbers2 and3 have sum5 and product6.",
-    "4": "The original denominator vanishes at3, even after cancellation.",
-    "5": "Both statements are true; the reason explains the assertion. The domain is determined by the original denominator.",
-    "6": "The assertion is false, while the reason is true. Cancellation is valid for common factors, not separate terms."
-  },
-  "g9-linear-equations-01": {
-    "1": "2+3 equals5.",
-    "2": "Distinct parallel lines cannot meet.",
-    "3": "The y and−y terms cancel;7+1=8.",
-    "4": "Two coincident lines are the same geometric set.",
-    "5": "Both statements are true; the reason explains the assertion. Every point on a line satisfies its equation.",
-    "6": "The assertion is false, while the reason is true. Multiplying an entire equation by a non-zero constant preserves its solutions."
-  },
-  "g9-coordinate-geometry-01": {
-    "1": "Negative x and positive y describe quadrantII.",
-    "2": "Vertical displacement is zero on the x-axis.",
-    "3": "Average each coordinate:3 and4.",
-    "4": "The squared distance is3²+4²=25.",
-    "5": "Both statements are true; the reason explains the assertion. A midpoint bisects a segment into equal lengths.",
-    "6": "The assertion is false, while the reason is true. Straight-line distance uses the square root of the sum of squared coordinate differences."
-  },
-  "g9-euclid-01": {
-    "1": "A theorem follows by deduction from accepted facts.",
-    "2": "Two distinct points determine a unique line.",
-    "3": "The fourth postulate makes all right angles equal.",
-    "4": "A segment has a finite portion bounded by two endpoints.",
-    "5": "Both statements are true; the reason explains the assertion. This is a basic incidence property of Euclidean lines.",
-    "6": "The assertion is false, while the reason is true. A deductive system starts from definitions and accepted axioms or postulates."
-  },
-  "g9-lines-angles-01": {
-    "1": "The outer rays make a straight turn.",
-    "2": "Each opposite angle supplements the same neighbour.",
-    "3": "Subtract125 from180.",
-    "4": "Subtract45+65 from180.",
-    "5": "Both statements are true; the reason explains the assertion. Two angles of 90 degrees or more would leave no positive third angle.",
-    "6": "The assertion is false, while the reason is true. They are supplementary when their outer rays form a straight line."
-  },
-  "g9-triangles-01": {
-    "1": "An enlargement keeps all three angles but changes size.",
-    "2": "The fixed angle must be between the two given sides.",
-    "3": "Equal sides have equal opposite angles.",
-    "4": "CPCT uses a previously justified triangle congruence.",
-    "5": "Both statements are true; the reason explains the assertion. All corresponding parts of congruent triangles are equal.",
-    "6": "The assertion is false, while the reason is true. Enlarging a triangle preserves its angles while changing side lengths."
-  },
-  "g9-quadrilaterals-01": {
-    "1": "Each diagonal is divided into two equal halves at their intersection.",
-    "2": "The midpoint theorem gives one half the third side.",
-    "3": "From the vertex, two parts reach the centroid and one part remains.",
-    "4": "A180-degree turn about the diagonal intersection exchanges opposite vertices.",
-    "5": "Both statements are true; the reason explains the assertion. Each opposite pair is parallel to the same original diagonal by the midpoint theorem.",
-    "6": "The assertion is false, while the reason is true. A general parallelogram only guarantees that its diagonals bisect each other."
-  },
-  "g9-circles-01": {
-    "1": "A diameter has both endpoints on the circle and passes through its centre.",
-    "2": "Divide the same-arc centre angle by2.",
-    "3": "The centre angle on a semicircle is180°, so the circumference angle is90°.",
-    "4": "A cyclic quadrilateral has supplementary opposite angles.",
-    "5": "Both statements are true; the reason explains the assertion. The two resulting right triangles have equal hypotenuses (radii) and a common leg, so are congruent by RHS.",
-    "6": "The assertion is false, while the reason is true. A convex cyclic quadrilateral must have supplementary opposite angles."
-  },
-  "g9-area-perimeter-01": {
-    "1": "Add5+12+13=30, then halve.",
-    "2": "Coverage counts squares rather than lengths or cubes.",
-    "3": "The four vertices must lie on one circle.",
-    "4": "90 is one quarter of360.",
-    "5": "Both statements are true; the reason explains the assertion. Its semiperimeter and three difference factors are determined by those sides.",
-    "6": "The assertion is false, while the reason is true. Area counts square units while perimeter measures length."
-  },
-  "g9-surface-volume-01": {
-    "1": "Multiply the circular base area by perpendicular height.",
-    "2": "Equal-base equal-height cone volume is one third of the cylinder.",
-    "3": "Include curved area2πr² and the flat circular faceπr².",
-    "4": "A10cm cube has volume1000cm³ and capacity1 litre.",
-    "5": "Both statements are true; the reason explains the assertion. Volume is one third of base area times perpendicular height.",
-    "6": "The assertion is false, while the reason is true. Volume scales with the cube of the length scale factor."
-  },
-  "g9-statistics-01": {
-    "1": "Average the middle values3 and8.",
-    "2": "5 occurs three times, more often than any other value.",
-    "3": "Recover each total using mean×group count.",
-    "4": "Normalising every bar to100% compares shares, not whole sizes.",
-    "5": "Both statements are true; the reason explains the assertion. The total score is recovered by multiplying each group mean by its count.",
-    "6": "The assertion is false, while the reason is true. Equal proportions can come from different whole-group sizes."
-  },
-  "g9-probability-01": {
-    "1": "The even faces2,4,6 are three of six equally likely outcomes.",
-    "2": "There are two choices for each of two ordered tosses:2×2.",
-    "3": "The complementary probabilities total1.",
-    "4": "Relative frequency divides observed successes by observed trials.",
-    "5": "Both statements are true; the reason explains the assertion. They partition the whole sample space without overlap.",
-    "6": "The assertion is false, while the reason is true. For independent fair tosses the next head and tail probabilities remain one half."
-  }
+ "g8-squares-cubes-01": {
+  "1": "12 times 12 is 144.",
+  "2": "14 times 14 is 196, so 14 is its positive square root.",
+  "3": "(−5) cubed is −125.",
+  "4": "7 squared is 49; the last digit is 9.",
+  "5": "Both statements are true; the reason explains the assertion. The product of two odd integers is odd.",
+  "6": "The assertion is false, while the reason is true. $9\\times9=81$."
+ },
+ "g8-power-play-01": {
+  "1": "Joining 3 and 4 factors of 2 produces 7 factors.",
+  "2": "For a non-zero base, dividing equal powers gives the zero power 1.",
+  "3": "A negative exponent makes a reciprocal: 2 cubed is 8.",
+  "4": "0.0042 becomes 4.2 after three decimal moves to the right; the exponent is −3.",
+  "5": "Both statements are true; the reason explains the assertion. $3^{-2}=\\frac{1}{9}>0$.",
+  "6": "The assertion is false, while the reason is true. Exponent addition applies to multiplication of powers, not addition."
+ },
+ "g8-story-numbers-01": {
+  "1": "The 5 is in the ten-thousands place.",
+  "2": "There are no tens in 406, so zero holds that position.",
+  "3": "Binary 101 means 4+0+1.",
+  "4": "Base two allows only the digits 0 and 1.",
+  "5": "Both statements are true; the reason explains the assertion. They add zero multiples of new higher places.",
+  "6": "The assertion is false, while the reason is true. The position of a digit determines its place value."
+ },
+ "g8-quadrilaterals-01": {
+  "1": "A diagonal gives two triangles, each with angle sum 180°.",
+  "2": "In a parallelogram, one right angle forces all four to be right.",
+  "3": "Equal sides define a rhombus; equal diagonals are not required.",
+  "4": "Adjacent parallelogram angles add to 180°, so subtract 70°.",
+  "5": "Both statements are true; the reason explains the assertion. A square is a parallelogram with all four sides equal.",
+  "6": "The assertion is false, while the reason is true. A rectangle has equal diagonals, but a general parallelogram need not."
+ },
+ "g8-number-play-01": {
+  "1": "The digit sum of 729 is 18, a multiple of 9.",
+  "2": "Write the odds as 2a+1 and 2b+1; their sum is 2(a+b+1).",
+  "3": "The tens contribute 10a and the ones contribute b.",
+  "4": "47=5×9+2; a remainder must be less than 5.",
+  "5": "Both statements are true; the reason explains the assertion. Every multiple of 9 is a multiple of 3.",
+  "6": "The assertion is false, while the reason is true. Divisibility by 3 requires the digit sum to be divisible by 3."
+ },
+ "g8-distributive-multiplication-01": {
+  "1": "5×10+5×3=50+15.",
+  "2": "Multiply all four term pairs, then collect 2x+3x.",
+  "3": "The two cross products are both ab.",
+  "4": "Both 6x and 12 contain a factor 6.",
+  "5": "Both statements are true; the reason explains the assertion. Multiplication applies to every term with its sign.",
+  "6": "The assertion is false, while the reason is true. Expanding a square of a sum includes two cross products."
+ },
+ "g8-proportional-reasoning-1-01": {
+  "1": "Divide both entries by 4.",
+  "2": "Divide the₹60 total among 4 equal-price pens.",
+  "3": "Add the ratio parts 3 and 5.",
+  "4": "Each drawn centimetre stands for 2 actual metres.",
+  "5": "Both statements are true; the reason explains the assertion. Multiplying numerator and denominator by the same non-zero number preserves a fraction.",
+  "6": "The assertion is false, while the reason is true. Equivalent ratios are formed by multiplying or dividing both entries by the same non-zero factor."
+ },
+ "g8-fractions-disguise-01": {
+  "1": "25 out of 100 reduces by 25 to one quarter.",
+  "2": "Multiply 200 by 15/100.",
+  "3": "Profit is the gain compared with the amount paid to acquire the item.",
+  "4": "First-year amount 1100 earns 110 in year two.",
+  "5": "Both statements are true; the reason explains the assertion. The second percentage is applied to the increased amount.",
+  "6": "The assertion is false, while the reason is true. Simple interest is calculated on the original principal."
+ },
+ "g8-pythagoras-01": {
+  "1": "The side opposite the right angle is the hypotenuse.",
+  "2": "6²+8²=36+64=100; the positive root is 10.",
+  "3": "5²+12²=25+144=169=13².",
+  "4": "The unit-square diagonal squared is 1²+1²=2.",
+  "5": "Both statements are true; the reason explains the assertion. Its longest-side square equals the sum of the other two squares.",
+  "6": "The assertion is false, while the reason is true. Pythagoras requires a right angle."
+ },
+ "g8-proportional-reasoning-2-01": {
+  "1": "2×50000=100000 cm=1 km.",
+  "2": "One quarter of a360° turn is 90°.",
+  "3": "With a fixed job, workers×time is constant at equal rates.",
+  "4": "Add all three parts: 2+3+5.",
+  "5": "Both statements are true; the reason explains the assertion. The product of constant speed and travel time equals the fixed distance.",
+  "6": "The assertion is false, while the reason is true. For a fixed job at equal rates, worker count and completion time are inversely proportional."
+ },
+ "g8-geometric-themes-01": {
+  "1": "Three of four equal smaller triangles remain.",
+  "2": "A cube has a top, bottom and four side faces.",
+  "3": "Three retained triangles each produce three: 3×3=9.",
+  "4": "A net opens the surface into a flat arrangement of its faces.",
+  "5": "Both statements are true; the reason explains the assertion. A cube has 12 edges and 6 faces.",
+  "6": "The assertion is false, while the reason is true. A valid net must close without overlapping faces."
+ },
+ "g8-dots-lines-data-01": {
+  "1": "The total 12 shared among 3 observations is 4.",
+  "2": "Sort to 1,4,8; the middle entry is 4.",
+  "3": "An added above-average observation pulls the shared value upward.",
+  "4": "Connecting consecutive time observations shows rises and falls.",
+  "5": "Both statements are true; the reason explains the assertion. The new total and new count increase in the same ratio as that mean.",
+  "6": "The assertion is false, while the reason is true. The mean is the total divided by the number of observations."
+ },
+ "g8-algebra-play-01": {
+  "1": "The next row is 5,7, so the top is 12.",
+  "2": "Double n first, then add 5; the brackets would change the order.",
+  "3": "The balanced 5-and 5 pair gives 25, greater than 4×6=24.",
+  "4": "The tens place contributes 10a, not a.",
+  "5": "Both statements are true; the reason explains the assertion. Valid algebra preserves equality for all values in its stated domain.",
+  "6": "The assertion is false, while the reason is true. The middle bottom entry is used in both sums, giving a+2b+c."
+ },
+ "g8-area-01": {
+  "1": "Half of 10×6 is 30.",
+  "2": "The height must meet the chosen base at a right angle.",
+  "3": "The 100 centimetres along each side make 100×100 unit squares.",
+  "4": "Half the product of diagonals is one half×6×8.",
+  "5": "Both statements are true; the reason explains the assertion. The triangle area is one half of base times perpendicular height.",
+  "6": "The assertion is false, while the reason is true. One metre equals 100 centimetres, so a square metre contains 100×100 small squares."
+ },
+ "g9-number-system-01": {
+  "1": "2 is not a perfect square, and its positive square root cannot be an integer ratio.",
+  "2": "5/8 is 0.625, between 0.5 and 0.75.",
+  "3": "An eventually repeating decimal is rational; this one is 27/99.",
+  "4": "The principal square root of 25 is positive 5.",
+  "5": "Both statements are true; the reason explains the assertion. Repeatedly taking the average produces a new rational strictly between the endpoints.",
+  "6": "The assertion is false, while the reason is true. A non-terminating repeating decimal is rational."
+ },
+ "g9-polynomials-01": {
+  "1": "The greatest non-zero variable exponent is 3.",
+  "2": "A variable in the denominator creates a negative exponent.",
+  "3": "Setting 2x−6=0 gives x=3.",
+  "4": "The coefficient of x gives the change in y per unit x.",
+  "5": "Both statements are true; the reason explains the assertion. Its variable exponent is zero.",
+  "6": "The assertion is false, while the reason is true. Polynomial exponents of x must be non-negative integers."
+ },
+ "g9-sequences-01": {
+  "1": "Each term increases by 4.",
+  "2": "Each term is multiplied by 3.",
+  "3": "There are nine jumps of 3 after the first term 2.",
+  "4": "The recurrence gives 1,3,7 moves for 1,2,3 discs.",
+  "5": "Both statements are true; the reason explains the assertion. The difference between successive terms is constant.",
+  "6": "The assertion is false, while the reason is true. A GP such as 1,2,4,8 is increasing but its successive differences vary."
+ },
+ "g9-identities-01": {
+  "1": "The cross product is twice x×3, which is 6x.",
+  "2": "Use a difference of squares with a=x and b=4.",
+  "3": "The numbers 2 and 3 have sum 5 and product 6.",
+  "4": "The original denominator vanishes at 3, even after cancellation.",
+  "5": "Both statements are true; the reason explains the assertion. The domain is determined by the original denominator.",
+  "6": "The assertion is false, while the reason is true. Cancellation is valid for common factors, not separate terms."
+ },
+ "g9-linear-equations-01": {
+  "1": "2+3 equals 5.",
+  "2": "Distinct parallel lines cannot meet.",
+  "3": "The y and −y terms cancel;7+1=8.",
+  "4": "Two coincident lines are the same geometric set.",
+  "5": "Both statements are true; the reason explains the assertion. Every point on a line satisfies its equation.",
+  "6": "The assertion is false, while the reason is true. Multiplying an entire equation by a non-zero constant preserves its solutions."
+ },
+ "g9-coordinate-geometry-01": {
+  "1": "Negative x and positive y describe quadrant II.",
+  "2": "Vertical displacement is zero on the x-axis.",
+  "3": "Average each coordinate: 3 and 4.",
+  "4": "The squared distance is 3²+4²=25.",
+  "5": "Both statements are true; the reason explains the assertion. A midpoint bisects a segment into equal lengths.",
+  "6": "The assertion is false, while the reason is true. Straight-line distance uses the square root of the sum of squared coordinate differences."
+ },
+ "g9-euclid-01": {
+  "1": "A theorem follows by deduction from accepted facts.",
+  "2": "Two distinct points determine a unique line.",
+  "3": "The fourth postulate makes all right angles equal.",
+  "4": "A segment has a finite portion bounded by two endpoints.",
+  "5": "Both statements are true; the reason explains the assertion. This is a basic incidence property of Euclidean lines.",
+  "6": "The assertion is false, while the reason is true. A deductive system starts from definitions and accepted axioms or postulates."
+ },
+ "g9-lines-angles-01": {
+  "1": "The outer rays make a straight turn.",
+  "2": "Each opposite angle supplements the same neighbour.",
+  "3": "Subtract 125 from 180.",
+  "4": "Subtract 45+65 from 180.",
+  "5": "Both statements are true; the reason explains the assertion. Two angles of 90 degrees or more would leave no positive third angle.",
+  "6": "The assertion is false, while the reason is true. They are supplementary when their outer rays form a straight line."
+ },
+ "g9-triangles-01": {
+  "1": "An enlargement keeps all three angles but changes size.",
+  "2": "The fixed angle must be between the two given sides.",
+  "3": "Equal sides have equal opposite angles.",
+  "4": "CPCT uses a previously justified triangle congruence.",
+  "5": "Both statements are true; the reason explains the assertion. All corresponding parts of congruent triangles are equal.",
+  "6": "The assertion is false, while the reason is true. Enlarging a triangle preserves its angles while changing side lengths."
+ },
+ "g9-quadrilaterals-01": {
+  "1": "Each diagonal is divided into two equal halves at their intersection.",
+  "2": "The midpoint theorem gives one half the third side.",
+  "3": "From the vertex, two parts reach the centroid and one part remains.",
+  "4": "A180-degree turn about the diagonal intersection exchanges opposite vertices.",
+  "5": "Both statements are true; the reason explains the assertion. Each opposite pair is parallel to the same original diagonal by the midpoint theorem.",
+  "6": "The assertion is false, while the reason is true. A general parallelogram only guarantees that its diagonals bisect each other."
+ },
+ "g9-circles-01": {
+  "1": "A diameter has both endpoints on the circle and passes through its centre.",
+  "2": "Divide the same-arc centre angle by 2.",
+  "3": "The centre angle on a semicircle is 180°, so the circumference angle is 90°.",
+  "4": "A cyclic quadrilateral has supplementary opposite angles.",
+  "5": "Both statements are true; the reason explains the assertion. The two resulting right triangles have equal hypotenuses (radii) and a common leg, so are congruent by RHS.",
+  "6": "The assertion is false, while the reason is true. A convex cyclic quadrilateral must have supplementary opposite angles."
+ },
+ "g9-area-perimeter-01": {
+  "1": "Add 5+12+13=30, then halve.",
+  "2": "Coverage counts squares rather than lengths or cubes.",
+  "3": "The four vertices must lie on one circle.",
+  "4": "90 is one quarter of 360.",
+  "5": "Both statements are true; the reason explains the assertion. Its semiperimeter and three difference factors are determined by those sides.",
+  "6": "The assertion is false, while the reason is true. Area counts square units while perimeter measures length."
+ },
+ "g9-surface-volume-01": {
+  "1": "Multiply the circular base area by perpendicular height.",
+  "2": "Equal-base equal-height cone volume is one third of the cylinder.",
+  "3": "Include curved area 2πr² and the flat circular faceπr².",
+  "4": "A10 cm cube has volume 1000cm³ and capacity 1 litre.",
+  "5": "Both statements are true; the reason explains the assertion. Volume is one third of base area times perpendicular height.",
+  "6": "The assertion is false, while the reason is true. Volume scales with the cube of the length scale factor."
+ },
+ "g9-statistics-01": {
+  "1": "Average the middle values 3 and 8.",
+  "2": "5 occurs three times, more often than any other value.",
+  "3": "Recover each total using mean×group count.",
+  "4": "Normalising every bar to 100% compares shares, not whole sizes.",
+  "5": "Both statements are true; the reason explains the assertion. The total score is recovered by multiplying each group mean by its count.",
+  "6": "The assertion is false, while the reason is true. Equal proportions can come from different whole-group sizes."
+ },
+ "g9-probability-01": {
+  "1": "The even faces 2,4,6 are three of six equally likely outcomes.",
+  "2": "There are two choices for each of two ordered tosses: 2×2.",
+  "3": "The complementary probabilities total 1.",
+  "4": "Relative frequency divides observed successes by observed trials.",
+  "5": "Both statements are true; the reason explains the assertion. They partition the whole sample space without overlap.",
+  "6": "The assertion is false, while the reason is true. For independent fair tosses the next head and tail probabilities remain one half."
+ }
 }
