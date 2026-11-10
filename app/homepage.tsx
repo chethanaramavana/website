@@ -48,7 +48,7 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
         <section id="syllabus" className="rmc-syllabus" aria-labelledby="syllabus-title">
           <div className="rmc-section-heading"><h2 id="syllabus-title">Choose your board</h2></div>
           <div id="study-library" className="rmc-board-grid">
-            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6, 7, 10, 11 &amp; 12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />{' '}and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
+            <a href="/cbse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6–12</span><h3>CBSE</h3><p>Chapter notes, worked examples<br />{' '}and exam-style practice papers.</p><span className="rmc-card-action">Explore CBSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="triangle" /></a>
             <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6 &amp; 10</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />{' '}and practice papers.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
           </div>
           <p className="rmc-coming">IGCSE is on the way. CBSE and ICSE are ready to explore.</p>

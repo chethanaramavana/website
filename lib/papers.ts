@@ -1,3 +1,4 @@
+import type { TeachingDiagramSpec } from '@/app/notes/cbse89-diagram';
 import { additionalPaperDefinitions } from './papers-additional';
 import { grade6PaperDefinitions } from './grade6-papers';
 import { icse6PaperDefinitions } from './icse6-papers';
@@ -52,6 +53,7 @@ export type PaperDefinition = {
   written: Record<number, string | string[]>;
   questionSources?: Record<number, QuestionSource>;
   questionVisuals?: Partial<Record<number, QuestionVisual>>;
+  teachingDiagrams?: Partial<Record<number, TeachingDiagramSpec>>;
   caseStudy: string;
 };
 
@@ -184,6 +186,7 @@ export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== (isThirtyMarkPaper(paper.id) ? 4 : 14)) return false;
   if (!Array.isArray(paper.assertions) || paper.assertions.length !== 2 || !paper.written) return false;
   if (paper.questionVisuals && (typeof paper.questionVisuals !== 'object' || Object.entries(paper.questionVisuals).some(([number, visual]) => !Number.isInteger(Number(number)) || !questionVisualTypes.has(visual as QuestionVisual)))) return false;
+  if (paper.teachingDiagrams && (typeof paper.teachingDiagrams !== 'object' || Object.entries(paper.teachingDiagrams).some(([number, spec]) => !Number.isInteger(Number(number)) || Number(number) < 1 || Number(number) > 24 || !spec || typeof spec.kind !== 'string' || typeof spec.caption !== 'string' || spec.caption.length > 1500 || (spec.values !== undefined && (!Array.isArray(spec.values) || spec.values.length > 12 || spec.values.some(value => typeof value !== 'number' || !Number.isFinite(value)))) || (spec.labels !== undefined && (!Array.isArray(spec.labels) || spec.labels.length > 12 || spec.labels.some(value => typeof value !== 'string' || value.length > 200)))))) return false;
   if (paper.mcqs.some((item) => !item || typeof item.question !== 'string' || item.question.length > 600 || !Array.isArray(item.options) || item.options.length !== 4 || item.options.some((option) => typeof option !== 'string' || option.length > 250))) return false;
   if (paper.assertions.some((item) => !item || typeof item.assertion !== 'string' || typeof item.reason !== 'string')) return false;
   return [17, 18, 19, 20, 21, 22, 23, 24].every((number) => typeof paper.written?.[number] === 'string' || Array.isArray(paper.written?.[number]));

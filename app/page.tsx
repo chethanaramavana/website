@@ -3,6 +3,7 @@ import GoogleSignIn from './google-sign-in';
 import LearningHeader from './learning-header';
 import { SiteFooter } from './brand';
 import ChapterFigure from './chapter-figure';
+import TeachingDiagram, {type TeachingDiagramSpec} from './notes/cbse89-diagram';
 import KaprekarToy from './kaprekar-toy';
 import { quizListings } from '@/lib/free-quizzes/catalog';
 import { quizPrice } from '@/lib/free-quizzes/catalog';
@@ -277,6 +278,7 @@ type PaperDefinition = {
   written: Record<number, string | readonly string[]>;
   questionSources?: Record<number, string>;
   questionVisuals?: Partial<Record<number, QuestionVisual>>;
+  teachingDiagrams?: Partial<Record<number, TeachingDiagramSpec>>;
   caseStudy: string;
 };
 
@@ -586,7 +588,7 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
       </section>
       {isCbse ? (
         <section className="folder-content">
-          <div className="list-heading"><h2>Grades</h2><span>5 grades</span></div>
+          <div className="list-heading"><h2>Grades</h2><span>7 grades</span></div>
           <div className="grade-folder-list">
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(6)}>
               <span className="folder-icon"><GraduationCap /></span>
@@ -596,6 +598,16 @@ function BoardView({ board, onHome, onOpenGrade }: { board: BoardName; onHome: (
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(7)}>
               <span className="folder-icon"><GraduationCap /></span>
               <span><small>CBSE · Ganita Prakash Parts 1 &amp; 2</small><strong>Grade 7</strong><em>{chaptersFor('CBSE', 7).length} chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(8)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE · Ganita Prakash Parts 1 &amp; 2</small><strong>Grade 8</strong><em>{chaptersFor('CBSE', 8).length} chapters</em></span>
+              <ChevronRight />
+            </button>
+            <button className="grade-folder" type="button" onClick={() => onOpenGrade(9)}>
+              <span className="folder-icon"><GraduationCap /></span>
+              <span><small>CBSE · Mathematics · 2026–27</small><strong>Grade 9</strong><em>{chaptersFor('CBSE', 9).length} chapters</em></span>
               <ChevronRight />
             </button>
             <button className="grade-folder" type="button" onClick={() => onOpenGrade(10)}>
@@ -880,7 +892,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       <Breadcrumb items={[{ label: board, onClick: onBoard }, { label: `Grade ${grade}` }]} onHome={onHome} />
       <section className="folder-page-heading compact">
         <span className="large-folder"><BookOpen /></span>
-        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && (grade === 6 || grade === 7) ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
+        <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && (grade === 6 || grade === 7 || grade === 8) ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
       </section>
       <section className="folder-content">
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>
@@ -1480,16 +1492,17 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
         </PaperSection>
 
         <PaperSection title="Section B" subtitle={`Questions ${shownNumber(17)}–${shownNumber(19)} are Very Short Answer questions carrying 2 marks each.`} marks="3 × 2 = 6">
-          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+          {[17, 18, 19].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={2} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} />{currentPaper.teachingDiagrams?.[number] && <TeachingDiagram spec={currentPaper.teachingDiagrams[number]!} />}</WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section C" subtitle={`Questions ${shownNumber(20)}–${shownNumber(22)} are Short Answer questions carrying 3 marks each.`} marks="3 × 3 = 9">
-          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} /></WrittenQuestion>)}
+          {[20, 21, 22].map((number) => <WrittenQuestion key={number} number={number} label={shownNumber(number)} marks={3} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}><QuestionContent value={currentPaper.written[number]} />{currentPaper.teachingDiagrams?.[number] && <TeachingDiagram spec={currentPaper.teachingDiagrams[number]!} />}</WrittenQuestion>)}
         </PaperSection>
 
         <PaperSection title="Section D" subtitle={`Question ${shownNumber(23)} is a Long Answer question carrying 5 marks.`} marks="1 × 5 = 5">
           <WrittenQuestion number={23} label={shownNumber(23)} marks={5} files={writtenFiles[23] ?? []} savedFiles={savedUploads[23] ?? []} isSaving={Boolean(uploadingQuestions[23])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(23, files)}>
             <QuestionContent value={currentPaper.written[23]} />
+            {currentPaper.teachingDiagrams?.[23] && <TeachingDiagram spec={currentPaper.teachingDiagrams[23]!} />}
           </WrittenQuestion>
         </PaperSection>
 
@@ -1497,6 +1510,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
           <div className="case-study">
             <div className="case-study-label">Case study</div>
             <p><MathText>{currentPaper.caseStudy}</MathText></p>
+            {currentPaper.teachingDiagrams?.[24] && <TeachingDiagram spec={currentPaper.teachingDiagrams[24]!} />}
           </div>
           <WrittenQuestion number={24} label={shownNumber(24)} marks={4} files={writtenFiles[24] ?? []} savedFiles={savedUploads[24] ?? []} isSaving={Boolean(uploadingQuestions[24])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(24, files)}>
             <QuestionContent value={currentPaper.written[24]} />
@@ -1573,7 +1587,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <p className="solution-note">Your teacher will review your written answers within 24 hours of submission and award partial marks where appropriate. Until then, practise with the model solutions below. Your final score will appear in your student account after review.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><span className="written-solution-number">{shownNumber(number)}</span><div><strong>Question {shownNumber(number)}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <p><MathText>{currentPaper.caseStudy}</MathText></p>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
+                  <article key={number}><span className="written-solution-number">{shownNumber(number)}</span><div><strong>Question {shownNumber(number)}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <><p><MathText>{currentPaper.caseStudy}</MathText></p>{currentPaper.teachingDiagrams?.[24] && <TeachingDiagram spec={currentPaper.teachingDiagrams[24]!} />}</>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
                 ))}
               </div>
             </div>

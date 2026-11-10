@@ -1,3 +1,4 @@
+import cbse89McqSolutions from './cbse89-mcq-solutions.json';
 const briefSolutionOverrides: Record<string, Record<number, string>> = {
   'g6-patterns-01': {
     17: 'Differences: 3, 5, 7, 9, …; next differences: 11, 13, 15. Next terms: 37, 50, 65; aₙ=n²+1.',
@@ -37,5 +38,5 @@ export function getBriefSolution(paperId: string, questionNumber: number, fallba
 }
 
 export function getBriefMcqSolution(paperId: string, questionNumber: number) {
-  return briefMcqSolutionOverrides[paperId]?.[questionNumber];
+  return briefMcqSolutionOverrides[paperId]?.[questionNumber] ?? (cbse89McqSolutions as Record<string, Record<number, string>>)[paperId]?.[questionNumber];
 }
