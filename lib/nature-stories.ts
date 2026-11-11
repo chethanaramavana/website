@@ -9,10 +9,10 @@ export const natureStories = [{
 }, {
   number: 2,
   date: '2026-11-11',
-  title: 'How many ways can you fold a square?',
-  description: 'Fold a piece of paper and see what the crease tells you about symmetry.',
+  title: 'One big pizza or two small ones?',
+  description: 'Compare the two orders. Which gives you more pizza?',
   href: '/maths-around-us/2',
-  poster: '/maths-around-us/2-symmetry-poster.png',
+  poster: '/maths-around-us/2-pizza-poster.png',
 }] as const;
 
 export const cellShapes = [

@@ -1,26 +1,27 @@
 import type { Metadata } from 'next';
 import { SiteFooter } from '../../brand';
 import LearningHeader from '../../learning-header';
-import SymmetryQuiz from './symmetry-quiz';
+import PizzaQuiz from './pizza-quiz';
 import '../nature.css';
+import './pizza.css';
 
-const poster = '/maths-around-us/2-symmetry-poster.png';
-const title = 'How many ways can you fold a square?';
-const description = 'Fold a piece of paper and see what the crease tells you about symmetry.';
+const title = 'One big pizza or two small ones?';
+const description = 'If the pizzas are equally thick, which order gives you more?';
+const poster = '/maths-around-us/2-pizza-poster.png';
 
 export const metadata: Metadata = {
-  title: 'No. 2 · Paper-folding symmetry | Ramavana',
+  title: 'No. 2 · The pizza puzzle | Ramavana',
   description,
   alternates: { canonical: '/maths-around-us/2' },
   openGraph: {
     title,
     description,
     url: 'https://ramavanamath.com/maths-around-us/2',
-    images: [{ url: poster, width: 1080, height: 1500, alt: 'A square of paper with a dashed crease down the middle' }],
+    images: [{ url: poster, width: 1080, height: 1500, alt: 'One 12-inch pizza beside two 8-inch pizzas' }],
   },
 };
 
-export default function SymmetryStory() {
+export default function PizzaStory() {
   return (
     <div className="identity-learning">
       <LearningHeader />
@@ -31,19 +32,8 @@ export default function SymmetryStory() {
           <h1>{title}</h1>
           <p>{description}</p>
         </header>
-        <div className="nature-intro-grid">
-          <figure className="nature-poster">
-            <img src={poster} width="1080" height="1500" alt="A square of paper with a dashed crease down the middle" />
-            <figcaption><a href={poster} download>Download the WhatsApp poster ↓</a></figcaption>
-          </figure>
-          <div className="nature-intro-copy">
-            <h2>Try it with paper</h2>
-            <p>Take a square of paper. Fold one edge onto the opposite edge, then open it. The crease is a line of symmetry because the two halves match exactly.</p>
-            <p>Try another fold. Can you make the corners match too?</p>
-            <a className="rmc-button" href="#symmetry-quiz">Try the quiz ↓</a>
-          </div>
-        </div>
-        <SymmetryQuiz />
+        <PizzaQuiz />
+        <p><a href={poster} download>Download the WhatsApp poster ↓</a></p>
         <a className="nature-back" href="/maths-around-us/1">← No. 1 · The honeycomb story</a>
       </main>
       <SiteFooter />
