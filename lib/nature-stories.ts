@@ -9,10 +9,10 @@ export const natureStories = [{
 }, {
   number: 2,
   date: '2026-11-11',
-  title: 'One big pizza or two small ones?',
-  description: 'Compare the two orders. Which gives you more pizza?',
+  title: 'The other half of a rainbow',
+  description: 'A rainbow can make a full circle. A single angle explains why.',
   href: '/maths-around-us/2',
-  poster: '/maths-around-us/2-pizza-poster.png',
+  poster: '/maths-around-us/2-rainbow-poster.png',
 }] as const;
 
 export const cellShapes = [
