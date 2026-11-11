@@ -6,6 +6,13 @@ export const natureStories = [{
   description: 'Triangles and squares fit too. Discover why regular pentagons leave gaps and why hexagons save wall material.',
   href: '/maths-around-us/1',
   poster: '/maths-around-us/1-honeycomb-poster.png',
+}, {
+  number: 2,
+  date: '2026-11-11',
+  title: 'How many ways can you fold a square?',
+  description: 'Fold a piece of paper and see what the crease tells you about symmetry.',
+  href: '/maths-around-us/2',
+  poster: '/maths-around-us/2-symmetry-poster.png',
 }] as const;
 
 export const cellShapes = [
