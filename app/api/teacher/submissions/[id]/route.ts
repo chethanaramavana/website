@@ -1,4 +1,5 @@
-import { buildDefaultMarkingSchemes, getPaperAssessment, writtenQuestionMarks, type MarkingStep } from '@/lib/assessment';
+import { buildDefaultMarkingSchemes, getPaperAssessment, type MarkingStep } from '@/lib/assessment';
+import { writtenMarksFor } from '@/lib/paper-format';
 import { paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 
@@ -32,13 +33,13 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     const savedDocument = savedPaper ? JSON.parse(savedPaper.content_json) as SavedPaperDocument : null;
     const paper = savedDocument?.paper ?? fallbackPaper;
     const writtenSolutions = savedDocument?.writtenSolutions ?? assessment.writtenSolutions;
-    const markingSchemes = savedDocument?.markingSchemes ?? (savedDocument?.writtenSolutions ? buildDefaultMarkingSchemes(writtenSolutions) : assessment.markingSchemes);
+    const markingSchemes = savedDocument?.markingSchemes ?? (savedDocument?.writtenSolutions ? buildDefaultMarkingSchemes(writtenSolutions, writtenMarksFor(paperId)) : assessment.markingSchemes);
     const writtenQuestions = Object.entries(paper.written).map(([numberText, value]) => {
       const number = Number(numberText);
       return {
         number,
-        marks: writtenQuestionMarks[number],
-        text: Array.isArray(value) ? value.join(' ') : value,
+        marks: writtenMarksFor(paperId)[number],
+        text: `${paper.caseStudies?.[number] ? `${paper.caseStudies[number]} ` : ''}${Array.isArray(value) ? value.join(' ') : value}`,
         modelSolution: writtenSolutions[number] ?? '',
         markingScheme: markingSchemes[number] ?? [],
       };
@@ -64,8 +65,13 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
     const { id } = await context.params;
     const payload = await request.json() as { marks?: Record<string, number>; feedback?: string };
     const marks = payload.marks ?? {};
+    const db = getDatabase();
+    const submission = await db.prepare(`SELECT mcq_score, paper_id FROM submissions WHERE id = ? AND status != 'draft'`)
+      .bind(id).first<{ mcq_score: number; paper_id: string }>();
+    if (!submission) return jsonError('Submission not found.', 404);
+    const questionMarks = writtenMarksFor(submission.paper_id);
     const normalizedMarks: Record<string, number> = {};
-    for (const [questionText, maximum] of Object.entries(writtenQuestionMarks)) {
+    for (const [questionText, maximum] of Object.entries(questionMarks)) {
       const awarded = marks[questionText];
       const increment = maximum > 1 ? 0.5 : 1;
       if (!Number.isFinite(awarded) || !Number.isInteger(awarded / increment) || awarded < 0 || awarded > maximum) {
@@ -74,12 +80,8 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
       normalizedMarks[questionText] = awarded;
     }
     const feedback = (payload.feedback ?? '').trim().slice(0, 2000);
-    const db = getDatabase();
-    const submission = await db.prepare(`SELECT mcq_score FROM submissions WHERE id = ? AND status != 'draft'`)
-      .bind(id).first<{ mcq_score: number }>();
-    if (!submission) return jsonError('Submission not found.', 404);
 
-    const statements = Object.keys(writtenQuestionMarks).map((questionText) => db.prepare(`
+    const statements = Object.keys(questionMarks).map((questionText) => db.prepare(`
       INSERT INTO question_marks (submission_id, question_number, marks_awarded, feedback)
       VALUES (?, ?, ?, '')
       ON CONFLICT(submission_id, question_number) DO UPDATE SET marks_awarded = excluded.marks_awarded

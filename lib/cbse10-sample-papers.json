@@ -1,0 +1,3176 @@
+{
+ "papers": [
+  {
+   "id": "cbse10-sp-01",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "01",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The HCF of 96 and 404 is",
+     "options": [
+      "2",
+      "12",
+      "4",
+      "8"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If α and β are the zeroes of x² − 2x − 8, then α + β + αβ equals",
+     "options": [
+      "−10",
+      "10",
+      "6",
+      "−6"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The pair 2x + 3y = 5 and 4x + ky = 10 has infinitely many solutions when k equals",
+     "options": [
+      "−6",
+      "9",
+      "6",
+      "3"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The equation 3x² − 4x + 2 = 0 has",
+     "options": [
+      "more than two real roots",
+      "two equal real roots",
+      "no real roots",
+      "two distinct real roots"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The 11th term of the AP −3, 1, 5, … is",
+     "options": [
+      "41",
+      "37",
+      "33",
+      "40"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "In △ABC, DE ∥ BC with D on AB and E on AC. If AD = 3 cm, DB = 5 cm and AE = 4.5 cm, then EC equals",
+     "options": [
+      "7.5 cm",
+      "6 cm",
+      "8 cm",
+      "2.7 cm"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The distance between the points (−3, 4) and (2, −8) is",
+     "options": [
+      "12 units",
+      "17 units",
+      "13 units",
+      "√119 units"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If sin A = 3/5 and A is acute, then tan A equals",
+     "options": [
+      "3/4",
+      "5/4",
+      "4/3",
+      "4/5"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "(sec²θ − 1) · cot²θ equals",
+     "options": [
+      "1",
+      "0",
+      "sec²θ",
+      "tan²θ"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "PA and PB are tangents from an external point P to a circle with centre O. If ∠APB = 70°, then ∠AOB equals",
+     "options": [
+      "90°",
+      "110°",
+      "70°",
+      "140°"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a sector of a circle of radius 21 cm and angle 60° is (π = 22/7)",
+     "options": [
+      "462 cm²",
+      "231 cm²",
+      "115.5 cm²",
+      "693 cm²"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "If the radius of a sphere is doubled, its volume becomes",
+     "options": [
+      "6 times",
+      "8 times",
+      "2 times",
+      "4 times"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "For a grouped distribution, l = 20, h = 10, f₁ = 12, f₀ = 8 and f₂ = 6. The mode is",
+     "options": [
+      "22",
+      "26",
+      "24",
+      "25"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "A die is thrown once. The probability of getting a prime number is",
+     "options": [
+      "2/3",
+      "1/6",
+      "1/2",
+      "1/3"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The point that divides the join of (2, −3) and (5, 6) internally in the ratio 1 : 2 is",
+     "options": [
+      "(4, 3)",
+      "(3, 0)",
+      "(3, 1)",
+      "(1, −4)"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The mean of 8 observations is 15. If 3 is added to each observation, the new mean is",
+     "options": [
+      "24",
+      "18",
+      "15",
+      "45"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A ladder makes an angle of 60° with the ground. Its foot is 2.5 m from the wall. The length of the ladder is",
+     "options": [
+      "10 m",
+      "2.5√3 m",
+      "5√3 m",
+      "5 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "One card is drawn from a well-shuffled deck of 52 cards. The probability that it is a red king is",
+     "options": [
+      "1/13",
+      "1/52",
+      "1/26",
+      "2/13"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "18 and 25 are co-prime numbers.",
+     "reason": "HCF(18, 25) = 1."
+    },
+    {
+     "number": 20,
+     "assertion": "The equation x² + 4x + 5 = 0 has two real roots.",
+     "reason": "A quadratic equation with a negative discriminant has no real roots."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the HCF and LCM of 336 and 54 by prime factorisation. Verify that HCF × LCM = product of the numbers.",
+     "OR",
+     "Find the largest number that divides 245 and 1029 leaving remainder 5 in each case."
+    ],
+    "22": [
+     "D is a point on side BC of △ABC such that ∠ADC = ∠BAC. Show that CA² = CB · CD.",
+     "OR",
+     "Find the ratio in which the y-axis divides the line segment joining (5, −6) and (−1, −4). Also find the point of division."
+    ],
+    "23": "Evaluate: 2 tan²45° + cos²30° − sin²60°.",
+    "24": "Two concentric circles have radii 5 cm and 3 cm. Find the length of the chord of the larger circle that touches the smaller circle.",
+    "25": "A bag contains 5 red, 8 white and 7 black balls. One ball is drawn at random. Find the probability that it is (a) white (b) not red.",
+    "26": "Prove that √5 is irrational.",
+    "27": "Find the zeroes of 6x² − 3 − 7x and verify the relationship between the zeroes and the coefficients.",
+    "28": [
+     "The sum of the first n terms of an AP is 3n² + 5n. Find the AP and its 16th term.",
+     "OR",
+     "Solve 2x + 3y = 11 and 2x − 4y = −24. Hence find m if y = mx + 3."
+    ],
+    "29": "Prove that the lengths of the tangents drawn from an external point to a circle are equal.",
+    "30": "Find the ratio in which P(4, m) divides the line segment joining A(2, 3) and B(6, −3). Hence find m.",
+    "31": [
+     "Prove that (sin θ − cos θ + 1)/(sin θ + cos θ − 1) = 1/(sec θ − tan θ).",
+     "OR",
+     "Prove that (1 + cot A − cosec A)(1 + tan A + sec A) = 2."
+    ],
+    "32": "A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.",
+    "33": "State and prove the Basic Proportionality Theorem. Using it, show that if E and F are points on the non-parallel sides AD and BC of a trapezium ABCD (AB ∥ DC) with EF ∥ AB, then AE/ED = BF/FC.",
+    "34": [
+     "A solid toy is a hemisphere surmounted by a right circular cone. The cone has height 2 cm and base diameter 4 cm. Find the volume of the toy. A right circular cylinder circumscribes the toy. Find the difference between the volume of the cylinder and the toy. (π = 3.14)",
+     "OR",
+     "A wooden pen stand is a cuboid 15 cm × 10 cm × 3.5 cm with four conical depressions to hold pens. Each depression has radius 0.5 cm and depth 1.4 cm. Find the volume of wood in the stand. (π = 22/7)"
+    ],
+    "35": [
+     "From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed on the top of a 20 m high building are 45° and 60°. Find the height of the tower. (√3 = 1.732)",
+     "OR",
+     "The median of the following data is 28.5 and the total frequency is 60. Find x and y.\nClass: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60\nFrequency: 5, x, 20, 15, y, 5"
+    ],
+    "36": [
+     "(i) How much does she save in the 10th week? [1]",
+     "(ii) Write the amount saved in the nth week. [1]",
+     "(iii) Find her total saving in the first 20 weeks. [2]",
+     "OR",
+     "(iii) In which week does she save ₹300? [2]"
+    ],
+    "37": [
+     "(i) Find the distance AB. [1]",
+     "(ii) Find the midpoint of AC. [1]",
+     "(iii) Show that A, B and C lie on a straight line. [2]",
+     "OR",
+     "(iii) Find the point P that divides AC internally in the ratio 2 : 3. [2]"
+    ],
+    "38": [
+     "(i) Write the modal class. [1]",
+     "(ii) Write the median class. [1]",
+     "(iii) Find the mean daily wage by the step-deviation method. [2]",
+     "OR",
+     "(iii) Find the mode of the daily wages. [2]"
+    ]
+   },
+   "caseStudy": "Riya starts saving for a bicycle. She saves ₹50 in the first week and increases her saving by ₹10 every week.",
+   "caseStudies": {
+    "36": "Riya starts saving for a bicycle. She saves ₹50 in the first week and increases her saving by ₹10 every week.",
+    "37": "A classroom floor plan uses a grid in metres. Three desks are at A(3, 1), B(6, 4) and C(8, 6).",
+    "38": "The daily wages of 50 workers in a factory are given below.\nDaily wages (₹): 100–120, 120–140, 140–160, 160–180, 180–200\nNumber of workers: 12, 14, 8, 6, 10"
+   }
+  },
+  {
+   "id": "cbse10-sp-02",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "02",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Two numbers have HCF 12 and product 1800. Their LCM is",
+     "options": [
+      "150",
+      "90",
+      "1800",
+      "216"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A quadratic polynomial whose zeroes are −3 and 4 is",
+     "options": [
+      "x² − 7x + 12",
+      "x² + 7x + 12",
+      "x² − x − 12",
+      "x² + x − 12"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The lines 3x − y = 2 and 6x − 2y = 9 are",
+     "options": [
+      "parallel",
+      "coincident",
+      "perpendicular",
+      "intersecting"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If 2 is a root of 2x² + kx − 6 = 0, then k equals",
+     "options": [
+      "2",
+      "−2",
+      "1",
+      "−1"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The number of two-digit numbers divisible by 3 is",
+     "options": [
+      "29",
+      "33",
+      "30",
+      "31"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "△ABC ~ △PQR with AB/PQ = 2/3. If ar(△ABC) = 36 cm², then ar(△PQR) is",
+     "options": [
+      "24 cm²",
+      "54 cm²",
+      "16 cm²",
+      "81 cm²"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The point on the x-axis equidistant from (2, −5) and (−2, 9) is",
+     "options": [
+      "(0, −7)",
+      "(7, 0)",
+      "(−2, 0)",
+      "(−7, 0)"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If cos A = 1/2, then 3 cos A − 4 cos³A equals",
+     "options": [
+      "0",
+      "1/2",
+      "1",
+      "−1"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "(1 + tan²A)/(1 + cot²A) equals",
+     "options": [
+      "tan²A",
+      "1",
+      "sec²A",
+      "cot²A"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The number of tangents to a circle that are parallel to a given tangent is",
+     "options": [
+      "1",
+      "2",
+      "0",
+      "infinitely many"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The perimeter of a semicircular protractor of diameter 14 cm is (π = 22/7)",
+     "options": [
+      "44 cm",
+      "22 cm",
+      "36 cm",
+      "50 cm"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The curved surface area of a cone of radius 7 cm and slant height 10 cm is (π = 22/7)",
+     "options": [
+      "440 cm²",
+      "220 cm²",
+      "374 cm²",
+      "154 cm²"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The mean of the first 10 odd natural numbers is",
+     "options": [
+      "20",
+      "9",
+      "11",
+      "10"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "If P(E) = 0.05, then P(not E) is",
+     "options": [
+      "0.05",
+      "0.95",
+      "1.05",
+      "0.5"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The midpoint of the segment joining (−2, 5) and (6, −1) is",
+     "options": [
+      "(2, 2)",
+      "(−4, 3)",
+      "(4, 4)",
+      "(2, 3)"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "For a distribution, mean = 30 and median = 32. Using the empirical relation, the mode is",
+     "options": [
+      "36",
+      "34",
+      "31",
+      "28"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The shadow of a pole is √3 times its height. The angle of elevation of the Sun is",
+     "options": [
+      "45°",
+      "60°",
+      "90°",
+      "30°"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "Two coins are tossed together. The probability of getting at most one head is",
+     "options": [
+      "3/4",
+      "1",
+      "1/4",
+      "1/2"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The sum of the first 20 terms of the AP 1, 3, 5, … is 400.",
+     "reason": "The sum of the first n odd natural numbers is n²."
+    },
+    {
+     "number": 20,
+     "assertion": "√2 × √8 is a rational number.",
+     "reason": "The product of two irrational numbers is always irrational."
+    }
+   ],
+   "written": {
+    "21": [
+     "Show that 6ⁿ can never end with the digit 0 for any natural number n.",
+     "OR",
+     "Two tankers contain 850 litres and 680 litres of petrol. Find the maximum capacity of a container that can measure the petrol of either tanker an exact number of times."
+    ],
+    "22": [
+     "A(1, 2), B(4, y), C(x, 6) and D(3, 5) are the vertices of a parallelogram ABCD, taken in order. Find x and y.",
+     "OR",
+     "In △ABC, DE ∥ BC with D on AB and E on AC. If AD/DB = 3/5 and AC = 5.6 cm, find AE."
+    ],
+    "23": "If sin(A + B) = 1 and cos(A − B) = √3/2, where 0° < A + B ≤ 90° and A > B, find A and B.",
+    "24": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the minor segment. (π = 3.14)",
+    "25": "The length of the tangent from a point Q to a circle is 24 cm, and Q is 25 cm from the centre. Find the radius of the circle.",
+    "26": "Given that √5 is irrational, prove that 3 + 2√5 is irrational.",
+    "27": "If α and β are the zeroes of p(x) = 2x² − 5x + 7, find a quadratic polynomial whose zeroes are 2α + 3β and 3α + 2β.",
+    "28": [
+     "Which term of the AP 3, 15, 27, 39, … is 132 more than its 54th term?",
+     "OR",
+     "A fraction becomes 9/11 if 2 is added to both its numerator and denominator. It becomes 5/6 if 3 is added to both. Find the fraction."
+    ],
+    "29": "Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended at the centre by the line segment joining the points of contact.",
+    "30": "Find the coordinates of the points of trisection of the line segment joining (4, −1) and (−2, −3).",
+    "31": [
+     "Prove that tan θ/(1 − cot θ) + cot θ/(1 − tan θ) = 1 + sec θ cosec θ.",
+     "OR",
+     "If sin θ + cos θ = √3, prove that tan θ + cot θ = 1."
+    ],
+    "32": "The sum of the reciprocals of Rehman’s ages (in years) 3 years ago and 5 years from now is 1/3. Find his present age.",
+    "33": "Sides AB and AC and median AD of △ABC are respectively proportional to sides PQ and PR and median PM of △PQR. Show that △ABC ~ △PQR.",
+    "34": [
+     "A vessel is a hollow hemisphere mounted by a hollow cylinder. The diameter of the hemisphere is 14 cm and the total height of the vessel is 13 cm. Find the inner surface area of the vessel. (π = 22/7)",
+     "OR",
+     "A tent is a cylinder of height 2.1 m and base diameter 4 m, surmounted by a cone of the same diameter and slant height 2.8 m. Find the area of canvas used and its cost at ₹500 per m². (π = 22/7)"
+    ],
+    "35": [
+     "The angle of elevation of the top of a building from the foot of a tower is 30°. The angle of elevation of the top of the tower from the foot of the building is 60°. The tower is 50 m high. Find the height of the building.",
+     "OR",
+     "The mean of the following distribution is 18. Find the missing frequency f.\nClass: 11–13, 13–15, 15–17, 17–19, 19–21, 21–23, 23–25\nFrequency: 7, 6, 9, 13, f, 5, 4"
+    ],
+    "36": [
+     "(i) Write the quadratic equation that x satisfies. [1]",
+     "(ii) Find the discriminant of this equation. [1]",
+     "(iii) Find the length and breadth of the garden. [2]",
+     "OR",
+     "(iii) Find the cost of fencing the garden at ₹20 per metre. [2]"
+    ],
+    "37": [
+     "(i) Find the distance of the ship from the base when the angle of depression is 45°. [1]",
+     "(ii) Find the distance of the ship from the base when the angle of depression is 30°. [1]",
+     "(iii) Find the distance travelled by the ship between the two observations. [2]",
+     "OR",
+     "(iii) The change takes 1 minute. Find the speed of the ship in m/min. [2]"
+    ],
+    "38": [
+     "(i) Find the probability that the number is even. [1]",
+     "(ii) Find the probability that the number is a multiple of 5. [1]",
+     "(iii) Find the probability that the number is a perfect square. [2]",
+     "OR",
+     "(iii) Find the probability that the number is a prime number. [2]"
+    ]
+   },
+   "caseStudy": "A school plans a rectangular herb garden. Its length is 4 m more than its breadth, and its area is 192 m². Let the breadth be x m.",
+   "caseStudies": {
+    "36": "A school plans a rectangular herb garden. Its length is 4 m more than its breadth, and its area is 192 m². Let the breadth be x m.",
+    "37": "A lighthouse is 75 m high. A sailor on its top sees a ship sailing straight towards the base. The angle of depression of the ship changes from 30° to 45°. (√3 = 1.732)",
+    "38": "A game box has 30 identical discs numbered 1 to 30. A player draws one disc at random."
+   }
+  },
+  {
+   "id": "cbse10-sp-03",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "03",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The exponent of 2 in the prime factorisation of 144 is",
+     "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If 2 is a zero of x² + 3x + k, then k equals",
+     "options": [
+      "10",
+      "−10",
+      "5",
+      "−5"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The solution of 2x + y = 6 and 4x − 2y = 4 is",
+     "options": [
+      "x = 1, y = 4",
+      "x = 2, y = 2",
+      "x = 3, y = 0",
+      "x = 2, y = −2"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The roots of x² − 3x = 0 are",
+     "options": [
+      "1 and 3",
+      "0 and −3",
+      "3 and −3",
+      "0 and 3"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If the nth term of an AP is 4n + 1, its common difference is",
+     "options": [
+      "4",
+      "−4",
+      "1",
+      "5"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "△ABC ~ △DEF with ∠A = 47° and ∠E = 83°. Then ∠C equals",
+     "options": [
+      "50°",
+      "130°",
+      "47°",
+      "83°"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The distance of the point (−6, 8) from the origin is",
+     "options": [
+      "10",
+      "8",
+      "2",
+      "14"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "sin 2A = 2 sin A is true when A equals",
+     "options": [
+      "45°",
+      "30°",
+      "60°",
+      "0°"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "cos 48° − sin 42° equals",
+     "options": [
+      "2 sin 42°",
+      "0",
+      "−1",
+      "1"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "A point P is 13 cm from the centre of a circle of radius 5 cm. The length of the tangent from P is",
+     "options": [
+      "√194 cm",
+      "12 cm",
+      "18 cm",
+      "8 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a circle whose circumference is 44 cm is (π = 22/7)",
+     "options": [
+      "616 cm²",
+      "77 cm²",
+      "308 cm²",
+      "154 cm²"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The volume of a solid hemisphere of radius 3 cm is",
+     "options": [
+      "18π cm³",
+      "27π cm³",
+      "9π cm³",
+      "36π cm³"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The class mark of the class 10–25 is",
+     "options": [
+      "35",
+      "17.5",
+      "12.5",
+      "15"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The probability that a leap year chosen at random has 53 Sundays is",
+     "options": [
+      "3/7",
+      "2/7",
+      "5/7",
+      "1/7"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The x-axis divides the segment joining (2, −3) and (5, 6) in the ratio",
+     "options": [
+      "1 : 2",
+      "2 : 1",
+      "3 : 5",
+      "2 : 3"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The mean of x, x + 2, x + 4, x + 6 and x + 8 is 11. Then x equals",
+     "options": [
+      "9",
+      "7",
+      "5",
+      "11"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "From a point 30 m from the foot of a tower, the angle of elevation of its top is 45°. The height of the tower is",
+     "options": [
+      "30√3 m",
+      "10√3 m",
+      "30 m",
+      "15 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "A bag has 3 red and 5 black balls. One ball is drawn at random. The probability that it is red is",
+     "options": [
+      "3/8",
+      "5/8",
+      "1/8",
+      "3/5"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "sin²30° + cos²30° = 1.",
+     "reason": "sin²θ + cos²θ = 1 for every angle θ."
+    },
+    {
+     "number": 20,
+     "assertion": "0.6666… (6 repeating) is an irrational number.",
+     "reason": "A non-terminating repeating decimal is a rational number."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the HCF and LCM of 870 and 225 by prime factorisation.",
+     "OR",
+     "Find the smallest number that is exactly divisible by every natural number from 1 to 10."
+    ],
+    "22": [
+     "Show that A(1, 7), B(4, 2), C(−1, −1) and D(−4, 4) are the vertices of a square.",
+     "OR",
+     "In △ABC, DE ∥ BC with D on AB and E on AC. If AD = x, DB = x − 2, AE = x + 2 and EC = x − 1, find x."
+    ],
+    "23": "If tan A = cot B, where A and B are acute angles, prove that A + B = 90°.",
+    "24": "Find the area of a sector of a circle of radius 6 cm whose angle is 60°. (π = 22/7)",
+    "25": "A die is thrown twice. Find the probability that (a) the sum of the numbers is 9 (b) the same number appears on both throws.",
+    "26": "Given that √6 is irrational, prove that √2 + √3 is irrational.",
+    "27": "Find the zeroes of 3x² − x − 4 and verify the relationship between the zeroes and the coefficients.",
+    "28": [
+     "How many terms of the AP 9, 17, 25, … must be taken to give a sum of 636?",
+     "OR",
+     "The sum of the digits of a two-digit number is 9. Nine times the number is twice the number obtained by reversing its digits. Find the number."
+    ],
+    "29": "Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+    "30": "Find the point on the y-axis that is equidistant from A(6, 5) and B(−4, 3).",
+    "31": [
+     "Prove that (1 + sec A)/sec A = sin²A/(1 − cos A).",
+     "OR",
+     "Prove that √[(1 + sin A)/(1 − sin A)] = sec A + tan A, where A is acute."
+    ],
+    "32": "A motorboat whose speed in still water is 18 km/h takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.",
+    "33": "Prove that if a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. Hence, in △ABC with DE ∥ BC (D on AB, E on AC), if AD/DB = 4/13 and AC = 20.4 cm, find EC.",
+    "34": [
+     "A medicine capsule is a cylinder with a hemisphere stuck to each end. The length of the whole capsule is 14 mm and its diameter is 5 mm. Find its surface area. (π = 22/7)",
+     "OR",
+     "A cone of height 24 cm and base radius 6 cm is made of modelling clay. A child reshapes it into a sphere. Find the radius of the sphere."
+    ],
+    "35": [
+     "Two poles of equal height stand on either side of a road 80 m wide. From a point on the road between them, the angles of elevation of their tops are 60° and 30°. Find the height of the poles and the distances of the point from the poles. (√3 = 1.732)",
+     "OR",
+     "Find the median of the following data.\nClass: 0–20, 20–40, 40–60, 60–80, 80–100, 100–120, 120–140\nFrequency: 6, 8, 10, 12, 6, 5, 3"
+    ],
+    "36": [
+     "(i) Write the pair of linear equations. [1]",
+     "(ii) Does the pair have a unique solution? Give a reason. [1]",
+     "(iii) Find the cost of one notebook and one pen. [2]",
+     "OR",
+     "(iii) Find the cost of 5 notebooks and 4 pens. [2]"
+    ],
+    "37": [
+     "(i) Find the length of path PA. [1]",
+     "(ii) Find ∠OAP and give a reason. [1]",
+     "(iii) Find the area of the quadrilateral OAPB. [2]",
+     "OR",
+     "(iii) Find the perimeter of the quadrilateral OAPB. [2]"
+    ],
+    "38": [
+     "(i) Find the angle turned by the minute hand in 5 minutes. [1]",
+     "(ii) Find the distance moved by its tip in 15 minutes. [1]",
+     "(iii) Find the area swept by the minute hand between 6:05 and 6:40. [2]",
+     "OR",
+     "(iii) Find the area swept by the minute hand in 5 minutes. [2]"
+    ]
+   },
+   "caseStudy": "A stationery shop sells notebooks and pens. 2 notebooks and 3 pens cost ₹180. 3 notebooks and 2 pens cost ₹220. Let a notebook cost ₹x and a pen cost ₹y.",
+   "caseStudies": {
+    "36": "A stationery shop sells notebooks and pens. 2 notebooks and 3 pens cost ₹180. 3 notebooks and 2 pens cost ₹220. Let a notebook cost ₹x and a pen cost ₹y.",
+    "37": "A circular garden has centre O and radius 10 m. A gate P is 26 m from O. Two straight paths PA and PB touch the garden boundary at A and B.",
+    "38": "The minute hand of a wall clock is 14 cm long. (π = 22/7)"
+   }
+  },
+  {
+   "id": "cbse10-sp-04",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "04",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The LCM of 2³ × 3² and 2² × 3³ is",
+     "options": [
+      "36",
+      "108",
+      "216",
+      "72"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The graph of y = p(x) cuts the x-axis at exactly three points. The number of zeroes of p(x) is",
+     "options": [
+      "0",
+      "1",
+      "3",
+      "2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The pair x + 2y = 3 and 5x + ky = 7 has a unique solution when",
+     "options": [
+      "k ≠ 5",
+      "k = 5",
+      "k ≠ 10",
+      "k = 10"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "x² − kx + 9 = 0 has equal roots when k equals",
+     "options": [
+      "±3",
+      "±6",
+      "0",
+      "±9"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If 2k + 1, 13 and 5k − 3 are consecutive terms of an AP, then k equals",
+     "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "△ABC ~ △QRP and ar(△ABC)/ar(△QRP) = 9/4. If BC = 15 cm, then PR equals",
+     "options": [
+      "20/3 cm",
+      "12 cm",
+      "10 cm",
+      "8 cm"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "If the distance between (4, p) and (1, 0) is 5, then p equals",
+     "options": [
+      "0",
+      "−4",
+      "±4",
+      "4"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If sec θ = 13/12, then cot θ equals",
+     "options": [
+      "5/12",
+      "12/5",
+      "13/5",
+      "5/13"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "If x = a cos θ and y = b sin θ, then x²/a² + y²/b² equals",
+     "options": [
+      "1",
+      "0",
+      "2",
+      "a²b²"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "Two tangents to a circle of radius 3 cm are inclined to each other at 60°. The length of each tangent is",
+     "options": [
+      "6 cm",
+      "(3√3)/2 cm",
+      "3√3 cm",
+      "3 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a quadrant of a circle whose circumference is 22 cm is (π = 22/7)",
+     "options": [
+      "77/8 cm²",
+      "77/4 cm²",
+      "11 cm²",
+      "77/2 cm²"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "Two cubes of edge 4 cm are joined end to end. The surface area of the resulting cuboid is",
+     "options": [
+      "160 cm²",
+      "128 cm²",
+      "96 cm²",
+      "192 cm²"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "For the data 0–5: 4, 5–10: 6, 10–15: 8, 15–20: 5, 20–25: 2, the upper limit of the median class is",
+     "options": [
+      "20",
+      "15",
+      "10",
+      "12.5"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "One card is drawn from a well-shuffled deck of 52 cards. The probability of a face card is",
+     "options": [
+      "4/13",
+      "1/13",
+      "3/13",
+      "3/52"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "Three vertices of parallelogram ABCD are A(−2, 3), B(6, 7) and C(8, 3). The fourth vertex D is",
+     "options": [
+      "(0, 1)",
+      "(−4, 1)",
+      "(0, −1)",
+      "(4, −1)"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "If mode = 12 and mean = 15, then by the empirical relation the median is",
+     "options": [
+      "13.5",
+      "13",
+      "14",
+      "16"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The angle of elevation of the top of a 50√3 m tower from a point 50 m from its foot is",
+     "options": [
+      "90°",
+      "30°",
+      "45°",
+      "60°"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "The probability of getting a number greater than 6 when a die is thrown is",
+     "options": [
+      "1",
+      "6",
+      "0",
+      "1/6"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The polynomial x² + 1 has no real zeroes.",
+     "reason": "The graph of y = x² + 1 does not meet the x-axis."
+    },
+    {
+     "number": 20,
+     "assertion": "The point (0, 4) lies on the y-axis.",
+     "reason": "Every point on the x-axis has y-coordinate zero."
+    }
+   ],
+   "written": {
+    "21": [
+     "Explain why 7 × 11 × 13 + 13 is a composite number.",
+     "OR",
+     "Find the HCF of 1260 and 7344 by prime factorisation."
+    ],
+    "22": [
+     "Q(0, 1) is equidistant from P(5, −3) and R(x, 6). Find the values of x.",
+     "OR",
+     "P and Q are points on sides AB and AC of △ABC with AP = 3 cm, PB = 6 cm, AQ = 5 cm and QC = 10 cm. Show that PQ ∥ BC."
+    ],
+    "23": "If sin θ = cos θ, where θ is acute, find the value of 2 tan θ + cos²θ.",
+    "24": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+    "25": "A piggy bank contains hundred 50 p coins, fifty ₹1 coins, twenty ₹2 coins and ten ₹5 coins. One coin falls out when it is turned upside down. Find the probability that the coin (a) is a 50 p coin (b) is not a ₹5 coin.",
+    "26": "Prove that √3 is irrational.",
+    "27": "One zero of 3x² − 8x + 2k + 1 is seven times the other. Find the zeroes and the value of k.",
+    "28": [
+     "The sum of the 4th and 8th terms of an AP is 24 and the sum of the 6th and 10th terms is 44. Find the first three terms of the AP.",
+     "OR",
+     "5 pencils and 7 pens together cost ₹50, while 7 pencils and 5 pens together cost ₹46. Find the cost of one pencil and one pen."
+    ],
+    "29": "Prove that a parallelogram circumscribing a circle is a rhombus.",
+    "30": "Find the ratio in which the point (−3, k) divides the line segment joining (−5, −4) and (−2, 3). Hence find k.",
+    "31": [
+     "Prove that (sin A + cosec A)² + (cos A + sec A)² = 7 + tan²A + cot²A.",
+     "OR",
+     "Prove that (cot A − cos A)/(cot A + cos A) = (cosec A − 1)/(cosec A + 1)."
+    ],
+    "32": "Two water taps together can fill a tank in 75/8 hours. The tap of larger diameter takes 10 hours less than the smaller one to fill the tank separately. Find the time in which each tap can separately fill the tank.",
+    "33": "Through the midpoint M of side CD of parallelogram ABCD, the line BM is drawn. It intersects AC at L and AD produced at E. Prove that EL = 2BL.",
+    "34": [
+     "A solid iron pole is a cylinder of height 220 cm and base diameter 24 cm, surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given that 1 cm³ of iron has mass 8 g. (π = 3.14)",
+     "OR",
+     "How many silver coins, 1.75 cm in diameter and 2 mm thick, must be melted to form a cuboid of dimensions 5.5 cm × 10 cm × 3.5 cm? (π = 22/7)"
+    ],
+    "35": [
+     "A 1.2 m tall girl sees a balloon moving with the wind in a horizontal line at a height of 88.2 m from the ground. The angle of elevation of the balloon from her eyes is 60°. After some time it becomes 30°. Find the distance travelled by the balloon. (√3 = 1.732)",
+     "OR",
+     "Find the mean of the following data by the assumed-mean method.\nClass: 0–20, 20–40, 40–60, 60–80, 80–100\nFrequency: 17, 28, 32, 24, 19"
+    ],
+    "36": [
+     "(i) How many rungs does the ladder have? [1]",
+     "(ii) Find the common difference of the rung lengths. [1]",
+     "(iii) Find the total length of wood needed for the rungs. [2]",
+     "OR",
+     "(iii) Find the length of the 6th rung from the bottom. [2]"
+    ],
+    "37": [
+     "(i) Find the distance LS. [1]",
+     "(ii) Is △LSM isosceles? Give a reason. [1]",
+     "(iii) Find the distance of S from the midpoint of LM. [2]",
+     "OR",
+     "(iii) Find the point that divides LM internally in the ratio 1 : 3. [2]"
+    ],
+    "38": [
+     "(i) Find the probability that the number is a multiple of 7. [1]",
+     "(ii) Find the probability that the number is less than 10. [1]",
+     "(iii) Find the probability that the number is a multiple of 3 or of 5. [2]",
+     "OR",
+     "(iii) Find the probability that the number is a prime number. [2]"
+    ]
+   },
+   "caseStudy": "The rungs of a ladder are 25 cm apart. Their lengths decrease uniformly from 45 cm at the bottom to 25 cm at the top. The top and bottom rungs are 2.5 m apart.",
+   "caseStudies": {
+    "36": "The rungs of a ladder are 25 cm apart. Their lengths decrease uniformly from 45 cm at the bottom to 25 cm at the top. The top and bottom rungs are 2.5 m apart.",
+    "37": "On a town map, the library is at L(2, 3), the school at S(6, 6) and the market at M(10, 3). Each unit is 1 km.",
+    "38": "In a class lottery, 50 tickets are numbered 1 to 50. One ticket is drawn at random."
+   }
+  },
+  {
+   "id": "cbse10-sp-05",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "05",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which of these has a terminating decimal expansion?",
+     "options": [
+      "64/455",
+      "29/343",
+      "17/8",
+      "77/210"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The sum and the product of the zeroes of 2x² − 8x + 6 are",
+     "options": [
+      "−4 and 3",
+      "4 and −3",
+      "4 and 3",
+      "8 and 6"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The solution of x − 2y = 0 and 3x + 4y − 20 = 0 is",
+     "options": [
+      "(−4, −2)",
+      "(4, 2)",
+      "(2, 4)",
+      "(2, 1)"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which of these is a quadratic equation?",
+     "options": [
+      "(x + 1)² = x² + 3",
+      "(x + 2)² = 2x(x − 1)",
+      "(x − 2)(x + 1) = (x − 1)(x + 3)",
+      "x(x + 1) + 8 = (x + 2)(x − 2)"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The sum of the first 10 terms of the AP 2, 7, 12, … is",
+     "options": [
+      "245",
+      "225",
+      "255",
+      "235"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "In △ABC, DE ∥ BC with D on AB and E on AC. AD = 2.4 cm, AE = 3.2 cm and EC = 4.8 cm. Then AB equals",
+     "options": [
+      "7.2 cm",
+      "5.6 cm",
+      "6 cm",
+      "3.6 cm"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "AB is a diameter of a circle with centre (2, −3). If A is (1, 4), then B is",
+     "options": [
+      "(1, −10)",
+      "(3, −2)",
+      "(−3, 10)",
+      "(3, −10)"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "2 tan 30°/(1 − tan²30°) equals",
+     "options": [
+      "√3",
+      "1",
+      "1/√3",
+      "0"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "If sin A + sin²A = 1, then cos²A + cos⁴A equals",
+     "options": [
+      "−1",
+      "1",
+      "2",
+      "0"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "A circle is inscribed in quadrilateral ABCD. AB = 6 cm, BC = 7 cm and CD = 4 cm. Then AD equals",
+     "options": [
+      "3 cm",
+      "4 cm",
+      "5 cm",
+      "2 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The perimeter and the area of a circle are numerically equal. Its radius is",
+     "options": [
+      "π units",
+      "7 units",
+      "2 units",
+      "4 units"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "A cone and a cylinder have the same base radius and height. The ratio of their volumes is",
+     "options": [
+      "3 : 1",
+      "2 : 3",
+      "1 : 2",
+      "1 : 3"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The sum of the deviations of a set of observations from their mean is",
+     "options": [
+      "0",
+      "1",
+      "n",
+      "the mean"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "A letter is chosen at random from the word ASSASSINATION. The probability that it is a vowel is",
+     "options": [
+      "3/13",
+      "6/13",
+      "7/13",
+      "4/13"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The distance between (a cos θ, 0) and (0, a sin θ) is",
+     "options": [
+      "2a",
+      "0",
+      "a²",
+      "a"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The mean of 5 numbers is 18. When one number is removed, the mean of the rest is 16. The removed number is",
+     "options": [
+      "26",
+      "18",
+      "2",
+      "34"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A kite flies at a height of 60 m. Its string makes an angle of 60° with the ground. The length of the string is",
+     "options": [
+      "60√3 m",
+      "30√3 m",
+      "40√3 m",
+      "120 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "A number is chosen at random from 1 to 25. The probability that it is divisible by 4 is",
+     "options": [
+      "6/25",
+      "1/4",
+      "1/5",
+      "7/25"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The 10th term of the AP 5, 9, 13, … is 41.",
+     "reason": "The nth term of an AP is a + (n − 1)d."
+    },
+    {
+     "number": 20,
+     "assertion": "A tangent to a circle meets it at exactly one point.",
+     "reason": "A secant meets a circle at two points."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the HCF and LCM of 6, 72 and 120 by prime factorisation.",
+     "OR",
+     "Check whether 4ⁿ can end with the digit 0 for any natural number n."
+    ],
+    "22": [
+     "Find the ratio in which the point (−1, 6) divides the line segment joining (−3, 10) and (6, −8).",
+     "OR",
+     "In △PQR, ST ∥ QR with S on PQ and T on PR. If PS/SQ = 3/5 and PR = 28 cm, find PT."
+    ],
+    "23": "Evaluate: (5 cos²60° + 4 sec²30° − tan²45°)/(sin²30° + cos²30°).",
+    "24": "A circle touches all four sides of a quadrilateral ABCD. Prove that AB + CD = BC + DA.",
+    "25": "A horse is tied to a peg at one corner of a square grass field of side 15 m by a rope 5 m long. Find the area of the field over which it can graze. (π = 3.14)",
+    "26": "Given that √2 is irrational, prove that 5 + 3√2 is irrational.",
+    "27": "α and β are the zeroes of x² − 6x + k, and 3α + 2β = 20. Find k.",
+    "28": [
+     "The sum of the first 7 terms of an AP is 49 and the sum of the first 17 terms is 289. Find the sum of the first n terms.",
+     "OR",
+     "Five years ago, Nuri was thrice as old as Sonu. Ten years later, Nuri will be twice as old as Sonu. Find their present ages."
+    ],
+    "29": "TP and TQ are tangents from an external point T to a circle with centre O. Prove that ∠PTQ = 2∠OPQ.",
+    "30": "Find the points on the x-axis that are at a distance of 10 units from (11, −8).",
+    "31": [
+     "Prove that (tan A + sec A − 1)/(tan A − sec A + 1) = (1 + sin A)/cos A.",
+     "OR",
+     "Prove that (sin A − 2 sin³A)/(2 cos³A − cos A) = tan A."
+    ],
+    "32": "The difference of the squares of two natural numbers is 180. The square of the smaller number is 8 times the larger number. Find the numbers.",
+    "33": "ABCD is a trapezium with AB ∥ DC, and its diagonals meet at O. Show that AO/BO = CO/DO. If AO = 3x − 19, OC = x − 5, BO = x − 3 and DO = 3, find x.",
+    "34": [
+     "A gulab jamun is a cylinder with two hemispherical ends. Its total length is 5 cm and its diameter is 2.8 cm. It contains sugar syrup up to 30% of its volume. Find the syrup in 45 gulab jamuns. (π = 22/7)",
+     "OR",
+     "A spherical glass vessel has a cylindrical neck 8 cm long and 2 cm in diameter. The diameter of the spherical part is 8.5 cm. A child measures the water it holds as 345 cm³. Check whether she is correct, taking the measurements as inner measurements. (π = 3.14)"
+    ],
+    "35": [
+     "From the top of a 7 m high building, the angle of elevation of the top of a cable tower is 60° and the angle of depression of its foot is 45°. Find the height of the tower. (√3 = 1.732)",
+     "OR",
+     "Find the mode of the number of cars passing a point in 80 one-minute intervals.\nCars: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60, 60–70, 70–80\nFrequency: 7, 14, 13, 12, 20, 11, 15, 8"
+    ],
+    "36": [
+     "(i) Find the apparent capacity of a glass. [1]",
+     "(ii) Find the volume of the raised hemispherical part. [1]",
+     "(iii) Find the actual capacity of a glass. [2]",
+     "OR",
+     "(iii) Find the actual volume of juice, in litres, served in 50 full glasses. [2]"
+    ],
+    "37": [
+     "(i) Find the height of the standing part. [1]",
+     "(ii) Find the length of the broken part. [1]",
+     "(iii) Find the original height of the tree. [2]",
+     "OR",
+     "(iii) If the broken part had made 45° with the ground at the same distance of 8 m, find the original height. (√2 = 1.414) [2]"
+    ],
+    "38": [
+     "(i) Write the modal class. [1]",
+     "(ii) Write the median class. [1]",
+     "(iii) Find the median marks. [2]",
+     "OR",
+     "(iii) Find the mean marks. [2]"
+    ]
+   },
+   "caseStudy": "A juice seller serves juice in glasses with an inner diameter of 5 cm. Each glass has a raised hemispherical bottom of the same diameter, and its height is 10 cm. (π = 3.14)",
+   "caseStudies": {
+    "36": "A juice seller serves juice in glasses with an inner diameter of 5 cm. Each glass has a raised hemispherical bottom of the same diameter, and its height is 10 cm. (π = 3.14)",
+    "37": "A storm breaks a tree. The broken part bends so that its top touches the ground 8 m from the foot of the tree, making an angle of 30° with the ground. (√3 = 1.732)",
+    "38": "The marks (out of 60) of 40 students are given below.\nMarks: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60\nStudents: 3, 5, 9, 12, 7, 4"
+   }
+  },
+  {
+   "id": "cbse10-sp-06",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "06",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "If p = a²b³ and q = a³b, where a and b are distinct primes, then HCF(p, q) is",
+     "options": [
+      "a³b³",
+      "a²b²",
+      "a²b",
+      "ab"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A quadratic polynomial whose zeroes have sum 0 and product −1 is",
+     "options": [
+      "x² − x",
+      "x² + x − 1",
+      "x² + 1",
+      "x² − 1"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "x = a, y = b is the solution of x − y = 2 and x + y = 4. Then a and b are",
+     "options": [
+      "3 and 1",
+      "4 and 2",
+      "1 and 3",
+      "2 and 0"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The roots of 2x² − x − 6 = 0 are",
+     "options": [
+      "−2 and 3/2",
+      "2 and −3/2",
+      "3 and −2",
+      "1 and −6"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The common difference of the AP 1/p, (1 − p)/p, (1 − 2p)/p, … is",
+     "options": [
+      "p",
+      "1",
+      "−1",
+      "−p"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "In △ABC and △DEF, AB/DE = BC/FD. The triangles are similar if",
+     "options": [
+      "∠B = ∠E",
+      "∠A = ∠D",
+      "∠A = ∠F",
+      "∠B = ∠D"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "Which point lies on the perpendicular bisector of the segment joining A(−2, −5) and B(2, 5)?",
+     "options": [
+      "(2, 0)",
+      "(0, 2)",
+      "(0, 0)",
+      "(−2, 0)"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If cos 9α = sin α and 9α < 90°, then tan 5α equals",
+     "options": [
+      "1/√3",
+      "1",
+      "√3",
+      "0"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "sin²θ/(1 − cos θ) equals",
+     "options": [
+      "1 + cos θ",
+      "1 − cos θ",
+      "sin θ",
+      "cos θ"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "PA and PB are tangents from P to a circle with centre O. If ∠AOB = 100°, then ∠OAB equals",
+     "options": [
+      "80°",
+      "50°",
+      "100°",
+      "40°"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a circle equals the sum of the areas of circles of radii 6 cm and 8 cm. Its radius is",
+     "options": [
+      "10 cm",
+      "7 cm",
+      "12 cm",
+      "14 cm"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The total surface area of a solid hemisphere of radius r is",
+     "options": [
+      "2πr²",
+      "4πr²",
+      "3πr²",
+      "πr²"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "For 10–20: 3, 20–30: 8, 30–40: 12, 40–50: 7, the lower limit of the modal class is",
+     "options": [
+      "12",
+      "30",
+      "20",
+      "40"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "Two dice are thrown together. The probability that the sum is 13 is",
+     "options": [
+      "1",
+      "0",
+      "1/12",
+      "1/36"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The point dividing the join of (−1, 7) and (4, −3) internally in the ratio 2 : 3 is",
+     "options": [
+      "(3, 1)",
+      "(1, 3)",
+      "(2, 1)",
+      "(1, −3)"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The median of 3, 5, 8, 10, 12 and 14 is",
+     "options": [
+      "9",
+      "10",
+      "8.5",
+      "8"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A 1.5 m tall observer stands 28.5 m from a 30 m tall tower. The angle of elevation of the top of the tower from her eyes is",
+     "options": [
+      "90°",
+      "60°",
+      "45°",
+      "30°"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "A bag has 6 red balls and some blue balls. The probability of a blue ball is twice that of a red ball. The number of blue balls is",
+     "options": [
+      "3",
+      "12",
+      "18",
+      "6"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "If HCF(a, b) = 1, then LCM(a, b) = ab.",
+     "reason": "HCF(a, b) × LCM(a, b) = a × b for positive integers a and b."
+    },
+    {
+     "number": 20,
+     "assertion": "The roots of x² − 4x + 4 = 0 are equal.",
+     "reason": "A quadratic equation has equal roots when its discriminant is positive."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the least number which leaves remainder 5 when divided by 6, 15 and 18.",
+     "OR",
+     "Express 156 as a product of primes and find HCF(156, 210)."
+    ],
+    "22": [
+     "Show that the points (1, −1), (5, 2) and (9, 5) are collinear.",
+     "OR",
+     "△ABC ~ △DEF with AB = 4 cm, DE = 6 cm, EF = 9 cm and FD = 12 cm. Find the perimeter of △ABC."
+    ],
+    "23": "If 3 cot A = 4, check whether (1 − tan²A)/(1 + tan²A) = cos²A − sin²A.",
+    "24": "PA and PB are tangents from P to a circle with centre O and radius 5 cm. If ∠APB = 60°, find the length of PA.",
+    "25": "Find the area of the minor sector of a circle of radius 4 cm and angle 30°. Also find the area of the corresponding major sector. (π = 3.14)",
+    "26": "Given that √2 is irrational, prove that 1/√2 is irrational.",
+    "27": "Find the zeroes of x² + x/6 − 2 and verify the relationship between the zeroes and the coefficients.",
+    "28": [
+     "The 3rd and 9th terms of an AP are 4 and −8. Which term of the AP is zero?",
+     "OR",
+     "Solve by elimination: 3x − 5y − 4 = 0 and 9x = 2y + 7."
+    ],
+    "29": "Prove that in two concentric circles, a chord of the larger circle that touches the smaller circle is bisected at the point of contact.",
+    "30": "Find the coordinates of the points that divide the line segment joining A(−2, 2) and B(2, 8) into four equal parts.",
+    "31": [
+     "Prove that (cos A − sin A + 1)/(cos A + sin A − 1) = cosec A + cot A.",
+     "OR",
+     "If tan θ + sin θ = m and tan θ − sin θ = n, show that m² − n² = 4√(mn)."
+    ],
+    "32": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth. Is a park of perimeter 80 m and area 410 m² possible? Give a reason.",
+    "33": "E is a point on side AD produced of a parallelogram ABCD, and BE intersects CD at F. Show that △ABE ~ △CFB. If AE = 12 cm, BC = 8 cm and AB = 9 cm, find CF.",
+    "34": [
+     "A hemispherical depression is cut out from one face of a cubical wooden block of edge 7 cm. The diameter of the hemisphere equals the edge of the cube. Find the surface area of the remaining solid. (π = 22/7)",
+     "OR",
+     "Water in a canal 6 m wide and 1.5 m deep flows at 10 km/h. How much area will it irrigate in 30 minutes if 8 cm of standing water is needed?"
+    ],
+    "35": [
+     "The angles of depression of the top and the bottom of an 8 m tall building, seen from the top of a multi-storeyed building, are 30° and 45°. Find the height of the multi-storeyed building and the distance between the two buildings. (√3 = 1.732)",
+     "OR",
+     "Find the median height of the following students.\nHeight (cm): 135–140, 140–145, 145–150, 150–155, 155–160, 160–165\nStudents: 4, 7, 18, 11, 6, 5"
+    ],
+    "36": [
+     "(i) Find the distance AB. [1]",
+     "(ii) Find the length of the diagonal AC. [1]",
+     "(iii) Show that ABCD is a square. [2]",
+     "OR",
+     "(iii) Find the point that divides AC internally in the ratio 1 : 2. [2]"
+    ],
+    "37": [
+     "(i) Find the height of the roof. [1]",
+     "(ii) Find the zeroes of h(t) and state when the ball hits the ground. [1]",
+     "(iii) At what times is the ball 40 m above the ground? [2]",
+     "OR",
+     "(iii) Find the sum and the product of the zeroes of h(t). [2]"
+    ],
+    "38": [
+     "(i) Write the number of possible outcomes. [1]",
+     "(ii) Find the probability that the sum is 8. [1]",
+     "(iii) Find the probability that the product of the numbers is even. [2]",
+     "OR",
+     "(iii) Find the probability that the sum is at least 10. [2]"
+    ]
+   },
+   "caseStudy": "For a school drill, four students stand at A(3, 4), B(6, 7), C(9, 4) and D(6, 1) on a grid marked in metres.",
+   "caseStudies": {
+    "36": "For a school drill, four students stand at A(3, 4), B(6, 7), C(9, 4) and D(6, 1) on a grid marked in metres.",
+    "37": "A ball is thrown upward from the roof of a building. Its height above the ground after t seconds is h(t) = −5t² + 20t + 25 metres.",
+    "38": "In a board game, two fair dice are thrown together."
+   }
+  },
+  {
+   "id": "cbse10-sp-07",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "07",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "HCF(65, 117) can be written as 65m − 117. The value of m is",
+     "options": [
+      "2",
+      "4",
+      "3",
+      "1"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "α and β are the zeroes of x² − p(x + 1) − c and (α + 1)(β + 1) = 0. Then c equals",
+     "options": [
+      "−1",
+      "1",
+      "0",
+      "2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "kx + 3y = k − 3 and 12x + ky = k have no solution when k equals",
+     "options": [
+      "6",
+      "−6",
+      "±6",
+      "0"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If x = 3 is a root of x² − 2kx − 6 = 0, then k equals",
+     "options": [
+      "2",
+      "3",
+      "−1/2",
+      "1/2"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "Which term of the AP 21, 18, 15, … is −81?",
+     "options": [
+      "36th",
+      "34th",
+      "33rd",
+      "35th"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "△ABC ~ △PQR. Their perimeters are 30 cm and 45 cm. If PQ = 9 cm, then AB equals",
+     "options": [
+      "8 cm",
+      "4 cm",
+      "13.5 cm",
+      "6 cm"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The midpoint of the segment joining (a, b) and (−a, 3b) is",
+     "options": [
+      "(a, 2b)",
+      "(0, b)",
+      "(0, 2b)",
+      "(2a, 4b)"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If sin θ − cos θ = 0, then sin⁴θ + cos⁴θ equals",
+     "options": [
+      "1",
+      "3/4",
+      "1/2",
+      "1/4"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "9 sec²A − 9 tan²A equals",
+     "options": [
+      "0",
+      "9",
+      "8",
+      "1"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The angle between two radii of a circle is 130°. The angle between the tangents at their ends is",
+     "options": [
+      "130°",
+      "65°",
+      "90°",
+      "50°"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "A wheel of diameter 70 cm makes how many complete revolutions to cover 2.2 km? (π = 22/7)",
+     "options": [
+      "500",
+      "1000",
+      "100",
+      "2000"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The volume of the largest sphere carved out of a cube of edge 14 cm is (π = 22/7)",
+     "options": [
+      "4312/3 cm³",
+      "4312 cm³",
+      "2744 cm³",
+      "1078 cm³"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The mean of the first n natural numbers is 15. Then n equals",
+     "options": [
+      "15",
+      "29",
+      "30",
+      "31"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "A die is thrown once. The probability of an odd number less than 4 is",
+     "options": [
+      "1/2",
+      "1/6",
+      "1/3",
+      "2/3"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "(a/3, 4) is the midpoint of the segment joining (−6, 5) and (−2, 3). Then a equals",
+     "options": [
+      "−12",
+      "12",
+      "−4",
+      "−6"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "For a frequency distribution, Σfᵢxᵢ = 1860 and Σfᵢ = 40. The mean is",
+     "options": [
+      "45",
+      "47.5",
+      "46.5",
+      "46"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "From a point on the ground 20 m from the foot of a tower, the angle of elevation of its top is 60°. The height of the tower is",
+     "options": [
+      "40 m",
+      "20√3 m",
+      "20/√3 m",
+      "10√3 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "Which of these cannot be the probability of an event?",
+     "options": [
+      "1.01",
+      "2/3",
+      "0.7",
+      "15%"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The sum of the first n terms of an AP is 4n² + n. Its first term is 5.",
+     "reason": "The first term of an AP equals S₁."
+    },
+    {
+     "number": 20,
+     "assertion": "In △ABC, if DE ∥ BC with D on AB and E on AC, then AD/DB = AE/EC.",
+     "reason": "Two triangles are similar if their corresponding angles are equal."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the HCF of 1656 and 4025 by prime factorisation.",
+     "OR",
+     "A sweet seller has 420 kaju barfis and 130 badam barfis. He wants to stack them so that each stack has the same number of barfis of one kind. Find the greatest number of barfis that can be placed in each stack."
+    ],
+    "22": [
+     "Find the values of y for which the distance between P(2, −3) and Q(10, y) is 10 units.",
+     "OR",
+     "In △ABC, DE ∥ BC with D on AB and E on AC. AD = 4x − 3, AE = 8x − 7, BD = 3x − 1 and CE = 5x − 3. Find x."
+    ],
+    "23": "If 2 sin 2θ = √3 and θ is acute, find θ.",
+    "24": "TP and TQ are tangents from T to a circle with centre O. If ∠POQ = 110°, find ∠PTQ.",
+    "25": "Find the area of a quadrant of a circle whose circumference is 88 cm. (π = 22/7)",
+    "26": "Prove that √7 is irrational.",
+    "27": "Find a quadratic polynomial whose zeroes are 5 − 3√2 and 5 + 3√2.",
+    "28": [
+     "Find the sum of all three-digit numbers that are divisible by 7.",
+     "OR",
+     "A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours it goes 40 km upstream and 55 km downstream. Find the speed of the boat in still water and the speed of the stream."
+    ],
+    "29": "Prove that the opposite sides of a quadrilateral circumscribing a circle subtend supplementary angles at the centre of the circle.",
+    "30": "A(−2, 1), B(a, 0), C(4, b) and D(1, 2) are the vertices of a parallelogram ABCD. Find a and b.",
+    "31": [
+     "Prove that sec A (1 − sin A)(sec A + tan A) = 1.",
+     "OR",
+     "Prove that (sin θ + cos θ)/(sin θ − cos θ) + (sin θ − cos θ)/(sin θ + cos θ) = 2/(2 sin²θ − 1)."
+    ],
+    "32": "A shopkeeper buys some books for ₹80. If he had bought 4 more books for the same amount, each book would have cost ₹1 less. Find the number of books he bought.",
+    "33": "△ABC ~ △PQR, and AD and PM are their medians. Prove that AB/PQ = AD/PM. If AB = 6 cm, PQ = 9 cm and PM = 7.5 cm, find AD.",
+    "34": [
+     "A solid is a cylinder with a hemisphere at each end. Its total length is 104 cm and the radius of each hemisphere is 7 cm. Find the cost of polishing its surface at ₹10 per dm². (π = 22/7)",
+     "OR",
+     "From a solid cylinder of height 2.4 cm and diameter 1.4 cm, a conical cavity of the same height and diameter is hollowed out. Find the total surface area of the remaining solid. (π = 22/7)"
+    ],
+    "35": [
+     "A man on the deck of a ship is 10 m above the water. He observes that the angle of elevation of the top of a hill is 60° and the angle of depression of the base of the hill is 30°. Find the distance of the hill from the ship and the height of the hill. (√3 = 1.732)",
+     "OR",
+     "The mean of the following distribution of 120 observations is 50. Find the missing frequencies f₁ and f₂.\nClass: 0–20, 20–40, 40–60, 60–80, 80–100\nFrequency: 17, f₁, 32, f₂, 19"
+    ],
+    "36": [
+     "(i) Write the pair of linear equations. [1]",
+     "(ii) Find the charge per km. [1]",
+     "(iii) Find the fixed charge and the fare for 25 km. [2]",
+     "OR",
+     "(iii) For what distance is the fare ₹305? [2]"
+    ],
+    "37": [
+     "(i) Find the length of PA. [1]",
+     "(ii) Write ∠OAP and give a reason. [1]",
+     "(iii) Find the area of the quadrilateral OAPB. [2]",
+     "OR",
+     "(iii) Find the length of the chord AB. [2]"
+    ],
+    "38": [
+     "(i) Find the length of the curved boundary of one semicircle. [1]",
+     "(ii) Find the perimeter of the playground. [1]",
+     "(iii) Find the area of the playground. [2]",
+     "OR",
+     "(iii) Find the cost of laying grass on the playground at ₹2 per m². [2]"
+    ]
+   },
+   "caseStudy": "An auto-rickshaw fare has a fixed charge and a charge per km. A ride of 10 km costs ₹105 and a ride of 15 km costs ₹155. Let the fixed charge be ₹x and the charge per km be ₹y.",
+   "caseStudies": {
+    "36": "An auto-rickshaw fare has a fixed charge and a charge per km. A ride of 10 km costs ₹105 and a ride of 15 km costs ₹155. Let the fixed charge be ₹x and the charge per km be ₹y.",
+    "37": "A circular pond has centre O and radius 8 m. A garden lamp P is 17 m from O. Two straight paths PA and PB touch the pond at A and B.",
+    "38": "A playground is a rectangle 100 m × 70 m with a semicircle on each 70 m side. (π = 22/7)"
+   }
+  },
+  {
+   "id": "cbse10-sp-08",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "08",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The product of a non-zero rational number and an irrational number is always",
+     "options": [
+      "zero",
+      "a natural number",
+      "irrational",
+      "rational"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The zeroes of x² + (a + 1)x + b are 2 and −3. Then",
+     "options": [
+      "a = 0, b = −6",
+      "a = 5, b = −1",
+      "a = 2, b = −6",
+      "a = −7, b = −1"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Half the perimeter of a rectangular garden is 36 m. Its length is 4 m more than its width. The width is",
+     "options": [
+      "14 m",
+      "20 m",
+      "18 m",
+      "16 m"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The equation 2x² − 6x + 3 = 0 has",
+     "options": [
+      "no real roots",
+      "two equal real roots",
+      "exactly one real root",
+      "two distinct real roots"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The first term of an AP is p and its common difference is q. Its 10th term is",
+     "options": [
+      "p − 9q",
+      "p + 9q",
+      "p + 10q",
+      "9p + q"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "In △ABC, ∠B = 90° and BD ⟂ AC. If AD = 4 cm and DC = 9 cm, then BD equals",
+     "options": [
+      "36 cm",
+      "5 cm",
+      "13 cm",
+      "6 cm"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The distance between (0, 5) and (−5, 0) is",
+     "options": [
+      "10",
+      "5√2",
+      "5",
+      "2√5"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If tan A = 4/3 and A is acute, then sin A cos A equals",
+     "options": [
+      "4/5",
+      "7/25",
+      "24/25",
+      "12/25"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "cos 1° × cos 2° × cos 3° × … × cos 180° equals",
+     "options": [
+      "0",
+      "−1",
+      "1",
+      "1/2"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "A point A is 5 cm from the centre of a circle. The tangent from A is 4 cm long. The radius is",
+     "options": [
+      "1 cm",
+      "9 cm",
+      "√41 cm",
+      "3 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a sector of angle θ (in degrees) of a circle of radius R is",
+     "options": [
+      "(θ/360) × πR²",
+      "(θ/180) × πR²",
+      "(θ/360) × 2πR",
+      "(θ/720) × πR²"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "A solid cylinder of height 45 cm and diameter 4 cm is melted into spheres of diameter 6 cm. The number of spheres is",
+     "options": [
+      "4",
+      "6",
+      "5",
+      "3"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The mean of 6, 7, x, 8, y and 14 is 9. Then x + y equals",
+     "options": [
+      "16",
+      "19",
+      "9",
+      "21"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "One card is drawn from a well-shuffled deck of 52 cards. The probability that it is not an ace is",
+     "options": [
+      "12/13",
+      "1/4",
+      "1/13",
+      "4/13"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The point dividing the join of (1, −2) and (4, 7) internally in the ratio 1 : 2 is",
+     "options": [
+      "(2, 1)",
+      "(2, −1)",
+      "(3, 4)",
+      "(1, 2)"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "For 0–10: 2, 10–20: 5, 20–30: 8, 30–40: 4, 40–50: 1, the class mark of the median class is",
+     "options": [
+      "20",
+      "25",
+      "15",
+      "30"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A 6 m tall pole casts a shadow 2√3 m long. The angle of elevation of the Sun is",
+     "options": [
+      "30°",
+      "90°",
+      "60°",
+      "45°"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "Two coins are tossed together. The probability of two heads is",
+     "options": [
+      "1/2",
+      "3/4",
+      "1/4",
+      "1/3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "kx² − 4x + 1 = 0 has equal roots when k = 4.",
+     "reason": "A quadratic equation ax² + bx + c = 0 has equal roots when b² − 4ac = 0."
+    },
+    {
+     "number": 20,
+     "assertion": "The probability of an event can be 1.2.",
+     "reason": "The probability of a sure event is 1."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the HCF and LCM of 26 and 91, and verify that HCF × LCM = 26 × 91.",
+     "OR",
+     "Show that 12ⁿ cannot end with the digit 0 or 5 for any natural number n."
+    ],
+    "22": [
+     "Find the point on the x-axis that is equidistant from (7, 6) and (3, 4).",
+     "OR",
+     "P and Q lie on sides AB and AC of △ABC with AB = 12 cm, AP = 4 cm, AC = 15 cm and AQ = 5 cm. Is PQ ∥ BC? Give a reason."
+    ],
+    "23": "Evaluate: (sin 30° + tan 45° − cosec 60°)/(sec 30° + cos 60° + cot 45°).",
+    "24": "A quadrilateral ABCD is drawn to circumscribe a circle. If AB = 6 cm, BC = 7.5 cm and CD = 3 cm, find DA.",
+    "25": "Two concentric circles have radii 7 cm and 14 cm. Find the area of the region between them that lies inside a sector of angle 40°. (π = 22/7)",
+    "26": "Given that √2 is irrational, prove that 3√2 is irrational.",
+    "27": "One zero of p(x) = 4x² − (8k² − 40k)x − 9 is the negative of the other. Find the values of k.",
+    "28": [
+     "The ratio of the 11th term to the 18th term of an AP is 2 : 3. Find the ratio of the 5th term to the 21st term.",
+     "OR",
+     "Solve: 2/x + 3/y = 13 and 5/x − 4/y = −2 (x, y ≠ 0)."
+    ],
+    "29": "A circle touches side BC of △ABC at P and the extensions of AB and AC at Q and R. Prove that AQ = (1/2) × (perimeter of △ABC).",
+    "30": "A(−2, −2) and B(2, −4) are given. Find the coordinates of P on AB such that AP = (3/7)AB.",
+    "31": [
+     "Prove that (1 + tan²A)/(1 + cot²A) = [(1 − tan A)/(1 − cot A)]² = tan²A.",
+     "OR",
+     "Prove that tan A/(sec A − 1) + tan A/(sec A + 1) = 2 cosec A."
+    ],
+    "32": "An aeroplane left 30 minutes late. To reach its destination 1500 km away on time, it increased its usual speed by 100 km/h. Find its usual speed.",
+    "33": "The diagonals of a quadrilateral ABCD meet at O with AO/BO = CO/DO. Show that ABCD is a trapezium. Hence, if ABCD is a trapezium with AB ∥ DC and AB = 2CD, find AO : OC.",
+    "34": [
+     "A cylindrical container of diameter 12 cm and height 15 cm is full of ice cream. It is filled into cones of height 12 cm and diameter 6 cm, each with a hemispherical top. Find the number of such cones that can be filled.",
+     "OR",
+     "A well of diameter 3 m is dug 14 m deep. The earth taken out is spread evenly to form a platform 22 m × 14 m. Find the height of the platform. (π = 22/7)"
+    ],
+    "35": [
+     "From a point P on the ground, the angle of elevation of the top of a 10 m tall building is 30°. A flagstaff on top of the building has its top at an angle of elevation of 45° from P. Find the length of the flagstaff and the distance of the building from P. (√3 = 1.732)",
+     "OR",
+     "Find the mode of the ages of patients admitted to a hospital.\nAge (years): 5–15, 15–25, 25–35, 35–45, 45–55, 55–65\nPatients: 6, 11, 21, 23, 14, 5"
+    ],
+    "36": [
+     "(i) Write the quadratic equation for x. [1]",
+     "(ii) Find its discriminant. [1]",
+     "(iii) Find the number of toys made that day. [2]",
+     "OR",
+     "(iii) Find the cost of one toy when 30 toys are made. [2]"
+    ],
+    "37": [
+     "(i) Find the distance of the first man (30°) from the tower. [1]",
+     "(ii) Find the distance of the second man (60°) from the tower. [1]",
+     "(iii) Find the distance between the two men. [2]",
+     "OR",
+     "(iii) If both men stood on the same side of the tower, find the distance between them. [2]"
+    ],
+    "38": [
+     "(i) Write the modal class. [1]",
+     "(ii) Write the median class. [1]",
+     "(iii) Find the median lifetime. [2]",
+     "OR",
+     "(iii) Find the modal lifetime. [2]"
+    ]
+   },
+   "caseStudy": "A cottage industry makes toys. On one day, the cost of making each toy (in ₹) was 55 minus the number of toys made. The total cost that day was ₹750. Let x toys be made.",
+   "caseStudies": {
+    "36": "A cottage industry makes toys. On one day, the cost of making each toy (in ₹) was 55 minus the number of toys made. The total cost that day was ₹750. Let x toys be made.",
+    "37": "Two men stand on opposite sides of a 75 m high temple tower, in a straight line with its foot. They see the top at angles of elevation of 30° and 60°. (√3 = 1.732)",
+    "38": "The lifetimes of 400 bulbs are given below.\nLifetime (hours): 1500–2000, 2000–2500, 2500–3000, 3000–3500, 3500–4000, 4000–4500, 4500–5000\nBulbs: 14, 56, 60, 86, 74, 62, 48"
+   }
+  },
+  {
+   "id": "cbse10-sp-09",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "09",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The LCM of the smallest prime number and the smallest composite number is",
+     "options": [
+      "8",
+      "4",
+      "2",
+      "6"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The zeroes of x² − 3 are",
+     "options": [
+      "√3 only",
+      "±3",
+      "3 only",
+      "±√3"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The pair 2x + 3y − 9 = 0 and 4x + 6y − 18 = 0 has",
+     "options": [
+      "no solution",
+      "infinitely many solutions",
+      "a unique solution",
+      "exactly two solutions"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The positive solution of √(3x² + 6) = 9 is",
+     "options": [
+      "3",
+      "25",
+      "5",
+      "√75"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The sum of the first 16 terms of the AP 10, 6, 2, … is",
+     "options": [
+      "−320",
+      "−352",
+      "320",
+      "352"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "△ABC ~ △DEF with BC = 3 cm and EF = 4 cm. If ar(△ABC) = 54 cm², then ar(△DEF) is",
+     "options": [
+      "96 cm²",
+      "128 cm²",
+      "72 cm²",
+      "108 cm²"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The points (−4, 0), (4, 0) and (0, 3) are the vertices of",
+     "options": [
+      "an equilateral triangle",
+      "an isosceles triangle",
+      "a scalene triangle",
+      "a right triangle"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If cosec θ = √10 and θ is acute, then sec θ equals",
+     "options": [
+      "√10/3",
+      "3/√10",
+      "1/√10",
+      "√10"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "cos⁴A − sin⁴A equals",
+     "options": [
+      "1",
+      "2 sin²A − 1",
+      "0",
+      "2 cos²A − 1"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "PQ is a tangent at P to a circle with centre O and radius 7 cm. If OQ = 25 cm, then PQ equals",
+     "options": [
+      "32 cm",
+      "√674 cm",
+      "18 cm",
+      "24 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of the circle inscribed in a square of side 6 cm is",
+     "options": [
+      "9π cm²",
+      "12π cm²",
+      "36π cm²",
+      "18π cm²"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "A cuboid has volume 440 cm³ and base area 88 cm². Its height is",
+     "options": [
+      "2.5 cm",
+      "4 cm",
+      "10 cm",
+      "5 cm"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "In the step-deviation method, a = 35, h = 10, Σfᵢuᵢ = 15 and Σfᵢ = 60. The mean is",
+     "options": [
+      "35.25",
+      "37.5",
+      "38",
+      "32.5"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "A number is chosen at random from 1 to 100. The probability that it is a perfect square is",
+     "options": [
+      "1/10",
+      "9/100",
+      "3/10",
+      "1/5"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "A(3, y) is equidistant from P(8, −3) and Q(7, 6). Then y equals",
+     "options": [
+      "1",
+      "2",
+      "0",
+      "−1"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "For a distribution, mean = 24 and median = 26. By the empirical relation, the mode is",
+     "options": [
+      "28",
+      "25",
+      "30",
+      "32"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A ramp rises 1.5 m and makes an angle of 30° with the ground. The length of the ramp is",
+     "options": [
+      "3√3 m",
+      "1.5 m",
+      "1.5√3 m",
+      "3 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "Three coins are tossed together. The probability of exactly two heads is",
+     "options": [
+      "3/8",
+      "1/8",
+      "1/2",
+      "3/4"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "2 and 3 are the zeroes of x² − 5x + 6.",
+     "reason": "x² − 5x + 6 = (x − 2)(x − 3)."
+    },
+    {
+     "number": 20,
+     "assertion": "The total surface area of a cube of edge 3 cm is 54 cm².",
+     "reason": "The volume of a cube of edge a is a³."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the largest number that divides 70 and 125 leaving remainders 5 and 8 respectively.",
+     "OR",
+     "Three bells toll at intervals of 9, 12 and 15 minutes. They toll together at 8 a.m. When will they next toll together?"
+    ],
+    "22": [
+     "Find the ratio in which the x-axis divides the line segment joining A(1, −5) and B(−4, 5). Also find the point of division.",
+     "OR",
+     "In △ABC, DE ∥ BC with D on AB and E on AC. If AD/DB = 2/3 and DE = 4 cm, find BC."
+    ],
+    "23": "If tan(A + B) = √3 and tan(A − B) = 1/√3, where 0° < A + B ≤ 90° and A > B, find A and B.",
+    "24": "PQ and PR are tangents from P to a circle with centre O. If ∠QPR = 46°, find ∠QOR and ∠OQR.",
+    "25": "A sector of a circle of radius 5 cm has angle 72°. Find the length of its arc and its perimeter. (π = 3.14)",
+    "26": "Given that √5 is irrational, prove that 2 − 3√5 is irrational.",
+    "27": "Find the zeroes of 4s² − 4s + 1 and verify the relationship between the zeroes and the coefficients.",
+    "28": [
+     "An AP has 37 terms. The sum of its three middle terms is 225 and the sum of its last three terms is 429. Find the AP.",
+     "OR",
+     "Solve: 37x + 43y = 123 and 43x + 37y = 117."
+    ],
+    "29": "Prove that the perpendicular at the point of contact to the tangent to a circle passes through the centre.",
+    "30": "Show that A(3, 0), B(6, 4) and C(−1, 3) are the vertices of a right-angled isosceles triangle.",
+    "31": [
+     "Prove that (sin A + cos A)(tan A + cot A) = sec A + cosec A.",
+     "OR",
+     "If cos θ + sin θ = √2 cos θ, show that cos θ − sin θ = √2 sin θ."
+    ],
+    "32": "The hypotenuse of a right triangle is 25 cm. The difference between the lengths of the other two sides is 5 cm. Find the lengths of the other two sides.",
+    "33": "In △ABC, P and Q are points on AB and AC such that PQ ∥ BC. Prove that the median AD bisects PQ. If AP = 3 cm, PB = 2 cm and BC = 10 cm, find PQ.",
+    "34": [
+     "A hemispherical bowl of internal radius 9 cm is full of liquid. The liquid is filled into cylindrical bottles of diameter 3 cm and height 4 cm. How many bottles are needed?",
+     "OR",
+     "A toy is a cone of radius 3.5 cm mounted on a hemisphere of the same radius. The total height of the toy is 15.5 cm. Find its total surface area. (π = 22/7)"
+    ],
+    "35": [
+     "The angle of elevation of a cloud from a point 60 m above a lake is 30°. The angle of depression of the reflection of the cloud in the lake is 60°. Find the height of the cloud above the lake.",
+     "OR",
+     "Find the median of the following data.\nMarks: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60, 60–70\nStudents: 5, 4, 8, 12, 16, 15, 10"
+    ],
+    "36": [
+     "(i) How many seats are in the 10th row? [1]",
+     "(ii) How many seats are in the last row? [1]",
+     "(iii) Find the total number of seats. [2]",
+     "OR",
+     "(iii) Which row has 50 seats? [2]"
+    ],
+    "37": [
+     "(i) Find the distance ST. [1]",
+     "(ii) Find the midpoint of ST. [1]",
+     "(iii) A see-saw R lies on ST with SR : RT = 2 : 3. Find R. [2]",
+     "OR",
+     "(iii) Find the point on the x-axis that is equidistant from S and T. [2]"
+    ],
+    "38": [
+     "(i) Find the probability that it is defective. [1]",
+     "(ii) Find the probability that it is not defective. [1]",
+     "(iii) The first bulb drawn is not defective and is not replaced. Find the probability that the next bulb drawn is defective. [2]",
+     "OR",
+     "(iii) The first bulb drawn is defective and is not replaced. Find the probability that the next bulb drawn is not defective. [2]"
+    ]
+   },
+   "caseStudy": "A school auditorium has 30 rows of seats. The first row has 20 seats, and each row has 2 seats more than the row in front of it.",
+   "caseStudies": {
+    "36": "A school auditorium has 30 rows of seats. The first row has 20 seats, and each row has 2 seats more than the row in front of it.",
+    "37": "On a park plan, the swings are at S(−3, 2) and the slide is at T(3, −6). Each unit is 1 m.",
+    "38": "A carton has 24 bulbs, of which 6 are defective. A bulb is drawn at random."
+   }
+  },
+  {
+   "id": "cbse10-sp-10",
+   "chapter": "Sample Papers",
+   "chapterNumber": 15,
+   "paperNumber": "10",
+   "grade": 10,
+   "board": "CBSE",
+   "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
+   "focus": "Full syllabus · a slightly more demanding paper for final revision.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "(√7 + √3)(√7 − √3) is",
+     "options": [
+      "2√21, an irrational number",
+      "4, a rational number",
+      "√21, an irrational number",
+      "10, a rational number"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "If α and β are the zeroes of x² − x − 2, then α² + β² equals",
+     "options": [
+      "1",
+      "5",
+      "−3",
+      "3"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If 2x + 3y = 12 and 3x − 2y = 5, then x − y equals",
+     "options": [
+      "−1",
+      "1",
+      "5",
+      "0"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If ax² + bx + c = 0 has equal roots, then c equals",
+     "options": [
+      "−b²/(4a)",
+      "−b/(2a)",
+      "b/(2a)",
+      "b²/(4a)"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The sum of the first n terms of an AP is n² + 2n. Its 10th term is",
+     "options": [
+      "19",
+      "21",
+      "99",
+      "120"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "In △ABC, AB = 6√3 cm, AC = 12 cm and BC = 6 cm. Then ∠B equals",
+     "options": [
+      "60°",
+      "45°",
+      "90°",
+      "120°"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The perimeter of the triangle with vertices (0, 4), (0, 0) and (3, 0) is",
+     "options": [
+      "12",
+      "5",
+      "10",
+      "7"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If sin θ + cos θ = √2 and θ is acute, then θ equals",
+     "options": [
+      "45°",
+      "90°",
+      "60°",
+      "30°"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "(1 + cot²θ)(1 − cos θ)(1 + cos θ) equals",
+     "options": [
+      "1",
+      "sin²θ",
+      "0",
+      "cos²θ"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "Two concentric circles have radii 13 cm and 5 cm. The chord of the larger circle that touches the smaller circle has length",
+     "options": [
+      "24 cm",
+      "18 cm",
+      "8 cm",
+      "12 cm"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "The area of a sector is 1/12 of the area of its circle. The angle of the sector is",
+     "options": [
+      "45°",
+      "12°",
+      "60°",
+      "30°"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The surface area of a sphere is 616 cm². Its radius is (π = 22/7)",
+     "options": [
+      "14 cm",
+      "7 cm",
+      "3.5 cm",
+      "21 cm"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The median of the first seven prime numbers is",
+     "options": [
+      "8",
+      "11",
+      "7",
+      "5"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "x is chosen at random from −3, −2, −1, 0, 1, 2, 3. The probability that |x| < 2 is",
+     "options": [
+      "3/7",
+      "5/7",
+      "4/7",
+      "2/7"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The point (3/4, 5/12) divides the join of (1/2, 3/2) and (2, −5) in the ratio",
+     "options": [
+      "5 : 1",
+      "3 : 1",
+      "1 : 3",
+      "1 : 5"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The mean of 20 observations is 15. The observations 3, 4 and 5 are removed. The new mean is",
+     "options": [
+      "15",
+      "17",
+      "288/17",
+      "16"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The angles of elevation of the top of a tower from two points 4 m and 9 m from its base, on the same line, are complementary. The height of the tower is",
+     "options": [
+      "13 m",
+      "6 m",
+      "5 m",
+      "36 m"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "For any event E, P(E) + P(not E) equals",
+     "options": [
+      "1",
+      "1/2",
+      "2",
+      "0"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "If one root of x² − 4x + k = 0 is 3, the other root is 1.",
+     "reason": "The sum of the roots of ax² + bx + c = 0 is −b/a."
+    },
+    {
+     "number": 20,
+     "assertion": "The tangents at the ends of a diameter of a circle intersect.",
+     "reason": "The tangents at the ends of a diameter of a circle are parallel."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the smallest number which, when increased by 17, is exactly divisible by both 520 and 468.",
+     "OR",
+     "Can two numbers have 15 as their HCF and 175 as their LCM? Give a reason."
+    ],
+    "22": [
+     "The point P(9a − 2, −b) divides the line segment joining A(3a + 1, −3) and B(8a, 5) in the ratio 3 : 1. Find a and b.",
+     "OR",
+     "In △ABC, DE ∥ BC with D on AB and E on AC. If AD = 6 cm, DB = 9 cm and AE = 8 cm, find AC."
+    ],
+    "23": "If sec 4A = cosec(A − 20°), where 4A is acute, find A.",
+    "24": "PA and PB are tangents from an external point P to a circle with centre O. Prove that ∠APO = ∠BPO.",
+    "25": "A car has two wipers that do not overlap. Each blade is 25 cm long and sweeps through an angle of 115°. Find the total area cleaned in one sweep of the blades. (π = 22/7)",
+    "26": "Given that √7 is irrational, prove that 3√7 is irrational.",
+    "27": "Find k so that the sum of the zeroes of x² − (k + 6)x + 2(2k − 1) is half of their product.",
+    "28": [
+     "The pth term of an AP is q and its qth term is p (p ≠ q). Show that its nth term is p + q − n.",
+     "OR",
+     "Solve for x and y: x/a + y/b = 2 and ax − by = a² − b²."
+    ],
+    "29": "AB is a chord of a circle with centre O, AOC is a diameter and AT is the tangent at A. Prove that ∠BAT = ∠ACB.",
+    "30": "C(5, −2) is the midpoint of the segment joining A(x/2, (y + 1)/2) and B(x + 1, y − 3). Find x and y.",
+    "31": [
+     "Prove that sin θ/(1 − cos θ) + tan θ/(1 + cos θ) = sec θ cosec θ + cot θ.",
+     "OR",
+     "If 1 + sin²θ = 3 sin θ cos θ, prove that tan θ = 1 or tan θ = 1/2."
+    ],
+    "32": "Two pipes together fill a cistern in 3 1/13 minutes. One pipe takes 3 minutes more than the other to fill it alone. Find the time each pipe takes to fill the cistern alone.",
+    "33": "State and prove the Basic Proportionality Theorem. Hence prove: in △ABC, D and E lie on AB and AC with AD/DB = AE/EC and ∠ADE = ∠ACB; then △ABC is isosceles.",
+    "34": [
+     "A metallic sphere of radius 4.2 cm is melted and recast into a cylinder of radius 6 cm. Find the height of the cylinder and its curved surface area. (π = 22/7)",
+     "OR",
+     "A well of diameter 7 m is dug 20 m deep. The earth taken out is spread evenly to form a platform 22 m × 14 m. Find the height of the platform. (π = 22/7)"
+    ],
+    "35": [
+     "A straight highway leads to the foot of a tower. A man at the top of the tower sees a car at an angle of depression of 30°, approaching at a uniform speed. Six seconds later, the angle of depression is 60°. Find the time the car will take to reach the foot of the tower from this point.",
+     "OR",
+     "Find the mean literacy rate by the step-deviation method.\nLiteracy rate (%): 45–55, 55–65, 65–75, 75–85, 85–95\nCities: 3, 10, 11, 8, 3"
+    ],
+    "36": [
+     "(i) Write the quadratic equation for x. [1]",
+     "(ii) Find its discriminant. [1]",
+     "(iii) Find the length and breadth of the hall. [2]",
+     "OR",
+     "(iii) Find the cost of fencing the hall at ₹50 per metre. [2]"
+    ],
+    "37": [
+     "(i) Find the distance between the building and the tower. [1]",
+     "(ii) Find the height of the tower above the level of the building top. [1]",
+     "(iii) Find the height of the tower. [2]",
+     "OR",
+     "(iii) Find the straight-line distance from the top of the building to the top of the tower. [2]"
+    ],
+    "38": [
+     "(i) Find the probability that Jimmy buys it. [1]",
+     "(ii) Find the probability that Sujatha buys it. [1]",
+     "(iii) Find the probability that it has a defect of either kind. [2]",
+     "OR",
+     "(iii) Find the probability that neither of them buys it. [2]"
+    ]
+   },
+   "caseStudy": "A rectangular prayer hall has area 300 m². Its length is one metre more than twice its breadth. Let the breadth be x m.",
+   "caseStudies": {
+    "36": "A rectangular prayer hall has area 300 m². Its length is one metre more than twice its breadth. Let the breadth be x m.",
+    "37": "From the top of a 12 m high building, the angle of elevation of the top of a tower is 60° and the angle of depression of its foot is 30°. (√3 = 1.732)",
+    "38": "A box has 100 shirts: 88 are good, 8 have minor defects and 4 have major defects. Jimmy buys only good shirts. Sujatha rejects only shirts with major defects. One shirt is taken out at random."
+   }
+  }
+ ],
+ "assessments": {
+  "cbse10-sp-01": {
+   "title": "CBSE Class 10 · Sample Paper 01",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 3,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 0,
+    "7": 2,
+    "8": 0,
+    "9": 0,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 2,
+    "14": 2,
+    "15": 1,
+    "16": 1,
+    "17": 3,
+    "18": 2,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "336 = 2⁴ × 3 × 7 and 54 = 2 × 3³. HCF = 2 × 3 = 6. LCM = 2⁴ × 3³ × 7 = 3024. HCF × LCM = 6 × 3024 = 18144 and 336 × 54 = 18144. Verified.\nOR: Required number = HCF(245 − 5, 1029 − 5) = HCF(240, 1024). 240 = 2⁴ × 3 × 5 and 1024 = 2¹⁰, so HCF = 2⁴ = 16.",
+    "22": "In △ADC and △BAC: ∠ADC = ∠BAC (given) and ∠C is common. So △ADC ~ △BAC (AA). Hence CA/CB = CD/CA, so CA² = CB · CD.\nOR: Let the ratio be k : 1. x-coordinate (−k + 5)/(k + 1) = 0 gives k = 5, so the ratio is 5 : 1. y = (5 × (−4) + 1 × (−6))/6 = −26/6 = −13/3. Point (0, −13/3).",
+    "23": "2 tan²45° + cos²30° − sin²60° = 2(1)² + (√3/2)² − (√3/2)² = 2 + 3/4 − 3/4 = 2.",
+    "24": "The chord touches the smaller circle, so the radius to the point of contact is perpendicular to the chord and bisects it. Half chord = √(5² − 3²) = √16 = 4 cm. Chord = 8 cm.",
+    "25": "Total balls = 20. (a) P(white) = 8/20 = 2/5. (b) Not red = 15 balls, so P(not red) = 15/20 = 3/4.",
+    "26": "Suppose √5 is rational: √5 = a/b with a, b co-prime integers, b ≠ 0. Then 5b² = a², so 5 divides a², hence 5 divides a. Write a = 5c: 5b² = 25c², so b² = 5c² and 5 divides b. Then 5 divides both a and b, which contradicts co-primality. Hence √5 is irrational.",
+    "27": "6x² − 7x − 3 = 6x² − 9x + 2x − 3 = 3x(2x − 3) + 1(2x − 3) = (3x + 1)(2x − 3). Zeroes: −1/3 and 3/2. Sum = −1/3 + 3/2 = 7/6 = −(−7)/6 = −b/a. Product = −1/2 = −3/6 = c/a. Verified.",
+    "28": "a₁ = S₁ = 8. S₂ = 12 + 10 = 22, so a₂ = 22 − 8 = 14 and d = 6. AP: 8, 14, 20, … a₁₆ = 8 + 15 × 6 = 98.\nOR: Subtract: 7y = 35, so y = 5. Then 2x + 15 = 11, x = −2. In y = mx + 3: 5 = −2m + 3, so m = −1.",
+    "29": "Let PA and PB be tangents from P to a circle with centre O. Join OA, OB, OP. ∠OAP = ∠OBP = 90° (radius ⟂ tangent). In right △OAP and △OBP: OA = OB (radii), OP is common. By RHS, △OAP ≅ △OBP. Hence PA = PB.",
+    "30": "Let the ratio be k : 1. x = (6k + 2)/(k + 1) = 4, so 6k + 2 = 4k + 4 and k = 1. Ratio 1 : 1 (P is the midpoint). m = (3 + (−3))/2 = 0.",
+    "31": "LHS: divide numerator and denominator by cos θ: (tan θ − 1 + sec θ)/(tan θ + 1 − sec θ). Write 1 = sec²θ − tan²θ in the numerator: (tan θ + sec θ) − (sec²θ − tan²θ) = (tan θ + sec θ)(1 − sec θ + tan θ). Cancel (tan θ − sec θ + 1): LHS = tan θ + sec θ = (sec²θ − tan²θ)/(sec θ − tan θ) = 1/(sec θ − tan θ) = RHS.\nOR: (1 + cos A/sin A − 1/sin A)(1 + sin A/cos A + 1/cos A) = [(sin A + cos A − 1)/sin A][(cos A + sin A + 1)/cos A] = [(sin A + cos A)² − 1]/(sin A cos A) = 2 sin A cos A/(sin A cos A) = 2.",
+    "32": "Let the speed be x km/h. 360/x − 360/(x + 5) = 1, so 360 × 5 = x(x + 5) and x² + 5x − 1800 = 0. (x + 45)(x − 40) = 0. Speed cannot be negative, so x = 40 km/h.",
+    "33": "Statement: a line drawn parallel to one side of a triangle, cutting the other two sides at distinct points, divides those sides in the same ratio. Proof: In △ABC, DE ∥ BC. Join BE and CD; draw EN ⟂ AB and DM ⟂ AC. ar(ADE)/ar(BDE) = AD/DB and ar(ADE)/ar(DEC) = AE/EC. △BDE and △DEC are on the same base DE between the parallels DE and BC, so ar(BDE) = ar(DEC). Hence AD/DB = AE/EC.\nApplication: join AC, meeting EF at G. In △ADC, EG ∥ DC, so AE/ED = AG/GC. In △CAB, GF ∥ AB, so AG/GC = BF/FC. Hence AE/ED = BF/FC.",
+    "34": "r = 2 cm, cone height h = 2 cm. Volume = (1/3)πr²h + (2/3)πr³ = (1/3)(3.14)(4)(2) + (2/3)(3.14)(8) = 8.37 + 16.75 = 25.12 cm³. Circumscribing cylinder: radius 2, height 2 + 2 = 4, volume = 3.14 × 4 × 4 = 50.24 cm³. Difference = 50.24 − 25.12 = 25.12 cm³.\nOR: Cuboid = 15 × 10 × 3.5 = 525 cm³. Four cones = 4 × (1/3)(22/7)(0.5)²(1.4) = 4 × 0.367 = 1.47 cm³. Wood = 525 − 1.47 = 523.53 cm³.",
+    "35": "Let the observer be at P, the building BC = 20 m, the tower CD = h. In △PBC, tan 45° = 20/PB, so PB = 20 m. In △PBD, tan 60° = (20 + h)/20, so 20 + h = 20√3 and h = 20(√3 − 1) = 20 × 0.732 = 14.64 m.\nOR: 5 + x + 20 + 15 + y + 5 = 60, so x + y = 15. Median 28.5 lies in 20–30: l = 20, cf = 5 + x, f = 20, h = 10. 28.5 = 20 + [(30 − 5 − x)/20] × 10, so 8.5 = (25 − x)/2 and x = 8. Then y = 7.",
+    "36": "(i) a = 50, d = 10: a₁₀ = 50 + 9 × 10 = ₹140. (ii) aₙ = 50 + (n − 1)10 = 10n + 40. (iii) S₂₀ = 20/2 [2 × 50 + 19 × 10] = 10 × 290 = ₹2900.\nOR (iii): 10n + 40 = 300, so n = 26. In the 26th week.",
+    "37": "(i) AB = √((6 − 3)² + (4 − 1)²) = √18 = 3√2 m. (ii) Midpoint of AC = ((3 + 8)/2, (1 + 6)/2) = (5.5, 3.5). (iii) BC = √(4 + 4) = 2√2 and AC = √(25 + 25) = 5√2. AB + BC = 3√2 + 2√2 = 5√2 = AC, so A, B, C are collinear.\nOR (iii): P = ((2 × 8 + 3 × 3)/5, (2 × 6 + 3 × 1)/5) = (25/5, 15/5) = (5, 3).",
+    "38": "(i) Highest frequency 14: modal class 120–140. (ii) n/2 = 25; cumulative frequencies 12, 26, …, so the median class is 120–140. (iii) a = 150, h = 20. u = −2, −1, 0, 1, 2; fu = −24, −14, 0, 6, 20; Σfu = −12. Mean = 150 + 20 × (−12/50) = 150 − 4.8 = ₹145.20.\nOR (iii): l = 120, f₁ = 14, f₀ = 12, f₂ = 8, h = 20. Mode = 120 + [(14 − 12)/(28 − 12 − 8)] × 20 = 120 + (2/8) × 20 = ₹125."
+   }
+  },
+  "cbse10-sp-02": {
+   "title": "CBSE Class 10 · Sample Paper 02",
+   "mcqAnswerKey": {
+    "1": 0,
+    "2": 2,
+    "3": 0,
+    "4": 3,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 2,
+    "9": 0,
+    "10": 0,
+    "11": 2,
+    "12": 1,
+    "13": 3,
+    "14": 1,
+    "15": 0,
+    "16": 0,
+    "17": 3,
+    "18": 0,
+    "19": 0,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "If 6ⁿ ended with 0, it would be divisible by 10 and so by 5. But 6ⁿ = 2ⁿ × 3ⁿ. By the uniqueness of prime factorisation, 5 is not a prime factor of 6ⁿ. So 6ⁿ never ends with 0.\nOR: Required capacity = HCF(850, 680). 850 = 2 × 5² × 17 and 680 = 2³ × 5 × 17. HCF = 2 × 5 × 17 = 170 litres.",
+    "22": "Diagonals of a parallelogram bisect each other: midpoint of AC = midpoint of BD. (1 + x)/2 = (4 + 3)/2 gives x = 6. (2 + 6)/2 = (y + 5)/2 gives y = 3.\nOR: By BPT, AE/EC = AD/DB = 3/5. So AE = (3/8) × 5.6 = 2.1 cm.",
+    "23": "sin(A + B) = 1 gives A + B = 90°. cos(A − B) = √3/2 gives A − B = 30°. Adding: 2A = 120°, so A = 60° and B = 30°.",
+    "24": "Area of sector = (90/360) × 3.14 × 10² = 78.5 cm². Area of right triangle = (1/2) × 10 × 10 = 50 cm². Minor segment = 78.5 − 50 = 28.5 cm².",
+    "25": "The radius is perpendicular to the tangent at the point of contact. r = √(25² − 24²) = √49 = 7 cm.",
+    "26": "Suppose 3 + 2√5 = r is rational. Then √5 = (r − 3)/2. The right side is rational because rationals are closed under subtraction and division by a non-zero rational. This contradicts the fact that √5 is irrational. Hence 3 + 2√5 is irrational.",
+    "27": "α + β = 5/2 and αβ = 7/2. Sum of new zeroes = 5(α + β) = 25/2. Product = (2α + 3β)(3α + 2β) = 6α² + 13αβ + 6β² = 6(α + β)² + αβ = 6 × 25/4 + 7/2 = 41. Required polynomial: k(x² − (25/2)x + 41); with k = 2: 2x² − 25x + 82.",
+    "28": "a = 3, d = 12. a₅₄ = 3 + 53 × 12 = 639. Required term = 639 + 132 = 771. 3 + (n − 1)12 = 771 gives n − 1 = 64, so n = 65. The 65th term.\nOR: Let the fraction be x/y. (x + 2)/(y + 2) = 9/11 gives 11x − 9y = −4. (x + 3)/(y + 3) = 5/6 gives 6x − 5y = −3. Multiply by 5 and 9: 55x − 45y = −20 and 54x − 45y = −27. Subtract: x = 7. Then 5y = 45, y = 9. Fraction 7/9.",
+    "29": "Let PA and PB be tangents from P, with centre O. ∠OAP = ∠OBP = 90° (radius ⟂ tangent). In quadrilateral OAPB, the angle sum is 360°: ∠APB + ∠AOB + 90° + 90° = 360°. Hence ∠APB + ∠AOB = 180°.",
+    "30": "Points of trisection divide the segment in 1 : 2 and 2 : 1. P = ((1 × (−2) + 2 × 4)/3, (1 × (−3) + 2 × (−1))/3) = (2, −5/3). Q = ((2 × (−2) + 1 × 4)/3, (2 × (−3) + 1 × (−1))/3) = (0, −7/3).",
+    "31": "Write t = tan θ. LHS = t/(1 − 1/t) + (1/t)/(1 − t) = t²/(t − 1) − 1/(t(t − 1)) = (t³ − 1)/(t(t − 1)) = (t² + t + 1)/t = t + 1 + 1/t. Now t + 1/t = sin θ/cos θ + cos θ/sin θ = 1/(sin θ cos θ) = sec θ cosec θ. So LHS = 1 + sec θ cosec θ.\nOR: Square: sin²θ + cos²θ + 2 sin θ cos θ = 3, so sin θ cos θ = 1. tan θ + cot θ = (sin²θ + cos²θ)/(sin θ cos θ) = 1/1 = 1.",
+    "32": "Let the present age be x years. 1/(x − 3) + 1/(x + 5) = 1/3. So 3(2x + 2) = (x − 3)(x + 5), 6x + 6 = x² + 2x − 15 and x² − 4x − 21 = 0. (x − 7)(x + 3) = 0. Age cannot be negative, so x = 7 years.",
+    "33": "Given AB/PQ = AC/PR = AD/PM. Produce AD to E with DE = AD and PM to N with MN = PM. Join BE, CE, QN, RN. ABEC and PQNR are parallelograms (diagonals bisect each other), so BE = AC and QN = PR. Then AB/PQ = BE/QN = AE/PN (AE = 2AD, PN = 2PM). So △ABE ~ △PQN (SSS) and ∠BAE = ∠QPN. Similarly △ACE ~ △PRN and ∠CAE = ∠RPN. Adding: ∠BAC = ∠QPR. With AB/PQ = AC/PR, △ABC ~ △PQR (SAS).",
+    "34": "r = 7 cm; cylinder height = 13 − 7 = 6 cm. Inner area = 2πrh + 2πr² = 2 × (22/7) × 7 × 6 + 2 × (22/7) × 49 = 264 + 308 = 572 cm².\nOR: r = 2 m. Cylinder CSA = 2 × (22/7) × 2 × 2.1 = 26.4 m². Cone CSA = (22/7) × 2 × 2.8 = 17.6 m². Canvas = 44 m². Cost = 44 × 500 = ₹22,000.",
+    "35": "Let the distance between the foot of the tower and the building be d and the building height h. From the foot of the building: tan 60° = 50/d, so d = 50/√3. From the foot of the tower: tan 30° = h/d, so h = d/√3 = 50/3 ≈ 16.67 m.\nOR: Class marks 12, 14, 16, 18, 20, 22, 24. Σf = 44 + f. Σfx = 84 + 84 + 144 + 234 + 20f + 110 + 96 = 752 + 20f. 18(44 + f) = 752 + 20f, so 792 + 18f = 752 + 20f and f = 20.",
+    "36": "(i) x(x + 4) = 192, that is x² + 4x − 192 = 0. (ii) D = 4² + 4 × 192 = 16 + 768 = 784. (iii) x = (−4 ± 28)/2, so x = 12 (the negative root is rejected). Breadth 12 m, length 16 m.\nOR (iii): Perimeter = 2(12 + 16) = 56 m. Cost = 56 × 20 = ₹1120.",
+    "37": "(i) tan 45° = 75/d, so d = 75 m. (ii) tan 30° = 75/D, so D = 75√3 = 129.9 m. (iii) Distance = 75√3 − 75 = 75 × 0.732 = 54.9 m.\nOR (iii): Speed = 54.9 m/min.",
+    "38": "(i) 15 even numbers: 15/30 = 1/2. (ii) 5, 10, 15, 20, 25, 30: 6/30 = 1/5. (iii) 1, 4, 9, 16, 25: 5/30 = 1/6.\nOR (iii): 2, 3, 5, 7, 11, 13, 17, 19, 23, 29: 10/30 = 1/3."
+   }
+  },
+  "cbse10-sp-03": {
+   "title": "CBSE Class 10 · Sample Paper 03",
+   "mcqAnswerKey": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 3,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 3,
+    "9": 1,
+    "10": 1,
+    "11": 3,
+    "12": 0,
+    "13": 1,
+    "14": 1,
+    "15": 0,
+    "16": 1,
+    "17": 2,
+    "18": 0,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "870 = 2 × 3 × 5 × 29 and 225 = 3² × 5². HCF = 3 × 5 = 15. LCM = 2 × 3² × 5² × 29 = 13050.\nOR: LCM(1, 2, …, 10) = 2³ × 3² × 5 × 7 = 2520.",
+    "22": "AB = √(9 + 25) = √34, BC = √(25 + 9) = √34, CD = √(9 + 25) = √34, DA = √(25 + 9) = √34. Diagonals AC = √(4 + 64) = √68 and BD = √(64 + 4) = √68. Four equal sides and equal diagonals: ABCD is a square.\nOR: By BPT, x/(x − 2) = (x + 2)/(x − 1). So x² − x = x² − 4, and x = 4.",
+    "23": "tan A = cot B = tan(90° − B). A and 90° − B are both acute, so A = 90° − B, that is A + B = 90°.",
+    "24": "Area = (60/360) × (22/7) × 6² = (1/6) × (22/7) × 36 = 132/7 ≈ 18.86 cm².",
+    "25": "36 equally likely outcomes. (a) (3, 6), (4, 5), (5, 4), (6, 3): P = 4/36 = 1/9. (b) 6 doublets: P = 6/36 = 1/6.",
+    "26": "Suppose √2 + √3 = r is rational (r ≠ 0). Squaring: 5 + 2√6 = r², so √6 = (r² − 5)/2, which is rational. This contradicts the irrationality of √6. Hence √2 + √3 is irrational.",
+    "27": "3x² − x − 4 = 3x² − 4x + 3x − 4 = (3x − 4)(x + 1). Zeroes: 4/3 and −1. Sum = 1/3 = −(−1)/3 = −b/a. Product = −4/3 = c/a. Verified.",
+    "28": "a = 9, d = 8. Sₙ = (n/2)[18 + 8(n − 1)] = n(4n + 5) = 636. 4n² + 5n − 636 = 0, (n − 12)(4n + 53) = 0, so n = 12.\nOR: Let the digits be x (tens) and y (units). x + y = 9 and 9(10x + y) = 2(10y + x), so 88x = 11y and y = 8x. Then 9x = 9, x = 1, y = 8. The number is 18.",
+    "29": "Let XY be the tangent at P to a circle with centre O. Take any point Q ≠ P on XY. Q lies outside the circle (a tangent meets the circle at only one point), so OQ > OP. Thus OP is the shortest distance from O to XY. The shortest segment from a point to a line is perpendicular to it, so OP ⟂ XY.",
+    "30": "Let the point be (0, y). 6² + (y − 5)² = (−4)² + (y − 3)², so 36 + y² − 10y + 25 = 16 + y² − 6y + 9. 61 − 10y = 25 − 6y, so y = 9. The point is (0, 9).",
+    "31": "LHS = (1 + 1/cos A)/(1/cos A) = cos A + 1. RHS = (1 − cos²A)/(1 − cos A) = (1 − cos A)(1 + cos A)/(1 − cos A) = 1 + cos A. LHS = RHS.\nOR: Multiply inside by (1 + sin A)/(1 + sin A): √[(1 + sin A)²/(1 − sin²A)] = (1 + sin A)/cos A (cos A > 0 for acute A) = sec A + tan A.",
+    "32": "Let the stream speed be x km/h. 24/(18 − x) − 24/(18 + x) = 1. So 24 × 2x = 324 − x², x² + 48x − 324 = 0, (x + 54)(x − 6) = 0. x = 6 km/h.",
+    "33": "Proof of BPT: In △ABC with DE ∥ BC, join BE and CD, and draw EN ⟂ AB and DM ⟂ AC. ar(ADE)/ar(BDE) = [(1/2)AD × EN]/[(1/2)DB × EN] = AD/DB. Similarly ar(ADE)/ar(DEC) = AE/EC. △BDE and △DEC lie on the same base DE between the same parallels, so their areas are equal. Hence AD/DB = AE/EC.\nApplication: AE/EC = 4/13, so EC = (13/17) × 20.4 = 15.6 cm.",
+    "34": "r = 2.5 mm; cylinder length = 14 − 5 = 9 mm. Surface area = 2πrh + 4πr² = 2 × (22/7) × 2.5 × 9 + 4 × (22/7) × 6.25 = 141.43 + 78.57 = 220 mm².\nOR: Volume of cone = (1/3)π × 36 × 24 = 288π. (4/3)πr³ = 288π, so r³ = 216 and r = 6 cm.",
+    "35": "Let the height be h and the point be x m from the first pole (angle 60°). h = x tan 60° = x√3 and h = (80 − x) tan 30° = (80 − x)/√3. So 3x = 80 − x, x = 20 m. h = 20√3 = 34.64 m. Distances: 20 m and 60 m.\nOR: n = 50, n/2 = 25. Cumulative frequencies: 6, 14, 24, 36, … Median class 60–80: l = 60, cf = 24, f = 12, h = 20. Median = 60 + [(25 − 24)/12] × 20 = 60 + 1.67 = 61.67.",
+    "36": "(i) 2x + 3y = 180 and 3x + 2y = 220. (ii) a₁/a₂ = 2/3 and b₁/b₂ = 3/2 are unequal, so there is a unique solution. (iii) Adding: 5x + 5y = 400, so x + y = 80. Subtracting: x − y = 40. So x = ₹60 and y = ₹20.\nOR (iii): 5 × 60 + 4 × 20 = ₹380.",
+    "37": "(i) PA = √(26² − 10²) = √576 = 24 m. (ii) ∠OAP = 90°: the radius is perpendicular to the tangent at the point of contact. (iii) OAPB is made of two congruent right triangles. Area = 2 × (1/2) × 10 × 24 = 240 m².\nOR (iii): Perimeter = OA + AP + PB + BO = 10 + 24 + 24 + 10 = 68 m.",
+    "38": "(i) The hand turns 360° in 60 minutes, so 30° in 5 minutes. (ii) 15 minutes is a quarter turn: (1/4) × 2 × (22/7) × 14 = 22 cm. (iii) 35 minutes gives 210°: area = (210/360) × (22/7) × 196 = 359.33 cm².\nOR (iii): (30/360) × (22/7) × 196 = 51.33 cm²."
+   }
+  },
+  "cbse10-sp-04": {
+   "title": "CBSE Class 10 · Sample Paper 04",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 1,
+    "5": 3,
+    "6": 2,
+    "7": 2,
+    "8": 1,
+    "9": 0,
+    "10": 2,
+    "11": 0,
+    "12": 0,
+    "13": 1,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 3,
+    "18": 2,
+    "19": 0,
+    "20": 1
+   },
+   "writtenSolutions": {
+    "21": "7 × 11 × 13 + 13 = 13(7 × 11 + 1) = 13 × 78 = 2 × 3 × 13². It has factors other than 1 and itself, so it is composite.\nOR: 1260 = 2² × 3² × 5 × 7 and 7344 = 2⁴ × 3³ × 17. HCF = 2² × 3² = 36.",
+    "22": "QP² = 25 + 16 = 41 and QR² = x² + 25. 41 = x² + 25 gives x² = 16, x = ±4.\nOR: AP/PB = 3/6 = 1/2 and AQ/QC = 5/10 = 1/2. The sides are divided in the same ratio, so by the converse of BPT, PQ ∥ BC.",
+    "23": "sin θ = cos θ gives tan θ = 1, so θ = 45°. 2 tan 45° + cos²45° = 2 + 1/2 = 5/2.",
+    "24": "Let AB be a diameter, with tangents PQ at A and RS at B. OA ⟂ PQ and OB ⟂ RS (radius ⟂ tangent). So ∠OAP = ∠OBS = 90°, and these are alternate angles made by AB with PQ and RS. Hence PQ ∥ RS.",
+    "25": "Total coins = 180. (a) P(50 p) = 100/180 = 5/9. (b) Not ₹5: 170 coins, P = 170/180 = 17/18.",
+    "26": "Suppose √3 = a/b with a, b co-prime integers, b ≠ 0. Then 3b² = a², so 3 divides a² and hence a. Write a = 3c: 3b² = 9c², b² = 3c², so 3 divides b. Then 3 is a common factor of a and b, a contradiction. Hence √3 is irrational.",
+    "27": "Let the zeroes be α and 7α. Sum: 8α = 8/3, so α = 1/3. Zeroes: 1/3 and 7/3. Product: 7α² = 7/9 = (2k + 1)/3, so 2k + 1 = 7/3 and k = 2/3.",
+    "28": "a₄ + a₈ = 2a + 10d = 24 and a₆ + a₁₀ = 2a + 14d = 44. Subtract: 4d = 20, d = 5. Then 2a = 24 − 50, a = −13. Terms: −13, −8, −3.\nOR: 5x + 7y = 50 and 7x + 5y = 46. Adding: 12(x + y) = 96, x + y = 8. Subtracting: 2(x − y) = −4, x − y = −2. So x = ₹3 (pencil), y = ₹5 (pen).",
+    "29": "Let ABCD touch the circle at P, Q, R, S on AB, BC, CD, DA. Tangents from an external point are equal: AP = AS, BP = BQ, CR = CQ, DR = DS. Adding: AB + CD = AD + BC. In a parallelogram AB = CD and AD = BC, so 2AB = 2BC and AB = BC. A parallelogram with equal adjacent sides is a rhombus.",
+    "30": "Let the ratio be m : 1. x = (−2m − 5)/(m + 1) = −3, so −2m − 5 = −3m − 3 and m = 2. Ratio 2 : 1. k = (2 × 3 + 1 × (−4))/3 = 2/3.",
+    "31": "LHS = sin²A + cosec²A + 2 + cos²A + sec²A + 2 = 5 + cosec²A + sec²A = 5 + (1 + cot²A) + (1 + tan²A) = 7 + tan²A + cot²A = RHS.\nOR: LHS = (cos A/sin A − cos A)/(cos A/sin A + cos A). Divide numerator and denominator by cos A: (1/sin A − 1)/(1/sin A + 1) = (cosec A − 1)/(cosec A + 1) = RHS.",
+    "32": "Let the smaller tap take x hours; the larger takes x − 10. 1/x + 1/(x − 10) = 8/75. So 75(2x − 10) = 8x(x − 10), 8x² − 230x + 750 = 0, 4x² − 115x + 375 = 0. x = (115 ± 85)/8, so x = 25 or 15/4. x = 15/4 makes x − 10 negative. Smaller tap 25 h, larger tap 15 h.",
+    "33": "In △BMC and △EMD: MC = MD (M is the midpoint), ∠BMC = ∠EMD (vertically opposite), ∠MBC = ∠MED (alternate, BC ∥ AE). So △BMC ≅ △EMD (AAS) and BC = DE. Then AE = AD + DE = 2BC. In △BLC and △ELA: ∠BLC = ∠ELA (vertically opposite) and ∠LBC = ∠LEA (alternate). So △BLC ~ △ELA, and EL/BL = AE/BC = 2. Hence EL = 2BL.",
+    "34": "Volume = π(12² × 220 + 8² × 60) = 3.14 × (31680 + 3840) = 3.14 × 35520 = 111532.8 cm³. Mass = 111532.8 × 8 = 892262.4 g ≈ 892.26 kg.\nOR: Coin: r = 0.875 cm, h = 0.2 cm, volume = (22/7) × 0.875² × 0.2 = 0.48125 cm³. Cuboid = 5.5 × 10 × 3.5 = 192.5 cm³. Number = 192.5/0.48125 = 400.",
+    "35": "Height above her eyes = 88.2 − 1.2 = 87 m. First horizontal distance = 87/tan 60° = 87/√3 = 29√3 m. Second = 87/tan 30° = 87√3 m. Distance travelled = 87√3 − 29√3 = 58√3 = 58 × 1.732 = 100.46 m.\nOR: Class marks 10, 30, 50, 70, 90; assumed mean a = 50; d = −40, −20, 0, 20, 40. fd = −680, −560, 0, 480, 760; Σfd = 0, Σf = 120. Mean = 50 + 0/120 = 50.",
+    "36": "(i) Number of gaps = 250/25 = 10, so there are 11 rungs. (ii) a = 45, a₁₁ = 25: 45 + 10d = 25, d = −2 cm. (iii) S₁₁ = (11/2)(45 + 25) = 385 cm.\nOR (iii): a₆ = 45 + 5(−2) = 35 cm.",
+    "37": "(i) LS = √(16 + 9) = 5 km. (ii) SM = √(16 + 9) = 5 km = LS, so △LSM is isosceles. (iii) Midpoint of LM = (6, 3). Distance from S(6, 6) = 3 km.\nOR (iii): ((1 × 10 + 3 × 2)/4, (1 × 3 + 3 × 3)/4) = (4, 3).",
+    "38": "(i) 7, 14, …, 49: 7 numbers. P = 7/50. (ii) 1 to 9: P = 9/50. (iii) Multiples of 3: 16; of 5: 10; of 15: 3. Count = 16 + 10 − 3 = 23. P = 23/50.\nOR (iii): Primes up to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 — 15 numbers. P = 15/50 = 3/10."
+   }
+  },
+  "cbse10-sp-05": {
+   "title": "CBSE Class 10 · Sample Paper 05",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 0,
+    "6": 2,
+    "7": 3,
+    "8": 0,
+    "9": 1,
+    "10": 0,
+    "11": 2,
+    "12": 3,
+    "13": 0,
+    "14": 1,
+    "15": 3,
+    "16": 0,
+    "17": 2,
+    "18": 0,
+    "19": 0,
+    "20": 1
+   },
+   "writtenSolutions": {
+    "21": "6 = 2 × 3, 72 = 2³ × 3², 120 = 2³ × 3 × 5. HCF = 2 × 3 = 6. LCM = 2³ × 3² × 5 = 360.\nOR: A number ending in 0 has 2 and 5 as prime factors. 4ⁿ = 2²ⁿ has only the prime 2. By the uniqueness of prime factorisation, 4ⁿ never ends in 0.",
+    "22": "Let the ratio be k : 1. (6k − 3)/(k + 1) = −1 gives 6k − 3 = −k − 1, so k = 2/7. Ratio 2 : 7. Check y: (2 × (−8) + 7 × 10)/9 = 54/9 = 6.\nOR: By BPT, PT/TR = 3/5, so PT = (3/8) × 28 = 10.5 cm.",
+    "23": "Numerator = 5 × 1/4 + 4 × 4/3 − 1 = 5/4 + 16/3 − 1 = (15 + 64 − 12)/12 = 67/12. Denominator = 1. Value = 67/12.",
+    "24": "Let the circle touch AB, BC, CD, DA at P, Q, R, S. Tangents from an external point are equal: AP = AS, BP = BQ, CR = CQ, DR = DS. Adding: (AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ), so AB + CD = AD + BC.",
+    "25": "The horse grazes a quadrant of radius 5 m (the corner angle is 90°). Area = (1/4) × 3.14 × 25 = 19.625 m².",
+    "26": "Suppose 5 + 3√2 = r is rational. Then √2 = (r − 5)/3, which is rational. This contradicts the irrationality of √2. Hence 5 + 3√2 is irrational.",
+    "27": "α + β = 6. 3α + 2β = 20 means α + 2(α + β) = 20, so α = 8 and β = −2. k = αβ = −16.",
+    "28": "S₇ = (7/2)(2a + 6d) = 49 gives a + 3d = 7. S₁₇ = (17/2)(2a + 16d) = 289 gives a + 8d = 17. So d = 2 and a = 1. Sₙ = (n/2)[2 + 2(n − 1)] = n².\nOR: Let Nuri be x and Sonu y years. x − 5 = 3(y − 5) gives x − 3y = −10. x + 10 = 2(y + 10) gives x − 2y = 10. Subtract: y = 20, x = 50. Nuri 50 years, Sonu 20 years.",
+    "29": "Let ∠PTQ = θ. TP = TQ, so ∠TPQ = ∠TQP = (180° − θ)/2 = 90° − θ/2. ∠OPT = 90° (radius ⟂ tangent). So ∠OPQ = 90° − ∠TPQ = θ/2. Hence ∠PTQ = 2∠OPQ.",
+    "30": "Let the point be (x, 0). (x − 11)² + 64 = 100, so (x − 11)² = 36 and x − 11 = ±6. Points (17, 0) and (5, 0).",
+    "31": "LHS: write 1 = sec²A − tan²A in the numerator: tan A + sec A − (sec²A − tan²A) = (tan A + sec A)(1 − sec A + tan A). Cancel with the denominator (tan A − sec A + 1): LHS = tan A + sec A = (sin A + 1)/cos A = RHS.\nOR: LHS = sin A(1 − 2 sin²A)/[cos A(2 cos²A − 1)]. 1 − 2 sin²A = 2 cos²A − 1 (both equal cos²A − sin²A). So LHS = sin A/cos A = tan A.",
+    "32": "Let the larger be x and the smaller y. y² = 8x and x² − y² = 180, so x² − 8x − 180 = 0, (x − 18)(x + 10) = 0, x = 18. y² = 144, y = 12 (natural number). The numbers are 18 and 12.",
+    "33": "Draw EO ∥ AB (and so ∥ DC) meeting AD at E. In △ADC, EO ∥ DC: AE/ED = AO/OC. In △DAB, EO ∥ AB: AE/ED = BO/OD. So AO/OC = BO/OD, that is AO/BO = CO/DO.\nThen (3x − 19)/(x − 3) = (x − 5)/3. 9x − 57 = x² − 8x + 15, so x² − 17x + 72 = 0, (x − 8)(x − 9) = 0. x = 8 or x = 9 (both give positive lengths).",
+    "34": "r = 1.4 cm; cylinder length = 5 − 2.8 = 2.2 cm. Volume of one = πr²h + (4/3)πr³ = (22/7)(1.96)(2.2) + (4/3)(22/7)(2.744) = 13.552 + 11.499 = 25.051 cm³. 45 jamuns: 1127.3 cm³. Syrup = 30% = 338.2 cm³ (about 338 cm³).\nOR: Sphere: (4/3)(3.14)(4.25)³ = 321.39 cm³. Neck: 3.14 × 1² × 8 = 25.12 cm³. Total = 346.51 cm³. She is not correct; the correct volume is about 346.51 cm³.",
+    "35": "Let the building be AB = 7 m and the tower CD. Angle of depression of the foot is 45°, so the horizontal distance = 7 m. Height of the tower above the building level = 7 tan 60° = 7√3 m. Tower = 7 + 7√3 = 7(1 + 1.732) = 19.12 m.\nOR: Modal class 40–50: l = 40, f₁ = 20, f₀ = 12, f₂ = 11, h = 10. Mode = 40 + [(20 − 12)/(40 − 12 − 11)] × 10 = 40 + 80/17 ≈ 44.7 cars.",
+    "36": "(i) Apparent capacity = πr²h = 3.14 × 6.25 × 10 = 196.25 cm³. (ii) Hemisphere = (2/3) × 3.14 × 2.5³ = 32.71 cm³. (iii) Actual capacity = 196.25 − 32.71 = 163.54 cm³.\nOR (iii): 50 × 163.54 = 8177 cm³ ≈ 8.18 litres.",
+    "37": "(i) Standing part = 8 tan 30° = 8/√3 = 4.62 m. (ii) Broken part = 8/cos 30° = 16/√3 = 9.24 m. (iii) Height = 8/√3 + 16/√3 = 24/√3 = 8√3 = 13.86 m.\nOR (iii): Standing part = 8 tan 45° = 8 m; broken part = 8/cos 45° = 8√2 = 11.31 m. Height = 19.31 m.",
+    "38": "(i) Highest frequency 12: modal class 30–40. (ii) n/2 = 20; cumulative frequencies 3, 8, 17, 29: median class 30–40. (iii) Median = 30 + [(20 − 17)/12] × 10 = 30 + 2.5 = 32.5.\nOR (iii): Class marks 5, 15, 25, 35, 45, 55. Σfx = 15 + 75 + 225 + 420 + 315 + 220 = 1270. Mean = 1270/40 = 31.75."
+   }
+  },
+  "cbse10-sp-06": {
+   "title": "CBSE Class 10 · Sample Paper 06",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 3,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 2,
+    "8": 1,
+    "9": 0,
+    "10": 3,
+    "11": 0,
+    "12": 2,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 0,
+    "17": 2,
+    "18": 1,
+    "19": 0,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "LCM(6, 15, 18): 6 = 2 × 3, 15 = 3 × 5, 18 = 2 × 3². LCM = 2 × 3² × 5 = 90. Required number = 90 + 5 = 95.\nOR: 156 = 2² × 3 × 13 and 210 = 2 × 3 × 5 × 7. HCF = 2 × 3 = 6.",
+    "22": "AB = √(16 + 9) = 5, BC = √(16 + 9) = 5, AC = √(64 + 36) = 10. AB + BC = AC, so the points are collinear.\nOR: Scale factor AB/DE = 4/6 = 2/3. Perimeter of △DEF = 6 + 9 + 12 = 27 cm. Perimeter of △ABC = (2/3) × 27 = 18 cm.",
+    "23": "cot A = 4/3, so tan A = 3/4, sin A = 3/5, cos A = 4/5. LHS = (1 − 9/16)/(1 + 9/16) = (7/16)/(25/16) = 7/25. RHS = 16/25 − 9/25 = 7/25. Yes, LHS = RHS.",
+    "24": "OP bisects ∠APB, so ∠APO = 30°. ∠OAP = 90°. tan 30° = OA/PA, so PA = 5/tan 30° = 5√3 cm.",
+    "25": "Minor sector = (30/360) × 3.14 × 16 = 4.19 cm² (about). Circle = 50.24 cm². Major sector = 50.24 − 4.19 = 46.05 cm².",
+    "26": "1/√2 = √2/2. Suppose √2/2 = r is rational. Then √2 = 2r is rational, a contradiction. Hence 1/√2 is irrational.",
+    "27": "x² + x/6 − 2 = (1/6)(6x² + x − 12) = (1/6)(3x − 4)(2x + 3). Zeroes: 4/3 and −3/2. Sum = −1/6 = −b/a (a = 1, b = 1/6). Product = −2 = c/a. Verified.",
+    "28": "a + 2d = 4 and a + 8d = −8. So 6d = −12, d = −2, a = 8. aₙ = 8 − 2(n − 1) = 0 gives n = 5. The 5th term is zero.\nOR: Multiply the first by 3: 9x − 15y = 12. Second: 9x − 2y = 7. Subtract: −13y = 5, y = −5/13. Then 3x = 4 + 5y = 27/13, x = 9/13.",
+    "29": "Let AB be a chord of the larger circle touching the smaller circle at P, with common centre O. OP ⟂ AB (radius ⟂ tangent). In the larger circle, the perpendicular from the centre to a chord bisects it, so AP = PB.",
+    "30": "The midpoint of AB is Q = (0, 5). The midpoint of AQ is P = (−1, 7/2). The midpoint of QB is R = (1, 13/2). Points: (−1, 3.5), (0, 5), (1, 6.5).",
+    "31": "Divide numerator and denominator by sin A: (cot A − 1 + cosec A)/(cot A + 1 − cosec A). Write 1 = cosec²A − cot²A in the numerator: (cot A + cosec A) − (cosec²A − cot²A) = (cosec A + cot A)(1 − cosec A + cot A). Cancel the denominator: LHS = cosec A + cot A.\nOR: m² − n² = (m + n)(m − n) = 2 tan θ × 2 sin θ = 4 tan θ sin θ. mn = tan²θ − sin²θ = sin²θ(1 − cos²θ)/cos²θ = sin²θ tan²θ, so 4√(mn) = 4 tan θ sin θ. Hence m² − n² = 4√(mn).",
+    "32": "Let the length be x m; breadth = 40 − x. x(40 − x) = 400, so x² − 40x + 400 = 0. D = 1600 − 1600 = 0: equal roots x = 20. Yes: a 20 m × 20 m park. For area 410: x² − 40x + 410 = 0, D = 1600 − 1640 < 0, so no real roots. Not possible.",
+    "33": "In △ABE and △CFB: ∠A = ∠C (opposite angles of a parallelogram). ∠AEB = ∠CBF (alternate angles, AE ∥ BC). So △ABE ~ △CFB (AA). Then AB/CF = AE/CB, so 9/CF = 12/8 and CF = 6 cm.",
+    "34": "Surface area = 6 × 7² − πr² + 2πr², with r = 3.5 cm. = 294 + πr² = 294 + (22/7) × 12.25 = 294 + 38.5 = 332.5 cm².\nOR: In 30 minutes water flows 5 km = 5000 m. Volume = 6 × 1.5 × 5000 = 45000 m³. Area = 45000/0.08 = 562500 m² = 56.25 hectares.",
+    "35": "Let the tall building be h m and the distance d m. Depression 45° to the bottom: h = d. Depression 30° to the top: h − 8 = d tan 30° = d/√3. So d − d/√3 = 8, d = 8√3/(√3 − 1) = 4√3(√3 + 1) = 12 + 4√3 = 18.93 m. Height = 18.93 m and distance = 18.93 m.\nOR: n = 51, n/2 = 25.5. Cumulative frequencies 4, 11, 29: median class 145–150. l = 145, cf = 11, f = 18, h = 5. Median = 145 + (14.5/18) × 5 = 145 + 4.03 = 149.03 cm.",
+    "36": "(i) AB = √(9 + 9) = 3√2 m. (ii) AC = 9 − 3 = 6 m. (iii) BC = √(9 + 9) = 3√2, CD = 3√2, DA = 3√2. Diagonals AC = 6 and BD = 7 − 1 = 6. Equal sides and equal diagonals: ABCD is a square.\nOR (iii): ((1 × 9 + 2 × 3)/3, 4) = (5, 4).",
+    "37": "(i) h(0) = 25 m. (ii) −5(t² − 4t − 5) = −5(t − 5)(t + 1): zeroes 5 and −1. The ball hits the ground at t = 5 s. (iii) −5t² + 20t + 25 = 40 gives t² − 4t + 3 = 0, (t − 1)(t − 3) = 0: at t = 1 s (going up) and t = 3 s (coming down).\nOR (iii): Sum = −20/(−5) = 4. Product = 25/(−5) = −5.",
+    "38": "(i) 36. (ii) (2, 6), (3, 5), (4, 4), (5, 3), (6, 2): 5/36. (iii) Product is odd only when both are odd: 9 outcomes. P(even product) = 1 − 9/36 = 3/4.\nOR (iii): (4, 6), (5, 5), (6, 4), (5, 6), (6, 5), (6, 6): 6/36 = 1/6."
+   }
+  },
+  "cbse10-sp-07": {
+   "title": "CBSE Class 10 · Sample Paper 07",
+   "mcqAnswerKey": {
+    "1": 0,
+    "2": 1,
+    "3": 1,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 2,
+    "9": 1,
+    "10": 3,
+    "11": 1,
+    "12": 0,
+    "13": 1,
+    "14": 2,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "18": 0,
+    "19": 0,
+    "20": 1
+   },
+   "writtenSolutions": {
+    "21": "1656 = 2³ × 3² × 23 and 4025 = 5² × 7 × 23. HCF = 23.\nOR: Required number = HCF(420, 130). 420 = 2² × 3 × 5 × 7 and 130 = 2 × 5 × 13. HCF = 2 × 5 = 10 barfis.",
+    "22": "PQ² = (10 − 2)² + (y + 3)² = 100, so (y + 3)² = 36 and y + 3 = ±6. y = 3 or y = −9.\nOR: By BPT, (4x − 3)/(3x − 1) = (8x − 7)/(5x − 3). So 20x² − 27x + 9 = 24x² − 29x + 7, 4x² − 2x − 2 = 0, (2x + 1)(x − 1) = 0. x = −1/2 gives negative lengths, so x = 1.",
+    "23": "sin 2θ = √3/2, so 2θ = 60° and θ = 30°.",
+    "24": "∠OPT = ∠OQT = 90° (radius ⟂ tangent). In quadrilateral OPTQ, ∠PTQ = 360° − 90° − 90° − 110° = 70°.",
+    "25": "2πr = 88 gives r = 14 cm. Area of quadrant = (1/4) × (22/7) × 14² = 154 cm².",
+    "26": "Suppose √7 = a/b with a, b co-prime integers, b ≠ 0. Then 7b² = a², so 7 divides a², hence 7 divides a. Write a = 7c: 7b² = 49c², b² = 7c², so 7 divides b. This contradicts co-primality. Hence √7 is irrational.",
+    "27": "Sum = 10. Product = 25 − 18 = 7. Polynomial: x² − 10x + 7 (or any non-zero multiple).",
+    "28": "Three-digit multiples of 7: 105, 112, …, 994. n = (994 − 105)/7 + 1 = 128. Sum = (128/2)(105 + 994) = 64 × 1099 = 70336.\nOR: Let the boat be x km/h and the stream y km/h. Put u = 1/(x − y), v = 1/(x + y). 30u + 44v = 10 and 40u + 55v = 13. Multiply by 4 and 3: 120u + 176v = 40 and 120u + 165v = 39. So 11v = 1, v = 1/11, x + y = 11. Then 30u = 6, u = 1/5, x − y = 5. x = 8 km/h, y = 3 km/h.",
+    "29": "Let ABCD circumscribe a circle with centre O, touching AB, BC, CD, DA at P, Q, R, S. Join O to A, B, C, D, P, Q, R, S. △OAP ≅ △OAS (RHS: OP = OS, OA common, right angles at P and S), so ∠AOP = ∠AOS. Similarly ∠BOP = ∠BOQ, ∠COQ = ∠COR and ∠DOR = ∠DOS. The eight angles at O add up to 360°, so 2(∠AOP + ∠BOP + ∠COR + ∠DOR) = 360°. Hence ∠AOB + ∠COD = 180°. Similarly ∠BOC + ∠AOD = 180°.",
+    "30": "Diagonals bisect each other: midpoint of AC = midpoint of BD. (−2 + 4)/2 = (a + 1)/2 gives a = 1. (1 + b)/2 = (0 + 2)/2 gives b = 1.",
+    "31": "LHS = (1/cos A)(1 − sin A)[(1 + sin A)/cos A] = (1 − sin²A)/cos²A = cos²A/cos²A = 1.\nOR: LHS = [(sin θ + cos θ)² + (sin θ − cos θ)²]/(sin²θ − cos²θ) = 2(sin²θ + cos²θ)/(sin²θ − cos²θ) = 2/(sin²θ − (1 − sin²θ)) = 2/(2 sin²θ − 1).",
+    "32": "Let the number be x. 80/x − 80/(x + 4) = 1, so 320 = x(x + 4) and x² + 4x − 320 = 0. (x + 20)(x − 16) = 0, so x = 16 books.",
+    "33": "△ABC ~ △PQR gives AB/PQ = BC/QR and ∠B = ∠Q. BD = BC/2 and QM = QR/2, so AB/PQ = BD/QM. In △ABD and △PQM: AB/PQ = BD/QM and ∠B = ∠Q, so △ABD ~ △PQM (SAS). Hence AB/PQ = AD/PM. Then 6/9 = AD/7.5, so AD = 5 cm.",
+    "34": "Cylinder length = 104 − 14 = 90 cm. Surface area = 2πrh + 4πr² = 2 × (22/7) × 7 × 90 + 4 × (22/7) × 49 = 3960 + 616 = 4576 cm² = 45.76 dm². Cost = 45.76 × 10 = ₹457.60.\nOR: r = 0.7 cm, h = 2.4 cm, l = √(0.49 + 5.76) = 2.5 cm. Area = 2πrh + πr² + πrl = (22/7)(0.7)(4.8 + 0.7 + 2.5) = 2.2 × 8 = 17.6 cm².",
+    "35": "Let the distance be d. Depression 30° to the base: tan 30° = 10/d, so d = 10√3 = 17.32 m. Elevation 60° to the top: height above the observer = d tan 60° = 10√3 × √3 = 30 m. Height of hill = 30 + 10 = 40 m.\nOR: 17 + f₁ + 32 + f₂ + 19 = 120, so f₁ + f₂ = 52. Class marks 10, 30, 50, 70, 90. Σfx = 170 + 30f₁ + 1600 + 70f₂ + 1710 = 3480 + 30f₁ + 70f₂ = 50 × 120 = 6000. So 3f₁ + 7f₂ = 252. With f₁ = 52 − f₂: 156 + 4f₂ = 252, f₂ = 24, f₁ = 28.",
+    "36": "(i) x + 10y = 105 and x + 15y = 155. (ii) Subtract: 5y = 50, y = ₹10 per km. (iii) x = 105 − 100 = ₹5. Fare for 25 km = 5 + 250 = ₹255.\nOR (iii): 5 + 10d = 305, d = 30 km.",
+    "37": "(i) PA = √(17² − 8²) = √225 = 15 m. (ii) ∠OAP = 90°: the radius is perpendicular to the tangent at the point of contact. (iii) Area = 2 × (1/2) × 8 × 15 = 120 m².\nOR (iii): OP ⟂ AB and bisects it at M. Area of △OAP: (1/2) × OA × AP = (1/2) × OP × AM, so AM = (8 × 15)/17 = 120/17. AB = 240/17 ≈ 14.12 m.",
+    "38": "(i) Curved length = π × 35 = (22/7) × 35 = 110 m. (ii) Perimeter = 100 + 100 + 110 + 110 = 420 m. (iii) Area = 100 × 70 + π × 35² = 7000 + 3850 = 10850 m².\nOR (iii): Cost = 10850 × 2 = ₹21,700."
+   }
+  },
+  "cbse10-sp-08": {
+   "title": "CBSE Class 10 · Sample Paper 08",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 1,
+    "6": 3,
+    "7": 1,
+    "8": 3,
+    "9": 0,
+    "10": 3,
+    "11": 0,
+    "12": 2,
+    "13": 1,
+    "14": 0,
+    "15": 0,
+    "16": 1,
+    "17": 2,
+    "18": 2,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "26 = 2 × 13 and 91 = 7 × 13. HCF = 13. LCM = 2 × 7 × 13 = 182. HCF × LCM = 13 × 182 = 2366 = 26 × 91. Verified.\nOR: 12ⁿ = 2²ⁿ × 3ⁿ. A number ending in 0 or 5 is divisible by 5. 5 is not a prime factor of 12ⁿ, so by the uniqueness of prime factorisation 12ⁿ cannot end in 0 or 5.",
+    "22": "Let the point be (x, 0). (x − 7)² + 36 = (x − 3)² + 16, so −14x + 85 = −6x + 25, 8x = 60 and x = 7.5. The point is (7.5, 0).\nOR: PB = 8 and QC = 10. AP/PB = 4/8 = 1/2 and AQ/QC = 5/10 = 1/2. Equal ratios, so PQ ∥ BC by the converse of BPT.",
+    "23": "= (1/2 + 1 − 2/√3)/(2/√3 + 1/2 + 1) = (3√3 − 4)/(3√3 + 4). Rationalising: (3√3 − 4)²/(27 − 16) = (43 − 24√3)/11.",
+    "24": "For a circumscribed quadrilateral, AB + CD = BC + DA. 6 + 3 = 7.5 + DA, so DA = 1.5 cm.",
+    "25": "Area = (40/360) × (22/7) × (14² − 7²) = (1/9) × (22/7) × 147 = 154/3 ≈ 51.33 cm².",
+    "26": "Suppose 3√2 = r is rational. Then √2 = r/3 is rational, a contradiction. Hence 3√2 is irrational.",
+    "27": "If one zero is the negative of the other, their sum is 0. Sum = (8k² − 40k)/4 = 0, so 8k(k − 5) = 0 and k = 0 or k = 5.",
+    "28": "(a + 10d)/(a + 17d) = 2/3 gives 3a + 30d = 2a + 34d, so a = 4d. a₅ = a + 4d = 8d and a₂₁ = a + 20d = 24d. Ratio 8d : 24d = 1 : 3.\nOR: Put u = 1/x, v = 1/y. 2u + 3v = 13 and 5u − 4v = −2. Multiply by 4 and 3: 8u + 12v = 52 and 15u − 12v = −6. Adding: 23u = 46, u = 2, v = 3. So x = 1/2, y = 1/3.",
+    "29": "Tangents from an external point are equal: AQ = AR, BQ = BP, CP = CR. Perimeter = AB + BC + CA = AB + BP + PC + CA = AB + BQ + CR + CA = AQ + AR = 2AQ. Hence AQ = (1/2) × perimeter.",
+    "30": "AP = (3/7)AB, so AP : PB = 3 : 4. P = ((3 × 2 + 4 × (−2))/7, (3 × (−4) + 4 × (−2))/7) = (−2/7, −20/7).",
+    "31": "(1 + tan²A)/(1 + cot²A) = sec²A/cosec²A = sin²A/cos²A = tan²A. Also (1 − tan A)/(1 − cot A) = (1 − tan A)/(1 − 1/tan A) = (1 − tan A) tan A/(tan A − 1) = −tan A, whose square is tan²A. Hence all three are equal.\nOR: LHS = tan A[(sec A + 1) + (sec A − 1)]/(sec²A − 1) = 2 tan A sec A/tan²A = 2 sec A/tan A = 2/sin A = 2 cosec A.",
+    "32": "Let the usual speed be x km/h. 1500/x − 1500/(x + 100) = 1/2. So 1500 × 100 × 2 = x(x + 100), x² + 100x − 300000 = 0, (x + 600)(x − 500) = 0. Usual speed = 500 km/h.",
+    "33": "Draw OE ∥ AB meeting AD at E. In △ABD, EO ∥ AB, so AE/ED = BO/OD. Given AO/BO = CO/DO, that is AO/OC = BO/OD. So AE/ED = AO/OC, and by the converse of BPT in △ADC, EO ∥ DC. Then AB ∥ EO ∥ DC, so ABCD is a trapezium.\nIn the trapezium, △AOB ~ △COD (AA: alternate angles), so AO/OC = AB/CD = 2. AO : OC = 2 : 1.",
+    "34": "Cylinder volume = π × 6² × 15 = 540π. One cone with hemispherical top: (1/3)π × 3² × 12 + (2/3)π × 3³ = 36π + 18π = 54π. Number = 540π/54π = 10 cones.\nOR: Earth = π × 1.5² × 14 = (22/7) × 2.25 × 14 = 99 m³. Height = 99/(22 × 14) = 99/308 ≈ 0.32 m (about 32 cm).",
+    "35": "Let the distance be d. tan 30° = 10/d, so d = 10√3 = 17.32 m. tan 45° = (10 + h)/d, so 10 + h = 17.32 and h = 7.32 m.\nOR: Modal class 35–45: l = 35, f₁ = 23, f₀ = 21, f₂ = 14, h = 10. Mode = 35 + [(23 − 21)/(46 − 21 − 14)] × 10 = 35 + 20/11 ≈ 36.8 years.",
+    "36": "(i) x(55 − x) = 750, that is x² − 55x + 750 = 0. (ii) D = 55² − 4 × 750 = 3025 − 3000 = 25. (iii) x = (55 ± 5)/2 = 30 or 25. The day’s output was 25 or 30 toys.\nOR (iii): Cost per toy = 55 − 30 = ₹25.",
+    "37": "(i) d₁ = 75/tan 30° = 75√3 = 129.9 m. (ii) d₂ = 75/tan 60° = 75/√3 = 25√3 = 43.3 m. (iii) Opposite sides: 75√3 + 25√3 = 100√3 = 173.2 m.\nOR (iii): Same side: 75√3 − 25√3 = 50√3 = 86.6 m.",
+    "38": "(i) Highest frequency 86: modal class 3000–3500. (ii) n/2 = 200; cumulative frequencies 14, 70, 130, 216: median class 3000–3500. (iii) Median = 3000 + [(200 − 130)/86] × 500 = 3000 + 406.98 ≈ 3406.98 hours.\nOR (iii): Mode = 3000 + [(86 − 60)/(172 − 60 − 74)] × 500 = 3000 + (26/38) × 500 ≈ 3342.1 hours."
+   }
+  },
+  "cbse10-sp-09": {
+   "title": "CBSE Class 10 · Sample Paper 09",
+   "mcqAnswerKey": {
+    "1": 1,
+    "2": 3,
+    "3": 1,
+    "4": 2,
+    "5": 0,
+    "6": 0,
+    "7": 1,
+    "8": 0,
+    "9": 3,
+    "10": 3,
+    "11": 0,
+    "12": 3,
+    "13": 1,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 3,
+    "18": 0,
+    "19": 0,
+    "20": 1
+   },
+   "writtenSolutions": {
+    "21": "Required number = HCF(70 − 5, 125 − 8) = HCF(65, 117). 65 = 5 × 13 and 117 = 3² × 13. HCF = 13.\nOR: LCM(9, 12, 15): 9 = 3², 12 = 2² × 3, 15 = 3 × 5. LCM = 2² × 3² × 5 = 180 minutes = 3 hours. They toll together again at 11 a.m.",
+    "22": "Let the ratio be k : 1. y = (5k − 5)/(k + 1) = 0, so k = 1. Ratio 1 : 1. Point = ((1 − 4)/2, 0) = (−3/2, 0).\nOR: AD/AB = 2/5. △ADE ~ △ABC (DE ∥ BC), so DE/BC = 2/5 and BC = 4 × 5/2 = 10 cm.",
+    "23": "A + B = 60° and A − B = 30°. So A = 45° and B = 15°.",
+    "24": "∠OQP = ∠ORP = 90°. ∠QOR = 360° − 90° − 90° − 46° = 134°. OQ = OR, so ∠OQR = (180° − 134°)/2 = 23°.",
+    "25": "Arc = (72/360) × 2 × 3.14 × 5 = 6.28 cm. Perimeter = 6.28 + 5 + 5 = 16.28 cm.",
+    "26": "Suppose 2 − 3√5 = r is rational. Then √5 = (2 − r)/3, which is rational. This contradicts the irrationality of √5. Hence 2 − 3√5 is irrational.",
+    "27": "4s² − 4s + 1 = (2s − 1)². Zeroes: 1/2 and 1/2. Sum = 1 = −(−4)/4. Product = 1/4 = c/a. Verified.",
+    "28": "Middle terms are the 18th, 19th and 20th: 3a + 54d = 225, so a + 18d = 75. Last three are the 35th, 36th, 37th: 3a + 105d = 429, so a + 35d = 143. Subtract: 17d = 68, d = 4, a = 3. AP: 3, 7, 11, 15, …\nOR: Adding: 80x + 80y = 240, x + y = 3. Subtracting: −6x + 6y = 6, y − x = 1. So x = 1, y = 2.",
+    "29": "Let AB be the tangent at P to a circle with centre O, and let PX be the line through P perpendicular to AB. Join OP. The radius through the point of contact is perpendicular to the tangent, so ∠OPB = 90°. Also ∠XPB = 90°. Both OP and PX make a right angle with PB at P on the same side, so they are the same line. Hence the perpendicular PX passes through O.",
+    "30": "AB = √(9 + 16) = 5. AC = √(16 + 9) = 5. BC = √(49 + 1) = √50. AB = AC, so the triangle is isosceles. AB² + AC² = 25 + 25 = 50 = BC², so ∠A = 90° (converse of Pythagoras). It is right-angled and isosceles.",
+    "31": "tan A + cot A = (sin²A + cos²A)/(sin A cos A) = 1/(sin A cos A). LHS = (sin A + cos A)/(sin A cos A) = 1/cos A + 1/sin A = sec A + cosec A.\nOR: sin θ = (√2 − 1) cos θ, so cos θ = sin θ/(√2 − 1) = (√2 + 1) sin θ. Hence cos θ − sin θ = √2 sin θ.",
+    "32": "Let the shorter side be x cm; the other is x + 5. x² + (x + 5)² = 625, so 2x² + 10x − 600 = 0, x² + 5x − 300 = 0, (x + 20)(x − 15) = 0. x = 15. Sides 15 cm and 20 cm.",
+    "33": "Let AD meet PQ at E. PQ ∥ BC gives △APE ~ △ABD and △AEQ ~ △ADC (AA). So PE/BD = AE/AD and EQ/DC = AE/AD. Hence PE/BD = EQ/DC. BD = DC (D is the midpoint), so PE = EQ: AD bisects PQ.\nAP/AB = 3/5. △APQ ~ △ABC, so PQ = (3/5) × 10 = 6 cm.",
+    "34": "Bowl = (2/3)π × 9³ = 486π cm³. Bottle = π × 1.5² × 4 = 9π cm³. Number = 486π/9π = 54 bottles.\nOR: Cone height = 15.5 − 3.5 = 12 cm, slant height = √(144 + 12.25) = 12.5 cm. TSA = πrl + 2πr² = (22/7)(3.5)(12.5) + 2(22/7)(12.25) = 137.5 + 77 = 214.5 cm².",
+    "35": "Let the cloud be H m above the lake and its horizontal distance d. Elevation 30°: H − 60 = d/√3. The reflection is H m below the lake surface, so depression 60°: H + 60 = d√3. Dividing: (H + 60)/(H − 60) = 3, so H + 60 = 3H − 180 and H = 120 m.\nOR: n = 70, n/2 = 35. Cumulative frequencies 5, 9, 17, 29, 45: median class 40–50. l = 40, cf = 29, f = 16, h = 10. Median = 40 + (6/16) × 10 = 43.75.",
+    "36": "a = 20, d = 2. (i) a₁₀ = 20 + 18 = 38. (ii) a₃₀ = 20 + 58 = 78. (iii) S₃₀ = 15(20 + 78) = 1470 seats.\nOR (iii): 20 + 2(n − 1) = 50, so n = 16. The 16th row.",
+    "37": "(i) ST = √(6² + 8²) = 10 m. (ii) Midpoint = (0, −2). (iii) R = ((2 × 3 + 3 × (−3))/5, (2 × (−6) + 3 × 2)/5) = (−3/5, −6/5).\nOR (iii): (x + 3)² + 4 = (x − 3)² + 36, so 12x = 32 and x = 8/3. The point is (8/3, 0).",
+    "38": "(i) 6/24 = 1/4. (ii) 18/24 = 3/4. (iii) 23 bulbs remain, 6 defective: 6/23.\nOR (iii): 23 bulbs remain, 18 not defective: 18/23."
+   }
+  },
+  "cbse10-sp-10": {
+   "title": "CBSE Class 10 · Sample Paper 10",
+   "mcqAnswerKey": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 3,
+    "5": 1,
+    "6": 2,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 3,
+    "12": 1,
+    "13": 2,
+    "14": 0,
+    "15": 3,
+    "16": 2,
+    "17": 1,
+    "18": 0,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "520 = 2³ × 5 × 13 and 468 = 2² × 3² × 13. LCM = 2³ × 3² × 5 × 13 = 4680. Required number = 4680 − 17 = 4663.\nOR: The HCF always divides the LCM. 175 ÷ 15 is not an integer, so no two numbers can have HCF 15 and LCM 175.",
+    "22": "x: (3 × 8a + 1 × (3a + 1))/4 = 9a − 2, so 27a + 1 = 36a − 8 and a = 1. y: (3 × 5 + 1 × (−3))/4 = 3 = −b, so b = −3.\nOR: By BPT, AE/EC = AD/DB = 6/9, so EC = 12 cm and AC = 8 + 12 = 20 cm.",
+    "23": "sec 4A = cosec(90° − 4A). So 90° − 4A = A − 20°, 5A = 110° and A = 22°.",
+    "24": "In △OAP and △OBP: OA = OB (radii), PA = PB (tangents from an external point), OP is common. So △OAP ≅ △OBP (SSS) and ∠APO = ∠BPO (CPCT).",
+    "25": "Area = 2 × (115/360) × (22/7) × 25² = (115/180) × (22/7) × 625 = 158125/126 ≈ 1254.96 cm².",
+    "26": "Suppose 3√7 = r is rational. Then √7 = r/3 is rational, which is a contradiction. Hence 3√7 is irrational.",
+    "27": "Sum = k + 6. Product = 2(2k − 1). k + 6 = (1/2) × 2(2k − 1) = 2k − 1, so k = 7.",
+    "28": "a + (p − 1)d = q and a + (q − 1)d = p. Subtract: (p − q)d = q − p, so d = −1. Then a = q + p − 1. aₙ = (p + q − 1) − (n − 1) = p + q − n.\nOR: The first equation gives bx + ay = 2ab. Multiply it by b and the second equation by a: b²x + aby = 2ab² and a²x − aby = a³ − ab². Adding: (a² + b²)x = a(a² + b²), so x = a. Then ab + ay = 2ab gives y = b.",
+    "29": "∠CBA = 90° (angle in a semicircle; AC is a diameter). ∠CAT = 90° (radius ⟂ tangent). So ∠BAT = 90° − ∠CAB. In △ABC, ∠ACB = 180° − 90° − ∠CAB = 90° − ∠CAB. Hence ∠BAT = ∠ACB.",
+    "30": "(x/2 + x + 1)/2 = 5 gives 3x/2 + 1 = 10, x = 6. ((y + 1)/2 + y − 3)/2 = −2 gives (3y − 5)/2 = −4, 3y − 5 = −8, y = −1.",
+    "31": "sin θ/(1 − cos θ) = sin θ(1 + cos θ)/sin²θ = (1 + cos θ)/sin θ. tan θ/(1 + cos θ) = sin θ(1 − cos θ)/(cos θ sin²θ) = (1 − cos θ)/(sin θ cos θ). Sum = [cos θ(1 + cos θ) + 1 − cos θ]/(sin θ cos θ) = (1 + cos²θ)/(sin θ cos θ) = 1/(sin θ cos θ) + cos θ/sin θ = sec θ cosec θ + cot θ.\nOR: Divide by cos²θ: sec²θ + tan²θ = 3 tan θ, so 1 + 2 tan²θ = 3 tan θ. 2 tan²θ − 3 tan θ + 1 = 0, (2 tan θ − 1)(tan θ − 1) = 0. tan θ = 1 or 1/2.",
+    "32": "Let the faster pipe take x minutes; the other x + 3. 1/x + 1/(x + 3) = 13/40. So 40(2x + 3) = 13x(x + 3), 13x² − 41x − 120 = 0. x = (41 ± 89)/26, so x = 5 (the negative root is rejected). Times: 5 minutes and 8 minutes.",
+    "33": "Statement and proof of BPT: in △ABC with DE ∥ BC, ar(ADE)/ar(BDE) = AD/DB and ar(ADE)/ar(DEC) = AE/EC (same heights). ar(BDE) = ar(DEC) (same base DE, between the same parallels). So AD/DB = AE/EC.\nApplication: AD/DB = AE/EC, so DE ∥ BC (converse of BPT). Then ∠ADE = ∠ABC (corresponding angles). Given ∠ADE = ∠ACB, so ∠ABC = ∠ACB and AB = AC. △ABC is isosceles.",
+    "34": "(4/3)π(4.2)³ = π(6)²h. h = (4/3)(74.088)/36 = 2.744 cm. CSA = 2πrh = 2 × (22/7) × 6 × 2.744 ≈ 103.49 cm².\nOR: Earth = (22/7) × 3.5² × 20 = 770 m³. Height = 770/(22 × 14) = 2.5 m.",
+    "35": "Let the tower height be h. First distance = h/tan 30° = h√3. Second distance = h/tan 60° = h/√3. Distance covered in 6 s = h√3 − h/√3 = 2h/√3. Speed = h/(3√3) per second. Time for the remaining h/√3 = (h/√3)/(h/(3√3)) = 3 seconds.\nOR: a = 70, h = 10. u = −2, −1, 0, 1, 2; fu = −6, −10, 0, 8, 6; Σfu = −2, Σf = 35. Mean = 70 + 10 × (−2/35) = 70 − 0.57 = 69.43%.",
+    "36": "(i) x(2x + 1) = 300, that is 2x² + x − 300 = 0. (ii) D = 1 + 2400 = 2401. (iii) x = (−1 ± 49)/4, so x = 12. Breadth 12 m, length 25 m.\nOR (iii): Perimeter = 2(12 + 25) = 74 m. Cost = 74 × 50 = ₹3700.",
+    "37": "(i) tan 30° = 12/d, so d = 12√3 = 20.78 m. (ii) Height above the building = d tan 60° = 12√3 × √3 = 36 m. (iii) Tower = 36 + 12 = 48 m.\nOR (iii): Distance = √(d² + 36²) = √(432 + 1296) = √1728 = 24√3 ≈ 41.57 m.",
+    "38": "(i) 88/100 = 0.88. (ii) Sujatha buys 96 shirts: 96/100 = 0.96. (iii) 12/100 = 0.12.\nOR (iii): Neither buys it only if it has a major defect: 4/100 = 0.04."
+   }
+  }
+ }
+}

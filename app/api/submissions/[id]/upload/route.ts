@@ -1,4 +1,4 @@
-import { writtenQuestionMarks } from '@/lib/assessment';
+import { writtenMarksFor } from '@/lib/paper-format';
 import { getAttemptOwner, getBucket, getDatabase, jsonError, ownsAttempt, sameOrigin } from '@/lib/server';
 import { finalizeSubmission, getSubmissionPhase, getTimedSubmission } from '@/lib/submission-lifecycle';
 
@@ -22,7 +22,6 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     try { fileName = decodeURIComponent(encodedName).slice(0, 180) || 'answer'; } catch {}
 
     if (!safeId.test(id) || !safeId.test(uploadId)) return jsonError('Invalid upload request.', 400);
-    if (!(question in writtenQuestionMarks)) return jsonError('Invalid written-answer question.', 400);
     if (!allowedTypes.has(contentType)) return jsonError('Upload a JPG, PNG, WebP or PDF file.', 400);
     if (!Number.isFinite(size) || size <= 0 || size > maxFileSize) return jsonError('Each file must be 10 MB or smaller.', 400);
     if (!request.body) return jsonError('The selected file is empty.', 400);
@@ -30,6 +29,7 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     const db = getDatabase();
     const submission = await getTimedSubmission(db, id);
     if (!submission || !await ownsAttempt(request, submission.user_id)) return jsonError('Submission not found.', 404);
+    if (!(question in writtenMarksFor(submission.paper_id))) return jsonError('Invalid written-answer question.', 400);
     if (submission.status !== 'draft') return jsonError('This test has already been submitted.', 409);
     if (getSubmissionPhase(submission) === 'expired') {
       await finalizeSubmission(db, submission, { reason: 'timeout' });

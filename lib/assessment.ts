@@ -5,7 +5,8 @@ import { icseUpperPaperAssessments } from './icse-upper-papers';
 import { grade11PaperAssessments } from './grade11-papers';
 import { grade12PaperAssessments } from './grade12-papers';
 import { relationsPracticePaper } from './relations-practice-paper';
-import { RELATIONS_TEST_ID } from './paper-format';
+import { RELATIONS_TEST_ID, writtenMarksFor } from './paper-format';
+import cbse10SamplePapers from './cbse10-sample-papers.json';
 import { relationsMarking } from './relations-marking';
 import { fixAssessment } from './paper-fixes';
 
@@ -53,8 +54,8 @@ function groupFragments(fragments: string[], count: number) {
   });
 }
 
-export function buildDefaultMarkingSchemes(writtenSolutions: Record<number, string>) {
-  return Object.fromEntries(Object.entries(writtenQuestionMarks).map(([questionText, maximum]) => {
+export function buildDefaultMarkingSchemes(writtenSolutions: Record<number, string>, marks: Record<number, number> = writtenQuestionMarks) {
+  return Object.fromEntries(Object.entries(marks).map(([questionText, maximum]) => {
     const question = Number(questionText);
     const solution = writtenSolutions[question] ?? '';
     const fragments = solutionFragments(solution);
@@ -118,12 +119,13 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
   ...grade12PaperAssessments,
   ...icse6PaperAssessments,
   ...icseUpperPaperAssessments,
+  ...(cbse10SamplePapers.assessments as unknown as Record<string, PaperAssessmentSource>),
 };
 
 export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(
   Object.entries(paperAssessmentSources).map(([paperId, unfixed]) => [paperId, fixAssessment(paperId, unfixed)] as const).map(([paperId, assessment]) => [paperId, {
     ...assessment,
-    markingSchemes: paperId === RELATIONS_TEST_ID ? relationsMarking : buildDefaultMarkingSchemes(assessment.writtenSolutions),
+    markingSchemes: paperId === RELATIONS_TEST_ID ? relationsMarking : buildDefaultMarkingSchemes(assessment.writtenSolutions, writtenMarksFor(paperId)),
   }]),
 );
 

@@ -1,7 +1,7 @@
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 import { isPaperDefinition, paperDefinitionsById, type PaperDefinition } from '@/lib/papers';
-import { objectiveMaximum } from '@/lib/paper-format';
-import { buildDefaultMarkingSchemes, getPaperAssessment, writtenQuestionMarks, type MarkingStep } from '@/lib/assessment';
+import { objectiveMaximum, writtenMarksFor, writtenNumbers } from '@/lib/paper-format';
+import { buildDefaultMarkingSchemes, getPaperAssessment, type MarkingStep } from '@/lib/assessment';
 
 type PaperDocument = {
   paper: PaperDefinition;
@@ -10,9 +10,9 @@ type PaperDocument = {
   markingSchemes?: Record<number, MarkingStep[]>;
 };
 
-function isValidMarkingScheme(value: unknown): value is Record<number, MarkingStep[]> {
+function isValidMarkingScheme(value: unknown, paperId: string): value is Record<number, MarkingStep[]> {
   if (!value || typeof value !== 'object') return false;
-  return Object.entries(writtenQuestionMarks).every(([questionText, maximum]) => {
+  return Object.entries(writtenMarksFor(paperId)).every(([questionText, maximum]) => {
     const steps = (value as Record<number, unknown>)[Number(questionText)];
     return Array.isArray(steps)
       && steps.length === maximum
@@ -43,9 +43,9 @@ export async function GET(request: Request) {
         paper: savedDocument?.paper ?? fallback,
         answerKey: savedDocument?.answerKey ?? assessment.mcqAnswerKey,
         writtenSolutions,
-        markingSchemes: isValidMarkingScheme(savedDocument?.markingSchemes)
+        markingSchemes: isValidMarkingScheme(savedDocument?.markingSchemes, fallback.id)
           ? savedDocument.markingSchemes
-          : buildDefaultMarkingSchemes(writtenSolutions),
+          : buildDefaultMarkingSchemes(writtenSolutions, writtenMarksFor(fallback.id)),
         updatedAt: row?.updated_at ?? null,
       };
     });
@@ -67,8 +67,8 @@ export async function PATCH(request: Request) {
     const fallback = paperDefinitionsById[paper.id];
     if (!fallback || fallback.chapter !== paper.chapter) return jsonError('This question paper cannot be changed.', 400);
     if (!body.answerKey || !Array.from({ length: objectiveMaximum(paper.id) }, (_, index) => index + 1).every((number) => Number.isInteger(body.answerKey?.[number]) && Number(body.answerKey?.[number]) >= 0 && Number(body.answerKey?.[number]) <= 3)) return jsonError('Choose the correct option for every objective question.', 400);
-    if (!body.writtenSolutions || ![17,18,19,20,21,22,23,24].every((number) => typeof body.writtenSolutions?.[number] === 'string' && String(body.writtenSolutions?.[number]).trim().length > 0 && String(body.writtenSolutions?.[number]).length <= 3000)) return jsonError('Add a model solution for every written question.', 400);
-    if (!isValidMarkingScheme(body.markingSchemes)) return jsonError('Complete the mark-by-mark evaluation sheet for every written question.', 400);
+    if (!body.writtenSolutions || !writtenNumbers(paper.id).every((number) => typeof body.writtenSolutions?.[number] === 'string' && String(body.writtenSolutions?.[number]).trim().length > 0 && String(body.writtenSolutions?.[number]).length <= 3000)) return jsonError('Add a model solution for every written question.', 400);
+    if (!isValidMarkingScheme(body.markingSchemes, paper.id)) return jsonError('Complete the mark-by-mark evaluation sheet for every written question.', 400);
     const document: PaperDocument = { paper, answerKey: body.answerKey, writtenSolutions: body.writtenSolutions, markingSchemes: body.markingSchemes };
     await getDatabase().prepare(`INSERT INTO paper_content (paper_id, content_json, updated_by, updated_at)
       VALUES (?, ?, ?, CURRENT_TIMESTAMP)

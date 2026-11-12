@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, Clock3, Loader2, Minus, X } from 'lucide-react';
 import { paperDefinitionsById } from '@/lib/papers';
 import type { PaperDefinition } from '@/lib/papers';
-import { writtenQuestionMarks, objectiveMaximum, paperMaximum, displayQuestion } from '@/lib/paper-format';
+import { writtenMarksFor, writtenMaximum, writtenNumbers, objectiveMaximum, paperMaximum, displayQuestion } from '@/lib/paper-format';
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
 import SolutionSteps from '@/app/solution-steps';
 import MathText from '@/app/notes/math-text';
@@ -50,7 +50,7 @@ export default function StudentResult({ id }: { id: string }) {
     <header><img src="/ramavana-paper-logo.png" alt="Ramavana Mathematical Center" width="170" height="170" /><p>{paper?.chapter ?? 'Chapter test'}</p><h1>Test review</h1><span>{new Date(result.submission.submitted_at).toLocaleString()}</span></header>
     <section className="student-score-card">
       <div><span>MCQ</span><strong>{result.submission.mcq_score}/{objectiveMaximum(result.submission.paper_id)}</strong></div>
-      <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/24</strong></div>
+      <div><span>Written</span><strong>{result.submission.written_score ?? 'Pending'}/{writtenMaximum(result.submission.paper_id)}</strong></div>
       <div><span>Total</span><strong>{result.submission.total_score ?? 'Pending'}{result.submission.total_score !== null ? `/${paperMaximum(result.submission.paper_id)}` : ''}</strong></div>
     </section>
     {result.submission.status === 'marked' ? <div className="student-marked-status"><CheckCircle2 /> Marked by teacher</div> : <div className="student-pending-status"><Clock3 /> Your teacher will review your written answers within 24 hours of submission. Written marks and the final score will appear here after review.</div>}
@@ -86,17 +86,17 @@ export default function StudentResult({ id }: { id: string }) {
         </div>
       </article>;
     })}</div></section>
-    <section className="student-result-section"><h2>Written answers — step-by-step solutions</h2><p className="student-solution-note">Use these model solutions to practise writing your method clearly. They are not marks for your uploaded work; your teacher will assess that separately and award partial marks where appropriate.</p><div className="student-written-review">{[17,18,19,20,21,22,23,24].map((number) => {
+    <section className="student-result-section"><h2>Written answers — step-by-step solutions</h2><p className="student-solution-note">Use these model solutions to practise writing your method clearly. They are not marks for your uploaded work; your teacher will assess that separately and award partial marks where appropriate.</p><div className="student-written-review">{writtenNumbers(result.submission.paper_id).map((number) => {
       const mark = result.marks.find((entry) => entry.question_number === number);
       const value = paper?.written[number];
-      const maximum = writtenQuestionMarks[number];
+      const maximum = writtenMarksFor(result.submission.paper_id)[number];
       const outcome = !mark ? 'pending' : mark.marks_awarded === maximum ? 'full' : mark.marks_awarded > 0 ? 'partial' : 'zero';
       return <article className={outcome} key={number}>
         <span className="student-written-number">{displayQuestion(result.submission.paper_id, number)}</span>
         <div className="student-written-copy">
           <div className="student-written-heading"><strong>Question {displayQuestion(result.submission.paper_id, number)}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
           <p className="student-written-question"><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p>
-          {number === 24 && paper?.caseStudy && <p className="student-written-question"><MathText>{paper.caseStudy}</MathText></p>}
+          {(paper?.caseStudies?.[number] || (number === 24 && paper?.caseStudy)) && <p className="student-written-question" style={{ whiteSpace: 'pre-line' }}><MathText>{paper?.caseStudies?.[number] ?? paper?.caseStudy ?? ''}</MathText></p>}
           <div className="student-written-solution"><span>Model solution</span><SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div>
         </div>
       </article>;

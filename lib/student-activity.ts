@@ -4,6 +4,7 @@ import { getDatabase, type RequestUser } from './server';
 import { paperDefinitionsById } from './papers';
 import { freeQuizChapters, icse7QuizChapters, quizInfo, quizPrice } from './free-quizzes/catalog';
 import { getIntegralsProduct } from './integrals-products';
+import { objectiveMaximum, writtenNumbers } from './paper-format';
 
 export function activityPaper(id: string) {
   const basics=basicsOutline.find(t=>id==='maths-basics-'+t.slug);
@@ -19,7 +20,7 @@ export function activityPaper(id: string) {
     if (title) return { title: `Grade ${grade} · ${title} · MCQ`, free: quizPrice(chapter, grade) === 0, total: 50, kind: 'quiz' as const, grade, chapter, board: 'CBSE' as const };
   }
   const p = paperDefinitionsById[id];
-  return p ? { title: `${p.board ?? 'CBSE'} · Grade ${p.grade ?? 10} · ${p.chapter} · Paper ${p.paperNumber}`, free: false, total: 24, kind: 'paper' as const } : null;
+  return p ? { title: `${p.board ?? 'CBSE'} · Grade ${p.grade ?? 10} · ${p.chapter} · Paper ${p.paperNumber}`, free: false, total: objectiveMaximum(id) + writtenNumbers(id).length, kind: 'paper' as const } : null;
 }
 
 export async function recordPresence(user: RequestUser, signIn = false) {

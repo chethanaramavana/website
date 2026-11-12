@@ -7,7 +7,8 @@ import { grade11PaperDefinitions } from './grade11-papers';
 import { grade12PaperDefinitions } from './grade12-papers';
 import { relationsTestDefinition } from './relations-test-definition';
 import { fixPaperDefinition } from './paper-fixes';
-import { isThirtyMarkPaper } from './paper-format';
+import { isFullPaper, isThirtyMarkPaper, writtenNumbers } from './paper-format';
+import cbse10SamplePapers from './cbse10-sample-papers.json';
 
 export type QuestionSource = string;
 
@@ -55,6 +56,8 @@ export type PaperDefinition = {
   questionVisuals?: Partial<Record<number, QuestionVisual>>;
   teachingDiagrams?: Partial<Record<number, TeachingDiagramSpec>>;
   caseStudy: string;
+  /** Case texts for papers with more than one case study, keyed by question number. */
+  caseStudies?: Record<number, string>;
 };
 
 const basePaperDefinitions: Record<string, PaperDefinition> = {
@@ -146,6 +149,7 @@ const unfixedPaperDefinitions: Record<string, PaperDefinition> = {
   ...grade12PaperDefinitions,
   ...icse6PaperDefinitions,
   ...icseUpperPaperDefinitions,
+  ...Object.fromEntries((cbse10SamplePapers.papers as unknown as PaperDefinition[]).map((paper) => [`CBSE10:${paper.chapter}:${paper.paperNumber}`, paper])),
 };
 
 export const paperDefinitions: Record<string, PaperDefinition> = Object.fromEntries(
@@ -157,7 +161,7 @@ export const paperDefinitionsById = Object.fromEntries(
 ) as Record<string, PaperDefinition>;
 
 // Additional numbered papers for a chapter that already has a main paper (for example Paper 02).
-export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02', ...icseUpperAdditionalPaperIds]);
+export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02', ...icseUpperAdditionalPaperIds, ...cbse10SamplePapers.papers.map((paper) => paper.id).filter((id) => !id.endsWith('-01'))]);
 
 export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE', paperNumber?: string) {
   return Object.values(paperDefinitionsById).find(
@@ -183,11 +187,11 @@ const questionVisualTypes = new Set<QuestionVisual>([
 export function isPaperDefinition(value: unknown): value is PaperDefinition {
   if (!value || typeof value !== 'object') return false;
   const paper = value as Partial<PaperDefinition>;
-  if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== (isThirtyMarkPaper(paper.id) ? 4 : 14)) return false;
+  if (!paper.id || !paper.chapter || !Array.isArray(paper.mcqs) || paper.mcqs.length !== (isFullPaper(paper.id) ? 18 : isThirtyMarkPaper(paper.id) ? 4 : 14)) return false;
   if (!Array.isArray(paper.assertions) || paper.assertions.length !== 2 || !paper.written) return false;
   if (paper.questionVisuals && (typeof paper.questionVisuals !== 'object' || Object.entries(paper.questionVisuals).some(([number, visual]) => !Number.isInteger(Number(number)) || !questionVisualTypes.has(visual as QuestionVisual)))) return false;
-  if (paper.teachingDiagrams && (typeof paper.teachingDiagrams !== 'object' || Object.entries(paper.teachingDiagrams).some(([number, spec]) => !Number.isInteger(Number(number)) || Number(number) < 1 || Number(number) > 24 || !spec || typeof spec.kind !== 'string' || typeof spec.caption !== 'string' || spec.caption.length > 1500 || (spec.values !== undefined && (!Array.isArray(spec.values) || spec.values.length > 12 || spec.values.some(value => typeof value !== 'number' || !Number.isFinite(value)))) || (spec.labels !== undefined && (!Array.isArray(spec.labels) || spec.labels.length > 12 || spec.labels.some(value => typeof value !== 'string' || value.length > 200)))))) return false;
+  if (paper.teachingDiagrams && (typeof paper.teachingDiagrams !== 'object' || Object.entries(paper.teachingDiagrams).some(([number, spec]) => !Number.isInteger(Number(number)) || Number(number) < 1 || Number(number) > 38 || !spec || typeof spec.kind !== 'string' || typeof spec.caption !== 'string' || spec.caption.length > 1500 || (spec.values !== undefined && (!Array.isArray(spec.values) || spec.values.length > 12 || spec.values.some(value => typeof value !== 'number' || !Number.isFinite(value)))) || (spec.labels !== undefined && (!Array.isArray(spec.labels) || spec.labels.length > 12 || spec.labels.some(value => typeof value !== 'string' || value.length > 200)))))) return false;
   if (paper.mcqs.some((item) => !item || typeof item.question !== 'string' || item.question.length > 600 || !Array.isArray(item.options) || item.options.length !== 4 || item.options.some((option) => typeof option !== 'string' || option.length > 250))) return false;
   if (paper.assertions.some((item) => !item || typeof item.assertion !== 'string' || typeof item.reason !== 'string')) return false;
-  return [17, 18, 19, 20, 21, 22, 23, 24].every((number) => typeof paper.written?.[number] === 'string' || Array.isArray(paper.written?.[number]));
+  return writtenNumbers(paper.id).every((number) => typeof paper.written?.[number] === 'string' || Array.isArray(paper.written?.[number]));
 }
