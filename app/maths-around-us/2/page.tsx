@@ -37,15 +37,15 @@ export default function BridgesStory() {
           </figure>
           <div className="nature-intro-copy">
             <h2>Try it with your finger</h2>
-            <p>This was a real puzzle in a city called Königsberg. In the picture, each dot is a piece of land. Each line is a bridge.</p>
-            <p>Start on any dot. Can you follow all seven lines without using a line twice?</p>
+            <p>Long ago, a city called Königsberg had seven bridges. In this picture, the dots show places you can stand. The lines show bridges you can cross.</p>
+            <p>Put your finger on any dot. Follow a bridge to the next dot. Can you cross all seven bridges without crossing any bridge twice?</p>
             <details className="nature-sources">
               <summary>Why can’t you finish the walk?</summary>
-              <p>Every time you stop somewhere in the middle of the walk, you use one bridge to get in and one to get out. That makes a pair.</p>
-              <p>A place with an odd number of bridges has a bridge left over after you make pairs. Your walk has to start or finish there.</p>
-              <p>All four places have odd numbers of bridges. A walk has only one start and one finish, so there’s no way to cross all seven just once.</p>
+              <p>Imagine walking onto the island. You use one bridge to get there and one to leave. That uses two bridges. If you come back later, you need two more.</p>
+              <p>Look at a dot marked 3. Two bridges make a pair, and one is left over. You can use that extra bridge to start your walk or to finish it.</p>
+              <p>The four dots have 3, 3, 3 and 5 bridges. Each has one bridge left over when you make pairs. So all four places need to be a start or a finish. But your walk has only one start and one finish!</p>
             </details>
-            <p>Using dots and lines to study connections is called <strong>graph theory</strong>.</p>
+            <p>We turned a city map into dots and lines. Mathematicians use pictures like this to study how things connect. They call it <strong>graph theory</strong>.</p>
             <a href="https://old.maa.org/press/periodicals/convergence/leonard-eulers-solution-to-the-konigsberg-bridge-problem">See Euler’s original bridge sketch ↗</a>
           </div>
         </div>
