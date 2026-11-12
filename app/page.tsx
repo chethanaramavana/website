@@ -4,6 +4,7 @@ import LearningHeader from './learning-header';
 import { SiteFooter } from './brand';
 import ChapterFigure from './chapter-figure';
 import TeachingDiagram, {type TeachingDiagramSpec} from './notes/cbse89-diagram';
+import PaperFigure, { type PaperFigureSpec } from './paper-figure';
 import KaprekarToy from './kaprekar-toy';
 import { quizListings } from '@/lib/free-quizzes/catalog';
 import { quizPrice } from '@/lib/free-quizzes/catalog';
@@ -282,6 +283,7 @@ type PaperDefinition = {
   teachingDiagrams?: Partial<Record<number, TeachingDiagramSpec>>;
   caseStudy: string;
   caseStudies?: Record<number, string>;
+  figures?: Record<number, PaperFigureSpec>;
 };
 
 const paperDefinitions: Record<PaperDefinition['chapter'], PaperDefinition> = {
@@ -1464,6 +1466,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <fieldset className="paper-question mcq-question" key={item.number}>
                 <legend><strong>{item.number}.</strong> <MathText>{item.question}</MathText> <b>[1]</b>{item.source && <QuestionSource value={item.source} />}</legend>
                 {currentPaper.questionVisuals?.[item.number] && <QuestionDiagram kind={currentPaper.questionVisuals[item.number]!} />}
+                {currentPaper.figures?.[item.number] && <PaperFigure spec={currentPaper.figures[item.number]} label={`Figure for question ${item.number}`} />}
                 <div className="option-grid">
                   {item.options.map((option, index) => (
                     <label key={option}>
@@ -1500,10 +1503,12 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <div className="case-study-label">Case study {section.numbers.length > 1 ? section.numbers.indexOf(number) + 1 : ''}</div>
               <p style={{ whiteSpace: 'pre-line' }}><MathText>{currentPaper.caseStudies?.[number] ?? currentPaper.caseStudy}</MathText></p>
               {currentPaper.teachingDiagrams?.[number] && <TeachingDiagram spec={currentPaper.teachingDiagrams[number]!} />}
+              {currentPaper.figures?.[number] && <PaperFigure spec={currentPaper.figures[number]} label={`Figure for case study ${section.numbers.indexOf(number) + 1}`} />}
             </div>}
             <WrittenQuestion number={number} label={shownNumber(number)} marks={section.marks} source={currentPaper.questionSources?.[number]} files={writtenFiles[number] ?? []} savedFiles={savedUploads[number] ?? []} isSaving={Boolean(uploadingQuestions[number])} disabled={uploadLocked} onFilesChange={(files) => updateWrittenFiles(number, files)}>
               <QuestionContent value={currentPaper.written[number]} />
               {!section.caseStudy && currentPaper.teachingDiagrams?.[number] && <TeachingDiagram spec={currentPaper.teachingDiagrams[number]!} />}
+              {!section.caseStudy && currentPaper.figures?.[number] && <PaperFigure spec={currentPaper.figures[number]} label={`Figure for question ${shownNumber(number)}`} />}
             </WrittenQuestion>
           </Fragment>)}
         </PaperSection>)}
@@ -1578,7 +1583,7 @@ function ChapterPaper({ paper, onHome, onBoard, onChapters }: { paper: PaperDefi
               <p className="solution-note">Your teacher will review your written answers within 24 hours of submission and award partial marks where appropriate. Until then, practise with the model solutions below. Your final score will appear in your student account after review.</p>
               <div className="written-solution-list">
                 {writtenQuestions.map((number) => (
-                  <article key={number}><span className="written-solution-number">{shownNumber(number)}</span><div><strong>Question {shownNumber(number)}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <><p><MathText>{currentPaper.caseStudy}</MathText></p>{currentPaper.teachingDiagrams?.[24] && <TeachingDiagram spec={currentPaper.teachingDiagrams[24]!} />}</>}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
+                  <article key={number}><span className="written-solution-number">{shownNumber(number)}</span><div><strong>Question {shownNumber(number)}</strong><p><MathText>{Array.isArray(currentPaper.written[number]) ? (currentPaper.written[number] as string[]).join(' ') : currentPaper.written[number] as string}</MathText></p>{number === 24 && <><p><MathText>{currentPaper.caseStudy}</MathText></p>{currentPaper.teachingDiagrams?.[24] && <TeachingDiagram spec={currentPaper.teachingDiagrams[24]!} />}</>}{currentPaper.figures?.[number] && <PaperFigure spec={currentPaper.figures[number]} />}<SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div></article>
                 ))}
               </div>
             </div>

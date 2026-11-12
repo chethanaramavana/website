@@ -9,6 +9,7 @@ import { writtenMarksFor, writtenMaximum, writtenNumbers, objectiveMaximum, pape
 import { getBriefMcqSolution } from '@/lib/brief-solutions';
 import SolutionSteps from '@/app/solution-steps';
 import MathText from '@/app/notes/math-text';
+import PaperFigure from '@/app/paper-figure';
 
 const assertionReasonOptions = [
   'Both Assertion and Reason are true, and Reason is the correct explanation of Assertion.',
@@ -97,6 +98,7 @@ export default function StudentResult({ id }: { id: string }) {
           <div className="student-written-heading"><strong>Question {displayQuestion(result.submission.paper_id, number)}</strong><em>{mark ? `${mark.marks_awarded}/${maximum} marks` : 'Awaiting marks'}</em></div>
           <p className="student-written-question"><MathText>{Array.isArray(value) ? value.join(' ') : value ?? ''}</MathText></p>
           {(paper?.caseStudies?.[number] || (number === 24 && paper?.caseStudy)) && <p className="student-written-question" style={{ whiteSpace: 'pre-line' }}><MathText>{paper?.caseStudies?.[number] ?? paper?.caseStudy ?? ''}</MathText></p>}
+          {paper?.figures?.[number] && <PaperFigure spec={paper.figures[number]} />}
           <div className="student-written-solution"><span>Model solution</span><SolutionSteps solution={result.writtenSolutions[String(number)] ?? ''} /></div>
         </div>
       </article>;
