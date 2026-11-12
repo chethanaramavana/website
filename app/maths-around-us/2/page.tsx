@@ -1,47 +1,52 @@
 import type { Metadata } from 'next';
 import { SiteFooter } from '../../brand';
 import LearningHeader from '../../learning-header';
+import { natureStories } from '@/lib/nature-stories';
 import '../nature.css';
 
-const title = 'The other half of a rainbow';
-const description = 'A rainbow can make a full circle. A single angle explains why.';
-const poster = '/maths-around-us/2-rainbow-poster.png';
-const photo = 'https://science.nasa.gov/image-article/apod-2022-december-27-a-full-circle-rainbow-over-norway/';
+const story = natureStories[1];
+const pictureAlt = 'Seven lines join four dots. Three lines touch each bank, five touch the island, and three touch the land to the east.';
 
 export const metadata: Metadata = {
-  title: 'No. 2 · The other half of a rainbow | Ramavana',
-  description,
-  alternates: { canonical: '/maths-around-us/2' },
+  title: 'No. 2 · The walk nobody could finish | Ramavana',
+  description: story.description,
+  alternates: { canonical: story.href },
   openGraph: {
-    title,
-    description,
+    title: story.title,
+    description: story.description,
     url: 'https://ramavanamath.com/maths-around-us/2',
-    images: [{ url: poster, width: 1080, height: 1500, alt: 'A bright rainbow arch with a dashed line completing the circle' }],
+    images: [{ url: story.poster, width: 1080, height: 1500, alt: pictureAlt }],
   },
 };
 
-export default function RainbowStory() {
+export default function BridgesStory() {
   return (
     <div className="identity-learning">
       <LearningHeader />
       <main className="nature-page rmc-container">
         <a className="nature-back" href="/maths-around-us">← All picture stories</a>
         <header className="nature-opening">
-          <p className="rmc-eyebrow">Maths Around Us · No. 2 · <time dateTime="2026-11-11">11 November 2026</time></p>
-          <h1>{title}</h1>
-          <p>{description}</p>
+          <p className="rmc-eyebrow">Maths Around Us · No. 2 · <time dateTime={story.date}>12 November 2026</time></p>
+          <h1>{story.title}</h1>
+          <p>{story.description}</p>
         </header>
         <div className="nature-intro-grid">
           <figure className="nature-poster">
-            <img src={poster} width="1080" height="1500" alt="A bright rainbow arch above the horizon. A dashed arc below the horizon completes the circle." />
-            <figcaption><a href={poster} download>Download the picture ↓</a></figcaption>
+            <img src={story.poster} width="1080" height="1500" alt={pictureAlt} />
+            <figcaption><a href={story.poster} download>Download the picture ↓</a></figcaption>
           </figure>
-          <div className="nature-intro-copy" id="symmetry-quiz">
-            <h2>A circle drawn by light</h2>
-            <p>Imagine the Sun behind you. The rainbow is centred on the point directly opposite the Sun.</p>
-            <p>Its outer red edge sits about <strong>42°</strong> from that centre in every direction. The same angle all the way around traces a circle.</p>
-            <p>From the ground, you usually see only the upper arc. From high above, sunlit droplets below you can reveal the rest.</p>
-            <a className="rmc-button" href={photo}>See a full-circle rainbow over Norway ↗</a>
+          <div className="nature-intro-copy">
+            <h2>Try it with your finger</h2>
+            <p>This was a real puzzle in a city called Königsberg. In the picture, each dot is a piece of land. Each line is a bridge.</p>
+            <p>Start on any dot. Can you follow all seven lines without using a line twice?</p>
+            <details className="nature-sources">
+              <summary>Why can’t you finish the walk?</summary>
+              <p>Every time you stop somewhere in the middle of the walk, you use one bridge to get in and one to get out. That makes a pair.</p>
+              <p>A place with an odd number of bridges has a bridge left over after you make pairs. Your walk has to start or finish there.</p>
+              <p>All four places have odd numbers of bridges. A walk has only one start and one finish, so there’s no way to cross all seven just once.</p>
+            </details>
+            <p>Using dots and lines to study connections is called <strong>graph theory</strong>.</p>
+            <a href="https://old.maa.org/press/periodicals/convergence/leonard-eulers-solution-to-the-konigsberg-bridge-problem">See Euler’s original bridge sketch ↗</a>
           </div>
         </div>
         <p><a className="nature-back" href="/maths-around-us/1">← No. 1 · The honeycomb story</a></p>

@@ -8,11 +8,11 @@ export const natureStories = [{
   poster: '/maths-around-us/1-honeycomb-poster.png',
 }, {
   number: 2,
-  date: '2026-11-11',
-  title: 'The other half of a rainbow',
-  description: 'A rainbow can make a full circle. A single angle explains why.',
+  date: '2026-11-12',
+  title: 'The walk nobody could finish',
+  description: 'Seven bridges cross a river. Can you walk across each one exactly once?',
   href: '/maths-around-us/2',
-  poster: '/maths-around-us/2-rainbow-poster.png',
+  poster: '/maths-around-us/2-seven-bridges.png',
 }] as const;
 
 export const cellShapes = [
