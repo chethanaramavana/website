@@ -9,10 +9,10 @@ export const natureStories = [{
 }, {
   number: 2,
   date: '2026-11-12',
-  title: 'The walk nobody could finish',
-  description: 'Seven bridges cross a river. Can you walk across each one exactly once?',
+  title: 'Can you cross all seven bridges just once?',
+  description: 'Pick a starting point and trace your route.',
   href: '/maths-around-us/2',
-  poster: '/maths-around-us/2-seven-bridges.png',
+  poster: '/maths-around-us/2-seven-bridges-questions.png',
 }] as const;
 
 export const cellShapes = [

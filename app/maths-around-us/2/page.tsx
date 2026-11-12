@@ -8,7 +8,7 @@ const story = natureStories[1];
 const pictureAlt = 'Seven lines join four dots. Three lines touch each bank, five touch the island, and three touch the land to the east.';
 
 export const metadata: Metadata = {
-  title: 'No. 2 · The walk nobody could finish | Ramavana',
+  title: 'Maths Around Us No. 2 · The Seven Bridges Question | Ramavana',
   description: story.description,
   alternates: { canonical: story.href },
   openGraph: {
@@ -36,11 +36,14 @@ export default function BridgesStory() {
             <figcaption><a href={story.poster} download>Download the picture ↓</a></figcaption>
           </figure>
           <div className="nature-intro-copy">
-            <h2>Try it with your finger</h2>
+            <h2>Questions</h2>
             <p>Long ago, a city called Königsberg had seven bridges. In this picture, the dots show places you can stand. The lines show bridges you can cross.</p>
-            <p>Put your finger on any dot. Follow a bridge to the next dot. Can you cross all seven bridges without crossing any bridge twice?</p>
+            <ol>
+              <li>How many bridges touch each dot? Count the lines to check.</li>
+              <li>Pick any dot. Trace a walk with your finger. Can you use all seven bridges without using one twice?</li>
+            </ol>
             <details className="nature-sources">
-              <summary>Why can’t you finish the walk?</summary>
+              <summary>See the answer</summary>
               <p>Imagine walking onto the island. You use one bridge to get there and one to leave. That uses two bridges. If you come back later, you need two more.</p>
               <p>Look at a dot marked 3. Two bridges make a pair, and one is left over. You can use that extra bridge to start your walk or to finish it.</p>
               <p>The four dots have 3, 3, 3 and 5 bridges. Each has one bridge left over when you make pairs. So all four places need to be a start or a finish. But your walk has only one start and one finish!</p>
