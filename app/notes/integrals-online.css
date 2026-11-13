@@ -54,6 +54,10 @@
 .ir-sheet-line{padding:6px 0;border-bottom:1px dashed #ece5f3;overflow-x:auto;font-size:16px}.ir-sheet-line:last-child{border-bottom:0}
 .ir-formulas{background:#f7f3fb;border:2px solid #d8c9ea;border-radius:16px;padding:12px 18px;margin:18px 0}
 .ir-formulas>.ir-label{color:#61408e}
+.ir-formulas>summary{cursor:pointer;font-weight:650}
+.ir-formulas[open]>summary{margin-bottom:12px}
+.ir-reasoning{max-width:68ch;line-height:1.7}
+.ir-line>.ir-reasoning{margin:0 0 8px}
 .ir-theory{margin:8px 0 4px;font-size:16px}.ir-theory summary{cursor:pointer;font:600 14px system-ui;color:#285b45}
 .ir-example{padding:18px 22px}
 .ir-question{margin:4px 0 12px}

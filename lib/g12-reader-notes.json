@@ -1007,7 +1007,10 @@
       "steps": [
        "$a_{11}=\\tfrac{4}{2}=2,\\ a_{12}=\\tfrac92,\\ a_{21}=\\tfrac92,\\ a_{22}=\\tfrac{16}{2}=8$"
       ],
-      "result": "$\\begin{bmatrix}2&\\frac92\\\\\\frac92&8\\end{bmatrix}$"
+      "result": "$\\begin{bmatrix}2&\\frac92\\\\\\frac92&8\\end{bmatrix}$",
+      "reasoning": [
+       "The two subscripts work like a seat address. To fill row 1, column 2, put 1 and 2 into the rule. Row 2, column 1 gives the same sum, so those two entries match."
+      ]
      },
      {
       "question": "A matrix has $24$ elements. Find the number of possible orders.",
@@ -1017,7 +1020,10 @@
       "steps": [
        "$mn=24:\\ (1,24),(2,12),(3,8),(4,6),(6,4),(8,3),(12,2),(24,1)$"
       ],
-      "result": "$8$"
+      "result": "$8$",
+      "reasoning": [
+       "Imagine arranging 24 seats in equal rows. Choose a number of rows that divides 24, then divide to find the number of seats in each row. Turning a 4-by-6 layout into a 6-by-4 layout swaps the rows and columns, so both orders count."
+      ]
      },
      {
       "question": "Find $x,y,z$ if $\\begin{bmatrix}x+y&2\\\\5+z&xy\\end{bmatrix}=\\begin{bmatrix}6&2\\\\5&8\\end{bmatrix}$.",
@@ -1028,7 +1034,11 @@
        "$x+y=6,\\quad 5+z=5,\\quad xy=8$",
        "$z=0;\\ t^2-6t+8=0\\Rightarrow t=2,4$"
       ],
-      "result": "$x=2, y=4$ or $x=4, y=2;\\ z=0$"
+      "result": "$x=2, y=4$ or $x=4, y=2;\\ z=0$",
+      "reasoning": [
+       "Imagine laying the tables on top of each other. Every entry must match the one directly underneath it.",
+       "The bottom-left match gives zero for z. The other two matches tell us the sum and product of x and y. Those are exactly the numbers that appear when we expand the quadratic with roots x and y."
+      ]
      },
      {
       "question": "How many $3\\times3$ matrices have every entry $0$ or $1$?",
@@ -1038,9 +1048,13 @@
       "steps": [
        "$k=2,\\ mn=9:\\ 2^{9}$"
       ],
-      "result": "$512$"
+      "result": "$512$",
+      "reasoning": [
+       "Picture nine light switches in a square. Each can be off or on, independently. Every extra switch doubles the number of possible pictures."
+      ]
      }
-    ]
+    ],
+    "introduction": "A matrix is a table with an address for every entry. Imagine a theatre seating chart: the row tells you how far back to go, and the column tells you where to look along that row. We can fill a table, count its possible shapes, or compare two tables by using those addresses."
    },
    {
     "title": "Addition and multiplication",
@@ -1063,7 +1077,11 @@
        "$AB=\\begin{bmatrix}1\\cdot2+2\\cdot1&1\\cdot0+2(-1)\\\\3\\cdot2+4\\cdot1&3\\cdot0+4(-1)\\end{bmatrix}=\\begin{bmatrix}4&-2\\\\10&-4\\end{bmatrix}$",
        "$BA=\\begin{bmatrix}2\\cdot1+0\\cdot3&2\\cdot2+0\\cdot4\\\\1\\cdot1-1\\cdot3&1\\cdot2-1\\cdot4\\end{bmatrix}=\\begin{bmatrix}2&4\\\\-2&-2\\end{bmatrix}$"
       ],
-      "result": "$AB\\ne BA$"
+      "result": "$AB\\ne BA$",
+      "reasoning": [
+       "Start with the first row of A and the first column of B. Pair the first entries, then the second entries, and add the products. This gives the top-left entry. Move to the next column for the next entry.",
+       "Now B supplies the rows and A supplies the columns. The pairings change, so the products can change too."
+      ]
      },
      {
       "question": "Find $X$ and $Y$ if $X+Y=\\begin{bmatrix}7&0\\\\2&5\\end{bmatrix}$ and $X-Y=\\begin{bmatrix}3&0\\\\0&3\\end{bmatrix}$.",
@@ -1074,7 +1092,11 @@
        "$2X=\\begin{bmatrix}10&0\\\\2&8\\end{bmatrix}\\Rightarrow X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix}$",
        "$Y=(X+Y)-X=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$"
       ],
-      "result": "$X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix},\\ Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$"
+      "result": "$X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix},\\ Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$",
+      "reasoning": [
+       "Add the two equations entry by entry. Each entry from Y cancels with its negative, leaving two copies of X.",
+       "The sum is known. Take away X at each address to recover Y."
+      ]
      },
      {
       "question": "Give non-zero $2\\times2$ matrices $A,B$ with $AB=O$.",
@@ -1085,7 +1107,11 @@
        "$A=\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix},\\ B=\\begin{bmatrix}1&0\\\\0&0\\end{bmatrix}$",
        "$AB=\\begin{bmatrix}0\\cdot1+1\\cdot0&0\\\\0&0\\end{bmatrix}=O$"
       ],
-      "result": "$AB=O$ with $A\\ne O,\\ B\\ne O$"
+      "result": "$AB=O$ with $A\\ne O,\\ B\\ne O$",
+      "reasoning": [
+       "Think of B as a machine that puts any input on the horizontal axis: its output always has zero in the second slot. A reads only that second slot. Together they always give zero, even though each machine can do something on its own.",
+       "In the product, every row of A and column of B gives a sum of zero."
+      ]
      },
      {
       "question": "Shop P sells $10,15,20$ and shop Q sells $12,8,10$ pens, pencils and erasers. The prices are ₹$10$, ₹$5$, ₹$3$. Find each shop’s revenue.",
@@ -1097,7 +1123,11 @@
        "$\\begin{bmatrix}10&15&20\\\\12&8&10\\end{bmatrix}\\begin{bmatrix}10\\\\5\\\\3\\end{bmatrix}=\\begin{bmatrix}10\\cdot10+15\\cdot5+20\\cdot3\\\\12\\cdot10+8\\cdot5+10\\cdot3\\end{bmatrix}$",
        "$=\\begin{bmatrix}235\\\\190\\end{bmatrix}$"
       ],
-      "result": "Shop P: ₹$235$, shop Q: ₹$190$"
+      "result": "Shop P: ₹$235$, shop Q: ₹$190$",
+      "reasoning": [
+       "Read one shop’s row like a till receipt. Multiply the number of pens by the pen price, then do the same for pencils and erasers. The other shop uses the same price column with its own row.",
+       "Add the three amounts for each shop. The first total belongs to P and the second to Q."
+      ]
      },
      {
       "question": "Find $x$ if $\\begin{bmatrix}1&x&1\\end{bmatrix}\\begin{bmatrix}1&3&2\\\\2&5&1\\\\15&3&2\\end{bmatrix}\\begin{bmatrix}1\\\\2\\\\x\\end{bmatrix}=O$.",
@@ -1110,9 +1140,15 @@
        "$16+2x+12+10x+4x+x^2=0$",
        "$x^2+16x+28=0\\Rightarrow(x+2)(x+14)=0$"
       ],
-      "result": "$x=-2$ or $x=-14$"
+      "result": "$x=-2$ or $x=-14$",
+      "reasoning": [
+       "Start with the left row and the middle matrix. Each column of the middle matrix gives one entry of a new row. That row times the last column produces a single number.",
+       "Match the entries of the new row with 1, 2 and x. Add the three products and set the result equal to zero.",
+       "Collect the terms. Look for two numbers with product 28 and sum 16 so that the quadratic can be factored."
+      ]
      }
-    ]
+    ],
+    "introduction": "Two shops keep a sales table. To add their sales, match like entries. To turn sales into revenue, pair each quantity with its price and add the costs. That second operation is what matrix multiplication does one row and one column at a time."
    },
    {
     "title": "Transpose, symmetric and skew-symmetric matrices",
@@ -1133,7 +1169,11 @@
        "$AB=\\begin{bmatrix}-1&2&1\\\\4&-8&-4\\\\-3&6&3\\end{bmatrix}\\Rightarrow(AB)^T=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$",
        "$B^TA^T=\\begin{bmatrix}-1\\\\2\\\\1\\end{bmatrix}\\begin{bmatrix}1&-4&3\\end{bmatrix}=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$"
       ],
-      "result": "$(AB)^T=B^TA^T$"
+      "result": "$(AB)^T=B^TA^T$",
+      "reasoning": [
+       "Here a column times a row makes a table. Each row is a copy of B scaled by the corresponding entry of A. Transposing turns those rows into columns.",
+       "Try taking the transposes first. Now B supplies the column and A supplies the row, so the entries land in the same swapped positions."
+      ]
      },
      {
       "question": "Write $A=\\begin{bmatrix}3&5\\\\1&-1\\end{bmatrix}$ as the sum of a symmetric and a skew-symmetric matrix.",
@@ -1144,7 +1184,11 @@
        "$A+A^T=\\begin{bmatrix}6&6\\\\6&-2\\end{bmatrix}\\Rightarrow P=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}$",
        "$A-A^T=\\begin{bmatrix}0&4\\\\-4&0\\end{bmatrix}\\Rightarrow Q=\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$"
       ],
-      "result": "$A=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}+\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$"
+      "result": "$A=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}+\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$",
+      "reasoning": [
+       "Treat the off-diagonal entries 5 and 1 as a pair. Give both positions their average, 3. Those equal entries make the symmetric part. The diagonal entries already match themselves, so keep them here.",
+       "The leftover from 5 is 2 and the leftover from 1 is −2. Opposite leftovers form the skew-symmetric part. They add back to the original entries when combined with the averages."
+      ]
      },
      {
       "question": "Write $A=\\begin{bmatrix}3&-2&-4\\\\3&-2&-5\\\\-1&1&2\\end{bmatrix}$ as $P+Q$, $P$ symmetric and $Q$ skew-symmetric.",
@@ -1155,7 +1199,11 @@
        "$A+A^T=\\begin{bmatrix}6&1&-5\\\\1&-4&-4\\\\-5&-4&4\\end{bmatrix}\\Rightarrow P=\\begin{bmatrix}3&\\frac12&-\\frac52\\\\\\frac12&-2&-2\\\\-\\frac52&-2&2\\end{bmatrix}$",
        "$A-A^T=\\begin{bmatrix}0&-5&-3\\\\5&0&-6\\\\3&6&0\\end{bmatrix}\\Rightarrow Q=\\begin{bmatrix}0&-\\frac52&-\\frac32\\\\\\frac52&0&-3\\\\\\frac32&3&0\\end{bmatrix}$"
       ],
-      "result": "$A=P+Q$"
+      "result": "$A=P+Q$",
+      "reasoning": [
+       "Use the same averaging idea for each pair across the diagonal. For example, the entries −2 and 3 average to one-half.",
+       "Subtract the average at each position to find the leftovers. Equivalently, halve each signed difference. The leftovers in each pair have opposite signs."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}0&a&3\\\\2&b&-1\\\\c&1&0\\end{bmatrix}$ is skew-symmetric. Find $a,b,c$.",
@@ -1165,7 +1213,10 @@
       "steps": [
        "$a=-a_{21}=-2,\\quad b=a_{22}=0,\\quad c=-a_{13}=-3$"
       ],
-      "result": "$a=-2,\\ b=0,\\ c=-3$"
+      "result": "$a=-2,\\ b=0,\\ c=-3$",
+      "reasoning": [
+       "Look across the diagonal for each partner. For example, a faces 2, so a must be −2. A diagonal entry faces itself, so b must equal its own negative. Only zero does that."
+      ]
      },
      {
       "question": "Prove that $AA^T$ is symmetric for every matrix $A$.",
@@ -1177,9 +1228,13 @@
       "steps": [
        "$(AA^T)^T=(A^T)^TA^T=AA^T$"
       ],
-      "result": "$AA^T$ is symmetric"
+      "result": "$AA^T$ is symmetric",
+      "reasoning": [
+       "The entry in position i, j is the dot product of rows i and j of A. Swap the rows in that dot product and the value is the same. That is exactly the mirror pattern of a symmetric matrix."
+      ]
      }
-    ]
+    ],
+    "introduction": "Imagine a square table of travel information between towns. Reading journeys in the opposite direction swaps each origin with its destination. That swap is a transpose. A symmetric table looks the same after the swap, while a skew-symmetric table changes sign."
    },
    {
     "title": "Matrix equations and inverse",
@@ -1201,7 +1256,12 @@
        "$A^2-5A+7I=\\begin{bmatrix}8-15+7&5-5\\\\-5+5&3-10+7\\end{bmatrix}=O$",
        "$A^{-1}=\\frac17(5I-A)=\\frac17\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$"
       ],
-      "result": "$A^{-1}=\\frac17\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$"
+      "result": "$A^{-1}=\\frac17\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$",
+      "reasoning": [
+       "First work out the pieces of the equation. Squaring A runs the machine twice, while 5A scales its output by five.",
+       "The identity contributes 7 only on the diagonal. The entries cancel when we combine the three matrices.",
+       "Move the identity term and factor A to get $A(5I-A)=7I$. Dividing the second factor by 7 gives an undo machine. The factors also commute because the second factor is built from A and I."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}$. Find $k$ such that $A^2=kA-2I$.",
@@ -1213,7 +1273,12 @@
        "$kA-2I=\\begin{bmatrix}3k-2&-2k\\\\4k&-2k-2\\end{bmatrix}$",
        "$-2k=-2\\Rightarrow k=1$; check: $3-2=1,\\ 4,\\ -4\\ \\checkmark$"
       ],
-      "result": "$k=1$"
+      "result": "$k=1$",
+      "reasoning": [
+       "Work out what happens when the same matrix acts twice.",
+       "Compare that result with a scaled copy of A, adjusted by 2 along the diagonal.",
+       "Use the top-right entry to find k. Then check the other three positions, since matrix equality requires every position to agree."
+      ]
      },
      {
       "question": "Show that $B=\\begin{bmatrix}2&-1\\\\-1&1\\end{bmatrix}$ is the inverse of $A=\\begin{bmatrix}1&1\\\\1&2\\end{bmatrix}$.",
@@ -1223,7 +1288,10 @@
       "steps": [
        "$AB=\\begin{bmatrix}2-1&-1+1\\\\2-2&-1+2\\end{bmatrix}=I,\\quad BA=\\begin{bmatrix}2-1&2-2\\\\-1+1&-1+2\\end{bmatrix}=I$"
       ],
-      "result": "$B=A^{-1}$"
+      "result": "$B=A^{-1}$",
+      "reasoning": [
+       "Imagine applying one machine and then its proposed undo. Multiply in both orders. In each product the diagonal entries become 1 and the other entries become 0, so both journeys return the original input."
+      ]
      },
      {
       "question": "$f(x)=x^2-5x+6$ and $A=\\begin{bmatrix}2&0&1\\\\2&1&3\\\\1&-1&0\\end{bmatrix}$. Find $f(A)$.",
@@ -1234,9 +1302,14 @@
        "$A^2=\\begin{bmatrix}5&-1&2\\\\9&-2&5\\\\0&-1&-2\\end{bmatrix}$",
        "$f(A)=A^2-5A+6I=\\begin{bmatrix}5-10+6&-1-0&2-5\\\\9-10&-2-5+6&5-15\\\\0-5&-1+5&-2-0+6\\end{bmatrix}$"
       ],
-      "result": "$\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$"
+      "result": "$\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$",
+      "reasoning": [
+       "The squared term means apply A twice, using matrix multiplication.",
+       "A constant term must act on the whole input without mixing its coordinates. In a matrix polynomial, that is why 6 becomes six copies of the identity."
+      ]
      }
-    ]
+    ],
+    "introduction": "Think of a matrix as a machine. The identity matrix lets an input pass through unchanged. An inverse is an undo machine: running the two together in either order should bring you back to the input."
    },
    {
     "title": "Powers of a matrix",
@@ -1257,7 +1330,11 @@
        "$A^2=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix},\\ A^3=\\begin{bmatrix}1&3\\\\0&1\\end{bmatrix}$",
        "$A^n=\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}\\Rightarrow A^{n+1}=\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}=\\begin{bmatrix}1&n+1\\\\0&1\\end{bmatrix}$"
       ],
-      "result": "$A^n=\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}$"
+      "result": "$A^n=\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}$",
+      "reasoning": [
+       "On a column input, A adds the second coordinate to the first and leaves the second alone. Each repeat adds the very same amount again.",
+       "After n repeats, the top-right entry records n additions. Multiplying by A once more adds one to that entry. The pattern starts with A itself."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{bmatrix}$. Prove $A^n=\\begin{bmatrix}\\cos n\\theta&\\sin n\\theta\\\\-\\sin n\\theta&\\cos n\\theta\\end{bmatrix}$.",
@@ -1270,7 +1347,12 @@
        "$(1,1):\\ \\cos n\\theta\\cos\\theta-\\sin n\\theta\\sin\\theta=\\cos(n+1)\\theta$",
        "$(1,2):\\ \\cos n\\theta\\sin\\theta+\\sin n\\theta\\cos\\theta=\\sin(n+1)\\theta$"
       ],
-      "result": "True for all $n\\in\\mathbb{N}$ by induction"
+      "result": "True for all $n\\in\\mathbb{N}$ by induction",
+      "reasoning": [
+       "On a plane, this matrix turns a vector clockwise by the angle θ. Doing it again adds another clockwise turn. To see that in the algebra, start with the matrix for n turns and multiply by one more A.",
+       "The first diagonal entry is exactly the cosine addition formula.",
+       "The top-right entry is the sine addition formula. The bottom row gives the negative sine and the same cosine. Since the rule starts with one turn, this proves the pattern."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{bmatrix}$. Find $A^n$.",
@@ -1282,7 +1364,11 @@
        "$A^2=\\begin{bmatrix}3&3&3\\\\3&3&3\\\\3&3&3\\end{bmatrix}=3A$",
        "$A^{n}=3^{n-1}A\\Rightarrow A^{n+1}=3^{n-1}A^2=3^{n}A$"
       ],
-      "result": "$A^n=3^{n-1}A$"
+      "result": "$A^n=3^{n-1}A$",
+      "reasoning": [
+       "In the square of A, each entry comes from pairing a row of three ones with a column of three ones. That makes three in every position.",
+       "Each extra multiplication contributes one more factor of 3. The first power starts with a factor of 1."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}3&-4\\\\1&-1\\end{bmatrix}$. Prove $A^n=\\begin{bmatrix}1+2n&-4n\\\\n&1-2n\\end{bmatrix}$.",
@@ -1295,9 +1381,15 @@
        "$A^{n+1}=\\begin{bmatrix}1+2n&-4n\\\\n&1-2n\\end{bmatrix}\\begin{bmatrix}3&-4\\\\1&-1\\end{bmatrix}=\\begin{bmatrix}3+6n-4n&-4-8n+4n\\\\3n+1-2n&-4n-1+2n\\end{bmatrix}$",
        "$=\\begin{bmatrix}1+2(n+1)&-4(n+1)\\\\n+1&1-2(n+1)\\end{bmatrix}$"
       ],
-      "result": "True for all $n$"
+      "result": "True for all $n$",
+      "reasoning": [
+       "Check one move first: putting n equal to 1 gives the original matrix.",
+       "Assume the pattern has worked for n moves. Apply the same move once more by multiplying by A.",
+       "Collect the entries and look for the original pattern with n replaced by n+1. That proves the pattern continues."
+      ]
      }
-    ]
+    ],
+    "introduction": "A power records what happens when you repeat the same move. Watch what one extra move changes each time. That change often gives you a pattern you can prove for every repetition."
    },
    {
     "title": "Special matrices and trace",
@@ -1318,7 +1410,11 @@
        "$\\operatorname{tr}(AB-BA)=\\operatorname{tr}(AB)-\\operatorname{tr}(BA)=0$",
        "$\\operatorname{tr}I_n=n\\ne0$"
       ],
-      "result": "$AB-BA\\ne I$"
+      "result": "$AB-BA\\ne I$",
+      "reasoning": [
+       "Trace adds only the diagonal. When we expand the diagonal of AB and BA, each product uses the same pair of entries, just listed in a different order. Their totals cancel.",
+       "But an identity matrix of positive order has one 1 at every diagonal position, so its trace cannot be zero."
+      ]
      },
      {
       "question": "$A$ is idempotent. Show that $I-A$ is idempotent and $(A+I)^3=7A+I$.",
@@ -1331,7 +1427,12 @@
        "$A^3=A^2A=A\\cdot A=A$",
        "$(A+I)^3=A+3A+3A+I$"
       ],
-      "result": "$(A+I)^3=7A+I$"
+      "result": "$(A+I)^3=7A+I$",
+      "reasoning": [
+       "Idempotent means applying A twice gives the same result as applying it once. Expand the square of I−A and use that fact to see that this new matrix also settles after one move.",
+       "The same reasoning means three applications of A are equivalent to one.",
+       "The identity commutes with A, so we can expand the cube as usual. All the positive powers of A collapse to A."
+      ]
      },
      {
       "question": "$A=\\dfrac13\\begin{bmatrix}1&2&2\\\\2&1&-2\\\\-2&2&-1\\end{bmatrix}$. Show that $A$ is orthogonal and find $A^{-1}$.",
@@ -1343,7 +1444,12 @@
        "$r_1\\cdot r_2=\\tfrac{2+2-4}{9}=0,\\ r_1\\cdot r_3=\\tfrac{-2+4-2}{9}=0,\\ r_2\\cdot r_3=\\tfrac{-4+2+2}{9}=0$",
        "$AA^T=I\\Rightarrow A^{-1}=A^T$"
       ],
-      "result": "$A^{-1}=\\frac13\\begin{bmatrix}1&2&-2\\\\2&1&2\\\\2&-2&-1\\end{bmatrix}$"
+      "result": "$A^{-1}=\\frac13\\begin{bmatrix}1&2&-2\\\\2&1&2\\\\2&-2&-1\\end{bmatrix}$",
+      "reasoning": [
+       "Look at the rows as arrows. First check their lengths: each has squared length 1 after the factor of one-third.",
+       "Next compare each pair of arrows. A zero dot product means they meet at a right angle.",
+       "Multiplying A by its transpose puts those row dot products into a table. There are ones on the diagonal and zeros elsewhere, so transposing provides the inverse."
+      ]
      },
      {
       "question": "$A=\\begin{bmatrix}1&1&3\\\\5&2&6\\\\-2&-1&-3\\end{bmatrix}$. Show that $A$ is nilpotent.",
@@ -1354,9 +1460,14 @@
        "$A^2=\\begin{bmatrix}0&0&0\\\\3&3&9\\\\-1&-1&-3\\end{bmatrix}$",
        "$A^3=A^2A=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}$"
       ],
-      "result": "$A^3=O$"
+      "result": "$A^3=O$",
+      "reasoning": [
+       "A nilpotent matrix eventually sends every input to zero when applied repeatedly. Two moves still leave something in the last two rows.",
+       "Apply it a third time. The remaining rows now give zero dot products with every column, so all inputs end at zero."
+      ]
      }
-    ]
+    ],
+    "introduction": "Different matrices do different jobs. One might keep a result steady after the first move, another might undo itself by transposing, and another might eventually send every input to zero. Multiplying lets us tell these behaviours apart."
    }
   ]
  },
