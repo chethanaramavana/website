@@ -13,6 +13,13 @@ export const natureStories = [{
   description: 'Pick a starting point and trace your route.',
   href: '/maths-around-us/2',
   poster: '/maths-around-us/2-seven-bridges-questions.png',
+}, {
+  number: 3,
+  date: '2026-11-13',
+  title: 'The cicadas that wait 17 years',
+  description: 'Meet the insects that emerge every 13 or 17 years, and see what prime numbers have to do with their calendars.',
+  href: '/maths-around-us/3',
+  poster: '/maths-around-us/3-cicadas.png',
 }] as const;
 
 export const cellShapes = [
