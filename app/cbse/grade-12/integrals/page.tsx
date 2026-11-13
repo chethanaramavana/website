@@ -12,11 +12,24 @@ export default async function IntegralsLibrary() {
   if (user) try { for (const p of integralsProducts) if (await hasIntegralsAccess(user, p.id)) access.add(p.id); } catch { accessFailed = true; }
   return <main className="integrals-library">
     <nav><a href="/">Ramavana Mathematical Center</a><span> / </span><a href="/cbse/grade-12">CBSE Grade 12</a>{user && <a className="integrals-account" href="/student">My account</a>}</nav>
-    <header><span className="integrals-eyebrow">CHAPTER 07 · GRADE 12</span><h1>Integrals</h1><p>Indefinite and definite integration, from first steps to advanced problems.</p></header>
-    <section aria-labelledby="free-integrals"><h2 id="free-integrals">Learn and practise — free</h2><div className="integrals-grid">
-      <article><span className="integrals-tag">FREE</span><h3>Complete chapter notes</h3><p>22 clear lessons, 46 worked examples and interactive diagrams. From antiderivatives to reflection, Riemann sums, integral equations and parameter methods.</p><a className="integrals-button" href="/notes/g12-integrals">Read chapter notes</a></article>
-      <article><span className="integrals-tag">FREE</span><h3>50-question MCQ practice</h3><p>Answer 50 MCQs online. Submit to get your score immediately, then see the correct answers and step-by-step solutions.</p><a className="integrals-button" href="/cbse/grade-12/ch-7/free-mcq">Start free MCQ practice</a></article>
-    </div></section>
+    <header className="integrals-overview">
+      <span className="integrals-eyebrow">CHAPTER 07 · GRADE 12</span>
+      <h1>Integrals</h1>
+      <nav className="integrals-resources" aria-label="Integrals resources">
+        <a className="integrals-notes-link" href="/notes/g12-integrals">
+          <span><strong>Read the free chapter notes</strong><small>22 lessons · 46 worked examples · Interactive diagrams</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="/cbse/grade-12/ch-7/free-mcq">
+          <span><strong>Try free MCQs</strong><small>50 questions with solutions</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#paid-integrals">
+          <span><strong>Browse practice papers</strong><small>CBSE, JEE Main and Advanced</small></span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </nav>
+    </header>
     <section aria-labelledby="paid-integrals"><h2 id="paid-integrals">Choose your practice paper</h2>
       {accessFailed && <p role="alert">Your purchases could not be checked. Please refresh before paying.</p>}
       <div className="integrals-grid">{integralsProducts.map(p => <article key={p.id} id={p.id}><span className="integrals-tag">{p.standard} STANDARD</span><h3>{p.title}</h3><p>{p.detail}</p><p className="integrals-price">₹{integralsPricePaise(p.id)/100} <small>including solutions</small></p>
