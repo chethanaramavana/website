@@ -397,12 +397,12 @@
     },
     {
      "number": 6,
-     "question": "$\\triangle ABC \\sim \\triangle PQR$ with $\\frac{AB}{PQ} = \\frac{2}{3}$. If $\\operatorname{ar}(\\triangle ABC) = 36$ cm², then $\\operatorname{ar}(\\triangle PQR)$ is",
+     "question": "$\\triangle ABC \\sim \\triangle PQR$ with $\\frac{AB}{PQ} = \\frac{2}{3}$. If the perimeter of $\\triangle ABC$ is 36 cm, then the perimeter of $\\triangle PQR$ is",
      "options": [
-      "24 cm²",
-      "54 cm²",
-      "16 cm²",
-      "81 cm²"
+      "81 cm",
+      "24 cm",
+      "16 cm",
+      "54 cm"
      ]
     },
     {
@@ -1038,12 +1038,12 @@
     },
     {
      "number": 6,
-     "question": "$\\triangle ABC \\sim \\triangle QRP$ and $\\frac{\\operatorname{ar}(\\triangle ABC)}{\\operatorname{ar}(\\triangle QRP)} = \\frac{9}{4}$. If $BC = 15$ cm, then $PR$ equals",
+     "question": "$\\triangle ABC \\sim \\triangle QRP$ and $\\frac{AB}{QR} = \\frac{3}{2}$. If $BC = 15$ cm, then $RP$ equals",
      "options": [
       "$\\frac{20}{3}$ cm",
       "$12$ cm",
       "$10$ cm",
-      "$8$ cm"
+      "$22.5$ cm"
      ]
     },
     {
@@ -2275,16 +2275,16 @@
    "grade": 10,
    "board": "CBSE",
    "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
-   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "focus": "Challenge paper · multi-step and higher-order questions at the upper end of the board standard.",
    "mcqs": [
     {
      "number": 1,
-     "question": "The product of a non-zero rational number and an irrational number is always",
+     "question": "The least number that leaves remainder 3 when divided by 4, 6 and 9, and is exactly divisible by 7, is",
      "options": [
-      "zero",
-      "a natural number",
-      "irrational",
-      "rational"
+      "255",
+      "111",
+      "147",
+      "39"
      ]
     },
     {
@@ -2299,12 +2299,12 @@
     },
     {
      "number": 3,
-     "question": "Half the perimeter of a rectangular garden is 36 m. Its length is 4 m more than its width. The width is",
+     "question": "The sum of a two-digit number and the number formed by reversing its digits is 66. The digits differ by 2. The number of such two-digit numbers is",
      "options": [
-      "14 m",
-      "20 m",
-      "18 m",
-      "16 m"
+      "0",
+      "1",
+      "4",
+      "2"
      ]
     },
     {
@@ -2319,12 +2319,12 @@
     },
     {
      "number": 5,
-     "question": "The first term of an AP is $p$ and its common difference is $q$. Its 10th term is",
+     "question": "The 7th term of an AP is $\\frac{1}{9}$ and its 9th term is $\\frac{1}{7}$. Its 63rd term is",
      "options": [
-      "$p - 9q$",
-      "$p + 9q$",
-      "$p + 10q$",
-      "$9p + q$"
+      "$0$",
+      "$1$",
+      "$63$",
+      "$\\frac{1}{63}$"
      ]
     },
     {
@@ -2339,12 +2339,12 @@
     },
     {
      "number": 7,
-     "question": "The distance between $(0, 5)$ and $(-5, 0)$ is",
+     "question": "The distance between $(2, -3)$ and $(10, y)$ is 10 units. The values of $y$ are",
      "options": [
-      "$10$",
-      "$5\\sqrt{2}$",
-      "$5$",
-      "$2\\sqrt{5}$"
+      "$3$ and 9",
+      "3 and $-9$",
+      "$-3$ and 9",
+      "$-3$ and $-9$"
      ]
     },
     {
@@ -2379,22 +2379,22 @@
     },
     {
      "number": 11,
-     "question": "The area of a sector of angle $\\theta$ (in degrees) of a circle of radius $R$ is",
+     "question": "The minute hand of a clock is 21 cm long. The area swept by it from 9:00 a.$m$. to 9:20 a.$m$. is $\\left(\\pi = \\frac{22}{7}\\right)$",
      "options": [
-      "$\\frac{\\theta }{360} \\times \\pi R^{2}$",
-      "$\\frac{\\theta }{180} \\times \\pi R^{2}$",
-      "$\\frac{\\theta }{360} \\times 2\\pi R$",
-      "$\\frac{\\theta }{720} \\times \\pi R^{2}$"
+      "462 cm²",
+      "231 cm²",
+      "154 cm²",
+      "924 cm²"
      ]
     },
     {
      "number": 12,
-     "question": "A solid cylinder of height 45 cm and diameter 4 cm is melted into spheres of diameter 6 cm. The number of spheres is",
+     "question": "A solid is a hemisphere of radius 7 cm with a cone of the same radius and height 24 cm on it. Its total surface area is $\\left(\\pi = \\frac{22}{7}\\right)$",
      "options": [
-      "4",
-      "6",
-      "5",
-      "3"
+      "1012 cm²",
+      "704 cm²",
+      "858 cm²",
+      "550 cm²"
      ]
     },
     {
@@ -2409,12 +2409,12 @@
     },
     {
      "number": 14,
-     "question": "One card is drawn from a well-shuffled deck of 52 cards. The probability that it is not an ace is",
+     "question": "Two dice are thrown together. The probability that the product of the two numbers is a perfect square is",
      "options": [
-      "$\\frac{12}{13}$",
+      "$\\frac{2}{9}$",
       "$\\frac{1}{4}$",
-      "$\\frac{1}{13}$",
-      "$\\frac{4}{13}$"
+      "$\\frac{1}{6}$",
+      "$\\frac{7}{36}$"
      ]
     },
     {
@@ -2439,22 +2439,22 @@
     },
     {
      "number": 17,
-     "question": "A 6 m tall pole casts a shadow $2\\sqrt{3}$ m long. The angle of elevation of the Sun is",
+     "question": "From the top of a 60 m high cliff, the angles of depression of the top and the bottom of a tower are $30^{\\circ}$ and $60^{\\circ}$. The height of the tower is",
      "options": [
-      "$30^{\\circ}$",
-      "$90^{\\circ}$",
-      "$60^{\\circ}$",
-      "$45^{\\circ}$"
+      "$20$ m",
+      "$20\\sqrt{3}$ m",
+      "$40$ m",
+      "$30$ m"
      ]
     },
     {
      "number": 18,
-     "question": "Two coins are tossed together. The probability of two heads is",
+     "question": "Cards numbered 2 to 101 are put in a box and one card is drawn at random. The probability that its number is a perfect square is",
      "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{3}$"
+      "$\\frac{1}{10}$",
+      "$\\frac{9}{101}$",
+      "$\\frac{9}{100}$",
+      "$\\frac{1}{11}$"
      ]
     }
    ],
@@ -2466,13 +2466,13 @@
     },
     {
      "number": 20,
-     "assertion": "The probability of an event can be 1.2.",
-     "reason": "The probability of a sure event is 1."
+     "assertion": "The points $(1, 1), (-1, -1)$ and $(-\\sqrt{3}, \\sqrt{3})$ are the vertices of an equilateral triangle.",
+     "reason": "A triangle whose three sides are equal is equilateral."
     }
    ],
    "written": {
     "21": [
-     "Find the HCF and LCM of 26 and 91, and verify that $\\text{HCF} \\times \\text{LCM} = 26 \\times 91$.",
+     "Find the greatest six-digit number that is exactly divisible by 24, 15 and 36.",
      "OR",
      "Show that $12^{n}$ cannot end with the digit 0 or 5 for any natural number $n$."
     ],
@@ -2484,7 +2484,7 @@
     "23": "Evaluate: $\\frac{\\sin 30^{\\circ} + \\tan 45^{\\circ} - \\operatorname{cosec} 60^{\\circ}}{\\sec 30^{\\circ} + \\cos 60^{\\circ} + \\cot 45^{\\circ}}$.",
     "24": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7.5$ cm and $CD = 3$ cm, find $DA$.",
     "25": "Two concentric circles have radii 7 cm and 14 cm. Find the area of the region between them that lies inside a sector of angle $40^{\\circ}$. $\\left(\\pi = \\frac{22}{7}\\right)$",
-    "26": "Given that $\\sqrt{2}$ is irrational, prove that $3\\sqrt{2}$ is irrational.",
+    "26": "Prove that $\\sqrt{p} + \\sqrt{q}$ is irrational, where $p$ and $q$ are distinct primes. (You may use the fact that $\\sqrt{p}$ is irrational for every prime $p$.)",
     "27": "One zero of $p(x) = 4x^{2} - (8k^{2} - 40k)x - 9$ is the negative of the other. Find the values of $k$.",
     "28": [
      "The ratio of the 11th term to the 18th term of an AP is 2 : 3. Find the ratio of the 5th term to the 21st term.",
@@ -2546,17 +2546,6 @@
       "DC": "9 cm"
      }
     },
-    "17": {
-     "kind": "elevation",
-     "values": [
-      60
-     ],
-     "marks": {
-      "height": "6 m",
-      "base": "2√3 m",
-      "angle": "?"
-     }
-    },
     "24": {
      "kind": "circum-quad",
      "marks": {
@@ -2600,36 +2589,36 @@
    "grade": 10,
    "board": "CBSE",
    "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
-   "focus": "Full syllabus · balanced paper with standard board-level questions.",
+   "focus": "Challenge paper · multi-step and higher-order questions at the upper end of the board standard.",
    "mcqs": [
     {
      "number": 1,
-     "question": "The LCM of the smallest prime number and the smallest composite number is",
+     "question": "For every natural number $n$, the number $9^{2n} - 4^{2n}$ is divisible by",
      "options": [
-      "8",
-      "4",
-      "2",
-      "6"
+      "5 but not 13",
+      "both 5 and 13",
+      "13 but not 5",
+      "neither 5 nor 13"
      ]
     },
     {
      "number": 2,
-     "question": "The zeroes of $x^{2} - 3$ are",
+     "question": "One zero of $2x^{2} - 3x + k$ is the reciprocal of the other. Then $k$ equals",
      "options": [
-      "$\\sqrt{3}$ only",
-      "$\\pm 3$",
-      "$3$ only",
-      "$\\pm \\sqrt{3}$"
+      "$\\frac{3}{2}$",
+      "$-2$",
+      "$\\frac{1}{2}$",
+      "$2$"
      ]
     },
     {
      "number": 3,
-     "question": "The pair $2x + 3y - 9 = 0$ and $4x + 6y - 18 = 0$ has",
+     "question": "The pair $3x + y = 1$ and $(2k - 1)x + (k - 1)y = 2k + 1$ has no solution when $k$ equals",
      "options": [
-      "no solution",
-      "infinitely many solutions",
-      "a unique solution",
-      "exactly two solutions"
+      "$-2$",
+      "$2$",
+      "$1$",
+      "$3$"
      ]
     },
     {
@@ -2654,12 +2643,12 @@
     },
     {
      "number": 6,
-     "question": "$\\triangle ABC \\sim \\triangle DEF$ with $BC = 3$ cm and $EF = 4$ cm. If $\\operatorname{ar}(\\triangle ABC) = 54$ cm², then $\\operatorname{ar}(\\triangle DEF)$ is",
+     "question": "$ABCD$ is a trapezium with $AB \\parallel DC$ and $AB = 3 DC$. Its diagonals meet at $O$. Then $AO : OC$ equals",
      "options": [
-      "96 cm²",
-      "128 cm²",
-      "72 cm²",
-      "108 cm²"
+      "3 : 1",
+      "9 : 1",
+      "1 : 3",
+      "2 : 1"
      ]
     },
     {
@@ -2704,22 +2693,22 @@
     },
     {
      "number": 11,
-     "question": "The area of the circle inscribed in a square of side 6 cm is",
+     "question": "The area of the largest triangle that can be inscribed in a semicircle of radius $r$ is",
      "options": [
-      "$9\\pi$ cm²",
-      "$12\\pi$ cm²",
-      "$36\\pi$ cm²",
-      "$18\\pi$ cm²"
+      "$r^{2}$",
+      "$\\frac{\\pi r^{2}}{2}$",
+      "$2r^{2}$",
+      "$\\frac{r^{2}}{2}$"
      ]
     },
     {
      "number": 12,
-     "question": "A cuboid has volume 440 cm³ and base area 88 cm². Its height is",
+     "question": "Three cubes, each of edge 5 cm, are joined end to end. The surface area of the cuboid formed is",
      "options": [
-      "2.5 cm",
-      "4 cm",
-      "10 cm",
-      "5 cm"
+      "300 cm²",
+      "450 cm²",
+      "375 cm²",
+      "350 cm²"
      ]
     },
     {
@@ -2734,12 +2723,12 @@
     },
     {
      "number": 14,
-     "question": "A number is chosen at random from 1 to 100. The probability that it is a perfect square is",
+     "question": "Two dice are thrown together. The probability that the number on the first die is greater than the number on the second die is",
      "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{9}{100}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{5}$"
+      "$\\frac{5}{12}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{1}{2}$"
      ]
     },
     {
@@ -2764,12 +2753,12 @@
     },
     {
      "number": 17,
-     "question": "A ramp rises 1.5 m and makes an angle of $30^{\\circ}$ with the ground. The length of the ramp is",
+     "question": "The shadow of a tower is 40 m longer when the Sun’s altitude is $30^{\\circ}$ than when it is $60^{\\circ}$. The height of the tower is",
      "options": [
-      "$3\\sqrt{3}$ m",
-      "$1.5$ m",
-      "$1.5\\sqrt{3}$ m",
-      "$3$ m"
+      "$20$ m",
+      "$40$ m",
+      "$40\\sqrt{3}$ m",
+      "$20\\sqrt{3}$ m"
      ]
     },
     {
@@ -2791,8 +2780,8 @@
     },
     {
      "number": 20,
-     "assertion": "The total surface area of a cube of edge 3 cm is 54 cm².",
-     "reason": "The volume of a cube of edge a is $a^{3}$."
+     "assertion": "The circumference of a circle is 44 cm. The area of a quadrant of this circle is 38.5 cm².",
+     "reason": "The area of a quadrant of a circle of radius $r$ is $\\frac{\\pi r^{2}}{4}$."
     }
    ],
    "written": {
@@ -2804,13 +2793,13 @@
     "22": [
      "Find the ratio in which the x-axis divides the line segment joining $A(1, -5)$ and $B(-4, 5)$. Also find the point of division.",
      "OR",
-     "In $\\triangle ABC, DE \\parallel BC$ with $D$ on $AB$ and $E$ on $AC$. If $\\frac{AD}{DB} = \\frac{2}{3}$ and $DE = 4$ cm, find $BC$."
+     "The line segment joining $A(6, 3)$ and $B(-1, -4)$ is doubled in length by adding half of $AB$ at each end. Find the coordinates of the new end points."
     ],
     "23": "If $\\tan(A + B) = \\sqrt{3}$ and $\\tan(A - B) = \\frac{1}{\\sqrt{3}}$, where $0^{\\circ} < A + B \\le 90^{\\circ}$ and $A > B$, find $A$ and $B$.",
     "24": "$PQ$ and $PR$ are tangents from $P$ to a circle with centre $O$. If $\\angle QPR = 46^{\\circ}$, find $\\angle QOR$ and $\\angle OQR$.",
-    "25": "A sector of a circle of radius 5 cm has angle $72^{\\circ}$. Find the length of its arc and its perimeter. $(\\pi = 3.14)$",
-    "26": "Given that $\\sqrt{5}$ is irrational, prove that $2 - 3\\sqrt{5}$ is irrational.",
-    "27": "Find the zeroes of $4s^{2} - 4s + 1$ and verify the relationship between the zeroes and the coefficients.",
+    "25": "A chord $AB$ of a circle of radius 14 cm subtends an angle of $120^{\\circ}$ at the centre $O$. Find the area of the corresponding minor segment. $\\left(\\pi = \\frac{22}{7}, \\sqrt{3} = 1.73\\right)$",
+    "26": "Prove that $\\sqrt{2} + \\sqrt{5}$ is irrational. (You may use the facts that $\\sqrt{2}$ and $\\sqrt{5}$ are irrational.)",
+    "27": "$\\alpha$ and $\\beta$ are the zeroes of $2x^{2} - 5x + 7$. Find a quadratic polynomial whose zeroes are $2\\alpha + 3\\beta$ and $3\\alpha + 2\\beta$.",
     "28": [
      "An AP has 37 terms. The sum of its three middle terms is 225 and the sum of its last three terms is 429. Find the AP.",
      "OR",
@@ -2864,6 +2853,12 @@
     "38": "A carton has 24 bulbs, of which 6 are defective. A bulb is drawn at random."
    },
    "figures": {
+    "6": {
+     "kind": "trapezium",
+     "marks": {
+      "AB": "AB = 3 DC"
+     }
+    },
     "10": {
      "kind": "tangents",
      "marks": {
@@ -2876,18 +2871,6 @@
       "Q",
       "P"
      ]
-    },
-    "17": {
-     "kind": "elevation",
-     "values": [
-      30
-     ],
-     "marks": {
-      "height": "1.5 m",
-      "angle": "30°",
-      "hyp": "?",
-      "sight": "solid"
-     }
     },
     "24": {
      "kind": "tangents",
@@ -2903,13 +2886,13 @@
      ]
     },
     "25": {
-     "kind": "sector",
+     "kind": "segment",
      "values": [
-      72
+      120
      ],
      "marks": {
-      "R": "5 cm",
-      "angle": "72°"
+      "R": "14 cm",
+      "angle": "120°"
      }
     },
     "37": {
@@ -2935,16 +2918,16 @@
    "grade": 10,
    "board": "CBSE",
    "book": "CBSE Mathematics (Standard) · 2026–27 board pattern",
-   "focus": "Full syllabus · a slightly more demanding paper for final revision.",
+   "focus": "Challenge paper · multi-step and higher-order questions at the upper end of the board standard.",
    "mcqs": [
     {
      "number": 1,
-     "question": "$(\\sqrt{7} + \\sqrt{3})(\\sqrt{7} - \\sqrt{3})$ is",
+     "question": "The smallest number that leaves remainder 7 when divided by each of 35, 56 and 91 is",
      "options": [
-      "$2\\sqrt{21}$, an irrational number",
-      "4, a rational number",
-      "$\\sqrt{21}$, an irrational number",
-      "10, a rational number"
+      "1827",
+      "3647",
+      "3640",
+      "3633"
      ]
     },
     {
@@ -2999,12 +2982,12 @@
     },
     {
      "number": 7,
-     "question": "The perimeter of the triangle with vertices (0, 4), (0, 0) and $(3, 0)$ is",
+     "question": "The point on the y-axis that is equidistant from $A(-5, -2)$ and $B(3, 2)$ is",
      "options": [
-      "12",
-      "5",
-      "10",
-      "7"
+      "$(0, -2)$",
+      "$(-2, 0)$",
+      "$(2, 0)$",
+      "$(0, 2)$"
      ]
     },
     {
@@ -3019,12 +3002,12 @@
     },
     {
      "number": 9,
-     "question": "$(1 + \\cot^{2}\\theta)(1 - \\cos \\theta)(1 + \\cos \\theta)$ equals",
+     "question": "If $\\sec \\theta + \\tan \\theta = 3$, then $\\tan \\theta$ equals",
      "options": [
-      "$1$",
-      "$\\sin^{2}\\theta$",
-      "$0$",
-      "$\\cos^{2}\\theta$"
+      "$\\frac{4}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{5}{3}$",
+      "$\\frac{8}{3}$"
      ]
     },
     {
@@ -3039,32 +3022,32 @@
     },
     {
      "number": 11,
-     "question": "The area of a sector is $\\frac{1}{12}$ of the area of its circle. The angle of the sector is",
+     "question": "A horse is tied with a 14 m rope at one corner of a square field of side 20 m. The area of the field that the horse can graze is $\\left(\\pi = \\frac{22}{7}\\right)$",
      "options": [
-      "$45^{\\circ}$",
-      "$12^{\\circ}$",
-      "$60^{\\circ}$",
-      "$30^{\\circ}$"
+      "77 m²",
+      "616 m²",
+      "308 m²",
+      "154 m²"
      ]
     },
     {
      "number": 12,
-     "question": "The surface area of a sphere is 616 cm². Its radius is $\\left(\\pi = \\frac{22}{7}\\right)$",
+     "question": "The surface areas of two spheres are in the ratio 1 : 4. The ratio of their volumes is",
      "options": [
-      "14 cm",
-      "7 cm",
-      "3.5 cm",
-      "21 cm"
+      "1 : 4",
+      "1 : 8",
+      "1 : 2",
+      "1 : 16"
      ]
     },
     {
      "number": 13,
-     "question": "The median of the first seven prime numbers is",
+     "question": "The mean of $x + 2, 2x + 3, 3x + 4$ and $4x + 5$ is $x + 2$. Then $x$ equals",
      "options": [
-      "8",
-      "11",
-      "7",
-      "5"
+      "$-2$",
+      "$2$",
+      "$-1$",
+      "$1$"
      ]
     },
     {
@@ -3109,12 +3092,12 @@
     },
     {
      "number": 18,
-     "question": "For any event $E, P(E) + P$(not $E$) equals",
+     "question": "A letter is chosen at random from the letters of the word ASSASSINATION. The probability that it is a vowel is",
      "options": [
-      "$1$",
+      "$\\frac{6}{13}$",
       "$\\frac{1}{2}$",
-      "$2$",
-      "$0$"
+      "$\\frac{3}{13}$",
+      "$\\frac{7}{13}$"
      ]
     }
    ],
@@ -3139,12 +3122,12 @@
     "22": [
      "The point $P(9a - 2, -b)$ divides the line segment joining $A(3a + 1, -3)$ and $B(8a, 5)$ in the ratio 3 : 1. Find a and $b$.",
      "OR",
-     "In $\\triangle ABC, DE \\parallel BC$ with $D$ on $AB$ and $E$ on $AC$. If $AD = 6$ cm, $DB = 9$ cm and $AE = 8$ cm, find $AC$."
+     "Find the ratio in which the line $2x + y - 4 = 0$ divides the line segment joining $A(2, -2)$ and $B(3, 7)$."
     ],
     "23": "If $\\sec 4A = \\operatorname{cosec}(A - 20^{\\circ})$, where $4A$ is acute, find $A$.",
     "24": "$PA$ and $PB$ are tangents from an external point $P$ to a circle with centre $O$. Prove that $\\angle APO = \\angle BPO$.",
     "25": "A car has two wipers that do not overlap. Each blade is 25 cm long and sweeps through an angle of $115^{\\circ}$. Find the total area cleaned in one sweep of the blades. $\\left(\\pi = \\frac{22}{7}\\right)$",
-    "26": "Given that $\\sqrt{7}$ is irrational, prove that $3\\sqrt{7}$ is irrational.",
+    "26": "Prove that $\\sqrt{3}$ is irrational. Hence prove that $\\frac{1}{2 - \\sqrt{3}}$ is irrational.",
     "27": "Find $k$ so that the sum of the zeroes of $x^{2} - (k + 6)x + 2(2k - 1)$ is half of their product.",
     "28": [
      "The pth term of an AP is $q$ and its qth term is $p (p \\neq q)$. Show that its $n$th term is $p + q - n$.",
@@ -3161,9 +3144,9 @@
     "32": "Two pipes together fill a cistern in $3 \\frac{1}{13}$ minutes. One pipe takes 3 minutes more than the other to fill it alone. Find the time each pipe takes to fill the cistern alone.",
     "33": "State and prove the Basic Proportionality Theorem. Hence prove: in $\\triangle ABC, D$ and $E$ lie on $AB$ and $AC$ with $\\frac{AD}{DB} = \\frac{AE}{EC}$ and $\\angle ADE = \\angle ACB$; then $\\triangle ABC$ is isosceles.",
     "34": [
-     "A metallic sphere of radius 4.2 cm is melted and recast into a cylinder of radius 6 cm. Find the height of the cylinder and its curved surface area. $\\left(\\pi = \\frac{22}{7}\\right)$",
+     "A wooden article is made by scooping out a hemisphere from each end of a solid cylinder of height 10 cm and base radius 3.5 cm. Find the total surface area of the article and the volume of wood in it. $\\left(\\pi = \\frac{22}{7}\\right)$",
      "OR",
-     "A well of diameter 7 m is dug 20 m deep. The earth taken out is spread evenly to form a platform $22 \\,\\text{m} \\times 14 \\,\\text{m}$. Find the height of the platform. $\\left(\\pi = \\frac{22}{7}\\right)$"
+     "A cubical block of side 10 cm is surmounted by a hemisphere. What is the greatest diameter that the hemisphere can have? Find the total surface area and the volume of the solid. $(\\pi = 3.14)$"
     ],
     "35": [
      "A straight highway leads to the foot of a tower. A man at the top of the tower sees a car at an angle of depression of $30^{\\circ}$, approaching at a uniform speed. Six seconds later, the angle of depression is $60^{\\circ}$. Find the time the car will take to reach the foot of the tower from this point.",
@@ -3335,7 +3318,7 @@
     "31": "Write $t = \\tan \\theta$.\n$\\text{LHS} = \\frac{t}{1 - \\frac{1}{t}} + \\frac{\\frac{1}{t}}{1 - t} = \\frac{t^{2}}{t - 1} - \\frac{1}{t(t - 1)} = \\frac{t^{3} - 1}{t(t - 1)} = \\frac{t^{2} + t + 1}{t} = t + 1 + \\frac{1}{t}$.\nNow $t + \\frac{1}{t} = \\frac{\\sin \\theta }{\\cos \\theta } + \\frac{\\cos \\theta }{\\sin \\theta } = \\frac{1}{\\sin \\theta \\cos \\theta } = \\sec \\theta \\operatorname{cosec} \\theta$.\nSo $\\text{LHS} = 1 + \\sec \\theta \\operatorname{cosec} \\theta$.\nOR: Square: $\\sin^{2}\\theta + \\cos^{2}\\theta + 2 \\sin \\theta \\cos \\theta = 3$, so $\\sin \\theta \\cos \\theta = 1$. $\\tan \\theta + \\cot \\theta = \\frac{\\sin^{2}\\theta + \\cos^{2}\\theta }{\\sin \\theta \\cos \\theta } = \\frac{1}{1} = 1$.",
     "32": "Let the present age be $x$ years. $\\frac{1}{x - 3} + \\frac{1}{x + 5} = \\frac{1}{3}$.\nSo $3(2x + 2) = (x - 3)(x + 5), 6x + 6 = x^{2} + 2x - 15$ and $x^{2} - 4x - 21 = 0$.\n$(x - 7)(x + 3) = 0$.\nAge cannot be negative, so $x = 7$ years.",
     "33": "Given $\\frac{AB}{PQ} = \\frac{AC}{PR} = \\frac{AD}{PM}$.\nProduce $AD$ to $E$ with $DE = AD$ and $PM$ to $N$ with $MN = PM$.\nJoin $BE, CE, QN, RN$.\n$ABEC$ and $PQNR$ are parallelograms (diagonals bisect each other), so $BE = AC$ and $QN = PR$.\nThen $\\frac{AB}{PQ} = \\frac{BE}{QN} = \\frac{AE}{PN} (AE = 2AD, PN = 2PM)$.\nSo $\\triangle ABE \\sim \\triangle PQN$ (SSS) and $\\angle BAE = \\angle QPN$.\nSimilarly $\\triangle ACE \\sim \\triangle PRN$ and $\\angle CAE = \\angle RPN$.\nAdding: $\\angle BAC = \\angle QPR$.\nWith $\\frac{AB}{PQ} = \\frac{AC}{PR}, \\triangle ABC \\sim \\triangle PQR$ (SAS).",
-    "34": "$r = 7$ cm\ncylinder height $= 13 - 7 = 6$ cm.\nInner area $= 2\\pi rh + 2\\pi r^{2} = 2 \\times \\frac{22}{7} \\times 7 \\times 6 + 2 \\times \\frac{22}{7} \\times 49 = 264 + 308 = 572$ cm².\nOR: $r = 2$ m.\nCylinder $CSA = 2 \\times \\frac{22}{7} \\times 2 \\times 2.1 = 26.4$ m².\nCone $CSA = \\frac{22}{7} \\times 2 \\times 2.8 = 17.6$ m².\nCanvas $= 44$ m².\nCost $= 44 \\times 500 = \\text{₹}22,000$.",
+    "34": "$r = 7$ cm\ncylinder height $= 13 - 7 = 6$ cm.\nInner area $= 2\\pi rh + 2\\pi r^{2} = 2 \\times \\frac{22}{7} \\times 7 \\times 6 + 2 \\times \\frac{22}{7} \\times 49 = 264 + 308 = 572$ cm².\nOR: $r = 2$ m.\nCylinder $\\text{CSA} = 2 \\times \\frac{22}{7} \\times 2 \\times 2.1 = 26.4$ m².\nCone $\\text{CSA} = \\frac{22}{7} \\times 2 \\times 2.8 = 17.6$ m².\nCanvas $= 44$ m².\nCost $= 44 \\times 500 = \\text{₹}22,000$.",
     "35": "Let the distance between the foot of the tower and the building be $d$ and the building height $h$.\nFrom the foot of the building: $\\tan 60^{\\circ} = \\frac{50}{d}$, so $d = \\frac{50}{\\sqrt{3}}$.\nFrom the foot of the tower: $\\tan 30^{\\circ} = \\frac{h}{d}$, so $h = \\frac{d}{\\sqrt{3}} = \\frac{50}{3} \\approx 16.67$ m.\nOR: Class marks 12, 14, 16, 18, 20, 22, 24. $\\Sigma f = 44 + f$. $\\Sigma fx = 84 + 84 + 144 + 234 + 20f + 110 + 96 = 752 + 20f$. $18(44 + f) = 752 + 20f$, so $792 + 18f = 752 + 20f$ and $f = 20$.",
     "36": "(i) $x(x + 4) = 192$, that is $x^{2} + 4x - 192 = 0$.\n(ii) $D = 4^{2} + 4 \\times 192 = 16 + 768 = 784$.\n(iii) $x = \\frac{-4 \\pm 28}{2}$, so $x = 12$ (the negative root is rejected).\nBreadth 12 m, length 16 m.\nOR (iii): Perimeter $= 2(12 + 16) = 56$ m.\nCost $= 56 \\times 20 = \\text{₹}1120$.",
     "37": "(i) $\\tan 45^{\\circ} = \\frac{75}{d}$, so $d = 75$ m.\n(ii) $\\tan 30^{\\circ} = \\frac{75}{D}$, so $D = 75\\sqrt{3} = 129.9$ m.\n(iii) Distance $= 75\\sqrt{3} - 75 = 75 \\times 0.732 = 54.9$ m.\nOR (iii): Speed $= 54.9$ m/min.",
@@ -3589,15 +3572,15 @@
     "17": 2,
     "18": 2,
     "19": 0,
-    "20": 3
+    "20": 0
    },
    "writtenSolutions": {
-    "21": "$26 = 2 \\times 13$ and $91 = 7 \\times 13$.\n$\\text{HCF} = 13$.\n$\\text{LCM} = 2 \\times 7 \\times 13 = 182$.\n$\\text{HCF} \\times \\text{LCM} = 13 \\times 182 = 2366 = 26 \\times 91$.\nVerified.\nOR: $12^{n} = 2^{2n} \\times 3^{n}$.\nA number ending in 0 or 5 is divisible by 5. 5 is not a prime factor of $12^{n}$, so by the uniqueness of prime factorisation $12^{n}$ cannot end in 0 or 5.",
+    "21": "$24 = 2^{3} \\times 3, 15 = 3 \\times 5$ and $36 = 2^{2} \\times 3^{2}$.\n$\\text{LCM} = 2^{3} \\times 3^{2} \\times 5 = 360$.\nThe greatest six-digit number is $999999 = 360 \\times 2777 + 279$.\nRequired number $= 999999 - 279 = 999720$.\nOR: $12^{n} = 2^{2n} \\times 3^{n}$.\nA number ending in 0 or 5 is divisible by 5. 5 is not a prime factor of $12^{n}$, so by the uniqueness of prime factorisation $12^{n}$ cannot end in 0 or 5.",
     "22": "Let the point be $(x, 0)$.\n$(x - 7)^{2} + 36 = (x - 3)^{2} + 16$, so $-14x + 85 = -6x + 25, 8x = 60$ and $x = 7.5$.\nThe point is $(7.5, 0)$.\nOR: $PB = 8$ and $QC = 10$.\n$\\frac{AP}{PB} = \\frac{4}{8} = \\frac{1}{2}$ and $\\frac{AQ}{QC} = \\frac{5}{10} = \\frac{1}{2}$.\nEqual ratios, so $PQ \\parallel BC$ by the converse of BPT.",
     "23": "$= \\frac{\\frac{1}{2} + 1 - \\frac{2}{\\sqrt{3}}}{\\frac{2}{\\sqrt{3}} + \\frac{1}{2} + 1} = \\frac{3\\sqrt{3} - 4}{3\\sqrt{3} + 4}$.\nRationalising: $\\frac{(3\\sqrt{3} - 4)^{2}}{27 - 16} = \\frac{43 - 24\\sqrt{3}}{11}$.",
     "24": "For a circumscribed quadrilateral, $AB + CD = BC + DA$. $6 + 3 = 7.5 + DA$, so $DA = 1.5$ cm.",
     "25": "Area $= \\frac{40}{360} \\times \\frac{22}{7} \\times (14^{2} - 7^{2}) = \\frac{1}{9} \\times \\frac{22}{7} \\times 147 = \\frac{154}{3} \\approx 51.33$ cm².",
-    "26": "Suppose $3\\sqrt{2} = r$ is rational.\nThen $\\sqrt{2} = \\frac{r}{3}$ is rational, a contradiction.\nHence $3\\sqrt{2}$ is irrational.",
+    "26": "Suppose $\\sqrt{p} + \\sqrt{q} = r$, where $r$ is rational.\nThen $r > 0$.\nWrite $\\sqrt{q} = r - \\sqrt{p}$ and square both sides: $q = r^{2} - 2r\\sqrt{p} + p$.\nSo $\\sqrt{p} = \\frac{r^{2} + p - q}{2r}$, which is rational.\nThis contradicts the irrationality of $\\sqrt{p}$.\nHence $\\sqrt{p} + \\sqrt{q}$ is irrational.",
     "27": "If one zero is the negative of the other, their sum is 0.\nSum $= \\frac{8k^{2} - 40k}{4} = 0$, so $8k(k - 5) = 0$ and $k = 0$ or $k = 5$.",
     "28": "$\\frac{a + 10d}{a + 17d} = \\frac{2}{3}$ gives $3a + 30d = 2a + 34d$, so $a = 4d$. $a_{5} = a + 4d = 8d$ and $a_{21} = a + 20d = 24d$.\nRatio $8d : 24d = 1 : 3$.\nOR: Put $u = \\frac{1}{x}, v = \\frac{1}{y}$. $2u + 3v = 13$ and $5u - 4v = -2$.\nMultiply by 4 and 3: $8u + 12v = 52$ and $15u - 12v = -6$.\nAdding: $23u = 46, u = 2, v = 3$.\nSo $x = \\frac{1}{2}, y = \\frac{1}{3}$.",
     "29": "Tangents from an external point are equal: $AQ = AR, BQ = BP, CP = CR$.\nPerimeter $= AB + BC + CA = AB + BP + PC + CA = AB + BQ + CR + CA = AQ + AR = 2AQ$.\nHence $AQ = \\frac{1}{2} \\times$ perimeter.",
@@ -3634,23 +3617,23 @@
     "17": 3,
     "18": 0,
     "19": 0,
-    "20": 1
+    "20": 0
    },
    "writtenSolutions": {
     "21": "Required number $= \\text{HCF}(70 - 5, 125 - 8) = \\text{HCF}(65, 117)$. $65 = 5 \\times 13$ and $117 = 3^{2} \\times 13$.\n$\\text{HCF} = 13$.\nOR: LCM(9, 12, 15): $9 = 3^{2}, 12 = 2^{2} \\times 3, 15 = 3 \\times 5$.\n$\\text{LCM} = 2^{2} \\times 3^{2} \\times 5 = 180$ minutes $= 3$ hours.\nThey toll together again at 11 a.$m$.",
-    "22": "Let the ratio be $k : 1$. $y = \\frac{5k - 5}{k + 1} = 0$, so $k = 1$.\nRatio 1 : 1.\nPoint $= \\left(\\frac{1 - 4}{2}, 0\\right) = \\left(-\\frac{3}{2}, 0\\right)$.\nOR: $\\frac{AD}{AB} = \\frac{2}{5}$. $\\triangle ADE \\sim \\triangle ABC (DE \\parallel BC)$, so $\\frac{DE}{BC} = \\frac{2}{5}$ and $BC = 4 \\times \\frac{5}{2} = 10$ cm.",
+    "22": "Let the ratio be $k : 1$. $y = \\frac{5k - 5}{k + 1} = 0$, so $k = 1$.\nRatio 1 : 1.\nPoint $= \\left(\\frac{1 - 4}{2}, 0\\right) = \\left(-\\frac{3}{2}, 0\\right)$.\nOR: Let the new end points be $A'$ (beyond $A$) and $B'$ (beyond $B$), with $A'A = \\frac{AB}{2} = BB'$.\nThen $A$ divides $A'B$ in the ratio 1 : 2, so $A = \\frac{2A' + B}{3}$ and $A' = \\frac{3A - B}{2} = \\left(\\frac{18 + 1}{2}, \\frac{9 + 4}{2}\\right) = \\left(\\frac{19}{2}, \\frac{13}{2}\\right)$.\nIn the same way, $B' = \\frac{3B - A}{2} = \\left(\\frac{-3 - 6}{2}, \\frac{-12 - 3}{2}\\right) = \\left(-\\frac{9}{2}, -\\frac{15}{2}\\right)$.",
     "23": "$A + B = 60^{\\circ}$ and $A - B = 30^{\\circ}$.\nSo $A = 45^{\\circ}$ and $B = 15^{\\circ}$.",
-    "24": "$\\angle OQP = \\angle ORP = 90^{\\circ}$. $\\angle QOR = 360^{\\circ} - 90^{\\circ} - 90^{\\circ} - 46^{\\circ} = 134^{\\circ}$.\n$OQ =$ OR, so $\\angle OQR = \\frac{180^{\\circ} - 134^{\\circ}}{2} = 23^{\\circ}$.",
-    "25": "Arc $= \\frac{72}{360} \\times 2 \\times 3.14 \\times 5 = 6.28$ cm.\nPerimeter $= 6.28 + 5 + 5 = 16.28$ cm.",
-    "26": "Suppose $2 - 3\\sqrt{5} = r$ is rational.\nThen $\\sqrt{5} = \\frac{2 - r}{3}$, which is rational.\nThis contradicts the irrationality of $\\sqrt{5}$.\nHence $2 - 3\\sqrt{5}$ is irrational.",
-    "27": "$4s^{2} - 4s + 1 = (2s - 1)^{2}$.\nZeroes: $\\frac{1}{2}$ and $\\frac{1}{2}$.\nSum $= 1 = -\\frac{-4}{4}$.\nProduct $= \\frac{1}{4} = \\frac{c}{a}$.\nVerified.",
+    "24": "$\\angle OQP = \\angle ORP = 90^{\\circ}$. $\\angle QOR = 360^{\\circ} - 90^{\\circ} - 90^{\\circ} - 46^{\\circ} = 134^{\\circ}$.\n$OQ = OR$, so $\\angle OQR = \\frac{180^{\\circ} - 134^{\\circ}}{2} = 23^{\\circ}$.",
+    "25": "Area of sector $OAB = \\frac{120}{360} \\times \\frac{22}{7} \\times 14^{2} = \\frac{616}{3} \\approx 205.33$ cm².\nDraw $OM \\perp AB$.\nThen $\\angle AOM = 60^{\\circ}, OM = 14 \\cos 60^{\\circ} = 7$ cm and $AM = 14 \\sin 60^{\\circ} = 7\\sqrt{3}$ cm, so $AB = 14\\sqrt{3}$ cm.\nArea of $\\triangle OAB = \\frac{1}{2} \\times 14\\sqrt{3} \\times 7 = 49\\sqrt{3} \\approx 84.77$ cm².\nArea of minor segment $= 205.33 - 84.77 = 120.56$ cm².",
+    "26": "Suppose $\\sqrt{2} + \\sqrt{5} = r$, where $r$ is rational.\nThen $r > 0$.\nWrite $\\sqrt{5} = r - \\sqrt{2}$ and square both sides: $5 = r^{2} - 2\\sqrt{2} r + 2$.\nSo $\\sqrt{2} = \\frac{r^{2} - 3}{2r}$, which is rational.\nThis contradicts the irrationality of $\\sqrt{2}$.\nHence $\\sqrt{2} + \\sqrt{5}$ is irrational.",
+    "27": "$\\alpha + \\beta = \\frac{5}{2}$ and $\\alpha \\beta = \\frac{7}{2}$.\nSum of the new zeroes $= 5(\\alpha + \\beta) = \\frac{25}{2}$.\nProduct $= (2\\alpha + 3\\beta)(3\\alpha + 2\\beta) = 6\\alpha ^{2} + 13\\alpha \\beta + 6\\beta ^{2} = 6(\\alpha + \\beta)^{2} + \\alpha \\beta = 6 \\times \\frac{25}{4} + \\frac{7}{2} = 41$.\nRequired polynomial: $x^{2} - \\frac{25}{2}x + 41$, that is, $k(2x^{2} - 25x + 82)$ for any non-zero constant $k$.",
     "28": "Middle terms are the 18th, 19th and 20th: $3a + 54d = 225$, so $a + 18d = 75$.\nLast three are the 35th, 36th, 37th: $3a + 105d = 429$, so $a + 35d = 143$.\nSubtract: $17d = 68, d = 4, a = 3$.\n$AP$: 3, 7, 11, 15, …\nOR: Adding: $80x + 80y = 240, x + y = 3$.\nSubtracting: $-6x + 6y = 6, y - x = 1$.\nSo $x = 1, y = 2$.",
     "29": "Let $AB$ be the tangent at $P$ to a circle with centre $O$, and let $PX$ be the line through $P$ perpendicular to $AB$.\nJoin $OP$.\nThe radius through the point of contact is perpendicular to the tangent, so $\\angle OPB = 90^{\\circ}$.\nAlso $\\angle XPB = 90^{\\circ}$.\nBoth $OP$ and $PX$ make a right angle with $PB$ at $P$ on the same side, so they are the same line.\nHence the perpendicular $PX$ passes through $O$.",
     "30": "$AB = \\sqrt{9 + 16} = 5$.\n$AC = \\sqrt{16 + 9} = 5$.\n$BC = \\sqrt{49 + 1} = \\sqrt{50}$.\n$AB = AC$, so the triangle is isosceles.\n$AB^{2} + AC^{2} = 25 + 25 = 50 = BC^{2}$, so $\\angle A = 90^{\\circ}$ (converse of Pythagoras).\nIt is right-angled and isosceles.",
     "31": "$\\tan A + \\cot A = \\frac{\\sin^{2}A + \\cos^{2}A}{\\sin A \\cos A} = \\frac{1}{\\sin A \\cos A}$.\n$\\text{LHS} = \\frac{\\sin A + \\cos A}{\\sin A \\cos A} = \\frac{1}{\\cos A} + \\frac{1}{\\sin A} = \\sec A + \\operatorname{cosec} A$.\nOR: $\\sin \\theta = (\\sqrt{2} - 1) \\cos \\theta$, so $\\cos \\theta = \\frac{\\sin \\theta }{\\sqrt{2} - 1} = (\\sqrt{2} + 1) \\sin \\theta$.\nHence $\\cos \\theta - \\sin \\theta = \\sqrt{2} \\sin \\theta$.",
     "32": "Let the shorter side be $x$ cm\nthe other is $x + 5$. $x^{2} + (x + 5)^{2} = 625$, so $2x^{2} + 10x - 600 = 0, x^{2} + 5x - 300 = 0, (x + 20)(x - 15) = 0$. $x = 15$.\nSides 15 cm and 20 cm.",
     "33": "Let $AD$ meet $PQ$ at $E$.\n$PQ \\parallel BC$ gives $\\triangle APE \\sim \\triangle ABD$ and $\\triangle AEQ \\sim \\triangle ADC$ (AA).\nSo $\\frac{PE}{BD} = \\frac{AE}{AD}$ and $\\frac{EQ}{DC} = \\frac{AE}{AD}$.\nHence $\\frac{PE}{BD} = \\frac{EQ}{DC}$.\n$BD = DC$ ($D$ is the midpoint), so $PE = EQ$: $AD$ bisects $PQ$.\n$\\frac{AP}{AB} = \\frac{3}{5}$. $\\triangle APQ \\sim \\triangle ABC$, so $PQ = \\frac{3}{5} \\times 10 = 6$ cm.",
-    "34": "Bowl $= \\frac{2}{3}\\pi \\times 9^{3} = 486\\pi$ cm³.\nBottle $= \\pi \\times 1.5^{2} \\times 4 = 9\\pi$ cm³.\nNumber $= \\frac{486\\pi }{9\\pi } = 54$ bottles.\nOR: Cone height $= 15.5 - 3.5 = 12$ cm, slant height $= \\sqrt{144 + 12.25} = 12.5$ cm.\n$TSA = \\pi rl + 2\\pi r^{2} = \\frac{22}{7}(3.5)(12.5) + 2\\frac{22}{7}(12.25) = 137.5 + 77 = 214.5$ cm².",
+    "34": "Bowl $= \\frac{2}{3}\\pi \\times 9^{3} = 486\\pi$ cm³.\nBottle $= \\pi \\times 1.5^{2} \\times 4 = 9\\pi$ cm³.\nNumber $= \\frac{486\\pi }{9\\pi } = 54$ bottles.\nOR: Cone height $= 15.5 - 3.5 = 12$ cm, slant height $= \\sqrt{144 + 12.25} = 12.5$ cm.\n$\\text{TSA} = \\pi rl + 2\\pi r^{2} = \\frac{22}{7}(3.5)(12.5) + 2\\frac{22}{7}(12.25) = 137.5 + 77 = 214.5$ cm².",
     "35": "Let the cloud be $H m$ above the lake and its horizontal distance $d$.\nElevation $30^{\\circ}$: $H - 60 = \\frac{d}{\\sqrt{3}}$.\nThe reflection is $H m$ below the lake surface, so depression $60^{\\circ}$: $H + 60 = d\\sqrt{3}$.\nDividing: $\\frac{H + 60}{H - 60} = 3$, so $H + 60 = 3H - 180$ and $H = 120$ m.\nOR: $n = 70, \\frac{n}{2} = 35$.\nCumulative frequencies 5, 9, 17, 29, 45: median class 40–50. $l = 40, cf = 29, f = 16, h = 10$.\nMedian $= 40 + \\frac{6}{16} \\times 10 = 43.75$.",
     "36": "$a = 20, d = 2$.\n(i) $a_{10} = 20 + 18 = 38$.\n(ii) $a_{30} = 20 + 58 = 78$.\n(iii) $S_{30} = 15(20 + 78) = 1470$ seats.\nOR (iii): $20 + 2(n - 1) = 50$, so $n = 16$.\nThe 16th row.",
     "37": "(i) $ST = \\sqrt{6^{2} + 8^{2}} = 10$ m.\n(ii) Midpoint $= (0, -2)$.\n(iii) $R = \\left(\\frac{2 \\times 3 + 3 \\times (-3)}{5}, \\frac{2 \\times (-6) + 3 \\times 2}{5}\\right) = \\left(-\\frac{3}{5}, -\\frac{6}{5}\\right)$.\nOR (iii): $(x + 3)^{2} + 4 = (x - 3)^{2} + 36$, so $12x = 32$ and $x = \\frac{8}{3}$.\nThe point is $\\left(\\frac{8}{3}, 0\\right)$.",
@@ -3683,11 +3666,11 @@
    },
    "writtenSolutions": {
     "21": "$520 = 2^{3} \\times 5 \\times 13$ and $468 = 2^{2} \\times 3^{2} \\times 13$.\n$\\text{LCM} = 2^{3} \\times 3^{2} \\times 5 \\times 13 = 4680$.\nRequired number $= 4680 - 17 = 4663$.\nOR: The HCF always divides the LCM. $175 \\div 15$ is not an integer, so no two numbers can have HCF 15 and LCM 175.",
-    "22": "$x$: $\\frac{3 \\times 8a + 1 \\times (3a + 1)}{4} = 9a - 2$, so $27a + 1 = 36a - 8$ and $a = 1$. $y$: $\\frac{3 \\times 5 + 1 \\times (-3)}{4} = 3 = -b$, so $b = -3$.\nOR: By BPT, $\\frac{AE}{EC} = \\frac{AD}{DB} = \\frac{6}{9}$, so $EC = 12$ cm and $AC = 8 + 12 = 20$ cm.",
+    "22": "$x$: $\\frac{3 \\times 8a + 1 \\times (3a + 1)}{4} = 9a - 2$, so $27a + 1 = 36a - 8$ and $a = 1$. $y$: $\\frac{3 \\times 5 + 1 \\times (-3)}{4} = 3 = -b$, so $b = -3$.\nOR: Let the ratio be $k : 1$.\nThe point of division is $\\left(\\frac{3k + 2}{k + 1}, \\frac{7k - 2}{k + 1}\\right)$.\nIt lies on the line, so $2(3k + 2) + (7k - 2) - 4(k + 1) = 0$, that is, $9k - 2 = 0$ and $k = \\frac{2}{9}$.\nThe line divides $AB$ internally in the ratio 2 : 9.",
     "23": "$\\sec 4A = \\operatorname{cosec}(90^{\\circ} - 4A)$.\nSo $90^{\\circ} - 4A = A - 20^{\\circ}, 5A = 110^{\\circ}$ and $A = 22^{\\circ}$.",
     "24": "In $\\triangle OAP$ and $\\triangle OBP$: $OA = OB$ (radii), $PA = PB$ (tangents from an external point), $OP$ is common.\nSo $\\triangle OAP \\cong \\triangle OBP$ (SSS) and $\\angle APO = \\angle BPO$ (CPCT).",
     "25": "Area $= 2 \\times \\frac{115}{360} \\times \\frac{22}{7} \\times 25^{2} = \\frac{115}{180} \\times \\frac{22}{7} \\times 625 = \\frac{158125}{126} \\approx 1254.96$ cm².",
-    "26": "Suppose $3\\sqrt{7} = r$ is rational.\nThen $\\sqrt{7} = \\frac{r}{3}$ is rational, which is a contradiction.\nHence $3\\sqrt{7}$ is irrational.",
+    "26": "Suppose $\\sqrt{3} = \\frac{a}{b}$, where a and $b$ are co-prime integers and $b \\neq 0$.\nThen $3b^{2} = a^{2}$, so 3 divides $a^{2}$, hence 3 divides a.\nWrite $a = 3c$: $3b^{2} = 9c^{2}$, so $b^{2} = 3c^{2}$ and 3 divides $b$.\nThen 3 divides both a and $b$, which contradicts co-primality.\nHence $\\sqrt{3}$ is irrational.\nNext, $\\frac{1}{2 - \\sqrt{3}} = \\frac{2 + \\sqrt{3}}{(2 - \\sqrt{3})(2 + \\sqrt{3})} = \\frac{2 + \\sqrt{3}}{1} = 2 + \\sqrt{3}$.\nIf $2 + \\sqrt{3} = r$ were rational, then $\\sqrt{3} = r - 2$ would be rational, a contradiction.\nHence $\\frac{1}{2 - \\sqrt{3}}$ is irrational.",
     "27": "Sum $= k + 6$.\nProduct $= 2(2k - 1)$. $k + 6 = \\frac{1}{2} \\times 2(2k - 1) = 2k - 1$, so $k = 7$.",
     "28": "$a + (p - 1)d = q$ and $a + (q - 1)d = p$.\nSubtract: $(p - q)d = q - p$, so $d = -1$.\nThen $a = q + p - 1$. $a_{n} = (p + q - 1) - (n - 1) = p + q - n$.\nOR: The first equation gives $bx + ay = 2ab$.\nMultiply it by $b$ and the second equation by a: $b^{2}x + aby = 2ab^{2}$ and $a^{2}x - aby = a^{3} - ab^{2}$.\nAdding: $(a^{2} + b^{2})x = a(a^{2} + b^{2})$, so $x = a$.\nThen $ab + ay = 2ab$ gives $y = b$.",
     "29": "$\\angle CBA = 90^{\\circ}$ (angle in a semicircle\n$AC$ is a diameter). $\\angle CAT = 90^{\\circ}$ (radius $\\perp$ tangent).\nSo $\\angle BAT = 90^{\\circ} - \\angle CAB$.\nIn $\\triangle ABC, \\angle ACB = 180^{\\circ} - 90^{\\circ} - \\angle CAB = 90^{\\circ} - \\angle CAB$.\nHence $\\angle BAT = \\angle ACB$.",
@@ -3695,7 +3678,7 @@
     "31": "$\\frac{\\sin \\theta }{1 - \\cos \\theta } = \\frac{\\sin \\theta (1 + \\cos \\theta)}{\\sin^{2}\\theta } = \\frac{1 + \\cos \\theta }{\\sin \\theta }$. $\\frac{\\tan \\theta }{1 + \\cos \\theta } = \\frac{\\sin \\theta (1 - \\cos \\theta)}{\\cos \\theta \\sin^{2}\\theta } = \\frac{1 - \\cos \\theta }{\\sin \\theta \\cos \\theta }$.\nSum $= \\frac{\\cos \\theta (1 + \\cos \\theta) + 1 - \\cos \\theta }{\\sin \\theta \\cos \\theta } = \\frac{1 + \\cos^{2}\\theta }{\\sin \\theta \\cos \\theta } = \\frac{1}{\\sin \\theta \\cos \\theta } + \\frac{\\cos \\theta }{\\sin \\theta } = \\sec \\theta \\operatorname{cosec} \\theta + \\cot \\theta$.\nOR: Divide by $\\cos^{2}\\theta$: $\\sec^{2}\\theta + \\tan^{2}\\theta = 3 \\tan \\theta$, so $1 + 2 \\tan^{2}\\theta = 3 \\tan \\theta$. $2 \\tan^{2}\\theta - 3 \\tan \\theta + 1 = 0, (2 \\tan \\theta - 1)(\\tan \\theta - 1) = 0$. $\\tan \\theta = 1$ or $\\frac{1}{2}$.",
     "32": "Let the faster pipe take $x$ minutes\nthe other $x + 3$. $\\frac{1}{x} + \\frac{1}{x + 3} = \\frac{13}{40}$.\nSo $40(2x + 3) = 13x(x + 3), 13x^{2} - 41x - 120 = 0$. $x = \\frac{41 \\pm 89}{26}$, so $x = 5$ (the negative root is rejected).\nTimes: 5 minutes and 8 minutes.",
     "33": "Statement and proof of BPT: in $\\triangle ABC$ with $DE \\parallel BC, \\frac{\\operatorname{ar}(ADE)}{\\operatorname{ar}(BDE)} = \\frac{AD}{DB}$ and $\\frac{\\operatorname{ar}(ADE)}{\\operatorname{ar}(DEC)} = \\frac{AE}{EC}$ (same heights). $\\operatorname{ar}(BDE) = \\operatorname{ar}(DEC)$ (same base $DE$, between the same parallels).\nSo $\\frac{AD}{DB} = \\frac{AE}{EC}$.\nApplication: $\\frac{AD}{DB} = \\frac{AE}{EC}$, so $DE \\parallel BC$ (converse of BPT).\nThen $\\angle ADE = \\angle ABC$ (corresponding angles).\nGiven $\\angle ADE = \\angle ACB$, so $\\angle ABC = \\angle ACB$ and $AB = AC$. $\\triangle ABC$ is isosceles.",
-    "34": "$\\frac{4}{3}\\pi (4.2)^{3} = \\pi (6)^{2}h$. $h = \\frac{\\frac{4}{3}(74.088)}{36} = 2.744$ cm.\n$CSA = 2\\pi rh = 2 \\times \\frac{22}{7} \\times 6 \\times 2.744 \\approx 103.49$ cm².\nOR: Earth $= \\frac{22}{7} \\times 3.5^{2} \\times 20 = 770$ m³.\nHeight $= \\frac{770}{22 \\times 14} = 2.5$ m.",
+    "34": "Total surface area $= \\text{CSA}$ of cylinder $+ 2 \\times \\text{CSA}$ of hemisphere $= 2\\pi rh + 4\\pi r^{2} = 2 \\times \\frac{22}{7} \\times 3.5 \\times 10 + 4 \\times \\frac{22}{7} \\times 3.5^{2} = 220 + 154 = 374$ cm².\nVolume of wood $= \\pi r^{2}h - 2 \\times \\frac{2}{3}\\pi r^{3} = \\frac{22}{7} \\times 3.5^{2} \\times 10 - \\frac{4}{3} \\times \\frac{22}{7} \\times 3.5^{3} = 385 - 179.67 = 205.33$ cm³.\nOR: The greatest diameter equals the side of the cube, 10 cm, so $r = 5$ cm.\nTotal surface area $= 6 \\times 10^{2} - \\pi r^{2} + 2\\pi r^{2} = 600 + \\pi r^{2} = 600 + 3.14 \\times 25 = 678.5$ cm².\nVolume $= 10^{3} + \\frac{2}{3}\\pi r^{3} = 1000 + \\frac{2}{3} \\times 3.14 \\times 125 = 1000 + 261.67 = 1261.67$ cm³.",
     "35": "Let the tower height be $h$.\nFirst distance $= \\frac{h}{\\tan 30^{\\circ}} = h\\sqrt{3}$.\nSecond distance $= \\frac{h}{\\tan 60^{\\circ}} = \\frac{h}{\\sqrt{3}}$.\nDistance covered in $6 s = h\\sqrt{3} - \\frac{h}{\\sqrt{3}} = \\frac{2h}{\\sqrt{3}}$.\nSpeed $= \\frac{h}{3\\sqrt{3}}$ per second.\nTime for the remaining $\\frac{h}{\\sqrt{3}} = \\frac{\\frac{h}{\\sqrt{3}}}{\\frac{h}{3\\sqrt{3}}} = 3$ seconds.\nOR: $a = 70, h = 10$. $u = -2, -1, 0, 1, 2$\n$fu = -6, -10, 0, 8, 6$\n$\\Sigma fu = -2, \\Sigma f = 35$.\nMean $= 70 + 10 \\times \\left(-\\frac{2}{35}\\right) = 70 - 0.57 = 69.43$%.",
     "36": "(i) $x(2x + 1) = 300$, that is $2x^{2} + x - 300 = 0$.\n(ii) $D = 1 + 2400 = 2401$.\n(iii) $x = \\frac{-1 \\pm 49}{4}$, so $x = 12$.\nBreadth 12 m, length 25 m.\nOR (iii): Perimeter $= 2(12 + 25) = 74$ m.\nCost $= 74 \\times 50 = \\text{₹}3700$.",
     "37": "(i) $\\tan 30^{\\circ} = \\frac{12}{d}$, so $d = 12\\sqrt{3} = 20.78$ m.\n(ii) Height above the building $= d \\tan 60^{\\circ} = 12\\sqrt{3} \\times \\sqrt{3} = 36$ m.\n(iii) Tower $= 36 + 12 = 48$ m.\nOR (iii): Distance $= \\sqrt{d^{2} + 36^{2}} = \\sqrt{432 + 1296} = \\sqrt{1728} = 24\\sqrt{3} \\approx 41.57$ m.",
