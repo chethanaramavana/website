@@ -58,6 +58,10 @@ export default function Homepage({ signedIn = false }: { signedIn?: boolean }) {
             <a href="/icse" className="rmc-board-card"><div className="rmc-board-copy"><span className="rmc-eyebrow">Grades 6 &amp; 10</span><h3>ICSE</h3><p>Chapter notes, worked examples<br />{' '}and practice papers.</p><span className="rmc-card-action">Explore ICSE<ArrowRight aria-hidden="true" /></span></div><BoardFigure kind="fraction" /></a>
           </div>
           <p className="rmc-coming">IGCSE is on the way. CBSE and ICSE are ready to explore.</p>
+          <a className="rmc-jee-link" href="/cbse/grade-12/integrals#integrals-pdf-main-01">
+            <span><strong>JEE Main &amp; Advanced practice</strong><span>Grade 12 Integrals · Four online papers with worked solutions</span></span>
+            <ArrowRight aria-hidden="true" />
+          </a>
         </section>
 
         <MathsBasicsFeature />

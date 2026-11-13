@@ -99,6 +99,11 @@
 .rmc-card-action svg { width: 18px; height: 18px; margin-top: -3px; }
 .rmc-board-figure { width: 40%; max-width: 180px; flex: 0 1 180px; }
 .rmc-coming { margin-top: 14px !important; font-size: 13px; color: var(--rmc-muted); }
+.rmc-jee-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; padding: 16px 20px; border: 1px solid var(--rmc-rule); border-radius: 10px; background: #fffaf0; text-decoration: none; }
+.rmc-jee-link strong { display: block; font-size: 21px; line-height: 1.25; }
+.rmc-jee-link span span { display: block; margin-top: 4px; color: var(--rmc-muted); font-size: 16px; }
+.rmc-jee-link svg { flex: 0 0 auto; width: 20px; height: 20px; }
+.rmc-jee-link:hover strong { text-decoration: underline; text-underline-offset: 4px; }
 .rmc-basics-feature { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 65px; padding: 39px 42px; background: #f6f8fb; border: 1px solid var(--rmc-rule); border-radius: 10px; }
 .rmc-basics-feature h2 { font-size: 38px; font-weight: 800; line-height: 1.3; margin-top: 8px; }
 .rmc-basics-feature h3 { font-size: 24px; font-weight: 700; line-height: 1.35; margin-top: 12px; }
