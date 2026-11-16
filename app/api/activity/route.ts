@@ -3,6 +3,7 @@ import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/l
 import { activityPaper, recordPresence } from '@/lib/student-activity';
 import { hasMcqAccess } from '@/lib/mcq-access';
 import { hasIntegralsAccess } from '@/lib/integrals-access';
+import { hasG12PracticeAccess } from '@/lib/g12-practice-access';
 
 export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid origin.',403);
@@ -22,6 +23,7 @@ export async function POST(request: Request) {
       if(paper.kind==='basics'&&!await canOpenBasicsAny(user,paper.slug))return jsonError('Level access required.',403);
       if (paper.kind==='quiz' && !await hasMcqAccess(user,paper.chapter!,paper.grade!,'board' in paper ? paper.board : 'CBSE')) return jsonError('Test access required.',403);
       if (paper.kind==='integrals' && !await hasIntegralsAccess(user,body.paperId)) return jsonError('Test access required.',403);
+      if (paper.kind==='g12practice' && !await hasG12PracticeAccess(user,body.paperId)) return jsonError('Test access required.',403);
       if (paper.kind==='paper') {
         const access=await getDatabase().prepare(`SELECT 1 FROM payment_requests WHERE user_id=? AND paper_id=? AND status='approved' UNION ALL SELECT 1 FROM submissions WHERE (user_id=? OR lower(user_email)=?) AND paper_id=? LIMIT 1`).bind(user.userId,body.paperId,user.userId,user.email.toLowerCase(),body.paperId).first();
         if (!access) return jsonError('Test access required.',403);

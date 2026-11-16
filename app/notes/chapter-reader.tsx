@@ -1,6 +1,8 @@
 import Tex from './tex';
 import {SessionProgress, SessionTick} from './integrals-ticks';
 import './integrals-online.css';
+import { g12PracticeReady, g12PracticePath } from '@/lib/g12-practice-catalog';
+import { quizPath, quizPrice } from '@/lib/free-quizzes/catalog';
 
 type Worked = {question: string; use?: string[]; steps: string[]; reasoning?: string[]; result?: string; type?: string};
 export type ReaderLesson = {title: string; level: 'board' | 'challenge' | string; introduction?: string; formulas: string[]; examples: Worked[]};
@@ -49,6 +51,6 @@ export default function ChapterReader({data}: {data: ReaderChapter}) {
       <SessionTick index={i} total={data.lessons.length} storeKey={storeKey} />
     </section>)}
     {storyFirst && <details className="ir-formulas" id="formulas"><summary>Chapter formula reference</summary>{reference}</details>}
-    <footer><h2>Put the ideas to work</h2><p><a href={`/cbse/grade-12/ch-${data.number}`}>Practise with the {data.title} question papers →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
+    <footer><h2>Put the ideas to work</h2>{g12PracticeReady.has(data.number) && <><p><a href={quizPath(data.number, 12)}>{quizPrice(data.number, 12) === 0 ? 'Take the free 50-question MCQ practice →' : `Take the 50-question MCQ practice (₹${quizPrice(data.number, 12) / 100}) →`}</a></p><p><a href={g12PracticePath(data.number)}>Choose a CBSE or JEE practice paper →</a></p></>}<p><a href={`/cbse/grade-12/ch-${data.number}`}>Practise with the {data.title} question papers →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
   </main>;
 }

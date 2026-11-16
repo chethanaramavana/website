@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "The principal value of $\\sin^{-1}\\dfrac{\\sqrt3}{2}$ is",
+  "options": [
+   "$-\\frac\\pi3$",
+   "$\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac{2\\pi}{3}$"
+  ],
+  "answer": 2,
+  "solution": "$\\sin\\frac\\pi3=\\frac{\\sqrt3}{2}$ and $\\frac\\pi3\\in\\left[-\\frac\\pi2,\\frac\\pi2\\right]$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The principal value of $\\cos^{-1}\\left(-\\dfrac12\\right)$ is",
+  "options": [
+   "$-\\frac\\pi3$",
+   "$\\frac\\pi3$",
+   "$\\frac{4\\pi}{3}$",
+   "$\\frac{2\\pi}{3}$"
+  ],
+  "answer": 3,
+  "solution": "$\\cos^{-1}\\left(-\\frac12\\right)=\\pi-\\frac\\pi3$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The principal value of $\\tan^{-1}(-1)$ is",
+  "options": [
+   "$\\frac{3\\pi}{4}$",
+   "$\\frac\\pi4$",
+   "$\\frac{5\\pi}{4}$",
+   "$-\\frac\\pi4$"
+  ],
+  "answer": 3,
+  "solution": "$\\tan^{-1}(-1)=-\\tan^{-1}1$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The principal value of $\\operatorname{cosec}^{-1}(-\\sqrt2)$ is",
+  "options": [
+   "$\\frac\\pi4$",
+   "$-\\frac\\pi4$",
+   "$\\frac{3\\pi}{4}$",
+   "$\\frac{5\\pi}{4}$"
+  ],
+  "answer": 1,
+  "solution": "$\\operatorname{cosec}^{-1}(-x)=-\\operatorname{cosec}^{-1}x$ and $\\operatorname{cosec}\\frac\\pi4=\\sqrt2$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The principal value of $\\sec^{-1}\\dfrac{2}{\\sqrt3}$ is",
+  "options": [
+   "$\\frac\\pi6$",
+   "$-\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac{5\\pi}{6}$"
+  ],
+  "answer": 0,
+  "solution": "$\\sec\\frac\\pi6=\\frac{2}{\\sqrt3}$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The principal value of $\\cot^{-1}(-\\sqrt3)$ is",
+  "options": [
+   "$-\\frac\\pi6$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac\\pi6$",
+   "$\\frac{5\\pi}{6}$"
+  ],
+  "answer": 3,
+  "solution": "$\\cot^{-1}(-\\sqrt3)=\\pi-\\frac\\pi6$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "The range of $\\cos^{-1}x$ is",
+  "options": [
+   "$[0,\\pi]$",
+   "$[-1,1]$",
+   "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+   "$(0,\\pi)$"
+  ],
+  "answer": 0,
+  "solution": "The principal value branch of $\\cos^{-1}$ is $[0,\\pi]$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "The range of $\\sec^{-1}x$ is",
+  "options": [
+   "$[0,\\pi]$",
+   "$(0,\\pi)$",
+   "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]-\\{0\\}$",
+   "$[0,\\pi]-\\left\\{\\frac\\pi2\\right\\}$"
+  ],
+  "answer": 3,
+  "solution": "$\\sec\\frac\\pi2$ is undefined, so $\\frac\\pi2$ is excluded.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "The domain of $\\sin^{-1}x$ is",
+  "options": [
+   "$\\mathbb{R}$",
+   "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+   "$[-1,1]$",
+   "$(-1,1)$"
+  ],
+  "answer": 2,
+  "solution": "$\\sin x$ takes values only in $[-1,1]$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "The domain of $\\sin^{-1}(3x-2)$ is",
+  "options": [
+   "$\\left[\\frac13,\\frac23\\right]$",
+   "$\\left[0,\\frac23\\right]$",
+   "$\\left[\\frac13,1\\right]$",
+   "$[-1,1]$"
+  ],
+  "answer": 2,
+  "solution": "$-1\\le3x-2\\le1\\Rightarrow1\\le3x\\le3$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "The domain of $\\cos^{-1}(2x-3)$ is",
+  "options": [
+   "$[1,2]$",
+   "$[0,2]$",
+   "$[-1,1]$",
+   "$\\left[\\frac32,2\\right]$"
+  ],
+  "answer": 0,
+  "solution": "$-1\\le2x-3\\le1\\Rightarrow2\\le2x\\le4$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "The domain of $\\sec^{-1}(x-1)$ is",
+  "options": [
+   "$[2,\\infty)$",
+   "$(0,2)$",
+   "$(-\\infty,0]\\cup[2,\\infty)$",
+   "$[0,2]$"
+  ],
+  "answer": 2,
+  "solution": "$|x-1|\\ge1\\Rightarrow x-1\\ge1$ or $x-1\\le-1$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "$\\sin^{-1}\\left(\\sin\\dfrac{2\\pi}{3}\\right)$ equals",
+  "options": [
+   "$-\\frac\\pi3$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi6$",
+   "$\\frac{2\\pi}{3}$"
+  ],
+  "answer": 1,
+  "solution": "$\\sin\\frac{2\\pi}{3}=\\sin\\frac\\pi3$ and $\\frac\\pi3$ is in the principal branch.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\cos^{-1}\\left(\\cos\\dfrac{5\\pi}{3}\\right)$ equals",
+  "options": [
+   "$\\frac{2\\pi}{3}$",
+   "$-\\frac\\pi3$",
+   "$\\frac\\pi3$",
+   "$\\frac{5\\pi}{3}$"
+  ],
+  "answer": 2,
+  "solution": "$\\cos\\frac{5\\pi}{3}=\\cos\\left(2\\pi-\\frac{5\\pi}{3}\\right)=\\cos\\frac\\pi3$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\tan^{-1}\\left(\\tan\\dfrac{7\\pi}{6}\\right)$ equals",
+  "options": [
+   "$\\frac\\pi6$",
+   "$\\frac{7\\pi}{6}$",
+   "$-\\frac\\pi6$",
+   "$\\frac{5\\pi}{6}$"
+  ],
+  "answer": 0,
+  "solution": "$\\tan\\frac{7\\pi}{6}=\\tan\\left(\\frac{7\\pi}{6}-\\pi\\right)$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\sin^{-1}(\\sin10)$ equals",
+  "options": [
+   "$10$",
+   "$4\\pi-10$",
+   "$3\\pi-10$",
+   "$10-3\\pi$"
+  ],
+  "answer": 2,
+  "solution": "$\\sin10=\\sin(3\\pi-10)$ and $3\\pi-10\\approx-0.58\\in\\left[-\\frac\\pi2,\\frac\\pi2\\right]$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\cos\\left(\\sin^{-1}\\dfrac45\\right)$ equals",
+  "options": [
+   "$\\frac45$",
+   "$\\frac35$",
+   "$\\frac53$",
+   "$\\frac34$"
+  ],
+  "answer": 1,
+  "solution": "$\\theta=\\sin^{-1}\\frac45\\in\\left[0,\\frac\\pi2\\right]$, so $\\cos\\theta=\\sqrt{1-\\frac{16}{25}}$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "$\\tan\\left(\\cos^{-1}\\dfrac35\\right)$ equals",
+  "options": [
+   "$\\frac34$",
+   "$\\frac43$",
+   "$\\frac45$",
+   "$\\frac53$"
+  ],
+  "answer": 1,
+  "solution": "$\\cos\\theta=\\frac35\\Rightarrow\\sin\\theta=\\frac45$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "$\\sin\\left(\\cos^{-1}\\left(-\\dfrac12\\right)\\right)$ equals",
+  "options": [
+   "$-\\frac12$",
+   "$\\frac{\\sqrt3}{2}$",
+   "$\\frac12$",
+   "$-\\frac{\\sqrt3}{2}$"
+  ],
+  "answer": 1,
+  "solution": "$\\cos^{-1}\\left(-\\frac12\\right)=\\frac{2\\pi}{3}$ and $\\sin\\frac{2\\pi}{3}=\\frac{\\sqrt3}{2}$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "$\\sec^2(\\tan^{-1}2)+\\operatorname{cosec}^2(\\cot^{-1}3)$ equals",
+  "options": [
+   "$5$",
+   "$10$",
+   "$15$",
+   "$13$"
+  ],
+  "answer": 2,
+  "solution": "$\\sec^2\\theta=1+\\tan^2\\theta=5$ and $\\operatorname{cosec}^2\\phi=1+\\cot^2\\phi=10$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "$\\sin^{-1}\\dfrac13+\\cos^{-1}\\dfrac13$ equals",
+  "options": [
+   "$\\frac23$",
+   "$1$",
+   "$\\pi$",
+   "$\\frac\\pi2$"
+  ],
+  "answer": 3,
+  "solution": "$\\sin^{-1}x+\\cos^{-1}x=\\frac\\pi2$ for $|x|\\le1$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\tan^{-1}2+\\cot^{-1}2$ equals",
+  "options": [
+   "$\\frac\\pi2$",
+   "$\\pi$",
+   "$\\frac\\pi4$",
+   "$4$"
+  ],
+  "answer": 0,
+  "solution": "$\\tan^{-1}x+\\cot^{-1}x=\\frac\\pi2$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\tan^{-1}1+\\tan^{-1}2+\\tan^{-1}3$ equals",
+  "options": [
+   "$\\pi$",
+   "$\\frac{3\\pi}{4}$",
+   "$\\frac{5\\pi}{4}$",
+   "$\\frac\\pi2$"
+  ],
+  "answer": 0,
+  "solution": "$\\tan^{-1}2+\\tan^{-1}3=\\pi+\\tan^{-1}\\frac{5}{1-6}=\\frac{3\\pi}{4}$; add $\\tan^{-1}1=\\frac\\pi4$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$2\\tan^{-1}\\dfrac13$ equals",
+  "options": [
+   "$\\tan^{-1}\\frac43$",
+   "$\\tan^{-1}\\frac34$",
+   "$\\tan^{-1}\\frac38$",
+   "$\\tan^{-1}\\frac23$"
+  ],
+  "answer": 1,
+  "solution": "$2\\tan^{-1}x=\\tan^{-1}\\frac{2x}{1-x^2}$: $\\frac{\\frac23}{\\frac89}=\\frac34$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\tan^{-1}\\dfrac14+\\tan^{-1}\\dfrac29$ equals",
+  "options": [
+   "$\\tan^{-1}\\frac{17}{36}$",
+   "$\\tan^{-1}\\frac12$",
+   "$\\tan^{-1}\\frac13$",
+   "$\\tan^{-1}1$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{\\frac14+\\frac29}{1-\\frac{2}{36}}=\\frac{\\frac{17}{36}}{\\frac{34}{36}}=\\frac12$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\sin\\left(2\\tan^{-1}\\dfrac12\\right)$ equals",
+  "options": [
+   "$\\frac35$",
+   "$\\frac45$",
+   "$\\frac{2}{\\sqrt5}$",
+   "$\\frac12$"
+  ],
+  "answer": 1,
+  "solution": "$\\sin(2\\tan^{-1}x)=\\frac{2x}{1+x^2}=\\frac{1}{\\frac54}$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\cos\\left(2\\tan^{-1}\\dfrac17\\right)$ equals",
+  "options": [
+   "$\\frac{24}{25}$",
+   "$\\frac{7}{25}$",
+   "$\\frac{48}{49}$",
+   "$\\frac{12}{25}$"
+  ],
+  "answer": 0,
+  "solution": "$\\cos(2\\tan^{-1}x)=\\frac{1-x^2}{1+x^2}=\\frac{48}{50}$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\cos^{-1}\\left(\\cos\\left(-\\dfrac\\pi3\\right)\\right)$ equals",
+  "options": [
+   "$\\frac\\pi3$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac{5\\pi}{3}$",
+   "$-\\frac\\pi3$"
+  ],
+  "answer": 0,
+  "solution": "$\\cos\\left(-\\frac\\pi3\\right)=\\cos\\frac\\pi3$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\sin^{-1}\\left(-\\dfrac12\\right)+\\cos^{-1}\\left(-\\dfrac12\\right)$ equals",
+  "options": [
+   "$0$",
+   "$\\pi$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi2$"
+  ],
+  "answer": 3,
+  "solution": "$-\\frac\\pi6+\\frac{2\\pi}{3}=\\frac\\pi2$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "If $\\sin^{-1}x=\\dfrac\\pi5$, then $\\cos^{-1}x$ equals",
+  "options": [
+   "$\\frac{7\\pi}{10}$",
+   "$\\frac{4\\pi}{5}$",
+   "$\\frac\\pi5$",
+   "$\\frac{3\\pi}{10}$"
+  ],
+  "answer": 3,
+  "solution": "$\\cos^{-1}x=\\frac\\pi2-\\frac\\pi5$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "If $\\tan^{-1}x=\\dfrac\\pi{10}$, then $\\cot^{-1}x$ equals",
+  "options": [
+   "$\\frac{3\\pi}{5}$",
+   "$\\frac{2\\pi}{5}$",
+   "$\\frac\\pi{10}$",
+   "$\\frac{9\\pi}{10}$"
+  ],
+  "answer": 1,
+  "solution": "$\\cot^{-1}x=\\frac\\pi2-\\frac\\pi{10}$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "The greatest value of $\\sin^{-1}x+\\cos^{-1}x+\\tan^{-1}x$ is",
+  "options": [
+   "$\\frac\\pi2$",
+   "$\\pi$",
+   "$\\frac{3\\pi}{4}$",
+   "$\\frac{5\\pi}{4}$"
+  ],
+  "answer": 2,
+  "solution": "The sum is $\\frac\\pi2+\\tan^{-1}x$ with $|x|\\le1$; the largest value is at $x=1$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "The range of $\\sin^{-1}x+2\\cos^{-1}x$ is",
+  "options": [
+   "$\\left[0,\\frac{3\\pi}{2}\\right]$",
+   "$\\left[\\frac\\pi2,\\frac{3\\pi}{2}\\right]$",
+   "$[0,\\pi]$",
+   "$\\left[\\frac\\pi2,\\pi\\right]$"
+  ],
+  "answer": 1,
+  "solution": "$\\sin^{-1}x+2\\cos^{-1}x=\\frac\\pi2+\\cos^{-1}x$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "The solution of $\\sin^{-1}x=\\cos^{-1}x$ is",
+  "options": [
+   "$1$",
+   "$\\frac{\\sqrt3}{2}$",
+   "$\\frac{1}{\\sqrt2}$",
+   "$-\\frac1{\\sqrt2}$"
+  ],
+  "answer": 2,
+  "solution": "Each equals $\\frac\\pi4$.",
+  "topic": "Equations"
+ },
+ {
+  "prompt": "The solution of $\\tan^{-1}x+2\\cot^{-1}x=\\dfrac{2\\pi}{3}$ is",
+  "options": [
+   "$1$",
+   "$\\sqrt3$",
+   "$\\frac1{\\sqrt3}$",
+   "$-\\sqrt3$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac\\pi2+\\cot^{-1}x=\\frac{2\\pi}{3}\\Rightarrow\\cot^{-1}x=\\frac\\pi6$.",
+  "topic": "Equations"
+ },
+ {
+  "prompt": "The solutions of $\\cos(\\tan^{-1}x)=\\sin\\left(\\cot^{-1}\\dfrac34\\right)$ are",
+  "options": [
+   "$\\pm\\frac43$",
+   "$\\frac34$ only",
+   "$\\pm\\frac34$",
+   "$\\pm\\frac35$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{1}{\\sqrt{1+x^2}}=\\frac45\\Rightarrow1+x^2=\\frac{25}{16}$.",
+  "topic": "Equations"
+ },
+ {
+  "prompt": "$\\cos^{-1}\\left(\\cos\\dfrac{4\\pi}{3}\\right)$ equals",
+  "options": [
+   "$-\\frac{2\\pi}{3}$",
+   "$\\frac\\pi3$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac{4\\pi}{3}$"
+  ],
+  "answer": 2,
+  "solution": "$\\cos\\frac{4\\pi}{3}=\\cos\\left(2\\pi-\\frac{4\\pi}{3}\\right)$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "$\\tan^{-1}\\sqrt3-\\sec^{-1}(-2)$ equals",
+  "options": [
+   "$\\frac\\pi3$",
+   "$\\pi$",
+   "$-\\frac\\pi3$",
+   "$-\\pi$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac\\pi3-\\left(\\pi-\\frac\\pi3\\right)$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "$\\cos^{-1}\\dfrac12+2\\sin^{-1}\\dfrac12$ equals",
+  "options": [
+   "$\\frac{5\\pi}{6}$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac\\pi2$",
+   "$\\pi$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac\\pi3+2\\cdot\\frac\\pi6$.",
+  "topic": "Principal values"
+ },
+ {
+  "prompt": "$\\tan^{-1}\\left(2\\cos\\left(2\\sin^{-1}\\dfrac12\\right)\\right)$ equals",
+  "options": [
+   "$0$",
+   "$\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi4$"
+  ],
+  "answer": 3,
+  "solution": "$2\\sin^{-1}\\frac12=\\frac\\pi3$, $2\\cos\\frac\\pi3=1$, $\\tan^{-1}1=\\frac\\pi4$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "$\\sin(\\tan^{-1}x)$ equals",
+  "options": [
+   "$\\frac{1}{\\sqrt{1+x^2}}$",
+   "$\\frac{x}{\\sqrt{1-x^2}}$",
+   "$\\sqrt{1+x^2}$",
+   "$\\frac{x}{\\sqrt{1+x^2}}$"
+  ],
+  "answer": 3,
+  "solution": "$\\tan\\theta=x\\Rightarrow\\sin\\theta=\\frac{x}{\\sqrt{1+x^2}}$.",
+  "topic": "Compositions"
+ },
+ {
+  "prompt": "If $\\cos^{-1}x=\\alpha$, then $\\cos^{-1}(-x)$ equals",
+  "options": [
+   "$\\frac\\pi2-\\alpha$",
+   "$-\\alpha$",
+   "$\\pi-\\alpha$",
+   "$\\pi+\\alpha$"
+  ],
+  "answer": 2,
+  "solution": "$\\cos^{-1}(-x)=\\pi-\\cos^{-1}x$.",
+  "topic": "Identities"
+ },
+ {
+  "prompt": "$\\cos^{-1}\\left(\\cos\\left(-\\dfrac{7\\pi}{6}\\right)\\right)$ equals",
+  "options": [
+   "$-\\frac{7\\pi}{6}$",
+   "$\\frac\\pi6$",
+   "$\\frac{7\\pi}{6}$",
+   "$\\frac{5\\pi}{6}$"
+  ],
+  "answer": 3,
+  "solution": "$\\cos\\left(-\\frac{7\\pi}{6}\\right)=\\cos\\frac{7\\pi}{6}=\\cos\\frac{5\\pi}{6}$.",
+  "topic": "Principal branch"
+ },
+ {
+  "prompt": "The domain of $\\sin^{-1}x+\\tan^{-1}x$ is",
+  "options": [
+   "$[-1,1]$",
+   "$[0,1]$",
+   "$\\mathbb{R}$",
+   "$(-1,1)$"
+  ],
+  "answer": 0,
+  "solution": "$\\tan^{-1}$ needs no restriction; $\\sin^{-1}$ needs $|x|\\le1$.",
+  "topic": "Domains and ranges"
+ },
+ {
+  "prompt": "Assertion (A): $\\sin^{-1}\\left(\\sin\\frac{2\\pi}{3}\\right)=\\frac{2\\pi}{3}$.\nReason (R): $\\sin^{-1}(\\sin\\theta)=\\theta$ only for $-\\frac\\pi2\\le\\theta\\le\\frac\\pi2$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The value is $\\frac\\pi3$, so A is false. R is true.",
+  "topic": "Principal branch",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The domain of $\\cos^{-1}x$ is $[-1,1]$.\nReason (R): $\\cos x$ takes values only in $[-1,1]$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "The domain of the inverse is the range of the function.",
+  "topic": "Domains and ranges",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\tan^{-1}x$ is defined for every real $x$.\nReason (R): On $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$, $\\tan x$ takes every real value.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "R gives the range of the restricted function, which is the domain of the inverse.",
+  "topic": "Domains and ranges",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\cos^{-1}\\left(-\\frac12\\right)=-\\frac\\pi3$.\nReason (R): The principal value branch of $\\cos^{-1}$ is $[0,\\pi]$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$-\\frac\\pi3\\notin[0,\\pi]$; the value is $\\frac{2\\pi}{3}$.",
+  "topic": "Principal values",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\sin^{-1}\\frac13+\\cos^{-1}\\frac13=\\frac\\pi2$.\nReason (R): $\\sin^{-1}x+\\cos^{-1}x=\\frac\\pi2$ for $|x|\\le1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A is the case $x=\\frac13$ of R.",
+  "topic": "Identities",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\tan^{-1}2+\\tan^{-1}3=\\frac{3\\pi}{4}$.\nReason (R): $\\tan^{-1}x+\\tan^{-1}y=\\tan^{-1}\\frac{x+y}{1-xy}$ for $xy<1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Here $xy=6>1$, so the sum is $\\pi+\\tan^{-1}(-1)=\\frac{3\\pi}{4}$. R is true but does not apply.",
+  "topic": "Identities",
+  "assertion": true
+ }
+]

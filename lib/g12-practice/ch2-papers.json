@@ -1,0 +1,2523 @@
+{
+ "g12-ch2-mcq-20-01": [
+  {
+   "q": "$\\sin^{-1}(-1)$ equals",
+   "a": "(C) $-\\frac\\pi2$",
+   "s": "$\\sin\\left(-\\frac\\pi2\\right)=-1$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac{3\\pi}{2}$",
+    "$-\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}0+\\tan^{-1}1$ equals",
+   "a": "(A) $\\frac{3\\pi}{4}$",
+   "s": "$\\frac\\pi2+\\frac\\pi4$.",
+   "opts": [
+    "$\\frac{3\\pi}{4}$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sec^{-1}(-\\sqrt2)$ equals",
+   "a": "(D) $\\frac{3\\pi}{4}$",
+   "s": "$\\pi-\\frac\\pi4$.",
+   "opts": [
+    "$-\\frac\\pi4$",
+    "$\\frac\\pi4$",
+    "$\\frac{5\\pi}{4}$",
+    "$\\frac{3\\pi}{4}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $\\cot^{-1}x$ is",
+   "a": "(D) $(0,\\pi)$",
+   "s": "Principal value branch of $\\cot^{-1}$.",
+   "opts": [
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+    "$[0,\\pi]$",
+    "$(0,\\pi)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $\\operatorname{cosec}^{-1}x$ is",
+   "a": "(A) $\\left[-\\frac\\pi2,\\frac\\pi2\\right]-\\{0\\}$",
+   "s": "$\\operatorname{cosec}0$ is undefined.",
+   "opts": [
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]-\\{0\\}$",
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+    "$\\mathbb{R}-(-1,1)$",
+    "$[0,\\pi]-\\left\\{\\frac\\pi2\\right\\}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\cos^{-1}(x^2)$ is",
+   "a": "(A) $[-1,1]$",
+   "s": "$0\\le x^2\\le1$.",
+   "opts": [
+    "$[-1,1]$",
+    "$\\mathbb{R}$",
+    "$(-1,1)$",
+    "$[0,1]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\sin^{-1}\\dfrac{x-1}{2}$ is",
+   "a": "(D) $[-1,3]$",
+   "s": "$-2\\le x-1\\le2$.",
+   "opts": [
+    "$[1,3]$",
+    "$[0,2]$",
+    "$[-1,1]$",
+    "$[-1,3]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\left(\\tan\\dfrac{2\\pi}{3}\\right)$ equals",
+   "a": "(B) $-\\frac\\pi3$",
+   "s": "$\\tan\\frac{2\\pi}{3}=\\tan\\left(-\\frac\\pi3\\right)$.",
+   "opts": [
+    "$-\\frac{2\\pi}{3}$",
+    "$-\\frac\\pi3$",
+    "$\\frac\\pi3$",
+    "$\\frac{2\\pi}{3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\sin\\dfrac{5\\pi}{6}\\right)$ equals",
+   "a": "(A) $\\frac\\pi6$",
+   "s": "$\\sin\\frac{5\\pi}{6}=\\sin\\frac\\pi6$.",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac{7\\pi}{6}$",
+    "$\\frac{5\\pi}{6}$",
+    "$-\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos\\left(\\tan^{-1}\\dfrac34\\right)$ equals",
+   "a": "(C) $\\frac45$",
+   "s": "$\\tan\\theta=\\frac34\\Rightarrow\\cos\\theta=\\frac45$.",
+   "opts": [
+    "$\\frac35$",
+    "$\\frac54$",
+    "$\\frac45$",
+    "$\\frac34$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin(\\sec^{-1}2)$ equals",
+   "a": "(D) $\\frac{\\sqrt3}{2}$",
+   "s": "$\\sec^{-1}2=\\frac\\pi3$.",
+   "opts": [
+    "$\\sqrt3$",
+    "$\\frac12$",
+    "$\\frac{1}{\\sqrt2}$",
+    "$\\frac{\\sqrt3}{2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cot(\\tan^{-1}a+\\cot^{-1}a)$ equals",
+   "a": "(B) $0$",
+   "s": "$\\tan^{-1}a+\\cot^{-1}a=\\frac\\pi2$.",
+   "opts": [
+    "$a$",
+    "$0$",
+    "$1$",
+    "undefined"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$2\\tan^{-1}\\dfrac12$ equals",
+   "a": "(C) $\\tan^{-1}\\frac43$",
+   "s": "$\\frac{1}{1-\\frac14}=\\frac43$.",
+   "opts": [
+    "$\\tan^{-1}\\frac23$",
+    "$\\tan^{-1}1$",
+    "$\\tan^{-1}\\frac43$",
+    "$\\tan^{-1}\\frac34$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\dfrac45$ equals",
+   "a": "(C) $\\tan^{-1}\\frac34$",
+   "s": "$\\cos\\theta=\\frac45\\Rightarrow\\tan\\theta=\\frac34$.",
+   "opts": [
+    "$\\sin^{-1}\\frac45$",
+    "$\\tan^{-1}\\frac43$",
+    "$\\tan^{-1}\\frac34$",
+    "$\\cot^{-1}\\frac34$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\cos\\dfrac{2\\pi}{3}\\right)$ equals",
+   "a": "(A) $-\\frac\\pi6$",
+   "s": "$\\cos\\frac{2\\pi}{3}=-\\frac12$.",
+   "opts": [
+    "$-\\frac\\pi6$",
+    "$\\frac\\pi6$",
+    "$\\frac{2\\pi}{3}$",
+    "$-\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "If $4\\sin^{-1}x+\\cos^{-1}x=\\pi$, then $x$ equals",
+   "a": "(C) $\\frac12$",
+   "s": "$3\\sin^{-1}x+\\frac\\pi2=\\pi\\Rightarrow\\sin^{-1}x=\\frac\\pi6$.",
+   "opts": [
+    "$\\frac1{\\sqrt2}$",
+    "$\\frac{\\sqrt3}{2}$",
+    "$\\frac12$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(\\cos\\dfrac{2\\pi}{3}\\right)+\\sin^{-1}\\left(\\sin\\dfrac{2\\pi}{3}\\right)$ equals",
+   "a": "(B) $\\pi$",
+   "s": "$\\frac{2\\pi}{3}+\\frac\\pi3$.",
+   "opts": [
+    "$\\frac{4\\pi}{3}$",
+    "$\\pi$",
+    "$\\frac{2\\pi}{3}$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\sqrt3-\\cot^{-1}(-\\sqrt3)$ equals",
+   "a": "(D) $-\\frac\\pi2$",
+   "s": "$\\frac\\pi3-\\frac{5\\pi}{6}$.",
+   "opts": [
+    "$0$",
+    "$2\\sqrt3$",
+    "$\\pi$",
+    "$-\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\sec^{-1}\\frac12$ is not defined. Reason: The domain of $\\sec^{-1}x$ is $\\mathbb{R}-(-1,1)$.",
+   "a": "(A)",
+   "s": "$\\frac12\\in(-1,1)$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\cos^{-1}\\left(\\cos\\frac{4\\pi}{3}\\right)=\\frac{4\\pi}{3}$. Reason: $\\cos^{-1}(\\cos\\theta)=\\theta$ for $\\theta\\in[0,\\pi]$.",
+   "a": "(D)",
+   "s": "The value is $\\frac{2\\pi}{3}$; R is true.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch2-board-01": [
+  {
+   "q": "$\\sin^{-1}\\left(-\\dfrac{\\sqrt3}{2}\\right)$ equals",
+   "a": "(D) $-\\frac\\pi3$",
+   "s": "$-\\sin^{-1}\\frac{\\sqrt3}{2}$. [1]",
+   "opts": [
+    "$\\frac{2\\pi}{3}$",
+    "$\\frac{4\\pi}{3}$",
+    "$\\frac\\pi3$",
+    "$-\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}(-1)$ equals",
+   "a": "(A) $\\pi$",
+   "s": "$\\cos\\pi=-1$. [1]",
+   "opts": [
+    "$\\pi$",
+    "$0$",
+    "$\\frac\\pi2$",
+    "$-\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\dfrac1{\\sqrt3}$ equals",
+   "a": "(A) $\\frac\\pi6$",
+   "s": "$\\tan\\frac\\pi6=\\frac1{\\sqrt3}$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac\\pi4$",
+    "$\\frac{7\\pi}{6}$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The principal value branch of $\\tan^{-1}$ is",
+   "a": "(B) $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+   "s": "Standard branch. [1]",
+   "opts": [
+    "$(0,\\pi)$",
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+    "$[0,\\pi]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\sin^{-1}(2x)$ is",
+   "a": "(D) $\\left[-\\frac12,\\frac12\\right]$",
+   "s": "$-1\\le2x\\le1$. [1]",
+   "opts": [
+    "$\\left[0,\\frac12\\right]$",
+    "$[-2,2]$",
+    "$[-1,1]$",
+    "$\\left[-\\frac12,\\frac12\\right]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{cosec}^{-1}\\dfrac{2}{\\sqrt3}$ equals",
+   "a": "(D) $\\frac\\pi3$",
+   "s": "$\\sin\\frac\\pi3=\\frac{\\sqrt3}{2}$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac{2\\pi}{3}$",
+    "$-\\frac\\pi3$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\sin\\dfrac{4\\pi}{5}\\right)$ equals",
+   "a": "(B) $\\frac\\pi5$",
+   "s": "$\\sin\\frac{4\\pi}{5}=\\sin\\frac\\pi5$. [1]",
+   "opts": [
+    "$\\frac{6\\pi}{5}$",
+    "$\\frac\\pi5$",
+    "$\\frac{4\\pi}{5}$",
+    "$-\\frac\\pi5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(\\cos\\dfrac{7\\pi}{4}\\right)$ equals",
+   "a": "(B) $\\frac\\pi4$",
+   "s": "$\\cos\\frac{7\\pi}{4}=\\cos\\frac\\pi4$. [1]",
+   "opts": [
+    "$\\frac{3\\pi}{4}$",
+    "$\\frac\\pi4$",
+    "$\\frac{7\\pi}{4}$",
+    "$-\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan\\left(\\sin^{-1}\\dfrac12\\right)$ equals",
+   "a": "(B) $\\frac1{\\sqrt3}$",
+   "s": "$\\tan\\frac\\pi6$. [1]",
+   "opts": [
+    "$\\sqrt3$",
+    "$\\frac1{\\sqrt3}$",
+    "$\\frac12$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sec^{-1}(-2)+\\operatorname{cosec}^{-1}2$ equals",
+   "a": "(B) $\\frac{5\\pi}{6}$",
+   "s": "$\\frac{2\\pi}{3}+\\frac\\pi6$. [1]",
+   "opts": [
+    "$\\pi$",
+    "$\\frac{5\\pi}{6}$",
+    "$\\frac\\pi2$",
+    "$\\frac{2\\pi}{3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cot^{-1}1+\\tan^{-1}(-1)$ equals",
+   "a": "(A) $0$",
+   "s": "$\\frac\\pi4-\\frac\\pi4$. [1]",
+   "opts": [
+    "$0$",
+    "$-\\frac\\pi2$",
+    "$\\pi$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $3\\sin^{-1}x$ is",
+   "a": "(B) $\\left[-\\frac{3\\pi}{2},\\frac{3\\pi}{2}\\right]$",
+   "s": "Multiply $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$ by $3$. [1]",
+   "opts": [
+    "$[0,3\\pi]$",
+    "$\\left[-\\frac{3\\pi}{2},\\frac{3\\pi}{2}\\right]$",
+    "$[-3,3]$",
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(\\sin\\dfrac\\pi6\\right)$ equals",
+   "a": "(C) $\\frac\\pi3$",
+   "s": "$\\sin\\frac\\pi6=\\frac12$. [1]",
+   "opts": [
+    "$\\frac{5\\pi}{6}$",
+    "$\\frac\\pi6$",
+    "$\\frac\\pi3$",
+    "$\\frac{2\\pi}{3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin\\left(\\cos^{-1}\\dfrac35\\right)$ equals",
+   "a": "(B) $\\frac45$",
+   "s": "$\\theta\\in\\left[0,\\frac\\pi2\\right]$, $\\sin\\theta=\\frac45$. [1]",
+   "opts": [
+    "$-\\frac45$",
+    "$\\frac45$",
+    "$\\frac35$",
+    "$\\frac34$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The domain of $\\operatorname{cosec}^{-1}x$ is $\\mathbb{R}-(-1,1)$. Reason: $\\operatorname{cosec}x$ takes no value in $(-1,1)$.",
+   "a": "(A)",
+   "s": "The domain of the inverse is the range of the function. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\tan^{-1}\\left(\\tan\\frac{3\\pi}{4}\\right)=\\frac{3\\pi}{4}$. Reason: The principal value branch of $\\tan^{-1}$ is $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$.",
+   "a": "(D)",
+   "s": "The value is $-\\frac\\pi4$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\sin^{-1}\\left(-\\dfrac12\\right)+\\cos^{-1}\\left(-\\dfrac{\\sqrt3}{2}\\right)$.",
+   "a": "$\\frac{2\\pi}{3}$",
+   "s": "$\\sin^{-1}\\left(-\\frac12\\right)=-\\frac\\pi6$ [½]. $\\cos^{-1}\\left(-\\frac{\\sqrt3}{2}\\right)=\\pi-\\frac\\pi6=\\frac{5\\pi}{6}$ [1]. Sum $\\frac{4\\pi}{6}=\\frac{2\\pi}{3}$ [½].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the value of $\\cot^{-1}\\left(-\\dfrac1{\\sqrt3}\\right)-\\sec^{-1}2$.",
+    "a": "$\\frac\\pi3$",
+    "s": "$\\cot^{-1}\\left(-\\frac1{\\sqrt3}\\right)=\\frac{2\\pi}{3}$ [1]. $\\sec^{-1}2=\\frac\\pi3$; difference $\\frac\\pi3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $\\cos^{-1}(3x-1)$.",
+   "a": "$\\left[0,\\frac23\\right]$",
+   "s": "$-1\\le3x-1\\le1$ [1]. $0\\le x\\le\\frac23$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\sin^{-1}\\left(\\sin\\dfrac{3\\pi}{4}\\right)+\\cos^{-1}(\\cos\\pi)+\\tan^{-1}1$.",
+   "a": "$\\frac{3\\pi}{2}$",
+   "s": "$\\sin^{-1}\\left(\\sin\\frac{3\\pi}{4}\\right)=\\frac\\pi4$ [½]. $\\cos^{-1}(\\cos\\pi)=\\pi$ [½]. $\\tan^{-1}1=\\frac\\pi4$; sum $\\frac{3\\pi}{2}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Evaluate $\\cos\\left(\\sin^{-1}\\dfrac12+\\cos^{-1}\\dfrac12\\right)$.",
+    "a": "$0$",
+    "s": "$\\sin^{-1}\\frac12=\\frac\\pi6$, $\\cos^{-1}\\frac12=\\frac\\pi3$ [1]. $\\cos\\frac\\pi2=0$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $f(x)=\\sin^{-1}(x-1)+\\cos^{-1}(2x)$.",
+   "a": "$\\left[0,\\frac12\\right]$",
+   "s": "$-1\\le x-1\\le1\\Rightarrow0\\le x\\le2$ [1]. $-1\\le2x\\le1\\Rightarrow-\\frac12\\le x\\le\\frac12$ [1]. Common part $\\left[0,\\frac12\\right]$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find the domain of $\\sin^{-1}(x^2-1)$.",
+    "a": "$[-\\sqrt2,\\sqrt2]$",
+    "s": "$-1\\le x^2-1\\le1$ [1]. $0\\le x^2\\le2$ [1]. $|x|\\le\\sqrt2$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\tan^{-1}\\left(\\tan\\dfrac{5\\pi}{6}\\right)+\\cos^{-1}\\left(\\cos\\dfrac{13\\pi}{6}\\right)$.",
+   "a": "$0$",
+   "s": "$\\tan\\frac{5\\pi}{6}=\\tan\\left(-\\frac\\pi6\\right)$, so the first term is $-\\frac\\pi6$ [1]. $\\cos\\frac{13\\pi}{6}=\\cos\\frac\\pi6$, so the second is $\\frac\\pi6$ [1]. Sum $0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Evaluate $\\sin\\left(2\\cos^{-1}\\left(-\\dfrac35\\right)\\right)$.",
+    "a": "$-\\frac{24}{25}$",
+    "s": "$\\theta=\\cos^{-1}\\left(-\\frac35\\right)\\in\\left(\\frac\\pi2,\\pi\\right)$, $\\sin\\theta=\\frac45$ [1]. $\\sin2\\theta=2\\sin\\theta\\cos\\theta$ [1] $=2\\cdot\\frac45\\cdot\\left(-\\frac35\\right)=-\\frac{24}{25}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\sin^{-1}x$. State the range of $y$ and write the principal values for $x=-1,\\ 0,\\ \\frac12,\\ 1$.",
+   "a": "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$; $-\\frac\\pi2,\\ 0,\\ \\frac\\pi6,\\ \\frac\\pi2$.",
+   "s": "Range $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$ [1]. Values $-\\frac\\pi2,0,\\frac\\pi6,\\frac\\pi2$ [2].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find (i) $\\cos^{-1}\\left(\\cos\\dfrac{2\\pi}{3}\\right)$ (ii) $\\sin^{-1}\\left(\\sin\\dfrac{2\\pi}{3}\\right)$ (iii) $\\tan^{-1}\\left(\\tan\\dfrac{2\\pi}{3}\\right)$ (iv) $\\sec^{-1}\\left(\\sec\\dfrac{2\\pi}{3}\\right)$ (v) $\\operatorname{cosec}^{-1}\\left(\\operatorname{cosec}\\dfrac{2\\pi}{3}\\right)$, and their sum.",
+   "a": "$\\frac{2\\pi}{3},\\ \\frac\\pi3,\\ -\\frac\\pi3,\\ \\frac{2\\pi}{3},\\ \\frac\\pi3$; sum $\\frac{5\\pi}{3}$.",
+   "s": "(i) $\\frac{2\\pi}{3}\\in[0,\\pi]$ [1]. (ii) $\\sin\\frac{2\\pi}{3}=\\sin\\frac\\pi3$ [1]. (iii) $\\tan\\frac{2\\pi}{3}=\\tan\\left(-\\frac\\pi3\\right)$ [1]. (iv) $\\frac{2\\pi}{3}$ is in the branch of $\\sec^{-1}$; (v) $\\operatorname{cosec}\\frac{2\\pi}{3}=\\frac{2}{\\sqrt3}$, giving $\\frac\\pi3$ [1]. Sum $\\frac{5\\pi}{3}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$f(x)=2\\sin^{-1}(2x-1)$. Find the domain and range of $f$, and $f(0)$, $f\\left(\\frac12\\right)$, $f(1)$.",
+    "a": "Domain $[0,1]$, range $[-\\pi,\\pi]$; $-\\pi,\\ 0,\\ \\pi$.",
+    "s": "$-1\\le2x-1\\le1\\Rightarrow0\\le x\\le1$ [2]. Range $2\\left[-\\frac\\pi2,\\frac\\pi2\\right]=[-\\pi,\\pi]$ [1]. $f(0)=2\\left(-\\frac\\pi2\\right)$, $f\\left(\\frac12\\right)=0$, $f(1)=\\pi$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A flagpole $BP$ of height $30$ m stands at $B$. Riya stands at $A$, $30\\sqrt3$ m from $B$, and Raj stands at $C$ on the other side, $30$ m from $B$. (i) Find the angle of elevation $\\alpha$ of $P$ from $A$ as a principal value. [1] (ii) Find the angle of elevation $\\beta$ from $C$. [1] (iii) Find $\\alpha+\\beta$. [2] \\textbf{OR} (iii) Raj walks to $D$ with $BD=10\\sqrt3$ m. Find the new angle of elevation. [2]",
+   "a": "(i) $\\frac\\pi6$; (ii) $\\frac\\pi4$; (iii) $\\frac{5\\pi}{12}$; OR $\\frac\\pi3$.",
+   "s": "(i) $\\alpha=\\tan^{-1}\\frac{30}{30\\sqrt3}=\\tan^{-1}\\frac1{\\sqrt3}=\\frac\\pi6$ [1]. (ii) $\\beta=\\tan^{-1}1=\\frac\\pi4$ [1]. (iii) $\\frac\\pi6+\\frac\\pi4$ [1] $=\\frac{5\\pi}{12}$ [1]. OR $\\tan^{-1}\\frac{30}{10\\sqrt3}=\\tan^{-1}\\sqrt3$ [1] $=\\frac\\pi3$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch2-board-02": [
+  {
+   "q": "$\\cos^{-1}\\dfrac{\\sqrt3}{2}$ equals",
+   "a": "(A) $\\frac\\pi6$",
+   "s": "$\\cos\\frac\\pi6=\\frac{\\sqrt3}{2}$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac\\pi3$",
+    "$-\\frac\\pi6$",
+    "$\\frac{5\\pi}{6}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}1+\\cos^{-1}(-1)$ equals",
+   "a": "(C) $\\frac{3\\pi}{2}$",
+   "s": "$\\frac\\pi2+\\pi$. [1]",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac{3\\pi}{2}$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sec^{-1}\\sqrt2$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$\\cos\\frac\\pi4=\\frac1{\\sqrt2}$. [1]",
+   "opts": [
+    "$\\frac\\pi3$",
+    "$\\frac{3\\pi}{4}$",
+    "$\\frac\\pi4$",
+    "$-\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The principal value branch of $\\sec^{-1}$ is",
+   "a": "(D) $[0,\\pi]-\\left\\{\\frac\\pi2\\right\\}$",
+   "s": "Standard branch. [1]",
+   "opts": [
+    "$(0,\\pi)$",
+    "$[0,\\pi]$",
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]-\\{0\\}$",
+    "$[0,\\pi]-\\left\\{\\frac\\pi2\\right\\}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\sec^{-1}(2x)$ is",
+   "a": "(B) $\\left(-\\infty,-\\frac12\\right]\\cup\\left[\\frac12,\\infty\\right)$",
+   "s": "$|2x|\\ge1$. [1]",
+   "opts": [
+    "$\\left[\\frac12,\\infty\\right)$",
+    "$\\left(-\\infty,-\\frac12\\right]\\cup\\left[\\frac12,\\infty\\right)$",
+    "$\\left[-\\frac12,\\frac12\\right]$",
+    "$\\mathbb{R}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cot^{-1}\\sqrt3$ equals",
+   "a": "(A) $\\frac\\pi6$",
+   "s": "$\\cot\\frac\\pi6=\\sqrt3$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$-\\frac\\pi6$",
+    "$\\frac{5\\pi}{6}$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(\\cos\\dfrac{3\\pi}{2}\\right)$ equals",
+   "a": "(D) $\\frac\\pi2$",
+   "s": "$\\cos\\frac{3\\pi}{2}=0$. [1]",
+   "opts": [
+    "$-\\frac\\pi2$",
+    "$\\frac{3\\pi}{2}$",
+    "$0$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\sin\\dfrac{7\\pi}{6}\\right)$ equals",
+   "a": "(D) $-\\frac\\pi6$",
+   "s": "$\\sin\\frac{7\\pi}{6}=-\\frac12$. [1]",
+   "opts": [
+    "$\\frac{5\\pi}{6}$",
+    "$\\frac\\pi6$",
+    "$\\frac{7\\pi}{6}$",
+    "$-\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cot\\left(\\sin^{-1}\\dfrac35\\right)$ equals",
+   "a": "(D) $\\frac43$",
+   "s": "$\\sin\\theta=\\frac35$, $\\cos\\theta=\\frac45$. [1]",
+   "opts": [
+    "$\\frac53$",
+    "$\\frac34$",
+    "$\\frac45$",
+    "$\\frac43$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}1+\\cot^{-1}1$ equals",
+   "a": "(A) $\\frac\\pi2$",
+   "s": "$\\frac\\pi4+\\frac\\pi4$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$1$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{cosec}^{-1}(-2)$ equals",
+   "a": "(D) $-\\frac\\pi6$",
+   "s": "$-\\operatorname{cosec}^{-1}2$. [1]",
+   "opts": [
+    "$\\frac{7\\pi}{6}$",
+    "$\\frac\\pi6$",
+    "$\\frac{5\\pi}{6}$",
+    "$-\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $\\cos^{-1}x+\\dfrac\\pi2$ is",
+   "a": "(B) $\\left[\\frac\\pi2,\\frac{3\\pi}{2}\\right]$",
+   "s": "Shift $[0,\\pi]$ by $\\frac\\pi2$. [1]",
+   "opts": [
+    "$\\left[\\frac\\pi2,\\pi\\right]$",
+    "$\\left[\\frac\\pi2,\\frac{3\\pi}{2}\\right]$",
+    "$[0,\\pi]$",
+    "$\\left[0,\\frac{3\\pi}{2}\\right]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\cos\\dfrac\\pi3\\right)$ equals",
+   "a": "(A) $\\frac\\pi6$",
+   "s": "$\\cos\\frac\\pi3=\\frac12$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac\\pi3$",
+    "$\\frac{2\\pi}{3}$",
+    "$-\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which of these is not defined?",
+   "a": "(C) $\\sin^{-1}1.5$",
+   "s": "$1.5\\notin[-1,1]$. [1]",
+   "opts": [
+    "$\\sec^{-1}2$",
+    "$\\tan^{-1}5$",
+    "$\\sin^{-1}1.5$",
+    "$\\cos^{-1}(-0.5)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\cos^{-1}\\left(\\cos\\left(-\\frac\\pi4\\right)\\right)=\\frac\\pi4$. Reason: $\\cos$ is even and $\\frac\\pi4\\in[0,\\pi]$.",
+   "a": "(A)",
+   "s": "R gives both steps. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\sin^{-1}(\\sin\\pi)=\\pi$. Reason: $\\sin\\pi=0$.",
+   "a": "(D)",
+   "s": "The value is $\\sin^{-1}0=0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\cos^{-1}\\left(\\cos\\left(-\\dfrac\\pi3\\right)\\right)+\\sin^{-1}\\left(\\sin\\left(-\\dfrac\\pi3\\right)\\right)$.",
+   "a": "$0$",
+   "s": "$\\cos\\left(-\\frac\\pi3\\right)=\\cos\\frac\\pi3$, first term $\\frac\\pi3$ [1]. Second term $-\\frac\\pi3$; sum $0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the principal value of $\\sec^{-1}\\left(-\\dfrac{2}{\\sqrt3}\\right)$.",
+    "a": "$\\frac{5\\pi}{6}$",
+    "s": "$\\pi-\\sec^{-1}\\frac{2}{\\sqrt3}$ [1] $=\\pi-\\frac\\pi6$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $\\cos^{-1}(1-2x)$.",
+   "a": "$[0,1]$",
+   "s": "$-1\\le1-2x\\le1$ [1]. $0\\le x\\le1$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\cos\\left(\\dfrac\\pi6+\\cos^{-1}\\dfrac12\\right)$.",
+   "a": "$0$",
+   "s": "$\\cos^{-1}\\frac12=\\frac\\pi3$ [1]. $\\cos\\frac\\pi2=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Evaluate $\\sin\\left(\\dfrac\\pi2-\\sin^{-1}\\left(-\\dfrac{\\sqrt3}{2}\\right)\\right)$.",
+    "a": "$\\frac12$",
+    "s": "$\\sin^{-1}\\left(-\\frac{\\sqrt3}{2}\\right)=-\\frac\\pi3$ [1]. $\\sin\\frac{5\\pi}{6}=\\frac12$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\cos^{-1}\\left(\\cos\\dfrac{7\\pi}{6}\\right)+\\sin^{-1}\\left(\\sin\\dfrac{7\\pi}{6}\\right)$.",
+   "a": "$\\frac{2\\pi}{3}$",
+   "s": "$\\cos\\frac{7\\pi}{6}=\\cos\\frac{5\\pi}{6}$, first term $\\frac{5\\pi}{6}$ [1]. $\\sin\\frac{7\\pi}{6}=-\\frac12$, second term $-\\frac\\pi6$ [1]. Sum $\\frac{2\\pi}{3}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find $\\tan^{-1}\\left(\\tan\\dfrac{9\\pi}{8}\\right)$.",
+    "a": "$\\frac\\pi8$",
+    "s": "$\\tan$ has period $\\pi$ [1]: $\\tan\\frac{9\\pi}{8}=\\tan\\frac\\pi8$ [1]; $\\frac\\pi8$ is in the branch [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $f(x)=\\sin^{-1}\\dfrac{x-3}{2}+\\cos^{-1}\\dfrac x4$.",
+   "a": "$[1,4]$",
+   "s": "$-1\\le\\frac{x-3}{2}\\le1\\Rightarrow1\\le x\\le5$ [1]. $-1\\le\\frac x4\\le1\\Rightarrow-4\\le x\\le4$ [1]. Common part $[1,4]$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find the range of $f(x)=\\sin^{-1}x+\\tan^{-1}x$.",
+    "a": "$\\left[-\\frac{3\\pi}{4},\\frac{3\\pi}{4}\\right]$",
+    "s": "The domain is $[-1,1]$ [1]. Both terms increase [1]. $f(-1)=-\\frac\\pi2-\\frac\\pi4$ and $f(1)=\\frac{3\\pi}{4}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "State the values of $x$ for which $\\sin^{-1}(\\sin x)=x$. Hence find $\\sin^{-1}(\\sin2)$.",
+   "a": "$-\\frac\\pi2\\le x\\le\\frac\\pi2$; $\\pi-2$.",
+   "s": "The identity holds exactly on the principal branch $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$ [1]. $2\\in\\left(\\frac\\pi2,\\pi\\right)$ and $\\sin2=\\sin(\\pi-2)$ [1]. $\\pi-2\\approx1.14$ lies in the branch [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\cos^{-1}(\\cos x)$. Find $f\\left(\\frac\\pi3\\right)$, $f(\\pi)$, $f\\left(\\frac{4\\pi}{3}\\right)$, $f(2\\pi)$, $f\\left(-\\frac\\pi3\\right)$, and write $f(x)$ on $[0,2\\pi]$.",
+   "a": "$\\frac\\pi3,\\ \\pi,\\ \\frac{2\\pi}{3},\\ 0,\\ \\frac\\pi3$; $f(x)=x$ on $[0,\\pi]$ and $2\\pi-x$ on $[\\pi,2\\pi]$.",
+   "s": "$f\\left(\\frac\\pi3\\right)=\\frac\\pi3$, $f(\\pi)=\\pi$ [1]. $\\cos\\frac{4\\pi}{3}=\\cos\\frac{2\\pi}{3}$ [1]. $f(2\\pi)=0$, $f\\left(-\\frac\\pi3\\right)=\\frac\\pi3$ [1]. For $\\pi\\le x\\le2\\pi$, $\\cos x=\\cos(2\\pi-x)$ with $2\\pi-x\\in[0,\\pi]$ [2].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find (i) $\\sin^{-1}\\left(\\sin\\dfrac{13\\pi}{7}\\right)$ (ii) $\\cos^{-1}\\left(\\cos\\dfrac{7\\pi}{4}\\right)$ (iii) $\\tan^{-1}\\left(\\tan\\dfrac{11\\pi}{6}\\right)$.",
+    "a": "$-\\frac\\pi7,\\ \\frac\\pi4,\\ -\\frac\\pi6$",
+    "s": "(i) $\\sin\\frac{13\\pi}{7}=\\sin\\left(-\\frac\\pi7\\right)$ [2]. (ii) $\\cos\\frac{7\\pi}{4}=\\cos\\frac\\pi4$ [1½]. (iii) $\\tan\\frac{11\\pi}{6}=\\tan\\left(-\\frac\\pi6\\right)$ [1½].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A $10$ m ladder leans against a vertical wall. Its foot is $5$ m from the wall. (i) Find the angle $\\theta$ with the ground as an inverse cosine value. [1] (ii) Find the angle with the wall. [1] (iii) The foot slides to $5\\sqrt2$ m from the wall. Find the new angle with the ground and the decrease. [2] \\textbf{OR} (iii) Find the height reached on the wall and write $\\theta$ as an inverse tangent. [2]",
+   "a": "(i) $\\cos^{-1}\\frac12=\\frac\\pi3$; (ii) $\\frac\\pi6$; (iii) $\\frac\\pi4$, decrease $\\frac\\pi{12}$; OR $5\\sqrt3$ m, $\\tan^{-1}\\sqrt3$.",
+   "s": "(i) $\\cos\\theta=\\frac{5}{10}$ [1]. (ii) $\\sin^{-1}\\frac12=\\frac\\pi6$ [1]. (iii) $\\cos^{-1}\\frac{5\\sqrt2}{10}=\\frac\\pi4$ [1]; $\\frac\\pi3-\\frac\\pi4=\\frac\\pi{12}$ [1]. OR $\\sqrt{100-25}=5\\sqrt3$ [1]; $\\theta=\\tan^{-1}\\frac{5\\sqrt3}{5}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch2-board-03": [
+  {
+   "q": "$\\operatorname{cosec}^{-1}1$ equals",
+   "a": "(D) $\\frac\\pi2$",
+   "s": "$\\operatorname{cosec}\\frac\\pi2=1$. [1]",
+   "opts": [
+    "$0$",
+    "$\\pi$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}0+\\cos^{-1}0+\\tan^{-1}0$ equals",
+   "a": "(A) $\\frac\\pi2$",
+   "s": "$0+\\frac\\pi2+0$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$0$",
+    "$\\frac{3\\pi}{2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(-\\dfrac1{\\sqrt2}\\right)$ equals",
+   "a": "(A) $\\frac{3\\pi}{4}$",
+   "s": "$\\pi-\\frac\\pi4$. [1]",
+   "opts": [
+    "$\\frac{3\\pi}{4}$",
+    "$\\frac{5\\pi}{4}$",
+    "$-\\frac\\pi4$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $\\sin^{-1}x$ is",
+   "a": "(B) $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+   "s": "Standard branch. [1]",
+   "opts": [
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+    "$[-1,1]$",
+    "$[0,\\pi]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\cos^{-1}(x-2)$ is",
+   "a": "(B) $[1,3]$",
+   "s": "$-1\\le x-2\\le1$. [1]",
+   "opts": [
+    "$[2,3]$",
+    "$[1,3]$",
+    "$[-1,1]$",
+    "$[0,2]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\left(-\\dfrac1{\\sqrt3}\\right)$ equals",
+   "a": "(D) $-\\frac\\pi6$",
+   "s": "$-\\tan^{-1}\\frac1{\\sqrt3}$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac{5\\pi}{6}$",
+    "$-\\frac\\pi3$",
+    "$-\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\left(\\tan\\dfrac{4\\pi}{3}\\right)$ equals",
+   "a": "(B) $\\frac\\pi3$",
+   "s": "$\\tan\\frac{4\\pi}{3}=\\tan\\frac\\pi3$. [1]",
+   "opts": [
+    "$-\\frac\\pi3$",
+    "$\\frac\\pi3$",
+    "$\\frac{4\\pi}{3}$",
+    "$\\frac{2\\pi}{3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\sin\\dfrac{3\\pi}{2}\\right)$ equals",
+   "a": "(D) $-\\frac\\pi2$",
+   "s": "$\\sin\\frac{3\\pi}{2}=-1$. [1]",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac{3\\pi}{2}$",
+    "$-\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos(\\sec^{-1}2)$ equals",
+   "a": "(C) $\\frac12$",
+   "s": "$\\sec^{-1}2=\\frac\\pi3$. [1]",
+   "opts": [
+    "$2$",
+    "$\\frac1{\\sqrt2}$",
+    "$\\frac12$",
+    "$\\frac{\\sqrt3}{2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\sin^{-1}\\left(\\sin\\left(-\\dfrac\\pi3\\right)\\right)+\\cos^{-1}\\left(\\cos\\left(-\\dfrac\\pi3\\right)\\right)$ equals",
+   "a": "(A) $0$",
+   "s": "$-\\frac\\pi3+\\frac\\pi3$. [1]",
+   "opts": [
+    "$0$",
+    "$\\frac{2\\pi}{3}$",
+    "$-\\frac{2\\pi}{3}$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan^{-1}\\dfrac1{\\sqrt3}+\\cot^{-1}\\dfrac1{\\sqrt3}$ equals",
+   "a": "(C) $\\frac\\pi2$",
+   "s": "$\\frac\\pi6+\\frac\\pi3$. [1]",
+   "opts": [
+    "$\\frac\\pi6$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The range of $\\tan^{-1}x+\\dfrac\\pi2$ is",
+   "a": "(A) $(0,\\pi)$",
+   "s": "Shift $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$. [1]",
+   "opts": [
+    "$(0,\\pi)$",
+    "$\\mathbb{R}$",
+    "$\\left(0,\\frac\\pi2\\right)$",
+    "$[0,\\pi]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\cos^{-1}\\left(\\sin\\left(-\\dfrac\\pi6\\right)\\right)$ equals",
+   "a": "(B) $\\frac{2\\pi}{3}$",
+   "s": "$\\sin\\left(-\\frac\\pi6\\right)=-\\frac12$. [1]",
+   "opts": [
+    "$-\\frac\\pi3$",
+    "$\\frac{2\\pi}{3}$",
+    "$\\frac\\pi3$",
+    "$\\frac{5\\pi}{6}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $\\operatorname{cosec}^{-1}(x+1)$ is",
+   "a": "(A) $(-\\infty,-2]\\cup[0,\\infty)$",
+   "s": "$|x+1|\\ge1$. [1]",
+   "opts": [
+    "$(-\\infty,-2]\\cup[0,\\infty)$",
+    "$(-2,0)$",
+    "$[-2,0]$",
+    "$[0,\\infty)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\cot^{-1}(-1)=\\frac{3\\pi}{4}$. Reason: $\\cot^{-1}(-x)=\\pi-\\cot^{-1}x$.",
+   "a": "(A)",
+   "s": "$\\pi-\\frac\\pi4$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The equation $\\sin^{-1}x=2$ has a real solution. Reason: The range of $\\sin^{-1}$ is $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$.",
+   "a": "(D)",
+   "s": "$2>\\frac\\pi2$, so A is false. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the principal value of $\\operatorname{cosec}^{-1}(-2)+\\sec^{-1}(-\\sqrt2)$.",
+   "a": "$\\frac{7\\pi}{12}$",
+   "s": "$\\operatorname{cosec}^{-1}(-2)=-\\frac\\pi6$ [½]. $\\sec^{-1}(-\\sqrt2)=\\frac{3\\pi}{4}$ [1]. Sum $\\frac{7\\pi}{12}$ [½].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Evaluate $\\cot^{-1}(-1)-\\tan^{-1}(-1)$.",
+    "a": "$\\pi$",
+    "s": "$\\frac{3\\pi}{4}$ [1] $+\\frac\\pi4$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $\\sec^{-1}(3x+1)$.",
+   "a": "$\\left(-\\infty,-\\frac23\\right]\\cup[0,\\infty)$",
+   "s": "$|3x+1|\\ge1$ [1]. $x\\ge0$ or $x\\le-\\frac23$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\cos\\left(2\\sin^{-1}\\dfrac12\\right)$.",
+   "a": "$\\frac12$",
+   "s": "$2\\sin^{-1}\\frac12=\\frac\\pi3$ [1]. $\\cos\\frac\\pi3=\\frac12$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Evaluate $\\tan\\left(\\cos^{-1}\\dfrac12-\\sin^{-1}\\dfrac12\\right)$.",
+    "a": "$\\frac1{\\sqrt3}$",
+    "s": "$\\frac\\pi3-\\frac\\pi6=\\frac\\pi6$ [1]. $\\tan\\frac\\pi6$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\sin^{-1}\\left(\\sin\\dfrac{3\\pi}{5}\\right)+\\cos^{-1}\\left(\\cos\\dfrac{6\\pi}{5}\\right)$.",
+   "a": "$\\frac{6\\pi}{5}$",
+   "s": "$\\sin\\frac{3\\pi}{5}=\\sin\\frac{2\\pi}{5}$, first term $\\frac{2\\pi}{5}$ [1]. $\\cos\\frac{6\\pi}{5}=\\cos\\frac{4\\pi}{5}$, second term $\\frac{4\\pi}{5}$ [1]. Sum $\\frac{6\\pi}{5}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find $\\tan^{-1}\\left(\\tan\\left(-\\dfrac{7\\pi}{6}\\right)\\right)$.",
+    "a": "$-\\frac\\pi6$",
+    "s": "$\\tan$ has period $\\pi$ [1]: $\\tan\\left(-\\frac{7\\pi}{6}\\right)=\\tan\\left(-\\frac\\pi6\\right)$ [1]; in the branch [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the domain of $\\cos^{-1}(x^2-3)$.",
+   "a": "$[-2,-\\sqrt2]\\cup[\\sqrt2,2]$",
+   "s": "$-1\\le x^2-3\\le1$ [1]. $2\\le x^2\\le4$ [1]. $\\sqrt2\\le|x|\\le2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find the range of $f(x)=3\\cos^{-1}x-\\pi$.",
+    "a": "$[-\\pi,2\\pi]$",
+    "s": "$0\\le\\cos^{-1}x\\le\\pi$ [1]. $0\\le3\\cos^{-1}x\\le3\\pi$ [1]. Subtract $\\pi$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\cos^{-1}(\\cos4)$ and $\\tan^{-1}(\\tan2)$.",
+   "a": "$2\\pi-4$ and $2-\\pi$.",
+   "s": "$4\\in(\\pi,2\\pi)$ and $\\cos4=\\cos(2\\pi-4)$ with $2\\pi-4\\in[0,\\pi]$ [1½]. $\\tan2=\\tan(2-\\pi)$ with $2-\\pi\\in\\left(-\\frac\\pi2,\\frac\\pi2\\right)$ [1½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "In $\\triangle ABC$, $\\angle B=90^\\circ$, $AB=5$ and $BC=12$. Write $\\angle A$ and $\\angle C$ as inverse tangents, find $\\sin A$ and $\\cos C$, and show that $\\angle A+\\angle C=\\frac\\pi2$.",
+   "a": "$\\angle A=\\tan^{-1}\\frac{12}{5}$, $\\angle C=\\tan^{-1}\\frac{5}{12}$, $\\sin A=\\cos C=\\frac{12}{13}$.",
+   "s": "$AC=13$ [1]. $\\tan A=\\frac{BC}{AB}=\\frac{12}{5}$, $\\tan C=\\frac{5}{12}$ [1]. $\\sin A=\\frac{12}{13}$, $\\cos C=\\frac{12}{13}$ [2]. Angle sum of the triangle gives $A+C=\\pi-\\frac\\pi2$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find (i) $\\sin^{-1}(\\sin5)$ (ii) $\\cos^{-1}(\\cos5)$ (iii) $\\tan^{-1}(\\tan5)$.",
+    "a": "$5-2\\pi,\\ 2\\pi-5,\\ 5-2\\pi$",
+    "s": "$5\\in\\left(\\frac{3\\pi}{2},2\\pi\\right)$ [1]. (i) $\\sin5=\\sin(5-2\\pi)$, $5-2\\pi\\approx-1.28$ [1½]. (ii) $\\cos5=\\cos(2\\pi-5)$ [1½]. (iii) $\\tan5=\\tan(5-2\\pi)$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A kite is flying on a $100$ m string held taut and straight. The kite is $50$ m above the hand. (i) Find the angle of the string with the horizontal as an inverse sine value. [1] (ii) Find the horizontal distance of the kite from the hand. [1] (iii) Later the kite is $50\\sqrt2$ m high on the same string. Find the angle. [2] \\textbf{OR} (iii) Write the angle in (i) as an inverse cosine and as an inverse tangent. [2]",
+   "a": "(i) $\\sin^{-1}\\frac12=\\frac\\pi6$; (ii) $50\\sqrt3$ m; (iii) $\\frac\\pi4$; OR $\\cos^{-1}\\frac{\\sqrt3}{2}=\\tan^{-1}\\frac1{\\sqrt3}$.",
+   "s": "(i) $\\sin\\theta=\\frac{50}{100}$ [1]. (ii) $\\sqrt{100^2-50^2}$ [1]. (iii) $\\sin^{-1}\\frac{50\\sqrt2}{100}$ [1] $=\\frac\\pi4$ [1]. OR $\\cos\\theta=\\frac{50\\sqrt3}{100}$ [1], $\\tan\\theta=\\frac{50}{50\\sqrt3}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch2-main-01": [
+  {
+   "q": "$\\tan^{-1}\\dfrac12+\\tan^{-1}\\dfrac15+\\tan^{-1}\\dfrac18$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$\\tan^{-1}\\frac12+\\tan^{-1}\\frac15=\\tan^{-1}\\frac79$; then $\\frac{\\frac79+\\frac18}{1-\\frac{7}{72}}=1$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\tan^{-1}\\frac{7}{9}$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin^{-1}\\dfrac45+\\sin^{-1}\\dfrac5{13}+\\sin^{-1}\\dfrac{16}{65}$ equals",
+   "a": "(C) $\\frac\\pi2$",
+   "s": "$\\sin^{-1}\\frac45+\\sin^{-1}\\frac{5}{13}=\\sin^{-1}\\frac{63}{65}=\\cos^{-1}\\frac{16}{65}$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\pi$",
+    "$\\frac\\pi2$",
+    "$\\frac{3\\pi}{4}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of real solutions of $\\tan^{-1}\\sqrt{x(x+1)}+\\sin^{-1}\\sqrt{x^2+x+1}=\\dfrac\\pi2$ is",
+   "a": "(C) $2$",
+   "s": "Need $x^2+x\\ge0$ and $x^2+x+1\\le1$, so $x^2+x=0$: $x=0,-1$; both work.",
+   "opts": [
+    "infinite",
+    "$0$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cot^{-1}\\sqrt{\\cos\\alpha}-\\tan^{-1}\\sqrt{\\cos\\alpha}=x$. Then $\\sin x$ equals",
+   "a": "(B) $\\tan^2\\frac\\alpha2$",
+   "s": "$x=\\frac\\pi2-2\\tan^{-1}y$, $y=\\sqrt{\\cos\\alpha}$; $\\sin x=\\frac{1-y^2}{1+y^2}=\\frac{1-\\cos\\alpha}{1+\\cos\\alpha}$.",
+   "opts": [
+    "$\\cot\\frac\\alpha2$",
+    "$\\tan^2\\frac\\alpha2$",
+    "$\\tan\\alpha$",
+    "$\\cot^2\\frac\\alpha2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{n}\\tan^{-1}\\dfrac{1}{1+k+k^2}$ equals",
+   "a": "(B) $\\tan^{-1}\\frac{n}{n+2}$",
+   "s": "Each term is $\\tan^{-1}(k+1)-\\tan^{-1}k$; the sum is $\\tan^{-1}(n+1)-\\tan^{-1}1$.",
+   "opts": [
+    "$\\tan^{-1}n$",
+    "$\\tan^{-1}\\frac{n}{n+2}$",
+    "$\\tan^{-1}\\frac{n}{n+1}$",
+    "$\\tan^{-1}(n+1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\sin^{-1}x+\\sin^{-1}y+\\sin^{-1}z=\\dfrac{3\\pi}{2}$, then $x+y+z$ equals",
+   "a": "(D) $3$",
+   "s": "Each term is at most $\\frac\\pi2$, so all equal $\\frac\\pi2$.",
+   "opts": [
+    "$-3$",
+    "$0$",
+    "$1$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $(\\sin^{-1}x)^2+(\\cos^{-1}x)^2$ is",
+   "a": "(A) $\\left[\\frac{\\pi^2}{8},\\frac{5\\pi^2}{4}\\right]$",
+   "s": "With $t=\\sin^{-1}x$: $2t^2-\\pi t+\\frac{\\pi^2}{4}$ on $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$; least at $t=\\frac\\pi4$, greatest at $t=-\\frac\\pi2$.",
+   "opts": [
+    "$\\left[\\frac{\\pi^2}{8},\\frac{5\\pi^2}{4}\\right]$",
+    "$\\left[\\frac{\\pi^2}{4},\\pi^2\\right]$",
+    "$\\left[0,\\frac{\\pi^2}{4}\\right]$",
+    "$\\left[\\frac{\\pi^2}{8},\\frac{\\pi^2}{4}\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\tan\\left(2\\tan^{-1}\\dfrac15-\\dfrac\\pi4\\right)$ equals",
+   "a": "(B) $-\\frac{7}{17}$",
+   "s": "$2\\tan^{-1}\\frac15=\\tan^{-1}\\frac{5}{12}$; $\\frac{\\frac{5}{12}-1}{1+\\frac{5}{12}}$.",
+   "opts": [
+    "$-\\frac{5}{12}$",
+    "$-\\frac{7}{17}$",
+    "$\\frac{17}{7}$",
+    "$\\frac{7}{17}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution of $\\tan^{-1}(x+1)+\\tan^{-1}(x-1)=\\tan^{-1}\\dfrac{8}{31}$ is",
+   "a": "(B) $\\frac14$",
+   "s": "$\\frac{2x}{2-x^2}=\\frac{8}{31}\\Rightarrow4x^2+31x-8=0$; $x=-8$ makes the left side negative.",
+   "opts": [
+    "$\\frac18$",
+    "$\\frac14$",
+    "$-8$",
+    "$\\frac14$ and $-8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin\\left(\\cot^{-1}\\left(\\cos\\left(\\tan^{-1}x\\right)\\right)\\right)$ equals",
+   "a": "(C) $\\sqrt{\\frac{x^2+1}{x^2+2}}$",
+   "s": "$c=\\frac{1}{\\sqrt{1+x^2}}$; $\\sin(\\cot^{-1}c)=\\frac{1}{\\sqrt{1+c^2}}$.",
+   "opts": [
+    "$\\frac{x}{\\sqrt{x^2+2}}$",
+    "$\\sqrt{\\frac{x^2+2}{x^2+1}}$",
+    "$\\sqrt{\\frac{x^2+1}{x^2+2}}$",
+    "$\\frac{1}{\\sqrt{x^2+2}}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\cos^{-1}x+\\cos^{-1}y+\\cos^{-1}z=3\\pi$, then $xy+yz+zx$ equals",
+   "a": "(A) $3$",
+   "s": "Each term is at most $\\pi$, so $x=y=z=-1$.",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$1$",
+    "$-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of real solutions of $\\sin^{-1}x=2\\tan^{-1}x$ is",
+   "a": "(C) $3$",
+   "s": "For $|x|\\le1$, $2\\tan^{-1}x=\\sin^{-1}\\frac{2x}{1+x^2}$, so $x=\\frac{2x}{1+x^2}$: $x=0,\\pm1$.",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$3$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x<0$, $\\tan^{-1}x+\\tan^{-1}\\dfrac1x$ equals",
+   "a": "(D) $-\\frac\\pi2$",
+   "s": "For $x<0$, $\\tan^{-1}\\frac1x=\\cot^{-1}x-\\pi$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$0$",
+    "$\\pi$",
+    "$-\\frac\\pi2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $\\sin^{-1}\\left(\\log_3\\dfrac x3\\right)$ is",
+   "a": "(B) $[1,9]$",
+   "s": "$-1\\le\\log_3\\frac x3\\le1\\Rightarrow\\frac13\\le\\frac x3\\le3$.",
+   "opts": [
+    "$\\left[\\frac13,3\\right]$",
+    "$[1,9]$",
+    "$[3,9]$",
+    "$(0,9]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$4\\tan^{-1}\\dfrac15-\\tan^{-1}\\dfrac{1}{239}$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$4\\tan^{-1}\\frac15=\\tan^{-1}\\frac{120}{119}$; $\\frac{\\frac{120}{119}-\\frac1{239}}{1+\\frac{120}{119\\cdot239}}=1$.",
+   "opts": [
+    "$\\pi$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cos^{-1}(\\cos10)$ equals",
+   "a": "(A) $4\\pi-10$",
+   "s": "$3\\pi<10<4\\pi$; $\\cos10=\\cos(4\\pi-10)$ with $4\\pi-10\\in[0,\\pi]$.",
+   "opts": [
+    "$4\\pi-10$",
+    "$10-3\\pi$",
+    "$10-2\\pi$",
+    "$3\\pi-10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin^{-1}(\\sin5)+\\cos^{-1}(\\cos5)$ equals",
+   "a": "(D) $0$",
+   "s": "$(5-2\\pi)+(2\\pi-5)$.",
+   "opts": [
+    "$2\\pi$",
+    "$10$",
+    "$4\\pi-10$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\tan^{-1}x+\\tan^{-1}y+\\tan^{-1}z=\\pi$, then",
+   "a": "(B) $x+y+z=xyz$",
+   "s": "$\\tan(A+B+C)=\\frac{x+y+z-xyz}{1-(xy+yz+zx)}=0$.",
+   "opts": [
+    "$xyz=1$",
+    "$x+y+z=xyz$",
+    "$x+y+z=0$",
+    "$xy+yz+zx=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$2\\sin^{-1}x=\\sin^{-1}\\left(2x\\sqrt{1-x^2}\\right)$ holds exactly when",
+   "a": "(A) $|x|\\le\\frac1{\\sqrt2}$",
+   "s": "Need $2\\sin^{-1}x\\in\\left[-\\frac\\pi2,\\frac\\pi2\\right]$.",
+   "opts": [
+    "$|x|\\le\\frac1{\\sqrt2}$",
+    "$\\frac1{\\sqrt2}\\le x\\le1$",
+    "$|x|\\le1$",
+    "$0\\le x\\le1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{\\infty}\\tan^{-1}\\dfrac{2}{k^2}$ equals",
+   "a": "(D) $\\frac{3\\pi}{4}$",
+   "s": "$\\tan^{-1}\\frac{2}{k^2}=\\tan^{-1}(k+1)-\\tan^{-1}(k-1)$; the sum tends to $\\frac\\pi2+\\frac\\pi2-\\frac\\pi4-0$.",
+   "opts": [
+    "$\\pi$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$",
+    "$\\frac{3\\pi}{4}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\dfrac{12}{\\pi}\\left(\\tan^{-1}1+\\tan^{-1}2+\\tan^{-1}3\\right)$.",
+   "a": "$12$",
+   "s": "The sum is $\\pi$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers in the domain of $f(x)=\\sin^{-1}\\dfrac{x-1}{3}+\\sqrt{4-x}$.",
+   "a": "$7$",
+   "s": "$-2\\le x\\le4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\tan\\left(2\\tan^{-1}\\dfrac13+\\tan^{-1}\\dfrac17\\right)$.",
+   "a": "$1$",
+   "s": "$\\tan^{-1}\\frac34+\\tan^{-1}\\frac17$: $\\frac{\\frac{25}{28}}{\\frac{25}{28}}=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\sin^2(\\tan^{-1}2)$.",
+   "a": "$0.8$",
+   "s": "$\\frac{\\tan^2\\theta}{1+\\tan^2\\theta}=\\frac45$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x=\\sin\\left(2\\tan^{-1}2\\right)$ and $y=\\sin\\left(\\frac12\\tan^{-1}\\frac43\\right)$. Find $25(x^2+y^2)$.",
+   "a": "$21$",
+   "s": "$x=\\frac45$; $\\cos\\theta=\\frac35\\Rightarrow y^2=\\frac{1-\\frac35}{2}=\\frac15$; $16+5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch2-main-02": [
+  {
+   "q": "$\\sum_{k=1}^{\\infty}\\cot^{-1}(2k^2)$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$\\tan^{-1}\\frac{1}{2k^2}=\\tan^{-1}(2k+1)-\\tan^{-1}(2k-1)$; the sum tends to $\\frac\\pi2-\\frac\\pi4$.",
+   "opts": [
+    "$\\pi$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\cos^{-1}x-\\cos^{-1}\\dfrac y2=\\alpha$, then $4x^2-4xy\\cos\\alpha+y^2$ equals",
+   "a": "(D) $4\\sin^2\\alpha$",
+   "s": "Take cosine: $x\\cdot\\frac y2+\\sqrt{1-x^2}\\sqrt{1-\\frac{y^2}{4}}=\\cos\\alpha$; isolate the root and square.",
+   "opts": [
+    "$-4\\sin^2\\alpha$",
+    "$4$",
+    "$2\\sin2\\alpha$",
+    "$4\\sin^2\\alpha$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin^{-1}\\dfrac{1}{\\sqrt5}+\\cot^{-1}3$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$\\sin^{-1}\\frac1{\\sqrt5}=\\tan^{-1}\\frac12$ and $\\cot^{-1}3=\\tan^{-1}\\frac13$.",
+   "opts": [
+    "$\\tan^{-1}\\frac56$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution of $\\cos^{-1}x+\\cos^{-1}2x=\\dfrac\\pi2$ is",
+   "a": "(B) $\\frac1{\\sqrt5}$",
+   "s": "$\\cos^{-1}2x=\\sin^{-1}x\\in\\left[0,\\frac\\pi2\\right]$, so $x\\ge0$ and $2x=\\sqrt{1-x^2}$.",
+   "opts": [
+    "$\\frac{2}{\\sqrt5}$",
+    "$\\frac1{\\sqrt5}$",
+    "$\\frac12$",
+    "$\\pm\\frac1{\\sqrt5}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $\\cot^{-1}(2x-x^2)$ is",
+   "a": "(A) $\\left[\\frac\\pi4,\\pi\\right)$",
+   "s": "$2x-x^2\\le1$ and $\\cot^{-1}$ is decreasing.",
+   "opts": [
+    "$\\left[\\frac\\pi4,\\pi\\right)$",
+    "$\\left(0,\\frac\\pi4\\right]$",
+    "$(0,\\pi)$",
+    "$\\left[\\frac\\pi4,\\frac\\pi2\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\tan\\left(\\dfrac\\pi4+\\dfrac12\\cos^{-1}\\dfrac ab\\right)+\\tan\\left(\\dfrac\\pi4-\\dfrac12\\cos^{-1}\\dfrac ab\\right)$ equals",
+   "a": "(B) $\\frac{2b}{a}$",
+   "s": "With $t=\\tan\\theta$: $\\frac{1+t}{1-t}+\\frac{1-t}{1+t}=\\frac{2(1+t^2)}{1-t^2}=\\frac{2}{\\cos2\\theta}$.",
+   "opts": [
+    "$\\frac{b}{2a}$",
+    "$\\frac{2b}{a}$",
+    "$\\frac ab$",
+    "$\\frac{2a}{b}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a,b\\in(0,1)$ and $\\sin^{-1}\\dfrac{2a}{1+a^2}-\\cos^{-1}\\dfrac{1-b^2}{1+b^2}=\\tan^{-1}\\dfrac{2x}{1-x^2}$. Then $x$ equals",
+   "a": "(D) $\\frac{a-b}{1+ab}$",
+   "s": "The left side is $2\\tan^{-1}a-2\\tan^{-1}b$ and the right side is $2\\tan^{-1}x$.",
+   "opts": [
+    "$\\frac{a-b}{1-ab}$",
+    "$\\frac{a+b}{1-ab}$",
+    "$ab$",
+    "$\\frac{a-b}{1+ab}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin\\left(2\\sin^{-1}0.6\\right)$ equals",
+   "a": "(D) $0.96$",
+   "s": "$2(0.6)(0.8)$.",
+   "opts": [
+    "$0.48$",
+    "$1.2$",
+    "$0.28$",
+    "$0.96$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution of $\\sin^{-1}6x+\\sin^{-1}6\\sqrt3x=-\\dfrac\\pi2$ is",
+   "a": "(C) $-\\frac{1}{12}$",
+   "s": "$x=-\\frac1{12}$ gives $-\\frac\\pi6-\\frac\\pi3$; a positive $x$ gives a positive sum.",
+   "opts": [
+    "$\\frac{1}{12}$",
+    "$\\pm\\frac1{12}$",
+    "$-\\frac{1}{12}$",
+    "$-\\frac16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\tan^{-1}y=4\\tan^{-1}x$ with $|x|<\\tan\\frac\\pi8$, then $y$ equals",
+   "a": "(A) $\\frac{4x-4x^3}{1-6x^2+x^4}$",
+   "s": "$\\tan4\\theta=\\frac{4t-4t^3}{1-6t^2+t^4}$.",
+   "opts": [
+    "$\\frac{4x-4x^3}{1-6x^2+x^4}$",
+    "$\\frac{4x+4x^3}{1-6x^2+x^4}$",
+    "$\\frac{4x-4x^3}{1+6x^2+x^4}$",
+    "$\\frac{4x}{1-x^4}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cos^{-1}\\left(-\\dfrac35\\right)-\\sin^{-1}\\left(-\\dfrac45\\right)$ equals",
+   "a": "(D) $\\pi$",
+   "s": "$\\pi-\\cos^{-1}\\frac35+\\sin^{-1}\\frac45$ and $\\cos^{-1}\\frac35=\\sin^{-1}\\frac45$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$-\\pi$",
+    "$0$",
+    "$\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of solutions of $\\tan^{-1}(x-1)+\\tan^{-1}x+\\tan^{-1}(x+1)=\\tan^{-1}3x$ is",
+   "a": "(C) $3$",
+   "s": "$\\frac{2x}{2-x^2}=\\frac{2x}{1+3x^2}\\Rightarrow x=0,\\pm\\frac12$; all are valid.",
+   "opts": [
+    "$4$",
+    "$1$",
+    "$3$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cot^{-1}7+\\cot^{-1}8+\\cot^{-1}18$ equals",
+   "a": "(D) $\\cot^{-1}3$",
+   "s": "$\\tan^{-1}\\frac17+\\tan^{-1}\\frac18=\\tan^{-1}\\frac{3}{11}$; with $\\tan^{-1}\\frac1{18}$ gives $\\tan^{-1}\\frac13$.",
+   "opts": [
+    "$\\cot^{-1}33$",
+    "$\\cot^{-1}\\frac13$",
+    "$\\frac\\pi4$",
+    "$\\cot^{-1}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $\\cos^{-1}\\dfrac{2-|x|}{4}$ is",
+   "a": "(B) $[-6,6]$",
+   "s": "$-4\\le2-|x|\\le4\\Rightarrow|x|\\le6$.",
+   "opts": [
+    "$[0,6]$",
+    "$[-6,6]$",
+    "$[-2,2]$",
+    "$[-4,4]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin^{-1}(\\sin6)$ equals",
+   "a": "(D) $6-2\\pi$",
+   "s": "$6-2\\pi\\approx-0.28$ lies in the branch.",
+   "opts": [
+    "$6$",
+    "$2\\pi-6$",
+    "$\\pi-6$",
+    "$6-2\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $\\tan^{-1}x-\\tan^{-1}\\dfrac x4$ for $x>0$ is",
+   "a": "(C) $\\tan^{-1}\\frac34$",
+   "s": "$f'=\\frac{1}{1+x^2}-\\frac{4}{16+x^2}=0\\Rightarrow x=2$; $\\tan^{-1}2-\\tan^{-1}\\frac12$.",
+   "opts": [
+    "$\\tan^{-1}\\frac43$",
+    "$\\tan^{-1}\\frac12$",
+    "$\\tan^{-1}\\frac34$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x>1$, $\\sin^{-1}\\dfrac{2x}{1+x^2}$ equals",
+   "a": "(D) $\\pi-2\\tan^{-1}x$",
+   "s": "For $x>1$, $2\\tan^{-1}x\\in\\left(\\frac\\pi2,\\pi\\right)$; reflect into the branch.",
+   "opts": [
+    "$2\\tan^{-1}x-\\pi$",
+    "$2\\tan^{-1}x$",
+    "$\\frac\\pi2-\\tan^{-1}x$",
+    "$\\pi-2\\tan^{-1}x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cos\\left(\\sin^{-1}\\dfrac35+\\sin^{-1}\\dfrac5{13}\\right)$ equals",
+   "a": "(A) $\\frac{33}{65}$",
+   "s": "$\\frac45\\cdot\\frac{12}{13}-\\frac35\\cdot\\frac5{13}$.",
+   "opts": [
+    "$\\frac{33}{65}$",
+    "$\\frac{63}{65}$",
+    "$\\frac{56}{65}$",
+    "$\\frac{16}{65}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\sin^{-1}x+\\sin^{-1}y=\\dfrac{2\\pi}{3}$, then $\\cos^{-1}x+\\cos^{-1}y$ equals",
+   "a": "(A) $\\frac\\pi3$",
+   "s": "$\\pi-\\frac{2\\pi}{3}$.",
+   "opts": [
+    "$\\frac\\pi3$",
+    "$\\frac{2\\pi}{3}$",
+    "$\\pi$",
+    "$\\frac\\pi6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $a,b>0$, $\\tan^{-1}\\dfrac ab-\\tan^{-1}\\dfrac{a-b}{a+b}$ equals",
+   "a": "(C) $\\frac\\pi4$",
+   "s": "$\\frac{\\frac ab-\\frac{a-b}{a+b}}{1+\\frac{a(a-b)}{b(a+b)}}=\\frac{a^2+b^2}{a^2+b^2}$.",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$",
+    "$\\tan^{-1}\\frac{b}{a}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of solutions of $\\sin^{-1}x-\\cos^{-1}x=\\sin^{-1}\\dfrac12$.",
+   "a": "$1$",
+   "s": "$2\\sin^{-1}x=\\frac\\pi2+\\frac\\pi6\\Rightarrow x=\\frac{\\sqrt3}{2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\dfrac6\\pi\\left[\\sin^{-1}\\dfrac12+\\cos^{-1}\\dfrac12+\\tan^{-1}\\sqrt3\\right]$.",
+   "a": "$5$",
+   "s": "$\\frac6\\pi\\cdot\\frac{5\\pi}{6}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Solve $\\sin\\left(\\cot^{-1}(x+1)\\right)=\\cos\\left(\\tan^{-1}x\\right)$.",
+   "a": "$-0.5$",
+   "s": "$\\frac1{\\sqrt{1+(x+1)^2}}=\\frac1{\\sqrt{1+x^2}}\\Rightarrow(x+1)^2=x^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\tan^2(\\sec^{-1}2)+\\cot^2(\\operatorname{cosec}^{-1}3)$.",
+   "a": "$11$",
+   "s": "$(4-1)+(9-1)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$S=\\sum_{k=1}^{4}\\tan^{-1}\\dfrac{1}{2k^2}$. Find $5\\tan S$.",
+   "a": "$4$",
+   "s": "$S=\\tan^{-1}9-\\tan^{-1}1=\\tan^{-1}\\frac{8}{10}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch2-advanced-01": [
+  {
+   "q": "$\\cos\\left(2\\cos^{-1}x+\\sin^{-1}x\\right)$ at $x=\\dfrac15$ equals",
+   "a": "(C) $-\\frac{2\\sqrt6}{5}$",
+   "s": "$2\\cos^{-1}x+\\sin^{-1}x=\\frac\\pi2+\\cos^{-1}x$, so the value is $-\\sin(\\cos^{-1}x)=-\\sqrt{1-\\frac1{25}}$.",
+   "opts": [
+    "$-\\frac15$",
+    "$\\frac{2\\sqrt6}{5}$",
+    "$-\\frac{2\\sqrt6}{5}$",
+    "$\\frac15$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $|x|\\le1$, $\\tan^{-1}\\dfrac{\\sqrt{1+x^2}-\\sqrt{1-x^2}}{\\sqrt{1+x^2}+\\sqrt{1-x^2}}$ equals",
+   "a": "(D) $\\frac\\pi4-\\frac12\\cos^{-1}x^2$",
+   "s": "$x^2=\\cos2\\theta$: the ratio is $\\frac{\\cos\\theta-\\sin\\theta}{\\cos\\theta+\\sin\\theta}=\\tan\\left(\\frac\\pi4-\\theta\\right)$.",
+   "opts": [
+    "$\\frac12\\cos^{-1}x^2$",
+    "$\\frac\\pi4+\\frac12\\cos^{-1}x^2$",
+    "$\\frac\\pi4-\\cos^{-1}x^2$",
+    "$\\frac\\pi4-\\frac12\\cos^{-1}x^2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $0<x<1$, $3\\sin^{-1}\\dfrac{2x}{1+x^2}-4\\cos^{-1}\\dfrac{1-x^2}{1+x^2}+2\\tan^{-1}\\dfrac{2x}{1-x^2}=\\dfrac\\pi3$. Then $x$ equals",
+   "a": "(B) $\\frac1{\\sqrt3}$",
+   "s": "Each term is $2\\tan^{-1}x$: $6t-8t+4t=2t=\\frac\\pi3$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac1{\\sqrt3}$",
+    "$\\sqrt3$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\tan^{-1}x+\\frac12\\sin^{-1}x$ is",
+   "a": "(C) $\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+   "s": "$f$ increases on $[-1,1]$; $f(1)=\\frac\\pi4+\\frac\\pi4$.",
+   "opts": [
+    "$\\left[-\\frac\\pi4,\\frac\\pi4\\right]$",
+    "$[-\\pi,\\pi]$",
+    "$\\left[-\\frac\\pi2,\\frac\\pi2\\right]$",
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "About principal values at $2$ radians, which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$2\\in\\left(\\frac\\pi2,\\pi\\right)$. The last sum is $4-\\pi\\ne0$.",
+   "opts": [
+    "$\\sin^{-1}(\\sin2)=\\pi-2$",
+    "$\\cos^{-1}(\\cos2)=2$",
+    "$\\tan^{-1}(\\tan2)=2-\\pi$",
+    "$\\cos^{-1}(\\cos2)+\\tan^{-1}(\\tan2)=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which of these identities are true?",
+   "a": "(A), (B), (D)",
+   "s": "For $x<0$, $\\tan^{-1}x+\\tan^{-1}\\frac1x=-\\frac\\pi2$.",
+   "opts": [
+    "$\\tan^{-1}x+\\cot^{-1}x=\\frac\\pi2$ for all real $x$",
+    "$\\sin^{-1}x+\\cos^{-1}x=\\frac\\pi2$ for $|x|\\le1$",
+    "$\\tan^{-1}x+\\tan^{-1}\\frac1x=\\frac\\pi2$ for all $x\\ne0$",
+    "$\\cot^{-1}(-x)=\\pi-\\cot^{-1}x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\cos^{-1}(\\cos x)$ on $[0,2\\pi]$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$f(x)=x$ on $[0,\\pi]$ and $2\\pi-x$ on $[\\pi,2\\pi]$.",
+   "opts": [
+    "$f\\left(\\frac{3\\pi}{2}\\right)=\\frac\\pi2$",
+    "$f$ is continuous",
+    "$f(x)=x$ on $[\\pi,2\\pi]$",
+    "The greatest value of $f$ is $\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\alpha=2\\tan^{-1}\\dfrac13$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\tan\\alpha=\\frac{\\frac23}{\\frac89}$; $\\tan\\alpha<1$, so $\\alpha<\\frac\\pi4$.",
+   "opts": [
+    "$\\tan\\alpha=\\frac34$",
+    "$\\sin\\alpha=\\frac35$",
+    "$\\cos\\alpha=\\frac45$",
+    "$\\alpha>\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of real solutions of $\\sin^{-1}x+\\sin^{-1}(1-x)=\\cos^{-1}x$.",
+   "a": "$2$",
+   "s": "$\\sin^{-1}(1-x)=\\frac\\pi2-2\\sin^{-1}x\\Rightarrow1-x=1-2x^2$: $x=0,\\frac12$; both satisfy.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac4\\pi\\left(4\\tan^{-1}\\dfrac15-\\tan^{-1}\\dfrac1{70}+\\tan^{-1}\\dfrac1{99}\\right)$.",
+   "a": "$1$",
+   "s": "$4\\tan^{-1}\\frac15=\\tan^{-1}\\frac{120}{119}$; minus $\\tan^{-1}\\frac1{70}$ gives $\\tan^{-1}\\frac{49}{50}$; plus $\\tan^{-1}\\frac1{99}$ gives $\\tan^{-1}1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$S=\\sum_{k=1}^{20}\\tan^{-1}\\dfrac{1}{1+k(k+1)}$. Find $11\\tan S$.",
+   "a": "$10$",
+   "s": "$S=\\tan^{-1}21-\\tan^{-1}1=\\tan^{-1}\\frac{20}{22}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers in the range of $f(x)=3\\tan^{-1}x+2$.",
+   "a": "$9$",
+   "s": "Range $\\left(2-\\frac{3\\pi}{2},2+\\frac{3\\pi}{2}\\right)\\approx(-2.71,6.71)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $\\sin^{-1}(\\sin4)$; (Q) $\\cos^{-1}(\\cos4)$; (R) $\\tan^{-1}(\\tan4)$; (S) $\\sin^{-1}(\\sin6)$\nList-II: (1) $4-\\pi$; (2) $\\pi-4$; (3) $2\\pi-4$; (4) $6-2\\pi$; (5) $2\\pi-6$",
+   "a": "(B) $P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+   "s": "$4\\in\\left(\\pi,\\frac{3\\pi}{2}\\right)$: $\\sin4=\\sin(\\pi-4)$, $\\cos4=\\cos(2\\pi-4)$, $\\tan4=\\tan(4-\\pi)$; $\\sin6=\\sin(6-2\\pi)$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each expression with its value.\nList-I: (P) $\\tan^{-1}1+\\tan^{-1}2+\\tan^{-1}3$; (Q) $\\tan^{-1}\\frac12+\\tan^{-1}\\frac13$; (R) $\\sin^{-1}\\frac35+\\sin^{-1}\\frac45$; (S) $\\cos^{-1}\\left(-\\frac12\\right)$\nList-II: (1) $\\frac\\pi2$; (2) $\\frac{2\\pi}{3}$; (3) $\\pi$; (4) $\\frac\\pi4$; (5) $0$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$\\pi$; $\\frac\\pi4$; $\\sin^{-1}\\frac35+\\cos^{-1}\\frac35$; $\\frac{2\\pi}{3}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its domain.\nList-I: (P) $\\sin^{-1}(2x-1)$; (Q) $\\cos^{-1}(x^2)$; (R) $\\sec^{-1}x$; (S) $\\tan^{-1}\\sqrt x$\nList-II: (1) $[0,\\infty)$; (2) $[0,1]$; (3) $(-\\infty,-1]\\cup[1,\\infty)$; (4) $[-1,1]$; (5) $\\mathbb{R}$",
+   "a": "(A) $P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+   "s": "$0\\le x\\le1$; $x^2\\le1$; $|x|\\ge1$; $x\\ge0$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $\\sin\\left(2\\sin^{-1}\\frac12\\right)$; (Q) $\\cos\\left(2\\cos^{-1}\\frac12\\right)$; (R) $\\tan\\left(2\\tan^{-1}\\frac12\\right)$; (S) $\\sin\\left(2\\tan^{-1}\\frac12\\right)$\nList-II: (1) $\\frac45$; (2) $\\frac{\\sqrt3}{2}$; (3) $-\\frac12$; (4) $\\frac43$; (5) $\\frac35$",
+   "a": "(B) $P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+   "s": "$\\sin\\frac\\pi3$; $\\cos\\frac{2\\pi}{3}$; $\\frac{1}{1-\\frac14}$; $\\frac{1}{\\frac54}$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch2-advanced-02": [
+  {
+   "q": "$\\sin\\left(\\dfrac12\\cos^{-1}\\dfrac45\\right)$ equals",
+   "a": "(C) $\\frac1{\\sqrt{10}}$",
+   "s": "$\\sin^2\\frac\\theta2=\\frac{1-\\frac45}{2}=\\frac1{10}$.",
+   "opts": [
+    "$\\frac15$",
+    "$\\frac3{\\sqrt{10}}$",
+    "$\\frac1{\\sqrt{10}}$",
+    "$\\frac1{\\sqrt5}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cot\\left(\\sum_{n=1}^{23}\\cot^{-1}\\left(1+\\sum_{k=1}^{n}2k\\right)\\right)$ equals",
+   "a": "(A) $\\frac{25}{23}$",
+   "s": "$1+n(n+1)$; $\\cot^{-1}(1+n(n+1))=\\tan^{-1}(n+1)-\\tan^{-1}n$. Sum $\\tan^{-1}24-\\tan^{-1}1=\\tan^{-1}\\frac{23}{25}$.",
+   "opts": [
+    "$\\frac{25}{23}$",
+    "$\\frac{23}{25}$",
+    "$\\frac{24}{23}$",
+    "$\\frac{23}{24}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\cos^{-1}x=\\tan^{-1}x$, then $x^2$ equals",
+   "a": "(D) $\\frac{\\sqrt5-1}{2}$",
+   "s": "$x=\\cos\\theta=\\tan\\theta\\Rightarrow\\cos^2\\theta=\\sin\\theta\\Rightarrow\\sin\\theta=\\frac{\\sqrt5-1}{2}=x^2$.",
+   "opts": [
+    "$\\frac{3-\\sqrt5}{2}$",
+    "$\\frac12$",
+    "$\\frac{\\sqrt5+1}{2}$",
+    "$\\frac{\\sqrt5-1}{2}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $0<x<1$, $\\tan^{-1}\\dfrac{x}{\\sqrt{1-x^2}}$ equals",
+   "a": "(C) $\\sin^{-1}x$",
+   "s": "$x=\\sin\\theta$: $\\tan^{-1}(\\tan\\theta)=\\theta$.",
+   "opts": [
+    "$\\frac\\pi2-\\sin^{-1}x$",
+    "$\\tan^{-1}x$",
+    "$\\sin^{-1}x$",
+    "$\\cos^{-1}x$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\theta=\\tan^{-1}2$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\sin2\\theta=\\frac{4}{5}$, $\\cos2\\theta=\\frac{1-4}{5}$, $\\tan2\\theta=-\\frac43$.",
+   "opts": [
+    "$\\sin2\\theta=\\frac45$",
+    "$\\cos2\\theta=-\\frac35$",
+    "$2\\theta>\\frac\\pi2$",
+    "$\\tan2\\theta=\\frac43$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $\\sin^{-1}x+\\sin^{-1}2x=\\dfrac\\pi3$, which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$2x=\\frac{\\sqrt3}{2}\\sqrt{1-x^2}-\\frac x2\\Rightarrow25x^2=3(1-x^2)$; a negative $x$ gives a negative sum.",
+   "opts": [
+    "$x=\\sqrt{\\frac{3}{28}}$ is a solution",
+    "There is exactly one solution",
+    "The solution lies in $\\left(0,\\frac12\\right)$",
+    "$x=-\\sqrt{\\frac{3}{28}}$ is a solution"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which expressions equal $\\dfrac\\pi4$?",
+   "a": "(A), (B), (D)",
+   "s": "$2\\tan^{-1}\\frac12=\\tan^{-1}\\frac43$; $\\frac{2-\\frac13}{1+\\frac23}=1$.",
+   "opts": [
+    "$\\tan^{-1}\\frac12+\\tan^{-1}\\frac13$",
+    "$2\\tan^{-1}\\frac13+\\tan^{-1}\\frac17$",
+    "$2\\tan^{-1}\\frac12$",
+    "$\\tan^{-1}2-\\tan^{-1}\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which of these functions are constant or periodic as stated?",
+   "a": "(A), (B), (D)",
+   "s": "The sum is $\\frac\\pi2$ for $x>0$ and $-\\frac\\pi2$ for $x<0$.",
+   "opts": [
+    "$\\sin^{-1}x+\\cos^{-1}x$ is constant on $[-1,1]$",
+    "$\\tan^{-1}x+\\tan^{-1}\\frac1x$ is constant on $(0,\\infty)$",
+    "$\\tan^{-1}x+\\tan^{-1}\\frac1x$ is constant on $\\mathbb{R}-\\{0\\}$",
+    "$\\sin^{-1}(\\sin x)$ is periodic with period $2\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers $k$ for which $\\sin^{-1}x+\\cos^{-1}x+\\tan^{-1}x=k$ has a solution.",
+   "a": "$2$",
+   "s": "The range is $\\left[\\frac\\pi4,\\frac{3\\pi}{4}\\right]\\approx[0.79,2.36]$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{36}{\\pi^2}$ times the least value of $(\\sin^{-1}x)^2+(\\cos^{-1}x)^2$.",
+   "a": "$4.5$",
+   "s": "The least value is $\\frac{\\pi^2}{8}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $3\\tan\\left(\\tan^{-1}\\dfrac12+\\tan^{-1}\\dfrac13+\\tan^{-1}\\dfrac17\\right)$.",
+   "a": "$4$",
+   "s": "$\\tan\\left(\\frac\\pi4+\\tan^{-1}\\frac17\\right)=\\frac{1+\\frac17}{1-\\frac17}=\\frac43$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $65\\sin\\left(\\cos^{-1}\\dfrac35+\\cos^{-1}\\dfrac{12}{13}\\right)$.",
+   "a": "$63$",
+   "s": "$\\frac45\\cdot\\frac{12}{13}+\\frac35\\cdot\\frac5{13}=\\frac{63}{65}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each principal value.\nList-I: (P) $\\sin^{-1}\\left(-\\frac{\\sqrt3}{2}\\right)$; (Q) $\\cos^{-1}\\left(-\\frac{\\sqrt3}{2}\\right)$; (R) $\\cot^{-1}(-1)$; (S) $\\operatorname{cosec}^{-1}(-2)$\nList-II: (1) $-\\frac\\pi6$; (2) $\\frac{3\\pi}{4}$; (3) $-\\frac\\pi3$; (4) $\\frac{5\\pi}{6}$; (5) $\\frac\\pi3$",
+   "a": "(C) $P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+   "s": "$-\\frac\\pi3$; $\\pi-\\frac\\pi6$; $\\pi-\\frac\\pi4$; $-\\frac\\pi6$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each equation with its solution.\nList-I: (P) $\\sin^{-1}x=\\frac\\pi6$; (Q) $\\tan^{-1}x=-\\frac\\pi4$; (R) $\\cos^{-1}x=\\frac{2\\pi}{3}$; (S) $\\cot^{-1}x=\\frac\\pi3$\nList-II: (1) $-1$; (2) $\\frac1{\\sqrt3}$; (3) $\\frac12$; (4) $-\\frac12$; (5) $\\sqrt3$",
+   "a": "(A) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "$\\sin\\frac\\pi6$; $\\tan\\left(-\\frac\\pi4\\right)$; $\\cos\\frac{2\\pi}{3}$; $\\cot\\frac\\pi3$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its range.\nList-I: (P) $\\sin^{-1}x+\\frac\\pi2$; (Q) $2\\cos^{-1}x$; (R) $\\tan^{-1}x+\\cot^{-1}x$; (S) $\\sec^{-1}x$\nList-II: (1) $\\left\\{\\frac\\pi2\\right\\}$; (2) $[0,2\\pi]$; (3) $[0,\\pi]$; (4) $[0,\\pi]-\\left\\{\\frac\\pi2\\right\\}$; (5) $(0,\\pi)$",
+   "a": "(A) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "$[0,\\pi]$; $[0,2\\pi]$; constant $\\frac\\pi2$; branch of $\\sec^{-1}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $\\tan(\\sec^{-1}2)$; (Q) $\\cos\\left(\\tan^{-1}\\frac34\\right)$; (R) $\\sin\\left(\\cot^{-1}\\frac{5}{12}\\right)$; (S) $\\sec\\left(\\operatorname{cosec}^{-1}\\frac53\\right)$\nList-II: (1) $\\frac{12}{13}$; (2) $\\sqrt3$; (3) $\\frac54$; (4) $\\frac45$; (5) $\\frac34$",
+   "a": "(B) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "$\\tan\\frac\\pi3$; $\\frac45$; $\\cot\\theta=\\frac{5}{12}\\Rightarrow\\sin\\theta=\\frac{12}{13}$; $\\sin\\theta=\\frac35\\Rightarrow\\sec\\theta=\\frac54$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

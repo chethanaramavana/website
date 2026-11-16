@@ -1,0 +1,2523 @@
+{
+ "g12-ch1-mcq-20-01": [
+  {
+   "q": "On $\\{1,2,3\\}$, $R=\\{(1,1),(2,2),(3,3),(1,3),(3,1)\\}$ is",
+   "a": "(C) an equivalence relation",
+   "s": "All diagonal pairs are present, $(1,3),(3,1)$ give symmetry, and every chain closes.",
+   "opts": [
+    "not transitive",
+    "symmetric only",
+    "an equivalence relation",
+    "reflexive only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):a=b-1\\}$ on $\\mathbb{N}$ is",
+   "a": "(C) neither reflexive, nor symmetric, nor transitive",
+   "s": "$(1,1)\\notin R$; $(1,2)\\in R$, $(2,1)\\notin R$; $(1,2),(2,3)\\in R$ but $(1,3)\\notin R$.",
+   "opts": [
+    "reflexive only",
+    "symmetric only",
+    "neither reflexive, nor symmetric, nor transitive",
+    "transitive only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):a+b\\text{ is even}\\}$ on $\\mathbb{Z}$ is",
+   "a": "(B) an equivalence relation",
+   "s": "$a+b$ even means $a,b$ have the same parity, which is an equivalence relation.",
+   "opts": [
+    "transitive but not symmetric",
+    "an equivalence relation",
+    "symmetric but not transitive",
+    "reflexive only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of equivalence relations on $\\{a,b,c\\}$ containing $(a,b)$ and $(b,a)$ is",
+   "a": "(A) $2$",
+   "s": "$\\{a,b\\},\\{c\\}$ or $\\{a,b,c\\}$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$5$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of symmetric relations on $\\{1,2\\}$ is",
+   "a": "(D) $8$",
+   "s": "$\\frac{n(n+1)}{2}=3$ independent choices: $2^3=8$.",
+   "opts": [
+    "$4$",
+    "$16$",
+    "$6$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^3+2$ is",
+   "a": "(A) One-one and onto",
+   "s": "$x^3$ is strictly increasing and takes every real value.",
+   "opts": [
+    "One-one and onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one",
+    "One-one but not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=3x+2$ is",
+   "a": "(B) One-one but not onto",
+   "s": "$3a+2=3b+2\\Rightarrow a=b$; $1$ is not of the form $3x+2$.",
+   "opts": [
+    "Onto but not one-one",
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "One-one and onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{Z}\\to\\mathbb{Z}$, $f(x)=x+5$ is",
+   "a": "(B) One-one and onto",
+   "s": "For $y\\in\\mathbb{Z}$, $x=y-5\\in\\mathbb{Z}$.",
+   "opts": [
+    "Onto but not one-one",
+    "One-one and onto",
+    "One-one but not onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=\\cos x$ is",
+   "a": "(A) Neither one-one nor onto",
+   "s": "$\\cos0=\\cos2\\pi$; $3$ is not a value.",
+   "opts": [
+    "Neither one-one nor onto",
+    "One-one and onto",
+    "One-one but not onto",
+    "Onto but not one-one"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x-[x]$ is",
+   "a": "(D) Neither one-one nor onto",
+   "s": "$f(0.5)=f(1.5)$; the range is $[0,1)$.",
+   "opts": [
+    "Onto but not one-one",
+    "One-one and onto",
+    "One-one but not onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of functions from $\\{1,2\\}$ to $\\{a,b,c\\}$ is",
+   "a": "(B) $9$",
+   "s": "$3^2=9$.",
+   "opts": [
+    "$8$",
+    "$9$",
+    "$6$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of onto functions from $\\{1,2,3\\}$ to $\\{a,b\\}$ is",
+   "a": "(C) $6$",
+   "s": "$2^3-2=6$.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$6$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The inverse of $f(x)=4x-7$ is",
+   "a": "(D) $\\frac{x+7}{4}$",
+   "s": "$y=4x-7\\Rightarrow x=\\frac{y+7}{4}$.",
+   "opts": [
+    "$4x+7$",
+    "$\\frac{x-7}{4}$",
+    "$\\frac1{4x-7}$",
+    "$\\frac{x+7}{4}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=|x|$ and $g(x)=5x-2$. Then $(f\\circ g)(x)$ equals",
+   "a": "(A) $|5x-2|$",
+   "s": "$f(g(x))=|5x-2|$.",
+   "opts": [
+    "$|5x-2|$",
+    "$5|x|-2$",
+    "$|5x|-2$",
+    "$5|x-2|$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\sqrt x$ $(x\\ge0)$ and $g(x)=x^2-1$. Then $(f\\circ g)(\\sqrt5)$ equals",
+   "a": "(B) $2$",
+   "s": "$g(\\sqrt5)=4$ and $f(4)=2$.",
+   "opts": [
+    "$\\sqrt5$",
+    "$2$",
+    "$4$",
+    "$\\sqrt3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of one-one functions from a set with $4$ elements to a set with $6$ elements is",
+   "a": "(B) $360$",
+   "s": "${}^6P_4=6\\cdot5\\cdot4\\cdot3=360$.",
+   "opts": [
+    "$1296$",
+    "$360$",
+    "$15$",
+    "$24$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(x,y):[x]=[y]\\}$ on $\\mathbb{R}$. The equivalence class of $2.5$ is",
+   "a": "(D) $[2,3)$",
+   "s": "$[y]=2\\iff2\\le y<3$.",
+   "opts": [
+    "$[2,3]$",
+    "$\\{2.5\\}$",
+    "$(2,3]$",
+    "$[2,3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On $\\{1,2,3\\}$, the number of relations containing $(1,2)$ and $(1,3)$ that are reflexive and symmetric but not transitive is",
+   "a": "(C) $1$",
+   "s": "$\\{(1,1),(2,2),(3,3),(1,2),(2,1),(1,3),(3,1)\\}$ works. Adding $(2,3),(3,2)$ gives $A\\times A$, which is transitive.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f:\\mathbb{R}-\\{0\\}\\to\\mathbb{R}-\\{0\\}$, $f(x)=\\frac1x$ is a bijection. Reason: $f\\circ f$ is the identity function.",
+   "a": "(A)",
+   "s": "$f(f(x))=x$ shows $f$ is its own inverse, so $f$ is a bijection.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $R=\\{(1,1),(2,2)\\}$ is a reflexive relation on $\\{1,2,3\\}$. Reason: A relation on $A$ is reflexive if $(a,a)\\in R$ for every $a\\in A$.",
+   "a": "(D)",
+   "s": "$(3,3)\\notin R$, so A is false. R is the correct definition.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch1-board-01": [
+  {
+   "q": "On $\\{1,2,3\\}$, the relation $R=\\{(1,2),(2,3),(1,3)\\}$ is",
+   "a": "(D) transitive only",
+   "s": "No $(a,a)$; $(1,2)\\in R$ but $(2,1)\\notin R$; the only chain $(1,2),(2,3)$ gives $(1,3)\\in R$. [1]",
+   "opts": [
+    "an equivalence relation",
+    "symmetric only",
+    "reflexive only",
+    "transitive only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of reflexive relations on $\\{a,b\\}$ is",
+   "a": "(D) $4$",
+   "s": "$2^{n^2-n}=2^{2}=4$. [1]",
+   "opts": [
+    "$8$",
+    "$16$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=5x-4$ is",
+   "a": "(B) One-one and onto",
+   "s": "Linear with slope $5\\ne0$: $x=\\frac{y+4}{5}$. [1]",
+   "opts": [
+    "Neither one-one nor onto",
+    "One-one and onto",
+    "Onto but not one-one",
+    "One-one but not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$ and $R=\\{(1,2),(2,3)\\}$. The least number of pairs to add to make $R$ transitive is",
+   "a": "(D) $1$",
+   "s": "Only $(1,3)$ is needed. [1]",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$3$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=x+1$ is",
+   "a": "(A) One-one but not onto",
+   "s": "$1$ has no pre-image. [1]",
+   "opts": [
+    "One-one but not onto",
+    "One-one and onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f=\\{(1,4),(2,5),(3,6)\\}$ from $\\{1,2,3\\}$ to $\\{4,5,6\\}$ is",
+   "a": "(A) One-one and onto",
+   "s": "Distinct images and every element of $\\{4,5,6\\}$ is used. [1]",
+   "opts": [
+    "One-one and onto",
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $R=\\{(a,b):4\\mid(a-b)\\}$ on $\\mathbb{Z}$, the class $[0]$ is",
+   "a": "(A) $\\{4k:k\\in\\mathbb{Z}\\}$",
+   "s": "$x\\in[0]\\iff4\\mid x$. [1]",
+   "opts": [
+    "$\\{4k:k\\in\\mathbb{Z}\\}$",
+    "$\\{0,4\\}$",
+    "$\\{0\\}$",
+    "$\\{2k:k\\in\\mathbb{Z}\\}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:[-1,1]\\to[0,1]$, $f(x)=x^2$ is",
+   "a": "(B) Onto but not one-one",
+   "s": "$f(-1)=f(1)$; every $y\\in[0,1]$ equals $(\\sqrt y)^2$. [1]",
+   "opts": [
+    "One-one but not onto",
+    "Onto but not one-one",
+    "One-one and onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of bijections from $\\{1,2,3,4,5\\}$ to itself is",
+   "a": "(D) $120$",
+   "s": "$5!=120$. [1]",
+   "opts": [
+    "$60$",
+    "$25$",
+    "$3125$",
+    "$120$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of equivalence relations on $\\{1,2,3\\}$ is",
+   "a": "(D) $5$",
+   "s": "Partitions: $1+3+1=5$. [1]",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$6$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=3x^3-x$ is",
+   "a": "(D) Onto but not one-one",
+   "s": "$f(0)=f\\left(\\frac1{\\sqrt3}\\right)=0$; a cubic takes every real value. [1]",
+   "opts": [
+    "One-one and onto",
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The domain of $R=\\{(x,x^2):x\\text{ is a prime less than }10\\}$ is",
+   "a": "(B) $\\{2,3,5,7\\}$",
+   "s": "The first entries are the primes $2,3,5,7$. [1]",
+   "opts": [
+    "$\\{4,9,25,49\\}$",
+    "$\\{2,3,5,7\\}$",
+    "$\\{1,2,3,5,7\\}$",
+    "$\\{2,3,5,7,9\\}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}-\\{-1\\}\\to\\mathbb{R}$, $f(x)=\\dfrac{x-1}{x+1}$ is",
+   "a": "(A) One-one but not onto",
+   "s": "$\\frac{a-1}{a+1}=\\frac{b-1}{b+1}\\Rightarrow a=b$; $y=1$ would need $x-1=x+1$. [1]",
+   "opts": [
+    "One-one but not onto",
+    "Onto but not one-one",
+    "One-one and onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x+[x]$ is",
+   "a": "(B) One-one but not onto",
+   "s": "$f$ is strictly increasing; for $0\\le x<1$, $f(x)<1$ and for $1\\le x<2$, $f(x)\\ge2$, so $1.5$ is missed. [1]",
+   "opts": [
+    "One-one and onto",
+    "One-one but not onto",
+    "Onto but not one-one",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $R=\\{(a,b):|a-b|<2\\}$ on $\\mathbb{Z}$ is not transitive. Reason: $(1,2)$ and $(2,3)$ are in $R$ but $(1,3)$ is not.",
+   "a": "(A)",
+   "s": "R gives the counterexample that proves A. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^2$ is one-one. Reason: $f(x)=x^2$ is increasing on $[0,\\infty)$.",
+   "a": "(D)",
+   "s": "$f(-2)=f(2)$, so A is false; R is true. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Check whether $R=\\{(a,b):b=a+1\\}$ on $A=\\{1,2,3,4,5,6\\}$ is reflexive, symmetric or transitive.",
+   "a": "None of the three properties holds.",
+   "s": "$(1,1)\\notin R$: not reflexive [½]. $(1,2)\\in R$, $(2,1)\\notin R$: not symmetric [½]. $(1,2),(2,3)\\in R$, $(1,3)\\notin R$: not transitive [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=2x+1$ is one-one but not onto.",
+    "a": "One-one, not onto.",
+    "s": "$2a+1=2b+1\\Rightarrow a=b$ [1]. $2x+1=1\\Rightarrow x=0\\notin\\mathbb{N}$, so $1$ has no pre-image [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):a-b\\text{ is even}\\}$ on $A=\\{1,2,3,4\\}$. Write $[2]$ and the number of equivalence classes.",
+   "a": "$[2]=\\{2,4\\}$; $2$ classes.",
+   "s": "$a-2$ even $\\Rightarrow a\\in\\{2,4\\}$ [1]. The classes are $\\{1,3\\}$ and $\\{2,4\\}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=7x-3$ is a bijection.",
+   "a": "Bijection.",
+   "s": "$7a-3=7b-3\\Rightarrow a=b$ [1]. For $y\\in\\mathbb{R}$, $x=\\frac{y+3}{7}$ gives $f(x)=y$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=|x|$ is neither one-one nor onto.",
+    "a": "Neither.",
+    "s": "$f(-1)=f(1)$ [1]. $|x|\\ge0$, so $-1$ has no pre-image [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $R=\\{(a,b):a\\le b^3\\}$ on $\\mathbb{R}$ is neither reflexive, nor symmetric, nor transitive.",
+   "a": "None of the properties holds.",
+   "s": "$\\frac12\\le\\frac18$ is false, so $\\left(\\frac12,\\frac12\\right)\\notin R$ [1]. $(1,2)\\in R$ since $1\\le8$, but $(2,1)\\notin R$ [1]. $(3,\\frac32)\\in R$ $\\left(3\\le\\frac{27}{8}\\right)$, $(\\frac32,\\frac43)\\in R$ $\\left(\\frac32\\le\\frac{64}{27}\\right)$, but $3\\le\\frac{64}{27}$ is false [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Show that $(a,b)\\,R\\,(c,d)\\iff ad=bc$ is an equivalence relation on $\\mathbb{N}\\times\\mathbb{N}$.",
+    "a": "Equivalence relation.",
+    "s": "$ab=ba$ [1]. $ad=bc\\Rightarrow cb=da$ [1]. $ad=bc$ and $cf=de$ give $adcf=bcde$; cancel $cd\\ne0$: $af=be$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:\\mathbb{R}-\\left\\{-\\frac43\\right\\}\\to\\mathbb{R}-\\left\\{\\frac43\\right\\}$, $f(x)=\\dfrac{4x}{3x+4}$ is a bijection.",
+   "a": "Bijection.",
+   "s": "$\\frac{4a}{3a+4}=\\frac{4b}{3b+4}\\Rightarrow12ab+16a=12ab+16b\\Rightarrow a=b$ [1]. $y=\\frac{4x}{3x+4}\\Rightarrow x=\\frac{4y}{4-3y}$, defined for $y\\ne\\frac43$ [1]. $\\frac{4y}{4-3y}=-\\frac43$ gives $12y=-16+12y$, impossible, so $x$ is in the domain [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=\\dfrac{x}{x^2+1}$ is neither one-one nor onto.",
+    "a": "Neither.",
+    "s": "$f(2)=f\\left(\\frac12\\right)=\\frac25$ [1]. $x^2+1\\ge2|x|\\Rightarrow|f(x)|\\le\\frac12$ [1], so $1$ has no pre-image [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$L$ is the set of lines in the $xy$-plane and $R=\\{(L_1,L_2):L_1\\parallel L_2\\}$ (a line is parallel to itself). Show that $R$ is an equivalence relation and find the lines related to $y=2x+4$.",
+   "a": "Equivalence relation; the lines $y=2x+c$, $c\\in\\mathbb{R}$.",
+   "s": "Reflexive and symmetric by definition [1]. Two lines parallel to a third are parallel: transitive [1]. Lines parallel to $y=2x+4$ have slope $2$: $y=2x+c$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=4x^3+7$. Show that $f$ is a bijection. Also show that $xRy\\iff f(x)=f(y)$ is an equivalence relation on $\\mathbb{R}$ and find $[2]$.",
+   "a": "$f$ is a bijection; $R$ is an equivalence relation; $[2]=\\{2\\}$.",
+   "s": "$4a^3+7=4b^3+7\\Rightarrow a^3=b^3\\Rightarrow a=b$ [1]. For $y\\in\\mathbb{R}$, $x=\\sqrt[3]{\\frac{y-7}{4}}$ gives $f(x)=y$ [1]. $R$ is reflexive, symmetric and transitive because equality is [2]. As $f$ is one-one, $f(x)=f(2)\\Rightarrow x=2$, so $[2]=\\{2\\}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Show that $R=\\{(a,b):5\\mid(a-b)\\}$ on $\\mathbb{Z}$ is an equivalence relation and write all its classes.",
+    "a": "Classes $[0],[1],[2],[3],[4]$.",
+    "s": "$5\\mid0$ [1]. $5\\mid(a-b)\\Rightarrow5\\mid(b-a)$ [1]. $5\\mid(a-b),\\ 5\\mid(b-c)\\Rightarrow5\\mid(a-c)$ [1]. $[r]=\\{5k+r:k\\in\\mathbb{Z}\\}$ for $r=0,1,2,3,4$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. In a school, $A$ is the set of all students and $aRb$ means \"$a$ and $b$ were born in the same month\". (i) Is $R$ reflexive? [1] (ii) Is $R$ symmetric? [1] (iii) Show that $R$ is an equivalence relation and give the greatest possible number of classes. [2] \\textbf{OR} (iii) $f:A\\to\\{\\text{months}\\}$ maps each student to the birth month. If the school has $40$ students, can $f$ be one-one? [2]",
+   "a": "(i) Yes; (ii) Yes; (iii) equivalence relation, at most $12$ classes; OR no.",
+   "s": "(i) Each student shares the birth month with himself or herself [1]. (ii) Same month is symmetric [1]. (iii) If $a,b$ and $b,c$ share a month, so do $a,c$ [1]; one class per month, so at most $12$ classes [1]. OR $40>12$, so two students share a month [1], hence $f$ is not one-one [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch1-board-02": [
+  {
+   "q": "On $\\{a,b,c\\}$, $R=\\{(a,a),(b,b),(c,c),(a,b)\\}$ is",
+   "a": "(D) reflexive and transitive but not symmetric",
+   "s": "$(a,b)\\in R$, $(b,a)\\notin R$; every chain closes. [1]",
+   "opts": [
+    "symmetric only",
+    "reflexive and symmetric but not transitive",
+    "an equivalence relation",
+    "reflexive and transitive but not symmetric"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$n(A)=3$ and $n(B)=2$. The number of relations from $A$ to $B$ is",
+   "a": "(C) $64$",
+   "s": "$n(A\\times B)=6$, so $2^6=64$. [1]",
+   "opts": [
+    "$8$",
+    "$6$",
+    "$64$",
+    "$32$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^4$ is",
+   "a": "(B) Neither one-one nor onto",
+   "s": "$f(1)=f(-1)$; $-1$ has no pre-image. [1]",
+   "opts": [
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one",
+    "One-one and onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=x^2+x+1$ is",
+   "a": "(A) One-one but not onto",
+   "s": "$f$ is increasing on $\\mathbb{N}$; $f(x)\\ge3$, so $1$ is missed. [1]",
+   "opts": [
+    "One-one but not onto",
+    "Onto but not one-one",
+    "One-one and onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):a-b\\in\\mathbb{Z}\\}$ on $\\mathbb{R}$ is",
+   "a": "(C) an equivalence relation",
+   "s": "$0\\in\\mathbb{Z}$; negatives and sums of integers are integers. [1]",
+   "opts": [
+    "symmetric only",
+    "reflexive only",
+    "an equivalence relation",
+    "not transitive"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of equivalence relations on $\\{1,2\\}$ is",
+   "a": "(B) $2$",
+   "s": "The identity relation and $A\\times A$. [1]",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$4$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the set of all triangles, \"is similar to\" is",
+   "a": "(A) an equivalence relation",
+   "s": "Similarity is reflexive, symmetric and transitive. [1]",
+   "opts": [
+    "an equivalence relation",
+    "reflexive only",
+    "transitive only",
+    "symmetric only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of one-one functions from $\\{1,2,3\\}$ to $\\{a,b\\}$ is",
+   "a": "(D) $0$",
+   "s": "Three elements cannot have distinct images in a set of two. [1]",
+   "opts": [
+    "$2$",
+    "$8$",
+    "$6$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=1-x^3$ is",
+   "a": "(C) One-one and onto",
+   "s": "Strictly decreasing; $x=\\sqrt[3]{1-y}$. [1]",
+   "opts": [
+    "Neither one-one nor onto",
+    "Onto but not one-one",
+    "One-one and onto",
+    "One-one but not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):b=a^2\\}$ on $\\mathbb{N}$ is",
+   "a": "(B) neither reflexive, nor symmetric, nor transitive",
+   "s": "$(2,2)\\notin R$; $(2,4)\\in R$, $(4,2)\\notin R$; $(2,4),(4,16)\\in R$, $(2,16)\\notin R$. [1]",
+   "opts": [
+    "transitive only",
+    "neither reflexive, nor symmetric, nor transitive",
+    "reflexive only",
+    "symmetric only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On $A=\\{1,2,\\dots,10\\}$, $R$ is \"congruent modulo $4$\". The class $[3]$ is",
+   "a": "(C) $\\{3,7\\}$",
+   "s": "$x\\equiv3\\pmod4$ with $1\\le x\\le10$. [1]",
+   "opts": [
+    "$\\{3\\}$",
+    "$\\{1,3,5,7,9\\}$",
+    "$\\{3,7\\}$",
+    "$\\{3,7,11\\}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{Z}\\to\\mathbb{Z}$, $f(x)=2x$ is",
+   "a": "(B) One-one but not onto",
+   "s": "Odd integers have no pre-image. [1]",
+   "opts": [
+    "Neither one-one nor onto",
+    "One-one but not onto",
+    "One-one and onto",
+    "Onto but not one-one"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The least number of pairs to add to $R=\\{(1,2),(2,1)\\}$ to make it an equivalence relation on $\\{1,2,3\\}$ is",
+   "a": "(D) $3$",
+   "s": "Add $(1,1),(2,2),(3,3)$. [1]",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$4$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to[-1,1]$, $f(x)=\\cos x$ is",
+   "a": "(C) Onto but not one-one",
+   "s": "Every value in $[-1,1]$ is taken; $\\cos0=\\cos2\\pi$. [1]",
+   "opts": [
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one",
+    "One-one and onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $R=\\{(1,1),(2,2),(3,3),(1,2)\\}$ on $\\{1,2,3\\}$ is not symmetric. Reason: $(1,2)\\in R$ but $(2,1)\\notin R$.",
+   "a": "(A)",
+   "s": "R is the counterexample. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f:\\mathbb{Z}\\to\\mathbb{Z}$, $f(x)=x+2$ is onto. Reason: For every $y\\in\\mathbb{Z}$, $x=y-2\\in\\mathbb{Z}$ satisfies $f(x)=y$.",
+   "a": "(A)",
+   "s": "R shows every integer has a pre-image. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Show that $R=\\{(a,b):a\\le b\\}$ on $\\mathbb{R}$ is reflexive and transitive but not symmetric.",
+   "a": "Reflexive, transitive, not symmetric.",
+   "s": "$a\\le a$ [½]. $a\\le b,\\ b\\le c\\Rightarrow a\\le c$ [½]. $1\\le2$ but $2\\not\\le1$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^2-4$ is neither one-one nor onto.",
+    "a": "Neither.",
+    "s": "$f(2)=f(-2)=0$ [1]. $f(x)\\ge-4$, so $-5$ has no pre-image [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(x,y):x+2y=8\\}$ is a relation on $\\mathbb{N}$. Write the domain and range of $R$.",
+   "a": "Domain $\\{6,4,2\\}$, range $\\{1,2,3\\}$.",
+   "s": "$x=8-2y>0\\Rightarrow y\\in\\{1,2,3\\}$ [1], giving $x=6,4,2$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:\\mathbb{R}-\\{0\\}\\to\\mathbb{R}-\\{0\\}$, $f(x)=\\dfrac3x$ is a bijection.",
+   "a": "Bijection.",
+   "s": "$\\frac3a=\\frac3b\\Rightarrow a=b$ [1]. For $y\\ne0$, $x=\\frac3y\\ne0$ and $f(x)=y$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "$A=\\{1,2,3\\}$, $B=\\{4,5,6,7\\}$ and $f=\\{(1,4),(2,5),(3,6)\\}$. Show that $f$ is one-one but not onto.",
+    "a": "One-one, not onto.",
+    "s": "Distinct elements have distinct images [1]. $7$ has no pre-image [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $R=\\{(a,b):|a-b|\\text{ is even}\\}$ on $A=\\{1,2,3,4,5\\}$ is an equivalence relation. Show that all elements of $\\{1,3,5\\}$ are related to each other, all elements of $\\{2,4\\}$ are related to each other, and no element of $\\{1,3,5\\}$ is related to an element of $\\{2,4\\}$.",
+   "a": "Equivalence relation with classes $\\{1,3,5\\}$ and $\\{2,4\\}$.",
+   "s": "$|a-a|=0$ even; $|a-b|=|b-a|$; $a-b$ and $b-c$ even $\\Rightarrow a-c$ even [1]. Two odd or two even numbers differ by an even number [1]. An odd and an even number differ by an odd number [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "On the set of all triangles, $T_1RT_2\\iff T_1$ is similar to $T_2$. Show that $R$ is an equivalence relation. Which of the right triangles with sides $3,4,5$; $5,12,13$; $6,8,10$ are related?",
+    "a": "Equivalence relation; the $3,4,5$ and $6,8,10$ triangles are related.",
+    "s": "Similarity is reflexive, symmetric and transitive [1]. $\\frac63=\\frac84=\\frac{10}{5}=2$ [1]. $\\frac53\\ne\\frac{12}{4}$, so the $5,12,13$ triangle is related to neither [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:[-1,1]\\to\\mathbb{R}$, $f(x)=\\dfrac{x}{x+2}$ is one-one, and find its range.",
+   "a": "One-one; range $\\left[-1,\\frac13\\right]$.",
+   "s": "$\\frac{a}{a+2}=\\frac{b}{b+2}\\Rightarrow2a=2b$ [1]. $f(x)=1-\\frac{2}{x+2}$ increases on $[-1,1]$ [1]; $f(-1)=-1$, $f(1)=\\frac13$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Check whether $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^3-x$ is one-one or onto.",
+    "a": "Onto but not one-one.",
+    "s": "$f(0)=f(1)=0$ [1]. $f$ is continuous with $f(x)\\to\\pm\\infty$ as $x\\to\\pm\\infty$ [1], so every real value is taken [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "On $\\mathbb{R}\\times\\mathbb{R}$, $(a,b)\\,R\\,(c,d)\\iff a^2+b^2=c^2+d^2$. Show that $R$ is an equivalence relation and describe the class of $(3,4)$.",
+   "a": "Equivalence relation; the class is the circle $x^2+y^2=25$.",
+   "s": "Equality of $a^2+b^2$ is reflexive, symmetric and transitive [2]. $3^2+4^2=25$, so the class is $\\{(x,y):x^2+y^2=25\\}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "On $A=\\{1,2,\\dots,9\\}$, $(a,b)\\,R\\,(c,d)\\iff a+d=b+c$ for $(a,b),(c,d)\\in A\\times A$. Show that $R$ is an equivalence relation and find the class of $(2,5)$.",
+   "a": "Equivalence relation; $[(2,5)]=\\{(1,4),(2,5),(3,6),(4,7),(5,8),(6,9)\\}$.",
+   "s": "$a+b=b+a$ [1]. $a+d=b+c\\Rightarrow c+b=d+a$ [1]. $a+d=b+c$, $c+f=d+e\\Rightarrow a+f=b+e$ [1]. $(x,y)R(2,5)\\iff x+5=y+2\\iff y=x+3$ [1], with $x,y\\in A$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=\\dfrac{x}{1+|x|}$ is one-one, find its range, and decide whether it is onto.",
+    "a": "One-one; range $(-1,1)$; not onto $\\mathbb{R}$.",
+    "s": "$f(x)$ has the sign of $x$, and on each side $\\frac{a}{1+a}=\\frac{b}{1+b}\\Rightarrow a=b$ [2]. $|f(x)|<1$ and $x=\\frac{y}{1-|y|}$ for $|y|<1$ [2]. So the range is $(-1,1)$ and $f$ is not onto $\\mathbb{R}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A class has $30$ students with roll numbers $1$ to $30$. The teacher says $aRb$ when the roll numbers of $a$ and $b$ leave the same remainder on division by $5$. (i) Is $R$ reflexive? [1] (ii) Is $R$ symmetric? [1] (iii) How many equivalence classes does $R$ have? [2] \\textbf{OR} (iii) Write the class of roll number $7$. [2]",
+   "a": "(i) Yes; (ii) Yes; (iii) $5$; OR $\\{2,7,12,17,22,27\\}$.",
+   "s": "(i) Same number, same remainder [1]. (ii) Symmetric by definition [1]. (iii) Remainders $0,1,2,3,4$ [1] give $5$ classes [1]. OR Remainder $2$ [1]: $\\{2,7,12,17,22,27\\}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch1-board-03": [
+  {
+   "q": "On $\\{1,2,3\\}$, $R=\\{(1,1),(2,2)\\}$ is",
+   "a": "(C) symmetric and transitive but not reflexive",
+   "s": "$(3,3)\\notin R$; the pairs present cause no failure of symmetry or transitivity. [1]",
+   "opts": [
+    "reflexive only",
+    "not transitive",
+    "symmetric and transitive but not reflexive",
+    "an equivalence relation"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of non-empty relations on a set with $2$ elements is",
+   "a": "(A) $15$",
+   "s": "$2^4-1=15$. [1]",
+   "opts": [
+    "$15$",
+    "$4$",
+    "$3$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=x^2+x$ is",
+   "a": "(D) One-one but not onto",
+   "s": "Increasing on $\\mathbb{N}$; $1$ is not a value. [1]",
+   "opts": [
+    "One-one and onto",
+    "Neither one-one nor onto",
+    "Onto but not one-one",
+    "One-one but not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^3-3x$ is",
+   "a": "(A) Onto but not one-one",
+   "s": "$f(0)=f(\\sqrt3)=0$; a cubic is onto $\\mathbb{R}$. [1]",
+   "opts": [
+    "Onto but not one-one",
+    "One-one but not onto",
+    "One-one and onto",
+    "Neither one-one nor onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which relation on $\\mathbb{Z}$ is an equivalence relation?",
+   "a": "(D) $aRb\\iff7\\mid(a-b)$",
+   "s": "Congruence modulo $7$ is an equivalence relation; the others fail reflexivity or symmetry. [1]",
+   "opts": [
+    "$aRb\\iff a\\mid b$",
+    "$aRb\\iff a+b=0$",
+    "$aRb\\iff a<b$",
+    "$aRb\\iff7\\mid(a-b)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$R=\\{(a,b):a=b\\text{ or }a=-b\\}$ on $\\mathbb{R}$ is",
+   "a": "(B) an equivalence relation",
+   "s": "$aRb\\iff|a|=|b|$. [1]",
+   "opts": [
+    "reflexive only",
+    "an equivalence relation",
+    "not transitive",
+    "symmetric only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $R=\\{(a,b):|a|=|b|\\}$ on $\\mathbb{Z}$, the number of elements in $[1]$ is",
+   "a": "(C) $2$",
+   "s": "$[1]=\\{1,-1\\}$. [1]",
+   "opts": [
+    "infinite",
+    "$3$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{Z}\\to\\mathbb{Z}$, $f(x)=x^2$ is",
+   "a": "(A) Neither one-one nor onto",
+   "s": "$f(1)=f(-1)$; $2$ is not a square. [1]",
+   "opts": [
+    "Neither one-one nor onto",
+    "One-one and onto",
+    "Onto but not one-one",
+    "One-one but not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of one-one functions from a set with $2$ elements to a set with $4$ elements is",
+   "a": "(D) $12$",
+   "s": "$4\\cdot3=12$. [1]",
+   "opts": [
+    "$8$",
+    "$6$",
+    "$16$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=2^x$ is",
+   "a": "(B) One-one but not onto",
+   "s": "Strictly increasing; $2^x>0$. [1]",
+   "opts": [
+    "Neither one-one nor onto",
+    "One-one but not onto",
+    "Onto but not one-one",
+    "One-one and onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On $\\{1,2,3,4\\}$, $R=\\{(a,b):a+b=5\\}$ is",
+   "a": "(A) symmetric only",
+   "s": "$(1,1)\\notin R$; $a+b=b+a$; $(1,4),(4,1)\\in R$ but $(1,1)\\notin R$. [1]",
+   "opts": [
+    "symmetric only",
+    "reflexive only",
+    "transitive only",
+    "an equivalence relation"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the set of lines in a plane, \"is perpendicular to\" is",
+   "a": "(A) symmetric only",
+   "s": "$L\\not\\perp L$; $L_1\\perp L_2\\Rightarrow L_2\\perp L_1$; $L_1\\perp L_2\\perp L_3\\Rightarrow L_1\\parallel L_3$. [1]",
+   "opts": [
+    "symmetric only",
+    "reflexive only",
+    "an equivalence relation",
+    "transitive only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a finite set and $f:A\\to A$ is one-one. Then $f$ is",
+   "a": "(C) onto",
+   "s": "$n$ distinct images fill a set of $n$ elements. [1]",
+   "opts": [
+    "constant",
+    "not defined",
+    "onto",
+    "not onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$g:\\mathbb{R}\\to\\mathbb{R}$, $g(x)=|x|+x$ is",
+   "a": "(C) Neither one-one nor onto",
+   "s": "$g(-1)=g(-2)=0$; $g(x)\\ge0$. [1]",
+   "opts": [
+    "Onto but not one-one",
+    "One-one but not onto",
+    "Neither one-one nor onto",
+    "One-one and onto"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $R=\\{(1,1),(2,2),(3,3),(1,2),(2,1)\\}$ is an equivalence relation on $\\{1,2,3\\}$. Reason: $R$ is reflexive, symmetric and transitive.",
+   "a": "(A)",
+   "s": "R is exactly the definition applied to A. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^3$ is onto. Reason: Every polynomial function of odd degree from $\\mathbb{R}$ to $\\mathbb{R}$ is onto.",
+   "a": "(A)",
+   "s": "$x^3$ has odd degree, so R explains A. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Give an example of a relation on $A=\\{1,2,3\\}$ that is reflexive and symmetric but not transitive.",
+   "a": "$R=\\{(1,1),(2,2),(3,3),(1,2),(2,1),(2,3),(3,2)\\}$",
+   "s": "Reflexive and symmetric by inspection [1]. $(1,2),(2,3)\\in R$ but $(1,3)\\notin R$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $R=\\{(1,2),(2,1),(1,1),(2,2)\\}$ on $\\{1,2,3\\}$ is symmetric and transitive but not reflexive.",
+    "a": "Symmetric, transitive, not reflexive.",
+    "s": "Symmetric pairs present; every chain closes [1]. $(3,3)\\notin R$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=x^2$ is one-one but not onto.",
+   "a": "One-one, not onto.",
+   "s": "For $a,b>0$, $a^2=b^2\\Rightarrow a=b$ [1]. $2$ is not a perfect square [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$f:\\{1,2,3\\}\\to\\{a,b,c\\}$ is one-one. Show that $f$ is onto.",
+   "a": "Onto.",
+   "s": "$f(1),f(2),f(3)$ are three distinct elements [1]; so they are $a,b,c$ in some order [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=[x]$ is neither one-one nor onto.",
+    "a": "Neither.",
+    "s": "$[1.2]=[1.9]$ [1]. $0.5$ is not an integer value [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $R=\\{(a,b):a-b+\\sqrt3\\text{ is irrational}\\}$ on $\\mathbb{R}$ is reflexive but neither symmetric nor transitive.",
+   "a": "Reflexive only.",
+   "s": "$a-a+\\sqrt3=\\sqrt3$ is irrational [1]. $(\\sqrt3,1)\\in R$ since $2\\sqrt3-1$ is irrational, but $1-\\sqrt3+\\sqrt3=1$, so $(1,\\sqrt3)\\notin R$ [1]. $(\\sqrt3,1)$ and $(1,2\\sqrt3)$ are in $R$ ($1-\\sqrt3$ is irrational), but $\\sqrt3-2\\sqrt3+\\sqrt3=0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Show that $R=\\{(a,b):a+b=10\\}$ on $\\mathbb{N}$ is symmetric but neither reflexive nor transitive.",
+    "a": "Symmetric only.",
+    "s": "$(1,1)\\notin R$ [1]. $a+b=b+a$ [1]. $(1,9),(9,1)\\in R$ but $(1,1)\\notin R$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f:\\mathbb{R}\\to\\mathbb{R}$ with $f(x)=x^2$ for $x\\ge0$ and $f(x)=-x^2$ for $x<0$ is a bijection.",
+   "a": "Bijection.",
+   "s": "Same sign images come from the same side, and $x^2$ is one-one on each side [1]. For $y\\ge0$, $x=\\sqrt y$ [1]; for $y<0$, $x=-\\sqrt{-y}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "$f:\\mathbb{N}\\to\\mathbb{N}$ with $f(1)=f(2)=1$ and $f(x)=x-1$ for $x>2$. Show that $f$ is onto but not one-one.",
+    "a": "Onto, not one-one.",
+    "s": "$f(1)=f(2)$ [1]. For $n\\in\\mathbb{N}$, $f(n+1)=n$ when $n\\ge2$ and $f(1)=1$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is the set of students of a boys’ school. Show that $R=\\{(a,b):a\\text{ is a sister of }b\\}$ is the empty relation and $R^{\\prime}=\\{(a,b):\\text{the heights of }a,b\\text{ differ by less than }3\\text{ m}\\}$ is the universal relation.",
+   "a": "Empty and universal.",
+   "s": "No boy is a sister of anyone, so $R=\\varnothing$ [1½]. Heights of any two students differ by less than $3$ m, so $R^{\\prime}=A\\times A$ [1½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is the set of points in a plane and $R=\\{(P,Q):OP=OQ\\}$, where $O$ is the origin. Show that $R$ is an equivalence relation and that the set of points related to $P\\ne O$ is the circle through $P$ with centre $O$.",
+   "a": "Equivalence relation; the class of $P$ is the circle with centre $O$ and radius $OP$.",
+   "s": "$OP=OP$ [1]. $OP=OQ\\Rightarrow OQ=OP$ [1]. $OP=OQ$, $OQ=OS\\Rightarrow OP=OS$ [1]. $Q$ is related to $P\\iff OQ=OP$ [1], the circle with centre $O$ and radius $OP$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$A=\\{1,2,\\dots,7\\}$ and $aRb\\iff a,b$ are both odd or both even. Show that $R$ is an equivalence relation and write its classes.",
+    "a": "Classes $\\{1,3,5,7\\}$ and $\\{2,4,6\\}$.",
+    "s": "Same parity is reflexive [1], symmetric [1] and transitive [1]. Classes: odd numbers and even numbers [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A company gives each of its $5$ employees an ID from $I=\\{101,102,\\dots,108\\}$; different employees get different IDs. Let $f$ map each employee to the ID. (i) Is $f$ one-one? [1] (ii) Is $f$ onto $I$? [1] (iii) In how many ways can the IDs be given? [2] \\textbf{OR} (iii) If only IDs $101$ to $105$ are used, how many bijections are possible? [2]",
+   "a": "(i) Yes; (ii) No; (iii) $6720$; OR $120$.",
+   "s": "(i) Different employees, different IDs [1]. (ii) $5$ images cannot cover $8$ IDs [1]. (iii) ${}^8P_5=8\\cdot7\\cdot6\\cdot5\\cdot4$ [1] $=6720$ [1]. OR $5!$ [1] $=120$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch1-main-01": [
+  {
+   "q": "The number of reflexive and symmetric relations on $\\{1,2,3\\}$ that contain $(1,2)$ is",
+   "a": "(D) $4$",
+   "s": "Diagonal and $(1,2),(2,1)$ are fixed; the pairs $\\{1,3\\},\\{2,3\\}$ are free: $2^2=4$.",
+   "opts": [
+    "$8$",
+    "$2$",
+    "$16$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac1{\\sqrt{[x]^2-[x]-6}}$ is",
+   "a": "(B) $(-\\infty,-2)\\cup[4,\\infty)$",
+   "s": "$([x]-3)([x]+2)>0\\Rightarrow[x]\\ge4$ or $[x]\\le-3$, so $x\\ge4$ or $x<-2$.",
+   "opts": [
+    "$(-2,3)$",
+    "$(-\\infty,-2)\\cup[4,\\infty)$",
+    "$(-\\infty,-2)\\cup(3,\\infty)$",
+    "$(-\\infty,-2]\\cup[3,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac{x^2+x+2}{x^2+x+1}$, $x\\in\\mathbb{R}$, is",
+   "a": "(C) $\\left(1,\\frac73\\right]$",
+   "s": "$f=1+\\frac1t$ with $t=x^2+x+1\\ge\\frac34$, so $1<f\\le1+\\frac43$.",
+   "opts": [
+    "$\\left[1,\\frac73\\right]$",
+    "$(1,\\infty)$",
+    "$\\left(1,\\frac73\\right]$",
+    "$\\left(1,\\frac73\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=2x+\\sin x$ is",
+   "a": "(A) one-one and onto",
+   "s": "$f'(x)=2+\\cos x>0$ and $f(x)\\to\\pm\\infty$.",
+   "opts": [
+    "one-one and onto",
+    "one-one but not onto",
+    "onto but not one-one",
+    "neither one-one nor onto"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of onto functions from $\\{1,2,3,4,5\\}$ to $\\{a,b,c\\}$ is",
+   "a": "(B) $150$",
+   "s": "$3^5-3\\cdot2^5+3\\cdot1^5=243-96+3$.",
+   "opts": [
+    "$243$",
+    "$150$",
+    "$90$",
+    "$180$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{1-x}{1+x}$, $x\\ne-1$. Then $f(f(x))$ equals",
+   "a": "(C) $x$",
+   "s": "$f(f(x))=\\frac{(1+x)-(1-x)}{(1+x)+(1-x)}=x$.",
+   "opts": [
+    "$\\frac{1+x}{1-x}$",
+    "$\\frac1x$",
+    "$x$",
+    "$-x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The fundamental period of $f(x)=|\\sin x|+|\\cos x|$ is",
+   "a": "(B) $\\frac\\pi2$",
+   "s": "$f\\left(x+\\frac\\pi2\\right)=|\\cos x|+|\\sin x|$, and no smaller positive period exists.",
+   "opts": [
+    "$2\\pi$",
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\log\\left(x+\\sqrt{x^2+1}\\right)$ is",
+   "a": "(D) an odd function",
+   "s": "$f(-x)=\\log\\frac{1}{x+\\sqrt{x^2+1}}=-f(x)$.",
+   "opts": [
+    "neither even nor odd",
+    "an even function",
+    "periodic",
+    "an odd function"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x+y)=f(x)+f(y)$ for all real $x,y$ and $f(1)=3$. Then $\\sum_{k=1}^{10}f(k)$ equals",
+   "a": "(C) $165$",
+   "s": "$f(k)=3k$, so the sum is $3\\cdot55$.",
+   "opts": [
+    "$330$",
+    "$55$",
+    "$165$",
+    "$30$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of equivalence relations on $\\{1,2,3,4\\}$ is",
+   "a": "(D) $15$",
+   "s": "Partitions of $4$ elements: $1+7+6+1=15$.",
+   "opts": [
+    "$16$",
+    "$12$",
+    "$14$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$R=\\{(x,y):x^2-4xy+3y^2=0\\}$ on $\\mathbb{N}$ is",
+   "a": "(B) reflexive but neither symmetric nor transitive",
+   "s": "$(x-y)(x-3y)=0$. $(3,1)\\in R$, $(1,3)\\notin R$; $(9,3),(3,1)\\in R$, $(9,1)\\notin R$.",
+   "opts": [
+    "an equivalence relation",
+    "reflexive but neither symmetric nor transitive",
+    "reflexive and transitive",
+    "symmetric and transitive"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^3+x^2+3x+\\sin x$ is",
+   "a": "(D) one-one and onto",
+   "s": "$f'(x)\\ge3x^2+2x+2>0$, and $f$ is unbounded both ways.",
+   "opts": [
+    "neither one-one nor onto",
+    "onto but not one-one",
+    "one-one but not onto",
+    "one-one and onto"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The inverse of $f(x)=\\dfrac{e^x-e^{-x}}{2}$ is",
+   "a": "(A) $\\log\\left(x+\\sqrt{x^2+1}\\right)$",
+   "s": "$e^{2y}-2xe^y-1=0\\Rightarrow e^y=x+\\sqrt{x^2+1}$.",
+   "opts": [
+    "$\\log\\left(x+\\sqrt{x^2+1}\\right)$",
+    "$\\log\\left(x+\\sqrt{x^2-1}\\right)$",
+    "$\\log\\left(\\sqrt{x^2+1}-x\\right)$",
+    "$\\frac12\\log\\frac{1+x}{1-x}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $\\sin^{-1}\\left(\\log_2\\frac x2\\right)$ is",
+   "a": "(B) $[1,4]$",
+   "s": "$-1\\le\\log_2\\frac x2\\le1\\Rightarrow\\frac12\\le\\frac x2\\le2$.",
+   "opts": [
+    "$[2,4]$",
+    "$[1,4]$",
+    "$\\left[\\frac12,2\\right]$",
+    "$(0,4]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=[x]+[-x]$ is",
+   "a": "(C) $\\{-1,0\\}$",
+   "s": "$0$ for integers, $-1$ otherwise.",
+   "opts": [
+    "$\\{0,1\\}$",
+    "$\\{-1,0,1\\}$",
+    "$\\{-1,0\\}$",
+    "$\\{0\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$g(x)=x^2+x-2$ and $(g\\circ f)(x)=4x^2-10x+4$. A possible $f(x)$ is",
+   "a": "(C) $2x-3$",
+   "s": "$g(2x-3)=4x^2-12x+9+2x-3-2=4x^2-10x+4$.",
+   "opts": [
+    "$2x+3$",
+    "$4x-3$",
+    "$2x-3$",
+    "$x-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of functions $f:\\{1,2,3,4\\}\\to\\{1,2,3,4\\}$ that are bijections with $f(i)\\ne i$ for every $i$ is",
+   "a": "(C) $9$",
+   "s": "Derangements of $4$: $4!\\left(1-1+\\frac12-\\frac16+\\frac1{24}\\right)=9$.",
+   "opts": [
+    "$6$",
+    "$11$",
+    "$9$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac{x}{1+x^2}$, $x\\in\\mathbb{R}$, is",
+   "a": "(D) $\\left[-\\frac12,\\frac12\\right]$",
+   "s": "$1+x^2\\ge2|x|$, with equality at $x=\\pm1$.",
+   "opts": [
+    "$[-1,1]$",
+    "$\\left(-\\frac12,\\frac12\\right)$",
+    "$[0,1]$",
+    "$\\left[-\\frac12,\\frac12\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=ax+b$ with $a>0$ and $(f\\circ f)(x)=4x+9$. Then $f(1)$ equals",
+   "a": "(B) $5$",
+   "s": "$a^2=4$, $ab+b=9\\Rightarrow a=2$, $b=3$.",
+   "opts": [
+    "$4$",
+    "$5$",
+    "$3$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which function is even?",
+   "a": "(C) $x\\sin x$",
+   "s": "$(-x)\\sin(-x)=x\\sin x$.",
+   "opts": [
+    "$x\\cos x$",
+    "$\\sin x+\\cos x$",
+    "$x\\sin x$",
+    "$x+x^3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of reflexive relations on a set with $4$ elements is $2^k$. Find $k$.",
+   "a": "$12$",
+   "s": "$n^2-n=16-4=12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of functions $f:\\{1,2,3\\}\\to\\{1,2,\\dots,6\\}$ with $f(1)<f(2)<f(3)$.",
+   "a": "$20$",
+   "s": "Choose any $3$ values: $\\binom63=20$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=3x+2$. Find $f^{-1}(11)$.",
+   "a": "$3$",
+   "s": "$3x+2=11$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of elements in the range of $f(x)=\\left[\\frac x3\\right]$, $x\\in\\{1,2,\\dots,20\\}$.",
+   "a": "$7$",
+   "s": "Values $0,1,\\dots,6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)+2f\\left(\\frac1x\\right)=3x$ for $x\\ne0$. Find $f(2)$.",
+   "a": "$-1$",
+   "s": "$f(2)+2f\\left(\\frac12\\right)=6$ and $f\\left(\\frac12\\right)+2f(2)=\\frac32$. Eliminate $f\\left(\\frac12\\right)$: $-3f(2)=3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch1-main-02": [
+  {
+   "q": "$R=\\{(a,b):1+ab>0\\}$ on $\\mathbb{R}$ is",
+   "a": "(C) reflexive and symmetric but not transitive",
+   "s": "$1+a^2>0$; $ab=ba$; $(1,-\\frac12),(-\\frac12,-3)\\in R$ but $1+1(-3)<0$.",
+   "opts": [
+    "an equivalence relation",
+    "symmetric only",
+    "reflexive and symmetric but not transitive",
+    "reflexive and transitive but not symmetric"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of symmetric relations on $\\{1,2,3,4\\}$ is",
+   "a": "(D) $1024$",
+   "s": "$2^{\\frac{4\\cdot5}{2}}=2^{10}$.",
+   "opts": [
+    "$64$",
+    "$256$",
+    "$4096$",
+    "$1024$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\sqrt{\\log_{0.5}(x-1)}$ is",
+   "a": "(A) $(1,2]$",
+   "s": "$\\log_{0.5}(x-1)\\ge0\\iff0<x-1\\le1$.",
+   "opts": [
+    "$(1,2]$",
+    "$(1,\\infty)$",
+    "$[2,\\infty)$",
+    "$(0,1]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\sin^2x+\\cos^4x$ is",
+   "a": "(A) $\\left[\\frac34,1\\right]$",
+   "s": "$f=1-\\sin^2x\\cos^2x=1-\\frac14\\sin^22x$.",
+   "opts": [
+    "$\\left[\\frac34,1\\right]$",
+    "$\\left[\\frac34,\\frac54\\right]$",
+    "$[0,1]$",
+    "$\\left[\\frac12,1\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^2+2x+3$ is",
+   "a": "(B) neither one-one nor onto",
+   "s": "$f(0)=f(-2)$; $f(x)=(x+1)^2+2\\ge2$.",
+   "opts": [
+    "onto but not one-one",
+    "neither one-one nor onto",
+    "one-one and onto",
+    "one-one but not onto"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{x-1}{x+1}$. Then $f(f(x))$ equals",
+   "a": "(C) $-\\frac1x$",
+   "s": "$\\frac{(x-1)-(x+1)}{(x-1)+(x+1)}=-\\frac1x$.",
+   "opts": [
+    "$\\frac1x$",
+    "$x$",
+    "$-\\frac1x$",
+    "$-x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The fundamental period of $\\sin\\frac{\\pi x}{2}+\\cos\\frac{\\pi x}{3}$ is",
+   "a": "(D) $12$",
+   "s": "Periods $4$ and $6$; LCM $12$.",
+   "opts": [
+    "$4$",
+    "$6$",
+    "$24$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\log\\dfrac{1-x}{1+x}$, $|x|<1$. Then $f(a)+f(b)$ equals",
+   "a": "(A) $f\\left(\\frac{a+b}{1+ab}\\right)$",
+   "s": "$\\frac{(1-a)(1-b)}{(1+a)(1+b)}=\\frac{1+ab-(a+b)}{1+ab+(a+b)}$; divide by $1+ab$.",
+   "opts": [
+    "$f\\left(\\frac{a+b}{1+ab}\\right)$",
+    "$f\\left(\\frac{a-b}{1-ab}\\right)$",
+    "$f(ab)$",
+    "$f(a+b)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of onto functions from a set with $4$ elements to a set with $3$ elements is",
+   "a": "(B) $36$",
+   "s": "$3^4-3\\cdot2^4+3=36$.",
+   "opts": [
+    "$24$",
+    "$36$",
+    "$81$",
+    "$48$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of functions from a $3$-element set to itself that are not one-one is",
+   "a": "(C) $21$",
+   "s": "$27-3!=21$.",
+   "opts": [
+    "$27$",
+    "$24$",
+    "$21$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The inverse of $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x|x|$ is",
+   "a": "(D) $\\frac{x}{\\sqrt{|x|}}\\ (x\\ne0),\\ 0\\ (x=0)$",
+   "s": "For $y\\ge0$, $x=\\sqrt y$; for $y<0$, $x=-\\sqrt{-y}$; both equal $\\frac{y}{\\sqrt{|y|}}$.",
+   "opts": [
+    "$x^2$",
+    "$-\\sqrt{|x|}$",
+    "$\\sqrt{|x|}$",
+    "$\\frac{x}{\\sqrt{|x|}}\\ (x\\ne0),\\ 0\\ (x=0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=3x-5$ and $g=f^{-1}$. Then $g(f(g(4)))$ equals",
+   "a": "(C) $3$",
+   "s": "$g(f(t))=t$, so the value is $g(4)=\\frac{4+5}{3}=3$.",
+   "opts": [
+    "$4$",
+    "$7$",
+    "$3$",
+    "$\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(n)=n-(-1)^n$ is",
+   "a": "(D) one-one and onto",
+   "s": "$f(1)=2,\\ f(2)=1,\\ f(3)=4,\\ f(4)=3,\\dots$: it swaps consecutive pairs.",
+   "opts": [
+    "neither one-one nor onto",
+    "one-one but not onto",
+    "onto but not one-one",
+    "one-one and onto"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac1{\\log_{10}(1-x)}+\\sqrt{x+2}$ is",
+   "a": "(B) $[-2,0)\\cup(0,1)$",
+   "s": "$1-x>0$, $1-x\\ne1$, $x+2\\ge0$.",
+   "opts": [
+    "$(-2,1)$",
+    "$[-2,0)\\cup(0,1)$",
+    "$[-2,1)$",
+    "$[-2,0)\\cup(0,1]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\cos(\\log x)$. Then $f(x)f(y)-\\frac12\\left[f\\left(\\frac xy\\right)+f(xy)\\right]$ equals",
+   "a": "(A) $0$",
+   "s": "$\\cos A\\cos B=\\frac12[\\cos(A-B)+\\cos(A+B)]$ with $A=\\log x$, $B=\\log y$.",
+   "opts": [
+    "$0$",
+    "$f(x+y)$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$ and $g(x)=2^x$. The solutions of $f(g(x))=g(f(x))$ are",
+   "a": "(C) $0,2$",
+   "s": "$4^x=2^{x^2}\\Rightarrow2x=x^2$.",
+   "opts": [
+    "$1,2$",
+    "$2$ only",
+    "$0,2$",
+    "$0$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of equivalence relations on $\\{a,b,c,d\\}$ that contain $(a,b)$ is",
+   "a": "(C) $5$",
+   "s": "Treat $a,b$ as one element; partitions of a $3$-element set: $5$.",
+   "opts": [
+    "$15$",
+    "$7$",
+    "$5$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=3\\sin x+4\\cos x+2$ is",
+   "a": "(D) $[-3,7]$",
+   "s": "$3\\sin x+4\\cos x\\in[-5,5]$.",
+   "opts": [
+    "$[-5,5]$",
+    "$[-3,5]$",
+    "$[-1,9]$",
+    "$[-3,7]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The inverse of $f:\\mathbb{R}\\to(0,1)$, $f(x)=\\dfrac{e^x}{1+e^x}$ is",
+   "a": "(B) $\\log\\frac{x}{1-x}$",
+   "s": "$y+ye^x=e^x\\Rightarrow e^x=\\frac{y}{1-y}$.",
+   "opts": [
+    "$\\log\\frac{1-x}{x}$",
+    "$\\log\\frac{x}{1-x}$",
+    "$\\log(1+x)$",
+    "$\\frac{1}{1+e^{-x}}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which function is periodic?",
+   "a": "(B) $x-[x]$",
+   "s": "$\\{x+1\\}=\\{x\\}$, period $1$.",
+   "opts": [
+    "$x\\sin x$",
+    "$x-[x]$",
+    "$x^2$",
+    "$x+\\sin x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of functions $f:\\{1,2,3\\}\\to\\{1,2,3,4,5\\}$ with $f(1)+f(2)+f(3)=6$.",
+   "a": "$10$",
+   "s": "Positive solutions of $a+b+c=6$: $\\binom52=10$ (each value is at most $4$).",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=ax^2+bx+c$ with $f(0)=1$, $f(1)=4$, $f(-1)=2$. Find $f(2)$.",
+   "a": "$11$",
+   "s": "$c=1$, $a+b=3$, $a-b=1\\Rightarrow a=2$, $b=1$; $f(2)=8+2+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x+1)+f(x-1)=f(x)$ for all real $x$. Find the period of $f$.",
+   "a": "$6$",
+   "s": "$f(x+2)=f(x+1)-f(x)$, $f(x+3)=-f(x)$, so $f(x+6)=f(x)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$R$ is \"$a$ divides $b$\" on $A=\\{1,2,3,4,5,6\\}$. Find the number of ordered pairs in $R$.",
+   "a": "$14$",
+   "s": "Divisors of $1,\\dots,6$: $1+2+2+3+2+4=14$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{4^x}{4^x+2}$. Find $\\sum_{k=1}^{39}f\\left(\\frac{k}{40}\\right)$.",
+   "a": "$19.5$",
+   "s": "$f(x)+f(1-x)=1$: $19$ pairs and $f\\left(\\frac12\\right)=\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch1-advanced-01": [
+  {
+   "q": "$f(x)=x^3+ax^2+3x+7$ is a bijection from $\\mathbb{R}$ to $\\mathbb{R}$ exactly when",
+   "a": "(B) $-3\\le a\\le3$",
+   "s": "$f'(x)=3x^2+2ax+3\\ge0$ for all $x\\iff4a^2-36\\le0$.",
+   "opts": [
+    "$a>3$",
+    "$-3\\le a\\le3$",
+    "$|a|<\\sqrt3$",
+    "$a\\le-3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of functions $f:\\{1,2,3,4,5\\}\\to\\{1,2,3,4,5\\}$ with $f(f(x))=x$ for all $x$ is",
+   "a": "(A) $26$",
+   "s": "Involutions: $1+\\binom52+\\frac{1}{2}\\binom52\\binom32=1+10+15$.",
+   "opts": [
+    "$26$",
+    "$25$",
+    "$16$",
+    "$31$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac{x^2-3x+2}{x^2+x-6}$ is",
+   "a": "(C) $\\mathbb{R}-\\left\\{1,\\frac15\\right\\}$",
+   "s": "$f=\\frac{x-1}{x+3}$ for $x\\ne2,-3$. $1$ is never taken and $\\frac15=f(2)$ is excluded.",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$\\mathbb{R}-\\left\\{\\frac15\\right\\}$",
+    "$\\mathbb{R}-\\left\\{1,\\frac15\\right\\}$",
+    "$\\mathbb{R}-\\{1\\}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of reflexive relations $R$ on $\\{1,2,3\\}$ that are not symmetric is",
+   "a": "(C) $56$",
+   "s": "$64$ reflexive, of which $2^3=8$ are symmetric.",
+   "opts": [
+    "$64$",
+    "$48$",
+    "$56$",
+    "$8$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=\\dfrac{x}{1+|x|}$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$f$ is strictly increasing, $|f|<1$ with every value in $(-1,1)$ attained, and $f(-x)=-f(x)$.",
+   "opts": [
+    "$f$ is one-one",
+    "$f$ is onto $\\mathbb{R}$",
+    "The range of $f$ is $(-1,1)$",
+    "$f$ is odd"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$xRy\\iff x-y\\in\\mathbb{Q}$ on $\\mathbb{R}$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$0\\in\\mathbb{Q}$, $-q\\in\\mathbb{Q}$, sums of rationals are rational. $\\sqrt2-1\\notin\\mathbb{Q}$.",
+   "opts": [
+    "$R$ is reflexive",
+    "$R$ is symmetric",
+    "$R$ is transitive",
+    "$1\\in[\\sqrt2]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\sin x+\\cos x$ and $g(x)=x^2$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$(g\\circ f)(x)=1+\\sin2x$, period $\\pi$. $f(x^2)$ is even but not periodic.",
+   "opts": [
+    "$f\\circ g$ is periodic",
+    "$g\\circ f$ is periodic",
+    "$g\\circ f$ has fundamental period $\\pi$",
+    "$f\\circ g$ is even"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3,4\\}$ and $f:A\\to A$ is a bijection with $f(1)=2$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$3!=6$. $f(2)=1$ leaves $2$ ways. With no fixed point: $3$. With $f(4)=4$: $f$ maps $\\{2,3\\}$ onto $\\{1,3\\}$, $2$ ways.",
+   "opts": [
+    "There are $6$ such $f$",
+    "Exactly $2$ of them satisfy $f(f(1))=1$",
+    "Exactly $3$ of them have no fixed point",
+    "Exactly $3$ of them satisfy $f(4)=4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of onto functions from $\\{1,2,3,4,5\\}$ to $\\{1,2,3,4\\}$.",
+   "a": "$240$",
+   "s": "$4^5-4\\cdot3^5+6\\cdot2^5-4\\cdot1^5=1024-972+192-4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)+2f(1-x)=x^2+2$ for all real $x$. Find $f(5)$.",
+   "a": "$3$",
+   "s": "With $x\\to1-x$: $f(1-x)+2f(x)=(1-x)^2+2$. Solving, $f(x)=\\frac{(x-2)^2}{3}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of equivalence relations on a set with $4$ elements.",
+   "a": "$15$",
+   "s": "Partitions of $4$: $1+4+3+6+1=15$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers in the range of $f(x)=3\\sin x-4\\cos x+1$.",
+   "a": "$11$",
+   "s": "The range is $[-4,6]$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match the counts for relations on $\\{1,2\\}$.\nList-I: (P) all relations; (Q) reflexive relations; (R) symmetric relations; (S) equivalence relations\nList-II: (1) $8$; (2) $2$; (3) $16$; (4) $6$; (5) $4$",
+   "a": "(A) $P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+   "s": "$2^4=16$, $2^2=4$, $2^3=8$, and $2$ equivalence relations.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 5$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function $\\mathbb{R}\\to\\mathbb{R}$ with its type.\nList-I: (P) $x^3$; (Q) $x^2$; (R) $e^x$; (S) $x^3-x$\nList-II: (1) one-one only; (2) neither; (3) onto only; (4) bijective; (5) constant",
+   "a": "(D) $P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+   "s": "$x^3$: bijective; $x^2$: neither; $e^x$: one-one, range $(0,\\infty)$; $x^3-x$: onto, $f(0)=f(1)$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its fundamental period.\nList-I: (P) $\\sin3x$; (Q) $|\\cos x|$; (R) $\\sin^4x+\\cos^4x$; (S) $x-[x]$\nList-II: (1) $\\pi$; (2) $1$; (3) $2\\pi$; (4) $\\frac{2\\pi}{3}$; (5) $\\frac\\pi2$",
+   "a": "(A) $P \\to 4$, $Q \\to 1$, $R \\to 5$, $S \\to 2$",
+   "s": "$\\frac{2\\pi}{3}$; $\\pi$; $\\frac{3+\\cos4x}{4}$ has period $\\frac\\pi2$; $1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 5$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 2$, $S \\to 5$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 5$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=3$ and $n(B)=4$. Match the counts.\nList-I: (P) functions $A\\to B$; (Q) one-one functions $A\\to B$; (R) onto functions $A\\to B$; (S) functions with $f(a_1)=b_1$ fixed\nList-II: (1) $24$; (2) $0$; (3) $36$; (4) $64$; (5) $16$",
+   "a": "(D) $P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 5$",
+   "s": "$4^3=64$; ${}^4P_3=24$; $0$; $4^2=16$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 5$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 5$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch1-advanced-02": [
+  {
+   "q": "The domain of $f(x)=\\dfrac1{\\sqrt{|x|-x}}$ is",
+   "a": "(B) $(-\\infty,0)$",
+   "s": "$|x|-x>0\\iff x<0$.",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$(-\\infty,0)$",
+    "$\\mathbb{R}-\\{0\\}$",
+    "$(0,\\infty)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{ax+b}{cx+d}$ with $c\\ne0$ and $ad-bc\\ne0$ satisfies $f(f(x))=x$. Then",
+   "a": "(A) $a+d=0$",
+   "s": "$f\\circ f=I$ forces $(a+d)(cx^2+(d-a)x-b)=0$ identically, so $a+d=0$.",
+   "opts": [
+    "$a+d=0$",
+    "$b=c$",
+    "$ad=1$",
+    "$a=d$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of functions $f:\\{1,2,3,4\\}\\to\\{0,1\\}$ with $f(1)+f(2)+f(3)+f(4)=2$ is",
+   "a": "(A) $6$",
+   "s": "Choose the two inputs with value $1$: $\\binom42$.",
+   "opts": [
+    "$6$",
+    "$16$",
+    "$8$",
+    "$4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$aRb\\iff a^2+b^2$ is even, on $\\mathbb{N}$. The number of equivalence classes is",
+   "a": "(B) $2$",
+   "s": "$a^2+b^2$ even $\\iff a,b$ have the same parity.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "infinite",
+    "$3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x+|x|$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$f(x)=0$ for $x\\le0$, $2x$ for $x>0$. $f(f(x))=4x=2f(x)$ for $x>0$ and $0$ otherwise.",
+   "opts": [
+    "$f$ is not one-one",
+    "$f$ is not onto",
+    "$f\\circ f=2f$",
+    "$f$ is even"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f:[1,\\infty)\\to[-1,\\infty)$, $f(x)=x^2-2x$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$f=(x-1)^2-1$ increases on $[1,\\infty)$. $f(x)=x\\Rightarrow x=3$ only.",
+   "opts": [
+    "$f$ is a bijection",
+    "$f^{-1}(x)=1+\\sqrt{1+x}$",
+    "$f(x)=f^{-1}(x)$ has exactly one solution",
+    "$f$ is even"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "On the power set of a set $X$, $ARB\\iff A\\subseteq B$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$A\\subseteq A$; $\\subseteq$ is transitive and antisymmetric, not symmetric.",
+   "opts": [
+    "$R$ is reflexive",
+    "$R$ is transitive",
+    "$R$ is symmetric",
+    "$ARB$ and $BRA$ imply $A=B$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=[x]$ and $g(x)=x-[x]$. Which statements are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$g(x)\\in[0,1)$, so $[g(x)]=0$; $f(x)$ is an integer, so $g(f(x))=0$.",
+   "opts": [
+    "$f(x)+g(x)=x$",
+    "$g$ is periodic with period $1$",
+    "$f\\circ g=0$",
+    "$g\\circ f=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of bijections $f$ on $\\{1,2,\\dots,6\\}$ with $f(i)\\ne i$ for every $i$.",
+   "a": "$265$",
+   "s": "$D_6=6!\\sum_{k=0}^{6}\\frac{(-1)^k}{k!}=265$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac{9^x}{9^x+3}$. Find $\\sum_{k=1}^{100}f\\left(\\frac{k}{101}\\right)$.",
+   "a": "$50$",
+   "s": "$f(x)+f(1-x)=1$, giving $50$ pairs.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of ordered pairs in the smallest equivalence relation on $\\{1,2,3,4\\}$ containing $(1,2)$ and $(3,4)$.",
+   "a": "$8$",
+   "s": "$4$ diagonal pairs and $(1,2),(2,1),(3,4),(4,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x+y)=f(x)f(y)$ for all $x,y$ and $f(1)=2$. Find $\\sum_{k=1}^{5}f(k)$.",
+   "a": "$62$",
+   "s": "$f(k)=2^k$: $2+4+8+16+32$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each function with its domain.\nList-I: (P) $\\sqrt{4-x^2}$; (Q) $\\frac1{\\sqrt{x^2-4}}$; (R) $\\sqrt{x-2}+\\sqrt{2-x}$; (S) $\\log(4-x^2)$\nList-II: (1) $\\{2\\}$; (2) $(-2,2)$; (3) $[-2,2]$; (4) $\\mathbb{R}$; (5) $(-\\infty,-2)\\cup(2,\\infty)$",
+   "a": "(A) $P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+   "s": "$4-x^2\\ge0$; $x^2>4$; $x=2$ only; $4-x^2>0$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function on $\\mathbb{R}$ with its range.\nList-I: (P) $x^2+1$; (Q) $\\frac1{1+x^2}$; (R) $\\sin x+\\cos x$; (S) $[x]-x$\nList-II: (1) $(-1,0]$; (2) $[-\\sqrt2,\\sqrt2]$; (3) $[1,\\infty)$; (4) $[0,1)$; (5) $(0,1]$",
+   "a": "(B) $P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 1$",
+   "s": "$x^2+1\\ge1$; $0<\\frac1{1+x^2}\\le1$; $\\sqrt2\\sin\\left(x+\\frac\\pi4\\right)$; $-\\{x\\}\\in(-1,0]$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 5$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match the counts for relations on $\\{1,2,3\\}$.\nList-I: (P) reflexive; (Q) symmetric; (R) reflexive and symmetric; (S) equivalence\nList-II: (1) $512$; (2) $5$; (3) $64$; (4) $8$; (5) $27$",
+   "a": "(C) $P \\to 3$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+   "s": "$2^6=64$; $2^6=64$; $2^3=8$; $5$ partitions.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 2$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$ and $g(x)=x+1$. Match the values.\nList-I: (P) $(f\\circ g)(1)$; (Q) $(g\\circ f)(1)$; (R) $(f\\circ f)(2)$; (S) $(g\\circ g\\circ g)(0)$\nList-II: (1) $9$; (2) $3$; (3) $16$; (4) $2$; (5) $4$",
+   "a": "(D) $P \\to 5$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+   "s": "$f(2)=4$; $g(1)=2$; $f(4)=16$; $3$.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 4$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 5$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 5$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "On $A=\\{1,2,3\\}$, the relation $R=\\{(1,2),(2,1)\\}$ is",
+  "options": [
+   "Symmetric only",
+   "Reflexive and symmetric but not transitive",
+   "Transitive only",
+   "An equivalence relation"
+  ],
+  "answer": 0,
+  "solution": "$(1,1)\\notin R$, so $R$ is not reflexive. $(1,2),(2,1)\\in R$ but $(1,1)\\notin R$, so $R$ is not transitive. $R$ is symmetric.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "The number of relations on a set with $2$ elements is",
+  "options": [
+   "$16$",
+   "$32$",
+   "$8$",
+   "$4$"
+  ],
+  "answer": 0,
+  "solution": "$n^2=4$ ordered pairs, so $2^4=16$ subsets of $A\\times A$.",
+  "topic": "Counting relations"
+ },
+ {
+  "prompt": "The number of reflexive relations on a set with $3$ elements is",
+  "options": [
+   "$64$",
+   "$27$",
+   "$8$",
+   "$512$"
+  ],
+  "answer": 0,
+  "solution": "The $3$ diagonal pairs must be present; the other $9-3=6$ pairs are free: $2^6=64$.",
+  "topic": "Counting relations"
+ },
+ {
+  "prompt": "The relation $R=\\{(a,b):a\\le b\\}$ on $\\mathbb{R}$ is",
+  "options": [
+   "Reflexive only",
+   "Symmetric only",
+   "Transitive only",
+   "Reflexive and transitive but not symmetric"
+  ],
+  "answer": 3,
+  "solution": "$a\\le a$; $a\\le b,\\ b\\le c\\Rightarrow a\\le c$; but $1\\le2$ while $2\\not\\le1$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "The relation $R=\\{(a,b):ab\\ge0\\}$ on $\\mathbb{Z}$ is",
+  "options": [
+   "Reflexive and symmetric but not transitive",
+   "Symmetric only",
+   "Transitive only",
+   "Reflexive only"
+  ],
+  "answer": 0,
+  "solution": "$a^2\\ge0$ and $ab=ba$. But $(1,0),(0,-1)\\in R$ while $1\\cdot(-1)<0$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "On the set of all triangles in a plane, the relation \"is congruent to\" is",
+  "options": [
+   "Transitive only",
+   "Symmetric only",
+   "Reflexive only",
+   "An equivalence relation"
+  ],
+  "answer": 3,
+  "solution": "Every triangle is congruent to itself; congruence is symmetric and transitive.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "The relation \"$a$ divides $b$\" on $\\mathbb{N}$ is",
+  "options": [
+   "Reflexive only",
+   "Reflexive and transitive but not symmetric",
+   "Transitive only",
+   "Symmetric only"
+  ],
+  "answer": 1,
+  "solution": "$a\\mid a$; $a\\mid b,\\ b\\mid c\\Rightarrow a\\mid c$; but $2\\mid4$ and $4\\nmid2$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "For $R=\\{(a,b):5\\mid(a-b)\\}$ on $\\mathbb{Z}$, the class $[2]$ is",
+  "options": [
+   "$\\{2,7\\}$",
+   "$\\{2k:k\\in\\mathbb{Z}\\}$",
+   "$\\{5k:k\\in\\mathbb{Z}\\}$",
+   "$\\{5k+2:k\\in\\mathbb{Z}\\}$"
+  ],
+  "answer": 3,
+  "solution": "$x\\in[2]\\iff5\\mid(x-2)\\iff x=5k+2$.",
+  "topic": "Equivalence classes"
+ },
+ {
+  "prompt": "The number of equivalence classes of the relation \"congruent modulo $6$\" on $\\mathbb{Z}$ is",
+  "options": [
+   "$5$",
+   "$7$",
+   "infinite",
+   "$6$"
+  ],
+  "answer": 3,
+  "solution": "The remainders $0,1,2,3,4,5$ give exactly $6$ classes.",
+  "topic": "Equivalence classes"
+ },
+ {
+  "prompt": "The number of ordered pairs in the smallest equivalence relation on $\\{1,2,3\\}$ is",
+  "options": [
+   "$0$",
+   "$6$",
+   "$9$",
+   "$3$"
+  ],
+  "answer": 3,
+  "solution": "The identity relation $\\{(1,1),(2,2),(3,3)\\}$ is the smallest equivalence relation.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "The largest equivalence relation on a set with $3$ elements has how many ordered pairs?",
+  "options": [
+   "$3$",
+   "$9$",
+   "$6$",
+   "$8$"
+  ],
+  "answer": 1,
+  "solution": "The universal relation $A\\times A$ has $3^2=9$ pairs and is an equivalence relation.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "$R=\\{(1,1),(2,2),(3,3),(1,2),(2,3)\\}$ on $\\{1,2,3\\}$. The least number of pairs to add to make $R$ an equivalence relation is",
+  "options": [
+   "$5$",
+   "$2$",
+   "$3$",
+   "$4$"
+  ],
+  "answer": 3,
+  "solution": "Symmetry needs $(2,1),(3,2)$. Transitivity of $(1,2),(2,3)$ needs $(1,3)$, and symmetry then needs $(3,1)$: $4$ pairs.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=2x+3$ is",
+  "options": [
+   "Neither one-one nor onto",
+   "Onto but not one-one",
+   "One-one and onto",
+   "One-one but not onto"
+  ],
+  "answer": 2,
+  "solution": "$2a+3=2b+3\\Rightarrow a=b$; for any $y$, $x=\\frac{y-3}{2}$ gives $f(x)=y$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^2+1$ is",
+  "options": [
+   "One-one and onto",
+   "One-one but not onto",
+   "Neither one-one nor onto",
+   "Onto but not one-one"
+  ],
+  "answer": 2,
+  "solution": "$f(1)=f(-1)$; $f(x)\\ge1$, so $0$ has no pre-image.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=x^2$ is",
+  "options": [
+   "One-one and onto",
+   "One-one but not onto",
+   "Onto but not one-one",
+   "Neither one-one nor onto"
+  ],
+  "answer": 1,
+  "solution": "On $\\mathbb{N}$, $a^2=b^2\\Rightarrow a=b$. $2$ is not a perfect square, so $2$ has no pre-image.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{Z}\\to\\mathbb{Z}$, $f(x)=x^3$ is",
+  "options": [
+   "Neither one-one nor onto",
+   "One-one and onto",
+   "One-one but not onto",
+   "Onto but not one-one"
+  ],
+  "answer": 2,
+  "solution": "$a^3=b^3\\Rightarrow a=b$. $2$ is not a cube of an integer.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to[0,\\infty)$, $f(x)=x^2$ is",
+  "options": [
+   "One-one and onto",
+   "Neither one-one nor onto",
+   "One-one but not onto",
+   "Onto but not one-one"
+  ],
+  "answer": 3,
+  "solution": "Every $y\\ge0$ equals $(\\sqrt y)^2$; but $f(2)=f(-2)$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:[0,\\infty)\\to[0,\\infty)$, $f(x)=x^2$ is",
+  "options": [
+   "Neither one-one nor onto",
+   "One-one and onto",
+   "One-one but not onto",
+   "Onto but not one-one"
+  ],
+  "answer": 1,
+  "solution": "For $a,b\\ge0$, $a^2=b^2\\Rightarrow a=b$; every $y\\ge0$ has pre-image $\\sqrt y$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "The number of one-one functions from $\\{1,2,3\\}$ to $\\{a,b,c,d,e\\}$ is",
+  "options": [
+   "$125$",
+   "$243$",
+   "$60$",
+   "$10$"
+  ],
+  "answer": 2,
+  "solution": "${}^5P_3=5\\cdot4\\cdot3=60$.",
+  "topic": "Counting functions"
+ },
+ {
+  "prompt": "The number of onto functions from $\\{1,2,3,4\\}$ to $\\{a,b\\}$ is",
+  "options": [
+   "$14$",
+   "$8$",
+   "$12$",
+   "$16$"
+  ],
+  "answer": 0,
+  "solution": "All $2^4=16$ functions except the $2$ constant ones.",
+  "topic": "Counting functions"
+ },
+ {
+  "prompt": "The number of bijections from a set with $4$ elements to itself is",
+  "options": [
+   "$16$",
+   "$24$",
+   "$12$",
+   "$256$"
+  ],
+  "answer": 1,
+  "solution": "$4!=24$.",
+  "topic": "Counting functions"
+ },
+ {
+  "prompt": "The number of functions from a set with $3$ elements to a set with $2$ elements is",
+  "options": [
+   "$6$",
+   "$5$",
+   "$9$",
+   "$8$"
+  ],
+  "answer": 3,
+  "solution": "Each of the $3$ elements has $2$ choices: $2^3=8$.",
+  "topic": "Counting functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{Z}$, $f(x)=[x]$ (greatest integer function) is",
+  "options": [
+   "Neither one-one nor onto",
+   "One-one but not onto",
+   "One-one and onto",
+   "Onto but not one-one"
+  ],
+  "answer": 3,
+  "solution": "Every integer $n=[n]$; but $[1.2]=[1.7]=1$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x|x|$ is",
+  "options": [
+   "Onto but not one-one",
+   "One-one but not onto",
+   "One-one and onto",
+   "Neither one-one nor onto"
+  ],
+  "answer": 2,
+  "solution": "$f(x)=x^2$ for $x\\ge0$ and $-x^2$ for $x<0$: strictly increasing and it takes every real value.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=\\sin x$ is",
+  "options": [
+   "Neither one-one nor onto",
+   "One-one and onto",
+   "One-one but not onto",
+   "Onto but not one-one"
+  ],
+  "answer": 0,
+  "solution": "$\\sin0=\\sin\\pi$; $2$ is not a value of $\\sin x$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\left[-\\frac\\pi2,\\frac\\pi2\\right]\\to[-1,1]$, $f(x)=\\sin x$ is",
+  "options": [
+   "One-one and onto",
+   "Neither one-one nor onto",
+   "One-one but not onto",
+   "Onto but not one-one"
+  ],
+  "answer": 0,
+  "solution": "$\\sin x$ is strictly increasing on this interval and takes every value from $-1$ to $1$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f(x)=x+2$ and $g(x)=x^2$. Then $(g\\circ f)(x)$ equals",
+  "options": [
+   "$x^2+4$",
+   "$(x+2)^2$",
+   "$x^2+2$",
+   "$(x-2)^2$"
+  ],
+  "answer": 1,
+  "solution": "$(g\\circ f)(x)=g(x+2)=(x+2)^2$.",
+  "topic": "Composition"
+ },
+ {
+  "prompt": "$f(x)=\\dfrac1{1-x}$, $x\\ne0,1$. Then $f(f(f(x)))$ equals",
+  "options": [
+   "$\\frac1{1-x}$",
+   "$x$",
+   "$\\frac{x-1}{x}$",
+   "$1-x$"
+  ],
+  "answer": 1,
+  "solution": "$f(f(x))=\\frac{x-1}{x}$ and $f\\left(\\frac{x-1}{x}\\right)=\\frac{1}{1-\\frac{x-1}{x}}=x$.",
+  "topic": "Composition"
+ },
+ {
+  "prompt": "The inverse of $f(x)=\\dfrac{2x+1}{x-3}$, $x\\ne3$, is",
+  "options": [
+   "$\\frac{3x+1}{x-2}$",
+   "$\\frac{x-3}{2x+1}$",
+   "$\\frac{3x-1}{x+2}$",
+   "$\\frac{2x-1}{x+3}$"
+  ],
+  "answer": 0,
+  "solution": "$y(x-3)=2x+1\\Rightarrow x(y-2)=3y+1\\Rightarrow x=\\frac{3y+1}{y-2}$.",
+  "topic": "Inverse"
+ },
+ {
+  "prompt": "$f(x)=\\dfrac{3x+2}{5x-3}$, $x\\ne\\frac35$. Then $f^{-1}(x)$ equals",
+  "options": [
+   "$f(x)$",
+   "$-f(x)$",
+   "$\\frac{5x-3}{3x+2}$",
+   "$\\frac{3x-2}{5x+3}$"
+  ],
+  "answer": 0,
+  "solution": "$f(f(x))=\\frac{9x+6+10x-6}{15x+10-15x+9}=x$, so $f^{-1}=f$.",
+  "topic": "Inverse"
+ },
+ {
+  "prompt": "$f:\\mathbb{N}\\to\\mathbb{N}$, $f(n)=n+1$ if $n$ is odd and $f(n)=n-1$ if $n$ is even, is",
+  "options": [
+   "One-one but not onto",
+   "One-one and onto",
+   "Neither one-one nor onto",
+   "Onto but not one-one"
+  ],
+  "answer": 1,
+  "solution": "$f$ swaps $1\\leftrightarrow2$, $3\\leftrightarrow4$, and so on; every number is reached exactly once.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=e^x$ is",
+  "options": [
+   "One-one but not onto",
+   "Neither one-one nor onto",
+   "One-one and onto",
+   "Onto but not one-one"
+  ],
+  "answer": 0,
+  "solution": "$e^x$ is strictly increasing; $e^x>0$, so $-1$ has no pre-image.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "The range of $f(x)=\\dfrac{x}{1+|x|}$, $x\\in\\mathbb{R}$, is",
+  "options": [
+   "$\\mathbb{R}$",
+   "$[-1,1]$",
+   "$[0,1)$",
+   "$(-1,1)$"
+  ],
+  "answer": 3,
+  "solution": "$|f(x)|=\\frac{|x|}{1+|x|}<1$, and $f$ takes every value in $(-1,1)$ since $f(x)=y\\Rightarrow x=\\frac{y}{1-|y|}$.",
+  "topic": "Range"
+ },
+ {
+  "prompt": "The identity relation $\\{(1,1),(2,2),(3,3)\\}$ on $\\{1,2,3\\}$ is",
+  "options": [
+   "Symmetric only",
+   "Transitive only",
+   "An equivalence relation",
+   "Reflexive only"
+  ],
+  "answer": 2,
+  "solution": "It is reflexive, and symmetric and transitive trivially.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "The universal relation $A\\times A$ on a non-empty set $A$ is",
+  "options": [
+   "Symmetric only",
+   "An equivalence relation",
+   "Reflexive only",
+   "Transitive only"
+  ],
+  "answer": 1,
+  "solution": "Every pair is present, so all three properties hold.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "The empty relation on a non-empty set $A$ is",
+  "options": [
+   "Symmetric and transitive but not reflexive",
+   "Transitive only",
+   "Reflexive only",
+   "Symmetric only"
+  ],
+  "answer": 0,
+  "solution": "There is no pair to break symmetry or transitivity, but $(a,a)\\notin R$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "The relation $R=\\{(a,b):|a-b|\\le1\\}$ on $\\mathbb{R}$ is",
+  "options": [
+   "Reflexive and symmetric but not transitive",
+   "Symmetric only",
+   "Reflexive only",
+   "Transitive only"
+  ],
+  "answer": 0,
+  "solution": "$|a-a|=0$; $|a-b|=|b-a|$; but $(0,1),(1,2)\\in R$ while $|0-2|=2$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "On the set of lines in a plane, \"$L_1$ is parallel to $L_2$\" (a line is parallel to itself) is",
+  "options": [
+   "Reflexive only",
+   "Symmetric only",
+   "Transitive only",
+   "An equivalence relation"
+  ],
+  "answer": 3,
+  "solution": "Reflexive by the convention, symmetric, and parallel lines to a common line are parallel.",
+  "topic": "Equivalence relations"
+ },
+ {
+  "prompt": "On $\\{1,2,3,4\\}$, $R=\\{(1,1),(2,2),(3,3),(4,4),(1,2),(1,3),(3,2)\\}$ is",
+  "options": [
+   "Reflexive and transitive but not symmetric",
+   "Symmetric only",
+   "Reflexive only",
+   "Transitive only"
+  ],
+  "answer": 0,
+  "solution": "All $(a,a)$ present; $(1,3),(3,2)\\Rightarrow(1,2)\\in R$; but $(1,2)\\in R$, $(2,1)\\notin R$.",
+  "topic": "Types of relations"
+ },
+ {
+  "prompt": "$R$ is \"congruent modulo $3$\" on $A=\\{1,2,\\dots,9\\}$. The number of elements in $[1]$ is",
+  "options": [
+   "$3$",
+   "$1$",
+   "$2$",
+   "$4$"
+  ],
+  "answer": 0,
+  "solution": "$[1]=\\{1,4,7\\}$.",
+  "topic": "Equivalence classes"
+ },
+ {
+  "prompt": "The range of $f(x)=x^2-4x+5$, $x\\in\\mathbb{R}$, is",
+  "options": [
+   "$[5,\\infty)$",
+   "$\\mathbb{R}$",
+   "$[1,\\infty)$",
+   "$(1,\\infty)$"
+  ],
+  "answer": 2,
+  "solution": "$f(x)=(x-2)^2+1\\ge1$, with equality at $x=2$.",
+  "topic": "Range"
+ },
+ {
+  "prompt": "$f:\\mathbb{R}-\\{2\\}\\to\\mathbb{R}-\\{1\\}$, $f(x)=\\dfrac{x-1}{x-2}$ is",
+  "options": [
+   "One-one but not onto",
+   "One-one and onto",
+   "Neither one-one nor onto",
+   "Onto but not one-one"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{a-1}{a-2}=\\frac{b-1}{b-2}\\Rightarrow a=b$; $y=\\frac{x-1}{x-2}\\Rightarrow x=\\frac{2y-1}{y-1}\\ne2$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f:A\\to B$ is a bijection and $A$ has $5$ elements. Then $B$ has",
+  "options": [
+   "$10$ elements",
+   "$5$ elements",
+   "at least $6$ elements",
+   "$25$ elements"
+  ],
+  "answer": 1,
+  "solution": "A bijection pairs the elements exactly, so $n(B)=n(A)$.",
+  "topic": "Types of functions"
+ },
+ {
+  "prompt": "$f(x)=2x$ and $g(x)=x+1$. Then $(f\\circ g)(3)-(g\\circ f)(3)$ equals",
+  "options": [
+   "$2$",
+   "$0$",
+   "$-1$",
+   "$1$"
+  ],
+  "answer": 3,
+  "solution": "$(f\\circ g)(3)=f(4)=8$ and $(g\\circ f)(3)=g(6)=7$.",
+  "topic": "Composition"
+ },
+ {
+  "prompt": "Assertion (A): $R=\\{(a,b):2\\mid(a-b)\\}$ on $\\mathbb{Z}$ is an equivalence relation.\nReason (R): For a fixed $n$, \"$n$ divides $a-b$\" is reflexive, symmetric and transitive.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "R is a general fact and A is its case $n=2$.",
+  "topic": "Equivalence relations",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $f:\\mathbb{N}\\to\\mathbb{N}$, $f(x)=2x$ is onto.\nReason (R): $f$ is one-one.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$1$ has no pre-image, so A is false. R is true.",
+  "topic": "Types of functions",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=x^2$ is not one-one.\nReason (R): $f(-1)=f(1)$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "R gives the counterexample that proves A.",
+  "topic": "Types of functions",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The number of relations on $\\{a,b,c\\}$ is $512$.\nReason (R): A set with $n$ elements has $2^{n^2}$ relations.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$2^9=512$; R is the rule used.",
+  "topic": "Counting relations",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $f:\\mathbb{R}\\to\\mathbb{R}$, $f(x)=[x]$ is onto.\nReason (R): $[x]$ is an integer for every real $x$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The values are integers only, so $0.5$ is missed: A is false. R is true.",
+  "topic": "Types of functions",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The identity relation on a set $A$ is an equivalence relation.\nReason (R): Every reflexive relation is symmetric.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "A is true. R is false: $\\le$ is reflexive but not symmetric.",
+  "topic": "Equivalence relations",
+  "assertion": true
+ }
+]

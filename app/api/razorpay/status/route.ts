@@ -1,6 +1,7 @@
 import { recoverPurchase } from '@/lib/payment-recovery';
 import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct } from '@/lib/integrals-products';
+import { getG12PracticeProduct } from '@/lib/g12-practice-catalog';
 import { quizPriceById } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser } from '@/lib/razorpay';
@@ -21,7 +22,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     const quizAmount = quizPriceById(paperId);
-    if (!(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     return Response.json({ ...await recoverPurchase(user.userId, paperId, config, true), paperId });
   } catch (error) {

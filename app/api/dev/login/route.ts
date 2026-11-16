@@ -11,6 +11,7 @@ import {
   integralsProducts,
   integralsPricePaise,
 } from '@/lib/integrals-products';
+import { g12AllPracticeProducts, g12PracticePricePaise } from '@/lib/g12-practice-catalog';
 import { basicsProducts } from '@/lib/basics-catalog';
 
 export async function POST(request: Request) {
@@ -33,6 +34,7 @@ export async function POST(request: Request) {
         id: p.id,
         amount: integralsPricePaise(p.id),
       })),
+      ...g12AllPracticeProducts.map((p) => ({ id: p.id, amount: g12PracticePricePaise(p.id) })),
       ...basicsProducts.map((p) => ({ id: p.id, amount: p.amount })),
     ];
     const db = getDatabase();

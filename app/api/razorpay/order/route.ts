@@ -2,6 +2,7 @@ import { recoverPurchase } from '@/lib/payment-recovery';
 import {canBuyBasics,hasBasicsPackage} from '@/lib/basics-access';
 import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct, integralsPricePaise } from '@/lib/integrals-products';
+import { getG12PracticeProduct, g12PracticePricePaise } from '@/lib/g12-practice-catalog';
 import { quizPriceById } from '@/lib/free-quizzes/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser, razorpayAuthorization } from '@/lib/razorpay';
@@ -27,13 +28,13 @@ export async function POST(request: Request) {
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
     const quizAmount = quizPriceById(paperId);
-    if (!(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (!(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     const recovered = await recoverPurchase(user.userId, paperId, config);
     if (recovered.approved) return Response.json({ alreadyPaid: true, paperId });
 
     if(getBasicsProduct(paperId)){if(await hasBasicsPackage(user,paperId==='maths-basics-5-8'?'base':'extension'))return Response.json({alreadyPaid:true,paperId});if(!await canBuyBasics(user,paperId))return jsonError('Complete the free first level in this folder before unlocking the package. Refresh this page to see your current price.',403);}
-    const AMOUNT_PAISE = getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:quizAmount ? quizAmount : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : 3000;
+    const AMOUNT_PAISE = getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:quizAmount ? quizAmount : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : getG12PracticeProduct(paperId) ? g12PracticePricePaise(paperId) : 3000;
     const database = getDatabase();
     const pendingOrder = await database.prepare(
       `SELECT transaction_id

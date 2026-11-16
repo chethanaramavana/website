@@ -1,6 +1,7 @@
 import { objectiveMaximum, paperMaximum } from './paper-format';
 import { paperDefinitionsById } from './papers';
 import { getIntegralsProduct, integralsPath } from './integrals-products';
+import { getG12PracticeProduct, g12PaperPath } from './g12-practice-catalog';
 import { quizListings } from './free-quizzes/catalog';
 import type { StudentRecordsPayload } from './student-records';
 
@@ -88,6 +89,7 @@ export function reportRows(
     if (records.submissions.some((s) => s.paper_id === id)) continue;
     const paper = paperDefinitionsById[id];
     const integrals = getIntegralsProduct(id);
+    const practice = getG12PracticeProduct(id);
     const quiz = quizListings.find((q) => q.id === id);
     if (
       quiz &&
@@ -96,23 +98,23 @@ export function reportRows(
     )
       continue;
     const basics = id.startsWith('maths-basics-');
-    if (!paper && !integrals && !quiz && !basics) continue;
+    if (!paper && !integrals && !practice && !quiz && !basics) continue;
     rows.push({
       id: `access-${id}`,
       chapter:
         paper?.chapter ??
-        (integrals ? 'Integrals' : (quiz?.title ?? 'Maths Basics')),
+        (integrals ? 'Integrals' : practice ? practice.chapterTitle : (quiz?.title ?? 'Maths Basics')),
       paper: paper
         ? `Written paper ${paper.paperNumber}`
-        : (integrals?.title ?? (quiz ? 'MCQ practice' : 'Learning materials')),
+        : (integrals?.title ?? practice?.title ?? (quiz ? 'MCQ practice' : 'Learning materials')),
       context: paper
         ? `${paper.board ?? 'CBSE'} · Class ${paper.grade ?? 10}`
-        : integrals
+        : integrals || practice
           ? 'CBSE · Class 12'
           : quiz
             ? `CBSE · Class ${quiz.grade}`
             : 'Your purchased course',
-      grade: paper?.grade ?? (integrals ? 12 : quiz?.grade),
+      grade: paper?.grade ?? (integrals || practice ? 12 : quiz?.grade),
       book: paper
         ? (paper.book ?? `${paper.board ?? 'CBSE'} Mathematics`)
         : undefined,
@@ -122,7 +124,9 @@ export function reportRows(
         ? `/${(paper.board ?? 'CBSE').toLowerCase()}/grade-${paper.grade ?? 10}/ch-${paper.chapterNumber}`
         : integrals
           ? `${integralsPath}/papers/${integrals.id}`
-          : (quiz?.path ?? '/maths-basics'),
+          : practice
+            ? g12PaperPath(practice.id)
+            : (quiz?.path ?? '/maths-basics'),
       action: basics ? 'Open course' : 'Open chapter',
     });
   }
