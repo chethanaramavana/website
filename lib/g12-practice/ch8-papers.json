@@ -1,0 +1,2446 @@
+{
+ "g12-ch8-mcq-20-01": [
+  {
+   "q": "The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=0$, $x=2$ is",
+   "a": "(C) $\\frac83$",
+   "s": "$\\frac{2^3}3$.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$\\frac83$",
+    "$\\frac43$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^4$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(B) $\\frac15$",
+   "s": "$\\left[\\frac{x^5}5\\right]_0^1$.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac15$",
+    "$\\frac45$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $x^2+y^2=9$ is",
+   "a": "(D) $9\\pi$",
+   "s": "$\\pi r^2$.",
+   "opts": [
+    "$3\\pi$",
+    "$81\\pi$",
+    "$6\\pi$",
+    "$9\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $\\dfrac{x^2}{16}+\\dfrac{y^2}9=1$ is",
+   "a": "(B) $12\\pi$",
+   "s": "$\\pi\\cdot4\\cdot3$.",
+   "opts": [
+    "$7\\pi$",
+    "$12\\pi$",
+    "$25\\pi$",
+    "$144\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=3x^2$, the $x$-axis and the lines $x=1$, $x=2$ is",
+   "a": "(B) $7$",
+   "s": "$\\left[x^3\\right]_1^2$.",
+   "opts": [
+    "$3$",
+    "$7$",
+    "$8$",
+    "$9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sin x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi2$ is",
+   "a": "(C) $1$",
+   "s": "$\\left[-\\cos x\\right]_0^{\\frac\\pi2}$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$0$",
+    "$1$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=e^{2x}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(D) $\\frac{e^2-1}2$",
+   "s": "$\\left[\\frac{e^{2x}}2\\right]_0^1$.",
+   "opts": [
+    "$\\frac{e^2}2$",
+    "$2(e^2-1)$",
+    "$e^2-1$",
+    "$\\frac{e^2-1}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y^2=x$ and the line $x=4$ is",
+   "a": "(A) $\\frac{32}3$",
+   "s": "$2\\int_0^4\\sqrt x\\,dx$.",
+   "opts": [
+    "$\\frac{32}3$",
+    "$16$",
+    "$8$",
+    "$\\frac{16}3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=1$, $x=2$ is",
+   "a": "(D) $\\frac73$",
+   "s": "$\\frac{8-1}3$.",
+   "opts": [
+    "$\\frac83$",
+    "$\\frac13$",
+    "$3$",
+    "$\\frac73$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x+2$, the $x$-axis and the lines $x=0$, $x=2$ is",
+   "a": "(B) $6$",
+   "s": "$\\left[\\frac{x^2}2+2x\\right]_0^2$.",
+   "opts": [
+    "$2$",
+    "$6$",
+    "$8$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=|x-1|$, the $x$-axis and the lines $x=0$, $x=2$ is",
+   "a": "(C) $1$",
+   "s": "Two triangles of area $\\frac12$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\cos x$ and the $x$-axis for $0\\le x\\le\\pi$ is",
+   "a": "(D) $2$",
+   "s": "$\\int_0^\\pi|\\cos x|\\,dx$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$\\pi$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1x$, the $x$-axis and the lines $x=1$, $x=2$ is",
+   "a": "(A) $\\log2$",
+   "s": "$\\left[\\log x\\right]_1^2$.",
+   "opts": [
+    "$\\log2$",
+    "$\\log3$",
+    "$\\frac12$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the part of $x^2+y^2=4$ in the first quadrant is",
+   "a": "(C) $\\pi$",
+   "s": "$\\frac14\\cdot4\\pi$.",
+   "opts": [
+    "$2\\pi$",
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$4\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^3$, the $x$-axis and the lines $x=-1$, $x=1$ is",
+   "a": "(C) $\\frac12$",
+   "s": "$2\\int_0^1x^3\\,dx$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$\\frac12$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=4x-x^2$ and the $x$-axis is",
+   "a": "(B) $\\frac{32}3$",
+   "s": "$\\int_0^4(4x-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac{16}3$",
+    "$\\frac{32}3$",
+    "$8$",
+    "$\\frac{64}3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\tan x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi4$ is",
+   "a": "(B) $\\frac12\\log2$",
+   "s": "$\\left[\\log\\sec x\\right]_0^{\\frac\\pi4}=\\log\\sqrt2$.",
+   "opts": [
+    "$\\log2$",
+    "$\\frac12\\log2$",
+    "$1$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area in the first quadrant bounded by $y^2=16x$, the $x$-axis and the line $x=4$ is",
+   "a": "(D) $\\frac{64}3$",
+   "s": "$\\int_0^44\\sqrt x\\,dx=\\frac83\\cdot8$.",
+   "opts": [
+    "$\\frac{32}3$",
+    "$\\frac{128}3$",
+    "$16$",
+    "$\\frac{64}3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area enclosed by $x^2+y^2=1$ is $\\pi$. Reason: The area of a circle of radius $r$ is $\\pi r^2$.",
+   "a": "(A)",
+   "s": "$r=1$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\int_{-\\pi}^{\\pi}\\sin x\\,dx$ equals the area bounded by $y=\\sin x$ and the $x$-axis for $-\\pi\\le x\\le\\pi$. Reason: $\\int_{-\\pi}^{\\pi}\\sin x\\,dx=0$.",
+   "a": "(D)",
+   "s": "The area is $4$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch8-board-01": [
+  {
+   "q": "The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(C) $\\frac13$",
+   "s": "$\\int_0^1x^2\\,dx$. [1]",
+   "opts": [
+    "$1$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$ is",
+   "a": "(C) $20\\pi$",
+   "s": "$\\pi\\cdot5\\cdot4$. [1]",
+   "opts": [
+    "$400\\pi$",
+    "$41\\pi$",
+    "$20\\pi$",
+    "$9\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $x^2+y^2=25$ is",
+   "a": "(C) $25\\pi$",
+   "s": "$\\pi r^2$. [1]",
+   "opts": [
+    "$5\\pi$",
+    "$625\\pi$",
+    "$25\\pi$",
+    "$10\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=2x$, the $x$-axis and the line $x=3$ is",
+   "a": "(D) $9$",
+   "s": "$\\left[x^2\\right]_0^3$. [1]",
+   "opts": [
+    "$6$",
+    "$18$",
+    "$3$",
+    "$9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sqrt x$, the $x$-axis and the lines $x=0$, $x=9$ is",
+   "a": "(B) $18$",
+   "s": "$\\frac23\\cdot27$. [1]",
+   "opts": [
+    "$6$",
+    "$18$",
+    "$9$",
+    "$27$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^3$, the $x$-axis and the lines $x=0$, $x=2$ is",
+   "a": "(A) $4$",
+   "s": "$\\frac{2^4}4$. [1]",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$2$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=e^x$, the $x$-axis and the lines $x=0$, $x=\\log2$ is",
+   "a": "(D) $1$",
+   "s": "$e^{\\log2}-1$. [1]",
+   "opts": [
+    "$e-1$",
+    "$2$",
+    "$\\log2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=2\\sin x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi2$ is",
+   "a": "(C) $2$",
+   "s": "$2\\left[-\\cos x\\right]_0^{\\frac\\pi2}$. [1]",
+   "opts": [
+    "$4$",
+    "$\\pi$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $x=y^2$, the $y$-axis and the lines $y=0$, $y=3$ is",
+   "a": "(C) $9$",
+   "s": "$\\int_0^3y^2\\,dy$. [1]",
+   "opts": [
+    "$3$",
+    "$6$",
+    "$9$",
+    "$27$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=-2$, $x=2$ is",
+   "a": "(C) $\\frac{16}3$",
+   "s": "$2\\cdot\\frac83$. [1]",
+   "opts": [
+    "$8$",
+    "$\\frac83$",
+    "$\\frac{16}3$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1x$, the $x$-axis and the lines $x=1$, $x=e^2$ is",
+   "a": "(B) $2$",
+   "s": "$\\log e^2$. [1]",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$e^2-1$",
+    "$e^2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the part of $x^2+y^2=16$ above the $x$-axis is",
+   "a": "(A) $8\\pi$",
+   "s": "Half of $16\\pi$. [1]",
+   "opts": [
+    "$8\\pi$",
+    "$2\\pi$",
+    "$16\\pi$",
+    "$4\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\cos2x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi4$ is",
+   "a": "(C) $\\frac12$",
+   "s": "$\\left[\\frac{\\sin2x}2\\right]_0^{\\frac\\pi4}$. [1]",
+   "opts": [
+    "$\\frac14$",
+    "$1$",
+    "$\\frac12$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $k>0$, $\\int_0^kx\\,dx$ is the area of a region, and it equals $8$. Then $k$ equals",
+   "a": "(D) $4$",
+   "s": "$\\frac{k^2}2=8$. [1]",
+   "opts": [
+    "$2$",
+    "$16$",
+    "$8$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area bounded by $y=x^2$, the $x$-axis and the lines $x=-1$, $x=1$ is twice the area for $0\\le x\\le1$. Reason: The curve $y=x^2$ is symmetric about the $y$-axis.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area of the region bounded by $y=e^x$, the $x$-axis and the lines $x=0$, $x=1$ is $e$. Reason: $\\int e^x\\,dx=e^x+C$.",
+   "a": "(D)",
+   "s": "The area is $e-1$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=1$ and $x=3$.",
+   "a": "$\\frac{26}3$",
+   "s": "Area $=\\int_1^3x^2\\,dx$ [1] $=\\frac{27-1}3=\\frac{26}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the area of the region bounded by $y=2x+3$, the $x$-axis and the lines $x=1$ and $x=2$.",
+    "a": "$6$",
+    "s": "Area $=\\int_1^2(2x+3)\\,dx$ [1] $=\\left[x^2+3x\\right]_1^2=10-4=6$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant bounded by $y^2=4x$, the $x$-axis and the lines $x=1$ and $x=4$.",
+   "a": "$\\frac{28}3$",
+   "s": "Area $=\\int_1^42\\sqrt x\\,dx$ [1] $=\\frac43\\left[x^{\\frac32}\\right]_1^4=\\frac43(8-1)=\\frac{28}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant bounded by $x^2=4y$, the $y$-axis and the lines $y=2$ and $y=4$.",
+   "a": "$\\frac{32-8\\sqrt2}3$",
+   "s": "Area $=\\int_2^42\\sqrt y\\,dy$ [1] $=\\frac43\\left[y^{\\frac32}\\right]_2^4=\\frac43(8-2\\sqrt2)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Using integration, find the area enclosed by the ellipse $\\dfrac{x^2}{16}+\\dfrac{y^2}9=1$.",
+   "a": "$12\\pi$",
+   "s": "By symmetry, area $=4\\int_0^4\\frac34\\sqrt{16-x^2}\\,dx$ [1]. $\\int_0^4\\sqrt{16-x^2}\\,dx=\\left[\\frac x2\\sqrt{16-x^2}+8\\sin^{-1}\\frac x4\\right]_0^4=4\\pi$ [1]. Area $=4\\cdot\\frac34\\cdot4\\pi=12\\pi$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Sketch $y=|x+3|$ and find $\\int_{-6}^0|x+3|\\,dx$ as an area.",
+   "a": "$9$",
+   "s": "For $x<-3$, $|x+3|=-(x+3)$; for $x\\ge-3$, $|x+3|=x+3$ [1]. The region is two triangles with base $3$ and height $3$ [1]. Area $=\\frac92+\\frac92=9$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=\\sin x$ and the $x$-axis for $0\\le x\\le2\\pi$.",
+   "a": "$4$",
+   "s": "The curve is above the axis on $(0,\\pi)$ and below it on $(\\pi,2\\pi)$ [1]. Area $=\\int_0^\\pi\\sin x\\,dx+\\left|\\int_\\pi^{2\\pi}\\sin x\\,dx\\right|$ [1] $=2+2=4$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant enclosed by the $x$-axis, the line $y=x$ and the circle $x^2+y^2=32$.",
+   "a": "$4\\pi$",
+   "s": "The line meets the circle at $(4,4)$ [1]. Area $=\\int_0^4x\\,dx+\\int_4^{4\\sqrt2}\\sqrt{32-x^2}\\,dx$ [1]. The first part is $8$ [1]. The second part is $\\left[\\frac x2\\sqrt{32-x^2}+16\\sin^{-1}\\frac x{4\\sqrt2}\\right]_4^{4\\sqrt2}=8\\pi-(8+4\\pi)=4\\pi-8$ [1]. Total $4\\pi$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Using integration, show that the area enclosed by $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ is $\\pi ab$.",
+    "a": "Shown.",
+    "s": "$y=\\frac ba\\sqrt{a^2-x^2}$ in the first quadrant [1]. Area $=4\\cdot\\frac ba\\int_0^a\\sqrt{a^2-x^2}\\,dx$ [1]. $\\int_0^a\\sqrt{a^2-x^2}\\,dx=\\left[\\frac x2\\sqrt{a^2-x^2}+\\frac{a^2}2\\sin^{-1}\\frac xa\\right]_0^a=\\frac{\\pi a^2}4$ [2]. Area $=4\\cdot\\frac ba\\cdot\\frac{\\pi a^2}4=\\pi ab$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A playground is the region above the $x$-axis and under the curve $y=4-\\dfrac{x^2}4$ (lengths in metres). (i) Find where the curve meets the $x$-axis. [1] (ii) Write the area as an integral. [1] (iii) Find the area. [2] \\textbf{OR} (iii) Find the area of the part with $0\\le x\\le2$. [2]",
+   "a": "(i) $x=\\pm4$; (ii) $2\\int_0^4\\left(4-\\frac{x^2}4\\right)dx$; (iii) $\\frac{64}3$ $\\text{m}^2$; OR $\\frac{22}3$ $\\text{m}^2$.",
+   "s": "(i) $4-\\frac{x^2}4=0$ gives $x=\\pm4$ [1]. (ii) The region is symmetric: $2\\int_0^4\\left(4-\\frac{x^2}4\\right)dx$ [1]. (iii) $2\\left[4x-\\frac{x^3}{12}\\right]_0^4$ [1] $=2\\left(16-\\frac{16}3\\right)=\\frac{64}3$ [1]. OR $\\left[4x-\\frac{x^3}{12}\\right]_0^2$ [1] $=8-\\frac23=\\frac{22}3$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch8-board-02": [
+  {
+   "q": "The area of the region bounded by $y=3x^2$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(A) $1$",
+   "s": "$\\left[x^3\\right]_0^1$. [1]",
+   "opts": [
+    "$1$",
+    "$\\frac13$",
+    "$2$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $\\dfrac{x^2}{64}+\\dfrac{y^2}{25}=1$ is",
+   "a": "(A) $40\\pi$",
+   "s": "$\\pi\\cdot8\\cdot5$. [1]",
+   "opts": [
+    "$40\\pi$",
+    "$13\\pi$",
+    "$89\\pi$",
+    "$20\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by the circle $x^2+y^2-4x=0$ is",
+   "a": "(D) $4\\pi$",
+   "s": "$(x-2)^2+y^2=4$. [1]",
+   "opts": [
+    "$2\\pi$",
+    "$16\\pi$",
+    "$8\\pi$",
+    "$4\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x$, the $x$-axis and the line $x=5$ is",
+   "a": "(B) $\\frac{25}2$",
+   "s": "$\\frac{5^2}2$. [1]",
+   "opts": [
+    "$\\frac52$",
+    "$\\frac{25}2$",
+    "$5$",
+    "$25$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2+2$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(C) $\\frac73$",
+   "s": "$\\frac13+2$. [1]",
+   "opts": [
+    "$\\frac53$",
+    "$\\frac13$",
+    "$\\frac73$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1{\\sqrt x}$, the $x$-axis and the lines $x=1$, $x=9$ is",
+   "a": "(A) $4$",
+   "s": "$\\left[2\\sqrt x\\right]_1^9$. [1]",
+   "opts": [
+    "$4$",
+    "$6$",
+    "$2$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sec^2x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi3$ is",
+   "a": "(A) $\\sqrt3$",
+   "s": "$\\tan\\frac\\pi3$. [1]",
+   "opts": [
+    "$\\sqrt3$",
+    "$2$",
+    "$1$",
+    "$\\frac1{\\sqrt3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\cos x$, the $x$-axis and the lines $x=-\\frac\\pi2$, $x=\\frac\\pi2$ is",
+   "a": "(A) $2$",
+   "s": "$\\left[\\sin x\\right]_{-\\frac\\pi2}^{\\frac\\pi2}$. [1]",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$\\pi$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $x=2y^2$, the $y$-axis and the lines $y=0$, $y=1$ is",
+   "a": "(A) $\\frac23$",
+   "s": "$\\int_0^12y^2\\,dy$. [1]",
+   "opts": [
+    "$\\frac23$",
+    "$2$",
+    "$\\frac13$",
+    "$\\frac43$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^3$, the $x$-axis and the lines $x=1$, $x=3$ is",
+   "a": "(D) $20$",
+   "s": "$\\frac{81-1}4$. [1]",
+   "opts": [
+    "$80$",
+    "$18$",
+    "$26$",
+    "$20$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=e^{-x}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(D) $1-\\frac1e$",
+   "s": "$\\left[-e^{-x}\\right]_0^1$. [1]",
+   "opts": [
+    "$\\frac1e$",
+    "$e-1$",
+    "$1$",
+    "$1-\\frac1e$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=2x-x^2$ and the $x$-axis is",
+   "a": "(D) $\\frac43$",
+   "s": "$\\int_0^2(2x-x^2)\\,dx$. [1]",
+   "opts": [
+    "$1$",
+    "$\\frac83$",
+    "$\\frac23$",
+    "$\\frac43$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sqrt{4-x^2}$, the $x$-axis and the lines $x=0$, $x=2$ is",
+   "a": "(B) $\\pi$",
+   "s": "A quarter of a circle of radius $2$. [1]",
+   "opts": [
+    "$4\\pi$",
+    "$\\pi$",
+    "$2\\pi$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1{x+1}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(A) $\\log2$",
+   "s": "$\\left[\\log(x+1)\\right]_0^1$. [1]",
+   "opts": [
+    "$\\log2$",
+    "$\\frac12$",
+    "$\\log3$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\int_0^2(x-1)\\,dx=0$, so the area bounded by $y=x-1$, the $x$-axis and the lines $x=0$, $x=2$ is $0$. Reason: The part of the region below the $x$-axis gives a negative integral.",
+   "a": "(D)",
+   "s": "The area is $\\frac12+\\frac12=1$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=0$, $x=3$ is $9$. Reason: $\\int_0^3x^2\\,dx=\\left[\\frac{x^3}3\\right]_0^3$.",
+   "a": "(A)",
+   "s": "R gives the value. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=\\sqrt x$, the $x$-axis and the lines $x=1$ and $x=4$.",
+   "a": "$\\frac{14}3$",
+   "s": "Area $=\\int_1^4\\sqrt x\\,dx$ [1] $=\\frac23(8-1)=\\frac{14}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant bounded by $x^2=16y$, the $y$-axis and the lines $y=1$ and $y=4$.",
+   "a": "$\\frac{56}3$",
+   "s": "Area $=\\int_1^44\\sqrt y\\,dy$ [1] $=\\frac83(8-1)=\\frac{56}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=\\sin x$, the $x$-axis and the lines $x=0$ and $x=\\frac\\pi3$.",
+   "a": "$\\frac12$",
+   "s": "Area $=\\int_0^{\\frac\\pi3}\\sin x\\,dx$ [1] $=1-\\cos\\frac\\pi3=\\frac12$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Using integration, find the area enclosed by the circle $x^2+y^2=4$.",
+   "a": "$4\\pi$",
+   "s": "Area $=4\\int_0^2\\sqrt{4-x^2}\\,dx$ [1] $=4\\left[\\frac x2\\sqrt{4-x^2}+2\\sin^{-1}\\frac x2\\right]_0^2$ [1] $=4\\left(2\\cdot\\frac\\pi2\\right)=4\\pi$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Sketch $y=|x-1|$ and find $\\int_{-1}^3|x-1|\\,dx$ as an area.",
+   "a": "$4$",
+   "s": "The graph is two lines meeting at $(1,0)$ [1]. The region is two triangles with base $2$ and height $2$ [1]. Area $=2+2=4$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=x^2-1$, the $x$-axis and the lines $x=0$ and $x=2$.",
+   "a": "$2$",
+   "s": "The curve is below the axis on $(0,1)$ and above it on $(1,2)$ [1]. $\\int_0^1(1-x^2)\\,dx=\\frac23$ and $\\int_1^2(x^2-1)\\,dx=\\frac43$ [1]. Area $=2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant enclosed by the $x$-axis, the line $x=\\sqrt3y$ and the circle $x^2+y^2=4$.",
+   "a": "$\\frac\\pi3$",
+   "s": "The line meets the circle at $(\\sqrt3,1)$ [1]. Area $=\\int_0^{\\sqrt3}\\frac{x}{\\sqrt3}\\,dx+\\int_{\\sqrt3}^2\\sqrt{4-x^2}\\,dx$ [1]. The first part is $\\frac{\\sqrt3}2$ [1]. The second part is $\\left[\\frac x2\\sqrt{4-x^2}+2\\sin^{-1}\\frac x2\\right]_{\\sqrt3}^2=\\pi-\\frac{\\sqrt3}2-\\frac{2\\pi}3$ [1]. Total $\\frac\\pi3$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the area of the region bounded by the parabola $y^2=4ax$ and its latus rectum $x=a$.",
+    "a": "$\\frac{8a^2}3$",
+    "s": "The region is symmetric about the $x$-axis [1]. Area $=2\\int_0^a2\\sqrt{ax}\\,dx$ [1] $=4\\sqrt a\\left[\\frac23x^{\\frac32}\\right]_0^a$ [2] $=\\frac{8a^2}3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A garden gate is the upper half of the ellipse $\\dfrac{x^2}{25}+\\dfrac{y^2}9=1$ (in feet). (i) Write the semi-axes $a$ and $b$. [1] (ii) Find the area enclosed by the full ellipse. [1] (iii) Find the area of the gate by integration. [2] \\textbf{OR} (iii) Find the area of the part of the gate with $x\\ge0$. [2]",
+   "a": "(i) $5$ and $3$; (ii) $15\\pi$; (iii) $\\frac{15\\pi}2$; OR $\\frac{15\\pi}4$.",
+   "s": "(i) $a=5$, $b=3$ [1]. (ii) $\\pi ab=15\\pi$ [1]. (iii) $2\\int_0^5\\frac35\\sqrt{25-x^2}\\,dx$ [1] $=\\frac65\\cdot\\frac{25\\pi}4=\\frac{15\\pi}2$ [1]. OR $\\int_0^5\\frac35\\sqrt{25-x^2}\\,dx$ [1] $=\\frac35\\cdot\\frac{25\\pi}4=\\frac{15\\pi}4$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch8-board-03": [
+  {
+   "q": "The area of the region bounded by $y=6x^2$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(A) $2$",
+   "s": "$\\left[2x^3\\right]_0^1$. [1]",
+   "opts": [
+    "$2$",
+    "$6$",
+    "$1$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $9x^2+y^2=9$ is",
+   "a": "(B) $3\\pi$",
+   "s": "$x^2+\\frac{y^2}9=1$: $\\pi\\cdot1\\cdot3$. [1]",
+   "opts": [
+    "$\\pi$",
+    "$3\\pi$",
+    "$9\\pi$",
+    "$6\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area enclosed by $x^2+y^2=2$ is",
+   "a": "(A) $2\\pi$",
+   "s": "$\\pi(\\sqrt2)^2$. [1]",
+   "opts": [
+    "$2\\pi$",
+    "$\\pi$",
+    "$4\\pi$",
+    "$\\sqrt2\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=4x$, the $x$-axis and the line $x=1$ is",
+   "a": "(B) $2$",
+   "s": "$\\left[2x^2\\right]_0^1$. [1]",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$8$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=x^{\\frac13}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(D) $\\frac34$",
+   "s": "$\\left[\\frac34x^{\\frac43}\\right]_0^1$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$1$",
+    "$\\frac43$",
+    "$\\frac34$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1{x^2}$, the $x$-axis and the lines $x=1$, $x=2$ is",
+   "a": "(A) $\\frac12$",
+   "s": "$\\left[-\\frac1x\\right]_1^2$. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$1$",
+    "$\\frac34$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=e^x$, the $x$-axis and the lines $x=1$, $x=2$ is",
+   "a": "(A) $e^2-e$",
+   "s": "$\\left[e^x\\right]_1^2$. [1]",
+   "opts": [
+    "$e^2-e$",
+    "$e^2-1$",
+    "$e-1$",
+    "$e^2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sin3x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi3$ is",
+   "a": "(C) $\\frac23$",
+   "s": "$\\left[-\\frac{\\cos3x}3\\right]_0^{\\frac\\pi3}$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$1$",
+    "$\\frac23$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $x=y^3$, the $y$-axis and the lines $y=0$, $y=2$ is",
+   "a": "(C) $4$",
+   "s": "$\\frac{2^4}4$. [1]",
+   "opts": [
+    "$2$",
+    "$8$",
+    "$4$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=9-x^2$ and the $x$-axis is",
+   "a": "(D) $36$",
+   "s": "$\\int_{-3}^3(9-x^2)\\,dx$. [1]",
+   "opts": [
+    "$18$",
+    "$54$",
+    "$27$",
+    "$36$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=|x|$, the $x$-axis and the lines $x=-2$, $x=2$ is",
+   "a": "(B) $4$",
+   "s": "Two triangles of area $2$. [1]",
+   "opts": [
+    "$8$",
+    "$4$",
+    "$2$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the part of $\\dfrac{x^2}9+\\dfrac{y^2}4=1$ in the first quadrant is",
+   "a": "(C) $\\frac{3\\pi}2$",
+   "s": "A quarter of $6\\pi$. [1]",
+   "opts": [
+    "$6\\pi$",
+    "$3\\pi$",
+    "$\\frac{3\\pi}2$",
+    "$\\frac{3\\pi}4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\log x$, the $x$-axis and the line $x=e^2$ is",
+   "a": "(D) $e^2+1$",
+   "s": "$\\left[x\\log x-x\\right]_1^{e^2}=e^2+1$. [1]",
+   "opts": [
+    "$2e^2$",
+    "$2$",
+    "$e^2-1$",
+    "$e^2+1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the region bounded by $y=\\operatorname{cosec}^2x$, the $x$-axis and the lines $x=\\frac\\pi4$, $x=\\frac\\pi2$ is",
+   "a": "(D) $1$",
+   "s": "$\\left[-\\cot x\\right]_{\\frac\\pi4}^{\\frac\\pi2}$. [1]",
+   "opts": [
+    "$2$",
+    "$\\frac\\pi4$",
+    "$\\sqrt2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area enclosed by $x^2+y^2=9$ is $9\\pi$. Reason: The area of a circle of radius $r$ is $\\pi r^2$.",
+   "a": "(A)",
+   "s": "$r=3$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area under $y=x$ for $0\\le x\\le1$ equals the area under $y=x^2$ for $0\\le x\\le1$. Reason: $\\int_0^1x\\,dx=\\frac12$.",
+   "a": "(D)",
+   "s": "The second area is $\\frac13$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=x^2+x$, the $x$-axis and the lines $x=0$ and $x=2$.",
+   "a": "$\\frac{14}3$",
+   "s": "Area $=\\int_0^2(x^2+x)\\,dx$ [1] $=\\frac83+2=\\frac{14}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region in the first quadrant bounded by $y^2=4x$, the $x$-axis and the line $x=4$.",
+   "a": "$\\frac{32}3$",
+   "s": "Area $=\\int_0^42\\sqrt x\\,dx$ [1] $=\\frac43\\cdot8=\\frac{32}3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $x=y^2+1$, the $y$-axis and the lines $y=0$ and $y=1$.",
+   "a": "$\\frac43$",
+   "s": "Area $=\\int_0^1(y^2+1)\\,dy$ [1] $=\\frac13+1=\\frac43$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=x(x-1)(x-2)$ and the $x$-axis.",
+   "a": "$\\frac12$",
+   "s": "The curve meets the axis at $0,1,2$; it is above the axis on $(0,1)$ and below on $(1,2)$ [1]. $\\int_0^1(x^3-3x^2+2x)\\,dx=\\frac14$ and $\\int_1^2(x^3-3x^2+2x)\\,dx=-\\frac14$ [1]. Area $=\\frac14+\\frac14=\\frac12$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=x^2-2x$, the $x$-axis and the lines $x=0$ and $x=3$.",
+   "a": "$\\frac83$",
+   "s": "Below the axis on $(0,2)$, above on $(2,3)$ [1]. $\\left|\\int_0^2(x^2-2x)\\,dx\\right|=\\frac43$ and $\\int_2^3(x^2-2x)\\,dx=\\frac43$ [1]. Area $=\\frac83$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region bounded by $y=\\dfrac1{1+x^2}$, the $x$-axis and the lines $x=-1$ and $x=1$.",
+   "a": "$\\frac\\pi2$",
+   "s": "Area $=\\int_{-1}^1\\frac{dx}{1+x^2}$ [1] $=\\left[\\tan^{-1}x\\right]_{-1}^1$ [1] $=\\frac\\pi4+\\frac\\pi4=\\frac\\pi2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Using integration, find the area of the region in the first quadrant enclosed by the line $x+y=2$, the parabola $y^2=x$ and the $x$-axis.",
+   "a": "$\\frac76$",
+   "s": "The line and the parabola meet where $y^2=2-y$, so $y=1$ and the point is $(1,1)$ [1]. Use horizontal strips from $x=y^2$ to $x=2-y$ for $0\\le y\\le1$ [1]. Area $=\\int_0^1(2-y-y^2)\\,dy$ [1] $=2-\\frac12-\\frac13$ [1] $=\\frac76$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the area of the part of the circle $x^2+y^2=4$ that lies to the right of the line $x=1$.",
+    "a": "$\\frac{4\\pi}3-\\sqrt3$",
+    "s": "Area $=2\\int_1^2\\sqrt{4-x^2}\\,dx$ [1] $=2\\left[\\frac x2\\sqrt{4-x^2}+2\\sin^{-1}\\frac x2\\right]_1^2$ [2] $=2\\left[\\pi-\\frac{\\sqrt3}2-\\frac\\pi3\\right]$ [1] $=\\frac{4\\pi}3-\\sqrt3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. The arch of a bridge is the curve $y=3\\sin\\dfrac{\\pi x}6$ for $0\\le x\\le6$ (in metres). (i) Find the greatest height of the arch. [1] (ii) Write the area under the arch as an integral. [1] (iii) Find the area under the arch. [2] \\textbf{OR} (iii) Find the area under the arch for $0\\le x\\le3$. [2]",
+   "a": "(i) $3$ m; (ii) $\\int_0^63\\sin\\frac{\\pi x}6\\,dx$; (iii) $\\frac{36}\\pi$ $\\text{m}^2$; OR $\\frac{18}\\pi$ $\\text{m}^2$.",
+   "s": "(i) $\\sin\\frac{\\pi x}6=1$ at $x=3$, height $3$ [1]. (ii) $\\int_0^63\\sin\\frac{\\pi x}6\\,dx$ [1]. (iii) $3\\cdot\\frac6\\pi\\left[-\\cos\\frac{\\pi x}6\\right]_0^6$ [1] $=\\frac{18}\\pi\\cdot2=\\frac{36}\\pi$ [1]. OR $\\frac{18}\\pi\\left[-\\cos\\frac{\\pi x}6\\right]_0^3$ [1] $=\\frac{18}\\pi$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch8-main-01": [
+  {
+   "q": "The area of the region bounded by $y=x^2$ and $y=x$ is",
+   "a": "(D) $\\frac16$",
+   "s": "$\\int_0^1(x-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac23$",
+    "$\\frac13$",
+    "$\\frac16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y^2=4ax$ and $x^2=4ay$ is",
+   "a": "(B) $\\frac{16a^2}3$",
+   "s": "They meet at $(4a,4a)$: $\\int_0^{4a}\\left(2\\sqrt{ax}-\\frac{x^2}{4a}\\right)dx$.",
+   "opts": [
+    "$\\frac{32a^2}3$",
+    "$\\frac{16a^2}3$",
+    "$\\frac{8a^2}3$",
+    "$\\frac{4a^2}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$ and $y=2x$ is",
+   "a": "(D) $\\frac43$",
+   "s": "$\\int_0^2(2x-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac83$",
+    "$1$",
+    "$\\frac43$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area in the first quadrant bounded by $y=x$ and $y=x^3$ is",
+   "a": "(B) $\\frac14$",
+   "s": "$\\int_0^1(x-x^3)\\,dx$.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac14$",
+    "$\\frac1{12}$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$ and $y=4$ is",
+   "a": "(A) $\\frac{32}3$",
+   "s": "$\\int_{-2}^2(4-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac{32}3$",
+    "$8$",
+    "$\\frac{16}3$",
+    "$\\frac{64}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=\\sin x$, $y=\\cos x$ and $x=0$ is",
+   "a": "(D) $\\sqrt2-1$",
+   "s": "They meet at $\\frac\\pi4$: $\\int_0^{\\frac\\pi4}(\\cos x-\\sin x)\\,dx$.",
+   "opts": [
+    "$2-\\sqrt2$",
+    "$\\sqrt2$",
+    "$1$",
+    "$\\sqrt2-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area enclosed by $|x|+|y|=1$ is",
+   "a": "(D) $2$",
+   "s": "A square with diagonals of length $2$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$1$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\{(x,y):x^2\\le y\\le|x|\\}$ is",
+   "a": "(B) $\\frac13$",
+   "s": "$2\\int_0^1(x-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac13$",
+    "$\\frac16$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=e^x$, $y=e^{-x}$ and the line $x=1$ is",
+   "a": "(D) $e+\\frac1e-2$",
+   "s": "$\\int_0^1(e^x-e^{-x})\\,dx$.",
+   "opts": [
+    "$e-\\frac1e$",
+    "$e+\\frac1e$",
+    "$e-2$",
+    "$e+\\frac1e-2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\{(x,y):y^2\\le2x,\\ x^2+y^2\\le8\\}$ is",
+   "a": "(A) $2\\pi+\\frac43$",
+   "s": "They meet at $(2,\\pm2)$: $2\\left[\\int_0^2\\sqrt{2x}\\,dx+\\int_2^{2\\sqrt2}\\sqrt{8-x^2}\\,dx\\right]=2\\left[\\frac83+\\pi-2\\right]$.",
+   "opts": [
+    "$2\\pi+\\frac43$",
+    "$2\\pi-\\frac43$",
+    "$4\\pi+\\frac43$",
+    "$\\pi+\\frac43$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$ and $y=x+2$ is",
+   "a": "(D) $\\frac92$",
+   "s": "They meet at $x=-1,2$: $\\int_{-1}^2(x+2-x^2)\\,dx$.",
+   "opts": [
+    "$4$",
+    "$\\frac{11}2$",
+    "$\\frac72$",
+    "$\\frac92$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $x=y^2$ and $x=3-2y^2$ is",
+   "a": "(D) $4$",
+   "s": "They meet at $y=\\pm1$: $\\int_{-1}^1(3-3y^2)\\,dy$.",
+   "opts": [
+    "$\\frac83$",
+    "$6$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=|x-1|$ and $y=3-|x|$ is",
+   "a": "(D) $4$",
+   "s": "They meet at $x=-1$ and $x=2$; integrate $3-|x|-|x-1|$ over $[-1,2]$: $1+2+1$.",
+   "opts": [
+    "$2$",
+    "$3$",
+    "$6$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^3-x$ and the $x$-axis is",
+   "a": "(C) $\\frac12$",
+   "s": "Two equal loops: $2\\int_0^1(x-x^3)\\,dx$.",
+   "opts": [
+    "$0$",
+    "$\\frac14$",
+    "$\\frac12$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area enclosed by $y=\\sin x$ and $y=\\cos x$ between $x=\\frac\\pi4$ and $x=\\frac{5\\pi}4$ is",
+   "a": "(A) $2\\sqrt2$",
+   "s": "$\\int_{\\frac\\pi4}^{\\frac{5\\pi}4}(\\sin x-\\cos x)\\,dx$.",
+   "opts": [
+    "$2\\sqrt2$",
+    "$2$",
+    "$4\\sqrt2$",
+    "$\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region in the first quadrant bounded by $y=\\sqrt x$, the line $x=2y+3$ and the $x$-axis is",
+   "a": "(C) $9$",
+   "s": "They meet at $y=3$: $\\int_0^3(2y+3-y^2)\\,dy$.",
+   "opts": [
+    "$18$",
+    "$\\frac{27}{2}$",
+    "$9$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=[x]$, the $x$-axis and the line $x=3$ is",
+   "a": "(A) $3$",
+   "s": "$0+1+2$.",
+   "opts": [
+    "$3$",
+    "$\\frac92$",
+    "$6$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y^2=4x$ and $y=2x$ is",
+   "a": "(B) $\\frac13$",
+   "s": "$\\int_0^2\\left(\\frac y2-\\frac{y^2}4\\right)dy$.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac13$",
+    "$\\frac23$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The curve $y=x^2$ divides the square $0\\le x\\le1$, $0\\le y\\le1$ into two parts. The ratio of the smaller area to the larger area is",
+   "a": "(D) $1:2$",
+   "s": "The part under the curve has area $\\frac13$.",
+   "opts": [
+    "$1:1$",
+    "$1:3$",
+    "$2:3$",
+    "$1:2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\{(x,y):0\\le y\\le x^2+1,\\ 0\\le y\\le x+1,\\ 0\\le x\\le2\\}$ is",
+   "a": "(D) $\\frac{23}6$",
+   "s": "$x^2+1\\le x+1$ on $[0,1]$: $\\int_0^1(x^2+1)\\,dx+\\int_1^2(x+1)\\,dx=\\frac43+\\frac52$.",
+   "opts": [
+    "$4$",
+    "$\\frac{14}3$",
+    "$\\frac{17}6$",
+    "$\\frac{23}6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=x^2$ and $y=2-x^2$.",
+   "a": "$8$",
+   "s": "$\\int_{-1}^1(2-2x^2)\\,dx=\\frac83$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area bounded by $y=|x|$ and $y=2$.",
+   "a": "$4$",
+   "s": "A triangle with base $4$ and height $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=x(4-x)$ and the $x$-axis.",
+   "a": "$32$",
+   "s": "$\\int_0^4(4x-x^2)\\,dx=\\frac{32}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $6$ times the area bounded by $y=\\sqrt x$ and $y=x$.",
+   "a": "$1$",
+   "s": "$\\int_0^1(\\sqrt x-x)\\,dx=\\frac16$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area bounded by $y=x^2$ and $y=3x$.",
+   "a": "$4.5$",
+   "s": "$\\int_0^3(3x-x^2)\\,dx$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch8-main-02": [
+  {
+   "q": "The area of the region bounded by $x^2=4y$ and the line $x=4y-2$ is",
+   "a": "(A) $\\frac98$",
+   "s": "They meet at $x=-1,2$: $\\frac14\\int_{-1}^2(x+2-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac98$",
+    "$\\frac{9}{2}$",
+    "$\\frac38$",
+    "$\\frac94$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2+2$, $y=x$, $x=0$ and $x=3$ is",
+   "a": "(D) $\\frac{21}2$",
+   "s": "$\\int_0^3(x^2+2-x)\\,dx$.",
+   "opts": [
+    "$15$",
+    "$12$",
+    "$\\frac{9}{2}$",
+    "$\\frac{21}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area common to the circles $x^2+y^2=4$ and $(x-2)^2+y^2=4$ is",
+   "a": "(B) $\\frac{8\\pi}3-2\\sqrt3$",
+   "s": "They meet at $x=1$: $4\\int_1^2\\sqrt{4-x^2}\\,dx$.",
+   "opts": [
+    "$\\frac{8\\pi}3+2\\sqrt3$",
+    "$\\frac{8\\pi}3-2\\sqrt3$",
+    "$\\frac{4\\pi}3-\\sqrt3$",
+    "$2\\pi-2\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the smaller region bounded by $\\dfrac{x^2}9+\\dfrac{y^2}4=1$ and the line $\\dfrac x3+\\dfrac y2=1$ is",
+   "a": "(D) $\\frac{3\\pi}2-3$",
+   "s": "Quarter ellipse minus the triangle: $\\frac{6\\pi}4-3$.",
+   "opts": [
+    "$\\frac{3\\pi}2$",
+    "$6\\pi-3$",
+    "$3\\pi-3$",
+    "$\\frac{3\\pi}2-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^3$ and $y=4x$ is",
+   "a": "(B) $8$",
+   "s": "They meet at $0,\\pm2$: $2\\int_0^2(4x-x^3)\\,dx$.",
+   "opts": [
+    "$2$",
+    "$8$",
+    "$4$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=\\log x$ and $y=(\\log x)^2$ is",
+   "a": "(B) $3-e$",
+   "s": "They meet at $x=1,e$: $\\int_1^e\\log x\\,dx-\\int_1^e(\\log x)^2\\,dx=1-(e-2)$.",
+   "opts": [
+    "$1$",
+    "$3-e$",
+    "$e-1$",
+    "$e-2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2-4x+3$ and the $x$-axis is",
+   "a": "(A) $\\frac43$",
+   "s": "Roots $1$ and $3$: $\\left|\\int_1^3(x^2-4x+3)\\,dx\\right|$.",
+   "opts": [
+    "$\\frac43$",
+    "$\\frac83$",
+    "$2$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area below both $y=\\sin x$ and $y=\\cos x$ and above the $x$-axis, for $0\\le x\\le\\frac\\pi2$, is",
+   "a": "(B) $2-\\sqrt2$",
+   "s": "$\\int_0^{\\frac\\pi4}\\sin x\\,dx+\\int_{\\frac\\pi4}^{\\frac\\pi2}\\cos x\\,dx=2\\left(1-\\frac1{\\sqrt2}\\right)$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$2-\\sqrt2$",
+    "$1$",
+    "$\\sqrt2-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=|x|-1$ and $y=1-|x|$ is",
+   "a": "(C) $2$",
+   "s": "A square with vertices $(\\pm1,0)$, $(0,\\pm1)$.",
+   "opts": [
+    "$4$",
+    "$1$",
+    "$2$",
+    "$\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=x^2$ and $y=kx$ with $k>0$ enclose an area $36$. Then $k$ equals",
+   "a": "(D) $6$",
+   "s": "The area is $\\int_0^k(kx-x^2)\\,dx=\\frac{k^3}6$.",
+   "opts": [
+    "$12$",
+    "$9$",
+    "$3$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=e^x$, $y=e$ and the $y$-axis is",
+   "a": "(C) $1$",
+   "s": "$\\int_0^1(e-e^x)\\,dx=e-(e-1)$.",
+   "opts": [
+    "$e-2$",
+    "$e-1$",
+    "$1$",
+    "$e$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=\\cos x$, $y=x+1$ and $y=0$ is",
+   "a": "(C) $\\frac32$",
+   "s": "$\\int_{-1}^0(x+1)\\,dx+\\int_0^{\\frac\\pi2}\\cos x\\,dx=\\frac12+1$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$\\frac32$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$ and the lines $y=1$, $y=4$ is",
+   "a": "(A) $\\frac{28}3$",
+   "s": "$2\\int_1^4\\sqrt y\\,dy$.",
+   "opts": [
+    "$\\frac{28}3$",
+    "$\\frac{32}3$",
+    "$7$",
+    "$\\frac{14}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=x^2$ and $y=x^4$ is",
+   "a": "(A) $\\frac4{15}$",
+   "s": "$2\\int_0^1(x^2-x^4)\\,dx$.",
+   "opts": [
+    "$\\frac4{15}$",
+    "$\\frac13$",
+    "$\\frac2{15}$",
+    "$\\frac8{15}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\{(x,y):x^2+y^2\\le1\\le x+y\\}$ is",
+   "a": "(D) $\\frac\\pi4-\\frac12$",
+   "s": "A quarter of the unit disc minus a triangle of area $\\frac12$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2-1$",
+    "$\\frac\\pi4-\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=\\tan x$, the $x$-axis and the line $x=\\frac\\pi3$ is",
+   "a": "(C) $\\log2$",
+   "s": "$\\left[\\log\\sec x\\right]_0^{\\frac\\pi3}$.",
+   "opts": [
+    "$\\frac12\\log2$",
+    "$\\log3$",
+    "$\\log2$",
+    "$\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=2^x$, the $y$-axis and the line $y=2$ is",
+   "a": "(D) $2-\\frac1{\\log2}$",
+   "s": "$\\int_0^1(2-2^x)\\,dx$.",
+   "opts": [
+    "$\\frac1{\\log2}$",
+    "$1$",
+    "$2-\\log2$",
+    "$2-\\frac1{\\log2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\{(x,y):|x|\\le1,\\ x^2\\le y\\le1\\}$ is",
+   "a": "(A) $\\frac43$",
+   "s": "$\\int_{-1}^1(1-x^2)\\,dx$.",
+   "opts": [
+    "$\\frac43$",
+    "$2$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=\\dfrac1x$, the $x$-axis and the lines $x=1$, $x=4$ is",
+   "a": "(A) $2\\log2$",
+   "s": "$\\log4$.",
+   "opts": [
+    "$2\\log2$",
+    "$\\log3$",
+    "$\\log2$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The total area between $y=x$ and $y=x^2$ for $0\\le x\\le2$ is",
+   "a": "(A) $1$",
+   "s": "$\\int_0^1(x-x^2)\\,dx+\\int_1^2(x^2-x)\\,dx=\\frac16+\\frac56$.",
+   "opts": [
+    "$1$",
+    "$\\frac16$",
+    "$\\frac23$",
+    "$\\frac56$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=x^2+1$ and $y=2x+1$.",
+   "a": "$4$",
+   "s": "$\\int_0^2(2x-x^2)\\,dx=\\frac43$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area bounded by $y=|x-2|$ and $y=2$.",
+   "a": "$4$",
+   "s": "A triangle with base $4$ and height $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $12$ times the area bounded by $y=x^2$, the $x$-axis and the tangent to $y=x^2$ at $(1,1)$.",
+   "a": "$1$",
+   "s": "The tangent $y=2x-1$ meets the axis at $\\frac12$. Area $=\\frac13-\\frac12\\cdot\\frac12\\cdot1=\\frac1{12}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=x^2$ and $y=8-x^2$.",
+   "a": "$64$",
+   "s": "$\\int_{-2}^2(8-2x^2)\\,dx=\\frac{64}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the region $\\{(x,y):x^2\\le y\\le2-x\\}$.",
+   "a": "$4.5$",
+   "s": "They meet at $x=-2,1$: $\\int_{-2}^1(2-x-x^2)\\,dx$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch8-advanced-01": [
+  {
+   "q": "The area of the region $\\{(x,y):xy\\le8,\\ 1\\le y\\le x^2\\}$ is",
+   "a": "(C) $16\\log2-\\frac{14}3$",
+   "s": "$y=x^2$ meets $xy=8$ at $x=2$. Area $=\\int_1^2(x^2-1)\\,dx+\\int_2^8\\left(\\frac8x-1\\right)dx=\\frac43+16\\log2-6$.",
+   "opts": [
+    "$8\\log2-\\frac{14}3$",
+    "$8\\log2-\\frac73$",
+    "$16\\log2-\\frac{14}3$",
+    "$16\\log2-6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $\\left\\{(x,y):0\\le x\\le\\frac94,\\ 0\\le y\\le1,\\ x\\ge3y,\\ x+y\\ge2\\right\\}$ is",
+   "a": "(B) $\\frac{11}{32}$",
+   "s": "Vertices $\\left(\\frac32,\\frac12\\right)$, $(2,0)$, $\\left(\\frac94,0\\right)$, $\\left(\\frac94,\\frac34\\right)$; integrate in $y$.",
+   "opts": [
+    "$\\frac{37}{96}$",
+    "$\\frac{11}{32}$",
+    "$\\frac{13}{32}$",
+    "$\\frac{35}{96}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=|x^2-1|$ and $y=1$ is",
+   "a": "(C) $\\frac{8(\\sqrt2-1)}3$",
+   "s": "They meet at $x=0$ and $x=\\pm\\sqrt2$: $2\\left[\\int_0^1x^2\\,dx+\\int_1^{\\sqrt2}(2-x^2)\\,dx\\right]$.",
+   "opts": [
+    "$\\frac43$",
+    "$\\frac{8\\sqrt2}3$",
+    "$\\frac{8(\\sqrt2-1)}3$",
+    "$\\frac{4(\\sqrt2-1)}3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=(x-1)^2$, $y=(x+1)^2$ and $y=\\frac14$ is",
+   "a": "(D) $\\frac13$",
+   "s": "For $\\frac14\\le y\\le1$ the width is $(1-\\sqrt y)-(\\sqrt y-1)$: $\\int_{\\frac14}^1(2-2\\sqrt y)\\,dy$.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac23$",
+    "$\\frac16$",
+    "$\\frac13$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A(k)$ is the area bounded by $y=x^2$ and $y=k$, for $k>0$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$A(k)=\\int_{-\\sqrt k}^{\\sqrt k}(k-x^2)\\,dx$. $A(9)=36$.",
+   "opts": [
+    "$A(k)=\\frac43k^{\\frac32}$",
+    "$A(1)=\\frac43$",
+    "$A(4)=\\frac{32}3$",
+    "$A(9)=27$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$g(x)=x(x-1)(x-3)$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$g\\ge0$ on $[0,1]$ and $g\\le0$ on $[1,3]$. Total area $\\frac5{12}+\\frac83=\\frac{37}{12}$.",
+   "opts": [
+    "The area between $y=g(x)$ and the $x$-axis on $[0,1]$ is $\\frac5{12}$",
+    "The area between $y=g(x)$ and the $x$-axis on $[1,3]$ is $\\frac83$",
+    "$\\int_0^3g(x)\\,dx=-\\frac94$",
+    "The total area between $y=g(x)$ and the $x$-axis on $[0,3]$ is $\\frac94$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$R=\\{(x,y):x^2\\le y\\le1\\}$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "The part below $y=c$ has area $\\frac43c^{\\frac32}$; set it equal to $\\frac23$.",
+   "opts": [
+    "The area of $R$ is $\\frac43$",
+    "The line $y=c$ with $c=4^{-\\frac13}$ divides $R$ into two equal areas",
+    "The line $x=0$ divides $R$ into two equal areas",
+    "The area of $R$ is $\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The ellipse $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ with $a>b>0$ has area $4\\pi$ and $a+b=5$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\pi ab=4\\pi$; then $a$ and $b$ are the roots of $t^2-5t+4=0$. The rectangle has area $4ab=16$.",
+   "opts": [
+    "$ab=4$",
+    "$a=4$ and $b=1$",
+    "$a^2+b^2=17$",
+    "The rectangle circumscribing the ellipse has area $8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $6$ times the area of the region $\\{(x,y):0\\le y\\le x^2,\\ 0\\le y\\le2-x\\}$.",
+   "a": "$5$",
+   "s": "$\\int_0^1x^2\\,dx+\\int_1^2(2-x)\\,dx=\\frac13+\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=x|x|$ and $y=x$.",
+   "a": "$1$",
+   "s": "Each loop has area $\\frac16$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=\\sqrt x$, $y=\\sqrt{2-x}$ and the $x$-axis.",
+   "a": "$4$",
+   "s": "They meet at $x=1$: $\\int_0^1\\sqrt x\\,dx+\\int_1^2\\sqrt{2-x}\\,dx=\\frac23+\\frac23$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac1\\pi$ times the area of the region $\\{(x,y):x^2+y^2\\le4,\\ y\\ge|x|\\}$.",
+   "a": "$1$",
+   "s": "A sector of angle $\\frac\\pi2$ of a circle of radius $2$: area $\\pi$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each region with its area.\nList-I: (P) $y=x^2$ and $y=x$; (Q) $y=x^2$ and $x=y^2$; (R) $y=x^2$ and $y=4$; (S) $y=x$ and $y=x^3$ in the first quadrant\nList-II: (1) $\\frac13$; (2) $\\frac14$; (3) $\\frac{32}3$; (4) $\\frac16$; (5) $\\frac1{12}$",
+   "a": "(A) $P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 2$",
+   "s": "$\\int_0^1(x-x^2)$; $\\int_0^1(\\sqrt x-x^2)$; $\\int_{-2}^2(4-x^2)$; $\\int_0^1(x-x^3)$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 2$, $R \\to 3$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with the area under it for $0\\le x\\le\\frac\\pi2$.\nList-I: (P) $y=\\sin x$; (Q) $y=\\sin^2x$; (R) $y=x$; (S) $y=\\sin x\\cos x$\nList-II: (1) $\\frac\\pi4$; (2) $\\frac{\\pi^2}8$; (3) $1$; (4) $\\frac12$; (5) $\\frac\\pi2$",
+   "a": "(B) $P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+   "s": "$1$; $\\int\\frac{1-\\cos2x}2=\\frac\\pi4$; $\\frac12\\left(\\frac\\pi2\\right)^2$; $\\frac12$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with the area it encloses.\nList-I: (P) $x^2+y^2=9$; (Q) $\\frac{x^2}9+\\frac{y^2}4=1$; (R) $|x|+|y|=3$; (S) $y^2=4x$ with the line $x=1$\nList-II: (1) $18$; (2) $6\\pi$; (3) $\\frac83$; (4) $9\\pi$; (5) $3\\pi$",
+   "a": "(A) $P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+   "s": "$\\pi\\cdot9$; $\\pi\\cdot3\\cdot2$; a square with diagonals $6$; $2\\int_0^12\\sqrt x\\,dx$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each region bounded by $y=x^2$ and a line with its area.\nList-I: (P) $y=2x$; (Q) $y=3x$; (R) $y=4x$; (S) $y=6x$\nList-II: (1) $36$; (2) $\\frac92$; (3) $\\frac{32}3$; (4) $\\frac43$; (5) $\\frac83$",
+   "a": "(A) $P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+   "s": "For $y=kx$ the area is $\\frac{k^3}6$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch8-advanced-02": [
+  {
+   "q": "$f(x)=\\max\\{x^2,(1-x)^2,2x(1-x)\\}$ for $0\\le x\\le1$. The area bounded by $y=f(x)$, the $x$-axis and the lines $x=0$, $x=1$ is",
+   "a": "(D) $\\frac{17}{27}$",
+   "s": "$f=(1-x)^2$ on $\\left[0,\\frac13\\right]$, $2x(1-x)$ on $\\left[\\frac13,\\frac23\\right]$, $x^2$ on $\\left[\\frac23,1\\right]$.",
+   "opts": [
+    "$\\frac{16}{27}$",
+    "$\\frac{19}{27}$",
+    "$\\frac23$",
+    "$\\frac{17}{27}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area enclosed by $y=\\sin x+\\cos x$ and $y=|\\cos x-\\sin x|$ for $0\\le x\\le\\frac\\pi2$ is",
+   "a": "(D) $2\\sqrt2(\\sqrt2-1)$",
+   "s": "On $\\left[0,\\frac\\pi4\\right]$ the difference is $2\\sin x$; on $\\left[\\frac\\pi4,\\frac\\pi2\\right]$ it is $2\\cos x$. Each part gives $2-\\sqrt2$.",
+   "opts": [
+    "$2(\\sqrt2+1)$",
+    "$2\\sqrt2(\\sqrt2+1)$",
+    "$4(\\sqrt2-1)$",
+    "$2\\sqrt2(\\sqrt2-1)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area enclosed by $y=x^3$ and its tangent at $(1,1)$ is",
+   "a": "(B) $\\frac{27}4$",
+   "s": "The tangent $y=3x-2$ meets the curve again at $x=-2$: $\\int_{-2}^1(x^3-3x+2)\\,dx$.",
+   "opts": [
+    "$\\frac94$",
+    "$\\frac{27}4$",
+    "$\\frac{27}2$",
+    "$\\frac{15}4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region bounded by $y=|x-1|+|x+1|$ and $y=4$ is",
+   "a": "(C) $6$",
+   "s": "$y=2$ on $[-1,1]$ and $y=2|x|$ outside: $2\\left[\\int_0^1 2\\,dx+\\int_1^2(4-2x)\\,dx\\right]$.",
+   "opts": [
+    "$12$",
+    "$8$",
+    "$6$",
+    "$4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$R=\\{(x,y):y^2\\le4x,\\ x\\le4\\}$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$2\\int_0^42\\sqrt x\\,dx=\\frac{64}3$ and $2\\int_0^12\\sqrt x\\,dx=\\frac83$.",
+   "opts": [
+    "The area of $R$ is $\\frac{32}3$",
+    "The area of $R$ is $\\frac{64}3$",
+    "The line $x=1$ cuts off a part of area $\\frac83$",
+    "$R$ is symmetric about the $x$-axis"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A_1$ is the area bounded by $y=e^x$, the $x$-axis and $x=0$, $x=1$. $A_2$ is the area bounded by $y=\\log x$, the $x$-axis and $x=e$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "The two regions fill the rectangle $[0,1]\\times[0,e]$ after a reflection in $y=x$.",
+   "opts": [
+    "$A_1+A_2=e$",
+    "$A_1=A_2$",
+    "$A_1=e-1$",
+    "$A_2=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the region bounded by $y=x^2$ and $y=2|x|$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$2\\int_0^2(2x-x^2)\\,dx=\\frac83$.",
+   "opts": [
+    "The curves meet at $x=0$ and $x=\\pm2$",
+    "The area is $\\frac83$",
+    "The area is $\\frac43$",
+    "The region is symmetric about the $y$-axis"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the ellipse $\\dfrac{x^2}4+y^2=1$ and the circle $x^2+y^2=4$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "Circle $4\\pi$, ellipse $\\pi\\cdot2\\cdot1$.",
+   "opts": [
+    "The circle encloses area $2\\pi$",
+    "The area inside the circle and outside the ellipse is $2\\pi$",
+    "The ellipse encloses area $2\\pi$",
+    "The curves touch at $(\\pm2,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $6$ times the area bounded by $y=x^2$ and $y=6-x$.",
+   "a": "$125$",
+   "s": "They meet at $x=-3,2$: $\\int_{-3}^2(6-x-x^2)\\,dx=\\frac{125}6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area bounded by $y=3-|x|$ and the $x$-axis.",
+   "a": "$9$",
+   "s": "A triangle with base $6$ and height $3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=\\sqrt x$ and $y=x^2$.",
+   "a": "$1$",
+   "s": "$\\int_0^1(\\sqrt x-x^2)\\,dx=\\frac13$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $3$ times the area bounded by $y=4x-x^2$ and $y=x^2$.",
+   "a": "$8$",
+   "s": "They meet at $x=0,2$: $\\int_0^2(4x-2x^2)\\,dx=\\frac83$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each curve with the area between it and the $x$-axis on the given interval.\nList-I: (P) $y=x^2-1$ on $[-1,1]$; (Q) $y=\\sin x$ on $[0,\\pi]$; (R) $y=\\frac1x$ on $[1,e^3]$; (S) $y=e^x$ on $[0,\\log5]$\nList-II: (1) $2$; (2) $3$; (3) $4$; (4) $\\frac43$; (5) $1$",
+   "a": "(A) $P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+   "s": "$\\int_{-1}^1(1-x^2)$; $2$; $\\log e^3$; $5-1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each region with its area.\nList-I: (P) $|x|+|y|\\le1$; (Q) $x^2+y^2\\le1$; (R) $x^2\\le y\\le1$; (S) $x^2+y^2\\le1$, $y\\ge|x|$\nList-II: (1) $\\frac\\pi4$; (2) $\\frac43$; (3) $2$; (4) $\\pi$; (5) $\\frac\\pi2$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+   "s": "A square of side $\\sqrt2$; the unit disc; $\\int_{-1}^1(1-x^2)$; a quarter of the disc.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of curves with the area between them.\nList-I: (P) $y=x^2$ and $y=4-3x$; (Q) $y=x^3$ and $y=x^2$; (R) $y^2=x$ and $y=x-2$; (S) $y=\\sin x$ and $y=\\frac{2x}\\pi$ for $0\\le x\\le\\frac\\pi2$\nList-II: (1) $\\frac1{12}$; (2) $\\frac92$; (3) $\\frac{125}6$; (4) $1-\\frac\\pi4$; (5) $\\frac\\pi4$",
+   "a": "(D) $P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+   "s": "$\\int_{-4}^1(4-3x-x^2)$; $\\int_0^1(x^2-x^3)$; $\\int_{-1}^2(y+2-y^2)\\,dy$; $1-\\frac2\\pi\\cdot\\frac{\\pi^2}8$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve $y=x^n$ with the area under it for $0\\le x\\le1$.\nList-I: (P) $n=1$; (Q) $n=2$; (R) $n=\\frac12$; (S) $n=3$\nList-II: (1) $\\frac23$; (2) $\\frac14$; (3) $\\frac12$; (4) $\\frac13$; (5) $\\frac15$",
+   "a": "(C) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "The area is $\\frac1{n+1}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

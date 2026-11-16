@@ -1,0 +1,2460 @@
+{
+ "g12-ch11-mcq-20-01": [
+  {
+   "q": "The direction cosines of the $x$-axis are",
+   "a": "(C) $1,0,0$",
+   "s": "Angles $0^\\circ$, $90^\\circ$, $90^\\circ$.",
+   "opts": [
+    "$0,1,0$",
+    "$1,1,1$",
+    "$1,0,0$",
+    "$0,0,1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction cosines of a line with direction ratios $1,2,2$ are",
+   "a": "(B) $\\frac13,\\frac23,\\frac23$",
+   "s": "Divide by $3$.",
+   "opts": [
+    "$\\frac13,\\frac13,\\frac23$",
+    "$\\frac13,\\frac23,\\frac23$",
+    "$\\frac15,\\frac25,\\frac25$",
+    "$1,2,2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of the line through $(-2,4,-5)$ and $(1,2,3)$ are",
+   "a": "(C) $3,-2,8$",
+   "s": "$(1+2,\\ 2-4,\\ 3+5)$.",
+   "opts": [
+    "$3,2,8$",
+    "$-1,6,-2$",
+    "$3,-2,8$",
+    "$1,2,3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line makes acute angles $60^\\circ$ with the $x$-axis and $45^\\circ$ with the $y$-axis. Its angle with the $z$-axis is",
+   "a": "(C) $60^\\circ$",
+   "s": "$\\cos^2\\gamma=1-\\frac14-\\frac12$.",
+   "opts": [
+    "$90^\\circ$",
+    "$45^\\circ$",
+    "$60^\\circ$",
+    "$30^\\circ$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector equation of the line through $(1,2,3)$ parallel to $\\hat i-2\\hat j+3\\hat k$ is",
+   "a": "(A) $\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(\\hat i-2\\hat j+3\\hat k)$",
+   "s": "$\\vec a=\\hat i+2\\hat j+3\\hat k$.",
+   "opts": [
+    "$\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(\\hat i-2\\hat j+3\\hat k)$",
+    "$\\vec r=-\\hat i-2\\hat j-3\\hat k+\\lambda(\\hat i-2\\hat j+3\\hat k)$",
+    "$\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(\\hat i+2\\hat j+3\\hat k)$",
+    "$\\vec r=\\hat i-2\\hat j+3\\hat k+\\lambda(\\hat i+2\\hat j+3\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line through $(1,-1,2)$ with direction ratios $2,3,-1$ is",
+   "a": "(B) $\\frac{x-1}2=\\frac{y+1}3=\\frac{z-2}{-1}$",
+   "s": "Cartesian form.",
+   "opts": [
+    "$\\frac{x-2}1=\\frac{y-3}{-1}=\\frac{z+1}2$",
+    "$\\frac{x-1}2=\\frac{y+1}3=\\frac{z-2}{-1}$",
+    "$\\frac{x+1}2=\\frac{y-1}3=\\frac{z+2}{-1}$",
+    "$\\frac{x-1}2=\\frac{y+1}3=\\frac{z-2}1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of $\\dfrac{x-2}3=\\dfrac{2y-1}4=\\dfrac{z+3}5$ are",
+   "a": "(D) $3,2,5$",
+   "s": "$\\frac{2y-1}4=\\frac{y-\\frac12}2$.",
+   "opts": [
+    "$3,4,5$",
+    "$3,\\frac12,5$",
+    "$2,1,-3$",
+    "$3,2,5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between the lines $\\frac x1=\\frac y0=\\frac z0$ and $\\frac x0=\\frac y1=\\frac z0$ is",
+   "a": "(C) $\\frac\\pi2$",
+   "s": "The direction ratios are perpendicular.",
+   "opts": [
+    "$\\pi$",
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between $\\vec r=\\lambda(2\\hat i+2\\hat j+\\hat k)$ and $\\vec r=\\mu(\\hat i+2\\hat j+2\\hat k)$ is",
+   "a": "(A) $\\cos^{-1}\\frac89$",
+   "s": "$\\frac{2+4+2}{3\\cdot3}$.",
+   "opts": [
+    "$\\cos^{-1}\\frac89$",
+    "$\\cos^{-1}\\frac23$",
+    "$\\frac\\pi3$",
+    "$\\cos^{-1}\\frac49$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{x-1}2=\\dfrac{y-2}\\lambda=\\dfrac{z-3}1$ is perpendicular to $\\dfrac x1=\\dfrac y1=\\dfrac z{-4}$. Then $\\lambda$ equals",
+   "a": "(A) $2$",
+   "s": "$2+\\lambda-4=0$.",
+   "opts": [
+    "$2$",
+    "$4$",
+    "$-2$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac x2=\\dfrac y3=\\dfrac z\\mu$ is parallel to $\\dfrac x4=\\dfrac y6=\\dfrac z2$. Then $\\mu$ equals",
+   "a": "(B) $1$",
+   "s": "The second set is twice the first.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$4$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The shortest distance between $\\vec r=\\lambda\\hat i$ and $\\vec r=\\hat j+\\mu\\hat k$ is",
+   "a": "(B) $1$",
+   "s": "$\\vec b_1\\times\\vec b_2=-\\hat j$ and $(\\vec a_2-\\vec a_1)\\cdot(-\\hat j)=-1$.",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$\\sqrt2$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The shortest distance between $x=y=z$ and $x=-y=z$ is",
+   "a": "(C) $0$",
+   "s": "Both lines pass through the origin.",
+   "opts": [
+    "$\\frac1{\\sqrt3}$",
+    "$1$",
+    "$0$",
+    "$\\sqrt2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line $\\dfrac{x-1}1=\\dfrac{y-2}2=\\dfrac{z-3}3$ meets the $xy$-plane at",
+   "a": "(B) $(0,0,0)$",
+   "s": "$z=0$ gives $t=-1$.",
+   "opts": [
+    "$(1,2,3)$",
+    "$(0,0,0)$",
+    "$(-1,-2,0)$",
+    "$(1,2,0)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The distance between $(1,-1,2)$ and $(3,1,1)$ is",
+   "a": "(D) $3$",
+   "s": "$\\sqrt{4+4+1}$.",
+   "opts": [
+    "$5$",
+    "$\\sqrt5$",
+    "$9$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line has direction cosines $l,m,n$. A parallel line in the opposite direction has direction cosines",
+   "a": "(A) $-l,-m,-n$",
+   "s": "Reverse the direction.",
+   "opts": [
+    "$-l,-m,-n$",
+    "$m,n,l$",
+    "$\\frac1l,\\frac1m,\\frac1n$",
+    "$l,m,n$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The $y$-axis is given by",
+   "a": "(B) $x=0$, $z=0$",
+   "s": "Points $(0,t,0)$.",
+   "opts": [
+    "$y=0$",
+    "$x=0$, $z=0$",
+    "$x=0$, $y=0$",
+    "$y=0$, $z=0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The point $(3,-1,3)$ and the line $\\vec r=\\hat i+2\\hat k+\\lambda(2\\hat i-\\hat j+\\hat k)$:",
+   "a": "(A) the point lies on the line",
+   "s": "$\\lambda=1$ gives $(3,-1,3)$.",
+   "opts": [
+    "the point lies on the line",
+    "the point is at distance $1$ from the line",
+    "the line is parallel to the vector from the origin to the point",
+    "the point is the foot of the perpendicular from the origin"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: Direction ratios $2,4,4$ give the direction cosines $\\frac13,\\frac23,\\frac23$. Reason: Direction cosines are the direction ratios divided by $\\sqrt{a^2+b^2+c^2}$.",
+   "a": "(A)",
+   "s": "$\\sqrt{4+16+16}=6$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The lines $\\vec r=\\lambda(\\hat i+\\hat j)$ and $\\vec r=\\hat i+\\mu(\\hat i+\\hat j)$ intersect. Reason: Parallel distinct lines never meet.",
+   "a": "(D)",
+   "s": "The lines are parallel and distinct.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch11-board-01": [
+  {
+   "q": "The direction cosines of a line with direction ratios $-1,2,-2$ are",
+   "a": "(C) $-\\frac13,\\frac23,-\\frac23$",
+   "s": "Divide by $3$. [1]",
+   "opts": [
+    "$-1,2,-2$",
+    "$-\\frac15,\\frac25,-\\frac25$",
+    "$-\\frac13,\\frac23,-\\frac23$",
+    "$\\frac13,\\frac23,\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\frac12,\\frac12,k$ are the direction cosines of a line. Then $k$ equals",
+   "a": "(A) $\\pm\\frac1{\\sqrt2}$",
+   "s": "$\\frac14+\\frac14+k^2=1$. [1]",
+   "opts": [
+    "$\\pm\\frac1{\\sqrt2}$",
+    "$\\pm\\frac12$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of the line joining $(3,-2,1)$ and $(1,0,-1)$ are",
+   "a": "(D) $-2,2,-2$",
+   "s": "Subtract the coordinates. [1]",
+   "opts": [
+    "$2,2,2$",
+    "$4,-2,0$",
+    "$3,-2,1$",
+    "$-2,2,-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line makes angles $45^\\circ$, $60^\\circ$ and $120^\\circ$ with the axes. Its direction cosines are",
+   "a": "(A) $\\frac1{\\sqrt2},\\frac12,-\\frac12$",
+   "s": "Take the cosines. [1]",
+   "opts": [
+    "$\\frac1{\\sqrt2},\\frac12,-\\frac12$",
+    "$\\frac1{\\sqrt2},\\frac12,\\frac12$",
+    "$\\frac12,\\frac1{\\sqrt2},-\\frac12$",
+    "$\\frac1{\\sqrt2},\\frac{\\sqrt3}2,-\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector equation of the line through $(2,-1,1)$ and $(3,2,0)$ is",
+   "a": "(C) $\\vec r=2\\hat i-\\hat j+\\hat k+\\lambda(\\hat i+3\\hat j-\\hat k)$",
+   "s": "Direction $(3-2,\\ 2+1,\\ 0-1)$. [1]",
+   "opts": [
+    "$\\vec r=2\\hat i-\\hat j+\\hat k+\\lambda(5\\hat i+\\hat j+\\hat k)$",
+    "$\\vec r=3\\hat i+2\\hat j+\\lambda(2\\hat i-\\hat j+\\hat k)$",
+    "$\\vec r=2\\hat i-\\hat j+\\hat k+\\lambda(\\hat i+3\\hat j-\\hat k)$",
+    "$\\vec r=2\\hat i-\\hat j+\\hat k+\\lambda(3\\hat i+2\\hat j)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line through $A(3,4,-7)$ and $B(1,-1,6)$ is",
+   "a": "(D) $\\frac{x-3}{-2}=\\frac{y-4}{-5}=\\frac{z+7}{13}$",
+   "s": "Direction $\\vec b-\\vec a$. [1]",
+   "opts": [
+    "$\\frac{x+3}{-2}=\\frac{y+4}{-5}=\\frac{z-7}{13}$",
+    "$\\frac{x-3}2=\\frac{y-4}5=\\frac{z+7}{13}$",
+    "$\\frac{x-1}3=\\frac{y+1}4=\\frac{z-6}{-7}$",
+    "$\\frac{x-3}{-2}=\\frac{y-4}{-5}=\\frac{z+7}{13}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A point on $\\dfrac{x+1}2=\\dfrac{y-3}{-1}=\\dfrac z4$ is",
+   "a": "(A) $(-1,3,0)$",
+   "s": "Put each fraction equal to $0$. [1]",
+   "opts": [
+    "$(-1,3,0)$",
+    "$(1,-3,0)$",
+    "$(2,-1,4)$",
+    "$(-1,-3,0)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of $2x-1=3y+2=z-3$ are",
+   "a": "(D) $3,2,6$",
+   "s": "Write $\\frac{x-\\frac12}{\\frac12}=\\frac{y+\\frac23}{\\frac13}=\\frac{z-3}1$ and multiply by $6$. [1]",
+   "opts": [
+    "$2,3,1$",
+    "$1,2,3$",
+    "$\\frac12,\\frac13,1$ only",
+    "$3,2,6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between lines with direction ratios $5,-12,13$ and $-3,4,5$ is",
+   "a": "(B) $\\cos^{-1}\\frac1{65}$",
+   "s": "$\\frac{-15-48+65}{13\\sqrt2\\cdot5\\sqrt2}$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\cos^{-1}\\frac1{65}$",
+    "$\\cos^{-1}\\frac1{13}$",
+    "$\\cos^{-1}\\frac2{65}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Lines with direction ratios $2,k,3$ and $1,2,-2$ are perpendicular. Then $k$ equals",
+   "a": "(B) $2$",
+   "s": "$2+2k-6=0$. [1]",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$-2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The lines $\\dfrac x1=\\dfrac y2=\\dfrac z3$ and $\\dfrac{x-1}{-2}=\\dfrac{y-2}{-4}=\\dfrac{z-3}{-6}$ are",
+   "a": "(D) parallel",
+   "s": "Proportional direction ratios. [1]",
+   "opts": [
+    "perpendicular",
+    "at an angle of $60^\\circ$",
+    "skew",
+    "parallel"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The shortest distance between $\\vec r=\\hat i+\\lambda\\hat j$ and $\\vec r=2\\hat i+\\mu\\hat k$ is",
+   "a": "(D) $1$",
+   "s": "$\\hat j\\times\\hat k=\\hat i$ and $(\\vec a_2-\\vec a_1)\\cdot\\hat i=1$. [1]",
+   "opts": [
+    "$0$",
+    "$\\sqrt2$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two lines intersect. The shortest distance between them is",
+   "a": "(B) $0$",
+   "s": "They have a common point. [1]",
+   "opts": [
+    "not defined",
+    "$0$",
+    "$1$",
+    "the distance between any two of their points"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The distance of $(3,4,5)$ from the $x$-axis is",
+   "a": "(B) $\\sqrt{41}$",
+   "s": "$\\sqrt{y^2+z^2}$. [1]",
+   "opts": [
+    "$3$",
+    "$\\sqrt{41}$",
+    "$5\\sqrt2$",
+    "$\\sqrt{34}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The $x$-axis has direction cosines $1,0,0$. Reason: It makes angles $0^\\circ$, $90^\\circ$, $90^\\circ$ with the axes.",
+   "a": "(A)",
+   "s": "Take the cosines. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: Lines with direction ratios $1,0,0$ and $0,1,0$ are perpendicular. Reason: Every two lines in space are either parallel or intersecting.",
+   "a": "(C)",
+   "s": "R is false: skew lines exist. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the direction cosines of the line through $(2,3,-1)$ and $(4,-1,3)$.",
+   "a": "$\\frac13,-\\frac23,\\frac23$",
+   "s": "Direction ratios $2,-4,4$ [1]. Divide by $6$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $A(2,3,-4)$, $B(1,-2,3)$ and $C(3,8,-11)$ are collinear.",
+    "a": "Shown.",
+    "s": "Direction ratios of $AB$: $-1,-5,7$; of $BC$: $2,10,-14$ [1]. They are proportional and $B$ is common [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the vector and Cartesian equations of the line through $(1,2,3)$ parallel to $3\\hat i+2\\hat j-2\\hat k$.",
+   "a": "$\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(3\\hat i+2\\hat j-2\\hat k)$; $\\frac{x-1}3=\\frac{y-2}2=\\frac{z-3}{-2}$",
+   "s": "Vector form $\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(3\\hat i+2\\hat j-2\\hat k)$ [1]. Cartesian form $\\frac{x-1}3=\\frac{y-2}2=\\frac{z-3}{-2}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the angle between $\\vec r=3\\hat i+2\\hat j-4\\hat k+\\lambda(\\hat i+2\\hat j+2\\hat k)$ and $\\vec r=5\\hat i-2\\hat j+\\mu(3\\hat i+2\\hat j+6\\hat k)$.",
+   "a": "$\\cos^{-1}\\frac{19}{21}$",
+   "s": "$\\vec b_1\\cdot\\vec b_2=3+4+12=19$ and $|\\vec b_1||\\vec b_2|=3\\cdot7$ [1]. $\\theta=\\cos^{-1}\\frac{19}{21}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $p$ such that $\\dfrac{1-x}3=\\dfrac{7y-14}{2p}=\\dfrac{z-3}2$ and $\\dfrac{7-7x}{3p}=\\dfrac{y-5}1=\\dfrac{6-z}5$ are perpendicular.",
+   "a": "$p=\\frac{70}{11}$",
+   "s": "Standard form: direction ratios $-3,\\frac{2p}7,2$ and $-\\frac{3p}7,1,-5$ [1½]. $\\frac{9p}7+\\frac{2p}7-10=0$ [1]. $p=\\frac{70}{11}$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the shortest distance between $\\vec r=\\hat i+2\\hat j+\\hat k+\\lambda(\\hat i-\\hat j+\\hat k)$ and $\\vec r=2\\hat i-\\hat j-\\hat k+\\mu(2\\hat i+\\hat j+2\\hat k)$.",
+   "a": "$\\frac3{\\sqrt2}$",
+   "s": "$\\vec a_2-\\vec a_1=\\hat i-3\\hat j-2\\hat k$ and $\\vec b_1\\times\\vec b_2=-3\\hat i+3\\hat k$ [1½]. $|\\vec b_1\\times\\vec b_2|=3\\sqrt2$ and the scalar product is $-9$ [1]. Distance $\\frac9{3\\sqrt2}=\\frac3{\\sqrt2}$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the line through $(-1,3,-2)$ perpendicular to $\\dfrac x1=\\dfrac y2=\\dfrac z3$ and $\\dfrac{x+2}{-3}=\\dfrac{y-1}2=\\dfrac{z+1}5$.",
+   "a": "$\\frac{x+1}2=\\frac{y-3}{-7}=\\frac{z+2}4$",
+   "s": "The direction is $(1,2,3)\\times(-3,2,5)=(4,-14,8)$ [2]. Use $2,-7,4$ through $(-1,3,-2)$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the shortest distance between $\\dfrac{x+1}7=\\dfrac{y+1}{-6}=\\dfrac{z+1}1$ and $\\dfrac{x-3}1=\\dfrac{y-5}{-2}=\\dfrac{z-7}1$.",
+   "a": "$2\\sqrt{29}$",
+   "s": "$\\vec a_1=(-1,-1,-1)$, $\\vec b_1=(7,-6,1)$, $\\vec a_2=(3,5,7)$, $\\vec b_2=(1,-2,1)$ [1]. $\\vec b_1\\times\\vec b_2=(-4,-6,-8)$, magnitude $2\\sqrt{29}$ [2]. $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=(4,6,8)\\cdot(-4,-6,-8)=-116$ [1]. Distance $\\frac{116}{2\\sqrt{29}}=2\\sqrt{29}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the foot of the perpendicular from $P(1,2,3)$ to the line $\\dfrac{x-6}3=\\dfrac{y-7}2=\\dfrac{z-7}{-2}$, and the length of the perpendicular.",
+    "a": "Foot $(3,5,9)$; length $7$",
+    "s": "A general point is $Q(3t+6,2t+7,-2t+7)$ [1]. $\\overrightarrow{PQ}=(3t+5,2t+5,-2t+4)$ is perpendicular to $(3,2,-2)$ [1]: $17t+17=0$, $t=-1$ [1]. Foot $(3,5,9)$ [1]. Length $|(2,3,6)|=7$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Two drones fly along $L_1:\\vec r=\\hat i+\\lambda(\\hat j+\\hat k)$ and $L_2:\\vec r=\\hat j+2\\hat k+\\mu(\\hat i+\\hat k)$. (i) Write the direction ratios of the two paths. [1] (ii) Are the paths parallel? [1] (iii) Find the shortest distance between the paths. [2] \\textbf{OR} (iii) Find the angle between the paths. [2]",
+   "a": "(i) $0,1,1$ and $1,0,1$; (ii) no; (iii) $\\frac2{\\sqrt3}$; OR $60^\\circ$.",
+   "s": "(i) $0,1,1$ and $1,0,1$ [1]. (ii) Not proportional, so not parallel [1]. (iii) $\\vec b_1\\times\\vec b_2=\\hat i+\\hat j-\\hat k$ and $\\vec a_2-\\vec a_1=-\\hat i+\\hat j+2\\hat k$ [1]; distance $\\frac{|-1+1-2|}{\\sqrt3}=\\frac2{\\sqrt3}$ [1]. OR $\\cos\\theta=\\frac{0+0+1}{\\sqrt2\\sqrt2}$ [1], so $\\theta=60^\\circ$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch11-board-02": [
+  {
+   "q": "The direction cosines of a line with direction ratios $6,2,3$ are",
+   "a": "(B) $\\frac67,\\frac27,\\frac37$",
+   "s": "Divide by $7$. [1]",
+   "opts": [
+    "$6,2,3$",
+    "$\\frac67,\\frac27,\\frac37$",
+    "$\\frac6{11},\\frac2{11},\\frac3{11}$",
+    "$\\frac67,\\frac37,\\frac27$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line makes $90^\\circ$ with the $x$-axis and $45^\\circ$ with the $y$-axis. Its acute angle with the $z$-axis is",
+   "a": "(A) $45^\\circ$",
+   "s": "$\\cos^2\\gamma=1-0-\\frac12$. [1]",
+   "opts": [
+    "$45^\\circ$",
+    "$60^\\circ$",
+    "$30^\\circ$",
+    "$90^\\circ$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of the line $x-1=2(y+3)=3z$ are",
+   "a": "(C) $6,3,2$",
+   "s": "$\\frac{x-1}1=\\frac{y+3}{\\frac12}=\\frac z{\\frac13}$; multiply by $6$. [1]",
+   "opts": [
+    "$3,2,1$",
+    "$1,-3,0$",
+    "$6,3,2$",
+    "$1,2,3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector equation of the line through the origin and $(5,-2,3)$ is",
+   "a": "(D) $\\vec r=\\lambda(5\\hat i-2\\hat j+3\\hat k)$",
+   "s": "The point is the origin. [1]",
+   "opts": [
+    "$\\vec r=5\\hat i+\\lambda(-2\\hat j+3\\hat k)$",
+    "$\\vec r=\\lambda(-5\\hat i+2\\hat j+3\\hat k)$",
+    "$\\vec r=5\\hat i-2\\hat j+3\\hat k+\\lambda(\\hat i+\\hat j+\\hat k)$",
+    "$\\vec r=\\lambda(5\\hat i-2\\hat j+3\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The Cartesian form of $\\vec r=2\\hat i+3\\hat j+\\lambda(\\hat i-\\hat k)$ is",
+   "a": "(C) $\\frac{x-2}1=\\frac{y-3}0=\\frac z{-1}$",
+   "s": "Point $(2,3,0)$, direction ratios $1,0,-1$. [1]",
+   "opts": [
+    "$\\frac{x-1}2=\\frac y3=\\frac{z+1}0$",
+    "$\\frac{x+2}1=\\frac{y+3}0=\\frac z{-1}$",
+    "$\\frac{x-2}1=\\frac{y-3}0=\\frac z{-1}$",
+    "$\\frac{x-2}1=\\frac{y-3}{-1}=\\frac z0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between the $x$-axis and a line with direction ratios $1,1,0$ is",
+   "a": "(D) $\\frac\\pi4$",
+   "s": "$\\cos\\theta=\\frac1{\\sqrt2}$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$0$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between $\\dfrac{x-2}2=\\dfrac{y-1}5=\\dfrac{z+3}{-3}$ and $\\dfrac{x+2}{-1}=\\dfrac{y-4}8=\\dfrac{z-5}4$ is",
+   "a": "(C) $\\cos^{-1}\\frac{26}{9\\sqrt{38}}$",
+   "s": "$\\frac{-2+40-12}{\\sqrt{38}\\cdot9}$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\cos^{-1}\\frac{9}{\\sqrt{38}}$",
+    "$\\cos^{-1}\\frac{26}{9\\sqrt{38}}$",
+    "$\\cos^{-1}\\frac{26}{81}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{x-1}2=\\dfrac{y+1}k=\\dfrac z3$ is perpendicular to $\\dfrac{x+2}3=\\dfrac y{-2}=\\dfrac{z-1}{-2}$. Then $k$ equals",
+   "a": "(B) $0$",
+   "s": "$6-2k-6=0$. [1]",
+   "opts": [
+    "$-6$",
+    "$0$",
+    "$6$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The lines $\\dfrac{x-1}2=\\dfrac{y-2}4=\\dfrac{z-3}6$ and $\\dfrac x1=\\dfrac y2=\\dfrac z3$ are",
+   "a": "(A) the same line",
+   "s": "Parallel, and $(1,2,3)$ lies on both. [1]",
+   "opts": [
+    "the same line",
+    "parallel and distinct",
+    "perpendicular",
+    "skew"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The lines $x=y=z$ and $x=y$, $z=1$",
+   "a": "(A) meet at $(1,1,1)$",
+   "s": "Put $z=1$ in $x=y=z$. [1]",
+   "opts": [
+    "meet at $(1,1,1)$",
+    "meet at the origin",
+    "are skew",
+    "are parallel"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The distance of $(1,2,2)$ from the origin is",
+   "a": "(D) $3$",
+   "s": "$\\sqrt{1+4+4}$. [1]",
+   "opts": [
+    "$5$",
+    "$9$",
+    "$\\sqrt5$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The projection of the segment joining $(2,3,4)$ and $(5,7,4)$ on the $z$-axis is",
+   "a": "(B) $0$",
+   "s": "The $z$-coordinates are equal. [1]",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$4$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line through $(1,1,1)$ parallel to the $z$-axis is",
+   "a": "(C) $\\frac{x-1}0=\\frac{y-1}0=\\frac{z-1}1$",
+   "s": "Direction ratios $0,0,1$. [1]",
+   "opts": [
+    "$\\frac x1=\\frac y1=\\frac z1$",
+    "$\\frac{x-1}1=\\frac{y-1}1=\\frac{z-1}0$",
+    "$\\frac{x-1}0=\\frac{y-1}0=\\frac{z-1}1$",
+    "$\\frac{x-1}1=\\frac{y-1}0=\\frac{z-1}0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On $\\vec r=\\hat i-\\hat j+2\\hat k+\\lambda(2\\hat i+\\hat j-\\hat k)$, the point with $\\lambda=-1$ is",
+   "a": "(C) $(-1,-2,3)$",
+   "s": "Subtract the direction vector. [1]",
+   "opts": [
+    "$(3,0,1)$",
+    "$(1,-1,2)$",
+    "$(-1,-2,3)$",
+    "$(-1,0,3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The lines $\\vec r=\\vec a+\\lambda\\vec b$ and $\\vec r=\\vec c+\\mu\\vec b$ are parallel. Reason: They have the same direction vector $\\vec b$.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The distance between two distinct parallel lines is $0$. Reason: Distinct parallel lines never meet.",
+   "a": "(D)",
+   "s": "The distance is positive. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the vector equation of the line through $(1,2,3)$ and $(3,-1,3)$.",
+   "a": "$\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(2\\hat i-3\\hat j)$",
+   "s": "Direction $(3-1,\\ -1-2,\\ 3-3)=(2,-3,0)$ [1]. $\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(2\\hat i-3\\hat j)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the direction cosines of a line that is equally inclined to the axes.",
+    "a": "$\\pm\\frac1{\\sqrt3},\\pm\\frac1{\\sqrt3},\\pm\\frac1{\\sqrt3}$ (same sign)",
+    "s": "$l=m=n$ [1]. $3l^2=1$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that the line through $(1,-1,2)$ and $(3,4,-2)$ is perpendicular to the line through $(0,3,2)$ and $(3,5,6)$.",
+   "a": "Shown.",
+   "s": "Direction ratios $2,5,-4$ and $3,2,4$ [1]. $6+10-16=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the angle between two lines whose direction ratios are $a,b,c$ and $b-c,c-a,a-b$.",
+   "a": "$90^\\circ$",
+   "s": "$a(b-c)+b(c-a)+c(a-b)=0$ [1]. So the lines are perpendicular [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the line through $(2,-1,3)$ perpendicular to $\\dfrac{x-1}1=\\dfrac{y-2}2=\\dfrac{z-3}3$ and $\\dfrac{x-4}2=\\dfrac{y-1}{-1}=\\dfrac z1$.",
+   "a": "$\\frac{x-2}1=\\frac{y+1}1=\\frac{z-3}{-1}$",
+   "s": "$(1,2,3)\\times(2,-1,1)=(5,5,-5)$ [2]. Direction ratios $1,1,-1$ through $(2,-1,3)$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the shortest distance between $\\vec r=4\\hat i-\\hat j+\\lambda(\\hat i+2\\hat j-3\\hat k)$ and $\\vec r=\\hat i-\\hat j+2\\hat k+\\mu(2\\hat i+4\\hat j-5\\hat k)$.",
+   "a": "$\\frac6{\\sqrt5}$",
+   "s": "$\\vec a_2-\\vec a_1=-3\\hat i+2\\hat k$ [½]. $\\vec b_1\\times\\vec b_2=2\\hat i-\\hat j$, magnitude $\\sqrt5$ [1½]. Scalar product $-6$; distance $\\frac6{\\sqrt5}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the distance between the lines $\\vec r=\\hat i+\\hat j+\\lambda(2\\hat i-\\hat j+\\hat k)$ and $\\vec r=2\\hat i+\\hat j-\\hat k+\\mu(4\\hat i-2\\hat j+2\\hat k)$.",
+   "a": "$\\sqrt{\\frac{11}6}$",
+   "s": "The lines are parallel with $\\vec b=2\\hat i-\\hat j+\\hat k$ [1]. $\\vec b\\times(\\vec a_2-\\vec a_1)=2\\hat i-\\hat j+\\hat k\\times(\\hat i-\\hat k)=\\hat i+3\\hat j+\\hat k$ [1]. Distance $\\frac{\\sqrt{11}}{\\sqrt6}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the foot of the perpendicular from $(1,6,3)$ to the line $\\dfrac x1=\\dfrac{y-1}2=\\dfrac{z-2}3$, the image of the point in the line, and the length of the perpendicular.",
+   "a": "Foot $(1,3,5)$; image $(1,0,7)$; length $\\sqrt{13}$",
+   "s": "A general point is $(t,2t+1,3t+2)$ [1]. Perpendicularity: $(t-1)+2(2t-5)+3(3t-1)=0$, so $t=1$ [1]. Foot $(1,3,5)$ [1]. Image $2(1,3,5)-(1,6,3)=(1,0,7)$ [1]. Length $\\sqrt{0+9+4}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the shortest distance between $\\vec r=(1-t)\\hat i+(t-2)\\hat j+(3-2t)\\hat k$ and $\\vec r=(s+1)\\hat i+(2s-1)\\hat j-(2s+1)\\hat k$.",
+    "a": "$\\frac8{\\sqrt{29}}$",
+    "s": "$\\vec a_1=(1,-2,3)$, $\\vec b_1=(-1,1,-2)$, $\\vec a_2=(1,-1,-1)$, $\\vec b_2=(1,2,-2)$ [1]. $\\vec b_1\\times\\vec b_2=(2,-4,-3)$, magnitude $\\sqrt{29}$ [2]. $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=(0,1,-4)\\cdot(2,-4,-3)=8$ [1]. Distance $\\frac8{\\sqrt{29}}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A laser beam travels along $\\dfrac{x-1}2=\\dfrac{y+1}3=\\dfrac{z-2}6$. (i) Find its direction cosines. [1] (ii) Find the point of the beam with $z=8$. [1] (iii) Find the angle between the beam and the $x$-axis. [2] \\textbf{OR} (iii) Check whether the point $(5,5,14)$ lies on the beam. [2]",
+   "a": "(i) $\\frac27,\\frac37,\\frac67$; (ii) $(3,2,8)$; (iii) $\\cos^{-1}\\frac27$; OR yes.",
+   "s": "(i) Divide $2,3,6$ by $7$ [1]. (ii) $6t+2=8$ gives $t=1$: $(3,2,8)$ [1]. (iii) The angle with $\\hat i$ has cosine $\\frac27$ [1], so it is $\\cos^{-1}\\frac27$ [1]. OR $\\frac{5-1}2=\\frac{5+1}3=\\frac{14-2}6=2$ [1], so the point lies on the beam [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch11-board-03": [
+  {
+   "q": "The direction cosines of a line with direction ratios $2,3,-6$ are",
+   "a": "(C) $\\frac27,\\frac37,-\\frac67$",
+   "s": "Divide by $7$. [1]",
+   "opts": [
+    "$\\frac27,\\frac37,\\frac67$",
+    "$\\frac2{11},\\frac3{11},-\\frac6{11}$",
+    "$\\frac27,\\frac37,-\\frac67$",
+    "$2,3,-6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line makes angles $135^\\circ$, $45^\\circ$ and $90^\\circ$ with the axes. Its direction cosines are",
+   "a": "(A) $-\\frac1{\\sqrt2},\\frac1{\\sqrt2},0$",
+   "s": "Take the cosines. [1]",
+   "opts": [
+    "$-\\frac1{\\sqrt2},\\frac1{\\sqrt2},0$",
+    "$-\\frac12,\\frac12,0$",
+    "$\\frac1{\\sqrt2},-\\frac1{\\sqrt2},1$",
+    "$\\frac1{\\sqrt2},\\frac1{\\sqrt2},0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of the line through the origin and $(2,-1,3)$ are",
+   "a": "(B) $2,-1,3$",
+   "s": "Subtract the coordinates. [1]",
+   "opts": [
+    "$1,-1,1$",
+    "$2,-1,3$",
+    "$2,1,3$",
+    "$-2,1,3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector form of $\\dfrac{x+2}3=\\dfrac{y-1}{-2}=\\dfrac z4$ is",
+   "a": "(D) $\\vec r=-2\\hat i+\\hat j+\\lambda(3\\hat i-2\\hat j+4\\hat k)$",
+   "s": "Point $(-2,1,0)$. [1]",
+   "opts": [
+    "$\\vec r=3\\hat i-2\\hat j+4\\hat k+\\lambda(-2\\hat i+\\hat j)$",
+    "$\\vec r=2\\hat i-\\hat j+\\lambda(3\\hat i-2\\hat j+4\\hat k)$",
+    "$\\vec r=-2\\hat i+\\hat j+\\lambda(3\\hat i+2\\hat j+4\\hat k)$",
+    "$\\vec r=-2\\hat i+\\hat j+\\lambda(3\\hat i-2\\hat j+4\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line through $(-1,0,2)$ parallel to the $y$-axis is",
+   "a": "(C) $\\frac{x+1}0=\\frac y1=\\frac{z-2}0$",
+   "s": "Direction ratios $0,1,0$. [1]",
+   "opts": [
+    "$\\frac{x+1}1=\\frac y0=\\frac{z-2}0$",
+    "$x+1=y=z-2$",
+    "$\\frac{x+1}0=\\frac y1=\\frac{z-2}0$",
+    "$\\frac{x-1}0=\\frac y1=\\frac{z+2}0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line $\\dfrac{x-2}3=\\dfrac{y+1}2=\\dfrac{z-1}{-1}$ passes through",
+   "a": "(C) $(2,-1,1)$",
+   "s": "Each fraction is $0$. [1]",
+   "opts": [
+    "$(3,2,-1)$",
+    "$(-2,1,-1)$",
+    "$(2,-1,1)$",
+    "$(2,1,1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between lines with direction cosines $\\frac1{\\sqrt2},\\frac1{\\sqrt2},0$ and $0,\\frac1{\\sqrt2},\\frac1{\\sqrt2}$ is",
+   "a": "(D) $\\frac\\pi3$",
+   "s": "$\\cos\\theta=\\frac12$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac\\pi6$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{x-1}1=\\dfrac{y-2}\\lambda=\\dfrac{z-3}2$ is parallel to $\\dfrac x2=\\dfrac y4=\\dfrac z4$. Then $\\lambda$ equals",
+   "a": "(A) $2$",
+   "s": "Proportional to $1,2,2$. [1]",
+   "opts": [
+    "$2$",
+    "$4$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The lines $\\vec r=\\hat i+\\lambda(2\\hat i+\\hat j)$ and $\\vec r=\\hat j+\\mu(\\hat i+2\\hat j)$ meet at",
+   "a": "(A) $(-1,-1,0)$",
+   "s": "$1+2\\lambda=\\mu$ and $\\lambda=1+2\\mu$ give $\\lambda=\\mu=-1$. [1]",
+   "opts": [
+    "$(-1,-1,0)$",
+    "$(1,1,0)$",
+    "$(3,1,0)$",
+    "$(0,0,0)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The shortest distance between two skew lines is measured along a line that is",
+   "a": "(B) perpendicular to both lines",
+   "s": "The common perpendicular. [1]",
+   "opts": [
+    "parallel to one of the lines",
+    "perpendicular to both lines",
+    "through the origin",
+    "parallel to both lines"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The distance between $(-1,2,0)$ and $(2,-2,0)$ is",
+   "a": "(B) $5$",
+   "s": "$\\sqrt{9+16}$. [1]",
+   "opts": [
+    "$1$",
+    "$5$",
+    "$7$",
+    "$\\sqrt7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line has direction ratios $3,4,0$. Its angle with the $z$-axis is",
+   "a": "(B) $\\frac\\pi2$",
+   "s": "$n=0$. [1]",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A line has direction ratios $k,2k,2k$ with $k>0$. Its direction cosines are",
+   "a": "(D) $\\frac13,\\frac23,\\frac23$",
+   "s": "Divide by $3k$. [1]",
+   "opts": [
+    "$\\frac15,\\frac25,\\frac25$",
+    "$\\frac1{3k},\\frac2{3k},\\frac2{3k}$",
+    "$k,2k,2k$",
+    "$\\frac13,\\frac23,\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The line through $(2,3,4)$ and $(2,3,7)$ is parallel to",
+   "a": "(A) the $z$-axis",
+   "s": "Only $z$ changes. [1]",
+   "opts": [
+    "the $z$-axis",
+    "the $x$-axis",
+    "the $y$-axis",
+    "the line $x=y=z$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The lines $\\frac x1=\\frac y1=\\frac z1$ and $\\frac x1=\\frac y{-2}=\\frac z1$ are perpendicular. Reason: $1-2+1=0$.",
+   "a": "(A)",
+   "s": "R is the test. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The distance between $\\vec r=\\lambda\\hat i$ and $\\vec r=\\hat j+\\mu\\hat i$ is $1$. Reason: $\\hat i$ and $\\hat j$ are perpendicular unit vectors.",
+   "a": "(B)",
+   "s": "Both are true; A uses $\\frac{|\\hat i\\times\\hat j|}{|\\hat i|}$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the line through $(1,-2,3)$ parallel to $\\dfrac{x-1}2=\\dfrac{y+3}{-1}=\\dfrac z5$.",
+   "a": "$\\frac{x-1}2=\\frac{y+2}{-1}=\\frac{z-3}5$",
+   "s": "Same direction ratios $2,-1,5$ [1]. $\\frac{x-1}2=\\frac{y+2}{-1}=\\frac{z-3}5$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Write the vector equation of $\\dfrac{x-5}3=\\dfrac{y+4}7=\\dfrac{6-z}2$.",
+    "a": "$\\vec r=5\\hat i-4\\hat j+6\\hat k+\\lambda(3\\hat i+7\\hat j-2\\hat k)$",
+    "s": "$\\frac{6-z}2=\\frac{z-6}{-2}$, so the direction ratios are $3,7,-2$ [1]. $\\vec r=5\\hat i-4\\hat j+6\\hat k+\\lambda(3\\hat i+7\\hat j-2\\hat k)$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the direction cosines of the line $\\dfrac{x-1}2=-y=\\dfrac{z+1}2$.",
+   "a": "$\\frac23,-\\frac13,\\frac23$",
+   "s": "$-y=\\frac{y}{-1}$, so the direction ratios are $2,-1,2$ [1]. Divide by $3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the angle between $\\dfrac x3=\\dfrac y4=\\dfrac z5$ and $\\dfrac x4=\\dfrac y{-3}=\\dfrac z5$.",
+   "a": "$60^\\circ$",
+   "s": "$\\cos\\theta=\\frac{12-12+25}{\\sqrt{50}\\sqrt{50}}=\\frac12$ [1]. $\\theta=60^\\circ$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\lambda$ such that $\\dfrac{1-x}3=\\dfrac{y-2}{2\\lambda}=\\dfrac{z-3}2$ and $\\dfrac{x-1}{3\\lambda}=\\dfrac{y-1}1=\\dfrac{6-z}7$ are perpendicular.",
+   "a": "$\\lambda=-2$",
+   "s": "Direction ratios $-3,2\\lambda,2$ and $3\\lambda,1,-7$ [1½]. $-9\\lambda+2\\lambda-14=0$ [1]. $\\lambda=-2$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the shortest distance between $\\dfrac{x-1}2=\\dfrac{y-2}3=\\dfrac{z-3}4$ and $\\dfrac{x-2}3=\\dfrac{y-4}4=\\dfrac{z-5}5$.",
+   "a": "$\\frac1{\\sqrt6}$",
+   "s": "$\\vec a_2-\\vec a_1=(1,2,2)$ [½]. $\\vec b_1\\times\\vec b_2=(-1,2,-1)$, magnitude $\\sqrt6$ [1½]. Scalar product $-1+4-2=1$; distance $\\frac1{\\sqrt6}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $\\dfrac{x-1}2=\\dfrac{y-2}3=\\dfrac{z-3}4$ and $\\dfrac{x-4}5=\\dfrac{y-1}2=z$ intersect, and find the point.",
+   "a": "$(-1,-1,-1)$",
+   "s": "Equate $(2t+1,3t+2,4t+3)$ and $(5s+4,2s+1,s)$ [1]. The first two give $t=s=-1$ [1]. The third: $4(-1)+3=-1=s$, so they meet at $(-1,-1,-1)$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the foot of the perpendicular from $P(2,-1,5)$ to the line $\\dfrac{x-11}{10}=\\dfrac{y+2}{-4}=\\dfrac{z+8}{-11}$, and the length of the perpendicular.",
+   "a": "Foot $(1,2,3)$; length $\\sqrt{14}$",
+   "s": "A general point is $Q(10t+11,-4t-2,-11t-8)$ [1]. $\\overrightarrow{PQ}\\cdot(10,-4,-11)=237t+237=0$ [2], so $t=-1$ and the foot is $(1,2,3)$ [1]. Length $|(-1,3,-2)|=\\sqrt{14}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the vector equation of the line through $(2,-1,3)$ perpendicular to $\\vec r=\\hat i+\\hat j-\\hat k+\\lambda(2\\hat i-2\\hat j+\\hat k)$ and $\\vec r=2\\hat i-\\hat j-3\\hat k+\\mu(\\hat i+2\\hat j+2\\hat k)$.",
+    "a": "$\\vec r=2\\hat i-\\hat j+3\\hat k+\\lambda(2\\hat i+\\hat j-2\\hat k)$",
+    "s": "The direction is $\\vec b_1\\times\\vec b_2=2\\hat i-2\\hat j+\\hat k\\times(\\hat i+2\\hat j+2\\hat k)=-6\\hat i-3\\hat j+6\\hat k$ [3]. Use $2\\hat i+\\hat j-2\\hat k$ through $(2,-1,3)$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Two straight roads in a hill town follow $L_1:\\vec r=\\hat i+2\\hat j+3\\hat k+\\lambda(\\hat i-\\hat j+2\\hat k)$ and $L_2:\\vec r=2\\hat i+\\hat k+\\mu(2\\hat i+\\hat j-\\hat k)$. (i) Write the direction ratios of the roads. [1] (ii) Are the roads perpendicular? [1] (iii) Find the shortest distance between the roads. [2] \\textbf{OR} (iii) Find the cosine of the angle between the roads. [2]",
+   "a": "(i) $1,-1,2$ and $2,1,-1$; (ii) no; (iii) $\\frac{17}{\\sqrt{35}}$; OR $\\frac16$.",
+   "s": "(i) $1,-1,2$ and $2,1,-1$ [1]. (ii) $2-1-2=-1\\ne0$ [1]. (iii) $\\vec b_1\\times\\vec b_2=-\\hat i+5\\hat j+3\\hat k$ and $\\vec a_2-\\vec a_1=\\hat i-2\\hat j-2\\hat k$ [1]; distance $\\frac{|-1-10-6|}{\\sqrt{35}}=\\frac{17}{\\sqrt{35}}$ [1]. OR $\\cos\\theta=\\frac{|-1|}{\\sqrt6\\sqrt6}$ [1] $=\\frac16$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch11-main-01": [
+  {
+   "q": "The plane through $(1,2,3)$ perpendicular to $2\\hat i-\\hat j+2\\hat k$ is",
+   "a": "(A) $2x-y+2z=6$",
+   "s": "$2(1)-2+2(3)=6$.",
+   "opts": [
+    "$2x-y+2z=6$",
+    "$x+2y+3z=6$",
+    "$2x-y+2z=0$",
+    "$2x-y+2z=-6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(2,5,-3)$ from $\\vec r\\cdot(6\\hat i-3\\hat j+2\\hat k)=4$ is",
+   "a": "(B) $\\frac{13}7$",
+   "s": "$\\frac{|12-15-6-4|}{7}$.",
+   "opts": [
+    "$\\frac{13}{49}$",
+    "$\\frac{13}7$",
+    "$\\frac{11}7$",
+    "$13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the planes $2x+y-2z=5$ and $3x-6y-2z=7$ is",
+   "a": "(D) $\\cos^{-1}\\frac4{21}$",
+   "s": "$\\frac{6-6+4}{3\\cdot7}$.",
+   "opts": [
+    "$\\cos^{-1}\\frac{16}{21}$",
+    "$\\cos^{-1}\\frac4{7}$",
+    "$\\frac\\pi2$",
+    "$\\cos^{-1}\\frac4{21}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane with intercepts $2$, $3$, $4$ on the axes is",
+   "a": "(C) $\\frac x2+\\frac y3+\\frac z4=1$",
+   "s": "Intercept form.",
+   "opts": [
+    "$\\frac x2+\\frac y3+\\frac z4=0$",
+    "$2x+3y+4z=1$",
+    "$\\frac x2+\\frac y3+\\frac z4=1$",
+    "$2x+3y+4z=24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(1,0,0)$, $(0,1,0)$ and $(0,0,1)$ is",
+   "a": "(B) $x+y+z=1$",
+   "s": "Intercepts $1,1,1$.",
+   "opts": [
+    "$x+y+z=3$",
+    "$x+y+z=1$",
+    "$x-y+z=1$",
+    "$x+y+z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance between the planes $2x-y+2z=3$ and $4x-2y+4z=5$ is",
+   "a": "(C) $\\frac16$",
+   "s": "The second is $2x-y+2z=\\frac52$: $\\frac{|3-\\frac52|}{3}$.",
+   "opts": [
+    "$2$",
+    "$\\frac13$",
+    "$\\frac16$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the line $\\dfrac{x+1}2=\\dfrac y3=\\dfrac{z-3}6$ and the plane $10x+2y-11z=3$ is",
+   "a": "(C) $\\sin^{-1}\\frac8{21}$",
+   "s": "$\\sin\\phi=\\frac{|20+6-66|}{7\\cdot15}$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\sin^{-1}\\frac{40}{21}$",
+    "$\\sin^{-1}\\frac8{21}$",
+    "$\\cos^{-1}\\frac8{21}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\dfrac{x-1}2=\\dfrac{y-2}3=\\dfrac{z-3}4$ meets the plane $x+y+z=15$ at",
+   "a": "(C) $(3,5,7)$",
+   "s": "$9t+6=15$ gives $t=1$.",
+   "opts": [
+    "$(5,8,11)$",
+    "$(1,2,3)$",
+    "$(3,5,7)$",
+    "$(4,5,6)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The foot of the perpendicular from the origin to $2x+3y+4z=12$ is",
+   "a": "(D) $\\left(\\frac{24}{29},\\frac{36}{29},\\frac{48}{29}\\right)$",
+   "s": "$t(2,3,4)$ with $29t=12$.",
+   "opts": [
+    "$\\left(\\frac{2}{29},\\frac{3}{29},\\frac{4}{29}\\right)$",
+    "$\\left(\\frac{12}{29},\\frac{12}{29},\\frac{12}{29}\\right)$",
+    "$(2,3,4)$",
+    "$\\left(\\frac{24}{29},\\frac{36}{29},\\frac{48}{29}\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The image of $(1,2,3)$ in the plane $x+y+z=0$ is",
+   "a": "(D) $(-3,-2,-1)$",
+   "s": "$P-2\\cdot\\frac{6}{3}(1,1,1)$.",
+   "opts": [
+    "$(-2,-1,0)$",
+    "$(-1,-2,-3)$",
+    "$(3,2,1)$",
+    "$(-3,-2,-1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through the line of intersection of $x+y+z=1$ and $2x+3y+4z=5$, passing through $(1,1,1)$, is",
+   "a": "(D) $y+2z=3$",
+   "s": "$(x+y+z-1)+\\lambda(2x+3y+4z-5)=0$ at $(1,1,1)$ gives $\\lambda=-\\frac12$.",
+   "opts": [
+    "$x-2z=-1$",
+    "$x+y+z=3$",
+    "$y+2z=1$",
+    "$y+2z=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(0,0,0)$, $(1,2,3)$ and $(2,3,4)$ is",
+   "a": "(C) $x-2y+z=0$",
+   "s": "Normal $(1,2,3)\\times(2,3,4)=(-1,2,-1)$.",
+   "opts": [
+    "$x+2y+z=0$",
+    "$x-2y+z=1$",
+    "$x-2y+z=0$",
+    "$2x-y+z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(1,-2,3)$ from the plane $x-y+z=5$, measured along a line parallel to $\\dfrac x2=\\dfrac y3=\\dfrac z{-6}$, is",
+   "a": "(C) $1$",
+   "s": "$(1+2t,-2+3t,3-6t)$ meets the plane when $t=\\frac17$; the distance is $7|t|$.",
+   "opts": [
+    "$7$",
+    "$\\frac17$",
+    "$1$",
+    "$\\frac1{\\sqrt3}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane containing the line $\\dfrac x1=\\dfrac y2=\\dfrac z3$ and the point $(1,0,0)$ is",
+   "a": "(D) $3y-2z=0$",
+   "s": "Normal $(1,2,3)\\times(1,0,0)=(0,3,-2)$.",
+   "opts": [
+    "$2y-3z=0$",
+    "$x+2y+3z=1$",
+    "$3x-2y=0$",
+    "$3y-2z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A plane meets the axes at $A$, $B$, $C$, and the centroid of $ABC$ is $(1,2,3)$. The plane is",
+   "a": "(C) $\\frac x3+\\frac y6+\\frac z9=1$",
+   "s": "Intercepts are $3$ times the centroid coordinates.",
+   "opts": [
+    "$x+\\frac y2+\\frac z3=1$",
+    "$x+2y+3z=14$",
+    "$\\frac x3+\\frac y6+\\frac z9=1$",
+    "$\\frac x3+\\frac y6+\\frac z9=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the line $\\vec r=\\lambda(\\hat i+\\hat j+\\hat k)$ and the plane $x+y+z=0$ is",
+   "a": "(A) $\\frac\\pi2$",
+   "s": "The line is along the normal.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi4$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\dfrac{x-2}3=\\dfrac{y-1}{-5}=\\dfrac{z+2}2$ lies in the plane $x+3y-\\alpha z+\\beta=0$. Then $(\\alpha,\\beta)$ equals",
+   "a": "(C) $(-6,-17)$",
+   "s": "Direction: $3-15-2\\alpha=0$, so $\\alpha=-6$. Point $(2,1,-2)$: $2+3+2\\alpha+\\beta=0$, so $\\beta=-17$.",
+   "opts": [
+    "$(6,17)$",
+    "$(-6,17)$",
+    "$(-6,-17)$",
+    "$(5,-15)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(2,1,-1)$ parallel to $2x-y+3z=7$ is",
+   "a": "(D) $2x-y+3z=0$",
+   "s": "$4-1-3=0$.",
+   "opts": [
+    "$2x+y-z=0$",
+    "$2x-y+3z=-6$",
+    "$2x-y+3z=7$",
+    "$2x-y+3z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through the origin perpendicular to the line joining $(1,2,3)$ and $(3,-1,4)$ is",
+   "a": "(C) $2x-3y+z=0$",
+   "s": "Normal $(2,-3,1)$.",
+   "opts": [
+    "$3x-y+4z=0$",
+    "$x+2y+3z=0$",
+    "$2x-3y+z=0$",
+    "$2x-3y+z=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of the origin from $3x+4y+12z=26$ is",
+   "a": "(A) $2$",
+   "s": "$\\frac{26}{13}$.",
+   "opts": [
+    "$2$",
+    "$26$",
+    "$1$",
+    "$\\frac{26}{19}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance of $(1,1,1)$ from the plane $x+2y+2z=14$.",
+   "a": "$3$",
+   "s": "$\\frac{|1+2+2-14|}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The plane $2x-y+2z=k$ is at distance $2$ from $(1,1,1)$. Find the sum of the possible values of $k$.",
+   "a": "$6$",
+   "s": "$|3-k|=6$, so $k=9$ or $-3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the volume of the tetrahedron formed by the plane $x+2y+3z=6$ and the coordinate planes.",
+   "a": "$6$",
+   "s": "Intercepts $6,3,2$: $\\frac16\\cdot36$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find, in degrees, the angle between the planes $x+y=1$ and $y+z=1$.",
+   "a": "$60$",
+   "s": "$\\cos\\theta=\\frac1{\\sqrt2\\sqrt2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A line has direction cosines $\\frac13,\\frac23,k$ with $k>0$. Find $3k$.",
+   "a": "$2$",
+   "s": "$k^2=1-\\frac19-\\frac49=\\frac49$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch11-main-02": [
+  {
+   "q": "The plane through $(2,-1,1)$ perpendicular to the planes $x+y+z=1$ and $x-y+z=2$ is",
+   "a": "(D) $x-z=1$",
+   "s": "Normal $(1,1,1)\\times(1,-1,1)=(2,0,-2)$.",
+   "opts": [
+    "$x+z=3$",
+    "$y-z=-2$",
+    "$x-y=3$",
+    "$x-z=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $x=y=z$ meets the plane $x+2y+3z=12$ at",
+   "a": "(D) $(2,2,2)$",
+   "s": "$6t=12$.",
+   "opts": [
+    "$(1,1,1)$",
+    "$(3,3,3)$",
+    "$(4,4,4)$",
+    "$(2,2,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the line $\\vec r=\\lambda(\\hat i+\\hat j)$ and the plane $z=0$ is",
+   "a": "(C) $0$",
+   "s": "The line lies in the plane.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$",
+    "$0$",
+    "$\\frac\\pi3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The length of the perpendicular from $(3,4,5)$ to $x+y+z=3$ is",
+   "a": "(B) $3\\sqrt3$",
+   "s": "$\\frac{|12-3|}{\\sqrt3}$.",
+   "opts": [
+    "$\\frac{12}{\\sqrt3}$",
+    "$3\\sqrt3$",
+    "$\\sqrt3$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The image of the origin in the plane $x+y+z=3$ is",
+   "a": "(C) $(2,2,2)$",
+   "s": "Twice the foot $(1,1,1)$.",
+   "opts": [
+    "$(-1,-1,-1)$",
+    "$(1,1,1)$",
+    "$(2,2,2)$",
+    "$(3,3,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane containing the lines $\\vec r=\\lambda(\\hat i+\\hat j)$ and $\\vec r=\\mu(\\hat j+\\hat k)$ is",
+   "a": "(D) $x-y+z=0$",
+   "s": "Normal $(1,1,0)\\times(0,1,1)=(1,-1,1)$.",
+   "opts": [
+    "$x+y-z=0$",
+    "$x-y-z=0$",
+    "$x+y+z=0$",
+    "$x-y+z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance between the planes $2x-3y+6z=7$ and $2x-3y+6z=-7$ is",
+   "a": "(C) $2$",
+   "s": "$\\frac{14}7$.",
+   "opts": [
+    "$0$",
+    "$14$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\dfrac{x-1}2=\\dfrac{y-2}1=\\dfrac{z-3}0$ and the plane $x-2y+3z=7$:",
+   "a": "(D) the line is parallel to the plane and not in it",
+   "s": "$2-2+0=0$, and $(1,2,3)$ gives $6\\ne7$.",
+   "opts": [
+    "the line is perpendicular to the plane",
+    "the line meets the plane at $(1,2,3)$",
+    "the line lies in the plane",
+    "the line is parallel to the plane and not in it"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(1,2,3)$ whose normal is along the line from the origin to $(1,2,3)$ is",
+   "a": "(A) $x+2y+3z=14$",
+   "s": "$1+4+9$.",
+   "opts": [
+    "$x+2y+3z=14$",
+    "$x+2y+3z=6$",
+    "$x+2y+3z=0$",
+    "$3x+2y+z=10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A plane has intercepts $a$, $b$, $c$ and is at distance $p$ from the origin. Then $\\dfrac1{a^2}+\\dfrac1{b^2}+\\dfrac1{c^2}$ equals",
+   "a": "(D) $\\frac1{p^2}$",
+   "s": "The normal form of $\\frac xa+\\frac yb+\\frac zc=1$.",
+   "opts": [
+    "$1$",
+    "$\\frac1p$",
+    "$p^2$",
+    "$\\frac1{p^2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the plane $x+2y+2z=3$ and the $z$-axis is",
+   "a": "(B) $\\sin^{-1}\\frac23$",
+   "s": "$\\sin\\phi=\\frac{2}{3}$.",
+   "opts": [
+    "$\\cos^{-1}\\frac23$",
+    "$\\sin^{-1}\\frac23$",
+    "$\\sin^{-1}\\frac13$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The shortest distance between $\\vec r=3\\hat i+8\\hat j+3\\hat k+\\lambda(3\\hat i-\\hat j+\\hat k)$ and $\\vec r=-3\\hat i-7\\hat j+6\\hat k+\\mu(-3\\hat i+2\\hat j+4\\hat k)$ is",
+   "a": "(C) $3\\sqrt{30}$",
+   "s": "$\\vec b_1\\times\\vec b_2=-6\\hat i-15\\hat j+3\\hat k$; $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=270$; $|\\vec b_1\\times\\vec b_2|=\\sqrt{270}$.",
+   "opts": [
+    "$\\frac{3}{\\sqrt{30}}$",
+    "$\\sqrt{30}$",
+    "$3\\sqrt{30}$",
+    "$30$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The foot of the perpendicular from $(1,2,-3)$ to $2x-2y+z+9=0$ is",
+   "a": "(A) $\\left(\\frac19,\\frac{26}9,-\\frac{31}9\\right)$",
+   "s": "$P-\\frac{2-4-3+9}{9}(2,-2,1)$.",
+   "opts": [
+    "$\\left(\\frac19,\\frac{26}9,-\\frac{31}9\\right)$",
+    "$(0,3,-3)$",
+    "$\\left(\\frac{17}9,\\frac{10}9,-\\frac{23}9\\right)$",
+    "$\\left(-\\frac19,\\frac{26}9,\\frac{31}9\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(1,0,0)$ and $(0,1,0)$ parallel to the $z$-axis is",
+   "a": "(A) $x+y=1$",
+   "s": "No $z$ term; intercepts $1,1$.",
+   "opts": [
+    "$x+y=1$",
+    "$x-y=1$",
+    "$z=0$",
+    "$x+y+z=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $\\dfrac{x-2}1=\\dfrac{y-3}1=\\dfrac{z-4}{-k}$ and $\\dfrac{x-1}k=\\dfrac{y-4}2=\\dfrac{z-5}1$ are coplanar. Then $k$ equals",
+   "a": "(A) $0$ or $-3$",
+   "s": "The determinant of $\\vec a_2-\\vec a_1=(-1,1,1)$, $\\vec b_1$, $\\vec b_2$ is $0$; this gives $k^2+3k=0$.",
+   "opts": [
+    "$0$ or $-3$",
+    "$3$ only",
+    "$1$ or $-1$",
+    "$0$ or $3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The plane equidistant from $(1,2,3)$ and $(3,4,5)$ is",
+   "a": "(B) $x+y+z=9$",
+   "s": "Through the midpoint $(2,3,4)$ with normal $(2,2,2)$.",
+   "opts": [
+    "$x-y+z=3$",
+    "$x+y+z=9$",
+    "$x+y+z=6$",
+    "$x+y+z=12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of the origin from the line $x=1$, $y=1$ is",
+   "a": "(A) $\\sqrt2$",
+   "s": "The line is parallel to the $z$-axis through $(1,1,0)$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$2$",
+    "$1$",
+    "$\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point of the line $\\dfrac{x-1}2=\\dfrac{y+1}{-1}=\\dfrac z1$ nearest to the origin is",
+   "a": "(B) $\\left(0,-\\frac12,-\\frac12\\right)$",
+   "s": "For $(2t+1,-t-1,t)$: $6t+3=0$.",
+   "opts": [
+    "$\\left(\\frac12,-\\frac34,-\\frac14\\right)$",
+    "$\\left(0,-\\frac12,-\\frac12\\right)$",
+    "$(1,-1,0)$",
+    "$(0,0,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle cut from the plane $x+y+z=1$ by the coordinate planes is",
+   "a": "(A) $\\frac{\\sqrt3}2$",
+   "s": "$\\frac12|(-1,1,0)\\times(-1,0,1)|$.",
+   "opts": [
+    "$\\frac{\\sqrt3}2$",
+    "$\\frac{\\sqrt3}4$",
+    "$\\sqrt3$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The unit normal to $2x-y+2z=6$, pointing away from the origin, is",
+   "a": "(A) $\\frac13(2,-1,2)$",
+   "s": "Divide by $3$; $d=6>0$.",
+   "opts": [
+    "$\\frac13(2,-1,2)$",
+    "$\\frac16(2,-1,2)$",
+    "$-\\frac13(2,-1,2)$",
+    "$(2,-1,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance between the planes $x+2y+2z=1$ and $2x+4y+4z=11$.",
+   "a": "$1.5$",
+   "s": "The second is $x+2y+2z=5.5$: $\\frac{4.5}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\dfrac{x-1}2=\\dfrac{y+1}3=\\dfrac{z-2}k$ is parallel to the plane $x+y+z=0$. Find $k$.",
+   "a": "$-5$",
+   "s": "$2+3+k=0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the coordinates of the foot of the perpendicular from $(1,2,6)$ to the plane $x+y+z=0$.",
+   "a": "$0$",
+   "s": "The foot lies on the plane, so its coordinates add to $0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$\\theta$ is the angle between the planes $2x+y+z=1$ and $x-y+2z=3$. Find $2\\cos\\theta$.",
+   "a": "$1$",
+   "s": "$\\cos\\theta=\\frac{2-1+2}{\\sqrt6\\sqrt6}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the intercepts of the plane $2x+3y+6z=12$ on the axes.",
+   "a": "$12$",
+   "s": "$6+4+2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch11-advanced-01": [
+  {
+   "q": "The plane through $(1,1,1)$ perpendicular to the planes $2x+y-2z=5$ and $3x-6y-2z=7$ is",
+   "a": "(A) $14x+2y+15z=31$",
+   "s": "Normal $(2,1,-2)\\times(3,-6,-2)=(-14,-2,-15)$.",
+   "opts": [
+    "$14x+2y+15z=31$",
+    "$14x+2y-15z=1$",
+    "$14x-2y+15z=27$",
+    "$-14x+2y+15z=3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of the origin from the plane containing $\\dfrac{x+2}3=\\dfrac{y-2}5=\\dfrac{z+5}7$ and $\\dfrac{x-1}1=\\dfrac{y-4}4=\\dfrac{z+4}7$ is",
+   "a": "(C) $\\frac{11}{\\sqrt6}$",
+   "s": "Normal $(3,5,7)\\times(1,4,7)\\propto(1,-2,1)$; the plane is $x-2y+z=-11$.",
+   "opts": [
+    "$\\sqrt{11}$",
+    "$\\frac{11}6$",
+    "$\\frac{11}{\\sqrt6}$",
+    "$\\frac6{\\sqrt{11}}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P$ is the image of $(3,1,7)$ in the plane $x-y+z=3$. The plane through $P$ containing the line $\\dfrac x1=\\dfrac y2=\\dfrac z1$ is",
+   "a": "(B) $x-4y+7z=0$",
+   "s": "$P=(-1,5,3)$; normal $(1,2,1)\\times(-1,5,3)=(1,-4,7)$.",
+   "opts": [
+    "$2x-y=0$",
+    "$x-4y+7z=0$",
+    "$3x+z=0$",
+    "$x+y-3z=0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The acute angle between the line $x=y=z$ and the plane $2x-y+z=6$ is",
+   "a": "(B) $\\sin^{-1}\\frac{\\sqrt2}3$",
+   "s": "$\\sin\\phi=\\frac{2-1+1}{\\sqrt3\\sqrt6}$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\sin^{-1}\\frac{\\sqrt2}3$",
+    "$\\sin^{-1}\\frac23$",
+    "$\\cos^{-1}\\frac{\\sqrt2}3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Planes $P_1:2x+y-z=3$ and $P_2:x+2y+z=2$. Which statements are true?",
+   "a": "(C), (D)",
+   "s": "$\\vec n_1\\times\\vec n_2=(3,-3,3)$; the given line has direction ratios $1,-1,1$ (parallel). $\\cos\\theta=\\frac36$. $P_3$: $x-y+z=0$.",
+   "opts": [
+    "The line of intersection has direction ratios $1,2,-1$",
+    "The line $\\frac{3x-4}9=\\frac{1-3y}9=\\frac z3$ is perpendicular to the line of intersection",
+    "The acute angle between $P_1$ and $P_2$ is $60^\\circ$",
+    "If $P_3$ passes through $(4,2,-2)$ and is perpendicular to the line of intersection, the distance of $(2,1,1)$ from $P_3$ is $\\frac2{\\sqrt3}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$L_1:\\vec r=\\lambda(\\hat i+\\hat j+\\hat k)$ and $L_2:\\vec r=\\hat j+\\mu(\\hat i-\\hat k)$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\vec b_1\\times\\vec b_2=-\\hat i+2\\hat j-\\hat k$ and $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=2\\ne0$.",
+   "opts": [
+    "$L_1$ and $L_2$ are skew",
+    "The shortest distance is $\\frac{\\sqrt6}3$",
+    "$L_1$ is perpendicular to $L_2$",
+    "$L_1$ and $L_2$ lie in one plane"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The plane $x+2y+2z=9$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac93=3$; $1+2+2=5\\ne9$.",
+   "opts": [
+    "Its distance from the origin is $3$",
+    "The foot of the perpendicular from the origin is $(1,2,2)$",
+    "It is parallel to $x+2y+2z=0$",
+    "It contains $(1,1,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ and $D(1,1,1)$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$\\frac16\\left|\\overrightarrow{AB}\\cdot(\\overrightarrow{AC}\\times\\overrightarrow{AD})\\right|=\\frac26$.",
+   "opts": [
+    "The plane $ABC$ is $x+y+z=1$",
+    "$D$ is at distance $\\frac2{\\sqrt3}$ from the plane $ABC$",
+    "The four points are coplanar",
+    "The tetrahedron $ABCD$ has volume $\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance between the planes $2x+2y-z=3$ and $4x+4y-2z=-6$.",
+   "a": "$2$",
+   "s": "The second is $2x+2y-z=-3$: $\\frac63$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The line $\\dfrac{x-1}2=\\dfrac{y-1}3=\\dfrac{z-1}k$ lies in the plane $2x-y+z=2$. Find $k$.",
+   "a": "$-1$",
+   "s": "$(1,1,1)$ is on the plane, and $4-3+k=0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the square of the distance of $(1,2,3)$ from the line $x=y=z$.",
+   "a": "$2$",
+   "s": "Foot $(2,2,2)$; $|(-1,0,1)|^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The planes $x+2y+kz=0$ and $2x+y-2z=0$ are perpendicular. Find $k$.",
+   "a": "$2$",
+   "s": "$2+2-2k=0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each plane with its distance from the origin.\nList-I: (P) $x+y+z=3$; (Q) $2x-y+2z=6$; (R) $3x+4y=15$; (S) $x+2y+2z=12$\nList-II: (1) $3$; (2) $\\sqrt3$; (3) $4$; (4) $2$; (5) $1$",
+   "a": "(A) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "$\\frac3{\\sqrt3}$; $\\frac63$; $\\frac{15}5$; $\\frac{12}3$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of planes with the angle between them.\nList-I: (P) $x=0$ and $y=0$; (Q) $x+y=0$ and $x=0$; (R) $x+y+z=1$ and $x+y+z=5$; (S) $x+y=1$ and $y+z=1$\nList-II: (1) $0$; (2) $\\frac\\pi3$; (3) $\\frac\\pi2$; (4) $\\frac\\pi4$; (5) $\\frac\\pi6$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Angle between the normals.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of lines with its relation.\nList-I: (P) $\\frac x1=\\frac y2=\\frac z3$ and $\\frac x2=\\frac y4=\\frac z6$; (Q) $\\frac x1=\\frac y1=\\frac z1$ and $\\frac x1=\\frac y{-2}=\\frac z1$; (R) $\\vec r=\\lambda\\hat i$ and $\\vec r=\\hat j+\\mu\\hat k$; (S) $\\vec r=\\lambda\\hat i$ and $\\vec r=\\hat j+\\mu\\hat i$\nList-II: (1) skew; (2) parallel and distinct; (3) the same line; (4) meet at a right angle; (5) meet, not at a right angle",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Compare directions and check for a common point.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each plane with the foot of the perpendicular from the origin.\nList-I: (P) $x+y+z=3$; (Q) $2x+2y+z=9$; (R) $z=5$; (S) $x+2y+2z=9$\nList-II: (1) $(2,2,1)$; (2) $(1,1,1)$; (3) $(1,2,2)$; (4) $(0,0,5)$; (5) $(3,3,3)$",
+   "a": "(C) $P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+   "s": "The foot is $\\frac{d}{|\\vec n|^2}\\vec n$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 5$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch11-advanced-02": [
+  {
+   "q": "The plane through the line of intersection of $2x+3y-z+1=0$ and $x+y-2z+3=0$, perpendicular to $3x-y-2z=4$, is",
+   "a": "(D) $7x+13y+4z=9$",
+   "s": "$(2+\\lambda)3-(3+\\lambda)-2(-1-2\\lambda)=0$ gives $\\lambda=-\\frac56$.",
+   "opts": [
+    "$7x+13y-4z=9$",
+    "$7x-13y+4z=9$",
+    "$x+y+z=1$",
+    "$7x+13y+4z=9$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $\\dfrac{x-1}2=\\dfrac{y+1}3=\\dfrac{z-1}4$ and $\\dfrac{x-3}1=\\dfrac{y-k}2=\\dfrac z1$ intersect. Then $k$ equals",
+   "a": "(D) $\\frac92$",
+   "s": "Equate $(2t+1,3t-1,4t+1)$ and $(s+3,2s+k,s)$: $t=-\\frac32$, $s=-5$.",
+   "opts": [
+    "$4$",
+    "$\\frac72$",
+    "$2$",
+    "$\\frac92$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The image of the line $\\dfrac{x-1}3=\\dfrac{y-3}1=\\dfrac{z-4}{-5}$ in the plane $2x-y+z+3=0$ is",
+   "a": "(C) $\\frac{x+3}3=\\frac{y-5}1=\\frac{z-2}{-5}$",
+   "s": "The line is parallel to the plane; the image of $(1,3,4)$ is $(-3,5,2)$.",
+   "opts": [
+    "$\\frac{x+3}{-3}=\\frac{y-5}{-1}=\\frac{z-2}{-5}$",
+    "$\\frac{x-1}3=\\frac{y+3}1=\\frac{z-4}5$",
+    "$\\frac{x+3}3=\\frac{y-5}1=\\frac{z-2}{-5}$",
+    "$\\frac{x-3}3=\\frac{y+5}1=\\frac{z+2}{-5}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(1,-5,9)$ from the plane $x-y+z=5$, measured along the line $x=y=z$, is",
+   "a": "(B) $10\\sqrt3$",
+   "s": "$(1+t,-5+t,9+t)$ meets the plane when $t=-10$.",
+   "opts": [
+    "$10$",
+    "$10\\sqrt3$",
+    "$\\frac{10}{\\sqrt3}$",
+    "$5\\sqrt3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$L_1:x=5,\\ \\frac y{3-\\alpha}=\\frac z{-2}$ and $L_2:x=\\alpha,\\ \\frac y{-1}=\\frac z{2-\\alpha}$ are coplanar. Then $\\alpha$ can be",
+   "a": "(A), (D)",
+   "s": "Coplanarity: $(\\alpha-5)\\left[(3-\\alpha)(2-\\alpha)-2\\right]=0$, so $\\alpha=1,4,5$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The plane $3x+4y+12z=52$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$\\frac{52}{13}=4$; $12+16+24=52$; the two planes are parallel.",
+   "opts": [
+    "Its distance from the origin is $4$",
+    "It contains $(4,4,2)$",
+    "It is perpendicular to the plane $3x+4y+12z=0$",
+    "Its normal makes the angle $\\cos^{-1}\\frac3{13}$ with the $x$-axis"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The plane through $(1,0,0)$, $(0,2,0)$ and $(0,0,3)$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "Volume $\\frac16\\cdot1\\cdot2\\cdot3=1$.",
+   "opts": [
+    "Its equation is $6x+3y+2z=6$",
+    "Its distance from the origin is $\\frac67$",
+    "Its unit normal is $\\frac17(6,3,2)$",
+    "It forms with the coordinate planes a tetrahedron of volume $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\frac x1=\\frac y2=\\frac z3$ lies in the plane $ax+by+cz=0$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "The direction must be perpendicular to the normal.",
+   "opts": [
+    "$a+2b+3c=0$",
+    "The plane passes through the origin",
+    "$(a,b,c)=(1,1,-1)$ is possible",
+    "$(a,b,c)=(1,2,3)$ is possible"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The line $\\dfrac{x-1}2=\\dfrac{y+1}1=\\dfrac{z-2}{-1}$ lies in the plane $\\alpha x+\\beta y+3z=9$. Find $\\alpha+\\beta$.",
+   "a": "$1$",
+   "s": "$2\\alpha+\\beta-3=0$ and $\\alpha-\\beta+6=9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the square of the distance between the planes $x+y+z=1$ and $x+y+z=7$.",
+   "a": "$12$",
+   "s": "$\\left(\\frac6{\\sqrt3}\\right)^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find, in degrees, the angle between the line $\\dfrac x2=\\dfrac y2=\\dfrac z1$ and the plane $2x+2y+z=9$.",
+   "a": "$90$",
+   "s": "The line is along the normal.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of planes that contain both lines $x=y=z$ and $x=y=z+1$.",
+   "a": "$1$",
+   "s": "Distinct parallel lines lie in exactly one plane.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each description with its plane.\nList-I: (P) through $(1,0,0)$, $(0,1,0)$, $(0,0,1)$; (Q) through the origin, perpendicular to $\\hat i+\\hat j+\\hat k$; (R) intercepts $2,2,2$; (S) through $(1,1,1)$, parallel to $x+y+z=0$\nList-II: (1) $x+y+z=2$; (2) $x+y+z=0$; (3) $x+y+z=3$; (4) $x+y+z=1$; (5) $x+y+z=6$",
+   "a": "(D) $P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+   "s": "Find the constant in each case.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each distance with its value.\nList-I: (P) $(1,1,1)$ to $x+y+z=0$; (Q) $(0,0,0)$ to $2x+y+2z=6$; (R) between $2x+2y+z=3$ and $2x+2y+z=12$; (S) $(1,2,3)$ to the $x$-axis\nList-II: (1) $3$; (2) $\\sqrt{13}$; (3) $\\sqrt3$; (4) $2$; (5) $1$",
+   "a": "(B) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$\\frac3{\\sqrt3}$; $\\frac63$; $\\frac93$; $\\sqrt{4+9}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each plane with the position of the line $x=y=z$.\nList-I: (P) $x+y-2z=0$; (Q) $x+y+z=3$; (R) $x+y-2z=3$; (S) $x=3$\nList-II: (1) parallel to the plane, not in it; (2) lies in the plane; (3) perpendicular to the plane; (4) meets the plane at $(3,3,3)$, not at a right angle; (5) meets the plane at $(1,1,1)$, not at a right angle",
+   "a": "(B) $P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+   "s": "Check $\\vec b\\cdot\\vec n$ and whether the origin lies on the plane.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each line and plane with the angle between them.\nList-I: (P) a line parallel to the $z$-axis and the plane $z=0$; (Q) a line parallel to the $x$-axis and the plane $z=0$; (R) a line with direction ratios $1,1,0$ and the plane $x=0$; (S) a line with direction ratios $1,1,1$ and the plane $z=0$\nList-II: (1) $\\sin^{-1}\\frac1{\\sqrt3}$; (2) $\\frac\\pi4$; (3) $0$; (4) $\\frac\\pi2$; (5) $\\frac\\pi3$",
+   "a": "(C) $P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+   "s": "$\\sin\\phi=\\frac{|\\vec b\\cdot\\vec n|}{|\\vec b||\\vec n|}$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "$\\begin{vmatrix}2&4\\\\-5&-1\\end{vmatrix}$ equals",
+  "options": [
+   "$22$",
+   "$-18$",
+   "$-22$",
+   "$18$"
+  ],
+  "answer": 3,
+  "solution": "$2(-1)-4(-5)=-2+20$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{vmatrix}$ equals",
+  "options": [
+   "$0$",
+   "$\\cos2\\theta$",
+   "$1$",
+   "$-1$"
+  ],
+  "answer": 2,
+  "solution": "$\\cos^2\\theta+\\sin^2\\theta$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}x&2\\\\18&x\\end{vmatrix}=\\begin{vmatrix}6&2\\\\18&6\\end{vmatrix}$. Then $x$ equals",
+  "options": [
+   "$\\pm6$",
+   "$\\pm36$",
+   "$6$ only",
+   "$\\pm3$"
+  ],
+  "answer": 0,
+  "solution": "$x^2-36=36-36$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}3&-1&-2\\\\0&0&-1\\\\3&-5&0\\end{vmatrix}$ equals",
+  "options": [
+   "$-12$",
+   "$6$",
+   "$12$",
+   "$-18$"
+  ],
+  "answer": 0,
+  "solution": "Expand along row $1$: $3(0-5)+1(0+3)-2(0)$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=4$. Then $|3A|$ equals",
+  "options": [
+   "$36$",
+   "$64$",
+   "$12$",
+   "$108$"
+  ],
+  "answer": 3,
+  "solution": "$|kA|=k^3|A|=27\\cdot4$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "$A$ is a $2\\times2$ matrix with $|A|=5$. Then $|\\operatorname{adj}A|$ equals",
+  "options": [
+   "$25$",
+   "$5$",
+   "$1$",
+   "$\\frac15$"
+  ],
+  "answer": 1,
+  "solution": "$|\\operatorname{adj}A|=|A|^{n-1}$ with $n=2$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=3$. Then $|\\operatorname{adj}A|$ equals",
+  "options": [
+   "$9$",
+   "$3$",
+   "$27$",
+   "$6$"
+  ],
+  "answer": 0,
+  "solution": "$|A|^{3-1}=9$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$|A|=-7$. Then $|A'|$ equals",
+  "options": [
+   "$-7$",
+   "$49$",
+   "$7$",
+   "$-\\frac17$"
+  ],
+  "answer": 0,
+  "solution": "$|A'|=|A|$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "$|A|=4$. Then $|A^{-1}|$ equals",
+  "options": [
+   "$16$",
+   "$-\\frac14$",
+   "$4$",
+   "$\\frac14$"
+  ],
+  "answer": 3,
+  "solution": "$|A||A^{-1}|=|I|=1$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "The area of the triangle with vertices $(1,0)$, $(6,0)$ and $(4,3)$ is",
+  "options": [
+   "$15$",
+   "$\\frac{15}{2}$",
+   "$9$",
+   "$\\frac{21}{2}$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac12|1(0-3)+6(3-0)+4(0-0)|=\\frac12\\cdot15$.",
+  "topic": "Area of a triangle"
+ },
+ {
+  "prompt": "The area of the triangle with vertices $(2,7)$, $(1,1)$ and $(10,8)$ is",
+  "options": [
+   "$47$",
+   "$24$",
+   "$\\frac{47}{2}$",
+   "$\\frac{73}{2}$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac12|2(1-8)+1(8-7)+10(7-1)|=\\frac12|-14+1+60|$.",
+  "topic": "Area of a triangle"
+ },
+ {
+  "prompt": "The area of the triangle with vertices $(k,0)$, $(4,0)$ and $(0,2)$ is $4$. Then $k$ equals",
+  "options": [
+   "$0$ or $8$",
+   "$4$ or $-4$",
+   "$0$ or $-8$",
+   "$8$ only"
+  ],
+  "answer": 0,
+  "solution": "$\\frac12|8-2k|=4$, so $8-2k=\\pm8$.",
+  "topic": "Area of a triangle"
+ },
+ {
+  "prompt": "The points $(1,2)$, $(3,5)$ and $(k,8)$ are collinear. Then $k$ equals",
+  "options": [
+   "$5$",
+   "$4$",
+   "$6$",
+   "$7$"
+  ],
+  "answer": 0,
+  "solution": "$1(5-8)+3(8-2)+k(2-5)=15-3k=0$.",
+  "topic": "Area of a triangle"
+ },
+ {
+  "prompt": "The minor $M_{12}$ of $\\begin{vmatrix}2&-3&5\\\\6&0&4\\\\1&5&-7\\end{vmatrix}$ is",
+  "options": [
+   "$-46$",
+   "$38$",
+   "$46$",
+   "$-38$"
+  ],
+  "answer": 0,
+  "solution": "Delete row $1$ and column $2$: $\\begin{vmatrix}6&4\\\\1&-7\\end{vmatrix}=-42-4$.",
+  "topic": "Minors and cofactors"
+ },
+ {
+  "prompt": "The cofactor $A_{21}$ of $\\begin{vmatrix}1&-2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}$ is",
+  "options": [
+   "$-6$",
+   "$-42$",
+   "$42$",
+   "$6$"
+  ],
+  "answer": 2,
+  "solution": "$A_{21}=-\\begin{vmatrix}-2&3\\\\8&9\\end{vmatrix}=-(-18-24)$.",
+  "topic": "Minors and cofactors"
+ },
+ {
+  "prompt": "$\\operatorname{adj}\\begin{bmatrix}2&3\\\\1&4\\end{bmatrix}$ equals",
+  "options": [
+   "$\\begin{bmatrix}2&-3\\\\-1&4\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&-3\\\\-1&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}-4&3\\\\1&-2\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&-1\\\\-3&2\\end{bmatrix}$"
+  ],
+  "answer": 1,
+  "solution": "For $\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ the adjoint is $\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=5$. Then $A(\\operatorname{adj}A)$ equals",
+  "options": [
+   "$5I$",
+   "$\\frac15I$",
+   "$25I$",
+   "$125I$"
+  ],
+  "answer": 0,
+  "solution": "$A(\\operatorname{adj}A)=|A|I$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "The inverse of $\\begin{bmatrix}2&-2\\\\4&3\\end{bmatrix}$ is",
+  "options": [
+   "$\\frac1{2}\\begin{bmatrix}3&2\\\\-4&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&2\\\\-4&2\\end{bmatrix}$",
+   "$\\frac1{14}\\begin{bmatrix}3&-2\\\\4&2\\end{bmatrix}$",
+   "$\\frac1{14}\\begin{bmatrix}3&2\\\\-4&2\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "$|A|=6+8=14$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}2&k\\\\3&6\\end{bmatrix}$ is singular. Then $k$ equals",
+  "options": [
+   "$4$",
+   "$9$",
+   "$2$",
+   "$-4$"
+  ],
+  "answer": 0,
+  "solution": "$12-3k=0$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}1&2&x\\\\1&1&1\\\\2&1&-1\\end{bmatrix}$ is singular. Then $x$ equals",
+  "options": [
+   "$2$",
+   "$-4$",
+   "$0$",
+   "$4$"
+  ],
+  "answer": 3,
+  "solution": "$1(-1-1)-2(-1-2)+x(1-2)=4-x$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$AX=B$ is a system of linear equations with $|A|\\ne0$. The system has",
+  "options": [
+   "no solution",
+   "exactly two solutions",
+   "infinitely many solutions",
+   "a unique solution"
+  ],
+  "answer": 3,
+  "solution": "$X=A^{-1}B$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "$|A|=0$ and $(\\operatorname{adj}A)B\\ne O$. The system $AX=B$ has",
+  "options": [
+   "infinitely many solutions",
+   "the solution $X=O$",
+   "a unique solution",
+   "no solution"
+  ],
+  "answer": 3,
+  "solution": "This is the test for an inconsistent system.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The solution of $2x+5y=1$ and $3x+2y=7$ is",
+  "options": [
+   "$x=2,\\ y=-1$",
+   "$x=3,\\ y=-1$",
+   "$x=3,\\ y=1$",
+   "$x=-1,\\ y=3$"
+  ],
+  "answer": 1,
+  "solution": "$|A|=4-15=-11$; $X=A^{-1}B=-\\frac1{11}\\begin{bmatrix}2&-5\\\\-3&2\\end{bmatrix}\\begin{bmatrix}1\\\\7\\end{bmatrix}$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "$A$ and $B$ are invertible matrices of the same order. Then $\\operatorname{adj}(AB)$ equals",
+  "options": [
+   "$\\operatorname{adj}B\\,\\operatorname{adj}A$",
+   "$|AB|\\,AB$",
+   "$\\operatorname{adj}A+\\operatorname{adj}B$",
+   "$\\operatorname{adj}A\\,\\operatorname{adj}B$"
+  ],
+  "answer": 0,
+  "solution": "$\\operatorname{adj}(AB)=|AB|(AB)^{-1}=|B|B^{-1}\\,|A|A^{-1}$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=2$. Then $|\\operatorname{adj}(\\operatorname{adj}A)|$ equals",
+  "options": [
+   "$4$",
+   "$16$",
+   "$64$",
+   "$8$"
+  ],
+  "answer": 1,
+  "solution": "$|\\operatorname{adj}A|=4$ and $|\\operatorname{adj}(\\operatorname{adj}A)|=4^2$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix. Then $\\operatorname{adj}(2A)$ equals",
+  "options": [
+   "$\\operatorname{adj}A$",
+   "$2\\operatorname{adj}A$",
+   "$8\\operatorname{adj}A$",
+   "$4\\operatorname{adj}A$"
+  ],
+  "answer": 3,
+  "solution": "Each cofactor of $2A$ is a $2\\times2$ determinant, so it gets a factor $2^2$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A$ is a square matrix of order $n$ and $k$ is a number. Then $|kA|$ equals",
+  "options": [
+   "$k^{n-1}|A|$",
+   "$k^n|A|$",
+   "$nk|A|$",
+   "$k|A|$"
+  ],
+  "answer": 1,
+  "solution": "Each of the $n$ rows gets a factor $k$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}1&1&1\\\\a&b&c\\\\a^2&b^2&c^2\\end{vmatrix}$ equals",
+  "options": [
+   "$(a-b)(b-c)(c-a)$",
+   "$a^2+b^2+c^2$",
+   "$(a+b)(b+c)(c+a)$",
+   "$abc$"
+  ],
+  "answer": 0,
+  "solution": "Subtract column $1$ from the other columns and take out $(b-a)(c-a)$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$. Then $|2A|$ equals",
+  "options": [
+   "$-4$",
+   "$8$",
+   "$-8$",
+   "$-16$"
+  ],
+  "answer": 2,
+  "solution": "$|A|=-2$ and $|2A|=2^2|A|$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "The determinant of every skew-symmetric matrix of order $3$ is",
+  "options": [
+   "$1$",
+   "$-1$",
+   "$0$",
+   "a perfect square"
+  ],
+  "answer": 2,
+  "solution": "$|A|=|A'|=|-A|=-|A|$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "A determinant with two equal rows has the value",
+  "options": [
+   "$0$",
+   "$-1$",
+   "$1$",
+   "twice the value of one row"
+  ],
+  "answer": 0,
+  "solution": "Interchange the two rows: the value changes sign but stays the same.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=2$. Then $|A^{-1}\\operatorname{adj}A|$ equals",
+  "options": [
+   "$2$",
+   "$\\frac12$",
+   "$8$",
+   "$4$"
+  ],
+  "answer": 0,
+  "solution": "$|A^{-1}||\\operatorname{adj}A|=\\frac12\\cdot4$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "$\\operatorname{adj}\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$ equals",
+  "options": [
+   "$\\begin{bmatrix}2&1\\\\-1&3\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$",
+   "$\\begin{bmatrix}-2&1\\\\-1&-3\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&-1\\\\1&2\\end{bmatrix}$"
+  ],
+  "answer": 1,
+  "solution": "Interchange $3$ and $2$, and change the signs of $1$ and $-1$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "The formula $A^{-1}=\\dfrac{1}{|A|}\\operatorname{adj}A$ is valid when",
+  "options": [
+   "$|A|=0$",
+   "$|A|\\ne0$",
+   "$A=A'$",
+   "$|A|=1$ only"
+  ],
+  "answer": 1,
+  "solution": "Division by $|A|$ needs $|A|\\ne0$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "The equation of the line through $(1,2)$ and $(3,6)$, found with $\\begin{vmatrix}x&y&1\\\\1&2&1\\\\3&6&1\\end{vmatrix}=0$, is",
+  "options": [
+   "$2y=x$",
+   "$y=2x+1$",
+   "$y=3x$",
+   "$y=2x$"
+  ],
+  "answer": 3,
+  "solution": "$x(2-6)-y(1-3)+(6-6)=-4x+2y$.",
+  "topic": "Area of a triangle"
+ },
+ {
+  "prompt": "For a $3\\times3$ matrix, $a_{11}A_{21}+a_{12}A_{22}+a_{13}A_{23}$ equals",
+  "options": [
+   "$1$",
+   "$|A|$",
+   "$-|A|$",
+   "$0$"
+  ],
+  "answer": 3,
+  "solution": "Elements of one row times the cofactors of another row add to $0$.",
+  "topic": "Minors and cofactors"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&3\\\\5&-2\\end{bmatrix}$ and $A^{-1}=kA$. Then $k$ equals",
+  "options": [
+   "$\\frac1{19}$",
+   "$-\\frac1{19}$",
+   "$\\frac1{11}$",
+   "$19$"
+  ],
+  "answer": 0,
+  "solution": "$|A|=-19$ and $\\operatorname{adj}A=\\begin{bmatrix}-2&-3\\\\-5&2\\end{bmatrix}=-A$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}$ satisfies $A^2-4A+I=O$. Then $A^{-1}$ equals",
+  "options": [
+   "$\\begin{bmatrix}2&-3\\\\-1&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&-1\\\\-3&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}-2&3\\\\1&-2\\end{bmatrix}$"
+  ],
+  "answer": 0,
+  "solution": "$A(4I-A)=I$.",
+  "topic": "Adjoint and inverse"
+ },
+ {
+  "prompt": "The system $x+y=3$, $2x+2y=6$ has",
+  "options": [
+   "a unique solution",
+   "exactly two solutions",
+   "no solution",
+   "infinitely many solutions"
+  ],
+  "answer": 3,
+  "solution": "$|A|=0$ and $(\\operatorname{adj}A)B=\\begin{bmatrix}2&-1\\\\-2&1\\end{bmatrix}\\begin{bmatrix}3\\\\6\\end{bmatrix}=O$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The system $x+y=3$, $2x+2y=7$ has",
+  "options": [
+   "a unique solution",
+   "no solution",
+   "infinitely many solutions",
+   "the solution $x=y=0$"
+  ],
+  "answer": 1,
+  "solution": "$|A|=0$ and $(\\operatorname{adj}A)B=\\begin{bmatrix}-1\\\\1\\end{bmatrix}\\ne O$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}$ equals",
+  "options": [
+   "$-3$",
+   "$45$",
+   "$0$",
+   "$1$"
+  ],
+  "answer": 2,
+  "solution": "$1(45-48)-2(36-42)+3(32-35)=-3+12-9$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}a-b&b-c&c-a\\\\b-c&c-a&a-b\\\\c-a&a-b&b-c\\end{vmatrix}$ equals",
+  "options": [
+   "$0$",
+   "$a+b+c$",
+   "$abc$",
+   "$(a-b)(b-c)(c-a)$"
+  ],
+  "answer": 0,
+  "solution": "Add all columns to column $1$: it becomes zero.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "$A$ is a $3\\times3$ matrix with $|A|=6$. Then $|A(\\operatorname{adj}A)|$ equals",
+  "options": [
+   "$36$",
+   "$1296$",
+   "$6$",
+   "$216$"
+  ],
+  "answer": 3,
+  "solution": "$A(\\operatorname{adj}A)=6I$ and $|6I|=6^3$.",
+  "topic": "Determinant of products and powers"
+ },
+ {
+  "prompt": "$\\begin{vmatrix}1&a&b+c\\\\1&b&c+a\\\\1&c&a+b\\end{vmatrix}$ equals",
+  "options": [
+   "$1$",
+   "$abc$",
+   "$0$",
+   "$a+b+c$"
+  ],
+  "answer": 2,
+  "solution": "Add column $2$ to column $3$: it becomes $(a+b+c)$ times column $1$.",
+  "topic": "Evaluation"
+ },
+ {
+  "prompt": "Assertion (A): $\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$ has no inverse.\nReason (R): A square matrix has an inverse if and only if its determinant is not $0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$|A|=4-4=0$.",
+  "topic": "Adjoint and inverse",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): For a $3\\times3$ matrix $A$, $|\\operatorname{adj}A|=|A|^2$.\nReason (R): For a square matrix of order $n$, $|\\operatorname{adj}A|=|A|^{n-1}$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A is the case $n=3$ of R.",
+  "topic": "Adjoint and inverse",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The points $(1,1)$, $(2,2)$ and $(3,3)$ do not form a triangle.\nReason (R): Three points are collinear if and only if the area determinant is $0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$1(2-3)+2(3-1)+3(1-2)=0$.",
+  "topic": "Area of a triangle",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): For a $3\\times3$ matrix $A$, $|2A|=2|A|$.\nReason (R): For a square matrix of order $n$, $|kA|=k^n|A|$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$|2A|=8|A|$, so A is false.",
+  "topic": "Determinant of products and powers",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): If $|A|=0$, then $AX=B$ has no solution.\nReason (R): If $|A|\\ne0$, then $AX=B$ has a unique solution.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "With $|A|=0$ the system can have infinitely many solutions. R is true.",
+  "topic": "Linear equations",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $|A'|=|A|$ for every square matrix $A$.\nReason (R): The transpose of every square matrix is symmetric.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "A is true. R is false: the transpose of $\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ is not symmetric.",
+  "topic": "Determinant of products and powers",
+  "assertion": true
+ }
+]

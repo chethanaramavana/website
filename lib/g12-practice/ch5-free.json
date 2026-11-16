@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "$f(x)=kx+1$ for $x\\le5$ and $f(x)=3x-5$ for $x>5$. $f$ is continuous at $x=5$ when $k$ equals",
+  "options": [
+   "$9$",
+   "$2$",
+   "$\\frac95$",
+   "$\\frac59$"
+  ],
+  "answer": 2,
+  "solution": "$5k+1=15-5$.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "$f(x)=\\dfrac{\\sin3x}{x}$ for $x\\ne0$ and $f(0)=k$. $f$ is continuous at $0$ when $k$ equals",
+  "options": [
+   "$\\frac13$",
+   "$1$",
+   "$0$",
+   "$3$"
+  ],
+  "answer": 3,
+  "solution": "$\\lim_{x\\to0}\\frac{\\sin3x}{3x}\\cdot3=3$.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "At $x=0$, the function $f(x)=|x|$ is",
+  "options": [
+   "not continuous",
+   "continuous but not differentiable",
+   "neither continuous nor differentiable at any point",
+   "differentiable"
+  ],
+  "answer": 1,
+  "solution": "The left derivative is $-1$ and the right derivative is $1$.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "The number of points where $f(x)=|x-1|+|x-2|$ is not differentiable is",
+  "options": [
+   "$0$",
+   "$1$",
+   "$3$",
+   "$2$"
+  ],
+  "answer": 3,
+  "solution": "Corners at $x=1$ and $x=2$.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "The greatest integer function $f(x)=[x]$ is not continuous at",
+  "options": [
+   "every integer",
+   "$x=0$ only",
+   "no point",
+   "every real number"
+  ],
+  "answer": 0,
+  "solution": "The value jumps by $1$ at each integer.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "$f(x)=\\dfrac{x^2-9}{x-3}$ for $x\\ne3$ and $f(3)=k$. $f$ is continuous at $3$ when $k$ equals",
+  "options": [
+   "$9$",
+   "$0$",
+   "$3$",
+   "$6$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{x^2-9}{x-3}=x+3$.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\sin(x^2)$ equals",
+  "options": [
+   "$\\cos(2x)$",
+   "$\\cos(x^2)$",
+   "$2x\\cos(x^2)$",
+   "$2x\\sin(x^2)$"
+  ],
+  "answer": 2,
+  "solution": "Chain rule: $\\cos(x^2)\\cdot2x$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\cos\\sqrt x$ equals",
+  "options": [
+   "$-\\sin\\sqrt x$",
+   "$-\\frac{\\sin\\sqrt x}{2\\sqrt x}$",
+   "$-\\frac{\\cos\\sqrt x}{2\\sqrt x}$",
+   "$\\frac{\\sin\\sqrt x}{2\\sqrt x}$"
+  ],
+  "answer": 1,
+  "solution": "$-\\sin\\sqrt x\\cdot\\frac1{2\\sqrt x}$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}e^{\\sin x}$ equals",
+  "options": [
+   "$\\sin x\\,e^{\\sin x-1}$",
+   "$e^{\\sin x}$",
+   "$e^{\\sin x}\\cos x$",
+   "$e^{\\cos x}$"
+  ],
+  "answer": 2,
+  "solution": "$e^{\\sin x}\\cdot\\cos x$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\log(\\log x)$ for $x>1$ equals",
+  "options": [
+   "$\\frac1{\\log x}$",
+   "$\\frac1x$",
+   "$\\frac{\\log x}{x}$",
+   "$\\frac1{x\\log x}$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac1{\\log x}\\cdot\\frac1x$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "For $|x|<\\dfrac1{\\sqrt2}$, $\\dfrac{d}{dx}\\sin^{-1}\\left(2x\\sqrt{1-x^2}\\right)$ equals",
+  "options": [
+   "$\\frac2{1+x^2}$",
+   "$-\\frac2{\\sqrt{1-x^2}}$",
+   "$\\frac1{\\sqrt{1-x^2}}$",
+   "$\\frac2{\\sqrt{1-x^2}}$"
+  ],
+  "answer": 3,
+  "solution": "With $x=\\sin\\theta$ the function is $2\\theta=2\\sin^{-1}x$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "For $x<1$, $\\dfrac{d}{dx}\\tan^{-1}\\dfrac{1+x}{1-x}$ equals",
+  "options": [
+   "$\\frac1{1+x^2}$",
+   "$\\frac2{1+x^2}$",
+   "$-\\frac1{1+x^2}$",
+   "$\\frac1{1-x^2}$"
+  ],
+  "answer": 0,
+  "solution": "The function is $\\frac\\pi4+\\tan^{-1}x$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "For $x>0$, $\\dfrac{d}{dx}\\cos^{-1}\\dfrac{1-x^2}{1+x^2}$ equals",
+  "options": [
+   "$-\\frac2{1+x^2}$",
+   "$\\frac2{1+x^2}$",
+   "$\\frac{2x}{1+x^2}$",
+   "$\\frac1{1+x^2}$"
+  ],
+  "answer": 1,
+  "solution": "With $x=\\tan\\theta$ the function is $2\\theta$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "$x^2+y^2=25$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$-\\frac yx$",
+   "$\\frac xy$",
+   "$\\frac{25-x}{y}$",
+   "$-\\frac xy$"
+  ],
+  "answer": 3,
+  "solution": "$2x+2yy'=0$.",
+  "topic": "Implicit functions"
+ },
+ {
+  "prompt": "$xy=c^2$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$\\frac{c^2}{x}$",
+   "$-\\frac yx$",
+   "$\\frac yx$",
+   "$-\\frac xy$"
+  ],
+  "answer": 1,
+  "solution": "$y+xy'=0$.",
+  "topic": "Implicit functions"
+ },
+ {
+  "prompt": "$y+\\sin y=\\cos x$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$-\\frac{\\cos x}{1+\\sin y}$",
+   "$-\\frac{\\sin x}{1+\\cos y}$",
+   "$-\\sin x$",
+   "$\\frac{\\sin x}{1+\\cos y}$"
+  ],
+  "answer": 1,
+  "solution": "$y'(1+\\cos y)=-\\sin x$.",
+  "topic": "Implicit functions"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}x^x$ for $x>0$ equals",
+  "options": [
+   "$x^x\\log x$",
+   "$x^x$r",
+   "$x^x(1+\\log x)$",
+   "$x\\cdot x^{x-1}$"
+  ],
+  "answer": 2,
+  "solution": "$\\log y=x\\log x$, so $\\frac{y'}{y}=\\log x+1$.",
+  "topic": "Logarithmic differentiation"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}(\\sin x)^x$ for $0<x<\\pi$ equals",
+  "options": [
+   "$(\\sin x)^x(\\log\\sin x+x\\cot x)$",
+   "$(\\sin x)^x\\,x\\cot x$",
+   "$(\\sin x)^x\\log\\sin x$",
+   "$x(\\sin x)^{x-1}\\cos x$"
+  ],
+  "answer": 0,
+  "solution": "$\\log y=x\\log\\sin x$.",
+  "topic": "Logarithmic differentiation"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}2^x$ equals",
+  "options": [
+   "$x2^{x-1}$",
+   "$2^x\\log2$",
+   "$\\frac{2^x}{\\log2}$",
+   "$2^x$"
+  ],
+  "answer": 1,
+  "solution": "$2^x=e^{x\\log2}$.",
+  "topic": "Logarithmic differentiation"
+ },
+ {
+  "prompt": "$x=at^2$ and $y=2at$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$\\frac1t$",
+   "$2t$",
+   "$\\frac2t$",
+   "$t$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{2a}{2at}$.",
+  "topic": "Parametric functions"
+ },
+ {
+  "prompt": "$x=a(\\theta+\\sin\\theta)$ and $y=a(1-\\cos\\theta)$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$\\cot\\frac\\theta2$",
+   "$\\tan\\frac\\theta2$",
+   "$\\sin\\theta$",
+   "$\\tan\\theta$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{a\\sin\\theta}{a(1+\\cos\\theta)}=\\frac{2\\sin\\frac\\theta2\\cos\\frac\\theta2}{2\\cos^2\\frac\\theta2}$.",
+  "topic": "Parametric functions"
+ },
+ {
+  "prompt": "$x=e^t$ and $y=e^{-t}$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$-e^{-2t}$",
+   "$-1$",
+   "$e^{-2t}$",
+   "$-e^{2t}$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{-e^{-t}}{e^t}$.",
+  "topic": "Parametric functions"
+ },
+ {
+  "prompt": "$y=A\\sin x+B\\cos x$. Then $\\dfrac{d^2y}{dx^2}+y$ equals",
+  "options": [
+   "$A+B$",
+   "$2y$",
+   "$1$",
+   "$0$"
+  ],
+  "answer": 3,
+  "solution": "$y''=-A\\sin x-B\\cos x=-y$.",
+  "topic": "Second order derivatives"
+ },
+ {
+  "prompt": "$y=e^{2x}$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+  "options": [
+   "$e^{2x}$",
+   "$4xe^{2x}$",
+   "$2e^{2x}$",
+   "$4e^{2x}$"
+  ],
+  "answer": 3,
+  "solution": "Differentiate twice.",
+  "topic": "Second order derivatives"
+ },
+ {
+  "prompt": "$y=\\log x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+  "options": [
+   "$\\frac1x$",
+   "$-\\frac1x$",
+   "$-\\frac1{x^2}$",
+   "$\\frac1{x^2}$"
+  ],
+  "answer": 2,
+  "solution": "$y'=\\frac1x$.",
+  "topic": "Second order derivatives"
+ },
+ {
+  "prompt": "$y=x^3\\log x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+  "options": [
+   "$x(3+6\\log x)$",
+   "$5x\\log x$",
+   "$x(5+6\\log x)$",
+   "$6x\\log x$"
+  ],
+  "answer": 2,
+  "solution": "$y'=3x^2\\log x+x^2$, $y''=6x\\log x+3x+2x$.",
+  "topic": "Second order derivatives"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\log|\\sec x+\\tan x|$ equals",
+  "options": [
+   "$\\tan x$",
+   "$\\sec^2x$",
+   "$\\sec x\\tan x$",
+   "$\\sec x$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{\\sec x\\tan x+\\sec^2x}{\\sec x+\\tan x}$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\left(e^x\\log x\\right)$ equals",
+  "options": [
+   "$e^x\\log x$",
+   "$\\frac{e^x}{x}$",
+   "$e^x\\left(\\log x-\\frac1x\\right)$",
+   "$e^x\\left(\\log x+\\frac1x\\right)$"
+  ],
+  "answer": 3,
+  "solution": "Product rule.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "For $|x|<1$, $\\dfrac{d}{dx}\\left(\\sin^{-1}x+\\cos^{-1}x\\right)$ equals",
+  "options": [
+   "$\\frac\\pi2$",
+   "$0$",
+   "$1$",
+   "$\\frac2{\\sqrt{1-x^2}}$"
+  ],
+  "answer": 1,
+  "solution": "The sum is the constant $\\frac\\pi2$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "For $0<x<\\pi$, $\\dfrac{d}{dx}\\tan^{-1}(\\cot x)$ equals",
+  "options": [
+   "$0$",
+   "$-\\operatorname{cosec}^2x$",
+   "$-1$",
+   "$1$"
+  ],
+  "answer": 2,
+  "solution": "$\\cot x=\\tan\\left(\\frac\\pi2-x\\right)$, so the function is $\\frac\\pi2-x$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "At $x=0$, the function $f(x)=x|x|$ is",
+  "options": [
+   "continuous but not differentiable",
+   "differentiable with $f'(0)=0$",
+   "differentiable with $f'(0)=1$",
+   "not continuous"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{f(h)-f(0)}{h}=|h|\\to0$.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "$f(x)=|\\sin x|$ is not differentiable at",
+  "options": [
+   "$x=\\frac{n\\pi}{2}$ for every integer $n$",
+   "$x=0$ only",
+   "$x=n\\pi$ for every integer $n$",
+   "no point"
+  ],
+  "answer": 2,
+  "solution": "At each zero of $\\sin x$ the graph has a corner.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\log_{10}x$ equals",
+  "options": [
+   "$\\frac{10}{x}$",
+   "$\\frac{\\log10}{x}$",
+   "$\\frac1x$",
+   "$\\frac1{x\\log10}$"
+  ],
+  "answer": 3,
+  "solution": "$\\log_{10}x=\\frac{\\log x}{\\log10}$.",
+  "topic": "Logarithmic differentiation"
+ },
+ {
+  "prompt": "$y=\\sqrt{x+\\sqrt{x+\\sqrt{x+\\cdots}}}$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$\\frac{1}{2y+1}$",
+   "$\\frac1{2y-1}$",
+   "$\\frac1{2y}$",
+   "$2y-1$"
+  ],
+  "answer": 1,
+  "solution": "$y^2=x+y$, so $2yy'=1+y'$.",
+  "topic": "Implicit functions"
+ },
+ {
+  "prompt": "$y=e^{x+e^{x+e^{x+\\cdots}}}$. Then $\\dfrac{dy}{dx}$ equals",
+  "options": [
+   "$\\frac y{1+y}$",
+   "$\\frac{1-y}{y}$",
+   "$\\frac y{1-y}$",
+   "$y$r"
+  ],
+  "answer": 2,
+  "solution": "$y=e^{x+y}$, so $\\log y=x+y$ and $\\frac{y'}{y}=1+y'$.",
+  "topic": "Implicit functions"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\sin^2x$ equals",
+  "options": [
+   "$\\sin2x$",
+   "$2\\sin x$",
+   "$2\\cos x$",
+   "$\\cos^2x$"
+  ],
+  "answer": 0,
+  "solution": "$2\\sin x\\cos x$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}\\cos(\\log x)$ equals",
+  "options": [
+   "$-\\sin(\\log x)$",
+   "$-\\frac{\\sin(\\log x)}{x}$",
+   "$-\\frac{\\cos(\\log x)}{x}$",
+   "$\\frac{\\sin(\\log x)}{x}$"
+  ],
+  "answer": 1,
+  "solution": "$-\\sin(\\log x)\\cdot\\frac1x$.",
+  "topic": "Chain rule"
+ },
+ {
+  "prompt": "The derivative of $|x|$ at $x=-3$ is",
+  "options": [
+   "not defined",
+   "$-1$",
+   "$1$",
+   "$3$"
+  ],
+  "answer": 1,
+  "solution": "Near $-3$, $|x|=-x$.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "$f(x)=\\dfrac{1-\\cos x}{x^2}$ for $x\\ne0$ and $f(0)=k$. $f$ is continuous at $0$ when $k$ equals",
+  "options": [
+   "$0$",
+   "$2$",
+   "$1$",
+   "$\\frac12$"
+  ],
+  "answer": 3,
+  "solution": "$1-\\cos x=2\\sin^2\\frac x2$.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "$f(x)=x^2\\sin\\dfrac1x$ for $x\\ne0$ and $f(0)=0$. Then $f'(0)$ equals",
+  "options": [
+   "$0$",
+   "$-1$",
+   "does not exist",
+   "$1$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{f(h)}{h}=h\\sin\\frac1h\\to0$.",
+  "topic": "Differentiability"
+ },
+ {
+  "prompt": "$f(x)=x+\\lambda$ for $x<3$, $f(3)=4$, and $f(x)=3x-5$ for $x>3$. $f$ is continuous at $3$ when $\\lambda$ equals",
+  "options": [
+   "$-1$",
+   "$1$",
+   "$4$",
+   "$3$"
+  ],
+  "answer": 1,
+  "solution": "$3+\\lambda=4=9-5$.",
+  "topic": "Continuity"
+ },
+ {
+  "prompt": "$\\dfrac{d}{dx}x^{\\sin x}$ for $x>0$ equals",
+  "options": [
+   "$\\sin x\\,x^{\\sin x-1}$",
+   "$x^{\\sin x}\\left(\\sin x\\log x+\\frac{\\cos x}{x}\\right)$",
+   "$x^{\\sin x}\\cos x\\log x$",
+   "$x^{\\sin x}\\left(\\cos x\\log x+\\frac{\\sin x}{x}\\right)$"
+  ],
+  "answer": 3,
+  "solution": "$\\log y=\\sin x\\log x$.",
+  "topic": "Logarithmic differentiation"
+ },
+ {
+  "prompt": "For $|x|<1$, $\\dfrac{d}{dx}\\tan^{-1}\\dfrac{2x}{1-x^2}$ equals",
+  "options": [
+   "$\\frac1{1+x^2}$",
+   "$\\frac2{1+x^2}$",
+   "$-\\frac2{1+x^2}$",
+   "$\\frac{2}{1-x^2}$"
+  ],
+  "answer": 1,
+  "solution": "With $x=\\tan\\theta$ the function is $2\\theta$.",
+  "topic": "Inverse trigonometric functions"
+ },
+ {
+  "prompt": "$y=xe^x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+  "options": [
+   "$xe^x$",
+   "$2e^x$",
+   "$(x+1)e^x$",
+   "$(x+2)e^x$"
+  ],
+  "answer": 3,
+  "solution": "$y'=(x+1)e^x$, $y''=(x+2)e^x$.",
+  "topic": "Second order derivatives"
+ },
+ {
+  "prompt": "Assertion (A): $f(x)=|x|$ is continuous at $x=0$.\nReason (R): Every continuous function is differentiable.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "A is true. R is false: $|x|$ itself is a counterexample.",
+  "topic": "Differentiability",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $f(x)=|x-2|$ is not differentiable at $x=2$.\nReason (R): At $x=2$, the left derivative is $-1$ and the right derivative is $1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "Unequal one-sided derivatives.",
+  "topic": "Differentiability",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\dfrac{d}{dx}e^{3x}=3e^{3x}$.\nReason (R): $\\dfrac{d}{dx}e^x=e^x$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "A needs the chain rule as well; R alone does not give the factor $3$.",
+  "topic": "Chain rule",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $f(x)=[x]$ is continuous at $x=1.5$.\nReason (R): $[x]$ is constant on the interval $(1,2)$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A constant function is continuous, and $1.5$ is inside $(1,2)$.",
+  "topic": "Continuity",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\dfrac{d}{dx}x^x=x\\cdot x^{x-1}$.\nReason (R): $\\dfrac{d}{dx}x^n=nx^{n-1}$ when $n$ is a constant.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The exponent is not constant. $\\frac{d}{dx}x^x=x^x(1+\\log x)$.",
+  "topic": "Logarithmic differentiation",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): If $x=\\cos t$ and $y=\\sin t$, then $\\dfrac{dy}{dx}=-\\cot t$.\nReason (R): $\\dfrac{dy}{dx}=\\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$ when $\\dfrac{dx}{dt}\\ne0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$\\frac{\\cos t}{-\\sin t}$.",
+  "topic": "Parametric functions",
+  "assertion": true
+ }
+]

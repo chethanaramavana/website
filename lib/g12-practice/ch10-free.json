@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "$|2\\hat i-3\\hat j+6\\hat k|$ equals",
+  "options": [
+   "$\\sqrt{13}$",
+   "$11$",
+   "$5$",
+   "$7$"
+  ],
+  "answer": 3,
+  "solution": "$\\sqrt{4+9+36}$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The unit vector in the direction of $\\hat i+\\hat j+\\hat k$ is",
+  "options": [
+   "$\\sqrt3(\\hat i+\\hat j+\\hat k)$",
+   "$\\frac1{\\sqrt3}(\\hat i+\\hat j+\\hat k)$",
+   "$\\hat i+\\hat j+\\hat k$",
+   "$\\frac13(\\hat i+\\hat j+\\hat k)$"
+  ],
+  "answer": 1,
+  "solution": "Divide by the magnitude $\\sqrt3$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The direction cosines of $\\hat i-2\\hat j+2\\hat k$ are",
+  "options": [
+   "$\\frac13,-\\frac23,\\frac23$",
+   "$\\frac13,\\frac23,\\frac23$",
+   "$-\\frac13,\\frac23,-\\frac23$",
+   "$1,-2,2$"
+  ],
+  "answer": 0,
+  "solution": "Divide each component by $3$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The vector from $P(2,3,0)$ to $Q(-1,-2,-4)$ is",
+  "options": [
+   "$-3\\hat i-5\\hat j-4\\hat k$",
+   "$\\hat i+\\hat j-4\\hat k$",
+   "$-3\\hat i+5\\hat j-4\\hat k$",
+   "$3\\hat i+5\\hat j+4\\hat k$"
+  ],
+  "answer": 0,
+  "solution": "$\\overrightarrow{PQ}=\\vec q-\\vec p$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The position vector of the midpoint of $P(2,3,4)$ and $Q(4,1,-2)$ is",
+  "options": [
+   "$\\hat i-\\hat j-3\\hat k$",
+   "$2\\hat i+\\hat j+3\\hat k$",
+   "$3\\hat i+2\\hat j+\\hat k$",
+   "$6\\hat i+4\\hat j+2\\hat k$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{\\vec p+\\vec q}2$.",
+  "topic": "Section formula"
+ },
+ {
+  "prompt": "$\\vec a=\\hat i+2\\hat j-\\hat k$ and $\\vec b=-\\hat i+\\hat j+\\hat k$. The point dividing the join of $\\vec a$ and $\\vec b$ internally in the ratio $2:1$ is",
+  "options": [
+   "$-\\frac13\\hat i+\\frac43\\hat j+\\frac13\\hat k$",
+   "$\\frac13\\hat i+\\frac53\\hat j-\\frac13\\hat k$",
+   "$-\\frac13\\hat i+\\frac23\\hat j$",
+   "$-3\\hat i+3\\hat k$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{2\\vec b+\\vec a}3$.",
+  "topic": "Section formula"
+ },
+ {
+  "prompt": "$\\vec a=2\\hat i-3\\hat j+4\\hat k$ and $\\vec b=-4\\hat i+6\\hat j-8\\hat k$. Then",
+  "options": [
+   "$|\\vec a|=|\\vec b|$",
+   "$\\vec a\\perp\\vec b$",
+   "$\\vec b=2\\vec a$",
+   "$\\vec b=-2\\vec a$"
+  ],
+  "answer": 3,
+  "solution": "Compare the components.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "$\\hat i+\\lambda\\hat j+3\\hat k$ is perpendicular to $2\\hat i+\\hat j-\\hat k$. Then $\\lambda$ equals",
+  "options": [
+   "$1$",
+   "$-1$",
+   "$5$",
+   "$-5$"
+  ],
+  "answer": 0,
+  "solution": "$2+\\lambda-3=0$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$\\vec a=\\hat i-2\\hat j+3\\hat k$ and $\\vec b=3\\hat i-2\\hat j+\\hat k$. Then $\\vec a\\cdot\\vec b$ equals",
+  "options": [
+   "$10$",
+   "$14$",
+   "$6$",
+   "$-2$"
+  ],
+  "answer": 0,
+  "solution": "$3+4+3$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "The angle between $\\hat i+\\hat j$ and $\\hat j+\\hat k$ is",
+  "options": [
+   "$\\frac\\pi4$",
+   "$\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi2$"
+  ],
+  "answer": 2,
+  "solution": "$\\cos\\theta=\\frac{1}{\\sqrt2\\sqrt2}$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "The projection of $2\\hat i+3\\hat j+2\\hat k$ on $\\hat i+2\\hat j+\\hat k$ is",
+  "options": [
+   "$10$",
+   "$\\frac{10}{\\sqrt{17}}$",
+   "$\\frac{10}{\\sqrt6}$",
+   "$\\frac{10}6$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{\\vec a\\cdot\\vec b}{|\\vec b|}=\\frac{2+6+2}{\\sqrt6}$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$|\\vec a|=2$, $|\\vec b|=3$ and $\\vec a\\cdot\\vec b=3$. The angle between $\\vec a$ and $\\vec b$ is",
+  "options": [
+   "$\\frac\\pi3$",
+   "$\\frac\\pi6$",
+   "$\\frac\\pi4$",
+   "$\\frac{2\\pi}3$"
+  ],
+  "answer": 0,
+  "solution": "$\\cos\\theta=\\frac36$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$(\\vec a+\\vec b)\\cdot(\\vec a-\\vec b)$ equals",
+  "options": [
+   "$|\\vec a|^2-|\\vec b|^2$",
+   "$|\\vec a-\\vec b|^2$",
+   "$0$",
+   "$|\\vec a|^2+|\\vec b|^2$"
+  ],
+  "answer": 0,
+  "solution": "The terms $\\vec a\\cdot\\vec b$ and $\\vec b\\cdot\\vec a$ cancel.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$|\\vec a+\\vec b|=|\\vec a-\\vec b|$ for non-zero $\\vec a$ and $\\vec b$. Then",
+  "options": [
+   "$\\vec a=\\vec b$",
+   "$|\\vec a|=|\\vec b|$",
+   "$\\vec a\\perp\\vec b$",
+   "$\\vec a\\parallel\\vec b$"
+  ],
+  "answer": 2,
+  "solution": "Square both sides: $4\\vec a\\cdot\\vec b=0$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$\\hat i\\times\\hat j$ equals",
+  "options": [
+   "$1$",
+   "$\\vec 0$",
+   "$-\\hat k$",
+   "$\\hat k$"
+  ],
+  "answer": 3,
+  "solution": "Cyclic order.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$(\\hat i+\\hat j)\\times(\\hat j+\\hat k)$ equals",
+  "options": [
+   "$\\hat i-\\hat j+\\hat k$",
+   "$\\hat i-\\hat j-\\hat k$",
+   "$-\\hat i+\\hat j-\\hat k$",
+   "$\\hat i+\\hat j+\\hat k$"
+  ],
+  "answer": 0,
+  "solution": "Expand the determinant with rows $\\hat i,\\hat j,\\hat k$; $1,1,0$; $0,1,1$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "The area of the parallelogram with adjacent sides $3\\hat i+\\hat j+4\\hat k$ and $\\hat i-\\hat j+\\hat k$ is",
+  "options": [
+   "$\\sqrt{26}$",
+   "$\\sqrt{42}$",
+   "$\\sqrt{21}$",
+   "$42$"
+  ],
+  "answer": 1,
+  "solution": "$\\vec a\\times\\vec b=5\\hat i+\\hat j-4\\hat k$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "The area of the triangle with vertices $(1,1,1)$, $(1,2,3)$ and $(2,3,1)$ is",
+  "options": [
+   "$\\frac{\\sqrt{14}}2$",
+   "$\\frac{21}2$",
+   "$\\sqrt{21}$",
+   "$\\frac{\\sqrt{21}}2$"
+  ],
+  "answer": 3,
+  "solution": "$\\overrightarrow{AB}\\times\\overrightarrow{AC}=-4\\hat i+2\\hat j-\\hat k$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\vec a\\times\\vec a$ equals",
+  "options": [
+   "$1$",
+   "$|\\vec a|^2$",
+   "$\\vec a$",
+   "$\\vec 0$"
+  ],
+  "answer": 3,
+  "solution": "$\\sin0=0$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$|\\vec a\\times\\vec b|^2+(\\vec a\\cdot\\vec b)^2$ equals",
+  "options": [
+   "$0$",
+   "$|\\vec a|^2|\\vec b|^2$",
+   "$|\\vec a|^2+|\\vec b|^2$",
+   "$2|\\vec a||\\vec b|$"
+  ],
+  "answer": 1,
+  "solution": "$\\sin^2\\theta+\\cos^2\\theta=1$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\vec a$ and $\\vec b$ are non-zero and $\\vec a\\times\\vec b=\\vec 0$. Then",
+  "options": [
+   "$\\vec a\\cdot\\vec b=0$",
+   "$\\vec a\\parallel\\vec b$",
+   "$|\\vec a|=|\\vec b|$",
+   "$\\vec a\\perp\\vec b$"
+  ],
+  "answer": 1,
+  "solution": "$\\sin\\theta=0$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "A unit vector perpendicular to both $\\hat i+\\hat j+\\hat k$ and $\\hat i+2\\hat j+3\\hat k$ is",
+  "options": [
+   "$\\frac1{\\sqrt3}(\\hat i+\\hat j+\\hat k)$",
+   "$\\frac1{\\sqrt6}(\\hat i-2\\hat j+\\hat k)$",
+   "$\\frac1{\\sqrt6}(\\hat i+2\\hat j+\\hat k)$",
+   "$\\frac1{\\sqrt{14}}(\\hat i+2\\hat j+3\\hat k)$"
+  ],
+  "answer": 1,
+  "solution": "The cross product is $\\hat i-2\\hat j+\\hat k$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "A vector makes equal acute angles with the three axes. Its direction cosines are",
+  "options": [
+   "$1,1,1$",
+   "$\\frac1{\\sqrt3},\\frac1{\\sqrt3},\\frac1{\\sqrt3}$",
+   "$\\frac13,\\frac13,\\frac13$",
+   "$\\frac1{\\sqrt2},\\frac1{\\sqrt2},\\frac1{\\sqrt2}$"
+  ],
+  "answer": 1,
+  "solution": "$3l^2=1$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "A vector makes angles $\\alpha$, $\\beta$, $\\gamma$ with the axes. Then $\\cos^2\\alpha+\\cos^2\\beta+\\cos^2\\gamma$ equals",
+  "options": [
+   "$0$",
+   "$3$",
+   "$1$",
+   "$2$"
+  ],
+  "answer": 2,
+  "solution": "Sum of squares of direction cosines.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The vector of magnitude $5$ in the direction of $2\\hat i+\\hat j-2\\hat k$ is",
+  "options": [
+   "$\\frac35(2\\hat i+\\hat j-2\\hat k)$",
+   "$\\frac53(2\\hat i+\\hat j-2\\hat k)$",
+   "$\\frac59(2\\hat i+\\hat j-2\\hat k)$",
+   "$5(2\\hat i+\\hat j-2\\hat k)$"
+  ],
+  "answer": 1,
+  "solution": "The unit vector is $\\frac13(2\\hat i+\\hat j-2\\hat k)$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "$\\lambda(\\hat i+\\hat j+\\hat k)$ is a unit vector. Then $\\lambda$ equals",
+  "options": [
+   "$\\pm1$",
+   "$\\pm\\sqrt3$",
+   "$\\pm\\frac1{\\sqrt3}$",
+   "$\\pm\\frac13$"
+  ],
+  "answer": 2,
+  "solution": "$|\\lambda|\\sqrt3=1$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The points with position vectors $\\hat i+2\\hat j+3\\hat k$, $2\\hat i+3\\hat j+4\\hat k$ and $4\\hat i+5\\hat j+6\\hat k$ are",
+  "options": [
+   "the vertices of an equilateral triangle",
+   "not in one plane",
+   "the vertices of a right triangle",
+   "collinear"
+  ],
+  "answer": 3,
+  "solution": "$\\overrightarrow{BC}=2\\overrightarrow{AB}$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The scalar components of the vector from $(2,1)$ to $(-5,7)$ are",
+  "options": [
+   "$7$ and $-6$",
+   "$-7$ and $6$",
+   "$-7$ and $8$",
+   "$-3$ and $8$"
+  ],
+  "answer": 1,
+  "solution": "$(-5-2,\\ 7-1)$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "$|\\vec a|=3$, $|\\vec b|=4$ and $\\vec a\\cdot\\vec b=0$. Then $|\\vec a+\\vec b|$ equals",
+  "options": [
+   "$1$",
+   "$5$",
+   "$7$",
+   "$\\sqrt7$"
+  ],
+  "answer": 1,
+  "solution": "$9+16+0$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$|\\vec a|=3$, $|\\vec b|=4$ and $|\\vec a-\\vec b|=5$. Then $\\vec a\\cdot\\vec b$ equals",
+  "options": [
+   "$12$",
+   "$0$",
+   "$6$",
+   "$-12$"
+  ],
+  "answer": 1,
+  "solution": "$25=9+16-2\\vec a\\cdot\\vec b$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$|\\vec a\\times\\vec b|=\\vec a\\cdot\\vec b$ for non-zero vectors. The angle between them is",
+  "options": [
+   "$\\frac\\pi4$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi2$",
+   "$0$"
+  ],
+  "answer": 0,
+  "solution": "$\\sin\\theta=\\cos\\theta$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$(\\vec a\\times\\vec b)\\cdot\\vec a$ equals",
+  "options": [
+   "$|\\vec a\\times\\vec b|$",
+   "$0$",
+   "$|\\vec a|^2$",
+   "$\\vec a\\cdot\\vec b$"
+  ],
+  "answer": 1,
+  "solution": "$\\vec a\\times\\vec b$ is perpendicular to $\\vec a$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\hat k\\times\\hat j$ equals",
+  "options": [
+   "$\\hat i$",
+   "$-\\hat i$",
+   "$0$",
+   "$\\hat k$"
+  ],
+  "answer": 1,
+  "solution": "Reverse of the cyclic order.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\vec a=2\\hat i+\\hat j+3\\hat k$ and $\\vec b=3\\hat i+5\\hat j-2\\hat k$. Then $|\\vec a\\times\\vec b|$ equals",
+  "options": [
+   "$\\sqrt{507}+1$",
+   "$13\\sqrt3$",
+   "$\\sqrt{39}$",
+   "$13$"
+  ],
+  "answer": 1,
+  "solution": "$\\vec a\\times\\vec b=-17\\hat i+13\\hat j+7\\hat k$ and $289+169+49=507$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\hat a$ and $\\hat b$ are unit vectors at angle $\\theta$. Then $|\\hat a-\\hat b|$ equals",
+  "options": [
+   "$\\sin\\theta$",
+   "$2\\sin\\theta$",
+   "$2\\cos\\frac\\theta2$",
+   "$2\\sin\\frac\\theta2$"
+  ],
+  "answer": 3,
+  "solution": "$|\\hat a-\\hat b|^2=2-2\\cos\\theta=4\\sin^2\\frac\\theta2$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$\\hat a$ and $\\hat b$ are unit vectors with $|\\hat a+\\hat b|=1$. The angle between them is",
+  "options": [
+   "$\\frac{5\\pi}6$",
+   "$\\frac\\pi2$",
+   "$\\frac\\pi3$",
+   "$\\frac{2\\pi}3$"
+  ],
+  "answer": 3,
+  "solution": "$1=2+2\\cos\\theta$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "A force $\\hat i+2\\hat j+3\\hat k$ moves a particle from $(1,1,1)$ to $(2,3,5)$. The work done is",
+  "options": [
+   "$14$",
+   "$11$",
+   "$20$",
+   "$17$"
+  ],
+  "answer": 3,
+  "solution": "$\\vec F\\cdot\\vec d$ with $\\vec d=\\hat i+2\\hat j+4\\hat k$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "$\\vec a+\\vec b+\\vec c=\\vec 0$, $|\\vec a|=3$, $|\\vec b|=5$ and $|\\vec c|=7$. The angle between $\\vec a$ and $\\vec b$ is",
+  "options": [
+   "$\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac{2\\pi}3$",
+   "$\\frac\\pi4$"
+  ],
+  "answer": 1,
+  "solution": "$49=9+25+2\\vec a\\cdot\\vec b$, so $\\cos\\theta=\\frac{7.5}{15}$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "The number of unit vectors perpendicular to two given non-parallel vectors is",
+  "options": [
+   "$2$",
+   "$0$",
+   "infinitely many",
+   "$1$"
+  ],
+  "answer": 0,
+  "solution": "$\\pm\\frac{\\vec a\\times\\vec b}{|\\vec a\\times\\vec b|}$.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "$\\vec a$ and $\\vec b$ point in the same direction. Then $\\vec a\\cdot\\vec b$ equals",
+  "options": [
+   "$0$",
+   "$-|\\vec a||\\vec b|$",
+   "$|\\vec a|+|\\vec b|$",
+   "$|\\vec a||\\vec b|$"
+  ],
+  "answer": 3,
+  "solution": "$\\cos0=1$.",
+  "topic": "Scalar product"
+ },
+ {
+  "prompt": "The point dividing the join of $\\vec a$ and $\\vec b$ externally in the ratio $2:1$ is",
+  "options": [
+   "$\\vec a-2\\vec b$",
+   "$2\\vec a-\\vec b$",
+   "$2\\vec b-\\vec a$",
+   "$\\frac{2\\vec b+\\vec a}3$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{2\\vec b-1\\cdot\\vec a}{2-1}$.",
+  "topic": "Section formula"
+ },
+ {
+  "prompt": "$2\\hat i+p\\hat j+3\\hat k$ and $4\\hat i+6\\hat j+6\\hat k$ are collinear. Then $p$ equals",
+  "options": [
+   "$6$",
+   "$2$",
+   "$4$",
+   "$3$"
+  ],
+  "answer": 3,
+  "solution": "The second is twice the first.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "The area of a triangle with adjacent sides $\\vec a$ and $\\vec b$ is",
+  "options": [
+   "$|\\vec a||\\vec b|$",
+   "$\\frac12|\\vec a\\times\\vec b|$",
+   "$|\\vec a\\times\\vec b|$",
+   "$\\frac12\\vec a\\cdot\\vec b$"
+  ],
+  "answer": 1,
+  "solution": "Half of the parallelogram.",
+  "topic": "Vector product"
+ },
+ {
+  "prompt": "The cosine of the angle between $\\hat i-\\hat j+2\\hat k$ and the $x$-axis is",
+  "options": [
+   "$\\frac16$",
+   "$\\frac{1}{\\sqrt2}$",
+   "$1$",
+   "$\\frac1{\\sqrt6}$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{1}{\\sqrt{1+1+4}}$.",
+  "topic": "Basic concepts"
+ },
+ {
+  "prompt": "Assertion (A): $\\hat i$, $\\hat j$ and $\\hat k$ are mutually perpendicular.\nReason (R): $\\hat i\\cdot\\hat j=\\hat j\\cdot\\hat k=\\hat k\\cdot\\hat i=0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A zero scalar product means perpendicular.",
+  "topic": "Scalar product",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\vec a\\times\\vec b=\\vec b\\times\\vec a$ for all vectors.\nReason (R): $\\vec a\\times\\vec b=-\\vec b\\times\\vec a$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The vector product changes sign.",
+  "topic": "Vector product",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The projection of $\\vec a$ on $\\vec b$ is $\\dfrac{\\vec a\\cdot\\vec b}{|\\vec b|}$.\nReason (R): $\\vec a\\cdot\\vec b=|\\vec a||\\vec b|\\cos\\theta$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "The projection is $|\\vec a|\\cos\\theta$.",
+  "topic": "Scalar product",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $|\\vec a+\\vec b|\\le|\\vec a|+|\\vec b|$.\nReason (R): $\\vec a\\cdot\\vec b=\\vec b\\cdot\\vec a$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; R does not prove A.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Two non-zero vectors with $\\vec a\\cdot\\vec b=0$ are perpendicular.\nReason (R): $\\cos\\frac\\pi2=0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$|\\vec a||\\vec b|\\cos\\theta=0$ gives $\\theta=\\frac\\pi2$.",
+  "topic": "Scalar product",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\hat i+\\hat j$ and $\\hat i-\\hat j$ are perpendicular.\nReason (R): The two vectors have equal magnitudes.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; A follows from $1-1=0$.",
+  "topic": "Scalar product",
+  "assertion": true
+ }
+]

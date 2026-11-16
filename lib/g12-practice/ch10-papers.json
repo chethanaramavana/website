@@ -1,0 +1,2453 @@
+{
+ "g12-ch10-mcq-20-01": [
+  {
+   "q": "$|3\\hat i-4\\hat j|$ equals",
+   "a": "(D) $5$",
+   "s": "$\\sqrt{9+16}$.",
+   "opts": [
+    "$7$",
+    "$25$",
+    "$1$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The unit vector in the direction of $3\\hat i+4\\hat k$ is",
+   "a": "(C) $\\frac35\\hat i+\\frac45\\hat k$",
+   "s": "Divide by $5$.",
+   "opts": [
+    "$3\\hat i+4\\hat k$",
+    "$\\frac45\\hat i+\\frac35\\hat k$",
+    "$\\frac35\\hat i+\\frac45\\hat k$",
+    "$\\frac37\\hat i+\\frac47\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction cosines of $2\\hat i+2\\hat j-\\hat k$ are",
+   "a": "(A) $\\frac23,\\frac23,-\\frac13$",
+   "s": "Divide by $3$.",
+   "opts": [
+    "$\\frac23,\\frac23,-\\frac13$",
+    "$\\frac23,\\frac23,\\frac13$",
+    "$2,2,-1$",
+    "$\\frac25,\\frac25,-\\frac15$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=2\\hat i+\\hat j-\\hat k$ and $\\vec b=\\hat i-3\\hat j+2\\hat k$. Then $\\vec a\\cdot\\vec b$ equals",
+   "a": "(D) $-3$",
+   "s": "$2-3-2$.",
+   "opts": [
+    "$7$",
+    "$-1$",
+    "$3$",
+    "$-3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between $\\hat i$ and $\\hat i+\\hat j$ is",
+   "a": "(D) $\\frac\\pi4$",
+   "s": "$\\cos\\theta=\\frac1{\\sqrt2}$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$0$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$2\\hat i+\\lambda\\hat j+\\hat k$ is perpendicular to $\\hat i-2\\hat j+3\\hat k$. Then $\\lambda$ equals",
+   "a": "(A) $\\frac52$",
+   "s": "$2-2\\lambda+3=0$.",
+   "opts": [
+    "$\\frac52$",
+    "$2$",
+    "$-\\frac52$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The projection of $\\hat i+\\hat j+\\hat k$ on $\\hat j$ is",
+   "a": "(D) $1$",
+   "s": "$\\vec a\\cdot\\hat j$.",
+   "opts": [
+    "$\\frac1{\\sqrt3}$",
+    "$0$",
+    "$\\sqrt3$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat i\\times\\hat k$ equals",
+   "a": "(C) $-\\hat j$",
+   "s": "$\\hat k\\times\\hat i=\\hat j$.",
+   "opts": [
+    "$\\hat j$",
+    "$1$",
+    "$-\\hat j$",
+    "$\\vec 0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$(\\hat i+\\hat j)\\times(\\hat i-\\hat j)$ equals",
+   "a": "(D) $-2\\hat k$",
+   "s": "$-\\hat i\\times\\hat j+\\hat j\\times\\hat i$.",
+   "opts": [
+    "$2\\hat k$",
+    "$2\\hat i$",
+    "$\\vec 0$",
+    "$-2\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the parallelogram with adjacent sides $2\\hat i$ and $3\\hat j$ is",
+   "a": "(C) $6$",
+   "s": "$|6\\hat k|$.",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$6$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=1$, $|\\vec b|=2$ and $\\vec a\\cdot\\vec b=1$. Then $|\\vec a+\\vec b|$ equals",
+   "a": "(D) $\\sqrt7$",
+   "s": "$1+4+2$.",
+   "opts": [
+    "$7$",
+    "$3$",
+    "$\\sqrt5$",
+    "$\\sqrt7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\cdot\\vec b=|\\vec a||\\vec b|$ for non-zero vectors. The angle between them is",
+   "a": "(C) $0$",
+   "s": "$\\cos\\theta=1$.",
+   "opts": [
+    "$\\pi$",
+    "$\\frac\\pi2$",
+    "$0$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The midpoint of $(1,2,3)$ and $(3,4,5)$ has position vector",
+   "a": "(D) $2\\hat i+3\\hat j+4\\hat k$",
+   "s": "Average the coordinates.",
+   "opts": [
+    "$4\\hat i+6\\hat j+8\\hat k$",
+    "$\\hat i+\\hat j+\\hat k$",
+    "$2\\hat i+2\\hat j+2\\hat k$",
+    "$2\\hat i+3\\hat j+4\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which vector is collinear with $\\hat i-2\\hat j+3\\hat k$?",
+   "a": "(B) $-2\\hat i+4\\hat j-6\\hat k$",
+   "s": "It is $-2$ times the vector.",
+   "opts": [
+    "$3\\hat i-2\\hat j+\\hat k$",
+    "$-2\\hat i+4\\hat j-6\\hat k$",
+    "$2\\hat i+4\\hat j+6\\hat k$",
+    "$-2\\hat i+4\\hat j+6\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=3$ and the angle between them is $\\frac\\pi6$. Then $|\\vec a\\times\\vec b|$ equals",
+   "a": "(B) $3$",
+   "s": "$2\\cdot3\\cdot\\frac12$.",
+   "opts": [
+    "$3\\sqrt3$",
+    "$3$",
+    "$\\frac32$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\cdot(\\vec a\\times\\vec b)$ equals",
+   "a": "(B) $0$",
+   "s": "$\\vec a\\times\\vec b\\perp\\vec a$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$\\vec a\\cdot\\vec b$",
+    "$|\\vec a|^2|\\vec b|$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The unit vectors perpendicular to both $\\hat i$ and $\\hat j$ are",
+   "a": "(C) $\\pm\\hat k$",
+   "s": "$\\hat i\\times\\hat j=\\hat k$.",
+   "opts": [
+    "$\\pm\\hat i$",
+    "$\\hat i+\\hat j$",
+    "$\\pm\\hat k$",
+    "$\\pm\\frac{\\hat i+\\hat j}{\\sqrt2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=4$, $|\\vec b|=3$ and $|\\vec a\\times\\vec b|=6$. The acute angle between them is",
+   "a": "(D) $\\frac\\pi6$",
+   "s": "$\\sin\\theta=\\frac6{12}$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\vec a\\cdot\\vec b=\\vec b\\cdot\\vec a$. Reason: The scalar product is commutative.",
+   "a": "(A)",
+   "s": "A is the statement of R.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $(\\hat i\\times\\hat j)\\cdot\\hat k=0$. Reason: $\\hat i\\times\\hat j=\\hat k$.",
+   "a": "(D)",
+   "s": "$\\hat k\\cdot\\hat k=1$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch10-board-01": [
+  {
+   "q": "$|\\hat i+2\\hat j+2\\hat k|$ equals",
+   "a": "(A) $3$",
+   "s": "$\\sqrt{1+4+4}$. [1]",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$\\sqrt5$",
+    "$9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The unit vector in the direction of $-2\\hat i+\\hat j+2\\hat k$ is",
+   "a": "(B) $\\frac13(-2\\hat i+\\hat j+2\\hat k)$",
+   "s": "Divide by $3$. [1]",
+   "opts": [
+    "$\\frac13(2\\hat i-\\hat j-2\\hat k)$",
+    "$\\frac13(-2\\hat i+\\hat j+2\\hat k)$",
+    "$-2\\hat i+\\hat j+2\\hat k$",
+    "$\\frac19(-2\\hat i+\\hat j+2\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction ratios of $\\overrightarrow{AB}$ for $A(1,2,3)$ and $B(4,5,6)$ are",
+   "a": "(A) $3,3,3$",
+   "s": "$\\vec b-\\vec a$. [1]",
+   "opts": [
+    "$3,3,3$",
+    "$5,7,9$",
+    "$1,2,3$",
+    "$4,5,6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$ and $\\vec b=2\\hat i-\\hat j+3\\hat k$. Then $\\vec a\\cdot\\vec b$ equals",
+   "a": "(D) $4$",
+   "s": "$2-1+3$. [1]",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$6$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=\\sqrt3$, $|\\vec b|=2$ and $\\vec a\\cdot\\vec b=\\sqrt6$. The angle between them is",
+   "a": "(B) $\\frac\\pi4$",
+   "s": "$\\cos\\theta=\\frac{\\sqrt6}{2\\sqrt3}=\\frac1{\\sqrt2}$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The projection of $2\\hat i-\\hat j+\\hat k$ on $\\hat i+2\\hat j+2\\hat k$ is",
+   "a": "(D) $\\frac23$",
+   "s": "$\\frac{2-2+2}3$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac2{\\sqrt6}$",
+    "$2$",
+    "$\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat j\\times\\hat k$ equals",
+   "a": "(D) $\\hat i$",
+   "s": "Cyclic order. [1]",
+   "opts": [
+    "$\\vec 0$",
+    "$-\\hat i$",
+    "$\\hat j$",
+    "$\\hat i$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a$ is perpendicular to $\\vec b$. Then $\\vec a\\cdot\\vec b$ equals",
+   "a": "(A) $0$",
+   "s": "$\\cos\\frac\\pi2=0$. [1]",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$-1$",
+    "$|\\vec a||\\vec b|$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The point dividing the join of $\\vec a$ and $\\vec b$ internally in the ratio $3:2$ is",
+   "a": "(D) $\\frac{3\\vec b+2\\vec a}5$",
+   "s": "$\\frac{m\\vec b+n\\vec a}{m+n}$. [1]",
+   "opts": [
+    "$3\\vec b-2\\vec a$",
+    "$\\frac{\\vec a+\\vec b}2$",
+    "$\\frac{3\\vec a+2\\vec b}5$",
+    "$\\frac{3\\vec b+2\\vec a}5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with adjacent sides $\\hat i$ and $\\hat j+\\hat k$ is",
+   "a": "(D) $\\frac{\\sqrt2}2$",
+   "s": "$\\frac12|\\hat k-\\hat j|$. [1]",
+   "opts": [
+    "$1$",
+    "$\\sqrt2$",
+    "$\\frac12$",
+    "$\\frac{\\sqrt2}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=3$ and $\\lambda\\vec a$ is a unit vector. Then $\\lambda$ equals",
+   "a": "(B) $\\pm\\frac13$",
+   "s": "$|\\lambda|\\cdot3=1$. [1]",
+   "opts": [
+    "$\\pm1$",
+    "$\\pm\\frac13$",
+    "$\\pm3$",
+    "$\\frac19$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The scalar components of $5\\hat i-3\\hat j+2\\hat k$ are",
+   "a": "(B) $5,-3,2$",
+   "s": "The coefficients of the unit vectors. [1]",
+   "opts": [
+    "$-5,3,-2$",
+    "$5,-3,2$",
+    "$\\sqrt{38}$",
+    "$5\\hat i,-3\\hat j,2\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors at angle $\\frac\\pi3$. Then $\\hat a\\cdot\\hat b$ equals",
+   "a": "(B) $\\frac12$",
+   "s": "$\\cos\\frac\\pi3$. [1]",
+   "opts": [
+    "$0$",
+    "$\\frac12$",
+    "$1$",
+    "$\\frac{\\sqrt3}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\cdot\\vec b=4$. Then $(2\\vec a)\\cdot(3\\vec b)$ equals",
+   "a": "(B) $24$",
+   "s": "$6\\cdot4$. [1]",
+   "opts": [
+    "$12$",
+    "$24$",
+    "$4$",
+    "$10$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\hat i\\cdot\\hat i=1$. Reason: $\\hat i$ is a unit vector.",
+   "a": "(A)",
+   "s": "$\\hat i\\cdot\\hat i=|\\hat i|^2$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $|\\vec a\\times\\vec b|=|\\vec a||\\vec b|\\sin\\theta$. Reason: $\\vec a\\times\\vec b$ is perpendicular to both $\\vec a$ and $\\vec b$.",
+   "a": "(B)",
+   "s": "Both are true; R is about the direction, A about the size. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the unit vector in the direction of the sum of $\\vec a=2\\hat i+2\\hat j-5\\hat k$ and $\\vec b=2\\hat i+\\hat j+3\\hat k$.",
+   "a": "$\\frac1{\\sqrt{29}}(4\\hat i+3\\hat j-2\\hat k)$",
+   "s": "$\\vec a+\\vec b=4\\hat i+3\\hat j-2\\hat k$ [1]. Its magnitude is $\\sqrt{29}$, so the unit vector is $\\frac1{\\sqrt{29}}(4\\hat i+3\\hat j-2\\hat k)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the vector of magnitude $8$ in the direction of $5\\hat i-\\hat j+2\\hat k$.",
+    "a": "$\\frac8{\\sqrt{30}}(5\\hat i-\\hat j+2\\hat k)$",
+    "s": "The magnitude is $\\sqrt{30}$ [1]. Multiply the unit vector by $8$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the angle between $\\vec a=\\hat i+\\hat j-\\hat k$ and $\\vec b=\\hat i-\\hat j+\\hat k$.",
+   "a": "$\\cos^{-1}\\left(-\\frac13\\right)$",
+   "s": "$\\vec a\\cdot\\vec b=1-1-1=-1$ and $|\\vec a|=|\\vec b|=\\sqrt3$ [1]. $\\cos\\theta=-\\frac13$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $2\\hat i-\\hat j+\\hat k$, $\\hat i-3\\hat j-5\\hat k$ and $3\\hat i-4\\hat j-4\\hat k$ form the sides of a right triangle.",
+   "a": "Shown.",
+   "s": "The first two add to the third, so the vectors form a triangle [1]. $(2\\hat i-\\hat j+\\hat k)\\cdot(\\hat i-3\\hat j-5\\hat k)=2+3-5=0$, so the angle between them is a right angle [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=5\\hat i-\\hat j-3\\hat k$ and $\\vec b=\\hat i+3\\hat j-5\\hat k$. Show that $\\vec a+\\vec b$ and $\\vec a-\\vec b$ are perpendicular.",
+   "a": "Shown.",
+   "s": "$\\vec a+\\vec b=6\\hat i+2\\hat j-8\\hat k$ [1]. $\\vec a-\\vec b=4\\hat i-4\\hat j+2\\hat k$ [1]. The scalar product is $24-8-16=0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the triangle with vertices $A(1,1,2)$, $B(2,3,5)$ and $C(1,5,5)$.",
+   "a": "$\\frac{\\sqrt{61}}2$",
+   "s": "$\\overrightarrow{AB}=\\hat i+2\\hat j+3\\hat k$ and $\\overrightarrow{AC}=4\\hat j+3\\hat k$ [1]. $\\overrightarrow{AB}\\times\\overrightarrow{AC}=-6\\hat i-3\\hat j+4\\hat k$ [1]. Area $=\\frac12\\sqrt{36+9+16}=\\frac{\\sqrt{61}}2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$ and $\\vec b=\\hat i+2\\hat j+3\\hat k$. Find a unit vector perpendicular to both $\\vec a+\\vec b$ and $\\vec a-\\vec b$.",
+   "a": "$\\pm\\frac1{\\sqrt6}(-\\hat i+2\\hat j-\\hat k)$",
+   "s": "$\\vec a+\\vec b=2\\hat i+3\\hat j+4\\hat k$ and $\\vec a-\\vec b=-\\hat j-2\\hat k$ [1]. Their cross product is $-2\\hat i+4\\hat j-2\\hat k$ [1]. Divide by $2\\sqrt6$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=\\hat i+4\\hat j+2\\hat k$, $\\vec b=3\\hat i-2\\hat j+7\\hat k$ and $\\vec c=2\\hat i-\\hat j+4\\hat k$. Find a vector $\\vec d$ perpendicular to both $\\vec a$ and $\\vec b$ with $\\vec c\\cdot\\vec d=15$.",
+   "a": "$\\frac53(32\\hat i-\\hat j-14\\hat k)$",
+   "s": "$\\vec d=\\lambda(\\vec a\\times\\vec b)$ [1]. $\\vec a\\times\\vec b=32\\hat i-\\hat j-14\\hat k$ [2]. $\\vec c\\cdot(\\vec a\\times\\vec b)=64+1-56=9$, so $9\\lambda=15$ [1]. $\\lambda=\\frac53$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Show that the points $A(-2\\hat i+3\\hat j+5\\hat k)$, $B(\\hat i+2\\hat j+3\\hat k)$ and $C(7\\hat i-\\hat k)$ are collinear.",
+    "a": "Shown.",
+    "s": "$\\overrightarrow{AB}=3\\hat i-\\hat j-2\\hat k$ [2]. $\\overrightarrow{BC}=6\\hat i-2\\hat j-4\\hat k$ [2]. $\\overrightarrow{BC}=2\\overrightarrow{AB}$ and $B$ is common, so the points are collinear [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A drone flies in a straight line from $A(1,2,3)$ to $B(4,6,3)$ (in km). (i) Write $\\overrightarrow{AB}$. [1] (ii) Find the distance $AB$. [1] (iii) Find the direction cosines of $\\overrightarrow{AB}$. [2] \\textbf{OR} (iii) A wind force $\\vec F=2\\hat i+\\hat j+\\hat k$ acts along the flight. Find the work done by $\\vec F$. [2]",
+   "a": "(i) $3\\hat i+4\\hat j$; (ii) $5$ km; (iii) $\\frac35,\\frac45,0$; OR $10$.",
+   "s": "(i) $\\vec b-\\vec a=3\\hat i+4\\hat j$ [1]. (ii) $\\sqrt{9+16}=5$ [1]. (iii) Divide by $5$ [1]: $\\frac35,\\frac45,0$ [1]. OR $\\vec F\\cdot\\overrightarrow{AB}$ [1] $=6+4+0=10$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch10-board-02": [
+  {
+   "q": "$|\\hat i-\\hat j+\\hat k|$ equals",
+   "a": "(C) $\\sqrt3$",
+   "s": "$\\sqrt{1+1+1}$. [1]",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$\\sqrt3$",
+    "$\\sqrt2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The unit vector in the direction of $\\hat i-\\hat j$ is",
+   "a": "(C) $\\frac1{\\sqrt2}(\\hat i-\\hat j)$",
+   "s": "Divide by $\\sqrt2$. [1]",
+   "opts": [
+    "$\\hat i-\\hat j$",
+    "$\\frac12(\\hat i-\\hat j)$",
+    "$\\frac1{\\sqrt2}(\\hat i-\\hat j)$",
+    "$\\frac1{\\sqrt2}(\\hat i+\\hat j)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The direction cosines of the $y$-axis are",
+   "a": "(A) $0,1,0$",
+   "s": "The axis is along $\\hat j$. [1]",
+   "opts": [
+    "$0,1,0$",
+    "$1,0,0$",
+    "$1,1,1$",
+    "$0,0,1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=3\\hat i-\\hat j+2\\hat k$ and $\\vec b=2\\hat i+\\hat j-\\hat k$. Then $\\vec a\\cdot\\vec b$ equals",
+   "a": "(D) $3$",
+   "s": "$6-1-2$. [1]",
+   "opts": [
+    "$1$",
+    "$7$",
+    "$5$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between $2\\hat i$ and $-3\\hat i$ is",
+   "a": "(D) $\\pi$",
+   "s": "Opposite directions. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$0$",
+    "$\\frac\\pi3$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The projection of $\\hat i+3\\hat j+7\\hat k$ on $7\\hat i-\\hat j+8\\hat k$ is",
+   "a": "(A) $\\frac{60}{\\sqrt{114}}$",
+   "s": "$\\frac{7-3+56}{\\sqrt{49+1+64}}$. [1]",
+   "opts": [
+    "$\\frac{60}{\\sqrt{114}}$",
+    "$\\frac{60}{\\sqrt{59}}$",
+    "$\\frac{52}{\\sqrt{114}}$",
+    "$60$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat i\\times(\\hat j+\\hat k)$ equals",
+   "a": "(A) $\\hat k-\\hat j$",
+   "s": "$\\hat i\\times\\hat j+\\hat i\\times\\hat k$. [1]",
+   "opts": [
+    "$\\hat k-\\hat j$",
+    "$\\vec 0$",
+    "$\\hat j-\\hat k$",
+    "$\\hat j+\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\perp\\vec b$, $|\\vec a|=3$ and $|\\vec b|=4$. Then $|\\vec a-\\vec b|$ equals",
+   "a": "(B) $5$",
+   "s": "$9+16$. [1]",
+   "opts": [
+    "$1$",
+    "$5$",
+    "$\\sqrt7$",
+    "$7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\hat i+2\\hat j+\\lambda\\hat k|=3$. Then $\\lambda$ equals",
+   "a": "(A) $\\pm2$",
+   "s": "$1+4+\\lambda^2=9$. [1]",
+   "opts": [
+    "$\\pm2$",
+    "$\\pm\\sqrt3$",
+    "$2$ only",
+    "$\\pm4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the parallelogram with diagonals $3\\hat i+\\hat j-2\\hat k$ and $\\hat i-3\\hat j+4\\hat k$ is",
+   "a": "(A) $5\\sqrt3$",
+   "s": "$\\frac12|\\vec d_1\\times\\vec d_2|=\\frac12|-2\\hat i-14\\hat j-10\\hat k|$. [1]",
+   "opts": [
+    "$5\\sqrt3$",
+    "$\\sqrt{300}$",
+    "$10\\sqrt3$",
+    "$\\frac{5\\sqrt3}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a\\times\\vec b|=|\\vec a||\\vec b|$ for non-zero vectors. The angle between them is",
+   "a": "(C) $\\frac\\pi2$",
+   "s": "$\\sin\\theta=1$. [1]",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector from $(2,-1,3)$ to $(3,2,-1)$ is",
+   "a": "(B) $\\hat i+3\\hat j-4\\hat k$",
+   "s": "Subtract the coordinates. [1]",
+   "opts": [
+    "$\\hat i+\\hat j-4\\hat k$",
+    "$\\hat i+3\\hat j-4\\hat k$",
+    "$5\\hat i+\\hat j+2\\hat k$",
+    "$-\\hat i-3\\hat j+4\\hat k$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=3$ and $\\vec a\\cdot\\vec b=3$. Then $|\\vec a\\times\\vec b|$ equals",
+   "a": "(B) $3\\sqrt3$",
+   "s": "$\\sqrt{36-9}$. [1]",
+   "opts": [
+    "$6$",
+    "$3\\sqrt3$",
+    "$\\sqrt{27}+3$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The position vector of the centroid of the triangle with vertices $\\vec a$, $\\vec b$, $\\vec c$ is",
+   "a": "(B) $\\frac{\\vec a+\\vec b+\\vec c}3$",
+   "s": "Average of the vertices. [1]",
+   "opts": [
+    "$\\frac{\\vec a+\\vec b+\\vec c}2$",
+    "$\\frac{\\vec a+\\vec b+\\vec c}3$",
+    "$\\vec a+\\vec b+\\vec c$",
+    "$\\frac{\\vec a+\\vec b}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\hat i\\times\\hat j=\\hat k$ and $\\hat j\\times\\hat i=-\\hat k$. Reason: The vector product is anticommutative.",
+   "a": "(A)",
+   "s": "R gives the sign change. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\vec a\\cdot\\vec a=|\\vec a|^2$. Reason: $\\vec a\\cdot\\vec a=0$ for every vector $\\vec a$.",
+   "a": "(C)",
+   "s": "R is false: $\\hat i\\cdot\\hat i=1$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the direction cosines of the vector from $A(1,2,-3)$ to $B(-1,-2,1)$.",
+   "a": "$-\\frac13,-\\frac23,\\frac23$",
+   "s": "$\\overrightarrow{AB}=-2\\hat i-4\\hat j+4\\hat k$ with magnitude $6$ [1]. Direction cosines $-\\frac13,-\\frac23,\\frac23$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find $\\lambda$ if $2\\hat i+6\\hat j+14\\hat k$ and $\\hat i-\\lambda\\hat j+7\\hat k$ are parallel.",
+    "a": "$\\lambda=-3$",
+    "s": "The first is twice the second [1]: $6=-2\\lambda$, so $\\lambda=-3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat a$ is a unit vector and $(\\vec x-\\hat a)\\cdot(\\vec x+\\hat a)=12$. Find $|\\vec x|$.",
+   "a": "$\\sqrt{13}$",
+   "s": "$|\\vec x|^2-|\\hat a|^2=12$ [1]. $|\\vec x|^2=13$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=3$ and $\\vec a\\cdot\\vec b=4$. Find $|\\vec a-\\vec b|$.",
+   "a": "$\\sqrt5$",
+   "s": "$|\\vec a-\\vec b|^2=|\\vec a|^2+|\\vec b|^2-2\\vec a\\cdot\\vec b$ [1] $=4+9-8=5$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $|\\vec a|\\vec b+|\\vec b|\\vec a$ is perpendicular to $|\\vec a|\\vec b-|\\vec b|\\vec a$, for non-zero $\\vec a$ and $\\vec b$.",
+   "a": "Shown.",
+   "s": "The scalar product is $|\\vec a|^2|\\vec b|^2-|\\vec b|^2|\\vec a|^2$ [2], because the middle terms cancel. It is $0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the triangle with vertices $A(1,2,3)$, $B(2,-1,4)$ and $C(4,5,-1)$.",
+   "a": "$\\frac{\\sqrt{274}}2$",
+   "s": "$\\overrightarrow{AB}=\\hat i-3\\hat j+\\hat k$ and $\\overrightarrow{AC}=3\\hat i+3\\hat j-4\\hat k$ [1]. Their cross product is $9\\hat i+7\\hat j+12\\hat k$ [1]. Area $=\\frac12\\sqrt{81+49+144}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are unit vectors with $\\vec a+\\vec b+\\vec c=\\vec 0$. Find $\\vec a\\cdot\\vec b+\\vec b\\cdot\\vec c+\\vec c\\cdot\\vec a$.",
+   "a": "$-\\frac32$",
+   "s": "$|\\vec a+\\vec b+\\vec c|^2=0$ [1]. $3+2(\\vec a\\cdot\\vec b+\\vec b\\cdot\\vec c+\\vec c\\cdot\\vec a)=0$ [1]. The sum is $-\\frac32$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$ and $\\vec b=\\hat j-\\hat k$. Find $\\vec c$ such that $\\vec a\\times\\vec c=\\vec b$ and $\\vec a\\cdot\\vec c=3$.",
+   "a": "$\\frac53\\hat i+\\frac23\\hat j+\\frac23\\hat k$",
+   "s": "Let $\\vec c=x\\hat i+y\\hat j+z\\hat k$ [1]. $\\vec a\\times\\vec c=(z-y)\\hat i+(x-z)\\hat j+(y-x)\\hat k=\\hat j-\\hat k$ gives $z=y$ and $x=y+1$ [2]. $x+y+z=3$ gives $y=\\frac23$ [1]. $\\vec c=\\frac53\\hat i+\\frac23\\hat j+\\frac23\\hat k$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find a vector of magnitude $6$ perpendicular to both $2\\hat i+\\hat j-\\hat k$ and $\\hat i-\\hat j+2\\hat k$.",
+    "a": "$\\pm\\frac6{\\sqrt{35}}(\\hat i-5\\hat j-3\\hat k)$",
+    "s": "The cross product is $\\hat i-5\\hat j-3\\hat k$ [2]. Its magnitude is $\\sqrt{35}$ [1]. The required vectors are $\\pm\\frac6{\\sqrt{35}}(\\hat i-5\\hat j-3\\hat k)$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Three tents stand at $P(1,-2,3)$, $Q(3,1,2)$ and $R(2,0,4)$. (i) Write $\\overrightarrow{PQ}$ and $\\overrightarrow{PR}$. [1] (ii) Find $|\\overrightarrow{PQ}|$. [1] (iii) Find the area of the triangle $PQR$. [2] \\textbf{OR} (iii) Find the cosine of the angle $QPR$. [2]",
+   "a": "(i) $2\\hat i+3\\hat j-\\hat k$, $\\hat i+2\\hat j+\\hat k$; (ii) $\\sqrt{14}$; (iii) $\\frac{\\sqrt{35}}2$; OR $\\frac{\\sqrt{21}}6$.",
+   "s": "(i) $\\overrightarrow{PQ}=2\\hat i+3\\hat j-\\hat k$, $\\overrightarrow{PR}=\\hat i+2\\hat j+\\hat k$ [1]. (ii) $\\sqrt{4+9+1}$ [1]. (iii) The cross product is $5\\hat i-3\\hat j+\\hat k$ [1]; area $\\frac{\\sqrt{35}}2$ [1]. OR The scalar product is $2+6-1=7$ [1]; $\\cos\\theta=\\frac7{\\sqrt{14}\\sqrt6}=\\frac{\\sqrt{21}}6$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch10-board-03": [
+  {
+   "q": "$|6\\hat i+2\\hat j-3\\hat k|$ equals",
+   "a": "(D) $7$",
+   "s": "$\\sqrt{36+4+9}$. [1]",
+   "opts": [
+    "$49$",
+    "$11$",
+    "$5$",
+    "$7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The unit vector in the direction of $\\hat j+\\hat k$ is",
+   "a": "(A) $\\frac1{\\sqrt2}(\\hat j+\\hat k)$",
+   "s": "Divide by $\\sqrt2$. [1]",
+   "opts": [
+    "$\\frac1{\\sqrt2}(\\hat j+\\hat k)$",
+    "$\\hat j+\\hat k$",
+    "$\\frac1{\\sqrt2}\\hat j$",
+    "$\\frac12(\\hat j+\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The cosine of the angle that $\\hat i+\\hat j+\\hat k$ makes with each axis is",
+   "a": "(C) $\\frac1{\\sqrt3}$",
+   "s": "Divide by $\\sqrt3$. [1]",
+   "opts": [
+    "$1$",
+    "$\\frac13$",
+    "$\\frac1{\\sqrt3}$",
+    "$\\frac1{\\sqrt2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$(\\hat i-\\hat j)\\cdot(\\hat j-\\hat k)$ equals",
+   "a": "(A) $-1$",
+   "s": "$0-1+0$. [1]",
+   "opts": [
+    "$-1$",
+    "$-2$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The angle between $\\hat i-\\hat j$ and $\\hat j-\\hat k$ is",
+   "a": "(B) $\\frac{2\\pi}3$",
+   "s": "$\\cos\\theta=\\frac{-1}{\\sqrt2\\sqrt2}$. [1]",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\frac{2\\pi}3$",
+    "$\\frac\\pi3$",
+    "$\\frac{3\\pi}4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The projection of $\\hat i$ on $\\hat i+\\hat j$ is",
+   "a": "(C) $\\frac1{\\sqrt2}$",
+   "s": "$\\frac{1}{\\sqrt2}$. [1]",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$\\frac1{\\sqrt2}$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat k\\times\\hat i$ equals",
+   "a": "(B) $\\hat j$",
+   "s": "Cyclic order. [1]",
+   "opts": [
+    "$-\\hat j$",
+    "$\\hat j$",
+    "$\\vec 0$",
+    "$\\hat i$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\cdot\\vec b=0$ and $\\vec a\\times\\vec b=\\vec 0$. Then",
+   "a": "(D) $\\vec a=\\vec 0$ or $\\vec b=\\vec 0$",
+   "s": "Non-zero vectors cannot be both perpendicular and parallel. [1]",
+   "opts": [
+    "$\\vec a\\perp\\vec b$ with both non-zero",
+    "$|\\vec a|=|\\vec b|$",
+    "$\\vec a\\parallel\\vec b$ with both non-zero",
+    "$\\vec a=\\vec 0$ or $\\vec b=\\vec 0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The vector of magnitude $7$ in the direction of $\\hat i-2\\hat j+2\\hat k$ is",
+   "a": "(A) $\\frac73(\\hat i-2\\hat j+2\\hat k)$",
+   "s": "The magnitude of the given vector is $3$. [1]",
+   "opts": [
+    "$\\frac73(\\hat i-2\\hat j+2\\hat k)$",
+    "$7(\\hat i-2\\hat j+2\\hat k)$",
+    "$\\frac37(\\hat i-2\\hat j+2\\hat k)$",
+    "$\\frac79(\\hat i-2\\hat j+2\\hat k)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the parallelogram with adjacent sides $\\hat i-\\hat j+3\\hat k$ and $2\\hat i-7\\hat j+\\hat k$ is",
+   "a": "(A) $15\\sqrt2$",
+   "s": "The cross product is $20\\hat i+5\\hat j-5\\hat k$. [1]",
+   "opts": [
+    "$15\\sqrt2$",
+    "$15$",
+    "$5\\sqrt{2}$",
+    "$\\sqrt{450}+1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=10$, $|\\vec b|=2$ and $\\vec a\\cdot\\vec b=12$. Then $|\\vec a\\times\\vec b|$ equals",
+   "a": "(B) $16$",
+   "s": "$\\sqrt{400-144}$. [1]",
+   "opts": [
+    "$12$",
+    "$16$",
+    "$8$",
+    "$20$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The point dividing the join of $\\vec a$ and $\\vec b$ internally in the ratio $1:1$ is",
+   "a": "(A) $\\frac{\\vec a+\\vec b}2$",
+   "s": "The midpoint. [1]",
+   "opts": [
+    "$\\frac{\\vec a+\\vec b}2$",
+    "$\\vec b-\\vec a$",
+    "$\\vec a+\\vec b$",
+    "$\\frac{\\vec a-\\vec b}2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$2\\hat i+3\\hat j-\\hat k$ and $-4\\hat i-6\\hat j+\\lambda\\hat k$ are parallel. Then $\\lambda$ equals",
+   "a": "(B) $2$",
+   "s": "The second is $-2$ times the first. [1]",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$1$",
+    "$-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors with $\\hat a\\cdot\\hat b=0$. Then $|\\hat a+\\hat b|$ equals",
+   "a": "(C) $\\sqrt2$",
+   "s": "$1+1+0$. [1]",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$\\sqrt2$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\hat i+\\hat j+\\hat k$ and $\\hat i-\\hat j$ are perpendicular. Reason: Their scalar product is $0$.",
+   "a": "(A)",
+   "s": "$1-1+0=0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The area of the triangle with adjacent sides $\\vec a$ and $\\vec b$ is $|\\vec a\\times\\vec b|$. Reason: $|\\vec a\\times\\vec b|$ is the area of the parallelogram with adjacent sides $\\vec a$ and $\\vec b$.",
+   "a": "(D)",
+   "s": "The triangle has half that area. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find a vector of magnitude $5$ parallel to the sum of $\\vec a=2\\hat i+3\\hat j-\\hat k$ and $\\vec b=\\hat i-2\\hat j+\\hat k$.",
+   "a": "$\\frac5{\\sqrt{10}}(3\\hat i+\\hat j)$",
+   "s": "$\\vec a+\\vec b=3\\hat i+\\hat j$ with magnitude $\\sqrt{10}$ [1]. The vector is $\\frac5{\\sqrt{10}}(3\\hat i+\\hat j)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=3$, $|\\vec b|=\\frac23$ and $\\vec a\\times\\vec b$ is a unit vector. Find the angle between $\\vec a$ and $\\vec b$.",
+   "a": "$\\frac\\pi6$",
+   "s": "$|\\vec a||\\vec b|\\sin\\theta=1$ [1]. $2\\sin\\theta=1$, so $\\theta=\\frac\\pi6$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$(\\vec a+\\vec b)\\cdot(\\vec a-\\vec b)=8$ and $|\\vec a|=8|\\vec b|$. Find $|\\vec b|$.",
+   "a": "$\\frac{2\\sqrt2}{3\\sqrt7}$",
+   "s": "$64|\\vec b|^2-|\\vec b|^2=8$ [1]. $|\\vec b|^2=\\frac8{63}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Using vectors, show that $A(2,-1,3)$, $B(4,3,1)$ and $C(3,1,2)$ are collinear.",
+   "a": "Shown.",
+   "s": "$\\overrightarrow{AB}=2\\hat i+4\\hat j-2\\hat k$ [1]. $\\overrightarrow{AC}=\\hat i+2\\hat j-\\hat k$ [1]. $\\overrightarrow{AB}=2\\overrightarrow{AC}$ with $A$ common [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the parallelogram whose diagonals are $2\\hat i-\\hat j+\\hat k$ and $3\\hat i+4\\hat j-\\hat k$.",
+   "a": "$\\frac{\\sqrt{155}}2$",
+   "s": "Area $=\\frac12|\\vec d_1\\times\\vec d_2|$ [1]. $\\vec d_1\\times\\vec d_2=-3\\hat i+5\\hat j+11\\hat k$ [1]. Area $=\\frac12\\sqrt{9+25+121}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$\\vec a\\times\\vec b=\\vec c\\times\\vec d$ and $\\vec a\\times\\vec c=\\vec b\\times\\vec d$. Show that $\\vec a-\\vec d$ is parallel to $\\vec b-\\vec c$, when they are non-zero.",
+   "a": "Shown.",
+   "s": "$(\\vec a-\\vec d)\\times(\\vec b-\\vec c)=\\vec a\\times\\vec b-\\vec a\\times\\vec c-\\vec d\\times\\vec b+\\vec d\\times\\vec c$ [1]. Substitute: $\\vec c\\times\\vec d-\\vec b\\times\\vec d+\\vec b\\times\\vec d-\\vec c\\times\\vec d=\\vec 0$ [1]. A zero cross product means parallel [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find a unit vector perpendicular to the plane of the triangle $A(3,-1,2)$, $B(1,-1,-3)$, $C(4,-3,1)$, and find the area of the triangle.",
+   "a": "$\\pm\\frac1{\\sqrt{165}}(-10\\hat i-7\\hat j+4\\hat k)$; area $\\frac{\\sqrt{165}}2$",
+   "s": "$\\overrightarrow{AB}=-2\\hat i-5\\hat k$ and $\\overrightarrow{AC}=\\hat i-2\\hat j-\\hat k$ [1]. Cross product $-10\\hat i-7\\hat j+4\\hat k$ [2]. Magnitude $\\sqrt{165}$, so the unit vectors are $\\pm\\frac1{\\sqrt{165}}(-10\\hat i-7\\hat j+4\\hat k)$ [1]. Area $\\frac{\\sqrt{165}}2$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$|\\vec a|=3$, $|\\vec b|=4$, $|\\vec c|=5$, and each vector is perpendicular to the sum of the other two. Find $|\\vec a+\\vec b+\\vec c|$.",
+    "a": "$5\\sqrt2$",
+    "s": "$\\vec a\\cdot(\\vec b+\\vec c)=0$, $\\vec b\\cdot(\\vec c+\\vec a)=0$, $\\vec c\\cdot(\\vec a+\\vec b)=0$ [2]. Adding: $2(\\vec a\\cdot\\vec b+\\vec b\\cdot\\vec c+\\vec c\\cdot\\vec a)=0$ [1]. $|\\vec a+\\vec b+\\vec c|^2=9+16+25=50$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A force $\\vec F=2\\hat i+\\hat j+3\\hat k$ moves a box from $P(1,0,2)$ to $Q(4,2,1)$. (i) Write the displacement $\\vec d=\\overrightarrow{PQ}$. [1] (ii) Find the work done. [1] (iii) Find the projection of $\\vec F$ on $\\vec d$. [2] \\textbf{OR} (iii) Find a unit vector perpendicular to both $\\vec F$ and $\\vec d$. [2]",
+   "a": "(i) $3\\hat i+2\\hat j-\\hat k$; (ii) $5$; (iii) $\\frac5{\\sqrt{14}}$; OR $\\pm\\frac1{3\\sqrt{19}}(-7\\hat i+11\\hat j+\\hat k)$.",
+   "s": "(i) $3\\hat i+2\\hat j-\\hat k$ [1]. (ii) $6+2-3=5$ [1]. (iii) $\\frac{\\vec F\\cdot\\vec d}{|\\vec d|}$ [1] $=\\frac5{\\sqrt{14}}$ [1]. OR $\\vec F\\times\\vec d=-7\\hat i+11\\hat j+\\hat k$ [1]; divide by $\\sqrt{171}=3\\sqrt{19}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch10-main-01": [
+  {
+   "q": "$\\left[\\hat i\\ \\hat j\\ \\hat k\\right]$ equals",
+   "a": "(A) $1$",
+   "s": "$\\hat i\\cdot(\\hat j\\times\\hat k)=\\hat i\\cdot\\hat i$.",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$-1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a\\times(\\vec b\\times\\vec c)$ equals",
+   "a": "(D) $(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$",
+   "s": "Vector triple product expansion.",
+   "opts": [
+    "$(\\vec a\\times\\vec b)\\times\\vec c$",
+    "$(\\vec b\\cdot\\vec c)\\vec a$",
+    "$(\\vec a\\cdot\\vec b)\\vec c-(\\vec a\\cdot\\vec c)\\vec b$",
+    "$(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The volume of the parallelepiped with edges $\\hat i+\\hat j$, $\\hat j+\\hat k$ and $\\hat i+\\hat k$ is",
+   "a": "(B) $2$",
+   "s": "The determinant of the components is $1(1)-1(-1)+0=2$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$3$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat i+\\hat j+\\hat k$, $\\hat i+2\\hat j+3\\hat k$ and $\\hat i+\\lambda\\hat j+5\\hat k$ are coplanar. Then $\\lambda$ equals",
+   "a": "(C) $3$",
+   "s": "The determinant is $6-2\\lambda=0$.",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$3$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left[\\vec a+\\vec b\\ \\vec b+\\vec c\\ \\vec c+\\vec a\\right]$ equals",
+   "a": "(A) $2\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$",
+   "s": "Expand; only two non-zero terms remain and they are equal.",
+   "opts": [
+    "$2\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$",
+    "$3\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are mutually perpendicular unit vectors. Then $|\\vec a+\\vec b+\\vec c|$ equals",
+   "a": "(C) $\\sqrt3$",
+   "s": "$1+1+1+0$.",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$\\sqrt3$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a+\\vec b+\\vec c=\\vec 0$. Then",
+   "a": "(C) $\\vec a\\times\\vec b=\\vec b\\times\\vec c=\\vec c\\times\\vec a$",
+   "s": "Cross the equation with $\\vec a$ and with $\\vec b$.",
+   "opts": [
+    "$\\vec a\\times\\vec b=-\\vec b\\times\\vec c$",
+    "$\\vec a\\times\\vec b=\\vec 0$",
+    "$\\vec a\\times\\vec b=\\vec b\\times\\vec c=\\vec c\\times\\vec a$",
+    "$\\vec a\\cdot\\vec b=\\vec b\\cdot\\vec c$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a|=|\\vec b|=|\\vec a-\\vec b|=1$. The angle between $\\vec a$ and $\\vec b$ is",
+   "a": "(A) $\\frac\\pi3$",
+   "s": "$1=1+1-2\\cos\\theta$.",
+   "opts": [
+    "$\\frac\\pi3$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi6$",
+    "$\\frac{2\\pi}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat i\\times(\\hat i\\times\\hat j)$ equals",
+   "a": "(C) $-\\hat j$",
+   "s": "$(\\hat i\\cdot\\hat j)\\hat i-(\\hat i\\cdot\\hat i)\\hat j$.",
+   "opts": [
+    "$\\hat k$",
+    "$\\vec 0$",
+    "$-\\hat j$",
+    "$\\hat j$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a\\times\\vec b=\\vec a\\times\\vec c$ with $\\vec a\\ne\\vec 0$. Then",
+   "a": "(A) $\\vec b-\\vec c$ is parallel to $\\vec a$",
+   "s": "$\\vec a\\times(\\vec b-\\vec c)=\\vec 0$.",
+   "opts": [
+    "$\\vec b-\\vec c$ is parallel to $\\vec a$",
+    "$\\vec b=\\vec c$",
+    "$\\vec b-\\vec c$ is perpendicular to $\\vec a$",
+    "$\\vec a\\cdot\\vec b=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The vector component of $\\vec b$ along $\\vec a$ is",
+   "a": "(B) $\\frac{\\vec a\\cdot\\vec b}{|\\vec a|^2}\\vec a$",
+   "s": "Projection times the unit vector of $\\vec a$.",
+   "opts": [
+    "$\\frac{\\vec a\\cdot\\vec b}{|\\vec a|}\\vec a$",
+    "$\\frac{\\vec a\\cdot\\vec b}{|\\vec a|^2}\\vec a$",
+    "$\\frac{\\vec a\\cdot\\vec b}{|\\vec b|^2}\\vec b$",
+    "$(\\vec a\\cdot\\vec b)\\vec a$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=2\\hat i+\\lambda_1\\hat j+3\\hat k$, $\\vec b=4\\hat i+(3-\\lambda_2)\\hat j+6\\hat k$ and $\\vec c=3\\hat i+6\\hat j+(\\lambda_3-1)\\hat k$, with $\\vec b=2\\vec a$ and $\\vec a\\perp\\vec c$. A possible $(\\lambda_1,\\lambda_2,\\lambda_3)$ is",
+   "a": "(A) $\\left(\\frac12,2,-2\\right)$",
+   "s": "$3-\\lambda_2=2\\lambda_1$ and $6+6\\lambda_1+3(\\lambda_3-1)=0$.",
+   "opts": [
+    "$\\left(\\frac12,2,-2\\right)$",
+    "$\\left(-\\frac12,4,0\\right)$",
+    "$\\left(1,3,1\\right)$",
+    "$\\left(1,5,1\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The unit vectors perpendicular to both $\\hat i+\\hat j$ and $\\hat j+\\hat k$ are",
+   "a": "(C) $\\pm\\frac1{\\sqrt3}(\\hat i-\\hat j+\\hat k)$",
+   "s": "Normalise the cross product.",
+   "opts": [
+    "$\\pm\\frac1{\\sqrt2}(\\hat i-\\hat k)$",
+    "$\\pm(\\hat i-\\hat j+\\hat k)$",
+    "$\\pm\\frac1{\\sqrt3}(\\hat i-\\hat j+\\hat k)$",
+    "$\\pm\\frac1{\\sqrt3}(\\hat i+\\hat j+\\hat k)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=5$ and $|\\vec a\\times\\vec b|=8$. Then $\\vec a\\cdot\\vec b$ equals",
+   "a": "(C) $\\pm6$",
+   "s": "$(\\vec a\\cdot\\vec b)^2=100-64$.",
+   "opts": [
+    "$\\pm8$",
+    "$6$ only",
+    "$\\pm6$",
+    "$\\pm10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle with adjacent sides $3\\hat i+4\\hat j$ and $-5\\hat i+7\\hat j$ is",
+   "a": "(B) $\\frac{41}2$",
+   "s": "$\\frac12|21+20|$.",
+   "opts": [
+    "$1$",
+    "$\\frac{41}2$",
+    "$41$",
+    "$\\frac{1}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i-\\hat j$, $\\vec b=\\hat i+\\hat j+\\hat k$, and $\\vec c$ satisfies $\\vec a\\times\\vec c+\\vec b=\\vec 0$ and $\\vec a\\cdot\\vec c=4$. Then $|\\vec c|^2$ equals",
+   "a": "(B) $\\frac{19}2$",
+   "s": "$\\vec c=\\frac32\\hat i-\\frac52\\hat j+\\hat k$.",
+   "opts": [
+    "$8$",
+    "$\\frac{19}2$",
+    "$9$",
+    "$\\frac{17}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are unit vectors, $\\vec a\\cdot\\vec b=\\vec a\\cdot\\vec c=0$, and the angle between $\\vec b$ and $\\vec c$ is $\\frac\\pi6$. Then $\\vec a$ equals",
+   "a": "(D) $\\pm2(\\vec b\\times\\vec c)$",
+   "s": "$\\vec a\\parallel\\vec b\\times\\vec c$ and $|\\vec b\\times\\vec c|=\\frac12$.",
+   "opts": [
+    "$\\vec b+\\vec c$",
+    "$\\pm\\frac12(\\vec b\\times\\vec c)$",
+    "$\\pm(\\vec b\\times\\vec c)$",
+    "$\\pm2(\\vec b\\times\\vec c)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The projection of $4\\hat i-3\\hat j+2\\hat k$ on $\\hat i+2\\hat j+2\\hat k$ is",
+   "a": "(D) $\\frac23$",
+   "s": "$\\frac{4-6+4}3$.",
+   "opts": [
+    "$\\frac43$",
+    "$2$",
+    "$\\frac2{\\sqrt{29}}$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a\\hat i+\\hat j+\\hat k$, $\\hat i+b\\hat j+\\hat k$ and $\\hat i+\\hat j+c\\hat k$ with $a,b,c\\ne1$ are coplanar. Then $\\dfrac1{1-a}+\\dfrac1{1-b}+\\dfrac1{1-c}$ equals",
+   "a": "(D) $1$",
+   "s": "Subtract the first row from the others and expand.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The volume of the tetrahedron with coterminous edges $\\vec a$, $\\vec b$, $\\vec c$ is",
+   "a": "(D) $\\frac16|\\left[\\vec a\\ \\vec b\\ \\vec c\\right]|$",
+   "s": "One sixth of the parallelepiped.",
+   "opts": [
+    "$\\frac12|\\left[\\vec a\\ \\vec b\\ \\vec c\\right]|$",
+    "$\\frac13|\\left[\\vec a\\ \\vec b\\ \\vec c\\right]|$",
+    "$|\\left[\\vec a\\ \\vec b\\ \\vec c\\right]|$",
+    "$\\frac16|\\left[\\vec a\\ \\vec b\\ \\vec c\\right]|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$ for $\\vec a=2\\hat i-3\\hat j+4\\hat k$, $\\vec b=\\hat i+2\\hat j-\\hat k$, $\\vec c=3\\hat i-\\hat j+2\\hat k$.",
+   "a": "$-7$",
+   "s": "$2(4-1)+3(2+3)+4(-1-6)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=3$ and the angle between them is $\\frac\\pi3$. Find $|\\vec a+2\\vec b|^2$.",
+   "a": "$52$",
+   "s": "$4+36+4\\cdot3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the square of the area of the triangle with vertices $(0,0,0)$, $(1,2,3)$ and $(3,2,1)$.",
+   "a": "$24$",
+   "s": "The cross product is $-4\\hat i+8\\hat j-4\\hat k$; area $\\frac12\\sqrt{96}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors with $|\\hat a+\\hat b|=\\sqrt3$. Find $\\hat a\\cdot\\hat b$.",
+   "a": "$0.5$",
+   "s": "$3=2+2\\hat a\\cdot\\hat b$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the volume of the parallelepiped with edges $2\\hat i$, $3\\hat j$ and $4\\hat k$.",
+   "a": "$24$",
+   "s": "$2\\cdot3\\cdot4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch10-main-02": [
+  {
+   "q": "$\\vec a\\times(\\vec b\\times\\vec c)+\\vec b\\times(\\vec c\\times\\vec a)+\\vec c\\times(\\vec a\\times\\vec b)$ equals",
+   "a": "(B) $\\vec 0$",
+   "s": "Expand each term; they cancel.",
+   "opts": [
+    "$\\vec a+\\vec b+\\vec c$",
+    "$\\vec 0$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]\\,\\vec a$",
+    "$2(\\vec a\\times\\vec b)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left[\\vec a\\times\\vec b\\ \\vec b\\times\\vec c\\ \\vec c\\times\\vec a\\right]$ equals",
+   "a": "(C) $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]^2$",
+   "s": "Standard identity.",
+   "opts": [
+    "$0$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]^2$",
+    "$2\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=3$. Then $\\left[2\\vec a\\ 3\\vec b\\ \\vec c\\right]$ equals",
+   "a": "(C) $18$",
+   "s": "$2\\cdot3\\cdot3$.",
+   "opts": [
+    "$36$",
+    "$6$",
+    "$18$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec a\\cdot\\vec b=1$ and $\\vec a\\times\\vec b=\\hat j-\\hat k$. Then $\\vec b$ equals",
+   "a": "(A) $\\hat i$",
+   "s": "$(\\hat i+\\hat j+\\hat k)\\times\\hat i=\\hat j-\\hat k$ and $(\\hat i+\\hat j+\\hat k)\\cdot\\hat i=1$.",
+   "opts": [
+    "$\\hat i$",
+    "$\\hat k$",
+    "$\\hat j$",
+    "$\\hat i-\\hat j$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a\\times\\vec b|=\\sqrt3\\,\\vec a\\cdot\\vec b$ for non-zero vectors. The angle between them is",
+   "a": "(C) $\\frac\\pi3$",
+   "s": "$\\tan\\theta=\\sqrt3$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are non-coplanar. Then $\\vec a-\\vec b$, $\\vec b-\\vec c$, $\\vec c-\\vec a$ are",
+   "a": "(D) coplanar",
+   "s": "They add to $\\vec 0$.",
+   "opts": [
+    "all zero",
+    "non-coplanar",
+    "mutually perpendicular",
+    "coplanar"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j$ and $\\vec b=\\hat j+\\hat k$. The vector component of $\\vec a$ along $\\vec b$ is",
+   "a": "(B) $\\frac12(\\hat j+\\hat k)$",
+   "s": "$\\frac{\\vec a\\cdot\\vec b}{|\\vec b|^2}\\vec b=\\frac12\\vec b$.",
+   "opts": [
+    "$\\frac1{\\sqrt2}(\\hat j+\\hat k)$",
+    "$\\frac12(\\hat j+\\hat k)$",
+    "$\\frac12(\\hat i+\\hat j)$",
+    "$\\hat j+\\hat k$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=1$ and $\\vec a\\cdot\\vec b=1$. Then $(3\\vec a-5\\vec b)\\cdot(2\\vec a+7\\vec b)$ equals",
+   "a": "(B) $0$",
+   "s": "$6\\cdot4+11\\cdot1-35\\cdot1$.",
+   "opts": [
+    "$-11$",
+    "$0$",
+    "$11$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are unit vectors with $\\vec a+\\vec b+\\vec c=\\vec 0$. The angle between $\\vec a$ and $\\vec b$ is",
+   "a": "(A) $\\frac{2\\pi}3$",
+   "s": "$1=|\\vec a+\\vec b|^2=2+2\\cos\\theta$.",
+   "opts": [
+    "$\\frac{2\\pi}3$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\times\\vec b)\\times\\vec c$ if and only if",
+   "a": "(B) $(\\vec a\\cdot\\vec b)\\vec c=(\\vec b\\cdot\\vec c)\\vec a$",
+   "s": "Expand both sides.",
+   "opts": [
+    "$\\vec a=\\vec c$",
+    "$(\\vec a\\cdot\\vec b)\\vec c=(\\vec b\\cdot\\vec c)\\vec a$",
+    "$\\vec a\\cdot\\vec b=0$",
+    "$\\vec b\\cdot\\vec c=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The volume of the tetrahedron with vertices $(0,0,0)$, $(1,0,0)$, $(0,2,0)$ and $(0,0,3)$ is",
+   "a": "(A) $1$",
+   "s": "$\\frac16\\cdot1\\cdot2\\cdot3$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$\\frac12$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec b=4\\hat i+3\\hat j+4\\hat k$ and $\\vec c=\\hat i+\\alpha\\hat j+\\beta\\hat k$ are linearly dependent, and $|\\vec c|=\\sqrt3$. Then",
+   "a": "(B) $\\beta=1$, $\\alpha=\\pm1$",
+   "s": "The determinant is $1-\\beta=0$; then $1+\\alpha^2+1=3$.",
+   "opts": [
+    "$\\alpha=\\beta=1$ only",
+    "$\\beta=1$, $\\alpha=\\pm1$",
+    "$\\alpha=-1$, $\\beta=-1$",
+    "$\\alpha=1$, $\\beta=\\pm1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are mutually perpendicular with $|\\vec a|=1$, $|\\vec b|=2$, $|\\vec c|=3$. Then $|\\vec a+\\vec b+\\vec c|$ equals",
+   "a": "(C) $\\sqrt{14}$",
+   "s": "$1+4+9$.",
+   "opts": [
+    "$\\sqrt6$",
+    "$6$",
+    "$\\sqrt{14}$",
+    "$14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The moment about the origin of the force $\\hat i+\\hat j+\\hat k$ acting at the point $\\hat i-\\hat j$ is",
+   "a": "(B) $-\\hat i-\\hat j+2\\hat k$",
+   "s": "$\\vec r\\times\\vec F$.",
+   "opts": [
+    "$-\\hat i+\\hat j+2\\hat k$",
+    "$-\\hat i-\\hat j+2\\hat k$",
+    "$\\hat i+\\hat j-2\\hat k$",
+    "$2\\hat i+\\hat k$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors at angle $\\theta$, and $|\\hat a+\\hat b|<1$. Then $\\theta$ lies in",
+   "a": "(D) $\\left(\\frac{2\\pi}3,\\pi\\right]$",
+   "s": "$2+2\\cos\\theta<1$.",
+   "opts": [
+    "$\\left(\\frac\\pi2,\\pi\\right]$",
+    "$\\left[0,\\frac\\pi3\\right)$",
+    "$\\left(\\frac\\pi3,\\frac{2\\pi}3\\right)$",
+    "$\\left(\\frac{2\\pi}3,\\pi\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i-\\hat k$, $\\vec b=x\\hat i+\\hat j+(1-x)\\hat k$ and $\\vec c=y\\hat i+x\\hat j+(1+x-y)\\hat k$. Then $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$ depends on",
+   "a": "(B) neither $x$ nor $y$",
+   "s": "The determinant simplifies to $1$.",
+   "opts": [
+    "only $y$",
+    "neither $x$ nor $y$",
+    "both $x$ and $y$",
+    "only $x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors at angle $\\frac\\pi3$. The area of the parallelogram with diagonals $\\hat a+2\\hat b$ and $2\\hat a+\\hat b$ is",
+   "a": "(C) $\\frac{3\\sqrt3}4$",
+   "s": "$\\frac12|(\\hat a+2\\hat b)\\times(2\\hat a+\\hat b)|=\\frac32|\\hat a\\times\\hat b|$.",
+   "opts": [
+    "$3\\sqrt3$",
+    "$\\frac{3\\sqrt3}2$",
+    "$\\frac{3\\sqrt3}4$",
+    "$\\frac{\\sqrt3}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec b=3\\hat j+4\\hat k$ is written as $\\vec b_1+\\vec b_2$, with $\\vec b_1$ parallel to $\\vec a=\\hat i+\\hat j$ and $\\vec b_2$ perpendicular to $\\vec a$. Then $\\vec b_1$ equals",
+   "a": "(D) $\\frac32(\\hat i+\\hat j)$",
+   "s": "$\\frac{\\vec a\\cdot\\vec b}{|\\vec a|^2}\\vec a$.",
+   "opts": [
+    "$\\frac3{\\sqrt2}(\\hat i+\\hat j)$",
+    "$\\frac12(\\hat i+\\hat j)$",
+    "$3(\\hat i+\\hat j)$",
+    "$\\frac32(\\hat i+\\hat j)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat i\\times(\\vec a\\times\\hat i)+\\hat j\\times(\\vec a\\times\\hat j)+\\hat k\\times(\\vec a\\times\\hat k)$ equals",
+   "a": "(C) $2\\vec a$",
+   "s": "Each term is $\\vec a$ minus one component of $\\vec a$.",
+   "opts": [
+    "$\\vec a$",
+    "$\\vec 0$",
+    "$2\\vec a$",
+    "$3\\vec a$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$ and $\\vec b$ are non-zero with $\\vec a\\times\\vec b=\\vec c$ and $\\vec b\\times\\vec c=\\vec a$. Then",
+   "a": "(B) $|\\vec b|=1$ and $|\\vec c|=|\\vec a|$",
+   "s": "The three are mutually perpendicular; $|\\vec c|=|\\vec a||\\vec b|$ and $|\\vec a|=|\\vec b||\\vec c|$.",
+   "opts": [
+    "$|\\vec a|=1$ and $|\\vec b|=|\\vec c|$",
+    "$|\\vec b|=1$ and $|\\vec c|=|\\vec a|$",
+    "$\\vec a\\parallel\\vec b$",
+    "$|\\vec a|=|\\vec b|=|\\vec c|=2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=2$. Find $\\left[2\\vec a+\\vec b\\ \\vec b\\ \\vec c\\right]$.",
+   "a": "$4$",
+   "s": "$2\\left[\\vec a\\ \\vec b\\ \\vec c\\right]+\\left[\\vec b\\ \\vec b\\ \\vec c\\right]$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $|(\\hat i+\\hat j)\\times(\\hat j+\\hat k)|^2$.",
+   "a": "$3$",
+   "s": "The cross product is $\\hat i-\\hat j+\\hat k$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a\\cdot\\vec b=2$, $|\\vec a|=1$ and $|\\vec b|=4$. Find $|\\vec a\\times\\vec b|^2$.",
+   "a": "$12$",
+   "s": "$16-4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the volume of the parallelepiped with edges $\\hat i+\\hat j+\\hat k$, $\\hat i-\\hat j+\\hat k$ and $\\hat i+2\\hat j-\\hat k$.",
+   "a": "$4$",
+   "s": "$|1(1-2)-1(-1-1)+1(2+1)|$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of unit vectors perpendicular to both $\\hat i+2\\hat j-\\hat k$ and $3\\hat i-\\hat j+2\\hat k$.",
+   "a": "$2$",
+   "s": "The two directions of the cross product.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch10-advanced-01": [
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are unit vectors, $\\vec a\\cdot\\vec b=\\vec a\\cdot\\vec c=0$, and the angle between $\\vec b$ and $\\vec c$ is $\\frac\\pi3$. Then $|\\vec a\\times\\vec b-\\vec a\\times\\vec c|$ equals",
+   "a": "(D) $1$",
+   "s": "$|\\vec a\\times(\\vec b-\\vec c)|=|\\vec b-\\vec c|$ since $\\vec a\\perp(\\vec b-\\vec c)$; $|\\vec b-\\vec c|^2=2-1$.",
+   "opts": [
+    "$\\frac12$",
+    "$2$",
+    "$\\sqrt3$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat u$ and $\\hat v$ are unit vectors, $\\vec w=\\hat u\\times\\hat v+\\hat u$ and $\\vec w\\times\\hat u=\\hat v$. Then $\\left[\\hat u\\ \\hat v\\ \\vec w\\right]$ equals",
+   "a": "(A) $1$",
+   "s": "$\\vec w\\times\\hat u=\\hat v-(\\hat u\\cdot\\hat v)\\hat u=\\hat v$ gives $\\hat u\\perp\\hat v$; then the product is $1-(\\hat u\\cdot\\hat v)^2$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$2$",
+    "$-1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|\\vec a|=1$, $|\\vec b|=2$ and the angle between them is $\\frac\\pi6$. The volume of the parallelepiped with edges $\\vec a$, $\\vec b$, $\\vec a\\times\\vec b$ is",
+   "a": "(C) $1$",
+   "s": "$\\left[\\vec a\\ \\vec b\\ \\vec a\\times\\vec b\\right]=|\\vec a\\times\\vec b|^2=(1\\cdot2\\cdot\\frac12)^2$.",
+   "opts": [
+    "$2$",
+    "$\\sqrt3$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two adjacent sides of a parallelogram $ABCD$ are $\\overrightarrow{AB}=2\\hat i+4\\hat j-5\\hat k$ and $\\overrightarrow{AD}=\\hat i+2\\hat j+3\\hat k$. The unit vector along $\\overrightarrow{AC}$ is",
+   "a": "(B) $\\frac17(3\\hat i+6\\hat j-2\\hat k)$",
+   "s": "$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD}$ with magnitude $7$.",
+   "opts": [
+    "$\\frac1{\\sqrt{69}}(\\hat i+2\\hat j-8\\hat k)$",
+    "$\\frac17(3\\hat i+6\\hat j-2\\hat k)$",
+    "$\\frac17(\\hat i+2\\hat j-8\\hat k)$",
+    "$\\frac13(3\\hat i+6\\hat j-2\\hat k)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a triangle $PQR$, $\\vec a=\\overrightarrow{QR}$, $\\vec b=\\overrightarrow{RP}$, $\\vec c=\\overrightarrow{PQ}$, $|\\vec a|=12$, $|\\vec b|=4\\sqrt3$ and $\\vec b\\cdot\\vec c=24$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$\\vec a+\\vec b+\\vec c=\\vec 0$. $\\vec b\\cdot\\vec c=-\\vec a\\cdot\\vec b-48=24$ gives $\\vec a\\cdot\\vec b=-72$, $|\\vec c|^2=48$, and $\\vec c\\times\\vec a=\\vec a\\times\\vec b$ with $|\\vec a\\times\\vec b|=24\\sqrt3$.",
+   "opts": [
+    "$\\frac{|\\vec c|^2}2-|\\vec a|=12$",
+    "$\\frac{|\\vec c|^2}2+|\\vec a|=30$",
+    "$|\\vec a\\times\\vec b+\\vec c\\times\\vec a|=48\\sqrt3$",
+    "$\\vec a\\cdot\\vec b=-72$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which vectors are perpendicular to $\\hat i+\\hat j+\\hat k$?",
+   "a": "(A), (C), (D)",
+   "s": "The components must add to $0$.",
+   "opts": [
+    "$\\hat i-\\hat j$",
+    "$\\hat i+\\hat j$",
+    "$\\hat j-\\hat k$",
+    "$\\hat i+\\hat j-2\\hat k$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors at angle $\\theta$, $0<\\theta<\\pi$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$|\\hat a\\pm\\hat b|^2=2\\pm2\\cos\\theta$.",
+   "opts": [
+    "$\\hat a\\cdot\\hat b=\\cos^2\\theta$",
+    "$|\\hat a+\\hat b|=2\\cos\\frac\\theta2$",
+    "$|\\hat a-\\hat b|=2\\sin\\frac\\theta2$",
+    "$|\\hat a\\times\\hat b|=\\sin\\theta$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec b=\\hat i-\\hat j+\\hat k$, $\\vec c=\\hat i+\\hat j-\\hat k$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "The determinant is $0+2+2=4\\ne0$.",
+   "opts": [
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=4$",
+    "$\\vec a\\cdot(\\vec b\\times\\vec c)=\\vec b\\cdot(\\vec c\\times\\vec a)$",
+    "The three vectors are coplanar",
+    "The tetrahedron with these coterminous edges has volume $\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are mutually perpendicular with magnitudes $1$, $2$, $3$. Find $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]^2$.",
+   "a": "$36$",
+   "s": "The volume of a box $1\\times2\\times3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors with $|\\hat a+\\hat b|=\\sqrt2$. Find $|\\hat a-\\hat b|^2$.",
+   "a": "$2$",
+   "s": "$\\hat a\\cdot\\hat b=0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the square of the area of the parallelogram with adjacent sides $\\hat i+2\\hat j+3\\hat k$ and $3\\hat i-2\\hat j+\\hat k$.",
+   "a": "$192$",
+   "s": "The cross product is $8\\hat i+8\\hat j-8\\hat k$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=4$. Find $\\left[\\vec a\\times\\vec b\\ \\vec b\\times\\vec c\\ \\vec c\\times\\vec a\\right]$.",
+   "a": "$16$",
+   "s": "It equals $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each product with its value.\nList-I: (P) $\\hat i\\times\\hat j$; (Q) $\\hat j\\times\\hat i$; (R) $\\hat k\\times\\hat i$; (S) $\\hat i\\cdot(\\hat j\\times\\hat k)$\nList-II: (1) $\\hat j$; (2) $1$; (3) $\\hat k$; (4) $-\\hat k$; (5) $0$",
+   "a": "(B) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Use the cyclic order.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $\\vec a=2\\hat i-\\hat j+2\\hat k$, match each quantity with its value.\nList-I: (P) $|\\vec a|$; (Q) the direction cosine with the $x$-axis; (R) $\\vec a\\cdot\\hat i$; (S) $|\\vec a\\times\\hat i|$\nList-II: (1) $2$; (2) $\\sqrt5$; (3) $3$; (4) $\\frac23$; (5) $\\frac13$",
+   "a": "(C) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$\\sqrt{9}$; $\\frac23$; $2$; $|2\\hat j+\\hat k|$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of vectors with the angle between them.\nList-I: (P) $\\hat i$ and $\\hat j$; (Q) $\\hat i+\\hat j$ and $\\hat i$; (R) $\\hat i$ and $-\\hat i$; (S) $\\hat i+\\hat j$ and $\\hat j+\\hat k$\nList-II: (1) $\\frac\\pi3$; (2) $\\pi$; (3) $\\frac\\pi4$; (4) $\\frac\\pi2$; (5) $0$",
+   "a": "(C) $P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+   "s": "$\\cos\\theta=0,\\ \\frac1{\\sqrt2},\\ -1,\\ \\frac12$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each figure with its area or volume.\nList-I: (P) parallelogram with sides $\\hat i$ and $\\hat j$; (Q) triangle with sides $2\\hat i$ and $2\\hat j$; (R) parallelepiped with edges $2\\hat i$, $3\\hat j$, $\\hat k$; (S) tetrahedron with edges $2\\hat i$, $3\\hat j$, $4\\hat k$\nList-II: (1) $4$; (2) $6$; (3) $1$; (4) $2$; (5) $24$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+   "s": "$1$; $\\frac12\\cdot4$; $6$; $\\frac{24}6$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch10-advanced-02": [
+  {
+   "q": "$\\hat a$ and $\\hat b$ are unit vectors with $|\\hat a+\\hat b|=\\sqrt3$. Then $(2\\hat a-5\\hat b)\\cdot(3\\hat a+\\hat b+\\hat a\\times\\hat b)$ equals",
+   "a": "(A) $-\\frac{11}2$",
+   "s": "$\\hat a\\cdot\\hat b=\\frac12$; the cross product term gives $0$; $6+2\\cdot\\frac12-15\\cdot\\frac12-5$.",
+   "opts": [
+    "$-\\frac{11}2$",
+    "$-\\frac72$",
+    "$0$",
+    "$\\frac{11}2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\hat a$, $\\hat b$, $\\hat c$ are unit vectors and the angle between each pair is $\\frac\\pi3$. The volume of the parallelepiped with edges $\\hat a$, $\\hat b$, $\\hat c$ is",
+   "a": "(A) $\\frac1{\\sqrt2}$",
+   "s": "$\\left[\\hat a\\ \\hat b\\ \\hat c\\right]^2$ is the determinant of the dot products: $1-\\frac14\\cdot3+2\\cdot\\frac18=\\frac12$.",
+   "opts": [
+    "$\\frac1{\\sqrt2}$",
+    "$\\frac12$",
+    "$\\frac{\\sqrt3}2$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\overrightarrow{OA}=\\vec a$, $\\overrightarrow{OB}=10\\vec a+2\\vec b$ and $\\overrightarrow{OC}=\\vec b$. $p$ is the area of the parallelogram with sides $OA$ and $OC$, and $q$ is the area of the quadrilateral $OABC$. Then $\\dfrac qp$ equals",
+   "a": "(C) $6$",
+   "s": "$q=\\frac12|\\vec a\\times(10\\vec a+2\\vec b)|+\\frac12|(10\\vec a+2\\vec b)\\times\\vec b|=|\\vec a\\times\\vec b|+5|\\vec a\\times\\vec b|$.",
+   "opts": [
+    "$5$",
+    "$12$",
+    "$6$",
+    "$10$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a\\cdot\\vec b=0$, $|\\vec a|=1$, $|\\vec b|=2$. Then $|\\vec a\\times(\\vec a\\times\\vec b)|$ equals",
+   "a": "(B) $2$",
+   "s": "$\\vec a\\times(\\vec a\\times\\vec b)=(\\vec a\\cdot\\vec b)\\vec a-|\\vec a|^2\\vec b=-\\vec b$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$4$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i+2\\hat j+3\\hat k$ and $\\vec b=3\\hat i+2\\hat j+\\hat k$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$|\\vec a|=|\\vec b|=\\sqrt{14}$, so $\\cos\\theta=\\frac{10}{14}$.",
+   "opts": [
+    "$\\vec a\\cdot\\vec b=10$",
+    "$|\\vec a\\times\\vec b|=4\\sqrt6$",
+    "The angle between them is $\\cos^{-1}\\frac5{14}$",
+    "$\\vec a+\\vec b\\perp\\vec a-\\vec b$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which identities are true for all vectors?",
+   "a": "(A), (B), (C)",
+   "s": "$\\left[\\vec b\\ \\vec b\\ \\vec c\\right]=0$, so the last one has no $+1$.",
+   "opts": [
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=\\left[\\vec b\\ \\vec c\\ \\vec a\\right]$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=-\\left[\\vec b\\ \\vec a\\ \\vec c\\right]$",
+    "$\\left[\\vec a\\ \\vec a\\ \\vec b\\right]=0$",
+    "$\\left[\\vec a+\\vec b\\ \\vec b\\ \\vec c\\right]=\\left[\\vec a\\ \\vec b\\ \\vec c\\right]+1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a$, $\\vec b$, $\\vec c$ are coplanar non-zero vectors. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "Coplanar means zero volume.",
+   "opts": [
+    "$\\vec a\\cdot(\\vec b+\\vec c)=0$",
+    "$\\left[\\vec a\\ \\vec b\\ \\vec c\\right]=0$",
+    "$\\vec a\\times\\vec b$ is perpendicular to $\\vec c$",
+    "The vectors are linearly dependent"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\vec a=\\hat i-\\hat j$ and $\\vec b=\\hat i+\\hat j+\\hat k$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$\\vec a\\times\\vec b=-\\hat i-\\hat j+2\\hat k$ and $\\vec a\\cdot\\vec b=0$.",
+   "opts": [
+    "$\\vec a\\times\\vec b=\\hat i+\\hat j+2\\hat k$",
+    "$\\vec a\\perp\\vec b$",
+    "$|\\vec a\\times\\vec b|=|\\vec a||\\vec b|$",
+    "$|\\vec a+\\vec b|^2=|\\vec a|^2+|\\vec b|^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\left[\\vec a\\ \\vec b\\ \\vec c\\right]$ for $\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec b=\\hat i+2\\hat j+3\\hat k$, $\\vec c=2\\hat i+3\\hat j+5\\hat k$.",
+   "a": "$1$",
+   "s": "$1(10-9)-1(5-6)+1(3-4)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$|\\vec a|=2$, $|\\vec b|=3$ and $\\vec a\\cdot\\vec b=3$. Find $|\\vec a+\\vec b|^2$.",
+   "a": "$19$",
+   "s": "$4+9+6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the volume of the tetrahedron with vertices $(0,0,0)$, $(2,0,0)$, $(0,3,0)$ and $(0,0,6)$.",
+   "a": "$6$",
+   "s": "$\\frac16\\cdot2\\cdot3\\cdot6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is the area of the triangle with vertices at the points with position vectors $\\hat i$, $\\hat j$, $\\hat k$. Find $4A^2$.",
+   "a": "$3$",
+   "s": "$A=\\frac12|(\\hat j-\\hat i)\\times(\\hat k-\\hat i)|=\\frac{\\sqrt3}2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each expression with its value.\nList-I: (P) $(\\vec a+\\vec b)\\cdot(\\vec a-\\vec b)$; (Q) $|\\vec a+\\vec b|^2$; (R) $\\vec a\\times\\vec a$; (S) $(\\vec a\\times\\vec b)\\cdot\\vec b$\nList-II: (1) $|\\vec a|^2-|\\vec b|^2$; (2) the zero vector; (3) $|\\vec a|^2+|\\vec b|^2+2\\vec a\\cdot\\vec b$; (4) the number $0$; (5) $|\\vec a|^2|\\vec b|^2$",
+   "a": "(A) $P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+   "s": "Expand each.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $\\vec a=3\\hat i+4\\hat j$, match each item with its value.\nList-I: (P) $|\\vec a|$; (Q) the unit vector along $\\vec a$; (R) a vector perpendicular to $\\vec a$ in the $xy$-plane; (S) the projection of $\\vec a$ on $\\hat i$\nList-II: (1) $3$; (2) $\\frac15(3\\hat i+4\\hat j)$; (3) $4\\hat i-3\\hat j$; (4) $5$; (5) $4$",
+   "a": "(A) $P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+   "s": "$\\sqrt{9+16}$; divide by $5$; $12-12=0$; $\\vec a\\cdot\\hat i$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each scalar triple product with its value.\nList-I: (P) $\\left[\\hat i\\ \\hat j\\ \\hat k\\right]$; (Q) $\\left[\\hat j\\ \\hat i\\ \\hat k\\right]$; (R) $\\left[\\hat i\\ \\hat i\\ \\hat k\\right]$; (S) $\\left[2\\hat i\\ 3\\hat j\\ \\hat k\\right]$\nList-II: (1) $0$; (2) $6$; (3) $1$; (4) $-1$; (5) $2$",
+   "a": "(D) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Interchanging two vectors changes the sign; a repeated vector gives $0$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each vector triple product with its value.\nList-I: (P) $\\hat i\\times(\\hat j\\times\\hat k)$; (Q) $\\hat i\\times(\\hat i\\times\\hat j)$; (R) $\\hat j\\times(\\hat k\\times\\hat j)$; (S) $\\hat k\\times(\\hat i\\times\\hat k)$\nList-II: (1) $\\hat i$; (2) $\\hat k$; (3) $\\vec 0$; (4) $-\\hat j$; (5) $\\hat j$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+   "s": "$(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 5$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

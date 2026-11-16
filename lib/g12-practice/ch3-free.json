@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "A matrix has $12$ elements. The number of possible orders of the matrix is",
+  "options": [
+   "$4$",
+   "$6$",
+   "$12$",
+   "$3$"
+  ],
+  "answer": 1,
+  "solution": "$12=1\\times12=2\\times6=3\\times4$, and each pair gives two orders.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "For the $2\\times2$ matrix with $a_{ij}=\\dfrac{(i+j)^2}{2}$, the matrix is",
+  "options": [
+   "$\\begin{bmatrix}2&3\\\\3&8\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&\\frac92\\\\\\frac92&8\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&9\\\\9&16\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&\\frac92\\\\\\frac92&8\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "$a_{11}=\\frac42$, $a_{12}=a_{21}=\\frac92$, $a_{22}=\\frac{16}{2}$.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "For the $2\\times3$ matrix with $a_{ij}=2i-j$, the matrix is",
+  "options": [
+   "$\\begin{bmatrix}1&3\\\\0&2\\\\-1&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}0&-1&-2\\\\2&1&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&0&-1\\\\2&1&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&0&-1\\\\3&2&1\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "Row $1$: $2-1,\\ 2-2,\\ 2-3$. Row $2$: $4-1,\\ 4-2,\\ 4-3$.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "The number of matrices of order $2\\times2$ with each entry $0$ or $1$ is",
+  "options": [
+   "$4$",
+   "$32$",
+   "$8$",
+   "$16$"
+  ],
+  "answer": 3,
+  "solution": "Each of the $4$ entries has $2$ choices: $2^4$.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "$A$ is a $3\\times4$ matrix. $A'B$ and $BA'$ are both defined. The order of $B$ is",
+  "options": [
+   "$4\\times4$",
+   "$4\\times3$",
+   "$3\\times3$",
+   "$3\\times4$"
+  ],
+  "answer": 3,
+  "solution": "$A'$ is $4\\times3$. $A'B$ needs $3$ rows in $B$; $BA'$ needs $4$ columns in $B$.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}x+y&2\\\\5&xy\\end{bmatrix}=\\begin{bmatrix}6&2\\\\5&8\\end{bmatrix}$. The value of $x^2+y^2$ is",
+  "options": [
+   "$20$",
+   "$28$",
+   "$16$",
+   "$36$"
+  ],
+  "answer": 0,
+  "solution": "$x^2+y^2=(x+y)^2-2xy=36-16$.",
+  "topic": "Equality"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}2x+1&3y\\\\0&y^2-5y\\end{bmatrix}=\\begin{bmatrix}x+3&y^2+2\\\\0&-6\\end{bmatrix}$. Then",
+  "options": [
+   "$x=2,\\ y=3$",
+   "$x=2,\\ y=1$",
+   "$x=2,\\ y=2$",
+   "$x=1,\\ y=2$"
+  ],
+  "answer": 2,
+  "solution": "$x=2$. $y^2-3y+2=0$ gives $y=1,2$; $y^2-5y+6=0$ gives $y=2,3$. The common value is $2$.",
+  "topic": "Equality"
+ },
+ {
+  "prompt": "A square matrix $[a_{ij}]$ with $a_{ij}=0$ for $i\\ne j$ and $a_{ii}=k$ for every $i$ is a",
+  "options": [
+   "row matrix",
+   "scalar matrix",
+   "zero matrix",
+   "column matrix"
+  ],
+  "answer": 1,
+  "solution": "All diagonal entries are equal and all other entries are zero.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}3&-1\\\\2&5\\end{bmatrix}$. Then $2A-3I$ equals",
+  "options": [
+   "$\\begin{bmatrix}3&-2\\\\4&7\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&1\\\\4&7\\end{bmatrix}$",
+   "$\\begin{bmatrix}6&-2\\\\4&10\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&-2\\\\4&13\\end{bmatrix}$"
+  ],
+  "answer": 0,
+  "solution": "$2A=\\begin{bmatrix}6&-2\\\\4&10\\end{bmatrix}$; subtract $3$ from each diagonal entry.",
+  "topic": "Operations"
+ },
+ {
+  "prompt": "$2X+\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}=\\begin{bmatrix}3&8\\\\7&2\\end{bmatrix}$. Then $X$ equals",
+  "options": [
+   "$\\begin{bmatrix}1&3\\\\2&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&5\\\\5&3\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&3\\\\2&-1\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&6\\\\4&-2\\end{bmatrix}$"
+  ],
+  "answer": 2,
+  "solution": "$2X=\\begin{bmatrix}2&6\\\\4&-2\\end{bmatrix}$.",
+  "topic": "Operations"
+ },
+ {
+  "prompt": "$X+Y=\\begin{bmatrix}5&2\\\\0&9\\end{bmatrix}$ and $X-Y=\\begin{bmatrix}3&6\\\\0&-1\\end{bmatrix}$. Then $X$ equals",
+  "options": [
+   "$\\begin{bmatrix}8&8\\\\0&8\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&-2\\\\0&5\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&4\\\\0&5\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&4\\\\0&4\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "Add the equations: $2X=\\begin{bmatrix}8&8\\\\0&8\\end{bmatrix}$.",
+  "topic": "Operations"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\begin{bmatrix}2&0\\\\1&3\\end{bmatrix}$ equals",
+  "options": [
+   "$\\begin{bmatrix}2&0\\\\3&12\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&4\\\\10&14\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&6\\\\10&12\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&6\\\\10&14\\end{bmatrix}$"
+  ],
+  "answer": 2,
+  "solution": "Row $1$: $2+2,\\ 0+6$. Row $2$: $6+4,\\ 0+12$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}1&2&3\\end{bmatrix}\\begin{bmatrix}2\\\\-1\\\\4\\end{bmatrix}$ equals",
+  "options": [
+   "$[10]$",
+   "$[12]$",
+   "$\\begin{bmatrix}2&-2&12\\end{bmatrix}$",
+   "a $3\\times3$ matrix"
+  ],
+  "answer": 1,
+  "solution": "$2-2+12=12$; the product is $1\\times1$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}1\\\\2\\end{bmatrix}\\begin{bmatrix}3&4\\end{bmatrix}$ equals",
+  "options": [
+   "$\\begin{bmatrix}3&6\\\\4&8\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&4\\\\6&8\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&8\\end{bmatrix}$",
+   "$[11]$"
+  ],
+  "answer": 1,
+  "solution": "A $2\\times1$ matrix times a $1\\times2$ matrix is $2\\times2$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$A$ is $3\\times2$ and $B$ is $2\\times4$. The order of $AB$ is",
+  "options": [
+   "not defined",
+   "$2\\times2$",
+   "$4\\times3$",
+   "$3\\times4$"
+  ],
+  "answer": 3,
+  "solution": "$(3\\times2)(2\\times4)=3\\times4$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "Assertion (A): If $AB=O$, then $A=O$ or $B=O$.\nReason (R): For $A=\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}$ and $B=\\begin{bmatrix}1&0\\\\0&0\\end{bmatrix}$, $AB=O$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "R is a direct product, and it shows $AB=O$ with $A\\ne O$ and $B\\ne O$. So A is false.",
+  "topic": "Multiplication",
+  "assertion": true
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$. Then $A^{10}$ equals",
+  "options": [
+   "$10A$",
+   "$I$",
+   "$A$",
+   "$O$"
+  ],
+  "answer": 1,
+  "solution": "$A^2=I$, so $A^{10}=(A^2)^5$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$. Then $A^5$ equals",
+  "options": [
+   "$\\begin{bmatrix}5&5\\\\0&5\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&10\\\\0&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&5\\\\0&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$"
+  ],
+  "answer": 2,
+  "solution": "$A^n=\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&0\\\\0&3\\end{bmatrix}$. Then $A^3$ equals",
+  "options": [
+   "$\\begin{bmatrix}8&0\\\\0&27\\end{bmatrix}$",
+   "$\\begin{bmatrix}6&0\\\\0&9\\end{bmatrix}$",
+   "$\\begin{bmatrix}8&0\\\\0&9\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&0\\\\0&27\\end{bmatrix}$"
+  ],
+  "answer": 0,
+  "solution": "For a diagonal matrix, raise each diagonal entry to the power.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$ and $A^2+kA+7I=O$. Then $k$ equals",
+  "options": [
+   "$7$",
+   "$-5$",
+   "$-7$",
+   "$5$"
+  ],
+  "answer": 1,
+  "solution": "$A^2=\\begin{bmatrix}8&5\\\\-5&3\\end{bmatrix}$. Compare the $(1,2)$ entries: $5+k=0$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$(AB)'$ equals",
+  "options": [
+   "$AB$",
+   "$B'A'$",
+   "$A'B'$",
+   "$AB'$"
+  ],
+  "answer": 1,
+  "solution": "The transpose of a product reverses the order.",
+  "topic": "Transpose"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&-1\\\\3&0\\end{bmatrix}$. Then $A+A'$ equals",
+  "options": [
+   "$\\begin{bmatrix}4&-2\\\\6&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&2\\\\2&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}0&-4\\\\4&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&2\\\\2&0\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "$A'=\\begin{bmatrix}2&3\\\\-1&0\\end{bmatrix}$.",
+  "topic": "Transpose"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}0&a&3\\\\2&b&-1\\\\c&1&0\\end{bmatrix}$ is skew-symmetric. Then $a+b+c$ equals",
+  "options": [
+   "$1$",
+   "$5$",
+   "$-5$",
+   "$-1$"
+  ],
+  "answer": 2,
+  "solution": "$a=-2$, $b=0$ and $c=-3$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "Every diagonal element of a skew-symmetric matrix is",
+  "options": [
+   "$-1$",
+   "$1$",
+   "any real number",
+   "zero"
+  ],
+  "answer": 3,
+  "solution": "$a_{ii}=-a_{ii}$ gives $a_{ii}=0$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "$A$ is symmetric and $B$ is skew-symmetric, of the same order. Then $AB-BA$ is",
+  "options": [
+   "the zero matrix",
+   "the identity matrix",
+   "symmetric",
+   "skew-symmetric"
+  ],
+  "answer": 2,
+  "solution": "$(AB-BA)'=B'A'-A'B'=-BA+AB$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "For every square matrix $A$, the matrix $A-A'$ is",
+  "options": [
+   "skew-symmetric",
+   "diagonal",
+   "the zero matrix",
+   "symmetric"
+  ],
+  "answer": 0,
+  "solution": "$(A-A')'=A'-A=-(A-A')$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "The symmetric part of $\\begin{bmatrix}1&5\\\\3&2\\end{bmatrix}$ is",
+  "options": [
+   "$\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&3\\\\5&2\\end{bmatrix}$r",
+   "$\\begin{bmatrix}1&8\\\\8&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&4\\\\4&2\\end{bmatrix}$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac12(A+A')=\\frac12\\begin{bmatrix}2&8\\\\8&4\\end{bmatrix}$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "The skew-symmetric part of $\\begin{bmatrix}4&7\\\\1&3\\end{bmatrix}$ is",
+  "options": [
+   "$\\begin{bmatrix}0&6\\\\-6&0\\end{bmatrix}$r",
+   "$\\begin{bmatrix}0&3\\\\-3&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}0&-3\\\\3&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&4\\\\4&3\\end{bmatrix}$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac12(A-A')=\\frac12\\begin{bmatrix}0&6\\\\-6&0\\end{bmatrix}$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&5\\\\1&3\\end{bmatrix}$. The matrix $B$ with $AB=BA=I$ is",
+  "options": [
+   "$\\begin{bmatrix}-3&5\\\\1&-2\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&-1\\\\-5&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}3&-5\\\\-1&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}2&-5\\\\-1&3\\end{bmatrix}$"
+  ],
+  "answer": 2,
+  "solution": "$\\begin{bmatrix}2&5\\\\1&3\\end{bmatrix}\\begin{bmatrix}3&-5\\\\-1&2\\end{bmatrix}=\\begin{bmatrix}6-5&-10+10\\\\3-3&-5+6\\end{bmatrix}=I$.",
+  "topic": "Inverse"
+ },
+ {
+  "prompt": "$A$ and $B$ are invertible matrices of the same order. Then $(AB)^{-1}$ equals",
+  "options": [
+   "$B^{-1}A^{-1}$",
+   "$AB^{-1}$",
+   "$BA$",
+   "$A^{-1}B^{-1}$"
+  ],
+  "answer": 0,
+  "solution": "$(AB)(B^{-1}A^{-1})=AIA^{-1}=I$.",
+  "topic": "Inverse"
+ },
+ {
+  "prompt": "$A^2=A$. Then $(I-A)^2$ equals",
+  "options": [
+   "$I-A$",
+   "$I$",
+   "$O$",
+   "$I+A$"
+  ],
+  "answer": 0,
+  "solution": "$I-2A+A^2=I-2A+A$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$AB=A$ and $BA=B$. Then $A^2+B^2$ equals",
+  "options": [
+   "$I$",
+   "$A-B$",
+   "$AB$",
+   "$A+B$"
+  ],
+  "answer": 3,
+  "solution": "$A^2=(AB)A=A(BA)=AB=A$. In the same way $B^2=B$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "$A$ is a $2\\times3$ matrix. The order of $AA'$ is",
+  "options": [
+   "not defined",
+   "$3\\times3$",
+   "$2\\times2$",
+   "$2\\times3$"
+  ],
+  "answer": 2,
+  "solution": "$(2\\times3)(3\\times2)=2\\times2$.",
+  "topic": "Transpose"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}2&0&0\\\\0&2&0\\\\0&0&2\\end{bmatrix}$. Then $A^5$ equals",
+  "options": [
+   "$2I$",
+   "$10I$",
+   "$32I$",
+   "$16I$"
+  ],
+  "answer": 2,
+  "solution": "$A=2I$, so $A^5=2^5I$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "The number of matrices of order $3\\times3$ with each entry $0$ or $1$ is",
+  "options": [
+   "$512$",
+   "$18$",
+   "$27$",
+   "$81$"
+  ],
+  "answer": 0,
+  "solution": "$2^9=512$.",
+  "topic": "Order and types"
+ },
+ {
+  "prompt": "The number of symmetric matrices of order $2\\times2$ with each entry $0$ or $1$ is",
+  "options": [
+   "$16$",
+   "$6$",
+   "$8$",
+   "$4$"
+  ],
+  "answer": 2,
+  "solution": "$a_{11}$, $a_{22}$ and $a_{12}=a_{21}$ are free: $2^3$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$ and $B=\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$. Then $AB+BA$ equals",
+  "options": [
+   "$2AB$",
+   "$2I$",
+   "$O$",
+   "$I$"
+  ],
+  "answer": 2,
+  "solution": "$AB=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$ and $BA=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}x&1\\end{bmatrix}\\begin{bmatrix}1&0\\\\-2&0\\end{bmatrix}=O$. Then $x$ equals",
+  "options": [
+   "$1$",
+   "$2$",
+   "$0$",
+   "$-2$"
+  ],
+  "answer": 1,
+  "solution": "The first entry is $x-2=0$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$\\begin{bmatrix}1&x&1\\end{bmatrix}\\begin{bmatrix}1&3&2\\\\2&5&1\\\\15&3&2\\end{bmatrix}\\begin{bmatrix}1\\\\2\\\\x\\end{bmatrix}=O$. Then $x$ equals",
+  "options": [
+   "$-14$ only",
+   "$-2$ only",
+   "$2$ or $14$",
+   "$-2$ or $-14$"
+  ],
+  "answer": 3,
+  "solution": "The product is $x^2+16x+28=(x+2)(x+14)$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$ and $A+A'=I$, with $0<\\alpha<\\dfrac\\pi2$. Then $\\alpha$ equals",
+  "options": [
+   "$\\frac\\pi4$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi6$"
+  ],
+  "answer": 2,
+  "solution": "$A+A'=2\\cos\\alpha\\,I$, so $\\cos\\alpha=\\frac12$.",
+  "topic": "Transpose"
+ },
+ {
+  "prompt": "$A_\\alpha=\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$. Then $A_\\alpha A_\\beta$ equals",
+  "options": [
+   "$A_{\\alpha\\beta}$",
+   "$A_\\alpha+A_\\beta$",
+   "$A_{\\alpha+\\beta}$",
+   "$A_{\\alpha-\\beta}$"
+  ],
+  "answer": 2,
+  "solution": "Multiply and use the addition formulas for $\\cos$ and $\\sin$.",
+  "topic": "Multiplication"
+ },
+ {
+  "prompt": "$A=\\begin{bmatrix}1&2\\\\2&1\\end{bmatrix}$. Then $A^2-2A$ equals",
+  "options": [
+   "$I$",
+   "$O$",
+   "$3I$",
+   "$A$"
+  ],
+  "answer": 2,
+  "solution": "$A^2=\\begin{bmatrix}5&4\\\\4&5\\end{bmatrix}$ and $2A=\\begin{bmatrix}2&4\\\\4&2\\end{bmatrix}$.",
+  "topic": "Powers"
+ },
+ {
+  "prompt": "Assertion (A): $\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}+\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}$ is not defined.\nReason (R): Only matrices of the same order can be added.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "The orders are $2\\times2$ and $2\\times3$.",
+  "topic": "Operations",
+  "assertion": true
+ },
+ {
+  "prompt": "$A$ is $2\\times3$ and $B$ is $3\\times2$. Which of these is not defined?",
+  "options": [
+   "$BA$",
+   "$A+B'$",
+   "$AB$",
+   "$A+B$"
+  ],
+  "answer": 3,
+  "solution": "$A+B$ needs the same order. $B'$ is $2\\times3$.",
+  "topic": "Operations"
+ },
+ {
+  "prompt": "$(3A)'$ equals",
+  "options": [
+   "$3A'$",
+   "$-3A'$",
+   "$9A'$",
+   "$A'$"
+  ],
+  "answer": 0,
+  "solution": "$(kA)'=kA'$.",
+  "topic": "Transpose"
+ },
+ {
+  "prompt": "$A$ is skew-symmetric. Then $A^2$ is",
+  "options": [
+   "symmetric",
+   "the zero matrix",
+   "the identity matrix",
+   "skew-symmetric"
+  ],
+  "answer": 0,
+  "solution": "$(A^2)'=(A')^2=(-A)^2=A^2$.",
+  "topic": "Symmetric and skew-symmetric"
+ },
+ {
+  "prompt": "Assertion (A): $\\begin{bmatrix}0&2&-3\\\\-2&0&4\\\\3&-4&0\\end{bmatrix}$ is skew-symmetric.\nReason (R): A matrix $A$ is skew-symmetric when $A'=-A$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "Here $A'=-A$; R is the test used.",
+  "topic": "Symmetric and skew-symmetric",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): For $A=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$, $A^2=\\begin{bmatrix}1&4\\\\0&1\\end{bmatrix}$.\nReason (R): $(A+B)^2=A^2+2AB+B^2$ for all square matrices $A$ and $B$ of the same order.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "A is a direct product. R needs $AB=BA$, so R is false.",
+  "topic": "Powers",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Every identity matrix is a scalar matrix.\nReason (R): Every scalar matrix is a diagonal matrix.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true. R is about diagonal matrices and does not give A.",
+  "topic": "Order and types",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Every square matrix is the sum of a symmetric matrix and a skew-symmetric matrix.r\nReason (R): $A=\\frac12(A+A')+\\frac12(A-A')$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "The first part is symmetric and the second part is skew-symmetric.",
+  "topic": "Symmetric and skew-symmetric",
+  "assertion": true
+ }
+]

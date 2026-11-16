@@ -1,0 +1,2488 @@
+{
+ "g12-ch4-mcq-20-01": [
+  {
+   "q": "$\\begin{vmatrix}3&4\\\\-2&1\\end{vmatrix}$ equals",
+   "a": "(D) $11$",
+   "s": "$3+8$.",
+   "opts": [
+    "$-5$",
+    "$5$",
+    "$-11$",
+    "$11$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}x+1&x-1\\\\x-1&x+1\\end{vmatrix}$ equals",
+   "a": "(C) $4x$",
+   "s": "$(x+1)^2-(x-1)^2$.",
+   "opts": [
+    "$2x^2+2$",
+    "$0$",
+    "$4x$",
+    "$2x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}1&2&3\\\\0&4&5\\\\0&0&6\\end{vmatrix}$ equals",
+   "a": "(B) $24$",
+   "s": "Expand along column $1$: $1(24-0)$.",
+   "opts": [
+    "$11$",
+    "$24$",
+    "$0$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $2\\times2$ matrix with $|A|=2$. Then $|4A|$ equals",
+   "a": "(C) $32$",
+   "s": "$4^2\\cdot2$.",
+   "opts": [
+    "$16$",
+    "$128$",
+    "$32$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with vertices $(-2,-3)$, $(3,2)$ and $(-1,-8)$ is",
+   "a": "(C) $15$",
+   "s": "$\\frac12|-2(10)+3(-5)-1(-5)|=\\frac12\\cdot30$.",
+   "opts": [
+    "$10$",
+    "$\\frac{15}{2}$",
+    "$15$",
+    "$30$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minor $M_{22}$ of $\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}$ is",
+   "a": "(A) $-12$",
+   "s": "$\\begin{vmatrix}1&3\\\\7&9\\end{vmatrix}=9-21$.",
+   "opts": [
+    "$-12$",
+    "$-3$",
+    "$6$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The cofactor $A_{13}$ of $\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}$ is",
+   "a": "(C) $-3$",
+   "s": "$+\\begin{vmatrix}4&5\\\\7&8\\end{vmatrix}=32-35$.",
+   "opts": [
+    "$-6$",
+    "$13$",
+    "$-3$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{adj}\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ equals",
+   "a": "(B) $\\begin{bmatrix}4&-2\\\\-3&1\\end{bmatrix}$",
+   "s": "$\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}1&-2\\\\-3&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-2\\\\-3&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}-4&2\\\\3&-1\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-3\\\\-2&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $A(\\operatorname{adj}A)=10I$. Then $|A|$ equals",
+   "a": "(D) $10$",
+   "s": "$A(\\operatorname{adj}A)=|A|I$.",
+   "opts": [
+    "$1000$",
+    "$\\sqrt{10}$",
+    "$100$",
+    "$10$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The inverse of $\\begin{bmatrix}3&1\\\\2&1\\end{bmatrix}$ is",
+   "a": "(B) $\\begin{bmatrix}1&-1\\\\-2&3\\end{bmatrix}$",
+   "s": "$|A|=1$, so $A^{-1}=\\operatorname{adj}A$.",
+   "opts": [
+    "$\\begin{bmatrix}-1&1\\\\2&-3\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-1\\\\-2&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-2\\\\-1&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&1\\\\2&3\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}k&3\\\\3&k\\end{bmatrix}$ is singular. Then $k$ equals",
+   "a": "(A) $\\pm3$",
+   "s": "$k^2-9=0$.",
+   "opts": [
+    "$\\pm3$",
+    "$3$ only",
+    "$\\pm9$",
+    "$9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The solution of $3x-y=5$ and $x+2y=4$ is",
+   "a": "(C) $x=2,\\ y=1$",
+   "s": "$|A|=7$; $X=\\frac17\\begin{bmatrix}2&1\\\\-1&3\\end{bmatrix}\\begin{bmatrix}5\\\\4\\end{bmatrix}$.",
+   "opts": [
+    "$x=3,\\ y=4$",
+    "$x=2,\\ y=-1$",
+    "$x=2,\\ y=1$",
+    "$x=1,\\ y=2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A homogeneous system $AX=O$ with $|A|\\ne0$ has",
+   "a": "(A) only the zero solution",
+   "s": "$X=A^{-1}O=O$.",
+   "opts": [
+    "only the zero solution",
+    "no solution",
+    "infinitely many solutions",
+    "exactly one nonzero solution"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The points $(2,-3)$, $(k,-1)$ and $(0,4)$ are collinear. Then $k$ equals",
+   "a": "(C) $\\frac{10}{7}$",
+   "s": "$2(-1-4)+k(4+3)+0=7k-10=0$.",
+   "opts": [
+    "$\\frac{7}{10}$",
+    "$-\\frac{10}{7}$",
+    "$\\frac{10}{7}$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|A|=3$. Then $|AA'|$ equals",
+   "a": "(C) $9$",
+   "s": "$|A||A'|=3\\cdot3$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$9$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{adj}(A')$ equals",
+   "a": "(B) $(\\operatorname{adj}A)'$",
+   "s": "The cofactors of $A'$ are the cofactors of $A$, transposed.",
+   "opts": [
+    "$-(\\operatorname{adj}A)'$",
+    "$(\\operatorname{adj}A)'$",
+    "$\\operatorname{adj}A$",
+    "$A'$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The inverse of $\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}$ is",
+   "a": "(B) $\\begin{bmatrix}\\frac12&0&0\\\\0&\\frac13&0\\\\0&0&\\frac14\\end{bmatrix}$",
+   "s": "Take the reciprocal of each diagonal entry.",
+   "opts": [
+    "$\\frac1{24}\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}\\frac12&0&0\\\\0&\\frac13&0\\\\0&0&\\frac14\\end{bmatrix}$",
+    "$\\begin{bmatrix}\\frac14&0&0\\\\0&\\frac13&0\\\\0&0&\\frac12\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}x&2\\\\3&x\\end{vmatrix}=3$. Then $x$ equals",
+   "a": "(B) $\\pm3$",
+   "s": "$x^2-6=3$.",
+   "opts": [
+    "$\\pm\\sqrt3$",
+    "$\\pm3$",
+    "$3$ only",
+    "$\\pm9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{vmatrix}1&2\\\\3&6\\end{vmatrix}=0$. Reason: The second row is $3$ times the first row.",
+   "a": "(A)",
+   "s": "$6-6=0$; R gives the reason.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$ is invertible. Reason: $\\begin{vmatrix}1&2\\\\2&4\\end{vmatrix}=0$.",
+   "a": "(D)",
+   "s": "A matrix with determinant $0$ is singular.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch4-board-01": [
+  {
+   "q": "$\\begin{vmatrix}4&-3\\\\2&5\\end{vmatrix}$ equals",
+   "a": "(A) $26$",
+   "s": "$20+6$. [1]",
+   "opts": [
+    "$26$",
+    "$14$",
+    "$-26$",
+    "$-14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}2&0&0\\\\3&-1&0\\\\4&5&6\\end{vmatrix}$ equals",
+   "a": "(C) $-12$",
+   "s": "Expand along row $1$: $2(-6-0)$. [1]",
+   "opts": [
+    "$7$",
+    "$12$",
+    "$-12$",
+    "$-6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=2$. Then $|2A|$ equals",
+   "a": "(A) $16$",
+   "s": "$2^3\\cdot2$. [1]",
+   "opts": [
+    "$16$",
+    "$4$",
+    "$6$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with vertices $(0,0)$, $(6,0)$ and $(4,3)$ is",
+   "a": "(C) $9$",
+   "s": "$\\frac12|6(3-0)|$. [1]",
+   "opts": [
+    "$12$",
+    "$\\frac92$",
+    "$9$",
+    "$18$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minor $M_{21}$ of $\\begin{vmatrix}2&-1&4\\\\0&3&1\\\\5&2&-2\\end{vmatrix}$ is",
+   "a": "(D) $-6$",
+   "s": "$\\begin{vmatrix}-1&4\\\\2&-2\\end{vmatrix}=2-8$. [1]",
+   "opts": [
+    "$6$",
+    "$10$",
+    "$-10$",
+    "$-6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The cofactor $A_{32}$ of $\\begin{vmatrix}2&-1&4\\\\0&3&1\\\\5&2&-2\\end{vmatrix}$ is",
+   "a": "(C) $-2$",
+   "s": "$-\\begin{vmatrix}2&4\\\\0&1\\end{vmatrix}=-(2-0)$. [1]",
+   "opts": [
+    "$12$",
+    "$-12$",
+    "$-2$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A square matrix $A$ is invertible if and only if",
+   "a": "(C) $|A|\\ne0$",
+   "s": "Definition of a non-singular matrix. [1]",
+   "opts": [
+    "$|A|=0$",
+    "$|A|=1$",
+    "$|A|\\ne0$",
+    "$A'=A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{adj}\\begin{bmatrix}3&-5\\\\2&4\\end{bmatrix}$ equals",
+   "a": "(D) $\\begin{bmatrix}4&5\\\\-2&3\\end{bmatrix}$",
+   "s": "$\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}3&5\\\\-2&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-2\\\\5&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}-4&5\\\\-2&-3\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&5\\\\-2&3\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=5$. Then $|\\operatorname{adj}A|$ equals",
+   "a": "(C) $25$",
+   "s": "$|A|^2$. [1]",
+   "opts": [
+    "$5$",
+    "$15$",
+    "$25$",
+    "$125$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}1&2&1\\\\2&x&2\\\\3&1&1\\end{bmatrix}$ is singular. Then $x$ equals",
+   "a": "(D) $4$",
+   "s": "$1(x-2)-2(2-6)+1(2-3x)=8-2x$. [1]",
+   "opts": [
+    "$-4$",
+    "$8$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$. Then $A(\\operatorname{adj}A)$ equals",
+   "a": "(B) $-2I$",
+   "s": "$|A|=4-6$. [1]",
+   "opts": [
+    "$O$",
+    "$-2I$",
+    "$-10I$",
+    "$2I$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A^{-1}=\\begin{bmatrix}2&1\\\\1&1\\end{bmatrix}$. Then $A$ equals",
+   "a": "(B) $\\begin{bmatrix}1&-1\\\\-1&2\\end{bmatrix}$",
+   "s": "$A=(A^{-1})^{-1}$; the determinant of $A^{-1}$ is $1$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}1&1\\\\1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-1\\\\-1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}-1&1\\\\1&-2\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&-1\\\\-1&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The system $kx+2y=5$, $3x+y=1$ has a unique solution when",
+   "a": "(C) $k\\ne6$",
+   "s": "$|A|=k-6\\ne0$. [1]",
+   "opts": [
+    "$k=2$",
+    "$k=6$",
+    "$k\\ne6$",
+    "$k\\ne3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}x&3\\\\x&5\\end{vmatrix}=4$. Then $x$ equals",
+   "a": "(C) $2$",
+   "s": "$5x-3x=4$. [1]",
+   "opts": [
+    "$4$",
+    "$\\frac12$",
+    "$2$",
+    "$-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For $A=\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}$, $A^{-1}=\\begin{bmatrix}2&-3\\\\-1&2\\end{bmatrix}$. Reason: $|A|=1$, so $A^{-1}=\\operatorname{adj}A$.",
+   "a": "(A)",
+   "s": "R gives the method. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{vmatrix}1&2\\\\3&4\\end{vmatrix}=-2$. Reason: $|A'|=|A|$ for every square matrix $A$.",
+   "a": "(B)",
+   "s": "$4-6=-2$. R is true but it is not used. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the triangle with vertices $(-3,5)$, $(3,-6)$ and $(7,2)$.",
+   "a": "$46$ square units",
+   "s": "Area $=\\frac12|-3(-6-2)+3(2-5)+7(5+6)|$ [1] $=\\frac12|24-9+77|=46$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "The area of the triangle with vertices $(2,-6)$, $(5,4)$ and $(k,4)$ is $35$. Find $k$.",
+    "a": "$k=-2$ or $k=12$",
+    "s": "$\\frac12|2(4-4)+5(4+6)+k(-6-4)|=35$ [1]. $|50-10k|=70$, so $k=-2$ or $k=12$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$. Find $\\operatorname{adj}A$ and verify that $A(\\operatorname{adj}A)=|A|I$.",
+   "a": "$\\operatorname{adj}A=\\begin{bmatrix}3&1\\\\-2&1\\end{bmatrix}$; verified.",
+   "s": "$\\operatorname{adj}A=\\begin{bmatrix}3&1\\\\-2&1\\end{bmatrix}$ and $|A|=5$ [1]. $A(\\operatorname{adj}A)=\\begin{bmatrix}3+2&1-1\\\\6-6&2+3\\end{bmatrix}=5I$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Use determinants to find the equation of the line through $(3,1)$ and $(9,3)$.",
+   "a": "$x-3y=0$",
+   "s": "$\\begin{vmatrix}x&y&1\\\\3&1&1\\\\9&3&1\\end{vmatrix}=0$ [1]. $x(1-3)-y(3-9)+(9-9)=-2x+6y=0$, so $x-3y=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find $x$ if $\\begin{vmatrix}2&4\\\\5&1\\end{vmatrix}=\\begin{vmatrix}2x&4\\\\6&x\\end{vmatrix}$.",
+    "a": "$x=\\pm\\sqrt3$",
+    "s": "$2-20=2x^2-24$ [1]. $x^2=3$, so $x=\\pm\\sqrt3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the inverse of $A=\\begin{bmatrix}1&2&3\\\\0&2&4\\\\0&0&5\\end{bmatrix}$.",
+   "a": "$\\frac1{10}\\begin{bmatrix}10&-10&2\\\\0&5&-4\\\\0&0&2\\end{bmatrix}$",
+   "s": "$|A|=1\\cdot2\\cdot5=10$ [1]. Cofactors: $A_{11}=10$, $A_{12}=0$, $A_{13}=0$, $A_{21}=-10$, $A_{22}=5$, $A_{23}=0$, $A_{31}=2$, $A_{32}=-4$, $A_{33}=2$ [1]. $A^{-1}=\\frac1{10}\\begin{bmatrix}10&-10&2\\\\0&5&-4\\\\0&0&2\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&7\\\\2&5\\end{bmatrix}$ and $B=\\begin{bmatrix}6&8\\\\7&9\\end{bmatrix}$. Verify that $(AB)^{-1}=B^{-1}A^{-1}$.",
+   "a": "Verified.",
+   "s": "$AB=\\begin{bmatrix}67&87\\\\47&61\\end{bmatrix}$, $|AB|=-2$, $(AB)^{-1}=-\\frac12\\begin{bmatrix}61&-87\\\\-47&67\\end{bmatrix}$ [1]. $A^{-1}=\\begin{bmatrix}5&-7\\\\-2&3\\end{bmatrix}$ and $B^{-1}=-\\frac12\\begin{bmatrix}9&-8\\\\-7&6\\end{bmatrix}$ [1]. $B^{-1}A^{-1}=-\\frac12\\begin{bmatrix}61&-87\\\\-47&67\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}3&2\\\\1&1\\end{bmatrix}$. Find numbers $a$ and $b$ with $A^2+aA+bI=O$. Hence find $A^{-1}$.",
+    "a": "$a=-4,\\ b=1$; $A^{-1}=\\begin{bmatrix}1&-2\\\\-1&3\\end{bmatrix}$",
+    "s": "$A^2=\\begin{bmatrix}11&8\\\\4&3\\end{bmatrix}$ [1]. $A^2-4A+I=O$, so $a=-4$ and $b=1$ [1]. $A(4I-A)=I$, so $A^{-1}=\\begin{bmatrix}1&-2\\\\-1&3\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the values of $k$ for which the matrix $\\begin{bmatrix}k&2\\\\2&k\\end{bmatrix}$ has no inverse, and find the inverse when $k=3$.",
+   "a": "$k=\\pm2$; $\\frac15\\begin{bmatrix}3&-2\\\\-2&3\\end{bmatrix}$",
+   "s": "$|A|=k^2-4$ [1]. No inverse when $k=\\pm2$ [1]. For $k=3$, $|A|=5$ and $A^{-1}=\\frac15\\begin{bmatrix}3&-2\\\\-2&3\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve by the matrix method: $x-y+2z=7$, $3x+4y-5z=-5$, $2x-y+3z=12$.",
+   "a": "$x=2,\\ y=1,\\ z=3$",
+   "s": "$A=\\begin{bmatrix}1&-1&2\\\\3&4&-5\\\\2&-1&3\\end{bmatrix}$, $|A|=1(12-5)+1(9+10)+2(-3-8)=4\\ne0$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}7&1&-3\\\\-19&-1&11\\\\-11&-1&7\\end{bmatrix}$ [2]. $X=\\frac14\\begin{bmatrix}7&1&-3\\\\-19&-1&11\\\\-11&-1&7\\end{bmatrix}\\begin{bmatrix}7\\\\-5\\\\12\\end{bmatrix}=\\frac14\\begin{bmatrix}8\\\\4\\\\12\\end{bmatrix}$ [1]. So $x=2$, $y=1$, $z=3$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Solve by the matrix method: $2x-3y+5z=11$, $3x+2y-4z=-5$, $x+y-2z=-3$.",
+    "a": "$x=1,\\ y=2,\\ z=3$",
+    "s": "$A=\\begin{bmatrix}2&-3&5\\\\3&2&-4\\\\1&1&-2\\end{bmatrix}$, $|A|=2(0)+3(-2)+5(1)=-1$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}0&-1&2\\\\2&-9&23\\\\1&-5&13\\end{bmatrix}$ [2]. $X=-\\begin{bmatrix}0&-1&2\\\\2&-9&23\\\\1&-5&13\\end{bmatrix}\\begin{bmatrix}11\\\\-5\\\\-3\\end{bmatrix}=-\\begin{bmatrix}-1\\\\-2\\\\-3\\end{bmatrix}$ [1]. So $x=1$, $y=2$, $z=3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Rahul buys $3$ notebooks and $2$ pens for ₹$110$. Riya buys $2$ notebooks and $5$ pens for ₹$110$. Let one notebook cost ₹$x$ and one pen cost ₹$y$. (i) Write the equations as $AX=B$. [1] (ii) Find $|A|$. [1] (iii) Find $A^{-1}$ and solve the system. [2] \\textbf{OR} (iii) Find the cost of $4$ notebooks and $3$ pens. [2]",
+   "a": "(i) $\\begin{bmatrix}3&2\\\\2&5\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}110\\\\110\\end{bmatrix}$; (ii) $11$; (iii) $x=30,\\ y=10$; OR ₹$150$.",
+   "s": "(i) $A=\\begin{bmatrix}3&2\\\\2&5\\end{bmatrix}$, $B=\\begin{bmatrix}110\\\\110\\end{bmatrix}$ [1]. (ii) $15-4=11$ [1]. (iii) $A^{-1}=\\frac1{11}\\begin{bmatrix}5&-2\\\\-2&3\\end{bmatrix}$ [1]. $X=\\frac1{11}\\begin{bmatrix}550-220\\\\-220+330\\end{bmatrix}=\\begin{bmatrix}30\\\\10\\end{bmatrix}$ [1]. OR $x=30$ and $y=10$ [1], so $4(30)+3(10)=150$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch4-board-02": [
+  {
+   "q": "$\\begin{vmatrix}a&b\\\\-b&a\\end{vmatrix}$ equals",
+   "a": "(C) $a^2+b^2$",
+   "s": "$a\\cdot a-b(-b)$. [1]",
+   "opts": [
+    "$a^2-b^2$",
+    "$2ab$",
+    "$a^2+b^2$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}1&2&4\\\\-1&3&0\\\\4&1&0\\end{vmatrix}$ equals",
+   "a": "(C) $-52$",
+   "s": "Expand along column $3$: $4\\begin{vmatrix}-1&3\\\\4&1\\end{vmatrix}=4(-13)$. [1]",
+   "opts": [
+    "$-13$",
+    "$52$",
+    "$-52$",
+    "$44$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $2\\times2$ matrix with $|A|=-2$. Then $|3A'|$ equals",
+   "a": "(C) $-18$",
+   "s": "$3^2|A'|=9(-2)$. [1]",
+   "opts": [
+    "$-54$",
+    "$18$",
+    "$-18$",
+    "$-6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with vertices $(1,1)$, $(4,1)$ and $(4,5)$ is",
+   "a": "(C) $6$",
+   "s": "$\\frac12|1(1-5)+4(5-1)+4(1-1)|$. [1]",
+   "opts": [
+    "$12$",
+    "$10$",
+    "$6$",
+    "$7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The cofactor $A_{22}$ of $\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}$ is",
+   "a": "(B) $a$",
+   "s": "$(-1)^{2+2}a$. [1]",
+   "opts": [
+    "$d$",
+    "$a$",
+    "$-a$",
+    "$-d$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For a $3\\times3$ matrix, $a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}$ equals",
+   "a": "(B) $|A|$",
+   "s": "Expansion along row $1$. [1]",
+   "opts": [
+    "$-|A|$",
+    "$|A|$",
+    "$0$",
+    "$3|A|$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=4$. Then $|\\operatorname{adj}(2A)|$ equals",
+   "a": "(C) $1024$",
+   "s": "$|2A|=32$ and $|\\operatorname{adj}(2A)|=32^2$. [1]",
+   "opts": [
+    "$64$",
+    "$256$",
+    "$1024$",
+    "$128$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{adj}I$ equals",
+   "a": "(B) $I$",
+   "s": "Every cofactor on the diagonal is $1$ and the others are $0$. [1]",
+   "opts": [
+    "$-I$",
+    "$I$",
+    "$O$",
+    "$2I$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The inverse of $\\begin{bmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{bmatrix}$ is",
+   "a": "(D) $\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}$",
+   "s": "$|A|=1$, so $A^{-1}=\\operatorname{adj}A$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}\\sin\\theta&\\cos\\theta\\\\-\\cos\\theta&\\sin\\theta\\end{bmatrix}$",
+    "$\\begin{bmatrix}-\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&-\\cos\\theta\\end{bmatrix}$",
+    "$\\begin{bmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{bmatrix}$",
+    "$\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&3\\\\4&6\\end{bmatrix}$. Then $A$ is",
+   "a": "(A) singular",
+   "s": "$12-12=0$. [1]",
+   "opts": [
+    "singular",
+    "skew-symmetric",
+    "non-singular",
+    "the identity matrix"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is an invertible $2\\times2$ matrix. Then $\\operatorname{adj}(\\operatorname{adj}A)$ equals",
+   "a": "(C) $A$",
+   "s": "For order $n$, $\\operatorname{adj}(\\operatorname{adj}A)=|A|^{n-2}A$. [1]",
+   "opts": [
+    "$|A|^2A$",
+    "$A^{-1}$",
+    "$A$",
+    "$|A|A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$|A|=0$ and $(\\operatorname{adj}A)B=O$. The system $AX=B$ has",
+   "a": "(B) either infinitely many solutions or no solution",
+   "s": "This test does not decide the case; the equations must be checked. [1]",
+   "opts": [
+    "a unique solution",
+    "either infinitely many solutions or no solution",
+    "exactly two solutions",
+    "only the zero solution"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The points $(a,b+c)$, $(b,c+a)$ and $(c,a+b)$ are",
+   "a": "(B) collinear",
+   "s": "In $\\begin{vmatrix}a&b+c&1\\\\b&c+a&1\\\\c&a+b&1\\end{vmatrix}$, add column $1$ to column $2$: it becomes $(a+b+c)$ times column $3$. [1]",
+   "opts": [
+    "the vertices of a right triangle",
+    "collinear",
+    "the vertices of an equilateral triangle",
+    "not collinear for distinct $a,b,c$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ and $B=\\begin{bmatrix}2&0\\\\1&3\\end{bmatrix}$. Then $|AB|$ equals",
+   "a": "(D) $-12$",
+   "s": "$|A||B|=(-2)(6)$. [1]",
+   "opts": [
+    "$12$",
+    "$-2$",
+    "$6$",
+    "$-12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}1&2&3\\\\2&4&6\\\\1&1&1\\end{bmatrix}$ is singular. Reason: A square matrix is singular when its determinant is $0$.",
+   "a": "(A)",
+   "s": "$|A|=1(4-6)-2(2-6)+3(2-4)=0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For a $3\\times3$ matrix with $|A|=3$, $|\\operatorname{adj}A|=3$. Reason: $|\\operatorname{adj}A|=|A|^{n-1}$ for a matrix of order $n$.",
+   "a": "(D)",
+   "s": "$|\\operatorname{adj}A|=9$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find $x$ if $\\begin{vmatrix}3&x\\\\x&1\\end{vmatrix}=\\begin{vmatrix}3&2\\\\4&1\\end{vmatrix}$.",
+   "a": "$x=\\pm2\\sqrt2$",
+   "s": "$3-x^2=3-8$ [1]. $x^2=8$, so $x=\\pm2\\sqrt2$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Use determinants to show that the points $(1,-1)$, $(3,2)$ and $(5,5)$ are collinear.",
+    "a": "Shown.",
+    "s": "$\\Delta=\\frac12|1(2-5)+3(5+1)+5(-1-2)|$ [1] $=\\frac12|-3+18-15|=0$, so the points are collinear [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the inverse of $A=\\begin{bmatrix}-1&5\\\\-3&2\\end{bmatrix}$.",
+   "a": "$\\frac1{13}\\begin{bmatrix}2&-5\\\\3&-1\\end{bmatrix}$",
+   "s": "$|A|=-2+15=13$ [1]. $A^{-1}=\\frac1{13}\\begin{bmatrix}2&-5\\\\3&-1\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=8$. Find $|\\operatorname{adj}A|$, $|A^{-1}|$ and $|2A|$.",
+   "a": "$64,\\ \\frac18,\\ 64$",
+   "s": "$|\\operatorname{adj}A|=8^2=64$ [1]. $|A^{-1}|=\\frac18$ and $|2A|=2^3\\cdot8=64$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\operatorname{adj}A$ and $A^{-1}$ for $A=\\begin{bmatrix}1&-1&2\\\\0&2&-3\\\\3&-2&4\\end{bmatrix}$.",
+   "a": "$A^{-1}=\\begin{bmatrix}-2&0&1\\\\9&2&-3\\\\6&1&-2\\end{bmatrix}$",
+   "s": "$|A|=1(8-6)+1(0+9)+2(0-6)=-1$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}2&0&-1\\\\-9&-2&3\\\\-6&-1&2\\end{bmatrix}$ [1]. $A^{-1}=-\\operatorname{adj}A=\\begin{bmatrix}-2&0&1\\\\9&2&-3\\\\6&1&-2\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&3\\\\1&-4\\end{bmatrix}$ and $B=\\begin{bmatrix}1&-2\\\\-1&3\\end{bmatrix}$. Verify that $(AB)^{-1}=B^{-1}A^{-1}$.",
+   "a": "Verified.",
+   "s": "$AB=\\begin{bmatrix}-1&5\\\\5&-14\\end{bmatrix}$, $|AB|=14-25=-11$, $(AB)^{-1}=\\frac1{11}\\begin{bmatrix}14&5\\\\5&1\\end{bmatrix}$ [1]. $A^{-1}=\\frac1{11}\\begin{bmatrix}4&3\\\\1&-2\\end{bmatrix}$ and $B^{-1}=\\begin{bmatrix}3&2\\\\1&1\\end{bmatrix}$ [1]. $B^{-1}A^{-1}=\\frac1{11}\\begin{bmatrix}14&5\\\\5&1\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve by the matrix method: $5x+2y=4$, $7x+3y=5$.",
+   "a": "$x=2,\\ y=-3$",
+   "s": "$A=\\begin{bmatrix}5&2\\\\7&3\\end{bmatrix}$, $|A|=15-14=1$ [1]. $A^{-1}=\\begin{bmatrix}3&-2\\\\-7&5\\end{bmatrix}$ [1]. $X=\\begin{bmatrix}12-10\\\\-28+25\\end{bmatrix}=\\begin{bmatrix}2\\\\-3\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Examine the consistency of the system $x+3y=5$, $2x+6y=8$.",
+    "a": "Inconsistent.",
+    "s": "$|A|=6-6=0$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}6&-3\\\\-2&1\\end{bmatrix}$ and $(\\operatorname{adj}A)B=\\begin{bmatrix}30-24\\\\-10+8\\end{bmatrix}=\\begin{bmatrix}6\\\\-2\\end{bmatrix}$ [1]. This is not $O$, so the system is inconsistent [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve by the matrix method: $2x+3y+3z=5$, $x-2y+z=-4$, $3x-y-2z=3$.",
+   "a": "$x=1,\\ y=2,\\ z=-1$",
+   "s": "$A=\\begin{bmatrix}2&3&3\\\\1&-2&1\\\\3&-1&-2\\end{bmatrix}$, $|A|=2(5)-3(-5)+3(5)=40$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}5&3&9\\\\5&-13&1\\\\5&11&-7\\end{bmatrix}$ [2]. $X=\\frac1{40}\\begin{bmatrix}25-12+27\\\\25+52+3\\\\25-44-21\\end{bmatrix}=\\frac1{40}\\begin{bmatrix}40\\\\80\\\\-40\\end{bmatrix}$ [1]. So $x=1$, $y=2$, $z=-1$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}1&-1&0\\\\2&3&4\\\\0&1&2\\end{bmatrix}$ and $B=\\begin{bmatrix}2&2&-4\\\\-4&2&-4\\\\2&-1&5\\end{bmatrix}$. Find $AB$. Hence solve $x-y=3$, $2x+3y+4z=17$, $y+2z=7$.",
+    "a": "$x=2,\\ y=-1,\\ z=4$",
+    "s": "$AB=6I$ [2], so $A^{-1}=\\frac16B$ [1]. $X=\\frac16\\begin{bmatrix}2&2&-4\\\\-4&2&-4\\\\2&-1&5\\end{bmatrix}\\begin{bmatrix}3\\\\17\\\\7\\end{bmatrix}=\\frac16\\begin{bmatrix}12\\\\-6\\\\24\\end{bmatrix}$ [1]. So $x=2$, $y=-1$, $z=4$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. In a shop, $4$ kg onion, $3$ kg wheat and $2$ kg rice cost ₹$60$; $2$ kg onion, $4$ kg wheat and $6$ kg rice cost ₹$90$; $6$ kg onion, $2$ kg wheat and $3$ kg rice cost ₹$70$. Let the prices per kg be ₹$x$, ₹$y$ and ₹$z$. (i) Write the coefficient matrix $A$. [1] (ii) Find $|A|$. [1] (iii) $\\operatorname{adj}A=\\begin{bmatrix}0&-5&10\\\\30&0&-20\\\\-20&10&10\\end{bmatrix}$. Find the prices. [2] \\textbf{OR} (iii) Find the cofactors $A_{11}$ and $A_{12}$. [2]",
+   "a": "(i) $\\begin{bmatrix}4&3&2\\\\2&4&6\\\\6&2&3\\end{bmatrix}$; (ii) $50$; (iii) ₹$5$, ₹$8$, ₹$8$; OR $0$ and $30$.",
+   "s": "(i) $A=\\begin{bmatrix}4&3&2\\\\2&4&6\\\\6&2&3\\end{bmatrix}$ [1]. (ii) $4(12-12)-3(6-36)+2(4-24)=50$ [1]. (iii) $X=\\frac1{50}\\operatorname{adj}A\\,\\begin{bmatrix}60\\\\90\\\\70\\end{bmatrix}=\\frac1{50}\\begin{bmatrix}250\\\\400\\\\400\\end{bmatrix}$ [1], so $x=5$, $y=8$, $z=8$ [1]. OR $A_{11}=\\begin{vmatrix}4&6\\\\2&3\\end{vmatrix}=0$ [1]. $A_{12}=-\\begin{vmatrix}2&6\\\\6&3\\end{vmatrix}=-(6-36)=30$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch4-board-03": [
+  {
+   "q": "$\\begin{vmatrix}x&x+1\\\\x-1&x\\end{vmatrix}$ equals",
+   "a": "(D) $1$",
+   "s": "$x^2-(x^2-1)$. [1]",
+   "opts": [
+    "$2x^2-1$",
+    "$-1$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&4&9\\end{vmatrix}$ equals",
+   "a": "(C) $2$",
+   "s": "$1(18-12)-1(9-3)+1(4-2)$. [1]",
+   "opts": [
+    "$0$",
+    "$6$",
+    "$2$",
+    "$-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=-1$. Then $|-A|$ equals",
+   "a": "(A) $1$",
+   "s": "$(-1)^3(-1)$. [1]",
+   "opts": [
+    "$1$",
+    "$-3$",
+    "$-1$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with vertices $(-1,3)$, $(3,-2)$ and $(2,5)$ is",
+   "a": "(C) $\\frac{23}{2}$",
+   "s": "$\\frac12|-1(-7)+3(2)+2(5)|$. [1]",
+   "opts": [
+    "$\\frac{13}{2}$",
+    "$23$",
+    "$\\frac{23}{2}$",
+    "$11$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minor of the element $5$ in $\\begin{vmatrix}2&5\\\\-1&3\\end{vmatrix}$ is",
+   "a": "(B) $-1$",
+   "s": "Delete row $1$ and column $2$. [1]",
+   "opts": [
+    "$3$",
+    "$-1$",
+    "$-5$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The cofactor of $a_{12}$ in $\\begin{vmatrix}2&-3\\\\4&1\\end{vmatrix}$ is",
+   "a": "(C) $-4$",
+   "s": "$(-1)^{1+2}\\cdot4$. [1]",
+   "opts": [
+    "$-3$",
+    "$4$",
+    "$-4$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\operatorname{adj}\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$ equals",
+   "a": "(B) $\\begin{bmatrix}-1&0\\\\0&1\\end{bmatrix}$",
+   "s": "$\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}-1&0\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&-1\\end{bmatrix}$. Then $(\\operatorname{adj}A)A$ equals",
+   "a": "(C) $-7I$",
+   "s": "$|A|=-1-6$. [1]",
+   "opts": [
+    "$-5I$",
+    "$7I$",
+    "$-7I$",
+    "$O$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The inverse of $\\begin{bmatrix}3&-1\\\\-4&2\\end{bmatrix}$ is",
+   "a": "(A) $\\frac12\\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}$",
+   "s": "$|A|=6-4=2$. [1]",
+   "opts": [
+    "$\\frac12\\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}$",
+    "$\\frac12\\begin{bmatrix}3&1\\\\4&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}$",
+    "$\\frac12\\begin{bmatrix}2&-1\\\\-4&3\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a singular square matrix. Then $A(\\operatorname{adj}A)$ equals",
+   "a": "(B) $O$",
+   "s": "$A(\\operatorname{adj}A)=|A|I=O$. [1]",
+   "opts": [
+    "$A$",
+    "$O$",
+    "$I$",
+    "$\\operatorname{adj}A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}2&k\\\\k&8\\end{vmatrix}=0$. Then $k$ equals",
+   "a": "(A) $\\pm4$",
+   "s": "$16-k^2=0$. [1]",
+   "opts": [
+    "$\\pm4$",
+    "$\\pm2$",
+    "$\\pm16$",
+    "$4$ only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The system $x+y+z=0$, $x-y+z=0$, $x+y-z=0$ has",
+   "a": "(C) only the zero solution",
+   "s": "$|A|=1(0)-1(-2)+1(2)=4\\ne0$. [1]",
+   "opts": [
+    "exactly two solutions",
+    "infinitely many solutions",
+    "only the zero solution",
+    "no solution"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&3\\\\4&5\\end{bmatrix}$. Then $|A^2|$ equals",
+   "a": "(A) $4$",
+   "s": "$|A|^2=(-2)^2$. [1]",
+   "opts": [
+    "$4$",
+    "$-2$",
+    "$16$",
+    "$-4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{vmatrix}2x&-1\\\\4&2\\end{vmatrix}=\\begin{vmatrix}3&0\\\\2&1\\end{vmatrix}$. Then $x$ equals",
+   "a": "(A) $-\\frac14$",
+   "s": "$4x+4=3$. [1]",
+   "opts": [
+    "$-\\frac14$",
+    "$-\\frac74$",
+    "$1$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}2&4\\\\1&2\\end{bmatrix}$ has no inverse. Reason: Its determinant is $0$.",
+   "a": "(A)",
+   "s": "$4-4=0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The system $x+y=2$, $x-y=0$ has a unique solution. Reason: Every system of two linear equations in two variables has a unique solution.",
+   "a": "(C)",
+   "s": "Here $|A|=-2\\ne0$. R is false: $x+y=1$, $x+y=2$ has no solution. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Use determinants to find the equation of the line through $(-1,3)$ and $(0,0)$.",
+   "a": "$3x+y=0$",
+   "s": "$\\begin{vmatrix}x&y&1\\\\-1&3&1\\\\0&0&1\\end{vmatrix}=0$ [1]. $x(3)-y(-1)+0=3x+y=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "The points $(k,2-2k)$, $(-k+1,2k)$ and $(-4-k,6-2k)$ are collinear. Find $k$.",
+    "a": "$k=-1$ or $k=\\frac12$",
+    "s": "$\\begin{vmatrix}k&2-2k&1\\\\-k+1&2k&1\\\\-4-k&6-2k&1\\end{vmatrix}=0$ simplifies to $8k^2+4k-4=0$ [1]. $2k^2+k-1=0$, so $k=-1$ or $k=\\frac12$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the inverse of $A=\\begin{bmatrix}2&5\\\\-3&1\\end{bmatrix}$.",
+   "a": "$\\frac1{17}\\begin{bmatrix}1&-5\\\\3&2\\end{bmatrix}$",
+   "s": "$|A|=2+15=17$ [1]. $A^{-1}=\\frac1{17}\\begin{bmatrix}1&-5\\\\3&2\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$ satisfies $A^2-5A+7I=O$. Find $A^{-1}$.",
+    "a": "$\\frac17\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$",
+    "s": "$A(5I-A)=7I$ [1]. $A^{-1}=\\frac17(5I-A)=\\frac17\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Evaluate $\\begin{vmatrix}\\cos15^\\circ&\\sin15^\\circ\\\\\\sin75^\\circ&\\cos75^\\circ\\end{vmatrix}$.",
+   "a": "$0$",
+   "s": "$\\cos15^\\circ\\cos75^\\circ-\\sin15^\\circ\\sin75^\\circ$ [1] $=\\cos(15^\\circ+75^\\circ)=\\cos90^\\circ=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the inverse of $A=\\begin{bmatrix}2&-1&1\\\\-1&2&-1\\\\1&-1&2\\end{bmatrix}$.",
+   "a": "$\\frac14\\begin{bmatrix}3&1&-1\\\\1&3&1\\\\-1&1&3\\end{bmatrix}$",
+   "s": "$|A|=2(3)+1(-1)+1(-1)=4$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}3&1&-1\\\\1&3&1\\\\-1&1&3\\end{bmatrix}$ [1]. $A^{-1}=\\frac14\\begin{bmatrix}3&1&-1\\\\1&3&1\\\\-1&1&3\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-1&2\\\\3&0&-2\\\\1&0&3\\end{bmatrix}$. Find $\\operatorname{adj}A$ and verify that $A(\\operatorname{adj}A)=|A|I$.",
+   "a": "$\\operatorname{adj}A=\\begin{bmatrix}0&3&2\\\\-11&1&8\\\\0&-1&3\\end{bmatrix}$, $|A|=11$",
+   "s": "$|A|=1(0)+1(9+2)+2(0)=11$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}0&3&2\\\\-11&1&8\\\\0&-1&3\\end{bmatrix}$ [1]. Row $1$ of $A(\\operatorname{adj}A)$: $0+11+0,\\ 3-1-2,\\ 2-8+6=11,0,0$; the other rows give $0,11,0$ and $0,0,11$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve by the matrix method: $4x-3y=3$, $3x-5y=7$.",
+   "a": "$x=-\\frac6{11},\\ y=-\\frac{19}{11}$",
+   "s": "$|A|=-20+9=-11$ [1]. $A^{-1}=-\\frac1{11}\\begin{bmatrix}-5&3\\\\-3&4\\end{bmatrix}$ [1]. $X=-\\frac1{11}\\begin{bmatrix}-15+21\\\\-9+28\\end{bmatrix}=\\begin{bmatrix}-\\frac6{11}\\\\-\\frac{19}{11}\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve by the matrix method: $x-y+z=4$, $2x+y-3z=0$, $x+y+z=2$.",
+   "a": "$x=2,\\ y=-1,\\ z=1$",
+   "s": "$A=\\begin{bmatrix}1&-1&1\\\\2&1&-3\\\\1&1&1\\end{bmatrix}$, $|A|=1(4)+1(5)+1(1)=10$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}4&2&2\\\\-5&0&5\\\\1&-2&3\\end{bmatrix}$ [2]. $X=\\frac1{10}\\begin{bmatrix}16+0+4\\\\-20+0+10\\\\4+0+6\\end{bmatrix}=\\frac1{10}\\begin{bmatrix}20\\\\-10\\\\10\\end{bmatrix}$ [1]. So $x=2$, $y=-1$, $z=1$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Solve by the matrix method: $3x-2y+3z=8$, $2x+y-z=1$, $4x-3y+2z=4$.",
+    "a": "$x=1,\\ y=2,\\ z=3$",
+    "s": "$A=\\begin{bmatrix}3&-2&3\\\\2&1&-1\\\\4&-3&2\\end{bmatrix}$, $|A|=3(-1)+2(8)+3(-10)=-17$ [1]. $\\operatorname{adj}A=\\begin{bmatrix}-1&-5&-1\\\\-8&-6&9\\\\-10&1&7\\end{bmatrix}$ [2]. $X=-\\frac1{17}\\begin{bmatrix}-8-5-4\\\\-64-6+36\\\\-80+1+28\\end{bmatrix}=-\\frac1{17}\\begin{bmatrix}-17\\\\-34\\\\-51\\end{bmatrix}$ [1]. So $x=1$, $y=2$, $z=3$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A school gives prizes of ₹$x$ for honesty, ₹$y$ for helping others and ₹$z$ for sports. One prize of each kind costs ₹$900$. Two honesty prizes and one helping prize cost ₹$800$. One honesty prize and two sports prizes cost ₹$1100$. (i) Write the system as $AX=B$. [1] (ii) Find $|A|$. [1] (iii) Find $x$, $y$ and $z$. [2] \\textbf{OR} (iii) Find the cofactors $A_{11}$, $A_{21}$ and $A_{31}$. [2]",
+   "a": "(i) $\\begin{bmatrix}1&1&1\\\\2&1&0\\\\1&0&2\\end{bmatrix}X=\\begin{bmatrix}900\\\\800\\\\1100\\end{bmatrix}$; (ii) $-3$; (iii) $300,\\ 200,\\ 400$; OR $2,\\ -2,\\ -1$.",
+   "s": "(i) $A=\\begin{bmatrix}1&1&1\\\\2&1&0\\\\1&0&2\\end{bmatrix}$, $B=\\begin{bmatrix}900\\\\800\\\\1100\\end{bmatrix}$ [1]. (ii) $1(2)-1(4)+1(-1)=-3$ [1]. (iii) $\\operatorname{adj}A=\\begin{bmatrix}2&-2&-1\\\\-4&1&2\\\\-1&1&-1\\end{bmatrix}$, $X=-\\frac13\\begin{bmatrix}-900\\\\-600\\\\-1200\\end{bmatrix}$ [1], so $x=300$, $y=200$, $z=400$ [1]. OR $A_{11}=\\begin{vmatrix}1&0\\\\0&2\\end{vmatrix}=2$, $A_{21}=-\\begin{vmatrix}1&1\\\\0&2\\end{vmatrix}=-2$ [1], $A_{31}=\\begin{vmatrix}1&1\\\\1&0\\end{vmatrix}=-1$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch4-main-01": [
+  {
+   "q": "$\\begin{vmatrix}1&1&1\\\\1&1+x&1\\\\1&1&1+y\\end{vmatrix}$ equals",
+   "a": "(C) $xy$",
+   "s": "Subtract row $1$ from rows $2$ and $3$: the determinant becomes triangular.",
+   "opts": [
+    "$1+xy$",
+    "$x+y$",
+    "$xy$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a+b+c=0$. Then $\\begin{vmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{vmatrix}$ equals",
+   "a": "(C) $0$",
+   "s": "The value is $-(a^3+b^3+c^3-3abc)=-(a+b+c)(\\ldots)$.",
+   "opts": [
+    "$abc$",
+    "$a^2+b^2+c^2$",
+    "$0$",
+    "$3abc$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+y+z=1$, $x+2y+3z=2$, $x+3y+\\lambda z=\\mu$ has infinitely many solutions when",
+   "a": "(C) $\\lambda=5,\\ \\mu=3$",
+   "s": "$|A|=\\lambda-5$. With $\\lambda=5$: $(\\text{eq }3)-(\\text{eq }2)$ is $y+2z=\\mu-2$ and $(\\text{eq }2)-(\\text{eq }1)$ is $y+2z=1$.",
+   "opts": [
+    "$\\lambda\\ne5$",
+    "$\\lambda=3,\\ \\mu=5$",
+    "$\\lambda=5,\\ \\mu=3$",
+    "$\\lambda=5,\\ \\mu\\ne3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=3$. Then $|\\operatorname{adj}(\\operatorname{adj}A)|$ equals",
+   "a": "(D) $81$",
+   "s": "$|A|^{(n-1)^2}=3^4$.",
+   "opts": [
+    "$27$",
+    "$729$",
+    "$9$",
+    "$81$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=2$. Then $|3\\operatorname{adj}(2A)|$ equals",
+   "a": "(B) $6912$",
+   "s": "$|2A|=16$, $|\\operatorname{adj}(2A)|=16^2=256$ and $|3M|=27|M|$.",
+   "opts": [
+    "$864$",
+    "$6912$",
+    "$3456$",
+    "$1728$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of real $k$ for which $kx+y+z=0$, $x+ky+z=0$, $x+y+kz=0$ has a nonzero solution is",
+   "a": "(C) $2$",
+   "s": "$|A|=k^3-3k+2=(k-1)^2(k+2)=0$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$2$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "One root of $\\begin{vmatrix}x&3&7\\\\2&x&2\\\\7&6&x\\end{vmatrix}=0$ is $x=-9$. The other roots are",
+   "a": "(C) $2$ and $7$",
+   "s": "The determinant is $x^3-67x+126=(x+9)(x-2)(x-7)$.",
+   "opts": [
+    "$3$ and $6$",
+    "$-2$ and $-7$",
+    "$2$ and $7$",
+    "$2$ and $-7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\omega$ is a complex cube root of unity. Then $\\begin{vmatrix}1&\\omega&\\omega^2\\\\\\omega&\\omega^2&1\\\\\\omega^2&1&\\omega\\end{vmatrix}$ equals",
+   "a": "(B) $0$",
+   "s": "Add all columns to column $1$: each entry becomes $1+\\omega+\\omega^2=0$.",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$1$",
+    "$\\omega$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}a-b-c&2a&2a\\\\2b&b-c-a&2b\\\\2c&2c&c-a-b\\end{vmatrix}$ equals",
+   "a": "(C) $(a+b+c)^3$",
+   "s": "Add rows $2$ and $3$ to row $1$ and take out $a+b+c$.",
+   "opts": [
+    "$(a+b+c)^2$",
+    "$2(a+b+c)^3$",
+    "$(a+b+c)^3$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $|A|$ for a $3\\times3$ matrix $A$ with every entry $1$ or $-1$ is",
+   "a": "(D) $4$",
+   "s": "$|A|$ is a sum of $6$ terms $\\pm1$, so it is at most $6$, and it is a multiple of $4$. $\\begin{vmatrix}1&1&1\\\\1&-1&1\\\\1&1&-1\\end{vmatrix}=4$.",
+   "opts": [
+    "$6$",
+    "$9$",
+    "$3$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=2$. Then $|\\operatorname{adj}(A^{-1})|$ equals",
+   "a": "(A) $\\frac14$",
+   "s": "$|\\operatorname{adj}(A^{-1})|=|A^{-1}|^2$.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac18$",
+    "$\\frac12$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&\\sin\\theta&1\\\\-\\sin\\theta&1&\\sin\\theta\\\\-1&-\\sin\\theta&1\\end{bmatrix}$. The set of values of $|A|$ is",
+   "a": "(D) $[2,4]$",
+   "s": "$|A|=2+2\\sin^2\\theta$.",
+   "opts": [
+    "$(2,4)$",
+    "$[2,\\infty)$",
+    "$[0,2]$",
+    "$[2,4]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}1+a&1&1\\\\1&1+b&1\\\\1&1&1+c\\end{vmatrix}$ equals",
+   "a": "(B) $abc+ab+bc+ca$",
+   "s": "Expand, or take out $abc$ and add the columns.",
+   "opts": [
+    "$abc+a+b+c$",
+    "$abc+ab+bc+ca$",
+    "$1+a+b+c$",
+    "$abc$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+y+z=6$, $x+2y+3z=10$, $x+2y+\\lambda z=12$ has no solution when",
+   "a": "(D) $\\lambda=3$",
+   "s": "$|A|=\\lambda-3$. At $\\lambda=3$, equations $2$ and $3$ have the same left side but $10\\ne12$.",
+   "opts": [
+    "$\\lambda\\ne3$",
+    "$\\lambda=1$",
+    "$\\lambda=2$",
+    "$\\lambda=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x$, $y$, $z$ are distinct and $\\begin{vmatrix}x&x^2&1+x^3\\\\y&y^2&1+y^3\\\\z&z^2&1+z^3\\end{vmatrix}=0$. Then $xyz$ equals",
+   "a": "(B) $-1$",
+   "s": "The determinant is $(1+xyz)(x-y)(y-z)(z-x)$.",
+   "opts": [
+    "$1$",
+    "$-1$",
+    "$0$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ with $ad-bc=1$. Then $A^{-1}$ equals",
+   "a": "(C) $\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$",
+   "s": "$A^{-1}=\\frac{1}{|A|}\\operatorname{adj}A$ with $|A|=1$.",
+   "opts": [
+    "$\\begin{bmatrix}-d&b\\\\c&-a\\end{bmatrix}$",
+    "$\\begin{bmatrix}d&b\\\\c&a\\end{bmatrix}$",
+    "$\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}$",
+    "$\\begin{bmatrix}a&-b\\\\-c&d\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a$, $b$, $c$ are in A.P. Then $\\begin{vmatrix}x+1&x+2&x+a\\\\x+2&x+3&x+b\\\\x+3&x+4&x+c\\end{vmatrix}$ equals",
+   "a": "(D) $0$",
+   "s": "$R_1+R_3-2R_2$ gives the row $0,0,a+c-2b=0$.",
+   "opts": [
+    "$x$",
+    "$1$",
+    "$a+b+c$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix. Then $\\operatorname{adj}(3A)$ equals",
+   "a": "(D) $9\\operatorname{adj}A$",
+   "s": "$\\operatorname{adj}(kA)=k^{n-1}\\operatorname{adj}A$.",
+   "opts": [
+    "$3\\operatorname{adj}A$",
+    "$27\\operatorname{adj}A$",
+    "$\\operatorname{adj}A$",
+    "$9\\operatorname{adj}A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $2\\times2$ matrices with each entry $0$ or $1$ and determinant $1$ is",
+   "a": "(B) $3$",
+   "s": "$ad=1$ and $bc=0$: $a=d=1$ and $(b,c)\\ne(1,1)$.",
+   "opts": [
+    "$2$",
+    "$3$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x,y,z>0$ and not $1$, $\\begin{vmatrix}1&\\log_xy&\\log_xz\\\\\\log_yx&1&\\log_yz\\\\\\log_zx&\\log_zy&1\\end{vmatrix}$ equals",
+   "a": "(D) $0$",
+   "s": "Write $\\log_ab=\\frac{\\ln b}{\\ln a}$: row $2$ is $\\frac{\\ln x}{\\ln y}$ times row $1$.",
+   "opts": [
+    "$-1$",
+    "$\\log_x(xyz)$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&10\\end{vmatrix}$.",
+   "a": "$-3$",
+   "s": "$1(50-48)-2(40-42)+3(32-35)=2+4-9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=3$. Find $|2A^{-1}|\\cdot|\\operatorname{adj}A|$.",
+   "a": "$24$",
+   "s": "$|2A^{-1}|=\\frac83$ and $|\\operatorname{adj}A|=9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+2y+3z=6$, $2x+3y+4z=9$, $3x+4y+\\lambda z=12$ has infinitely many solutions. Find $\\lambda$.",
+   "a": "$5$",
+   "s": "$|A|=5-\\lambda=0$. At $\\lambda=5$, $(\\text{eq }2)-(\\text{eq }1)$ and $(\\text{eq }3)-(\\text{eq }2)$ are both $x+y+z=3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle with vertices $(1,2)$, $(-3,4)$ and $(2,-1)$.",
+   "a": "$5$",
+   "s": "$\\frac12|1(5)-3(-3)+2(-2)|=\\frac12\\cdot10$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $\\begin{vmatrix}1&1&1\\\\1&1+\\sin\\theta&1\\\\1+\\cos\\theta&1&1\\end{vmatrix}$.",
+   "a": "$0.5$",
+   "s": "The value is $-\\sin\\theta\\cos\\theta=-\\frac12\\sin2\\theta$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch4-main-02": [
+  {
+   "q": "$\\begin{vmatrix}b+c&a&a\\\\b&c+a&b\\\\c&c&a+b\\end{vmatrix}$ equals",
+   "a": "(D) $4abc$",
+   "s": "$R_1-R_2-R_3$ gives $0,-2c,-2b$; then expand.",
+   "opts": [
+    "$2abc$",
+    "$abc$",
+    "$(a+b+c)^3$",
+    "$4abc$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}a^2&bc&ac+c^2\\\\a^2+ab&b^2&ac\\\\ab&b^2+bc&c^2\\end{vmatrix}$ equals",
+   "a": "(B) $4a^2b^2c^2$",
+   "s": "Take $a$ out of $C_1$, $b$ out of $C_2$ and $c$ out of $C_3$. The remaining determinant $\\begin{vmatrix}a&c&a+c\\\\a+b&b&a\\\\b&b+c&c\\end{vmatrix}$ is $4abc$.",
+   "opts": [
+    "$4abc$",
+    "$4a^2b^2c^2$",
+    "$a^2b^2c^2$",
+    "$2a^2b^2c^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+ay=0$, $y+az=0$, $z+ax=0$ has infinitely many solutions when $a$ equals",
+   "a": "(B) $-1$",
+   "s": "$\\begin{vmatrix}1&a&0\\\\0&1&a\\\\a&0&1\\end{vmatrix}=1+a^3=0$.",
+   "opts": [
+    "$1$",
+    "$-1$",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&-3\\\\-4&1\\end{bmatrix}$. Then $\\operatorname{adj}(3A^2+12A)$ equals",
+   "a": "(B) $\\begin{bmatrix}51&63\\\\84&72\\end{bmatrix}$",
+   "s": "$3A^2+12A=\\begin{bmatrix}72&-63\\\\-84&51\\end{bmatrix}$; interchange the diagonal and change the signs.",
+   "opts": [
+    "$\\begin{bmatrix}51&84\\\\63&72\\end{bmatrix}$",
+    "$\\begin{bmatrix}51&63\\\\84&72\\end{bmatrix}$",
+    "$\\begin{bmatrix}72&63\\\\84&51\\end{bmatrix}$",
+    "$\\begin{bmatrix}72&-63\\\\-84&51\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $AA'=I$ and $|A|=1$. Then $|A-I|$ equals",
+   "a": "(A) $0$",
+   "s": "$|A-I|=|A-AA'|=|A||I-A'|=|I-A|=-|A-I|$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}x-4&2x&2x\\\\2x&x-4&2x\\\\2x&2x&x-4\\end{vmatrix}=(A+Bx)(x-A)^2$. Then $(A,B)$ equals",
+   "a": "(C) $(-4,5)$",
+   "s": "The determinant is $(5x-4)(x+4)^2$.",
+   "opts": [
+    "$(-4,-5)$",
+    "$(4,-5)$",
+    "$(-4,5)$",
+    "$(4,5)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of distinct real roots of $\\begin{vmatrix}\\sin x&\\cos x&\\cos x\\\\\\cos x&\\sin x&\\cos x\\\\\\cos x&\\cos x&\\sin x\\end{vmatrix}=0$ in $\\left[-\\frac\\pi4,\\frac\\pi4\\right]$ is",
+   "a": "(A) $1$",
+   "s": "The determinant is $(\\sin x+2\\cos x)(\\sin x-\\cos x)^2$. Only $x=\\frac\\pi4$ is in the interval.",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$2$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=8$. Then $|\\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj}A))|$ equals",
+   "a": "(A) $2^{24}$",
+   "s": "Each adjoint squares the determinant: $8^2$, $8^4$, $8^8=2^{24}$.",
+   "opts": [
+    "$2^{24}$",
+    "$2^{18}$",
+    "$2^{12}$",
+    "$2^{48}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+y+z=1$, $x+2y+4z=\\lambda$, $x+4y+10z=\\lambda^2$ is consistent when $\\lambda$ equals",
+   "a": "(D) $1$ or $2$",
+   "s": "$|A|=0$. Subtract: $y+3z=\\lambda-1$ and $2y+6z=\\lambda^2-\\lambda$, so $\\lambda^2-3\\lambda+2=0$.",
+   "opts": [
+    "$2$ only",
+    "$1$ or $-2$",
+    "$-1$ or $2$",
+    "$1$ or $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a\\ne0$ and $\\begin{vmatrix}x+a&x&x\\\\x&x+a&x\\\\x&x&x+a\\end{vmatrix}=0$. Then $x$ equals",
+   "a": "(C) $-\\frac a3$",
+   "s": "The determinant is $a^2(3x+a)$.",
+   "opts": [
+    "$0$",
+    "$-3a$",
+    "$-\\frac a3$",
+    "$\\frac a3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $2x-y+z=0$, $x-2y+z=0$, $\\lambda x-y+2z=0$ has a nonzero solution when $\\lambda$ equals",
+   "a": "(C) $5$",
+   "s": "$|A|=2(-3)+1(2-\\lambda)+1(-1+2\\lambda)=\\lambda-5$.",
+   "opts": [
+    "$-5$",
+    "$3$",
+    "$5$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}1&1&1\\\\a&b&c\\\\bc&ca&ab\\end{vmatrix}$ equals",
+   "a": "(C) $(a-b)(b-c)(c-a)$",
+   "s": "Subtract columns and take out the common factors.",
+   "opts": [
+    "$abc(a+b+c)$",
+    "$(a+b)(b+c)(c+a)$",
+    "$(a-b)(b-c)(c-a)$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\begin{vmatrix}1&x&x+1\\\\2x&x(x-1)&(x+1)x\\\\3x(x-1)&x(x-1)(x-2)&(x+1)x(x-1)\\end{vmatrix}$. Then $f(100)$ equals",
+   "a": "(D) $0$",
+   "s": "$C_1+C_2$ equals $C_3$ in every row, so $f(x)=0$ for all $x$.",
+   "opts": [
+    "$100$",
+    "$1$",
+    "$-100$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}\\alpha&2\\\\2&\\alpha\\end{bmatrix}$ and $|A^3|=125$. Then $\\alpha$ equals",
+   "a": "(B) $\\pm3$",
+   "s": "$|A|^3=125$, so $\\alpha^2-4=5$.",
+   "opts": [
+    "$3$ only",
+    "$\\pm3$",
+    "$\\pm1$",
+    "$\\pm5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle formed by the lines $y=x$, $y=2x$ and $y=3x+4$ is",
+   "a": "(C) $4$",
+   "s": "The vertices are $(0,0)$, $(-2,-2)$, $(-4,-8)$. Area $=\\frac12|-2(-8)-4(2)|$.",
+   "opts": [
+    "$6$",
+    "$8$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=4$ and $B=2A^{-1}$. Then $|\\operatorname{adj}B|$ equals",
+   "a": "(D) $4$",
+   "s": "$|B|=\\frac84=2$ and $|\\operatorname{adj}B|=|B|^2$.",
+   "opts": [
+    "$16$",
+    "$\\frac14$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a real $3\\times3$ matrix with $A^3=I$. Then $|A|$ equals",
+   "a": "(C) $1$",
+   "s": "$|A|^3=1$ and $|A|$ is real.",
+   "opts": [
+    "$-1$",
+    "$3$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $AA'=I$. Then $|A|$ is",
+   "a": "(A) $1$ or $-1$",
+   "s": "$|A|^2=|I|=1$.",
+   "opts": [
+    "$1$ or $-1$",
+    "$3$",
+    "$0$",
+    "$1$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{vmatrix}x&a&a\\\\a&x&a\\\\a&a&x\\end{vmatrix}$ equals",
+   "a": "(C) $(x+2a)(x-a)^2$",
+   "s": "Add all columns to column $1$ and take out $x+2a$.",
+   "opts": [
+    "$(x-2a)(x+a)^2$",
+    "$x^3-a^3$",
+    "$(x+2a)(x-a)^2$",
+    "$(x+a)^3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For a $2\\times2$ matrix $A$, $\\operatorname{adj}A=\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$. Then $A$ equals",
+   "a": "(A) $\\begin{bmatrix}3&1\\\\-2&1\\end{bmatrix}$",
+   "s": "For order $2$, $\\operatorname{adj}(\\operatorname{adj}A)=A$.",
+   "opts": [
+    "$\\begin{bmatrix}3&1\\\\-2&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}-3&1\\\\2&-1\\end{bmatrix}$",
+    "$\\begin{bmatrix}3&-1\\\\2&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2\\\\-1&3\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=2$. Find $|\\operatorname{adj}(3A)|$.",
+   "a": "$2916$",
+   "s": "$|3A|=54$ and $|\\operatorname{adj}(3A)|=54^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\begin{vmatrix}1&2&3\\\\2&3&4\\\\3&4&6\\end{vmatrix}$.",
+   "a": "$-1$",
+   "s": "$1(18-16)-2(12-12)+3(8-9)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of $3\\times3$ matrices with each entry $0$ or $1$ that have an inverse.",
+   "a": "$174$",
+   "s": "Count the $512$ matrices by computer, or by cases on the rows: $174$ have $|A|\\ne0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x+y=5$, $y+z=7$ and $z+x=6$. Find $xyz$.",
+   "a": "$24$",
+   "s": "$x+y+z=9$, so $x=2$, $y=3$, $z=4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle with vertices $(0,0)$, $(\\cos\\theta,\\sin\\theta)$ and $(-\\sin\\theta,\\cos\\theta)$.",
+   "a": "$0.5$",
+   "s": "$\\frac12|\\cos^2\\theta+\\sin^2\\theta|$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch4-advanced-01": [
+  {
+   "q": "$\\begin{vmatrix}x^2+x&x+1&x-2\\\\2x^2+3x-1&3x&3x-3\\\\x^2+2x+3&2x-1&2x-1\\end{vmatrix}=ax-12$. Then $a$ equals",
+   "a": "(C) $24$",
+   "s": "Expand (or use row operations): the determinant is $24x-12$.",
+   "opts": [
+    "$-12$",
+    "$-24$",
+    "$24$",
+    "$12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\omega\\ne1$ is a cube root of unity. The number of distinct complex $z$ with $\\begin{vmatrix}z+1&\\omega&\\omega^2\\\\\\omega&z+\\omega^2&1\\\\\\omega^2&1&z+\\omega\\end{vmatrix}=0$ is",
+   "a": "(A) $1$",
+   "s": "Add all rows to row $1$: it becomes $z$ times $(1,1,1)$. The determinant is $z^3$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$0$",
+    "$3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a$, $b$, $c$ are distinct positive numbers. Then $\\begin{vmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{vmatrix}$ is",
+   "a": "(A) negative",
+   "s": "The value is $-\\frac12(a+b+c)\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]$.",
+   "opts": [
+    "negative",
+    "positive",
+    "zero",
+    "positive or negative"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=4$. Then $|\\operatorname{adj}(\\operatorname{adj}(2A))|$ equals",
+   "a": "(D) $2^{20}$",
+   "s": "$|2A|=32$; the two adjoints give $32^4=2^{20}$.",
+   "opts": [
+    "$2^{24}$",
+    "$2^{10}$",
+    "$2^{16}$",
+    "$2^{20}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P=\\begin{bmatrix}3&-1&-2\\\\2&0&\\alpha\\\\3&-5&0\\end{bmatrix}$ and $Q$ satisfies $PQ=kI$ with $k\\ne0$. $q_{23}=-\\frac k8$ and $|Q|=\\frac{k^2}{2}$. Which statements are true?",
+   "a": "(B), (C)",
+   "s": "$|P|=12\\alpha+20$ and $Q=\\frac k{|P|}\\operatorname{adj}P$. $q_{23}$ gives $\\alpha=-1$, so $|P|=8$. $|Q|=\\frac{k^3}{8}=\\frac{k^2}{2}$ gives $k=4$. Then $|P\\operatorname{adj}Q|=8\\cdot8^2$ and $|Q\\operatorname{adj}P|=8\\cdot8^2$.",
+   "opts": [
+    "$\\alpha=0,\\ k=8$",
+    "$4\\alpha-k+8=0$",
+    "$|P\\operatorname{adj}Q|=2^9$",
+    "$|Q\\operatorname{adj}P|=2^{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider $\\lambda x+y+z=1$, $x+\\lambda y+z=1$, $x+y+\\lambda z=1$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$|A|=(\\lambda-1)^2(\\lambda+2)$. For $\\lambda=-2$, adding the equations gives $0=3$. The unique solution is $x=y=z=\\frac1{\\lambda+2}$.",
+   "opts": [
+    "For $\\lambda\\notin\\{1,-2\\}$ the solution is $x=y=z=\\frac1{\\lambda+1}$",
+    "There is a unique solution when $\\lambda\\notin\\{1,-2\\}$",
+    "There are infinitely many solutions when $\\lambda=1$",
+    "There is no solution when $\\lambda=-2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is an invertible $3\\times3$ matrix. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$\\operatorname{adj}(2A)=4\\operatorname{adj}A$, so $|\\operatorname{adj}(2A)|=64|\\operatorname{adj}A|$.",
+   "opts": [
+    "$|\\operatorname{adj}A|=|A|^2$",
+    "$|\\operatorname{adj}(2A)|=4|\\operatorname{adj}A|$r",
+    "$\\operatorname{adj}(A')=(\\operatorname{adj}A)'$",
+    "$\\operatorname{adj}(A^{-1})=(\\operatorname{adj}A)^{-1}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\Delta=\\begin{vmatrix}1&1&1\\\\a&b&c\\\\a^3&b^3&c^3\\end{vmatrix}$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "Take out $(b-a)(c-a)$; the remaining factor is $(c-b)(a+b+c)$.",
+   "opts": [
+    "$\\Delta=0$ when $a=b$",
+    "$\\Delta=(a-b)(b-c)(c-a)abc$",
+    "$\\Delta=0$ when $a+b+c=0$",
+    "$\\Delta=(a-b)(b-c)(c-a)(a+b+c)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of $2\\times2$ matrices with each entry $-1$, $0$ or $1$ and determinant $0$.",
+   "a": "$33$",
+   "s": "$ad=bc$. The products are $-1$, $0$, $1$ in $2$, $5$, $2$ ways. $2^2+5^2+2^2=33$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The system $x+2y+3z=\\lambda x$, $3x+y+2z=\\lambda y$, $2x+3y+z=\\lambda z$ has a nonzero solution for a real $\\lambda$. Find $\\lambda$.",
+   "a": "$6$",
+   "s": "$|A-\\lambda I|=-(\\lambda-6)(\\lambda^2+3\\lambda+3)$; the quadratic has no real root.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=2$. Find $|\\operatorname{adj}(\\operatorname{adj}A)|\\cdot|A^{-1}|$.",
+   "a": "$8$",
+   "s": "$|A|^4\\cdot\\frac1{|A|}=2^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the greatest value of $\\begin{vmatrix}\\cos x&\\sin x\\\\-2\\sin x&3\\cos x\\end{vmatrix}$.",
+   "a": "$3$",
+   "s": "$3\\cos^2x+2\\sin^2x=2+\\cos^2x$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each determinant with its value.\nList-I: (P) $\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}$; (Q) $\\begin{vmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{vmatrix}$; (R) $\\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&3&6\\end{vmatrix}$; (S) $\\begin{vmatrix}2&1\\\\-1&3\\end{vmatrix}$\nList-II: (1) $1$; (2) $24$; (3) $0$; (4) $7$; (5) $-7$",
+   "a": "(B) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "$0$; $2\\cdot3\\cdot4$; $1(3)-1(3)+1(1)$; $6+1$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=3$. Match each determinant with its value.\nList-I: (P) $|2A|$; (Q) $|\\operatorname{adj}A|$; (R) $|A^{-1}|$; (S) $|\\operatorname{adj}(\\operatorname{adj}A)|$\nList-II: (1) $9$; (2) $81$; (3) $24$; (4) $\\frac13$; (5) $27$",
+   "a": "(D) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "$8\\cdot3$; $3^2$; $\\frac13$; $3^4$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each system with its solutions.\nList-I: (P) $x+y=2$, $2x+2y=4$; (Q) $x+y=2$, $2x+2y=5$; (R) $x+y=2$, $x-y=0$; (S) $x+y+z=0$, $x-y=0$, $y-z=0$\nList-II: (1) a unique solution with $x=y=1$; (2) no solution; (3) infinitely many solutions; (4) only the zero solution; (5) exactly two solutions",
+   "a": "(D) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "Same line; parallel lines; $|A|=-2$; $|A|=3\\ne0$ for the homogeneous system.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 5$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each triangle with its area.\nList-I: (P) $(0,0),(4,0),(0,6)$; (Q) $(1,1),(2,3),(3,5)$; (R) $(-1,0),(1,0),(0,3)$; (S) $(2,2),(6,2),(4,7)$\nList-II: (1) $3$; (2) $10$; (3) $12$; (4) $0$; (5) $6$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$\\frac12\\cdot4\\cdot6$; the points lie on $y=2x-1$; $\\frac12\\cdot2\\cdot3$; $\\frac12\\cdot4\\cdot5$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch4-advanced-02": [
+  {
+   "q": "$\\Delta(x)=\\begin{vmatrix}x&x^2&x^3\\\\1&2x&3x^2\\\\0&2&6x\\end{vmatrix}$. Then $\\Delta'(x)$ equals",
+   "a": "(B) $6x^2$",
+   "s": "Expand along column $1$: $\\Delta(x)=x(12x^2-6x^2)-1(6x^4-2x^3)=2x^3$.",
+   "opts": [
+    "$6x$",
+    "$6x^2$",
+    "$2x^3$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+y+z=3$, $x+2y+2z=5$, $x+2y+az=b$ has no solution when",
+   "a": "(B) $a=2,\\ b\\ne5$",
+   "s": "$|A|=a-2$. At $a=2$ equations $2$ and $3$ have the same left side.",
+   "opts": [
+    "$a=2,\\ b=5$",
+    "$a=2,\\ b\\ne5$",
+    "$a\\ne2$",
+    "$a=5,\\ b\\ne2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{bmatrix}$ with $a,b,c>0$, $abc=1$ and $A'A=I$. Then $a^3+b^3+c^3$ equals",
+   "a": "(A) $4$",
+   "s": "$|A|^2=1$ and $|A|=-(a^3+b^3+c^3-3abc)\\le0$ since $a^3+b^3+c^3\\ge3abc$. So $|A|=-1$.",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$5$",
+    "$3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a real $2\\times2$ matrix with $A^2=-I$. Then $|A|$ equals",
+   "a": "(C) $1$",
+   "s": "$|A|^2=|-I|=1$. If $|A|=-1$, then $A^2-tA-I=O$ gives $tA=-2I$; a scalar $A$ has $A^2\\ne-I$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$1$",
+    "$-1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$M=\\begin{bmatrix}0&1&a\\\\1&2&3\\\\3&b&1\\end{bmatrix}$ and $\\operatorname{adj}M=\\begin{bmatrix}-1&1&-1\\\\8&-6&2\\\\-5&3&-1\\end{bmatrix}$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "Compare cofactors: $a=2$, $b=1$, $|M|=-2$. $(\\operatorname{adj}M)^{-1}=\\frac{M}{|M|}=\\operatorname{adj}(M^{-1})$. $|\\operatorname{adj}(M^2)|=|M|^4=16$. The solution is $(1,-1,1)$.",
+   "opts": [
+    "$a+b=3$",
+    "$(\\operatorname{adj}M)^{-1}+\\operatorname{adj}(M^{-1})=-M$",
+    "$|\\operatorname{adj}(M^2)|=81$",
+    "If $M\\begin{bmatrix}\\alpha\\\\\\beta\\\\\\gamma\\end{bmatrix}=\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}$, then $\\alpha-\\beta+\\gamma=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$a\\ne b$. The system $x+y+z=0$, $x+ay+a^2z=0$, $x+by+b^2z=0$ has a nonzero solution when",
+   "a": "(A), (C)",
+   "s": "$|A|=(a-1)(b-1)(b-a)$, and $b-a\\ne0$.",
+   "opts": [
+    "$a=1$",
+    "$a=-b$",
+    "$b=1$",
+    "$a+b=1$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $|A|=-2$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$|A^2|=4$; $|A^{-1}|=\\frac1{|A|}$; $|A|^2$; $(-1)^3|A|$.",
+   "opts": [
+    "$|A^2|=-4$",
+    "$|A^{-1}|=-\\frac12$",
+    "$|\\operatorname{adj}A|=4$",
+    "$|-A|=2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\Delta(x)=\\begin{vmatrix}1+x&1&1\\\\1&1+x&1\\\\1&1&1+x\\end{vmatrix}$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "Add all columns to column $1$ and take out $x+3$. The roots are $0$ and $-3$.",
+   "opts": [
+    "$\\Delta(x)=x(x+3)^2$",
+    "$\\Delta(x)=x^2(x+3)$",
+    "$\\Delta(x)=0$ has exactly two distinct roots",
+    "$\\Delta(x)\\ge0$ for $x\\ge-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0&0\\\\0&1&1\\\\0&-2&4\\end{bmatrix}$ and $6A^{-1}=A^2+cA+dI$. Find $d$.",
+   "a": "$11$",
+   "s": "By the Cayley-Hamilton theorem, $A^3-6A^2+11A-6I=O$. Multiply by $A^{-1}$: $6A^{-1}=A^2-6A+11I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The area of the triangle with vertices $(-2,0)$, $(0,4)$ and $(0,k)$ is $4$. Find the sum of all possible $k$.",
+   "a": "$8$",
+   "s": "$\\frac12|-2(4-k)|=|k-4|=4$, so $k=0$ or $8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\begin{vmatrix}1&1&1\\\\1&2&4\\\\1&3&9\\end{vmatrix}\\cdot\\begin{vmatrix}1&1&1\\\\1&4&16\\\\1&9&81\\end{vmatrix}$.",
+   "a": "$240$",
+   "s": "Vandermonde: $(2-1)(3-1)(3-2)=2$ and $(4-1)(9-1)(9-4)=120$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Solve $x+y+z=6$, $x-y+z=2$, $2x+y-z=1$ and find $10x+y+z$.",
+   "a": "$15$",
+   "s": "The solution is $x=1$, $y=2$, $z=3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each matrix $A$ with $|\\operatorname{adj}A|$.\nList-I: (P) $\\begin{bmatrix}2&1\\\\3&4\\end{bmatrix}$; (Q) $\\begin{bmatrix}1&0&0\\\\0&2&0\\\\0&0&3\\end{bmatrix}$; (R) $\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$; (S) $\\begin{bmatrix}1&1&1\\\\0&1&1\\\\0&0&2\\end{bmatrix}$\nList-II: (1) $4$; (2) $36$; (3) $0$; (4) $5$; (5) $25$",
+   "a": "(C) $P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+   "s": "For order $2$, $|\\operatorname{adj}A|=|A|$: $5$ and $0$. For order $3$, $|A|^2$: $6^2$ and $2^2$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each determinant with its value.\nList-I: (P) $\\begin{vmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{vmatrix}$; (Q) $\\begin{vmatrix}\\sin\\theta&\\cos\\theta\\\\\\cos\\theta&\\sin\\theta\\end{vmatrix}$; (R) $\\begin{vmatrix}\\cos^2\\theta&\\sin^2\\theta\\\\\\sin^2\\theta&\\cos^2\\theta\\end{vmatrix}$; (S) $\\begin{vmatrix}1&\\cos\\theta\\\\\\cos\\theta&1\\end{vmatrix}$\nList-II: (1) $\\cos2\\theta$; (2) $1$; (3) $\\sin^2\\theta$; (4) $-\\cos2\\theta$; (5) $\\sin2\\theta$",
+   "a": "(B) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "$\\cos^2+\\sin^2$; $\\sin^2-\\cos^2$; $\\cos^4-\\sin^4=\\cos2\\theta$; $1-\\cos^2\\theta$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Consider $x+y+z=2$, $x+2y+z=3$, $x+y+\\lambda z=\\mu$. Match each case with the solutions.\nList-I: (P) $\\lambda=1,\\ \\mu=2$; (Q) $\\lambda=1,\\ \\mu=4$; (R) $\\lambda=2,\\ \\mu=4$; (S) $\\lambda=3,\\ \\mu=4$\nList-II: (1) a unique solution with $z=2$; (2) no solution; (3) infinitely many solutions; (4) a unique solution with $z=1$; (5) a unique solution with $z=0$",
+   "a": "(A) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "$y=1$ from the first two equations, and $(\\lambda-1)z=\\mu-2$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2&3\\\\0&4&5\\\\1&0&6\\end{bmatrix}$. Match each quantity with its value.\nList-I: (P) $M_{11}$; (Q) $A_{12}$; (R) $A_{21}$; (S) $|A|$\nList-II: (1) $5$; (2) $22$; (3) $24$; (4) $-12$; (5) $12$",
+   "a": "(D) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "$\\begin{vmatrix}4&5\\\\0&6\\end{vmatrix}=24$; $-\\begin{vmatrix}0&5\\\\1&6\\end{vmatrix}=5$; $-\\begin{vmatrix}2&3\\\\0&6\\end{vmatrix}=-12$; $1(24)-2(-5)+3(-4)=22$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

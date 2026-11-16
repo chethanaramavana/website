@@ -1,0 +1,2488 @@
+{
+ "g12-ch6-mcq-20-01": [
+  {
+   "q": "For a sphere, the rate of change of volume with respect to the radius at $r=2$ is",
+   "a": "(A) $16\\pi$",
+   "s": "$4\\pi r^2$.",
+   "opts": [
+    "$16\\pi$",
+    "$4\\pi$",
+    "$\\frac{32\\pi}{3}$",
+    "$8\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The edge of a cube increases at $0.5$ cm per second. When the edge is $4$ cm, the surface area increases at",
+   "a": "(B) $24$ $\\text{cm}^2$ per second",
+   "s": "$\\frac{dS}{dt}=12a\\frac{da}{dt}$.",
+   "opts": [
+    "$8$ $\\text{cm}^2$ per second",
+    "$24$ $\\text{cm}^2$ per second",
+    "$48$ $\\text{cm}^2$ per second",
+    "$12$ $\\text{cm}^2$ per second"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The total revenue is $R(x)=13x^2+26x+15$. The marginal revenue at $x=7$ is",
+   "a": "(A) $208$",
+   "s": "$R'(x)=26x+26$.",
+   "opts": [
+    "$208$",
+    "$156$",
+    "$182$",
+    "$26$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=7x-3$ is",
+   "a": "(B) strictly increasing on $\\mathbb{R}$",
+   "s": "$f'(x)=7>0$.",
+   "opts": [
+    "strictly decreasing on $\\mathbb{R}$",
+    "strictly increasing on $\\mathbb{R}$",
+    "constant",
+    "increasing only for $x>0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^2-6x+5$ is strictly decreasing on",
+   "a": "(D) $(-\\infty,3)$",
+   "s": "$f'(x)=2x-6<0$ for $x<3$.",
+   "opts": [
+    "$(1,5)$",
+    "$\\mathbb{R}$",
+    "$(3,\\infty)$",
+    "$(-\\infty,3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=10-6x-2x^2$ is strictly increasing on",
+   "a": "(D) $\\left(-\\infty,-\\frac32\\right)$",
+   "s": "$f'(x)=-6-4x>0$ for $x<-\\frac32$.",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$\\left(-\\infty,\\frac32\\right)$",
+    "$\\left(-\\frac32,\\infty\\right)$",
+    "$\\left(-\\infty,-\\frac32\\right)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=xe^x$ is strictly increasing on",
+   "a": "(C) $(-1,\\infty)$",
+   "s": "$f'(x)=(1+x)e^x$.",
+   "opts": [
+    "$(0,\\infty)$",
+    "$(-\\infty,-1)$",
+    "$(-1,\\infty)$",
+    "$\\mathbb{R}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The local minimum value of $f(x)=x^3-12x$ is",
+   "a": "(B) $-16$",
+   "s": "$f'(x)=3(x^2-4)$; the minimum is at $x=2$.",
+   "opts": [
+    "$-2$",
+    "$-16$",
+    "$16$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=-|x+1|+3$ is",
+   "a": "(A) $3$",
+   "s": "$|x+1|=0$ at $x=-1$.",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum value of $f(x)=x^2+2x+3$ is",
+   "a": "(B) $2$",
+   "s": "$(x+1)^2+2$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$-1$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=\\sin2x+5$ is",
+   "a": "(A) $6$",
+   "s": "$\\sin2x\\le1$.",
+   "opts": [
+    "$6$",
+    "$7$",
+    "$4$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The absolute maximum of $f(x)=2x^3-15x^2+36x+1$ on $[1,5]$ is",
+   "a": "(D) $56$",
+   "s": "Critical points $2,3$: $f(1)=24$, $f(2)=29$, $f(3)=28$, $f(5)=56$.",
+   "opts": [
+    "$24$",
+    "$28$",
+    "$29$",
+    "$56$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two positive numbers have product $49$. Their least possible sum is",
+   "a": "(B) $14$",
+   "s": "$x+\\frac{49}{x}$ is least at $x=7$.",
+   "opts": [
+    "$24.5$",
+    "$14$",
+    "$50$",
+    "$7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A rectangle has area $100$. Its least possible perimeter is",
+   "a": "(C) $40$",
+   "s": "The square of side $10$.",
+   "opts": [
+    "$100$",
+    "$20$",
+    "$40$",
+    "$50$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $x>0$, $f(x)=\\dfrac{\\log x}{x}$ has its greatest value at",
+   "a": "(B) $x=e$",
+   "s": "$f'(x)=\\frac{1-\\log x}{x^2}$.",
+   "opts": [
+    "$x=\\frac1e$",
+    "$x=e$",
+    "$x=e^2$",
+    "$x=1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of critical points of $f(x)=x^3+x$ is",
+   "a": "(A) $0$",
+   "s": "$f'(x)=3x^2+1>0$.",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$3$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The local maximum value of $f(x)=x^3-3x$ is",
+   "a": "(D) $2$",
+   "s": "At $x=-1$: $-1+3$.",
+   "opts": [
+    "$-2$",
+    "$0$",
+    "$1$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\sin x-\\cos x$ is strictly increasing on",
+   "a": "(B) $\\left(0,\\frac{3\\pi}4\\right)$",
+   "s": "$f'(x)=\\cos x+\\sin x>0$ on $\\left(0,\\frac{3\\pi}4\\right)$.",
+   "opts": [
+    "$(0,2\\pi)$",
+    "$\\left(0,\\frac{3\\pi}4\\right)$",
+    "$\\left(\\frac\\pi2,\\pi\\right)$",
+    "$\\left(\\frac{3\\pi}4,\\pi\\right)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=3x+2$ has no maximum value on $\\mathbb{R}$. Reason: $f$ is strictly increasing on $\\mathbb{R}$.",
+   "a": "(A)",
+   "s": "An increasing function on all of $\\mathbb{R}$ has no greatest value.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $x=0$ is a point of local minimum of $f(x)=x^3$. Reason: $f'(0)=0$.",
+   "a": "(D)",
+   "s": "$x^3<0$ for $x<0$. R is true.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch6-board-01": [
+  {
+   "q": "The rate of change of the area of a circle with respect to its radius at $r=6$ is",
+   "a": "(A) $12\\pi$",
+   "s": "$2\\pi r$. [1]",
+   "opts": [
+    "$12\\pi$",
+    "$24\\pi$",
+    "$6\\pi$",
+    "$36\\pi$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The total cost is $C(x)=x^3-2x^2+5x+7$. The marginal cost at $x=2$ is",
+   "a": "(B) $9$",
+   "s": "$C'(x)=3x^2-4x+5$. [1]",
+   "opts": [
+    "$17$",
+    "$9$",
+    "$13$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=e^x$ is",
+   "a": "(B) strictly increasing on $\\mathbb{R}$",
+   "s": "$f'(x)=e^x>0$. [1]",
+   "opts": [
+    "increasing only for $x>0$",
+    "strictly increasing on $\\mathbb{R}$",
+    "constant",
+    "strictly decreasing on $\\mathbb{R}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^2$ is strictly decreasing on",
+   "a": "(C) $(-\\infty,0)$",
+   "s": "$f'(x)=2x<0$ for $x<0$. [1]",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$(0,\\infty)$",
+    "$(-\\infty,0)$",
+    "$(-1,1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=2x^3+3x^2-12x+5$ is strictly decreasing on",
+   "a": "(C) $(-2,1)$",
+   "s": "$f'(x)=6(x+2)(x-1)$. [1]",
+   "opts": [
+    "$(-\\infty,-2)$",
+    "$(1,\\infty)$",
+    "$(-2,1)$",
+    "$(-1,2)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=x+\\cos x$ is",
+   "a": "(D) increasing on $\\mathbb{R}$",
+   "s": "$f'(x)=1-\\sin x\\ge0$. [1]",
+   "opts": [
+    "constant",
+    "decreasing on $(0,\\pi)$",
+    "decreasing on $\\mathbb{R}$",
+    "increasing on $\\mathbb{R}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The critical points of $f(x)=x^3-3x^2+2$ are",
+   "a": "(A) $0$ and $2$",
+   "s": "$f'(x)=3x(x-2)$. [1]",
+   "opts": [
+    "$0$ and $2$",
+    "$-1$ and $1$",
+    "$1$ and $2$",
+    "$0$ and $3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum value of $f(x)=x^2-8x+17$ is",
+   "a": "(B) $1$",
+   "s": "$(x-4)^2+1$. [1]",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$17$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=5-(x-3)^2$ is",
+   "a": "(D) $5$",
+   "s": "At $x=3$. [1]",
+   "opts": [
+    "$2$",
+    "$8$",
+    "$3$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^3-3x$ has a local minimum at",
+   "a": "(C) $x=1$",
+   "s": "$f''(1)=6>0$. [1]",
+   "opts": [
+    "$x=0$",
+    "$x=-1$",
+    "$x=1$",
+    "$x=3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $3\\sin x+4\\cos x$ is",
+   "a": "(B) $5$",
+   "s": "$\\sqrt{3^2+4^2}$. [1]",
+   "opts": [
+    "$7$",
+    "$5$",
+    "$4$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The absolute minimum of $f(x)=x^2$ on $[-1,2]$ is",
+   "a": "(A) $0$",
+   "s": "At $x=0$. [1]",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$4$",
+    "$-1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two positive numbers have sum $10$. Their greatest possible product is",
+   "a": "(A) $25$",
+   "s": "$x=5$. [1]",
+   "opts": [
+    "$25$",
+    "$21$",
+    "$24$",
+    "$100$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f'(c)=0$ and $f''(c)>0$. Then $f$ has at $c$ a",
+   "a": "(A) local minimum",
+   "s": "Second derivative test. [1]",
+   "opts": [
+    "local minimum",
+    "local maximum",
+    "zero",
+    "point of discontinuity"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=\\cos x$ is strictly decreasing on $(0,\\pi)$. Reason: $f'(x)=-\\sin x<0$ on $(0,\\pi)$.",
+   "a": "(A)",
+   "s": "R gives the test. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=x^3-3x$ has a local maximum at $x=-1$. Reason: $f'(x)=3x^2-3$.",
+   "a": "(B)",
+   "s": "R is true, but A needs $f'(-1)=0$ and $f''(-1)<0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The volume of a cube increases at $8$ $\\text{cm}^3$ per second. How fast does the surface area increase when the edge is $12$ cm?",
+   "a": "$\\frac83$ $\\text{cm}^2$ per second",
+   "s": "$\\frac{dV}{dt}=3a^2\\frac{da}{dt}=8$, so $\\frac{da}{dt}=\\frac{8}{432}=\\frac1{54}$ [1]. $\\frac{dS}{dt}=12a\\frac{da}{dt}=\\frac{144}{54}=\\frac83$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "The radius of a spherical air bubble increases at $\\frac12$ cm per second. Find the rate of increase of its volume when the radius is $1$ cm.",
+    "a": "$2\\pi$ $\\text{cm}^3$ per second",
+    "s": "$\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}$ [1] $=4\\pi(1)\\left(\\frac12\\right)=2\\pi$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f(x)=x^3-3x^2+3x-100$ is increasing on $\\mathbb{R}$.",
+   "a": "Shown.",
+   "s": "$f'(x)=3x^2-6x+3=3(x-1)^2$ [1]. $f'(x)\\ge0$ for every $x$, with equality only at $x=1$, so $f$ is increasing [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the intervals in which $f(x)=x^2-4x+6$ is strictly increasing or strictly decreasing.",
+    "a": "Increasing on $(2,\\infty)$, decreasing on $(-\\infty,2)$.",
+    "s": "$f'(x)=2x-4$ [1]. $f'>0$ for $x>2$ and $f'<0$ for $x<2$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the maximum and minimum values, if any, of $f(x)=|x+2|-1$.",
+   "a": "Minimum $-1$; no maximum.",
+   "s": "$|x+2|\\ge0$, so $f(x)\\ge-1$, with equality at $x=-2$ [1]. $f$ grows without bound, so there is no maximum [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the maximum and minimum values of $f(x)=\\sin2x+5$.",
+    "a": "Maximum $6$, minimum $4$.",
+    "s": "$-1\\le\\sin2x\\le1$ [1], so $4\\le f(x)\\le6$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the intervals in which $f(x)=-2x^3-9x^2-12x+1$ is strictly increasing or strictly decreasing.",
+   "a": "Increasing on $(-2,-1)$; decreasing on $(-\\infty,-2)$ and $(-1,\\infty)$.",
+   "s": "$f'(x)=-6x^2-18x-12=-6(x+1)(x+2)$ [1]. $f'>0$ for $-2<x<-1$ [1]. $f'<0$ for $x<-2$ and for $x>-1$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the local maximum and local minimum values of $f(x)=2x^3-21x^2+36x-20$.",
+   "a": "Local maximum $-3$ at $x=1$; local minimum $-128$ at $x=6$.",
+   "s": "$f'(x)=6x^2-42x+36=6(x-1)(x-6)$ [1]. $f''(x)=12x-42$: $f''(1)<0$ and $f''(6)>0$ [1]. $f(1)=-3$ and $f(6)=-128$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the absolute maximum and absolute minimum values of $f(x)=12x^{\\frac43}-6x^{\\frac13}$ on $[-1,1]$.",
+   "a": "Maximum $18$ at $x=-1$; minimum $-\\frac94$ at $x=\\frac18$.",
+   "s": "$f'(x)=16x^{\\frac13}-\\frac{2}{x^{\\frac23}}=\\frac{2(8x-1)}{x^{\\frac23}}$, so $x=\\frac18$ is critical and $f'$ is not defined at $0$ [1]. $f(-1)=18$, $f(0)=0$, $f\\left(\\frac18\\right)=-\\frac94$, $f(1)=6$ [1]. Compare the values [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find the absolute maximum and absolute minimum values of $f(x)=x^3-3x$ on $[0,2]$.",
+    "a": "Maximum $2$ at $x=2$; minimum $-2$ at $x=1$.",
+    "s": "$f'(x)=3(x^2-1)=0$ at $x=1$ in $[0,2]$ [1]. $f(0)=0$, $f(1)=-2$, $f(2)=2$ [1]. Compare [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "From a square sheet of side $18$ cm, an open box is made by cutting equal squares from the corners and folding up the sides. Find the side of the square cut off for which the volume is greatest, and the greatest volume.",
+   "a": "$3$ cm; $432$ $\\text{cm}^3$",
+   "s": "$V=x(18-2x)^2$ for $0<x<9$ [1]. $V'=(18-2x)^2-4x(18-2x)=(18-2x)(18-6x)$ [2]. $V'=0$ at $x=3$, and $V''(3)<0$ [1]. $V(3)=3\\cdot144=432$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A window is a rectangle with a semicircle on top. Its perimeter is $10$ m. Find the dimensions that admit the greatest light.",
+    "a": "Width $\\frac{20}{\\pi+4}$ m, rectangle height $\\frac{10}{\\pi+4}$ m.",
+    "s": "Let the width be $2r$ and the height of the rectangle $h$: $2r+2h+\\pi r=10$ [1]. Area $A=2rh+\\frac12\\pi r^2=r(10-2r-\\pi r)+\\frac12\\pi r^2$ [1]. $A'=10-4r-\\pi r=0$ gives $r=\\frac{10}{\\pi+4}$ [2], and $A''<0$. Then $h=\\frac{10}{\\pi+4}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A manufacturer finds the profit $P(x)=-5x^2+125x+37500$ rupees when $x$ units are made. (i) Find $P'(x)$. [1] (ii) Find the critical point of $P$. [1] (iii) Find the greatest profit. [2] \\textbf{OR} (iii) Find the interval in which $P$ is increasing. [2]",
+   "a": "(i) $-10x+125$; (ii) $x=12.5$; (iii) ₹$38281.25$; OR $(0,12.5)$.",
+   "s": "(i) $P'(x)=-10x+125$ [1]. (ii) $P'(x)=0$ at $x=12.5$ [1]. (iii) $P''=-10<0$, so the maximum is at $12.5$ [1]. $P(12.5)=-781.25+1562.5+37500=38281.25$ [1]. OR $P'>0$ when $x<12.5$ [1], so $P$ increases on $(0,12.5)$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch6-board-02": [
+  {
+   "q": "For a sphere, the rate of change of volume with respect to surface area at $r=2$ is",
+   "a": "(A) $1$",
+   "s": "$\\frac{dV}{dS}=\\frac{4\\pi r^2}{8\\pi r}=\\frac r2$. [1]",
+   "opts": [
+    "$1$",
+    "$4$",
+    "$2$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The radius of a circle increases at $2$ cm per second. When the radius is $5$ cm, the area increases at",
+   "a": "(D) $20\\pi$ $\\text{cm}^2$ per second",
+   "s": "$2\\pi r\\frac{dr}{dt}$. [1]",
+   "opts": [
+    "$25\\pi$ $\\text{cm}^2$ per second",
+    "$10\\pi$ $\\text{cm}^2$ per second",
+    "$4\\pi$ $\\text{cm}^2$ per second",
+    "$20\\pi$ $\\text{cm}^2$ per second"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\log\\cos x$ is strictly decreasing on",
+   "a": "(B) $\\left(0,\\frac\\pi2\\right)$",
+   "s": "$f'(x)=-\\tan x<0$ on $\\left(0,\\frac\\pi2\\right)$. [1]",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$\\left(0,\\frac\\pi2\\right)$",
+    "$\\left(-\\frac\\pi2,0\\right)$",
+    "$(0,\\pi)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=4x^3-6x^2-72x+30$ is strictly increasing on",
+   "a": "(B) $(-\\infty,-2)$ and $(3,\\infty)$",
+   "s": "$f'(x)=12(x-3)(x+2)$. [1]",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$(-\\infty,-2)$ and $(3,\\infty)$",
+    "$(-2,3)$",
+    "$(-3,2)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\sin x+\\cos x$ is strictly increasing on",
+   "a": "(A) $\\left(0,\\frac\\pi4\\right)$",
+   "s": "$f'(x)=\\cos x-\\sin x>0$ for $0<x<\\frac\\pi4$. [1]",
+   "opts": [
+    "$\\left(0,\\frac\\pi4\\right)$",
+    "$\\left(\\frac\\pi4,\\frac\\pi2\\right)$",
+    "$\\left(\\frac\\pi2,\\pi\\right)$",
+    "$(0,\\pi)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $0<a<1$, the function $f(x)=a^x$ is",
+   "a": "(D) strictly decreasing on $\\mathbb{R}$",
+   "s": "$f'(x)=a^x\\log a<0$. [1]",
+   "opts": [
+    "strictly increasing on $\\mathbb{R}$",
+    "constant",
+    "increasing only for $x<0$",
+    "strictly decreasing on $\\mathbb{R}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The stationary points of $f(x)=x^4-4x^3+4x^2$ are",
+   "a": "(B) $0$, $1$ and $2$",
+   "s": "$f'(x)=4x(x-1)(x-2)$. [1]",
+   "opts": [
+    "$0$ and $2$ only",
+    "$0$, $1$ and $2$",
+    "$0$, $2$ and $4$",
+    "$1$ only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum value of $f(x)=9x^2+12x+2$ is",
+   "a": "(A) $-2$",
+   "s": "$(3x+2)^2-2$. [1]",
+   "opts": [
+    "$-2$",
+    "$2$",
+    "$0$",
+    "$-4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=\\sin(\\sin x)$ is",
+   "a": "(A) $\\sin1$",
+   "s": "$\\sin x\\le1$ and $\\sin$ increases on $[-1,1]$. [1]",
+   "opts": [
+    "$\\sin1$",
+    "$1$",
+    "$0$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x(x-1)^2$ has a local maximum at",
+   "a": "(A) $x=\\frac13$",
+   "s": "$f'(x)=(x-1)(3x-1)$. [1]",
+   "opts": [
+    "$x=\\frac13$",
+    "$x=0$",
+    "$x=1$",
+    "$x=\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $(\\sin x+\\cos x)^2$ is",
+   "a": "(D) $2$",
+   "s": "$1+\\sin2x\\le2$. [1]",
+   "opts": [
+    "$\\sqrt2$",
+    "$1$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The absolute maximum of $f(x)=\\sin x+\\cos x$ on $[0,\\pi]$ is",
+   "a": "(C) $\\sqrt2$",
+   "s": "At $x=\\frac\\pi4$. [1]",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$\\sqrt2$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two positive numbers have product $64$. Their least possible sum is",
+   "a": "(A) $16$",
+   "s": "$x=8$. [1]",
+   "opts": [
+    "$16$",
+    "$32$",
+    "$8$",
+    "$65$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f'$ changes sign from negative to positive at $x=c$. Then $c$ is a point of",
+   "a": "(C) local minimum",
+   "s": "First derivative test. [1]",
+   "opts": [
+    "neither maximum nor minimum",
+    "local maximum",
+    "local minimum",
+    "discontinuity"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=x^2$ is strictly increasing on $(0,\\infty)$. Reason: $f'(x)=2x>0$ for $x>0$.",
+   "a": "(A)",
+   "s": "R gives the test. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The maximum of $f(x)=x$ on $[0,1]$ is at $x=1$. Reason: $f'(1)=0$.",
+   "a": "(C)",
+   "s": "$f'(1)=1$. The maximum is at an end point. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The length $x$ of a rectangle decreases at $5$ cm per minute and the width $y$ increases at $4$ cm per minute. Find the rates of change of the perimeter and the area when $x=8$ cm and $y=6$ cm.",
+   "a": "Perimeter $-2$ cm per minute, area $2$ $\\text{cm}^2$ per minute.",
+   "s": "$\\frac{dP}{dt}=2\\left(\\frac{dx}{dt}+\\frac{dy}{dt}\\right)=2(-5+4)=-2$ [1]. $\\frac{dA}{dt}=x\\frac{dy}{dt}+y\\frac{dx}{dt}=32-30=2$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Sand falls at $12$ $\\text{cm}^3$ per second and forms a cone whose height is one-sixth of its radius. How fast does the height increase when it is $4$ cm?",
+    "a": "$\\frac1{48\\pi}$ cm per second",
+    "s": "$r=6h$, so $V=\\frac13\\pi(36h^2)h=12\\pi h^3$ [1]. $36\\pi h^2\\frac{dh}{dt}=12$, so $\\frac{dh}{dt}=\\frac{1}{3\\pi(16)}=\\frac1{48\\pi}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f(x)=\\log\\sin x$ is strictly increasing on $\\left(0,\\dfrac\\pi2\\right)$.",
+   "a": "Shown.",
+   "s": "$f'(x)=\\frac{\\cos x}{\\sin x}=\\cot x$ [1]. $\\cot x>0$ on $\\left(0,\\frac\\pi2\\right)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the local maximum value of $f(x)=\\sin x-\\cos x$ on $(0,2\\pi)$.",
+   "a": "$\\sqrt2$ at $x=\\frac{3\\pi}4$",
+   "s": "$f'(x)=\\cos x+\\sin x=0$ gives $x=\\frac{3\\pi}4,\\frac{7\\pi}4$ [1]. $f''\\left(\\frac{3\\pi}4\\right)=-\\sin\\frac{3\\pi}4+\\cos\\frac{3\\pi}4<0$ and $f\\left(\\frac{3\\pi}4\\right)=\\sqrt2$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the intervals in which $f(x)=(x+1)^3(x-3)^3$ is strictly increasing or strictly decreasing.",
+   "a": "Increasing on $(1,3)$ and $(3,\\infty)$; decreasing on $(-\\infty,-1)$ and $(-1,1)$.",
+   "s": "$f'(x)=3(x+1)^2(x-3)^3+3(x+1)^3(x-3)^2=6(x+1)^2(x-3)^2(x-1)$ [1½]. The squares are positive except at $-1$ and $3$ [½]. $f'>0$ for $x>1$ and $f'<0$ for $x<1$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the local maximum and local minimum values of $g(x)=\\dfrac x2+\\dfrac2x$ for $x>0$.",
+   "a": "Local minimum $2$ at $x=2$; no local maximum.",
+   "s": "$g'(x)=\\frac12-\\frac2{x^2}=0$ at $x=2$ [1]. $g''(x)=\\frac4{x^3}>0$ at $x=2$ [1]. $g(2)=1+1=2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find the local maximum value of $f(x)=\\sin x+\\cos x$ on $\\left(0,\\frac\\pi2\\right)$.",
+    "a": "$\\sqrt2$ at $x=\\frac\\pi4$",
+    "s": "$f'(x)=\\cos x-\\sin x=0$ at $x=\\frac\\pi4$ [1]. $f''\\left(\\frac\\pi4\\right)=-\\sqrt2<0$ [1]. $f\\left(\\frac\\pi4\\right)=\\sqrt2$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the absolute maximum and absolute minimum values of $f(x)=(x-1)^2+3$ on $[-3,1]$.",
+   "a": "Maximum $19$ at $x=-3$; minimum $3$ at $x=1$.",
+   "s": "$f'(x)=2(x-1)=0$ at $x=1$, an end point [1]. $f(-3)=16+3=19$ and $f(1)=3$ [1]. Compare [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the dimensions of the rectangle of perimeter $36$ cm that sweeps out the greatest volume when it turns about one of its sides.",
+   "a": "$12$ cm by $6$ cm",
+   "s": "Let the sides be $x$ and $18-x$; it turns about the side $18-x$, so $V=\\pi x^2(18-x)$ [1]. $V'=\\pi(36x-3x^2)=3\\pi x(12-x)$ [2]. $V'=0$ at $x=12$, and $V''(12)=\\pi(36-72)<0$ [1]. The sides are $12$ cm and $6$ cm [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A wire of length $28$ m is cut into two pieces. One piece forms a square and the other a circle. Find the lengths of the two pieces for which the total area is least.",
+    "a": "Square $\\frac{112}{\\pi+4}$ m, circle $\\frac{28\\pi}{\\pi+4}$ m",
+    "s": "Let the square use length $x$: area $\\frac{x^2}{16}+\\frac{(28-x)^2}{4\\pi}$ [1]. Derivative $\\frac x8-\\frac{28-x}{2\\pi}=0$ [2], so $x=\\frac{112}{\\pi+4}$; the second derivative is positive [1]. The circle uses $28-x=\\frac{28\\pi}{\\pi+4}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A ball is thrown up. Its height after $t$ seconds is $h(t)=20t-5t^2$ metres. (i) Find the velocity at $t=1$. [1] (ii) Find the time at which the height is greatest. [1] (iii) Find the greatest height. [2] \\textbf{OR} (iii) Find the interval of time in which the height increases. [2]",
+   "a": "(i) $10$ m per second; (ii) $2$ s; (iii) $20$ m; OR $(0,2)$.",
+   "s": "(i) $h'(t)=20-10t$, so $h'(1)=10$ [1]. (ii) $h'(t)=0$ at $t=2$ [1]. (iii) $h''=-10<0$ [1]; $h(2)=40-20=20$ [1]. OR $h'(t)>0$ for $t<2$ [1], so the height increases on $(0,2)$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch6-board-03": [
+  {
+   "q": "The total revenue is $R(x)=5x^2+20x$. The marginal revenue at $x=10$ is",
+   "a": "(A) $120$",
+   "s": "$R'(x)=10x+20$. [1]",
+   "opts": [
+    "$120$",
+    "$20$",
+    "$700$",
+    "$100$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For a cube, the rate of change of volume with respect to the edge at $a=3$ is",
+   "a": "(D) $27$",
+   "s": "$3a^2$. [1]",
+   "opts": [
+    "$9$",
+    "$54$",
+    "$18$",
+    "$27$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=x^3-3x^2+4x$ is",
+   "a": "(C) strictly increasing on $\\mathbb{R}$",
+   "s": "$f'(x)=3x^2-6x+4$ has negative discriminant. [1]",
+   "opts": [
+    "strictly decreasing on $\\mathbb{R}$",
+    "decreasing on $(0,2)$",
+    "strictly increasing on $\\mathbb{R}$",
+    "increasing only for $x>1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac1x$ is strictly decreasing on",
+   "a": "(D) $(0,\\infty)$",
+   "s": "$f'(x)=-\\frac1{x^2}<0$. [1]",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$(-1,1)$",
+    "$(-\\infty,0)\\cup(0,\\infty)$",
+    "$(0,\\infty)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=xe^{-x}$ is strictly increasing on",
+   "a": "(B) $(-\\infty,1)$",
+   "s": "$f'(x)=(1-x)e^{-x}$. [1]",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$(-\\infty,1)$",
+    "$(0,\\infty)$",
+    "$(1,\\infty)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\sin x$ is strictly increasing on",
+   "a": "(C) $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+   "s": "$\\cos x>0$ there. [1]",
+   "opts": [
+    "$(0,\\pi)$",
+    "$\\left(\\frac\\pi2,\\frac{3\\pi}2\\right)$",
+    "$\\left(-\\frac\\pi2,\\frac\\pi2\\right)$",
+    "$(\\pi,2\\pi)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=|x|$ has",
+   "a": "(C) a local minimum at $x=0$",
+   "s": "$|x|\\ge0=f(0)$. [1]",
+   "opts": [
+    "a local minimum at $x=1$",
+    "a local maximum at $x=0$",
+    "a local minimum at $x=0$",
+    "no extreme point"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum value of $f(x)=|x-1|+2$ is",
+   "a": "(D) $2$",
+   "s": "At $x=1$. [1]",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=\\dfrac1{x^2+1}$ is",
+   "a": "(B) $1$",
+   "s": "At $x=0$. [1]",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$0$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^3+3x^2-9x$ has a local maximum at",
+   "a": "(C) $x=-3$",
+   "s": "$f'(x)=3(x+3)(x-1)$ and $f''(-3)<0$. [1]",
+   "opts": [
+    "$x=3$",
+    "$x=1$",
+    "$x=-3$",
+    "$x=-1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum value of $f(x)=x(1-x)$ on $[0,1]$ is",
+   "a": "(A) $\\frac14$",
+   "s": "At $x=\\frac12$. [1]",
+   "opts": [
+    "$\\frac14$",
+    "$0$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The absolute minimum of $f(x)=x+\\dfrac1x$ on $\\left[\\dfrac12,3\\right]$ is",
+   "a": "(C) $2$",
+   "s": "At $x=1$. [1]",
+   "opts": [
+    "$\\frac52$",
+    "$\\frac{10}3$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number that exceeds its square by the greatest amount is",
+   "a": "(D) $\\frac12$",
+   "s": "$x-x^2$ is greatest at $x=\\frac12$. [1]",
+   "opts": [
+    "$1$",
+    "$\\frac14$",
+    "$0$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f'(x)>0$ for every $x$ in $(a,b)$. Then $f$ is",
+   "a": "(A) strictly increasing on $(a,b)$",
+   "s": "Test for increasing functions. [1]",
+   "opts": [
+    "strictly increasing on $(a,b)$",
+    "strictly decreasing on $(a,b)$",
+    "not continuous",
+    "constant on $(a,b)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=2x+3$ has no critical point. Reason: $f'(x)=2\\ne0$ for every $x$.",
+   "a": "(A)",
+   "s": "A critical point needs $f'=0$ or $f'$ undefined. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=\\tan x$ is strictly increasing on $\\left(-\\frac\\pi2,\\frac\\pi2\\right)$. Reason: $\\tan x>0$ on $\\left(0,\\frac\\pi2\\right)$.",
+   "a": "(B)",
+   "s": "Both are true. The reason for A is $f'(x)=\\sec^2x>0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A particle moves along $y=\\dfrac23x^3+1$. Find the points at which the $y$-coordinate changes twice as fast as the $x$-coordinate.",
+   "a": "$\\left(1,\\frac53\\right)$ and $\\left(-1,\\frac13\\right)$",
+   "s": "$\\frac{dy}{dt}=2x^2\\frac{dx}{dt}=2\\frac{dx}{dt}$, so $x^2=1$ [1]. The points are $\\left(1,\\frac53\\right)$ and $\\left(-1,\\frac13\\right)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the rate of change of the area of a circle with respect to its circumference when the radius is $2$ cm.",
+    "a": "$2$ cm",
+    "s": "$A=\\frac{C^2}{4\\pi}$ [1], so $\\frac{dA}{dC}=\\frac{C}{2\\pi}=r=2$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $f(x)=x^3-6x^2+12x-18$ is increasing on $\\mathbb{R}$.",
+   "a": "Shown.",
+   "s": "$f'(x)=3x^2-12x+12=3(x-2)^2$ [1]. $f'\\ge0$, with equality only at $x=2$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the maximum value of $f(x)=-x^2+6x-5$.",
+   "a": "$4$",
+   "s": "$f'(x)=-2x+6=0$ at $x=3$, and $f''=-2<0$ [1]. $f(3)=-9+18-5=4$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the intervals in which $f(x)=\\dfrac{x^4}4-x^3-5x^2+24x+12$ is strictly increasing or strictly decreasing.",
+   "a": "Increasing on $(-3,2)$ and $(4,\\infty)$; decreasing on $(-\\infty,-3)$ and $(2,4)$.",
+   "s": "$f'(x)=x^3-3x^2-10x+24=(x-2)(x+3)(x-4)$ [1½]. Check the sign of $f'$ on each interval [1½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the local maximum and local minimum values of $f(x)=\\sin2x-x$ on $\\left(-\\dfrac\\pi2,\\dfrac\\pi2\\right)$.",
+   "a": "Local maximum $\\frac{\\sqrt3}2-\\frac\\pi6$ at $\\frac\\pi6$; local minimum $-\\frac{\\sqrt3}2+\\frac\\pi6$ at $-\\frac\\pi6$.",
+   "s": "$f'(x)=2\\cos2x-1=0$ gives $x=\\pm\\frac\\pi6$ [1]. $f''(x)=-4\\sin2x$: negative at $\\frac\\pi6$, positive at $-\\frac\\pi6$ [1]. Values $\\frac{\\sqrt3}2-\\frac\\pi6$ and $-\\frac{\\sqrt3}2+\\frac\\pi6$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the absolute maximum and absolute minimum values of $f(x)=3x^4-8x^3+12x^2-48x+25$ on $[0,3]$.",
+   "a": "Maximum $25$ at $x=0$; minimum $-39$ at $x=2$.",
+   "s": "$f'(x)=12x^3-24x^2+24x-48=12(x-2)(x^2+2)$, so $x=2$ [1]. $f(0)=25$, $f(2)=-39$, $f(3)=16$ [1]. Compare [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that the height of the cylinder of greatest volume that can be inscribed in a sphere of radius $R$ is $\\dfrac{2R}{\\sqrt3}$. Find the greatest volume.",
+   "a": "$\\frac{4\\pi R^3}{3\\sqrt3}$",
+   "s": "Let the height be $h$ and the radius $r$: $r^2=R^2-\\frac{h^2}4$ [1]. $V=\\pi\\left(R^2h-\\frac{h^3}4\\right)$ [1]. $V'=\\pi\\left(R^2-\\frac{3h^2}4\\right)=0$ gives $h=\\frac{2R}{\\sqrt3}$, and $V''<0$ [2]. $V=\\pi\\cdot\\frac{2R^2}3\\cdot\\frac{2R}{\\sqrt3}=\\frac{4\\pi R^3}{3\\sqrt3}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find the points of the curve $x^2=2y$ that are closest to the point $(0,5)$.",
+    "a": "$(\\pm2\\sqrt2,4)$",
+    "s": "For a point $(x,y)$ of the curve, $D=x^2+(y-5)^2=2y+(y-5)^2$ [2]. $\\frac{dD}{dy}=2+2(y-5)=0$ gives $y=4$, and $\\frac{d^2D}{dy^2}=2>0$ [2]. Then $x^2=8$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A farmer has $200$ m of fencing to enclose a rectangular field beside a straight river; no fence is needed along the river. Let the two sides at right angles to the river be $x$ m each. (i) Write the area $A(x)$. [1] (ii) Find $A'(x)$. [1] (iii) Find the greatest area. [2] \\textbf{OR} (iii) Show that $A$ is increasing on $(0,50)$. [2]",
+   "a": "(i) $x(200-2x)$; (ii) $200-4x$; (iii) $5000$ $\\text{m}^2$; OR shown.",
+   "s": "(i) The third side is $200-2x$, so $A=x(200-2x)$ [1]. (ii) $A'=200-4x$ [1]. (iii) $A'=0$ at $x=50$ and $A'r'=-4<0$ [1]; $A(50)=50\\cdot100=5000$ [1]. OR $A'(x)=200-4x>0$ [1] for $0<x<50$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch6-main-01": [
+  {
+   "q": "The slope of the tangent to $y=x^3-x$ at $x=2$ is",
+   "a": "(D) $11$",
+   "s": "$y'=3x^2-1$.",
+   "opts": [
+    "$6$",
+    "$12$",
+    "$10$",
+    "$11$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the normal to $y=x^2$ at $(1,1)$ is",
+   "a": "(D) $x+2y=3$",
+   "s": "The tangent slope is $2$, so the normal slope is $-\\frac12$.",
+   "opts": [
+    "$2x-y=1$",
+    "$x+y=2$",
+    "$x-2y=-1$",
+    "$x+2y=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point of $y=x^2$ at which the tangent is parallel to $y=4x-5$ is",
+   "a": "(C) $(2,4)$",
+   "s": "$2x=4$.",
+   "opts": [
+    "$(4,16)$",
+    "$(1,1)$",
+    "$(2,4)$",
+    "$(-2,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The tangent to $y=e^x$ at $x=0$ is",
+   "a": "(C) $y=x+1$",
+   "s": "Slope $1$ through $(0,1)$.",
+   "opts": [
+    "$y=1$",
+    "$y=ex$",
+    "$y=x+1$",
+    "$y=x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between $y^2=4x$ and $x^2=4y$ at $(4,4)$ is",
+   "a": "(A) $\\tan^{-1}\\frac34$",
+   "s": "Slopes $\\frac2y=\\frac12$ and $\\frac x2=2$: $\\tan\\theta=\\frac{2-\\frac12}{1+1}$.",
+   "opts": [
+    "$\\tan^{-1}\\frac34$",
+    "$\\frac\\pi2$",
+    "$\\tan^{-1}\\frac43$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Using differentials, $\\sqrt{25.3}$ is approximately",
+   "a": "(B) $5.03$",
+   "s": "$\\sqrt{25}+\\frac{0.3}{2\\cdot5}$.",
+   "opts": [
+    "$5.003$",
+    "$5.03$",
+    "$5.3$",
+    "$5.06$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3+ax^2+bx$ has a local maximum at $x=-1$ and a local minimum at $x=3$. Then $a+b$ equals",
+   "a": "(D) $-12$",
+   "s": "$f'(x)=3(x+1)(x-3)=3x^2-6x-9$, so $a=-3$ and $b=-9$.",
+   "opts": [
+    "$-6$",
+    "$-3$",
+    "$12$",
+    "$-12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x>0$, the greatest value of $x^{\\frac1x}$ is",
+   "a": "(B) $e^{\\frac1e}$",
+   "s": "$\\frac{\\log x}{x}$ is greatest at $x=e$.",
+   "opts": [
+    "$e$",
+    "$e^{\\frac1e}$",
+    "$\\frac1e$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least value of $2^{x^2-2x+3}$ is",
+   "a": "(D) $4$",
+   "s": "$x^2-2x+3=(x-1)^2+2\\ge2$.",
+   "opts": [
+    "$8$",
+    "$1$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=x+\\dfrac1x$ for $x>0$ is",
+   "a": "(C) $[2,\\infty)$",
+   "s": "The least value $2$ is at $x=1$.",
+   "opts": [
+    "$(2,\\infty)$",
+    "$(0,\\infty)$",
+    "$[2,\\infty)$",
+    "$[1,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{(a^2-1)x^3}{3}+(a-1)x^2+2x+1$ is increasing for every real $x$. Then $a$ lies in",
+   "a": "(D) $(-\\infty,-3]\\cup[1,\\infty)$",
+   "s": "$f'(x)=(a^2-1)x^2+2(a-1)x+2\\ge0$ needs $a^2-1>0$ and $(a-1)(a+3)\\ge0$; $a=1$ also works.",
+   "opts": [
+    "$(-\\infty,-1)\\cup(1,\\infty)$",
+    "$(-1,1)$",
+    "$[-3,1]$",
+    "$(-\\infty,-3]\\cup[1,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest area of a rectangle inscribed in $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ is",
+   "a": "(D) $2ab$",
+   "s": "Vertex $(a\\cos\\theta,b\\sin\\theta)$: area $2ab\\sin2\\theta$.",
+   "opts": [
+    "$ab$",
+    "$\\pi ab$",
+    "$4ab$",
+    "$2ab$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The cone of greatest volume inscribed in a sphere of radius $R$ has height",
+   "a": "(D) $\\frac{4R}3$",
+   "s": "With height $h$, $r^2=h(2R-h)$; $V=\\frac\\pi3h^2(2R-h)$ is greatest at $h=\\frac{4R}3$.",
+   "opts": [
+    "$\\frac{2R}3$",
+    "$\\frac{3R}2$",
+    "$R$",
+    "$\\frac{4R}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point of $y^2=4x$ nearest to $(2,1)$ is",
+   "a": "(A) $(1,2)$",
+   "s": "With $(t^2,2t)$, $\\frac{d}{dt}\\left[(t^2-2)^2+(2t-1)^2\\right]=4t^3-4=0$.",
+   "opts": [
+    "$(1,2)$",
+    "$(0,0)$",
+    "$(2,2\\sqrt2)$",
+    "$(4,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of real roots of $x^3-3x+1=0$ is",
+   "a": "(C) $3$",
+   "s": "Local maximum $f(-1)=3>0$ and local minimum $f(1)=-1<0$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$3$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The tangent to $y=x^3$ at $(1,1)$ meets the curve again at",
+   "a": "(D) $(-2,-8)$",
+   "s": "Tangent $y=3x-2$; $x^3-3x+2=(x-1)^2(x+2)$.",
+   "opts": [
+    "$(2,8)$",
+    "$(0,0)$",
+    "$(-1,-1)$",
+    "$(-2,-8)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The volume of a spherical balloon increases at $25$ $\\text{cm}^3$ per second. When the radius is $5$ cm, the radius increases at",
+   "a": "(C) $\\frac1{4\\pi}$ cm per second",
+   "s": "$4\\pi r^2\\frac{dr}{dt}=25$.",
+   "opts": [
+    "$\\frac1\\pi$ cm per second",
+    "$4\\pi$ cm per second",
+    "$\\frac1{4\\pi}$ cm per second",
+    "$\\frac{1}{2\\pi}$ cm per second"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least value of $\\sin x+\\cos x$ on $[0,2\\pi]$ is",
+   "a": "(B) $-\\sqrt2$",
+   "s": "At $x=\\frac{5\\pi}4$.",
+   "opts": [
+    "$-2$",
+    "$-\\sqrt2$",
+    "$-1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=xe^{x(1-x)}$ is increasing on",
+   "a": "(D) $\\left[-\\frac12,1\\right]$",
+   "s": "$f'(x)=-(2x+1)(x-1)e^{x(1-x)}\\ge0$ there.",
+   "opts": [
+    "$\\mathbb{R}$",
+    "$\\left(-\\infty,-\\frac12\\right]$",
+    "$[1,\\infty)$",
+    "$\\left[-\\frac12,1\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x>0$, the greatest value of $\\dfrac{\\log x}{x}$ is",
+   "a": "(A) $\\frac1e$",
+   "s": "At $x=e$.",
+   "opts": [
+    "$\\frac1e$",
+    "$1$",
+    "$0$",
+    "$e$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the absolute maximum and absolute minimum of $f(x)=2x^3-9x^2+12x+5$ on $[0,3]$.",
+   "a": "$19$",
+   "s": "$f(0)=5$, $f(1)=10$, $f(2)=9$, $f(3)=14$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the least value of $x^2+\\dfrac{250}{x}$ for $x>0$.",
+   "a": "$75$",
+   "s": "$2x-\\frac{250}{x^2}=0$ at $x=5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the $y$-intercept of the tangent to $y=x^2+3x$ at $x=1$.",
+   "a": "$-1$",
+   "s": "Slope $5$ through $(1,4)$: $y=5x-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of critical points of $f(x)=(x-1)^2(x-2)^3$.",
+   "a": "$3$",
+   "s": "$f'(x)=(x-1)(x-2)^2(5x-7)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "An open cylindrical tank has volume $27\\pi$ $\\text{m}^3$. Find the radius for which its surface area is least.",
+   "a": "$3$",
+   "s": "$S=\\pi r^2+\\frac{54\\pi}{r}$; $2\\pi r=\\frac{54\\pi}{r^2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch6-main-02": [
+  {
+   "q": "The tangent to $x^2+y^2=25$ at $(3,4)$ is",
+   "a": "(A) $3x+4y=25$",
+   "s": "$xx_1+yy_1=25$.",
+   "opts": [
+    "$3x+4y=25$",
+    "$3x-4y=-7$",
+    "$x+y=7$",
+    "$4x+3y=25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The normal to $y=x^3$ at $(2,8)$ is",
+   "a": "(B) $x+12y=98$",
+   "s": "Tangent slope $12$; normal slope $-\\frac1{12}$.",
+   "opts": [
+    "$12x-y=16$",
+    "$x+12y=98$",
+    "$x-12y=-94$",
+    "$x+12y=26$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The points of $\\dfrac{x^2}4+\\dfrac{y^2}{25}=1$ at which the tangent is parallel to the $x$-axis are",
+   "a": "(C) $(0,\\pm5)$",
+   "s": "$y'=-\\frac{25x}{4y}=0$ at $x=0$.",
+   "opts": [
+    "$(\\pm5,0)$",
+    "$(0,\\pm2)$",
+    "$(0,\\pm5)$",
+    "$(\\pm2,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Using differentials, $(26)^{\\frac13}$ is approximately",
+   "a": "(A) $2.963$",
+   "s": "$3-\\frac{1}{3\\cdot9}$.",
+   "opts": [
+    "$2.963$",
+    "$2.926$",
+    "$2.99$",
+    "$3.037$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The curves $x=y^2$ and $xy=k$ cut at right angles. Then",
+   "a": "(C) $8k^2=1$",
+   "s": "At the meeting point $y^3=k$; the slopes are $\\frac1{2y}$ and $-\\frac yx$; their product is $-1$.",
+   "opts": [
+    "$4k^2=1$",
+    "$k^2=8$",
+    "$8k^2=1$",
+    "$k=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=a\\log|x|+bx^2+x$ has extreme values at $x=-1$ and $x=2$. Then $(a,b)$ equals",
+   "a": "(D) $\\left(2,-\\frac12\\right)$",
+   "s": "$f'(x)=\\frac ax+2bx+1$: $-a-2b+1=0$ and $\\frac a2+4b+1=0$.",
+   "opts": [
+    "$\\left(-2,\\frac12\\right)$",
+    "$\\left(2,\\frac12\\right)$",
+    "$\\left(\\frac12,-2\\right)$",
+    "$\\left(2,-\\frac12\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3+bx^2+cx+d$ with $0<b^2<c$. Then $f$ is",
+   "a": "(B) strictly increasing on $\\mathbb{R}$",
+   "s": "$f'(x)=3x^2+2bx+c$ has discriminant $4b^2-12c<0$.",
+   "opts": [
+    "has a local minimum",
+    "strictly increasing on $\\mathbb{R}$",
+    "strictly decreasing on $\\mathbb{R}$",
+    "has a local maximum"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $(x+1)^{\\frac13}-(x-1)^{\\frac13}$ on $[0,1]$ is",
+   "a": "(C) $2$",
+   "s": "The function decreases on $[0,1]$; $f(0)=1-(-1)$.",
+   "opts": [
+    "$0$",
+    "$2^{\\frac13}$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least value of $4^x+4^{1-x}$ is",
+   "a": "(B) $4$",
+   "s": "AM-GM: $4^x+\\frac4{4^x}\\ge2\\sqrt4$.",
+   "opts": [
+    "$2$",
+    "$4$",
+    "$1$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "From a square sheet of side $24$ cm, equal squares are cut from the corners to make an open box. The greatest volume is",
+   "a": "(D) $1024$ $\\text{cm}^3$",
+   "s": "$V=x(24-2x)^2$ is greatest at $x=4$.",
+   "opts": [
+    "$864$ $\\text{cm}^3$",
+    "$1152$ $\\text{cm}^3$",
+    "$972$ $\\text{cm}^3$",
+    "$1024$ $\\text{cm}^3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest slope of $y=-x^3+3x^2+9x-27$ is",
+   "a": "(B) $12$",
+   "s": "The slope $-3x^2+6x+9$ is greatest at $x=1$.",
+   "opts": [
+    "$6$",
+    "$12$",
+    "$15$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\tan^{-1}(\\sin x+\\cos x)$ is increasing on",
+   "a": "(C) $\\left(0,\\frac\\pi4\\right)$",
+   "s": "$f'=\\frac{\\cos x-\\sin x}{1+(\\sin x+\\cos x)^2}$.",
+   "opts": [
+    "$\\left(\\frac\\pi4,\\pi\\right)$",
+    "$\\left(\\frac\\pi4,\\frac\\pi2\\right)$",
+    "$\\left(0,\\frac\\pi4\\right)$",
+    "$\\left(\\frac\\pi2,\\pi\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The tangent to $y=2x^2-x+1$ is parallel to $y=3x+9$ at the point",
+   "a": "(A) $(1,2)$",
+   "s": "$4x-1=3$.",
+   "opts": [
+    "$(1,2)$",
+    "$(2,7)$",
+    "$(0,1)$",
+    "$(-1,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The side of a cube increases by $1\\%$. The approximate increase in its volume is",
+   "a": "(C) $3\\%$",
+   "s": "$\\frac{dV}{V}=3\\frac{dx}{x}$.",
+   "opts": [
+    "$2\\%$",
+    "$1\\%$",
+    "$3\\%$",
+    "$0.3\\%$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between $y=e^x$ and $y=e^{-x}$ at $(0,1)$ is",
+   "a": "(C) $\\frac\\pi2$",
+   "s": "The slopes are $1$ and $-1$.",
+   "opts": [
+    "$\\frac\\pi3$",
+    "$0$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x>0$, the least value of $x\\log x$ is",
+   "a": "(C) $-\\frac1e$",
+   "s": "At $x=\\frac1e$.",
+   "opts": [
+    "$-e$",
+    "$\\frac1e$",
+    "$-\\frac1e$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $\\sin x(1+\\cos x)$ on $[0,\\pi]$ is",
+   "a": "(B) $\\frac{3\\sqrt3}4$",
+   "s": "$f'=\\cos x+\\cos2x=0$ gives $\\cos x=\\frac12$.",
+   "opts": [
+    "$1$",
+    "$\\frac{3\\sqrt3}4$",
+    "$2$",
+    "$\\frac{\\sqrt3}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x^3-3x+k=0$ has three distinct real roots if and only if",
+   "a": "(B) $-2<k<2$",
+   "s": "The local values are $f(-1)=2+k$ and $f(1)=k-2$; they must have opposite signs.",
+   "opts": [
+    "$-1<k<1$",
+    "$-2<k<2$",
+    "$k<-2$",
+    "$k>2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x+y=8$ with $x,y>0$. The greatest value of $xy^3$ is",
+   "a": "(D) $432$",
+   "s": "$(8-y)y^3$ is greatest at $y=6$.",
+   "opts": [
+    "$256$",
+    "$384$",
+    "$512$",
+    "$432$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The points of $y=x^2$ nearest to $(0,1)$ are",
+   "a": "(A) $\\left(\\pm\\frac1{\\sqrt2},\\frac12\\right)$",
+   "s": "$x^2+(x^2-1)^2$ has derivative $2x(2x^2-1)$.",
+   "opts": [
+    "$\\left(\\pm\\frac1{\\sqrt2},\\frac12\\right)$",
+    "$(0,0)$",
+    "$(\\pm1,1)$",
+    "$\\left(\\pm\\frac12,\\frac14\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the local maximum value and the local minimum value of $f(x)=x^3-3x^2-9x+5$.",
+   "a": "$-12$",
+   "s": "$f(-1)=10$ and $f(3)=-22$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle formed by the coordinate axes and the tangent to $xy=4$ at $(2,2)$.",
+   "a": "$8$",
+   "s": "Tangent $x+y=4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the absolute maximum of $f(x)=2x^3-24x+107$ on $[1,3]$.",
+   "a": "$89$",
+   "s": "$f(1)=85$, $f(2)=75$, $f(3)=89$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The curve $y=ax^2+bx$ passes through $(1,1)$ and its tangent at the origin is $y=2x$. Find $a$.",
+   "a": "$-1$",
+   "s": "$y'(0)=b=2$ and $a+b=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $\\sin x+\\cos2x$.",
+   "a": "$1.125$",
+   "s": "$\\sin x+1-2\\sin^2x$ is greatest at $\\sin x=\\frac14$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch6-advanced-01": [
+  {
+   "q": "$f(x)=x^3+ax^2+bx+5\\sin^2x$ is increasing on $\\mathbb{R}$ when",
+   "a": "(B) $a^2-3b+15<0$",
+   "s": "$f'(x)=3x^2+2ax+b+5\\sin2x\\ge3x^2+2ax+b-5$; this is positive when $4a^2-12(b-5)<0$.",
+   "opts": [
+    "$a^2-3b-15>0$",
+    "$a^2-3b+15<0$",
+    "$a^2+3b+15<0$",
+    "$a^2-3b+15>0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point of $x^2=4y$ nearest to $(1,2)$ is",
+   "a": "(D) $(2,1)$",
+   "s": "$\\frac{d}{dx}\\left[(x-1)^2+\\left(\\frac{x^2}4-2\\right)^2\\right]=\\frac{x^3}{4}-2=0$ at $x=2$.",
+   "opts": [
+    "$(0,0)$",
+    "$(1,\\frac14)$",
+    "$(-2,1)$",
+    "$(2,1)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of points of local extremum of $f(x)=|x^2-4|$ is",
+   "a": "(A) $3$",
+   "s": "Local minima at $x=\\pm2$ and a local maximum at $x=0$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$4$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The normal to $y=x^2$ at $(1,1)$ meets the curve again at",
+   "a": "(A) $\\left(-\\frac32,\\frac94\\right)$",
+   "s": "Normal $y=-\\frac x2+\\frac32$; $2x^2+x-3=0$.",
+   "opts": [
+    "$\\left(-\\frac32,\\frac94\\right)$",
+    "$\\left(\\frac32,\\frac94\\right)$",
+    "$(-1,1)$",
+    "$\\left(-2,4\\right)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3-3x$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$f'(x)=3(x^2-1)<0$ on $(-1,1)$. The roots are $0,\\pm\\sqrt3$.",
+   "opts": [
+    "$f$ has a local maximum at $x=-1$",
+    "The local minimum value is $-2$",
+    "$f$ is increasing on $(-1,1)$",
+    "$f(x)=0$ has three real roots"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=xe^{-x}$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$f'=(1-x)e^{-x}$ and $f''=(x-2)e^{-x}$.",
+   "opts": [
+    "$f$ is increasing on $(-\\infty,1)$",
+    "The greatest value of $f$ is $\\frac1e$",
+    "$f''(x)<0$ for $x<2$",
+    "$f$ has a local minimum"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the tangent and the normal to $y=x^2-2x$ at $(3,3)$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$y'=2x-2=4$. The normal meets the $y$-axis at $\\left(0,\\frac{15}4\\right)$.",
+   "opts": [
+    "The tangent is $y=4x-9$",
+    "The normal is $x+4y=15$",
+    "The tangent meets the $x$-axis at $\\left(\\frac94,0\\right)$",
+    "The normal meets the $y$-axis at $(0,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\sin x+\\cos x$ on $[0,2\\pi]$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$f'(x)=\\cos x-\\sin x<0$ on $\\left(\\frac\\pi4,\\frac{5\\pi}4\\right)$.",
+   "opts": [
+    "The greatest value is $\\sqrt2$, at $x=\\frac\\pi4$",
+    "The least value is $-\\sqrt2$, at $x=\\frac{5\\pi}4$",
+    "$f$ is increasing on $\\left(\\frac\\pi4,\\frac{5\\pi}4\\right)$",
+    "$f$ is decreasing on $\\left(\\frac\\pi4,\\frac{5\\pi}4\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of real roots of $x^4-4x+1=0$.",
+   "a": "$2$",
+   "s": "$f'(x)=4x^3-4$; the only minimum is $f(1)=-2<0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the least value of $\\dfrac{x^2+7x+10}{x+1}$ for $x>-1$.",
+   "a": "$9$",
+   "s": "With $u=x+1$: $u+\\frac4u+5\\ge9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$x+y+z=12$ with $x,y,z>0$. Find the greatest value of $xyz$.",
+   "a": "$64$",
+   "s": "Equal values $4,4,4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the local minimum value of $f(x)=x^3+3x^2-9x+7$.",
+   "a": "$2$",
+   "s": "$f'(x)=3(x+3)(x-1)$; $f(1)=1+3-9+7$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each function with its greatest value on the stated set.\nList-I: (P) $x(1-x)$ on $[0,1]$; (Q) $\\sin x\\cos x$ on $\\mathbb{R}$; (R) $xe^{-x}$ on $(0,\\infty)$; (S) $x^{\\frac1x}$ on $(0,\\infty)$\nList-II: (1) $\\frac1e$; (2) $\\frac14$; (3) $e^{\\frac1e}$; (4) $\\frac12$; (5) $1$",
+   "a": "(C) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "At $\\frac12$; $\\frac12\\sin2x$; at $x=1$; at $x=e$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with the slope of its tangent at the given point.\nList-I: (P) $y=x^2$ at $(1,1)$; (Q) $y=e^x$ at $(0,1)$; (R) $x^2+y^2=25$ at $(3,4)$; (S) $y=\\sin x$ at $(\\pi,0)$\nList-II: (1) $-1$; (2) $2$; (3) $-\\frac34$; (4) $1$; (5) $\\frac34$",
+   "a": "(C) $P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+   "s": "$2x$; $e^x$; $-\\frac xy$; $\\cos x$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with the interval on which it is increasing.\nList-I: (P) $x^2-4x$; (Q) $-x^2+2x$; (R) $\\log x-x$; (S) $x^3-3x$\nList-II: (1) $(0,1)$; (2) $(-1,1)$; (3) $(2,\\infty)$; (4) $(-\\infty,1)$; (5) $(-\\infty,-1)\\cup(1,\\infty)$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+   "s": "$2x-4>0$; $-2x+2>0$; $\\frac1x-1>0$ with $x>0$; $3x^2-3>0$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 5$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each rate with its value.\nList-I: (P) $\\frac{dA}{dr}$ for a circle at $r=2$; (Q) $\\frac{dV}{dr}$ for a sphere at $r=2$; (R) $\\frac{dS}{dr}$ for a sphere at $r=1$; (S) $\\frac{dV}{da}$ for a cube at $a=2$\nList-II: (1) $12$; (2) $8\\pi$; (3) $4\\pi$; (4) $16\\pi$; (5) $2\\pi$",
+   "a": "(D) $P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+   "s": "$2\\pi r$; $4\\pi r^2$; $8\\pi r$; $3a^2$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch6-advanced-02": [
+  {
+   "q": "The number of points of local minimum of $f(x)=2|x|+|x+2|-\\big||x+2|-2|x|\\big|$ is",
+   "a": "(C) $2$",
+   "s": "$a+b-|a-b|=2\\min(a,b)$, so $f=2\\min(2|x|,|x+2|)$. Its local minima are at $x=-2$ and $x=0$.",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$p(x)$ is a polynomial of least degree with a local maximum at $x=1$, a local minimum at $x=3$, $p(1)=6$ and $p(3)=2$. Then $p'(0)$ equals",
+   "a": "(D) $9$",
+   "s": "$p'(x)=k(x-1)(x-3)$ and $p(1)-p(3)=\\frac{4k}3=4$, so $k=3$.",
+   "opts": [
+    "$3$",
+    "$6$",
+    "$-9$",
+    "$9$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The tangent at $P(1,1)$ to $y^2=x(2-x)^2$ meets the curve again at",
+   "a": "(C) $\\left(\\frac94,\\frac38\\right)$",
+   "s": "At $(1,1)$, $2yy'=(2-x)^2-2x(2-x)$ gives slope $-\\frac12$. Solve with $y=1-\\frac{x-1}2$.",
+   "opts": [
+    "$\\left(\\frac14,\\frac78\\right)$",
+    "$\\left(4,-4\\right)$",
+    "$\\left(\\frac94,\\frac38\\right)$",
+    "$(2,0)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A rectangle is inscribed in a semicircle of radius $r$, with one side on the diameter. The greatest area is",
+   "a": "(A) $r^2$",
+   "s": "Vertex $(r\\cos\\theta,r\\sin\\theta)$: area $r^2\\sin2\\theta$.",
+   "opts": [
+    "$r^2$",
+    "$2r^2$",
+    "$\\frac{r^2}2$",
+    "$\\frac{\\pi r^2}{4}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^4-8x^2$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$f'(x)=4x(x^2-4)<0$ on $(0,2)$; $f(\\pm2)=16-32$.",
+   "opts": [
+    "$f$ has a local maximum at $x=0$",
+    "$f$ has local minima at $x=\\pm2$",
+    "The least value of $f$ is $-16$",
+    "$f$ is increasing on $(0,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\log x-x$ for $x>0$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$f'(x)=\\frac1x-1$; the only critical point $x=1$ is a maximum.",
+   "opts": [
+    "$f$ is increasing on $(0,1)$",
+    "$f$ has a local minimum",
+    "The greatest value of $f$ is $-1$",
+    "$f(x)\\le-1$ for every $x>0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The line $y=mx+1$ touches $y^2=4x$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "Substitute: $m^2x^2+(2m-4)x+1=0$ has equal roots, so $m=1$ and $x=1$.",
+   "opts": [
+    "$m=1$",
+    "The point of contact is $(1,2)$",
+    "$m=-1$",
+    "The normal at the point of contact is $x+y=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=e^x(x^2-3)$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$f'(x)=e^x(x+3)(x-1)<0$ on $(-3,1)$.",
+   "opts": [
+    "$f$ has a local maximum at $x=-3$",
+    "$f$ is increasing on $(-3,1)$",
+    "$f$ has a local minimum at $x=1$",
+    "The local minimum value is $-2e$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of points of local extremum of $f(x)=x^4-2x^2+3$.",
+   "a": "$3$",
+   "s": "$f'(x)=4x(x^2-1)$: $x=0,\\pm1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the greatest value of $f(x)=x(x-1)^2$ on $[0,2]$.",
+   "a": "$2$",
+   "s": "Local maximum $f\\left(\\frac13\\right)=\\frac4{27}$; end value $f(2)=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the triangle formed by the tangent and the normal to $y=x^2$ at $(1,1)$ and the $x$-axis.",
+   "a": "$1.25$",
+   "s": "Tangent $y=2x-1$ meets the axis at $\\frac12$; normal $y=\\frac{3-x}2$ meets it at $3$. Area $\\frac12\\cdot\\frac52\\cdot1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the least value of $x^2+\\dfrac{16}{x^2}$.",
+   "a": "$8$",
+   "s": "AM-GM: $\\ge2\\sqrt{16}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each number with its approximate value by differentials.\nList-I: (P) $\\sqrt{26}$; (Q) $\\sqrt{0.037}$; (R) $(82)^{\\frac14}$; (S) $(26)^{\\frac13}$\nList-II: (1) $2.963$; (2) $5.1$; (3) $3.009$; (4) $0.1925$; (5) $4.9$",
+   "a": "(B) $P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+   "s": "$5+\\frac1{10}$; $0.19+\\frac{0.0009}{0.38}$; $3+\\frac1{108}$; $3-\\frac1{27}$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with its tangent at the given point.\nList-I: (P) $y=x^2$ at $(2,4)$; (Q) $y=x^3$ at $(1,1)$; (R) $y=e^x$ at $(0,1)$; (S) $y=\\log x$ at $(1,0)$\nList-II: (1) $y=x+1$; (2) $y=4x-4$; (3) $y=x-1$; (4) $y=3x-2$; (5) $y=2x$",
+   "a": "(D) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "Slopes $4$, $3$, $1$, $1$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each problem with its answer.\nList-I: (P) greatest product of two positive numbers with sum $20$; (Q) least sum of two positive numbers with product $25$; (R) greatest area of a rectangle with perimeter $24$; (S) greatest volume of an open box from a square sheet of side $12$\nList-II: (1) $36$; (2) $128$; (3) $100$; (4) $10$; (5) $50$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$10\\cdot10$; $5+5$; $6\\cdot6$; $x(12-2x)^2$ at $x=2$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 5$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its behaviour at $x=0$.\nList-I: (P) $x^2$; (Q) $-x^2$; (R) $x^3$; (S) $|x|$\nList-II: (1) not an extreme point; (2) local minimum where $f$ is not differentiable; (3) local maximum with $f''(0)<0$; (4) local minimum with $f''(0)>0$; (5) local maximum with $f''(0)=0$",
+   "a": "(A) $P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+   "s": "$f''(0)=2$; $f''(0)=-2$; $x^3$ changes sign; $|x|$ has a corner.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

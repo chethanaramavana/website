@@ -1,0 +1,2488 @@
+{
+ "g12-ch3-mcq-20-01": [
+  {
+   "q": "The order of $\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}$ is",
+   "a": "(A) $2\\times3$",
+   "s": "$2$ rows and $3$ columns.",
+   "opts": [
+    "$2\\times3$",
+    "$2\\times2$",
+    "$3\\times2$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For the $2\\times2$ matrix with $a_{ij}=ij$, the matrix is",
+   "a": "(A) $\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$",
+   "s": "$a_{11}=1$, $a_{12}=a_{21}=2$, $a_{22}=4$.",
+   "opts": [
+    "$\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&3\\\\3&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&1\\\\2&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}x-y&2\\\\4&x+y\\end{bmatrix}=\\begin{bmatrix}1&2\\\\4&5\\end{bmatrix}$. Then $xy$ equals",
+   "a": "(D) $6$",
+   "s": "$x=3$ and $y=2$.",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$1$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-2\\\\3&0\\end{bmatrix}$ and $B=\\begin{bmatrix}4&1\\\\-1&2\\end{bmatrix}$. Then $A+2B$ equals",
+   "a": "(A) $\\begin{bmatrix}9&0\\\\1&4\\end{bmatrix}$",
+   "s": "$2B=\\begin{bmatrix}8&2\\\\-2&4\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}9&0\\\\1&4\\end{bmatrix}$",
+    "$\\begin{bmatrix}9&0\\\\1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}5&-1\\\\2&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}6&-3\\\\5&-4\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}\\begin{bmatrix}1&-1\\\\2&0\\end{bmatrix}$ equals",
+   "a": "(D) $\\begin{bmatrix}4&-2\\\\6&0\\end{bmatrix}$",
+   "s": "Row $1$: $2+2,\\ -2+0$. Row $2$: $0+6,\\ 0+0$.",
+   "opts": [
+    "$\\begin{bmatrix}2&-2\\\\4&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-2\\\\6&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&-1\\\\0&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-2\\\\6&0\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is $3\\times4$ and $B$ is $m\\times3$. $BA$ has order $5\\times4$. Then $m$ equals",
+   "a": "(D) $5$",
+   "s": "$(m\\times3)(3\\times4)=m\\times4$.",
+   "opts": [
+    "$12$",
+    "$4$",
+    "$3$",
+    "$5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&0\\\\1&0\\end{bmatrix}$. Then $A^2$ equals",
+   "a": "(C) $O$",
+   "s": "Row $2$ of $A$ times column $1$ of $A$ is $0\\cdot0+0\\cdot1$.",
+   "opts": [
+    "$A$",
+    "$\\begin{bmatrix}0&0\\\\0&1\\end{bmatrix}$",
+    "$O$",
+    "$I$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{bmatrix}\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}$ equals",
+   "a": "(B) $I$",
+   "s": "Each diagonal entry is $\\cos^2\\theta+\\sin^2\\theta$; the other entries cancel.",
+   "opts": [
+    "$O$",
+    "$I$",
+    "$2I$",
+    "$\\begin{bmatrix}\\cos2\\theta&0\\\\0&\\cos2\\theta\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A'=-A$. Then $A$ is",
+   "a": "(D) skew-symmetric",
+   "s": "This is the definition.",
+   "opts": [
+    "the identity matrix",
+    "symmetric",
+    "a row matrix",
+    "skew-symmetric"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A matrix that is both symmetric and skew-symmetric is",
+   "a": "(C) the zero matrix",
+   "s": "$A=A'=-A$ gives $2A=O$.",
+   "opts": [
+    "the identity matrix",
+    "a row matrix",
+    "the zero matrix",
+    "a scalar matrix"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&4\\\\2&1\\end{bmatrix}$. Then $A-A'$ equals",
+   "a": "(B) $\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$",
+   "s": "$A'=\\begin{bmatrix}3&2\\\\4&1\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}0&-2\\\\2&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}6&6\\\\6&2\\end{bmatrix}$",
+    "$O$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of $2\\times2$ matrices with each entry $0$, $1$ or $2$ is",
+   "a": "(A) $81$",
+   "s": "$3^4=81$.",
+   "opts": [
+    "$81$",
+    "$64$",
+    "$27$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are symmetric matrices of the same order. Then $AB-BA$ is",
+   "a": "(C) skew-symmetric",
+   "s": "$(AB-BA)'=BA-AB$.",
+   "opts": [
+    "the zero matrix",
+    "the identity matrix",
+    "skew-symmetric",
+    "symmetric"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}2&3\\end{bmatrix}\\begin{bmatrix}1\\\\-1\\end{bmatrix}$ equals",
+   "a": "(D) $[-1]$",
+   "s": "$2-3=-1$.",
+   "opts": [
+    "$\\begin{bmatrix}2&-3\\end{bmatrix}$",
+    "$\\begin{bmatrix}2\\\\-3\\end{bmatrix}$",
+    "$[5]$",
+    "$[-1]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$. Then $A^{2025}$ equals",
+   "a": "(D) $A$",
+   "s": "$A^2=I$ and $2025$ is odd.",
+   "opts": [
+    "$O$",
+    "$I$",
+    "$-I$",
+    "$A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&1\\\\5&2\\end{bmatrix}$. Then $A^{-1}$ equals",
+   "a": "(B) $\\begin{bmatrix}2&-1\\\\-5&3\\end{bmatrix}$",
+   "s": "$\\begin{bmatrix}3&1\\\\5&2\\end{bmatrix}\\begin{bmatrix}2&-1\\\\-5&3\\end{bmatrix}=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}-2&1\\\\5&-3\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&-1\\\\-5&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&-5\\\\-1&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&1\\\\5&3\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A^2=I$. Then $(A-I)(A+I)$ equals",
+   "a": "(C) $O$",
+   "s": "$A^2+A-A-I=A^2-I$.",
+   "opts": [
+    "$I$",
+    "$2A$",
+    "$O$",
+    "$A^2+I$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}k&2\\\\2&k\\end{bmatrix}^2=\\begin{bmatrix}5&4\\\\4&5\\end{bmatrix}$. Then $k$ equals",
+   "a": "(D) $1$",
+   "s": "$k^2+4=5$ and $4k=4$.",
+   "opts": [
+    "$2$",
+    "$\\pm1$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\begin{bmatrix}1\\\\2\\end{bmatrix}$ is defined. Reason: $AB$ is defined when the number of columns of $A$ equals the number of rows of $B$.",
+   "a": "(A)",
+   "s": "$2$ columns and $2$ rows.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $AB=BA$ for all square matrices $A$ and $B$ of the same order. Reason: Matrix multiplication is associative.",
+   "a": "(D)",
+   "s": "$\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$ and $\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$ do not commute. R is true.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch3-board-01": [
+  {
+   "q": "A matrix of order $1\\times n$ is called a",
+   "a": "(B) row matrix",
+   "s": "It has one row. [1]",
+   "opts": [
+    "diagonal matrix",
+    "row matrix",
+    "square matrix",
+    "column matrix"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For the $3\\times3$ matrix with $a_{ij}=|i-j|$, the matrix is",
+   "a": "(C) $\\begin{bmatrix}0&1&2\\\\1&0&1\\\\2&1&0\\end{bmatrix}$",
+   "s": "$|i-j|$ is $0$ on the diagonal and grows away from it. [1]",
+   "opts": [
+    "$\\begin{bmatrix}0&-1&-2\\\\1&0&-1\\\\2&1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&1&2\\\\-1&0&1\\\\-2&-1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&1&2\\\\1&0&1\\\\2&1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2&3\\\\2&1&2\\\\3&2&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of elements in a $4\\times5$ matrix is",
+   "a": "(D) $20$",
+   "s": "$4\\times5=20$. [1]",
+   "opts": [
+    "$9$",
+    "$5$",
+    "$45$",
+    "$20$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}x+3&4\\\\3y-4&x+y\\end{bmatrix}=\\begin{bmatrix}5&4\\\\5&5\\end{bmatrix}$. Then $x-y$ equals",
+   "a": "(B) $-1$",
+   "s": "$x=2$ and $y=3$. [1]",
+   "opts": [
+    "$1$",
+    "$-1$",
+    "$5$",
+    "$-5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&1\\\\0&-1\\end{bmatrix}$ and $B=\\begin{bmatrix}1&3\\\\-2&4\\end{bmatrix}$. Then $3A-B$ equals",
+   "a": "(D) $\\begin{bmatrix}5&0\\\\2&-7\\end{bmatrix}$",
+   "s": "$3A=\\begin{bmatrix}6&3\\\\0&-3\\end{bmatrix}$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}7&6\\\\-2&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}5&0\\\\-2&-7\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-2\\\\2&-5\\end{bmatrix}$",
+    "$\\begin{bmatrix}5&0\\\\2&-7\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is $2\\times3$ and $B$ is $3\\times3$. Which of these is defined?",
+   "a": "(B) $AB$",
+   "s": "$(2\\times3)(3\\times3)$ is defined. [1]",
+   "opts": [
+    "$A+B$",
+    "$AB$",
+    "$A^2$",
+    "$BA$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}\\begin{bmatrix}2\\\\1\\end{bmatrix}$ equals",
+   "a": "(C) $\\begin{bmatrix}1\\\\7\\end{bmatrix}$",
+   "s": "$2-1=1$ and $4+3=7$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}2&-1\\\\4&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}3\\\\5\\end{bmatrix}$",
+    "$\\begin{bmatrix}1\\\\7\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&7\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$. Then $A^4$ equals",
+   "a": "(A) $8A$",
+   "s": "$A^2=2A$, so $A^4=(2A)^2=4A^2$. [1]",
+   "opts": [
+    "$8A$",
+    "$16A$",
+    "$2A$",
+    "$4A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\-1&3\\end{bmatrix}$. Then $A'$ equals",
+   "a": "(B) $\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$",
+   "s": "Rows become columns. [1]",
+   "opts": [
+    "$\\begin{bmatrix}-1&1\\\\-2&-3\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2\\\\-1&3\\end{bmatrix}$",
+    "$\\begin{bmatrix}3&-1\\\\2&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}1&x+2\\\\2x-3&5\\end{bmatrix}$ is symmetric. Then $x$ equals",
+   "a": "(A) $5$",
+   "s": "$x+2=2x-3$. [1]",
+   "opts": [
+    "$5$",
+    "$-5$",
+    "$1$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a skew-symmetric matrix of order $3$ with $a_{12}=4$. Then $a_{21}$ equals",
+   "a": "(B) $-4$",
+   "s": "$a_{21}=-a_{12}$. [1]",
+   "opts": [
+    "$4$",
+    "$-4$",
+    "$0$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$(A+B)'$ equals",
+   "a": "(C) $A'+B'$",
+   "s": "Transpose each term. [1]",
+   "opts": [
+    "$A+B'$",
+    "$B'A'$",
+    "$A'+B'$",
+    "$A'B'$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a square matrix with $A^2=A$. Then $(I+A)^2-3A$ equals",
+   "a": "(A) $I$",
+   "s": "$(I+A)^2=I+2A+A^2=I+3A$. [1]",
+   "opts": [
+    "$I$",
+    "$A$",
+    "$3A$",
+    "$I+A$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is invertible. Then $(A')^{-1}$ equals",
+   "a": "(D) $(A^{-1})'$",
+   "s": "$A'(A^{-1})'=(A^{-1}A)'=I$. [1]",
+   "opts": [
+    "$-(A^{-1})'$",
+    "$A'$",
+    "$A^{-1}$",
+    "$(A^{-1})'$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: If $A$ is $2\\times3$ and $B$ is $3\\times2$, then $AB$ and $BA$ are both defined. Reason: $AB$ and $BA$ are square matrices of the same order.",
+   "a": "(C)",
+   "s": "$AB$ is $2\\times2$ but $BA$ is $3\\times3$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For every square matrix $A$, $A+A'$ is symmetric. Reason: $(A+A')'=A'+A$.",
+   "a": "(A)",
+   "s": "R shows that the transpose is the same matrix. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find $x$ and $y$ if $2\\begin{bmatrix}x&5\\\\7&y-3\\end{bmatrix}+\\begin{bmatrix}3&-4\\\\1&2\\end{bmatrix}=\\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}$.",
+   "a": "$x=2,\\ y=9$",
+   "s": "$\\begin{bmatrix}2x+3&6\\\\15&2y-4\\end{bmatrix}=\\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}$ [1]. $2x+3=7\\Rightarrow x=2$; $2y-4=14\\Rightarrow y=9$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find $X$ if $2X+\\begin{bmatrix}3&2\\\\1&4\\end{bmatrix}=\\begin{bmatrix}1&0\\\\-3&2\\end{bmatrix}$.",
+    "a": "$\\begin{bmatrix}-1&-1\\\\-2&-1\\end{bmatrix}$",
+    "s": "$2X=\\begin{bmatrix}1&0\\\\-3&2\\end{bmatrix}-\\begin{bmatrix}3&2\\\\1&4\\end{bmatrix}=\\begin{bmatrix}-2&-2\\\\-4&-2\\end{bmatrix}$ [1]. $X=\\begin{bmatrix}-1&-1\\\\-2&-1\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}$. Show that $A^2-4A+I=O$.",
+   "a": "Shown.",
+   "s": "$A^2=\\begin{bmatrix}7&12\\\\4&7\\end{bmatrix}$ [1]. $A^2-4A+I=\\begin{bmatrix}7-8+1&12-12\\\\4-4&7-8+1\\end{bmatrix}=O$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ and $B=\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$. Find $AB-BA$.",
+   "a": "$\\begin{bmatrix}-1&-3\\\\3&1\\end{bmatrix}$",
+   "s": "$AB=\\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}$ [½]. $BA=\\begin{bmatrix}3&4\\\\1&2\\end{bmatrix}$ [½]. $AB-BA=\\begin{bmatrix}-1&-3\\\\3&1\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}$ and $B=\\begin{bmatrix}-1&2&1\\end{bmatrix}$. Find $(AB)'$.",
+    "a": "$\\begin{bmatrix}-1&-2&-3\\\\2&4&6\\\\1&2&3\\end{bmatrix}$",
+    "s": "$AB=\\begin{bmatrix}-1&2&1\\\\-2&4&2\\\\-3&6&3\\end{bmatrix}$ [1]. $(AB)'=\\begin{bmatrix}-1&-2&-3\\\\2&4&6\\\\1&2&3\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Express $A=\\begin{bmatrix}3&5\\\\1&-1\\end{bmatrix}$ as the sum of a symmetric matrix and a skew-symmetric matrix.",
+   "a": "$\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}+\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$",
+   "s": "$A'=\\begin{bmatrix}3&1\\\\5&-1\\end{bmatrix}$ [½]. $P=\\frac12(A+A')=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}$, and $P'=P$ [1]. $Q=\\frac12(A-A')=\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$, and $Q'=-Q$ [1]. $P+Q=A$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&0&1\\\\2&1&3\\\\1&-1&0\\end{bmatrix}$. Find $A^2-5A+6I$.",
+   "a": "$\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}5&-1&2\\\\9&-2&5\\\\0&-1&-2\\end{bmatrix}$ [1½]. $-5A+6I=\\begin{bmatrix}-4&0&-5\\\\-10&1&-15\\\\-5&5&6\\end{bmatrix}$ [½]. Sum $\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}$. Find $k$ such that $A^2=kA-2I$.",
+    "a": "$k=1$",
+    "s": "$A^2=\\begin{bmatrix}1&-2\\\\4&-4\\end{bmatrix}$ [1]. $kA-2I=\\begin{bmatrix}3k-2&-2k\\\\4k&-2k-2\\end{bmatrix}$ [1]. Compare: $-2k=-2\\Rightarrow k=1$, and the other entries agree [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1\\\\-4\\\\3\\end{bmatrix}$ and $B=\\begin{bmatrix}-1&2&1\\end{bmatrix}$. Verify that $(AB)'=B'A'$.",
+   "a": "Verified.",
+   "s": "$AB=\\begin{bmatrix}-1&2&1\\\\4&-8&-4\\\\-3&6&3\\end{bmatrix}$ [1], so $(AB)'=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$ [½]. $B'A'=\\begin{bmatrix}-1\\\\2\\\\1\\end{bmatrix}\\begin{bmatrix}1&-4&3\\end{bmatrix}=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$ [1]. The two are equal [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}$. Show that $A^3-6A^2+7A+2I=O$.",
+   "a": "Shown.",
+   "s": "$A^2=\\begin{bmatrix}5&0&8\\\\2&4&5\\\\8&0&13\\end{bmatrix}$ [2]. $A^3=A^2A=\\begin{bmatrix}21&0&34\\\\12&8&23\\\\34&0&55\\end{bmatrix}$ [2]. $A^3-6A^2+7A+2I$: $(1,1)$ entry $21-30+7+2=0$, $(1,3)$ entry $34-48+14=0$, and all other entries are $0$ in the same way [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Express $A=\\begin{bmatrix}3&-2&-4\\\\3&-2&-5\\\\-1&1&2\\end{bmatrix}$ as the sum of a symmetric matrix and a skew-symmetric matrix.",
+    "a": "$\\begin{bmatrix}3&\\frac12&-\\frac52\\\\\\frac12&-2&-2\\\\-\\frac52&-2&2\\end{bmatrix}+\\begin{bmatrix}0&-\\frac52&-\\frac32\\\\\\frac52&0&-3\\\\\\frac32&3&0\\end{bmatrix}$",
+    "s": "$A'=\\begin{bmatrix}3&3&-1\\\\-2&-2&1\\\\-4&-5&2\\end{bmatrix}$ [1]. $P=\\frac12(A+A')=\\begin{bmatrix}3&\\frac12&-\\frac52\\\\\\frac12&-2&-2\\\\-\\frac52&-2&2\\end{bmatrix}$ [1½], and $P'=P$. $Q=\\frac12(A-A')=\\begin{bmatrix}0&-\\frac52&-\\frac32\\\\\\frac52&0&-3\\\\\\frac32&3&0\\end{bmatrix}$ [1½], and $Q'=-Q$. $P+Q=A$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Two shops $P$ and $Q$ sell notebooks, pens and bags. One day $P$ sells $20$ notebooks, $30$ pens and $10$ bags, and $Q$ sells $15$ notebooks, $40$ pens and $5$ bags. The prices are ₹$40$, ₹$10$ and ₹$300$. Let $S=\\begin{bmatrix}20&30&10\\\\15&40&5\\end{bmatrix}$ and $C=\\begin{bmatrix}40\\\\10\\\\300\\end{bmatrix}$. (i) Write the order of $S$. [1] (ii) Find the sales amount of shop $P$. [1] (iii) Find $SC$. [2] \\textbf{OR} (iii) The cost prices are ₹$30$, ₹$6$ and ₹$220$. Find the profit matrix of the two shops. [2]",
+   "a": "(i) $2\\times3$; (ii) ₹$4100$; (iii) $\\begin{bmatrix}4100\\\\2500\\end{bmatrix}$; OR $\\begin{bmatrix}1120\\\\710\\end{bmatrix}$.",
+   "s": "(i) $2$ rows and $3$ columns [1]. (ii) $20(40)+30(10)+10(300)=4100$ [1]. (iii) Row $2$: $15(40)+40(10)+5(300)=2500$ [1]. $SC=\\begin{bmatrix}4100\\\\2500\\end{bmatrix}$ [1]. OR Profit per item $\\begin{bmatrix}10\\\\4\\\\80\\end{bmatrix}$ [1]. $S\\begin{bmatrix}10\\\\4\\\\80\\end{bmatrix}=\\begin{bmatrix}200+120+800\\\\150+160+400\\end{bmatrix}=\\begin{bmatrix}1120\\\\710\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch3-board-02": [
+  {
+   "q": "A matrix with the same number of rows and columns is called a",
+   "a": "(D) square matrix",
+   "s": "This is the definition. [1]",
+   "opts": [
+    "zero matrix",
+    "column matrix",
+    "row matrix",
+    "square matrix"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For the $2\\times2$ matrix with $a_{ij}=i^2-j$, the matrix is",
+   "a": "(C) $\\begin{bmatrix}0&-1\\\\3&2\\end{bmatrix}$",
+   "s": "$1-1,\\ 1-2,\\ 4-1,\\ 4-2$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}0&3\\\\-1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-1\\\\3&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&-1\\\\3&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&1\\\\3&2\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of possible orders of a matrix with $7$ elements is",
+   "a": "(A) $2$",
+   "s": "$1\\times7$ and $7\\times1$. [1]",
+   "opts": [
+    "$2$",
+    "$14$",
+    "$1$",
+    "$7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}2a+b&a-2b\\\\5c-d&4c+3d\\end{bmatrix}=\\begin{bmatrix}4&-3\\\\11&24\\end{bmatrix}$. Then $a+b+c+d$ equals",
+   "a": "(D) $10$",
+   "s": "$a=1$, $b=2$, $c=3$, $d=4$. [1]",
+   "opts": [
+    "$8$",
+    "$9$",
+    "$12$",
+    "$10$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&1\\\\-1&0\\end{bmatrix}$ and $B=\\begin{bmatrix}1&2\\\\0&-1\\end{bmatrix}$. Then $A-2B$ equals",
+   "a": "(C) $\\begin{bmatrix}1&-3\\\\-1&2\\end{bmatrix}$",
+   "s": "$2B=\\begin{bmatrix}2&4\\\\0&-2\\end{bmatrix}$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}5&5\\\\-1&-2\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&3\\\\-1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-3\\\\-1&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&-1\\\\-1&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$AB$ has order $3\\times5$ and $A$ has order $3\\times4$. The order of $B$ is",
+   "a": "(B) $4\\times5$",
+   "s": "$B$ must have $4$ rows and $5$ columns. [1]",
+   "opts": [
+    "$3\\times5$",
+    "$4\\times5$",
+    "$4\\times3$",
+    "$5\\times4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}\\begin{bmatrix}a\\\\b\\end{bmatrix}$ equals",
+   "a": "(A) $\\begin{bmatrix}b\\\\-a\\end{bmatrix}$",
+   "s": "$0\\cdot a+1\\cdot b$ and $-a+0\\cdot b$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}b\\\\-a\\end{bmatrix}$",
+    "$\\begin{bmatrix}a\\\\-b\\end{bmatrix}$",
+    "$\\begin{bmatrix}b&-a\\end{bmatrix}$",
+    "$\\begin{bmatrix}-b\\\\a\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$. Then $A^2$ equals",
+   "a": "(B) $-I$",
+   "s": "$\\begin{bmatrix}0-1&0\\\\0&-1\\end{bmatrix}$. [1]",
+   "opts": [
+    "$A$",
+    "$-I$",
+    "$I$",
+    "$O$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The transpose of $\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}$ is",
+   "a": "(D) $\\begin{bmatrix}1&2&3\\end{bmatrix}$",
+   "s": "A column becomes a row. [1]",
+   "opts": [
+    "$\\begin{bmatrix}3\\\\2\\\\1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}$",
+    "$\\begin{bmatrix}3&2&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2&3\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$. Then $A'$ equals",
+   "a": "(A) $-A$",
+   "s": "$A$ is skew-symmetric. [1]",
+   "opts": [
+    "$-A$",
+    "$A$",
+    "$I$",
+    "$O$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are symmetric matrices of the same order. $AB$ is symmetric if and only if",
+   "a": "(A) $AB=BA$",
+   "s": "$(AB)'=B'A'=BA$. [1]",
+   "opts": [
+    "$AB=BA$",
+    "$AB=O$",
+    "$A=B$",
+    "$A'=B$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}0&x-1\\\\3&0\\end{bmatrix}$ is skew-symmetric. Then $x$ equals",
+   "a": "(D) $-2$",
+   "s": "$x-1=-3$. [1]",
+   "opts": [
+    "$-4$",
+    "$2$",
+    "$4$",
+    "$-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}\\begin{bmatrix}1&0&0\\\\0&0&0\\\\0&0&2\\end{bmatrix}$ equals",
+   "a": "(D) $\\begin{bmatrix}2&0&0\\\\0&0&0\\\\0&0&8\\end{bmatrix}$",
+   "s": "Multiply the diagonal entries. [1]",
+   "opts": [
+    "$\\begin{bmatrix}1&0&0\\\\0&0&0\\\\0&0&2\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&8\\end{bmatrix}$",
+    "$\\begin{bmatrix}3&0&0\\\\0&3&0\\\\0&0&6\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&0&0\\\\0&0&0\\\\0&0&8\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A^2=I$. Then $A^{-1}$ equals",
+   "a": "(A) $A$",
+   "s": "$AA=I$. [1]",
+   "opts": [
+    "$A$",
+    "$A'$",
+    "$-A$",
+    "$I$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ is neither symmetric nor skew-symmetric. Reason: A matrix that is not symmetric must be skew-symmetric.",
+   "a": "(C)",
+   "s": "$a_{12}\\ne a_{21}$ and $a_{12}\\ne-a_{21}$. R is false. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For $A=\\begin{bmatrix}1&0\\\\0&2\\end{bmatrix}$ and $B=\\begin{bmatrix}3&0\\\\0&5\\end{bmatrix}$, $(A+B)(A-B)=A^2-B^2$. Reason: Diagonal matrices of the same order commute.",
+   "a": "(A)",
+   "s": "$(A+B)(A-B)=A^2-AB+BA-B^2$, and $AB=BA$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find $X$ and $Y$ if $X+Y=\\begin{bmatrix}7&0\\\\2&5\\end{bmatrix}$ and $X-Y=\\begin{bmatrix}3&0\\\\0&3\\end{bmatrix}$.",
+   "a": "$X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix},\\ Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$",
+   "s": "Add: $2X=\\begin{bmatrix}10&0\\\\2&8\\end{bmatrix}$, so $X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix}$ [1]. Subtract: $2Y=\\begin{bmatrix}4&0\\\\2&2\\end{bmatrix}$, so $Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Find the matrix $A$ such that $\\begin{bmatrix}2&-1\\\\1&0\\\\-3&4\\end{bmatrix}A=\\begin{bmatrix}-1&-8&-10\\\\1&-2&-5\\\\9&22&15\\end{bmatrix}$.",
+    "a": "$\\begin{bmatrix}1&-2&-5\\\\3&4&0\\end{bmatrix}$",
+    "s": "$A$ is $2\\times3$ [½]. Row $2$ of the left matrix is $\\begin{bmatrix}1&0\\end{bmatrix}$, so row $1$ of $A$ is $\\begin{bmatrix}1&-2&-5\\end{bmatrix}$ [½]. Row $1$ gives $2(1,-2,-5)-(\\text{row }2)=(-1,-8,-10)$, so row $2$ is $\\begin{bmatrix}3&4&0\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}5&3\\\\-1&-2\\end{bmatrix}$. Show that $A^2-3A-7I=O$. Hence find $A^{-1}$.",
+   "a": "$A^{-1}=\\frac17\\begin{bmatrix}2&3\\\\-1&-5\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}22&9\\\\-3&1\\end{bmatrix}$ and $A^2-3A-7I=O$ [1]. $A(A-3I)=7I$, so $A^{-1}=\\frac17(A-3I)=\\frac17\\begin{bmatrix}2&3\\\\-1&-5\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that $A=\\begin{bmatrix}1&-1&5\\\\-1&2&1\\\\5&1&3\\end{bmatrix}$ is symmetric and $B=\\begin{bmatrix}0&1&-1\\\\-1&0&1\\\\1&-1&0\\end{bmatrix}$ is skew-symmetric.",
+   "a": "Shown.",
+   "s": "$A'=\\begin{bmatrix}1&-1&5\\\\-1&2&1\\\\5&1&3\\end{bmatrix}=A$ [1]. $B'=\\begin{bmatrix}0&-1&1\\\\1&0&-1\\\\-1&1&0\\end{bmatrix}=-B$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&-2&-4\\\\-1&3&4\\\\1&-2&-3\\end{bmatrix}$. Show that $A^2=A$. Hence find $(I+A)^3-7A$.",
+   "a": "$I$",
+   "s": "Row $1$ of $A^2$: $4+2-4,\\ -4-6+8,\\ -8-8+12=2,-2,-4$ [1]. Rows $2$ and $3$ give $-1,3,4$ and $1,-2,-3$, so $A^2=A$ [1]. $(I+A)^3=I+3A+3A^2+A^3=I+7A$, so the value is $I$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&1&1\\\\0&1&1\\\\0&0&1\\end{bmatrix}$. Find $A^2$ and $A^3$.",
+   "a": "$A^2=\\begin{bmatrix}1&2&3\\\\0&1&2\\\\0&0&1\\end{bmatrix},\\ A^3=\\begin{bmatrix}1&3&6\\\\0&1&3\\\\0&0&1\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}1&2&3\\\\0&1&2\\\\0&0&1\\end{bmatrix}$ [1½]. $A^3=A^2A=\\begin{bmatrix}1&3&6\\\\0&1&3\\\\0&0&1\\end{bmatrix}$ [1½].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "Find $x$ and $y$ if $\\begin{bmatrix}x&y\\\\3y&x\\end{bmatrix}\\begin{bmatrix}1\\\\2\\end{bmatrix}=\\begin{bmatrix}3\\\\5\\end{bmatrix}$.",
+    "a": "$x=1,\\ y=1$",
+    "s": "$x+2y=3$ and $3y+2x=5$ [1]. $x=3-2y$ gives $3y+6-4y=5$ [1]. $y=1$ and $x=1$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$F(x)=\\begin{bmatrix}\\cos x&-\\sin x&0\\\\\\sin x&\\cos x&0\\\\0&0&1\\end{bmatrix}$. Show that $F(x)F(y)=F(x+y)$.",
+   "a": "Shown.",
+   "s": "The $(1,1)$ entry of $F(x)F(y)$ is $\\cos x\\cos y-\\sin x\\sin y=\\cos(x+y)$ [1]. The $(1,2)$ entry is $-\\cos x\\sin y-\\sin x\\cos y=-\\sin(x+y)$, and the second row gives $\\sin(x+y)$ and $\\cos(x+y)$ [1]. The third row and column stay $0,0,1$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A trust has ₹$30000$ to invest in two bonds. The first bond pays $5\\%$ interest each year and the second pays $7\\%$. Use matrix multiplication to find how the trust must divide the money to get a total annual interest of ₹$1800$.",
+   "a": "₹$15000$ in each bond",
+   "s": "Let ₹$x$ go to the first bond and ₹$(30000-x)$ to the second [1]. Interest $=\\begin{bmatrix}x&30000-x\\end{bmatrix}\\begin{bmatrix}0.05\\\\0.07\\end{bmatrix}$ [1] $=0.05x+2100-0.07x=2100-0.02x$ [1]. $2100-0.02x=1800$ [1], so $x=15000$; the other bond also gets ₹$15000$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}1&2&3\\\\3&-2&1\\\\4&2&1\\end{bmatrix}$. Show that $A^3-23A-40I=O$.",
+    "a": "Shown.",
+    "s": "$A^2=\\begin{bmatrix}19&4&8\\\\1&12&8\\\\14&6&15\\end{bmatrix}$ [2]. $A^3=\\begin{bmatrix}63&46&69\\\\69&-6&23\\\\92&46&63\\end{bmatrix}$ [2]. $A^3-23A-40I$: $(1,1)$ entry $63-23-40=0$, $(1,2)$ entry $46-46=0$, and all other entries are $0$ in the same way [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. Raju buys $3$ kg apples, $2$ kg grapes and $4$ kg oranges. Ravi buys $2$ kg apples, $4$ kg grapes and $1$ kg oranges. The prices per kg are ₹$120$, ₹$80$, ₹$60$ in market $1$ and ₹$100$, ₹$90$, ₹$50$ in market $2$. Let $Q=\\begin{bmatrix}3&2&4\\\\2&4&1\\end{bmatrix}$ and $P=\\begin{bmatrix}120&100\\\\80&90\\\\60&50\\end{bmatrix}$. (i) Write the order of $QP$. [1] (ii) Find the bill of Raju in market $1$. [1] (iii) Find $QP$ and say which market is cheaper for each person. [2] \\textbf{OR} (iii) Find the total amount that both persons pay in market $2$. [2]",
+   "a": "(i) $2\\times2$; (ii) ₹$760$; (iii) $\\begin{bmatrix}760&680\\\\620&610\\end{bmatrix}$, market $2$ for both; OR ₹$1290$.",
+   "s": "(i) $(2\\times3)(3\\times2)=2\\times2$ [1]. (ii) $360+160+240=760$ [1]. (iii) $QP=\\begin{bmatrix}760&680\\\\620&610\\end{bmatrix}$ [1]. $680<760$ and $610<620$, so market $2$ is cheaper for both [1]. OR Raju $300+180+200=680$ and Ravi $200+360+50=610$ [1]. Total ₹$1290$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch3-board-03": [
+  {
+   "q": "The number of possible orders of a matrix with $8$ elements is",
+   "a": "(C) $4$",
+   "s": "$1\\times8,\\ 2\\times4,\\ 4\\times2,\\ 8\\times1$. [1]",
+   "opts": [
+    "$8$",
+    "$2$",
+    "$4$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "In $A=\\begin{bmatrix}2&5&19&-7\\\\35&-2&\\frac52&12\\\\\\sqrt3&1&-5&17\\end{bmatrix}$, the element $a_{23}$ is",
+   "a": "(B) $\\frac52$",
+   "s": "Row $2$, column $3$. [1]",
+   "opts": [
+    "$12$",
+    "$\\frac52$",
+    "$19$",
+    "$-5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A column matrix with $4$ elements has order",
+   "a": "(D) $4\\times1$",
+   "s": "It has one column. [1]",
+   "opts": [
+    "$2\\times2$",
+    "$1\\times4$",
+    "$4\\times4$",
+    "$4\\times1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\begin{bmatrix}x&3x-y\\\\2x+z&3y-w\\end{bmatrix}=\\begin{bmatrix}3&2\\\\4&7\\end{bmatrix}$. Then $w$ equals",
+   "a": "(B) $14$",
+   "s": "$x=3$, $y=7$, and $3y-w=7$. [1]",
+   "opts": [
+    "$21$",
+    "$14$",
+    "$7$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A+B=\\begin{bmatrix}1&0\\\\1&1\\end{bmatrix}$ and $A-2B=\\begin{bmatrix}-1&1\\\\0&-1\\end{bmatrix}$. Then $A$ equals",
+   "a": "(B) $\\frac13\\begin{bmatrix}1&1\\\\2&1\\end{bmatrix}$",
+   "s": "$3B=\\begin{bmatrix}2&-1\\\\1&2\\end{bmatrix}$, and $A=(A+B)-B$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}1&1\\\\2&1\\end{bmatrix}$",
+    "$\\frac13\\begin{bmatrix}1&1\\\\2&1\\end{bmatrix}$",
+    "$\\frac13\\begin{bmatrix}2&-1\\\\1&2\\end{bmatrix}$",
+    "$\\frac13\\begin{bmatrix}1&-1\\\\2&1\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&3\\end{bmatrix}$ and $B=\\begin{bmatrix}1\\\\4\\end{bmatrix}$. Then $BA$ equals",
+   "a": "(D) $\\begin{bmatrix}2&3\\\\8&12\\end{bmatrix}$",
+   "s": "$(2\\times1)(1\\times2)=2\\times2$. [1]",
+   "opts": [
+    "$[14]$",
+    "$\\begin{bmatrix}2&8\\\\3&12\\end{bmatrix}$",
+    "$\\begin{bmatrix}2\\\\12\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&3\\\\8&12\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\0&3\\end{bmatrix}$. Then $A^2$ equals",
+   "a": "(C) $\\begin{bmatrix}1&8\\\\0&9\\end{bmatrix}$",
+   "s": "The $(1,2)$ entry is $1\\cdot2+2\\cdot3$. [1]",
+   "opts": [
+    "$\\begin{bmatrix}1&6\\\\0&9\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&4\\\\0&9\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&8\\\\0&9\\end{bmatrix}$",
+    "$\\begin{bmatrix}2&4\\\\0&6\\end{bmatrix}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}\\alpha&\\beta\\\\\\gamma&-\\alpha\\end{bmatrix}$ and $A^2=I$. Then",
+   "a": "(C) $\\alpha^2+\\beta\\gamma=1$",
+   "s": "$A^2=(\\alpha^2+\\beta\\gamma)I$. [1]",
+   "opts": [
+    "$\\alpha^2+\\beta\\gamma=0$",
+    "$\\alpha^2-\\beta\\gamma=0$",
+    "$\\alpha^2+\\beta\\gamma=1$",
+    "$\\alpha^2-\\beta\\gamma=1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2&3\\end{bmatrix}$. Then $AA'$ equals",
+   "a": "(A) $[14]$",
+   "s": "$1+4+9$. [1]",
+   "opts": [
+    "$[14]$",
+    "$\\begin{bmatrix}1&4&9\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2&3\\\\2&4&6\\\\3&6&9\\end{bmatrix}$",
+    "$[6]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}6&8&5\\\\4&2&3\\\\9&7&1\\end{bmatrix}$. The $(1,2)$ entry of the symmetric part of $A$ is",
+   "a": "(D) $6$",
+   "s": "$\\frac{8+4}{2}$. [1]",
+   "opts": [
+    "$2$",
+    "$4$",
+    "$8$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For every square matrix $A$, the matrix $AA'$ is",
+   "a": "(C) symmetric",
+   "s": "$(AA')'=(A')'A'=AA'$. [1]",
+   "opts": [
+    "the identity matrix",
+    "skew-symmetric",
+    "symmetric",
+    "diagonal"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a skew-symmetric matrix of order $3$ with $a_{12}=2$, $a_{13}=-3$ and $a_{23}=5$. Then $a_{32}$ equals",
+   "a": "(A) $-5$",
+   "s": "$a_{32}=-a_{23}$. [1]",
+   "opts": [
+    "$-5$",
+    "$3$",
+    "$5$",
+    "$-2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0\\\\-1&7\\end{bmatrix}$ and $A^2-8A+kI=O$. Then $k$ equals",
+   "a": "(C) $7$",
+   "s": "$A^2=\\begin{bmatrix}1&0\\\\-8&49\\end{bmatrix}$ and $A^2-8A=-7I$. [1]",
+   "opts": [
+    "$8$",
+    "$1$",
+    "$7$",
+    "$-7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are square matrices of the same order with $AB=BA$. Then $(A+B)^2$ equals",
+   "a": "(B) $A^2+2AB+B^2$",
+   "s": "$AB+BA=2AB$. [1]",
+   "opts": [
+    "$A^2+B^2$",
+    "$A^2+2AB+B^2$",
+    "$A^2-2AB+B^2$",
+    "$A^2+AB+B^2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\begin{bmatrix}0&0\\\\0&0\\end{bmatrix}$ is both symmetric and skew-symmetric. Reason: $A'=A$ and $A'=-A$ together give $A=O$.",
+   "a": "(A)",
+   "s": "R shows that only the zero matrix has both properties. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For $A=\\begin{bmatrix}2&0\\\\0&2\\end{bmatrix}$, $A^{10}=1024I$. Reason: For a scalar matrix $kI$, $(kI)^n=k^nI$.",
+   "a": "(A)",
+   "s": "$A=2I$ and $2^{10}=1024$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A'=\\begin{bmatrix}3&4\\\\-1&2\\\\0&1\\end{bmatrix}$ and $B=\\begin{bmatrix}-1&2&1\\\\1&2&3\\end{bmatrix}$. Find $A'-B'$.",
+   "a": "$\\begin{bmatrix}4&3\\\\-3&0\\\\-1&-2\\end{bmatrix}$",
+   "s": "$B'=\\begin{bmatrix}-1&1\\\\2&2\\\\1&3\\end{bmatrix}$ [1]. $A'-B'=\\begin{bmatrix}4&3\\\\-3&0\\\\-1&-2\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}-1&2&3\\\\5&7&9\\\\-2&1&1\\end{bmatrix}$ and $B=\\begin{bmatrix}-4&1&-5\\\\1&2&0\\\\1&3&1\\end{bmatrix}$. Find $(A+2B)'$.",
+    "a": "$\\begin{bmatrix}-9&7&0\\\\4&11&7\\\\-7&9&3\\end{bmatrix}$",
+    "s": "$A+2B=\\begin{bmatrix}-9&4&-7\\\\7&11&9\\\\0&7&3\\end{bmatrix}$ [1]. $(A+2B)'=\\begin{bmatrix}-9&7&0\\\\4&11&7\\\\-7&9&3\\end{bmatrix}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$. Find $A^2-2A+3I$.",
+   "a": "$\\begin{bmatrix}0&-2\\\\4&4\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}-1&-4\\\\8&7\\end{bmatrix}$ [1]. $A^2-2A+3I=\\begin{bmatrix}-1-2+3&-4+2\\\\8-4&7-6+3\\end{bmatrix}=\\begin{bmatrix}0&-2\\\\4&4\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&-4\\\\1&-1\\end{bmatrix}$. Find $A^2$ and verify that $A^2=2A-I$.",
+   "a": "$A^2=\\begin{bmatrix}5&-8\\\\2&-3\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}9-4&-12+4\\\\3-1&-4+1\\end{bmatrix}=\\begin{bmatrix}5&-8\\\\2&-3\\end{bmatrix}$ [1]. $2A-I=\\begin{bmatrix}6-1&-8\\\\2&-2-1\\end{bmatrix}=\\begin{bmatrix}5&-8\\\\2&-3\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2&-3\\\\5&0&2\\\\1&-1&1\\end{bmatrix}$, $B=\\begin{bmatrix}3&-1&2\\\\4&2&5\\\\2&0&3\\end{bmatrix}$ and $C=\\begin{bmatrix}4&1&2\\\\0&3&2\\\\1&-2&3\\end{bmatrix}$. Find $A+B-C$ and verify that $A+(B-C)=(A+B)-C$.",
+   "a": "$\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$",
+   "s": "$A+B=\\begin{bmatrix}4&1&-1\\\\9&2&7\\\\3&-1&4\\end{bmatrix}$, so $(A+B)-C=\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$ [1]. $B-C=\\begin{bmatrix}-1&-2&0\\\\4&-1&3\\\\1&2&0\\end{bmatrix}$ [1]. $A+(B-C)=\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$; the two are equal [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}\\cos\\alpha&\\sin\\alpha\\\\-\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$. Show that $A^2=\\begin{bmatrix}\\cos2\\alpha&\\sin2\\alpha\\\\-\\sin2\\alpha&\\cos2\\alpha\\end{bmatrix}$.",
+    "a": "Shown.",
+    "s": "The $(1,1)$ entry is $\\cos^2\\alpha-\\sin^2\\alpha=\\cos2\\alpha$ [1]. The $(1,2)$ entry is $2\\sin\\alpha\\cos\\alpha=\\sin2\\alpha$ [1]. The second row gives $-\\sin2\\alpha$ and $\\cos2\\alpha$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the symmetric part and the skew-symmetric part of $A=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}$.",
+   "a": "Symmetric part $A$; skew-symmetric part $O$.",
+   "s": "$A'=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}=A$ [1]. $\\frac12(A+A')=A$ [1]. $\\frac12(A-A')=O$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&2y&z\\\\x&y&-z\\\\x&-y&z\\end{bmatrix}$ and $A'A=I$. Find $x$, $y$ and $z$.",
+   "a": "$x=\\pm\\frac1{\\sqrt2},\\ y=\\pm\\frac1{\\sqrt6},\\ z=\\pm\\frac1{\\sqrt3}$",
+   "s": "The $(i,j)$ entry of $A'A$ is column $i$ times column $j$ of $A$ [1]. The diagonal entries give $2x^2=1$, $6y^2=1$ and $3z^2=1$ [1]. The other entries are $0$ for all $x,y,z$. So $x=\\pm\\frac1{\\sqrt2}$, $y=\\pm\\frac1{\\sqrt6}$, $z=\\pm\\frac1{\\sqrt3}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2&2\\\\2&1&2\\\\2&2&1\\end{bmatrix}$. Show that $A^2-4A-5I=O$. Hence find $A^{-1}$.",
+   "a": "$A^{-1}=\\frac15\\begin{bmatrix}-3&2&2\\\\2&-3&2\\\\2&2&-3\\end{bmatrix}$",
+   "s": "Row $1$ of $A^2$: $1+4+4,\\ 2+2+4,\\ 2+4+2=9,8,8$; in the same way $A^2=\\begin{bmatrix}9&8&8\\\\8&9&8\\\\8&8&9\\end{bmatrix}$ [2]. In $A^2-4A-5I$, each diagonal entry is $9-4-5=0$ and each other entry is $8-8=0$ [1]. $A(A-4I)=5I$ [1], so $A^{-1}=\\frac15(A-4I)=\\frac15\\begin{bmatrix}-3&2&2\\\\2&-3&2\\\\2&2&-3\\end{bmatrix}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$A=\\begin{bmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{bmatrix}$. Find $A^2$ and $A^3$, and show that $A^3=9A$.",
+    "a": "$A^2=3A$, $A^3=9A$",
+    "s": "Each entry of $A^2$ is $1+1+1=3$, so $A^2=\\begin{bmatrix}3&3&3\\\\3&3&3\\\\3&3&3\\end{bmatrix}=3A$ [2]. $A^3=A^2A=3A^2$ [1] $=3(3A)=9A$ [2].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A drawing app turns every point $(x,y)$ through a right angle with the matrix $R=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$: the new point is $R\\begin{bmatrix}x\\\\y\\end{bmatrix}$. (i) Find the image of the point $(2,3)$. [1] (ii) Find $R^2$. [1] (iii) Find $R^{2026}$. [2] \\textbf{OR} (iii) Show that $RR'=I$. [2]",
+   "a": "(i) $(-3,2)$; (ii) $-I$; (iii) $-I$; OR shown.",
+   "s": "(i) $R\\begin{bmatrix}2\\\\3\\end{bmatrix}=\\begin{bmatrix}-3\\\\2\\end{bmatrix}$ [1]. (ii) $R^2=\\begin{bmatrix}-1&0\\\\0&-1\\end{bmatrix}=-I$ [1]. (iii) $R^4=(-I)^2=I$ [1]. $2026=4\\cdot506+2$, so $R^{2026}=R^2=-I$ [1]. OR $R'=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$ [1]. $RR'=\\begin{bmatrix}0+1&0\\\\0&1+0\\end{bmatrix}=I$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch3-main-01": [
+  {
+   "q": "$P=\\begin{bmatrix}1&0&0\\\\4&1&0\\\\16&4&1\\end{bmatrix}$ and $Q=[q_{ij}]$ with $P^{50}-Q=I$. Then $\\dfrac{q_{31}+q_{32}}{q_{21}}$ equals",
+   "a": "(C) $103$",
+   "s": "$P=I+N$ with $N^3=O$, so $P^n=I+nN+\\frac{n(n-1)}{2}N^2$. $q_{21}=200$, $q_{32}=200$, $q_{31}=800+19600$.",
+   "opts": [
+    "$201$",
+    "$52$",
+    "$103$",
+    "$205$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}\\frac52&\\frac32\\\\-\\frac32&-\\frac12\\end{bmatrix}$. Then $A^{2022}$ equals",
+   "a": "(B) $\\begin{bmatrix}3034&3033\\\\-3033&-3032\\end{bmatrix}$",
+   "s": "$A=I+B$ with $B=\\frac32\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}$ and $B^2=O$. So $A^n=I+nB$.",
+   "opts": [
+    "$\\begin{bmatrix}3031&3030\\\\-3030&-3029\\end{bmatrix}$",
+    "$\\begin{bmatrix}3034&3033\\\\-3033&-3032\\end{bmatrix}$",
+    "$\\begin{bmatrix}3034&-3033\\\\3033&-3032\\end{bmatrix}$",
+    "$\\begin{bmatrix}3033&3032\\\\-3032&-3031\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $2\\times2$ matrices $A$ with each entry $0$ or $1$ and $A^2=A$ is",
+   "a": "(D) $8$",
+   "s": "$O$, $I$ and $6$ matrices of rank $1$: $\\begin{bmatrix}1&0\\\\0&0\\end{bmatrix}$, $\\begin{bmatrix}0&0\\\\0&1\\end{bmatrix}$, $\\begin{bmatrix}1&1\\\\0&0\\end{bmatrix}$, $\\begin{bmatrix}1&0\\\\1&0\\end{bmatrix}$, $\\begin{bmatrix}0&1\\\\0&1\\end{bmatrix}$, $\\begin{bmatrix}0&0\\\\1&1\\end{bmatrix}$.",
+   "opts": [
+    "$4$",
+    "$10$",
+    "$6$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $A=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$, the matrix $A^2-(a+d)A+(ad-bc)I$ equals",
+   "a": "(A) $O$",
+   "s": "Expand: the $(1,1)$ entry is $a^2+bc-a^2-ad+ad-bc=0$, and the other entries are $0$ in the same way.",
+   "opts": [
+    "$O$",
+    "$(a+d)I$",
+    "$A$",
+    "$I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\frac13\\begin{bmatrix}1&2&2\\\\2&1&-2\\\\a&2&b\\end{bmatrix}$ and $AA'=I$. Then $(a,b)$ equals",
+   "a": "(B) $(-2,-1)$",
+   "s": "The rows are orthonormal: $a+4+2b=0$ and $2a+2-2b=0$.",
+   "opts": [
+    "$(2,-1)$",
+    "$(-2,-1)$",
+    "$(-2,1)$",
+    "$(2,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is skew-symmetric and $n$ is an odd natural number. Then $A^n$ is",
+   "a": "(D) skew-symmetric",
+   "s": "$(A^n)'=(A')^n=(-1)^nA^n=-A^n$.",
+   "opts": [
+    "diagonal",
+    "the zero matrix",
+    "symmetric",
+    "skew-symmetric"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A^2=A$. Then $(I+A)^5$ equals",
+   "a": "(A) $I+31A$",
+   "s": "$(I+A)^n=I+(2^n-1)A$, because $A^k=A$ for every $k\\ge1$.",
+   "opts": [
+    "$I+31A$",
+    "$I+16A$",
+    "$I+32A$",
+    "$I+5A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $2\\times2$ matrices $B$ with each entry $0$ or $1$ such that $B\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}B$ is",
+   "a": "(A) $4$",
+   "s": "For $B=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ the condition gives $c=0$ and $a=d$; $a$ and $b$ are free.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$2$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&1&1\\\\0&1&1\\\\0&0&1\\end{bmatrix}$. The $(1,3)$ entry of $A^{10}$ is",
+   "a": "(D) $55$",
+   "s": "$A^n=\\begin{bmatrix}1&n&\\frac{n(n+1)}{2}\\\\0&1&n\\\\0&0&1\\end{bmatrix}$.",
+   "opts": [
+    "$100$",
+    "$10$",
+    "$45$",
+    "$55$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}\\begin{bmatrix}1&3\\\\0&1\\end{bmatrix}\\cdots\\begin{bmatrix}1&n-1\\\\0&1\\end{bmatrix}=\\begin{bmatrix}1&78\\\\0&1\\end{bmatrix}$. Then the inverse of $\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}$ is",
+   "a": "(B) $\\begin{bmatrix}1&-13\\\\0&1\\end{bmatrix}$",
+   "s": "The product is $\\begin{bmatrix}1&1+2+\\cdots+(n-1)\\\\0&1\\end{bmatrix}$, so $\\frac{n(n-1)}{2}=78$ and $n=13$.",
+   "opts": [
+    "$\\begin{bmatrix}1&-12\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-13\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}13&0\\\\-1&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0\\\\13&1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&-1\\\\3&2\\end{bmatrix}$. Then $A^3$ equals",
+   "a": "(B) $\\begin{bmatrix}-10&-9\\\\27&-10\\end{bmatrix}$",
+   "s": "$A^2=\\begin{bmatrix}1&-4\\\\12&1\\end{bmatrix}$, and $A^3=A^2A$.",
+   "opts": [
+    "$\\begin{bmatrix}8&-1\\\\27&8\\end{bmatrix}$",
+    "$\\begin{bmatrix}-10&-9\\\\27&-10\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&-4\\\\12&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}-10&9\\\\-27&-10\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with trace $4$. The trace of $2A'+3I$ is",
+   "a": "(D) $17$",
+   "s": "$\\operatorname{tr}A'=\\operatorname{tr}A$, so the trace is $8+9$.",
+   "opts": [
+    "$12$",
+    "$20$r",
+    "$11$",
+    "$17$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{bmatrix}$. The trace of $A^2$ is",
+   "a": "(C) $261$",
+   "s": "$\\operatorname{tr}(A^2)=\\sum_{i,j}a_{ij}a_{ji}=1+25+81+2(8+21+48)$.",
+   "opts": [
+    "$285$",
+    "$15$",
+    "$261$",
+    "$225$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}\\cos\\frac\\pi{12}&-\\sin\\frac\\pi{12}\\\\\\sin\\frac\\pi{12}&\\cos\\frac\\pi{12}\\end{bmatrix}$. The least natural number $n$ with $A^n=I$ is",
+   "a": "(B) $24$",
+   "s": "$A^n$ is the rotation through $\\frac{n\\pi}{12}$; it is $I$ when $\\frac{n\\pi}{12}$ is a multiple of $2\\pi$.",
+   "opts": [
+    "$12$",
+    "$24$",
+    "$6$",
+    "$48$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&-\\tan\\frac\\alpha2\\\\\\tan\\frac\\alpha2&0\\end{bmatrix}$. Then $(I-A)\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$ equals",
+   "a": "(A) $I+A$",
+   "s": "With $t=\\tan\\frac\\alpha2$, use $\\cos\\alpha=\\frac{1-t^2}{1+t^2}$ and $\\sin\\alpha=\\frac{2t}{1+t^2}$. Each entry simplifies to the entry of $I+A$.",
+   "opts": [
+    "$I+A$",
+    "$I-A$",
+    "$A$",
+    "$2I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of symmetric $3\\times3$ matrices with each entry $0$ or $1$ is",
+   "a": "(B) $64$",
+   "s": "$3$ diagonal entries and $3$ entries above the diagonal are free: $2^6$.",
+   "opts": [
+    "$8$",
+    "$64$",
+    "$32$",
+    "$512$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of skew-symmetric $3\\times3$ matrices with each entry $-1$, $0$ or $1$ is",
+   "a": "(D) $27$",
+   "s": "The diagonal is $0$; the $3$ entries above the diagonal are free: $3^3$.",
+   "opts": [
+    "$9$",
+    "$3$",
+    "$81$",
+    "$27$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-1\\\\2&-1\\end{bmatrix}$, $B=\\begin{bmatrix}a&1\\\\b&-1\\end{bmatrix}$ and $(A+B)^2=A^2+B^2$. Then $a+b$ equals",
+   "a": "(B) $5$",
+   "s": "The condition is $AB+BA=O$. This gives $a=1$ and $b=4$.",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A^2=I$. Then $(A+I)^3-7A$ equals",
+   "a": "(A) $4I-3A$",
+   "s": "$(A+I)^3=A^3+3A^2+3A+I=A+3I+3A+I$.",
+   "opts": [
+    "$4I-3A$",
+    "$4I+3A$",
+    "$I$",
+    "$8I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}5&3\\\\-1&-2\\end{bmatrix}$ and $A^3=pA+qI$. Then $p+q$ equals",
+   "a": "(B) $37$",
+   "s": "$A^2=3A+7I$, so $A^3=3A^2+7A=16A+21I$.",
+   "opts": [
+    "$21$",
+    "$37$",
+    "$16$",
+    "$45$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of $2\\times2$ matrices $A$ with each entry $0$ or $1$ such that $A^2=O$.",
+   "a": "$3$",
+   "s": "$O$, $\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}$ and $\\begin{bmatrix}0&0\\\\1&0\\end{bmatrix}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of all real $x$ such that $\\begin{bmatrix}2x&3\\end{bmatrix}\\begin{bmatrix}1&2\\\\-3&0\\end{bmatrix}\\begin{bmatrix}x\\\\8\\end{bmatrix}=O$.",
+   "a": "$-11.5$",
+   "s": "The product is $\\begin{bmatrix}2x-9&4x\\end{bmatrix}\\begin{bmatrix}x\\\\8\\end{bmatrix}=2x^2+23x$. So $x=0$ or $x=-\\frac{23}{2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$. Find the sum of all entries of $A^{10}$.",
+   "a": "$2048$",
+   "s": "$A^n=2^{n-1}A$; each entry of $A^{10}$ is $512$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of $2\\times2$ matrices with each entry $0$ or $1$ that have an inverse.",
+   "a": "$6$",
+   "s": "The inverse exists when $ad-bc\\ne0$: $ad=1,bc=0$ ($3$ matrices) or $ad=0,bc=1$ ($3$ matrices).",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}X=\\begin{bmatrix}5\\\\11\\end{bmatrix}$. Find the sum of the entries of $X$.",
+   "a": "$3$",
+   "s": "$X=\\begin{bmatrix}x\\\\y\\end{bmatrix}$: $x+2y=5$ and $3x+4y=11$, so $x=1$ and $y=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch3-main-02": [
+  {
+   "q": "$A=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}$. Then $(I+A)^{50}$ equals",
+   "a": "(C) $\\begin{bmatrix}1&100\\\\0&1\\end{bmatrix}$",
+   "s": "$A^2=O$, so $(I+A)^{50}=I+50A$.",
+   "opts": [
+    "$\\begin{bmatrix}50&100\\\\0&50\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&50\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&100\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2^{50}\\\\0&1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0\\\\1&1\\end{bmatrix}$. Then $A^n-nA$ equals",
+   "a": "(A) $(1-n)I$",
+   "s": "$A^n=\\begin{bmatrix}1&0\\\\n&1\\end{bmatrix}$.",
+   "opts": [
+    "$(1-n)I$",
+    "$nI-A$",
+    "$(n-1)I$",
+    "$O$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\-1&4\\end{bmatrix}$. Then $A^{-1}$ equals",
+   "a": "(B) $\\frac16\\begin{bmatrix}4&-2\\\\1&1\\end{bmatrix}$",
+   "s": "$A^2-5A+6I=O$, so $A(5I-A)=6I$.",
+   "opts": [
+    "$\\frac16\\begin{bmatrix}1&-2\\\\1&4\\end{bmatrix}$",
+    "$\\frac16\\begin{bmatrix}4&-2\\\\1&1\\end{bmatrix}$",
+    "$\\frac16\\begin{bmatrix}4&2\\\\-1&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}4&-2\\\\1&1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is symmetric and $B$ is skew-symmetric, of the same order. Then $AB+BA$ is",
+   "a": "(C) skew-symmetric",
+   "s": "$(AB+BA)'=B'A'+A'B'=-BA-AB$.",
+   "opts": [
+    "the identity matrix",
+    "symmetric",
+    "skew-symmetric",
+    "the zero matrix"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0&0\\\\1&0&1\\\\0&1&0\\end{bmatrix}$. Then $A^{50}$ equals",
+   "a": "(C) $\\begin{bmatrix}1&0&0\\\\25&1&0\\\\25&0&1\\end{bmatrix}$",
+   "s": "$A^n=A^{n-2}+A^2-I$ for $n\\ge3$, so $A^{50}=25A^2-24I$ with $A^2=\\begin{bmatrix}1&0&0\\\\1&1&0\\\\1&0&1\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}1&0&0\\\\50&1&0\\\\50&0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0&0\\\\25&0&1\\\\25&1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0&0\\\\25&1&0\\\\25&0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0&0\\\\0&1&0\\\\0&0&1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $A^3=O$. Then $(I-A)^{-1}$ equals",
+   "a": "(A) $I+A+A^2$",
+   "s": "$(I-A)(I+A+A^2)=I-A^3=I$.",
+   "opts": [
+    "$I+A+A^2$",
+    "$I+A$",
+    "$I-A+A^2$",
+    "$I-A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P=\\begin{bmatrix}\\frac{\\sqrt3}{2}&\\frac12\\\\-\\frac12&\\frac{\\sqrt3}{2}\\end{bmatrix}$, $A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$ and $Q=PAP'$. Then $P'Q^{2015}P$ equals",
+   "a": "(D) $\\begin{bmatrix}1&2015\\\\0&1\\end{bmatrix}$",
+   "s": "$P'P=I$, so $P'Q^nP=A^n$.",
+   "opts": [
+    "$\\begin{bmatrix}2015&1\\\\0&2015\\end{bmatrix}$",
+    "$\\begin{bmatrix}2015&2015\\\\0&2015\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&0\\\\2015&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&2015\\\\0&1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$. The number of matrices $B=\\begin{bmatrix}a&0\\\\0&b\\end{bmatrix}$ with $a,b\\in\\{1,2,\\ldots,10\\}$ and $AB=BA$ is",
+   "a": "(B) $10$",
+   "s": "$AB=\\begin{bmatrix}a&2b\\\\3a&4b\\end{bmatrix}$ and $BA=\\begin{bmatrix}a&2a\\\\3b&4b\\end{bmatrix}$, so $a=b$.",
+   "opts": [
+    "$20$",
+    "$10$",
+    "$100$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$. The trace of $A^3$ is",
+   "a": "(C) $155$",
+   "s": "$A^2=\\begin{bmatrix}7&10\\\\15&22\\end{bmatrix}$ and $A^3=\\begin{bmatrix}37&54\\\\81&118\\end{bmatrix}$.",
+   "opts": [
+    "$165$",
+    "$125$",
+    "$155$",
+    "$145$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $2\\times2$ matrices with each entry $-1$, $0$ or $1$ such that $AA'=I$ is",
+   "a": "(B) $8$",
+   "s": "The rows are perpendicular unit vectors: one nonzero entry $\\pm1$ in each row and column. $2\\cdot2\\cdot2=8$.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$2$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}a&b\\\\b&a\\end{bmatrix}$ and $A^2=\\begin{bmatrix}\\alpha&\\beta\\\\\\beta&\\alpha\\end{bmatrix}$. Then",
+   "a": "(C) $\\alpha=a^2+b^2,\\ \\beta=2ab$",
+   "s": "Multiply: the $(1,1)$ entry is $a^2+b^2$ and the $(1,2)$ entry is $ab+ba$.",
+   "opts": [
+    "$\\alpha=a^2-b^2,\\ \\beta=2ab$",
+    "$\\alpha=2ab,\\ \\beta=a^2+b^2$",
+    "$\\alpha=a^2+b^2,\\ \\beta=2ab$",
+    "$\\alpha=a^2+b^2,\\ \\beta=ab$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $2\\times2$ matrix with $A^2=O$. Then the trace of $A$ is",
+   "a": "(D) $0$",
+   "s": "$A^2-tA+dI=O$ with $A^2=O$ gives $tA=dI$. If $t\\ne0$, $A$ is a scalar matrix with $A^2=O$, so $A=O$ and $t=0$.",
+   "opts": [
+    "$2$",
+    "any real number",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&-1\\\\2&-1\\end{bmatrix}$. Then $A^{2027}$ equals",
+   "a": "(A) $-A$",
+   "s": "$A^2=-I$, so $A^4=I$ and $A^{2027}=A^3=-A$.",
+   "opts": [
+    "$-A$",
+    "$I$",
+    "$A$",
+    "$-I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$. The sum of all entries of $A^5$ is",
+   "a": "(B) $5625$",
+   "s": "$A^2=5A$, so $A^5=5^4A$; the entries of $A$ add to $9$.",
+   "opts": [
+    "$28125$",
+    "$5625$",
+    "$45$",
+    "$1125$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&c&-b\\\\-c&0&a\\\\b&-a&0\\end{bmatrix}$ and $B=\\begin{bmatrix}a^2&ab&ac\\\\ab&b^2&bc\\\\ac&bc&c^2\\end{bmatrix}$. Then $AB$ equals",
+   "a": "(B) $O$",
+   "s": "Row $1$ of $A$ times column $1$ of $B$ is $abc-abc=0$; every entry is $0$ in the same way.",
+   "opts": [
+    "$I$",
+    "$O$",
+    "$B$",
+    "$A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&2\\\\-4&-3\\end{bmatrix}$. Then $A^{-1}$ equals",
+   "a": "(C) $A$",
+   "s": "$A^2=\\begin{bmatrix}9-8&6-6\\\\-12+12&-8+9\\end{bmatrix}=I$.",
+   "opts": [
+    "$I$",
+    "$-A$",
+    "$A$",
+    "$A'$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are square matrices of the same order. $(A+B)^2=A^2+B^2$ if and only if",
+   "a": "(B) $AB=-BA$",
+   "s": "$(A+B)^2=A^2+AB+BA+B^2$.",
+   "opts": [
+    "$A=B$",
+    "$AB=-BA$",
+    "$AB=BA$",
+    "$AB=O$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $3\\times3$ matrices with each entry $0$, $1$ or $2$ and with every diagonal entry $0$ is",
+   "a": "(D) $729$",
+   "s": "$6$ entries are free: $3^6$.",
+   "opts": [
+    "$243$",
+    "$2187$",
+    "$81$",
+    "$729$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}$ and $a\\ne0$. Then $(aI+bA)^n$ equals",
+   "a": "(A) $a^nI+na^{n-1}bA$",
+   "s": "$aI$ and $bA$ commute and $A^2=O$; use the binomial theorem.",
+   "opts": [
+    "$a^nI+na^{n-1}bA$",
+    "$a^nI+b^nA$",
+    "$a^nI+nabA$",
+    "$(a+b)^nI$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&1&0\\\\0&1&1\\\\0&0&1\\end{bmatrix}$. The $(1,3)$ entry of $A^n$ is",
+   "a": "(B) $\\frac{n(n-1)}{2}$",
+   "s": "$A=I+N$ with $N^3=O$ and $N^2$ has only the $(1,3)$ entry $1$. So $A^n=I+nN+\\binom n2N^2$.",
+   "opts": [
+    "$n$",
+    "$\\frac{n(n-1)}{2}$",
+    "$n^2$",
+    "$\\frac{n(n+1)}{2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&0&0\\\\0&2&0\\\\0&0&2\\end{bmatrix}$. Find the trace of $A^5$.",
+   "a": "$96$",
+   "s": "$A^5=32I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of symmetric $2\\times2$ matrices with each entry $0$, $1$, $2$ or $3$.",
+   "a": "$64$",
+   "s": "$a_{11}$, $a_{22}$ and $a_{12}=a_{21}$ are free: $4^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\2&1\\end{bmatrix}$ and $A^2=pA+qI$. Find $p+q$.",
+   "a": "$5$",
+   "s": "$A^2=\\begin{bmatrix}5&4\\\\4&5\\end{bmatrix}=2A+3I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&-4\\\\1&-1\\end{bmatrix}$. Find the sum of all entries of $A^{10}$.",
+   "a": "$-28$",
+   "s": "$A^{10}=\\begin{bmatrix}21&-40\\\\10&-19\\end{bmatrix}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$ satisfies $A^2=5A-7I$, and $A^4=pA+qI$. Find $p-q$.",
+   "a": "$181$",
+   "s": "$A^3=5A^2-7A=18A-35I$ and $A^4=18A^2-35A=55A-126I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch3-advanced-01": [
+  {
+   "q": "$A=\\begin{bmatrix}1&0\\\\1&1\\end{bmatrix}$, $B=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ and $AB=BA$. Then",
+   "a": "(B) $b=0$ and $a=d$",
+   "s": "$AB=\\begin{bmatrix}a&b\\\\a+c&b+d\\end{bmatrix}$ and $BA=\\begin{bmatrix}a+b&b\\\\c+d&d\\end{bmatrix}$.",
+   "opts": [
+    "$b=c=0$",
+    "$b=0$ and $a=d$",
+    "$a=b=c=d$",
+    "$c=0$ and $a=d$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a $2\\times2$ matrix with $A^2=A$, $A\\ne O$ and $A\\ne I$. Then the trace of $A$ is",
+   "a": "(D) $1$",
+   "s": "$A^2-tA+dI=O$ gives $(1-t)A=-dI$. $A$ is not scalar, so $t=1$ and $d=0$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$-1$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$M=\\begin{bmatrix}2&1\\\\1&2\\end{bmatrix}$. Then $M^n$ equals",
+   "a": "(B) $\\frac12\\begin{bmatrix}3^n+1&3^n-1\\\\3^n-1&3^n+1\\end{bmatrix}$",
+   "s": "$M=I+J$ with $J=\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$ and $J^2=2J$. Then $M^n=I+\\frac{3^n-1}{2}J$.",
+   "opts": [
+    "$\\frac12\\begin{bmatrix}3^n-1&3^n+1\\\\3^n+1&3^n-1\\end{bmatrix}$",
+    "$\\frac12\\begin{bmatrix}3^n+1&3^n-1\\\\3^n-1&3^n+1\\end{bmatrix}$",
+    "$3^{n-1}M$",
+    "$\\begin{bmatrix}2^n&1\\\\1&2^n\\end{bmatrix}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is skew-symmetric and $I+A$ is invertible. $B=(I-A)(I+A)^{-1}$. Then $B$ satisfies",
+   "a": "(A) $BB'=I$",
+   "s": "$B'=\\left((I+A)^{-1}\\right)'(I-A)'=(I-A)^{-1}(I+A)$. $I-A$ and $I+A$ commute, so $BB'=I$.",
+   "opts": [
+    "$BB'=I$",
+    "$B^2=B$",
+    "$B'=-B$",
+    "$B'=B$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}3&-4\\\\1&-1\\end{bmatrix}$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$(A-I)^2=O$. $A(2I-A)=I$, so the inverse exists. $A^2\\ne A$.",
+   "opts": [
+    "$A^n=A$ for every $n$",
+    "$A^2-2A+I=O$",
+    "$A$ has an inverse",
+    "$A^n=\\begin{bmatrix}1+2n&-4n\\\\n&1-2n\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is a real $3\\times3$ skew-symmetric matrix. Which statements are true?",
+   "a": "(A), (C)",
+   "s": "$A^2=-AA'$; the diagonal entries of $AA'$ are sums of squares. $A^3$ is skew-symmetric and $A+A'=O$.",
+   "opts": [
+    "$A^2$ is symmetric",
+    "$A^3$ is symmetric",
+    "Every diagonal entry of $A^2$ is at most $0$",
+    "$A+A'=I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\2&1\\end{bmatrix}$. Which statements are true?",
+   "a": "(A), (C)",
+   "s": "$A^2=\\begin{bmatrix}5&4\\\\4&5\\end{bmatrix}$. $A^3=2A^2+3A=7A+6I$. $A^{-1}=\\frac13(A-2I)=\\frac13\\begin{bmatrix}-1&2\\\\2&-1\\end{bmatrix}$.",
+   "opts": [
+    "$A^2=2A+3I$",
+    "$A^{-1}=\\frac13\\begin{bmatrix}1&-2\\\\-2&1\\end{bmatrix}$",
+    "$A^3=7A+6I$",
+    "$A^2=5I$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider all $2\\times2$ matrices with each entry $0$ or $1$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$A^2=I$: $I$ and $\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$. $A^2=O$: only $3$ matrices.",
+   "opts": [
+    "Exactly $6$ of them have an inverse",
+    "Exactly $8$ of them are symmetric",
+    "Exactly $2$ of them satisfy $A^2=I$",
+    "Exactly $4$ of them satisfy $A^2=O$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of symmetric $3\\times3$ matrices with each entry $0$ or $1$ that have exactly two entries equal to $1$.",
+   "a": "$6$",
+   "s": "Two diagonal $1$s: $\\binom32=3$. One pair $a_{ij}=a_{ji}=1$ off the diagonal: $3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$P=\\begin{bmatrix}1&0&0\\\\2&1&0\\\\3&2&1\\end{bmatrix}$. Find the sum of all entries of $P^{10}$.",
+   "a": "$253$",
+   "s": "$P=I+N$, $N^2=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\4&0&0\\end{bmatrix}$, $N^3=O$. $P^{10}=I+10N+45N^2$: entries $20$, $20$ and $30+180$ below the diagonal.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$ and $(I+A)^8=kI$. Find $k$.",
+   "a": "$16$",
+   "s": "$A^2=-I$, so $(I+A)^2=2A$ and $(I+A)^8=16A^4=16I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A$ is a $3\\times3$ matrix with $A^2=2A$. $(I+A)^3=I+kA$. Find $k$.",
+   "a": "$13$",
+   "s": "$A^3=4A$, so $(I+A)^3=I+3A+6A+4A$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each matrix $A$ with $A^2$.\nList-I: (P) $\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}$; (Q) $\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$; (R) $\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$; (S) $\\begin{bmatrix}1&1\\\\0&0\\end{bmatrix}$\nList-II: (1) $A$; (2) $I$; (3) $O$; (4) $2A$; (5) $-I$",
+   "a": "(A) $P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+   "s": "$\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}^2=O$; $\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}^2=I$; $\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}^2=\\begin{bmatrix}2&2\\\\2&2\\end{bmatrix}$; $\\begin{bmatrix}1&1\\\\0&0\\end{bmatrix}^2=\\begin{bmatrix}1&1\\\\0&0\\end{bmatrix}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each matrix with its type.\nList-I: (P) $\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$; (Q) $\\begin{bmatrix}1&2\\\\2&3\\end{bmatrix}$; (R) $\\begin{bmatrix}2&0\\\\0&2\\end{bmatrix}$; (S) $\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$\nList-II: (1) symmetric but not scalar; (2) skew-symmetric; (3) scalar matrix; (4) neither symmetric nor skew-symmetric; (5) both symmetric and skew-symmetric",
+   "a": "(A) $P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+   "s": "Compare $A'$ with $A$ and $-A$ in each case.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Count the $2\\times2$ matrices with each entry $0$, $1$ or $2$.\nList-I: (P) all such matrices; (Q) symmetric matrices; (R) diagonal matrices; (S) skew-symmetric matrices\nList-II: (1) $9$; (2) $1$; (3) $81$; (4) $3$; (5) $27$",
+   "a": "(B) $P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+   "s": "$3^4$; $3^3$; $3^2$; a skew-symmetric matrix needs $a_{12}=-a_{21}$ with both in $\\{0,1,2\\}$, so only $O$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each power with its value.\nList-I: (P) $\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}^5$; (Q) $\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}^6$; (R) $\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}^5$; (S) $\\begin{bmatrix}2&0\\\\0&-1\\end{bmatrix}^3$\nList-II: (1) $\\begin{bmatrix}16&16\\\\16&16\\end{bmatrix}$; (2) $\\begin{bmatrix}-1&0\\\\0&-1\\end{bmatrix}$; (3) $\\begin{bmatrix}1&5\\\\0&1\\end{bmatrix}$; (4) $\\begin{bmatrix}8&0\\\\0&-1\\end{bmatrix}$; (5) $\\begin{bmatrix}1&0\\\\5&1\\end{bmatrix}$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "$\\begin{bmatrix}1&n\\\\0&1\\end{bmatrix}$; $B^2=-I$ so $B^6=-I$; $J^5=2^4J$; cube each diagonal entry.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch3-advanced-02": [
+  {
+   "q": "$A=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ with $A^2=O$ and $a=2$. Then $d$ equals",
+   "a": "(C) $-2$",
+   "s": "A $2\\times2$ matrix with $A^2=O$ has trace $0$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$-2$",
+    "$4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are $3\\times3$ matrices, $A$ symmetric and $B$ skew-symmetric, with $(A+B)(A-B)=(A-B)(A+B)$. $(AB)'=(-1)^kAB$. Then $k$ is",
+   "a": "(C) an odd integer",
+   "s": "The condition gives $AB=BA$. $(AB)'=B'A'=-BA=-AB$.",
+   "opts": [
+    "any integer",
+    "an even integer",
+    "an odd integer",
+    "$0$ only"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$M=\\begin{bmatrix}1&1\\\\1&0\\end{bmatrix}$. The $(1,2)$ entry of $M^{10}$ is",
+   "a": "(A) $55$",
+   "s": "$M^n=\\begin{bmatrix}F_{n+1}&F_n\\\\F_n&F_{n-1}\\end{bmatrix}$ with Fibonacci numbers $1,1,2,3,5,8,13,21,34,55$.",
+   "opts": [
+    "$55$",
+    "$34$",
+    "$89$",
+    "$10$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ and $B=A-A'$. Then $B^2$ equals",
+   "a": "(A) $-I$",
+   "s": "$B=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$.",
+   "opts": [
+    "$-I$",
+    "$I$",
+    "$B$",
+    "$O$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$N=\\begin{bmatrix}0&1&2\\\\0&0&3\\\\0&0&0\\end{bmatrix}$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$(I+N)^2=I+2N+N^2$ and $N^2\\ne O$. $(I+N)(I-N+N^2)=I+N^3$.",
+   "opts": [
+    "$N^2=\\begin{bmatrix}0&0&3\\\\0&0&0\\\\0&0&0\\end{bmatrix}$",
+    "$(I+N)^2=I+2N$",
+    "$N^3=O$",
+    "$(I+N)^{-1}=I-N+N^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}$. Which statements are true for every $\\theta$?",
+   "a": "(B), (C), (D)",
+   "s": "$A'=A$ only when $\\sin\\theta=0$. The other results follow by multiplication.",
+   "opts": [
+    "$A$ is symmetric",
+    "$AA'=I$",
+    "$A+A'=2\\cos\\theta\\,I$",
+    "$A^n=\\begin{bmatrix}\\cos n\\theta&-\\sin n\\theta\\\\\\sin n\\theta&\\cos n\\theta\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which matrices satisfy $A^2=I$?",
+   "a": "(A), (B), (D)",
+   "s": "$\\begin{bmatrix}1&1\\\\0&-1\\end{bmatrix}^2=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}$ but $\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}^2=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$.",
+   "opts": [
+    "$\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$",
+    "$\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$",
+    "$\\begin{bmatrix}1&1\\\\0&-1\\end{bmatrix}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are square matrices of the same order with $AB=BA$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$(AB)'=B'A'=(AB)'$ and also $A'B'=(BA)'=(AB)'$. Commuting matrices need not be symmetric.",
+   "opts": [
+    "$(A+B)^2=A^2+2AB+B^2$",
+    "$A+B$ is symmetric",
+    "$A^2B=BA^2$",
+    "$(AB)'=A'B'$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\begin{bmatrix}2&1\\\\0&2\\end{bmatrix}$. Find the $(1,2)$ entry of $A^{10}$.",
+   "a": "$5120$",
+   "s": "$A=2I+N$ with $N^2=O$, so $A^{10}=2^{10}I+10\\cdot2^9N$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of symmetric $3\\times3$ matrices with each entry $0$ or $1$ and every diagonal entry $1$.",
+   "a": "$8$",
+   "s": "Only the $3$ entries above the diagonal are free: $2^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of $2\\times2$ matrices $B$ with each entry $0$, $1$ or $2$ such that $\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}B=B\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$.",
+   "a": "$9$",
+   "s": "For $B=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$ the condition gives $c=b$ and $d=a$; $a$ and $b$ are free: $3^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\begin{bmatrix}1&0\\\\-1&7\\end{bmatrix}$ satisfies $A^2=8A-7I$, and $A^3=pA+qI$. Find $p+q$.",
+   "a": "$1$",
+   "s": "$A^3=8A^2-7A=8(8A-7I)-7A=57A-56I$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each matrix with its inverse.\nList-I: (P) $\\begin{bmatrix}4&7\\\\1&2\\end{bmatrix}$; (Q) $\\begin{bmatrix}3&2\\\\-4&-3\\end{bmatrix}$; (R) $\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$; (S) $\\begin{bmatrix}2&0\\\\0&4\\end{bmatrix}$\nList-II: (1) $\\begin{bmatrix}1&-1\\\\0&1\\end{bmatrix}$; (2) $\\begin{bmatrix}2&-7\\\\-1&4\\end{bmatrix}$; (3) $\\begin{bmatrix}3&2\\\\-4&-3\\end{bmatrix}$; (4) $\\begin{bmatrix}\\frac12&0\\\\0&\\frac14\\end{bmatrix}$; (5) $\\begin{bmatrix}-1&1\\\\0&-1\\end{bmatrix}$",
+   "a": "(D) $P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+   "s": "Multiply each pair: the product is $I$ in each case.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Each matrix $A$ satisfies $A^2-kA+cI=O$ for some numbers $k$ and $c$. Match each matrix with its $k$.\nList-I: (P) $\\begin{bmatrix}4&1\\\\-1&2\\end{bmatrix}$; (Q) $\\begin{bmatrix}1&3\\\\3&1\\end{bmatrix}$; (R) $\\begin{bmatrix}5&-2\\\\3&-2\\end{bmatrix}$; (S) $\\begin{bmatrix}0&4\\\\-1&7\\end{bmatrix}$\nList-II: (1) $3$; (2) $6$; (3) $7$; (4) $2$; (5) $5$",
+   "a": "(C) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "For a $2\\times2$ matrix, $k$ is the sum of the diagonal entries.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each matrix with the property it has.\nList-I: (P) $\\begin{bmatrix}2&-1\\\\2&-1\\end{bmatrix}$; (Q) $\\begin{bmatrix}1&-1\\\\1&-1\\end{bmatrix}$; (R) $\\begin{bmatrix}0&2\\\\\\frac12&0\\end{bmatrix}$; (S) $\\begin{bmatrix}0&1\\\\-1&-1\\end{bmatrix}$\nList-II: (1) $A^2=I$; (2) $A'=-A$; (3) $A^2=A$; (4) $A^2=O$; (5) $A^3=I$ and $A\\ne I$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+   "s": "Square each matrix. For the last one, $A^2=\\begin{bmatrix}-1&-1\\\\1&0\\end{bmatrix}$ and $A^3=I$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 5$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is $2\\times3$, $B$ is $3\\times4$ and $C$ is $4\\times2$. Match each matrix with its order.\nList-I: (P) $ABC$; (Q) $CAB$; (R) $BCA$; (S) $(AB)'$\nList-II: (1) $3\\times3$; (2) $4\\times2$; (3) $2\\times2$; (4) $4\\times4$; (5) $2\\times4$",
+   "a": "(B) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Multiply the orders. $AB$ is $2\\times4$, so $(AB)'$ is $4\\times2$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

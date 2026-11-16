@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "The direction cosines of a line with direction ratios $2,-1,-2$ are",
+  "options": [
+   "$2,-1,-2$",
+   "$-\\frac23,\\frac13,\\frac23$",
+   "$\\frac23,-\\frac13,-\\frac23$",
+   "$\\frac23,\\frac13,\\frac23$"
+  ],
+  "answer": 2,
+  "solution": "Divide by $\\sqrt{4+1+4}=3$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The direction cosines of the $z$-axis are",
+  "options": [
+   "$1,1,1$",
+   "$0,0,1$",
+   "$1,0,0$",
+   "$0,1,0$"
+  ],
+  "answer": 1,
+  "solution": "It makes angles $90^\\circ$, $90^\\circ$, $0^\\circ$ with the axes.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "$l$, $m$, $n$ are the direction cosines of a line. Then $l^2+m^2+n^2$ equals",
+  "options": [
+   "$2$",
+   "$3$",
+   "$0$",
+   "$1$"
+  ],
+  "answer": 3,
+  "solution": "Standard result.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "A line makes angles $90^\\circ$, $60^\\circ$ and $30^\\circ$ with the axes. Its direction cosines are",
+  "options": [
+   "$1,\\frac12,\\frac{\\sqrt3}2$",
+   "$0,\\frac12,\\frac12$",
+   "$0,\\frac12,\\frac{\\sqrt3}2$",
+   "$0,\\frac{\\sqrt3}2,\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "Take the cosines.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The direction ratios of the line through $(2,3,4)$ and $(-1,-2,1)$ are",
+  "options": [
+   "$3,5,3$",
+   "$-3,5,-3$",
+   "$1,1,5$",
+   "$2,3,4$"
+  ],
+  "answer": 0,
+  "solution": "$(2+1,\\ 3+2,\\ 4-1)$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "Can $\\frac12,\\frac12,\\frac12$ be the direction cosines of a line?",
+  "options": [
+   "Yes, since all are equal",
+   "Yes, since each is less than $1$",
+   "No, since direction cosines cannot be equal",
+   "No, since $\\frac14+\\frac14+\\frac14\\ne1$"
+  ],
+  "answer": 3,
+  "solution": "The squares must add to $1$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The vector equation of the line through $(5,2,-4)$ parallel to $3\\hat i+2\\hat j-8\\hat k$ is",
+  "options": [
+   "$\\vec r=5\\hat i+2\\hat j+4\\hat k+\\lambda(3\\hat i+2\\hat j-8\\hat k)$",
+   "$\\vec r=5\\hat i+2\\hat j-4\\hat k+\\lambda(3\\hat i+2\\hat j+8\\hat k)$",
+   "$\\vec r=3\\hat i+2\\hat j-8\\hat k+\\lambda(5\\hat i+2\\hat j-4\\hat k)$",
+   "$\\vec r=5\\hat i+2\\hat j-4\\hat k+\\lambda(3\\hat i+2\\hat j-8\\hat k)$"
+  ],
+  "answer": 3,
+  "solution": "$\\vec r=\\vec a+\\lambda\\vec b$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The line through $(-2,4,-5)$ parallel to $\\dfrac{x+3}3=\\dfrac{y-4}5=\\dfrac{z+8}6$ is",
+  "options": [
+   "$\\frac{x-2}3=\\frac{y+4}5=\\frac{z-5}6$",
+   "$\\frac{x+2}{-3}=\\frac{y-4}{4}=\\frac{z+5}{-8}$",
+   "$\\frac{x+2}3=\\frac{y-4}5=\\frac{z+5}6$",
+   "$\\frac{x+3}{-2}=\\frac{y-4}4=\\frac{z+8}{-5}$"
+  ],
+  "answer": 2,
+  "solution": "Same direction ratios $3,5,6$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The line $\\dfrac{x+3}2=\\dfrac{y-5}4=\\dfrac{z+6}2$ passes through",
+  "options": [
+   "$(-3,5,-6)$",
+   "$(-2,-4,-2)$",
+   "$(3,-5,6)$",
+   "$(2,4,2)$"
+  ],
+  "answer": 0,
+  "solution": "Each fraction is $0$ there.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The direction ratios of the line $\\dfrac{4-x}2=\\dfrac y6=\\dfrac{1-z}3$ are",
+  "options": [
+   "$2,-6,3$",
+   "$2,6,3$",
+   "$-2,6,-3$",
+   "$4,0,1$"
+  ],
+  "answer": 2,
+  "solution": "Write $\\frac{x-4}{-2}=\\frac y6=\\frac{z-1}{-3}$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The line through the origin and $(5,-2,3)$ is",
+  "options": [
+   "$\\frac{x-5}1=\\frac{y+2}1=\\frac{z-3}1$",
+   "$\\frac x5=\\frac y{-2}=\\frac z3$",
+   "$\\frac x{-5}=\\frac y2=\\frac z3$",
+   "$5x-2y+3z=0$"
+  ],
+  "answer": 1,
+  "solution": "Direction ratios $5,-2,3$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The angle between lines with direction ratios $1,1,2$ and $\\sqrt3-1,-\\sqrt3-1,4$ is",
+  "options": [
+   "$\\frac\\pi6$",
+   "$\\frac\\pi3$",
+   "$\\frac\\pi2$",
+   "$\\frac\\pi4$"
+  ],
+  "answer": 1,
+  "solution": "$\\cos\\theta=\\frac{6}{\\sqrt6\\cdot\\sqrt{24}}=\\frac12$.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The angle between $\\vec r=\\lambda(\\hat i+\\hat j+2\\hat k)$ and $\\vec r=\\mu(\\hat i-\\hat j)$ is",
+  "options": [
+   "$\\frac\\pi4$",
+   "$\\frac\\pi2$",
+   "$\\frac\\pi3$",
+   "$0$"
+  ],
+  "answer": 1,
+  "solution": "$1-1+0=0$.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "$\\dfrac{x-1}{-3}=\\dfrac{y-2}{2k}=\\dfrac{z-3}2$ and $\\dfrac{x-1}{3k}=\\dfrac{y-1}1=\\dfrac{z-6}{-5}$ are perpendicular. Then $k$ equals",
+  "options": [
+   "$\\frac{10}7$",
+   "$\\frac{7}{10}$",
+   "$-\\frac7{10}$",
+   "$-\\frac{10}7$"
+  ],
+  "answer": 3,
+  "solution": "$-9k+2k-10=0$.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "Two lines with direction ratios $a_1,b_1,c_1$ and $a_2,b_2,c_2$ are parallel when",
+  "options": [
+   "$a_1+b_1+c_1=a_2+b_2+c_2$",
+   "$a_1a_2+b_1b_2+c_1c_2=0$",
+   "$a_1a_2=b_1b_2=c_1c_2$",
+   "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}$"
+  ],
+  "answer": 3,
+  "solution": "Proportional direction ratios.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The shortest distance between $\\vec r=\\vec a_1+\\lambda\\vec b_1$ and $\\vec r=\\vec a_2+\\mu\\vec b_2$ (skew lines) is",
+  "options": [
+   "$|\\vec a_2-\\vec a_1|$",
+   "$|(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)|$",
+   "$\\frac{|(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)|}{|\\vec b_1\\times\\vec b_2|}$",
+   "$\\frac{|\\vec b_1\\times\\vec b_2|}{|\\vec a_2-\\vec a_1|}$"
+  ],
+  "answer": 2,
+  "solution": "Projection of the join on the common perpendicular.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The distance between the parallel lines $\\vec r=\\vec a_1+\\lambda\\vec b$ and $\\vec r=\\vec a_2+\\mu\\vec b$ is",
+  "options": [
+   "$|\\vec a_2-\\vec a_1|$",
+   "$|\\vec b\\times(\\vec a_2-\\vec a_1)|$",
+   "$\\frac{|\\vec b\\cdot(\\vec a_2-\\vec a_1)|}{|\\vec b|}$",
+   "$\\frac{|\\vec b\\times(\\vec a_2-\\vec a_1)|}{|\\vec b|}$"
+  ],
+  "answer": 3,
+  "solution": "Standard result.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The shortest distance between $\\vec r=\\hat i+\\hat j+\\lambda(2\\hat i-\\hat j+\\hat k)$ and $\\vec r=2\\hat i+\\hat j-\\hat k+\\mu(3\\hat i-5\\hat j+2\\hat k)$ is",
+  "options": [
+   "$\\frac{3}{\\sqrt{59}}$",
+   "$\\frac{10}{59}$",
+   "$\\sqrt{59}$",
+   "$\\frac{10}{\\sqrt{59}}$"
+  ],
+  "answer": 3,
+  "solution": "$\\vec b_1\\times\\vec b_2=3\\hat i-\\hat j-7\\hat k$ and $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=10$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "Two lines in space intersect if and only if",
+  "options": [
+   "their direction ratios are equal",
+   "their shortest distance is $0$ and they are not parallel",
+   "they are not parallel",
+   "they are perpendicular"
+  ],
+  "answer": 1,
+  "solution": "Non-parallel lines with a common point.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The distance of $(1,2,3)$ from the origin is",
+  "options": [
+   "$\\sqrt6$",
+   "$6$",
+   "$\\sqrt{14}$",
+   "$14$"
+  ],
+  "answer": 2,
+  "solution": "$\\sqrt{1+4+9}$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The distance between $(2,3,1)$ and $(-1,-1,1)$ is",
+  "options": [
+   "$5$",
+   "$25$",
+   "$\\sqrt7$",
+   "$7$"
+  ],
+  "answer": 0,
+  "solution": "$\\sqrt{9+16+0}$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The angle between $\\dfrac x2=\\dfrac y2=\\dfrac z1$ and $\\dfrac{x-5}4=\\dfrac{y-2}1=\\dfrac{z-3}8$ is",
+  "options": [
+   "$\\frac\\pi3$",
+   "$\\cos^{-1}\\frac13$",
+   "$\\cos^{-1}\\frac{18}{81}$",
+   "$\\cos^{-1}\\frac23$"
+  ],
+  "answer": 3,
+  "solution": "$\\cos\\theta=\\frac{8+2+8}{3\\cdot9}$.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The direction cosines of a line parallel to the $x$-axis are",
+  "options": [
+   "$0,1,1$",
+   "$0,0,1$",
+   "$1,0,0$",
+   "$1,1,0$"
+  ],
+  "answer": 2,
+  "solution": "Same direction as the axis.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "A line has direction ratios $2,-1,2$. Its direction cosines are",
+  "options": [
+   "$\\frac29,-\\frac19,\\frac29$",
+   "$2,-1,2$",
+   "$\\frac23,-\\frac13,\\frac23$",
+   "$\\frac23,\\frac13,\\frac23$"
+  ],
+  "answer": 2,
+  "solution": "Divide by $3$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The $x$-axis is given by",
+  "options": [
+   "$x=0$",
+   "$x=y=z$",
+   "$y=0$, $z=0$",
+   "$x=0$, $y=0$"
+  ],
+  "answer": 2,
+  "solution": "Every point is $(t,0,0)$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "On $\\vec r=2\\hat i-\\hat j+4\\hat k+\\lambda(\\hat i+\\hat j-2\\hat k)$, the point with $\\lambda=1$ is",
+  "options": [
+   "$(2,-1,4)$",
+   "$(1,-2,6)$",
+   "$(3,0,2)$",
+   "$(3,0,6)$"
+  ],
+  "answer": 2,
+  "solution": "Add the two vectors.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The lines $\\vec r=\\hat i+\\lambda\\hat j$ and $\\vec r=\\hat j+\\mu\\hat i$ meet at",
+  "options": [
+   "$(1,1,0)$",
+   "$(1,0,0)$",
+   "$(0,0,0)$",
+   "$(0,1,0)$"
+  ],
+  "answer": 0,
+  "solution": "$(1,\\lambda,0)=(\\mu,1,0)$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "A line makes angles $\\alpha$, $\\beta$, $\\gamma$ with the axes. Then $\\sin^2\\alpha+\\sin^2\\beta+\\sin^2\\gamma$ equals",
+  "options": [
+   "$0$",
+   "$2$",
+   "$3$",
+   "$1$"
+  ],
+  "answer": 1,
+  "solution": "$3-(\\cos^2\\alpha+\\cos^2\\beta+\\cos^2\\gamma)$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "A line makes angles $\\alpha$, $\\beta$, $\\gamma$ with the axes. Then $\\cos2\\alpha+\\cos2\\beta+\\cos2\\gamma$ equals",
+  "options": [
+   "$0$",
+   "$1$",
+   "$3$",
+   "$-1$"
+  ],
+  "answer": 3,
+  "solution": "$2(\\cos^2\\alpha+\\cos^2\\beta+\\cos^2\\gamma)-3$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The projection of the segment from $(1,2,3)$ to $(3,4,5)$ on a line with direction cosines $\\frac1{\\sqrt3},\\frac1{\\sqrt3},\\frac1{\\sqrt3}$ is",
+  "options": [
+   "$6$",
+   "$\\sqrt{12}+1$",
+   "$\\frac2{\\sqrt3}$",
+   "$2\\sqrt3$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{2+2+2}{\\sqrt3}$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The points $(2,3,4)$, $(-1,-2,1)$ and $(5,8,7)$ are",
+  "options": [
+   "the vertices of an equilateral triangle",
+   "the vertices of a right triangle",
+   "not collinear",
+   "collinear"
+  ],
+  "answer": 3,
+  "solution": "$\\overrightarrow{AC}=-\\overrightarrow{AB}$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "A line is perpendicular to $\\dfrac{x-8}3=\\dfrac{y+19}{-16}=\\dfrac{z-10}7$ and $\\dfrac{x-15}3=\\dfrac{y-29}8=\\dfrac{z-5}{-5}$. Its direction ratios are",
+  "options": [
+   "$2,3,6$",
+   "$3,-16,7$",
+   "$1,2,3$",
+   "$6,-8,2$"
+  ],
+  "answer": 0,
+  "solution": "$(3,-16,7)\\times(3,8,-5)=(24,36,72)$.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The distance between $\\vec r=\\hat i+2\\hat j-4\\hat k+\\lambda(2\\hat i+3\\hat j+6\\hat k)$ and $\\vec r=3\\hat i+3\\hat j-5\\hat k+\\mu(2\\hat i+3\\hat j+6\\hat k)$ is",
+  "options": [
+   "$\\frac{\\sqrt{293}}7$",
+   "$\\frac{\\sqrt{293}}{49}$",
+   "$\\sqrt{293}$",
+   "$\\frac{293}7$"
+  ],
+  "answer": 0,
+  "solution": "$\\vec b\\times(\\vec a_2-\\vec a_1)=-9\\hat i+14\\hat j-4\\hat k$ and $|\\vec b|=7$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The Cartesian form of $\\vec r=\\hat i+2\\hat j-\\hat k+\\lambda(3\\hat i-\\hat j+2\\hat k)$ is",
+  "options": [
+   "$\\frac{x-3}1=\\frac{y+1}2=\\frac{z-2}{-1}$",
+   "$\\frac{x-1}3=\\frac{y-2}1=\\frac{z+1}2$",
+   "$\\frac{x+1}3=\\frac{y+2}{-1}=\\frac{z-1}2$",
+   "$\\frac{x-1}3=\\frac{y-2}{-1}=\\frac{z+1}2$"
+  ],
+  "answer": 3,
+  "solution": "Point $(1,2,-1)$ and direction ratios $3,-1,2$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "The vector form of $\\dfrac{x-5}3=\\dfrac{y+4}7=\\dfrac{z-6}2$ is",
+  "options": [
+   "$\\vec r=-5\\hat i+4\\hat j-6\\hat k+\\lambda(3\\hat i+7\\hat j+2\\hat k)$",
+   "$\\vec r=5\\hat i+4\\hat j+6\\hat k+\\lambda(3\\hat i+7\\hat j+2\\hat k)$",
+   "$\\vec r=5\\hat i-4\\hat j+6\\hat k+\\lambda(3\\hat i+7\\hat j+2\\hat k)$",
+   "$\\vec r=3\\hat i+7\\hat j+2\\hat k+\\lambda(5\\hat i-4\\hat j+6\\hat k)$"
+  ],
+  "answer": 2,
+  "solution": "Point $(5,-4,6)$.",
+  "topic": "Equation of a line"
+ },
+ {
+  "prompt": "Lines with direction ratios $1,2,3$ and $-2,-4,-6$ are",
+  "options": [
+   "at an angle of $60^\\circ$",
+   "perpendicular",
+   "parallel",
+   "skew"
+  ],
+  "answer": 2,
+  "solution": "Proportional direction ratios.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The angle $\\theta$ between lines with direction cosines $l_1,m_1,n_1$ and $l_2,m_2,n_2$ satisfies $\\cos\\theta=$",
+  "options": [
+   "$|l_1l_2+m_1m_2+n_1n_2|$",
+   "$\\sqrt{l_1l_2+m_1m_2+n_1n_2}$",
+   "$l_1l_2+m_1m_2+n_1n_2+1$",
+   "$|l_1+l_2+m_1+m_2+n_1+n_2|$"
+  ],
+  "answer": 0,
+  "solution": "Standard result.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The angle between a line with direction ratios $1,1,1$ and the $x$-axis is",
+  "options": [
+   "$\\cos^{-1}\\frac1{\\sqrt3}$",
+   "$\\frac\\pi4$",
+   "$\\cos^{-1}\\frac13$",
+   "$\\frac\\pi3$"
+  ],
+  "answer": 0,
+  "solution": "$l=\\frac1{\\sqrt3}$.",
+  "topic": "Direction cosines"
+ },
+ {
+  "prompt": "The foot of the perpendicular from $(1,0,0)$ to the line $x=y=z$ is",
+  "options": [
+   "$(0,0,0)$",
+   "$(1,1,1)$",
+   "$\\left(\\frac13,\\frac13,\\frac13\\right)$",
+   "$\\left(\\frac12,\\frac12,\\frac12\\right)$"
+  ],
+  "answer": 2,
+  "solution": "For $(t,t,t)$: $(t-1)+t+t=0$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The image of $(1,0,0)$ in the line $x=y=z$ is",
+  "options": [
+   "$\\left(-\\frac13,\\frac23,\\frac23\\right)$",
+   "$(-1,0,0)$",
+   "$\\left(\\frac23,-\\frac13,-\\frac13\\right)$",
+   "$\\left(\\frac13,\\frac13,\\frac13\\right)$"
+  ],
+  "answer": 0,
+  "solution": "Twice the foot minus the point.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The distance of $(1,0,0)$ from the line $x=y=z$ is",
+  "options": [
+   "$\\frac{\\sqrt6}3$",
+   "$1$",
+   "$\\frac1{\\sqrt3}$",
+   "$\\frac{\\sqrt2}3$"
+  ],
+  "answer": 0,
+  "solution": "$\\left|\\left(\\frac23,-\\frac13,-\\frac13\\right)\\right|$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The lines $\\vec r=\\lambda(\\hat i+2\\hat j+3\\hat k)$ and $\\vec r=\\mu(2\\hat i+4\\hat j+6\\hat k)$ are",
+  "options": [
+   "the same line",
+   "parallel and distinct",
+   "skew",
+   "perpendicular"
+  ],
+  "answer": 0,
+  "solution": "Both pass through the origin with the same direction.",
+  "topic": "Angle between lines"
+ },
+ {
+  "prompt": "The shortest distance between the $x$-axis and the line through $(0,0,1)$ parallel to the $y$-axis is",
+  "options": [
+   "$\\sqrt2$",
+   "$2$",
+   "$1$",
+   "$0$"
+  ],
+  "answer": 2,
+  "solution": "$\\vec b_1\\times\\vec b_2=\\hat k$ and $(\\vec a_2-\\vec a_1)\\cdot\\hat k=1$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "The distance between the $z$-axis and the line $x=1$, $y=2$ is",
+  "options": [
+   "$\\sqrt3$",
+   "$\\sqrt5$",
+   "$3$",
+   "$1$"
+  ],
+  "answer": 1,
+  "solution": "Both are parallel to $\\hat k$; the distance is $\\sqrt{1^2+2^2}$.",
+  "topic": "Shortest distance"
+ },
+ {
+  "prompt": "Assertion (A): $\\frac1{\\sqrt3},\\frac1{\\sqrt3},\\frac1{\\sqrt3}$ can be the direction cosines of a line.\nReason (R): Direction cosines satisfy $l^2+m^2+n^2=1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$\\frac13+\\frac13+\\frac13=1$.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Lines with direction ratios $1,2,3$ and $3,-3,1$ are perpendicular.\nReason (R): Lines with proportional direction ratios are parallel.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "A holds since $3-6+3=0$; R is a different fact.",
+  "topic": "Angle between lines",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The shortest distance between two intersecting lines is $0$.\nReason (R): Intersecting lines have a common point.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "The distance at the common point is $0$.",
+  "topic": "Shortest distance",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The lines $\\frac x1=\\frac y2=\\frac z3$ and $\\frac x2=\\frac y4=\\frac z6$ are skew.\nReason (R): Lines that are not parallel and do not meet are skew.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "These are the same line.",
+  "topic": "Shortest distance",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The direction cosines of the line through $(0,0,0)$ and $(1,1,1)$ are $1,1,1$.\nReason (R): Its direction ratios are $1,1,1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The direction cosines are $\\frac1{\\sqrt3},\\frac1{\\sqrt3},\\frac1{\\sqrt3}$.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The line $x-1=y-2=z-3$ passes through $(1,2,3)$.\nReason (R): Its direction ratios are $1,1,1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; R is about the direction.",
+  "topic": "Equation of a line",
+  "assertion": true
+ }
+]

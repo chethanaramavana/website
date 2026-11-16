@@ -1,0 +1,2467 @@
+{
+ "g12-ch5-mcq-20-01": [
+  {
+   "q": "$f(x)=kx^2$ for $x\\le2$ and $f(x)=3$ for $x>2$. $f$ is continuous at $2$ when $k$ equals",
+   "a": "(A) $\\frac34$",
+   "s": "$4k=3$.",
+   "opts": [
+    "$\\frac34$",
+    "$3$",
+    "$\\frac32$",
+    "$\\frac43$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac{\\sin x}{x}$ for $x\\ne0$ and $f(0)=k$. $f$ is continuous at $0$ when $k$ equals",
+   "a": "(B) $1$",
+   "s": "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1$.",
+   "opts": [
+    "$\\frac12$",
+    "$1$",
+    "$-1$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=|x-3|$ is not differentiable at",
+   "a": "(C) $x=3$",
+   "s": "The graph has a corner at $x=3$.",
+   "opts": [
+    "any point",
+    "$x=-3$",
+    "$x=3$",
+    "$x=0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sin(3x+2)$ equals",
+   "a": "(A) $3\\cos(3x+2)$",
+   "s": "Chain rule.",
+   "opts": [
+    "$3\\cos(3x+2)$",
+    "$3\\sin(3x+2)$",
+    "$\\cos(3x+2)$",
+    "$-3\\cos(3x+2)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}e^{x^2}$ equals",
+   "a": "(B) $2xe^{x^2}$",
+   "s": "Chain rule.",
+   "opts": [
+    "$e^{x^2}$",
+    "$2xe^{x^2}$",
+    "$2e^{x^2}$",
+    "$x^2e^{x^2-1}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log\\sin x$ equals",
+   "a": "(D) $\\cot x$",
+   "s": "$\\frac{\\cos x}{\\sin x}$.",
+   "opts": [
+    "$-\\cot x$",
+    "$\\frac1{\\sin x}$",
+    "$\\tan x$",
+    "$\\cot x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sin^{-1}(x^2)$ equals",
+   "a": "(A) $\\frac{2x}{\\sqrt{1-x^4}}$",
+   "s": "Chain rule.",
+   "opts": [
+    "$\\frac{2x}{\\sqrt{1-x^4}}$",
+    "$\\frac{2x}{\\sqrt{1-x^2}}$",
+    "$\\frac1{\\sqrt{1-x^4}}$",
+    "$\\frac{2x}{1+x^4}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\tan^{-1}e^x$ equals",
+   "a": "(A) $\\frac{e^x}{1+e^{2x}}$",
+   "s": "Chain rule.",
+   "opts": [
+    "$\\frac{e^x}{1+e^{2x}}$",
+    "$\\frac1{1+e^{2x}}$",
+    "$\\frac{e^{2x}}{1+e^{2x}}$",
+    "$\\frac{e^x}{1+e^x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x^2+xy+y^2=7$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(B) $-\\frac{2x+y}{x+2y}$",
+   "s": "$2x+y+xy'+2yy'=0$.",
+   "opts": [
+    "$\\frac{2x+y}{x+2y}$",
+    "$-\\frac{2x+y}{x+2y}$",
+    "$-\\frac{2x}{2y}$",
+    "$-\\frac{x+2y}{2x+y}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}x^{2x}$ for $x>0$ equals",
+   "a": "(A) $2x^{2x}(1+\\log x)$",
+   "s": "$\\log y=2x\\log x$.",
+   "opts": [
+    "$2x^{2x}(1+\\log x)$",
+    "$2x^{2x}\\log x$",
+    "$x^{2x}\\log x$",
+    "$2x\\cdot x^{2x-1}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x=2t$ and $y=t^2$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(B) $t$",
+   "s": "$\\frac{2t}{2}$.",
+   "opts": [
+    "$2t$",
+    "$t$",
+    "$\\frac t2$",
+    "$\\frac1t$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x=\\cos^3t$ and $y=\\sin^3t$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(B) $-\\tan t$",
+   "s": "$\\frac{3\\sin^2t\\cos t}{-3\\cos^2t\\sin t}$.",
+   "opts": [
+    "$\\tan^2t$",
+    "$-\\tan t$",
+    "$-\\cot t$",
+    "$\\tan t$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\sin2x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(C) $-4\\sin2x$",
+   "s": "Differentiate twice.",
+   "opts": [
+    "$4\\sin2x$",
+    "$-2\\sin2x$",
+    "$-4\\sin2x$",
+    "$2\\cos2x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=e^x\\sin x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(A) $2e^x\\cos x$",
+   "s": "$y'=e^x(\\sin x+\\cos x)$.",
+   "opts": [
+    "$2e^x\\cos x$",
+    "$e^x(\\sin x+\\cos x)$",
+    "$2e^x\\sin x$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\left(\\sin^{-1}x\\right)^2$ equals",
+   "a": "(A) $\\frac{2\\sin^{-1}x}{\\sqrt{1-x^2}}$",
+   "s": "Chain rule.",
+   "opts": [
+    "$\\frac{2\\sin^{-1}x}{\\sqrt{1-x^2}}$",
+    "$\\frac{\\sin^{-1}x}{\\sqrt{1-x^2}}$",
+    "$\\frac{2}{\\sqrt{1-x^2}}$",
+    "$2\\sin^{-1}x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "At $x=0$, the function $f(x)=|x|^3$ is",
+   "a": "(B) differentiable with $f'(0)=0$",
+   "s": "$\\frac{|h|^3}{h}\\to0$.",
+   "opts": [
+    "continuous but not differentiable",
+    "differentiable with $f'(0)=0$",
+    "differentiable with $f'(0)=3$",
+    "not continuous"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log\\left(x+\\sqrt{x^2+1}\\right)$ equals",
+   "a": "(D) $\\frac1{\\sqrt{x^2+1}}$",
+   "s": "$\\frac{1+\\frac{x}{\\sqrt{x^2+1}}}{x+\\sqrt{x^2+1}}$.",
+   "opts": [
+    "$\\frac1{x+\\sqrt{x^2+1}}$",
+    "$\\frac{x}{\\sqrt{x^2+1}}$",
+    "$\\sqrt{x^2+1}$",
+    "$\\frac1{\\sqrt{x^2+1}}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\log\\cos e^x$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(B) $-e^x\\tan e^x$",
+   "s": "$\\frac{-\\sin e^x}{\\cos e^x}\\cdot e^x$.",
+   "opts": [
+    "$-\\tan e^x$",
+    "$-e^x\\tan e^x$",
+    "$e^x\\tan e^x$",
+    "$-e^x\\cot e^x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=x^2$ is differentiable at every real $x$. Reason: Every polynomial function is differentiable at every real number.",
+   "a": "(A)",
+   "s": "A is a case of R.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $g(x)=[x]$ is differentiable at $x=2$. Reason: $[x]$ is not continuous at $x=2$.",
+   "a": "(D)",
+   "s": "A function that is not continuous is not differentiable.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch5-board-01": [
+  {
+   "q": "$f(x)=\\dfrac{1-\\cos4x}{8x^2}$ for $x\\ne0$ and $f(0)=k$. $f$ is continuous at $0$ when $k$ equals",
+   "a": "(B) $1$",
+   "s": "$\\frac{2\\sin^22x}{8x^2}=\\left(\\frac{\\sin2x}{2x}\\right)^2$. [1]",
+   "opts": [
+    "$4$",
+    "$1$",
+    "$2$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac1{x-2}$ is not continuous at",
+   "a": "(A) $x=2$",
+   "s": "$f(2)$ is not defined. [1]",
+   "opts": [
+    "$x=2$",
+    "$x=0$",
+    "$x=-2$",
+    "$x=1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of points of discontinuity of $f(x)=\\dfrac{x+1}{(x-1)(x-4)}$ is",
+   "a": "(B) $2$",
+   "s": "$x=1$ and $x=4$. [1]",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}(\\sin x\\cos x)$ equals",
+   "a": "(B) $\\cos2x$",
+   "s": "$\\sin x\\cos x=\\frac12\\sin2x$. [1]",
+   "opts": [
+    "$-\\sin2x$",
+    "$\\cos2x$",
+    "$\\sin2x$",
+    "$2\\cos x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sqrt{\\sin x}$ equals",
+   "a": "(B) $\\frac{\\cos x}{2\\sqrt{\\sin x}}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\frac{\\cos x}{\\sqrt{\\sin x}}$",
+    "$\\frac{\\cos x}{2\\sqrt{\\sin x}}$",
+    "$\\frac1{2\\sqrt{\\sin x}}$",
+    "$\\sqrt{\\cos x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}e^{-3x}$ equals",
+   "a": "(C) $-3e^{-3x}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$-e^{-3x}$",
+    "$3e^{-3x}$",
+    "$-3e^{-3x}$",
+    "$e^{-3x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log(x^2+1)$ equals",
+   "a": "(A) $\\frac{2x}{x^2+1}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\frac{2x}{x^2+1}$",
+    "$\\frac1{x^2+1}$",
+    "$\\frac{x}{x^2+1}$",
+    "$2x\\log(x^2+1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\tan^{-1}(x^2)$ equals",
+   "a": "(A) $\\frac{2x}{1+x^4}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\frac{2x}{1+x^4}$",
+    "$\\frac{2x}{1+x^2}$",
+    "$\\frac{x^2}{1+x^4}$",
+    "$\\frac1{1+x^4}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\cos^{-1}x$ equals",
+   "a": "(B) $-\\frac1{\\sqrt{1-x^2}}$",
+   "s": "Standard derivative. [1]",
+   "opts": [
+    "$\\frac1{1+x^2}$",
+    "$-\\frac1{\\sqrt{1-x^2}}$",
+    "$\\frac1{\\sqrt{1-x^2}}$",
+    "$-\\frac1{1+x^2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$e^y=x$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $\\frac1x$",
+   "s": "$y=\\log x$. [1]",
+   "opts": [
+    "$x$",
+    "$e^x$",
+    "$\\log x$",
+    "$\\frac1x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x=t^2$ and $y=t^3$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(A) $\\frac{3t}{2}$",
+   "s": "$\\frac{3t^2}{2t}$. [1]",
+   "opts": [
+    "$\\frac{3t}{2}$",
+    "$\\frac{2}{3t}$",
+    "$\\frac{3t^2}{2}$",
+    "$t$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=5^x$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $5^x\\log5$",
+   "s": "$5^x=e^{x\\log5}$. [1]",
+   "opts": [
+    "$\\frac{5^x}{\\log5}$",
+    "$x5^{x-1}$",
+    "$5^x$",
+    "$5^x\\log5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d^2}{dx^2}x^3$ equals",
+   "a": "(C) $6x$",
+   "s": "Differentiate twice. [1]",
+   "opts": [
+    "$6x^2$",
+    "$6$",
+    "$6x$",
+    "$3x^2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=e^{ax}$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(D) $a^2e^{ax}$",
+   "s": "Differentiate twice. [1]",
+   "opts": [
+    "$e^{ax}$",
+    "$ae^{ax}$",
+    "$2ae^{ax}$",
+    "$a^2e^{ax}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=|x|$ is not differentiable at $x=0$. Reason: At $0$ the left derivative is $-1$ and the right derivative is $1$.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $\\dfrac{d}{dx}\\log x=\\dfrac1x$ for $x>0$. Reason: $\\dfrac{d}{dx}e^x=e^x$.",
+   "a": "(B)",
+   "s": "Both are standard results; R does not give A. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=kx+1$ for $x\\le\\pi$ and $f(x)=\\cos x$ for $x>\\pi$. Find $k$ such that $f$ is continuous at $x=\\pi$.",
+   "a": "$k=-\\frac2\\pi$",
+   "s": "$f(\\pi)=k\\pi+1$ and the right limit is $\\cos\\pi=-1$ [1]. $k\\pi+1=-1$, so $k=-\\frac2\\pi$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Differentiate $\\sin^{-1}(x\\sqrt x)$ with respect to $x$, for $0\\le x<1$.",
+    "a": "$\\frac{3\\sqrt x}{2\\sqrt{1-x^3}}$",
+    "s": "$\\frac1{\\sqrt{1-x^3}}\\cdot\\frac{d}{dx}x^{\\frac32}$ [1] $=\\frac{3\\sqrt x}{2\\sqrt{1-x^3}}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $2x+3y=\\sin y$.",
+   "a": "$\\frac2{\\cos y-3}$",
+   "s": "$2+3y'=\\cos y\\cdot y'$ [1]. $y'(\\cos y-3)=2$, so $y'=\\frac2{\\cos y-3}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Differentiate $\\sin(\\cos(x^2))$ with respect to $x$.",
+   "a": "$-2x\\sin(x^2)\\cos(\\cos(x^2))$",
+   "s": "$\\cos(\\cos x^2)\\cdot\\frac{d}{dx}\\cos x^2$ [1] $=\\cos(\\cos x^2)\\cdot(-\\sin x^2)\\cdot2x$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $y=(\\sin x)^{\\log x}$, for $0<x<\\pi$.",
+   "a": "$(\\sin x)^{\\log x}\\left(\\frac{\\log\\sin x}{x}+\\log x\\cot x\\right)$",
+   "s": "$\\log y=\\log x\\cdot\\log\\sin x$ [1]. $\\frac{y'}{y}=\\frac{\\log\\sin x}{x}+\\log x\\cdot\\frac{\\cos x}{\\sin x}$ [1]. $y'=(\\sin x)^{\\log x}\\left(\\frac{\\log\\sin x}{x}+\\log x\\cot x\\right)$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$x=a(\\cos t+t\\sin t)$ and $y=a(\\sin t-t\\cos t)$. Find $\\dfrac{dy}{dx}$ and $\\dfrac{d^2y}{dx^2}$.",
+   "a": "$\\tan t$; $\\frac{\\sec^3t}{at}$",
+   "s": "$\\frac{dx}{dt}=at\\cos t$ and $\\frac{dy}{dt}=at\\sin t$ [1]. $\\frac{dy}{dx}=\\tan t$ [1]. $\\frac{d^2y}{dx^2}=\\frac{\\sec^2t}{at\\cos t}=\\frac{\\sec^3t}{at}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$y=3\\cos(\\log x)+4\\sin(\\log x)$. Show that $x^2y''+xy'+y=0$.",
+   "a": "Shown.",
+   "s": "$xy'=-3\\sin(\\log x)+4\\cos(\\log x)$ [1]. Differentiate again: $xy''+y'=\\frac{-3\\cos(\\log x)-4\\sin(\\log x)}{x}=-\\frac yx$ [1]. Multiply by $x$: $x^2y''+xy'+y=0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": {
+    "q": "$y=500e^{7x}+600e^{-7x}$. Show that $y''=49y$.",
+    "a": "Shown.",
+    "s": "$y'=3500e^{7x}-4200e^{-7x}$ [1]. $y''=24500e^{7x}+29400e^{-7x}$ [1] $=49(500e^{7x}+600e^{-7x})=49y$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=5$ for $x\\le2$, $f(x)=ax+b$ for $2<x<10$ and $f(x)=21$ for $x\\ge10$. (i) Find $a$ and $b$ such that $f$ is continuous. (ii) Is $f$ differentiable at $x=2$? Give a reason.",
+   "a": "(i) $a=2$, $b=1$; (ii) no.",
+   "s": "(i) At $x=2$: $2a+b=5$ [1]. At $x=10$: $10a+b=21$ [1]. So $a=2$ and $b=1$ [1]. (ii) The left derivative at $2$ is $0$ and the right derivative is $a=2$ [1]. They are not equal, so $f$ is not differentiable at $2$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$y=(\\tan^{-1}x)^2$. Show that $(x^2+1)^2y''+2x(x^2+1)y'=2$.",
+    "a": "Shown.",
+    "s": "$y'=\\frac{2\\tan^{-1}x}{1+x^2}$ [1], so $(1+x^2)y'=2\\tan^{-1}x$ [1]. Differentiate: $(1+x^2)y''+2xy'=\\frac2{1+x^2}$ [2]. Multiply by $1+x^2$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. An electricity board charges $f(x)=5x$ rupees for $0\\le x\\le100$ units and $f(x)=500+7(x-100)$ rupees for $x>100$ units. (i) Is $f$ continuous at $x=100$? [1] (ii) Find the left derivative of $f$ at $x=100$. [1] (iii) Is $f$ differentiable at $x=100$? Give a reason. [2] \\textbf{OR} (iii) A second board charges $g(x)=5x$ for $x\\le100$ and $g(x)=kx-200$ for $x>100$. Find $k$ such that $g$ is continuous at $100$. [2]",
+   "a": "(i) yes; (ii) $5$; (iii) no; OR $k=7$.",
+   "s": "(i) $f(100)=500$ and the right limit is $500$, so $f$ is continuous [1]. (ii) $5$ [1]. (iii) The right derivative is $7$ [1]. $5\\ne7$, so $f$ is not differentiable at $100$ [1]. OR $100k-200=500$ [1], so $k=7$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch5-board-02": [
+  {
+   "q": "$f(x)=\\dfrac{x^3-8}{x-2}$ for $x\\ne2$ and $f(2)=k$. $f$ is continuous at $2$ when $k$ equals",
+   "a": "(D) $12$",
+   "s": "$\\frac{x^3-8}{x-2}=x^2+2x+4$. [1]",
+   "opts": [
+    "$8$",
+    "$4$",
+    "$0$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\tan x$ is not continuous at",
+   "a": "(D) $x=\\frac\\pi2$",
+   "s": "$\\cos\\frac\\pi2=0$. [1]",
+   "opts": [
+    "$x=\\frac\\pi4$",
+    "$x=\\pi$",
+    "$x=0$",
+    "$x=\\frac\\pi2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which of these functions is continuous at every real number?",
+   "a": "(A) $|x|$",
+   "s": "The others fail at $0$, at $\\frac\\pi2$ and at the integers. [1]",
+   "opts": [
+    "$|x|$",
+    "$\\frac1x$",
+    "$\\tan x$",
+    "$[x]$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\cos(x^3)$ equals",
+   "a": "(B) $-3x^2\\sin(x^3)$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$-\\sin(x^3)$",
+    "$-3x^2\\sin(x^3)$",
+    "$3x^2\\sin(x^3)$",
+    "$-3x^2\\cos(x^3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sec(\\tan x)$ equals",
+   "a": "(B) $\\sec(\\tan x)\\tan(\\tan x)\\sec^2x$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\sec(\\tan x)\\tan(\\tan x)$",
+    "$\\sec(\\tan x)\\tan(\\tan x)\\sec^2x$",
+    "$\\sec^2(\\tan x)$",
+    "$\\sec x\\tan x\\sec^2x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}e^{\\sqrt x}$ equals",
+   "a": "(B) $\\frac{e^{\\sqrt x}}{2\\sqrt x}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\sqrt xe^{\\sqrt x}$",
+    "$\\frac{e^{\\sqrt x}}{2\\sqrt x}$",
+    "$\\frac{e^{\\sqrt x}}{\\sqrt x}$",
+    "$e^{\\sqrt x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log\\cos x$ equals",
+   "a": "(D) $-\\tan x$",
+   "s": "$\\frac{-\\sin x}{\\cos x}$. [1]",
+   "opts": [
+    "$\\tan x$",
+    "$\\frac1{\\cos x}$",
+    "$\\cot x$",
+    "$-\\tan x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $|x|<\\dfrac12$, $\\dfrac{d}{dx}\\sin^{-1}(3x-4x^3)$ equals",
+   "a": "(B) $\\frac3{\\sqrt{1-x^2}}$",
+   "s": "With $x=\\sin\\theta$ the function is $3\\theta$. [1]",
+   "opts": [
+    "$\\frac{3-12x^2}{\\sqrt{1-x^2}}$",
+    "$\\frac3{\\sqrt{1-x^2}}$",
+    "$\\frac1{\\sqrt{1-x^2}}$",
+    "$\\frac{3}{1+x^2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\cot^{-1}x$ equals",
+   "a": "(C) $-\\frac1{1+x^2}$",
+   "s": "Standard derivative. [1]",
+   "opts": [
+    "$\\frac1{1+x^2}$",
+    "$-\\frac1{\\sqrt{1-x^2}}$",
+    "$-\\frac1{1+x^2}$",
+    "$-\\operatorname{cosec}^2x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y^2=4ax$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(C) $\\frac{2a}{y}$",
+   "s": "$2yy'=4a$. [1]",
+   "opts": [
+    "$\\frac{4a}{y}$",
+    "$2a$",
+    "$\\frac{2a}{y}$",
+    "$\\frac{y}{2x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x=a\\sec\\theta$ and $y=b\\tan\\theta$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(B) $\\frac ba\\operatorname{cosec}\\theta$",
+   "s": "$\\frac{b\\sec^2\\theta}{a\\sec\\theta\\tan\\theta}$. [1]",
+   "opts": [
+    "$\\frac ba\\sec\\theta$",
+    "$\\frac ba\\operatorname{cosec}\\theta$",
+    "$\\frac ba\\tan\\theta$",
+    "$\\frac ab\\operatorname{cosec}\\theta$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}2^{3x}$ equals",
+   "a": "(A) $3\\cdot2^{3x}\\log2$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$3\\cdot2^{3x}\\log2$",
+    "$\\frac{2^{3x}}{3\\log2}$",
+    "$3x\\cdot2^{3x-1}$",
+    "$2^{3x}\\log2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=x^4$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(A) $12x^2$",
+   "s": "Differentiate twice. [1]",
+   "opts": [
+    "$12x^2$",
+    "$12x$",
+    "$4x^3$",
+    "$24x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\sin(\\log x)$. Then $x^2y''+xy'$ equals",
+   "a": "(B) $-y$",
+   "s": "$xy'=\\cos(\\log x)$; differentiate: $xy''+y'=-\\frac{\\sin(\\log x)}{x}$. [1]",
+   "opts": [
+    "$y$",
+    "$-y$",
+    "$0$",
+    "$\\cos(\\log x)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=x+|x|$ is continuous at $x=0$. Reason: The sum of two continuous functions is continuous.",
+   "a": "(A)",
+   "s": "$x$ and $|x|$ are continuous. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=|x|$ is differentiable at $x=1$. Reason: $f(x)=|x|$ is differentiable at every real $x$.",
+   "a": "(C)",
+   "s": "Near $1$, $|x|=x$. R is false at $x=0$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac{x^2-25}{x-5}$ for $x\\ne5$ and $f(5)=k$. Find $k$ such that $f$ is continuous at $5$.",
+   "a": "$k=10$",
+   "s": "$\\lim_{x\\to5}\\frac{(x-5)(x+5)}{x-5}=\\lim_{x\\to5}(x+5)=10$ [1]. So $k=10$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Show that $f(x)=2x-|x|$ is continuous at $x=0$.",
+    "a": "Shown.",
+    "s": "Left limit $\\lim(2x+x)=0$ and right limit $\\lim(2x-x)=0$ [1]. $f(0)=0$, so $f$ is continuous at $0$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $x^3+x^2y+xy^2+y^3=81$.",
+   "a": "$-\\frac{3x^2+2xy+y^2}{x^2+2xy+3y^2}$",
+   "s": "$3x^2+2xy+x^2y'+y^2+2xyy'+3y^2y'=0$ [1]. $y'=-\\frac{3x^2+2xy+y^2}{x^2+2xy+3y^2}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Differentiate $e^{\\sin^{-1}x}$ with respect to $x$.",
+   "a": "$\\frac{e^{\\sin^{-1}x}}{\\sqrt{1-x^2}}$",
+   "s": "$e^{\\sin^{-1}x}\\cdot\\frac{d}{dx}\\sin^{-1}x$ [1] $=\\frac{e^{\\sin^{-1}x}}{\\sqrt{1-x^2}}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $y=x^x-2^{\\sin x}$.",
+   "a": "$x^x(1+\\log x)-2^{\\sin x}\\cos x\\log2$",
+   "s": "Let $u=x^x$: $\\log u=x\\log x$, so $\\frac{du}{dx}=x^x(1+\\log x)$ [1½]. $\\frac{d}{dx}2^{\\sin x}=2^{\\sin x}\\log2\\cdot\\cos x$ [1]. Subtract [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$x=2\\cos\\theta-\\cos2\\theta$ and $y=2\\sin\\theta-\\sin2\\theta$. Find $\\dfrac{dy}{dx}$.",
+   "a": "$\\tan\\frac{3\\theta}{2}$",
+   "s": "$\\frac{dx}{d\\theta}=2(\\sin2\\theta-\\sin\\theta)$ and $\\frac{dy}{d\\theta}=2(\\cos\\theta-\\cos2\\theta)$ [1]. $\\frac{dy}{dx}=\\frac{\\cos\\theta-\\cos2\\theta}{\\sin2\\theta-\\sin\\theta}=\\frac{2\\sin\\frac{3\\theta}{2}\\sin\\frac\\theta2}{2\\cos\\frac{3\\theta}{2}\\sin\\frac\\theta2}$ [1] $=\\tan\\frac{3\\theta}{2}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$y=e^{a\\cos^{-1}x}$ for $|x|<1$. Show that $(1-x^2)y''-xy'-a^2y=0$.",
+   "a": "Shown.",
+   "s": "$y'=-\\frac{ay}{\\sqrt{1-x^2}}$, so $(1-x^2)(y')^2=a^2y^2$ [1]. Differentiate: $(1-x^2)2y'y''-2x(y')^2=2a^2yy'$ [1]. Divide by $2y'$: $(1-x^2)y''-xy'-a^2y=0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $y=(\\log x)^x+x^{\\log x}$.",
+   "a": "$(\\log x)^x\\left(\\log\\log x+\\frac1{\\log x}\\right)+2x^{\\log x-1}\\log x$",
+   "s": "Let $u=(\\log x)^x$: $\\log u=x\\log\\log x$ [1], $\\frac{du}{dx}=(\\log x)^x\\left(\\log\\log x+\\frac1{\\log x}\\right)$ [1]. Let $v=x^{\\log x}$: $\\log v=(\\log x)^2$ [1], $\\frac{dv}{dx}=x^{\\log x}\\cdot\\frac{2\\log x}{x}$ [1]. $y'=u'+v'$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$x=\\sin t$ and $y=\\sin pt$. Show that $(1-x^2)y''-xy'+p^2y=0$.",
+    "a": "Shown.",
+    "s": "$y'=\\frac{p\\cos pt}{\\cos t}$ [1], so $(1-x^2)(y')^2=p^2\\cos^2pt=p^2(1-y^2)$ [2]. Differentiate: $(1-x^2)2y'y''-2x(y')^2=-2p^2yy'$ [1]. Divide by $2y'$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A bead moves on the curve $x=3\\cos t$, $y=2\\sin t$. (i) Find $\\dfrac{dx}{dt}$ at $t=\\dfrac\\pi2$. [1] (ii) Find $\\dfrac{dy}{dx}$ in terms of $t$. [1] (iii) Find $\\dfrac{d^2y}{dx^2}$ at $t=\\dfrac\\pi2$. [2] \\textbf{OR} (iii) Find the point of the curve, with $0<t<\\pi$, at which $\\dfrac{dy}{dx}=0$. [2]",
+   "a": "(i) $-3$; (ii) $-\\frac23\\cot t$; (iii) $-\\frac29$; OR $(0,2)$.",
+   "s": "(i) $-3\\sin\\frac\\pi2=-3$ [1]. (ii) $\\frac{2\\cos t}{-3\\sin t}$ [1]. (iii) $\\frac{d}{dt}\\left(-\\frac23\\cot t\\right)=\\frac23\\operatorname{cosec}^2t$, divide by $-3\\sin t$: $-\\frac29\\operatorname{cosec}^3t$ [1]. At $\\frac\\pi2$ the value is $-\\frac29$ [1]. OR $\\cot t=0$ gives $t=\\frac\\pi2$ [1]; the point is $(0,2)$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch5-board-03": [
+  {
+   "q": "$f(x)=3x-8$ for $x\\le5$ and $f(x)=2k$ for $x>5$. $f$ is continuous at $5$ when $k$ equals",
+   "a": "(C) $\\frac72$",
+   "s": "$15-8=2k$. [1]",
+   "opts": [
+    "$7$",
+    "$4$",
+    "$\\frac72$",
+    "$\\frac27$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The function $f(x)=\\dfrac{x^2-1}{x^2+1}$ is",
+   "a": "(B) continuous at every real number",
+   "s": "The denominator is never $0$. [1]",
+   "opts": [
+    "not continuous at $x=0$",
+    "continuous at every real number",
+    "not continuous at $x=1$",
+    "not continuous at $x=\\pm1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The derivative of $f(x)=|x|$ at $x=2$ is",
+   "a": "(C) $1$",
+   "s": "Near $2$, $|x|=x$. [1]",
+   "opts": [
+    "$-1$",
+    "$2$",
+    "$1$",
+    "not defined"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\tan(2x+3)$ equals",
+   "a": "(C) $2\\sec^2(2x+3)$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\sec^2(2x+3)$",
+    "$2\\sec(2x+3)$",
+    "$2\\sec^2(2x+3)$",
+    "$2\\tan(2x+3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sin(e^x)$ equals",
+   "a": "(D) $e^x\\cos(e^x)$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$-e^x\\cos(e^x)$",
+    "$\\cos(e^x)$",
+    "$e^x\\sin(e^x)$",
+    "$e^x\\cos(e^x)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\left(xe^x\\right)$ equals",
+   "a": "(C) $e^x(1+x)$",
+   "s": "Product rule. [1]",
+   "opts": [
+    "$xe^x$",
+    "$e^x$",
+    "$e^x(1+x)$",
+    "$e^x(x-1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}(\\log x)^2$ equals",
+   "a": "(D) $\\frac{2\\log x}{x}$",
+   "s": "Chain rule. [1]",
+   "opts": [
+    "$\\frac2x$",
+    "$\\frac{(\\log x)^2}{x}$",
+    "$2\\log x$",
+    "$\\frac{2\\log x}{x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\sin^{-1}\\dfrac x2$ equals",
+   "a": "(A) $\\frac1{\\sqrt{4-x^2}}$",
+   "s": "$\\frac1{\\sqrt{1-\\frac{x^2}4}}\\cdot\\frac12$. [1]",
+   "opts": [
+    "$\\frac1{\\sqrt{4-x^2}}$",
+    "$\\frac1{2\\sqrt{4-x^2}}$",
+    "$\\frac2{\\sqrt{4-x^2}}$",
+    "$\\frac1{\\sqrt{1-x^2}}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $x>1$, $\\dfrac{d}{dx}\\sec^{-1}x$ equals",
+   "a": "(A) $\\frac1{x\\sqrt{x^2-1}}$",
+   "s": "Standard derivative. [1]",
+   "opts": [
+    "$\\frac1{x\\sqrt{x^2-1}}$",
+    "$-\\frac1{x\\sqrt{x^2-1}}$",
+    "$\\frac1{\\sqrt{x^2-1}}$",
+    "$\\frac1{1+x^2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x^2+y^2=4xy$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $\\frac{2y-x}{y-2x}$",
+   "s": "$2x+2yy'=4y+4xy'$. [1]",
+   "opts": [
+    "$\\frac{x-2y}{y-2x}$",
+    "$\\frac{2x-y}{y-2x}$",
+    "$-\\frac xy$",
+    "$\\frac{2y-x}{y-2x}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$x=at^2$ and $y=2at$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(C) $-\\frac1{2at^3}$",
+   "s": "$\\frac{dy}{dx}=\\frac1t$; $\\frac{d}{dt}\\frac1t=-\\frac1{t^2}$, divided by $2at$. [1]",
+   "opts": [
+    "$\\frac1{2at^3}$",
+    "$-\\frac1{t^2}$",
+    "$-\\frac1{2at^3}$",
+    "$-\\frac1{2at^2}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log x^3$ equals",
+   "a": "(A) $\\frac3x$",
+   "s": "$\\log x^3=3\\log x$. [1]",
+   "opts": [
+    "$\\frac3x$",
+    "$3\\log x$",
+    "$\\frac1{x^3}$",
+    "$\\frac{3}{x^3}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\tan x$. Then $\\dfrac{d^2y}{dx^2}$ equals",
+   "a": "(B) $2\\sec^2x\\tan x$",
+   "s": "$y'=\\sec^2x$. [1]",
+   "opts": [
+    "$2\\sec x\\tan x$",
+    "$2\\sec^2x\\tan x$",
+    "$\\sec^2x$",
+    "$\\sec^2x\\tan x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\log x$. Then $xy''+y'$ equals",
+   "a": "(C) $0$",
+   "s": "$x\\left(-\\frac1{x^2}\\right)+\\frac1x$. [1]",
+   "opts": [
+    "$\\frac1x$",
+    "$-\\frac1{x^2}$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=\\sin x$ is differentiable at every real $x$. Reason: $\\dfrac{d}{dx}\\sin x=\\cos x$ exists for every real $x$.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $f(x)=\\dfrac1x$ is continuous at every point of its domain. Reason: $f(0)$ is not defined.",
+   "a": "(B)",
+   "s": "Both are true; R is about a point outside the domain. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Examine the continuity of $f(x)=x+1$ for $x\\ge1$ and $f(x)=x^2+1$ for $x<1$, at $x=1$.",
+   "a": "Continuous at $x=1$.",
+   "s": "Left limit $1+1=2$ and right limit $1+1=2$ [1]. $f(1)=2$, so $f$ is continuous at $1$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "$f(x)=\\dfrac{k\\cos x}{\\pi-2x}$ for $x\\ne\\dfrac\\pi2$ and $f\\left(\\dfrac\\pi2\\right)=3$. Find $k$ such that $f$ is continuous at $\\dfrac\\pi2$.",
+    "a": "$k=6$",
+    "s": "Put $x=\\frac\\pi2+h$: $\\frac{k\\cos x}{\\pi-2x}=\\frac{-k\\sin h}{-2h}\\to\\frac k2$ [1]. $\\frac k2=3$, so $k=6$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{d}{dx}\\cos^{-1}(\\sin x)$ for $-\\dfrac\\pi2<x<\\dfrac\\pi2$.",
+   "a": "$-1$",
+   "s": "$\\sin x=\\cos\\left(\\frac\\pi2-x\\right)$ and $\\frac\\pi2-x\\in(0,\\pi)$ [1]. So $\\cos^{-1}(\\sin x)=\\frac\\pi2-x$ and the derivative is $-1$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{dy}{dx}$ if $y=\\sec^{-1}\\dfrac1{2x^2-1}$, for $0<x<\\dfrac1{\\sqrt2}$.",
+   "a": "$-\\frac2{\\sqrt{1-x^2}}$",
+   "s": "$y=\\cos^{-1}(2x^2-1)$; with $x=\\cos\\theta$, $y=\\cos^{-1}(\\cos2\\theta)=2\\theta=2\\cos^{-1}x$ [1]. $y'=-\\frac2{\\sqrt{1-x^2}}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$x^y=e^{x-y}$. Show that $\\dfrac{dy}{dx}=\\dfrac{\\log x}{(1+\\log x)^2}$.",
+   "a": "Shown.",
+   "s": "$y\\log x=x-y$, so $y=\\frac{x}{1+\\log x}$ [1]. $y'=\\frac{(1+\\log x)-x\\cdot\\frac1x}{(1+\\log x)^2}$ [1] $=\\frac{\\log x}{(1+\\log x)^2}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$x=\\sqrt{a^{\\sin^{-1}t}}$ and $y=\\sqrt{a^{\\cos^{-1}t}}$. Show that $\\dfrac{dy}{dx}=-\\dfrac yx$.",
+   "a": "Shown.",
+   "s": "$xy=\\sqrt{a^{\\sin^{-1}t+\\cos^{-1}t}}=a^{\\frac\\pi4}$, a constant [2]. Differentiate: $y+x\\frac{dy}{dx}=0$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$y=\\sin^{-1}x$. Show that $(1-x^2)y''-xy'=0$.",
+   "a": "Shown.",
+   "s": "$y'=\\frac1{\\sqrt{1-x^2}}$, so $\\sqrt{1-x^2}\\,y'=1$ [1]. Differentiate: $\\sqrt{1-x^2}\\,y'r'-\\frac{x}{\\sqrt{1-x^2}}y'=0$ [1]. Multiply by $\\sqrt{1-x^2}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$(x-a)^2+(y-b)^2=c^2$ with $c>0$. Show that $\\dfrac{\\left(1+(y')^2\\right)^{\\frac32}}{y''}$ is a constant independent of $a$ and $b$.",
+   "a": "The value is $-c$.",
+   "s": "$(x-a)+(y-b)y'=0$, so $y'=-\\frac{x-a}{y-b}$ [1]. Differentiate: $1+(y')^2+(y-b)y''=0$, so $y'r'=-\\frac{1+(y')^2}{y-b}$ [2]. $1+(y')^2=\\frac{c^2}{(y-b)^2}$ [1]. The ratio is $\\frac{c^3}{|y-b|^3}\\cdot\\frac{-(y-b)^3}{c^2}=-c$ for $y>b$, and $c$ for $y<b$; it does not depend on $a$ or $b$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Find $\\dfrac{dy}{dx}$ if $y=(\\sin x)^x+\\sin^{-1}\\sqrt x$, for $0<x<1$.",
+    "a": "$(\\sin x)^x(x\\cot x+\\log\\sin x)+\\frac1{2\\sqrt{x-x^2}}$",
+    "s": "Let $u=(\\sin x)^x$: $\\log u=x\\log\\sin x$ [1], $u'=(\\sin x)^x(\\log\\sin x+x\\cot x)$ [2]. $\\frac{d}{dx}\\sin^{-1}\\sqrt x=\\frac1{\\sqrt{1-x}}\\cdot\\frac1{2\\sqrt x}$ [1]. Add [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A garden path follows the circle $x^2+y^2-2x-4y=0$, which passes through the origin. (i) Find $\\dfrac{dy}{dx}$. [1] (ii) Find the slope of the path at the origin. [1] (iii) Find $\\dfrac{d^2y}{dx^2}$ at the origin. [2] \\textbf{OR} (iii) Find the points of the path at which $\\dfrac{dy}{dx}=0$. [2]",
+   "a": "(i) $\\frac{1-x}{y-2}$; (ii) $-\\frac12$; (iii) $\\frac58$; OR $(1,2\\pm\\sqrt5)$.",
+   "s": "(i) $2x+2yy'-2-4y'=0$, so $y'=\\frac{1-x}{y-2}$ [1]. (ii) At $(0,0)$: $\\frac1{-2}$ [1]. (iii) $y'r'=\\frac{-(y-2)-(1-x)y'}{(y-2)^2}$ [1]; at the origin $\\frac{2+\\frac12}{4}=\\frac58$ [1]. OR $x=1$ [1]; then $y^2-4y-1=0$, so $y=2\\pm\\sqrt5$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch5-main-01": [
+  {
+   "q": "The number of points where $f(x)=|x^2-3x+2|$ is not differentiable is",
+   "a": "(C) $2$",
+   "s": "Corners at the roots $x=1$ and $x=2$.",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of points where $f(x)=\\min\\{x,x^2\\}$ is not differentiable is",
+   "a": "(D) $2$",
+   "s": "The two graphs cross at $x=0$ and $x=1$ with different slopes.",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x\\sin\\dfrac1x$ for $x\\ne0$ and $f(0)=0$. At $x=0$, $f$ is",
+   "a": "(D) continuous but not differentiable",
+   "s": "$|f(x)|\\le|x|$, but $\\frac{f(h)}{h}=\\sin\\frac1h$ has no limit.",
+   "opts": [
+    "differentiable",
+    "differentiable with $f'(0)=1$",
+    "not continuous",
+    "continuous but not differentiable"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=ax^2+b$ for $x<1$ and $f(x)=\\dfrac1{|x|}$ for $x\\ge1$. $f$ is differentiable at $x=1$ when",
+   "a": "(C) $a=-\\frac12,\\ b=\\frac32$",
+   "s": "Continuity: $a+b=1$. Derivatives: $2a=-1$.",
+   "opts": [
+    "$a=\\frac12,\\ b=\\frac12$",
+    "$a=-1,\\ b=2$",
+    "$a=-\\frac12,\\ b=\\frac32$",
+    "$a=\\frac12,\\ b=-\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\tan^{-1}\\dfrac{\\sqrt{1+x^2}-1}{x}$ for $x\\ne0$ equals",
+   "a": "(A) $\\frac1{2(1+x^2)}$",
+   "s": "With $x=\\tan\\theta$: $\\frac{\\sec\\theta-1}{\\tan\\theta}=\\tan\\frac\\theta2$, so the function is $\\frac12\\tan^{-1}x$.",
+   "opts": [
+    "$\\frac1{2(1+x^2)}$",
+    "$\\frac2{1+x^2}$",
+    "$\\frac1{1+x^2}$",
+    "$\\frac{x}{1+x^2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=\\left(x+\\sqrt{1+x^2}\\right)^n$. Then $(1+x^2)y''+xy'$ equals",
+   "a": "(D) $n^2y$",
+   "s": "$y'=\\frac{ny}{\\sqrt{1+x^2}}$, so $(1+x^2)(y')^2=n^2y^2$; differentiate and divide by $2y'$.",
+   "opts": [
+    "$-n^2y$",
+    "$ny$",
+    "$n^2$",
+    "$n^2y$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x^my^n=(x+y)^{m+n}$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(A) $\\frac yx$",
+   "s": "$\\frac mx+\\frac{n}{y}y'=\\frac{m+n}{x+y}(1+y')$ simplifies to $y'=\\frac yx$.",
+   "opts": [
+    "$\\frac yx$",
+    "$\\frac xy$",
+    "$\\frac{m}{n}$",
+    "$\\frac{my}{nx}$r"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=\\dfrac{\\sin^{-1}x}{\\sqrt{1-x^2}}$. Then $(1-x^2)y'-xy$ equals",
+   "a": "(C) $1$",
+   "s": "$\\sqrt{1-x^2}\\,y=\\sin^{-1}x$; differentiate and multiply by $\\sqrt{1-x^2}$.",
+   "opts": [
+    "$y$",
+    "$0$",
+    "$1$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=|x|^3$. Then $f''(0)$",
+   "a": "(C) equals $0$",
+   "s": "$f'(x)=3x|x|$ and $f''(x)=6|x|$.",
+   "opts": [
+    "equals $6$",
+    "does not exist",
+    "equals $0$",
+    "equals $3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $\\dfrac1{\\sqrt2}<x<1$, the derivative of $\\sin^{-1}\\left(2x\\sqrt{1-x^2}\\right)$ with respect to $\\sin^{-1}x$ is",
+   "a": "(C) $-2$",
+   "s": "Here $\\sin^{-1}x>\\frac\\pi4$, so the function is $\\pi-2\\sin^{-1}x$.",
+   "opts": [
+    "$-\\frac12$",
+    "$2$",
+    "$-2$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\log_x(\\log x)$ for $x>1$. Then $f'(e)$ equals",
+   "a": "(D) $\\frac1e$",
+   "s": "$f=\\frac{\\log\\log x}{\\log x}$; at $e$, $f'=\\frac{\\frac1e-0}{1}$.",
+   "opts": [
+    "$1$",
+    "$0$r",
+    "$e$",
+    "$\\frac1e$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $c$ in Rolle's theorem for $f(x)=x^2-4x+3$ on $[1,3]$ is",
+   "a": "(B) $2$",
+   "s": "$f(1)=f(3)=0$ and $f'(c)=2c-4=0$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$\\frac52$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $c$ in the mean value theorem for $f(x)=x^3$ on $[0,3]$ is",
+   "a": "(B) $\\sqrt3$",
+   "s": "$3c^2=\\frac{27-0}{3}=9$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$\\sqrt3$",
+    "$1$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x+y)=f(x)f(y)$ for all $x,y$, $f(0)\\ne0$ and $f'(0)=2$. Then $f'(x)$ equals",
+   "a": "(C) $2f(x)$",
+   "s": "$f(0)=1$ and $f'(x)=\\lim\\frac{f(x)(f(h)-1)}{h}=f(x)f'(0)$.",
+   "opts": [
+    "$2x$",
+    "$2$",
+    "$2f(x)$",
+    "$f(x)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=x^{x^{x^{\\cdots}}}$ for $x>0$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $\\frac{y^2}{x(1-y\\log x)}$",
+   "s": "$y=x^y$, so $\\log y=y\\log x$; differentiate and solve for $y'$.",
+   "opts": [
+    "$\\frac{y^2}{x(1+y\\log x)}$",
+    "$\\frac{y^2}{1-y\\log x}$r",
+    "$\\frac{y}{x(1-y\\log x)}$",
+    "$\\frac{y^2}{x(1-y\\log x)}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of points in $(0,2)$ where $f(x)=[2x]$ is not continuous is",
+   "a": "(A) $3$",
+   "s": "$2x$ passes the integers $1$, $2$, $3$ at $x=\\frac12,1,\\frac32$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$1$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{1-\\tan x}{4x-\\pi}$ for $x\\ne\\dfrac\\pi4$ is continuous at $\\dfrac\\pi4$. Then $f\\left(\\dfrac\\pi4\\right)$ equals",
+   "a": "(C) $-\\frac12$",
+   "s": "The limit is $\\frac{-\\sec^2\\frac\\pi4}{4}$ (derivative form).",
+   "opts": [
+    "$\\frac12$",
+    "$-1$",
+    "$-\\frac12$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{\\log(1+ax)-\\log(1-bx)}{x}$ for $x\\ne0$ is continuous at $0$. Then $f(0)$ equals",
+   "a": "(B) $a+b$",
+   "s": "$\\frac{\\log(1+ax)}{x}\\to a$ and $\\frac{\\log(1-bx)}{x}\\to-b$.",
+   "opts": [
+    "$0$",
+    "$a+b$",
+    "$ab$",
+    "$a-b$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{d^2x}{dy^2}$ equals",
+   "a": "(D) $-\\frac{d^2y}{dx^2}\\left(\\frac{dy}{dx}\\right)^{-3}$",
+   "s": "$\\frac{dx}{dy}=\\left(\\frac{dy}{dx}\\right)^{-1}$; differentiate with respect to $x$ and divide by $\\frac{dy}{dx}$.",
+   "opts": [
+    "$-\\frac{d^2y}{dx^2}\\left(\\frac{dy}{dx}\\right)^{-2}$",
+    "$\\frac{d^2y}{dx^2}\\left(\\frac{dy}{dx}\\right)^{-3}$",
+    "$\\left(\\frac{d^2y}{dx^2}\\right)^{-1}$",
+    "$-\\frac{d^2y}{dx^2}\\left(\\frac{dy}{dx}\\right)^{-3}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x=e^{y+e^{y+e^{y+\\cdots}}}$ with $x>0$. Then $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $\\frac{1-x}{x}$",
+   "s": "$x=e^{y+x}$, so $\\log x=y+x$ and $\\frac1x=y'+1$.",
+   "opts": [
+    "$\\frac x{1+x}$",
+    "$\\frac{1+x}{x}$",
+    "$\\frac{x}{1-x}$r",
+    "$\\frac{1-x}{x}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of points where $f(x)=|x|+|x-1|+|x-2|$ is not differentiable.",
+   "a": "$3$",
+   "s": "Corners at $0$, $1$ and $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3+x$ and $g$ is the inverse of $f$. Find $g'(2)$.",
+   "a": "$0.25$",
+   "s": "$f(1)=2$ and $f'(1)=4$, so $g'(2)=\\frac14$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x=t+\\dfrac1t$ and $y=t-\\dfrac1t$. Find $\\dfrac{dy}{dx}$ at $t=3$.",
+   "a": "$1.25$",
+   "s": "$\\frac{1+\\frac1{t^2}}{1-\\frac1{t^2}}=\\frac{\\frac{10}9}{\\frac89}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3-6x^2+11x-6$ on $[1,3]$. Find the sum of all values of $c$ given by Rolle's theorem.",
+   "a": "$4$",
+   "s": "$3c^2-12c+11=0$ has the roots $2\\pm\\frac1{\\sqrt3}$, both in $(1,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x|x-1|$. Find $f'(2)$.",
+   "a": "$3$",
+   "s": "Near $2$, $f(x)=x^2-x$ and $f'(x)=2x-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch5-main-02": [
+  {
+   "q": "$f(x)=|x-1|+|x-3|$. Then $f'(2)$ equals",
+   "a": "(D) $0$",
+   "s": "On $(1,3)$, $f(x)=(x-1)+(3-x)=2$.",
+   "opts": [
+    "$2$",
+    "$-2$",
+    "does not exist",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "At $x=0$, the function $f(x)=\\sin|x|$ is",
+   "a": "(A) continuous but not differentiable",
+   "s": "The left derivative is $-1$ and the right derivative is $1$.",
+   "opts": [
+    "continuous but not differentiable",
+    "differentiable",
+    "not continuous",
+    "differentiable with $f'(0)=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{\\sin(a+1)x+\\sin x}{x}$ for $x<0$, $f(0)=c$, and $f(x)=\\dfrac{\\sqrt{x+bx^2}-\\sqrt x}{bx^{\\frac32}}$ for $x>0$. $f$ is continuous at $0$ when",
+   "a": "(D) $a=-\\frac32,\\ c=\\frac12$ and $b\\ne0$",
+   "s": "Left limit $(a+1)+1$. Right: $\\frac{\\sqrt{1+bx}-1}{bx}\\to\\frac12$. So $a+2=\\frac12=c$.",
+   "opts": [
+    "$a=\\frac12,\\ c=\\frac32$",
+    "$a=\\frac32,\\ c=\\frac12$",
+    "$a=-\\frac32,\\ c=-\\frac12$",
+    "$a=-\\frac32,\\ c=\\frac12$ and $b\\ne0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\tan^{-1}\\dfrac{\\cos x-\\sin x}{\\cos x+\\sin x}$ equals",
+   "a": "(C) $-1$",
+   "s": "The function is $\\frac\\pi4-x$ on the interval where the formula holds.",
+   "opts": [
+    "$\\frac12$",
+    "$1$",
+    "$-1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{d}{dx}\\log\\left[e^x\\left(\\dfrac{x-2}{x+2}\\right)^{\\frac34}\\right]$ equals",
+   "a": "(B) $\\frac{x^2-1}{x^2-4}$",
+   "s": "$x+\\frac34\\left[\\log(x-2)-\\log(x+2)\\right]$ has derivative $1+\\frac3{x^2-4}$.",
+   "opts": [
+    "$1$",
+    "$\\frac{x^2-1}{x^2-4}$",
+    "$\\frac{x^2}{x^2-4}$",
+    "$\\frac{x^2+1}{x^2-4}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x=a\\sin2t(1+\\cos2t)$ and $y=b\\cos2t(1-\\cos2t)$. At $t=\\dfrac\\pi4$, $\\dfrac{dy}{dx}$ equals",
+   "a": "(C) $\\frac ba$",
+   "s": "$\\frac{dx}{dt}=2a(\\cos2t+\\cos4t)$ and $\\frac{dy}{dt}=2b(-\\sin2t+\\sin4t)$; at $\\frac\\pi4$ these are $-2a$ and $-2b$.",
+   "opts": [
+    "$\\frac ab$",
+    "$-\\frac ba$",
+    "$\\frac ba$",
+    "$\\frac{2b}{a}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^n$. Then $f(1)+\\dfrac{f'(1)}{1!}+\\dfrac{f'r'(1)}{2!}+\\cdots+\\dfrac{f^{(n)}(1)}{n!}$ equals",
+   "a": "(C) $2^n$",
+   "s": "$\\frac{f^{(k)}(1)}{k!}=\\binom nk$; the sum is $\\sum_k\\binom nk$.",
+   "opts": [
+    "$2^n-1$",
+    "$2^{n-1}$",
+    "$2^n$",
+    "$n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=e^{\\tan x}$. Then $\\cos^2x\\,y'r'-(1+\\sin2x)y'$ equals",
+   "a": "(B) $0$",
+   "s": "$y'=\\sec^2x\\,y$ and $y''=(2\\sec^2x\\tan x+\\sec^4x)y$.",
+   "opts": [
+    "$-y$",
+    "$0$",
+    "$1$",
+    "$y$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y^2=P(x)$, a polynomial of degree $3$. Then $2\\dfrac{d}{dx}\\left(y^3\\dfrac{d^2y}{dx^2}\\right)$ equals",
+   "a": "(C) $P(x)P'''(x)$",
+   "s": "$2yy'=P'$ and $2(y')^2+2yy''=P''$, so $2y^3y''=PP'r'-\\frac{(P')^2}{2}$; differentiate.",
+   "opts": [
+    "$P'(x)P''(x)$",
+    "$P''(x)P'''(x)$",
+    "$P(x)P'''(x)$",
+    "$P(x)P''(x)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x\\tan^{-1}x$. Then $f'(1)$ equals",
+   "a": "(A) $\\frac\\pi4+\\frac12$",
+   "s": "$f'(x)=\\tan^{-1}x+\\frac{x}{1+x^2}$.",
+   "opts": [
+    "$\\frac\\pi4+\\frac12$",
+    "$\\frac\\pi4-\\frac12$",
+    "$\\frac12$",
+    "$\\frac\\pi4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f'(x)=\\sin(x^2)$ and $y=f\\left(\\dfrac{2x-1}{x^2+1}\\right)$. At $x=0$, $\\dfrac{dy}{dx}$ equals",
+   "a": "(D) $2\\sin1$",
+   "s": "$u=\\frac{2x-1}{x^2+1}$ has $u(0)=-1$ and $u'(0)=2$; $f'(-1)=\\sin1$.",
+   "opts": [
+    "$-2\\sin1$",
+    "$2\\cos1$r",
+    "$\\sin1$",
+    "$2\\sin1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $c$ in Rolle's theorem for $f(x)=x(x-1)(x-2)$ on $[0,1]$ is",
+   "a": "(A) $1-\\frac1{\\sqrt3}$",
+   "s": "$f'(x)=3x^2-6x+2=0$ gives $1\\pm\\frac1{\\sqrt3}$; only one root is in $(0,1)$.",
+   "opts": [
+    "$1-\\frac1{\\sqrt3}$",
+    "$1+\\frac1{\\sqrt3}$",
+    "$\\frac12$",
+    "$\\frac1{\\sqrt3}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $c$ in the mean value theorem for $f(x)=\\log x$ on $[1,e]$ is",
+   "a": "(B) $e-1$",
+   "s": "$\\frac1c=\\frac{1-0}{e-1}$.",
+   "opts": [
+    "$\\frac1{e-1}$",
+    "$e-1$",
+    "$\\frac{e+1}{2}$",
+    "$\\sqrt e$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The function $f(x)=[x]+[-x]$ is not continuous at",
+   "a": "(C) every integer",
+   "s": "$f=0$ at integers and $f=-1$ elsewhere.",
+   "opts": [
+    "every non-integer",
+    "$x=0$ only",
+    "every integer",
+    "no point"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of points where $f(x)=\\max\\{|x|,x^2\\}$ is not differentiable is",
+   "a": "(A) $3$",
+   "s": "Corners at $x=-1$, $0$ and $1$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$5$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $0<x<1$, $\\dfrac{d}{dx}\\sin^{-1}\\left(x\\sqrt{1-x}-\\sqrt x\\sqrt{1-x^2}\\right)$ equals",
+   "a": "(D) $\\frac1{\\sqrt{1-x^2}}-\\frac1{2\\sqrt{x(1-x)}}$",
+   "s": "With $x=\\sin\\alpha$ and $\\sqrt x=\\sin\\beta$ the function is $\\alpha-\\beta=\\sin^{-1}x-\\sin^{-1}\\sqrt x$.",
+   "opts": [
+    "$\\frac1{2\\sqrt{x(1-x)}}$",
+    "$-\\frac1{\\sqrt{1-x^2}}$",
+    "$\\frac1{\\sqrt{1-x^2}}+\\frac1{2\\sqrt{x(1-x)}}$",
+    "$\\frac1{\\sqrt{1-x^2}}-\\frac1{2\\sqrt{x(1-x)}}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3+x^2f'(1)+xf''(2)+f'''(3)$. Then $f(2)$ equals",
+   "a": "(B) $-2$",
+   "s": "$f'''=6$, $f''(2)=12+2f'(1)$ and $f'(1)=3+2f'(1)+f''(2)$ give $f'(1)=-5$, $f''(2)=2$. So $f(x)=x^3-5x^2+2x+6$.",
+   "opts": [
+    "$0$",
+    "$-2$",
+    "$-8$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x=\\sec\\theta-\\cos\\theta$ and $y=\\sec^n\\theta-\\cos^n\\theta$. Then $(x^2+4)\\left(\\dfrac{dy}{dx}\\right)^2$ equals",
+   "a": "(A) $n^2(y^2+4)$",
+   "s": "$x^2+4=(\\sec\\theta+\\cos\\theta)^2$ and $y^2+4=(\\sec^n\\theta+\\cos^n\\theta)^2$.",
+   "opts": [
+    "$n^2(y^2+4)$",
+    "$y^2+4$",
+    "$n(y^2+4)$",
+    "$n^2(y^2-4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$k$ is an integer. The left derivative of $f(x)=[x]\\sin\\pi x$ at $x=k$ is",
+   "a": "(D) $(-1)^k(k-1)\\pi$",
+   "s": "Just left of $k$, $f(x)=(k-1)\\sin\\pi x$; its derivative at $k$ is $(k-1)\\pi\\cos k\\pi$.",
+   "opts": [
+    "$(-1)^{k-1}(k-1)\\pi$",
+    "$(-1)^kk\\pi$",
+    "$(-1)^{k-1}k\\pi$",
+    "$(-1)^k(k-1)\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{1-\\sin x}{(\\pi-2x)^2}$ for $x\\ne\\dfrac\\pi2$ is continuous at $\\dfrac\\pi2$. Then $f\\left(\\dfrac\\pi2\\right)$ equals",
+   "a": "(D) $\\frac18$",
+   "s": "Put $x=\\frac\\pi2+h$: $\\frac{1-\\cos h}{4h^2}\\to\\frac18$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac14$",
+    "$0$",
+    "$\\frac18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f$ is differentiable with $f(1)=1$ and $f'(1)=3$. Find the derivative of $f(f(f(x)))+(f(x))^2$ at $x=1$.",
+   "a": "$33$",
+   "s": "$f'(1)^3+2f(1)f'(1)=27+6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of points in $(-2,2)$ where $f(x)=[x^2]$ is not continuous.",
+   "a": "$6$",
+   "s": "$x^2$ passes $1$, $2$, $3$ at $x=\\pm1,\\pm\\sqrt2,\\pm\\sqrt3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^x$ for $x>0$. Find $f'(1)$.",
+   "a": "$1$",
+   "s": "$f'(x)=x^x(1+\\log x)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the value of $c$ in the mean value theorem for $f(x)=x^2-4x-3$ on $[1,4]$.",
+   "a": "$2.5$",
+   "s": "$2c-4=\\frac{-3-(-6)}{3}=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x=3\\cos t-2\\cos^3t$ and $y=3\\sin t-2\\sin^3t$. Find $\\left(\\dfrac{dy}{dx}\\right)^2$ at $t=\\dfrac\\pi6$.",
+   "a": "$3$",
+   "s": "$\\frac{dx}{dt}=3\\sin t\\cos2t$ and $\\frac{dy}{dt}=3\\cos t\\cos2t$, so $\\frac{dy}{dx}=\\cot t$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch5-advanced-01": [
+  {
+   "q": "$f(x)=x^2\\left|\\cos\\dfrac\\pi x\\right|$ for $x\\ne0$ and $f(0)=0$. Then $f$ is",
+   "a": "(B) differentiable at $x=0$ but not at $x=2$",
+   "s": "At $0$: $\\left|\\frac{f(h)}{h}\\right|\\le|h|$. At $2$: $\\cos\\frac\\pi x$ changes sign at $x=2$, so $|\\cos\\frac\\pi x|$ has a corner.",
+   "opts": [
+    "differentiable at both $0$ and $2$",
+    "differentiable at $x=0$ but not at $x=2$",
+    "differentiable at $x=2$ but not at $x=0$",
+    "differentiable at neither $0$ nor $2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f$ is differentiable, $f(x+y)=f(x)+f(y)+2xy$ for all $x,y$, and $f'(0)=3$. Then $f'(x)$ equals",
+   "a": "(C) $3+2x$",
+   "s": "$f(0)=0$ and $\\frac{f(x+h)-f(x)}{h}=\\frac{f(h)}{h}+2x\\to f'(0)+2x$.",
+   "opts": [
+    "$2x$r",
+    "$3x+x^2$",
+    "$3+2x$",
+    "$3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f'(2)=6$ and $f'(1)=4$. Then $\\lim_{h\\to0}\\dfrac{f(2+2h+h^2)-f(2)}{f(1+h-h^2)-f(1)}$ equals",
+   "a": "(D) $3$",
+   "s": "Numerator $\\approx f'(2)(2h)$, denominator $\\approx f'(1)h$.",
+   "opts": [
+    "$6$",
+    "$\\frac32$",
+    "does not exist",
+    "$3$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$y=y(x)$ satisfies $x\\cos y+y\\cos x=\\pi$. Then $y''(0)$ equals",
+   "a": "(B) $\\pi$",
+   "s": "At $x=0$, $y=\\pi$. First derivative: $y'(0)=1$. Differentiate again and put $x=0$: $y''(0)-\\pi=0$.",
+   "opts": [
+    "$0$",
+    "$\\pi$",
+    "$-\\pi$r",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=[x^2-3]$ and $g(x)=(|x|+|4x-7|)f(x)$ on $\\left[-\\frac12,2\\right]$. Which statements are true?",
+   "a": "(B), (C)",
+   "s": "$x^2-3$ passes the integers $-2,-1,0,1$ at $x=1,\\sqrt2,\\sqrt3,2$. $g$ fails at $1,\\sqrt2,\\sqrt3$ and at $0$ (where $|x|$ has a corner and $f(0)=-3\\ne0$); at $\\frac74$, $f=0$ on both sides.",
+   "opts": [
+    "$f$ is not continuous at exactly three points of $\\left[-\\frac12,2\\right]$",
+    "$f$ is not continuous at exactly four points of $\\left[-\\frac12,2\\right]$",
+    "$g$ is not differentiable at exactly four points of $\\left(-\\frac12,2\\right)$",
+    "$g$ is not differentiable at exactly five points of $\\left(-\\frac12,2\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=a\\cos\\left(|x^3-x|\\right)+b|x|\\sin\\left(|x^3+x|\\right)$. Which statements are true?",
+   "a": "(A), (B)",
+   "s": "$\\cos|u|=\\cos u$ is smooth. Near $0$, $|x|\\sin|x^3+x|=x\\sin(x^3+x)$ for both signs of $x$. Near $1$, all parts are smooth.",
+   "opts": [
+    "$f$ is differentiable at $x=0$ when $a=0$, $b=1$",
+    "$f$ is differentiable at $x=1$ when $a=1$, $b=0$",
+    "$f$ is not differentiable at $x=0$ when $a=1$, $b=0$",
+    "$f$ is not differentiable at $x=1$ when $a=1$, $b=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which functions are differentiable at $x=0$?",
+   "a": "(A), (C)",
+   "s": "$\\cos|x|=\\cos x$. $|\\sin x|$ and $x+|x|$ have corners at $0$.",
+   "opts": [
+    "$x|x|$",
+    "$|\\sin x|$",
+    "$\\cos|x|$",
+    "$x+|x|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Apply Rolle's theorem to $f(x)=x^3-3x$ on $[-\\sqrt3,\\sqrt3]$. Which values of $c$ satisfy $f'(c)=0$ in the open interval?",
+   "a": "(A), (B)",
+   "s": "$f'(c)=3c^2-3=0$.",
+   "opts": [
+    "$c=1$",
+    "$c=-1$",
+    "$c=0$",
+    "$c=\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^5+2x+3$ and $g$ is the inverse of $f$. Find $g'(3)$.",
+   "a": "$0.5$",
+   "s": "$f(0)=3$ and $f'(0)=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of points where $f(x)=|2x-1|+|x^2-2x|$ is not differentiable.",
+   "a": "$3$",
+   "s": "Corners at $x=\\frac12$, $0$ and $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$y=(1+x)(1+x^2)(1+x^4)(1+x^8)$. Find $y'(1)$.",
+   "a": "$120$",
+   "s": "$y=1+x+x^2+\\cdots+x^{15}$, so $y'(1)=1+2+\\cdots+15$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$y=x^3-8x+7$ and $x=f(t)$. $\\dfrac{dy}{dt}=2$ and $x=3$ at $t=0$. Find $19\\dfrac{dx}{dt}$ at $t=0$.",
+   "a": "$2$",
+   "s": "$\\frac{dy}{dt}=(3x^2-8)\\frac{dx}{dt}$, so $2=19\\frac{dx}{dt}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each function with the number of points where it is not differentiable.\nList-I: (P) $|x|+|x-1|+|x-2|$; (Q) $|x^2-1|$; (R) $|x|^3$; (S) $|x|+|x|^3$\nList-II: (1) $0$; (2) $1$; (3) $2$; (4) $3$; (5) $4$",
+   "a": "(D) $P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+   "s": "Corners at $0,1,2$; at $\\pm1$; none; at $0$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its derivative.\nList-I: (P) $\\sin^{-1}x$; (Q) $\\tan^{-1}x$; (R) $\\sec^{-1}x$ for $x>1$; (S) $\\cot^{-1}x$\nList-II: (1) $\\frac1{1+x^2}$; (2) $-\\frac1{1+x^2}$; (3) $\\frac1{\\sqrt{1-x^2}}$; (4) $\\frac1{x\\sqrt{x^2-1}}$; (5) $-\\frac1{\\sqrt{1-x^2}}$",
+   "a": "(B) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "Standard derivatives.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Each $f(x)$ is defined for $x\\ne0$. Match each with the value of $f(0)$ that makes it continuous.\nList-I: (P) $\\frac{\\sin5x}{x}$; (Q) $\\frac{1-\\cos2x}{x^2}$; (R) $\\frac{e^{3x}-1}{x}$; (S) $\\frac{\\log(1+4x)}{x}$\nList-II: (1) $2$; (2) $3$; (3) $4$; (4) $5$; (5) $1$",
+   "a": "(A) $P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+   "s": "$5$; $\\frac{2\\sin^2x}{x^2}\\to2$; $3$; $4$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with $\\dfrac{dy}{dx}$.\nList-I: (P) $x=t^2,\\ y=2t$; (Q) $x=\\cos t,\\ y=\\sin t$; (R) $x=e^t,\\ y=e^{2t}$; (S) $x=\\log t,\\ y=t^2$\nList-II: (1) $2e^t$; (2) $\\frac1t$; (3) $2t^2$; (4) $-\\cot t$; (5) $\\tan t$",
+   "a": "(C) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "$\\frac{2}{2t}$; $\\frac{\\cos t}{-\\sin t}$; $\\frac{2e^{2t}}{e^t}$; $\\frac{2t}{\\frac1t}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 5$, $Q \\to 4$, $R \\to 3$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch5-advanced-02": [
+  {
+   "q": "For $x>0$, $\\dfrac{d}{dx}\\cos^{-1}\\dfrac{1-x^{2n}}{1+x^{2n}}$ equals",
+   "a": "(D) $\\frac{2nx^{n-1}}{1+x^{2n}}$",
+   "s": "With $x^n=\\tan\\theta$ the function is $2\\tan^{-1}x^n$.",
+   "opts": [
+    "$-\\frac{2nx^{n-1}}{1+x^{2n}}$",
+    "$\\frac{2nx^{2n-1}}{1+x^{2n}}$",
+    "$\\frac{nx^{n-1}}{1+x^{2n}}$",
+    "$\\frac{2nx^{n-1}}{1+x^{2n}}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The function $f(x)=[x]\\cos\\dfrac{(2x-1)\\pi}{2}$ is",
+   "a": "(C) continuous at every real $x$",
+   "s": "$\\cos\\frac{(2x-1)\\pi}{2}=\\sin\\pi x$, which is $0$ at each integer where $[x]$ jumps.",
+   "opts": [
+    "not continuous at $x=0$ only",
+    "not continuous at every integer",
+    "continuous at every real $x$",
+    "not continuous at $x=\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$g(x)=x^2\\sin\\dfrac1x$ for $x\\ne0$ and $g(0)=0$. Then",
+   "a": "(C) $g$ is differentiable at $0$, but $g'$ is not continuous at $0$",
+   "s": "$g'(0)=0$. For $x\\ne0$, $g'(x)=2x\\sin\\frac1x-\\cos\\frac1x$ has no limit at $0$.",
+   "opts": [
+    "$g'$ is continuous at $0$",
+    "$g$ is not differentiable at $0$",
+    "$g$ is differentiable at $0$, but $g'$ is not continuous at $0$",
+    "$g$ is not continuous at $0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x^2+y^2=1$. Then",
+   "a": "(A) $yy''+(y')^2+1=0$",
+   "s": "$x+yy'=0$; differentiate again: $1+(y')^2+yy''=0$.",
+   "opts": [
+    "$yy''+(y')^2+1=0$",
+    "$yy''-(y')^2+1=0$",
+    "$yy''+(y')^2-1=0$",
+    "$yy''-2(y')^2+1=0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=|x-1|+|x+1|$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "On $(-1,1)$, $f(x)=2$. At $x=1$ the slopes are $0$ and $2$.",
+   "opts": [
+    "$f$ is differentiable at $x=1$",
+    "$f$ is continuous at every real $x$",
+    "$f$ is differentiable at $x=0$",
+    "$f'(x)=0$ for $-1<x<1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$y=e^{-x}\\cos x$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$y'=-e^{-x}(\\cos x+\\sin x)$ and $y'r'=2e^{-x}\\sin x$, so $y''(0)=0$.",
+   "opts": [
+    "$y''(0)=2$",
+    "$y''+2y'+2y=0$",
+    "$y'r'=2e^{-x}\\sin x$",
+    "$y'(0)=-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$ for $x<1$ and $f(x)=ax+b$ for $x\\ge1$. $f$ is differentiable at $x=1$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "Continuity: $a+b=1$. Slopes: $a=2$. So $f(2)=4-1$.",
+   "opts": [
+    "$a=2$",
+    "$b=-1$",
+    "$f'(1)=1$",
+    "$f(2)=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which functions are continuous at $x=0$ but not differentiable there?",
+   "a": "(A), (B), (D)",
+   "s": "$x^{\\frac13}$ has a vertical tangent at $0$. $x|x|$ is differentiable.",
+   "opts": [
+    "$|x|$",
+    "$x^{\\frac13}$",
+    "$x|x|$",
+    "$\\sin|x|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of points in $(0,2\\pi)$ where $f(x)=|\\sin x|+|\\cos x|$ is not differentiable.",
+   "a": "$3$",
+   "s": "$\\sin x=0$ at $\\pi$; $\\cos x=0$ at $\\frac\\pi2$ and $\\frac{3\\pi}2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^3$ on $[-1,2]$. Find the value of $c$ in the mean value theorem.",
+   "a": "$1$",
+   "s": "$3c^2=\\frac{8-(-1)}{3}=3$, so $c=\\pm1$; only $c=1$ is in $(-1,2)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$y=(\\sin^{-1}x)^2$. Find the value of $(1-x^2)y''-xy'$.",
+   "a": "$2$",
+   "s": "$\\sqrt{1-x^2}\\,y'=2\\sin^{-1}x$; differentiate and multiply by $\\sqrt{1-x^2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=x^x$ for $x>0$. Find $\\dfrac{f'(e)}{f(e)}$.",
+   "a": "$2$",
+   "s": "$\\frac{f'}{f}=1+\\log x$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each function with its second derivative.\nList-I: (P) $x^5$; (Q) $e^{3x}$; (R) $\\log x$; (S) $\\sin3x$\nList-II: (1) $-\\frac1{x^2}$; (2) $9e^{3x}$; (3) $20x^3$; (4) $-9\\sin3x$; (5) $9\\sin3x$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "Differentiate twice.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 5$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each derivative with its value.\nList-I: (P) $\\frac{d}{dx}x^x$ at $x=1$; (Q) $\\frac{d}{dx}e^{x^2}$ at $x=1$; (R) $\\frac{d}{dx}(\\log x)^2$ at $x=e$; (S) $\\frac{d}{dx}\\tan^{-1}x$ at $x=1$\nList-II: (1) $2e$; (2) $\\frac12$; (3) $1$; (4) $\\frac2e$; (5) $e$",
+   "a": "(D) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "$1(1+0)$; $2xe^{x^2}$; $\\frac{2\\log x}{x}$; $\\frac1{1+x^2}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with the value of $c$ given by Rolle's theorem.\nList-I: (P) $x^2-4x$ on $[0,4]$; (Q) $\\sin x$ on $[0,\\pi]$; (R) $x^3-x$ on $[0,1]$; (S) $e^x\\sin x$ on $[0,\\pi]$\nList-II: (1) $\\frac\\pi2$; (2) $\\frac1{\\sqrt3}$; (3) $2$; (4) $\\frac{3\\pi}4$; (5) $\\frac\\pi4$",
+   "a": "(C) $P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+   "s": "$2c-4=0$; $\\cos c=0$; $3c^2-1=0$; $e^c(\\sin c+\\cos c)=0$ gives $\\tan c=-1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each curve with $\\dfrac{dy}{dx}$.\nList-I: (P) $x^2+y^2=9$; (Q) $xy=4$; (R) $y^2=8x$; (S) $e^y=x$\nList-II: (1) $\\frac4y$; (2) $-\\frac yx$; (3) $-\\frac xy$; (4) $\\frac1x$; (5) $\\frac xy$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "Differentiate each equation.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

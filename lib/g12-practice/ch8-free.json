@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "The area of the region bounded by $y=x^2$, the $x$-axis and the lines $x=0$, $x=3$ is",
+  "options": [
+   "$\\frac{27}{2}$",
+   "$9$",
+   "$27$",
+   "$3$"
+  ],
+  "answer": 1,
+  "solution": "$\\int_0^3x^2\\,dx=\\frac{27}3$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x^3$, the $x$-axis and the lines $x=1$, $x=2$ is",
+  "options": [
+   "$4$",
+   "$\\frac74$",
+   "$\\frac{17}4$",
+   "$\\frac{15}4$"
+  ],
+  "answer": 3,
+  "solution": "$\\left[\\frac{x^4}4\\right]_1^2=4-\\frac14$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sqrt x$, the $x$-axis and the lines $x=0$, $x=4$ is",
+  "options": [
+   "$8$",
+   "$\\frac{16}3$",
+   "$4$",
+   "$\\frac83$"
+  ],
+  "answer": 1,
+  "solution": "$\\left[\\frac23x^{\\frac32}\\right]_0^4$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area enclosed by the circle $x^2+y^2=16$ is",
+  "options": [
+   "$8\\pi$",
+   "$32\\pi$",
+   "$16\\pi$",
+   "$4\\pi$"
+  ],
+  "answer": 2,
+  "solution": "$4\\int_0^4\\sqrt{16-x^2}\\,dx=4\\cdot4\\pi$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area enclosed by the ellipse $\\dfrac{x^2}9+\\dfrac{y^2}4=1$ is",
+  "options": [
+   "$36\\pi$",
+   "$6\\pi$",
+   "$13\\pi$",
+   "$5\\pi$"
+  ],
+  "answer": 1,
+  "solution": "$\\pi ab=\\pi\\cdot3\\cdot2$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=2x+1$, the $x$-axis and the lines $x=1$, $x=3$ is",
+  "options": [
+   "$12$",
+   "$14$",
+   "$10$",
+   "$8$"
+  ],
+  "answer": 2,
+  "solution": "$\\left[x^2+x\\right]_1^3=12-2$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sin x$ and the $x$-axis for $0\\le x\\le\\pi$ is",
+  "options": [
+   "$\\pi$",
+   "$2$",
+   "$0$",
+   "$1$"
+  ],
+  "answer": 1,
+  "solution": "$\\left[-\\cos x\\right]_0^\\pi$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\cos x$ and the $x$-axis for $0\\le x\\le\\frac\\pi2$ is",
+  "options": [
+   "$1$",
+   "$\\frac12$",
+   "$2$",
+   "$0$"
+  ],
+  "answer": 0,
+  "solution": "$\\left[\\sin x\\right]_0^{\\frac\\pi2}$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=e^x$, the $x$-axis and the lines $x=0$, $x=1$ is",
+  "options": [
+   "$1$",
+   "$e$",
+   "$e-1$",
+   "$e+1$"
+  ],
+  "answer": 2,
+  "solution": "$\\left[e^x\\right]_0^1$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\dfrac1x$, the $x$-axis and the lines $x=1$, $x=e$ is",
+  "options": [
+   "$1$",
+   "$e$",
+   "$\\frac1e$",
+   "$e-1$"
+  ],
+  "answer": 0,
+  "solution": "$\\left[\\log x\\right]_1^e$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y^2=4x$ and the line $x=1$ is",
+  "options": [
+   "$\\frac43$",
+   "$\\frac83$",
+   "$4$",
+   "$\\frac{16}3$"
+  ],
+  "answer": 1,
+  "solution": "$2\\int_0^12\\sqrt x\\,dx$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area in the first quadrant bounded by $x^2=4y$, the $y$-axis and the lines $y=1$, $y=4$ is",
+  "options": [
+   "$\\frac{56}3$",
+   "$\\frac{14}3$",
+   "$7$",
+   "$\\frac{28}3$"
+  ],
+  "answer": 3,
+  "solution": "$\\int_1^42\\sqrt y\\,dy=\\frac43(8-1)$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area in the first quadrant bounded by $y^2=9x$, the $x$-axis and the lines $x=2$, $x=4$ is",
+  "options": [
+   "$16$",
+   "$8-2\\sqrt2$",
+   "$16+4\\sqrt2$",
+   "$16-4\\sqrt2$"
+  ],
+  "answer": 3,
+  "solution": "$\\int_2^43\\sqrt x\\,dx=2\\left[x^{\\frac32}\\right]_2^4$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=|x|$, the $x$-axis and the lines $x=-1$, $x=1$ is",
+  "options": [
+   "$\\frac12$",
+   "$1$",
+   "$2$",
+   "$0$"
+  ],
+  "answer": 1,
+  "solution": "Two triangles of area $\\frac12$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x$, the $x$-axis and the line $x=4$ is",
+  "options": [
+   "$4$",
+   "$8$",
+   "$2$",
+   "$16$"
+  ],
+  "answer": 1,
+  "solution": "$\\int_0^4x\\,dx$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x^2+1$, the $x$-axis and the lines $x=0$, $x=2$ is",
+  "options": [
+   "$\\frac{14}3$",
+   "$5$",
+   "$\\frac83$",
+   "$\\frac{11}3$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac83+2$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sin x$ and the $x$-axis for $0\\le x\\le2\\pi$ is",
+  "options": [
+   "$2\\pi$",
+   "$4$",
+   "$0$",
+   "$2$"
+  ],
+  "answer": 1,
+  "solution": "$2\\int_0^\\pi\\sin x\\,dx$; the signed integral is $0$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area enclosed by $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ is",
+  "options": [
+   "$2\\pi ab$",
+   "$\\frac{\\pi ab}{4}$",
+   "$\\pi(a+b)$",
+   "$\\pi ab$"
+  ],
+  "answer": 3,
+  "solution": "$4\\cdot\\frac ba\\int_0^a\\sqrt{a^2-x^2}\\,dx=4\\cdot\\frac ba\\cdot\\frac{\\pi a^2}4$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area of the part of the circle $x^2+y^2=a^2$ in the first quadrant is",
+  "options": [
+   "$\\frac{\\pi a^2}4$",
+   "$\\pi a^2$",
+   "$\\frac{a^2}4$",
+   "$\\frac{\\pi a^2}2$"
+  ],
+  "answer": 0,
+  "solution": "One quarter of the circle.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x^3$, the $x$-axis and the lines $x=-2$, $x=1$ is",
+  "options": [
+   "$\\frac{15}4$",
+   "$4$",
+   "$\\frac{17}4$",
+   "$-\\frac{15}4$"
+  ],
+  "answer": 2,
+  "solution": "$\\int_{-2}^0|x^3|\\,dx+\\int_0^1x^3\\,dx=4+\\frac14$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=3x$, the $x$-axis and the lines $x=1$, $x=2$ is",
+  "options": [
+   "$\\frac92$",
+   "$6$",
+   "$\\frac32$",
+   "$3$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac32(4-1)$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $x^2=4y$, the $x$-axis and the line $x=2$ is",
+  "options": [
+   "$\\frac43$",
+   "$\\frac83$",
+   "$2$",
+   "$\\frac23$"
+  ],
+  "answer": 3,
+  "solution": "$\\int_0^2\\frac{x^2}4\\,dx$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $x=y^2$, the $y$-axis and the lines $y=1$, $y=2$ is",
+  "options": [
+   "$\\frac83$",
+   "$\\frac73$",
+   "$3$",
+   "$\\frac13$"
+  ],
+  "answer": 1,
+  "solution": "$\\int_1^2y^2\\,dy$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=4-x^2$ and the $x$-axis is",
+  "options": [
+   "$\\frac{64}3$",
+   "$8$",
+   "$\\frac{32}3$",
+   "$\\frac{16}3$"
+  ],
+  "answer": 2,
+  "solution": "$\\int_{-2}^2(4-x^2)\\,dx$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x^2-2x$ and the $x$-axis is",
+  "options": [
+   "$\\frac23$",
+   "$-\\frac43$",
+   "$\\frac83$",
+   "$\\frac43$"
+  ],
+  "answer": 3,
+  "solution": "The curve is below the axis on $(0,2)$: $\\left|\\int_0^2(x^2-2x)\\,dx\\right|$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\dfrac1{1+x^2}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+  "options": [
+   "$\\frac\\pi4$",
+   "$1$",
+   "$\\frac\\pi2$",
+   "$\\log2$"
+  ],
+  "answer": 0,
+  "solution": "$\\left[\\tan^{-1}x\\right]_0^1$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sqrt{1-x^2}$, the $x$-axis and the lines $x=0$, $x=1$ is",
+  "options": [
+   "$\\pi$",
+   "$\\frac\\pi4$",
+   "$1$",
+   "$\\frac\\pi2$"
+  ],
+  "answer": 1,
+  "solution": "A quarter of the unit circle.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\log x$, the $x$-axis and the line $x=e$ is",
+  "options": [
+   "$1$",
+   "$e$",
+   "$\\frac1e$",
+   "$e-1$"
+  ],
+  "answer": 0,
+  "solution": "$\\left[x\\log x-x\\right]_1^e$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sec^2x$, the $x$-axis and the lines $x=0$, $x=\\frac\\pi4$ is",
+  "options": [
+   "$1$",
+   "$\\sqrt2$",
+   "$\\frac\\pi4$",
+   "$2$"
+  ],
+  "answer": 0,
+  "solution": "$\\left[\\tan x\\right]_0^{\\frac\\pi4}$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x|x|$, the $x$-axis and the lines $x=-1$, $x=1$ is",
+  "options": [
+   "$0$",
+   "$\\frac13$",
+   "$1$",
+   "$\\frac23$"
+  ],
+  "answer": 3,
+  "solution": "$2\\int_0^1x^2\\,dx$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the part of $\\dfrac{x^2}{16}+\\dfrac{y^2}9=1$ above the $x$-axis is",
+  "options": [
+   "$6\\pi$",
+   "$3\\pi$",
+   "$12\\pi$",
+   "$\\frac{25\\pi}2$"
+  ],
+  "answer": 0,
+  "solution": "Half of $\\pi\\cdot4\\cdot3$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area enclosed by the circle $x^2+y^2=2x$ is",
+  "options": [
+   "$4\\pi$",
+   "$\\frac\\pi2$",
+   "$2\\pi$",
+   "$\\pi$"
+  ],
+  "answer": 3,
+  "solution": "$(x-1)^2+y^2=1$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\cos x$ and the $x$-axis for $0\\le x\\le2\\pi$ is",
+  "options": [
+   "$2$",
+   "$0$",
+   "$1$",
+   "$4$"
+  ],
+  "answer": 3,
+  "solution": "$\\int_0^{2\\pi}|\\cos x|\\,dx$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=e^{-x}$, the $x$-axis and the lines $x=0$, $x=\\log2$ is",
+  "options": [
+   "$1$",
+   "$\\frac12$",
+   "$\\log2$",
+   "$2$"
+  ],
+  "answer": 1,
+  "solution": "$\\left[-e^{-x}\\right]_0^{\\log2}=1-\\frac12$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=x$, the $y$-axis and the line $y=2$ is",
+  "options": [
+   "$1$",
+   "$4$",
+   "$2$",
+   "$\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "$\\int_0^2y\\,dy$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=3x+2$, the $x$-axis and the lines $x=-1$, $x=1$ is",
+  "options": [
+   "$4$",
+   "$\\frac{13}3$",
+   "$5$",
+   "$\\frac{25}6$"
+  ],
+  "answer": 1,
+  "solution": "The line crosses the axis at $x=-\\frac23$: $\\frac16+\\frac{25}6$.",
+  "topic": "Lines and absolute values"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\sin2x$ and the $x$-axis for $0\\le x\\le\\frac\\pi2$ is",
+  "options": [
+   "$2$",
+   "$1$",
+   "$0$",
+   "$\\frac12$"
+  ],
+  "answer": 1,
+  "solution": "$\\left[-\\frac{\\cos2x}2\\right]_0^{\\frac\\pi2}$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area in the first quadrant bounded by $y^2=4x$, the $x$-axis and the line $x=3$ is",
+  "options": [
+   "$2\\sqrt3$",
+   "$12$",
+   "$4\\sqrt3$",
+   "$8\\sqrt3$"
+  ],
+  "answer": 2,
+  "solution": "$\\int_0^32\\sqrt x\\,dx=\\frac43\\cdot3\\sqrt3$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area enclosed by $4x^2+25y^2=100$ is",
+  "options": [
+   "$25\\pi$",
+   "$10\\pi$",
+   "$20\\pi$",
+   "$4\\pi$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{x^2}{25}+\\frac{y^2}4=1$, so $\\pi\\cdot5\\cdot2$.",
+  "topic": "Circles and ellipses"
+ },
+ {
+  "prompt": "The area in the first quadrant bounded by $y=x^2$, the $y$-axis and the line $y=9$ is",
+  "options": [
+   "$9$",
+   "$36$",
+   "$18$",
+   "$27$"
+  ],
+  "answer": 2,
+  "solution": "$\\int_0^9\\sqrt y\\,dy$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=\\dfrac1{\\sqrt x}$, the $x$-axis and the lines $x=1$, $x=4$ is",
+  "options": [
+   "$\\frac32$",
+   "$1$",
+   "$2$",
+   "$4$"
+  ],
+  "answer": 2,
+  "solution": "$\\left[2\\sqrt x\\right]_1^4$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "$f(x)\\ge0$ on $[a,b]$. The area bounded by $y=f(x)$, the $x$-axis and the lines $x=a$, $x=b$ is",
+  "options": [
+   "$\\int_a^bf'(x)\\,dx$",
+   "$f(b)-f(a)$",
+   "$\\int_a^bxf(x)\\,dx$r",
+   "$\\int_a^bf(x)\\,dx$"
+  ],
+  "answer": 3,
+  "solution": "Definition of the area under a curve.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "$g(y)\\ge0$ on $[c,d]$. The area bounded by $x=g(y)$, the $y$-axis and the lines $y=c$, $y=d$ is",
+  "options": [
+   "$\\int_c^dg(y)\\,dy$",
+   "$g(d)-g(c)$",
+   "$\\int_c^dyg(y)\\,dy$",
+   "$\\int_c^dg(x)\\,dx$"
+  ],
+  "answer": 0,
+  "solution": "Use horizontal strips.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "The area of the region bounded by $y=kx^2$, the $x$-axis and the lines $x=0$, $x=3$ is $18$. Then $k$ equals",
+  "options": [
+   "$\\frac12$",
+   "$6$",
+   "$2$",
+   "$3$"
+  ],
+  "answer": 2,
+  "solution": "$9k=18$.",
+  "topic": "Area under a curve"
+ },
+ {
+  "prompt": "Assertion (A): The area bounded by $y=\\sin x$ and the $x$-axis for $0\\le x\\le2\\pi$ is $0$.\nReason (R): $\\int_0^{2\\pi}\\sin x\\,dx=0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "Area counts the part below the axis as positive: the area is $4$.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The area enclosed by $x^2+y^2=9$ is $9\\pi$.\nReason (R): The area enclosed by $x^2+y^2=a^2$ is $4\\int_0^a\\sqrt{a^2-x^2}\\,dx=\\pi a^2$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "Put $a=3$.",
+  "topic": "Circles and ellipses",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The area enclosed by $\\dfrac{x^2}4+y^2=1$ is $2\\pi$.\nReason (R): The area enclosed by an ellipse with semi-axes $a$ and $b$ is $\\pi ab$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$a=2$, $b=1$.",
+  "topic": "Circles and ellipses",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The area bounded by $y=x$, the $x$-axis and the line $x=2$ is $2$.\nReason (R): $\\int_0^2x^2\\,dx=\\frac83$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; R is about a different curve.",
+  "topic": "Lines and absolute values",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The area bounded by $y=-x^2$, the $x$-axis and the line $x=1$ is $-\\frac13$.\nReason (R): An area is never negative.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The area is $\\left|\\int_0^1-x^2\\,dx\\right|=\\frac13$.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\int_0^1\\sqrt{1-x^2}\\,dx=\\dfrac\\pi4$.\nReason (R): The integral is the area of a quarter of the circle $x^2+y^2=1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "Quarter of $\\pi\\cdot1^2$.",
+  "topic": "Circles and ellipses",
+  "assertion": true
+ }
+]

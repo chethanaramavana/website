@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "The order of $y''+(y')^3+y=0$ is",
+  "options": [
+   "$3$",
+   "$1$",
+   "$2$",
+   "$0$"
+  ],
+  "answer": 2,
+  "solution": "The highest derivative is $y''$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The degree of $(y'')^3+(y')^4+y=0$ is",
+  "options": [
+   "$2$",
+   "$3$",
+   "$4$",
+   "$1$"
+  ],
+  "answer": 1,
+  "solution": "The highest derivative $y''$ has power $3$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The degree of $y'r'+\\sin(y')=0$ is",
+  "options": [
+   "$2$",
+   "$0$",
+   "not defined",
+   "$1$"
+  ],
+  "answer": 2,
+  "solution": "The equation is not a polynomial in $y'$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "For $(y''')^2+y''+y=0$, the sum of the order and the degree is",
+  "options": [
+   "$5$",
+   "$4$",
+   "$3$",
+   "$6$"
+  ],
+  "answer": 0,
+  "solution": "Order $3$, degree $2$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The degree of $\\sqrt{1+(y')^2}=y''$ is",
+  "options": [
+   "$1$",
+   "$3$",
+   "$2$",
+   "$\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "Square: $1+(y')^2=(y'')^2$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The general solution of a differential equation of order $3$ has",
+  "options": [
+   "three arbitrary constants",
+   "two arbitrary constants",
+   "no arbitrary constant",
+   "one arbitrary constant"
+  ],
+  "answer": 0,
+  "solution": "The number of constants equals the order.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The number of arbitrary constants in a particular solution is",
+  "options": [
+   "$0$",
+   "$2$",
+   "$1$",
+   "equal to the order"
+  ],
+  "answer": 0,
+  "solution": "The constants are fixed by the given conditions.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=2x$ is",
+  "options": [
+   "$y=2+C$",
+   "$y=2x^2+C$",
+   "$y=x^2$",
+   "$y=x^2+C$"
+  ],
+  "answer": 3,
+  "solution": "Integrate.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=e^{x-y}$ is",
+  "options": [
+   "$y=x+C$",
+   "$e^{-y}=e^x+C$",
+   "$e^y=e^{-x}+C$",
+   "$e^y=e^x+C$"
+  ],
+  "answer": 3,
+  "solution": "$e^y\\,dy=e^x\\,dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=y$ is",
+  "options": [
+   "$y=Cx$",
+   "$y=Ce^{-x}$",
+   "$y=Ce^x$",
+   "$y=e^x+C$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{dy}y=dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac{1+y^2}{1+x^2}$ is",
+  "options": [
+   "$\\tan^{-1}y=\\tan^{-1}x+C$",
+   "$\\tan^{-1}y=x+C$",
+   "$\\log(1+y^2)=\\log(1+x^2)+C$",
+   "$y=x+C$"
+  ],
+  "answer": 0,
+  "solution": "Separate the variables.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac xy$ is",
+  "options": [
+   "$xy=C$",
+   "$y=Cx$",
+   "$y^2-x^2=C$",
+   "$x^2+y^2=C$"
+  ],
+  "answer": 2,
+  "solution": "$y\\,dy=x\\,dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $x\\,dy+y\\,dx=0$ is",
+  "options": [
+   "$xy=C$",
+   "$y=Cx$",
+   "$x+y=C$",
+   "$x^2+y^2=C$"
+  ],
+  "answer": 0,
+  "solution": "$d(xy)=0$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\sec^2x$ is",
+  "options": [
+   "$y=\\cot x+C$",
+   "$y=\\sec x+C$",
+   "$y=\\sec x\\tan x+C$",
+   "$y=\\tan x+C$"
+  ],
+  "answer": 3,
+  "solution": "Integrate.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}+y=1$ is",
+  "options": [
+   "$y=1+Ce^{x}$",
+   "$y=x+C$",
+   "$y=1+Ce^{-x}$",
+   "$y=Ce^{-x}$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{dy}{1-y}=dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The integrating factor of $\\dfrac{dy}{dx}+\\dfrac yx=x^2$ is",
+  "options": [
+   "$e^x$",
+   "$\\frac1x$",
+   "$\\log x$",
+   "$x$"
+  ],
+  "answer": 3,
+  "solution": "$e^{\\int\\frac{dx}x}=x$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The integrating factor of $\\dfrac{dy}{dx}-y=\\sin x$ is",
+  "options": [
+   "$\\sin x$",
+   "$-x$",
+   "$e^x$",
+   "$e^{-x}$"
+  ],
+  "answer": 3,
+  "solution": "$e^{\\int(-1)\\,dx}$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The integrating factor of $\\dfrac{dy}{dx}+y\\tan x=\\sec x$ is",
+  "options": [
+   "$\\tan x$",
+   "$\\cos x$",
+   "$\\sec x$",
+   "$e^{\\tan x}$"
+  ],
+  "answer": 2,
+  "solution": "$e^{\\int\\tan x\\,dx}=e^{\\log\\sec x}$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "For $x>0$, the integrating factor of $x\\dfrac{dy}{dx}-y=x^2$ is",
+  "options": [
+   "$x$",
+   "$x^2$",
+   "$\\frac1x$",
+   "$e^{-x}$"
+  ],
+  "answer": 2,
+  "solution": "Standard form $\\frac{dy}{dx}-\\frac yx=x$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The solution of $\\dfrac{dy}{dx}+2y=0$ with $y(0)=3$ is",
+  "options": [
+   "$y=3e^{2x}$",
+   "$y=e^{-2x}+2$",
+   "$y=-6x+3$",
+   "$y=3e^{-2x}$"
+  ],
+  "answer": 3,
+  "solution": "$y=Ce^{-2x}$ and $C=3$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac{x+y}x$ is",
+  "options": [
+   "$y=\\log|x|+C$",
+   "$y=x\\log|x|+Cx$",
+   "$y=x+C$",
+   "$y=x^2+Cx$"
+  ],
+  "answer": 1,
+  "solution": "$y=vx$: $x\\frac{dv}{dx}=1$.",
+  "topic": "Homogeneous equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac yx$ is",
+  "options": [
+   "$xy=C$",
+   "$y=Cx$",
+   "$y=Ce^x$",
+   "$y=x+C$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{dy}y=\\frac{dx}x$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "Which differential equation is homogeneous?",
+  "options": [
+   "$\\frac{dy}{dx}=\\frac{x+y+1}{x}$",
+   "$\\frac{dy}{dx}=\\frac{x^2+y^2}{xy}$",
+   "$\\frac{dy}{dx}=\\frac{x+1}{y}$",
+   "$\\frac{dy}{dx}=x+y^2$"
+  ],
+  "answer": 1,
+  "solution": "The right side is a function of $\\frac yx$ only.",
+  "topic": "Homogeneous equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac yx+\\tan\\dfrac yx$ is",
+  "options": [
+   "$\\cos\\frac yx=Cx$",
+   "$\\sin\\frac yx=x+C$",
+   "$\\tan\\frac yx=Cx$",
+   "$\\sin\\frac yx=Cx$"
+  ],
+  "answer": 3,
+  "solution": "$y=vx$: $\\cot v\\,dv=\\frac{dx}x$.",
+  "topic": "Homogeneous equations"
+ },
+ {
+  "prompt": "$y=A\\cos x+B\\sin x$ is the general solution of",
+  "options": [
+   "$y'+y=0$",
+   "$y''+y'=0$",
+   "$y''+y=0$",
+   "$y''-y=0$"
+  ],
+  "answer": 2,
+  "solution": "$y''=-A\\cos x-B\\sin x=-y$.",
+  "topic": "Formation"
+ },
+ {
+  "prompt": "$y=e^x+1$ is a solution of",
+  "options": [
+   "$y''-y=0$",
+   "$y'-y=0$",
+   "$y''+y'=0$",
+   "$y''-y'=0$"
+  ],
+  "answer": 3,
+  "solution": "$y'=y''=e^x$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=1+x+y+xy$ is",
+  "options": [
+   "$y=x+\\frac{x^2}2+C$",
+   "$\\log|1+y|=x+\\frac{x^2}2+C$",
+   "$\\log|1+x|=y+C$",
+   "$\\log|1+y|=x+C$"
+  ],
+  "answer": 1,
+  "solution": "The right side is $(1+x)(1+y)$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $e^x\\dfrac{dy}{dx}=1$ is",
+  "options": [
+   "$y=e^x+C$",
+   "$y=e^{-x}+C$",
+   "$y=\\log x+C$",
+   "$y=-e^{-x}+C$"
+  ],
+  "answer": 3,
+  "solution": "$dy=e^{-x}\\,dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}+\\dfrac yx=1$ is",
+  "options": [
+   "$xy=x+C$",
+   "$y=x+Cx$",
+   "$xy=\\frac{x^2}2+C$",
+   "$y=\\frac{x^2}2+C$"
+  ],
+  "answer": 2,
+  "solution": "Integrating factor $x$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=2xy$ is",
+  "options": [
+   "$y=Ce^{2x}$",
+   "$y=e^{x^2}+C$",
+   "$y=Cx^2$",
+   "$y=Ce^{x^2}$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{dy}y=2x\\,dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $y\\log y\\,dx-x\\,dy=0$ is",
+  "options": [
+   "$\\log y=x+C$",
+   "$y=Cx$",
+   "$y\\log y=Cx$",
+   "$\\log y=Cx$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{dy}{y\\log y}=\\frac{dx}x$ gives $\\log\\log y=\\log x+c$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The degree of $(y')^2+3y=x$ is",
+  "options": [
+   "$1$",
+   "$3$",
+   "$2$",
+   "not defined"
+  ],
+  "answer": 2,
+  "solution": "The highest derivative is $y'$, with power $2$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The order of $y'''+2y''+y'=0$ is",
+  "options": [
+   "$6$",
+   "$3$",
+   "$1$",
+   "$2$"
+  ],
+  "answer": 1,
+  "solution": "The highest derivative is $y'''$.",
+  "topic": "Order and degree"
+ },
+ {
+  "prompt": "The solution of $\\dfrac{dy}{dx}=\\cos x$ with $y(0)=1$ is",
+  "options": [
+   "$y=1-\\sin x$",
+   "$y=\\sin x$",
+   "$y=\\sin x+1$",
+   "$y=\\cos x$"
+  ],
+  "answer": 2,
+  "solution": "$y=\\sin x+C$ and $C=1$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=e^{2x}$ is",
+  "options": [
+   "$y=e^{2x}+C$",
+   "$y=\\frac{e^{2x}}2+C$",
+   "$y=\\frac{e^{x}}2+C$",
+   "$y=2e^{2x}+C$"
+  ],
+  "answer": 1,
+  "solution": "Integrate.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The integrating factor of $\\dfrac{dy}{dx}+Py=Q$, where $P$ and $Q$ are functions of $x$, is",
+  "options": [
+   "$e^{\\int P\\,dx}$",
+   "$\\int P\\,dx$",
+   "$e^{\\int Q\\,dx}$",
+   "$e^{-\\int P\\,dx}$"
+  ],
+  "answer": 0,
+  "solution": "Standard result.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The integrating factor of $\\dfrac{dx}{dy}+P_1x=Q_1$, where $P_1$ and $Q_1$ are functions of $y$, is",
+  "options": [
+   "$e^{\\int Q_1\\,dy}$",
+   "$e^{-\\int P_1\\,dy}$",
+   "$e^{\\int P_1\\,dy}$",
+   "$e^{\\int P_1\\,dx}$"
+  ],
+  "answer": 2,
+  "solution": "The roles of $x$ and $y$ are interchanged.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}+y=\\cos x$ is",
+  "options": [
+   "$y=\\frac{\\cos x-\\sin x}2+Ce^{-x}$",
+   "$y=\\frac{\\cos x+\\sin x}2+Ce^{-x}$",
+   "$y=\\sin x+Ce^{-x}$",
+   "$y=\\cos x+Ce^{x}$"
+  ],
+  "answer": 1,
+  "solution": "$ye^x=\\int e^x\\cos x\\,dx=\\frac{e^x(\\cos x+\\sin x)}2+C$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}-y=1$ is",
+  "options": [
+   "$y=Ce^{-x}-1$",
+   "$y=x+C$",
+   "$y=Ce^x+1$",
+   "$y=Ce^x-1$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{dy}{y+1}=dx$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "Which function is a solution of $xy'=2y$?",
+  "options": [
+   "$y=\\frac1{x^2}$",
+   "$y=x^2$",
+   "$y=e^{2x}$",
+   "$y=2x$"
+  ],
+  "answer": 1,
+  "solution": "$x(2x)=2x^2$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The general solution of $(1+x^2)\\dfrac{dy}{dx}+2xy=0$ is",
+  "options": [
+   "$y=C(1+x^2)$",
+   "$y=Ce^{-x^2}$",
+   "$y(1+x^2)=C$",
+   "$y(1+x^2)=x+C$"
+  ],
+  "answer": 2,
+  "solution": "The left side is $\\frac{d}{dx}\\left[y(1+x^2)\\right]$.",
+  "topic": "Linear equations"
+ },
+ {
+  "prompt": "The general solution of $\\dfrac{dy}{dx}=\\dfrac{y+1}{x-1}$ is",
+  "options": [
+   "$(y+1)(x-1)=C$",
+   "$y+1=C(x-1)$",
+   "$y-1=C(x+1)$",
+   "$y=x+C$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{dy}{y+1}=\\frac{dx}{x-1}$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "The solution of $\\dfrac{dy}{dx}=\\sin x$ with $y(0)=0$ is",
+  "options": [
+   "$y=1-\\cos x$",
+   "$y=\\cos x-1$",
+   "$y=-\\cos x$",
+   "$y=\\sin x$"
+  ],
+  "answer": 0,
+  "solution": "$y=-\\cos x+C$ and $C=1$.",
+  "topic": "Variables separable"
+ },
+ {
+  "prompt": "To solve a homogeneous equation $\\dfrac{dy}{dx}=F\\left(\\dfrac yx\\right)$, we put",
+  "options": [
+   "$y=vx$",
+   "$y=v^x$",
+   "$x=v+y$",
+   "$y=v+x$"
+  ],
+  "answer": 0,
+  "solution": "Standard substitution.",
+  "topic": "Homogeneous equations"
+ },
+ {
+  "prompt": "Assertion (A): The degree of $y''+(y')^2+\\sin(y')=0$ is not defined.\nReason (R): The equation is not a polynomial in the derivatives.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$\\sin(y')$ is not a polynomial term.",
+  "topic": "Order and degree",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The general solution of a second order differential equation has two arbitrary constants.\nReason (R): The number of arbitrary constants in the general solution equals the order.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A is the case of order $2$.",
+  "topic": "Order and degree",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $\\dfrac{dy}{dx}=\\dfrac{x^2+y^2}{2xy}$ is a homogeneous equation.\nReason (R): $\\dfrac{dy}{dx}=x+y$ is a linear equation.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; R is about a different equation.",
+  "topic": "Homogeneous equations",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The integrating factor of $\\dfrac{dy}{dx}+y=x$ is $e^x$.\nReason (R): The integrating factor is $e^{\\int P\\,dx}$ with $P=1$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "R gives the value.",
+  "topic": "Linear equations",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The general solution of $y''=0$ is $y=Ax$.\nReason (R): The general solution of an equation of order $n$ has $n$ arbitrary constants.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "The general solution is $y=Ax+B$.",
+  "topic": "Order and degree",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The order of $y'''+y=0$ is $3$.\nReason (R): The order is the highest power of any derivative in the equation.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "R is false: the order is the order of the highest derivative.",
+  "topic": "Order and degree",
+  "assertion": true
+ }
+]
