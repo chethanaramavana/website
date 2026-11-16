@@ -9,6 +9,8 @@ import ch8 from '../g12-practice/ch8-free.json';
 import ch9 from '../g12-practice/ch9-free.json';
 import ch10 from '../g12-practice/ch10-free.json';
 import ch11 from '../g12-practice/ch11-free.json';
+import ch12 from '../g12-practice/ch12-free.json';
+import ch13 from '../g12-practice/ch13-free.json';
 
 /** Free 50-question MCQ sets for Grade 12 chapters, keyed by NCERT chapter number. */
 export const g12FreeBanks: Record<number, Question[]> = {
@@ -22,4 +24,6 @@ export const g12FreeBanks: Record<number, Question[]> = {
   9: ch9 as Question[],
   10: ch10 as Question[],
   11: ch11 as Question[],
+  12: ch12 as Question[],
+  13: ch13 as Question[],
 };

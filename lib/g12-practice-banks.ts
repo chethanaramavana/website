@@ -9,6 +9,8 @@ import ch8Papers from './g12-practice/ch8-papers.json';
 import ch9Papers from './g12-practice/ch9-papers.json';
 import ch10Papers from './g12-practice/ch10-papers.json';
 import ch11Papers from './g12-practice/ch11-papers.json';
+import ch12Papers from './g12-practice/ch12-papers.json';
+import ch13Papers from './g12-practice/ch13-papers.json';
 
 /** Paid paper banks for the Grade 12 practice sets, keyed by product id. Import only from server code that shows a paper. */
 export const g12PracticeBanks: Record<string, IntegralQuestion[]> = {
@@ -22,4 +24,6 @@ export const g12PracticeBanks: Record<string, IntegralQuestion[]> = {
   ...(ch9Papers as unknown as Record<string, IntegralQuestion[]>),
   ...(ch10Papers as unknown as Record<string, IntegralQuestion[]>),
   ...(ch11Papers as unknown as Record<string, IntegralQuestion[]>),
+  ...(ch12Papers as unknown as Record<string, IntegralQuestion[]>),
+  ...(ch13Papers as unknown as Record<string, IntegralQuestion[]>),
 };

@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "$P(A)=0.8$, $P(B)=0.5$ and $P(B|A)=0.4$. Then $P(A\\cap B)$ equals",
+  "options": [
+   "$0.32$",
+   "$0.4$",
+   "$0.2$",
+   "$0.64$"
+  ],
+  "answer": 0,
+  "solution": "$P(A)P(B|A)$.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "$P(E)=0.6$, $P(F)=0.3$ and $P(E\\cap F)=0.2$. Then $P(E|F)$ equals",
+  "options": [
+   "$\\frac16$",
+   "$\\frac23$",
+   "$\\frac13$",
+   "$\\frac12$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{0.2}{0.3}$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(B)>0$. Then $P(A|B)$ equals",
+  "options": [
+   "$P(A)P(B)$",
+   "$P(A)$",
+   "$1$",
+   "$P(B)$"
+  ],
+  "answer": 1,
+  "solution": "Independence.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "Two coins are tossed. The probability of two heads, given at least one head, is",
+  "options": [
+   "$\\frac34$",
+   "$\\frac12$",
+   "$\\frac13$",
+   "$\\frac14$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{\\frac14}{\\frac34}$",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "A die is thrown. The probability of a $4$, given that the number is even, is",
+  "options": [
+   "$\\frac12$",
+   "$\\frac23$",
+   "$\\frac13$",
+   "$\\frac16$"
+  ],
+  "answer": 2,
+  "solution": "Three even numbers.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "Two dice are thrown. The probability that the sum is $8$, given that the first die shows $3$, is",
+  "options": [
+   "$\\frac16$",
+   "$\\frac5{36}$",
+   "$\\frac13$",
+   "$\\frac1{36}$"
+  ],
+  "answer": 0,
+  "solution": "The second die must show $5$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(A)=\\frac12$ and $P(B)=\\frac13$. Then $P(A\\cap B)$ equals",
+  "options": [
+   "$\\frac16$",
+   "$\\frac23$",
+   "$\\frac56$",
+   "$\\frac13$"
+  ],
+  "answer": 0,
+  "solution": "Multiply.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(A)=\\frac12$ and $P(B)=\\frac13$. Then $P(A\\cup B)$ equals",
+  "options": [
+   "$\\frac23$",
+   "$\\frac56$",
+   "$\\frac12$",
+   "$\\frac16$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac12+\\frac13-\\frac16$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(A)=\\frac12$ and $P(B)=\\frac13$. The probability that neither occurs is",
+  "options": [
+   "$\\frac13$",
+   "$\\frac16$",
+   "$\\frac23$",
+   "$\\frac56$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac12\\cdot\\frac23$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "A card is drawn from a pack of $52$. The probability that it is a king, given that it is a face card, is",
+  "options": [
+   "$\\frac13$",
+   "$\\frac1{13}$",
+   "$\\frac3{13}$",
+   "$\\frac14$"
+  ],
+  "answer": 0,
+  "solution": "$4$ kings among $12$ face cards.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$P(B)=0.5$ and $P(A\\cap B)=0.32$. Then $P(A|B)$ equals",
+  "options": [
+   "$0.64$",
+   "$0.16$",
+   "$0.82$",
+   "$0.32$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{0.32}{0.5}$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(A)=0.4$ and $P(B)=0.5$. Then $P(A\\cup B)$ equals",
+  "options": [
+   "$0.7$",
+   "$0.9$",
+   "$0.6$",
+   "$0.2$"
+  ],
+  "answer": 0,
+  "solution": "$0.4+0.5-0.2$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "A bag has $5$ red and $5$ black balls. Two are drawn without replacement. The probability that both are red is",
+  "options": [
+   "$\\frac12$",
+   "$\\frac15$",
+   "$\\frac29$",
+   "$\\frac14$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac5{10}\\cdot\\frac49$.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "A bag has $5$ red and $5$ black balls. Two are drawn with replacement. The probability that both are red is",
+  "options": [
+   "$\\frac15$",
+   "$\\frac29$",
+   "$\\frac14$",
+   "$\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "$\\left(\\frac12\\right)^2$.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "$A$ solves a problem with probability $\\frac12$ and $B$ with probability $\\frac13$, independently. The probability that the problem is solved is",
+  "options": [
+   "$\\frac23$",
+   "$\\frac12$",
+   "$\\frac16$",
+   "$\\frac56$"
+  ],
+  "answer": 0,
+  "solution": "$1-\\frac12\\cdot\\frac23$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "$A$ solves a problem with probability $\\frac12$ and $B$ with probability $\\frac13$, independently. The probability that exactly one of them solves it is",
+  "options": [
+   "$\\frac13$",
+   "$\\frac12$",
+   "$\\frac16$",
+   "$\\frac23$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac12\\cdot\\frac23+\\frac12\\cdot\\frac13$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "Bag I has $3$ red and $4$ black balls; bag II has $5$ red and $6$ black. A bag is chosen at random and a ball is drawn. The probability that it is red is",
+  "options": [
+   "$\\frac{34}{77}$",
+   "$\\frac8{18}$",
+   "$\\frac12$",
+   "$\\frac{35}{68}$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac12\\cdot\\frac37+\\frac12\\cdot\\frac5{11}$.",
+  "topic": "Total probability and Bayes' theorem"
+ },
+ {
+  "prompt": "Bag I has $3$ red and $4$ black balls; bag II has $5$ red and $6$ black. A bag is chosen at random and a red ball is drawn. The probability that it came from bag II is",
+  "options": [
+   "$\\frac{33}{68}$",
+   "$\\frac5{11}$",
+   "$\\frac{35}{68}$",
+   "$\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac{\\frac5{22}}{\\frac{34}{77}}$.",
+  "topic": "Total probability and Bayes' theorem"
+ },
+ {
+  "prompt": "The sum of the probabilities in a probability distribution is",
+  "options": [
+   "$0$",
+   "any positive number",
+   "the mean",
+   "$1$"
+  ],
+  "answer": 3,
+  "solution": "The values cover all outcomes.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ takes the values $0,1,2$ with probabilities $k,2k,3k$. Then $k$ equals",
+  "options": [
+   "$\\frac16$",
+   "$\\frac13$",
+   "$\\frac12$",
+   "$\\frac15$"
+  ],
+  "answer": 0,
+  "solution": "$6k=1$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ takes the values $0,1,2$ with probabilities $\\frac16,\\frac13,\\frac12$. The mean of $X$ is",
+  "options": [
+   "$\\frac43$",
+   "$\\frac12$",
+   "$\\frac53$",
+   "$1$"
+  ],
+  "answer": 0,
+  "solution": "$0+\\frac13+1$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ is the number of heads in two tosses of a coin. Then $P(X=1)$ equals",
+  "options": [
+   "$\\frac34$",
+   "$\\frac14$",
+   "$\\frac13$",
+   "$\\frac12$"
+  ],
+  "answer": 3,
+  "solution": "$HT$ and $TH$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "The mean of the number of heads in two tosses of a coin is",
+  "options": [
+   "$1$",
+   "$\\frac12$",
+   "$2$",
+   "$\\frac32$"
+  ],
+  "answer": 0,
+  "solution": "$0\\cdot\\frac14+1\\cdot\\frac12+2\\cdot\\frac14$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "The mean of the number shown by a fair die is",
+  "options": [
+   "$\\frac{21}{2}$",
+   "$\\frac72$",
+   "$3$",
+   "$4$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{21}6$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ takes $1,2,3$ with probabilities $\\frac14,\\frac12,\\frac14$. Then $E(X)$ equals",
+  "options": [
+   "$\\frac32$",
+   "$2$",
+   "$\\frac52$",
+   "$1$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac14+1+\\frac34$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "For an event $A$ with $P(A)>0$, $P(A|A)$ equals",
+  "options": [
+   "$P(A)$",
+   "$1$",
+   "$P(A)^2$",
+   "$0$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{P(A)}{P(A)}$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$P(A'|B)$ equals",
+  "options": [
+   "$1-P(A)$",
+   "$1-P(A|B)$",
+   "$P(B)-P(A|B)$",
+   "$P(B|A)$"
+  ],
+  "answer": 1,
+  "solution": "Conditional probability is a probability.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$A\\subset B$ with $P(B)>0$. Then $P(A|B)$ equals",
+  "options": [
+   "$P(B)$",
+   "$P(A)$",
+   "$\\frac{P(A)}{P(B)}$",
+   "$1$"
+  ],
+  "answer": 2,
+  "solution": "$A\\cap B=A$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$B\\subset A$ with $P(B)>0$. Then $P(A|B)$ equals",
+  "options": [
+   "$0$",
+   "$1$",
+   "$P(A)$",
+   "$\\frac{P(A)}{P(B)}$"
+  ],
+  "answer": 1,
+  "solution": "$A\\cap B=B$.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$P(A\\cap B)$ equals",
+  "options": [
+   "$P(B)P(B|A)$",
+   "$P(A|B)P(A)$",
+   "$P(A)+P(B)$",
+   "$P(A)P(B|A)$"
+  ],
+  "answer": 3,
+  "solution": "Multiplication theorem.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "Three coins are tossed. The probability of exactly two heads, given that the first coin shows a head, is",
+  "options": [
+   "$\\frac34$",
+   "$\\frac14$",
+   "$\\frac38$",
+   "$\\frac12$"
+  ],
+  "answer": 3,
+  "solution": "Exactly one head among the other two coins.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "A family has two children. The probability that both are boys, given that the elder is a boy, is",
+  "options": [
+   "$\\frac23$",
+   "$\\frac12$",
+   "$\\frac14$",
+   "$\\frac13$"
+  ],
+  "answer": 1,
+  "solution": "Only the younger child matters.",
+  "topic": "Conditional probability"
+ },
+ {
+  "prompt": "$A$ and $B$ are independent with $P(A)=0.3$ and $P(B)=0.4$. Then $P(A\\cap B')$ equals",
+  "options": [
+   "$0.18$",
+   "$0.42$",
+   "$0.28$",
+   "$0.12$"
+  ],
+  "answer": 0,
+  "solution": "$0.3\\cdot0.6$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "$P(A\\cap B)=0.3$ and $P(A)=0.6$. Then $P(B|A)$ equals",
+  "options": [
+   "$0.5$",
+   "$0.3$",
+   "$0.18$",
+   "$0.9$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{0.3}{0.6}$.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "A bag has $4$ white and $6$ black balls. Two are drawn without replacement. The probability of one of each colour is",
+  "options": [
+   "$\\frac25$",
+   "$\\frac4{15}$",
+   "$\\frac{12}{25}$",
+   "$\\frac8{15}$"
+  ],
+  "answer": 3,
+  "solution": "$\\frac{4\\cdot6}{\\binom{10}2}$.",
+  "topic": "Multiplication theorem"
+ },
+ {
+  "prompt": "$E_1$, $E_2$, $E_3$ form a partition of the sample space. Then $P(E_1)+P(E_2)+P(E_3)$ equals",
+  "options": [
+   "$1$",
+   "any number in $[0,3]$",
+   "$0$",
+   "$3$"
+  ],
+  "answer": 0,
+  "solution": "Disjoint events whose union is the sample space.",
+  "topic": "Total probability and Bayes' theorem"
+ },
+ {
+  "prompt": "In Bayes' theorem, $P(E_i|A)$ equals",
+  "options": [
+   "$\\frac{P(E_i)P(A|E_i)}{\\sum_jP(E_j)P(A|E_j)}$",
+   "$\\frac{P(E_i)}{P(A)}$",
+   "$\\frac{P(A|E_i)}{\\sum_jP(A|E_j)}$",
+   "$P(E_i)P(A|E_i)$"
+  ],
+  "answer": 0,
+  "solution": "Statement of the theorem.",
+  "topic": "Total probability and Bayes' theorem"
+ },
+ {
+  "prompt": "A test finds a disease in $99\\%$ of patients who have it, and gives a false positive for $0.5\\%$ of healthy people. $0.1\\%$ of people have the disease. The probability that a person who tests positive has the disease is",
+  "options": [
+   "$\\frac{22}{133}$",
+   "$\\frac{1}{10}$",
+   "$0.99$",
+   "$\\frac{111}{133}$"
+  ],
+  "answer": 0,
+  "solution": "$\\frac{0.001\\cdot0.99}{0.001\\cdot0.99+0.999\\cdot0.005}$.",
+  "topic": "Total probability and Bayes' theorem"
+ },
+ {
+  "prompt": "$X$ is the number of sixes in two throws of a die. Then $P(X=0)$ equals",
+  "options": [
+   "$\\frac1{36}$",
+   "$\\frac{10}{36}$",
+   "$\\frac{25}{36}$",
+   "$\\frac{5}{6}$"
+  ],
+  "answer": 2,
+  "solution": "$\\left(\\frac56\\right)^2$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ is the number of sixes in two throws of a die. The mean of $X$ is",
+  "options": [
+   "$\\frac{11}{36}$",
+   "$\\frac13$",
+   "$\\frac12$",
+   "$\\frac16$"
+  ],
+  "answer": 1,
+  "solution": "$\\frac{10}{36}+2\\cdot\\frac1{36}$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "Which list can be the probabilities of $X=0,1,2$?",
+  "options": [
+   "$0.2, 0.5, 0.4$",
+   "$-0.1, 0.6, 0.5$",
+   "$0.5, 0.5, 0.5$",
+   "$0.1, 0.5, 0.4$"
+  ],
+  "answer": 3,
+  "solution": "Non-negative, and adding to $1$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$X$ takes $0,1,2$ with probabilities $\\frac14,\\frac12,\\frac14$. Then $P(X\\le1)$ equals",
+  "options": [
+   "$\\frac14$",
+   "$1$",
+   "$\\frac34$",
+   "$\\frac12$"
+  ],
+  "answer": 2,
+  "solution": "$\\frac14+\\frac12$.",
+  "topic": "Random variables"
+ },
+ {
+  "prompt": "$E$ and $F$ are independent. Then",
+  "options": [
+   "$P(E\\cap F)=0$",
+   "$E$ and $F$ are mutually exclusive",
+   "$E'$ and $F'$ are independent",
+   "$P(E)=P(F)$"
+  ],
+  "answer": 2,
+  "solution": "Complements of independent events are independent.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "$P(A)=\\frac12$, $P(B)=\\frac12$ and $P(A\\cap B)=\\frac14$. Then $A$ and $B$ are",
+  "options": [
+   "independent",
+   "complementary",
+   "mutually exclusive",
+   "equal"
+  ],
+  "answer": 0,
+  "solution": "$\\frac14=\\frac12\\cdot\\frac12$.",
+  "topic": "Independent events"
+ },
+ {
+  "prompt": "Assertion (A): When a coin is tossed twice, \"the first toss is a head\" and \"the second toss is a head\" are independent.\nReason (R): The probability of both is the product of their probabilities.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$\\frac14=\\frac12\\cdot\\frac12$.",
+  "topic": "Independent events",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $P(A|B)=\\frac{P(A\\cap B)}{P(B)}$ for $P(B)>0$.\nReason (R): $P(B)\\ne0$ is needed to divide by $P(B)$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "A is the definition; R explains only the condition.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): If $P(A)=0.5$, $P(B)=0.4$ and $P(A\\cap B)=0.3$, then $A$ and $B$ are independent.\nReason (R): $A$ and $B$ are independent if and only if $P(A\\cap B)=P(A)P(B)$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$0.5\\cdot0.4=0.2\\ne0.3$.",
+  "topic": "Independent events",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The mean of the number shown by a fair die is $3.5$.\nReason (R): $E(X)=\\sum x_ip_i$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "$\\frac{1+2+\\cdots+6}{6}$.",
+  "topic": "Random variables",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Mutually exclusive events with positive probabilities are independent.\nReason (R): For mutually exclusive events, $P(A\\cap B)=0$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$0\\ne P(A)P(B)$.",
+  "topic": "Independent events",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The probabilities in a probability distribution add to $1$.\nReason (R): Each probability in a distribution can be any real number.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 2,
+  "solution": "Probabilities lie in $[0,1]$.",
+  "topic": "Random variables",
+  "assertion": true
+ }
+]

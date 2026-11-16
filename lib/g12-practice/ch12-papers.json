@@ -1,0 +1,2439 @@
+{
+ "g12-ch12-mcq-20-01": [
+  {
+   "q": "The maximum of $Z=2x+3y$ subject to $x+y\\le6$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $18$",
+   "s": "At $(0,6)$.",
+   "opts": [
+    "$15$",
+    "$18$",
+    "$6$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum of $Z=x+3y$ subject to $x+y\\ge2$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $2$",
+   "s": "At $(2,0)$.",
+   "opts": [
+    "$2$",
+    "$6$",
+    "$0$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum of $Z=4x+3y$ subject to $x+y\\le5$, $2x+y\\le8$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $18$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(3,2)$, $(0,5)$.",
+   "opts": [
+    "$15$",
+    "$20$",
+    "$18$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $x+2y\\le6$, $x\\ge0$, $y\\ge0$ are",
+   "a": "(C) $(0,0)$, $(6,0)$, $(0,3)$",
+   "s": "Intercepts.",
+   "opts": [
+    "$(0,0)$, $(6,0)$, $(0,6)$",
+    "$(0,0)$, $(3,0)$, $(0,6)$",
+    "$(0,0)$, $(6,0)$, $(0,3)$",
+    "$(6,0)$ and $(0,3)$ only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The area of the feasible region $x+y\\le3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $\\frac92$",
+   "s": "$\\frac12\\cdot3\\cdot3$.",
+   "opts": [
+    "$3$",
+    "$9$",
+    "$\\frac92$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The point $(1,2)$ satisfies",
+   "a": "(B) $x+y\\le3$",
+   "s": "$1+2=3$.",
+   "opts": [
+    "$2x+y\\ge5$",
+    "$x+y\\le3$",
+    "$x+y\\ge4$",
+    "$x-y\\ge0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$, the maximum of $Z=x+2y$ is",
+   "a": "(D) $8$",
+   "s": "$Z(2,3)=Z(0,4)=8$.",
+   "opts": [
+    "$4$",
+    "$6$",
+    "$10$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,6)$, $(2,2)$, $(6,0)$ (bounded), the minimum of $Z=2x+y$ is",
+   "a": "(D) $6$",
+   "s": "$Z=6,6,12$.",
+   "opts": [
+    "$12$",
+    "$2$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "When the feasible region is unbounded, the minimum of $Z=ax+by$",
+   "a": "(C) may or may not exist",
+   "s": "Check the half plane $ax+by<m$.",
+   "opts": [
+    "is always at the origin",
+    "never exists",
+    "may or may not exist",
+    "always exists"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The constraints $x+y\\le4$, $x\\ge5$, $x\\ge0$, $y\\ge0$",
+   "a": "(B) have no feasible point",
+   "s": "$x\\ge5$ gives $x+y\\ge5>4$.",
+   "opts": [
+    "give an unbounded region",
+    "have no feasible point",
+    "give the point $(5,0)$",
+    "give a triangle"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The maximum of $Z=6x+4y$ subject to $x\\le2$, $x+y\\le3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $16$",
+   "s": "At $(2,1)$.",
+   "opts": [
+    "$14$",
+    "$16$",
+    "$18$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the triangle with corners $(0,0)$, $(3,0)$, $(0,3)$, $Z=3x-y$ has maximum $M$ and minimum $m$. Then $M-m$ equals",
+   "a": "(A) $12$",
+   "s": "$M=9$, $m=-3$.",
+   "opts": [
+    "$12$",
+    "$9$",
+    "$3$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A chair needs $2$ hours and a table $5$ hours; at most $100$ hours are available. With $x$ chairs and $y$ tables,",
+   "a": "(A) $2x+5y\\le100$",
+   "s": "Total hours.",
+   "opts": [
+    "$2x+5y\\le100$",
+    "$x+y\\le100$",
+    "$5x+2y\\le100$",
+    "$2x+5y\\ge100$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The half plane $x-y\\le0$ is",
+   "a": "(B) the region on and above the line $y=x$",
+   "s": "$y\\ge x$.",
+   "opts": [
+    "the first quadrant",
+    "the region on and above the line $y=x$",
+    "the line $y=x$ only",
+    "the region below $y=x$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(5,0)$, $(3,4)$, $(0,5)$, the maximum of $Z=3x+4y$ is",
+   "a": "(B) $25$",
+   "s": "At $(3,4)$.",
+   "opts": [
+    "$15$",
+    "$25$",
+    "$24$",
+    "$20$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$Z=px+qy$ has equal maxima at $(3,0)$ and $(1,3)$. Then",
+   "a": "(A) $2p=3q$",
+   "s": "$3p=p+3q$.",
+   "opts": [
+    "$2p=3q$",
+    "$p=3q$",
+    "$3p=q$",
+    "$p=q$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On a bounded feasible region, $Z=x-y$ takes its maximum and minimum",
+   "a": "(B) at corner points",
+   "s": "Corner point theorem.",
+   "opts": [
+    "outside the region",
+    "at corner points",
+    "at the centre",
+    "only on the axes"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum of $Z=5x+10y$ subject to $x+2y\\le120$, $x+y\\ge60$, $x-2y\\ge0$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $300$",
+   "s": "Corners $(60,0)$, $(120,0)$, $(60,30)$, $(40,20)$.",
+   "opts": [
+    "$500$",
+    "$400$",
+    "$600$",
+    "$300$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The region $x+y\\le2$, $x\\ge0$, $y\\ge0$ has corner points $(0,0)$, $(2,0)$, $(0,2)$. Reason: The line $x+y=2$ meets the axes at $(2,0)$ and $(0,2)$.",
+   "a": "(A)",
+   "s": "R gives the two non-zero corners.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: On $x+y\\le5$, $x\\ge0$, $y\\ge0$, the maximum of $Z=x+y$ is attained only at $(5,0)$. Reason: $Z=5$ at both $(5,0)$ and $(0,5)$.",
+   "a": "(D)",
+   "s": "The maximum is attained along the whole segment.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch12-board-01": [
+  {
+   "q": "The maximum of $Z=3x+2y$ subject to $x+y\\le4$, $x\\le3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $11$",
+   "s": "At $(3,1)$. [1]",
+   "opts": [
+    "$11$",
+    "$12$",
+    "$9$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum of $Z=2x+3y$ subject to $x+y\\ge5$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $10$",
+   "s": "At $(5,0)$. [1]",
+   "opts": [
+    "$15$",
+    "$0$",
+    "$5$",
+    "$10$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $2x+y\\le8$, $x\\ge0$, $y\\ge0$ are",
+   "a": "(C) $(0,0)$, $(4,0)$, $(0,8)$",
+   "s": "Intercepts. [1]",
+   "opts": [
+    "$(4,0)$ and $(0,8)$ only",
+    "$(0,0)$, $(8,0)$, $(0,4)$",
+    "$(0,0)$, $(4,0)$, $(0,8)$",
+    "$(0,0)$, $(2,0)$, $(0,4)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Because of $x\\ge0$ and $y\\ge0$, the feasible region lies in",
+   "a": "(B) the first quadrant",
+   "s": "Non-negativity. [1]",
+   "opts": [
+    "the third quadrant",
+    "the first quadrant",
+    "any quadrant",
+    "the second quadrant"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For $x+y\\le4$, $3x-y\\ge2$, $x\\ge0$, $y\\ge0$, the point $(3,1)$ is",
+   "a": "(D) feasible",
+   "s": "$4\\le4$ and $8\\ge2$. [1]",
+   "opts": [
+    "outside the first quadrant",
+    "on no boundary line",
+    "not feasible",
+    "feasible"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of corner points of $x+y\\le6$, $x\\le4$, $y\\le3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $5$",
+   "s": "$(0,0)$, $(4,0)$, $(4,2)$, $(3,3)$, $(0,3)$. [1]",
+   "opts": [
+    "$5$",
+    "$4$",
+    "$6$",
+    "$3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(4,0)$, $(4,2)$, $(3,3)$, $(0,3)$, the maximum of $Z=x+3y$ is",
+   "a": "(B) $12$",
+   "s": "At $(3,3)$. [1]",
+   "opts": [
+    "$10$",
+    "$12$",
+    "$4$",
+    "$9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The optimal value of the objective function is attained at",
+   "a": "(D) a corner point of the feasible region",
+   "s": "Corner point theorem. [1]",
+   "opts": [
+    "the centre of the region",
+    "a point outside the region",
+    "the origin only",
+    "a corner point of the feasible region"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The region is unbounded and $M$ is the largest corner value of $Z=ax+by$. $M$ is the maximum if",
+   "a": "(C) $ax+by>M$ has no point in common with the region",
+   "s": "Test for unbounded regions. [1]",
+   "opts": [
+    "the region contains the origin",
+    "$ax+by<M$ has no point in common with the region",
+    "$ax+by>M$ has no point in common with the region",
+    "$M>0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "An unbounded region has corners $(0,4)$, $(1,2)$, $(4,0)$, and $x+y<3$ has no point in it. The minimum of $Z=x+y$ is",
+   "a": "(A) $3$",
+   "s": "$Z=4,3,4$. [1]",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A truck can carry not more than $60$ boxes: $x$ of type $A$ and $y$ of type $B$. Then",
+   "a": "(B) $x+y\\le60$",
+   "s": "\"Not more than\" means $\\le$. [1]",
+   "opts": [
+    "$x+y=60$",
+    "$x+y\\le60$",
+    "$60x+60y\\le1$",
+    "$x+y\\ge60$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The region $3x+2y\\ge6$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) unbounded",
+   "s": "It extends without limit. [1]",
+   "opts": [
+    "unbounded",
+    "empty",
+    "bounded",
+    "a triangle"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corners of a region are $(0,2)$, $(3,0)$, $(6,0)$, $(6,8)$, $(0,5)$. The maximum of $Z=4x+6y$ is",
+   "a": "(D) $72$",
+   "s": "At $(6,8)$. [1]",
+   "opts": [
+    "$30$",
+    "$12$",
+    "$24$",
+    "$72$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For the same corners $(0,2)$, $(3,0)$, $(6,0)$, $(6,8)$, $(0,5)$, the minimum of $Z=4x+6y$ is",
+   "a": "(B) $12$, on the segment joining $(0,2)$ and $(3,0)$",
+   "s": "$Z(0,2)=Z(3,0)=12$. [1]",
+   "opts": [
+    "$24$",
+    "$12$, on the segment joining $(0,2)$ and $(3,0)$",
+    "$0$",
+    "$12$, at $(0,2)$ only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $(0,0)$ is a corner point of the region $x+2y\\le8$, $x\\ge0$, $y\\ge0$. Reason: The two axes are boundary lines of the region and meet at the origin.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: On the region with corners $(0,0)$, $(3,0)$, $(0,4)$, $Z=2x+y$ is greatest at $(3,0)$. Reason: $Z=0$ at $(0,0)$.",
+   "a": "(B)",
+   "s": "$Z(3,0)=6>4=Z(0,4)$; R is true but does not compare the corners. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the corner points of the feasible region $x+y\\le5$, $x\\le3$, $x\\ge0$, $y\\ge0$.",
+   "a": "$(0,0)$, $(3,0)$, $(3,2)$, $(0,5)$",
+   "s": "The lines $x=3$ and $x+y=5$ meet at $(3,2)$ [1]. The other corners are $(0,0)$, $(3,0)$, $(0,5)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the maximum of $Z=11x+7y$ subject to $2x+y\\le6$, $x\\le2$, $x\\ge0$, $y\\ge0$.",
+   "a": "$42$ at $(0,6)$",
+   "s": "Corners $(0,0)$, $(2,0)$, $(2,2)$, $(0,6)$ [1]. $Z=0,22,36,42$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Check whether $(2,1)$ is a feasible point for $x+3y\\le6$, $2x+y\\ge4$, $x\\ge0$, $y\\ge0$.",
+   "a": "Feasible.",
+   "s": "$2+3=5\\le6$ [1]. $4+1=5\\ge4$, and $x,y\\ge0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: maximise $Z=2x+5y$ subject to $x+4y\\le24$, $3x+y\\le21$, $x+y\\le9$, $x\\ge0$, $y\\ge0$.",
+   "a": "$33$ at $(4,5)$",
+   "s": "Corners $(0,0)$, $(7,0)$, $(6,3)$, $(4,5)$, $(0,6)$ [1½]. $Z=0,14,27,33,30$ [1]. Maximum $33$ at $(4,5)$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: minimise $Z=6x+3y$ subject to $4x+y\\ge80$, $x+5y\\ge115$, $3x+2y\\le150$, $x\\ge0$, $y\\ge0$.",
+   "a": "$150$ at $(15,20)$",
+   "s": "Corners $(15,20)$, $(2,72)$, $(40,15)$ [1½]. $Z=150,228,285$ [1]. The region is bounded, so the minimum is $150$ at $(15,20)$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: maximise $Z=10x+6y$ subject to $3x+y\\le12$, $2x+5y\\le34$, $x\\ge0$, $y\\ge0$.",
+   "a": "$56$ at $(2,6)$",
+   "s": "The lines meet at $(2,6)$ [1]. Corners $(0,0)$, $(4,0)$, $(2,6)$, $\\left(0,\\frac{34}5\\right)$ [1]. $Z=0,40,56,40.8$; maximum $56$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A toy maker makes toys $A$ and $B$ on machines I, II and III. Toy $A$ needs $12$, $18$, $6$ minutes and toy $B$ needs $6$, $0$, $9$ minutes on the three machines. Each machine is available for $6$ hours. The profit is ₹$7.50$ on $A$ and ₹$5$ on $B$. Find the number of each toy for the greatest profit.",
+   "a": "$15$ of $A$ and $30$ of $B$; profit ₹$262.50$",
+   "s": "Maximise $Z=7.5x+5y$ subject to $12x+6y\\le360$, $18x\\le360$, $6x+9y\\le360$, $x,y\\ge0$ [1]. That is $2x+y\\le60$, $x\\le20$, $2x+3y\\le120$ [1]. Corners $(0,0)$, $(20,0)$, $(20,20)$, $(15,30)$, $(0,40)$ [1]. $Z=0,150,250,262.5,200$ [1]. Maximum at $(15,30)$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A dealer has ₹$5760$ to buy fans at ₹$360$ and sewing machines at ₹$240$, and space for at most $20$ items. The profit is ₹$22$ on a fan and ₹$18$ on a sewing machine. Find the purchase that gives the greatest profit.",
+    "a": "$8$ fans and $12$ machines; profit ₹$392$",
+    "s": "Maximise $Z=22x+18y$ subject to $360x+240y\\le5760$, $x+y\\le20$, $x,y\\ge0$ [1]. That is $3x+2y\\le48$ [1]. Corners $(0,0)$, $(16,0)$, $(8,12)$, $(0,20)$ [1]. $Z=0,352,392,360$ [1]. Maximum at $(8,12)$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A bakery makes $x$ cakes and $y$ pastries. A cake needs $200$ g of flour and $25$ g of fat; a pastry needs $25$ g of flour and $50$ g of fat. There are $5$ kg of flour and $1$ kg of fat. (i) Write the constraints. [1] (ii) Find the corner points. [1] (iii) Find the greatest number of items. [2] \\textbf{OR} (iii) The profit is ₹$50$ per cake and ₹$20$ per pastry. Find the greatest profit. [2]",
+   "a": "(i) $8x+y\\le200$, $x+2y\\le40$, $x,y\\ge0$; (ii) $(0,0)$, $(25,0)$, $(24,8)$, $(0,20)$; (iii) $32$; OR ₹$1360$.",
+   "s": "(i) $200x+25y\\le5000$ and $25x+50y\\le1000$ [1]. (ii) The lines meet at $(24,8)$ [1]. (iii) $Z=x+y$: $0,25,32,20$ [1]; the greatest is $32$ at $(24,8)$ [1]. OR $Z=50x+20y$: $0,1250,1360,400$ [1]; greatest ₹$1360$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch12-board-02": [
+  {
+   "q": "The maximum of $Z=x+2y$ subject to $x+y\\le5$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $10$",
+   "s": "At $(0,5)$. [1]",
+   "opts": [
+    "$5$",
+    "$15$",
+    "$7$",
+    "$10$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum of $Z=3x+y$ subject to $x+y\\ge3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $3$",
+   "s": "At $(0,3)$. [1]",
+   "opts": [
+    "$9$",
+    "$6$",
+    "$3$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $x+y\\le3$, $y\\le2$, $x\\ge0$, $y\\ge0$ are",
+   "a": "(A) $(0,0)$, $(3,0)$, $(1,2)$, $(0,2)$",
+   "s": "$y=2$ meets $x+y=3$ at $(1,2)$. [1]",
+   "opts": [
+    "$(0,0)$, $(3,0)$, $(1,2)$, $(0,2)$",
+    "$(0,0)$, $(2,0)$, $(1,2)$",
+    "$(0,0)$, $(3,0)$, $(0,3)$",
+    "$(3,0)$ and $(1,2)$ only"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(0,0)$, $(3,0)$, $(1,2)$, $(0,2)$, the maximum of $Z=2x+3y$ is",
+   "a": "(B) $8$",
+   "s": "At $(1,2)$. [1]",
+   "opts": [
+    "$9$",
+    "$8$",
+    "$7$",
+    "$6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which point lies in the region $2x+3y\\le6$, $x\\ge0$, $y\\ge0$?",
+   "a": "(A) $(1,1)$",
+   "s": "$5\\le6$. [1]",
+   "opts": [
+    "$(1,1)$",
+    "$(0,3)$",
+    "$(2,1)$",
+    "$(3,1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(0,3)$, $(1,1)$, $(3,0)$, the minimum of $Z=x+y$ is at",
+   "a": "(C) $(1,1)$",
+   "s": "$Z=3,2,3$. [1]",
+   "opts": [
+    "every corner",
+    "$(3,0)$",
+    "$(1,1)$",
+    "$(0,3)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For a bounded feasible region, $Z=ax+by$ has",
+   "a": "(D) both a maximum and a minimum",
+   "s": "Corner point theorem. [1]",
+   "opts": [
+    "only a maximum",
+    "no optimal value",
+    "only a minimum",
+    "both a maximum and a minimum"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "\"At least $5$ kg of $A$ and $B$ together\" is written as",
+   "a": "(A) $x+y\\ge5$",
+   "s": "\"At least\" means $\\ge$. [1]",
+   "opts": [
+    "$x+y\\ge5$",
+    "$5x+5y\\ge1$",
+    "$x+y=5$",
+    "$x+y\\le5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $x\\le4$, $y\\le4$, $x+y\\ge6$, $x\\ge0$, $y\\ge0$ are",
+   "a": "(C) $(2,4)$, $(4,2)$, $(4,4)$",
+   "s": "A triangle cut off by $x+y=6$. [1]",
+   "opts": [
+    "$(0,0)$, $(4,0)$, $(0,4)$",
+    "$(2,4)$ and $(4,2)$ only",
+    "$(2,4)$, $(4,2)$, $(4,4)$",
+    "$(6,0)$, $(0,6)$, $(4,4)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(2,4)$, $(4,2)$, $(4,4)$, the maximum of $Z=3x+y$ is",
+   "a": "(D) $16$",
+   "s": "At $(4,4)$. [1]",
+   "opts": [
+    "$12$",
+    "$14$",
+    "$10$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(2,4)$, $(4,2)$, $(4,4)$, the minimum of $Z=3x+y$ is",
+   "a": "(B) $10$",
+   "s": "At $(2,4)$. [1]",
+   "opts": [
+    "$6$",
+    "$10$",
+    "$14$",
+    "$16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$Z=px+qy$ has equal values at $(2,4)$ and $(4,2)$. Then",
+   "a": "(D) $p=q$",
+   "s": "$2p+4q=4p+2q$. [1]",
+   "opts": [
+    "$p=-q$",
+    "$p=2q$",
+    "$q=2p$",
+    "$p=q$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $y\\ge x$, $x+y\\le4$, $x\\ge0$ are",
+   "a": "(A) $(0,0)$, $(2,2)$, $(0,4)$",
+   "s": "$y=x$ meets $x+y=4$ at $(2,2)$. [1]",
+   "opts": [
+    "$(0,0)$, $(2,2)$, $(0,4)$",
+    "$(0,0)$, $(4,0)$, $(0,4)$",
+    "$(2,2)$ and $(0,4)$ only",
+    "$(0,0)$, $(2,2)$, $(4,0)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(0,0)$, $(2,2)$, $(0,4)$, the maximum of $Z=x+3y$ is",
+   "a": "(D) $12$",
+   "s": "At $(0,4)$. [1]",
+   "opts": [
+    "$6$",
+    "$4$",
+    "$8$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: On $x+y\\ge4$, $x\\ge0$, $y\\ge0$, $Z=x+y$ has minimum $4$. Reason: Every point of the region satisfies $x+y\\ge4$.",
+   "a": "(A)",
+   "s": "And $4$ is attained at $(4,0)$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $Z=2x+3y$ has no minimum on the region $x+y\\ge1$, $x\\ge0$, $y\\ge0$. Reason: The region is unbounded.",
+   "a": "(D)",
+   "s": "The minimum is $2$ at $(1,0)$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(4,0)$, $(3,3)$, $(0,5)$, find the maximum of $Z=8x+5y$.",
+   "a": "$39$ at $(3,3)$",
+   "s": "$Z=0,32,39,25$ [1]. Maximum $39$ at $(3,3)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A company makes $x$ bicycles and $y$ scooters. It can make at most $30$ vehicles in all, and must make at least $5$ scooters. Write the constraints.",
+   "a": "$x+y\\le30$, $y\\ge5$, $x\\ge0$",
+   "s": "At most $30$ in all: $x+y\\le30$ [1]. At least $5$ scooters: $y\\ge5$; and $x\\ge0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Show that the constraints $x+y\\ge2$, $x+y\\le1$, $x\\ge0$, $y\\ge0$ have no feasible point.",
+   "a": "Shown.",
+   "s": "A point would need $2\\le x+y\\le1$ [1]. This is impossible [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: minimise $Z=4x+6y$ subject to $x+y\\ge4$, $x+3y\\ge6$, $x\\ge0$, $y\\ge0$.",
+   "a": "$18$ at $(3,1)$",
+   "s": "Corners $(6,0)$, $(3,1)$, $(0,4)$ of an unbounded region [1½]. $Z=24,18,24$ [½]. $4x+6y<18$ has no point in the region, so the minimum is $18$ at $(3,1)$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: maximise $Z=50x+30y$ subject to $2x+y\\le18$, $3x+2y\\le34$, $x\\ge0$, $y\\ge0$.",
+   "a": "$520$ at $(2,14)$",
+   "s": "The lines meet at $(2,14)$ [1]. Corners $(0,0)$, $(9,0)$, $(2,14)$, $(0,17)$ [1]. $Z=0,450,520,510$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: minimise $Z=50x+70y$ subject to $2x+y\\ge8$, $x+2y\\ge10$, $x\\ge0$, $y\\ge0$.",
+   "a": "$380$ at $(2,4)$",
+   "s": "Corners $(10,0)$, $(2,4)$, $(0,8)$ [1]. $Z=500,380,560$ [1]. $50x+70y<380$ has no point in the region [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Reshma mixes foods $P$ and $Q$. One kg of $P$ has $3$ units of vitamin A and $5$ of vitamin B; one kg of $Q$ has $4$ of A and $2$ of B. The mixture needs at least $8$ units of A and $11$ of B. $P$ costs ₹$60$ per kg and $Q$ ₹$80$ per kg. Find the least cost.",
+   "a": "₹$160$, at every point of the segment joining $\\left(\\frac83,0\\right)$ and $\\left(2,\\frac12\\right)$",
+   "s": "Minimise $Z=60x+80y$ subject to $3x+4y\\ge8$, $5x+2y\\ge11$, $x,y\\ge0$ [1]. Corners $\\left(\\frac83,0\\right)$, $\\left(2,\\frac12\\right)$, $\\left(0,\\frac{11}2\\right)$ [1]. $Z=160,160,440$ [1]. $60x+80y<160$ has no point in the region [1]. The least cost is ₹$160$ along the segment [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A factory makes tennis rackets and cricket bats. A racket takes $1.5$ hours of machine time and $3$ hours of craftsman time; a bat takes $3$ hours and $1$ hour. There are $42$ machine hours and $24$ craftsman hours. The profit is ₹$20$ per racket and ₹$10$ per bat. Find the greatest profit.",
+    "a": "$4$ rackets and $12$ bats; ₹$200$",
+    "s": "Maximise $Z=20x+10y$ subject to $1.5x+3y\\le42$, $3x+y\\le24$, $x,y\\ge0$ [1]. That is $x+2y\\le28$ [1]. Corners $(0,0)$, $(8,0)$, $(4,12)$, $(0,14)$ [1]. $Z=0,160,200,140$ [1]. Greatest at $(4,12)$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A farmer has $50$ hectares for wheat ($x$ ha) and rice ($y$ ha). Labour allows $3x+y\\le120$. The profit is ₹$4000$ per ha of wheat and ₹$3000$ per ha of rice. (i) Write the constraints. [1] (ii) Find the corner points. [1] (iii) Find the greatest profit. [2] \\textbf{OR} (iii) If both crops give ₹$3000$ per ha, find the greatest profit and where it occurs. [2]",
+   "a": "(i) $x+y\\le50$, $3x+y\\le120$, $x,y\\ge0$; (ii) $(0,0)$, $(40,0)$, $(35,15)$, $(0,50)$; (iii) ₹$185000$; OR ₹$150000$ on the segment from $(35,15)$ to $(0,50)$.",
+   "s": "(i) Land and labour constraints [1]. (ii) $x+y=50$ meets $3x+y=120$ at $(35,15)$ [1]. (iii) $Z=4000x+3000y$: $0,160000,185000,150000$ [1]; greatest ₹$185000$ at $(35,15)$ [1]. OR $Z=3000(x+y)$ is $150000$ at $(35,15)$ and $(0,50)$ [1], so along the whole segment [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch12-board-03": [
+  {
+   "q": "The maximum of $Z=4x+y$ subject to $x+y\\le3$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $12$",
+   "s": "At $(3,0)$. [1]",
+   "opts": [
+    "$9$",
+    "$3$",
+    "$4$",
+    "$12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The minimum of $Z=x+y$ subject to $2x+y\\ge4$, $x+2y\\ge4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $\\frac83$",
+   "s": "Corners $(4,0)$, $\\left(\\frac43,\\frac43\\right)$, $(0,4)$. [1]",
+   "opts": [
+    "$2$",
+    "$\\frac43$",
+    "$4$",
+    "$\\frac83$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The corner points of $y\\le2x$, $x\\le2$, $y\\ge0$ are",
+   "a": "(B) $(0,0)$, $(2,0)$, $(2,4)$",
+   "s": "$y=2x$ meets $x=2$ at $(2,4)$. [1]",
+   "opts": [
+    "$(0,0)$, $(2,0)$, $(0,4)$",
+    "$(0,0)$, $(2,0)$, $(2,4)$",
+    "$(2,0)$, $(2,4)$ only",
+    "$(0,0)$, $(1,2)$, $(2,4)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The graph of $x\\ge2$ is",
+   "a": "(A) the half plane on and to the right of $x=2$",
+   "s": "Points with $x$ at least $2$. [1]",
+   "opts": [
+    "the half plane on and to the right of $x=2$",
+    "the line $x=2$ only",
+    "the region above $y=2$",
+    "the half plane to the left of $x=2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Is $(0,0)$ in the region $x+y\\ge1$?",
+   "a": "(D) No, since $0<1$",
+   "s": "Substitute. [1]",
+   "opts": [
+    "Yes, it is a corner point",
+    "Only when $y\\ge0$",
+    "Yes",
+    "No, since $0<1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(0,0)$, $(2,0)$, $(2,4)$, the maximum of $Z=5x+2y$ is",
+   "a": "(B) $18$",
+   "s": "At $(2,4)$. [1]",
+   "opts": [
+    "$14$",
+    "$18$",
+    "$10$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The number of corner points of $x+y\\le10$, $x\\le6$, $y\\le8$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $5$",
+   "s": "$(0,0)$, $(6,0)$, $(6,4)$, $(2,8)$, $(0,8)$. [1]",
+   "opts": [
+    "$5$",
+    "$6$",
+    "$3$",
+    "$4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "On the corners $(0,0)$, $(6,0)$, $(6,4)$, $(2,8)$, $(0,8)$, the maximum of $Z=2x+3y$ is",
+   "a": "(B) $28$",
+   "s": "At $(2,8)$. [1]",
+   "opts": [
+    "$26$",
+    "$28$",
+    "$12$",
+    "$24$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The optimal value occurs at two corner points $A$ and $B$. Then it occurs",
+   "a": "(C) at every point of the segment $AB$",
+   "s": "Linearity. [1]",
+   "opts": [
+    "nowhere else",
+    "only at the midpoint of $AB$",
+    "at every point of the segment $AB$",
+    "only at $A$ and $B$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A linear programming problem whose feasible region is empty has",
+   "a": "(B) no feasible solution",
+   "s": "No point satisfies the constraints. [1]",
+   "opts": [
+    "a unique solution",
+    "no feasible solution",
+    "infinitely many solutions",
+    "the origin as the solution"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Each unit of $A$ needs $2$ hours and each unit of $B$ needs $3$ hours, with at most $12$ hours. Then",
+   "a": "(B) $2x+3y\\le12$",
+   "s": "Total hours. [1]",
+   "opts": [
+    "$2x+3y\\ge12$",
+    "$2x+3y\\le12$",
+    "$x+y\\le12$",
+    "$3x+2y\\le12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "An unbounded region has corners $(0,5)$, $(2,1)$, $(4,0)$, and $2x+y<5$ has no point in it. The minimum of $Z=2x+y$ is",
+   "a": "(A) $5$",
+   "s": "$Z=5,5,8$. [1]",
+   "opts": [
+    "$5$",
+    "$4$",
+    "$0$",
+    "$8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "For the same unbounded region with corners $(0,5)$, $(2,1)$, $(4,0)$, the maximum of $Z=2x+y$",
+   "a": "(B) does not exist",
+   "s": "The region extends without limit. [1]",
+   "opts": [
+    "is $10$",
+    "does not exist",
+    "is $8$",
+    "is $5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which point is not a corner point of $x+2y\\le4$, $x\\ge0$, $y\\ge0$?",
+   "a": "(D) $(2,1)$",
+   "s": "$(2,1)$ lies on an edge. [1]",
+   "opts": [
+    "$(0,2)$",
+    "$(0,0)$",
+    "$(4,0)$",
+    "$(2,1)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: The region $2x+y\\le4$, $x\\ge0$, $y\\ge0$ is bounded. Reason: It is the triangle with corners $(0,0)$, $(2,0)$, $(0,4)$.",
+   "a": "(A)",
+   "s": "A triangle is bounded. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: On the corners $(0,0)$, $(2,0)$, $(0,3)$, the maximum of $Z=x+y$ is $3$. Reason: A linear function is greatest at the corner farthest from the origin.",
+   "a": "(C)",
+   "s": "R is false in general; compare the values at the corners. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Find the corner points of $x+y\\le8$, $x\\le5$, $y\\le6$, $x\\ge0$, $y\\ge0$.",
+   "a": "$(0,0)$, $(5,0)$, $(5,3)$, $(2,6)$, $(0,6)$",
+   "s": "$x=5$ meets $x+y=8$ at $(5,3)$; $y=6$ meets it at $(2,6)$ [1]. The other corners are $(0,0)$, $(5,0)$, $(0,6)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(5,0)$, $(5,3)$, $(2,6)$, $(0,6)$, find the maximum of $Z=2x+3y$.",
+   "a": "$22$ at $(2,6)$",
+   "s": "$Z=0,10,19,22,18$ [1]. Maximum $22$ at $(2,6)$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A person invests at most ₹$12000$ in bonds $A$ ($8\\%$) and $B$ ($10\\%$), with at least ₹$2000$ in $A$ and at least ₹$4000$ in $B$. Formulate the problem of the greatest yearly interest.",
+   "a": "Maximise $Z=0.08x+0.1y$ subject to $x+y\\le12000$, $x\\ge2000$, $y\\ge4000$",
+   "s": "Objective $Z=0.08x+0.1y$ [1]. Constraints $x+y\\le12000$, $x\\ge2000$, $y\\ge4000$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve: maximise $Z=x+y$ subject to $x-y\\le-1$, $-x+y\\le0$, $x\\ge0$, $y\\ge0$.",
+   "a": "No feasible region, so no maximum.",
+   "s": "$x-y\\le-1$ gives $y\\ge x+1$ [1]. $-x+y\\le0$ gives $y\\le x$ [1]. Both cannot hold, so there is no feasible point [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: minimise $Z=20x+10y$ subject to $x+2y\\le40$, $3x+y\\ge30$, $4x+3y\\ge60$, $x\\ge0$, $y\\ge0$.",
+   "a": "$240$ at $(6,12)$",
+   "s": "Corners $(15,0)$, $(40,0)$, $(4,18)$, $(6,12)$ [1½]. $Z=300,800,260,240$ [1]. Minimum $240$ at $(6,12)$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Solve graphically: maximise $Z=3x+5y$ subject to $x+2y\\le20$, $x+y\\le15$, $y\\le5$, $x\\ge0$, $y\\ge0$.",
+   "a": "$55$ at $(10,5)$",
+   "s": "Corners $(0,0)$, $(15,0)$, $(10,5)$, $(0,5)$ [1½]. $Z=0,45,55,25$ [1]. Maximum $55$ [½].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A merchant sells desktops at a cost of ₹$25000$ each and portables at ₹$40000$ each. He can invest at most ₹$70$ lakh, and the demand is at most $250$ units. The profit is ₹$4500$ per desktop and ₹$5000$ per portable. Find the stock for the greatest profit.",
+   "a": "$200$ desktops and $50$ portables; ₹$11{,}50{,}000$",
+   "s": "Maximise $Z=4500x+5000y$ subject to $x+y\\le250$, $25000x+40000y\\le7000000$, $x,y\\ge0$ [1]. That is $5x+8y\\le1400$ [1]. Corners $(0,0)$, $(250,0)$, $(200,50)$, $(0,175)$ [1]. $Z=0,1125000,1150000,875000$ [1]. Greatest at $(200,50)$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A society has $50$ hectares for crops $X$ and $Y$, with profits ₹$10500$ and ₹$9000$ per hectare. Herbicide needs are $20$ L and $10$ L per hectare, with at most $800$ L. Find the allocation for the greatest profit.",
+    "a": "$30$ ha of $X$, $20$ ha of $Y$; ₹$495000$",
+    "s": "Maximise $Z=10500x+9000y$ subject to $x+y\\le50$, $20x+10y\\le800$, $x,y\\ge0$ [1]. That is $2x+y\\le80$ [1]. Corners $(0,0)$, $(40,0)$, $(30,20)$, $(0,50)$ [1]. $Z=0,420000,495000,450000$ [1]. Greatest at $(30,20)$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A tailor makes $x$ shirts and $y$ trousers. Cutting: $2$ hours per shirt and $1$ hour per trouser, with $24$ hours. Stitching: $1$ hour per shirt and $2$ hours per trouser, with $18$ hours. The profit is ₹$100$ per shirt and ₹$80$ per trouser. (i) Write the constraints. [1] (ii) Find the corner points. [1] (iii) Find the greatest profit. [2] \\textbf{OR} (iii) The profit per trouser rises to ₹$200$. Find the greatest profit and where it occurs. [2]",
+   "a": "(i) $2x+y\\le24$, $x+2y\\le18$, $x,y\\ge0$; (ii) $(0,0)$, $(12,0)$, $(10,4)$, $(0,9)$; (iii) ₹$1320$; OR ₹$1800$ on the segment from $(10,4)$ to $(0,9)$.",
+   "s": "(i) Cutting and stitching constraints [1]. (ii) The lines meet at $(10,4)$ [1]. (iii) $Z=100x+80y$: $0,1200,1320,720$ [1]; greatest ₹$1320$ at $(10,4)$ [1]. OR $Z=100x+200y$: $0,1200,1800,1800$ [1]; ₹$1800$ along the segment [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch12-main-01": [
+  {
+   "q": "The area of the region $x+y\\le4$, $y\\le x$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $4$",
+   "s": "Triangle $(0,0)$, $(4,0)$, $(2,2)$.",
+   "opts": [
+    "$16$",
+    "$4$",
+    "$2$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $3x+4y$ subject to $x^2+y^2\\le25$ is",
+   "a": "(A) $25$",
+   "s": "Cauchy-Schwarz: $3x+4y\\le5\\cdot5$.",
+   "opts": [
+    "$25$",
+    "$5$",
+    "$7$",
+    "$35$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of points $(x,y)$ with integer coordinates, $x,y\\ge0$ and $x+y\\le3$, is",
+   "a": "(C) $10$",
+   "s": "$4+3+2+1$.",
+   "opts": [
+    "$6$",
+    "$9$",
+    "$10$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=2x+3y$ subject to $x+y\\le4$, $x+3y\\le6$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $9$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(3,1)$, $(0,2)$.",
+   "opts": [
+    "$8$",
+    "$9$",
+    "$6$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=x-y$ subject to $x+y\\le5$, $x\\le3$, $y\\le4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $-4$",
+   "s": "At $(0,4)$.",
+   "opts": [
+    "$-5$",
+    "$0$",
+    "$-4$",
+    "$-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The region has corners $(0,0)$, $(3,0)$, $(3,2)$, $(1,4)$, $(0,4)$. $Z=kx+y$ has its maximum only at $(3,2)$ when",
+   "a": "(D) $k>1$",
+   "s": "$3k+2>k+4$ and $3k+2>4$.",
+   "opts": [
+    "$k>0$",
+    "$k>\\frac23$",
+    "$k<1$",
+    "$k>1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The region has corners $(0,0)$, $(4,0)$, $(3,3)$, $(0,4)$. $Z=ax+by$ with $a,b>0$ has equal maxima at $(3,3)$ and $(4,0)$ when",
+   "a": "(A) $a=3b$",
+   "s": "$3a+3b=4a$.",
+   "opts": [
+    "$a=3b$",
+    "$3a=4b$",
+    "$a=b$",
+    "$b=3a$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $Z=x+2y$ subject to $|x|+|y|\\le3$ is",
+   "a": "(A) $6$",
+   "s": "The corners are $(\\pm3,0)$, $(0,\\pm3)$.",
+   "opts": [
+    "$6$",
+    "$3$",
+    "$9$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=3x+2y$ subject to $x\\ge1$, $y\\ge1$, $x+y\\le5$ is",
+   "a": "(C) $5$",
+   "s": "Corners $(1,1)$, $(4,1)$, $(1,4)$.",
+   "opts": [
+    "$14$",
+    "$6$",
+    "$5$",
+    "$11$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $|x|+|y|\\le2$ is",
+   "a": "(D) $8$",
+   "s": "A square with diagonals of length $4$.",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$16$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $x^2+y^2$ on the region $x+y\\le6$, $x\\le4$, $y\\le4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $20$",
+   "s": "At the corners $(4,2)$ and $(2,4)$.",
+   "opts": [
+    "$36$",
+    "$16$",
+    "$32$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integer points strictly inside the triangle $(0,0)$, $(4,0)$, $(0,4)$ is",
+   "a": "(C) $3$",
+   "s": "$(1,1)$, $(1,2)$, $(2,1)$.",
+   "opts": [
+    "$6$",
+    "$4$",
+    "$3$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=4x+3y$ subject to $3x+y\\le15$, $x+3y\\le15$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $\\frac{105}4$",
+   "s": "Corners $(0,0)$, $(5,0)$, $\\left(\\frac{15}4,\\frac{15}4\\right)$, $(0,5)$.",
+   "opts": [
+    "$20$",
+    "$\\frac{45}2$",
+    "$\\frac{105}4$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the triangle with corners $(0,0)$, $(6,0)$, $(0,3)$, $Z=x+ky$ has its maximum only at $(0,3)$ when",
+   "a": "(D) $k>2$",
+   "s": "$3k>6$.",
+   "opts": [
+    "$k>1$",
+    "$k>\\frac12$",
+    "$k>3$",
+    "$k>2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=x+y$ subject to $x+3y\\ge6$, $3x+y\\ge6$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $3$",
+   "s": "Corners $(6,0)$, $\\left(\\frac32,\\frac32\\right)$, $(0,6)$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$6$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The corner points of $2x+3y\\le12$, $x\\le3$, $x\\ge0$, $y\\ge0$ are",
+   "a": "(A) $(0,0)$, $(3,0)$, $(3,2)$, $(0,4)$",
+   "s": "$x=3$ meets $2x+3y=12$ at $(3,2)$.",
+   "opts": [
+    "$(0,0)$, $(3,0)$, $(3,2)$, $(0,4)$",
+    "$(0,0)$, $(3,0)$, $(0,4)$",
+    "$(0,0)$, $(6,0)$, $(0,4)$",
+    "$(3,2)$ and $(0,4)$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the corners $(0,0)$, $(3,0)$, $(3,2)$, $(0,4)$, the maximum of $Z=5x+4y$ is",
+   "a": "(C) $23$",
+   "s": "At $(3,2)$.",
+   "opts": [
+    "$20$",
+    "$15$",
+    "$23$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Subject to $x+y\\le1$, $x\\ge0$, $y\\ge0$, the greatest value of $2x+3y+1$ is",
+   "a": "(D) $4$",
+   "s": "At $(0,1)$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$6$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=3x+2y$ subject to $x+y\\le4$, $x-y\\le2$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $11$",
+   "s": "Corners $(0,0)$, $(2,0)$, $(3,1)$, $(0,4)$.",
+   "opts": [
+    "$6$",
+    "$8$",
+    "$11$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $x-y\\ge0$, $x+y\\le2$, $y\\ge0$ is",
+   "a": "(A) $1$",
+   "s": "Triangle $(0,0)$, $(2,0)$, $(1,1)$.",
+   "opts": [
+    "$1$",
+    "$\\frac12$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the maximum of $Z=x+y$ subject to $x+2y\\le10$, $2x+y\\le14$, $x\\ge0$, $y\\ge0$.",
+   "a": "$8$",
+   "s": "Corners $(0,0)$, $(7,0)$, $(6,2)$, $(0,5)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the minimum of $Z=2x+5y$ subject to $x+y\\ge4$, $x\\le3$, $x\\ge0$, $y\\ge0$.",
+   "a": "$11$",
+   "s": "The useful corners are $(3,1)$ and $(0,4)$: $11$ and $20$; $2x+5y<11$ has no point in the region.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer points $(x,y)$ with $x,y\\ge0$ and $2x+y\\le4$.",
+   "a": "$9$",
+   "s": "$5+3+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the region $x+y\\le3$, $x\\le2$, $x\\ge0$, $y\\ge0$.",
+   "a": "$4$",
+   "s": "$\\frac92-\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $2x+y$ subject to $|x|+|y|\\le1$.",
+   "a": "$2$",
+   "s": "At $(1,0)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch12-main-02": [
+  {
+   "q": "The maximum of $Z=3x+5y$ subject to $x+y\\le6$, $x\\le4$, $y\\le5$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $28$",
+   "s": "Corners include $(4,2)$ and $(1,5)$: $22$ and $28$.",
+   "opts": [
+    "$28$",
+    "$30$",
+    "$22$",
+    "$25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=4x+y$ subject to $x+y\\ge3$, $x+2y\\ge4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $3$",
+   "s": "Corners $(4,0)$, $(2,1)$, $(0,3)$; $4x+y<3$ has no point in the region.",
+   "opts": [
+    "$4$",
+    "$3$",
+    "$16$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$Z=x+y$ has the same maximum $5$ at the corners $(2,3)$ and $(4,1)$. The number of optimal solutions is",
+   "a": "(B) infinitely many",
+   "s": "Every point of the segment.",
+   "opts": [
+    "$2$",
+    "infinitely many",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $y\\ge|x|$, $y\\le2$ is",
+   "a": "(C) $4$",
+   "s": "Triangle $(0,0)$, $(2,2)$, $(-2,2)$.",
+   "opts": [
+    "$1$",
+    "$8$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=x-2y$ on the triangle $(0,0)$, $(4,0)$, $(2,3)$ is",
+   "a": "(C) $4$",
+   "s": "At $(4,0)$.",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$4$",
+    "$-4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $|x-1|+|y-1|\\le1$ is",
+   "a": "(B) $2$",
+   "s": "A square with diagonals of length $2$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$4$",
+    "$\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=2x+y$ subject to $|x-1|+|y-1|\\le1$ is",
+   "a": "(A) $5$",
+   "s": "Corners $(2,1)$, $(0,1)$, $(1,2)$, $(1,0)$.",
+   "opts": [
+    "$5$",
+    "$4$",
+    "$3$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On $x+y\\le4$, $x\\ge0$, $y\\ge0$, the maximum of $Z=ax+by$ with $a,b>0$ is",
+   "a": "(B) $4\\max(a,b)$",
+   "s": "Compare $4a$ and $4b$.",
+   "opts": [
+    "$4\\min(a,b)$",
+    "$4\\max(a,b)$",
+    "$2(a+b)$",
+    "$4(a+b)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=x+y$ subject to $x\\ge2y$, $x+y\\ge3$, $y\\ge0$ is",
+   "a": "(A) $3$",
+   "s": "Every point has $x+y\\ge3$, with equality at $(3,0)$.",
+   "opts": [
+    "$3$",
+    "$\\frac32$",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=6x+5y$ subject to $3x+2y\\le12$, $x+y\\le5$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $27$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,5)$.",
+   "opts": [
+    "$27$",
+    "$25$",
+    "$24$",
+    "$30$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $2\\le x+y\\le4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(A) $6$",
+   "s": "$8-2$.",
+   "opts": [
+    "$6$",
+    "$2$",
+    "$4$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On $2\\le x+y\\le4$, $x\\ge0$, $y\\ge0$, the maximum of $Z=x+3y$ is",
+   "a": "(D) $12$",
+   "s": "At $(0,4)$.",
+   "opts": [
+    "$6$",
+    "$4$",
+    "$10$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On $2\\le x+y\\le4$, $x\\ge0$, $y\\ge0$, the minimum of $Z=x+3y$ is",
+   "a": "(B) $2$",
+   "s": "At $(2,0)$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integer points with $x,y\\ge0$ and $x+y\\le4$ is",
+   "a": "(D) $15$",
+   "s": "$5+4+3+2+1$.",
+   "opts": [
+    "$10$",
+    "$16$",
+    "$25$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The problem \"maximise $Z=x+y$ subject to $x+y\\le1$, $x+y\\ge2$\" has",
+   "a": "(C) no feasible solution",
+   "s": "The constraints contradict each other.",
+   "opts": [
+    "infinitely many solutions",
+    "the maximum $1$",
+    "no feasible solution",
+    "the maximum $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $x-1\\le y\\le x+1$, $0\\le x\\le2$, $y\\ge0$ is",
+   "a": "(D) $\\frac72$",
+   "s": "Integrate the height: $\\int_0^1(x+1)\\,dx+\\int_1^2 2\\,dx=\\frac32+2$.",
+   "opts": [
+    "$\\frac52$",
+    "$3$",
+    "$4$",
+    "$\\frac72$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=3x+4y$ subject to $x+y\\le450$, $2x+y\\le600$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $1800$",
+   "s": "Corners $(0,0)$, $(300,0)$, $(150,300)$, $(0,450)$.",
+   "opts": [
+    "$900$",
+    "$1350$",
+    "$1650$",
+    "$1800$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=x+y$ subject to $x+4y\\ge8$, $3x+2y\\ge12$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(B) $\\frac{22}5$",
+   "s": "Corners $(8,0)$, $\\left(\\frac{16}5,\\frac65\\right)$, $(0,6)$.",
+   "opts": [
+    "$8$",
+    "$\\frac{22}5$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the triangle $(0,0)$, $(3,0)$, $(0,3)$, the number of integers $k$ in $[-5,5]$ for which $Z=kx+y$ has its maximum only at $(3,0)$ is",
+   "a": "(C) $4$",
+   "s": "$3k>3$ gives $k=2,3,4,5$.",
+   "opts": [
+    "$6$",
+    "$5$",
+    "$4$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The maximum of $Z=x+y$ subject to $3x+y\\le6$, $x+3y\\le6$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $3$",
+   "s": "At $\\left(\\frac32,\\frac32\\right)$.",
+   "opts": [
+    "$6$",
+    "$\\frac32$",
+    "$2$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the maximum of $Z=5x+3y$ subject to $x+y\\le4$, $x\\le3$, $x\\ge0$, $y\\ge0$.",
+   "a": "$18$",
+   "s": "At $(3,1)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the region $2x+y\\le6$, $x+2y\\le6$, $x\\ge0$, $y\\ge0$.",
+   "a": "$6$",
+   "s": "Corners $(0,0)$, $(3,0)$, $(2,2)$, $(0,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the minimum of $Z=2x+3y$ subject to $x+y\\ge5$, $x\\ge1$, $y\\ge1$.",
+   "a": "$11$",
+   "s": "At $(4,1)$; $2x+3y<11$ has no point in the region.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer points $(x,y)$ with $x,y\\ge0$ and $x+2y\\le6$.",
+   "a": "$16$",
+   "s": "$7+5+3+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $x+y$ subject to $|x|+|y|\\le3$.",
+   "a": "$3$",
+   "s": "Along the edge from $(3,0)$ to $(0,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch12-advanced-01": [
+  {
+   "q": "The maximum of $Z=x+y$ subject to $x+2y\\le8$, $3x+2y\\le12$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $5$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$.",
+   "opts": [
+    "$4$",
+    "$\\frac92$",
+    "$6$",
+    "$5$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$, $Z=px+qy$ with $p,q>0$ has its maximum at both $(4,0)$ and $(2,3)$ when",
+   "a": "(D) $2p=3q$",
+   "s": "$4p=2p+3q$.",
+   "opts": [
+    "$p=q$",
+    "$p=2q$",
+    "$3p=2q$",
+    "$2p=3q$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the region with corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$, $Z=x+ky$ has its maximum only at $(0,4)$ when",
+   "a": "(B) $k>2$",
+   "s": "$4k>2+3k$ and $4k>4$.",
+   "opts": [
+    "$k>\\frac43$",
+    "$k>2$",
+    "$k>1$",
+    "$k<2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region with corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$ is",
+   "a": "(B) $10$",
+   "s": "Shoelace formula.",
+   "opts": [
+    "$8$",
+    "$10$",
+    "$14$",
+    "$12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$R$ is the region $x+y\\le6$, $x-y\\le2$, $x\\ge0$, $y\\ge0$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "Corners $(0,0)$, $(2,0)$, $(4,2)$, $(0,6)$.",
+   "opts": [
+    "$(4,2)$ is a corner point of $R$",
+    "The maximum of $x+y$ on $R$ is $6$",
+    "The minimum of $x-y$ on $R$ is $-6$",
+    "$R$ is unbounded"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "On the region $x+y\\le6$, $x-y\\le2$, $x\\ge0$, $y\\ge0$, consider $Z=3x+2y$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$Z=0,6,16,12$ at $(0,0)$, $(2,0)$, $(4,2)$, $(0,6)$.",
+   "opts": [
+    "The maximum is attained at two corners",
+    "The maximum is $16$",
+    "The maximum is at $(4,2)$",
+    "The minimum is $0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "On the region $x+y\\ge2$, $x\\ge0$, $y\\ge0$, which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$Z=2x+3y$ has minimum $4$ at $(2,0)$.",
+   "opts": [
+    "$Z=2x+3y$ has minimum $6$",
+    "$Z=x+y$ has minimum $2$",
+    "$Z=x+y$ has no maximum",
+    "$Z=x-y$ has no minimum"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The region $|x|+|y|\\le2$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "The boundary has $8$ integer points: $(\\pm2,0)$, $(0,\\pm2)$, $(\\pm1,\\pm1)$.",
+   "opts": [
+    "Exactly four points with integer coordinates lie on its boundary",
+    "Its area is $8$",
+    "The maximum of $x+2y$ on it is $4$",
+    "The minimum of $x-y$ on it is $-2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the maximum of $Z=2x+3y$ subject to $x+y\\le5$, $y\\le3$, $x\\le4$, $x\\ge0$, $y\\ge0$.",
+   "a": "$13$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(4,1)$, $(2,3)$, $(0,3)$: $Z=0,8,11,13,9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integer points in the triangle $(0,0)$, $(6,0)$, $(0,6)$, including its boundary.",
+   "a": "$28$",
+   "s": "$7+6+\\cdots+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region $x+y\\le5$, $y\\le3$, $x\\le4$, $x\\ge0$, $y\\ge0$.",
+   "a": "$10$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(4,1)$, $(2,3)$, $(0,3)$; shoelace.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the minimum of $Z=5x+2y$ subject to $x+y\\ge4$, $x\\le3$, $y\\le3$, $x\\ge0$, $y\\ge0$.",
+   "a": "$11$",
+   "s": "Corners $(1,3)$, $(3,1)$, $(3,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "With $x,y\\ge0$ in each case, match each problem with its maximum.\nList-I: (P) $x+y$ on $x+y\\le3$; (Q) $2x+y$ on $x\\le1$, $y\\le2$; (R) $x+3y$ on $x+y\\le2$; (S) $3x+y$ on $x+2y\\le4$\nList-II: (1) $6$; (2) $3$; (3) $12$; (4) $4$; (5) $8$",
+   "a": "(D) $P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+   "s": "$3$; $4$ at $(1,2)$; $6$ at $(0,2)$; $12$ at $(4,0)$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "With $x,y\\ge0$ where needed, match each region with its area.\nList-I: (P) $x+y\\le2$ in the first quadrant; (Q) $|x|+|y|\\le2$; (R) $0\\le x\\le3$, $0\\le y\\le2$; (S) $x+2y\\le6$ in the first quadrant\nList-II: (1) $6$; (2) $9$; (3) $2$; (4) $8$; (5) $4$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$2$; $8$; $6$; $\\frac12\\cdot6\\cdot3$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "With $x,y\\ge0$, match each set of constraints with its feasible region.\nList-I: (P) $x+y\\le1$ and $x+y\\ge2$; (Q) $x+y\\ge1$; (R) $x+y\\le1$; (S) $x+y\\le0$\nList-II: (1) a bounded triangle; (2) the single point $(0,0)$; (3) empty; (4) unbounded; (5) a segment",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Draw each region.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On the triangle $(0,0)$, $(4,0)$, $(0,4)$, match each problem with where its optimum occurs.\nList-I: (P) maximise $2x+y$; (Q) maximise $x+2y$; (R) minimise $x+y$; (S) maximise $x+y$\nList-II: (1) $(0,0)$; (2) $(4,0)$; (3) $(0,4)$; (4) every point of the segment joining $(4,0)$ and $(0,4)$; (5) $(2,2)$ only",
+   "a": "(D) $P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+   "s": "Compare the corner values.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 5$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch12-advanced-02": [
+  {
+   "q": "The maximum of $Z=2x+3y$ subject to $x+2y\\le10$, $x+y\\le6$, $x\\le4$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(C) $16$",
+   "s": "Corners $(0,0)$, $(4,0)$, $(4,2)$, $(2,4)$, $(0,5)$.",
+   "opts": [
+    "$14$",
+    "$18$",
+    "$16$",
+    "$15$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $Z=2x+3y$ subject to $x+y\\ge6$, $2x+y\\ge8$, $x\\ge0$, $y\\ge0$ is",
+   "a": "(D) $12$",
+   "s": "Corners $(6,0)$, $(2,4)$, $(0,8)$; $2x+3y<12$ has no point in the region.",
+   "opts": [
+    "$24$",
+    "$14$",
+    "$16$",
+    "$12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of corner points of $1\\le x\\le3$, $1\\le y\\le3$, $x+y\\le5$ is",
+   "a": "(C) $5$",
+   "s": "$(1,1)$, $(3,1)$, $(3,2)$, $(2,3)$, $(1,3)$.",
+   "opts": [
+    "$3$",
+    "$6$",
+    "$5$",
+    "$4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "On $1\\le x\\le3$, $1\\le y\\le3$, $x+y\\le5$, the maximum of $Z=x+y$ is",
+   "a": "(D) $5$, at every point of the segment joining $(3,2)$ and $(2,3)$",
+   "s": "$(3,3)$ is not feasible.",
+   "opts": [
+    "$6$, at $(3,3)$",
+    "$4$",
+    "$5$, at $(3,2)$ only",
+    "$5$, at every point of the segment joining $(3,2)$ and $(2,3)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The region $x+2y\\le10$, $x+y\\le6$, $x\\le4$, $x\\ge0$, $y\\ge0$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "The maximum of $2x+3y$ is $16$ at $(2,4)$.",
+   "opts": [
+    "$(2,4)$ is a corner point",
+    "The maximum of $2x+3y$ is $15$",
+    "$(4,2)$ is a corner point",
+    "The maximum of $x+y$ is $6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The region $y\\ge x$, $y\\le2x$, $x+y\\le6$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "Corners $(0,0)$, $(3,3)$, $(2,4)$; $(1,3)$ fails $y\\le2x$.",
+   "opts": [
+    "The point $(1,3)$ is in the region",
+    "Its area is $3$",
+    "The maximum of $x+2y$ on it is $10$",
+    "It is bounded"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Maximise $Z=x+y$ subject to $x-y\\le1$, $y-x\\le1$, $x\\ge0$, $y\\ge0$. Which statements are true?",
+   "a": "(A), (B), (D)",
+   "s": "$(5,7)$ has $y-x=2>1$.",
+   "opts": [
+    "The region is unbounded",
+    "$Z$ has no maximum",
+    "The point $(5,7)$ is feasible",
+    "The minimum of $Z$ is $0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the integer points with $x,y\\ge0$ and $x+y\\le2$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$(0,0)$, $(1,0)$, $(2,0)$, $(0,1)$, $(1,1)$, $(0,2)$.",
+   "opts": [
+    "$(2,1)$ is one of them",
+    "There are $6$ of them",
+    "The greatest value of $2x+y$ over them is $4$",
+    "$(1,1)$ is one of them"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the maximum of $Z=5x+4y$ subject to $x+y\\le8$, $x+2y\\le12$, $x\\le6$, $x\\ge0$, $y\\ge0$.",
+   "a": "$38$",
+   "s": "Corners $(0,0)$, $(6,0)$, $(6,2)$, $(4,4)$, $(0,6)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region $1\\le x\\le3$, $1\\le y\\le3$, $x+y\\le5$.",
+   "a": "$3.5$",
+   "s": "$4-\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the minimum of $Z=3x+2y$ subject to $x+y\\ge3$, $x\\le2$, $y\\le2$, $x\\ge0$, $y\\ge0$.",
+   "a": "$7$",
+   "s": "Corners $(1,2)$, $(2,1)$, $(2,2)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integer points with $x\\ge1$, $y\\ge1$ and $x+y\\le6$.",
+   "a": "$15$",
+   "s": "$5+4+3+2+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "With $x,y\\ge0$, match each region with its number of corner points.\nList-I: (P) $x+y\\le4$, $x\\le3$; (Q) $x+y\\le4$; (R) $x+y\\le6$, $x\\le4$, $y\\le4$; (S) $x+y\\ge4$ and $x+y\\le4$\nList-II: (1) $2$; (2) $3$; (3) $4$; (4) $5$; (5) $6$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+   "s": "Count the vertices; the last region is a segment.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "With $x,y\\ge0$, match each region with the maximum of $Z=2x+3y$ on it.\nList-I: (P) $x+y\\le4$; (Q) $x+y\\le4$, $y\\le2$; (R) $x\\le3$, $y\\le1$; (S) $x+2y\\le8$, $x\\le4$\nList-II: (1) $9$; (2) $14$; (3) $12$; (4) $10$; (5) $8$",
+   "a": "(D) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$(0,4)$; $(2,2)$; $(3,1)$; $(4,2)$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each situation with its conclusion.\nList-I: (P) the feasible region is bounded; (Q) the feasible region is unbounded; (R) the feasible region is empty; (S) the optimum occurs at two corners\nList-II: (1) no feasible solution; (2) infinitely many optimal solutions; (3) both the maximum and the minimum exist; (4) the maximum may not exist; (5) exactly two optimal solutions",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "Basic results.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each statement with its constraint.\nList-I: (P) at least $10$ units in all; (Q) at most $10$ units in all; (R) $x$ is at least twice $y$; (S) $y$ is at most twice $x$\nList-II: (1) $x\\ge2y$; (2) $x+y\\le10$; (3) $x+y\\ge10$; (4) $y\\le2x$; (5) $2x\\le y$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "Translate each phrase.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

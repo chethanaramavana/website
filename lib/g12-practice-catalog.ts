@@ -15,7 +15,7 @@ export const g12PracticeChapters = [
 ] as const;
 
 /** Chapters whose practice set is published. Add a chapter number here when its bank is added to g12-practice-banks.ts. */
-export const g12PracticeReady: ReadonlySet<number> = new Set([1, 2, 3, 4, 5, 6, 8, 9, 10, 11]);
+export const g12PracticeReady: ReadonlySet<number> = new Set([1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]);
 
 export type G12PracticeProduct = { id: string; chapter: number; chapterTitle: string; title: string; standard: string; detail: string; total: number };
 

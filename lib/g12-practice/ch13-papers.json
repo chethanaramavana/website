@@ -1,0 +1,2446 @@
+{
+ "g12-ch13-mcq-20-01": [
+  {
+   "q": "$P(A\\cap B)=0.2$ and $P(B)=0.5$. Then $P(A|B)$ equals",
+   "a": "(A) $0.4$",
+   "s": "$\\frac{0.2}{0.5}$.",
+   "opts": [
+    "$0.4$",
+    "$0.1$",
+    "$0.7$",
+    "$0.25$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(A)=0.4$ and $P(A\\cap B)=0.1$. Then $P(B|A)$ equals",
+   "a": "(C) $0.25$",
+   "s": "$\\frac{0.1}{0.4}$.",
+   "opts": [
+    "$0.5$",
+    "$0.4$",
+    "$0.25$",
+    "$0.04$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A die is thrown. The probability of an odd number, given that the number is greater than $3$, is",
+   "a": "(C) $\\frac13$",
+   "s": "Only $5$ among $4,5,6$.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. The probability of a double, given that the sum is $6$, is",
+   "a": "(A) $\\frac15$",
+   "s": "$(3,3)$ among $5$ outcomes.",
+   "opts": [
+    "$\\frac15$",
+    "$\\frac5{36}$",
+    "$\\frac1{36}$",
+    "$\\frac16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.3$ and $P(B)=0.6$. Then $P(A\\cap B)$ equals",
+   "a": "(A) $0.18$",
+   "s": "Multiply.",
+   "opts": [
+    "$0.18$",
+    "$0.5$",
+    "$0.3$",
+    "$0.9$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.3$ and $P(B)=0.6$. Then $P(A\\cup B)$ equals",
+   "a": "(B) $0.72$",
+   "s": "$0.3+0.6-0.18$.",
+   "opts": [
+    "$0.82$",
+    "$0.72$",
+    "$0.9$",
+    "$0.18$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.3$ and $P(B)=0.6$. The probability that neither occurs is",
+   "a": "(C) $0.28$",
+   "s": "$0.7\\cdot0.4$.",
+   "opts": [
+    "$0.72$",
+    "$0.42$",
+    "$0.28$",
+    "$0.1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A card is drawn from a pack of $52$. The probability that it is an ace, given that it is red, is",
+   "a": "(C) $\\frac1{13}$",
+   "s": "$2$ red aces among $26$ red cards.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac1{26}$",
+    "$\\frac1{13}$",
+    "$\\frac2{13}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "An urn has $3$ red and $2$ blue balls. Two are drawn without replacement. The probability that both are blue is",
+   "a": "(C) $\\frac1{10}$",
+   "s": "$\\frac25\\cdot\\frac14$.",
+   "opts": [
+    "$\\frac15$",
+    "$\\frac4{25}$",
+    "$\\frac1{10}$",
+    "$\\frac3{10}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ hits a target with probability $0.6$ and $B$ with probability $0.5$, independently. The probability that the target is hit is",
+   "a": "(D) $0.8$",
+   "s": "$1-0.4\\cdot0.5$.",
+   "opts": [
+    "$1.1$",
+    "$0.3$",
+    "$0.5$",
+    "$0.8$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Bag $A$ has $2$ white and $3$ black balls; bag $B$ has $4$ white and $1$ black. A bag is chosen by tossing a coin, and a ball is drawn. The probability that it is white is",
+   "a": "(C) $\\frac35$",
+   "s": "$\\frac12\\cdot\\frac25+\\frac12\\cdot\\frac45$.",
+   "opts": [
+    "$\\frac45$",
+    "$\\frac23$",
+    "$\\frac35$",
+    "$\\frac25$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "In the same setting, a white ball is drawn. The probability that it came from bag $B$ is",
+   "a": "(A) $\\frac23$",
+   "s": "$\\frac{\\frac25}{\\frac35}$.",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac35$",
+    "$\\frac13$",
+    "$\\frac45$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $1,2,3$ with probabilities $0.2$, $k$, $0.5$. Then $k$ equals",
+   "a": "(A) $0.3$",
+   "s": "$0.2+k+0.5=1$.",
+   "opts": [
+    "$0.3$",
+    "$0.7$",
+    "$0.5$",
+    "$0.2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $1,2,3$ with probabilities $0.2$, $0.3$, $0.5$. The mean of $X$ is",
+   "a": "(B) $2.3$",
+   "s": "$0.2+0.6+1.5$.",
+   "opts": [
+    "$3$",
+    "$2.3$",
+    "$1.5$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "The mean of the number of heads in three tosses of a coin is",
+   "a": "(B) $\\frac32$",
+   "s": "$\\frac38+2\\cdot\\frac38+3\\cdot\\frac18$.",
+   "opts": [
+    "$3$",
+    "$\\frac32$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent and $P(A)=0.7$. Then $P(A|B)$ equals",
+   "a": "(D) $0.7$",
+   "s": "Independence.",
+   "opts": [
+    "$0.49$",
+    "$0.3$",
+    "$1$",
+    "$0.7$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(A|B)=P(A)$ with $P(B)>0$. Then $A$ and $B$ are",
+   "a": "(C) independent",
+   "s": "$P(A\\cap B)=P(A)P(B)$.",
+   "opts": [
+    "complementary",
+    "impossible",
+    "independent",
+    "mutually exclusive"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Three coins are tossed. The probability of at least two heads is",
+   "a": "(D) $\\frac12$",
+   "s": "$\\frac{3+1}8$.",
+   "opts": [
+    "$\\frac34$",
+    "$\\frac18$",
+    "$\\frac38$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $P(A|B)\\le1$. Reason: $P(A\\cap B)\\le P(B)$.",
+   "a": "(A)",
+   "s": "Divide by $P(B)$.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: For independent $A$ and $B$, $P(A\\cap B)=P(A)+P(B)$. Reason: For independent $A$ and $B$, $P(A\\cap B)=P(A)P(B)$.",
+   "a": "(D)",
+   "s": "The product, not the sum.",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  }
+ ],
+ "g12-ch13-board-01": [
+  {
+   "q": "$P(E)=0.5$, $P(F)=0.4$ and $P(E\\cap F)=0.2$. Then $P(E|F)$ equals",
+   "a": "(C) $0.5$",
+   "s": "$\\frac{0.2}{0.4}$. [1]",
+   "opts": [
+    "$0.2$",
+    "$0.8$",
+    "$0.5$",
+    "$0.4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(E)=0.5$, $P(F)=0.4$ and $P(E\\cap F)=0.2$. Then $P(F|E)$ equals",
+   "a": "(D) $0.4$",
+   "s": "$\\frac{0.2}{0.5}$. [1]",
+   "opts": [
+    "$0.2$",
+    "$0.5$",
+    "$0.1$",
+    "$0.4$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A die is thrown. The probability of a prime number, given that the number is odd, is",
+   "a": "(A) $\\frac23$",
+   "s": "$3$ and $5$ among $1,3,5$. [1]",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac13$",
+    "$\\frac56$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two coins are tossed. The probability of two heads, given that the first is a head, is",
+   "a": "(D) $\\frac12$",
+   "s": "Only the second coin matters. [1]",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac34$",
+    "$\\frac13$",
+    "$\\frac12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.5$ and $P(B)=0.2$. Then $P(A\\cup B)$ equals",
+   "a": "(A) $0.6$",
+   "s": "$0.5+0.2-0.1$. [1]",
+   "opts": [
+    "$0.6$",
+    "$0.7$",
+    "$0.1$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.5$ and $P(B)=0.2$. Then $P(A'\\cap B')$ equals",
+   "a": "(C) $0.4$",
+   "s": "$0.5\\cdot0.8$. [1]",
+   "opts": [
+    "$0.6$",
+    "$0.1$",
+    "$0.4$",
+    "$0.3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A bag has $4$ red and $6$ white balls. Two are drawn with replacement. The probability that both are red is",
+   "a": "(D) $\\frac4{25}$",
+   "s": "$\\left(\\frac25\\right)^2$. [1]",
+   "opts": [
+    "$\\frac25$",
+    "$\\frac9{25}$",
+    "$\\frac2{15}$",
+    "$\\frac4{25}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ speaks the truth in $60\\%$ of cases and $B$ in $70\\%$, independently. The probability that they contradict each other on a fact is",
+   "a": "(C) $0.46$",
+   "s": "$0.6\\cdot0.3+0.4\\cdot0.7$. [1]",
+   "opts": [
+    "$0.12$",
+    "$0.42$",
+    "$0.46$",
+    "$0.54$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(E_1)=P(E_2)=\\frac12$, $P(A|E_1)=0.2$ and $P(A|E_2)=0.6$. Then $P(A)$ equals",
+   "a": "(A) $0.4$",
+   "s": "$0.1+0.3$. [1]",
+   "opts": [
+    "$0.4$",
+    "$0.3$",
+    "$0.8$",
+    "$0.12$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "In the same setting, $P(E_2|A)$ equals",
+   "a": "(B) $\\frac34$",
+   "s": "$\\frac{0.3}{0.4}$. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac34$",
+    "$\\frac35$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $0,1,2$ with probabilities $0.25$, $0.5$, $0.25$. Then $E(X)$ equals",
+   "a": "(C) $1$",
+   "s": "$0.5+0.5$. [1]",
+   "opts": [
+    "$2$",
+    "$0.75$",
+    "$1$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $-1,0,1$ with probabilities $\\frac14,\\frac12,\\frac14$. The mean of $X$ is",
+   "a": "(C) $0$",
+   "s": "Symmetric values. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$1$",
+    "$0$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(X=x)=kx$ for $x=1,2,3,4$. Then $k$ equals",
+   "a": "(A) $\\frac1{10}$",
+   "s": "$10k=1$. [1]",
+   "opts": [
+    "$\\frac1{10}$",
+    "$\\frac14$",
+    "$\\frac15$",
+    "$\\frac1{24}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$, $B$, $C$ are mutually independent. Then $P(A\\cap B\\cap C)$ equals",
+   "a": "(C) $P(A)P(B)P(C)$",
+   "s": "Definition. [1]",
+   "opts": [
+    "$P(A)P(B)$",
+    "$0$",
+    "$P(A)P(B)P(C)$",
+    "$P(A)+P(B)+P(C)$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $P(A|B)=1$ when $B\\subset A$ and $P(B)>0$. Reason: If $B\\subset A$, then $A\\cap B=B$.",
+   "a": "(A)",
+   "s": "R gives the reason. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: Getting a head on a coin and a six on a die are independent. Reason: $P(\\text{head})=\\frac12$.",
+   "a": "(B)",
+   "s": "Both are true; independence comes from the separate experiments. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(A)=\\frac7{13}$, $P(B)=\\frac9{13}$ and $P(A\\cap B)=\\frac4{13}$. Find $P(A'|B)$.",
+   "a": "$\\frac59$",
+   "s": "$P(A|B)=\\frac{\\frac4{13}}{\\frac9{13}}=\\frac49$ [1]. $P(A'|B)=1-\\frac49=\\frac59$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": {
+    "q": "Two dice are thrown. Find the probability that the sum is $9$, given that the first die shows an even number.",
+    "a": "$\\frac19$",
+    "s": "The condition has $18$ outcomes [1]. The favourable ones are $(4,5)$ and $(6,3)$: $\\frac2{18}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.3$ and $P(B)=0.4$. Find $P(A\\cap B)$, $P(A\\cup B)$ and $P(A|B)$.",
+   "a": "$0.12$, $0.58$, $0.3$",
+   "s": "$P(A\\cap B)=0.12$ and $P(A\\cup B)=0.3+0.4-0.12=0.58$ [1]. $P(A|B)=P(A)=0.3$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A die is thrown twice. Find the probability that the sum is $8$, given that both numbers are even.",
+   "a": "$\\frac13$",
+   "s": "Both even: $9$ outcomes [1]. Sum $8$: $(2,6)$, $(4,4)$, $(6,2)$; probability $\\frac39$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A bag has $5$ white, $7$ red and $8$ black balls. Four balls are drawn one at a time with replacement. Find the probability that none is white.",
+   "a": "$\\frac{81}{256}$",
+   "s": "$P(\\text{not white})=\\frac{15}{20}=\\frac34$ [1]. The draws are independent [1]. $\\left(\\frac34\\right)^4=\\frac{81}{256}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$, $B$, $C$ hit a target with probabilities $\\frac12$, $\\frac13$, $\\frac14$, independently. Find the probability that exactly one of them hits it.",
+   "a": "$\\frac{11}{24}$",
+   "s": "Only $A$: $\\frac12\\cdot\\frac23\\cdot\\frac34=\\frac6{24}$ [1]. Only $B$: $\\frac3{24}$; only $C$: $\\frac2{24}$ [1]. Sum $\\frac{11}{24}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Find the probability distribution and the mean of the number of heads in three tosses of a coin.",
+   "a": "$P(0)=\\frac18$, $P(1)=\\frac38$, $P(2)=\\frac38$, $P(3)=\\frac18$; mean $\\frac32$",
+   "s": "Count the outcomes: $1,3,3,1$ out of $8$ [2]. Mean $\\frac{0+3+6+3}8=\\frac32$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "A man speaks the truth in $3$ out of $4$ cases. He throws a die and reports that it shows a six. Find the probability that it is actually a six.",
+   "a": "$\\frac38$",
+   "s": "$E_1$: six, $E_2$: not six; $A$: he reports a six [1]. $P(E_1)=\\frac16$, $P(E_2)=\\frac56$, $P(A|E_1)=\\frac34$, $P(A|E_2)=\\frac14$ [2]. $P(E_1|A)=\\frac{\\frac16\\cdot\\frac34}{\\frac16\\cdot\\frac34+\\frac56\\cdot\\frac14}$ [1] $=\\frac38$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "Machines $A$, $B$, $C$ make $50\\%$, $30\\%$ and $20\\%$ of the bolts in a factory, and $4\\%$, $5\\%$, $3\\%$ of their bolts are defective. A bolt is defective. Find the probability that machine $B$ made it.",
+    "a": "$\\frac{15}{41}$",
+    "s": "$P(D)=0.5\\cdot0.04+0.3\\cdot0.05+0.2\\cdot0.03$ [2] $=0.041$ [1]. $P(B|D)=\\frac{0.015}{0.041}$ [1] $=\\frac{15}{41}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. In an office, Vinay, Sonia and Iqbal process $50\\%$, $20\\%$ and $30\\%$ of the forms. Their error rates are $0.06$, $0.04$ and $0.03$. (i) Find the probability that a form is processed by Vinay and has an error. [1] (ii) Find the probability that a form has an error. [1] (iii) A form has an error. Find the probability that Vinay processed it. [2] \\textbf{OR} (iii) A form has an error. Find the probability that Sonia processed it. [2]",
+   "a": "(i) $0.03$; (ii) $0.047$; (iii) $\\frac{30}{47}$; OR $\\frac8{47}$.",
+   "s": "(i) $0.5\\cdot0.06=0.03$ [1]. (ii) $0.03+0.008+0.009=0.047$ [1]. (iii) $\\frac{0.03}{0.047}$ [1] $=\\frac{30}{47}$ [1]. OR $\\frac{0.2\\cdot0.04}{0.047}$ [1] $=\\frac8{47}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch13-board-02": [
+  {
+   "q": "$P(A)=0.5$, $P(B)=0.6$ and $P(A\\cup B)=0.8$. Then $P(A|B)$ equals",
+   "a": "(D) $0.5$",
+   "s": "$P(A\\cap B)=0.3$, and $\\frac{0.3}{0.6}$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$0.3$",
+    "$0.6$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(A)=0.5$, $P(B)=0.6$ and $P(A\\cup B)=0.8$. Then $P(B|A)$ equals",
+   "a": "(B) $0.6$",
+   "s": "$\\frac{0.3}{0.5}$. [1]",
+   "opts": [
+    "$0.5$",
+    "$0.6$",
+    "$0.8$",
+    "$0.3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A card is drawn from a pack of $52$. The probability that it is a heart, given that it is red, is",
+   "a": "(A) $\\frac12$",
+   "s": "$13$ hearts among $26$ red cards. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac1{13}$",
+    "$\\frac14$",
+    "$\\frac13$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. The probability of a double, given that the sum is at least $10$, is",
+   "a": "(C) $\\frac13$",
+   "s": "$(5,5)$ and $(6,6)$ among $6$ outcomes. [1]",
+   "opts": [
+    "$\\frac1{36}$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac16$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent, $P(A)=0.4$, $P(B)=p$ and $P(A\\cup B)=0.7$. Then $p$ equals",
+   "a": "(B) $0.5$",
+   "s": "$0.4+p-0.4p=0.7$. [1]",
+   "opts": [
+    "$0.3$",
+    "$0.5$",
+    "$0.6$",
+    "$0.75$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are mutually exclusive with $P(A)=0.3$ and $P(B)=0.4$. Then $P(A|B)$ equals",
+   "a": "(D) $0$",
+   "s": "$P(A\\cap B)=0$. [1]",
+   "opts": [
+    "$0.12$",
+    "$0.75$",
+    "$0.3$",
+    "$0$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "An urn has $6$ red and $4$ black balls. Two are drawn without replacement. The probability that the second is red, given that the first is red, is",
+   "a": "(D) $\\frac59$",
+   "s": "$5$ red among $9$ balls left. [1]",
+   "opts": [
+    "$\\frac35$",
+    "$\\frac13$",
+    "$\\frac23$",
+    "$\\frac59$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Bag I has $1$ red and $1$ white ball; bag II has $1$ red and $2$ white. A bag is chosen at random and a ball is drawn. The probability that it is red is",
+   "a": "(A) $\\frac5{12}$",
+   "s": "$\\frac12\\cdot\\frac12+\\frac12\\cdot\\frac13$. [1]",
+   "opts": [
+    "$\\frac5{12}$",
+    "$\\frac12$",
+    "$\\frac7{12}$",
+    "$\\frac25$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "In the same setting, a red ball is drawn. The probability that it came from bag I is",
+   "a": "(B) $\\frac35$",
+   "s": "$\\frac{\\frac14}{\\frac5{12}}$. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac35$",
+    "$\\frac25$",
+    "$\\frac5{12}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $1,2,3$ with probabilities $\\frac16,\\frac13,\\frac12$. Then $E(X)$ equals",
+   "a": "(A) $\\frac73$",
+   "s": "$\\frac{1+4+9}6$. [1]",
+   "opts": [
+    "$\\frac73$",
+    "$\\frac53$",
+    "$\\frac83$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Which list cannot be the probabilities of $X=0,1,2$?",
+   "a": "(A) $0.3, 0.4, 0.4$",
+   "s": "The first adds to $1.1$. [1]",
+   "opts": [
+    "$0.3, 0.4, 0.4$",
+    "$0.2, 0.2, 0.6$",
+    "$0, 0.5, 0.5$",
+    "$0.3, 0.4, 0.3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(X=0)=0.2$, $P(X=1)=0.5$ and $P(X=2)=0.3$. Then $P(X\\ge1)$ equals",
+   "a": "(C) $0.8$",
+   "s": "$1-0.2$. [1]",
+   "opts": [
+    "$0.3$",
+    "$0.7$",
+    "$0.8$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent. Then $P(A\\cap B')$ equals",
+   "a": "(D) $P(A)P(B')$",
+   "s": "$A$ and $B'$ are independent. [1]",
+   "opts": [
+    "$P(A')P(B)$",
+    "$1-P(A)P(B)$",
+    "$P(A)-P(B)$",
+    "$P(A)P(B')$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. The probability that the sum is $7$, given that at least one die shows $3$, is",
+   "a": "(D) $\\frac2{11}$",
+   "s": "$11$ outcomes contain a $3$; $(3,4)$ and $(4,3)$ give $7$. [1]",
+   "opts": [
+    "$\\frac1{11}$",
+    "$\\frac1{6}+\\frac1{36}$",
+    "$\\frac16$",
+    "$\\frac2{11}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: If $A$ and $B$ are independent, then $A$ and $B'$ are independent. Reason: $P(A\\cap B')=P(A)-P(A)P(B)=P(A)P(B')$.",
+   "a": "(A)",
+   "s": "R is the proof. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $P(A\\cap B)=P(A|B)P(B)$. Reason: $P(A|B)=\\frac{P(A\\cap B)}{P(B)}$.",
+   "a": "(A)",
+   "s": "Multiply by $P(B)$. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A coin is tossed three times. $E$: at least two heads; $F$: the first toss is a head. Find $P(E|F)$.",
+   "a": "$\\frac34$",
+   "s": "$F$ has $4$ outcomes [1]. $E\\cap F$: $HHH$, $HHT$, $HTH$, so $\\frac34$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$2P(A)=P(B)=\\frac5{13}$ and $P(A|B)=\\frac25$. Find $P(A\\cup B)$.",
+   "a": "$\\frac{11}{26}$",
+   "s": "$P(A\\cap B)=\\frac25\\cdot\\frac5{13}=\\frac2{13}$ [1]. $P(A\\cup B)=\\frac5{26}+\\frac{10}{26}-\\frac4{26}=\\frac{11}{26}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Two cards are drawn without replacement from a pack of $52$. Find the probability that both are kings.",
+   "a": "$\\frac1{221}$",
+   "s": "$\\frac4{52}\\cdot\\frac3{51}$ [1] $=\\frac1{221}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Three students solve a problem with probabilities $\\frac13$, $\\frac14$, $\\frac15$, independently. Find the probability that the problem is solved.",
+   "a": "$\\frac35$",
+   "s": "No one solves it: $\\frac23\\cdot\\frac34\\cdot\\frac45=\\frac25$ [2]. Solved: $1-\\frac25$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Two cards are drawn one at a time with replacement from a pack of $52$. $X$ is the number of aces. Find the distribution and the mean of $X$.",
+   "a": "$P(0)=\\frac{144}{169}$, $P(1)=\\frac{24}{169}$, $P(2)=\\frac1{169}$; mean $\\frac2{13}$",
+   "s": "$P(\\text{ace})=\\frac1{13}$ for each draw [1]. $P(0)=\\left(\\frac{12}{13}\\right)^2$, $P(1)=2\\cdot\\frac1{13}\\cdot\\frac{12}{13}$, $P(2)=\\frac1{169}$ [1]. Mean $\\frac{24+2}{169}=\\frac2{13}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$P(X=0)=k$, $P(X=1)=2k$, $P(X=2)=3k$, $P(X=3)=4k$. Find $k$ and the mean of $X$.",
+   "a": "$k=0.1$; mean $2$",
+   "s": "$10k=1$ [1]. Mean $=0+2k+6k+12k=20k$ [1] $=2$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Bag I has $3$ red and $4$ black balls; bag II has $4$ red and $5$ black. One ball is moved from bag I to bag II, and then a ball drawn from bag II is red. Find the probability that the ball moved was black.",
+   "a": "$\\frac{16}{31}$",
+   "s": "$E_1$: red moved, $P=\\frac37$; $E_2$: black moved, $P=\\frac47$ [1]. $P(R|E_1)=\\frac5{10}$, $P(R|E_2)=\\frac4{10}$ [1]. $P(R)=\\frac3{14}+\\frac8{35}=\\frac{31}{70}$ [1]. $P(E_2|R)=\\frac{\\frac{16}{70}}{\\frac{31}{70}}$ [1] $=\\frac{16}{31}$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "$60\\%$ of the students of a college live in the hostel. $30\\%$ of the hostellers and $20\\%$ of the day scholars get an A grade. A student with an A grade is chosen. Find the probability that the student is a hosteller.",
+    "a": "$\\frac9{13}$",
+    "s": "$P(H)=0.6$, $P(D)=0.4$ [1]. $P(A|H)=0.3$, $P(A|D)=0.2$ [1]. $P(A)=0.18+0.08=0.26$ [1]. $P(H|A)=\\frac{0.18}{0.26}$ [1] $=\\frac9{13}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. An insurance company insured $2000$ scooter drivers, $4000$ car drivers and $6000$ truck drivers. The probabilities of an accident are $0.01$, $0.03$ and $0.15$. (i) Find the probability that an insured person is a scooter driver. [1] (ii) Find the probability that an insured person has an accident. [1] (iii) An insured person has an accident. Find the probability that the person is a scooter driver. [2] \\textbf{OR} (iii) Find the probability that the person is a truck driver. [2]",
+   "a": "(i) $\\frac16$; (ii) $\\frac{13}{150}$; (iii) $\\frac1{52}$; OR $\\frac{45}{52}$.",
+   "s": "(i) $\\frac{2000}{12000}$ [1]. (ii) $\\frac16(0.01)+\\frac13(0.03)+\\frac12(0.15)=\\frac{1040}{12000}$ [1]. (iii) $\\frac{20}{1040}$ [1] $=\\frac1{52}$ [1]. OR $\\frac{900}{1040}$ [1] $=\\frac{45}{52}$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch13-board-03": [
+  {
+   "q": "$P(A)=0.4$, $P(B)=0.3$ and $P(A\\cap B)=0.2$. Then $P(B|A)$ equals",
+   "a": "(D) $0.5$",
+   "s": "$\\frac{0.2}{0.4}$. [1]",
+   "opts": [
+    "$0.08$",
+    "$\\frac23$",
+    "$0.75$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$P(A)=0.4$, $P(B)=0.3$ and $P(A\\cap B)=0.2$. Then $P(A'|B)$ equals",
+   "a": "(A) $\\frac13$",
+   "s": "$1-\\frac{0.2}{0.3}$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$0.5$",
+    "$\\frac23$",
+    "$0.6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A die is thrown. The probability of a $6$, given that the number is greater than $4$, is",
+   "a": "(A) $\\frac12$",
+   "s": "One of $5,6$. [1]",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac16$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "A family has three children. The probability that all are boys, given that at least two are boys, is",
+   "a": "(D) $\\frac14$",
+   "s": "$\\frac{\\frac18}{\\frac48}$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac18$",
+    "$\\frac12$",
+    "$\\frac14$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.2$ and $P(B)=0.5$. Then $P(A'\\cap B)$ equals",
+   "a": "(A) $0.4$",
+   "s": "$0.8\\cdot0.5$. [1]",
+   "opts": [
+    "$0.4$",
+    "$0.1$",
+    "$0.3$",
+    "$0.5$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=0.5$ and $P(B)=0.4$. Then $P(A|B')$ equals",
+   "a": "(B) $0.5$",
+   "s": "$A$ and $B'$ are independent. [1]",
+   "opts": [
+    "$0.3$",
+    "$0.5$",
+    "$0.2$",
+    "$0.6$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Three cards are drawn with replacement from a pack of $52$. The probability that all are spades is",
+   "a": "(B) $\\frac1{64}$",
+   "s": "$\\left(\\frac14\\right)^3$. [1]",
+   "opts": [
+    "$\\frac34$",
+    "$\\frac1{64}$",
+    "$\\frac1{16}$",
+    "$\\frac{11}{850}$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ speak the truth with probabilities $0.8$ and $0.9$, independently. The probability that they agree about a fact is",
+   "a": "(D) $0.74$",
+   "s": "Both true $0.72$, both false $0.02$. [1]",
+   "opts": [
+    "$0.98$",
+    "$0.26$",
+    "$0.72$",
+    "$0.74$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Two machines make $60\\%$ and $40\\%$ of the items, with $2\\%$ and $3\\%$ defective. The probability that an item is defective is",
+   "a": "(A) $0.024$",
+   "s": "$0.012+0.012$. [1]",
+   "opts": [
+    "$0.024$",
+    "$0.025$",
+    "$0.012$",
+    "$0.05$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "In the same setting, an item is defective. The probability that the second machine made it is",
+   "a": "(B) $\\frac12$",
+   "s": "$\\frac{0.012}{0.024}$. [1]",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac12$",
+    "$\\frac25$",
+    "$\\frac35$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $0,1,2,3$ with probabilities $\\frac18,\\frac38,\\frac38,\\frac18$. Then $P(X\\ge2)$ equals",
+   "a": "(C) $\\frac12$",
+   "s": "$\\frac38+\\frac18$. [1]",
+   "opts": [
+    "$\\frac78$",
+    "$\\frac38$",
+    "$\\frac12$",
+    "$\\frac18$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes each of the values $1,2,3,4$ with probability $\\frac14$. Then $E(X)$ equals",
+   "a": "(A) $\\frac52$",
+   "s": "$\\frac{10}4$. [1]",
+   "opts": [
+    "$\\frac52$",
+    "$\\frac{10}{3}$",
+    "$3$",
+    "$2$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes only the values $1$ and $3$, and $E(X)=2$. Then $P(X=3)$ equals",
+   "a": "(B) $\\frac12$",
+   "s": "$3p+(1-p)=2$. [1]",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=P(B)=p$ and $P(A\\cap B)=0.09$. Then $p$ equals",
+   "a": "(D) $0.3$",
+   "s": "$p^2=0.09$. [1]",
+   "opts": [
+    "$0.09$",
+    "$0.81$",
+    "$0.03$",
+    "$0.3$"
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: $P(A\\cap B)\\le P(A)$. Reason: $A\\cap B\\subset A$.",
+   "a": "(A)",
+   "s": "A subset has smaller probability. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "Assertion: On one throw of a die, \"an even number\" and \"a number less than $3$\" are independent. Reason: The two events have the common outcome $2$.",
+   "a": "(B)",
+   "s": "$P=\\frac16=\\frac12\\cdot\\frac13$; R is true but does not prove A. [1]",
+   "opts": [
+    "Both statements are true and the reason explains the assertion.",
+    "Both statements are true but the reason does not explain the assertion.",
+    "The assertion is true and the reason is false.",
+    "The assertion is false and the reason is true."
+   ],
+   "marks": 1,
+   "alt": null,
+   "type": "single",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=\\frac35$ and $P(B)=\\frac15$. Find $P(A\\cap B)$ and $P(A\\cup B)$.",
+   "a": "$\\frac3{25}$, $\\frac{17}{25}$",
+   "s": "$P(A\\cap B)=\\frac3{25}$ [1]. $P(A\\cup B)=\\frac35+\\frac15-\\frac3{25}=\\frac{17}{25}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. $E$: the sum is $4$; $F$: the first die shows $1$. Are $E$ and $F$ independent?",
+   "a": "No.",
+   "s": "$P(E)=\\frac3{36}$, $P(F)=\\frac16$, $P(E\\cap F)=\\frac1{36}$ [1]. $\\frac1{12}\\cdot\\frac16=\\frac1{72}\\ne\\frac1{36}$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$X$ takes $-2,-1,0,1,2$ with probabilities $0.1$, $0.2$, $0.4$, $0.2$, $0.1$. Find the mean of $X$.",
+   "a": "$0$",
+   "s": "$E(X)=-0.2-0.2+0+0.2+0.2$ [1] $=0$ [1].",
+   "opts": null,
+   "marks": 2,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "An urn has $10$ black and $5$ white balls. Two are drawn without replacement. Find the probability that both are black.",
+   "a": "$\\frac37$",
+   "s": "$P(\\text{first black})=\\frac{10}{15}$ [1]. $P(\\text{second black}|\\text{first black})=\\frac9{14}$ [1]. Product $\\frac37$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "$A$ and $B$ throw a die in turn, $A$ first. The first to throw a six wins. Find the probability that $A$ wins.",
+   "a": "$\\frac6{11}$",
+   "s": "$A$ wins on throws $1,3,5,\\ldots$: $\\frac16+\\left(\\frac56\\right)^2\\frac16+\\cdots$ [1]. A geometric series with ratio $\\frac{25}{36}$ [1]. Sum $\\frac{\\frac16}{\\frac{11}{36}}=\\frac6{11}$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Two cards are drawn without replacement from a pack of $52$. $X$ is the number of red cards. Find the distribution and the mean of $X$.",
+   "a": "$P(0)=\\frac{25}{102}$, $P(1)=\\frac{26}{51}$, $P(2)=\\frac{25}{102}$; mean $1$",
+   "s": "$P(0)=\\frac{26\\cdot25}{52\\cdot51}=\\frac{25}{102}$ and $P(2)=\\frac{25}{102}$ [1]. $P(1)=1-\\frac{50}{102}=\\frac{26}{51}$ [1]. Mean $\\frac{26}{51}+\\frac{50}{102}=1$ [1].",
+   "opts": null,
+   "marks": 3,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Urn I has $2$ white and $3$ black balls, urn II has $3$ white and $2$ black, urn III has $4$ white and $1$ black. An urn is chosen at random and a white ball is drawn. Find the probability that it came from urn III.",
+   "a": "$\\frac49$",
+   "s": "Each urn has probability $\\frac13$ [1]. $P(W|E_i)=\\frac25,\\frac35,\\frac45$ [1]. $P(W)=\\frac13\\cdot\\frac95=\\frac35$ [1]. $P(E_3|W)=\\frac{\\frac13\\cdot\\frac45}{\\frac35}$ [1] $=\\frac49$ [1].",
+   "opts": null,
+   "marks": 5,
+   "alt": {
+    "q": "A card from a pack of $52$ is lost. Two cards drawn from the remaining cards are both diamonds. Find the probability that the lost card was a diamond.",
+    "a": "$\\frac{11}{50}$",
+    "s": "$P(E_1)=\\frac14$ (diamond lost), $P(E_2)=\\frac34$ [1]. $P(A|E_1)=\\frac{\\binom{12}2}{\\binom{51}2}$, $P(A|E_2)=\\frac{\\binom{13}2}{\\binom{51}2}$ [2]. $P(E_1|A)=\\frac{\\frac14\\cdot66}{\\frac14\\cdot66+\\frac34\\cdot78}$ [1] $=\\frac{11}{50}$ [1].",
+    "opts": null,
+    "marks": null,
+    "alt": null
+   },
+   "type": "written",
+   "negative": 0
+  },
+  {
+   "q": "Case study. A shop mixes three kinds of flower seed $A_1$, $A_2$, $A_3$ in the ratio $4:4:2$. Their germination rates are $45\\%$, $60\\%$ and $35\\%$. (i) Find the probability that a seed is of kind $A_2$. [1] (ii) Find the probability that a seed germinates. [1] (iii) A seed germinates. Find the probability that it is of kind $A_2$. [2] \\textbf{OR} (iii) Find the probability that it is of kind $A_3$. [2]",
+   "a": "(i) $0.4$; (ii) $0.49$; (iii) $\\frac{24}{49}$; OR $\\frac17$.",
+   "s": "(i) $\\frac4{10}$ [1]. (ii) $0.4\\cdot0.45+0.4\\cdot0.6+0.2\\cdot0.35=0.49$ [1]. (iii) $\\frac{0.24}{0.49}$ [1] $=\\frac{24}{49}$ [1]. OR $\\frac{0.07}{0.49}$ [1] $=\\frac17$ [1].",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "written",
+   "negative": 0
+  }
+ ],
+ "g12-ch13-main-01": [
+  {
+   "q": "A coin is tossed $4$ times. The probability of exactly $2$ heads is",
+   "a": "(B) $\\frac38$",
+   "s": "$\\binom42\\frac1{16}$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac38$",
+    "$\\frac14$",
+    "$\\frac5{16}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of the binomial distribution with $n=10$ and $p=\\frac12$ is",
+   "a": "(C) $\\frac52$",
+   "s": "$npq$.",
+   "opts": [
+    "$\\frac54$",
+    "$5$",
+    "$\\frac52$",
+    "$10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A binomial distribution has mean $4$ and variance $3$. Then $n$ equals",
+   "a": "(A) $16$",
+   "s": "$q=\\frac34$, $p=\\frac14$, $np=4$.",
+   "opts": [
+    "$16$",
+    "$4$",
+    "$12$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability of at least one six in $4$ throws of a die is",
+   "a": "(D) $\\frac{671}{1296}$",
+   "s": "$1-\\left(\\frac56\\right)^4$.",
+   "opts": [
+    "$\\frac{625}{1296}$",
+    "$\\frac{1}{1296}$",
+    "$\\frac23$",
+    "$\\frac{671}{1296}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ toss a coin in turn, $A$ first. The first to get a head wins. The probability that $A$ wins is",
+   "a": "(B) $\\frac23$",
+   "s": "$\\frac{\\frac12}{1-\\frac14}$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac23$",
+    "$\\frac34$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of the number shown by a fair die is",
+   "a": "(A) $\\frac{35}{12}$",
+   "s": "$\\frac{91}6-\\frac{49}4$.",
+   "opts": [
+    "$\\frac{35}{12}$",
+    "$\\frac72$",
+    "$\\frac{35}6$",
+    "$\\frac{91}6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B(6,p)$ and $P(X=2)=9P(X=4)$. Then $p$ equals",
+   "a": "(D) $\\frac14$",
+   "s": "$\\binom62p^2q^4=9\\binom64p^4q^2$ gives $q=3p$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac34$",
+    "$\\frac12$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least number of tosses of a coin for which the probability of at least one head is at least $0.99$ is",
+   "a": "(D) $7$",
+   "s": "$2^n\\ge100$.",
+   "opts": [
+    "$5$",
+    "$10$",
+    "$6$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three dice are thrown. The probability that the sum is $10$ is",
+   "a": "(C) $\\frac18$",
+   "s": "$27$ outcomes out of $216$.",
+   "opts": [
+    "$\\frac{25}{216}$",
+    "$\\frac{1}{6}$",
+    "$\\frac18$",
+    "$\\frac1{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $4$ red and $6$ black balls. Three are drawn without replacement. The probability of at least one red is",
+   "a": "(A) $\\frac56$",
+   "s": "$1-\\frac{\\binom63}{\\binom{10}3}$.",
+   "opts": [
+    "$\\frac56$",
+    "$\\frac{27}{125}$",
+    "$\\frac16$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A coin is tossed. On a head a pair of dice is thrown and the sum is noted; on a tail a card is drawn from $11$ cards numbered $2$ to $12$. The probability that the number noted is $7$ is",
+   "a": "(A) $\\frac{17}{132}$",
+   "s": "$\\frac12\\cdot\\frac16+\\frac12\\cdot\\frac1{11}$.",
+   "opts": [
+    "$\\frac{17}{132}$",
+    "$\\frac{1}{11}$",
+    "$\\frac{11}{132}$",
+    "$\\frac1{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.4$, $P(B)=0.5$ and $P(A\\cup B)=0.7$. Then $P(A|B')$ equals",
+   "a": "(D) $0.4$",
+   "s": "$P(A\\cap B)=0.2$, so $P(A\\cap B')=0.2$ and $P(B')=0.5$.",
+   "opts": [
+    "$0.2$",
+    "$0.5$",
+    "$0.6$r",
+    "$0.4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that a leap year has $53$ Sundays is",
+   "a": "(D) $\\frac27$",
+   "s": "The $2$ extra days must include a Sunday.",
+   "opts": [
+    "$\\frac17$",
+    "$\\frac37$",
+    "$\\frac{53}{366}$",
+    "$\\frac27$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(X=r)=k(r+1)$ for $r=0,1,2,3$. Then $E(X)$ equals",
+   "a": "(C) $2$",
+   "s": "$k=\\frac1{10}$; $E(X)=k(0+2+6+12)$.",
+   "opts": [
+    "$1$",
+    "$\\frac52$",
+    "$2$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B(5,p)$ and $P(X=1)=P(X=2)$. Then $p$ equals",
+   "a": "(B) $\\frac13$",
+   "s": "$5pq^4=10p^2q^3$ gives $q=2p$.",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac13$",
+    "$\\frac14$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two numbers are chosen without replacement from $1,2,\\ldots,20$. The probability that their product is even is",
+   "a": "(D) $\\frac{29}{38}$",
+   "s": "$1-\\frac{\\binom{10}2}{\\binom{20}2}$.",
+   "opts": [
+    "$\\frac34$",
+    "$\\frac9{38}$",
+    "$\\frac12$",
+    "$\\frac{29}{38}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.6$, $P(B)=0.4$ and $P(A|B)=0.5$. Then $P(B|A)$ equals",
+   "a": "(D) $\\frac13$",
+   "s": "$P(A\\cap B)=0.2$.",
+   "opts": [
+    "$0.5$",
+    "$\\frac23$",
+    "$0.2$",
+    "$\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of the binomial distribution with $n=20$ and $p=0.3$ is",
+   "a": "(D) $4.2$",
+   "s": "$20\\cdot0.3\\cdot0.7$.",
+   "opts": [
+    "$6$",
+    "$2.1$",
+    "$1.8$",
+    "$4.2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. The probability that the sum is a prime number is",
+   "a": "(D) $\\frac5{12}$",
+   "s": "Sums $2,3,5,7,11$: $1+2+4+6+2=15$.",
+   "opts": [
+    "$\\frac1{2}$",
+    "$\\frac13$",
+    "$\\frac7{18}$",
+    "$\\frac5{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Six fair dice are thrown. The probability that all show different numbers is",
+   "a": "(C) $\\frac5{324}$",
+   "s": "$\\frac{6!}{6^6}$.",
+   "opts": [
+    "$\\frac1{6^5}$",
+    "$\\frac16$",
+    "$\\frac5{324}$",
+    "$\\frac{1}{720}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(X=0)=P(X=2)=\\frac12$. Find the variance of $X$.",
+   "a": "$1$",
+   "s": "Mean $1$; $E(X^2)=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A binomial distribution has mean $6$ and variance $2$. Find $n$.",
+   "a": "$9$",
+   "s": "$q=\\frac13$, $p=\\frac23$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are independent with $P(A)=\\frac13$ and $P(B)=\\frac14$. Find $12P(A\\cup B)$.",
+   "a": "$6$",
+   "s": "$P(A\\cup B)=\\frac13+\\frac14-\\frac1{12}=\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A coin is tossed until a head appears. Find the expected number of tosses.",
+   "a": "$2$",
+   "s": "$\\sum n\\left(\\frac12\\right)^n$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the least number of throws of a die for which the probability of at least one six exceeds $\\frac12$.",
+   "a": "$4$",
+   "s": "$\\left(\\frac56\\right)^3>\\frac12>\\left(\\frac56\\right)^4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch13-main-02": [
+  {
+   "q": "The probability of exactly $3$ successes in $5$ trials with $p=\\frac13$ is",
+   "a": "(A) $\\frac{40}{243}$",
+   "s": "$\\binom53\\left(\\frac13\\right)^3\\left(\\frac23\\right)^2$.",
+   "opts": [
+    "$\\frac{40}{243}$",
+    "$\\frac{4}{27}$",
+    "$\\frac{80}{243}$",
+    "$\\frac{10}{243}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of the binomial distribution with $n=12$ and $p=\\frac14$ is",
+   "a": "(B) $3$",
+   "s": "$np$.",
+   "opts": [
+    "$4$",
+    "$3$",
+    "$12$",
+    "$\\frac94$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For fixed $n$, the variance $npq$ of a binomial distribution is greatest when $p$ equals",
+   "a": "(B) $\\frac12$",
+   "s": "$pq\\le\\frac14$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac12$",
+    "$1$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A pair of dice is thrown $4$ times. The probability of exactly two doubles is",
+   "a": "(B) $\\frac{25}{216}$",
+   "s": "$\\binom42\\left(\\frac16\\right)^2\\left(\\frac56\\right)^2$.",
+   "opts": [
+    "$\\frac{1}{36}$",
+    "$\\frac{25}{216}$",
+    "$\\frac{5}{36}$",
+    "$\\frac{125}{1296}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $2$ white and $3$ black balls. $A$, $B$, $C$ draw one ball each in turn, without replacement, $A$ first; the first to draw white wins. The probability that $A$ wins is",
+   "a": "(B) $\\frac12$",
+   "s": "$A$ draws first and fourth: $\\frac25+\\frac35\\cdot\\frac24\\cdot\\frac13$.",
+   "opts": [
+    "$\\frac15$",
+    "$\\frac12$",
+    "$\\frac3{10}$",
+    "$\\frac25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A box has two fair coins and one coin with heads on both sides. A coin is chosen at random and shows a head. The probability that it is the two-headed coin is",
+   "a": "(A) $\\frac12$",
+   "s": "$\\frac{\\frac13}{\\frac13+\\frac23\\cdot\\frac12}$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac23$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability of at least $2$ heads in $4$ tosses is",
+   "a": "(A) $\\frac{11}{16}$",
+   "s": "$1-\\frac{1+4}{16}$.",
+   "opts": [
+    "$\\frac{11}{16}$",
+    "$\\frac34$",
+    "$\\frac{5}{16}$",
+    "$\\frac38$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B\\left(6,\\frac12\\right)$. Then $P(X\\ge5)$ equals",
+   "a": "(C) $\\frac7{64}$",
+   "s": "$\\frac{6+1}{64}$.",
+   "opts": [
+    "$\\frac{11}{32}$",
+    "$\\frac{6}{64}$",
+    "$\\frac7{64}$",
+    "$\\frac1{64}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.3$, $P(B)=0.4$ and $P(A\\cup B)=0.5$. Then $P(B|A)$ equals",
+   "a": "(B) $\\frac23$",
+   "s": "$P(A\\cap B)=0.2$.",
+   "opts": [
+    "$0.5$",
+    "$\\frac23$",
+    "$0.2$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A coin with $P(H)=\\frac34$ is tossed $4$ times. The mean number of heads is",
+   "a": "(A) $3$",
+   "s": "$np$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$\\frac94$",
+    "$\\frac34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A die is thrown until a six appears. The probability that exactly two throws are needed is",
+   "a": "(A) $\\frac5{36}$",
+   "s": "$\\frac56\\cdot\\frac16$.",
+   "opts": [
+    "$\\frac5{36}$",
+    "$\\frac{25}{36}$",
+    "$\\frac1{36}$",
+    "$\\frac16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=\\frac14$, $P(B|A)=\\frac12$ and $P(A|B)=\\frac14$. Then $P(B)$ equals",
+   "a": "(D) $\\frac12$",
+   "s": "$P(A\\cap B)=\\frac18=\\frac14P(B)$.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac34$",
+    "$\\frac18$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A binomial distribution has mean $5$ and variance $2.5$. Then $n$ equals",
+   "a": "(B) $10$",
+   "s": "$q=\\frac12$.",
+   "opts": [
+    "$25$",
+    "$10$",
+    "$5$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability of at most one six in three throws of a die is",
+   "a": "(B) $\\frac{25}{27}$",
+   "s": "$\\frac{125+75}{216}$.",
+   "opts": [
+    "$\\frac{125}{216}$",
+    "$\\frac{25}{27}$",
+    "$\\frac{2}{27}$",
+    "$\\frac{75}{216}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The expected value of the sum of the numbers on two dice is",
+   "a": "(A) $7$",
+   "s": "$2\\cdot\\frac72$.",
+   "opts": [
+    "$7$",
+    "$\\frac{13}2$",
+    "$12$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$E(X)=3$ and $E(X^2)=13$. The variance of $X$ is",
+   "a": "(A) $4$",
+   "s": "$13-9$.",
+   "opts": [
+    "$4$",
+    "$16$",
+    "$10$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$, $B$, $C$ are independent, each with probability $\\frac12$. The probability that exactly two of them occur is",
+   "a": "(B) $\\frac38$",
+   "s": "$3\\cdot\\frac18$.",
+   "opts": [
+    "$\\frac18$",
+    "$\\frac38$",
+    "$\\frac34$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Urn $A$ has $1$ red and $2$ black balls; urn $B$ has $2$ red and $1$ black. A die is thrown: on $1$ or $2$ urn $A$ is used, otherwise urn $B$. A red ball is drawn. The probability that urn $A$ was used is",
+   "a": "(C) $\\frac15$",
+   "s": "$\\frac{\\frac13\\cdot\\frac13}{\\frac13\\cdot\\frac13+\\frac23\\cdot\\frac23}$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac25$",
+    "$\\frac15$",
+    "$\\frac45$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $X$ is $4$. The variance of $2X+3$ is",
+   "a": "(B) $16$",
+   "s": "$2^2\\cdot4$.",
+   "opts": [
+    "$8$",
+    "$16$",
+    "$11$",
+    "$19$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. The probability that the sum is $7$ or $11$ is",
+   "a": "(A) $\\frac29$",
+   "s": "$\\frac{6+2}{36}$.",
+   "opts": [
+    "$\\frac29$",
+    "$\\frac{7}{36}$",
+    "$\\frac1{18}$",
+    "$\\frac16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B\\left(6,\\frac12\\right)$. Find $64P(X=3)$.",
+   "a": "$20$",
+   "s": "$\\binom63$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the variance of the binomial distribution with $n=16$ and $p=\\frac14$.",
+   "a": "$3$",
+   "s": "$16\\cdot\\frac14\\cdot\\frac34$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Three dice are thrown. Find $216$ times the probability that the sum is $5$.",
+   "a": "$6$",
+   "s": "The ordered triples with sum $5$ number $\\binom42$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are independent, $P(A)=0.5$ and $P(A\\cup B)=0.8$. Find $10P(B)$.",
+   "a": "$6$",
+   "s": "$0.5+p-0.5p=0.8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the expected number of sixes in $12$ throws of a die.",
+   "a": "$2$",
+   "s": "$12\\cdot\\frac16$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g12-ch13-advanced-01": [
+  {
+   "q": "Plants $T_1$ and $T_2$ make $20\\%$ and $80\\%$ of the computers; $7\\%$ of all computers are defective, and $P(\\text{defective}|T_1)=10P(\\text{defective}|T_2)$. A computer is not defective. The probability that $T_2$ made it is",
+   "a": "(A) $\\frac{78}{93}$",
+   "s": "$0.2(10x)+0.8x=0.07$ gives $x=0.025$; $\\frac{0.8\\cdot0.975}{0.8\\cdot0.975+0.2\\cdot0.75}$.",
+   "opts": [
+    "$\\frac{78}{93}$",
+    "$\\frac{36}{73}$",
+    "$\\frac{75}{83}$",
+    "$\\frac{47}{79}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown until the sum is $5$ or $7$. The probability that $5$ comes first is",
+   "a": "(B) $\\frac25$",
+   "s": "$\\frac{\\frac4{36}}{\\frac{10}{36}}$.",
+   "opts": [
+    "$\\frac19$",
+    "$\\frac25$",
+    "$\\frac12$",
+    "$\\frac35$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A die is thrown until a six appears; $X$ is the number of throws. Then $P(X\\ge3)$ equals",
+   "a": "(C) $\\frac{25}{36}$",
+   "s": "The first two throws are not six.",
+   "opts": [
+    "$\\frac{5}{36}$",
+    "$\\frac{11}{36}$",
+    "$\\frac{25}{36}$",
+    "$\\frac{25}{216}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. The probability that the product of the numbers is a perfect square is",
+   "a": "(B) $\\frac29$",
+   "s": "Doubles and $(1,4)$, $(4,1)$: $8$ outcomes.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac29$",
+    "$\\frac14$",
+    "$\\frac7{36}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=\\frac12$, $P(B)=\\frac13$ and $P(A\\cap B)=\\frac16$. Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac16=\\frac12\\cdot\\frac13\\ne0$.",
+   "opts": [
+    "$A$ and $B$ are independent",
+    "$P(A\\cup B)=\\frac23$",
+    "$P(A|B)=\\frac12$",
+    "$A$ and $B$ are mutually exclusive"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B\\left(4,\\frac12\\right)$. Which statements are true?",
+   "a": "(B), (C), (D)",
+   "s": "$P(X=0)=\\frac1{16}$.",
+   "opts": [
+    "$P(X=0)=\\frac18$",
+    "The mean is $2$",
+    "The variance is $1$",
+    "$P(X=2)=\\frac38$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "A box has $3$ red and $2$ blue balls. Two are drawn without replacement. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$P(\\text{both blue})=\\frac25\\cdot\\frac14$.",
+   "opts": [
+    "$P(\\text{both red})=\\frac3{10}$",
+    "$P(\\text{both blue})=\\frac15$",
+    "$P(\\text{different colours})=\\frac35$",
+    "$P(\\text{second is red})=\\frac35$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$E$ and $F$ are independent with $P(E)=0.3$ and $P(F)=0.4$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$P(E|F)=0.3$; $P(E\\cap F)=0.12$.",
+   "opts": [
+    "$E'$ and $F'$ are independent",
+    "$P(E|F)=0.4$r",
+    "$P(E\\cap F')=0.18$",
+    "$P(E'\\cup F')=0.88$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "A coin is tossed $5$ times. Find $32$ times the probability of at least $3$ heads.",
+   "a": "$16$",
+   "s": "$\\binom53+\\binom54+\\binom55$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Two players throw a die in turn; the first to throw a six wins. Find $11$ times the probability that the first player wins.",
+   "a": "$6$",
+   "s": "$\\frac6{11}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $36$ times the variance of the sum of the numbers on two dice.",
+   "a": "$210$",
+   "s": "Variance $2\\cdot\\frac{35}{12}=\\frac{35}6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the least $n$ such that the probability of at least one head in $n$ tosses is at least $0.9$.",
+   "a": "$4$",
+   "s": "$2^n\\ge10$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. Match each event with its probability.\nList-I: (P) the sum is $7$; (Q) the sum is $10$; (R) the sum is $2$; (S) the product is $6$\nList-II: (1) $\\frac1{36}$; (2) $\\frac19$; (3) $\\frac16$; (4) $\\frac1{12}$; (5) $\\frac5{36}$",
+   "a": "(A) $P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+   "s": "$6$, $3$, $1$, $4$ outcomes.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B\\left(4,\\frac12\\right)$. Match each probability with its value.\nList-I: (P) $P(X=0)$; (Q) $P(X=1)$; (R) $P(X=2)$; (S) $P(X\\ge3)$\nList-II: (1) $\\frac14$; (2) $\\frac38$; (3) $\\frac5{16}$; (4) $\\frac1{16}$; (5) $\\frac12$",
+   "a": "(C) $P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+   "s": "$\\binom4k\\frac1{16}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 5$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each quantity with its value.\nList-I: (P) the mean of $B(10,0.4)$; (Q) the variance of $B(10,0.4)$; (R) the variance of the number on a die; (S) the mean of the number on a die\nList-II: (1) $3.5$; (2) $2.4$; (3) $4$; (4) $\\frac{35}{12}$; (5) $6$",
+   "a": "(C) $P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+   "s": "$np$; $npq$; standard results.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.2$ and $P(B)=0.3$. Match each case with its value.\nList-I: (P) $P(A\\cup B)$, $A$ and $B$ mutually exclusive; (Q) $P(A\\cup B)$, $A$ and $B$ independent; (R) $P(A\\cap B)$, $A$ and $B$ independent; (S) $P(A|B)$, $A$ and $B$ mutually exclusive\nList-II: (1) $0$; (2) $0.5$; (3) $0.06$; (4) $0.44$; (5) $0.56$",
+   "a": "(B) $P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+   "s": "$0.5$; $0.5-0.06$; $0.06$; $0$.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 2$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g12-ch13-advanced-02": [
+  {
+   "q": "Box I has $8$ red, $3$ blue, $5$ green balls; box II has $24$ red, $9$ blue, $15$ green; box III has $1$ blue, $12$ green, $3$ yellow; box IV has $10$ green, $16$ orange, $6$ white. A ball $b$ is drawn from box I. If $b$ is red, a ball is drawn from box II; if blue, from box III; if green, from box IV. The probability that one of the balls drawn is white, given that at least one is green, is",
+   "a": "(D) $\\frac5{52}$",
+   "s": "$P(\\text{at least one green})=\\frac5{16}+\\frac12\\cdot\\frac{15}{48}+\\frac3{16}\\cdot\\frac{12}{16}=\\frac{117}{192}$; white needs $b$ green: $\\frac5{16}\\cdot\\frac6{32}$.",
+   "opts": [
+    "$\\frac1{8}$",
+    "$\\frac{15}{256}$",
+    "$\\frac3{16}$",
+    "$\\frac5{52}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A coin with $P(H)=\\frac13$ is tossed until two consecutive tosses agree. The probability that the experiment stops with a head is",
+   "a": "(B) $\\frac5{21}$",
+   "s": "$\\frac{p^2(1+q)}{1-pq}$ with $p=\\frac13$.",
+   "opts": [
+    "$\\frac2{7}$",
+    "$\\frac5{21}$",
+    "$\\frac13$",
+    "$\\frac4{21}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A coin with $P(H)=\\frac13$ is tossed $3$ times. The variance of the number of heads is",
+   "a": "(C) $\\frac23$",
+   "s": "$3\\cdot\\frac13\\cdot\\frac23$.",
+   "opts": [
+    "$1$",
+    "$\\frac13$",
+    "$\\frac23$",
+    "$\\frac29$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$p$ and $q$ are chosen at random from $\\{1,2,3,4\\}$, with repetition. The probability that $x^2+px+q=0$ has real roots is",
+   "a": "(A) $\\frac7{16}$",
+   "s": "$p^2\\ge4q$: $0+1+2+4$ pairs.",
+   "opts": [
+    "$\\frac7{16}$",
+    "$\\frac38$",
+    "$\\frac9{16}$",
+    "$\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three fair coins are tossed. $A$: the first is a head; $B$: the second is a head; $C$: exactly one head. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$P(A\\cap C)=\\frac18\\ne\\frac12\\cdot\\frac38$.",
+   "opts": [
+    "$A$ and $B$ are independent",
+    "$A$ and $C$ are independent",
+    "$P(C)=\\frac38$",
+    "$P(A|C)=\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$X\\sim B(n,p)$ with mean $4$ and variance $2$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$q=\\frac12$; $P(X=8)=\\frac1{256}$.",
+   "opts": [
+    "$n=8$",
+    "$P(X=8)=\\frac1{128}$",
+    "$p=\\frac12$",
+    "$P(X=0)=\\frac1{256}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Urn $A$ has $3$ white and $1$ black ball; urn $B$ has $1$ white and $3$ black. An urn is chosen by tossing a coin and one ball is drawn. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$P(A|\\text{black})=\\frac{\\frac18}{\\frac12}=\\frac14$.",
+   "opts": [
+    "$P(\\text{white})=\\frac12$",
+    "$P(A|\\text{black})=\\frac34$",
+    "$P(A|\\text{white})=\\frac34$",
+    "$P(B|\\text{black})=\\frac34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.6$, $P(B)=0.5$ and $P(A\\cup B)=0.8$. Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$P(A'\\cap B')=1-0.8$.",
+   "opts": [
+    "$P(A\\cap B)=0.3$",
+    "$P(A'\\cap B')=0.3$",
+    "$A$ and $B$ are independent",
+    "$P(A|B)=0.6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Three dice are thrown. Find $216$ times the probability that the sum is $10$.",
+   "a": "$27$",
+   "s": "Count the ordered triples.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "A bag has $2$ white and $3$ black balls. $A$, $B$, $C$ draw in turn without replacement, $A$ first; the first to draw white wins. Find $10$ times the probability that $A$ wins.",
+   "a": "$5$",
+   "s": "$\\frac25+\\frac1{10}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$P(X=1)=0.4$ and $P(X=2)=0.6$. Find the variance of $X$.",
+   "a": "$0.24$",
+   "s": "$E(X)=1.6$, $E(X^2)=2.8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Two dice are thrown. Find $36$ times the expected value of the larger number.",
+   "a": "$161$",
+   "s": "$\\sum k(2k-1)$ for $k=1,\\ldots,6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each conditional probability with its value.\nList-I: (P) two coins: $P(HH|\\text{at least one }H)$; (Q) two coins: $P(HH|\\text{first }H)$; (R) three coins: $P(HHH|\\text{at least two }H)$; (S) three coins: $P(\\text{exactly two }H|\\text{at least one }H)$\nList-II: (1) $\\frac12$; (2) $\\frac13$; (3) $\\frac37$; (4) $\\frac14$; (5) $\\frac23$",
+   "a": "(D) $P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+   "s": "$\\frac{\\frac14}{\\frac34}$; $\\frac12$; $\\frac{\\frac18}{\\frac48}$; $\\frac{\\frac38}{\\frac78}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 5$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 5$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. Match each conditional probability with its value.\nList-I: (P) $P(\\text{sum }8|\\text{double})$; (Q) $P(\\text{double}|\\text{sum }8)$; (R) $P(\\text{first die }6|\\text{sum }10)$; (S) $P(\\text{sum even}|\\text{first die odd})$\nList-II: (1) $\\frac15$; (2) $\\frac12$; (3) $\\frac16$; (4) $\\frac13$; (5) $\\frac14$",
+   "a": "(B) $P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+   "s": "$(4,4)$ of $6$; $1$ of $5$; $1$ of $3$; the second die must be odd.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each expected value with its value.\nList-I: (P) the number on a die; (Q) the number of heads in $5$ tosses; (R) the number of sixes in $18$ throws; (S) the sum on two dice\nList-II: (1) $\\frac72$; (2) $3$; (3) $7$; (4) $\\frac52$; (5) $6$",
+   "a": "(B) $P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$",
+   "s": "$\\frac{21}6$; $5\\cdot\\frac12$; $18\\cdot\\frac16$; $7$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each random variable with its variance.\nList-I: (P) $B\\left(10,\\frac12\\right)$; (Q) $B\\left(9,\\frac13\\right)$; (R) the number on a die; (S) $X=\\pm1$ with equal probability\nList-II: (1) $1$; (2) $\\frac{35}{12}$; (3) $2$; (4) $\\frac52$; (5) $3$",
+   "a": "(C) $P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+   "s": "$npq$; $\\frac{35}{12}$; $E(X^2)=1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 4$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

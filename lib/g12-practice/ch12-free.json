@@ -1,0 +1,608 @@
+[
+ {
+  "prompt": "The maximum of $Z=3x+4y$ subject to $x+y\\le4$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$12$",
+   "$4$",
+   "$7$",
+   "$16$"
+  ],
+  "answer": 3,
+  "solution": "Corners $(0,0)$, $(4,0)$, $(0,4)$: $Z=0,12,16$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The minimum of $Z=-3x+4y$ subject to $x+2y\\le8$, $3x+2y\\le12$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$-12$",
+   "$0$",
+   "$16$",
+   "$-6$"
+  ],
+  "answer": 0,
+  "solution": "Corners $(0,0)$, $(4,0)$, $(2,3)$, $(0,4)$: $Z=0,-12,6,16$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The maximum of $Z=5x+3y$ subject to $3x+5y\\le15$, $5x+2y\\le10$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$\\frac{235}{19}$",
+   "$\\frac{215}{19}$",
+   "$9$",
+   "$10$"
+  ],
+  "answer": 0,
+  "solution": "Corners $(0,0)$, $(2,0)$, $\\left(\\frac{20}{19},\\frac{45}{19}\\right)$, $(0,3)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The objective function of a linear programming problem is",
+  "options": [
+   "a constant",
+   "a quadratic function",
+   "a linear function of the variables",
+   "always a sum of squares"
+  ],
+  "answer": 2,
+  "solution": "By definition.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "The feasible region of a linear programming problem is",
+  "options": [
+   "the set of corner points only",
+   "the whole first quadrant",
+   "the line of the objective function",
+   "the set of points that satisfy all the constraints"
+  ],
+  "answer": 3,
+  "solution": "By definition.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "When the feasible region is bounded, the optimal value of $Z=ax+by$",
+  "options": [
+   "occurs only at the origin",
+   "occurs at the centre of the region",
+   "may not exist",
+   "occurs at a corner point"
+  ],
+  "answer": 3,
+  "solution": "Corner point theorem.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "When the feasible region is unbounded, the maximum of $Z=ax+by$",
+  "options": [
+   "is at the origin",
+   "always exists",
+   "may not exist",
+   "is always $0$"
+  ],
+  "answer": 2,
+  "solution": "The region extends without limit.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "The maximum of $Z=x+y$ subject to $x+y\\ge1$, $x\\ge0$, $y\\ge0$",
+  "options": [
+   "is $0$",
+   "is $2$",
+   "is $1$",
+   "does not exist"
+  ],
+  "answer": 3,
+  "solution": "The region is unbounded and $Z$ grows without limit.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "The minimum of $Z=x+y$ subject to $x+y\\ge1$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$1$",
+   "$0$",
+   "$2$",
+   "not defined"
+  ],
+  "answer": 0,
+  "solution": "Every point of the region has $x+y\\ge1$.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "For the constraints $x+2y\\le4$, $x+y\\le3$, $x\\ge0$, $y\\ge0$, the point $(1,1)$ is",
+  "options": [
+   "outside the first quadrant",
+   "not feasible",
+   "a corner point",
+   "feasible"
+  ],
+  "answer": 3,
+  "solution": "$3\\le4$ and $2\\le3$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "For the constraints $x+y\\le5$, $x-y\\ge1$, $x\\ge0$, $y\\ge0$, which point is not feasible?",
+  "options": [
+   "$(4,0)$",
+   "$(0,0)$",
+   "$(3,1)$",
+   "$(2,1)$"
+  ],
+  "answer": 1,
+  "solution": "$0-0\\ge1$ is false.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The corner points of $x+y\\le4$, $x\\le3$, $x\\ge0$, $y\\ge0$ are",
+  "options": [
+   "$(0,0)$, $(4,0)$, $(0,4)$",
+   "$(0,0)$, $(3,0)$, $(0,3)$",
+   "$(3,1)$ and $(0,4)$ only",
+   "$(0,0)$, $(3,0)$, $(3,1)$, $(0,4)$"
+  ],
+  "answer": 3,
+  "solution": "$x=3$ meets $x+y=4$ at $(3,1)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The maximum of $Z=2x+y$ subject to $x+y\\le4$, $x\\le3$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$4$",
+   "$7$",
+   "$8$",
+   "$6$"
+  ],
+  "answer": 1,
+  "solution": "At $(3,1)$: $6+1$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "$Z=ax+by$ has the same maximum at two corner points of a bounded feasible region. Then the maximum is attained",
+  "options": [
+   "only at their midpoint",
+   "at no other point",
+   "only at those two points",
+   "at every point of the segment joining them"
+  ],
+  "answer": 3,
+  "solution": "Linear functions keep the same value along the segment.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "The maximum of $Z=4x+y$ subject to $x+y\\le50$, $3x+y\\le90$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$90$",
+   "$120$",
+   "$110$",
+   "$50$"
+  ],
+  "answer": 1,
+  "solution": "Corners $(0,0)$, $(30,0)$, $(20,30)$, $(0,50)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The minimum of $Z=200x+500y$ subject to $x+2y\\ge10$, $3x+4y\\le24$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$2300$",
+   "$3000$",
+   "$2000$",
+   "$2500$"
+  ],
+  "answer": 0,
+  "solution": "Corners $(0,5)$, $(4,3)$, $(0,6)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The region $x+y\\le0$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "a triangle",
+   "the first quadrant",
+   "the single point $(0,0)$",
+   "empty"
+  ],
+  "answer": 2,
+  "solution": "$x,y\\ge0$ and $x+y\\le0$ force $x=y=0$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The constraints $x+y\\le2$ and $x+y\\ge3$, $x\\ge0$, $y\\ge0$",
+  "options": [
+   "give an unbounded region",
+   "give a single point",
+   "give a bounded region",
+   "have no feasible point"
+  ],
+  "answer": 3,
+  "solution": "They contradict each other.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "A region has corners $(0,2)$, $(3,0)$ and $(1,5)$. $Z=px+qy$ has its maximum at both $(3,0)$ and $(1,5)$ when",
+  "options": [
+   "$p=2q$",
+   "$p=q$",
+   "$3p=5q$",
+   "$2p=5q$"
+  ],
+  "answer": 3,
+  "solution": "$3p=p+5q$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The conditions $x\\ge0$, $y\\ge0$ in a linear programming problem are called",
+  "options": [
+   "non-negativity constraints",
+   "optimal conditions",
+   "corner conditions",
+   "objective constraints"
+  ],
+  "answer": 0,
+  "solution": "They keep the variables non-negative.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "The maximum of $Z=3x+2y$ subject to $x+2y\\le10$, $3x+y\\le15$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$15$",
+   "$10$",
+   "$20$",
+   "$18$"
+  ],
+  "answer": 3,
+  "solution": "Corners $(0,0)$, $(5,0)$, $(4,3)$, $(0,5)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The minimum of $Z=3x+5y$ subject to $x+3y\\ge3$, $x+y\\ge2$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$10$",
+   "$9$",
+   "$7$",
+   "$5$"
+  ],
+  "answer": 2,
+  "solution": "Corners $(3,0)$, $\\left(\\frac32,\\frac12\\right)$, $(0,2)$; $3x+5y<7$ has no common point with the region.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "For the constraint $2x+3y\\le12$, the point $(2,3)$ is",
+  "options": [
+   "not feasible",
+   "feasible",
+   "a corner point",
+   "on the boundary"
+  ],
+  "answer": 0,
+  "solution": "$4+9=13>12$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The number of corner points of $x\\le2$, $y\\le3$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$3$",
+   "$5$",
+   "$4$",
+   "$2$"
+  ],
+  "answer": 2,
+  "solution": "A rectangle.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The region $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "the first quadrant",
+   "the whole plane",
+   "the second quadrant",
+   "the $x$-axis"
+  ],
+  "answer": 0,
+  "solution": "Both coordinates non-negative.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "The half plane $2x+y\\ge4$",
+  "options": [
+   "does not contain the origin",
+   "is bounded",
+   "contains the origin",
+   "is the line $2x+y=4$ only"
+  ],
+  "answer": 0,
+  "solution": "$0\\ge4$ is false.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The maximum of $Z=x+y$ on the square with corners $(0,0)$, $(2,0)$, $(2,2)$, $(0,2)$ is",
+  "options": [
+   "$2$",
+   "$8$",
+   "$4$",
+   "$0$"
+  ],
+  "answer": 2,
+  "solution": "At $(2,2)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "A factory makes $x$ units of $A$ with profit ₹$5$ each and $y$ units of $B$ with profit ₹$4$ each. The objective function is",
+  "options": [
+   "$Z=20xy$",
+   "$Z=5x+4y$",
+   "$Z=4x+5y$",
+   "$Z=x+y$"
+  ],
+  "answer": 1,
+  "solution": "Total profit.",
+  "topic": "Formulation"
+ },
+ {
+  "prompt": "In a diet problem, the objective is usually to",
+  "options": [
+   "maximise the number of foods",
+   "minimise the vitamins",
+   "minimise the cost",
+   "maximise the cost"
+  ],
+  "answer": 2,
+  "solution": "Meet the needs at least cost.",
+  "topic": "Formulation"
+ },
+ {
+  "prompt": "The maximum of $Z=11x+7y$ subject to $x\\le3$, $y\\le2$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$36$",
+   "$47$",
+   "$14$",
+   "$33$"
+  ],
+  "answer": 1,
+  "solution": "At $(3,2)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The minimum of $Z=x-2y$ on the triangle with corners $(0,0)$, $(4,0)$, $(0,2)$ is",
+  "options": [
+   "$-4$",
+   "$0$",
+   "$4$",
+   "$-2$"
+  ],
+  "answer": 0,
+  "solution": "At $(0,2)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "At the corner $(0,0)$, the objective $Z=ax+by$ has the value",
+  "options": [
+   "$a+b$",
+   "$1$",
+   "$0$",
+   "$ab$"
+  ],
+  "answer": 2,
+  "solution": "Substitute.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "If the feasible region is bounded, then $Z=ax+by$ has",
+  "options": [
+   "both a maximum and a minimum",
+   "only a minimum",
+   "only a maximum",
+   "neither"
+  ],
+  "answer": 0,
+  "solution": "Corner point theorem.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "The maximum of $Z=2x+5y$ on the region with corners $(0,0)$, $(7,0)$, $(3,4)$, $(0,5)$ is",
+  "options": [
+   "$14$",
+   "$25$",
+   "$29$",
+   "$26$"
+  ],
+  "answer": 3,
+  "solution": "$Z=0,14,26,25$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "\"The total number of units $x+y$ is at most $40$\" is written as",
+  "options": [
+   "$x+y=40$",
+   "$x+y\\ge40$",
+   "$x+y<40$ only",
+   "$x+y\\le40$"
+  ],
+  "answer": 3,
+  "solution": "\"At most\" means $\\le$.",
+  "topic": "Formulation"
+ },
+ {
+  "prompt": "\"At least $8$ units of a vitamin\", with $2$ units per unit of $x$ and $1$ per unit of $y$, is written as",
+  "options": [
+   "$2x+y\\le8$",
+   "$2x+y=8$",
+   "$2x+y\\ge8$",
+   "$x+2y\\ge8$"
+  ],
+  "answer": 2,
+  "solution": "\"At least\" means $\\ge$.",
+  "topic": "Formulation"
+ },
+ {
+  "prompt": "The maximum of $Z=3x+9y$ subject to $x+3y\\le60$, $x+y\\ge10$, $x\\le y$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$90$, at $(0,10)$",
+   "$60$, at $(5,5)$",
+   "$180$, at every point of the segment joining $(15,15)$ and $(0,20)$",
+   "$180$, at $(15,15)$ only"
+  ],
+  "answer": 2,
+  "solution": "Corners $(0,10)$, $(5,5)$, $(15,15)$, $(0,20)$: $Z=90,60,180,180$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The minimum of $Z=3x+9y$ subject to $x+3y\\le60$, $x+y\\ge10$, $x\\le y$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$0$",
+   "$90$",
+   "$180$",
+   "$60$"
+  ],
+  "answer": 3,
+  "solution": "At $(5,5)$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The area of the region $x+2y\\le8$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "$32$",
+   "$16$",
+   "$8$",
+   "$12$"
+  ],
+  "answer": 1,
+  "solution": "Triangle with legs $8$ and $4$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "The maximum of $Z=-x+2y$ subject to $x\\ge3$, $x+y\\ge5$, $x+2y\\ge6$, $x\\ge0$, $y\\ge0$",
+  "options": [
+   "is $-6$",
+   "is $1$",
+   "does not exist",
+   "is $-2$"
+  ],
+  "answer": 2,
+  "solution": "The largest corner value is $1$ at $(3,2)$, but $-x+2y>1$ has points in the unbounded region.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "The minimum of $Z=x+2y$ subject to $2x+y\\ge3$, $x+2y\\ge6$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "not defined",
+   "$3$",
+   "$6$, at $(6,0)$ only",
+   "$6$, at infinitely many points"
+  ],
+  "answer": 3,
+  "solution": "Corners $(6,0)$ and $(0,3)$ both give $6$, and $x+2y\\ge6$ in the region.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "The feasible region of $x+y\\ge4$, $x\\ge0$, $y\\ge0$ is",
+  "options": [
+   "bounded",
+   "a single point",
+   "empty",
+   "unbounded"
+  ],
+  "answer": 3,
+  "solution": "It extends without limit.",
+  "topic": "Unbounded regions"
+ },
+ {
+  "prompt": "An optimal solution of a linear programming problem is",
+  "options": [
+   "any corner point",
+   "the origin",
+   "any point of the plane",
+   "a feasible point that gives the optimal value of $Z$"
+  ],
+  "answer": 3,
+  "solution": "By definition.",
+  "topic": "Basic terms"
+ },
+ {
+  "prompt": "At the corners $(2,4)$ and $(4,2)$, the objective $Z=3x+3y$",
+  "options": [
+   "has the same value $18$",
+   "is $0$",
+   "has different values",
+   "is $24$ at both"
+  ],
+  "answer": 0,
+  "solution": "$6+12=12+6$.",
+  "topic": "Graphical method"
+ },
+ {
+  "prompt": "Assertion (A): The feasible region of $x+y\\le4$, $x\\ge0$, $y\\ge0$ is bounded.\nReason (R): It lies inside a circle with centre at the origin.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A region inside a circle is bounded.",
+  "topic": "Basic terms",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $Z=3x+2y$ has a maximum on the region $x+y\\ge2$, $x\\ge0$, $y\\ge0$.\nReason (R): The region is unbounded.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "$Z$ grows without limit, so A is false.",
+  "topic": "Unbounded regions",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): $(0,0)$ satisfies $3x+4y\\le12$.\nReason (R): $0\\le12$.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "Substitute.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): If the optimal value occurs at two corner points, it occurs at every point of the segment joining them.\nReason (R): $Z$ is a linear function.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 0,
+  "solution": "A linear function on a segment lies between its end values.",
+  "topic": "Basic terms",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): Every linear programming problem has an optimal solution.\nReason (R): Some linear programming problems have no feasible point.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 3,
+  "solution": "R gives a counter-example to A.",
+  "topic": "Basic terms",
+  "assertion": true
+ },
+ {
+  "prompt": "Assertion (A): The corner points of $x\\le2$, $y\\le2$, $x\\ge0$, $y\\ge0$ are $(0,0)$, $(2,0)$, $(2,2)$, $(0,2)$.\nReason (R): The region is a square.",
+  "options": [
+   "Both A and R are true, and R is the correct explanation of A.",
+   "Both A and R are true, but R is not the correct explanation of A.",
+   "A is true, but R is false.",
+   "A is false, but R is true."
+  ],
+  "answer": 1,
+  "solution": "Both are true; A comes from the intersections of the boundary lines.",
+  "topic": "Assertion and reason",
+  "assertion": true
+ }
+]
