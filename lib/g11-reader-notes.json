@@ -1,0 +1,4984 @@
+{
+ "g11-sets": {
+  "slug": "g11-sets",
+  "number": 1,
+  "title": "Sets",
+  "subtitle": "Representation, subsets, intervals, operations, complements and Venn diagrams",
+  "sheet": [
+   {
+    "title": "Representing sets",
+    "items": [
+     "Roster form: list the elements, e.g. $\\{2,4,6\\}$",
+     "Set-builder form: $\\{x : x\\text{ has property }P\\}$",
+     "Empty set $\\varnothing=\\{\\}$; a finite set has a countable number $n(A)$ of elements",
+     "$A=B\\iff$ every element of $A$ is in $B$ and every element of $B$ is in $A$"
+    ]
+   },
+   {
+    "title": "Subsets and intervals",
+    "items": [
+     "$A\\subset B\\iff (x\\in A\\Rightarrow x\\in B)$",
+     "$\\varnothing\\subset A$ and $A\\subset A$ for every set $A$",
+     "$A\\subset B$ and $B\\subset A\\iff A=B$",
+     "$(a,b)=\\{x:a<x<b\\},\\quad [a,b]=\\{x:a\\le x\\le b\\}$",
+     "$[a,b)=\\{x:a\\le x<b\\},\\quad (a,b]=\\{x:a<x\\le b\\}$"
+    ]
+   },
+   {
+    "title": "Operations",
+    "items": [
+     "$A\\cup B=\\{x:x\\in A\\ \\text{or}\\ x\\in B\\}$",
+     "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$",
+     "$A-B=\\{x:x\\in A,\\ x\\notin B\\}$",
+     "$A\\cap B=\\varnothing\\iff A, B$ are disjoint",
+     "$A\\cup(B\\cap C)=(A\\cup B)\\cap(A\\cup C),\\quad A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)$"
+    ]
+   },
+   {
+    "title": "Complements",
+    "items": [
+     "$A'=U-A=\\{x\\in U:x\\notin A\\}$",
+     "$(A\\cup B)'=A'\\cap B',\\quad (A\\cap B)'=A'\\cup B'$",
+     "$A\\cup A'=U,\\quad A\\cap A'=\\varnothing,\\quad (A')'=A$",
+     "$A-B=A\\cap B'$"
+    ]
+   },
+   {
+    "title": "Counting (JEE)",
+    "items": [
+     "$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$",
+     "$n(A\\cup B\\cup C)=\\sum n(A)-\\sum n(A\\cap B)+n(A\\cap B\\cap C)$",
+     "$n$ (only $A)=n(A)-n(A\\cap B)$",
+     "$n(P(A))=2^{n}$ when $n(A)=n$",
+     "Number of proper subsets $=2^{n}-1$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Sets and their representation",
+    "level": "board",
+    "formulas": [
+     "Roster form: list the elements, e.g. $\\{2,4,6\\}$",
+     "Set-builder form: $\\{x : x\\text{ has property }P\\}$",
+     "Empty set $\\varnothing=\\{\\}$; a finite set has a countable number $n(A)$ of elements",
+     "$A=B\\iff$ every element of $A$ is in $B$ and every element of $B$ is in $A$"
+    ],
+    "examples": [
+     {
+      "question": "Write $A=\\{x : x\\text{ is a natural number},\\ x^2<40\\}$ in roster form.",
+      "use": [
+       "Roster form: list the elements, e.g. $\\{2,4,6\\}$",
+       "Set-builder form: $\\{x : x\\text{ has property }P\\}$"
+      ],
+      "steps": [
+       "$1^2,2^2,\\dots,6^2=36<40;\\ 7^2=49>40$"
+      ],
+      "result": "$A=\\{1,2,3,4,5,6\\}$"
+     },
+     {
+      "question": "Write $\\{3,6,9,12,15\\}$ in set-builder form.",
+      "use": [
+       "Set-builder form: $\\{x : x\\text{ has property }P\\}$"
+      ],
+      "steps": [
+       "$3=3\\cdot1,\\ 6=3\\cdot2,\\ \\dots,\\ 15=3\\cdot5$"
+      ],
+      "result": "$\\{x : x=3n,\\ n\\in\\mathbb N,\\ 1\\le n\\le5\\}$"
+     },
+     {
+      "question": "List the letters of the word $\\text{SCHOOL}$ as a set.",
+      "use": [
+       "Roster form: list the elements, e.g. $\\{2,4,6\\}$"
+      ],
+      "steps": [
+       "A letter is listed once: $S, C, H, O, L$"
+      ],
+      "result": "$\\{S,C,H,O,L\\}$"
+     },
+     {
+      "question": "Which of these is the empty set? (i) $\\{x\\in\\mathbb N : 2<x<3\\}$ (ii) $\\{0\\}$",
+      "use": [
+       "Empty set $\\varnothing=\\{\\}$; a finite set has a countable number $n(A)$ of elements"
+      ],
+      "steps": [
+       "(i) No natural number lies between $2$ and $3$",
+       "(ii) $\\{0\\}$ has one element, $0$"
+      ],
+      "result": "(i) is $\\varnothing$;(ii) is not"
+     },
+     {
+      "question": "Are $A=\\{x : x\\text{ is a letter of LOYAL}\\}$ and $B=\\{x : x\\text{ is a letter of ALLOY}\\}$ equal?",
+      "use": [
+       "$A=B\\iff$ every element of $A$ is in $B$ and every element of $B$ is in $A$"
+      ],
+      "steps": [
+       "$A=\\{L,O,Y,A\\},\\quad B=\\{A,L,O,Y\\}$"
+      ],
+      "result": "$A=B$"
+     },
+     {
+      "question": "Find $n(A)$ for $A=\\{x\\in\\mathbb Z : -2\\le x<3\\}$.",
+      "use": [
+       "Roster form: list the elements, e.g. $\\{2,4,6\\}$",
+       "Empty set $\\varnothing=\\{\\}$; a finite set has a countable number $n(A)$ of elements"
+      ],
+      "steps": [
+       "$A=\\{-2,-1,0,1,2\\}$"
+      ],
+      "result": "$n(A)=5$"
+     }
+    ]
+   },
+   {
+    "title": "Subsets and intervals",
+    "level": "board",
+    "formulas": [
+     "$A\\subset B\\iff (x\\in A\\Rightarrow x\\in B)$",
+     "$\\varnothing\\subset A$ and $A\\subset A$ for every set $A$",
+     "$A\\subset B$ and $B\\subset A\\iff A=B$",
+     "$(a,b)=\\{x:a<x<b\\},\\quad [a,b]=\\{x:a\\le x\\le b\\}$",
+     "$[a,b)=\\{x:a\\le x<b\\},\\quad (a,b]=\\{x:a<x\\le b\\}$"
+    ],
+    "examples": [
+     {
+      "question": "Write all the subsets of $\\{a,b,c\\}$.",
+      "use": [
+       "$A\\subset B\\iff (x\\in A\\Rightarrow x\\in B)$",
+       "$\\varnothing\\subset A$ and $A\\subset A$ for every set $A$"
+      ],
+      "steps": [
+       "$\\varnothing;\\ \\{a\\},\\{b\\},\\{c\\};\\ \\{a,b\\},\\{a,c\\},\\{b,c\\};\\ \\{a,b,c\\}$"
+      ],
+      "result": "$8$ subsets"
+     },
+     {
+      "question": "State true or false: (i) $\\{1\\}\\in\\{1,2\\}$ (ii) $\\{1\\}\\subset\\{1,2\\}$ (iii) $1\\in\\{1,2\\}$.",
+      "use": [
+       "$A\\subset B\\iff (x\\in A\\Rightarrow x\\in B)$"
+      ],
+      "steps": [
+       "(i) The elements of $\\{1,2\\}$ are $1,2;\\ \\{1\\}$ is not one of them",
+       "(ii) $1\\in\\{1,2\\}$",
+       "(iii) $1$ is an element"
+      ],
+      "result": "(i) False, (ii) True, (iii) True"
+     },
+     {
+      "question": "$A=\\{x : x^2-5x+6=0\\}$ and $B=\\{2,3\\}$. Show that $A=B$.",
+      "use": [
+       "$A\\subset B$ and $B\\subset A\\iff A=B$"
+      ],
+      "steps": [
+       "$x^2-5x+6=(x-2)(x-3)=0\\Rightarrow x=2,3$",
+       "$A=\\{2,3\\}\\subset B,\\ B\\subset A$"
+      ],
+      "result": "$A=B$"
+     },
+     {
+      "question": "Write $\\{x : -4<x\\le6\\}$ as an interval, and $[-3,0)$ in set-builder form.",
+      "use": [
+       "$(a,b)=\\{x:a<x<b\\},\\quad [a,b]=\\{x:a\\le x\\le b\\}$",
+       "$[a,b)=\\{x:a\\le x<b\\},\\quad (a,b]=\\{x:a<x\\le b\\}$"
+      ],
+      "steps": [
+       "$-4$ excluded, $6$ included",
+       "$-3$ included, $0$ excluded"
+      ],
+      "result": "$(-4,6];\\quad \\{x:-3\\le x<0\\}$"
+     },
+     {
+      "question": "Is $\\{x : x\\text{ is an even prime}\\}$ a subset of $\\{1,2,3\\}$?",
+      "use": [
+       "$A\\subset B\\iff (x\\in A\\Rightarrow x\\in B)$"
+      ],
+      "steps": [
+       "The only even prime is $2$",
+       "$\\{2\\}\\subset\\{1,2,3\\}$"
+      ],
+      "result": "Yes"
+     }
+    ]
+   },
+   {
+    "title": "Union, intersection and difference",
+    "level": "board",
+    "formulas": [
+     "$A\\cup B=\\{x:x\\in A\\ \\text{or}\\ x\\in B\\}$",
+     "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$",
+     "$A-B=\\{x:x\\in A,\\ x\\notin B\\}$",
+     "$A\\cap B=\\varnothing\\iff A, B$ are disjoint",
+     "$A\\cup(B\\cap C)=(A\\cup B)\\cap(A\\cup C),\\quad A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)$"
+    ],
+    "examples": [
+     {
+      "question": "$A=\\{1,2,3,4\\}$, $B=\\{3,4,5,6\\}$. Find $A\\cup B$, $A\\cap B$, $A-B$ and $B-A$.",
+      "use": [
+       "$A\\cup B=\\{x:x\\in A\\ \\text{or}\\ x\\in B\\}$",
+       "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$",
+       "$A-B=\\{x:x\\in A,\\ x\\notin B\\}$"
+      ],
+      "steps": [
+       "$A\\cup B=\\{1,2,3,4,5,6\\}$",
+       "$A\\cap B=\\{3,4\\}$",
+       "$A-B=\\{1,2\\},\\quad B-A=\\{5,6\\}$"
+      ],
+      "result": "$\\{1,\\dots,6\\},\\ \\{3,4\\},\\ \\{1,2\\},\\ \\{5,6\\}$"
+     },
+     {
+      "question": "$A=\\{x : x\\text{ is a natural number less than }10\\}$ and $B=\\{x : x\\text{ is an odd prime}\\}$. Find $A\\cap B$.",
+      "use": [
+       "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$"
+      ],
+      "steps": [
+       "$A=\\{1,\\dots,9\\},\\ B=\\{3,5,7,11,\\dots\\}$"
+      ],
+      "result": "$A\\cap B=\\{3,5,7\\}$"
+     },
+     {
+      "question": "Are $\\{2,4,6\\}$ and $\\{x : x\\text{ is an odd natural number}\\}$ disjoint?",
+      "use": [
+       "$A\\cap B=\\varnothing\\iff A, B$ are disjoint"
+      ],
+      "steps": [
+       "No odd number is $2,4$ or $6$",
+       "$\\{2,4,6\\}\\cap B=\\varnothing$"
+      ],
+      "result": "Yes, disjoint"
+     },
+     {
+      "question": "$A=[-2,5)$ and $B=(1,8]$. Find $A\\cup B$, $A\\cap B$ and $A-B$.",
+      "use": [
+       "$A\\cup B=\\{x:x\\in A\\ \\text{or}\\ x\\in B\\}$",
+       "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$",
+       "$A-B=\\{x:x\\in A,\\ x\\notin B\\}$"
+      ],
+      "steps": [
+       "$A\\cup B=[-2,8]$",
+       "$A\\cap B=(1,5)$",
+       "$A-B=[-2,1]$"
+      ],
+      "result": "$[-2,8],\\ (1,5),\\ [-2,1]$"
+     },
+     {
+      "question": "$A=\\{1,2\\}$, $B=\\{2,3\\}$, $C=\\{3,4\\}$. Verify $A\\cup(B\\cap C)=(A\\cup B)\\cap(A\\cup C)$.",
+      "use": [
+       "$A\\cup B=\\{x:x\\in A\\ \\text{or}\\ x\\in B\\}$",
+       "$A\\cap B=\\{x:x\\in A\\ \\text{and}\\ x\\in B\\}$",
+       "$A\\cup(B\\cap C)=(A\\cup B)\\cap(A\\cup C),\\quad A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)$"
+      ],
+      "steps": [
+       "$B\\cap C=\\{3\\}\\Rightarrow A\\cup(B\\cap C)=\\{1,2,3\\}$",
+       "$(A\\cup B)\\cap(A\\cup C)=\\{1,2,3\\}\\cap\\{1,2,3,4\\}=\\{1,2,3\\}$"
+      ],
+      "result": "Both sides are $\\{1,2,3\\}$"
+     }
+    ]
+   },
+   {
+    "title": "Complements and Venn diagrams",
+    "level": "board",
+    "formulas": [
+     "$A'=U-A=\\{x\\in U:x\\notin A\\}$",
+     "$(A\\cup B)'=A'\\cap B',\\quad (A\\cap B)'=A'\\cup B'$",
+     "$A\\cup A'=U,\\quad A\\cap A'=\\varnothing,\\quad (A')'=A$",
+     "$A-B=A\\cap B'$"
+    ],
+    "examples": [
+     {
+      "question": "$U=\\{1,2,\\dots,9\\}$, $A=\\{1,2,3,4\\}$, $B=\\{2,4,6,8\\}$. Find $A'$, $B'$ and $(A\\cup B)'$.",
+      "use": [
+       "$A'=U-A=\\{x\\in U:x\\notin A\\}$",
+       "$(A\\cup B)'=A'\\cap B',\\quad (A\\cap B)'=A'\\cup B'$"
+      ],
+      "steps": [
+       "$A'=\\{5,6,7,8,9\\},\\quad B'=\\{1,3,5,7,9\\}$",
+       "$(A\\cup B)'=A'\\cap B'=\\{5,7,9\\}$"
+      ],
+      "result": "$\\{5,6,7,8,9\\},\\ \\{1,3,5,7,9\\},\\ \\{5,7,9\\}$"
+     },
+     {
+      "question": "With the same sets, verify $(A\\cap B)'=A'\\cup B'$.",
+      "use": [
+       "$(A\\cup B)'=A'\\cap B',\\quad (A\\cap B)'=A'\\cup B'$"
+      ],
+      "steps": [
+       "$A\\cap B=\\{2,4\\}\\Rightarrow(A\\cap B)'=\\{1,3,5,6,7,8,9\\}$",
+       "$A'\\cup B'=\\{1,3,5,6,7,8,9\\}$"
+      ],
+      "result": "Both sides are equal"
+     },
+     {
+      "question": "$U$ is the set of letters of the English alphabet and $A$ is the set of vowels. Find $A'$.",
+      "use": [
+       "$A'=U-A=\\{x\\in U:x\\notin A\\}$"
+      ],
+      "steps": [
+       "$A'=U-A$"
+      ],
+      "result": "$A'=$ the set of the $21$ consonants"
+     },
+     {
+      "question": "Show that $A-B=A\\cap B'$ for $A=\\{1,2,3\\}$, $B=\\{2,5\\}$ and $U=\\{1,2,3,4,5\\}$.",
+      "use": [
+       "$A-B=A\\cap B'$"
+      ],
+      "steps": [
+       "$A-B=\\{1,3\\}$",
+       "$B'=\\{1,3,4\\}\\Rightarrow A\\cap B'=\\{1,3\\}$"
+      ],
+      "result": "$A-B=A\\cap B'=\\{1,3\\}$"
+     },
+     {
+      "question": "Simplify $(A\\cup B)\\cap(A\\cup B')$.",
+      "use": [
+       "$A\\cup A'=U,\\quad A\\cap A'=\\varnothing,\\quad (A')'=A$"
+      ],
+      "steps": [
+       "$(A\\cup B)\\cap(A\\cup B')=A\\cup(B\\cap B')$",
+       "$=A\\cup\\varnothing$"
+      ],
+      "result": "$A$"
+     }
+    ]
+   },
+   {
+    "title": "Counting with sets and power sets (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$",
+     "$n(A\\cup B\\cup C)=\\sum n(A)-\\sum n(A\\cap B)+n(A\\cap B\\cap C)$",
+     "$n$ (only $A)=n(A)-n(A\\cap B)$",
+     "$n(P(A))=2^{n}$ when $n(A)=n$",
+     "Number of proper subsets $=2^{n}-1$"
+    ],
+    "examples": [
+     {
+      "question": "In a class of $60$, $35$ like cricket, $25$ like football and $10$ like both. How many like neither?",
+      "use": [
+       "$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$"
+      ],
+      "steps": [
+       "$n(C\\cup F)=35+25-10=50$",
+       "$60-50=10$"
+      ],
+      "result": "$10$"
+     },
+     {
+      "question": "$400$ people were asked about tea and coffee: $210$ like tea, $180$ like coffee and $70$ like both. How many like only tea?",
+      "use": [
+       "$n$ (only $A)=n(A)-n(A\\cap B)$"
+      ],
+      "steps": [
+       "$210-70$"
+      ],
+      "result": "$140$"
+     },
+     {
+      "question": "In a survey of $100$ students, $28$ read H, $30$ read T, $42$ read I, $8$ read H and I, $10$ read H and T, $5$ read T and I, and $3$ read all three. How many read none?",
+      "use": [
+       "$n(A\\cup B\\cup C)=\\sum n(A)-\\sum n(A\\cap B)+n(A\\cap B\\cap C)$"
+      ],
+      "steps": [
+       "$n(H\\cup T\\cup I)=(28+30+42)-(8+10+5)+3=80$",
+       "$100-80=20$"
+      ],
+      "result": "$20$"
+     },
+     {
+      "question": "Find the number of elements in $P(P(\\varnothing))$.",
+      "use": [
+       "$n(P(A))=2^{n}$ when $n(A)=n$"
+      ],
+      "steps": [
+       "$n(\\varnothing)=0\\Rightarrow n(P(\\varnothing))=2^0=1$",
+       "$n(P(P(\\varnothing)))=2^1=2$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "Two sets have $m$ and $n$ elements. The second set has $56$ more subsets than the first. Find $m$ and $n$.",
+      "use": [
+       "$n(P(A))=2^{n}$ when $n(A)=n$"
+      ],
+      "steps": [
+       "$2^n-2^m=56\\Rightarrow 2^m(2^{n-m}-1)=8\\times7$",
+       "$2^m=8,\\ 2^{n-m}=8$"
+      ],
+      "result": "$m=3,\\ n=6$"
+     },
+     {
+      "question": "$n(A)=4$. How many proper subsets does $A$ have?",
+      "use": [
+       "Number of proper subsets $=2^{n}-1$"
+      ],
+      "steps": [
+       "$2^4-1$"
+      ],
+      "result": "$15$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-relations-functions": {
+  "slug": "g11-relations-functions",
+  "number": 2,
+  "title": "Relations and Functions",
+  "subtitle": "Cartesian products, relations, functions, special real functions and the algebra of functions",
+  "sheet": [
+   {
+    "title": "Cartesian product",
+    "items": [
+     "$(a, b)=(c, d)\\iff a=c$ and $b=d$",
+     "$A\\times B=\\{(a,b):a\\in A,\\ b\\in B\\}$",
+     "$n(A\\times B)=n(A)\\cdot n(B)$"
+    ]
+   },
+   {
+    "title": "Relations",
+    "items": [
+     "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$",
+     "Domain $=\\{a:(a, b)\\in R\\}$, Range $=\\{b:(a, b)\\in R\\}$, Codomain $=B$"
+    ]
+   },
+   {
+    "title": "Functions",
+    "items": [
+     "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$",
+     "Domain of $f=A$; Range $=\\{f(a):a\\in A\\}\\subset B$",
+     "Real function: domain and codomain are subsets of $\\mathbb R$"
+    ]
+   },
+   {
+    "title": "Special real functions",
+    "items": [
+     "Identity: $f(x)=x$; Constant: $f(x)=c$",
+     "Polynomial: $f(x)=a_0+a_1x+\\dots+a_nx^n$; Rational: $\\frac{p(x)}{q(x)},\\ q(x)\\ne0$",
+     "$\\text{Modulus: }|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}$",
+     "$\\text{Signum: }\\operatorname{sgn}x=\\begin{cases}\\frac{|x|}{x},&x\\ne0\\\\0,&x=0\\end{cases}$",
+     "Greatest integer: $[x]=$ the greatest integer $\\le x$"
+    ]
+   },
+   {
+    "title": "Algebra of functions",
+    "items": [
+     "$(f\\pm g)(x)=f(x)\\pm g(x)$",
+     "$(fg)(x)=f(x)g(x),\\quad (\\alpha f)(x)=\\alpha f(x)$",
+     "$\\left(\\frac fg\\right)(x)=\\frac{f(x)}{g(x)},\\quad g(x)\\ne0$",
+     "Domain of $f\\pm g,\\ fg=D_f\\cap D_g$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Ordered pairs and Cartesian product",
+    "level": "board",
+    "formulas": [
+     "$(a, b)=(c, d)\\iff a=c$ and $b=d$",
+     "$A\\times B=\\{(a,b):a\\in A,\\ b\\in B\\}$",
+     "$n(A\\times B)=n(A)\\cdot n(B)$",
+     "$A\\times B\\ne B\\times A$ unless $A=B$ (or one is empty)"
+    ],
+    "examples": [
+     {
+      "question": "Find $x$ and $y$ if $\\left(\\frac x3+1,\\ y-\\frac23\\right)=\\left(\\frac53,\\ \\frac13\\right)$.",
+      "use": [
+       "$(a, b)=(c, d)\\iff a=c$ and $b=d$"
+      ],
+      "steps": [
+       "$\\frac x3+1=\\frac53\\Rightarrow\\frac x3=\\frac23$",
+       "$y-\\frac23=\\frac13$"
+      ],
+      "result": "$x=2,\\ y=1$"
+     },
+     {
+      "question": "$A=\\{1,2\\}$ and $B=\\{3,4,5\\}$. Write $A\\times B$ and find $n(A\\times B)$.",
+      "use": [
+       "$A\\times B=\\{(a,b):a\\in A,\\ b\\in B\\}$",
+       "$n(A\\times B)=n(A)\\cdot n(B)$"
+      ],
+      "steps": [
+       "$A\\times B=\\{(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)\\}$",
+       "$n(A\\times B)=2\\times3$"
+      ],
+      "result": "$6$"
+     },
+     {
+      "question": "$A\\times A$ has $9$ elements, two of which are $(-1,0)$ and $(0,1)$. Find $A$ and the other elements.",
+      "use": [
+       "$A\\times B=\\{(a,b):a\\in A,\\ b\\in B\\}$",
+       "$n(A\\times B)=n(A)\\cdot n(B)$"
+      ],
+      "steps": [
+       "$n(A)^2=9\\Rightarrow n(A)=3;\\ -1,0,1\\in A$",
+       "$A\\times A=\\{-1,0,1\\}\\times\\{-1,0,1\\}$"
+      ],
+      "result": "$A=\\{-1,0,1\\};\\ (-1,-1),(-1,1),(0,-1),(0,0),(1,-1),(1,0),(1,1)$"
+     },
+     {
+      "question": "$A=\\{1,2\\}$, $B=\\{3,4\\}$, $C=\\{4,5\\}$. Find $A\\times(B\\cap C)$.",
+      "use": [
+       "$A\\times B=\\{(a,b):a\\in A,\\ b\\in B\\}$"
+      ],
+      "steps": [
+       "$B\\cap C=\\{4\\}$"
+      ],
+      "result": "$\\{(1,4),(2,4)\\}$"
+     },
+     {
+      "question": "$G=\\{7,8\\}$ and $H=\\{5,4,2\\}$. Is $G\\times H=H\\times G$?",
+      "use": [
+       "$A\\times B\\ne B\\times A$ unless $A=B$ (or one is empty)"
+      ],
+      "steps": [
+       "$(7,5)\\in G\\times H$",
+       "$(7,5)\\notin H\\times G$ since $7\\notin H$"
+      ],
+      "result": "No"
+     }
+    ]
+   },
+   {
+    "title": "Relations",
+    "level": "board",
+    "formulas": [
+     "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$",
+     "Domain $=\\{a:(a, b)\\in R\\}$, Range $=\\{b:(a, b)\\in R\\}$, Codomain $=B$",
+     "Number of relations from $A$ to $B=2^{n(A)\\, n(B)}$"
+    ],
+    "examples": [
+     {
+      "question": "$A=\\{1,2,3,4,5,6\\}$. $R=\\{(x,y):y=x+1\\}$ on $A$. Write $R$, its domain, codomain and range.",
+      "use": [
+       "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$",
+       "Domain $=\\{a:(a, b)\\in R\\}$, Range $=\\{b:(a, b)\\in R\\}$, Codomain $=B$"
+      ],
+      "steps": [
+       "$R=\\{(1,2),(2,3),(3,4),(4,5),(5,6)\\}$",
+       "Domain $=\\{1,2,3,4,5\\}$, Codomain $=A$, Range $=\\{2,3,4,5,6\\}$"
+      ],
+      "result": "Domain $\\{1,\\dots,5\\}$, range $\\{2,\\dots,6\\}$"
+     },
+     {
+      "question": "$R=\\{(x,x^3): x\\text{ is a prime less than }10\\}$. Write $R$ and its range.",
+      "use": [
+       "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$",
+       "Domain $=\\{a:(a, b)\\in R\\}$, Range $=\\{b:(a, b)\\in R\\}$, Codomain $=B$"
+      ],
+      "steps": [
+       "$x=2,3,5,7$",
+       "$R=\\{(2,8),(3,27),(5,125),(7,343)\\}$"
+      ],
+      "result": "Range $=\\{8,27,125,343\\}$"
+     },
+     {
+      "question": "$A=\\{1,2,3,5\\}$, $B=\\{4,6,9\\}$. $R=\\{(x,y):\\text{the difference of }x,y\\text{ is odd}\\}$ from $A$ to $B$. Write $R$.",
+      "use": [
+       "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$"
+      ],
+      "steps": [
+       "Odd difference: one even and one odd",
+       "$1\\to4,6;\\ 2\\to9;\\ 3\\to4,6;\\ 5\\to4,6$"
+      ],
+      "result": "$\\{(1,4),(1,6),(2,9),(3,4),(3,6),(5,4),(5,6)\\}$"
+     },
+     {
+      "question": "$R=\\{(a,b):b=a^2\\}$ is a relation on $\\{0,1,2,3,4\\}$. Write $R$ in roster form.",
+      "use": [
+       "A relation $R$ from $A$ to $B$ is a subset of $A\\times B$"
+      ],
+      "steps": [
+       "$0^2=0,\\ 1^2=1,\\ 2^2=4;\\ 3^2=9\\notin$ set"
+      ],
+      "result": "$\\{(0,0),(1,1),(2,4)\\}$"
+     }
+    ]
+   },
+   {
+    "title": "Functions and real functions",
+    "level": "board",
+    "formulas": [
+     "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$",
+     "Domain of $f=A$; Range $=\\{f(a):a\\in A\\}\\subset B$",
+     "Real function: domain and codomain are subsets of $\\mathbb R$",
+     "Number of functions from $A$ to $B=n(B)^{n(A)}$"
+    ],
+    "examples": [
+     {
+      "question": "Which relations are functions? (i) $\\{(2,1),(5,1),(8,1)\\}$ (ii) $\\{(2,1),(2,3),(4,5)\\}$",
+      "use": [
+       "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$"
+      ],
+      "steps": [
+       "(i) Each first element appears once",
+       "(ii) $2$ has two images"
+      ],
+      "result": "(i) is a function; (ii) is not"
+     },
+     {
+      "question": "$f(x)=x^2$. Find $\\dfrac{f(1.1)-f(1)}{1.1-1}$.",
+      "use": [
+       "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$"
+      ],
+      "steps": [
+       "$\\frac{1.21-1}{0.1}=\\frac{0.21}{0.1}$"
+      ],
+      "result": "$2.1$"
+     },
+     {
+      "question": "Find the domain of $f(x)=\\dfrac{x^2+2x+1}{x^2-8x+12}$.",
+      "use": [
+       "Domain of $f=A$; Range $=\\{f(a):a\\in A\\}\\subset B$",
+       "Real function: domain and codomain are subsets of $\\mathbb R$"
+      ],
+      "steps": [
+       "$x^2-8x+12=(x-2)(x-6)\\ne0$"
+      ],
+      "result": "$\\mathbb R-\\{2,6\\}$"
+     },
+     {
+      "question": "$f(x)=2x-5$. Find $f(0)$, $f(7)$ and $f(-3)$.",
+      "use": [
+       "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$"
+      ],
+      "steps": [
+       "$f(0)=-5,\\ f(7)=14-5,\\ f(-3)=-6-5$"
+      ],
+      "result": "$-5,\\ 9,\\ -11$"
+     },
+     {
+      "question": "$t(C)=\\dfrac{9C}{5}+32$ converts Celsius to Fahrenheit. Find $C$ when $t(C)=212$.",
+      "use": [
+       "$f:A\\to B$ is a function if each $a\\in A$ has exactly one image $f(a)$"
+      ],
+      "steps": [
+       "$\\frac{9C}{5}=180\\Rightarrow C=\\frac{180\\times5}{9}$"
+      ],
+      "result": "$100$"
+     }
+    ]
+   },
+   {
+    "title": "Special real functions",
+    "level": "board",
+    "formulas": [
+     "Identity: $f(x)=x$; Constant: $f(x)=c$",
+     "Polynomial: $f(x)=a_0+a_1x+\\dots+a_nx^n$; Rational: $\\frac{p(x)}{q(x)},\\ q(x)\\ne0$",
+     "$\\text{Modulus: }|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}$",
+     "$\\text{Signum: }\\operatorname{sgn}x=\\begin{cases}\\frac{|x|}{x},&x\\ne0\\\\0,&x=0\\end{cases}$",
+     "Greatest integer: $[x]=$ the greatest integer $\\le x$"
+    ],
+    "examples": [
+     {
+      "question": "Find $|{-3}|+[2.7]+[-1.2]+\\operatorname{sgn}(-5)$.",
+      "use": [
+       "$\\text{Modulus: }|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}$",
+       "$\\text{Signum: }\\operatorname{sgn}x=\\begin{cases}\\frac{|x|}{x},&x\\ne0\\\\0,&x=0\\end{cases}$",
+       "Greatest integer: $[x]=$ the greatest integer $\\le x$"
+      ],
+      "steps": [
+       "$|-3|=3,\\ [2.7]=2,\\ [-1.2]=-2,\\ \\operatorname{sgn}(-5)=-1$",
+       "$3+2-2-1$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "Find the domain and range of $f(x)=|x-1|$.",
+      "use": [
+       "$\\text{Modulus: }|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}$"
+      ],
+      "steps": [
+       "$|x-1|$ is defined for all real $x$",
+       "$|x-1|\\ge0$, and $0$ at $x=1$"
+      ],
+      "result": "Domain $\\mathbb R$, range $[0,\\infty)$"
+     },
+     {
+      "question": "Find the range of $f(x)=\\operatorname{sgn}(x)$.",
+      "use": [
+       "$\\text{Signum: }\\operatorname{sgn}x=\\begin{cases}\\frac{|x|}{x},&x\\ne0\\\\0,&x=0\\end{cases}$"
+      ],
+      "steps": [
+       "$x>0:\\ 1;\\quad x=0:\\ 0;\\quad x<0:\\ -1$"
+      ],
+      "result": "$\\{-1,0,1\\}$"
+     },
+     {
+      "question": "Find the domain of $f(x)=\\dfrac{1}{x^2-1}$ and $f(-2)$.",
+      "use": [
+       "Polynomial: $f(x)=a_0+a_1x+\\dots+a_nx^n$; Rational: $\\frac{p(x)}{q(x)},\\ q(x)\\ne0$"
+      ],
+      "steps": [
+       "$x^2-1\\ne0\\Rightarrow x\\ne\\pm1$",
+       "$f(-2)=\\frac1{4-1}$"
+      ],
+      "result": "$\\mathbb R-\\{-1,1\\};\\ f(-2)=\\frac13$"
+     },
+     {
+      "question": "Write $f(x)=|x|+|x-2|$ without modulus signs.",
+      "use": [
+       "$\\text{Modulus: }|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}$"
+      ],
+      "steps": [
+       "$x<0:\\ -x-(x-2)=2-2x$",
+       "$0\\le x<2:\\ x-(x-2)=2$",
+       "$x\\ge2:\\ x+x-2=2x-2$"
+      ],
+      "result": "$\\begin{cases}2-2x,&x<0\\\\2,&0\\le x<2\\\\2x-2,&x\\ge2\\end{cases}$"
+     }
+    ]
+   },
+   {
+    "title": "Algebra of real functions",
+    "level": "board",
+    "formulas": [
+     "$(f\\pm g)(x)=f(x)\\pm g(x)$",
+     "$(fg)(x)=f(x)g(x),\\quad (\\alpha f)(x)=\\alpha f(x)$",
+     "$\\left(\\frac fg\\right)(x)=\\frac{f(x)}{g(x)},\\quad g(x)\\ne0$",
+     "Domain of $f\\pm g,\\ fg=D_f\\cap D_g$"
+    ],
+    "examples": [
+     {
+      "question": "$f(x)=x^2$ and $g(x)=2x+1$. Find $(f+g)(x)$, $(f-g)(x)$, $(fg)(x)$ and $\\left(\\frac fg\\right)(x)$.",
+      "use": [
+       "$(f\\pm g)(x)=f(x)\\pm g(x)$",
+       "$(fg)(x)=f(x)g(x),\\quad (\\alpha f)(x)=\\alpha f(x)$",
+       "$\\left(\\frac fg\\right)(x)=\\frac{f(x)}{g(x)},\\quad g(x)\\ne0$"
+      ],
+      "steps": [
+       "$(f+g)(x)=x^2+2x+1,\\quad (f-g)(x)=x^2-2x-1$",
+       "$(fg)(x)=x^2(2x+1)=2x^3+x^2$",
+       "$\\left(\\frac fg\\right)(x)=\\frac{x^2}{2x+1},\\ x\\ne-\\frac12$"
+      ],
+      "result": "$x^2+2x+1,\\ x^2-2x-1,\\ 2x^3+x^2,\\ \\frac{x^2}{2x+1}$"
+     },
+     {
+      "question": "$f(x)=\\sqrt x$ and $g(x)=x$ on $[0,\\infty)$. Find $(f+g)(4)$ and $\\left(\\frac fg\\right)(x)$.",
+      "use": [
+       "$(f\\pm g)(x)=f(x)\\pm g(x)$",
+       "$\\left(\\frac fg\\right)(x)=\\frac{f(x)}{g(x)},\\quad g(x)\\ne0$"
+      ],
+      "steps": [
+       "$(f+g)(4)=2+4$",
+       "$\\frac{\\sqrt x}{x}=\\frac1{\\sqrt x},\\ x>0$"
+      ],
+      "result": "$6;\\quad \\frac1{\\sqrt x},\\ x\\in(0,\\infty)$"
+     },
+     {
+      "question": "$f(x)=x+1$, $g(x)=2x-3$. Find $(3f-2g)(2)$.",
+      "use": [
+       "$(f\\pm g)(x)=f(x)\\pm g(x)$",
+       "$(fg)(x)=f(x)g(x),\\quad (\\alpha f)(x)=\\alpha f(x)$"
+      ],
+      "steps": [
+       "$3f(2)=9,\\quad 2g(2)=2$"
+      ],
+      "result": "$7$"
+     },
+     {
+      "question": "$f(x)=\\sqrt{x-1}$ and $g(x)=\\sqrt{4-x}$. Find the domain of $f+g$.",
+      "use": [
+       "Domain of $f\\pm g,\\ fg=D_f\\cap D_g$"
+      ],
+      "steps": [
+       "$D_f=[1,\\infty),\\quad D_g=(-\\infty,4]$"
+      ],
+      "result": "$[1,4]$"
+     }
+    ]
+   },
+   {
+    "title": "Domain, range and counting (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\sqrt{g(x)}$ needs $g(x)\\ge0;\\quad \\frac1{g(x)}$ needs $g(x)\\ne0$",
+     "Range: write $y=f(x)$ and solve for $x$; find the $y$ that give a real $x$ in the domain",
+     "$x^2\\ge0,\\quad |x|\\ge0,\\quad x-1<[x]\\le x$",
+     "Number of relations from $A$ to $B=2^{n(A)\\, n(B)}$",
+     "Number of functions from $A$ to $B=n(B)^{n(A)}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the domain of $f(x)=\\sqrt{\\dfrac{x-2}{3-x}}$.",
+      "use": [
+       "$\\sqrt{g(x)}$ needs $g(x)\\ge0;\\quad \\frac1{g(x)}$ needs $g(x)\\ne0$"
+      ],
+      "steps": [
+       "$\\frac{x-2}{3-x}\\ge0,\\ x\\ne3$",
+       "Signs: positive on $(2,3),\\ 0$ at $2$"
+      ],
+      "result": "$[2,3)$"
+     },
+     {
+      "question": "Find the range of $f(x)=\\dfrac{x}{1+x^2}$.",
+      "use": [
+       "Range: write $y=f(x)$ and solve for $x$; find the $y$ that give a real $x$ in the domain"
+      ],
+      "steps": [
+       "$y(1+x^2)=x\\Rightarrow yx^2-x+y=0$",
+       "Real $x:\\ 1-4y^2\\ge0$ (and $y=0$ gives $x=0)$"
+      ],
+      "result": "$\\left[-\\frac12,\\frac12\\right]$"
+     },
+     {
+      "question": "Find the range of $f(x)=1-|x-2|$.",
+      "use": [
+       "$x^2\\ge0,\\quad |x|\\ge0,\\quad x-1<[x]\\le x$"
+      ],
+      "steps": [
+       "$|x-2|\\ge0\\Rightarrow f(x)\\le1$",
+       "$f(2)=1;\\ f\\to-\\infty$ as $|x|\\to\\infty$"
+      ],
+      "result": "$(-\\infty,1]$"
+     },
+     {
+      "question": "$n(A)=3$ and $n(B)=2$. Find the number of relations from $A$ to $B$ and the number of functions from $A$ to $B$.",
+      "use": [
+       "Number of relations from $A$ to $B=2^{n(A)\\, n(B)}$",
+       "Number of functions from $A$ to $B=n(B)^{n(A)}$"
+      ],
+      "steps": [
+       "$2^{3\\times2}=64$",
+       "$2^{3}=8$"
+      ],
+      "result": "$64$ relations, $8$ functions"
+     },
+     {
+      "question": "Solve $[x]^2-5[x]+6=0$.",
+      "use": [
+       "$x^2\\ge0,\\quad |x|\\ge0,\\quad x-1<[x]\\le x$"
+      ],
+      "steps": [
+       "$([x]-2)([x]-3)=0\\Rightarrow[x]=2$ or $3$",
+       "$2\\le x<3$ or $3\\le x<4$"
+      ],
+      "result": "$x\\in[2,4)$"
+     },
+     {
+      "question": "Find the range of $f(x)=\\sqrt{9-x^2}$.",
+      "use": [
+       "$\\sqrt{g(x)}$ needs $g(x)\\ge0;\\quad \\frac1{g(x)}$ needs $g(x)\\ne0$",
+       "$x^2\\ge0,\\quad |x|\\ge0,\\quad x-1<[x]\\le x$"
+      ],
+      "steps": [
+       "$9-x^2\\ge0\\Rightarrow -3\\le x\\le3$",
+       "$0\\le9-x^2\\le9$"
+      ],
+      "result": "$[0,3]$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-trigonometric-functions": {
+  "slug": "g11-trigonometric-functions",
+  "number": 3,
+  "title": "Trigonometric Functions",
+  "subtitle": "Radian measure, trigonometric functions, allied angles, sum and difference formulas, multiple angles and sum–product formulas",
+  "sheet": [
+   {
+    "title": "Angles",
+    "items": [
+     "$\\pi$ radians $=180^\\circ$",
+     "$1^\\circ=\\frac{\\pi}{180}$ radian, $1$ radian $=\\frac{180^\\circ}{\\pi}$",
+     "$l=r\\theta\\quad(\\theta$ in radians)"
+    ]
+   },
+   {
+    "title": "Identities and signs",
+    "items": [
+     "$\\sin^2x+\\cos^2x=1,\\quad 1+\\tan^2x=\\sec^2x,\\quad 1+\\cot^2x=\\csc^2x$",
+     "$\\tan x=\\frac{\\sin x}{\\cos x},\\quad \\csc x=\\frac1{\\sin x},\\quad \\sec x=\\frac1{\\cos x}$",
+     "Signs: I all $+$; II $\\sin,\\csc\\ +$; III $\\tan,\\cot\\ +$; IV $\\cos,\\sec\\ +$",
+     "$\\sin(2n\\pi+x)=\\sin x,\\quad \\cos(2n\\pi+x)=\\cos x,\\quad \\tan(n\\pi+x)=\\tan x$"
+    ]
+   },
+   {
+    "title": "Allied angles",
+    "items": [
+     "$\\sin(-x)=-\\sin x,\\quad \\cos(-x)=\\cos x$",
+     "$\\sin\\left(\\frac\\pi2-x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2-x\\right)=\\sin x$",
+     "$\\sin\\left(\\frac\\pi2+x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2+x\\right)=-\\sin x$",
+     "$\\sin(\\pi-x)=\\sin x,\\quad \\cos(\\pi-x)=-\\cos x$",
+     "$\\sin(\\pi+x)=-\\sin x,\\quad \\cos(\\pi+x)=-\\cos x$"
+    ]
+   },
+   {
+    "title": "Sum and difference",
+    "items": [
+     "$\\cos(x\\pm y)=\\cos x\\cos y\\mp\\sin x\\sin y$",
+     "$\\sin(x\\pm y)=\\sin x\\cos y\\pm\\cos x\\sin y$",
+     "$\\tan(x\\pm y)=\\frac{\\tan x\\pm\\tan y}{1\\mp\\tan x\\tan y}$"
+    ]
+   },
+   {
+    "title": "Multiple angles",
+    "items": [
+     "$\\sin2x=2\\sin x\\cos x=\\frac{2\\tan x}{1+\\tan^2x}$",
+     "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$",
+     "$\\tan2x=\\frac{2\\tan x}{1-\\tan^2x}$",
+     "$\\sin3x=3\\sin x-4\\sin^3x,\\quad \\cos3x=4\\cos^3x-3\\cos x,\\quad \\tan3x=\\frac{3\\tan x-\\tan^3x}{1-3\\tan^2x}$"
+    ]
+   },
+   {
+    "title": "Sum and product",
+    "items": [
+     "$\\sin x+\\sin y=2\\sin\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\sin x-\\sin y=2\\cos\\frac{x+y}2\\sin\\frac{x-y}2$",
+     "$\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2$",
+     "$2\\sin x\\cos y=\\sin(x+y)+\\sin(x-y),\\quad 2\\cos x\\cos y=\\cos(x+y)+\\cos(x-y)$",
+     "$2\\sin x\\sin y=\\cos(x-y)-\\cos(x+y)$"
+    ]
+   },
+   {
+    "title": "Equations and triangles (JEE)",
+    "items": [
+     "$\\sin x=0\\iff x=n\\pi;\\quad \\cos x=0\\iff x=(2n+1)\\frac\\pi2$",
+     "$\\sin x=\\sin y\\iff x=n\\pi+(-1)^ny$",
+     "$\\cos x=\\cos y\\iff x=2n\\pi\\pm y;\\quad \\tan x=\\tan y\\iff x=n\\pi+y$",
+     "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$",
+     "$\\cos A=\\frac{b^2+c^2-a^2}{2bc}$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Angles in degrees and radians",
+    "level": "board",
+    "formulas": [
+     "$\\pi$ radians $=180^\\circ$",
+     "$1^\\circ=\\frac{\\pi}{180}$ radian, $1$ radian $=\\frac{180^\\circ}{\\pi}$",
+     "$l=r\\theta\\quad(\\theta$ in radians)",
+     "$1^\\circ=60',\\quad 1'=60''$"
+    ],
+    "examples": [
+     {
+      "question": "Convert $40^\\circ20'$ into radians.",
+      "use": [
+       "$\\pi$ radians $=180^\\circ$",
+       "$1^\\circ=60',\\quad 1'=60''$"
+      ],
+      "steps": [
+       "$40^\\circ20'=40\\tfrac13^\\circ=\\frac{121}{3}^\\circ$",
+       "$\\frac{121}{3}\\times\\frac{\\pi}{180}$"
+      ],
+      "result": "$\\frac{121\\pi}{540}$ radian"
+     },
+     {
+      "question": "Convert $6$ radians into degrees (use $\\pi=\\frac{22}{7}$).",
+      "use": [
+       "$1^\\circ=\\frac{\\pi}{180}$ radian, $1$ radian $=\\frac{180^\\circ}{\\pi}$"
+      ],
+      "steps": [
+       "$6\\times\\frac{180}{\\pi}=6\\times\\frac{180\\times7}{22}=\\frac{3780}{11}^\\circ$",
+       "$=343\\tfrac{7}{11}^\\circ=343^\\circ38'$ (approx.)"
+      ],
+      "result": "$343^\\circ38'$ (approx.)"
+     },
+     {
+      "question": "A wheel makes $360$ revolutions in one minute. Through how many radians does it turn in one second?",
+      "use": [
+       "$\\pi$ radians $=180^\\circ$"
+      ],
+      "steps": [
+       "$6$ revolutions per second",
+       "$6\\times2\\pi$"
+      ],
+      "result": "$12\\pi$"
+     },
+     {
+      "question": "In a circle of radius $21$ cm, an arc is $22$ cm long. Find the angle it subtends at the centre, in degrees.",
+      "use": [
+       "$l=r\\theta\\quad(\\theta$ in radians)",
+       "$1^\\circ=\\frac{\\pi}{180}$ radian, $1$ radian $=\\frac{180^\\circ}{\\pi}$"
+      ],
+      "steps": [
+       "$\\theta=\\frac lr=\\frac{22}{21}$ radian",
+       "$\\frac{22}{21}\\times\\frac{180}{\\pi}=\\frac{22}{21}\\times\\frac{180\\times7}{22}$"
+      ],
+      "result": "$60^\\circ$"
+     }
+    ]
+   },
+   {
+    "title": "Values and signs of trigonometric functions",
+    "level": "board",
+    "formulas": [
+     "$\\sin^2x+\\cos^2x=1,\\quad 1+\\tan^2x=\\sec^2x,\\quad 1+\\cot^2x=\\csc^2x$",
+     "$\\tan x=\\frac{\\sin x}{\\cos x},\\quad \\csc x=\\frac1{\\sin x},\\quad \\sec x=\\frac1{\\cos x}$",
+     "Signs: I all $+$; II $\\sin,\\csc\\ +$; III $\\tan,\\cot\\ +$; IV $\\cos,\\sec\\ +$",
+     "$\\sin(2n\\pi+x)=\\sin x,\\quad \\cos(2n\\pi+x)=\\cos x,\\quad \\tan(n\\pi+x)=\\tan x$",
+     "$-1\\le\\sin x\\le1,\\quad -1\\le\\cos x\\le1$"
+    ],
+    "examples": [
+     {
+      "question": "$\\cos x=-\\frac35$ and $x$ is in the third quadrant. Find the other five functions.",
+      "use": [
+       "$\\sin^2x+\\cos^2x=1,\\quad 1+\\tan^2x=\\sec^2x,\\quad 1+\\cot^2x=\\csc^2x$",
+       "$\\tan x=\\frac{\\sin x}{\\cos x},\\quad \\csc x=\\frac1{\\sin x},\\quad \\sec x=\\frac1{\\cos x}$",
+       "Signs: I all $+$; II $\\sin,\\csc\\ +$; III $\\tan,\\cot\\ +$; IV $\\cos,\\sec\\ +$"
+      ],
+      "steps": [
+       "$\\sin^2x=1-\\frac9{25}=\\frac{16}{25};\\ \\sin x<0\\Rightarrow\\sin x=-\\frac45$",
+       "$\\tan x=\\frac43,\\ \\csc x=-\\frac54,\\ \\sec x=-\\frac53,\\ \\cot x=\\frac34$"
+      ],
+      "result": "$\\sin x=-\\frac45,\\ \\tan x=\\frac43,\\ \\csc x=-\\frac54,\\ \\sec x=-\\frac53,\\ \\cot x=\\frac34$"
+     },
+     {
+      "question": "$\\cot x=-\\frac{5}{12}$ and $x$ is in the second quadrant. Find $\\sin x$ and $\\cos x$.",
+      "use": [
+       "$\\sin^2x+\\cos^2x=1,\\quad 1+\\tan^2x=\\sec^2x,\\quad 1+\\cot^2x=\\csc^2x$",
+       "Signs: I all $+$; II $\\sin,\\csc\\ +$; III $\\tan,\\cot\\ +$; IV $\\cos,\\sec\\ +$"
+      ],
+      "steps": [
+       "$\\csc^2x=1+\\frac{25}{144}=\\frac{169}{144};\\ \\csc x>0\\Rightarrow\\csc x=\\frac{13}{12}$",
+       "$\\sin x=\\frac{12}{13},\\ \\cos x=\\cot x\\sin x=-\\frac5{13}$"
+      ],
+      "result": "$\\sin x=\\frac{12}{13},\\ \\cos x=-\\frac5{13}$"
+     },
+     {
+      "question": "Find $\\sin\\frac{31\\pi}{3}$.",
+      "use": [
+       "$\\sin(2n\\pi+x)=\\sin x,\\quad \\cos(2n\\pi+x)=\\cos x,\\quad \\tan(n\\pi+x)=\\tan x$"
+      ],
+      "steps": [
+       "$\\frac{31\\pi}3=10\\pi+\\frac\\pi3$"
+      ],
+      "result": "$\\frac{\\sqrt3}2$"
+     },
+     {
+      "question": "Find $\\cos(-1710^\\circ)$.",
+      "use": [
+       "$\\sin(2n\\pi+x)=\\sin x,\\quad \\cos(2n\\pi+x)=\\cos x,\\quad \\tan(n\\pi+x)=\\tan x$"
+      ],
+      "steps": [
+       "$\\cos(-1710^\\circ)=\\cos1710^\\circ$",
+       "$1710^\\circ=4\\times360^\\circ+270^\\circ\\Rightarrow\\cos270^\\circ$"
+      ],
+      "result": "$0$"
+     },
+     {
+      "question": "Find $\\tan\\frac{19\\pi}{3}$.",
+      "use": [
+       "$\\sin(2n\\pi+x)=\\sin x,\\quad \\cos(2n\\pi+x)=\\cos x,\\quad \\tan(n\\pi+x)=\\tan x$"
+      ],
+      "steps": [
+       "$\\frac{19\\pi}3=6\\pi+\\frac\\pi3$"
+      ],
+      "result": "$\\sqrt3$"
+     }
+    ]
+   },
+   {
+    "title": "Allied angles",
+    "level": "board",
+    "formulas": [
+     "$\\sin(-x)=-\\sin x,\\quad \\cos(-x)=\\cos x$",
+     "$\\sin\\left(\\frac\\pi2-x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2-x\\right)=\\sin x$",
+     "$\\sin\\left(\\frac\\pi2+x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2+x\\right)=-\\sin x$",
+     "$\\sin(\\pi-x)=\\sin x,\\quad \\cos(\\pi-x)=-\\cos x$",
+     "$\\sin(\\pi+x)=-\\sin x,\\quad \\cos(\\pi+x)=-\\cos x$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\sin\\left(-\\frac{11\\pi}3\\right)$.",
+      "use": [
+       "$\\sin(-x)=-\\sin x,\\quad \\cos(-x)=\\cos x$"
+      ],
+      "steps": [
+       "$\\sin\\left(-\\frac{11\\pi}3\\right)=-\\sin\\frac{11\\pi}3=-\\sin\\left(4\\pi-\\frac\\pi3\\right)$",
+       "$=-\\left(-\\sin\\frac\\pi3\\right)$"
+      ],
+      "result": "$\\frac{\\sqrt3}2$"
+     },
+     {
+      "question": "Find $\\cos150^\\circ$ and $\\sin240^\\circ$.",
+      "use": [
+       "$\\sin(\\pi-x)=\\sin x,\\quad \\cos(\\pi-x)=-\\cos x$",
+       "$\\sin(\\pi+x)=-\\sin x,\\quad \\cos(\\pi+x)=-\\cos x$"
+      ],
+      "steps": [
+       "$\\cos(180^\\circ-30^\\circ)=-\\cos30^\\circ$",
+       "$\\sin(180^\\circ+60^\\circ)=-\\sin60^\\circ$"
+      ],
+      "result": "$-\\frac{\\sqrt3}2,\\ -\\frac{\\sqrt3}2$"
+     },
+     {
+      "question": "Prove that $\\dfrac{\\cos(\\pi+x)\\cos(-x)}{\\sin(\\pi-x)\\cos\\left(\\frac\\pi2+x\\right)}=\\cot^2x$.",
+      "use": [
+       "$\\sin(-x)=-\\sin x,\\quad \\cos(-x)=\\cos x$",
+       "$\\sin\\left(\\frac\\pi2+x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2+x\\right)=-\\sin x$",
+       "$\\sin(\\pi-x)=\\sin x,\\quad \\cos(\\pi-x)=-\\cos x$",
+       "$\\sin(\\pi+x)=-\\sin x,\\quad \\cos(\\pi+x)=-\\cos x$"
+      ],
+      "steps": [
+       "Numerator $=(-\\cos x)(\\cos x)=-\\cos^2x$",
+       "Denominator $=(\\sin x)(-\\sin x)=-\\sin^2x$",
+       "$\\frac{-\\cos^2x}{-\\sin^2x}=\\cot^2x$"
+      ],
+      "result": "Proved"
+     },
+     {
+      "question": "Find $\\sin^2\\frac\\pi6+\\cos^2\\frac\\pi3-\\tan^2\\frac\\pi4$.",
+      "use": [
+       "$\\sin\\left(\\frac\\pi2-x\\right)=\\cos x,\\quad \\cos\\left(\\frac\\pi2-x\\right)=\\sin x$"
+      ],
+      "steps": [
+       "$\\frac14+\\frac14-1$"
+      ],
+      "result": "$-\\frac12$"
+     }
+    ]
+   },
+   {
+    "title": "Sum and difference formulas",
+    "level": "board",
+    "formulas": [
+     "$\\cos(x\\pm y)=\\cos x\\cos y\\mp\\sin x\\sin y$",
+     "$\\sin(x\\pm y)=\\sin x\\cos y\\pm\\cos x\\sin y$",
+     "$\\tan(x\\pm y)=\\frac{\\tan x\\pm\\tan y}{1\\mp\\tan x\\tan y}$",
+     "$\\cot(x+y)=\\frac{\\cot x\\cot y-1}{\\cot y+\\cot x}$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\sin15^\\circ$.",
+      "use": [
+       "$\\sin(x\\pm y)=\\sin x\\cos y\\pm\\cos x\\sin y$"
+      ],
+      "steps": [
+       "$\\sin(45^\\circ-30^\\circ)=\\frac1{\\sqrt2}\\cdot\\frac{\\sqrt3}2-\\frac1{\\sqrt2}\\cdot\\frac12$"
+      ],
+      "result": "$\\frac{\\sqrt3-1}{2\\sqrt2}$"
+     },
+     {
+      "question": "Find $\\tan\\frac{13\\pi}{12}$.",
+      "use": [
+       "$\\tan(x\\pm y)=\\frac{\\tan x\\pm\\tan y}{1\\mp\\tan x\\tan y}$"
+      ],
+      "steps": [
+       "$\\tan\\left(\\pi+\\frac\\pi{12}\\right)=\\tan\\frac\\pi{12}=\\tan\\left(\\frac\\pi4-\\frac\\pi6\\right)$",
+       "$=\\frac{1-\\frac1{\\sqrt3}}{1+\\frac1{\\sqrt3}}=\\frac{\\sqrt3-1}{\\sqrt3+1}$"
+      ],
+      "result": "$2-\\sqrt3$"
+     },
+     {
+      "question": "Prove that $\\cos\\left(\\frac{3\\pi}4+x\\right)-\\cos\\left(\\frac{3\\pi}4-x\\right)=-\\sqrt2\\sin x$.",
+      "use": [
+       "$\\cos(x\\pm y)=\\cos x\\cos y\\mp\\sin x\\sin y$"
+      ],
+      "steps": [
+       "$=\\left(\\cos\\frac{3\\pi}4\\cos x-\\sin\\frac{3\\pi}4\\sin x\\right)-\\left(\\cos\\frac{3\\pi}4\\cos x+\\sin\\frac{3\\pi}4\\sin x\\right)$",
+       "$=-2\\sin\\frac{3\\pi}4\\sin x=-2\\cdot\\frac1{\\sqrt2}\\sin x$"
+      ],
+      "result": "$-\\sqrt2\\sin x$"
+     },
+     {
+      "question": "$\\sin x=\\frac35$, $\\cos y=-\\frac{12}{13}$, both $x$ and $y$ in the second quadrant. Find $\\sin(x+y)$.",
+      "use": [
+       "$\\sin(x\\pm y)=\\sin x\\cos y\\pm\\cos x\\sin y$"
+      ],
+      "steps": [
+       "$\\cos x=-\\frac45,\\quad \\sin y=\\frac5{13}$",
+       "$\\sin(x+y)=\\frac35\\left(-\\frac{12}{13}\\right)+\\left(-\\frac45\\right)\\frac5{13}=-\\frac{36}{65}-\\frac{20}{65}$"
+      ],
+      "result": "$-\\frac{56}{65}$"
+     },
+     {
+      "question": "Prove that $\\dfrac{\\tan\\left(\\frac\\pi4+x\\right)}{\\tan\\left(\\frac\\pi4-x\\right)}=\\left(\\dfrac{1+\\tan x}{1-\\tan x}\\right)^2$.",
+      "use": [
+       "$\\tan(x\\pm y)=\\frac{\\tan x\\pm\\tan y}{1\\mp\\tan x\\tan y}$"
+      ],
+      "steps": [
+       "$\\tan\\left(\\frac\\pi4+x\\right)=\\frac{1+\\tan x}{1-\\tan x},\\quad \\tan\\left(\\frac\\pi4-x\\right)=\\frac{1-\\tan x}{1+\\tan x}$"
+      ],
+      "result": "Proved"
+     }
+    ]
+   },
+   {
+    "title": "Multiple angles",
+    "level": "board",
+    "formulas": [
+     "$\\sin2x=2\\sin x\\cos x=\\frac{2\\tan x}{1+\\tan^2x}$",
+     "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$",
+     "$\\tan2x=\\frac{2\\tan x}{1-\\tan^2x}$",
+     "$\\sin3x=3\\sin x-4\\sin^3x,\\quad \\cos3x=4\\cos^3x-3\\cos x,\\quad \\tan3x=\\frac{3\\tan x-\\tan^3x}{1-3\\tan^2x}$"
+    ],
+    "examples": [
+     {
+      "question": "$\\tan x=-\\frac43$ and $x$ is in the second quadrant. Find $\\sin2x$ and $\\cos2x$.",
+      "use": [
+       "$\\sin2x=2\\sin x\\cos x=\\frac{2\\tan x}{1+\\tan^2x}$",
+       "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$"
+      ],
+      "steps": [
+       "$\\sin2x=\\frac{2\\tan x}{1+\\tan^2x}=\\frac{-\\frac83}{\\frac{25}9}$",
+       "$\\cos2x=\\frac{1-\\frac{16}9}{1+\\frac{16}9}$"
+      ],
+      "result": "$\\sin2x=-\\frac{24}{25},\\ \\cos2x=-\\frac7{25}$"
+     },
+     {
+      "question": "Prove that $\\dfrac{\\sin2x}{1+\\cos2x}=\\tan x$.",
+      "use": [
+       "$\\sin2x=2\\sin x\\cos x=\\frac{2\\tan x}{1+\\tan^2x}$",
+       "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$"
+      ],
+      "steps": [
+       "$\\frac{2\\sin x\\cos x}{2\\cos^2x}$"
+      ],
+      "result": "$\\tan x$"
+     },
+     {
+      "question": "Find $\\sin\\frac x2$, $\\cos\\frac x2$ and $\\tan\\frac x2$ if $\\cos x=-\\frac13$ and $x$ is in the third quadrant.",
+      "use": [
+       "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$"
+      ],
+      "steps": [
+       "$\\pi<x<\\frac{3\\pi}2\\Rightarrow\\frac\\pi2<\\frac x2<\\frac{3\\pi}4$",
+       "$\\sin^2\\frac x2=\\frac{1-\\cos x}2=\\frac23,\\quad \\cos^2\\frac x2=\\frac{1+\\cos x}2=\\frac13$",
+       "$\\sin\\frac x2>0,\\ \\cos\\frac x2<0$"
+      ],
+      "result": "$\\sin\\frac x2=\\frac{\\sqrt6}3,\\ \\cos\\frac x2=-\\frac{\\sqrt3}3,\\ \\tan\\frac x2=-\\sqrt2$"
+     },
+     {
+      "question": "Prove that $\\cos^4x-\\sin^4x=\\cos2x$.",
+      "use": [
+       "$\\cos2x=\\cos^2x-\\sin^2x=2\\cos^2x-1=1-2\\sin^2x=\\frac{1-\\tan^2x}{1+\\tan^2x}$"
+      ],
+      "steps": [
+       "$(\\cos^2x-\\sin^2x)(\\cos^2x+\\sin^2x)=\\cos2x\\cdot1$"
+      ],
+      "result": "Proved"
+     },
+     {
+      "question": "Prove that $\\sin3x+\\sin x=4\\sin x\\cos^2x$ by using $\\sin3x$.",
+      "use": [
+       "$\\sin3x=3\\sin x-4\\sin^3x,\\quad \\cos3x=4\\cos^3x-3\\cos x,\\quad \\tan3x=\\frac{3\\tan x-\\tan^3x}{1-3\\tan^2x}$"
+      ],
+      "steps": [
+       "$3\\sin x-4\\sin^3x+\\sin x=4\\sin x(1-\\sin^2x)$"
+      ],
+      "result": "$4\\sin x\\cos^2x$"
+     }
+    ]
+   },
+   {
+    "title": "Sum–product formulas",
+    "level": "board",
+    "formulas": [
+     "$\\sin x+\\sin y=2\\sin\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\sin x-\\sin y=2\\cos\\frac{x+y}2\\sin\\frac{x-y}2$",
+     "$\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2$",
+     "$2\\sin x\\cos y=\\sin(x+y)+\\sin(x-y),\\quad 2\\cos x\\cos y=\\cos(x+y)+\\cos(x-y)$",
+     "$2\\sin x\\sin y=\\cos(x-y)-\\cos(x+y)$"
+    ],
+    "examples": [
+     {
+      "question": "Prove that $\\dfrac{\\cos7x+\\cos5x}{\\sin7x-\\sin5x}=\\cot x$.",
+      "use": [
+       "$\\sin x+\\sin y=2\\sin\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\sin x-\\sin y=2\\cos\\frac{x+y}2\\sin\\frac{x-y}2$",
+       "$\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2$"
+      ],
+      "steps": [
+       "$\\frac{2\\cos6x\\cos x}{2\\cos6x\\sin x}$"
+      ],
+      "result": "$\\cot x$"
+     },
+     {
+      "question": "Prove that $\\cos4x+\\cos3x+\\cos2x=\\cos3x(1+2\\cos x)$.",
+      "use": [
+       "$\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2$"
+      ],
+      "steps": [
+       "$\\cos4x+\\cos2x=2\\cos3x\\cos x$",
+       "$\\cos3x+2\\cos3x\\cos x$"
+      ],
+      "result": "$\\cos3x(1+2\\cos x)$"
+     },
+     {
+      "question": "Find $\\sin75^\\circ+\\sin15^\\circ$.",
+      "use": [
+       "$\\sin x+\\sin y=2\\sin\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\sin x-\\sin y=2\\cos\\frac{x+y}2\\sin\\frac{x-y}2$"
+      ],
+      "steps": [
+       "$2\\sin45^\\circ\\cos30^\\circ=2\\cdot\\frac1{\\sqrt2}\\cdot\\frac{\\sqrt3}2$"
+      ],
+      "result": "$\\frac{\\sqrt6}2$"
+     },
+     {
+      "question": "Prove that $\\cos20^\\circ\\cos40^\\circ\\cos80^\\circ=\\frac18$.",
+      "use": [
+       "$2\\sin x\\cos y=\\sin(x+y)+\\sin(x-y),\\quad 2\\cos x\\cos y=\\cos(x+y)+\\cos(x-y)$"
+      ],
+      "steps": [
+       "$\\cos20^\\circ\\cos40^\\circ=\\frac12(\\cos60^\\circ+\\cos20^\\circ)$",
+       "$\\text{LHS}=\\frac12\\left(\\frac12\\cos80^\\circ+\\cos20^\\circ\\cos80^\\circ\\right)$",
+       "$\\cos20^\\circ\\cos80^\\circ=\\frac12(\\cos100^\\circ+\\cos60^\\circ)=\\frac12\\left(\\frac12-\\cos80^\\circ\\right)$",
+       "$\\text{LHS}=\\frac12\\left(\\frac12\\cos80^\\circ+\\frac14-\\frac12\\cos80^\\circ\\right)$"
+      ],
+      "result": "$\\frac18$"
+     },
+     {
+      "question": "Prove that $\\sin x+\\sin3x+\\sin5x+\\sin7x=4\\cos x\\cos2x\\sin4x$.",
+      "use": [
+       "$\\sin x+\\sin y=2\\sin\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\sin x-\\sin y=2\\cos\\frac{x+y}2\\sin\\frac{x-y}2$",
+       "$\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2,\\quad \\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2$"
+      ],
+      "steps": [
+       "$(\\sin7x+\\sin x)+(\\sin5x+\\sin3x)=2\\sin4x\\cos3x+2\\sin4x\\cos x$",
+       "$=2\\sin4x(\\cos3x+\\cos x)=2\\sin4x\\cdot2\\cos2x\\cos x$"
+      ],
+      "result": "$4\\cos x\\cos2x\\sin4x$"
+     }
+    ]
+   },
+   {
+    "title": "Trigonometric equations, triangles and extreme values (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\sin x=0\\iff x=n\\pi;\\quad \\cos x=0\\iff x=(2n+1)\\frac\\pi2$",
+     "$\\sin x=\\sin y\\iff x=n\\pi+(-1)^ny$",
+     "$\\cos x=\\cos y\\iff x=2n\\pi\\pm y;\\quad \\tan x=\\tan y\\iff x=n\\pi+y$",
+     "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$",
+     "$\\cos A=\\frac{b^2+c^2-a^2}{2bc}$",
+     "$-\\sqrt{a^2+b^2}\\le a\\sin x+b\\cos x\\le\\sqrt{a^2+b^2}$"
+    ],
+    "examples": [
+     {
+      "question": "Solve $\\sin x=-\\frac{\\sqrt3}2$.",
+      "use": [
+       "$\\sin x=\\sin y\\iff x=n\\pi+(-1)^ny$"
+      ],
+      "steps": [
+       "$-\\frac{\\sqrt3}2=\\sin\\left(-\\frac\\pi3\\right)$"
+      ],
+      "result": "$x=n\\pi+(-1)^{n+1}\\frac\\pi3,\\ n\\in\\mathbb Z$"
+     },
+     {
+      "question": "Solve $\\cos x=\\frac12$ and give the solutions in $[0,2\\pi)$.",
+      "use": [
+       "$\\cos x=\\cos y\\iff x=2n\\pi\\pm y;\\quad \\tan x=\\tan y\\iff x=n\\pi+y$"
+      ],
+      "steps": [
+       "$x=2n\\pi\\pm\\frac\\pi3$"
+      ],
+      "result": "$x=2n\\pi\\pm\\frac\\pi3$; in $[0,2\\pi):\\ \\frac\\pi3,\\frac{5\\pi}3$"
+     },
+     {
+      "question": "Solve $\\sin2x-\\sin4x+\\sin6x=0$.",
+      "use": [
+       "$\\sin x=0\\iff x=n\\pi;\\quad \\cos x=0\\iff x=(2n+1)\\frac\\pi2$"
+      ],
+      "steps": [
+       "$\\sin6x+\\sin2x=2\\sin4x\\cos2x$",
+       "$\\sin4x(2\\cos2x-1)=0$",
+       "$\\sin4x=0\\Rightarrow x=\\frac{n\\pi}4;\\quad \\cos2x=\\frac12\\Rightarrow x=n\\pi\\pm\\frac\\pi6$"
+      ],
+      "result": "$x=\\frac{n\\pi}4$ or $x=n\\pi\\pm\\frac\\pi6$"
+     },
+     {
+      "question": "Solve $2\\cos^2x+3\\sin x=0$.",
+      "use": [
+       "$\\sin x=\\sin y\\iff x=n\\pi+(-1)^ny$"
+      ],
+      "steps": [
+       "$2-2\\sin^2x+3\\sin x=0\\Rightarrow(2\\sin x+1)(\\sin x-2)=0$",
+       "$\\sin x=2\\ \\text{is impossible};\\ \\sin x=-\\frac12=\\sin\\left(-\\frac\\pi6\\right)$"
+      ],
+      "result": "$x=n\\pi+(-1)^{n+1}\\frac\\pi6$"
+     },
+     {
+      "question": "In $\\triangle ABC$, $a=7$, $b=8$, $c=5$. Find angle $A$.",
+      "use": [
+       "$\\cos A=\\frac{b^2+c^2-a^2}{2bc}$"
+      ],
+      "steps": [
+       "$\\cos A=\\frac{64+25-49}{80}=\\frac{40}{80}$"
+      ],
+      "result": "$A=60^\\circ$"
+     },
+     {
+      "question": "Find the greatest and least values of $3\\sin x+4\\cos x$.",
+      "use": [
+       "$-\\sqrt{a^2+b^2}\\le a\\sin x+b\\cos x\\le\\sqrt{a^2+b^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{3^2+4^2}=5$"
+      ],
+      "result": "$5$ and $-5$"
+     },
+     {
+      "question": "In $\\triangle ABC$, $A=45^\\circ$, $B=60^\\circ$, $a=10$. Find $b$.",
+      "use": [
+       "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$"
+      ],
+      "steps": [
+       "$b=\\frac{a\\sin B}{\\sin A}=\\frac{10\\cdot\\frac{\\sqrt3}2}{\\frac1{\\sqrt2}}$"
+      ],
+      "result": "$5\\sqrt6$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-complex-numbers": {
+  "slug": "g11-complex-numbers",
+  "number": 4,
+  "title": "Complex Numbers",
+  "subtitle": "Powers of i, algebra of complex numbers, modulus, conjugate, inverse and the Argand plane",
+  "sheet": [
+   {
+    "title": "Powers of i",
+    "items": [
+     "$i=\\sqrt{-1},\\quad i^2=-1,\\quad i^3=-i,\\quad i^4=1$",
+     "$i^{4k}=1,\\ i^{4k+1}=i,\\ i^{4k+2}=-1,\\ i^{4k+3}=-i$"
+    ]
+   },
+   {
+    "title": "Algebra",
+    "items": [
+     "$(a+ib)\\pm(c+id)=(a\\pm c)+i(b\\pm d)$",
+     "$(a+ib)(c+id)=(ac-bd)+i(ad+bc)$",
+     "$a+ib=c+id\\iff a=c$ and $b=d$",
+     "$(a+ib)^2=a^2-b^2+2abi$"
+    ]
+   },
+   {
+    "title": "Modulus and conjugate",
+    "items": [
+     "$\\bar z=a-ib,\\quad |z|=\\sqrt{a^2+b^2}$",
+     "$z\\bar z=|z|^2$",
+     "$z^{-1}=\\frac{\\bar z}{|z|^2}=\\frac{a-ib}{a^2+b^2}\\quad(z\\ne0)$",
+     "$\\frac{z_1}{z_2}=\\frac{z_1\\bar z_2}{|z_2|^2}$",
+     "$|z_1z_2|=|z_1||z_2|,\\quad \\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|},\\quad \\overline{z_1z_2}=\\bar z_1\\bar z_2$"
+    ]
+   },
+   {
+    "title": "Argand plane",
+    "items": [
+     "$z=a+ib\\ \\leftrightarrow\\ \\text{the point }(a,b)\\ \\text{in the Argand plane}$",
+     "$|z|=$ distance of $(a, b)$ from the origin",
+     "$\\bar z$ is the reflection of $z$ in the real axis"
+    ]
+   },
+   {
+    "title": "Polar form and equations (JEE)",
+    "items": [
+     "$z=r(\\cos\\theta+i\\sin\\theta),\\quad r=|z|,\\ \\theta=\\arg z\\in(-\\pi,\\pi]$",
+     "$\\cos\\theta=\\frac ar,\\quad \\sin\\theta=\\frac br$",
+     "$ax^2+bx+c=0,\\ D<0:\\ x=\\frac{-b\\pm i\\sqrt{-D}}{2a}$",
+     "$\\sqrt{a+ib}=\\pm(x+iy):\\ x^2-y^2=a,\\ 2xy=b,\\ x^2+y^2=\\sqrt{a^2+b^2}$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "The number i and powers of i",
+    "level": "board",
+    "formulas": [
+     "$i=\\sqrt{-1},\\quad i^2=-1,\\quad i^3=-i,\\quad i^4=1$",
+     "$i^{4k}=1,\\ i^{4k+1}=i,\\ i^{4k+2}=-1,\\ i^{4k+3}=-i$",
+     "$\\sqrt{-a}=i\\sqrt a\\quad(a>0);\\quad \\sqrt a\\sqrt b=\\sqrt{ab}$ fails when $a, b<0$",
+     "$z=a+ib:\\ \\operatorname{Re}z=a,\\ \\operatorname{Im}z=b$"
+    ],
+    "examples": [
+     {
+      "question": "Find $i^{35}$, $i^{-39}$ and $i^{9}+i^{19}$.",
+      "use": [
+       "$i^{4k}=1,\\ i^{4k+1}=i,\\ i^{4k+2}=-1,\\ i^{4k+3}=-i$"
+      ],
+      "steps": [
+       "$35=4\\cdot8+3\\Rightarrow i^{35}=-i$",
+       "$i^{-39}=\\frac1{i^{39}}=\\frac1{-i}=\\frac{i}{-i\\cdot i}=i$",
+       "$i^9+i^{19}=i+(-i)=0$"
+      ],
+      "result": "$-i,\\ i,\\ 0$"
+     },
+     {
+      "question": "Find $1+i^2+i^4+i^6+\\dots+i^{20}$.",
+      "use": [
+       "$i^{4k}=1,\\ i^{4k+1}=i,\\ i^{4k+2}=-1,\\ i^{4k+3}=-i$"
+      ],
+      "steps": [
+       "$1-1+1-1+\\dots\\ (11$ terms)",
+       "The first $10$ terms cancel; the last term is $i^{20}=1$"
+      ],
+      "result": "$1$"
+     },
+     {
+      "question": "Find $\\sqrt{-16}+3\\sqrt{-25}+\\sqrt{-36}-\\sqrt{-625}$.",
+      "use": [
+       "$\\sqrt{-a}=i\\sqrt a\\quad(a>0);\\quad \\sqrt a\\sqrt b=\\sqrt{ab}$ fails when $a, b<0$"
+      ],
+      "steps": [
+       "$4i+15i+6i-25i$"
+      ],
+      "result": "$0$"
+     },
+     {
+      "question": "Find the mistake: $\\sqrt{-4}\\sqrt{-9}=\\sqrt{36}=6$.",
+      "use": [
+       "$\\sqrt{-a}=i\\sqrt a\\quad(a>0);\\quad \\sqrt a\\sqrt b=\\sqrt{ab}$ fails when $a, b<0$"
+      ],
+      "steps": [
+       "$\\sqrt{-4}\\sqrt{-9}=(2i)(3i)=6i^2$"
+      ],
+      "result": "$-6;\\ \\sqrt a\\sqrt b=\\sqrt{ab}$ needs $a, b\\ge0$"
+     },
+     {
+      "question": "Write the real and imaginary parts of $z=\\frac13-2\\sqrt5\\,i$.",
+      "use": [
+       "$z=a+ib:\\ \\operatorname{Re}z=a,\\ \\operatorname{Im}z=b$"
+      ],
+      "steps": [
+       "$a=\\frac13,\\quad b=-2\\sqrt5$"
+      ],
+      "result": "$\\operatorname{Re}z=\\frac13,\\ \\operatorname{Im}z=-2\\sqrt5$"
+     }
+    ]
+   },
+   {
+    "title": "Algebra of complex numbers",
+    "level": "board",
+    "formulas": [
+     "$(a+ib)\\pm(c+id)=(a\\pm c)+i(b\\pm d)$",
+     "$(a+ib)(c+id)=(ac-bd)+i(ad+bc)$",
+     "$a+ib=c+id\\iff a=c$ and $b=d$",
+     "$(a+ib)^2=a^2-b^2+2abi$"
+    ],
+    "examples": [
+     {
+      "question": "Express $(5-3i)^3$ in the form $a+ib$.",
+      "use": [
+       "$(a+ib)(c+id)=(ac-bd)+i(ad+bc)$",
+       "$(a+ib)^2=a^2-b^2+2abi$"
+      ],
+      "steps": [
+       "$(5-3i)^2=25-9-30i=16-30i$",
+       "$(16-30i)(5-3i)=80-90+i(-48-150)$"
+      ],
+      "result": "$-10-198i$"
+     },
+     {
+      "question": "Express $\\left(-2-\\frac13i\\right)^3$ in the form $a+ib$.",
+      "use": [
+       "$(a+ib)(c+id)=(ac-bd)+i(ad+bc)$",
+       "$(a+ib)^2=a^2-b^2+2abi$"
+      ],
+      "steps": [
+       "$\\left(-2-\\frac13i\\right)^2=4-\\frac19+\\frac43i=\\frac{35}9+\\frac43i$",
+       "$\\left(\\frac{35}9+\\frac43i\\right)\\left(-2-\\frac13i\\right)=-\\frac{70}9+\\frac49+i\\left(-\\frac{35}{27}-\\frac83\\right)$"
+      ],
+      "result": "$-\\frac{22}3-\\frac{107}{27}i$"
+     },
+     {
+      "question": "Find real $x,y$ if $(3x-7)+2iy=-5y+(5+x)i$.",
+      "use": [
+       "$a+ib=c+id\\iff a=c$ and $b=d$"
+      ],
+      "steps": [
+       "$3x-7=-5y,\\quad 2y=5+x$",
+       "$x=2y-5\\Rightarrow 6y-15-7=-5y\\Rightarrow y=2$"
+      ],
+      "result": "$x=-1,\\ y=2$"
+     },
+     {
+      "question": "Find real $x,y$ if $(x+iy)(2-3i)=4+i$.",
+      "use": [
+       "$(a+ib)(c+id)=(ac-bd)+i(ad+bc)$",
+       "$a+ib=c+id\\iff a=c$ and $b=d$"
+      ],
+      "steps": [
+       "$(2x+3y)+i(2y-3x)=4+i$",
+       "$2x+3y=4,\\ -3x+2y=1$"
+      ],
+      "result": "$x=\\frac5{13},\\ y=\\frac{14}{13}$"
+     },
+     {
+      "question": "Simplify $(1-i)^4$.",
+      "use": [
+       "$(a+ib)^2=a^2-b^2+2abi$"
+      ],
+      "steps": [
+       "$(1-i)^2=1-1-2i=-2i$",
+       "$(-2i)^2=4i^2$"
+      ],
+      "result": "$-4$"
+     }
+    ]
+   },
+   {
+    "title": "Conjugate, modulus and inverse",
+    "level": "board",
+    "formulas": [
+     "$\\bar z=a-ib,\\quad |z|=\\sqrt{a^2+b^2}$",
+     "$z\\bar z=|z|^2$",
+     "$z^{-1}=\\frac{\\bar z}{|z|^2}=\\frac{a-ib}{a^2+b^2}\\quad(z\\ne0)$",
+     "$\\frac{z_1}{z_2}=\\frac{z_1\\bar z_2}{|z_2|^2}$",
+     "$|z_1z_2|=|z_1||z_2|,\\quad \\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|},\\quad \\overline{z_1z_2}=\\bar z_1\\bar z_2$"
+    ],
+    "examples": [
+     {
+      "question": "Find the multiplicative inverse of $4-3i$.",
+      "use": [
+       "$z^{-1}=\\frac{\\bar z}{|z|^2}=\\frac{a-ib}{a^2+b^2}\\quad(z\\ne0)$"
+      ],
+      "steps": [
+       "$|z|^2=16+9=25$",
+       "$\\frac{4+3i}{25}$"
+      ],
+      "result": "$\\frac4{25}+\\frac3{25}i$"
+     },
+     {
+      "question": "Express $\\dfrac{3+2i}{1-i}$ in the form $a+ib$.",
+      "use": [
+       "$\\frac{z_1}{z_2}=\\frac{z_1\\bar z_2}{|z_2|^2}$"
+      ],
+      "steps": [
+       "$\\frac{(3+2i)(1+i)}{(1-i)(1+i)}=\\frac{3+3i+2i-2}{2}$"
+      ],
+      "result": "$\\frac12+\\frac52i$"
+     },
+     {
+      "question": "Find the modulus and the conjugate of $\\dfrac{1+i}{1-i}$.",
+      "use": [
+       "$\\frac{z_1}{z_2}=\\frac{z_1\\bar z_2}{|z_2|^2}$",
+       "$\\bar z=a-ib,\\quad |z|=\\sqrt{a^2+b^2}$"
+      ],
+      "steps": [
+       "$\\frac{(1+i)^2}{2}=\\frac{2i}2=i$"
+      ],
+      "result": "$|z|=1,\\ \\bar z=-i$"
+     },
+     {
+      "question": "$z_1=2-i$ and $z_2=1+i$. Find $\\left|\\dfrac{z_1+z_2+1}{z_1-z_2+1}\\right|$.",
+      "use": [
+       "$|z_1z_2|=|z_1||z_2|,\\quad \\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|},\\quad \\overline{z_1z_2}=\\bar z_1\\bar z_2$"
+      ],
+      "steps": [
+       "$z_1+z_2+1=4,\\quad z_1-z_2+1=2-2i$",
+       "$\\frac{|4|}{|2-2i|}=\\frac4{2\\sqrt2}$"
+      ],
+      "result": "$\\sqrt2$"
+     },
+     {
+      "question": "$(x+iy)^3=u+iv$. Show that $\\dfrac ux+\\dfrac vy=4(x^2-y^2)$.",
+      "use": [],
+      "steps": [
+       "$(x+iy)^3=x^3-3xy^2+i(3x^2y-y^3)$",
+       "$\\frac ux=x^2-3y^2,\\quad \\frac vy=3x^2-y^2$",
+       "$\\frac ux+\\frac vy=4x^2-4y^2$"
+      ],
+      "result": "$4(x^2-y^2)$"
+     },
+     {
+      "question": "Find the modulus of $\\dfrac{(3+i)(1-2i)}{2+i}$.",
+      "use": [
+       "$|z_1z_2|=|z_1||z_2|,\\quad \\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|},\\quad \\overline{z_1z_2}=\\bar z_1\\bar z_2$"
+      ],
+      "steps": [
+       "$\\frac{|3+i|\\,|1-2i|}{|2+i|}=\\frac{\\sqrt{10}\\sqrt5}{\\sqrt5}$"
+      ],
+      "result": "$\\sqrt{10}$"
+     }
+    ]
+   },
+   {
+    "title": "The Argand plane",
+    "level": "board",
+    "formulas": [
+     "$z=a+ib\\ \\leftrightarrow\\ \\text{the point }(a,b)\\ \\text{in the Argand plane}$",
+     "$|z|=$ distance of $(a, b)$ from the origin",
+     "$\\bar z$ is the reflection of $z$ in the real axis",
+     "$|z_1-z_2|=$ distance between the points $z_1, z_2$"
+    ],
+    "examples": [
+     {
+      "question": "Plot $z=3+4i$ and $\\bar z$. Find $|z|$.",
+      "use": [
+       "$z=a+ib\\ \\leftrightarrow\\ \\text{the point }(a,b)\\ \\text{in the Argand plane}$",
+       "$|z|=$ distance of $(a, b)$ from the origin",
+       "$\\bar z$ is the reflection of $z$ in the real axis"
+      ],
+      "steps": [
+       "$z\\to(3,4),\\quad \\bar z=3-4i\\to(3,-4)$",
+       "$|z|=\\sqrt{9+16}$"
+      ],
+      "result": "$|z|=5$"
+     },
+     {
+      "question": "Find the distance between $z_1=1+2i$ and $z_2=4-2i$.",
+      "use": [
+       "$|z_1-z_2|=$ distance between the points $z_1, z_2$"
+      ],
+      "steps": [
+       "$|z_1-z_2|=|-3+4i|$"
+      ],
+      "result": "$5$"
+     },
+     {
+      "question": "In which quadrant does $z=\\dfrac{1}{1+i}-2i$ lie?",
+      "use": [
+       "$z=a+ib\\ \\leftrightarrow\\ \\text{the point }(a,b)\\ \\text{in the Argand plane}$"
+      ],
+      "steps": [
+       "$\\frac{1-i}{2}-2i=\\frac12-\\frac52i$",
+       "$(\\tfrac12,-\\tfrac52)$"
+      ],
+      "result": "Fourth quadrant"
+     },
+     {
+      "question": "Describe the set of points $z$ with $|z|=2$.",
+      "use": [
+       "$|z|=$ distance of $(a, b)$ from the origin"
+      ],
+      "steps": [
+       "Distance from the origin is $2$"
+      ],
+      "result": "The circle with centre $(0,0)$ and radius $2$"
+     }
+    ]
+   },
+   {
+    "title": "Polar form, quadratic equations and square roots (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$z=r(\\cos\\theta+i\\sin\\theta),\\quad r=|z|,\\ \\theta=\\arg z\\in(-\\pi,\\pi]$",
+     "$\\cos\\theta=\\frac ar,\\quad \\sin\\theta=\\frac br$",
+     "$ax^2+bx+c=0,\\ D<0:\\ x=\\frac{-b\\pm i\\sqrt{-D}}{2a}$",
+     "$\\sqrt{a+ib}=\\pm(x+iy):\\ x^2-y^2=a,\\ 2xy=b,\\ x^2+y^2=\\sqrt{a^2+b^2}$"
+    ],
+    "examples": [
+     {
+      "question": "Write $z=-1+i\\sqrt3$ in polar form.",
+      "use": [
+       "$z=r(\\cos\\theta+i\\sin\\theta),\\quad r=|z|,\\ \\theta=\\arg z\\in(-\\pi,\\pi]$",
+       "$\\cos\\theta=\\frac ar,\\quad \\sin\\theta=\\frac br$"
+      ],
+      "steps": [
+       "$r=\\sqrt{1+3}=2$",
+       "$\\cos\\theta=-\\frac12,\\ \\sin\\theta=\\frac{\\sqrt3}2\\Rightarrow\\theta=\\frac{2\\pi}3$"
+      ],
+      "result": "$2\\left(\\cos\\frac{2\\pi}3+i\\sin\\frac{2\\pi}3\\right)$"
+     },
+     {
+      "question": "Write $z=\\dfrac{1+7i}{(2-i)^2}$ in polar form.",
+      "use": [
+       "$z=r(\\cos\\theta+i\\sin\\theta),\\quad r=|z|,\\ \\theta=\\arg z\\in(-\\pi,\\pi]$",
+       "$\\cos\\theta=\\frac ar,\\quad \\sin\\theta=\\frac br$"
+      ],
+      "steps": [
+       "$(2-i)^2=3-4i;\\quad \\frac{(1+7i)(3+4i)}{25}=\\frac{-25+25i}{25}=-1+i$",
+       "$r=\\sqrt2,\\ \\theta=\\frac{3\\pi}4$"
+      ],
+      "result": "$\\sqrt2\\left(\\cos\\frac{3\\pi}4+i\\sin\\frac{3\\pi}4\\right)$"
+     },
+     {
+      "question": "Solve $x^2+x+1=0$.",
+      "use": [
+       "$ax^2+bx+c=0,\\ D<0:\\ x=\\frac{-b\\pm i\\sqrt{-D}}{2a}$"
+      ],
+      "steps": [
+       "$D=1-4=-3$"
+      ],
+      "result": "$x=\\frac{-1\\pm i\\sqrt3}{2}$"
+     },
+     {
+      "question": "Solve $\\sqrt2\\,x^2+x+\\sqrt2=0$.",
+      "use": [
+       "$ax^2+bx+c=0,\\ D<0:\\ x=\\frac{-b\\pm i\\sqrt{-D}}{2a}$"
+      ],
+      "steps": [
+       "$D=1-8=-7$"
+      ],
+      "result": "$x=\\frac{-1\\pm i\\sqrt7}{2\\sqrt2}$"
+     },
+     {
+      "question": "Find the square roots of $-15-8i$.",
+      "use": [
+       "$\\sqrt{a+ib}=\\pm(x+iy):\\ x^2-y^2=a,\\ 2xy=b,\\ x^2+y^2=\\sqrt{a^2+b^2}$"
+      ],
+      "steps": [
+       "$x^2-y^2=-15,\\quad x^2+y^2=17,\\quad 2xy=-8$",
+       "$x^2=1,\\ y^2=16;\\ xy<0$"
+      ],
+      "result": "$\\pm(1-4i)$"
+     },
+     {
+      "question": "Find $z$ if $|z|=|z-2|$ and $\\operatorname{Im}z=3$.",
+      "use": [
+       "$z=r(\\cos\\theta+i\\sin\\theta),\\quad r=|z|,\\ \\theta=\\arg z\\in(-\\pi,\\pi]$"
+      ],
+      "steps": [
+       "$z=x+3i:\\ x^2+9=(x-2)^2+9$",
+       "$x=1$"
+      ],
+      "result": "$z=1+3i$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-linear-inequalities": {
+  "slug": "g11-linear-inequalities",
+  "number": 5,
+  "title": "Linear Inequalities",
+  "subtitle": "Rules for inequalities, algebraic solutions in one variable, the number line and word problems",
+  "sheet": [
+   {
+    "title": "Rules",
+    "items": [
+     "$a<b\\Rightarrow a\\pm c<b\\pm c$",
+     "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$",
+     "$a<b,\\ k<0\\Rightarrow ka>kb$ and $\\frac ak>\\frac bk$ (reverse the sign)"
+    ]
+   },
+   {
+    "title": "Number line and intervals",
+    "items": [
+     "$x<a:\\ (-\\infty,a);\\quad x\\le a:\\ (-\\infty,a]$",
+     "$x>a:\\ (a,\\infty);\\quad x\\ge a:\\ [a,\\infty)$",
+     "On the number line: open circle for $<,>$; filled circle for $\\le,\\ge$",
+     "$a<px+q<b:$ apply each step to all three parts"
+    ]
+   },
+   {
+    "title": "Word problems",
+    "items": [
+     "Average of $n$ numbers $=\\frac{\\text{sum}}{n}$",
+     "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+    ]
+   },
+   {
+    "title": "Two variables and more (JEE)",
+    "items": [
+     "$ax+by<c:$ draw $ax+by=c$ (dashed for $<,>$; solid for $\\le,\\ge)$",
+     "Test a point (often $(0,0))$ to choose the half-plane",
+     "System: the solution region is the common region of all half-planes",
+     "$|x|<a\\iff -a<x<a;\\quad |x|>a\\iff x<-a$ or $x>a\\quad(a>0)$",
+     "$\\frac{p(x)}{q(x)}>0:$ mark the zeros of $p, q$ and test the sign in each interval"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Rules for solving an inequality",
+    "level": "board",
+    "formulas": [
+     "$a<b\\Rightarrow a\\pm c<b\\pm c$",
+     "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$",
+     "$a<b,\\ k<0\\Rightarrow ka>kb$ and $\\frac ak>\\frac bk$ (reverse the sign)",
+     "$x\\in\\mathbb N,\\ \\mathbb Z$ or $\\mathbb R$ decides which solutions are allowed"
+    ],
+    "examples": [
+     {
+      "question": "Solve $30x<200$ when (i) $x\\in\\mathbb N$ (ii) $x\\in\\mathbb Z$.",
+      "use": [
+       "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$",
+       "$x\\in\\mathbb N,\\ \\mathbb Z$ or $\\mathbb R$ decides which solutions are allowed"
+      ],
+      "steps": [
+       "$x<\\frac{200}{30}=\\frac{20}3=6\\tfrac23$"
+      ],
+      "result": "(i) $\\{1,2,3,4,5,6\\}$;(ii) $\\{\\dots,-1,0,1,\\dots,6\\}$"
+     },
+     {
+      "question": "Solve $-12x>30$ when $x\\in\\mathbb Z$.",
+      "use": [
+       "$a<b,\\ k<0\\Rightarrow ka>kb$ and $\\frac ak>\\frac bk$ (reverse the sign)",
+       "$x\\in\\mathbb N,\\ \\mathbb Z$ or $\\mathbb R$ decides which solutions are allowed"
+      ],
+      "steps": [
+       "$x<\\frac{30}{-12}=-\\frac52$"
+      ],
+      "result": "$\\{\\dots,-5,-4,-3\\}$"
+     },
+     {
+      "question": "Solve $5x-3<3x+1$ when $x\\in\\mathbb R$.",
+      "use": [
+       "$a<b\\Rightarrow a\\pm c<b\\pm c$",
+       "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$"
+      ],
+      "steps": [
+       "$5x-3x<1+3\\Rightarrow 2x<4$"
+      ],
+      "result": "$x<2$, i.e. $(-\\infty,2)$"
+     },
+     {
+      "question": "Solve $3(x-1)\\le2(x-3)$.",
+      "use": [
+       "$a<b\\Rightarrow a\\pm c<b\\pm c$"
+      ],
+      "steps": [
+       "$3x-3\\le2x-6\\Rightarrow x\\le-3$"
+      ],
+      "result": "$(-\\infty,-3]$"
+     },
+     {
+      "question": "Solve $\\dfrac{x}{3}>\\dfrac{x}{2}+1$.",
+      "use": [
+       "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$",
+       "$a<b\\Rightarrow a\\pm c<b\\pm c$"
+      ],
+      "steps": [
+       "$\\times6:\\ 2x>3x+6\\Rightarrow -x>6$",
+       "$\\times(-1)$ reverses the sign"
+      ],
+      "result": "$x<-6$"
+     },
+     {
+      "question": "Solve $\\dfrac{2x-1}{3}\\ge\\dfrac{3x-2}{4}-\\dfrac{2-x}{5}$.",
+      "use": [
+       "$a<b,\\ k>0\\Rightarrow ka<kb$ and $\\frac ak<\\frac bk$",
+       "$a<b\\Rightarrow a\\pm c<b\\pm c$"
+      ],
+      "steps": [
+       "$\\times60:\\ 20(2x-1)\\ge15(3x-2)-12(2-x)$",
+       "$40x-20\\ge57x-54\\Rightarrow 34\\ge17x$"
+      ],
+      "result": "$x\\le2$"
+     }
+    ]
+   },
+   {
+    "title": "Number line and double inequalities",
+    "level": "board",
+    "formulas": [
+     "$x<a:\\ (-\\infty,a);\\quad x\\le a:\\ (-\\infty,a]$",
+     "$x>a:\\ (a,\\infty);\\quad x\\ge a:\\ [a,\\infty)$",
+     "On the number line: open circle for $<,>$; filled circle for $\\le,\\ge$",
+     "$a<px+q<b:$ apply each step to all three parts"
+    ],
+    "examples": [
+     {
+      "question": "Solve $7x+3<5x+9$ and show it on the number line.",
+      "use": [
+       "$x<a:\\ (-\\infty,a);\\quad x\\le a:\\ (-\\infty,a]$",
+       "On the number line: open circle for $<,>$; filled circle for $\\le,\\ge$"
+      ],
+      "steps": [
+       "$2x<6\\Rightarrow x<3$"
+      ],
+      "result": "$(-\\infty,3)$ with an open circle at $3$"
+     },
+     {
+      "question": "Solve $\\dfrac{3x-4}{2}\\ge\\dfrac{x+1}{4}-1$ and show it on the number line.",
+      "use": [
+       "$x>a:\\ (a,\\infty);\\quad x\\ge a:\\ [a,\\infty)$",
+       "On the number line: open circle for $<,>$; filled circle for $\\le,\\ge$"
+      ],
+      "steps": [
+       "$\\times4:\\ 6x-8\\ge x+1-4\\Rightarrow 5x\\ge5$"
+      ],
+      "result": "$[1,\\infty)$ with a filled circle at $1$"
+     },
+     {
+      "question": "Solve $-8\\le5x-3<7$.",
+      "use": [
+       "$a<px+q<b:$ apply each step to all three parts"
+      ],
+      "steps": [
+       "$-5\\le5x<10\\Rightarrow -1\\le x<2$"
+      ],
+      "result": "$[-1,2)$"
+     },
+     {
+      "question": "Solve $-5\\le\\dfrac{5-3x}{2}\\le8$.",
+      "use": [
+       "$a<px+q<b:$ apply each step to all three parts"
+      ],
+      "steps": [
+       "$-10\\le5-3x\\le16\\Rightarrow -15\\le-3x\\le11$",
+       "$\\div(-3):\\ 5\\ge x\\ge-\\frac{11}3$"
+      ],
+      "result": "$\\left[-\\frac{11}3,5\\right]$"
+     },
+     {
+      "question": "Solve the system $3x-7<5+x$ and $11-5x\\le1$.",
+      "use": [
+       "$x<a:\\ (-\\infty,a);\\quad x\\le a:\\ (-\\infty,a]$",
+       "$x>a:\\ (a,\\infty);\\quad x\\ge a:\\ [a,\\infty)$"
+      ],
+      "steps": [
+       "$2x<12\\Rightarrow x<6$",
+       "$-5x\\le-10\\Rightarrow x\\ge2$"
+      ],
+      "result": "$[2,6)$"
+     },
+     {
+      "question": "Solve the system $2(x-1)<x+5$ and $3(x+2)>2-x$.",
+      "use": [
+       "$x<a:\\ (-\\infty,a);\\quad x\\le a:\\ (-\\infty,a]$",
+       "$x>a:\\ (a,\\infty);\\quad x\\ge a:\\ [a,\\infty)$"
+      ],
+      "steps": [
+       "$2x-2<x+5\\Rightarrow x<7$",
+       "$3x+6>2-x\\Rightarrow 4x>-4\\Rightarrow x>-1$"
+      ],
+      "result": "$(-1,7)$"
+     }
+    ]
+   },
+   {
+    "title": "Word problems",
+    "level": "board",
+    "formulas": [
+     "Average of $n$ numbers $=\\frac{\\text{sum}}{n}$",
+     "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$",
+     "Consecutive integers: $x,\\ x+1$; consecutive odd/even: $x,\\ x+2$"
+    ],
+    "examples": [
+     {
+      "question": "Ravi scored $70$ and $75$ in two tests. Find the least score in the third test for an average of at least $60$.",
+      "use": [
+       "Average of $n$ numbers $=\\frac{\\text{sum}}{n}$",
+       "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+      ],
+      "steps": [
+       "$\\frac{70+75+x}{3}\\ge60$",
+       "$145+x\\ge180$"
+      ],
+      "result": "$35$"
+     },
+     {
+      "question": "Find all pairs of consecutive odd natural numbers, both greater than $10$, whose sum is less than $40$.",
+      "use": [
+       "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+      ],
+      "steps": [
+       "$x>10,\\ x+2>10,\\ x+x+2<40$",
+       "$x<19;\\ x$ odd, $x\\ge11$"
+      ],
+      "result": "$(11,13),(13,15),(15,17),(17,19)$"
+     },
+     {
+      "question": "A solution is to be kept between $68^\\circ\\text{F}$ and $77^\\circ\\text{F}$. Find the range in $^\\circ\\text{C}$ if $F=\\frac95C+32$.",
+      "use": [
+       "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+      ],
+      "steps": [
+       "$68<\\frac95C+32<77\\Rightarrow 36<\\frac95C<45$"
+      ],
+      "result": "$20<C<25$"
+     },
+     {
+      "question": "The longest side of a triangle is $3$ times the shortest side, and the third side is $2$ cm shorter than the longest side. The perimeter is at least $61$ cm. Find the least length of the shortest side.",
+      "use": [
+       "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+      ],
+      "steps": [
+       "$x+3x+(3x-2)\\ge61$",
+       "$7x\\ge63$"
+      ],
+      "result": "$9$ cm"
+     },
+     {
+      "question": "A man wants to cut three pieces from a $91$ cm board. The second is $3$ cm longer than the shortest and the third is twice the shortest. The third must be at least $5$ cm longer than the second. Find the possible lengths of the shortest piece.",
+      "use": [
+       "\"at least\" $\\to\\ \\ge$;\"at most\" $\\to\\ \\le$;\"more than\" $\\to\\ >$"
+      ],
+      "steps": [
+       "$x+(x+3)+2x\\le91\\Rightarrow x\\le22$",
+       "$2x\\ge(x+3)+5\\Rightarrow x\\ge8$"
+      ],
+      "result": "$8\\le x\\le22$ cm"
+     }
+    ]
+   },
+   {
+    "title": "Graphs, systems, modulus and rational inequalities (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$ax+by<c:$ draw $ax+by=c$ (dashed for $<,>$; solid for $\\le,\\ge)$",
+     "Test a point (often $(0,0))$ to choose the half-plane",
+     "System: the solution region is the common region of all half-planes",
+     "$|x|<a\\iff -a<x<a;\\quad |x|>a\\iff x<-a$ or $x>a\\quad(a>0)$",
+     "$\\frac{p(x)}{q(x)}>0:$ mark the zeros of $p, q$ and test the sign in each interval"
+    ],
+    "examples": [
+     {
+      "question": "Shade the region $3x+2y>6$.",
+      "use": [
+       "$ax+by<c:$ draw $ax+by=c$ (dashed for $<,>$; solid for $\\le,\\ge)$",
+       "Test a point (often $(0,0))$ to choose the half-plane"
+      ],
+      "steps": [
+       "Line $3x+2y=6$ through $(2,0),(0,3)$, dashed",
+       "$(0,0):\\ 0>6$ is false"
+      ],
+      "result": "The half-plane away from the origin"
+     },
+     {
+      "question": "Find the corner points of the region $x+y\\le5$, $x\\ge1$, $y\\ge1$.",
+      "use": [
+       "System: the solution region is the common region of all half-planes"
+      ],
+      "steps": [
+       "$x=1,\\ y=1;\\quad x=1,\\ y=4;\\quad x=4,\\ y=1$"
+      ],
+      "result": "$(1,1),(1,4),(4,1)$"
+     },
+     {
+      "question": "Solve $|x-3|<5$.",
+      "use": [
+       "$|x|<a\\iff -a<x<a;\\quad |x|>a\\iff x<-a$ or $x>a\\quad(a>0)$"
+      ],
+      "steps": [
+       "$-5<x-3<5$"
+      ],
+      "result": "$(-2,8)$"
+     },
+     {
+      "question": "Solve $|2x-1|\\ge3$.",
+      "use": [
+       "$|x|<a\\iff -a<x<a;\\quad |x|>a\\iff x<-a$ or $x>a\\quad(a>0)$"
+      ],
+      "steps": [
+       "$2x-1\\le-3$ or $2x-1\\ge3$"
+      ],
+      "result": "$(-\\infty,-1]\\cup[2,\\infty)$"
+     },
+     {
+      "question": "Solve $\\dfrac{x-1}{x+2}\\ge0$.",
+      "use": [
+       "$\\frac{p(x)}{q(x)}>0:$ mark the zeros of $p, q$ and test the sign in each interval"
+      ],
+      "steps": [
+       "Zeros: $1,\\ -2;\\ x\\ne-2$",
+       "$+$ on $(-\\infty,-2),\\ -$ on $(-2,1),\\ +$ on $(1,\\infty)$"
+      ],
+      "result": "$(-\\infty,-2)\\cup[1,\\infty)$"
+     },
+     {
+      "question": "Solve $\\dfrac{2x+3}{x-1}<1$.",
+      "use": [
+       "$\\frac{p(x)}{q(x)}>0:$ mark the zeros of $p, q$ and test the sign in each interval"
+      ],
+      "steps": [
+       "$\\frac{2x+3-(x-1)}{x-1}<0\\Rightarrow\\frac{x+4}{x-1}<0$"
+      ],
+      "result": "$(-4,1)$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-permutations-combinations": {
+  "slug": "g11-permutations-combinations",
+  "number": 6,
+  "title": "Permutations and Combinations",
+  "subtitle": "Fundamental principle of counting, factorials, permutations and combinations",
+  "sheet": [
+   {
+    "title": "Counting principle",
+    "items": [
+     "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways",
+     "Addition: $m$ ways or $n$ ways (not both) $\\Rightarrow m+n$ ways",
+     "Repetition allowed: $n$ choices for every place"
+    ]
+   },
+   {
+    "title": "Factorial",
+    "items": [
+     "$n!=1\\times2\\times\\dots\\times n,\\quad 0!=1$",
+     "$n!=n\\times(n-1)!$"
+    ]
+   },
+   {
+    "title": "Permutations",
+    "items": [
+     "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$",
+     "Repetition allowed: $n^r$ arrangements",
+     "$n$ objects with $p$ alike, $q$ alike, $\\dots:\\ \\frac{n!}{p!\\, q!\\cdots}$"
+    ]
+   },
+   {
+    "title": "Combinations",
+    "items": [
+     "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$",
+     "${}^nC_r={}^nC_{n-r},\\quad {}^nC_0={}^nC_n=1$",
+     "${}^nC_a={}^nC_b\\Rightarrow a=b$ or $a+b=n$",
+     "${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$"
+    ]
+   },
+   {
+    "title": "Restrictions (JEE)",
+    "items": [
+     "Objects together: tie them as one unit, then arrange inside the unit",
+     "Objects apart (gaps): arrange the others, then place them in the gaps",
+     "Circular arrangements of $n$ objects $=(n-1)!$",
+     "Number of diagonals of an $n$-gon $={}^nC_2-n$",
+     "Selections of at least one from $n$ distinct objects $=2^n-1$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Fundamental principle of counting",
+    "level": "board",
+    "formulas": [
+     "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways",
+     "Addition: $m$ ways or $n$ ways (not both) $\\Rightarrow m+n$ ways",
+     "Repetition allowed: $n$ choices for every place"
+    ],
+    "examples": [
+     {
+      "question": "How many $3$-digit numbers can be formed from $1,2,3,4,5$ if repetition is allowed?",
+      "use": [
+       "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways",
+       "Repetition allowed: $n$ choices for every place"
+      ],
+      "steps": [
+       "$5\\times5\\times5$"
+      ],
+      "result": "$125$"
+     },
+     {
+      "question": "How many $3$-digit even numbers can be formed from $1,2,3,4,5,6$ with repetition allowed?",
+      "use": [
+       "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways",
+       "Repetition allowed: $n$ choices for every place"
+      ],
+      "steps": [
+       "Units: $2,4,6\\to3$ ways; tens and hundreds: $6$ each",
+       "$6\\times6\\times3$"
+      ],
+      "result": "$108$"
+     },
+     {
+      "question": "How many $4$-letter codes can be formed from the first $10$ letters if no letter is repeated?",
+      "use": [
+       "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways"
+      ],
+      "steps": [
+       "$10\\times9\\times8\\times7$"
+      ],
+      "result": "$5040$"
+     },
+     {
+      "question": "A coin is tossed $3$ times. How many outcomes are there?",
+      "use": [
+       "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways"
+      ],
+      "steps": [
+       "$2\\times2\\times2$"
+      ],
+      "result": "$8$"
+     },
+     {
+      "question": "Given $5$ flags of different colours, how many signals use at least $2$ flags, one below the other?",
+      "use": [
+       "Multiplication: $m$ ways, then $n$ ways $\\Rightarrow mn$ ways",
+       "Addition: $m$ ways or $n$ ways (not both) $\\Rightarrow m+n$ ways"
+      ],
+      "steps": [
+       "$2:\\ 5\\cdot4=20;\\ 3:\\ 60;\\ 4:\\ 120;\\ 5:\\ 120$",
+       "$20+60+120+120$"
+      ],
+      "result": "$320$"
+     }
+    ]
+   },
+   {
+    "title": "Factorial notation",
+    "level": "board",
+    "formulas": [
+     "$n!=1\\times2\\times\\dots\\times n,\\quad 0!=1$",
+     "$n!=n\\times(n-1)!$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\dfrac{8!}{6!\\times2!}$.",
+      "use": [
+       "$n!=1\\times2\\times\\dots\\times n,\\quad 0!=1$",
+       "$n!=n\\times(n-1)!$"
+      ],
+      "steps": [
+       "$\\frac{8\\times7\\times6!}{6!\\times2}$"
+      ],
+      "result": "$28$"
+     },
+     {
+      "question": "Find $x$ if $\\dfrac1{8!}+\\dfrac1{9!}=\\dfrac{x}{10!}$.",
+      "use": [
+       "$n!=n\\times(n-1)!$"
+      ],
+      "steps": [
+       "$\\times10!:\\ 10\\times9+10=x$"
+      ],
+      "result": "$100$"
+     },
+     {
+      "question": "Find $n$ if $\\dfrac{n!}{2!\\,(n-2)!}$ and $\\dfrac{n!}{4!\\,(n-4)!}$ are in the ratio $2:1$.",
+      "use": [
+       "$n!=n\\times(n-1)!$"
+      ],
+      "steps": [
+       "$\\frac{4!\\,(n-4)!}{2!\\,(n-2)!}=2\\Rightarrow\\frac{12}{(n-2)(n-3)}=2$",
+       "$(n-2)(n-3)=6\\Rightarrow n=5$"
+      ],
+      "result": "$5$"
+     },
+     {
+      "question": "Is $3!+4!=7!$?",
+      "use": [
+       "$n!=1\\times2\\times\\dots\\times n,\\quad 0!=1$"
+      ],
+      "steps": [
+       "$3!+4!=6+24=30,\\quad 7!=5040$"
+      ],
+      "result": "No"
+     }
+    ]
+   },
+   {
+    "title": "Permutations",
+    "level": "board",
+    "formulas": [
+     "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$",
+     "Repetition allowed: $n^r$ arrangements",
+     "$n$ objects with $p$ alike, $q$ alike, $\\dots:\\ \\frac{n!}{p!\\, q!\\cdots}$",
+     "${}^nP_n=n!$"
+    ],
+    "examples": [
+     {
+      "question": "Find $n$ if ${}^{n-1}P_3:{}^nP_4=1:9$.",
+      "use": [
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$"
+      ],
+      "steps": [
+       "$\\frac{\\frac{(n-1)!}{(n-4)!}}{\\frac{n!}{(n-4)!}}=\\frac1n$",
+       "$\\frac1n=\\frac19$"
+      ],
+      "result": "$9$"
+     },
+     {
+      "question": "How many $4$-digit numbers with distinct digits can be formed from $1,2,\\dots,9$?",
+      "use": [
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$"
+      ],
+      "steps": [
+       "${}^9P_4=9\\times8\\times7\\times6$"
+      ],
+      "result": "$3024$"
+     },
+     {
+      "question": "How many arrangements of the letters of $\\text{ALLAHABAD}$ are there?",
+      "use": [
+       "$n$ objects with $p$ alike, $q$ alike, $\\dots:\\ \\frac{n!}{p!\\, q!\\cdots}$"
+      ],
+      "steps": [
+       "$9$ letters; $A\\times4,\\ L\\times2$",
+       "$\\frac{9!}{4!\\,2!}$"
+      ],
+      "result": "$7560$"
+     },
+     {
+      "question": "How many arrangements of $\\text{MISSISSIPPI}$ are there?",
+      "use": [
+       "$n$ objects with $p$ alike, $q$ alike, $\\dots:\\ \\frac{n!}{p!\\, q!\\cdots}$"
+      ],
+      "steps": [
+       "$I\\times4,\\ S\\times4,\\ P\\times2$",
+       "$\\frac{11!}{4!\\,4!\\,2!}$"
+      ],
+      "result": "$34650$"
+     },
+     {
+      "question": "In how many ways can the letters of $\\text{DAUGHTER}$ be arranged so that all vowels are together?",
+      "use": [
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$"
+      ],
+      "steps": [
+       "Vowels $A, U, E$ as one unit $+5$ consonants $=6$ units",
+       "$6!\\times3!$"
+      ],
+      "result": "$4320$"
+     },
+     {
+      "question": "How many numbers between $1000$ and $10000$ (four digits) can be formed from $0,1,2,3,4,5$ with no repetition?",
+      "use": [
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$"
+      ],
+      "steps": [
+       "First digit $\\ne0:\\ 5$ ways",
+       "$5\\times{}^5P_3=5\\times60$"
+      ],
+      "result": "$300$"
+     }
+    ]
+   },
+   {
+    "title": "Combinations",
+    "level": "board",
+    "formulas": [
+     "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$",
+     "${}^nC_r={}^nC_{n-r},\\quad {}^nC_0={}^nC_n=1$",
+     "${}^nC_a={}^nC_b\\Rightarrow a=b$ or $a+b=n$",
+     "${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$"
+    ],
+    "examples": [
+     {
+      "question": "Find ${}^{12}C_{10}$ and ${}^{15}C_{3}$.",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$",
+       "${}^nC_r={}^nC_{n-r},\\quad {}^nC_0={}^nC_n=1$"
+      ],
+      "steps": [
+       "${}^{12}C_{10}={}^{12}C_2=\\frac{12\\times11}{2}$",
+       "${}^{15}C_3=\\frac{15\\times14\\times13}{6}$"
+      ],
+      "result": "$66,\\ 455$"
+     },
+     {
+      "question": "${}^nC_9={}^nC_8$. Find ${}^nC_{17}$.",
+      "use": [
+       "${}^nC_a={}^nC_b\\Rightarrow a=b$ or $a+b=n$"
+      ],
+      "steps": [
+       "$9+8=n\\Rightarrow n=17$"
+      ],
+      "result": "$1$"
+     },
+     {
+      "question": "A committee of $3$ is chosen from $2$ men and $3$ women. In how many ways can this be done if it has exactly $1$ man?",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$"
+      ],
+      "steps": [
+       "${}^2C_1\\times{}^3C_2=2\\times3$"
+      ],
+      "result": "$6$"
+     },
+     {
+      "question": "In how many ways can a cricket team of $11$ be chosen from $17$ players, of whom only $5$ can bowl, if the team has exactly $4$ bowlers?",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$"
+      ],
+      "steps": [
+       "${}^5C_4\\times{}^{12}C_7=5\\times792$"
+      ],
+      "result": "$3960$"
+     },
+     {
+      "question": "How many chords can be drawn through $21$ points on a circle?",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$"
+      ],
+      "steps": [
+       "${}^{21}C_2=\\frac{21\\times20}{2}$"
+      ],
+      "result": "$210$"
+     },
+     {
+      "question": "In how many ways can $5$ cards be chosen from a pack of $52$ so that there is exactly one ace?",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$"
+      ],
+      "steps": [
+       "${}^4C_1\\times{}^{48}C_4=4\\times194580$"
+      ],
+      "result": "$778320$"
+     },
+     {
+      "question": "Prove that ${}^{8}C_{3}+{}^{8}C_{2}={}^{9}C_{3}$ by calculation.",
+      "use": [
+       "${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$"
+      ],
+      "steps": [
+       "$56+28=84$",
+       "${}^9C_3=\\frac{9\\times8\\times7}{6}=84$"
+      ],
+      "result": "Proved"
+     }
+    ]
+   },
+   {
+    "title": "Restrictions, gaps and circles (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "Objects together: tie them as one unit, then arrange inside the unit",
+     "Objects apart (gaps): arrange the others, then place them in the gaps",
+     "Circular arrangements of $n$ objects $=(n-1)!$",
+     "Number of diagonals of an $n$-gon $={}^nC_2-n$",
+     "Selections of at least one from $n$ distinct objects $=2^n-1$",
+     "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$",
+     "Repetition allowed: $n^r$ arrangements",
+     "$n$ objects with $p$ alike, $q$ alike, $\\dots:\\ \\frac{n!}{p!\\, q!\\cdots}$",
+     "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$"
+    ],
+    "examples": [
+     {
+      "question": "In how many ways can $5$ boys and $3$ girls sit in a row so that no two girls are together?",
+      "use": [
+       "Objects apart (gaps): arrange the others, then place them in the gaps",
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$",
+       "Objects together: tie them as one unit, then arrange inside the unit"
+      ],
+      "steps": [
+       "Boys: $5!=120$; gaps $=6$",
+       "${}^6P_3=120$",
+       "$120\\times120$"
+      ],
+      "result": "$14400$"
+     },
+     {
+      "question": "In how many ways can $6$ people sit round a table?",
+      "use": [
+       "Circular arrangements of $n$ objects $=(n-1)!$"
+      ],
+      "steps": [
+       "$(6-1)!$"
+      ],
+      "result": "$120$"
+     },
+     {
+      "question": "How many diagonals does a polygon with $12$ sides have?",
+      "use": [
+       "Number of diagonals of an $n$-gon $={}^nC_2-n$"
+      ],
+      "steps": [
+       "${}^{12}C_2-12=66-12$"
+      ],
+      "result": "$54$"
+     },
+     {
+      "question": "A person has $6$ friends. In how many ways can he invite one or more of them to dinner?",
+      "use": [
+       "Selections of at least one from $n$ distinct objects $=2^n-1$"
+      ],
+      "steps": [
+       "$2^6-1$"
+      ],
+      "result": "$63$"
+     },
+     {
+      "question": "Find the rank of $\\text{MOTHER}$ when its letters are arranged in dictionary order.",
+      "use": [],
+      "steps": [
+       "Letters in order: $E, H, M, O, R, T$",
+       "$M$ first: $2\\times5!=240$ words before",
+       "$MO\\_:\\ E,H\\to2\\times4!=48;\\ MOT\\_:\\ E,H,R\\to3\\times3!=18;\\ MOTH\\_:\\ E\\to2!=2;\\ MOTHE\\_:\\ 0$",
+       "$240+48+18+2=308$ words before"
+      ],
+      "result": "$309$"
+     },
+     {
+      "question": "How many words, with or without meaning, can be formed with $2$ different vowels and $3$ different consonants from the English alphabet?",
+      "use": [
+       "${}^nC_r=\\binom nr=\\frac{n!}{r!\\,(n-r)!}=\\frac{{}^nP_r}{r!}$",
+       "${}^nP_r=\\frac{n!}{(n-r)!}\\quad(0\\le r\\le n)$"
+      ],
+      "steps": [
+       "${}^5C_2\\times{}^{21}C_3=10\\times1330$",
+       "arrange each choice: $5!$"
+      ],
+      "result": "$1596000$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-binomial-theorem": {
+  "slug": "g11-binomial-theorem",
+  "number": 7,
+  "title": "Binomial Theorem",
+  "subtitle": "Expansion for a positive integral index, Pascal's triangle and simple applications",
+  "sheet": [
+   {
+    "title": "Binomial expansion",
+    "items": [
+     "$(a+b)^n=\\sum_{k=0}^{n}{}^nC_k\\,a^{n-k}b^k\\quad(n\\in\\mathbb N)$",
+     "$(a+b)^n$ has $n+1$ terms; powers of $a$ fall, powers of $b$ rise",
+     "$(a-b)^n=\\sum_{k=0}^{n}(-1)^k\\,{}^nC_k\\,a^{n-k}b^k$"
+    ]
+   },
+   {
+    "title": "Applications",
+    "items": [
+     "$(a+b)^n+(a-b)^n=2\\left[{}^nC_0a^n+{}^nC_2a^{n-2}b^2+\\dots\\right]$",
+     "$(a+b)^n-(a-b)^n=2\\left[{}^nC_1a^{n-1}b+{}^nC_3a^{n-3}b^3+\\dots\\right]$",
+     "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$",
+     "${}^nC_0+{}^nC_1+\\dots+{}^nC_n=2^n$"
+    ]
+   },
+   {
+    "title": "General and middle terms (JEE)",
+    "items": [
+     "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$",
+     "$n$ even: middle term $T_{\\frac n2+1}$",
+     "$n$ odd: middle terms $T_{\\frac{n+1}2},\\ T_{\\frac{n+3}2}$",
+     "Term independent of $x:$ the power of $x$ in $T_{r+1}$ is $0$",
+     "Sum of coefficients of $f(x)=f(1)$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Expanding a binomial",
+    "level": "board",
+    "formulas": [
+     "$(a+b)^n=\\sum_{k=0}^{n}{}^nC_k\\,a^{n-k}b^k\\quad(n\\in\\mathbb N)$",
+     "$(a+b)^n$ has $n+1$ terms; powers of $a$ fall, powers of $b$ rise",
+     "$(a-b)^n=\\sum_{k=0}^{n}(-1)^k\\,{}^nC_k\\,a^{n-k}b^k$",
+     "${}^nC_k={}^nC_{n-k}$ (Pascal's triangle is symmetric)",
+     "Pascal's triangle: each entry $=$ sum of the two entries above it"
+    ],
+    "examples": [
+     {
+      "question": "Expand $(1-2x)^5$.",
+      "use": [
+       "$(a-b)^n=\\sum_{k=0}^{n}(-1)^k\\,{}^nC_k\\,a^{n-k}b^k$"
+      ],
+      "steps": [
+       "$1-5(2x)+10(2x)^2-10(2x)^3+5(2x)^4-(2x)^5$"
+      ],
+      "result": "$1-10x+40x^2-80x^3+80x^4-32x^5$"
+     },
+     {
+      "question": "Expand $\\left(\\dfrac2x-\\dfrac x2\\right)^5$.",
+      "use": [
+       "$(a-b)^n=\\sum_{k=0}^{n}(-1)^k\\,{}^nC_k\\,a^{n-k}b^k$"
+      ],
+      "steps": [
+       "$\\left(\\frac2x\\right)^5-5\\left(\\frac2x\\right)^4\\frac x2+10\\left(\\frac2x\\right)^3\\frac{x^2}4-10\\left(\\frac2x\\right)^2\\frac{x^3}8+5\\left(\\frac2x\\right)\\frac{x^4}{16}-\\frac{x^5}{32}$"
+      ],
+      "result": "$\\frac{32}{x^5}-\\frac{40}{x^3}+\\frac{20}{x}-5x+\\frac58x^3-\\frac{x^5}{32}$"
+     },
+     {
+      "question": "Expand $(2x-3)^6$.",
+      "use": [
+       "$(a-b)^n=\\sum_{k=0}^{n}(-1)^k\\,{}^nC_k\\,a^{n-k}b^k$"
+      ],
+      "steps": [
+       "$64x^6-6(32x^5)(3)+15(16x^4)(9)-20(8x^3)(27)+15(4x^2)(81)-6(2x)(243)+729$"
+      ],
+      "result": "$64x^6-576x^5+2160x^4-4320x^3+4860x^2-2916x+729$"
+     },
+     {
+      "question": "Expand $\\left(x+\\dfrac1x\\right)^6$.",
+      "use": [
+       "$(a+b)^n=\\sum_{k=0}^{n}{}^nC_k\\,a^{n-k}b^k\\quad(n\\in\\mathbb N)$"
+      ],
+      "steps": [
+       "$x^6+6x^4+15x^2+20+15x^{-2}+6x^{-4}+x^{-6}$"
+      ],
+      "result": "$x^6+6x^4+15x^2+20+\\frac{15}{x^2}+\\frac6{x^4}+\\frac1{x^6}$"
+     },
+     {
+      "question": "Expand $\\left(x^2+\\dfrac3x\\right)^4$.",
+      "use": [
+       "$(a+b)^n=\\sum_{k=0}^{n}{}^nC_k\\,a^{n-k}b^k\\quad(n\\in\\mathbb N)$"
+      ],
+      "steps": [
+       "$(x^2)^4+4(x^2)^3\\frac3x+6(x^2)^2\\frac9{x^2}+4x^2\\frac{27}{x^3}+\\frac{81}{x^4}$"
+      ],
+      "result": "$x^8+12x^5+54x^2+\\frac{108}x+\\frac{81}{x^4}$"
+     },
+     {
+      "question": "Write row $6$ of Pascal's triangle and use it to expand $(a+b)^6$.",
+      "use": [
+       "$(a+b)^n=\\sum_{k=0}^{n}{}^nC_k\\,a^{n-k}b^k\\quad(n\\in\\mathbb N)$",
+       "$(a+b)^n$ has $n+1$ terms; powers of $a$ fall, powers of $b$ rise"
+      ],
+      "steps": [
+       "Row $5:\\ 1,5,10,10,5,1\\Rightarrow$ row $6:\\ 1,6,15,20,15,6,1$"
+      ],
+      "result": "$a^6+6a^5b+15a^4b^2+20a^3b^3+15a^2b^4+6ab^5+b^6$"
+     }
+    ]
+   },
+   {
+    "title": "Applications",
+    "level": "board",
+    "formulas": [
+     "$(a+b)^n+(a-b)^n=2\\left[{}^nC_0a^n+{}^nC_2a^{n-2}b^2+\\dots\\right]$",
+     "$(a+b)^n-(a-b)^n=2\\left[{}^nC_1a^{n-1}b+{}^nC_3a^{n-3}b^3+\\dots\\right]$",
+     "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$",
+     "${}^nC_0+{}^nC_1+\\dots+{}^nC_n=2^n$"
+    ],
+    "examples": [
+     {
+      "question": "Find $(99)^5$ by the binomial theorem.",
+      "use": [
+       "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$"
+      ],
+      "steps": [
+       "$(100-1)^5=10^{10}-5\\cdot10^8+10\\cdot10^6-10\\cdot10^4+5\\cdot10^2-1$",
+       "$=10000000000-500000000+10000000-100000+500-1$"
+      ],
+      "result": "$9509900499$"
+     },
+     {
+      "question": "Find $(102)^5$.",
+      "use": [
+       "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$"
+      ],
+      "steps": [
+       "$(100+2)^5=10^{10}+5\\cdot10^8\\cdot2+10\\cdot10^6\\cdot4+10\\cdot10^4\\cdot8+5\\cdot10^2\\cdot16+32$"
+      ],
+      "result": "$11040808032$"
+     },
+     {
+      "question": "Find $(0.99)^5$ correct to three decimal places.",
+      "use": [
+       "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$"
+      ],
+      "steps": [
+       "$(1-0.01)^5=1-5(0.01)+10(0.0001)-10(0.000001)+\\dots$",
+       "$=1-0.05+0.001-0.00001\\approx0.95099$"
+      ],
+      "result": "$0.951$"
+     },
+     {
+      "question": "Which is larger, $(1.1)^{10000}$ or $1000$?",
+      "use": [
+       "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$"
+      ],
+      "steps": [
+       "$(1+0.1)^{10000}=1+10000(0.1)+$ positive terms",
+       "$>1+1000$"
+      ],
+      "result": "$(1.1)^{10000}>1000$"
+     },
+     {
+      "question": "Find $(a+b)^4-(a-b)^4$ and hence $(\\sqrt3+\\sqrt2)^4-(\\sqrt3-\\sqrt2)^4$.",
+      "use": [
+       "$(a+b)^n-(a-b)^n=2\\left[{}^nC_1a^{n-1}b+{}^nC_3a^{n-3}b^3+\\dots\\right]$"
+      ],
+      "steps": [
+       "$2\\left[4a^3b+4ab^3\\right]=8ab(a^2+b^2)$",
+       "$a=\\sqrt3,\\ b=\\sqrt2:\\ 8\\sqrt6(3+2)$"
+      ],
+      "result": "$8ab(a^2+b^2);\\ 40\\sqrt6$"
+     },
+     {
+      "question": "Find $(x+1)^6+(x-1)^6$ and hence $(\\sqrt2+1)^6+(\\sqrt2-1)^6$.",
+      "use": [
+       "$(a+b)^n+(a-b)^n=2\\left[{}^nC_0a^n+{}^nC_2a^{n-2}b^2+\\dots\\right]$"
+      ],
+      "steps": [
+       "$2\\left[x^6+15x^4+15x^2+1\\right]$",
+       "$x=\\sqrt2:\\ 2[8+60+30+1]$"
+      ],
+      "result": "$198$"
+     },
+     {
+      "question": "Show that $9^{n+1}-8n-9$ is divisible by $64$ for every natural number $n$.",
+      "use": [
+       "$(1+x)^n=1+nx+{}^nC_2x^2+\\dots$"
+      ],
+      "steps": [
+       "$9^{n+1}=(1+8)^{n+1}=1+8(n+1)+{}^{n+1}C_2\\,8^2+{}^{n+1}C_3\\,8^3+\\dots$",
+       "$9^{n+1}-8n-9=64\\left[{}^{n+1}C_2+{}^{n+1}C_3\\,8+\\dots\\right]$"
+      ],
+      "result": "Divisible by $64$"
+     },
+     {
+      "question": "Find the sum ${}^{7}C_0+{}^{7}C_1+\\dots+{}^{7}C_7$.",
+      "use": [
+       "${}^nC_0+{}^nC_1+\\dots+{}^nC_n=2^n$"
+      ],
+      "steps": [
+       "$2^7$"
+      ],
+      "result": "$128$"
+     }
+    ]
+   },
+   {
+    "title": "General term, middle term and coefficients (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$",
+     "$n$ even: middle term $T_{\\frac n2+1}$",
+     "$n$ odd: middle terms $T_{\\frac{n+1}2},\\ T_{\\frac{n+3}2}$",
+     "Term independent of $x:$ the power of $x$ in $T_{r+1}$ is $0$",
+     "Sum of coefficients of $f(x)=f(1)$"
+    ],
+    "examples": [
+     {
+      "question": "Find the coefficient of $x^5$ in $(x+3)^8$.",
+      "use": [
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$"
+      ],
+      "steps": [
+       "$T_{r+1}={}^8C_r\\,x^{8-r}3^r;\\ 8-r=5\\Rightarrow r=3$",
+       "${}^8C_3\\cdot27=56\\times27$"
+      ],
+      "result": "$1512$"
+     },
+     {
+      "question": "Find the $13$th term of $\\left(9x-\\dfrac1{3\\sqrt x}\\right)^{18}$.",
+      "use": [
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$"
+      ],
+      "steps": [
+       "$T_{13}={}^{18}C_{12}(9x)^6\\left(-\\frac1{3\\sqrt x}\\right)^{12}$",
+       "$=18564\\cdot\\frac{9^6x^6}{3^{12}x^6}$"
+      ],
+      "result": "$18564$"
+     },
+     {
+      "question": "Find the middle terms of $\\left(3-\\dfrac{x^3}6\\right)^7$.",
+      "use": [
+       "$n$ odd: middle terms $T_{\\frac{n+1}2},\\ T_{\\frac{n+3}2}$",
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$"
+      ],
+      "steps": [
+       "$n=7:\\ T_4,\\ T_5$",
+       "$T_4={}^7C_3\\,3^4\\left(-\\frac{x^3}6\\right)^3=-\\frac{105}8x^9$",
+       "$T_5={}^7C_4\\,3^3\\left(-\\frac{x^3}6\\right)^4=\\frac{35}{48}x^{12}$"
+      ],
+      "result": "$-\\frac{105}8x^9,\\ \\frac{35}{48}x^{12}$"
+     },
+     {
+      "question": "Find the middle term of $\\left(\\dfrac x3+9y\\right)^{10}$.",
+      "use": [
+       "$n$ even: middle term $T_{\\frac n2+1}$",
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$"
+      ],
+      "steps": [
+       "$T_6={}^{10}C_5\\left(\\frac x3\\right)^5(9y)^5=252\\cdot\\frac{9^5}{3^5}x^5y^5$"
+      ],
+      "result": "$61236\\,x^5y^5$"
+     },
+     {
+      "question": "Find the term independent of $x$ in $\\left(x^2-\\dfrac1{x}\\right)^{9}$.",
+      "use": [
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$",
+       "Term independent of $x:$ the power of $x$ in $T_{r+1}$ is $0$"
+      ],
+      "steps": [
+       "$T_{r+1}={}^9C_r(-1)^rx^{18-3r};\\ 18-3r=0\\Rightarrow r=6$",
+       "${}^9C_6(-1)^6$"
+      ],
+      "result": "$84$"
+     },
+     {
+      "question": "Find the coefficient of $a^5b^7$ in $(a-2b)^{12}$.",
+      "use": [
+       "$T_{r+1}={}^nC_r\\,a^{n-r}b^r$"
+      ],
+      "steps": [
+       "$r=7:\\ {}^{12}C_7(-2)^7=792\\times(-128)$"
+      ],
+      "result": "$-101376$"
+     },
+     {
+      "question": "Find the sum of the coefficients in $(3x-2)^{8}$.",
+      "use": [
+       "Sum of coefficients of $f(x)=f(1)$"
+      ],
+      "steps": [
+       "$(3-2)^8$"
+      ],
+      "result": "$1$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-sequences-series": {
+  "slug": "g11-sequences-series",
+  "number": 8,
+  "title": "Sequences and Series",
+  "subtitle": "Sequences, arithmetic mean, geometric progressions, infinite GP, geometric mean and the AM–GM relation",
+  "sheet": [
+   {
+    "title": "Sequences and AM",
+    "items": [
+     "$a_n=f(n):$ the $n$ th term of a sequence",
+     "$S_n=a_1+a_2+\\dots+a_n$",
+     "AM of $a, b:\\ A=\\frac{a+b}2$"
+    ]
+   },
+   {
+    "title": "Geometric progression",
+    "items": [
+     "$a,\\ ar,\\ ar^2,\\dots:\\quad a_n=ar^{n-1}$",
+     "$S_n=\\frac{a(r^n-1)}{r-1}\\ (r\\ne1);\\quad S_n=na\\ (r=1)$",
+     "$a_n\\ \\text{from the end}=l\\left(\\frac1r\\right)^{n-1}$"
+    ]
+   },
+   {
+    "title": "Infinite GP",
+    "items": [
+     "$|r|<1:\\ S_\\infty=\\frac a{1-r}$"
+    ]
+   },
+   {
+    "title": "Geometric mean",
+    "items": [
+     "GM of $a, b\\ (a, b>0):\\ G=\\sqrt{ab}$",
+     "$n\\ \\text{GMs between }a,b:\\ r=\\left(\\frac ba\\right)^{\\frac1{n+1}}$",
+     "$A\\ge G,\\quad A=G\\iff a=b$"
+    ]
+   },
+   {
+    "title": "AP and special series (JEE)",
+    "items": [
+     "$a_n=a+(n-1)d,\\quad S_n=\\frac n2\\left[2a+(n-1)d\\right]=\\frac n2(a+l)$",
+     "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+     "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+     "$\\sum_{k=1}^{n}k^3=\\left[\\frac{n(n+1)}2\\right]^2$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Sequences, series and the arithmetic mean",
+    "level": "board",
+    "formulas": [
+     "$a_n=f(n):$ the $n$ th term of a sequence",
+     "$S_n=a_1+a_2+\\dots+a_n$",
+     "AM of $a, b:\\ A=\\frac{a+b}2$"
+    ],
+    "examples": [
+     {
+      "question": "Write the first five terms of $a_n=\\dfrac{n}{n+1}$.",
+      "use": [
+       "$a_n=f(n):$ the $n$ th term of a sequence"
+      ],
+      "steps": [
+       "$a_1=\\frac12,\\ a_2=\\frac23,\\ a_3=\\frac34,\\ a_4=\\frac45,\\ a_5=\\frac56$"
+      ],
+      "result": "$\\frac12,\\frac23,\\frac34,\\frac45,\\frac56$"
+     },
+     {
+      "question": "$a_1=1$, $a_2=1$ and $a_n=a_{n-1}+a_{n-2}$ for $n>2$. Find $\\dfrac{a_{n+1}}{a_n}$ for $n=1,\\dots,5$.",
+      "use": [
+       "$a_n=f(n):$ the $n$ th term of a sequence"
+      ],
+      "steps": [
+       "$a:\\ 1,1,2,3,5,8$",
+       "$\\frac11,\\frac21,\\frac32,\\frac53,\\frac85$"
+      ],
+      "result": "$1,\\ 2,\\ \\frac32,\\ \\frac53,\\ \\frac85$"
+     },
+     {
+      "question": "Find $a_{17}$ and $a_{24}$ for $a_n=4n-3$.",
+      "use": [
+       "$a_n=f(n):$ the $n$ th term of a sequence"
+      ],
+      "steps": [
+       "$a_{17}=68-3,\\quad a_{24}=96-3$"
+      ],
+      "result": "$65,\\ 93$"
+     },
+     {
+      "question": "Find $S_4$ for $a_n=n^2+1$.",
+      "use": [
+       "$S_n=a_1+a_2+\\dots+a_n$"
+      ],
+      "steps": [
+       "$2+5+10+17$"
+      ],
+      "result": "$34$"
+     },
+     {
+      "question": "Find the arithmetic mean of $7$ and $25$, and insert $3$ numbers between them so that the five numbers have equal differences.",
+      "use": [
+       "AM of $a, b:\\ A=\\frac{a+b}2$"
+      ],
+      "steps": [
+       "$A=\\frac{7+25}2=16$",
+       "difference $=\\frac{25-7}4=4.5$"
+      ],
+      "result": "$16;\\ 11.5,\\ 16,\\ 20.5$"
+     }
+    ]
+   },
+   {
+    "title": "Geometric progression",
+    "level": "board",
+    "formulas": [
+     "$a,\\ ar,\\ ar^2,\\dots:\\quad a_n=ar^{n-1}$",
+     "$S_n=\\frac{a(r^n-1)}{r-1}\\ (r\\ne1);\\quad S_n=na\\ (r=1)$",
+     "$a_n\\ \\text{from the end}=l\\left(\\frac1r\\right)^{n-1}$",
+     "Three terms in GP: $\\frac ar,\\ a,\\ ar$"
+    ],
+    "examples": [
+     {
+      "question": "Find the $10$th and the $n$th terms of $5,25,125,\\dots$",
+      "use": [
+       "$a,\\ ar,\\ ar^2,\\dots:\\quad a_n=ar^{n-1}$"
+      ],
+      "steps": [
+       "$a=5,\\ r=5$",
+       "$a_{10}=5\\cdot5^9,\\quad a_n=5\\cdot5^{n-1}$"
+      ],
+      "result": "$5^{10},\\ 5^n$"
+     },
+     {
+      "question": "Which term of $2,2\\sqrt2,4,\\dots$ is $128$?",
+      "use": [
+       "$a,\\ ar,\\ ar^2,\\dots:\\quad a_n=ar^{n-1}$"
+      ],
+      "steps": [
+       "$r=\\sqrt2;\\ 2(\\sqrt2)^{n-1}=128\\Rightarrow(\\sqrt2)^{n-1}=64=(\\sqrt2)^{12}$"
+      ],
+      "result": "$13$ th"
+     },
+     {
+      "question": "The $4$th term of a GP is the square of its $2$nd term, and the first term is $-3$. Find the $7$th term.",
+      "use": [
+       "$a,\\ ar,\\ ar^2,\\dots:\\quad a_n=ar^{n-1}$"
+      ],
+      "steps": [
+       "$ar^3=(ar)^2\\Rightarrow r=a=-3$",
+       "$a_7=-3(-3)^6$"
+      ],
+      "result": "$-2187$"
+     },
+     {
+      "question": "Find the sum of $0.15+0.015+0.0015+\\dots$ to $20$ terms.",
+      "use": [
+       "$S_n=\\frac{a(r^n-1)}{r-1}\\ (r\\ne1);\\quad S_n=na\\ (r=1)$"
+      ],
+      "steps": [
+       "$a=0.15,\\ r=0.1$",
+       "$S_{20}=\\frac{0.15(1-0.1^{20})}{0.9}$"
+      ],
+      "result": "$\\frac16\\left(1-\\frac1{10^{20}}\\right)$"
+     },
+     {
+      "question": "How many terms of $3,3^2,3^3,\\dots$ give the sum $120$?",
+      "use": [
+       "$S_n=\\frac{a(r^n-1)}{r-1}\\ (r\\ne1);\\quad S_n=na\\ (r=1)$"
+      ],
+      "steps": [
+       "$\\frac{3(3^n-1)}{2}=120\\Rightarrow3^n=81$"
+      ],
+      "result": "$4$"
+     },
+     {
+      "question": "Three numbers in GP have sum $\\frac{39}{10}$ and product $1$. Find them.",
+      "use": [
+       "Three terms in GP: $\\frac ar,\\ a,\\ ar$"
+      ],
+      "steps": [
+       "$\\frac ar\\cdot a\\cdot ar=a^3=1\\Rightarrow a=1$",
+       "$\\frac1r+1+r=\\frac{39}{10}\\Rightarrow10r^2-29r+10=0\\Rightarrow r=\\frac52,\\ \\frac25$"
+      ],
+      "result": "$\\frac25,\\ 1,\\ \\frac52$"
+     },
+     {
+      "question": "Find the sum to $n$ terms of $8+88+888+\\dots$",
+      "use": [
+       "$S_n=\\frac{a(r^n-1)}{r-1}\\ (r\\ne1);\\quad S_n=na\\ (r=1)$"
+      ],
+      "steps": [
+       "$\\frac89\\left[(10-1)+(100-1)+\\dots\\right]=\\frac89\\left[\\frac{10(10^n-1)}9-n\\right]$"
+      ],
+      "result": "$\\frac{80}{81}(10^n-1)-\\frac{8n}9$"
+     }
+    ]
+   },
+   {
+    "title": "Infinite geometric progression",
+    "level": "board",
+    "formulas": [
+     "$|r|<1:\\ S_\\infty=\\frac a{1-r}$",
+     "$0.\\overline{d}=\\frac d9$, a recurring decimal is an infinite GP"
+    ],
+    "examples": [
+     {
+      "question": "Find $1+\\dfrac12+\\dfrac14+\\dots$",
+      "use": [
+       "$|r|<1:\\ S_\\infty=\\frac a{1-r}$"
+      ],
+      "steps": [
+       "$a=1,\\ r=\\frac12$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "Find $6-2+\\dfrac23-\\dots$",
+      "use": [
+       "$|r|<1:\\ S_\\infty=\\frac a{1-r}$"
+      ],
+      "steps": [
+       "$a=6,\\ r=-\\frac13;\\ S_\\infty=\\frac6{\\frac43}$"
+      ],
+      "result": "$\\frac92$"
+     },
+     {
+      "question": "Write $0.\\overline{3}=0.333\\dots$ as a fraction.",
+      "use": [
+       "$|r|<1:\\ S_\\infty=\\frac a{1-r}$"
+      ],
+      "steps": [
+       "$0.3+0.03+\\dots:\\ a=0.3,\\ r=0.1$",
+       "$\\frac{0.3}{0.9}$"
+      ],
+      "result": "$\\frac13$"
+     },
+     {
+      "question": "An infinite GP has first term $4$ and sum $\\frac{16}3$. Find its common ratio.",
+      "use": [
+       "$|r|<1:\\ S_\\infty=\\frac a{1-r}$"
+      ],
+      "steps": [
+       "$\\frac4{1-r}=\\frac{16}3\\Rightarrow1-r=\\frac34$"
+      ],
+      "result": "$r=\\frac14$"
+     }
+    ]
+   },
+   {
+    "title": "Geometric mean and the AM–GM relation",
+    "level": "board",
+    "formulas": [
+     "GM of $a, b\\ (a, b>0):\\ G=\\sqrt{ab}$",
+     "$n\\ \\text{GMs between }a,b:\\ r=\\left(\\frac ba\\right)^{\\frac1{n+1}}$",
+     "$A\\ge G,\\quad A=G\\iff a=b$",
+     "$a, b$ are the roots of $x^2-2Ax+G^2=0$"
+    ],
+    "examples": [
+     {
+      "question": "Find the GM of $2$ and $8$.",
+      "use": [
+       "GM of $a, b\\ (a, b>0):\\ G=\\sqrt{ab}$"
+      ],
+      "steps": [
+       "$\\sqrt{16}$"
+      ],
+      "result": "$4$"
+     },
+     {
+      "question": "Insert three numbers between $1$ and $256$ so that the five numbers form a GP.",
+      "use": [
+       "$n\\ \\text{GMs between }a,b:\\ r=\\left(\\frac ba\\right)^{\\frac1{n+1}}$"
+      ],
+      "steps": [
+       "$r=256^{\\frac14}=4$"
+      ],
+      "result": "$4,\\ 16,\\ 64$"
+     },
+     {
+      "question": "The AM and GM of two positive numbers are $10$ and $8$. Find the numbers.",
+      "use": [
+       "$a, b$ are the roots of $x^2-2Ax+G^2=0$"
+      ],
+      "steps": [
+       "$x^2-20x+64=0$",
+       "$(x-4)(x-16)=0$"
+      ],
+      "result": "$4$ and $16$"
+     },
+     {
+      "question": "Show that $x+\\dfrac1x\\ge2$ for $x>0$.",
+      "use": [
+       "$A\\ge G,\\quad A=G\\iff a=b$"
+      ],
+      "steps": [
+       "$\\frac{x+\\frac1x}2\\ge\\sqrt{x\\cdot\\frac1x}=1$"
+      ],
+      "result": "$x+\\frac1x\\ge2$, with equality at $x=1$"
+     },
+     {
+      "question": "The sum of two numbers is $6$ times their GM. Show that the numbers are in the ratio $(3+2\\sqrt2):(3-2\\sqrt2)$.",
+      "use": [
+       "GM of $a, b\\ (a, b>0):\\ G=\\sqrt{ab}$"
+      ],
+      "steps": [
+       "$a+b=6\\sqrt{ab}\\Rightarrow\\frac{a+b}{2\\sqrt{ab}}=3$",
+       "$\\frac{(\\sqrt a+\\sqrt b)^2}{(\\sqrt a-\\sqrt b)^2}=\\frac{3+1}{3-1}=2\\Rightarrow\\frac{\\sqrt a+\\sqrt b}{\\sqrt a-\\sqrt b}=\\sqrt2$",
+       "$\\frac{\\sqrt a}{\\sqrt b}=\\frac{\\sqrt2+1}{\\sqrt2-1}\\Rightarrow\\frac ab=\\frac{(\\sqrt2+1)^2}{(\\sqrt2-1)^2}=\\frac{3+2\\sqrt2}{3-2\\sqrt2}$"
+      ],
+      "result": "$(3+2\\sqrt2):(3-2\\sqrt2)$"
+     }
+    ]
+   },
+   {
+    "title": "Arithmetic progressions and special series (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$a_n=a+(n-1)d,\\quad S_n=\\frac n2\\left[2a+(n-1)d\\right]=\\frac n2(a+l)$",
+     "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+     "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+     "$\\sum_{k=1}^{n}k^3=\\left[\\frac{n(n+1)}2\\right]^2$",
+     "$S_n=\\sum a_k$ when $a_k$ is a polynomial in $k$"
+    ],
+    "examples": [
+     {
+      "question": "The $p$th term of an AP is $q$ and the $q$th term is $p$ ($p\\ne q$). Find the $(p+q)$th term.",
+      "use": [
+       "$a_n=a+(n-1)d,\\quad S_n=\\frac n2\\left[2a+(n-1)d\\right]=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$a+(p-1)d=q,\\ a+(q-1)d=p\\Rightarrow d=-1,\\ a=p+q-1$",
+       "$a_{p+q}=a+(p+q-1)(-1)$"
+      ],
+      "result": "$0$"
+     },
+     {
+      "question": "Find the sum of all natural numbers from $100$ to $1000$ that are multiples of $5$.",
+      "use": [
+       "$a_n=a+(n-1)d,\\quad S_n=\\frac n2\\left[2a+(n-1)d\\right]=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$100,105,\\dots,1000:\\ n=\\frac{1000-100}5+1=181$",
+       "$S=\\frac{181}2(100+1000)$"
+      ],
+      "result": "$99550$"
+     },
+     {
+      "question": "Find the sum to $n$ terms of $1\\times2+2\\times3+3\\times4+\\dots$",
+      "use": [
+       "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+       "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+       "$S_n=\\sum a_k$ when $a_k$ is a polynomial in $k$"
+      ],
+      "steps": [
+       "$a_k=k^2+k$",
+       "$S_n=\\frac{n(n+1)(2n+1)}6+\\frac{n(n+1)}2=\\frac{n(n+1)(n+2)}3$"
+      ],
+      "result": "$\\frac{n(n+1)(n+2)}3$"
+     },
+     {
+      "question": "Find $1^2+2^2+\\dots+10^2$ and $1^3+2^3+\\dots+10^3$.",
+      "use": [
+       "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+       "$\\sum_{k=1}^{n}k^3=\\left[\\frac{n(n+1)}2\\right]^2$"
+      ],
+      "steps": [
+       "$\\frac{10\\cdot11\\cdot21}6,\\quad 55^2$"
+      ],
+      "result": "$385,\\ 3025$"
+     },
+     {
+      "question": "Find the sum to $n$ terms of $1^2+3^2+5^2+\\dots$",
+      "use": [
+       "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+       "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+       "$S_n=\\sum a_k$ when $a_k$ is a polynomial in $k$"
+      ],
+      "steps": [
+       "$a_k=(2k-1)^2=4k^2-4k+1$",
+       "$S_n=\\frac{4n(n+1)(2n+1)}6-2n(n+1)+n$"
+      ],
+      "result": "$\\frac{n(2n-1)(2n+1)}3$"
+     },
+     {
+      "question": "Find $S_n$ for the series whose $n$th term is $n(n+1)(n+4)$.",
+      "use": [
+       "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+       "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+       "$\\sum_{k=1}^{n}k^3=\\left[\\frac{n(n+1)}2\\right]^2$",
+       "$S_n=\\sum a_k$ when $a_k$ is a polynomial in $k$"
+      ],
+      "steps": [
+       "$a_k=k^3+5k^2+4k$",
+       "$S_n=\\frac{n^2(n+1)^2}4+\\frac{5n(n+1)(2n+1)}6+2n(n+1)$"
+      ],
+      "result": "$\\frac{n(n+1)(3n^2+23n+34)}{12}$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-conic-sections": {
+  "slug": "g11-conic-sections",
+  "number": 10,
+  "title": "Conic Sections",
+  "subtitle": "Circles, parabolas, ellipses and hyperbolas in standard form",
+  "sheet": [
+   {
+    "title": "Circle",
+    "items": [
+     "$(x-h)^2+(y-k)^2=r^2:$ centre $(h, k)$, radius $r$",
+     "$x^2+y^2+2gx+2fy+c=0:$ centre $(-g,-f),\\ r=\\sqrt{g^2+f^2-c}$"
+    ]
+   },
+   {
+    "title": "Parabola",
+    "items": [
+     "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$",
+     "$y^2=-4ax:$ focus $(-a,0);\\quad x^2=\\pm4ay:$ focus $(0,\\pm a)$",
+     "Length of latus rectum $=4a$"
+    ]
+   },
+   {
+    "title": "Ellipse",
+    "items": [
+     "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b):$ foci $(\\pm c,0),\\ c^2=a^2-b^2$",
+     "Vertices $(\\pm a,0)$; major axis $2a$, minor axis $2b$",
+     "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$",
+     "$\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1\\ (a>b):$ foci $(0,\\pm c)$"
+    ]
+   },
+   {
+    "title": "Hyperbola",
+    "items": [
+     "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1:$ foci $(\\pm c,0),\\ c^2=a^2+b^2$",
+     "Vertices $(\\pm a,0)$; transverse axis $2a$, conjugate axis $2b$",
+     "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$",
+     "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1:$ foci $(0,\\pm c)$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Circle",
+    "level": "board",
+    "formulas": [
+     "$(x-h)^2+(y-k)^2=r^2:$ centre $(h, k)$, radius $r$",
+     "$x^2+y^2+2gx+2fy+c=0:$ centre $(-g,-f),\\ r=\\sqrt{g^2+f^2-c}$",
+     "A circle through three points: put each point in $x^2+y^2+2gx+2fy+c=0$"
+    ],
+    "examples": [
+     {
+      "question": "Find the equation of the circle with centre $(-2,3)$ and radius $4$.",
+      "use": [
+       "$(x-h)^2+(y-k)^2=r^2:$ centre $(h, k)$, radius $r$"
+      ],
+      "steps": [
+       "$(x+2)^2+(y-3)^2=16$"
+      ],
+      "result": "$x^2+y^2+4x-6y-3=0$"
+     },
+     {
+      "question": "Find the centre and radius of $x^2+y^2-4x-8y-45=0$.",
+      "use": [
+       "$x^2+y^2+2gx+2fy+c=0:$ centre $(-g,-f),\\ r=\\sqrt{g^2+f^2-c}$"
+      ],
+      "steps": [
+       "$g=-2,\\ f=-4,\\ c=-45$",
+       "$r=\\sqrt{4+16+45}$"
+      ],
+      "result": "$(2,4),\\ \\sqrt{65}$"
+     },
+     {
+      "question": "Find the centre and radius of $2x^2+2y^2-x=0$.",
+      "use": [
+       "$x^2+y^2+2gx+2fy+c=0:$ centre $(-g,-f),\\ r=\\sqrt{g^2+f^2-c}$"
+      ],
+      "steps": [
+       "$x^2+y^2-\\frac x2=0:\\ g=-\\frac14,\\ f=0,\\ c=0$"
+      ],
+      "result": "$\\left(\\frac14,0\\right),\\ \\frac14$"
+     },
+     {
+      "question": "Find the circle through $(2,-2)$ and $(3,4)$ with centre on $x+y=2$.",
+      "use": [
+       "$(x-h)^2+(y-k)^2=r^2:$ centre $(h, k)$, radius $r$"
+      ],
+      "steps": [
+       "$(2-h)^2+(-2-k)^2=(3-h)^2+(4-k)^2\\Rightarrow 2h+12k=17$",
+       "$h+k=2\\Rightarrow h=0.7,\\ k=1.3$",
+       "$r^2=(1.3)^2+(3.3)^2=12.58$"
+      ],
+      "result": "$(x-0.7)^2+(y-1.3)^2=12.58$"
+     },
+     {
+      "question": "Find the circle with radius $5$ whose centre is on the $x$-axis and which passes through $(2,3)$.",
+      "use": [
+       "$(x-h)^2+(y-k)^2=r^2:$ centre $(h, k)$, radius $r$"
+      ],
+      "steps": [
+       "$(2-h)^2+9=25\\Rightarrow h-2=\\pm4$"
+      ],
+      "result": "$(x-6)^2+y^2=25$ or $(x+2)^2+y^2=25$"
+     },
+     {
+      "question": "Find the circle through $(0,0)$, $(4,0)$ and $(0,6)$.",
+      "use": [
+       "A circle through three points: put each point in $x^2+y^2+2gx+2fy+c=0$"
+      ],
+      "steps": [
+       "$c=0;\\ 16+8g=0\\Rightarrow g=-2;\\ 36+12f=0\\Rightarrow f=-3$"
+      ],
+      "result": "$x^2+y^2-4x-6y=0$"
+     }
+    ]
+   },
+   {
+    "title": "Parabola",
+    "level": "board",
+    "formulas": [
+     "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$",
+     "$y^2=-4ax:$ focus $(-a,0);\\quad x^2=\\pm4ay:$ focus $(0,\\pm a)$",
+     "Length of latus rectum $=4a$",
+     "Point on a parabola: distance to focus $=$ distance to directrix"
+    ],
+    "examples": [
+     {
+      "question": "Find the focus, directrix and latus rectum of $y^2=12x$.",
+      "use": [
+       "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$",
+       "Length of latus rectum $=4a$"
+      ],
+      "steps": [
+       "$4a=12\\Rightarrow a=3$"
+      ],
+      "result": "$(3,0),\\ x=-3,\\ 12$"
+     },
+     {
+      "question": "Find the focus, directrix and latus rectum of $x^2=-16y$.",
+      "use": [
+       "$y^2=-4ax:$ focus $(-a,0);\\quad x^2=\\pm4ay:$ focus $(0,\\pm a)$",
+       "Length of latus rectum $=4a$"
+      ],
+      "steps": [
+       "$4a=16\\Rightarrow a=4$"
+      ],
+      "result": "$(0,-4),\\ y=4,\\ 16$"
+     },
+     {
+      "question": "Find the parabola with focus $(6,0)$ and directrix $x=-6$.",
+      "use": [
+       "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$"
+      ],
+      "steps": [
+       "$a=6$"
+      ],
+      "result": "$y^2=24x$"
+     },
+     {
+      "question": "Find the parabola with vertex $(0,0)$, axis along the $x$-axis, through $(2,3)$.",
+      "use": [
+       "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$"
+      ],
+      "steps": [
+       "$y^2=4ax:\\ 9=8a$"
+      ],
+      "result": "$y^2=\\frac92x$"
+     },
+     {
+      "question": "Find the parabola with vertex $(0,0)$, focus $(0,-3)$.",
+      "use": [
+       "$y^2=-4ax:$ focus $(-a,0);\\quad x^2=\\pm4ay:$ focus $(0,\\pm a)$"
+      ],
+      "steps": [
+       "$a=3;\\ x^2=-4ay$"
+      ],
+      "result": "$x^2=-12y$"
+     },
+     {
+      "question": "A point on $y^2=8x$ is at distance $6$ from the focus. Find the point.",
+      "use": [
+       "$y^2=4ax:$ focus $(a,0)$, directrix $x=-a$, axis $y=0$",
+       "Point on a parabola: distance to focus $=$ distance to directrix"
+      ],
+      "steps": [
+       "$a=2$; distance to directrix $x=-2:\\ x+2=6\\Rightarrow x=4$",
+       "$y^2=32\\Rightarrow y=\\pm4\\sqrt2$"
+      ],
+      "result": "$(4,\\pm4\\sqrt2)$"
+     }
+    ]
+   },
+   {
+    "title": "Ellipse",
+    "level": "board",
+    "formulas": [
+     "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b):$ foci $(\\pm c,0),\\ c^2=a^2-b^2$",
+     "Vertices $(\\pm a,0)$; major axis $2a$, minor axis $2b$",
+     "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$",
+     "$\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1\\ (a>b):$ foci $(0,\\pm c)$",
+     "$PF_1+PF_2=2a$"
+    ],
+    "examples": [
+     {
+      "question": "Find the foci, vertices, axes, eccentricity and latus rectum of $\\dfrac{x^2}{36}+\\dfrac{y^2}{16}=1$.",
+      "use": [
+       "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b):$ foci $(\\pm c,0),\\ c^2=a^2-b^2$",
+       "Vertices $(\\pm a,0)$; major axis $2a$, minor axis $2b$",
+       "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$a=6,\\ b=4,\\ c=\\sqrt{36-16}=2\\sqrt5$"
+      ],
+      "result": "$(\\pm2\\sqrt5,0);\\ (\\pm6,0);\\ 12,\\ 8;\\ e=\\frac{\\sqrt5}3;\\ \\frac{16}3$"
+     },
+     {
+      "question": "Find the foci and eccentricity of $9x^2+4y^2=36$.",
+      "use": [
+       "$\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1\\ (a>b):$ foci $(0,\\pm c)$",
+       "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$\\frac{x^2}4+\\frac{y^2}9=1:\\ a=3,\\ b=2,\\ c=\\sqrt5$"
+      ],
+      "result": "$(0,\\pm\\sqrt5),\\ e=\\frac{\\sqrt5}3$"
+     },
+     {
+      "question": "Find the ellipse with vertices $(\\pm5,0)$ and foci $(\\pm4,0)$.",
+      "use": [
+       "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b):$ foci $(\\pm c,0),\\ c^2=a^2-b^2$"
+      ],
+      "steps": [
+       "$b^2=25-16=9$"
+      ],
+      "result": "$\\frac{x^2}{25}+\\frac{y^2}9=1$"
+     },
+     {
+      "question": "Find the ellipse with major axis on the $x$-axis through $(4,3)$ and $(-1,4)$.",
+      "use": [
+       "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b):$ foci $(\\pm c,0),\\ c^2=a^2-b^2$"
+      ],
+      "steps": [
+       "$\\frac{16}{a^2}+\\frac9{b^2}=1,\\ \\frac1{a^2}+\\frac{16}{b^2}=1$",
+       "$\\frac1{a^2}=\\frac7{247},\\ \\frac1{b^2}=\\frac{15}{247}$"
+      ],
+      "result": "$7x^2+15y^2=247$"
+     },
+     {
+      "question": "Find the ellipse with centre $(0,0)$, foci on the $y$-axis, $e=\\frac34$ and $b=\\sqrt7$.",
+      "use": [
+       "$\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1\\ (a>b):$ foci $(0,\\pm c)$",
+       "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$c=\\frac34a,\\ b^2=a^2-c^2=\\frac7{16}a^2=7\\Rightarrow a^2=16$"
+      ],
+      "result": "$\\frac{x^2}7+\\frac{y^2}{16}=1$"
+     }
+    ]
+   },
+   {
+    "title": "Hyperbola",
+    "level": "board",
+    "formulas": [
+     "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1:$ foci $(\\pm c,0),\\ c^2=a^2+b^2$",
+     "Vertices $(\\pm a,0)$; transverse axis $2a$, conjugate axis $2b$",
+     "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$",
+     "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1:$ foci $(0,\\pm c)$",
+     "$|PF_1-PF_2|=2a$"
+    ],
+    "examples": [
+     {
+      "question": "Find the foci, vertices, eccentricity and latus rectum of $\\dfrac{x^2}{16}-\\dfrac{y^2}{9}=1$.",
+      "use": [
+       "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1:$ foci $(\\pm c,0),\\ c^2=a^2+b^2$",
+       "Vertices $(\\pm a,0)$; transverse axis $2a$, conjugate axis $2b$",
+       "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$a=4,\\ b=3,\\ c=\\sqrt{16+9}=5$"
+      ],
+      "result": "$(\\pm5,0);\\ (\\pm4,0);\\ e=\\frac54;\\ \\frac92$"
+     },
+     {
+      "question": "Find the foci and eccentricity of $16y^2-9x^2=576$.",
+      "use": [
+       "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1:$ foci $(0,\\pm c)$",
+       "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$\\frac{y^2}{36}-\\frac{x^2}{64}=1:\\ a=6,\\ b=8,\\ c=10$"
+      ],
+      "result": "$(0,\\pm10),\\ e=\\frac53$"
+     },
+     {
+      "question": "Find the hyperbola with vertices $(\\pm2,0)$ and foci $(\\pm3,0)$.",
+      "use": [
+       "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1:$ foci $(\\pm c,0),\\ c^2=a^2+b^2$"
+      ],
+      "steps": [
+       "$b^2=9-4=5$"
+      ],
+      "result": "$\\frac{x^2}4-\\frac{y^2}5=1$"
+     },
+     {
+      "question": "Find the hyperbola with foci $(0,\\pm12)$ and latus rectum $36$.",
+      "use": [
+       "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1:$ foci $(0,\\pm c)$",
+       "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$\\frac{2b^2}a=36\\Rightarrow b^2=18a;\\ a^2+18a=144\\Rightarrow a=6$",
+       "$b^2=108$"
+      ],
+      "result": "$\\frac{y^2}{36}-\\frac{x^2}{108}=1$"
+     },
+     {
+      "question": "Find the hyperbola with foci $(\\pm5,0)$ through $(4\\sqrt2,\\,3)$.",
+      "use": [
+       "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1:$ foci $(\\pm c,0),\\ c^2=a^2+b^2$"
+      ],
+      "steps": [
+       "$\\frac{32}{a^2}-\\frac9{25-a^2}=1\\Rightarrow a^4-66a^2+800=0$",
+       "$a^2=16\\ (a^2<25)$"
+      ],
+      "result": "$\\frac{x^2}{16}-\\frac{y^2}9=1$"
+     }
+    ]
+   },
+   {
+    "title": "Mixed conic problems (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "A circle through three points: put each point in $x^2+y^2+2gx+2fy+c=0$",
+     "Point on a parabola: distance to focus $=$ distance to directrix",
+     "$PF_1+PF_2=2a$",
+     "$|PF_1-PF_2|=2a$",
+     "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$",
+     "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$"
+    ],
+    "examples": [
+     {
+      "question": "Find the locus of a point whose distances from $(4,0)$ and $(-4,0)$ add up to $10$.",
+      "use": [
+       "$PF_1+PF_2=2a$"
+      ],
+      "steps": [
+       "$2a=10,\\ c=4,\\ b^2=25-16$"
+      ],
+      "result": "$\\frac{x^2}{25}+\\frac{y^2}9=1$"
+     },
+     {
+      "question": "Find the locus of a point whose distances from $(0,\\pm5)$ differ by $6$.",
+      "use": [
+       "$|PF_1-PF_2|=2a$"
+      ],
+      "steps": [
+       "$2a=6,\\ c=5,\\ b^2=25-9$"
+      ],
+      "result": "$\\frac{y^2}9-\\frac{x^2}{16}=1$"
+     },
+     {
+      "question": "An ellipse has its latus rectum equal to half its minor axis. Find its eccentricity.",
+      "use": [
+       "$e=\\frac ca<1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$\\frac{2b^2}a=b\\Rightarrow b=\\frac a2$",
+       "$e^2=1-\\frac{b^2}{a^2}=\\frac34$"
+      ],
+      "result": "$\\frac{\\sqrt3}2$"
+     },
+     {
+      "question": "A hyperbola has its conjugate axis equal to its transverse axis. Find $e$.",
+      "use": [
+       "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$"
+      ],
+      "steps": [
+       "$b=a\\Rightarrow c^2=2a^2$"
+      ],
+      "result": "$\\sqrt2$"
+     },
+     {
+      "question": "Find the length of the chord of $y^2=4ax$ through the focus and perpendicular to the axis, and its end points.",
+      "use": [
+       "Point on a parabola: distance to focus $=$ distance to directrix"
+      ],
+      "steps": [
+       "$x=a\\Rightarrow y^2=4a^2\\Rightarrow y=\\pm2a$"
+      ],
+      "result": "$(a,\\pm2a);\\ 4a$"
+     },
+     {
+      "question": "An arch is a parabola with span $10$ m at the base and height $5$ m. Find its width $2$ m from the top.",
+      "use": [
+       "Point on a parabola: distance to focus $=$ distance to directrix"
+      ],
+      "steps": [
+       "$x^2=-4ay$ through $(5,-5):\\ 25=20a\\Rightarrow x^2=-5y$",
+       "$y=-2:\\ x^2=10\\Rightarrow$ width $=2\\sqrt{10}$"
+      ],
+      "result": "$2\\sqrt{10}$ m"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-three-dimensional-geometry": {
+  "slug": "g11-three-dimensional-geometry",
+  "number": 11,
+  "title": "Introduction to Three-dimensional Geometry",
+  "subtitle": "Coordinate axes and planes, coordinates of a point, octants and the distance formula",
+  "sheet": [
+   {
+    "title": "Coordinates",
+    "items": [
+     "$P(x, y, z):\\ x, y, z$ are the distances from the $yz,\\ zx,\\ xy$ planes (with signs)",
+     "$x$-axis: $(x,0,0);\\quad xy$-plane: $(x, y,0)$",
+     "Octants: signs of $(x, y, z)$; I $=(+,+,+)$, VII $=(-,-,-)$"
+    ]
+   },
+   {
+    "title": "Distance",
+    "items": [
+     "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$",
+     "$OP=\\sqrt{x^2+y^2+z^2}$"
+    ]
+   },
+   {
+    "title": "Section formula (JEE)",
+    "items": [
+     "$\\text{Internal }m:n:\\ \\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)$",
+     "$\\text{External }m:n:\\ \\left(\\frac{mx_2-nx_1}{m-n},\\dots\\right)$",
+     "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\frac{y_1+y_2}2,\\frac{z_1+z_2}2\\right)$",
+     "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3,\\frac{z_1+z_2+z_3}3\\right)$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Coordinate axes, planes and octants",
+    "level": "board",
+    "formulas": [
+     "$P(x, y, z):\\ x, y, z$ are the distances from the $yz,\\ zx,\\ xy$ planes (with signs)",
+     "$x$-axis: $(x,0,0);\\quad xy$-plane: $(x, y,0)$",
+     "Octants: signs of $(x, y, z)$; I $=(+,+,+)$, VII $=(-,-,-)$",
+     "Foot of the perpendicular from $(a, b, c)$ on the $xy$-plane $=(a, b,0)$"
+    ],
+    "examples": [
+     {
+      "question": "Name the octants of $(-3,1,2)$, $(-3,1,-2)$, $(2,-4,-7)$ and $(-4,2,-5)$.",
+      "use": [
+       "Octants: signs of $(x, y, z)$; I $=(+,+,+)$, VII $=(-,-,-)$"
+      ],
+      "steps": [
+       "$(-,+,+):$ II; $(-,+,-):$ VI; $(+,-,-):$ VIII; $(-,+,-):$ VI"
+      ],
+      "result": "II, VI, VIII, VI"
+     },
+     {
+      "question": "A point is on the $x$-axis. What are its $y$- and $z$-coordinates?",
+      "use": [
+       "$x$-axis: $(x,0,0);\\quad xy$-plane: $(x, y,0)$"
+      ],
+      "steps": [
+       "$(x,0,0)$"
+      ],
+      "result": "$0$ and $0$"
+     },
+     {
+      "question": "Write the coordinates of the feet of the perpendiculars from $P(3,-4,5)$ on the three coordinate planes.",
+      "use": [
+       "Foot of the perpendicular from $(a, b, c)$ on the $xy$-plane $=(a, b,0)$"
+      ],
+      "steps": [
+       "$xy:\\ (3,-4,0);\\quad yz:\\ (0,-4,5);\\quad zx:\\ (3,0,5)$"
+      ],
+      "result": "$(3,-4,0),\\ (0,-4,5),\\ (3,0,5)$"
+     },
+     {
+      "question": "What is the distance of $P(3,-4,5)$ from the $yz$-plane?",
+      "use": [
+       "$P(x, y, z):\\ x, y, z$ are the distances from the $yz,\\ zx,\\ xy$ planes (with signs)"
+      ],
+      "steps": [
+       "$|x|=3$"
+      ],
+      "result": "$3$"
+     },
+     {
+      "question": "In which plane does a point with $z=0$ lie, and what are the signs of points in octant VII?",
+      "use": [
+       "$x$-axis: $(x,0,0);\\quad xy$-plane: $(x, y,0)$",
+       "Octants: signs of $(x, y, z)$; I $=(+,+,+)$, VII $=(-,-,-)$"
+      ],
+      "steps": [
+       "$z=0\\Rightarrow xy$-plane"
+      ],
+      "result": "$xy$-plane; $(-,-,-)$"
+     }
+    ]
+   },
+   {
+    "title": "Distance formula",
+    "level": "board",
+    "formulas": [
+     "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$",
+     "$OP=\\sqrt{x^2+y^2+z^2}$",
+     "Distance of $(a, b, c)$ from the $x$-axis $=\\sqrt{b^2+c^2}$",
+     "$P, Q, R$ collinear $\\iff$ one distance $=$ sum of the other two"
+    ],
+    "examples": [
+     {
+      "question": "Find the distance between $(2,3,5)$ and $(4,3,1)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{4+0+16}$"
+      ],
+      "result": "$2\\sqrt5$"
+     },
+     {
+      "question": "Find the distance between $(-3,7,2)$ and $(2,4,-1)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{25+9+9}$"
+      ],
+      "result": "$\\sqrt{43}$"
+     },
+     {
+      "question": "Show that $(-2,3,5)$, $(1,2,3)$ and $(7,0,-1)$ are collinear.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$",
+       "$P, Q, R$ collinear $\\iff$ one distance $=$ sum of the other two"
+      ],
+      "steps": [
+       "$PQ=\\sqrt{9+1+4}=\\sqrt{14},\\ QR=\\sqrt{36+4+16}=2\\sqrt{14},\\ PR=\\sqrt{81+9+36}=3\\sqrt{14}$",
+       "$PQ+QR=PR$"
+      ],
+      "result": "Collinear"
+     },
+     {
+      "question": "Show that $(0,7,-10)$, $(1,6,-6)$ and $(4,9,-6)$ form an isosceles triangle.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$AB=\\sqrt{1+1+16}=\\sqrt{18},\\ BC=\\sqrt{9+9+0}=\\sqrt{18},\\ AC=\\sqrt{16+4+16}=6$"
+      ],
+      "result": "$AB=BC$"
+     },
+     {
+      "question": "Show that $(-1,2,1)$, $(1,-2,5)$, $(4,-7,8)$ and $(2,-3,4)$ form a parallelogram.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$AB=\\sqrt{4+16+16}=6,\\ CD=\\sqrt{4+16+16}=6$",
+       "$BC=\\sqrt{9+25+9}=\\sqrt{43},\\ DA=\\sqrt{9+25+9}=\\sqrt{43}$"
+      ],
+      "result": "Opposite sides are equal"
+     },
+     {
+      "question": "Find the set of points $P$ with $PA=PB$ for $A(1,2,3)$ and $B(3,2,-1)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$(x-1)^2+(y-2)^2+(z-3)^2=(x-3)^2+(y-2)^2+(z+1)^2$",
+       "$-2x-6z+10=-6x+2z+10\\Rightarrow 4x-8z=0$"
+      ],
+      "result": "$x-2z=0$"
+     },
+     {
+      "question": "Find the set of points $P$ with $PA+PB=10$ for $A(4,0,0)$ and $B(-4,0,0)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{(x-4)^2+y^2+z^2}=10-\\sqrt{(x+4)^2+y^2+z^2}$",
+       "square twice: $9x^2+25y^2+25z^2=225$"
+      ],
+      "result": "$9x^2+25y^2+25z^2-225=0$"
+     },
+     {
+      "question": "Find the point on the $y$-axis equidistant from $(3,1,2)$ and $(5,5,2)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$"
+      ],
+      "steps": [
+       "$9+(y-1)^2+4=25+(y-5)^2+4$",
+       "$-2y+14=-10y+54\\Rightarrow y=5$"
+      ],
+      "result": "$(0,5,0)$"
+     }
+    ]
+   },
+   {
+    "title": "Section formula and centroid (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\text{Internal }m:n:\\ \\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)$",
+     "$\\text{External }m:n:\\ \\left(\\frac{mx_2-nx_1}{m-n},\\dots\\right)$",
+     "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\frac{y_1+y_2}2,\\frac{z_1+z_2}2\\right)$",
+     "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3,\\frac{z_1+z_2+z_3}3\\right)$",
+     "Distance of $(a, b, c)$ from the $x$-axis $=\\sqrt{b^2+c^2}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the point dividing $(1,-2,3)$ and $(3,4,-5)$ internally in the ratio $2:3$.",
+      "use": [
+       "$\\text{Internal }m:n:\\ \\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)$"
+      ],
+      "steps": [
+       "$\\left(\\frac{6+3}5,\\frac{8-6}5,\\frac{-10+9}5\\right)$"
+      ],
+      "result": "$\\left(\\frac95,\\frac25,-\\frac15\\right)$"
+     },
+     {
+      "question": "Find the point dividing the same points externally in the ratio $2:3$.",
+      "use": [
+       "$\\text{External }m:n:\\ \\left(\\frac{mx_2-nx_1}{m-n},\\dots\\right)$"
+      ],
+      "steps": [
+       "$\\left(\\frac{6-3}{-1},\\frac{8+6}{-1},\\frac{-10-9}{-1}\\right)$"
+      ],
+      "result": "$(-3,-14,19)$"
+     },
+     {
+      "question": "Find the ratio in which the $yz$-plane divides the join of $(-2,4,7)$ and $(3,-5,8)$.",
+      "use": [
+       "$\\text{Internal }m:n:\\ \\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)$"
+      ],
+      "steps": [
+       "$x=\\frac{3k-2}{k+1}=0\\Rightarrow k=\\frac23$"
+      ],
+      "result": "$2:3$ internally"
+     },
+     {
+      "question": "Find the centroid of the triangle with vertices $(3,-5,7)$, $(-1,7,-6)$ and $(1,1,2)$.",
+      "use": [
+       "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3,\\frac{z_1+z_2+z_3}3\\right)$"
+      ],
+      "steps": [
+       "$\\left(\\frac33,\\frac33,\\frac33\\right)$"
+      ],
+      "result": "$(1,1,1)$"
+     },
+     {
+      "question": "The centroid of the triangle with vertices $(2a,2,6)$, $(-4,3b,-10)$ and $(8,14,2c)$ is the origin. Find $a,b,c$.",
+      "use": [
+       "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3,\\frac{z_1+z_2+z_3}3\\right)$"
+      ],
+      "steps": [
+       "$2a-4+8=0,\\ 2+3b+14=0,\\ 6-10+2c=0$"
+      ],
+      "result": "$a=-2,\\ b=-\\frac{16}3,\\ c=2$"
+     },
+     {
+      "question": "Find the distance of $(3,-4,12)$ from the $x$-axis and from the origin.",
+      "use": [
+       "Distance of $(a, b, c)$ from the $x$-axis $=\\sqrt{b^2+c^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{16+144},\\quad \\sqrt{9+16+144}$"
+      ],
+      "result": "$4\\sqrt{10},\\ 13$"
+     },
+     {
+      "question": "$A(3,2,0)$, $B(5,3,2)$, $C(-9,6,-3)$. The bisector of angle $A$ meets $BC$ at $D$. Find $D$.",
+      "use": [
+       "$\\text{Internal }m:n:\\ \\left(\\frac{mx_2+nx_1}{m+n},\\frac{my_2+ny_1}{m+n},\\frac{mz_2+nz_1}{m+n}\\right)$"
+      ],
+      "steps": [
+       "$AB=\\sqrt{4+1+4}=3,\\ AC=\\sqrt{144+16+9}=13;\\ BD:DC=3:13$",
+       "$D=\\left(\\frac{3(-9)+13(5)}{16},\\frac{3(6)+13(3)}{16},\\frac{3(-3)+13(2)}{16}\\right)$"
+      ],
+      "result": "$\\left(\\frac{19}8,\\frac{57}{16},\\frac{17}{16}\\right)$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-limits-derivatives": {
+  "slug": "g11-limits-derivatives",
+  "number": 12,
+  "title": "Limits and Derivatives",
+  "subtitle": "Limits of polynomial, rational and trigonometric functions, the derivative from first principles and the rules of differentiation",
+  "sheet": [
+   {
+    "title": "Algebra of limits",
+    "items": [
+     "$\\lim_{x\\to a}[f(x)\\pm g(x)]=\\lim_{x\\to a}f(x)\\pm\\lim_{x\\to a}g(x)$",
+     "$\\lim_{x\\to a}[f(x)g(x)]=\\lim f\\cdot\\lim g,\\quad \\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\frac{\\lim f}{\\lim g}\\ (\\lim g\\ne0)$",
+     "Polynomial $p:\\ \\lim_{x\\to a}p(x)=p(a)$",
+     "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+    ]
+   },
+   {
+    "title": "Standard limits",
+    "items": [
+     "$\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}$",
+     "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$",
+     "$\\lim_{x\\to0}\\frac{1-\\cos x}{x}=0$",
+     "$\\lim_{x\\to0}\\frac{\\sin ax}{bx}=\\frac ab$"
+    ]
+   },
+   {
+    "title": "Derivative",
+    "items": [
+     "$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$",
+     "$f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}$",
+     "$\\frac{d}{dx}(x^n)=nx^{n-1},\\quad \\frac{d}{dx}(c)=0$"
+    ]
+   },
+   {
+    "title": "Rules of differentiation",
+    "items": [
+     "$(u\\pm v)'=u'\\pm v',\\quad (cu)'=cu'$",
+     "$(uv)'=u'v+uv'$",
+     "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$",
+     "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Limits of polynomial and rational functions",
+    "level": "board",
+    "formulas": [
+     "$\\lim_{x\\to a}[f(x)\\pm g(x)]=\\lim_{x\\to a}f(x)\\pm\\lim_{x\\to a}g(x)$",
+     "$\\lim_{x\\to a}[f(x)g(x)]=\\lim f\\cdot\\lim g,\\quad \\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\frac{\\lim f}{\\lim g}\\ (\\lim g\\ne0)$",
+     "Polynomial $p:\\ \\lim_{x\\to a}p(x)=p(a)$",
+     "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\lim\\limits_{x\\to3}(x+3)$ and $\\lim\\limits_{x\\to1}(x^{10}+x^5+1)$.",
+      "use": [
+       "Polynomial $p:\\ \\lim_{x\\to a}p(x)=p(a)$"
+      ],
+      "steps": [
+       "$3+3;\\quad 1+1+1$"
+      ],
+      "result": "$6,\\ 3$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to2}\\dfrac{3x^2-x-10}{x^2-4}$.",
+      "use": [
+       "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+      ],
+      "steps": [
+       "$\\frac{(x-2)(3x+5)}{(x-2)(x+2)}=\\frac{3x+5}{x+2}$",
+       "$\\frac{11}4$"
+      ],
+      "result": "$\\frac{11}4$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{(x+1)^5-1}{x}$.",
+      "use": [
+       "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+      ],
+      "steps": [
+       "$(x+1)^5-1=x(x^4+5x^3+10x^2+10x+5)$",
+       "$\\lim_{x\\to0}(x^4+5x^3+10x^2+10x+5)$"
+      ],
+      "result": "$5$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\sqrt{1+x}-1}{x}$.",
+      "use": [
+       "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+      ],
+      "steps": [
+       "$\\frac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\frac{1}{\\sqrt{1+x}+1}$"
+      ],
+      "result": "$\\frac12$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to1}\\dfrac{x^2-1}{x^2-3x+2}$.",
+      "use": [
+       "$\\frac00$ form: factor and cancel $(x-a)$, or rationalise"
+      ],
+      "steps": [
+       "$\\frac{(x-1)(x+1)}{(x-1)(x-2)}=\\frac{x+1}{x-2}$"
+      ],
+      "result": "$-2$"
+     }
+    ]
+   },
+   {
+    "title": "Standard limits",
+    "level": "board",
+    "formulas": [
+     "$\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}$",
+     "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$",
+     "$\\lim_{x\\to0}\\frac{1-\\cos x}{x}=0$",
+     "$\\lim_{x\\to0}\\frac{\\sin ax}{bx}=\\frac ab$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\lim\\limits_{x\\to1}\\dfrac{x^{15}-1}{x^{10}-1}$.",
+      "use": [
+       "$\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}$"
+      ],
+      "steps": [
+       "$\\frac{\\frac{x^{15}-1}{x-1}}{\\frac{x^{10}-1}{x-1}}\\to\\frac{15}{10}$"
+      ],
+      "result": "$\\frac32$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to a}\\dfrac{x^{\\frac23}-a^{\\frac23}}{x-a}$.",
+      "use": [
+       "$\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}$"
+      ],
+      "steps": [
+       "$n=\\frac23$"
+      ],
+      "result": "$\\frac23a^{-\\frac13}$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\sin4x}{\\sin2x}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$",
+       "$\\lim_{x\\to0}\\frac{\\sin ax}{bx}=\\frac ab$"
+      ],
+      "steps": [
+       "$\\frac{\\frac{\\sin4x}{4x}\\cdot4x}{\\frac{\\sin2x}{2x}\\cdot2x}\\to\\frac{4}{2}$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\tan x}{x}$ and $\\lim\\limits_{x\\to0}\\dfrac{\\sin ax}{\\sin bx}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$",
+       "$\\lim_{x\\to0}\\frac{\\sin ax}{bx}=\\frac ab$"
+      ],
+      "steps": [
+       "$\\frac{\\tan x}x\\to1;\\quad \\frac{\\sin ax}{\\sin bx}=\\frac{\\frac{\\sin ax}{ax}\\,a}{\\frac{\\sin bx}{bx}\\,b}$"
+      ],
+      "result": "$1,\\ \\frac ab$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{1-\\cos x}{x}$ and $\\lim\\limits_{x\\to0}\\dfrac{x\\cos x+\\sin x}{x^2+\\tan x}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$",
+       "$\\lim_{x\\to0}\\frac{1-\\cos x}{x}=0$"
+      ],
+      "steps": [
+       "$\\frac{1-\\cos x}x\\to0$",
+       "$\\frac{\\cos x+\\frac{\\sin x}x}{x+\\frac{\\tan x}x}\\to\\frac{1+1}{0+1}$"
+      ],
+      "result": "$0,\\ 2$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to\\pi}\\dfrac{\\sin(\\pi-x)}{\\pi(\\pi-x)}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$"
+      ],
+      "steps": [
+       "$y=\\pi-x\\to0:\\ \\frac1\\pi\\cdot\\frac{\\sin y}y$"
+      ],
+      "result": "$\\frac1\\pi$"
+     }
+    ]
+   },
+   {
+    "title": "The derivative from first principles",
+    "level": "board",
+    "formulas": [
+     "$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$",
+     "$f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}$",
+     "$\\frac{d}{dx}(x^n)=nx^{n-1},\\quad \\frac{d}{dx}(c)=0$"
+    ],
+    "examples": [
+     {
+      "question": "Find the derivative of $f(x)=x^2$ from first principles.",
+      "use": [
+       "$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$"
+      ],
+      "steps": [
+       "$\\frac{(x+h)^2-x^2}h=\\frac{2xh+h^2}h=2x+h$"
+      ],
+      "result": "$2x$"
+     },
+     {
+      "question": "Find the derivative of $f(x)=\\dfrac1x$ from first principles.",
+      "use": [
+       "$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$"
+      ],
+      "steps": [
+       "$\\frac{\\frac1{x+h}-\\frac1x}h=\\frac{-h}{hx(x+h)}=\\frac{-1}{x(x+h)}$"
+      ],
+      "result": "$-\\frac1{x^2}$"
+     },
+     {
+      "question": "Find the derivative of $\\sin x$ from first principles.",
+      "use": [
+       "$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$"
+      ],
+      "steps": [
+       "$\\frac{\\sin(x+h)-\\sin x}h=\\frac{2\\cos\\left(x+\\frac h2\\right)\\sin\\frac h2}{h}$",
+       "$=\\cos\\left(x+\\frac h2\\right)\\cdot\\frac{\\sin\\frac h2}{\\frac h2}\\to\\cos x$"
+      ],
+      "result": "$\\cos x$"
+     },
+     {
+      "question": "Find $f'(10)$ for $f(x)=3x$ from first principles.",
+      "use": [
+       "$f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}$"
+      ],
+      "steps": [
+       "$\\frac{3(10+h)-30}h=3$"
+      ],
+      "result": "$3$"
+     },
+     {
+      "question": "Find $f'(2)$ for $f(x)=x^2-2$ from first principles.",
+      "use": [
+       "$f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}$"
+      ],
+      "steps": [
+       "$\\frac{(2+h)^2-2-2}h=\\frac{4h+h^2}h=4+h$"
+      ],
+      "result": "$4$"
+     }
+    ]
+   },
+   {
+    "title": "Rules of differentiation",
+    "level": "board",
+    "formulas": [
+     "$(u\\pm v)'=u'\\pm v',\\quad (cu)'=cu'$",
+     "$(uv)'=u'v+uv'$",
+     "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$",
+     "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$",
+     "$\\frac{d}{dx}(x^n)=nx^{n-1},\\quad \\frac{d}{dx}(c)=0$"
+    ],
+    "examples": [
+     {
+      "question": "Differentiate $x^3-2x^2+\\dfrac4x-7$.",
+      "use": [
+       "$(u\\pm v)'=u'\\pm v',\\quad (cu)'=cu'$",
+       "$\\frac{d}{dx}(x^n)=nx^{n-1},\\quad \\frac{d}{dx}(c)=0$"
+      ],
+      "steps": [
+       "$3x^2-4x-\\frac4{x^2}$"
+      ],
+      "result": "$3x^2-4x-\\frac4{x^2}$"
+     },
+     {
+      "question": "Differentiate $(x+2)(x^2-1)$ by the product rule.",
+      "use": [
+       "$(uv)'=u'v+uv'$"
+      ],
+      "steps": [
+       "$1\\cdot(x^2-1)+(x+2)(2x)$"
+      ],
+      "result": "$3x^2+4x-1$"
+     },
+     {
+      "question": "Differentiate $\\dfrac{x+1}{x-1}$.",
+      "use": [
+       "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$"
+      ],
+      "steps": [
+       "$\\frac{(x-1)-(x+1)}{(x-1)^2}$"
+      ],
+      "result": "$-\\frac2{(x-1)^2}$"
+     },
+     {
+      "question": "Differentiate $x\\sin x$ and $\\sin x\\cos x$.",
+      "use": [
+       "$(uv)'=u'v+uv'$",
+       "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$"
+      ],
+      "steps": [
+       "$\\sin x+x\\cos x$",
+       "$\\cos^2x-\\sin^2x$"
+      ],
+      "result": "$\\sin x+x\\cos x,\\ \\cos2x$"
+     },
+     {
+      "question": "Differentiate $\\dfrac{\\sin x}{x}$.",
+      "use": [
+       "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$",
+       "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$"
+      ],
+      "steps": [
+       "$\\frac{x\\cos x-\\sin x}{x^2}$"
+      ],
+      "result": "$\\frac{x\\cos x-\\sin x}{x^2}$"
+     },
+     {
+      "question": "Differentiate $\\dfrac{x^5-\\cos x}{\\sin x}$.",
+      "use": [
+       "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$",
+       "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$"
+      ],
+      "steps": [
+       "$\\frac{(5x^4+\\sin x)\\sin x-(x^5-\\cos x)\\cos x}{\\sin^2x}$"
+      ],
+      "result": "$\\frac{5x^4\\sin x-x^5\\cos x+1}{\\sin^2x}$"
+     },
+     {
+      "question": "Differentiate $(ax+b)^2$.",
+      "use": [
+       "$(u\\pm v)'=u'\\pm v',\\quad (cu)'=cu'$",
+       "$\\frac{d}{dx}(x^n)=nx^{n-1},\\quad \\frac{d}{dx}(c)=0$"
+      ],
+      "steps": [
+       "$(ax+b)^2=a^2x^2+2abx+b^2$",
+       "$2a^2x+2ab$"
+      ],
+      "result": "$2a(ax+b)$"
+     }
+    ]
+   },
+   {
+    "title": "One-sided limits and harder problems (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\lim_{x\\to a}f(x)$ exists $\\iff\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)$",
+     "$\\lim_{x\\to0}\\frac{1-\\cos x}{x^2}=\\frac12$",
+     "$\\frac{d}{dx}\\sec x=\\sec x\\tan x,\\quad \\frac{d}{dx}\\csc x=-\\csc x\\cot x,\\quad \\frac{d}{dx}\\cot x=-\\csc^2x$",
+     "$\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}=na^{n-1}$",
+     "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$"
+    ],
+    "examples": [
+     {
+      "question": "$f(x)=\\begin{cases}2x+3,&x\\le0\\\\3(x+1),&x>0\\end{cases}$. Find $\\lim\\limits_{x\\to0}f(x)$ and $\\lim\\limits_{x\\to1}f(x)$.",
+      "use": [
+       "$\\lim_{x\\to a}f(x)$ exists $\\iff\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)$"
+      ],
+      "steps": [
+       "$\\lim_{x\\to0^-}=3,\\ \\lim_{x\\to0^+}=3$",
+       "$\\lim_{x\\to1}=3(2)$"
+      ],
+      "result": "$3,\\ 6$"
+     },
+     {
+      "question": "Does $\\lim\\limits_{x\\to0}\\dfrac{|x|}{x}$ exist?",
+      "use": [
+       "$\\lim_{x\\to a}f(x)$ exists $\\iff\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)$"
+      ],
+      "steps": [
+       "$x\\to0^-:\\ -1;\\quad x\\to0^+:\\ 1$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{1-\\cos2x}{x^2}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{1-\\cos x}{x^2}=\\frac12$"
+      ],
+      "steps": [
+       "$\\frac{1-\\cos2x}{(2x)^2}\\cdot4\\to\\frac12\\cdot4$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "$f(x)=\\begin{cases}mx^2+n,&x<0\\\\nx+m,&0\\le x\\le1\\\\nx^3+m,&x>1\\end{cases}$. For which $m,n$ do $\\lim\\limits_{x\\to0}f$ and $\\lim\\limits_{x\\to1}f$ exist?",
+      "use": [
+       "$\\lim_{x\\to a}f(x)$ exists $\\iff\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)$"
+      ],
+      "steps": [
+       "$x\\to0:\\ n=m$",
+       "$x\\to1:\\ n+m=n+m$ always"
+      ],
+      "result": "$m=n$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\cos2x-1}{\\cos x-1}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{1-\\cos x}{x^2}=\\frac12$"
+      ],
+      "steps": [
+       "$\\frac{\\frac{1-\\cos2x}{x^2}}{\\frac{1-\\cos x}{x^2}}\\to\\frac{2}{\\frac12}$"
+      ],
+      "result": "$4$"
+     },
+     {
+      "question": "Differentiate $\\sec x+\\cot x$ and $x^2\\tan x$.",
+      "use": [
+       "$\\frac{d}{dx}\\sec x=\\sec x\\tan x,\\quad \\frac{d}{dx}\\csc x=-\\csc x\\cot x,\\quad \\frac{d}{dx}\\cot x=-\\csc^2x$"
+      ],
+      "steps": [
+       "$\\sec x\\tan x-\\csc^2x$",
+       "$2x\\tan x+x^2\\sec^2x$"
+      ],
+      "result": "$\\sec x\\tan x-\\csc^2x;\\ 2x\\tan x+x^2\\sec^2x$"
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\tan x-\\sin x}{x^3}$.",
+      "use": [
+       "$\\lim_{x\\to0}\\frac{1-\\cos x}{x^2}=\\frac12$",
+       "$\\lim_{x\\to0}\\frac{\\sin x}{x}=1,\\quad \\lim_{x\\to0}\\frac{\\tan x}{x}=1$"
+      ],
+      "steps": [
+       "$\\tan x-\\sin x=\\tan x(1-\\cos x)$",
+       "$\\frac{\\tan x}x\\cdot\\frac{1-\\cos x}{x^2}\\to1\\cdot\\frac12$"
+      ],
+      "result": "$\\frac12$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-statistics": {
+  "slug": "g11-statistics",
+  "number": 13,
+  "title": "Statistics",
+  "subtitle": "Range, mean deviation about the mean and the median, variance and standard deviation",
+  "sheet": [
+   {
+    "title": "Mean deviation",
+    "items": [
+     "Range $=$ largest value $-$ smallest value",
+     "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$",
+     "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$",
+     "Continuous: use the class mid-points $x_i$",
+     "Median of grouped data $=l+\\frac{\\frac N2-C}{f}\\times h$"
+    ]
+   },
+   {
+    "title": "Variance and standard deviation",
+    "items": [
+     "$\\sigma^2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\frac{\\sum x_i^2}{n}-\\bar x^2$",
+     "Frequency data: $\\sigma^2=\\frac{\\sum f_i(x_i-\\bar x)^2}{N}$",
+     "$\\sigma=\\sqrt{\\sigma^2}$ (standard deviation)"
+    ]
+   },
+   {
+    "title": "Comparing data (JEE)",
+    "items": [
+     "C.V. $=\\frac{\\sigma}{\\bar x}\\times100$",
+     "Smaller C.V. $\\Rightarrow$ more consistent",
+     "$y_i=ax_i+b\\Rightarrow\\bar y=a\\bar x+b,\\ \\sigma_y=|a|\\sigma_x$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Range and mean deviation for ungrouped data",
+    "level": "board",
+    "formulas": [
+     "Range $=$ largest value $-$ smallest value",
+     "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the range of $6,7,10,12,13,4,8,12$.",
+      "use": [
+       "Range $=$ largest value $-$ smallest value"
+      ],
+      "steps": [
+       "$13-4$"
+      ],
+      "result": "$9$"
+     },
+     {
+      "question": "Find the mean deviation about the mean of $6,7,10,12,13,4,8,12$.",
+      "use": [
+       "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$"
+      ],
+      "steps": [
+       "$\\bar x=\\frac{72}8=9$",
+       "$|x_i-9|:\\ 3,2,1,3,4,5,1,3$; sum $=22$",
+       "$\\frac{22}8$"
+      ],
+      "result": "$2.75$"
+     },
+     {
+      "question": "Find the mean deviation about the mean of $38,70,48,40,42,55,63,46,54,44$.",
+      "use": [
+       "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$"
+      ],
+      "steps": [
+       "$\\bar x=\\frac{500}{10}=50$",
+       "$|x_i-50|:\\ 12,20,2,10,8,5,13,4,4,6$; sum $=84$",
+       "$\\frac{84}{10}$"
+      ],
+      "result": "$8.4$"
+     },
+     {
+      "question": "Find the mean deviation about the median of $3,9,5,3,12,10,18,4,7,19,21$.",
+      "use": [
+       "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$"
+      ],
+      "steps": [
+       "Order: $3,3,4,5,7,9,10,12,18,19,21;\\ M=9$",
+       "$|x_i-9|:\\ 6,6,5,4,2,0,1,3,9,10,12$; sum $=58$",
+       "$\\frac{58}{11}$"
+      ],
+      "result": "$5.27$ (approx.)"
+     }
+    ]
+   },
+   {
+    "title": "Mean deviation for frequency data",
+    "level": "board",
+    "formulas": [
+     "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$",
+     "Continuous: use the class mid-points $x_i$",
+     "Median of grouped data $=l+\\frac{\\frac N2-C}{f}\\times h$",
+     "M.D. $(\\bar x)=\\frac{\\sum|x_i-\\bar x|}{n}$, M.D. $(M)=\\frac{\\sum|x_i-M|}{n}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the mean deviation about the mean: $x_i$: $2,5,6,8,10,12$; $f_i$: $2,8,10,7,8,5$.",
+      "use": [
+       "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$"
+      ],
+      "steps": [
+       "$N=40,\\ \\sum f_ix_i=300\\Rightarrow\\bar x=7.5$",
+       "$\\sum f_i|x_i-7.5|=92$",
+       "$\\frac{92}{40}$"
+      ],
+      "result": "$2.3$"
+     },
+     {
+      "question": "Find the mean deviation about the median: $x_i$: $3,6,9,12,13,15,21,22$; $f_i$: $3,4,5,2,4,5,4,3$.",
+      "use": [
+       "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$"
+      ],
+      "steps": [
+       "$N=30$; cumulative: $3,7,12,14,18,\\dots\\Rightarrow M=13\\ (15$ th and $16$ th values)",
+       "$\\sum f_i|x_i-13|=149$",
+       "$\\frac{149}{30}$"
+      ],
+      "result": "$4.97$ (approx.)"
+     },
+     {
+      "question": "Find the mean deviation about the mean. Classes: $0$–$10$, $10$–$20$, $20$–$30$, $30$–$40$, $40$–$50$, $50$–$60$; frequencies $6,8,14,16,4,2$.",
+      "use": [
+       "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$",
+       "Continuous: use the class mid-points $x_i$"
+      ],
+      "steps": [
+       "Mid-points $5,15,\\dots,55;\\ N=50,\\ \\sum f_ix_i=1350\\Rightarrow\\bar x=27$",
+       "$\\sum f_i|x_i-27|=512$",
+       "$\\frac{512}{50}$"
+      ],
+      "result": "$10.24$"
+     },
+     {
+      "question": "Find the mean deviation about the median. Classes $0$–$10$, …, $50$–$60$; frequencies $6,7,15,16,4,2$.",
+      "use": [
+       "Discrete: M.D. $(a)=\\frac{\\sum f_i|x_i-a|}{N},\\quad N=\\sum f_i$",
+       "Continuous: use the class mid-points $x_i$",
+       "Median of grouped data $=l+\\frac{\\frac N2-C}{f}\\times h$"
+      ],
+      "steps": [
+       "$N=50,\\ \\frac N2=25$; median class $20$ – $30,\\ C=13,\\ f=15$",
+       "$M=20+\\frac{25-13}{15}\\times10=28$",
+       "$\\sum f_i|x_i-28|=508\\Rightarrow\\frac{508}{50}$"
+      ],
+      "result": "$10.16$"
+     }
+    ]
+   },
+   {
+    "title": "Variance and standard deviation",
+    "level": "board",
+    "formulas": [
+     "$\\sigma^2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\frac{\\sum x_i^2}{n}-\\bar x^2$",
+     "Frequency data: $\\sigma^2=\\frac{\\sum f_i(x_i-\\bar x)^2}{N}$",
+     "$\\sigma=\\sqrt{\\sigma^2}$ (standard deviation)",
+     "Step deviation: $y_i=\\frac{x_i-A}h\\Rightarrow \\sigma_x=h\\,\\sigma_y$"
+    ],
+    "examples": [
+     {
+      "question": "Find the variance of $6,8,10,12,14,16,18,20,22,24$.",
+      "use": [
+       "$\\sigma^2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\frac{\\sum x_i^2}{n}-\\bar x^2$"
+      ],
+      "steps": [
+       "$\\bar x=\\frac{150}{10}=15$",
+       "$\\sum(x_i-15)^2=81+49+25+9+1+1+9+25+49+81=330$",
+       "$\\frac{330}{10}$"
+      ],
+      "result": "$33$"
+     },
+     {
+      "question": "Find the mean and variance of the numbers $1,2,\\dots,10$.",
+      "use": [
+       "$\\sigma^2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\frac{\\sum x_i^2}{n}-\\bar x^2$"
+      ],
+      "steps": [
+       "$\\bar x=5.5,\\quad \\frac{\\sum x_i^2}{10}=\\frac{385}{10}=38.5$",
+       "$\\sigma^2=38.5-30.25$"
+      ],
+      "result": "$5.5,\\ 8.25$"
+     },
+     {
+      "question": "Find the mean and variance: $x_i$: $4,8,11,17,20,24,32$; $f_i$: $3,5,9,5,4,3,1$.",
+      "use": [
+       "Frequency data: $\\sigma^2=\\frac{\\sum f_i(x_i-\\bar x)^2}{N}$"
+      ],
+      "steps": [
+       "$N=30,\\ \\sum f_ix_i=420\\Rightarrow\\bar x=14$",
+       "$\\sum f_i(x_i-14)^2=1374$",
+       "$\\frac{1374}{30}$"
+      ],
+      "result": "$14,\\ 45.8$"
+     },
+     {
+      "question": "Find the mean, variance and standard deviation. Classes $0$–$10$, $10$–$20$, $20$–$30$, $30$–$40$, $40$–$50$; frequencies $5,8,15,16,6$.",
+      "use": [
+       "Frequency data: $\\sigma^2=\\frac{\\sum f_i(x_i-\\bar x)^2}{N}$",
+       "$\\sigma=\\sqrt{\\sigma^2}$ (standard deviation)"
+      ],
+      "steps": [
+       "$N=50,\\ \\sum f_ix_i=1350\\Rightarrow\\bar x=27$",
+       "$\\sum f_i(x_i-27)^2=6600\\Rightarrow\\sigma^2=132$",
+       "$\\sigma=\\sqrt{132}$"
+      ],
+      "result": "$27,\\ 132,\\ 11.49$ (approx.)"
+     },
+     {
+      "question": "Find the variance by step deviation: $x_i$: $2,6,10,14,18$; $f_i$: $1,4,9,4,2$.",
+      "use": [
+       "Step deviation: $y_i=\\frac{x_i-A}h\\Rightarrow \\sigma_x=h\\,\\sigma_y$",
+       "Frequency data: $\\sigma^2=\\frac{\\sum f_i(x_i-\\bar x)^2}{N}$"
+      ],
+      "steps": [
+       "$A=10,\\ h=4:\\ y_i=-2,-1,0,1,2$",
+       "$\\bar y=\\frac{-2-4+4+4}{20}=\\frac1{10},\\ \\sigma_y^2=\\frac{4+4+4+8}{20}-\\frac1{100}=\\frac{99}{100}$",
+       "$\\sigma_x^2=16\\times\\frac{99}{100}$"
+      ],
+      "result": "$15.84$"
+     }
+    ]
+   },
+   {
+    "title": "Coefficient of variation and corrected values (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "C.V. $=\\frac{\\sigma}{\\bar x}\\times100$",
+     "Smaller C.V. $\\Rightarrow$ more consistent",
+     "$y_i=ax_i+b\\Rightarrow\\bar y=a\\bar x+b,\\ \\sigma_y=|a|\\sigma_x$",
+     "Correct a sum: $\\sum x_i$ and $\\sum x_i^2$ change by (correct value $-$ wrong value)",
+     "Variance of the first $n$ natural numbers $=\\frac{n^2-1}{12}$"
+    ],
+    "examples": [
+     {
+      "question": "Two plants have mean wages ₹$5300$ and ₹$5300$ with variances $100$ and $121$. Which plant shows more variability?",
+      "use": [
+       "C.V. $=\\frac{\\sigma}{\\bar x}\\times100$",
+       "Smaller C.V. $\\Rightarrow$ more consistent"
+      ],
+      "steps": [
+       "C.V. $_A=\\frac{10}{5300}\\times100$, C.V. $_B=\\frac{11}{5300}\\times100$"
+      ],
+      "result": "Plant B"
+     },
+     {
+      "question": "Two series have means $\\bar x=50$, $\\sigma=15$ and $\\bar y=60$, $\\sigma=16$. Which is more consistent?",
+      "use": [
+       "C.V. $=\\frac{\\sigma}{\\bar x}\\times100$",
+       "Smaller C.V. $\\Rightarrow$ more consistent"
+      ],
+      "steps": [
+       "C.V. $_x=30$, C.V. $_y=\\frac{16}{60}\\times100=26.67$"
+      ],
+      "result": "Series $y$"
+     },
+     {
+      "question": "The mean and standard deviation of $20$ observations are $10$ and $2$. One value $8$ was read as $12$. Find the correct mean and standard deviation.",
+      "use": [
+       "Correct a sum: $\\sum x_i$ and $\\sum x_i^2$ change by (correct value $-$ wrong value)"
+      ],
+      "steps": [
+       "$\\sum x=200\\to196;\\quad \\sum x^2=20(4+100)=2080\\to2080-144+64=2000$",
+       "$\\bar x=9.8,\\quad \\sigma^2=\\frac{2000}{20}-9.8^2=3.96$"
+      ],
+      "result": "$9.8,\\ \\sqrt{3.96}\\approx1.99$"
+     },
+     {
+      "question": "Each of $x_1,\\dots,x_n$ has mean $\\bar x$ and variance $\\sigma^2$. Find the mean and variance of $3x_i+5$.",
+      "use": [
+       "$y_i=ax_i+b\\Rightarrow\\bar y=a\\bar x+b,\\ \\sigma_y=|a|\\sigma_x$"
+      ],
+      "steps": [
+       "$\\bar y=3\\bar x+5,\\quad \\sigma_y=3\\sigma$"
+      ],
+      "result": "$3\\bar x+5,\\ 9\\sigma^2$"
+     },
+     {
+      "question": "Find the standard deviation of the first $n$ natural numbers, and its value for $n=10$.",
+      "use": [
+       "Variance of the first $n$ natural numbers $=\\frac{n^2-1}{12}$"
+      ],
+      "steps": [
+       "$\\sigma^2=\\frac{n^2-1}{12};\\ n=10:\\ \\frac{99}{12}=8.25$"
+      ],
+      "result": "$\\sqrt{\\frac{n^2-1}{12}};\\ \\sqrt{8.25}$"
+     },
+     {
+      "question": "The mean of $5$ observations is $4.4$ and their variance is $8.24$. Three are $1,2,6$. Find the other two.",
+      "use": [],
+      "steps": [
+       "$a+b=22-9=13$",
+       "$\\sum x^2=5(8.24+19.36)=138\\Rightarrow a^2+b^2=138-41=97$",
+       "$(a,b):\\ a+b=13,\\ ab=36$"
+      ],
+      "result": "$4$ and $9$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ },
+ "g11-probability": {
+  "slug": "g11-probability",
+  "number": 14,
+  "title": "Probability",
+  "subtitle": "Sample spaces, events, axiomatic probability and the addition rule",
+  "sheet": [
+   {
+    "title": "Events",
+    "items": [
+     "Sample space $S:$ the set of all outcomes",
+     "Event: a subset of $S$; impossible $\\varnothing$, sure $S$",
+     "Not $A:\\ A'=S-A;\\quad A$ or $B:\\ A\\cup B;\\quad A$ and $B:\\ A\\cap B$",
+     "Mutually exclusive: $A\\cap B=\\varnothing$; exhaustive: $A_1\\cup\\dots\\cup A_n=S$"
+    ]
+   },
+   {
+    "title": "Axiomatic probability",
+    "items": [
+     "$0\\le P(A)\\le1,\\quad P(S)=1,\\quad P(\\varnothing)=0$",
+     "Equally likely outcomes: $P(A)=\\frac{n(A)}{n(S)}$",
+     "$P(A')=1-P(A)$",
+     "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$",
+     "$A, B$ mutually exclusive $\\Rightarrow P(A\\cup B)=P(A)+P(B)$"
+    ]
+   },
+   {
+    "title": "More rules (JEE)",
+    "items": [
+     "$P(A\\cup B\\cup C)=\\sum P(A)-\\sum P(A\\cap B)+P(A\\cap B\\cap C)$",
+     "$P(A\\cap B')=P(A)-P(A\\cap B)$",
+     "$P$ (exactly one of $A, B)=P(A)+P(B)-2P(A\\cap B)$",
+     "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Sample spaces and events",
+    "level": "board",
+    "formulas": [
+     "Sample space $S:$ the set of all outcomes",
+     "Event: a subset of $S$; impossible $\\varnothing$, sure $S$",
+     "Not $A:\\ A'=S-A;\\quad A$ or $B:\\ A\\cup B;\\quad A$ and $B:\\ A\\cap B$",
+     "Mutually exclusive: $A\\cap B=\\varnothing$; exhaustive: $A_1\\cup\\dots\\cup A_n=S$"
+    ],
+    "examples": [
+     {
+      "question": "A coin is tossed and then a die is thrown if the coin shows a head; if it shows a tail, the coin is tossed again. Write the sample space.",
+      "use": [
+       "Sample space $S:$ the set of all outcomes"
+      ],
+      "steps": [
+       "$H1,H2,H3,H4,H5,H6,\\ TH,\\ TT$"
+      ],
+      "result": "$S=\\{H1,\\dots,H6,TH,TT\\}$"
+     },
+     {
+      "question": "Two dice are thrown. $A$: the sum is even; $B$: the sum is a multiple of $3$. Find $n(A)$, $n(B)$ and $n(A\\cap B)$.",
+      "use": [
+       "Event: a subset of $S$; impossible $\\varnothing$, sure $S$",
+       "Not $A:\\ A'=S-A;\\quad A$ or $B:\\ A\\cup B;\\quad A$ and $B:\\ A\\cap B$"
+      ],
+      "steps": [
+       "$n(S)=36$; even sums: $18$",
+       "sums $3,6,9,12:\\ 2+5+4+1=12$",
+       "sums $6,12:\\ 5+1=6$"
+      ],
+      "result": "$18,\\ 12,\\ 6$"
+     },
+     {
+      "question": "A die is thrown. $A$: a number less than $7$; $B$: a number greater than $7$; $C$: a multiple of $3$. Describe each event.",
+      "use": [
+       "Event: a subset of $S$; impossible $\\varnothing$, sure $S$"
+      ],
+      "steps": [
+       "$A=\\{1,\\dots,6\\}=S,\\quad B=\\varnothing,\\quad C=\\{3,6\\}$"
+      ],
+      "result": "$A$ sure, $B$ impossible, $C=\\{3,6\\}$"
+     },
+     {
+      "question": "A die is thrown. $A$: an even number; $B$: an odd number; $C$: a number $\\le3$. Which pairs are mutually exclusive? Are $A,B$ exhaustive?",
+      "use": [
+       "Mutually exclusive: $A\\cap B=\\varnothing$; exhaustive: $A_1\\cup\\dots\\cup A_n=S$"
+      ],
+      "steps": [
+       "$A\\cap B=\\varnothing,\\quad A\\cap C=\\{2\\},\\quad B\\cap C=\\{1,3\\}$",
+       "$A\\cup B=S$"
+      ],
+      "result": "$A, B$ mutually exclusive and exhaustive"
+     },
+     {
+      "question": "Three coins are tossed. $A$: at least two heads. Write $A$ and $A'$.",
+      "use": [
+       "Not $A:\\ A'=S-A;\\quad A$ or $B:\\ A\\cup B;\\quad A$ and $B:\\ A\\cap B$"
+      ],
+      "steps": [
+       "$A=\\{HHH,HHT,HTH,THH\\}$",
+       "$A'=\\{HTT,THT,TTH,TTT\\}$"
+      ],
+      "result": "$A'=$ at most one head"
+     }
+    ]
+   },
+   {
+    "title": "Axiomatic probability",
+    "level": "board",
+    "formulas": [
+     "$0\\le P(A)\\le1,\\quad P(S)=1,\\quad P(\\varnothing)=0$",
+     "Equally likely outcomes: $P(A)=\\frac{n(A)}{n(S)}$",
+     "$P(A')=1-P(A)$",
+     "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$",
+     "$A, B$ mutually exclusive $\\Rightarrow P(A\\cup B)=P(A)+P(B)$"
+    ],
+    "examples": [
+     {
+      "question": "Two dice are thrown. Find the probability that the sum is $7$.",
+      "use": [
+       "Equally likely outcomes: $P(A)=\\frac{n(A)}{n(S)}$"
+      ],
+      "steps": [
+       "$(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$",
+       "$\\frac6{36}$"
+      ],
+      "result": "$\\frac16$"
+     },
+     {
+      "question": "A card is drawn from a pack of $52$. Find the probability that it is a diamond or a king.",
+      "use": [
+       "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$"
+      ],
+      "steps": [
+       "$P(D)=\\frac{13}{52},\\ P(K)=\\frac4{52},\\ P(D\\cap K)=\\frac1{52}$",
+       "$\\frac{13+4-1}{52}$"
+      ],
+      "result": "$\\frac4{13}$"
+     },
+     {
+      "question": "$P(A)=\\frac35$ and $P(B)=\\frac15$ for mutually exclusive $A,B$. Find $P(A\\text{ or }B)$ and $P(A')$.",
+      "use": [
+       "$A, B$ mutually exclusive $\\Rightarrow P(A\\cup B)=P(A)+P(B)$",
+       "$P(A')=1-P(A)$"
+      ],
+      "steps": [
+       "$\\frac35+\\frac15,\\quad 1-\\frac35$"
+      ],
+      "result": "$\\frac45,\\ \\frac25$"
+     },
+     {
+      "question": "$P(A)=0.42$, $P(B)=0.48$, $P(A\\cap B)=0.16$. Find $P(\\text{not }A)$, $P(\\text{not }B)$ and $P(A\\text{ or }B)$.",
+      "use": [
+       "$P(A')=1-P(A)$",
+       "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$"
+      ],
+      "steps": [
+       "$1-0.42,\\quad 1-0.48,\\quad 0.42+0.48-0.16$"
+      ],
+      "result": "$0.58,\\ 0.52,\\ 0.74$"
+     },
+     {
+      "question": "A committee of $2$ is chosen from $2$ men and $2$ women. Find the probability that it has no man.",
+      "use": [
+       "Equally likely outcomes: $P(A)=\\frac{n(A)}{n(S)}$"
+      ],
+      "steps": [
+       "$n(S)={}^4C_2=6,\\quad n(A)={}^2C_2=1$"
+      ],
+      "result": "$\\frac16$"
+     },
+     {
+      "question": "Is it possible that $P(A)=0.5$, $P(B)=0.7$ and $P(A\\cap B)=0.6$?",
+      "use": [
+       "$0\\le P(A)\\le1,\\quad P(S)=1,\\quad P(\\varnothing)=0$"
+      ],
+      "steps": [
+       "$A\\cap B\\subset A\\Rightarrow P(A\\cap B)\\le P(A)$",
+       "$0.6>0.5$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "In a class, $40\\%$ study Mathematics, $30\\%$ study Biology and $10\\%$ study both. Find the probability that a student studies Mathematics or Biology.",
+      "use": [
+       "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$"
+      ],
+      "steps": [
+       "$0.4+0.3-0.1$"
+      ],
+      "result": "$0.6$"
+     }
+    ]
+   },
+   {
+    "title": "Counting and the general addition rule (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$P(A\\cup B\\cup C)=\\sum P(A)-\\sum P(A\\cap B)+P(A\\cap B\\cap C)$",
+     "$P(A\\cap B')=P(A)-P(A\\cap B)$",
+     "$P$ (exactly one of $A, B)=P(A)+P(B)-2P(A\\cap B)$",
+     "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+    ],
+    "examples": [
+     {
+      "question": "Four cards are drawn from a pack of $52$. Find the probability that all four are kings.",
+      "use": [
+       "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+      ],
+      "steps": [
+       "$\\frac1{{}^{52}C_4}=\\frac1{270725}$"
+      ],
+      "result": "$\\frac1{270725}$"
+     },
+     {
+      "question": "A letter is chosen at random from the word $\\text{ASSASSINATION}$. Find the probability that it is a vowel.",
+      "use": [
+       "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+      ],
+      "steps": [
+       "$13$ letters; vowels $A, A, I, A, I, O:\\ 6$"
+      ],
+      "result": "$\\frac6{13}$"
+     },
+     {
+      "question": "$P(A)=0.5$, $P(B)=0.4$, $P(C)=0.3$, $P(A\\cap B)=0.2$, $P(A\\cap C)=0.1$, $P(B\\cap C)=0.15$ and $P(A\\cap B\\cap C)=0.05$. Find $P(A\\cup B\\cup C)$ and the probability that none of them occurs.",
+      "use": [
+       "$P(A\\cup B\\cup C)=\\sum P(A)-\\sum P(A\\cap B)+P(A\\cap B\\cap C)$"
+      ],
+      "steps": [
+       "$P(A\\cup B\\cup C)=1.2-0.45+0.05=0.8$",
+       "$P$ (none) $=1-0.8$"
+      ],
+      "result": "$0.8,\\ 0.2$"
+     },
+     {
+      "question": "$P(A)=0.5$, $P(B)=0.3$, $P(A\\cap B)=0.1$. Find the probability that exactly one of $A,B$ occurs.",
+      "use": [
+       "$P$ (exactly one of $A, B)=P(A)+P(B)-2P(A\\cap B)$"
+      ],
+      "steps": [
+       "$0.5+0.3-2(0.1)$"
+      ],
+      "result": "$0.6$"
+     },
+     {
+      "question": "$P(A)=0.5$, $P(A\\cap B)=0.2$. Find $P(A\\cap B')$.",
+      "use": [
+       "$P(A\\cap B')=P(A)-P(A\\cap B)$"
+      ],
+      "steps": [
+       "$0.5-0.2$"
+      ],
+      "result": "$0.3$"
+     },
+     {
+      "question": "$4$ students are chosen from $6$ boys and $4$ girls. Find the probability that exactly $2$ are girls.",
+      "use": [
+       "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+      ],
+      "steps": [
+       "$\\frac{{}^6C_2\\times{}^4C_2}{{}^{10}C_4}=\\frac{15\\times6}{210}$"
+      ],
+      "result": "$\\frac37$"
+     },
+     {
+      "question": "A die has $2$ faces with $1$, $3$ faces with $2$ and $1$ face with $3$. It is rolled once. Find $P(2)$ and $P(1\\text{ or }3)$.",
+      "use": [
+       "Selections: $P=\\frac{\\text{favourable selections}}{\\text{all selections}}$ (use ${}^nC_r)$"
+      ],
+      "steps": [
+       "$P(2)=\\frac36,\\quad P(1$ or $3)=\\frac{2+1}6$"
+      ],
+      "result": "$\\frac12,\\ \\frac12$"
+     }
+    ]
+   }
+  ],
+  "grade": 11
+ }
+}

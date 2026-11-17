@@ -15,7 +15,7 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: url('/ramavana-paper-watermark.png') center 160px / min(62%, 420px) auto repeat-y;
+  background: url('/ramavana-paper-watermark-centered.png') center 160px / min(62%, 420px) auto repeat-y;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
@@ -36,3 +36,49 @@
   .relations-paper::before,
   .online-paper::before { background-size: 60% auto; background-position: center 120px; }
 }
+
+/* The same faint crest behind every notes page (paged notes and the long reader notes). */
+.integrals-reader { position: relative; isolation: isolate; }
+
+.notes-page::before,
+.integrals-reader::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  transform: none;
+  opacity: 1;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/ramavana-paper-watermark-centered.png') center 160px / min(62%, 420px) auto repeat-y;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@media (max-width: 600px) {
+  .notes-page::before,
+  .integrals-reader::before { background-size: 78% auto; background-position: center 120px; }
+}
+
+@media print {
+  .notes-page::before,
+  .integrals-reader::before { width: auto; height: auto; opacity: 1; background-size: 60% auto; background-position: center 120px; }
+}
+
+/* The same faint crest behind the free MCQ quizzes. */
+.free-quiz { position: relative; isolation: isolate; }
+.free-quiz::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/ramavana-paper-watermark-centered.png') center 160px / min(62%, 420px) auto repeat-y;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.free-quiz .fq-question,
+.free-quiz .fq-option { background: rgba(255, 255, 255, 0.82); }
+@media (max-width: 600px) { .free-quiz::before { background-size: 78% auto; background-position: center 120px; } }

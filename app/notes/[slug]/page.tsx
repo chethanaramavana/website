@@ -8,6 +8,7 @@ import straightLines from '@/lib/straight-lines-notes.json';
 import cbse89Notes from '@/lib/cbse89-notes.json';
 import icse7Notes from '@/lib/icse7-notes.json';
 import g12ReaderNotes from '@/lib/g12-reader-notes.json';
+import g11ReaderNotes from '@/lib/g11-reader-notes.json';
 import ChapterReader, {type ReaderChapter} from '../chapter-reader';
 
 const icse7 = icse7Notes as unknown as Record<string, FormulaNotesData>;
@@ -29,6 +30,8 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
   if(slug === 'g12-integrals') return <IntegralsOnline/>;
   const g12Reader = (g12ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
   if (g12Reader) return <ChapterReader data={g12Reader} />;
+  const g11Reader = (g11ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
+  if (g11Reader) return <><ChapterReader data={g11Reader} /><ExploreSims slug={slug} /></>;
   if(slug === 'g11-straight-lines') return <><FormulaNotes data={straightLines as FormulaNotesData} /><ExploreSims slug={slug} /></>;
   if (icse7[slug]) return <FormulaNotes data={icse7[slug]} />;
   const notes = getChapterNotes(slug);
