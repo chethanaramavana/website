@@ -4,6 +4,7 @@ import { activityPaper, recordPresence } from '@/lib/student-activity';
 import { hasMcqAccess } from '@/lib/mcq-access';
 import { hasIntegralsAccess } from '@/lib/integrals-access';
 import { hasG12PracticeAccess } from '@/lib/g12-practice-access';
+import { activityPage } from '@/lib/activity-page';
 
 export async function POST(request: Request) {
   if (!sameOrigin(request)) return jsonError('Invalid origin.',403);
@@ -15,7 +16,14 @@ export async function POST(request: Request) {
     let body;
     try { body=JSON.parse(raw); } catch { return jsonError('Invalid activity.',400); }
     if (!body || typeof body !== 'object') return jsonError('Invalid activity.',400);
-    if (body.kind === 'presence') { await recordPresence(user); return new Response(null,{status:204}); }
+    if (body.kind === 'presence') {
+      const page = activityPage(body.page);
+      if (body.page !== undefined && !page) return jsonError('Invalid page.',400);
+      await recordPresence(user);
+      if (page) await getDatabase().prepare('UPDATE student_presence SET last_page_path=?,last_page_title=?,last_page_seen_ms=? WHERE user_id=?')
+        .bind(page.path,page.title,Date.now(),user.userId).run();
+      return new Response(null,{status:204});
+    }
     if (body.kind !== 'test' || typeof body.id !== 'string' || !/^[a-f0-9-]{36}$/i.test(body.id) || typeof body.paperId !== 'string' || !['opened','started','submitted'].includes(body.state)) return jsonError('Invalid activity.',400);
     const paper=activityPaper(body.paperId);
     if (!paper || !Number.isInteger(body.answered) || body.answered<0 || body.answered>paper.total) return jsonError('Invalid test.',400);

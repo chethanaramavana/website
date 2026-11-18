@@ -8,10 +8,14 @@ type Account = {
   last_sign_in_ms: number | null;
   sign_in_count: number;
   last_seen_ms: number;
+  last_page_path: string | null;
+  last_page_title: string | null;
+  last_page_seen_ms: number | null;
   teacher: boolean;
 };
 type Attempt = {
   id: string;
+  paper_id: string;
   name: string;
   email: string;
   teacher: boolean;
@@ -52,6 +56,7 @@ export default function StudentActivity() {
   const [data, setData] = useState<Data | null>(null),
     [error, setError] = useState(''),
     [showTeachers, setShowTeachers] = useState(false);
+  const [student, setStudent] = useState('');
   async function refresh() {
     try {
       const r = await fetch('/api/teacher/activity', { cache: 'no-store' });
@@ -70,9 +75,15 @@ export default function StudentActivity() {
     return () => clearInterval(timer);
   }, []);
   const accounts = (data?.accounts ?? []).filter(
-      (a) => showTeachers || !a.teacher,
+      (a) => (showTeachers || !a.teacher) && (!student || a.email.toLowerCase() === student),
     ),
-    attempts = (data?.attempts ?? []).filter((a) => showTeachers || !a.teacher);
+    attempts = (data?.attempts ?? []).filter((a) => (showTeachers || !a.teacher) && (!student || a.email.toLowerCase() === student));
+  const results = (data?.results ?? []).filter((r) => (showTeachers || !r.teacher) && (!student || r.user_email.toLowerCase() === student));
+  const students = Array.from(new Map([
+    ...(data?.accounts ?? []).map(a => ({email:a.email,name:a.name,teacher:a.teacher})),
+    ...(data?.attempts ?? []).map(a => ({email:a.email,name:a.name,teacher:a.teacher})),
+    ...(data?.results ?? []).map(r => ({email:r.user_email,name:r.student_name,teacher:r.teacher})),
+  ].filter(a => showTeachers || !a.teacher).map(a => [a.email.toLowerCase(),a])).entries());
   const active = (n: number) => Boolean(data && data.now - n < 120000);
   return (
     <section
@@ -82,7 +93,7 @@ export default function StudentActivity() {
       <header>
         <div>
           <h2 id="student-activity-title">Student activity</h2>
-          <p>Sign-ins and free or paid test activity · Times shown in IST</p>
+          <p>Student pages, sign-ins and test activity · Times shown in IST</p>
         </div>
         <div className="activity-header-actions">
           <a className="teacher-primary-action" href="/teacher/free-mcq">
@@ -102,25 +113,81 @@ export default function StudentActivity() {
       <p className="activity-explanation">
         Updates every 30 seconds · Active = page seen in the last two minutes,
         not proof of answering.
+        Last viewed is the most recent visible learning page reported by that account, not a live screen view.
       </p>
       {error && <p role="alert">{error}</p>}
       <label className="activity-teacher-toggle">
         <input
           type="checkbox"
           checked={showTeachers}
-          onChange={(e) => setShowTeachers(e.target.checked)}
+          onChange={(e) => {setShowTeachers(e.target.checked);setStudent('');}}
         />{' '}
         Include teacher accounts
       </label>
+      <p><label>Show student{' '}
+        <select value={student} onChange={e=>setStudent(e.target.value)}>
+          <option value="">All students</option>
+          {students.map(([email,a])=><option key={email} value={email}>{a.name} · {a.email}</option>)}
+        </select>
+      </label>{student && <button type="button" onClick={()=>setStudent('')}>Show everyone</button>}</p>
       {!data && !error ? (
         <p>Loading student activity…</p>
       ) : (
         <>
+          <h3>What each student last viewed</h3>
+          {!accounts.length ? (
+            <p>
+              No student visits recorded yet. Existing signed-in students appear
+              on their next page visit.
+            </p>
+          ) : (
+            <div className="activity-table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Last viewed</th>
+                    <th>Latest sign-in</th>
+                    <th>Sign-ins recorded</th>
+                    <th>Last seen</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {accounts.map((a) => (
+                    <tr key={a.user_id}>
+                      <td>
+                        {a.name}
+                        {a.teacher ? ' (teacher)' : ''}
+                        <small>{a.email}</small>
+                      </td>
+                      <td>
+                        {a.last_page_path ? <>
+                          <a href={a.last_page_path}>{a.last_page_title || a.last_page_path}</a>
+                          <small>{a.last_page_path}</small>
+                          <small>{date(a.last_page_seen_ms)} · {a.last_page_seen_ms && active(a.last_page_seen_ms) ? 'Viewed recently' : 'Last recorded view'}</small>
+                        </> : 'No page recorded yet'}
+                        {(() => {const latest=attempts.find(t=>t.email.toLowerCase()===a.email.toLowerCase());return latest ? <small>Latest recorded test: {latest.paper?.title ?? latest.paper_id} · {latest.submitted_at_ms?'Submitted':`${latest.answered} / ${latest.paper?.total ?? '—'} answered`} · {date(latest.last_seen_ms)}</small> : null;})()}
+                      </td>
+                      <td>{date(a.last_sign_in_ms)}</td>
+                      <td>{a.sign_in_count}</td>
+                      <td>{date(a.last_seen_ms)}</td>
+                      <td>
+                        {active(a.last_seen_ms)
+                          ? 'Active recently'
+                          : 'Inactive'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
           <h3>Submitted MCQ marks</h3>
           <p>
             Marks appear after submission. Unfinished tests show progress only.
           </p>
-          {data?.results?.filter((r) => showTeachers || !r.teacher).length ? (
+          {results.length ? (
             <div className="activity-table-scroll">
               <table>
                 <thead>
@@ -133,8 +200,7 @@ export default function StudentActivity() {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.results
-                    .filter((r) => showTeachers || !r.teacher)
+                  {results
                     .map((r) => (
                       <tr key={r.id}>
                         <td>
@@ -188,8 +254,8 @@ export default function StudentActivity() {
                         <small>{a.email}</small>
                       </td>
                       <td>
-                        {a.paper?.title ?? 'Test'}
-                        <small>{a.paper?.free ? 'Free' : 'Paid'}</small>
+                        {a.paper?.title ?? `Test · ${a.paper_id}`}
+                        {a.paper && <small>{a.paper.free ? 'Free' : 'Paid'}</small>}
                       </td>
                       <td>
                         {a.submitted_at_ms
@@ -213,48 +279,9 @@ export default function StudentActivity() {
               </table>
             </div>
           )}
-          <h3>Sign-ins and recent visits</h3>
-          {!accounts.length ? (
-            <p>
-              No student visits recorded yet. Existing signed-in students appear
-              on their next page visit.
-            </p>
-          ) : (
-            <div className="activity-table-scroll">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Student</th>
-                    <th>Latest sign-in</th>
-                    <th>Sign-ins recorded</th>
-                    <th>Last seen</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {accounts.map((a) => (
-                    <tr key={a.user_id}>
-                      <td>
-                        {a.name}
-                        {a.teacher ? ' (teacher)' : ''}
-                        <small>{a.email}</small>
-                      </td>
-                      <td>{date(a.last_sign_in_ms)}</td>
-                      <td>{a.sign_in_count}</td>
-                      <td>{date(a.last_seen_ms)}</td>
-                      <td>
-                        {active(a.last_seen_ms)
-                          ? 'Active recently'
-                          : 'Inactive'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
           <p className="activity-footnote">
             Showing up to 100 recent accounts and 100 recent test attempts.
+            The student filter applies to these recent records. Page names start appearing after the student’s next visit; older page views were not recorded.
             Participation is recorded automatically; this does not require
             teacher marking.
           </p>

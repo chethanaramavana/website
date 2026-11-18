@@ -14,6 +14,9 @@ export const studentPresence = sqliteTable('student_presence', {
   lastSignInMs: integer('last_sign_in_ms'),
   signInCount: integer('sign_in_count').notNull().default(0),
   lastSeenMs: integer('last_seen_ms').notNull(),
+  lastPagePath: text('last_page_path'),
+  lastPageTitle: text('last_page_title'),
+  lastPageSeenMs: integer('last_page_seen_ms'),
 }, table => [index('idx_student_presence_seen').on(table.lastSeenMs)]);
 
 export const testActivity = sqliteTable('test_activity', {

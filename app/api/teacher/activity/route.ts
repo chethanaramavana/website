@@ -9,7 +9,7 @@ export async function GET(request: Request) {
     if(!user || !isAdmin(user)) return jsonError('Teacher access only.',403);
     const db=getDatabase();
     const [accounts,attempts,results]=await Promise.all([
-      db.prepare('SELECT user_id,email,name,last_sign_in_ms,sign_in_count,last_seen_ms FROM student_presence ORDER BY last_seen_ms DESC LIMIT 100').all<{user_id:string;email:string;name:string;last_sign_in_ms:number|null;sign_in_count:number;last_seen_ms:number}>(),
+      db.prepare('SELECT user_id,email,name,last_sign_in_ms,sign_in_count,last_seen_ms,last_page_path,last_page_title,last_page_seen_ms FROM student_presence ORDER BY last_seen_ms DESC LIMIT 100').all<{user_id:string;email:string;name:string;last_sign_in_ms:number|null;sign_in_count:number;last_seen_ms:number;last_page_path:string|null;last_page_title:string|null;last_page_seen_ms:number|null}>(),
       db.prepare(`SELECT a.*,p.name,p.email FROM test_activity a JOIN student_presence p ON p.user_id=a.user_id ORDER BY a.last_seen_ms DESC LIMIT 100`).all<{id:string;user_id:string;paper_id:string;name:string;email:string;opened_at_ms:number;started_at_ms:number|null;last_seen_ms:number;submitted_at_ms:number|null;answered:number}>(),
       db.prepare('SELECT id,quiz_id,student_name,user_email,score,total,answered,submitted_at FROM free_quiz_attempts ORDER BY submitted_at DESC LIMIT 50').all<{id:string;quiz_id:string;student_name:string;user_email:string;score:number;total:number;answered:number;submitted_at:string}>(),
     ]);
