@@ -1,8 +1,12 @@
+import { GRADE10_PACKAGE } from './grade10-package';
+import { hasGrade10Package, isGrade10Paper } from './grade10-package-access';
+import { paperDefinitionsById } from './papers';
 import { getDatabase, type RequestUser } from '@/lib/server';
 import {freeQuizzes} from '@/lib/free-quizzes';
 import { finalizeExpiredSubmissions } from '@/lib/submission-lifecycle';
 
 export type StudentSubmissionRecord = {
+  package_access_until_ms?: number | null;
   id: string;
   paper_id: string;
   student_name: string;
@@ -46,7 +50,7 @@ export async function getStudentRecordsForUser(user: RequestUser): Promise<Stude
       CASE WHEN substr(transaction_id, 1, 6) = 'order_' THEN 'razorpay' ELSE 'manual' END AS payment_source
       FROM payment_requests WHERE user_id = ? AND status = 'approved' ORDER BY created_at DESC`)
       .bind(user.userId).all<StudentPaymentRecord>(),
-    db.prepare(`SELECT id, paper_id, student_name, status, mcq_score, written_score, total_score,
+    db.prepare(`SELECT id, paper_id, package_access_until_ms, student_name, status, mcq_score, written_score, total_score,
       teacher_feedback, submitted_at, marked_at FROM submissions
       WHERE (user_id = ? OR lower(user_email) = ?) AND status != 'draft' ORDER BY submitted_at DESC`)
       .bind(user.userId, user.email).all<StudentSubmissionRecord>(),
@@ -57,7 +61,9 @@ export async function getStudentRecordsForUser(user: RequestUser): Promise<Stude
   const mcqResults=quizResults.results.map(row=>({id:row.id,quizId:row.quiz_id,title:freeQuizzes.find(q=>q.id===row.quiz_id)?.title||'Chapter MCQ',score:row.score,total:row.total,submitted:row.submitted_at}));
   const latestPayments = [...new Map(payments.results.map((payment) => [payment.paper_id, payment])).values()];
   const access = new Set(latestPayments.map((row) => row.paper_id));
-  for (const submission of submissions.results) access.add(submission.paper_id);
+  for (const submission of submissions.results) if (!submission.package_access_until_ms || submission.package_access_until_ms > Date.now()) access.add(submission.paper_id);
+  if (await hasGrade10Package(user)) for (const id of Object.keys(paperDefinitionsById)) if(isGrade10Paper(id)) access.add(id);
+  if (Date.now() >= GRADE10_PACKAGE.expiresAt) access.delete(GRADE10_PACKAGE.id);
   const fallbackName = latestPayments.find((payment) => payment.student_name.trim())?.student_name.trim()
     || user.email.split('@')[0];
   return {

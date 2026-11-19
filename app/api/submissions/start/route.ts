@@ -1,3 +1,5 @@
+import { GRADE10_PACKAGE } from '@/lib/grade10-package';
+import { hasGrade10Package, isGrade10Paper } from '@/lib/grade10-package-access';
 import { getPaperAssessment } from '@/lib/assessment';
 import { RELATIONS_TEST_ID, answeringMinutes } from '@/lib/paper-format';
 import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
@@ -14,14 +16,15 @@ export async function POST(request: Request) {
 
     const db = getDatabase();
     const access = await db.prepare(`
-      SELECT 1 AS allowed FROM payment_requests
+      SELECT 1 AS allowed, NULL AS expires FROM payment_requests
       WHERE user_id = ? AND paper_id = ? AND status = 'approved'
       UNION ALL
-      SELECT 1 AS allowed FROM submissions
-      WHERE (user_id = ? OR lower(user_email) = ?) AND paper_id = ? AND status != 'draft'
+      SELECT 1 AS allowed, package_access_until_ms AS expires FROM submissions
+      WHERE (user_id = ? OR lower(user_email) = ?) AND paper_id = ? AND status != 'draft' AND (package_access_until_ms IS NULL OR package_access_until_ms > ?)
       LIMIT 1
-    `).bind(user.userId, paperId, user.userId, user.email.toLowerCase(), paperId).first<{ allowed: number }>();
-    if (!access && paperId !== RELATIONS_TEST_ID) return jsonError('Payment or prior chapter access is required before starting this test.', 403);
+    `).bind(user.userId, paperId, user.userId, user.email.toLowerCase(), paperId, Date.now()).first<{ allowed: number; expires: number | null }>();
+    const packageAccess = !access && isGrade10Paper(paperId) && await hasGrade10Package(user);
+    if (!access && !packageAccess && paperId !== RELATIONS_TEST_ID) return jsonError('Payment or prior chapter access is required before starting this test.', 403);
 
     let submission = await db.prepare(`
       SELECT id, user_id, paper_id, status, mcq_answers, mcq_score,
@@ -38,9 +41,9 @@ export async function POST(request: Request) {
       await db.prepare(`
         INSERT INTO submissions
           (id, user_id, user_email, student_name, paper_id, status, mcq_answers,
-            started_at_ms, work_deadline_at_ms, upload_deadline_at_ms)
-        VALUES (?, ?, ?, ?, ?, 'draft', '{}', ?, ?, ?)
-      `).bind(id, user.userId, user.email, studentName, paperId, timing.startedAtMs, timing.workDeadlineAtMs, timing.uploadDeadlineAtMs).run();
+            started_at_ms, work_deadline_at_ms, upload_deadline_at_ms, package_access_until_ms)
+        VALUES (?, ?, ?, ?, ?, 'draft', '{}', ?, ?, ?, ?)
+      `).bind(id, user.userId, user.email, studentName, paperId, timing.startedAtMs, timing.workDeadlineAtMs, timing.uploadDeadlineAtMs, access?.expires ?? (packageAccess ? GRADE10_PACKAGE.expiresAt : null)).run();
       submission = await db.prepare(`
         SELECT id, user_id, paper_id, status, mcq_answers, mcq_score,
           started_at_ms, work_deadline_at_ms, upload_deadline_at_ms

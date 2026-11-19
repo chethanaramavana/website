@@ -45,6 +45,7 @@ export const freeQuizAttempts = sqliteTable('free_quiz_attempts', {
 }, table => [index('idx_free_quiz_attempts_submitted').on(table.submittedAt)]);
 
 export const submissions = sqliteTable('submissions', {
+  packageAccessUntilMs: integer('package_access_until_ms'),
   id: text('id').primaryKey(),
   userId: text('user_id').notNull(),
   userEmail: text('user_email').notNull(),

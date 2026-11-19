@@ -408,8 +408,7 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
     if (!requestedPaperId || studentRecords === null) return;
 
     const requestedPaper = paperDefinitionsById[requestedPaperId];
-    const hasAccess = studentRecords.access.includes(requestedPaperId)
-      || studentRecords.submissions.some((submission) => submission.paper_id === requestedPaperId);
+    const hasAccess = studentRecords.access.includes(requestedPaperId);
 
     setPaperNumber(paperVariant(requestedPaper));
     if (requestedPaper && studentRecords.signedIn && hasAccess) {
@@ -508,7 +507,6 @@ export default function HomePage({ initialBoard = null, initialGrade = null, ini
       setPaperNumber(paperVariant(nextPaper));
       const hasAccess = nextPaper && studentRecords?.signedIn && (
         studentRecords.access.includes(nextPaper.id)
-        || studentRecords.submissions.some((submission) => submission.paper_id === nextPaper.id)
       );
       if (nextPaper && new URLSearchParams(window.location.search).has('paper') && !hasAccess) {
         setChapter(null);
@@ -689,7 +687,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
   const pendingPaper = pendingChapter ? getPaperForChapter(board, grade, pendingChapter, paperNumber) : null;
   const isAvailablePaper = Boolean(pendingPaper && (pendingPaper.grade ?? 10) === grade);
   const selectedPaper = isAvailablePaper ? pendingPaper : null;
-  const completedSubmission = selectedPaper
+  const completedSubmission = selectedPaper && studentRecords?.access.includes(selectedPaper.id)
     ? studentRecords?.submissions.find((submission) => submission.paper_id === selectedPaper.id)
     : undefined;
 
@@ -900,6 +898,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
         <div><p>{board} Mathematics</p><h1>Grade {grade}</h1><span>{board === 'CBSE' && (grade === 6 || grade === 7 || grade === 8) ? 'Ganita Prakash · ' : board === 'ICSE' ? (grade === 6 ? 'CISCE Upper Primary · ' : 'Selina Concise · ') : ''}Chapters</span></div>
       </section>
       <section className="folder-content">
+        {board === 'CBSE' && grade === 10 && <a className="chapter-resource" href="/cbse/grade-10/complete-package"><BookOpen/><span className="rmc-eyebrow">One package · ₹1,000 · Until 31 March 2027</span><h2>Complete Practice Package</h2><p>Written papers, MCQ quizzes and interactive experiments together. New Grade 10 papers and experiments added during your access period are included.</p><span className="rmc-card-action">Explore the package <ArrowRight/></span></a>}
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>
         <div className="chapter-grid">
           {chapters.map((item, index) => (
