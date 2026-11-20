@@ -147,6 +147,14 @@ button.chapter-resource { cursor:pointer; }
 .chapter-resource h2 { font:800 27px/1.2 var(--rmc-interface); margin:12px 0; }
 .chapter-resource p { font:400 18px/1.65 var(--rmc-interface); color:#4e5b70; margin:0 0 24px; }
 .chapter-resource .rmc-card-action { margin-top:auto; padding-top:10px; }
+/* Highlight the Grade 10 combined package within its chapter folder. */
+.chapter-resource[href="/cbse/grade-10/complete-package"] { background:#e6f5f1; border:2px solid #21786b; border-left-width:6px; margin-bottom:24px; }
+.chapter-resource[href="/cbse/grade-10/complete-package"]:hover { background:#d8eee8; border-color:#14594f; }
+.chapter-resource[href="/cbse/grade-10/complete-package"]:focus-visible { outline:3px solid #14594f; outline-offset:4px; }
+.chapter-resource[href="/cbse/grade-10/complete-package"] .rmc-eyebrow,
+.chapter-resource[href="/cbse/grade-10/complete-package"] .rmc-card-action,
+.chapter-resource[href="/cbse/grade-10/complete-package"]>svg { color:#14594f; }
+
 .kaprekar-toy { margin:40px 0 0; padding:32px; background:#f4f6f9; border-radius:10px; }
 .kaprekar-toy h2 { font:800 32px var(--rmc-interface); margin:4px 0; }
 .kaprekar-toy>p { max-width:720px; }
