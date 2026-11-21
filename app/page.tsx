@@ -7,7 +7,7 @@ import TeachingDiagram, {type TeachingDiagramSpec} from './notes/cbse89-diagram'
 import PaperFigure, { type PaperFigureSpec } from './paper-figure';
 import KaprekarToy from './kaprekar-toy';
 import { quizListings } from '@/lib/free-quizzes/catalog';
-import { g12PracticeChapters, g12PracticePath, g12PracticeReady } from '@/lib/g12-practice-catalog';
+import { g12PracticeChapters, g12PracticePath, g12PracticeReady, g11PracticeChapters, g11PracticePath, g11PracticeReady } from '@/lib/g12-practice-catalog';
 import { quizPrice } from '@/lib/free-quizzes/catalog';
 import { useTestActivity } from '@/app/student-activity';
 
@@ -119,6 +119,7 @@ const grade12Chapters = [
   'Three Dimensional Geometry',
   'Linear Programming',
   'Probability',
+  'Sample Papers',
 ];
 
 const grade11Chapters = [
@@ -899,6 +900,7 @@ function ChaptersView({ board, grade, onHome, onBoard, onOpenChapter, initialPen
       </section>
       <section className="folder-content">
         {board === 'CBSE' && grade === 10 && <a className="chapter-resource" href="/cbse/grade-10/complete-package"><BookOpen/><span className="rmc-eyebrow">One package · ₹1,000 · Until 31 March 2027</span><h2>Complete Practice Package</h2><p>Written papers, MCQ quizzes and interactive experiments together. Coming during your access period: many more sample papers, experiments and last-minute exam preparation tips, included at no extra charge.</p><span className="rmc-card-action">Explore the package <ArrowRight/></span></a>}
+        {board === 'CBSE' && grade === 12 && <a className="chapter-resource" href="/cbse/grade-12/board-package"><BookOpen/><span className="rmc-eyebrow">One package · ₹1,500 · Until 31 March 2027</span><h2>Board Exam Package</h2><p>Six full 80-mark sample papers plus every CBSE board-pattern paper, 20-mark MCQ test and chapter MCQ quiz for all 13 chapters, with teacher marking. JEE papers are not included.</p><span className="rmc-card-action">Explore the package <ArrowRight /></span></a>}
         <div className="list-heading"><h2>Chapters</h2><span>{chapters.length} chapters</span></div>
         <div className="chapter-grid">
           {chapters.map((item, index) => (
@@ -962,7 +964,7 @@ function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takin
   const activePaper = (paperNumber ? getPaperForChapter(board, grade, chapter, paperNumber) : null) ?? paper;
   const extraPapers = board === 'IGCSE' ? [] : getAdditionalChapterPapers(grade, chapter, board);
   const isIntegrals = board === 'CBSE' && grade === 12 && chapter === 'Integrals';
-  const isSamplePapers = board === 'CBSE' && grade === 10 && chapter === 'Sample Papers';
+  const isSamplePapers = board === 'CBSE' && (grade === 10 || grade === 12) && chapter === 'Sample Papers';
   if (takingPaper && activePaper && (activePaper.grade ?? 10) === grade) {
     return <ChapterPaper key={activePaper.id} paper={activePaper} onHome={onHome} onBoard={onBoard} onChapters={onChapters} />;
   }
@@ -981,6 +983,7 @@ function ChapterView({ board, grade, chapter, onHome, onBoard, onChapters, takin
         {board === 'CBSE' && grade === 11 && chapter === 'Straight Lines' && <a className="chapter-resource" href="/cbse/grade-11/straight-lines-worksheet"><FileText /><span className="rmc-eyebrow">30 questions · Free</span><h2>Free practice worksheet</h2><p>Board-style questions in five sections, with a key-formula table. Print it or download the PDF.</p><span className="rmc-card-action">Open the worksheet <ArrowRight /></span></a>}
         {isSamplePapers && paper ? [paper, ...extraPapers].map((item) => <button key={item.id} className="chapter-resource" onClick={() => onStartPaper(item.paperNumber === '01' ? undefined : item.paperNumber)}><FileText /><span className="rmc-eyebrow">{item.focus.startsWith('Challenge') ? 'Challenge · ' : 'Standard · '}3 hours · 80 marks · ₹30</span><h2>Sample Paper {item.paperNumber}</h2><p>{item.focus.startsWith('Challenge') ? 'Harder board-pattern paper with more multi-step and higher-order questions.' : 'Full CBSE board-pattern paper.'} 38 questions and three case studies. Tick the MCQs, upload written answers and get teacher marking with a full marking scheme.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button>) : paper && !isIntegrals ? <><a className="chapter-resource" href={`/notes/${paper.id.replace(/-0[1-9]$/, '')}`}><BookOpen /><span className="rmc-eyebrow">Read & revise · Free</span><h2>Chapter notes</h2><p>Explanations, diagrams and worked examples for this chapter.</p><span className="rmc-card-action">Read the notes <ArrowRight /></span></a><button className="chapter-resource" onClick={() => onStartPaper()}><FileText /><span className="rmc-eyebrow">{answeringMinutes(paper.id)} minutes · {paperMaximum(paper.id)} marks</span><h2>Written practice paper{extraPapers.length ? ' · Paper 01' : ''}</h2><p>Answer MCQs, then upload your written working for marking. ₹30 chapter access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button>{extraPapers.map((extra) => <button key={extra.id} className="chapter-resource" onClick={() => onStartPaper(extra.paperNumber)}><FileText /><span className="rmc-eyebrow">{answeringMinutes(extra.id)} minutes · {paperMaximum(extra.id)} marks{extra.book ? ` · ${extra.book}` : ''}</span><h2>Written practice paper · Paper {extra.paperNumber}</h2><p>A second paper for this chapter. Answer MCQs, then upload your written working for marking. ₹30 paper access; retake without paying again.</p><span className="rmc-card-action">Open paper access <ArrowRight /></span></button>)}</> : isIntegrals ? <a className="chapter-resource" href="/cbse/grade-12/integrals"><BookOpen /><h2>Integrals learning materials</h2><p>Chapter notes, CBSE practice, and JEE Main and Advanced papers with worked solutions.</p><span className="rmc-card-action">Open materials <ArrowRight /></span></a> : <div className="chapter-resource"><BookOpen /><h2>Materials coming soon</h2><p>This chapter is part of the syllabus. Notes and papers are being prepared.</p><a href={boardPath(board) + `/grade-${grade}`}>Back to chapters →</a></div>}
         {quizListings.filter(q => q.board === board && q.grade === grade && q.title === chapter).map(q => <a key={q.id} className="chapter-resource" href={q.path}><CheckCircle2 /><span className="rmc-eyebrow">{q.count} questions · {quizPrice(q.chapter, q.grade, q.board) === 0 ? 'Free' : `₹${quizPrice(q.chapter, q.grade, q.board)/100}`}</span><h2>MCQ practice</h2><p>Saved answers, instant marks and worked solutions after submission.</p><span className="rmc-card-action">Start the quiz <ArrowRight /></span></a>)}
+        {board === 'CBSE' && grade === 11 && g11PracticeChapters.some(c => c.title === chapter && g11PracticeReady.has(c.number)) && <a className="chapter-resource" href={g11PracticePath(g11PracticeChapters.find(c => c.title === chapter)!.number)}><FileText /><span className="rmc-eyebrow">JEE Main · JEE Advanced</span><h2>JEE practice papers</h2><p>Online papers with instant scores and worked solutions: two JEE Main and two JEE Advanced papers.</p><span className="rmc-card-action">Open practice papers <ArrowRight /></span></a>}
         {board === 'CBSE' && grade === 12 && (chapter === 'Integrals' || g12PracticeChapters.some(c => c.title === chapter && g12PracticeReady.has(c.number))) && <a className="chapter-resource" href={chapter === 'Integrals' ? '/cbse/grade-12/integrals' : g12PracticePath(g12PracticeChapters.find(c => c.title === chapter)!.number)}><FileText /><span className="rmc-eyebrow">CBSE · JEE Main · JEE Advanced</span><h2>CBSE and JEE practice papers</h2><p>Online papers with instant scores and worked solutions: a 20-mark MCQ test, three CBSE 40-mark papers, two JEE Main and two JEE Advanced papers.</p><span className="rmc-card-action">Open practice papers <ArrowRight /></span></a>}
         </>}
       </section>

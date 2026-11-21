@@ -10,6 +10,7 @@ import { relationsTestDefinition } from './relations-test-definition';
 import { fixPaperDefinition } from './paper-fixes';
 import { isFullPaper, isThirtyMarkPaper, writtenNumbers } from './paper-format';
 import cbse10SamplePapers from './cbse10-sample-papers.json';
+import cbse12SamplePapers from './cbse12-sample-papers.json';
 
 export type QuestionSource = string;
 
@@ -153,6 +154,7 @@ const unfixedPaperDefinitions: Record<string, PaperDefinition> = {
   ...icse6PaperDefinitions,
   ...icseUpperPaperDefinitions,
   ...Object.fromEntries((cbse10SamplePapers.papers as unknown as PaperDefinition[]).map((paper) => [`CBSE10:${paper.chapter}:${paper.paperNumber}`, paper])),
+  ...Object.fromEntries((cbse12SamplePapers.papers as unknown as PaperDefinition[]).map((paper) => [`CBSE12:${paper.chapter}:${paper.paperNumber}`, paper])),
 };
 
 export const paperDefinitions: Record<string, PaperDefinition> = Object.fromEntries(
@@ -164,7 +166,7 @@ export const paperDefinitionsById = Object.fromEntries(
 ) as Record<string, PaperDefinition>;
 
 // Additional numbered papers for a chapter that already has a main paper (for example Paper 02).
-export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02', ...icseUpperAdditionalPaperIds, ...cbse10SamplePapers.papers.map((paper) => paper.id).filter((id) => !id.endsWith('-01'))]);
+export const additionalChapterPaperIds: ReadonlySet<string> = new Set(['icse6-algebraic-expressions-02', ...icseUpperAdditionalPaperIds, ...cbse10SamplePapers.papers.map((paper) => paper.id).filter((id) => !id.endsWith('-01')), ...cbse12SamplePapers.papers.map((paper) => paper.id).filter((id) => !id.endsWith('-01'))]);
 
 export function getPaperDefinition(grade: number, chapter: string, board: 'CBSE' | 'ICSE' = 'CBSE', paperNumber?: string) {
   return Object.values(paperDefinitionsById).find(

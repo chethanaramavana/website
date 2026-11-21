@@ -7,6 +7,7 @@ import { grade12PaperAssessments } from './grade12-papers';
 import { relationsPracticePaper } from './relations-practice-paper';
 import { RELATIONS_TEST_ID, writtenMarksFor } from './paper-format';
 import cbse10SamplePapers from './cbse10-sample-papers.json';
+import cbse12SamplePapers from './cbse12-sample-papers.json';
 import { relationsMarking } from './relations-marking';
 import { fixAssessment } from './paper-fixes';
 
@@ -120,6 +121,7 @@ const paperAssessmentSources: Record<string, PaperAssessmentSource> = {
   ...icse6PaperAssessments,
   ...icseUpperPaperAssessments,
   ...(cbse10SamplePapers.assessments as unknown as Record<string, PaperAssessmentSource>),
+  ...(cbse12SamplePapers.assessments as unknown as Record<string, PaperAssessmentSource>),
 };
 
 export const paperAssessments: Record<string, PaperAssessment> = Object.fromEntries(

@@ -1,0 +1,1150 @@
+{
+ "g11-ch13-main-01": [
+  {
+   "q": "The mean deviation about the mean of $2,4,6,8,10$ is",
+   "a": "(C) $2.4$",
+   "s": "Mean $6$; $\\frac{4+2+0+2+4}5$.",
+   "opts": [
+    "$2$",
+    "$6$",
+    "$2.4$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $2,4,6,8,10$ is",
+   "a": "(D) $8$",
+   "s": "$\\frac{16+4+0+4+16}5$.",
+   "opts": [
+    "$10$",
+    "$2\\sqrt2$",
+    "$4$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The standard deviation of $3,3,3,3$ is",
+   "a": "(C) $0$",
+   "s": "All values equal.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$0$",
+    "$\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Each observation is increased by $5$. The variance",
+   "a": "(A) does not change",
+   "s": "Shift does not change spread.",
+   "opts": [
+    "does not change",
+    "increases by $5$",
+    "becomes $5$ times",
+    "increases by $25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Each observation is multiplied by $3$. The standard deviation becomes",
+   "a": "(A) $3$ times",
+   "s": "$\\sigma_{ax}=|a|\\sigma$.",
+   "opts": [
+    "$3$ times",
+    "$\\sqrt3$ times",
+    "$9$ times",
+    "unchanged"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of the first $n$ natural numbers is",
+   "a": "(D) $\\dfrac{n^2-1}{12}$",
+   "s": "Standard result.",
+   "opts": [
+    "$\\dfrac{(n+1)(2n+1)}6$",
+    "$\\dfrac{n^2+1}{12}$",
+    "$\\dfrac{n+1}{2}$",
+    "$\\dfrac{n^2-1}{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $5$ numbers is $10$ and their variance is $4$. The sum of their squares is",
+   "a": "(B) $520$",
+   "s": "$5(4+100)$.",
+   "opts": [
+    "$104$",
+    "$520$",
+    "$500$",
+    "$540$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of variation for mean $40$ and SD $8$ is",
+   "a": "(D) $20$",
+   "s": "$\\frac{8}{40}\\times100$.",
+   "opts": [
+    "$48$",
+    "$32$",
+    "$5$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The median of $3,8,5,10,7,2$ is",
+   "a": "(D) $6$",
+   "s": "$\\frac{5+7}2$.",
+   "opts": [
+    "$7$",
+    "$6.5$",
+    "$5$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean deviation about the median of $1,3,5,7,9$ is",
+   "a": "(D) $2.4$",
+   "s": "Median $5$; $\\frac{4+2+0+2+4}5$.",
+   "opts": [
+    "$2$",
+    "$5$",
+    "$3$",
+    "$2.4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $x_1,\\dots,x_n$ is $\\bar x$. Then $\\sum(x_i-\\bar x)$ equals",
+   "a": "(C) $0$",
+   "s": "Definition of mean.",
+   "opts": [
+    "$1$",
+    "$\\bar x$",
+    "$0$",
+    "$n\\bar x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD of $a, a+d, a+2d$ is",
+   "a": "(D) $d\\sqrt{\\frac23}$",
+   "s": "Variance $\\frac{d^2+0+d^2}3$.",
+   "opts": [
+    "$d$",
+    "$\\frac d3$",
+    "$d\\sqrt2$",
+    "$d\\sqrt{\\frac23}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $x$ is $9$. The variance of $2x-3$ is",
+   "a": "(A) $36$",
+   "s": "$4\\times9$.",
+   "opts": [
+    "$36$",
+    "$18$",
+    "$15$",
+    "$33$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two series have SDs $12$ and $15$ and means $60$ and $50$. The more consistent series has C.V.",
+   "a": "(A) $20$",
+   "s": "$\\frac{12}{60}\\cdot100=20<30$.",
+   "opts": [
+    "$20$",
+    "$12$",
+    "$15$",
+    "$30$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $12,7,20,15,9$ is",
+   "a": "(B) $13$",
+   "s": "$20-7$.",
+   "opts": [
+    "$8$",
+    "$13$",
+    "$20$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $10$ observations is $20$. One value $25$ was wrongly read as $35$. The correct mean is",
+   "a": "(B) $19$",
+   "s": "$\\frac{200-10}{10}$.",
+   "opts": [
+    "$18$",
+    "$19$",
+    "$20$",
+    "$21$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For a frequency distribution, $\\sum f_i=20$, $\\sum f_ix_i=100$, $\\sum f_ix_i^2=600$. The variance is",
+   "a": "(B) $5$",
+   "s": "$30-25$.",
+   "opts": [
+    "$30$",
+    "$5$",
+    "$10$",
+    "$25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean deviation about the mean of $x_i$: $2,4,6$ with $f_i$: $1,2,1$ is",
+   "a": "(D) $1$",
+   "s": "Mean $4$; $\\frac{2+0+2}4$.",
+   "opts": [
+    "$2$",
+    "$\\frac43$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If every value equals its mean, the mean deviation is",
+   "a": "(A) $0$",
+   "s": "No spread.",
+   "opts": [
+    "$0$",
+    "undefined",
+    "$1$",
+    "the mean"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD of the data $x_i$ is $\\sigma$. The SD of $-x_i$ is",
+   "a": "(A) $\\sigma$",
+   "s": "$|-1|\\sigma$.",
+   "opts": [
+    "$\\sigma$",
+    "$-\\sigma$",
+    "$\\sigma^2$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the variance of $1,2,3,4,5$.",
+   "a": "$2$",
+   "s": "$\\frac{25-1}{12}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $6,8,x,12$ is $10$. Find $x$.",
+   "a": "$14$",
+   "s": "$26+x=40$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the mean deviation about the mean of $3,5,7,9,11$, multiplied by $5$.",
+   "a": "$12$",
+   "s": "Mean $7$; $4+2+0+2+4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$n=10$, $\\sum x=60$ and $\\sum x^2=400$. Find the variance.",
+   "a": "$4$",
+   "s": "$40-36$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The SD of a set is $4$. Find the SD after each value is multiplied by $-2$ and then increased by $7$.",
+   "a": "$8$",
+   "s": "$|-2|\\times4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch13-main-02": [
+  {
+   "q": "The mean deviation about the mean of $4,7,8,9,10,12,13,17$ is",
+   "a": "(D) $3$",
+   "s": "Mean $10$; $\\frac{6+3+2+1+0+2+3+7}8$.",
+   "opts": [
+    "$4$",
+    "$10$",
+    "$2.5$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $6,8,10,12,14,16,18,20,22,24$ is",
+   "a": "(D) $33$",
+   "s": "Mean $15$; $\\frac{330}{10}$.",
+   "opts": [
+    "$30$",
+    "$15$",
+    "$66$",
+    "$33$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $1,2,\\dots,n$ is",
+   "a": "(C) $\\dfrac{n+1}{2}$",
+   "s": "$\\frac{n(n+1)}{2n}$.",
+   "opts": [
+    "$\\dfrac{n(n+1)}2$",
+    "$\\dfrac n2$",
+    "$\\dfrac{n+1}{2}$",
+    "$n+1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD of the first $10$ natural numbers is",
+   "a": "(D) $\\sqrt{8.25}$",
+   "s": "$\\frac{99}{12}$.",
+   "opts": [
+    "$8.25$",
+    "$\\sqrt{5.5}$",
+    "$3$",
+    "$\\sqrt{8.25}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean and variance of $7$ observations are $8$ and $16$. Five are $2,4,10,12,14$. The other two are",
+   "a": "(C) $6$ and $8$",
+   "s": "$x+y=14$, $x^2+y^2=100$.",
+   "opts": [
+    "$4$ and $10$",
+    "$5$ and $9$",
+    "$6$ and $8$",
+    "$3$ and $11$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The C.V. of a distribution is $25\\%$ and its SD is $5$. The mean is",
+   "a": "(D) $20$",
+   "s": "$\\frac{5}{\\bar x}\\cdot100=25$.",
+   "opts": [
+    "$4$",
+    "$125$",
+    "$5$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $a,b,c$ is $5$ and of $a,b,c,d$ is $6$. Then $d$ equals",
+   "a": "(A) $9$",
+   "s": "$24-15$.",
+   "opts": [
+    "$9$",
+    "$11$",
+    "$1$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A shift of origin to $A$ and a change of scale by $h$ change the variance from $\\sigma_u^2$ to",
+   "a": "(A) $h^2\\sigma_u^2$",
+   "s": "$x=A+hu$.",
+   "opts": [
+    "$h^2\\sigma_u^2$",
+    "$h\\sigma_u^2$",
+    "$\\sigma_u^2+A$",
+    "$h^2\\sigma_u^2+A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $20$ observations is $15$ and of $30$ others is $20$. The combined mean is",
+   "a": "(D) $18$",
+   "s": "$\\frac{300+600}{50}$.",
+   "opts": [
+    "$35$",
+    "$17$",
+    "$17.5$",
+    "$18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which measure is affected by a change of origin?",
+   "a": "(C) mean",
+   "s": "Only the mean shifts.",
+   "opts": [
+    "range",
+    "standard deviation",
+    "mean",
+    "variance"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $x_i$: $1,2,3$ with $f_i$: $1,2,1$ is",
+   "a": "(D) $\\frac12$",
+   "s": "Mean $2$; $\\frac{1+0+1}4$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$\\frac23$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD of $5,5,9,9$ is",
+   "a": "(A) $2$",
+   "s": "Mean $7$; each deviation $2$.",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$4$",
+    "$\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For two observations $a$ and $b$, the SD is",
+   "a": "(B) $\\frac{|a-b|}2$",
+   "s": "Deviations $\\pm\\frac{a-b}2$.",
+   "opts": [
+    "$\\frac{a+b}2$",
+    "$\\frac{|a-b|}2$",
+    "$|a-b|$",
+    "$\\frac{(a-b)^2}{2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the data $1,2,3,\\dots,9$, the mean deviation about the mean is",
+   "a": "(D) $\\frac{20}9$",
+   "s": "Mean $5$; $\\frac{2(4+3+2+1)}9$.",
+   "opts": [
+    "$\\frac{25}9$",
+    "$\\frac{10}{9}$",
+    "$2$",
+    "$\\frac{20}9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $10$ observations is $16$. Each is doubled. The new SD is",
+   "a": "(D) $8$",
+   "s": "$2\\times4$.",
+   "opts": [
+    "$64$",
+    "$4$",
+    "$32$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $n$ observations is $\\bar x$. If each is divided by $k$, the new mean is",
+   "a": "(A) $\\frac{\\bar x}k$",
+   "s": "Scale.",
+   "opts": [
+    "$\\frac{\\bar x}k$",
+    "$k\\bar x$",
+    "$\\bar x$",
+    "$\\bar x-k$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean deviation of $a,a,a,b$ ($b>a$) about the mean is",
+   "a": "(C) $\\frac{3(b-a)}8$",
+   "s": "Mean $\\frac{3a+b}4$; deviations $\\frac{b-a}4$ (three times) and $\\frac{3(b-a)}4$.",
+   "opts": [
+    "$\\frac{b-a}2$",
+    "$\\frac{3(b-a)}4$",
+    "$\\frac{3(b-a)}8$",
+    "$\\frac{b-a}4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A series has $\\sum(x_i-5)=10$ and $\\sum(x_i-5)^2=60$ for $n=10$. The variance is",
+   "a": "(B) $5$",
+   "s": "$6-1$.",
+   "opts": [
+    "$1$",
+    "$5$",
+    "$4$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of the squares of the first $n$ natural numbers is",
+   "a": "(B) $\\dfrac{(n+1)(2n+1)}6$",
+   "s": "$\\frac{n(n+1)(2n+1)}{6n}$.",
+   "opts": [
+    "$\\dfrac{(n+1)^2}4$",
+    "$\\dfrac{(n+1)(2n+1)}6$",
+    "$\\dfrac{n(n+1)}2$",
+    "$\\dfrac{n^2+1}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD is always",
+   "a": "(D) non-negative",
+   "s": "Square root of the variance.",
+   "opts": [
+    "positive",
+    "less than the mean",
+    "an integer",
+    "non-negative"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the variance of $2,4,6,8$.",
+   "a": "$5$",
+   "s": "Mean $5$; $\\frac{9+1+1+9}4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the mean deviation about the median of $6,7,10,12,13,4,8,12$, multiplied by $4$.",
+   "a": "$11$",
+   "s": "Median $9$; deviations sum $22$; $\\frac{22}8\\cdot4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $5$ observations is $4.4$ and variance $8.24$. Three are $1,2,6$. Find the product of the other two.",
+   "a": "$36$",
+   "s": "$a+b=13$, $a^2+b^2=97$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum x_i=50$, $\\sum x_i^2=300$, $n=10$. Find the variance.",
+   "a": "$5$",
+   "s": "$30-25$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the C.V. when the mean is $50$ and the variance is $100$.",
+   "a": "$20$",
+   "s": "$\\frac{10}{50}\\cdot100$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch13-advanced-01": [
+  {
+   "q": "The mean and SD of $100$ observations are $20$ and $3$. Later, $21$ was found misread as $12$. The correct variance is",
+   "a": "(B) $8.3619$",
+   "s": "$\\sum x=2009$, $\\sum x^2=40900+441-144=41197$; $411.97-20.09^2$.",
+   "opts": [
+    "$9.36$",
+    "$8.3619$",
+    "$9$",
+    "$9.1719$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The variance of $\\alpha,\\beta,\\gamma$ is $9$. The variance of $3\\alpha,3\\beta,3\\gamma$ is",
+   "a": "(D) $81$",
+   "s": "$9\\times9$.",
+   "opts": [
+    "$27$",
+    "$9$",
+    "$3$",
+    "$81$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $x_i=i$ with frequencies $f_i={}^nC_i$ ($i=0,\\dots,n$), the variance is",
+   "a": "(A) $\\frac n4$",
+   "s": "Binomial weights.",
+   "opts": [
+    "$\\frac n4$",
+    "$n$",
+    "$\\frac n2$",
+    "$\\frac{n^2}4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $1,2,\\dots,n$ with frequencies $1,2,\\dots,n$ is",
+   "a": "(C) $\\dfrac{2n+1}{3}$",
+   "s": "$\\frac{\\sum k^2}{\\sum k}$.",
+   "opts": [
+    "$\\dfrac{n(n+1)}2$",
+    "$\\dfrac{2n+1}6$",
+    "$\\dfrac{2n+1}{3}$",
+    "$\\dfrac{n+1}2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the data $3,7,7,8,10$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{16+0+0+1+9}5$.",
+   "opts": [
+    "mean $7$",
+    "median $7$",
+    "mode $7$",
+    "variance $5.2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Data $x_i$ have mean $10$ and SD $2$. For $y_i=3x_i-4$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{6}{26}\\cdot100$.",
+   "opts": [
+    "mean $26$",
+    "SD $6$",
+    "variance $36$",
+    "C.V. of $y$ is $\\frac{600}{26}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which statements are true?",
+   "a": "(A), (B), (C)",
+   "s": "Range uses only extremes.",
+   "opts": [
+    "variance is not affected by a change of origin",
+    "SD is affected by a change of scale",
+    "mean deviation about the median is least among all mean deviations",
+    "the range uses all observations"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Two groups: $n_1=10$, $\\bar x_1=20$, $\\sigma_1^2=4$; $n_2=10$, $\\bar x_2=24$, $\\sigma_2^2=4$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac{40+40+10\\cdot4+10\\cdot4}{20}=8$.",
+   "opts": [
+    "combined mean $22$",
+    "combined variance $8$",
+    "combined SD $2\\sqrt2$",
+    "combined variance $4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $a,b,8,5,10$ is $6$ and the variance is $6.8$. Find $ab$.",
+   "a": "$12$",
+   "s": "$a+b=7$, $a^2+b^2=25$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the variance of the first $20$ even natural numbers.",
+   "a": "$133$",
+   "s": "$4\\cdot\\frac{400-1}{12}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$\\sum_{i=1}^{18}(x_i-8)=9$ and $\\sum_{i=1}^{18}(x_i-8)^2=45$. Find $4\\times$ the variance.",
+   "a": "$9$",
+   "s": "$\\frac{45}{18}-\\frac14=\\frac94$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the mean deviation about the mean of $x_i$: $5,10,15,20,25$ with $f_i$: $7,4,6,3,5$, multiplied by $25$.",
+   "a": "$158$",
+   "s": "Mean $14$; $\\sum f|x-14|=158$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each measure for $2,4,4,4,5,5,7,9$.\nList-I: (P) mean; (Q) variance; (R) SD; (S) median\nList-II: (1) $5$; (2) $4$; (3) $2$; (4) $4.5$; (5) $3$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Classic data set.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each effect on the SD $\\sigma$.\nList-I: (P) add $10$ to every value; (Q) multiply every value by $4$; (R) multiply every value by $-3$; (S) divide every value by $2$\nList-II: (1) $\\sigma$; (2) $4\\sigma$; (3) $3\\sigma$; (4) $\\frac\\sigma2$; (5) $2\\sigma$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sigma_{ax+b}=|a|\\sigma$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each data set with its variance.\nList-I: (P) $1,3$; (Q) $1,2,3$; (R) $2,2,2$; (S) $0,4$\nList-II: (1) $1$; (2) $\\frac23$; (3) $0$; (4) $4$; (5) $2$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Direct calculation.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each quantity.\nList-I: (P) C.V. for $\\bar x=20$, $\\sigma=4$; (Q) SD for variance $49$; (R) variance for SD $1.5$; (S) mean for C.V. $10$, $\\sigma=3$\nList-II: (1) $20$; (2) $7$; (3) $2.25$; (4) $30$; (5) $5$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Definitions.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch13-advanced-02": [
+  {
+   "q": "The mean of $10$ observations is $5$ and variance $9$. An observation $5$ is removed. The new variance is",
+   "a": "(B) $10$",
+   "s": "$\\sum x^2=10(9+25)=340$; new $\\frac{315}9-25$.",
+   "opts": [
+    "$9$",
+    "$10$",
+    "$8.1$",
+    "$11$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x_1,\\dots,x_n$ have mean $\\bar x$. The value of $a$ minimising $\\sum(x_i-a)^2$ is",
+   "a": "(C) $\\bar x$",
+   "s": "Derivative $-2\\sum(x_i-a)=0$.",
+   "opts": [
+    "the mode",
+    "the median",
+    "$\\bar x$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The SD of $1,2,3,\\dots,2n+1$ is",
+   "a": "(A) $\\sqrt{\\dfrac{n(n+1)}3}$",
+   "s": "$\\frac{(2n+1)^2-1}{12}$.",
+   "opts": [
+    "$\\sqrt{\\dfrac{n(n+1)}3}$",
+    "$\\dfrac{n(n+1)}3$",
+    "$\\sqrt{n}$",
+    "$\\sqrt{\\dfrac{n+1}{3}}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mean of $3$ numbers is $4$ and their variance is $\\frac23$. The numbers are",
+   "a": "(B) $3,4,5$",
+   "s": "Sum $12$; squares sum $3(\\frac23+16)=50$.",
+   "opts": [
+    "$4,4,4$",
+    "$3,4,5$",
+    "$1,5,6$",
+    "$2,4,6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $5$ observations with $\\sum x_i=20$ and $\\sum x_i^2=100$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$20-16=4$.",
+   "opts": [
+    "mean $4$",
+    "variance $4$",
+    "SD $2$",
+    "C.V. $50$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which data sets have SD $0$?",
+   "a": "(A), (C), (D)",
+   "s": "All values equal.",
+   "opts": [
+    "$5,5,5$",
+    "$1,1,2$",
+    "$0,0$",
+    "$-3,-3,-3,-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "A data set has mean $12$ and variance $16$. After subtracting $2$ from every value and halving, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{12-2}2$; $\\frac{16}4$; $\\frac25\\cdot100$.",
+   "opts": [
+    "new mean $5$",
+    "new variance $4$",
+    "new SD $2$",
+    "new C.V. $40$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $1,2,\\dots,10$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{2(4.5+3.5+2.5+1.5+0.5)}{10}=2.5$.",
+   "opts": [
+    "mean $5.5$",
+    "variance $8.25$",
+    "median $5.5$",
+    "mean deviation about the mean $2.5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the variance of $10$, $10$, $10$, $10$, $20$.",
+   "a": "$16$",
+   "s": "Mean $12$; $\\frac{4\\cdot4+64}5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The mean and variance of $8$ observations are $9$ and $9.25$. Six are $6,7,10,12,12,13$. Find the larger of the other two.",
+   "a": "$8$",
+   "s": "$a+b=12$, $a^2+b^2=80$: $4$ and $8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the mean deviation about the mean of $1,1,5,5$.",
+   "a": "$2$",
+   "s": "Mean $3$; each deviation $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The SD of $x_1,\\dots,x_{10}$ is $3$. Find the variance of $2x_1+5,\\dots,2x_{10}+5$.",
+   "a": "$36$",
+   "s": "$4\\times9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each statistic for $x_i$: $1,3,5$, $f_i$: $1,2,1$.\nList-I: (P) mean; (Q) variance; (R) mean deviation about the mean; (S) range\nList-II: (1) $3$; (2) $2$; (3) $1$; (4) $4$; (5) $5$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Mean $3$; $\\frac{4+0+4}4$; $\\frac{2+0+2}4$; $5-1$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each combined mean.\nList-I: (P) $10$ values of mean $4$ and $10$ of mean $6$; (Q) $20$ values of mean $5$ and $30$ of mean $10$; (R) $5$ values of mean $4$ and $15$ of mean $8$; (S) $1$ value $9$ and $9$ values of mean $9$\nList-II: (1) $5$; (2) $8$; (3) $7$; (4) $9$; (5) $6$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Weighted means.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each formula.\nList-I: (P) variance; (Q) SD; (R) C.V.; (S) mean deviation about the mean\nList-II: (1) $\\frac1n\\sum(x_i-\\bar x)^2$; (2) $\\sqrt{\\frac1n\\sum(x_i-\\bar x)^2}$; (3) $\\frac{\\sigma}{\\bar x}\\times100$; (4) $\\frac1n\\sum|x_i-\\bar x|$; (5) $\\frac{\\bar x}{\\sigma}$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Definitions.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each variance.\nList-I: (P) $1,2,3,4,5$; (Q) $2,4,6,8,10$; (R) $3,3,3,3,3$; (S) $0,0,0,0,10$\nList-II: (1) $2$; (2) $8$; (3) $0$; (4) $16$; (5) $4$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Scale by $2$ multiplies the variance by $4$; equal values give $0$; $\\frac{4\\cdot4+64}5$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

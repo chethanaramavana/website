@@ -1,7 +1,7 @@
 import Tex from './tex';
 import {SessionProgress, SessionTick} from './integrals-ticks';
 import './integrals-online.css';
-import { g12PracticeReady, g12PracticePath } from '@/lib/g12-practice-catalog';
+import { g12PracticeReady, g12PracticePath, g11PracticeReady, g11PracticePath } from '@/lib/g12-practice-catalog';
 import { quizPath, quizPrice } from '@/lib/free-quizzes/catalog';
 
 type Worked = {question: string; use?: string[]; steps: string[]; reasoning?: string[]; result?: string; type?: string};
@@ -38,7 +38,7 @@ export default function ChapterReader({data}: {data: ReaderChapter}) {
       <p className="ir-kicker">GRADE {grade} · CHAPTER {data.number}</p>
       <h1>{data.title}</h1>
       <p className="ir-sub">{data.subtitle}. {total} worked examples.</p>
-      <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board}{board < data.lessons.length && <> · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{data.lessons.length} (JEE)</>}</p>
+      <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board}{board < data.lessons.length && <> · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{data.lessons.length}{grade === 10 ? ' (higher-order problems)' : ' (JEE)'}</>}</p>
     </header>
     {!storyFirst && <section className="ir-sheet" id="formulas"><h2>Formula sheet</h2>{reference}</section>}
     <SessionProgress titles={data.lessons.map((l) => l.title)} storeKey={storeKey} />
@@ -52,6 +52,6 @@ export default function ChapterReader({data}: {data: ReaderChapter}) {
       <SessionTick index={i} total={data.lessons.length} storeKey={storeKey} />
     </section>)}
     {storyFirst && <details className="ir-formulas" id="formulas"><summary>Chapter formula reference</summary>{reference}</details>}
-    <footer><h2>Put the ideas to work</h2>{grade === 12 && g12PracticeReady.has(data.number) && <><p><a href={quizPath(data.number, 12)}>{quizPrice(data.number, 12) === 0 ? 'Take the free 50-question MCQ practice →' : `Take the 50-question MCQ practice (₹${quizPrice(data.number, 12) / 100}) →`}</a></p><p><a href={g12PracticePath(data.number)}>Choose a CBSE or JEE practice paper →</a></p></>}<p><a href={`/cbse/grade-${grade}/ch-${data.number}`}>Practise with the {data.title} question papers →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
+    <footer><h2>Put the ideas to work</h2>{grade === 11 && g11PracticeReady.has(data.number) && <p><a href={g11PracticePath(data.number)}>Choose a JEE Main or JEE Advanced practice paper →</a></p>}{grade === 10 && <p><a href={`/notes/${data.slug}/story`}>Read the story notes with pictures →</a></p>}{grade === 12 && g12PracticeReady.has(data.number) && <><p><a href={quizPath(data.number, 12)}>{quizPrice(data.number, 12) === 0 ? 'Take the free 30-question MCQ practice →' : `Take the 30-question MCQ practice (₹${quizPrice(data.number, 12) / 100}) →`}</a></p><p><a href={g12PracticePath(data.number)}>Choose a CBSE or JEE practice paper →</a></p></>}<p><a href={`/cbse/grade-${grade}/ch-${data.number}`}>Practise with the {data.title} question papers →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
   </main>;
 }

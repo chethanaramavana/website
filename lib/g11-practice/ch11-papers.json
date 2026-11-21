@@ -1,0 +1,1150 @@
+{
+ "g11-ch11-main-01": [
+  {
+   "q": "The distance between $(1,-2,3)$ and $(4,2,3)$ is",
+   "a": "(C) $5$",
+   "s": "$\\sqrt{9+16+0}$.",
+   "opts": [
+    "$7$",
+    "$\\sqrt{7}$",
+    "$5$",
+    "$25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point $(-2,3,-4)$ lies in octant",
+   "a": "(B) VI",
+   "s": "Signs $(-,+,-)$.",
+   "opts": [
+    "III",
+    "VI",
+    "II",
+    "VII"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(3,4,12)$ from the origin is",
+   "a": "(D) $13$",
+   "s": "$\\sqrt{9+16+144}$.",
+   "opts": [
+    "$19$",
+    "$12$",
+    "$\\sqrt{25}$",
+    "$13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(3,-4,5)$ from the $x$-axis is",
+   "a": "(B) $\\sqrt{41}$",
+   "s": "$\\sqrt{16+25}$.",
+   "opts": [
+    "$5$",
+    "$\\sqrt{41}$",
+    "$5\\sqrt2$",
+    "$\\sqrt{34}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The mid-point of $(2,-1,4)$ and $(4,3,-2)$ is",
+   "a": "(B) $(3,1,1)$",
+   "s": "Average the coordinates.",
+   "opts": [
+    "$(1,2,-3)$",
+    "$(3,1,1)$",
+    "$(3,1,-1)$",
+    "$(6,2,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point dividing $(1,2,3)$ and $(4,5,6)$ internally in $1:2$ is",
+   "a": "(C) $(2,3,4)$",
+   "s": "$\\frac{2(1,2,3)+(4,5,6)}3$.",
+   "opts": [
+    "$(-2,-1,0)$",
+    "$(3,4,5)$",
+    "$(2,3,4)$",
+    "$(2.5,3.5,4.5)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The foot of the perpendicular from $(4,-3,5)$ to the $xy$-plane is",
+   "a": "(D) $(4,-3,0)$",
+   "s": "Set $z=0$.",
+   "opts": [
+    "$(4,0,5)$",
+    "$(0,-3,5)$",
+    "$(0,0,5)$",
+    "$(4,-3,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coordinates of a point on the $y$-axis are of the form",
+   "a": "(D) $(0,y,0)$",
+   "s": "Two coordinates are zero.",
+   "opts": [
+    "$(x,0,0)$",
+    "$(0,0,z)$",
+    "$(x,y,0)$",
+    "$(0,y,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The centroid of the triangle with vertices $(1,2,3)$, $(2,3,1)$, $(3,1,2)$ is",
+   "a": "(B) $(2,2,2)$",
+   "s": "Average.",
+   "opts": [
+    "$(6,6,6)$",
+    "$(2,2,2)$",
+    "$(3,3,3)$",
+    "$(1,1,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The points $(1,2,3)$, $(2,3,4)$, $(4,5,6)$ are",
+   "a": "(C) collinear",
+   "s": "Steps $(1,1,1)$ and $(2,2,2)$.",
+   "opts": [
+    "coplanar but not collinear",
+    "the vertices of an equilateral triangle",
+    "collinear",
+    "the vertices of a right triangle"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $yz$-plane divides the join of $(2,4,5)$ and $(-3,5,-4)$ in the ratio",
+   "a": "(D) $2:3$",
+   "s": "$\\frac{-3k+2}{k+1}=0$.",
+   "opts": [
+    "$1:1$",
+    "$4:5$",
+    "$3:2$",
+    "$2:3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the $xz$-plane is",
+   "a": "(C) $y=0$",
+   "s": "Every point has $y=0$.",
+   "opts": [
+    "$z=0$",
+    "$x=0$",
+    "$y=0$",
+    "$x+z=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(2,3,-5)$ from the $xy$-plane is",
+   "a": "(C) $5$",
+   "s": "$|z|$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$5$",
+    "$\\sqrt{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(x,1,2)$ is $3$ units from $(1,-1,1)$. Then $x$ equals",
+   "a": "(C) $3$ or $-1$",
+   "s": "$(x-1)^2+4+1=9$.",
+   "opts": [
+    "$-3$ or $1$",
+    "$1\\pm\\sqrt3$",
+    "$3$ or $-1$",
+    "$3$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The triangle with vertices $(0,0,0)$, $(1,0,0)$, $(0,1,0)$ is",
+   "a": "(B) right-angled and isosceles",
+   "s": "Sides $1,1,\\sqrt2$.",
+   "opts": [
+    "equilateral",
+    "right-angled and isosceles",
+    "scalene and acute",
+    "obtuse"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The locus of points equidistant from $(0,0,0)$ and $(2,0,0)$ is the plane",
+   "a": "(C) $x=1$",
+   "s": "Perpendicular bisector plane.",
+   "opts": [
+    "$x=2$",
+    "$x+y=1$",
+    "$x=1$",
+    "$y=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The image of $(2,-3,4)$ in the $xy$-plane is",
+   "a": "(A) $(2,-3,-4)$",
+   "s": "Change the sign of $z$.",
+   "opts": [
+    "$(2,-3,-4)$",
+    "$(-2,3,4)$",
+    "$(2,3,4)$",
+    "$(-2,-3,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The length of the median through $A(0,0,0)$ of the triangle with $B(2,0,0)$ and $C(0,4,0)$ is",
+   "a": "(A) $\\sqrt5$",
+   "s": "Mid-point of $BC$ is $(1,2,0)$.",
+   "opts": [
+    "$\\sqrt5$",
+    "$3$",
+    "$2$",
+    "$\\sqrt{20}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point $(0,0,-7)$ lies on",
+   "a": "(C) the $z$-axis",
+   "s": "Two coordinates are zero.",
+   "opts": [
+    "the $x$-axis",
+    "the $yz$-plane only (not an axis)",
+    "the $z$-axis",
+    "the $xy$-plane"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The fourth vertex $D$ of the parallelogram $ABCD$ with $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ is",
+   "a": "(B) $(1,-1,1)$",
+   "s": "$D=A+C-B$.",
+   "opts": [
+    "$(1,1,-1)$",
+    "$(1,-1,1)$",
+    "$(1,1,1)$",
+    "$(-1,1,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the square of the distance between $(1,2,3)$ and $(-1,0,2)$.",
+   "a": "$9$",
+   "s": "$4+4+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the perimeter of the triangle with vertices $(0,0,0)$, $(3,0,0)$, $(0,4,0)$.",
+   "a": "$12$",
+   "s": "$3+4+5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $k$ if $(1,k,3)$ is equidistant from $(0,0,0)$ and $(2,4,6)$.",
+   "a": "$2$",
+   "s": "$1+k^2+9=1+(k-4)^2+9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the $z$-coordinate of the centroid of the triangle with vertices $(1,2,3)$, $(4,5,6)$, $(7,8,0)$.",
+   "a": "$3$",
+   "s": "$\\frac{3+6+0}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of octants in which $xyz>0$.",
+   "a": "$4$",
+   "s": "An even number of negative signs: $1+3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch11-main-02": [
+  {
+   "q": "The distance between $(2,3,5)$ and $(4,3,1)$ is",
+   "a": "(B) $2\\sqrt5$",
+   "s": "$\\sqrt{4+16}$.",
+   "opts": [
+    "$\\sqrt{10}$",
+    "$2\\sqrt5$",
+    "$6$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point $(4,-2,-3)$ lies in octant",
+   "a": "(B) VIII",
+   "s": "Signs $(+,-,-)$.",
+   "opts": [
+    "VII",
+    "VIII",
+    "V",
+    "IV"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(1,2,2)$ from the origin is",
+   "a": "(D) $3$",
+   "s": "$\\sqrt{1+4+4}$.",
+   "opts": [
+    "$5$",
+    "$\\sqrt5$",
+    "$9$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(2,3,6)$ from the $z$-axis is",
+   "a": "(C) $\\sqrt{13}$",
+   "s": "$\\sqrt{4+9}$.",
+   "opts": [
+    "$6$",
+    "$\\sqrt{40}$",
+    "$\\sqrt{13}$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The ratio in which $(5,4,-6)$ divides the join of $(3,2,-4)$ and $(9,8,-10)$ is",
+   "a": "(B) $1:2$",
+   "s": "$\\frac{9k+3}{k+1}=5$.",
+   "opts": [
+    "$1:3$",
+    "$1:2$",
+    "$3:1$",
+    "$2:1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The points $(0,7,-10)$, $(1,6,-6)$, $(4,9,-6)$ form",
+   "a": "(A) an isosceles triangle",
+   "s": "Two sides are $\\sqrt{18}$.",
+   "opts": [
+    "an isosceles triangle",
+    "a straight line",
+    "a right triangle",
+    "an equilateral triangle"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coordinates of the point on the $x$-axis equidistant from $(1,2,3)$ and $(3,5,-2)$ are",
+   "a": "(A) $(6,0,0)$",
+   "s": "$(x-1)^2+13=(x-3)^2+29\\Rightarrow4x=24$.",
+   "opts": [
+    "$(6,0,0)$",
+    "$\\left(\\frac{13}2,0,0\\right)$",
+    "$(2,0,0)$",
+    "$\\left(\\frac{11}2,0,0\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the plane parallel to the $xy$-plane through $(1,2,3)$ is",
+   "a": "(D) $z=3$",
+   "s": "Constant $z$.",
+   "opts": [
+    "$z=0$",
+    "$x=1$",
+    "$y=2$",
+    "$z=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The centroid of the tetrahedron with vertices $(0,0,0)$, $(4,0,0)$, $(0,4,0)$, $(0,0,4)$ is",
+   "a": "(C) $(1,1,1)$",
+   "s": "Average of four vertices.",
+   "opts": [
+    "$\\left(\\frac43,\\frac43,\\frac43\\right)$",
+    "$(2,2,2)$",
+    "$(1,1,1)$",
+    "$(4,4,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point dividing $(2,-3,1)$ and $(3,4,-5)$ externally in $2:3$ is",
+   "a": "(D) $(0,-17,13)$",
+   "s": "$\\frac{2(3,4,-5)-3(2,-3,1)}{-1}$.",
+   "opts": [
+    "$\\left(\\frac{12}5,-\\frac15,-\\frac75\\right)$",
+    "$(1,-2,3)$",
+    "$(0,17,-13)$",
+    "$(0,-17,13)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A cube has one vertex at the origin and the opposite vertex at $(2,2,2)$. The length of its diagonal is",
+   "a": "(A) $2\\sqrt3$",
+   "s": "$\\sqrt{12}$.",
+   "opts": [
+    "$2\\sqrt3$",
+    "$2$",
+    "$6$",
+    "$2\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $zx$-plane divides the join of $(1,-2,3)$ and $(4,4,0)$ in the ratio",
+   "a": "(B) $1:2$",
+   "s": "$\\frac{4k-2}{k+1}=0$.",
+   "opts": [
+    "$3:2$",
+    "$1:2$",
+    "$1:1$",
+    "$2:1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set of points with $x=0$ and $y=0$ is",
+   "a": "(D) the $z$-axis",
+   "s": "Only $z$ varies.",
+   "opts": [
+    "the $xy$-plane",
+    "the $yz$-plane",
+    "the origin only",
+    "the $z$-axis"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the squares of the distances of $(x,y,z)$ from the three coordinate planes is",
+   "a": "(B) $x^2+y^2+z^2$",
+   "s": "Distances $|x|,|y|,|z|$.",
+   "opts": [
+    "$2(x^2+y^2+z^2)$",
+    "$x^2+y^2+z^2$",
+    "$x+y+z$",
+    "$\\sqrt{x^2+y^2+z^2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A(1,2,3)$ and $B(3,4,5)$. The point $P$ with $PA=PB$ on the line $AB$ is",
+   "a": "(D) $(2,3,4)$",
+   "s": "Mid-point.",
+   "opts": [
+    "$(5,6,7)$",
+    "$(4,6,8)$",
+    "$(1,1,1)$",
+    "$(2,3,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The vertices $(2,3,5)$, $(-1,3,2)$, $(3,5,-2)$ form a triangle whose centroid is",
+   "a": "(C) $\\left(\\frac43,\\frac{11}3,\\frac53\\right)$",
+   "s": "Average.",
+   "opts": [
+    "$\\left(\\frac43,\\frac{11}3,\\frac32\\right)$",
+    "$(1,4,2)$",
+    "$\\left(\\frac43,\\frac{11}3,\\frac53\\right)$",
+    "$(4,11,5)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance between the points $(a,0,0)$ and $(0,a,0)$ is",
+   "a": "(A) $a\\sqrt2$",
+   "s": "$\\sqrt{2a^2}$.",
+   "opts": [
+    "$a\\sqrt2$",
+    "$2a$",
+    "$a\\sqrt3$",
+    "$a$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The locus $x^2+y^2+z^2=16$ is",
+   "a": "(A) a sphere of radius $4$",
+   "s": "Distance from the origin.",
+   "opts": [
+    "a sphere of radius $4$",
+    "a circle of radius $4$",
+    "a plane",
+    "a sphere of radius $16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A point with all coordinates negative lies in octant",
+   "a": "(D) VII",
+   "s": "Convention.",
+   "opts": [
+    "V",
+    "III",
+    "VIII",
+    "VII"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The points $(1,2,3)$, $(-1,-2,-1)$, $(2,3,2)$ and $(4,7,6)$, in this order, form",
+   "a": "(C) a parallelogram",
+   "s": "Opposite sides equal and diagonals of different length.",
+   "opts": [
+    "a rhombus",
+    "a square",
+    "a parallelogram",
+    "a rectangle that is not a square"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance of $(6,-2,3)$ from the origin.",
+   "a": "$7$",
+   "s": "$\\sqrt{36+4+9}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the coordinates of the mid-point of $(1,3,5)$ and $(3,5,7)$.",
+   "a": "$12$",
+   "s": "$(2,4,6)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle with vertices $(0,0,0)$, $(4,0,0)$, $(0,3,0)$.",
+   "a": "$6$",
+   "s": "$\\frac12\\cdot4\\cdot3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $c$ if $(1,2,c)$ is at distance $3$ from the origin and $c>0$.",
+   "a": "$2$",
+   "s": "$1+4+c^2=9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the square of the length of the diagonal of the cuboid with edges $2$, $3$, $6$.",
+   "a": "$49$",
+   "s": "$4+9+36$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch11-advanced-01": [
+  {
+   "q": "The locus of a point whose distance from the $x$-axis is twice its distance from the $yz$-plane is",
+   "a": "(A) $y^2+z^2=4x^2$",
+   "s": "$\\sqrt{y^2+z^2}=2|x|$.",
+   "opts": [
+    "$y^2+z^2=4x^2$",
+    "$y+z=2x$",
+    "$y^2+z^2=2x^2$",
+    "$x^2=4(y^2+z^2)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point $(a,b,c)$ is equidistant from the origin and from $(2,4,6)$. Then $a+2b+3c$ equals",
+   "a": "(D) $14$",
+   "s": "$4a+8b+12c=56$.",
+   "opts": [
+    "$7$",
+    "$12$",
+    "$28$",
+    "$14$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle bisector from $A$ in $\\triangle ABC$ with $A(3,2,0)$, $B(5,3,2)$, $C(-9,6,-3)$ meets $BC$ at",
+   "a": "(B) $\\left(\\frac{19}8,\\frac{57}{16},\\frac{17}{16}\\right)$",
+   "s": "$AB=3$, $AC=13$: $BD:DC=3:13$.",
+   "opts": [
+    "$\\left(\\frac{19}{16},\\frac{57}8,\\frac{17}8\\right)$",
+    "$\\left(\\frac{19}8,\\frac{57}{16},\\frac{17}{16}\\right)$",
+    "$(-2,\\frac92,-\\frac12)$",
+    "$(1,4,0)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The locus $PA^2+PB^2=2k^2$ for $A(3,4,5)$ and $B(-1,3,-7)$ is",
+   "a": "(D) $2(x^2+y^2+z^2)-4x-14y+4z+109-2k^2=0$",
+   "s": "Expand both squares.",
+   "opts": [
+    "$x^2+y^2+z^2=k^2$",
+    "$2(x^2+y^2+z^2)+109=2k^2$",
+    "$x^2+y^2+z^2-2x-7y+2z=k^2$",
+    "$2(x^2+y^2+z^2)-4x-14y+4z+109-2k^2=0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $A(1,2,3)$ and $B(4,5,6)$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{3}{6}$ ratio $-\\frac12$: external $1:2$.",
+   "opts": [
+    "$AB=3\\sqrt3$",
+    "the mid-point is $(2.5,3.5,4.5)$",
+    "the point dividing $AB$ internally in $2:1$ is $(3,4,5)$",
+    "the $xy$-plane divides $AB$ externally in $1:2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which points lie on the plane $x=2$?",
+   "a": "(A), (B), (D)",
+   "s": "First coordinate $2$.",
+   "opts": [
+    "$(2,0,0)$",
+    "$(2,5,-3)$",
+    "$(0,2,0)$",
+    "$(2,-1,7)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the triangle with vertices $(1,0,0)$, $(0,1,0)$, $(0,0,1)$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Area $\\frac{\\sqrt3}4\\cdot2$.",
+   "opts": [
+    "is equilateral",
+    "has side $\\sqrt2$",
+    "has centroid $\\left(\\frac13,\\frac13,\\frac13\\right)$",
+    "has area $\\frac{\\sqrt3}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are true about octants?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Standard numbering.",
+   "opts": [
+    "there are $8$ octants",
+    "$(1,-1,1)$ is in octant IV",
+    "$(-1,-1,1)$ is in octant III",
+    "$(1,1,-1)$ is in octant V"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the square of the distance of $(1,2,3)$ from the $y$-axis.",
+   "a": "$10$",
+   "s": "$1+9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the length of the median through $A(1,1,1)$ of the triangle with $B(3,5,7)$ and $C(1,1,-1)$.",
+   "a": "$3$",
+   "s": "Mid-point $(2,3,3)$: $\\sqrt{1+4+4}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integer points $(x,y,z)$ with $x^2+y^2+z^2=1$.",
+   "a": "$6$",
+   "s": "$(\\pm1,0,0)$ and so on.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the volume of the cuboid with opposite vertices $(1,1,1)$ and $(3,4,5)$.",
+   "a": "$24$",
+   "s": "$2\\times3\\times4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each point with its octant.\nList-I: (P) $(1,2,3)$; (Q) $(-1,2,3)$; (R) $(-1,-2,3)$; (S) $(1,-2,3)$\nList-II: (1) I; (2) II; (3) III; (4) IV; (5) V",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Signs.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each distance for $P(3,4,12)$.\nList-I: (P) from the origin; (Q) from the $z$-axis; (R) from the $xy$-plane; (S) from the $x$-axis\nList-II: (1) $13$; (2) $5$; (3) $12$; (4) $4\\sqrt{10}$; (5) $3$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sqrt{16+144}=4\\sqrt{10}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each plane with its equation.\nList-I: (P) $xy$-plane; (Q) $yz$-plane; (R) plane through $(0,0,5)$ parallel to the $xy$-plane; (S) plane through $(3,0,0)$ parallel to the $yz$-plane\nList-II: (1) $z=0$; (2) $x=0$; (3) $z=5$; (4) $x=3$; (5) $y=0$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Constant coordinate.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $A(2,1,3)$ and $B(8,7,9)$, match.\nList-I: (P) mid-point; (Q) point dividing $1:2$ internally; (R) point dividing $2:1$ internally; (S) point dividing $1:2$ externally\nList-II: (1) $(5,4,6)$; (2) $(4,3,5)$; (3) $(6,5,7)$; (4) $(-4,-5,-3)$; (5) $(14,13,15)$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{2A+B}3$; $\\frac{A+2B}3$; $\\frac{B-2A}{-1}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch11-advanced-02": [
+  {
+   "q": "The set of points $P$ with $PA+PB=10$ for $A(4,0,0)$ and $B(-4,0,0)$ is",
+   "a": "(A) $9x^2+25y^2+25z^2=225$",
+   "s": "An ellipsoid of revolution.",
+   "opts": [
+    "$9x^2+25y^2+25z^2=225$",
+    "$x^2+y^2+z^2=25$",
+    "$25x^2+9y^2+9z^2=225$",
+    "$9x^2-25y^2=225$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The vertices of a triangle are $A(1,1,2)$, $B(2,3,5)$, $C(1,5,5)$. The centroid is",
+   "a": "(B) $\\left(\\frac43,3,4\\right)$",
+   "s": "Average.",
+   "opts": [
+    "$\\left(\\frac32,4,5\\right)$",
+    "$\\left(\\frac43,3,4\\right)$",
+    "$(1,3,4)$",
+    "$(4,9,12)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $xy$-plane meets the line through $A(2,3,4)$ and $B(-3,5,-4)$ at",
+   "a": "(B) $\\left(-\\frac12,4,0\\right)$",
+   "s": "$z$: $4+t(-8)=0$, $t=\\frac12$.",
+   "opts": [
+    "$(0,4,0)$",
+    "$\\left(-\\frac12,4,0\\right)$",
+    "$\\left(\\frac12,4,0\\right)$",
+    "$(-1,4,0)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A cube of side $a$ has one vertex at the origin and edges along the axes. The distance between its vertices $(a,0,0)$ and $(0,a,a)$ is",
+   "a": "(A) $a\\sqrt3$",
+   "s": "$\\sqrt{a^2+a^2+a^2}$.",
+   "opts": [
+    "$a\\sqrt3$",
+    "$a$",
+    "$2a$",
+    "$a\\sqrt2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which sets of points are collinear?",
+   "a": "(A), (B), (D)",
+   "s": "Steps $(-3,-5,-3)$ and $(3,5,3)$ in D.",
+   "opts": [
+    "$(1,2,3),(3,4,5),(5,6,7)$",
+    "$(0,0,0),(1,1,1),(2,2,2)$",
+    "$(1,0,0),(0,1,0),(0,0,1)$",
+    "$(2,3,4),(-1,-2,1),(5,8,7)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$P(x,y,z)$ is equidistant from $(1,0,0)$ and $(-1,0,0)$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "Perpendicular bisector plane $x=0$.",
+   "opts": [
+    "$x=0$",
+    "$P$ can be $(0,5,7)$",
+    "$P$ lies on the $yz$-plane",
+    "$P$ can be $(1,0,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For the points $A(0,0,0)$, $B(2,0,0)$, $C(0,2,0)$, $D(0,0,2)$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Direct calculation.",
+   "opts": [
+    "$BC=CD=DB=2\\sqrt2$",
+    "$AB=AC=AD=2$",
+    "the centroid of $BCD$ is $\\left(\\frac23,\\frac23,\\frac23\\right)$",
+    "the centroid of $ABCD$ is $\\left(\\frac12,\\frac12,\\frac12\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which points are $5$ units from the origin?",
+   "a": "(A), (B), (D)",
+   "s": "$\\sqrt9=3$.",
+   "opts": [
+    "$(3,4,0)$",
+    "$(0,0,-5)$",
+    "$(1,2,2)$",
+    "$(3,0,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of points with integer coordinates at distance $\\sqrt2$ from the origin.",
+   "a": "$12$",
+   "s": "Two coordinates $\\pm1$: $3\\times4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the sum of the squares of the distances of $(1,2,3)$ from the three coordinate axes.",
+   "a": "$28$",
+   "s": "$(4+9)+(1+9)+(1+4)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $AB^2$ for $A(1,2,3)$ and $B(4,6,3)$.",
+   "a": "$25$",
+   "s": "$9+16+0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $k$ if $(2,3,k)$, $(3,5,4)$, $(4,7,6)$ are collinear.",
+   "a": "$2$",
+   "s": "Steps $(1,2,4-k)$ and $(1,2,2)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each distance for $P(1,2,2)$.\nList-I: (P) from the origin; (Q) from the $x$-axis; (R) from the $xy$-plane; (S) from the $z$-axis\nList-II: (1) $3$; (2) $2\\sqrt2$; (3) $2$; (4) $\\sqrt5$; (5) $1$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sqrt9$; $\\sqrt{4+4}$; $|z|$; $\\sqrt{1+4}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each centroid.\nList-I: (P) $(0,0,0),(3,0,0),(0,3,0)$; (Q) $(1,1,1),(2,2,2),(6,6,6)$; (R) $(2,0,0),(0,2,0),(0,0,2)$; (S) $(6,0,0),(0,6,0),(0,0,6)$\nList-II: (1) $(1,1,0)$; (2) $(3,3,3)$; (3) $\\left(\\frac23,\\frac23,\\frac23\\right)$; (4) $(2,2,2)$; (5) $(0,0,0)$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Average the vertices.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each locus with its description.\nList-I: (P) $x=0$; (Q) $y=0,\\ z=0$; (R) $x^2+y^2+z^2=1$; (S) $z=3$\nList-II: (1) the $yz$-plane; (2) the $x$-axis; (3) the unit sphere; (4) a plane parallel to the $xy$-plane; (5) the $z$-axis",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Read the conditions.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $A(1,0,0)$ and $B(3,4,4)$, match.\nList-I: (P) $AB$; (Q) mid-point; (R) $x$-coordinate of the point dividing $AB$ internally in $1:1$; (S) square of $AB$\nList-II: (1) $6$; (2) $(2,2,2)$; (3) $2$; (4) $36$; (5) $4$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sqrt{4+16+16}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 5$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

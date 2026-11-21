@@ -13,7 +13,7 @@ export function activityPaper(id: string) {
   const product = getIntegralsProduct(id);
   if (product) return { title: `Grade 12 · ${product.title}`, free: false, total: id.includes('mcq-20') ? 20 : id.includes('board') ? 24 : id.includes('main') ? 25 : id.endsWith('01') ? 16 : 18, kind: 'integrals' as const };
   const practice = getG12PracticeProduct(id);
-  if (practice) return { title: `Grade 12 · ${practice.chapterTitle} · ${practice.title}`, free: false, total: practice.total, kind: 'g12practice' as const };
+  if (practice) return { title: `Grade ${practice.grade} · ${practice.chapterTitle} · ${practice.title}`, free: false, total: practice.total, kind: 'g12practice' as const };
   const icse = quizInfo(id);
   if (icse?.board === 'ICSE') return { title: `ICSE Grade 7 · ${icse7QuizChapters[icse.chapter-1]} · MCQ`, free: quizPrice(icse.chapter, 7, 'ICSE') === 0, total: 30, kind: 'quiz' as const, grade: 7, chapter: icse.chapter, board: 'ICSE' as const };
   const match = /^cbse-(10|11|12)-ch-(\d+)-50$/.exec(id);

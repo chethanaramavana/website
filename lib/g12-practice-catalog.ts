@@ -17,10 +17,10 @@ export const g12PracticeChapters = [
 /** Chapters whose practice set is published. Add a chapter number here when its bank is added to g12-practice-banks.ts. */
 export const g12PracticeReady: ReadonlySet<number> = new Set([1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]);
 
-export type G12PracticeProduct = { id: string; chapter: number; chapterTitle: string; title: string; standard: string; detail: string; total: number };
+export type G12PracticeProduct = { id: string; grade: 11 | 12; chapter: number; chapterTitle: string; title: string; standard: string; detail: string; total: number };
 
 export const g12PracticePath = (chapter: number) => `/cbse/grade-12/practice/ch-${chapter}`;
-export const g12PaperPath = (id: string) => { const p = getG12PracticeProduct(id); return p ? `${g12PracticePath(p.chapter)}/papers/${id}` : '/cbse/grade-12'; };
+export const g12PaperPath = (id: string) => { const p = getG12PracticeProduct(id); return p ? `${p.grade === 11 ? g11PracticePath(p.chapter) : g12PracticePath(p.chapter)}/papers/${id}` : '/cbse/grade-12'; };
 
 export function g12PracticeChapter(chapter: number) {
   return g12PracticeChapters.find((c) => c.number === chapter && g12PracticeReady.has(c.number));
@@ -29,7 +29,7 @@ export function g12PracticeChapter(chapter: number) {
 export function g12PracticeProducts(chapter: number): G12PracticeProduct[] {
   const c = g12PracticeChapter(chapter);
   if (!c) return [];
-  const base = { chapter, chapterTitle: c.title };
+  const base = { grade: 12 as const, chapter, chapterTitle: c.title };
   return [
     { ...base, id: `g12-ch${chapter}-mcq-20-01`, title: `${c.title} 20-Mark MCQ Test`, standard: 'CBSE MCQ', detail: '20 questions · 20 marks · Suggested 40 minutes', total: 20 },
     ...[1, 2, 3].map((k) => ({ ...base, id: `g12-ch${chapter}-board-0${k}`, title: `CBSE 40-Mark Paper ${k}`, standard: 'CBSE', detail: '24 questions · 40 marks · 90 minutes', total: 24 })),
@@ -38,7 +38,47 @@ export function g12PracticeProducts(chapter: number): G12PracticeProduct[] {
   ];
 }
 
-export const g12AllPracticeProducts: G12PracticeProduct[] = g12PracticeChapters.flatMap((c) => g12PracticeProducts(c.number));
+/** Grade 11 chapter practice: JEE Main and JEE Advanced papers in the Grade 12 format. */
+export const g11PracticeChapters = [
+  { number: 1, title: 'Sets', notes: 'g11-sets' },
+  { number: 2, title: 'Relations and Functions', notes: 'g11-relations-functions' },
+  { number: 3, title: 'Trigonometric Functions', notes: 'g11-trigonometric-functions' },
+  { number: 4, title: 'Complex Numbers and Quadratic Equations', notes: 'g11-complex-numbers' },
+  { number: 5, title: 'Linear Inequalities', notes: 'g11-linear-inequalities' },
+  { number: 6, title: 'Permutations and Combinations', notes: 'g11-permutations-combinations' },
+  { number: 7, title: 'Binomial Theorem', notes: 'g11-binomial-theorem' },
+  { number: 8, title: 'Sequences and Series', notes: 'g11-sequences-series' },
+  { number: 9, title: 'Straight Lines', notes: 'g11-straight-lines' },
+  { number: 10, title: 'Conic Sections', notes: 'g11-conic-sections' },
+  { number: 11, title: 'Introduction to Three-dimensional Geometry', notes: 'g11-three-dimensional-geometry' },
+  { number: 12, title: 'Limits and Derivatives', notes: 'g11-limits-derivatives' },
+  { number: 13, title: 'Statistics', notes: 'g11-statistics' },
+  { number: 14, title: 'Probability', notes: 'g11-probability' },
+] as const;
+
+/** Grade 11 chapters whose JEE papers are published. Add a chapter number here when its bank is added to g12-practice-banks.ts. */
+export const g11PracticeReady: ReadonlySet<number> = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+
+export const g11PracticePath = (chapter: number) => `/cbse/grade-11/practice/ch-${chapter}`;
+
+export function g11PracticeChapter(chapter: number) {
+  return g11PracticeChapters.find((c) => c.number === chapter && g11PracticeReady.has(c.number));
+}
+
+export function g11PracticeProducts(chapter: number): G12PracticeProduct[] {
+  const c = g11PracticeChapter(chapter);
+  if (!c) return [];
+  const base = { grade: 11 as const, chapter, chapterTitle: c.title };
+  return [
+    ...[1, 2].map((k) => ({ ...base, id: `g11-ch${chapter}-main-0${k}`, title: `JEE Main Paper ${k}`, standard: 'JEE Main', detail: '25 questions · 100 marks · Suggested 75 minutes', total: 25 })),
+    ...[1, 2].map((k) => ({ ...base, id: `g11-ch${chapter}-advanced-0${k}`, title: `JEE Advanced Paper ${k}`, standard: 'JEE Advanced', detail: '16 questions · 60 marks · Suggested 90 minutes', total: 16 })),
+  ];
+}
+
+export const g12AllPracticeProducts: G12PracticeProduct[] = [
+  ...g12PracticeChapters.flatMap((c) => g12PracticeProducts(c.number)),
+  ...g11PracticeChapters.flatMap((c) => g11PracticeProducts(c.number)),
+];
 
 export function getG12PracticeProduct(id: string) {
   return g12AllPracticeProducts.find((p) => p.id === id);

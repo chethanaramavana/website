@@ -1,0 +1,1150 @@
+{
+ "g11-ch7-main-01": [
+  {
+   "q": "The coefficient of $x^4$ in $(1+x)^{10}$ is",
+   "a": "(A) $210$",
+   "s": "${}^{10}C_4$.",
+   "opts": [
+    "$210$",
+    "$252$",
+    "$120$",
+    "$45$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The middle term of $\\left(x+\\dfrac1x\\right)^{8}$ is",
+   "a": "(A) $70$",
+   "s": "$T_5={}^8C_4$.",
+   "opts": [
+    "$70$",
+    "$28$",
+    "$70x$",
+    "$56$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The term independent of $x$ in $\\left(x^2+\\dfrac1x\\right)^{9}$ is",
+   "a": "(A) $84$",
+   "s": "$18-3r=0\\Rightarrow r=6$: ${}^9C_6$.",
+   "opts": [
+    "$84$",
+    "$9$",
+    "$126$",
+    "$36$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of terms in $(a+b)^{12}$ is",
+   "a": "(A) $13$",
+   "s": "$n+1$.",
+   "opts": [
+    "$13$",
+    "$24$",
+    "$12$",
+    "$14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the coefficients in $(2x-1)^{7}$ is",
+   "a": "(D) $1$",
+   "s": "Put $x=1$.",
+   "opts": [
+    "$-1$",
+    "$128$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^3$ in $(1-2x)^6$ is",
+   "a": "(B) $-160$",
+   "s": "${}^6C_3(-2)^3$.",
+   "opts": [
+    "$160$",
+    "$-160$",
+    "$-120$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{n}C_0+{}^{n}C_1+\\dots+{}^{n}C_n=256$. Then $n$ equals",
+   "a": "(A) $8$",
+   "s": "$2^n=256$.",
+   "opts": [
+    "$8$",
+    "$16$",
+    "$9$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $4$th term of $(x-2y)^7$ is",
+   "a": "(A) $-280x^4y^3$",
+   "s": "${}^7C_3x^4(-2y)^3$.",
+   "opts": [
+    "$-280x^4y^3$",
+    "$560x^3y^4$",
+    "$-35x^4y^3$",
+    "$280x^4y^3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{n}C_1+{}^{n}C_3+{}^nC_5+\\cdots$ equals",
+   "a": "(B) $2^{n-1}$",
+   "s": "Half of $2^n$.",
+   "opts": [
+    "$2^n$",
+    "$2^{n-1}$",
+    "$2^{n+1}$",
+    "$n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The remainder when $7^{100}$ is divided by $48$ is",
+   "a": "(B) $1$",
+   "s": "$7^{100}=(48+1)^{50}$.",
+   "opts": [
+    "$7$",
+    "$1$",
+    "$0$",
+    "$47$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^5$ in $(1+x)^{5}(1-x)^{5}$ is",
+   "a": "(B) $0$",
+   "s": "$(1-x^2)^5$ has only even powers.",
+   "opts": [
+    "$10$",
+    "$0$",
+    "$5$",
+    "$-10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest coefficient in $(1+x)^{10}$ is",
+   "a": "(C) $252$",
+   "s": "${}^{10}C_5$.",
+   "opts": [
+    "$210$",
+    "$462$",
+    "$252$",
+    "$120$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $(\\sqrt2+1)^{4}+(\\sqrt2-1)^{4}$ is",
+   "a": "(C) $34$",
+   "s": "$2(4+6\\cdot2+1)$.",
+   "opts": [
+    "$68$",
+    "$17$",
+    "$34$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$11^{9}+9^{11}$ is divisible by",
+   "a": "(B) $10$",
+   "s": "$(10+1)^9+(10-1)^{11}$: the constants cancel.",
+   "opts": [
+    "$9$",
+    "$10$",
+    "$100$",
+    "$11$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^{-2}$ in $\\left(x-\\dfrac2x\\right)^{6}$ is",
+   "a": "(C) $240$",
+   "s": "$6-2r=-2\\Rightarrow r=4$: ${}^6C_4\\cdot16$.",
+   "opts": [
+    "$-240$",
+    "$-160$",
+    "$240$",
+    "$60$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The middle terms of $(1+x)^{7}$ are",
+   "a": "(D) $35x^3,\\ 35x^4$",
+   "s": "$T_4$ and $T_5$.",
+   "opts": [
+    "$35x^4$ only",
+    "$21x^2,\\ 21x^5$",
+    "$70x^3,\\ 70x^4$",
+    "$35x^3,\\ 35x^4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(1.01)^{10}$ is approximately",
+   "a": "(A) $1.1046$",
+   "s": "$1+0.1+0.0045+0.00012$.",
+   "opts": [
+    "$1.1046$",
+    "$1.1$",
+    "$1.2$",
+    "$1.01$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of non-zero terms in $(1+x)^{20}+(1-x)^{20}$ is",
+   "a": "(B) $11$",
+   "s": "Only even powers survive.",
+   "opts": [
+    "$21$",
+    "$11$",
+    "$20$",
+    "$10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $a^3b^4$ in $(a+b)^7$ is",
+   "a": "(A) $35$",
+   "s": "${}^7C_4$.",
+   "opts": [
+    "$35$",
+    "$7$",
+    "$21$",
+    "$70$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The remainder when $2^{30}$ is divided by $7$ is",
+   "a": "(D) $1$",
+   "s": "$2^{30}=(8)^{10}=(7+1)^{10}$.",
+   "opts": [
+    "$4$",
+    "$6$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the coefficient of $x^2$ in $(1+3x)^{5}$.",
+   "a": "$90$",
+   "s": "${}^5C_2\\cdot9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the term independent of $x$ in $\\left(2x-\\dfrac1{x}\\right)^{6}$.",
+   "a": "$-160$",
+   "s": "$r=3$: ${}^6C_3\\,8\\,(-1)^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the coefficients of $(1+x-x^2)^{10}$.",
+   "a": "$1$",
+   "s": "Put $x=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The $5$th, $6$th and $7$th coefficients of $(1+x)^n$ are in AP. Find the smaller possible $n$.",
+   "a": "$7$",
+   "s": "$n^2-21n+98=0$: $n=7,14$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the remainder when $5^{99}$ is divided by $13$.",
+   "a": "$8$",
+   "s": "$5^4=625\\equiv1$; $5^{99}=5^{96}\\cdot125\\equiv125\\equiv8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch7-main-02": [
+  {
+   "q": "The $6$th term of $\\left(2x-\\dfrac1{x}\\right)^{10}$ is",
+   "a": "(C) $-8064$",
+   "s": "$T_6={}^{10}C_5(2x)^5(-\\frac1x)^5$.",
+   "opts": [
+    "$8064$",
+    "$-252$",
+    "$-8064$",
+    "$4032$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^{7}$ in $\\left(x^2+\\dfrac1x\\right)^{11}$ is",
+   "a": "(A) $462$",
+   "s": "$22-3r=7\\Rightarrow r=5$: ${}^{11}C_5$.",
+   "opts": [
+    "$462$",
+    "$55$",
+    "$330$",
+    "$165$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The term independent of $x$ in $\\left(\\sqrt x-\\dfrac{2}{x^2}\\right)^{10}$ is",
+   "a": "(D) $180$",
+   "s": "$\\frac{10-r}2-2r=0\\Rightarrow r=2$: ${}^{10}C_2\\cdot4$.",
+   "opts": [
+    "$-180$",
+    "$90$",
+    "$45$",
+    "$180$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum ${}^{10}C_0+{}^{10}C_2+\\dots+{}^{10}C_{10}$ is",
+   "a": "(A) $512$",
+   "s": "$2^9$.",
+   "opts": [
+    "$512$",
+    "$1024$",
+    "$511$",
+    "$256$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $(1+x)^n$, the coefficients of $x^5$ and $x^{10}$ are equal. Then $n$ equals",
+   "a": "(A) $15$",
+   "s": "$5+10=n$.",
+   "opts": [
+    "$15$",
+    "$5$",
+    "$10$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^2$ in $(1+x)^2(1-x)^3$ is",
+   "a": "(C) $-2$",
+   "s": "$(1-x^2)^2(1-x)=1-x-2x^2+\\dots$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$-2$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{r=0}^{n}{}^nC_r\\,3^r$ equals",
+   "a": "(C) $4^n$",
+   "s": "$(1+3)^n$.",
+   "opts": [
+    "$3\\cdot2^n$",
+    "$3^n$",
+    "$4^n$",
+    "$2^n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of terms in $(x+y+z)^{4}$ is",
+   "a": "(C) $15$",
+   "s": "${}^6C_2$.",
+   "opts": [
+    "$12$",
+    "$5$",
+    "$15$",
+    "$81$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The middle term of $\\left(\\dfrac{x}{2}+\\dfrac2x\\right)^{6}$ is",
+   "a": "(C) $20$",
+   "s": "$T_4={}^6C_3(\\frac x2)^3(\\frac2x)^3$.",
+   "opts": [
+    "$15$",
+    "$6$",
+    "$20$",
+    "$160$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $99^{4}$ is",
+   "a": "(B) $96059601$",
+   "s": "$(100-1)^4$.",
+   "opts": [
+    "$96059401$",
+    "$96059601$",
+    "$96049601$",
+    "$97059601$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(1+x)^n=C_0+C_1x+\\dots+C_nx^n$. Then $C_0-C_1+C_2-\\dots+(-1)^nC_n$ equals",
+   "a": "(B) $0$",
+   "s": "Put $x=-1$.",
+   "opts": [
+    "$-1$",
+    "$0$",
+    "$1$",
+    "$2^n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of rational terms in $(\\sqrt2+\\sqrt[3]{3})^{6}$ is",
+   "a": "(B) $2$",
+   "s": "$r$ multiple of $3$ and $6-r$ even: $r=0,6$.",
+   "opts": [
+    "$3$",
+    "$2$",
+    "$7$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^n$ in $(1+x)^{2n}$ is",
+   "a": "(A) $\\dfrac{(2n)!}{(n!)^2}$",
+   "s": "${}^{2n}C_n$.",
+   "opts": [
+    "$\\dfrac{(2n)!}{(n!)^2}$",
+    "$2^n$",
+    "$\\dfrac{n!}{2}$",
+    "$\\dfrac{(2n)!}{n!}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$9^{n}-8n-1$ is always divisible by",
+   "a": "(D) $64$",
+   "s": "$(1+8)^n-1-8n$.",
+   "opts": [
+    "$72$",
+    "$128$",
+    "$27$",
+    "$64$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^{4}$ in $\\left(\\dfrac x2-\\dfrac3{x^2}\\right)^{10}$ is",
+   "a": "(D) $\\dfrac{405}{256}$",
+   "s": "$10-3r=4\\Rightarrow r=2$: $45\\cdot\\frac1{2^8}\\cdot9$.",
+   "opts": [
+    "$-\\dfrac{405}{256}$",
+    "$\\dfrac{105}{256}$",
+    "$\\dfrac{405}{128}$",
+    "$\\dfrac{405}{256}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $(1+x)^{20}$, the ratio of the $5$th term to the $4$th term coefficients is",
+   "a": "(D) $\\dfrac{17}{4}$",
+   "s": "$\\frac{{}^{20}C_4}{{}^{20}C_3}=\\frac{17}4$.",
+   "opts": [
+    "$\\dfrac{5}{16}$",
+    "$\\dfrac{16}{5}$",
+    "$\\dfrac{4}{17}$",
+    "$\\dfrac{17}{4}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The larger of ${}^{20}C_{9}$ and ${}^{20}C_{10}$ is",
+   "a": "(B) ${}^{20}C_{10}$",
+   "s": "The middle coefficient is greatest.",
+   "opts": [
+    "they are equal",
+    "${}^{20}C_{10}$",
+    "neither",
+    "${}^{20}C_9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum $\\sum_{r=0}^{5}{}^5C_r^{\\,2}$ equals",
+   "a": "(A) $252$",
+   "s": "${}^{10}C_5$.",
+   "opts": [
+    "$252$",
+    "$1024$",
+    "$32$",
+    "$126$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(1+ax)^n=1+8x+24x^2+\\cdots$. Then $(a,n)$ is",
+   "a": "(C) $(2,4)$",
+   "s": "$na=8$, $\\frac{n(n-1)}2a^2=24$.",
+   "opts": [
+    "$(8,1)$",
+    "$(4,2)$",
+    "$(2,4)$",
+    "$(2,8)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^3$ in $(1+x)^{5}+(1-x)^{5}$ is",
+   "a": "(C) $0$",
+   "s": "Odd powers cancel.",
+   "opts": [
+    "$20$",
+    "$-10$",
+    "$0$",
+    "$10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the coefficient of $x^5$ in $(x+3)^{8}$.",
+   "a": "$1512$",
+   "s": "${}^8C_3\\cdot27$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $n$ if the second term of $(1+x)^n$ is $12x$.",
+   "a": "$12$",
+   "s": "${}^nC_1=n$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the remainder when $2^{2023}$ is divided by $7$.",
+   "a": "$2$",
+   "s": "$2^3\\equiv1$; $2023=3\\cdot674+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the term independent of $x$ in $\\left(x+\\dfrac1x\\right)^{10}$.",
+   "a": "$252$",
+   "s": "${}^{10}C_5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the coefficients of the odd powers of $x$ in $(1+x)^{9}$.",
+   "a": "$256$",
+   "s": "$2^8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch7-advanced-01": [
+  {
+   "q": "The coefficient of $x^{50}$ in $(1+x)^{1000}+2x(1+x)^{999}+3x^2(1+x)^{998}+\\dots+1001x^{1000}$ is",
+   "a": "(D) ${}^{1002}C_{50}$",
+   "s": "Sum telescopes to the coefficient in a $1002$-power expansion.",
+   "opts": [
+    "${}^{1001}C_{50}$",
+    "${}^{1002}C_{51}$",
+    "${}^{1000}C_{50}$",
+    "${}^{1002}C_{50}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of irrational terms in $(5^{\\frac16}+2^{\\frac18})^{100}$ is",
+   "a": "(A) $97$",
+   "s": "Rational terms need $8\\mid r$ and $6\\mid(100-r)$: $r=16,40,64,88$. So $101-4=97$.",
+   "opts": [
+    "$97$",
+    "$100$",
+    "$96$",
+    "$4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest term in $(1+x)^{10}$ at $x=\\frac23$ is the",
+   "a": "(A) $5$th term",
+   "s": "$\\frac{T_{r+1}}{T_r}=\\frac{11-r}r\\cdot\\frac23\\ge1\\iff r\\le4.4$.",
+   "opts": [
+    "$5$th term",
+    "$4$th term",
+    "$3$rd term",
+    "$6$th term"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^{4}$ in $(1+x+x^2)^{3}$ is",
+   "a": "(D) $6$",
+   "s": "Expand: $1+3x+6x^2+7x^3+6x^4+3x^5+x^6$.",
+   "opts": [
+    "$3$",
+    "$7$",
+    "$10$",
+    "$6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $(1+x)^{10}$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Symmetry and $2^{10}$.",
+   "opts": [
+    "there are $11$ terms",
+    "the middle term is $252x^5$",
+    "the coefficients add to $1024$",
+    "the coefficient of $x^3$ equals that of $x^7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which numbers divide $3^{2n+2}-8n-9$ for every natural $n$?",
+   "a": "(A), (B), (C)",
+   "s": "$9^{n+1}-8(n+1)-1=64(\\dots)$; $n=1$ gives $64$.",
+   "opts": [
+    "$8$",
+    "$16$",
+    "$64$",
+    "$128$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "In $\\left(x^2-\\dfrac1{x}\\right)^{9}$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Powers $18-3r$; $x^3$: $r=5$.",
+   "opts": [
+    "the term independent of $x$ is $84$",
+    "the coefficient of $x^{3}$ is $-126$",
+    "there is no $x^{2}$ term",
+    "the middle terms are the $5$th and $6$th"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{r=0}^{n}\\binom nr^2$ equals",
+   "a": "(A), (B), (C)",
+   "s": "Vandermonde.",
+   "opts": [
+    "$\\binom{2n}{n}$",
+    "the coefficient of $x^n$ in $(1+x)^{2n}$",
+    "$\\dfrac{(2n)!}{(n!)^2}$",
+    "$2^n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the remainder when $7^{103}$ is divided by $25$.",
+   "a": "$18$",
+   "s": "$7^4=2401\\equiv1$; $7^{103}=7^{100}\\cdot343\\equiv343\\equiv18$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the coefficient of $x^{5}$ in $(1+x)^{6}(1+x^2)$.",
+   "a": "$26$",
+   "s": "${}^6C_5+{}^6C_3=6+20$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\sum_{r=1}^{6}r\\,{}^6C_r$.",
+   "a": "$192$",
+   "s": "$n2^{n-1}=6\\cdot32$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of terms in $(1+2x+x^2)^{10}$.",
+   "a": "$21$",
+   "s": "$(1+x)^{20}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each coefficient in $(1+x)^8$.\nList-I: (P) $x^0$; (Q) $x^2$; (R) $x^4$; (S) $x^7$\nList-II: (1) $1$; (2) $28$; (3) $70$; (4) $8$; (5) $56$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Row $8$ of Pascal.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each sum.\nList-I: (P) $\\sum{}^{6}C_r$; (Q) $\\sum(-1)^r\\,{}^6C_r$; (R) $\\sum r\\,{}^6C_r$; (S) $\\sum{}^6C_r^{\\,2}$\nList-II: (1) $64$; (2) $0$; (3) $192$; (4) $924$; (5) $32$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$2^6$; $0$; $6\\cdot2^5$; ${}^{12}C_6$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each expansion with its number of terms.\nList-I: (P) $(a+b)^{7}$; (Q) $(a+b)^7+(a-b)^7$; (R) $(1+x+x^2)^3$; (S) $(x+y+z)^3$\nList-II: (1) $8$; (2) $4$; (3) $7$; (4) $10$; (5) $9$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Count the surviving terms.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each remainder.\nList-I: (P) $2^{10}$ divided by $3$; (Q) $2^{10}$ divided by $5$; (R) $3^{5}$ divided by $7$; (S) $5^{3}$ divided by $9$\nList-II: (1) $1$; (2) $4$; (3) $5$; (4) $8$; (5) $0$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$1024=3\\cdot341+1$; $1024=5\\cdot204+4$; $243=7\\cdot34+5$; $125=9\\cdot13+8$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 1$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 5$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch7-advanced-02": [
+  {
+   "q": "The sum $\\sum_{r=0}^{10}\\dfrac{{}^{10}C_r}{r+1}$ equals",
+   "a": "(D) $\\dfrac{2^{11}-1}{11}$",
+   "s": "$\\frac{{}^{10}C_r}{r+1}=\\frac{{}^{11}C_{r+1}}{11}$.",
+   "opts": [
+    "$\\dfrac{2^{10}}{11}$",
+    "$2^{11}-1$",
+    "$\\dfrac{2^{11}}{11}$",
+    "$\\dfrac{2^{11}-1}{11}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coefficient of $x^{n}$ in $(1+x)(1-x)^{n}$ is",
+   "a": "(B) $(-1)^n(1-n)$",
+   "s": "$(-1)^n+(-1)^{n-1}n$.",
+   "opts": [
+    "$(-1)^n(n-1)$",
+    "$(-1)^n(1-n)$",
+    "$(-1)^nn$",
+    "$1-n$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If the coefficients of $x^{r}$ and $x^{r+1}$ in $(1+x)^{20}$ are in the ratio $1:2$, then $r$ equals",
+   "a": "(D) $6$",
+   "s": "$\\frac{20-r}{r+1}=2$.",
+   "opts": [
+    "$7$",
+    "$5$",
+    "$8$",
+    "$6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The remainder when $1!+2!+\\dots+100!$ is divided by $10$ is",
+   "a": "(A) $3$",
+   "s": "$1+2+6+24=33$; later terms end in $0$.",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$T_{r+1}$ is the general term of $\\left(x+\\dfrac2x\\right)^{8}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$r=4$: $70\\cdot16$; $r=3$: $56\\cdot8$; $r=8$.",
+   "opts": [
+    "$T_{r+1}={}^8C_r\\,2^rx^{8-2r}$",
+    "the term independent of $x$ is $1120$",
+    "the coefficient of $x^2$ is $448$",
+    "the coefficient of $x^{-8}$ is $256$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are integers?",
+   "a": "(A), (C)",
+   "s": "$56$; $32\\sqrt3$; $76$; $3+2\\sqrt2$.",
+   "opts": [
+    "$(\\sqrt3+1)^{4}+(\\sqrt3-1)^{4}$",
+    "$(\\sqrt3+1)^{4}-(\\sqrt3-1)^{4}$",
+    "$(2+\\sqrt5)^{3}+(2-\\sqrt5)^{3}$",
+    "$(1+\\sqrt2)^{2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The expansion of $(1+x)^{2n}$ has which properties?",
+   "a": "(A), (B), (C)",
+   "s": "An even power has one middle term.",
+   "opts": [
+    "$2n+1$ terms",
+    "middle term ${}^{2n}C_nx^n$",
+    "the greatest coefficient is ${}^{2n}C_n$",
+    "two middle terms"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are true for every natural $n$?",
+   "a": "(A), (B), (C)",
+   "s": "$4^1-1=3$.",
+   "opts": [
+    "$2^{3n}-1$ is divisible by $7$",
+    "$3^{2n}-1$ is divisible by $8$",
+    "$5^n-1$ is divisible by $4$",
+    "$4^n-1$ is divisible by $5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the coefficient of $x^{3}$ in $(1-x+x^2)^{5}$.",
+   "a": "$-30$",
+   "s": "Expand: $1-5x+15x^2-30x^3+\\dots$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the remainder when $3^{37}$ is divided by $80$.",
+   "a": "$3$",
+   "s": "$3^4=81\\equiv1$; $3^{37}=3^{36}\\cdot3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the sum of the coefficients of $(3x-2y)^{6}$.",
+   "a": "$1$",
+   "s": "$(3-2)^6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of rational terms in $(\\sqrt3+\\sqrt[4]{5})^{24}$.",
+   "a": "$7$",
+   "s": "$r$ multiple of $4$ and $24-r$ even: $r=0,4,\\dots,24$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each term of $(2x+1)^{5}$ with its coefficient.\nList-I: (P) $x^5$; (Q) $x^4$; (R) $x^1$; (S) $x^0$\nList-II: (1) $32$; (2) $80$; (3) $10$; (4) $1$; (5) $40$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "${}^5C_k2^k$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each approximation.\nList-I: (P) $(1.02)^{5}$; (Q) $(0.99)^{4}$; (R) $(1.1)^{3}$; (S) $(0.9)^{2}$\nList-II: (1) $1.104$; (2) $0.961$; (3) $1.331$; (4) $0.81$; (5) $1.21$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "First terms of each expansion.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 3$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each middle term.\nList-I: (P) $(1+x)^{4}$; (Q) $(1+x)^{6}$; (R) $(x+\\frac1x)^{4}$; (S) $(2+x)^{2}$\nList-II: (1) $6x^2$; (2) $20x^3$; (3) $6$; (4) $4x$; (5) $15x^3$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "The middle coefficient is ${}^nC_{\\frac n2}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each identity.\nList-I: (P) ${}^nC_r+{}^nC_{r-1}$; (Q) $r\\,{}^nC_r$; (R) $\\dfrac{{}^nC_r}{r+1}$; (S) ${}^nC_r$\nList-II: (1) ${}^{n+1}C_r$; (2) $n\\,{}^{n-1}C_{r-1}$; (3) $\\dfrac{{}^{n+1}C_{r+1}}{n+1}$; (4) ${}^nC_{n-r}$; (5) ${}^{n-1}C_r$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard identities.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

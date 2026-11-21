@@ -1,0 +1,4296 @@
+{
+ "real-numbers": {
+  "slug": "real-numbers",
+  "number": 1,
+  "title": "Real Numbers",
+  "subtitle": "The Fundamental Theorem of Arithmetic, HCF and LCM, and irrational numbers",
+  "sheet": [
+   {
+    "title": "Prime factorisation",
+    "items": [
+     "Every composite number $=$ a product of primes, unique apart from the order",
+     "HCF $=$ product of the common primes, each with its least power",
+     "LCM $=$ product of all the primes, each with its greatest power",
+     "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$",
+     "HCF $(a, b, c)\\times$ LCM $(a, b, c)\\ne abc$ in general"
+    ]
+   },
+   {
+    "title": "Irrational numbers",
+    "items": [
+     "Irrational: cannot be written as $\\frac pq,\\ p, q\\in\\mathbb Z,\\ q\\ne0$",
+     "$p$ prime, $p\\mid a^2\\Rightarrow p\\mid a$",
+     "rational $+$ irrational $=$ irrational; non-zero rational $\\times$ irrational $=$ irrational",
+     "Proof by contradiction: assume $\\sqrt p=\\frac ab$ in lowest terms and find a common factor"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Prime factorisation",
+    "level": "board",
+    "formulas": [
+     "Every composite number $=$ a product of primes, unique apart from the order"
+    ],
+    "examples": [
+     {
+      "question": "Write $140$ as a product of its prime factors.",
+      "use": [
+       "Every composite number $=$ a product of primes, unique apart from the order"
+      ],
+      "steps": [
+       "$140=2\\times70=2\\times2\\times35=2\\times2\\times5\\times7$"
+      ],
+      "result": "$2^2\\times5\\times7$"
+     },
+     {
+      "question": "Write $156$ and $3825$ as products of primes.",
+      "use": [
+       "Every composite number $=$ a product of primes, unique apart from the order"
+      ],
+      "steps": [
+       "$156=2\\times78=2\\times2\\times39=2^2\\times3\\times13$",
+       "$3825=3\\times1275=3\\times3\\times425=3^2\\times5^2\\times17$"
+      ],
+      "result": "$156=2^2\\times3\\times13,\\ 3825=3^2\\times5^2\\times17$"
+     },
+     {
+      "question": "Check whether $6^n$ can end with the digit $0$ for some natural number $n$.",
+      "use": [
+       "Every composite number $=$ a product of primes, unique apart from the order"
+      ],
+      "steps": [
+       "A number ending in $0$ has the prime factors $2$ and $5$",
+       "$6^n=2^n\\times3^n$ has no factor $5$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "Explain why $7\\times11\\times13+13$ is a composite number.",
+      "use": [
+       "Every composite number $=$ a product of primes, unique apart from the order"
+      ],
+      "steps": [
+       "$7\\times11\\times13+13=13(77+1)=13\\times78$"
+      ],
+      "result": "It has the factors $13$ and $78$"
+     },
+     {
+      "question": "Explain why $7\\times6\\times5\\times4\\times3\\times2\\times1+5$ is composite.",
+      "use": [
+       "Every composite number $=$ a product of primes, unique apart from the order"
+      ],
+      "steps": [
+       "$5(7\\times6\\times4\\times3\\times2\\times1+1)=5\\times1009$"
+      ],
+      "result": "It has the factor $5$"
+     }
+    ]
+   },
+   {
+    "title": "HCF and LCM",
+    "level": "board",
+    "formulas": [
+     "Every composite number $=$ a product of primes, unique apart from the order",
+     "HCF $=$ product of the common primes, each with its least power",
+     "LCM $=$ product of all the primes, each with its greatest power",
+     "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$",
+     "HCF $(a, b, c)\\times$ LCM $(a, b, c)\\ne abc$ in general"
+    ],
+    "examples": [
+     {
+      "question": "Find the HCF and LCM of $96$ and $404$ by prime factorisation.",
+      "use": [
+       "HCF $=$ product of the common primes, each with its least power",
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "$96=2^5\\times3,\\quad 404=2^2\\times101$",
+       "HCF $=2^2$, LCM $=2^5\\times3\\times101$"
+      ],
+      "result": "HCF $=4$, LCM $=9696$"
+     },
+     {
+      "question": "Find the HCF and LCM of $6$, $72$ and $120$.",
+      "use": [
+       "HCF $=$ product of the common primes, each with its least power",
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "$6=2\\times3,\\ 72=2^3\\times3^2,\\ 120=2^3\\times3\\times5$",
+       "HCF $=2\\times3$, LCM $=2^3\\times3^2\\times5$"
+      ],
+      "result": "$6,\\ 360$"
+     },
+     {
+      "question": "The HCF of $306$ and $657$ is $9$. Find their LCM.",
+      "use": [
+       "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$"
+      ],
+      "steps": [
+       "LCM $=\\frac{306\\times657}{9}$"
+      ],
+      "result": "$22338$"
+     },
+     {
+      "question": "Verify $\\text{HCF}\\times\\text{LCM}=$ product for $26$ and $91$.",
+      "use": [
+       "HCF $=$ product of the common primes, each with its least power",
+       "LCM $=$ product of all the primes, each with its greatest power",
+       "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$"
+      ],
+      "steps": [
+       "$26=2\\times13,\\ 91=7\\times13$",
+       "HCF $=13$, LCM $=2\\times7\\times13=182$",
+       "$13\\times182=2366=26\\times91$"
+      ],
+      "result": "Verified"
+     },
+     {
+      "question": "Two bells ring every $18$ and $12$ minutes. They ring together at $8$ a.m. When do they next ring together?",
+      "use": [
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "$18=2\\times3^2,\\ 12=2^2\\times3$",
+       "LCM $=2^2\\times3^2=36$ minutes"
+      ],
+      "result": "$8{:}36$ a.m."
+     },
+     {
+      "question": "Find the largest number that divides $245$ and $1029$, leaving remainder $5$ in each case.",
+      "use": [
+       "HCF $=$ product of the common primes, each with its least power"
+      ],
+      "steps": [
+       "$240$ and $1024$ are exact multiples",
+       "$240=2^4\\times3\\times5,\\ 1024=2^{10}$",
+       "HCF $=2^4$"
+      ],
+      "result": "$16$"
+     }
+    ]
+   },
+   {
+    "title": "Irrational numbers",
+    "level": "board",
+    "formulas": [
+     "Irrational: cannot be written as $\\frac pq,\\ p, q\\in\\mathbb Z,\\ q\\ne0$",
+     "$p$ prime, $p\\mid a^2\\Rightarrow p\\mid a$",
+     "rational $+$ irrational $=$ irrational; non-zero rational $\\times$ irrational $=$ irrational",
+     "Proof by contradiction: assume $\\sqrt p=\\frac ab$ in lowest terms and find a common factor"
+    ],
+    "examples": [
+     {
+      "question": "Prove that $\\sqrt5$ is irrational.",
+      "use": [
+       "Irrational: cannot be written as $\\frac pq,\\ p, q\\in\\mathbb Z,\\ q\\ne0$",
+       "$p$ prime, $p\\mid a^2\\Rightarrow p\\mid a$",
+       "Proof by contradiction: assume $\\sqrt p=\\frac ab$ in lowest terms and find a common factor"
+      ],
+      "steps": [
+       "Let $\\sqrt5=\\frac ab,\\ a, b$ coprime, $b\\ne0$",
+       "$5b^2=a^2\\Rightarrow5\\mid a^2\\Rightarrow5\\mid a$; let $a=5c$",
+       "$25c^2=5b^2\\Rightarrow b^2=5c^2\\Rightarrow5\\mid b$",
+       "$5$ divides both $a$ and $b:$ a contradiction"
+      ],
+      "result": "$\\sqrt5$ is irrational"
+     },
+     {
+      "question": "Prove that $3+2\\sqrt5$ is irrational.",
+      "use": [
+       "rational $+$ irrational $=$ irrational; non-zero rational $\\times$ irrational $=$ irrational"
+      ],
+      "steps": [
+       "Let $3+2\\sqrt5=r,\\ r$ rational",
+       "$\\sqrt5=\\frac{r-3}2$, which is rational",
+       "This contradicts $\\sqrt5$ irrational"
+      ],
+      "result": "$3+2\\sqrt5$ is irrational"
+     },
+     {
+      "question": "Prove that $\\dfrac1{\\sqrt2}$ is irrational.",
+      "use": [
+       "rational $+$ irrational $=$ irrational; non-zero rational $\\times$ irrational $=$ irrational"
+      ],
+      "steps": [
+       "Let $\\frac1{\\sqrt2}=r\\Rightarrow\\sqrt2=\\frac1r$, rational",
+       "Contradiction, since $\\sqrt2$ is irrational"
+      ],
+      "result": "$\\frac1{\\sqrt2}$ is irrational"
+     },
+     {
+      "question": "Is $(2-\\sqrt3)(2+\\sqrt3)$ rational or irrational?",
+      "use": [
+       "Irrational: cannot be written as $\\frac pq,\\ p, q\\in\\mathbb Z,\\ q\\ne0$"
+      ],
+      "steps": [
+       "$(2-\\sqrt3)(2+\\sqrt3)=4-3=1$"
+      ],
+      "result": "Rational"
+     },
+     {
+      "question": "Prove that $\\sqrt2+\\sqrt3$ is irrational.",
+      "use": [
+       "rational $+$ irrational $=$ irrational; non-zero rational $\\times$ irrational $=$ irrational"
+      ],
+      "steps": [
+       "Let $\\sqrt2+\\sqrt3=r\\Rightarrow\\sqrt3=r-\\sqrt2$",
+       "$3=r^2-2r\\sqrt2+2\\Rightarrow\\sqrt2=\\frac{r^2-1}{2r}$",
+       "The right side is rational: a contradiction"
+      ],
+      "result": "$\\sqrt2+\\sqrt3$ is irrational"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "HCF $=$ product of the common primes, each with its least power",
+     "LCM $=$ product of all the primes, each with its greatest power",
+     "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$"
+    ],
+    "examples": [
+     {
+      "question": "Find the least number that leaves remainder $5$ when divided by $8$, $12$ and $18$.",
+      "use": [
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "$8=2^3,\\ 12=2^2\\times3,\\ 18=2\\times3^2$",
+       "LCM $=2^3\\times3^2=72;\\quad 72+5$"
+      ],
+      "result": "$77$"
+     },
+     {
+      "question": "$\\text{HCF}(a,b)=23$, $\\text{LCM}(a,b)=1449$ and $a=161$. Find $b$.",
+      "use": [
+       "HCF $(a, b)\\times$ LCM $(a, b)=a\\times b$"
+      ],
+      "steps": [
+       "$b=\\frac{23\\times1449}{161}$"
+      ],
+      "result": "$207$"
+     },
+     {
+      "question": "Sonia takes $18$ minutes and Ravi $12$ minutes to go round a field. They start together. After how many minutes do they meet again at the start?",
+      "use": [
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "LCM $(18,12)=36$"
+      ],
+      "result": "$36$ minutes"
+     },
+     {
+      "question": "Find the HCF and LCM of $2^3\\times3^2\\times5$ and $2^2\\times3^3\\times7$.",
+      "use": [
+       "HCF $=$ product of the common primes, each with its least power",
+       "LCM $=$ product of all the primes, each with its greatest power"
+      ],
+      "steps": [
+       "HCF $=2^2\\times3^2$, LCM $=2^3\\times3^3\\times5\\times7$"
+      ],
+      "result": "$36,\\ 7560$"
+     },
+     {
+      "question": "$n$ is a natural number. Show that $n^2+n$ is even.",
+      "use": [],
+      "steps": [
+       "$n^2+n=n(n+1)$",
+       "One of $n,\\ n+1$ is even"
+      ],
+      "result": "$n^2+n$ is even"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "polynomials": {
+  "slug": "polynomials",
+  "number": 2,
+  "title": "Polynomials",
+  "subtitle": "Zeros of a polynomial, their meaning on a graph, and the relationship between the zeros and the coefficients of a quadratic polynomial",
+  "sheet": [
+   {
+    "title": "Zeros",
+    "items": [
+     "$p(x)=ax^2+bx+c,\\ a\\ne0:$ quadratic polynomial",
+     "$k$ is a zero of $p(x)\\iff p(k)=0$",
+     "The zeros are the $x$-coordinates where $y=p(x)$ meets the $x$-axis",
+     "A polynomial of degree $n$ has at most $n$ zeros"
+    ]
+   },
+   {
+    "title": "Zeros and coefficients",
+    "items": [
+     "$\\alpha+\\beta=-\\frac ba$",
+     "$\\alpha\\beta=\\frac ca$",
+     "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$",
+     "$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$",
+     "$\\frac1\\alpha+\\frac1\\beta=\\frac{\\alpha+\\beta}{\\alpha\\beta}$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Zeros of a polynomial",
+    "level": "board",
+    "formulas": [
+     "$p(x)=ax^2+bx+c,\\ a\\ne0:$ quadratic polynomial",
+     "$k$ is a zero of $p(x)\\iff p(k)=0$",
+     "The zeros are the $x$-coordinates where $y=p(x)$ meets the $x$-axis",
+     "A polynomial of degree $n$ has at most $n$ zeros"
+    ],
+    "examples": [
+     {
+      "question": "Is $x=2$ a zero of $p(x)=x^2-3x+2$?",
+      "use": [
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$p(2)=4-6+2=0$"
+      ],
+      "result": "Yes"
+     },
+     {
+      "question": "Find the zeros of $p(x)=x^2-2x-8$.",
+      "use": [
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$x^2-4x+2x-8=(x-4)(x+2)$"
+      ],
+      "result": "$4$ and $-2$"
+     },
+     {
+      "question": "The graph of $y=p(x)$ meets the $x$-axis at $3$ points. How many zeros does $p(x)$ have?",
+      "use": [
+       "The zeros are the $x$-coordinates where $y=p(x)$ meets the $x$-axis"
+      ],
+      "steps": [
+       "Each meeting point gives one zero"
+      ],
+      "result": "$3$"
+     },
+     {
+      "question": "The graph of $y=x^2+1$ does not meet the $x$-axis. What does this tell you?",
+      "use": [
+       "The zeros are the $x$-coordinates where $y=p(x)$ meets the $x$-axis"
+      ],
+      "steps": [
+       "$x^2+1\\ge1>0$ for all $x$"
+      ],
+      "result": "It has no real zero"
+     },
+     {
+      "question": "Find the zeros of $p(s)=4s^2-4s+1$.",
+      "use": [
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$4s^2-4s+1=(2s-1)^2$"
+      ],
+      "result": "$s=\\frac12,\\ \\frac12$"
+     }
+    ]
+   },
+   {
+    "title": "Relationship between zeros and coefficients",
+    "level": "board",
+    "formulas": [
+     "$\\alpha+\\beta=-\\frac ba$",
+     "$\\alpha\\beta=\\frac ca$",
+     "$k$ is a zero of $p(x)\\iff p(k)=0$"
+    ],
+    "examples": [
+     {
+      "question": "Find the zeros of $6x^2-3-7x$ and verify the relationship with the coefficients.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$6x^2-7x-3=(3x+1)(2x-3)\\Rightarrow x=-\\frac13,\\ \\frac32$",
+       "Sum $=\\frac76=-\\frac{-7}6$, Product $=-\\frac12=\\frac{-3}6$"
+      ],
+      "result": "$-\\frac13,\\ \\frac32$; verified"
+     },
+     {
+      "question": "Find the zeros of $4u^2+8u$ and verify.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$4u(u+2)=0\\Rightarrow u=0,\\ -2$",
+       "Sum $=-2=-\\frac84$, Product $=0=\\frac04$"
+      ],
+      "result": "$0,\\ -2$; verified"
+     },
+     {
+      "question": "Find the zeros of $t^2-15$ and verify.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$t=\\pm\\sqrt{15}$",
+       "Sum $=0=-\\frac01$, Product $=-15=\\frac{-15}1$"
+      ],
+      "result": "$\\pm\\sqrt{15}$; verified"
+     },
+     {
+      "question": "Find the zeros of $3x^2-x-4$.",
+      "use": [
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$3x^2-4x+3x-4=(3x-4)(x+1)$"
+      ],
+      "result": "$\\frac43,\\ -1$"
+     },
+     {
+      "question": "One zero of $x^2+kx-6$ is $2$. Find $k$ and the other zero.",
+      "use": [
+       "$\\alpha\\beta=\\frac ca$",
+       "$k$ is a zero of $p(x)\\iff p(k)=0$"
+      ],
+      "steps": [
+       "$4+2k-6=0\\Rightarrow k=1$",
+       "$\\alpha\\beta=-6\\Rightarrow\\beta=-3$"
+      ],
+      "result": "$k=1;\\ -3$"
+     }
+    ]
+   },
+   {
+    "title": "Forming a quadratic polynomial",
+    "level": "board",
+    "formulas": [
+     "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$",
+     "$\\alpha+\\beta=-\\frac ba$",
+     "$\\alpha\\beta=\\frac ca$"
+    ],
+    "examples": [
+     {
+      "question": "Find a quadratic polynomial with sum of zeros $\\frac14$ and product $-1$.",
+      "use": [
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$x^2-\\frac14x-1=\\frac14(4x^2-x-4)$"
+      ],
+      "result": "$4x^2-x-4$"
+     },
+     {
+      "question": "Find a quadratic polynomial with sum $\\sqrt2$ and product $\\frac13$.",
+      "use": [
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$x^2-\\sqrt2x+\\frac13=\\frac13(3x^2-3\\sqrt2x+1)$"
+      ],
+      "result": "$3x^2-3\\sqrt2x+1$"
+     },
+     {
+      "question": "Find a quadratic polynomial with sum $0$ and product $\\sqrt5$.",
+      "use": [
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$x^2-0x+\\sqrt5$"
+      ],
+      "result": "$x^2+\\sqrt5$"
+     },
+     {
+      "question": "Find a quadratic polynomial whose zeros are $3+\\sqrt2$ and $3-\\sqrt2$.",
+      "use": [
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$S=6,\\quad P=9-2=7$"
+      ],
+      "result": "$x^2-6x+7$"
+     },
+     {
+      "question": "Find a quadratic polynomial whose zeros are $-2$ and $5$.",
+      "use": [
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$S=3,\\ P=-10$"
+      ],
+      "result": "$x^2-3x-10$"
+     }
+    ]
+   },
+   {
+    "title": "Expressions in the zeros (higher-order)",
+    "level": "challenge",
+    "formulas": [
+     "$\\alpha+\\beta=-\\frac ba$",
+     "$\\alpha\\beta=\\frac ca$",
+     "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$",
+     "$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$",
+     "$\\frac1\\alpha+\\frac1\\beta=\\frac{\\alpha+\\beta}{\\alpha\\beta}$"
+    ],
+    "examples": [
+     {
+      "question": "$\\alpha$ and $\\beta$ are the zeros of $x^2-5x+6$. Find $\\alpha^2+\\beta^2$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$"
+      ],
+      "steps": [
+       "$\\alpha+\\beta=5,\\ \\alpha\\beta=6$",
+       "$25-12$"
+      ],
+      "result": "$13$"
+     },
+     {
+      "question": "$\\alpha,\\beta$ are the zeros of $2x^2-4x+5$. Find $\\dfrac1\\alpha+\\dfrac1\\beta$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$\\frac1\\alpha+\\frac1\\beta=\\frac{\\alpha+\\beta}{\\alpha\\beta}$"
+      ],
+      "steps": [
+       "$\\alpha+\\beta=2,\\ \\alpha\\beta=\\frac52$",
+       "$\\frac{2}{\\frac52}$"
+      ],
+      "result": "$\\frac45$"
+     },
+     {
+      "question": "$\\alpha,\\beta$ are the zeros of $x^2-px+q$. Find $\\dfrac\\alpha\\beta+\\dfrac\\beta\\alpha$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$"
+      ],
+      "steps": [
+       "$\\frac{\\alpha^2+\\beta^2}{\\alpha\\beta}=\\frac{p^2-2q}{q}$"
+      ],
+      "result": "$\\frac{p^2-2q}q$"
+     },
+     {
+      "question": "One zero of $kx^2-14x+8$ is $6$ times the other. Find $k$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$"
+      ],
+      "steps": [
+       "$7\\alpha=\\frac{14}k,\\quad 6\\alpha^2=\\frac8k$",
+       "$\\alpha=\\frac2k\\Rightarrow\\frac{24}{k^2}=\\frac8k\\Rightarrow k=3$"
+      ],
+      "result": "$3$"
+     },
+     {
+      "question": "$\\alpha,\\beta$ are the zeros of $x^2-3x+2$. Find a quadratic polynomial with zeros $2\\alpha$ and $2\\beta$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$",
+       "Quadratic with sum $S$ and product $P:\\ k(x^2-Sx+P)$"
+      ],
+      "steps": [
+       "$\\alpha+\\beta=3,\\ \\alpha\\beta=2$",
+       "$S=6,\\quad P=4\\alpha\\beta=8$"
+      ],
+      "result": "$x^2-6x+8$"
+     },
+     {
+      "question": "The zeros of $x^2+(a+1)x+b$ are $2$ and $-3$. Find $a$ and $b$.",
+      "use": [
+       "$\\alpha+\\beta=-\\frac ba$",
+       "$\\alpha\\beta=\\frac ca$"
+      ],
+      "steps": [
+       "$-(a+1)=-1\\Rightarrow a=0$",
+       "$b=-6$"
+      ],
+      "result": "$a=0,\\ b=-6$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "linear-equations": {
+  "slug": "linear-equations",
+  "number": 3,
+  "title": "Pair of Linear Equations in Two Variables",
+  "subtitle": "Graphical meaning, consistency, substitution, elimination and word problems",
+  "sheet": [
+   {
+    "title": "Consistency",
+    "items": [
+     "$a_1x+b_1y+c_1=0,\\quad a_2x+b_2y+c_2=0$",
+     "$\\frac{a_1}{a_2}\\ne\\frac{b_1}{b_2}:$ lines intersect; one solution (consistent)",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}:$ lines are parallel; no solution (inconsistent)"
+    ]
+   },
+   {
+    "title": "Methods",
+    "items": [
+     "Substitution: write one variable from one equation; put it into the other",
+     "Elimination: make the coefficients of one variable equal; add or subtract",
+     "Graphical: the solution is the point where the two lines meet",
+     "Check: put the answer into both equations"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Graphs and consistency",
+    "level": "board",
+    "formulas": [
+     "$a_1x+b_1y+c_1=0,\\quad a_2x+b_2y+c_2=0$",
+     "$\\frac{a_1}{a_2}\\ne\\frac{b_1}{b_2}:$ lines intersect; one solution (consistent)",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}:$ lines are parallel; no solution (inconsistent)",
+     "Graphical: the solution is the point where the two lines meet"
+    ],
+    "examples": [
+     {
+      "question": "Check whether $5x-4y+8=0$ and $7x+6y-9=0$ intersect, are parallel or coincide.",
+      "use": [
+       "$\\frac{a_1}{a_2}\\ne\\frac{b_1}{b_2}:$ lines intersect; one solution (consistent)"
+      ],
+      "steps": [
+       "$\\frac{a_1}{a_2}=\\frac57,\\quad \\frac{b_1}{b_2}=\\frac{-4}6=-\\frac23$"
+      ],
+      "result": "They intersect"
+     },
+     {
+      "question": "Check $9x+3y+12=0$ and $18x+6y+24=0$.",
+      "use": [
+       "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions"
+      ],
+      "steps": [
+       "$\\frac9{18}=\\frac36=\\frac{12}{24}=\\frac12$"
+      ],
+      "result": "They coincide"
+     },
+     {
+      "question": "Check $6x-3y+10=0$ and $2x-y+9=0$.",
+      "use": [
+       "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}:$ lines are parallel; no solution (inconsistent)"
+      ],
+      "steps": [
+       "$\\frac62=\\frac{-3}{-1}=3,\\quad \\frac{10}9\\ne3$"
+      ],
+      "result": "Parallel; no solution"
+     },
+     {
+      "question": "Find $k$ so that $kx+3y=k-3$ and $12x+ky=k$ have no solution.",
+      "use": [
+       "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}:$ lines are parallel; no solution (inconsistent)"
+      ],
+      "steps": [
+       "$\\frac k{12}=\\frac3k\\Rightarrow k^2=36\\Rightarrow k=\\pm6$",
+       "$k=6:\\ \\frac3k=\\frac12=\\frac{k-3}k\\ \\Rightarrow$ the lines coincide; reject",
+       "$k=-6:\\ \\frac3{-6}=-\\frac12,\\ \\frac{k-3}{k}=\\frac{-9}{-6}=\\frac32\\ne-\\frac12$"
+      ],
+      "result": "$k=-6$"
+     },
+     {
+      "question": "Solve graphically: $x+y=5$ and $x-y=1$.",
+      "use": [
+       "Graphical: the solution is the point where the two lines meet"
+      ],
+      "steps": [
+       "$x+y=5:\\ (0,5),(5,0);\\quad x-y=1:\\ (1,0),(0,-1)$",
+       "The lines meet at $(3,2)$"
+      ],
+      "result": "$x=3,\\ y=2$"
+     },
+     {
+      "question": "For which $k$ do $2x+3y=7$ and $(k-1)x+(k+2)y=3k$ have infinitely many solutions?",
+      "use": [
+       "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions"
+      ],
+      "steps": [
+       "$\\frac2{k-1}=\\frac3{k+2}\\Rightarrow2k+4=3k-3\\Rightarrow k=7$",
+       "$k=7:\\ \\frac26=\\frac39=\\frac7{21}=\\frac13$"
+      ],
+      "result": "$k=7$"
+     }
+    ]
+   },
+   {
+    "title": "Substitution and elimination",
+    "level": "board",
+    "formulas": [
+     "Substitution: write one variable from one equation; put it into the other",
+     "Elimination: make the coefficients of one variable equal; add or subtract",
+     "Graphical: the solution is the point where the two lines meet",
+     "Check: put the answer into both equations"
+    ],
+    "examples": [
+     {
+      "question": "Solve by substitution: $x+y=14$, $x-y=4$.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other",
+       "Check: put the answer into both equations"
+      ],
+      "steps": [
+       "$x=14-y\\Rightarrow14-2y=4\\Rightarrow y=5$",
+       "$x=9$"
+      ],
+      "result": "$x=9,\\ y=5$"
+     },
+     {
+      "question": "Solve by substitution: $\\dfrac{3x}2-\\dfrac{5y}3=-2$, $\\dfrac x3+\\dfrac y2=\\dfrac{13}6$.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other"
+      ],
+      "steps": [
+       "$9x-10y=-12,\\quad 2x+3y=13$",
+       "$x=\\frac{13-3y}2\\Rightarrow\\frac{9(13-3y)}2-10y=-12$",
+       "$117-27y-20y=-24\\Rightarrow y=3,\\ x=2$"
+      ],
+      "result": "$x=2,\\ y=3$"
+     },
+     {
+      "question": "Solve by elimination: $3x+4y=10$, $2x-2y=2$.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$2\\times(2x-2y=2):\\ 4x-4y=4$",
+       "Add: $7x=14\\Rightarrow x=2,\\ y=1$"
+      ],
+      "result": "$x=2,\\ y=1$"
+     },
+     {
+      "question": "Solve by elimination: $0.2x+0.3y=1.3$, $0.4x+0.5y=2.3$.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$2x+3y=13,\\quad 4x+5y=23$",
+       "$\\times2:\\ 4x+6y=26$; subtract: $y=3$",
+       "$2x=4$"
+      ],
+      "result": "$x=2,\\ y=3$"
+     },
+     {
+      "question": "Solve: $\\sqrt2x+\\sqrt3y=0$, $\\sqrt3x-\\sqrt8y=0$.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other"
+      ],
+      "steps": [
+       "$x=-\\frac{\\sqrt3}{\\sqrt2}y\\Rightarrow-\\frac{3}{\\sqrt2}y-2\\sqrt2y=0$",
+       "$y\\left(-\\frac{7}{\\sqrt2}\\right)=0$"
+      ],
+      "result": "$x=0,\\ y=0$"
+     }
+    ]
+   },
+   {
+    "title": "Word problems",
+    "level": "board",
+    "formulas": [
+     "Substitution: write one variable from one equation; put it into the other",
+     "Elimination: make the coefficients of one variable equal; add or subtract"
+    ],
+    "examples": [
+     {
+      "question": "The difference of two numbers is $26$ and one is three times the other. Find them.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other"
+      ],
+      "steps": [
+       "$x-y=26,\\ x=3y$",
+       "$2y=26$"
+      ],
+      "result": "$39,\\ 13$"
+     },
+     {
+      "question": "The larger of two supplementary angles exceeds the smaller by $18^\\circ$. Find them.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$x+y=180,\\ x-y=18$"
+      ],
+      "result": "$99^\\circ,\\ 81^\\circ$"
+     },
+     {
+      "question": "$7$ bats and $6$ balls cost ₹$3800$; $3$ bats and $5$ balls cost ₹$1750$. Find each cost.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$7x+6y=3800,\\ 3x+5y=1750$",
+       "$\\times5,\\ \\times6:\\ 35x+30y=19000,\\ 18x+30y=10500$",
+       "$17x=8500$"
+      ],
+      "result": "Bat ₹$500$, ball ₹$50$"
+     },
+     {
+      "question": "A fraction becomes $\\frac9{11}$ if $2$ is added to both its numerator and denominator, and $\\frac56$ if $3$ is added to both. Find the fraction.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$11(x+2)=9(y+2):\\ 11x-9y=-4$",
+       "$6(x+3)=5(y+3):\\ 6x-5y=-3$",
+       "$\\times5,\\ \\times9:\\ 55x-45y=-20,\\ 54x-45y=-27\\Rightarrow x=7$"
+      ],
+      "result": "$\\frac79$"
+     },
+     {
+      "question": "A boat goes $30$ km upstream and $44$ km downstream in $10$ hours, and $40$ km upstream and $55$ km downstream in $13$ hours. Find the speed of the stream.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$u=\\frac1{x-y},\\ v=\\frac1{x+y}:\\ 30u+44v=10,\\ 40u+55v=13$",
+       "$u=\\frac15,\\ v=\\frac1{11}\\Rightarrow x-y=5,\\ x+y=11$"
+      ],
+      "result": "Boat $8$ km/h, stream $3$ km/h"
+     },
+     {
+      "question": "Five years ago Nuri was thrice Sonu's age. Ten years later Nuri will be twice Sonu's age. Find their ages.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$x-5=3(y-5):\\ x-3y=-10$",
+       "$x+10=2(y+10):\\ x-2y=10$",
+       "$y=20,\\ x=50$"
+      ],
+      "result": "Nuri $50$, Sonu $20$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "Substitution: write one variable from one equation; put it into the other",
+     "Elimination: make the coefficients of one variable equal; add or subtract",
+     "$\\frac{a_1}{a_2}\\ne\\frac{b_1}{b_2}:$ lines intersect; one solution (consistent)",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions",
+     "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}:$ lines are parallel; no solution (inconsistent)"
+    ],
+    "examples": [
+     {
+      "question": "Solve $\\dfrac2x+\\dfrac3y=13$, $\\dfrac5x-\\dfrac4y=-2$.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$u=\\frac1x,\\ v=\\frac1y:\\ 2u+3v=13,\\ 5u-4v=-2$",
+       "$u=2,\\ v=3$"
+      ],
+      "result": "$x=\\frac12,\\ y=\\frac13$"
+     },
+     {
+      "question": "For which $a,b$ do $2x+3y=7$ and $(a-b)x+(a+b)y=3a+b-2$ have infinitely many solutions?",
+      "use": [
+       "$\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}:$ lines coincide; infinitely many solutions"
+      ],
+      "steps": [
+       "$\\frac2{a-b}=\\frac3{a+b}=\\frac7{3a+b-2}$",
+       "$2a+2b=3a-3b\\Rightarrow a=5b$",
+       "$2(3a+b-2)=7(a-b)\\Rightarrow a-9b=-4$",
+       "$a=5b\\Rightarrow-4b=-4\\Rightarrow b=1$"
+      ],
+      "result": "$a=5,\\ b=1$"
+     },
+     {
+      "question": "The sum of the digits of a two-digit number is $9$. Nine times the number is twice the number with its digits reversed. Find the number.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other"
+      ],
+      "steps": [
+       "$x+y=9,\\quad 9(10x+y)=2(10y+x)$",
+       "$88x=11y\\Rightarrow y=8x\\Rightarrow9x=9$"
+      ],
+      "result": "$18$"
+     },
+     {
+      "question": "A train covers a distance at a uniform speed. If it were $10$ km/h faster it would take $2$ hours less; if $10$ km/h slower, $3$ hours more. Find the distance.",
+      "use": [
+       "Elimination: make the coefficients of one variable equal; add or subtract"
+      ],
+      "steps": [
+       "$d=xt,\\ (x+10)(t-2)=xt,\\ (x-10)(t+3)=xt$",
+       "$-2x+10t=20,\\ 3x-10t=30\\Rightarrow x=50,\\ t=12$"
+      ],
+      "result": "$600$ km"
+     },
+     {
+      "question": "Draw the lines $x-y+1=0$ and $3x+2y-12=0$. Find the vertices of the triangle they form with the $x$-axis.",
+      "use": [
+       "Substitution: write one variable from one equation; put it into the other"
+      ],
+      "steps": [
+       "Meet: $x=y-1\\Rightarrow3y-3+2y=12\\Rightarrow y=3,\\ x=2$",
+       "$x$-axis: $(-1,0)$ and $(4,0)$"
+      ],
+      "result": "$(2,3),\\ (-1,0),\\ (4,0)$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "quadratic-equations": {
+  "slug": "quadratic-equations",
+  "number": 4,
+  "title": "Quadratic Equations",
+  "subtitle": "Standard form, solution by factorisation and by the quadratic formula, nature of roots and word problems",
+  "sheet": [
+   {
+    "title": "Standard form and factorisation",
+    "items": [
+     "$ax^2+bx+c=0,\\ a\\ne0$",
+     "Factorisation: split $b$ into two numbers with product $ac$",
+     "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+    ]
+   },
+   {
+    "title": "Formula and nature of roots",
+    "items": [
+     "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+     "$D=b^2-4ac$",
+     "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Recognising a quadratic equation",
+    "level": "board",
+    "formulas": [
+     "$ax^2+bx+c=0,\\ a\\ne0$"
+    ],
+    "examples": [
+     {
+      "question": "Is $(x+1)^2=2(x-3)$ a quadratic equation?",
+      "use": [
+       "$ax^2+bx+c=0,\\ a\\ne0$"
+      ],
+      "steps": [
+       "$x^2+2x+1=2x-6\\Rightarrow x^2+7=0$",
+       "$a=1\\ne0$"
+      ],
+      "result": "Yes"
+     },
+     {
+      "question": "Is $(x+2)^3=x^3-4$ a quadratic equation?",
+      "use": [
+       "$ax^2+bx+c=0,\\ a\\ne0$"
+      ],
+      "steps": [
+       "$x^3+6x^2+12x+8=x^3-4\\Rightarrow6x^2+12x+12=0$"
+      ],
+      "result": "Yes"
+     },
+     {
+      "question": "Is $(x+2)^2=x^2+3$ a quadratic equation?",
+      "use": [
+       "$ax^2+bx+c=0,\\ a\\ne0$"
+      ],
+      "steps": [
+       "$x^2+4x+4=x^2+3\\Rightarrow4x+1=0$",
+       "No $x^2$ term"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "The area of a rectangular plot is $528\\ \\text{m}^2$. Its length is one more than twice its breadth. Write the equation.",
+      "use": [
+       "$ax^2+bx+c=0,\\ a\\ne0$"
+      ],
+      "steps": [
+       "$x(2x+1)=528$"
+      ],
+      "result": "$2x^2+x-528=0$"
+     }
+    ]
+   },
+   {
+    "title": "Solution by factorisation",
+    "level": "board",
+    "formulas": [
+     "$ax^2+bx+c=0,\\ a\\ne0$",
+     "Factorisation: split $b$ into two numbers with product $ac$",
+     "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+    ],
+    "examples": [
+     {
+      "question": "Solve $2x^2-5x+3=0$.",
+      "use": [
+       "Factorisation: split $b$ into two numbers with product $ac$",
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$2x^2-2x-3x+3=2x(x-1)-3(x-1)=(2x-3)(x-1)$"
+      ],
+      "result": "$x=\\frac32,\\ 1$"
+     },
+     {
+      "question": "Solve $6x^2-x-2=0$.",
+      "use": [
+       "Factorisation: split $b$ into two numbers with product $ac$",
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$ac=-12=-4\\times3:\\ 6x^2-4x+3x-2=(3x-2)(2x+1)$"
+      ],
+      "result": "$x=\\frac23,\\ -\\frac12$"
+     },
+     {
+      "question": "Solve $\\sqrt2x^2+7x+5\\sqrt2=0$.",
+      "use": [
+       "Factorisation: split $b$ into two numbers with product $ac$",
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$ac=10=5\\times2:\\ \\sqrt2x^2+5x+2x+5\\sqrt2=(x+\\sqrt2)(\\sqrt2x+5)$"
+      ],
+      "result": "$x=-\\sqrt2,\\ -\\frac5{\\sqrt2}$"
+     },
+     {
+      "question": "Solve $100x^2-20x+1=0$.",
+      "use": [
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$(10x-1)^2=0$"
+      ],
+      "result": "$x=\\frac1{10},\\ \\frac1{10}$"
+     },
+     {
+      "question": "Find two consecutive positive integers whose squares add up to $365$.",
+      "use": [
+       "Factorisation: split $b$ into two numbers with product $ac$",
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$x^2+(x+1)^2=365\\Rightarrow x^2+x-182=0$",
+       "$(x+14)(x-13)=0$"
+      ],
+      "result": "$13,\\ 14$"
+     },
+     {
+      "question": "The altitude of a right triangle is $7$ cm less than its base, and the hypotenuse is $13$ cm. Find the other two sides.",
+      "use": [
+       "Factorisation: split $b$ into two numbers with product $ac$",
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$x^2+(x-7)^2=169\\Rightarrow x^2-7x-60=0$",
+       "$(x-12)(x+5)=0\\Rightarrow x=12$"
+      ],
+      "result": "$12$ cm and $5$ cm"
+     }
+    ]
+   },
+   {
+    "title": "The quadratic formula",
+    "level": "board",
+    "formulas": [
+     "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+     "$D=b^2-4ac$"
+    ],
+    "examples": [
+     {
+      "question": "Solve $2x^2-7x+3=0$ by the formula.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+       "$D=b^2-4ac$"
+      ],
+      "steps": [
+       "$D=49-24=25$",
+       "$x=\\frac{7\\pm5}{4}$"
+      ],
+      "result": "$x=3,\\ \\frac12$"
+     },
+     {
+      "question": "Solve $4x^2+4\\sqrt3x+3=0$.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+       "$D=b^2-4ac$"
+      ],
+      "steps": [
+       "$D=48-48=0$",
+       "$x=\\frac{-4\\sqrt3}{8}$"
+      ],
+      "result": "$x=-\\frac{\\sqrt3}2,\\ -\\frac{\\sqrt3}2$"
+     },
+     {
+      "question": "Solve $x^2-4x-1=0$.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+       "$D=b^2-4ac$"
+      ],
+      "steps": [
+       "$D=16+4=20$",
+       "$x=\\frac{4\\pm2\\sqrt5}2$"
+      ],
+      "result": "$x=2\\pm\\sqrt5$"
+     },
+     {
+      "question": "Solve $x-\\dfrac1x=3$, $x\\ne0$.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+       "$D=b^2-4ac$"
+      ],
+      "steps": [
+       "$x^2-3x-1=0;\\ D=13$"
+      ],
+      "result": "$x=\\frac{3\\pm\\sqrt{13}}2$"
+     },
+     {
+      "question": "A train travels $360$ km at a uniform speed. If the speed were $5$ km/h more, it would take $1$ hour less. Find the speed.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+       "$D=b^2-4ac$"
+      ],
+      "steps": [
+       "$\\frac{360}x-\\frac{360}{x+5}=1\\Rightarrow x^2+5x-1800=0$",
+       "$D=25+7200=7225=85^2,\\ x=\\frac{-5+85}2$"
+      ],
+      "result": "$40$ km/h"
+     }
+    ]
+   },
+   {
+    "title": "Nature of roots",
+    "level": "board",
+    "formulas": [
+     "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+     "$D=b^2-4ac$",
+     "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+    ],
+    "examples": [
+     {
+      "question": "Find the nature of the roots of $2x^2-3x+5=0$.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$D=9-40=-31<0$"
+      ],
+      "result": "No real roots"
+     },
+     {
+      "question": "Find the nature of the roots of $3x^2-4\\sqrt3x+4=0$.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$D=48-48=0$"
+      ],
+      "result": "Two equal roots $\\frac{2}{\\sqrt3}$"
+     },
+     {
+      "question": "Find $k$ so that $2x^2+kx+3=0$ has two equal roots.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$k^2-24=0$"
+      ],
+      "result": "$k=\\pm2\\sqrt6$"
+     },
+     {
+      "question": "Find $k$ so that $kx(x-2)+6=0$ has two equal roots.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$kx^2-2kx+6=0:\\ 4k^2-24k=0$",
+       "$k\\ne0$"
+      ],
+      "result": "$k=6$"
+     },
+     {
+      "question": "Is it possible to design a rectangular park of perimeter $80$ m and area $400\\ \\text{m}^2$? If so, find its sides.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$l+b=40,\\ lb=400\\Rightarrow l^2-40l+400=0$",
+       "$D=1600-1600=0\\Rightarrow l=20$"
+      ],
+      "result": "Yes; a square of side $20$ m"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$",
+     "$D=b^2-4ac$",
+     "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots",
+     "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+    ],
+    "examples": [
+     {
+      "question": "Solve $\\dfrac1{x+4}-\\dfrac1{x-7}=\\dfrac{11}{30}$, $x\\ne-4,7$.",
+      "use": [
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$\\frac{-11}{(x+4)(x-7)}=\\frac{11}{30}\\Rightarrow x^2-3x+2=0$"
+      ],
+      "result": "$x=1,\\ 2$"
+     },
+     {
+      "question": "The sum of the reciprocals of Rehman's ages $3$ years ago and $5$ years from now is $\\frac13$. Find his present age.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$"
+      ],
+      "steps": [
+       "$\\frac1{x-3}+\\frac1{x+5}=\\frac13\\Rightarrow3(2x+2)=(x-3)(x+5)$",
+       "$x^2-4x-21=0\\Rightarrow(x-7)(x+3)=0$"
+      ],
+      "result": "$7$ years"
+     },
+     {
+      "question": "Two taps fill a tank in $9\\tfrac38$ hours. The larger tap takes $10$ hours less than the smaller. Find the time each takes alone.",
+      "use": [
+       "$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$"
+      ],
+      "steps": [
+       "$\\frac1x+\\frac1{x-10}=\\frac8{75}\\Rightarrow4x^2-115x+375=0$",
+       "$(x-25)(4x-15)=0;\\ x>10$"
+      ],
+      "result": "$25$ h and $15$ h"
+     },
+     {
+      "question": "For which $p$ does $px^2-14x+8=0$ have one root $6$ times the other?",
+      "use": [
+       "$(x-\\alpha)(x-\\beta)=0\\Rightarrow x=\\alpha$ or $x=\\beta$"
+      ],
+      "steps": [
+       "$\\alpha+6\\alpha=\\frac{14}p,\\ 6\\alpha^2=\\frac8p\\Rightarrow\\alpha=\\frac2p$",
+       "$\\frac{24}{p^2}=\\frac8p$"
+      ],
+      "result": "$p=3$"
+     },
+     {
+      "question": "Find $k$ so that $x^2+kx+4=0$ has real roots.",
+      "use": [
+       "$D=b^2-4ac$",
+       "$D>0:$ two distinct real roots; $D=0:$ two equal roots $-\\frac b{2a};\\quad D<0:$ no real roots"
+      ],
+      "steps": [
+       "$k^2-16\\ge0$"
+      ],
+      "result": "$k\\le-4$ or $k\\ge4$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "arithmetic-progressions": {
+  "slug": "arithmetic-progressions",
+  "number": 5,
+  "title": "Arithmetic Progressions",
+  "subtitle": "The common difference, the nth term, the sum of n terms and applications",
+  "sheet": [
+   {
+    "title": "nth term",
+    "items": [
+     "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$",
+     "$a_n=a+(n-1)d$",
+     "$n$ th term from the end $=l-(n-1)d$",
+     "$a, b, c$ in AP $\\iff 2b=a+c$"
+    ]
+   },
+   {
+    "title": "Sum of n terms",
+    "items": [
+     "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$",
+     "$S_n=\\frac n2(a+l)$",
+     "$a_n=S_n-S_{n-1}$",
+     "$1+2+\\dots+n=\\frac{n(n+1)}2$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Arithmetic progressions",
+    "level": "board",
+    "formulas": [
+     "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$",
+     "$a, b, c$ in AP $\\iff 2b=a+c$"
+    ],
+    "examples": [
+     {
+      "question": "Is $2,\\ 4,\\ 8,\\ 16,\\dots$ an AP?",
+      "use": [
+       "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$"
+      ],
+      "steps": [
+       "$4-2=2,\\quad 8-4=4$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "Is $-1.2,\\ -3.2,\\ -5.2,\\ -7.2,\\dots$ an AP? Find $d$.",
+      "use": [
+       "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$"
+      ],
+      "steps": [
+       "$-3.2-(-1.2)=-2,\\ -5.2-(-3.2)=-2$"
+      ],
+      "result": "Yes, $d=-2$"
+     },
+     {
+      "question": "Write the first four terms of the AP with $a=-1.25$ and $d=-0.25$.",
+      "use": [
+       "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$"
+      ],
+      "steps": [
+       "$-1.25,\\ -1.5,\\ -1.75,\\ -2$"
+      ],
+      "result": "$-1.25,\\ -1.5,\\ -1.75,\\ -2$"
+     },
+     {
+      "question": "Find $k$ so that $2k+1$, $13$, $5k-3$ are in AP.",
+      "use": [
+       "$a, b, c$ in AP $\\iff 2b=a+c$"
+      ],
+      "steps": [
+       "$26=2k+1+5k-3\\Rightarrow7k=28$"
+      ],
+      "result": "$k=4$"
+     },
+     {
+      "question": "Is $\\sqrt2,\\ \\sqrt8,\\ \\sqrt{18},\\ \\sqrt{32},\\dots$ an AP?",
+      "use": [
+       "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$"
+      ],
+      "steps": [
+       "$\\sqrt2,\\ 2\\sqrt2,\\ 3\\sqrt2,\\ 4\\sqrt2$"
+      ],
+      "result": "Yes, $d=\\sqrt2$"
+     }
+    ]
+   },
+   {
+    "title": "The nth term",
+    "level": "board",
+    "formulas": [
+     "$a,\\ a+d,\\ a+2d,\\dots:\\ d=a_2-a_1=a_3-a_2=\\cdots$",
+     "$a_n=a+(n-1)d$",
+     "$n$ th term from the end $=l-(n-1)d$",
+     "$a, b, c$ in AP $\\iff 2b=a+c$"
+    ],
+    "examples": [
+     {
+      "question": "Find the $10$th term of $2,7,12,\\dots$",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$a=2,\\ d=5:\\ 2+9\\times5$"
+      ],
+      "result": "$47$"
+     },
+     {
+      "question": "Which term of $21,18,15,\\dots$ is $-81$?",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$21+(n-1)(-3)=-81\\Rightarrow n-1=34$"
+      ],
+      "result": "$35$ th"
+     },
+     {
+      "question": "The $3$rd term of an AP is $5$ and the $7$th term is $9$. Find the AP.",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$a+2d=5,\\ a+6d=9\\Rightarrow d=1,\\ a=3$"
+      ],
+      "result": "$3,\\ 4,\\ 5,\\ \\dots$"
+     },
+     {
+      "question": "How many two-digit numbers are divisible by $3$?",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$12,15,\\dots,99:\\ 99=12+(n-1)3$"
+      ],
+      "result": "$30$"
+     },
+     {
+      "question": "Find the $11$th term from the end of $10,7,4,\\dots,-62$.",
+      "use": [
+       "$n$ th term from the end $=l-(n-1)d$"
+      ],
+      "steps": [
+       "$l=-62,\\ d=-3:\\ -62-10(-3)$"
+      ],
+      "result": "$-32$"
+     },
+     {
+      "question": "Is $301$ a term of $5,11,17,23,\\dots$?",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$5+(n-1)6=301\\Rightarrow n-1=\\frac{296}6=49\\tfrac13$"
+      ],
+      "result": "No"
+     }
+    ]
+   },
+   {
+    "title": "Sum of n terms",
+    "level": "board",
+    "formulas": [
+     "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$",
+     "$S_n=\\frac n2(a+l)$",
+     "$a_n=S_n-S_{n-1}$",
+     "$1+2+\\dots+n=\\frac{n(n+1)}2$"
+    ],
+    "examples": [
+     {
+      "question": "Find the sum of the first $22$ terms of $8,3,-2,\\dots$",
+      "use": [
+       "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$"
+      ],
+      "steps": [
+       "$S_{22}=11[16+21(-5)]=11(-89)$"
+      ],
+      "result": "$-979$"
+     },
+     {
+      "question": "Find the sum $34+32+30+\\dots+10$.",
+      "use": [
+       "$S_n=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$10=34+(n-1)(-2)\\Rightarrow n=13$",
+       "$S=\\frac{13}2(34+10)$"
+      ],
+      "result": "$286$"
+     },
+     {
+      "question": "Find the sum of the first $40$ positive integers divisible by $6$.",
+      "use": [
+       "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$"
+      ],
+      "steps": [
+       "$a=6,\\ d=6:\\ S_{40}=20[12+39\\times6]$"
+      ],
+      "result": "$4920$"
+     },
+     {
+      "question": "$S_n=4n-n^2$. Find $a$, $S_2$ and $a_n$.",
+      "use": [
+       "$a_n=S_n-S_{n-1}$"
+      ],
+      "steps": [
+       "$a=S_1=3,\\quad S_2=4$",
+       "$a_n=(4n-n^2)-(4(n-1)-(n-1)^2)=5-2n$"
+      ],
+      "result": "$a=3,\\ S_2=4,\\ a_n=5-2n$"
+     },
+     {
+      "question": "How many terms of $9,17,25,\\dots$ must be taken to give a sum of $636$?",
+      "use": [
+       "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$"
+      ],
+      "steps": [
+       "$\\frac n2[18+8(n-1)]=636\\Rightarrow4n^2+5n-636=0$",
+       "$(n-12)(4n+53)=0$"
+      ],
+      "result": "$12$"
+     },
+     {
+      "question": "Find the sum of the first $1000$ natural numbers.",
+      "use": [
+       "$1+2+\\dots+n=\\frac{n(n+1)}2$"
+      ],
+      "steps": [
+       "$\\frac{1000\\times1001}2$"
+      ],
+      "result": "$500500$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$a_n=a+(n-1)d$",
+     "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$",
+     "$S_n=\\frac n2(a+l)$"
+    ],
+    "examples": [
+     {
+      "question": "The sum of the $4$th and $8$th terms of an AP is $24$ and the sum of the $6$th and $10$th terms is $44$. Find the first three terms.",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$2a+10d=24,\\ 2a+14d=44\\Rightarrow d=5,\\ a=-13$"
+      ],
+      "result": "$-13,\\ -8,\\ -3$"
+     },
+     {
+      "question": "A sum of ₹$700$ is given as $7$ prizes. Each prize is ₹$20$ less than the one before. Find each prize.",
+      "use": [
+       "$S_n=\\frac n2\\left[2a+(n-1)d\\right]$"
+      ],
+      "steps": [
+       "$\\frac72[2a+6(-20)]=700\\Rightarrow2a-120=200$"
+      ],
+      "result": "₹$160$, ₹$140$, ₹$120$, ₹$100$, ₹$80$, ₹$60$, ₹$40$"
+     },
+     {
+      "question": "In a school, each of the $3$ sections of each class $1$ to $12$ plants trees equal to its class number. How many trees are planted?",
+      "use": [
+       "$S_n=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$3(1+2+\\dots+12)=3\\times\\frac{12}2(1+12)$"
+      ],
+      "result": "$234$"
+     },
+     {
+      "question": "Find the sum of all odd numbers between $0$ and $50$.",
+      "use": [
+       "$S_n=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$1,3,\\dots,49:\\ n=25$",
+       "$\\frac{25}2(1+49)$"
+      ],
+      "result": "$625$"
+     },
+     {
+      "question": "The first and last terms of an AP are $17$ and $350$, and $d=9$. How many terms are there and what is their sum?",
+      "use": [
+       "$a_n=a+(n-1)d$",
+       "$S_n=\\frac n2(a+l)$"
+      ],
+      "steps": [
+       "$350=17+(n-1)9\\Rightarrow n=38$",
+       "$S=19(17+350)$"
+      ],
+      "result": "$38$ terms, $6973$"
+     },
+     {
+      "question": "Which term of $3,15,27,39,\\dots$ is $132$ more than its $54$th term?",
+      "use": [
+       "$a_n=a+(n-1)d$"
+      ],
+      "steps": [
+       "$a_n-a_{54}=(n-54)12=132$"
+      ],
+      "result": "$65$ th"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "triangles": {
+  "slug": "triangles",
+  "number": 6,
+  "title": "Triangles",
+  "subtitle": "Similar figures, the Basic Proportionality Theorem and its converse, and the criteria for similarity",
+  "sheet": [
+   {
+    "title": "Similar figures",
+    "items": [
+     "Similar figures: same shape; corresponding angles equal and corresponding sides in the same ratio",
+     "All circles, all squares and all equilateral triangles are similar"
+    ]
+   },
+   {
+    "title": "Basic Proportionality Theorem",
+    "items": [
+     "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$",
+     "Converse: $\\frac{AD}{DB}=\\frac{AE}{EC}\\Rightarrow DE\\parallel BC$",
+     "$DE\\parallel BC\\Rightarrow\\frac{AD}{AB}=\\frac{AE}{AC}=\\frac{DE}{BC}$"
+    ]
+   },
+   {
+    "title": "Criteria for similarity",
+    "items": [
+     "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar",
+     "SSS: $\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}\\Rightarrow$ similar",
+     "SAS: one equal angle and the sides including it in proportion $\\Rightarrow$ similar",
+     "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Similar figures",
+    "level": "board",
+    "formulas": [
+     "Similar figures: same shape; corresponding angles equal and corresponding sides in the same ratio",
+     "All circles, all squares and all equilateral triangles are similar"
+    ],
+    "examples": [
+     {
+      "question": "Are all rectangles similar?",
+      "use": [
+       "Similar figures: same shape; corresponding angles equal and corresponding sides in the same ratio"
+      ],
+      "steps": [
+       "A $2\\times1$ and a $1\\times1$ rectangle: angles equal, but $\\frac21\\ne\\frac11$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "Are two equilateral triangles always similar?",
+      "use": [
+       "All circles, all squares and all equilateral triangles are similar"
+      ],
+      "steps": [
+       "All angles are $60^\\circ$; sides are in one ratio"
+      ],
+      "result": "Yes"
+     },
+     {
+      "question": "A quadrilateral has sides $2,3,4,5$ cm. A similar one has its shortest side $6$ cm. Find its other sides.",
+      "use": [
+       "Similar figures: same shape; corresponding angles equal and corresponding sides in the same ratio"
+      ],
+      "steps": [
+       "Ratio $=\\frac62=3$"
+      ],
+      "result": "$9,\\ 12,\\ 15$ cm"
+     },
+     {
+      "question": "Is a square similar to a rhombus that is not a square?",
+      "use": [
+       "Similar figures: same shape; corresponding angles equal and corresponding sides in the same ratio"
+      ],
+      "steps": [
+       "Sides are in one ratio, but the angles are not all $90^\\circ$"
+      ],
+      "result": "No"
+     }
+    ]
+   },
+   {
+    "title": "Basic Proportionality Theorem",
+    "level": "board",
+    "formulas": [
+     "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$",
+     "Converse: $\\frac{AD}{DB}=\\frac{AE}{EC}\\Rightarrow DE\\parallel BC$",
+     "$DE\\parallel BC\\Rightarrow\\frac{AD}{AB}=\\frac{AE}{AC}=\\frac{DE}{BC}$"
+    ],
+    "examples": [
+     {
+      "question": "In $\\triangle ABC$, $DE\\parallel BC$, $AD=1.5$ cm, $DB=3$ cm and $AE=1$ cm. Find $EC$.",
+      "use": [
+       "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$"
+      ],
+      "steps": [
+       "$\\frac{1.5}3=\\frac1{EC}$"
+      ],
+      "result": "$EC=2$ cm"
+     },
+     {
+      "question": "In $\\triangle ABC$, $DE\\parallel BC$, $AD=x$, $DB=x-2$, $AE=x+2$, $EC=x-1$. Find $x$.",
+      "use": [
+       "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$"
+      ],
+      "steps": [
+       "$x(x-1)=(x-2)(x+2)\\Rightarrow-x=-4$"
+      ],
+      "result": "$x=4$"
+     },
+     {
+      "question": "$D$, $E$ are on $AB$, $AC$ with $AD=0.18$ cm, $AB=0.63$ cm, $AE=0.08$ cm, $AC=0.28$ cm. Is $DE\\parallel BC$?",
+      "use": [
+       "Converse: $\\frac{AD}{DB}=\\frac{AE}{EC}\\Rightarrow DE\\parallel BC$",
+       "$DE\\parallel BC\\Rightarrow\\frac{AD}{AB}=\\frac{AE}{AC}=\\frac{DE}{BC}$"
+      ],
+      "steps": [
+       "$\\frac{AD}{AB}=\\frac{0.18}{0.63}=\\frac27,\\quad \\frac{AE}{AC}=\\frac{0.08}{0.28}=\\frac27$"
+      ],
+      "result": "Yes"
+     },
+     {
+      "question": "$PE=3.9$, $EQ=3$, $PF=3.6$, $FR=2.4$ (all in cm). Is $EF\\parallel QR$?",
+      "use": [
+       "Converse: $\\frac{AD}{DB}=\\frac{AE}{EC}\\Rightarrow DE\\parallel BC$"
+      ],
+      "steps": [
+       "$\\frac{PE}{EQ}=1.3,\\quad \\frac{PF}{FR}=1.5$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "In $\\triangle ABC$, $DE\\parallel BC$ with $AD=4$, $AB=10$ and $BC=15$. Find $DE$.",
+      "use": [
+       "$DE\\parallel BC\\Rightarrow\\frac{AD}{AB}=\\frac{AE}{AC}=\\frac{DE}{BC}$"
+      ],
+      "steps": [
+       "$\\frac{DE}{15}=\\frac4{10}$"
+      ],
+      "result": "$DE=6$"
+     },
+     {
+      "question": "$ABCD$ is a trapezium with $AB\\parallel DC$. Its diagonals meet at $O$. Show that $\\dfrac{AO}{BO}=\\dfrac{CO}{DO}$.",
+      "use": [
+       "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$"
+      ],
+      "steps": [
+       "Draw $EO\\parallel DC$ through $O$ meeting $AD$ at $E$",
+       "$\\triangle ADC:\\ \\frac{AE}{ED}=\\frac{AO}{OC};\\quad \\triangle DAB:\\ \\frac{AE}{ED}=\\frac{BO}{OD}$",
+       "$\\frac{AO}{OC}=\\frac{BO}{OD}$"
+      ],
+      "result": "$\\frac{AO}{BO}=\\frac{CO}{DO}$"
+     }
+    ]
+   },
+   {
+    "title": "Criteria for similarity",
+    "level": "board",
+    "formulas": [
+     "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar",
+     "SSS: $\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}\\Rightarrow$ similar",
+     "SAS: one equal angle and the sides including it in proportion $\\Rightarrow$ similar",
+     "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+    ],
+    "examples": [
+     {
+      "question": "$\\triangle ABC\\sim\\triangle DEF$, $AB=3$, $DE=6$, $BC=4$. Find $EF$.",
+      "use": [
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\frac{3}{6}=\\frac4{EF}$"
+      ],
+      "result": "$8$"
+     },
+     {
+      "question": "$\\triangle ABC$ has $AB=2$, $BC=2.5$, $CA=3$; $\\triangle PQR$ has $PQ=4$, $QR=5$, $RP=6$. Are they similar?",
+      "use": [
+       "SSS: $\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}\\Rightarrow$ similar"
+      ],
+      "steps": [
+       "$\\frac24=\\frac{2.5}5=\\frac36=\\frac12$"
+      ],
+      "result": "Yes, by SSS"
+     },
+     {
+      "question": "A $1.6$ m girl casts a $4.8$ m shadow. At the same time a pole casts a $28$ m shadow. Find the height of the pole.",
+      "use": [
+       "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar"
+      ],
+      "steps": [
+       "The sun's rays make equal angles: AA",
+       "$\\frac h{28}=\\frac{1.6}{4.8}$"
+      ],
+      "result": "$9\\tfrac13$ m"
+     },
+     {
+      "question": "$\\triangle ABC\\sim\\triangle PQR$ with perimeters $36$ cm and $24$ cm. $PQ=10$ cm. Find $AB$.",
+      "use": [
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\frac{AB}{10}=\\frac{36}{24}$"
+      ],
+      "result": "$15$ cm"
+     },
+     {
+      "question": "In $\\triangle ABC$ and $\\triangle DEF$, $\\angle B=\\angle E$, $AB=6$, $BC=8$, $DE=9$, $EF=12$. Are they similar?",
+      "use": [
+       "SAS: one equal angle and the sides including it in proportion $\\Rightarrow$ similar"
+      ],
+      "steps": [
+       "$\\frac69=\\frac8{12}=\\frac23$, included angles equal"
+      ],
+      "result": "Yes, by SAS"
+     },
+     {
+      "question": "The diagonals of trapezium $ABCD$ ($AB\\parallel DC$) meet at $O$, and $AB=2CD$. Find $\\dfrac{AO}{OC}$.",
+      "use": [
+       "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar",
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\angle OAB=\\angle OCD,\\ \\angle OBA=\\angle ODC$ (alternate angles)",
+       "$\\triangle AOB\\sim\\triangle COD:\\ \\frac{AO}{OC}=\\frac{AB}{CD}$"
+      ],
+      "result": "$2$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$",
+     "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar",
+     "SSS: $\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}\\Rightarrow$ similar",
+     "SAS: one equal angle and the sides including it in proportion $\\Rightarrow$ similar",
+     "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+    ],
+    "examples": [
+     {
+      "question": "In $\\triangle ABC$, $D$ is on $BC$ and $\\angle ADC=\\angle BAC$. Show that $CA^2=CB\\cdot CD$.",
+      "use": [
+       "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar",
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\triangle ADC$ and $\\triangle BAC:\\ \\angle C$ common, $\\angle ADC=\\angle BAC$",
+       "$\\triangle ADC\\sim\\triangle BAC\\Rightarrow\\frac{CA}{CB}=\\frac{CD}{CA}$"
+      ],
+      "result": "$CA^2=CB\\cdot CD$"
+     },
+     {
+      "question": "A $6$ m pole casts a $4$ m shadow. At the same time a tower casts a $28$ m shadow. Find the height of the tower.",
+      "use": [
+       "AA (AAA): two pairs of equal angles $\\Rightarrow$ similar"
+      ],
+      "steps": [
+       "$\\frac h{28}=\\frac64$"
+      ],
+      "result": "$42$ m"
+     },
+     {
+      "question": "A line through the midpoint $D$ of $AB$ parallel to $BC$ meets $AC$ at $E$. Show that $E$ is the midpoint of $AC$.",
+      "use": [
+       "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$"
+      ],
+      "steps": [
+       "$\\frac{AD}{DB}=\\frac{AE}{EC},\\quad AD=DB$"
+      ],
+      "result": "$AE=EC$"
+     },
+     {
+      "question": "In $\\triangle PQR$, $ST\\parallel QR$, $PS=2$, $SQ=3$ and $ST=4$. Find $QR$.",
+      "use": [
+       "BPT: $DE\\parallel BC\\Rightarrow\\frac{AD}{DB}=\\frac{AE}{EC}$",
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\frac{PS}{PQ}=\\frac25=\\frac{ST}{QR}$"
+      ],
+      "result": "$QR=10$"
+     },
+     {
+      "question": "$AD$ and $PM$ are medians of $\\triangle ABC\\sim\\triangle PQR$. Show that $\\dfrac{AB}{PQ}=\\dfrac{AD}{PM}$.",
+      "use": [
+       "SAS: one equal angle and the sides including it in proportion $\\Rightarrow$ similar",
+       "$\\triangle ABC\\sim\\triangle DEF\\Rightarrow\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{CA}{FD}=\\frac{\\text{perimeter of }ABC}{\\text{perimeter of }DEF}$"
+      ],
+      "steps": [
+       "$\\frac{AB}{PQ}=\\frac{BC}{QR}=\\frac{2BD}{2QM}=\\frac{BD}{QM}$",
+       "$\\angle B=\\angle Q\\Rightarrow\\triangle ABD\\sim\\triangle PQM$ (SAS)"
+      ],
+      "result": "$\\frac{AB}{PQ}=\\frac{AD}{PM}$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "coordinate-geometry": {
+  "slug": "coordinate-geometry",
+  "number": 7,
+  "title": "Coordinate Geometry",
+  "subtitle": "The distance formula and the section formula",
+  "sheet": [
+   {
+    "title": "Distance formula",
+    "items": [
+     "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+     "$OP=\\sqrt{x^2+y^2}$",
+     "Collinear $A, B, C:\\ AB+BC=AC$",
+     "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+    ]
+   },
+   {
+    "title": "Section formula",
+    "items": [
+     "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$",
+     "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$",
+     "Ratio $k:1$ when the point is unknown"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Distance formula",
+    "level": "board",
+    "formulas": [
+     "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+     "$OP=\\sqrt{x^2+y^2}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the distance between $(2,3)$ and $(4,1)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{4+4}$"
+      ],
+      "result": "$2\\sqrt2$"
+     },
+     {
+      "question": "Find the distance between $(-5,7)$ and $(-1,3)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{16+16}$"
+      ],
+      "result": "$4\\sqrt2$"
+     },
+     {
+      "question": "Find the distance of $(-6,8)$ from the origin.",
+      "use": [
+       "$OP=\\sqrt{x^2+y^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{36+64}$"
+      ],
+      "result": "$10$"
+     },
+     {
+      "question": "Find $y$ if the distance between $(2,-3)$ and $(10,y)$ is $10$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$64+(y+3)^2=100\\Rightarrow y+3=\\pm6$"
+      ],
+      "result": "$y=3$ or $-9$"
+     },
+     {
+      "question": "On a map, towns $A$ and $B$ are at $(0,0)$ and $(3,-4)$, in km. Find the distance between them.",
+      "use": [
+       "$OP=\\sqrt{x^2+y^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{9+16}$"
+      ],
+      "result": "$5$ km"
+     }
+    ]
+   },
+   {
+    "title": "Using the distance formula",
+    "level": "board",
+    "formulas": [
+     "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+     "$OP=\\sqrt{x^2+y^2}$",
+     "Collinear $A, B, C:\\ AB+BC=AC$",
+     "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+    ],
+    "examples": [
+     {
+      "question": "Are $(1,5)$, $(2,3)$ and $(-2,-11)$ collinear?",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+       "Collinear $A, B, C:\\ AB+BC=AC$"
+      ],
+      "steps": [
+       "$AB=\\sqrt5,\\ BC=\\sqrt{16+196}=\\sqrt{212},\\ AC=\\sqrt{9+256}=\\sqrt{265}$",
+       "$\\sqrt5+\\sqrt{212}\\ne\\sqrt{265}$"
+      ],
+      "result": "No"
+     },
+     {
+      "question": "Show that $(1,7)$, $(4,2)$, $(-1,-1)$ and $(-4,4)$ are the vertices of a square.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$AB=BC=CD=DA=\\sqrt{34}$",
+       "$AC=\\sqrt{4+64}=\\sqrt{68},\\ BD=\\sqrt{64+4}=\\sqrt{68}$"
+      ],
+      "result": "Equal sides and equal diagonals: a square"
+     },
+     {
+      "question": "Find the point on the $x$-axis equidistant from $(2,-5)$ and $(-2,9)$.",
+      "use": [
+       "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+      ],
+      "steps": [
+       "$(x-2)^2+25=(x+2)^2+81\\Rightarrow-8x=56$"
+      ],
+      "result": "$(-7,0)$"
+     },
+     {
+      "question": "Find a relation between $x$ and $y$ such that $(x,y)$ is equidistant from $(3,6)$ and $(-3,4)$.",
+      "use": [
+       "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+      ],
+      "steps": [
+       "$(x-3)^2+(y-6)^2=(x+3)^2+(y-4)^2$",
+       "$-12x-4y+20=0$"
+      ],
+      "result": "$3x+y-5=0$"
+     },
+     {
+      "question": "Is the triangle with vertices $(-2,0)$, $(2,0)$, $(0,2)$ isosceles?",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$AB=4,\\ BC=\\sqrt{4+4}=2\\sqrt2,\\ CA=2\\sqrt2$"
+      ],
+      "result": "Yes; it is also right-angled, since $8+8=16$"
+     },
+     {
+      "question": "Find the radius of the circle with centre $(2,-3)$ that passes through $(-2,0)$.",
+      "use": [
+       "$PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{16+9}$"
+      ],
+      "result": "$5$"
+     }
+    ]
+   },
+   {
+    "title": "Section formula",
+    "level": "board",
+    "formulas": [
+     "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$",
+     "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$",
+     "Ratio $k:1$ when the point is unknown"
+    ],
+    "examples": [
+     {
+      "question": "Find the point dividing the join of $(-1,7)$ and $(4,-3)$ in the ratio $2:3$.",
+      "use": [
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$\\left(\\frac{8-3}5,\\ \\frac{-6+21}5\\right)$"
+      ],
+      "result": "$(1,3)$"
+     },
+     {
+      "question": "Find the points of trisection of the join of $(4,-1)$ and $(-2,-3)$.",
+      "use": [
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$1:2:\\ \\left(\\frac{-2+8}3,\\frac{-3-2}3\\right)=\\left(2,-\\frac53\\right)$",
+       "$2:1:\\ \\left(\\frac{-4+4}3,\\frac{-6-1}3\\right)=\\left(0,-\\frac73\\right)$"
+      ],
+      "result": "$\\left(2,-\\frac53\\right),\\ \\left(0,-\\frac73\\right)$"
+     },
+     {
+      "question": "In what ratio does $(-4,6)$ divide the join of $(-6,10)$ and $(3,-8)$?",
+      "use": [
+       "Ratio $k:1$ when the point is unknown",
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$\\frac{3k-6}{k+1}=-4\\Rightarrow7k=2$"
+      ],
+      "result": "$2:7$"
+     },
+     {
+      "question": "Find the ratio in which the $x$-axis divides the join of $(1,-5)$ and $(-4,5)$, and the point.",
+      "use": [
+       "Ratio $k:1$ when the point is unknown",
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$\\frac{5k-5}{k+1}=0\\Rightarrow k=1$",
+       "$\\left(\\frac{-4+1}2,0\\right)$"
+      ],
+      "result": "$1:1;\\ \\left(-\\frac32,0\\right)$"
+     },
+     {
+      "question": "$(1,2)$, $(4,y)$, $(x,6)$, $(3,5)$ are the vertices of a parallelogram in order. Find $x,y$.",
+      "use": [
+       "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$"
+      ],
+      "steps": [
+       "Mid-points of the diagonals are equal",
+       "$\\left(\\frac{1+x}2,4\\right)=\\left(\\frac72,\\frac{y+5}2\\right)$"
+      ],
+      "result": "$x=6,\\ y=3$"
+     },
+     {
+      "question": "$C(-1,2)$ is the mid-point of $AB$, where $A$ is $(3,-4)$. Find $B$.",
+      "use": [
+       "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$"
+      ],
+      "steps": [
+       "$\\frac{3+x}2=-1,\\ \\frac{-4+y}2=2$"
+      ],
+      "result": "$B(-5,8)$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$",
+     "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$",
+     "Ratio $k:1$ when the point is unknown",
+     "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\ \\frac{y_1+y_2+y_3}3\\right)$",
+     "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+    ],
+    "examples": [
+     {
+      "question": "Find the points that divide the join of $A(-2,2)$ and $B(2,8)$ into four equal parts.",
+      "use": [
+       "$\\text{Mid-point}=\\left(\\frac{x_1+x_2}2,\\ \\frac{y_1+y_2}2\\right)$",
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "Mid-point $(0,5)$",
+       "$\\text{Mid-points of the halves: }\\left(-1,\\frac72\\right),\\ \\left(1,\\frac{13}2\\right)$"
+      ],
+      "result": "$\\left(-1,\\frac72\\right),\\ (0,5),\\ \\left(1,\\frac{13}2\\right)$"
+     },
+     {
+      "question": "Find the centroid of the triangle with vertices $(4,-6)$, $(3,-2)$, $(5,2)$.",
+      "use": [
+       "$\\text{Centroid}=\\left(\\frac{x_1+x_2+x_3}3,\\ \\frac{y_1+y_2+y_3}3\\right)$"
+      ],
+      "steps": [
+       "$\\left(\\frac{12}3,\\frac{-6}3\\right)$"
+      ],
+      "result": "$(4,-2)$"
+     },
+     {
+      "question": "$A(-2,-2)$ and $B(2,-4)$. Find $P$ on $AB$ with $AP=\\frac37AB$.",
+      "use": [
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$AP:PB=3:4$",
+       "$P=\\left(\\frac{6-8}7,\\ \\frac{-12-8}7\\right)$"
+      ],
+      "result": "$\\left(-\\frac27,-\\frac{20}7\\right)$"
+     },
+     {
+      "question": "Find $k$ so that $(2,k)$ is equidistant from $(3,5)$ and $(7,1)$.",
+      "use": [
+       "Equidistant: $PA=PB\\iff PA^2=PB^2$"
+      ],
+      "steps": [
+       "$1+(k-5)^2=25+(k-1)^2$",
+       "$-10k+26=-2k+26\\Rightarrow k=0$"
+      ],
+      "result": "$k=0$"
+     },
+     {
+      "question": "The line $2x+y-4=0$ divides the join of $A(2,-2)$ and $B(3,7)$. Find the ratio.",
+      "use": [
+       "Ratio $k:1$ when the point is unknown",
+       "$\\text{Internal }m_1:m_2:\\ \\left(\\frac{m_1x_2+m_2x_1}{m_1+m_2},\\ \\frac{m_1y_2+m_2y_1}{m_1+m_2}\\right)$"
+      ],
+      "steps": [
+       "$P=\\left(\\frac{3k+2}{k+1},\\frac{7k-2}{k+1}\\right)$",
+       "$2(3k+2)+7k-2-4(k+1)=0\\Rightarrow9k=2$"
+      ],
+      "result": "$2:9$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "introduction-trigonometry": {
+  "slug": "introduction-trigonometry",
+  "number": 8,
+  "title": "Introduction to Trigonometry",
+  "subtitle": "Trigonometric ratios, ratios of specific angles and trigonometric identities",
+  "sheet": [
+   {
+    "title": "Ratios",
+    "items": [
+     "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+     "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+     "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$",
+     "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+    ]
+   },
+   {
+    "title": "Specific angles",
+    "items": [
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin0^\\circ=0,\\ \\cos0^\\circ=1,\\ \\sin90^\\circ=1,\\ \\cos90^\\circ=0,\\ \\tan0^\\circ=0,\\ \\tan90^\\circ$ not defined"
+    ]
+   },
+   {
+    "title": "Identities",
+    "items": [
+     "$\\sin^2A+\\cos^2A=1$",
+     "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+     "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Trigonometric ratios",
+    "level": "board",
+    "formulas": [
+     "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+     "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+     "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$",
+     "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+    ],
+    "examples": [
+     {
+      "question": "In $\\triangle ABC$, right-angled at $B$, $AB=24$ cm and $BC=7$ cm. Find $\\sin A$ and $\\cos A$.",
+      "use": [
+       "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+       "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+      ],
+      "steps": [
+       "$AC=\\sqrt{576+49}=25$"
+      ],
+      "result": "$\\sin A=\\frac7{25},\\ \\cos A=\\frac{24}{25}$"
+     },
+     {
+      "question": "$\\sin A=\\frac34$. Find $\\cos A$ and $\\tan A$.",
+      "use": [
+       "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+       "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+      ],
+      "steps": [
+       "opposite $=3k$, hypotenuse $=4k\\Rightarrow$ adjacent $=\\sqrt7k$"
+      ],
+      "result": "$\\cos A=\\frac{\\sqrt7}4,\\ \\tan A=\\frac3{\\sqrt7}$"
+     },
+     {
+      "question": "$15\\cot A=8$. Find $\\sin A$ and $\\sec A$.",
+      "use": [
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+      ],
+      "steps": [
+       "$\\cot A=\\frac8{15}:$ adjacent $=8k$, opposite $=15k$, hypotenuse $=17k$"
+      ],
+      "result": "$\\sin A=\\frac{15}{17},\\ \\sec A=\\frac{17}8$"
+     },
+     {
+      "question": "$\\sec\\theta=\\frac{13}{12}$. Find the other five ratios.",
+      "use": [
+       "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+      ],
+      "steps": [
+       "hypotenuse $=13k$, adjacent $=12k$, opposite $=5k$"
+      ],
+      "result": "$\\sin\\theta=\\frac5{13},\\ \\cos\\theta=\\frac{12}{13},\\ \\tan\\theta=\\frac5{12},\\ \\csc\\theta=\\frac{13}5,\\ \\cot\\theta=\\frac{12}5$"
+     },
+     {
+      "question": "$\\cot\\theta=\\frac78$. Find $\\dfrac{(1+\\sin\\theta)(1-\\sin\\theta)}{(1+\\cos\\theta)(1-\\cos\\theta)}$.",
+      "use": [
+       "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "Pythagoras: hypotenuse $^2=$ opposite $^2+$ adjacent $^2$"
+      ],
+      "steps": [
+       "adjacent $=7$, opposite $=8$, hypotenuse $=\\sqrt{113}$",
+       "$\\frac{1-\\sin^2\\theta}{1-\\cos^2\\theta}=\\frac{\\frac{49}{113}}{\\frac{64}{113}}$"
+      ],
+      "result": "$\\frac{49}{64}$"
+     },
+     {
+      "question": "$3\\cot A=4$. Check whether $\\dfrac{1-\\tan^2A}{1+\\tan^2A}=\\cos^2A-\\sin^2A$.",
+      "use": [
+       "$\\sin A=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos A=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan A=\\frac{\\text{opposite}}{\\text{adjacent}}$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$"
+      ],
+      "steps": [
+       "$\\tan A=\\frac34:\\ \\frac{1-\\frac9{16}}{1+\\frac9{16}}=\\frac7{25}$",
+       "$\\cos A=\\frac45,\\ \\sin A=\\frac35:\\ \\frac{16}{25}-\\frac9{25}=\\frac7{25}$"
+      ],
+      "result": "Yes"
+     }
+    ]
+   },
+   {
+    "title": "Ratios of specific angles",
+    "level": "board",
+    "formulas": [
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin0^\\circ=0,\\ \\cos0^\\circ=1,\\ \\sin90^\\circ=1,\\ \\cos90^\\circ=0,\\ \\tan0^\\circ=0,\\ \\tan90^\\circ$ not defined"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\sin60^\\circ\\cos30^\\circ+\\sin30^\\circ\\cos60^\\circ$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+       "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$"
+      ],
+      "steps": [
+       "$\\frac{\\sqrt3}2\\cdot\\frac{\\sqrt3}2+\\frac12\\cdot\\frac12=\\frac34+\\frac14$"
+      ],
+      "result": "$1$"
+     },
+     {
+      "question": "Find $2\\tan^245^\\circ+\\cos^230^\\circ-\\sin^260^\\circ$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+       "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$2+\\frac34-\\frac34$"
+      ],
+      "result": "$2$"
+     },
+     {
+      "question": "Find $\\dfrac{\\cos45^\\circ}{\\sec30^\\circ+\\csc30^\\circ}$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+       "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$"
+      ],
+      "steps": [
+       "$\\frac{\\frac1{\\sqrt2}}{\\frac2{\\sqrt3}+2}=\\frac{\\sqrt3}{2\\sqrt2(1+\\sqrt3)}$",
+       "$=\\frac{\\sqrt3(\\sqrt3-1)}{2\\sqrt2\\cdot2}$"
+      ],
+      "result": "$\\frac{3\\sqrt2-\\sqrt6}8$"
+     },
+     {
+      "question": "$\\tan(A+B)=\\sqrt3$ and $\\tan(A-B)=\\frac1{\\sqrt3}$, with $0^\\circ<A+B\\le90^\\circ$ and $A>B$. Find $A$ and $B$.",
+      "use": [
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$A+B=60^\\circ,\\ A-B=30^\\circ$"
+      ],
+      "result": "$A=45^\\circ,\\ B=15^\\circ$"
+     },
+     {
+      "question": "In $\\triangle ABC$ right-angled at $B$, $AC=6$ cm and $\\angle A=30^\\circ$. Find $BC$ and $AB$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+       "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$"
+      ],
+      "steps": [
+       "$BC=AC\\sin30^\\circ=3$",
+       "$AB=AC\\cos30^\\circ=3\\sqrt3$"
+      ],
+      "result": "$BC=3$ cm, $AB=3\\sqrt3$ cm"
+     },
+     {
+      "question": "Find $\\dfrac{5\\cos^260^\\circ+4\\sec^230^\\circ-\\tan^245^\\circ}{\\sin^230^\\circ+\\cos^230^\\circ}$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+       "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "Numerator $=\\frac54+\\frac{16}3-1=\\frac{67}{12}$",
+       "Denominator $=1$"
+      ],
+      "result": "$\\frac{67}{12}$"
+     }
+    ]
+   },
+   {
+    "title": "Trigonometric identities",
+    "level": "board",
+    "formulas": [
+     "$\\sin^2A+\\cos^2A=1$",
+     "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+     "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$",
+     "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+     "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$"
+    ],
+    "examples": [
+     {
+      "question": "Express $\\sin A$, $\\sec A$ and $\\tan A$ in terms of $\\cot A$.",
+      "use": [
+       "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$"
+      ],
+      "steps": [
+       "$\\csc^2A=1+\\cot^2A\\Rightarrow\\sin A=\\frac1{\\sqrt{1+\\cot^2A}}$",
+       "$\\tan A=\\frac1{\\cot A},\\quad \\sec A=\\sqrt{1+\\tan^2A}=\\frac{\\sqrt{1+\\cot^2A}}{\\cot A}$"
+      ],
+      "result": "$\\frac1{\\sqrt{1+\\cot^2A}},\\ \\frac{\\sqrt{1+\\cot^2A}}{\\cot A},\\ \\frac1{\\cot A}$"
+     },
+     {
+      "question": "Prove that $(\\csc\\theta-\\cot\\theta)^2=\\dfrac{1-\\cos\\theta}{1+\\cos\\theta}$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$"
+      ],
+      "steps": [
+       "$\\left(\\frac{1-\\cos\\theta}{\\sin\\theta}\\right)^2=\\frac{(1-\\cos\\theta)^2}{1-\\cos^2\\theta}$",
+       "$=\\frac{(1-\\cos\\theta)^2}{(1-\\cos\\theta)(1+\\cos\\theta)}$"
+      ],
+      "result": "$\\frac{1-\\cos\\theta}{1+\\cos\\theta}$"
+     },
+     {
+      "question": "Prove that $\\dfrac{\\cos A}{1+\\sin A}+\\dfrac{1+\\sin A}{\\cos A}=2\\sec A$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$"
+      ],
+      "steps": [
+       "$\\frac{\\cos^2A+(1+\\sin A)^2}{\\cos A(1+\\sin A)}=\\frac{2+2\\sin A}{\\cos A(1+\\sin A)}$"
+      ],
+      "result": "$\\frac2{\\cos A}=2\\sec A$"
+     },
+     {
+      "question": "Prove that $\\sec A(1-\\sin A)(\\sec A+\\tan A)=1$.",
+      "use": [
+       "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+       "$\\csc A=\\frac1{\\sin A},\\quad \\sec A=\\frac1{\\cos A},\\quad \\cot A=\\frac1{\\tan A}$",
+       "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$"
+      ],
+      "steps": [
+       "$(\\sec A-\\tan A)(\\sec A+\\tan A)=\\sec^2A-\\tan^2A$"
+      ],
+      "result": "$1$"
+     },
+     {
+      "question": "Prove that $\\dfrac{\\sin\\theta-2\\sin^3\\theta}{2\\cos^3\\theta-\\cos\\theta}=\\tan\\theta$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$",
+       "$\\tan A=\\frac{\\sin A}{\\cos A},\\quad \\cot A=\\frac{\\cos A}{\\sin A}$"
+      ],
+      "steps": [
+       "$\\frac{\\sin\\theta(1-2\\sin^2\\theta)}{\\cos\\theta(2\\cos^2\\theta-1)}$",
+       "$1-2\\sin^2\\theta=2\\cos^2\\theta-1$"
+      ],
+      "result": "$\\tan\\theta$"
+     },
+     {
+      "question": "Prove that $(\\sin A+\\csc A)^2+(\\cos A+\\sec A)^2=7+\\tan^2A+\\cot^2A$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$",
+       "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+       "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$"
+      ],
+      "steps": [
+       "$\\sin^2A+\\cos^2A+4+\\csc^2A+\\sec^2A$",
+       "$=1+4+(1+\\cot^2A)+(1+\\tan^2A)$"
+      ],
+      "result": "$7+\\tan^2A+\\cot^2A$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$\\sin^2A+\\cos^2A=1$",
+     "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+     "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$",
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\cos30^\\circ=\\frac{\\sqrt3}2,\\quad \\cos45^\\circ=\\frac1{\\sqrt2},\\quad \\cos60^\\circ=\\frac12$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+    ],
+    "examples": [
+     {
+      "question": "$\\sin\\theta+\\cos\\theta=\\sqrt2$. Find $\\sin\\theta\\cos\\theta$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$"
+      ],
+      "steps": [
+       "$1+2\\sin\\theta\\cos\\theta=2$"
+      ],
+      "result": "$\\frac12$"
+     },
+     {
+      "question": "$\\sec\\theta+\\tan\\theta=p$. Find $\\sec\\theta-\\tan\\theta$ and $\\sec\\theta$.",
+      "use": [
+       "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$"
+      ],
+      "steps": [
+       "$(\\sec\\theta+\\tan\\theta)(\\sec\\theta-\\tan\\theta)=1\\Rightarrow\\sec\\theta-\\tan\\theta=\\frac1p$",
+       "$2\\sec\\theta=p+\\frac1p$"
+      ],
+      "result": "$\\frac1p,\\ \\frac{p^2+1}{2p}$"
+     },
+     {
+      "question": "Find $\\theta$ ($0^\\circ<\\theta<90^\\circ$) if $2\\sin2\\theta=\\sqrt3$.",
+      "use": [
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin45^\\circ=\\frac1{\\sqrt2},\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$"
+      ],
+      "steps": [
+       "$\\sin2\\theta=\\frac{\\sqrt3}2\\Rightarrow2\\theta=60^\\circ$"
+      ],
+      "result": "$30^\\circ$"
+     },
+     {
+      "question": "Prove that $\\sqrt{\\dfrac{1+\\sin A}{1-\\sin A}}=\\sec A+\\tan A$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$"
+      ],
+      "steps": [
+       "$\\sqrt{\\frac{(1+\\sin A)^2}{1-\\sin^2A}}=\\frac{1+\\sin A}{\\cos A}$"
+      ],
+      "result": "$\\sec A+\\tan A$"
+     },
+     {
+      "question": "Find the value of $\\sin^2A+\\dfrac1{1+\\tan^2A}$.",
+      "use": [
+       "$\\sin^2A+\\cos^2A=1$",
+       "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$"
+      ],
+      "steps": [
+       "$\\frac1{\\sec^2A}=\\cos^2A$"
+      ],
+      "result": "$1$"
+     },
+     {
+      "question": "$\\tan\\theta=\\frac1{\\sqrt7}$. Find $\\dfrac{\\csc^2\\theta-\\sec^2\\theta}{\\csc^2\\theta+\\sec^2\\theta}$.",
+      "use": [
+       "$\\sec^2A=1+\\tan^2A\\quad(0^\\circ\\le A<90^\\circ)$",
+       "$\\csc^2A=1+\\cot^2A\\quad(0^\\circ<A\\le90^\\circ)$"
+      ],
+      "steps": [
+       "$\\cot^2\\theta=7:\\ \\csc^2\\theta=8,\\ \\sec^2\\theta=\\frac87$",
+       "$\\frac{8-\\frac87}{8+\\frac87}=\\frac{48}{64}$"
+      ],
+      "result": "$\\frac34$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "applications-trigonometry": {
+  "slug": "applications-trigonometry",
+  "number": 9,
+  "title": "Some Applications of Trigonometry",
+  "subtitle": "Heights and distances with angles of elevation and depression",
+  "sheet": [
+   {
+    "title": "Heights and distances",
+    "items": [
+     "Angle of elevation: measured up from the horizontal to the line of sight",
+     "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+     "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+     "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$"
+    ]
+   },
+   {
+    "title": "Values",
+    "items": [
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\sqrt3\\approx1.732$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "One right triangle",
+    "level": "board",
+    "formulas": [
+     "Angle of elevation: measured up from the horizontal to the line of sight",
+     "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+     "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\sqrt3\\approx1.732$"
+    ],
+    "examples": [
+     {
+      "question": "A tower stands on level ground. From a point $15$ m from its foot, the angle of elevation of its top is $60^\\circ$. Find its height.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\tan60^\\circ=\\frac h{15}$"
+      ],
+      "result": "$15\\sqrt3$ m"
+     },
+     {
+      "question": "A $20$ m rope is tied from the top of a pole to the ground and makes $30^\\circ$ with the ground. Find the height of the pole.",
+      "use": [
+       "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$",
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$"
+      ],
+      "steps": [
+       "$\\sin30^\\circ=\\frac h{20}$"
+      ],
+      "result": "$10$ m"
+     },
+     {
+      "question": "A tree breaks; the broken part touches the ground at $30^\\circ$, $8$ m from the foot. Find the original height.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+       "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$"
+      ],
+      "steps": [
+       "Standing part $=8\\tan30^\\circ=\\frac8{\\sqrt3}$",
+       "Broken part $=\\frac8{\\cos30^\\circ}=\\frac{16}{\\sqrt3}$",
+       "$\\frac{24}{\\sqrt3}=8\\sqrt3$"
+      ],
+      "result": "$8\\sqrt3$ m"
+     },
+     {
+      "question": "A kite flies at a height of $60$ m. Its string makes $60^\\circ$ with the ground. Find the length of the string.",
+      "use": [
+       "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$",
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$"
+      ],
+      "steps": [
+       "$\\sin60^\\circ=\\frac{60}l\\Rightarrow l=\\frac{120}{\\sqrt3}$"
+      ],
+      "result": "$40\\sqrt3$ m"
+     },
+     {
+      "question": "A $10$ m ladder rests against a wall and makes $60^\\circ$ with the ground. How high up the wall does it reach?",
+      "use": [
+       "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$",
+       "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$"
+      ],
+      "steps": [
+       "$\\sin60^\\circ=\\frac h{10}$"
+      ],
+      "result": "$5\\sqrt3$ m"
+     },
+     {
+      "question": "The angle of elevation of the top of a $50$ m tower from a point on the ground is $45^\\circ$. How far is the point from the foot?",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\tan45^\\circ=\\frac{50}d$"
+      ],
+      "result": "$50$ m"
+     },
+     {
+      "question": "A pole of height $h$ casts a shadow of length $\\sqrt3h$. Find the angle of elevation of the sun.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\tan\\theta=\\frac h{\\sqrt3h}=\\frac1{\\sqrt3}$"
+      ],
+      "result": "$30^\\circ$"
+     },
+     {
+      "question": "A $1.5$ m tall boy stands $28.5$ m from a $30$ m building. Find the angle of elevation of the top.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\tan\\theta=\\frac{30-1.5}{28.5}=1$"
+      ],
+      "result": "$45^\\circ$"
+     }
+    ]
+   },
+   {
+    "title": "Angles of depression",
+    "level": "board",
+    "formulas": [
+     "Angle of elevation: measured up from the horizontal to the line of sight",
+     "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+     "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+     "$\\sin\\theta=\\frac{\\text{height}}{\\text{slant length}},\\quad \\cos\\theta=\\frac{\\text{horizontal}}{\\text{slant length}}$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+    ],
+    "examples": [
+     {
+      "question": "From the top of a $75$ m lighthouse, the angle of depression of a ship is $30^\\circ$. How far is the ship from the base?",
+      "use": [
+       "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\tan30^\\circ=\\frac{75}d$"
+      ],
+      "result": "$75\\sqrt3$ m"
+     },
+     {
+      "question": "From the top of a $7$ m building, the angle of elevation of the top of a tower is $60^\\circ$ and the angle of depression of its foot is $45^\\circ$. Find the height of the tower.",
+      "use": [
+       "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "Distance $=\\frac7{\\tan45^\\circ}=7$",
+       "Height above the building $=7\\tan60^\\circ=7\\sqrt3$"
+      ],
+      "result": "$7(1+\\sqrt3)$ m"
+     },
+     {
+      "question": "From a $100$ m high point, the angles of depression of two cars on the same side are $30^\\circ$ and $45^\\circ$. Find the distance between the cars.",
+      "use": [
+       "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$100\\cot30^\\circ-100\\cot45^\\circ=100\\sqrt3-100$"
+      ],
+      "result": "$100(\\sqrt3-1)$ m"
+     },
+     {
+      "question": "A man on a cliff $60$ m high sees a boat at angle of depression $60^\\circ$. How far is the boat from the foot of the cliff?",
+      "use": [
+       "Angle of depression: measured down from the horizontal; it equals the angle of elevation from the other point",
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$d=\\frac{60}{\\tan60^\\circ}=\\frac{60}{\\sqrt3}$"
+      ],
+      "result": "$20\\sqrt3$ m"
+     }
+    ]
+   },
+   {
+    "title": "Two angles from two points",
+    "level": "board",
+    "formulas": [
+     "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\sqrt3\\approx1.732$"
+    ],
+    "examples": [
+     {
+      "question": "The angle of elevation of the top of a tower from a point is $30^\\circ$. On walking $20$ m towards it, the angle becomes $60^\\circ$. Find the height.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$h=x\\sqrt3,\\quad h=\\frac{x+20}{\\sqrt3}$",
+       "$3x=x+20\\Rightarrow x=10$"
+      ],
+      "result": "$10\\sqrt3$ m"
+     },
+     {
+      "question": "Two poles of equal height stand on either side of an $80$ m road. From a point between them, the angles of elevation are $60^\\circ$ and $30^\\circ$. Find the height and the distances.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$h=x\\sqrt3=\\frac{80-x}{\\sqrt3}\\Rightarrow3x=80-x\\Rightarrow x=20$"
+      ],
+      "result": "$h=20\\sqrt3$ m; $20$ m and $60$ m"
+     },
+     {
+      "question": "The shadow of a tower is $40$ m longer when the sun's altitude is $30^\\circ$ than when it is $60^\\circ$. Find the height.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$\\frac h{\\tan30^\\circ}-\\frac h{\\tan60^\\circ}=40\\Rightarrow h\\left(\\sqrt3-\\frac1{\\sqrt3}\\right)=40$"
+      ],
+      "result": "$20\\sqrt3$ m"
+     },
+     {
+      "question": "A $1.2$ m girl sees a balloon moving horizontally at $88.2$ m height. The angle of elevation changes from $60^\\circ$ to $30^\\circ$. Find the distance the balloon moved.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "Height above eye $=87$",
+       "$87\\sqrt3-\\frac{87}{\\sqrt3}=\\frac{174}{\\sqrt3}=58\\sqrt3$"
+      ],
+      "result": "$58\\sqrt3$ m"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+     "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$",
+     "$\\sin30^\\circ=\\frac12,\\quad \\sin60^\\circ=\\frac{\\sqrt3}2$",
+     "$\\sqrt3\\approx1.732$"
+    ],
+    "examples": [
+     {
+      "question": "From a $60$ m building, the angles of depression of the top and bottom of a pole are $30^\\circ$ and $60^\\circ$. Find the height of the pole.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$d=\\frac{60}{\\sqrt3}=20\\sqrt3$",
+       "Drop to the top of the pole $=d\\tan30^\\circ=20$"
+      ],
+      "result": "$40$ m"
+     },
+     {
+      "question": "A statue $1.6$ m tall stands on a pedestal. From a point on the ground, the angles of elevation of the top of the statue and of the pedestal are $60^\\circ$ and $45^\\circ$. Find the height of the pedestal.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$x=h,\\quad \\sqrt3x=h+1.6\\Rightarrow h(\\sqrt3-1)=1.6$"
+      ],
+      "result": "$0.8(\\sqrt3+1)$ m"
+     },
+     {
+      "question": "The angle of elevation of a cloud from $60$ m above a lake is $30^\\circ$, and the angle of depression of its reflection is $60^\\circ$. Find the height of the cloud above the lake.",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$H-60=\\frac x{\\sqrt3},\\quad H+60=x\\sqrt3$",
+       "$\\frac{H+60}{H-60}=3\\Rightarrow H=120$"
+      ],
+      "result": "$120$ m"
+     },
+     {
+      "question": "A car moves towards a tower. The angle of depression from the top changes from $30^\\circ$ to $60^\\circ$ in $6$ seconds. How much longer will it take to reach the tower?",
+      "use": [
+       "$\\tan\\theta=\\frac{\\text{height}}{\\text{horizontal distance}}$",
+       "$\\tan30^\\circ=\\frac1{\\sqrt3},\\quad \\tan45^\\circ=1,\\quad \\tan60^\\circ=\\sqrt3$"
+      ],
+      "steps": [
+       "$h\\sqrt3-\\frac h{\\sqrt3}=\\frac{2h}{\\sqrt3}$ in $6$ s",
+       "Remaining $\\frac h{\\sqrt3}:$ half of that distance"
+      ],
+      "result": "$3$ s"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "circles": {
+  "slug": "circles",
+  "number": 10,
+  "title": "Circles",
+  "subtitle": "Tangents to a circle, the tangent–radius theorem and the lengths of tangents from an external point",
+  "sheet": [
+   {
+    "title": "Tangents",
+    "items": [
+     "A tangent meets the circle at exactly one point",
+     "Point inside: no tangent; on the circle: one; outside: two",
+     "The tangent at a point is perpendicular to the radius through that point",
+     "The two tangents from an external point are equal in length",
+     "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$"
+    ]
+   },
+   {
+    "title": "Consequences",
+    "items": [
+     "Tangents from an external point make equal angles with the line to the centre",
+     "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)",
+     "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Tangent and radius",
+    "level": "board",
+    "formulas": [
+     "A tangent meets the circle at exactly one point",
+     "Point inside: no tangent; on the circle: one; outside: two",
+     "The tangent at a point is perpendicular to the radius through that point",
+     "The two tangents from an external point are equal in length",
+     "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$"
+    ],
+    "examples": [
+     {
+      "question": "How many tangents can a circle have, and how many from a point outside it?",
+      "use": [
+       "Point inside: no tangent; on the circle: one; outside: two"
+      ],
+      "steps": [
+       "One at each point of the circle",
+       "Two from an outside point"
+      ],
+      "result": "Infinitely many; two"
+     },
+     {
+      "question": "From a point $Q$, the tangent to a circle is $24$ cm long and $Q$ is $25$ cm from the centre. Find the radius.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point",
+       "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$"
+      ],
+      "steps": [
+       "$r^2=25^2-24^2=49$"
+      ],
+      "result": "$7$ cm"
+     },
+     {
+      "question": "Find the length of the tangent from a point $13$ cm from the centre of a circle of radius $5$ cm.",
+      "use": [
+       "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{169-25}$"
+      ],
+      "result": "$12$ cm"
+     },
+     {
+      "question": "Two concentric circles have radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle that touches the smaller.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point"
+      ],
+      "steps": [
+       "The radius $3$ is perpendicular to the chord and bisects it",
+       "Half-chord $=\\sqrt{25-9}=4$"
+      ],
+      "result": "$8$ cm"
+     },
+     {
+      "question": "$PQ$ is the tangent at $P$ to a circle with centre $O$ and radius $6$ cm, and $\\angle OQP=30^\\circ$. Find $PQ$.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point"
+      ],
+      "steps": [
+       "$\\angle OPQ=90^\\circ:\\ \\tan30^\\circ=\\frac{OP}{PQ}=\\frac6{PQ}$"
+      ],
+      "result": "$6\\sqrt3$ cm"
+     },
+     {
+      "question": "A point $Q$ is $12$ cm from the centre of a circle of radius $5$ cm. Find the length of the tangent from $Q$.",
+      "use": [
+       "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$"
+      ],
+      "steps": [
+       "$\\sqrt{144-25}$"
+      ],
+      "result": "$\\sqrt{119}$ cm"
+     },
+     {
+      "question": "The tangents $PA$ and $PB$ from $P$ make $\\angle APB=80^\\circ$. Find $\\angle POA$, where $O$ is the centre.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point",
+       "The two tangents from an external point are equal in length"
+      ],
+      "steps": [
+       "$\\angle AOB=180^\\circ-80^\\circ=100^\\circ$",
+       "$\\angle POA=\\frac12\\angle AOB$"
+      ],
+      "result": "$50^\\circ$"
+     }
+    ]
+   },
+   {
+    "title": "Tangents from an external point",
+    "level": "board",
+    "formulas": [
+     "The two tangents from an external point are equal in length",
+     "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$",
+     "Tangents from an external point make equal angles with the line to the centre",
+     "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)",
+     "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+    ],
+    "examples": [
+     {
+      "question": "$PA$ and $PB$ are tangents with $PA=8$ cm. Find $PB$.",
+      "use": [
+       "The two tangents from an external point are equal in length"
+      ],
+      "steps": [
+       "$PA=PB$"
+      ],
+      "result": "$8$ cm"
+     },
+     {
+      "question": "A quadrilateral $ABCD$ circumscribes a circle. $AB=6$, $BC=7$, $CD=4$. Find $AD$.",
+      "use": [
+       "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+      ],
+      "steps": [
+       "$AB+CD=AD+BC\\Rightarrow10=AD+7$"
+      ],
+      "result": "$3$"
+     },
+     {
+      "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+      "use": [
+       "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+      ],
+      "steps": [
+       "$AB+CD=AD+BC$",
+       "$AB=CD,\\ AD=BC\\Rightarrow2AB=2AD$"
+      ],
+      "result": "All sides equal: a rhombus"
+     },
+     {
+      "question": "$TP$ and $TQ$ are tangents from $T$ and $\\angle PTQ=60^\\circ$. Find $\\angle POQ$.",
+      "use": [
+       "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)"
+      ],
+      "steps": [
+       "$180^\\circ-60^\\circ$"
+      ],
+      "result": "$120^\\circ$"
+     },
+     {
+      "question": "A circle touches all four sides of $ABCD$ and $AB=8$, $BC=10$, $CD=9$. Find $DA$.",
+      "use": [
+       "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+      ],
+      "steps": [
+       "$8+9=DA+10$"
+      ],
+      "result": "$7$"
+     },
+     {
+      "question": "The two tangents from $P$ to a circle of radius $3$ cm are perpendicular to each other. Find $OP$.",
+      "use": [
+       "The two tangents from an external point are equal in length",
+       "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)"
+      ],
+      "steps": [
+       "$OAPB$ has four right angles and $PA=PB=OA=3:$ a square",
+       "$OP=$ diagonal $=3\\sqrt2$"
+      ],
+      "result": "$3\\sqrt2$ cm"
+     },
+     {
+      "question": "Prove that the tangents at the ends of a diameter are parallel.",
+      "use": [],
+      "steps": [
+       "Each tangent is perpendicular to the diameter",
+       "Two lines perpendicular to one line are parallel"
+      ],
+      "result": "Proved"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "The tangent at a point is perpendicular to the radius through that point",
+     "The two tangents from an external point are equal in length",
+     "Tangent length from $P:\\ PT=\\sqrt{OP^2-r^2}$",
+     "Tangents from an external point make equal angles with the line to the centre",
+     "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)",
+     "Quadrilateral circumscribing a circle: $AB+CD=AD+BC$"
+    ],
+    "examples": [
+     {
+      "question": "A triangle $ABC$ is drawn to circumscribe a circle of radius $4$ cm; $BD=8$ cm and $DC=6$ cm, where $D$ is the point of contact on $BC$. Find $AB$ and $AC$.",
+      "use": [
+       "The two tangents from an external point are equal in length"
+      ],
+      "steps": [
+       "$AF=AE=x;\\ AB=x+8,\\ AC=x+6,\\ BC=14$",
+       "Area $=\\sqrt{s(s-a)(s-b)(s-c)}=rs,\\ s=x+14$",
+       "$\\sqrt{(x+14)\\,x\\cdot8\\cdot6}=4(x+14)\\Rightarrow48x=16(x+14)\\Rightarrow x=7$"
+      ],
+      "result": "$AB=15$ cm, $AC=13$ cm"
+     },
+     {
+      "question": "$PQ$ is a chord of length $8$ cm of a circle of radius $5$ cm. The tangents at $P$ and $Q$ meet at $T$. Find $TP$.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point"
+      ],
+      "steps": [
+       "$OR=\\sqrt{25-16}=3$ ($R$ is the mid-point of $PQ)$",
+       "$\\triangle OPT:\\ OP^2=OR\\cdot OT\\Rightarrow OT=\\frac{25}3$",
+       "$TP=\\sqrt{OT^2-25}=\\sqrt{\\frac{625-225}9}$"
+      ],
+      "result": "$\\frac{20}3$ cm"
+     },
+     {
+      "question": "Prove that the angle between the two tangents from an external point is supplementary to the angle subtended at the centre by the line segment joining the points of contact.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point",
+       "$\\angle PTO=90^\\circ\\Rightarrow\\angle TOQ+\\angle TPQ=180^\\circ$ (quadrilateral with two tangents)"
+      ],
+      "steps": [
+       "$OAPB:\\ \\angle OAP=\\angle OBP=90^\\circ$",
+       "$\\angle APB+\\angle AOB=360^\\circ-180^\\circ$"
+      ],
+      "result": "$\\angle APB+\\angle AOB=180^\\circ$"
+     },
+     {
+      "question": "A circle is inscribed in a right triangle with legs $5$ cm and $12$ cm. Find its radius.",
+      "use": [
+       "The two tangents from an external point are equal in length"
+      ],
+      "steps": [
+       "Hypotenuse $=13$",
+       "Tangent lengths: $(5-r)+(12-r)=13$"
+      ],
+      "result": "$r=2$ cm"
+     },
+     {
+      "question": "Two tangents $TP$ and $TQ$ are drawn from $T$ to a circle with centre $O$. Prove that $\\angle PTQ=2\\angle OPQ$.",
+      "use": [
+       "The tangent at a point is perpendicular to the radius through that point",
+       "The two tangents from an external point are equal in length"
+      ],
+      "steps": [
+       "$TP=TQ\\Rightarrow\\angle TPQ=\\angle TQP=90^\\circ-\\frac12\\angle PTQ$",
+       "$\\angle OPQ=90^\\circ-\\angle TPQ=\\frac12\\angle PTQ$"
+      ],
+      "result": "$\\angle PTQ=2\\angle OPQ$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "areas-circles": {
+  "slug": "areas-circles",
+  "number": 11,
+  "title": "Areas Related to Circles",
+  "subtitle": "Areas of sectors and segments, and lengths of arcs",
+  "sheet": [
+   {
+    "title": "Circle",
+    "items": [
+     "Circumference $=2\\pi r$, Area $=\\pi r^2$",
+     "Distance moved by a wheel in one revolution $=2\\pi r$"
+    ]
+   },
+   {
+    "title": "Sectors and segments",
+    "items": [
+     "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$",
+     "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$",
+     "Perimeter of a sector $=2r+$ arc length",
+     "Area of a segment $=$ area of the sector $-$ area of the triangle",
+     "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+     "Major sector $=\\pi r^2-$ minor sector"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Circumference and area",
+    "level": "board",
+    "formulas": [
+     "Circumference $=2\\pi r$, Area $=\\pi r^2$",
+     "Distance moved by a wheel in one revolution $=2\\pi r$"
+    ],
+    "examples": [
+     {
+      "question": "The radii of two circles are $19$ cm and $9$ cm. Find the radius of the circle whose circumference equals the sum of their circumferences.",
+      "use": [
+       "Circumference $=2\\pi r$, Area $=\\pi r^2$"
+      ],
+      "steps": [
+       "$2\\pi R=2\\pi(19)+2\\pi(9)$"
+      ],
+      "result": "$28$ cm"
+     },
+     {
+      "question": "The radii of two circles are $8$ cm and $6$ cm. Find the radius of the circle whose area equals the sum of their areas.",
+      "use": [
+       "Circumference $=2\\pi r$, Area $=\\pi r^2$"
+      ],
+      "steps": [
+       "$\\pi R^2=64\\pi+36\\pi$"
+      ],
+      "result": "$10$ cm"
+     },
+     {
+      "question": "A car wheel has diameter $80$ cm. How many revolutions does it make in $10$ minutes at $66$ km/h? (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Distance moved by a wheel in one revolution $=2\\pi r$"
+      ],
+      "steps": [
+       "Distance $=\\frac{66000\\times10}{60}=11000$ m",
+       "One revolution $=\\frac{22}7\\times0.8=\\frac{17.6}7$ m",
+       "$\\frac{11000\\times7}{17.6}$"
+      ],
+      "result": "$4375$"
+     },
+     {
+      "question": "The perimeter and area of a circle are numerically equal. Find the radius.",
+      "use": [
+       "Circumference $=2\\pi r$, Area $=\\pi r^2$"
+      ],
+      "steps": [
+       "$2\\pi r=\\pi r^2$"
+      ],
+      "result": "$2$ units"
+     }
+    ]
+   },
+   {
+    "title": "Sectors and arcs",
+    "level": "board",
+    "formulas": [
+     "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$",
+     "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$",
+     "Perimeter of a sector $=2r+$ arc length",
+     "Major sector $=\\pi r^2-$ minor sector"
+    ],
+    "examples": [
+     {
+      "question": "Find the area of a sector of angle $60^\\circ$ in a circle of radius $6$ cm. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$\\frac{60}{360}\\times\\frac{22}7\\times36$"
+      ],
+      "result": "$\\frac{132}7$ cm $^2$"
+     },
+     {
+      "question": "Find the area of a quadrant of a circle of circumference $22$ cm.",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$2\\pi r=22\\Rightarrow r=\\frac72$",
+       "$\\frac14\\times\\frac{22}7\\times\\frac{49}4$"
+      ],
+      "result": "$\\frac{77}8$ cm $^2$"
+     },
+     {
+      "question": "The minute hand of a clock is $14$ cm long. Find the area it sweeps in $5$ minutes.",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$5$ minutes $\\to30^\\circ$",
+       "$\\frac{30}{360}\\times\\frac{22}7\\times196$"
+      ],
+      "result": "$\\frac{154}3$ cm $^2$"
+     },
+     {
+      "question": "Find the length of an arc of angle $45^\\circ$ in a circle of radius $28$ cm and the perimeter of the sector.",
+      "use": [
+       "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$",
+       "Perimeter of a sector $=2r+$ arc length"
+      ],
+      "steps": [
+       "$\\frac{45}{360}\\times2\\times\\frac{22}7\\times28=22$",
+       "$2(28)+22$"
+      ],
+      "result": "$22$ cm; $78$ cm"
+     },
+     {
+      "question": "The minor sector of a circle of radius $21$ cm has angle $60^\\circ$. Find the area of the major sector. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$",
+       "Major sector $=\\pi r^2-$ minor sector"
+      ],
+      "steps": [
+       "Minor $=\\frac{60}{360}\\times\\frac{22}7\\times441=231$",
+       "$\\pi r^2=1386$"
+      ],
+      "result": "$1155$ cm $^2$"
+     },
+     {
+      "question": "A horse is tied to a corner of a square field with a $5$ m rope. Find the area it can graze. (Use $\\pi=3.14$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "A quadrant: $\\frac14\\times3.14\\times25$"
+      ],
+      "result": "$19.625$ m $^2$"
+     }
+    ]
+   },
+   {
+    "title": "Segments",
+    "level": "board",
+    "formulas": [
+     "Area of a segment $=$ area of the sector $-$ area of the triangle",
+     "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+     "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+    ],
+    "examples": [
+     {
+      "question": "A chord of a circle of radius $10$ cm subtends a right angle at the centre. Find the area of the minor segment. (Use $\\pi=3.14$.)",
+      "use": [
+       "Area of a segment $=$ area of the sector $-$ area of the triangle",
+       "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "Sector $=\\frac14\\times3.14\\times100=78.5$",
+       "Triangle $=\\frac12\\times10\\times10=50$"
+      ],
+      "result": "$28.5$ cm $^2$"
+     },
+     {
+      "question": "A chord of a circle of radius $12$ cm subtends $120^\\circ$ at the centre. Find the area of the minor segment. (Use $\\pi=3.14$, $\\sqrt3=1.73$.)",
+      "use": [
+       "Area of a segment $=$ area of the sector $-$ area of the triangle",
+       "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "Sector $=\\frac13\\times3.14\\times144=150.72$",
+       "Triangle $=\\frac12\\times144\\times\\frac{\\sqrt3}2=36\\sqrt3\\approx62.28$"
+      ],
+      "result": "$88.44$ cm $^2$"
+     },
+     {
+      "question": "A chord of a circle of radius $15$ cm subtends $60^\\circ$ at the centre. Find the areas of the minor and major segments. (Use $\\pi=3.14$, $\\sqrt3=1.73$.)",
+      "use": [
+       "Area of a segment $=$ area of the sector $-$ area of the triangle",
+       "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "Sector $=\\frac16\\times3.14\\times225=117.75$",
+       "Equilateral triangle $=\\frac{\\sqrt3}4\\times225=97.3125$",
+       "Minor $=20.4375$; Major $=706.5-20.4375$"
+      ],
+      "result": "$20.4375$ cm $^2,\\ 686.0625$ cm $^2$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$",
+     "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$",
+     "Perimeter of a sector $=2r+$ arc length",
+     "Area of a segment $=$ area of the sector $-$ area of the triangle",
+     "Area of an equilateral triangle of side $a=\\frac{\\sqrt3}4a^2$; area of a triangle $=\\frac12r^2\\sin\\theta$ (for $\\theta=90^\\circ:\\ \\frac12r^2)$",
+     "Major sector $=\\pi r^2-$ minor sector"
+    ],
+    "examples": [
+     {
+      "question": "An umbrella has $8$ equally spaced ribs. Its radius is $45$ cm. Find the area between two adjacent ribs. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$\\frac{45^\\circ}{360^\\circ}\\times\\frac{22}7\\times2025$"
+      ],
+      "result": "$\\frac{22275}{28}$ cm $^2$"
+     },
+     {
+      "question": "A car has two wipers of length $25$ cm, each sweeping $115^\\circ$, with no overlap. Find the total area cleaned. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$2\\times\\frac{115}{360}\\times\\frac{22}7\\times625$"
+      ],
+      "result": "$\\frac{158125}{126}$ cm $^2$"
+     },
+     {
+      "question": "A sector has perimeter $25$ cm and radius $5$ cm. Find its area.",
+      "use": [
+       "Perimeter of a sector $=2r+$ arc length",
+       "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$",
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "Arc $=25-10=15$",
+       "Area $=\\frac12\\times$ arc $\\times r=\\frac12\\times15\\times5$"
+      ],
+      "result": "$37.5$ cm $^2$"
+     },
+     {
+      "question": "A lighthouse sweeps light over a sector of angle $80^\\circ$ to a distance of $16.5$ km. Find the sea area covered. (Use $\\pi=3.14$.)",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$"
+      ],
+      "steps": [
+       "$\\frac{80}{360}\\times3.14\\times272.25$"
+      ],
+      "result": "$189.97$ km $^2$ (approx.)"
+     },
+     {
+      "question": "The arc of a sector of radius $r$ has length $l$. Show that its area is $\\frac12lr$.",
+      "use": [
+       "Area of a sector of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times\\pi r^2$",
+       "Length of an arc of angle $\\theta=\\frac{\\theta}{360^\\circ}\\times2\\pi r$"
+      ],
+      "steps": [
+       "$\\frac{\\theta}{360^\\circ}=\\frac l{2\\pi r}$",
+       "Area $=\\frac l{2\\pi r}\\times\\pi r^2$"
+      ],
+      "result": "$\\frac12lr$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "surface-areas-volumes": {
+  "slug": "surface-areas-volumes",
+  "number": 12,
+  "title": "Surface Areas and Volumes",
+  "subtitle": "Surface areas and volumes of combinations of cubes, cuboids, cylinders, cones, spheres and hemispheres",
+  "sheet": [
+   {
+    "title": "Single solids",
+    "items": [
+     "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+     "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+     "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+     "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+    ]
+   },
+   {
+    "title": "Combined solids",
+    "items": [
+     "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+     "Volume of a combined solid $=$ sum (or difference) of the volumes",
+     "A joined face is hidden: do not count it"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Single solids (revision)",
+    "level": "board",
+    "formulas": [
+     "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+     "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+     "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+     "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+    ],
+    "examples": [
+     {
+      "question": "Find the volume of a cone of radius $7$ cm and height $24$ cm, and its slant height. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$"
+      ],
+      "steps": [
+       "$l=\\sqrt{49+576}=25$",
+       "$V=\\frac13\\times\\frac{22}7\\times49\\times24$"
+      ],
+      "result": "$1232$ cm $^3;\\ 25$ cm"
+     },
+     {
+      "question": "Find the total surface area of a hemisphere of radius $7$ cm. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$3\\times\\frac{22}7\\times49$"
+      ],
+      "result": "$462$ cm $^2$"
+     },
+     {
+      "question": "Find the curved surface area of a cylinder of radius $14$ cm and height $10$ cm. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$"
+      ],
+      "steps": [
+       "$2\\times\\frac{22}7\\times14\\times10$"
+      ],
+      "result": "$880$ cm $^2$"
+     },
+     {
+      "question": "A sphere has surface area $616\\ \\text{cm}^2$. Find its radius. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$4\\times\\frac{22}7r^2=616\\Rightarrow r^2=49$"
+      ],
+      "result": "$7$ cm"
+     }
+    ]
+   },
+   {
+    "title": "Surface area of combined solids",
+    "level": "board",
+    "formulas": [
+     "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+     "Volume of a combined solid $=$ sum (or difference) of the volumes",
+     "A joined face is hidden: do not count it",
+     "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+     "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+     "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+     "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+    ],
+    "examples": [
+     {
+      "question": "Two cubes of volume $64\\ \\text{cm}^3$ each are joined end to end. Find the surface area of the cuboid formed.",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$"
+      ],
+      "steps": [
+       "$a=4:$ cuboid $8\\times4\\times4$",
+       "$2(32+16+32)$"
+      ],
+      "result": "$160$ cm $^2$"
+     },
+     {
+      "question": "A vessel is a hemisphere of diameter $14$ cm topped by a hollow cylinder; the total height is $13$ cm. Find the inner surface area. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$r=7,\\ h=13-7=6$",
+       "$2\\pi r^2+2\\pi rh=2\\times\\frac{22}7\\times7(7+6)$"
+      ],
+      "result": "$572$ cm $^2$"
+     },
+     {
+      "question": "A toy is a cone of radius $3.5$ cm on a hemisphere of the same radius; the total height is $15.5$ cm. Find its total surface area. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$h=12,\\ l=\\sqrt{12.25+144}=12.5$",
+       "$\\pi rl+2\\pi r^2=\\frac{22}7\\times3.5(12.5+7)$"
+      ],
+      "result": "$214.5$ cm $^2$"
+     },
+     {
+      "question": "A cubical block of side $7$ cm is topped by a hemisphere. Find the greatest diameter of the hemisphere and the surface area of the solid. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "A joined face is hidden: do not count it",
+       "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "Greatest diameter $=7$",
+       "$6a^2-\\pi r^2+2\\pi r^2=294+\\pi(3.5)^2=294+38.5$"
+      ],
+      "result": "$7$ cm; $332.5$ cm $^2$"
+     },
+     {
+      "question": "A capsule is a cylinder with two hemispheres at its ends. Its total length is $14$ mm and diameter $5$ mm. Find its surface area. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$r=2.5,\\ h=14-5=9$",
+       "$2\\pi rh+4\\pi r^2=2\\pi r(h+2r)=2\\times\\frac{22}7\\times2.5\\times14$"
+      ],
+      "result": "$220$ mm $^2$"
+     }
+    ]
+   },
+   {
+    "title": "Volume of combined solids",
+    "level": "board",
+    "formulas": [
+     "Volume of a combined solid $=$ sum (or difference) of the volumes",
+     "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+     "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+     "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+     "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+    ],
+    "examples": [
+     {
+      "question": "A solid is a cone of radius $1$ cm and height $1$ cm on a hemisphere of radius $1$ cm. Find its volume in terms of $\\pi$.",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$\\frac13\\pi(1)(1)+\\frac23\\pi(1)$"
+      ],
+      "result": "$\\pi$ cm $^3$"
+     },
+     {
+      "question": "A gulab jamun is a cylinder with two hemispherical ends, length $5$ cm and diameter $2.8$ cm. It holds sugar syrup up to $30\\%$ of its volume. Find the syrup in $45$ of them. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$r=1.4,\\ h=2.2$",
+       "$V=\\pi r^2h+\\frac43\\pi r^3=\\pi(1.96)(2.2)+\\frac43\\pi(2.744)\\approx13.55+11.50=25.05$",
+       "$45\\times0.3\\times25.05$"
+      ],
+      "result": "$338$ cm $^3$ (approx.)"
+     },
+     {
+      "question": "A pen stand is a cuboid $15\\times10\\times3.5$ cm with four conical holes of radius $0.5$ cm and depth $1.4$ cm. Find the volume of wood. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$"
+      ],
+      "steps": [
+       "$525-4\\times\\frac13\\times\\frac{22}7\\times0.25\\times1.4$"
+      ],
+      "result": "$523.53$ cm $^3$"
+     },
+     {
+      "question": "A cone of height $8$ cm and radius $5$ cm is cut out of a cylinder of the same height and radius. Find the remaining volume in terms of $\\pi$.",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$"
+      ],
+      "steps": [
+       "$\\pi r^2h-\\frac13\\pi r^2h=\\frac23\\pi(25)(8)$"
+      ],
+      "result": "$\\frac{400}3\\pi$ cm $^3$"
+     },
+     {
+      "question": "A solid iron pole is a cylinder of height $220$ cm and diameter $24$ cm, topped by a cylinder of height $60$ cm and radius $8$ cm. Find its mass if $1\\ \\text{cm}^3$ weighs $8$ g. (Use $\\pi=3.14$.)",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$"
+      ],
+      "steps": [
+       "$V=3.14(144\\times220+64\\times60)=3.14\\times35520=111532.8$",
+       "Mass $=8\\times111532.8$ g"
+      ],
+      "result": "$892.26$ kg(approx.)"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+     "Volume of a combined solid $=$ sum (or difference) of the volumes",
+     "A joined face is hidden: do not count it",
+     "Cube: TSA $=6a^2,\\ V=a^3$; Cuboid: TSA $=2(lb+bh+hl),\\ V=lbh$",
+     "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+     "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$",
+     "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+    ],
+    "examples": [
+     {
+      "question": "A wooden article is a cylinder with a hemisphere scooped out of each end. $h=10$ cm, $r=3.5$ cm. Find its total surface area. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$2\\pi rh+2(2\\pi r^2)=2\\pi r(h+2r)=2\\times\\frac{22}7\\times3.5\\times17$"
+      ],
+      "result": "$374$ cm $^2$"
+     },
+     {
+      "question": "A tent is a cylinder of height $2.1$ m and diameter $4$ m topped by a cone of slant height $2.8$ m. Find the canvas needed and its cost at ₹$500$ per square metre. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$"
+      ],
+      "steps": [
+       "$2\\pi rh+\\pi rl=\\pi r(2h+l)=\\frac{22}7\\times2(4.2+2.8)=44$"
+      ],
+      "result": "$44\\ \\text{m}^2$; ₹$22000$"
+     },
+     {
+      "question": "From a solid cylinder of height $2.4$ cm and diameter $1.4$ cm, a cone of the same height and diameter is removed. Find the total surface area of the rest, to the nearest $\\text{cm}^2$. (Use $\\pi=\\frac{22}7$.)",
+      "use": [
+       "Surface area of a combined solid $=$ sum of the exposed surfaces only",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Cone: $l=\\sqrt{r^2+h^2}$, CSA $=\\pi rl,\\ V=\\frac13\\pi r^2h$"
+      ],
+      "steps": [
+       "$r=0.7,\\ l=\\sqrt{0.49+5.76}=2.5$",
+       "$2\\pi rh+\\pi r^2+\\pi rl=\\frac{22}7\\times0.7(4.8+0.7+2.5)=17.6$"
+      ],
+      "result": "$18$ cm $^2$"
+     },
+     {
+      "question": "A solid is a hemisphere of radius $r$ on a cylinder of radius $r$ and height $h$. Its volume equals that of a sphere of radius $r$. Find $h$ in terms of $r$.",
+      "use": [
+       "Volume of a combined solid $=$ sum (or difference) of the volumes",
+       "Cylinder: CSA $=2\\pi rh$, TSA $=2\\pi r(r+h),\\ V=\\pi r^2h$",
+       "Sphere: SA $=4\\pi r^2,\\ V=\\frac43\\pi r^3$; Hemisphere: CSA $=2\\pi r^2$, TSA $=3\\pi r^2,\\ V=\\frac23\\pi r^3$"
+      ],
+      "steps": [
+       "$\\pi r^2h+\\frac23\\pi r^3=\\frac43\\pi r^3$",
+       "$\\pi r^2h=\\frac23\\pi r^3$"
+      ],
+      "result": "$h=\\frac23r$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "statistics": {
+  "slug": "statistics",
+  "number": 13,
+  "title": "Statistics",
+  "subtitle": "Mean, mode and median of grouped data",
+  "sheet": [
+   {
+    "title": "Mean",
+    "items": [
+     "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$",
+     "Assumed mean: $d_i=x_i-a,\\ \\bar x=a+\\frac{\\sum f_id_i}{\\sum f_i}$",
+     "Step deviation: $u_i=\\frac{x_i-a}h,\\ \\bar x=a+h\\,\\frac{\\sum f_iu_i}{\\sum f_i}$",
+     "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+    ]
+   },
+   {
+    "title": "Mode",
+    "items": [
+     "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$",
+     "$l:$ lower limit of the modal class; $f_1:$ its frequency; $f_0, f_2:$ frequencies of the classes before and after"
+    ]
+   },
+   {
+    "title": "Median",
+    "items": [
+     "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+     "$cf:$ cumulative frequency of the class before the median class",
+     "$3$ Median $=$ Mode $+2$ Mean(empirical)"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Mean of grouped data",
+    "level": "board",
+    "formulas": [
+     "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$",
+     "Assumed mean: $d_i=x_i-a,\\ \\bar x=a+\\frac{\\sum f_id_i}{\\sum f_i}$",
+     "Step deviation: $u_i=\\frac{x_i-a}h,\\ \\bar x=a+h\\,\\frac{\\sum f_iu_i}{\\sum f_i}$",
+     "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+    ],
+    "examples": [
+     {
+      "question": "Find the mean: $x_i$: $2,4,6,8,10$; $f_i$: $3,5,7,4,1$.",
+      "use": [
+       "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$"
+      ],
+      "steps": [
+       "$\\sum f_i=20,\\ \\sum f_ix_i=6+20+42+32+10=110$"
+      ],
+      "result": "$5.5$"
+     },
+     {
+      "question": "Find the mean. Classes $0$–$10$, $10$–$20$, $20$–$30$, $30$–$40$, $40$–$50$; frequencies $5,10,10,7,8$.",
+      "use": [
+       "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$",
+       "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+      ],
+      "steps": [
+       "$x_i=5,15,25,35,45$",
+       "$\\sum f_ix_i=25+150+250+245+360=1030,\\ \\sum f_i=40$"
+      ],
+      "result": "$25.75$"
+     },
+     {
+      "question": "Find the mean by the assumed-mean method. Classes $10$–$20$, …, $50$–$60$; frequencies $2,3,7,6,2$. Take $a=35$.",
+      "use": [
+       "Assumed mean: $d_i=x_i-a,\\ \\bar x=a+\\frac{\\sum f_id_i}{\\sum f_i}$",
+       "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+      ],
+      "steps": [
+       "$x_i=15,25,35,45,55;\\ d_i=-20,-10,0,10,20$",
+       "$\\sum f_id_i=-40-30+0+60+40=30,\\ \\sum f_i=20$"
+      ],
+      "result": "$36.5$"
+     },
+     {
+      "question": "Find the mean by step deviation. Classes $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$, $80$–$100$; frequencies $17,5,7,8,13$.",
+      "use": [
+       "Step deviation: $u_i=\\frac{x_i-a}h,\\ \\bar x=a+h\\,\\frac{\\sum f_iu_i}{\\sum f_i}$",
+       "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+      ],
+      "steps": [
+       "$a=50,\\ h=20:\\ u_i=-2,-1,0,1,2$",
+       "$\\sum f_iu_i=-34-5+0+8+26=-5,\\ \\sum f_i=50$",
+       "$\\bar x=50+20\\times\\frac{-5}{50}$"
+      ],
+      "result": "$48$"
+     },
+     {
+      "question": "Find the mean daily wage by step deviation. Wages (₹) $100$–$120$, $120$–$140$, $140$–$160$, $160$–$180$, $180$–$200$; workers $12,14,8,6,10$.",
+      "use": [
+       "Step deviation: $u_i=\\frac{x_i-a}h,\\ \\bar x=a+h\\,\\frac{\\sum f_iu_i}{\\sum f_i}$",
+       "$x_i=$ class mark $=\\frac{\\text{lower limit}+\\text{upper limit}}2$"
+      ],
+      "steps": [
+       "$a=150,\\ h=20:\\ u_i=-2,-1,0,1,2$",
+       "$\\sum f_iu_i=-24-14+0+6+20=-12,\\ \\sum f_i=50$",
+       "$\\bar x=150+20\\times\\frac{-12}{50}$"
+      ],
+      "result": "₹$145.20$"
+     },
+     {
+      "question": "The mean of the data is $18$. Find $f$. $x_i$: $11,15,19,23$; $f_i$: $4,6,f,4$.",
+      "use": [
+       "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$"
+      ],
+      "steps": [
+       "$\\frac{44+90+19f+92}{14+f}=18$",
+       "$226+19f=252+18f$"
+      ],
+      "result": "$f=26$"
+     }
+    ]
+   },
+   {
+    "title": "Mode of grouped data",
+    "level": "board",
+    "formulas": [
+     "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$",
+     "$l:$ lower limit of the modal class; $f_1:$ its frequency; $f_0, f_2:$ frequencies of the classes before and after"
+    ],
+    "examples": [
+     {
+      "question": "Find the mode. Classes $1$–$3$, $3$–$5$, $5$–$7$, $7$–$9$, $9$–$11$; frequencies $7,8,2,2,1$.",
+      "use": [
+       "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$",
+       "$l:$ lower limit of the modal class; $f_1:$ its frequency; $f_0, f_2:$ frequencies of the classes before and after"
+      ],
+      "steps": [
+       "Modal class $3$ – $5:\\ l=3,\\ f_1=8,\\ f_0=7,\\ f_2=2,\\ h=2$",
+       "$3+\\frac{8-7}{16-7-2}\\times2=3+\\frac27$"
+      ],
+      "result": "$3.286$ (approx.)"
+     },
+     {
+      "question": "Find the mode. Classes $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$, $80$–$100$; frequencies $10,35,52,61,38$.",
+      "use": [
+       "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$",
+       "$l:$ lower limit of the modal class; $f_1:$ its frequency; $f_0, f_2:$ frequencies of the classes before and after"
+      ],
+      "steps": [
+       "Modal class $60$ – $80:\\ l=60,\\ f_1=61,\\ f_0=52,\\ f_2=38,\\ h=20$",
+       "$60+\\frac{9}{122-90}\\times20=60+5.625$"
+      ],
+      "result": "$65.625$"
+     },
+     {
+      "question": "Find the mode. Classes $5$–$15$, $15$–$25$, $25$–$35$, $35$–$45$, $45$–$55$, $55$–$65$; frequencies $6,11,21,23,14,5$.",
+      "use": [
+       "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$",
+       "$l:$ lower limit of the modal class; $f_1:$ its frequency; $f_0, f_2:$ frequencies of the classes before and after"
+      ],
+      "steps": [
+       "$l=35,\\ f_1=23,\\ f_0=21,\\ f_2=14,\\ h=10$",
+       "$35+\\frac{2}{46-35}\\times10$"
+      ],
+      "result": "$36.82$ (approx.)"
+     }
+    ]
+   },
+   {
+    "title": "Median of grouped data",
+    "level": "board",
+    "formulas": [
+     "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+     "$cf:$ cumulative frequency of the class before the median class",
+     "$3$ Median $=$ Mode $+2$ Mean(empirical)"
+    ],
+    "examples": [
+     {
+      "question": "Find the median. Classes $0$–$10$, $10$–$20$, $20$–$30$, $30$–$40$, $40$–$50$, $50$–$60$; frequencies $5,8,20,15,7,5$.",
+      "use": [
+       "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+       "$cf:$ cumulative frequency of the class before the median class"
+      ],
+      "steps": [
+       "$n=60,\\ \\frac n2=30;\\ cf:\\ 5,13,33,\\dots$",
+       "Median class $20$ – $30:\\ l=20,\\ cf=13,\\ f=20$",
+       "$20+\\frac{30-13}{20}\\times10$"
+      ],
+      "result": "$28.5$"
+     },
+     {
+      "question": "The median of the data is $28.5$ and $n=60$. Classes $0$–$10$, …, $50$–$60$; frequencies $5,x,20,15,y,5$. Find $x$ and $y$.",
+      "use": [
+       "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+       "$cf:$ cumulative frequency of the class before the median class"
+      ],
+      "steps": [
+       "$45+x+y=60\\Rightarrow x+y=15$",
+       "$28.5=20+\\frac{30-(5+x)}{20}\\times10\\Rightarrow8.5=\\frac{25-x}2$"
+      ],
+      "result": "$x=8,\\ y=7$"
+     },
+     {
+      "question": "Find the median. Classes $65$–$85$, $85$–$105$, $105$–$125$, $125$–$145$, $145$–$165$, $165$–$185$, $185$–$205$; frequencies $4,5,13,20,14,8,4$.",
+      "use": [
+       "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+       "$cf:$ cumulative frequency of the class before the median class"
+      ],
+      "steps": [
+       "$n=68,\\ \\frac n2=34;\\ cf:\\ 4,9,22,42,\\dots$",
+       "$l=125,\\ cf=22,\\ f=20,\\ h=20$",
+       "$125+\\frac{12}{20}\\times20$"
+      ],
+      "result": "$137$"
+     },
+     {
+      "question": "The mode and mean of a distribution are $24.5$ and $29.75$. Estimate the median.",
+      "use": [
+       "$3$ Median $=$ Mode $+2$ Mean(empirical)"
+      ],
+      "steps": [
+       "$3M=24.5+59.5=84$"
+      ],
+      "result": "$28$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$",
+     "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$",
+     "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$"
+    ],
+    "examples": [
+     {
+      "question": "Each value $k=1,2,3,4,5$ occurs $k$ times. Find the mean.",
+      "use": [
+       "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$"
+      ],
+      "steps": [
+       "$\\sum f_ix_i=1+4+9+16+25=55,\\ \\sum f_i=15$"
+      ],
+      "result": "$\\frac{11}3$"
+     },
+     {
+      "question": "In a class of $50$, the median height is $150$ cm. Classes $135$–$140$, $140$–$145$, $145$–$150$, $150$–$155$, $155$–$160$; frequencies $5,8,12,15,10$. Check the median.",
+      "use": [
+       "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$"
+      ],
+      "steps": [
+       "$\\frac n2=25;\\ cf:\\ 5,13,25,\\dots$",
+       "Median class $150$ – $155:\\ 150+\\frac{25-25}{15}\\times5$"
+      ],
+      "result": "$150$ cm (verified)"
+     },
+     {
+      "question": "Find the mean and the mode. Classes $0$–$10$, $10$–$20$, $20$–$30$, $30$–$40$, $40$–$50$; frequencies $3,8,9,10,3$.",
+      "use": [
+       "Direct: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$",
+       "$\\text{Mode}=l+\\left(\\frac{f_1-f_0}{2f_1-f_0-f_2}\\right)\\times h$"
+      ],
+      "steps": [
+       "$\\sum f_ix_i=15+120+225+350+135=845,\\ \\sum f_i=33\\Rightarrow\\bar x\\approx25.61$",
+       "Modal class $30$ – $40:\\ 30+\\frac{10-9}{20-9-3}\\times10=31.25$"
+      ],
+      "result": "$25.61,\\ 31.25$"
+     },
+     {
+      "question": "Find the median of the same distribution and check the empirical relation roughly.",
+      "use": [
+       "$\\text{Median}=l+\\left(\\frac{\\frac n2-cf}{f}\\right)\\times h$"
+      ],
+      "steps": [
+       "$n=33,\\ \\frac n2=16.5;\\ cf:\\ 3,11,20,\\dots$",
+       "$20+\\frac{16.5-11}{9}\\times10\\approx26.11$",
+       "$3(26.11)\\approx78.3;\\quad 31.25+2(25.61)\\approx82.5$"
+      ],
+      "result": "$26.11$; the relation holds only roughly"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ },
+ "probability": {
+  "slug": "probability",
+  "number": 14,
+  "title": "Probability",
+  "subtitle": "Theoretical probability of an event and its complement",
+  "sheet": [
+   {
+    "title": "Probability",
+    "items": [
+     "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+     "$0\\le P(E)\\le1;\\quad P$ (sure event) $=1,\\quad P$ (impossible event) $=0$",
+     "$P(E)+P$ (not $E)=1$",
+     "The outcomes must be equally likely"
+    ]
+   },
+   {
+    "title": "Standard experiments",
+    "items": [
+     "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes",
+     "Pack of $52:\\ 4$ suits of $13;\\ 26$ red, $26$ black; $12$ face cards",
+     "Two coins: $HH, HT, TH, TT$; three coins: $8$ outcomes"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "Theoretical probability",
+    "level": "board",
+    "formulas": [
+     "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+     "$0\\le P(E)\\le1;\\quad P$ (sure event) $=1,\\quad P$ (impossible event) $=0$",
+     "$P(E)+P$ (not $E)=1$",
+     "The outcomes must be equally likely"
+    ],
+    "examples": [
+     {
+      "question": "A die is thrown once. Find the probability of a prime number.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "Primes: $2,3,5$"
+      ],
+      "result": "$\\frac12$"
+     },
+     {
+      "question": "A die is thrown once. Find the probability of a number greater than $6$ and of a number less than $7$.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+       "$0\\le P(E)\\le1;\\quad P$ (sure event) $=1,\\quad P$ (impossible event) $=0$"
+      ],
+      "steps": [
+       "No outcome is greater than $6$; all six are less than $7$"
+      ],
+      "result": "$0,\\ 1$"
+     },
+     {
+      "question": "$P(E)=0.05$. Find $P(\\text{not }E)$.",
+      "use": [
+       "$P(E)+P$ (not $E)=1$"
+      ],
+      "steps": [
+       "$1-0.05$"
+      ],
+      "result": "$0.95$"
+     },
+     {
+      "question": "Which of these cannot be a probability: $\\frac23$, $-1.5$, $15\\%$, $0.7$?",
+      "use": [
+       "$0\\le P(E)\\le1;\\quad P$ (sure event) $=1,\\quad P$ (impossible event) $=0$"
+      ],
+      "steps": [
+       "$-1.5<0$"
+      ],
+      "result": "$-1.5$"
+     },
+     {
+      "question": "A bag has $3$ red and $5$ black balls. Find the probability that a ball drawn is not red.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+       "$P(E)+P$ (not $E)=1$"
+      ],
+      "steps": [
+       "$P$ (red) $=\\frac38$"
+      ],
+      "result": "$\\frac58$"
+     },
+     {
+      "question": "Why is \"a cricket match ends in a win or a loss, so each has probability $\\frac12$\" wrong?",
+      "use": [
+       "The outcomes must be equally likely"
+      ],
+      "steps": [
+       "The two outcomes are not equally likely (and a draw is possible)"
+      ],
+      "result": "The outcomes are not equally likely"
+     }
+    ]
+   },
+   {
+    "title": "Coins, dice and cards",
+    "level": "board",
+    "formulas": [
+     "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes",
+     "Pack of $52:\\ 4$ suits of $13;\\ 26$ red, $26$ black; $12$ face cards",
+     "Two coins: $HH, HT, TH, TT$; three coins: $8$ outcomes",
+     "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+    ],
+    "examples": [
+     {
+      "question": "Two coins are tossed. Find the probability of at least one head.",
+      "use": [
+       "Two coins: $HH, HT, TH, TT$; three coins: $8$ outcomes",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$HH,HT,TH$"
+      ],
+      "result": "$\\frac34$"
+     },
+     {
+      "question": "Two dice are thrown. Find the probability that the sum is $8$.",
+      "use": [
+       "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$(2,6),(3,5),(4,4),(5,3),(6,2)$"
+      ],
+      "result": "$\\frac5{36}$"
+     },
+     {
+      "question": "Two dice are thrown. Find the probability of a doublet.",
+      "use": [
+       "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$(1,1),\\dots,(6,6)$"
+      ],
+      "result": "$\\frac16$"
+     },
+     {
+      "question": "One card is drawn from a pack of $52$. Find the probability of a red face card.",
+      "use": [
+       "Pack of $52:\\ 4$ suits of $13;\\ 26$ red, $26$ black; $12$ face cards",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$6$ red face cards"
+      ],
+      "result": "$\\frac3{26}$"
+     },
+     {
+      "question": "One card is drawn from a pack of $52$. Find the probability that it is neither a heart nor a king.",
+      "use": [
+       "Pack of $52:\\ 4$ suits of $13;\\ 26$ red, $26$ black; $12$ face cards",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "Hearts or kings $=13+3=16$",
+       "$52-16=36$"
+      ],
+      "result": "$\\frac9{13}$"
+     },
+     {
+      "question": "Three coins are tossed. Find the probability of exactly two heads.",
+      "use": [
+       "Two coins: $HH, HT, TH, TT$; three coins: $8$ outcomes",
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$HHT,HTH,THH$"
+      ],
+      "result": "$\\frac38$"
+     }
+    ]
+   },
+   {
+    "title": "Higher-order problems",
+    "level": "challenge",
+    "formulas": [
+     "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+     "$0\\le P(E)\\le1;\\quad P$ (sure event) $=1,\\quad P$ (impossible event) $=0$",
+     "$P(E)+P$ (not $E)=1$",
+     "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes"
+    ],
+    "examples": [
+     {
+      "question": "A box has $90$ discs numbered $1$ to $90$. Find the probability that a disc drawn has a two-digit number and a perfect square.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$16,25,36,49,64,81:\\ 6$"
+      ],
+      "result": "$\\frac1{15}$"
+     },
+     {
+      "question": "A bag has $5$ red balls and some blue balls. The probability of blue is double that of red. Find the number of blue balls.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$\\frac x{5+x}=2\\cdot\\frac5{5+x}$"
+      ],
+      "result": "$10$"
+     },
+     {
+      "question": "A die is thrown twice. Find the probability that $5$ will come up at least once.",
+      "use": [
+       "$P(E)+P$ (not $E)=1$",
+       "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes"
+      ],
+      "steps": [
+       "$P$ (no $5)=\\frac{25}{36}$"
+      ],
+      "result": "$\\frac{11}{36}$"
+     },
+     {
+      "question": "One of the numbers $-3,-2,-1,0,1,2,3$ is chosen at random as $x$. Find $P(x^2\\le4)$.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$"
+      ],
+      "steps": [
+       "$-2,-1,0,1,2$"
+      ],
+      "result": "$\\frac57$"
+     },
+     {
+      "question": "A game: a coin is tossed three times; Hanif wins if all results are the same. Find the probability that he loses.",
+      "use": [
+       "$P(E)+P$ (not $E)=1$",
+       "Coin: $H, T$; die: $1,\\dots,6$; two dice: $36$ outcomes"
+      ],
+      "steps": [
+       "$P$ (win) $=\\frac28$"
+      ],
+      "result": "$\\frac34$"
+     },
+     {
+      "question": "A jar has $24$ marbles, some green and the rest blue. $P(\\text{green})=\\frac23$. Find the number of blue marbles.",
+      "use": [
+       "$P(E)=\\frac{\\text{number of outcomes favourable to }E}{\\text{number of all possible outcomes}}$",
+       "$P(E)+P$ (not $E)=1$"
+      ],
+      "steps": [
+       "$P$ (blue) $=\\frac13$"
+      ],
+      "result": "$8$"
+     }
+    ]
+   }
+  ],
+  "grade": 10
+ }
+}

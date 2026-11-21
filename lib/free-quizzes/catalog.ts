@@ -7,7 +7,7 @@ export const icse7FreeChapters: ReadonlySet<number> = new Set([1, 9, 14, 17, 23]
 
 export const quizPath = (chapter: number, grade = 10, board: QuizBoard = 'CBSE') => board === 'ICSE' ? `/icse/grade-${grade}/ch-${chapter}/mcq` : `/cbse/grade-${grade}/ch-${chapter}/free-mcq`;
 export const quizId = (chapter: number, grade = 10, board: QuizBoard = 'CBSE') => board === 'ICSE' ? `icse-${grade}-ch-${chapter}-30` : `cbse-${grade}-ch-${chapter}-50`;
-export const quizCount = (board: QuizBoard = 'CBSE') => board === 'ICSE' ? 30 : 50;
+export const quizCount = (_board: QuizBoard = 'CBSE') => 30;
 
 /** Board, grade and chapter of a quiz id, or null. */
 export function quizInfo(id: string): { board: QuizBoard; grade: number; chapter: number } | null {
@@ -41,9 +41,9 @@ export function quizPriceById(id: string) { const info = quizInfo(id); return in
 
 /** Navigation metadata without importing the complete question banks. */
 export const quizListings = [
-  ...freeQuizChapters.map((title,i) => ({board:'CBSE' as QuizBoard,grade:10,chapter:i+1,title,id:quizId(i+1),path:quizPath(i+1),count:50})),
-  {board:'CBSE' as QuizBoard,grade:11,chapter:2,title:'Relations and Functions',id:quizId(2,11),path:quizPath(2,11),count:50},
-  {board:'CBSE' as QuizBoard,grade:12,chapter:7,title:'Integrals',id:quizId(7,12),path:quizPath(7,12),count:50},
-  ...g12PracticeChapters.filter((c) => g12PracticeReady.has(c.number)).map((c) => ({board:'CBSE' as QuizBoard,grade:12,chapter:c.number,title:c.title as string,id:quizId(c.number,12),path:quizPath(c.number,12),count:50})),
+  ...freeQuizChapters.map((title,i) => ({board:'CBSE' as QuizBoard,grade:10,chapter:i+1,title,id:quizId(i+1),path:quizPath(i+1),count:30})),
+  {board:'CBSE' as QuizBoard,grade:11,chapter:2,title:'Relations and Functions',id:quizId(2,11),path:quizPath(2,11),count:30},
+  {board:'CBSE' as QuizBoard,grade:12,chapter:7,title:'Integrals',id:quizId(7,12),path:quizPath(7,12),count:30},
+  ...g12PracticeChapters.filter((c) => g12PracticeReady.has(c.number)).map((c) => ({board:'CBSE' as QuizBoard,grade:12,chapter:c.number,title:c.title as string,id:quizId(c.number,12),path:quizPath(c.number,12),count:30})),
   ...icse7QuizChapters.map((title,i) => ({board:'ICSE' as QuizBoard,grade:7,chapter:i+1,title,id:quizId(i+1,7,'ICSE'),path:quizPath(i+1,7,'ICSE'),count:30})),
 ];

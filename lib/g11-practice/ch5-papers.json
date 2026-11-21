@@ -1,0 +1,1150 @@
+{
+ "g11-ch5-main-01": [
+  {
+   "q": "The solution set of $3x-7>5x-1$ is",
+   "a": "(A) $(-\\infty,-3)$",
+   "s": "$-6>2x$.",
+   "opts": [
+    "$(-\\infty,-3)$",
+    "$(-\\infty,3)$",
+    "$(3,\\infty)$",
+    "$(-3,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{x-1}{x+3}>0$ is",
+   "a": "(B) $(-\\infty,-3)\\cup(1,\\infty)$",
+   "s": "Sign chart.",
+   "opts": [
+    "$(-3,1)$",
+    "$(-\\infty,-3)\\cup(1,\\infty)$",
+    "$(-\\infty,-3]\\cup[1,\\infty)$",
+    "$(1,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|x-2|\\le5$ is",
+   "a": "(A) $[-3,7]$",
+   "s": "$-5\\le x-2\\le5$.",
+   "opts": [
+    "$[-3,7]$",
+    "$(-3,7)$",
+    "$[2,7]$",
+    "$[-7,3]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|2x+1|>3$ is",
+   "a": "(B) $(-\\infty,-2)\\cup(1,\\infty)$",
+   "s": "$2x+1<-3$ or $2x+1>3$.",
+   "opts": [
+    "$(-\\infty,-1)\\cup(2,\\infty)$",
+    "$(-\\infty,-2)\\cup(1,\\infty)$",
+    "$(-\\infty,-2]\\cup[1,\\infty)$",
+    "$(-2,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integers satisfying $-3<2x-1\\le7$ is",
+   "a": "(C) $5$",
+   "s": "$-1<x\\le4$: $0,1,2,3,4$.",
+   "opts": [
+    "$4$",
+    "$3$",
+    "$5$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x^2-5x+6\\le0$ is",
+   "a": "(C) $[2,3]$",
+   "s": "$(x-2)(x-3)\\le0$.",
+   "opts": [
+    "$(-\\infty,2]\\cup[3,\\infty)$",
+    "$[-3,-2]$",
+    "$[2,3]$",
+    "$(2,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{2x-3}{x-2}\\le1$ is",
+   "a": "(A) $[1,2)$",
+   "s": "$\\frac{x-1}{x-2}\\le0$.",
+   "opts": [
+    "$[1,2)$",
+    "$(-\\infty,1]$",
+    "$(1,2)$",
+    "$[1,2]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The region $x\\ge0$, $y\\ge0$, $x+y\\le4$ has area",
+   "a": "(B) $8$",
+   "s": "Triangle with legs $4$.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$2$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point that lies in the region $2x+3y\\le6$ is",
+   "a": "(C) $(1,1)$",
+   "s": "$5\\le6$.",
+   "opts": [
+    "$(2,1)$",
+    "$(0,3)$",
+    "$(1,1)$",
+    "$(3,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution of $-2\\le\\dfrac{3-x}{2}<4$ is",
+   "a": "(D) $(-5,7]$",
+   "s": "$-4\\le3-x<8$.",
+   "opts": [
+    "$[-5,7)$",
+    "$(-7,5]$",
+    "$[-7,5)$",
+    "$(-5,7]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{1}{x-1}<1$ is",
+   "a": "(B) $(-\\infty,1)\\cup(2,\\infty)$",
+   "s": "$\\frac{2-x}{x-1}<0$.",
+   "opts": [
+    "$(-\\infty,2)$",
+    "$(-\\infty,1)\\cup(2,\\infty)$",
+    "$(2,\\infty)$",
+    "$(1,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x^2>9$ is",
+   "a": "(B) $(-\\infty,-3)\\cup(3,\\infty)$",
+   "s": "$|x|>3$.",
+   "opts": [
+    "$[-3,3]$",
+    "$(-\\infty,-3)\\cup(3,\\infty)$",
+    "$(3,\\infty)$",
+    "$(-3,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|x|+|x-1|=1$ is",
+   "a": "(C) $[0,1]$",
+   "s": "Sum of distances to $0$ and $1$ equals $1$ only between them.",
+   "opts": [
+    "$\\{0,1\\}$",
+    "$(0,1)$",
+    "$[0,1]$",
+    "$\\mathbb R$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{x^2-1}{x^2+1}<0$ is",
+   "a": "(B) $(-1,1)$",
+   "s": "Denominator positive.",
+   "opts": [
+    "$[-1,1]$",
+    "$(-1,1)$",
+    "$(-\\infty,-1)$",
+    "$\\mathbb R$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A student has $65$ and $72$ in two tests. The least mark in a third test for an average of at least $70$ is",
+   "a": "(C) $73$",
+   "s": "$137+x\\ge210$.",
+   "opts": [
+    "$75$",
+    "$68$",
+    "$73$",
+    "$70$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $3^{x}>27$ is",
+   "a": "(A) $(3,\\infty)$",
+   "s": "$3^x$ increases.",
+   "opts": [
+    "$(3,\\infty)$",
+    "$[3,\\infty)$",
+    "$(9,\\infty)$",
+    "$(-\\infty,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $(x-1)(x-2)(x-3)>0$ is",
+   "a": "(D) $(1,2)\\cup(3,\\infty)$",
+   "s": "Sign chart.",
+   "opts": [
+    "$(-\\infty,1)\\cup(2,3)$",
+    "$(1,3)$",
+    "$(3,\\infty)$",
+    "$(1,2)\\cup(3,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The system $x+y\\ge2$, $x+y\\le1$ has",
+   "a": "(D) no solution",
+   "s": "The half-planes do not meet.",
+   "opts": [
+    "only $(0,0)$",
+    "one solution",
+    "infinitely many solutions",
+    "no solution"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{|x-1|}{x-1}<0$ is",
+   "a": "(B) $(-\\infty,1)$",
+   "s": "Equals $-1$ for $x<1$.",
+   "opts": [
+    "$(1,\\infty)$",
+    "$(-\\infty,1)$",
+    "$\\mathbb R$",
+    "$\\varnothing$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x^2+x+1>0$ is",
+   "a": "(A) $\\mathbb R$",
+   "s": "$D<0$, leading coefficient positive.",
+   "opts": [
+    "$\\mathbb R$",
+    "$(-1,1)$",
+    "$\\varnothing$",
+    "$(0,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers $x$ with $x^2-7x+10<0$.",
+   "a": "$2$",
+   "s": "$2<x<5$: $3,4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest integer $x$ with $\\dfrac{5x}{4}+\\dfrac{3x}{8}<\\dfrac{39}{8}$.",
+   "a": "$2$",
+   "s": "$13x<39\\Rightarrow x<3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer points $(x,y)$ with $x\\ge0$, $y\\ge0$, $x+y\\le3$.",
+   "a": "$10$",
+   "s": "$4+3+2+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of all integers $x$ with $|x-3|<4$.",
+   "a": "$21$",
+   "s": "$0,1,\\dots,6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the least integer $x$ with $\\dfrac{x-2}{3}-\\dfrac{x+1}{4}>1$.",
+   "a": "$24$",
+   "s": "$4x-8-3x-3>12\\Rightarrow x>23$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch5-main-02": [
+  {
+   "q": "The solution set of $5x-3<7$, $x\\in\\mathbb N$, is",
+   "a": "(B) $\\{1\\}$",
+   "s": "$x<2$.",
+   "opts": [
+    "$\\{1,2\\}$",
+    "$\\{1\\}$",
+    "$\\varnothing$",
+    "$\\{0,1\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{x+3}{x-2}\\le0$ is",
+   "a": "(B) $[-3,2)$",
+   "s": "Sign chart, $x\\ne2$.",
+   "opts": [
+    "$(-\\infty,-3]$",
+    "$[-3,2)$",
+    "$[-3,2]$",
+    "$(-3,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|3-2x|<5$ is",
+   "a": "(A) $(-1,4)$",
+   "s": "$-5<3-2x<5$.",
+   "opts": [
+    "$(-1,4)$",
+    "$(-\\infty,-1)\\cup(4,\\infty)$",
+    "$(-4,1)$",
+    "$[-1,4]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x^2-4x-5\\ge0$ is",
+   "a": "(D) $(-\\infty,-1]\\cup[5,\\infty)$",
+   "s": "$(x-5)(x+1)\\ge0$.",
+   "opts": [
+    "$[-1,5]$",
+    "$[5,\\infty)$",
+    "$(-1,5)$",
+    "$(-\\infty,-1]\\cup[5,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{x}{x-1}>2$ is",
+   "a": "(B) $(1,2)$",
+   "s": "$\\frac{2-x}{x-1}>0$.",
+   "opts": [
+    "$[1,2]$",
+    "$(1,2)$",
+    "$(-\\infty,1)$",
+    "$(2,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $2\\le|x-1|\\le4$ is",
+   "a": "(A) $[-3,-1]\\cup[3,5]$",
+   "s": "$x-1\\in[-4,-2]\\cup[2,4]$.",
+   "opts": [
+    "$[-3,-1]\\cup[3,5]$",
+    "$[-3,5]$",
+    "$(-3,-1)\\cup(3,5)$",
+    "$[-1,3]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The corner points of $x\\ge0$, $y\\ge0$, $2x+y\\le6$, $x+2y\\le6$ include",
+   "a": "(C) $(2,2)$",
+   "s": "The two lines meet at $(2,2)$.",
+   "opts": [
+    "$(0,6)$",
+    "$(3,3)$",
+    "$(2,2)$",
+    "$(6,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x+\\dfrac1x\\ge2$ is",
+   "a": "(C) $(0,\\infty)$",
+   "s": "$\\frac{(x-1)^2}{x}\\ge0\\Rightarrow x>0$.",
+   "opts": [
+    "$\\mathbb R-\\{0\\}$",
+    "$[1,\\infty)$",
+    "$(0,\\infty)$",
+    "$(-\\infty,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integer solutions of $-5\\le\\dfrac{2-3x}{4}\\le9$ is",
+   "a": "(D) $19$",
+   "s": "$-\\frac{34}3\\le x\\le\\frac{22}3$: $-11,\\dots,7$.",
+   "opts": [
+    "$17$",
+    "$18$",
+    "$20$",
+    "$19$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{(x-2)^2}{x+1}\\ge0$ is",
+   "a": "(D) $(-1,\\infty)$",
+   "s": "Numerator $\\ge0$; $x>-1$.",
+   "opts": [
+    "$(-1,2)$",
+    "$[-1,\\infty)$",
+    "$(2,\\infty)$",
+    "$(-1,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $4^x-3\\cdot2^x+2\\le0$ is",
+   "a": "(B) $[0,1]$",
+   "s": "$t=2^x$: $(t-1)(t-2)\\le0$.",
+   "opts": [
+    "$[1,2]$",
+    "$[0,1]$",
+    "$[0,2]$",
+    "$(0,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|x-1|+|x-3|\\ge4$ is",
+   "a": "(C) $(-\\infty,0]\\cup[4,\\infty)$",
+   "s": "Sum of distances to $1$ and $3$.",
+   "opts": [
+    "$(-\\infty,1]\\cup[3,\\infty)$",
+    "$\\mathbb R$",
+    "$(-\\infty,0]\\cup[4,\\infty)$",
+    "$[0,4]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which point satisfies $x-y\\ge1$ and $x+y\\le5$?",
+   "a": "(D) $(3,1)$",
+   "s": "$2\\ge1$, $4\\le5$.",
+   "opts": [
+    "$(4,2)$",
+    "$(1,3)$",
+    "$(0,0)$",
+    "$(3,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{1}{x}<\\dfrac12$ is",
+   "a": "(B) $(-\\infty,0)\\cup(2,\\infty)$",
+   "s": "$\\frac{2-x}{2x}<0$.",
+   "opts": [
+    "$(2,\\infty)$",
+    "$(-\\infty,0)\\cup(2,\\infty)$",
+    "$(0,2)$",
+    "$(-\\infty,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $x^2-|x|-2<0$ is",
+   "a": "(C) $(-2,2)$",
+   "s": "$(|x|-2)(|x|+1)<0$.",
+   "opts": [
+    "$[-2,2]$",
+    "$(-1,2)$",
+    "$(-2,2)$",
+    "$(0,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A solution of $5\\%$ acid is mixed with $640$ L of $8\\%$ acid. How many litres of the $5\\%$ solution keep the mixture between $6\\%$ and $7\\%$?",
+   "a": "(D) between $320$ and $1280$ L",
+   "s": "$0.06(640+x)<0.05x+51.2<0.07(640+x)$.",
+   "opts": [
+    "between $320$ and $640$ L",
+    "between $640$ and $1280$ L",
+    "between $160$ and $640$ L",
+    "between $320$ and $1280$ L"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $(x+2)(x-1)^2(x-4)\\le0$ is",
+   "a": "(A) $[-2,4]$",
+   "s": "$(x-1)^2\\ge0$; include $x=1$.",
+   "opts": [
+    "$[-2,4]$",
+    "$[-2,1)\\cup(1,4]$",
+    "$(-\\infty,-2]\\cup[4,\\infty)$",
+    "$(-2,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\sqrt{x-2}<3$ is",
+   "a": "(C) $[2,11)$",
+   "s": "$0\\le x-2<9$.",
+   "opts": [
+    "$[2,11]$",
+    "$(2,11)$",
+    "$[2,11)$",
+    "$(-\\infty,11)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set $\\{(x,y): |x|+|y|\\le1\\}$ is",
+   "a": "(B) a square of area $2$",
+   "s": "Vertices $(\\pm1,0)$, $(0,\\pm1)$.",
+   "opts": [
+    "a circle",
+    "a square of area $2$",
+    "a square of area $4$",
+    "a triangle"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{x^2+2}{x^2-1}<0$ is",
+   "a": "(B) $(-1,1)$",
+   "s": "Numerator positive.",
+   "opts": [
+    "$\\varnothing$",
+    "$(-1,1)$",
+    "$[-1,1]$",
+    "$(-\\infty,-1)\\cup(1,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers $x$ with $\\dfrac{x+1}{x-4}\\le0$.",
+   "a": "$5$",
+   "s": "$-1\\le x<4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the region $x\\ge0$, $y\\ge0$, $2x+3y\\le12$.",
+   "a": "$12$",
+   "s": "$\\frac12\\times6\\times4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers with $|x+2|\\le3$ and $x^2>1$.",
+   "a": "$4$",
+   "s": "$-5\\le x\\le1$, $|x|>1$: $-5,-4,-3,-2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest integer $x$ with $3(2-x)\\ge2(1-x)$.",
+   "a": "$4$",
+   "s": "$6-3x\\ge2-2x\\Rightarrow x\\le4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The sides of a triangle are $5$, $8$ and $x$ (integer). Find the number of possible values of $x$.",
+   "a": "$9$",
+   "s": "$3<x<13$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch5-advanced-01": [
+  {
+   "q": "The solution set of $\\dfrac{x^2-3x+2}{x^2+x-6}\\ge0$ is",
+   "a": "(A) $(-\\infty,-3)\\cup[1,2)\\cup(2,\\infty)$",
+   "s": "$\\frac{(x-1)(x-2)}{(x+3)(x-2)}$, $x\\ne2,-3$.",
+   "opts": [
+    "$(-\\infty,-3)\\cup[1,2)\\cup(2,\\infty)$",
+    "$[1,2)$",
+    "$(-\\infty,-3)\\cup[1,\\infty)$",
+    "$(-3,1]$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integers $x$ with $(x^2-4)(x^2-9)\\le0$ is",
+   "a": "(A) $4$",
+   "s": "$4\\le x^2\\le9$: $\\pm2,\\pm3$.",
+   "opts": [
+    "$4$",
+    "$5$",
+    "$2$",
+    "$6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the region $|x|\\le2$, $|y|\\le1$, $x+y\\ge0$ is",
+   "a": "(C) $4$",
+   "s": "The line through the centre halves the rectangle.",
+   "opts": [
+    "$6$",
+    "$2$",
+    "$4$",
+    "$8$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $\\dfrac{|x|-1}{|x|-2}<0$ is",
+   "a": "(A) $(-2,-1)\\cup(1,2)$",
+   "s": "$1<|x|<2$.",
+   "opts": [
+    "$(-2,-1)\\cup(1,2)$",
+    "$(1,2)$",
+    "$(-1,1)$",
+    "$(-2,2)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which are true for all real $a,b$ with $a<b$?",
+   "a": "(A), (B), (D)",
+   "s": "$a=-3$, $b=1$ breaks $a^2<b^2$.",
+   "opts": [
+    "$a-5<b-5$",
+    "$-2a>-2b$",
+    "$a^2<b^2$",
+    "$\\frac a3<\\frac b3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The region $x+y\\le6$, $x\\ge1$, $y\\ge2$ contains",
+   "a": "(A), (B), (C)",
+   "s": "$3+4=7>6$.",
+   "opts": [
+    "$(1,2)$",
+    "$(2,3)$",
+    "$(4,2)$",
+    "$(3,4)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $\\dfrac{x-2}{x+1}\\le0$, which values of $x$ are solutions?",
+   "a": "(B), (C), (D)",
+   "s": "$x\\ne-1$.",
+   "opts": [
+    "$-1$",
+    "$0$",
+    "$2$",
+    "$1.5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2-6x+8$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$(x-3)^2-1$.",
+   "opts": [
+    "$f(x)<0\\iff x\\in(2,4)$",
+    "$f(x)\\ge0\\iff x\\in(-\\infty,2]\\cup[4,\\infty)$",
+    "$f(x)\\ge-1$ for all $x$",
+    "$f(3)<0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer pairs $(x,y)$ with $|x|+|y|\\le2$.",
+   "a": "$13$",
+   "s": "$1+3+5+3+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers $x$ in $[0,10]$ with $\\dfrac{(x-1)(x-5)}{x-3}\\le0$.",
+   "a": "$4$",
+   "s": "The solution set is $(-\\infty,1]\\cup(3,5]$: $0,1,4,5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the least integer $k$ for which $x^2-2x+k>0$ for all real $x$.",
+   "a": "$2$",
+   "s": "$4-4k<0\\Rightarrow k>1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region $y\\ge|x|$, $y\\le2$.",
+   "a": "$4$",
+   "s": "Triangle with base $4$, height $2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each inequality with its solution set.\nList-I: (P) $|x|<2$; (Q) $|x|\\ge2$; (R) $x^2\\le4$; (S) $x^2>4$\nList-II: (1) $(-2,2)$; (2) $(-\\infty,-2]\\cup[2,\\infty)$; (3) $[-2,2]$; (4) $(-\\infty,-2)\\cup(2,\\infty)$; (5) $\\mathbb R$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Strict versus non-strict.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each inequality with its solution set.\nList-I: (P) $\\frac1x>0$; (Q) $\\frac1x<1$; (R) $\\frac{x-1}{x}\\ge0$; (S) $\\frac{x}{x-1}<0$\nList-II: (1) $(0,\\infty)$; (2) $(-\\infty,0)\\cup(1,\\infty)$; (3) $(-\\infty,0)\\cup[1,\\infty)$; (4) $(0,1)$; (5) $[0,1)$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Sign charts.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each region with its area.\nList-I: (P) $x,y\\ge0$, $x+y\\le2$; (Q) $|x|+|y|\\le2$; (R) $0\\le x\\le2$, $0\\le y\\le3$; (S) $x,y\\ge0$, $2x+y\\le4$\nList-II: (1) $2$; (2) $8$; (3) $6$; (4) $4$; (5) $3$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac12\\cdot2\\cdot2$; square of diagonal $4$; $6$; $\\frac12\\cdot2\\cdot4$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each quadratic inequality with its solution set.\nList-I: (P) $x^2-1<0$; (Q) $x^2-1\\ge0$; (R) $x^2+1>0$; (S) $x^2+1<0$\nList-II: (1) $(-1,1)$; (2) $(-\\infty,-1]\\cup[1,\\infty)$; (3) $\\mathbb R$; (4) $\\varnothing$; (5) $[-1,1]$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Signs of quadratics.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch5-advanced-02": [
+  {
+   "q": "The solution set of $\\dfrac{2x}{2x^2+5x+2}>\\dfrac1{x+1}$ is",
+   "a": "(D) $(-2,-1)\\cup\\left(-\\frac23,-\\frac12\\right)$",
+   "s": "$\\frac{-3x-2}{(2x+1)(x+2)(x+1)}>0$.",
+   "opts": [
+    "$(-2,-1)$",
+    "$\\left(-\\frac23,-\\frac12\\right)$",
+    "$(-\\infty,-2)$",
+    "$(-2,-1)\\cup\\left(-\\frac23,-\\frac12\\right)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set of $a$ for which $x^2+ax+a>0$ for all real $x$ is",
+   "a": "(B) $(0,4)$",
+   "s": "$a^2-4a<0$.",
+   "opts": [
+    "$(-\\infty,0)\\cup(4,\\infty)$",
+    "$(0,4)$",
+    "$[0,4]$",
+    "$(0,2)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of integer points inside (not on) the triangle with vertices $(0,0)$, $(6,0)$, $(0,6)$ is",
+   "a": "(D) $10$",
+   "s": "$x,y\\ge1$, $x+y\\le5$: $4+3+2+1$.",
+   "opts": [
+    "$6$",
+    "$21$",
+    "$15$",
+    "$10$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The solution set of $|x^2-4|<5$ is",
+   "a": "(A) $(-3,3)$",
+   "s": "$-1<x^2<9$.",
+   "opts": [
+    "$(-3,3)$",
+    "$[-3,3]$",
+    "$(-3,-1)\\cup(1,3)$",
+    "$(-1,3)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x$ satisfies $2x-3<x+1$ and $3x+2>x-4$. Which values of $x$ are solutions?",
+   "a": "(B), (C)",
+   "s": "$-3<x<4$.",
+   "opts": [
+    "$-3$",
+    "$0$",
+    "$3$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which systems have no solution?",
+   "a": "(A), (B), (C)",
+   "s": "The last region is non-empty.",
+   "opts": [
+    "$x>3$, $x<2$",
+    "$x+y\\ge4$, $x+y\\le2$",
+    "$x\\ge0$, $y\\ge0$, $x+y\\le-1$",
+    "$x\\le1$, $y\\le1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For real $x$, which are true?",
+   "a": "(A), (B)",
+   "s": "$x=-1$ breaks the third; $x=\\frac12$ breaks the last.",
+   "opts": [
+    "$x^2-2x+3>0$ always",
+    "$|x|\\ge x$ always",
+    "$x+\\frac1x\\ge2$ always ($x\\ne0$)",
+    "$x^2\\ge x$ always"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the region $y\\le x$, $y\\ge0$, $x\\le3$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "Vertices $(0,0)$, $(3,0)$, $(3,3)$.",
+   "opts": [
+    "is a triangle",
+    "has area $\\frac92$",
+    "contains $(2,1)$",
+    "contains $(1,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers $x$ with $x^2-5|x|+4<0$.",
+   "a": "$4$",
+   "s": "$1<|x|<4$: $\\pm2,\\pm3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the region $|x|+|y|\\le3$.",
+   "a": "$18$",
+   "s": "Square of diagonal $6$: $\\frac{6\\times6}2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of natural numbers $n$ with $\\dfrac{n}{n+5}<\\dfrac34$.",
+   "a": "$14$",
+   "s": "$4n<3n+15\\Rightarrow n<15$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the greatest integer $k$ for which $x^2-6x+k=0$ has two distinct real roots.",
+   "a": "$8$",
+   "s": "$36-4k>0\\Rightarrow k<9$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each condition with its solution set.\nList-I: (P) $|x-1|<2$; (Q) $|x+1|\\le2$; (R) $|x-1|>2$; (S) $|x+1|\\ge2$\nList-II: (1) $(-1,3)$; (2) $[-3,1]$; (3) $(-\\infty,-1)\\cup(3,\\infty)$; (4) $(-\\infty,-3]\\cup[1,\\infty)$; (5) $[-1,3]$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Distance from $1$ or $-1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 4$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each inequality with its number of integer solutions.\nList-I: (P) $x^2<10$; (Q) $|x|\\le2$; (R) $x^2-4x<0$; (S) $1<x^2<16$\nList-II: (1) $7$; (2) $5$; (3) $3$; (4) $4$; (5) $9$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$-3,\\dots,3$; $-2,\\dots,2$; $1,2,3$; $\\pm2,\\pm3$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each region with a point inside it.\nList-I: (P) $x+y<0$; (Q) $x-y>2$; (R) $y>x^2$; (S) $x^2+y^2<1$\nList-II: (1) $(-1,-1)$; (2) $(3,0)$; (3) $(0,1)$; (4) $\\left(\\frac12,\\frac12\\right)$; (5) $(2,2)$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Substitute each point.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each inequality with its solution set.\nList-I: (P) $2^x>8$; (Q) $\\left(\\frac12\\right)^x>8$; (R) $x^3>8$; (S) $\\frac1x>8$\nList-II: (1) $(3,\\infty)$; (2) $(-\\infty,-3)$; (3) $(2,\\infty)$; (4) $\\left(0,\\frac18\\right)$; (5) $(-3,3)$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$2^{-x}>2^3$; cube is increasing; $0<x<\\frac18$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

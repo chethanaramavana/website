@@ -1,0 +1,1150 @@
+{
+ "g11-ch2-main-01": [
+  {
+   "q": "$n(A)=3$ and $n(B)=4$. The number of relations from $A$ to $B$ is",
+   "a": "(A) $2^{12}$",
+   "s": "Subsets of $A\\times B$.",
+   "opts": [
+    "$2^{12}$",
+    "$12$",
+    "$2^7$",
+    "$4^3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=3$ and $n(B)=4$. The number of functions from $A$ to $B$ is",
+   "a": "(A) $64$",
+   "s": "$4^3$.",
+   "opts": [
+    "$64$",
+    "$81$",
+    "$12$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(x+1,\\ y-2)=(3,1)$. Then $(x,y)$ is",
+   "a": "(B) $(2,3)$",
+   "s": "Equal ordered pairs.",
+   "opts": [
+    "$(2,-1)$",
+    "$(2,3)$",
+    "$(3,1)$",
+    "$(4,-1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac{1}{\\sqrt{x-2}}$ is",
+   "a": "(C) $(2,\\infty)$",
+   "s": "$x-2>0$.",
+   "opts": [
+    "$(-\\infty,2)$",
+    "$\\mathbb R-\\{2\\}$",
+    "$(2,\\infty)$",
+    "$[2,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\sqrt{4-x^2}$ is",
+   "a": "(B) $[-2,2]$",
+   "s": "$4-x^2\\ge0$.",
+   "opts": [
+    "$(-2,2)$",
+    "$[-2,2]$",
+    "$\\mathbb R$",
+    "$[0,2]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=x^2+2$, $x\\in\\mathbb R$, is",
+   "a": "(B) $[2,\\infty)$",
+   "s": "$x^2\\ge0$.",
+   "opts": [
+    "$(2,\\infty)$",
+    "$[2,\\infty)$",
+    "$\\mathbb R$",
+    "$[0,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac{|x|}{x}$, $x\\ne0$, is",
+   "a": "(A) $\\{-1,1\\}$",
+   "s": "$\\pm1$ by sign.",
+   "opts": [
+    "$\\{-1,1\\}$",
+    "$[-1,1]$",
+    "$\\{-1,0,1\\}$",
+    "$\\{1\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2-3x+2$. Then $f(f(1))$ equals",
+   "a": "(A) $2$",
+   "s": "$f(1)=0$, $f(0)=2$.",
+   "opts": [
+    "$2$",
+    "$0$",
+    "$6$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{x-1}{x+1}$. Then $f\\left(\\dfrac1x\\right)$ equals",
+   "a": "(A) $-f(x)$",
+   "s": "$\\frac{1-x}{1+x}$.",
+   "opts": [
+    "$-f(x)$",
+    "$-\\dfrac1{f(x)}$",
+    "$\\dfrac1{f(x)}$",
+    "$f(x)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=[x]$ on $[0,3)$ is",
+   "a": "(D) $\\{0,1,2\\}$",
+   "s": "Integer part.",
+   "opts": [
+    "$\\{0,1,2,3\\}$",
+    "$\\{1,2,3\\}$",
+    "$[0,3)$",
+    "$\\{0,1,2\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$R=\\{(x,y): y=2x+1\\}$ is a relation on $A=\\{1,2,\\dots,7\\}$. The range of $R$ is",
+   "a": "(D) $\\{3,5,7\\}$",
+   "s": "$x=1,2,3$ give $3,5,7$.",
+   "opts": [
+    "$\\{2,4,6\\}$",
+    "$\\{1,2,3\\}$",
+    "$\\{3,5,7,9\\}$",
+    "$\\{3,5,7\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2\\}$. The number of elements of $A\\times A$ is",
+   "a": "(C) $4$",
+   "s": "$2^2$.",
+   "opts": [
+    "$2$",
+    "$8$",
+    "$4$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac{x^2+1}{x^2-5x+6}$ is",
+   "a": "(C) $\\mathbb R-\\{2,3\\}$",
+   "s": "$(x-2)(x-3)\\ne0$.",
+   "opts": [
+    "$(2,3)$",
+    "$\\mathbb R$",
+    "$\\mathbb R-\\{2,3\\}$",
+    "$\\mathbb R-\\{-2,-3\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=2x+3$ and $g(x)=x^2$. Then $(f+g)(2)$ equals",
+   "a": "(B) $11$",
+   "s": "$7+4$.",
+   "opts": [
+    "$4$",
+    "$11$",
+    "$28$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=2x+3$ and $g(x)=x^2$. Then $(fg)(-1)$ equals",
+   "a": "(A) $1$",
+   "s": "$1\\cdot1$.",
+   "opts": [
+    "$1$",
+    "$5$",
+    "$-1$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac1{1+x^2}$ is",
+   "a": "(D) $(0,1]$",
+   "s": "$1+x^2\\ge1$.",
+   "opts": [
+    "$[0,1]$",
+    "$(0,1)$",
+    "$[1,\\infty)$",
+    "$(0,1]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which relation is a function from $\\{1,2,3\\}$ to $\\{a,b\\}$?",
+   "a": "(A) $\\{(1,a),(2,a),(3,b)\\}$",
+   "s": "Each element has exactly one image.",
+   "opts": [
+    "$\\{(1,a),(2,a),(3,b)\\}$",
+    "$\\{(1,a),(2,b)\\}$",
+    "$\\{(1,a),(1,b),(2,a),(3,b)\\}$",
+    "$\\{(a,1),(b,2)\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=|x-3|+2$ is",
+   "a": "(B) $[2,\\infty)$",
+   "s": "$|x-3|\\ge0$.",
+   "opts": [
+    "$[0,\\infty)$",
+    "$[2,\\infty)$",
+    "$\\mathbb R$",
+    "$[3,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\sqrt x$ and $g(x)=\\sqrt{2-x}$. The domain of $f+g$ is",
+   "a": "(A) $[0,2]$",
+   "s": "Intersection of domains.",
+   "opts": [
+    "$[0,2]$",
+    "$(0,2)$",
+    "$(-\\infty,2]$",
+    "$[0,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\sqrt{\\dfrac{x+1}{x-3}}$ is",
+   "a": "(B) $(-\\infty,-1]\\cup(3,\\infty)$",
+   "s": "$\\frac{x+1}{x-3}\\ge0$, $x\\ne3$.",
+   "opts": [
+    "$(-\\infty,-1)\\cup(3,\\infty)$",
+    "$(-\\infty,-1]\\cup(3,\\infty)$",
+    "$[-1,3)$",
+    "$(-\\infty,-1]\\cup[3,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=2$ and $n(B)=3$. Find the number of functions from $A$ to $B$.",
+   "a": "$9$",
+   "s": "$3^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2+1$. Find $\\dfrac{f(3.1)-f(3)}{0.1}$.",
+   "a": "$6.1$",
+   "s": "$\\frac{9.61-9}{0.1}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers in the domain of $f(x)=\\sqrt{12-x-x^2}$.",
+   "a": "$8$",
+   "s": "$x^2+x-12\\le0\\Rightarrow-4\\le x\\le3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=ax+b$, $f(1)=5$ and $f(3)=11$. Find $f(10)$.",
+   "a": "$32$",
+   "s": "$a=3$, $b=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $f(x)=\\dfrac{2x}{1+x^2}$.",
+   "a": "$1$",
+   "s": "$2|x|\\le1+x^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch2-main-02": [
+  {
+   "q": "$n(A)=5$. The number of relations on $A$ is",
+   "a": "(C) $2^{25}$",
+   "s": "Subsets of $A\\times A$.",
+   "opts": [
+    "$2^{10}$",
+    "$25$",
+    "$2^{25}$",
+    "$5^5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A\\times B=\\{(1,a),(1,b),(2,a),(2,b)\\}$. Then $B$ is",
+   "a": "(C) $\\{a,b\\}$",
+   "s": "Second entries.",
+   "opts": [
+    "$\\{1,a\\}$",
+    "$\\{1,2\\}$",
+    "$\\{a,b\\}$",
+    "$\\{a\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac{1}{|x|-x}$ is",
+   "a": "(C) $(-\\infty,0)$",
+   "s": "$|x|-x=0$ for $x\\ge0$.",
+   "opts": [
+    "$\\mathbb R-\\{0\\}$",
+    "$\\mathbb R$",
+    "$(-\\infty,0)$",
+    "$(0,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\dfrac{x^2}{1+x^2}$ is",
+   "a": "(A) $[0,1)$",
+   "s": "$1-\\frac1{1+x^2}$.",
+   "opts": [
+    "$[0,1)$",
+    "$[0,1]$",
+    "$(0,1)$",
+    "$[0,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=3-2x^2$ is",
+   "a": "(D) $(-\\infty,3]$",
+   "s": "$x^2\\ge0$.",
+   "opts": [
+    "$\\mathbb R$",
+    "$(-\\infty,-3]$",
+    "$[3,\\infty)$",
+    "$(-\\infty,3]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac1{1-x}$. Then $f(f(x))$ equals",
+   "a": "(B) $\\dfrac{x-1}{x}$",
+   "s": "$\\frac1{1-\\frac1{1-x}}=\\frac{1-x}{-x}$.",
+   "opts": [
+    "$x$",
+    "$\\dfrac{x-1}{x}$",
+    "$\\dfrac1x$",
+    "$1-x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x+\\dfrac1x$. Then $f(x)=f\\left(\\dfrac1x\\right)$ for",
+   "a": "(B) every $x\\ne0$",
+   "s": "The expression is symmetric.",
+   "opts": [
+    "$x=1$ only",
+    "every $x\\ne0$",
+    "no $x$",
+    "$x=\\pm1$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\sqrt{x^2-9}$ is",
+   "a": "(C) $(-\\infty,-3]\\cup[3,\\infty)$",
+   "s": "$x^2\\ge9$.",
+   "opts": [
+    "$(-3,3)$",
+    "$[3,\\infty)$",
+    "$(-\\infty,-3]\\cup[3,\\infty)$",
+    "$[-3,3]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=\\sqrt{16-x^2}$ is",
+   "a": "(B) $[0,4]$",
+   "s": "$0\\le16-x^2\\le16$.",
+   "opts": [
+    "$[-4,4]$",
+    "$[0,4]$",
+    "$(0,4)$",
+    "$[0,16]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=[x]$. Then $f(-2.3)+f(2.3)$ equals",
+   "a": "(D) $-1$",
+   "s": "$-3+2$.",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$-2$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of non-empty relations on $\\{a,b\\}$ is",
+   "a": "(D) $15$",
+   "s": "$2^4-1$.",
+   "opts": [
+    "$3$",
+    "$16$",
+    "$4$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3$ and $g(x)=2x$. Then $\\left(\\dfrac fg\\right)(2)$ equals",
+   "a": "(D) $2$",
+   "s": "$\\frac84$.",
+   "opts": [
+    "$8$",
+    "$1$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\operatorname{sgn}(x^2-1)$. Then $f(0)+f(1)+f(2)$ equals",
+   "a": "(D) $0$",
+   "s": "$-1+0+1$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$-1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac{1}{\\sqrt{[x]-1}}$ is",
+   "a": "(B) $[2,\\infty)$",
+   "s": "$[x]>1\\Rightarrow[x]\\ge2$.",
+   "opts": [
+    "$(1,\\infty)$",
+    "$[2,\\infty)$",
+    "$[1,\\infty)$",
+    "$(2,\\infty)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$, $B=\\{4,5\\}$. The number of relations from $A$ to $B$ with exactly $2$ pairs is",
+   "a": "(C) $15$",
+   "s": "$\\binom62$.",
+   "opts": [
+    "$30$",
+    "$6$",
+    "$15$",
+    "$64$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $f(x)=x-[x]$ is",
+   "a": "(C) $[0,1)$",
+   "s": "Fractional part.",
+   "opts": [
+    "$[0,1]$",
+    "$\\mathbb Z$",
+    "$[0,1)$",
+    "$(0,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{x}{x-1}$. Then $f(f(x))$ equals",
+   "a": "(B) $x$",
+   "s": "$\\frac{\\frac x{x-1}}{\\frac x{x-1}-1}=\\frac{x}{1}$.",
+   "opts": [
+    "$x-1$",
+    "$x$",
+    "$\\dfrac1x$",
+    "$\\dfrac{x}{x-1}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f:\\mathbb R\\to\\mathbb R$, $f(x)=x^2$. The pre-images of $4$ are",
+   "a": "(C) $\\pm2$",
+   "s": "$x^2=4$.",
+   "opts": [
+    "$16$",
+    "$2$ only",
+    "$\\pm2$",
+    "none"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which of these is the graph of a function of $x$?",
+   "a": "(A) $y=|x|$",
+   "s": "Each $x$ gives one $y$.",
+   "opts": [
+    "$y=|x|$",
+    "$y^2=x$",
+    "$x^2+y^2=1$",
+    "$x=|y|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\dfrac{1}{x-[x]}$ is",
+   "a": "(B) $\\mathbb R-\\mathbb Z$",
+   "s": "$x-[x]=0$ exactly at integers.",
+   "opts": [
+    "$(0,1)$",
+    "$\\mathbb R-\\mathbb Z$",
+    "$\\mathbb R$",
+    "$\\mathbb Z$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3,4\\}$. $R=\\{(a,b): a<b\\}$ on $A$. Find the number of elements of $R$.",
+   "a": "$6$",
+   "s": "$\\binom42$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of functions from $\\{1,2,3\\}$ to $\\{a,b\\}$ that are not constant.",
+   "a": "$6$",
+   "s": "$2^3-2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2-4x+7$. Find the least value of $f$.",
+   "a": "$3$",
+   "s": "$(x-2)^2+3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{x+2}{x-1}$ and $f(a)=4$. Find $a$.",
+   "a": "$2$",
+   "s": "$a+2=4a-4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of all integers in the range of $f(x)=\\dfrac{8}{x^2+1}$, $x\\in\\mathbb R$.",
+   "a": "$36$",
+   "s": "Range $(0,8]$: $1+\\dots+8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch2-advanced-01": [
+  {
+   "q": "The range of $f(x)=\\dfrac{x^2+x+1}{x^2-x+1}$, $x\\in\\mathbb R$, is",
+   "a": "(B) $\\left[\\dfrac13,3\\right]$",
+   "s": "$y(x^2-x+1)=x^2+x+1$; real $x$: $(y+1)^2\\ge4(y-1)^2$.",
+   "opts": [
+    "$[1,3]$",
+    "$\\left[\\dfrac13,3\\right]$",
+    "$\\left[\\dfrac13,1\\right]$",
+    "$(0,\\infty)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of functions $f$ from $\\{1,2,3\\}$ to $\\{1,2,3,4\\}$ with $f(1)<f(2)<f(3)$ is",
+   "a": "(C) $4$",
+   "s": "Choose $3$ values: $\\binom43$.",
+   "opts": [
+    "$24$",
+    "$64$",
+    "$4$",
+    "$12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The domain of $f(x)=\\sqrt{\\dfrac{1-|x|}{2-|x|}}$ is",
+   "a": "(C) $(-\\infty,-2)\\cup[-1,1]\\cup(2,\\infty)$",
+   "s": "$t=|x|$: $\\frac{1-t}{2-t}\\ge0\\Rightarrow t\\le1$ or $t>2$.",
+   "opts": [
+    "$(-\\infty,-2)\\cup(2,\\infty)$",
+    "$[-1,1]$",
+    "$(-\\infty,-2)\\cup[-1,1]\\cup(2,\\infty)$",
+    "$(-2,2)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)+2f\\left(\\dfrac1x\\right)=3x$ for $x\\ne0$. Then $f(2)$ equals",
+   "a": "(A) $-1$",
+   "s": "$f(2)+2f(\\frac12)=6$, $f(\\frac12)+2f(2)=\\frac32$.",
+   "opts": [
+    "$-1$",
+    "$1$",
+    "$2$",
+    "$\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$ and $g(x)=|x|$ on $\\mathbb R$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$t^2-t\\ge-\\frac14$; $\\frac fg$ needs $x\\ne0$.",
+   "opts": [
+    "$f(x)=g(x)^2$ for all $x$",
+    "The range of $f-g$ is $\\left[-\\frac14,\\infty\\right)$",
+    "$(fg)(-2)=8$",
+    "$\\frac fg$ has domain $\\mathbb R$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $f(x)=[x]$, which are true?",
+   "a": "(A), (C), (D)",
+   "s": "$[-1.5]=-2\\ne-1$.",
+   "opts": [
+    "$[x+1]=[x]+1$",
+    "$[-x]=-[x]$ for all $x$",
+    "$[x]+[-x]=-1$ for $x\\notin\\mathbb Z$",
+    "$[2x]\\ge2[x]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$2^9$, $3^3$, $3!$, $2^3$.",
+   "opts": [
+    "There are $512$ relations on $A$",
+    "There are $27$ functions from $A$ to $A$",
+    "There are $6$ one-one functions from $A$ to $A$",
+    "There are $8$ functions from $A$ to $\\{0,1\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which functions have range $[0,1]$?",
+   "a": "(B), (C), (D)",
+   "s": "$\\frac{x^2}{1+x^2}<1$ always.",
+   "opts": [
+    "$\\dfrac{x^2}{1+x^2}$ on $\\mathbb R$",
+    "$|\\sin x|$",
+    "$1-|x|$ on $[-1,1]$",
+    "$\\sqrt{1-x^2}$ on $[-1,1]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integers $x$ in the domain of $f(x)=\\sqrt{\\dfrac{6-x}{x+2}}$.",
+   "a": "$8$",
+   "s": "$-2<x\\le6$: $-1,\\dots,6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x+y)=f(x)+f(y)$ for all real $x,y$, and $f(1)=7$. Find $\\sum_{r=1}^{5}f(r)$.",
+   "a": "$105$",
+   "s": "$f(r)=7r$; $7\\times15$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac{4^x}{4^x+2}$. Find $f\\left(\\frac14\\right)+f\\left(\\frac34\\right)$.",
+   "a": "$1$",
+   "s": "$f(x)+f(1-x)=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of functions from $\\{1,2,3,4\\}$ onto $\\{a,b\\}$.",
+   "a": "$14$",
+   "s": "$2^4-2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each function with its range.\nList-I: (P) $x^2-2x+3$; (Q) $\\dfrac{1}{x^2+1}$; (R) $|x|-x$; (S) $\\sqrt{9-x^2}$\nList-II: (1) $[2,\\infty)$; (2) $(0,1]$; (3) $[0,\\infty)$; (4) $[0,3]$; (5) $\\mathbb R$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$(x-1)^2+2$; $|x|-x=-2x$ for $x<0$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its domain.\nList-I: (P) $\\sqrt{x-1}$; (Q) $\\dfrac1{\\sqrt{1-x}}$; (R) $\\dfrac{1}{x^2-1}$; (S) $\\sqrt{x^2-1}$\nList-II: (1) $[1,\\infty)$; (2) $(-\\infty,1)$; (3) $\\mathbb R-\\{\\pm1\\}$; (4) $(-\\infty,-1]\\cup[1,\\infty)$; (5) $[-1,1]$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Square roots need non-negative values; denominators non-zero.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=2$ and $n(B)=4$. Match.\nList-I: (P) $n(A\\times B)$; (Q) relations from $A$ to $B$; (R) functions from $A$ to $B$; (S) one-one functions from $A$ to $B$\nList-II: (1) $8$; (2) $256$; (3) $16$; (4) $12$; (5) $6$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$2\\times4$; $2^8$; $4^2$; $4\\times3$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$, $g(x)=x+1$. Match each value.\nList-I: (P) $(f+g)(2)$; (Q) $(fg)(2)$; (R) $\\left(\\frac fg\\right)(2)$; (S) $(f-g)(2)$\nList-II: (1) $7$; (2) $12$; (3) $\\frac43$; (4) $1$; (5) $3$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$4+3$; $12$; $\\frac43$; $1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 5$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch2-advanced-02": [
+  {
+   "q": "The range of $f(x)=\\dfrac{x^2-4}{x-2}$, $x\\ne2$, is",
+   "a": "(C) $\\mathbb R-\\{4\\}$",
+   "s": "$f(x)=x+2$, $x\\ne2$.",
+   "opts": [
+    "$\\mathbb R-\\{0\\}$",
+    "$\\mathbb R-\\{2\\}$",
+    "$\\mathbb R-\\{4\\}$",
+    "$\\mathbb R$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{ax+b}{cx-a}$. Then $f(f(x))$ equals",
+   "a": "(B) $x$",
+   "s": "$f$ is its own inverse.",
+   "opts": [
+    "$f(x)$",
+    "$x$",
+    "$-x$",
+    "$\\dfrac1x$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set of $x\\in[0,5)$ with $[x]^2-3[x]+2=0$ is",
+   "a": "(B) $[1,3)$",
+   "s": "$[x]=1$ or $2$.",
+   "opts": [
+    "$\\{1,2\\}$",
+    "$[1,3)$",
+    "$(1,3)$",
+    "$[1,2]$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{x}{1+|x|}$. The range of $f$ is",
+   "a": "(C) $(-1,1)$",
+   "s": "$|f(x)|<1$ and $f$ takes all such values.",
+   "opts": [
+    "$[0,1)$",
+    "$\\mathbb R$",
+    "$(-1,1)$",
+    "$[-1,1]$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which pairs $f,g$ are equal functions?",
+   "a": "(A), (C)",
+   "s": "Same domain and same values.",
+   "opts": [
+    "$f(x)=x$, $g(x)=\\sqrt{x^2}$ on $[0,\\infty)$",
+    "$f(x)=\\dfrac{x^2}{x}$, $g(x)=x$ on $\\mathbb R$",
+    "$f(x)=|x|$, $g(x)=\\sqrt{x^2}$ on $\\mathbb R$",
+    "$f(x)=1$, $g(x)=\\dfrac{x}{x}$ on $\\mathbb R$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\sqrt{x-1}+\\sqrt{5-x}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$f^2=4+2\\sqrt{(x-1)(5-x)}\\in[4,8]$.",
+   "opts": [
+    "The domain is $[1,5]$",
+    "The greatest value is $2\\sqrt2$",
+    "The least value is $2$",
+    "$f(3)=2\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2-6x+5$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$(x-3)^2-4$.",
+   "opts": [
+    "The range is $[-4,\\infty)$",
+    "$f(x)<0\\iff1<x<5$",
+    "$f(3)=-4$",
+    "$f(x)=f(6-x)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$R=\\{(x,y)\\in\\mathbb N\\times\\mathbb N: x+2y=10\\}$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$y=1,2,3,4$ give $x=8,6,4,2$.",
+   "opts": [
+    "$R$ has $4$ pairs",
+    "The domain of $R$ is $\\{2,4,6,8\\}$",
+    "The range of $R$ is $\\{1,2,3,4\\}$",
+    "$(10,0)\\in R$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\dfrac{9^x}{9^x+3}$. Find $\\sum_{r=1}^{8}f\\left(\\frac r9\\right)$.",
+   "a": "$4$",
+   "s": "$f(x)+f(1-x)=1$: $4$ pairs.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers in the range of $f(x)=1+\\dfrac{2}{(x+1)^2+1}$.",
+   "a": "$2$",
+   "s": "The range is $(1,3]$: $2$ and $3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$2f(x)-3f\\left(\\frac1x\\right)=x^2$ for $x\\ne0$. Find $4f(2)$.",
+   "a": "$-7$",
+   "s": "$2f(2)-3f(\\frac12)=4$, $2f(\\frac12)-3f(2)=\\frac14\\Rightarrow f(2)=-\\frac74$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\{1,2,3,4,5\\}$. Find the number of functions $f:A\\to A$ with $f(1)=1$ and $f(2)\\ne2$.",
+   "a": "$500$",
+   "s": "$4\\times5^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $[-2.5]$; (Q) $[2.5]$; (R) $|-2.5|$; (S) $\\operatorname{sgn}(-2.5)$\nList-II: (1) $-3$; (2) $2$; (3) $2.5$; (4) $-1$; (5) $3$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Definitions.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its range.\nList-I: (P) $\\dfrac{x}{x^2+1}$; (Q) $\\dfrac{x^2}{x^2+1}$; (R) $\\dfrac{1}{x^2+1}$; (S) $x^2+1$\nList-II: (1) $\\left[-\\frac12,\\frac12\\right]$; (2) $[0,1)$; (3) $(0,1]$; (4) $[1,\\infty)$; (5) $(0,1)$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard ranges.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$, $B=\\{a,b,c,d\\}$. Match.\nList-I: (P) functions $A\\to B$; (Q) one-one functions $A\\to B$; (R) relations from $A$ to $B$; (S) functions $B\\to A$\nList-II: (1) $64$; (2) $24$; (3) $2^{12}$; (4) $81$; (5) $12$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$4^3$; $4\\cdot3\\cdot2$; $2^{12}$; $3^4$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=2x-1$, $g(x)=x^2$. Match.\nList-I: (P) $f(g(2))$; (Q) $g(f(2))$; (R) $f(f(2))$; (S) $g(g(2))$\nList-II: (1) $7$; (2) $9$; (3) $5$; (4) $16$; (5) $3$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$f(4)$; $g(3)$; $f(3)$; $g(4)$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

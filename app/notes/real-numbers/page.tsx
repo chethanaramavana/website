@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
-import { getChapterNotes } from '@/lib/chapter-notes';
-import NotesDocument from '../notes-document';
+import g10ReaderNotes from '@/lib/g10-reader-notes.json';
+import ChapterReader, { type ReaderChapter } from '../chapter-reader';
 
 export const metadata: Metadata = {
   title: 'Real Numbers Notes | Grade 10 Mathematics',
-  description: 'Student-friendly CBSE Grade 10 Real Numbers notes with visual explanations, worked reasoning and practice.',
+  description: 'CBSE Grade 10 Real Numbers notes: formula sheet and solved examples, line by line.',
 };
 
 export default function RealNumbersNotesPage() {
-  const notes = getChapterNotes('real-numbers');
-  if (!notes) return null;
-  return <NotesDocument notes={notes} />;
+  const data = (g10ReaderNotes as unknown as Record<string, ReaderChapter>)['real-numbers'];
+  return <ChapterReader data={data} />;
 }

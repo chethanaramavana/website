@@ -1,0 +1,1150 @@
+{
+ "g11-ch3-main-01": [
+  {
+   "q": "The value of $\\sin75^\\circ$ is",
+   "a": "(B) $\\dfrac{\\sqrt6+\\sqrt2}4$",
+   "s": "$\\sin(45^\\circ+30^\\circ)$.",
+   "opts": [
+    "$\\dfrac{\\sqrt6-\\sqrt2}4$",
+    "$\\dfrac{\\sqrt6+\\sqrt2}4$",
+    "$\\dfrac{\\sqrt3}{2}$",
+    "$\\dfrac{\\sqrt3+1}{2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\tan15^\\circ+\\cot15^\\circ$ is",
+   "a": "(A) $4$",
+   "s": "$\\frac{2}{\\sin30^\\circ}$.",
+   "opts": [
+    "$4$",
+    "$2\\sqrt3$",
+    "$2$",
+    "$4\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin x+\\cos x=\\frac15$, $0<x<\\pi$. Then $\\tan x$ equals",
+   "a": "(A) $-\\dfrac43$",
+   "s": "$\\sin x=\\frac45$, $\\cos x=-\\frac35$.",
+   "opts": [
+    "$-\\dfrac43$",
+    "$\\dfrac43$",
+    "$-\\dfrac34$",
+    "$\\dfrac34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\cos^2\\frac\\pi8+\\cos^2\\frac{3\\pi}8$ is",
+   "a": "(B) $1$",
+   "s": "$\\cos\\frac{3\\pi}8=\\sin\\frac\\pi8$.",
+   "opts": [
+    "$\\frac{\\sqrt2}2$",
+    "$1$",
+    "$\\frac12$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $3\\sin x-4\\cos x$ is",
+   "a": "(C) $5$",
+   "s": "$\\sqrt{9+16}$.",
+   "opts": [
+    "$1$",
+    "$4$",
+    "$5$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least value of $\\sin^4x+\\cos^4x$ is",
+   "a": "(D) $\\frac12$",
+   "s": "$1-\\frac12\\sin^22x$.",
+   "opts": [
+    "$\\frac14$",
+    "$0$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The period of $\\sin2x$ is",
+   "a": "(C) $\\pi$",
+   "s": "$\\frac{2\\pi}2$.",
+   "opts": [
+    "$4\\pi$",
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$2\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\sin10^\\circ\\sin50^\\circ\\sin70^\\circ$ is",
+   "a": "(A) $\\frac18$",
+   "s": "$\\sin x\\sin(60^\\circ-x)\\sin(60^\\circ+x)=\\frac14\\sin3x$.",
+   "opts": [
+    "$\\frac18$",
+    "$\\frac14$",
+    "$\\frac1{16}$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The general solution of $\\tan x=\\sqrt3$ is",
+   "a": "(C) $n\\pi+\\frac\\pi3$",
+   "s": "$\\tan x=\\tan\\frac\\pi3$.",
+   "opts": [
+    "$2n\\pi+\\frac\\pi3$",
+    "$n\\pi+\\frac\\pi6$",
+    "$n\\pi+\\frac\\pi3$",
+    "$n\\pi\\pm\\frac\\pi3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of solutions of $\\sin x=\\frac12$ in $[0,2\\pi]$ is",
+   "a": "(D) $2$",
+   "s": "$\\frac\\pi6$, $\\frac{5\\pi}6$.",
+   "opts": [
+    "$1$",
+    "$3$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cos(\\alpha+\\beta)=\\frac45$, $\\sin(\\alpha-\\beta)=\\frac5{13}$, with $\\alpha,\\beta\\in\\left(0,\\frac\\pi4\\right)$. Then $\\tan2\\alpha$ equals",
+   "a": "(D) $\\dfrac{56}{33}$",
+   "s": "$\\tan(\\alpha+\\beta)=\\frac34$, $\\tan(\\alpha-\\beta)=\\frac5{12}$; add.",
+   "opts": [
+    "$\\dfrac{33}{56}$",
+    "$\\dfrac{63}{16}$",
+    "$\\dfrac{16}{63}$",
+    "$\\dfrac{56}{33}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\tan A=\\frac12$ and $\\tan B=\\frac13$. Then $A+B$ equals ($A,B$ acute)",
+   "a": "(A) $\\frac\\pi4$",
+   "s": "$\\tan(A+B)=\\frac{\\frac56}{1-\\frac16}=1$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi6$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{\\sin3x}{\\sin x}-\\dfrac{\\cos3x}{\\cos x}$ equals",
+   "a": "(C) $2$",
+   "s": "$\\frac{\\sin(3x-x)}{\\sin x\\cos x}=2$.",
+   "opts": [
+    "$1$",
+    "$2\\cos2x$",
+    "$2$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $a=2$, $b=3$, $c=4$. Then $\\cos C$ equals",
+   "a": "(B) $-\\frac14$",
+   "s": "$\\frac{4+9-16}{12}$.",
+   "opts": [
+    "$\\frac14$",
+    "$-\\frac14$",
+    "$\\frac{11}{16}$",
+    "$-\\frac{11}{16}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$1^\\circ$ in radians is about",
+   "a": "(D) $0.01745$",
+   "s": "$\\frac\\pi{180}$.",
+   "opts": [
+    "$0.1745$",
+    "$0.0175\\pi$",
+    "$57.3$",
+    "$0.01745$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\cos20^\\circ+\\cos100^\\circ+\\cos140^\\circ$ is",
+   "a": "(A) $0$",
+   "s": "$\\cos100^\\circ+\\cos140^\\circ=2\\cos120^\\circ\\cos20^\\circ=-\\cos20^\\circ$.",
+   "opts": [
+    "$0$",
+    "$-\\frac12$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin x=\\frac35$ with $x$ in the second quadrant. Then $\\sin2x$ equals",
+   "a": "(D) $-\\frac{24}{25}$",
+   "s": "$\\cos x=-\\frac45$.",
+   "opts": [
+    "$-\\frac7{25}$",
+    "$\\frac{24}{25}$",
+    "$\\frac7{25}$",
+    "$-\\frac{24}{25}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The general solution of $\\cos2x=\\cos x$ is",
+   "a": "(A) $x=\\frac{2n\\pi}3$",
+   "s": "$2x=2n\\pi\\pm x$.",
+   "opts": [
+    "$x=\\frac{2n\\pi}3$",
+    "$x=\\frac{n\\pi}3$",
+    "$x=2n\\pi$ only",
+    "$x=n\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\tan1^\\circ\\tan2^\\circ\\cdots\\tan89^\\circ$ is",
+   "a": "(A) $1$",
+   "s": "$\\tan x\\tan(90^\\circ-x)=1$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "undefined",
+    "$\\sqrt3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cot x-\\tan x$ equals",
+   "a": "(D) $2\\cot2x$",
+   "s": "$\\frac{\\cos^2x-\\sin^2x}{\\sin x\\cos x}$.",
+   "opts": [
+    "$2\\tan2x$",
+    "$\\cos2x$",
+    "$\\cot2x$",
+    "$2\\cot2x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of solutions of $\\sin2x=\\sin x$ in $[0,2\\pi]$.",
+   "a": "$5$",
+   "s": "$\\sin x(2\\cos x-1)=0$: $0,\\pi,2\\pi,\\frac\\pi3,\\frac{5\\pi}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $16\\sin\\frac\\pi{12}\\cos\\frac\\pi{12}$.",
+   "a": "$4$",
+   "s": "$8\\sin\\frac\\pi6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\cos^2\\frac\\pi{12}+\\cos^2\\frac{5\\pi}{12}+\\cos^2\\frac{7\\pi}{12}+\\cos^2\\frac{11\\pi}{12}$.",
+   "a": "$2$",
+   "s": "Pairs add to $1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $5\\cos x+12\\sin x+7$.",
+   "a": "$20$",
+   "s": "$13+7$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\dfrac{\\tan70^\\circ-\\tan20^\\circ}{\\tan50^\\circ}$.",
+   "a": "$2$",
+   "s": "$\\tan70^\\circ-\\tan20^\\circ=\\tan50^\\circ(1+\\tan70^\\circ\\tan20^\\circ)=2\\tan50^\\circ$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch3-main-02": [
+  {
+   "q": "The value of $\\cos15^\\circ$ is",
+   "a": "(C) $\\dfrac{\\sqrt3+1}{2\\sqrt2}$",
+   "s": "$\\cos(45^\\circ-30^\\circ)$.",
+   "opts": [
+    "$\\dfrac{\\sqrt3-1}{2\\sqrt2}$",
+    "$\\dfrac{\\sqrt3}2$",
+    "$\\dfrac{\\sqrt3+1}{2\\sqrt2}$",
+    "$\\dfrac{1}{2\\sqrt2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\tan75^\\circ$ is",
+   "a": "(A) $2+\\sqrt3$",
+   "s": "$\\frac{1+\\frac1{\\sqrt3}}{1-\\frac1{\\sqrt3}}$.",
+   "opts": [
+    "$2+\\sqrt3$",
+    "$\\sqrt3+1$",
+    "$2-\\sqrt3$",
+    "$\\frac{\\sqrt3+1}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The range of $\\sin^2x-\\sin x+1$ is",
+   "a": "(C) $\\left[\\frac34,3\\right]$",
+   "s": "$t=\\sin x\\in[-1,1]$: $(t-\\frac12)^2+\\frac34$.",
+   "opts": [
+    "$[1,3]$",
+    "$[0,3]$",
+    "$\\left[\\frac34,3\\right]$",
+    "$\\left[\\frac34,1\\right]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin\\theta+\\csc\\theta=2$. Then $\\sin^5\\theta+\\csc^5\\theta$ equals",
+   "a": "(B) $2$",
+   "s": "$\\sin\\theta=1$.",
+   "opts": [
+    "$10$",
+    "$2$",
+    "$32$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\cos\\frac{2\\pi}7+\\cos\\frac{4\\pi}7+\\cos\\frac{6\\pi}7$ is",
+   "a": "(B) $-\\frac12$",
+   "s": "Standard result.",
+   "opts": [
+    "$-1$",
+    "$-\\frac12$",
+    "$\\frac12$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\sin^2\\frac\\pi{18}+\\sin^2\\frac\\pi9+\\sin^2\\frac{7\\pi}{18}+\\sin^2\\frac{4\\pi}9$ is",
+   "a": "(A) $2$",
+   "s": "$\\sin\\frac{7\\pi}{18}=\\cos\\frac\\pi9$, $\\sin\\frac{4\\pi}9=\\cos\\frac\\pi{18}$.",
+   "opts": [
+    "$2$",
+    "$\\frac12$",
+    "$1$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The period of $|\\sin x|$ is",
+   "a": "(A) $\\pi$",
+   "s": "$|\\sin(x+\\pi)|=|\\sin x|$.",
+   "opts": [
+    "$\\pi$",
+    "$\\frac\\pi2$",
+    "$4\\pi$",
+    "$2\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The general solution of $2\\sin^2x-3\\sin x+1=0$ includes",
+   "a": "(C) $x=n\\pi+(-1)^n\\frac\\pi6$",
+   "s": "$\\sin x=\\frac12$ or $1$.",
+   "opts": [
+    "$x=n\\pi$",
+    "$x=2n\\pi\\pm\\frac\\pi6$",
+    "$x=n\\pi+(-1)^n\\frac\\pi6$",
+    "$x=n\\pi+(-1)^n\\frac\\pi3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $A=60^\\circ$, $b=4$, $c=3$. Then $a^2$ equals",
+   "a": "(A) $13$",
+   "s": "$16+9-12$.",
+   "opts": [
+    "$13$",
+    "$37$",
+    "$25$",
+    "$7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\tan x+\\tan\\left(x+\\frac\\pi3\\right)+\\tan\\left(x+\\frac{2\\pi}3\\right)=3$. Then",
+   "a": "(A) $\\tan3x=1$",
+   "s": "The sum equals $3\\tan3x$.",
+   "opts": [
+    "$\\tan3x=1$",
+    "$\\tan x=1$",
+    "$\\tan3x=3$",
+    "$\\tan x=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $4\\sin18^\\circ\\cos36^\\circ$ is",
+   "a": "(B) $1$",
+   "s": "$\\sin18^\\circ=\\frac{\\sqrt5-1}4$, $\\cos36^\\circ=\\frac{\\sqrt5+1}4$.",
+   "opts": [
+    "$\\frac12$",
+    "$1$",
+    "$\\sqrt5$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sec x-\\tan x=\\frac13$. Then $\\sec x+\\tan x$ equals",
+   "a": "(C) $3$",
+   "s": "$\\sec^2x-\\tan^2x=1$.",
+   "opts": [
+    "$9$",
+    "$\\frac13$",
+    "$3$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\cos\\frac\\pi5\\cos\\frac{2\\pi}5$ is",
+   "a": "(D) $\\frac14$",
+   "s": "Multiply by $\\sin\\frac\\pi5$.",
+   "opts": [
+    "$\\frac18$",
+    "$\\frac12$",
+    "$-\\frac14$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin(A+B)=1$ and $\\sin(A-B)=\\frac12$ with $0\\le A,B\\le\\frac\\pi2$. Then $A$ equals",
+   "a": "(B) $\\frac\\pi3$",
+   "s": "$A+B=\\frac\\pi2$, $A-B=\\frac\\pi6$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac\\pi3$",
+    "$\\frac\\pi2$",
+    "$\\frac\\pi6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\cos3x$ equals",
+   "a": "(B) $4\\cos^3x-3\\cos x$",
+   "s": "Triple angle.",
+   "opts": [
+    "$\\cos^3x-3\\cos x$",
+    "$4\\cos^3x-3\\cos x$",
+    "$4\\cos^3x+3\\cos x$",
+    "$3\\cos x-4\\cos^3x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{1-\\tan^2\\frac\\pi8}{1+\\tan^2\\frac\\pi8}$ equals",
+   "a": "(B) $\\frac{1}{\\sqrt2}$",
+   "s": "$\\cos\\frac\\pi4$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$\\frac{1}{\\sqrt2}$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of solutions of $\\tan x+\\sec x=2\\cos x$ in $[0,2\\pi)$ is",
+   "a": "(C) $2$",
+   "s": "$1+\\sin x=2\\cos^2x\\Rightarrow\\sin x=\\frac12$ (since $\\sin x=-1$ makes $\\cos x=0$).",
+   "opts": [
+    "$0$",
+    "$3$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $\\frac{a}{\\sin A}$ equals",
+   "a": "(B) $\\frac{b}{\\sin B}$",
+   "s": "Sine rule.",
+   "opts": [
+    "$a\\sin A$",
+    "$\\frac{b}{\\sin B}$",
+    "$\\frac{a}{\\sin B}$",
+    "$\\frac{b}{\\sin A}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\sin\\frac{5\\pi}{12}\\sin\\frac{\\pi}{12}$ is",
+   "a": "(C) $\\frac14$",
+   "s": "$\\frac12(\\cos\\frac\\pi3-\\cos\\frac\\pi2)$.",
+   "opts": [
+    "$\\frac{\\sqrt3}4$",
+    "$\\frac12$",
+    "$\\frac14$",
+    "$\\frac18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin x=\\frac{2t}{1+t^2}$ where $t$ equals",
+   "a": "(D) $\\tan\\frac x2$",
+   "s": "Half-angle substitution.",
+   "opts": [
+    "$\\tan x$",
+    "$\\cot\\frac x2$",
+    "$\\sin\\frac x2$",
+    "$\\tan\\frac x2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\dfrac{\\sqrt3}{\\sin20^\\circ}-\\dfrac1{\\cos20^\\circ}$.",
+   "a": "$4$",
+   "s": "$\\frac{4\\sin(60^\\circ-20^\\circ)}{2\\sin20^\\circ\\cos20^\\circ}=\\frac{4\\sin40^\\circ}{\\sin40^\\circ}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of solutions of $\\cos^2x=\\frac14$ in $[0,2\\pi)$.",
+   "a": "$4$",
+   "s": "$\\cos x=\\pm\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\tan20^\\circ\\tan40^\\circ\\tan60^\\circ\\tan80^\\circ$.",
+   "a": "$3$",
+   "s": "$\\tan x\\tan(60^\\circ-x)\\tan(60^\\circ+x)=\\tan3x$ gives $\\sqrt3\\cdot\\sqrt3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the least value of $9\\tan^2x+4\\cot^2x$.",
+   "a": "$12$",
+   "s": "AM–GM: $2\\sqrt{36}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $8\\cos\\frac\\pi9\\cos\\frac{2\\pi}9\\cos\\frac{4\\pi}9$.",
+   "a": "$1$",
+   "s": "Product $=\\frac18$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch3-advanced-01": [
+  {
+   "q": "The number of solutions of $\\sin x+\\sin3x+\\sin5x=0$ in $\\left[0,\\frac\\pi2\\right]$ is",
+   "a": "(C) $2$",
+   "s": "$\\sin3x(1+2\\cos2x)=0$: $\\sin3x=0$ gives $0,\\frac\\pi3$; $\\cos2x=-\\frac12$ gives $\\frac\\pi3$ again.",
+   "opts": [
+    "$4$",
+    "$3$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\alpha+\\beta=\\frac\\pi4$. Then $(1+\\tan\\alpha)(1+\\tan\\beta)$ equals",
+   "a": "(C) $2$",
+   "s": "$\\tan\\alpha+\\tan\\beta=1-\\tan\\alpha\\tan\\beta$.",
+   "opts": [
+    "$\\sqrt2$",
+    "$0$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The least value of $2^{\\sin x}+2^{\\cos x}$ is",
+   "a": "(D) $2^{1-\\frac1{\\sqrt2}}$",
+   "s": "AM–GM: $\\ge2\\cdot2^{\\frac{\\sin x+\\cos x}2}\\ge2\\cdot2^{-\\frac{\\sqrt2}2}$, with equality at $x=\\frac{5\\pi}4$.",
+   "opts": [
+    "$2$",
+    "$2^{\\frac1{\\sqrt2}}$",
+    "$1$",
+    "$2^{1-\\frac1{\\sqrt2}}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $b=2$, $c=\\sqrt6$ and $A=75^\\circ$. Then $a$ equals",
+   "a": "(A) $\\sqrt3+1$",
+   "s": "$a^2=4+6-4\\sqrt6\\cos75^\\circ=10-(6-2\\sqrt3)=4+2\\sqrt3$.",
+   "opts": [
+    "$\\sqrt3+1$",
+    "$2$",
+    "$\\sqrt3-1$",
+    "$\\sqrt6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Double-angle results.",
+   "opts": [
+    "$\\sin15^\\circ\\cos15^\\circ=\\frac14$",
+    "$\\cos^215^\\circ-\\sin^215^\\circ=\\frac{\\sqrt3}2$",
+    "$\\tan15^\\circ=2-\\sqrt3$",
+    "$\\sin^215^\\circ=\\frac{2-\\sqrt3}4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are solutions of $\\cos^2x=\\sin^2x$?",
+   "a": "(A), (B), (C)",
+   "s": "$\\cos2x=0\\Rightarrow x=\\frac\\pi4+\\frac{n\\pi}2$.",
+   "opts": [
+    "$\\frac\\pi4$",
+    "$\\frac{3\\pi}4$",
+    "$\\frac{5\\pi}4$",
+    "$\\frac\\pi2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\sin x+\\sqrt3\\cos x$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$2\\sin(x+\\frac\\pi3)$.",
+   "opts": [
+    "The greatest value is $2$",
+    "$f(x)=2\\sin\\left(x+\\frac\\pi3\\right)$",
+    "$f\\left(\\frac\\pi6\\right)=2$",
+    "The period is $2\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $A=30^\\circ$, $B=45^\\circ$, $a=2$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac{a}{\\sin A}=4$; $c=4\\sin105^\\circ$.",
+   "opts": [
+    "$b=2\\sqrt2$",
+    "$C=105^\\circ$",
+    "$c=\\sqrt6+\\sqrt2$",
+    "$\\triangle ABC$ is right-angled"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of solutions of $\\sin x=\\frac{x}{10}$ with $x\\ge0$.",
+   "a": "$4$",
+   "s": "$x=0$; one root in $(0,\\pi)$; two roots in $(2\\pi,3\\pi)$; none beyond $x=10$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\dfrac{1}{\\sin10^\\circ}-\\dfrac{\\sqrt3}{\\cos10^\\circ}$.",
+   "a": "$4$",
+   "s": "$\\frac{2\\cdot2\\sin(30^\\circ-10^\\circ)}{\\sin20^\\circ}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$\\tan A=\\frac17$, $\\tan B=\\frac13$. Find $\\tan(A+2B)$.",
+   "a": "$1$",
+   "s": "$\\tan2B=\\frac34$; $\\frac{\\frac17+\\frac34}{1-\\frac3{28}}=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the greatest value of $8\\sin x\\cos x+3\\cos2x$.",
+   "a": "$5$",
+   "s": "$4\\sin2x+3\\cos2x$: $\\sqrt{16+9}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each expression with its value.\nList-I: (P) $\\sin18^\\circ$; (Q) $\\cos36^\\circ$; (R) $\\tan15^\\circ$; (S) $\\sin75^\\circ$\nList-II: (1) $\\frac{\\sqrt5-1}4$; (2) $\\frac{\\sqrt5+1}4$; (3) $2-\\sqrt3$; (4) $\\frac{\\sqrt6+\\sqrt2}4$; (5) $2+\\sqrt3$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard values.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its period.\nList-I: (P) $\\sin3x$; (Q) $\\tan2x$; (R) $|\\cos x|$; (S) $\\cos\\frac x2$\nList-II: (1) $\\frac{2\\pi}3$; (2) $\\frac\\pi2$; (3) $\\pi$; (4) $4\\pi$; (5) $2\\pi$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{2\\pi}{3}$; $\\frac\\pi2$; $\\pi$; $\\frac{2\\pi}{\\frac12}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 3$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 4$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each expression with its range.\nList-I: (P) $3\\sin x+4\\cos x$; (Q) $\\sin^2x+2$; (R) $\\sin x\\cos x$; (S) $\\cos2x-1$\nList-II: (1) $[-5,5]$; (2) $[2,3]$; (3) $\\left[-\\frac12,\\frac12\\right]$; (4) $[-2,0]$; (5) $[-1,1]$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Bounds of sine and cosine.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each equation with its general solution.\nList-I: (P) $\\sin x=0$; (Q) $\\cos x=0$; (R) $\\tan x=1$; (S) $\\cos x=1$\nList-II: (1) $n\\pi$; (2) $(2n+1)\\frac\\pi2$; (3) $n\\pi+\\frac\\pi4$; (4) $2n\\pi$; (5) $2n\\pi\\pm\\frac\\pi4$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard solutions.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch3-advanced-02": [
+  {
+   "q": "The value of $\\cos\\frac\\pi{15}\\cos\\frac{2\\pi}{15}\\cos\\frac{4\\pi}{15}\\cos\\frac{8\\pi}{15}$ is",
+   "a": "(A) $-\\frac1{16}$",
+   "s": "$\\frac{\\sin\\frac{16\\pi}{15}}{16\\sin\\frac\\pi{15}}$ and $\\sin\\frac{16\\pi}{15}=-\\sin\\frac\\pi{15}$.",
+   "opts": [
+    "$-\\frac1{16}$",
+    "$-\\frac1{32}$",
+    "$\\frac18$",
+    "$\\frac1{16}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sin\\alpha+\\sin\\beta=a$ and $\\cos\\alpha+\\cos\\beta=b$. Then $\\cos(\\alpha-\\beta)$ equals",
+   "a": "(D) $\\dfrac{a^2+b^2-2}{2}$",
+   "s": "$a^2+b^2=2+2\\cos(\\alpha-\\beta)$.",
+   "opts": [
+    "$\\dfrac{a^2+b^2}{2}$",
+    "$a^2+b^2-1$",
+    "$\\dfrac{a^2-b^2}{2}$",
+    "$\\dfrac{a^2+b^2-2}{2}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $x\\in[0,2\\pi]$ with $\\sin x+\\cos x=\\sqrt2$ is",
+   "a": "(C) $1$",
+   "s": "$\\sqrt2\\sin(x+\\frac\\pi4)=\\sqrt2$: $x=\\frac\\pi4$.",
+   "opts": [
+    "$3$",
+    "$0$",
+    "$1$",
+    "$2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$, $\\dfrac{\\cos A}{a}=\\dfrac{\\cos B}{b}=\\dfrac{\\cos C}{c}$ and $a=2$. The area is",
+   "a": "(B) $\\sqrt3$",
+   "s": "Equilateral: $\\frac{\\sqrt3}4\\cdot4$.",
+   "opts": [
+    "$2\\sqrt3$",
+    "$\\sqrt3$",
+    "$2$",
+    "$\\frac{\\sqrt3}2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\tan\\theta=\\frac34$ with $\\pi<\\theta<\\frac{3\\pi}2$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\cos\\theta=-\\frac45$; $\\tan\\frac\\theta2=\\frac{1-\\cos\\theta}{\\sin\\theta}=\\frac{\\frac95}{-\\frac35}$.",
+   "opts": [
+    "$\\sin\\theta=-\\frac35$",
+    "$\\cos2\\theta=\\frac7{25}$",
+    "$\\sin2\\theta=\\frac{24}{25}$",
+    "$\\tan\\frac\\theta2=-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which identities are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\sin2x=\\frac{2\\tan x}{1+\\tan^2x}$.",
+   "opts": [
+    "$\\sin3x=3\\sin x-4\\sin^3x$",
+    "$\\tan3x=\\dfrac{3\\tan x-\\tan^3x}{1-3\\tan^2x}$",
+    "$\\cos2x=\\dfrac{1-\\tan^2x}{1+\\tan^2x}$",
+    "$\\sin2x=\\dfrac{2\\tan x}{1-\\tan^2x}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The solutions of $\\sin x-\\cos x=1$ in $[0,2\\pi]$ are",
+   "a": "(A), (B)",
+   "s": "$\\sqrt2\\sin(x-\\frac\\pi4)=1$.",
+   "opts": [
+    "$\\frac\\pi2$",
+    "$\\pi$",
+    "$0$",
+    "$\\frac{3\\pi}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A+B+C=\\pi$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Conditional identities.",
+   "opts": [
+    "$\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$",
+    "$\\sin2A+\\sin2B+\\sin2C=4\\sin A\\sin B\\sin C$",
+    "$\\cos(A+B)=-\\cos C$",
+    "$\\sin\\frac{A+B}2=\\cos\\frac C2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of solutions of $\\tan2x=\\cot x$ in $(0,\\pi)$.",
+   "a": "$3$",
+   "s": "$\\tan2x=\\tan(\\frac\\pi2-x)\\Rightarrow x=\\frac\\pi6+\\frac{n\\pi}3$: $\\frac\\pi6,\\frac\\pi2,\\frac{5\\pi}6$ (at $\\frac\\pi2$ both sides are $0$).",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\sin^2\\frac\\pi8+\\sin^2\\frac{3\\pi}8+\\sin^2\\frac{5\\pi}8+\\sin^2\\frac{7\\pi}8$.",
+   "a": "$2$",
+   "s": "Pairs add to $1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "In $\\triangle ABC$, $a=5$, $b=7$, $c=8$. Find angle $B$ in degrees.",
+   "a": "$60$",
+   "s": "$\\cos B=\\frac{25+64-49}{80}=\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the least positive $x$, in degrees, with $\\cos x+\\cos2x+\\cos3x=0$ and $\\cos2x\\ne0$.",
+   "a": "$120$",
+   "s": "$\\cos2x(2\\cos x+1)=0$; $\\cos x=-\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $\\cos^2\\frac\\pi8$; (Q) $\\sin^2\\frac\\pi8$; (R) $\\tan\\frac\\pi8$; (S) $\\cot\\frac\\pi8$\nList-II: (1) $\\frac{2+\\sqrt2}4$; (2) $\\frac{2-\\sqrt2}4$; (3) $\\sqrt2-1$; (4) $\\sqrt2+1$; (5) $\\frac12$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Half-angle formulas.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In $\\triangle ABC$ with $a=3$, $b=4$, $c=5$, match.\nList-I: (P) $\\sin A$; (Q) $\\cos A$; (R) $\\sin C$; (S) area\nList-II: (1) $\\frac35$; (2) $\\frac45$; (3) $1$; (4) $6$; (5) $\\frac12$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Right angle at $C$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 4$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each sum with its product form.\nList-I: (P) $\\sin5x+\\sin3x$; (Q) $\\sin5x-\\sin3x$; (R) $\\cos5x+\\cos3x$; (S) $\\cos3x-\\cos5x$\nList-II: (1) $2\\sin4x\\cos x$; (2) $2\\cos4x\\sin x$; (3) $2\\cos4x\\cos x$; (4) $2\\sin4x\\sin x$; (5) $2\\sin x\\cos x$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Sum–product formulas.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each angle with its radian measure.\nList-I: (P) $15^\\circ$; (Q) $75^\\circ$; (R) $135^\\circ$; (S) $225^\\circ$\nList-II: (1) $\\frac\\pi{12}$; (2) $\\frac{5\\pi}{12}$; (3) $\\frac{3\\pi}4$; (4) $\\frac{5\\pi}4$; (5) $\\frac{7\\pi}4$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\times\\frac\\pi{180}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

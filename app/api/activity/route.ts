@@ -1,4 +1,5 @@
 import { hasGrade10Package, isGrade10Paper } from '@/lib/grade10-package-access';
+import { hasGrade12Package, isGrade12Paper } from '@/lib/grade12-package-access';
 import {canOpenBasicsAny} from '@/lib/basics-access';
 import { getDatabase, getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
 import { activityPaper, recordPresence } from '@/lib/student-activity';
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
       if (paper.kind==='quiz' && !await hasMcqAccess(user,paper.chapter!,paper.grade!,'board' in paper ? paper.board : 'CBSE')) return jsonError('Test access required.',403);
       if (paper.kind==='integrals' && !await hasIntegralsAccess(user,body.paperId)) return jsonError('Test access required.',403);
       if (paper.kind==='g12practice' && !await hasG12PracticeAccess(user,body.paperId)) return jsonError('Test access required.',403);
-      if (paper.kind==='paper' && !(isGrade10Paper(body.paperId) && await hasGrade10Package(user))) {
+      if (paper.kind==='paper' && !(isGrade10Paper(body.paperId) && await hasGrade10Package(user)) && !(isGrade12Paper(body.paperId) && await hasGrade12Package(user))) {
         const access=await getDatabase().prepare(`SELECT 1 FROM payment_requests WHERE user_id=? AND paper_id=? AND status='approved' UNION ALL SELECT 1 FROM submissions WHERE (user_id=? OR lower(user_email)=?) AND paper_id=? AND (package_access_until_ms IS NULL OR package_access_until_ms>?) LIMIT 1`).bind(user.userId,body.paperId,user.userId,user.email.toLowerCase(),body.paperId,Date.now()).first();
         if (!access) return jsonError('Test access required.',403);
       }

@@ -11,7 +11,7 @@ export default async function G12PracticePaper({ params }: { params: Promise<{ c
   const { chapter, id } = await params;
   const product = getG12PracticeProduct(id);
   const questions = g12PracticeBanks[id];
-  if (!product || !questions || chapter !== `ch-${product.chapter}`) notFound();
+  if (!product || product.grade !== 12 || !questions || chapter !== `ch-${product.chapter}`) notFound();
   const path = g12PracticePath(product.chapter);
   const user = await getGoogleUser();
   if (!user) redirect(googleSignInPath(`${path}/papers/${id}`));

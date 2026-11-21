@@ -1,5 +1,7 @@
 import { GRADE10_PACKAGE } from '@/lib/grade10-package';
 import { hasGrade10Package, isGrade10Paper } from '@/lib/grade10-package-access';
+import { GRADE12_PACKAGE } from '@/lib/grade12-package';
+import { hasGrade12Package, isGrade12Paper } from '@/lib/grade12-package-access';
 import { getPaperAssessment } from '@/lib/assessment';
 import { RELATIONS_TEST_ID, answeringMinutes } from '@/lib/paper-format';
 import { getDatabase, getRequestUser, jsonError, sameOrigin } from '@/lib/server';
@@ -23,7 +25,8 @@ export async function POST(request: Request) {
       WHERE (user_id = ? OR lower(user_email) = ?) AND paper_id = ? AND status != 'draft' AND (package_access_until_ms IS NULL OR package_access_until_ms > ?)
       LIMIT 1
     `).bind(user.userId, paperId, user.userId, user.email.toLowerCase(), paperId, Date.now()).first<{ allowed: number; expires: number | null }>();
-    const packageAccess = !access && isGrade10Paper(paperId) && await hasGrade10Package(user);
+    const packageUntil = access ? null : isGrade10Paper(paperId) && await hasGrade10Package(user) ? GRADE10_PACKAGE.expiresAt : isGrade12Paper(paperId) && await hasGrade12Package(user) ? GRADE12_PACKAGE.expiresAt : null;
+    const packageAccess = packageUntil !== null;
     if (!access && !packageAccess && paperId !== RELATIONS_TEST_ID) return jsonError('Payment or prior chapter access is required before starting this test.', 403);
 
     let submission = await db.prepare(`
@@ -43,7 +46,7 @@ export async function POST(request: Request) {
           (id, user_id, user_email, student_name, paper_id, status, mcq_answers,
             started_at_ms, work_deadline_at_ms, upload_deadline_at_ms, package_access_until_ms)
         VALUES (?, ?, ?, ?, ?, 'draft', '{}', ?, ?, ?, ?)
-      `).bind(id, user.userId, user.email, studentName, paperId, timing.startedAtMs, timing.workDeadlineAtMs, timing.uploadDeadlineAtMs, access?.expires ?? (packageAccess ? GRADE10_PACKAGE.expiresAt : null)).run();
+      `).bind(id, user.userId, user.email, studentName, paperId, timing.startedAtMs, timing.workDeadlineAtMs, timing.uploadDeadlineAtMs, access?.expires ?? packageUntil).run();
       submission = await db.prepare(`
         SELECT id, user_id, paper_id, status, mcq_answers, mcq_score,
           started_at_ms, work_deadline_at_ms, upload_deadline_at_ms

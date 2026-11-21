@@ -45,6 +45,6 @@ export default function IntegralsOnline() {
 </div>
       <SessionTick index={i} total={lessons.length} />
     </section>)}
-    <footer><h2>Put the ideas to work</h2><p><a href="/cbse/grade-12/ch-7/free-mcq">Take the free 50-question MCQ practice →</a></p><p><a href="/cbse/grade-12/integrals">Choose a CBSE or JEE practice paper →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
+    <footer><h2>Put the ideas to work</h2><p><a href="/cbse/grade-12/ch-7/free-mcq">Take the free 30-question MCQ practice →</a></p><p><a href="/cbse/grade-12/integrals">Choose a CBSE or JEE practice paper →</a></p><small>Original explanations and examples · Ramavana Mathematical Center</small></footer>
   </main>;
 }

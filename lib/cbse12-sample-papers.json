@@ -1,0 +1,1986 @@
+{
+ "papers": [
+  {
+   "id": "cbse12-sp-01",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "01",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Full syllabus · medium-to-difficult board paper covering every unit of the 2026–27 syllabus.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The number of equivalence relations on the set $\\{1, 2, 3\\}$ that contain the ordered pair $(1, 2)$ is",
+     "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The principal value of $\\cos^{-1}\\left(\\cos \\frac{7\\pi}{6}\\right)$ is",
+     "options": [
+      "$\\frac{7\\pi}{6}$",
+      "$\\frac{\\pi}{6}$",
+      "$-\\frac{\\pi}{6}$",
+      "$\\frac{5\\pi}{6}$"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "If $A$ is a square matrix of order 3 with $|A| = 4$, then $|\\operatorname{adj}(2A)|$ equals",
+     "options": [
+      "256",
+      "512",
+      "1024",
+      "128"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ and $A^{2} - 5A = kI$, then $k$ equals",
+     "options": [
+      "$-2$",
+      "$5$",
+      "$2$",
+      "$-5$"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The system $x + ky = 1,\\; kx + y = 1$ has no solution when $k$ equals",
+     "options": [
+      "$1$",
+      "$-1$",
+      "$0$",
+      "$2$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "The value of $k$ for which $f(x) = \\begin{cases} \\dfrac{1 - \\cos 4x}{8x^{2}}, & x \\neq 0 \\\\ k, & x = 0 \\end{cases}$ is continuous at $x = 0$ is",
+     "options": [
+      "$1$",
+      "$\\frac{1}{2}$",
+      "$2$",
+      "$4$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "For $-1 < x < 1$, the derivative of $\\tan^{-1}\\left(\\frac{2x}{1 - x^{2}}\\right)$ with respect to $x$ is",
+     "options": [
+      "$\\frac{1}{1 + x^{2}}$",
+      "$\\frac{-2}{1 + x^{2}}$",
+      "$\\frac{2}{1 - x^{2}}$",
+      "$\\frac{2}{1 + x^{2}}$"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If $x = a\\cos^{3} t$ and $y = a\\sin^{3} t$, then $\\frac{dy}{dx}$ equals",
+     "options": [
+      "$\\tan t$",
+      "$-\\cot t$",
+      "$\\cot t$",
+      "$-\\tan t$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The function $f(x) = x^{3} - 3x^{2} + 3x - 7$ is",
+     "options": [
+      "decreasing on $\\mathbb{R}$",
+      "increasing only on $(1, \\infty)$",
+      "increasing on $\\mathbb{R}$",
+      "has a local maximum at $x = 1$"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "$\\int e^{x}\\left(\\tan x + \\sec^{2} x\\right) dx$ equals",
+     "options": [
+      "$e^{x}\\sec x + C$",
+      "$e^{x}\\tan x + C$",
+      "$e^{x}\\sec^{2} x + C$",
+      "$e^{x}\\cot x + C$"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\left(x^{3} + x\\cos x + \\tan^{5} x + 1\\right) dx$ equals",
+     "options": [
+      "$\\pi$",
+      "$0$",
+      "$2$",
+      "$2\\pi$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "The area of the region bounded by the curve $y = \\sqrt{x}$, the $x$-axis and the line $x = 4$ is",
+     "options": [
+      "$\\frac{16}{3}$ sq. units",
+      "$\\frac{8}{3}$ sq. units",
+      "$\\frac{32}{3}$ sq. units",
+      "$8$ sq. units"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The order and degree of the differential equation $\\left(\\frac{d^{2}y}{dx^{2}}\\right)^{2} + \\sin\\left(\\frac{dy}{dx}\\right) = 0$ are",
+     "options": [
+      "order 2, degree 2",
+      "order 1, degree 2",
+      "order 2, degree 1",
+      "order 2, degree not defined"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "An integrating factor of $x\\frac{dy}{dx} - y = x^{2}\\log x \\;(x > 0)$ is",
+     "options": [
+      "$x$",
+      "$\\log x$",
+      "$\\frac{1}{x}$",
+      "$e^{x}$"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "If $|\\vec a| = 3$, $|\\vec b| = 4$, $|\\vec a \\times \\vec b| = 6$ and the angle between $\\vec a$ and $\\vec b$ is acute, then $\\vec a \\cdot \\vec b$ equals",
+     "options": [
+      "$6$",
+      "$6\\sqrt{3}$",
+      "$12$",
+      "$3\\sqrt{3}$"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The projection of $\\vec a = 2\\hat i + 3\\hat j + 2\\hat k$ on $\\vec b = \\hat i + 2\\hat j + \\hat k$ is",
+     "options": [
+      "$\\frac{10}{3}$",
+      "$\\frac{5\\sqrt{6}}{3}$",
+      "$\\frac{5}{\\sqrt{17}}$",
+      "$\\frac{10}{\\sqrt{17}}$"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The angle between the lines $\\frac{x - 1}{2} = \\frac{y - 2}{2} = \\frac{z - 3}{1}$ and $\\frac{x}{4} = \\frac{y + 1}{1} = \\frac{z - 2}{8}$ is",
+     "options": [
+      "$\\cos^{-1}\\frac{2}{3}$",
+      "$\\cos^{-1}\\frac{1}{3}$",
+      "$\\frac{\\pi}{2}$",
+      "$\\cos^{-1}\\frac{8}{27}$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "The corner points of a feasible region are $(0, 10), (5, 5), (15, 15)$ and $(0, 20)$. For $Z = px + qy$ $(p, q > 0)$, the maximum of $Z$ occurs at both $(15, 15)$ and $(0, 20)$ when",
+     "options": [
+      "$p = 3q$",
+      "$p = q$",
+      "$q = 2p$",
+      "$q = 3p$"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The function $f : \\mathbb{R} \\to \\mathbb{R}$, $f(x) = x^{3}$, is one-one.",
+     "reason": "A strictly increasing function is one-one."
+    },
+    {
+     "number": 20,
+     "assertion": "If $A$ and $B$ are independent events with $P(A) = 0.4$ and $P(B) = 0.5$, then $P(A \\cup B) = 0.9$.",
+     "reason": "For independent events $A$ and $B$, $P(A \\cap B) = P(A)\\,P(B)$."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the value of $\\tan^{-1}\\sqrt{3} - \\sec^{-1}(-2)$.",
+     "OR",
+     "Find the domain of the function $f(x) = \\sin^{-1}(2x - 1)$."
+    ],
+    "22": "If $x^{y} = e^{x - y}$, show that $\\frac{dy}{dx} = \\frac{\\log x}{(1 + \\log x)^{2}}$.",
+    "23": [
+     "Find a unit vector perpendicular to both $\\vec a = \\hat i + \\hat j + \\hat k$ and $\\vec b = \\hat i + 2\\hat j + 3\\hat k$.",
+     "OR",
+     "If $\\vec a + \\vec b + \\vec c = \\vec 0$ with $|\\vec a| = 3$, $|\\vec b| = 5$ and $|\\vec c| = 7$, find the angle between $\\vec a$ and $\\vec b$."
+    ],
+    "24": "Find the intervals in which $f(x) = 2x^{3} - 9x^{2} + 12x + 15$ is strictly increasing and strictly decreasing.",
+    "25": "A die is thrown twice. Find the probability that the sum of the numbers is 8, given that at least one of the numbers is 6.",
+    "26": [
+     "Find $\\int \\frac{x^{2}}{(x^{2} + 1)(x^{2} + 4)}\\, dx$.",
+     "OR",
+     "Find $\\int e^{x}\\left(\\frac{1 + \\sin x}{1 + \\cos x}\\right) dx$."
+    ],
+    "27": "Evaluate $\\int_{0}^{\\pi} \\frac{x\\sin x}{1 + \\cos^{2} x}\\, dx$.",
+    "28": [
+     "Solve the differential equation $(x^{2} - y^{2})\\,dx + 2xy\\,dy = 0$.",
+     "OR",
+     "Solve $\\frac{dy}{dx} + y\\cot x = 2x + x^{2}\\cot x$ $(x \\neq 0)$, given that $y = \\frac{\\pi^{2}}{4} + 1$ when $x = \\frac{\\pi}{2}$."
+    ],
+    "29": "Solve the following linear programming problem graphically. Maximise $Z = 3x + 2y$ subject to $x + 2y \\le 10$, $3x + y \\le 15$, $x \\ge 0$, $y \\ge 0$.",
+    "30": [
+     "Find the values of $a$ and $c$ for which $f(x) = \\begin{cases} \\dfrac{\\sin (a + 1)x + \\sin x}{x}, & x < 0 \\\\ c, & x = 0 \\\\ \\dfrac{\\sqrt{x + bx^{2}} - \\sqrt{x}}{b\\,x^{\\frac{3}{2}}}, & x > 0 \\end{cases}$ is continuous at $x = 0$ $(b \\neq 0)$.",
+     "OR",
+     "If $y = (\\tan^{-1} x)^{2}$, show that $(x^{2} + 1)^{2}\\frac{d^{2}y}{dx^{2}} + 2x(x^{2} + 1)\\frac{dy}{dx} = 2$."
+    ],
+    "31": "Two cards are drawn one after the other without replacement from a well-shuffled pack of 52 cards. Find the probability distribution of the number of aces, and find its mean.",
+    "32": [
+     "If $A = \\begin{bmatrix} 2 & -3 & 5 \\\\ 3 & 2 & -4 \\\\ 1 & 1 & -2 \\end{bmatrix}$, find $A^{-1}$. Using $A^{-1}$, solve the system $2x - 3y + 5z = 11$, $3x + 2y - 4z = -5$, $x + y - 2z = -3$.",
+     "OR",
+     "Find the product $AB$, where $A = \\begin{bmatrix} 1 & -1 & 0 \\\\ 2 & 3 & 4 \\\\ 0 & 1 & 2 \\end{bmatrix}$ and $B = \\begin{bmatrix} 2 & 2 & -4 \\\\ -4 & 2 & -4 \\\\ 2 & -1 & 5 \\end{bmatrix}$. Use it to solve $x - y = 3$, $2x + 3y + 4z = 17$, $y + 2z = 7$."
+    ],
+    "33": [
+     "Using integration, find the area of the region in the first quadrant enclosed by the $x$-axis, the line $y = x$ and the circle $x^{2} + y^{2} = 32$.",
+     "OR",
+     "Sketch the graph of $y = |x + 3|$ and evaluate $\\int_{-6}^{0} |x + 3|\\, dx$. What does the value represent?"
+    ],
+    "34": [
+     "Find the shortest distance between the lines $\\vec r = (\\hat i + 2\\hat j + \\hat k) + \\lambda(\\hat i - \\hat j + \\hat k)$ and $\\vec r = (2\\hat i - \\hat j - \\hat k) + \\mu(2\\hat i + \\hat j + 2\\hat k)$. Do the lines intersect? Give a reason.",
+     "OR",
+     "Find the coordinates of the foot of the perpendicular from $P(1, 6, 3)$ to the line $\\frac{x}{1} = \\frac{y - 1}{2} = \\frac{z - 2}{3}$. Hence find the image of $P$ in the line and the length of the perpendicular."
+    ],
+    "35": [
+     "A window is in the form of a rectangle surmounted by a semicircular opening. The total perimeter of the window is 10 m. Find the dimensions of the window that admit the maximum light through the whole opening.",
+     "OR",
+     "Show that the height of the right circular cylinder of maximum volume that can be inscribed in a sphere of radius $R$ is $\\frac{2R}{\\sqrt{3}}$. Also find the maximum volume."
+    ],
+    "36": [
+     "(i) Find the probability that the item is produced by machine $B$ and is defective. [1]",
+     "(ii) Find the probability that the chosen item is defective. [1]",
+     "(iii) The chosen item is defective. Find the probability that it was produced by machine $A$. [2]",
+     "OR",
+     "(iii) The chosen item is not defective. Find the probability that it was produced by machine $C$. [2]"
+    ],
+    "37": [
+     "(i) Write the equivalence class $[2]$. [1]",
+     "(ii) How many different equivalence classes does $R$ have? [1]",
+     "(iii) Show that $R$ is an equivalence relation. [2]",
+     "OR",
+     "(iii) The function $g : A \\to \\{0, 1, 2\\}$ gives the remainder when a team number is divided by 3. Show that $g$ is onto but not one-one. [2]"
+    ],
+    "38": [
+     "(i) Write the direction ratios of the path of the first drone. [1]",
+     "(ii) Are the two paths parallel? Give a reason. [1]",
+     "(iii) Find the angle between the two paths. [2]",
+     "OR",
+     "(iii) Show that the two paths do not intersect. [2]"
+    ]
+   },
+   "caseStudy": "A factory has three machines $A$, $B$ and $C$. They produce 50%, 30% and 20% of the total output. Of their outputs, 2%, 3% and 4% respectively are defective. An item is chosen at random from the total output.",
+   "caseStudies": {
+    "36": "A factory has three machines $A$, $B$ and $C$. They produce 50%, 30% and 20% of the total output. Of their outputs, 2%, 3% and 4% respectively are defective. An item is chosen at random from the total output.",
+    "37": "In a school quiz, the nine teams are numbered $1, 2, \\ldots, 9$. Let $A = \\{1, 2, \\ldots, 9\\}$. The organisers group the teams by the relation $R = \\{(a, b) : a, b \\in A \\text{ and } a - b \\text{ is divisible by } 3\\}$.",
+    "38": "Two drones fly in straight lines during a light show. The first follows $\\vec r = (\\hat i + \\hat j) + \\lambda(2\\hat i - \\hat j + \\hat k)$ and the second follows $\\vec r = (2\\hat i + \\hat j - \\hat k) + \\mu(3\\hat i - 5\\hat j + 2\\hat k)$."
+   },
+   "figures": {}
+  },
+  {
+   "id": "cbse12-sp-02",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "02",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Full syllabus · medium-to-difficult board paper with mixed applications in every section.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The relation $R$ on $\\mathbb{R}$ defined by $R = \\{(a, b) : a \\le b^{2}\\}$ is",
+     "options": [
+      "reflexive but not symmetric",
+      "neither reflexive, nor symmetric, nor transitive",
+      "symmetric but not transitive",
+      "transitive but not reflexive"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The number of onto functions from $\\{1, 2, 3\\}$ to $\\{a, b\\}$ is",
+     "options": [
+      "6",
+      "8",
+      "2",
+      "9"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The domain of $\\cos^{-1}(x^{2} - 4)$ is",
+     "options": [
+      "$[-\\sqrt{5}, \\sqrt{5}]$",
+      "$[\\sqrt{3}, \\sqrt{5}]$",
+      "$[3, 5]$",
+      "$[-\\sqrt{5}, -\\sqrt{3}] \\cup [\\sqrt{3}, \\sqrt{5}]$"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $\\begin{bmatrix} 0 & a & -3 \\\\ 2 & 0 & -1 \\\\ b & 1 & 0 \\end{bmatrix}$ is a skew-symmetric matrix, then $a + b$ equals",
+     "options": [
+      "$-1$",
+      "$5$",
+      "$-5$",
+      "$1$"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "The area of the triangle with vertices $(-3, 0)$, $(3, 0)$ and $(0, k)$ is 9 square units. Then $k$ equals",
+     "options": [
+      "$\\pm 9$",
+      "$3$ only",
+      "$\\pm 3$",
+      "$\\pm 6$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "If $A = \\begin{bmatrix} \\cos x & -\\sin x \\\\ \\sin x & \\cos x \\end{bmatrix}$, $0 < x < \\frac{\\pi}{2}$, and $A + A^{T} = I$, then $x$ equals",
+     "options": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{\\pi}{12}$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The number of points at which $f(x) = |x| + |x - 1|$ is not differentiable is",
+     "options": [
+      "2",
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If $y = \\log(\\sec x + \\tan x)$, then $\\frac{dy}{dx}$ equals",
+     "options": [
+      "$\\sec x$",
+      "$\\tan x$",
+      "$\\sec x\\tan x$",
+      "$\\sec^{2} x$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The maximum value of $f(x) = x e^{-x}$ is",
+     "options": [
+      "$e$",
+      "$1$",
+      "$-\\frac{1}{e}$",
+      "$\\frac{1}{e}$"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The radius of a circle increases at the rate of $0.7$ cm/s. The rate of increase of its circumference is",
+     "options": [
+      "$0.7\\pi$ cm/s",
+      "$1.4$ cm/s",
+      "$1.4\\pi$ cm/s",
+      "$4.9\\pi$ cm/s"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int \\frac{dx}{x^{2} + 6x + 13}$ equals",
+     "options": [
+      "$\\tan^{-1}(x + 3) + C$",
+      "$\\frac{1}{2}\\tan^{-1}\\frac{x + 3}{2} + C$",
+      "$\\frac{1}{2}\\tan^{-1}\\frac{x - 3}{2} + C$",
+      "$2\\tan^{-1}\\frac{x + 3}{2} + C$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "$\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin^{4} x}{\\sin^{4} x + \\cos^{4} x}\\, dx$ equals",
+     "options": [
+      "$\\frac{\\pi}{2}$",
+      "$\\frac{\\pi}{4}$",
+      "$0$",
+      "$1$"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "$\\int_{0}^{2} x[x]\\, dx$, where $[x]$ is the greatest integer function, equals",
+     "options": [
+      "$\\frac{3}{2}$",
+      "$2$",
+      "$\\frac{1}{2}$",
+      "$3$"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The general solution of $\\frac{dy}{dx} = e^{x + y}$ is",
+     "options": [
+      "$e^{x} + e^{y} = C$",
+      "$e^{-x} + e^{y} = C$",
+      "$e^{x} - e^{-y} = C$",
+      "$e^{x} + e^{-y} = C$"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The number of arbitrary constants in a particular solution of a differential equation of order three is",
+     "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "If $\\hat a$ and $\\hat b$ are unit vectors and $|\\hat a + \\hat b| = \\sqrt{3}$, the angle between them is",
+     "options": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{2}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{2\\pi}{3}$"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "A line makes angles $90^{\\circ}$, $135^{\\circ}$ and $45^{\\circ}$ with the $x$-, $y$- and $z$-axes. Its direction cosines are",
+     "options": [
+      "$0, \\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}$",
+      "$0, -\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}$",
+      "$1, -\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}$",
+      "$0, -\\frac{1}{2}, \\frac{1}{2}$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "The minimum value of $Z = 3x + 5y$ subject to $x + 3y \\ge 3$, $x + y \\ge 2$, $x \\ge 0$, $y \\ge 0$ is",
+     "options": [
+      "$7$",
+      "$9$",
+      "$6$",
+      "$10$"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The matrix $\\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix}$ is skew-symmetric.",
+     "reason": "For every square matrix $A$, the matrix $A - A^{T}$ is skew-symmetric."
+    },
+    {
+     "number": 20,
+     "assertion": "The function $f(x) = |x|$ is continuous at $x = 0$.",
+     "reason": "The function $f(x) = |x|$ is differentiable at $x = 0$."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the value of $\\sin^{-1}\\left(\\sin\\frac{3\\pi}{5}\\right)$.",
+     "OR",
+     "Show that the function $f : \\mathbb{N} \\to \\mathbb{N}$, $f(x) = 2x$, is one-one but not onto."
+    ],
+    "22": "Differentiate $\\sin^{-1}\\left(2x\\sqrt{1 - x^{2}}\\right)$ with respect to $x$, where $-\\frac{1}{\\sqrt{2}} < x < \\frac{1}{\\sqrt{2}}$.",
+    "23": [
+     "Find the area of the triangle with vertices $A(1, 1, 2)$, $B(2, 3, 5)$ and $C(1, 5, 5)$.",
+     "OR",
+     "If $|\\vec a| = 2$, $|\\vec b| = 3$ and $\\vec a \\cdot \\vec b = 3$, find $|\\vec a - 2\\vec b|$."
+    ],
+    "24": "Given $P(A) = 0.6$, $P(B) = 0.5$ and $P(A \\mid B) = 0.4$, find $P(A \\cup B)$ and $P(B \\mid A)$.",
+    "25": "Show that $f(x) = \\tan^{-1}(\\sin x + \\cos x)$ is strictly increasing in $\\left(0, \\frac{\\pi}{4}\\right)$.",
+    "26": [
+     "Find $\\int \\frac{3x + 5}{x^{2} + 3x - 18}\\, dx$.",
+     "OR",
+     "Find $\\int x^{2}\\tan^{-1} x\\, dx$."
+    ],
+    "27": "Evaluate $\\int_{1}^{4} \\left(|x - 1| + |x - 2| + |x - 3|\\right) dx$.",
+    "28": [
+     "Solve $(1 + x^{2})\\frac{dy}{dx} + 2xy = \\frac{1}{1 + x^{2}}$, given that $y = 0$ when $x = 0$.",
+     "OR",
+     "Solve the differential equation $x\\frac{dy}{dx} - y = \\sqrt{x^{2} + y^{2}}$ $(x > 0)$."
+    ],
+    "29": "Solve graphically: minimise $Z = 200x + 500y$ subject to $x + 2y \\ge 10$, $3x + 4y \\le 24$, $x \\ge 0$, $y \\ge 0$.",
+    "30": [
+     "If $y = e^{a\\cos^{-1}x}$, $-1 < x < 1$, show that $(1 - x^{2})\\frac{d^{2}y}{dx^{2}} - x\\frac{dy}{dx} - a^{2}y = 0$.",
+     "OR",
+     "If $x = a(\\theta + \\sin\\theta)$ and $y = a(1 - \\cos\\theta)$, find $\\frac{d^{2}y}{dx^{2}}$ at $\\theta = \\frac{\\pi}{2}$."
+    ],
+    "31": "Bag I contains 3 red and 4 black balls. Bag II contains 5 red and 6 black balls. A bag is chosen at random and a ball is drawn from it. The ball is red. Find the probability that it was drawn from Bag II.",
+    "32": [
+     "The cost of 4 kg onion, 3 kg wheat and 2 kg rice is ₹60. The cost of 2 kg onion, 4 kg wheat and 6 kg rice is ₹90. The cost of 6 kg onion, 2 kg wheat and 3 kg rice is ₹70. Find the cost of each item per kg by the matrix method.",
+     "OR",
+     "If $A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 2 & -3 \\\\ 2 & -1 & 3 \\end{bmatrix}$, find $A^{-1}$. Hence solve $x + y + z = 6$, $x + 2y - 3z = -4$, $2x - y + 3z = 9$."
+    ],
+    "33": [
+     "Using integration, find the area enclosed by the ellipse $9x^{2} + 4y^{2} = 36$.",
+     "OR",
+     "Find the area of the region bounded by the curve $x^{2} = 4y$, the $y$-axis and the lines $y = 2$ and $y = 4$, lying in the first quadrant."
+    ],
+    "34": [
+     "Find the vector and the Cartesian equations of the line through the point $(1, 2, -4)$ that is perpendicular to both the lines $\\frac{x - 8}{3} = \\frac{y + 19}{-16} = \\frac{z - 10}{7}$ and $\\frac{x - 15}{3} = \\frac{y - 29}{8} = \\frac{z - 5}{-5}$.",
+     "OR",
+     "Show that the lines $\\frac{x + 1}{3} = \\frac{y + 3}{5} = \\frac{z + 5}{7}$ and $\\frac{x - 2}{1} = \\frac{y - 4}{3} = \\frac{z - 6}{5}$ intersect. Find their point of intersection."
+    ],
+    "35": [
+     "A tank with a rectangular base and rectangular sides, open at the top, is to be 2 m deep and to hold $8\\ \\text{m}^{3}$. Building the tank costs ₹70 per $\\text{m}^{2}$ for the base and ₹45 per $\\text{m}^{2}$ for the sides. Find the cost of the least expensive tank.",
+     "OR",
+     "Find two positive numbers $x$ and $y$ such that $x + y = 60$ and $xy^{3}$ is maximum."
+    ],
+    "36": [
+     "(i) Find the value of $k$. [1]",
+     "(ii) Find $P(X \\ge 2)$. [1]",
+     "(iii) Find the mean number of umbrellas sold. [2]",
+     "OR",
+     "(iii) Find $P(X \\le 1 \\mid X \\le 2)$. [2]"
+    ],
+    "37": [
+     "(i) Write the range of the principal value branch of $\\sin^{-1} x$. [1]",
+     "(ii) Find the value of $\\sin^{-1}\\left(\\sin\\frac{2\\pi}{3}\\right)$. [1]",
+     "(iii) Find the values of $x$ for which $\\sin^{-1}(2x - 3)$ is defined. For which $x$ is $\\sin^{-1}(2x - 3) = \\frac{\\pi}{2}$? [2]",
+     "OR",
+     "(iii) Find the value of $\\cos^{-1}\\left(-\\frac{1}{2}\\right) + 2\\sin^{-1}\\left(\\frac{1}{2}\\right)$. [2]"
+    ],
+    "38": [
+     "(i) Write the position vector of $P$. [1]",
+     "(ii) Find the unit vector in the direction of $\\overrightarrow{PQ}$. [1]",
+     "(iii) Find the cosine of the angle $\\angle POQ$. [2]",
+     "OR",
+     "(iii) Find the area of the triangle $OPQ$. [2]"
+    ]
+   },
+   "caseStudy": "A shop keeps records of the number of umbrellas $X$ sold on a rainy day. The probability distribution is $P(X = x) = k(x + 1)$ for $x = 0, 1, 2, 3$, and $P(X = x) = 0$ otherwise.",
+   "caseStudies": {
+    "36": "A shop keeps records of the number of umbrellas $X$ sold on a rainy day. The probability distribution is $P(X = x) = k(x + 1)$ for $x = 0, 1, 2, 3$, and $P(X = x) = 0$ otherwise.",
+    "37": "In a design class, students draw the graph of $y = \\sin^{-1} x$ on its principal branch to shape an arch. They then work with related inverse trigonometric values.",
+    "38": "An air-traffic radar at the origin $O$ records two aircraft at the points $P(1, 2, 3)$ and $Q(3, 6, 7)$ (in kilometres)."
+   },
+   "figures": {}
+  },
+  {
+   "id": "cbse12-sp-03",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "03",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Full syllabus · medium-to-difficult board paper with reasoning-based and application questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The function $f : \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = x|x|$ is",
+     "options": [
+      "one-one but not onto",
+      "onto but not one-one",
+      "one-one and onto",
+      "neither one-one nor onto"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The relation $R = \\{(x, y) : x + 2y = 8\\}$ is defined on $\\mathbb{N}$. The range of $R$ is",
+     "options": [
+      "$\\{2, 4, 6\\}$",
+      "$\\{1, 2, 3\\}$",
+      "$\\{1, 2, 3, 4\\}$",
+      "$\\{2, 4, 6, 8\\}$"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The value of $\\tan^{-1}(1) + \\cos^{-1}\\left(-\\frac{1}{2}\\right) + \\sin^{-1}\\left(-\\frac{1}{2}\\right)$ is",
+     "options": [
+      "$\\frac{3\\pi}{4}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{5\\pi}{12}$",
+      "$\\frac{\\pi}{2}$"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $A$ and $B$ are symmetric matrices of the same order, then $AB - BA$ is",
+     "options": [
+      "a skew-symmetric matrix",
+      "a symmetric matrix",
+      "the zero matrix in every case",
+      "the identity matrix"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If $\\begin{vmatrix} 2x & 5 \\\\ 8 & x \\end{vmatrix} = \\begin{vmatrix} 6 & -2 \\\\ 7 & 3 \\end{vmatrix}$, then $x$ equals",
+     "options": [
+      "$6$ only",
+      "$\\pm 3$",
+      "$\\pm 4$",
+      "$\\pm 6$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "If $A$ is a square matrix such that $A^{2} = A$, then $(I + A)^{3} - 7A$ equals",
+     "options": [
+      "$A$",
+      "$O$",
+      "$I$",
+      "$3A$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The value of $k$ for which $f(x) = \\begin{cases} kx^{2}, & x \\le 2 \\\\ 3, & x > 2 \\end{cases}$ is continuous at $x = 2$ is",
+     "options": [
+      "$\\frac{4}{3}$",
+      "$\\frac{3}{4}$",
+      "$3$",
+      "$\\frac{3}{2}$"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "The derivative of $x^{x}$ at $x = 1$ is",
+     "options": [
+      "$0$",
+      "$1$",
+      "$e$",
+      "$2$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The absolute maximum value of $f(x) = \\sin x + \\cos x$ on $[0, \\pi]$ is",
+     "options": [
+      "$\\sqrt{2}$",
+      "$1$",
+      "$2$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The function $f(x) = x^{x}$, $x > 0$, has a stationary point at",
+     "options": [
+      "$x = e$",
+      "$x = 1$",
+      "$x = \\sqrt{e}$",
+      "$x = \\frac{1}{e}$"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int \\frac{dx}{x\\log x}$ equals",
+     "options": [
+      "$\\frac{(\\log x)^{2}}{2} + C$",
+      "$\\log x + C$",
+      "$\\log|\\log x| + C$",
+      "$\\frac{1}{\\log x} + C$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "$\\int_{0}^{1} x(1 - x)^{99}\\, dx$ equals",
+     "options": [
+      "$\\frac{1}{100}$",
+      "$\\frac{1}{10000}$",
+      "$\\frac{1}{10100}$",
+      "$\\frac{1}{10001}$"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The area of the region bounded by $y^{2} = 4x$ $(y \\ge 0)$, the $x$-axis and the lines $x = 1$ and $x = 4$ is",
+     "options": [
+      "$\\frac{14}{3}$ sq. units",
+      "$\\frac{28}{3}$ sq. units",
+      "$\\frac{56}{3}$ sq. units",
+      "$7$ sq. units"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The solution of $\\frac{dy}{dx} + y = e^{-x}$ with $y(0) = 0$ is",
+     "options": [
+      "$y = xe^{-x}$",
+      "$y = e^{-x}$",
+      "$y = xe^{x}$",
+      "$y = (x + 1)e^{-x}$"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The degree of the differential equation $\\left(\\frac{d^{3}y}{dx^{3}}\\right)^{2} + \\left(\\frac{d^{2}y}{dx^{2}}\\right)^{3} + \\left(\\frac{dy}{dx}\\right)^{4} + y^{5} = 0$ is",
+     "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The vectors $2\\hat i - 3\\hat j + 4\\hat k$ and $\\lambda\\hat i + 6\\hat j - 8\\hat k$ are collinear when $\\lambda$ equals",
+     "options": [
+      "$4$",
+      "$-3$",
+      "$3$",
+      "$-4$"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "If $|\\vec a \\times \\vec b| = \\sqrt{3}$ and $\\vec a \\cdot \\vec b = 1$, then the angle between $\\vec a$ and $\\vec b$ is",
+     "options": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{2\\pi}{3}$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "For the problem: maximise $Z = x + y$ subject to $x - y \\le -1$, $-x + y \\le 0$, $x, y \\ge 0$,",
+     "options": [
+      "the maximum is $1$",
+      "there is no feasible region, so $Z$ has no maximum",
+      "the maximum is $0$",
+      "the region is unbounded and the maximum is infinite"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The relation $R = \\{(1, 1), (2, 2), (3, 3), (1, 2), (2, 3)\\}$ on $\\{1, 2, 3\\}$ is not transitive.",
+     "reason": "$(1, 2) \\in R$ and $(2, 3) \\in R$, but $(1, 3) \\notin R$."
+    },
+    {
+     "number": 20,
+     "assertion": "If $A$ and $B$ are mutually exclusive events with non-zero probabilities, then $A$ and $B$ are independent.",
+     "reason": "For mutually exclusive events, $P(A \\cap B) = 0$."
+    }
+   ],
+   "written": {
+    "21": [
+     "Let $L$ be the set of all lines in a plane, and let $R = \\{(L_{1}, L_{2}) : L_{1} \\perp L_{2}\\}$. Show that $R$ is symmetric but neither reflexive nor transitive.",
+     "OR",
+     "Find the value of $\\sec^{2}(\\tan^{-1} 2) + \\operatorname{cosec}^{2}(\\cot^{-1} 3)$."
+    ],
+    "22": "Find the values of $p$ and $q$ for which $f(x) = \\begin{cases} x^{2} + 3x + p, & x \\le 1 \\\\ qx + 2, & x > 1 \\end{cases}$ is differentiable at $x = 1$.",
+    "23": [
+     "If $\\vec a = \\hat i + \\hat j + \\hat k$ and $\\vec b = \\hat j - \\hat k$, find a vector $\\vec c$ such that $\\vec a \\times \\vec c = \\vec b$ and $\\vec a \\cdot \\vec c = 3$.",
+     "OR",
+     "Find the projection of $\\vec b + \\vec c$ on $\\vec a$, where $\\vec a = 2\\hat i - 2\\hat j + \\hat k$, $\\vec b = \\hat i + 2\\hat j - 2\\hat k$ and $\\vec c = 2\\hat i - \\hat j + 4\\hat k$."
+    ],
+    "24": "$A$ and $B$ throw a die alternately until one of them gets a six. $A$ starts the game. Find the probability that $A$ wins.",
+    "25": "Find the absolute maximum and absolute minimum values of $f(x) = 2x^{3} - 15x^{2} + 36x + 1$ on $[1, 5]$.",
+    "26": [
+     "Find $\\int \\frac{\\sin x}{\\sin (x - a)}\\, dx$.",
+     "OR",
+     "Find $\\int \\frac{x^{2} + x + 1}{(x + 2)(x^{2} + 1)}\\, dx$."
+    ],
+    "27": "Evaluate $\\int_{0}^{\\frac{\\pi}{2}} \\log(\\sin x)\\, dx$.",
+    "28": [
+     "Solve the differential equation $y\\,dx + (x - y^{2})\\,dy = 0$.",
+     "OR",
+     "Find the particular solution of $\\frac{dy}{dx} = 1 + x + y + xy$, given that $y = 0$ when $x = 1$."
+    ],
+    "29": "Solve graphically: maximise $Z = 5x + 3y$ subject to $3x + 5y \\le 15$, $5x + 2y \\le 10$, $x \\ge 0$, $y \\ge 0$.",
+    "30": [
+     "Find $\\frac{dy}{dx}$ if $y = (\\log x)^{x} + x^{\\log x}$, $x > 1$.",
+     "OR",
+     "If $\\sqrt{1 - x^{2}} + \\sqrt{1 - y^{2}} = a(x - y)$, prove that $\\frac{dy}{dx} = \\sqrt{\\frac{1 - y^{2}}{1 - x^{2}}}$."
+    ],
+    "31": "A coin is biased so that a head is twice as likely to occur as a tail. The coin is tossed three times. Find the probability distribution of the number of heads, and find its mean.",
+    "32": [
+     "If $A = \\begin{bmatrix} 1 & 2 & 2 \\\\ 2 & 1 & 2 \\\\ 2 & 2 & 1 \\end{bmatrix}$, show that $A^{2} - 4A - 5I = O$. Hence find $A^{-1}$.",
+     "OR",
+     "Solve, using matrices: $\\frac{2}{x} + \\frac{3}{y} + \\frac{10}{z} = 4$, $\\frac{4}{x} - \\frac{6}{y} + \\frac{5}{z} = 1$, $\\frac{6}{x} + \\frac{9}{y} - \\frac{20}{z} = 2$."
+    ],
+    "33": [
+     "Find the area of the region bounded by the parabola $y^{2} = 4ax$ $(a > 0)$ and its latus rectum.",
+     "OR",
+     "Using integration, find the area of the region bounded by the curve $y = x^{3}$, the $x$-axis and the lines $x = -2$ and $x = 1$."
+    ],
+    "34": [
+     "Find the distance between the parallel lines $\\vec r = (\\hat i + 2\\hat j - 4\\hat k) + \\lambda(2\\hat i + 3\\hat j + 6\\hat k)$ and $\\vec r = (3\\hat i + 3\\hat j - 5\\hat k) + \\mu(2\\hat i + 3\\hat j + 6\\hat k)$.",
+     "OR",
+     "Find the vector and Cartesian equations of the line through $A(3, 4, 1)$ and $B(5, 1, 6)$. Find the point where this line crosses the $XY$-plane."
+    ],
+    "35": [
+     "Show that the right circular cone of least curved surface area and given volume has an altitude equal to $\\sqrt{2}$ times the radius of the base.",
+     "OR",
+     "A wire of length 28 m is cut into two pieces. One piece is bent into a square and the other into a circle. What should the lengths of the two pieces be so that the combined area of the square and the circle is minimum?"
+    ],
+    "36": [
+     "(i) Find the probability that she comes by train and is late. [1]",
+     "(ii) Find the probability that she is late. [1]",
+     "(iii) She is late. Find the probability that she came by train. [2]",
+     "OR",
+     "(iii) She is late. Find the probability that she came by bus. [2]"
+    ],
+    "37": [
+     "(i) Write the purchases as a matrix equation $AX = B$. [1]",
+     "(ii) Find $|A|$. [1]",
+     "(iii) Find the price of each item using $A^{-1}$. [2]",
+     "OR",
+     "(iii) Find the cost of 5 pens, 5 notebooks and 5 bags. [2]"
+    ],
+    "38": [
+     "(i) Find the resultant force $\\vec R = \\vec F_{1} + \\vec F_{2}$. [1]",
+     "(ii) Find the magnitude of the resultant force. [1]",
+     "(iii) Find the work done by the resultant force, $W = \\vec R \\cdot \\overrightarrow{AB}$. [2]",
+     "OR",
+     "(iii) Find the angle between $\\vec F_{1}$ and $\\vec F_{2}$. [2]"
+    ]
+   },
+   "caseStudy": "A doctor visits a patient. The probabilities that she comes by train, bus, scooter or another means are $\\frac{3}{10}$, $\\frac{1}{5}$, $\\frac{1}{10}$ and $\\frac{2}{5}$. The probabilities that she is late are $\\frac{1}{4}$, $\\frac{1}{3}$ and $\\frac{1}{12}$ for train, bus and scooter; by another means she is never late.",
+   "caseStudies": {
+    "36": "A doctor visits a patient. The probabilities that she comes by train, bus, scooter or another means are $\\frac{3}{10}$, $\\frac{1}{5}$, $\\frac{1}{10}$ and $\\frac{2}{5}$. The probabilities that she is late are $\\frac{1}{4}$, $\\frac{1}{3}$ and $\\frac{1}{12}$ for train, bus and scooter; by another means she is never late.",
+    "37": "A school shop sells pens, notebooks and bags at ₹$x$, ₹$y$ and ₹$z$ each. Student A buys 2 pens, 3 notebooks and 1 bag for ₹130; student B buys 1 pen, 2 notebooks and 4 bags for ₹250; student C buys 3 pens, 1 notebook and 2 bags for ₹150.",
+    "38": "Two children pull a box with forces $\\vec F_{1} = 2\\hat i + 3\\hat j - \\hat k$ and $\\vec F_{2} = \\hat i - \\hat j + 2\\hat k$ (in newtons). The box moves from $A(1, 0, 2)$ to $B(3, 2, 5)$ (in metres)."
+   },
+   "figures": {}
+  },
+  {
+   "id": "cbse12-sp-04",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "04",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Challenge · difficult board paper with multi-step reasoning in every section.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The number of relations on $\\{1, 2, 3\\}$ that are both reflexive and symmetric is",
+     "options": [
+      "6",
+      "4",
+      "64",
+      "8"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The function $f : \\mathbb{Z} \\to \\mathbb{Z}$ defined by $f(x) = x^{3}$ is",
+     "options": [
+      "onto but not one-one",
+      "one-one and onto",
+      "one-one but not onto",
+      "neither one-one nor onto"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The value of $\\sin\\left(\\frac{\\pi}{3} - \\sin^{-1}\\left(-\\frac{1}{2}\\right)\\right)$ is",
+     "options": [
+      "$\\frac{1}{2}$",
+      "$1$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $A$ is a square matrix of order 3 with $|A| = 5$, then $|A\\,(\\operatorname{adj} A)|$ equals",
+     "options": [
+      "25",
+      "125",
+      "625",
+      "5"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If $A = \\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$, then for every natural number $n$, $A^{n}$ equals",
+     "options": [
+      "$2^{n - 1}A$",
+      "$2^{n}A$",
+      "$nA$",
+      "$2^{n + 1}A$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "The points $(2, -3)$, $(k, -1)$ and $(0, 4)$ are collinear when $k$ equals",
+     "options": [
+      "$\\frac{7}{10}$",
+      "$-\\frac{10}{7}$",
+      "$2$",
+      "$\\frac{10}{7}$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "If $f(x) = |x - 1| + |x - 2|$, then $f'(1.5)$ equals",
+     "options": [
+      "$1$",
+      "$2$",
+      "$0$",
+      "$-1$"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If $y = \\sin^{-1}x + \\cos^{-1}x$, $-1 < x < 1$, then $\\frac{dy}{dx}$ equals",
+     "options": [
+      "$\\frac{2}{\\sqrt{1 - x^{2}}}$",
+      "$\\frac{\\pi}{2}$",
+      "$0$",
+      "$1$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The local maximum value of $f(x) = x^{3} - 12x$ is",
+     "options": [
+      "$-16$",
+      "$16$",
+      "$2$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "$\\int \\frac{\\cos 2x}{(\\sin x + \\cos x)^{2}}\\, dx$ equals",
+     "options": [
+      "$\\log|\\sin x + \\cos x| + C$",
+      "$\\log|\\sin x - \\cos x| + C$",
+      "$\\frac{1}{\\sin x + \\cos x} + C$",
+      "$\\log|\\cos 2x| + C$"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin x - \\cos x}{1 + \\sin x\\cos x}\\, dx$ equals",
+     "options": [
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{\\pi}{2}$",
+      "$1$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "$\\int_{-1}^{1} e^{|x|}\\, dx$ equals",
+     "options": [
+      "$e - 1$",
+      "$2e$",
+      "$e^{2} - 1$",
+      "$2(e - 1)$"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "The area bounded by $y = \\cos x$, the $x$-axis and the lines $x = 0$ and $x = \\pi$ is",
+     "options": [
+      "$0$ sq. units",
+      "$1$ sq. units",
+      "$2$ sq. units",
+      "$\\pi$ sq. units"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The general solution of $\\frac{dy}{dx} = \\frac{1 + y^{2}}{1 + x^{2}}$ is",
+     "options": [
+      "$\\tan^{-1}y + \\tan^{-1}x = C$",
+      "$\\tan^{-1}y - \\tan^{-1}x = C$",
+      "$y - x = C(1 + xy)^{2}$",
+      "$\\log(1 + y^{2}) = \\log(1 + x^{2}) + C$"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "An integrating factor of $(1 - x^{2})\\frac{dy}{dx} - xy = 1$, $|x| < 1$, is",
+     "options": [
+      "$\\sqrt{1 - x^{2}}$",
+      "$\\frac{1}{\\sqrt{1 - x^{2}}}$",
+      "$1 - x^{2}$",
+      "$\\frac{1}{1 - x^{2}}$"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "If $\\vec a$, $\\vec b$ and $\\vec c$ are unit vectors with $\\vec a + \\vec b + \\vec c = \\vec 0$, then $\\vec a \\cdot \\vec b + \\vec b \\cdot \\vec c + \\vec c \\cdot \\vec a$ equals",
+     "options": [
+      "$-\\frac{3}{2}$",
+      "$\\frac{3}{2}$",
+      "$0$",
+      "$-3$"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The shortest distance between the lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 2}{3} = \\frac{y - 4}{4} = \\frac{z - 5}{5}$ is",
+     "options": [
+      "$0$",
+      "$\\frac{1}{6}$",
+      "$\\sqrt{6}$",
+      "$\\frac{1}{\\sqrt{6}}$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "In a linear programming problem, the objective function $Z = ax + by$ takes the same maximum value at two corner points of a bounded feasible region. Then $Z$ attains this maximum at",
+     "options": [
+      "only those two points",
+      "no other point",
+      "every point of the segment joining the two corner points",
+      "exactly one more point"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The determinant of every skew-symmetric matrix of order 3 is zero.",
+     "reason": "For a matrix $A$ of order $n$, $|A^{T}| = |A|$ and $|-A| = (-1)^{n}|A|$."
+    },
+    {
+     "number": 20,
+     "assertion": "The function $f(x) = x^{\\frac{2}{3}}$ has a local minimum at $x = 0$.",
+     "reason": "A function can have a local extremum only at a point where its derivative is zero."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the value of $\\tan^{-1}\\left[2\\cos\\left(2\\sin^{-1}\\frac{1}{2}\\right)\\right]$.",
+     "OR",
+     "Find the domain of $f(x) = \\sin^{-1}\\sqrt{x - 1}$."
+    ],
+    "22": "Differentiate $\\tan^{-1}\\left(\\frac{\\sqrt{1 + x^{2}} - 1}{x}\\right)$, $x \\neq 0$, with respect to $x$.",
+    "23": [
+     "Show that the points $A$, $B$ and $C$ with position vectors $-2\\hat i + 3\\hat j + 5\\hat k$, $\\hat i + 2\\hat j + 3\\hat k$ and $7\\hat i - \\hat k$ are collinear.",
+     "OR",
+     "Let $\\vec a = 2\\hat i + 2\\hat j + 3\\hat k$, $\\vec b = -\\hat i + 2\\hat j + \\hat k$ and $\\vec c = 3\\hat i + \\hat j$. Find $\\lambda$ such that $\\vec a + \\lambda\\vec b$ is perpendicular to $\\vec c$."
+    ],
+    "24": "If $P(\\bar A) = 0.7$, $P(B) = 0.7$ and $P(B \\mid A) = 0.5$, find $P(A \\mid B)$ and $P(A \\cup B)$.",
+    "25": "A ladder 5 m long leans against a vertical wall. The bottom of the ladder is pulled away from the wall along the ground at 2 cm/s. How fast is the top of the ladder sliding down the wall when the bottom is 4 m from the wall?",
+    "26": [
+     "Find $\\int \\frac{dx}{x(x^{5} + 3)}$.",
+     "OR",
+     "Find $\\int \\frac{\\sin 2x}{(1 + \\sin x)(2 + \\sin x)}\\, dx$."
+    ],
+    "27": "Evaluate $\\int_{0}^{\\frac{\\pi}{4}} \\log(1 + \\tan x)\\, dx$.",
+    "28": [
+     "Solve the differential equation $\\left(x\\,dy - y\\,dx\\right)y\\sin\\left(\\frac{y}{x}\\right) = \\left(y\\,dx + x\\,dy\\right)x\\cos\\left(\\frac{y}{x}\\right)$.",
+     "OR",
+     "Solve $\\frac{dy}{dx} - 3y\\cot x = \\sin 2x$, given that $y = 2$ when $x = \\frac{\\pi}{2}$."
+    ],
+    "29": "Solve graphically: minimise $Z = x + 2y$ subject to $2x + y \\ge 3$, $x + 2y \\ge 6$, $x \\ge 0$, $y \\ge 0$. Show that the minimum value of $Z$ occurs at more than two points.",
+    "30": [
+     "Find the values of $a$ and $b$ for which $f(x) = \\begin{cases} x^{2} + ax + b, & 0 \\le x < 2 \\\\ 3x + 2, & 2 \\le x \\le 4 \\\\ 2ax + 5b, & 4 < x \\le 8 \\end{cases}$ is continuous on $[0, 8]$.",
+     "OR",
+     "If $e^{y}(x + 1) = 1$, show that $\\frac{d^{2}y}{dx^{2}} = \\left(\\frac{dy}{dx}\\right)^{2}$."
+    ],
+    "31": "Two fair dice are thrown. Let $X$ be the absolute difference of the two numbers. Find the probability distribution of $X$ and its mean.",
+    "32": [
+     "Solve by the matrix method: $3x - 2y + 3z = 8$, $2x + y - z = 1$, $4x - 3y + 2z = 4$.",
+     "OR",
+     "For $A = \\begin{bmatrix} 2 & -1 & 1 \\\\ -1 & 2 & -1 \\\\ 1 & -1 & 2 \\end{bmatrix}$, verify that $A^{3} - 6A^{2} + 9A - 4I = O$. Hence find $A^{-1}$."
+    ],
+    "33": [
+     "Using integration, find the area of the region in the first quadrant bounded by the ellipse $\\frac{x^{2}}{16} + \\frac{y^{2}}{9} = 1$, the $y$-axis and the line $x = 2$.",
+     "OR",
+     "Find the area of the region bounded by the curve $y^{2} = 9x$ $(y \\ge 0)$, the $x$-axis and the lines $x = 2$ and $x = 4$."
+    ],
+    "34": [
+     "A line $L$ passes through $A(-2, -1, 3)$ and $B(4, 2, 9)$. (a) Find the vector and Cartesian equations of $L$. (b) Find the direction cosines of $L$. (c) Find the points on $L$ at a distance of 6 units from $A$.",
+     "OR",
+     "Find the angle between the lines whose direction cosines $l$, $m$, $n$ satisfy $l + m + n = 0$ and $l^{2} + m^{2} - n^{2} = 0$."
+    ],
+    "35": [
+     "Show that the semi-vertical angle of a right circular cone of given slant height and maximum volume is $\\tan^{-1}\\sqrt{2}$.",
+     "OR",
+     "An open box with a square base is to be made from a given quantity of sheet metal of area $c^{2}$. Show that the volume of the box is maximum when its depth is half the side of the base."
+    ],
+    "36": [
+     "(i) Find the probability that the student guesses and is correct. [1]",
+     "(ii) Find the probability that the answer is correct. [1]",
+     "(iii) The answer is correct. Find the probability that the student knew it. [2]",
+     "OR",
+     "(iii) The answer is correct. Find the probability that the student copied it. [2]"
+    ],
+    "37": [
+     "(i) How many different functions from $V$ to $R$ are there? [1]",
+     "(ii) How many of these functions are one-one? [1]",
+     "(iii) Find the number of onto functions from $R$ to $V$ (each route gets one van and every van is used). [2]",
+     "OR",
+     "(iii) On the set $R$ of routes, define $S = \\{(a, b) : |a - b| \\le 1\\}$. Show that $S$ is reflexive and symmetric but not transitive. [2]"
+    ],
+    "38": [
+     "(i) Find the coordinates of $D$. [1]",
+     "(ii) Find the length of side $AB$. [1]",
+     "(iii) Find the area of the flower bed. [2]",
+     "OR",
+     "(iii) Find the cosine of the angle between the diagonals $\\overrightarrow{AC}$ and $\\overrightarrow{BD}$. [2]"
+    ]
+   },
+   "caseStudy": "In a multiple-choice test, a student guesses, copies or knows the answer to a question. The probabilities are $\\frac{1}{3}$, $\\frac{1}{6}$ and $\\frac{1}{2}$. A guessed answer is correct with probability $\\frac{1}{4}$, a copied answer with probability $\\frac{1}{8}$, and a known answer is always correct.",
+   "caseStudies": {
+    "36": "In a multiple-choice test, a student guesses, copies or knows the answer to a question. The probabilities are $\\frac{1}{3}$, $\\frac{1}{6}$ and $\\frac{1}{2}$. A guessed answer is correct with probability $\\frac{1}{4}$, a copied answer with probability $\\frac{1}{8}$, and a known answer is always correct.",
+    "37": "A school has 3 vans $V = \\{v_{1}, v_{2}, v_{3}\\}$ and 4 routes $R = \\{1, 2, 3, 4\\}$. A plan assigns each van to one route, so a plan is a function from $V$ to $R$.",
+    "38": "A garden designer marks a parallelogram-shaped flower bed $ABCD$ with consecutive vertices $A(1, 1, 1)$, $B(2, -1, 3)$ and $C(0, 2, 4)$ (in metres)."
+   },
+   "figures": {}
+  },
+  {
+   "id": "cbse12-sp-05",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "05",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Challenge · difficult board paper with unfamiliar settings and longer reasoning chains.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Let $R = \\{(1, 2)\\}$ be a relation on $\\{1, 2, 3\\}$. The least number of ordered pairs that must be added to $R$ to make it an equivalence relation is",
+     "options": [
+      "4",
+      "3",
+      "5",
+      "7"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The function $f : \\mathbb{R} \\to [0, \\infty)$ defined by $f(x) = x^{2}$ is",
+     "options": [
+      "one-one but not onto",
+      "one-one and onto",
+      "neither one-one nor onto",
+      "onto but not one-one"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The principal value of $\\tan^{-1}\\left(\\tan\\frac{3\\pi}{5}\\right)$ is",
+     "options": [
+      "$\\frac{3\\pi}{5}$",
+      "$\\frac{2\\pi}{5}$",
+      "$-\\frac{2\\pi}{5}$",
+      "$-\\frac{3\\pi}{5}$"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $A = \\begin{bmatrix} \\alpha & 2 \\\\ 2 & \\alpha \\end{bmatrix}$ and $|A^{3}| = 125$, then $\\alpha$ equals",
+     "options": [
+      "$\\pm 2$",
+      "$\\pm 5$",
+      "$\\pm 3$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If $A$ is a square matrix of order 3 and $|3A| = k|A|$, then $k$ equals",
+     "options": [
+      "$3$",
+      "$27$",
+      "$9$",
+      "$81$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "The matrix $\\begin{bmatrix} 6 - x & 4 \\\\ 3 - x & 1 \\end{bmatrix}$ is singular when $x$ equals",
+     "options": [
+      "$2$",
+      "$3$",
+      "$-2$",
+      "$6$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The derivative of $f(x) = |x|$ at $x = -3$ is",
+     "options": [
+      "$1$",
+      "$0$",
+      "not defined",
+      "$-1$"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "The derivative of $\\sin^{2}(x^{2})$ with respect to $x$ is",
+     "options": [
+      "$2\\sin(x^{2})\\cos(x^{2})$",
+      "$4x\\sin(x^{2})$",
+      "$x\\sin(2x^{2})$",
+      "$2x\\sin(2x^{2})$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The total revenue from selling $x$ units is $R(x) = 3x^{2} + 36x + 5$ (in rupees). The marginal revenue when $x = 5$ is",
+     "options": [
+      "₹126",
+      "₹36",
+      "₹66",
+      "₹30"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The function $f(x) = x^{2}e^{-x}$ is strictly increasing on",
+     "options": [
+      "$(-\\infty, 0)$",
+      "$(0, 2)$",
+      "$(2, \\infty)$",
+      "$(-\\infty, 2)$"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int \\frac{e^{x}(x + 1)}{\\cos^{2}(xe^{x})}\\, dx$ equals",
+     "options": [
+      "$\\tan(xe^{x}) + C$",
+      "$\\sec(xe^{x}) + C$",
+      "$\\cot(xe^{x}) + C$",
+      "$e^{x}\\tan x + C$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "$\\int_{2}^{8} |x - 5|\\, dx$ equals",
+     "options": [
+      "$9$",
+      "$18$",
+      "$6$",
+      "$3$"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "If $\\int_{0}^{a} \\frac{dx}{4 + x^{2}} = \\frac{\\pi}{8}$, then $a$ equals",
+     "options": [
+      "$1$",
+      "$4$",
+      "$\\frac{1}{2}$",
+      "$2$"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The area of the region bounded by $y = x^{2}$, the $x$-axis and the lines $x = -1$ and $x = 1$ is",
+     "options": [
+      "$\\frac{1}{3}$ sq. units",
+      "$\\frac{4}{3}$ sq. units",
+      "$\\frac{2}{3}$ sq. units",
+      "$0$ sq. units"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "The general solution of $x\\frac{dy}{dx} + y = e^{x}$ is",
+     "options": [
+      "$y = e^{x} + Cx$",
+      "$xy = e^{x} + C$",
+      "$xy = xe^{x} + C$",
+      "$y = xe^{x} + C$"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "The area of the parallelogram whose diagonals are $3\\hat i + \\hat j - 2\\hat k$ and $\\hat i - 3\\hat j + 4\\hat k$ is",
+     "options": [
+      "$10\\sqrt{3}$ sq. units",
+      "$5\\sqrt{3}$ sq. units",
+      "$5\\sqrt{2}$ sq. units",
+      "$\\sqrt{300}$ sq. units"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "The direction cosines of a line with direction ratios $2, -1, -2$ are",
+     "options": [
+      "$\\pm\\left(\\frac{2}{3}, -\\frac{1}{3}, -\\frac{2}{3}\\right)$",
+      "$\\frac{2}{9}, -\\frac{1}{9}, -\\frac{2}{9}$",
+      "$\\frac{2}{\\sqrt{5}}, -\\frac{1}{\\sqrt{5}}, 0$",
+      "$\\frac{2}{3}, \\frac{1}{3}, \\frac{2}{3}$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "The corner points of a bounded feasible region are $(0, 0)$, $(5, 0)$, $(3, 4)$ and $(0, 6)$. The maximum value of $Z = 3x + 4y$ is",
+     "options": [
+      "$24$",
+      "$15$",
+      "$29$",
+      "$25$"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "If the inverse of a square matrix exists, it is unique.",
+     "reason": "If $B$ and $C$ are both inverses of $A$, then $B = BI = B(AC) = (BA)C = IC = C$."
+    },
+    {
+     "number": 20,
+     "assertion": "$\\int_{-1}^{1} x^{3}\\cos x\\, dx = 0$.",
+     "reason": "If $f$ is an odd function, then $\\int_{-a}^{a} f(x)\\,dx = 2\\int_{0}^{a} f(x)\\,dx$."
+    }
+   ],
+   "written": {
+    "21": [
+     "Find the value of $\\sin^{-1}\\left(\\cos\\frac{33\\pi}{5}\\right)$.",
+     "OR",
+     "Find the value of $x$ if $\\sin^{-1}(1 - x) = \\frac{\\pi}{6}$, and check that it lies in the domain of $\\sin^{-1}(1 - x)$."
+    ],
+    "22": "Find the values of $k$ for which $f(x) = \\begin{cases} \\dfrac{1 - \\cos kx}{x\\sin x}, & x \\neq 0 \\\\ \\frac{1}{2}, & x = 0 \\end{cases}$ is continuous at $x = 0$.",
+    "23": [
+     "If $\\vec a = \\hat i - \\hat j + 7\\hat k$ and $\\vec b = 5\\hat i - \\hat j + \\lambda\\hat k$, find $\\lambda$ such that $\\vec a + \\vec b$ and $\\vec a - \\vec b$ are perpendicular.",
+     "OR",
+     "Find the angle between $\\vec a$ and $\\vec b$ if $|\\vec a| = \\sqrt{3}$, $|\\vec b| = 2$ and $\\vec a \\cdot \\vec b = \\sqrt{6}$."
+    ],
+    "24": "Events $A$ and $B$ are independent with $P(A) = 0.3$ and $P(B) = 0.4$. Find (a) $P(A \\cap \\bar B)$ and (b) the probability that neither $A$ nor $B$ occurs.",
+    "25": "Find the local maximum and local minimum values of $f(x) = x^{3} - 6x^{2} + 9x + 15$.",
+    "26": [
+     "Find $\\int \\frac{x^{2} + 1}{x^{4} + 1}\\, dx$.",
+     "OR",
+     "Find $\\int \\frac{(x - 3)e^{x}}{(x - 1)^{3}}\\, dx$."
+    ],
+    "27": "Evaluate $\\int_{0}^{\\pi} \\frac{x}{a^{2}\\cos^{2} x + b^{2}\\sin^{2} x}\\, dx$ $(a, b > 0)$.",
+    "28": [
+     "Solve $(1 + e^{2x})\\,dy + (1 + y^{2})e^{x}\\,dx = 0$, given that $y = 1$ when $x = 0$.",
+     "OR",
+     "Solve $x^{2}\\,dy + (xy + y^{2})\\,dx = 0$, given that $y = 1$ when $x = 1$."
+    ],
+    "29": "A dietician mixes two foods $P$ and $Q$. One kilogram of $P$ contains 2 units of vitamin A and 1 unit of vitamin C; one kilogram of $Q$ contains 1 unit of vitamin A and 2 units of vitamin C. The mixture must contain at least 8 units of vitamin A and 10 units of vitamin C. Food $P$ costs ₹50 per kg and food $Q$ costs ₹70 per kg. Find the least cost of the mixture.",
+    "30": [
+     "If $x = a\\cos\\theta + b\\sin\\theta$ and $y = a\\sin\\theta - b\\cos\\theta$, show that $y^{2}\\frac{d^{2}y}{dx^{2}} - x\\frac{dy}{dx} + y = 0$.",
+     "OR",
+     "Find $\\frac{dy}{dx}$ if $(\\cos x)^{y} = (\\cos y)^{x}$."
+    ],
+    "31": "A box contains 5 red and 4 white balls. Two balls are drawn one after the other without replacement. Find the probability that both balls are red, given that at least one of them is red.",
+    "32": [
+     "A school awards prizes for honesty $(x)$, regularity $(y)$ and hard work $(z)$. The total prize money is ₹6000. The honesty prize plus three times the hard-work prize is ₹11000. The honesty and hard-work prizes together equal twice the regularity prize. Write the equations as a matrix equation and find each prize using $A^{-1}$.",
+     "OR",
+     "Examine the consistency of the system $3x - y - 2z = 2$, $2y - z = -1$, $3x - 5y = 3$."
+    ],
+    "33": [
+     "Using integration, find the area of the triangle with vertices $A(-1, 0)$, $B(1, 3)$ and $C(3, 2)$.",
+     "OR",
+     "Find the area of the region bounded by the curve $y = x^{2} + 2$, the $x$-axis and the lines $x = -1$ and $x = 2$."
+    ],
+    "34": [
+     "Find the value of $p$ for which the lines $\\frac{1 - x}{3} = \\frac{7y - 14}{2p} = \\frac{z - 3}{2}$ and $\\frac{7 - 7x}{3p} = \\frac{y - 5}{1} = \\frac{6 - z}{5}$ are perpendicular. For this value of $p$, show that the lines do not intersect.",
+     "OR",
+     "Prove that the line through $A(0, -1, -1)$ and $B(4, 5, 1)$ intersects the line through $C(3, 9, 4)$ and $D(-4, 4, 4)$. Find the point of intersection."
+    ],
+    "35": [
+     "Find the points on the curve $x^{2} = 2y$ that are nearest to the point $(0, 5)$. Also find the least distance.",
+     "OR",
+     "Find the area of the greatest rectangle that can be inscribed in the ellipse $\\frac{x^{2}}{a^{2}} + \\frac{y^{2}}{b^{2}} = 1$, and the lengths of its sides."
+    ],
+    "36": [
+     "(i) Find the probability that all three solve it. [1]",
+     "(ii) Find the probability that none of them solves it. [1]",
+     "(iii) Find the probability that the problem is solved. [2]",
+     "OR",
+     "(iii) Find the probability that exactly one of them solves it. [2]"
+    ],
+    "37": [
+     "(i) Show that $f$ is one-one. [1]",
+     "(ii) Find the reading $x$ for which $f(x) = 1$. [1]",
+     "(iii) Show that $f : \\mathbb{R} - \\left\\{-\\frac{4}{3}\\right\\} \\to \\mathbb{R} - \\left\\{\\frac{4}{3}\\right\\}$ is onto. [2]",
+     "OR",
+     "(iii) Find $x$ such that $f(x) = 2$. [2]"
+    ],
+    "38": [
+     "(i) Find $|\\vec a|$. [1]",
+     "(ii) Find the unit vector along the arm. [1]",
+     "(iii) Find the projection of $\\vec b$ on $\\vec a$. [2]",
+     "OR",
+     "(iii) Find the component of $\\vec b$ perpendicular to $\\vec a$. [2]"
+    ]
+   },
+   "caseStudy": "Three students $A$, $B$ and $C$ try a challenge problem independently. The probabilities that they solve it are $\\frac{1}{2}$, $\\frac{1}{3}$ and $\\frac{1}{4}$.",
+   "caseStudies": {
+    "36": "Three students $A$, $B$ and $C$ try a challenge problem independently. The probabilities that they solve it are $\\frac{1}{2}$, $\\frac{1}{3}$ and $\\frac{1}{4}$.",
+    "37": "A calibration function for a sensor is $f(x) = \\frac{4x + 3}{3x + 4}$, defined for $x \\in \\mathbb{R} - \\left\\{-\\frac{4}{3}\\right\\}$.",
+    "38": "The arm of a crane points along $\\vec a = 2\\hat i + 3\\hat j + 6\\hat k$. A load is moved along $\\vec b = \\hat i + 2\\hat j + 2\\hat k$."
+   },
+   "figures": {}
+  },
+  {
+   "id": "cbse12-sp-06",
+   "chapter": "Sample Papers",
+   "chapterNumber": 14,
+   "paperNumber": "06",
+   "grade": 12,
+   "board": "CBSE",
+   "book": "CBSE Mathematics · Class 12 · 2026–27 board pattern",
+   "focus": "Challenge · difficult full-syllabus paper for final board-exam revision.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Let $R = \\{(a, b) : a = b - 2,\\ b > 6\\}$ be a relation on $\\mathbb{N}$. Which of the following is true?",
+     "options": [
+      "$(2, 4) \\in R$",
+      "$(6, 8) \\in R$",
+      "$(3, 8) \\in R$",
+      "$(8, 7) \\in R$"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The number of bijective functions from $\\{1, 2, 3, 4\\}$ to itself is",
+     "options": [
+      "24",
+      "16",
+      "256",
+      "4"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The range of the principal value branch of $\\sec^{-1} x$ is",
+     "options": [
+      "$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] - \\{0\\}$",
+      "$(0, \\pi)$",
+      "$\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$",
+      "$[0, \\pi] - \\left\\{\\frac{\\pi}{2}\\right\\}$"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If $A = \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix}$, then $A^{5}$ equals",
+     "options": [
+      "$32A$",
+      "$5A$",
+      "$10A$",
+      "$16A$"
+     ]
+    },
+    {
+     "number": 5,
+     "question": "If $A$ and $B$ are invertible matrices of order 3 with $|A| = 2$ and $|B| = -3$, then $|(AB)^{-1}|$ equals",
+     "options": [
+      "$\\frac{1}{6}$",
+      "$-6$",
+      "$-\\frac{1}{6}$",
+      "$-\\frac{1}{36}$"
+     ]
+    },
+    {
+     "number": 6,
+     "question": "The system $x + y + z = 1$, $x + 2y + 3z = 2$, $x + 3y + kz = 4$ has a unique solution when",
+     "options": [
+      "$k = 5$",
+      "$k \\neq 5$",
+      "$k \\neq 3$",
+      "for every real $k$"
+     ]
+    },
+    {
+     "number": 7,
+     "question": "The number of points in the interval $(0, 3)$ at which $f(x) = [x]$ (the greatest integer function) is discontinuous is",
+     "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+     ]
+    },
+    {
+     "number": 8,
+     "question": "If $y = \\log\\left(\\tan\\frac{x}{2}\\right)$, $0 < x < \\pi$, then $\\frac{dy}{dx}$ equals",
+     "options": [
+      "$\\operatorname{cosec} x$",
+      "$\\sec x$",
+      "$\\frac{1}{2}\\sec^{2}\\frac{x}{2}$",
+      "$\\cot\\frac{x}{2}$"
+     ]
+    },
+    {
+     "number": 9,
+     "question": "The function $f(x) = 2x^{3} - 3x^{2} - 12x + 4$ has a local minimum at",
+     "options": [
+      "$x = -1$",
+      "$x = 0$",
+      "$x = 1$",
+      "$x = 2$"
+     ]
+    },
+    {
+     "number": 10,
+     "question": "The volume of a cube increases at $9\\ \\text{cm}^{3}\\,\\text{s}^{-1}$. When its edge is 10 cm, its surface area increases at",
+     "options": [
+      "$0.36\\ \\text{cm}^{2}\\,\\text{s}^{-1}$",
+      "$36\\ \\text{cm}^{2}\\,\\text{s}^{-1}$",
+      "$3.6\\ \\text{cm}^{2}\\,\\text{s}^{-1}$",
+      "$1.8\\ \\text{cm}^{2}\\,\\text{s}^{-1}$"
+     ]
+    },
+    {
+     "number": 11,
+     "question": "$\\int \\frac{dx}{\\sqrt{9 - 25x^{2}}}$ equals",
+     "options": [
+      "$\\frac{1}{3}\\sin^{-1}\\frac{5x}{3} + C$",
+      "$\\frac{1}{5}\\sin^{-1}\\frac{5x}{3} + C$",
+      "$\\sin^{-1}\\frac{5x}{3} + C$",
+      "$\\frac{1}{5}\\sin^{-1}\\frac{3x}{5} + C$"
+     ]
+    },
+    {
+     "number": 12,
+     "question": "$\\int_{0}^{1} \\tan^{-1}\\left(\\frac{2x - 1}{1 + x - x^{2}}\\right) dx$ equals",
+     "options": [
+      "$\\frac{\\pi}{4}$",
+      "$0$",
+      "$1$",
+      "$\\log 2$"
+     ]
+    },
+    {
+     "number": 13,
+     "question": "$\\int_{0}^{1} \\frac{e^{x}}{1 + e^{x}}\\, dx$ equals",
+     "options": [
+      "$\\log\\frac{1 + e}{2}$",
+      "$\\log(1 + e)$",
+      "$\\log 2$",
+      "$e - 1$"
+     ]
+    },
+    {
+     "number": 14,
+     "question": "The area bounded by the curve $y = x|x|$, the $x$-axis and the lines $x = -1$ and $x = 1$ is",
+     "options": [
+      "$0$ sq. units",
+      "$\\frac{1}{3}$ sq. units",
+      "$\\frac{4}{3}$ sq. units",
+      "$\\frac{2}{3}$ sq. units"
+     ]
+    },
+    {
+     "number": 15,
+     "question": "Which of the following is a homogeneous differential equation?",
+     "options": [
+      "$(x + y)\\,dy = (x - 2)\\,dx$",
+      "$y\\,dx = (x^{2} + 1)\\,dy$",
+      "$(x^{2} + y^{2})\\,dx - 2xy\\,dy = 0$",
+      "$(x^{3} + y^{2})\\,dx + xy\\,dy = 0$"
+     ]
+    },
+    {
+     "number": 16,
+     "question": "If $|\\vec a| = 5$, $|\\vec b| = 13$ and $|\\vec a \\times \\vec b| = 25$, then $|\\vec a \\cdot \\vec b|$ equals",
+     "options": [
+      "$65$",
+      "$25$",
+      "$60$",
+      "$12$"
+     ]
+    },
+    {
+     "number": 17,
+     "question": "If a line makes angles $\\alpha$, $\\beta$ and $\\gamma$ with the coordinate axes, then $\\sin^{2}\\alpha + \\sin^{2}\\beta + \\sin^{2}\\gamma$ equals",
+     "options": [
+      "$1$",
+      "$2$",
+      "$3$",
+      "$0$"
+     ]
+    },
+    {
+     "number": 18,
+     "question": "The maximum value of $Z = x + y$ subject to $x + 2y \\le 8$, $2x + y \\le 8$, $x \\ge 0$, $y \\ge 0$ is",
+     "options": [
+      "$\\frac{16}{3}$",
+      "$4$",
+      "$8$",
+      "$6$"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 19,
+     "assertion": "The function $f(x) = x^{2}$ is not one-one on $\\mathbb{R}$.",
+     "reason": "The function $f(x) = x^{2}$ is continuous on $\\mathbb{R}$."
+    },
+    {
+     "number": 20,
+     "assertion": "$\\int \\frac{dx}{x^{2} + 4} = \\frac{1}{2}\\tan^{-1}\\frac{x}{2} + C$.",
+     "reason": "$\\int \\frac{dx}{x^{2} + a^{2}} = \\tan^{-1}\\frac{x}{a} + C$."
+    }
+   ],
+   "written": {
+    "21": [
+     "Show that the relation $R$ on $\\mathbb{R}$ defined by $R = \\{(a, b) : a \\le b\\}$ is reflexive and transitive but not symmetric.",
+     "OR",
+     "Find the value of $\\tan^{-1}\\sqrt{3} - \\cot^{-1}(-\\sqrt{3})$."
+    ],
+    "22": "Show that $f(x) = |x - 3|$ is continuous but not differentiable at $x = 3$.",
+    "23": [
+     "Find the unit vector in the direction of $\\vec a + \\vec b$, where $\\vec a = 2\\hat i + 2\\hat j - 5\\hat k$ and $\\vec b = 2\\hat i + \\hat j + 3\\hat k$.",
+     "OR",
+     "Show that the vectors $2\\hat i - \\hat j + \\hat k$, $\\hat i - 3\\hat j - 5\\hat k$ and $3\\hat i - 4\\hat j - 4\\hat k$ form the sides of a right-angled triangle."
+    ],
+    "24": "The probability that $A$ speaks the truth is $\\frac{4}{5}$ and that $B$ speaks the truth is $\\frac{3}{4}$. They speak independently. In what percentage of cases are they likely to contradict each other when stating the same fact?",
+    "25": "Find the intervals in which $f(x) = \\sin x + \\cos x$, $0 \\le x \\le 2\\pi$, is strictly increasing or strictly decreasing.",
+    "26": [
+     "Find $\\int \\frac{dx}{1 + 3\\sin^{2} x}$.",
+     "OR",
+     "Find $\\int e^{2x}\\sin x\\, dx$."
+    ],
+    "27": "Evaluate $\\int_{0}^{\\frac{\\pi}{2}} \\frac{x\\sin x\\cos x}{\\sin^{4} x + \\cos^{4} x}\\, dx$.",
+    "28": [
+     "Solve $\\frac{dy}{dx} + y\\sec x = \\tan x$, $0 \\le x < \\frac{\\pi}{2}$.",
+     "OR",
+     "Solve the differential equation $(x - y)\\,dy - (x + y)\\,dx = 0$."
+    ],
+    "29": "A factory makes tennis rackets and cricket bats. A racket needs 1.5 hours of machine time and 3 hours of a craftsman’s time; a bat needs 3 hours of machine time and 1 hour of a craftsman’s time. In a day, at most 42 machine hours and 24 craftsman hours are available. The profit is ₹20 on a racket and ₹10 on a bat. How many of each should be made daily for maximum profit?",
+    "30": [
+     "Find $\\frac{dy}{dx}$ if $y = x^{\\sin x} + (\\sin x)^{\\cos x}$, $0 < x < \\pi$.",
+     "OR",
+     "If $x = e^{\\cos 2t}$ and $y = e^{\\sin 2t}$, prove that $\\frac{dy}{dx} = -\\frac{y\\log x}{x\\log y}$."
+    ],
+    "31": "In a college, 60% of the students live in the hostel and the rest are day scholars. 30% of the hostel students and 20% of the day scholars get an A grade. A student chosen at random has an A grade. Find the probability that the student lives in the hostel.",
+    "32": [
+     "Solve the system using matrices: $x - y + z = 4$, $2x + y - 3z = 0$, $x + y + z = 2$.",
+     "OR",
+     "Find the inverse of $A = \\begin{bmatrix} 1 & 2 & 0 \\\\ -2 & -1 & -2 \\\\ 0 & -1 & 1 \\end{bmatrix}$ and verify that $A^{-1}A = I$."
+    ],
+    "33": [
+     "Using integration, find the area of the region in the first quadrant bounded by the circle $x^{2} + y^{2} = 25$, the $x$-axis and the line $x = 3$, lying to the right of $x = 3$.",
+     "OR",
+     "Find the area of the region bounded by $y = e^{x}$, the $x$-axis and the lines $x = 0$ and $x = 2$."
+    ],
+    "34": [
+     "The vertices of a triangle are $A(2, -1, 4)$, $B(4, 1, 0)$ and $C(0, 3, 2)$. (a) Find the vector equation of the median through $A$. (b) Find the length of this median. (c) Find the angle $\\angle BAC$.",
+     "OR",
+     "Find the points on the line $\\frac{x + 2}{3} = \\frac{y + 1}{2} = \\frac{z - 3}{2}$ at a distance of $3\\sqrt{2}$ units from the point $(1, 2, 3)$."
+    ],
+    "35": [
+     "Find the maximum area of an isosceles triangle inscribed in the ellipse $\\frac{x^{2}}{a^{2}} + \\frac{y^{2}}{b^{2}} = 1$ with its vertex at one end of the major axis.",
+     "OR",
+     "A point on the hypotenuse of a right-angled triangle is at distances $a$ and $b$ from the two legs. Show that the least length of the hypotenuse is $\\left(a^{\\frac{2}{3}} + b^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}$."
+    ],
+    "36": [
+     "(i) Write the possible values of $X$. [1]",
+     "(ii) Find $P(X = 2)$. [1]",
+     "(iii) Find the expected gain $E(X)$. [2]",
+     "OR",
+     "(iii) Find the probability that Ravi gains money. [2]"
+    ],
+    "37": [
+     "(i) Find $f(5)$. [1]",
+     "(ii) Is $f$ one-one? Give a reason. [1]",
+     "(iii) Show that $f$ is onto. [2]",
+     "OR",
+     "(iii) Find all visitors $n$ with $f(n) = 4$. [2]"
+    ],
+    "38": [
+     "(i) Write the vector equation of the path of the beam. [1]",
+     "(ii) Does the beam reach the mirror at $B$? Give a reason. [1]",
+     "(iii) Find the perpendicular distance of the sensor $C$ from the beam. [2]",
+     "OR",
+     "(iii) Find the angle that the beam makes with the $x$-axis. [2]"
+    ]
+   },
+   "caseStudy": "In a fair-ground game, Ravi rolls a fair die once. He wins ₹5 if he gets a six, wins ₹2 if he gets a 4 or a 5, and loses ₹1 otherwise. Let $X$ be his gain in rupees.",
+   "caseStudies": {
+    "36": "In a fair-ground game, Ravi rolls a fair die once. He wins ₹5 if he gets a six, wins ₹2 if he gets a 4 or a 5, and loses ₹1 otherwise. Let $X$ be his gain in rupees.",
+    "37": "A ticket counter pairs visitors: the function $f : \\mathbb{N} \\to \\mathbb{N}$ gives visitor $n$ the seat number $f(n) = \\frac{n + 1}{2}$ if $n$ is odd and $f(n) = \\frac{n}{2}$ if $n$ is even.",
+    "38": "In a physics lab, a laser beam starts at $A(1, 0, -1)$ and travels in the direction $2\\hat i - \\hat j + 2\\hat k$. A mirror is fixed at $B(3, -1, 1)$, and a sensor is at $C(2, 3, 4)$."
+   },
+   "figures": {}
+  }
+ ],
+ "assessments": {
+  "cbse12-sp-01": {
+   "title": "CBSE Class 12 · Sample Paper 01",
+   "mcqAnswerKey": {
+    "1": 0,
+    "2": 3,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 0,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0,
+    "13": 3,
+    "14": 2,
+    "15": 1,
+    "16": 1,
+    "17": 0,
+    "18": 3,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "$\\tan^{-1}\\sqrt{3} = \\frac{\\pi}{3}$ because $\\frac{\\pi}{3} \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$.\n$\\sec^{-1}(-2) = \\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$.\nValue $= \\frac{\\pi}{3} - \\frac{2\\pi}{3} = -\\frac{\\pi}{3}$.\nOR: $-1 \\le 2x - 1 \\le 1$ gives $0 \\le 2x \\le 2$, so $0 \\le x \\le 1$. Domain $= [0, 1]$.",
+    "22": "Take logarithms: $y\\log x = x - y$, so $y(1 + \\log x) = x$ and $y = \\frac{x}{1 + \\log x}$.\n$\\frac{dy}{dx} = \\frac{(1 + \\log x)\\cdot 1 - x\\cdot\\frac{1}{x}}{(1 + \\log x)^{2}} = \\frac{\\log x}{(1 + \\log x)^{2}}$.",
+    "23": "$\\vec a \\times \\vec b = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & 1 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix} = \\hat i - 2\\hat j + \\hat k$, and $|\\vec a \\times \\vec b| = \\sqrt{6}$.\nRequired unit vectors: $\\pm\\frac{1}{\\sqrt{6}}\\left(\\hat i - 2\\hat j + \\hat k\\right)$.\nOR: $\\vec a + \\vec b = -\\vec c$, so $|\\vec a|^{2} + |\\vec b|^{2} + 2\\vec a \\cdot \\vec b = |\\vec c|^{2}$: $9 + 25 + 2\\vec a \\cdot \\vec b = 49$, so $\\vec a \\cdot \\vec b = \\frac{15}{2}$.\n$\\cos\\theta = \\frac{\\frac{15}{2}}{3 \\times 5} = \\frac{1}{2}$, so $\\theta = \\frac{\\pi}{3}$.",
+    "24": "$f'(x) = 6x^{2} - 18x + 12 = 6(x - 1)(x - 2)$.\n$f'(x) > 0$ for $x < 1$ or $x > 2$, and $f'(x) < 0$ for $1 < x < 2$.\nStrictly increasing on $(-\\infty, 1)$ and $(2, \\infty)$; strictly decreasing on $(1, 2)$.",
+    "25": "Let $F$: at least one 6. $F$ has $11$ outcomes.\n$E \\cap F = \\{(2, 6), (6, 2)\\}$ has 2 outcomes.\n$P(E \\mid F) = \\frac{n(E \\cap F)}{n(F)} = \\frac{2}{11}$.",
+    "26": "Put $x^{2} = u$: $\\frac{u}{(u + 1)(u + 4)} = \\frac{A}{u + 1} + \\frac{B}{u + 4}$ gives $A = -\\frac{1}{3}$, $B = \\frac{4}{3}$.\n$\\int \\frac{x^{2}}{(x^{2} + 1)(x^{2} + 4)} dx = -\\frac{1}{3}\\int \\frac{dx}{x^{2} + 1} + \\frac{4}{3}\\int \\frac{dx}{x^{2} + 4} = -\\frac{1}{3}\\tan^{-1}x + \\frac{2}{3}\\tan^{-1}\\frac{x}{2} + C$.\nOR: $\\frac{1 + \\sin x}{1 + \\cos x} = \\frac{1 + 2\\sin\\frac{x}{2}\\cos\\frac{x}{2}}{2\\cos^{2}\\frac{x}{2}} = \\frac{1}{2}\\sec^{2}\\frac{x}{2} + \\tan\\frac{x}{2}$.\nWith $f(x) = \\tan\\frac{x}{2}$, $f'(x) = \\frac{1}{2}\\sec^{2}\\frac{x}{2}$, so the integral is $\\int e^{x}\\left(f(x) + f'(x)\\right)dx = e^{x}\\tan\\frac{x}{2} + C$.",
+    "27": "Let $I = \\int_{0}^{\\pi} \\frac{x\\sin x}{1 + \\cos^{2} x}dx$. Using $\\int_{0}^{a} f(x)dx = \\int_{0}^{a} f(a - x)dx$: $I = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin x}{1 + \\cos^{2} x}dx$.\nAdding: $2I = \\pi\\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^{2} x}dx$.\nPut $\\cos x = t$, $-\\sin x\\,dx = dt$: $2I = \\pi\\int_{-1}^{1} \\frac{dt}{1 + t^{2}} = \\pi\\left[\\tan^{-1}t\\right]_{-1}^{1} = \\pi \\cdot \\frac{\\pi}{2}$.\n$I = \\frac{\\pi^{2}}{4}$.",
+    "28": "$\\frac{dy}{dx} = \\frac{y^{2} - x^{2}}{2xy}$ is homogeneous. Put $y = vx$: $v + x\\frac{dv}{dx} = \\frac{v^{2} - 1}{2v}$, so $x\\frac{dv}{dx} = -\\frac{1 + v^{2}}{2v}$.\n$\\int \\frac{2v}{1 + v^{2}}dv = -\\int \\frac{dx}{x}$ gives $\\log(1 + v^{2}) = -\\log x + \\log C$, so $x(1 + v^{2}) = C$.\nWith $v = \\frac{y}{x}$: $x^{2} + y^{2} = Cx$.\nOR: Linear equation with $P = \\cot x$, so $\\text{IF} = e^{\\int \\cot x\\,dx} = \\sin x$.\n$y\\sin x = \\int (2x\\sin x + x^{2}\\cos x)dx = x^{2}\\sin x + C$.\nAt $x = \\frac{\\pi}{2}$: $\\frac{\\pi^{2}}{4} + 1 = \\frac{\\pi^{2}}{4} + C$, so $C = 1$. Solution: $y = x^{2} + \\operatorname{cosec} x$.",
+    "29": "The lines $x + 2y = 10$ and $3x + y = 15$ meet at $(4, 3)$.\nCorner points of the bounded feasible region: $O(0, 0)$, $A(5, 0)$, $B(4, 3)$, $C(0, 5)$.\n$Z(O) = 0$, $Z(A) = 15$, $Z(B) = 18$, $Z(C) = 10$.\nMaximum $Z = 18$ at $x = 4$, $y = 3$.",
+    "30": "Left limit: $\\lim_{x \\to 0^{-}} \\frac{\\sin (a + 1)x}{x} + \\frac{\\sin x}{x} = (a + 1) + 1 = a + 2$.\nRight limit: $\\frac{\\sqrt{x}\\left(\\sqrt{1 + bx} - 1\\right)}{b\\,x^{\\frac{3}{2}}} = \\frac{\\sqrt{1 + bx} - 1}{bx} = \\frac{1}{\\sqrt{1 + bx} + 1} \\to \\frac{1}{2}$.\nContinuity: $a + 2 = c = \\frac{1}{2}$, so $a = -\\frac{3}{2}$ and $c = \\frac{1}{2}$ ($b$ is any non-zero real number).\nOR: $\\frac{dy}{dx} = \\frac{2\\tan^{-1}x}{1 + x^{2}}$, so $(1 + x^{2})\\frac{dy}{dx} = 2\\tan^{-1}x$.\nDifferentiate: $(1 + x^{2})\\frac{d^{2}y}{dx^{2}} + 2x\\frac{dy}{dx} = \\frac{2}{1 + x^{2}}$.\nMultiply by $(1 + x^{2})$: $(x^{2} + 1)^{2}\\frac{d^{2}y}{dx^{2}} + 2x(x^{2} + 1)\\frac{dy}{dx} = 2$.",
+    "31": "Let $X$ = number of aces. $X$ takes the values 0, 1, 2.\n$P(X = 0) = \\frac{48}{52} \\times \\frac{47}{51} = \\frac{188}{221}$.\n$P(X = 1) = 2 \\times \\frac{4}{52} \\times \\frac{48}{51} = \\frac{32}{221}$.\n$P(X = 2) = \\frac{4}{52} \\times \\frac{3}{51} = \\frac{1}{221}$.\nMean $= 0 \\times \\frac{188}{221} + 1 \\times \\frac{32}{221} + 2 \\times \\frac{1}{221} = \\frac{34}{221} = \\frac{2}{13}$.",
+    "32": "$|A| = 2(-4 + 4) + 3(-6 + 4) + 5(3 - 2) = 0 - 6 + 5 = -1 \\neq 0$, so $A^{-1}$ exists.\nCofactors: $A_{11} = 0$, $A_{12} = 2$, $A_{13} = 1$; $A_{21} = -1$, $A_{22} = -9$, $A_{23} = -5$; $A_{31} = 2$, $A_{32} = 23$, $A_{33} = 13$.\n$\\operatorname{adj} A = \\begin{bmatrix} 0 & -1 & 2 \\\\ 2 & -9 & 23 \\\\ 1 & -5 & 13 \\end{bmatrix}$ and $A^{-1} = \\frac{1}{|A|}\\operatorname{adj} A = \\begin{bmatrix} 0 & 1 & -2 \\\\ -2 & 9 & -23 \\\\ -1 & 5 & -13 \\end{bmatrix}$.\nThe system is $AX = B$ with $B = \\begin{bmatrix} 11 \\\\ -5 \\\\ -3 \\end{bmatrix}$, so $X = A^{-1}B = \\begin{bmatrix} 0 - 5 + 6 \\\\ -22 - 45 + 69 \\\\ -11 - 25 + 39 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix}$.\n$x = 1$, $y = 2$, $z = 3$.\nOR: $AB = 6I$, so $A^{-1} = \\frac{1}{6}B$. The system is $AX = \\begin{bmatrix} 3 \\\\ 17 \\\\ 7 \\end{bmatrix}$.\n$X = \\frac{1}{6}B\\begin{bmatrix} 3 \\\\ 17 \\\\ 7 \\end{bmatrix} = \\frac{1}{6}\\begin{bmatrix} 6 + 34 - 28 \\\\ -12 + 34 - 28 \\\\ 6 - 17 + 35 \\end{bmatrix} = \\frac{1}{6}\\begin{bmatrix} 12 \\\\ -6 \\\\ 24 \\end{bmatrix}$, so $x = 2$, $y = -1$, $z = 4$.",
+    "33": "The line $y = x$ meets the circle where $2x^{2} = 32$, that is at $(4, 4)$ in the first quadrant. The circle meets the $x$-axis at $(4\\sqrt{2}, 0)$.\nArea $= \\int_{0}^{4} x\\,dx + \\int_{4}^{4\\sqrt{2}} \\sqrt{32 - x^{2}}\\,dx$.\n$\\int_{0}^{4} x\\,dx = 8$.\n$\\int_{4}^{4\\sqrt{2}} \\sqrt{32 - x^{2}}dx = \\left[\\frac{x}{2}\\sqrt{32 - x^{2}} + 16\\sin^{-1}\\frac{x}{4\\sqrt{2}}\\right]_{4}^{4\\sqrt{2}} = \\left(0 + 16 \\cdot \\frac{\\pi}{2}\\right) - \\left(8 + 16 \\cdot \\frac{\\pi}{4}\\right) = 4\\pi - 8$.\nRequired area $= 8 + 4\\pi - 8 = 4\\pi$ sq. units.\nOR: $|x + 3| = -(x + 3)$ for $x < -3$ and $x + 3$ for $x \\ge -3$; the graph is a V with vertex at $(-3, 0)$.\n$\\int_{-6}^{0} |x + 3|dx = \\int_{-6}^{-3} -(x + 3)dx + \\int_{-3}^{0} (x + 3)dx = \\frac{9}{2} + \\frac{9}{2} = 9$.\nIt is the area of the region between the graph, the $x$-axis and the lines $x = -6$ and $x = 0$: 9 sq. units.",
+    "34": "$\\vec a_{1} = \\hat i + 2\\hat j + \\hat k$, $\\vec b_{1} = \\hat i - \\hat j + \\hat k$, $\\vec a_{2} = 2\\hat i - \\hat j - \\hat k$, $\\vec b_{2} = 2\\hat i + \\hat j + 2\\hat k$.\n$\\vec b_{1} \\times \\vec b_{2} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & -1 & 1 \\\\ 2 & 1 & 2 \\end{vmatrix} = -3\\hat i + 0\\hat j + 3\\hat k$, $|\\vec b_{1} \\times \\vec b_{2}| = 3\\sqrt{2}$.\n$\\vec a_{2} - \\vec a_{1} = \\hat i - 3\\hat j - 2\\hat k$ and $(\\vec a_{2} - \\vec a_{1}) \\cdot (\\vec b_{1} \\times \\vec b_{2}) = -3 + 0 - 6 = -9$.\n$\\text{SD} = \\frac{|-9|}{3\\sqrt{2}} = \\frac{3}{\\sqrt{2}} = \\frac{3\\sqrt{2}}{2}$ units.\nThe shortest distance is not zero, so the lines do not intersect (they are skew lines).\nOR: A general point of the line is $Q(\\lambda, 2\\lambda + 1, 3\\lambda + 2)$. $\\overrightarrow{PQ} = (\\lambda - 1, 2\\lambda - 5, 3\\lambda - 1)$.\n$\\overrightarrow{PQ} \\perp (1, 2, 3)$: $(\\lambda - 1) + 2(2\\lambda - 5) + 3(3\\lambda - 1) = 0$, so $14\\lambda = 14$ and $\\lambda = 1$.\nFoot $Q(1, 3, 5)$. Image $P' = 2Q - P = (1, 0, 7)$. Length $PQ = \\sqrt{0 + 9 + 4} = \\sqrt{13}$ units.",
+    "35": "Let the radius of the semicircle be $r$; the width of the rectangle is $2r$ and its height is $h$.\nPerimeter: $2r + 2h + \\pi r = 10$, so $h = \\frac{10 - 2r - \\pi r}{2}$.\nArea $A = 2rh + \\frac{1}{2}\\pi r^{2} = 10r - 2r^{2} - \\frac{\\pi r^{2}}{2}$.\n$\\frac{dA}{dr} = 10 - 4r - \\pi r = 0$ gives $r = \\frac{10}{\\pi + 4}$, and $\\frac{d^{2}A}{dr^{2}} = -(4 + \\pi) < 0$, so the area is maximum.\nThen $h = \\frac{10 - (2 + \\pi)r}{2} = \\frac{10}{\\pi + 4}$.\nWidth of the rectangle $= \\frac{20}{\\pi + 4}$ m and height of the rectangle $= \\frac{10}{\\pi + 4}$ m.\nOR: Let the cylinder have height $h$ and radius $r$. Then $r^{2} + \\frac{h^{2}}{4} = R^{2}$ and $V = \\pi r^{2}h = \\pi\\left(R^{2}h - \\frac{h^{3}}{4}\\right)$.\n$\\frac{dV}{dh} = \\pi\\left(R^{2} - \\frac{3h^{2}}{4}\\right) = 0$ gives $h = \\frac{2R}{\\sqrt{3}}$; $\\frac{d^{2}V}{dh^{2}} = -\\frac{3\\pi h}{2} < 0$, so $V$ is maximum.\n$V_{\\max} = \\pi\\left(R^{2} - \\frac{R^{2}}{3}\\right)\\frac{2R}{\\sqrt{3}} = \\frac{4\\pi R^{3}}{3\\sqrt{3}}$ cubic units.",
+    "36": "(i) $P(B)\\,P(D \\mid B) = 0.3 \\times 0.03 = 0.009$.\n(ii) $P(D) = 0.5 \\times 0.02 + 0.3 \\times 0.03 + 0.2 \\times 0.04 = 0.010 + 0.009 + 0.008 = 0.027$.\n(iii) By Bayes' theorem, $P(A \\mid D) = \\frac{0.010}{0.027} = \\frac{10}{27}$.\nOR: $P(\\bar D) = 1 - 0.027 = 0.973$ and $P(C)\\,P(\\bar D \\mid C) = 0.2 \\times 0.96 = 0.192$, so $P(C \\mid \\bar D) = \\frac{0.192}{0.973} = \\frac{192}{973}$.",
+    "37": "(i) $[2] = \\{2, 5, 8\\}$.\n(ii) Three classes: $\\{1, 4, 7\\}$, $\\{2, 5, 8\\}$ and $\\{3, 6, 9\\}$.\n(iii) Reflexive: $a - a = 0$ is divisible by 3. Symmetric: if $3 \\mid (a - b)$ then $3 \\mid (b - a) = -(a - b)$. Transitive: if $3 \\mid (a - b)$ and $3 \\mid (b - c)$, then $3 \\mid (a - b) + (b - c) = a - c$. So $R$ is an equivalence relation.\nOR: $g(3) = 0$, $g(1) = 1$ and $g(2) = 2$, so every element of $\\{0, 1, 2\\}$ has a pre-image and $g$ is onto. $g(1) = g(4) = 1$ with $1 \\neq 4$, so $g$ is not one-one.",
+    "38": "(i) $2, -1, 1$.\n(ii) No. The direction ratios $2, -1, 1$ and $3, -5, 2$ are not proportional, because $\\frac{2}{3} \\neq \\frac{-1}{-5}$.\n(iii) $\\cos\\theta = \\frac{|2 \\times 3 + (-1)(-5) + 1 \\times 2|}{\\sqrt{6}\\sqrt{38}} = \\frac{13}{\\sqrt{228}} = \\frac{13}{2\\sqrt{57}}$, so $\\theta = \\cos^{-1}\\frac{13}{2\\sqrt{57}}$.\nOR: Equate coordinates: $1 + 2\\lambda = 2 + 3\\mu$ and $1 - \\lambda = 1 - 5\\mu$. Then $\\lambda = 5\\mu$, so $1 + 10\\mu = 2 + 3\\mu$, $\\mu = \\frac{1}{7}$ and $\\lambda = \\frac{5}{7}$.\n$z$: $\\lambda = \\frac{5}{7}$ on the first path and $-1 + 2\\mu = -\\frac{5}{7}$ on the second. These are not equal, so the paths do not intersect."
+   }
+  },
+  "cbse12-sp-02": {
+   "title": "CBSE Class 12 · Sample Paper 02",
+   "mcqAnswerKey": {
+    "1": 1,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 2,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1,
+    "13": 0,
+    "14": 3,
+    "15": 2,
+    "16": 2,
+    "17": 1,
+    "18": 0,
+    "19": 1,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "$\\frac{3\\pi}{5}$ is not in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$. Write $\\sin\\frac{3\\pi}{5} = \\sin\\left(\\pi - \\frac{3\\pi}{5}\\right) = \\sin\\frac{2\\pi}{5}$.\n$\\frac{2\\pi}{5} \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, so $\\sin^{-1}\\left(\\sin\\frac{3\\pi}{5}\\right) = \\frac{2\\pi}{5}$.\nOR: If $f(x_{1}) = f(x_{2})$, then $2x_{1} = 2x_{2}$, so $x_{1} = x_{2}$: $f$ is one-one. The natural number 1 has no pre-image, because $2x = 1$ gives $x = \\frac{1}{2} \\notin \\mathbb{N}$. So $f$ is not onto.",
+    "22": "Put $x = \\sin\\theta$ with $-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$. Then $2x\\sqrt{1 - x^{2}} = 2\\sin\\theta\\cos\\theta = \\sin 2\\theta$, and $2\\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$.\nSo $y = \\sin^{-1}(\\sin 2\\theta) = 2\\theta = 2\\sin^{-1}x$.\n$\\frac{dy}{dx} = \\frac{2}{\\sqrt{1 - x^{2}}}$.",
+    "23": "$\\overrightarrow{AB} = \\hat i + 2\\hat j + 3\\hat k$ and $\\overrightarrow{AC} = 4\\hat j + 3\\hat k$.\n$\\overrightarrow{AB} \\times \\overrightarrow{AC} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & 2 & 3 \\\\ 0 & 4 & 3 \\end{vmatrix} = -6\\hat i - 3\\hat j + 4\\hat k$.\nArea $= \\frac{1}{2}\\sqrt{36 + 9 + 16} = \\frac{\\sqrt{61}}{2}$ sq. units.\nOR: $|\\vec a - 2\\vec b|^{2} = |\\vec a|^{2} + 4|\\vec b|^{2} - 4\\vec a \\cdot \\vec b = 4 + 36 - 12 = 28$, so $|\\vec a - 2\\vec b| = 2\\sqrt{7}$.",
+    "24": "$P(A \\cap B) = P(A \\mid B)\\,P(B) = 0.4 \\times 0.5 = 0.2$.\n$P(A \\cup B) = 0.6 + 0.5 - 0.2 = 0.9$.\n$P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{0.2}{0.6} = \\frac{1}{3}$.",
+    "25": "$f'(x) = \\frac{\\cos x - \\sin x}{1 + (\\sin x + \\cos x)^{2}}$.\nThe denominator is positive. For $0 < x < \\frac{\\pi}{4}$, $\\cos x > \\sin x$, so the numerator is positive.\nSo $f'(x) > 0$ in $\\left(0, \\frac{\\pi}{4}\\right)$ and $f$ is strictly increasing there.",
+    "26": "$x^{2} + 3x - 18 = (x + 6)(x - 3)$. Write $\\frac{3x + 5}{(x + 6)(x - 3)} = \\frac{A}{x + 6} + \\frac{B}{x - 3}$.\n$3x + 5 = A(x - 3) + B(x + 6)$. At $x = 3$: $14 = 9B$, $B = \\frac{14}{9}$. At $x = -6$: $-13 = -9A$, $A = \\frac{13}{9}$.\nIntegral $= \\frac{13}{9}\\log|x + 6| + \\frac{14}{9}\\log|x - 3| + C$.\nOR: By parts with $u = \\tan^{-1}x$, $dv = x^{2}dx$: $\\frac{x^{3}}{3}\\tan^{-1}x - \\frac{1}{3}\\int \\frac{x^{3}}{1 + x^{2}}dx$.\n$\\frac{x^{3}}{1 + x^{2}} = x - \\frac{x}{1 + x^{2}}$, so $\\int \\frac{x^{3}}{1 + x^{2}}dx = \\frac{x^{2}}{2} - \\frac{1}{2}\\log(1 + x^{2})$.\nAnswer: $\\frac{x^{3}}{3}\\tan^{-1}x - \\frac{x^{2}}{6} + \\frac{1}{6}\\log(1 + x^{2}) + C$.",
+    "27": "$\\int_{1}^{4} |x - 1|dx = \\int_{1}^{4} (x - 1)dx = \\frac{9}{2}$.\n$\\int_{1}^{4} |x - 2|dx = \\int_{1}^{2} (2 - x)dx + \\int_{2}^{4} (x - 2)dx = \\frac{1}{2} + 2 = \\frac{5}{2}$.\n$\\int_{1}^{4} |x - 3|dx = \\int_{1}^{3} (3 - x)dx + \\int_{3}^{4} (x - 3)dx = 2 + \\frac{1}{2} = \\frac{5}{2}$.\nTotal $= \\frac{9}{2} + \\frac{5}{2} + \\frac{5}{2} = \\frac{19}{2}$.",
+    "28": "$\\frac{dy}{dx} + \\frac{2x}{1 + x^{2}}y = \\frac{1}{(1 + x^{2})^{2}}$. $\\text{IF} = e^{\\int \\frac{2x}{1 + x^{2}}dx} = 1 + x^{2}$.\n$y(1 + x^{2}) = \\int \\frac{1}{1 + x^{2}}dx = \\tan^{-1}x + C$.\n$y = 0$ at $x = 0$ gives $C = 0$. Solution: $y = \\frac{\\tan^{-1}x}{1 + x^{2}}$.\nOR: $\\frac{dy}{dx} = \\frac{y + \\sqrt{x^{2} + y^{2}}}{x}$ is homogeneous. Put $y = vx$: $v + x\\frac{dv}{dx} = v + \\sqrt{1 + v^{2}}$.\n$\\int \\frac{dv}{\\sqrt{1 + v^{2}}} = \\int \\frac{dx}{x}$ gives $\\log\\left|v + \\sqrt{1 + v^{2}}\\right| = \\log x + \\log C$.\nSo $v + \\sqrt{1 + v^{2}} = Cx$, that is $y + \\sqrt{x^{2} + y^{2}} = Cx^{2}$.",
+    "29": "The lines $x + 2y = 10$ and $3x + 4y = 24$ meet at $(4, 3)$.\nThe feasible region is bounded, with corner points $A(0, 5)$, $B(4, 3)$ and $C(0, 6)$.\n$Z(A) = 2500$, $Z(B) = 800 + 1500 = 2300$, $Z(C) = 3000$.\nMinimum $Z = 2300$ at $x = 4$, $y = 3$.",
+    "30": "$\\frac{dy}{dx} = e^{a\\cos^{-1}x} \\cdot \\frac{-a}{\\sqrt{1 - x^{2}}}$, so $\\sqrt{1 - x^{2}}\\frac{dy}{dx} = -ay$.\nSquaring: $(1 - x^{2})\\left(\\frac{dy}{dx}\\right)^{2} = a^{2}y^{2}$. Differentiate: $(1 - x^{2}) \\cdot 2\\frac{dy}{dx}\\frac{d^{2}y}{dx^{2}} - 2x\\left(\\frac{dy}{dx}\\right)^{2} = 2a^{2}y\\frac{dy}{dx}$.\nDivide by $2\\frac{dy}{dx}$: $(1 - x^{2})\\frac{d^{2}y}{dx^{2}} - x\\frac{dy}{dx} - a^{2}y = 0$.\nOR: $\\frac{dx}{d\\theta} = a(1 + \\cos\\theta)$, $\\frac{dy}{d\\theta} = a\\sin\\theta$, so $\\frac{dy}{dx} = \\frac{\\sin\\theta}{1 + \\cos\\theta} = \\tan\\frac{\\theta}{2}$.\n$\\frac{d^{2}y}{dx^{2}} = \\frac{1}{2}\\sec^{2}\\frac{\\theta}{2} \\cdot \\frac{d\\theta}{dx} = \\frac{\\sec^{2}\\frac{\\theta}{2}}{2a(1 + \\cos\\theta)} = \\frac{1}{4a}\\sec^{4}\\frac{\\theta}{2}$.\nAt $\\theta = \\frac{\\pi}{2}$: $\\sec^{4}\\frac{\\pi}{4} = 4$, so $\\frac{d^{2}y}{dx^{2}} = \\frac{1}{a}$.",
+    "31": "$P(E_{1}) = P(E_{2}) = \\frac{1}{2}$. $P(R \\mid E_{1}) = \\frac{3}{7}$ and $P(R \\mid E_{2}) = \\frac{5}{11}$.\nBy Bayes' theorem, $P(E_{2} \\mid R) = \\frac{\\frac{1}{2} \\cdot \\frac{5}{11}}{\\frac{1}{2} \\cdot \\frac{3}{7} + \\frac{1}{2} \\cdot \\frac{5}{11}} = \\frac{\\frac{5}{11}}{\\frac{68}{77}} = \\frac{35}{68}$.",
+    "32": "Let the costs per kg be ₹$x$ (onion), ₹$y$ (wheat) and ₹$z$ (rice): $4x + 3y + 2z = 60$, $2x + 4y + 6z = 90$, $6x + 2y + 3z = 70$.\n$A = \\begin{bmatrix} 4 & 3 & 2 \\\\ 2 & 4 & 6 \\\\ 6 & 2 & 3 \\end{bmatrix}$, $|A| = 4(12 - 12) - 3(6 - 36) + 2(4 - 24) = 0 + 90 - 40 = 50$.\n$\\operatorname{adj} A = \\begin{bmatrix} 0 & -5 & 10 \\\\ 30 & 0 & -20 \\\\ -20 & 10 & 10 \\end{bmatrix}$, so $X = \\frac{1}{50}\\begin{bmatrix} 0 - 450 + 700 \\\\ 1800 + 0 - 1400 \\\\ -1200 + 900 + 700 \\end{bmatrix} = \\frac{1}{50}\\begin{bmatrix} 250 \\\\ 400 \\\\ 400 \\end{bmatrix}$.\nOnion ₹5 per kg, wheat ₹8 per kg, rice ₹8 per kg.\nOR: $|A| = 1(6 - 3) - 1(3 + 6) + 1(-1 - 4) = -11$.\n$\\operatorname{adj} A = \\begin{bmatrix} 3 & -4 & -5 \\\\ -9 & 1 & 4 \\\\ -5 & 3 & 1 \\end{bmatrix}$, $A^{-1} = -\\frac{1}{11}\\operatorname{adj} A$.\n$X = A^{-1}\\begin{bmatrix} 6 \\\\ -4 \\\\ 9 \\end{bmatrix} = -\\frac{1}{11}\\begin{bmatrix} 18 + 16 - 45 \\\\ -54 - 4 + 36 \\\\ -30 - 12 + 9 \\end{bmatrix} = -\\frac{1}{11}\\begin{bmatrix} -11 \\\\ -22 \\\\ -33 \\end{bmatrix}$, so $x = 1$, $y = 2$, $z = 3$.",
+    "33": "$\\frac{x^{2}}{4} + \\frac{y^{2}}{9} = 1$, so in the first quadrant $y = \\frac{3}{2}\\sqrt{4 - x^{2}}$, $0 \\le x \\le 2$.\nBy symmetry, area $= 4\\int_{0}^{2} \\frac{3}{2}\\sqrt{4 - x^{2}}\\,dx = 6\\left[\\frac{x}{2}\\sqrt{4 - x^{2}} + 2\\sin^{-1}\\frac{x}{2}\\right]_{0}^{2}$.\n$= 6\\left(0 + 2 \\cdot \\frac{\\pi}{2}\\right) = 6\\pi$ sq. units.\nOR: In the first quadrant $x = 2\\sqrt{y}$. Area $= \\int_{2}^{4} 2\\sqrt{y}\\,dy = \\frac{4}{3}\\left[y^{\\frac{3}{2}}\\right]_{2}^{4} = \\frac{4}{3}\\left(8 - 2\\sqrt{2}\\right) = \\frac{32 - 8\\sqrt{2}}{3}$ sq. units.",
+    "34": "The required direction is perpendicular to $\\vec b_{1} = 3\\hat i - 16\\hat j + 7\\hat k$ and $\\vec b_{2} = 3\\hat i + 8\\hat j - 5\\hat k$.\n$\\vec b_{1} \\times \\vec b_{2} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 3 & -16 & 7 \\\\ 3 & 8 & -5 \\end{vmatrix} = 24\\hat i + 36\\hat j + 72\\hat k = 12(2\\hat i + 3\\hat j + 6\\hat k)$.\nVector equation: $\\vec r = (\\hat i + 2\\hat j - 4\\hat k) + \\lambda(2\\hat i + 3\\hat j + 6\\hat k)$.\nCartesian equation: $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z + 4}{6}$.\nOR: General points: $(3\\lambda - 1, 5\\lambda - 3, 7\\lambda - 5)$ and $(\\mu + 2, 3\\mu + 4, 5\\mu + 6)$.\nFrom $x$ and $y$: $3\\lambda - \\mu = 3$ and $5\\lambda - 3\\mu = 7$, so $\\lambda = \\frac{1}{2}$, $\\mu = -\\frac{3}{2}$.\n$z$: $7 \\cdot \\frac{1}{2} - 5 = -\\frac{3}{2}$ and $5\\left(-\\frac{3}{2}\\right) + 6 = -\\frac{3}{2}$. They agree, so the lines intersect at $\\left(\\frac{1}{2}, -\\frac{1}{2}, -\\frac{3}{2}\\right)$.",
+    "35": "Let the base be $l \\times b$. Volume: $2lb = 8$, so $lb = 4$ and $b = \\frac{4}{l}$.\nCost $C = 70 \\times 4 + 45 \\times 2 \\times 2(l + b) = 280 + 180\\left(l + \\frac{4}{l}\\right)$.\n$\\frac{dC}{dl} = 180\\left(1 - \\frac{4}{l^{2}}\\right) = 0$ gives $l = 2$; $\\frac{d^{2}C}{dl^{2}} = \\frac{1440}{l^{3}} > 0$, so $C$ is minimum.\nThen $b = 2$ and the least cost is $C = 280 + 180 \\times 4 = 1000$, that is ₹1000.\nOR: $y = 60 - x$ and $P = x(60 - x)^{3}$, $0 < x < 60$.\n$\\frac{dP}{dx} = (60 - x)^{3} - 3x(60 - x)^{2} = (60 - x)^{2}(60 - 4x) = 0$ gives $x = 15$.\n$\\frac{dP}{dx}$ changes from positive to negative at $x = 15$, so $P$ is maximum. The numbers are $x = 15$ and $y = 45$.",
+    "36": "(i) $k(1 + 2 + 3 + 4) = 1$, so $k = \\frac{1}{10}$.\n(ii) $P(X \\ge 2) = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}$.\n(iii) Mean $= 0 \\cdot \\frac{1}{10} + 1 \\cdot \\frac{2}{10} + 2 \\cdot \\frac{3}{10} + 3 \\cdot \\frac{4}{10} = \\frac{20}{10} = 2$.\nOR: $P(X \\le 1 \\mid X \\le 2) = \\frac{P(X \\le 1)}{P(X \\le 2)} = \\frac{\\frac{3}{10}}{\\frac{6}{10}} = \\frac{1}{2}$.",
+    "37": "(i) $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.\n(ii) $\\sin\\frac{2\\pi}{3} = \\sin\\frac{\\pi}{3}$ and $\\frac{\\pi}{3}$ lies in the principal branch, so the value is $\\frac{\\pi}{3}$.\n(iii) $-1 \\le 2x - 3 \\le 1$ gives $2 \\le 2x \\le 4$, so $1 \\le x \\le 2$. $\\sin^{-1}(2x - 3) = \\frac{\\pi}{2}$ gives $2x - 3 = 1$, so $x = 2$.\nOR: $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$ and $\\sin^{-1}\\frac{1}{2} = \\frac{\\pi}{6}$. Value $= \\frac{2\\pi}{3} + \\frac{\\pi}{3} = \\pi$.",
+    "38": "(i) $\\overrightarrow{OP} = \\hat i + 2\\hat j + 3\\hat k$.\n(ii) $\\overrightarrow{PQ} = 2\\hat i + 4\\hat j + 4\\hat k$ and $|\\overrightarrow{PQ}| = 6$. Unit vector $= \\frac{1}{3}\\hat i + \\frac{2}{3}\\hat j + \\frac{2}{3}\\hat k$.\n(iii) $\\cos\\angle POQ = \\frac{\\overrightarrow{OP} \\cdot \\overrightarrow{OQ}}{|\\overrightarrow{OP}||\\overrightarrow{OQ}|} = \\frac{3 + 12 + 21}{\\sqrt{14}\\sqrt{94}} = \\frac{36}{2\\sqrt{329}} = \\frac{18}{\\sqrt{329}}$.\nOR: $\\overrightarrow{OP} \\times \\overrightarrow{OQ} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & 2 & 3 \\\\ 3 & 6 & 7 \\end{vmatrix} = -4\\hat i + 2\\hat j + 0\\hat k$. Area $= \\frac{1}{2}\\sqrt{16 + 4} = \\sqrt{5}$ sq. km."
+   }
+  },
+  "cbse12-sp-03": {
+   "title": "CBSE Class 12 · Sample Paper 03",
+   "mcqAnswerKey": {
+    "1": 2,
+    "2": 1,
+    "3": 0,
+    "4": 0,
+    "5": 3,
+    "6": 2,
+    "7": 1,
+    "8": 1,
+    "9": 0,
+    "10": 3,
+    "11": 2,
+    "12": 2,
+    "13": 1,
+    "14": 0,
+    "15": 3,
+    "16": 3,
+    "17": 2,
+    "18": 1,
+    "19": 0,
+    "20": 3
+   },
+   "writtenSolutions": {
+    "21": "Reflexive: no line is perpendicular to itself, so $(L, L) \\notin R$. $R$ is not reflexive.\nSymmetric: if $L_{1} \\perp L_{2}$, then $L_{2} \\perp L_{1}$. $R$ is symmetric.\nTransitive: if $L_{1} \\perp L_{2}$ and $L_{2} \\perp L_{3}$, then $L_{1} \\parallel L_{3}$, so $(L_{1}, L_{3}) \\notin R$. $R$ is not transitive.\nOR: Let $\\tan^{-1}2 = \\alpha$, so $\\tan\\alpha = 2$ and $\\sec^{2}\\alpha = 1 + \\tan^{2}\\alpha = 5$.\nLet $\\cot^{-1}3 = \\beta$, so $\\cot\\beta = 3$ and $\\operatorname{cosec}^{2}\\beta = 1 + \\cot^{2}\\beta = 10$.\nValue $= 5 + 10 = 15$.",
+    "22": "Continuity at 1: $1 + 3 + p = q + 2$, so $p - q = -2$.\nLeft derivative $= 2x + 3 = 5$ at $x = 1$; right derivative $= q$. Differentiability gives $q = 5$.\nThen $p = 3$.",
+    "23": "Let $\\vec c = c_{1}\\hat i + c_{2}\\hat j + c_{3}\\hat k$. Then $\\vec a \\times \\vec c = (c_{3} - c_{2})\\hat i + (c_{1} - c_{3})\\hat j + (c_{2} - c_{1})\\hat k = \\hat j - \\hat k$.\nSo $c_{3} = c_{2}$, $c_{1} - c_{3} = 1$, and $c_{1} + c_{2} + c_{3} = 3$.\nThen $3c_{2} + 1 = 3$, $c_{2} = c_{3} = \\frac{2}{3}$, $c_{1} = \\frac{5}{3}$. $\\vec c = \\frac{5}{3}\\hat i + \\frac{2}{3}\\hat j + \\frac{2}{3}\\hat k$.\nOR: $\\vec b + \\vec c = 3\\hat i + \\hat j + 2\\hat k$. Projection on $\\vec a$ $= \\frac{(\\vec b + \\vec c) \\cdot \\vec a}{|\\vec a|} = \\frac{6 - 2 + 2}{3} = 2$.",
+    "24": "$A$ wins on the 1st, 3rd, 5th, … throw. $P(\\text{six}) = \\frac{1}{6}$ and $P(\\text{not six}) = \\frac{5}{6}$.\n$P(A \\text{ wins}) = \\frac{1}{6} + \\left(\\frac{5}{6}\\right)^{2}\\frac{1}{6} + \\left(\\frac{5}{6}\\right)^{4}\\frac{1}{6} + \\cdots = \\frac{\\frac{1}{6}}{1 - \\frac{25}{36}} = \\frac{6}{11}$.",
+    "25": "$f'(x) = 6x^{2} - 30x + 36 = 6(x - 2)(x - 3)$, so the critical points are $x = 2$ and $x = 3$.\n$f(1) = 24$, $f(2) = 29$, $f(3) = 28$, $f(5) = 56$.\nAbsolute maximum $= 56$ at $x = 5$; absolute minimum $= 24$ at $x = 1$.",
+    "26": "Write $\\sin x = \\sin[(x - a) + a] = \\sin(x - a)\\cos a + \\cos(x - a)\\sin a$.\n$\\frac{\\sin x}{\\sin(x - a)} = \\cos a + \\sin a\\cot(x - a)$.\nIntegral $= x\\cos a + \\sin a\\log|\\sin(x - a)| + C$.\nOR: $\\frac{x^{2} + x + 1}{(x + 2)(x^{2} + 1)} = \\frac{A}{x + 2} + \\frac{Bx + C}{x^{2} + 1}$, so $x^{2} + x + 1 = A(x^{2} + 1) + (Bx + C)(x + 2)$.\n$x = -2$: $3 = 5A$, $A = \\frac{3}{5}$. Coefficient of $x^{2}$: $1 = A + B$, $B = \\frac{2}{5}$. Constant: $1 = A + 2C$, $C = \\frac{1}{5}$.\nIntegral $= \\frac{3}{5}\\log|x + 2| + \\frac{1}{5}\\log(x^{2} + 1) + \\frac{1}{5}\\tan^{-1}x + C$.",
+    "27": "Let $I = \\int_{0}^{\\frac{\\pi}{2}} \\log\\sin x\\,dx$. By $\\int_{0}^{a} f(x)dx = \\int_{0}^{a} f(a - x)dx$, $I = \\int_{0}^{\\frac{\\pi}{2}} \\log\\cos x\\,dx$.\n$2I = \\int_{0}^{\\frac{\\pi}{2}} \\log(\\sin x\\cos x)dx = \\int_{0}^{\\frac{\\pi}{2}} \\log\\sin 2x\\,dx - \\frac{\\pi}{2}\\log 2$.\nPut $2x = t$: $\\int_{0}^{\\frac{\\pi}{2}} \\log\\sin 2x\\,dx = \\frac{1}{2}\\int_{0}^{\\pi} \\log\\sin t\\,dt = \\frac{1}{2} \\cdot 2\\int_{0}^{\\frac{\\pi}{2}} \\log\\sin t\\,dt = I$.\nSo $2I = I - \\frac{\\pi}{2}\\log 2$ and $I = -\\frac{\\pi}{2}\\log 2$.",
+    "28": "Write it as $\\frac{dx}{dy} + \\frac{x}{y} = y$, a linear equation in $x$. $\\text{IF} = e^{\\int \\frac{1}{y}dy} = y$.\n$xy = \\int y \\cdot y\\,dy = \\frac{y^{3}}{3} + C$.\nSolution: $xy = \\frac{y^{3}}{3} + C$.\nOR: $\\frac{dy}{dx} = (1 + x)(1 + y)$, so $\\int \\frac{dy}{1 + y} = \\int (1 + x)dx$: $\\log|1 + y| = x + \\frac{x^{2}}{2} + C$.\n$y = 0$ at $x = 1$: $0 = 1 + \\frac{1}{2} + C$, $C = -\\frac{3}{2}$. Solution: $\\log|1 + y| = x + \\frac{x^{2}}{2} - \\frac{3}{2}$.",
+    "29": "The lines $3x + 5y = 15$ and $5x + 2y = 10$ meet at $\\left(\\frac{20}{19}, \\frac{45}{19}\\right)$.\nCorner points: $O(0, 0)$, $A(2, 0)$, $B\\left(\\frac{20}{19}, \\frac{45}{19}\\right)$, $C(0, 3)$.\n$Z(O) = 0$, $Z(A) = 10$, $Z(B) = \\frac{100}{19} + \\frac{135}{19} = \\frac{235}{19}$, $Z(C) = 9$.\nMaximum $Z = \\frac{235}{19}$ at $x = \\frac{20}{19}$, $y = \\frac{45}{19}$.",
+    "30": "Let $u = (\\log x)^{x}$: $\\log u = x\\log(\\log x)$, so $\\frac{du}{dx} = (\\log x)^{x}\\left[\\log(\\log x) + \\frac{1}{\\log x}\\right]$.\nLet $v = x^{\\log x}$: $\\log v = (\\log x)^{2}$, so $\\frac{dv}{dx} = x^{\\log x} \\cdot \\frac{2\\log x}{x}$.\n$\\frac{dy}{dx} = (\\log x)^{x}\\left[\\log(\\log x) + \\frac{1}{\\log x}\\right] + 2x^{\\log x - 1}\\log x$.\nOR: Put $x = \\sin A$, $y = \\sin B$: $\\cos A + \\cos B = a(\\sin A - \\sin B)$.\n$2\\cos\\frac{A + B}{2}\\cos\\frac{A - B}{2} = 2a\\cos\\frac{A + B}{2}\\sin\\frac{A - B}{2}$, so $\\cot\\frac{A - B}{2} = a$ and $A - B = 2\\cot^{-1}a$.\nSo $\\sin^{-1}x - \\sin^{-1}y = 2\\cot^{-1}a$. Differentiate: $\\frac{1}{\\sqrt{1 - x^{2}}} - \\frac{1}{\\sqrt{1 - y^{2}}}\\frac{dy}{dx} = 0$, so $\\frac{dy}{dx} = \\sqrt{\\frac{1 - y^{2}}{1 - x^{2}}}$.",
+    "31": "$P(H) = \\frac{2}{3}$ and $P(T) = \\frac{1}{3}$. Let $X$ = number of heads.\n$P(X = 0) = \\left(\\frac{1}{3}\\right)^{3} = \\frac{1}{27}$; $P(X = 1) = 3 \\cdot \\frac{2}{3}\\left(\\frac{1}{3}\\right)^{2} = \\frac{6}{27}$.\n$P(X = 2) = 3\\left(\\frac{2}{3}\\right)^{2}\\frac{1}{3} = \\frac{12}{27}$; $P(X = 3) = \\left(\\frac{2}{3}\\right)^{3} = \\frac{8}{27}$.\nMean $= \\frac{0 + 6 + 24 + 24}{27} = \\frac{54}{27} = 2$.",
+    "32": "$A^{2} = \\begin{bmatrix} 9 & 8 & 8 \\\\ 8 & 9 & 8 \\\\ 8 & 8 & 9 \\end{bmatrix}$ and $4A = \\begin{bmatrix} 4 & 8 & 8 \\\\ 8 & 4 & 8 \\\\ 8 & 8 & 4 \\end{bmatrix}$.\n$A^{2} - 4A - 5I = \\begin{bmatrix} 9 - 4 - 5 & 0 & 0 \\\\ 0 & 9 - 4 - 5 & 0 \\\\ 0 & 0 & 9 - 4 - 5 \\end{bmatrix} = O$.\nMultiply $A^{2} - 4A = 5I$ by $A^{-1}$ ($|A| = 5 \\neq 0$): $A - 4I = 5A^{-1}$.\n$A^{-1} = \\frac{1}{5}(A - 4I) = \\frac{1}{5}\\begin{bmatrix} -3 & 2 & 2 \\\\ 2 & -3 & 2 \\\\ 2 & 2 & -3 \\end{bmatrix}$.\nOR: Put $u = \\frac{1}{x}$, $v = \\frac{1}{y}$, $w = \\frac{1}{z}$: $AX = B$ with $A = \\begin{bmatrix} 2 & 3 & 10 \\\\ 4 & -6 & 5 \\\\ 6 & 9 & -20 \\end{bmatrix}$, $B = \\begin{bmatrix} 4 \\\\ 1 \\\\ 2 \\end{bmatrix}$.\n$|A| = 2(120 - 45) - 3(-80 - 30) + 10(36 + 36) = 150 + 330 + 720 = 1200$.\n$\\operatorname{adj} A = \\begin{bmatrix} 75 & 150 & 75 \\\\ 110 & -100 & 30 \\\\ 72 & 0 & -24 \\end{bmatrix}$, $X = \\frac{1}{1200}\\begin{bmatrix} 300 + 150 + 150 \\\\ 440 - 100 + 60 \\\\ 288 + 0 - 48 \\end{bmatrix} = \\begin{bmatrix} \\frac{1}{2} \\\\ \\frac{1}{3} \\\\ \\frac{1}{5} \\end{bmatrix}$.\nSo $x = 2$, $y = 3$, $z = 5$.",
+    "33": "The latus rectum is the line $x = a$, through the focus $(a, 0)$. The region is symmetric about the $x$-axis.\nArea $= 2\\int_{0}^{a} 2\\sqrt{a}\\sqrt{x}\\,dx = 4\\sqrt{a}\\left[\\frac{2}{3}x^{\\frac{3}{2}}\\right]_{0}^{a} = \\frac{8}{3}a^{2}$ sq. units.\nOR: $y = x^{3}$ is below the $x$-axis for $x < 0$.\nArea $= \\left|\\int_{-2}^{0} x^{3}dx\\right| + \\int_{0}^{1} x^{3}dx = |-4| + \\frac{1}{4} = \\frac{17}{4}$ sq. units.",
+    "34": "$\\vec b = 2\\hat i + 3\\hat j + 6\\hat k$, $|\\vec b| = 7$, and $\\vec a_{2} - \\vec a_{1} = 2\\hat i + \\hat j - \\hat k$.\n$\\vec b \\times (\\vec a_{2} - \\vec a_{1}) = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 2 & 3 & 6 \\\\ 2 & 1 & -1 \\end{vmatrix} = -9\\hat i + 14\\hat j - 4\\hat k$.\nDistance $= \\frac{|\\vec b \\times (\\vec a_{2} - \\vec a_{1})|}{|\\vec b|} = \\frac{\\sqrt{81 + 196 + 16}}{7} = \\frac{\\sqrt{293}}{7}$ units.\nOR: Direction $\\overrightarrow{AB} = 2\\hat i - 3\\hat j + 5\\hat k$. Vector equation: $\\vec r = (3\\hat i + 4\\hat j + \\hat k) + \\lambda(2\\hat i - 3\\hat j + 5\\hat k)$.\nCartesian: $\\frac{x - 3}{2} = \\frac{y - 4}{-3} = \\frac{z - 1}{5}$.\nOn the $XY$-plane $z = 0$: $1 + 5\\lambda = 0$, $\\lambda = -\\frac{1}{5}$. Point $\\left(3 - \\frac{2}{5}, 4 + \\frac{3}{5}, 0\\right) = \\left(\\frac{13}{5}, \\frac{23}{5}, 0\\right)$.",
+    "35": "Let the radius be $r$, the height $h$ and the volume $V = \\frac{1}{3}\\pi r^{2}h$ (fixed), so $h = \\frac{3V}{\\pi r^{2}}$.\nCurved surface $S = \\pi r\\sqrt{r^{2} + h^{2}}$. Minimise $S^{2} = \\pi^{2}r^{2}(r^{2} + h^{2}) = \\pi^{2}r^{4} + \\frac{9V^{2}}{r^{2}}$.\n$\\frac{d(S^{2})}{dr} = 4\\pi^{2}r^{3} - \\frac{18V^{2}}{r^{3}} = 0$ gives $2\\pi^{2}r^{6} = 9V^{2} = \\pi^{2}r^{4}h^{2}$, so $h^{2} = 2r^{2}$.\n$\\frac{d^{2}(S^{2})}{dr^{2}} = 12\\pi^{2}r^{2} + \\frac{54V^{2}}{r^{4}} > 0$, so $S$ is least when $h = \\sqrt{2}\\,r$.\nOR: Let the square use $x$ m and the circle $28 - x$ m. Area $A = \\frac{x^{2}}{16} + \\frac{(28 - x)^{2}}{4\\pi}$.\n$\\frac{dA}{dx} = \\frac{x}{8} - \\frac{28 - x}{2\\pi} = 0$ gives $x = \\frac{112}{\\pi + 4}$; $\\frac{d^{2}A}{dx^{2}} = \\frac{1}{8} + \\frac{1}{2\\pi} > 0$.\nSquare piece $= \\frac{112}{\\pi + 4}$ m and circle piece $= \\frac{28\\pi}{\\pi + 4}$ m.",
+    "36": "(i) $\\frac{3}{10} \\times \\frac{1}{4} = \\frac{3}{40}$.\n(ii) $P(L) = \\frac{3}{40} + \\frac{1}{5} \\cdot \\frac{1}{3} + \\frac{1}{10} \\cdot \\frac{1}{12} + 0 = \\frac{9 + 8 + 1}{120} = \\frac{3}{20}$.\n(iii) $P(\\text{train} \\mid L) = \\frac{\\frac{3}{40}}{\\frac{3}{20}} = \\frac{1}{2}$.\nOR: $P(\\text{bus} \\mid L) = \\frac{\\frac{1}{15}}{\\frac{3}{20}} = \\frac{4}{9}$.",
+    "37": "(i) $\\begin{bmatrix} 2 & 3 & 1 \\\\ 1 & 2 & 4 \\\\ 3 & 1 & 2 \\end{bmatrix}\\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} = \\begin{bmatrix} 130 \\\\ 250 \\\\ 150 \\end{bmatrix}$.\n(ii) $|A| = 2(4 - 4) - 3(2 - 12) + 1(1 - 6) = 0 + 30 - 5 = 25$.\n(iii) $\\operatorname{adj} A = \\begin{bmatrix} 0 & -5 & 10 \\\\ 10 & 1 & -7 \\\\ -5 & 7 & 1 \\end{bmatrix}$, $X = \\frac{1}{25}\\operatorname{adj} A \\cdot B = \\frac{1}{25}\\begin{bmatrix} 250 \\\\ 500 \\\\ 1250 \\end{bmatrix}$: pen ₹10, notebook ₹20, bag ₹50.\nOR: First find the prices: pen ₹10, notebook ₹20, bag ₹50 (from $X = A^{-1}B$). Cost $= 5(10 + 20 + 50) = 400$, that is ₹400.",
+    "38": "(i) $\\vec R = 3\\hat i + 2\\hat j + \\hat k$.\n(ii) $|\\vec R| = \\sqrt{9 + 4 + 1} = \\sqrt{14}$ N.\n(iii) $\\overrightarrow{AB} = 2\\hat i + 2\\hat j + 3\\hat k$, so $W = 6 + 4 + 3 = 13$ J.\nOR: $\\vec F_{1} \\cdot \\vec F_{2} = 2 - 3 - 2 = -3$, $|\\vec F_{1}| = \\sqrt{14}$, $|\\vec F_{2}| = \\sqrt{6}$. $\\cos\\theta = \\frac{-3}{\\sqrt{84}} = -\\frac{3}{2\\sqrt{21}}$, so $\\theta = \\cos^{-1}\\left(-\\frac{3}{2\\sqrt{21}}\\right)$."
+   }
+  },
+  "cbse12-sp-04": {
+   "title": "CBSE Class 12 · Sample Paper 04",
+   "mcqAnswerKey": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 0,
+    "6": 3,
+    "7": 2,
+    "8": 2,
+    "9": 1,
+    "10": 0,
+    "11": 3,
+    "12": 3,
+    "13": 2,
+    "14": 1,
+    "15": 0,
+    "16": 0,
+    "17": 3,
+    "18": 2,
+    "19": 0,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "$\\sin^{-1}\\frac{1}{2} = \\frac{\\pi}{6}$, so $2\\cos\\left(\\frac{\\pi}{3}\\right) = 2 \\cdot \\frac{1}{2} = 1$.\nValue $= \\tan^{-1}1 = \\frac{\\pi}{4}$.\nOR: We need $x - 1 \\ge 0$ and $0 \\le \\sqrt{x - 1} \\le 1$, so $0 \\le x - 1 \\le 1$. Domain $= [1, 2]$.",
+    "22": "Put $x = \\tan\\theta$, $\\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, $\\theta \\neq 0$. Then $\\frac{\\sec\\theta - 1}{\\tan\\theta} = \\frac{1 - \\cos\\theta}{\\sin\\theta} = \\tan\\frac{\\theta}{2}$.\nSo $y = \\tan^{-1}\\left(\\tan\\frac{\\theta}{2}\\right) = \\frac{\\theta}{2} = \\frac{1}{2}\\tan^{-1}x$.\n$\\frac{dy}{dx} = \\frac{1}{2(1 + x^{2})}$.",
+    "23": "$\\overrightarrow{AB} = 3\\hat i - \\hat j - 2\\hat k$ and $\\overrightarrow{BC} = 6\\hat i - 2\\hat j - 4\\hat k = 2\\overrightarrow{AB}$.\n$\\overrightarrow{AB}$ and $\\overrightarrow{BC}$ are parallel and share the point $B$, so $A$, $B$, $C$ are collinear.\nOR: $\\vec a + \\lambda\\vec b = (2 - \\lambda)\\hat i + (2 + 2\\lambda)\\hat j + (3 + \\lambda)\\hat k$.\n$(\\vec a + \\lambda\\vec b) \\cdot \\vec c = 3(2 - \\lambda) + (2 + 2\\lambda) = 8 - \\lambda = 0$, so $\\lambda = 8$.",
+    "24": "$P(A) = 1 - 0.7 = 0.3$ and $P(A \\cap B) = P(B \\mid A)\\,P(A) = 0.5 \\times 0.3 = 0.15$.\n$P(A \\mid B) = \\frac{0.15}{0.7} = \\frac{3}{14}$.\n$P(A \\cup B) = 0.3 + 0.7 - 0.15 = 0.85$.",
+    "25": "Let the foot be $x$ m from the wall and the top $y$ m high: $x^{2} + y^{2} = 25$.\nDifferentiate: $2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 0$, so $\\frac{dy}{dt} = -\\frac{x}{y}\\frac{dx}{dt}$.\nAt $x = 4$, $y = 3$ and $\\frac{dx}{dt} = 2$ cm/s: $\\frac{dy}{dt} = -\\frac{4}{3} \\times 2 = -\\frac{8}{3}$ cm/s.\nThe top slides down at $\\frac{8}{3}$ cm/s.",
+    "26": "Write $\\frac{1}{x(x^{5} + 3)} = \\frac{x^{4}}{x^{5}(x^{5} + 3)}$ and put $x^{5} = t$, $5x^{4}dx = dt$.\n$\\int \\frac{dt}{5t(t + 3)} = \\frac{1}{15}\\int \\left(\\frac{1}{t} - \\frac{1}{t + 3}\\right)dt = \\frac{1}{15}\\log\\left|\\frac{t}{t + 3}\\right| + C$.\nAnswer: $\\frac{1}{15}\\log\\left|\\frac{x^{5}}{x^{5} + 3}\\right| + C$.\nOR: Put $\\sin x = t$, $\\cos x\\,dx = dt$: $\\int \\frac{2t}{(1 + t)(2 + t)}dt$.\n$\\frac{2t}{(1 + t)(2 + t)} = \\frac{-2}{1 + t} + \\frac{4}{2 + t}$.\nAnswer: $-2\\log|1 + \\sin x| + 4\\log|2 + \\sin x| + C$.",
+    "27": "Let $I = \\int_{0}^{\\frac{\\pi}{4}} \\log(1 + \\tan x)dx$. Replace $x$ by $\\frac{\\pi}{4} - x$: $\\tan\\left(\\frac{\\pi}{4} - x\\right) = \\frac{1 - \\tan x}{1 + \\tan x}$.\n$1 + \\frac{1 - \\tan x}{1 + \\tan x} = \\frac{2}{1 + \\tan x}$, so $I = \\int_{0}^{\\frac{\\pi}{4}} \\left[\\log 2 - \\log(1 + \\tan x)\\right]dx = \\frac{\\pi}{4}\\log 2 - I$.\n$2I = \\frac{\\pi}{4}\\log 2$, so $I = \\frac{\\pi}{8}\\log 2$.",
+    "28": "Divide by $x^{2}dx$: $\\left(\\frac{dy}{dx} - \\frac{y}{x}\\right)\\frac{y}{x}\\sin\\frac{y}{x} = \\left(\\frac{y}{x} + \\frac{dy}{dx}\\right)\\cos\\frac{y}{x}$. Put $y = vx$, $\\frac{dy}{dx} = v + x\\frac{dv}{dx}$.\n$x\\frac{dv}{dx} \\cdot v\\sin v = \\left(2v + x\\frac{dv}{dx}\\right)\\cos v$, so $x\\frac{dv}{dx}(v\\sin v - \\cos v) = 2v\\cos v$.\n$\\int \\frac{v\\sin v - \\cos v}{v\\cos v}dv = \\int \\frac{2}{x}dx$: $\\int \\left(\\tan v - \\frac{1}{v}\\right)dv = 2\\log|x| + \\log k$.\n$-\\log|\\cos v| - \\log|v| = \\log(kx^{2})$, so $v\\cos v \\cdot x^{2} = C$.\nWith $v = \\frac{y}{x}$: $xy\\cos\\left(\\frac{y}{x}\\right) = C$.\nOR: $\\text{IF} = e^{-3\\int \\cot x\\,dx} = \\frac{1}{\\sin^{3} x}$. $\\frac{y}{\\sin^{3} x} = \\int \\frac{2\\sin x\\cos x}{\\sin^{3} x}dx = \\int 2\\operatorname{cosec} x\\cot x\\,dx = -2\\operatorname{cosec} x + C$.\n$y = -2\\sin^{2} x + C\\sin^{3} x$. At $x = \\frac{\\pi}{2}$: $2 = -2 + C$, $C = 4$. Solution: $y = 4\\sin^{3} x - 2\\sin^{2} x$.",
+    "29": "The lines $2x + y = 3$ and $x + 2y = 6$ meet at $(0, 3)$. The feasible region is unbounded, with corner points $A(6, 0)$ and $B(0, 3)$.\n$Z(A) = 6$ and $Z(B) = 6$.\nThe region is unbounded, so check $x + 2y < 6$: it has no point in common with the feasible region, because $x + 2y \\ge 6$ is a constraint. So the minimum is $6$.\n$Z = 6$ at every point of the segment $AB$ (the line $x + 2y = 6$ between $A$ and $B$), so the minimum occurs at infinitely many points.",
+    "30": "Each piece is a polynomial, so $f$ is continuous except possibly at $x = 2$ and $x = 4$.\nAt $x = 2$: left limit $= 4 + 2a + b$ and $f(2) = 8$, so $2a + b = 4$.\nAt $x = 4$: $f(4) = 14$ and right limit $= 8a + 5b$, so $8a + 5b = 14$.\nFrom $b = 4 - 2a$: $8a + 20 - 10a = 14$, so $a = 3$ and $b = -2$.\nOR: $e^{y} = \\frac{1}{x + 1}$, so $y = -\\log(x + 1)$.\n$\\frac{dy}{dx} = -\\frac{1}{x + 1}$ and $\\frac{d^{2}y}{dx^{2}} = \\frac{1}{(x + 1)^{2}} = \\left(\\frac{dy}{dx}\\right)^{2}$.",
+    "31": "$X$ takes the values 0, 1, 2, 3, 4, 5 with numbers of outcomes 6, 10, 8, 6, 4, 2 (out of 36).\n$P(X = 0) = \\frac{6}{36}$, $P(X = 1) = \\frac{10}{36}$, $P(X = 2) = \\frac{8}{36}$, $P(X = 3) = \\frac{6}{36}$, $P(X = 4) = \\frac{4}{36}$, $P(X = 5) = \\frac{2}{36}$.\nMean $= \\frac{0 + 10 + 16 + 18 + 16 + 10}{36} = \\frac{70}{36} = \\frac{35}{18}$.",
+    "32": "$A = \\begin{bmatrix} 3 & -2 & 3 \\\\ 2 & 1 & -1 \\\\ 4 & -3 & 2 \\end{bmatrix}$, $|A| = 3(2 - 3) + 2(4 + 4) + 3(-6 - 4) = -3 + 16 - 30 = -17 \\neq 0$.\n$\\operatorname{adj} A = \\begin{bmatrix} -1 & -5 & -1 \\\\ -8 & -6 & 9 \\\\ -10 & 1 & 7 \\end{bmatrix}$.\n$X = A^{-1}B = -\\frac{1}{17}\\begin{bmatrix} -8 - 5 - 4 \\\\ -64 - 6 + 36 \\\\ -80 + 1 + 28 \\end{bmatrix} = -\\frac{1}{17}\\begin{bmatrix} -17 \\\\ -34 \\\\ -51 \\end{bmatrix}$.\n$x = 1$, $y = 2$, $z = 3$.\nOR: $A^{2} = \\begin{bmatrix} 6 & -5 & 5 \\\\ -5 & 6 & -5 \\\\ 5 & -5 & 6 \\end{bmatrix}$, $A^{3} = \\begin{bmatrix} 22 & -21 & 21 \\\\ -21 & 22 & -21 \\\\ 21 & -21 & 22 \\end{bmatrix}$.\n$A^{3} - 6A^{2} + 9A - 4I$: for example the $(1, 1)$ entry is $22 - 36 + 18 - 4 = 0$ and the $(1, 2)$ entry is $-21 + 30 - 9 = 0$; every entry is 0.\nMultiply by $A^{-1}$: $A^{2} - 6A + 9I = 4A^{-1}$, so $A^{-1} = \\frac{1}{4}\\begin{bmatrix} 3 & 1 & -1 \\\\ 1 & 3 & 1 \\\\ -1 & 1 & 3 \\end{bmatrix}$.",
+    "33": "In the first quadrant $y = \\frac{3}{4}\\sqrt{16 - x^{2}}$.\nArea $= \\frac{3}{4}\\int_{0}^{2} \\sqrt{16 - x^{2}}dx = \\frac{3}{4}\\left[\\frac{x}{2}\\sqrt{16 - x^{2}} + 8\\sin^{-1}\\frac{x}{4}\\right]_{0}^{2}$.\n$= \\frac{3}{4}\\left(\\sqrt{12} + 8 \\cdot \\frac{\\pi}{6}\\right) = \\frac{3}{4}\\left(2\\sqrt{3} + \\frac{4\\pi}{3}\\right) = \\frac{3\\sqrt{3}}{2} + \\pi$ sq. units.\nOR: $y = 3\\sqrt{x}$. Area $= \\int_{2}^{4} 3\\sqrt{x}\\,dx = 2\\left[x^{\\frac{3}{2}}\\right]_{2}^{4} = 2\\left(8 - 2\\sqrt{2}\\right) = 16 - 4\\sqrt{2}$ sq. units.",
+    "34": "(a) $\\overrightarrow{AB} = 6\\hat i + 3\\hat j + 6\\hat k = 3(2\\hat i + \\hat j + 2\\hat k)$.\n$\\vec r = (-2\\hat i - \\hat j + 3\\hat k) + \\lambda(2\\hat i + \\hat j + 2\\hat k)$; Cartesian: $\\frac{x + 2}{2} = \\frac{y + 1}{1} = \\frac{z - 3}{2}$.\n(b) $|2\\hat i + \\hat j + 2\\hat k| = 3$, so the direction cosines are $\\frac{2}{3}, \\frac{1}{3}, \\frac{2}{3}$.\n(c) A point on $L$ is $P = A + \\lambda(2, 1, 2)$, with $AP = 3|\\lambda| = 6$, so $\\lambda = \\pm 2$.\nPoints: $(2, 1, 7)$ and $(-6, -3, -1)$.\nOR: $n = -(l + m)$. Then $l^{2} + m^{2} - (l + m)^{2} = 0$ gives $-2lm = 0$, so $l = 0$ or $m = 0$.\nIf $l = 0$: $n = -m$, direction ratios $0, 1, -1$. If $m = 0$: $n = -l$, direction ratios $1, 0, -1$.\n$\\cos\\theta = \\frac{0 + 0 + 1}{\\sqrt{2}\\sqrt{2}} = \\frac{1}{2}$, so $\\theta = \\frac{\\pi}{3}$.",
+    "35": "Let the slant height be $l$ (fixed) and the semi-vertical angle $\\alpha$. Radius $r = l\\sin\\alpha$, height $h = l\\cos\\alpha$.\n$V = \\frac{1}{3}\\pi r^{2}h = \\frac{1}{3}\\pi l^{3}\\sin^{2}\\alpha\\cos\\alpha$.\n$\\frac{dV}{d\\alpha} = \\frac{1}{3}\\pi l^{3}\\sin\\alpha\\left(2\\cos^{2}\\alpha - \\sin^{2}\\alpha\\right) = 0$ gives $\\tan^{2}\\alpha = 2$, so $\\tan\\alpha = \\sqrt{2}$.\nFor $\\tan\\alpha$ slightly less than $\\sqrt{2}$, $\\frac{dV}{d\\alpha} > 0$; for slightly more, $\\frac{dV}{d\\alpha} < 0$. So $V$ is maximum at $\\alpha = \\tan^{-1}\\sqrt{2}$.\nOR: Let the base side be $x$ and the depth $h$: $x^{2} + 4xh = c^{2}$, so $h = \\frac{c^{2} - x^{2}}{4x}$.\n$V = x^{2}h = \\frac{c^{2}x - x^{3}}{4}$, $\\frac{dV}{dx} = \\frac{c^{2} - 3x^{2}}{4} = 0$ gives $c^{2} = 3x^{2}$; $\\frac{d^{2}V}{dx^{2}} = -\\frac{3x}{2} < 0$, so $V$ is maximum.\nThen $h = \\frac{3x^{2} - x^{2}}{4x} = \\frac{x}{2}$: the depth is half the side of the base.",
+    "36": "(i) $\\frac{1}{3} \\times \\frac{1}{4} = \\frac{1}{12}$.\n(ii) $P(C) = \\frac{1}{12} + \\frac{1}{6} \\cdot \\frac{1}{8} + \\frac{1}{2} \\cdot 1 = \\frac{4 + 1 + 24}{48} = \\frac{29}{48}$.\n(iii) $P(K \\mid C) = \\frac{\\frac{1}{2}}{\\frac{29}{48}} = \\frac{24}{29}$.\nOR: $P(\\text{copied} \\mid C) = \\frac{\\frac{1}{48}}{\\frac{29}{48}} = \\frac{1}{29}$.",
+    "37": "(i) Each of the 3 vans has 4 choices: $4^{3} = 64$.\n(ii) One-one functions: $4 \\times 3 \\times 2 = 24$.\n(iii) Total functions from $R$ to $V$ $= 3^{4} = 81$. Subtract those missing at least one van: $3 \\cdot 2^{4} - 3 \\cdot 1^{4} = 48 - 3 = 45$. Onto functions $= 81 - 45 = 36$.\nOR: Reflexive: $|a - a| = 0 \\le 1$. Symmetric: $|a - b| = |b - a|$. Not transitive: $(1, 2) \\in S$ and $(2, 3) \\in S$, but $|1 - 3| = 2 > 1$, so $(1, 3) \\notin S$.",
+    "38": "(i) $\\vec d = \\vec a + \\vec c - \\vec b = (1 + 0 - 2, 1 + 2 + 1, 1 + 4 - 3) = (-1, 4, 2)$.\n(ii) $\\overrightarrow{AB} = \\hat i - 2\\hat j + 2\\hat k$, $|\\overrightarrow{AB}| = 3$ m.\n(iii) $\\overrightarrow{AD} = -2\\hat i + 3\\hat j + \\hat k$. $\\overrightarrow{AB} \\times \\overrightarrow{AD} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & -2 & 2 \\\\ -2 & 3 & 1 \\end{vmatrix} = -8\\hat i - 5\\hat j - \\hat k$. Area $= \\sqrt{64 + 25 + 1} = 3\\sqrt{10}\\ \\text{m}^{2}$.\nOR: $\\overrightarrow{AC} = -\\hat i + \\hat j + 3\\hat k$, $\\overrightarrow{BD} = -3\\hat i + 5\\hat j - \\hat k$. $\\cos\\theta = \\frac{3 + 5 - 3}{\\sqrt{11}\\sqrt{35}} = \\frac{5}{\\sqrt{385}}$."
+   }
+  },
+  "cbse12-sp-05": {
+   "title": "CBSE Class 12 · Sample Paper 05",
+   "mcqAnswerKey": {
+    "1": 0,
+    "2": 3,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 0,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0,
+    "13": 3,
+    "14": 2,
+    "15": 1,
+    "16": 1,
+    "17": 0,
+    "18": 3,
+    "19": 0,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "$\\cos\\frac{33\\pi}{5} = \\cos\\left(6\\pi + \\frac{3\\pi}{5}\\right) = \\cos\\frac{3\\pi}{5}$.\n$\\cos\\frac{3\\pi}{5} = \\sin\\left(\\frac{\\pi}{2} - \\frac{3\\pi}{5}\\right) = \\sin\\left(-\\frac{\\pi}{10}\\right)$, and $-\\frac{\\pi}{10} \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.\nSo $\\sin^{-1}\\left(\\cos\\frac{33\\pi}{5}\\right) = -\\frac{\\pi}{10}$.\nOR: $1 - x = \\sin\\frac{\\pi}{6} = \\frac{1}{2}$, so $x = \\frac{1}{2}$. The domain needs $-1 \\le 1 - x \\le 1$, that is $0 \\le x \\le 2$, and $\\frac{1}{2}$ lies in it.",
+    "22": "$\\lim_{x \\to 0} \\frac{1 - \\cos kx}{x\\sin x} = \\lim_{x \\to 0} \\frac{2\\sin^{2}\\frac{kx}{2}}{x\\sin x} = \\lim_{x \\to 0} 2 \\cdot \\frac{k^{2}}{4} \\cdot \\left(\\frac{\\sin\\frac{kx}{2}}{\\frac{kx}{2}}\\right)^{2} \\cdot \\frac{x}{\\sin x} = \\frac{k^{2}}{2}$.\nContinuity: $\\frac{k^{2}}{2} = \\frac{1}{2}$, so $k = \\pm 1$.",
+    "23": "$(\\vec a + \\vec b) \\cdot (\\vec a - \\vec b) = |\\vec a|^{2} - |\\vec b|^{2} = 0$.\n$|\\vec a|^{2} = 1 + 1 + 49 = 51$ and $|\\vec b|^{2} = 26 + \\lambda^{2}$, so $\\lambda^{2} = 25$ and $\\lambda = \\pm 5$.\nOR: $\\cos\\theta = \\frac{\\sqrt{6}}{\\sqrt{3} \\times 2} = \\frac{1}{\\sqrt{2}}$, so $\\theta = \\frac{\\pi}{4}$.",
+    "24": "Independent events give independent complements.\n(a) $P(A \\cap \\bar B) = P(A)\\,P(\\bar B) = 0.3 \\times 0.6 = 0.18$.\n(b) $P(\\bar A \\cap \\bar B) = 0.7 \\times 0.6 = 0.42$.",
+    "25": "$f'(x) = 3x^{2} - 12x + 9 = 3(x - 1)(x - 3)$; critical points $x = 1$ and $x = 3$.\n$f''(x) = 6x - 12$: $f''(1) = -6 < 0$ and $f''(3) = 6 > 0$.\nLocal maximum value $f(1) = 19$; local minimum value $f(3) = 15$.",
+    "26": "Divide by $x^{2}$: $\\int \\frac{1 + \\frac{1}{x^{2}}}{x^{2} + \\frac{1}{x^{2}}}dx = \\int \\frac{1 + \\frac{1}{x^{2}}}{\\left(x - \\frac{1}{x}\\right)^{2} + 2}dx$.\nPut $x - \\frac{1}{x} = t$, $\\left(1 + \\frac{1}{x^{2}}\\right)dx = dt$: $\\int \\frac{dt}{t^{2} + 2} = \\frac{1}{\\sqrt{2}}\\tan^{-1}\\frac{t}{\\sqrt{2}} + C$.\nAnswer: $\\frac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\frac{x^{2} - 1}{\\sqrt{2}\\,x}\\right) + C$.\nOR: $\\frac{x - 3}{(x - 1)^{3}} = \\frac{(x - 1) - 2}{(x - 1)^{3}} = \\frac{1}{(x - 1)^{2}} - \\frac{2}{(x - 1)^{3}}$.\nWith $f(x) = \\frac{1}{(x - 1)^{2}}$, $f'(x) = -\\frac{2}{(x - 1)^{3}}$, so the integral is $\\int e^{x}(f + f')dx = \\frac{e^{x}}{(x - 1)^{2}} + C$.",
+    "27": "Let $I = \\int_{0}^{\\pi} \\frac{x\\,dx}{a^{2}\\cos^{2} x + b^{2}\\sin^{2} x}$. Replace $x$ by $\\pi - x$ and add: $2I = \\pi\\int_{0}^{\\pi} \\frac{dx}{a^{2}\\cos^{2} x + b^{2}\\sin^{2} x}$.\nThe integrand satisfies $f(\\pi - x) = f(x)$, so $2I = 2\\pi\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sec^{2} x\\,dx}{a^{2} + b^{2}\\tan^{2} x}$.\nPut $b\\tan x = t$, $b\\sec^{2} x\\,dx = dt$: $I = \\frac{\\pi}{b}\\int_{0}^{\\infty} \\frac{dt}{a^{2} + t^{2}} = \\frac{\\pi}{b} \\cdot \\frac{1}{a} \\cdot \\frac{\\pi}{2}$.\n$I = \\frac{\\pi^{2}}{2ab}$.",
+    "28": "Separate: $\\frac{dy}{1 + y^{2}} = -\\frac{e^{x}dx}{1 + e^{2x}}$. Integrate: $\\tan^{-1}y = -\\tan^{-1}(e^{x}) + C$.\nAt $x = 0$, $y = 1$: $\\frac{\\pi}{4} = -\\frac{\\pi}{4} + C$, so $C = \\frac{\\pi}{2}$.\nSolution: $\\tan^{-1}y + \\tan^{-1}(e^{x}) = \\frac{\\pi}{2}$.\nOR: $\\frac{dy}{dx} = -\\frac{xy + y^{2}}{x^{2}}$. Put $y = vx$: $v + x\\frac{dv}{dx} = -v - v^{2}$, so $x\\frac{dv}{dx} = -v(v + 2)$.\n$\\int \\frac{dv}{v(v + 2)} = -\\int \\frac{dx}{x}$: $\\frac{1}{2}\\log\\left|\\frac{v}{v + 2}\\right| = -\\log|x| + \\log k$, so $\\frac{v}{v + 2} = \\frac{C}{x^{2}}$.\nWith $v = \\frac{y}{x}$: $\\frac{y}{y + 2x} = \\frac{C}{x^{2}}$, so $x^{2}y = C(y + 2x)$. At $(1, 1)$: $1 = 3C$, $C = \\frac{1}{3}$.\nSolution: $3x^{2}y = y + 2x$.",
+    "29": "Let $x$ kg of $P$ and $y$ kg of $Q$. Minimise $Z = 50x + 70y$ subject to $2x + y \\ge 8$, $x + 2y \\ge 10$, $x, y \\ge 0$.\nThe lines meet at $(2, 4)$. Corner points of the unbounded region: $(0, 8)$, $(2, 4)$, $(10, 0)$.\n$Z(0, 8) = 560$, $Z(2, 4) = 380$, $Z(10, 0) = 500$.\nThe region is unbounded, so check $50x + 70y < 380$: this half-plane has no point in common with the feasible region. So the minimum is $Z = 380$.\nLeast cost ₹380, with 2 kg of $P$ and 4 kg of $Q$.",
+    "30": "$\\frac{dx}{d\\theta} = -a\\sin\\theta + b\\cos\\theta = -y$ and $\\frac{dy}{d\\theta} = a\\cos\\theta + b\\sin\\theta = x$, so $\\frac{dy}{dx} = -\\frac{x}{y}$.\n$\\frac{d^{2}y}{dx^{2}} = -\\frac{y - x\\frac{dy}{dx}}{y^{2}} = -\\frac{y + \\frac{x^{2}}{y}}{y^{2}} = -\\frac{x^{2} + y^{2}}{y^{3}}$.\n$y^{2}\\frac{d^{2}y}{dx^{2}} - x\\frac{dy}{dx} + y = -\\frac{x^{2} + y^{2}}{y} + \\frac{x^{2}}{y} + y = -y + y = 0$.\nOR: $y\\log\\cos x = x\\log\\cos y$. Differentiate: $\\frac{dy}{dx}\\log\\cos x - y\\tan x = \\log\\cos y - x\\tan y\\frac{dy}{dx}$.\n$\\frac{dy}{dx} = \\frac{\\log\\cos y + y\\tan x}{\\log\\cos x + x\\tan y}$.",
+    "31": "$P(\\text{both red}) = \\frac{5}{9} \\times \\frac{4}{8} = \\frac{20}{72}$.\n$P(\\text{at least one red}) = 1 - P(\\text{both white}) = 1 - \\frac{4}{9} \\times \\frac{3}{8} = 1 - \\frac{12}{72} = \\frac{60}{72}$.\nBoth red is part of at least one red, so $P = \\frac{\\frac{20}{72}}{\\frac{60}{72}} = \\frac{1}{3}$.",
+    "32": "Equations: $x + y + z = 6000$, $x + 3z = 11000$, $x - 2y + z = 0$. So $AX = B$ with $A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 0 & 3 \\\\ 1 & -2 & 1 \\end{bmatrix}$, $B = \\begin{bmatrix} 6000 \\\\ 11000 \\\\ 0 \\end{bmatrix}$.\n$|A| = 1(0 + 6) - 1(1 - 3) + 1(-2 - 0) = 6 + 2 - 2 = 6$.\n$\\operatorname{adj} A = \\begin{bmatrix} 6 & -3 & 3 \\\\ 2 & 0 & -2 \\\\ -2 & 3 & -1 \\end{bmatrix}$, $A^{-1} = \\frac{1}{6}\\operatorname{adj} A$.\n$X = \\frac{1}{6}\\begin{bmatrix} 36000 - 33000 + 0 \\\\ 12000 + 0 - 0 \\\\ -12000 + 33000 - 0 \\end{bmatrix} = \\frac{1}{6}\\begin{bmatrix} 3000 \\\\ 12000 \\\\ 21000 \\end{bmatrix}$.\nHonesty ₹500, regularity ₹2000, hard work ₹3500.\nOR: $A = \\begin{bmatrix} 3 & -1 & -2 \\\\ 0 & 2 & -1 \\\\ 3 & -5 & 0 \\end{bmatrix}$, $|A| = 3(0 - 5) + 1(0 + 3) - 2(0 - 6) = -15 + 3 + 12 = 0$.\n$\\operatorname{adj} A = \\begin{bmatrix} -5 & 10 & 5 \\\\ -3 & 6 & 3 \\\\ -6 & 12 & 6 \\end{bmatrix}$ and $(\\operatorname{adj} A)B = \\begin{bmatrix} -10 - 10 + 15 \\\\ -6 - 6 + 9 \\\\ -12 - 12 + 18 \\end{bmatrix}$.\n$(\\operatorname{adj} A)B = \\begin{bmatrix} -5 \\\\ -3 \\\\ -6 \\end{bmatrix} \\neq O$. Since $|A| = 0$ and $(\\operatorname{adj} A)B \\neq O$, the system has no solution: it is inconsistent.",
+    "33": "Equations of the sides: $AB$: $y = \\frac{3}{2}(x + 1)$; $BC$: $y = -\\frac{1}{2}(x - 1) + 3 = \\frac{7 - x}{2}$; $AC$: $y = \\frac{1}{2}(x + 1)$.\nArea $= \\int_{-1}^{1} \\frac{3}{2}(x + 1)dx + \\int_{1}^{3} \\frac{7 - x}{2}dx - \\int_{-1}^{3} \\frac{1}{2}(x + 1)dx$.\n$= 3 + 5 - 4 = 4$ sq. units.\nOR: $y = x^{2} + 2 > 0$ on $[-1, 2]$. Area $= \\int_{-1}^{2} (x^{2} + 2)dx = \\left[\\frac{x^{3}}{3} + 2x\\right]_{-1}^{2} = \\frac{20}{3} + \\frac{7}{3} = 9$ sq. units.",
+    "34": "Standard forms: $\\frac{x - 1}{-3} = \\frac{y - 2}{\\frac{2p}{7}} = \\frac{z - 3}{2}$ and $\\frac{x - 1}{-\\frac{3p}{7}} = \\frac{y - 5}{1} = \\frac{z - 6}{-5}$.\nPerpendicular: $(-3)\\left(-\\frac{3p}{7}\\right) + \\frac{2p}{7} \\cdot 1 + 2(-5) = 0$, so $\\frac{11p}{7} = 10$ and $p = \\frac{70}{11}$.\nDirection ratios become $-33, 20, 22$ and $-30, 11, -55$ (after multiplying by 11). A point on each line: $(1, 2, 3)$ and $(1, 5, 6)$.\n$\\vec b_{1} \\times \\vec b_{2} = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ -33 & 20 & 22 \\\\ -30 & 11 & -55 \\end{vmatrix} = -1342\\hat i - 2475\\hat j + 237\\hat k$.\n$(\\vec a_{2} - \\vec a_{1}) \\cdot (\\vec b_{1} \\times \\vec b_{2}) = (0, 3, 3) \\cdot (-1342, -2475, 237) = -7425 + 711 = -6714 \\neq 0$.\nThe shortest distance is not zero, so the lines do not intersect.\nOR: $AB$: $(4s, -1 + 6s, -1 + 2s)$; $CD$: $(3 - 7t, 9 - 5t, 4)$.\n$z$: $-1 + 2s = 4$, $s = \\frac{5}{2}$, giving $(10, 14, 4)$. $x$: $3 - 7t = 10$, $t = -1$, and then $y = 9 + 5 = 14$, which agrees.\nThe lines intersect at $(10, 14, 4)$.",
+    "35": "For a point $(x, y)$ on the curve, $D^{2} = x^{2} + (y - 5)^{2} = 2y + (y - 5)^{2}$, $y \\ge 0$.\n$\\frac{d(D^{2})}{dy} = 2 + 2(y - 5) = 0$ gives $y = 4$; $\\frac{d^{2}(D^{2})}{dy^{2}} = 2 > 0$, so $D$ is least.\nThen $x^{2} = 8$, $x = \\pm 2\\sqrt{2}$. Nearest points $(2\\sqrt{2}, 4)$ and $(-2\\sqrt{2}, 4)$; least distance $= \\sqrt{8 + 1} = 3$ units.\nOR: Take the vertex $(a\\cos\\theta, b\\sin\\theta)$, $0 < \\theta < \\frac{\\pi}{2}$. Area $A = 4ab\\sin\\theta\\cos\\theta = 2ab\\sin 2\\theta$.\n$\\frac{dA}{d\\theta} = 4ab\\cos 2\\theta = 0$ gives $\\theta = \\frac{\\pi}{4}$; $\\frac{d^{2}A}{d\\theta^{2}} = -8ab\\sin 2\\theta < 0$, so $A$ is maximum.\nGreatest area $= 2ab$; sides $2a\\cos\\frac{\\pi}{4} = \\sqrt{2}a$ and $2b\\sin\\frac{\\pi}{4} = \\sqrt{2}b$.",
+    "36": "(i) $\\frac{1}{2} \\times \\frac{1}{3} \\times \\frac{1}{4} = \\frac{1}{24}$.\n(ii) $\\frac{1}{2} \\times \\frac{2}{3} \\times \\frac{3}{4} = \\frac{1}{4}$.\n(iii) $P(\\text{solved}) = 1 - P(\\text{none}) = 1 - \\frac{1}{4} = \\frac{3}{4}$.\nOR: $\\frac{1}{2} \\cdot \\frac{2}{3} \\cdot \\frac{3}{4} + \\frac{1}{2} \\cdot \\frac{1}{3} \\cdot \\frac{3}{4} + \\frac{1}{2} \\cdot \\frac{2}{3} \\cdot \\frac{1}{4} = \\frac{6 + 3 + 2}{24} = \\frac{11}{24}$.",
+    "37": "(i) $f(x_{1}) = f(x_{2})$ gives $(4x_{1} + 3)(3x_{2} + 4) = (4x_{2} + 3)(3x_{1} + 4)$, so $16x_{1} + 9x_{2} = 16x_{2} + 9x_{1}$, $7x_{1} = 7x_{2}$, $x_{1} = x_{2}$.\n(ii) $4x + 3 = 3x + 4$ gives $x = 1$.\n(iii) Let $y \\neq \\frac{4}{3}$. Solve $y = \\frac{4x + 3}{3x + 4}$: $x = \\frac{3 - 4y}{3y - 4}$, which is defined. Also $x \\neq -\\frac{4}{3}$, because $3 - 4y = -\\frac{4}{3}(3y - 4)$ would give $3 = \\frac{16}{3}$, which is false. So every $y$ has a pre-image and $f$ is onto.\nOR: $4x + 3 = 2(3x + 4)$ gives $-2x = 5$, so $x = -\\frac{5}{2}$.",
+    "38": "(i) $|\\vec a| = \\sqrt{4 + 9 + 36} = 7$.\n(ii) $\\hat a = \\frac{2}{7}\\hat i + \\frac{3}{7}\\hat j + \\frac{6}{7}\\hat k$.\n(iii) Projection $= \\frac{\\vec a \\cdot \\vec b}{|\\vec a|} = \\frac{2 + 6 + 12}{7} = \\frac{20}{7}$.\nOR: Component along $\\vec a$ $= \\frac{20}{49}\\vec a$. Perpendicular component $= \\vec b - \\frac{20}{49}\\vec a = \\frac{9}{49}\\hat i + \\frac{38}{49}\\hat j - \\frac{22}{49}\\hat k$."
+   }
+  },
+  "cbse12-sp-06": {
+   "title": "CBSE Class 12 · Sample Paper 06",
+   "mcqAnswerKey": {
+    "1": 1,
+    "2": 0,
+    "3": 3,
+    "4": 3,
+    "5": 2,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1,
+    "13": 0,
+    "14": 3,
+    "15": 2,
+    "16": 2,
+    "17": 1,
+    "18": 0,
+    "19": 1,
+    "20": 2
+   },
+   "writtenSolutions": {
+    "21": "Reflexive: $a \\le a$ for every real $a$.\nTransitive: $a \\le b$ and $b \\le c$ give $a \\le c$.\nNot symmetric: $(1, 2) \\in R$ because $1 \\le 2$, but $(2, 1) \\notin R$.\nOR: $\\tan^{-1}\\sqrt{3} = \\frac{\\pi}{3}$. The principal branch of $\\cot^{-1}$ is $(0, \\pi)$, and $\\cot\\frac{5\\pi}{6} = -\\sqrt{3}$, so $\\cot^{-1}(-\\sqrt{3}) = \\frac{5\\pi}{6}$.\nValue $= \\frac{\\pi}{3} - \\frac{5\\pi}{6} = -\\frac{\\pi}{2}$.",
+    "22": "$\\lim_{x \\to 3^{-}} (3 - x) = 0 = \\lim_{x \\to 3^{+}} (x - 3)$ and $f(3) = 0$, so $f$ is continuous at 3.\nLeft derivative: $\\lim_{h \\to 0^{-}} \\frac{|h|}{h} = -1$. Right derivative: $\\lim_{h \\to 0^{+}} \\frac{|h|}{h} = 1$.\nThey are not equal, so $f$ is not differentiable at $x = 3$.",
+    "23": "$\\vec a + \\vec b = 4\\hat i + 3\\hat j - 2\\hat k$ and $|\\vec a + \\vec b| = \\sqrt{16 + 9 + 4} = \\sqrt{29}$.\nUnit vector $= \\frac{1}{\\sqrt{29}}\\left(4\\hat i + 3\\hat j - 2\\hat k\\right)$.\nOR: Let $\\vec a = 2\\hat i - \\hat j + \\hat k$, $\\vec b = \\hat i - 3\\hat j - 5\\hat k$, $\\vec c = 3\\hat i - 4\\hat j - 4\\hat k$. Then $\\vec a + \\vec b = \\vec c$, so the vectors form a triangle.\n$\\vec a \\cdot \\vec b = 2 + 3 - 5 = 0$, so the angle between $\\vec a$ and $\\vec b$ is $90^{\\circ}$: the triangle is right-angled.",
+    "24": "They contradict when exactly one tells the truth.\n$P = \\frac{4}{5} \\cdot \\frac{1}{4} + \\frac{1}{5} \\cdot \\frac{3}{4} = \\frac{4}{20} + \\frac{3}{20} = \\frac{7}{20}$.\nThat is, in 35% of cases.",
+    "25": "$f'(x) = \\cos x - \\sin x = 0$ gives $x = \\frac{\\pi}{4}$ and $x = \\frac{5\\pi}{4}$ in $[0, 2\\pi]$.\n$f'(x) > 0$ on $\\left[0, \\frac{\\pi}{4}\\right)$ and $\\left(\\frac{5\\pi}{4}, 2\\pi\\right]$; $f'(x) < 0$ on $\\left(\\frac{\\pi}{4}, \\frac{5\\pi}{4}\\right)$.\nStrictly increasing on $\\left[0, \\frac{\\pi}{4}\\right)$ and $\\left(\\frac{5\\pi}{4}, 2\\pi\\right]$; strictly decreasing on $\\left(\\frac{\\pi}{4}, \\frac{5\\pi}{4}\\right)$.",
+    "26": "Divide numerator and denominator by $\\cos^{2} x$: $\\int \\frac{\\sec^{2} x\\,dx}{\\sec^{2} x + 3\\tan^{2} x} = \\int \\frac{\\sec^{2} x\\,dx}{1 + 4\\tan^{2} x}$.\nPut $2\\tan x = t$, $2\\sec^{2} x\\,dx = dt$: $\\frac{1}{2}\\int \\frac{dt}{1 + t^{2}} = \\frac{1}{2}\\tan^{-1}t + C$.\nAnswer: $\\frac{1}{2}\\tan^{-1}(2\\tan x) + C$.\nOR: Let $I = \\int e^{2x}\\sin x\\,dx = -e^{2x}\\cos x + 2\\int e^{2x}\\cos x\\,dx$.\n$\\int e^{2x}\\cos x\\,dx = e^{2x}\\sin x - 2I$. So $I = -e^{2x}\\cos x + 2e^{2x}\\sin x - 4I$.\n$5I = e^{2x}(2\\sin x - \\cos x)$, so $I = \\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$.",
+    "27": "Let $I$ be the integral. Replace $x$ by $\\frac{\\pi}{2} - x$: the integrand becomes $\\frac{\\left(\\frac{\\pi}{2} - x\\right)\\sin x\\cos x}{\\sin^{4} x + \\cos^{4} x}$.\nAdd: $2I = \\frac{\\pi}{2}\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin x\\cos x}{\\sin^{4} x + \\cos^{4} x}dx$. Divide by $\\cos^{4} x$: $\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\tan x\\sec^{2} x}{\\tan^{4} x + 1}dx$.\nPut $\\tan^{2} x = t$, $2\\tan x\\sec^{2} x\\,dx = dt$: $\\frac{1}{2}\\int_{0}^{\\infty} \\frac{dt}{1 + t^{2}} = \\frac{1}{2} \\cdot \\frac{\\pi}{2} = \\frac{\\pi}{4}$.\n$2I = \\frac{\\pi}{2} \\cdot \\frac{\\pi}{4}$, so $I = \\frac{\\pi^{2}}{16}$.",
+    "28": "$\\text{IF} = e^{\\int \\sec x\\,dx} = \\sec x + \\tan x$.\n$y(\\sec x + \\tan x) = \\int \\tan x(\\sec x + \\tan x)dx = \\int (\\sec x\\tan x + \\sec^{2} x - 1)dx = \\sec x + \\tan x - x + C$.\nSolution: $y(\\sec x + \\tan x) = \\sec x + \\tan x - x + C$.\nOR: $\\frac{dy}{dx} = \\frac{x + y}{x - y}$. Put $y = vx$: $v + x\\frac{dv}{dx} = \\frac{1 + v}{1 - v}$, so $x\\frac{dv}{dx} = \\frac{1 + v^{2}}{1 - v}$.\n$\\int \\frac{1 - v}{1 + v^{2}}dv = \\int \\frac{dx}{x}$: $\\tan^{-1}v - \\frac{1}{2}\\log(1 + v^{2}) = \\log|x| + C$.\nWith $v = \\frac{y}{x}$: $\\tan^{-1}\\frac{y}{x} = \\frac{1}{2}\\log(x^{2} + y^{2}) + C$.",
+    "29": "Let $x$ rackets and $y$ bats. Maximise $Z = 20x + 10y$ subject to $1.5x + 3y \\le 42$, $3x + y \\le 24$, $x, y \\ge 0$.\nThe lines $1.5x + 3y = 42$ and $3x + y = 24$ meet at $(4, 12)$.\nCorner points: $(0, 0)$, $(8, 0)$, $(4, 12)$, $(0, 14)$ with $Z = 0, 160, 200, 140$.\nMaximum profit ₹200 with 4 rackets and 12 bats.",
+    "30": "Let $u = x^{\\sin x}$: $\\log u = \\sin x\\log x$, so $\\frac{du}{dx} = x^{\\sin x}\\left(\\cos x\\log x + \\frac{\\sin x}{x}\\right)$.\nLet $v = (\\sin x)^{\\cos x}$: $\\log v = \\cos x\\log\\sin x$, so $\\frac{dv}{dx} = (\\sin x)^{\\cos x}\\left(\\cos x\\cot x - \\sin x\\log\\sin x\\right)$.\n$\\frac{dy}{dx} = x^{\\sin x}\\left(\\cos x\\log x + \\frac{\\sin x}{x}\\right) + (\\sin x)^{\\cos x}\\left(\\cos x\\cot x - \\sin x\\log\\sin x\\right)$.\nOR: $\\log x = \\cos 2t$ and $\\log y = \\sin 2t$.\n$\\frac{dx}{dt} = -2x\\sin 2t$ and $\\frac{dy}{dt} = 2y\\cos 2t$, so $\\frac{dy}{dx} = -\\frac{y\\cos 2t}{x\\sin 2t} = -\\frac{y\\log x}{x\\log y}$.",
+    "31": "$P(H) = 0.6$, $P(D) = 0.4$, $P(A \\mid H) = 0.3$, $P(A \\mid D) = 0.2$.\nBy Bayes' theorem, $P(H \\mid A) = \\frac{0.6 \\times 0.3}{0.6 \\times 0.3 + 0.4 \\times 0.2} = \\frac{0.18}{0.26} = \\frac{9}{13}$.",
+    "32": "$A = \\begin{bmatrix} 1 & -1 & 1 \\\\ 2 & 1 & -3 \\\\ 1 & 1 & 1 \\end{bmatrix}$, $|A| = 1(1 + 3) + 1(2 + 3) + 1(2 - 1) = 10$.\n$\\operatorname{adj} A = \\begin{bmatrix} 4 & 2 & 2 \\\\ -5 & 0 & 5 \\\\ 1 & -2 & 3 \\end{bmatrix}$.\n$X = \\frac{1}{10}\\begin{bmatrix} 4 & 2 & 2 \\\\ -5 & 0 & 5 \\\\ 1 & -2 & 3 \\end{bmatrix}\\begin{bmatrix} 4 \\\\ 0 \\\\ 2 \\end{bmatrix} = \\frac{1}{10}\\begin{bmatrix} 20 \\\\ -10 \\\\ 10 \\end{bmatrix}$: $x = 2$, $y = -1$, $z = 1$.\nOR: $|A| = 1(-1 - 2) - 2(-2 - 0) + 0 = 1$.\n$\\operatorname{adj} A = \\begin{bmatrix} -3 & -2 & -4 \\\\ 2 & 1 & 2 \\\\ 2 & 1 & 3 \\end{bmatrix} = A^{-1}$.\n$A^{-1}A = \\begin{bmatrix} -3 + 4 + 0 & -6 + 2 + 4 & 0 + 4 - 4 \\\\ 2 - 2 + 0 & 4 - 1 - 2 & 0 - 2 + 2 \\\\ 2 - 2 + 0 & 4 - 1 - 3 & 0 - 2 + 3 \\end{bmatrix} = I$.",
+    "33": "Area $= \\int_{3}^{5} \\sqrt{25 - x^{2}}\\,dx = \\left[\\frac{x}{2}\\sqrt{25 - x^{2}} + \\frac{25}{2}\\sin^{-1}\\frac{x}{5}\\right]_{3}^{5}$.\n$= \\left(0 + \\frac{25}{2} \\cdot \\frac{\\pi}{2}\\right) - \\left(\\frac{3}{2} \\cdot 4 + \\frac{25}{2}\\sin^{-1}\\frac{3}{5}\\right) = \\frac{25\\pi}{4} - 6 - \\frac{25}{2}\\sin^{-1}\\frac{3}{5}$ sq. units.\nOR: Area $= \\int_{0}^{2} e^{x}dx = e^{2} - 1$ sq. units.",
+    "34": "(a) Midpoint of $BC$: $M(2, 2, 1)$. $\\overrightarrow{AM} = 3\\hat j - 3\\hat k = 3(\\hat j - \\hat k)$.\nMedian: $\\vec r = (2\\hat i - \\hat j + 4\\hat k) + \\lambda(\\hat j - \\hat k)$.\n(b) $AM = \\sqrt{0 + 9 + 9} = 3\\sqrt{2}$ units.\n(c) $\\overrightarrow{AB} = 2\\hat i + 2\\hat j - 4\\hat k$, $\\overrightarrow{AC} = -2\\hat i + 4\\hat j - 2\\hat k$. $\\cos A = \\frac{-4 + 8 + 8}{\\sqrt{24}\\sqrt{24}} = \\frac{12}{24} = \\frac{1}{2}$, so $\\angle BAC = 60^{\\circ}$.\nOR: A general point of the line is $P(3\\lambda - 2, 2\\lambda - 1, 2\\lambda + 3)$.\n$PQ^{2}$ with $Q(1, 2, 3)$: $(3\\lambda - 3)^{2} + (2\\lambda - 3)^{2} + (2\\lambda)^{2} = 18$, so $17\\lambda^{2} - 30\\lambda + 18 = 18$.\n$\\lambda(17\\lambda - 30) = 0$ gives $\\lambda = 0$ or $\\lambda = \\frac{30}{17}$.\nPoints: $(-2, -1, 3)$ and $\\left(\\frac{56}{17}, \\frac{43}{17}, \\frac{111}{17}\\right)$.",
+    "35": "Take the vertex $A(a, 0)$ and the base $BC$ with $B(a\\cos\\theta, b\\sin\\theta)$, $C(a\\cos\\theta, -b\\sin\\theta)$.\nArea $\\Delta = \\frac{1}{2} \\cdot 2b\\sin\\theta \\cdot (a - a\\cos\\theta) = ab\\sin\\theta(1 - \\cos\\theta)$.\n$\\frac{d\\Delta}{d\\theta} = ab(\\cos\\theta - \\cos 2\\theta) = 0$ gives $\\cos 2\\theta = \\cos\\theta$, so $\\theta = \\frac{2\\pi}{3}$ (for $0 < \\theta < \\pi$).\n$\\frac{d^{2}\\Delta}{d\\theta^{2}} = ab(-\\sin\\theta + 2\\sin 2\\theta) < 0$ at $\\theta = \\frac{2\\pi}{3}$, so the area is maximum.\n$\\Delta_{\\max} = ab \\cdot \\frac{\\sqrt{3}}{2}\\left(1 + \\frac{1}{2}\\right) = \\frac{3\\sqrt{3}}{4}ab$ sq. units.\nOR: Let the hypotenuse make angle $\\theta$ with one leg. Its length is $L = \\frac{a}{\\sin\\theta} + \\frac{b}{\\cos\\theta}$, $0 < \\theta < \\frac{\\pi}{2}$.\n$\\frac{dL}{d\\theta} = -\\frac{a\\cos\\theta}{\\sin^{2}\\theta} + \\frac{b\\sin\\theta}{\\cos^{2}\\theta} = 0$ gives $\\tan^{3}\\theta = \\frac{a}{b}$, so $\\tan\\theta = \\frac{a^{\\frac{1}{3}}}{b^{\\frac{1}{3}}}$; $L$ has a minimum there.\nThen $\\sin\\theta = \\frac{a^{\\frac{1}{3}}}{\\sqrt{a^{\\frac{2}{3}} + b^{\\frac{2}{3}}}}$ and $\\cos\\theta = \\frac{b^{\\frac{1}{3}}}{\\sqrt{a^{\\frac{2}{3}} + b^{\\frac{2}{3}}}}$.\n$L_{\\min} = \\sqrt{a^{\\frac{2}{3}} + b^{\\frac{2}{3}}}\\left(a^{\\frac{2}{3}} + b^{\\frac{2}{3}}\\right) = \\left(a^{\\frac{2}{3}} + b^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}$.",
+    "36": "(i) $X \\in \\{5, 2, -1\\}$.\n(ii) $P(X = 2) = P(4 \\text{ or } 5) = \\frac{2}{6} = \\frac{1}{3}$.\n(iii) $E(X) = 5 \\cdot \\frac{1}{6} + 2 \\cdot \\frac{2}{6} + (-1) \\cdot \\frac{3}{6} = \\frac{5 + 4 - 3}{6} = 1$, that is ₹1.\nOR: $P(X > 0) = P(X = 5) + P(X = 2) = \\frac{1}{6} + \\frac{2}{6} = \\frac{1}{2}$.",
+    "37": "(i) 5 is odd, so $f(5) = \\frac{5 + 1}{2} = 3$.\n(ii) No. $f(1) = 1 = f(2)$ but $1 \\neq 2$.\n(iii) For any $m \\in \\mathbb{N}$, $2m$ is even and $f(2m) = m$. So every natural number has a pre-image and $f$ is onto.\nOR: Odd $n$: $\\frac{n + 1}{2} = 4$ gives $n = 7$. Even $n$: $\\frac{n}{2} = 4$ gives $n = 8$. So $n = 7$ or $n = 8$.",
+    "38": "(i) $\\vec r = (\\hat i - \\hat k) + \\lambda(2\\hat i - \\hat j + 2\\hat k)$.\n(ii) Yes. With $\\lambda = 1$: $(1 + 2, 0 - 1, -1 + 2) = (3, -1, 1)$, which is $B$.\n(iii) $\\overrightarrow{AC} = \\hat i + 3\\hat j + 5\\hat k$, $\\vec d = 2\\hat i - \\hat j + 2\\hat k$. $\\overrightarrow{AC} \\times \\vec d = \\begin{vmatrix} \\hat i & \\hat j & \\hat k \\\\ 1 & 3 & 5 \\\\ 2 & -1 & 2 \\end{vmatrix} = 11\\hat i + 8\\hat j - 7\\hat k$.\nDistance $= \\frac{|\\overrightarrow{AC} \\times \\vec d|}{|\\vec d|} = \\frac{\\sqrt{121 + 64 + 49}}{3} = \\frac{\\sqrt{234}}{3} = \\sqrt{26}$ units.\nOR: $\\cos\\alpha = \\frac{2}{\\sqrt{4 + 1 + 4}} = \\frac{2}{3}$, so the angle is $\\cos^{-1}\\frac{2}{3}$."
+   }
+  }
+ }
+}

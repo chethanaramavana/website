@@ -1,0 +1,1150 @@
+{
+ "g11-ch14-main-01": [
+  {
+   "q": "Two dice are thrown. The probability that the sum is $9$ is",
+   "a": "(C) $\\frac19$",
+   "s": "$(3,6),(4,5),(5,4),(6,3)$.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac5{36}$",
+    "$\\frac19$",
+    "$\\frac1{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A card is drawn from $52$. The probability that it is a king or a heart is",
+   "a": "(D) $\\frac4{13}$",
+   "s": "$\\frac{4+13-1}{52}$.",
+   "opts": [
+    "$\\frac{17}{52}$",
+    "$\\frac14$",
+    "$\\frac1{13}$",
+    "$\\frac4{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.5$, $P(B)=0.4$, $P(A\\cap B)=0.2$. Then $P(A\\cup B)$ is",
+   "a": "(D) $0.7$",
+   "s": "$0.5+0.4-0.2$.",
+   "opts": [
+    "$0.2$",
+    "$0.5$",
+    "$0.9$",
+    "$0.7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three coins are tossed. The probability of at least one head is",
+   "a": "(C) $\\frac78$",
+   "s": "$1-\\frac18$.",
+   "opts": [
+    "$\\frac38$",
+    "$\\frac12$",
+    "$\\frac78$",
+    "$\\frac18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that a leap year has $53$ Sundays is",
+   "a": "(D) $\\frac27$",
+   "s": "Two extra days.",
+   "opts": [
+    "$\\frac17$",
+    "$\\frac3{7}$",
+    "$\\frac{53}{366}$",
+    "$\\frac27$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "From $5$ men and $3$ women, $2$ people are chosen. The probability that both are women is",
+   "a": "(B) $\\frac3{28}$",
+   "s": "$\\frac{{}^3C_2}{{}^8C_2}$.",
+   "opts": [
+    "$\\frac38$",
+    "$\\frac3{28}$",
+    "$\\frac9{64}$",
+    "$\\frac5{14}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The letters of $\\text{CAT}$ are arranged at random. The probability that the word is $\\text{CAT}$ is",
+   "a": "(A) $\\frac16$",
+   "s": "$3!$ arrangements.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac19$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=\\frac13$. The odds in favour of $A$ are",
+   "a": "(C) $1:2$",
+   "s": "$\\frac13:\\frac23$.",
+   "opts": [
+    "$3:1$",
+    "$1:3$",
+    "$1:2$",
+    "$2:1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are mutually exclusive with $P(A)=0.3$, $P(B)=0.5$. Then $P(A\\cup B)$ is",
+   "a": "(B) $0.8$",
+   "s": "No overlap.",
+   "opts": [
+    "$0.2$",
+    "$0.8$",
+    "$0.65$",
+    "$0.15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A number is chosen from $1$ to $100$. The probability that it is a perfect square is",
+   "a": "(C) $\\frac1{10}$",
+   "s": "$1,4,\\dots,100$.",
+   "opts": [
+    "$\\frac19$",
+    "$\\frac1{100}$",
+    "$\\frac1{10}$",
+    "$\\frac15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. The probability of a doublet is",
+   "a": "(D) $\\frac16$",
+   "s": "$\\frac6{36}$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac1{36}$",
+    "$\\frac1{12}$",
+    "$\\frac16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.6$. Then $P(A')$ is",
+   "a": "(D) $0.4$",
+   "s": "Complement.",
+   "opts": [
+    "$0.6$",
+    "$1.6$",
+    "$0$",
+    "$0.4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Four cards are drawn from $52$. The probability that all are aces is",
+   "a": "(A) $\\frac1{270725}$",
+   "s": "$\\frac1{{}^{52}C_4}$.",
+   "opts": [
+    "$\\frac1{270725}$",
+    "$\\frac{1}{13^4}$",
+    "$\\frac1{52}$",
+    "$\\frac4{52}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $5$ red and $3$ blue balls. Two are drawn. The probability that they are of different colours is",
+   "a": "(B) $\\frac{15}{28}$",
+   "s": "$\\frac{5\\cdot3}{{}^8C_2}$.",
+   "opts": [
+    "$\\frac{13}{28}$",
+    "$\\frac{15}{28}$",
+    "$\\frac12$",
+    "$\\frac{15}{64}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$5$ people sit in a row at random. The probability that two particular people sit together is",
+   "a": "(A) $\\frac25$",
+   "s": "$\\frac{4!\\cdot2}{5!}$.",
+   "opts": [
+    "$\\frac25$",
+    "$\\frac35$",
+    "$\\frac15$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability of getting a sum of at least $10$ with two dice is",
+   "a": "(B) $\\frac16$",
+   "s": "$3+2+1$ outcomes.",
+   "opts": [
+    "$\\frac1{12}$",
+    "$\\frac16$",
+    "$\\frac5{36}$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.4$, $P(B)=0.3$, $P(A\\cup B)=0.6$. Then $P(A\\cap B)$ is",
+   "a": "(A) $0.1$",
+   "s": "$0.4+0.3-0.6$.",
+   "opts": [
+    "$0.1$",
+    "$0.7$",
+    "$0.12$",
+    "$0.3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that a non-leap year has $53$ Mondays is",
+   "a": "(D) $\\frac17$",
+   "s": "One extra day.",
+   "opts": [
+    "$\\frac27$",
+    "$0$",
+    "$\\frac{53}{365}$",
+    "$\\frac17$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A die is thrown twice. The probability that the second number is greater than the first is",
+   "a": "(A) $\\frac5{12}$",
+   "s": "$\\frac{15}{36}$.",
+   "opts": [
+    "$\\frac5{12}$",
+    "$\\frac16$",
+    "$\\frac12$",
+    "$\\frac7{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A committee of $3$ is chosen from $4$ boys and $4$ girls. The probability of at least one girl is",
+   "a": "(D) $\\frac{13}{14}$",
+   "s": "$1-\\frac{4}{56}$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac34$",
+    "$\\frac1{14}$",
+    "$\\frac{13}{14}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. Find $36\\times P(\\text{sum is }7)$.",
+   "a": "$6$",
+   "s": "Six outcomes.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A coin is tossed $4$ times. Find $16\\times P(\\text{exactly }2\\text{ heads})$.",
+   "a": "$6$",
+   "s": "${}^4C_2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.42$, $P(B)=0.48$, $P(A\\cap B)=0.16$. Find $100\\times P(\\text{neither})$.",
+   "a": "$26$",
+   "s": "$1-0.74$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "From $1,2,\\dots,20$ one number is chosen. Find $20\\times P(\\text{multiple of }3\\text{ or }5)$.",
+   "a": "$9$",
+   "s": "$6+4-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $4$ white and $6$ black balls. Two are drawn. Find $15\\times P(\\text{both black})$.",
+   "a": "$5$",
+   "s": "$\\frac{15}{45}\\times15$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch14-main-02": [
+  {
+   "q": "Two dice are thrown. The probability that the product is $12$ is",
+   "a": "(D) $\\frac19$",
+   "s": "$(2,6),(3,4),(4,3),(6,2)$.",
+   "opts": [
+    "$\\frac16$",
+    "$\\frac1{12}$",
+    "$\\frac1{18}$",
+    "$\\frac19$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A card is drawn from $52$. The probability that it is neither a heart nor a king is",
+   "a": "(D) $\\frac9{13}$",
+   "s": "$1-\\frac4{13}$.",
+   "opts": [
+    "$\\frac34$",
+    "$\\frac4{13}$",
+    "$\\frac{35}{52}$",
+    "$\\frac9{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A\\cup B)=0.8$, $P(A)=0.5$, $P(B)=0.6$. Then $P(A\\cap B)$ is",
+   "a": "(D) $0.3$",
+   "s": "$1.1-0.8$.",
+   "opts": [
+    "$0.1$",
+    "$0.2$",
+    "$0.4$",
+    "$0.3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that a $3$-digit number chosen at random has all digits the same is",
+   "a": "(C) $\\frac1{100}$",
+   "s": "$\\frac9{900}$.",
+   "opts": [
+    "$\\frac1{90}$",
+    "$\\frac9{1000}$",
+    "$\\frac1{100}$",
+    "$\\frac1{9}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The letters of $\\text{ASSASSINATION}$: a letter is chosen. The probability that it is $S$ is",
+   "a": "(B) $\\frac4{13}$",
+   "s": "Four $S$ in $13$ letters.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac4{13}$",
+    "$\\frac3{13}$",
+    "$\\frac1{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three dice are thrown. The probability of the same number on all three is",
+   "a": "(A) $\\frac1{36}$",
+   "s": "$\\frac6{216}$.",
+   "opts": [
+    "$\\frac1{36}$",
+    "$\\frac1{216}$",
+    "$\\frac16$",
+    "$\\frac1{18}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A coin is tossed until a head appears or $3$ tosses are made. The probability that $3$ tosses are made is",
+   "a": "(B) $\\frac14$",
+   "s": "First two tosses tails.",
+   "opts": [
+    "$\\frac34$",
+    "$\\frac14$",
+    "$\\frac12$",
+    "$\\frac18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The odds against an event are $5:3$. Its probability is",
+   "a": "(A) $\\frac38$",
+   "s": "$\\frac3{5+3}$.",
+   "opts": [
+    "$\\frac38$",
+    "$\\frac53$",
+    "$\\frac58$",
+    "$\\frac35$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a lottery, $5$ numbers are chosen from $1$ to $20$. The probability of choosing the $5$ winning numbers is",
+   "a": "(A) $\\frac1{15504}$",
+   "s": "$\\frac1{{}^{20}C_5}$.",
+   "opts": [
+    "$\\frac1{15504}$",
+    "$\\frac5{20}$",
+    "$\\frac1{1860480}$",
+    "$\\frac1{20^5}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=\\frac12$, $P(B)=\\frac13$, $P(A\\cap B)=\\frac14$. Then $P(A'\\cap B')$ is",
+   "a": "(C) $\\frac5{12}$",
+   "s": "$1-\\frac{6+4-3}{12}$.",
+   "opts": [
+    "$\\frac7{12}$",
+    "$\\frac1{12}$",
+    "$\\frac5{12}$",
+    "$\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Two numbers are chosen from $1,\\dots,10$. The probability that their sum is even is",
+   "a": "(D) $\\frac49$",
+   "s": "$\\frac{2\\cdot{}^5C_2}{{}^{10}C_2}=\\frac{20}{45}$.",
+   "opts": [
+    "$\\frac{2}{9}$",
+    "$\\frac59$",
+    "$\\frac12$",
+    "$\\frac49$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A die is thrown. The probability of a number greater than $4$ or even is",
+   "a": "(D) $\\frac23$",
+   "s": "$\\{2,4,5,6\\}$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac56$",
+    "$\\frac13$",
+    "$\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$6$ boys and $6$ girls sit in a row at random. The probability that boys and girls alternate is",
+   "a": "(C) $\\frac1{462}$",
+   "s": "$\\frac{2\\cdot6!\\,6!}{12!}$.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac1{924}$",
+    "$\\frac1{462}$",
+    "$\\frac{1}{231}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)+P(\\bar A)$ equals",
+   "a": "(C) $1$",
+   "s": "Complement.",
+   "opts": [
+    "$2$",
+    "$P(A)$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $3$ red, $4$ white and $5$ blue balls. The probability that a ball drawn is not white is",
+   "a": "(B) $\\frac23$",
+   "s": "$\\frac8{12}$.",
+   "opts": [
+    "$\\frac13$",
+    "$\\frac23$",
+    "$\\frac7{12}$",
+    "$\\frac5{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that two people have different birthdays (non-leap year) is",
+   "a": "(D) $\\frac{364}{365}$",
+   "s": "Second person avoids one day.",
+   "opts": [
+    "$\\frac12$",
+    "$\\frac1{365}$",
+    "$\\frac{363}{365}$",
+    "$\\frac{364}{365}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A die is rolled twice. The probability that the sum is a prime is",
+   "a": "(B) $\\frac5{12}$",
+   "s": "Sums $2,3,5,7,11$: $15$ outcomes.",
+   "opts": [
+    "$\\frac7{18}$",
+    "$\\frac5{12}$",
+    "$\\frac13$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three of $8$ marked items are defective. Two are picked. The probability that none is defective is",
+   "a": "(C) $\\frac5{14}$",
+   "s": "$\\frac{{}^5C_2}{{}^8C_2}$.",
+   "opts": [
+    "$\\frac{25}{64}$",
+    "$\\frac3{28}$",
+    "$\\frac5{14}$",
+    "$\\frac25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.3$ and $P(B)=0.4$ for mutually exclusive $A,B$. Then $P(A\\cap B')$ is",
+   "a": "(B) $0.3$",
+   "s": "$A\\subset B'$.",
+   "opts": [
+    "$0.12$",
+    "$0.3$",
+    "$0.18$",
+    "$0.7$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability of getting exactly one head in two tosses is",
+   "a": "(B) $\\frac12$",
+   "s": "$HT,TH$.",
+   "opts": [
+    "$\\frac14$",
+    "$\\frac12$",
+    "$\\frac13$",
+    "$\\frac34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three coins are tossed. Find $8\\times P(\\text{exactly two heads})$.",
+   "a": "$3$",
+   "s": "$HHT,HTH,THH$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. Find $36\\times P(\\text{sum}\\le4)$.",
+   "a": "$6$",
+   "s": "$1+2+3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.35$, $P(B)=0.45$, $P(A\\cup B)=0.6$. Find $100\\times P(A\\cap B)$.",
+   "a": "$20$",
+   "s": "$0.8-0.6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A box has $10$ bulbs, $2$ defective. Two are drawn. Find $45\\times P(\\text{at least one defective})$.",
+   "a": "$17$",
+   "s": "$45-{}^8C_2=17$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The odds in favour of an event are $3:7$. Find $10\\times$ its probability.",
+   "a": "$3$",
+   "s": "$\\frac3{10}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch14-advanced-01": [
+  {
+   "q": "Three numbers are chosen from $1,2,\\dots,20$. The probability that they are consecutive is",
+   "a": "(B) $\\frac3{190}$",
+   "s": "$\\frac{18}{1140}$.",
+   "opts": [
+    "$\\frac1{57}$",
+    "$\\frac3{190}$",
+    "$\\frac1{190}$",
+    "$\\frac1{1140}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A $5$-digit number is formed from $0,1,2,3,4$ without repetition. The probability that it is divisible by $4$ is",
+   "a": "(D) $\\frac{5}{16}$",
+   "s": "Last two digits form a multiple of $4$: count $30$ of $96$.",
+   "opts": [
+    "$\\frac{3}{16}$",
+    "$\\frac38$",
+    "$\\frac14$",
+    "$\\frac{5}{16}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n$ people sit around a table. The probability that two particular people sit together is",
+   "a": "(D) $\\dfrac{2}{n-1}$",
+   "s": "$\\frac{2(n-2)!}{(n-1)!}$.",
+   "opts": [
+    "$\\dfrac{1}{n}$",
+    "$\\dfrac1{n-1}$",
+    "$\\dfrac2n$",
+    "$\\dfrac{2}{n-1}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that the sum of two numbers chosen from $\\{1,2,\\dots,9\\}$ (without replacement) is $10$ is",
+   "a": "(A) $\\frac19$",
+   "s": "Pairs $\\{1,9\\},\\{2,8\\},\\{3,7\\},\\{4,6\\}$: $\\frac4{36}$.",
+   "opts": [
+    "$\\frac19$",
+    "$\\frac1{12}$",
+    "$\\frac29$",
+    "$\\frac1{8}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.5$, $P(B)=0.4$, $P(A\\cap B)=0.2$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$0.3+0.2$.",
+   "opts": [
+    "$P(A\\cup B)=0.7$",
+    "$P(A'\\cap B')=0.3$",
+    "$P(A\\cap B')=0.3$",
+    "$P(\\text{exactly one})=0.5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Two dice are thrown. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Odd product: both odd.",
+   "opts": [
+    "$P(\\text{sum }7)=\\frac16$",
+    "$P(\\text{sum }12)=\\frac1{36}$",
+    "$P(\\text{sum odd})=\\frac12$",
+    "$P(\\text{product odd})=\\frac14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which can be probabilities of an event?",
+   "a": "(A), (B), (D)",
+   "s": "$\\frac{22}7-3\\approx0.14$; $0.618$.",
+   "opts": [
+    "$0$",
+    "$\\frac{22}{7}-3$",
+    "$1.1$",
+    "$\\frac{\\sqrt5-1}2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "A card is drawn from $52$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Counts $2$, $12$, $39$, $1$.",
+   "opts": [
+    "$P(\\text{red ace})=\\frac1{26}$",
+    "$P(\\text{face card})=\\frac3{13}$",
+    "$P(\\text{not a spade})=\\frac34$",
+    "$P(\\text{king of hearts})=\\frac1{52}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $1000\\times$ the probability that $3$ dice show $3$ different numbers, rounded down.",
+   "a": "$555$",
+   "s": "$\\frac{120}{216}=0.5\\overline5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Two numbers are chosen without replacement from $1,\\dots,6$. Find $15\\times P(\\text{product even})$.",
+   "a": "$12$",
+   "s": "$1-\\frac{{}^3C_2}{15}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $36\\times$ the probability that two dice show numbers differing by $1$.",
+   "a": "$10$",
+   "s": "$5$ pairs, each in $2$ orders.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$P(A)=0.3$, $P(B)=0.5$, $P(C)=0.4$, all pairwise intersections $0.1$ and $P(A\\cap B\\cap C)=0.05$. Find $100\\times P(A\\cup B\\cup C)$.",
+   "a": "$95$",
+   "s": "$1.2-0.3+0.05$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each probability for two dice.\nList-I: (P) sum $2$; (Q) sum $5$; (R) sum $8$; (S) doublet\nList-II: (1) $\\frac1{36}$; (2) $\\frac19$; (3) $\\frac5{36}$; (4) $\\frac16$; (5) $\\frac1{12}$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$1$, $4$, $5$, $6$ outcomes.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 5$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each probability for one card from $52$.\nList-I: (P) a heart; (Q) an ace; (R) a red king; (S) a black card\nList-II: (1) $\\frac14$; (2) $\\frac1{13}$; (3) $\\frac1{26}$; (4) $\\frac12$; (5) $\\frac3{13}$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Count cards.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each probability for $3$ coins.\nList-I: (P) all heads; (Q) exactly one head; (R) at least one head; (S) at most one head\nList-II: (1) $\\frac18$; (2) $\\frac38$; (3) $\\frac78$; (4) $\\frac12$; (5) $\\frac14$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$1,3,7,4$ of $8$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each odds statement with the probability.\nList-I: (P) odds in favour $1:1$; (Q) odds in favour $2:3$; (R) odds against $3:1$; (S) odds against $7:3$\nList-II: (1) $\\frac12$; (2) $\\frac25$; (3) $\\frac14$; (4) $\\frac3{10}$; (5) $\\frac35$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{a}{a+b}$.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch14-advanced-02": [
+  {
+   "q": "A fair die is thrown until a six appears. The probability that it is thrown an even number of times is",
+   "a": "(D) $\\frac5{11}$",
+   "s": "$\\sum\\left(\\frac56\\right)^{2k-1}\\frac16=\\frac{\\frac5{36}}{1-\\frac{25}{36}}$.",
+   "opts": [
+    "$\\frac5{36}$",
+    "$\\frac12$",
+    "$\\frac6{11}$",
+    "$\\frac5{11}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$4$ letters are put at random into $4$ addressed envelopes. The probability that no letter is in its correct envelope is",
+   "a": "(B) $\\frac38$",
+   "s": "$D_4=9$; $\\frac9{24}$.",
+   "opts": [
+    "$\\frac{11}{24}$",
+    "$\\frac38$",
+    "$\\frac1{24}$",
+    "$\\frac14$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that the $3$ chosen vertices of a regular hexagon form an equilateral triangle is",
+   "a": "(A) $\\frac1{10}$",
+   "s": "$\\frac{2}{{}^6C_3}$.",
+   "opts": [
+    "$\\frac1{10}$",
+    "$\\frac15$",
+    "$\\frac1{20}$",
+    "$\\frac3{10}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The probability that a randomly chosen $3$-digit number has digit sum $5$ is",
+   "a": "(D) $\\frac1{60}$",
+   "s": "$\\frac{15}{900}$.",
+   "opts": [
+    "$\\frac1{45}$",
+    "$\\frac1{90}$",
+    "$\\frac{15}{1000}$",
+    "$\\frac1{60}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Events $A,B$ with $P(A)=\\frac14$, $P(B)=\\frac13$, $P(A\\cup B)=\\frac12$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac14+\\frac13-\\frac12$.",
+   "opts": [
+    "$P(A\\cap B)=\\frac1{12}$r",
+    "$P(A\\cap B')=\\frac16$",
+    "$P(A'\\cap B)=\\frac14$",
+    "$P(A'\\cup B')=\\frac{11}{12}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "A bag has $4$ red and $6$ green balls. Two are drawn. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac6{45}$, $\\frac{15}{45}$, $\\frac{24}{45}$, $1-\\frac13$.",
+   "opts": [
+    "$P(\\text{both red})=\\frac2{15}$",
+    "$P(\\text{both green})=\\frac13$",
+    "$P(\\text{one of each})=\\frac8{15}$",
+    "$P(\\text{at least one red})=\\frac23$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For any events $A,B$, which are always true?",
+   "a": "(A), (B), (C)",
+   "s": "The last needs independence.",
+   "opts": [
+    "$P(A\\cup B)\\le P(A)+P(B)$",
+    "$P(A\\cap B)\\le P(A)$",
+    "$P(A\\cup B)\\ge P(B)$",
+    "$P(A\\cap B)=P(A)P(B)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$5$ people are seated in a row at random. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{2\\cdot3!}{5!}=\\frac1{10}$.",
+   "opts": [
+    "$P(A$ at the left end$)=\\frac15$",
+    "$P(A$ and $B$ together$)=\\frac25$",
+    "$P(A$ and $B$ at the two ends$)=\\frac1{10}$",
+    "$P(A$ in the middle$)=\\frac15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $100\\times$ the probability that a card drawn from $52$ is a face card or a spade, rounded down.",
+   "a": "$42$",
+   "s": "$\\frac{12+13-3}{52}=\\frac{22}{52}=0.423$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$7$ white and $3$ black balls are arranged in a row at random. Find $15\\times P(\\text{no two black balls are together})$.",
+   "a": "$7$",
+   "s": "$\\frac{{}^8C_3}{{}^{10}C_3}=\\frac{56}{120}=\\frac7{15}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers from $1$ to $90$ divisible by $3$ or $5$.",
+   "a": "$42$",
+   "s": "$30+18-6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "A die is thrown $3$ times. Find $216\\times P(\\text{sum}=10)$.",
+   "a": "$27$",
+   "s": "Count ordered triples.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each probability with two dice.\nList-I: (P) sum $6$; (Q) sum $10$; (R) product $6$; (S) difference $0$\nList-II: (1) $\\frac5{36}$; (2) $\\frac1{12}$; (3) $\\frac19$; (4) $\\frac16$; (5) $\\frac1{36}$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$5,3,4,6$ outcomes.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each event for a number chosen from $1$ to $10$.\nList-I: (P) prime; (Q) even; (R) perfect square; (S) multiple of $5$\nList-II: (1) $\\frac25$; (2) $\\frac12$; (3) $\\frac3{10}$; (4) $\\frac15$; (5) $\\frac1{10}$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$4,5,3,2$ numbers.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 5$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=0.6$, $P(B)=0.5$, $P(A\\cap B)=0.3$. Match.\nList-I: (P) $P(A\\cup B)$; (Q) $P(A'\\cap B')$; (R) $P(A\\cap B')$; (S) $P(\\text{exactly one})$\nList-II: (1) $0.8$; (2) $0.2$; (3) $0.3$; (4) $0.5$; (5) $0.6$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$0.3+0.2$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each count-based probability.\nList-I: (P) $2$ heads in $2$ tosses; (Q) $3$ heads in $3$ tosses; (R) no six in $2$ throws of a die; (S) two sixes in $2$ throws\nList-II: (1) $\\frac14$; (2) $\\frac18$; (3) $\\frac{25}{36}$; (4) $\\frac1{36}$; (5) $\\frac12$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Multiply equally likely outcomes.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

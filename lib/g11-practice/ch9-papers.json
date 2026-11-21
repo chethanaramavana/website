@@ -1,0 +1,1150 @@
+{
+ "g11-ch9-main-01": [
+  {
+   "q": "The slope of the line through $(2,-3)$ and $(-4,9)$ is",
+   "a": "(C) $-2$",
+   "s": "$\\frac{12}{-6}$.",
+   "opts": [
+    "$\\frac12$",
+    "$-\\frac12$",
+    "$-2$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $3x-4y+12=0$ makes intercepts on the axes equal to",
+   "a": "(D) $-4$ and $3$",
+   "s": "$x$-intercept $-4$, $y$-intercept $3$.",
+   "opts": [
+    "$3$ and $4$",
+    "$-3$ and $-4$",
+    "$4$ and $-3$",
+    "$-4$ and $3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of $(3,4)$ from $3x+4y-5=0$ is",
+   "a": "(C) $4$",
+   "s": "$\\frac{|9+16-5|}5$.",
+   "opts": [
+    "$3$",
+    "$5$",
+    "$4$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance between $3x+4y=9$ and $6x+8y=15$ is",
+   "a": "(B) $\\frac3{10}$",
+   "s": "$\\frac{|18-15|}{10}$.",
+   "opts": [
+    "$\\frac65$",
+    "$\\frac3{10}$",
+    "$\\frac35$",
+    "$\\frac3{20}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The acute angle between $y=\\sqrt3x$ and $y=\\frac{x}{\\sqrt3}$ is",
+   "a": "(D) $30^\\circ$",
+   "s": "$60^\\circ-30^\\circ$.",
+   "opts": [
+    "$45^\\circ$",
+    "$15^\\circ$",
+    "$60^\\circ$",
+    "$30^\\circ$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line through $(1,2)$ perpendicular to $x-2y+3=0$ is",
+   "a": "(B) $2x+y-4=0$",
+   "s": "Slope $-2$.",
+   "opts": [
+    "$2x-y=0$",
+    "$2x+y-4=0$",
+    "$x-2y+3=0$",
+    "$x+2y-5=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The foot of the perpendicular from $(0,0)$ to $x+y=2$ is",
+   "a": "(A) $(1,1)$",
+   "s": "Symmetry.",
+   "opts": [
+    "$(1,1)$",
+    "$(2,2)$",
+    "$(2,0)$",
+    "$(0,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The image of $(1,2)$ in the line $y=x$ is",
+   "a": "(B) $(2,1)$",
+   "s": "Swap coordinates.",
+   "opts": [
+    "$(-2,-1)$",
+    "$(2,1)$",
+    "$(-1,-2)$",
+    "$(1,-2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $2x+3y=5$, $3x-y=2$ and $x+ky=3$ are concurrent when $k$ equals",
+   "a": "(D) $2$",
+   "s": "Intersection $(1,1)$: $1+k=3$.",
+   "opts": [
+    "$3$",
+    "$-2$",
+    "$1$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line with intercepts $a$ and $b$ passes through $(2,3)$ with $a=b$. Then $a$ equals",
+   "a": "(B) $5$",
+   "s": "$\\frac2a+\\frac3a=1$.",
+   "opts": [
+    "$1$",
+    "$5$",
+    "$\\frac52$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle formed by $x+y=4$ and the axes is",
+   "a": "(B) $8$",
+   "s": "$\\frac12\\cdot4\\cdot4$.",
+   "opts": [
+    "$4$",
+    "$8$",
+    "$16$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle of inclination of $\\sqrt3x+y=5$ is",
+   "a": "(A) $120^\\circ$",
+   "s": "Slope $-\\sqrt3$.",
+   "opts": [
+    "$120^\\circ$",
+    "$60^\\circ$",
+    "$150^\\circ$",
+    "$30^\\circ$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The perpendicular from the origin to a line has length $5$ and makes $30^\\circ$ with the positive $x$-axis. The line is",
+   "a": "(B) $\\sqrt3x+y=10$",
+   "s": "$x\\cos30^\\circ+y\\sin30^\\circ=5$.",
+   "opts": [
+    "$x+y=5$",
+    "$\\sqrt3x+y=10$",
+    "$\\sqrt3x+y=5$",
+    "$x+\\sqrt3y=10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $(a+2b)x+(a-3b)y=a-b$ passes through a fixed point for all $a,b$. The point is",
+   "a": "(C) $\\left(\\frac25,\\frac35\\right)$",
+   "s": "$a(x+y-1)+b(2x-3y+1)=0$.",
+   "opts": [
+    "$(2,3)$",
+    "$(1,1)$",
+    "$\\left(\\frac25,\\frac35\\right)$",
+    "$\\left(\\frac35,\\frac25\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The orthocentre of the triangle with vertices $(0,0)$, $(4,0)$, $(0,3)$ is",
+   "a": "(D) $(0,0)$",
+   "s": "Right angle at the origin.",
+   "opts": [
+    "$(4,3)$",
+    "$\\left(\\frac43,1\\right)$",
+    "$(2,1.5)$",
+    "$(0,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The centroid of the triangle with vertices $(1,2)$, $(3,-4)$, $(5,8)$ is",
+   "a": "(D) $(3,2)$",
+   "s": "Average of vertices.",
+   "opts": [
+    "$(2,3)$",
+    "$(9,6)$",
+    "$(3,6)$",
+    "$(3,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the line through $(2,3)$ parallel to $3x-y+5=0$ is",
+   "a": "(B) $3x-y-3=0$",
+   "s": "$3(2)-3+c=0$.",
+   "opts": [
+    "$3x+y-9=0$",
+    "$3x-y-3=0$",
+    "$3x-y+3=0$",
+    "$x+3y-11=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Points $(1,2)$, $(3,k)$, $(5,6)$ are collinear when $k$ equals",
+   "a": "(B) $4$",
+   "s": "Equal slopes.",
+   "opts": [
+    "$5$",
+    "$4$",
+    "$2$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $kx-2y=1$ and $3x+6y=5$ are perpendicular when $k$ equals",
+   "a": "(B) $4$",
+   "s": "$\\frac k2\\cdot\\left(-\\frac12\\right)=-1$.",
+   "opts": [
+    "$-1$",
+    "$4$",
+    "$1$",
+    "$-4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the line making equal intercepts and passing through $(-2,3)$ is",
+   "a": "(C) $x+y=1$",
+   "s": "$\\frac{-2+3}a=1$.",
+   "opts": [
+    "$x+y=-1$",
+    "$x-y=-5$",
+    "$x+y=1$",
+    "$x+y=5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance between the parallel lines $5x-12y+7=0$ and $10x-24y-13=0$, multiplied by $26$.",
+   "a": "$27$",
+   "s": "$\\frac{|14+13|}{26}=\\frac{27}{26}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $k$ if the line through $(2,k)$ and $(4,7)$ is parallel to the line through $(0,1)$ and $(3,7)$.",
+   "a": "$3$",
+   "s": "Slope $2$: $\\frac{7-k}2=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle with vertices $(0,0)$, $(4,0)$, $(1,5)$.",
+   "a": "$10$",
+   "s": "$\\frac12\\cdot4\\cdot5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the $x$-coordinate of the point where $2x+3y=13$ meets $5x-y=7$.",
+   "a": "$2$",
+   "s": "$y=5x-7\\Rightarrow17x=34$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the square of the distance of $(1,-2)$ from the line $x-y+1=0$, multiplied by $2$.",
+   "a": "$16$",
+   "s": "$d=\\frac{4}{\\sqrt2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch9-main-02": [
+  {
+   "q": "The line $x\\cos\\alpha+y\\sin\\alpha=p$ is at distance from the origin equal to",
+   "a": "(B) $|p|$",
+   "s": "Normal form.",
+   "opts": [
+    "$\\frac p2$",
+    "$|p|$",
+    "$p^2$",
+    "$\\sqrt p$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The slope of a line perpendicular to the line through $(1,1)$ and $(3,5)$ is",
+   "a": "(D) $-\\frac12$",
+   "s": "Slope $2$.",
+   "opts": [
+    "$2$",
+    "$-2$",
+    "$\\frac12$",
+    "$-\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the perpendicular bisector of the join of $(1,1)$ and $(3,5)$ is",
+   "a": "(B) $x+2y-8=0$",
+   "s": "Mid-point $(2,3)$, slope $-\\frac12$.",
+   "opts": [
+    "$2x-y-1=0$",
+    "$x+2y-8=0$",
+    "$x+2y-6=0$",
+    "$2x+y-7=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The angle between the lines $x-2y=3$ and $3x+y=1$ is",
+   "a": "(A) $\\tan^{-1}7$",
+   "s": "$\\left|\\frac{-3-\\frac12}{1-\\frac32}\\right|=7$.",
+   "opts": [
+    "$\\tan^{-1}7$",
+    "$90^\\circ$",
+    "$45^\\circ$",
+    "$\\tan^{-1}\\frac17$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point on the $x$-axis equidistant from $(1,2)$ and $(3,4)$ is",
+   "a": "(D) $(5,0)$",
+   "s": "$(x-1)^2+4=(x-3)^2+16$.",
+   "opts": [
+    "$(-5,0)$",
+    "$(2,0)$",
+    "$(4,0)$",
+    "$(5,0)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line through the intersection of $x+y=3$ and $2x-y=0$ and through the origin is",
+   "a": "(C) $2x-y=0$",
+   "s": "Meet at $(1,2)$.",
+   "opts": [
+    "$x+y=0$",
+    "$x-2y=0$",
+    "$2x-y=0$",
+    "$y=x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $ax+by+c=0$, $bx+cy+a=0$, $cx+ay+b=0$ with $a+b+c=0$ are",
+   "a": "(D) concurrent at $(1,1)$",
+   "s": "$(1,1)$ gives $a+b+c=0$.",
+   "opts": [
+    "perpendicular",
+    "parallel",
+    "concurrent at $(0,0)$",
+    "concurrent at $(1,1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The reflection of $(2,3)$ in the $x$-axis is",
+   "a": "(C) $(2,-3)$",
+   "s": "Change the sign of $y$.",
+   "opts": [
+    "$(-2,3)$",
+    "$(3,2)$",
+    "$(2,-3)$",
+    "$(-2,-3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation of the line through $(3,-4)$ with inclination $135^\\circ$ is",
+   "a": "(B) $x+y+1=0$",
+   "s": "Slope $-1$.",
+   "opts": [
+    "$x+y-1=0$",
+    "$x+y+1=0$",
+    "$x-y+1=0$",
+    "$x-y-7=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The distance of the origin from $\\dfrac xa+\\dfrac yb=1$ is",
+   "a": "(A) $\\dfrac{ab}{\\sqrt{a^2+b^2}}$",
+   "s": "$bx+ay-ab=0$.",
+   "opts": [
+    "$\\dfrac{ab}{\\sqrt{a^2+b^2}}$",
+    "$\\sqrt{a^2+b^2}$",
+    "$\\dfrac{a+b}{2}$",
+    "$\\dfrac{\\sqrt{a^2+b^2}}{ab}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The incentre of the triangle with vertices $(0,0)$, $(3,0)$, $(0,4)$ is",
+   "a": "(B) $(1,1)$",
+   "s": "$r=\\frac{3+4-5}2=1$.",
+   "opts": [
+    "$(2,1)$",
+    "$(1,1)$",
+    "$(1,\\frac43)$",
+    "$(\\frac32,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The circumcentre of the triangle with vertices $(0,0)$, $(6,0)$, $(0,8)$ is",
+   "a": "(A) $(3,4)$",
+   "s": "Mid-point of the hypotenuse.",
+   "opts": [
+    "$(3,4)$",
+    "$(0,0)$",
+    "$(6,8)$",
+    "$(2,\\frac83)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $y=m_1x$ and $y=m_2x$ are perpendicular when",
+   "a": "(B) $m_1m_2=-1$",
+   "s": "Condition.",
+   "opts": [
+    "$m_1=m_2$",
+    "$m_1m_2=-1$",
+    "$m_1+m_2=0$",
+    "$m_1m_2=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle formed by $y=x$, $y=-x$ and $y=2$ is",
+   "a": "(D) $4$",
+   "s": "Base $4$, height $2$.",
+   "opts": [
+    "$8$",
+    "$2$",
+    "$1$",
+    "$4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The line $2x+3y=6$ divides the join of $(1,1)$ and $(3,3)$ in the ratio",
+   "a": "(B) $1:9$",
+   "s": "$-\\frac{2+3-6}{6+9-6}=\\frac19$.",
+   "opts": [
+    "$1:1$",
+    "$1:9$",
+    "$9:1$",
+    "$1:3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A line through $(1,2)$ is perpendicular to $y=3x$. Its $y$-intercept is",
+   "a": "(B) $\\frac73$",
+   "s": "$y-2=-\\frac13(x-1)$.",
+   "opts": [
+    "$2$",
+    "$\\frac73$",
+    "$\\frac13$",
+    "$\\frac53$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The coordinates of the foot of the perpendicular from $(2,3)$ to $x+y=11$ are",
+   "a": "(C) $(5,6)$",
+   "s": "Move $t(1,1)$: $5+2t=11$.",
+   "opts": [
+    "$(3,8)$",
+    "$(4,7)$",
+    "$(5,6)$",
+    "$(6,5)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(1,2)$, $Q(4,6)$. The point dividing $PQ$ internally in the ratio $1:2$ is",
+   "a": "(A) $(2,\\frac{10}3)$",
+   "s": "$\\frac{2(1,2)+(4,6)}3$.",
+   "opts": [
+    "$(2,\\frac{10}3)$",
+    "$(\\frac52,4)$",
+    "$(3,\\frac{14}3)$",
+    "$(2,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The slope of the line $\\dfrac{x}{3}-\\dfrac{y}{4}=1$ is",
+   "a": "(D) $\\frac43$",
+   "s": "$y=\\frac43x-4$.",
+   "opts": [
+    "$\\frac34$",
+    "$-\\frac34$",
+    "$-\\frac43$",
+    "$\\frac43$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The lines $3x+2y=5$ and $6x+4y=7$ are",
+   "a": "(D) parallel",
+   "s": "Same slope, different intercepts.",
+   "opts": [
+    "intersecting at one point",
+    "coincident",
+    "perpendicular",
+    "parallel"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the distance between $(2,3)$ and $(5,7)$.",
+   "a": "$5$",
+   "s": "$\\sqrt{9+16}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $k$ if the lines $2x+y=3$ and $kx-4y=1$ are perpendicular.",
+   "a": "$2$",
+   "s": "$(-2)\\left(\\frac k4\\right)=-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle formed by the lines $x=0$, $y=0$ and $3x+4y=12$.",
+   "a": "$6$",
+   "s": "$\\frac12\\cdot4\\cdot3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the perpendicular distance from $(4,1)$ to $3x-4y+12=0$.",
+   "a": "$4$",
+   "s": "$\\frac{|12-4+12|}5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The vertices of a triangle are $(1,1)$, $(5,1)$, $(5,4)$. Find its perimeter.",
+   "a": "$12$",
+   "s": "$4+3+5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch9-advanced-01": [
+  {
+   "q": "A line through $(3,4)$ forms a triangle of area $24$ with the positive axes. Its intercepts are",
+   "a": "(B) $6$ and $8$",
+   "s": "$\\frac3a+\\frac4b=1$, $ab=48$.",
+   "opts": [
+    "$4$ and $12$",
+    "$6$ and $8$",
+    "$3$ and $16$",
+    "$12$ and $4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The locus of a point whose distance from $(2,0)$ equals its distance from the $y$-axis is",
+   "a": "(C) $y^2=4x-4$",
+   "s": "$(x-2)^2+y^2=x^2$.",
+   "opts": [
+    "$y^2=4x+4$",
+    "$x^2=4y$",
+    "$y^2=4x-4$",
+    "$y^2=4x$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equations of the bisectors of the angles between $3x-4y+7=0$ and $12x+5y-2=0$ include",
+   "a": "(A) $21x+77y-101=0$",
+   "s": "$\\frac{3x-4y+7}5=\\pm\\frac{12x+5y-2}{13}$.",
+   "opts": [
+    "$21x+77y-101=0$",
+    "$x+y=0$",
+    "$3x+5y=0$",
+    "$21x-77y=0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The point $(a,a)$ lies between the lines $|x+y|=4$. Then",
+   "a": "(A) $|a|<2$",
+   "s": "$|2a|<4$.",
+   "opts": [
+    "$|a|<2$",
+    "$a>2$",
+    "$|a|>2$",
+    "$|a|<4$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the triangle with vertices $A(0,0)$, $B(4,0)$, $C(0,4)$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Right isosceles triangle.",
+   "opts": [
+    "the centroid is $(\\frac43,\\frac43)$",
+    "the circumcentre is $(2,2)$",
+    "the orthocentre is $(0,0)$",
+    "the area is $8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which lines pass through $(1,1)$?",
+   "a": "(A), (B), (C)",
+   "s": "$1-3\\ne1$.",
+   "opts": [
+    "$x+y=2$",
+    "$2x-y=1$",
+    "$3x+4y=7$",
+    "$x-3y=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the line $3x+4y=12$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Slopes $-\\frac34$ and $\\frac43$.",
+   "opts": [
+    "has slope $-\\frac34$",
+    "cuts the $x$-axis at $(4,0)$",
+    "is at distance $\\frac{12}5$ from the origin",
+    "is perpendicular to $4x-3y=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which points lie on the same side of $2x-3y+1=0$ as $(1,0)$?",
+   "a": "(A), (B), (D)",
+   "s": "$2x-3y+1$ is positive at $(1,0)$, $(0,0)$, $(2,1)$, $(3,2)$ and negative at $(0,2)$.",
+   "opts": [
+    "$(0,0)$",
+    "$(2,1)$",
+    "$(0,2)$",
+    "$(3,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer points strictly inside the triangle with vertices $(0,0)$, $(10,0)$, $(0,10)$.",
+   "a": "$36$",
+   "s": "$x,y\\ge1$, $x+y\\le9$: $8+7+\\dots+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the area of the parallelogram formed by $y=2x$, $y=2x+4$, $y=x$, $y=x+3$.",
+   "a": "$12$",
+   "s": "$\\frac{|(4-0)(3-0)|}{|2-1|}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The line $x+y=a$ is at distance $3\\sqrt2$ from the origin, $a>0$. Find $a$.",
+   "a": "$6$",
+   "s": "$\\frac a{\\sqrt2}=3\\sqrt2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the $x$-coordinate of the orthocentre of the triangle with vertices $(0,0)$, $(6,0)$, $(2,4)$.",
+   "a": "$2$",
+   "s": "Altitude from $(2,4)$ is $x=2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each line with its slope.\nList-I: (P) $2x-y=3$; (Q) $x+2y=1$; (R) $y=5$; (S) $3x+3y=1$\nList-II: (1) $2$; (2) $-\\frac12$; (3) $0$; (4) $-1$; (5) $1$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Solve for $y$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 5$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $A(1,2)$ and $B(7,10)$, match.\nList-I: (P) $AB$; (Q) mid-point; (R) slope of $AB$; (S) point dividing $AB$ internally in the ratio $1:2$\nList-II: (1) $10$; (2) $(4,6)$; (3) $\\frac43$; (4) $\\left(3,\\frac{14}3\\right)$; (5) $(5,8)$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sqrt{36+64}$; $(4,6)$; $\\frac86$; $\\frac{2A+B}3$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of lines with the angle between them.\nList-I: (P) $y=x$, $y=-x$; (Q) $y=0$, $y=\\sqrt3x$; (R) $y=x$, $x=0$; (S) $y=\\sqrt3x$, $y=\\frac x{\\sqrt3}$\nList-II: (1) $90^\\circ$; (2) $60^\\circ$; (3) $45^\\circ$; (4) $30^\\circ$; (5) $0^\\circ$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Inclinations.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each point with its distance from $3x+4y=10$.\nList-I: (P) $(0,0)$; (Q) $(2,1)$; (R) $(5,5)$; (S) $(-2,-1)$\nList-II: (1) $2$; (2) $0$; (3) $5$; (4) $4$; (5) $1$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{|3x+4y-10|}5$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch9-advanced-02": [
+  {
+   "q": "The image of $(1,2)$ in the line $x+y=5$ is",
+   "a": "(D) $(3,4)$",
+   "s": "$(5-y,5-x)$.",
+   "opts": [
+    "$(4,3)$",
+    "$(4,5)$",
+    "$(2,1)$",
+    "$(3,4)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of lines through $(2,3)$ whose intercepts on the axes add up to $10$ is",
+   "a": "(C) $2$",
+   "s": "$\\frac2a+\\frac3{10-a}=1\\Rightarrow a^2-9a+20=0$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$2$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area enclosed by $|x|+|y|=2$ is",
+   "a": "(D) $8$",
+   "s": "Square of diagonal $4$.",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$16$",
+    "$8$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A ray from $(1,2)$ reflects at a point of the $x$-axis and passes through $(5,3)$. The point of reflection is",
+   "a": "(B) $\\left(\\frac{13}5,0\\right)$",
+   "s": "Join $(1,-2)$ and $(5,3)$.",
+   "opts": [
+    "$\\left(\\frac{11}5,0\\right)$",
+    "$\\left(\\frac{13}5,0\\right)$",
+    "$(3,0)$",
+    "$(2,0)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the lines $L_1: x+y=1$ and $L_2: x-y=1$, which are true?",
+   "a": "(A), (B), (C)",
+   "s": "Slopes $-1$ and $1$.",
+   "opts": [
+    "they are perpendicular",
+    "they meet at $(1,0)$",
+    "the angle bisectors are $x=1$ and $y=0$",
+    "they are parallel"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the triangle with vertices $(0,0)$, $(2,0)$, $(1,\\sqrt3)$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Equilateral with side $2$.",
+   "opts": [
+    "is equilateral",
+    "has area $\\sqrt3$",
+    "has centroid $\\left(1,\\frac{1}{\\sqrt3}\\right)$",
+    "has all sides $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Consider the family $(2x+y-4)+\\lambda(x-2y+3)=0$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Common point $(1,2)$; $\\lambda=0$; $\\lambda=-2$ gives a horizontal line; $\\lambda=\\frac43$ gives a line through the origin.",
+   "opts": [
+    "every member passes through $(1,2)$",
+    "it contains $2x+y=4$",
+    "it contains a line parallel to the $x$-axis",
+    "it contains a line through the origin"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which points lie inside the triangle $x\\ge0$, $y\\ge0$, $x+y\\le3$?",
+   "a": "(A), (B), (D)",
+   "s": "$2+2>3$.",
+   "opts": [
+    "$(1,1)$",
+    "$(0.5,2)$",
+    "$(2,2)$",
+    "$(1,1.5)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the area of the triangle formed by $y=x$, $y=2x$ and $y=3x+4$.",
+   "a": "$4$",
+   "s": "Vertices $(0,0)$, $(-2,-2)$, $(-4,-8)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of lines through $(1,4)$ whose intercepts on the axes are equal in magnitude.",
+   "a": "$3$",
+   "s": "$x+y=5$, $x-y=-3$, $y=4x$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $2\\sqrt5$ times the distance between the lines $x+2y=3$ and $2x+4y=11$.",
+   "a": "$5$",
+   "s": "$\\frac{|6-11|}{\\sqrt{20}}\\cdot2\\sqrt5=5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the $y$-coordinate of the circumcentre of the triangle with vertices $(0,0)$, $(4,0)$, $(0,6)$.",
+   "a": "$3$",
+   "s": "Mid-point of the hypotenuse $(2,3)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each line with its intercept form.\nList-I: (P) $2x+3y=6$; (Q) $x-y=2$; (R) $4x+y=8$; (S) $x+5y=5$\nList-II: (1) $\\frac x3+\\frac y2=1$; (2) $\\frac x2+\\frac y{-2}=1$; (3) $\\frac x2+\\frac y8=1$; (4) $\\frac x5+\\frac y1=1$; (5) $\\frac x6+\\frac y3=1$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Divide by the constant.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each triangle centre for vertices $(0,0)$, $(6,0)$, $(0,8)$.\nList-I: (P) centroid; (Q) circumcentre; (R) orthocentre; (S) incentre\nList-II: (1) $\\left(2,\\frac83\\right)$; (2) $(3,4)$; (3) $(0,0)$; (4) $(2,2)$; (5) $(4,3)$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Incentre radius $\\frac{6+8-10}2=2$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each condition with the value of $k$ for $kx+2y=3$ and $3x+y=1$.\nList-I: (P) parallel; (Q) perpendicular; (R) passes through $(1,1)$; (S) slope $-1$\nList-II: (1) $6$; (2) $-\\frac23$; (3) $1$; (4) $2$; (5) $3$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$-\\frac k2=-3$; $\\frac k2\\cdot3=-1$; $k+2=3$; $-\\frac k2=-1$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each locus.\nList-I: (P) equidistant from $(0,0)$ and $(2,0)$; (Q) equidistant from the axes (first quadrant); (R) distance $2$ from the $x$-axis (upper side); (S) equidistant from $(0,0)$ and $(4,0)$\nList-II: (1) $x=1$; (2) $y=x$; (3) $y=2$; (4) $x=2$; (5) $y=1$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Perpendicular bisectors and distances.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

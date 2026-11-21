@@ -1,0 +1,1150 @@
+{
+ "g11-ch8-main-01": [
+  {
+   "q": "The $10$th term of the GP $3,6,12,\\dots$ is",
+   "a": "(C) $1536$",
+   "s": "$3\\cdot2^9$.",
+   "opts": [
+    "$3072$",
+    "$768$",
+    "$1536$",
+    "$1024$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the infinite GP $4-2+1-\\frac12+\\cdots$ is",
+   "a": "(D) $\\frac83$",
+   "s": "$\\frac{4}{1+\\frac12}$.",
+   "opts": [
+    "$8$",
+    "$3$",
+    "$\\frac43$",
+    "$\\frac83$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The AM of two numbers is $10$ and their GM is $8$. The numbers are",
+   "a": "(A) $4$ and $16$",
+   "s": "$x^2-20x+64=0$.",
+   "opts": [
+    "$4$ and $16$",
+    "$8$ and $12$",
+    "$5$ and $15$",
+    "$2$ and $18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the first $20$ terms of $1,4,7,\\dots$ is",
+   "a": "(C) $590$",
+   "s": "$10(2+57)$.",
+   "opts": [
+    "$610$",
+    "$580$",
+    "$590$",
+    "$400$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{20}k^2$ equals",
+   "a": "(C) $2870$",
+   "s": "$\\frac{20\\cdot21\\cdot41}6$.",
+   "opts": [
+    "$44100$",
+    "$420$",
+    "$2870$",
+    "$2970$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{n}k^3$ equals",
+   "a": "(D) $\\left[\\dfrac{n(n+1)}2\\right]^2$",
+   "s": "Standard sum.",
+   "opts": [
+    "$n^3$",
+    "$\\dfrac{n(n+1)(2n+1)}6$",
+    "$\\dfrac{n^2(n+1)}2$",
+    "$\\left[\\dfrac{n(n+1)}2\\right]^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$0.\\overline{36}$ equals",
+   "a": "(B) $\\frac4{11}$",
+   "s": "$\\frac{36}{99}$.",
+   "opts": [
+    "$\\frac{36}{100}$",
+    "$\\frac4{11}$",
+    "$\\frac{36}{90}$",
+    "$\\frac9{25}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $3$ numbers in GP with sum $13$ and product $27$ are",
+   "a": "(C) $1,3,9$",
+   "s": "Middle term $3$; $\\frac3r+3+3r=13$.",
+   "opts": [
+    "$2,4,8$",
+    "$1,4,16$",
+    "$1,3,9$",
+    "$3,9,27$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Three numbers $a,b,c$ are in GP. Then $\\log a,\\log b,\\log c$ are in",
+   "a": "(D) AP",
+   "s": "$2\\log b=\\log a+\\log c$.",
+   "opts": [
+    "GP",
+    "HP",
+    "no pattern",
+    "AP"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of terms of $2,4,8,\\dots$ needed to make the sum $1022$ is",
+   "a": "(B) $9$",
+   "s": "$2(2^n-1)=1022$.",
+   "opts": [
+    "$10$",
+    "$9$",
+    "$8$",
+    "$11$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $n$th term of the series $1\\cdot2+2\\cdot3+3\\cdot4+\\cdots$ is",
+   "a": "(D) $n(n+1)$",
+   "s": "Pattern.",
+   "opts": [
+    "$n^2$",
+    "$(n+1)(n+2)$",
+    "$n(n-1)$",
+    "$n(n+1)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the first $n$ terms of $1\\cdot2+2\\cdot3+3\\cdot4+\\cdots$ is",
+   "a": "(D) $\\dfrac{n(n+1)(n+2)}3$",
+   "s": "$\\sum k^2+\\sum k$.",
+   "opts": [
+    "$n^2(n+1)$",
+    "$\\dfrac{n(n+1)(2n+1)}6$",
+    "$\\dfrac{n(n+1)}2$",
+    "$\\dfrac{n(n+1)(n+2)}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In an AP, $a_3=5$ and $a_7=9$. Then $a_{15}$ equals",
+   "a": "(A) $17$",
+   "s": "$d=1$, $a=3$.",
+   "opts": [
+    "$17$",
+    "$13$",
+    "$19$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of all two-digit odd numbers is",
+   "a": "(C) $2475$",
+   "s": "$11,\\dots,99$: $45$ terms; $\\frac{45}2(110)$.",
+   "opts": [
+    "$2450$",
+    "$2500$",
+    "$2475$",
+    "$4905$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The GM of $4$ and $9$ is",
+   "a": "(C) $6$",
+   "s": "$\\sqrt{36}$.",
+   "opts": [
+    "$\\sqrt{13}$",
+    "$36$",
+    "$6$",
+    "$6.5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $a,b,c$ are in GP with $a=2$ and $c=18$, then $b$ equals",
+   "a": "(B) $\\pm6$",
+   "s": "$b^2=36$.",
+   "opts": [
+    "$10$",
+    "$\\pm6$",
+    "$6$ only",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum $1+3+3^2+\\dots+3^{7}$ is",
+   "a": "(C) $3280$",
+   "s": "$\\frac{3^8-1}2$.",
+   "opts": [
+    "$6560$",
+    "$2187$",
+    "$3280$",
+    "$3279$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For positive $a,b$, which is always true?",
+   "a": "(A) $\\frac{a+b}2\\ge\\sqrt{ab}$",
+   "s": "AM–GM.",
+   "opts": [
+    "$\\frac{a+b}2\\ge\\sqrt{ab}$",
+    "$\\frac{a+b}2\\le\\sqrt{ab}$",
+    "$a+b\\ge2ab$",
+    "$ab\\ge(a+b)^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The infinite GP with first term $2$ has sum $3$. Its common ratio is",
+   "a": "(B) $\\frac13$",
+   "s": "$\\frac2{1-r}=3$.",
+   "opts": [
+    "$\\frac23$",
+    "$\\frac13$",
+    "$-\\frac13$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{10}(2k-1)$ equals",
+   "a": "(D) $100$",
+   "s": "$n^2$.",
+   "opts": [
+    "$55$",
+    "$90$",
+    "$110$",
+    "$100$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of $5+55+555+\\dots$ to $3$ terms.",
+   "a": "$615$",
+   "s": "$5+55+555$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The second term of a GP is $6$ and the fifth term is $162$. Find the first term.",
+   "a": "$2$",
+   "s": "$r^3=27$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\sum_{k=1}^{10}k(k+1)$.",
+   "a": "$440$",
+   "s": "$\\frac{10\\cdot11\\cdot12}3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the least value of $x+\\dfrac{9}{x}$ for $x>0$.",
+   "a": "$6$",
+   "s": "AM–GM.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Insert $2$ geometric means between $2$ and $54$. Find their sum.",
+   "a": "$24$",
+   "s": "$r=3$: $6+18$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch8-main-02": [
+  {
+   "q": "The $5$th term of the GP $\\sqrt2,2,2\\sqrt2,\\dots$ is",
+   "a": "(B) $4\\sqrt2$",
+   "s": "$\\sqrt2(\\sqrt2)^4$.",
+   "opts": [
+    "$8$",
+    "$4\\sqrt2$",
+    "$4$",
+    "$8\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum $1+\\frac13+\\frac19+\\cdots$ is",
+   "a": "(D) $\\frac32$",
+   "s": "$\\frac1{1-\\frac13}$.",
+   "opts": [
+    "$2$",
+    "$3$",
+    "$\\frac43$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the first $n$ odd natural numbers is",
+   "a": "(A) $n^2$",
+   "s": "$\\frac n2(1+2n-1)$.",
+   "opts": [
+    "$n^2$",
+    "$n(n+1)$",
+    "$\\frac{n(n+1)}2$",
+    "$2n^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{10}k^3$ equals",
+   "a": "(C) $3025$",
+   "s": "$55^2$.",
+   "opts": [
+    "$3000$",
+    "$385$",
+    "$3025$",
+    "$55$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $n$th term of a sequence is $a_n=2^n-1$. Then $\\sum_{k=1}^{5}a_k$ equals",
+   "a": "(D) $57$",
+   "s": "$62-5$.",
+   "opts": [
+    "$63$",
+    "$31$",
+    "$62$",
+    "$57$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $a,b,c$ are in AP and also in GP, then",
+   "a": "(C) $a=b=c$",
+   "s": "$2b=a+c$ and $b^2=ac$ give $(a-c)^2=0$.",
+   "opts": [
+    "$b=0$",
+    "$a+c=0$",
+    "$a=b=c$",
+    "$a=c$ only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum to infinity of $\\frac12+\\frac14+\\frac18+\\cdots$ is",
+   "a": "(B) $1$",
+   "s": "$\\frac{\\frac12}{\\frac12}$.",
+   "opts": [
+    "$2$",
+    "$1$",
+    "$\\frac12$",
+    "$\\frac34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The product of the first $5$ terms of the GP $2,4,8,\\dots$ is",
+   "a": "(B) $2^{15}$",
+   "s": "$2^{1+2+3+4+5}$.",
+   "opts": [
+    "$2^{5}$",
+    "$2^{15}$",
+    "$2^{10}$",
+    "$2^{14}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum $1^2+3^2+5^2+\\dots$ to $10$ terms is",
+   "a": "(B) $1330$",
+   "s": "$\\frac{n(2n-1)(2n+1)}3$.",
+   "opts": [
+    "$1540$",
+    "$1330$",
+    "$385$",
+    "$1000$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a GP, $a_1+a_2=12$ and $a_3+a_4=48$ with positive terms. Then $r$ equals",
+   "a": "(D) $2$",
+   "s": "$r^2=4$.",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$\\frac12$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of all natural numbers between $1$ and $100$ that are multiples of $3$ is",
+   "a": "(D) $1683$",
+   "s": "$3+\\dots+99$: $33$ terms; $\\frac{33}2(102)$.",
+   "opts": [
+    "$1800$",
+    "$1617$",
+    "$1650$",
+    "$1683$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The AM of $a$ and $b$ is twice their GM. Then $a:b$ ($a>b$) equals",
+   "a": "(D) $(2+\\sqrt3):(2-\\sqrt3)$",
+   "s": "$\\frac{a+b}{2\\sqrt{ab}}=2$.",
+   "opts": [
+    "$(3+\\sqrt2):(3-\\sqrt2)$",
+    "$(1+\\sqrt3):(1-\\sqrt3)$",
+    "$4:1$",
+    "$(2+\\sqrt3):(2-\\sqrt3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The $20$th term from the end of $3,7,11,\\dots,407$ is",
+   "a": "(D) $331$",
+   "s": "$407-19\\times4$.",
+   "opts": [
+    "$83$",
+    "$327$",
+    "$335$",
+    "$331$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $x,2x+2,3x+3$ are in GP, then $x$ equals",
+   "a": "(C) $-4$",
+   "s": "$(2x+2)^2=x(3x+3)$, $x\\ne-1$.",
+   "opts": [
+    "$-1$",
+    "$4$",
+    "$-4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$S_n=n^2+2n$ for an AP. Then $a_n$ equals",
+   "a": "(A) $2n+1$",
+   "s": "$S_n-S_{n-1}$.",
+   "opts": [
+    "$2n+1$",
+    "$n+2$",
+    "$2n$",
+    "$2n+3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the series $\\frac1{1\\cdot2}+\\frac1{2\\cdot3}+\\dots+\\frac1{n(n+1)}$ is",
+   "a": "(A) $\\dfrac{n}{n+1}$",
+   "s": "Telescoping.",
+   "opts": [
+    "$\\dfrac{n}{n+1}$",
+    "$\\dfrac{n+1}n$",
+    "$\\dfrac1{n+1}$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x>0$. The least value of $4^x+4^{1-x}$ is",
+   "a": "(A) $4$",
+   "s": "AM–GM: $2\\sqrt{4}$.",
+   "opts": [
+    "$4$",
+    "$5$",
+    "$8$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of terms in the AP $7,13,19,\\dots,205$ is",
+   "a": "(D) $34$",
+   "s": "$\\frac{198}6+1$.",
+   "opts": [
+    "$35$",
+    "$33$",
+    "$32$",
+    "$34$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The GP $1,r,r^2,\\dots$ has infinite sum $4$. The sum of the squares of its terms is",
+   "a": "(A) $\\frac{16}7$",
+   "s": "$r=\\frac34$; $\\frac1{1-\\frac9{16}}$.",
+   "opts": [
+    "$\\frac{16}7$",
+    "$16$",
+    "$\\frac{16}3$",
+    "$\\frac87$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{n}\\left(\\frac12\\right)^k$ approaches",
+   "a": "(D) $1$",
+   "s": "Infinite GP.",
+   "opts": [
+    "$\\frac12$",
+    "$\\infty$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum of the first $8$ terms of $1,2,4,\\dots$.",
+   "a": "$255$",
+   "s": "$2^8-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "The AM and GM of two positive numbers are $13$ and $12$. Find the larger number.",
+   "a": "$18$",
+   "s": "$x^2-26x+144=0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\sum_{k=1}^{6}(k^2+1)$.",
+   "a": "$97$",
+   "s": "$91+6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $n$ if $1+2+\\dots+n=210$.",
+   "a": "$20$",
+   "s": "$\\frac{n(n+1)}2=210$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum $\\sum_{k=1}^{\\infty}\\frac{2}{3^k}$.",
+   "a": "$1$",
+   "s": "$\\frac{\\frac23}{1-\\frac13}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch8-advanced-01": [
+  {
+   "q": "The sum $\\sum_{k=1}^{n}k\\cdot2^{k}$ equals",
+   "a": "(B) $(n-1)2^{n+1}+2$",
+   "s": "Arithmetico-geometric series.",
+   "opts": [
+    "$n\\cdot2^{n+1}$",
+    "$(n-1)2^{n+1}+2$",
+    "$(n+1)2^{n}-2$",
+    "$(n-1)2^{n}+2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum to infinity of $1+\\frac{2}{3}+\\frac{3}{9}+\\frac{4}{27}+\\cdots$ is",
+   "a": "(A) $\\frac94$",
+   "s": "$\\frac1{(1-\\frac13)^2}$.",
+   "opts": [
+    "$\\frac94$",
+    "$\\frac{27}{8}$",
+    "$3$",
+    "$\\frac32$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a_1,a_2,\\dots$ is an AP with $a_1+a_5+a_{10}+a_{15}+a_{20}+a_{24}=225$. Then $a_1+a_2+\\dots+a_{24}$ is",
+   "a": "(B) $900$",
+   "s": "$a_1+a_{24}=a_5+a_{20}=a_{10}+a_{15}=75$; $12\\times75$.",
+   "opts": [
+    "$1200$",
+    "$900$",
+    "$600$",
+    "$450$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The greatest value of $xy$ when $x+y=10$, $x,y>0$ is",
+   "a": "(C) $25$",
+   "s": "AM–GM.",
+   "opts": [
+    "$100$",
+    "$20$",
+    "$25$",
+    "$50$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the GP $81,27,9,\\dots$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{81}{1-\\frac13}$.",
+   "opts": [
+    "$r=\\frac13$",
+    "$a_5=1$",
+    "$S_\\infty=\\frac{243}2$",
+    "$a_n=3^{5-n}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Standard results.",
+   "opts": [
+    "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
+    "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
+    "$\\left(\\sum k\\right)^2=\\sum k^3$",
+    "$\\sum_{k=1}^{n}(2k-1)=n^2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$a,b,c$ are positive and in GP. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Ratios and AM–GM.",
+   "opts": [
+    "$b^2=ac$",
+    "$\\frac{a+c}2\\ge b$",
+    "$a^2,b^2,c^2$ are in GP",
+    "$\\frac1a,\\frac1b,\\frac1c$ are in GP"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The AM of two positive numbers is $5$ and their GM is $4$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$H=\\frac{G^2}A$.",
+   "opts": [
+    "the numbers are $2$ and $8$",
+    "their product is $16$",
+    "their sum is $10$",
+    "their HM is $3.2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\sum_{k=1}^{\\infty}\\dfrac{k}{2^k}$.",
+   "a": "$2$",
+   "s": "Arithmetico-geometric sum.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the sum of the first $15$ terms of $1^2-2^2+3^2-4^2+\\cdots$.",
+   "a": "$120$",
+   "s": "Seven pairs give $-(3+7+\\dots+27)=-105$; add $15^2=225$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $21\\sum_{k=1}^{20}\\dfrac{1}{k(k+1)}$.",
+   "a": "$20$",
+   "s": "$21\\cdot\\frac{20}{21}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "In a GP of positive terms, each term equals the sum of the next two terms. Find $\\lfloor10r\\rfloor$, where $r$ is the common ratio.",
+   "a": "$6$",
+   "s": "$1=r+r^2\\Rightarrow r=\\frac{\\sqrt5-1}2\\approx0.618$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each sum.\nList-I: (P) $\\sum_{1}^{10}k$; (Q) $\\sum_{1}^{10}k^2$; (R) $\\sum_{1}^{10}k^3$; (S) $\\sum_{1}^{10}(2k-1)$\nList-II: (1) $55$; (2) $385$; (3) $3025$; (4) $100$; (5) $110$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard formulas.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each infinite GP with its sum.\nList-I: (P) $1+\\frac12+\\frac14+\\cdots$; (Q) $1-\\frac12+\\frac14-\\cdots$; (R) $3+1+\\frac13+\\cdots$; (S) $\\frac{1}{10}+\\frac1{100}+\\cdots$\nList-II: (1) $2$; (2) $\\frac23$; (3) $\\frac92$; (4) $\\frac19$; (5) $1$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{a}{1-r}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each mean of $4$ and $16$.\nList-I: (P) AM; (Q) GM; (R) HM; (S) AM $-$ GM\nList-II: (1) $10$; (2) $8$; (3) $6.4$; (4) $2$; (5) $12$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{4+16}2$; $\\sqrt{64}$; $\\frac{2\\cdot64}{20}$; $10-8$.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each nth term with its sequence.\nList-I: (P) $2n+1$; (Q) $3\\cdot2^{n-1}$; (R) $n^2$; (S) $\\frac{n}{n+1}$\nList-II: (1) $3,5,7,\\dots$; (2) $3,6,12,\\dots$; (3) $1,4,9,\\dots$; (4) $\\frac12,\\frac23,\\frac34,\\dots$; (5) $2,4,8,\\dots$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Substitute $n=1,2,3$.",
+   "opts": [
+    "$P \\to 5$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch8-advanced-02": [
+  {
+   "q": "If $S_n$ for an AP satisfies $\\dfrac{S_m}{S_n}=\\dfrac{m^2}{n^2}$, then $\\dfrac{a_m}{a_n}$ equals",
+   "a": "(D) $\\dfrac{2m-1}{2n-1}$",
+   "s": "$S_n\\propto n^2\\Rightarrow a_n\\propto2n-1$.",
+   "opts": [
+    "$\\dfrac{m}{n}$",
+    "$\\dfrac{m^2}{n^2}$",
+    "$\\dfrac{2m+1}{2n+1}$",
+    "$\\dfrac{2m-1}{2n-1}$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The sum of the series $1+(1+2)+(1+2+3)+\\dots$ to $n$ terms is",
+   "a": "(C) $\\dfrac{n(n+1)(n+2)}6$",
+   "s": "$\\frac12\\sum(k^2+k)$.",
+   "opts": [
+    "$\\dfrac{n^2(n+1)}{2}$",
+    "$\\dfrac{n(n+1)(n+2)}3$",
+    "$\\dfrac{n(n+1)(n+2)}6$",
+    "$\\dfrac{n(n+1)}2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The minimum of $\\dfrac{(x+1)(x+4)}{x}$ for $x>0$ is",
+   "a": "(C) $9$",
+   "s": "$x+\\frac4x+5\\ge4+5$.",
+   "opts": [
+    "$4$",
+    "$5$",
+    "$9$",
+    "$10$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$a,b,c$ are in GP and $a+b+c=21$, $a^2+b^2+c^2=189$. Then $b$ equals",
+   "a": "(A) $6$",
+   "s": "$(a+b+c)(a-b+c)=a^2+b^2+c^2$ gives $a-b+c=9$.",
+   "opts": [
+    "$6$",
+    "$9$",
+    "$3$",
+    "$12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For an AP with $a=5$ and $d=3$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Formulas.",
+   "opts": [
+    "$a_{10}=32$",
+    "$S_{10}=185$",
+    "$a_n=3n+2$",
+    "$S_n=\\frac n2(3n+7)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $x>0$, which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$x+\\frac4x\\ge4$.",
+   "opts": [
+    "$x+\\frac1x\\ge2$",
+    "$x^2+\\frac{1}{x^2}\\ge2$",
+    "$\\frac{x^2+1}{x}$ has least value $2$",
+    "$x+\\frac4x$ has least value $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\sum_{k=1}^{n}a_k=2n^2+3n$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$a_n=S_n-S_{n-1}$.",
+   "opts": [
+    "$a_1=5$",
+    "$a_n=4n+1$",
+    "the sequence is an AP",
+    "the common difference is $4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which sequences are GPs?",
+   "a": "(A), (B), (D)",
+   "s": "$1,4,9$ has ratios $4,\\frac94$.",
+   "opts": [
+    "$2,-6,18,\\dots$",
+    "$1,\\frac13,\\frac19,\\dots$",
+    "$1,4,9,\\dots$",
+    "$5,5,5,\\dots$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\sum_{k=1}^{10}k(k+1)(k+2)$ divided by $10$.",
+   "a": "$429$",
+   "s": "$\\frac{10\\cdot11\\cdot12\\cdot13}4=4290$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the sum $1+\\dfrac{4}{5}+\\dfrac{7}{25}+\\dfrac{10}{125}+\\cdots$ multiplied by $16$.",
+   "a": "$35$",
+   "s": "$S=\\frac{1}{1-\\frac15}+\\frac{3\\cdot\\frac15}{(1-\\frac15)^2}=\\frac54+\\frac{15}{16}=\\frac{35}{16}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "The sum of the first $n$ terms of a GP is $255$, its first term is $1$ and ratio $2$. Find $n$.",
+   "a": "$8$",
+   "s": "$2^n-1=255$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of terms common to the APs $3,7,11,\\dots,407$ and $2,9,16,\\dots,709$.",
+   "a": "$14$",
+   "s": "Common terms $23,51,79,\\dots$ with difference $28$; the last one not above $407$ is $387$: $14$ terms.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $\\sum_{1}^{5}k^2$; (Q) $\\sum_{1}^{5}k^3$; (R) $\\sum_{1}^{5}2^k$; (S) $\\sum_{1}^{5}k(k+1)$\nList-II: (1) $55$; (2) $225$; (3) $62$; (4) $70$; (5) $31$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Direct sums.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each recurring decimal with its fraction.\nList-I: (P) $0.\\overline3$; (Q) $0.\\overline{18}$; (R) $0.1\\overline6$; (S) $0.\\overline{142857}$\nList-II: (1) $\\frac13$; (2) $\\frac2{11}$; (3) $\\frac16$; (4) $\\frac17$; (5) $\\frac18$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Infinite GP.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For the GP $2,6,18,\\dots$, match.\nList-I: (P) $a_4$; (Q) $S_4$; (R) $a_n$; (S) $S_n$\nList-II: (1) $54$; (2) $80$; (3) $2\\cdot3^{n-1}$; (4) $3^n-1$; (5) $3^n$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{2(3^n-1)}2$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 2$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair of numbers with their GM.\nList-I: (P) $1$ and $9$; (Q) $2$ and $8$; (R) $3$ and $27$; (S) $5$ and $20$\nList-II: (1) $3$; (2) $4$; (3) $9$; (4) $10$; (5) $5$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\sqrt{ab}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

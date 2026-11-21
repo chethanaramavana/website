@@ -1,0 +1,1150 @@
+{
+ "g11-ch12-main-01": [
+  {
+   "q": "$\\lim\\limits_{x\\to2}\\dfrac{x^3-8}{x-2}$ equals",
+   "a": "(A) $12$",
+   "s": "$3\\cdot2^2$.",
+   "opts": [
+    "$12$",
+    "$4$",
+    "$6$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin5x}{3x}$ equals",
+   "a": "(A) $\\frac53$",
+   "s": "Standard limit.",
+   "opts": [
+    "$\\frac53$",
+    "$1$",
+    "$\\frac35$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{1-\\cos2x}{x^2}$ equals",
+   "a": "(C) $2$",
+   "s": "$\\frac{2\\sin^2x}{x^2}$.",
+   "opts": [
+    "$4$",
+    "$\\frac12$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\tan2x}{\\sin3x}$ equals",
+   "a": "(A) $\\frac23$",
+   "s": "Standard limits.",
+   "opts": [
+    "$\\frac23$",
+    "$1$",
+    "$6$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to\\infty}\\dfrac{3x^2+2x}{5x^2-1}$ equals",
+   "a": "(D) $\\frac35$",
+   "s": "Leading coefficients.",
+   "opts": [
+    "$\\infty$",
+    "$0$",
+    "$\\frac25$",
+    "$\\frac35$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to1}\\dfrac{x^{10}-1}{x-1}$ equals",
+   "a": "(A) $10$",
+   "s": "$na^{n-1}$.",
+   "opts": [
+    "$10$",
+    "$1$",
+    "$0$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sqrt{1+x}-\\sqrt{1-x}}{x}$ equals",
+   "a": "(A) $1$",
+   "s": "Rationalise.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$\\frac12$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $x^3-5x+2$ at $x=1$ is",
+   "a": "(B) $-2$",
+   "s": "$3-5$.",
+   "opts": [
+    "$3$",
+    "$-2$",
+    "$-1$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\dfrac{1}{x^2}$ is",
+   "a": "(D) $-\\dfrac{2}{x^3}$",
+   "s": "$-2x^{-3}$.",
+   "opts": [
+    "$-\\dfrac{1}{x^3}$",
+    "$-\\dfrac{2}{x}$",
+    "$\\dfrac{2}{x^3}$",
+    "$-\\dfrac{2}{x^3}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $x\\sin x$ is",
+   "a": "(C) $\\sin x+x\\cos x$",
+   "s": "Product rule.",
+   "opts": [
+    "$x\\cos x$",
+    "$\\cos x-x\\sin x$",
+    "$\\sin x+x\\cos x$",
+    "$\\sin x-x\\cos x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\dfrac{x}{1+x}$ is",
+   "a": "(B) $\\dfrac{1}{(1+x)^2}$",
+   "s": "Quotient rule.",
+   "opts": [
+    "$\\dfrac{x}{(1+x)^2}$",
+    "$\\dfrac{1}{(1+x)^2}$",
+    "$\\dfrac{1+2x}{(1+x)^2}$",
+    "$\\dfrac{-1}{(1+x)^2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0^-}\\dfrac{|x|}{x}$ equals",
+   "a": "(A) $-1$",
+   "s": "$\\frac{-x}x$.",
+   "opts": [
+    "$-1$",
+    "does not exist",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}x\\sin\\dfrac1x$ equals",
+   "a": "(C) $0$",
+   "s": "Squeeze: $|x\\sin\\frac1x|\\le|x|$.",
+   "opts": [
+    "does not exist",
+    "$1$",
+    "$0$",
+    "$\\infty$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\tan x$ at $x=\\frac\\pi4$ is",
+   "a": "(B) $2$",
+   "s": "$\\sec^2\\frac\\pi4$.",
+   "opts": [
+    "$1$",
+    "$2$",
+    "$\\frac12$",
+    "$\\sqrt2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^2$. Then $\\lim\\limits_{h\\to0}\\dfrac{f(3+h)-f(3)}h$ equals",
+   "a": "(C) $6$",
+   "s": "$f'(3)$.",
+   "opts": [
+    "$0$",
+    "$9$",
+    "$6$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to\\frac\\pi2}\\dfrac{\\cos x}{x-\\frac\\pi2}$ equals",
+   "a": "(D) $-1$",
+   "s": "$y=x-\\frac\\pi2$: $\\frac{-\\sin y}y$.",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$1$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\sin^2x$ is",
+   "a": "(B) $\\sin2x$",
+   "s": "$2\\sin x\\cos x$.",
+   "opts": [
+    "$\\cos^2x$",
+    "$\\sin2x$",
+    "$2\\cos x$",
+    "$2\\sin x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to3}\\dfrac{x^2-9}{x^2-2x-3}$ equals",
+   "a": "(D) $\\frac32$",
+   "s": "$\\frac{x+3}{x+1}$.",
+   "opts": [
+    "$\\frac23$",
+    "$6$",
+    "$1$",
+    "$\\frac32$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $(x^2+1)(x-2)$ is",
+   "a": "(A) $3x^2-4x+1$",
+   "s": "Expand or use the product rule.",
+   "opts": [
+    "$3x^2-4x+1$",
+    "$3x^2+1$",
+    "$3x^2-4x-1$",
+    "$2x(x-2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin x^\\circ}{x}$ ($x$ in degrees) equals",
+   "a": "(A) $\\frac\\pi{180}$",
+   "s": "$x^\\circ=\\frac{\\pi x}{180}$ radians.",
+   "opts": [
+    "$\\frac\\pi{180}$",
+    "$1$",
+    "$0$",
+    "$\\frac{180}\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\sin4x}{\\sin2x}$.",
+   "a": "$2$",
+   "s": "$\\frac{4}{2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to-2}\\dfrac{x^2+5x+6}{x+2}$.",
+   "a": "$1$",
+   "s": "$x+3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=3x^2-2x+1$. Find $f'(2)$.",
+   "a": "$10$",
+   "s": "$6x-2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{(1+x)^6-1}{x}$.",
+   "a": "$6$",
+   "s": "Derivative of $(1+x)^6$ at $0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to\\infty}\\left(\\sqrt{x^2+4x}-x\\right)$.",
+   "a": "$2$",
+   "s": "$\\frac{4x}{\\sqrt{x^2+4x}+x}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch12-main-02": [
+  {
+   "q": "$\\lim\\limits_{x\\to1}\\dfrac{x^2-1}{x-1}$ equals",
+   "a": "(D) $2$",
+   "s": "$x+1$.",
+   "opts": [
+    "$1$",
+    "does not exist",
+    "$0$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{e^x-1}{x}$ equals",
+   "a": "(B) $1$",
+   "s": "Standard limit.",
+   "opts": [
+    "$\\infty$",
+    "$1$",
+    "$e$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{x}{\\tan x}$ equals",
+   "a": "(C) $1$",
+   "s": "Standard limit.",
+   "opts": [
+    "$-1$",
+    "$0$",
+    "$1$",
+    "$\\infty$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin ax}{\\sin bx}$ equals",
+   "a": "(C) $\\frac ab$",
+   "s": "Standard limits.",
+   "opts": [
+    "$ab$",
+    "$\\frac ba$",
+    "$\\frac ab$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to\\infty}\\dfrac{2x+1}{x^2+3}$ equals",
+   "a": "(D) $0$",
+   "s": "Degree of denominator is larger.",
+   "opts": [
+    "$2$",
+    "$\\infty$",
+    "$\\frac23$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $x^5$ from first principles at $x=1$ is",
+   "a": "(A) $5$",
+   "s": "$5x^4$.",
+   "opts": [
+    "$5$",
+    "$4$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\cos x$ is",
+   "a": "(D) $-\\sin x$",
+   "s": "Standard.",
+   "opts": [
+    "$-\\cos x$",
+    "$\\sec^2x$",
+    "$\\sin x$",
+    "$-\\sin x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\sec x$ is",
+   "a": "(D) $\\sec x\\tan x$",
+   "s": "Standard.",
+   "opts": [
+    "$-\\sec x\\tan x$",
+    "$\\sec^2x$",
+    "$\\tan^2x$",
+    "$\\sec x\\tan x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\dfrac{\\sin x}{x}$ is",
+   "a": "(A) $\\dfrac{x\\cos x-\\sin x}{x^2}$",
+   "s": "Quotient rule.",
+   "opts": [
+    "$\\dfrac{x\\cos x-\\sin x}{x^2}$",
+    "$\\dfrac{\\sin x-x\\cos x}{x^2}$",
+    "$\\dfrac{\\cos x}{1}$",
+    "$\\dfrac{x\\cos x+\\sin x}{x^2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin2x+3x}{2x+\\sin3x}$ equals",
+   "a": "(A) $1$",
+   "s": "$\\frac{2+3}{2+3}$.",
+   "opts": [
+    "$1$",
+    "$\\frac25$",
+    "$5$",
+    "$\\frac53$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\begin{cases}x+2,&x<1\\\\cx^2,&x\\ge1\\end{cases}$. The limit at $x=1$ exists when $c$ equals",
+   "a": "(A) $3$",
+   "s": "$3=c$.",
+   "opts": [
+    "$3$",
+    "$4$",
+    "$2$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\cos x-\\cos3x}{x^2}$ equals",
+   "a": "(B) $4$",
+   "s": "$\\frac{2\\sin2x\\sin x}{x^2}$.",
+   "opts": [
+    "$1$",
+    "$4$",
+    "$2$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\sqrt x$ at $x=4$ is",
+   "a": "(A) $\\frac14$",
+   "s": "$\\frac1{2\\sqrt x}$.",
+   "opts": [
+    "$\\frac14$",
+    "$2$",
+    "$\\frac12$",
+    "$\\frac18$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to a}\\dfrac{\\sqrt x-\\sqrt a}{x-a}$ equals",
+   "a": "(D) $\\dfrac{1}{2\\sqrt a}$",
+   "s": "Rationalise.",
+   "opts": [
+    "$\\dfrac1{\\sqrt a}$",
+    "$\\sqrt a$",
+    "$2\\sqrt a$",
+    "$\\dfrac{1}{2\\sqrt a}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $(ax+b)^n$ is",
+   "a": "(B) $na(ax+b)^{n-1}$",
+   "s": "Expand by the binomial theorem or use the chain idea.",
+   "opts": [
+    "$a(ax+b)^{n}$",
+    "$na(ax+b)^{n-1}$",
+    "$na(ax+b)^{n+1}$",
+    "$n(ax+b)^{n-1}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{1-\\cos x}{x\\sin x}$ equals",
+   "a": "(D) $\\frac12$",
+   "s": "$\\frac{2\\sin^2\\frac x2}{x\\sin x}$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$1$",
+    "$\\frac12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to2^+}[x]$ and $\\lim\\limits_{x\\to2^-}[x]$ are",
+   "a": "(B) $2$ and $1$",
+   "s": "Greatest integer.",
+   "opts": [
+    "$1$ and $2$",
+    "$2$ and $1$",
+    "$3$ and $2$",
+    "$2$ and $2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $x^2\\cos x$ is",
+   "a": "(C) $2x\\cos x-x^2\\sin x$",
+   "s": "Product rule.",
+   "opts": [
+    "$-2x\\sin x$",
+    "$2x\\cos x+x^2\\sin x$",
+    "$2x\\cos x-x^2\\sin x$",
+    "$x^2\\sin x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to\\infty}\\left(1+\\dfrac{2}{x}\\right)^{x}$ equals",
+   "a": "(A) $e^2$",
+   "s": "Standard limit.",
+   "opts": [
+    "$e^2$",
+    "$1$",
+    "$e$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The derivative of $\\cot x$ is",
+   "a": "(B) $-\\csc^2x$",
+   "s": "Standard.",
+   "opts": [
+    "$-\\sec^2x$",
+    "$-\\csc^2x$",
+    "$\\tan x$",
+    "$\\csc^2x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\tan3x}{x}$.",
+   "a": "$3$",
+   "s": "$3\\cdot\\frac{\\tan3x}{3x}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to4}\\dfrac{x^2-16}{\\sqrt x-2}$.",
+   "a": "$32$",
+   "s": "$(x+4)(\\sqrt x+2)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the derivative of $\\dfrac{x^4+x^3}{x^2}$ at $x=1$.",
+   "a": "$3$",
+   "s": "$x^2+x$: $2x+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{x^2}{1-\\cos x}$.",
+   "a": "$2$",
+   "s": "$\\frac{x^2}{2\\sin^2\\frac x2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3$. Find $\\lim\\limits_{h\\to0}\\dfrac{f(2+h)-f(2)}{h}$.",
+   "a": "$12$",
+   "s": "$f'(2)=12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch12-advanced-01": [
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin(\\pi\\cos^2x)}{x^2}$ equals",
+   "a": "(A) $\\pi$",
+   "s": "$\\sin(\\pi-\\pi\\sin^2x)=\\sin(\\pi\\sin^2x)$.",
+   "opts": [
+    "$\\pi$",
+    "$-\\pi$",
+    "$\\frac\\pi2$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{x\\tan2x-2x\\tan x}{(1-\\cos2x)^2}$ equals",
+   "a": "(B) $\\frac12$",
+   "s": "Series: numerator $\\approx2x^4$, denominator $\\approx4x^4$.",
+   "opts": [
+    "$2$",
+    "$\\frac12$",
+    "$1$",
+    "$-\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=|x-1|+|x-2|$. Then $f'(1.5)$ equals",
+   "a": "(B) $0$",
+   "s": "$f(x)=1$ on $(1,2)$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$-1$",
+    "$2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{n\\to\\infty}\\dfrac{1^2+2^2+\\dots+n^2}{n^3}$ equals",
+   "a": "(D) $\\frac13$",
+   "s": "$\\frac{n(n+1)(2n+1)}{6n^3}$.",
+   "opts": [
+    "$1$",
+    "$\\frac12$",
+    "$0$",
+    "$\\frac13$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which limits equal $1$?",
+   "a": "(A), (B), (D)",
+   "s": "The third limit is $0$.",
+   "opts": [
+    "$\\lim\\limits_{x\\to0}\\dfrac{\\sin x}{x}$",
+    "$\\lim\\limits_{x\\to0}\\dfrac{\\tan x}{x}$",
+    "$\\lim\\limits_{x\\to0}\\dfrac{1-\\cos x}{x}$",
+    "$\\lim\\limits_{x\\to\\infty}x\\sin\\dfrac1x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x^3-3x$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Power rule.",
+   "opts": [
+    "$f'(x)=3x^2-3$",
+    "$f'(1)=0$",
+    "$f'(-1)=0$",
+    "$f'(0)=-3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which derivatives are correct?",
+   "a": "(A), (B), (D)",
+   "s": "$\\frac{d}{dx}\\cos x=-\\sin x$.",
+   "opts": [
+    "$\\dfrac{d}{dx}\\tan x=\\sec^2x$",
+    "$\\dfrac{d}{dx}\\csc x=-\\csc x\\cot x$",
+    "$\\dfrac{d}{dx}\\cos x=\\sin x$",
+    "$\\dfrac{d}{dx}x^{-1}=-x^{-2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=\\begin{cases}x^2,&x\\le1\\\\2x-1,&x>1\\end{cases}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Both one-sided derivatives are $2$.",
+   "opts": [
+    "$\\lim\\limits_{x\\to1}f(x)=1$",
+    "$f$ has left derivative $2$ at $1$",
+    "$f$ has right derivative $2$ at $1$",
+    "$f'(1)$ exists"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\tan x-\\sin x}{x^3}$, multiplied by $10$.",
+   "a": "$5$",
+   "s": "$\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to1}\\dfrac{x+x^2+x^3+\\dots+x^{10}-10}{x-1}$.",
+   "a": "$55$",
+   "s": "$\\sum_{k=1}^{10}k$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to\\infty}x\\left(\\sqrt{x^2+1}-x\\right)$, multiplied by $4$.",
+   "a": "$2$",
+   "s": "$\\frac{x}{\\sqrt{x^2+1}+x}\\to\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$f(x)=\\dfrac{x^2-4}{x-2}$ for $x\\ne2$ and $f(2)=k$. Find $k$ so that $\\lim\\limits_{x\\to2}f(x)=f(2)$.",
+   "a": "$4$",
+   "s": "Limit $x+2\\to4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each limit with its value.\nList-I: (P) $\\lim\\limits_{x\\to0}\\frac{\\sin3x}{x}$; (Q) $\\lim\\limits_{x\\to0}\\frac{1-\\cos x}{x^2}$; (R) $\\lim\\limits_{x\\to2}\\frac{x^2-4}{x-2}$; (S) $\\lim\\limits_{x\\to\\infty}\\frac{x}{x+1}$\nList-II: (1) $3$; (2) $\\frac12$; (3) $4$; (4) $1$; (5) $0$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Standard techniques.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 4$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its derivative.\nList-I: (P) $x^4$; (Q) $\\sin2x$; (R) $\\frac1x$; (S) $\\sqrt x$\nList-II: (1) $4x^3$; (2) $2\\cos2x$; (3) $-\\frac1{x^2}$; (4) $\\frac1{2\\sqrt x}$; (5) $2\\sin x$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Rules of differentiation.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each one-sided limit.\nList-I: (P) $\\lim\\limits_{x\\to0^+}\\frac{|x|}x$; (Q) $\\lim\\limits_{x\\to0^-}\\frac{|x|}x$; (R) $\\lim\\limits_{x\\to1^-}[x]$; (S) $\\lim\\limits_{x\\to2^+}[x]$\nList-II: (1) $1$; (2) $-1$; (3) $0$; (4) $2$; (5) $3$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$[x]=0$ just left of $1$; $[x]=2$ just right of $2$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 2$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each derivative value at $x=0$.\nList-I: (P) $\\sin x$; (Q) $\\cos x$; (R) $x^3-2x$; (S) $x^2+3x$\nList-II: (1) $1$; (2) $0$; (3) $-2$; (4) $3$; (5) $-1$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\cos0$, $-\\sin0$, $3x^2-2$, $2x+3$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch12-advanced-02": [
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sqrt{1+x^2}-\\sqrt{1-x^2}}{x^2}$ equals",
+   "a": "(A) $1$",
+   "s": "$\\frac{2x^2}{x^2(\\sqrt{1+x^2}+\\sqrt{1-x^2})}$.",
+   "opts": [
+    "$1$",
+    "$0$",
+    "$2$",
+    "$\\frac12$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to\\frac\\pi4}\\dfrac{\\tan x-1}{x-\\frac\\pi4}$ equals",
+   "a": "(A) $2$",
+   "s": "Derivative of $\\tan x$ at $\\frac\\pi4$.",
+   "opts": [
+    "$2$",
+    "$\\sqrt2$",
+    "$\\frac12$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=x|x|$. Then $f'(x)$ equals",
+   "a": "(B) $2|x|$",
+   "s": "$x^2$ for $x\\ge0$, $-x^2$ for $x<0$.",
+   "opts": [
+    "$x$",
+    "$2|x|$",
+    "$2x$",
+    "$|x|$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\lim\\limits_{x\\to0}\\dfrac{\\sin(2+x)-\\sin(2-x)}{x}$ equals",
+   "a": "(B) $2\\cos2$",
+   "s": "$\\frac{2\\cos2\\sin x}x$.",
+   "opts": [
+    "$\\cos2$",
+    "$2\\cos2$",
+    "$2\\sin2$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which limits do not exist?",
+   "a": "(A), (B), (C)",
+   "s": "The last one is $0$ by the squeeze.",
+   "opts": [
+    "$\\lim\\limits_{x\\to0}\\dfrac{|x|}{x}$",
+    "$\\lim\\limits_{x\\to0}\\sin\\dfrac1x$",
+    "$\\lim\\limits_{x\\to2}[x]$",
+    "$\\lim\\limits_{x\\to0}x\\cos\\dfrac1x$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For $f(x)=\\dfrac{x^2+1}{x}$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$x+\\frac1x$.",
+   "opts": [
+    "$f'(x)=1-\\dfrac1{x^2}$",
+    "$f'(1)=0$",
+    "$f'(2)=\\frac34$",
+    "$f'(-1)=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$|\\sin x|\\le1$.",
+   "opts": [
+    "$\\lim\\limits_{x\\to0}\\dfrac{\\sin x}{x}=1$ in radians",
+    "$\\lim\\limits_{x\\to\\infty}\\dfrac{\\sin x}{x}=0$",
+    "$\\lim\\limits_{x\\to0}\\dfrac{\\sin x^2}{x}=0$",
+    "$\\lim\\limits_{x\\to\\infty}\\dfrac{\\sin x}{x}=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$f(x)=ax^2+bx$ with $f'(1)=5$ and $f'(2)=9$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$2a+b=5$, $4a+b=9$.",
+   "opts": [
+    "$a=2$",
+    "$b=1$",
+    "$f'(0)=1$",
+    "$f(1)=3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to0}\\dfrac{\\sin3x-3\\sin x}{x^3}$.",
+   "a": "$-4$",
+   "s": "$\\sin3x-3\\sin x=-4\\sin^3x$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\lim\\limits_{x\\to2}\\dfrac{x^5-32}{x^3-8}$, multiplied by $3$.",
+   "a": "$20$",
+   "s": "$\\frac{80}{12}\\cdot3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the derivative of $\\dfrac{1+\\sin x}{\\cos x}$ at $x=0$.",
+   "a": "$1$",
+   "s": "$\\frac{\\cos^2x+(1+\\sin x)\\sin x}{\\cos^2x}$ at $0$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\lim\\limits_{n\\to\\infty}\\dfrac{1+2+\\dots+n}{n^2}$, multiplied by $10$.",
+   "a": "$5$",
+   "s": "$\\frac12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each limit.\nList-I: (P) $\\lim\\limits_{x\\to0}\\frac{\\tan 4x}{2x}$; (Q) $\\lim\\limits_{x\\to0}\\frac{1-\\cos4x}{x^2}$; (R) $\\lim\\limits_{x\\to1}\\frac{x^5-1}{x-1}$; (S) $\\lim\\limits_{x\\to\\infty}\\frac{7x^3+1}{x^3}$\nList-II: (1) $2$; (2) $8$; (3) $5$; (4) $7$; (5) $4$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac42$; $\\frac{16}2$; $na^{n-1}$; leading coefficient.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 5$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each function with its derivative.\nList-I: (P) $x\\cos x$; (Q) $\\frac{x}{\\sin x}$; (R) $\\tan x+\\sec x$; (S) $x^2\\sin x$\nList-II: (1) $\\cos x-x\\sin x$; (2) $\\frac{\\sin x-x\\cos x}{\\sin^2x}$; (3) $\\sec x(\\sec x+\\tan x)$; (4) $2x\\sin x+x^2\\cos x$; (5) $\\sec^2x$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Product and quotient rules.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 5$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each limit of the form $\\lim_{x\\to a}\\frac{x^n-a^n}{x-a}$.\nList-I: (P) $n=2,\\ a=3$; (Q) $n=3,\\ a=2$; (R) $n=4,\\ a=1$; (S) $n=\\frac12,\\ a=4$\nList-II: (1) $6$; (2) $12$; (3) $4$; (4) $\\frac14$; (5) $8$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$na^{n-1}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each derivative at $x=\\frac\\pi2$.\nList-I: (P) $\\sin x$; (Q) $\\cos x$; (R) $x\\sin x$; (S) $x\\cos x$\nList-II: (1) $0$; (2) $-1$; (3) $1$; (4) $-\\frac\\pi2$; (5) $\\frac\\pi2$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\cos\\frac\\pi2=0$; $-\\sin\\frac\\pi2$; $\\sin x+x\\cos x$; $\\cos x-x\\sin x$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 2$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

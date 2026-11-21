@@ -9,8 +9,8 @@ export const paperMaximum = (id: string) => objectiveMaximum(id) + writtenMaximu
 export const answeringMinutes = (id: string) => isFullPaper(id) ? 180 : isThirtyMarkPaper(id) ? 60 : 90;
 export const displayQuestion = (id: string, number: number) => isThirtyMarkPaper(id) && number >= 17 ? number - 10 : number;
 
-// Full CBSE Class 10 sample papers (80 marks, 3 hours): Questions 1–20 objective, 21–38 written.
-export const isFullPaper = (id: string) => /^cbse10-sp-\d\d$/.test(id);
+// Full CBSE Class 10 and Class 12 sample papers (80 marks, 3 hours): Questions 1–20 objective, 21–38 written.
+export const isFullPaper = (id: string) => /^cbse1[02]-sp-\d\d$/.test(id);
 const fullPaperWrittenMarks: Record<number, number> = {
   21: 2, 22: 2, 23: 2, 24: 2, 25: 2, 26: 3, 27: 3, 28: 3, 29: 3, 30: 3, 31: 3,
   32: 5, 33: 5, 34: 5, 35: 5, 36: 4, 37: 4, 38: 4,

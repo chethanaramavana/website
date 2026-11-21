@@ -4,7 +4,7 @@ import { hasIntegralsAccess } from '@/lib/integrals-access';
 import IntegralsCheckout from './checkout';
 import './integrals.css';
 
-export const metadata = { title: 'Integrals: Notes, Practice & Papers | Ramavana', description: 'Free Grade 12 indefinite and definite integrals notes, 50 solved practice questions, and original CBSE and JEE chapter papers.' };
+export const metadata = { title: 'Integrals: Notes, Practice & Papers | Ramavana', description: 'Free Grade 12 indefinite and definite integrals notes, 30 solved practice questions, and original CBSE and JEE chapter papers.' };
 export default async function IntegralsLibrary() {
   const user = await getGoogleUser();
   let accessFailed = false;
@@ -21,9 +21,10 @@ export default async function IntegralsLibrary() {
           <span aria-hidden="true">→</span>
         </a>
         <a href="/cbse/grade-12/ch-7/free-mcq">
-          <span><strong>Try free MCQs</strong><small>50 questions with solutions</small></span>
+          <span><strong>Try free MCQs</strong><small>30 questions with solutions</small></span>
           <span aria-hidden="true">→</span>
         </a>
+        <a href="/cbse/grade-12/board-package"><span><strong>Board Exam Package · ₹1,500</strong><small>All CBSE board papers and MCQs, 13 chapters · JEE not included</small></span><span aria-hidden="true">→</span></a>
         <a href="#paid-integrals">
           <span><strong>Browse practice papers</strong><small>CBSE, JEE Main and Advanced</small></span>
           <span aria-hidden="true">↓</span>

@@ -1,15 +1,16 @@
 import {getRequestUser,getDatabase,sameOrigin,jsonError} from '@/lib/server';
 import {hasMcqAccess} from '@/lib/mcq-access';
 import {freeQuizzes} from '@/lib/free-quizzes';
-import {emptyMcqDraft,type McqDraft} from '@/lib/mcq-draft';
+import {emptyMcqDraft,MCQ_SET_VERSION,type McqDraft} from '@/lib/mcq-draft';
 export async function GET(request:Request){
  try{const user=await getRequestUser(request);if(!user)return jsonError('Please sign in again.',401);
  const quiz=freeQuizzes.find(q=>q.id===new URL(request.url).searchParams.get('quiz'));if(!quiz)return jsonError('Unknown quiz.',400);
  if(!await hasMcqAccess(user,quiz.chapter,quiz.grade,quiz.board))return jsonError('Unlock this quiz first.',403);
  const row=await getDatabase().prepare('SELECT state_json,revision FROM mcq_drafts WHERE user_id=? AND quiz_id=?').bind(user.userId,quiz.id).first<{state_json:string;revision:number}>();
  let state:McqDraft=row?JSON.parse(row.state_json):emptyMcqDraft();
- if(!row){const prior=await getDatabase().prepare('SELECT id,answers_json FROM free_quiz_attempts WHERE user_id=? AND quiz_id=? ORDER BY submitted_at DESC LIMIT 1').bind(user.userId,quiz.id).first<{id:string;answers_json:string}>();if(prior)state={attemptId:prior.id,answers:JSON.parse(prior.answers_json),submitted:true};}
- if(state.attemptId){const result=await getDatabase().prepare('SELECT answers_json FROM free_quiz_attempts WHERE id=? AND user_id=? AND quiz_id=?').bind(state.attemptId,user.userId,quiz.id).first<{answers_json:string}>();if(result){state.answers=JSON.parse(result.answers_json);state.submitted=true;}}
+ if(row&&state.v!==MCQ_SET_VERSION)state=emptyMcqDraft();
+ if(!row){const prior=await getDatabase().prepare('SELECT id,answers_json,total FROM free_quiz_attempts WHERE user_id=? AND quiz_id=? ORDER BY submitted_at DESC LIMIT 1').bind(user.userId,quiz.id).first<{id:string;answers_json:string;total:number}>();if(prior&&prior.total===quiz.questions.length)state={attemptId:prior.id,answers:JSON.parse(prior.answers_json),submitted:true};}
+ if(state.attemptId){const result=await getDatabase().prepare('SELECT answers_json,total FROM free_quiz_attempts WHERE id=? AND user_id=? AND quiz_id=?').bind(state.attemptId,user.userId,quiz.id).first<{answers_json:string;total:number}>();if(result&&result.total===quiz.questions.length){state.answers=JSON.parse(result.answers_json);state.submitted=true;}else if(result)state=emptyMcqDraft();}
  return Response.json({state,revision:row?.revision||0},{headers:{'Cache-Control':'no-store'}});
  }catch{return jsonError('Could not load your answers. Retry before starting.',503);}
 }
@@ -21,8 +22,8 @@ export async function POST(request:Request){
  if(!quiz||!Number.isInteger(body.revision)||body.revision<0||!s||typeof s.attemptId!=='string'||! /^[a-f0-9-]{36}$/i.test(s.attemptId)||!s.answers||typeof s.answers!=='object'||Array.isArray(s.answers))return jsonError('Invalid draft.',400);
  if(!await hasMcqAccess(user,quiz.chapter,quiz.grade,quiz.board))return jsonError('Unlock this quiz first.',403);
  const answers:Record<number,number>={};for(const [key,value] of Object.entries(s.answers)){const i=Number(key);if(!/^\d+$/.test(key)||i<0||i>=quiz.questions.length||!Number.isInteger(value)||Number(value)<0||Number(value)>=quiz.questions[i].options.length)return jsonError('Invalid answer.',400);answers[i]=Number(value);}
- const state:McqDraft={answers,attemptId:s.attemptId,submitted:s.submitted===true};
- if(state.submitted&&!(quiz.grade===12&&quiz.chapter===7)){const submitted=await getDatabase().prepare('SELECT answers_json FROM free_quiz_attempts WHERE id=? AND user_id=? AND quiz_id=?').bind(state.attemptId,user.userId,quiz.id).first<{answers_json:string}>();if(!submitted)return jsonError('Submit your test before saving its result.',400);state.answers=JSON.parse(submitted.answers_json);}
+ const state:McqDraft={answers,attemptId:s.attemptId,submitted:s.submitted===true,v:MCQ_SET_VERSION};
+ if(state.submitted&&!(quiz.grade===12&&quiz.chapter===7)){const submitted=await getDatabase().prepare('SELECT answers_json,total FROM free_quiz_attempts WHERE id=? AND user_id=? AND quiz_id=?').bind(state.attemptId,user.userId,quiz.id).first<{answers_json:string;total:number}>();if(!submitted)return jsonError('Submit your test before saving its result.',400);if(submitted.total!==quiz.questions.length)return jsonError('This quiz now has a new question set. Start a new attempt.',409);state.answers=JSON.parse(submitted.answers_json);}
  const db=getDatabase();const result=body.revision===0?await db.prepare('INSERT INTO mcq_drafts (user_id,quiz_id,state_json,revision,updated_at_ms) VALUES (?,?,?,1,?) ON CONFLICT(user_id,quiz_id) DO NOTHING').bind(user.userId,quiz.id,JSON.stringify(state),Date.now()).run():await db.prepare('UPDATE mcq_drafts SET state_json=?,revision=revision+1,updated_at_ms=? WHERE user_id=? AND quiz_id=? AND revision=?').bind(JSON.stringify(state),Date.now(),user.userId,quiz.id,body.revision).run();
  if(!result.meta.changes)return jsonError('This quiz changed in another tab. Reload to continue with the latest saved answers.',409);
  return Response.json({revision:body.revision+1});

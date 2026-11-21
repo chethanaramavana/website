@@ -1,0 +1,1150 @@
+{
+ "g11-ch6-main-01": [
+  {
+   "q": "The number of ways to arrange the letters of $\\text{BANANA}$ is",
+   "a": "(A) $60$",
+   "s": "$\\frac{6!}{3!\\,2!}$.",
+   "opts": [
+    "$60$",
+    "$30$",
+    "$120$",
+    "$720$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^nC_2=45$. Then $n$ equals",
+   "a": "(D) $10$",
+   "s": "$\\frac{n(n-1)}2=45$.",
+   "opts": [
+    "$9$",
+    "$15$",
+    "$45$",
+    "$10$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{n}P_{4}=20\\,{}^{n}P_{2}$. Then $n$ equals",
+   "a": "(C) $7$",
+   "s": "$(n-2)(n-3)=20$.",
+   "opts": [
+    "$8$",
+    "$10$",
+    "$7$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of diagonals of a decagon is",
+   "a": "(B) $35$",
+   "s": "${}^{10}C_2-10$.",
+   "opts": [
+    "$45$",
+    "$35$",
+    "$40$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $4$-digit numbers with distinct digits is",
+   "a": "(B) $4536$",
+   "s": "$9\\times9\\times8\\times7$.",
+   "opts": [
+    "$5040$",
+    "$4536$",
+    "$4500$",
+    "$3024$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In how many ways can $5$ people sit in a row if two particular people must sit together?",
+   "a": "(B) $48$",
+   "s": "$4!\\times2!$.",
+   "opts": [
+    "$24$",
+    "$48$",
+    "$120$",
+    "$72$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to choose $3$ boys and $2$ girls from $6$ boys and $4$ girls is",
+   "a": "(B) $120$",
+   "s": "$20\\times6$.",
+   "opts": [
+    "$80$",
+    "$120$",
+    "$60$",
+    "$210$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of triangles formed by $10$ points, no three collinear, is",
+   "a": "(D) $120$",
+   "s": "${}^{10}C_3$.",
+   "opts": [
+    "$45$",
+    "$30$",
+    "$720$",
+    "$120$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways $6$ people can sit around a round table is",
+   "a": "(A) $120$",
+   "s": "$5!$.",
+   "opts": [
+    "$120$",
+    "$720$",
+    "$360$",
+    "$60$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of words from all letters of $\\text{EQUATION}$ that begin and end with a consonant is",
+   "a": "(D) $4320$",
+   "s": "Consonants $Q,T,N$: $3\\times2\\times6!$.",
+   "opts": [
+    "$2160$",
+    "$40320$",
+    "$720$",
+    "$4320$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{15}C_{3r}={}^{15}C_{r+3}$. Then $r$ equals",
+   "a": "(B) $3$",
+   "s": "$3r+r+3=15$ (or $3r=r+3$ gives $r=\\frac32$).",
+   "opts": [
+    "$5$",
+    "$3$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to select at least one fruit from $4$ different fruits is",
+   "a": "(A) $15$",
+   "s": "$2^4-1$.",
+   "opts": [
+    "$15$",
+    "$4$",
+    "$24$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $3$-digit even numbers from $1,2,3,4,5$ without repetition is",
+   "a": "(D) $24$",
+   "s": "Units $2$ or $4$: $2\\times4\\times3$.",
+   "opts": [
+    "$12$",
+    "$48$",
+    "$60$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to arrange $\\text{MATHEMATICS}$ is",
+   "a": "(D) $\\dfrac{11!}{2!\\,2!\\,2!}$",
+   "s": "$M,A,T$ twice each.",
+   "opts": [
+    "$\\dfrac{11!}{2!\\,2!}$",
+    "$11!$",
+    "$\\dfrac{11!}{3!\\,2!}$",
+    "$\\dfrac{11!}{2!\\,2!\\,2!}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A committee of $5$ is chosen from $6$ men and $4$ women with at least $3$ women. The number of ways is",
+   "a": "(D) $66$",
+   "s": "${}^4C_3\\,{}^6C_2+{}^4C_4\\,{}^6C_1=60+6$.",
+   "opts": [
+    "$126$",
+    "$60$",
+    "$186$",
+    "$66$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of lines through $12$ points, $5$ of which are collinear, is",
+   "a": "(A) $57$",
+   "s": "${}^{12}C_2-{}^5C_2+1$.",
+   "opts": [
+    "$57$",
+    "$66$",
+    "$62$",
+    "$56$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{n}C_{r}+{}^{n}C_{r-1}$ equals",
+   "a": "(B) ${}^{n+1}C_r$",
+   "s": "Pascal's rule.",
+   "opts": [
+    "${}^{n+1}C_{r+1}$",
+    "${}^{n+1}C_r$",
+    "${}^{n}C_{r+1}$",
+    "${}^{n-1}C_r$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to post $5$ letters in $4$ letter boxes is",
+   "a": "(C) $4^5$",
+   "s": "Each letter: $4$ choices.",
+   "opts": [
+    "$5^4$",
+    "$20$",
+    "$4^5$",
+    "${}^5P_4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of rectangles on an $8\\times8$ chessboard is",
+   "a": "(B) $1296$",
+   "s": "${}^9C_2\\times{}^9C_2$.",
+   "opts": [
+    "$204$",
+    "$1296$",
+    "$64$",
+    "$784$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways $8$ people can be split into two groups of $4$ is",
+   "a": "(D) $35$",
+   "s": "$\\frac{{}^8C_4}{2}$.",
+   "opts": [
+    "$40$",
+    "$56$",
+    "$70$",
+    "$35$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of arrangements of the letters of $\\text{SUCCESS}$.",
+   "a": "$420$",
+   "s": "$\\frac{7!}{3!\\,2!}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "${}^{n}C_{8}={}^{n}C_{6}$. Find ${}^nC_2$.",
+   "a": "$91$",
+   "s": "$n=14$; ${}^{14}C_2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of factors of $360$.",
+   "a": "$24$",
+   "s": "$2^3\\cdot3^2\\cdot5$: $4\\times3\\times2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "How many $5$-digit telephone numbers with distinct digits ($0$–$9$) begin with $6$ or $7$?",
+   "a": "$6048$",
+   "s": "$2\\times9\\times8\\times7\\times6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of ways to choose $2$ cards of different suits from a pack of $52$.",
+   "a": "$1014$",
+   "s": "${}^4C_2\\times13\\times13$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch6-main-02": [
+  {
+   "q": "The number of arrangements of $\\text{INDIA}$ is",
+   "a": "(B) $60$",
+   "s": "$\\frac{5!}{2!}$.",
+   "opts": [
+    "$120$",
+    "$60$",
+    "$30$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "${}^{10}P_r=720$. Then $r$ equals",
+   "a": "(C) $3$",
+   "s": "$10\\times9\\times8$.",
+   "opts": [
+    "$4$",
+    "$2$",
+    "$3$",
+    "$6$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to select $11$ players from $15$ including a particular player is",
+   "a": "(C) ${}^{14}C_{10}$",
+   "s": "Choose the other $10$ from $14$.",
+   "opts": [
+    "${}^{15}C_{11}$",
+    "${}^{14}C_{11}$",
+    "${}^{14}C_{10}$",
+    "${}^{15}C_{10}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways $3$ prizes can go to $5$ students, each student getting at most one prize, is",
+   "a": "(D) $60$",
+   "s": "${}^5P_3$.",
+   "opts": [
+    "$10$",
+    "$15$",
+    "$125$",
+    "$60$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways $3$ prizes can go to $5$ students, with no limit per student, is",
+   "a": "(C) $125$",
+   "s": "$5^3$.",
+   "opts": [
+    "$243$",
+    "$60$",
+    "$125$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $4$-letter words from $\\text{LOGARITHMS}$ with no repetition is",
+   "a": "(A) $5040$",
+   "s": "${}^{10}P_4$.",
+   "opts": [
+    "$5040$",
+    "$210$",
+    "$720$",
+    "$10000$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of numbers greater than $1000000$ formed by $2,3,0,3,4,2,3$ is",
+   "a": "(A) $360$",
+   "s": "$\\frac{7!}{2!\\,3!}-\\frac{6!}{2!\\,3!}=420-60$.",
+   "opts": [
+    "$360$",
+    "$420$",
+    "$300$",
+    "$480$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In how many ways can $4$ boys and $3$ girls stand in a row so that the girls are together?",
+   "a": "(B) $720$",
+   "s": "$5!\\times3!$.",
+   "opts": [
+    "$144$",
+    "$720$",
+    "$5040$",
+    "$360$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In how many ways can $4$ boys and $3$ girls stand in a row so that no two girls are together?",
+   "a": "(B) $1440$",
+   "s": "$4!\\times{}^5P_3$.",
+   "opts": [
+    "$720$",
+    "$1440$",
+    "$5040$",
+    "$2880$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of chords joining $8$ points on a circle is",
+   "a": "(D) $28$",
+   "s": "${}^8C_2$.",
+   "opts": [
+    "$56$",
+    "$16$",
+    "$8$",
+    "$28$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\dfrac{{}^nC_r}{{}^nC_{r-1}}$ equals",
+   "a": "(B) $\\dfrac{n-r+1}{r}$",
+   "s": "Divide the formulas.",
+   "opts": [
+    "$\\dfrac{r}{n-r+1}$",
+    "$\\dfrac{n-r+1}{r}$",
+    "$\\dfrac{n+1}{r}$",
+    "$\\dfrac{n-r}{r}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "A polygon has $44$ diagonals. The number of its sides is",
+   "a": "(C) $11$",
+   "s": "$\\frac{n(n-3)}2=44$.",
+   "opts": [
+    "$9$",
+    "$10$",
+    "$11$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to arrange the letters of $\\text{PERMUTATIONS}$ with $P$ first and $S$ last is",
+   "a": "(D) $\\dfrac{10!}{2!}$",
+   "s": "$T$ appears twice among the $10$ middle letters.",
+   "opts": [
+    "$\\dfrac{10!}{2!\\,2!}$",
+    "$10!$",
+    "$\\dfrac{12!}{2!}$",
+    "$\\dfrac{10!}{2!}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to arrange $\\text{PERMUTATIONS}$ so that the vowels are together is",
+   "a": "(D) $\\dfrac{8!\\,5!}{2!}$",
+   "s": "Vowels $E,U,A,I,O$ as one block.",
+   "opts": [
+    "$8!\\,5!$",
+    "$\\dfrac{7!\\,5!}{2!}$",
+    "$\\dfrac{12!}{2!}$",
+    "$\\dfrac{8!\\,5!}{2!}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $3$-element subsets of $\\{1,\\dots,10\\}$ with no two consecutive numbers is",
+   "a": "(A) $56$",
+   "s": "${}^{8}C_3$.",
+   "opts": [
+    "$56$",
+    "$120$",
+    "$36$",
+    "$84$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In how many ways can a $4$-person team be chosen from $8$ so that two particular people are not both in it?",
+   "a": "(B) $55$",
+   "s": "$70-{}^6C_2$.",
+   "opts": [
+    "$70$",
+    "$55$",
+    "$40$",
+    "$15$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "How many $3$-letter words can be formed from the letters of $\\text{ROSE}$ without repetition?",
+   "a": "(D) $24$",
+   "s": "${}^4P_3$.",
+   "opts": [
+    "$4$",
+    "$64$",
+    "$12$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to place $5$ different balls into $3$ different boxes with no box empty is",
+   "a": "(B) $150$",
+   "s": "$3^5-3\\cdot2^5+3$.",
+   "opts": [
+    "$60$",
+    "$150$",
+    "$243$",
+    "$90$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to arrange $5$ different books on a shelf with two particular books never together is",
+   "a": "(A) $72$",
+   "s": "$120-48$.",
+   "opts": [
+    "$72$",
+    "$120$",
+    "$48$",
+    "$96$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of ${}^{5}C_1+{}^{5}C_2+{}^{5}C_3+{}^{5}C_4$ is",
+   "a": "(C) $30$",
+   "s": "$2^5-2$.",
+   "opts": [
+    "$31$",
+    "$32$",
+    "$30$",
+    "$26$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of ways to arrange the letters of $\\text{SUCCESS}$ with the $S$ not all together.",
+   "a": "$360$",
+   "s": "$420-\\frac{5!}{2!}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $r$ if ${}^{12}C_{r}={}^{12}C_{r+2}$.",
+   "a": "$5$",
+   "s": "$r+r+2=12$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of even factors of $360$.",
+   "a": "$18$",
+   "s": "$2^a$ with $a\\ge1$: $3\\times3\\times2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of $5$-card hands from $52$ cards that have exactly $4$ aces.",
+   "a": "$48$",
+   "s": "${}^4C_4\\times48$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of ways $7$ beads of different colours can make a necklace.",
+   "a": "$360$",
+   "s": "$\\frac{6!}{2}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch6-advanced-01": [
+  {
+   "q": "The number of $5$-letter words from $\\{a,b,c\\}$ that use every letter at least once is",
+   "a": "(D) $150$",
+   "s": "$3^5-3\\cdot2^5+3$.",
+   "opts": [
+    "$243$",
+    "$60$",
+    "$90$",
+    "$150$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The rank of $\\text{RACE}$ among the arrangements of its letters in dictionary order is",
+   "a": "(C) $19$",
+   "s": "$3\\times3!=18$ words start with $A$, $C$ or $E$; $RACE$ is the first word starting with $R$.",
+   "opts": [
+    "$20$",
+    "$24$",
+    "$19$",
+    "$18$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways to distribute $10$ identical balls into $4$ distinct boxes is",
+   "a": "(B) $286$",
+   "s": "${}^{13}C_3$.",
+   "opts": [
+    "$1001$",
+    "$286$",
+    "$210$",
+    "$84$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of triangles whose vertices are vertices of a regular $12$-gon but whose sides are not sides of the polygon is",
+   "a": "(B) $112$",
+   "s": "$\\frac{n(n-4)(n-5)}6$ with $n=12$.",
+   "opts": [
+    "$220$",
+    "$112$",
+    "$100$",
+    "$120$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "${}^nP_n=n!$.",
+   "opts": [
+    "${}^{n}C_r={}^nC_{n-r}$",
+    "${}^nP_r=r!\\,{}^nC_r$",
+    "$\\sum_{r=0}^{n}{}^nC_r=2^n$",
+    "${}^nP_n=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "From $5$ men and $4$ women, a committee of $4$ is formed. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "${}^5C_2\\,{}^4C_2=60$; $126-5$.",
+   "opts": [
+    "with exactly $2$ women: $60$ ways",
+    "with no woman: $5$ ways",
+    "with at least one woman: $121$ ways",
+    "in total: $126$ ways"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "The letters of $\\text{ARRANGE}$ are arranged. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\frac{7!}{2!2!}$; $\\frac{6!}{2!}$; $1260-360$; $\\frac{6!}{2!}$.",
+   "opts": [
+    "total $1260$ arrangements",
+    "the two $R$ together: $360$",
+    "the two $R$ not together: $900$",
+    "arrangements starting with $A$: $360$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$8$ points lie on a circle. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "${}^8C_2$, ${}^8C_3$, ${}^8C_4$, $28-8$.",
+   "opts": [
+    "$28$ chords",
+    "$56$ triangles",
+    "$70$ quadrilaterals",
+    "$20$ diagonals of the octagon"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of integer solutions of $x+y+z=10$ with $x,y,z\\ge1$.",
+   "a": "$36$",
+   "s": "${}^{9}C_2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of ways to arrange $6$ people in a row so that $A$ is to the left of $B$ (not necessarily next to).",
+   "a": "$360$",
+   "s": "$\\frac{720}2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of $4$-digit numbers whose digits are strictly increasing.",
+   "a": "$126$",
+   "s": "Choose $4$ of $1,\\dots,9$: ${}^9C_4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of ways to choose $3$ numbers from $1,\\dots,20$ so that their sum is even.",
+   "a": "$570$",
+   "s": "All even: ${}^{10}C_3=120$; one even, two odd: $10\\times45=450$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each count.\nList-I: (P) arrangements of $\\text{LEVEL}$; (Q) arrangements of $\\text{APPLE}$; (R) arrangements of $\\text{BOOK}$; (S) arrangements of $\\text{EERIE}$\nList-II: (1) $30$; (2) $60$; (3) $12$; (4) $20$; (5) $120$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{5!}{2!2!}$; $\\frac{5!}{2!}$; $\\frac{4!}{2!}$; $\\frac{5!}{3!}$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 5$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each value.\nList-I: (P) ${}^{6}P_{2}$; (Q) ${}^{6}C_{2}$; (R) ${}^{6}C_{3}$; (S) ${}^{6}P_{3}$\nList-II: (1) $30$; (2) $15$; (3) $20$; (4) $120$; (5) $60$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Definitions.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each geometric count for $10$ points in general position.\nList-I: (P) lines; (Q) triangles; (R) quadrilaterals; (S) pentagons\nList-II: (1) $45$; (2) $120$; (3) $210$; (4) $252$; (5) $100$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "${}^{10}C_2,{}^{10}C_3,{}^{10}C_4,{}^{10}C_5$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each seating count for $5$ people.\nList-I: (P) in a row; (Q) around a table; (R) in a row with $A$ at one end; (S) around a table with $A$ and $B$ together\nList-II: (1) $120$; (2) $24$; (3) $48$; (4) $12$; (5) $60$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$5!$; $4!$; $2\\times4!$; $3!\\times2$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch6-advanced-02": [
+  {
+   "q": "The number of ways to select $5$ cards from $52$ with at least one card of each suit is",
+   "a": "(D) $685464$",
+   "s": "$4\\times{}^{13}C_2\\times13^3$.",
+   "opts": [
+    "$2598960$",
+    "$913952$",
+    "$28561$",
+    "$685464$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of $3$-digit numbers whose digits add up to $5$ is",
+   "a": "(A) $15$",
+   "s": "Put $a=a_1+1$: $a_1+b+c=4$ in ${}^6C_2$ ways.",
+   "opts": [
+    "$15$",
+    "$21$",
+    "$10$",
+    "$6$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of ways $5$ boys and $5$ girls sit around a table, boys and girls alternating, is",
+   "a": "(C) $4!\\,5!$",
+   "s": "Fix boys: $4!$; girls in gaps: $5!$.",
+   "opts": [
+    "$2\\cdot5!\\,5!$",
+    "$9!$",
+    "$4!\\,5!$",
+    "$5!\\,5!$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of $\\{1,\\dots,10\\}$ with exactly $3$ elements and containing $1$ is",
+   "a": "(D) $36$",
+   "s": "${}^9C_2$.",
+   "opts": [
+    "$45$",
+    "$84$",
+    "$120$",
+    "$36$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The digits $1,2,3,4,5$ are used once each to form $5$-digit numbers. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Each digit appears $24$ times in each place: $24\\times15\\times11111$.",
+   "opts": [
+    "$120$ numbers in all",
+    "$48$ are even",
+    "$24$ are divisible by $5$",
+    "the sum of all of them is $3999960$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which equal ${}^{10}C_4$?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Standard identities.",
+   "opts": [
+    "${}^{10}C_6$",
+    "${}^{9}C_4+{}^{9}C_3$",
+    "$210$",
+    "$\\frac{{}^{10}P_4}{4!}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$n$ distinct points on a circle give $105$ chords. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "${}^{15}C_2=105$.",
+   "opts": [
+    "$n=15$",
+    "the number of triangles is $455$",
+    "the number of diagonals of the polygon is $90$",
+    "the number of quadrilaterals is $1365$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Five friends get $5$ different gifts, one each. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Derangements $D_5=44$; ${}^5C_3\\times D_2=10$.",
+   "opts": [
+    "$120$ ways in all",
+    "$44$ ways with nobody getting their own gift",
+    "$1$ way with everyone getting their own gift",
+    "$10$ ways with exactly $3$ getting their own gift"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of non-negative integer solutions of $x+y+z+w=6$.",
+   "a": "$84$",
+   "s": "${}^9C_3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of rectangles that are not squares on an $8\\times8$ chessboard.",
+   "a": "$1092$",
+   "s": "$1296-204$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the rank of $\\text{MOTHER}$ in dictionary order.",
+   "a": "$309$",
+   "s": "$240+48+18+2+0+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of ways to divide $12$ different books equally among $3$ students.",
+   "a": "$34650$",
+   "s": "$\\frac{12!}{(4!)^3}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each distribution count.\nList-I: (P) $4$ different balls into $2$ different boxes; (Q) $4$ identical balls into $2$ different boxes; (R) $4$ different balls into $2$ different boxes, none empty; (S) $4$ identical balls into $2$ different boxes, none empty\nList-II: (1) $16$; (2) $5$; (3) $14$; (4) $3$; (5) $8$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$2^4$; ${}^5C_1$; $16-2$; ${}^3C_1$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 5$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each count of factors.\nList-I: (P) $72$; (Q) $100$; (R) $360$; (S) $1000$\nList-II: (1) $12$; (2) $9$; (3) $24$; (4) $16$; (5) $18$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$2^33^2$; $2^25^2$; $2^33^25$; $2^35^3$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 1$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each arrangement count.\nList-I: (P) all letters of $\\text{BOOK}$; (Q) all letters of $\\text{BOOKS}$; (R) all letters of $\\text{NOON}$; (S) all letters of $\\text{BALLOON}$\nList-II: (1) $12$; (2) $60$; (3) $6$; (4) $1260$; (5) $24$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac{4!}{2!}$; $\\frac{5!}{2!}$; $\\frac{4!}{2!2!}$; $\\frac{7!}{2!2!}$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $0!$; (Q) $5!$; (R) $\\frac{8!}{6!}$; (S) $\\frac{10!}{8!\\,2!}$\nList-II: (1) $1$; (2) $120$; (3) $56$; (4) $45$; (5) $90$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Definitions.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

@@ -1,0 +1,1150 @@
+{
+ "g11-ch4-main-01": [
+  {
+   "q": "$i^{57}+i^{70}+i^{91}+i^{101}$ equals",
+   "a": "(D) $i-1$",
+   "s": "$i-1-i+i$.",
+   "opts": [
+    "$-1-i$",
+    "$2i$",
+    "$0$",
+    "$i-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left(\\dfrac{1+i}{1-i}\\right)^{4}$ equals",
+   "a": "(B) $1$",
+   "s": "$\\frac{1+i}{1-i}=i$.",
+   "opts": [
+    "$-i$",
+    "$1$",
+    "$i$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The modulus of $\\dfrac{(1+2i)(3-4i)}{2+i}$ is",
+   "a": "(B) $5$",
+   "s": "$\\frac{\\sqrt5\\cdot5}{\\sqrt5}$.",
+   "opts": [
+    "$25$",
+    "$5$",
+    "$5\\sqrt5$",
+    "$\\sqrt5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The conjugate of $\\dfrac{1}{2+3i}$ is",
+   "a": "(C) $\\dfrac{2+3i}{13}$",
+   "s": "$\\frac{2-3i}{13}$, conjugated.",
+   "opts": [
+    "$2-3i$",
+    "$\\dfrac{2-3i}{13}$",
+    "$\\dfrac{2+3i}{13}$",
+    "$\\dfrac{-2+3i}{13}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=x+iy$ with $|z-1|=|z+1|$. Then the locus of $z$ is",
+   "a": "(A) the imaginary axis",
+   "s": "$(x-1)^2=(x+1)^2\\Rightarrow x=0$.",
+   "opts": [
+    "the imaginary axis",
+    "the real axis",
+    "the line $y=x$",
+    "a circle"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The roots of $x^2+2x+5=0$ are",
+   "a": "(C) $-1\\pm2i$",
+   "s": "$D=-16$.",
+   "opts": [
+    "$-1\\pm i$",
+    "$-2\\pm i$",
+    "$-1\\pm2i$",
+    "$1\\pm2i$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The argument of $-1-i$ is",
+   "a": "(D) $-\\frac{3\\pi}4$",
+   "s": "Third quadrant, principal value.",
+   "opts": [
+    "$\\frac{3\\pi}4$",
+    "$\\frac{5\\pi}4$",
+    "$\\frac\\pi4$",
+    "$-\\frac{3\\pi}4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The polar form of $1+i\\sqrt3$ is",
+   "a": "(C) $2\\left(\\cos\\frac\\pi3+i\\sin\\frac\\pi3\\right)$",
+   "s": "$r=2$, $\\theta=\\frac\\pi3$.",
+   "opts": [
+    "$\\sqrt2\\left(\\cos\\frac\\pi3+i\\sin\\frac\\pi3\\right)$",
+    "$2\\left(\\cos\\frac\\pi6+i\\sin\\frac\\pi6\\right)$",
+    "$2\\left(\\cos\\frac\\pi3+i\\sin\\frac\\pi3\\right)$",
+    "$4\\left(\\cos\\frac\\pi3+i\\sin\\frac\\pi3\\right)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z\\bar z$ equals",
+   "a": "(A) $|z|^2$",
+   "s": "Definition.",
+   "opts": [
+    "$|z|^2$",
+    "$2\\operatorname{Re}z$",
+    "$z^2$",
+    "$|z|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The square roots of $3+4i$ are",
+   "a": "(D) $\\pm(2+i)$",
+   "s": "$(2+i)^2=3+4i$.",
+   "opts": [
+    "$\\pm(2-i)$",
+    "$\\pm(1+2i)$",
+    "$\\pm(1-2i)$",
+    "$\\pm(2+i)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=\\dfrac{1-i}{1+i}$. Then $z^{100}$ equals",
+   "a": "(D) $1$",
+   "s": "$z=-i$; $(-i)^{100}=1$.",
+   "opts": [
+    "$-i$",
+    "$-1$",
+    "$i$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|z_1|=2$, $|z_2|=3$. The greatest value of $|z_1+z_2|$ is",
+   "a": "(D) $5$",
+   "s": "Triangle inequality.",
+   "opts": [
+    "$1$",
+    "$\\sqrt{13}$",
+    "$6$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\alpha,\\beta$ are roots of $x^2-x+1=0$. Then $\\alpha^2+\\beta^2$ equals",
+   "a": "(B) $-1$",
+   "s": "$1-2$.",
+   "opts": [
+    "$3$",
+    "$-1$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For real $x,y$, $(x+iy)(2-3i)=4+i$ gives $x$ equal to",
+   "a": "(A) $\\frac5{13}$",
+   "s": "$2x+3y=4$, $-3x+2y=1$.",
+   "opts": [
+    "$\\frac5{13}$",
+    "$1$",
+    "$\\frac{14}{13}$",
+    "$\\frac13$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\sqrt{-4}\\times\\sqrt{-9}$ is",
+   "a": "(A) $-6$",
+   "s": "$2i\\cdot3i$.",
+   "opts": [
+    "$-6$",
+    "$6$",
+    "$6i$",
+    "$-6i$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=2-3i$. Then $z^2-4z+13$ equals",
+   "a": "(D) $0$",
+   "s": "$z$ is a root of $x^2-4x+13$.",
+   "opts": [
+    "$1$",
+    "$13$",
+    "$-4z$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The multiplicative inverse of $\\sqrt5+3i$ is",
+   "a": "(A) $\\dfrac{\\sqrt5-3i}{14}$",
+   "s": "$|z|^2=14$.",
+   "opts": [
+    "$\\dfrac{\\sqrt5-3i}{14}$",
+    "$\\dfrac{\\sqrt5-3i}{8}$",
+    "$\\sqrt5-3i$",
+    "$\\dfrac{\\sqrt5+3i}{14}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\omega$ is a non-real cube root of unity. Then $1+\\omega+\\omega^2$ equals",
+   "a": "(D) $0$",
+   "s": "Roots of $x^3=1$ sum to $0$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$-\\omega$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(1+\\omega-\\omega^2)^3$ equals",
+   "a": "(A) $-8$",
+   "s": "$1+\\omega=-\\omega^2$: $(-2\\omega^2)^3$.",
+   "opts": [
+    "$-8$",
+    "$0$",
+    "$-1$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\operatorname{Re}\\left(\\dfrac1{1-i}\\right)$ equals",
+   "a": "(C) $\\frac12$",
+   "s": "$\\frac{1+i}2$.",
+   "opts": [
+    "$-\\frac12$",
+    "$1$",
+    "$\\frac12$",
+    "$0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find the least positive integer $n$ with $\\left(\\dfrac{1+i}{1-i}\\right)^n=1$.",
+   "a": "$4$",
+   "s": "$i^n=1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find $|z|^2$ for $z=\\dfrac{5+5i}{1+2i}$.",
+   "a": "$10$",
+   "s": "$\\frac{50}{5}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the sum $i+i^2+i^3+\\dots+i^{100}$.",
+   "a": "$0$",
+   "s": "$25$ complete cycles.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x^2+kx+9=0$ has non-real roots. How many integers $k$ are possible?",
+   "a": "$11$",
+   "s": "$k^2<36$: $-5,\\dots,5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$(a+ib)^2=-5+12i$ with $a>0$. Find $a+b$.",
+   "a": "$5$",
+   "s": "$a=2$, $b=3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch4-main-02": [
+  {
+   "q": "$i^{4k+3}$ equals",
+   "a": "(A) $-i$",
+   "s": "$i^3$.",
+   "opts": [
+    "$-i$",
+    "$i$",
+    "$1$",
+    "$-1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(1+i)^{8}$ equals",
+   "a": "(A) $16$",
+   "s": "$(2i)^4$.",
+   "opts": [
+    "$16$",
+    "$16i$",
+    "$-16$",
+    "$8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\dfrac{(1+i)^2}{2-i}$ is",
+   "a": "(A) $\\dfrac{-2+4i}5$",
+   "s": "$\\frac{2i(2+i)}5$.",
+   "opts": [
+    "$\\dfrac{-2+4i}5$",
+    "$2i$",
+    "$\\dfrac{2+4i}5$",
+    "$\\dfrac{-2-4i}5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The locus of $z$ with $|z-2-3i|=4$ is a circle with",
+   "a": "(B) centre $(2,3)$, radius $4$",
+   "s": "Distance from $2+3i$.",
+   "opts": [
+    "centre $(-2,-3)$, radius $4$",
+    "centre $(2,3)$, radius $4$",
+    "centre $(2,3)$, radius $16$",
+    "centre $(3,2)$, radius $4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z$ is purely imaginary and non-zero. Then $z+\\bar z$ equals",
+   "a": "(C) $0$",
+   "s": "$\\bar z=-z$.",
+   "opts": [
+    "$|z|^2$",
+    "$2z$",
+    "$0$",
+    "$2i\\operatorname{Im}z$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\arg z=\\frac\\pi4$ and $|z|=2\\sqrt2$. Then $z$ is",
+   "a": "(C) $2+2i$",
+   "s": "$2\\sqrt2(\\frac1{\\sqrt2}+\\frac i{\\sqrt2})$.",
+   "opts": [
+    "$2-2i$",
+    "$\\sqrt2+\\sqrt2i$",
+    "$2+2i$",
+    "$-2+2i$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The roots of $3x^2-2x+1=0$ are",
+   "a": "(C) $\\dfrac{1\\pm i\\sqrt2}3$",
+   "s": "$D=-8$.",
+   "opts": [
+    "$\\dfrac{-1\\pm i\\sqrt2}3$",
+    "$\\dfrac{1\\pm i\\sqrt2}6$",
+    "$\\dfrac{1\\pm i\\sqrt2}3$",
+    "$\\dfrac{1\\pm\\sqrt2}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $\\dfrac{z-1}{z+1}$ is purely imaginary, then $|z|$ equals",
+   "a": "(D) $1$",
+   "s": "$\\frac{|z|^2-1+2i\\operatorname{Im}z}{|z+1|^2}$ has real part $0$.",
+   "opts": [
+    "$2$",
+    "$\\sqrt2$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of solutions of $z^2+\\bar z=0$ is",
+   "a": "(C) $4$",
+   "s": "$0$, $-1$, $\\frac12\\pm\\frac{\\sqrt3}2i$.",
+   "opts": [
+    "$3$",
+    "$1$",
+    "$4$",
+    "$2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|z+4|\\le3$. The greatest value of $|z+1|$ is",
+   "a": "(C) $6$",
+   "s": "$|z+1|\\le|z+4|+3$.",
+   "opts": [
+    "$7$",
+    "$4$",
+    "$6$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $\\omega^{100}+\\omega^{200}+\\omega^{300}$ is",
+   "a": "(A) $0$",
+   "s": "$\\omega+\\omega^2+1$.",
+   "opts": [
+    "$0$",
+    "$-1$",
+    "$1$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=\\cos\\theta+i\\sin\\theta$. Then $z+\\dfrac1z$ equals",
+   "a": "(A) $2\\cos\\theta$",
+   "s": "$\\frac1z=\\bar z$.",
+   "opts": [
+    "$2\\cos\\theta$",
+    "$2i\\sin\\theta$",
+    "$2\\sin\\theta$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\alpha,\\beta$ are roots of $x^2+x+1=0$. Then $\\alpha^3+\\beta^3$ equals",
+   "a": "(C) $2$",
+   "s": "Both are cube roots of unity.",
+   "opts": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$-2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The equation with roots $2\\pm3i$ is",
+   "a": "(D) $x^2-4x+13=0$",
+   "s": "Sum $4$, product $13$.",
+   "opts": [
+    "$x^2-4x-5=0$",
+    "$x^2-13x+4=0$",
+    "$x^2+4x+13=0$",
+    "$x^2-4x+13=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\left|\\dfrac{z-i}{z+i}\\right|=1$ holds when $z$ is",
+   "a": "(A) real",
+   "s": "Equidistant from $i$ and $-i$.",
+   "opts": [
+    "real",
+    "on $|z|=1$",
+    "purely imaginary",
+    "zero only"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The principal argument of $\\dfrac{1}{i}$ is",
+   "a": "(C) $-\\frac\\pi2$",
+   "s": "$\\frac1i=-i$.",
+   "opts": [
+    "$0$",
+    "$\\frac\\pi2$",
+    "$-\\frac\\pi2$",
+    "$\\pi$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For $z=-\\sqrt3+i$, $\\arg z$ equals",
+   "a": "(A) $\\frac{5\\pi}6$",
+   "s": "Second quadrant, $\\tan^{-1}\\frac1{\\sqrt3}=\\frac\\pi6$.",
+   "opts": [
+    "$\\frac{5\\pi}6$",
+    "$\\frac\\pi6$",
+    "$-\\frac\\pi6$",
+    "$\\frac{2\\pi}3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$|z_1+z_2|^2+|z_1-z_2|^2$ equals",
+   "a": "(D) $2(|z_1|^2+|z_2|^2)$",
+   "s": "Parallelogram law.",
+   "opts": [
+    "$|z_1|^2+|z_2|^2$",
+    "$2|z_1z_2|$",
+    "$4|z_1||z_2|$",
+    "$2(|z_1|^2+|z_2|^2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which equation has real coefficients and the root $1+i$?",
+   "a": "(A) $x^2-2x+2=0$",
+   "s": "Roots $1\\pm i$.",
+   "opts": [
+    "$x^2-2x+2=0$",
+    "$x^2-2x-2=0$",
+    "$x^2-x+1=0$",
+    "$x^2+2x+2=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The value of $(-1+i\\sqrt3)^{3}$ is",
+   "a": "(B) $8$",
+   "s": "$(2\\omega)^3$.",
+   "opts": [
+    "$-8$",
+    "$8$",
+    "$8i$",
+    "$1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Find $|(1+i)(2+i)(3+i)|^2$.",
+   "a": "$100$",
+   "s": "$2\\cdot5\\cdot10$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$x+iy=\\dfrac{(1+i)^2}{1-i}$ with real $x,y$. Find $x+y$.",
+   "a": "$0$",
+   "s": "$\\frac{2i(1+i)}2=-1+i$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$z=1+i$. Find $|z^{6}|$.",
+   "a": "$8$",
+   "s": "$(\\sqrt2)^6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the value of $\\left(\\dfrac{1+i\\sqrt3}{2}\\right)^{6}$.",
+   "a": "$1$",
+   "s": "$(\\cos\\frac\\pi3+i\\sin\\frac\\pi3)^6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the greatest value of $|z|$ when $|z-3|=2$.",
+   "a": "$5$",
+   "s": "$|z|\\le3+2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch4-advanced-01": [
+  {
+   "q": "The greatest value of $|z|$ when $\\left|z-\\dfrac4z\\right|=2$ is",
+   "a": "(C) $\\sqrt5+1$",
+   "s": "$|z|-\\frac4{|z|}\\le2\\Rightarrow|z|^2-2|z|-4\\le0$.",
+   "opts": [
+    "$\\sqrt5-1$",
+    "$\\sqrt3+1$",
+    "$\\sqrt5+1$",
+    "$2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The area of the triangle with vertices $z$, $iz$ and $z+iz$ is",
+   "a": "(C) $\\frac12|z|^2$",
+   "s": "Right isosceles with legs $|z|$.",
+   "opts": [
+    "$\\frac14|z|^2$",
+    "$2|z|^2$",
+    "$\\frac12|z|^2$",
+    "$|z|^2$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$\\omega\\ne1$ is a cube root of unity. The value of $(1-\\omega+\\omega^2)(1+\\omega-\\omega^2)$ is",
+   "a": "(A) $4$",
+   "s": "$(-2\\omega)(-2\\omega^2)$.",
+   "opts": [
+    "$4$",
+    "$-4$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "One root of $z^2-(3+i)z+(2+2i)=0$ is $2$. The other root is",
+   "a": "(A) $1+i$",
+   "s": "Sum $3+i$; one root $2$ gives the other $1+i$; product check $2(1+i)=2+2i$.",
+   "opts": [
+    "$1+i$",
+    "$1-i$",
+    "$-1+i$",
+    "$2i$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=\\dfrac{\\sqrt3+i}{2}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$z=\\cos\\frac\\pi6+i\\sin\\frac\\pi6$: $z^6=\\cos\\pi+i\\sin\\pi$.",
+   "opts": [
+    "$|z|=1$",
+    "$\\arg z=\\frac\\pi6$",
+    "$z^6=-1$",
+    "$z^{12}=1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which of these lie on the circle $|z-1|=1$?",
+   "a": "(A), (B), (C)",
+   "s": "$|i-1|=\\sqrt2$.",
+   "opts": [
+    "$0$",
+    "$2$",
+    "$1+i$",
+    "$i$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$\\alpha,\\beta$ are the roots of $x^2-2x+4=0$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$\\alpha=2(\\cos\\frac\\pi3\\pm i\\sin\\frac\\pi3)$.",
+   "opts": [
+    "$\\alpha=1+i\\sqrt3$ or $1-i\\sqrt3$",
+    "$|\\alpha|=2$",
+    "$\\alpha^3=-8$",
+    "$\\alpha^3+\\beta^3=-16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For complex $z_1,z_2$, which are always true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Standard properties.",
+   "opts": [
+    "$|z_1z_2|=|z_1||z_2|$",
+    "$\\overline{z_1+z_2}=\\bar z_1+\\bar z_2$",
+    "$|z_1+z_2|\\le|z_1|+|z_2|$",
+    "$|z_1-z_2|\\ge|z_1|-|z_2|$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of complex $z$ with $z^3=\\bar z$.",
+   "a": "$5$",
+   "s": "$|z|=0$ or $|z|=1$ with $z^4=1$: $0,\\pm1,\\pm i$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find $\\left|\\dfrac{3+4i}{4-3i}\\right|^{10}$.",
+   "a": "$1$",
+   "s": "Both moduli are $5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$z$ satisfies $|z-2i|\\le1$. Find the least value of $|z|$.",
+   "a": "$1$",
+   "s": "$|z|\\ge2-1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the sum of the real parts of the roots of $z^2+4z+13=0$.",
+   "a": "$-4$",
+   "s": "Roots $-2\\pm3i$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each number with its modulus.\nList-I: (P) $3+4i$; (Q) $1-i$; (R) $\\dfrac{1+i}{1-i}$; (S) $(1+i)^4$\nList-II: (1) $5$; (2) $\\sqrt2$; (3) $1$; (4) $4$; (5) $2$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$|1+i|^4=4$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 5$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each number with its principal argument.\nList-I: (P) $1+i$; (Q) $-1+i$; (R) $-1-i$; (S) $-i$\nList-II: (1) $\\frac\\pi4$; (2) $\\frac{3\\pi}4$; (3) $-\\frac{3\\pi}4$; (4) $-\\frac\\pi2$; (5) $\\frac\\pi2$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Quadrants.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each equation with its roots.\nList-I: (P) $x^2+4=0$; (Q) $x^2+2x+2=0$; (R) $x^2-6x+10=0$; (S) $x^2+x+1=0$\nList-II: (1) $\\pm2i$; (2) $-1\\pm i$; (3) $3\\pm i$; (4) $\\frac{-1\\pm i\\sqrt3}2$; (5) $1\\pm i$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Quadratic formula.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 5$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each locus.\nList-I: (P) $|z-1|=|z+1|$; (Q) $|z|=2$; (R) $|z-i|=|z+i|$; (S) $\\operatorname{Re}z=2$\nList-II: (1) imaginary axis; (2) circle of radius $2$; (3) real axis; (4) line $x=2$; (5) line $y=2$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Distances in the plane.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch4-advanced-02": [
+  {
+   "q": "$\\omega$ is a complex cube root of unity. The value of $(1+\\omega)(1+\\omega^2)(1+\\omega^4)(1+\\omega^8)$ is",
+   "a": "(C) $1$",
+   "s": "$(1+\\omega)(1+\\omega^2)=1$, twice.",
+   "opts": [
+    "$-1$",
+    "$2$",
+    "$1$",
+    "$0$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z_1,z_2$ satisfy $|z_1|=|z_2|=1$ and $|z_1+z_2|=\\sqrt3$. Then $|z_1-z_2|$ equals",
+   "a": "(D) $1$",
+   "s": "Parallelogram law: $2(1+1)-3$.",
+   "opts": [
+    "$\\sqrt3$",
+    "$2$",
+    "$0$",
+    "$1$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set of $z$ with $\\arg\\left(\\dfrac{z-1}{z+1}\\right)=\\frac\\pi2$ is",
+   "a": "(D) an arc of a circle",
+   "s": "Angle subtended by $\\pm1$ is $90^\\circ$: an arc of the unit circle.",
+   "opts": [
+    "a full circle",
+    "a straight line",
+    "a parabola",
+    "an arc of a circle"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$x^2+px+q=0$, with real $p,q$, has the root $2+i$. Then $(p,q)$ is",
+   "a": "(A) $(-4,5)$",
+   "s": "Sum $4$, product $5$.",
+   "opts": [
+    "$(-4,5)$",
+    "$(4,-5)$",
+    "$(-4,3)$",
+    "$(4,5)$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$z=x+iy$ satisfies $|z+1|=|z-i|$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$(x+1)^2+y^2=x^2+(y-1)^2$.",
+   "opts": [
+    "$y=-x$",
+    "$z=1-i$ satisfies it",
+    "$z=0$ satisfies it",
+    "$|z|$ can be any value $\\ge0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which equations have non-real roots?",
+   "a": "(A), (B), (D)",
+   "s": "$D<0$ for A, B, D.",
+   "opts": [
+    "$x^2+x+1=0$",
+    "$x^2-4x+5=0$",
+    "$x^2+5x+6=0$",
+    "$2x^2+3x+2=0$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$z^4=1$. Which are roots?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac{1+i}{\\sqrt2}$ is an eighth root.",
+   "opts": [
+    "$1$",
+    "$-1$",
+    "$i$",
+    "$\\frac{1+i}{\\sqrt2}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$z=\\dfrac{2+i}{1-i}$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$\\frac{(2+i)(1+i)}2$.",
+   "opts": [
+    "$z=\\frac12+\\frac32i$",
+    "$|z|^2=\\frac52$",
+    "$\\bar z=\\frac12-\\frac32i$",
+    "$z$ is in the second quadrant"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the least positive integer $n$ with $(1+i)^{2n}=(1-i)^{2n}$.",
+   "a": "$2$",
+   "s": "$(2i)^n=(-2i)^n$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of real $x$ for which $(1+ix)^2$ is purely imaginary.",
+   "a": "$2$",
+   "s": "$1-x^2=0$ and $2x\\ne0$: $x=\\pm1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$z_1=3+4i$ and $z_2=5-12i$. Find $\\dfrac{|z_1+z_2|^2}{4}$.",
+   "a": "$32$",
+   "s": "$|8-8i|^2=128$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$1,\\omega,\\omega^2$ are the cube roots of unity. Find $(2-\\omega)(2-\\omega^2)$.",
+   "a": "$7$",
+   "s": "$4-2(\\omega+\\omega^2)+1$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each value.\nList-I: (P) $i^{2}$; (Q) $i^{7}$; (R) $i^{5}$; (S) $i^{100}$\nList-II: (1) $-1$; (2) $-i$; (3) $i$; (4) $1$; (5) $0$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Reduce the power modulo $4$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 1$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each number with its conjugate.\nList-I: (P) $\\dfrac1i$; (Q) $(1+i)^2$; (R) $\\dfrac{1+i}{1-i}$; (S) $2-3i$\nList-II: (1) $i$; (2) $-2i$; (3) $-i$; (4) $2+3i$; (5) $2i$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\frac1i=-i$; $(1+i)^2=2i$; $\\frac{1+i}{1-i}=i$.",
+   "opts": [
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each pair with $|z_1-z_2|$.\nList-I: (P) $1+i$, $4+5i$; (Q) $2$, $2i$; (R) $3$, $-3$; (S) $i$, $-i$\nList-II: (1) $5$; (2) $2\\sqrt2$; (3) $6$; (4) $2$; (5) $4$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Distance formula.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 5$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 5$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each $\\omega$-expression with its value.\nList-I: (P) $1+\\omega+\\omega^2$; (Q) $\\omega^3$; (R) $(1+\\omega)^3$; (S) $(1-\\omega)(1-\\omega^2)$\nList-II: (1) $0$; (2) $1$; (3) $-1$; (4) $3$; (5) $2$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$(1+\\omega)^3=(-\\omega^2)^3=-1$; $1-(\\omega+\\omega^2)+1=3$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}

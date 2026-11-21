@@ -1,0 +1,1150 @@
+{
+ "g11-ch1-main-01": [
+  {
+   "q": "$A=\\{x\\in\\mathbb N: x^2<30\\}$. The number of elements of $A$ is",
+   "a": "(D) $5$",
+   "s": "$1,2,3,4,5$.",
+   "opts": [
+    "$4$",
+    "$6$",
+    "$30$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of a set with $6$ elements is",
+   "a": "(D) $64$",
+   "s": "$2^6$.",
+   "opts": [
+    "$12$",
+    "$36$",
+    "$32$",
+    "$64$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of proper subsets of $\\{1,2,3,4\\}$ is",
+   "a": "(C) $15$",
+   "s": "$2^4-1$.",
+   "opts": [
+    "$8$",
+    "$16$",
+    "$15$",
+    "$14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$. The number of subsets of $A$ that contain $1$ is",
+   "a": "(B) $4$",
+   "s": "Choose freely among $2,3$: $2^2$.",
+   "opts": [
+    "$6$",
+    "$4$",
+    "$8$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A\\cup B=A\\cap B$ holds if and only if",
+   "a": "(C) $A=B$",
+   "s": "Each set lies inside the other.",
+   "opts": [
+    "$B=\\varnothing$",
+    "$A\\cap B=\\varnothing$",
+    "$A=B$",
+    "$A\\subset B$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(A\\cup B)r'\\cup(A'\\cap B)$ equals",
+   "a": "(C) $A'$",
+   "s": "$(A'\\cap B')\\cup(A'\\cap B)=A'\\cap(B'\\cup B)$.",
+   "opts": [
+    "$B'$",
+    "$U$",
+    "$A'$",
+    "$A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A-(A-B)$ equals",
+   "a": "(A) $A\\cap B$",
+   "s": "$A\\cap(A\\cap B')r'=A\\cap(A'\\cup B)$.",
+   "opts": [
+    "$A\\cap B$",
+    "$A-B$",
+    "$B$",
+    "$A\\cup B$r"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=40$, $n(B)=26$ and $n(A\\cup B)=60$. Then $n(A\\cap B)$ is",
+   "a": "(C) $6$",
+   "s": "$40+26-60$.",
+   "opts": [
+    "$34$",
+    "$20$",
+    "$6$",
+    "$14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(U)=100$, $n(A)=55$, $n(B)=48$, $n(A\\cap B)=20$. Then $n(A'\\cap B')$ is",
+   "a": "(A) $17$",
+   "s": "$100-(55+48-20)$.",
+   "opts": [
+    "$17$",
+    "$23$",
+    "$83$",
+    "$3$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a class of $50$, $30$ take Physics, $25$ take Chemistry and $8$ take neither. The number taking both is",
+   "a": "(A) $13$",
+   "s": "$30+25-42$.",
+   "opts": [
+    "$13$",
+    "$8$",
+    "$5$",
+    "$17$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=[-3,5)$ and $B=(2,7]$. Then $A\\cap B$ is",
+   "a": "(A) $(2,5)$",
+   "s": "Common part of the intervals.",
+   "opts": [
+    "$(2,5)$",
+    "$[2,5]$",
+    "$[-3,7]$",
+    "$(2,5]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=[-3,5)$ and $B=(2,7]$. Then $A-B$ is",
+   "a": "(C) $[-3,2]$",
+   "s": "Points of $A$ not in $B$.",
+   "opts": [
+    "$(5,7]$",
+    "$(-3,2]$",
+    "$[-3,2]$",
+    "$[-3,2)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{x: x\\text{ is a multiple of }4\\}$, $B=\\{x: x\\text{ is a multiple of }6\\}$ (in $\\mathbb N$). Then $A\\cap B$ is the set of multiples of",
+   "a": "(C) $12$",
+   "s": "$\\text{lcm}(4,6)$.",
+   "opts": [
+    "$2$",
+    "$10$",
+    "$12$",
+    "$24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ has $m$ elements and $B$ has $n$ elements. The number of elements of $A\\times B$ is",
+   "a": "(B) $mn$",
+   "s": "Each pair is chosen independently.",
+   "opts": [
+    "$2^{mn}$",
+    "$mn$",
+    "$m+n$",
+    "$m^n$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$P(A)=P(B)$ implies",
+   "a": "(D) $A=B$",
+   "s": "$A\\in P(A)=P(B)\\Rightarrow A\\subset B$; similarly $B\\subset A$.",
+   "opts": [
+    "$A\\subset B$ only",
+    "$A\\cap B=\\varnothing$",
+    "$n(A)=2n(B)$",
+    "$A=B$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which set is empty?",
+   "a": "(A) $\\{x\\in\\mathbb R: x^2+1=0\\}$",
+   "s": "$x^2=-1$ has no real root.",
+   "opts": [
+    "$\\{x\\in\\mathbb R: x^2+1=0\\}$",
+    "$\\{x\\in\\mathbb Z: |x|<1\\}$",
+    "$\\{x\\in\\mathbb R: x^2=0\\}$",
+    "$\\{x\\in\\mathbb N: x<2\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A\\cap(B\\cup C)$ equals",
+   "a": "(C) $(A\\cap B)\\cup(A\\cap C)$",
+   "s": "Distributive law.",
+   "opts": [
+    "$(A\\cup B)\\cap C$",
+    "$(A\\cap B)\\cap(A\\cap C)$",
+    "$(A\\cap B)\\cup(A\\cap C)$",
+    "$A\\cup(B\\cap C)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of non-empty subsets of $\\{a,b,c,d,e\\}$ is",
+   "a": "(B) $31$",
+   "s": "$2^5-1$.",
+   "opts": [
+    "$32$",
+    "$31$",
+    "$25$",
+    "$30$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3,4,5\\}$. The number of subsets with exactly $2$ elements is",
+   "a": "(A) $10$",
+   "s": "$\\binom52$.",
+   "opts": [
+    "$10$",
+    "$5$",
+    "$25$",
+    "$20$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A\\triangle B=(A-B)\\cup(B-A)$. For $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5\\}$, $A\\triangle B$ is",
+   "a": "(B) $\\{1,2,5\\}$",
+   "s": "$\\{1,2\\}\\cup\\{5\\}$.",
+   "opts": [
+    "$\\{1,2,3,4,5\\}$",
+    "$\\{1,2,5\\}$",
+    "$\\{1,2\\}$",
+    "$\\{3,4\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=4$ and $n(B)=3$. Find the number of subsets of $A\\times B$ that have exactly $2$ elements.",
+   "a": "$66$",
+   "s": "$n(A\\times B)=12$; $\\binom{12}2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "In a survey of $100$ people, $60$ read paper X, $50$ read Y, $30$ read both. How many read neither?",
+   "a": "$20$",
+   "s": "$100-(60+50-30)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of elements of $P(P(\\{1\\}))$.",
+   "a": "$4$",
+   "s": "$n(P(\\{1\\}))=2$, then $2^2$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{x\\in\\mathbb Z: -5\\le x\\le5\\}$ and $B=\\{x\\in\\mathbb Z: x^2\\ge9\\}$. Find $n(A\\cap B)$.",
+   "a": "$6$",
+   "s": "$\\pm3,\\pm4,\\pm5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "A set $A$ has $n$ elements and $2^n-n=58$. Find $n$.",
+   "a": "$6$",
+   "s": "$2^6-6=58$, and $2^n-n$ increases with $n$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch1-main-02": [
+  {
+   "q": "$A=\\{x: x\\in\\mathbb N,\\ x\\mid 12\\}$. Then $n(A)$ is",
+   "a": "(B) $6$",
+   "s": "$1,2,3,4,6,12$.",
+   "opts": [
+    "$5$",
+    "$6$",
+    "$4$",
+    "$12$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The set $\\{x\\in\\mathbb R: x^2-5x+6<0\\}$ is",
+   "a": "(D) $(2,3)$",
+   "s": "$(x-2)(x-3)<0$.",
+   "opts": [
+    "$(-3,-2)$",
+    "$[2,3]$",
+    "$(-\\infty,2)\\cup(3,\\infty)$",
+    "$(2,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "For any sets $A,B$, $A\\cap(A\\cup B)$ equals",
+   "a": "(B) $A$",
+   "s": "Absorption law.",
+   "opts": [
+    "$B$",
+    "$A$",
+    "$A\\cup B$",
+    "$A\\cap B$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$(A\\cap B')\\cup(A\\cap B)$ equals",
+   "a": "(C) $A$",
+   "s": "$A\\cap(B'\\cup B)$.",
+   "opts": [
+    "$B$",
+    "$U$r",
+    "$A$",
+    "$B'$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A\\subset B$. Then $A\\cup B$ equals",
+   "a": "(C) $B$",
+   "s": "Every element of $A$ is in $B$.",
+   "opts": [
+    "$A\\cap B$",
+    "$\\varnothing$",
+    "$B$",
+    "$A$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ and $B$ are disjoint, $n(A)=7$, $n(B)=9$. Then $n(A\\cup B)$ is",
+   "a": "(B) $16$",
+   "s": "No common element.",
+   "opts": [
+    "$63$",
+    "$16$",
+    "$2$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=3$. The number of elements of $A\\times A\\times A$ is",
+   "a": "(C) $27$",
+   "s": "$3^3$.",
+   "opts": [
+    "$8$",
+    "$6$",
+    "$27$",
+    "$9$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of $\\{1,2,\\dots,10\\}$ that contain neither $1$ nor $2$ is",
+   "a": "(D) $256$",
+   "s": "$2^8$.",
+   "opts": [
+    "$1024$",
+    "$128$",
+    "$512$",
+    "$256$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of $\\{1,2,\\dots,6\\}$ with an odd number of elements is",
+   "a": "(C) $32$",
+   "s": "Half of all subsets.",
+   "opts": [
+    "$20$",
+    "$31$",
+    "$32$",
+    "$64$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$X=\\{4^n-3n-1: n\\in\\mathbb N\\}$ and $Y=\\{9(n-1): n\\in\\mathbb N\\}$. Then $X\\cup Y$ equals",
+   "a": "(C) $Y$",
+   "s": "Every $4^n-3n-1$ is a multiple of $9$, so $X\\subset Y$.",
+   "opts": [
+    "$X$",
+    "$X\\cap Y$",
+    "$Y$",
+    "$\\mathbb N$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Out of $800$ boys, $224$ play cricket, $240$ hockey and $336$ basketball; $64$ play both basketball and hockey, $80$ cricket and basketball, $40$ cricket and hockey, and $24$ all three. The number playing none is",
+   "a": "(B) $160$",
+   "s": "Union $=800-184+24=640$; none $=800-640$.",
+   "opts": [
+    "$176$",
+    "$160$",
+    "$240$",
+    "$128$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$, $B=\\{2,3,4\\}$, $C=\\{3,4,5\\}$. Then $(A\\cup B)\\cap C$ is",
+   "a": "(C) $\\{3,4\\}$",
+   "s": "$\\{1,2,3,4\\}\\cap\\{3,4,5\\}$.",
+   "opts": [
+    "$\\{3\\}$",
+    "$\\{2,3,4\\}$",
+    "$\\{3,4\\}$",
+    "$\\{1,2,3,4,5\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3\\}$, $B=\\{2,3,4\\}$, $C=\\{3,4,5\\}$. Then $A-(B\\cup C)$ is",
+   "a": "(B) $\\{1\\}$",
+   "s": "$B\\cup C=\\{2,3,4,5\\}$.",
+   "opts": [
+    "$\\varnothing$",
+    "$\\{1\\}$",
+    "$\\{1,2\\}$",
+    "$\\{5\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which statement is true for all sets?r",
+   "a": "(D) $A-B=A\\cap B'$",
+   "s": "Definition of difference.",
+   "opts": [
+    "$A\\cup(B\\cap C)=(A\\cup B)\\cap C$",
+    "$(A\\cup B)'=A'\\cup B'$",
+    "$A-B=B-A$r",
+    "$A-B=A\\cap B'$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The interval $(-1,4]\\cup[3,6)$ is",
+   "a": "(A) $(-1,6)$",
+   "s": "The intervals overlap.",
+   "opts": [
+    "$(-1,6)$",
+    "$[3,4]$",
+    "$(-1,6]$",
+    "$[-1,6)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{x\\in\\mathbb R: |x|<3\\}$ and $B=\\{x\\in\\mathbb R: |x-2|\\le1\\}$. Then $A\\cap B$ is",
+   "a": "(D) $[1,3)$",
+   "s": "$(-3,3)\\cap[1,3]$.",
+   "opts": [
+    "$(1,3)$",
+    "$[1,3]$",
+    "$(-3,3)$",
+    "$[1,3)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $n(A)=10$ and $n(B)=15$, then the greatest possible $n(A\\cap B)$ is",
+   "a": "(B) $10$",
+   "s": "$A\\cap B\\subset A$.",
+   "opts": [
+    "$5$",
+    "$10$",
+    "$15$",
+    "$25$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "If $n(A)=10$, $n(B)=15$ and $n(U)=20$, the least possible $n(A\\cap B)$ is",
+   "a": "(D) $5$",
+   "s": "$n(A\\cup B)\\le20\\Rightarrow n(A\\cap B)\\ge5$.",
+   "opts": [
+    "$0$",
+    "$15$",
+    "$10$",
+    "$5$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ is the set of letters of ALLAHABAD. Then $n(P(A))$ is",
+   "a": "(C) $32$",
+   "s": "$A=\\{A,L,H,B,D\\}$.",
+   "opts": [
+    "$64$",
+    "$512$",
+    "$32$",
+    "$16$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which pair of sets is equal?",
+   "a": "(A) $\\{x: x^2=1\\}$ and $\\{-1,1\\}$",
+   "s": "$x^2=1\\Rightarrow x=\\pm1$.",
+   "opts": [
+    "$\\{x: x^2=1\\}$ and $\\{-1,1\\}$",
+    "$\\{x\\in\\mathbb N: x<1\\}$ and $\\{0\\}$",
+    "$\\{0\\}$ and $\\varnothing$",
+    "$\\{1,2\\}$ and $\\{\\{1\\},\\{2\\}\\}$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a group of $70$ people, $37$ like coffee, $52$ like tea and each person likes at least one. How many like both?",
+   "a": "$19$",
+   "s": "$37+52-70$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=5$. Find the number of ordered pairs $(X,Y)$ of subsets of $A$ with $X\\subset Y$.",
+   "a": "$243$",
+   "s": "Each element: in neither, in $Y$ only, or in both: $3^5$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of subsets of $\\{1,2,\\dots,8\\}$ that contain at least one even number.",
+   "a": "$240$",
+   "s": "$2^8-2^4$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{2,3,5\\}$ and $B=\\{1,2\\}$. Find $n\\big((A\\times B)\\cap(B\\times A)\\big)$.",
+   "a": "$1$",
+   "s": "Common pairs: only $(2,2)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  },
+  {
+   "q": "In a town, $65\\%$ watch news, $40\\%$ read the paper, $25\\%$ do both. What percent do neither?",
+   "a": "$20$",
+   "s": "$100-(65+40-25)$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 1
+  }
+ ],
+ "g11-ch1-advanced-01": [
+  {
+   "q": "$A_1,\\dots,A_{30}$ each have $5$ elements and $B_1,\\dots,B_n$ each have $3$ elements, with $\\bigcup A_i=\\bigcup B_j=S$. Each element of $S$ is in exactly $10$ of the $A_i$ and exactly $9$ of the $B_j$. Then $n$ is",
+   "a": "(C) $45$",
+   "s": "$n(S)=\\frac{30\\times5}{10}=15$; $\\frac{3n}{9}=15$.",
+   "opts": [
+    "$135$",
+    "$30$",
+    "$45$",
+    "$15$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3,4\\}$. The number of pairs $(X,Y)$ of subsets of $A$ with $X\\cap Y=\\varnothing$ is",
+   "a": "(A) $81$",
+   "s": "Each element: in $X$, in $Y$ or in neither: $3^4$.",
+   "opts": [
+    "$81$",
+    "$16$",
+    "$256$",
+    "$64$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of $\\{1,2,\\dots,9\\}$ in which the sum of the elements is odd is",
+   "a": "(D) $256$",
+   "s": "Toggling $1$ pairs odd-sum and even-sum subsets: half of $2^9$.",
+   "opts": [
+    "$255$",
+    "$512$",
+    "$128$",
+    "$256$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a class, $60\\%$ passed Mathematics, $70\\%$ passed Physics. The least percentage that passed both is",
+   "a": "(B) $30\\%$",
+   "s": "$60+70-100$.",
+   "opts": [
+    "$40\\%$",
+    "$30\\%$",
+    "$60\\%$",
+    "$10\\%$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Which statements are true for all sets $A,B,C$?",
+   "a": "(A), (B), (C), (D)",
+   "s": "Each follows from De Morgan and distributive laws.",
+   "opts": [
+    "$A\\cup(B-C)\\supset(A\\cup B)-C$",
+    "$A-(B\\cup C)=(A-B)\\cap(A-C)$",
+    "$A-(B\\cap C)=(A-B)\\cup(A-C)$",
+    "$A\\cap(B-C)=(A\\cap B)-C$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{x\\in\\mathbb R: x^2-3x+2\\le0\\}$ and $B=\\{x\\in\\mathbb R: x^2-4\\le0\\}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$A=[1,2]$, $B=[-2,2]$.",
+   "opts": [
+    "$A=[1,2]$",
+    "$A\\subset B$",
+    "$B-A=[-2,1)$",
+    "$A\\cup B=[-2,2]$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$n(U)=50$, $n(A)=20$, $n(B)=25$, $n(A\\cap B)=8$. Which are true?",
+   "a": "(A), (B), (C)",
+   "s": "$n(A\\cup B)=37$.",
+   "opts": [
+    "$n(A'\\cap B')=13$",
+    "$n(A-B)=12$",
+    "$n(A'\\cup B')=42$",
+    "$n(A\\cup B)=45$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "For a set $A$ with $n(A)=3$, which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$8\\times3=24$.",
+   "opts": [
+    "$n(P(A))=8$",
+    "$A\\in P(A)$",
+    "$\\varnothing\\subset P(A)$",
+    "$n(P(A)\\times A)=24$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=6$. Find the number of subsets of $A$ with an even number of elements, including the empty set.",
+   "a": "$32$",
+   "s": "Half of $2^6$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Among $100$ students, $42$ study French, $30$ German, $28$ Spanish; $10$ French and Spanish, $8$ German and Spanish, $5$ French and German, $3$ all three. How many study none?",
+   "a": "$20$",
+   "s": "Union $=100-23+3=80$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of ordered pairs $(X,Y)$ of subsets of $\\{1,2,3\\}$ with $X\\cup Y=\\{1,2,3\\}$.",
+   "a": "$27$",
+   "s": "Each element is in $X$ only, $Y$ only or both: $3^3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\{1,2,\\dots,20\\}$. Find the number of elements of $A$ that are multiples of $2$ or $3$.",
+   "a": "$13$",
+   "s": "$10+6-3$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Match each quantity for $A=\\{1,2,3,4,5\\}$.\nList-I: (P) $n(P(A))$; (Q) number of proper subsets; (R) number of $2$-element subsets; (S) $n(A\\times A)$\nList-II: (1) $10$; (2) $31$; (3) $32$; (4) $25$; (5) $5$",
+   "a": "(B) $P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+   "s": "$32$, $31$, $10$, $25$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 5$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$U=\\{1,\\dots,10\\}$, $A=\\{1,2,3,4,5\\}$, $B=\\{4,5,6,7\\}$. Match.\nList-I: (P) $n(A\\cup B)$; (Q) $n(A\\cap B)$; (R) $n(A'\\cap B')$; (S) $n(A\\triangle B)$\nList-II: (1) $7$; (2) $2$; (3) $3$; (4) $5$; (5) $4$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$7,2,3,5$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 5$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each set with its interval form.\nList-I: (P) $\\{x: x^2<4\\}$; (Q) $\\{x: |x-1|\\le2\\}$; (R) $\\{x: x^2-x-6>0\\}$ for $x>0$; (S) $\\{x: 0\\le x-2<1\\}$\nList-II: (1) $(-2,2)$; (2) $[-1,3]$; (3) $(3,\\infty)$; (4) $[2,3)$; (5) $(2,3]$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$(x-3)(x+2)>0$ with $x>0$ gives $x>3$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 1$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each law with its equal set.r\nList-I: (P) $(A\\cup B)'$; (Q) $(A\\cap B)'$; (R) $A\\cup(A\\cap B)$; (S) $A\\cap(B\\cup C)$\nList-II: (1) $A'\\cap B'$; (2) $A'\\cup B'$; (3) $A$; (4) $(A\\cap B)\\cup(A\\cap C)$; (5) $A\\cap B$",
+   "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "De Morgan, absorption, distributive.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 5$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 2$, $Q \\to 3$, $R \\to 2$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 4$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ],
+ "g11-ch1-advanced-02": [
+  {
+   "q": "$S=\\{1,2,\\dots,10\\}$. The number of subsets of $S$ with no two consecutive integers (including the empty set) is",
+   "a": "(C) $144$",
+   "s": "$f(n)=f(n-1)+f(n-2)$, $f(1)=2$, $f(2)=3$: $f(10)=144$.",
+   "opts": [
+    "$89$",
+    "$233$",
+    "$144$",
+    "$55$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A$ has $4$ elements and $B$ has $3$. The number of subsets of $A\\times B$ with at least $2$ elements is",
+   "a": "(D) $4083$",
+   "s": "$2^{12}-1-12$.",
+   "opts": [
+    "$4096$",
+    "$4082$",
+    "$4084$",
+    "$4083$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "In a survey, $63\\%$ like cheese and $76\\%$ like apples. If $x\\%$ like both, then",
+   "a": "(D) $39\\le x\\le63$",
+   "s": "$x\\ge63+76-100$ and $x\\le63$.",
+   "opts": [
+    "$x\\le39$",
+    "$x=39$",
+    "$63\\le x\\le76$",
+    "$39\\le x\\le63$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "The number of subsets of $\\{1,2,\\dots,6\\}$ whose largest element is $4$ is",
+   "a": "(D) $8$",
+   "s": "$4$ is in; any subset of $\\{1,2,3\\}$: $2^3$.",
+   "opts": [
+    "$15$",
+    "$4$",
+    "$16$",
+    "$8$"
+   ],
+   "marks": 3,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{n\\in\\mathbb N: n\\le100,\\ 3\\mid n\\}$ and $B=\\{n\\in\\mathbb N: n\\le100,\\ 5\\mid n\\}$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$33+20-6=47$; $20-6=14$.",
+   "opts": [
+    "$n(A)=33$",
+    "$n(A\\cap B)=6$",
+    "$n(A\\cup B)=47$",
+    "$n(B-A)=14$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Which statements are true?",
+   "a": "(A), (C), (D)",
+   "s": "$\\{\\varnothing\\}$ has one element.",
+   "opts": [
+    "$\\varnothing\\in P(A)$ for every $A$",
+    "$\\{\\varnothing\\}=\\varnothing$",
+    "$A\\subset B\\iff P(A)\\subset P(B)$",
+    "$P(A\\cap B)=P(A)\\cap P(B)$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$A$, $B$, $C$ satisfy $A\\cup B=A\\cup C$ and $A\\cap B=A\\cap C$. Which are true?",
+   "a": "(A), (B), (D)",
+   "s": "Standard result: $B=C$; $A$ need not be empty.",
+   "opts": [
+    "$B=C$",
+    "$B\\subset C$",
+    "$A=\\varnothing$",
+    "$C\\subset B$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "$n(A)=12$, $n(B)=9$, $n(A\\cap B)=4$. Which are true?",
+   "a": "(A), (B), (C), (D)",
+   "s": "$(A\\times B)\\cap(B\\times A)=(A\\cap B)\\times(A\\cap B)$.",
+   "opts": [
+    "$n(A\\cup B)=17$",
+    "$n(A\\times B)=108$",
+    "$n((A\\times B)\\cap(B\\times A))=16$",
+    "$n(A-B)=8$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "multiple",
+   "negative": 1
+  },
+  {
+   "q": "Find the number of subsets of $\\{1,2,\\dots,10\\}$ that contain $3$ but not $5$.",
+   "a": "$256$",
+   "s": "$2^8$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$A=\\{1,2,3,4,5,6\\}$. Find the number of subsets $X$ with $X\\cap\\{1,2,3\\}=\\{1\\}$.",
+   "a": "$8$",
+   "s": "$1$ in; $2,3$ out; any subset of $\\{4,5,6\\}$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "In a group of $40$, $25$ play chess, $20$ carrom, and $10$ both. Find the number who play exactly one of the two.",
+   "a": "$25$",
+   "s": "$25+20-2\\times10$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "Find the number of integers from $1$ to $1000$ divisible by none of $2$, $3$, $5$.",
+   "a": "$266$",
+   "s": "Inclusion–exclusion: $1000-(500+333+200)+(166+100+66)-33$.",
+   "opts": null,
+   "marks": 4,
+   "alt": null,
+   "type": "numeric",
+   "negative": 0
+  },
+  {
+   "q": "$n(U)=70$, $n(A)=30$, $n(B)=25$, $n(A\\cup B)=45$. Match.\nList-I: (P) $n(A\\cap B)$; (Q) $n(A-B)$; (R) $n(A'\\cap B')$; (S) $n(B-A)$\nList-II: (1) $10$; (2) $20$; (3) $15$; (4) $25$; (5) $5$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+   "s": "$n(A\\cap B)=10$, $n(A-B)=20$, $70-45=25$, $25-10=15$.",
+   "opts": [
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 5$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 1$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 2$, $Q \\to 1$, $R \\to 4$, $S \\to 1$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "Match each set with its number of elements.\nList-I: (P) $P(\\{1,2,3\\})$; (Q) $\\{1,2\\}\\times\\{a,b,c\\}$; (R) $\\{x\\in\\mathbb Z: x^2\\le10\\}$; (S) $\\{x\\in\\mathbb N: x^2<10\\}$\nList-II: (1) $8$; (2) $6$; (3) $7$; (4) $3$; (5) $9$",
+   "a": "(C) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$-3,\\dots,3$: $7$; $1,2,3$.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 4$, $S \\to 2$",
+    "$P \\to 3$, $Q \\to 2$, $R \\to 4$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 2$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=(1,5]$, $B=[3,8)$. Match.\nList-I: (P) $A\\cup B$; (Q) $A\\cap B$; (R) $A-B$; (S) $B-A$\nList-II: (1) $(1,8)$; (2) $[3,5]$; (3) $(1,3)$; (4) $(5,8)$; (5) $[5,8)$",
+   "a": "(B) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "Compare the end points.",
+   "opts": [
+    "$P \\to 1$, $Q \\to 4$, $R \\to 3$, $S \\to 2$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 1$, $Q \\to 3$, $R \\to 2$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  },
+  {
+   "q": "$A=\\{1,2,3,4\\}$ and $B=\\{3,4,5\\}$. Match each set with its number of elements.\nList-I: (P) $A\\cup B$; (Q) $A\\times B$; (R) $P(A\\cap B)$; (S) $A-B$\nList-II: (1) $5$; (2) $12$; (3) $4$; (4) $2$; (5) $7$",
+   "a": "(D) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
+   "s": "$\\{1,\\dots,5\\}$; $4\\times3$; $2^2$; $\\{1,2\\}$.",
+   "opts": [
+    "$P \\to 4$, $Q \\to 2$, $R \\to 3$, $S \\to 1$",
+    "$P \\to 3$, $Q \\to 1$, $R \\to 1$, $S \\to 4$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 4$, $S \\to 3$",
+    "$P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$"
+   ],
+   "marks": 4,
+   "alt": null,
+   "type": "single",
+   "negative": 1
+  }
+ ]
+}
