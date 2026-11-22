@@ -2001,9 +2001,9 @@
    "negative": 1
   },
   {
-   "q": "Find $\\begin{vmatrix}1&2&3\\\\2&3&4\\\\3&4&6\\end{vmatrix}$.",
-   "a": "$-1$",
-   "s": "$1(18-16)-2(12-12)+3(8-9)$.",
+   "q": "Use a determinant to find the area of the triangle with vertices $(2,0)$, $(6,0)$ and $(4,3)$.",
+   "a": "$6$",
+   "s": "$\\frac12\\left|\\begin{vmatrix}2&0&1\\\\6&0&1\\\\4&3&1\\end{vmatrix}\\right|=\\frac12\\cdot12$.",
    "opts": null,
    "marks": 4,
    "alt": null,
@@ -2011,9 +2011,9 @@
    "negative": 1
   },
   {
-   "q": "Find the number of $3\\times3$ matrices with each entry $0$ or $1$ that have an inverse.",
-   "a": "$174$",
-   "s": "Count the $512$ matrices by computer, or by cases on the rows: $174$ have $|A|\\ne0$.",
+   "q": "Find the number of distinct real values of $x$ for which $\\begin{vmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{vmatrix}=0$.",
+   "a": "$2$",
+   "s": "The determinant is $(x-1)^2(x+2)$.",
    "opts": null,
    "marks": 4,
    "alt": null,
@@ -2138,7 +2138,7 @@
    "s": "$\\operatorname{adj}(2A)=4\\operatorname{adj}A$, so $|\\operatorname{adj}(2A)|=64|\\operatorname{adj}A|$.",
    "opts": [
     "$|\\operatorname{adj}A|=|A|^2$",
-    "$|\\operatorname{adj}(2A)|=4|\\operatorname{adj}A|$r",
+    "$|\\operatorname{adj}(2A)|=4|\\operatorname{adj}A|$",
     "$\\operatorname{adj}(A')=(\\operatorname{adj}A)'$",
     "$\\operatorname{adj}(A^{-1})=(\\operatorname{adj}A)^{-1}$"
    ],

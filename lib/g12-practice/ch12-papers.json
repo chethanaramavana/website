@@ -2356,9 +2356,9 @@
    "negative": 0
   },
   {
-   "q": "Find the minimum of $Z=3x+2y$ subject to $x+y\\ge3$, $x\\le2$, $y\\le2$, $x\\ge0$, $y\\ge0$.",
-   "a": "$7$",
-   "s": "Corners $(1,2)$, $(2,1)$, $(2,2)$.",
+   "q": "Find the maximum of $Z=x+2y$ subject to $x+y\\le6$, $x\\le4$, $y\\le5$, $x\\ge0$, $y\\ge0$.",
+   "a": "$11$",
+   "s": "The corner points are $(0,0)$, $(4,0)$, $(4,2)$, $(1,5)$, $(0,5)$. $Z$ is greatest at $(1,5)$.",
    "opts": null,
    "marks": 4,
    "alt": null,

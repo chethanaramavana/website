@@ -383,14 +383,14 @@
    "negative": 1
   },
   {
-   "q": "The distance of $(1,2,2)$ from the origin is",
-   "a": "(D) $3$",
-   "s": "$\\sqrt{1+4+4}$.",
+   "q": "The point that divides the join of $(1,2,3)$ and $(4,5,6)$ internally in the ratio $1:2$ is",
+   "a": "(C) $(2,3,4)$",
+   "s": "$\\frac{2(1,2,3)+1(4,5,6)}{3}=(2,3,4)$.",
    "opts": [
-    "$5$",
-    "$\\sqrt5$",
-    "$9$",
-    "$3$"
+    "$(3,4,5)$",
+    "$\\left(\\frac52,\\frac72,\\frac92\\right)$",
+    "$(2,3,4)$",
+    "$(2,3,5)$"
    ],
    "marks": 4,
    "alt": null,

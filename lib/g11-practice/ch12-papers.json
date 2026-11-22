@@ -353,14 +353,14 @@
  ],
  "g11-ch12-main-02": [
   {
-   "q": "$\\lim\\limits_{x\\to1}\\dfrac{x^2-1}{x-1}$ equals",
-   "a": "(D) $2$",
-   "s": "$x+1$.",
+   "q": "$\\lim\\limits_{x\\to1}\\dfrac{x^{10}-1}{x^5-1}$ equals",
+   "a": "(B) $2$",
+   "s": "$x^{10}-1=(x^5-1)(x^5+1)$, so the limit is $1^5+1$.",
    "opts": [
+    "$\\frac{1}{2}$",
+    "$2$",
     "$1$",
-    "does not exist",
-    "$0$",
-    "$2$"
+    "$5$"
    ],
    "marks": 4,
    "alt": null,

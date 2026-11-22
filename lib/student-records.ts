@@ -1,6 +1,7 @@
 import { GRADE10_PACKAGE } from './grade10-package';
 import { hasGrade10Package, isGrade10Paper } from './grade10-package-access';
 import { GRADE12_PACKAGE } from './grade12-package';
+import { JEE_PACKAGE } from './jee-package';
 import { hasGrade12Package, isGrade12Paper } from './grade12-package-access';
 import { paperDefinitionsById } from './papers';
 import { getDatabase, type RequestUser } from '@/lib/server';
@@ -68,6 +69,7 @@ export async function getStudentRecordsForUser(user: RequestUser): Promise<Stude
   if (Date.now() >= GRADE10_PACKAGE.expiresAt) access.delete(GRADE10_PACKAGE.id);
   if (await hasGrade12Package(user)) for (const id of Object.keys(paperDefinitionsById)) if(isGrade12Paper(id)) access.add(id);
   if (Date.now() >= GRADE12_PACKAGE.expiresAt) access.delete(GRADE12_PACKAGE.id);
+  if (Date.now() >= JEE_PACKAGE.expiresAt) access.delete(JEE_PACKAGE.id);
   const fallbackName = latestPayments.find((payment) => payment.student_name.trim())?.student_name.trim()
     || user.email.split('@')[0];
   return {

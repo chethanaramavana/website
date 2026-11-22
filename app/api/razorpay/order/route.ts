@@ -2,6 +2,8 @@ import { GRADE10_PACKAGE, grade10PackageOnSale } from '@/lib/grade10-package';
 import { hasGrade10Package, isGrade10PackageTest } from '@/lib/grade10-package-access';
 import { GRADE12_PACKAGE, grade12PackageOnSale } from '@/lib/grade12-package';
 import { hasGrade12Package, isGrade12PackageTest } from '@/lib/grade12-package-access';
+import { JEE_PACKAGE, jeePackageOnSale } from '@/lib/jee-package';
+import { hasJeePackage, isJeePackageTest } from '@/lib/jee-package-access';
 import { recoverPurchase } from '@/lib/payment-recovery';
 import {canBuyBasics,hasBasicsPackage} from '@/lib/basics-access';
 import {getBasicsProduct} from '@/lib/basics-catalog';
@@ -32,18 +34,20 @@ export async function POST(request: Request) {
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
     const quizAmount = quizPriceById(paperId);
-    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && paperId !== JEE_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     if (paperId === GRADE10_PACKAGE.id && !grade10PackageOnSale()) return jsonError('This package ended on 31 March 2027 and is no longer on sale.', 410);
     if (isGrade10PackageTest(paperId) && await hasGrade10Package(user)) return Response.json({alreadyPaid:true,paperId});
     if (paperId === GRADE12_PACKAGE.id && !grade12PackageOnSale()) return jsonError('This package ended on 31 March 2027 and is no longer on sale.', 410);
     if (isGrade12PackageTest(paperId) && await hasGrade12Package(user)) return Response.json({alreadyPaid:true,paperId});
+    if (paperId === JEE_PACKAGE.id && !jeePackageOnSale()) return jsonError('This package ended on 31 May 2027 and is no longer on sale.', 410);
+    if (isJeePackageTest(paperId) && await hasJeePackage(user)) return Response.json({alreadyPaid:true,paperId});
 
     const recovered = await recoverPurchase(user.userId, paperId, config);
     if (recovered.approved) return Response.json({ alreadyPaid: true, paperId });
 
     if(getBasicsProduct(paperId)){if(await hasBasicsPackage(user,paperId==='maths-basics-5-8'?'base':'extension'))return Response.json({alreadyPaid:true,paperId});if(!await canBuyBasics(user,paperId))return jsonError('Complete the free first level in this folder before unlocking the package. Refresh this page to see your current price.',403);}
-    const AMOUNT_PAISE = paperId === GRADE10_PACKAGE.id ? GRADE10_PACKAGE.amount : paperId === GRADE12_PACKAGE.id ? GRADE12_PACKAGE.amount : getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:quizAmount ? quizAmount : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : getG12PracticeProduct(paperId) ? g12PracticePricePaise(paperId) : 3000;
+    const AMOUNT_PAISE = paperId === GRADE10_PACKAGE.id ? GRADE10_PACKAGE.amount : paperId === GRADE12_PACKAGE.id ? GRADE12_PACKAGE.amount : paperId === JEE_PACKAGE.id ? JEE_PACKAGE.amount : getBasicsProduct(paperId)?getBasicsProduct(paperId)!.amount:quizAmount ? quizAmount : getIntegralsProduct(paperId) ? integralsPricePaise(paperId) : getG12PracticeProduct(paperId) ? g12PracticePricePaise(paperId) : 3000;
     const database = getDatabase();
     const pendingOrder = await database.prepare(
       `SELECT transaction_id

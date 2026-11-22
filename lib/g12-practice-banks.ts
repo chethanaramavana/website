@@ -25,6 +25,7 @@ import g11ch11Papers from './g11-practice/ch11-papers.json';
 import g11ch12Papers from './g11-practice/ch12-papers.json';
 import g11ch13Papers from './g11-practice/ch13-papers.json';
 import g11ch14Papers from './g11-practice/ch14-papers.json';
+import jeePaper3 from './jee-papers/chapter-papers-3.json';
 
 /** Paid paper banks for the Grade 12 practice sets, keyed by product id. Import only from server code that shows a paper. */
 export const g12PracticeBanks: Record<string, IntegralQuestion[]> = {
@@ -54,4 +55,6 @@ export const g12PracticeBanks: Record<string, IntegralQuestion[]> = {
   ...(g11ch12Papers as unknown as Record<string, IntegralQuestion[]>),
   ...(g11ch13Papers as unknown as Record<string, IntegralQuestion[]>),
   ...(g11ch14Papers as unknown as Record<string, IntegralQuestion[]>),
+  // JEE Main and JEE Advanced Paper 3 for every chapter (added with the JEE package).
+  ...(jeePaper3 as unknown as Record<string, IntegralQuestion[]>),
 };

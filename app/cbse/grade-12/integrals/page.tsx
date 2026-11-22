@@ -25,6 +25,7 @@ export default async function IntegralsLibrary() {
           <span aria-hidden="true">→</span>
         </a>
         <a href="/cbse/grade-12/board-package"><span><strong>Board Exam Package · ₹1,500</strong><small>All CBSE board papers and MCQs, 13 chapters · JEE not included</small></span><span aria-hidden="true">→</span></a>
+        <a href="/jee/package"><span><strong>JEE Package · ₹2,500</strong><small>Grade 11 and 12 JEE papers by chapter · 12 entrance papers</small></span><span aria-hidden="true">→</span></a>
         <a href="#paid-integrals">
           <span><strong>Browse practice papers</strong><small>CBSE, JEE Main and Advanced</small></span>
           <span aria-hidden="true">↓</span>

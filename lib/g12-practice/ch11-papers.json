@@ -1476,14 +1476,14 @@
    "negative": 1
   },
   {
-   "q": "The plane through $(0,0,0)$, $(1,2,3)$ and $(2,3,4)$ is",
-   "a": "(C) $x-2y+z=0$",
-   "s": "Normal $(1,2,3)\\times(2,3,4)=(-1,2,-1)$.",
+   "q": "The angle between the planes $x+y=1$ and $y+z=1$ is",
+   "a": "(C) $\\frac{\\pi}{3}$",
+   "s": "$\\cos\\theta=\\frac{1}{\\sqrt2\\cdot\\sqrt2}=\\frac12$.",
    "opts": [
-    "$x+2y+z=0$",
-    "$x-2y+z=1$",
-    "$x-2y+z=0$",
-    "$2x-y+z=0$"
+    "$\\frac{\\pi}{4}$",
+    "$\\frac{\\pi}{6}$",
+    "$\\frac{\\pi}{3}$",
+    "$\\frac{\\pi}{2}$"
    ],
    "marks": 4,
    "alt": null,

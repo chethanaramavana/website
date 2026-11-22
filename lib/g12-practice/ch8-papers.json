@@ -1387,14 +1387,14 @@
    "negative": 1
   },
   {
-   "q": "The area enclosed by $|x|+|y|=1$ is",
-   "a": "(D) $2$",
-   "s": "A square with diagonals of length $2$.",
+   "q": "The area bounded by the parabola $y^2=4x$ and its latus rectum is",
+   "a": "(D) $\\frac{8}{3}$",
+   "s": "The latus rectum is $x=1$. The area is $2\\int_0^1 2\\sqrt x\\,dx$.",
    "opts": [
-    "$\\sqrt2$",
-    "$1$",
-    "$4$",
-    "$2$"
+    "$\\frac{16}{3}$",
+    "$2$",
+    "$\\frac{4}{3}$",
+    "$\\frac{8}{3}$"
    ],
    "marks": 4,
    "alt": null,
@@ -1709,14 +1709,14 @@
    "negative": 1
   },
   {
-   "q": "The area of the region bounded by $y=x^3$ and $y=4x$ is",
-   "a": "(B) $8$",
-   "s": "They meet at $0,\\pm2$: $2\\int_0^2(4x-x^3)\\,dx$.",
+   "q": "The area enclosed by $y=\\sin x$ and the $x$-axis for $0\\le x\\le2\\pi$ is",
+   "a": "(C) $4$",
+   "s": "Each half-wave has area $2$.",
    "opts": [
     "$2$",
-    "$8$",
+    "$0$",
     "$4$",
-    "$16$"
+    "$2 \\pi$"
    ],
    "marks": 4,
    "alt": null,
@@ -1979,9 +1979,9 @@
    "negative": 1
   },
   {
-   "q": "Find $3$ times the area bounded by $y=x^2$ and $y=8-x^2$.",
-   "a": "$64$",
-   "s": "$\\int_{-2}^2(8-2x^2)\\,dx=\\frac{64}3$.",
+   "q": "Find $3$ times the area bounded by $y=x^2$ and the line $y=4$.",
+   "a": "$32$",
+   "s": "The area is $\\int_{-2}^{2}(4-x^2)\\,dx=\\frac{32}3$.",
    "opts": null,
    "marks": 4,
    "alt": null,

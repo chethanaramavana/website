@@ -33,6 +33,7 @@ export default async function G12PracticeLibrary({ params }: { params: Promise<{
         <a className="integrals-notes-link" href={`/notes/${c.notes}`}><span><strong>Read the free chapter notes</strong><small>Formula sheet · Board and JEE sessions · Solved examples</small></span><span aria-hidden="true">→</span></a>
         <a href={quizPath(n, 12)}><span><strong>{quizPrice(n, 12) === 0 ? 'Try free MCQs' : `30 MCQ practice · ₹${quizPrice(n, 12) / 100}`}</strong><small>30 questions with solutions</small></span><span aria-hidden="true">→</span></a>
         <a href="/cbse/grade-12/board-package"><span><strong>Board Exam Package · ₹1,500</strong><small>All CBSE board papers and MCQs, 13 chapters · JEE not included</small></span><span aria-hidden="true">→</span></a>
+        <a href="/jee/package"><span><strong>JEE Package · ₹2,500</strong><small>Grade 11 and 12 JEE papers by chapter · 12 entrance papers</small></span><span aria-hidden="true">→</span></a>
         <a href="#paid-practice"><span><strong>Browse practice papers</strong><small>CBSE, JEE Main and Advanced</small></span><span aria-hidden="true">↓</span></a>
       </nav>
     </header>

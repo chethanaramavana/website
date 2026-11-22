@@ -316,7 +316,7 @@
   "prompt": "The symmetric part of $\\begin{bmatrix}1&5\\\\3&2\\end{bmatrix}$ is",
   "options": [
    "$\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$",
-   "$\\begin{bmatrix}1&3\\\\5&2\\end{bmatrix}$r",
+   "$\\begin{bmatrix}1&3\\\\5&2\\end{bmatrix}$",
    "$\\begin{bmatrix}1&8\\\\8&2\\end{bmatrix}$",
    "$\\begin{bmatrix}1&4\\\\4&2\\end{bmatrix}$"
   ],
@@ -327,7 +327,7 @@
  {
   "prompt": "The skew-symmetric part of $\\begin{bmatrix}4&7\\\\1&3\\end{bmatrix}$ is",
   "options": [
-   "$\\begin{bmatrix}0&6\\\\-6&0\\end{bmatrix}$r",
+   "$\\begin{bmatrix}0&6\\\\-6&0\\end{bmatrix}$",
    "$\\begin{bmatrix}0&3\\\\-3&0\\end{bmatrix}$",
    "$\\begin{bmatrix}0&-3\\\\3&0\\end{bmatrix}$",
    "$\\begin{bmatrix}4&4\\\\4&3\\end{bmatrix}$"
@@ -593,7 +593,7 @@
   "assertion": true
  },
  {
-  "prompt": "Assertion (A): Every square matrix is the sum of a symmetric matrix and a skew-symmetric matrix.r\nReason (R): $A=\\frac12(A+A')+\\frac12(A-A')$.",
+  "prompt": "Assertion (A): Every square matrix is the sum of a symmetric matrix and a skew-symmetric matrix.\nReason (R): $A=\\frac12(A+A')+\\frac12(A-A')$.",
   "options": [
    "Both A and R are true, and R is the correct explanation of A.",
    "Both A and R are true, but R is not the correct explanation of A.",

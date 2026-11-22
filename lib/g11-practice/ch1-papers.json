@@ -76,7 +76,7 @@
    "negative": 1
   },
   {
-   "q": "$(A\\cup B)r'\\cup(A'\\cap B)$ equals",
+   "q": "$(A\\cup B)'\\cup(A'\\cap B)$ equals",
    "a": "(C) $A'$",
    "s": "$(A'\\cap B')\\cup(A'\\cap B)=A'\\cap(B'\\cup B)$.",
    "opts": [
@@ -93,12 +93,12 @@
   {
    "q": "$A-(A-B)$ equals",
    "a": "(A) $A\\cap B$",
-   "s": "$A\\cap(A\\cap B')r'=A\\cap(A'\\cup B)$.",
+   "s": "$A\\cap(A\\cap B')'=A\\cap(A'\\cup B)$.",
    "opts": [
     "$A\\cap B$",
     "$A-B$",
     "$B$",
-    "$A\\cup B$r"
+    "$A\\cup B$"
    ],
    "marks": 4,
    "alt": null,
@@ -403,7 +403,7 @@
    "s": "$A\\cap(B'\\cup B)$.",
    "opts": [
     "$B$",
-    "$U$r",
+    "$U$",
     "$A$",
     "$B'$"
    ],
@@ -548,13 +548,13 @@
    "negative": 1
   },
   {
-   "q": "Which statement is true for all sets?r",
+   "q": "Which statement is true for all sets?",
    "a": "(D) $A-B=A\\cap B'$",
    "s": "Definition of difference.",
    "opts": [
     "$A\\cup(B\\cap C)=(A\\cup B)\\cap C$",
     "$(A\\cup B)'=A'\\cup B'$",
-    "$A-B=B-A$r",
+    "$A-B=B-A$",
     "$A-B=A\\cap B'$"
    ],
    "marks": 4,
@@ -910,7 +910,7 @@
    "negative": 1
   },
   {
-   "q": "Match each law with its equal set.r\nList-I: (P) $(A\\cup B)'$; (Q) $(A\\cap B)'$; (R) $A\\cup(A\\cap B)$; (S) $A\\cap(B\\cup C)$\nList-II: (1) $A'\\cap B'$; (2) $A'\\cup B'$; (3) $A$; (4) $(A\\cap B)\\cup(A\\cap C)$; (5) $A\\cap B$",
+   "q": "Match each law with its equal set.\nList-I: (P) $(A\\cup B)'$; (Q) $(A\\cap B)'$; (R) $A\\cup(A\\cap B)$; (S) $A\\cap(B\\cup C)$\nList-II: (1) $A'\\cap B'$; (2) $A'\\cup B'$; (3) $A$; (4) $(A\\cap B)\\cup(A\\cap C)$; (5) $A\\cap B$",
    "a": "(A) $P \\to 1$, $Q \\to 2$, $R \\to 3$, $S \\to 4$",
    "s": "De Morgan, absorption, distributive.",
    "opts": [

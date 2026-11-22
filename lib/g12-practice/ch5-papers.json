@@ -1281,7 +1281,7 @@
   {
    "q": "$y=\\sin^{-1}x$. Show that $(1-x^2)y''-xy'=0$.",
    "a": "Shown.",
-   "s": "$y'=\\frac1{\\sqrt{1-x^2}}$, so $\\sqrt{1-x^2}\\,y'=1$ [1]. Differentiate: $\\sqrt{1-x^2}\\,y'r'-\\frac{x}{\\sqrt{1-x^2}}y'=0$ [1]. Multiply by $\\sqrt{1-x^2}$ [1].",
+   "s": "$y'=\\frac1{\\sqrt{1-x^2}}$, so $\\sqrt{1-x^2}\\,y'=1$ [1]. Differentiate: $\\sqrt{1-x^2}\\,y''-\\frac{x}{\\sqrt{1-x^2}}y'=0$ [1]. Multiply by $\\sqrt{1-x^2}$ [1].",
    "opts": null,
    "marks": 3,
    "alt": null,
@@ -1291,7 +1291,7 @@
   {
    "q": "$(x-a)^2+(y-b)^2=c^2$ with $c>0$. Show that $\\dfrac{\\left(1+(y')^2\\right)^{\\frac32}}{y''}$ is a constant independent of $a$ and $b$.",
    "a": "The value is $-c$.",
-   "s": "$(x-a)+(y-b)y'=0$, so $y'=-\\frac{x-a}{y-b}$ [1]. Differentiate: $1+(y')^2+(y-b)y''=0$, so $y'r'=-\\frac{1+(y')^2}{y-b}$ [2]. $1+(y')^2=\\frac{c^2}{(y-b)^2}$ [1]. The ratio is $\\frac{c^3}{|y-b|^3}\\cdot\\frac{-(y-b)^3}{c^2}=-c$ for $y>b$, and $c$ for $y<b$; it does not depend on $a$ or $b$ [1].",
+   "s": "$(x-a)+(y-b)y'=0$, so $y'=-\\frac{x-a}{y-b}$ [1]. Differentiate: $1+(y')^2+(y-b)y''=0$, so $y''=-\\frac{1+(y')^2}{y-b}$ [2]. $1+(y')^2=\\frac{c^2}{(y-b)^2}$ [1]. The ratio is $\\frac{c^3}{|y-b|^3}\\cdot\\frac{-(y-b)^3}{c^2}=-c$ for $y>b$, and $c$ for $y<b$; it does not depend on $a$ or $b$ [1].",
    "opts": null,
    "marks": 5,
    "alt": {
@@ -1308,7 +1308,7 @@
   {
    "q": "Case study. A garden path follows the circle $x^2+y^2-2x-4y=0$, which passes through the origin. (i) Find $\\dfrac{dy}{dx}$. [1] (ii) Find the slope of the path at the origin. [1] (iii) Find $\\dfrac{d^2y}{dx^2}$ at the origin. [2] \\textbf{OR} (iii) Find the points of the path at which $\\dfrac{dy}{dx}=0$. [2]",
    "a": "(i) $\\frac{1-x}{y-2}$; (ii) $-\\frac12$; (iii) $\\frac58$; OR $(1,2\\pm\\sqrt5)$.",
-   "s": "(i) $2x+2yy'-2-4y'=0$, so $y'=\\frac{1-x}{y-2}$ [1]. (ii) At $(0,0)$: $\\frac1{-2}$ [1]. (iii) $y'r'=\\frac{-(y-2)-(1-x)y'}{(y-2)^2}$ [1]; at the origin $\\frac{2+\\frac12}{4}=\\frac58$ [1]. OR $x=1$ [1]; then $y^2-4y-1=0$, so $y=2\\pm\\sqrt5$ [1].",
+   "s": "(i) $2x+2yy'-2-4y'=0$, so $y'=\\frac{1-x}{y-2}$ [1]. (ii) At $(0,0)$: $\\frac1{-2}$ [1]. (iii) $y''=\\frac{-(y-2)-(1-x)y'}{(y-2)^2}$ [1]; at the origin $\\frac{2+\\frac12}{4}=\\frac58$ [1]. OR $x=1$ [1]; then $y^2-4y-1=0$, so $y=2\\pm\\sqrt5$ [1].",
    "opts": null,
    "marks": 4,
    "alt": null,
@@ -1415,7 +1415,7 @@
     "$\\frac yx$",
     "$\\frac xy$",
     "$\\frac{m}{n}$",
-    "$\\frac{my}{nx}$r"
+    "$\\frac{my}{nx}$"
    ],
    "marks": 4,
    "alt": null,
@@ -1473,7 +1473,7 @@
    "s": "$f=\\frac{\\log\\log x}{\\log x}$; at $e$, $f'=\\frac{\\frac1e-0}{1}$.",
    "opts": [
     "$1$",
-    "$0$r",
+    "$0$",
     "$e$",
     "$\\frac1e$"
    ],
@@ -1533,7 +1533,7 @@
    "s": "$y=x^y$, so $\\log y=y\\log x$; differentiate and solve for $y'$.",
    "opts": [
     "$\\frac{y^2}{x(1+y\\log x)}$",
-    "$\\frac{y^2}{1-y\\log x}$r",
+    "$\\frac{y^2}{1-y\\log x}$",
     "$\\frac{y}{x(1-y\\log x)}$",
     "$\\frac{y^2}{x(1-y\\log x)}$"
    ],
@@ -1609,7 +1609,7 @@
    "opts": [
     "$\\frac x{1+x}$",
     "$\\frac{1+x}{x}$",
-    "$\\frac{x}{1-x}$r",
+    "$\\frac{x}{1-x}$",
     "$\\frac{1-x}{x}$"
    ],
    "marks": 4,
@@ -1760,7 +1760,7 @@
    "negative": 1
   },
   {
-   "q": "$f(x)=x^n$. Then $f(1)+\\dfrac{f'(1)}{1!}+\\dfrac{f'r'(1)}{2!}+\\cdots+\\dfrac{f^{(n)}(1)}{n!}$ equals",
+   "q": "$f(x)=x^n$. Then $f(1)+\\dfrac{f'(1)}{1!}+\\dfrac{f''(1)}{2!}+\\cdots+\\dfrac{f^{(n)}(1)}{n!}$ equals",
    "a": "(C) $2^n$",
    "s": "$\\frac{f^{(k)}(1)}{k!}=\\binom nk$; the sum is $\\sum_k\\binom nk$.",
    "opts": [
@@ -1775,7 +1775,7 @@
    "negative": 1
   },
   {
-   "q": "$y=e^{\\tan x}$. Then $\\cos^2x\\,y'r'-(1+\\sin2x)y'$ equals",
+   "q": "$y=e^{\\tan x}$. Then $\\cos^2x\\,y''-(1+\\sin2x)y'$ equals",
    "a": "(B) $0$",
    "s": "$y'=\\sec^2x\\,y$ and $y''=(2\\sec^2x\\tan x+\\sec^4x)y$.",
    "opts": [
@@ -1792,7 +1792,7 @@
   {
    "q": "$y^2=P(x)$, a polynomial of degree $3$. Then $2\\dfrac{d}{dx}\\left(y^3\\dfrac{d^2y}{dx^2}\\right)$ equals",
    "a": "(C) $P(x)P'''(x)$",
-   "s": "$2yy'=P'$ and $2(y')^2+2yy''=P''$, so $2y^3y''=PP'r'-\\frac{(P')^2}{2}$; differentiate.",
+   "s": "$2yy'=P'$ and $2(y')^2+2yy''=P''$, so $2y^3y''=PP''-\\frac{(P')^2}{2}$; differentiate.",
    "opts": [
     "$P'(x)P''(x)$",
     "$P''(x)P'''(x)$",
@@ -1825,7 +1825,7 @@
    "s": "$u=\\frac{2x-1}{x^2+1}$ has $u(0)=-1$ and $u'(0)=2$; $f'(-1)=\\sin1$.",
    "opts": [
     "$-2\\sin1$",
-    "$2\\cos1$r",
+    "$2\\cos1$",
     "$\\sin1$",
     "$2\\sin1$"
    ],
@@ -2041,7 +2041,7 @@
    "a": "(C) $3+2x$",
    "s": "$f(0)=0$ and $\\frac{f(x+h)-f(x)}{h}=\\frac{f(h)}{h}+2x\\to f'(0)+2x$.",
    "opts": [
-    "$2x$r",
+    "$2x$",
     "$3x+x^2$",
     "$3+2x$",
     "$3$"
@@ -2073,7 +2073,7 @@
    "opts": [
     "$0$",
     "$\\pi$",
-    "$-\\pi$r",
+    "$-\\pi$",
     "$1$"
    ],
    "marks": 3,
@@ -2321,11 +2321,11 @@
   {
    "q": "$y=e^{-x}\\cos x$. Which statements are true?",
    "a": "(B), (C), (D)",
-   "s": "$y'=-e^{-x}(\\cos x+\\sin x)$ and $y'r'=2e^{-x}\\sin x$, so $y''(0)=0$.",
+   "s": "$y'=-e^{-x}(\\cos x+\\sin x)$ and $y''=2e^{-x}\\sin x$, so $y''(0)=0$.",
    "opts": [
     "$y''(0)=2$",
     "$y''+2y'+2y=0$",
-    "$y'r'=2e^{-x}\\sin x$",
+    "$y''=2e^{-x}\\sin x$",
     "$y'(0)=-1$"
    ],
    "marks": 4,

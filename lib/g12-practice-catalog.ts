@@ -33,8 +33,8 @@ export function g12PracticeProducts(chapter: number): G12PracticeProduct[] {
   return [
     { ...base, id: `g12-ch${chapter}-mcq-20-01`, title: `${c.title} 20-Mark MCQ Test`, standard: 'CBSE MCQ', detail: '20 questions · 20 marks · Suggested 40 minutes', total: 20 },
     ...[1, 2, 3].map((k) => ({ ...base, id: `g12-ch${chapter}-board-0${k}`, title: `CBSE 40-Mark Paper ${k}`, standard: 'CBSE', detail: '24 questions · 40 marks · 90 minutes', total: 24 })),
-    ...[1, 2].map((k) => ({ ...base, id: `g12-ch${chapter}-main-0${k}`, title: `JEE Main Paper ${k}`, standard: 'JEE Main', detail: '25 questions · 100 marks · Suggested 75 minutes', total: 25 })),
-    ...[1, 2].map((k) => ({ ...base, id: `g12-ch${chapter}-advanced-0${k}`, title: `JEE Advanced Paper ${k}`, standard: 'JEE Advanced', detail: '16 questions · 60 marks · Suggested 90 minutes', total: 16 })),
+    ...[1, 2, 3].map((k) => ({ ...base, id: `g12-ch${chapter}-main-0${k}`, title: `JEE Main Paper ${k}`, standard: 'JEE Main', detail: '25 questions · 100 marks · Suggested 75 minutes', total: 25 })),
+    ...[1, 2, 3].map((k) => ({ ...base, id: `g12-ch${chapter}-advanced-0${k}`, title: `JEE Advanced Paper ${k}`, standard: 'JEE Advanced', detail: '16 questions · 60 marks · Suggested 90 minutes', total: 16 })),
   ];
 }
 
@@ -70,8 +70,8 @@ export function g11PracticeProducts(chapter: number): G12PracticeProduct[] {
   if (!c) return [];
   const base = { grade: 11 as const, chapter, chapterTitle: c.title };
   return [
-    ...[1, 2].map((k) => ({ ...base, id: `g11-ch${chapter}-main-0${k}`, title: `JEE Main Paper ${k}`, standard: 'JEE Main', detail: '25 questions · 100 marks · Suggested 75 minutes', total: 25 })),
-    ...[1, 2].map((k) => ({ ...base, id: `g11-ch${chapter}-advanced-0${k}`, title: `JEE Advanced Paper ${k}`, standard: 'JEE Advanced', detail: '16 questions · 60 marks · Suggested 90 minutes', total: 16 })),
+    ...[1, 2, 3].map((k) => ({ ...base, id: `g11-ch${chapter}-main-0${k}`, title: `JEE Main Paper ${k}`, standard: 'JEE Main', detail: '25 questions · 100 marks · Suggested 75 minutes', total: 25 })),
+    ...[1, 2, 3].map((k) => ({ ...base, id: `g11-ch${chapter}-advanced-0${k}`, title: `JEE Advanced Paper ${k}`, standard: 'JEE Advanced', detail: '16 questions · 60 marks · Suggested 90 minutes', total: 16 })),
   ];
 }
 

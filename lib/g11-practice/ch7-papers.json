@@ -286,14 +286,14 @@
    "negative": 1
   },
   {
-   "q": "The remainder when $2^{30}$ is divided by $7$ is",
-   "a": "(D) $1$",
-   "s": "$2^{30}=(8)^{10}=(7+1)^{10}$.",
+   "q": "${}^{10}C_1+{}^{10}C_3+{}^{10}C_5+{}^{10}C_7+{}^{10}C_9$ equals",
+   "a": "(C) $512$",
+   "s": "The odd-index coefficients add to half of $2^{10}$.",
    "opts": [
-    "$4$",
-    "$6$",
-    "$2$",
-    "$1$"
+    "$256$",
+    "$1024$",
+    "$512$",
+    "$511$"
    ],
    "marks": 4,
    "alt": null,
@@ -673,9 +673,9 @@
    "negative": 1
   },
   {
-   "q": "Find the remainder when $2^{2023}$ is divided by $7$.",
-   "a": "$2$",
-   "s": "$2^3\\equiv1$; $2023=3\\cdot674+1$.",
+   "q": "Find the sum of the coefficients in the expansion of $(3x-1)^5$.",
+   "a": "$32$",
+   "s": "Put $x=1$: $2^5$.",
    "opts": null,
    "marks": 4,
    "alt": null,
@@ -825,9 +825,9 @@
    "negative": 1
   },
   {
-   "q": "Find the remainder when $7^{103}$ is divided by $25$.",
-   "a": "$18$",
-   "s": "$7^4=2401\\equiv1$; $7^{103}=7^{100}\\cdot343\\equiv343\\equiv18$.",
+   "q": "Find $\\dfrac{1}{256}\\displaystyle\\sum_{r=0}^{10}r^2\\,{}^{10}C_r$.",
+   "a": "$110$",
+   "s": "$\\sum r^2\\,{}^nC_r=n(n+1)2^{n-2}=10\\cdot11\\cdot2^8$.",
    "opts": null,
    "marks": 4,
    "alt": null,
@@ -1057,9 +1057,9 @@
    "negative": 0
   },
   {
-   "q": "Find the remainder when $3^{37}$ is divided by $80$.",
-   "a": "$3$",
-   "s": "$3^4=81\\equiv1$; $3^{37}=3^{36}\\cdot3$.",
+   "q": "Find the number of terms with an integer power of $x$ in the expansion of $\\left(x^{\\frac12}+x^{-\\frac13}\\right)^{10}$.",
+   "a": "$2$",
+   "s": "$T_{r+1}$ has the power $\\frac{10-r}{2}-\\frac r3=\\frac{30-5r}{6}$, an integer for $r=0,6$.",
    "opts": null,
    "marks": 4,
    "alt": null,

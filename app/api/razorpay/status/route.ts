@@ -1,5 +1,6 @@
 import { GRADE10_PACKAGE } from '@/lib/grade10-package';
 import { GRADE12_PACKAGE } from '@/lib/grade12-package';
+import { JEE_PACKAGE } from '@/lib/jee-package';
 import { recoverPurchase } from '@/lib/payment-recovery';
 import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct } from '@/lib/integrals-products';
@@ -24,7 +25,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     const quizAmount = quizPriceById(paperId);
-    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && paperId !== JEE_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     return Response.json({ ...await recoverPurchase(user.userId, paperId, config, true), paperId });
   } catch (error) {

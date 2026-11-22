@@ -2430,9 +2430,9 @@
    "negative": 0
   },
   {
-   "q": "$f(x)=\\dfrac{9^x}{9^x+3}$. Find $\\sum_{k=1}^{100}f\\left(\\frac{k}{101}\\right)$.",
-   "a": "$50$",
-   "s": "$f(x)+f(1-x)=1$, giving $50$ pairs.",
+   "q": "Find the number of onto functions from $\\{1,2,3,4\\}$ to $\\{1,2,3\\}$.",
+   "a": "$36$",
+   "s": "$3^4-3\\cdot2^4+3\\cdot1^4$.",
    "opts": null,
    "marks": 4,
    "alt": null,

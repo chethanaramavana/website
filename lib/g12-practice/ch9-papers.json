@@ -271,7 +271,7 @@
    "negative": 0
   },
   {
-   "q": "Assertion: $y=\\sin x$ is a solution of $y'r'+y=0$. Reason: $(\\sin x)'r'=-\\sin x$.",
+   "q": "Assertion: $y=\\sin x$ is a solution of $y''+y=0$. Reason: $(\\sin x)''=-\\sin x$.",
    "a": "(A)",
    "s": "Substitute.",
    "opts": [
@@ -286,7 +286,7 @@
    "negative": 0
   },
   {
-   "q": "Assertion: The degree of $y'r'=\\sqrt{1+y'}$ is $1$. Reason: The degree is found after the equation is made a polynomial in the derivatives.",
+   "q": "Assertion: The degree of $y''=\\sqrt{1+y'}$ is $1$. Reason: The degree is found after the equation is made a polynomial in the derivatives.",
    "a": "(D)",
    "s": "Square: $(y'')^2=1+y'$, so the degree is $2$.",
    "opts": [
@@ -333,12 +333,12 @@
    "negative": 0
   },
   {
-   "q": "The degree of $y'r'+\\cos(y')=0$ is",
+   "q": "The degree of $y''+\\cos(y')=0$ is",
    "a": "(D) not defined",
    "s": "$\\cos(y')$ is not a polynomial term. [1]",
    "opts": [
     "$2$",
-    "$0$r",
+    "$0$",
     "$1$",
     "not defined"
    ],
@@ -676,7 +676,7 @@
     "$3$",
     "$\\frac32$",
     "$2$",
-    "$1$r"
+    "$1$"
    ],
    "marks": 1,
    "alt": null,
@@ -1178,7 +1178,7 @@
    "negative": 0
   },
   {
-   "q": "Assertion: $y=e^{2x}$ is a solution of $y'r'-4y=0$. Reason: $\\left(e^{2x}\\right)''=4e^{2x}$.",
+   "q": "Assertion: $y=e^{2x}$ is a solution of $y''-4y=0$. Reason: $\\left(e^{2x}\\right)''=4e^{2x}$.",
    "a": "(A)",
    "s": "Substitute. [1]",
    "opts": [
@@ -1607,7 +1607,7 @@
    "negative": 1
   },
   {
-   "q": "Find the sum of the order and the degree of $(y''r')^{\\frac23}=y'$.",
+   "q": "Find the sum of the order and the degree of $(y''')^{\\frac23}=y'$.",
    "a": "$5$",
    "s": "Cube: $(y''')^2=(y')^3$; order $3$, degree $2$.",
    "opts": null,
@@ -2003,7 +2003,7 @@
   {
    "q": "$f:(0,\\infty)\\to\\mathbb{R}$ is differentiable, $f'(x)=2-\\dfrac{f(x)}x$ and $f(1)\\ne1$. Then $\\lim_{x\\to0^+}f'\\left(\\dfrac1x\\right)$ equals",
    "a": "(B) $1$",
-   "s": "$(xf)r'=2x$, so $f=x+\\frac Cx$ with $C\\ne0$; $f'\\left(\\frac1x\\right)=1-Cx^2$.",
+   "s": "$(xf)'=2x$, so $f=x+\\frac Cx$ with $C\\ne0$; $f'\\left(\\frac1x\\right)=1-Cx^2$.",
    "opts": [
     "does not exist",
     "$1$",
@@ -2113,7 +2113,7 @@
     "$y=x\\log x$",
     "$y(e)=e$",
     "$y$ has its least value at $x=\\frac1e$",
-    "$y(e^2)=e^2$r"
+    "$y(e^2)=e^2$"
    ],
    "marks": 4,
    "alt": null,
@@ -2191,7 +2191,7 @@
    "negative": 1
   },
   {
-   "q": "Match each equation with its order and degree.\nList-I: (P) $y''+(y')^3=0$; (Q) $(y''')^2+y=0$; (R) $y'=\\sqrt{1+x}$; (S) $y'r'=\\sqrt{1+(y')^2}$\nList-II: (1) order $1$, degree $1$; (2) order $2$, degree $2$; (3) order $2$, degree $1$; (4) order $1$, degree $2$; (5) order $3$, degree $2$",
+   "q": "Match each equation with its order and degree.\nList-I: (P) $y''+(y')^3=0$; (Q) $(y''')^2+y=0$; (R) $y'=\\sqrt{1+x}$; (S) $y''=\\sqrt{1+(y')^2}$\nList-II: (1) order $1$, degree $1$; (2) order $2$, degree $2$; (3) order $2$, degree $1$; (4) order $1$, degree $2$; (5) order $3$, degree $2$",
    "a": "(A) $P \\to 3$, $Q \\to 5$, $R \\to 1$, $S \\to 2$",
    "s": "The last one squared is $(y'')^2=1+(y')^2$.",
    "opts": [
@@ -2242,7 +2242,7 @@
    "a": "(D) $\\frac2{\\sqrt e}$",
    "s": "Put $z=\\frac1y$: $z'-\\frac zx=-1$, so $z=x(1-\\log x)$.",
    "opts": [
-    "$\\frac{\\sqrt e}2$r",
+    "$\\frac{\\sqrt e}2$",
     "$2\\sqrt e$",
     "$\\frac1{\\sqrt e}$",
     "$\\frac2{\\sqrt e}$"
@@ -2305,7 +2305,7 @@
     "The general solution is $y=x\\sin x+Cx$",
     "An integrating factor is $\\frac1x$",
     "The solution through $(\\pi,\\pi)$ has $C=1$",
-    "The general solution is $y=x\\cos x+Cx$r"
+    "The general solution is $y=x\\cos x+Cx$"
    ],
    "marks": 4,
    "alt": null,

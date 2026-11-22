@@ -30,6 +30,7 @@ export default async function G11PracticeLibrary({ params }: { params: Promise<{
       <h1>{c.title}</h1>
       <nav className="integrals-resources" aria-label={`${c.title} resources`}>
         <a className="integrals-notes-link" href={`/notes/${c.notes}`}><span><strong>Read the free chapter notes</strong><small>Formula sheet · Board and JEE sessions · Solved examples</small></span><span aria-hidden="true">→</span></a>
+        <a href="/jee/package"><span><strong>JEE Package · ₹2,500</strong><small>Grade 11 and 12 JEE papers by chapter · 12 entrance papers</small></span><span aria-hidden="true">→</span></a>
         <a href="#paid-practice"><span><strong>Browse practice papers</strong><small>JEE Main and JEE Advanced</small></span><span aria-hidden="true">↓</span></a>
       </nav>
     </header>

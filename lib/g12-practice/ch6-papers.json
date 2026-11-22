@@ -1329,7 +1329,7 @@
   {
    "q": "Case study. A farmer has $200$ m of fencing to enclose a rectangular field beside a straight river; no fence is needed along the river. Let the two sides at right angles to the river be $x$ m each. (i) Write the area $A(x)$. [1] (ii) Find $A'(x)$. [1] (iii) Find the greatest area. [2] \\textbf{OR} (iii) Show that $A$ is increasing on $(0,50)$. [2]",
    "a": "(i) $x(200-2x)$; (ii) $200-4x$; (iii) $5000$ $\\text{m}^2$; OR shown.",
-   "s": "(i) The third side is $200-2x$, so $A=x(200-2x)$ [1]. (ii) $A'=200-4x$ [1]. (iii) $A'=0$ at $x=50$ and $A'r'=-4<0$ [1]; $A(50)=50\\cdot100=5000$ [1]. OR $A'(x)=200-4x>0$ [1] for $0<x<50$ [1].",
+   "s": "(i) The third side is $200-2x$, so $A=x(200-2x)$ [1]. (ii) $A'=200-4x$ [1]. (iii) $A'=0$ at $x=50$ and $A''=-4<0$ [1]; $A(50)=50\\cdot100=5000$ [1]. OR $A'(x)=200-4x>0$ [1] for $0<x<50$ [1].",
    "opts": null,
    "marks": 4,
    "alt": null,

@@ -1468,7 +1468,7 @@
    "opts": [
     "$0.2$",
     "$0.5$",
-    "$0.6$r",
+    "$0.6$",
     "$0.4$"
    ],
    "marks": 4,
@@ -1477,14 +1477,14 @@
    "negative": 1
   },
   {
-   "q": "The probability that a leap year has $53$ Sundays is",
-   "a": "(D) $\\frac27$",
-   "s": "The $2$ extra days must include a Sunday.",
+   "q": "Two cards are drawn without replacement from a pack of $52$. The probability that both are aces is",
+   "a": "(B) $\\frac{1}{221}$",
+   "s": "$\\frac4{52}\\cdot\\frac3{51}$.",
    "opts": [
-    "$\\frac17$",
-    "$\\frac37$",
-    "$\\frac{53}{366}$",
-    "$\\frac27$"
+    "$\\frac{1}{13}$",
+    "$\\frac{1}{221}$",
+    "$\\frac{1}{169}$",
+    "$\\frac{2}{221}$"
    ],
    "marks": 4,
    "alt": null,
@@ -2111,7 +2111,7 @@
    "s": "$P(E|F)=0.3$; $P(E\\cap F)=0.12$.",
    "opts": [
     "$E'$ and $F'$ are independent",
-    "$P(E|F)=0.4$r",
+    "$P(E|F)=0.4$",
     "$P(E\\cap F')=0.18$",
     "$P(E'\\cup F')=0.88$"
    ],
@@ -2343,9 +2343,9 @@
    "negative": 1
   },
   {
-   "q": "Three dice are thrown. Find $216$ times the probability that the sum is $10$.",
-   "a": "$27$",
-   "s": "Count the ordered triples.",
+   "q": "A fair die is thrown $4$ times. Find $1296$ times the probability that a six appears exactly twice.",
+   "a": "$150$",
+   "s": "${}^4C_2\\cdot1^2\\cdot5^2=150$ outcomes out of $6^4$.",
    "opts": null,
    "marks": 4,
    "alt": null,

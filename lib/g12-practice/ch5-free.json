@@ -195,7 +195,7 @@
   "prompt": "$\\dfrac{d}{dx}x^x$ for $x>0$ equals",
   "options": [
    "$x^x\\log x$",
-   "$x^x$r",
+   "$x^x$",
    "$x^x(1+\\log x)$",
    "$x\\cdot x^{x-1}$"
   ],
@@ -413,7 +413,7 @@
    "$\\frac y{1+y}$",
    "$\\frac{1-y}{y}$",
    "$\\frac y{1-y}$",
-   "$y$r"
+   "$y$"
   ],
   "answer": 2,
   "solution": "$y=e^{x+y}$, so $\\log y=x+y$ and $\\frac{y'}{y}=1+y'$.",
