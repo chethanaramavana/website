@@ -373,3 +373,18 @@ button.chapter-resource { cursor:pointer; }
  .time-warning-toast button { display:grid; place-items:center; flex:none; width:24px; height:24px; border:0; background:transparent; color:inherit; font:20px/1 Arial,sans-serif; cursor:pointer; }
 }
 @media print { .exam-status { display:none!important; } }
+
+/* Compact package choices keep the chapter list close to the grade heading. */
+.package-promos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:0 0 24px; }
+.package-promo { --promo-accent:#14594f; display:flex; flex-direction:column; gap:8px; min-width:0; padding:18px 20px; border:1px solid var(--promo-accent); border-left-width:4px; border-radius:10px; background:#e6f5f1; color:#011e47; text-decoration:none; }
+.package-promo:only-child { grid-column:1 / -1; }
+.package-promo:hover { box-shadow:0 3px 12px #011e4714; }
+.package-promo:focus-visible { outline:3px solid var(--promo-accent); outline-offset:4px; }
+.package-promo h2 { font:800 21px/1.25 var(--rmc-interface); margin:0; }
+.package-promo p { font:400 16px/1.45 var(--rmc-interface); margin:0; color:#3f5065; }
+.package-promo .promo-foot { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; margin-top:auto; font:500 14px/1.4 var(--rmc-interface); }
+.package-promo .promo-foot strong { color:var(--promo-accent); font-size:19px; }
+.package-promo .promo-cta { margin-left:auto; font-weight:700; color:var(--promo-accent); text-decoration:underline; text-underline-offset:3px; }
+.package-promo.promo-board { --promo-accent:#5936a7; background:#f1ecff; }
+.package-promo.promo-jee { --promo-accent:#805400; background:#fff4da; }
+@media (max-width:600px) { .package-promos { grid-template-columns:1fr; gap:10px; margin-bottom:18px; } .package-promo { padding:14px 16px; gap:6px; } .package-promo h2 { font-size:19px; } }

@@ -47,3 +47,9 @@
   .integrals-resources a { padding-inline: 9px; }
   .integrals-resources a:not(.integrals-notes-link) { font-size: .9rem; }
 }
+
+/* Package links on chapter pages: violet for the board package, gold for the JEE package. */
+.integrals-resources a[href="/cbse/grade-12/board-package"] { background:linear-gradient(135deg,#f1ecff,#fff 80%); border-color:#5936a7; border-left:5px solid #5936a7; }
+.integrals-resources a[href="/cbse/grade-12/board-package"] strong,.integrals-resources a[href="/cbse/grade-12/board-package"] > span:last-child { color:#5936a7; }
+.integrals-resources a[href="/jee/package"] { background:linear-gradient(135deg,#fff1d2,#fff 80%); border-color:#d9a231; border-left:5px solid #d9a231; }
+.integrals-resources a[href="/jee/package"] strong,.integrals-resources a[href="/jee/package"] > span:last-child { color:#8a5a00; }
