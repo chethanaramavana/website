@@ -13,7 +13,7 @@ import { integralsProducts, integralsPricePaise, integralsPath } from '@/lib/int
 import '@/app/cbse/grade-10/complete-package/package.css';
 
 export const dynamic = 'force-dynamic';
-export const metadata: Metadata = { title: 'CBSE Grade 12 Board Exam Package | Ramavana', description: 'Six full 80-mark sample papers and every CBSE Grade 12 board practice paper, 20-mark MCQ test and chapter MCQ quiz in one ₹1,500 package. JEE papers are not included. Access through 31 March 2027.' };
+export const metadata: Metadata = { title: 'CBSE Grade 12 Board Exam Package | Ramavana', description: 'Six full 80-mark sample papers and every CBSE Grade 12 board practice paper, 20-mark MCQ test and chapter MCQ quiz in one ₹1,500 package. JEE papers are not included. Access through 31 May 2027.' };
 
 const rupees = (paise: number) => `₹${(paise / 100).toLocaleString('en-IN')}`;
 /** NCERT Grade 12 chapters (7 = Integrals). */
@@ -67,10 +67,10 @@ export default async function Grade12BoardPackage() {
             <li><CheckCircle2 aria-hidden="true"/>{boardPapers.length} CBSE 40-mark practice papers</li>
             <li><CheckCircle2 aria-hidden="true"/>{mcqTests.length} twenty-mark MCQ tests, one for each chapter</li>
             <li><CheckCircle2 aria-hidden="true"/>All {chapters.length} chapter MCQ quizzes, {quizCount()} questions each</li>
-            <li><CheckCircle2 aria-hidden="true"/>New board papers and exam tips added until 31 March 2027</li>
+            <li><CheckCircle2 aria-hidden="true"/>New board papers and exam tips added until 31 May 2027</li>
           </ul>
           {buy}
-          <p className="package-small">Access through <strong>31 March 2027</strong> (IST), on the student’s signed-in account. JEE Main and JEE Advanced papers are sold separately.</p>
+          <p className="package-small">Access through <strong>31 May 2027</strong> (IST), on the student’s signed-in account. JEE Main and JEE Advanced papers are sold separately.</p>
         </aside>
       </div></section>
 
@@ -91,7 +91,7 @@ export default async function Grade12BoardPackage() {
           <article><span className="package-icon"><Target aria-hidden="true"/></span><h2>Focus on the board exam</h2><p>Only CBSE board-pattern material. No JEE questions, so every minute of practice goes into the board exam.</p></article>
         </section>
 
-        <section className="package-growth"><span className="package-icon"><CalendarDays aria-hidden="true"/></span><div><h2>A collection that grows until your exam</h2><p>During the package period we will add more board-pattern papers and last-minute exam preparation tips for CBSE Grade 12. Additions published by 31 March 2027 are included at no extra charge. Their number and release dates are not fixed.</p><p>Free notes and free quizzes remain free. Individual purchases remain available if you only need a few chapters. This package covers CBSE Grade 12 board practice only; JEE papers, other grades and live tuition are not included.</p></div></section>
+        <section className="package-growth"><span className="package-icon"><CalendarDays aria-hidden="true"/></span><div><h2>A collection that grows until your exam</h2><p>During the package period we will add more board-pattern papers and last-minute exam preparation tips for CBSE Grade 12. Additions published by 31 May 2027 are included at no extra charge. Their number and release dates are not fixed.</p><p>Free notes and free quizzes remain free. Individual purchases remain available if you only need a few chapters. This package covers CBSE Grade 12 board practice only; JEE papers, other grades and live tuition are not included.</p></div></section>
 
         <section id="included" className="package-included"><h2>{owned ? 'Your package materials' : 'Included now'}</h2>{!owned && <p>Choose a chapter. Paid activities require an active package or their individual access.</p>}
           <h3>Chapter papers</h3>
@@ -106,8 +106,8 @@ export default async function Grade12BoardPackage() {
 
         <section className="package-faq"><h2>Questions</h2>
           <details><summary>Are JEE papers included?</summary><p>No. This package covers CBSE board-pattern practice only. JEE Main and JEE Advanced papers stay available as individual purchases on each chapter page.</p></details>
-          <details><summary>How long can I use the package?</summary><p>Until 11:59 pm IST on 31 March 2027. There is no automatic renewal. Your submitted reports remain in your student account after that date.</p></details>
-          <details><summary>Do I get the papers and tips added later?</summary><p>Yes. Grade 12 board papers and exam tips published by 31 March 2027 open automatically in your package.</p></details>
+          <details><summary>How long can I use the package?</summary><p>Until 11:59 pm IST on 31 May 2027. There is no automatic renewal. Your submitted reports remain in your student account after that date.</p></details>
+          <details><summary>Do I get the papers and tips added later?</summary><p>Yes. Grade 12 board papers and exam tips published by 31 May 2027 open automatically in your package.</p></details>
           <details><summary>I already bought some chapters. What happens to them?</summary><p>Separately purchased access keeps its existing terms. The package adds everything else.</p></details>
           <details><summary>I paid but the page does not show my package.</summary><p>Use “Check completed payment” in the box above before you pay again. It confirms an earlier payment on your account.</p></details>
         </section>

@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 
     if (paperId === GRADE10_PACKAGE.id && !grade10PackageOnSale()) return jsonError('This package ended on 31 March 2027 and is no longer on sale.', 410);
     if (isGrade10PackageTest(paperId) && await hasGrade10Package(user)) return Response.json({alreadyPaid:true,paperId});
-    if (paperId === GRADE12_PACKAGE.id && !grade12PackageOnSale()) return jsonError('This package ended on 31 March 2027 and is no longer on sale.', 410);
+    if (paperId === GRADE12_PACKAGE.id && !grade12PackageOnSale()) return jsonError('This package ended on 31 May 2027 and is no longer on sale.', 410);
     if (isGrade12PackageTest(paperId) && await hasGrade12Package(user)) return Response.json({alreadyPaid:true,paperId});
     if (paperId === JEE_PACKAGE.id && !jeePackageOnSale()) return jsonError('This package ended on 31 May 2027 and is no longer on sale.', 410);
     if (isJeePackageTest(paperId) && await hasJeePackage(user)) return Response.json({alreadyPaid:true,paperId});
