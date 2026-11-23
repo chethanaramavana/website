@@ -27,14 +27,23 @@ export type StoryPictureSpec =
 
 export type DrawItem =
   | { t: 'line'; p: [number, number, number, number]; s?: 'line' | 'accent' | 'gold' | 'guide' | 'red' }
-  | { t: 'poly'; pts: [number, number][]; fill?: 'blue' | 'gold' | 'none'; open?: boolean }
-  | { t: 'circle'; c: [number, number]; r: number; fill?: 'blue' | 'gold' | 'none' }
-  | { t: 'sector'; c: [number, number]; r: number; a1: number; a2: number; fill?: 'blue' | 'gold' }
+  | { t: 'poly'; pts: [number, number][]; fill?: Fill; open?: boolean }
+  | { t: 'circle'; c: [number, number]; r: number; fill?: Fill }
+  | { t: 'sector'; c: [number, number]; r: number; a1: number; a2: number; fill?: Fill }
   | { t: 'arc'; c: [number, number]; r: number; a1: number; a2: number; s?: 'accent' | 'gold' }
-  | { t: 'text'; p: [number, number]; v: string; size?: 's' | 'm' | 'l'; anchor?: 'start' | 'middle' | 'end' }
+  | { t: 'text'; p: [number, number]; v: string; size?: 's' | 'm' | 'l'; anchor?: 'start' | 'middle' | 'end'; color?: Bright }
   | { t: 'dot'; p: [number, number]; gold?: boolean }
   | { t: 'right'; p: [number, number]; d1: [number, number]; d2: [number, number] }
   | { t: 'ellipse'; c: [number, number]; rx: number; ry: number; fill?: 'blue' | 'gold' | 'none'; dashed?: boolean };
+
+/** Bright colours for pictures that must tell several parts apart (fill, edge and text colour). */
+export const BRIGHT = {
+  coral: ['#ff9b85', '#c2432b'], green: ['#8fdc9a', '#2b8a45'], purple: ['#c3aef5', '#6a45c4'], sky: ['#8fd0f7', '#1f6fae'],
+  orange: ['#ffc46b', '#b86e00'], pink: ['#f7a8cc', '#b03c74'], teal: ['#7dd6cf', '#13786f'], yellow: ['#ffe27a', '#a88200'],
+} as const;
+export type Bright = keyof typeof BRIGHT;
+type Fill = 'blue' | 'gold' | 'none' | Bright;
+const bright = (f?: string) => (f && f in BRIGHT ? { fill: BRIGHT[f as Bright][0], stroke: BRIGHT[f as Bright][1], strokeWidth: 2.2 } : undefined);
 
 const W = 640;
 const arrowHead = (x: number, y: number, dir: 1 | -1, key?: string) => (
@@ -304,18 +313,18 @@ function Draw({ spec }: { spec: Extract<StoryPictureSpec, { kind: 'draw' }> }) {
         const cls = it.s === 'accent' ? 'visual-accent' : it.s === 'gold' ? 'visual-gold' : it.s === 'guide' ? 'visual-guide' : it.s === 'red' ? 'visual-symmetry-line' : 'visual-line';
         return <path key={i} d={`M${it.p[0]} ${it.p[1]}L${it.p[2]} ${it.p[3]}`} className={cls} />;
       }
-      case 'poly': return <path key={i} d={'M' + it.pts.map(([a, b]) => `${a} ${b}`).join('L') + (it.open ? '' : 'Z')} className={it.open ? 'visual-line' : fillClass(it.fill)} />;
-      case 'circle': return <circle key={i} cx={it.c[0]} cy={it.c[1]} r={it.r} className={fillClass(it.fill)} />;
+      case 'poly': return <path key={i} d={'M' + it.pts.map(([a, b]) => `${a} ${b}`).join('L') + (it.open ? '' : 'Z')} className={it.open ? 'visual-line' : fillClass(it.fill)} style={it.open ? undefined : bright(it.fill)} />;
+      case 'circle': return <circle key={i} cx={it.c[0]} cy={it.c[1]} r={it.r} className={fillClass(it.fill)} style={bright(it.fill)} />;
       case 'ellipse': return <ellipse key={i} cx={it.c[0]} cy={it.c[1]} rx={it.rx} ry={it.ry} className={fillClass(it.fill)} style={it.dashed ? { strokeDasharray: '6 5' } : undefined} />;
       case 'sector': {
         const [ax, ay] = polar(it.c, it.r, it.a1), [bx, by] = polar(it.c, it.r, it.a2), large = Math.abs(it.a2 - it.a1) > 180 ? 1 : 0;
-        return <path key={i} d={`M${it.c[0]} ${it.c[1]}L${ax} ${ay}A${it.r} ${it.r} 0 ${large} 0 ${bx} ${by}Z`} className={it.fill === 'gold' ? 'visual-sector' : 'visual-shape'} />;
+        return <path key={i} d={`M${it.c[0]} ${it.c[1]}L${ax} ${ay}A${it.r} ${it.r} 0 ${large} 0 ${bx} ${by}Z`} className={it.fill === 'gold' ? 'visual-sector' : 'visual-shape'} style={bright(it.fill)} />;
       }
       case 'arc': {
         const [ax, ay] = polar(it.c, it.r, it.a1), [bx, by] = polar(it.c, it.r, it.a2), large = Math.abs(it.a2 - it.a1) > 180 ? 1 : 0;
         return <path key={i} d={`M${ax} ${ay}A${it.r} ${it.r} 0 ${large} 0 ${bx} ${by}`} className={it.s === 'gold' ? 'visual-gold' : 'visual-accent'} />;
       }
-      case 'text': return <text key={i} x={it.p[0]} y={it.p[1]} textAnchor={it.anchor ?? 'middle'} className={it.size === 's' ? 'visual-small' : it.size === 'l' ? 'visual-number' : 'visual-label'}>{it.v}</text>;
+      case 'text': return <text key={i} x={it.p[0]} y={it.p[1]} textAnchor={it.anchor ?? 'middle'} className={it.size === 's' ? 'visual-small' : it.size === 'l' ? 'visual-number' : 'visual-label'} style={it.color ? { fill: BRIGHT[it.color][1] } : undefined}>{it.v}</text>;
       case 'dot': return <circle key={i} cx={it.p[0]} cy={it.p[1]} r="5.5" className={it.gold ? 'visual-dot-gold' : 'visual-dot'} />;
       case 'right': {
         const k = 14, [px, py] = it.p, [ux, uy] = it.d1, [vx, vy] = it.d2;

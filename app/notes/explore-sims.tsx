@@ -109,6 +109,7 @@ function Vectors(){
 
 /* ---------------- Grade 6 simulations ---------------- */
 const pale='#dbe8f6',muted='#5b6b80';
+const BRIGHT6=['#ff9b85','#8fd0f7','#8fdc9a','#c3aef5','#ffc46b','#f7a8cc','#7dd6cf','#ffe27a','#ff9b85','#8fd0f7'],EDGE6=['#c2432b','#1f6fae','#2b8a45','#6a45c4','#b86e00','#b03c74','#13786f','#a88200','#c2432b','#1f6fae'];
 const signed=(n:number)=>n<0?`(−${-n})`:String(n);
 const minus=(n:number)=>String(n).replace('-','−');
 
@@ -119,10 +120,10 @@ function OddSquare(){
  return <Box title="Odd numbers build a square">
   <Slide label="How many odd numbers" value={n} min={1} max={10} onChange={setN}/>
   <svg className="explore-canvas" viewBox="0 0 600 332" role="img" aria-label={`${odds.join(' + ')} = ${n*n}`}>
-   {Array.from({length:n*n},(_,i)=>{const r=Math.floor(i/n),c=i%n,l=Math.max(r,c);return <rect key={i} x={x0+c*s} y={y0+r*s} width={s} height={s} fill={l===n-1?gold:l%2?cream:pale} stroke={ink} strokeWidth="1"/>;})}
+   {Array.from({length:n*n},(_,i)=>{const r=Math.floor(i/n),c=i%n,l=Math.max(r,c);return <rect key={i} x={x0+c*s} y={y0+r*s} width={s} height={s} fill={BRIGHT6[l]} stroke={EDGE6[l]} strokeWidth="1.5"/>;})}
   </svg>
-  <MathText>{`${odds.join(' + ')} = ${n*n} = ${n} × ${n}`}</MathText>
-  <Say><p>The newest L-shape (gold) has {2*n-1} tiles, the {n === 1 ? '1st' : n === 2 ? '2nd' : n === 3 ? '3rd' : `${n}th`} odd number. It turns the {n-1} by {n-1} square into a {n} by {n} square.</p></Say>
+  <p style={{fontSize:'1.2rem',fontWeight:700}}>{odds.map((o,k)=><span key={k}>{k?' + ':''}<span style={{color:EDGE6[k]}}>{o}</span></span>)} = {n*n} = {n} × {n}</p>
+  <Say><p>Each colour is one L-shape. The newest L-shape has {2*n-1} tiles, the {n === 1 ? '1st' : n === 2 ? '2nd' : n === 3 ? '3rd' : `${n}th`} odd number. It turns the {n-1} by {n-1} square into a {n} by {n} square.</p></Say>
  </Box>;
 }
 
@@ -167,7 +168,7 @@ function BarBuilder(){
   <svg className="explore-canvas" viewBox="0 0 600 340" role="img" aria-label={names.map((n,i)=>`${n} ${v[i]}`).join(', ')}>
    {Array.from({length:units+1},(_,k)=><g key={k}><path d={`M80 ${300-k*h}H580`} stroke="#e3e8ef"/><text x="70" y={300-k*h+4} textAnchor="end" fontSize="12" fill={ink}>{k*unit}</text></g>)}
    <path d="M80 300H580M80 300V50" stroke={ink} strokeWidth="2"/>
-   {v.map((x,i)=><g key={i}><rect x={110+i*115} y={300-x/unit*h} width="70" height={x/unit*h} rx="5" fill={i%2?cream:pale} stroke={ink}/><text x={145+i*115} y={294-x/unit*h} textAnchor="middle" fontSize="13" fill={ink}>{f2(x/unit)} unit{x/unit===1?'':'s'}</text><text x={145+i*115} y="322" textAnchor="middle" fontSize="13" fill={ink}>{names[i]}</text></g>)}
+   {v.map((x,i)=><g key={i}><rect x={110+i*115} y={300-x/unit*h} width="70" height={x/unit*h} rx="5" fill={BRIGHT6[i]} stroke={EDGE6[i]} strokeWidth="2"/><text x={145+i*115} y={294-x/unit*h} textAnchor="middle" fontSize="13" fill={ink}>{f2(x/unit)} unit{x/unit===1?'':'s'}</text><text x={145+i*115} y="322" textAnchor="middle" fontSize="13" fill={ink}>{names[i]}</text></g>)}
   </svg>
   <Say><p>Bar height = value ÷ scale. With 1 unit = {unit} students, Cricket’s bar is {v[0]} ÷ {unit} = {f2(v[0]/unit)} units tall.</p><p>Pick the scale that keeps every bar on the page and easy to read.</p></Say>
  </Box>;
@@ -182,7 +183,7 @@ function Sieve(){
  return <Box title="The sieve of Eratosthenes">
   <Pick labels={['Start','Cross out 2s','Cross out 3s','Cross out 5s','Cross out 7s']} value={k} onChange={setK}/>
   <svg className="explore-canvas" viewBox="0 0 600 330" role="img" aria-label="Numbers 1 to 60">
-   {Array.from({length:60},(_,i)=>{const n=i+1,x=50+(i%10)*50,y=20+Math.floor(i/10)*50,c=crossed(n);return <g key={n}><rect x={x} y={y} width="46" height="44" rx="6" fill={shown(n)?gold:n===1||c?'#eef1f5':'#fff'} stroke={ink} strokeWidth="1"/><text x={x+23} y={y+28} textAnchor="middle" fontSize="16" fontWeight="700" fill={c||n===1?'#9aa6b5':ink}>{n}</text>{c&&<path d={`M${x+6} ${y+38}L${x+40} ${y+6}`} stroke="#cf624f" strokeWidth="2"/>}</g>;})}
+   {Array.from({length:60},(_,i)=>{const n=i+1,x=50+(i%10)*50,y=20+Math.floor(i/10)*50,c=crossed(n);return <g key={n}><rect x={x} y={y} width="46" height="44" rx="6" fill={shown(n)?BRIGHT6[2]:n===1||c?'#eef1f5':'#fff'} stroke={ink} strokeWidth="1"/><text x={x+23} y={y+28} textAnchor="middle" fontSize="16" fontWeight="700" fill={c||n===1?'#9aa6b5':ink}>{n}</text>{c&&<path d={`M${x+6} ${y+38}L${x+40} ${y+6}`} stroke="#cf624f" strokeWidth="2"/>}</g>;})}
   </svg>
   <Say><p>{k===0?'1 is neither prime nor composite. Press “Cross out 2s” to keep 2 and cross out every other multiple of 2.':k<4?`${ps[k-1]} stays, and its other multiples are crossed out. Next: ${ps[k]}.`:'After 2, 3, 5 and 7, every number left is prime. There are 17 primes up to 60.'}</p><p>We can stop at 7, because 7 × 7 = 49 and the next prime square, 11 × 11 = 121, is more than 60.</p></Say>
  </Box>;
@@ -194,11 +195,11 @@ function RectSim(){
  return <Box title="Perimeter and area of a rectangle">
   <div className="explore-grid"><Slide label="Length (cm)" value={l} min={1} max={12} onChange={setL}/><Slide label="Breadth (cm)" value={b} min={1} max={8} onChange={setB}/></div>
   <svg className="explore-canvas" viewBox="0 0 600 320" role="img" aria-label={`${l} by ${b} rectangle`}>
-   {Array.from({length:l*b},(_,i)=><rect key={i} x={x0+(i%l)*s} y={y0+Math.floor(i/l)*s} width={s} height={s} fill={pale} stroke="#9fb6cf"/>)}
-   <rect x={x0} y={y0} width={l*s} height={b*s} fill="none" stroke={gold} strokeWidth="4"/>
+   {Array.from({length:l*b},(_,i)=><rect key={i} x={x0+(i%l)*s} y={y0+Math.floor(i/l)*s} width={s} height={s} fill={(i%l+Math.floor(i/l))%2?BRIGHT6[1]:BRIGHT6[2]} stroke="#fff" strokeWidth="1.5"/>)}
+   <rect x={x0} y={y0} width={l*s} height={b*s} fill="none" stroke={EDGE6[0]} strokeWidth="5"/>
   </svg>
   <MathText>{`Perimeter = 2 × (${l} + ${b}) = ${2*(l+b)} cm      Area = ${l} × ${b} = ${l*b} cm²`}</MathText>
-  <Say><p>The gold border is the perimeter. The blue unit squares make the area: {b} rows of {l} squares.</p><p>Try length 9 and breadth 1, then length 5 and breadth 5: the perimeter is 20 cm both times, but the areas are 9 cm² and 25 cm².</p></Say>
+  <Say><p>The coral border is the perimeter. The coloured unit squares make the area: {b} rows of {l} squares.</p><p>Try length 9 and breadth 1, then length 5 and breadth 5: the perimeter is 20 cm both times, but the areas are 9 cm² and 25 cm².</p></Say>
  </Box>;
 }
 
@@ -211,8 +212,8 @@ function FractionCompare(){
  return <Box title="Compare two fractions">
   <div className="explore-grid"><Slide label="First: parts shaded" value={A} min={0} max={b} onChange={setA}/><Slide label="First: equal parts" value={b} min={1} max={12} onChange={x=>{setB(x);setA(Math.min(A,x));}}/><Slide label="Second: parts shaded" value={C2} min={0} max={d} onChange={setC}/><Slide label="Second: equal parts" value={d} min={1} max={12} onChange={x=>{setD(x);setC(Math.min(C2,x));}}/></div>
   <svg className="explore-canvas" viewBox="0 0 600 190" role="img" aria-label={`${A}/${b} ${sign} ${C2}/${d}`}>
-   <text x="50" y="58" textAnchor="end" fontSize="18" fontWeight="700" fill={ink}>{A}/{b}</text>{strip(A,b,24,'#84c9ca')}
-   <text x="50" y="140" textAnchor="end" fontSize="18" fontWeight="700" fill={ink}>{C2}/{d}</text>{strip(C2,d,106,gold)}
+   <text x="50" y="58" textAnchor="end" fontSize="18" fontWeight="700" fill={ink}>{A}/{b}</text>{strip(A,b,24,BRIGHT6[1])}
+   <text x="50" y="140" textAnchor="end" fontSize="18" fontWeight="700" fill={ink}>{C2}/{d}</text>{strip(C2,d,106,BRIGHT6[0])}
   </svg>
   <MathText>{`${A}/${b} = ${p}/${L} and ${C2}/${d} = ${q}/${L}, so ${A}/${b} ${sign} ${C2}/${d}`}</MathText>
   <Say><p>Both fractions are written with the common denominator {L}. Then compare the numerators: {p} {sign} {q}.</p></Say>
@@ -248,7 +249,7 @@ function RotateSim(){
   <Slide label="Turn" value={t} min={0} max={360} step={15} onChange={setT} show={`${t}°`}/>
   <svg className="explore-canvas" viewBox="0 0 600 300" role="img" aria-label={`${sh.name} turned ${t} degrees`}>
    <g transform="translate(300 150)"><polygon points={pts} fill="none" stroke="#9aa6b5" strokeWidth="2" strokeDasharray="6 5"/>
-    <g transform={`rotate(${-t})`}><polygon points={pts} fill={same?cream:pale} stroke={same?gold:ink} strokeWidth="3"/><circle cx={sh.pts[0][0]} cy={sh.pts[0][1]} r="8" fill="#cf624f"/></g><circle r="5" fill={ink}/></g>
+    <g transform={`rotate(${-t})`}><polygon points={pts} fill={same?BRIGHT6[2]:BRIGHT6[1]} stroke={same?EDGE6[2]:EDGE6[1]} strokeWidth="3"/><circle cx={sh.pts[0][0]} cy={sh.pts[0][1]} r="9" fill={EDGE6[0]}/></g><circle r="5" fill={ink}/></g>
   </svg>
   <Say><p>{same?`It looks the same after ${t}°!`:t===0||t===360?'The shape is in its starting position.':'Not the same yet. Keep turning.'} The red dot shows how far the shape has turned.</p><p>{sh.order>1?`${sh.name}: angle of symmetry ${step}°, order ${sh.order}.`:'The L-shape looks the same only after a full turn: it has no rotational symmetry.'}</p></Say>
  </Box>;
