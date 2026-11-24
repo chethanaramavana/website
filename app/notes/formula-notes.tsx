@@ -4,10 +4,11 @@ import './integrals-online.css';
 import NotesLab from './notes-lab';
 import TeachingDiagram, {type TeachingDiagramSpec} from './cbse89-diagram';
 import NotesPrintButton from './real-numbers/print-button';
+import StoryPicture, {type StoryPictureSpec} from './story-picture';
 
 type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string; diagram?: TeachingDiagramSpec};
-type Lesson = {title: string; level: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null};
-export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]; school?: boolean; sources?: {href: string; label: string}[]};
+type Lesson = {title: string; level: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
+export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]; school?: boolean; challengeLabel?: string; sources?: {href: string; label: string}[]};
 const math = (f: string) => `$${f}$`;
 
 function Example({e, label, school}: {e: Worked; label: string; school?: boolean}) {
@@ -31,7 +32,7 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
       <p className="ir-kicker">{data.kicker}</p>
       <h1>{data.title}</h1>
       <p className="ir-sub">{data.subtitle ? <>{data.subtitle} · </> : null}Formula sheet and {lessons.reduce((n, l) => n + l.examples.length, 0)} solved examples.</p>
-      {data.school ? <><p>Read one session at a time. Try its controls, follow each step, then cover the answer and try again. A mistake tells you which idea to revisit.</p><p className="ir-levels"><span className="ir-tag board">School exam preparation</span> {lessons.length} guided sessions · Original practice</p><NotesPrintButton /></> : <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board}{board < lessons.length && <> · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{lessons.length} (JEE)</>}</p>}
+      {data.school ? <><p>Read one session at a time. Try its controls, follow each step, then cover the answer and try again. A mistake tells you which idea to revisit.</p><p className="ir-levels"><span className="ir-tag board">School exam preparation</span> {lessons.length} guided sessions · Original practice</p><NotesPrintButton /></> : <p className="ir-levels"><span className="ir-tag board">Board exam</span> Sessions 1–{board}{board < lessons.length && <> · <span className="ir-tag challenge">Challenge</span> Sessions {board + 1}–{lessons.length}{data.challengeLabel ?? ' (JEE)'}</>}</p>}
     </header>
     <section className="ir-sheet" id="formulas">
       <h2>{data.school ? 'Rules to keep beside you' : 'Formula sheet'}</h2>
@@ -43,6 +44,7 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
       <h2>{l.title}</h2>
       {l.ideas && l.ideas.length > 0 && <div className="ir-ideas"><span className="ir-label">{data.school?'Understand the idea':'Key ideas'}</span><ul>{l.ideas.map((t, k) => <li key={k}><Tex>{t}</Tex></li>)}</ul></div>}
       {!!l.formulas.length && <div className="ir-formulas"><span className="ir-label">Formulas</span>{l.formulas.map((f, k) => <div key={k} className="ir-sheet-line"><Tex>{math(f)}</Tex></div>)}</div>}
+      {l.picture && <div className="ir-picture"><StoryPicture spec={l.picture} /></div>}
       {l.diagram && <TeachingDiagram spec={l.diagram} />}
       {l.labs?.map((lab) => <div className="ir-lab" key={`${lab.slug}-${lab.index}`}><span className="ir-label">Try it · simulation</span><NotesLab slug={lab.slug} index={lab.index} /></div>)}
       <div className="ir-worked">{l.examples.map((e, j) => <Example key={j} e={e} label={`EXAMPLE ${j + 1}`} school={data.school} />)}</div>

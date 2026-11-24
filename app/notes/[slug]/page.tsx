@@ -39,7 +39,7 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
   const g10Reader = (g10ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
   if (g10Reader) return <><ChapterReader data={g10Reader} /><ExploreSims slug={slug} /></>;
   if(slug === 'g11-straight-lines') return <><FormulaNotes data={straightLines as FormulaNotesData} /><ExploreSims slug={slug} /></>;
-  if (icse7[slug]) return <FormulaNotes data={icse7[slug]} />;
+  if (icse7[slug]) return <><FormulaNotes data={icse7[slug]} /><ExploreSims slug={slug} /></>;
   const notes = getChapterNotes(slug);
   if (!notes) return <main className="notes-missing"><h1>Notes are being prepared.</h1><a href="/">Back to chapters</a></main>;
   return <>{slug === 'g12-integrals' && <aside style={{padding:'20px',textAlign:'center',background:'#eee7f9'}}><a href="/cbse/grade-12/integrals">Expanded Integrals notes, 30 free practice questions and CBSE / JEE papers →</a></aside>}<NotesDocument notes={notes} /><ExploreSims slug={slug} /></>;

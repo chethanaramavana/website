@@ -274,6 +274,72 @@ function IntegerWalk(){
  </Box>;
 }
 
-const SIMS:Record<string,()=>ReactNode>={'g6-patterns':()=><OddSquare/>,'g6-lines-angles':()=><AngleMaker/>,'g6-number-play':()=><Kaprekar/>,'g6-data':()=><BarBuilder/>,'g6-prime-time':()=><Sieve/>,'g6-perimeter-area':()=><RectSim/>,'g6-fractions':()=><FractionCompare/>,'g6-constructions':()=><Bisector/>,'g6-symmetry':()=><RotateSim/>,'g6-integers':()=><IntegerWalk/>,'g11-limits-derivatives':()=><SecantTangent/>,'g11-conic-sections':()=><Conics/>,'g11-binomial-theorem':()=><Pascal/>,'g12-vector-algebra':()=><Vectors/>};
+/** ICSE 7 Sets: counts in a two-set Venn diagram. */
+function VennSim(){
+ const [u,setU]=useState(40),[a,setA]=useState(22),[b,setB]=useState(15),[c,setC]=useState(6);
+ const both=Math.min(c,a,b),onlyA=a-both,onlyB=b-both,union=a+b-both,uu=Math.max(u,union),none=uu-union;
+ return <Box title="Count the regions of a Venn diagram">
+  <div className="explore-grid"><Slide label="n(U)" value={uu} min={10} max={60} onChange={setU}/><Slide label="n(A)" value={a} min={0} max={30} onChange={setA}/><Slide label="n(B)" value={b} min={0} max={30} onChange={setB}/><Slide label="n(A ∩ B)" value={both} min={0} max={Math.min(a,b)} onChange={setC}/></div>
+  <svg className="explore-canvas" viewBox="0 0 600 300" role="img" aria-label={`only A ${onlyA}, both ${both}, only B ${onlyB}, neither ${none}`}>
+   <rect x="40" y="20" width="520" height="260" rx="14" fill="#fffaf0" stroke={ink} strokeWidth="2"/><text x="58" y="46" fontSize="16" fontWeight="700" fill={ink}>U</text>
+   <circle cx="245" cy="150" r="105" fill={BRIGHT6[0]} fillOpacity="0.55" stroke={EDGE6[0]} strokeWidth="3"/>
+   <circle cx="355" cy="150" r="105" fill={BRIGHT6[1]} fillOpacity="0.55" stroke={EDGE6[1]} strokeWidth="3"/>
+   <text x="180" y="60" fontSize="17" fontWeight="700" fill={EDGE6[0]}>A</text><text x="410" y="60" fontSize="17" fontWeight="700" fill={EDGE6[1]}>B</text>
+   <text x="195" y="158" textAnchor="middle" fontSize="24" fontWeight="700" fill={ink}>{onlyA}</text>
+   <text x="300" y="158" textAnchor="middle" fontSize="24" fontWeight="700" fill={EDGE6[3]}>{both}</text>
+   <text x="405" y="158" textAnchor="middle" fontSize="24" fontWeight="700" fill={ink}>{onlyB}</text>
+   <text x="520" y="262" textAnchor="middle" fontSize="20" fontWeight="700" fill={EDGE6[6]}>{none}</text>
+  </svg>
+  <MathText>{`n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = ${a} + ${b} − ${both} = ${union}`}</MathText>
+  <Say><p>Fill the middle first: {both} elements are in both sets. Then only A = {a} − {both} = {onlyA} and only B = {b} − {both} = {onlyB}.</p><p>Outside both circles: n(U) − n(A ∪ B) = {uu} − {union} = {none}.{u<union?' (n(U) cannot be smaller than n(A ∪ B), so it moved up.)':''}</p></Say>
+ </Box>;
+}
+
+/** ICSE 7 Speed, distance and time: two travellers move towards each other. */
+function MeetSim(){
+ const [d,setD]=useState(240),[v1,setV1]=useState(60),[v2,setV2]=useState(40),[t,setT]=useState(1);
+ const meet=d/(v1+v2),tt=Math.min(t,meet),p1=v1*tt,p2=d-v2*tt,X=(km:number)=>50+km*500/d;
+ const gx=(h:number)=>70+h*460/6,gy=(km:number)=>290-km*110/d;
+ return <Box title="When do they meet?">
+  <div className="explore-grid"><Slide label="Distance apart (km)" value={d} min={60} max={360} step={30} onChange={setD}/><Slide label="Speed of A (km/h)" value={v1} min={10} max={90} step={10} onChange={setV1}/><Slide label="Speed of B (km/h)" value={v2} min={10} max={90} step={10} onChange={setV2}/><Slide label="Time (h)" value={t} min={0} max={6} step={0.25} onChange={setT}/></div>
+  <svg className="explore-canvas" viewBox="0 0 600 310" role="img" aria-label={`after ${f2(tt)} hours A has gone ${f2(p1)} km and B ${f2(d-p2)} km`}>
+   <path d={`M50 70H550`} stroke={ink} strokeWidth="3"/><text x="50" y="100" textAnchor="middle" fontSize="13" fill={ink}>0</text><text x="550" y="100" textAnchor="middle" fontSize="13" fill={ink}>{d} km</text>
+   <path d={`M${X(0)} 70H${X(p1)}`} stroke={EDGE6[0]} strokeWidth="7"/><path d={`M${X(p2)} 70H${X(d)}`} stroke={EDGE6[1]} strokeWidth="7"/>
+   <circle cx={X(p1)} cy="70" r="12" fill={BRIGHT6[0]} stroke={EDGE6[0]} strokeWidth="2"/><text x={X(p1)} y="45" textAnchor="middle" fontSize="14" fontWeight="700" fill={EDGE6[0]}>A</text>
+   <circle cx={X(p2)} cy="70" r="12" fill={BRIGHT6[1]} stroke={EDGE6[1]} strokeWidth="2"/><text x={X(p2)} y="45" textAnchor="middle" fontSize="14" fontWeight="700" fill={EDGE6[1]}>B</text>
+   <path d="M70 290H540M70 290V170" stroke={ink} strokeWidth="1.5"/>{[0,1,2,3,4,5,6].map(h=><text key={h} x={gx(h)} y="306" textAnchor="middle" fontSize="11" fill={ink}>{h} h</text>)}
+   <path d={`M${gx(0)} ${gy(0)}L${gx(meet)} ${gy(v1*meet)}`} stroke={EDGE6[0]} strokeWidth="2.5"/><path d={`M${gx(0)} ${gy(d)}L${gx(meet)} ${gy(d-v2*meet)}`} stroke={EDGE6[1]} strokeWidth="2.5"/>
+   <path d={`M${gx(tt)} 170V290`} stroke={gold} strokeDasharray="5 4"/><circle cx={gx(meet)} cy={gy(v1*meet)} r="6" fill={EDGE6[3]}/>
+   <text x="560" y="180" textAnchor="end" fontSize="12" fill={ink}>distance from A’s start</text>
+  </svg>
+  <MathText>{`They close the gap at ${v1} + ${v2} = ${v1+v2} km/h, so time to meet = ${d} ÷ ${v1+v2} = ${f2(meet)} h`}</MathText>
+  <Say><p>{t>=meet?`They meet after ${f2(meet)} h, ${f2(v1*meet)} km from A’s start.`:`After ${f2(tt)} h the gap is ${f2(p2-p1)} km.`}</p><p>When two objects move towards each other, add their speeds. The purple dot on the graph is the meeting point.</p></Say>
+ </Box>;
+}
+
+/** ICSE 7 Inequalities: solve ax + b ? c and show the answer on a number line. */
+function InequalitySim(){
+ const A=[-3,-2,-1,1,2,3],S=['<','≤','>','≥'],flip=[2,3,0,1];
+ const [ai,setAi]=useState(4),[b,setB]=useState(3),[c,setC]=useState(11),[si,setSi]=useState(0);
+ const a=A[ai],r=(c-b)/a,so=a<0?flip[si]:si,sign=S[so],closed=so%2===1,right=so>=2;
+ const X=(v:number)=>300+v*25,y=150,rr=Math.max(-11,Math.min(11,r));
+ const term=`${a===1?'':a===-1?'−':minus(a)}x ${b<0?'−':'+'} ${Math.abs(b)}`;
+ return <Box title="Solve an inequality and draw the answer">
+  <div className="explore-grid"><Slide label="a" value={ai} min={0} max={5} onChange={setAi} show={minus(a)}/><Slide label="b" value={b} min={-10} max={10} onChange={setB} show={minus(b)}/><Slide label="c" value={c} min={-10} max={12} onChange={setC} show={minus(c)}/></div>
+  <Pick labels={S} value={si} onChange={setSi}/>
+  <svg className="explore-canvas" viewBox="0 0 600 230" role="img" aria-label={`x ${sign} ${f2(r)}`}>
+   <path d={right?`M${X(rr)} ${y}H585`:`M15 ${y}H${X(rr)}`} stroke={EDGE6[2]} strokeWidth="9" strokeLinecap="round" opacity="0.8"/>
+   <path d={`M15 ${y}H585`} stroke={ink} strokeWidth="2"/>
+   {Array.from({length:23},(_,k)=>k-11).map(v=><g key={v}><path d={`M${X(v)} ${y-6}V${y+6}`} stroke={ink}/>{v%2===0&&<text x={X(v)} y={y+26} textAnchor="middle" fontSize="12" fill={ink}>{minus(v)}</text>}</g>)}
+   <circle cx={X(rr)} cy={y} r="9" fill={closed?EDGE6[2]:'#fff'} stroke={EDGE6[2]} strokeWidth="3"/>
+   <text x="300" y="50" textAnchor="middle" fontSize="20" fontWeight="700" fill={ink}>{`${term} ${S[si]} ${minus(c)}`}</text>
+   <text x="300" y="210" textAnchor="middle" fontSize="18" fontWeight="700" fill={EDGE6[2]}>{`x ${sign} ${f2(r)}`}</text>
+  </svg>
+  <MathText>{`${a===1?'x':`${minus(a)}x`} ${S[si]} ${minus(c)} − ${signed(b)}, so ${a===1?'x':`${minus(a)}x`} ${S[si]} ${minus(c-b)}  →  x ${sign} ${f2(r)}`}</MathText>
+  <Say><p>{a<0?`You divided by ${minus(a)}, a negative number, so the sign turned round: ${S[si]} became ${sign}.`:`You divided by ${a}, a positive number, so the sign stays ${sign}.`}</p><p>{closed?'A filled dot means the boundary value is included.':'An open dot means the boundary value is not included.'}</p></Say>
+ </Box>;
+}
+
+const SIMS:Record<string,()=>ReactNode>={'g6-patterns':()=><OddSquare/>,'g6-lines-angles':()=><AngleMaker/>,'g6-number-play':()=><Kaprekar/>,'g6-data':()=><BarBuilder/>,'g6-prime-time':()=><Sieve/>,'g6-perimeter-area':()=><RectSim/>,'g6-fractions':()=><FractionCompare/>,'g6-constructions':()=><Bisector/>,'g6-symmetry':()=><RotateSim/>,'g6-integers':()=><IntegerWalk/>,'g11-limits-derivatives':()=><SecantTangent/>,'g11-conic-sections':()=><Conics/>,'g11-binomial-theorem':()=><Pascal/>,'g12-vector-algebra':()=><Vectors/>,'icse7-sets':()=><VennSim/>,'icse7-speed-distance-time':()=><MeetSim/>,'icse7-inequalities':()=><InequalitySim/>,'icse7-constructions':()=><Bisector/>};
 export const hasExplore=(slug:string)=>slug in SIMS;
 export default function ExploreSims({slug}:{slug:string}){const S=SIMS[slug];if(!S)return null;return <div className="notes-explore"><h2>Explore with a simulation</h2><p>Move the sliders and watch the picture change.</p>{S()}</div>;}
