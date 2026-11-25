@@ -1,0 +1,1025 @@
+{
+ "papers": [
+  {
+   "id": "g6-patterns-02",
+   "chapter": "Patterns in Mathematics",
+   "chapterNumber": 1,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "1 + 2 + 3 + … + 10 + 9 + 8 + … + 2 + 1 =",
+     "options": [
+      "100",
+      "90",
+      "110",
+      "55"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The 10th triangular number is",
+     "options": [
+      "55",
+      "45",
+      "66",
+      "100"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The Virahanka numbers are 1, 2, 3, 5, 8, 13, …. The next two numbers are",
+     "options": [
+      "21 and 34",
+      "26 and 39",
+      "18 and 23",
+      "21 and 29"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Six points are marked so that no three are on one line. Each pair of points is joined by a line segment. The number of line segments is",
+     "options": [
+      "30",
+      "12",
+      "6",
+      "15"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The sum of the first 20 odd numbers is 400.",
+     "reason": "The sum of the first n odd numbers is n × n."
+    },
+    {
+     "number": 6,
+     "assertion": "Every triangular number is odd.",
+     "reason": "Two consecutive triangular numbers add up to a square number."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The pattern 3, 6, 12, 24, … adds 3 each time, so the next term is 27.'",
+    "18": "Find 1 + 3 + 5 + … + 49 without adding the numbers one by one. Explain your method.",
+    "19": "Square numbers 1, 4, 9, 16, … are shown as square dot patterns. How many dots must be added to the 9th square to make the 10th square? Use the picture to explain.",
+    "20": "Look at: 1 = 1, 1 + 2 + 1 = 4, 1 + 2 + 3 + 2 + 1 = 9. (a) Write the next line. (b) Find 1 + 2 + … + 20 + … + 2 + 1 without adding. (c) Why is each answer a square number?",
+    "21": "A row of triangles is made with matchsticks: 1 triangle uses 3 sticks, 2 triangles use 5 sticks and 3 triangles use 7 sticks. How many sticks do 15 triangles need? Can exactly 50 sticks be used with none left over? Give a reason.",
+    "22": "The powers of 2 are 1, 2, 4, 8, 16, 32, …. (a) Add the first five of them and compare the sum with the sixth. (b) Use this idea to find 1 + 2 + 4 + … + 512.",
+    "23": [
+     "Figure 1 is one square. Figure 2 is a 2 × 2 grid of squares. Figure 3 is a 3 × 3 grid.",
+     "(a) Count all the squares of every size in Figure 2.",
+     "(b) Count all the squares of every size in Figure 3.",
+     "(c) Find the total for a 4 × 4 grid by counting the 1 × 1, 2 × 2, 3 × 3 and 4 × 4 squares. What pattern do you see?"
+    ],
+    "24": [
+     "(a) How many handshakes are there in a group of 4 people? [1]",
+     "(b) How many handshakes are there in a group of 10 people? [1]",
+     "(c) Another group had 66 handshakes. How many people were in it? Which number pattern do the handshakes follow? [2]"
+    ]
+   },
+   "caseStudy": "In a handshake game, every person in a group shakes hands once with every other person.",
+   "answerKey": [
+    0,
+    0,
+    0,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "The terms are doubled, not increased by 3: 3 × 2 = 6, 6 × 2 = 12, 12 × 2 = 24. The next term is 24 × 2 = 48.",
+    "18": "There are 25 odd numbers from 1 to 49. The sum of the first n odd numbers is n × n. So the sum is 25 × 25 = 625.",
+    "19": "100 − 81 = 19 dots. They form an L-shape: one new row of 10 dots and one new column of 9 dots (10 + 9 = 19 = 2 × 10 − 1).",
+    "20": "(a) 1 + 2 + 3 + 4 + 3 + 2 + 1 = 16. (b) The answer is 20 × 20 = 400. (c) The numbers fill a square of dots when you read it along its diagonals, so the sum is always the middle number multiplied by itself.",
+    "21": "Each new triangle adds 2 sticks: sticks = 2n + 1. For 15 triangles: 2 × 15 + 1 = 31 sticks. 2n + 1 is always odd and 50 is even, so 50 sticks cannot be used exactly.",
+    "22": "(a) 1 + 2 + 4 + 8 + 16 = 31 = 32 − 1, one less than the sixth power. (b) The next power after 512 is 1024. So the sum is 1024 − 1 = 1023.",
+    "23": "(a) 4 small + 1 large = 5. (b) 9 + 4 + 1 = 14. (c) 16 + 9 + 4 + 1 = 30. The total is a sum of square numbers.",
+    "24": "(a) 3 + 2 + 1 = 6. (b) 9 + 8 + … + 1 = 45. (c) 1 + 2 + … + 11 = 66, so there were 12 people. The handshakes follow the triangular numbers 1, 3, 6, 10, 15, …."
+   }
+  },
+  {
+   "id": "g6-lines-angles-02",
+   "chapter": "Lines and Angles",
+   "chapterNumber": 2,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Four points A, B, C and D lie on one line. How many line segments can be named using these points?",
+     "options": [
+      "6",
+      "3",
+      "12",
+      "4"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The hour hand of a clock moves from 3 to 7. It turns through",
+     "options": [
+      "120°",
+      "4°",
+      "210°",
+      "90°"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A right angle is divided into 3 equal parts. Two of the parts together make",
+     "options": [
+      "60°",
+      "30°",
+      "120°",
+      "45°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which angle is a reflex angle?",
+     "options": [
+      "180°",
+      "250°",
+      "170°",
+      "95°"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A ray has only one end point.",
+     "reason": "A ray goes on without end in one direction."
+    },
+    {
+     "number": 6,
+     "assertion": "A straight angle measures 180°.",
+     "reason": "A straight angle is twice an acute angle."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake: 'I measured an angle with a protractor and read 130°.' The angle is clearly smaller than a right angle. What was the mistake, and what is the correct measure?",
+    "18": "Three rays OA, OB and OC start from O, in this order, on the same side of a line. How many angles less than 180° are there at O? Name them.",
+    "19": "Through how many degrees does the minute hand of a clock turn in (a) 15 minutes (b) 40 minutes?",
+    "20": "Ravi faces north. He turns clockwise through 1 right angle, and then through 2 more right angles. Which direction does he face now? How many degrees did he turn in all? Name this type of angle.",
+    "21": "Four points are marked so that no three of them are on one line. How many lines can be drawn through pairs of these points? Name them. How many lines are there for 5 such points?",
+    "22": "There are 30° between two hour marks on a clock. Find the angle between the hands at (a) 3:00 (b) 5:00 (c) 9:30 (at 9:30 the hour hand is halfway between 9 and 10).",
+    "23": [
+     "∠AOB and ∠BOC are next to each other at O and together make a straight angle. ∠AOB is 4 times ∠BOC.",
+     "(a) Find ∠BOC.",
+     "(b) Find ∠AOB and name its type.",
+     "(c) A ray OD divides ∠AOB into two equal parts. Find ∠DOC."
+    ],
+    "24": [
+     "(a) It turns 90° anticlockwise. Which way does it face? [1]",
+     "(b) What single anticlockwise turn takes it from facing east to facing south-west? [1]",
+     "(c) It makes three anticlockwise turns of 135° each. Find the total turn and the direction it faces. Is the total more than one full turn? [2]"
+    ]
+   },
+   "caseStudy": "A robot on a floor grid can turn only through multiples of 45°. It starts facing east.",
+   "answerKey": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "The protractor has two scales. He read the wrong scale. The correct measure is 180° − 130° = 50°, which is less than a right angle.",
+    "18": "3 angles: ∠AOB, ∠BOC and ∠AOC.",
+    "19": "The minute hand turns 360° in 60 minutes, so 6° each minute. (a) 15 × 6° = 90°. (b) 40 × 6° = 240°.",
+    "20": "North → east (1 right angle) → south → west (2 more). He faces west. Total turn = 3 × 90° = 270°, which is a reflex angle.",
+    "21": "With A, B, C, D: AB, AC, AD, BC, BD, CD, that is 6 lines. With 5 points: 4 + 3 + 2 + 1 = 10 lines.",
+    "22": "(a) 3 spaces × 30° = 90°. (b) 5 × 30° = 150°. (c) The minute hand is at 6 and the hour hand is halfway between 9 and 10: 3½ spaces × 30° = 105°.",
+    "23": "(a) 4x + x = 180°, so x = 36°. ∠BOC = 36°. (b) ∠AOB = 144°, an obtuse angle. (c) ∠DOB = 144° ÷ 2 = 72°. ∠DOC = 72° + 36° = 108°.",
+    "24": "(a) North. (b) East → north (90°) → west (180°) → south-west (225°). A turn of 225°. (c) 3 × 135° = 405° = 360° + 45°. It faces north-east. Yes, it is more than one full turn."
+   }
+  },
+  {
+   "id": "g6-number-play-02",
+   "chapter": "Number Play",
+   "chapterNumber": 3,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "How many 3-digit palindromes are there?",
+     "options": [
+      "900",
+      "81",
+      "90",
+      "100"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Kaprekar's routine with 4-digit numbers (not all digits the same) always reaches",
+     "options": [
+      "1000",
+      "9999",
+      "6174",
+      "495"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In the Collatz sequence 6 → 3 → 10 → 5 → 16 → …, the numbers finally reach",
+     "options": [
+      "100",
+      "0",
+      "they never stop growing",
+      "1"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many digits are used to write all the numbers from 1 to 100?",
+     "options": [
+      "192",
+      "200",
+      "189",
+      "190"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The digit sum of 2,99,999 is 47.",
+     "reason": "A palindrome reads the same from both ends."
+    },
+    {
+     "number": 6,
+     "assertion": "Every 5-digit number is greater than every 4-digit number.",
+     "reason": "The smallest 5-digit number is 10,000 and the greatest 4-digit number is 9,999."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The smallest 5-digit number with all digits different is 10,000.'",
+    "18": "Write the greatest and the smallest 6-digit palindromes. Find their difference.",
+    "19": "A cell is a supercell if its number is greater than the numbers in the cells next to it. In the row 5, 8, 3, 9, 6, which are the supercells? Make your own row of 5 numbers that has 3 supercells.",
+    "20": "Use each of the digits 1, 2, 3, 4 and 5 exactly once to make a 3-digit number and a 2-digit number whose sum is as large as possible. Explain your choice.",
+    "21": "About how many hours has a 12-year-old child lived? Round your numbers sensibly and show your working.",
+    "22": "Write the Collatz sequences for 7 and for 12 (halve an even number; for an odd number, multiply by 3 and add 1). Which one takes more steps to reach 1?",
+    "23": [
+     "Kaprekar's routine: arrange the digits of a 4-digit number in descending and ascending order, and subtract the smaller from the larger.",
+     "(a) Start with 2026. Repeat the routine until a number repeats.",
+     "(b) How many steps did it take to reach 6174?",
+     "(c) Why does the routine not work for 3333?"
+    ],
+    "24": [
+     "(a) How many roll numbers are 3-digit numbers? [1]",
+     "(b) How many digits are printed in all to write every roll number? [1]",
+     "(c) How many roll numbers are palindromes? [2]"
+    ]
+   },
+   "caseStudy": "A school gives roll numbers from 1 to 350.",
+   "answerKey": [
+    2,
+    2,
+    3,
+    0,
+    1,
+    0
+   ],
+   "solutions": {
+    "17": "Digits must not repeat, and 10,000 repeats 0. The smallest such number is 10,234.",
+    "18": "Greatest: 9,99,999. Smallest: 1,00,001. Difference = 8,99,998.",
+    "19": "Supercells: 8 (more than 5 and 3) and 9 (more than 3 and 6). A row with 3 supercells: 9, 2, 7, 1, 8 (9, 7 and 8 are supercells). Other answers are possible.",
+    "20": "Put the largest digits in the highest places: 5 in the hundreds place, 4 and 3 in the tens places, 2 and 1 in the ones places. 542 + 31 = 573 (or 531 + 42 = 573). The largest sum is 573.",
+    "21": "12 years × 365 days × 24 hours = 1,05,120 hours. That is about 1 lakh hours.",
+    "22": "7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1: 16 steps. 12, 6, 3, 10, 5, 16, 8, 4, 2, 1: 9 steps. 7 takes more steps.",
+    "23": "(a) 6220 − 0226 = 5994; 9954 − 4599 = 5355; 5553 − 3555 = 1998; 9981 − 1899 = 8082; 8820 − 0288 = 8532; 8532 − 2358 = 6174; 7641 − 1467 = 6174. (b) 6 steps. (c) All the digits are the same, so both arrangements are 3333 and the difference is 0.",
+    "24": "(a) 100 to 350: 251 numbers. (b) 9 one-digit + 90 × 2 + 251 × 3 = 9 + 180 + 753 = 942 digits. (c) 9 one-digit + 9 two-digit (11, 22, …, 99) + 25 three-digit (10 each for 1_1 and 2_2, and 303, 313, 323, 333, 343) = 43."
+   }
+  },
+  {
+   "id": "g6-data-02",
+   "chapter": "Data Handling and Presentation",
+   "chapterNumber": 4,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "In a pictograph, 1 symbol = 4 books. Class A has 7 symbols and Class B has 4½ symbols. Class A has how many more books?",
+     "options": [
+      "12",
+      "46",
+      "10",
+      "2½"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A bar graph uses 1 unit = 50 students. The bar for 375 students is",
+     "options": [
+      "3.75 units",
+      "8 units",
+      "7.5 units",
+      "75 units"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which scale suits the values 120, 340, 280 and 410 best?",
+     "options": [
+      "1 unit = 50",
+      "1 unit = 500",
+      "1 unit = 1",
+      "1 unit = 2"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The vertical axis of a bar graph starts at 80, not 0. The bars for 90 and 100 make it look as if",
+     "options": [
+      "the values are equal",
+      "one value is double the other",
+      "both values are 0",
+      "90 is larger than 100"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A pictograph needs a key.",
+     "reason": "The key tells how many items one symbol stands for."
+    },
+    {
+     "number": 6,
+     "assertion": "The bars of a bar graph must have different widths.",
+     "reason": "The bars of a bar graph must be equally spaced."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'In a pictograph, 1 symbol = 10 people. A row with 3½ symbols means 3.5 people.'",
+    "18": "A tally shows four groups of five marks and three more marks. What number is this? Why are tally marks grouped in fives?",
+    "19": "The bars in a graph are 6, 9, 4 and 7 units high, with 1 unit = 15 kg. Find the largest value, the smallest value and their difference.",
+    "20": "In a survey of 40 students, 14 like cricket, 10 like football, 9 like kabaddi and the rest like other games. (a) How many like other games? (b) In a pictograph with 1 symbol = 2 students, how many symbols does each game need?",
+    "21": "Shop A sold 120, 160 and 80 umbrellas in June, July and August. Shop B sold 90, 150 and 100. (a) Which shop sold more in the three months? (b) In which month was the difference between the shops the largest? (c) Which graph would you draw to compare the two shops?",
+    "22": "Make up rainfall data (in mm) for 5 days so that the difference between the highest and the lowest value is 20 mm and the value that occurs most often is 8 mm.",
+    "23": [
+     "Museum visitors: Monday 250, Tuesday 175, Wednesday 300, Thursday 225, Friday 350.",
+     "(a) Choose a scale and give the length of each bar.",
+     "(b) Find the total number of visitors and the difference between the busiest and the quietest day.",
+     "(c) The museum says, 'Friday had double the visitors of Tuesday.' Is this true? Explain."
+    ],
+    "24": [
+     "(a) How many students are in the class? [1]",
+     "(b) Describe a pictograph with 1 symbol = 2 students: how many symbols for each way? [1]",
+     "(c) Next term, the 5 car students start walking. Give the new numbers. Does walking become the most common way? [2]"
+    ]
+   },
+   "caseStudy": "A class records how its students come to school: walk 12, cycle 8, bus 15, car 5.",
+   "answerKey": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Each symbol stands for 10 people, so 3½ symbols = 3½ × 10 = 35 people.",
+    "18": "4 × 5 + 3 = 23. Groups of five are quick to count and hard to miscount.",
+    "19": "Largest = 9 × 15 = 135 kg. Smallest = 4 × 15 = 60 kg. Difference = 75 kg.",
+    "20": "(a) 40 − 33 = 7. (b) Cricket 7 symbols, football 5, kabaddi 4½, others 3½.",
+    "21": "(a) A: 360, B: 340. Shop A sold more. (b) Differences: June 30, July 10, August 20. June. (c) A double bar graph, with two bars for each month.",
+    "22": "Example: 8, 8, 12, 28, 15. Highest − lowest = 28 − 8 = 20, and 8 occurs most often. Other answers are possible.",
+    "23": "(a) With 1 unit = 50: 5, 3.5, 6, 4.5 and 7 units. (b) Total = 1300. Busiest − quietest = 350 − 175 = 175. (c) True: 2 × 175 = 350.",
+    "24": "(a) 40. (b) Walk 6, cycle 4, bus 7½, car 2½. (c) Walk 17, cycle 8, bus 15, car 0. Yes: 17 is more than 15, so walking becomes the most common way."
+   }
+  },
+  {
+   "id": "g6-prime-time-02",
+   "chapter": "Prime Time",
+   "chapterNumber": 5,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "How many prime numbers are there between 1 and 30?",
+     "options": [
+      "11",
+      "8",
+      "9",
+      "10"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which pair of numbers is co-prime?",
+     "options": [
+      "8 and 15",
+      "14 and 35",
+      "9 and 21",
+      "12 and 18"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The smallest number with exactly 3 factors is",
+     "options": [
+      "4",
+      "6",
+      "3",
+      "9"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "In the Idli–Vada game, players say 'idli' for multiples of 3 and 'vada' for multiples of 5. From 1 to 60, how many times is 'idli-vada' said?",
+     "options": [
+      "4",
+      "3",
+      "12",
+      "20"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If a number is divisible by both 4 and 6, it must be divisible by 24.",
+     "reason": "12 is divisible by both 4 and 6."
+    },
+    {
+     "number": 6,
+     "assertion": "2 is the only even prime number.",
+     "reason": "Every other even number has 2 as a factor, so it has more than two factors."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '91 is a prime number because it is odd and is not divisible by 3 or 5.'",
+    "18": "Find the greatest 4-digit number that is divisible by 8. Use the divisibility rule for 8.",
+    "19": "Find a number between 50 and 100 that is the product of three different prime numbers. Write its prime factorisation.",
+    "20": "Write 40 as the sum of two prime numbers in as many ways as you can.",
+    "21": "Is 1,23,456 divisible by 2, 4, 5 and 8? Use the divisibility rules and give a reason each time.",
+    "22": "The prime factorisation of a number is 2 × 2 × 3 × 5. (a) Find the number. (b) List all its factors. (c) How many factors does it have?",
+    "23": [
+     "Two lights blink together at 6:00:00 pm. One blinks every 12 seconds and the other every 18 seconds.",
+     "(a) After how many seconds do they next blink together?",
+     "(b) How many more times do they blink together in the 5 minutes after 6:00:00 pm?",
+     "(c) A third light blinks every 20 seconds. When do all three next blink together?"
+    ],
+    "24": [
+     "(a) List the common factors of 84 and 126. [1]",
+     "(b) Find the greatest number of identical boxes. [1]",
+     "(c) How many laddoos and jalebis are in each box then? The shop wants at most 5 sweets in a box. Is this met? [2]"
+    ]
+   },
+   "caseStudy": "A sweet shop packs 84 laddoos and 126 jalebis into identical boxes, with no sweets left over.",
+   "answerKey": [
+    3,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "91 = 7 × 13, so it has factors other than 1 and 91. It is not prime. Always test the primes 2, 3, 5, 7, … up to about the square root.",
+    "18": "A number is divisible by 8 if the number formed by its last three digits is divisible by 8. 9999 ÷ 8 leaves 7, so the answer is 9999 − 7 = 9992 (992 = 8 × 124).",
+    "19": "Example: 66 = 2 × 3 × 11. Others: 70 = 2 × 5 × 7 and 78 = 2 × 3 × 13.",
+    "20": "3 + 37, 11 + 29 and 17 + 23: three ways.",
+    "21": "2: yes, the last digit 6 is even. 4: yes, 56 is divisible by 4. 5: no, the last digit is not 0 or 5. 8: yes, 456 = 8 × 57.",
+    "22": "(a) 60. (b) 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. (c) 12 factors.",
+    "23": "(a) Common multiples of 12 and 18: the smallest is 36 seconds. (b) 5 minutes = 300 seconds. 300 ÷ 36 = 8 remainder 12, so 8 times. (c) The smallest common multiple of 12, 18 and 20 is 180 seconds = 3 minutes, so at 6:03:00 pm.",
+    "24": "(a) 1, 2, 3, 6, 7, 14, 21, 42. (b) 42 boxes. (c) 84 ÷ 42 = 2 laddoos and 126 ÷ 42 = 3 jalebis: 5 sweets in each box. Yes, the condition is met."
+   }
+  },
+  {
+   "id": "g6-perimeter-area-02",
+   "chapter": "Perimeter and Area",
+   "chapterNumber": 6,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A rectangle and a square each have perimeter 36 cm. The rectangle is 12 cm long. Which has the larger area?",
+     "options": [
+      "The rectangle, by 9 cm²",
+      "The square, by 18 cm²",
+      "Both have the same area",
+      "The square, by 9 cm²"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Each side of a square is doubled. Its perimeter becomes",
+     "options": [
+      "8 times",
+      "2 times",
+      "4 times",
+      "the same"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A 6 cm × 4 cm rectangle is cut along a diagonal. The area of each triangle is",
+     "options": [
+      "10 cm²",
+      "20 cm²",
+      "12 cm²",
+      "24 cm²"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many squares of side 2 cm fit exactly in a 10 cm × 6 cm rectangle?",
+     "options": [
+      "15",
+      "60",
+      "16",
+      "30"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Two shapes with the same area always have the same perimeter.",
+     "reason": "A 1 cm × 16 cm rectangle and a 4 cm × 4 cm square both have area 16 cm²."
+    },
+    {
+     "number": 6,
+     "assertion": "The area of a 10 cm × 5 cm rectangle is 50 cm².",
+     "reason": "Area of a rectangle = 2 × (length + breadth)."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A square has side 6 cm, so its area is 6 × 4 = 24 cm².'",
+    "18": "List all the rectangles with whole-number sides (in cm) and area 24 cm². Find their perimeters. Which one has the smallest perimeter?",
+    "19": "A regular hexagon has perimeter 54 cm. Find the length of each side. An equilateral triangle has the same perimeter. Find its side.",
+    "20": "Ravi runs 3 rounds of a rectangular park 40 m × 25 m. Sita runs 4 rounds of a square park of side 30 m. Who runs farther, and by how much?",
+    "21": "A 4 cm × 4 cm square is cut from each corner of a square sheet of side 12 cm. Find the area of the sheet that is left. Find the perimeter of the new shape. What do you notice about the perimeter?",
+    "22": "A triangle is drawn inside an 8 cm × 6 cm rectangle. Its base is one 8 cm side and its top corner is on the opposite side. Find its area. Explain why the area does not depend on where the top corner is.",
+    "23": [
+     "A room is 6 m long and 4 m wide. Its floor is covered with square tiles of side 50 cm.",
+     "(a) Find the area of the floor.",
+     "(b) How many tiles are needed?",
+     "(c) The tiles along the four walls (one tile wide) are a different colour. How many such border tiles are there? Each tile costs ₹45. Find the cost of all the tiles."
+    ],
+    "24": [
+     "(a) Find the area of the big square. [1]",
+     "(b) Find the area of one large triangle. [1]",
+     "(c) Find the area of the small square and of one small triangle. Check that the 7 pieces can add up to the big square if the remaining two pieces total 16 cm². [2]"
+    ]
+   },
+   "caseStudy": "A tangram is made by cutting a square of side 8 cm into 7 pieces. Each of the two large triangles is 1/4 of the square. The small square piece is 1/8 of the square. The two small triangles together are equal to the small square.",
+   "answerKey": [
+    3,
+    1,
+    2,
+    0,
+    3,
+    2
+   ],
+   "solutions": {
+    "17": "6 × 4 = 24 cm is the perimeter, not the area. Area = 6 × 6 = 36 cm².",
+    "18": "1 × 24 (perimeter 50 cm), 2 × 12 (28 cm), 3 × 8 (22 cm), 4 × 6 (20 cm). The 4 cm × 6 cm rectangle has the smallest perimeter.",
+    "19": "Hexagon side = 54 ÷ 6 = 9 cm. Triangle side = 54 ÷ 3 = 18 cm.",
+    "20": "Ravi: 3 × 2 × (40 + 25) = 3 × 130 = 390 m. Sita: 4 × 4 × 30 = 480 m. Sita runs farther, by 90 m.",
+    "21": "Area left = 144 − 4 × 16 = 80 cm². At each corner, two 4 cm edges are removed and two 4 cm edges are added, so the perimeter stays 4 × 12 = 48 cm. The area decreased, but the perimeter did not change.",
+    "22": "Area = ½ × 8 × 6 = 24 cm². The base stays 8 cm and the height is always the width of the rectangle, 6 cm, wherever the top corner is. The triangle is always half of the rectangle.",
+    "23": "(a) 6 × 4 = 24 m². (b) Each tile is 0.5 m × 0.5 m = 0.25 m². 24 ÷ 0.25 = 96 tiles (12 along the length × 8 along the width). (c) Border = 12 + 12 + 8 + 8 − 4 corners counted twice = 36 tiles. Cost of all 96 tiles = 96 × 45 = ₹4,320.",
+    "24": "(a) 64 cm². (b) 64 ÷ 4 = 16 cm². (c) Small square = 64 ÷ 8 = 8 cm². One small triangle = 8 ÷ 2 = 4 cm². Total = 16 + 16 + 8 + 4 + 4 + 16 = 64 cm², which is the area of the big square."
+   }
+  },
+  {
+   "id": "g6-fractions-02",
+   "chapter": "Fractions",
+   "chapterNumber": 7,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which fraction lies between 1/3 and 1/2?",
+     "options": [
+      "1/4",
+      "3/5",
+      "2/5",
+      "2/3"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "3 rotis are shared equally among 4 children. Each child gets",
+     "options": [
+      "1/3 of a roti",
+      "4/3 of a roti",
+      "1/4 of a roti",
+      "3/4 of a roti"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A student wrote 1/2 + 1/3 = 2/5. The correct sum is",
+     "options": [
+      "2/5",
+      "5/6",
+      "2/6",
+      "1/6"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which is the largest: 5/6, 7/9, 3/4 or 11/12?",
+     "options": [
+      "5/6",
+      "11/12",
+      "7/9",
+      "3/4"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "1/2 of a small pizza can be less than 1/3 of a big pizza.",
+     "reason": "The size of a fraction of something depends on the size of the whole."
+    },
+    {
+     "number": 6,
+     "assertion": "2/3 and 6/8 are equivalent fractions.",
+     "reason": "Multiplying the numerator and the denominator by the same number gives an equivalent fraction."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'Of 3/8 and 3/5, the fraction 3/8 is larger, because 8 is larger than 5.'",
+    "18": "Write three fractions equivalent to 4/6. Write 4/6 in lowest terms and mark it on a number line.",
+    "19": "Ravi takes 1/4 of a cake and Meena takes 1/3 of it. What fraction of the cake is left? Who took more, and by how much?",
+    "20": "Arrange 2/3, 3/5, 5/8 and 7/12 in ascending order. Show your method.",
+    "21": "5 friends share 3 chapatis equally. Show two different ways to cut the chapatis. Show that each friend gets 3/5 of a chapati either way.",
+    "22": "Find a fraction with denominator 12 that is greater than 1/2 and less than 2/3. Is there such a fraction with denominator 6? Explain.",
+    "23": [
+     "A water tank is full. On Monday 1/4 of the full tank is used. On Tuesday 1/3 of the full tank is used.",
+     "(a) What fraction of the tank is used in the two days?",
+     "(b) What fraction is left?",
+     "(c) The tank holds 600 L. How many litres are left? How many more litres were used on Tuesday than on Monday?"
+    ],
+    "24": [
+     "(a) How many 1/4-cup measures of rice does one family need? [1]",
+     "(b) How many cups of rice and dal together does one family need? [1]",
+     "(c) She cooks for 3 families. How many 1/4-cup measures of rice and of dal does she need? Write the total amount in cups as a mixed fraction. [2]"
+    ]
+   },
+   "caseStudy": "A recipe for one family needs 3/4 cup of rice and 1/2 cup of dal. Asha has only a 1/4-cup measure.",
+   "answerKey": [
+    2,
+    3,
+    1,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Both fractions have 3 parts. Fifths are bigger pieces than eighths, so 3/5 > 3/8. With the same numerator, the larger denominator gives the smaller fraction.",
+    "18": "8/12, 12/18 and 6/9 (others are possible). Lowest terms: 2/3. Divide 0 to 1 into 3 equal parts and mark the second mark.",
+    "19": "1/4 + 1/3 = 3/12 + 4/12 = 7/12. Left = 5/12. Meena took more, by 4/12 − 3/12 = 1/12.",
+    "20": "With denominator 120: 80/120, 72/120, 75/120, 70/120. Ascending: 7/12, 3/5, 5/8, 2/3.",
+    "21": "Way 1: cut each chapati into 5 equal parts; each friend gets 3 parts = 3/5. Way 2: give each friend 1/2 a chapati (5 halves from 2½ chapatis), then cut the last 1/2 into 5 parts of 1/10 each: 1/2 + 1/10 = 5/10 + 1/10 = 6/10 = 3/5.",
+    "22": "1/2 = 6/12 and 2/3 = 8/12, so 7/12 works. With denominator 6: 1/2 = 3/6 and 2/3 = 4/6, with no whole number between 3 and 4. So there is no such fraction.",
+    "23": "(a) 1/4 + 1/3 = 7/12. (b) 5/12. (c) 5/12 × 600 = 250 L. Monday: 150 L, Tuesday: 200 L. Tuesday used 50 L more.",
+    "24": "(a) 3/4 = 3 quarter-cups, so 3 measures. (b) 3/4 + 1/2 = 5/4 = 1¼ cups. (c) Rice: 3 × 3 = 9 measures. Dal: 3 × 2 = 6 measures. Total 15 quarter-cups = 15/4 = 3¾ cups."
+   }
+  },
+  {
+   "id": "g6-constructions-02",
+   "chapter": "Playing with Constructions",
+   "chapterNumber": 8,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "All the points that are exactly 3 cm from a point O lie on",
+     "options": [
+      "a line through O",
+      "two points only",
+      "a circle with centre O and radius 3 cm",
+      "a square of side 3 cm"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "AB = 6 cm. How many points are 4 cm from A and also 4 cm from B?",
+     "options": [
+      "2",
+      "0",
+      "infinitely many",
+      "1"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The diagonals of every rectangle",
+     "options": [
+      "are equal",
+      "are unequal",
+      "are always perpendicular",
+      "meet at a corner"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Two circles of radius 3 cm have their centres 7 cm apart. The circles",
+     "options": [
+      "meet at 2 points",
+      "meet at 1 point",
+      "are the same circle",
+      "do not meet"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Two circles of radius 4 cm with centres 8 cm apart touch at exactly one point.",
+     "reason": "The sum of the radii is equal to the distance between the centres."
+    },
+    {
+     "number": 6,
+     "assertion": "Every rectangle is a square.",
+     "reason": "Every square is a rectangle."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake: 'To find the points that are 5 cm from both A and B, where AB = 12 cm, I drew circles of radius 5 cm with centres A and B and marked where they meet.' Explain what goes wrong.",
+    "18": "Construct a square of side 4.5 cm. Draw its diagonals and measure them. What do you notice about the diagonals?",
+    "19": "Draw a rectangle 7 cm × 4 cm. Mark the mid-points of its sides and join them in order. Which shape do you get? Measure its sides.",
+    "20": "Draw AB = 6 cm. Find two points that are 5 cm from both A and B. Join them. Where does this line cut AB? Measure the angle between the two lines.",
+    "21": "Draw a circle of radius 3 cm. Using only the compass (set to 3 cm), mark 6 points on the circle, each 3 cm from the next. Join them in order. Name the shape and find its perimeter.",
+    "22": "Construct a rectangle ABCD with AB = 6 cm and diagonal AC = 10 cm. Write your steps and measure BC.",
+    "23": [
+     "Boxed squares: draw a square of side 8 cm.",
+     "(a) Join the mid-points of its sides to get a smaller square. Compare its area with the big square.",
+     "(b) Repeat the step inside the smaller square. What fraction of the big square is the smallest square?",
+     "(c) Write the steps of the construction."
+    ],
+    "24": [
+     "(a) On which line must F lie? [1]",
+     "(b) Draw AB = 10 cm and construct this line. [1]",
+     "(c) Mark the possible positions of F. How many are there? Measure the distance from F to the mid-point of AB. [2]"
+    ]
+   },
+   "caseStudy": "A park designer wants a fountain F that is the same distance from two gates A and B, which are 10 m apart. F must also be 13 m from gate A. Use 1 cm for 1 m.",
+   "answerKey": [
+    2,
+    0,
+    0,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "5 cm + 5 cm = 10 cm, which is less than 12 cm. So the two circles do not meet. There is no point that is 5 cm from both A and B.",
+    "18": "Both diagonals measure about 6.4 cm. They are equal, they cut each other into equal halves, and they meet at a right angle.",
+    "19": "A rhombus (all four sides equal). Each side measures about 4 cm.",
+    "20": "Draw circles of radius 5 cm from A and from B. They meet at two points. The line joining them cuts AB at its mid-point (3 cm from A) and makes a right angle (90°) with AB.",
+    "21": "A regular hexagon. Perimeter = 6 × 3 = 18 cm.",
+    "22": "Draw AB = 6 cm. Draw a right angle at B. With centre A and radius 10 cm, cut the perpendicular at C. Complete the rectangle with D. BC measures 8 cm.",
+    "23": "(a) The smaller square is half of the big square: 32 cm² out of 64 cm². (b) Half of a half: 1/4 of the big square (16 cm²). (c) Draw the square; find each mid-point with a ruler or with arcs; join the mid-points in order; repeat inside the new square.",
+    "24": "(a) The perpendicular bisector of AB (all points the same distance from A and B). (b) Draw arcs from A and B and join their meeting points. (c) The circle of radius 13 cm with centre A cuts the line at 2 points, one on each side of AB. Each is 12 cm from the mid-point of AB."
+   }
+  },
+  {
+   "id": "g6-symmetry-02",
+   "chapter": "Symmetry",
+   "chapterNumber": 9,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The smallest angle of symmetry of a figure is 72°. How many times does it look the same in one full turn?",
+     "options": [
+      "6",
+      "5",
+      "72",
+      "4"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which capital letter has both a horizontal and a vertical line of symmetry?",
+     "options": [
+      "A",
+      "E",
+      "B",
+      "H"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A square is cut along one diagonal. Each triangle has",
+     "options": [
+      "no line of symmetry",
+      "1 line of symmetry",
+      "2 lines of symmetry",
+      "3 lines of symmetry"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A regular octagon has",
+     "options": [
+      "4 lines of symmetry",
+      "8 lines of symmetry",
+      "2 lines of symmetry",
+      "16 lines of symmetry"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A circle looks the same after a turn through any angle about its centre.",
+     "reason": "Every line through the centre of a circle is a line of symmetry."
+    },
+    {
+     "number": 6,
+     "assertion": "The letter Z looks the same after a half turn.",
+     "reason": "The letter Z has a vertical line of symmetry."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A rectangle has 4 lines of symmetry, because a square has 4.'",
+    "18": "Draw or name (a) a shape with exactly 2 lines of symmetry (b) a shape with no line of symmetry that still has rotational symmetry.",
+    "19": "In block form, which digits from 0 to 9 look the same after a half turn? Which two digits change into each other? Write the greatest 4-digit number that looks the same after a half turn.",
+    "20": "A rangoli has 6 equal petals equally spaced around its centre. (a) List its angles of symmetry. (b) One petal is coloured differently. What happens to its rotational symmetry? (c) How many lines of symmetry can it have now, at most?",
+    "21": "In a 4 × 4 grid, one corner square is shaded. Find the smallest number of extra squares to shade so that the pattern has 4 lines of symmetry. Explain.",
+    "22": "For each shape, give the number of lines of symmetry and the smallest angle of symmetry: equilateral triangle, square, rectangle (not a square), regular pentagon, circle.",
+    "23": [
+     "A paper windmill has 4 identical blades, equally spaced.",
+     "(a) Find its smallest angle of symmetry.",
+     "(b) List all its angles of symmetry up to 360°.",
+     "(c) The blades are bent so that the windmill has no line of symmetry. Does it still have rotational symmetry? Explain."
+    ],
+    "24": [
+     "(a) How many lines of symmetry does the logo have? [1]",
+     "(b) Find its smallest angle of symmetry. [1]",
+     "(c) A square replaces the triangle. How do the answers change? Which logo looks the same more times in one full turn? [2]"
+    ]
+   },
+   "caseStudy": "A logo is a circle with an equilateral triangle inside it. The corners of the triangle are on the circle, and the triangle is not coloured differently in any part.",
+   "answerKey": [
+    1,
+    3,
+    1,
+    1,
+    1,
+    2
+   ],
+   "solutions": {
+    "17": "Only a square has 4. A rectangle that is not a square has 2 lines (through the mid-points of opposite sides). Its diagonals are not lines of symmetry.",
+    "18": "(a) A rectangle, or a rhombus, or the letter H. (b) A parallelogram, or the letter S, or a pinwheel.",
+    "19": "0, 1 and 8 stay the same. 6 and 9 change into each other. The greatest such 4-digit number is 9966: after a half turn it reads 9966 again.",
+    "20": "(a) 60°, 120°, 180°, 240°, 300° and 360°. (b) It looks the same only after a full turn, so it no longer has rotational symmetry. (c) At most 1 line (through the centre and the coloured petal).",
+    "21": "3 more squares: shade all four corners. A pattern with 4 lines of symmetry (2 diagonals, 1 vertical, 1 horizontal) must reflect one corner onto every other corner.",
+    "22": "Equilateral triangle: 3 lines, 120°. Square: 4 lines, 90°. Rectangle: 2 lines, 180°. Regular pentagon: 5 lines, 72°. Circle: every line through the centre; every angle.",
+    "23": "(a) 360° ÷ 4 = 90°. (b) 90°, 180°, 270°, 360°. (c) Yes. Bending all blades the same way keeps the 4 equal turns, so it still looks the same after each 90° turn.",
+    "24": "(a) 3 lines. (b) 120°. (c) With a square: 4 lines and 90°. The square logo looks the same 4 times in a full turn, and the triangle logo 3 times."
+   }
+  },
+  {
+   "id": "g6-integers-02",
+   "chapter": "The Other Side of Zero",
+   "chapterNumber": 10,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "CBSE",
+   "book": "NCERT Ganita Prakash",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which is the greatest: −15, −8, −23 or −11?",
+     "options": [
+      "−23",
+      "−8",
+      "−15",
+      "−11"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "(−5) + (+3) + (−2) + (+4) =",
+     "options": [
+      "14",
+      "0",
+      "4",
+      "−14"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A lift is at floor −2. It goes up 5 floors and then down 6 floors. It stops at floor",
+     "options": [
+      "−13",
+      "9",
+      "−3",
+      "1"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many integers are there between −5 and +5 (not counting −5 and +5)?",
+     "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "−3 is greater than −7.",
+     "reason": "On the number line, −3 is to the right of −7."
+    },
+    {
+     "number": 6,
+     "assertion": "(−4) − (−4) = −8.",
+     "reason": "Subtracting a negative number is the same as adding its opposite."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '−6 − (−2) = −8.'",
+    "18": "Fill in the blank so that each row adds up to 0: (a) −7, +3, ___ (b) +9, ___, −4.",
+    "19": "Find two integers whose sum is −3 and whose difference (larger minus smaller) is 9.",
+    "20": "Show −2 with + and − tokens using 4 tokens, then 6 tokens, then 8 tokens. What do you notice about the number of − tokens?",
+    "21": "The temperatures at 6 am on four days in a hill town were −3°C, 2°C, −5°C and −1°C. (a) Which day was the coldest? (b) Find the difference between the warmest and the coldest temperatures. (c) Arrange them from warmest to coldest.",
+    "22": "Ravi has ₹500 in a bank account. He takes out ₹800 (the bank allows this), and then puts in ₹450. Write each balance as an integer. What single deposit brings the balance back to ₹500?",
+    "23": [
+     "A building has floors +1 to +10 above the ground floor (0) and basement floors −1 to −4.",
+     "(a) A lift goes from floor +7 to floor −3. How many floors does it move? Write the movement as an integer.",
+     "(b) Ravi parks at floor −2 and works at floor +6. Write his trip up and his trip down as integers.",
+     "(c) The lift starts at 0 and moves +6, −9, +5, −4. Where does it end? Does it ever go below floor −3?"
+    ],
+    "24": [
+     "(a) The player gets green 4 and then red 7. Where is the player? [1]",
+     "(b) Write (a) as an addition of integers. [1]",
+     "(c) From there, which single card takes the player to +5? Which single card takes the player to −10? Can a card with a number of at most 6 take the player to +5 in one move? [2]"
+    ]
+   },
+   "caseStudy": "In a game on a number line from −10 to +10, a player starts at 0. A green card means 'move right' and a red card means 'move left' by the number on the card.",
+   "answerKey": [
+    1,
+    1,
+    2,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Subtracting −2 means adding +2: −6 − (−2) = −6 + 2 = −4.",
+    "18": "(a) −7 + 3 = −4, so the blank is +4. (b) +9 − 4 = +5, so the blank is −5.",
+    "19": "If the numbers are a and b: a + b = −3 and a − b = 9. Then 2a = 6, so a = 3 and b = −6. Check: 3 + (−6) = −3 and 3 − (−6) = 9.",
+    "20": "4 tokens: 1 plus, 3 minus. 6 tokens: 2 plus, 4 minus. 8 tokens: 3 plus, 5 minus. There are always 2 more − tokens than + tokens, because each +/− pair makes 0.",
+    "21": "(a) The day with −5°C. (b) 2 − (−5) = 7°C. (c) 2°C, −1°C, −3°C, −5°C.",
+    "22": "500 → 500 − 800 = −300 → −300 + 450 = 150. To get back to 500: 500 − 150 = 350, so a deposit of ₹350 (+350).",
+    "23": "(a) 10 floors down: −10. (b) Up: +8. Down: −8. (c) Positions: +6, −3, +2, −2. It ends at floor −2. The lowest floor reached is −3, so it never goes below −3.",
+    "24": "(a) 0 + 4 − 7 = −3. (b) (+4) + (−7) = −3. (c) To +5: green 8. To −10: red 7. No: from −3 to +5 is a move of 8 to the right, which needs a card of 8."
+   }
+  }
+ ],
+ "notes": []
+}

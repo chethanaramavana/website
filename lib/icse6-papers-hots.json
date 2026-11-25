@@ -1,0 +1,1841 @@
+{
+ "papers": [
+  {
+   "id": "icse6-knowing-numbers-02",
+   "chapter": "Knowing Our Numbers",
+   "chapterNumber": 1,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "How many 8-digit numbers are there?",
+     "options": [
+      "99,99,999",
+      "9,00,00,000",
+      "8,99,99,999",
+      "1,00,00,000"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "In 7,35,27,104, the difference between the place values of the two 7s is",
+     "options": [
+      "0",
+      "6,99,99,300",
+      "6,99,93,000",
+      "7,00,07,000"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The smallest 4-digit number made with the digits 3, 0, 8 and 5 (each used once) is",
+     "options": [
+      "0358",
+      "3058",
+      "3508",
+      "3085"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many millimetres are there in 1 km?",
+     "options": [
+      "10,00,000",
+      "1,00,000",
+      "1,000",
+      "10,000"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "1 million is equal to 10 lakh.",
+     "reason": "1 million = 1,000,000 and 10 lakh = 10,00,000."
+    },
+    {
+     "number": 6,
+     "assertion": "The greatest 6-digit number with all digits different is 9,99,999.",
+     "reason": "The greatest 6-digit number is 9,99,999."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '5,06,000 rounded to the nearest lakh is 6,00,000.'",
+    "18": "Use each of the digits 4, 0, 7, 2 and 9 once. Form the greatest and the smallest 5-digit even numbers.",
+    "19": "How many times is the digit 5 written when you write all the numbers from 1 to 100?",
+    "20": "Estimate 7,896 × 412 by rounding each number to the nearest hundred. Then find the exact product. By how much does the estimate differ from the exact value?",
+    "21": "A city has a population of 1,24,56,780. Of these, 63,78,925 are men. Find the number of women and how many more men there are than women. Write both answers in the International system too.",
+    "22": "Sugar is packed in small packets of 125 g each. How many packets can be made from 45 kg 500 g of sugar? How much sugar is left over?",
+    "23": [
+     "A school collects ₹12,45,600 for a trip. A donor gives ₹1,48,320 and each of the 432 students pays the same amount for the rest.",
+     "(a) Find the total amount paid by the students.",
+     "(b) Find the amount paid by each student.",
+     "(c) Check your answer to (b) by estimation."
+    ],
+    "24": [
+     "(a) Find the total for the two months. [1]",
+     "(b) Find how many more parcels were delivered in March. [1]",
+     "(c) The company wants 10,00,000 parcels in total for March, April and May. How many must it deliver in May? Round this to the nearest ten thousand. [2]"
+    ]
+   },
+   "caseStudy": "A delivery company delivered 3,45,680 parcels in March and 2,98,450 parcels in April.",
+   "answerKey": [
+    1,
+    2,
+    1,
+    0,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "The thousands part is 6,000, which is less than 50,000. So 5,06,000 rounds down to 5,00,000.",
+    "18": "Greatest even number: 97,420. Smallest even number: 20,794 (2 first, then 0, and an even digit last).",
+    "19": "In the ones place: 5, 15, …, 95 (10 times). In the tens place: 50 to 59 (10 times). Total = 20.",
+    "20": "Estimate: 7,900 × 400 = 31,60,000. Exact: 7,896 × 412 = 32,53,152. Difference = 93,152.",
+    "21": "Women = 1,24,56,780 − 63,78,925 = 60,77,855. More men = 63,78,925 − 60,77,855 = 3,01,070. International: 6,077,855 women and 301,070 more men.",
+    "22": "45 kg 500 g = 45,500 g. 45,500 ÷ 125 = 364 packets exactly. Nothing is left over.",
+    "23": "(a) 12,45,600 − 1,48,320 = ₹10,97,280. (b) 10,97,280 ÷ 432 = ₹2,540. (c) About 11,00,000 ÷ 400 = 2,750, and 432 is a little more than 400, so about ₹2,500 is sensible.",
+    "24": "(a) 6,44,130. (b) 47,230. (c) 10,00,000 − 6,44,130 = 3,55,870, which is about 3,60,000."
+   }
+  },
+  {
+   "id": "icse6-whole-numbers-02",
+   "chapter": "Whole Numbers",
+   "chapterNumber": 2,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The product of a whole number and the next whole number is always",
+     "options": [
+      "a square number",
+      "odd",
+      "prime",
+      "even"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "How many whole numbers are there between 99 and 201?",
+     "options": [
+      "102",
+      "99",
+      "101",
+      "100"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which is not equal to 25 × 48?",
+     "options": [
+      "25 × 40 + 25 × 8",
+      "25 × 40 × 8",
+      "25 × 4 × 12",
+      "100 × 12"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "a and b are whole numbers and a × b = 0. Which must be true?",
+     "options": [
+      "a = 1",
+      "a = b",
+      "both a and b are 0",
+      "a = 0 or b = 0"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Subtraction of whole numbers is not commutative.",
+     "reason": "8 − 5 = 3, but 5 − 8 is not a whole number."
+    },
+    {
+     "number": 6,
+     "assertion": "There is a largest whole number.",
+     "reason": "Every whole number has a successor."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '98 × 25 = 98 × 20 + 5 = 1,965.'",
+    "18": "Use properties to find (a) 4 × 37 × 25 (b) 999 × 47. Name the property used each time.",
+    "19": "Find 1 + 2 + 3 + … + 50 by pairing the numbers. Explain your method.",
+    "20": "Fill in the blank and name the property: (a) 17 × (__ + 8) = 17 × 12 + 17 × 8 (b) (__ × 25) × 4 = 13 × (25 × 4) (c) 0 + __ = 46",
+    "21": "Find the smallest whole number that must be added to 1,000 so that the sum is exactly divisible by 37.",
+    "22": "Are whole numbers closed under (a) addition (b) subtraction (c) division? Give an example each time.",
+    "23": [
+     "Patterns with whole numbers.",
+     "(a) Find 1 × 8 + 1, 12 × 8 + 2 and 123 × 8 + 3.",
+     "(b) Write the next two lines and their answers without long multiplication.",
+     "(c) Find 11 × 11 and 111 × 111. Predict 1111 × 1111."
+    ],
+    "24": [
+     "(a) Write one expression for the total number of chairs, using the distributive property. [1]",
+     "(b) Find the total number of chairs. [1]",
+     "(c) Each ticket costs ₹99 and every chair is filled. Find the money collected without long multiplication. [2]"
+    ]
+   },
+   "caseStudy": "A hall has 48 rows of chairs with 35 chairs in each row. For a function, 18 more rows of 35 chairs are added.",
+   "answerKey": [
+    3,
+    2,
+    1,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Both parts of 25 must be multiplied by 98: 98 × 20 + 98 × 5 = 1,960 + 490 = 2,450.",
+    "18": "(a) (4 × 25) × 37 = 100 × 37 = 3,700 (commutative and associative). (b) (1,000 − 1) × 47 = 47,000 − 47 = 46,953 (distributive).",
+    "19": "Pair 1 + 50, 2 + 49, …, 25 + 26: 25 pairs, each 51. Sum = 25 × 51 = 1,275.",
+    "20": "(a) 12, distributive property. (b) 13, associative property of multiplication. (c) 46, additive identity (0).",
+    "21": "1,000 = 37 × 27 + 1. The next multiple is 37 × 28 = 1,036. Add 36.",
+    "22": "(a) Yes: 3 + 5 = 8 is a whole number. (b) No: 3 − 5 is not a whole number. (c) No: 3 ÷ 2 is not a whole number.",
+    "23": "(a) 9, 98, 987. (b) 1234 × 8 + 4 = 9,876 and 12345 × 8 + 5 = 98,765. (c) 121 and 12,321. Prediction: 12,34,321 (1234321).",
+    "24": "(a) 35 × (48 + 18). (b) 35 × 66 = 2,310. (c) 2,310 × 99 = 2,310 × 100 − 2,310 = 2,31,000 − 2,310 = ₹2,28,690."
+   }
+  },
+  {
+   "id": "icse6-playing-with-numbers-02",
+   "chapter": "Playing with Numbers",
+   "chapterNumber": 3,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The smallest number greater than 1 that leaves remainder 1 when divided by 2, 3, 4, 5 and 6 is",
+     "options": [
+      "121",
+      "60",
+      "61",
+      "31"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The largest 3-digit number divisible by 11 is",
+     "options": [
+      "980",
+      "900",
+      "990",
+      "999"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "The HCF of two co-prime numbers is",
+     "options": [
+      "1",
+      "their product",
+      "the larger number",
+      "0"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The 3-digit number 3x5 is divisible by 9. The digit x is",
+     "options": [
+      "1",
+      "4",
+      "9",
+      "0"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "HCF × LCM of 12 and 18 is equal to 12 × 18.",
+     "reason": "For any two numbers, HCF × LCM = the product of the two numbers."
+    },
+    {
+     "number": 6,
+     "assertion": "A number divisible by 9 is always divisible by 3.",
+     "reason": "A number divisible by 3 is always divisible by 9."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The LCM of 6 and 8 is 6 × 8 = 48.'",
+    "18": "Find the missing digit if 6_52 is divisible by 11. Check by division.",
+    "19": "Find two numbers between 20 and 40 whose HCF is 6 and whose LCM is 180.",
+    "20": "A hall is 15 m 75 cm long and 11 m 25 cm wide. Find the side of the largest square tile that fits exactly, and the number of tiles needed.",
+    "21": "Find the smallest number which, when increased by 7, is exactly divisible by 12, 18 and 24.",
+    "22": "Show that the sum of any three consecutive whole numbers is divisible by 3. Is the sum of any four consecutive whole numbers always divisible by 4? Give a reason.",
+    "23": [
+     "Simplify step by step.",
+     "(a) 72 ÷ [8 − {6 − (4 − 2)}]",
+     "(b) 5 × [12 − {3 + 2 × (7 − 4)}]",
+     "(c) Put one pair of brackets in 8 + 6 × 3 − 2 to make the value as large as possible. Find that value."
+    ],
+    "24": [
+     "(a) Write the prime factorisations of 20, 30 and 45. [1]",
+     "(b) Find their LCM. [1]",
+     "(c) When do all three next leave together? How many times do they leave together from 7:00 a.m. to 7:00 p.m., counting both times? [2]"
+    ]
+   },
+   "caseStudy": "Three buses leave a depot together at 7:00 a.m. They return and leave again every 20, 30 and 45 minutes.",
+   "answerKey": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "The product is the LCM only for co-prime numbers. 6 = 2 × 3 and 8 = 2 × 2 × 2, so LCM = 2 × 2 × 2 × 3 = 24.",
+    "18": "For 11, the difference between the sums of alternate digits must be 0 or a multiple of 11: (6 + 5) − (x + 2) = 9 − x = 0, so x = 9. 6,952 ÷ 11 = 632.",
+    "19": "30 and 36: HCF = 6 and LCM = 180 (check: 30 × 36 = 1,080 = 6 × 180).",
+    "20": "1,575 cm and 1,125 cm. HCF = 225, so tiles of side 2 m 25 cm. Number = (1,575 ÷ 225) × (1,125 ÷ 225) = 7 × 5 = 35 tiles.",
+    "21": "LCM of 12, 18 and 24 = 72. The number = 72 − 7 = 65.",
+    "22": "n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1), a multiple of 3. Four numbers: 4n + 6, which leaves remainder 2 when divided by 4. Example: 0 + 1 + 2 + 3 = 6 is not divisible by 4. So no.",
+    "23": "(a) 4 − 2 = 2; 6 − 2 = 4; 8 − 4 = 4; 72 ÷ 4 = 18. (b) 7 − 4 = 3; 2 × 3 = 6; 3 + 6 = 9; 12 − 9 = 3; 5 × 3 = 15. (c) (8 + 6) × 3 − 2 = 42 − 2 = 40, the largest value.",
+    "24": "(a) 20 = 2 × 2 × 5, 30 = 2 × 3 × 5, 45 = 3 × 3 × 5. (b) 2 × 2 × 3 × 3 × 5 = 180 minutes = 3 hours. (c) At 10:00 a.m. Times: 7, 10, 1, 4 and 7 o'clock: 5 times."
+   }
+  },
+  {
+   "id": "icse6-integers-02",
+   "chapter": "Integers",
+   "chapterNumber": 4,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The sum of all the integers from −10 to 12 is",
+     "options": [
+      "23",
+      "−23",
+      "2",
+      "0"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which pair of integers has sum −5 and difference (larger − smaller) 11?",
+     "options": [
+      "−3 and 8",
+      "−5 and 11",
+      "6 and −11",
+      "3 and −8"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "What must be added to −14 to get 9?",
+     "options": [
+      "5",
+      "−23",
+      "−5",
+      "23"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The predecessor of −100 is",
+     "options": [
+      "101",
+      "−99",
+      "100",
+      "−101"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "−7 + 7 = 0.",
+     "reason": "−7 and 7 are additive inverses of each other."
+    },
+    {
+     "number": 6,
+     "assertion": "The sum of two negative integers can be positive.",
+     "reason": "−3 + (−4) = −7."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '−9 − (−4) = −13.'",
+    "18": "Find the integer 7 less than −3 and the integer 7 more than −3. How far apart are they on the number line?",
+    "19": "Find two different pairs of integers whose sum is −2. For each pair, find the difference (larger − smaller).",
+    "20": "Place −4, −3, −2, −1, 0, 1, 2, 3 and 4 in a 3 × 3 square, with 0 in the centre, so that every row, column and diagonal adds up to 0.",
+    "21": "Ravi's quiz score changes by +10, −5, +10, −5, … in turn, starting from 0. After how many rounds does he first reach 30? Find his score after 15 rounds.",
+    "22": "Which is greater, and by how much? (a) −15 or −8 (b) −7 + (−9) or −7 − (−9)",
+    "23": [
+     "A diver stands on a platform 5 m above the water (+5). The water surface is 0.",
+     "(a) She dives to −12 m. How many metres does she go down?",
+     "(b) She then rises 4 m and goes down 9 m. Where is she now?",
+     "(c) A fish is at −20 m. How far is it from the diver now, and how far from the platform?"
+    ],
+    "24": [
+     "(a) Name the highest and the lowest temperatures. [1]",
+     "(b) Find the difference between them. [1]",
+     "(c) Write the change from each day to the next as an integer. Between which two days was the fall the greatest? [2]"
+    ]
+   },
+   "caseStudy": "The temperatures in a city at midnight on five days were −4°C, −1°C, 3°C, −6°C and 2°C.",
+   "answerKey": [
+    0,
+    3,
+    3,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Subtracting −4 means adding 4: −9 + 4 = −5.",
+    "18": "−3 − 7 = −10 and −3 + 7 = 4. Distance = 4 − (−10) = 14.",
+    "19": "Examples: −1 and −1 (difference 0); 2 and −4 (difference 6); 5 and −7 (difference 12). Other answers are possible.",
+    "20": "Row 1: 3, −4, 1. Row 2: −2, 0, 2. Row 3: −1, 4, −3. Each row, column and diagonal adds up to 0.",
+    "21": "Scores: 10, 5, 15, 10, 20, 15, 25, 20, 30, …. He first reaches 30 after 9 rounds. After 14 rounds: 7 × 5 = 35. After 15 rounds: 45.",
+    "22": "(a) −8 is greater, by 7. (b) −7 + (−9) = −16 and −7 − (−9) = 2. The second is greater, by 18.",
+    "23": "(a) 5 − (−12) = 17 m. (b) −12 + 4 − 9 = −17 m. (c) From the diver: 20 − 17 = 3 m. From the platform: 5 − (−20) = 25 m.",
+    "24": "(a) Highest 3°C, lowest −6°C. (b) 9°C. (c) +3, +4, −9, +8. The greatest fall was from day 3 to day 4 (−9°C)."
+   }
+  },
+  {
+   "id": "icse6-sets-02",
+   "chapter": "Sets",
+   "chapterNumber": 5,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The set of letters of the word BOOKKEEPER has how many elements?",
+     "options": [
+      "5",
+      "10",
+      "6",
+      "7"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which set is empty?",
+     "options": [
+      "{x : x is a whole number less than 1}",
+      "{x : x is a natural number less than 1}",
+      "{0}",
+      "{x : x is an even prime number}"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which collection is not a set?",
+     "options": [
+      "The factors of 12",
+      "The months with 31 days",
+      "The vowels of the English alphabet",
+      "The tall students of a class"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A = {x : x is a two-digit number whose digits add up to 3}. Then n(A) =",
+     "options": [
+      "2",
+      "3",
+      "1",
+      "4"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "{1, 2, 2, 3} and {3, 2, 1} are the same set.",
+     "reason": "In a set, order does not matter and a repeated element is counted once."
+    },
+    {
+     "number": 6,
+     "assertion": "The set of even numbers between 3 and 5 is empty.",
+     "reason": "4 is an even number between 3 and 5."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The set of letters of the word SCHOOL is {S, C, H, O, O, L}, so it has 6 elements.'",
+    "18": "Write in roster form and find the number of elements: {x : x is a factor of 24 and a multiple of 3}.",
+    "19": "Write {1, 4, 9, 16, 25} in set-builder form.",
+    "20": "Is each set finite, infinite or empty? Give a reason. (a) {x : x is an odd number divisible by 2} (b) {x : x is a multiple of 7} (c) {x : x is a day of the week whose name begins with T}",
+    "21": "A = {x : x is a prime number less than 20} and B = {x : x is an odd number less than 20}. Write both in roster form. Which elements are in A but not in B? Which are in B but not in A?",
+    "22": "Make three different sets, each with exactly 4 elements: one set of letters, one of numbers and one of objects. Describe each in words and in roster form.",
+    "23": [
+     "Four students list their sports. Ravi: cricket, football. Asha: badminton. Neha: cricket, badminton. John: football.",
+     "(a) Write the set S of all the sports played, and find n(S).",
+     "(b) Write C, the set of students who play cricket, and F, the set of students who play football.",
+     "(c) Which student is in both C and F? Write the set of students who do not play football."
+    ],
+    "24": [
+     "(a) Find the number of students in each club. [1]",
+     "(b) Write the set of students who are in both clubs. [1]",
+     "(c) Write the set of students in at least one club and find its number of elements. Explain why it is not 4 + 3. [2]"
+    ]
+   },
+   "caseStudy": "The maths club is {Amit, Bela, Chitra, Dev} and the art club is {Bela, Esha, Farhan}.",
+   "answerKey": [
+    2,
+    1,
+    3,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "A repeated element is listed once: {S, C, H, O, L}. It has 5 elements.",
+    "18": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Multiples of 3 among them: {3, 6, 12, 24}. 4 elements.",
+    "19": "{x : x is the square of a natural number less than 6} (or {x : x = n × n, n is a natural number, n ≤ 5}).",
+    "20": "(a) Empty: an odd number is never divisible by 2. (b) Infinite: the multiples of 7 never end. (c) Finite: {Tuesday, Thursday}.",
+    "21": "A = {2, 3, 5, 7, 11, 13, 17, 19}. B = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}. In A but not in B: {2}. In B but not in A: {1, 9, 15}.",
+    "22": "Example: {a, e, i, o} (the first four vowels); {2, 4, 6, 8} (even numbers less than 10); {pen, pencil, eraser, ruler} (things in a geometry box). Other answers are possible.",
+    "23": "(a) S = {cricket, football, badminton}, n(S) = 3. (b) C = {Ravi, Neha}, F = {Ravi, John}. (c) Ravi. {Asha, Neha}.",
+    "24": "(a) 4 and 3. (b) {Bela}. (c) {Amit, Bela, Chitra, Dev, Esha, Farhan}: 6 elements. Bela is in both clubs, so she is counted only once."
+   }
+  },
+  {
+   "id": "icse6-fractions-02",
+   "chapter": "Fractions",
+   "chapterNumber": 6,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which fraction is closest to 1?",
+     "options": [
+      "9/10",
+      "4/5",
+      "6/5",
+      "7/8"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "3/4 of a number is 27. Then 2/3 of the number is",
+     "options": [
+      "18",
+      "36",
+      "24",
+      "20"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Compare 2/3 of 3/4 with 3/4 of 2/3.",
+     "options": [
+      "2/3 of 3/4 is greater",
+      "They cannot be compared",
+      "3/4 of 2/3 is greater",
+      "They are equal"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A pipe fills 2/5 of a tank in one hour. The empty tank fills in",
+     "options": [
+      "3 hours",
+      "5 hours",
+      "2½ hours",
+      "2 hours"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "6 × 2/3 is less than 6.",
+     "reason": "Multiplying a whole number by a proper fraction gives a smaller number."
+    },
+    {
+     "number": 6,
+     "assertion": "5/9 > 5/7.",
+     "reason": "For the same numerator, the larger denominator gives the smaller fraction."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 2/3 ÷ 3/5 = 3/2 × 3/5 = 9/10.",
+    "18": "Find three fractions between 1/3 and 1/2.",
+    "19": "(a) By what must 3/8 be multiplied to get 3? (b) By what must 1½ be divided to get 3/4?",
+    "20": "Simplify: 2½ × 4/5 + 3/4 ÷ 1½ − 1/3.",
+    "21": "A man spends 1/3 of his salary on rent and 2/5 of the rest on food. He has ₹9,600 left. Find his salary.",
+    "22": "A rope 13½ m long is cut into pieces of 3/4 m each. How many pieces are there? Each piece is then cut in half. How long is each new piece?",
+    "23": [
+     "Sita, Gita and Rita share a pizza. Sita eats 1/4 of it. Gita eats 1/3 of the rest. Rita eats 1/2 of what is then left.",
+     "(a) What fraction of the pizza does Gita eat?",
+     "(b) What fraction does Rita eat?",
+     "(c) What fraction is left? Who ate the most?"
+    ],
+    "24": [
+     "(a) How much does he drink in the morning? [1]",
+     "(b) How much water is left in the bottle after the afternoon? [1]",
+     "(c) He must drink 2½ L in the day. How many more litres must he drink? What fraction of a full bottle is this? [2]"
+    ]
+   },
+   "caseStudy": "Arjun's water bottle holds 1½ L. He drinks 2/3 of a full bottle in the morning and 1/4 L in the afternoon.",
+   "answerKey": [
+    0,
+    2,
+    3,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "To divide, multiply by the reciprocal of the divisor, not of the first fraction: 2/3 × 5/3 = 10/9 = 1 1/9.",
+    "18": "1/3 = 8/24 and 1/2 = 12/24. Three fractions: 9/24 = 3/8, 10/24 = 5/12 and 11/24.",
+    "19": "(a) 3 ÷ 3/8 = 3 × 8/3 = 8. (b) 3/2 ÷ 3/4 = 3/2 × 4/3 = 2.",
+    "20": "5/2 × 4/5 = 2. 3/4 ÷ 3/2 = 3/4 × 2/3 = 1/2. 2 + 1/2 − 1/3 = 12/6 + 3/6 − 2/6 = 13/6 = 2 1/6.",
+    "21": "After rent: 2/3 is left. Food: 2/5 of 2/3 = 4/15. Left: 2/3 − 4/15 = 6/15 = 2/5 of the salary = ₹9,600. Salary = 9,600 × 5/2 = ₹24,000.",
+    "22": "27/2 ÷ 3/4 = 27/2 × 4/3 = 18 pieces. Each new piece = 3/4 ÷ 2 = 3/8 m.",
+    "23": "(a) Rest = 3/4. Gita: 1/3 × 3/4 = 1/4. (b) Left: 3/4 − 1/4 = 1/2. Rita: 1/2 × 1/2 = 1/4. (c) Left: 1/2 − 1/4 = 1/4. All three ate the same amount, 1/4 each.",
+    "24": "(a) 2/3 × 3/2 = 1 L. (b) 3/2 − 1 − 1/4 = 1/4 L. (c) He has drunk 1¼ L. More needed: 2½ − 1¼ = 1¼ L. As a fraction of a bottle: 5/4 ÷ 3/2 = 5/6."
+   }
+  },
+  {
+   "id": "icse6-decimals-02",
+   "chapter": "Decimals",
+   "chapterNumber": 7,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which is the greatest?",
+     "options": [
+      "0.69",
+      "0.077",
+      "0.0777",
+      "0.7"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The number halfway between 2.4 and 2.5 is",
+     "options": [
+      "2.41",
+      "2.45",
+      "2.5",
+      "2.49"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "₹4.05 + ₹2.95 + ₹0.50 =",
+     "options": [
+      "₹6.50",
+      "₹7.50",
+      "₹7.05",
+      "₹8.00"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A student wrote 0.5 + 0.25 = 0.30. The correct answer is",
+     "options": [
+      "7.5",
+      "0.025",
+      "0.75",
+      "0.30"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "0.50 = 0.5.",
+     "reason": "Zeros at the end of the decimal part do not change the value."
+    },
+    {
+     "number": 6,
+     "assertion": "0.25 > 0.3, because 25 > 3.",
+     "reason": "To compare decimals, compare the digits place by place from the left."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: '12.5 − 4.75 = 8.30.'",
+    "18": "Write a decimal with three decimal places that lies between 3.45 and 3.46. How many such decimals are there?",
+    "19": "Write as decimals and arrange in ascending order: 3/4, 7/10, 13/20, 0.72.",
+    "20": "A shopkeeper has 15 m of cloth. He sells 4.35 m, 3.8 m and 2.75 m. How much is left? Is it enough for 2 shirts that need 2.1 m each?",
+    "21": "Use 5, 0, 3 and 8 once each to make the greatest and the smallest decimals with one digit before the decimal point. Find their difference.",
+    "22": "Four parcels weigh 2.075 kg, 1.9 kg, 3 kg 250 g and 850 g. Find the total weight in kg. Which parcel is the heaviest?",
+    "23": [
+     "On a school trip, each student pays ₹45.50 bus fare, ₹30.75 for the entry ticket and ₹62.25 for lunch.",
+     "(a) Find the cost for one student.",
+     "(b) A student has ₹150. How much is left?",
+     "(c) The school pays the same cost for 8 teachers. Find the total for the teachers. Is ₹1,100 enough?"
+    ],
+    "24": [
+     "(a) Arrange the girls from the longest jump to the shortest. [1]",
+     "(b) Find the difference between the longest and the shortest jumps. [1]",
+     "(c) Asha's second jump is 0.06 m longer than her first. Does she now beat Riya? By how much? Give the answer in cm too. [2]"
+    ]
+   },
+   "caseStudy": "In a long-jump event, Asha jumps 3.47 m, Riya jumps 3.5 m and Meena jumps 3.408 m.",
+   "answerKey": [
+    3,
+    1,
+    1,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Write 12.5 as 12.50 and line up the decimal points: 12.50 − 4.75 = 7.75.",
+    "18": "For example 3.455. There are 9 such decimals: 3.451, 3.452, …, 3.459.",
+    "19": "0.75, 0.7, 0.65 and 0.72. Ascending: 13/20, 7/10, 0.72, 3/4.",
+    "20": "Sold: 4.35 + 3.8 + 2.75 = 10.9 m. Left: 15 − 10.9 = 4.1 m. Two shirts need 4.2 m, so it is not enough (0.1 m short).",
+    "21": "Greatest: 8.530. Smallest: 0.358. Difference = 8.172.",
+    "22": "2.075 + 1.9 + 3.25 + 0.85 = 8.075 kg. The heaviest is the 3 kg 250 g parcel.",
+    "23": "(a) 45.50 + 30.75 + 62.25 = ₹138.50. (b) 150 − 138.50 = ₹11.50. (c) 8 × 138.50 = ₹1,108. No, ₹1,100 is ₹8 short.",
+    "24": "(a) Riya (3.5 m), Asha (3.47 m), Meena (3.408 m). (b) 3.5 − 3.408 = 0.092 m. (c) 3.47 + 0.06 = 3.53 m. Yes, by 0.03 m = 3 cm."
+   }
+  },
+  {
+   "id": "icse6-ratio-proportion-02",
+   "chapter": "Ratio and Proportion",
+   "chapterNumber": 8,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The ratio of 40 minutes to 2 hours is",
+     "options": [
+      "1 : 3",
+      "20 : 1",
+      "1 : 20",
+      "3 : 1"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which ratio is the greatest?",
+     "options": [
+      "7 : 9",
+      "3 : 4",
+      "5 : 6",
+      "2 : 3"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Two numbers are in the ratio 3 : 5 and their sum is 64. The larger number is",
+     "options": [
+      "24",
+      "40",
+      "39",
+      "25"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The ratio of boys to girls in a class is 4 : 5. What fraction of the class are girls?",
+     "options": [
+      "5/4",
+      "4/5",
+      "5/9",
+      "4/9"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The ratio 2 kg : 500 g is 4 : 1.",
+     "reason": "Both quantities must be in the same unit before a ratio is formed."
+    },
+    {
+     "number": 6,
+     "assertion": "3 : 4 and 4 : 3 are equal ratios.",
+     "reason": "A ratio compares two quantities by division."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The ratio of 75 paise to ₹3 is 75 : 3 = 25 : 1.'",
+    "18": "Divide ₹840 between A and B in the ratio 3 : 4. Check your answer in two ways.",
+    "19": "Are 2.5, 4, 5 and 8 in proportion, in this order? Give a reason.",
+    "20": "The ratio of boys to girls in a class is 3 : 2. There are 8 more boys than girls. Find the number of students. Then 4 more girls join. Find the new ratio of boys to girls.",
+    "21": "On a map, 2 cm stands for 5 km. Two towns are 13 cm apart on the map. Find the real distance. Two other towns are 37.5 km apart. How far apart are they on the map?",
+    "22": "Find the whole number x if 3 : x = x : 27. What is x called?",
+    "23": [
+     "A juice is made by mixing mango pulp and water in the ratio 2 : 5.",
+     "(a) How much water is needed for 600 mL of pulp?",
+     "(b) How much pulp and how much water are in 2.8 L of juice?",
+     "(c) Riya mixes 1 L of pulp with 2 L of water. Is her juice stronger or weaker than the recipe? Explain using ratios."
+    ],
+    "24": [
+     "(a) Write width : height in simplest form. [1]",
+     "(b) Find the height of the enlarged photo. [1]",
+     "(c) A frame is 50 cm wide and 35 cm high. Will a print with the same ratio and a width of 50 cm fit in it? Explain. [2]"
+    ]
+   },
+   "caseStudy": "A school photo is 15 cm wide and 10 cm high. It is enlarged so that its width becomes 45 cm.",
+   "answerKey": [
+    0,
+    2,
+    1,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "₹3 = 300 paise. 75 : 300 = 1 : 4.",
+    "18": "7 parts = ₹840, so 1 part = ₹120. A = ₹360, B = ₹480. Check: 360 + 480 = 840, and 360 : 480 = 3 : 4.",
+    "19": "Product of extremes = 2.5 × 8 = 20. Product of means = 4 × 5 = 20. They are equal, so yes.",
+    "20": "1 part = 8 (3 parts − 2 parts). Boys 24, girls 16, total 40. New ratio = 24 : 20 = 6 : 5.",
+    "21": "1 cm stands for 2.5 km. 13 × 2.5 = 32.5 km. 37.5 ÷ 2.5 = 15 cm.",
+    "22": "x × x = 3 × 27 = 81, so x = 9. It is the mean proportional of 3 and 27.",
+    "23": "(a) 600 × 5/2 = 1,500 mL. (b) 7 parts = 2.8 L, so 1 part = 0.4 L. Pulp 0.8 L, water 2 L. (c) Her ratio 1 : 2 means pulp is 1/2 of the water. The recipe 2 : 5 means pulp is 2/5 of the water. 1/2 > 2/5, so her juice is stronger.",
+    "24": "(a) 15 : 10 = 3 : 2. (b) 45 × 2/3 = 30 cm. (c) Height = 50 × 2/3 = 33⅓ cm, which is less than 35 cm. Yes, it fits."
+   }
+  },
+  {
+   "id": "icse6-percentage-unitary-method-02",
+   "chapter": "Percentage and Unitary Method",
+   "chapterNumber": 9,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which is the largest: 3/5, 58% or 0.62?",
+     "options": [
+      "They are all equal",
+      "3/5",
+      "0.62",
+      "58%"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "40% of a number is 60. The number is",
+     "options": [
+      "100",
+      "24",
+      "150",
+      "240"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "12 pens cost ₹180. How many pens can be bought for ₹105?",
+     "options": [
+      "8",
+      "7",
+      "9",
+      "6"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "In a class, 45% of the students are boys. There are 22 girls. How many students are in the class?",
+     "options": [
+      "18",
+      "49",
+      "50",
+      "40"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "50% of 30 is equal to 30% of 50.",
+     "reason": "a% of b = (a × b) ÷ 100 = b% of a."
+    },
+    {
+     "number": 6,
+     "assertion": "If 5 workers paint a wall in 4 days, then 10 workers take 8 days.",
+     "reason": "More workers finish the same work in less time."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'Scoring 25 out of 40 marks is 25%.'",
+    "18": "Which is the better buy: 6 pens for ₹72 or 8 pens for ₹92? Use the unitary method.",
+    "19": "Riya scored 36 out of 45 in English and 42 out of 50 in Maths. In which subject did she do better? Use percentages.",
+    "20": "A school has 600 students. 35% come by bus, 25% walk and the rest come by car. How many come by car? How many more come by bus than walk?",
+    "21": "A car uses 8 L of petrol for 120 km. How much petrol does it need for 375 km? How far can it go on 20 L?",
+    "22": "A book costs ₹250. Its price rises by 20%. Find the new price. What percent of the new price is the old price?",
+    "23": [
+     "A shop sells 3 kg of apples for ₹270.",
+     "(a) Find the cost of 1 kg.",
+     "(b) Find the cost of 7.5 kg.",
+     "(c) On Sunday the shop gives 10% off. How many whole kg can Asha buy with ₹500, and how much money is left?"
+    ],
+    "24": [
+     "(a) How many votes did A get? [1]",
+     "(b) What percent of the votes, and how many votes, did C get? [1]",
+     "(c) By how many votes did A beat B? If 50 of B's votes had gone to A, what percent would A have got? [2]"
+    ]
+   },
+   "caseStudy": "In a school election, 800 students voted. Candidate A got 45% of the votes, B got 35% and C got the rest.",
+   "answerKey": [
+    2,
+    2,
+    1,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Percent = 25/40 × 100 = 62.5%, not 25%.",
+    "18": "First offer: 72 ÷ 6 = ₹12 a pen. Second: 92 ÷ 8 = ₹11.50 a pen. 8 pens for ₹92 is the better buy.",
+    "19": "English: 36/45 × 100 = 80%. Maths: 42/50 × 100 = 84%. She did better in Maths.",
+    "20": "Car: 100% − 60% = 40% of 600 = 240. Bus 210 and walk 150, so 60 more come by bus.",
+    "21": "1 L for 15 km. 375 ÷ 15 = 25 L. 20 × 15 = 300 km.",
+    "22": "New price = 250 + 50 = ₹300. 250/300 × 100 = 83⅓%.",
+    "23": "(a) ₹90. (b) 7.5 × 90 = ₹675. (c) Sunday price = ₹81 a kg. 6 kg cost ₹486 and 7 kg cost ₹567, so 6 kg, with ₹14 left.",
+    "24": "(a) 45% of 800 = 360. (b) 20%, which is 160 votes. (c) B got 280, so A won by 80. With 50 more: 410/800 × 100 = 51.25%."
+   }
+  },
+  {
+   "id": "icse6-speed-time-distance-02",
+   "chapter": "Speed, Time and Distance",
+   "chapterNumber": 10,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A car travels 150 km in 2 hours 30 minutes. Its speed is",
+     "options": [
+      "50 km/h",
+      "65 km/h",
+      "60 km/h",
+      "75 km/h"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Ravi walks 1 km in 12 minutes. His speed is",
+     "options": [
+      "12 km/h",
+      "10 km/h",
+      "1/12 km/h",
+      "5 km/h"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A train at 80 km/h leaves at 9:15 a.m. and travels 200 km. It arrives at",
+     "options": [
+      "11:15 a.m.",
+      "12:15 p.m.",
+      "11:30 a.m.",
+      "11:45 a.m."
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Two cyclists start from the same place and ride in opposite directions at 12 km/h and 15 km/h. After 2 hours, they are",
+     "options": [
+      "6 km apart",
+      "30 km apart",
+      "27 km apart",
+      "54 km apart"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "If the speed is doubled, the time for the same distance becomes half.",
+     "reason": "Time = Distance ÷ Speed."
+    },
+    {
+     "number": 6,
+     "assertion": "A bus at 40 km/h for 3 hours travels farther than a car at 50 km/h for 2 hours.",
+     "reason": "A car is always faster than a bus."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A car goes 90 km in 1½ hours, so its speed is 90 × 1½ = 135 km/h.'",
+    "18": "Ravi cycles 6 km to school at 12 km/h. He leaves at 7:40 a.m. When does he reach school?",
+    "19": "A bus covers 240 km in 4 hours. At the same speed, how long does it take for 380 km? Give the answer in hours and minutes.",
+    "20": "Meena walks to the market at 4 km/h and takes 45 minutes. She returns by auto at 24 km/h. How long does the return take? Find the total time.",
+    "21": "Two towns are 180 km apart. A car leaves one town at 60 km/h. At the same time a bus leaves the other town at 30 km/h, towards the car. After how long, and how far from the car's town, do they meet?",
+    "22": "A runner runs 4 laps of a 400 m track in 6 minutes 40 seconds. Find his speed in metres per second and in metres per minute.",
+    "23": [
+     "A family drives 240 km to a hill station. They drive the first 150 km at 60 km/h, stop for 30 minutes, and drive the rest at 45 km/h.",
+     "(a) Find the time for the first part.",
+     "(b) Find the time for the second part.",
+     "(c) They start at 6:00 a.m. When do they arrive? Find the total time."
+    ],
+    "24": [
+     "(a) Find the journey time. [1]",
+     "(b) Find the average speed. [1]",
+     "(c) A faster train covers the same distance at 70 km/h. It leaves at 6:30 a.m. Does it reach Mysuru before the first train? By how much? [2]"
+    ]
+   },
+   "caseStudy": "A train leaves Bengaluru at 6:00 a.m. and reaches Mysuru, 140 km away, at 8:20 a.m.",
+   "answerKey": [
+    2,
+    3,
+    3,
+    3,
+    0,
+    2
+   ],
+   "solutions": {
+    "17": "Speed = distance ÷ time, not distance × time. 90 ÷ 1½ = 60 km/h.",
+    "18": "Time = 6 ÷ 12 = ½ hour = 30 minutes. He reaches at 8:10 a.m.",
+    "19": "Speed = 60 km/h. Time = 380 ÷ 60 = 6⅓ hours = 6 hours 20 minutes.",
+    "20": "Distance = 4 × ¾ = 3 km. Return time = 3 ÷ 24 = ⅛ hour = 7½ minutes. Total = 52½ minutes.",
+    "21": "They close the gap at 90 km/h. Time = 180 ÷ 90 = 2 hours. The car travels 60 × 2 = 120 km from its town.",
+    "22": "Distance = 1,600 m. Time = 400 seconds. Speed = 4 m/s = 240 m per minute.",
+    "23": "(a) 150 ÷ 60 = 2½ hours. (b) 90 ÷ 45 = 2 hours. (c) Total = 2½ + ½ + 2 = 5 hours. They arrive at 11:00 a.m.",
+    "24": "(a) 2 hours 20 minutes. (b) 140 ÷ 2⅓ = 60 km/h. (c) Time = 140 ÷ 70 = 2 hours, so it arrives at 8:30 a.m. No: it reaches 10 minutes after the first train."
+   }
+  },
+  {
+   "id": "icse6-algebraic-expressions-03",
+   "chapter": "Algebraic Expressions",
+   "chapterNumber": 11,
+   "paperNumber": "03",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 03: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The value of x² − 2x when x = −3 is",
+     "options": [
+      "15",
+      "3",
+      "−3",
+      "−15"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The perimeter of an equilateral triangle of side (2a + 3) cm is",
+     "options": [
+      "(3a + 6) cm",
+      "(6a + 9) cm",
+      "(2a + 9) cm",
+      "(6a + 3) cm"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "Which pair are like terms?",
+     "options": [
+      "3x²y and −5yx²",
+      "7a and 7b",
+      "2pq and 2p",
+      "4xy and 4x²y"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "If p = 2 and q = −1, which expression has the largest value?",
+     "options": [
+      "p²q",
+      "p − q",
+      "pq",
+      "p + q"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "3x + 2x = 5x.",
+     "reason": "Like terms are added by adding their coefficients."
+    },
+    {
+     "number": 6,
+     "assertion": "2a + 3b = 5ab.",
+     "reason": "2a and 3b are unlike terms."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 7x − (3x − 4) = 7x − 3x − 4 = 4x − 4.",
+    "18": "Write an expression for (a) the age of a man who is 5 years more than three times his son's age s (b) the number of months in y years and m months.",
+    "19": "If a = 3, b = −2 and c = 1, find the value of a² + b² − c² − ab.",
+    "20": "Ravi thinks of a number n. He doubles it, adds 6, halves the result and then subtracts n. Write an expression for each step. Show that the answer is always 3.",
+    "21": "A rectangle is (3x + 2) cm long and (x − 1) cm wide. Write its perimeter as an expression and find it when x = 4. What is the smallest whole number x for which the width is more than 0?",
+    "22": "What must be added to 3a² − 4a + 7 to get 5a² + a − 2? Check your answer by putting a = 1.",
+    "23": [
+     "Houses are made with matchsticks in a row: 1 house uses 5 sticks, 2 houses use 9 sticks and 3 houses use 13 sticks.",
+     "(a) How many sticks do 6 houses need?",
+     "(b) Write an expression for the number of sticks for n houses.",
+     "(c) How many houses can be made with 81 sticks? Can exactly 100 sticks be used with none left over? Explain."
+    ],
+    "24": [
+     "(a) Write an expression for the Saturday family's cost. [1]",
+     "(b) Write an expression for the total cost of both families. [1]",
+     "(c) Take x = 250 and y = 150. Find the total. How much more did the Saturday family pay than the Sunday family? [2]"
+    ]
+   },
+   "caseStudy": "A cinema charges ₹x for an adult ticket and ₹y for a child ticket. On Saturday a family of 2 adults and 3 children goes. On Sunday a family of 3 adults and 1 child goes.",
+   "answerKey": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "A minus sign before a bracket changes the sign of every term inside: −(3x − 4) = −3x + 4. So 7x − 3x + 4 = 4x + 4.",
+    "18": "(a) 3s + 5 years. (b) 12y + m months.",
+    "19": "9 + 4 − 1 − (3 × −2) = 12 + 6 = 18.",
+    "20": "Steps: 2n; 2n + 6; (2n + 6) ÷ 2 = n + 3; n + 3 − n = 3. The n cancels, so the answer is always 3.",
+    "21": "Perimeter = 2[(3x + 2) + (x − 1)] = 2(4x + 1) = 8x + 2 cm. At x = 4: 34 cm. x − 1 > 0 needs x = 2 or more, so the smallest is 2.",
+    "22": "(5a² + a − 2) − (3a² − 4a + 7) = 2a² + 5a − 9. Check at a = 1: 3 − 4 + 7 = 6 and 2 + 5 − 9 = −2; 6 + (−2) = 4 = 5 + 1 − 2.",
+    "23": "(a) 5 + 5 × 4 = 25. (b) 4n + 1. (c) 4n + 1 = 81 gives n = 20 houses. 4n + 1 = 100 gives 4n = 99, which is not a multiple of 4, so no.",
+    "24": "(a) 2x + 3y. (b) (2x + 3y) + (3x + y) = 5x + 4y. (c) 1,250 + 600 = ₹1,850. Saturday: 500 + 450 = ₹950. Sunday: 750 + 150 = ₹900. ₹50 more on Saturday."
+   }
+  },
+  {
+   "id": "icse6-linear-equations-02",
+   "chapter": "Simple Linear Equations",
+   "chapterNumber": 12,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "For what value of k is x = 3 the solution of 2x + k = 11?",
+     "options": [
+      "8",
+      "3",
+      "5",
+      "17"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Step 1: 3x − 4 = 11. Step 2: 3x = 7. Step 3: x = 7/3. The first wrong step is",
+     "options": [
+      "Step 3",
+      "Step 1",
+      "There is no mistake",
+      "Step 2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "I think of a number, multiply it by 4 and subtract 7. The answer is 25. The number is",
+     "options": [
+      "8",
+      "4.5",
+      "18",
+      "7"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The sum of three consecutive whole numbers is 48. The largest of them is",
+     "options": [
+      "16",
+      "15",
+      "18",
+      "17"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "x = 5 is the solution of 3x − 2 = 13.",
+     "reason": "3 × 5 − 2 = 13."
+    },
+    {
+     "number": 6,
+     "assertion": "If 2x = 10, then x = 20.",
+     "reason": "Both sides of an equation can be divided by the same non-zero number."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'x/4 = 3, so x = 3/4.'",
+    "18": "Make up a word problem whose equation is 5x + 15 = 65. Then solve it.",
+    "19": "Ravi is 4 years older than Sita. The sum of their ages is 30. Find their ages.",
+    "20": "A father is 3 times as old as his son. In 12 years, the sum of their ages will be 72. Find their present ages.",
+    "21": "The perimeter of an isosceles triangle is 32 cm. Each equal side is 4 cm longer than the base. Find the three sides.",
+    "22": "A number is doubled and 7 is added. The result is the same as when the number is tripled and 2 is subtracted. Find the number and check your answer.",
+    "23": [
+     "Tickets for a school show cost ₹50 for a student and ₹80 for an adult. 120 tickets were sold for ₹6,900.",
+     "(a) Let x tickets be student tickets. Write the number of adult tickets.",
+     "(b) Form an equation for the money and solve it.",
+     "(c) Find the number of each type of ticket and check your answer."
+    ],
+    "24": [
+     "(a) Find the cost of an 8 km ride in Taxi A. [1]",
+     "(b) A ride in Taxi A costs ₹340. Write an equation for the number of km, k. [1]",
+     "(c) Solve the equation in (b). For what distance do the two taxis cost the same? [2]"
+    ]
+   },
+   "caseStudy": "Taxi A charges ₹40 to start and ₹15 for each km. Taxi B charges ₹25 for each km and nothing to start.",
+   "answerKey": [
+    2,
+    3,
+    0,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "To undo dividing by 4, multiply both sides by 4: x = 3 × 4 = 12. Check: 12/4 = 3.",
+    "18": "Example: 'Five notebooks and a ₹15 pen cost ₹65. Find the cost of one notebook.' 5x = 50, so x = 10. One notebook costs ₹10. (Any problem that gives 5x + 15 = 65 is correct.)",
+    "19": "x + (x + 4) = 30 ⇒ 2x = 26 ⇒ x = 13. Sita 13 years, Ravi 17 years.",
+    "20": "Son x, father 3x. (x + 12) + (3x + 12) = 72 ⇒ 4x = 48 ⇒ x = 12. Son 12 years, father 36 years.",
+    "21": "b + 2(b + 4) = 32 ⇒ 3b + 8 = 32 ⇒ b = 8. Sides 8 cm, 12 cm and 12 cm.",
+    "22": "2n + 7 = 3n − 2 ⇒ n = 9. Check: 2 × 9 + 7 = 25 and 3 × 9 − 2 = 25.",
+    "23": "(a) 120 − x. (b) 50x + 80(120 − x) = 6,900 ⇒ 9,600 − 30x = 6,900 ⇒ 30x = 2,700 ⇒ x = 90. (c) 90 student and 30 adult tickets. Check: 4,500 + 2,400 = 6,900.",
+    "24": "(a) 40 + 15 × 8 = ₹160. (b) 40 + 15k = 340. (c) 15k = 300 ⇒ k = 20 km. Same cost: 40 + 15d = 25d ⇒ 10d = 40 ⇒ d = 4 km."
+   }
+  },
+  {
+   "id": "icse6-basic-geometry-02",
+   "chapter": "Basic Geometrical Ideas",
+   "chapterNumber": 13,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Five points are marked so that no three are on one line. How many line segments join them in pairs?",
+     "options": [
+      "5",
+      "15",
+      "10",
+      "20"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "In △ABC, a line segment is drawn from A to a point D on BC. How many triangles are there in the figure?",
+     "options": [
+      "1",
+      "3",
+      "4",
+      "2"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In a circle of radius 6 cm, the longest chord is",
+     "options": [
+      "12 cm",
+      "6 cm",
+      "18 cm",
+      "36 cm"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Which statement is always true?",
+     "options": [
+      "A diameter is a chord",
+      "An arc is a line segment",
+      "A radius is a chord",
+      "A chord is a diameter"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Two different straight lines can meet at more than one point.",
+     "reason": "Two different straight lines meet at one point at most."
+    },
+    {
+     "number": 6,
+     "assertion": "A square is a convex quadrilateral.",
+     "reason": "In a convex quadrilateral, both diagonals lie inside it."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake: 'Ray AB and ray BA are the same ray, because both pass through A and B.' Explain the difference.",
+    "18": "Points A, B, C and D are marked on a line in this order. Name all the line segments. How many are there?",
+    "19": "Draw a circle with centre O. Mark and name a radius, a chord that is not a diameter, a minor arc and a sector.",
+    "20": "In △ABC, D and E are two points on BC. AD and AE are joined. How many triangles are there in the figure? Name them.",
+    "21": "A circle has centre O and radius 5 cm. P is 3 cm from O, Q is 5 cm from O and R is 7 cm from O. Does each point lie in the interior, on the circle or in the exterior? What is the greatest distance between two points on the circle?",
+    "22": "Draw a quadrilateral ABCD. Name its sides, angles and diagonals, one pair of opposite sides and one pair of adjacent angles.",
+    "23": [
+     "Points A, B, C, D and E are marked on a circle.",
+     "(a) How many chords can be drawn by joining them in pairs?",
+     "(b) How many triangles have three of these points as vertices?",
+     "(c) How many quadrilaterals have four of these points as vertices?"
+    ],
+    "24": [
+     "(a) What is AB called? Find its length. [1]",
+     "(b) A lamp L is 10 m from O. Is it inside, on or outside the edge of the pond? [1]",
+     "(c) A path CD across the pond does not pass through O. Can CD be longer than AB? Explain. Name the region bounded by OA, OC and the arc AC. [2]"
+    ]
+   },
+   "caseStudy": "A park has a circular pond with centre O and radius 7 m. A straight bridge AB crosses the pond through O.",
+   "answerKey": [
+    2,
+    1,
+    0,
+    0,
+    3,
+    0
+   ],
+   "solutions": {
+    "17": "Ray AB starts at A and goes on through B. Ray BA starts at B and goes on through A. They have different starting points and go in opposite directions.",
+    "18": "AB, AC, AD, BC, BD, CD: 6 line segments.",
+    "19": "OA is a radius. A chord PQ that does not pass through O. The shorter arc between P and Q is a minor arc. The region between OA, OB and arc AB is a sector.",
+    "20": "The points on BC are B, D, E and C, which make 6 segments: BD, BE, BC, DE, DC, EC. Each gives one triangle with A: ABD, ABE, ABC, ADE, ADC, AEC. So 6 triangles.",
+    "21": "P is in the interior (3 < 5). Q is on the circle (5 = 5). R is in the exterior (7 > 5). The greatest distance is the diameter, 10 cm.",
+    "22": "Sides AB, BC, CD, DA. Angles ∠A, ∠B, ∠C, ∠D. Diagonals AC and BD. Opposite sides: AB and CD. Adjacent angles: ∠A and ∠B.",
+    "23": "(a) 4 + 3 + 2 + 1 = 10 chords. (b) 10 triangles (each choice of 3 points: ABC, ABD, ABE, ACD, ACE, ADE, BCD, BCE, BDE, CDE). (c) 5 quadrilaterals (leave out one point each time).",
+    "24": "(a) A diameter, 14 m long. (b) Outside, because 10 m > 7 m. (c) No. The diameter is the longest chord of a circle. The region is a sector."
+   }
+  },
+  {
+   "id": "icse6-angles-triangles-quadrilaterals-02",
+   "chapter": "Angles, Triangles and Quadrilaterals",
+   "chapterNumber": 14,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "One angle is 3 times another, and together they make a right angle. The larger angle is",
+     "options": [
+      "22.5°",
+      "67.5°",
+      "135°",
+      "60°"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which set of lengths can be the sides of a triangle?",
+     "options": [
+      "2 cm, 3 cm, 6 cm",
+      "3 cm, 4 cm, 7 cm",
+      "4 cm, 5 cm, 8 cm",
+      "5 cm, 5 cm, 10 cm"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A quadrilateral has four equal sides but no right angle. It is a",
+     "options": [
+      "rhombus",
+      "rectangle",
+      "square",
+      "trapezium"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "How many diagonals does a hexagon have?",
+     "options": [
+      "6",
+      "9",
+      "12",
+      "3"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "Every square is a rhombus.",
+     "reason": "A rhombus has four equal sides."
+    },
+    {
+     "number": 6,
+     "assertion": "A triangle can have two right angles.",
+     "reason": "A right angle measures 90°."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A triangle with sides 6 cm, 6 cm and 6 cm is isosceles but not equilateral.'",
+    "18": "Find the smaller angle between the hands of a clock at 4:00 and at 7:00. Classify each angle.",
+    "19": "True or false? Give a reason. (a) Every rectangle is a parallelogram. (b) Every rhombus is a square. (c) A trapezium can have a right angle.",
+    "20": "∠AOB and ∠BOC together make a straight angle. ∠AOB = (2x + 10)° and ∠BOC = (3x − 5)°. Find x and both angles. Classify each angle.",
+    "21": "Draw a quadrilateral ABCD and both its diagonals, meeting at O. How many triangles can you see? Name them.",
+    "22": "Name the polygon with the fewest sides that has (a) 2 diagonals (b) 5 diagonals (c) 9 diagonals.",
+    "23": [
+     "A triangle has sides 7 cm, 7 cm and x cm, where x is a whole number.",
+     "(a) What values can x take?",
+     "(b) For which value of x is the triangle equilateral?",
+     "(c) For which values of x is the perimeter more than 25 cm?"
+    ],
+    "24": [
+     "(a) Is ABCD a parallelogram? Give a reason. [1]",
+     "(b) Classify △ABD and △CBD by their sides. [1]",
+     "(c) A fence goes round the garden and along the path AC, which is 11 m long. Find the total length of fence. Can AC be 14 m long? Explain. [2]"
+    ]
+   },
+   "caseStudy": "A kite-shaped garden ABCD has AB = AD = 5 m and CB = CD = 8 m. The diagonal AC is a path.",
+   "answerKey": [
+    1,
+    2,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "All three sides are equal, so it is equilateral. An equilateral triangle is also isosceles (it has at least two equal sides).",
+    "18": "4:00: 4 × 30° = 120°, obtuse. 7:00: 7 × 30° = 210°, so the smaller angle is 150°, obtuse.",
+    "19": "(a) True: its opposite sides are parallel. (b) False: a rhombus need not have right angles. (c) True: a trapezium can have two right angles at one of its non-parallel sides.",
+    "20": "(2x + 10) + (3x − 5) = 180 ⇒ 5x = 175 ⇒ x = 35. ∠AOB = 80° (acute), ∠BOC = 100° (obtuse).",
+    "21": "8 triangles: AOB, BOC, COD, DOA, ABC, BCD, CDA, DAB.",
+    "22": "(a) Quadrilateral (4 sides). (b) Pentagon (5 sides). (c) Hexagon (6 sides).",
+    "23": "(a) The third side must be less than 7 + 7 = 14, so x = 1, 2, …, 13. (b) x = 7. (c) 14 + x > 25 ⇒ x > 11, so x = 12 or 13.",
+    "24": "(a) No. Its opposite sides are not equal (AB = 5 m but CD = 8 m). (b) Both are isosceles. (c) 5 + 5 + 8 + 8 + 11 = 37 m. No: in △ABC, AC must be less than AB + BC = 13 m."
+   }
+  },
+  {
+   "id": "icse6-3d-shapes-nets-02",
+   "chapter": "Three-Dimensional Shapes and Nets",
+   "chapterNumber": 15,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "For a cube, F + V − E =",
+     "options": [
+      "26",
+      "2",
+      "6",
+      "0"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "When a net of a cube is folded, a face and the face opposite to it",
+     "options": [
+      "can be any two faces",
+      "are never next to each other in the net",
+      "are always at the two ends of the net",
+      "are always next to each other in the net"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "A pyramid has a base with 6 sides. How many edges does it have?",
+     "options": [
+      "18",
+      "7",
+      "6",
+      "12"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A cuboid 4 cm × 3 cm × 2 cm is cut into 1 cm cubes. How many cubes are there?",
+     "options": [
+      "12",
+      "26",
+      "9",
+      "24"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A cylinder has no vertex.",
+     "reason": "A vertex is a corner where edges meet, and a cylinder has no such corner."
+    },
+    {
+     "number": 6,
+     "assertion": "A cone has two flat faces.",
+     "reason": "A cone has one curved surface."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A triangular prism has 6 faces, 9 edges and 6 vertices.'",
+    "18": "Draw or describe two different nets of a cube.",
+    "19": "A solid has 5 faces: 2 triangles and 3 rectangles. Name the solid and give its numbers of edges and vertices.",
+    "20": "Make a table of F, V, E and F + V − E for a cube, a square pyramid and a triangular prism. What do you notice?",
+    "21": "A cube of side 3 cm is painted red on all faces and cut into 1 cm cubes. How many small cubes have (a) 3 red faces (b) 2 red faces (c) no red face?",
+    "22": "Which solid does each net make? Give one real object for each. (a) 1 square and 4 triangles (b) 2 circles and 1 rectangle (c) 1 circle and 1 part of a larger circle (a sector)",
+    "23": [
+     "Cubes of side 1 cm are stacked to make a cuboid 4 cm long, 3 cm wide and 2 cm high.",
+     "(a) How many cubes are used?",
+     "(b) How many cubes can be seen from the top?",
+     "(c) All six faces of the cuboid are painted. How many cubes have no paint? Explain."
+    ],
+    "24": [
+     "(a) Which number is opposite 2? [1]",
+     "(b) Can the faces 1, 6 and 3 meet at one corner? Explain. [1]",
+     "(c) Which numbers can meet at a corner with 1 and 2? Find the greatest possible total of three faces that meet at a corner. [2]"
+    ]
+   },
+   "caseStudy": "A toy maker makes a die (a cube) on which the numbers on opposite faces add up to 7.",
+   "answerKey": [
+    1,
+    1,
+    3,
+    3,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "A triangular prism has 5 faces (2 triangles and 3 rectangles), not 6. Check: 5 + 6 − 9 = 2.",
+    "18": "Example 1: a row of 4 squares with one square above and one below the second square (a cross). Example 2: a row of 4 squares with one square above the first and one below the fourth. Other nets are possible.",
+    "19": "A triangular prism: 9 edges and 6 vertices.",
+    "20": "Cube 6, 8, 12 → 2. Square pyramid 5, 5, 8 → 2. Triangular prism 5, 6, 9 → 2. F + V − E is 2 every time.",
+    "21": "(a) 8 (the corners). (b) 12 (one on each edge). (c) 1 (the centre cube).",
+    "22": "(a) Square pyramid: a tent or a pyramid. (b) Cylinder: a tin can. (c) Cone: an ice-cream cone.",
+    "23": "(a) 4 × 3 × 2 = 24. (b) 4 × 3 = 12. (c) None. The cuboid is only 2 cubes high, so every cube touches the top or the bottom face.",
+    "24": "(a) 5. (b) No. 1 and 6 are opposite faces, so they cannot meet at a corner. (c) 3 or 4 (not 6, which is opposite 1, and not 5, which is opposite 2). Greatest total: 4 + 5 + 6 = 15 (no two of these are opposite)."
+   }
+  },
+  {
+   "id": "icse6-symmetry-practical-geometry-02",
+   "chapter": "Symmetry and Practical Geometry",
+   "chapterNumber": 16,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "Which capital letter has exactly two lines of symmetry?",
+     "options": [
+      "M",
+      "T",
+      "A",
+      "H"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "A point P is 2.5 cm from a mirror line. How far is P from its image?",
+     "options": [
+      "5 cm",
+      "2.5 cm",
+      "1.25 cm",
+      "7.5 cm"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "To construct an angle of 75°, you can",
+     "options": [
+      "bisect the angle between 60° and 90°",
+      "add 60° and 45°",
+      "bisect 60°",
+      "bisect 90°"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "The perpendicular bisector of AB = 8 cm meets AB at M. Then AM =",
+     "options": [
+      "2 cm",
+      "4 cm",
+      "16 cm",
+      "8 cm"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "An equilateral triangle has 3 lines of symmetry.",
+     "reason": "Each line of symmetry joins a corner to the mid-point of the opposite side."
+    },
+    {
+     "number": 6,
+     "assertion": "An angle of 45° is made by bisecting an angle of 60°.",
+     "reason": "Bisecting an angle divides it into two equal angles."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake: 'To bisect AB = 6 cm, I drew arcs of radius 2 cm from A and from B.' Explain what goes wrong and what radius to use.",
+    "18": "Half of a figure is drawn on squared paper, next to a vertical mirror line. Explain how to complete the figure correctly.",
+    "19": "In block form, which of the digits 0 to 9 have a horizontal line of symmetry? Which have a vertical line of symmetry?",
+    "20": "Construct an angle of 120° with ruler and compass and bisect it. Which angles do you get? Which angle do you get if you add 90° to one of them?",
+    "21": "Draw a line l and a point P that is 3 cm from l. Construct the perpendicular from P to l. Mark the image P′ of P in l. How far is P′ from P?",
+    "22": "Construct an angle of 90° with ruler and compass. Then use bisection to construct an angle of 22½°. Write your steps.",
+    "23": [
+     "Draw AB = 8 cm.",
+     "(a) Construct the perpendicular bisector of AB, meeting AB at M.",
+     "(b) Mark a point P on it so that PA = 5 cm. Measure PM.",
+     "(c) Is △PAB symmetrical? Name its line of symmetry."
+    ],
+    "24": [
+     "(a) A red dot is 2 cm to the left of the vertical line. Where is its image in this line? [1]",
+     "(b) A small flower is drawn at one corner. How many flowers must there be in all, so that all 4 lines of symmetry still hold? [1]",
+     "(c) One more flower is drawn at the mid-point of the top edge. How many more flowers must be drawn for all 4 lines of symmetry to hold? Where? [2]"
+    ]
+   },
+   "caseStudy": "A rangoli on a square tile has 4 lines of symmetry: the two diagonals, one vertical line and one horizontal line through the centre.",
+   "answerKey": [
+    3,
+    0,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "2 cm + 2 cm = 4 cm, which is less than 6 cm, so the arcs do not meet. The radius must be more than half of AB, that is more than 3 cm.",
+    "18": "For each corner of the drawn half, count the squares to the mirror line. Mark a point the same number of squares on the other side, on the same horizontal level. Join the new points in the same order.",
+    "19": "Horizontal: 0, 1, 3 and 8. Vertical: 0, 1 and 8.",
+    "20": "Bisecting 120° gives 60° and 60°. 60° + 90° = 150°.",
+    "21": "PP′ is perpendicular to l and P′ is 3 cm on the other side of l. So PP′ = 6 cm.",
+    "22": "Construct 90°. Bisect it to get 45°. Bisect 45° to get 22½°. Keep all the arcs.",
+    "23": "(a) Construction. (b) PM = 3 cm (because 3, 4 and 5 make a right-angled triangle). (c) Yes. PM is the line of symmetry, because PA = PB and M is the mid-point of AB.",
+    "24": "(a) 2 cm to the right of the vertical line, at the same height. (b) 4 flowers, one at each corner. (c) 3 more, at the mid-points of the other three edges."
+   }
+  },
+  {
+   "id": "icse6-mensuration-conversions-02",
+   "chapter": "Perimeter, Area and Unit Conversions",
+   "chapterNumber": 17,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "A square has the same perimeter as a 12 cm × 8 cm rectangle. The area of the square is",
+     "options": [
+      "96 cm²",
+      "100 cm²",
+      "400 cm²",
+      "40 cm²"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "The length and the breadth of a rectangle are both doubled. Its area becomes",
+     "options": [
+      "4 times",
+      "the same",
+      "2 times",
+      "8 times"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "2.5 km + 750 m =",
+     "options": [
+      "3,250 m",
+      "757.5 m",
+      "1,000 m",
+      "3,025 m"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "A clock shows 10:45 a.m. What time does it show 2 hours 35 minutes later?",
+     "options": [
+      "12:20 p.m.",
+      "1:20 p.m.",
+      "12:80 p.m.",
+      "1:10 p.m."
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "A 6 cm × 4 cm rectangle and an 8 cm × 3 cm rectangle have the same area.",
+     "reason": "6 × 4 = 24 and 8 × 3 = 24."
+    },
+    {
+     "number": 6,
+     "assertion": "1 m² = 100 cm².",
+     "reason": "1 m = 100 cm."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'A 5 m × 3 m room has area 5 × 3 = 15 m, and its perimeter is 16 m².'",
+    "18": "Add 3 kg 450 g, 2.8 kg and 750 g. Give the answer in kg and in g.",
+    "19": "A wire is bent into a square of side 9 cm. It is then bent into a rectangle 12 cm long. Find the breadth. Which shape has the larger area?",
+    "20": "A lawn 20 m × 15 m has a path 2 m wide all round it, outside the lawn. Find the area of the path.",
+    "21": "A train leaves at 10:50 p.m. and arrives at 5:35 a.m. the next day. Find the journey time. At 60 km/h, how far does it travel?",
+    "22": "How many tiles 25 cm × 20 cm cover a floor 5 m × 4 m? Each tile costs ₹12.50. Find the total cost.",
+    "23": [
+     "A farmer has 60 m of fencing to make a rectangular pen.",
+     "(a) Give three possible sizes (whole metres) and their areas.",
+     "(b) Which size gives the greatest area?",
+     "(c) Now a wall forms one long side, and the fence makes the other three sides. Try 20 m, 30 m and 40 m for the side opposite the wall. Which gives the greatest area?"
+    ],
+    "24": [
+     "(a) Find the area of the floor. [1]",
+     "(b) Find the length of carpet needed. [1]",
+     "(c) Find the cost. If the strips run along the 15 m side, how many strips are needed? Check that this gives the same length as in (b). [2]"
+    ]
+   },
+   "caseStudy": "A rectangular hall is 15 m long and 10 m wide. Carpet comes in strips 2.5 m wide and costs ₹180 for each metre of length.",
+   "answerKey": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "The units are swapped. Area = 15 m² and perimeter = 2(5 + 3) = 16 m.",
+    "18": "3.45 + 2.8 + 0.75 = 7 kg = 7,000 g.",
+    "19": "Length of wire = 36 cm. Breadth = 36 ÷ 2 − 12 = 6 cm. Square area 81 cm², rectangle area 72 cm². The square is larger.",
+    "20": "Outer rectangle = 24 m × 19 m = 456 m². Lawn = 300 m². Path = 156 m².",
+    "21": "10:50 p.m. to midnight = 1 h 10 min. Midnight to 5:35 a.m. = 5 h 35 min. Total = 6 h 45 min = 6.75 h. Distance = 60 × 6.75 = 405 km.",
+    "22": "Floor = 500 × 400 = 2,00,000 cm². Tile = 500 cm². Tiles = 400. Cost = 400 × 12.50 = ₹5,000.",
+    "23": "(a) Examples: 20 × 10 = 200 m², 18 × 12 = 216 m², 15 × 15 = 225 m². (b) The 15 m × 15 m square. (c) 20 m: other sides 20 m, area 400 m². 30 m: other sides 15 m, area 450 m². 40 m: other sides 10 m, area 400 m². 30 m gives the greatest area.",
+    "24": "(a) 150 m². (b) 150 ÷ 2.5 = 60 m. (c) 60 × 180 = ₹10,800. Strips needed = 10 ÷ 2.5 = 4. Length = 4 × 15 = 60 m, the same as (b)."
+   }
+  },
+  {
+   "id": "icse6-data-handling-02",
+   "chapter": "Data Handling",
+   "chapterNumber": 18,
+   "paperNumber": "02",
+   "grade": 6,
+   "board": "ICSE",
+   "book": "CISCE Mathematics",
+   "focus": "Paper 02: higher-order thinking (HOTS), reasoning and find-the-mistake questions.",
+   "mcqs": [
+    {
+     "number": 1,
+     "question": "The mean of 5 numbers is 12. The number 20 is removed. The mean of the other 4 numbers is",
+     "options": [
+      "12",
+      "11",
+      "8",
+      "10"
+     ]
+    },
+    {
+     "number": 2,
+     "question": "Which set of data has median 6?",
+     "options": [
+      "3, 9, 6, 1, 7",
+      "1, 2, 6, 10",
+      "4, 5, 8, 9",
+      "6, 6, 8, 9"
+     ]
+    },
+    {
+     "number": 3,
+     "question": "In a pictograph, one symbol stands for 8 students. Half a symbol stands for",
+     "options": [
+      "8 students",
+      "16 students",
+      "2 students",
+      "4 students"
+     ]
+    },
+    {
+     "number": 4,
+     "question": "Each value in a set of data is increased by 5. The mean",
+     "options": [
+      "decreases by 5",
+      "becomes 5 times",
+      "increases by 5",
+      "stays the same"
+     ]
+    }
+   ],
+   "assertions": [
+    {
+     "number": 5,
+     "assertion": "The mean of 2, 4, 6, 8 and 100 is greater than its median.",
+     "reason": "One very large value pulls the mean up but does not change the median much."
+    },
+    {
+     "number": 6,
+     "assertion": "The median of 1, 2, 3 and 4 is 2.",
+     "reason": "For an even number of values, the median is the mean of the two middle values."
+    }
+   ],
+   "written": {
+    "17": "Find the mistake and correct it: 'The median of 9, 2, 7, 4, 5 is 7, because 7 is in the middle.'",
+    "18": "Make a set of 5 whole numbers with mean 8 and median 7.",
+    "19": "The mean of 6 numbers is 15. One more number is added and the mean becomes 16. Find the new number.",
+    "20": "A batsman's scores are 25, 40, 0, 60, 35, 40 and 10. Find the mean, the median and the range.",
+    "21": "Books issued: Monday 30, Tuesday 45, Wednesday 20, Thursday 50, Friday 35. Choose a scale for a bar graph and give each bar height. Find the mean number of books a day.",
+    "22": "The mean of 4 numbers is 20. Three of them are 15, 25 and 18. Find the fourth. If each number is doubled, what is the new mean?",
+    "23": [
+     "Marks of 10 students: 6, 8, 5, 9, 6, 7, 6, 10, 4, 9.",
+     "(a) Make a frequency table.",
+     "(b) Find the mean and the median.",
+     "(c) How many students scored more than the mean?"
+    ],
+    "24": [
+     "(a) Find the total rainfall. [1]",
+     "(b) Find the mean daily rainfall. [1]",
+     "(c) Find the median. On how many days was the rainfall more than the mean? [2]"
+    ]
+   },
+   "caseStudy": "A class recorded the rainfall (in mm) for one week: 12, 0, 5, 18, 0, 7, 14.",
+   "answerKey": [
+    3,
+    0,
+    3,
+    2,
+    0,
+    3
+   ],
+   "solutions": {
+    "17": "Arrange the data in order first: 2, 4, 5, 7, 9. The middle value is 5.",
+    "18": "Example: 5, 6, 7, 10, 12. The total is 40, so the mean is 8, and the middle value is 7. Other answers are possible.",
+    "19": "Old total = 90. New total = 7 × 16 = 112. The new number = 22.",
+    "20": "Total = 210, mean = 30. In order: 0, 10, 25, 35, 40, 40, 60. Median = 35. Range = 60 − 0 = 60.",
+    "21": "With 1 unit = 5 books: 6, 9, 4, 10 and 7 units. Mean = 180 ÷ 5 = 36 books.",
+    "22": "Total = 80, so the fourth number = 80 − 58 = 22. Doubling every number doubles the mean: 40.",
+    "23": "(a) 4:1, 5:1, 6:3, 7:1, 8:1, 9:2, 10:1. (b) Total = 70, mean = 7. In order: 4, 5, 6, 6, 6, 7, 8, 9, 9, 10. Median = (6 + 7) ÷ 2 = 6.5. (c) 4 students (8, 9, 9 and 10).",
+    "24": "(a) 56 mm. (b) 56 ÷ 7 = 8 mm. (c) In order: 0, 0, 5, 7, 12, 14, 18. Median = 7 mm. More than 8 mm on 3 days (12, 18 and 14)."
+   }
+  }
+ ],
+ "notes": []
+}
