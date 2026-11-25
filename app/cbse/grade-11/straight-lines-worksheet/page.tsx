@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Download, Printer } from 'lucide-react';
+import { ArrowLeft, Download, ListChecks, Printer } from 'lucide-react';
 import Brand from '@/app/brand';
 import Tex from '@/app/notes/tex';
 import worksheet from '@/lib/free-worksheets/g11-straight-lines.json';
@@ -18,13 +18,14 @@ function Parts({ parts }: { parts: Part[] }) {
   return <ol className="ws-parts">{parts.map((p, i) => <li key={i}><span className="ws-label">({p.label})</span> <Tex>{p.text}</Tex></li>)}</ol>;
 }
 
-/** A free worksheet: signed-in students can open it, print it or download the PDF. It has no answer key. */
+/** A free worksheet: signed-in students can open it, print it or download the PDF. The step-by-step solutions are on a separate page. */
 export default function StraightLinesWorksheet() {
   return <main className="ws-page">
     <nav className="ws-actions" aria-label="Worksheet actions">
       <a href="/cbse/grade-11/ch-9"><ArrowLeft aria-hidden="true" />Straight Lines chapter</a>
       <a href="/worksheets/grade11-straight-lines-worksheet.pdf" download><Download aria-hidden="true" />Download PDF</a>
       <PrintButton><Printer aria-hidden="true" />Print</PrintButton>
+      <a href="/cbse/grade-11/straight-lines-worksheet/solutions"><ListChecks aria-hidden="true" />Solutions</a>
     </nav>
     <article className="ws-sheet">
       <header className="ws-head"><Brand /><div><strong>Straight Lines</strong><span>Grade 11 · CBSE · Free practice worksheet</span></div></header>

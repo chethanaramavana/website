@@ -36,3 +36,11 @@
   .ws-sheet { border: 0; padding: 0; }
   .ws-section, .ws-note, .ws-formulas td:first-child { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+.sol-question { border-bottom: 1px dashed #c9d1dc; padding-bottom: 12px; }
+.sol-box { background: #f4f6f9; border-left: 4px solid #011e47; border-radius: 6px; padding: 8px 14px; margin-top: 8px; }
+.sol-steps { margin: 4px 0; padding-left: 22px; }
+.sol-steps li { margin: 4px 0; }
+.sol-answer { margin: 6px 0 2px; background: #fbf4e3; border-radius: 4px; padding: 4px 8px; }
+.sol-part { margin: 6px 0 10px; }
+.sol-part > p { margin: 0; }
+@media print { .sol-box, .sol-answer { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

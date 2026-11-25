@@ -1,0 +1,442 @@
+{
+  "solutions": [
+    {
+      "n": 1,
+      "steps": [
+        "Use $m=\\dfrac{y_2-y_1}{x_2-x_1}$ with $(x_1,y_1)=(-3,2)$ and $(x_2,y_2)=(5,-6)$.",
+        "$m=\\dfrac{-6-2}{5-(-3)}=\\dfrac{-8}{8}=-1$"
+      ],
+      "answer": "$m=-1$"
+    },
+    {
+      "n": 2,
+      "steps": [
+        "Write $\\tan\\theta=-\\sqrt{3}$, where $0^\\circ\\le\\theta<180^\\circ$.",
+        "$\\tan 60^\\circ=\\sqrt{3}$. The tangent is negative in the second quadrant, so $\\theta=180^\\circ-60^\\circ=120^\\circ$."
+      ],
+      "answer": "$\\theta=120^\\circ$"
+    },
+    {
+      "n": 3,
+      "steps": [
+        "Slope of the line through $(0,1)$ and $(3,7)$: $\\dfrac{7-1}{3-0}=2$.",
+        "Slope of the line through $(2,k)$ and $(4,7)$: $\\dfrac{7-k}{4-2}=\\dfrac{7-k}{2}$.",
+        "Parallel lines have equal slopes: $\\dfrac{7-k}{2}=2$, so $7-k=4$."
+      ],
+      "answer": "$k=3$"
+    },
+    {
+      "n": 4,
+      "steps": [
+        "Use $y=mx+c$ with $m=\\dfrac{2}{3}$ and $c=-4$: $y=\\dfrac{2}{3}x-4$.",
+        "Multiply by 3: $3y=2x-12$."
+      ],
+      "answer": "$2x-3y-12=0$"
+    },
+    {
+      "n": 5,
+      "steps": [
+        "Move the constant to the right side: $4x-3y=-24$.",
+        "Divide by $-24$: $\\dfrac{x}{-6}+\\dfrac{y}{8}=1$.",
+        "Compare with $\\dfrac{x}{a}+\\dfrac{y}{b}=1$."
+      ],
+      "answer": "$x$-intercept $=-6$, $y$-intercept $=8$"
+    },
+    {
+      "n": 6,
+      "steps": [
+        "Slope of $kx+4y-7=0$: $m_1=-\\dfrac{k}{4}$.",
+        "Slope of $3x-2y+5=0$: $m_2=-\\dfrac{3}{-2}=\\dfrac{3}{2}$.",
+        "Perpendicular lines: $m_1m_2=-1$, so $-\\dfrac{k}{4}\\cdot\\dfrac{3}{2}=-1$.",
+        "$\\dfrac{3k}{8}=1$"
+      ],
+      "answer": "$k=\\dfrac{8}{3}$"
+    },
+    {
+      "n": 7,
+      "steps": [
+        "Use $d=\\dfrac{|Ax_1+By_1+C|}{\\sqrt{A^2+B^2}}$ with $A=12$, $B=-5$, $C=1$ and $(x_1,y_1)=(-2,3)$.",
+        "$d=\\dfrac{|12(-2)-5(3)+1|}{\\sqrt{144+25}}=\\dfrac{|-24-15+1|}{13}=\\dfrac{38}{13}$"
+      ],
+      "answer": "$d=\\dfrac{38}{13}$ units"
+    },
+    {
+      "n": 8,
+      "steps": [
+        "The $x$ and $y$ coefficients must be the same in both equations. Divide the second equation by 2: $5x-12y-\\dfrac{13}{2}=0$.",
+        "Now $C_1=7$ and $C_2=-\\dfrac{13}{2}$, with $\\sqrt{A^2+B^2}=\\sqrt{25+144}=13$.",
+        "$d=\\dfrac{\\left|7-\\left(-\\frac{13}{2}\\right)\\right|}{13}=\\dfrac{27/2}{13}=\\dfrac{27}{26}$"
+      ],
+      "answer": "$d=\\dfrac{27}{26}$ units"
+    },
+    {
+      "n": 9,
+      "parts": [
+        {
+          "label": "a",
+          "steps": [
+            "Slope of $2x+5y=9$ is $-\\dfrac{2}{5}$. The perpendicular slope is the negative reciprocal."
+          ],
+          "answer": "$\\dfrac{5}{2}$"
+        },
+        {
+          "label": "b",
+          "steps": [
+            "A line parallel to the $y$-axis has the form $x=a$. Three units to the left gives $a=-3$."
+          ],
+          "answer": "$x=-3$"
+        },
+        {
+          "label": "c",
+          "steps": [
+            "On the $y$-axis, $x=0$. Then $4y=12$, so $y=3$."
+          ],
+          "answer": "$(0,\\,3)$"
+        },
+        {
+          "label": "d",
+          "steps": [
+            "$m=\\tan 60^\\circ=\\sqrt{3}$ and $c=0$."
+          ],
+          "answer": "$y=\\sqrt{3}\\,x$"
+        },
+        {
+          "label": "e",
+          "steps": [
+            "Write the line as $3x-4y-10=0$. Then $d=\\dfrac{|0-0-10|}{\\sqrt{9+16}}=\\dfrac{10}{5}$."
+          ],
+          "answer": "$2$"
+        },
+        {
+          "label": "f",
+          "steps": [
+            "$m=\\dfrac{a-b}{b-a}=\\dfrac{-(b-a)}{b-a}$"
+          ],
+          "answer": "$-1$"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "parts": [
+        {
+          "label": "a",
+          "steps": [
+            "Slope of $2x-3y=5$ is $\\dfrac{2}{3}$. The second line is $y=\\dfrac{4}{6}x+\\dfrac{1}{6}$, with slope $\\dfrac{2}{3}$.",
+            "The slopes are equal and the lines are different, so they are parallel."
+          ],
+          "answer": "True"
+        },
+        {
+          "label": "b",
+          "steps": [
+            "For a vertical line, $x_2=x_1$. The slope formula divides by zero, so the slope is not defined."
+          ],
+          "answer": "False"
+        },
+        {
+          "label": "c",
+          "steps": [
+            "Put $x=2$, $y=-1$: $3(2)+2(-1)=6-2=4$. The equation is true."
+          ],
+          "answer": "True"
+        },
+        {
+          "label": "d",
+          "steps": [
+            "Put $x=0$: $-5y+10=0$, so $y=2$. The $y$-intercept is $2$, not $-2$."
+          ],
+          "answer": "False"
+        },
+        {
+          "label": "e",
+          "steps": [
+            "This is the condition for perpendicular lines."
+          ],
+          "answer": "True"
+        },
+        {
+          "label": "f",
+          "steps": [
+            "$y=3$ is a horizontal line, 3 units above the $x$-axis."
+          ],
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "steps": [
+        "Slope of $\\sqrt{3}x-y+2=0$: $m_1=\\sqrt{3}$, so the inclination is $60^\\circ$.",
+        "Slope of $x-\\sqrt{3}y-1=0$: $m_2=\\dfrac{1}{\\sqrt{3}}$, so the inclination is $30^\\circ$.",
+        "Check with the formula: $\\tan\\theta=\\left|\\dfrac{\\frac{1}{\\sqrt3}-\\sqrt3}{1+1}\\right|=\\left|\\dfrac{-2/\\sqrt3}{2}\\right|=\\dfrac{1}{\\sqrt3}$."
+      ],
+      "answer": "(b) $30^\\circ$"
+    },
+    {
+      "n": 12,
+      "steps": [
+        "A line perpendicular to the $x$-axis is vertical, so it has the form $x=a$.",
+        "It passes through $(-4,1)$, so $a=-4$."
+      ],
+      "answer": "(b) $x=-4$"
+    },
+    {
+      "n": 13,
+      "steps": [
+        "A line parallel to $3x+y=5$ has the form $3x+y=c$.",
+        "Put $(2,1)$: $c=3(2)+1=7$."
+      ],
+      "answer": "(a) $3x+y=7$"
+    },
+    {
+      "n": 14,
+      "steps": [
+        "Solve $2x+y=3$ and $3x-y=2$. Add the equations: $5x=5$, so $x=1$ and $y=1$.",
+        "The third line must pass through $(1,1)$: $5(1)+k(1)-3=0$."
+      ],
+      "answer": "(b) $k=-2$"
+    },
+    {
+      "n": 15,
+      "steps": [
+        "The vertices are $(0,0)$, $(6,0)$ and $(0,6)$.",
+        "The angle at the origin is $90^\\circ$, because the axes are perpendicular.",
+        "The two sides on the axes both have length 6."
+      ],
+      "answer": "(b) right-angled and isosceles"
+    },
+    {
+      "n": 16,
+      "steps": [
+        "$m=\\tan 135^\\circ=-1$.",
+        "Point–slope form: $y-(-3)=-1(x-2)$, so $y+3=-x+2$."
+      ],
+      "answer": "$x+y+1=0$"
+    },
+    {
+      "n": 17,
+      "steps": [
+        "$m=\\dfrac{-2-4}{3-(-1)}=\\dfrac{-6}{4}=-\\dfrac{3}{2}$.",
+        "Point–slope form at $(-1,4)$: $y-4=-\\dfrac{3}{2}(x+1)$.",
+        "Multiply by 2: $2y-8=-3x-3$.",
+        "Check with $(3,-2)$: $3(3)+2(-2)-5=0$."
+      ],
+      "answer": "$3x+2y-5=0$"
+    },
+    {
+      "n": 18,
+      "steps": [
+        "Let the intercepts be $a$ and $b$. Then $a+b=5$ and $ab=6$.",
+        "$a$ and $b$ are the roots of $t^2-5t+6=0$, that is $(t-2)(t-3)=0$. So the intercepts are 2 and 3.",
+        "If $a=2$, $b=3$: $\\dfrac{x}{2}+\\dfrac{y}{3}=1$, so $3x+2y=6$.",
+        "If $a=3$, $b=2$: $\\dfrac{x}{3}+\\dfrac{y}{2}=1$, so $2x+3y=6$."
+      ],
+      "answer": "$3x+2y=6$ and $2x+3y=6$"
+    },
+    {
+      "n": 19,
+      "steps": [
+        "Slope through $(2,5)$ and $(-1,3)$: $m_1=\\dfrac{3-5}{-1-2}=\\dfrac{-2}{-3}=\\dfrac{2}{3}$.",
+        "Slope through $(0,0)$ and $(2,-3)$: $m_2=\\dfrac{-3-0}{2-0}=-\\dfrac{3}{2}$.",
+        "$m_1m_2=\\dfrac{2}{3}\\cdot\\left(-\\dfrac{3}{2}\\right)=-1$"
+      ],
+      "answer": "The product of the slopes is $-1$, so the lines are perpendicular."
+    },
+    {
+      "n": 20,
+      "steps": [
+        "The median through $A$ goes to the midpoint $M$ of $BC$.",
+        "$M=\\left(\\dfrac{-1+4}{2},\\,\\dfrac{0+(-2)}{2}\\right)=\\left(\\dfrac{3}{2},\\,-1\\right)$",
+        "Slope of $AM$: $\\dfrac{-1-3}{\\frac{3}{2}-2}=\\dfrac{-4}{-\\frac{1}{2}}=8$.",
+        "Point–slope form at $A(2,3)$: $y-3=8(x-2)$, so $y-3=8x-16$."
+      ],
+      "answer": "$8x-y-13=0$"
+    },
+    {
+      "n": 21,
+      "steps": [
+        "Let the image be $Q(h,k)$. The line joining $P(1,2)$ and $Q$ is perpendicular to the given line.",
+        "Slope of $2x-y+5=0$ is $2$. So $\\dfrac{k-2}{h-1}\\cdot 2=-1$, which gives $h+2k=5$.",
+        "The midpoint $\\left(\\dfrac{1+h}{2},\\dfrac{2+k}{2}\\right)$ lies on the line: $2\\cdot\\dfrac{1+h}{2}-\\dfrac{2+k}{2}+5=0$, which gives $2h-k=-10$.",
+        "Solve: from the second equation, $k=2h+10$. Then $h+2(2h+10)=5$, so $5h=-15$ and $h=-3$.",
+        "$k=2(-3)+10=4$"
+      ],
+      "answer": "The image is $(-3,\\,4)$."
+    },
+    {
+      "n": 22,
+      "steps": [
+        "From $5x-y=7$: $y=5x-7$. Put this in $2x+3y=13$: $2x+15x-21=13$, so $17x=34$.",
+        "$x=2$ and $y=5(2)-7=3$. The lines meet at $(2,3)$.",
+        "Slope of $3x-4y+1=0$ is $\\dfrac{3}{4}$, so the perpendicular slope is $-\\dfrac{4}{3}$.",
+        "$y-3=-\\dfrac{4}{3}(x-2)$, so $3y-9=-4x+8$."
+      ],
+      "answer": "Point $(2,3)$; line $4x+3y-17=0$"
+    },
+    {
+      "n": 23,
+      "steps": [
+        "Slope of $\\sqrt{3}x+y=1$ is $m_1=-\\sqrt{3}$. Let the required slope be $m$.",
+        "$\\tan 60^\\circ=\\left|\\dfrac{m-(-\\sqrt3)}{1+m(-\\sqrt3)}\\right|$, so $\\sqrt{3}=\\left|\\dfrac{m+\\sqrt3}{1-\\sqrt3 m}\\right|$.",
+        "Case 1: $m+\\sqrt3=\\sqrt3(1-\\sqrt3m)=\\sqrt3-3m$. Then $4m=0$, so $m=0$.",
+        "Case 2: $m+\\sqrt3=-\\sqrt3(1-\\sqrt3m)=-\\sqrt3+3m$. Then $2m=2\\sqrt3$, so $m=\\sqrt3$.",
+        "For $m=0$ through $(3,-2)$: $y=-2$.",
+        "For $m=\\sqrt3$ through $(3,-2)$: $y+2=\\sqrt3(x-3)$."
+      ],
+      "answer": "$y+2=0$ and $\\sqrt{3}x-y-(3\\sqrt{3}+2)=0$"
+    },
+    {
+      "n": 24,
+      "steps": [
+        "$d=\\dfrac{|3k+4(2)-6|}{\\sqrt{9+16}}=\\dfrac{|3k+2|}{5}$",
+        "Put $d=4$: $|3k+2|=20$.",
+        "Case 1: $3k+2=20$, so $k=6$.",
+        "Case 2: $3k+2=-20$, so $k=-\\dfrac{22}{3}$."
+      ],
+      "answer": "$k=6$ or $k=-\\dfrac{22}{3}$"
+    },
+    {
+      "n": 25,
+      "steps": [
+        "The diagonals of a square bisect each other at right angles. Midpoint of $AC$: $M=\\left(\\dfrac{2+6}{2},\\dfrac{1+5}{2}\\right)=(4,3)$.",
+        "Slope of $AC$: $\\dfrac{5-1}{6-2}=1$. So the slope of $BD$ is $-1$.",
+        "$BD$: $y-3=-(x-4)$, which gives $x+y-7=0$.",
+        "The diagonals are equal, so $MB=MA=\\sqrt{(4-2)^2+(3-1)^2}=2\\sqrt2$.",
+        "Let $B=(x,\\,7-x)$ on $BD$. Then $(x-4)^2+(7-x-3)^2=8$, so $2(x-4)^2=8$ and $x-4=\\pm2$.",
+        "$x=6$ gives $(6,1)$. $x=2$ gives $(2,5)$.",
+        "Check: $A(2,1)$, $B(6,1)$, $C(6,5)$, $D(2,5)$ has four sides of length 4 and right angles."
+      ],
+      "answer": "$BD$: $x+y-7=0$; $B(6,1)$ and $D(2,5)$"
+    },
+    {
+      "n": 26,
+      "steps": [
+        "Line with no slope: the vertical line through $(2,3)$ is $x=2$. Its distance from the origin is 2. So $x=2$ is one answer.",
+        "Lines with slope $m$: $y-3=m(x-2)$, that is $mx-y+(3-2m)=0$.",
+        "Distance from $(0,0)$: $\\dfrac{|3-2m|}{\\sqrt{m^2+1}}=2$.",
+        "Square both sides: $(3-2m)^2=4(m^2+1)$, so $9-12m+4m^2=4m^2+4$.",
+        "$12m=5$, so $m=\\dfrac{5}{12}$.",
+        "$y-3=\\dfrac{5}{12}(x-2)$, so $12y-36=5x-10$, which gives $5x-12y+26=0$.",
+        "Check: $\\dfrac{|26|}{\\sqrt{25+144}}=\\dfrac{26}{13}=2$."
+      ],
+      "answer": "$x=2$ and $5x-12y+26=0$"
+    },
+    {
+      "n": 27,
+      "steps": [
+        "$AB$ lies on $x+2y-4=0$, with slope $-\\dfrac{1}{2}$. So $BC$ and $AD$ have slope $2$.",
+        "$BC$ through $B(2,1)$: $y-1=2(x-2)$, which gives $2x-y-3=0$.",
+        "$C$ is on the $x$-axis, so $y=0$: $2x-3=0$, and $C=\\left(\\dfrac{3}{2},\\,0\\right)$.",
+        "$AD$ through $A(-2,3)$: $y-3=2(x+2)$, which gives $2x-y+7=0$.",
+        "$CD$ is parallel to $AB$: $x+2y+c=0$. Put $C$: $\\dfrac{3}{2}+c=0$, so $c=-\\dfrac{3}{2}$. Multiply by 2: $2x+4y-3=0$.",
+        "$D$ is where $AD$ meets $CD$. From $AD$, $y=2x+7$. Then $2x+4(2x+7)-3=0$, so $10x=-25$ and $x=-\\dfrac{5}{2}$, $y=2$."
+      ],
+      "answer": "$BC$: $2x-y-3=0$; $CD$: $2x+4y-3=0$; $AD$: $2x-y+7=0$; $C\\left(\\tfrac{3}{2},0\\right)$, $D\\left(-\\tfrac{5}{2},2\\right)$"
+    },
+    {
+      "n": 28,
+      "parts": [
+        {
+          "label": "a",
+          "steps": [
+            "Let $A=(a,0)$ and $B=(0,b)$.",
+            "Section formula with ratio $2:3$: $P=\\left(\\dfrac{2\\cdot0+3a}{5},\\,\\dfrac{2b+3\\cdot0}{5}\\right)=\\left(\\dfrac{3a}{5},\\,\\dfrac{2b}{5}\\right)$.",
+            "$\\dfrac{3a}{5}=3$ gives $a=5$. $\\dfrac{2b}{5}=-4$ gives $b=-10$."
+          ],
+          "answer": "$A(5,\\,0)$ and $B(0,\\,-10)$"
+        },
+        {
+          "label": "b",
+          "steps": [
+            "Intercept form: $\\dfrac{x}{5}+\\dfrac{y}{-10}=1$. Multiply by 10: $2x-y=10$.",
+            "Check with $P(3,-4)$: $2(3)-(-4)-10=0$."
+          ],
+          "answer": "$2x-y-10=0$"
+        },
+        {
+          "label": "c",
+          "steps": [
+            "$AB=\\sqrt{5^2+10^2}=\\sqrt{125}=5\\sqrt5$.",
+            "$\\triangle OAB$ has a right angle at $O$, with legs $OA=5$ and $OB=10$.",
+            "Area $=\\dfrac{1}{2}\\cdot5\\cdot10=25$."
+          ],
+          "answer": "$AB=5\\sqrt5$ units; area $=25$ square units"
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "parts": [
+        {
+          "label": "a",
+          "steps": [
+            "Slope of $BC$: $\\dfrac{4-0}{2-6}=-1$. The altitude from $A$ is perpendicular to $BC$, so its slope is $1$: $y=x$.",
+            "$AB$ lies on the $x$-axis. The altitude from $C$ is vertical: $x=2$.",
+            "Solve $y=x$ and $x=2$: the orthocentre is $(2,2)$.",
+            "Check with the third altitude: slope of $AC$ is $2$, so the altitude from $B$ is $y=-\\dfrac{1}{2}(x-6)$. At $x=2$, $y=2$."
+          ],
+          "answer": "Altitudes $y=x$ and $x=2$; orthocentre $H(2,\\,2)$"
+        },
+        {
+          "label": "b",
+          "steps": [
+            "Midpoint of $AB$ is $(3,0)$, and $AB$ is horizontal. Its perpendicular bisector is $x=3$.",
+            "Midpoint of $AC$ is $(1,2)$, and the slope of $AC$ is $2$. The perpendicular slope is $-\\dfrac{1}{2}$.",
+            "$y-2=-\\dfrac{1}{2}(x-1)$, which gives $x+2y-5=0$.",
+            "Put $x=3$: $2y=2$, so $y=1$."
+          ],
+          "answer": "Bisectors $x=3$ and $x+2y-5=0$; circumcentre $S(3,\\,1)$"
+        },
+        {
+          "label": "c",
+          "steps": [
+            "$SA^2=(3-0)^2+(1-0)^2=10$",
+            "$SB^2=(3-6)^2+(1-0)^2=10$",
+            "$SC^2=(3-2)^2+(1-4)^2=10$"
+          ],
+          "answer": "$SA=SB=SC=\\sqrt{10}$ units"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "parts": [
+        {
+          "label": "i",
+          "steps": [
+            "Put $y=0$: $3x=24$, so $x=8$. Put $x=0$: $4y=24$, so $y=6$."
+          ],
+          "answer": "$(8,\\,0)$ and $(0,\\,6)$"
+        },
+        {
+          "label": "ii",
+          "steps": [
+            "$m=-\\dfrac{A}{B}=-\\dfrac{3}{4}$"
+          ],
+          "answer": "$-\\dfrac{3}{4}$"
+        },
+        {
+          "label": "iii",
+          "steps": [
+            "The shortest path is the perpendicular from $O$ to the road. Write the road as $3x+4y-24=0$.",
+            "$d=\\dfrac{|0+0-24|}{\\sqrt{9+16}}=\\dfrac{24}{5}=4.8$ units.",
+            "1 unit $=100$ m, so $4.8\\times100=480$ m."
+          ],
+          "answer": "$480$ m"
+        }
+      ],
+      "orParts": [
+        {
+          "label": "iii",
+          "steps": [
+            "The footpath is perpendicular to the road, so its slope is $\\dfrac{4}{3}$. It passes through $O$: $y=\\dfrac{4}{3}x$, that is $4x-3y=0$.",
+            "Put $y=\\dfrac{4}{3}x$ in $3x+4y=24$: $3x+\\dfrac{16}{3}x=24$, so $25x=72$ and $x=\\dfrac{72}{25}$.",
+            "$y=\\dfrac{4}{3}\\cdot\\dfrac{72}{25}=\\dfrac{96}{25}$."
+          ],
+          "answer": "Footpath $4x-3y=0$; it meets the road at $\\left(\\dfrac{72}{25},\\,\\dfrac{96}{25}\\right)$, that is $(2.88,\\,3.84)$"
+        }
+      ]
+    }
+  ]
+}

@@ -28,40 +28,40 @@
     "topic": "Absolute value"
    },
    {
-    "prompt": "Evaluate $(-9) + (-6)$.",
+    "prompt": "$a$ and $b$ are integers with $a < 0$ and $b > 0$. Which of these is always negative?",
     "options": [
-     "$-15$",
-     "$15$",
-     "$-3$",
-     "$3$"
-    ],
-    "answer": 0,
-    "solution": "Same signs: add $9 + 6 = 15$ and keep the minus sign. So the answer is $-15$.",
-    "topic": "Addition"
-   },
-   {
-    "prompt": "Evaluate $(-14) + 9$.",
-    "options": [
-     "$23$",
-     "$5$",
-     "$-5$",
-     "$-23$"
+     "$a \\times a$",
+     "$a + b$",
+     "$a \\times b$",
+     "$b - a$"
     ],
     "answer": 2,
-    "solution": "Different signs: $14 - 9 = 5$. The bigger size is negative, so $-5$.",
-    "topic": "Addition"
+    "solution": "Different signs give a negative product, so $a \\times b < 0$ always. $a + b$ can be positive, $b - a > 0$ and $a \\times a > 0$.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Evaluate $7 - (-8)$.",
+    "prompt": "Ravi wrote $(-3) - (-7) = -10$. What is the correct answer, and what was his mistake?",
     "options": [
-     "$1$",
-     "$15$",
-     "$-15$",
-     "$-1$"
+     "$10$; he added instead of subtracting",
+     "$-10$ is correct",
+     "$-4$; he used the wrong sign for $3$",
+     "$4$; he treated $-(-7)$ as $-7$"
     ],
-    "answer": 1,
-    "solution": "Subtracting $-8$ means adding $8: 7 + 8 = 15$.",
-    "topic": "Subtraction"
+    "answer": 3,
+    "solution": "$(-3) - (-7) = -3 + 7 = 4$. Subtracting $-7$ means adding $7$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The product of four integers is negative. How many of them can be negative?",
+    "options": [
+     "only $4$",
+     "$2$ or $4$",
+     "$0$ or $2$",
+     "$1$ or $3$"
+    ],
+    "answer": 3,
+    "solution": "A product is negative only when the number of negative factors is odd. With four factors, that is $1$ or $3$.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "Evaluate $(-12) - (-5)$.",
@@ -76,16 +76,16 @@
     "topic": "Subtraction"
    },
    {
-    "prompt": "Evaluate $(-6) \\times (-7)$.",
+    "prompt": "Which statement is true for all integers $a$, $b$ and $c$?",
     "options": [
-     "$13$",
-     "$-42$",
-     "$42$",
-     "$-13$"
+     "$a \\div b$ is an integer when $b \\neq 0$",
+     "$a \\times (b - c) = a \\times b - a \\times c$",
+     "$(a - b) - c = a - (b - c)$",
+     "$a - b = b - a$"
     ],
-    "answer": 2,
-    "solution": "Same signs give a positive product: $42$.",
-    "topic": "Multiplication"
+    "answer": 1,
+    "solution": "Multiplication distributes over subtraction. The other three fail, for example with $a = 5$, $b = 3$, $c = 2$ and $5 \\div 3$.",
+    "topic": "HOTS · Properties"
    },
    {
     "prompt": "Evaluate $(-4) \\times 5 \\times (-3)$.",
@@ -100,16 +100,16 @@
     "topic": "Multiplication"
    },
    {
-    "prompt": "Evaluate $(-96) \\div 12$.",
+    "prompt": "The sum of two integers is $-12$. One of them is $15$. Their product is",
     "options": [
-     "$84$",
-     "$-8$",
-     "$8$",
-     "$-84$"
+     "$-405$",
+     "$3$",
+     "$-180$",
+     "$405$"
     ],
-    "answer": 1,
-    "solution": "$96 \\div 12 = 8$. Different signs, so $-8$.",
-    "topic": "Division"
+    "answer": 0,
+    "solution": "The other integer is $-12 - 15 = -27$. The product is $15 \\times (-27) = -405$.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "Evaluate $(-1) \\times (-1) \\times (-1) \\times (-1) \\times (-1)$.",
@@ -124,28 +124,28 @@
     "topic": "Multiplication"
    },
    {
-    "prompt": "The additive inverse of $-23$ is",
+    "prompt": "The integers $-4, -3, \\dots, 3, 4$ are placed in a $3 \\times 3$ magic square. Each row has the same sum. This magic sum is",
     "options": [
-     "$-23$",
-     "$23$",
      "$0$",
-     "$\\frac{1}{23}$"
+     "$12$",
+     "$4$",
+     "$-4$"
     ],
-    "answer": 1,
-    "solution": "$-23 + 23 = 0$, so the additive inverse is $23$.",
-    "topic": "Properties"
+    "answer": 0,
+    "solution": "The total of all nine numbers is $0$. Three rows share it equally, so each row sum is $0 \\div 3 = 0$.",
+    "topic": "HOTS · Puzzle"
    },
    {
-    "prompt": "The multiplicative identity for integers is",
+    "prompt": "$(-1)^1 + (-1)^2 + (-1)^3 + \\dots + (-1)^{101} =$",
     "options": [
      "$-1$",
-     "$1$",
-     "$10$",
-     "$0$"
+     "$0$",
+     "$-101$",
+     "$1$"
     ],
-    "answer": 1,
-    "solution": "$a \\times 1 = a$ for every integer a.",
-    "topic": "Properties"
+    "answer": 0,
+    "solution": "Each pair $(-1) + 1 = 0$. The first $100$ terms make $50$ pairs with sum $0$. The last term is $(-1)^{101} = -1$.",
+    "topic": "HOTS · Pattern"
    },
    {
     "prompt": "Which of these is not defined?",
@@ -232,16 +232,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "A submarine is at $-250$ m. It rises $80$ m. Its new position is",
+    "prompt": "If $a = -2$, $b = 3$ and $c = -4$, which expression has the greatest value?",
     "options": [
-     "$170$ m",
-     "$-330$ m",
-     "$330$ m",
-     "$-170$ m"
+     "$a \\times b - c$",
+     "$a + b + c$",
+     "$(a - b) \\times c$",
+     "$a \\times b \\times c$"
     ],
     "answer": 3,
-    "solution": "$-250 + 80 = -170$. So the answer is $-170$ m.",
-    "topic": "Word problem"
+    "solution": "$a b c = 24$, $a + b + c = -3$, $a b - c = -6 + 4 = -2$ and $(a - b)c = (-5)(-4) = 20$. The greatest is $24$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "Evaluate $18 - [6 - \\{4 - (5 - 3)\\}]$.",
@@ -268,16 +268,16 @@
     "topic": "BODMAS"
    },
    {
-    "prompt": "The successor of $-100$ is",
+    "prompt": "A test gives $+4$ for a correct answer and $-2$ for a wrong answer. Meera answered all $20$ questions and scored $38$. How many were wrong?",
     "options": [
-     "$-101$",
-     "$100$",
-     "$-99$",
-     "$99$"
+     "$6$",
+     "$7$",
+     "$13$",
+     "$9$"
     ],
-    "answer": 2,
-    "solution": "Successor $=$ number $+ 1 = -99$.",
-    "topic": "Number line"
+    "answer": 1,
+    "solution": "Let $w$ be wrong. Then $4(20 - w) - 2w = 38$, so $80 - 6w = 38$ and $w = 7$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "How many integers lie between $-4$ and $3$?",
@@ -316,16 +316,16 @@
     "topic": "Division"
    },
    {
-    "prompt": "The sum of $-7$, $12$, $-15$ and $8$ is",
+    "prompt": "A lift goes from floor $-3$ to floor $5$, and then to floor $-1$. How many floors does it travel in all?",
     "options": [
-     "$-42$",
-     "$42$",
-     "$2$",
-     "$-2$"
+     "$6$",
+     "$14$",
+     "$8$",
+     "$2$"
     ],
-    "answer": 3,
-    "solution": "$(-7 - 15) + (12 + 8) = -22 + 20 = -2$.",
-    "topic": "Addition"
+    "answer": 1,
+    "solution": "From $-3$ to $5$ is $8$ floors. From $5$ to $-1$ is $6$ floors. The total is $14$ floors.",
+    "topic": "HOTS · Number line"
    },
    {
     "prompt": "Evaluate $-(-(-6))$.",
@@ -446,28 +446,28 @@
     "topic": "Standard form"
    },
    {
-    "prompt": "The standard form of $\\frac{45}{-60}$ is",
+    "prompt": "Which statement is always true for rational numbers $a$ and $b$?",
     "options": [
-     "$-\\frac{3}{4}$",
-     "$-\\frac{45}{60}$",
-     "$\\frac{3}{4}$",
-     "$\\frac{9}{12}$"
+     "$a + b$ is a rational number",
+     "$a \\times b > a$",
+     "$a \\div b$ is a rational number",
+     "$a - b = b - a$"
     ],
     "answer": 0,
-    "solution": "$\\frac{45}{-60} = -\\frac{45}{60} = -\\frac{3}{4}$.",
-    "topic": "Standard form"
+    "solution": "Rational numbers are closed under addition. $a \\div b$ fails when $b = 0$. The other two fail for most numbers.",
+    "topic": "HOTS · Properties"
    },
    {
-    "prompt": "Which is equal to $-\\frac{2}{3}$?",
+    "prompt": "A student wrote $-\\frac{3}{4} + \\frac{2}{5} = -\\frac{1}{9}$. Which is correct?",
     "options": [
-     "$-\\frac{4}{-6}$",
-     "$\\frac{4}{6}$",
-     "$-\\frac{8}{12}$",
-     "$\\frac{2}{-6}$"
+     "$-\\frac{7}{20}$; first make the denominators equal",
+     "$-\\frac{1}{9}$ is correct",
+     "$\\frac{7}{20}$; the sign is wrong",
+     "$-\\frac{1}{20}$; subtract the denominators"
     ],
-    "answer": 2,
-    "solution": "$-\\frac{8}{12} = -\\frac{2}{3}$ after dividing by $4$.",
-    "topic": "Equivalent"
+    "answer": 0,
+    "solution": "$-\\frac{15}{20} + \\frac{8}{20} = -\\frac{7}{20}$. Numerators and denominators are never added separately.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "Which is greater: $-\\frac{3}{4}$ or $-\\frac{5}{6}$?",
@@ -506,28 +506,28 @@
     "topic": "Between"
    },
    {
-    "prompt": "Evaluate $-\\frac{5}{8} + \\frac{7}{12}$.",
+    "prompt": "$\\frac{a}{b}$ is negative and $b$ is positive. Then",
     "options": [
-     "$\\frac{1}{24}$",
-     "$-\\frac{1}{24}$",
-     "$-\\frac{29}{24}$",
-     "$\\frac{2}{20}$"
+     "$a > 0$",
+     "$a < 0$",
+     "$a = 0$",
+     "$a$ can be any integer"
     ],
     "answer": 1,
-    "solution": "$-\\frac{15}{24} + \\frac{14}{24} = -\\frac{1}{24}$.",
-    "topic": "Addition"
+    "solution": "A positive denominator keeps the sign of the numerator. So $a$ is negative.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Evaluate $-\\frac{2}{3} - (-\\frac{5}{6})$.",
+    "prompt": "The rational number exactly halfway between $-\\frac{2}{3}$ and $\\frac{1}{4}$ is",
     "options": [
-     "$\\frac{3}{2}$",
-     "$\\frac{1}{6}$",
-     "$-\\frac{3}{2}$",
-     "$-\\frac{1}{6}$"
+     "$-\\frac{5}{12}$",
+     "$-\\frac{5}{24}$",
+     "$-\\frac{1}{24}$",
+     "$\\frac{5}{24}$"
     ],
     "answer": 1,
-    "solution": "$-\\frac{4}{6} + \\frac{5}{6} = \\frac{1}{6}$.",
-    "topic": "Subtraction"
+    "solution": "Sum $= -\\frac{8}{12} + \\frac{3}{12} = -\\frac{5}{12}$. Half of it is $-\\frac{5}{24}$.",
+    "topic": "HOTS · Between"
    },
    {
     "prompt": "Evaluate $(-\\frac{4}{9}) \\times (\\frac{15}{-16})$.",
@@ -554,28 +554,28 @@
     "topic": "Division"
    },
    {
-    "prompt": "The reciprocal of $-\\frac{3}{7}$ is",
+    "prompt": "Divide the sum of $\\frac{2}{3}$ and $-\\frac{5}{6}$ by their difference $\\frac{2}{3} - (-\\frac{5}{6})$.",
     "options": [
-     "$\\frac{7}{3}$",
-     "$-\\frac{3}{7}$",
-     "$-\\frac{7}{3}$",
-     "$\\frac{3}{7}$"
+     "$-\\frac{1}{4}$",
+     "$\\frac{1}{9}$",
+     "$-\\frac{1}{9}$",
+     "$-9$"
     ],
     "answer": 2,
-    "solution": "Swap numerator and denominator; the sign stays. So the answer is $-\\frac{7}{3}$.",
-    "topic": "Reciprocal"
+    "solution": "Sum $= -\\frac{1}{6}$. Difference $= \\frac{9}{6} = \\frac{3}{2}$. $-\\frac{1}{6} \\div \\frac{3}{2} = -\\frac{1}{6} \\times \\frac{2}{3} = -\\frac{1}{9}$.",
+    "topic": "HOTS · Multi-step"
    },
    {
-    "prompt": "The additive inverse of $\\frac{5}{-9}$ is",
+    "prompt": "If $x = -\\frac{4}{5}$, which is the greatest?",
     "options": [
-     "$\\frac{9}{5}$",
-     "$-\\frac{9}{5}$",
-     "$\\frac{5}{9}$",
-     "$-\\frac{5}{9}$"
+     "$x^2$",
+     "$x$",
+     "$\\frac{1}{x}$",
+     "$-x$"
     ],
-    "answer": 2,
-    "solution": "$\\frac{5}{-9} = -\\frac{5}{9}$, so the additive inverse is $\\frac{5}{9}$.",
-    "topic": "Inverse"
+    "answer": 3,
+    "solution": "$-x = 0.8$, $x^2 = 0.64$, $x = -0.8$ and $\\frac{1}{x} = -1.25$. The greatest is $-x$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "Which rational number has no reciprocal?",
@@ -590,16 +590,16 @@
     "topic": "Reciprocal"
    },
    {
-    "prompt": "The value of $\\frac{3}{4} \\times (-\\frac{8}{9})$ is",
+    "prompt": "The reciprocal of $-\\frac{2}{3} \\times \\frac{9}{4}$ is",
     "options": [
-     "$-\\frac{2}{3}$",
-     "$-\\frac{3}{2}$",
      "$\\frac{2}{3}$",
-     "$-\\frac{8}{27}$"
+     "$-\\frac{3}{2}$",
+     "$\\frac{3}{2}$",
+     "$-\\frac{2}{3}$"
     ],
-    "answer": 0,
-    "solution": "$-\\frac{24}{36} = -\\frac{2}{3}$.",
-    "topic": "Multiplication"
+    "answer": 3,
+    "solution": "$-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{3}{2}$. Its reciprocal is $-\\frac{2}{3}$.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "$\\frac{x}{18} = -\\frac{5}{6}$. Then find $x$.",
@@ -626,16 +626,16 @@
     "topic": "Standard form"
    },
    {
-    "prompt": "Evaluate $(-\\frac{1}{2}) + (-\\frac{1}{3}) + (-\\frac{1}{6})$.",
+    "prompt": "Which number does not lie between $-\\frac{1}{2}$ and $-\\frac{1}{3}$?",
     "options": [
-     "$0$",
-     "$-1$",
-     "$-\\frac{1}{11}$",
-     "$1$"
+     "$-\\frac{2}{5}$",
+     "$-\\frac{5}{12}$",
+     "$-\\frac{3}{7}$",
+     "$-\\frac{4}{7}$"
     ],
-    "answer": 1,
-    "solution": "$-\\frac{3}{6} - \\frac{2}{6} - \\frac{1}{6} = -\\frac{6}{6} = -1$.",
-    "topic": "Addition"
+    "answer": 3,
+    "solution": "The numbers between lie from $-0.5$ to $-0.33$. $-\\frac{4}{7} \\approx -0.57$ is less than $-0.5$. The others are $-0.4$, $-0.42$ and $-0.43$.",
+    "topic": "HOTS · Which is not"
    },
    {
     "prompt": "What must be added to $-\\frac{3}{5}$ to get $1$?",
@@ -722,16 +722,16 @@
     "topic": "Between"
    },
    {
-    "prompt": "The sum of a rational number and its additive inverse is",
+    "prompt": "$x + y = 0$ and $x = -\\frac{3}{7}$. Then $x \\times y =$",
     "options": [
+     "$\\frac{9}{49}$",
+     "$-1$",
      "$0$",
-     "$1$",
-     "the number itself",
-     "$-1$"
+     "$-\\frac{9}{49}$"
     ],
-    "answer": 0,
-    "solution": "$a + (-a) = 0$.",
-    "topic": "Inverse"
+    "answer": 3,
+    "solution": "$y = \\frac{3}{7}$, the additive inverse of $x$. $x y = -\\frac{3}{7} \\times \\frac{3}{7} = -\\frac{9}{49}$.",
+    "topic": "HOTS · Inverse"
    },
    {
     "prompt": "The product of a non-zero rational number and its reciprocal is",
@@ -758,16 +758,16 @@
     "topic": "Order"
    },
    {
-    "prompt": "Evaluate $(-\\frac{5}{6}) \\times 0$.",
+    "prompt": "Pipe A fills $\\frac{3}{8}$ of a tank in an hour. Pipe B empties $\\frac{1}{6}$ of it in an hour. With both open, the part filled in one hour is",
     "options": [
-     "$0$",
-     "$-\\frac{5}{6}$",
-     "not defined",
-     "$\\frac{5}{6}$"
+     "$\\frac{5}{24}$",
+     "$\\frac{13}{24}$",
+     "$\\frac{1}{12}$",
+     "$\\frac{1}{4}$"
     ],
     "answer": 0,
-    "solution": "Any number multiplied by $0$ is $0$.",
-    "topic": "Multiplication"
+    "solution": "$\\frac{3}{8} - \\frac{1}{6} = \\frac{9}{24} - \\frac{4}{24} = \\frac{5}{24}$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "A rope $\\frac{7}{2}$ m long is cut into pieces of $\\frac{7}{8}$ m each. The number of pieces is",
@@ -840,64 +840,64 @@
   "title": "Fractions",
   "questions": [
    {
-    "prompt": "Which is a proper fraction?",
+    "prompt": "Which fraction lies between $\\frac{3}{5}$ and $\\frac{2}{3}$?",
     "options": [
-     "$\\frac{7}{4}$",
-     "$\\frac{3}{8}$",
-     "$\\frac{9}{2}$",
-     "$\\frac{5}{5}$"
-    ],
-    "answer": 1,
-    "solution": "Numerator $3$ is less than denominator $8$. So the answer is $\\frac{3}{8}$.",
-    "topic": "Kinds"
-   },
-   {
-    "prompt": "$3 \\frac{2}{5}$ as an improper fraction is",
-    "options": [
-     "$\\frac{15}{5}$",
-     "$\\frac{11}{5}$",
-     "$\\frac{17}{5}$",
-     "$\\frac{32}{5}$"
-    ],
-    "answer": 2,
-    "solution": "$\\frac{3 \\times 5 + 2}{5} = \\frac{17}{5}$.",
-    "topic": "Mixed numbers"
-   },
-   {
-    "prompt": "$\\frac{29}{6}$ as a mixed number is",
-    "options": [
-     "$4 \\frac{6}{5}$",
-     "$4 \\frac{5}{6}$",
-     "$4 \\frac{1}{6}$",
-     "$5 \\frac{1}{6}$"
-    ],
-    "answer": 1,
-    "solution": "$29 = 6 \\times 4 + 5$. So the answer is $4 \\frac{5}{6}$.",
-    "topic": "Mixed numbers"
-   },
-   {
-    "prompt": "$\\frac{84}{126}$ in lowest terms is",
-    "options": [
+     "$\\frac{5}{8}$",
      "$\\frac{3}{4}$",
-     "$\\frac{4}{6}$",
-     "$\\frac{2}{3}$",
-     "$\\frac{7}{9}$"
+     "$\\frac{7}{10}$",
+     "$\\frac{4}{7}$"
     ],
-    "answer": 2,
-    "solution": "Divide by HCF $42$. So the answer is $\\frac{2}{3}$.",
-    "topic": "Lowest terms"
+    "answer": 0,
+    "solution": "$\\frac{3}{5} = 0.6$ and $\\frac{2}{3} \\approx 0.67$. $\\frac{5}{8} = 0.625$ is between them.",
+    "topic": "HOTS · Between"
    },
    {
-    "prompt": "Which fraction is equivalent to $\\frac{3}{7}$?",
+    "prompt": "A student wrote $\\frac{2}{3} + \\frac{3}{4} = \\frac{5}{7}$. Which is correct?",
     "options": [
-     "$\\frac{6}{21}$",
-     "$\\frac{15}{28}$",
-     "$\\frac{12}{28}$",
-     "$\\frac{9}{14}$"
+     "$\\frac{5}{7}$ is correct",
+     "$\\frac{5}{12}$; add only the numerators",
+     "$\\frac{17}{12}$; use a common denominator",
+     "$\\frac{6}{12}$; multiply the fractions"
     ],
     "answer": 2,
-    "solution": "$3 \\times 4 = 12$ and $7 \\times 4 = 28$. So the answer is $\\frac{12}{28}$.",
-    "topic": "Equivalent"
+    "solution": "$\\frac{8}{12} + \\frac{9}{12} = \\frac{17}{12}$. The sum must be more than $\\frac{3}{4}$, so $\\frac{5}{7}$ cannot be right.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "Both the numerator and the denominator of $\\frac{3}{5}$ are increased by $1$. The fraction",
+    "options": [
+     "stays the same",
+     "becomes $1$",
+     "decreases",
+     "increases"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{4}{6} \\approx 0.67$, which is more than $\\frac{3}{5} = 0.6$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "A man spends $\\frac{1}{3}$ of his salary on rent and $\\frac{1}{4}$ of the rest on food. He has ₹$12000$ left. His salary is",
+    "options": [
+     "₹$16000$",
+     "₹$24000$",
+     "₹$28800$",
+     "₹$20000$"
+    ],
+    "answer": 1,
+    "solution": "Left $= \\frac{2}{3} \\times \\frac{3}{4} = \\frac{1}{2}$ of the salary $= 12000$. Salary $=$ ₹$24000$.",
+    "topic": "HOTS · Fraction of the rest"
+   },
+   {
+    "prompt": "Which is the largest?",
+    "options": [
+     "$\\frac{1}{2} - \\frac{1}{3}$",
+     "$\\frac{1}{2} + \\frac{1}{3}$",
+     "$\\frac{1}{2} \\times \\frac{1}{3}$",
+     "$\\frac{1}{2} \\div \\frac{1}{3}$"
+    ],
+    "answer": 3,
+    "solution": "The values are $\\frac{3}{2}$, $\\frac{1}{6}$, $\\frac{5}{6}$ and $\\frac{1}{6}$. Division by a fraction less than $1$ gives the largest.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "The greatest of $\\frac{2}{3}$, $\\frac{5}{8}$, $\\frac{3}{4}$, $\\frac{7}{12}$ is",
@@ -912,16 +912,16 @@
     "topic": "Compare"
    },
    {
-    "prompt": "Evaluate $\\frac{5}{6} + \\frac{3}{8}$.",
+    "prompt": "$\\frac{1}{2} + \\frac{1}{6} + \\frac{1}{12} + \\frac{1}{20} + \\frac{1}{30} =$",
     "options": [
-     "$1 \\frac{5}{24}$",
-     "$\\frac{29}{48}$",
-     "$1 \\frac{1}{24}$",
-     "$\\frac{8}{14}$"
+     "$\\frac{5}{6}$",
+     "$\\frac{1}{2}$",
+     "$1$",
+     "$\\frac{6}{7}$"
     ],
     "answer": 0,
-    "solution": "$\\frac{20}{24} + \\frac{9}{24} = \\frac{29}{24} = 1 \\frac{5}{24}$.",
-    "topic": "Addition"
+    "solution": "Each term is a difference: $\\frac{1}{2} = 1 - \\frac{1}{2}$, $\\frac{1}{6} = \\frac{1}{2} - \\frac{1}{3}$, and so on. The sum is $1 - \\frac{1}{6} = \\frac{5}{6}$.",
+    "topic": "HOTS · Pattern"
    },
    {
     "prompt": "Evaluate $4 \\frac{1}{3} - 2 \\frac{3}{4}$.",
@@ -948,16 +948,16 @@
     "topic": "Multiplication"
    },
    {
-    "prompt": "$\\frac{3}{4}$ of ₹$480$ is",
+    "prompt": "One tap fills a tank in $3$ hours. Another tap fills it in $6$ hours. Together they fill it in",
     "options": [
-     "₹$360$",
-     "₹$640$",
-     "₹$120$",
-     "₹$320$"
+     "$3$ hours",
+     "$4.5$ hours",
+     "$9$ hours",
+     "$2$ hours"
     ],
-    "answer": 0,
-    "solution": "$480 \\div 4 \\times 3 = 360$. So the answer is ₹$360$.",
-    "topic": "Of"
+    "answer": 3,
+    "solution": "In one hour: $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$ of the tank. So the time is $2$ hours.",
+    "topic": "HOTS · Work"
    },
    {
     "prompt": "Evaluate $3 \\frac{3}{4} \\div 1 \\frac{1}{4}$.",
@@ -972,16 +972,16 @@
     "topic": "Division"
    },
    {
-    "prompt": "The reciprocal of $2 \\frac{1}{3}$ is",
+    "prompt": "$\\frac{2}{3}$ of a number is $20$ more than $\\frac{1}{4}$ of it. The number is",
     "options": [
-     "$\\frac{3}{7}$",
-     "$\\frac{1}{3}$",
-     "$\\frac{7}{3}$",
-     "$3$"
+     "$24$",
+     "$60$",
+     "$48$",
+     "$80$"
     ],
-    "answer": 0,
-    "solution": "$2 \\frac{1}{3} = \\frac{7}{3}$, reciprocal $\\frac{3}{7}$.",
-    "topic": "Reciprocal"
+    "answer": 2,
+    "solution": "$\\frac{2}{3} - \\frac{1}{4} = \\frac{5}{12}$ of the number $= 20$. The number is $48$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "Evaluate $\\frac{1}{2} + (\\frac{3}{4}) \\div ((\\frac{3}{8}) \\times 4)$.",
@@ -1032,16 +1032,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "$\\frac{2}{5}$ of a class of $40$ are girls. The number of boys is",
+    "prompt": "How many fractions in lowest terms with denominator $12$ lie between $0$ and $1$?",
     "options": [
-     "$16$",
-     "$15$",
-     "$24$",
-     "$20$"
+     "$6$",
+     "$5$",
+     "$11$",
+     "$4$"
     ],
-    "answer": 2,
-    "solution": "Girls $16$, boys $40 - 16 = 24$.",
-    "topic": "Word problem"
+    "answer": 3,
+    "solution": "The numerator must share no factor with $12$: $1, 5, 7, 11$. That is $4$ fractions.",
+    "topic": "HOTS · Counting"
    },
    {
     "prompt": "Which is the smallest?",
@@ -1068,16 +1068,16 @@
     "topic": "Multiplication"
    },
    {
-    "prompt": "Evaluate $\\frac{7}{8} - \\frac{1}{3}$.",
+    "prompt": "The ascending order of $\\frac{4}{9}$, $\\frac{5}{11}$ and $\\frac{3}{7}$ is",
     "options": [
-     "$\\frac{13}{24}$",
-     "$\\frac{6}{5}$",
-     "$\\frac{11}{24}$",
-     "$\\frac{1}{4}$"
+     "$\\frac{4}{9}, \\frac{5}{11}, \\frac{3}{7}$",
+     "$\\frac{3}{7}, \\frac{5}{11}, \\frac{4}{9}$",
+     "$\\frac{5}{11}, \\frac{4}{9}, \\frac{3}{7}$",
+     "$\\frac{3}{7}, \\frac{4}{9}, \\frac{5}{11}$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{21}{24} - \\frac{8}{24} = \\frac{13}{24}$.",
-    "topic": "Subtraction"
+    "answer": 3,
+    "solution": "$\\frac{3}{7} \\approx 0.429$, $\\frac{4}{9} \\approx 0.444$ and $\\frac{5}{11} \\approx 0.455$.",
+    "topic": "HOTS · Order"
    },
    {
     "prompt": "Evaluate $0 \\div \\frac{5}{7}$.",
@@ -1258,16 +1258,16 @@
   "title": "Decimals",
   "questions": [
    {
-    "prompt": "In $47.385$, the digit $8$ is in the",
+    "prompt": "Which is greater: $0.3 \\times 0.3$ or $0.3 \\div 0.3$?",
     "options": [
-     "thousandths place",
-     "tens place",
-     "hundredths place",
-     "tenths place"
+     "It cannot be found",
+     "$0.3 \\times 0.3$",
+     "$0.3 \\div 0.3$",
+     "Both are equal"
     ],
     "answer": 2,
-    "solution": "$3$ tenths, $8$ hundredths, $5$ thousandths. So the answer is hundredths place.",
-    "topic": "Place value"
+    "solution": "$0.3 \\times 0.3 = 0.09$ and $0.3 \\div 0.3 = 1$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "$2.375$ as a fraction in lowest terms is",
@@ -1306,16 +1306,16 @@
     "topic": "Compare"
    },
    {
-    "prompt": "Evaluate $12.5 + 3.075 - 8.6$.",
+    "prompt": "A student wrote $0.2 \\times 0.3 = 0.6$. Which is correct?",
     "options": [
-     "$7.975$",
-     "$6.875$",
-     "$6.975$",
-     "$16.975$"
+     "$0.06$; the answer needs two decimal places",
+     "$0.6$ is correct",
+     "$0.006$; it needs three decimal places",
+     "$6$; remove the decimal points"
     ],
-    "answer": 2,
-    "solution": "$15.575 - 8.6 = 6.975$.",
-    "topic": "Add and subtract"
+    "answer": 0,
+    "solution": "$2 \\times 3 = 6$. There are $1 + 1 = 2$ decimal places, so $0.06$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "Evaluate $2.4 \\times 0.15$.",
@@ -1330,16 +1330,16 @@
     "topic": "Multiply"
    },
    {
-    "prompt": "Evaluate $0.0357 \\times 100$.",
+    "prompt": "A positive number is multiplied by $0.9$. The result is",
     "options": [
-     "$35.7$",
-     "$0.000357$",
-     "$3.57$",
-     "$0.357$"
+     "smaller than the number",
+     "equal to the number",
+     "$9$ times the number",
+     "larger than the number"
     ],
-    "answer": 2,
-    "solution": "Move the point $2$ places right. So the answer is $3.57$.",
-    "topic": "Powers of 10"
+    "answer": 0,
+    "solution": "$0.9 < 1$, so the product is $90\\%$ of the number, which is smaller.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "Evaluate $7.56 \\div 0.12$.",
@@ -1354,16 +1354,16 @@
     "topic": "Divide"
    },
    {
-    "prompt": "Evaluate $45.6 \\div 1000$.",
+    "prompt": "$\\frac{0.5 \\times 0.5 - 0.3 \\times 0.3}{0.5 - 0.3} =$",
     "options": [
-     "$0.456$",
-     "$4.56$",
-     "$0.00456$",
-     "$0.0456$"
+     "$0.2$",
+     "$1.6$",
+     "$0.08$",
+     "$0.8$"
     ],
     "answer": 3,
-    "solution": "Move the point $3$ places left. So the answer is $0.0456$.",
-    "topic": "Powers of 10"
+    "solution": "$\\frac{0.25 - 0.09}{0.2} = \\frac{0.16}{0.2} = 0.8$.",
+    "topic": "HOTS · Simplify"
    },
    {
     "prompt": "Which fraction gives a terminating decimal?",
@@ -1390,52 +1390,52 @@
     "topic": "Recurring"
    },
    {
-    "prompt": "Evaluate $0.6 \\times 0.6$.",
+    "prompt": "A number is multiplied by $10$ and then divided by $1000$. The result is $0.0042$. The number is",
     "options": [
-     "$1.2$",
-     "$0.36$",
-     "$0.036$",
-     "$3.6$"
+     "$4.2$",
+     "$0.42$",
+     "$0.042$",
+     "$42$"
     ],
     "answer": 1,
-    "solution": "$6 \\times 6 = 36$ with $2$ decimal places. So the answer is $0.36$.",
-    "topic": "Multiply"
+    "solution": "Overall the number is divided by $100$. So the number is $0.0042 \\times 100 = 0.42$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "$0.25$ as a fraction in lowest terms is",
+    "prompt": "Which decimal lies between $\\frac{1}{3}$ and $\\frac{3}{8}$?",
     "options": [
-     "$\\frac{1}{25}$",
-     "$\\frac{1}{4}$",
-     "$\\frac{25}{10}$",
-     "$\\frac{2}{5}$"
-    ],
-    "answer": 1,
-    "solution": "$\\frac{25}{100} = \\frac{1}{4}$.",
-    "topic": "Conversion"
-   },
-   {
-    "prompt": "₹$5$ and $75$ paise in rupees is",
-    "options": [
-     "₹$0.575$",
-     "₹$5.75$",
-     "₹$5.075$",
-     "₹$57.5$"
-    ],
-    "answer": 1,
-    "solution": "$75$ paise $=$ ₹$0.75$. So the answer is ₹$5.75$.",
-    "topic": "Units"
-   },
-   {
-    "prompt": "$3$ km $45$ m in km is",
-    "options": [
-     "$3.045$ km",
-     "$3.0045$ km",
-     "$30.45$ km",
-     "$3.45$ km"
+     "$0.35$",
+     "$0.38$",
+     "$0.4$",
+     "$0.3$"
     ],
     "answer": 0,
-    "solution": "$45$ m $= 0.045$ km. So the answer is $3.045$ km.",
-    "topic": "Units"
+    "solution": "$\\frac{1}{3} = 0.333\\ldots$ and $\\frac{3}{8} = 0.375$. Only $0.35$ is between them.",
+    "topic": "HOTS · Between"
+   },
+   {
+    "prompt": "In $47.057$, the sum of the place values of the two $7$s is",
+    "options": [
+     "$14$",
+     "$7.007$",
+     "$7.07$",
+     "$0.014$"
+    ],
+    "answer": 1,
+    "solution": "One $7$ is in the units place ($7$). The other is in the thousandths place ($0.007$). Sum $= 7.007$.",
+    "topic": "HOTS · Place value"
+   },
+   {
+    "prompt": "Petrol costs ₹$104.50$ per litre. Ravi pays ₹$627$. How much petrol does he get?",
+    "options": [
+     "$6$ L",
+     "$60$ L",
+     "$5.5$ L",
+     "$6.5$ L"
+    ],
+    "answer": 0,
+    "solution": "$627 \\div 104.5 = 6270 \\div 1045 = 6$ L.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "Evaluate $1.2 \\div 0.04$.",
@@ -1510,16 +1510,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "Evaluate $4.5 - 2.75$.",
+    "prompt": "$0.333\\ldots$ (with $3$ repeating) as a fraction is",
     "options": [
-     "$1.75$",
-     "$2.75$",
-     "$1.25$",
-     "$2.25$"
+     "$\\frac{1}{30}$",
+     "$\\frac{1}{3}$",
+     "$\\frac{33}{100}$",
+     "$\\frac{3}{10}$"
     ],
-    "answer": 0,
-    "solution": "$4.50 - 2.75 = 1.75$.",
-    "topic": "Subtract"
+    "answer": 1,
+    "solution": "$1 \\div 3 = 0.333\\ldots$. The fractions $\\frac{3}{10}$ and $\\frac{33}{100}$ stop after one or two places.",
+    "topic": "HOTS · Recurring"
    },
    {
     "prompt": "Rounded to one decimal place, $7.46$ is",
@@ -1558,16 +1558,16 @@
     "topic": "Multiply"
    },
    {
-    "prompt": "The product $0.25 \\times 4$ is",
+    "prompt": "The product of two decimals is $0.36$. One of them is $1.2$. The other is",
     "options": [
-     "$10$",
-     "$0.01$",
-     "$0.1$",
-     "$1$"
+     "$3$",
+     "$0.3$",
+     "$0.03$",
+     "$0.432$"
     ],
-    "answer": 3,
-    "solution": "$0.25 \\times 4 = 1.00$.",
-    "topic": "Multiply"
+    "answer": 1,
+    "solution": "$0.36 \\div 1.2 = 3.6 \\div 12 = 0.3$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "A car travels $52.5$ km on $3.5$ L of petrol. Its mileage is",
@@ -1676,16 +1676,16 @@
   "title": "Exponents",
   "questions": [
    {
-    "prompt": "In $7^4$, the base is",
+    "prompt": "Which is greater: $2^{10}$ or $10^3$?",
     "options": [
-     "$7$",
-     "$4$",
-     "$2401$",
-     "$28$"
+     "They are equal",
+     "It cannot be found",
+     "$10^3$",
+     "$2^{10}$"
     ],
-    "answer": 0,
-    "solution": "The base is the number multiplied. So the answer is $7$.",
-    "topic": "Powers"
+    "answer": 3,
+    "solution": "$2^{10} = 1024$ and $10^3 = 1000$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "Evaluate $(-2)^5$.",
@@ -1748,28 +1748,28 @@
     "topic": "Laws"
    },
    {
-    "prompt": "Simplify $a^0 (a \\ne 0)$.",
+    "prompt": "A student wrote $2^3 \\times 3^2 = 6^5$. Which is correct?",
     "options": [
-     "$0$",
-     "$a$",
-     "not defined",
-     "$1$"
+     "$6^6$; multiply the powers",
+     "$36$; add the bases",
+     "$6^5$ is correct",
+     "$72$; the bases are different, so the laws do not apply"
     ],
     "answer": 3,
-    "solution": "Any non-zero number to the power $0$ is $1$.",
-    "topic": "Zero exponent"
+    "solution": "$2^3 \\times 3^2 = 8 \\times 9 = 72$. The law $a^m \\times a^n = a^{m+n}$ needs the same base.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "Evaluate $(2^0 + 3^0) \\times 4^0$.",
+    "prompt": "$2^x \\times 4 = 2^7$. Then $x =$",
     "options": [
-     "$0$",
-     "$9$",
-     "$2$",
-     "$1$"
+     "$28$",
+     "$5$",
+     "$3$",
+     "$7$"
     ],
-    "answer": 2,
-    "solution": "$(1 + 1) \\times 1 = 2$.",
-    "topic": "Zero exponent"
+    "answer": 1,
+    "solution": "$4 = 2^2$, so $2^{x+2} = 2^7$ and $x = 5$.",
+    "topic": "HOTS · Same base"
    },
    {
     "prompt": "If $5^x \\times 5^3 = 5^8$, then find $x$.",
@@ -1784,16 +1784,16 @@
     "topic": "Find exponent"
    },
    {
-    "prompt": "Evaluate $(-1)^{101}$.",
+    "prompt": "The units digit of $3^{20}$ is",
     "options": [
      "$1$",
-     "$101$",
-     "$-1$",
-     "$-101$"
+     "$7$",
+     "$3$",
+     "$9$"
     ],
-    "answer": 2,
-    "solution": "An odd power of $-1$ is $-1$, and $101$ is odd.",
-    "topic": "Negative base"
+    "answer": 0,
+    "solution": "Units digits of $3^1, 3^2, 3^3, 3^4$ are $3, 9, 7, 1$, and then they repeat. $20$ is a multiple of $4$, so the digit is $1$.",
+    "topic": "HOTS · Pattern"
    },
    {
     "prompt": "$3{,}84{,}00{,}000$ in standard form is",
@@ -1844,40 +1844,40 @@
     "topic": "Compare"
    },
    {
-    "prompt": "$10^6$ is",
+    "prompt": "For any whole number $n$, $(-1)^n + (-1)^{n+1} =$",
     "options": [
-     "one million million",
-     "one crore",
-     "one lakh",
-     "ten lakh"
+     "$-1$",
+     "$2$",
+     "$1$",
+     "$0$"
     ],
     "answer": 3,
-    "solution": "$10^6 = 10{,}00{,}000 =$ ten lakh.",
-    "topic": "Powers of 10"
+    "solution": "One of $n$ and $n + 1$ is even and the other is odd. So the terms are $1$ and $-1$, and the sum is $0$.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Evaluate $(-3)^4$.",
+    "prompt": "Half of $2^{20}$ is",
     "options": [
-     "$12$",
-     "$81$",
-     "$-81$",
-     "$-12$"
-    ],
-    "answer": 1,
-    "solution": "Even exponent gives a positive answer. So the answer is $81$.",
-    "topic": "Negative base"
-   },
-   {
-    "prompt": "Simplify $x^7 \\div x^3$.",
-    "options": [
-     "$x^{21}$",
-     "$x^{10}$",
-     "$x^4$",
-     "$x^{\\frac{7}{3}}$"
+     "$1^{10}$",
+     "$2^{10}$",
+     "$2^{19}$",
+     "$1^{20}$"
     ],
     "answer": 2,
-    "solution": "$7 - 3 = 4$. So the answer is $x^4$.",
-    "topic": "Laws"
+    "solution": "$2^{20} \\div 2 = 2^{20-1} = 2^{19}$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "$\\frac{3^5 \\times 9^2}{27^3} =$",
+    "options": [
+     "$9$",
+     "$3$",
+     "$1$",
+     "$\\frac{1}{3}$"
+    ],
+    "answer": 2,
+    "solution": "$9^2 = 3^4$ and $27^3 = 3^9$. So the value is $\\frac{3^{5+4}}{3^9} = 3^0 = 1$.",
+    "topic": "HOTS · Same base"
    },
    {
     "prompt": "If $2^n = 64$, then find $n$.",
@@ -1904,16 +1904,16 @@
     "topic": "Laws"
    },
    {
-    "prompt": "The value of $3^4 - 4^3$ is",
+    "prompt": "Which is the largest: $2^{30}$, $3^{20}$ or $4^{15}$?",
     "options": [
-     "$17$",
-     "$1$",
-     "$0$",
-     "$-17$"
+     "$3^{20}$",
+     "$4^{15}$",
+     "$2^{30}$",
+     "$2^{30}$ and $4^{15}$, which are equal"
     ],
     "answer": 0,
-    "solution": "$81 - 64 = 17$.",
-    "topic": "Powers"
+    "solution": "$4^{15} = 2^{30} = 8^{10}$ and $3^{20} = 9^{10}$. Since $9 > 8$, $3^{20}$ is the largest.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "The standard form of $7{,}20{,}000$ is",
@@ -1964,28 +1964,28 @@
     "topic": "Laws"
    },
    {
-    "prompt": "Evaluate $(-2)^3 \\times (-2)^2$.",
+    "prompt": "$2^n + 2^n =$",
     "options": [
-     "$-32$",
-     "$-10$",
-     "$10$",
-     "$32$"
+     "$2^{n+1}$",
+     "$4^{2n}$",
+     "$4^n$",
+     "$2^{2n}$"
     ],
     "answer": 0,
-    "solution": "$(-2)^5 = -32$.",
-    "topic": "Laws"
+    "solution": "$2^n + 2^n = 2 \\times 2^n = 2^{n+1}$.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Which is equal to $1$?",
+    "prompt": "One bacterium splits into $2$ every hour. Starting with $1$, how many bacteria are there after one day?",
     "options": [
-     "$1^0 + 1$",
-     "$0^5$",
-     "$5^0$",
-     "$(-1)^3$"
+     "$2 \\times 24$",
+     "$2^{12}$",
+     "$24^2$",
+     "$2^{24}$"
     ],
-    "answer": 2,
-    "solution": "$5^0 = 1$.",
-    "topic": "Zero exponent"
+    "answer": 3,
+    "solution": "The number doubles $24$ times: $1 \\times 2^{24} = 2^{24}$.",
+    "topic": "HOTS · Growth"
    },
    {
     "prompt": "The distance from the Earth to the Sun is about $149{,}600{,}000$ km. In standard form this is",
@@ -2094,28 +2094,28 @@
   "title": "Set Concepts",
   "questions": [
    {
-    "prompt": "Which is a set?",
+    "prompt": "$A = \\{x : x$ is a letter of the word 'MATHEMATICS'$\\}$. Then $n(A) =$",
     "options": [
-     "Tall students of a class",
-     "Beautiful flowers",
-     "Vowels of English",
-     "Good books"
+     "$8$",
+     "$9$",
+     "$7$",
+     "$11$"
     ],
-    "answer": 2,
-    "solution": "Only the vowels are well-defined. So the answer is Vowels of English.",
-    "topic": "Definition"
+    "answer": 0,
+    "solution": "The different letters are M, A, T, H, E, I, C, S. A repeated letter is written only once.",
+    "topic": "HOTS · Counting"
    },
    {
-    "prompt": "If $A = \\{1, 2, 3, 4, 6, 12\\}$, then find $n(A)$.",
+    "prompt": "Which set is empty?",
     "options": [
-     "$5$",
-     "$6$",
-     "$12$",
-     "$28$"
+     "$\\{x : x \\in W, x < 1\\}$",
+     "$\\{\\varnothing\\}$",
+     "$\\{0\\}$",
+     "$\\{x : x \\in N, x + 5 = 3\\}$"
     ],
-    "answer": 1,
-    "solution": "List the elements $1$, $2$, $3$, $4$, $6$, $12$ and count them. There are $6$ elements.",
-    "topic": "Cardinal number"
+    "answer": 3,
+    "solution": "$x + 5 = 3$ gives $x = -2$, which is not a natural number. $\\{0\\}$, $\\{x : x \\in W, x < 1\\} = \\{0\\}$ and $\\{\\varnothing\\}$ each have one element.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "The set of letters of ‘ASSESSMENT’ has",
@@ -2130,40 +2130,40 @@
     "topic": "Roster"
    },
    {
-    "prompt": "$\\{x : x \\in N, 3 < x < 4\\}$ is",
+    "prompt": "A set has $16$ subsets. The number of elements in the set is",
     "options": [
-     "$\\{3, 4\\}$",
-     "an empty set",
-     "$\\{4\\}$",
-     "$\\{3\\}$"
+     "$2$",
+     "$8$",
+     "$4$",
+     "$16$"
     ],
-    "answer": 1,
-    "solution": "No natural number lies between $3$ and $4$. So the answer is an empty set.",
-    "topic": "Empty set"
+    "answer": 2,
+    "solution": "A set with $n$ elements has $2^n$ subsets. $2^4 = 16$, so $n = 4$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "Which is a singleton set?",
+    "prompt": "$A$ is the set of natural numbers that are multiples of $4$. $B$ is the set of natural numbers that are multiples of $2$. Which is true?",
     "options": [
-     "$\\{1, 2\\}$",
-     "$\\{0\\}$",
-     "$\\{ \\}$",
-     "$N$"
+     "$B \\subset A$",
+     "$A$ and $B$ are disjoint",
+     "$A \\subset B$",
+     "$A = B$"
     ],
-    "answer": 1,
-    "solution": "It has exactly one element. So the answer is $\\{0\\}$.",
-    "topic": "Kinds"
+    "answer": 2,
+    "solution": "Every multiple of $4$ is a multiple of $2$, but $2 \\in B$ and $2 \\notin A$. So $A$ is a proper subset of $B$.",
+    "topic": "HOTS · Subsets"
    },
    {
-    "prompt": "Which set is infinite?",
+    "prompt": "In a class of $40$, $25$ students play cricket and $20$ play football. Every student plays at least one game. How many play both?",
     "options": [
-     "Even numbers",
-     "Months of a year",
-     "Letters of English",
-     "Days of a week"
+     "$0$",
+     "$45$",
+     "$5$",
+     "$15$"
     ],
-    "answer": 0,
-    "solution": "Even numbers never end.",
-    "topic": "Kinds"
+    "answer": 2,
+    "solution": "$25 + 20 = 45$ counts the students who play both twice. Both $= 45 - 40 = 5$.",
+    "topic": "HOTS · Venn"
    },
    {
     "prompt": "$A = \\{1, 2, 3\\}$ and $B = \\{p, q, r\\}$. Then A and $B$ are",
@@ -2238,16 +2238,16 @@
     "topic": "Complement"
    },
    {
-    "prompt": "In roster form, $\\{x : x$ is a prime number less than $12\\}$ is",
+    "prompt": "$A$, $B$, $C$ and $D$ are the sets of letters of 'FOLLOW', 'FLOW', 'WOLF' and 'FOWL'. Which sets are equal?",
     "options": [
-     "$\\{3, 5, 7, 11\\}$",
-     "$\\{2, 3, 5, 7, 9, 11\\}$",
-     "$\\{2, 3, 5, 7, 11\\}$",
-     "$\\{1, 2, 3, 5, 7, 11\\}$"
+     "Only $C$ and $D$",
+     "Only $A$ and $B$",
+     "All four sets are equal",
+     "No two sets are equal"
     ],
     "answer": 2,
-    "solution": "$1$ is not prime; $9$ is not prime. So the answer is $\\{2, 3, 5, 7, 11\\}$.",
-    "topic": "Roster"
+    "solution": "Each set is $\\{F, O, L, W\\}$. Order and repetition do not change a set.",
+    "topic": "HOTS · Equal sets"
    },
    {
     "prompt": "$\\{5, 10, 15, 20, 25\\}$ in set-builder form is",
@@ -2274,16 +2274,16 @@
     "topic": "Notation"
    },
    {
-    "prompt": "The symbol for the universal set used in ICSE is",
+    "prompt": "$n(\\xi) = 50$. $A$ and $B$ are disjoint, with $n(A) = 30$ and $n(B) = 15$. How many elements are in neither set?",
     "options": [
-     "$\\xi$",
-     "$\\in$",
-     "$\\subset$",
-     "$\\varnothing$"
+     "$45$",
+     "$5$",
+     "$20$",
+     "$35$"
     ],
-    "answer": 0,
-    "solution": "$\\xi (xi)$ is the universal set.",
-    "topic": "Notation"
+    "answer": 1,
+    "solution": "Disjoint sets share no element, so $30 + 15 = 45$ are in $A$ or $B$. Neither $= 50 - 45 = 5$.",
+    "topic": "HOTS · Venn"
    },
    {
     "prompt": "$A = \\{x : x$ is a letter of ‘LOYAL’$\\}$. Then find $A$.",
@@ -2310,16 +2310,16 @@
     "topic": "Equal sets"
    },
    {
-    "prompt": "Simplify $n(\\varnothing)$.",
+    "prompt": "Which statement is false?",
     "options": [
-     "not defined",
-     "$\\varnothing$",
-     "$0$",
-     "$1$"
+     "$\\{0\\}$ is the empty set",
+     "Every set is a subset of itself",
+     "$\\varnothing$ is a subset of every set",
+     "$\\{a\\}$ has two subsets"
     ],
-    "answer": 2,
-    "solution": "The empty set has no elements. So the answer is $0$.",
-    "topic": "Empty set"
+    "answer": 0,
+    "solution": "$\\{0\\}$ has one element, $0$, so it is not empty.",
+    "topic": "HOTS · Which is false"
    },
    {
     "prompt": "If $A \\subseteq B$ and $B \\subseteq A$, then",
@@ -2334,16 +2334,16 @@
     "topic": "Subsets"
    },
    {
-    "prompt": "The set of whole numbers less than $1$ is",
+    "prompt": "The number of proper subsets of the set of vowels of the English alphabet is",
     "options": [
-     "$\\varnothing$",
-     "$\\{0\\}$",
-     "$\\{0, 1\\}$",
-     "$\\{1\\}$"
+     "$32$",
+     "$25$",
+     "$31$",
+     "$5$"
     ],
-    "answer": 1,
-    "solution": "Only $0$. So the answer is $\\{0\\}$.",
-    "topic": "Kinds"
+    "answer": 2,
+    "solution": "There are $5$ vowels. Subsets $= 2^5 = 32$. Proper subsets $= 32 - 1 = 31$.",
+    "topic": "HOTS · Counting"
    },
    {
     "prompt": "$\\xi = \\{a, b, c, d, e\\}$, $A = \\{a, e\\}$. Find $A'$.",
@@ -2406,16 +2406,16 @@
     "topic": "Complement"
    },
    {
-    "prompt": "The set of even prime numbers is",
+    "prompt": "$A = \\{x : x \\in N, x^2 < 30\\}$ in roster form is",
     "options": [
-     "a singleton",
-     "infinite",
-     "$\\{2, 4\\}$",
-     "empty"
+     "$\\{1, 2, 3, 4, 5\\}$",
+     "$\\{0, 1, 2, 3, 4, 5\\}$",
+     "$\\{1, 2, 3, 4, 5, 6\\}$",
+     "$\\{1, 4, 9, 16, 25\\}$"
     ],
     "answer": 0,
-    "solution": "Only $2$. So the answer is a singleton.",
-    "topic": "Kinds"
+    "solution": "$5^2 = 25 < 30$ but $6^2 = 36 > 30$. The set lists $x$, not $x^2$, and $0$ is not natural.",
+    "topic": "HOTS · Roster form"
    },
    {
     "prompt": "A set with $5$ elements has how many subsets?",
@@ -2512,28 +2512,28 @@
   "title": "Ratio and Proportion",
   "questions": [
    {
-    "prompt": "The ratio of $75$ paise to ₹$3$ is",
+    "prompt": "$a : b = 2 : 3$. Then $(3a + 2b) : (4a - b) =$",
     "options": [
-     "$1 : 4$",
-     "$75 : 3$",
-     "$4 : 1$",
-     "$25 : 1$"
+     "$6 : 5$",
+     "$12 : 11$",
+     "$12 : 5$",
+     "$5 : 12$"
     ],
-    "answer": 0,
-    "solution": "$75 : 300 = 1 : 4$.",
-    "topic": "Ratio"
+    "answer": 2,
+    "solution": "Take $a = 2$, $b = 3$: $(6 + 6) : (8 - 3) = 12 : 5$.",
+    "topic": "HOTS · Expressions"
    },
    {
-    "prompt": "The ratio $48 : 60$ in lowest terms is",
+    "prompt": "A student wrote: 'The ratio of $50$ cm to $2$ m is $50 : 2 = 25 : 1$.' Which is correct?",
     "options": [
-     "$8 : 10$",
-     "$4 : 5$",
-     "$12 : 15$",
-     "$5 : 4$"
+     "$1 : 4$; first change both to the same unit",
+     "$4 : 1$",
+     "$25 : 1$ is correct",
+     "$1 : 25$"
     ],
-    "answer": 1,
-    "solution": "HCF $12$. So the answer is $4 : 5$.",
-    "topic": "Lowest terms"
+    "answer": 0,
+    "solution": "$2$ m $= 200$ cm. $50 : 200 = 1 : 4$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "Which ratio is greater?",
@@ -2596,28 +2596,28 @@
     "topic": "Fourth proportional"
    },
    {
-    "prompt": "The third proportional to $4$ and $12$ is",
+    "prompt": "Two numbers are in the ratio $3 : 5$. When $8$ is added to each, the ratio becomes $5 : 7$. The smaller number is",
     "options": [
-     "$8$",
-     "$36$",
      "$3$",
-     "$48$"
+     "$24$",
+     "$20$",
+     "$12$"
     ],
-    "answer": 1,
-    "solution": "$\\frac{12^2}{4}$. So the answer is $36$.",
-    "topic": "Third proportional"
+    "answer": 3,
+    "solution": "$7(3k + 8) = 5(5k + 8)$, so $21k + 56 = 25k + 40$ and $k = 4$. Smaller $= 12$.",
+    "topic": "HOTS · Changing ratio"
    },
    {
-    "prompt": "The mean proportional between $9$ and $16$ is",
+    "prompt": "$x : y = 3 : 4$ and $y : z = 2 : 5$. Then $x : z =$",
     "options": [
-     "$144$",
-     "$25$",
-     "$12$",
-     "$12.5$"
+     "$3 : 5$",
+     "$2 : 5$",
+     "$6 : 5$",
+     "$3 : 10$"
     ],
-    "answer": 2,
-    "solution": "$\\sqrt{144}$. So the answer is $12$.",
-    "topic": "Mean proportional"
+    "answer": 3,
+    "solution": "Make $y$ the same: $x : y = 3 : 4$ and $y : z = 4 : 10$. So $x : z = 3 : 10$.",
+    "topic": "HOTS · Compound ratio"
    },
    {
     "prompt": "If $x : 15 :: 8 : 20$, then find $x$.",
@@ -2644,52 +2644,52 @@
     "topic": "Proportion"
    },
    {
-    "prompt": "The ratio of $2$ hours to $40$ minutes is",
-    "options": [
-     "$20 : 1$",
-     "$3 : 1$",
-     "$1 : 3$",
-     "$1 : 20$"
-    ],
-    "answer": 1,
-    "solution": "$120 : 40 = 3 : 1$.",
-    "topic": "Same units"
-   },
-   {
-    "prompt": "The ratio of $1.2$ m to $80$ cm is",
-    "options": [
-     "$3 : 2$",
-     "$15 : 1$",
-     "$2 : 3$",
-     "$8 : 12$"
-    ],
-    "answer": 0,
-    "solution": "$120 : 80 = 3 : 2$.",
-    "topic": "Same units"
-   },
-   {
-    "prompt": "The ratio of boys to girls is $5 : 3$. There are $40$ students. The number of girls is",
+    "prompt": "A bag has ₹$1$, ₹$2$ and ₹$5$ coins in the ratio $3 : 2 : 1$. The total value is ₹$120$. The number of ₹$5$ coins is",
     "options": [
      "$24$",
-     "$8$",
-     "$15$",
-     "$25$"
+     "$20$",
+     "$10$",
+     "$30$"
     ],
     "answer": 2,
-    "solution": "$\\frac{3}{8} \\times 40 = 15$.",
-    "topic": "Divide"
+    "solution": "Values: $3k \\times 1 + 2k \\times 2 + k \\times 5 = 12k = 120$, so $k = 10$.",
+    "topic": "HOTS · Coins"
    },
    {
-    "prompt": "Two numbers are in the ratio $3 : 7$ and their sum is $80$. The smaller number is",
+    "prompt": "A sum is divided between A and B in the ratio $2 : 3$. B gets ₹$150$ more than A. The sum is",
     "options": [
-     "$56$",
-     "$21$",
-     "$30$",
-     "$24$"
+     "₹$750$",
+     "₹$900$",
+     "₹$300$",
+     "₹$450$"
+    ],
+    "answer": 0,
+    "solution": "One part $= 150$. The sum has $5$ parts: ₹$750$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "The ratio of boys to girls is $7 : 5$. Then $8$ more girls join, and the ratio becomes $1 : 1$. The number of boys is",
+    "options": [
+     "$14$",
+     "$20$",
+     "$32$",
+     "$28$"
     ],
     "answer": 3,
-    "solution": "$\\frac{3}{10} \\times 80$. So the answer is $24$.",
-    "topic": "Divide"
+    "solution": "$7k = 5k + 8$, so $k = 4$. Boys $= 28$.",
+    "topic": "HOTS · Changing ratio"
+   },
+   {
+    "prompt": "The sides of a triangle are in the ratio $3 : 4 : 5$. Its perimeter is $60$ cm. The longest side is",
+    "options": [
+     "$25$ cm",
+     "$15$ cm",
+     "$20$ cm",
+     "$12$ cm"
+    ],
+    "answer": 0,
+    "solution": "$12$ parts $= 60$ cm, so one part $= 5$ cm. Longest $= 25$ cm.",
+    "topic": "HOTS · Geometry link"
    },
    {
     "prompt": "For $x > 0$, if $3 : x = x : 12$, then find $x$.",
@@ -2704,16 +2704,16 @@
     "topic": "Mean proportional"
    },
    {
-    "prompt": "The ratio $2 : 3$ is the same as",
+    "prompt": "Which four numbers are in proportion (in this order)?",
     "options": [
-     "$10 : 15$",
-     "$6 : 8$",
-     "$3 : 2$",
-     "$4 : 9$"
+     "$2, 3, 4, 5$",
+     "$1.5, 2.5, 4.5, 7.5$",
+     "$4, 6, 8, 10$",
+     "$3, 5, 6, 9$"
     ],
-    "answer": 0,
-    "solution": "Multiply both by $5$. So the answer is $10 : 15$.",
-    "topic": "Equivalent"
+    "answer": 1,
+    "solution": "Product of extremes $= 1.5 \\times 7.5 = 11.25$. Product of means $= 2.5 \\times 4.5 = 11.25$.",
+    "topic": "HOTS · Proportion test"
    },
    {
     "prompt": "₹$2400$ is divided among A, $B$, $C$ in the ratio $1 : 2 : 3$. $C$ gets",
@@ -2728,16 +2728,16 @@
     "topic": "Divide"
    },
    {
-    "prompt": "The inverse ratio of $4 : 7$ is",
+    "prompt": "A student wrote: 'If $a : b = 2 : 3$, then $(a + 1) : (b + 1) = 3 : 4$.' Which is correct?",
     "options": [
-     "$4 : 7$",
-     "$\\frac{1}{4} : 7$",
-     "$-4 : 7$",
-     "$7 : 4$"
+     "It depends on $a$ and $b$; adding $1$ changes the ratio",
+     "$1 : 1$",
+     "$2 : 3$; the ratio does not change",
+     "$3 : 4$ is always correct"
     ],
-    "answer": 3,
-    "solution": "The inverse ratio swaps the two terms. So the inverse of $4 : 7$ is $7 : 4$.",
-    "topic": "Inverse ratio"
+    "answer": 0,
+    "solution": "For $a = 2$, $b = 3$ it gives $3 : 4$, but for $a = 4$, $b = 6$ it gives $5 : 7$. Adding to both terms does not give a fixed ratio.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "If a : $b = 3 : 4$, then find $(2a + b) : (a + 2b)$.",
@@ -2930,28 +2930,28 @@
   "title": "Unitary Method",
   "questions": [
    {
-    "prompt": "$12$ pens cost ₹$180$. $20$ pens cost",
+    "prompt": "$8$ men can finish a work in $12$ days. After $4$ days, $8$ more men join. The rest of the work takes",
     "options": [
-     "₹$240$",
-     "₹$150$",
-     "₹$300$",
-     "₹$360$"
+     "$4$ more days",
+     "$6$ more days",
+     "$8$ more days",
+     "$2$ more days"
     ],
-    "answer": 2,
-    "solution": "$15 \\times 20$. So the answer is ₹$300$.",
-    "topic": "Direct"
+    "answer": 0,
+    "solution": "Work left $= 8 \\times 8 = 64$ man-days. With $16$ men: $64 \\div 16 = 4$ days.",
+    "topic": "HOTS · Change midway"
    },
    {
-    "prompt": "A car uses $8$ L for $96$ km. On $15$ L it goes",
+    "prompt": "$x$ and $y$ vary inversely. If $x$ is doubled, then $y$",
     "options": [
-     "$144$ km",
-     "$160$ km",
-     "$180$ km",
-     "$200$ km"
+     "stays the same",
+     "becomes half",
+     "becomes $4$ times",
+     "doubles"
     ],
-    "answer": 2,
-    "solution": "$12$ km per litre. So the answer is $180$ km.",
-    "topic": "Direct"
+    "answer": 1,
+    "solution": "$x \\times y$ stays constant, so doubling $x$ halves $y$.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "$15$ men build a wall in $24$ days. $20$ men build it in",
@@ -3014,16 +3014,16 @@
     "topic": "Pipes"
    },
    {
-    "prompt": "A man earns ₹$4500$ in $9$ days. In $15$ days he earns",
+    "prompt": "A student wrote: '$4$ workers build a wall in $6$ days, so $8$ workers take $12$ days.' Which is correct?",
     "options": [
-     "₹$5000$",
-     "₹$7500$",
-     "₹$2700$",
-     "₹$6750$"
+     "$3$ days; more workers need less time",
+     "$12$ days is correct",
+     "$24$ days",
+     "$6$ days; the time does not change"
     ],
-    "answer": 1,
-    "solution": "$500 \\times 15$. So the answer is ₹$7500$.",
-    "topic": "Direct"
+    "answer": 0,
+    "solution": "This is inverse variation: $4 \\times 6 = 24$ worker-days. $24 \\div 8 = 3$ days.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "$6$ taps fill a tank in $4$ h. $8$ taps fill it in",
@@ -3038,28 +3038,28 @@
     "topic": "Inverse"
    },
    {
-    "prompt": "If A does $\\frac{1}{8}$ of a work in one day, A finishes it in",
+    "prompt": "A can do a work in $6$ days and B in $9$ days. A works alone for $2$ days, and then B finishes the work. B works for",
     "options": [
-     "$8$ days",
+     "$3$ days",
      "$4$ days",
-     "$\\frac{1}{8}$ day",
-     "$16$ days"
-    ],
-    "answer": 0,
-    "solution": "Days $= 1 \\div (\\frac{1}{8})$. So the answer is $8$ days.",
-    "topic": "Time and work"
-   },
-   {
-    "prompt": "A train covers $200$ km in $2.5$ h. $340$ km takes",
-    "options": [
-     "$4$ h $30$ min",
-     "$3$ h $45$ min",
-     "$4$ h $15$ min",
-     "$4$ h"
+     "$6$ days",
+     "$7$ days"
     ],
     "answer": 2,
-    "solution": "$80$ km/h; $340 \\div 80 = 4.25$ h. So the answer is $4$ h $15$ min.",
-    "topic": "Direct"
+    "solution": "A does $\\frac{2}{6} = \\frac{1}{3}$. B does $\\frac{2}{3}$ of the work: $\\frac{2}{3} \\times 9 = 6$ days.",
+    "topic": "HOTS · Work"
+   },
+   {
+    "prompt": "$12$ men or $18$ women can do a work in $14$ days. In how many days can $8$ men and $16$ women do it?",
+    "options": [
+     "$12$",
+     "$9$",
+     "$7$",
+     "$10$"
+    ],
+    "answer": 1,
+    "solution": "$12$ men $= 18$ women, so $8$ men $= 12$ women. Total $= 28$ women. Days $= \\frac{18 \\times 14}{28} = 9$.",
+    "topic": "HOTS · Equivalent workers"
    },
    {
     "prompt": "A can do a job in $4$ days and $B$ in $12$ days. Together they take",
@@ -3086,16 +3086,16 @@
     "topic": "Inverse"
    },
    {
-    "prompt": "$5$ kg of sugar costs ₹$215$. $8$ kg costs",
+    "prompt": "$5$ pumps empty a tank in $3$ hours. How many pumps are needed to empty it in $1$ hour $15$ minutes?",
     "options": [
-     "₹$350$",
-     "₹$430$",
-     "₹$344$",
-     "₹$324$"
+     "$12$",
+     "$8$",
+     "$15$",
+     "$10$"
     ],
-    "answer": 2,
-    "solution": "$43 \\times 8$. So the answer is ₹$344$.",
-    "topic": "Direct"
+    "answer": 0,
+    "solution": "Work $= 5 \\times 3 = 15$ pump-hours. $15 \\div 1.25 = 12$ pumps.",
+    "topic": "HOTS · Inverse"
    },
    {
     "prompt": "A cyclist at $12$ km/h takes $5$ h. At $15$ km/h the same journey takes",
@@ -3134,16 +3134,16 @@
     "topic": "Time and work"
    },
    {
-    "prompt": "If $7$ workers earn ₹$3150$ in a day, $12$ workers earn",
+    "prompt": "A and B together finish a work in $8$ days. A works twice as fast as B. A alone takes",
     "options": [
-     "₹$5000$",
-     "₹$5400$",
-     "₹$6300$",
-     "₹$4800$"
+     "$4$ days",
+     "$16$ days",
+     "$12$ days",
+     "$24$ days"
     ],
-    "answer": 1,
-    "solution": "$450 \\times 12$. So the answer is ₹$5400$.",
-    "topic": "Direct"
+    "answer": 2,
+    "solution": "A does $2$ parts for every $1$ part of B, so A does $\\frac{2}{3}$ of the daily work: $\\frac{2}{3} \\times \\frac{1}{8} = \\frac{1}{12}$. A takes $12$ days.",
+    "topic": "HOTS · Work"
    },
    {
     "prompt": "A shopkeeper has fodder for $20$ cows for $15$ days. With $25$ cows it lasts",
@@ -3170,28 +3170,28 @@
     "topic": "Pipes"
    },
    {
-    "prompt": "In the unitary method, we first find",
+    "prompt": "$15$ books cost ₹$x$. Then $24$ books cost",
     "options": [
-     "the ratio only",
-     "the total",
-     "the value of many units",
-     "the value of one unit"
+     "₹$\\frac{15x}{24}$",
+     "₹$9x$",
+     "₹$\\frac{8x}{5}$",
+     "₹$\\frac{5x}{8}$"
     ],
-    "answer": 3,
-    "solution": "In the unitary method, first find the value of one unit. Then multiply by the number of units needed. So the answer is the value of one unit.",
-    "topic": "Method"
+    "answer": 2,
+    "solution": "One book costs ₹$\\frac{x}{15}$. $24$ books cost ₹$\\frac{24x}{15} = $ ₹$\\frac{8x}{5}$.",
+    "topic": "HOTS · Algebra link"
    },
    {
-    "prompt": "A machine prints $450$ pages in $9$ minutes. In $1$ hour it prints",
+    "prompt": "A tap fills a tank in $4$ hours. Because of a leak, it takes $6$ hours. The leak alone empties the full tank in",
     "options": [
-     "$3000$ pages",
-     "$4050$ pages",
-     "$3600$ pages",
-     "$2700$ pages"
+     "$10$ hours",
+     "$24$ hours",
+     "$2$ hours",
+     "$12$ hours"
     ],
-    "answer": 0,
-    "solution": "$50$ pages per minute $\\times 60$. So the answer is $3000$ pages.",
-    "topic": "Direct"
+    "answer": 3,
+    "solution": "Leak per hour $= \\frac{1}{4} - \\frac{1}{6} = \\frac{1}{12}$. So $12$ hours.",
+    "topic": "HOTS · Pipes"
    },
    {
     "prompt": "If $16$ men finish a work in $10$ days, how many men finish it in $8$ days?",
@@ -3266,16 +3266,16 @@
     "topic": "Time and work"
    },
    {
-    "prompt": "A worker is paid ₹$840$ for $6$ days. For $2$ weeks of work $(14)$ days) he gets",
+    "prompt": "Which pair of quantities varies directly?",
     "options": [
-     "₹$2240$",
-     "₹$1960$",
-     "₹$1820$",
-     "₹$1680$"
+     "The number of taps and the time to fill a tank",
+     "Speed and time for a fixed distance",
+     "The number of workers and the days for a fixed job",
+     "The number of pens bought and their total cost"
     ],
-    "answer": 1,
-    "solution": "$140 \\times 14$. So the answer is ₹$1960$.",
-    "topic": "Direct"
+    "answer": 3,
+    "solution": "More pens cost more, in the same ratio. The other three pairs vary inversely.",
+    "topic": "HOTS · Classify"
    },
    {
     "prompt": "A can do $\\frac{2}{3}$ of a work in $10$ days. The whole work takes A",
@@ -3348,52 +3348,52 @@
   "title": "Percent and Percentage",
   "questions": [
    {
-    "prompt": "$\\frac{3}{8}$ as a percent is",
+    "prompt": "A price rises by $20\\%$ and then falls by $20\\%$. Compared with the original price, the final price is",
     "options": [
-     "$37.5\\%$",
-     "$3.75\\%$",
-     "$0.375\\%$",
-     "$38\\%$"
+     "$4\\%$ less",
+     "the same",
+     "$4\\%$ more",
+     "$20\\%$ less"
     ],
     "answer": 0,
-    "solution": "$\\frac{3}{8} \\times 100$. So the answer is $37.5\\%$.",
-    "topic": "Conversion"
+    "solution": "$1.2 \\times 0.8 = 0.96$. The final price is $96\\%$ of the original, so it is $4\\%$ less.",
+    "topic": "HOTS · Successive change"
    },
    {
-    "prompt": "$45\\%$ as a fraction in lowest terms is",
+    "prompt": "A's salary is $25\\%$ more than B's salary. B's salary is less than A's salary by",
     "options": [
-     "$\\frac{9}{20}$",
-     "$\\frac{9}{2}$",
-     "$\\frac{45}{10}$",
-     "$\\frac{4}{5}$"
+     "$80\\%$",
+     "$20\\%$",
+     "$75\\%$",
+     "$25\\%$"
+    ],
+    "answer": 1,
+    "solution": "Take B $= 100$, so A $= 125$. B is less by $\\frac{25}{125} \\times 100 = 20\\%$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Each side of a square is increased by $20\\%$. Its area increases by",
+    "options": [
+     "$44\\%$",
+     "$4\\%$",
+     "$40\\%$",
+     "$20\\%$"
     ],
     "answer": 0,
-    "solution": "$\\frac{45}{100} = \\frac{9}{20}$.",
-    "topic": "Conversion"
+    "solution": "New area $= 1.2 \\times 1.2 = 1.44$ times the old area, an increase of $44\\%$.",
+    "topic": "HOTS · Area"
    },
    {
-    "prompt": "$0.065$ as a percent is",
+    "prompt": "In an election between two candidates, the winner got $58\\%$ of the votes and won by $1120$ votes. The total number of votes is",
     "options": [
-     "$0.65\\%$",
-     "$650\\%$",
-     "$6.5\\%$",
-     "$65\\%$"
+     "$14000$",
+     "$6440$",
+     "$7000$",
+     "$1931$"
     ],
     "answer": 2,
-    "solution": "$0.065 \\times 100$. So the answer is $6.5\\%$.",
-    "topic": "Conversion"
-   },
-   {
-    "prompt": "$12\\tfrac{1}{2}\\%$ as a fraction is",
-    "options": [
-     "$\\frac{1}{4}$",
-     "$\\frac{1}{12}$",
-     "$\\frac{1}{8}$",
-     "$\\frac{12}{100}$"
-    ],
-    "answer": 2,
-    "solution": "$\\frac{\\frac{25}{2}}{100} = \\frac{1}{8}$.",
-    "topic": "Conversion"
+    "solution": "The loser got $42\\%$. The difference is $16\\%$ of the total $= 1120$. Total $= \\frac{1120 \\times 100}{16} = 7000$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "$15\\%$ of ₹$640$ is",
@@ -3468,40 +3468,40 @@
     "topic": "Original"
    },
    {
-    "prompt": "$\\frac{1}{4}$ as a percent is",
+    "prompt": "For positive numbers $x$ and $y$, compare $x\\%$ of $y$ with $y\\%$ of $x$.",
     "options": [
-     "$25\\%$",
-     "$4\\%$",
-     "$40\\%$",
-     "$0.25\\%$"
+     "$y\\%$ of $x$ is greater",
+     "They are equal",
+     "$x\\%$ of $y$ is greater",
+     "It depends on $x$ and $y$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{100}{4}$. So the answer is $25\\%$.",
-    "topic": "Conversion"
+    "answer": 1,
+    "solution": "$x\\%$ of $y = \\frac{xy}{100}$ and $y\\%$ of $x = \\frac{yx}{100}$. They are always equal.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "$2.5$ as a percent is",
+    "prompt": "In a class, $40\\%$ of the students like maths, $50\\%$ like science and $20\\%$ like both. The percent who like neither is",
     "options": [
-     "$0.25\\%$",
-     "$25\\%$",
-     "$2.5\\%$",
-     "$250\\%$"
+     "$50\\%$",
+     "$30\\%$",
+     "$10\\%$",
+     "$20\\%$"
     ],
-    "answer": 3,
-    "solution": "$2.5 \\times 100$. So the answer is $250\\%$.",
-    "topic": "Conversion"
+    "answer": 1,
+    "solution": "Like at least one $= 40 + 50 - 20 = 70\\%$. Neither $= 100 - 70 = 30\\%$.",
+    "topic": "HOTS · Overlap"
    },
    {
-    "prompt": "What percent of $80$ is $20$?",
+    "prompt": "Fresh grapes are $90\\%$ water. Raisins are $20\\%$ water. How many kg of raisins come from $40$ kg of fresh grapes?",
     "options": [
-     "$20\\%$",
-     "$60\\%$",
-     "$25\\%$",
-     "$4\\%$"
+     "$8$ kg",
+     "$5$ kg",
+     "$4$ kg",
+     "$36$ kg"
     ],
-    "answer": 2,
-    "solution": "$\\frac{20}{80} \\times 100$. So the answer is $25\\%$.",
-    "topic": "What percent"
+    "answer": 1,
+    "solution": "The solid part is $10\\%$ of $40 = 4$ kg. In raisins it is $80\\%$, so raisins $= \\frac{4 \\times 100}{80} = 5$ kg.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "$40\\%$ is the pass mark. A student gets $185$ and fails by $15$. The maximum marks are",
@@ -3516,16 +3516,16 @@
     "topic": "Exam"
    },
    {
-    "prompt": "A student scores $432$ out of $600$. The percent is",
+    "prompt": "Sales rise by $10\\%$ in the first year and by $10\\%$ again in the second year. The total increase over the two years is",
     "options": [
-     "$72\\%$",
-     "$43.2\\%$",
-     "$75\\%$",
-     "$68\\%$"
+     "$10\\%$",
+     "$20\\%$",
+     "$11\\%$",
+     "$21\\%$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{432}{600} \\times 100$. So the answer is $72\\%$.",
-    "topic": "What percent"
+    "answer": 3,
+    "solution": "$1.1 \\times 1.1 = 1.21$, so the increase is $21\\%$. The second $10\\%$ is taken on the larger value.",
+    "topic": "HOTS · Successive change"
    },
    {
     "prompt": "$60\\%$ of the students are boys. There are $360$ girls. Find the total students.",
@@ -3552,16 +3552,16 @@
     "topic": "Compare"
    },
    {
-    "prompt": "$50$ paise as a percent of ₹$2$ is",
+    "prompt": "$x$ is $20\\%$ of $y$, and $y$ is $50\\%$ of $z$. Then $x$ is what percent of $z$?",
     "options": [
-     "$25\\%$",
-     "$2.5\\%$",
-     "$4\\%$",
-     "$50\\%$"
+     "$70\\%$",
+     "$40\\%$",
+     "$30\\%$",
+     "$10\\%$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{50}{200} \\times 100$. So the answer is $25\\%$.",
-    "topic": "Same units"
+    "answer": 3,
+    "solution": "$x = 0.2y = 0.2 \\times 0.5z = 0.1z$, so $x$ is $10\\%$ of $z$.",
+    "topic": "HOTS · Chain"
    },
    {
     "prompt": "A number is increased by $10\\%$ and then decreased by $10\\%$. The net change is",
@@ -3648,16 +3648,16 @@
     "topic": "Of a quantity"
    },
    {
-    "prompt": "A salary of ₹$20{,}000$ is raised by $15\\%$. The new salary is",
+    "prompt": "Asha wrote: 'Marks rose from $40$ to $50$, so the increase is $\\frac{10}{50} \\times 100 = 20\\%$.' Which is correct?",
     "options": [
-     "₹$23{,}500$",
-     "₹$21{,}500$",
-     "₹$30{,}000$",
-     "₹$23{,}000$"
+     "$25\\%$; divide by the old value $40$",
+     "$80\\%$; divide $40$ by $50$",
+     "$20\\%$; her working is correct",
+     "$10\\%$; the rise is $10$ marks"
     ],
-    "answer": 3,
-    "solution": "$20000 \\times 1.15$. So the answer is ₹$23{,}000$.",
-    "topic": "Increase"
+    "answer": 0,
+    "solution": "Percent increase uses the original value: $\\frac{10}{40} \\times 100 = 25\\%$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "The percent of $1$ hour that $12$ minutes is",
@@ -3766,28 +3766,28 @@
   "title": "Profit, Loss and Discount",
   "questions": [
    {
-    "prompt": "CP ₹$1500$, SP ₹$1725$. Find the profit percent.",
+    "prompt": "The CP of an article is ₹$x$. It is sold at a loss of $20\\%$. The SP is",
     "options": [
-     "$22.5\\%$",
-     "$15\\%$",
-     "$12\\%$",
-     "$13\\%$"
+     "₹$\\frac{4x}{5}$",
+     "₹$\\frac{5x}{4}$",
+     "₹$\\frac{x}{5}$",
+     "₹$0.2x$"
     ],
-    "answer": 1,
-    "solution": "$\\frac{225}{1500} \\times 100$. So the answer is $15\\%$.",
-    "topic": "Profit"
+    "answer": 0,
+    "solution": "SP $= 80\\%$ of $x = \\frac{4x}{5}$.",
+    "topic": "HOTS · Algebra link"
    },
    {
-    "prompt": "CP ₹$2800 +$ repairs ₹$200$, SP ₹$2700$. Find the loss percent.",
+    "prompt": "A student wrote: 'CP ₹$400$, SP ₹$500$. Profit $\\% = \\frac{100}{500} \\times 100 = 20\\%$.' Which is correct?",
     "options": [
-     "$11.1\\%$",
-     "$3.6\\%$",
-     "$7\\%$",
-     "$10\\%$"
+     "$20\\%$ is correct",
+     "$100\\%$",
+     "$80\\%$",
+     "$25\\%$; profit percent is found on the CP"
     ],
     "answer": 3,
-    "solution": "$\\frac{300}{3000} \\times 100$. So the answer is $10\\%$.",
-    "topic": "Overheads"
+    "solution": "Profit $\\% = \\frac{100}{400} \\times 100 = 25\\%$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "CP ₹$640$, profit $12\\tfrac{1}{2}\\%$. Find the sP.",
@@ -3814,52 +3814,52 @@
     "topic": "CP"
    },
    {
-    "prompt": "Profit or loss percent is found on",
+    "prompt": "A shop gives $20\\%$ off and then a further $10\\%$ off. The total discount is",
     "options": [
-     "SP",
-     "MP",
-     "CP",
-     "discount"
+     "$30\\%$",
+     "$28\\%$",
+     "$32\\%$",
+     "$25\\%$"
     ],
-    "answer": 2,
-    "solution": "Profit percent and loss percent are always found on the cost price $(CP)$.",
-    "topic": "Concept"
+    "answer": 1,
+    "solution": "$0.8 \\times 0.9 = 0.72$, so the buyer pays $72\\%$. Discount $= 28\\%$.",
+    "topic": "HOTS · Successive discounts"
    },
    {
-    "prompt": "Discount is found on",
+    "prompt": "An item is marked ₹$1000$. Which offer is best for the buyer?",
     "options": [
-     "profit",
-     "CP",
-     "MP",
-     "SP"
+     "Two discounts of $15\\%$ each",
+     "A $30\\%$ discount",
+     "A discount of ₹$250$",
+     "Pay full price and get $20\\%$ cash back"
     ],
-    "answer": 2,
-    "solution": "Discount is always found on the marked price $(MP)$.",
-    "topic": "Concept"
+    "answer": 1,
+    "solution": "The buyer pays ₹$700$, ₹$722.50$, ₹$750$ and ₹$800$. The $30\\%$ discount is best.",
+    "topic": "HOTS · Compare offers"
    },
    {
-    "prompt": "MP ₹$2400$, discount $15\\%$. Find the sP.",
+    "prompt": "A shopkeeper uses a $900$ g weight in place of $1$ kg and sells at the cost price. His gain percent is",
     "options": [
-     "₹$2040$",
-     "₹$2100$",
-     "₹$360$",
-     "₹$2385$"
+     "$10\\%$",
+     "$11\\frac{1}{9}\\%$",
+     "$9\\%$",
+     "$1\\%$"
+    ],
+    "answer": 1,
+    "solution": "He gives $900$ g and charges for $1000$ g. Gain $= \\frac{100}{900} \\times 100 = 11\\frac{1}{9}\\%$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "An article is sold at a profit of $20\\%$. If the CP and the SP were each ₹$100$ less, the profit would be $25\\%$. The CP is",
+    "options": [
+     "₹$500$",
+     "₹$600$",
+     "₹$250$",
+     "₹$400$"
     ],
     "answer": 0,
-    "solution": "$2400 \\times 0.85$. So the answer is ₹$2040$.",
-    "topic": "Discount"
-   },
-   {
-    "prompt": "MP ₹$800$, SP ₹$680$. Find the discount percent.",
-    "options": [
-     "$17.6\\%$",
-     "$12\\%$",
-     "$15\\%$",
-     "$20\\%$"
-    ],
-    "answer": 2,
-    "solution": "$\\frac{120}{800} \\times 100$. So the answer is $15\\%$.",
-    "topic": "Discount"
+    "solution": "$1.2C - 100 = 1.25(C - 100)$, so $0.05C = 25$ and $C = 500$.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "Goods are marked $25\\%$ above CP and a $10\\%$ discount is given. Find the profit percent.",
@@ -3874,16 +3874,16 @@
     "topic": "Mark-up"
    },
    {
-    "prompt": "SP $=$ CP means",
+    "prompt": "The SP of $10$ articles equals the CP of $8$ articles. The result is",
     "options": [
-     "no profit, no loss",
-     "loss",
-     "discount",
-     "profit"
+     "a gain of $25\\%$",
+     "a gain of $20\\%$",
+     "a loss of $20\\%$",
+     "a loss of $25\\%$"
     ],
-    "answer": 0,
-    "solution": "The difference is $0$. So the answer is no profit, no loss.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "Take CP of one $= 1$. SP of $10 = 8$, so SP of one $= 0.8$. Loss $= 20\\%$.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "A man buys $10$ oranges for ₹$50$ and sells them at ₹$6$ each. Find the profit percent.",
@@ -3910,16 +3910,16 @@
     "topic": "CP"
    },
    {
-    "prompt": "A TV is bought for ₹$12{,}000$ and sold at a loss of $8\\%$. Find the sP.",
+    "prompt": "A shirt marked ₹$1200$ is sold after a discount. The CP is ₹$1000$ and the profit is $8\\%$. The discount percent is",
     "options": [
-     "₹$12{,}960$",
-     "₹$11{,}040$",
-     "₹$960$",
-     "₹$11{,}000$"
+     "$12\\%$",
+     "$8\\%$",
+     "$10\\%$",
+     "$20\\%$"
     ],
-    "answer": 1,
-    "solution": "$12000 \\times 0.92$. So the answer is ₹$11{,}040$.",
-    "topic": "SP"
+    "answer": 2,
+    "solution": "SP $= 1080$. Discount $= 120$, which is $\\frac{120}{1200} \\times 100 = 10\\%$.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "By selling $12$ pens for ₹$90$, a man loses $10\\%$. For a $20\\%$ gain, he must sell for ₹$90$",
@@ -4042,16 +4042,16 @@
     "topic": "Discount"
    },
    {
-    "prompt": "CP ₹$450$, profit ₹$90$. Find the profit percent.",
+    "prompt": "A man buys eggs at $5$ for ₹$24$ and sells them at $4$ for ₹$24$. His profit percent is",
     "options": [
      "$20\\%$",
-     "$18\\%$",
-     "$16.7\\%$",
-     "$25\\%$"
+     "$25\\%$",
+     "$1.2\\%$",
+     "$30\\%$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{90}{450} \\times 100$. So the answer is $20\\%$.",
-    "topic": "Profit"
+    "answer": 1,
+    "solution": "CP of one $=$ ₹$4.80$, SP of one $=$ ₹$6$. Profit $= \\frac{1.2}{4.8} \\times 100 = 25\\%$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "If the profit is $25\\%$ of the SP, the profit percent on the CP is",
@@ -4066,16 +4066,16 @@
     "topic": "Profit"
    },
    {
-    "prompt": "A watch marked ₹$2000$ is sold at $12\\%$ discount. The customer pays",
+    "prompt": "The loss is $\\frac{1}{5}$ of the SP. The loss percent is",
     "options": [
-     "₹$1600$",
-     "₹$1880$",
-     "₹$1760$",
-     "₹$240$"
+     "$16\\frac{2}{3}\\%$",
+     "$20\\%$",
+     "$\\frac{1}{5}\\%$",
+     "$25\\%$"
     ],
-    "answer": 2,
-    "solution": "$2000 \\times 0.88$. So the answer is ₹$1760$.",
-    "topic": "Discount"
+    "answer": 0,
+    "solution": "Take SP $= 5$. Loss $= 1$ and CP $= 6$. Loss $\\% = \\frac{1}{6} \\times 100 = 16\\frac{2}{3}\\%$.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "A man sells a chair for ₹$720$ and gains $20\\%$. To gain $25\\%$, he must sell it for",
@@ -4184,16 +4184,16 @@
   "title": "Simple Interest",
   "questions": [
    {
-    "prompt": "SI on ₹$4500$ at $8\\%$ for $3$ years is",
+    "prompt": "A sum doubles in $5$ years at simple interest. In how many years does it become $4$ times?",
     "options": [
-     "₹$1080$",
-     "₹$5580$",
-     "₹$1200$",
-     "₹$360$"
+     "$25$",
+     "$20$",
+     "$10$",
+     "$15$"
     ],
-    "answer": 0,
-    "solution": "$4500 \\times 8 \\times \\frac{3}{100}$. So the answer is ₹$1080$.",
-    "topic": "SI"
+    "answer": 3,
+    "solution": "Doubling means SI $= P$ in $5$ years. Four times means SI $= 3P$, which takes $3 \\times 5 = 15$ years.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "The amount on ₹$6000$ at $9\\%$ for $2\\tfrac{1}{2}$ years is",
@@ -4256,28 +4256,28 @@
     "topic": "Doubles"
    },
    {
-    "prompt": "$9$ months is how many years?",
+    "prompt": "A student wrote: 'SI on ₹$1000$ at $6\\%$ for $8$ months $= \\frac{1000 \\times 6 \\times 8}{100} = $ ₹$480$.' Which is correct?",
     "options": [
-     "$\\frac{3}{4}$",
-     "$\\frac{1}{4}$",
-     "$\\frac{3}{2}$",
-     "$\\frac{9}{10}$"
+     "₹$48$",
+     "₹$4.80$",
+     "₹$40$; the time must be in years",
+     "₹$480$ is correct"
     ],
-    "answer": 0,
-    "solution": "$\\frac{9}{12}$. So the answer is $\\frac{3}{4}$.",
-    "topic": "Time"
+    "answer": 2,
+    "solution": "$T = \\frac{8}{12}$ year. SI $= \\frac{1000 \\times 6 \\times 8}{100 \\times 12} = $ ₹$40$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "In SI $= \\frac{PRT}{100}$, $R$ is",
+    "prompt": "At what rate is the SI on a sum equal to $\\frac{2}{5}$ of the sum in $8$ years?",
     "options": [
-     "the amount",
-     "the rate per annum",
-     "the principal",
-     "the time"
+     "$40\\%$",
+     "$8\\%$",
+     "$2.5\\%$",
+     "$5\\%$"
     ],
-    "answer": 1,
-    "solution": "$R$ is the rate percent per year. So the answer is the rate per annum.",
-    "topic": "Formula"
+    "answer": 3,
+    "solution": "SI $= 40\\%$ of $P$ in $8$ years, so $R = 40 \\div 8 = 5\\%$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "SI on ₹$7300$ at $5\\%$ for $89$ days is",
@@ -4316,16 +4316,16 @@
     "topic": "Triples"
    },
    {
-    "prompt": "SI on ₹$800$ at $5\\%$ for $1$ year is",
+    "prompt": "Ravi lends ₹$5000$, part at $5\\%$ and the rest at $8\\%$. The total yearly interest is ₹$310$. The part lent at $5\\%$ is",
     "options": [
-     "₹$40$",
-     "₹$4$",
-     "₹$400$",
-     "₹$80$"
+     "₹$3100$",
+     "₹$2500$",
+     "₹$2000$",
+     "₹$3000$"
     ],
-    "answer": 0,
-    "solution": "$800 \\times \\frac{5}{100}$. So the answer is ₹$40$.",
-    "topic": "SI"
+    "answer": 3,
+    "solution": "$0.05x + 0.08(5000 - x) = 310$, so $400 - 0.03x = 310$ and $x = 3000$.",
+    "topic": "HOTS · Two parts"
    },
    {
     "prompt": "The SI on a sum for $3$ years at $5\\%$ is ₹$300$. The sum is",
@@ -4376,28 +4376,28 @@
     "topic": "Two amounts"
    },
    {
-    "prompt": "For the same sum and rate, SI is",
+    "prompt": "The principal and the rate are both doubled. The time does not change. The SI",
     "options": [
-     "inversely proportional to time",
-     "directly proportional to time",
-     "always constant",
-     "not related to time"
-    ],
-    "answer": 1,
-    "solution": "SI $= (\\frac{PR}{100}) \\times T$. So the answer is directly proportional to time.",
-    "topic": "Concept"
-   },
-   {
-    "prompt": "SI on ₹$10{,}000$ at $12\\%$ for $6$ months is",
-    "options": [
-     "₹$600$",
-     "₹$60$",
-     "₹$1200$",
-     "₹$7200$"
+     "becomes $4$ times",
+     "becomes $8$ times",
+     "becomes $2$ times",
+     "stays the same"
     ],
     "answer": 0,
-    "solution": "$10000 \\times 12 \\times \\frac{0.5}{100}$. So the answer is ₹$600$.",
-    "topic": "SI"
+    "solution": "SI $= \\frac{PRT}{100}$. Doubling $P$ and $R$ multiplies SI by $2 \\times 2 = 4$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Which earns more interest in one year: ₹$6000$ at $8\\%$ or ₹$8000$ at $6\\%$?",
+    "options": [
+     "Both earn the same",
+     "It depends on the time",
+     "₹$8000$ at $6\\%$",
+     "₹$6000$ at $8\\%$"
+    ],
+    "answer": 0,
+    "solution": "$6000 \\times 0.08 = 480$ and $8000 \\times 0.06 = 480$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "If $P =$ ₹$5000$, $R = 10\\%$ and SI $=$ ₹$1500$, then find $T$.",
@@ -4424,16 +4424,16 @@
     "topic": "Rate"
    },
    {
-    "prompt": "Amount on ₹$2000$ at $8\\%$ for $3$ years is",
+    "prompt": "The SI on ₹$x$ for $x$ years at $x\\%$ is ₹$x$. Then $x =$",
     "options": [
-     "₹$2400$",
-     "₹$2480$",
-     "₹$2160$",
-     "₹$480$"
+     "$10$",
+     "$1$",
+     "$20$",
+     "$100$"
     ],
-    "answer": 1,
-    "solution": "SI $480$. So the answer is ₹$2480$.",
-    "topic": "Amount"
+    "answer": 0,
+    "solution": "$\\frac{x \\times x \\times x}{100} = x$, so $x^2 = 100$ and $x = 10$.",
+    "topic": "HOTS · Puzzle"
    },
    {
     "prompt": "Ravi borrows ₹$4000$ at $9\\%$ and lends it at $12\\%$ for $2$ years. His gain is",
@@ -4448,28 +4448,28 @@
     "topic": "Gain"
    },
    {
-    "prompt": "Which formula gives the time?",
+    "prompt": "A sum amounts to ₹$1210$ in $2$ years at $5\\%$ SI. The sum is",
     "options": [
-     "$T = 100 \\times$ SI $\\div (P \\times R)$",
-     "$T =$ SI $\\times P \\times R \\div 100$",
-     "$T = 100 \\times P \\div$ (SI $\\times R)$",
-     "$T = P \\times R \\div (100 \\times)$ SI)"
+     "₹$1100$",
+     "₹$1000$",
+     "₹$1089$",
+     "₹$1150$"
     ],
     "answer": 0,
-    "solution": "Change SI $= \\frac{PRT}{100}$ around for $T$. So the answer is $T = 100 \\times$ SI $\\div (P \\times R)$.",
-    "topic": "Formula"
+    "solution": "In $2$ years the amount is $110\\%$ of $P$. $P = 1210 \\div 1.1 = $ ₹$1100$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "SI on ₹$1$ for $1$ year at $5\\%$ is",
+    "prompt": "SI on ₹$5000$ at $10\\%$ for $73$ days (non-leap year) is",
     "options": [
-     "₹$0.50$",
-     "$5$ paise",
-     "₹$5$",
-     "$50$ paise"
+     "₹$73$",
+     "₹$100$",
+     "₹$50$",
+     "₹$365$"
     ],
     "answer": 1,
-    "solution": "₹$0.05$. So the answer is $5$ paise.",
-    "topic": "SI"
+    "solution": "$73$ days $= \\frac{73}{365} = \\frac{1}{5}$ year. SI $= 5000 \\times \\frac{10}{100} \\times \\frac{1}{5} = $ ₹$100$.",
+    "topic": "HOTS · Days"
    },
    {
     "prompt": "The SI on ₹$x$ at $10\\%$ for $2$ years is ₹$\\frac{x}{5}$. This is",
@@ -4496,16 +4496,16 @@
     "topic": "Doubles"
    },
    {
-    "prompt": "A sum of ₹$12{,}000$ is lent at $7.5\\%$ for $4$ years. SI is",
+    "prompt": "A bank gives $6\\%$ SI. Asha deposits ₹$2000$ and wants ₹$2600$. She must wait",
     "options": [
-     "₹$3600$",
-     "₹$900$",
-     "₹$3000$",
-     "₹$4000$"
+     "$6$ years",
+     "$4$ years",
+     "$5$ years",
+     "$10$ years"
     ],
-    "answer": 0,
-    "solution": "$12000 \\times 7.5 \\times \\frac{4}{100}$. So the answer is ₹$3600$.",
-    "topic": "SI"
+    "answer": 2,
+    "solution": "SI needed $= 600$. SI per year $= 120$. Time $= 5$ years.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "SI for $2$ years is ₹$400$ and for $5$ years is ₹$1000$ on the same sum at the same rate. This shows",
@@ -4614,40 +4614,40 @@
     "topic": "Speed"
    },
    {
-    "prompt": "$72$ km/h in m/s is",
+    "prompt": "A student wrote: 'A bus goes $60$ km at $30$ km/h and $60$ km at $60$ km/h. So its average speed is $\\frac{30 + 60}{2} = 45$ km/h.' Which is correct?",
     "options": [
-     "$259.2$ m/s",
-     "$25$ m/s",
-     "$20$ m/s",
-     "$2$ m/s"
+     "$50$ km/h",
+     "$90$ km/h",
+     "$40$ km/h; divide the total distance by the total time",
+     "$45$ km/h is correct"
     ],
     "answer": 2,
-    "solution": "$72 \\times \\frac{5}{18}$. So the answer is $20$ m/s.",
-    "topic": "Conversion"
+    "solution": "Time $= 2 + 1 = 3$ h. Average speed $= \\frac{120}{3} = 40$ km/h.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "$15$ m/s in km/h is",
+    "prompt": "The speed is increased by $25\\%$. The time for the same distance decreases by",
     "options": [
-     "$60$ km/h",
-     "$54$ km/h",
-     "$4.17$ km/h",
-     "$45$ km/h"
+     "$20\\%$",
+     "$75\\%$",
+     "$25\\%$",
+     "$80\\%$"
     ],
-    "answer": 1,
-    "solution": "$15 \\times \\frac{18}{5}$. So the answer is $54$ km/h.",
-    "topic": "Conversion"
+    "answer": 0,
+    "solution": "New time $= \\frac{1}{1.25} = 0.8$ of the old time, a decrease of $20\\%$.",
+    "topic": "HOTS · Inverse"
    },
    {
-    "prompt": "At $5$ km/h, $1.5$ km takes",
+    "prompt": "A man walking at $5$ km/h reaches the station $6$ minutes late. At $6$ km/h he reaches $4$ minutes early. The distance is",
     "options": [
-     "$20$ min",
-     "$30$ min",
-     "$18$ min",
-     "$7.5$ min"
+     "$6$ km",
+     "$4$ km",
+     "$10$ km",
+     "$5$ km"
     ],
-    "answer": 2,
-    "solution": "$0.3$ h. So the answer is $18$ min.",
-    "topic": "Time"
+    "answer": 3,
+    "solution": "The time difference is $10$ min $= \\frac{1}{6}$ h. $\\frac{d}{5} - \\frac{d}{6} = \\frac{d}{30} = \\frac{1}{6}$, so $d = 5$ km.",
+    "topic": "HOTS · Late and early"
    },
    {
     "prompt": "A car goes $120$ km at $40$ km/h and $120$ km at $60$ km/h. Find the average speed.",
@@ -4686,52 +4686,52 @@
     "topic": "Trains"
    },
    {
-    "prompt": "Distance $= 150$ km, speed $= 60$ km/h. Find the time.",
+    "prompt": "Two towns are $210$ km apart. Two cars start from them at the same time towards each other at $40$ km/h and $30$ km/h. They meet after",
     "options": [
-     "$2.5$ h",
-     "$0.4$ h",
-     "$9000$ h",
-     "$2$ h"
+     "$3$ hours",
+     "$7$ hours",
+     "$21$ hours",
+     "$5.25$ hours"
     ],
     "answer": 0,
-    "solution": "$150 \\div 60$. So the answer is $2.5$ h.",
-    "topic": "Time"
+    "solution": "They close the gap at $40 + 30 = 70$ km/h. Time $= 210 \\div 70 = 3$ h.",
+    "topic": "HOTS · Meeting"
    },
    {
-    "prompt": "Speed $45$ km/h for $2$ h $20$ min. Find the distance.",
+    "prompt": "A train passes a pole in $10$ s and a $250$ m platform in $20$ s. The length of the train is",
     "options": [
-     "$99$ km",
-     "$105$ km",
-     "$100$ km",
-     "$90$ km"
+     "$500$ m",
+     "$125$ m",
+     "$250$ m",
+     "$200$ m"
+    ],
+    "answer": 2,
+    "solution": "The extra $10$ s is for the $250$ m platform, so the speed is $25$ m/s. Length $= 25 \\times 10 = 250$ m.",
+    "topic": "HOTS · Trains"
+   },
+   {
+    "prompt": "A car covers a distance in $4$ hours at $45$ km/h. To cover it in $3$ hours, its speed must be",
+    "options": [
+     "$60$ km/h",
+     "$75$ km/h",
+     "$50$ km/h",
+     "$33.75$ km/h"
+    ],
+    "answer": 0,
+    "solution": "Distance $= 180$ km. Speed $= 180 \\div 3 = 60$ km/h.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "Ravi cycles to school at $12$ km/h in $25$ minutes. On a rainy day he walks at $4$ km/h. How much earlier must he leave to reach on time?",
+    "options": [
+     "$25$ minutes",
+     "$50$ minutes",
+     "$1$ hour",
+     "$75$ minutes"
     ],
     "answer": 1,
-    "solution": "$45 \\times \\frac{7}{3}$. So the answer is $105$ km.",
-    "topic": "Distance"
-   },
-   {
-    "prompt": "Two trains run in opposite directions at $50$ km/h and $40$ km/h. The relative speed is",
-    "options": [
-     "$10$ km/h",
-     "$45$ km/h",
-     "$2000$ km/h",
-     "$90$ km/h"
-    ],
-    "answer": 3,
-    "solution": "In opposite directions the speeds $add: 50 + 40 = 90$ km/h.",
-    "topic": "Relative"
-   },
-   {
-    "prompt": "Two cars run in the same direction at $70$ km/h and $55$ km/h. The relative speed is",
-    "options": [
-     "$70$ km/h",
-     "$15$ km/h",
-     "$125$ km/h",
-     "$62.5$ km/h"
-    ],
-    "answer": 1,
-    "solution": "In the same direction the speeds subtract: $70 - 55 = 15$ km/h.",
-    "topic": "Relative"
+    "solution": "Distance $= 12 \\times \\frac{25}{60} = 5$ km. Walking time $= \\frac{5}{4}$ h $= 75$ min. He must leave $75 - 25 = 50$ min earlier.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "To cross a platform, a train covers",
@@ -4770,28 +4770,28 @@
     "topic": "Compare"
    },
    {
-    "prompt": "A cheetah runs at $30$ m/s. In km/h this is",
+    "prompt": "A bus travels $\\frac{2}{3}$ of a journey at $60$ km/h and the rest at $30$ km/h. Its average speed is",
     "options": [
-     "$8.3$ km/h",
-     "$54$ km/h",
-     "$100$ km/h",
-     "$108$ km/h"
+     "$50$ km/h",
+     "$40$ km/h",
+     "$45$ km/h",
+     "$48$ km/h"
     ],
-    "answer": 3,
-    "solution": "$30 \\times \\frac{18}{5}$. So the answer is $108$ km/h.",
-    "topic": "Conversion"
+    "answer": 2,
+    "solution": "Take $90$ km: $60$ km takes $1$ h and $30$ km takes $1$ h. Average $= \\frac{90}{2} = 45$ km/h.",
+    "topic": "HOTS · Average speed"
    },
    {
-    "prompt": "A car travels $60$ km in $45$ min. Its speed is",
+    "prompt": "A $200$ m train at $72$ km/h overtakes a man running at $18$ km/h in the same direction. It takes",
     "options": [
-     "$75$ km/h",
-     "$80$ km/h",
-     "$45$ km/h",
-     "$1.33$ km/h"
+     "$8$ s",
+     "$10$ s",
+     "$11\\frac{1}{9}$ s",
+     "$13\\frac{1}{3}$ s"
     ],
-    "answer": 1,
-    "solution": "$60 \\div 0.75$. So the answer is $80$ km/h.",
-    "topic": "Speed"
+    "answer": 3,
+    "solution": "Relative speed $= 54$ km/h $= 15$ m/s. Time $= \\frac{200}{15} = 13\\frac{1}{3}$ s.",
+    "topic": "HOTS · Relative speed"
    },
    {
     "prompt": "Same distance at $30$ km/h and $20$ km/h. Find the average speed.",
@@ -4866,16 +4866,16 @@
     "topic": "Distance"
    },
    {
-    "prompt": "$1$ km/h is equal to",
+    "prompt": "Two people start from the same point and walk in opposite directions at $4$ km/h and $5$ km/h. After how long are they $13.5$ km apart?",
     "options": [
-     "$\\frac{1}{60}$ m/s",
-     "$1000$ m/s",
-     "$\\frac{5}{18}$ m/s",
-     "$\\frac{18}{5}$ m/s"
+     "$2$ hours",
+     "$3$ hours",
+     "$1$ hour",
+     "$1.5$ hours"
     ],
-    "answer": 2,
-    "solution": "$1000$ m $\\div 3600$ s. So the answer is $\\frac{5}{18}$ m/s.",
-    "topic": "Conversion"
+    "answer": 3,
+    "solution": "They separate at $9$ km/h. Time $= 13.5 \\div 9 = 1.5$ h.",
+    "topic": "HOTS · Relative speed"
    },
    {
     "prompt": "A train at $90$ km/h crosses a $300$ m platform in $24$ s. The length of the train is",
@@ -5020,52 +5020,52 @@
   "title": "Fundamental Concepts",
   "questions": [
    {
-    "prompt": "The coefficient of xy in $5x^2 - 3xy + 7$ is",
+    "prompt": "A student wrote $3x + 2y = 5xy$. Which is correct?",
     "options": [
-     "$7$",
-     "$5$",
-     "$3$",
-     "$-3$"
+     "$6xy$",
+     "$3x + 2y$ cannot be simplified; the terms are unlike",
+     "$5(x + y)$",
+     "$5xy$ is correct"
     ],
-    "answer": 3,
-    "solution": "The number with xy is $-3$.",
-    "topic": "Coefficient"
+    "answer": 1,
+    "solution": "Only like terms can be added. $3x$ and $2y$ have different variables.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "$5x^2 - 3xy + 7$ is a",
+    "prompt": "$x^2 - 5x + 6 = 0$ for which values of $x$?",
     "options": [
-     "monomial",
-     "constant",
-     "trinomial",
-     "binomial"
+     "$5$ or $6$",
+     "$2$ or $3$",
+     "$-2$ or $-3$",
+     "$1$ or $6$"
+    ],
+    "answer": 1,
+    "solution": "$x = 2$: $4 - 10 + 6 = 0$. $x = 3$: $9 - 15 + 6 = 0$.",
+    "topic": "HOTS · Substitution"
+   },
+   {
+    "prompt": "What must be subtracted from $2a^2 - 3ab + b^2$ to get $a^2 + ab - b^2$?",
+    "options": [
+     "$3a^2 - 2ab$",
+     "$a^2 - 2ab$",
+     "$a^2 - 4ab + 2b^2$",
+     "$a^2 + 4ab - 2b^2$"
     ],
     "answer": 2,
-    "solution": "The expression has three terms: $5x^2$, $-3xy$ and $7$. An expression with three terms is a trinomial.",
-    "topic": "Kinds"
+    "solution": "$(2a^2 - 3ab + b^2) - (a^2 + ab - b^2) = a^2 - 4ab + 2b^2$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "Which are like terms?",
+    "prompt": "The smallest of three consecutive even numbers is $2n$. Their sum is",
     "options": [
-     "$2ab^2$ and $2a^2b$",
-     "$3ab$ and $3a^2b$",
-     "$3ab$ and $7ba$",
-     "$x$ and $x^2$"
+     "$6n + 6$",
+     "$3n + 6$",
+     "$6n + 2$",
+     "$6n + 3$"
     ],
-    "answer": 2,
-    "solution": "ab $=$ ba. So the answer is $3ab$ and $7ba$.",
-    "topic": "Like terms"
-   },
-   {
-    "prompt": "The degree of $4x^3 - 2x^5 + x - 9$ is",
-    "options": [
-     "$9$",
-     "$4$",
-     "$3$",
-     "$5$"
-    ],
-    "answer": 3,
-    "solution": "The degree is the highest power of $x$. The powers are $3$, $5$, $1$ and $0$, so the degree is $5$.",
-    "topic": "Degree"
+    "answer": 0,
+    "solution": "$2n + (2n + 2) + (2n + 4) = 6n + 6$.",
+    "topic": "HOTS · Forming expressions"
    },
    {
     "prompt": "Simplify $(3x^2 - 5x + 7) + (-x^2 + 8x - 10)$.",
@@ -5164,52 +5164,52 @@
     "topic": "Writing expressions"
    },
    {
-    "prompt": "The sum of a and the product of $b$ and $c$ is",
+    "prompt": "The area of a rectangle with length $(3x + 2)$ and breadth $(x - 1)$ is",
     "options": [
-     "$a +$ bc",
-     "$a + b + c$",
-     "abc",
-     "$(a + b)c$"
+     "$3x^2 + x - 2$",
+     "$3x^2 - 2$",
+     "$3x^2 - x - 2$",
+     "$4x + 1$"
     ],
-    "answer": 0,
-    "solution": "Product of $b$ and $c$ is bc. So the answer is $a +$ bc.",
-    "topic": "Writing expressions"
+    "answer": 2,
+    "solution": "$(3x + 2)(x - 1) = 3x^2 - 3x + 2x - 2 = 3x^2 - x - 2$.",
+    "topic": "HOTS · Geometry link"
    },
    {
-    "prompt": "Which is a constant term in $3x^2 - 2x + 9$?",
+    "prompt": "$a + b = 7$ and $a - b = 3$. Then $a^2 - b^2 =$",
     "options": [
-     "$9$",
-     "$3$",
-     "$-2$",
-     "$x$"
-    ],
-    "answer": 0,
-    "solution": "It has no variable. So the answer is $9$.",
-    "topic": "Terms"
-   },
-   {
-    "prompt": "Simplify $x \\times x \\times x \\times y \\times y$.",
-    "options": [
-     "$x^3y^2$",
-     "$5xy$",
-     "$3x2y$",
-     "$x^2y^3$"
-    ],
-    "answer": 0,
-    "solution": "There are three factors of $x$ and two factors of $y$. So the product is $x^3y^2$.",
-    "topic": "Powers"
-   },
-   {
-    "prompt": "The number of terms in $4a^2b - 3ab + 2b - 7$ is",
-    "options": [
-     "$2$",
+     "$49$",
      "$4$",
-     "$3$",
-     "$5$"
+     "$10$",
+     "$21$"
+    ],
+    "answer": 3,
+    "solution": "Adding gives $a = 5$, so $b = 2$. $25 - 4 = 21$.",
+    "topic": "HOTS · Multi-step"
+   },
+   {
+    "prompt": "Which expression is positive for every value of $x$?",
+    "options": [
+     "$2x$",
+     "$x^2 + 1$",
+     "$x + 1$",
+     "$x^2 - 1$"
     ],
     "answer": 1,
-    "solution": "The terms are $4a^2b$, $-3ab$, $2b$ and $-7$. That makes $4$ terms.",
-    "topic": "Terms"
+    "solution": "$x^2 \\ge 0$, so $x^2 + 1 \\ge 1$. The others are negative or zero for some $x$, for example $x = -2$ or $x = 0$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "The product of $-2x^2y$ and $3xy^2$, divided by $6xy$, is",
+    "options": [
+     "$x^2y^2$",
+     "$-x^3y^3$",
+     "$-36x^4y^4$",
+     "$-x^2y^2$"
+    ],
+    "answer": 3,
+    "solution": "$(-2x^2y)(3xy^2) = -6x^3y^3$. Dividing by $6xy$ gives $-x^2y^2$.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "Simplify $7x - (3x - 2)$.",
@@ -5284,16 +5284,16 @@
     "topic": "Substitution"
    },
    {
-    "prompt": "The coefficient of $x^2$ in $-x^2y$ is",
+    "prompt": "$(x - y) - (y - z) - (z - x) =$",
     "options": [
-     "$1$",
-     "$y$",
-     "$-1$",
-     "$-y$"
+     "$0$",
+     "$-2y$",
+     "$2x - 2z$",
+     "$2x - 2y$"
     ],
     "answer": 3,
-    "solution": "Everything multiplied with $x^2$. So the answer is $-y$.",
-    "topic": "Coefficient"
+    "solution": "$x - y - y + z - z + x = 2x - 2y$.",
+    "topic": "HOTS · Brackets"
    },
    {
     "prompt": "The perimeter of a rectangle with sides $(2x + 3)$ and $(x - 1)$ is",
@@ -5320,16 +5320,16 @@
     "topic": "Application"
    },
    {
-    "prompt": "Which is a binomial?",
+    "prompt": "A pen costs ₹$x$. A book costs ₹$5$ more than $3$ pens. The cost of $2$ books and $4$ pens is",
     "options": [
-     "$x^2 + x + 1$",
-     "$x^2 - 1$",
-     "$5xy$",
-     "$7$"
+     "₹$(7x + 10)$",
+     "₹$(10x + 10)$",
+     "₹$(10x + 5)$",
+     "₹$(6x + 14)$"
     ],
     "answer": 1,
-    "solution": "A binomial has exactly two terms. $x^2 - 1$ has the two terms $x^2$ and $-1$.",
-    "topic": "Kinds"
+    "solution": "Book $= 3x + 5$. $2(3x + 5) + 4x = 10x + 10$.",
+    "topic": "HOTS · Forming expressions"
    },
    {
     "prompt": "Subtract $-3xy$ from $5xy$.",
@@ -5438,16 +5438,16 @@
   "title": "Simple Linear Equations",
   "questions": [
    {
-    "prompt": "$3x - 7 = 11$. Find $x$.",
+    "prompt": "For what value of $k$ is $x = 2$ a solution of $3x + k = 2k - 1$?",
     "options": [
-     "$18$",
-     "$2$",
-     "$\\frac{4}{3}$",
-     "$6$"
+     "$7$",
+     "$-7$",
+     "$5$",
+     "$3$"
     ],
-    "answer": 3,
-    "solution": "$3x = 18$. So the answer is $6$.",
-    "topic": "Solve"
+    "answer": 0,
+    "solution": "Put $x = 2$: $6 + k = 2k - 1$, so $k = 7$.",
+    "topic": "HOTS · Unknown constant"
    },
    {
     "prompt": "$5(x - 2) = 3x + 4$. Find $x$.",
@@ -5546,52 +5546,52 @@
     "topic": "Notes"
    },
    {
-    "prompt": "If $x + 9 = 4$, then find $x$.",
+    "prompt": "Step 1: $3x - 5 = 10$. Step 2: $3x = 5$. Step 3: $x = \\frac{5}{3}$. Which is the first wrong step?",
     "options": [
-     "$13$",
-     "$-13$",
-     "$5$",
-     "$-5$"
-    ],
-    "answer": 3,
-    "solution": "$x = 4 - 9$. So the answer is $-5$.",
-    "topic": "Solve"
-   },
-   {
-    "prompt": "If $0.4x = 6$, then find $x$.",
-    "options": [
-     "$24$",
-     "$1.5$",
-     "$15$",
-     "$2.4$"
-    ],
-    "answer": 2,
-    "solution": "$6 \\div 0.4$. So the answer is $15$.",
-    "topic": "Decimals"
-   },
-   {
-    "prompt": "If $\\frac{2x}{5} = 8$, then find $x$.",
-    "options": [
-     "$20$",
-     "$3.2$",
-     "$\\frac{16}{5}$",
-     "$40$"
+     "Step 2",
+     "There is no mistake",
+     "Step 3",
+     "Step 1"
     ],
     "answer": 0,
-    "solution": "$x = 8 \\times \\frac{5}{2}$. So the answer is $20$.",
-    "topic": "Fractions"
+    "solution": "Moving $-5$ to the right side gives $3x = 10 + 5 = 15$, not $5$. So $x = 5$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "If $7 - 2x = 15$, then find $x$.",
+    "prompt": "The equation $2(x + 3) = 2x + 6$ has",
     "options": [
-     "$4$",
-     "$-11$",
-     "$-4$",
-     "$11$"
+     "only the solution $x = 3$",
+     "no solution",
+     "every number as a solution",
+     "only the solution $x = 0$"
     ],
     "answer": 2,
-    "solution": "$-2x = 8$. So the answer is $-4$.",
-    "topic": "Solve"
+    "solution": "Expanding gives $2x + 6 = 2x + 6$, which is true for every value of $x$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "The digits of a two-digit number add up to $9$. The tens digit is twice the units digit. The number is",
+    "options": [
+     "$36$",
+     "$63$",
+     "$72$",
+     "$54$"
+    ],
+    "answer": 1,
+    "solution": "Units digit $u$, tens digit $2u$: $3u = 9$, so $u = 3$. The number is $63$.",
+    "topic": "HOTS · Digits"
+   },
+   {
+    "prompt": "After $15$ years, Anu will be $4$ times as old as she was $15$ years ago. Her present age is",
+    "options": [
+     "$30$ years",
+     "$15$ years",
+     "$20$ years",
+     "$25$ years"
+    ],
+    "answer": 3,
+    "solution": "$x + 15 = 4(x - 15)$, so $x + 15 = 4x - 60$, $3x = 75$ and $x = 25$.",
+    "topic": "HOTS · Ages"
    },
    {
     "prompt": "If $3(2x + 1) = 4(x + 2) + 1$, then find $x$.",
@@ -5618,16 +5618,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "Twice a number decreased by $7$ is $33$. The number is",
+    "prompt": "I think of a number. I double it and add $9$. I get the same result as $5$ times the number. The number is",
     "options": [
-     "$20$",
-     "$40$",
-     "$13$",
-     "$26$"
+     "$4.5$",
+     "$1.8$",
+     "$9$",
+     "$3$"
     ],
-    "answer": 0,
-    "solution": "$2x - 7 = 33$. So the answer is $20$.",
-    "topic": "Word problem"
+    "answer": 3,
+    "solution": "$2x + 9 = 5x$, so $3x = 9$ and $x = 3$.",
+    "topic": "HOTS · Think of a number"
    },
    {
     "prompt": "The sum of two consecutive odd numbers is $56$. The larger is",
@@ -5666,16 +5666,16 @@
     "topic": "Cross multiply"
    },
    {
-    "prompt": "Transposing $-5$ from left to right in $x - 5 = 3$ gives",
+    "prompt": "The perimeter of an isosceles triangle is $40$ cm. Each equal side is $5$ cm longer than the base. The base is",
     "options": [
-     "$x = 5 - 3$",
-     "$x = 3 \\times 5$",
-     "$x = 3 + 5$",
-     "$x = 3 - 5$"
+     "$12.5$ cm",
+     "$8$ cm",
+     "$10$ cm",
+     "$15$ cm"
     ],
     "answer": 2,
-    "solution": "A term changes its sign when it moves to the other side. So $-5$ on the left becomes $+5$ on the right: $x = 3 + 5$.",
-    "topic": "Transpose"
+    "solution": "$b + 2(b + 5) = 40$, so $3b = 30$ and $b = 10$ cm.",
+    "topic": "HOTS · Geometry link"
    },
    {
     "prompt": "A number is $12$ more than another. Their sum is $68$. The smaller is",
@@ -5702,16 +5702,16 @@
     "topic": "Ages"
    },
    {
-    "prompt": "If $4x + 8 = 52$, then find $x$.",
+    "prompt": "The sum of three consecutive multiples of $7$ is $357$. The largest of them is",
     "options": [
-     "$44$",
-     "$11$",
-     "$15$",
-     "$13$"
+     "$112$",
+     "$119$",
+     "$133$",
+     "$126$"
     ],
-    "answer": 1,
-    "solution": "$4x = 44$. So the answer is $11$.",
-    "topic": "Solve"
+    "answer": 3,
+    "solution": "$7n + 7(n + 1) + 7(n + 2) = 357$, so $21n = 336$ and $n = 16$. Largest $= 7 \\times 18 = 126$.",
+    "topic": "HOTS · Consecutive"
    },
    {
     "prompt": "If $5x - 3 = 3x + 9$, then find $2x + 1$.",
@@ -5738,16 +5738,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "$\\frac{x}{2} - \\frac{x}{3} = 4$. Find $x$.",
+    "prompt": "If $\\frac{x}{3} + 1 = \\frac{x}{2} - 1$, then $x =$",
     "options": [
-     "$24$",
-     "$4$",
      "$12$",
-     "$8$"
+     "$-12$",
+     "$6$",
+     "$2$"
     ],
     "answer": 0,
-    "solution": "$\\frac{x}{6} = 4$. So the answer is $24$.",
-    "topic": "Fractions"
+    "solution": "Multiply by $6$: $2x + 6 = 3x - 6$, so $x = 12$.",
+    "topic": "HOTS · Fractions"
    },
    {
     "prompt": "If $3x - 2 = 2x + 5$, then find $x^2$.",
@@ -5774,16 +5774,16 @@
     "topic": "Word problem"
    },
    {
-    "prompt": "A number divided by $4$ and then increased by $6$ gives $15$. The number is",
+    "prompt": "A bus has some passengers. At a stop, half of them get off and $8$ get on. Now there are $23$. How many were there at first?",
     "options": [
-     "$9$",
-     "$36$",
-     "$84$",
-     "$60$"
+     "$30$",
+     "$46$",
+     "$62$",
+     "$15$"
     ],
-    "answer": 1,
-    "solution": "$\\frac{x}{4} = 9$. So the answer is $36$.",
-    "topic": "Word problem"
+    "answer": 0,
+    "solution": "$\\frac{x}{2} + 8 = 23$, so $\\frac{x}{2} = 15$ and $x = 30$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "Which value is a solution of $4x + 3 = 2x - 5$?",
@@ -5868,16 +5868,16 @@
     "topic": "Solve"
    },
    {
-    "prompt": "$x - 2 \\ge -1$ means",
+    "prompt": "A student wrote: '$-3x < 12$, so $x < -4$.' Which is correct?",
     "options": [
-     "$x \\le 1$",
-     "$x \\ge -3$",
-     "$x \\le -3$",
-     "$x \\ge 1$"
+     "$x > 4$",
+     "$x < -4$ is correct",
+     "$x < 4$",
+     "$x > -4$; dividing by a negative number reverses the sign"
     ],
     "answer": 3,
-    "solution": "Add $2$. So the answer is $x \\ge 1$.",
-    "topic": "Solve"
+    "solution": "Divide both sides by $-3$ and reverse the sign: $x > -4$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "$3x - 5 \\le 10$, $x \\in W$, gives",
@@ -5916,28 +5916,28 @@
     "topic": "Double"
    },
    {
-    "prompt": "When both sides are multiplied by a negative number, the sign of inequality",
+    "prompt": "$x \\in Z$. How many values of $x$ satisfy $-3 < 2x - 1 \\le 5$?",
     "options": [
-     "reverses",
-     "becomes $=$",
-     "stays",
-     "is removed"
+     "$4$",
+     "$3$",
+     "$6$",
+     "$5$"
     ],
     "answer": 0,
-    "solution": "Multiplying both sides by a negative number reverses the sign. For example, $2 < 3$ but $-2 > -3$.",
-    "topic": "Rule"
+    "solution": "Add $1$: $-2 < 2x \\le 6$. Divide by $2$: $-1 < x \\le 3$. So $x = 0, 1, 2, 3$.",
+    "topic": "HOTS · Counting"
    },
    {
-    "prompt": "$x < 4$, $x \\in W$. The solution set is",
+    "prompt": "$a > b$ and $c < 0$. Which is true?",
     "options": [
-     "$\\{1, 2, 3\\}$",
-     "$\\{0, 1, 2, 3\\}$",
-     "$\\{4\\}$",
-     "$\\{0, 1, 2, 3, 4\\}$"
+     "$a - c < b - c$",
+     "$ac < bc$",
+     "$a + c < b + c$",
+     "$ac > bc$"
     ],
     "answer": 1,
-    "solution": "$W$ starts at $0$. So the answer is $\\{0, 1, 2, 3\\}$.",
-    "topic": "Solve"
+    "solution": "Multiplying both sides by a negative number reverses the sign. Adding or subtracting $c$ keeps it.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "$2x + 3 > 9$, $x \\in N$. The smallest value of $x$ is",
@@ -5964,16 +5964,16 @@
     "topic": "Solve"
    },
    {
-    "prompt": "On a number line for $x \\in R$, an open dot at $2$ means",
+    "prompt": "The smallest natural number $x$ with $3x - 7 > 2x + 5$ is",
     "options": [
-     "$x = 2$",
-     "$2$ is included",
-     "$x$ is an integer",
-     "$2$ is not included"
+     "$7$",
+     "$12$",
+     "$13$",
+     "$14$"
     ],
-    "answer": 3,
-    "solution": "Open $dot$: not included. So the answer is $2$ is not included.",
-    "topic": "Graph"
+    "answer": 2,
+    "solution": "$x > 12$, so the smallest natural number is $13$.",
+    "topic": "HOTS · Least value"
    },
    {
     "prompt": "$\\frac{x}{3} < 2$, $x \\in N$. The largest value of $x$ is",
@@ -6012,28 +6012,28 @@
     "topic": "Rule"
    },
    {
-    "prompt": "The solution of $x + 5 > 5$, $x \\in W$, is",
+    "prompt": "For which replacement set is the solution set of $x < 3$ equal to $\\{1, 2\\}$?",
     "options": [
-     "$\\{1, 2, 3, \\dots \\}$",
-     "$\\varnothing$",
-     "$\\{5, 6, \\dots \\}$",
-     "$\\{0, 1, 2, \\dots \\}$"
+     "$\\{0, 1, 2, 3\\}$",
+     "$Z$",
+     "$W$",
+     "$N$"
     ],
-    "answer": 0,
-    "solution": "$x > 0$. So the answer is $\\{1, 2, 3, \\dots \\}$.",
-    "topic": "Solve"
+    "answer": 3,
+    "solution": "In $N$, the numbers less than $3$ are $1$ and $2$. $W$ and the set $\\{0, 1, 2, 3\\}$ also give $0$, and $Z$ gives the negative numbers too.",
+    "topic": "HOTS · Replacement set"
    },
    {
-    "prompt": "$x \\in N$ and $x < 1$. The solution set is",
+    "prompt": "Which number line shows $x \\ge -1$, $x \\in R$?",
     "options": [
-     "$\\{-1, 0\\}$",
-     "$\\varnothing$",
-     "$\\{0\\}$",
-     "$\\{1\\}$"
+     "An open dot at $-1$ and an arrow to the left",
+     "A filled dot at $-1$ and an arrow to the left",
+     "A filled dot at $-1$ and an arrow to the right",
+     "An open dot at $-1$ and an arrow to the right"
     ],
-    "answer": 1,
-    "solution": "No natural number is less than $1$. So the answer is $\\varnothing$.",
-    "topic": "Empty"
+    "answer": 2,
+    "solution": "$\\ge$ includes $-1$ (filled dot), and the numbers greater than $-1$ are on the right.",
+    "topic": "HOTS · Number line"
    },
    {
     "prompt": "$-1 < x \\le 3$, $x \\in Z$, is",
@@ -6084,16 +6084,16 @@
     "topic": "Check"
    },
    {
-    "prompt": "The replacement set is",
+    "prompt": "Ravi has ₹$200$. He buys pens at ₹$15$ each and keeps at least ₹$50$. The greatest number of pens he can buy is",
     "options": [
-     "the set from which $x$ takes values",
-     "the answer",
-     "always $N$",
-     "the empty set"
+     "$10$",
+     "$9$",
+     "$13$",
+     "$11$"
     ],
     "answer": 0,
-    "solution": "The replacement set is the set from which the variable $x$ takes its values. So the answer is the set from which $x$ takes values.",
-    "topic": "Concept"
+    "solution": "$200 - 15p \\ge 50$, so $15p \\le 150$ and $p \\le 10$.",
+    "topic": "HOTS · Word problem"
    },
    {
     "prompt": "$-x \\ge -4$, $x \\in N$, gives",
@@ -6120,28 +6120,28 @@
     "topic": "Rule"
    },
    {
-    "prompt": "Which is true for $x \\in Z$, $x \\le -2$?",
+    "prompt": "The sum of three consecutive natural numbers is less than $30$. The greatest possible value of the smallest number is",
     "options": [
-     "$-1$ is a solution",
-     "$3$ is a solution",
-     "$0$ is a solution",
-     "$-2$ is a solution"
+     "$10$",
+     "$7$",
+     "$8$",
+     "$9$"
     ],
-    "answer": 3,
-    "solution": "$\\le$ includes $-2$. So the answer is $-2$ is a solution.",
-    "topic": "Check"
+    "answer": 2,
+    "solution": "$n + (n + 1) + (n + 2) < 30$, so $3n < 27$ and $n < 9$. The greatest $n$ is $8$.",
+    "topic": "HOTS · Word problem"
    },
    {
-    "prompt": "$x \\in W$, $2x < 1$. The solution set is",
+    "prompt": "$x \\in W$ and $-x > -3$. The solution set is",
     "options": [
-     "$\\{0, 1\\}$",
-     "$\\{1\\}$",
-     "$\\varnothing$",
-     "$\\{0\\}$"
+     "$\\{0, 1, 2\\}$",
+     "$\\{1, 2\\}$",
+     "$\\{3, 4, 5, \\dots\\}$",
+     "$\\{0, 1, 2, 3\\}$"
     ],
-    "answer": 3,
-    "solution": "$x < \\frac{1}{2}$. So the answer is $\\{0\\}$.",
-    "topic": "Solve"
+    "answer": 0,
+    "solution": "Multiply by $-1$ and reverse the sign: $x < 3$. In $W$: $0, 1, 2$.",
+    "topic": "HOTS · Sign change"
    },
    {
     "prompt": "The number of integers that satisfy $-2 < x < 2$ is",
@@ -6168,16 +6168,16 @@
     "topic": "Solve"
    },
    {
-    "prompt": "For solutions restricted to integers, separate filled dots on a number line mark",
+    "prompt": "$\\frac{2x + 1}{3} \\ge x - 1$, $x \\in N$. The solution set is",
     "options": [
-     "nothing",
-     "real numbers",
-     "only fractions",
-     "integer solutions"
+     "$\\{1, 2, 3, 4\\}$",
+     "$\\{1, 2, 3\\}$",
+     "$\\{0, 1, 2, 3, 4\\}$",
+     "$\\{4, 5, 6, \\dots\\}$"
     ],
-    "answer": 3,
-    "solution": "For integers or naturals we use dots. So the answer is integer solutions.",
-    "topic": "Graph"
+    "answer": 0,
+    "solution": "Multiply by $3$: $2x + 1 \\ge 3x - 3$, so $x \\le 4$. In $N$: $1, 2, 3, 4$.",
+    "topic": "HOTS · Fractions"
    },
    {
     "prompt": "$x \\in \\{1, 2, \\dots , 10\\}$ and $2x + 1 \\ge 15$. The solution set is",
@@ -6274,28 +6274,28 @@
   "title": "Lines and Angles",
   "questions": [
    {
-    "prompt": "The complement of $37^\\circ$ is",
+    "prompt": "An angle is $4$ times its complement. The angle is",
     "options": [
-     "$37^\\circ$",
-     "$143^\\circ$",
-     "$53^\\circ$",
-     "$63^\\circ$"
-    ],
-    "answer": 2,
-    "solution": "$90 - 37$. So the answer is $53^\\circ$.",
-    "topic": "Complement"
-   },
-   {
-    "prompt": "The supplement of $112^\\circ$ is",
-    "options": [
-     "$68^\\circ$",
-     "$22^\\circ$",
-     "$78^\\circ$",
-     "$248^\\circ$"
+     "$72^\\circ$",
+     "$18^\\circ$",
+     "$144^\\circ$",
+     "$36^\\circ$"
     ],
     "answer": 0,
-    "solution": "$180 - 112$. So the answer is $68^\\circ$.",
-    "topic": "Supplement"
+    "solution": "$x = 4(90^\\circ - x)$, so $5x = 360^\\circ$ and $x = 72^\\circ$.",
+    "topic": "HOTS · Complement"
+   },
+   {
+    "prompt": "A student wrote: 'Two angles in a linear pair are $65^\\circ$ and $125^\\circ$.' Which is correct?",
+    "options": [
+     "The second angle must be $115^\\circ$",
+     "The second angle must be $295^\\circ$",
+     "Both angles are correct",
+     "The second angle must be $25^\\circ$"
+    ],
+    "answer": 0,
+    "solution": "A linear pair adds up to $180^\\circ$. $180^\\circ - 65^\\circ = 115^\\circ$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "Supplementary angles in the ratio $4 : 5$ are",
@@ -6322,64 +6322,64 @@
     "topic": "Equation"
    },
    {
-    "prompt": "A linear pair adds up to",
+    "prompt": "The complement of an angle is $\\frac{1}{3}$ of its supplement. The angle is",
     "options": [
-     "$270^\\circ$",
-     "$90^\\circ$",
-     "$360^\\circ$",
-     "$180^\\circ$"
-    ],
-    "answer": 3,
-    "solution": "Angles on a straight line. So the answer is $180^\\circ$.",
-    "topic": "Linear pair"
-   },
-   {
-    "prompt": "Vertically opposite angles are",
-    "options": [
-     "supplementary",
-     "complementary",
-     "adjacent",
-     "equal"
-    ],
-    "answer": 3,
-    "solution": "Vertically opposite angles are always equal. Both are supplements of the same angle between them.",
-    "topic": "Vertically opposite"
-   },
-   {
-    "prompt": "Angles at a point add up to",
-    "options": [
-     "$360^\\circ$",
-     "$180^\\circ$",
-     "$270^\\circ$",
-     "$90^\\circ$"
-    ],
-    "answer": 0,
-    "solution": "The angles at a point make one full turn, so they add up to $360^\\circ$.",
-    "topic": "At a point"
-   },
-   {
-    "prompt": "If two parallel lines are cut by a transversal, corresponding angles are",
-    "options": [
-     "supplementary",
-     "unequal",
-     "equal",
-     "complementary"
+     "$67.5^\\circ$",
+     "$30^\\circ$",
+     "$45^\\circ$",
+     "$60^\\circ$"
     ],
     "answer": 2,
-    "solution": "When a transversal cuts two parallel lines, corresponding angles are equal.",
-    "topic": "Parallel lines"
+    "solution": "$3(90^\\circ - x) = 180^\\circ - x$, so $270^\\circ - 3x = 180^\\circ - x$ and $x = 45^\\circ$.",
+    "topic": "HOTS · Multi-step"
    },
    {
-    "prompt": "If two parallel lines are cut by a transversal, co-interior angles add up to",
+    "prompt": "Can two acute angles be supplementary?",
     "options": [
-     "equal",
-     "$180^\\circ$",
-     "$360^\\circ$",
-     "$90^\\circ$"
+     "No, their sum is less than $180^\\circ$",
+     "Yes, always",
+     "Only if each is $90^\\circ$",
+     "Yes, if they are equal"
+    ],
+    "answer": 0,
+    "solution": "Each acute angle is less than $90^\\circ$, so their sum is less than $180^\\circ$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Two lines cross. One of the four angles is $40^\\circ$. The other three angles are",
+    "options": [
+     "$40^\\circ$, $40^\\circ$, $40^\\circ$",
+     "$140^\\circ$, $40^\\circ$, $140^\\circ$",
+     "$50^\\circ$, $40^\\circ$, $50^\\circ$",
+     "$140^\\circ$, $140^\\circ$, $140^\\circ$"
     ],
     "answer": 1,
-    "solution": "When a transversal cuts two parallel lines, co-interior angles are supplementary. They add up to $180^\\circ$.",
-    "topic": "Parallel lines"
+    "solution": "The vertically opposite angle is $40^\\circ$. Each angle next to it is $180^\\circ - 40^\\circ = 140^\\circ$.",
+    "topic": "HOTS · Vertically opposite"
+   },
+   {
+    "prompt": "$AB \\parallel CD$. Two alternate interior angles are $(5x - 20)^\\circ$ and $(3x + 10)^\\circ$. Each angle is",
+    "options": [
+     "$65^\\circ$",
+     "$125^\\circ$",
+     "$15^\\circ$",
+     "$55^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "Alternate angles are equal: $5x - 20 = 3x + 10$, so $x = 15$ and the angle is $55^\\circ$.",
+    "topic": "HOTS · Parallel lines"
+   },
+   {
+    "prompt": "The angle between the hands of a clock at $2{:}30$ is",
+    "options": [
+     "$120^\\circ$",
+     "$90^\\circ$",
+     "$75^\\circ$",
+     "$105^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "The minute hand is at $180^\\circ$. The hour hand is at $60^\\circ + 15^\\circ = 75^\\circ$ (it moves $0.5^\\circ$ a minute). Difference $= 105^\\circ$.",
+    "topic": "HOTS · Clock"
    },
    {
     "prompt": "$AB \\parallel CD$ and an angle at $AB$ is $65^\\circ$. Its co-interior angle is",
@@ -6490,16 +6490,16 @@
     "topic": "Test"
    },
    {
-    "prompt": "The supplement of a right angle is",
+    "prompt": "Which statement is false?",
     "options": [
-     "a right angle",
-     "an acute angle",
-     "a straight angle",
-     "an obtuse angle"
+     "Complements of equal angles are equal",
+     "Two obtuse angles can form a linear pair",
+     "Vertically opposite angles are equal",
+     "Two right angles can form a linear pair"
     ],
-    "answer": 0,
-    "solution": "$180 - 90 = 90$. So the answer is a right angle.",
-    "topic": "Supplement"
+    "answer": 1,
+    "solution": "Two obtuse angles add up to more than $180^\\circ$, so they cannot form a linear pair.",
+    "topic": "HOTS · Which is false"
    },
    {
     "prompt": "The complement of $(90 - x)^\\circ$ is",
@@ -6538,16 +6538,16 @@
     "topic": "Parallel lines"
    },
    {
-    "prompt": "Which angles have a common vertex and a common arm?",
+    "prompt": "Two parallel lines are cut by a transversal. The bisectors of two co-interior angles meet at an angle of",
     "options": [
-     "Alternate",
-     "Corresponding",
-     "Adjacent",
-     "Vertically opposite"
+     "$45^\\circ$",
+     "$90^\\circ$",
+     "$60^\\circ$",
+     "$180^\\circ$"
     ],
-    "answer": 2,
-    "solution": "Adjacent angles have a common vertex and a common arm, and they do not overlap. So the answer is Adjacent.",
-    "topic": "Adjacent"
+    "answer": 1,
+    "solution": "Co-interior angles add up to $180^\\circ$. Their halves add up to $90^\\circ$, so the third angle of the triangle formed is $90^\\circ$.",
+    "topic": "HOTS · Bisectors"
    },
    {
     "prompt": "Two lines cross at right angles. The four angles are",
@@ -6622,16 +6622,16 @@
     "topic": "Parallel lines"
    },
    {
-    "prompt": "Two adjacent angles are $47^\\circ$ and $43^\\circ$. Together they form",
+    "prompt": "The angle between the hands of a clock at $4{:}00$ is",
     "options": [
-     "an obtuse angle",
-     "a straight angle",
-     "a reflex angle",
-     "a right angle"
+     "$240^\\circ$",
+     "$100^\\circ$",
+     "$120^\\circ$",
+     "$60^\\circ$"
     ],
-    "answer": 3,
-    "solution": "$90^\\circ$. So the answer is a right angle.",
-    "topic": "Adjacent"
+    "answer": 2,
+    "solution": "Each hour mark is $30^\\circ$ apart. $4 \\times 30^\\circ = 120^\\circ$.",
+    "topic": "HOTS · Clock"
    },
    {
     "prompt": "Assertion (A): Two angles of $110^\\circ$ and $70^\\circ$ are supplementary.\nReason (R): Supplementary angles add up to $180^\\circ$.",
@@ -6692,28 +6692,28 @@
   "title": "Triangles",
   "questions": [
    {
-    "prompt": "A triangle with exactly two equal sides is",
+    "prompt": "The angles of a triangle are in the ratio $1 : 1 : 2$. The triangle is",
     "options": [
-     "isosceles",
-     "scalene",
-     "equilateral",
-     "right-angled"
+     "right-angled and isosceles",
+     "acute-angled and scalene",
+     "obtuse-angled",
+     "equilateral"
     ],
     "answer": 0,
-    "solution": "A triangle with exactly two equal sides is called isosceles.",
-    "topic": "Kinds"
+    "solution": "The angles are $45^\\circ$, $45^\\circ$ and $90^\\circ$: two equal angles and one right angle.",
+    "topic": "HOTS · Classify"
    },
    {
-    "prompt": "Each angle of an equilateral triangle is",
+    "prompt": "An exterior angle of a triangle is $130^\\circ$. The two interior opposite angles are in the ratio $6 : 7$. The smaller of them is",
     "options": [
-     "$90^\\circ$",
-     "$30^\\circ$",
-     "$45^\\circ$",
-     "$60^\\circ$"
+     "$65^\\circ$",
+     "$60^\\circ$",
+     "$70^\\circ$",
+     "$50^\\circ$"
     ],
-    "answer": 3,
-    "solution": "$180 \\div 3$. So the answer is $60^\\circ$.",
-    "topic": "Kinds"
+    "answer": 1,
+    "solution": "The two angles add up to $130^\\circ$. Smaller $= \\frac{6}{13} \\times 130^\\circ = 60^\\circ$.",
+    "topic": "HOTS · Exterior angle"
    },
    {
     "prompt": "$AB = AC$ and $\\angle A = 40^\\circ$. Find $\\angle B$.",
@@ -6800,64 +6800,64 @@
     "topic": "Order"
    },
    {
-    "prompt": "A triangle can have at most",
+    "prompt": "Sticks of length $2$, $3$, $4$ and $5$ cm are given. How many different triangles can be made with three sticks at a time?",
     "options": [
-     "two right angles",
-     "three right angles",
-     "one right angle",
-     "two obtuse angles"
+     "$2$",
+     "$4$",
+     "$3$",
+     "$1$"
     ],
     "answer": 2,
-    "solution": "Two right angles already make $180^\\circ$. So the answer is one right angle.",
-    "topic": "Angle sum"
+    "solution": "$(2, 3, 4)$, $(2, 4, 5)$ and $(3, 4, 5)$ work. $(2, 3, 5)$ fails because $2 + 3 = 5$ is not greater than $5$.",
+    "topic": "HOTS · Inequality"
    },
    {
-    "prompt": "If two angles of a triangle are $65^\\circ$ and $45^\\circ$, the third is",
+    "prompt": "In $\\triangle ABC$, $\\angle A - \\angle B = 30^\\circ$ and $\\angle B - \\angle C = 30^\\circ$. Then $\\angle A =$",
     "options": [
-     "$110^\\circ$",
      "$60^\\circ$",
-     "$70^\\circ$",
-     "$80^\\circ$"
-    ],
-    "answer": 2,
-    "solution": "$180 - 110$. So the answer is $70^\\circ$.",
-    "topic": "Angle sum"
-   },
-   {
-    "prompt": "Angles $35^\\circ$, $55^\\circ$, $90^\\circ$ make a",
-    "options": [
-     "obtuse triangle",
-     "acute triangle",
-     "right-angled scalene triangle",
-     "right-angled isosceles triangle"
-    ],
-    "answer": 2,
-    "solution": "One right angle, all different. So the answer is right-angled scalene triangle.",
-    "topic": "Classify"
-   },
-   {
-    "prompt": "An exterior angle of a triangle is always",
-    "options": [
-     "less than each interior opposite angle",
-     "$90^\\circ$",
-     "equal to the adjacent interior angle",
-     "greater than each interior opposite angle"
-    ],
-    "answer": 3,
-    "solution": "It equals their sum. So the answer is greater than each interior opposite angle.",
-    "topic": "Exterior angle"
-   },
-   {
-    "prompt": "In a right-angled isosceles triangle, each acute angle is",
-    "options": [
-     "$45^\\circ$",
      "$30^\\circ$",
      "$90^\\circ$",
-     "$60^\\circ$"
+     "$120^\\circ$"
+    ],
+    "answer": 2,
+    "solution": "$\\angle B = \\angle C + 30^\\circ$ and $\\angle A = \\angle C + 60^\\circ$. So $3\\angle C + 90^\\circ = 180^\\circ$, $\\angle C = 30^\\circ$ and $\\angle A = 90^\\circ$.",
+    "topic": "HOTS · Multi-step"
+   },
+   {
+    "prompt": "The bisectors of $\\angle B$ and $\\angle C$ of $\\triangle ABC$ meet at $O$. If $\\angle A = 70^\\circ$, then $\\angle BOC =$",
+    "options": [
+     "$55^\\circ$",
+     "$125^\\circ$",
+     "$140^\\circ$",
+     "$110^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "$\\angle B + \\angle C = 110^\\circ$, so half of it is $55^\\circ$. $\\angle BOC = 180^\\circ - 55^\\circ = 125^\\circ$.",
+    "topic": "HOTS · Angle bisectors"
+   },
+   {
+    "prompt": "Which statement is false?",
+    "options": [
+     "A triangle can have two right angles",
+     "A right-angled triangle can be isosceles",
+     "An equilateral triangle is also isosceles",
+     "An exterior angle is greater than each interior opposite angle"
     ],
     "answer": 0,
-    "solution": "$(180 - 90) \\div 2$. So the answer is $45^\\circ$.",
-    "topic": "Isosceles"
+    "solution": "Two right angles already make $180^\\circ$, so no angle is left for the third vertex.",
+    "topic": "HOTS · Which is false"
+   },
+   {
+    "prompt": "Two sides of an isosceles triangle are $4$ cm and $9$ cm. Its perimeter is",
+    "options": [
+     "$17$ cm",
+     "$17$ cm or $22$ cm",
+     "$22$ cm",
+     "$26$ cm"
+    ],
+    "answer": 2,
+    "solution": "The sides $4, 4, 9$ fail because $4 + 4 < 9$. So the sides are $9, 9, 4$ and the perimeter is $22$ cm.",
+    "topic": "HOTS · Inequality"
    },
    {
     "prompt": "If one angle of a triangle equals the sum of the other two, the triangle is",
@@ -6932,16 +6932,16 @@
     "topic": "Angle sum"
    },
    {
-    "prompt": "The base angle of an isosceles triangle is $70^\\circ$. The vertex angle is",
+    "prompt": "Two sides of a triangle are $6$ cm and $10$ cm. The third side is a whole number of cm. How many values can it take?",
     "options": [
-     "$20^\\circ$",
-     "$110^\\circ$",
-     "$70^\\circ$",
-     "$40^\\circ$"
+     "$11$",
+     "$10$",
+     "$9$",
+     "$16$"
     ],
-    "answer": 3,
-    "solution": "$180 - 140$. So the answer is $40^\\circ$.",
-    "topic": "Isosceles"
+    "answer": 0,
+    "solution": "$10 - 6 < x < 10 + 6$, so $4 < x < 16$. The values are $5, 6, \\dots, 15$: $11$ values.",
+    "topic": "HOTS · Inequality"
    },
    {
     "prompt": "An obtuse-angled triangle has",
@@ -6956,28 +6956,28 @@
     "topic": "Kinds"
    },
    {
-    "prompt": "The sum of the exterior angles (one at each vertex) of a triangle is",
+    "prompt": "In $\\triangle PQR$, $\\angle P = 2\\angle Q$ and $\\angle R = 3\\angle Q$. The longest side is",
     "options": [
-     "$360^\\circ$",
-     "$270^\\circ$",
-     "$180^\\circ$",
-     "$540^\\circ$"
+     "$PR$",
+     "$QR$",
+     "All sides are equal",
+     "$PQ$"
     ],
-    "answer": 0,
-    "solution": "$3 \\times 180 - 180$. So the answer is $360^\\circ$.",
-    "topic": "Exterior angle"
+    "answer": 3,
+    "solution": "$6\\angle Q = 180^\\circ$, so $\\angle Q = 30^\\circ$, $\\angle P = 60^\\circ$, $\\angle R = 90^\\circ$. The longest side is opposite $\\angle R$: $PQ$.",
+    "topic": "HOTS · Sides and angles"
    },
    {
-    "prompt": "Sides $7$ cm, $7$ cm, $7$ cm make a",
+    "prompt": "The exterior angles of a triangle are in the ratio $2 : 3 : 4$. The smallest interior angle is",
     "options": [
-     "equilateral triangle",
-     "scalene triangle",
-     "right triangle",
-     "isosceles triangle only"
+     "$80^\\circ$",
+     "$40^\\circ$",
+     "$20^\\circ$",
+     "$60^\\circ$"
     ],
-    "answer": 0,
-    "solution": "All three sides are $7$ cm. A triangle with three equal sides is equilateral. So the answer is equilateral triangle.",
-    "topic": "Kinds"
+    "answer": 2,
+    "solution": "Exterior angles add up to $360^\\circ$: $80^\\circ$, $120^\\circ$, $160^\\circ$. Interior angles: $100^\\circ$, $60^\\circ$, $20^\\circ$.",
+    "topic": "HOTS · Exterior angles"
    },
    {
     "prompt": "In $\\triangle ABC$, $\\angle B = \\angle C$ and $\\angle A = 2\\angle B$. Find $\\angle A$.",
@@ -7146,28 +7146,28 @@
     "topic": "Diagonal"
    },
    {
-    "prompt": "Which is a Pythagorean triplet?",
+    "prompt": "A student wrote: 'The legs are $5$ cm and $12$ cm, so the hypotenuse is $5 + 12 = 17$ cm.' Which is correct?",
     "options": [
-     "$4$, $5$, $6$",
-     "$5$, $12$, $14$",
-     "$7$, $24$, $25$",
-     "$6$, $9$, $11$"
+     "$60$ cm",
+     "$13$ cm; use $5^2 + 12^2 = 169$",
+     "$7$ cm",
+     "$17$ cm is correct"
     ],
-    "answer": 2,
-    "solution": "$49 + 576 = 625$. So the answer is $7$, $24$, $25$.",
-    "topic": "Triplet"
+    "answer": 1,
+    "solution": "$h^2 = 25 + 144 = 169$, so $h = 13$ cm. Squares are added, not the sides.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "The longest side of a right triangle is",
+    "prompt": "A triangle has sides $7$ cm, $24$ cm and $25$ cm. It is",
     "options": [
-     "the hypotenuse",
-     "the height",
-     "any side",
-     "the base"
+     "isosceles",
+     "not possible",
+     "right-angled",
+     "equilateral"
     ],
-    "answer": 0,
-    "solution": "Opposite the right angle. So the answer is the hypotenuse.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "$7^2 + 24^2 = 49 + 576 = 625 = 25^2$.",
+    "topic": "HOTS · Converse"
    },
    {
     "prompt": "The triplet for $m = 4$ using $(2m, m^2 - 1, m^2 + 1)$ is",
@@ -7230,28 +7230,28 @@
     "topic": "Poles"
    },
    {
-    "prompt": "Sides $6$, $8$, $10$ form",
+    "prompt": "Each side of a right-angled triangle is doubled. The new triangle is",
     "options": [
-     "an acute triangle",
-     "an obtuse triangle",
-     "a right triangle",
-     "no triangle"
-    ],
-    "answer": 2,
-    "solution": "$36 + 64 = 100$. So the answer is a right triangle.",
-    "topic": "Converse"
-   },
-   {
-    "prompt": "In $\\triangle ABC$ with $\\angle B = 90^\\circ$,",
-    "options": [
-     "$AC^2 = AB^2 + BC^2$",
-     "$AB = BC$",
-     "$AB^2 = BC^2 + AC^2$",
-     "$BC^2 = AB^2 + AC^2$"
+     "right-angled",
+     "obtuse-angled",
+     "equilateral",
+     "not a triangle"
     ],
     "answer": 0,
-    "solution": "$AC$ is the hypotenuse. So the answer is $AC^2 = AB^2 + BC^2$.",
-    "topic": "Statement"
+    "solution": "$(2a)^2 + (2b)^2 = 4(a^2 + b^2) = 4c^2 = (2c)^2$. The angles do not change.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "In $\\triangle ABC$, $\\angle B = 90^\\circ$, $AB = 8$ cm and $AC = 17$ cm. The area of the triangle is",
+    "options": [
+     "$120$ cm²",
+     "$136$ cm²",
+     "$68$ cm²",
+     "$60$ cm²"
+    ],
+    "answer": 3,
+    "solution": "$BC = \\sqrt{289 - 64} = 15$ cm. Area $= \\frac{1}{2} \\times 8 \\times 15 = 60$ cm².",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "The diagonal of a square of side $5$ cm is",
@@ -7266,28 +7266,28 @@
     "topic": "Square"
    },
    {
-    "prompt": "Is $8$, $15$, $17$ a triplet?",
+    "prompt": "Ravi walks $8$ m east, then $9$ m north, then $4$ m east. His distance from the start is",
     "options": [
-     "Yes",
-     "No",
-     "Only if scaled",
-     "Cannot say"
+     "$15$ m",
+     "$21$ m",
+     "$17$ m",
+     "$13$ m"
     ],
     "answer": 0,
-    "solution": "$64 + 225 = 289$. So the answer is Yes.",
-    "topic": "Triplet"
+    "solution": "He is $12$ m east and $9$ m north. Distance $= \\sqrt{144 + 81} = 15$ m.",
+    "topic": "HOTS · Directions"
    },
    {
-    "prompt": "If the sides are $3k$, $4k$, $5k$, the triangle is",
+    "prompt": "Which is not a Pythagorean triplet?",
     "options": [
-     "equilateral",
-     "obtuse",
-     "right-angled",
-     "isosceles"
+     "$(11, 60, 61)$",
+     "$(12, 35, 37)$",
+     "$(8, 12, 15)$",
+     "$(9, 40, 41)$"
     ],
     "answer": 2,
-    "solution": "A multiple of $3$, $4$, $5$. So the answer is right-angled.",
-    "topic": "Triplet"
+    "solution": "$8^2 + 12^2 = 208$, but $15^2 = 225$. The others work.",
+    "topic": "HOTS · Which is not"
    },
    {
     "prompt": "A right triangle has hypotenuse $10$ cm and one side $6$ cm. Its area is",
@@ -7314,16 +7314,16 @@
     "topic": "Square"
    },
    {
-    "prompt": "Which sides form a right triangle?",
+    "prompt": "The hypotenuse of an isosceles right triangle is $10\\sqrt{2}$ cm. Each leg is",
     "options": [
-     "$10$, $20$, $25$",
-     "$2$, $3$, $4$",
-     "$5$, $6$, $7$",
-     "$9$, $40$, $41$"
+     "$10$ cm",
+     "$20$ cm",
+     "$5$ cm",
+     "$10\\sqrt{2}$ cm"
     ],
-    "answer": 3,
-    "solution": "$81 + 1600 = 1681$. So the answer is $9$, $40$, $41$.",
-    "topic": "Converse"
+    "answer": 0,
+    "solution": "$2a^2 = 200$, so $a^2 = 100$ and $a = 10$ cm.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "A tree breaks at $5$ m and the top touches the ground $12$ m from its foot. The tree's height was",
@@ -7362,16 +7362,16 @@
     "topic": "Ladder"
    },
    {
-    "prompt": "In a right triangle, if the legs are equal to $1$, the hypotenuse is",
+    "prompt": "A rectangle has length $24$ cm and diagonal $25$ cm. Its perimeter is",
     "options": [
-     "$\\sqrt{2}$",
-     "$\\sqrt{3}$",
-     "$1$",
-     "$2$"
+     "$62$ cm",
+     "$56$ cm",
+     "$98$ cm",
+     "$49$ cm"
     ],
     "answer": 0,
-    "solution": "$\\sqrt{1 + 1}$. So the answer is $\\sqrt{2}$.",
-    "topic": "Hypotenuse"
+    "solution": "Breadth $= \\sqrt{625 - 576} = 7$ cm. Perimeter $= 2(24 + 7) = 62$ cm.",
+    "topic": "HOTS · Multi-step"
    },
    {
     "prompt": "Sides $5$, $12$, $x$ form a right triangle with $x$ the hypotenuse. Find $x$.",
@@ -7410,16 +7410,16 @@
     "topic": "Triplet"
    },
    {
-    "prompt": "Sides $20$, $21$, $29$ form",
+    "prompt": "The diagonals of a rhombus are $10$ cm and $24$ cm. Its perimeter is",
     "options": [
-     "an obtuse triangle",
-     "a right triangle",
-     "an acute triangle",
-     "no triangle"
+     "$68$ cm",
+     "$34$ cm",
+     "$26$ cm",
+     "$52$ cm"
     ],
-    "answer": 1,
-    "solution": "$400 + 441 = 841$. So the answer is a right triangle.",
-    "topic": "Converse"
+    "answer": 3,
+    "solution": "The diagonals bisect at right angles: half-diagonals $5$ and $12$. Side $= 13$ cm. Perimeter $= 52$ cm.",
+    "topic": "HOTS · Rhombus"
    },
    {
     "prompt": "If $AB = 12$, $BC = 5$ and $\\angle B = 90^\\circ$, then find $AC$.",
@@ -7458,16 +7458,16 @@
     "topic": "Perimeter"
    },
    {
-    "prompt": "Pythagoras theorem applies to",
+    "prompt": "Two ships leave a port at the same time. One sails north at $15$ km/h and the other east at $20$ km/h. After $2$ hours they are",
     "options": [
-     "right-angled triangles only",
-     "isosceles triangles only",
-     "all triangles",
-     "equilateral triangles only"
+     "$70$ km apart",
+     "$35$ km apart",
+     "$25$ km apart",
+     "$50$ km apart"
     ],
-    "answer": 0,
-    "solution": "It needs a right angle. So the answer is right-angled triangles only.",
-    "topic": "Concept"
+    "answer": 3,
+    "solution": "Distances $30$ km and $40$ km at right angles. $\\sqrt{900 + 1600} = 50$ km.",
+    "topic": "HOTS · Speed link"
    },
    {
     "prompt": "Assertion (A): A triangle with sides $6$, $8$, $10$ is right-angled.\nReason (R): If $a^2 + b^2 = c^2$, the triangle is right-angled.",
@@ -7552,64 +7552,64 @@
     "topic": "Line symmetry"
    },
    {
-    "prompt": "A circle has",
+    "prompt": "The capital letter H has",
     "options": [
-     "infinitely many lines of symmetry",
-     "$1$ line of symmetry",
-     "no line of symmetry",
-     "$4$ lines of symmetry"
+     "$2$ lines of symmetry and rotational symmetry of order $2$",
+     "$2$ lines of symmetry and order $1$",
+     "$4$ lines of symmetry and order $4$",
+     "$1$ line of symmetry and order $1$"
     ],
     "answer": 0,
-    "solution": "Every diameter of a circle is a line of symmetry. A circle has infinitely many diameters. So the answer is infinitely many lines of symmetry.",
-    "topic": "Line symmetry"
+    "solution": "H has a vertical and a horizontal line of symmetry, and it looks the same after a half turn.",
+    "topic": "HOTS · Both kinds"
    },
    {
-    "prompt": "A square has",
+    "prompt": "A figure has rotational symmetry of order $6$. Its angle of rotation is",
     "options": [
-     "$4$ lines of symmetry",
-     "$1$ line of symmetry",
-     "$2$ lines of symmetry",
-     "$8$ lines of symmetry"
+     "$360^\\circ$",
+     "$60^\\circ$",
+     "$6^\\circ$",
+     "$30^\\circ$"
     ],
-    "answer": 0,
-    "solution": "Two diagonals and two middle lines. So the answer is $4$ lines of symmetry.",
-    "topic": "Line symmetry"
+    "answer": 1,
+    "solution": "Angle $= 360^\\circ \\div 6 = 60^\\circ$.",
+    "topic": "HOTS · Angle of rotation"
    },
    {
-    "prompt": "An equilateral triangle has",
+    "prompt": "Which shape has exactly $4$ lines of symmetry?",
     "options": [
-     "$2$ lines of symmetry",
-     "$0$ lines of symmetry",
-     "$1$ line of symmetry",
-     "$3$ lines of symmetry"
-    ],
-    "answer": 3,
-    "solution": "Each line from a vertex to the midpoint of the opposite side is a line of symmetry. There are $3$ such lines. So the answer is $3$ lines of symmetry.",
-    "topic": "Line symmetry"
-   },
-   {
-    "prompt": "An isosceles triangle (not equilateral) has",
-    "options": [
-     "$3$ lines of symmetry",
-     "none",
-     "$2$ lines of symmetry",
-     "$1$ line of symmetry"
-    ],
-    "answer": 3,
-    "solution": "Through the vertex and the middle of the base. So the answer is $1$ line of symmetry.",
-    "topic": "Line symmetry"
-   },
-   {
-    "prompt": "A scalene triangle has",
-    "options": [
-     "$1$ line of symmetry",
-     "$2$ lines of symmetry",
-     "no line of symmetry",
-     "$3$ lines of symmetry"
+     "A rectangle",
+     "A regular hexagon",
+     "A square",
+     "A rhombus"
     ],
     "answer": 2,
-    "solution": "A scalene triangle has no equal sides, so no fold makes the two halves match. So the answer is no line of symmetry.",
-    "topic": "Line symmetry"
+    "solution": "Square: $4$. Rectangle and rhombus: $2$. Regular hexagon: $6$.",
+    "topic": "HOTS · Compare"
+   },
+   {
+    "prompt": "A regular polygon has $9$ lines of symmetry. Its order of rotational symmetry is",
+    "options": [
+     "$18$",
+     "$1$",
+     "$3$",
+     "$9$"
+    ],
+    "answer": 3,
+    "solution": "A regular polygon with $n$ sides has $n$ lines of symmetry and order $n$.",
+    "topic": "HOTS · Regular polygons"
+   },
+   {
+    "prompt": "Each letter of which word has a horizontal line of symmetry?",
+    "options": [
+     "PAW",
+     "TOP",
+     "BOX",
+     "MAT"
+    ],
+    "answer": 2,
+    "solution": "B, O and X each have a horizontal line of symmetry. M, A, T, P and W do not.",
+    "topic": "HOTS · Letters"
    },
    {
     "prompt": "Which letter has no line of symmetry?",
@@ -7624,28 +7624,28 @@
     "topic": "Letters"
    },
    {
-    "prompt": "A parallelogram (not a rectangle or rhombus) has",
+    "prompt": "Which statement is false?",
     "options": [
-     "no line of symmetry",
-     "$2$ lines of symmetry",
-     "$4$ lines of symmetry",
-     "$1$ line of symmetry"
+     "A circle has infinitely many lines of symmetry",
+     "A square has rotational symmetry of order $4$",
+     "Every figure with a line of symmetry has rotational symmetry of order more than $1$",
+     "A scalene triangle has no line of symmetry"
     ],
-    "answer": 0,
-    "solution": "No fold of a general parallelogram makes the two halves match, not even along a diagonal. So the answer is no line of symmetry.",
-    "topic": "Line symmetry"
+    "answer": 2,
+    "solution": "An isosceles triangle has a line of symmetry but rotational symmetry of order $1$ only.",
+    "topic": "HOTS · Which is false"
    },
    {
-    "prompt": "A rhombus (not a square) has",
+    "prompt": "Which digit, in block form, has both a horizontal and a vertical line of symmetry?",
     "options": [
-     "$2$ lines of symmetry",
-     "$1$ line of symmetry",
-     "no line of symmetry",
-     "$4$ lines of symmetry"
+     "$3$",
+     "$6$",
+     "$5$",
+     "$8$"
     ],
-    "answer": 0,
-    "solution": "The two diagonals of a rhombus are its lines of symmetry. So it has $2$ lines of symmetry.",
-    "topic": "Line symmetry"
+    "answer": 3,
+    "solution": "$8$ matches itself when folded across or down the middle. $3$ has only a horizontal line, and $6$ and $5$ have none.",
+    "topic": "HOTS · Digits"
    },
    {
     "prompt": "The order of rotational symmetry of a square is",
@@ -7696,28 +7696,28 @@
     "topic": "Rotation"
    },
    {
-    "prompt": "A figure that matches itself only after a full turn has rotational symmetry of order",
+    "prompt": "The smallest angle through which a regular hexagon must turn to look the same is",
     "options": [
-     "$2$",
-     "$3$",
-     "$1$",
-     "$4$"
+     "$120^\\circ$",
+     "$90^\\circ$",
+     "$60^\\circ$",
+     "$30^\\circ$"
     ],
     "answer": 2,
-    "solution": "Only the full $360^\\circ$ turn matches, so the order is $1$.",
-    "topic": "Rotation"
+    "solution": "Order $6$, so the angle is $360^\\circ \\div 6 = 60^\\circ$.",
+    "topic": "HOTS · Angle of rotation"
    },
    {
-    "prompt": "A non-square rectangle has rotational symmetry of order",
+    "prompt": "A rectangle that is not a square is folded along a diagonal. The two halves",
     "options": [
-     "$1$",
-     "$0$",
-     "$4$",
-     "$2$"
+     "match exactly",
+     "match only if the paper is thin",
+     "match after a half turn of one half",
+     "do not match, so the diagonal is not a line of symmetry"
     ],
     "answer": 3,
-    "solution": "$180^\\circ$ turn. So the answer is $2$.",
-    "topic": "Rotation"
+    "solution": "The fold sends a long side onto a short side, so the halves do not cover each other.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "An angle of rotation of $60^\\circ$ means the order is",
@@ -7828,16 +7828,16 @@
     "topic": "Rotation"
    },
    {
-    "prompt": "A semicircle has",
+    "prompt": "A shape has a line of symmetry but no rotational symmetry (order $1$). It can be",
     "options": [
-     "$2$ lines of symmetry",
-     "$1$ line of symmetry",
-     "no line of symmetry",
-     "infinitely many"
+     "a parallelogram",
+     "an isosceles triangle",
+     "a circle",
+     "a square"
     ],
     "answer": 1,
-    "solution": "The perpendicular to the diameter. So the answer is $1$ line of symmetry.",
-    "topic": "Line symmetry"
+    "solution": "An isosceles triangle has one line of symmetry and order $1$. A parallelogram has no line, and a square and a circle have both kinds.",
+    "topic": "HOTS · Classify"
    },
    {
     "prompt": "Which number has a horizontal line of symmetry?",
@@ -7946,16 +7946,16 @@
   "title": "Recognition of Solids",
   "questions": [
    {
-    "prompt": "A cuboid has",
+    "prompt": "A polyhedron has $8$ vertices and $12$ edges. The number of faces is",
     "options": [
-     "$6$ faces, $8$ vertices, $12$ edges",
-     "$8$ faces, $6$ vertices, $12$ edges",
-     "$4$ faces, $4$ vertices, $6$ edges",
-     "$6$ faces, $12$ vertices, $8$ edges"
+     "$2$",
+     "$6$",
+     "$20$",
+     "$4$"
     ],
-    "answer": 0,
-    "solution": "Prism with $n = 4$. So the answer is $6$ faces, $8$ vertices, $12$ edges.",
-    "topic": "Prism"
+    "answer": 1,
+    "solution": "$F + V - E = 2$, so $F = 2 + 12 - 8 = 6$.",
+    "topic": "HOTS · Euler"
    },
    {
     "prompt": "A triangular prism has how many edges?",
@@ -8006,64 +8006,64 @@
     "topic": "Euler"
    },
    {
-    "prompt": "Which is not a polyhedron?",
+    "prompt": "A student wrote: 'A triangular prism has $5$ faces, $9$ edges and $9$ vertices.' Which is correct?",
     "options": [
-     "Pyramid",
-     "Cube",
-     "Cylinder",
-     "Prism"
+     "It is all correct",
+     "It has $6$ vertices",
+     "It has $6$ faces",
+     "It has $12$ edges"
+    ],
+    "answer": 1,
+    "solution": "Two triangles have $3 + 3 = 6$ vertices. Check: $5 + 6 - 9 = 2$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "A prism has $15$ edges. Its base is a",
+    "options": [
+     "square",
+     "hexagon",
+     "pentagon",
+     "triangle"
     ],
     "answer": 2,
-    "solution": "A cylinder has a curved surface. So the answer is Cylinder.",
-    "topic": "Polyhedron"
+    "solution": "A prism on an $n$-sided base has $3n$ edges. $3n = 15$, so $n = 5$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "A square pyramid has how many faces?",
+    "prompt": "A pyramid has $10$ edges. The number of its faces is",
     "options": [
      "$6$",
+     "$10$",
      "$5$",
-     "$8$",
-     "$4$"
-    ],
-    "answer": 1,
-    "solution": "$1$ base $+ 4$ triangles. So the answer is $5$.",
-    "topic": "Pyramid"
-   },
-   {
-    "prompt": "A cone has",
-    "options": [
-     "no flat face",
-     "$1$ flat face and $1$ curved surface",
-     "$2$ flat faces",
-     "$3$ faces"
-    ],
-    "answer": 1,
-    "solution": "Circular base and curved surface. So the answer is $1$ flat face and $1$ curved surface.",
-    "topic": "Curved solids"
-   },
-   {
-    "prompt": "A cylinder has",
-    "options": [
-     "$2$ flat faces and $1$ curved surface",
-     "$3$ flat faces",
-     "$1$ flat face",
-     "no curved surface"
+     "$11$"
     ],
     "answer": 0,
-    "solution": "Two circles and a curved surface. So the answer is $2$ flat faces and $1$ curved surface.",
-    "topic": "Curved solids"
+    "solution": "An $n$-sided pyramid has $2n$ edges, so $n = 5$. Faces $= n + 1 = 6$.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "A sphere has",
+    "prompt": "Which can be the numbers of faces, vertices and edges $(F, V, E)$ of a polyhedron?",
     "options": [
-     "one vertex",
-     "one curved surface, no edges, no vertices",
-     "one edge",
-     "two faces"
+     "$(5, 5, 9)$",
+     "$(8, 6, 10)$",
+     "$(4, 4, 8)$",
+     "$(6, 8, 12)$"
     ],
-    "answer": 1,
-    "solution": "Only a curved surface. So the answer is one curved surface, no edges, no vertices.",
-    "topic": "Curved solids"
+    "answer": 3,
+    "solution": "Only $6 + 8 - 12 = 2$. The others give $1$, $0$ and $4$.",
+    "topic": "HOTS · Euler check"
+   },
+   {
+    "prompt": "A cube is cut into two equal cuboids by one cut parallel to a face. The total number of faces of the two pieces is",
+    "options": [
+     "$8$",
+     "$10$",
+     "$12$",
+     "$6$"
+    ],
+    "answer": 2,
+    "solution": "Each cuboid has $6$ faces, so $2 \\times 6 = 12$.",
+    "topic": "HOTS · Cutting"
    },
    {
     "prompt": "The number of edges of a hexagonal prism is",
@@ -8102,16 +8102,16 @@
     "topic": "Euler"
    },
    {
-    "prompt": "A net of a cube has",
+    "prompt": "In a net of a cube, the face opposite a given face is",
     "options": [
-     "$8$ squares",
-     "$12$ squares",
-     "$4$ squares",
-     "$6$ squares"
+     "always in the middle",
+     "always joined to it",
+     "never joined to it along an edge",
+     "always at the top"
     ],
-    "answer": 3,
-    "solution": "One square per face. So the answer is $6$ squares.",
-    "topic": "Nets"
+    "answer": 2,
+    "solution": "Opposite faces of a cube share no edge, so they can never be next to each other in a net.",
+    "topic": "HOTS · Nets"
    },
    {
     "prompt": "What is the most specific shape of a standard six-faced die?",
@@ -8138,16 +8138,16 @@
     "topic": "Pyramid"
    },
    {
-    "prompt": "The side faces of a right prism are",
+    "prompt": "A pyramid on an $n$-sided base has how many edges?",
     "options": [
-     "circles",
-     "rectangles",
-     "triangles",
-     "pentagons"
+     "$3n$",
+     "$2n$",
+     "$n$",
+     "$n + 1$"
     ],
     "answer": 1,
-    "solution": "In a right prism, each side face joins two matching edges of the two bases at right angles. So each side face is a rectangle. So the answer is rectangles.",
-    "topic": "Prism"
+    "solution": "$n$ edges round the base and $n$ edges up to the apex.",
+    "topic": "HOTS · General rule"
    },
    {
     "prompt": "The side faces of a pyramid are",
@@ -8162,16 +8162,16 @@
     "topic": "Pyramid"
    },
    {
-    "prompt": "A football is a model of a",
+    "prompt": "A solid has $2$ flat circular faces and $1$ curved surface. It is a",
     "options": [
-     "cylinder",
-     "sphere",
      "cone",
-     "cube"
+     "sphere",
+     "hemisphere",
+     "cylinder"
     ],
-    "answer": 1,
-    "solution": "Round in all directions. So the answer is sphere.",
-    "topic": "Shapes"
+    "answer": 3,
+    "solution": "A cone has $1$ flat face, a sphere none and a hemisphere $1$.",
+    "topic": "HOTS · Classify"
    },
    {
     "prompt": "An ice-cream cone is a model of a",
@@ -8246,16 +8246,16 @@
     "topic": "Cube"
    },
    {
-    "prompt": "A brick is a model of a",
+    "prompt": "A cube of edge $3$ cm is painted on all faces and cut into $1$ cm cubes. How many small cubes have exactly $2$ painted faces?",
     "options": [
-     "pyramid",
-     "cube",
-     "cylinder",
-     "cuboid"
+     "$6$",
+     "$12$",
+     "$1$",
+     "$8$"
     ],
-    "answer": 3,
-    "solution": "A brick has six rectangular faces, like a cuboid.",
-    "topic": "Shapes"
+    "answer": 1,
+    "solution": "One such cube is in the middle of each of the $12$ edges.",
+    "topic": "HOTS · Painted cube"
    },
    {
     "prompt": "A prism and a pyramid with the same base have",
@@ -8364,16 +8364,16 @@
   "title": "Congruency: Congruent Triangles",
   "questions": [
    {
-    "prompt": "Congruent figures have",
+    "prompt": "Two triangles have two pairs of equal sides and one pair of equal angles that is not between those sides. Are they always congruent?",
     "options": [
-     "the same shape and size",
-     "different sizes",
-     "the same shape only",
-     "the same size only"
+     "Yes, by ASA",
+     "No; SSA is not a condition of congruence",
+     "Yes, by SAS",
+     "Yes, if the angle is acute"
     ],
-    "answer": 0,
-    "solution": "Congruent figures have the same shape and the same size. One fits exactly on the other. So the answer is the same shape and size.",
-    "topic": "Definition"
+    "answer": 1,
+    "solution": "Two different triangles can share two sides and a non-included angle. Only SSS, SAS, ASA (or AAS) and RHS are tests.",
+    "topic": "HOTS · Reasoning"
    },
    {
     "prompt": "$\\triangle ABC \\cong \\triangle XYZ$. $BC$ equals",
@@ -8460,40 +8460,40 @@
     "topic": "SSS"
    },
    {
-    "prompt": "CPCT stands for",
+    "prompt": "A student wrote: 'In $\\triangle ABC$ and $\\triangle PQR$, $\\angle A = \\angle P$, $\\angle B = \\angle Q$ and $\\angle C = \\angle R$. So the triangles are congruent by AAA.' Which is correct?",
     "options": [
-     "Corresponding parts of congruent triangles",
-     "Congruent parts of corresponding triangles",
-     "Common parts of correct triangles",
-     "Corresponding points of the circle"
+     "AAA is not a test; the triangles can have different sizes",
+     "It is correct",
+     "They are congruent by ASA",
+     "They are congruent by SSS"
     ],
     "answer": 0,
-    "solution": "CPCT means “corresponding parts of congruent triangles” are equal. So the answer is Corresponding parts of congruent triangles.",
-    "topic": "CPCT"
+    "solution": "Equal angles fix the shape, not the size. A small and a large equilateral triangle have equal angles.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "Two squares are congruent if",
+    "prompt": "$\\triangle ABC \\cong \\triangle PQR$. $AB = 6$ cm, $BC = 7$ cm and $CA = 8$ cm. The perimeter of $\\triangle PQR$ is",
     "options": [
-     "they have $4$ sides",
-     "they are drawn on paper",
-     "their angles are equal",
-     "their sides are equal"
+     "It cannot be found",
+     "$42$ cm",
+     "$14$ cm",
+     "$21$ cm"
     ],
     "answer": 3,
-    "solution": "All angles are already $90^\\circ$. So the answer is their sides are equal.",
-    "topic": "Figures"
+    "solution": "Congruent triangles have equal sides, so the perimeter is also $6 + 7 + 8 = 21$ cm.",
+    "topic": "HOTS · CPCT"
    },
    {
-    "prompt": "Two circles are congruent if",
+    "prompt": "In $\\triangle ABC$ and $\\triangle DEF$, $AB = DE$, $BC = EF$ and $\\angle B = \\angle E$. The correct statement is",
     "options": [
-     "they touch",
-     "their radii are equal",
-     "they are drawn with ink",
-     "they have the same centre"
+     "$\\triangle ABC \\cong \\triangle FED$",
+     "$\\triangle ABC \\cong \\triangle DEF$",
+     "$\\triangle BCA \\cong \\triangle DEF$",
+     "$\\triangle ABC \\cong \\triangle EDF$"
     ],
     "answer": 1,
-    "solution": "Radius fixes the size. So the answer is their radii are equal.",
-    "topic": "Figures"
+    "solution": "The vertices must match in order: $A \\leftrightarrow D$, $B \\leftrightarrow E$, $C \\leftrightarrow F$.",
+    "topic": "HOTS · Order of vertices"
    },
    {
     "prompt": "$\\triangle ABC \\cong \\triangle PQR$. If $\\angle A = 50^\\circ$, $\\angle B = 60^\\circ$, then find $\\angle R$.",
@@ -8544,40 +8544,40 @@
     "topic": "Conditions"
    },
    {
-    "prompt": "Two triangles with equal angles but different sizes are",
+    "prompt": "$\\triangle ABC \\cong \\triangle QRP$. Then $AC$ equals",
     "options": [
-     "not congruent",
-     "always right-angled",
-     "equilateral",
-     "congruent"
+     "$QP$",
+     "$RP$",
+     "$AB$",
+     "$QR$"
     ],
     "answer": 0,
-    "solution": "Same shape, different size. So the answer is not congruent.",
-    "topic": "AAA"
+    "solution": "$A \\leftrightarrow Q$ and $C \\leftrightarrow P$, so $AC = QP$.",
+    "topic": "HOTS · Order of vertices"
    },
    {
-    "prompt": "Line segments $AB = 4$ cm and $CD = 4$ cm are",
+    "prompt": "$O$ is the mid-point of both $AB$ and $CD$. Then $\\triangle AOC \\cong \\triangle BOD$ by",
     "options": [
-     "not congruent",
-     "parallel",
-     "perpendicular",
-     "congruent"
+     "SSS",
+     "RHS",
+     "SAS",
+     "ASA"
     ],
-    "answer": 3,
-    "solution": "Line segments of equal length are congruent. Both are $4$ cm.",
-    "topic": "Segments"
+    "answer": 2,
+    "solution": "$AO = BO$, $\\angle AOC = \\angle BOD$ (vertically opposite) and $CO = DO$.",
+    "topic": "HOTS · Choose the test"
    },
    {
-    "prompt": "Angles of $35^\\circ$ and $35^\\circ$ are",
+    "prompt": "$\\angle A = \\angle P$ and $\\angle B = \\angle Q$. Which extra fact proves $\\triangle ABC \\cong \\triangle PQR$ by ASA?",
     "options": [
-     "congruent",
-     "not equal",
-     "supplementary",
-     "complementary"
+     "$AC = QR$",
+     "$AB = PQ$",
+     "$\\angle C = \\angle R$",
+     "$BC = PR$"
     ],
-    "answer": 0,
-    "solution": "Angles with equal measures are congruent. Both are $35^\\circ$.",
-    "topic": "Angles"
+    "answer": 1,
+    "solution": "For ASA, the side must lie between the two equal angles: $AB$ and $PQ$.",
+    "topic": "HOTS · Choose the test"
    },
    {
     "prompt": "$\\triangle PQR \\cong \\triangle STU$. $PR$ corresponds to",
@@ -8592,28 +8592,28 @@
     "topic": "CPCT"
    },
    {
-    "prompt": "To use RHS, the triangles must be",
+    "prompt": "In $\\triangle ABC$, $AB = AC$ and $AD$ bisects $\\angle A$, with $D$ on $BC$. Which is not always true?",
     "options": [
-     "obtuse",
-     "right-angled",
-     "isosceles",
-     "equilateral"
+     "$BD = DC$",
+     "$\\angle ADB = 90^\\circ$",
+     "$\\triangle ABD \\cong \\triangle ACD$",
+     "$AD = BC$"
     ],
-    "answer": 1,
-    "solution": "$R$ means right angle. So the answer is right-angled.",
-    "topic": "RHS"
+    "answer": 3,
+    "solution": "By SAS the two triangles are congruent, which gives $BD = DC$ and $\\angle ADB = 90^\\circ$. Nothing makes $AD$ equal to $BC$.",
+    "topic": "HOTS · Which is not"
    },
    {
-    "prompt": "In ASA, the side must be",
+    "prompt": "Two right triangles have equal hypotenuses. What else is needed for RHS?",
     "options": [
-     "opposite one angle",
-     "between the two angles",
-     "the hypotenuse",
-     "any side"
+     "Equal areas",
+     "One more pair of equal sides",
+     "One pair of equal acute angles",
+     "Nothing more"
     ],
     "answer": 1,
-    "solution": "In ASA, the side must be the included side, between the two angles.",
-    "topic": "ASA"
+    "solution": "RHS needs the right angle, the hypotenuse and one other side.",
+    "topic": "HOTS · Conditions"
    },
    {
     "prompt": "AAS is the same as",
@@ -8712,16 +8712,16 @@
     "topic": "Conditions"
    },
    {
-    "prompt": "Congruence is shown by the symbol",
+    "prompt": "Both diagonals of a square are drawn. How many pairs of congruent triangles can you find among the four small triangles?",
     "options": [
-     "$\\cong$",
-     "$\\parallel$",
-     "$\\sim$",
-     "$=$"
+     "$8$",
+     "$2$",
+     "$4$",
+     "$6$"
     ],
-    "answer": 0,
-    "solution": "The symbol $\\cong$ means “is congruent to”.",
-    "topic": "Notation"
+    "answer": 3,
+    "solution": "All four small triangles are congruent. The number of pairs from $4$ triangles is $\\frac{4 \\times 3}{2} = 6$.",
+    "topic": "HOTS · Counting"
    },
    {
     "prompt": "Assertion (A): Two triangles with all three angles equal are always congruent.\nReason (R): Congruent triangles have the same shape and size.",
@@ -8782,16 +8782,16 @@
   "title": "Constructions",
   "questions": [
    {
-    "prompt": "A perpendicular bisector of $AB$",
+    "prompt": "To construct an angle of $45^\\circ$, you can",
     "options": [
-     "passes through the midpoint of $AB$ at $90^\\circ$",
-     "passes through A",
-     "bisects an angle",
-     "is parallel to $AB$"
+     "copy an angle of $60^\\circ$ twice",
+     "bisect an angle of $120^\\circ$",
+     "bisect an angle of $90^\\circ$",
+     "bisect an angle of $60^\\circ$"
     ],
-    "answer": 0,
-    "solution": "The perpendicular bisector of $AB$ passes through the midpoint of $AB$ and makes $90^\\circ$ with $AB$. So the answer is passes through the midpoint of $AB$ at $90^\\circ$.",
-    "topic": "Perpendicular bisector"
+    "answer": 2,
+    "solution": "Half of $90^\\circ$ is $45^\\circ$. The other methods give $30^\\circ$, $60^\\circ$ and $120^\\circ$.",
+    "topic": "HOTS · Method"
    },
    {
     "prompt": "For the perpendicular bisector of $AB = 6$ cm, the arc radius must be",
@@ -8830,28 +8830,28 @@
     "topic": "60°"
    },
    {
-    "prompt": "Which angle needs bisecting $60^\\circ$?",
+    "prompt": "Which angle cannot be made by bisecting and combining $60^\\circ$ and $90^\\circ$ with ruler and compasses?",
     "options": [
-     "$90^\\circ$",
-     "$30^\\circ$",
-     "$45^\\circ$",
-     "$120^\\circ$"
+     "$40^\\circ$",
+     "$15^\\circ$",
+     "$75^\\circ$",
+     "$105^\\circ$"
     ],
-    "answer": 1,
-    "solution": "$30 = \\frac{60}{2}$. So the answer is $30^\\circ$.",
-    "topic": "Special angles"
+    "answer": 0,
+    "solution": "$75^\\circ$, $105^\\circ$ and $15^\\circ$ come from bisecting. $40^\\circ$ cannot be made from $60^\\circ$ and $90^\\circ$ this way.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Which angle needs bisecting $90^\\circ$?",
+    "prompt": "A student wants to bisect $AB = 7$ cm. She draws arcs of radius $3$ cm from $A$ and from $B$. What is wrong?",
     "options": [
-     "$75^\\circ$",
-     "$45^\\circ$",
-     "$15^\\circ$",
-     "$30^\\circ$"
+     "The radius must be exactly $7$ cm",
+     "Nothing is wrong",
+     "The radius must be more than $3.5$ cm, or the arcs do not meet",
+     "The radius must be less than $3$ cm"
     ],
-    "answer": 1,
-    "solution": "$45 = \\frac{90}{2}$. So the answer is $45^\\circ$.",
-    "topic": "Special angles"
+    "answer": 2,
+    "solution": "Two arcs of radius $3$ cm from points $7$ cm apart cannot meet, because $3 + 3 < 7$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "$75^\\circ$ is constructed by bisecting the angle between",
@@ -8914,16 +8914,16 @@
     "topic": "Special angles"
    },
    {
-    "prompt": "Which instruments are used in constructions?",
+    "prompt": "Every point on the perpendicular bisector of $AB$ is",
     "options": [
-     "Set square only",
-     "Calculator",
-     "Protractor only",
-     "Ruler and compasses"
+     "on the line $AB$",
+     "nearer to $A$ than to $B$",
+     "$\\frac{1}{2}AB$ from $A$",
+     "the same distance from $A$ and $B$"
     ],
     "answer": 3,
-    "solution": "Geometric constructions use only a ruler and compasses (Euclid’s tools). So the answer is Ruler and compasses.",
-    "topic": "Tools"
+    "solution": "This is the main property of the perpendicular bisector.",
+    "topic": "HOTS · Property"
    },
    {
     "prompt": "A triangle with sides $3$ cm, $4$ cm, $8$ cm",
@@ -8986,16 +8986,16 @@
     "topic": "Parallel lines"
    },
    {
-    "prompt": "Each angle of an equilateral triangle constructed with compasses is",
+    "prompt": "Every point on the bisector of $\\angle ABC$ is",
     "options": [
-     "$45^\\circ$",
-     "$30^\\circ$",
-     "$90^\\circ$",
-     "$60^\\circ$"
+     "on the arm $BA$",
+     "the same distance from $A$ and $C$",
+     "the same distance from the arms $BA$ and $BC$",
+     "at a distance $BA$ from $B$"
     ],
-    "answer": 3,
-    "solution": "All three sides are equal, so all three angles are equal. Each angle is $180^\\circ \\div 3 = 60^\\circ$.",
-    "topic": "Equilateral"
+    "answer": 2,
+    "solution": "This is the main property of the angle bisector.",
+    "topic": "HOTS · Property"
    },
    {
     "prompt": "A right triangle with hypotenuse $6$ cm and a side $4$ cm uses",
@@ -9022,16 +9022,16 @@
     "topic": "Possible"
    },
    {
-    "prompt": "When constructing, the arcs must",
+    "prompt": "Which data gives no triangle?",
     "options": [
-     "be drawn in ink only",
-     "be rubbed out",
-     "not be rubbed out",
-     "be very small"
+     "$AB = 4$ cm, $BC = 5$ cm, $CA = 10$ cm",
+     "$AB = 6$ cm, $BC = 8$ cm, $\\angle B = 120^\\circ$",
+     "Hypotenuse $5$ cm and one side $3$ cm",
+     "$AB = 5$ cm, $\\angle A = 60^\\circ$, $\\angle B = 70^\\circ$"
     ],
-    "answer": 2,
-    "solution": "They show the method. So the answer is not be rubbed out.",
-    "topic": "Rules"
+    "answer": 0,
+    "solution": "$4 + 5 < 10$, so the sides cannot meet.",
+    "topic": "HOTS · Possible or not"
    },
    {
     "prompt": "The angle bisector of a straight angle makes",
@@ -9046,28 +9046,28 @@
     "topic": "Angle bisector"
    },
    {
-    "prompt": "The point where the perpendicular bisector cuts $AB$ is",
+    "prompt": "Which data does not give one unique triangle?",
     "options": [
-     "$B$",
-     "$A$",
-     "the midpoint of $AB$",
-     "outside $AB$"
+     "Two sides and the included angle",
+     "Three sides",
+     "Three angles: $50^\\circ$, $60^\\circ$ and $70^\\circ$",
+     "Two angles and the included side"
     ],
     "answer": 2,
-    "solution": "The perpendicular bisector cuts $AB$ into two equal parts. So it meets $AB$ at its midpoint. So the answer is the midpoint of $AB$.",
-    "topic": "Perpendicular bisector"
+    "solution": "Three angles fix the shape but not the size, so many triangles are possible.",
+    "topic": "HOTS · Unique triangle"
    },
    {
-    "prompt": "A rough figure is drawn",
+    "prompt": "$BC = 5$ cm, $\\angle B = 50^\\circ$ and $\\angle C = 140^\\circ$. The triangle",
     "options": [
-     "only for circles",
-     "before the construction",
-     "after the construction",
-     "never"
+     "is obtuse-angled",
+     "is right-angled",
+     "is isosceles",
+     "cannot be drawn, because the angles add up to more than $180^\\circ$"
     ],
-    "answer": 1,
-    "solution": "It helps plan the steps. So the answer is before the construction.",
-    "topic": "Rules"
+    "answer": 3,
+    "solution": "$50^\\circ + 140^\\circ = 190^\\circ > 180^\\circ$, so the arms never meet.",
+    "topic": "HOTS · Possible or not"
    },
    {
     "prompt": "To construct $22\\tfrac{1}{2}^\\circ$, bisect",
@@ -9118,28 +9118,28 @@
     "topic": "Special triangles"
    },
    {
-    "prompt": "The construction of $90^\\circ$ at a point on a line can use",
+    "prompt": "An angle of $30^\\circ$ is constructed by",
     "options": [
-     "copying $30^\\circ$",
-     "bisecting $60^\\circ$",
-     "the perpendicular at that point",
-     "bisecting $45^\\circ$"
+     "bisecting an angle of $45^\\circ$",
+     "bisecting an angle of $90^\\circ$",
+     "bisecting an angle of $60^\\circ$",
+     "dividing an angle of $90^\\circ$ into $3$ with a protractor"
     ],
     "answer": 2,
-    "solution": "Bisect the straight angle. So the answer is the perpendicular at that point.",
-    "topic": "90°"
+    "solution": "Construct $60^\\circ$ and bisect it.",
+    "topic": "HOTS · Method"
    },
    {
-    "prompt": "To check a construction of $60^\\circ$, you can",
+    "prompt": "The perpendicular bisectors of the three sides of a triangle",
     "options": [
-     "use a calculator",
-     "measure it with a protractor",
-     "fold the paper randomly",
-     "draw more arcs"
+     "meet at one point",
+     "are always parallel",
+     "meet at the mid-point of the longest side",
+     "never meet"
     ],
-    "answer": 1,
-    "solution": "Measure the angle with a protractor to check the construction. So the answer is measure it with a protractor.",
-    "topic": "Check"
+    "answer": 0,
+    "solution": "They meet at one point, which is the same distance from all three vertices.",
+    "topic": "HOTS · Property"
    },
    {
     "prompt": "Assertion (A): An angle of $30^\\circ$ can be constructed with ruler and compasses.\nReason (R): $30^\\circ$ is half of $60^\\circ$, and an angle can be bisected.",
@@ -9200,28 +9200,28 @@
   "title": "Mensuration",
   "questions": [
    {
-    "prompt": "The area of an $18$ m by $12$ m rectangle is",
+    "prompt": "The length of a rectangle is doubled and its breadth is halved. Its area",
     "options": [
-     "$108\\text{ m}^2$",
-     "$60\\text{ m}^2$",
-     "$216\\text{ m}^2$",
-     "$30\\text{ m}^2$"
+     "stays the same",
+     "becomes $4$ times",
+     "becomes half",
+     "doubles"
     ],
-    "answer": 2,
-    "solution": "$18 \\times 12$. So the answer is $216\\text{ m}^2$.",
-    "topic": "Rectangle"
+    "answer": 0,
+    "solution": "New area $= 2l \\times \\frac{b}{2} = lb$.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "The perimeter of a square of side $9$ cm is",
+    "prompt": "A square and a rectangle each have perimeter $40$ cm. The rectangle is $12$ cm long. Which has the larger area, and by how much?",
     "options": [
-     "$81$ cm",
-     "$18$ cm",
-     "$36$ cm",
-     "$27$ cm"
+     "the square, by $8$ cm²",
+     "the rectangle, by $4$ cm²",
+     "the square, by $4$ cm²",
+     "both are equal"
     ],
     "answer": 2,
-    "solution": "$4 \\times 9$. So the answer is $36$ cm.",
-    "topic": "Square"
+    "solution": "Square: side $10$, area $100$ cm². Rectangle: $12 \\times 8 = 96$ cm². The square is larger by $4$ cm².",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "The area of a square with diagonal $10$ cm is",
@@ -9260,16 +9260,16 @@
     "topic": "Cross roads"
    },
    {
-    "prompt": "Find the area of a triangle with base $14$ cm and height $9$ cm.",
+    "prompt": "A wire is bent into a square of side $11$ cm. The same wire is bent into a circle. The radius of the circle is $(\\pi = \\frac{22}{7})$",
     "options": [
-     "$126\\text{ cm}^2$",
-     "$31.5\\text{ cm}^2$",
-     "$63\\text{ cm}^2$",
-     "$23\\text{ cm}^2$"
+     "$7$ cm",
+     "$3.5$ cm",
+     "$11$ cm",
+     "$14$ cm"
     ],
-    "answer": 2,
-    "solution": "$\\tfrac{1}{2} \\times 14 \\times 9$. So the answer is $63\\text{ cm}^2$.",
-    "topic": "Triangle"
+    "answer": 0,
+    "solution": "Length of wire $= 44$ cm $= 2\\pi r$, so $r = \\frac{44 \\times 7}{44} = 7$ cm.",
+    "topic": "HOTS · Same wire"
    },
    {
     "prompt": "A parallelogram has base $12$ cm and area $84\\text{ cm}^2$. Find the height.",
@@ -9308,28 +9308,28 @@
     "topic": "Rhombus"
    },
    {
-    "prompt": "Find the circumference of a circle of radius $14$ cm.",
+    "prompt": "The area of a circle is $154$ cm². Its circumference is $(\\pi = \\frac{22}{7})$",
     "options": [
+     "$49$ cm",
      "$44$ cm",
-     "$616$ cm",
      "$88$ cm",
-     "$176$ cm"
+     "$22$ cm"
     ],
-    "answer": 2,
-    "solution": "$2 \\times \\frac{22}{7} \\times 14$. So the answer is $88$ cm.",
-    "topic": "Circle"
+    "answer": 1,
+    "solution": "$\\pi r^2 = 154$ gives $r^2 = 49$ and $r = 7$. Circumference $= 2 \\times \\frac{22}{7} \\times 7 = 44$ cm.",
+    "topic": "HOTS · Reverse"
    },
    {
-    "prompt": "Find the area of a circle of radius $14$ cm.",
+    "prompt": "How many tiles of size $25$ cm $\\times 20$ cm cover a floor $5$ m $\\times 4$ m?",
     "options": [
-     "$616\\text{ cm}^2$",
-     "$88\\text{ cm}^2$",
-     "$1232\\text{ cm}^2$",
-     "$308\\text{ cm}^2$"
+     "$4000$",
+     "$80$",
+     "$400$",
+     "$40$"
     ],
-    "answer": 0,
-    "solution": "$\\frac{22}{7} \\times 196$. So the answer is $616\\text{ cm}^2$.",
-    "topic": "Circle"
+    "answer": 2,
+    "solution": "Floor $= 500 \\times 400 = 200000$ cm². Tile $= 500$ cm². Number $= 400$.",
+    "topic": "HOTS · Units"
    },
    {
     "prompt": "Circumference $132$ cm. Find the radius.",
@@ -9368,16 +9368,16 @@
     "topic": "Semicircle"
    },
    {
-    "prompt": "Find the volume of a cube of edge $6$ cm.",
+    "prompt": "A cube of edge $4$ cm is cut into cubes of edge $1$ cm. The total surface area changes from $96$ cm² to",
     "options": [
-     "$36\\text{ cm}^3$",
-     "$72\\text{ cm}^3$",
-     "$108\\text{ cm}^3$",
-     "$216\\text{ cm}^3$"
+     "$64$ cm²",
+     "$192$ cm²",
+     "$96$ cm²",
+     "$384$ cm²"
     ],
     "answer": 3,
-    "solution": "$6^3$. So the answer is $216\\text{ cm}^3$.",
-    "topic": "Cube"
+    "solution": "There are $64$ small cubes, each with surface area $6$ cm². Total $= 384$ cm².",
+    "topic": "HOTS · Cutting"
    },
    {
     "prompt": "A tank $2$ m $\\times 1.5$ m $\\times 1$ m holds",
@@ -9416,16 +9416,16 @@
     "topic": "Triangle"
    },
    {
-    "prompt": "Simplify $1 m^2$.",
+    "prompt": "Each edge of a cube is doubled. Its volume becomes",
     "options": [
-     "$10{,}000\\text{ cm}^2$",
-     "$100\\text{ cm}^2$",
-     "$1{,}00{,}000\\text{ cm}^2$",
-     "$1000\\text{ cm}^2$"
+     "$2$ times",
+     "$6$ times",
+     "$4$ times",
+     "$8$ times"
     ],
-    "answer": 0,
-    "solution": "$100 \\times 100$. So the answer is $10{,}000\\text{ cm}^2$.",
-    "topic": "Units"
+    "answer": 3,
+    "solution": "$(2a)^3 = 8a^3$.",
+    "topic": "HOTS · Scaling"
    },
    {
     "prompt": "If the side of a square is doubled, its area becomes",
@@ -9476,28 +9476,28 @@
     "topic": "Cost"
    },
    {
-    "prompt": "A square field has area $1225\\text{ m}^2$. Its side is",
+    "prompt": "A rectangle is $16$ cm by $9$ cm. A square has the same area. The perimeter of the square is",
     "options": [
-     "$35$ m",
-     "$30.6$ m",
-     "$45$ m",
-     "$25$ m"
+     "$50$ cm",
+     "$36$ cm",
+     "$144$ cm",
+     "$48$ cm"
     ],
-    "answer": 0,
-    "solution": "$\\sqrt{1225}$. So the answer is $35$ m.",
-    "topic": "Square"
+    "answer": 3,
+    "solution": "Area $= 144$ cm², so the side is $12$ cm and the perimeter is $48$ cm.",
+    "topic": "HOTS · Multi-step"
    },
    {
-    "prompt": "Find the volume of a cuboid $8$ cm $\\times 5$ cm $\\times 3$ cm.",
+    "prompt": "A student wrote: 'Area of a circle of diameter $14$ cm $= \\frac{22}{7} \\times 14 \\times 14 = 616$ cm².' Which is correct?",
     "options": [
-     "$16\\text{ cm}^3$",
-     "$120\\text{ cm}^3$",
-     "$158\\text{ cm}^3$",
-     "$60\\text{ cm}^3$"
+     "$44$ cm²; use $2\\pi r$",
+     "$308$ cm²; halve the answer",
+     "$616$ cm²; the working is correct",
+     "$154$ cm²; use the radius $7$ cm"
     ],
-    "answer": 1,
-    "solution": "$8 \\times 5 \\times 3$. So the answer is $120\\text{ cm}^3$.",
-    "topic": "Cuboid"
+    "answer": 3,
+    "solution": "Area $= \\pi r^2$ with $r = 7$: $\\frac{22}{7} \\times 7 \\times 7 = 154$ cm².",
+    "topic": "HOTS · Find the mistake"
    },
    {
     "prompt": "Area of a ring with radii $14$ cm and $7$ cm find $(\\pi = \\frac{22}{7})$.",
@@ -9524,16 +9524,16 @@
     "topic": "Cubes"
    },
    {
-    "prompt": "The height of a triangle with area $48\\text{ cm}^2$ and base $12$ cm is",
+    "prompt": "A trapezium has area $150$ cm² and height $10$ cm. One parallel side is $4$ cm longer than the other. The longer parallel side is",
     "options": [
-     "$4$ cm",
-     "$24$ cm",
-     "$6$ cm",
-     "$8$ cm"
+     "$17$ cm",
+     "$15$ cm",
+     "$19$ cm",
+     "$13$ cm"
     ],
-    "answer": 3,
-    "solution": "$2 \\times 48 \\div 12$. So the answer is $8$ cm.",
-    "topic": "Triangle"
+    "answer": 0,
+    "solution": "$\\frac{1}{2}(a + b) \\times 10 = 150$, so $a + b = 30$. With $b = a + 4$: $a = 13$, $b = 17$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "A circular park has a diameter of $42$ m. Its area is",
@@ -9618,16 +9618,16 @@
   "title": "Data Handling",
   "questions": [
    {
-    "prompt": "The range of $7$, $5$, $8$, $7$, $6$, $9$ is",
+    "prompt": "The mean of $5$ numbers is $18$. One number is changed from $12$ to $27$. The new mean is",
     "options": [
-     "$7$",
-     "$5$",
-     "$9$",
-     "$4$"
+     "$18$",
+     "$15$",
+     "$21$",
+     "$33$"
     ],
-    "answer": 3,
-    "solution": "$9 - 5$. So the answer is $4$.",
-    "topic": "Range"
+    "answer": 2,
+    "solution": "Old sum $= 90$. New sum $= 90 + 15 = 105$. New mean $= 21$.",
+    "topic": "HOTS · Change a value"
    },
    {
     "prompt": "The mean of $12$, $15$, $18$, $20$, $25$ is",
@@ -9702,64 +9702,64 @@
     "topic": "Pie chart"
    },
    {
-    "prompt": "The sum of all central angles of a pie chart is",
+    "prompt": "A student wrote: 'The median of $7, 2, 9, 4, 5$ is $9$, because it is the middle number.' Which is correct?",
     "options": [
-     "$100^\\circ$",
-     "$360^\\circ$",
-     "$90^\\circ$",
-     "$180^\\circ$"
+     "$5.4$; the mean",
+     "$5$; arrange the data in order first",
+     "$9$ is correct",
+     "$4$"
     ],
     "answer": 1,
-    "solution": "The central angles of a pie chart make a full circle, so they add up to $360^\\circ$.",
-    "topic": "Pie chart"
+    "solution": "In order: $2, 4, 5, 7, 9$. The middle value is $5$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "The mean of the first five natural numbers is",
+    "prompt": "The mean of $10, 12, x, 15$ and $20$ is $15$. The median of the data is",
     "options": [
-     "$3$",
+     "$18$",
      "$15$",
-     "$5$",
-     "$2.5$"
-    ],
-    "answer": 0,
-    "solution": "$15 \\div 5$. So the answer is $3$.",
-    "topic": "Mean"
-   },
-   {
-    "prompt": "The mode of $1$, $2$, $2$, $3$, $3$, $3$, $4$ is",
-    "options": [
-     "$2$",
-     "$4$",
-     "$2.57$",
-     "$3$"
-    ],
-    "answer": 3,
-    "solution": "$3$ occurs three times.",
-    "topic": "Mode"
-   },
-   {
-    "prompt": "In a bar graph, the bars have",
-    "options": [
-     "no gaps ever",
-     "equal width",
-     "circles on top",
-     "different widths"
+     "$16$",
+     "$12$"
     ],
     "answer": 1,
-    "solution": "All bars in a bar graph have equal width. Only the heights show the values.",
-    "topic": "Bar graph"
+    "solution": "$57 + x = 75$, so $x = 18$. In order: $10, 12, 15, 18, 20$. Median $= 15$.",
+    "topic": "HOTS · Multi-step"
    },
    {
-    "prompt": "Five tally marks are written as",
+    "prompt": "One very large value is added to a set of data. Which measure changes the most?",
     "options": [
-     "$|||||$",
-     "$||||$",
-     "$X$",
-     "a bundle of four with a cross line"
+     "The median",
+     "The mode",
+     "None of them changes",
+     "The mean"
     ],
     "answer": 3,
-    "solution": "Four strokes and one across. So the answer is a bundle of four with a cross line.",
-    "topic": "Tally"
+    "solution": "The mean uses every value, so one large value pulls it up. The median and the mode change little or not at all.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "In a set of data, the mode is $7$ and every other value appears only once. Which must be true?",
+    "options": [
+     "$7$ is the largest value",
+     "$7$ is the median",
+     "$7$ is the mean",
+     "$7$ appears at least twice"
+    ],
+    "answer": 3,
+    "solution": "The mode is the value that appears most often, so $7$ appears more than once.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "A pie chart shows $60$ students. One sector has an angle of $72^\\circ$. It shows",
+    "options": [
+     "$20$ students",
+     "$12$ students",
+     "$6$ students",
+     "$72$ students"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{72}{360} \\times 60 = 12$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "The median of the first $10$ natural numbers is",
@@ -9798,28 +9798,28 @@
     "topic": "Mean"
    },
    {
-    "prompt": "A pie chart sector of $90^\\circ$ shows what fraction?",
+    "prompt": "The mean of $5$ consecutive even numbers is $16$. The largest of them is",
     "options": [
-     "$\\frac{1}{2}$",
-     "$\\frac{1}{4}$",
-     "$\\frac{1}{9}$",
-     "$\\frac{1}{3}$"
+     "$22$",
+     "$20$",
+     "$18$",
+     "$24$"
     ],
     "answer": 1,
-    "solution": "$\\frac{90}{360}$. So the answer is $\\frac{1}{4}$.",
-    "topic": "Pie chart"
+    "solution": "The middle number is the mean, $16$. The numbers are $12, 14, 16, 18, 20$.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "The mode of $10$, $20$, $20$, $30$, $30$ is",
+    "prompt": "A student's mean mark in $4$ tests is $72$. What must she score in the $5$th test to make her mean $75$?",
     "options": [
-     "$30$",
-     "$20$ and $30$",
-     "$20$",
-     "$25$"
+     "$87$",
+     "$90$",
+     "$78$",
+     "$75$"
     ],
-    "answer": 1,
-    "solution": "Both occur twice (bimodal). So the answer is $20$ and $30$.",
-    "topic": "Mode"
+    "answer": 0,
+    "solution": "Needed total $= 5 \\times 75 = 375$. Present total $= 288$. Score $= 87$.",
+    "topic": "HOTS · Target mean"
    },
    {
     "prompt": "The marks $45$, $60$, $52$, $38$, $70$ have range",
@@ -9846,28 +9846,28 @@
     "topic": "Mean"
    },
    {
-    "prompt": "Which measure is the middle value?",
+    "prompt": "Each value in a set of data is multiplied by $2$. The mean",
     "options": [
-     "Median",
-     "Mode",
-     "Range",
-     "Mean"
+     "increases by $2$",
+     "is halved",
+     "is doubled",
+     "stays the same"
     ],
-    "answer": 0,
-    "solution": "The median is the middle value when the data is arranged in order. So the answer is Median.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "The sum is doubled and the number of values is the same, so the mean is doubled.",
+    "topic": "HOTS · Reasoning"
    },
    {
-    "prompt": "Which measure is the most frequent value?",
+    "prompt": "For which data are the mean, the median and the mode all equal?",
     "options": [
-     "Mean",
-     "Median",
-     "Range",
-     "Mode"
+     "$3, 4, 5, 6$",
+     "$1, 1, 2, 4$",
+     "$2, 3, 3, 4$",
+     "$1, 2, 2, 5$"
     ],
-    "answer": 3,
-    "solution": "The mode is the value that occurs most often. So the answer is Mode.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "$2, 3, 3, 4$: mean $= 3$, median $= 3$, mode $= 3$. The others differ.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "In a pie chart, $25\\%$ of the data has a central angle of",
@@ -10036,16 +10036,16 @@
   "title": "Probability",
   "questions": [
    {
-    "prompt": "The sample space for one coin is",
+    "prompt": "A bag has $4$ red balls and some blue balls. $P(\\text{red}) = \\frac{1}{3}$. The number of blue balls is",
     "options": [
-     "$\\{H\\}$",
-     "$\\{$HH, TT$\\}$",
-     "$\\{H, T\\}$",
-     "$\\{T\\}$"
+     "$3$",
+     "$12$",
+     "$4$",
+     "$8$"
     ],
-    "answer": 2,
-    "solution": "One coin has two outcomes, head and tail. So the sample space is $\\{H, T\\}$.",
-    "topic": "Sample space"
+    "answer": 3,
+    "solution": "$\\frac{4}{\\text{total}} = \\frac{1}{3}$, so the total is $12$ and blue $= 8$.",
+    "topic": "HOTS · Reverse"
    },
    {
     "prompt": "Two coins are tossed. The number of outcomes is",
@@ -10132,40 +10132,40 @@
     "topic": "Two coins"
    },
    {
-    "prompt": "The probability of an impossible event is",
+    "prompt": "A coin shows a head $3$ times in a row. A student says that the next toss is sure to be a tail. Which is correct?",
     "options": [
-     "$-1$",
-     "$0$",
-     "$\\frac{1}{2}$",
-     "$1$"
+     "$P(\\text{head})$ is now $0$",
+     "$P(\\text{tail}) = \\frac{3}{4}$",
+     "The student is right",
+     "$P(\\text{tail})$ is still $\\frac{1}{2}$; the coin has no memory"
     ],
-    "answer": 1,
-    "solution": "An impossible event has no favourable outcome, so its probability is $0$.",
-    "topic": "Concept"
+    "answer": 3,
+    "solution": "Each toss is independent. The chance of a tail is always $\\frac{1}{2}$.",
+    "topic": "HOTS · Find the mistake"
    },
    {
-    "prompt": "The probability of a sure event is",
+    "prompt": "Two coins are tossed. $P(\\text{exactly one head})$ is",
     "options": [
-     "$1$",
-     "$0$",
-     "$100$",
-     "$\\frac{1}{2}$"
+     "$\\frac{1}{2}$",
+     "$\\frac{3}{4}$",
+     "$\\frac{1}{4}$",
+     "$\\frac{1}{3}$"
     ],
     "answer": 0,
-    "solution": "A sure event happens in every outcome, so its probability is $1$.",
-    "topic": "Concept"
+    "solution": "Outcomes: HH, HT, TH, TT. Exactly one head: HT, TH. $P = \\frac{2}{4} = \\frac{1}{2}$.",
+    "topic": "HOTS · Two coins"
    },
    {
-    "prompt": "Which cannot be a probability?",
+    "prompt": "A card is drawn from cards numbered $1$ to $30$. $P(\\text{the number is divisible by both } 2 \\text{ and } 3)$ is",
     "options": [
-     "$1$",
-     "$\\frac{3}{2}$",
-     "$0.7$",
-     "$0$"
+     "$\\frac{5}{6}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{2}{3}$",
+     "$\\frac{1}{6}$"
     ],
-    "answer": 1,
-    "solution": "$P$ cannot exceed $1$. So the answer is $\\frac{3}{2}$.",
-    "topic": "Concept"
+    "answer": 3,
+    "solution": "Divisible by both means a multiple of $6$: $6, 12, 18, 24, 30$. $P = \\frac{5}{30} = \\frac{1}{6}$.",
+    "topic": "HOTS · Both conditions"
    },
    {
     "prompt": "A die is thrown. Find $P(\\text{number greater than 6})$.",
@@ -10180,16 +10180,16 @@
     "topic": "Die"
    },
    {
-    "prompt": "A die is thrown. Find $P(\\text{number less than 7})$.",
+    "prompt": "A die is thrown. Which event has probability $\\frac{1}{2}$?",
     "options": [
-     "$1$",
-     "$0$",
-     "$\\frac{6}{7}$",
-     "$\\frac{1}{6}$"
+     "Getting a $6$",
+     "Getting a number less than $3$",
+     "Getting a number more than $4$",
+     "Getting an odd number"
     ],
-    "answer": 0,
-    "solution": "Every face of a die shows a number less than $7$. The event is sure, so the probability is $1$.",
-    "topic": "Die"
+    "answer": 3,
+    "solution": "Odd numbers: $1, 3, 5$, so $\\frac{3}{6} = \\frac{1}{2}$. The others are $\\frac{1}{6}$, $\\frac{1}{3}$ and $\\frac{1}{3}$.",
+    "topic": "HOTS · Match the event"
    },
    {
     "prompt": "If $P(E) = 0.35$, then find $P(\\text{not } E)$.",
@@ -10228,16 +10228,16 @@
     "topic": "Spinner"
    },
    {
-    "prompt": "One coin is tossed. Find $P(\\text{head})$.",
+    "prompt": "A coin is tossed $200$ times. About how many heads do you expect?",
     "options": [
-     "$0$",
-     "$\\frac{1}{4}$",
-     "$1$",
-     "$\\frac{1}{2}$"
+     "$100$",
+     "$50$",
+     "$150$",
+     "$200$"
     ],
-    "answer": 3,
-    "solution": "$1$ of $2$. So the answer is $\\frac{1}{2}$.",
-    "topic": "Coin"
+    "answer": 0,
+    "solution": "$\\frac{1}{2} \\times 200 = 100$. The real number will be close to $100$, not always exactly $100$.",
+    "topic": "HOTS · Expected number"
    },
    {
     "prompt": "A die is thrown. Find $P(\\text{multiple of 3})$.",
@@ -10288,16 +10288,16 @@
     "topic": "Two coins"
    },
    {
-    "prompt": "Equally likely outcomes means",
+    "prompt": "A spinner has $6$ equal parts: $3$ red, $2$ blue and $1$ green. Which is true?",
     "options": [
-     "each outcome has the same chance",
-     "only one outcome happens",
-     "the outcomes are impossible",
-     "the event is sure"
+     "All colours are equally likely",
+     "Red is $3$ times as likely as green",
+     "Blue is more likely than red",
+     "Green is impossible"
     ],
-    "answer": 0,
-    "solution": "Equally likely means that each outcome has the same chance of happening.",
-    "topic": "Concept"
+    "answer": 1,
+    "solution": "$P(\\text{red}) = \\frac{3}{6}$ and $P(\\text{green}) = \\frac{1}{6}$.",
+    "topic": "HOTS · Compare"
    },
    {
     "prompt": "A die is thrown. Find $P(\\text{odd prime})$.",
@@ -10324,28 +10324,28 @@
     "topic": "Numbers"
    },
    {
-    "prompt": "The sum of the probabilities of all outcomes of an experiment is",
+    "prompt": "A letter is chosen at random from the word PROBABILITY. $P(\\text{B or I})$ is",
     "options": [
-     "$1$",
-     "depends",
-     "$0$",
-     "$100$"
+     "$\\frac{2}{11}$",
+     "$\\frac{4}{7}$",
+     "$\\frac{4}{11}$",
+     "$\\frac{1}{3}$"
     ],
-    "answer": 0,
-    "solution": "One of the outcomes always happens, so the probabilities of all outcomes add up to $1$.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "The word has $11$ letters, with $2$ B's and $2$ I's. $P = \\frac{4}{11}$.",
+    "topic": "HOTS · Letters"
    },
    {
-    "prompt": "A bag has only red balls. Find $P(\\text{red})$.",
+    "prompt": "A bag has $5$ red and $3$ green balls. One red ball is taken out and kept aside. Now $P(\\text{red})$ is",
     "options": [
-     "$0$",
-     "$1$",
-     "cannot say",
-     "$\\frac{1}{2}$"
+     "$\\frac{5}{7}$",
+     "$\\frac{5}{8}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{4}{7}$"
     ],
-    "answer": 1,
-    "solution": "Every ball is red, so drawing a red ball is a sure event. $P(\\text{red})$ $= 1$.",
-    "topic": "Concept"
+    "answer": 3,
+    "solution": "Now there are $4$ red balls out of $7$.",
+    "topic": "HOTS · Changed bag"
    },
    {
     "prompt": "A die is thrown $60$ times and $6$ comes up $12$ times. The experimental probability of $6$ is",
@@ -10384,16 +10384,16 @@
     "topic": "Complement"
    },
    {
-    "prompt": "The probability of an event $E$ satisfies",
+    "prompt": "Which statement is false?",
     "options": [
-     "$P(E) = 2$",
-     "$0 \\le P(E) \\le 1$",
-     "$P(E) < 0$",
-     "$P(E) > 1$"
+     "$P(E) + P(\\text{not } E) = 1$",
+     "An impossible event has probability $0$",
+     "$P(E) = 1.2$ is possible for some event $E$",
+     "$0 \\le P(E) \\le 1$"
     ],
-    "answer": 1,
-    "solution": "The probability of any event is between $0$ (impossible) and $1$ (sure), so $0 \\le P(E) \\le 1$.",
-    "topic": "Concept"
+    "answer": 2,
+    "solution": "A probability can never be more than $1$.",
+    "topic": "HOTS · Which is false"
    },
    {
     "prompt": "Assertion (A): The probability of getting a $7$ on a die is $0$.\nReason (R): The probability of an impossible event is $0$.",
