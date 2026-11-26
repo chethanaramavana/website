@@ -2,7 +2,7 @@ import {basicsCourses} from './basics-catalog';
 import basicsOutline from './math-basics-outline.json';
 import { getDatabase, type RequestUser } from './server';
 import { paperDefinitionsById } from './papers';
-import { freeQuizChapters, icse7QuizChapters, quizInfo, quizPrice } from './free-quizzes/catalog';
+import { cbse6QuizChapters, cbse7QuizChapters, freeQuizChapters, icse6QuizChapters, icse7QuizChapters, quizInfo, quizPrice } from './free-quizzes/catalog';
 import { getIntegralsProduct } from './integrals-products';
 import { getG12PracticeProduct, g12PracticeChapter } from './g12-practice-catalog';
 import { objectiveMaximum, writtenNumbers } from './paper-format';
@@ -15,7 +15,9 @@ export function activityPaper(id: string) {
   const practice = getG12PracticeProduct(id);
   if (practice) return { title: `Grade ${practice.grade} · ${practice.chapterTitle} · ${practice.title}`, free: false, total: practice.total, kind: 'g12practice' as const };
   const icse = quizInfo(id);
-  if (icse?.board === 'ICSE') return { title: `ICSE Grade 7 · ${icse7QuizChapters[icse.chapter-1]} · MCQ`, free: quizPrice(icse.chapter, 7, 'ICSE') === 0, total: 30, kind: 'quiz' as const, grade: 7, chapter: icse.chapter, board: 'ICSE' as const };
+  if (icse?.board === 'ICSE') return { title: `ICSE Grade ${icse.grade} · ${(icse.grade === 6 ? icse6QuizChapters : icse7QuizChapters)[icse.chapter-1]} · MCQ`, free: quizPrice(icse.chapter, icse.grade, 'ICSE') === 0, total: 30, kind: 'quiz' as const, grade: icse.grade, chapter: icse.chapter, board: 'ICSE' as const };
+  if (icse?.board === 'CBSE' && icse.grade === 7) return { title: `Grade 7 · ${cbse7QuizChapters[icse.chapter-1]} · MCQ`, free: false, total: 30, kind: 'quiz' as const, grade: 7, chapter: icse.chapter, board: 'CBSE' as const };
+  if (icse?.board === 'CBSE' && icse.grade === 6) return { title: `Grade 6 · ${cbse6QuizChapters[icse.chapter-1]} · MCQ`, free: false, total: 30, kind: 'quiz' as const, grade: 6, chapter: icse.chapter, board: 'CBSE' as const };
   const match = /^cbse-(10|11|12)-ch-(\d+)-50$/.exec(id);
   if (match) {
     const grade = Number(match[1]), chapter = Number(match[2]);

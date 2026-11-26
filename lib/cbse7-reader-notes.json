@@ -1,0 +1,436 @@
+{
+ "g7-working-with-fractions": {
+  "slug": "g7-working-with-fractions",
+  "number": 8,
+  "grade": 7,
+  "board": "CBSE",
+  "title": "Working with Fractions",
+  "subtitle": "Fraction of a quantity, multiplying fractions and mixed numbers, the size of a product, dividing fractions, word problems and fractional relations",
+  "sheet": [
+   {
+    "title": "Fraction of a quantity",
+    "items": [
+     "\"of\" means $\\times$",
+     "$\\frac{2}{5}$ of $45 = 45 \\div 5 \\times 2 = 18$",
+     "$\\frac{3}{4}$ of $2$ hours $= \\frac{3}{4} \\times 120 = 90$ minutes"
+    ]
+   },
+   {
+    "title": "Multiply",
+    "items": [
+     "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
+     "Cancel common factors before you multiply",
+     "Mixed numbers: change to improper fractions first"
+    ]
+   },
+   {
+    "title": "Size of a product",
+    "items": [
+     "$\\times$ a fraction $< 1$: the answer gets smaller",
+     "$\\times 1$: the answer stays the same",
+     "$\\times$ a fraction $> 1$: the answer gets bigger"
+    ]
+   },
+   {
+    "title": "Divide",
+    "items": [
+     "Reciprocal of $\\frac{c}{d}$ is $\\frac{d}{c}$",
+     "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$",
+     "$12 \\div \\frac{3}{4} = 12 \\times \\frac{4}{3} = 16$"
+    ]
+   },
+   {
+    "title": "Relations",
+    "items": [
+     "If $A = \\frac{p}{q}$ of $B$, then $B = \\frac{q}{p}$ of $A$",
+     "\"of the rest\": find the rest first",
+     "Work backwards: number $=$ part $\\div$ fraction"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "A fraction of something",
+    "level": "board",
+    "introduction": "Mother puts $45$ sweets on a plate and says, \"Give $\\frac{2}{5}$ of them to the guests.\" Anu makes $5$ equal groups of $9$ sweets and takes $2$ groups. That is $18$ sweets. In maths, the word \"of\" tells us to multiply: $\\frac{2}{5}$ of $45 = \\frac{2}{5} \\times 45$.",
+    "formulas": [
+     "$\\frac{a}{b}$ of $N = \\frac{a}{b} \\times N = N \\div b \\times a$",
+     "Change units first: $1$ hour $= 60$ minutes, $1$ kg $= 1000$ g"
+    ],
+    "picture": {
+     "kind": "fraction",
+     "rows": [
+      {
+       "parts": 5,
+       "shaded": 2,
+       "label": "2/5 of 45"
+      }
+     ],
+     "caption": "45 sweets in 5 equal parts of 9. Two parts = 18."
+    },
+    "examples": [
+     {
+      "question": "Find $\\frac{2}{5}$ of $45$ sweets.",
+      "steps": [
+       "One part $= 45 \\div 5 = 9$",
+       "Two parts $= 9 \\times 2 = 18$"
+      ],
+      "result": "$18$ sweets",
+      "type": "Fraction of a number"
+     },
+     {
+      "question": "How many minutes are in $\\frac{3}{4}$ of $2$ hours?",
+      "steps": [
+       "$2$ hours $= 120$ minutes",
+       "$\\frac{3}{4} \\times 120 = 120 \\div 4 \\times 3 = 90$"
+      ],
+      "result": "$90$ minutes",
+      "type": "Change units first"
+     },
+     {
+      "question": "A class has $40$ students. $\\frac{3}{8}$ of them come by bus. How many do not come by bus?",
+      "steps": [
+       "By bus: $\\frac{3}{8} \\times 40 = 15$",
+       "Not by bus: $40 - 15 = 25$"
+      ],
+      "result": "$25$ students",
+      "type": "The other part"
+     }
+    ]
+   },
+   {
+    "title": "Fraction × fraction: a picture",
+    "level": "board",
+    "introduction": "Anu has $\\frac{2}{3}$ of a chocolate bar. She gives $\\frac{3}{5}$ of her piece to Ravi. To see Ravi’s share, draw the bar as a rectangle. Cut it into $3$ rows and shade $2$ rows. Then cut it into $5$ columns and take $3$ columns. The overlap is $6$ small boxes out of $15$. So Ravi gets $\\frac{6}{15} = \\frac{2}{5}$ of the whole bar.",
+    "formulas": [
+     "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+     "Cancel a top with a bottom before you multiply: $\\frac{4}{7} \\times \\frac{21}{8} = \\frac{1}{1} \\times \\frac{3}{2}$",
+     "Give the answer in its simplest form"
+    ],
+    "picture": {
+     "kind": "area",
+     "rows": 3,
+     "cols": 5,
+     "shadeRows": 2,
+     "shadeCols": 3,
+     "label": "2/3 × 3/5 = 6/15",
+     "caption": "The gold boxes show 2/3 of 3/5: 6 out of 15."
+    },
+    "examples": [
+     {
+      "question": "Find $\\frac{2}{3} \\times \\frac{3}{5}$.",
+      "steps": [
+       "Tops: $2 \\times 3 = 6$. Bottoms: $3 \\times 5 = 15$",
+       "$\\frac{6}{15} = \\frac{2}{5}$"
+      ],
+      "result": "$\\frac{2}{5}$",
+      "type": "Multiply tops and bottoms"
+     },
+     {
+      "question": "Find $\\frac{4}{7} \\times \\frac{21}{8}$.",
+      "steps": [
+       "Cancel $4$ with $8$: $\\frac{1}{2}$",
+       "Cancel $21$ with $7$: $3$",
+       "$\\frac{1}{2} \\times 3 = \\frac{3}{2}$"
+      ],
+      "result": "$\\frac{3}{2} = 1\\frac{1}{2}$",
+      "type": "Cancel first"
+     },
+     {
+      "question": "Find $\\frac{5}{6} \\times \\frac{9}{10} \\times \\frac{4}{3}$.",
+      "steps": [
+       "Tops: $5 \\times 9 \\times 4 = 180$",
+       "Bottoms: $6 \\times 10 \\times 3 = 180$",
+       "$\\frac{180}{180} = 1$"
+      ],
+      "result": "$1$",
+      "type": "Three fractions"
+     }
+    ]
+   },
+   {
+    "title": "Mixed numbers",
+    "level": "board",
+    "introduction": "Thatha’s car runs $14\\frac{1}{2}$ km on one litre of petrol. He has $6\\frac{3}{4}$ litres in the tank. To find how far he can go, we multiply two mixed numbers. We must not multiply the whole parts and the fraction parts separately. First we change each mixed number into an improper fraction.",
+    "formulas": [
+     "$a\\frac{b}{c} = \\frac{a \\times c + b}{c}$",
+     "Change to improper fractions, multiply, then change back",
+     "$14\\frac{1}{2} \\times 6\\frac{3}{4} = \\frac{29}{2} \\times \\frac{27}{4} = \\frac{783}{8}$"
+    ],
+    "picture": {
+     "kind": "flow",
+     "steps": [
+      "14 1/2 → 29/2",
+      "6 3/4 → 27/4",
+      "29 × 27 = 783; 2 × 4 = 8",
+      "783/8 = 97 7/8"
+     ],
+     "caption": "Mixed → improper → multiply → back to mixed."
+    },
+    "examples": [
+     {
+      "question": "How far does the car go on $6\\frac{3}{4}$ litres at $14\\frac{1}{2}$ km per litre?",
+      "steps": [
+       "$14\\frac{1}{2} = \\frac{29}{2}$ and $6\\frac{3}{4} = \\frac{27}{4}$",
+       "$\\frac{29 \\times 27}{2 \\times 4} = \\frac{783}{8}$",
+       "$783 = 97 \\times 8 + 7$"
+      ],
+      "result": "$97\\frac{7}{8}$ km",
+      "type": "Mixed × mixed"
+     },
+     {
+      "question": "Find $2\\frac{1}{3} \\times 1\\frac{1}{2}$.",
+      "steps": [
+       "$\\frac{7}{3} \\times \\frac{3}{2}$",
+       "Cancel $3$: $\\frac{7}{2}$"
+      ],
+      "result": "$3\\frac{1}{2}$",
+      "type": "Mixed × mixed"
+     },
+     {
+      "question": "A student wrote $2\\frac{1}{2} \\times 2\\frac{1}{2} = 4\\frac{1}{4}$. Find the correct answer.",
+      "steps": [
+       "The student multiplied $2 \\times 2$ and $\\frac{1}{2} \\times \\frac{1}{2}$ separately. That is wrong.",
+       "$\\frac{5}{2} \\times \\frac{5}{2} = \\frac{25}{4}$"
+      ],
+      "result": "$6\\frac{1}{4}$",
+      "type": "Mind the mistake"
+     }
+    ]
+   },
+   {
+    "title": "Does multiplying always make bigger?",
+    "level": "board",
+    "introduction": "Ravi says, \"Multiplying always makes a number bigger.\" Anu works out $10 \\times \\frac{1}{2} = 5$ and says, \"It got smaller!\" Both children are partly right. When we multiply by a fraction less than $1$, we take only a part, so the answer is smaller. When we multiply by a fraction more than $1$, the answer is bigger.",
+    "formulas": [
+     "$N \\times f < N$ when $f < 1$",
+     "$N \\times 1 = N$",
+     "$N \\times f > N$ when $f > 1$",
+     "$a \\times b = b \\times a$ and $(a \\times b) \\times c = a \\times (b \\times c)$ for fractions too"
+    ],
+    "picture": {
+     "kind": "numberline",
+     "from": 0,
+     "to": 20,
+     "step": 5,
+     "points": [
+      {
+       "value": 5,
+       "label": "10 × 1/2"
+      },
+      {
+       "value": 10,
+       "label": "10 × 1"
+      },
+      {
+       "value": 15,
+       "label": "10 × 3/2",
+       "gold": true
+      }
+     ],
+     "caption": "× less than 1 → smaller; × more than 1 → bigger."
+    },
+    "examples": [
+     {
+      "question": "Without calculating, is $\\frac{7}{8} \\times 25$ more or less than $25$?",
+      "steps": [
+       "$\\frac{7}{8} < 1$",
+       "Multiplying by a number less than $1$ makes the answer smaller"
+      ],
+      "result": "Less than $25$",
+      "type": "Predict the size"
+     },
+     {
+      "question": "Arrange in order without calculating: $12 \\times \\frac{3}{4}$, $12 \\times \\frac{5}{4}$, $12 \\times 1$.",
+      "steps": [
+       "$\\frac{3}{4} < 1 < \\frac{5}{4}$",
+       "So the products are in the same order"
+      ],
+      "result": "$12 \\times \\frac{3}{4} < 12 \\times 1 < 12 \\times \\frac{5}{4}$",
+      "type": "Order the products"
+     },
+     {
+      "question": "Find $\\frac{3}{5} \\times \\frac{7}{9} \\times \\frac{5}{3}$ quickly.",
+      "steps": [
+       "Change the order: $\\left(\\frac{3}{5} \\times \\frac{5}{3}\\right) \\times \\frac{7}{9}$",
+       "$\\frac{3}{5} \\times \\frac{5}{3} = 1$"
+      ],
+      "result": "$\\frac{7}{9}$",
+      "type": "Use the properties"
+     }
+    ]
+   },
+   {
+    "title": "Dividing: how many fit?",
+    "level": "board",
+    "introduction": "Thatha has a rope of $12$ m. He cuts it into pieces of $\\frac{3}{4}$ m and asks, \"How many pieces will I get?\" Each metre has $4$ quarters, so $12$ m has $48$ quarters. Each piece uses $3$ quarters. So there are $48 \\div 3 = 16$ pieces. Division asks how many times one amount fits into another.",
+    "formulas": [
+     "The reciprocal of $\\frac{c}{d}$ is $\\frac{d}{c}$, and $\\frac{c}{d} \\times \\frac{d}{c} = 1$",
+     "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$",
+     "Dividing by a fraction less than $1$ gives a bigger answer"
+    ],
+    "picture": {
+     "kind": "fraction",
+     "rows": [
+      {
+       "parts": 4,
+       "shaded": 3,
+       "label": "1 m"
+      },
+      {
+       "parts": 4,
+       "shaded": 3,
+       "label": "1 m",
+       "gold": true
+      }
+     ],
+     "caption": "Each metre is 4 quarters; one piece uses 3 quarters."
+    },
+    "examples": [
+     {
+      "question": "How many pieces of $\\frac{3}{4}$ m can be cut from $12$ m of rope?",
+      "steps": [
+       "$12 \\div \\frac{3}{4} = 12 \\times \\frac{4}{3}$",
+       "$= 4 \\times 4 = 16$"
+      ],
+      "result": "$16$ pieces",
+      "type": "How many fit"
+     },
+     {
+      "question": "Find $\\frac{5}{6} \\div \\frac{10}{9}$.",
+      "steps": [
+       "$\\frac{5}{6} \\times \\frac{9}{10}$",
+       "Cancel $5$ with $10$ and $9$ with $6$: $\\frac{1}{2} \\times \\frac{3}{2}$"
+      ],
+      "result": "$\\frac{3}{4}$",
+      "type": "Fraction ÷ fraction"
+     },
+     {
+      "question": "Find $4\\frac{1}{2} \\div 1\\frac{1}{8}$.",
+      "steps": [
+       "$\\frac{9}{2} \\div \\frac{9}{8} = \\frac{9}{2} \\times \\frac{8}{9}$",
+       "$= \\frac{8}{2} = 4$"
+      ],
+      "result": "$4$",
+      "type": "Mixed numbers"
+     }
+    ]
+   },
+   {
+    "title": "Fraction word problems",
+    "level": "board",
+    "introduction": "Meena has ₹$600$. She spends $\\frac{1}{3}$ of it on books. Then she spends $\\frac{1}{4}$ of the remaining money on food. The words \"of the remaining money\" are the key. We must first find what is left after the books. Only then do we take $\\frac{1}{4}$ of it.",
+    "formulas": [
+     "Read each \"of\" carefully: of the whole, or of the rest?",
+     "\"Of the rest\": find the rest first, then take the fraction",
+     "Check the answer with the story"
+    ],
+    "picture": {
+     "kind": "fraction",
+     "rows": [
+      {
+       "parts": 3,
+       "shaded": 1,
+       "label": "books"
+      },
+      {
+       "parts": 4,
+       "shaded": 1,
+       "label": "food (of rest)",
+       "gold": true
+      }
+     ],
+     "caption": "Take 1/3 of the whole, then 1/4 of what remains."
+    },
+    "examples": [
+     {
+      "question": "Meena has ₹$600$. She spends $\\frac{1}{3}$ on books and $\\frac{1}{4}$ of the rest on food. How much money is left?",
+      "steps": [
+       "Books: $\\frac{1}{3} \\times 600 = 200$. Rest: $600 - 200 = 400$",
+       "Food: $\\frac{1}{4} \\times 400 = 100$",
+       "Left: $400 - 100 = 300$"
+      ],
+      "result": "₹$300$, which is $\\frac{1}{2}$ of the money",
+      "type": "Of the rest"
+     },
+     {
+      "question": "A recipe for $4$ people needs $\\frac{2}{3}$ cup of sugar. How much sugar is needed for $6$ people?",
+      "steps": [
+       "For $1$ person: $\\frac{2}{3} \\div 4 = \\frac{1}{6}$ cup",
+       "For $6$ people: $\\frac{1}{6} \\times 6 = 1$"
+      ],
+      "result": "$1$ cup",
+      "type": "Scale a recipe"
+     },
+     {
+      "question": "A tank holds $40$ L. It is $\\frac{3}{8}$ full. How many bottles of $\\frac{1}{2}$ L does it take to fill the rest?",
+      "steps": [
+       "Water now: $\\frac{3}{8} \\times 40 = 15$ L",
+       "Empty space: $40 - 15 = 25$ L",
+       "Bottles: $25 \\div \\frac{1}{2} = 50$"
+      ],
+      "result": "$50$ bottles",
+      "type": "Two steps"
+     }
+    ]
+   },
+   {
+    "title": "Fractional relations",
+    "level": "challenge",
+    "introduction": "Ravi’s height is $\\frac{4}{5}$ of Anu’s height, and Anu is $150$ cm tall. So Ravi is $\\frac{4}{5} \\times 150 = 120$ cm tall. Now turn the question around. Anu’s height is what fraction of Ravi’s? Anu is $5$ parts when Ravi is $4$ parts, so Anu is $\\frac{5}{4}$ of Ravi.",
+    "formulas": [
+     "If $A = \\frac{p}{q}$ of $B$, then $B = \\frac{q}{p}$ of $A$",
+     "If $\\frac{p}{q}$ of a number is $N$, the number is $N \\div \\frac{p}{q} = N \\times \\frac{q}{p}$"
+    ],
+    "picture": {
+     "kind": "fraction",
+     "rows": [
+      {
+       "parts": 5,
+       "shaded": 5,
+       "label": "Anu"
+      },
+      {
+       "parts": 5,
+       "shaded": 4,
+       "label": "Ravi",
+       "gold": true
+      }
+     ],
+     "caption": "Ravi is 4 parts when Anu is 5 parts."
+    },
+    "examples": [
+     {
+      "question": "$A$ is $\\frac{2}{3}$ of $B$, and $A = 18$. Find $B$.",
+      "steps": [
+       "$B = \\frac{3}{2}$ of $A$",
+       "$B = \\frac{3}{2} \\times 18 = 27$"
+      ],
+      "result": "$27$",
+      "type": "Flip the relation"
+     },
+     {
+      "question": "A shirt costs $\\frac{5}{4}$ of the price of a cap. The shirt costs ₹$400$. Find the price of the cap.",
+      "steps": [
+       "Cap $= \\frac{4}{5}$ of the shirt",
+       "$\\frac{4}{5} \\times 400 = 320$"
+      ],
+      "result": "₹$320$",
+      "type": "Flip the relation"
+     },
+     {
+      "question": "Sita read $\\frac{2}{5}$ of a book on Monday and $\\frac{1}{3}$ of the rest on Tuesday. She has $48$ pages left. How many pages has the book?",
+      "steps": [
+       "Rest after Monday: $\\frac{3}{5}$ of the book",
+       "Tuesday: $\\frac{1}{3} \\times \\frac{3}{5} = \\frac{1}{5}$ of the book",
+       "Left: $1 - \\frac{2}{5} - \\frac{1}{5} = \\frac{2}{5}$ of the book",
+       "$\\frac{2}{5}$ of the book $= 48$, so the book $= 48 \\times \\frac{5}{2} = 120$"
+      ],
+      "result": "$120$ pages",
+      "type": "Work backwards"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -7,7 +7,7 @@ import NotesPrintButton from './real-numbers/print-button';
 import StoryPicture, {type StoryPictureSpec} from './story-picture';
 
 type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string; diagram?: TeachingDiagramSpec};
-type Lesson = {title: string; level: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
+type Lesson = {title: string; level: string; introduction?: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
 export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]; school?: boolean; challengeLabel?: string; sources?: {href: string; label: string}[]};
 const math = (f: string) => `$${f}$`;
 
@@ -42,6 +42,7 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
     {lessons.map((l, i) => <section className="ir-lesson" id={`session-${i + 1}`} key={l.title}>
       <div className="ir-number">SESSION {String(i + 1).padStart(2, '0')} <span className={`ir-tag ${l.level}`}>{data.school ? (i===0?'Start here':'Build on it') : l.level === 'board' ? 'Board exam' : 'Challenge'}</span></div>
       <h2>{l.title}</h2>
+      {l.introduction && <p className="ir-reasoning"><Tex>{l.introduction}</Tex></p>}
       {l.ideas && l.ideas.length > 0 && <div className="ir-ideas"><span className="ir-label">{data.school?'Understand the idea':'Key ideas'}</span><ul>{l.ideas.map((t, k) => <li key={k}><Tex>{t}</Tex></li>)}</ul></div>}
       {!!l.formulas.length && <div className="ir-formulas"><span className="ir-label">Formulas</span>{l.formulas.map((f, k) => <div key={k} className="ir-sheet-line"><Tex>{math(f)}</Tex></div>)}</div>}
       {l.picture && <div className="ir-picture"><StoryPicture spec={l.picture} /></div>}

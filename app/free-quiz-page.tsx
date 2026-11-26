@@ -1,4 +1,7 @@
 import icse7Notes from '@/lib/icse7-notes.json';
+import g6ReaderNotes from '@/lib/g6-reader-notes.json';
+import { icse6Notes } from '@/lib/icse6-notes';
+import { icseUpperNotes } from '@/lib/icse-upper-papers';
 import GoogleSignIn from './google-sign-in';
 import LearningHeader from './learning-header';
 import { SiteFooter } from './brand';
@@ -15,7 +18,10 @@ export default async function FreeQuizPage({chapter,grade=10,board='CBSE'}:{chap
   const price = quizPrice(chapter,grade,board);
   if(!quiz) notFound();
   const notesSlug = board === 'ICSE' && grade === 7 ? Object.keys(icse7Notes).find(slug => icse7Notes[slug as keyof typeof icse7Notes].back.href === `/icse/grade-7/ch-${chapter}`) : undefined;
-  const notesHref = notesSlug ? `/notes/${notesSlug}` : undefined;
+  const g6Slug = board === 'CBSE' && grade === 6 ? Object.values(g6ReaderNotes as Record<string, { slug: string; number: number }>).find((n) => n.number === chapter)?.slug : undefined;
+  const icse6Slug = board === 'ICSE' && grade === 6 ? icse6Notes.find((n) => n.number === chapter)?.slug : undefined;
+  const g7Slug = board === 'CBSE' && grade === 7 ? icseUpperNotes.find((n) => n.board === 'CBSE' && n.grade === 7 && n.number === chapter)?.slug : undefined;
+  const notesHref = notesSlug ? `/notes/${notesSlug}` : g6Slug ? `/notes/${g6Slug}` : icse6Slug ? `/notes/${icse6Slug}` : g7Slug ? `/notes/${g7Slug}` : undefined;
   const user = await getGoogleUser();
   let allowed=false,failed=false;
   if(user) {try {allowed=await hasMcqAccess(user,chapter,grade,board);}catch {failed=true;}}

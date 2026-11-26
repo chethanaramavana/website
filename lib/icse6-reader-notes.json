@@ -1,0 +1,2881 @@
+{
+ "icse6-fractions": {
+  "slug": "icse6-fractions",
+  "number": 6,
+  "grade": 6,
+  "board": "ICSE",
+  "title": "Fractions",
+  "subtitle": "Meaning, kinds of fractions, equivalent fractions, comparing, and the four operations",
+  "sheet": [
+   {
+    "title": "Meaning",
+    "items": [
+     "$\\frac{a}{b}$: $a$ parts out of $b$ equal parts",
+     "$\\frac{a}{b} = a \\div b$",
+     "$b$ copies of $\\frac{1}{b}$ make one whole"
+    ]
+   },
+   {
+    "title": "Kinds",
+    "items": [
+     "Proper: $\\frac{3}{4} < 1$. Improper: $\\frac{7}{4} \\ge 1$",
+     "$\\frac{17}{5} = 3\\frac{2}{5}$ because $17 = 3 \\times 5 + 2$",
+     "$2\\frac{3}{4} = \\frac{2 \\times 4 + 3}{4} = \\frac{11}{4}$"
+    ]
+   },
+   {
+    "title": "Equivalent and compare",
+    "items": [
+     "$\\frac{a}{b} = \\frac{a \\times n}{b \\times n}$, $n \\ne 0$",
+     "Simplest form: divide the top and bottom by their HCF",
+     "To compare, make the denominators equal"
+    ]
+   },
+   {
+    "title": "Add and subtract",
+    "items": [
+     "$\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$",
+     "Different denominators: change to the LCM first",
+     "$\\frac{2}{3} + \\frac{1}{4} = \\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}$"
+    ]
+   },
+   {
+    "title": "Multiply and divide",
+    "items": [
+     "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
+     "\"of\" means $\\times$: $\\frac{2}{3}$ of $12 = 8$",
+     "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$"
+    ]
+   }
+  ],
+  "lessons": [
+   {
+    "title": "What a fraction means",
+    "level": "board",
+    "introduction": "Mother cuts a roti into $4$ equal pieces and gives you $3$ of them. You have $\\frac{3}{4}$ of the roti. The denominator $4$ tells how many equal parts the whole is cut into. The numerator $3$ tells how many parts you take. The parts must be equal, or it is not a fair fraction.",
+    "formulas": [
+     "$\\frac{a}{b}$: $a$ parts out of $b$ equal parts",
+     "$\\frac{a}{b} = a \\div b$: $3$ rotis shared by $4$ children gives $\\frac{3}{4}$ each",
+     "More parts means smaller parts: $\\frac{1}{2} > \\frac{1}{3} > \\frac{1}{4}$"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 320,
+     "items": [
+      {
+       "t": "text",
+       "p": [
+        136,
+        48.0
+       ],
+       "v": "1",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         20
+        ],
+        [
+         580.0,
+         20
+        ],
+        [
+         580.0,
+         64
+        ],
+        [
+         150.0,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        106.0
+       ],
+       "v": "1/2",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         78
+        ],
+        [
+         365.0,
+         78
+        ],
+        [
+         365.0,
+         122
+        ],
+        [
+         150.0,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         78
+        ],
+        [
+         580.0,
+         78
+        ],
+        [
+         580.0,
+         122
+        ],
+        [
+         365.0,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        164.0
+       ],
+       "v": "1/3",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         136
+        ],
+        [
+         293.3,
+         136
+        ],
+        [
+         293.3,
+         180
+        ],
+        [
+         150.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         293.3,
+         136
+        ],
+        [
+         436.7,
+         136
+        ],
+        [
+         436.7,
+         180
+        ],
+        [
+         293.3,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         436.7,
+         136
+        ],
+        [
+         580.0,
+         136
+        ],
+        [
+         580.0,
+         180
+        ],
+        [
+         436.7,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        222.0
+       ],
+       "v": "1/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         194
+        ],
+        [
+         257.5,
+         194
+        ],
+        [
+         257.5,
+         238
+        ],
+        [
+         150.0,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         194
+        ],
+        [
+         365.0,
+         194
+        ],
+        [
+         365.0,
+         238
+        ],
+        [
+         257.5,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         194
+        ],
+        [
+         472.5,
+         194
+        ],
+        [
+         472.5,
+         238
+        ],
+        [
+         365.0,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         194
+        ],
+        [
+         580.0,
+         194
+        ],
+        [
+         580.0,
+         238
+        ],
+        [
+         472.5,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        280.0
+       ],
+       "v": "1/6",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         252
+        ],
+        [
+         221.7,
+         252
+        ],
+        [
+         221.7,
+         296
+        ],
+        [
+         150.0,
+         296
+        ]
+       ],
+       "fill": "orange"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         221.7,
+         252
+        ],
+        [
+         293.3,
+         252
+        ],
+        [
+         293.3,
+         296
+        ],
+        [
+         221.7,
+         296
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         293.3,
+         252
+        ],
+        [
+         365.0,
+         252
+        ],
+        [
+         365.0,
+         296
+        ],
+        [
+         293.3,
+         296
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         252
+        ],
+        [
+         436.7,
+         252
+        ],
+        [
+         436.7,
+         296
+        ],
+        [
+         365.0,
+         296
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         436.7,
+         252
+        ],
+        [
+         508.3,
+         252
+        ],
+        [
+         508.3,
+         296
+        ],
+        [
+         436.7,
+         296
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         508.3,
+         252
+        ],
+        [
+         580.0,
+         252
+        ],
+        [
+         580.0,
+         296
+        ],
+        [
+         508.3,
+         296
+        ]
+       ],
+       "fill": "none"
+      }
+     ],
+     "caption": "The same whole cut into 1, 2, 3, 4 and 6 equal parts. One part is shaded in each row."
+    },
+    "examples": [
+     {
+      "question": "A class has $30$ students and $13$ are girls. What fraction of the class are boys?",
+      "steps": [
+       "Boys $= 30 - 13 = 17$",
+       "Fraction $= \\frac{\\text{boys}}{\\text{all students}} = \\frac{17}{30}$"
+      ],
+      "result": "$\\frac{17}{30}$",
+      "type": "Fraction of a group"
+     },
+     {
+      "question": "Write $5 \\div 8$ as a fraction. What does it mean?",
+      "steps": [
+       "$5 \\div 8 = \\frac{5}{8}$",
+       "If $5$ cakes are shared equally by $8$ children, each child gets $\\frac{5}{8}$ of a cake."
+      ],
+      "result": "$\\frac{5}{8}$",
+      "type": "Fraction as division"
+     },
+     {
+      "question": "Which is bigger, $\\frac{1}{6}$ or $\\frac{1}{9}$?",
+      "steps": [
+       "The whole is cut into $6$ parts for $\\frac{1}{6}$ and into $9$ parts for $\\frac{1}{9}$.",
+       "Fewer parts are bigger parts."
+      ],
+      "result": "$\\frac{1}{6} > \\frac{1}{9}$",
+      "type": "Unit fractions"
+     }
+    ]
+   },
+   {
+    "title": "Proper, improper and mixed fractions",
+    "level": "board",
+    "introduction": "You eat $3$ quarters of one pizza, and that is less than a whole: $\\frac{3}{4}$. Your family eats $7$ quarters, which is one full pizza and $3$ quarters more: $\\frac{7}{4} = 1\\frac{3}{4}$. Both forms are correct. They name the same amount in two ways.",
+    "formulas": [
+     "Proper fraction: numerator $<$ denominator, value $< 1$",
+     "Improper fraction: numerator $\\ge$ denominator, value $\\ge 1$",
+     "$\\frac{17}{5} = 3\\frac{2}{5}$ because $17 \\div 5 = 3$ remainder $2$",
+     "$2\\frac{3}{4} = \\frac{2 \\times 4 + 3}{4} = \\frac{11}{4}$",
+     "Like fractions have the same denominator: $\\frac{2}{7}, \\frac{5}{7}$"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 230,
+     "items": [
+      {
+       "t": "line",
+       "p": [
+        40,
+        120,
+        600,
+        120
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        60.0,
+        104,
+        60.0,
+        136
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        102.5,
+        110,
+        102.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        145.0,
+        110,
+        145.0,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        187.5,
+        110,
+        187.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        230.0,
+        104,
+        230.0,
+        136
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        272.5,
+        110,
+        272.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        315.0,
+        110,
+        315.0,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        357.5,
+        110,
+        357.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        400.0,
+        104,
+        400.0,
+        136
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        442.5,
+        110,
+        442.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        485.0,
+        110,
+        485.0,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        527.5,
+        110,
+        527.5,
+        130
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        570.0,
+        104,
+        570.0,
+        136
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        60,
+        165
+       ],
+       "v": "0",
+       "size": "l"
+      },
+      {
+       "t": "text",
+       "p": [
+        230,
+        165
+       ],
+       "v": "1",
+       "size": "l"
+      },
+      {
+       "t": "text",
+       "p": [
+        400,
+        165
+       ],
+       "v": "2",
+       "size": "l"
+      },
+      {
+       "t": "text",
+       "p": [
+        570,
+        165
+       ],
+       "v": "3",
+       "size": "l"
+      },
+      {
+       "t": "dot",
+       "p": [
+        187.5,
+        120
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        187.5,
+        90
+       ],
+       "v": "3/4"
+      },
+      {
+       "t": "dot",
+       "p": [
+        357.5,
+        120
+       ],
+       "gold": true
+      },
+      {
+       "t": "text",
+       "p": [
+        357.5,
+        90
+       ],
+       "v": "7/4 = 1 3/4"
+      },
+      {
+       "t": "dot",
+       "p": [
+        485.0,
+        120
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        485.0,
+        90
+       ],
+       "v": "5/2 = 2 1/2"
+      },
+      {
+       "t": "text",
+       "p": [
+        320,
+        210
+       ],
+       "v": "each small gap = 1/4",
+       "size": "s"
+      }
+     ],
+     "caption": "Each unit is cut into quarters. 7/4 = 1 3/4 is 3 quarters past 1."
+    },
+    "examples": [
+     {
+      "question": "Write $\\frac{23}{6}$ as a mixed number.",
+      "steps": [
+       "$23 \\div 6 = 3$ remainder $5$",
+       "So $\\frac{23}{6} = 3\\frac{5}{6}$"
+      ],
+      "result": "$3\\frac{5}{6}$",
+      "use": [
+       "\\frac{17}{5} = 3\\frac{2}{5}"
+      ],
+      "type": "Improper to mixed"
+     },
+     {
+      "question": "Write $4\\frac{2}{7}$ as an improper fraction.",
+      "steps": [
+       "$4\\frac{2}{7} = \\frac{4 \\times 7 + 2}{7}$",
+       "$= \\frac{30}{7}$"
+      ],
+      "result": "$\\frac{30}{7}$",
+      "type": "Mixed to improper"
+     },
+     {
+      "question": "Sort into proper and improper: $\\frac{5}{9}, \\frac{9}{5}, \\frac{7}{7}, \\frac{2}{11}$.",
+      "steps": [
+       "Proper (top $<$ bottom): $\\frac{5}{9}, \\frac{2}{11}$",
+       "Improper (top $\\ge$ bottom): $\\frac{9}{5}, \\frac{7}{7}$"
+      ],
+      "result": "Proper: $\\frac{5}{9}, \\frac{2}{11}$. Improper: $\\frac{9}{5}, \\frac{7}{7}$",
+      "type": "Kinds"
+     }
+    ]
+   },
+   {
+    "title": "Equivalent fractions and simplest form",
+    "level": "board",
+    "introduction": "Cut a chocolate bar into $2$ pieces and take $1$. Now cut the same bar into $4$ pieces and take $2$. You have the same amount of chocolate. So $\\frac{1}{2} = \\frac{2}{4}$. Fractions with different names but the same value are equivalent.",
+    "formulas": [
+     "$\\frac{a}{b} = \\frac{a \\times n}{b \\times n} = \\frac{a \\div n}{b \\div n}$, $n \\ne 0$",
+     "Simplest form: the numerator and denominator have no common factor except $1$",
+     "Divide the top and bottom by their HCF in one step"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 204,
+     "items": [
+      {
+       "t": "text",
+       "p": [
+        136,
+        48.0
+       ],
+       "v": "1/2",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         20
+        ],
+        [
+         365.0,
+         20
+        ],
+        [
+         365.0,
+         64
+        ],
+        [
+         150.0,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         20
+        ],
+        [
+         580.0,
+         20
+        ],
+        [
+         580.0,
+         64
+        ],
+        [
+         365.0,
+         64
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        106.0
+       ],
+       "v": "2/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         78
+        ],
+        [
+         257.5,
+         78
+        ],
+        [
+         257.5,
+         122
+        ],
+        [
+         150.0,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         78
+        ],
+        [
+         365.0,
+         78
+        ],
+        [
+         365.0,
+         122
+        ],
+        [
+         257.5,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         78
+        ],
+        [
+         472.5,
+         78
+        ],
+        [
+         472.5,
+         122
+        ],
+        [
+         365.0,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         78
+        ],
+        [
+         580.0,
+         78
+        ],
+        [
+         580.0,
+         122
+        ],
+        [
+         472.5,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        164.0
+       ],
+       "v": "4/8",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         136
+        ],
+        [
+         203.8,
+         136
+        ],
+        [
+         203.8,
+         180
+        ],
+        [
+         150.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         203.8,
+         136
+        ],
+        [
+         257.5,
+         136
+        ],
+        [
+         257.5,
+         180
+        ],
+        [
+         203.8,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         136
+        ],
+        [
+         311.2,
+         136
+        ],
+        [
+         311.2,
+         180
+        ],
+        [
+         257.5,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         311.2,
+         136
+        ],
+        [
+         365.0,
+         136
+        ],
+        [
+         365.0,
+         180
+        ],
+        [
+         311.2,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         136
+        ],
+        [
+         418.8,
+         136
+        ],
+        [
+         418.8,
+         180
+        ],
+        [
+         365.0,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         418.8,
+         136
+        ],
+        [
+         472.5,
+         136
+        ],
+        [
+         472.5,
+         180
+        ],
+        [
+         418.8,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         136
+        ],
+        [
+         526.2,
+         136
+        ],
+        [
+         526.2,
+         180
+        ],
+        [
+         472.5,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         526.2,
+         136
+        ],
+        [
+         580.0,
+         136
+        ],
+        [
+         580.0,
+         180
+        ],
+        [
+         526.2,
+         180
+        ]
+       ],
+       "fill": "none"
+      }
+     ],
+     "caption": "1/2, 2/4 and 4/8 cover the same length: they are equivalent."
+    },
+    "examples": [
+     {
+      "question": "Write three fractions equivalent to $\\frac{2}{5}$.",
+      "steps": [
+       "Multiply the top and bottom by $2$, $3$ and $4$.",
+       "$\\frac{4}{10}, \\frac{6}{15}, \\frac{8}{20}$"
+      ],
+      "result": "$\\frac{4}{10}, \\frac{6}{15}, \\frac{8}{20}$",
+      "type": "Equivalent"
+     },
+     {
+      "question": "Write $\\frac{42}{56}$ in its simplest form.",
+      "steps": [
+       "HCF of $42$ and $56$ is $14$.",
+       "$\\frac{42 \\div 14}{56 \\div 14} = \\frac{3}{4}$"
+      ],
+      "result": "$\\frac{3}{4}$",
+      "use": [
+       "\\frac{a}{b} = \\frac{a \\div n}{b \\div n}"
+      ],
+      "type": "Simplest form"
+     },
+     {
+      "question": "Find the missing number: $\\frac{5}{8} = \\frac{\\square}{40}$.",
+      "steps": [
+       "$8 \\times 5 = 40$, so the bottom was multiplied by $5$.",
+       "Multiply the top by $5$ too: $5 \\times 5 = 25$"
+      ],
+      "result": "$25$",
+      "type": "Missing number"
+     }
+    ]
+   },
+   {
+    "title": "Comparing and ordering fractions",
+    "level": "board",
+    "introduction": "Riya ate $\\frac{3}{4}$ of her sandwich and Arjun ate $\\frac{2}{3}$ of his. Who ate more? Quarters and thirds are different sizes, so we cannot compare $3$ and $2$ directly. Cut both into twelfths: $\\frac{9}{12}$ and $\\frac{8}{12}$. Now it is clear that Riya ate more.",
+    "formulas": [
+     "Same denominator: the bigger numerator is bigger",
+     "Same numerator: the smaller denominator is bigger",
+     "Different both: change to the LCM of the denominators",
+     "Cross-multiply: $\\frac{a}{b} > \\frac{c}{d}$ when $a \\times d > b \\times c$"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 262,
+     "items": [
+      {
+       "t": "text",
+       "p": [
+        136,
+        48.0
+       ],
+       "v": "3/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         20
+        ],
+        [
+         257.5,
+         20
+        ],
+        [
+         257.5,
+         64
+        ],
+        [
+         150.0,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         20
+        ],
+        [
+         365.0,
+         20
+        ],
+        [
+         365.0,
+         64
+        ],
+        [
+         257.5,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         20
+        ],
+        [
+         472.5,
+         20
+        ],
+        [
+         472.5,
+         64
+        ],
+        [
+         365.0,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         20
+        ],
+        [
+         580.0,
+         20
+        ],
+        [
+         580.0,
+         64
+        ],
+        [
+         472.5,
+         64
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        106.0
+       ],
+       "v": "2/3",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         78
+        ],
+        [
+         293.3,
+         78
+        ],
+        [
+         293.3,
+         122
+        ],
+        [
+         150.0,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         293.3,
+         78
+        ],
+        [
+         436.7,
+         78
+        ],
+        [
+         436.7,
+         122
+        ],
+        [
+         293.3,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         436.7,
+         78
+        ],
+        [
+         580.0,
+         78
+        ],
+        [
+         580.0,
+         122
+        ],
+        [
+         436.7,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        164.0
+       ],
+       "v": "9/12",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         136
+        ],
+        [
+         185.8,
+         136
+        ],
+        [
+         185.8,
+         180
+        ],
+        [
+         150.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         185.8,
+         136
+        ],
+        [
+         221.7,
+         136
+        ],
+        [
+         221.7,
+         180
+        ],
+        [
+         185.8,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         221.7,
+         136
+        ],
+        [
+         257.5,
+         136
+        ],
+        [
+         257.5,
+         180
+        ],
+        [
+         221.7,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         136
+        ],
+        [
+         293.3,
+         136
+        ],
+        [
+         293.3,
+         180
+        ],
+        [
+         257.5,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         293.3,
+         136
+        ],
+        [
+         329.2,
+         136
+        ],
+        [
+         329.2,
+         180
+        ],
+        [
+         293.3,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         329.2,
+         136
+        ],
+        [
+         365.0,
+         136
+        ],
+        [
+         365.0,
+         180
+        ],
+        [
+         329.2,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         136
+        ],
+        [
+         400.8,
+         136
+        ],
+        [
+         400.8,
+         180
+        ],
+        [
+         365.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         400.8,
+         136
+        ],
+        [
+         436.7,
+         136
+        ],
+        [
+         436.7,
+         180
+        ],
+        [
+         400.8,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         436.7,
+         136
+        ],
+        [
+         472.5,
+         136
+        ],
+        [
+         472.5,
+         180
+        ],
+        [
+         436.7,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         136
+        ],
+        [
+         508.3,
+         136
+        ],
+        [
+         508.3,
+         180
+        ],
+        [
+         472.5,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         508.3,
+         136
+        ],
+        [
+         544.2,
+         136
+        ],
+        [
+         544.2,
+         180
+        ],
+        [
+         508.3,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         544.2,
+         136
+        ],
+        [
+         580.0,
+         136
+        ],
+        [
+         580.0,
+         180
+        ],
+        [
+         544.2,
+         180
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        222.0
+       ],
+       "v": "8/12",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         194
+        ],
+        [
+         185.8,
+         194
+        ],
+        [
+         185.8,
+         238
+        ],
+        [
+         150.0,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         185.8,
+         194
+        ],
+        [
+         221.7,
+         194
+        ],
+        [
+         221.7,
+         238
+        ],
+        [
+         185.8,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         221.7,
+         194
+        ],
+        [
+         257.5,
+         194
+        ],
+        [
+         257.5,
+         238
+        ],
+        [
+         221.7,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         194
+        ],
+        [
+         293.3,
+         194
+        ],
+        [
+         293.3,
+         238
+        ],
+        [
+         257.5,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         293.3,
+         194
+        ],
+        [
+         329.2,
+         194
+        ],
+        [
+         329.2,
+         238
+        ],
+        [
+         293.3,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         329.2,
+         194
+        ],
+        [
+         365.0,
+         194
+        ],
+        [
+         365.0,
+         238
+        ],
+        [
+         329.2,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         194
+        ],
+        [
+         400.8,
+         194
+        ],
+        [
+         400.8,
+         238
+        ],
+        [
+         365.0,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         400.8,
+         194
+        ],
+        [
+         436.7,
+         194
+        ],
+        [
+         436.7,
+         238
+        ],
+        [
+         400.8,
+         238
+        ]
+       ],
+       "fill": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         436.7,
+         194
+        ],
+        [
+         472.5,
+         194
+        ],
+        [
+         472.5,
+         238
+        ],
+        [
+         436.7,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         194
+        ],
+        [
+         508.3,
+         194
+        ],
+        [
+         508.3,
+         238
+        ],
+        [
+         472.5,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         508.3,
+         194
+        ],
+        [
+         544.2,
+         194
+        ],
+        [
+         544.2,
+         238
+        ],
+        [
+         508.3,
+         238
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         544.2,
+         194
+        ],
+        [
+         580.0,
+         194
+        ],
+        [
+         580.0,
+         238
+        ],
+        [
+         544.2,
+         238
+        ]
+       ],
+       "fill": "none"
+      }
+     ],
+     "caption": "3/4 = 9/12 and 2/3 = 8/12, so 3/4 is bigger."
+    },
+    "examples": [
+     {
+      "question": "Which is bigger, $\\frac{5}{8}$ or $\\frac{7}{12}$?",
+      "steps": [
+       "LCM of $8$ and $12$ is $24$.",
+       "$\\frac{5}{8} = \\frac{15}{24}$ and $\\frac{7}{12} = \\frac{14}{24}$",
+       "$15 > 14$"
+      ],
+      "result": "$\\frac{5}{8} > \\frac{7}{12}$",
+      "type": "Compare"
+     },
+     {
+      "question": "Which is bigger, $\\frac{4}{7}$ or $\\frac{4}{9}$?",
+      "steps": [
+       "The numerators are the same.",
+       "Sevenths are bigger pieces than ninths."
+      ],
+      "result": "$\\frac{4}{7} > \\frac{4}{9}$",
+      "type": "Same numerator"
+     },
+     {
+      "question": "Arrange in ascending order: $\\frac{2}{3}, \\frac{5}{6}, \\frac{3}{4}, \\frac{7}{12}$.",
+      "steps": [
+       "Use denominator $12$: $\\frac{8}{12}, \\frac{10}{12}, \\frac{9}{12}, \\frac{7}{12}$",
+       "Order the numerators: $7 < 8 < 9 < 10$"
+      ],
+      "result": "$\\frac{7}{12} < \\frac{2}{3} < \\frac{3}{4} < \\frac{5}{6}$",
+      "type": "Order"
+     }
+    ]
+   },
+   {
+    "title": "Adding and subtracting fractions",
+    "level": "board",
+    "introduction": "You walk $\\frac{1}{2}$ km to the bus stop and then $\\frac{1}{4}$ km more. How far did you walk? Halves and quarters are different pieces, so change the half into quarters first: $\\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}$ km. We add the pieces, never the denominators.",
+    "formulas": [
+     "$\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$ and $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$",
+     "Different denominators: change both to the LCM",
+     "Mixed numbers: add the whole numbers and the fractions, or change to improper fractions"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 204,
+     "items": [
+      {
+       "t": "text",
+       "p": [
+        136,
+        48.0
+       ],
+       "v": "1/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         20
+        ],
+        [
+         257.5,
+         20
+        ],
+        [
+         257.5,
+         64
+        ],
+        [
+         150.0,
+         64
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         20
+        ],
+        [
+         365.0,
+         20
+        ],
+        [
+         365.0,
+         64
+        ],
+        [
+         257.5,
+         64
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         20
+        ],
+        [
+         472.5,
+         20
+        ],
+        [
+         472.5,
+         64
+        ],
+        [
+         365.0,
+         64
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         20
+        ],
+        [
+         580.0,
+         20
+        ],
+        [
+         580.0,
+         64
+        ],
+        [
+         472.5,
+         64
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        106.0
+       ],
+       "v": "2/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         78
+        ],
+        [
+         257.5,
+         78
+        ],
+        [
+         257.5,
+         122
+        ],
+        [
+         150.0,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         78
+        ],
+        [
+         365.0,
+         78
+        ],
+        [
+         365.0,
+         122
+        ],
+        [
+         257.5,
+         122
+        ]
+       ],
+       "fill": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         78
+        ],
+        [
+         472.5,
+         78
+        ],
+        [
+         472.5,
+         122
+        ],
+        [
+         365.0,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         78
+        ],
+        [
+         580.0,
+         78
+        ],
+        [
+         580.0,
+         122
+        ],
+        [
+         472.5,
+         122
+        ]
+       ],
+       "fill": "none"
+      },
+      {
+       "t": "text",
+       "p": [
+        136,
+        164.0
+       ],
+       "v": "sum 3/4",
+       "anchor": "end"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         150.0,
+         136
+        ],
+        [
+         257.5,
+         136
+        ],
+        [
+         257.5,
+         180
+        ],
+        [
+         150.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         257.5,
+         136
+        ],
+        [
+         365.0,
+         136
+        ],
+        [
+         365.0,
+         180
+        ],
+        [
+         257.5,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         365.0,
+         136
+        ],
+        [
+         472.5,
+         136
+        ],
+        [
+         472.5,
+         180
+        ],
+        [
+         365.0,
+         180
+        ]
+       ],
+       "fill": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         472.5,
+         136
+        ],
+        [
+         580.0,
+         136
+        ],
+        [
+         580.0,
+         180
+        ],
+        [
+         472.5,
+         180
+        ]
+       ],
+       "fill": "none"
+      }
+     ],
+     "caption": "1/4 + 2/4 = 3/4."
+    },
+    "examples": [
+     {
+      "question": "Find $\\frac{5}{6} + \\frac{3}{8}$.",
+      "steps": [
+       "LCM of $6$ and $8$ is $24$.",
+       "$\\frac{20}{24} + \\frac{9}{24} = \\frac{29}{24}$",
+       "$= 1\\frac{5}{24}$"
+      ],
+      "result": "$1\\frac{5}{24}$",
+      "use": [
+       "\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}"
+      ],
+      "type": "Add"
+     },
+     {
+      "question": "Find $4\\frac{1}{3} - 1\\frac{3}{4}$.",
+      "steps": [
+       "$\\frac{13}{3} - \\frac{7}{4}$",
+       "$= \\frac{52}{12} - \\frac{21}{12} = \\frac{31}{12}$",
+       "$= 2\\frac{7}{12}$"
+      ],
+      "result": "$2\\frac{7}{12}$",
+      "type": "Subtract mixed"
+     },
+     {
+      "question": "A tank was $\\frac{7}{8}$ full. Then $\\frac{1}{3}$ of the tank was used. What part of the tank is full now?",
+      "steps": [
+       "$\\frac{7}{8} - \\frac{1}{3} = \\frac{21}{24} - \\frac{8}{24}$",
+       "$= \\frac{13}{24}$"
+      ],
+      "result": "$\\frac{13}{24}$ of the tank",
+      "type": "Word problem"
+     }
+    ]
+   },
+   {
+    "title": "Multiplying fractions",
+    "level": "board",
+    "introduction": "A recipe needs $\\frac{3}{4}$ cup of milk, but you make only $\\frac{2}{3}$ of the recipe. You need $\\frac{2}{3}$ of $\\frac{3}{4}$ cup. In mathematics, \"of\" means multiply. On a grid, $\\frac{2}{3}$ of $\\frac{3}{4}$ covers $6$ boxes out of $12$, which is $\\frac{1}{2}$ cup.",
+    "formulas": [
+     "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
+     "$\\frac{a}{b}$ of a quantity $= \\frac{a}{b} \\times$ the quantity",
+     "Cancel common factors before you multiply",
+     "Multiplying by a proper fraction makes a number smaller"
+    ],
+    "picture": {
+     "kind": "area",
+     "rows": 3,
+     "cols": 4,
+     "shadeRows": 2,
+     "shadeCols": 3,
+     "label": "2/3 × 3/4 = 6/12",
+     "caption": "Take 3/4 of the columns and 2/3 of the rows. The gold boxes are in both: 6 out of 12, which is 1/2."
+    },
+    "examples": [
+     {
+      "question": "Find $\\frac{2}{3}$ of ₹$360$.",
+      "steps": [
+       "$\\frac{1}{3}$ of $360 = 120$",
+       "$\\frac{2}{3}$ of $360 = 2 \\times 120 = 240$"
+      ],
+      "result": "₹$240$",
+      "use": [
+       "\\frac{a}{b}\\text{ of a quantity} = \\frac{a}{b} \\times \\text{quantity}"
+      ],
+      "type": "Fraction of a quantity"
+     },
+     {
+      "question": "Find $\\frac{9}{14} \\times \\frac{7}{12}$.",
+      "steps": [
+       "Cancel $7$ with $14$: $\\frac{9}{2} \\times \\frac{1}{12}$",
+       "Cancel $3$ from $9$ and $12$: $\\frac{3}{2} \\times \\frac{1}{4} = \\frac{3}{8}$"
+      ],
+      "result": "$\\frac{3}{8}$",
+      "type": "Cancel first"
+     },
+     {
+      "question": "Find $2\\frac{1}{4} \\times 1\\frac{1}{3}$.",
+      "steps": [
+       "$\\frac{9}{4} \\times \\frac{4}{3}$",
+       "Cancel: $\\frac{3}{1} \\times \\frac{1}{1} = 3$"
+      ],
+      "result": "$3$",
+      "type": "Mixed numbers"
+     }
+    ]
+   },
+   {
+    "title": "Dividing fractions",
+    "level": "board",
+    "introduction": "You have $3$ m of ribbon and cut pieces of $\\frac{3}{4}$ m. How many pieces do you get? Count the jumps of $\\frac{3}{4}$ from $0$ to $3$ on a number line: there are $4$. So $3 \\div \\frac{3}{4} = 4$. Dividing by a fraction is the same as multiplying by its reciprocal.",
+    "formulas": [
+     "Reciprocal of $\\frac{a}{b}$ is $\\frac{b}{a}$; a number times its reciprocal is $1$",
+     "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$",
+     "$0$ has no reciprocal, so we never divide by $0$",
+     "Dividing by a proper fraction makes a number bigger"
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 200,
+     "items": [
+      {
+       "t": "line",
+       "p": [
+        45,
+        150,
+        595,
+        150
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        60.0,
+        140,
+        60.0,
+        160
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        60.0,
+        182
+       ],
+       "v": "0"
+      },
+      {
+       "t": "line",
+       "p": [
+        103.3,
+        144,
+        103.3,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        146.7,
+        144,
+        146.7,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        190.0,
+        144,
+        190.0,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        233.3,
+        140,
+        233.3,
+        160
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        233.3,
+        182
+       ],
+       "v": "1"
+      },
+      {
+       "t": "line",
+       "p": [
+        276.7,
+        144,
+        276.7,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        320.0,
+        144,
+        320.0,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        363.3,
+        144,
+        363.3,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        406.7,
+        140,
+        406.7,
+        160
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        406.7,
+        182
+       ],
+       "v": "2"
+      },
+      {
+       "t": "line",
+       "p": [
+        450.0,
+        144,
+        450.0,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        493.3,
+        144,
+        493.3,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        536.7,
+        144,
+        536.7,
+        156
+       ]
+      },
+      {
+       "t": "line",
+       "p": [
+        580.0,
+        140,
+        580.0,
+        160
+       ]
+      },
+      {
+       "t": "text",
+       "p": [
+        580.0,
+        182
+       ],
+       "v": "3"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         60.0,
+         150.0
+        ],
+        [
+         69.3,
+         135.4
+        ],
+        [
+         78.6,
+         123.1
+        ],
+        [
+         87.9,
+         113.0
+        ],
+        [
+         97.1,
+         105.1
+        ],
+        [
+         106.4,
+         99.5
+        ],
+        [
+         115.7,
+         96.1
+        ],
+        [
+         125.0,
+         95.0
+        ],
+        [
+         134.3,
+         96.1
+        ],
+        [
+         143.6,
+         99.5
+        ],
+        [
+         152.9,
+         105.1
+        ],
+        [
+         162.1,
+         113.0
+        ],
+        [
+         171.4,
+         123.1
+        ],
+        [
+         180.7,
+         135.4
+        ],
+        [
+         190.0,
+         150.0
+        ]
+       ],
+       "open": true
+      },
+      {
+       "t": "text",
+       "p": [
+        125.0,
+        88
+       ],
+       "v": "3/4",
+       "color": "coral"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         190.0,
+         150.0
+        ],
+        [
+         199.3,
+         135.4
+        ],
+        [
+         208.6,
+         123.1
+        ],
+        [
+         217.9,
+         113.0
+        ],
+        [
+         227.1,
+         105.1
+        ],
+        [
+         236.4,
+         99.5
+        ],
+        [
+         245.7,
+         96.1
+        ],
+        [
+         255.0,
+         95.0
+        ],
+        [
+         264.3,
+         96.1
+        ],
+        [
+         273.6,
+         99.5
+        ],
+        [
+         282.9,
+         105.1
+        ],
+        [
+         292.1,
+         113.0
+        ],
+        [
+         301.4,
+         123.1
+        ],
+        [
+         310.7,
+         135.4
+        ],
+        [
+         320.0,
+         150.0
+        ]
+       ],
+       "open": true
+      },
+      {
+       "t": "text",
+       "p": [
+        255.0,
+        88
+       ],
+       "v": "3/4",
+       "color": "green"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         320.0,
+         150.0
+        ],
+        [
+         329.3,
+         135.4
+        ],
+        [
+         338.6,
+         123.1
+        ],
+        [
+         347.9,
+         113.0
+        ],
+        [
+         357.1,
+         105.1
+        ],
+        [
+         366.4,
+         99.5
+        ],
+        [
+         375.7,
+         96.1
+        ],
+        [
+         385.0,
+         95.0
+        ],
+        [
+         394.3,
+         96.1
+        ],
+        [
+         403.6,
+         99.5
+        ],
+        [
+         412.9,
+         105.1
+        ],
+        [
+         422.1,
+         113.0
+        ],
+        [
+         431.4,
+         123.1
+        ],
+        [
+         440.7,
+         135.4
+        ],
+        [
+         450.0,
+         150.0
+        ]
+       ],
+       "open": true
+      },
+      {
+       "t": "text",
+       "p": [
+        385.0,
+        88
+       ],
+       "v": "3/4",
+       "color": "purple"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         450.0,
+         150.0
+        ],
+        [
+         459.3,
+         135.4
+        ],
+        [
+         468.6,
+         123.1
+        ],
+        [
+         477.9,
+         113.0
+        ],
+        [
+         487.1,
+         105.1
+        ],
+        [
+         496.4,
+         99.5
+        ],
+        [
+         505.7,
+         96.1
+        ],
+        [
+         515.0,
+         95.0
+        ],
+        [
+         524.3,
+         96.1
+        ],
+        [
+         533.6,
+         99.5
+        ],
+        [
+         542.9,
+         105.1
+        ],
+        [
+         552.1,
+         113.0
+        ],
+        [
+         561.4,
+         123.1
+        ],
+        [
+         570.7,
+         135.4
+        ],
+        [
+         580.0,
+         150.0
+        ]
+       ],
+       "open": true
+      },
+      {
+       "t": "text",
+       "p": [
+        515.0,
+        88
+       ],
+       "v": "3/4",
+       "color": "orange"
+      }
+     ],
+     "caption": "Jumps of 3/4 from 0 to 3: there are 4 jumps, so 3 ÷ 3/4 = 4."
+    },
+    "examples": [
+     {
+      "question": "Find $\\frac{5}{6} \\div \\frac{10}{9}$.",
+      "steps": [
+       "$\\frac{5}{6} \\times \\frac{9}{10}$",
+       "Cancel: $\\frac{1}{2} \\times \\frac{3}{2} = \\frac{3}{4}$"
+      ],
+      "result": "$\\frac{3}{4}$",
+      "use": [
+       "\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}"
+      ],
+      "type": "Divide"
+     },
+     {
+      "question": "Find $3\\frac{3}{4} \\div 1\\frac{1}{4}$.",
+      "steps": [
+       "$\\frac{15}{4} \\div \\frac{5}{4} = \\frac{15}{4} \\times \\frac{4}{5}$",
+       "$= 3$"
+      ],
+      "result": "$3$",
+      "type": "Mixed numbers"
+     },
+     {
+      "question": "How many $\\frac{2}{5}$ L bottles can be filled from $6$ L of juice?",
+      "steps": [
+       "$6 \\div \\frac{2}{5} = 6 \\times \\frac{5}{2}$",
+       "$= 15$"
+      ],
+      "result": "$15$ bottles",
+      "type": "Word problem"
+     }
+    ]
+   },
+   {
+    "title": "Fraction word problems",
+    "level": "challenge",
+    "introduction": "Ravi gets his pocket money. He spends $\\frac{1}{3}$ on books and $\\frac{1}{4}$ of the rest on snacks. Long sentences like this become easy with a bar: draw the money as one bar, cut it, and colour each part as you read.",
+    "formulas": [
+     "\"of the rest\": first find what is left, then take the fraction of that",
+     "Part known: whole $=$ part $\\div$ fraction",
+     "Check: all the parts must add up to the whole"
+    ],
+    "picture": {
+     "kind": "fraction",
+     "rows": [
+      {
+       "parts": 3,
+       "shaded": 1,
+       "label": "Books 1/3"
+      },
+      {
+       "parts": 6,
+       "shaded": 1,
+       "label": "Snacks 1/6",
+       "gold": true
+      },
+      {
+       "parts": 2,
+       "shaded": 1,
+       "label": "Left 1/2"
+      }
+     ],
+     "caption": "After 1/3, the rest is 2/3. 1/4 of 2/3 is 1/6. Money left = 1 − 1/3 − 1/6 = 1/2."
+    },
+    "examples": [
+     {
+      "question": "Ravi spends $\\frac{1}{3}$ of his money on books and $\\frac{1}{4}$ of the rest on snacks. He has ₹$180$ left. How much did he have?",
+      "steps": [
+       "Rest after books $= \\frac{2}{3}$",
+       "Snacks $= \\frac{1}{4} \\times \\frac{2}{3} = \\frac{1}{6}$",
+       "Left $= 1 - \\frac{1}{3} - \\frac{1}{6} = \\frac{1}{2}$",
+       "$\\frac{1}{2}$ of the money $= 180$, so the money $= 360$"
+      ],
+      "result": "₹$360$",
+      "type": "Fraction of the rest"
+     },
+     {
+      "question": "$\\frac{3}{5}$ of a number is $36$. Find $\\frac{5}{6}$ of the number.",
+      "steps": [
+       "Number $= 36 \\div \\frac{3}{5} = 36 \\times \\frac{5}{3} = 60$",
+       "$\\frac{5}{6} \\times 60 = 50$"
+      ],
+      "result": "$50$",
+      "type": "Work backwards"
+     },
+     {
+      "question": "A pipe fills $\\frac{1}{4}$ of a tank in one hour. Another pipe fills $\\frac{1}{6}$ of it in one hour. With both open, how long does the empty tank take to fill?",
+      "steps": [
+       "In one hour: $\\frac{1}{4} + \\frac{1}{6} = \\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}$",
+       "Time $= 1 \\div \\frac{5}{12} = \\frac{12}{5}$ hours",
+       "$= 2\\frac{2}{5}$ hours $= 2$ hours $24$ minutes"
+      ],
+      "result": "$2$ hours $24$ minutes",
+      "type": "Two pipes"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,6662 @@
+[
+ {
+  "chapter": 1,
+  "title": "Knowing Our Numbers",
+  "questions": [
+   {
+    "prompt": "The place value of $7$ in $5{,}47{,}82{,}316$ is",
+    "options": [
+     "$70{,}000$",
+     "$7{,}000$",
+     "$7{,}00{,}000$",
+     "$7$"
+    ],
+    "answer": 2,
+    "solution": "$7$ is in the lakhs place.",
+    "topic": "Place value"
+   },
+   {
+    "prompt": "In the Indian system, $45{,}382{,}019$ is written",
+    "options": [
+     "$45{,}38{,}20{,}19$",
+     "$453{,}82{,}019$",
+     "$4{,}53{,}82{,}019$",
+     "$4{,}538{,}2019$"
+    ],
+    "answer": 2,
+    "solution": "Group from the right: $3$ digits, then $2$, then $2$.",
+    "topic": "Indian and International"
+   },
+   {
+    "prompt": "One million is equal to",
+    "options": [
+     "$10$ lakh",
+     "$1$ crore",
+     "$1$ lakh",
+     "$100$ lakh"
+    ],
+    "answer": 0,
+    "solution": "$1{,}000{,}000 = 10{,}00{,}000$.",
+    "topic": "Indian and International"
+   },
+   {
+    "prompt": "One crore is equal to",
+    "options": [
+     "$10$ million",
+     "$1$ billion",
+     "$1$ million",
+     "$100$ million"
+    ],
+    "answer": 0,
+    "solution": "$1{,}00{,}00{,}000 = 10{,}000{,}000$.",
+    "topic": "Indian and International"
+   },
+   {
+    "prompt": "The greatest $6$-digit number is",
+    "options": [
+     "$99{,}999$",
+     "$10{,}00{,}000$",
+     "$9{,}99{,}999$",
+     "$9{,}99{,}990$"
+    ],
+    "answer": 2,
+    "solution": "All six digits are $9$.",
+    "topic": "Greatest and smallest"
+   },
+   {
+    "prompt": "The smallest $7$-digit number is",
+    "options": [
+     "$11{,}11{,}111$",
+     "$9{,}99{,}999$",
+     "$10{,}00{,}000$",
+     "$1{,}00{,}000$"
+    ],
+    "answer": 2,
+    "solution": "$1$ followed by six zeros.",
+    "topic": "Greatest and smallest"
+   },
+   {
+    "prompt": "The ascending order of $4{,}56{,}789$, $4{,}65{,}789$ and $4{,}56{,}879$ is",
+    "options": [
+     "$4{,}56{,}789 < 4{,}56{,}879 < 4{,}65{,}789$",
+     "$4{,}65{,}789 < 4{,}56{,}789 < 4{,}56{,}879$",
+     "$4{,}56{,}879 < 4{,}56{,}789 < 4{,}65{,}789$",
+     "$4{,}56{,}789 < 4{,}65{,}789 < 4{,}56{,}879$"
+    ],
+    "answer": 0,
+    "solution": "Compare digit by digit from the left.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "$3{,}46{,}529$ rounded to the nearest thousand is",
+    "options": [
+     "$3{,}46{,}500$",
+     "$3{,}47{,}000$",
+     "$3{,}50{,}000$",
+     "$3{,}46{,}000$"
+    ],
+    "answer": 1,
+    "solution": "The hundreds digit is $5$, so round up.",
+    "topic": "Rounding"
+   },
+   {
+    "prompt": "Estimate $689 + 412$ by rounding each number to the nearest hundred.",
+    "options": [
+     "$1{,}100$",
+     "$1{,}000$",
+     "$1{,}200$",
+     "$1{,}101$"
+    ],
+    "answer": 0,
+    "solution": "$700 + 400 = 1{,}100$.",
+    "topic": "Estimation"
+   },
+   {
+    "prompt": "$5$ km $60$ m in metres is",
+    "options": [
+     "$560$ m",
+     "$5{,}060$ m",
+     "$5{,}006$ m",
+     "$5{,}600$ m"
+    ],
+    "answer": 1,
+    "solution": "$5 \\times 1000 + 60 = 5{,}060$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$3$ kg $5$ g in grams is",
+    "options": [
+     "$3{,}050$ g",
+     "$35$ g",
+     "$3{,}005$ g",
+     "$3{,}500$ g"
+    ],
+    "answer": 2,
+    "solution": "$3{,}000 + 5 = 3{,}005$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$2{,}345 \\times 100 =$",
+    "options": [
+     "$2{,}345{,}00$",
+     "$2{,}34{,}500$",
+     "$23{,}45{,}000$",
+     "$23{,}450$"
+    ],
+    "answer": 1,
+    "solution": "Write two zeros at the end.",
+    "topic": "Operations"
+   },
+   {
+    "prompt": "How many $2$-digit numbers are there?",
+    "options": [
+     "$90$",
+     "$89$",
+     "$100$",
+     "$99$"
+    ],
+    "answer": 0,
+    "solution": "From $10$ to $99$: $99 - 10 + 1 = 90$.",
+    "topic": "Counting"
+   },
+   {
+    "prompt": "The successor of $9{,}99{,}999$ is",
+    "options": [
+     "$99{,}99{,}999$",
+     "$1{,}00{,}000$",
+     "$9{,}99{,}998$",
+     "$10{,}00{,}000$"
+    ],
+    "answer": 3,
+    "solution": "Add $1$.",
+    "topic": "Successor"
+   },
+   {
+    "prompt": "Seventy lakh three thousand five is written",
+    "options": [
+     "$70{,}03{,}005$",
+     "$70{,}30{,}005$",
+     "$70{,}03{,}050$",
+     "$7{,}03{,}005$"
+    ],
+    "answer": 0,
+    "solution": "$70$ lakh, $03$ thousand, $005$.",
+    "topic": "Number names"
+   },
+   {
+    "prompt": "$12{,}000 \\div 25 =$",
+    "options": [
+     "$48$",
+     "$480$",
+     "$4{,}800$",
+     "$500$"
+    ],
+    "answer": 1,
+    "solution": "$12{,}000 \\div 25 = 480$ because $25 \\times 480 = 12{,}000$.",
+    "topic": "Operations"
+   },
+   {
+    "prompt": "A student rounded $7{,}49{,}999$ to the nearest lakh and got $8{,}00{,}000$. The correct answer is",
+    "options": [
+     "$8{,}00{,}000$",
+     "$7{,}50{,}000$",
+     "$7{,}49{,}000$",
+     "$7{,}00{,}000$"
+    ],
+    "answer": 3,
+    "solution": "$49{,}999$ is less than $50{,}000$, so round down.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "How many $5$-digit numbers are there?",
+    "options": [
+     "$90{,}000$",
+     "$1{,}00{,}000$",
+     "$89{,}999$",
+     "$99{,}999$"
+    ],
+    "answer": 0,
+    "solution": "$99{,}999 - 10{,}000 + 1 = 90{,}000$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "Use $3, 0, 7, 1, 9$ once each. The greatest odd $5$-digit number is",
+    "options": [
+     "$90{,}731$",
+     "$97{,}310$",
+     "$97{,}031$",
+     "$97{,}301$"
+    ],
+    "answer": 3,
+    "solution": "The last digit must be odd. Put the smallest odd digit, $1$, last: $9, 7, 3, 0, 1$.",
+    "topic": "HOTS · Digits"
+   },
+   {
+    "prompt": "How many lakhs make $3$ crore?",
+    "options": [
+     "$3{,}000$",
+     "$300$",
+     "$30$",
+     "$3$"
+    ],
+    "answer": 1,
+    "solution": "$1$ crore $= 100$ lakh.",
+    "topic": "HOTS · Conversions"
+   },
+   {
+    "prompt": "One billion ($1{,}000{,}000{,}000$) is how many crore?",
+    "options": [
+     "$10$",
+     "$1$",
+     "$100$",
+     "$1{,}000$"
+    ],
+    "answer": 2,
+    "solution": "$1$ crore $= 10{,}000{,}000$, and $1{,}000{,}000{,}000 \\div 10{,}000{,}000 = 100$.",
+    "topic": "HOTS · Conversions"
+   },
+   {
+    "prompt": "The difference between the smallest $5$-digit number and the greatest $4$-digit number is",
+    "options": [
+     "$0$",
+     "$9$",
+     "$1$",
+     "$10$"
+    ],
+    "answer": 2,
+    "solution": "$10{,}000 - 9{,}999 = 1$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "The best estimate of $4{,}876 \\times 21$ is",
+    "options": [
+     "$1{,}00{,}000$",
+     "$80{,}000$",
+     "$10{,}000$",
+     "$10{,}00{,}000$"
+    ],
+    "answer": 0,
+    "solution": "$5{,}000 \\times 20 = 1{,}00{,}000$.",
+    "topic": "HOTS · Estimation"
+   },
+   {
+    "prompt": "How many digits are printed to number the pages of a book from $1$ to $150$?",
+    "options": [
+     "$342$",
+     "$450$",
+     "$339$",
+     "$150$"
+    ],
+    "answer": 0,
+    "solution": "$9 \\times 1 + 90 \\times 2 + 51 \\times 3 = 9 + 180 + 153 = 342$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "What is the smallest number to add to $9{,}99{,}995$ to get the smallest $7$-digit number?",
+    "options": [
+     "$6$",
+     "$10$",
+     "$5$",
+     "$4$"
+    ],
+    "answer": 2,
+    "solution": "$10{,}00{,}000 - 9{,}99{,}995 = 5$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "$1{,}248$ students each pay ₹$1{,}250$. The total is",
+    "options": [
+     "₹$15{,}60{,}000$",
+     "₹$1{,}56{,}000$",
+     "₹$15{,}06{,}000$",
+     "₹$1{,}56{,}00{,}000$"
+    ],
+    "answer": 0,
+    "solution": "$1{,}248 \\times 1{,}250 = 15{,}60{,}000$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "Assertion (A): $10$ lakh $= 1$ million.\nReason (R): $1$ million $= 1{,}000{,}000 = 10{,}00{,}000$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Both name the same number, so R explains A.",
+    "topic": "Indian and International",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $6{,}00{,}000 > 59{,}99{,}999$.\nReason (R): A number with more digits is greater.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$59{,}99{,}999$ has $7$ digits and $6{,}00{,}000$ has $6$, so A is false.",
+    "topic": "Comparing",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $1$ km $= 1{,}000$ m.\nReason (R): $1$ kg $= 1{,}000$ g.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 1,
+    "solution": "Both are true, but R is about mass, not length.",
+    "topic": "Units",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $4{,}56{,}000$ rounded to the nearest lakh is $5{,}00{,}000$.\nReason (R): $56{,}000$ is more than $50{,}000$, so we round up.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R gives the reason for rounding up.",
+    "topic": "Rounding",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 2,
+  "title": "Whole Numbers",
+  "questions": [
+   {
+    "prompt": "The smallest whole number is",
+    "options": [
+     "$1$",
+     "$-1$",
+     "There is none",
+     "$0$"
+    ],
+    "answer": 3,
+    "solution": "Whole numbers are $0, 1, 2, \\dots$.",
+    "topic": "Whole numbers"
+   },
+   {
+    "prompt": "The predecessor of $1{,}00{,}000$ is",
+    "options": [
+     "$99{,}999$",
+     "$9{,}999$",
+     "$99{,}990$",
+     "$1{,}00{,}001$"
+    ],
+    "answer": 0,
+    "solution": "Subtract $1$.",
+    "topic": "Predecessor"
+   },
+   {
+    "prompt": "How many natural numbers lie between $5$ and $10$?",
+    "options": [
+     "$6$",
+     "$3$",
+     "$5$",
+     "$4$"
+    ],
+    "answer": 3,
+    "solution": "$6, 7, 8, 9$.",
+    "topic": "Counting"
+   },
+   {
+    "prompt": "$a + b = b + a$ is the",
+    "options": [
+     "commutative property of addition",
+     "distributive property",
+     "associative property of addition",
+     "closure property"
+    ],
+    "answer": 0,
+    "solution": "The order of adding does not change the sum.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "In $a \\times 1 = a$, the number $1$ is the",
+    "options": [
+     "multiplicative identity",
+     "predecessor",
+     "additive identity",
+     "successor"
+    ],
+    "answer": 0,
+    "solution": "Multiplying by $1$ keeps the number the same.",
+    "topic": "Identities"
+   },
+   {
+    "prompt": "In $a + 0 = a$, the number $0$ is the",
+    "options": [
+     "multiplicative identity",
+     "smallest prime",
+     "additive identity",
+     "largest whole number"
+    ],
+    "answer": 2,
+    "solution": "Adding $0$ keeps the number the same.",
+    "topic": "Identities"
+   },
+   {
+    "prompt": "Using the distributive property, $47 \\times 99 =$",
+    "options": [
+     "$4{,}563$",
+     "$4{,}747$",
+     "$4{,}653$",
+     "$4{,}700$"
+    ],
+    "answer": 2,
+    "solution": "$47 \\times 100 - 47 = 4{,}653$.",
+    "topic": "Distributive property"
+   },
+   {
+    "prompt": "$25 \\times 37 \\times 4 =$",
+    "options": [
+     "$37{,}000$",
+     "$3{,}600$",
+     "$3{,}700$",
+     "$370$"
+    ],
+    "answer": 2,
+    "solution": "$(25 \\times 4) \\times 37 = 100 \\times 37$.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "$0 \\div 7 =$",
+    "options": [
+     "$1$",
+     "$7$",
+     "not defined",
+     "$0$"
+    ],
+    "answer": 3,
+    "solution": "$0$ shared among $7$ gives $0$ each.",
+    "topic": "Zero"
+   },
+   {
+    "prompt": "$7 \\div 0$ is",
+    "options": [
+     "not defined",
+     "$0$",
+     "$1$",
+     "$7$"
+    ],
+    "answer": 0,
+    "solution": "No number times $0$ gives $7$.",
+    "topic": "Zero"
+   },
+   {
+    "prompt": "Whole numbers are closed under",
+    "options": [
+     "addition",
+     "none of these",
+     "subtraction",
+     "division"
+    ],
+    "answer": 0,
+    "solution": "The sum of two whole numbers is always a whole number.",
+    "topic": "Closure"
+   },
+   {
+    "prompt": "$125 \\times 8 \\times 7 =$",
+    "options": [
+     "$7{,}000$",
+     "$700$",
+     "$8{,}750$",
+     "$70{,}000$"
+    ],
+    "answer": 0,
+    "solution": "$125 \\times 8 = 1{,}000$.",
+    "topic": "Properties"
+   },
+   {
+    "prompt": "$36 \\times 102 =$",
+    "options": [
+     "$3{,}672$",
+     "$3{,}600$",
+     "$3{,}627$",
+     "$3{,}762$"
+    ],
+    "answer": 0,
+    "solution": "$36 \\times 100 + 36 \\times 2 = 3{,}600 + 72$.",
+    "topic": "Distributive property"
+   },
+   {
+    "prompt": "Which is not a whole number?",
+    "options": [
+     "$0$",
+     "$-3$",
+     "$15$",
+     "$1{,}000$"
+    ],
+    "answer": 1,
+    "solution": "Whole numbers are not negative.",
+    "topic": "Whole numbers"
+   },
+   {
+    "prompt": "The product of a whole number and $0$ is",
+    "options": [
+     "not defined",
+     "$0$",
+     "$1$",
+     "the number itself"
+    ],
+    "answer": 1,
+    "solution": "$a \\times 0 = 0$.",
+    "topic": "Zero"
+   },
+   {
+    "prompt": "On the number line, $8 + 5$ means",
+    "options": [
+     "start at $5$ and move $8$ steps to the left",
+     "start at $0$ and move $3$ steps",
+     "start at $8$ and move $5$ steps to the left",
+     "start at $8$ and move $5$ steps to the right"
+    ],
+    "answer": 3,
+    "solution": "Adding moves to the right.",
+    "topic": "Number line"
+   },
+   {
+    "prompt": "A student wrote $53 \\times 99 = 53 \\times 100 + 53 = 5{,}353$. The correct answer is",
+    "options": [
+     "$5{,}253$",
+     "$5{,}300$",
+     "$5{,}353$",
+     "$5{,}247$"
+    ],
+    "answer": 3,
+    "solution": "$99 = 100 - 1$, so subtract: $5{,}300 - 53 = 5{,}247$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "$a$ is a non-zero whole number and $a \\times b = a$. Then $b =$",
+    "options": [
+     "$1$",
+     "$0$",
+     "$a$",
+     "$2$"
+    ],
+    "answer": 0,
+    "solution": "Only $1$ keeps a number the same when multiplied.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "$0 + 1 + 2 + \\dots + 99 =$",
+    "options": [
+     "$5{,}000$",
+     "$4{,}950$",
+     "$5{,}050$",
+     "$4{,}900$"
+    ],
+    "answer": 1,
+    "solution": "Pair $0 + 99$, $1 + 98$, …: $50$ pairs of $99$.",
+    "topic": "HOTS · Pairing"
+   },
+   {
+    "prompt": "Which property gives $18 \\times (10 + 3) = 180 + 54$?",
+    "options": [
+     "closure property",
+     "distributive property",
+     "associative property",
+     "commutative property"
+    ],
+    "answer": 1,
+    "solution": "$18 \\times 10 + 18 \\times 3$.",
+    "topic": "HOTS · Properties"
+   },
+   {
+    "prompt": "How many even numbers lie between $100$ and $200$ (not counting $100$ and $200$)?",
+    "options": [
+     "$100$",
+     "$49$",
+     "$51$",
+     "$50$"
+    ],
+    "answer": 1,
+    "solution": "$102, 104, \\dots, 198$: $49$ numbers.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "$a - b$ is a whole number. Which must be true?",
+    "options": [
+     "$b = 0$",
+     "$a \\ge b$",
+     "$a = 0$",
+     "$a < b$"
+    ],
+    "answer": 1,
+    "solution": "Otherwise the result is negative.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "$999 \\times 999 + 999 =$",
+    "options": [
+     "$9{,}99{,}900$",
+     "$9{,}98{,}001$",
+     "$9{,}99{,}999$",
+     "$9{,}99{,}000$"
+    ],
+    "answer": 3,
+    "solution": "$999 \\times (999 + 1) = 999 \\times 1{,}000$.",
+    "topic": "HOTS · Distributive property"
+   },
+   {
+    "prompt": "$9 \\times 9 + 7 = 88$, $98 \\times 9 + 6 = 888$. What is $987 \\times 9 + 5$?",
+    "options": [
+     "$9{,}888$",
+     "$8{,}888$",
+     "$88{,}888$",
+     "$8{,}885$"
+    ],
+    "answer": 1,
+    "solution": "The pattern adds one more $8$.",
+    "topic": "HOTS · Pattern"
+   },
+   {
+    "prompt": "Two whole numbers have product $0$ and sum $7$. They are",
+    "options": [
+     "$0$ and $0$",
+     "$7$ and $7$",
+     "$0$ and $7$",
+     "$1$ and $6$"
+    ],
+    "answer": 2,
+    "solution": "One of them must be $0$, so the other is $7$.",
+    "topic": "HOTS · Puzzle"
+   },
+   {
+    "prompt": "The largest whole number less than $1$ is",
+    "options": [
+     "$0$",
+     "$0.9$",
+     "$-1$",
+     "There is none"
+    ],
+    "answer": 0,
+    "solution": "Whole numbers jump from $0$ to $1$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Assertion (A): Whole numbers are closed under multiplication.\nReason (R): The product of any two whole numbers is a whole number.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R is the meaning of closure, so it explains A.",
+    "topic": "Closure",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Division of whole numbers is commutative.\nReason (R): $12 \\div 3 = 4$, but $3 \\div 12$ is not a whole number.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "R is a counter-example, so A is false.",
+    "topic": "Properties",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $0$ is the smallest whole number.\nReason (R): $0$ is a natural number.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "Natural numbers start at $1$, so R is false.",
+    "topic": "Whole numbers",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $a \\times (b + c) = a \\times b + a \\times c$.\nReason (R): Multiplication distributes over addition.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R names the property shown in A.",
+    "topic": "Distributive property",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 3,
+  "title": "Playing with Numbers",
+  "questions": [
+   {
+    "prompt": "Which number is divisible by $3$?",
+    "options": [
+     "$7{,}343$",
+     "$7{,}342$",
+     "$7{,}341$",
+     "$7{,}345$"
+    ],
+    "answer": 2,
+    "solution": "$7 + 3 + 4 + 1 = 15$, which is divisible by $3$.",
+    "topic": "Divisibility"
+   },
+   {
+    "prompt": "Which number is divisible by $9$?",
+    "options": [
+     "$5{,}190$",
+     "$5{,}183$",
+     "$5{,}184$",
+     "$5{,}186$"
+    ],
+    "answer": 2,
+    "solution": "$5 + 1 + 8 + 4 = 18$.",
+    "topic": "Divisibility"
+   },
+   {
+    "prompt": "Which number is divisible by $11$?",
+    "options": [
+     "$3{,}926$",
+     "$3{,}937$",
+     "$3{,}927$",
+     "$3{,}928$"
+    ],
+    "answer": 2,
+    "solution": "$(3 + 2) - (9 + 7) = -11$, a multiple of $11$.",
+    "topic": "Divisibility"
+   },
+   {
+    "prompt": "Which pair is a pair of twin primes?",
+    "options": [
+     "$17$ and $19$",
+     "$23$ and $25$",
+     "$19$ and $21$",
+     "$13$ and $17$"
+    ],
+    "answer": 0,
+    "solution": "Twin primes are primes that differ by $2$.",
+    "topic": "Primes"
+   },
+   {
+    "prompt": "The HCF of $24$ and $36$ is",
+    "options": [
+     "$72$",
+     "$6$",
+     "$12$",
+     "$4$"
+    ],
+    "answer": 2,
+    "solution": "$24 = 2^3 \\times 3$, $36 = 2^2 \\times 3^2$. HCF $= 2^2 \\times 3 = 12$.",
+    "topic": "HCF"
+   },
+   {
+    "prompt": "The LCM of $8$ and $12$ is",
+    "options": [
+     "$4$",
+     "$48$",
+     "$24$",
+     "$96$"
+    ],
+    "answer": 2,
+    "solution": "$2^3 \\times 3 = 24$.",
+    "topic": "LCM"
+   },
+   {
+    "prompt": "The prime factorisation of $90$ is",
+    "options": [
+     "$9 \\times 10$",
+     "$2 \\times 3 \\times 3 \\times 5$",
+     "$3 \\times 30$",
+     "$2 \\times 45$"
+    ],
+    "answer": 1,
+    "solution": "$90 = 2 \\times 45 = 2 \\times 3 \\times 3 \\times 5$.",
+    "topic": "Prime factorisation"
+   },
+   {
+    "prompt": "The smallest prime number is",
+    "options": [
+     "$2$",
+     "$1$",
+     "$0$",
+     "$3$"
+    ],
+    "answer": 0,
+    "solution": "$2$ has exactly two factors.",
+    "topic": "Primes"
+   },
+   {
+    "prompt": "How many prime numbers are less than $20$?",
+    "options": [
+     "$9$",
+     "$7$",
+     "$8$",
+     "$10$"
+    ],
+    "answer": 2,
+    "solution": "$2, 3, 5, 7, 11, 13, 17, 19$.",
+    "topic": "Primes"
+   },
+   {
+    "prompt": "$20 - [8 - (5 - 2)] =$",
+    "options": [
+     "$5$",
+     "$9$",
+     "$15$",
+     "$19$"
+    ],
+    "answer": 2,
+    "solution": "$5 - 2 = 3$; $8 - 3 = 5$; $20 - 5 = 15$.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "A number divisible by both $2$ and $3$ is always divisible by",
+    "options": [
+     "$5$",
+     "$6$",
+     "$12$",
+     "$9$"
+    ],
+    "answer": 1,
+    "solution": "$2$ and $3$ are co-prime, so the number is divisible by $2 \\times 3$.",
+    "topic": "Divisibility"
+   },
+   {
+    "prompt": "Which number is composite?",
+    "options": [
+     "$61$",
+     "$59$",
+     "$51$",
+     "$53$"
+    ],
+    "answer": 2,
+    "solution": "$51 = 3 \\times 17$.",
+    "topic": "Composite numbers"
+   },
+   {
+    "prompt": "Which pair is co-prime?",
+    "options": [
+     "$10$ and $25$",
+     "$9$ and $12$",
+     "$6$ and $8$",
+     "$8$ and $9$"
+    ],
+    "answer": 3,
+    "solution": "$8$ and $9$ have no common factor except $1$.",
+    "topic": "Co-prime"
+   },
+   {
+    "prompt": "The factors of $28$ are",
+    "options": [
+     "$1, 2, 4, 14, 28$",
+     "$1, 2, 4, 7, 14, 28$",
+     "$1, 28, 56$",
+     "$2, 4, 7, 14$"
+    ],
+    "answer": 1,
+    "solution": "$28 = 1 \\times 28 = 2 \\times 14 = 4 \\times 7$.",
+    "topic": "Factors"
+   },
+   {
+    "prompt": "The smallest common multiple of $6$ and $9$ is",
+    "options": [
+     "$3$",
+     "$54$",
+     "$36$",
+     "$18$"
+    ],
+    "answer": 3,
+    "solution": "Multiples of $9$: $9, 18$; $18$ is a multiple of $6$.",
+    "topic": "LCM"
+   },
+   {
+    "prompt": "For $4$ and $6$, HCF $\\times$ LCM $=$",
+    "options": [
+     "$10$",
+     "$12$",
+     "$24$",
+     "$48$"
+    ],
+    "answer": 2,
+    "solution": "HCF $2$, LCM $12$: $2 \\times 12 = 24 = 4 \\times 6$.",
+    "topic": "HCF and LCM"
+   },
+   {
+    "prompt": "A student wrote: 'The HCF of $12$ and $18$ is $36$.' The correct HCF is",
+    "options": [
+     "$12$",
+     "$36$",
+     "$3$",
+     "$6$"
+    ],
+    "answer": 3,
+    "solution": "$36$ is the LCM. The greatest common factor is $6$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The smallest number that leaves remainder $2$ when divided by $6$, $8$ and $12$ is",
+    "options": [
+     "$26$",
+     "$50$",
+     "$24$",
+     "$14$"
+    ],
+    "answer": 0,
+    "solution": "LCM $= 24$, so $24 + 2 = 26$.",
+    "topic": "HOTS · LCM"
+   },
+   {
+    "prompt": "The greatest number that divides $47$ and $62$ leaving remainder $2$ in each case is",
+    "options": [
+     "$45$",
+     "$15$",
+     "$5$",
+     "$3$"
+    ],
+    "answer": 1,
+    "solution": "HCF of $45$ and $60$ is $15$.",
+    "topic": "HOTS · HCF"
+   },
+   {
+    "prompt": "Two numbers have HCF $4$ and LCM $48$. One number is $12$. The other is",
+    "options": [
+     "$36$",
+     "$16$",
+     "$48$",
+     "$4$"
+    ],
+    "answer": 1,
+    "solution": "$4 \\times 48 \\div 12 = 16$.",
+    "topic": "HOTS · HCF and LCM"
+   },
+   {
+    "prompt": "Which digit can go in the blank so that $4\\_32$ is divisible by $9$?",
+    "options": [
+     "$6$",
+     "$1$",
+     "$3$",
+     "$0$ or $9$"
+    ],
+    "answer": 3,
+    "solution": "$4 + 3 + 2 = 9$, so the blank must keep the sum a multiple of $9$: $0$ or $9$.",
+    "topic": "HOTS · Divisibility"
+   },
+   {
+    "prompt": "How many factors does $48$ have?",
+    "options": [
+     "$8$",
+     "$10$",
+     "$12$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "$1, 2, 3, 4, 6, 8, 12, 16, 24, 48$.",
+    "topic": "HOTS · Factors"
+   },
+   {
+    "prompt": "Bells ring every $15$, $20$ and $30$ minutes. They ring together at $8{:}00$ a.m. They next ring together at",
+    "options": [
+     "$9{:}00$ a.m.",
+     "$10{:}00$ a.m.",
+     "$8{:}30$ a.m.",
+     "$9{:}05$ a.m."
+    ],
+    "answer": 0,
+    "solution": "LCM $= 60$ minutes.",
+    "topic": "HOTS · LCM"
+   },
+   {
+    "prompt": "Which is true for every prime number greater than $2$?",
+    "options": [
+     "It ends in $1$",
+     "It is odd",
+     "It is divisible by $3$",
+     "It is even"
+    ],
+    "answer": 1,
+    "solution": "Every even number greater than $2$ has $2$ as a factor.",
+    "topic": "HOTS · Primes"
+   },
+   {
+    "prompt": "$3 + 6 \\times [9 - \\{4 + (2 - 1)\\}] =$",
+    "options": [
+     "$27$",
+     "$51$",
+     "$36$",
+     "$15$"
+    ],
+    "answer": 0,
+    "solution": "$2 - 1 = 1$; $4 + 1 = 5$; $9 - 5 = 4$; $6 \\times 4 = 24$; $3 + 24 = 27$.",
+    "topic": "HOTS · Brackets"
+   },
+   {
+    "prompt": "Two co-prime numbers have product $117$. Their LCM is",
+    "options": [
+     "$1$",
+     "$13$",
+     "$9$",
+     "$117$"
+    ],
+    "answer": 3,
+    "solution": "For co-prime numbers, HCF $= 1$, so LCM $=$ product.",
+    "topic": "HOTS · HCF and LCM"
+   },
+   {
+    "prompt": "Assertion (A): A number divisible by $4$ and $6$ need not be divisible by $24$.\nReason (R): $12$ is divisible by $4$ and $6$ but not by $24$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R is an example that shows A.",
+    "topic": "Divisibility",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $1$ is a prime number.\nReason (R): A prime number has exactly two factors.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$1$ has only one factor, so A is false.",
+    "topic": "Primes",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Every even number greater than $2$ is composite.\nReason (R): Every even number has $2$ as a factor.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Such a number has the factors $1$, $2$ and itself, so it is composite.",
+    "topic": "Composite numbers",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The HCF of two co-prime numbers is $1$.\nReason (R): The LCM of two co-prime numbers is $1$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "The LCM is their product, so R is false.",
+    "topic": "HCF and LCM",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 4,
+  "title": "Integers",
+  "questions": [
+   {
+    "prompt": "$200$ m below sea level is written as",
+    "options": [
+     "$+200$ m",
+     "$-20$ m",
+     "$200$ m",
+     "$-200$ m"
+    ],
+    "answer": 3,
+    "solution": "Below sea level is negative.",
+    "topic": "Meaning"
+   },
+   {
+    "prompt": "Which is the greatest: $-15, -3, -8, -20$?",
+    "options": [
+     "$-8$",
+     "$-3$",
+     "$-15$",
+     "$-20$"
+    ],
+    "answer": 1,
+    "solution": "$-3$ is farthest to the right.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "The additive inverse of $-9$ is",
+    "options": [
+     "$9$",
+     "$\\frac{1}{9}$",
+     "$-9$",
+     "$0$"
+    ],
+    "answer": 0,
+    "solution": "$-9 + 9 = 0$.",
+    "topic": "Additive inverse"
+   },
+   {
+    "prompt": "$-12 + 7 =$",
+    "options": [
+     "$-5$",
+     "$5$",
+     "$19$",
+     "$-19$"
+    ],
+    "answer": 0,
+    "solution": "Different signs: $12 - 7 = 5$, sign of $12$.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "$-8 + (-6) =$",
+    "options": [
+     "$2$",
+     "$-14$",
+     "$14$",
+     "$-2$"
+    ],
+    "answer": 1,
+    "solution": "Same signs: add and keep the sign.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "$9 - 15 =$",
+    "options": [
+     "$24$",
+     "$-6$",
+     "$6$",
+     "$-24$"
+    ],
+    "answer": 1,
+    "solution": "$15$ is bigger, so the answer is negative.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "$-4 - (-10) =$",
+    "options": [
+     "$-6$",
+     "$6$",
+     "$14$",
+     "$-14$"
+    ],
+    "answer": 1,
+    "solution": "$-4 + 10 = 6$.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "How many integers lie between $-4$ and $3$?",
+    "options": [
+     "$5$",
+     "$6$",
+     "$7$",
+     "$8$"
+    ],
+    "answer": 1,
+    "solution": "$-3, -2, -1, 0, 1, 2$.",
+    "topic": "Counting"
+   },
+   {
+    "prompt": "The successor of $-1$ is",
+    "options": [
+     "$2$",
+     "$0$",
+     "$1$",
+     "$-2$"
+    ],
+    "answer": 1,
+    "solution": "Add $1$.",
+    "topic": "Successor"
+   },
+   {
+    "prompt": "The predecessor of $-20$ is",
+    "options": [
+     "$-21$",
+     "$20$",
+     "$-19$",
+     "$21$"
+    ],
+    "answer": 0,
+    "solution": "Subtract $1$.",
+    "topic": "Predecessor"
+   },
+   {
+    "prompt": "A lift at floor $-1$ goes up $6$ floors. It stops at floor",
+    "options": [
+     "$-5$",
+     "$-7$",
+     "$5$",
+     "$7$"
+    ],
+    "answer": 2,
+    "solution": "$-1 + 6 = 5$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The temperature is $3^\\circ$C and falls by $8^\\circ$C. It is now",
+    "options": [
+     "$-11^\\circ$C",
+     "$-5^\\circ$C",
+     "$5^\\circ$C",
+     "$11^\\circ$C"
+    ],
+    "answer": 1,
+    "solution": "$3 - 8 = -5$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The ascending order of $-2, 4, -7, 0$ is",
+    "options": [
+     "$0, -2, 4, -7$",
+     "$4, 0, -2, -7$",
+     "$-2, -7, 0, 4$",
+     "$-7, -2, 0, 4$"
+    ],
+    "answer": 3,
+    "solution": "Left to right on the number line.",
+    "topic": "Ordering"
+   },
+   {
+    "prompt": "On the number line, $-5$ lies",
+    "options": [
+     "to the right of $-1$",
+     "to the right of $0$",
+     "at $-1$",
+     "to the left of $-1$"
+    ],
+    "answer": 3,
+    "solution": "$-5 < -1$.",
+    "topic": "Number line"
+   },
+   {
+    "prompt": "$(-25) + 25 =$",
+    "options": [
+     "$0$",
+     "$-50$",
+     "$25$",
+     "$50$"
+    ],
+    "answer": 0,
+    "solution": "A number and its opposite add to $0$.",
+    "topic": "Additive inverse"
+   },
+   {
+    "prompt": "Which statement is true?",
+    "options": [
+     "$-1 < -10$",
+     "$0 < -1$",
+     "$-10 < -1$",
+     "$-10 > -1$"
+    ],
+    "answer": 2,
+    "solution": "$-10$ is to the left of $-1$.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "A student wrote $-6 - 4 = -2$. The correct answer is",
+    "options": [
+     "$-10$",
+     "$10$",
+     "$2$",
+     "$-2$"
+    ],
+    "answer": 0,
+    "solution": "Start at $-6$ and move $4$ more to the left.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The sum of all the integers from $-5$ to $8$ is",
+    "options": [
+     "$3$",
+     "$36$",
+     "$21$",
+     "$0$"
+    ],
+    "answer": 2,
+    "solution": "$-5$ to $5$ cancel. $6 + 7 + 8 = 21$.",
+    "topic": "HOTS · Pairing"
+   },
+   {
+    "prompt": "Two integers have sum $-2$ and difference (larger minus smaller) $12$. The larger is",
+    "options": [
+     "$-7$",
+     "$7$",
+     "$6$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "$5$ and $-7$: $5 + (-7) = -2$, $5 - (-7) = 12$.",
+    "topic": "HOTS · Puzzle"
+   },
+   {
+    "prompt": "What must be subtracted from $-3$ to get $5$?",
+    "options": [
+     "$-8$",
+     "$-2$",
+     "$2$",
+     "$8$"
+    ],
+    "answer": 0,
+    "solution": "$-3 - (-8) = 5$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "How many non-zero integers between $-10$ and $10$ are multiples of $3$?",
+    "options": [
+     "$6$",
+     "$9$",
+     "$3$",
+     "$7$"
+    ],
+    "answer": 0,
+    "solution": "$\\pm 3, \\pm 6, \\pm 9$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "A submarine at $-40$ m rises $15$ m and then dives $25$ m. It is now at",
+    "options": [
+     "$-30$ m",
+     "$-80$ m",
+     "$0$ m",
+     "$-50$ m"
+    ],
+    "answer": 3,
+    "solution": "$-40 + 15 - 25 = -50$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "$(-1) + 2 + (-3) + 4 + \\dots + (-9) + 10 =$",
+    "options": [
+     "$10$",
+     "$-5$",
+     "$0$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "Each pair adds to $1$, and there are $5$ pairs.",
+    "topic": "HOTS · Pairing"
+   },
+   {
+    "prompt": "Which has the greatest value?",
+    "options": [
+     "$-3 + (-5)$",
+     "$3 - 5$",
+     "$-3 + 5$",
+     "$-3 - (-6)$"
+    ],
+    "answer": 3,
+    "solution": "The values are $3$, $-8$, $-2$ and $2$.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "How far apart are $-7$ and $4$ on the number line?",
+    "options": [
+     "$3$",
+     "$11$",
+     "$-11$",
+     "$-3$"
+    ],
+    "answer": 1,
+    "solution": "$4 - (-7) = 11$.",
+    "topic": "HOTS · Number line"
+   },
+   {
+    "prompt": "A quiz gives $+3$ for a right answer and $-1$ for a wrong answer. Asha has $10$ right and $6$ wrong. Her score is",
+    "options": [
+     "$16$",
+     "$30$",
+     "$24$",
+     "$36$"
+    ],
+    "answer": 2,
+    "solution": "$30 - 6 = 24$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "Assertion (A): $-8 < -3$.\nReason (R): $-8$ is to the left of $-3$ on the number line.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Numbers to the left are smaller.",
+    "topic": "Comparing",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The sum of two negative integers is positive.\nReason (R): $-2 + (-3) = -5$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "R is a counter-example, so A is false.",
+    "topic": "Addition",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $0$ is an integer.\nReason (R): $0$ is a negative integer.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$0$ is neither positive nor negative.",
+    "topic": "Meaning",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $-6$ and $6$ are additive inverses.\nReason (R): Their sum is $0$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Additive inverses add to $0$.",
+    "topic": "Additive inverse",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 5,
+  "title": "Sets",
+  "questions": [
+   {
+    "prompt": "Which collection is well-defined (a set)?",
+    "options": [
+     "the good students of a class",
+     "the months of a year",
+     "the beautiful flowers in a garden",
+     "the tall buildings of a city"
+    ],
+    "answer": 1,
+    "solution": "Everyone agrees on the months; the others depend on opinion.",
+    "topic": "Well-defined"
+   },
+   {
+    "prompt": "The set of vowels in the word APPLE is",
+    "options": [
+     "$\\{A, P, L, E\\}$",
+     "$\\{A, E, P\\}$",
+     "$\\{A, P, P, L, E\\}$",
+     "$\\{A, E\\}$"
+    ],
+    "answer": 3,
+    "solution": "The vowels are A and E.",
+    "topic": "Roster form"
+   },
+   {
+    "prompt": "$n(\\{2, 4, 6, 8\\}) =$",
+    "options": [
+     "$4$",
+     "$2$",
+     "$8$",
+     "$20$"
+    ],
+    "answer": 0,
+    "solution": "There are $4$ elements.",
+    "topic": "Cardinal number"
+   },
+   {
+    "prompt": "The symbol $\\in$ means",
+    "options": [
+     "is equal to",
+     "is an element of",
+     "is empty",
+     "is not an element of"
+    ],
+    "answer": 1,
+    "solution": "$3 \\in A$: $3$ belongs to $A$.",
+    "topic": "Notation"
+   },
+   {
+    "prompt": "$\\{x : x \\text{ is a natural number less than } 4\\} =$",
+    "options": [
+     "$\\{0, 1, 2, 3\\}$",
+     "$\\{1, 2, 3\\}$",
+     "$\\{4\\}$",
+     "$\\{1, 2, 3, 4\\}$"
+    ],
+    "answer": 1,
+    "solution": "Natural numbers start at $1$.",
+    "topic": "Set-builder form"
+   },
+   {
+    "prompt": "The empty set is written",
+    "options": [
+     "$\\{\\varnothing\\}$",
+     "$0$",
+     "$\\{0\\}$",
+     "$\\varnothing$"
+    ],
+    "answer": 3,
+    "solution": "$\\{0\\}$ and $\\{\\varnothing\\}$ each have one element.",
+    "topic": "Empty set"
+   },
+   {
+    "prompt": "The set of the days of a week is",
+    "options": [
+     "empty",
+     "not a set",
+     "infinite",
+     "finite"
+    ],
+    "answer": 3,
+    "solution": "It has $7$ elements.",
+    "topic": "Finite and infinite"
+   },
+   {
+    "prompt": "The set of natural numbers is",
+    "options": [
+     "infinite",
+     "finite",
+     "a singleton",
+     "empty"
+    ],
+    "answer": 0,
+    "solution": "The natural numbers never end.",
+    "topic": "Finite and infinite"
+   },
+   {
+    "prompt": "The number of elements in the set of letters of BANANA is",
+    "options": [
+     "$4$",
+     "$6$",
+     "$3$",
+     "$2$"
+    ],
+    "answer": 2,
+    "solution": "$\\{B, A, N\\}$.",
+    "topic": "Cardinal number"
+   },
+   {
+    "prompt": "Which set is empty?",
+    "options": [
+     "$\\{0\\}$",
+     "$\\{x : x \\text{ is a vowel}\\}$",
+     "$\\{x : x \\text{ is an even number}, 6 < x < 8\\}$",
+     "$\\{x : x \\text{ is an odd number}, 6 < x < 8\\}$"
+    ],
+    "answer": 2,
+    "solution": "The only number between $6$ and $8$ is $7$, which is odd.",
+    "topic": "Empty set"
+   },
+   {
+    "prompt": "If $A = \\{1, 3, 5\\}$, which is true?",
+    "options": [
+     "$5 \\notin A$",
+     "$n(A) = 5$",
+     "$3 \\in A$",
+     "$2 \\in A$"
+    ],
+    "answer": 2,
+    "solution": "$3$ is listed in $A$.",
+    "topic": "Notation"
+   },
+   {
+    "prompt": "$\\{x : x \\text{ is a multiple of } 5 \\text{ less than } 25\\}$ in roster form is",
+    "options": [
+     "$\\{5, 10, 15, 20, 25\\}$",
+     "$\\{1, 5, 25\\}$",
+     "$\\{5, 10, 15, 20\\}$",
+     "$\\{0, 5, 10, 15, 20\\}$"
+    ],
+    "answer": 2,
+    "solution": "Multiples of $5$ less than $25$.",
+    "topic": "Roster form"
+   },
+   {
+    "prompt": "The set of letters of the word LEVEL is",
+    "options": [
+     "$\\{L, E, V, E, L\\}$",
+     "$\\{L, E, V\\}$",
+     "$\\{E, V\\}$",
+     "$\\{L, V\\}$"
+    ],
+    "answer": 1,
+    "solution": "A repeated letter is written once.",
+    "topic": "Roster form"
+   },
+   {
+    "prompt": "Which two sets are equal?",
+    "options": [
+     "$\\{0\\}$ and $\\varnothing$",
+     "$\\{1, 2\\}$ and $\\{1, 2, 3\\}$",
+     "$\\{a\\}$ and $\\{b\\}$",
+     "$\\{1, 2, 3\\}$ and $\\{3, 1, 2\\}$"
+    ],
+    "answer": 3,
+    "solution": "Equal sets have the same elements in any order.",
+    "topic": "Equal sets"
+   },
+   {
+    "prompt": "Which is a singleton set?",
+    "options": [
+     "$\\{0\\}$",
+     "$\\varnothing$",
+     "$\\{a, b, c\\}$",
+     "$\\{1, 2\\}$"
+    ],
+    "answer": 0,
+    "solution": "A singleton has exactly one element.",
+    "topic": "Singleton"
+   },
+   {
+    "prompt": "A set-builder form of $\\{2, 4, 6, 8\\}$ is",
+    "options": [
+     "$\\{x : x \\text{ is a natural number less than } 10\\}$",
+     "$\\{x : x \\text{ is an even natural number less than } 10\\}$",
+     "$\\{x : x \\text{ is an even number}\\}$",
+     "$\\{x : x \\text{ is a factor of } 8\\}$"
+    ],
+    "answer": 1,
+    "solution": "It lists exactly $2, 4, 6, 8$.",
+    "topic": "Set-builder form"
+   },
+   {
+    "prompt": "A student wrote: '$\\{1, 1, 2\\}$ has $3$ elements.' The correct number is",
+    "options": [
+     "$1$",
+     "$3$",
+     "$2$",
+     "$4$"
+    ],
+    "answer": 2,
+    "solution": "Repeated elements count once: $\\{1, 2\\}$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "How many elements does the set of letters of MISSISSIPPI have?",
+    "options": [
+     "$4$",
+     "$3$",
+     "$5$",
+     "$11$"
+    ],
+    "answer": 0,
+    "solution": "$\\{M, I, S, P\\}$.",
+    "topic": "HOTS · Cardinal number"
+   },
+   {
+    "prompt": "Which collection is not a set?",
+    "options": [
+     "the states of India",
+     "the even numbers below $10$",
+     "the planets of the solar system",
+     "the best cricketers of India"
+    ],
+    "answer": 3,
+    "solution": "'Best' depends on opinion.",
+    "topic": "HOTS · Well-defined"
+   },
+   {
+    "prompt": "$A = \\{x : x \\text{ is a factor of } 12\\}$. Then $n(A) =$",
+    "options": [
+     "$5$",
+     "$4$",
+     "$6$",
+     "$12$"
+    ],
+    "answer": 2,
+    "solution": "$1, 2, 3, 4, 6, 12$.",
+    "topic": "HOTS · Cardinal number"
+   },
+   {
+    "prompt": "Which set is infinite?",
+    "options": [
+     "the months of a year",
+     "$\\{x : x \\text{ is a factor of } 30\\}$",
+     "$\\{x : x \\text{ is a multiple of } 3\\}$",
+     "$\\{1, 2, 3, \\dots, 1000\\}$"
+    ],
+    "answer": 2,
+    "solution": "Multiples of $3$ never end.",
+    "topic": "HOTS · Finite and infinite"
+   },
+   {
+    "prompt": "$\\{x : x \\text{ is a prime number between } 24 \\text{ and } 28\\} =$",
+    "options": [
+     "$\\{25\\}$",
+     "$\\{25, 27\\}$",
+     "$\\varnothing$",
+     "$\\{27\\}$"
+    ],
+    "answer": 2,
+    "solution": "$25 = 5 \\times 5$, $26 = 2 \\times 13$, $27 = 3 \\times 9$.",
+    "topic": "HOTS · Empty set"
+   },
+   {
+    "prompt": "Which two sets are equal?",
+    "options": [
+     "the letters of TEAM and the letters of MEAT",
+     "the letters of SEA and the letters of SEAT",
+     "the letters of TEAM and the letters of TEAMS",
+     "the letters of BOOK and the letters of BOX"
+    ],
+    "answer": 0,
+    "solution": "Both are $\\{T, E, A, M\\}$.",
+    "topic": "HOTS · Equal sets"
+   },
+   {
+    "prompt": "$A = \\{2, 3, 5, 7\\}$ in words is",
+    "options": [
+     "the even numbers less than $8$",
+     "the factors of $30$",
+     "the prime numbers less than $10$",
+     "the odd numbers less than $10$"
+    ],
+    "answer": 2,
+    "solution": "These are exactly the primes below $10$.",
+    "topic": "HOTS · Describing sets"
+   },
+   {
+    "prompt": "$\\{x : x \\text{ is a whole number}, x < 1\\}$ is",
+    "options": [
+     "the singleton $\\{0\\}$",
+     "$\\{1\\}$",
+     "an infinite set",
+     "the empty set"
+    ],
+    "answer": 0,
+    "solution": "$0$ is a whole number less than $1$.",
+    "topic": "HOTS · Singleton"
+   },
+   {
+    "prompt": "How many elements are in the set of $2$-digit numbers whose digits add up to $2$?",
+    "options": [
+     "$3$",
+     "$1$",
+     "$2$",
+     "$0$"
+    ],
+    "answer": 2,
+    "solution": "$11$ and $20$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "Assertion (A): $\\{a, b\\} = \\{b, a\\}$.\nReason (R): The order of the elements does not matter in a set.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains why the sets are equal.",
+    "topic": "Equal sets",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\varnothing = \\{0\\}$.\nReason (R): $\\{0\\}$ has one element.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$\\varnothing$ has no element, so A is false.",
+    "topic": "Empty set",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The set of whole numbers is infinite.\nReason (R): The set of whole numbers starts at $1$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "Whole numbers start at $0$.",
+    "topic": "Finite and infinite",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\{x : x \\text{ is a natural number less than } 1\\}$ is empty.\nReason (R): $1$ is the smallest natural number.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "No natural number is less than $1$.",
+    "topic": "Empty set",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 6,
+  "title": "Fractions",
+  "questions": [
+   {
+    "prompt": "The simplest form of $\\frac{18}{27}$ is",
+    "options": [
+     "$\\frac{6}{9}$",
+     "$\\frac{2}{3}$",
+     "$\\frac{9}{18}$",
+     "$\\frac{3}{2}$"
+    ],
+    "answer": 1,
+    "solution": "Divide by the HCF $9$.",
+    "topic": "Simplest form"
+   },
+   {
+    "prompt": "Which fraction is equivalent to $\\frac{3}{5}$?",
+    "options": [
+     "$\\frac{6}{15}$",
+     "$\\frac{8}{10}$",
+     "$\\frac{5}{3}$",
+     "$\\frac{9}{15}$"
+    ],
+    "answer": 3,
+    "solution": "Multiply the top and bottom by $3$.",
+    "topic": "Equivalent fractions"
+   },
+   {
+    "prompt": "$\\frac{29}{6}$ as a mixed number is",
+    "options": [
+     "$4\\frac{5}{6}$",
+     "$4\\frac{1}{6}$",
+     "$5\\frac{4}{6}$",
+     "$3\\frac{5}{6}$"
+    ],
+    "answer": 0,
+    "solution": "$29 = 4 \\times 6 + 5$.",
+    "topic": "Mixed numbers"
+   },
+   {
+    "prompt": "$3\\frac{2}{7}$ as an improper fraction is",
+    "options": [
+     "$\\frac{21}{7}$",
+     "$\\frac{23}{7}$",
+     "$\\frac{13}{7}$",
+     "$\\frac{32}{7}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{3 \\times 7 + 2}{7}$.",
+    "topic": "Mixed numbers"
+   },
+   {
+    "prompt": "Which is bigger, $\\frac{5}{8}$ or $\\frac{3}{5}$?",
+    "options": [
+     "It cannot be found",
+     "$\\frac{5}{8}$",
+     "They are equal",
+     "$\\frac{3}{5}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{25}{40} > \\frac{24}{40}$.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "$\\frac{2}{5} + \\frac{1}{3} =$",
+    "options": [
+     "$\\frac{3}{15}$",
+     "$\\frac{2}{15}$",
+     "$\\frac{3}{8}$",
+     "$\\frac{11}{15}$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{6}{15} + \\frac{5}{15}$.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "$\\frac{5}{6} - \\frac{3}{4} =$",
+    "options": [
+     "$\\frac{2}{2}$",
+     "$\\frac{1}{12}$",
+     "$\\frac{1}{6}$",
+     "$\\frac{2}{12}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{10}{12} - \\frac{9}{12}$.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "$\\frac{3}{4} \\times \\frac{8}{9} =$",
+    "options": [
+     "$\\frac{24}{13}$",
+     "$\\frac{3}{2}$",
+     "$\\frac{11}{13}$",
+     "$\\frac{2}{3}$"
+    ],
+    "answer": 3,
+    "solution": "Cancel: $\\frac{1}{1} \\times \\frac{2}{3}$.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "$\\frac{2}{3}$ of $45$ is",
+    "options": [
+     "$40$",
+     "$15$",
+     "$67\\frac{1}{2}$",
+     "$30$"
+    ],
+    "answer": 3,
+    "solution": "$45 \\div 3 \\times 2 = 30$.",
+    "topic": "Fraction of a quantity"
+   },
+   {
+    "prompt": "$\\frac{3}{5} \\div \\frac{6}{7} =$",
+    "options": [
+     "$\\frac{10}{7}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{7}{10}$",
+     "$\\frac{18}{35}$"
+    ],
+    "answer": 2,
+    "solution": "$\\frac{3}{5} \\times \\frac{7}{6} = \\frac{7}{10}$.",
+    "topic": "Division"
+   },
+   {
+    "prompt": "The reciprocal of $\\frac{4}{9}$ is",
+    "options": [
+     "$\\frac{9}{4}$",
+     "$1$",
+     "$-\\frac{4}{9}$",
+     "$\\frac{4}{9}$"
+    ],
+    "answer": 0,
+    "solution": "Turn the fraction upside down.",
+    "topic": "Reciprocal"
+   },
+   {
+    "prompt": "$1\\frac{1}{2} + 2\\frac{3}{4} =$",
+    "options": [
+     "$4\\frac{1}{4}$",
+     "$3\\frac{1}{4}$",
+     "$4\\frac{3}{4}$",
+     "$3\\frac{4}{6}$"
+    ],
+    "answer": 0,
+    "solution": "$3 + \\frac{2}{4} + \\frac{3}{4} = 3 + 1\\frac{1}{4}$.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "$4 - 2\\frac{1}{3} =$",
+    "options": [
+     "$1\\frac{1}{3}$",
+     "$1\\frac{2}{3}$",
+     "$2\\frac{2}{3}$",
+     "$2\\frac{1}{3}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{12}{3} - \\frac{7}{3} = \\frac{5}{3}$.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "Which is a proper fraction?",
+    "options": [
+     "$\\frac{9}{9}$",
+     "$\\frac{8}{7}$",
+     "$2\\frac{1}{3}$",
+     "$\\frac{7}{8}$"
+    ],
+    "answer": 3,
+    "solution": "Numerator less than denominator.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Which pair is a pair of like fractions?",
+    "options": [
+     "$\\frac{3}{8}$ and $\\frac{3}{5}$",
+     "$\\frac{1}{2}$ and $\\frac{2}{3}$",
+     "$\\frac{3}{8}$ and $\\frac{5}{8}$",
+     "$\\frac{5}{6}$ and $\\frac{6}{5}$"
+    ],
+    "answer": 2,
+    "solution": "Like fractions have the same denominator.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "$5 \\times \\frac{3}{10} =$",
+    "options": [
+     "$15$",
+     "$\\frac{8}{10}$",
+     "$\\frac{3}{50}$",
+     "$1\\frac{1}{2}$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{15}{10} = \\frac{3}{2}$.",
+    "topic": "Multiplication"
+   },
+   {
+    "prompt": "A student wrote $\\frac{2}{5} \\times \\frac{3}{5} = \\frac{6}{5}$. The correct answer is",
+    "options": [
+     "$\\frac{6}{5}$",
+     "$\\frac{1}{5}$",
+     "$\\frac{5}{10}$",
+     "$\\frac{6}{25}$"
+    ],
+    "answer": 3,
+    "solution": "Multiply the denominators too: $5 \\times 5 = 25$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "Which fraction lies between $\\frac{2}{3}$ and $\\frac{3}{4}$?",
+    "options": [
+     "$\\frac{1}{2}$",
+     "$\\frac{17}{24}$",
+     "$\\frac{7}{8}$",
+     "$\\frac{5}{8}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{2}{3} = \\frac{16}{24}$ and $\\frac{3}{4} = \\frac{18}{24}$.",
+    "topic": "HOTS · Between"
+   },
+   {
+    "prompt": "$\\frac{3}{4}$ of a number is $36$. The number is",
+    "options": [
+     "$108$",
+     "$27$",
+     "$48$",
+     "$12$"
+    ],
+    "answer": 2,
+    "solution": "$36 \\div 3 \\times 4 = 48$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "How many pieces of $\\frac{3}{8}$ m can be cut from $6$ m?",
+    "options": [
+     "$12$",
+     "$16$",
+     "$18$",
+     "$2\\frac{1}{4}$"
+    ],
+    "answer": 1,
+    "solution": "$6 \\div \\frac{3}{8} = 6 \\times \\frac{8}{3} = 16$.",
+    "topic": "HOTS · Division"
+   },
+   {
+    "prompt": "$\\frac{1}{2} + \\frac{1}{6} + \\frac{1}{12} + \\frac{1}{20} =$",
+    "options": [
+     "$1$",
+     "$\\frac{4}{5}$",
+     "$\\frac{4}{40}$",
+     "$\\frac{3}{4}$"
+    ],
+    "answer": 1,
+    "solution": "Each term is a difference: $1 - \\frac{1}{2}$, $\\frac{1}{2} - \\frac{1}{3}$, …. The sum is $1 - \\frac{1}{5}$.",
+    "topic": "HOTS · Pattern"
+   },
+   {
+    "prompt": "The ascending order of $\\frac{5}{12}, \\frac{3}{8}, \\frac{7}{24}$ is",
+    "options": [
+     "$\\frac{3}{8}, \\frac{7}{24}, \\frac{5}{12}$",
+     "$\\frac{7}{24}, \\frac{5}{12}, \\frac{3}{8}$",
+     "$\\frac{5}{12}, \\frac{3}{8}, \\frac{7}{24}$",
+     "$\\frac{7}{24}, \\frac{3}{8}, \\frac{5}{12}$"
+    ],
+    "answer": 3,
+    "solution": "In $24$ths: $10, 9, 7$.",
+    "topic": "HOTS · Ordering"
+   },
+   {
+    "prompt": "A tank is $\\frac{2}{5}$ full. After $30$ L is added it is $\\frac{4}{5}$ full. The tank holds",
+    "options": [
+     "$37\\frac{1}{2}$ L",
+     "$150$ L",
+     "$75$ L",
+     "$60$ L"
+    ],
+    "answer": 2,
+    "solution": "$\\frac{2}{5}$ of the tank $= 30$ L.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "Which is greater: $\\frac{2}{3} \\times \\frac{3}{4}$ or $\\frac{2}{3} \\div \\frac{3}{4}$?",
+    "options": [
+     "$\\frac{2}{3} \\div \\frac{3}{4}$",
+     "It cannot be found",
+     "$\\frac{2}{3} \\times \\frac{3}{4}$",
+     "They are equal"
+    ],
+    "answer": 0,
+    "solution": "$\\frac{1}{2}$ and $\\frac{8}{9}$.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "Ravi spends $\\frac{1}{4}$ of his money and then $\\frac{1}{3}$ of the rest. What fraction is left?",
+    "options": [
+     "$\\frac{5}{12}$",
+     "$\\frac{1}{3}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{7}{12}$"
+    ],
+    "answer": 2,
+    "solution": "$\\frac{3}{4} \\times \\frac{2}{3} = \\frac{1}{2}$.",
+    "topic": "HOTS · Fraction of the rest"
+   },
+   {
+    "prompt": "A non-zero number is multiplied by its reciprocal. The answer is",
+    "options": [
+     "$1$",
+     "the number itself",
+     "$0$",
+     "the square of the number"
+    ],
+    "answer": 0,
+    "solution": "$\\frac{a}{b} \\times \\frac{b}{a} = 1$.",
+    "topic": "HOTS · Reciprocal"
+   },
+   {
+    "prompt": "Assertion (A): $\\frac{4}{6} = \\frac{2}{3}$.\nReason (R): Dividing the numerator and the denominator by $2$ gives an equivalent fraction.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Equivalent fractions",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\frac{1}{2} \\div \\frac{1}{4} = \\frac{1}{8}$.\nReason (R): Dividing by a fraction is the same as multiplying by its reciprocal.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$\\frac{1}{2} \\times 4 = 2$, so A is false.",
+    "topic": "Division",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\frac{7}{7} = 1$.\nReason (R): $\\frac{7}{7}$ is a proper fraction.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "The numerator is not less than the denominator, so R is false.",
+    "topic": "Kinds",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\frac{3}{4} \\times \\frac{4}{3} = 1$.\nReason (R): $\\frac{4}{3}$ is the reciprocal of $\\frac{3}{4}$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "A number times its reciprocal is $1$.",
+    "topic": "Reciprocal",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 7,
+  "title": "Decimals",
+  "questions": [
+   {
+    "prompt": "The place value of $6$ in $23.465$ is",
+    "options": [
+     "$0.6$",
+     "$0.06$",
+     "$0.006$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "$6$ is in the hundredths place.",
+    "topic": "Place value"
+   },
+   {
+    "prompt": "$\\frac{3}{4}$ as a decimal is",
+    "options": [
+     "$0.34$",
+     "$3.4$",
+     "$0.43$",
+     "$0.75$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{75}{100}$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "$0.45$ as a fraction in simplest form is",
+    "options": [
+     "$\\frac{9}{2}$",
+     "$\\frac{9}{20}$",
+     "$\\frac{45}{10}$",
+     "$\\frac{4}{5}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{45}{100} = \\frac{9}{20}$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "Which is the largest?",
+    "options": [
+     "$0.79$",
+     "$0.8$",
+     "$0.809$",
+     "$0.081$"
+    ],
+    "answer": 2,
+    "solution": "$0.809 > 0.800 > 0.790 > 0.081$.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "$2.5 + 0.75 =$",
+    "options": [
+     "$0.325$",
+     "$2.75$",
+     "$3.2$",
+     "$3.25$"
+    ],
+    "answer": 3,
+    "solution": "Line up the points: $2.50 + 0.75$.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "$10 - 4.37 =$",
+    "options": [
+     "$6.37$",
+     "$5.63$",
+     "$5.73$",
+     "$6.63$"
+    ],
+    "answer": 1,
+    "solution": "$10.00 - 4.37$.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "₹$7.05$ in paise is",
+    "options": [
+     "$70.5$ paise",
+     "$705$ paise",
+     "$7{,}050$ paise",
+     "$75$ paise"
+    ],
+    "answer": 1,
+    "solution": "₹$1 = 100$ paise.",
+    "topic": "Money"
+   },
+   {
+    "prompt": "$1.5$ kg $+ 750$ g in kg is",
+    "options": [
+     "$9$ kg",
+     "$2.5$ kg",
+     "$1.575$ kg",
+     "$2.25$ kg"
+    ],
+    "answer": 3,
+    "solution": "$1.5 + 0.75 = 2.25$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$4$ m $5$ cm in metres is",
+    "options": [
+     "$4.5$ m",
+     "$45$ m",
+     "$4.005$ m",
+     "$4.05$ m"
+    ],
+    "answer": 3,
+    "solution": "$5$ cm $= 0.05$ m.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$\\frac{5}{8}$ as a decimal is",
+    "options": [
+     "$0.58$",
+     "$0.85$",
+     "$1.6$",
+     "$0.625$"
+    ],
+    "answer": 3,
+    "solution": "$5 \\div 8 = 0.625$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "$0.6 + 0.06 + 0.006 =$",
+    "options": [
+     "$0.0666$",
+     "$0.666$",
+     "$0.18$",
+     "$6.66$"
+    ],
+    "answer": 1,
+    "solution": "Add place by place.",
+    "topic": "Addition"
+   },
+   {
+    "prompt": "The ascending order of $0.3, 0.03, 0.33$ is",
+    "options": [
+     "$0.3, 0.03, 0.33$",
+     "$0.33, 0.3, 0.03$",
+     "$0.03, 0.33, 0.3$",
+     "$0.03, 0.3, 0.33$"
+    ],
+    "answer": 3,
+    "solution": "Compare tenths first.",
+    "topic": "Ordering"
+   },
+   {
+    "prompt": "$12.4 - 8.75 =$",
+    "options": [
+     "$4.65$",
+     "$3.65$",
+     "$3.75$",
+     "$4.35$"
+    ],
+    "answer": 1,
+    "solution": "$12.40 - 8.75$.",
+    "topic": "Subtraction"
+   },
+   {
+    "prompt": "A temperature of $37.2^\\circ$C rises by $1.5^\\circ$C. It becomes",
+    "options": [
+     "$37.35^\\circ$C",
+     "$38.7^\\circ$C",
+     "$35.7^\\circ$C",
+     "$38.2^\\circ$C"
+    ],
+    "answer": 1,
+    "solution": "$37.2 + 1.5$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "Which decimal is equal to $\\frac{1}{5}$?",
+    "options": [
+     "$0.15$",
+     "$0.2$",
+     "$1.5$",
+     "$0.5$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{2}{10}$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "₹$100 -$ ₹$63.40 =$",
+    "options": [
+     "₹$37.60$",
+     "₹$36.40$",
+     "₹$36.60$",
+     "₹$46.60$"
+    ],
+    "answer": 2,
+    "solution": "$100.00 - 63.40$.",
+    "topic": "Money"
+   },
+   {
+    "prompt": "A student wrote $3.2 + 1.45 = 4.47$. The correct answer is",
+    "options": [
+     "$4.65$",
+     "$4.56$",
+     "$1.77$",
+     "$4.47$"
+    ],
+    "answer": 0,
+    "solution": "Line up the points: $3.20 + 1.45$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "How many decimals with two decimal places lie between $1.5$ and $1.6$ (not counting the ends)?",
+    "options": [
+     "$9$",
+     "$100$",
+     "$10$",
+     "$1$"
+    ],
+    "answer": 0,
+    "solution": "$1.51, 1.52, \\dots, 1.59$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "The number halfway between $0.3$ and $0.4$ is",
+    "options": [
+     "$0.34$",
+     "$0.35$",
+     "$0.305$",
+     "$0.7$"
+    ],
+    "answer": 1,
+    "solution": "$(0.3 + 0.4) \\div 2$.",
+    "topic": "HOTS · Between"
+   },
+   {
+    "prompt": "Which number is closest to $2$?",
+    "options": [
+     "$1.98$",
+     "$1.9$",
+     "$2.1$",
+     "$2.05$"
+    ],
+    "answer": 0,
+    "solution": "$1.98$ is only $0.02$ away.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "Use $5$, $0$ and $7$ once each after '$0.$'. The greatest decimal is",
+    "options": [
+     "$0.705$",
+     "$0.750$",
+     "$0.570$",
+     "$0.075$"
+    ],
+    "answer": 1,
+    "solution": "Put the largest digit in the tenths place.",
+    "topic": "HOTS · Digits"
+   },
+   {
+    "prompt": "Pieces of $0.75$ m are cut from a $5$ m ribbon. How many full pieces, and what is left?",
+    "options": [
+     "$6$ pieces, $0.25$ m left",
+     "$5$ pieces, $1.25$ m left",
+     "$7$ pieces, nothing left",
+     "$6$ pieces, $0.5$ m left"
+    ],
+    "answer": 3,
+    "solution": "$6 \\times 0.75 = 4.5$, and $5 - 4.5 = 0.5$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "$2.05$ kg $+ 1.9$ kg $+ 850$ g $=$",
+    "options": [
+     "$4.8$ kg",
+     "$11.85$ kg",
+     "$3.8$ kg",
+     "$4.035$ kg"
+    ],
+    "answer": 0,
+    "solution": "$2.05 + 1.90 + 0.85 = 4.8$.",
+    "topic": "HOTS · Units"
+   },
+   {
+    "prompt": "Ravi has ₹$50$ and buys $3$ pens at ₹$12.75$ each. His change is",
+    "options": [
+     "₹$38.25$",
+     "₹$12.25$",
+     "₹$11.75$",
+     "₹$37.25$"
+    ],
+    "answer": 2,
+    "solution": "$3 \\times 12.75 = 38.25$; $50 - 38.25 = 11.75$.",
+    "topic": "HOTS · Money"
+   },
+   {
+    "prompt": "$0.1 + 0.2 + 0.3 + \\dots + 0.9 =$",
+    "options": [
+     "$0.45$",
+     "$45$",
+     "$4.5$",
+     "$5$"
+    ],
+    "answer": 2,
+    "solution": "$\\frac{45}{10}$.",
+    "topic": "HOTS · Pattern"
+   },
+   {
+    "prompt": "$3$ tenths and $4$ thousandths make",
+    "options": [
+     "$0.304$",
+     "$0.34$",
+     "$3.4$",
+     "$0.034$"
+    ],
+    "answer": 0,
+    "solution": "$0.3 + 0.004$.",
+    "topic": "HOTS · Place value"
+   },
+   {
+    "prompt": "Assertion (A): $0.7 = 0.70$.\nReason (R): Zeros at the end of the decimal part do not change the value.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Place value",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $0.12 > 0.2$.\nReason (R): To compare decimals, compare the digits from the left.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "Tenths: $1 < 2$, so $0.12 < 0.2$. A is false.",
+    "topic": "Comparing",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $\\frac{1}{8} = 0.125$.\nReason (R): $\\frac{1}{8} = 0.18$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$1 \\div 8 = 0.125$, so R is false.",
+    "topic": "Conversion",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $2.5$ m $= 250$ cm.\nReason (R): $1$ m $= 100$ cm.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "$2.5 \\times 100 = 250$.",
+    "topic": "Units",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 8,
+  "title": "Ratio and Proportion",
+  "questions": [
+   {
+    "prompt": "$25 : 40$ in simplest form is",
+    "options": [
+     "$1 : 2$",
+     "$5 : 8$",
+     "$25 : 40$",
+     "$8 : 5$"
+    ],
+    "answer": 1,
+    "solution": "Divide both by $5$.",
+    "topic": "Simplest form"
+   },
+   {
+    "prompt": "The ratio of $50$ cm to $2$ m is",
+    "options": [
+     "$4 : 1$",
+     "$1 : 4$",
+     "$50 : 2$",
+     "$25 : 1$"
+    ],
+    "answer": 1,
+    "solution": "$50 : 200$.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "Which ratio is equivalent to $3 : 4$?",
+    "options": [
+     "$6 : 9$",
+     "$4 : 3$",
+     "$3 : 8$",
+     "$9 : 12$"
+    ],
+    "answer": 3,
+    "solution": "Multiply both terms by $3$.",
+    "topic": "Equivalent ratios"
+   },
+   {
+    "prompt": "The ratio of $15$ minutes to $1$ hour is",
+    "options": [
+     "$15 : 1$",
+     "$1 : 4$",
+     "$4 : 1$",
+     "$1 : 15$"
+    ],
+    "answer": 1,
+    "solution": "$15 : 60$.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "In $2 : 5 = 6 : 15$, the extremes are",
+    "options": [
+     "$2$ and $6$",
+     "$5$ and $15$",
+     "$5$ and $6$",
+     "$2$ and $15$"
+    ],
+    "answer": 3,
+    "solution": "The first and last terms.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "In $2 : 5 = 6 : 15$, the means are",
+    "options": [
+     "$2$ and $5$",
+     "$2$ and $15$",
+     "$6$ and $15$",
+     "$5$ and $6$"
+    ],
+    "answer": 3,
+    "solution": "The middle terms.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "If $3 : 7 = x : 21$, then $x =$",
+    "options": [
+     "$9$",
+     "$7$",
+     "$49$",
+     "$3$"
+    ],
+    "answer": 0,
+    "solution": "$7 \\times 3 = 21$, so $x = 3 \\times 3$.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "₹$60$ is divided in the ratio $1 : 2$. The larger share is",
+    "options": [
+     "₹$45$",
+     "₹$30$",
+     "₹$40$",
+     "₹$20$"
+    ],
+    "answer": 2,
+    "solution": "$3$ parts $= 60$, so $1$ part $= 20$.",
+    "topic": "Dividing in a ratio"
+   },
+   {
+    "prompt": "Are $2, 3, 8, 12$ in proportion?",
+    "options": [
+     "Only $2$ and $3$",
+     "It cannot be found",
+     "Yes",
+     "No"
+    ],
+    "answer": 2,
+    "solution": "$2 \\times 12 = 24 = 3 \\times 8$.",
+    "topic": "Proportion"
+   },
+   {
+    "prompt": "Boys to girls is $3 : 2$. There are $30$ boys. The number of girls is",
+    "options": [
+     "$20$",
+     "$12$",
+     "$45$",
+     "$18$"
+    ],
+    "answer": 0,
+    "solution": "$1$ part $= 10$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The inverse ratio of $2 : 5$ is",
+    "options": [
+     "$2 : 5$",
+     "$5 : 2$",
+     "$10 : 1$",
+     "$1 : 10$"
+    ],
+    "answer": 1,
+    "solution": "Swap the terms.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "Which is greater: $3 : 4$ or $5 : 8$?",
+    "options": [
+     "$3 : 4$",
+     "They are equal",
+     "It cannot be found",
+     "$5 : 8$"
+    ],
+    "answer": 0,
+    "solution": "$0.75 > 0.625$.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "The ratio of $1$ kg to $250$ g is",
+    "options": [
+     "$1 : 4$",
+     "$4 : 1$",
+     "$250 : 1$",
+     "$1 : 250$"
+    ],
+    "answer": 1,
+    "solution": "$1000 : 250$.",
+    "topic": "Same units"
+   },
+   {
+    "prompt": "$A : B = 2 : 3$ and $B : C = 3 : 4$. Then $A : C =$",
+    "options": [
+     "$1 : 2$",
+     "$3 : 4$",
+     "$2 : 3$",
+     "$6 : 12$"
+    ],
+    "answer": 0,
+    "solution": "$A : B : C = 2 : 3 : 4$, so $A : C = 2 : 4 = 1 : 2$.",
+    "topic": "Combined ratios"
+   },
+   {
+    "prompt": "The ratio $6 : 9$ is equal to $10 : \\square$. The missing number is",
+    "options": [
+     "$13$",
+     "$15$",
+     "$18$",
+     "$12$"
+    ],
+    "answer": 1,
+    "solution": "$6 : 9 = 2 : 3 = 10 : 15$.",
+    "topic": "Equivalent ratios"
+   },
+   {
+    "prompt": "A field is $12$ m long and $8$ m wide. Length : width is",
+    "options": [
+     "$3 : 2$",
+     "$12 : 20$",
+     "$2 : 3$",
+     "$4 : 1$"
+    ],
+    "answer": 0,
+    "solution": "$12 : 8$.",
+    "topic": "Ratio"
+   },
+   {
+    "prompt": "A student wrote: '$2$ kg $: 500$ g $= 2 : 500 = 1 : 250$.' The correct ratio is",
+    "options": [
+     "$2 : 5$",
+     "$1 : 4$",
+     "$1 : 250$",
+     "$4 : 1$"
+    ],
+    "answer": 3,
+    "solution": "$2000 : 500 = 4 : 1$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "Two numbers are in the ratio $4 : 5$ and their difference is $6$. The smaller number is",
+    "options": [
+     "$30$",
+     "$20$",
+     "$24$",
+     "$6$"
+    ],
+    "answer": 2,
+    "solution": "$1$ part $= 6$, so $4 \\times 6 = 24$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "Two numbers are in the ratio $3 : 5$. When $4$ is added to each, the ratio becomes $5 : 7$. The numbers are",
+    "options": [
+     "$9$ and $15$",
+     "$6$ and $10$",
+     "$3$ and $5$",
+     "$12$ and $20$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{6 + 4}{10 + 4} = \\frac{10}{14} = \\frac{5}{7}$.",
+    "topic": "HOTS · Changing ratio"
+   },
+   {
+    "prompt": "₹$500$ is divided in the ratio $2 : 3 : 5$. The largest share is",
+    "options": [
+     "₹$100$",
+     "₹$250$",
+     "₹$200$",
+     "₹$150$"
+    ],
+    "answer": 1,
+    "solution": "$10$ parts, $1$ part $= 50$.",
+    "topic": "HOTS · Dividing in a ratio"
+   },
+   {
+    "prompt": "The mean proportional between $4$ and $16$ is",
+    "options": [
+     "$8$",
+     "$12$",
+     "$10$",
+     "$64$"
+    ],
+    "answer": 0,
+    "solution": "$x \\times x = 4 \\times 16 = 64$.",
+    "topic": "HOTS · Mean proportional"
+   },
+   {
+    "prompt": "The fourth proportional to $2$, $5$ and $8$ is",
+    "options": [
+     "$20$",
+     "$11$",
+     "$40$",
+     "$3.2$"
+    ],
+    "answer": 0,
+    "solution": "$2 : 5 = 8 : x$, so $x = \\frac{5 \\times 8}{2}$.",
+    "topic": "HOTS · Fourth proportional"
+   },
+   {
+    "prompt": "On a map, $1$ cm stands for $4$ km. A road of $18$ km is how long on the map?",
+    "options": [
+     "$14$ cm",
+     "$4.5$ cm",
+     "$22$ cm",
+     "$72$ cm"
+    ],
+    "answer": 1,
+    "solution": "$18 \\div 4$.",
+    "topic": "HOTS · Maps"
+   },
+   {
+    "prompt": "Boys to girls is $4 : 5$. What fraction of the class are boys?",
+    "options": [
+     "$\\frac{4}{9}$",
+     "$\\frac{1}{4}$",
+     "$\\frac{5}{9}$",
+     "$\\frac{4}{5}$"
+    ],
+    "answer": 0,
+    "solution": "$4$ parts out of $9$.",
+    "topic": "HOTS · Ratio and fractions"
+   },
+   {
+    "prompt": "Which ratio is not equal to $4 : 6$?",
+    "options": [
+     "$10 : 15$",
+     "$2 : 3$",
+     "$6 : 9$",
+     "$8 : 10$"
+    ],
+    "answer": 3,
+    "solution": "$8 : 10 = 4 : 5$.",
+    "topic": "HOTS · Which is not"
+   },
+   {
+    "prompt": "A recipe uses $2$ cups of rice and $3$ cups of water for $4$ people. How much water is needed for $10$ people?",
+    "options": [
+     "$15$ cups",
+     "$5$ cups",
+     "$6$ cups",
+     "$7.5$ cups"
+    ],
+    "answer": 3,
+    "solution": "$3 \\times \\frac{10}{4} = 7.5$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "Assertion (A): $3 : 5$ and $5 : 3$ are different ratios.\nReason (R): The order of the terms matters in a ratio.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Ratio",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The ratio of $3$ m to $50$ cm is $3 : 50$.\nReason (R): Both quantities must be in the same unit.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$300 : 50 = 6 : 1$, so A is false.",
+    "topic": "Same units",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $4 : 6 = 2 : 3$.\nReason (R): A ratio does not change when the same number is added to both terms.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$1 : 2 \\ne 2 : 3$, so R is false.",
+    "topic": "Equivalent ratios",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $2, 4, 6, 12$ are in proportion.\nReason (R): $2 \\times 12 = 4 \\times 6$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Product of extremes $=$ product of means.",
+    "topic": "Proportion",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 9,
+  "title": "Percentage and Unitary Method",
+  "questions": [
+   {
+    "prompt": "$45\\%$ as a fraction in simplest form is",
+    "options": [
+     "$\\frac{45}{10}$",
+     "$\\frac{9}{20}$",
+     "$\\frac{9}{2}$",
+     "$\\frac{4}{5}$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{45}{100} = \\frac{9}{20}$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "$\\frac{3}{4}$ as a percentage is",
+    "options": [
+     "$34\\%$",
+     "$75\\%$",
+     "$7.5\\%$",
+     "$43\\%$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{3}{4} \\times 100$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "$20\\%$ of $150$ is",
+    "options": [
+     "$300$",
+     "$15$",
+     "$30$",
+     "$20$"
+    ],
+    "answer": 2,
+    "solution": "$\\frac{20}{100} \\times 150$.",
+    "topic": "Percentage of a quantity"
+   },
+   {
+    "prompt": "$0.35$ as a percentage is",
+    "options": [
+     "$350\\%$",
+     "$35\\%$",
+     "$3.5\\%$",
+     "$0.35\\%$"
+    ],
+    "answer": 1,
+    "solution": "Multiply by $100$.",
+    "topic": "Conversion"
+   },
+   {
+    "prompt": "What percent of $40$ is $10$?",
+    "options": [
+     "$10\\%$",
+     "$40\\%$",
+     "$4\\%$",
+     "$25\\%$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{10}{40} \\times 100$.",
+    "topic": "Percentage"
+   },
+   {
+    "prompt": "$8$ pens cost ₹$96$. One pen costs",
+    "options": [
+     "₹$88$",
+     "₹$13$",
+     "₹$12$",
+     "₹$8$"
+    ],
+    "answer": 2,
+    "solution": "$96 \\div 8$.",
+    "topic": "Unitary method"
+   },
+   {
+    "prompt": "$1$ kg of rice costs ₹$55$. $6$ kg cost",
+    "options": [
+     "₹$330$",
+     "₹$355$",
+     "₹$61$",
+     "₹$300$"
+    ],
+    "answer": 0,
+    "solution": "$55 \\times 6$.",
+    "topic": "Unitary method"
+   },
+   {
+    "prompt": "$50\\%$ of $50\\%$ of $200$ is",
+    "options": [
+     "$50$",
+     "$200$",
+     "$100$",
+     "$25$"
+    ],
+    "answer": 0,
+    "solution": "Half of half of $200$.",
+    "topic": "Percentage of a quantity"
+   },
+   {
+    "prompt": "A student scores $36$ out of $50$. The percentage is",
+    "options": [
+     "$14\\%$",
+     "$64\\%$",
+     "$36\\%$",
+     "$72\\%$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{36}{50} \\times 100$.",
+    "topic": "Percentage"
+   },
+   {
+    "prompt": "$1\\%$ of $1200$ is",
+    "options": [
+     "$12$",
+     "$100$",
+     "$120$",
+     "$1.2$"
+    ],
+    "answer": 0,
+    "solution": "$1200 \\div 100$.",
+    "topic": "Percentage of a quantity"
+   },
+   {
+    "prompt": "$100\\%$ of a number is",
+    "options": [
+     "$0$",
+     "the number itself",
+     "double the number",
+     "$100$"
+    ],
+    "answer": 1,
+    "solution": "$100\\%$ means the whole.",
+    "topic": "Meaning"
+   },
+   {
+    "prompt": "$5$ kg of apples cost ₹$200$. $3$ kg cost",
+    "options": [
+     "₹$120$",
+     "₹$600$",
+     "₹$150$",
+     "₹$40$"
+    ],
+    "answer": 0,
+    "solution": "$1$ kg costs ₹$40$.",
+    "topic": "Unitary method"
+   },
+   {
+    "prompt": "$25\\%$ of a number is $15$. The number is",
+    "options": [
+     "$60$",
+     "$375$",
+     "$40$",
+     "$3.75$"
+    ],
+    "answer": 0,
+    "solution": "$15 \\times 4$.",
+    "topic": "Reverse"
+   },
+   {
+    "prompt": "Compare $30\\%$ of $50$ and $50\\%$ of $30$.",
+    "options": [
+     "$30\\%$ of $50$ is greater",
+     "It cannot be found",
+     "They are equal",
+     "$50\\%$ of $30$ is greater"
+    ],
+    "answer": 2,
+    "solution": "Both are $15$.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "A bus travels $60$ km in $1$ hour. At the same speed, in $5$ hours it travels",
+    "options": [
+     "$300$ km",
+     "$65$ km",
+     "$360$ km",
+     "$12$ km"
+    ],
+    "answer": 0,
+    "solution": "$60 \\times 5$.",
+    "topic": "Unitary method"
+   },
+   {
+    "prompt": "Percent means",
+    "options": [
+     "out of $1000$",
+     "times $100$",
+     "out of $100$",
+     "out of $10$"
+    ],
+    "answer": 2,
+    "solution": "Per cent: per hundred.",
+    "topic": "Meaning"
+   },
+   {
+    "prompt": "A student wrote: '$15$ out of $60$ is $15\\%$.' The correct percentage is",
+    "options": [
+     "$45\\%$",
+     "$25\\%$",
+     "$15\\%$",
+     "$4\\%$"
+    ],
+    "answer": 1,
+    "solution": "$\\frac{15}{60} \\times 100 = 25\\%$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "A price of ₹$80$ rises by $25\\%$. The new price is",
+    "options": [
+     "₹$100$",
+     "₹$20$",
+     "₹$60$",
+     "₹$105$"
+    ],
+    "answer": 0,
+    "solution": "$25\\%$ of $80 = 20$.",
+    "topic": "HOTS · Increase"
+   },
+   {
+    "prompt": "In a class, $40\\%$ of the students are girls. There are $18$ girls. How many students are there?",
+    "options": [
+     "$58$",
+     "$45$",
+     "$72$",
+     "$27$"
+    ],
+    "answer": 1,
+    "solution": "$18 \\div 40 \\times 100$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "Which is the cheaper rate for pens: $4$ for ₹$50$ or $6$ for ₹$72$?",
+    "options": [
+     "$6$ for ₹$72$",
+     "It cannot be found",
+     "$4$ for ₹$50$",
+     "Both are the same"
+    ],
+    "answer": 0,
+    "solution": "₹$12.50$ against ₹$12$ for one pen.",
+    "topic": "HOTS · Unitary method"
+   },
+   {
+    "prompt": "$7$ books cost ₹$245$. How many books can you buy for ₹$420$?",
+    "options": [
+     "$12$",
+     "$10$",
+     "$14$",
+     "$13$"
+    ],
+    "answer": 0,
+    "solution": "One book costs ₹$35$; $420 \\div 35 = 12$.",
+    "topic": "HOTS · Unitary method"
+   },
+   {
+    "prompt": "In an exam, $60\\%$ passed and $48$ failed. How many students took the exam?",
+    "options": [
+     "$108$",
+     "$80$",
+     "$120$",
+     "$288$"
+    ],
+    "answer": 2,
+    "solution": "$40\\%$ failed: $48 \\div 40 \\times 100$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "Ravi spends $30\\%$ of ₹$12{,}000$ on food and $20\\%$ on rent. How much is left?",
+    "options": [
+     "₹$6{,}000$",
+     "₹$2{,}400$",
+     "₹$3{,}600$",
+     "₹$8{,}400$"
+    ],
+    "answer": 0,
+    "solution": "$50\\%$ is left.",
+    "topic": "HOTS · Percentage of a quantity"
+   },
+   {
+    "prompt": "$20\\%$ of $x$ equals $30\\%$ of $40$. Then $x =$",
+    "options": [
+     "$24$",
+     "$60$",
+     "$12$",
+     "$80$"
+    ],
+    "answer": 1,
+    "solution": "$30\\%$ of $40 = 12$, and $12$ is $20\\%$ of $60$.",
+    "topic": "HOTS · Reverse"
+   },
+   {
+    "prompt": "A car runs $12$ km on $1$ litre. Petrol costs ₹$100$ a litre. The petrol cost for $300$ km is",
+    "options": [
+     "₹$3{,}600$",
+     "₹$25$",
+     "₹$2{,}500$",
+     "₹$1{,}200$"
+    ],
+    "answer": 2,
+    "solution": "$300 \\div 12 = 25$ litres.",
+    "topic": "HOTS · Unitary method"
+   },
+   {
+    "prompt": "Which is the largest: $0.4$, $\\frac{3}{8}$ or $42\\%$?",
+    "options": [
+     "$42\\%$",
+     "They are equal",
+     "$0.4$",
+     "$\\frac{3}{8}$"
+    ],
+    "answer": 0,
+    "solution": "$40\\%$, $37.5\\%$ and $42\\%$.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "Assertion (A): $50\\% = \\frac{1}{2}$.\nReason (R): Percent means out of $100$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "$\\frac{50}{100} = \\frac{1}{2}$.",
+    "topic": "Meaning",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): If $4$ pens cost ₹$60$, then $6$ pens cost ₹$80$.\nReason (R): The cost goes up in the same ratio as the number of pens.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$6$ pens cost ₹$90$, so A is false.",
+    "topic": "Unitary method",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $25\\%$ of $80$ is $20$.\nReason (R): $25\\% = \\frac{1}{5}$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$25\\% = \\frac{1}{4}$, so R is false.",
+    "topic": "Conversion",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $100\\%$ of $37$ is $37$.\nReason (R): $100\\%$ means the whole quantity.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Meaning",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 10,
+  "title": "Speed, Time and Distance",
+  "questions": [
+   {
+    "prompt": "Speed is found by",
+    "options": [
+     "distance $\\times$ time",
+     "distance $\\div$ time",
+     "distance $+$ time",
+     "time $\\div$ distance"
+    ],
+    "answer": 1,
+    "solution": "Speed is distance per unit time.",
+    "topic": "Formula"
+   },
+   {
+    "prompt": "A car travels $90$ km in $2$ hours. Its speed is",
+    "options": [
+     "$45$ km/h",
+     "$92$ km/h",
+     "$180$ km/h",
+     "$88$ km/h"
+    ],
+    "answer": 0,
+    "solution": "$90 \\div 2$.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "At $40$ km/h for $3$ hours, the distance is",
+    "options": [
+     "$37$ km",
+     "$43$ km",
+     "$120$ km",
+     "$13.3$ km"
+    ],
+    "answer": 2,
+    "solution": "$40 \\times 3$.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "The time to cover $150$ km at $50$ km/h is",
+    "options": [
+     "$7{,}500$ hours",
+     "$2$ hours",
+     "$3$ hours",
+     "$100$ hours"
+    ],
+    "answer": 2,
+    "solution": "$150 \\div 50$.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "A man walks $6$ km in $1$ hour $30$ minutes. His speed is",
+    "options": [
+     "$4$ km/h",
+     "$3$ km/h",
+     "$9$ km/h",
+     "$6$ km/h"
+    ],
+    "answer": 0,
+    "solution": "$6 \\div 1.5$.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "$1$ hour $15$ minutes in hours is",
+    "options": [
+     "$1.15$ h",
+     "$75$ h",
+     "$1.5$ h",
+     "$1.25$ h"
+    ],
+    "answer": 3,
+    "solution": "$15$ minutes $= \\frac{1}{4}$ hour.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "At $60$ km/h, the distance covered in $20$ minutes is",
+    "options": [
+     "$30$ km",
+     "$1{,}200$ km",
+     "$3$ km",
+     "$20$ km"
+    ],
+    "answer": 3,
+    "solution": "$60 \\times \\frac{1}{3}$.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "Which is faster: $30$ km in half an hour, or $50$ km in $1$ hour?",
+    "options": [
+     "It cannot be found",
+     "They are equal",
+     "$30$ km in half an hour",
+     "$50$ km in $1$ hour"
+    ],
+    "answer": 2,
+    "solution": "$60$ km/h against $50$ km/h.",
+    "topic": "Comparing"
+   },
+   {
+    "prompt": "Which is a unit of speed?",
+    "options": [
+     "h",
+     "km/h",
+     "km",
+     "kg"
+    ],
+    "answer": 1,
+    "solution": "Distance per time.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "If the speed is doubled, the time for the same distance",
+    "options": [
+     "becomes half",
+     "becomes $4$ times",
+     "stays the same",
+     "doubles"
+    ],
+    "answer": 0,
+    "solution": "Time $=$ distance $\\div$ speed.",
+    "topic": "Reasoning"
+   },
+   {
+    "prompt": "A cyclist rides at $15$ km/h for $40$ minutes. The distance is",
+    "options": [
+     "$25$ km",
+     "$10$ km",
+     "$6$ km",
+     "$600$ km"
+    ],
+    "answer": 1,
+    "solution": "$15 \\times \\frac{2}{3}$.",
+    "topic": "Distance"
+   },
+   {
+    "prompt": "A bus leaves at $9{:}00$ a.m. and travels for $2$ h $45$ min. It arrives at",
+    "options": [
+     "$11{:}45$ a.m.",
+     "$12{:}45$ p.m.",
+     "$10{:}45$ a.m.",
+     "$11{:}15$ a.m."
+    ],
+    "answer": 0,
+    "solution": "Add $2$ h $45$ min.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "A train covers $360$ km in $4$ h $30$ min. Its speed is",
+    "options": [
+     "$84$ km/h",
+     "$90$ km/h",
+     "$72$ km/h",
+     "$80$ km/h"
+    ],
+    "answer": 3,
+    "solution": "$360 \\div 4.5$.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "Distance is found by",
+    "options": [
+     "speed $\\times$ time",
+     "speed $\\div$ time",
+     "time $\\div$ speed",
+     "speed $+$ time"
+    ],
+    "answer": 0,
+    "solution": "Rearrange speed $=$ distance $\\div$ time.",
+    "topic": "Formula"
+   },
+   {
+    "prompt": "A boy walks at $3$ km/h. He takes how long for $4.5$ km?",
+    "options": [
+     "$1$ hour",
+     "$1.5$ hours",
+     "$13.5$ hours",
+     "$2$ hours"
+    ],
+    "answer": 1,
+    "solution": "$4.5 \\div 3$.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "A runner covers $100$ m in $20$ seconds. The speed is",
+    "options": [
+     "$5$ m/s",
+     "$2{,}000$ m/s",
+     "$0.2$ m/s",
+     "$80$ m/s"
+    ],
+    "answer": 0,
+    "solution": "$100 \\div 20$.",
+    "topic": "Speed"
+   },
+   {
+    "prompt": "A student wrote: 'A car goes $120$ km in $2$ hours, so its speed is $2 \\div 120$.' The correct speed is",
+    "options": [
+     "$60$ km/h",
+     "$240$ km/h",
+     "$\\frac{1}{60}$ km/h",
+     "$122$ km/h"
+    ],
+    "answer": 0,
+    "solution": "Speed $=$ distance $\\div$ time $= 120 \\div 2$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "Asha goes $60$ km at $30$ km/h and returns at $60$ km/h. The total time is",
+    "options": [
+     "$1.5$ hours",
+     "$2$ hours",
+     "$3$ hours",
+     "$4$ hours"
+    ],
+    "answer": 2,
+    "solution": "$2$ hours $+ 1$ hour.",
+    "topic": "HOTS · Two parts"
+   },
+   {
+    "prompt": "In the question above, her average speed for the whole trip is",
+    "options": [
+     "$90$ km/h",
+     "$50$ km/h",
+     "$40$ km/h",
+     "$45$ km/h"
+    ],
+    "answer": 2,
+    "solution": "$120$ km $\\div 3$ hours.",
+    "topic": "HOTS · Average speed"
+   },
+   {
+    "prompt": "Two cars leave the same place in opposite directions at $40$ km/h and $50$ km/h. After $2$ hours they are",
+    "options": [
+     "$20$ km apart",
+     "$100$ km apart",
+     "$180$ km apart",
+     "$90$ km apart"
+    ],
+    "answer": 2,
+    "solution": "They separate at $90$ km/h.",
+    "topic": "HOTS · Opposite directions"
+   },
+   {
+    "prompt": "Two cars leave the same place in the same direction at $40$ km/h and $50$ km/h. After $3$ hours they are",
+    "options": [
+     "$30$ km apart",
+     "$270$ km apart",
+     "$10$ km apart",
+     "$150$ km apart"
+    ],
+    "answer": 0,
+    "solution": "The gap grows by $10$ km each hour.",
+    "topic": "HOTS · Same direction"
+   },
+   {
+    "prompt": "School is $2$ km away. Ravi leaves at $7{:}45$ a.m. and walks at $5$ km/h. He reaches at",
+    "options": [
+     "$8{:}25$ a.m.",
+     "$8{:}05$ a.m.",
+     "$8{:}15$ a.m.",
+     "$8{:}09$ a.m."
+    ],
+    "answer": 3,
+    "solution": "$2 \\div 5 = 0.4$ h $= 24$ minutes.",
+    "topic": "HOTS · Time"
+   },
+   {
+    "prompt": "A driver must cover $240$ km in $4$ hours. He covers $100$ km in the first $2$ hours. His speed for the rest must be",
+    "options": [
+     "$50$ km/h",
+     "$60$ km/h",
+     "$120$ km/h",
+     "$70$ km/h"
+    ],
+    "answer": 3,
+    "solution": "$140$ km in $2$ hours.",
+    "topic": "HOTS · Planning"
+   },
+   {
+    "prompt": "Which is the fastest?",
+    "options": [
+     "$18$ km/h",
+     "$20$ km/h",
+     "$5$ m/s",
+     "$300$ m per minute"
+    ],
+    "answer": 1,
+    "solution": "$5$ m/s $= 18$ km/h and $300$ m/min $= 18$ km/h.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "A runner runs $5$ laps of a $400$ m track in $10$ minutes. His speed is",
+    "options": [
+     "$200$ m per minute",
+     "$2{,}000$ m per minute",
+     "$40$ m per minute",
+     "$50$ m per minute"
+    ],
+    "answer": 0,
+    "solution": "$2{,}000$ m $\\div 10$ min.",
+    "topic": "HOTS · Speed"
+   },
+   {
+    "prompt": "A train at $80$ km/h leaves at $10{:}20$ a.m. for a place $200$ km away. It arrives at",
+    "options": [
+     "$12{:}30$ p.m.",
+     "$12{:}40$ p.m.",
+     "$1{:}00$ p.m.",
+     "$12{:}50$ p.m."
+    ],
+    "answer": 3,
+    "solution": "$200 \\div 80 = 2.5$ hours.",
+    "topic": "HOTS · Time"
+   },
+   {
+    "prompt": "Assertion (A): At $50$ km/h, a car covers $150$ km in $3$ hours.\nReason (R): Distance $=$ speed $\\times$ time.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "$50 \\times 3 = 150$.",
+    "topic": "Formula",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Time $=$ speed $\\times$ distance.\nReason (R): Speed $=$ distance $\\div$ time.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "Time $=$ distance $\\div$ speed, so A is false.",
+    "topic": "Formula",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): In the same time, a faster car covers more distance.\nReason (R): Speed is measured only in km.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "Speed is measured in units such as km/h, so R is false.",
+    "topic": "Reasoning",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): In $30$ minutes at $40$ km/h, a car covers $20$ km.\nReason (R): $30$ minutes $= \\frac{1}{2}$ hour.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "$40 \\times \\frac{1}{2} = 20$.",
+    "topic": "Distance",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 11,
+  "title": "Algebraic Expressions",
+  "questions": [
+   {
+    "prompt": "The variable in $5y - 3$ is",
+    "options": [
+     "$5$",
+     "$-3$",
+     "$5y$",
+     "$y$"
+    ],
+    "answer": 3,
+    "solution": "The letter stands for an unknown number.",
+    "topic": "Variables"
+   },
+   {
+    "prompt": "The coefficient of $x$ in $7x^2 - 4x + 1$ is",
+    "options": [
+     "$-4$",
+     "$7$",
+     "$1$",
+     "$4$"
+    ],
+    "answer": 0,
+    "solution": "The number with $x$ is $-4$.",
+    "topic": "Coefficients"
+   },
+   {
+    "prompt": "The constant term in $3a^2 + 2a - 9$ is",
+    "options": [
+     "$3$",
+     "$9$",
+     "$2$",
+     "$-9$"
+    ],
+    "answer": 3,
+    "solution": "The term without a variable.",
+    "topic": "Terms"
+   },
+   {
+    "prompt": "Which term is like $3xy$?",
+    "options": [
+     "$xy^2$",
+     "$3x^2y$",
+     "$3x$",
+     "$-5yx$"
+    ],
+    "answer": 3,
+    "solution": "Same variables with the same powers.",
+    "topic": "Like terms"
+   },
+   {
+    "prompt": "The value of $2x + 5$ when $x = 4$ is",
+    "options": [
+     "$11$",
+     "$9$",
+     "$29$",
+     "$13$"
+    ],
+    "answer": 3,
+    "solution": "$8 + 5$.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "'$7$ more than a number $p$' is",
+    "options": [
+     "$7p$",
+     "$7 - p$",
+     "$p - 7$",
+     "$p + 7$"
+    ],
+    "answer": 3,
+    "solution": "More than means add.",
+    "topic": "Forming expressions"
+   },
+   {
+    "prompt": "The degree of $4x^3 + 2x - 1$ is",
+    "options": [
+     "$2$",
+     "$3$",
+     "$1$",
+     "$4$"
+    ],
+    "answer": 1,
+    "solution": "The highest power of $x$.",
+    "topic": "Degree"
+   },
+   {
+    "prompt": "How many terms are in $a^2 - 3ab + b^2 - 5$?",
+    "options": [
+     "$3$",
+     "$4$",
+     "$5$",
+     "$2$"
+    ],
+    "answer": 1,
+    "solution": "$a^2$, $-3ab$, $b^2$, $-5$.",
+    "topic": "Terms"
+   },
+   {
+    "prompt": "Which expression is a binomial?",
+    "options": [
+     "$9$",
+     "$7ab$",
+     "$x^2 + x + 1$",
+     "$3x + 5$"
+    ],
+    "answer": 3,
+    "solution": "A binomial has two unlike terms.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "Which expression is a monomial?",
+    "options": [
+     "$x^2 - 1$",
+     "$a + b$",
+     "$a - b + 1$",
+     "$7ab$"
+    ],
+    "answer": 3,
+    "solution": "A monomial has one term.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "$3a + 5a =$",
+    "options": [
+     "$8a$",
+     "$15a$",
+     "$8a^2$",
+     "$8$"
+    ],
+    "answer": 0,
+    "solution": "Add the coefficients.",
+    "topic": "Like terms"
+   },
+   {
+    "prompt": "The perimeter of a square of side $x$ is",
+    "options": [
+     "$x + 4$",
+     "$x^2$",
+     "$2x$",
+     "$4x$"
+    ],
+    "answer": 3,
+    "solution": "$x + x + x + x$.",
+    "topic": "Forming expressions"
+   },
+   {
+    "prompt": "'Twice a number $n$ decreased by $3$' is",
+    "options": [
+     "$n - 6$",
+     "$2(n - 3)$",
+     "$2n - 3$",
+     "$3 - 2n$"
+    ],
+    "answer": 2,
+    "solution": "Double first, then subtract $3$.",
+    "topic": "Forming expressions"
+   },
+   {
+    "prompt": "If $a = -1$, then $a^2 + a =$",
+    "options": [
+     "$-2$",
+     "$1$",
+     "$2$",
+     "$0$"
+    ],
+    "answer": 3,
+    "solution": "$1 + (-1)$.",
+    "topic": "Substitution"
+   },
+   {
+    "prompt": "The $n$th term of $3, 6, 9, 12, \\dots$ is",
+    "options": [
+     "$n^3$",
+     "$3n$",
+     "$n + 3$",
+     "$3n + 3$"
+    ],
+    "answer": 1,
+    "solution": "Each term is $3$ times its position.",
+    "topic": "Patterns"
+   },
+   {
+    "prompt": "Which expression is a trinomial?",
+    "options": [
+     "$x^2 - 1$",
+     "$2x$",
+     "$x^2 + x + 1$",
+     "$x + 1$"
+    ],
+    "answer": 2,
+    "solution": "Three unlike terms.",
+    "topic": "Kinds"
+   },
+   {
+    "prompt": "A student wrote $3x + 4y = 7xy$. What is correct?",
+    "options": [
+     "$7xy$ is correct",
+     "$12xy$",
+     "$7(x + y)$",
+     "$3x + 4y$ cannot be simplified"
+    ],
+    "answer": 3,
+    "solution": "$3x$ and $4y$ are unlike terms.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The value of $3x^2 - 2x$ when $x = -2$ is",
+    "options": [
+     "$40$",
+     "$-16$",
+     "$16$",
+     "$8$"
+    ],
+    "answer": 2,
+    "solution": "$3 \\times 4 - 2 \\times (-2) = 12 + 4$.",
+    "topic": "HOTS · Substitution"
+   },
+   {
+    "prompt": "The cost of $5$ pens at ₹$x$ each and $2$ books at ₹$y$ each is",
+    "options": [
+     "₹$7xy$",
+     "₹$(5 + x)(2 + y)$",
+     "₹$(5x + 2y)$",
+     "₹$10xy$"
+    ],
+    "answer": 2,
+    "solution": "$5 \\times x + 2 \\times y$.",
+    "topic": "HOTS · Forming expressions"
+   },
+   {
+    "prompt": "When $x = 3$, which expression has the greatest value?",
+    "options": [
+     "$x^2$",
+     "$2x$",
+     "$x + 5$",
+     "$10 - x$"
+    ],
+    "answer": 0,
+    "solution": "$9$, $6$, $8$ and $7$.",
+    "topic": "HOTS · Comparing"
+   },
+   {
+    "prompt": "Triangles in a row use $3, 5, 7, \\dots$ sticks. The number of sticks for $n$ triangles is",
+    "options": [
+     "$2n + 1$",
+     "$3n$",
+     "$n + 2$",
+     "$2n + 3$"
+    ],
+    "answer": 0,
+    "solution": "$1$ triangle: $3$; each new one adds $2$.",
+    "topic": "HOTS · Patterns"
+   },
+   {
+    "prompt": "A father's age is $3$ years more than twice his son's age $s$. The father's age is",
+    "options": [
+     "$2(s + 3)$",
+     "$3s + 2$",
+     "$s + 5$",
+     "$2s + 3$"
+    ],
+    "answer": 3,
+    "solution": "Twice $s$, then add $3$.",
+    "topic": "HOTS · Forming expressions"
+   },
+   {
+    "prompt": "$2a + b = 10$ and $a = 3$. Then $b =$",
+    "options": [
+     "$16$",
+     "$13$",
+     "$4$",
+     "$7$"
+    ],
+    "answer": 2,
+    "solution": "$6 + b = 10$.",
+    "topic": "HOTS · Substitution"
+   },
+   {
+    "prompt": "$(5a - 2b) + (3b - 2a) =$",
+    "options": [
+     "$3a - 5b$",
+     "$7a + b$",
+     "$3a + b$",
+     "$3a + 5b$"
+    ],
+    "answer": 2,
+    "solution": "$5a - 2a = 3a$; $-2b + 3b = b$.",
+    "topic": "HOTS · Like terms"
+   },
+   {
+    "prompt": "Which pair are like terms?",
+    "options": [
+     "$m^2$ and $n^2$",
+     "$4m$ and $4n$",
+     "$4m^2n$ and $-m^2n$",
+     "$4mn$ and $4m^2n$"
+    ],
+    "answer": 2,
+    "solution": "Same letters with the same powers.",
+    "topic": "HOTS · Like terms"
+   },
+   {
+    "prompt": "For every whole number $n$, which expression is always even?",
+    "options": [
+     "$n^2$",
+     "$3n$",
+     "$n + 1$",
+     "$2n$"
+    ],
+    "answer": 3,
+    "solution": "$2n$ is a multiple of $2$. The others are odd for some $n$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Assertion (A): $5x$ and $-3x$ are like terms.\nReason (R): Like terms have the same variables with the same powers.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Like terms",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $x^2 + x$ is a monomial.\nReason (R): A binomial has two unlike terms.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$x^2 + x$ has two terms, so it is a binomial.",
+    "topic": "Kinds",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The coefficient of $y$ in $-y$ is $-1$.\nReason (R): $-y$ has no coefficient.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$-y = -1 \\times y$.",
+    "topic": "Coefficients",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): When $x = 2$, $3x + 1 = 7$.\nReason (R): To find the value, put $2$ in place of $x$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "$3 \\times 2 + 1 = 7$.",
+    "topic": "Substitution",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 12,
+  "title": "Simple Linear Equations",
+  "questions": [
+   {
+    "prompt": "$x + 7 = 15$ gives $x =$",
+    "options": [
+     "$-8$",
+     "$7$",
+     "$8$",
+     "$22$"
+    ],
+    "answer": 2,
+    "solution": "Subtract $7$ from both sides.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$5x = 45$ gives $x =$",
+    "options": [
+     "$225$",
+     "$50$",
+     "$40$",
+     "$9$"
+    ],
+    "answer": 3,
+    "solution": "Divide both sides by $5$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$\\frac{y}{3} = 6$ gives $y =$",
+    "options": [
+     "$18$",
+     "$2$",
+     "$9$",
+     "$3$"
+    ],
+    "answer": 0,
+    "solution": "Multiply both sides by $3$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$2x - 3 = 11$ gives $x =$",
+    "options": [
+     "$14$",
+     "$8$",
+     "$4$",
+     "$7$"
+    ],
+    "answer": 3,
+    "solution": "$2x = 14$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "Which is an equation?",
+    "options": [
+     "$2x + 1$",
+     "$2x + 1 = 7$",
+     "$x$",
+     "$2x + 1 > 7$"
+    ],
+    "answer": 1,
+    "solution": "An equation has an equals sign.",
+    "topic": "Meaning"
+   },
+   {
+    "prompt": "$10 - x = 4$ gives $x =$",
+    "options": [
+     "$4$",
+     "$-6$",
+     "$14$",
+     "$6$"
+    ],
+    "answer": 3,
+    "solution": "$10 - 6 = 4$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$3(x + 2) = 21$ gives $x =$",
+    "options": [
+     "$6$",
+     "$7$",
+     "$5$",
+     "$19$"
+    ],
+    "answer": 2,
+    "solution": "$x + 2 = 7$.",
+    "topic": "Brackets"
+   },
+   {
+    "prompt": "Is $x = 4$ a solution of $3x - 2 = 10$?",
+    "options": [
+     "No",
+     "Only if $x$ is $3$",
+     "Yes",
+     "It cannot be found"
+    ],
+    "answer": 2,
+    "solution": "$12 - 2 = 10$.",
+    "topic": "Checking"
+   },
+   {
+    "prompt": "'$4$ more than a number is $11$' is the equation",
+    "options": [
+     "$x - 4 = 11$",
+     "$11 + x = 4$",
+     "$x + 4 = 11$",
+     "$4x = 11$"
+    ],
+    "answer": 2,
+    "solution": "More than means add.",
+    "topic": "Forming equations"
+   },
+   {
+    "prompt": "$\\frac{x}{2} + 1 = 6$ gives $x =$",
+    "options": [
+     "$10$",
+     "$14$",
+     "$12$",
+     "$5$"
+    ],
+    "answer": 0,
+    "solution": "$\\frac{x}{2} = 5$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$7x + 3 = 5x + 11$ gives $x =$",
+    "options": [
+     "$4$",
+     "$7$",
+     "$1$",
+     "$8$"
+    ],
+    "answer": 0,
+    "solution": "$2x = 8$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "In $x + 5 = 12$, moving $+5$ to the right side gives",
+    "options": [
+     "$x = 5 - 12$",
+     "$x = 12 \\times 5$",
+     "$x = 12 + 5$",
+     "$x = 12 - 5$"
+    ],
+    "answer": 3,
+    "solution": "Transposing changes $+$ to $-$.",
+    "topic": "Transposing"
+   },
+   {
+    "prompt": "A square has perimeter $48$ cm. Its side is",
+    "options": [
+     "$12$ cm",
+     "$44$ cm",
+     "$24$ cm",
+     "$192$ cm"
+    ],
+    "answer": 0,
+    "solution": "$4s = 48$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "The sum of two consecutive numbers is $25$. The smaller is",
+    "options": [
+     "$11$",
+     "$24$",
+     "$13$",
+     "$12$"
+    ],
+    "answer": 3,
+    "solution": "$x + x + 1 = 25$.",
+    "topic": "Word problem"
+   },
+   {
+    "prompt": "$4x = -20$ gives $x =$",
+    "options": [
+     "$-5$",
+     "$-16$",
+     "$5$",
+     "$-80$"
+    ],
+    "answer": 0,
+    "solution": "$-20 \\div 4$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "$x - 8 = -3$ gives $x =$",
+    "options": [
+     "$-11$",
+     "$5$",
+     "$11$",
+     "$-5$"
+    ],
+    "answer": 1,
+    "solution": "$x = -3 + 8$.",
+    "topic": "Solving"
+   },
+   {
+    "prompt": "A student wrote: '$\\frac{x}{5} = 2$, so $x = \\frac{2}{5}$.' The correct answer is",
+    "options": [
+     "$10$",
+     "$7$",
+     "$\\frac{2}{5}$",
+     "$\\frac{5}{2}$"
+    ],
+    "answer": 0,
+    "solution": "Multiply both sides by $5$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "For what value of $k$ is $x = 2$ a solution of $3x + k = 10$?",
+    "options": [
+     "$4$",
+     "$6$",
+     "$2$",
+     "$16$"
+    ],
+    "answer": 0,
+    "solution": "$6 + k = 10$.",
+    "topic": "HOTS · Unknown constant"
+   },
+   {
+    "prompt": "A father is $30$ years older than his son. In $5$ years, the father will be $3$ times as old as the son. The son's age now is",
+    "options": [
+     "$15$ years",
+     "$5$ years",
+     "$20$ years",
+     "$10$ years"
+    ],
+    "answer": 3,
+    "solution": "$s + 35 = 3(s + 5)$, so $2s = 20$.",
+    "topic": "HOTS · Ages"
+   },
+   {
+    "prompt": "Three consecutive even numbers add up to $66$. The largest is",
+    "options": [
+     "$22$",
+     "$26$",
+     "$20$",
+     "$24$"
+    ],
+    "answer": 3,
+    "solution": "$20 + 22 + 24 = 66$.",
+    "topic": "HOTS · Consecutive numbers"
+   },
+   {
+    "prompt": "The length of a rectangle is twice its breadth. Its perimeter is $36$ cm. The length is",
+    "options": [
+     "$24$ cm",
+     "$6$ cm",
+     "$12$ cm",
+     "$18$ cm"
+    ],
+    "answer": 2,
+    "solution": "$2(2b + b) = 36$, so $b = 6$.",
+    "topic": "HOTS · Geometry link"
+   },
+   {
+    "prompt": "A number is multiplied by $3$ and $4$ is subtracted. The answer is $20$. The number is",
+    "options": [
+     "$24$",
+     "$\\frac{16}{3}$",
+     "$8$",
+     "$6$"
+    ],
+    "answer": 2,
+    "solution": "$3x - 4 = 20$.",
+    "topic": "HOTS · Think of a number"
+   },
+   {
+    "prompt": "A purse has $20$ coins of ₹$2$ and ₹$5$, worth ₹$55$ in all. How many ₹$5$ coins are there?",
+    "options": [
+     "$15$",
+     "$5$",
+     "$11$",
+     "$7$"
+    ],
+    "answer": 1,
+    "solution": "$2(20 - f) + 5f = 55$, so $3f = 15$.",
+    "topic": "HOTS · Coins"
+   },
+   {
+    "prompt": "Which equation has the solution $x = -3$?",
+    "options": [
+     "$2x - 9 = 3$",
+     "$x + 3 = 6$",
+     "$2x + 9 = 3$",
+     "$3x = 9$"
+    ],
+    "answer": 2,
+    "solution": "$-6 + 9 = 3$.",
+    "topic": "HOTS · Checking"
+   },
+   {
+    "prompt": "Half a number plus a third of it is $10$. The number is",
+    "options": [
+     "$6$",
+     "$20$",
+     "$60$",
+     "$12$"
+    ],
+    "answer": 3,
+    "solution": "$\\frac{x}{2} + \\frac{x}{3} = \\frac{5x}{6} = 10$.",
+    "topic": "HOTS · Fractions"
+   },
+   {
+    "prompt": "A taxi charges ₹$30$ plus ₹$12$ per km. A ride costs ₹$150$. The distance is",
+    "options": [
+     "$10$ km",
+     "$12.5$ km",
+     "$9$ km",
+     "$15$ km"
+    ],
+    "answer": 0,
+    "solution": "$30 + 12k = 150$.",
+    "topic": "HOTS · Word problem"
+   },
+   {
+    "prompt": "Assertion (A): $x = 6$ is the solution of $2x - 5 = 7$.\nReason (R): $2 \\times 6 - 5 = 7$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "Putting $6$ in the equation makes both sides equal.",
+    "topic": "Checking",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): If $x + 3 = 8$, then $x = 11$.\nReason (R): The same number can be subtracted from both sides of an equation.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$x = 8 - 3 = 5$.",
+    "topic": "Solving",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): An equation has an equals sign.\nReason (R): An expression always has an equals sign.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "An expression has no equals sign.",
+    "topic": "Meaning",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): If $4x = 28$, then $x = 7$.\nReason (R): Both sides can be divided by $4$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains the step.",
+    "topic": "Solving",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 13,
+  "title": "Basic Geometrical Ideas",
+  "questions": [
+   {
+    "prompt": "A line segment has",
+    "options": [
+     "many end points",
+     "two end points",
+     "one end point",
+     "no end point"
+    ],
+    "answer": 1,
+    "solution": "It starts and stops.",
+    "topic": "Line segment"
+   },
+   {
+    "prompt": "A ray has",
+    "options": [
+     "no end point",
+     "a fixed length",
+     "two end points",
+     "one end point"
+    ],
+    "answer": 3,
+    "solution": "It goes on in one direction.",
+    "topic": "Ray"
+   },
+   {
+    "prompt": "A line has",
+    "options": [
+     "no end point",
+     "one end point",
+     "a fixed length",
+     "two end points"
+    ],
+    "answer": 0,
+    "solution": "It goes on in both directions.",
+    "topic": "Line"
+   },
+   {
+    "prompt": "Points that lie on the same line are",
+    "options": [
+     "perpendicular",
+     "concurrent",
+     "parallel",
+     "collinear"
+    ],
+    "answer": 3,
+    "solution": "Co-linear: on one line.",
+    "topic": "Collinear points"
+   },
+   {
+    "prompt": "Two lines that meet at a point are",
+    "options": [
+     "parallel lines",
+     "intersecting lines",
+     "segments",
+     "rays"
+    ],
+    "answer": 1,
+    "solution": "They cross each other.",
+    "topic": "Lines"
+   },
+   {
+    "prompt": "Lines in one plane that never meet are",
+    "options": [
+     "intersecting lines",
+     "curves",
+     "perpendicular lines",
+     "parallel lines"
+    ],
+    "answer": 3,
+    "solution": "They stay the same distance apart.",
+    "topic": "Lines"
+   },
+   {
+    "prompt": "A closed figure made only of line segments is a",
+    "options": [
+     "circle",
+     "curve",
+     "ray",
+     "polygon"
+    ],
+    "answer": 3,
+    "solution": "For example, a triangle.",
+    "topic": "Polygons"
+   },
+   {
+    "prompt": "A triangle has how many vertices?",
+    "options": [
+     "$2$",
+     "$3$",
+     "$4$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "One at each corner.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "A circle has radius $6$ cm. Its diameter is",
+    "options": [
+     "$3$ cm",
+     "$36$ cm",
+     "$6$ cm",
+     "$12$ cm"
+    ],
+    "answer": 3,
+    "solution": "Diameter $= 2 \\times$ radius.",
+    "topic": "Circles"
+   },
+   {
+    "prompt": "A segment joining two points on a circle is a",
+    "options": [
+     "arc",
+     "sector",
+     "chord",
+     "radius"
+    ],
+    "answer": 2,
+    "solution": "Definition of a chord.",
+    "topic": "Circles"
+   },
+   {
+    "prompt": "The longest chord of a circle is the",
+    "options": [
+     "radius",
+     "tangent",
+     "diameter",
+     "arc"
+    ],
+    "answer": 2,
+    "solution": "It passes through the centre.",
+    "topic": "Circles"
+   },
+   {
+    "prompt": "The region between two radii and the arc between them is a",
+    "options": [
+     "sector",
+     "segment",
+     "chord",
+     "diameter"
+    ],
+    "answer": 0,
+    "solution": "Like a slice of pizza.",
+    "topic": "Circles"
+   },
+   {
+    "prompt": "A quadrilateral has how many diagonals?",
+    "options": [
+     "$1$",
+     "$4$",
+     "$3$",
+     "$2$"
+    ],
+    "answer": 3,
+    "solution": "Each joins opposite corners.",
+    "topic": "Quadrilaterals"
+   },
+   {
+    "prompt": "A point inside a closed figure lies in its",
+    "options": [
+     "interior",
+     "exterior",
+     "boundary",
+     "vertex"
+    ],
+    "answer": 0,
+    "solution": "Inside is the interior.",
+    "topic": "Regions"
+   },
+   {
+    "prompt": "Which is an open figure?",
+    "options": [
+     "a circle",
+     "a triangle",
+     "a square",
+     "the letter C"
+    ],
+    "answer": 3,
+    "solution": "Its ends are not joined.",
+    "topic": "Open and closed"
+   },
+   {
+    "prompt": "An angle is formed by two rays with a common",
+    "options": [
+     "middle point",
+     "direction",
+     "end point",
+     "length"
+    ],
+    "answer": 2,
+    "solution": "The common end point is the vertex.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "A student wrote: 'A line segment can be extended without end in both directions.' Which figure is the student describing?",
+    "options": [
+     "a ray",
+     "a chord",
+     "a line segment",
+     "a line"
+    ],
+    "answer": 3,
+    "solution": "A line goes on in both directions; a segment does not.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "Four points are marked, with no three on one line. How many lines pass through two of them?",
+    "options": [
+     "$8$",
+     "$4$",
+     "$12$",
+     "$6$"
+    ],
+    "answer": 3,
+    "solution": "$3 + 2 + 1 = 6$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "In $\\triangle ABC$, a segment joins $A$ to a point $D$ on $BC$. How many triangles are there?",
+    "options": [
+     "$3$",
+     "$1$",
+     "$2$",
+     "$4$"
+    ],
+    "answer": 0,
+    "solution": "$ABD$, $ADC$ and $ABC$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "Six points are marked on a circle. How many chords join them in pairs?",
+    "options": [
+     "$30$",
+     "$15$",
+     "$12$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "$5 + 4 + 3 + 2 + 1 = 15$.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "A circle has centre $O$ and radius $5$ cm. Point $R$ is $7$ cm from $O$. $R$ lies",
+    "options": [
+     "at the centre",
+     "in the interior",
+     "on the circle",
+     "in the exterior"
+    ],
+    "answer": 3,
+    "solution": "$7 > 5$.",
+    "topic": "HOTS · Regions"
+   },
+   {
+    "prompt": "Which statement is always true?",
+    "options": [
+     "Every diameter is a chord",
+     "Every arc is a segment",
+     "Every radius is a chord",
+     "Every chord is a diameter"
+    ],
+    "answer": 0,
+    "solution": "A diameter joins two points of the circle.",
+    "topic": "HOTS · Circles"
+   },
+   {
+    "prompt": "How many diagonals does a pentagon have?",
+    "options": [
+     "$10$",
+     "$2$",
+     "$3$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "Each corner joins $2$ others: $5 \\times 2 \\div 2$.",
+    "topic": "HOTS · Polygons"
+   },
+   {
+    "prompt": "Two circles have the same centre and different radii. They are called",
+    "options": [
+     "parallel circles",
+     "equal circles",
+     "intersecting circles",
+     "concentric circles"
+    ],
+    "answer": 3,
+    "solution": "Same centre.",
+    "topic": "HOTS · Circles"
+   },
+   {
+    "prompt": "Two different straight lines can share at most how many points?",
+    "options": [
+     "$2$",
+     "$1$",
+     "$0$",
+     "infinitely many"
+    ],
+    "answer": 1,
+    "solution": "Two lines meet at one point or not at all.",
+    "topic": "HOTS · Lines"
+   },
+   {
+    "prompt": "$O$ is the centre and $OA = 4$ cm. $AB$ passes through $O$, with $B$ on the circle. Then $AB =$",
+    "options": [
+     "$16$ cm",
+     "$2$ cm",
+     "$8$ cm",
+     "$4$ cm"
+    ],
+    "answer": 2,
+    "solution": "$AB$ is a diameter.",
+    "topic": "HOTS · Circles"
+   },
+   {
+    "prompt": "Assertion (A): Every diameter passes through the centre.\nReason (R): A diameter is a chord that passes through the centre.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R is the definition that gives A.",
+    "topic": "Circles",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Two different lines can meet at two points.\nReason (R): Two different straight lines meet at one point at most.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "A is false; R is true.",
+    "topic": "Lines",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A circle is a closed figure.\nReason (R): A circle is made of line segments.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "A circle is a curve, so R is false.",
+    "topic": "Open and closed",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A ray has one end point.\nReason (R): A ray goes on without end in one direction.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Ray",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 14,
+  "title": "Angles, Triangles and Quadrilaterals",
+  "questions": [
+   {
+    "prompt": "Which angle is acute?",
+    "options": [
+     "$35^\\circ$",
+     "$180^\\circ$",
+     "$120^\\circ$",
+     "$90^\\circ$"
+    ],
+    "answer": 0,
+    "solution": "Acute angles are less than $90^\\circ$.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "Which angle is reflex?",
+    "options": [
+     "$250^\\circ$",
+     "$90^\\circ$",
+     "$180^\\circ$",
+     "$150^\\circ$"
+    ],
+    "answer": 0,
+    "solution": "Between $180^\\circ$ and $360^\\circ$.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "A right angle measures",
+    "options": [
+     "$360^\\circ$",
+     "$90^\\circ$",
+     "$45^\\circ$",
+     "$180^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "A quarter turn.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "Perpendicular lines meet at",
+    "options": [
+     "$180^\\circ$",
+     "$60^\\circ$",
+     "$90^\\circ$",
+     "$45^\\circ$"
+    ],
+    "answer": 2,
+    "solution": "They make right angles.",
+    "topic": "Lines"
+   },
+   {
+    "prompt": "A triangle with all sides equal is",
+    "options": [
+     "equilateral",
+     "isosceles only",
+     "scalene",
+     "right-angled"
+    ],
+    "answer": 0,
+    "solution": "All three sides equal.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "A triangle with one angle of $90^\\circ$ is",
+    "options": [
+     "right-angled",
+     "acute-angled",
+     "equilateral",
+     "obtuse-angled"
+    ],
+    "answer": 0,
+    "solution": "It has a right angle.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "A triangle with sides $4$ cm, $4$ cm and $6$ cm is",
+    "options": [
+     "scalene",
+     "right-angled",
+     "isosceles",
+     "equilateral"
+    ],
+    "answer": 2,
+    "solution": "Two equal sides.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "A quadrilateral with exactly one pair of parallel sides is a",
+    "options": [
+     "rhombus",
+     "parallelogram",
+     "rectangle",
+     "trapezium"
+    ],
+    "answer": 3,
+    "solution": "Definition of a trapezium.",
+    "topic": "Quadrilaterals"
+   },
+   {
+    "prompt": "A quadrilateral with all sides equal and all angles $90^\\circ$ is a",
+    "options": [
+     "square",
+     "rectangle",
+     "rhombus",
+     "kite"
+    ],
+    "answer": 0,
+    "solution": "Both conditions together.",
+    "topic": "Quadrilaterals"
+   },
+   {
+    "prompt": "A quadrilateral whose opposite sides are parallel is a",
+    "options": [
+     "trapezium",
+     "parallelogram",
+     "kite",
+     "triangle"
+    ],
+    "answer": 1,
+    "solution": "Two pairs of parallel sides.",
+    "topic": "Quadrilaterals"
+   },
+   {
+    "prompt": "A polygon with $6$ sides is a",
+    "options": [
+     "heptagon",
+     "hexagon",
+     "octagon",
+     "pentagon"
+    ],
+    "answer": 1,
+    "solution": "Hexa means six.",
+    "topic": "Polygons"
+   },
+   {
+    "prompt": "The angles of a triangle add up to",
+    "options": [
+     "$270^\\circ$",
+     "$360^\\circ$",
+     "$90^\\circ$",
+     "$180^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "Angle sum of a triangle.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "Two angles of a triangle are $50^\\circ$ and $60^\\circ$. The third angle is",
+    "options": [
+     "$80^\\circ$",
+     "$60^\\circ$",
+     "$110^\\circ$",
+     "$70^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "$180 - 110$.",
+    "topic": "Triangles"
+   },
+   {
+    "prompt": "An angle of $180^\\circ$ is a",
+    "options": [
+     "reflex angle",
+     "complete angle",
+     "straight angle",
+     "right angle"
+    ],
+    "answer": 2,
+    "solution": "Half a turn.",
+    "topic": "Angles"
+   },
+   {
+    "prompt": "A rhombus has",
+    "options": [
+     "no parallel sides",
+     "three equal sides",
+     "four right angles always",
+     "four equal sides"
+    ],
+    "answer": 3,
+    "solution": "Definition of a rhombus.",
+    "topic": "Quadrilaterals"
+   },
+   {
+    "prompt": "A regular polygon has",
+    "options": [
+     "one right angle",
+     "all sides and all angles equal",
+     "all sides equal only",
+     "all angles equal only"
+    ],
+    "answer": 1,
+    "solution": "Both sides and angles are equal.",
+    "topic": "Polygons"
+   },
+   {
+    "prompt": "A student wrote: 'A triangle can have two obtuse angles.' What is correct?",
+    "options": [
+     "It cannot, because two obtuse angles add to more than $180^\\circ$",
+     "It can, if the third angle is small",
+     "It can, if it is isosceles",
+     "Only a right triangle can"
+    ],
+    "answer": 0,
+    "solution": "The three angles add up to exactly $180^\\circ$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The angle between the hands of a clock at $2{:}00$ is",
+    "options": [
+     "$120^\\circ$",
+     "$90^\\circ$",
+     "$30^\\circ$",
+     "$60^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "$2 \\times 30^\\circ$.",
+    "topic": "HOTS · Clock angles"
+   },
+   {
+    "prompt": "Three angles of a quadrilateral are $80^\\circ$, $90^\\circ$ and $100^\\circ$. The fourth is",
+    "options": [
+     "$100^\\circ$",
+     "$90^\\circ$",
+     "$110^\\circ$",
+     "$80^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "The angles of a quadrilateral add up to $360^\\circ$.",
+    "topic": "HOTS · Quadrilaterals"
+   },
+   {
+    "prompt": "Which three lengths can make a triangle?",
+    "options": [
+     "$1, 2, 3$",
+     "$2, 3, 6$",
+     "$4, 4, 9$",
+     "$5, 6, 10$"
+    ],
+    "answer": 3,
+    "solution": "Any two sides must add up to more than the third.",
+    "topic": "HOTS · Triangle inequality"
+   },
+   {
+    "prompt": "The angles of a triangle are in the ratio $1 : 2 : 3$. The largest angle is",
+    "options": [
+     "$30^\\circ$",
+     "$60^\\circ$",
+     "$120^\\circ$",
+     "$90^\\circ$"
+    ],
+    "answer": 3,
+    "solution": "$6$ parts $= 180^\\circ$.",
+    "topic": "HOTS · Triangles"
+   },
+   {
+    "prompt": "Which shape is always a rectangle?",
+    "options": [
+     "a rhombus",
+     "a square",
+     "a kite",
+     "a trapezium"
+    ],
+    "answer": 1,
+    "solution": "A square has four right angles.",
+    "topic": "HOTS · Quadrilaterals"
+   },
+   {
+    "prompt": "How many diagonals does a hexagon have?",
+    "options": [
+     "$6$",
+     "$3$",
+     "$12$",
+     "$9$"
+    ],
+    "answer": 3,
+    "solution": "$6 \\times 3 \\div 2 = 9$.",
+    "topic": "HOTS · Polygons"
+   },
+   {
+    "prompt": "Each base angle of an isosceles triangle is $50^\\circ$. The third angle is",
+    "options": [
+     "$130^\\circ$",
+     "$100^\\circ$",
+     "$80^\\circ$",
+     "$50^\\circ$"
+    ],
+    "answer": 2,
+    "solution": "$180 - 100$.",
+    "topic": "HOTS · Triangles"
+   },
+   {
+    "prompt": "Two right angles together make",
+    "options": [
+     "an acute angle",
+     "a reflex angle",
+     "a straight angle",
+     "a complete turn"
+    ],
+    "answer": 2,
+    "solution": "$90^\\circ + 90^\\circ = 180^\\circ$.",
+    "topic": "HOTS · Angles"
+   },
+   {
+    "prompt": "Both diagonals of a square are drawn. How many triangles can you see?",
+    "options": [
+     "$6$",
+     "$2$",
+     "$4$",
+     "$8$"
+    ],
+    "answer": 3,
+    "solution": "$4$ small triangles and $4$ made of two small ones.",
+    "topic": "HOTS · Counting"
+   },
+   {
+    "prompt": "Assertion (A): Every square is a rectangle.\nReason (R): A square has four right angles and equal opposite sides.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "These are the properties of a rectangle.",
+    "topic": "Quadrilaterals",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A triangle can have angles $30^\\circ$, $60^\\circ$ and $100^\\circ$.\nReason (R): The angles of a triangle add up to $180^\\circ$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$30 + 60 + 100 = 190$, so A is false.",
+    "topic": "Triangles",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): An equilateral triangle is also isosceles.\nReason (R): An isosceles triangle has three equal sides.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "An isosceles triangle has at least two equal sides.",
+    "topic": "Triangles",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A trapezium has one pair of parallel sides.\nReason (R): A parallelogram has two pairs of parallel sides.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 1,
+    "solution": "Both are true, but R is about a different shape.",
+    "topic": "Quadrilaterals",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 15,
+  "title": "Three-Dimensional Shapes and Nets",
+  "questions": [
+   {
+    "prompt": "How many faces does a cube have?",
+    "options": [
+     "$4$",
+     "$12$",
+     "$6$",
+     "$8$"
+    ],
+    "answer": 2,
+    "solution": "Six square faces.",
+    "topic": "Cube"
+   },
+   {
+    "prompt": "How many edges does a cuboid have?",
+    "options": [
+     "$10$",
+     "$8$",
+     "$12$",
+     "$6$"
+    ],
+    "answer": 2,
+    "solution": "$4$ on top, $4$ at the bottom and $4$ upright.",
+    "topic": "Cuboid"
+   },
+   {
+    "prompt": "How many vertices does a cube have?",
+    "options": [
+     "$12$",
+     "$8$",
+     "$6$",
+     "$4$"
+    ],
+    "answer": 1,
+    "solution": "$4$ at the top and $4$ at the bottom.",
+    "topic": "Cube"
+   },
+   {
+    "prompt": "How many faces does a triangular prism have?",
+    "options": [
+     "$6$",
+     "$3$",
+     "$9$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "$2$ triangles and $3$ rectangles.",
+    "topic": "Prisms"
+   },
+   {
+    "prompt": "How many vertices does a square pyramid have?",
+    "options": [
+     "$5$",
+     "$8$",
+     "$4$",
+     "$6$"
+    ],
+    "answer": 0,
+    "solution": "$4$ at the base and $1$ at the top.",
+    "topic": "Pyramids"
+   },
+   {
+    "prompt": "How many curved surfaces does a cylinder have?",
+    "options": [
+     "$2$",
+     "$1$",
+     "$0$",
+     "$3$"
+    ],
+    "answer": 1,
+    "solution": "One curved surface between two flat circles.",
+    "topic": "Cylinder"
+   },
+   {
+    "prompt": "How many vertices does a cone have?",
+    "options": [
+     "$0$",
+     "$1$",
+     "$3$",
+     "$2$"
+    ],
+    "answer": 1,
+    "solution": "The pointed top.",
+    "topic": "Cone"
+   },
+   {
+    "prompt": "How many flat faces does a sphere have?",
+    "options": [
+     "$6$",
+     "$1$",
+     "$2$",
+     "$0$"
+    ],
+    "answer": 3,
+    "solution": "A sphere is completely curved.",
+    "topic": "Sphere"
+   },
+   {
+    "prompt": "A net of a cube is made of",
+    "options": [
+     "$6$ rectangles of different sizes",
+     "$6$ squares",
+     "$8$ squares",
+     "$4$ squares"
+    ],
+    "answer": 1,
+    "solution": "One square for each face.",
+    "topic": "Nets"
+   },
+   {
+    "prompt": "A brick is shaped like a",
+    "options": [
+     "cone",
+     "cylinder",
+     "cube",
+     "cuboid"
+    ],
+    "answer": 3,
+    "solution": "Rectangular faces.",
+    "topic": "Real objects"
+   },
+   {
+    "prompt": "How many faces does a tetrahedron (triangular pyramid) have?",
+    "options": [
+     "$5$",
+     "$4$",
+     "$3$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "Four triangles.",
+    "topic": "Pyramids"
+   },
+   {
+    "prompt": "A football is shaped like a",
+    "options": [
+     "sphere",
+     "cone",
+     "cylinder",
+     "cube"
+    ],
+    "answer": 0,
+    "solution": "Round in every direction.",
+    "topic": "Real objects"
+   },
+   {
+    "prompt": "How many edges does a triangular prism have?",
+    "options": [
+     "$9$",
+     "$6$",
+     "$5$",
+     "$12$"
+    ],
+    "answer": 0,
+    "solution": "$3 + 3 + 3$.",
+    "topic": "Prisms"
+   },
+   {
+    "prompt": "How many edges does a square pyramid have?",
+    "options": [
+     "$12$",
+     "$5$",
+     "$8$",
+     "$4$"
+    ],
+    "answer": 2,
+    "solution": "$4$ at the base and $4$ to the top.",
+    "topic": "Pyramids"
+   },
+   {
+    "prompt": "A net of a closed cylinder has",
+    "options": [
+     "$2$ circles and $1$ rectangle",
+     "$2$ rectangles",
+     "$1$ circle and $1$ rectangle",
+     "$3$ circles"
+    ],
+    "answer": 0,
+    "solution": "Top, bottom and the curved side opened out.",
+    "topic": "Nets"
+   },
+   {
+    "prompt": "For a polyhedron, faces $+$ vertices $-$ edges $=$",
+    "options": [
+     "$6$",
+     "$2$",
+     "$1$",
+     "$0$"
+    ],
+    "answer": 1,
+    "solution": "Euler's formula.",
+    "topic": "Euler's formula"
+   },
+   {
+    "prompt": "A student wrote: 'A square pyramid has $5$ faces, $5$ vertices and $10$ edges.' The correct number of edges is",
+    "options": [
+     "$5$",
+     "$10$",
+     "$8$",
+     "$9$"
+    ],
+    "answer": 2,
+    "solution": "$5 + 5 - 8 = 2$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "How many edges does a pentagonal prism have?",
+    "options": [
+     "$10$",
+     "$20$",
+     "$15$",
+     "$12$"
+    ],
+    "answer": 2,
+    "solution": "$5 + 5 + 5$.",
+    "topic": "HOTS · Prisms"
+   },
+   {
+    "prompt": "How many faces does a hexagonal pyramid have?",
+    "options": [
+     "$7$",
+     "$12$",
+     "$8$",
+     "$6$"
+    ],
+    "answer": 0,
+    "solution": "$1$ base and $6$ triangles.",
+    "topic": "HOTS · Pyramids"
+   },
+   {
+    "prompt": "A polyhedron has $6$ faces and $8$ vertices. How many edges does it have?",
+    "options": [
+     "$10$",
+     "$16$",
+     "$12$",
+     "$14$"
+    ],
+    "answer": 2,
+    "solution": "$6 + 8 - E = 2$.",
+    "topic": "HOTS · Euler's formula"
+   },
+   {
+    "prompt": "A $4$ cm cube is painted and cut into $1$ cm cubes. How many cubes have no paint?",
+    "options": [
+     "$27$",
+     "$8$",
+     "$64$",
+     "$0$"
+    ],
+    "answer": 1,
+    "solution": "The inside is a $2 \\times 2 \\times 2$ cube.",
+    "topic": "HOTS · Painted cube"
+   },
+   {
+    "prompt": "On a die, opposite faces add up to $7$. The face opposite $3$ is",
+    "options": [
+     "$4$",
+     "$3$",
+     "$6$",
+     "$1$"
+    ],
+    "answer": 0,
+    "solution": "$3 + 4 = 7$.",
+    "topic": "HOTS · Dice"
+   },
+   {
+    "prompt": "Which set of numbers $(F, V, E)$ cannot belong to a polyhedron?",
+    "options": [
+     "$(5, 6, 9)$",
+     "$(6, 8, 12)$",
+     "$(4, 4, 6)$",
+     "$(5, 5, 9)$"
+    ],
+    "answer": 3,
+    "solution": "$5 + 5 - 9 = 1$, not $2$.",
+    "topic": "HOTS · Euler's formula"
+   },
+   {
+    "prompt": "How many $1$ cm cubes make a cuboid $3$ cm by $2$ cm by $2$ cm?",
+    "options": [
+     "$7$",
+     "$10$",
+     "$16$",
+     "$12$"
+    ],
+    "answer": 3,
+    "solution": "$3 \\times 2 \\times 2$.",
+    "topic": "HOTS · Counting cubes"
+   },
+   {
+    "prompt": "A net has $1$ square and $4$ triangles around it. It folds into a",
+    "options": [
+     "triangular prism",
+     "cone",
+     "cube",
+     "square pyramid"
+    ],
+    "answer": 3,
+    "solution": "The square is the base.",
+    "topic": "HOTS · Nets"
+   },
+   {
+    "prompt": "How many edges meet at each vertex of a cube?",
+    "options": [
+     "$2$",
+     "$3$",
+     "$4$",
+     "$6$"
+    ],
+    "answer": 1,
+    "solution": "Look at any corner.",
+    "topic": "HOTS · Cube"
+   },
+   {
+    "prompt": "Assertion (A): A cylinder is not a polyhedron.\nReason (R): A cylinder has a curved surface.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "A polyhedron has only flat faces.",
+    "topic": "Polyhedra",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A cone has two vertices.\nReason (R): A cone has one curved surface.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "A cone has one vertex.",
+    "topic": "Cone",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A cube has $12$ edges.\nReason (R): A cube has $8$ faces.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "A cube has $6$ faces.",
+    "topic": "Cube",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A cuboid has $6$ faces.\nReason (R): Opposite faces of a cuboid are equal rectangles.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 1,
+    "solution": "Both are true, but R does not tell why there are $6$ faces.",
+    "topic": "Cuboid",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 16,
+  "title": "Symmetry and Practical Geometry",
+  "questions": [
+   {
+    "prompt": "How many lines of symmetry does a square have?",
+    "options": [
+     "$2$",
+     "$0$",
+     "$1$",
+     "$4$"
+    ],
+    "answer": 3,
+    "solution": "$2$ through mid-points and $2$ diagonals.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "How many lines of symmetry does a rectangle (not a square) have?",
+    "options": [
+     "$4$",
+     "$2$",
+     "$1$",
+     "$0$"
+    ],
+    "answer": 1,
+    "solution": "Its diagonals are not lines of symmetry.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "How many lines of symmetry does an equilateral triangle have?",
+    "options": [
+     "$3$",
+     "$1$",
+     "$0$",
+     "$2$"
+    ],
+    "answer": 0,
+    "solution": "One through each corner.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "How many lines of symmetry does a circle have?",
+    "options": [
+     "$1$",
+     "$2$",
+     "$4$",
+     "infinitely many"
+    ],
+    "answer": 3,
+    "solution": "Every diameter.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "Which capital letter has a horizontal line of symmetry?",
+    "options": [
+     "B",
+     "V",
+     "T",
+     "A"
+    ],
+    "answer": 0,
+    "solution": "B folds top onto bottom.",
+    "topic": "Letters"
+   },
+   {
+    "prompt": "A point is $3$ cm in front of a mirror line. Its image is",
+    "options": [
+     "$6$ cm behind the line",
+     "$3$ cm behind the line",
+     "$3$ cm in front of the line",
+     "on the line"
+    ],
+    "answer": 1,
+    "solution": "The image is the same distance on the other side.",
+    "topic": "Reflection"
+   },
+   {
+    "prompt": "Which instrument draws a circle?",
+    "options": [
+     "protractor",
+     "set square",
+     "divider",
+     "compasses"
+    ],
+    "answer": 3,
+    "solution": "Compasses keep a fixed radius.",
+    "topic": "Instruments"
+   },
+   {
+    "prompt": "Which instrument measures an angle?",
+    "options": [
+     "compasses",
+     "protractor",
+     "ruler",
+     "divider"
+    ],
+    "answer": 1,
+    "solution": "It is marked in degrees.",
+    "topic": "Instruments"
+   },
+   {
+    "prompt": "Bisecting a $60^\\circ$ angle gives",
+    "options": [
+     "$30^\\circ$",
+     "$20^\\circ$",
+     "$45^\\circ$",
+     "$120^\\circ$"
+    ],
+    "answer": 0,
+    "solution": "Half of $60^\\circ$.",
+    "topic": "Constructions"
+   },
+   {
+    "prompt": "Bisecting a $90^\\circ$ angle gives",
+    "options": [
+     "$60^\\circ$",
+     "$45^\\circ$",
+     "$30^\\circ$",
+     "$180^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "Half of $90^\\circ$.",
+    "topic": "Constructions"
+   },
+   {
+    "prompt": "The perpendicular bisector of $AB = 10$ cm meets $AB$ at $M$. $AM =$",
+    "options": [
+     "$20$ cm",
+     "$5$ cm",
+     "$2.5$ cm",
+     "$10$ cm"
+    ],
+    "answer": 1,
+    "solution": "$M$ is the mid-point.",
+    "topic": "Constructions"
+   },
+   {
+    "prompt": "How many lines of symmetry does an isosceles triangle (not equilateral) have?",
+    "options": [
+     "$1$",
+     "$0$",
+     "$3$",
+     "$2$"
+    ],
+    "answer": 0,
+    "solution": "From the top corner to the middle of the base.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "An angle of $60^\\circ$ is constructed with compasses using",
+    "options": [
+     "a protractor only",
+     "arcs of different radii",
+     "arcs of the same radius",
+     "a set square only"
+    ],
+    "answer": 2,
+    "solution": "Equal arcs make an equilateral triangle.",
+    "topic": "Constructions"
+   },
+   {
+    "prompt": "How many lines of symmetry does a regular pentagon have?",
+    "options": [
+     "$10$",
+     "$1$",
+     "$5$",
+     "$2$"
+    ],
+    "answer": 2,
+    "solution": "A regular $n$-gon has $n$ lines.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "How many lines of symmetry does a scalene triangle have?",
+    "options": [
+     "$2$",
+     "$0$",
+     "$1$",
+     "$3$"
+    ],
+    "answer": 1,
+    "solution": "No two sides are equal.",
+    "topic": "Symmetry"
+   },
+   {
+    "prompt": "$120^\\circ = 60^\\circ +$",
+    "options": [
+     "$30^\\circ$",
+     "$60^\\circ$",
+     "$90^\\circ$",
+     "$45^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "Mark $60^\\circ$ twice along the arc.",
+    "topic": "Constructions"
+   },
+   {
+    "prompt": "To bisect $AB = 5$ cm, a student draws arcs of radius $2$ cm from $A$ and $B$. What is wrong?",
+    "options": [
+     "The radius must be more than $2.5$ cm",
+     "Nothing is wrong",
+     "The arcs must be drawn from $M$",
+     "The radius must be exactly $5$ cm"
+    ],
+    "answer": 0,
+    "solution": "$2 + 2 < 5$, so the arcs do not meet.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "An angle of $75^\\circ$ is made by bisecting the angle between",
+    "options": [
+     "$0^\\circ$ and $150^\\circ$",
+     "$60^\\circ$ and $90^\\circ$",
+     "$60^\\circ$ and $120^\\circ$",
+     "$45^\\circ$ and $90^\\circ$"
+    ],
+    "answer": 1,
+    "solution": "$(60 + 90) \\div 2 = 75$.",
+    "topic": "HOTS · Constructions"
+   },
+   {
+    "prompt": "Which capital letter has exactly $2$ lines of symmetry?",
+    "options": [
+     "Y",
+     "M",
+     "X",
+     "A"
+    ],
+    "answer": 2,
+    "solution": "X has a vertical and a horizontal line.",
+    "topic": "HOTS · Letters"
+   },
+   {
+    "prompt": "A paper is folded in half twice and one hole is punched through all layers. How many holes are there when it is opened?",
+    "options": [
+     "$8$",
+     "$1$",
+     "$4$",
+     "$2$"
+    ],
+    "answer": 2,
+    "solution": "Two folds make $4$ layers.",
+    "topic": "HOTS · Folding"
+   },
+   {
+    "prompt": "A point $P$ is $4$ cm to the left of a mirror line. How far is $P$ from its image?",
+    "options": [
+     "$8$ cm",
+     "$2$ cm",
+     "$4$ cm",
+     "$0$ cm"
+    ],
+    "answer": 0,
+    "solution": "$4$ cm on each side.",
+    "topic": "HOTS · Reflection"
+   },
+   {
+    "prompt": "An angle of $15^\\circ$ is made by",
+    "options": [
+     "bisecting $30^\\circ$",
+     "bisecting $90^\\circ$",
+     "bisecting $45^\\circ$",
+     "bisecting $60^\\circ$"
+    ],
+    "answer": 0,
+    "solution": "Half of $30^\\circ$.",
+    "topic": "HOTS · Constructions"
+   },
+   {
+    "prompt": "Which angle can be constructed with ruler and compasses alone?",
+    "options": [
+     "$100^\\circ$",
+     "$40^\\circ$",
+     "$135^\\circ$",
+     "$50^\\circ$"
+    ],
+    "answer": 2,
+    "solution": "$135^\\circ = 90^\\circ + 45^\\circ$.",
+    "topic": "HOTS · Constructions"
+   },
+   {
+    "prompt": "Which word has a vertical line of symmetry through the whole word?",
+    "options": [
+     "TOOT",
+     "LAKE",
+     "CODE",
+     "BOOK"
+    ],
+    "answer": 0,
+    "solution": "T and O are symmetric, and TOOT reads the same from both ends.",
+    "topic": "HOTS · Letters"
+   },
+   {
+    "prompt": "$AB = 6$ cm. How many points are $4$ cm from both $A$ and $B$?",
+    "options": [
+     "$4$",
+     "$0$",
+     "$1$",
+     "$2$"
+    ],
+    "answer": 3,
+    "solution": "$4 + 4 > 6$, so the circles meet twice.",
+    "topic": "HOTS · Constructions"
+   },
+   {
+    "prompt": "A figure has exactly $4$ lines of symmetry. It can be",
+    "options": [
+     "an isosceles triangle",
+     "a rectangle",
+     "a square",
+     "a circle"
+    ],
+    "answer": 2,
+    "solution": "A circle has infinitely many; a rectangle has $2$.",
+    "topic": "HOTS · Symmetry"
+   },
+   {
+    "prompt": "Assertion (A): An isosceles triangle has one line of symmetry.\nReason (R): The line joins the top corner to the mid-point of the base.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R describes that line.",
+    "topic": "Symmetry",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Bisecting $45^\\circ$ gives $30^\\circ$.\nReason (R): Bisecting an angle divides it into two equal parts.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "Half of $45^\\circ$ is $22\\frac{1}{2}^\\circ$.",
+    "topic": "Constructions",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A circle has many lines of symmetry.\nReason (R): Every chord of a circle is a line of symmetry.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "Only the diameters are lines of symmetry.",
+    "topic": "Symmetry",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): An angle of $90^\\circ$ can be constructed with compasses.\nReason (R): $90^\\circ$ is the bisector of the angle between $60^\\circ$ and $120^\\circ$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R gives the construction.",
+    "topic": "Constructions",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 17,
+  "title": "Perimeter, Area and Unit Conversions",
+  "questions": [
+   {
+    "prompt": "The perimeter of a $12$ cm by $5$ cm rectangle is",
+    "options": [
+     "$24$ cm",
+     "$17$ cm",
+     "$60$ cm",
+     "$34$ cm"
+    ],
+    "answer": 3,
+    "solution": "$2 \\times 17$.",
+    "topic": "Perimeter"
+   },
+   {
+    "prompt": "The area of a $12$ cm by $5$ cm rectangle is",
+    "options": [
+     "$17$ cm²",
+     "$120$ cm²",
+     "$34$ cm²",
+     "$60$ cm²"
+    ],
+    "answer": 3,
+    "solution": "$12 \\times 5$.",
+    "topic": "Area"
+   },
+   {
+    "prompt": "A square has perimeter $44$ cm. Its side is",
+    "options": [
+     "$22$ cm",
+     "$4$ cm",
+     "$11$ cm",
+     "$176$ cm"
+    ],
+    "answer": 2,
+    "solution": "$44 \\div 4$.",
+    "topic": "Perimeter"
+   },
+   {
+    "prompt": "The area of a square of side $9$ cm is",
+    "options": [
+     "$81$ cm²",
+     "$36$ cm²",
+     "$27$ cm²",
+     "$18$ cm²"
+    ],
+    "answer": 0,
+    "solution": "$9 \\times 9$.",
+    "topic": "Area"
+   },
+   {
+    "prompt": "$2$ m $35$ cm in cm is",
+    "options": [
+     "$2{,}035$ cm",
+     "$235$ cm",
+     "$2{,}350$ cm",
+     "$23.5$ cm"
+    ],
+    "answer": 1,
+    "solution": "$200 + 35$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$3$ L $250$ mL in mL is",
+    "options": [
+     "$325$ mL",
+     "$3{,}025$ mL",
+     "$32{,}500$ mL",
+     "$3{,}250$ mL"
+    ],
+    "answer": 3,
+    "solution": "$3{,}000 + 250$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "$2$ h $20$ min in minutes is",
+    "options": [
+     "$220$ min",
+     "$120$ min",
+     "$140$ min",
+     "$80$ min"
+    ],
+    "answer": 2,
+    "solution": "$120 + 20$.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "$5{,}400$ g in kg is",
+    "options": [
+     "$540$ kg",
+     "$0.54$ kg",
+     "$5.4$ kg",
+     "$54$ kg"
+    ],
+    "answer": 2,
+    "solution": "Divide by $1{,}000$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "A rectangle has area $72$ cm² and breadth $6$ cm. Its length is",
+    "options": [
+     "$18$ cm",
+     "$66$ cm",
+     "$12$ cm",
+     "$432$ cm"
+    ],
+    "answer": 2,
+    "solution": "$72 \\div 6$.",
+    "topic": "Area"
+   },
+   {
+    "prompt": "Fencing a $30$ m by $20$ m field at ₹$10$ per metre costs",
+    "options": [
+     "₹$6{,}000$",
+     "₹$1{,}000$",
+     "₹$600$",
+     "₹$500$"
+    ],
+    "answer": 1,
+    "solution": "Perimeter $100$ m.",
+    "topic": "Perimeter"
+   },
+   {
+    "prompt": "$1$ m² is how many cm²?",
+    "options": [
+     "$10{,}000$",
+     "$1{,}000$",
+     "$100$",
+     "$10$"
+    ],
+    "answer": 0,
+    "solution": "$100 \\times 100$.",
+    "topic": "Units"
+   },
+   {
+    "prompt": "From $9{:}45$ a.m. to $1{:}15$ p.m. is",
+    "options": [
+     "$3$ h $15$ min",
+     "$3$ h $30$ min",
+     "$4$ h $30$ min",
+     "$4$ h"
+    ],
+    "answer": 1,
+    "solution": "$9{:}45$ to $12{:}45$ is $3$ h, then $30$ min more.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "The perimeter of an equilateral triangle of side $8$ cm is",
+    "options": [
+     "$24$ cm",
+     "$64$ cm",
+     "$32$ cm",
+     "$16$ cm"
+    ],
+    "answer": 0,
+    "solution": "$3 \\times 8$.",
+    "topic": "Perimeter"
+   },
+   {
+    "prompt": "₹$12.50$ in paise is",
+    "options": [
+     "$125$ paise",
+     "$12{,}500$ paise",
+     "$1{,}205$ paise",
+     "$1{,}250$ paise"
+    ],
+    "answer": 3,
+    "solution": "$\\times 100$.",
+    "topic": "Money"
+   },
+   {
+    "prompt": "A square has perimeter $20$ cm. Its area is",
+    "options": [
+     "$25$ cm²",
+     "$20$ cm²",
+     "$16$ cm²",
+     "$400$ cm²"
+    ],
+    "answer": 0,
+    "solution": "Side $5$ cm.",
+    "topic": "Area"
+   },
+   {
+    "prompt": "$1$ day $4$ hours in hours is",
+    "options": [
+     "$34$ h",
+     "$24$ h",
+     "$28$ h",
+     "$14$ h"
+    ],
+    "answer": 2,
+    "solution": "$24 + 4$.",
+    "topic": "Time"
+   },
+   {
+    "prompt": "A student wrote: 'The perimeter of a $6$ cm by $4$ cm rectangle is $24$ cm.' The correct perimeter is",
+    "options": [
+     "$20$ cm",
+     "$10$ cm",
+     "$24$ cm",
+     "$48$ cm"
+    ],
+    "answer": 0,
+    "solution": "$24$ is the area in cm². Perimeter $= 2 \\times 10$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "A square has the same perimeter as a $10$ cm by $6$ cm rectangle. The area of the square is",
+    "options": [
+     "$256$ cm²",
+     "$64$ cm²",
+     "$60$ cm²",
+     "$32$ cm²"
+    ],
+    "answer": 1,
+    "solution": "Perimeter $32$, side $8$.",
+    "topic": "HOTS · Same perimeter"
+   },
+   {
+    "prompt": "How many $50$ cm by $50$ cm tiles cover a $4$ m by $3$ m floor?",
+    "options": [
+     "$24$",
+     "$12$",
+     "$48$",
+     "$480$"
+    ],
+    "answer": 2,
+    "solution": "$8 \\times 6$.",
+    "topic": "HOTS · Tiling"
+   },
+   {
+    "prompt": "The length of a rectangle is doubled and the breadth is halved. The area",
+    "options": [
+     "becomes $4$ times",
+     "stays the same",
+     "halves",
+     "doubles"
+    ],
+    "answer": 1,
+    "solution": "$2l \\times \\frac{b}{2} = lb$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "A border $1$ cm wide runs inside the edges of a $10$ cm by $8$ cm rectangle. The area of the border is",
+    "options": [
+     "$36$ cm²",
+     "$32$ cm²",
+     "$18$ cm²",
+     "$48$ cm²"
+    ],
+    "answer": 1,
+    "solution": "$80 - 8 \\times 6 = 32$.",
+    "topic": "HOTS · Paths"
+   },
+   {
+    "prompt": "Which is the heaviest?",
+    "options": [
+     "$2.5$ kg",
+     "$2{,}450$ g",
+     "$2.06$ kg",
+     "$2$ kg $600$ g"
+    ],
+    "answer": 3,
+    "solution": "$2{,}600$ g, $2{,}500$ g, $2{,}450$ g and $2{,}060$ g.",
+    "topic": "HOTS · Units"
+   },
+   {
+    "prompt": "A train leaves at $10{:}40$ p.m. and arrives at $4{:}15$ a.m. the next day. The journey takes",
+    "options": [
+     "$5$ h $35$ min",
+     "$5$ h $25$ min",
+     "$6$ h $25$ min",
+     "$6$ h $35$ min"
+    ],
+    "answer": 0,
+    "solution": "$1$ h $20$ min to midnight, then $4$ h $15$ min.",
+    "topic": "HOTS · Time"
+   },
+   {
+    "prompt": "A $36$ cm wire is bent into a square, or into a $12$ cm by $6$ cm rectangle. Which has more area?",
+    "options": [
+     "the rectangle",
+     "it cannot be found",
+     "the square",
+     "both are equal"
+    ],
+    "answer": 2,
+    "solution": "$81$ cm² against $72$ cm².",
+    "topic": "HOTS · Same wire"
+   },
+   {
+    "prompt": "A rectangle has perimeter $40$ cm and length $12$ cm. Its area is",
+    "options": [
+     "$480$ cm²",
+     "$108$ cm²",
+     "$84$ cm²",
+     "$96$ cm²"
+    ],
+    "answer": 3,
+    "solution": "Breadth $8$ cm.",
+    "topic": "HOTS · Multi-step"
+   },
+   {
+    "prompt": "How many $250$ mL glasses can be filled from $3$ L?",
+    "options": [
+     "$15$",
+     "$8$",
+     "$75$",
+     "$12$"
+    ],
+    "answer": 3,
+    "solution": "$3{,}000 \\div 250$.",
+    "topic": "HOTS · Units"
+   },
+   {
+    "prompt": "Assertion (A): $1$ kg $= 1{,}000$ g.\nReason (R): 'Kilo' means one thousand.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Units",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The area of a $5$ cm by $3$ cm rectangle is $16$ cm².\nReason (R): Area of a rectangle $=$ length $\\times$ breadth.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$5 \\times 3 = 15$ cm².",
+    "topic": "Area",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $1$ m $= 100$ cm.\nReason (R): $1$ m² $= 100$ cm².",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "$1$ m² $= 10{,}000$ cm².",
+    "topic": "Units",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): Rectangles with the same perimeter can have different areas.\nReason (R): $6 \\times 4$ and $7 \\times 3$ rectangles both have perimeter $20$ cm, but areas $24$ and $21$ cm².",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R is an example of A.",
+    "topic": "Reasoning",
+    "assertion": true
+   }
+  ]
+ },
+ {
+  "chapter": 18,
+  "title": "Data Handling",
+  "questions": [
+   {
+    "prompt": "The mean of $3, 5, 7$ is",
+    "options": [
+     "$5$",
+     "$7$",
+     "$3$",
+     "$15$"
+    ],
+    "answer": 0,
+    "solution": "$15 \\div 3$.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The median of $2, 9, 4, 7, 5$ is",
+    "options": [
+     "$7$",
+     "$5$",
+     "$9$",
+     "$4$"
+    ],
+    "answer": 1,
+    "solution": "In order: $2, 4, 5, 7, 9$.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "The mode of $3, 4, 4, 6, 4, 2$ is",
+    "options": [
+     "$6$",
+     "$2$",
+     "$4$",
+     "$3$"
+    ],
+    "answer": 2,
+    "solution": "$4$ occurs three times.",
+    "topic": "Mode"
+   },
+   {
+    "prompt": "The median of $1, 3, 5, 7$ is",
+    "options": [
+     "$5$",
+     "$3$",
+     "$4$",
+     "$8$"
+    ],
+    "answer": 2,
+    "solution": "$(3 + 5) \\div 2$.",
+    "topic": "Median"
+   },
+   {
+    "prompt": "Two complete tally groups of five and $1$ more mark stand for",
+    "options": [
+     "$7$",
+     "$11$",
+     "$10$",
+     "$3$"
+    ],
+    "answer": 1,
+    "solution": "$5 + 5 + 1$.",
+    "topic": "Tally marks"
+   },
+   {
+    "prompt": "In a pictograph, $1$ symbol $= 5$. Seven symbols stand for",
+    "options": [
+     "$12$",
+     "$35$",
+     "$75$",
+     "$7$"
+    ],
+    "answer": 1,
+    "solution": "$7 \\times 5$.",
+    "topic": "Pictographs"
+   },
+   {
+    "prompt": "The range of $12, 7, 20, 15$ is",
+    "options": [
+     "$8$",
+     "$27$",
+     "$13$",
+     "$5$"
+    ],
+    "answer": 2,
+    "solution": "$20 - 7$.",
+    "topic": "Range"
+   },
+   {
+    "prompt": "The mean of the first five natural numbers is",
+    "options": [
+     "$5$",
+     "$15$",
+     "$3$",
+     "$2.5$"
+    ],
+    "answer": 2,
+    "solution": "$15 \\div 5$.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "Bars are $4$ and $7$ units high, with $1$ unit $= 10$. They differ by",
+    "options": [
+     "$3$",
+     "$70$",
+     "$110$",
+     "$30$"
+    ],
+    "answer": 3,
+    "solution": "$3 \\times 10$.",
+    "topic": "Bar graphs"
+   },
+   {
+    "prompt": "The mean of $6$ numbers is $8$. Their sum is",
+    "options": [
+     "$48$",
+     "$56$",
+     "$14$",
+     "$2$"
+    ],
+    "answer": 0,
+    "solution": "$6 \\times 8$.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "The frequency of $5$ in $5, 3, 5, 2, 5$ is",
+    "options": [
+     "$15$",
+     "$1$",
+     "$3$",
+     "$5$"
+    ],
+    "answer": 2,
+    "solution": "$5$ occurs three times.",
+    "topic": "Frequency"
+   },
+   {
+    "prompt": "Which measure is the middle value of ordered data?",
+    "options": [
+     "mode",
+     "mean",
+     "median",
+     "range"
+    ],
+    "answer": 2,
+    "solution": "Definition of median.",
+    "topic": "Measures"
+   },
+   {
+    "prompt": "The mean of $10, 20, 30, 40$ is",
+    "options": [
+     "$100$",
+     "$30$",
+     "$25$",
+     "$20$"
+    ],
+    "answer": 2,
+    "solution": "$100 \\div 4$.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "With the scale $1$ cm $= 50$, a bar for $225$ is",
+    "options": [
+     "$2.25$ cm",
+     "$45$ cm",
+     "$4.5$ cm",
+     "$5$ cm"
+    ],
+    "answer": 2,
+    "solution": "$225 \\div 50$.",
+    "topic": "Bar graphs"
+   },
+   {
+    "prompt": "The value that occurs most often is the",
+    "options": [
+     "median",
+     "range",
+     "mode",
+     "mean"
+    ],
+    "answer": 2,
+    "solution": "Definition of mode.",
+    "topic": "Measures"
+   },
+   {
+    "prompt": "The mean of $2, 4, 6, 8, 10$ is",
+    "options": [
+     "$30$",
+     "$5$",
+     "$8$",
+     "$6$"
+    ],
+    "answer": 3,
+    "solution": "$30 \\div 5$.",
+    "topic": "Mean"
+   },
+   {
+    "prompt": "A student wrote: 'The median of $8, 3, 6$ is $3$, because it is in the middle.' The correct median is",
+    "options": [
+     "$3$",
+     "$6$",
+     "$5\\frac{2}{3}$",
+     "$8$"
+    ],
+    "answer": 1,
+    "solution": "In order: $3, 6, 8$.",
+    "topic": "HOTS · Find the mistake"
+   },
+   {
+    "prompt": "The mean of $4$ numbers is $15$. Three of them are $10, 12$ and $20$. The fourth is",
+    "options": [
+     "$13$",
+     "$18$",
+     "$42$",
+     "$15$"
+    ],
+    "answer": 1,
+    "solution": "$60 - 42$.",
+    "topic": "HOTS · Working backwards"
+   },
+   {
+    "prompt": "The mean of $5$ numbers is $10$. One number is removed and the mean of the rest is $9$. The removed number is",
+    "options": [
+     "$19$",
+     "$14$",
+     "$10$",
+     "$1$"
+    ],
+    "answer": 1,
+    "solution": "$50 - 36$.",
+    "topic": "HOTS · Working backwards"
+   },
+   {
+    "prompt": "$5$ is added to every value in a set of data. The mean",
+    "options": [
+     "increases by $5$",
+     "becomes $5$ times",
+     "stays the same",
+     "decreases by $5$"
+    ],
+    "answer": 0,
+    "solution": "The total grows by $5$ for each value.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "Which data has mean $5$ and median $4$?",
+    "options": [
+     "$3, 5, 7$",
+     "$2, 4, 9$",
+     "$1, 4, 7$",
+     "$4, 4, 4$"
+    ],
+    "answer": 1,
+    "solution": "$15 \\div 3 = 5$ and the middle value is $4$.",
+    "topic": "HOTS · Make data"
+   },
+   {
+    "prompt": "For $2, 4, 6, 8, 100$, which is true?",
+    "options": [
+     "The mean is greater than the median",
+     "There is no median",
+     "The median is greater than the mean",
+     "The mean equals the median"
+    ],
+    "answer": 0,
+    "solution": "Mean $24$, median $6$.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "The median of $7, 3, 9, 5, 11, 1$ is",
+    "options": [
+     "$5$",
+     "$7$",
+     "$9$",
+     "$6$"
+    ],
+    "answer": 3,
+    "solution": "In order: $1, 3, 5, 7, 9, 11$. $(5 + 7) \\div 2 = 6$.",
+    "topic": "HOTS · Median"
+   },
+   {
+    "prompt": "A student's mean in $4$ tests is $70$. What must she score in the $5$th test for a mean of $72$?",
+    "options": [
+     "$80$",
+     "$72$",
+     "$74$",
+     "$76$"
+    ],
+    "answer": 0,
+    "solution": "$360 - 280$.",
+    "topic": "HOTS · Working backwards"
+   },
+   {
+    "prompt": "Every value in a set of data is doubled. The mean was $7$. The new mean is",
+    "options": [
+     "$7$",
+     "$9$",
+     "$14$",
+     "$49$"
+    ],
+    "answer": 2,
+    "solution": "The total doubles.",
+    "topic": "HOTS · Reasoning"
+   },
+   {
+    "prompt": "In a pictograph, $1$ symbol $= 6$. Which number cannot be shown with whole and half symbols?",
+    "options": [
+     "$9$",
+     "$15$",
+     "$10$",
+     "$21$"
+    ],
+    "answer": 2,
+    "solution": "Half a symbol is $3$; $10$ is not a multiple of $3$.",
+    "topic": "HOTS · Pictographs"
+   },
+   {
+    "prompt": "Assertion (A): The median of $1, 2, 3, 4, 5$ is $3$.\nReason (R): The median is the middle value after the data is put in order.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Median",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The mean of $2, 4, 9$ is $4$.\nReason (R): Mean $=$ total $\\div$ number of values.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "$15 \\div 3 = 5$.",
+    "topic": "Mean",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): The mode is the value that occurs most often.\nReason (R): The mode is always the largest value.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 2,
+    "solution": "The mode can be any value.",
+    "topic": "Mode",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): A bar graph needs a scale.\nReason (R): A pictograph needs a key.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 1,
+    "solution": "Both are true, but R is about a different graph.",
+    "topic": "Graphs",
+    "assertion": true
+   }
+  ]
+ }
+]

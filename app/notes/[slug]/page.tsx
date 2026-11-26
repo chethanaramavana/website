@@ -11,6 +11,8 @@ import g12ReaderNotes from '@/lib/g12-reader-notes.json';
 import g11ReaderNotes from '@/lib/g11-reader-notes.json';
 import g10ReaderNotes from '@/lib/g10-reader-notes.json';
 import g6ReaderNotes from '@/lib/g6-reader-notes.json';
+import icse6ReaderNotes from '@/lib/icse6-reader-notes.json';
+import cbse7ReaderNotes from '@/lib/cbse7-reader-notes.json';
 import ChapterReader, {type ReaderChapter} from '../chapter-reader';
 
 const icse7 = icse7Notes as unknown as Record<string, FormulaNotesData>;
@@ -32,6 +34,10 @@ export default async function ChapterNotesPage({ params }: { params: Promise<{ s
   if(slug === 'g12-integrals') return <IntegralsOnline/>;
   const g6Reader = (g6ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
   if (g6Reader) return <><ChapterReader data={g6Reader} /><ExploreSims slug={slug} /></>;
+  const icse6Reader = (icse6ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
+  if (icse6Reader) return <><ChapterReader data={icse6Reader} /><ExploreSims slug={slug} /></>;
+  const cbse7Reader = (cbse7ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
+  if (cbse7Reader) return <><ChapterReader data={cbse7Reader} /><ExploreSims slug={slug} /></>;
   const g12Reader = (g12ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
   if (g12Reader) return <ChapterReader data={g12Reader} />;
   const g11Reader = (g11ReaderNotes as unknown as Record<string, ReaderChapter>)[slug];
