@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { ArrowRight, RefreshCw } from 'lucide-react';
+import { quizPriceById } from '@/lib/free-quizzes/catalog';
 type Account = {
   user_id: string;
   email: string;
@@ -255,7 +256,7 @@ export default function StudentActivity() {
                       </td>
                       <td>
                         {a.paper?.title ?? `Test · ${a.paper_id}`}
-                        {a.paper && <small>{a.paper.free ? 'Free' : 'Paid'}</small>}
+                        {a.paper && <small>{a.paper.free ? 'Free test' : quizPriceById(a.paper_id) !== null ? `Listed price ₹${quizPriceById(a.paper_id)! / 100}` : 'Paid-access test'}</small>}
                       </td>
                       <td>
                         {a.submitted_at_ms
