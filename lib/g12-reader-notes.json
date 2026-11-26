@@ -557,6 +557,14 @@
      "$2\\tan^{-1}x=\\tan^{-1}\\frac{2x}{1-x^2}\\quad(|x|<1)$",
      "$2\\tan^{-1}x=\\sin^{-1}\\frac{2x}{1+x^2}\\ (|x|\\le1),\\quad 2\\tan^{-1}x=\\cos^{-1}\\frac{1-x^2}{1+x^2}\\ (x\\ge0)$"
     ]
+   },
+   {
+    "title": "JEE: sums of inverse tangents",
+    "items": [
+     "$\\tan^{-1}\\frac{x-y}{1+xy}=\\tan^{-1}x-\\tan^{-1}y$ ($xy>-1$)",
+     "Write each term as a difference, then telescope",
+     "$x, y>0$, $xy>1$: $\\tan^{-1}x+\\tan^{-1}y=\\pi+\\tan^{-1}\\frac{x+y}{1-xy}$"
+    ]
    }
   ],
   "lessons": [
@@ -932,6 +940,97 @@
        "$-\\tfrac\\pi4\\le\\tan^{-1}x\\le\\tfrac\\pi4$"
       ],
       "result": "$\\left[\\frac\\pi4,\\frac{3\\pi}{4}\\right]$"
+     }
+    ]
+   },
+   {
+    "title": "Sums of inverse tangents (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\tan^{-1}x-\\tan^{-1}y=\\tan^{-1}\\frac{x-y}{1+xy}$ when $xy>-1$",
+     "For a sum $\\sum\\tan^{-1}\\frac{a}{1+b}$, look for two numbers whose difference is $a$ and whose product is $b$",
+     "$\\frac1{1+r(r+1)}=\\frac{(r+1)-r}{1+r(r+1)}$, so $\\tan^{-1}\\frac1{1+r+r^2}=\\tan^{-1}(r+1)-\\tan^{-1}r$",
+     "$x, y>0$ and $xy>1$: $\\tan^{-1}x+\\tan^{-1}y=\\pi+\\tan^{-1}\\frac{x+y}{1-xy}$",
+     "$\\tan^{-1}n\\to\\frac\\pi2$ as $n\\to\\infty$"
+    ],
+    "examples": [
+     {
+      "question": "Show that $\\tan^{-1}\\frac13=\\tan^{-1}2-\\tan^{-1}1$.",
+      "steps": [
+       "$\\tan^{-1}2-\\tan^{-1}1=\\tan^{-1}\\frac{2-1}{1+2\\cdot1}$",
+       "$=\\tan^{-1}\\frac13$"
+      ],
+      "result": "Proved",
+      "type": "Basic · one term as a difference",
+      "reasoning": [
+       "Use the difference formula. Here $xy=2>-1$, so the formula is valid.",
+       "This is the idea behind every telescoping sum."
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=1}^{n}\\tan^{-1}\\frac1{1+r+r^2}$.",
+      "steps": [
+       "$\\tan^{-1}\\frac1{1+r(r+1)}=\\tan^{-1}(r+1)-\\tan^{-1}r$",
+       "Sum $=(\\tan^{-1}2-\\tan^{-1}1)+(\\tan^{-1}3-\\tan^{-1}2)+\\dots+(\\tan^{-1}(n+1)-\\tan^{-1}n)$",
+       "$=\\tan^{-1}(n+1)-\\tan^{-1}1=\\tan^{-1}\\frac{n}{n+2}$"
+      ],
+      "result": "$\\tan^{-1}\\frac n{n+2}$",
+      "type": "Basic · telescoping",
+      "reasoning": [
+       "$(r+1)-r=1$ and $(r+1)r=r^2+r$: these match the fraction.",
+       "Write the terms one under the other. Each middle term appears once with $+$ and once with $-$.",
+       "Use the difference formula on the two terms that are left."
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=1}^{\\infty}\\tan^{-1}\\frac1{1+r+r^2}$.",
+      "steps": [
+       "Partial sum $=\\tan^{-1}(n+1)-\\frac\\pi4$",
+       "As $n\\to\\infty$: $\\frac\\pi2-\\frac\\pi4$"
+      ],
+      "result": "$\\frac\\pi4$",
+      "type": "Standard · infinite sum",
+      "use": [
+       "$\\tan^{-1}n\\to\\frac\\pi2$"
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=1}^{\\infty}\\tan^{-1}\\frac1{2r^2}$.",
+      "steps": [
+       "$\\frac1{2r^2}=\\frac2{4r^2}=\\frac{(2r+1)-(2r-1)}{1+(2r+1)(2r-1)}$",
+       "Term $=\\tan^{-1}(2r+1)-\\tan^{-1}(2r-1)$. Partial sum $=\\tan^{-1}(2n+1)-\\tan^{-1}1$",
+       "Limit: $\\frac\\pi2-\\frac\\pi4$"
+      ],
+      "result": "$\\frac\\pi4$",
+      "type": "Standard · find the two numbers",
+      "use": [
+       "$\\tan^{-1}x-\\tan^{-1}y=\\tan^{-1}\\frac{x-y}{1+xy}$"
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=1}^{\\infty}\\tan^{-1}\\frac{2r}{1+r^4-r^2}$.",
+      "steps": [
+       "$(r^2+r)-(r^2-r)=2r$ and $(r^2+r)(r^2-r)=r^4-r^2$",
+       "Term $=\\tan^{-1}(r^2+r)-\\tan^{-1}(r^2-r)$, and $r^2+r=(r+1)^2-(r+1)$",
+       "Partial sum $=\\tan^{-1}(n^2+n)-\\tan^{-1}0\\to\\frac\\pi2$"
+      ],
+      "result": "$\\frac\\pi2$",
+      "type": "JEE · quadratic pair",
+      "use": [
+       "Telescoping"
+      ]
+     },
+     {
+      "question": "Show that $\\tan^{-1}1+\\tan^{-1}2+\\tan^{-1}3=\\pi$.",
+      "steps": [
+       "$2\\cdot3=6>1$ and both are positive: $\\tan^{-1}2+\\tan^{-1}3=\\pi+\\tan^{-1}\\frac{5}{1-6}=\\pi-\\frac\\pi4$",
+       "Add $\\tan^{-1}1=\\frac\\pi4$"
+      ],
+      "result": "$\\pi$",
+      "type": "JEE · the xy > 1 case",
+      "use": [
+       "$\\tan^{-1}x+\\tan^{-1}y=\\pi+\\tan^{-1}\\frac{x+y}{1-xy}$, $x, y>0$, $xy>1$"
+      ]
      }
     ]
    }
@@ -3795,6 +3894,14 @@
      "$\\vec a,\\vec b,\\vec c$ coplanar $\\iff[\\vec a\\ \\vec b\\ \\vec c]=0$",
      "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$"
     ]
+   },
+   {
+    "title": "JEE: vector equations",
+    "items": [
+     "$|\\vec a\\times\\vec b|^2+(\\vec a\\cdot\\vec b)^2=|\\vec a|^2|\\vec b|^2$",
+     "$\\vec r\\times\\vec b=\\vec c\\times\\vec b\\Rightarrow\\vec r=\\vec c+t\\vec b$",
+     "$[\\vec a\\times\\vec b\\ \\ \\vec b\\times\\vec c\\ \\ \\vec c\\times\\vec a]=[\\vec a\\ \\vec b\\ \\vec c]^2$"
+    ]
    }
   ],
   "lessons": [
@@ -4157,6 +4264,93 @@
        "$|\\hat a-\\hat b|^2=1+1-1=1$"
       ],
       "result": "$1$"
+     }
+    ]
+   },
+   {
+    "title": "Vector equations and products of products (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$|\\vec a\\times\\vec b|^2+(\\vec a\\cdot\\vec b)^2=|\\vec a|^2|\\vec b|^2$ (Lagrange identity)",
+     "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$",
+     "$(\\vec a\\times\\vec b)\\cdot(\\vec c\\times\\vec d)=(\\vec a\\cdot\\vec c)(\\vec b\\cdot\\vec d)-(\\vec a\\cdot\\vec d)(\\vec b\\cdot\\vec c)$",
+     "$\\vec r\\times\\vec b=\\vec c\\times\\vec b\\Rightarrow(\\vec r-\\vec c)\\times\\vec b=\\vec0\\Rightarrow\\vec r=\\vec c+t\\vec b$",
+     "$[\\vec a\\times\\vec b\\ \\ \\vec b\\times\\vec c\\ \\ \\vec c\\times\\vec a]=[\\vec a\\ \\vec b\\ \\vec c]^2$"
+    ],
+    "examples": [
+     {
+      "question": "$|\\vec a|=3$, $|\\vec b|=4$ and $\\vec a\\cdot\\vec b=6$. Find $|\\vec a\\times\\vec b|$.",
+      "steps": [
+       "$|\\vec a\\times\\vec b|^2=|\\vec a|^2|\\vec b|^2-(\\vec a\\cdot\\vec b)^2=144-36=108$",
+       "$|\\vec a\\times\\vec b|=\\sqrt{108}$"
+      ],
+      "result": "$6\\sqrt3$",
+      "type": "Basic · Lagrange identity",
+      "reasoning": [
+       "$|\\vec a\\times\\vec b|=|\\vec a||\\vec b|\\sin\\theta$ and $\\vec a\\cdot\\vec b=|\\vec a||\\vec b|\\cos\\theta$. Square and add: $\\sin^2\\theta+\\cos^2\\theta=1$.",
+       "$108=36\\times3$."
+      ]
+     },
+     {
+      "question": "$\\vec a=\\hat i+\\hat j$, $\\vec b=\\hat i$, $\\vec c=\\hat j$. Find $\\vec a\\times(\\vec b\\times\\vec c)$ in two ways.",
+      "steps": [
+       "Direct: $\\vec b\\times\\vec c=\\hat k$, and $(\\hat i+\\hat j)\\times\\hat k=-\\hat j+\\hat i$",
+       "Formula: $(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c=1\\cdot\\hat i-1\\cdot\\hat j$"
+      ],
+      "result": "$\\hat i-\\hat j$",
+      "type": "Basic · check the triple product",
+      "reasoning": [
+       "$\\hat i\\times\\hat k=-\\hat j$ and $\\hat j\\times\\hat k=\\hat i$.",
+       "Both ways give the same vector. The formula is faster for big questions."
+      ]
+     },
+     {
+      "question": "$\\vec a=\\hat i+\\hat j$, $\\vec b=\\hat j+\\hat k$, $\\vec c=\\hat i$, $\\vec d=\\hat k$. Find $(\\vec a\\times\\vec b)\\cdot(\\vec c\\times\\vec d)$.",
+      "steps": [
+       "$(\\vec a\\cdot\\vec c)(\\vec b\\cdot\\vec d)-(\\vec a\\cdot\\vec d)(\\vec b\\cdot\\vec c)=1\\cdot1-0\\cdot0$",
+       "Check: $\\vec a\\times\\vec b=\\hat i-\\hat j+\\hat k$ and $\\vec c\\times\\vec d=-\\hat j$, so the dot product is $1$"
+      ],
+      "result": "$1$",
+      "type": "Standard · dot of two cross products",
+      "use": [
+       "$(\\vec a\\times\\vec b)\\cdot(\\vec c\\times\\vec d)=(\\vec a\\cdot\\vec c)(\\vec b\\cdot\\vec d)-(\\vec a\\cdot\\vec d)(\\vec b\\cdot\\vec c)$"
+      ]
+     },
+     {
+      "question": "$\\vec a=2\\hat i+\\hat k$, $\\vec b=\\hat i+\\hat j+\\hat k$, $\\vec c=4\\hat i-3\\hat j+7\\hat k$. Find $\\vec r$ with $\\vec r\\times\\vec b=\\vec c\\times\\vec b$ and $\\vec r\\cdot\\vec a=0$.",
+      "steps": [
+       "$\\vec r=\\vec c+t\\vec b$",
+       "$\\vec r\\cdot\\vec a=\\vec c\\cdot\\vec a+t\\,\\vec b\\cdot\\vec a=15+3t=0$, so $t=-5$",
+       "$\\vec r=4\\hat i-3\\hat j+7\\hat k-5(\\hat i+\\hat j+\\hat k)$"
+      ],
+      "result": "$\\vec r=-\\hat i-8\\hat j+2\\hat k$",
+      "type": "Standard · solve a vector equation",
+      "use": [
+       "$\\vec r\\times\\vec b=\\vec c\\times\\vec b\\Rightarrow\\vec r=\\vec c+t\\vec b$"
+      ]
+     },
+     {
+      "question": "$[\\vec a\\ \\vec b\\ \\vec c]=3$. Find $[\\vec a\\times\\vec b\\ \\ \\vec b\\times\\vec c\\ \\ \\vec c\\times\\vec a]$.",
+      "steps": [
+       "$[\\vec a\\times\\vec b\\ \\ \\vec b\\times\\vec c\\ \\ \\vec c\\times\\vec a]=[\\vec a\\ \\vec b\\ \\vec c]^2$"
+      ],
+      "result": "$9$",
+      "type": "JEE · box product of cross products",
+      "use": [
+       "$[\\vec a\\times\\vec b\\ \\ \\vec b\\times\\vec c\\ \\ \\vec c\\times\\vec a]=[\\vec a\\ \\vec b\\ \\vec c]^2$"
+      ]
+     },
+     {
+      "question": "$\\vec a, \\vec b, \\vec c$ are unit vectors, $\\vec b$ and $\\vec c$ are not parallel, and $\\vec a\\times(\\vec b\\times\\vec c)=\\frac12\\vec b$. Find the angles of $\\vec a$ with $\\vec b$ and with $\\vec c$.",
+      "steps": [
+       "$(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c=\\frac12\\vec b$",
+       "$\\vec b, \\vec c$ are not parallel, so compare coefficients: $\\vec a\\cdot\\vec c=\\frac12$ and $\\vec a\\cdot\\vec b=0$"
+      ],
+      "result": "$\\vec a$ makes $90^\\circ$ with $\\vec b$ and $60^\\circ$ with $\\vec c$",
+      "type": "JEE · compare coefficients",
+      "use": [
+       "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$"
+      ]
      }
     ]
    }
@@ -4807,6 +5001,14 @@
      "Mean $=np$, variance $=npq$",
      "$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2$"
     ]
+   },
+   {
+    "title": "JEE: mixed problems",
+    "items": [
+     "$P(\\text{at least one})=1-P(\\text{none})$",
+     "Expected gain $=\\sum(\\text{gain})\\times(\\text{probability})$",
+     "$P(A\\cup B)=P(A)+P(B)-P(A)P(B)$ for independent $A, B$"
+    ]
    }
   ],
   "lessons": [
@@ -5139,6 +5341,106 @@
        "$npq=3\\cdot\\tfrac12\\cdot\\tfrac12$"
       ],
       "result": "$\\frac34$"
+     }
+    ]
+   },
+   {
+    "title": "Mixed probability problems (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$P(\\text{at least one success in }n\\text{ trials})=1-q^n$",
+     "Independent events: $P(A\\cap B)=P(A)P(B)$, so $P(A\\cup B)=P(A)+P(B)-P(A)P(B)$",
+     "Bayes: $P(E_i\\mid A)=\\frac{P(E_i)P(A\\mid E_i)}{\\sum_jP(E_j)P(A\\mid E_j)}$",
+     "Expected value: $E(X)=\\sum x_ip_i$. A game is fair when the expected gain is $0$",
+     "Without replacement: use combinations, $P=\\frac{{}^aC_r\\,{}^bC_s}{{}^{a+b}C_{r+s}}$"
+    ],
+    "examples": [
+     {
+      "question": "A die is thrown $4$ times. Find the probability of at least one six.",
+      "steps": [
+       "$P(\\text{no six in one throw})=\\frac56$",
+       "$P(\\text{no six in 4 throws})=\\left(\\frac56\\right)^4=\\frac{625}{1296}$",
+       "$1-\\frac{625}{1296}$"
+      ],
+      "result": "$\\frac{671}{1296}$",
+      "type": "Basic · at least one",
+      "reasoning": [
+       "\"At least one\" has many cases. Its complement, \"none\", has only one case.",
+       "The throws are independent, so multiply.",
+       "Subtract from $1$."
+      ]
+     },
+     {
+      "question": "How many times must a fair coin be tossed so that the probability of at least one head is more than $0.9$?",
+      "steps": [
+       "$1-\\left(\\frac12\\right)^n>0.9$, so $\\left(\\frac12\\right)^n<0.1$, that is $2^n>10$",
+       "$2^3=8$ and $2^4=16$"
+      ],
+      "result": "$n=4$",
+      "type": "Basic · find n",
+      "reasoning": [
+       "Use the complement again, then change the inequality.",
+       "The least whole number $n$ with $2^n>10$ is $4$."
+      ]
+     },
+     {
+      "question": "Box $A$ has $2$ red and $3$ blue balls. Box $B$ has $4$ red and $1$ blue ball. A coin chooses a box and one ball is drawn. The ball is red. Find the probability that it came from box $B$.",
+      "steps": [
+       "$P(A)P(R\\mid A)=\\frac12\\cdot\\frac25=\\frac15$ and $P(B)P(R\\mid B)=\\frac12\\cdot\\frac45=\\frac25$",
+       "$P(B\\mid R)=\\frac{\\frac25}{\\frac15+\\frac25}$"
+      ],
+      "result": "$\\frac23$",
+      "type": "Standard · Bayes",
+      "use": [
+       "$P(E_i\\mid A)=\\frac{P(E_i)P(A\\mid E_i)}{\\sum P(E_j)P(A\\mid E_j)}$"
+      ]
+     },
+     {
+      "question": "A die is thrown. You win ₹$20$ for a $6$ and ₹$10$ for a $5$, and you lose ₹$5$ for any other number. Find the expected gain.",
+      "steps": [
+       "$E=20\\cdot\\frac16+10\\cdot\\frac16-5\\cdot\\frac46=\\frac{20+10-20}6$"
+      ],
+      "result": "₹$\\frac53$",
+      "type": "Standard · expected gain",
+      "use": [
+       "$E(X)=\\sum x_ip_i$"
+      ]
+     },
+     {
+      "question": "$A$ and $B$ are independent, $P(A)=0.4$ and $P(A\\cup B)=0.6$. Find $P(B)$.",
+      "steps": [
+       "$0.4+p-0.4p=0.6$",
+       "$0.6p=0.2$"
+      ],
+      "result": "$P(B)=\\frac13$",
+      "type": "JEE · independent events",
+      "use": [
+       "$P(A\\cup B)=P(A)+P(B)-P(A)P(B)$"
+      ]
+     },
+     {
+      "question": "Three fair dice are thrown. Find the probability that the sum is $10$.",
+      "steps": [
+       "Count the solutions of $a+b+c=10$ with $1\\le a, b, c\\le6$: put $a=x+1$ and so on, so $x+y+z=7$ with $0\\le x, y, z\\le5$",
+       "All: ${}^9C_2=36$. Remove the cases with one value $\\ge6$: $3\\times{}^3C_2=9$",
+       "$\\frac{36-9}{216}=\\frac{27}{216}$"
+      ],
+      "result": "$\\frac18$",
+      "type": "JEE · count with the beggar method",
+      "use": [
+       "${}^{n+r-1}C_{r-1}$ and subtraction"
+      ]
+     },
+     {
+      "question": "A bag has $4$ white and $6$ black balls. $3$ balls are drawn together. Find the probability of exactly $2$ white balls.",
+      "steps": [
+       "$\\frac{{}^4C_2\\cdot{}^6C_1}{{}^{10}C_3}=\\frac{6\\cdot6}{120}$"
+      ],
+      "result": "$\\frac3{10}$",
+      "type": "JEE · without replacement",
+      "use": [
+       "$\\frac{{}^aC_r\\,{}^bC_s}{{}^{a+b}C_{r+s}}$"
+      ]
      }
     ]
    }

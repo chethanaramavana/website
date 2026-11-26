@@ -941,6 +941,15 @@
      "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$",
      "$\\cos A=\\frac{b^2+c^2-a^2}{2bc}$"
     ]
+   },
+   {
+    "title": "JEE: conditional identities",
+    "items": [
+     "$A+B+C=\\pi$: $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$",
+     "$\\sin x\\sin(60^\\circ-x)\\sin(60^\\circ+x)=\\frac14\\sin3x$",
+     "$\\cos\\theta\\cos2\\theta\\cdots\\cos2^{n-1}\\theta=\\frac{\\sin2^n\\theta}{2^n\\sin\\theta}$",
+     "$-\\sqrt{a^2+b^2}\\le a\\sin x+b\\cos x\\le\\sqrt{a^2+b^2}$"
+    ]
    }
   ],
   "lessons": [
@@ -1419,6 +1428,108 @@
       "result": "$5\\sqrt6$"
      }
     ]
+   },
+   {
+    "title": "Conditional identities, products and extreme values (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "If $A+B+C=\\pi$: $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$",
+     "If $A+B+C=\\pi$: $\\sin2A+\\sin2B+\\sin2C=4\\sin A\\sin B\\sin C$",
+     "$\\sin x\\sin(60^\\circ-x)\\sin(60^\\circ+x)=\\frac14\\sin3x$; $\\cos x\\cos(60^\\circ-x)\\cos(60^\\circ+x)=\\frac14\\cos3x$",
+     "$\\cos\\theta\\cos2\\theta\\cos4\\theta\\cdots\\cos2^{n-1}\\theta=\\frac{\\sin2^n\\theta}{2^n\\sin\\theta}$",
+     "$-\\sqrt{a^2+b^2}\\le a\\sin x+b\\cos x\\le\\sqrt{a^2+b^2}$"
+    ],
+    "examples": [
+     {
+      "question": "$A+B+C=\\pi$. Show that $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$.",
+      "steps": [
+       "$A+B=\\pi-C$, so $\\tan(A+B)=-\\tan C$",
+       "$\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}=-\\tan C$",
+       "$\\tan A+\\tan B=-\\tan C+\\tan A\\tan B\\tan C$, then move $\\tan C$ to the left"
+      ],
+      "result": "Proved",
+      "type": "Basic · use A + B = π − C",
+      "reasoning": [
+       "In every conditional identity, we start from the condition.",
+       "Use the formula for $\\tan(A+B)$.",
+       "Cross-multiply and collect the terms."
+      ]
+     },
+     {
+      "question": "Find $\\sin20^\\circ\\sin40^\\circ\\sin80^\\circ$.",
+      "steps": [
+       "Take $x=20^\\circ$: $\\sin20^\\circ\\sin(60^\\circ-20^\\circ)\\sin(60^\\circ+20^\\circ)=\\frac14\\sin60^\\circ$",
+       "$=\\frac14\\cdot\\frac{\\sqrt3}2$"
+      ],
+      "result": "$\\frac{\\sqrt3}8$",
+      "type": "Basic · the 60° product",
+      "reasoning": [
+       "$40^\\circ=60^\\circ-20^\\circ$ and $80^\\circ=60^\\circ+20^\\circ$, so the product has the special form.",
+       "$3x=60^\\circ$."
+      ]
+     },
+     {
+      "question": "Find $\\cos\\frac{2\\pi}7\\cos\\frac{4\\pi}7\\cos\\frac{8\\pi}7$.",
+      "steps": [
+       "$\\theta=\\frac{2\\pi}7$, $n=3$: the product is $\\frac{\\sin\\frac{16\\pi}7}{8\\sin\\frac{2\\pi}7}$",
+       "$\\frac{16\\pi}7=2\\pi+\\frac{2\\pi}7$, so $\\sin\\frac{16\\pi}7=\\sin\\frac{2\\pi}7$"
+      ],
+      "result": "$\\frac18$",
+      "type": "Standard · doubling product",
+      "use": [
+       "$\\cos\\theta\\cos2\\theta\\cos4\\theta=\\frac{\\sin8\\theta}{8\\sin\\theta}$"
+      ]
+     },
+     {
+      "question": "$A+B+C=\\pi$. Prove that $\\sin2A+\\sin2B+\\sin2C=4\\sin A\\sin B\\sin C$.",
+      "steps": [
+       "$\\sin2A+\\sin2B=2\\sin(A+B)\\cos(A-B)=2\\sin C\\cos(A-B)$",
+       "$\\sin2C=2\\sin C\\cos C=-2\\sin C\\cos(A+B)$",
+       "Sum $=2\\sin C[\\cos(A-B)-\\cos(A+B)]=2\\sin C\\cdot2\\sin A\\sin B$"
+      ],
+      "result": "Proved",
+      "type": "Standard · sum to product",
+      "use": [
+       "$\\cos X-\\cos Y=-2\\sin\\frac{X+Y}2\\sin\\frac{X-Y}2$"
+      ]
+     },
+     {
+      "question": "Find the greatest and least values of $5\\sin x+12\\cos x+3$.",
+      "steps": [
+       "$\\sqrt{5^2+12^2}=13$, so $-13\\le5\\sin x+12\\cos x\\le13$",
+       "Add $3$"
+      ],
+      "result": "Greatest $16$, least $-10$",
+      "type": "JEE · range",
+      "use": [
+       "$|a\\sin x+b\\cos x|\\le\\sqrt{a^2+b^2}$"
+      ]
+     },
+     {
+      "question": "In a triangle $ABC$, $\\tan A=1$ and $\\tan B=2$. Find $\\tan C$.",
+      "steps": [
+       "$1+2+\\tan C=1\\cdot2\\cdot\\tan C$",
+       "$3=\\tan C$"
+      ],
+      "result": "$\\tan C=3$",
+      "type": "JEE · triangle identity",
+      "use": [
+       "$\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$"
+      ]
+     },
+     {
+      "question": "Find the least value of $9\\tan^2x+4\\cot^2x$.",
+      "steps": [
+       "AM–GM: $9\\tan^2x+4\\cot^2x\\ge2\\sqrt{36\\tan^2x\\cot^2x}=12$",
+       "Equality when $9\\tan^2x=4\\cot^2x$, that is $\\tan^2x=\\frac23$"
+      ],
+      "result": "$12$",
+      "type": "JEE · AM–GM in trigonometry",
+      "use": [
+       "$a+b\\ge2\\sqrt{ab}$ for $a, b>0$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -1470,6 +1581,14 @@
      "$\\cos\\theta=\\frac ar,\\quad \\sin\\theta=\\frac br$",
      "$ax^2+bx+c=0,\\ D<0:\\ x=\\frac{-b\\pm i\\sqrt{-D}}{2a}$",
      "$\\sqrt{a+ib}=\\pm(x+iy):\\ x^2-y^2=a,\\ 2xy=b,\\ x^2+y^2=\\sqrt{a^2+b^2}$"
+    ]
+   },
+   {
+    "title": "JEE: ω and locus",
+    "items": [
+     "$\\omega=\\frac{-1+i\\sqrt3}2$: $\\omega^3=1$, $1+\\omega+\\omega^2=0$, $\\bar\\omega=\\omega^2$",
+     "$\\big||z_1|-|z_2|\\big|\\le|z_1\\pm z_2|\\le|z_1|+|z_2|$",
+     "$|z-z_0|=r$: circle; $|z-z_1|=|z-z_2|$: perpendicular bisector"
     ]
    }
   ],
@@ -1818,6 +1937,107 @@
       "result": "$z=1+3i$"
      }
     ]
+   },
+   {
+    "title": "Cube roots of unity, modulus inequalities and locus (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "Cube roots of $1$: $1,\\ \\omega,\\ \\omega^2$ with $\\omega=\\frac{-1+i\\sqrt3}2$",
+     "$\\omega^3=1$, $1+\\omega+\\omega^2=0$, $\\bar\\omega=\\omega^2$; $\\omega^n$ depends on $n \\bmod 3$",
+     "$|z_1+z_2|\\le|z_1|+|z_2|$ and $|z_1-z_2|\\ge\\big||z_1|-|z_2|\\big|$",
+     "$|z-z_0|=r$ is a circle with centre $z_0$; $|z-z_1|=|z-z_2|$ is the perpendicular bisector of $z_1z_2$",
+     "$|z_1z_2|=|z_1||z_2|$, $\\arg(z_1z_2)=\\arg z_1+\\arg z_2$; $(r(\\cos\\theta+i\\sin\\theta))^n=r^n(\\cos n\\theta+i\\sin n\\theta)$"
+    ],
+    "examples": [
+     {
+      "question": "Find $(1+\\omega)^3$.",
+      "steps": [
+       "$1+\\omega+\\omega^2=0$, so $1+\\omega=-\\omega^2$",
+       "$(1+\\omega)^3=(-\\omega^2)^3=-\\omega^6=-(\\omega^3)^2$"
+      ],
+      "result": "$-1$",
+      "type": "Basic · replace 1 + ω",
+      "reasoning": [
+       "This is the most useful move with $\\omega$: change a sum of two terms into one power.",
+       "$\\omega^3=1$, so $\\omega^6=1$."
+      ]
+     },
+     {
+      "question": "Find $(1+\\omega-\\omega^2)(1-\\omega+\\omega^2)$.",
+      "steps": [
+       "$1+\\omega=-\\omega^2$, so the first bracket is $-2\\omega^2$",
+       "$1+\\omega^2=-\\omega$, so the second bracket is $-2\\omega$",
+       "Product $=4\\omega^3$"
+      ],
+      "result": "$4$",
+      "type": "Basic · two brackets",
+      "reasoning": [
+       "Group the two terms that make $-\\omega^2$.",
+       "Group the two terms that make $-\\omega$.",
+       "$\\omega^3=1$."
+      ]
+     },
+     {
+      "question": "Find $1+\\omega^{100}+\\omega^{200}$.",
+      "steps": [
+       "$100=3\\cdot33+1$, so $\\omega^{100}=\\omega$. $200=3\\cdot66+2$, so $\\omega^{200}=\\omega^2$",
+       "Sum $=1+\\omega+\\omega^2$"
+      ],
+      "result": "$0$",
+      "type": "Standard · powers of ω",
+      "use": [
+       "$\\omega^3=1$"
+      ]
+     },
+     {
+      "question": "Find the cube roots of $8$.",
+      "steps": [
+       "$z^3=8$ gives $z=2\\cdot(\\text{a cube root of }1)$"
+      ],
+      "result": "$2,\\ 2\\omega,\\ 2\\omega^2$, that is $2,\\ -1\\pm i\\sqrt3$",
+      "type": "Standard · cube roots",
+      "use": [
+       "$1,\\ \\omega,\\ \\omega^2$"
+      ]
+     },
+     {
+      "question": "$|z|=2$. Find the greatest and least values of $|z-3-4i|$.",
+      "steps": [
+       "$z$ is on the circle with centre $0$ and radius $2$. The point $3+4i$ is at distance $5$ from $0$",
+       "Greatest $=5+2$, least $=5-2$"
+      ],
+      "result": "Greatest $7$, least $3$",
+      "type": "JEE · distance to a circle",
+      "use": [
+       "$\\big||z_1|-|z_2|\\big|\\le|z_1-z_2|\\le|z_1|+|z_2|$"
+      ]
+     },
+     {
+      "question": "Find the locus of $z$ if $|z-1|=2|z+1|$.",
+      "steps": [
+       "$z=x+iy$: $(x-1)^2+y^2=4[(x+1)^2+y^2]$",
+       "$3x^2+3y^2+10x+3=0$, that is $x^2+y^2+\\frac{10}3x+1=0$",
+       "Centre $\\left(-\\frac53,0\\right)$, radius $\\sqrt{\\frac{25}9-1}$"
+      ],
+      "result": "A circle with centre $\\left(-\\frac53,0\\right)$ and radius $\\frac43$",
+      "type": "JEE · locus",
+      "use": [
+       "$|x+iy|^2=x^2+y^2$"
+      ]
+     },
+     {
+      "question": "Find $(1+i)^8$.",
+      "steps": [
+       "$1+i=\\sqrt2\\left(\\cos\\frac\\pi4+i\\sin\\frac\\pi4\\right)$",
+       "$(1+i)^8=(\\sqrt2)^8(\\cos2\\pi+i\\sin2\\pi)=16$"
+      ],
+      "result": "$16$",
+      "type": "JEE · powers in polar form",
+      "use": [
+       "$(r(\\cos\\theta+i\\sin\\theta))^n=r^n(\\cos n\\theta+i\\sin n\\theta)$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -1860,6 +2080,14 @@
      "System: the solution region is the common region of all half-planes",
      "$|x|<a\\iff -a<x<a;\\quad |x|>a\\iff x<-a$ or $x>a\\quad(a>0)$",
      "$\\frac{p(x)}{q(x)}>0:$ mark the zeros of $p, q$ and test the sign in each interval"
+    ]
+   },
+   {
+    "title": "JEE: wavy-curve method",
+    "items": [
+     "Make every factor $(x-a)$ with a positive coefficient of $x$",
+     "Mark the critical points; the sign is $+$ on the far right and alternates",
+     "An even power does not change the sign; a zero of the denominator is never included"
     ]
    }
   ],
@@ -2163,6 +2391,99 @@
       "result": "$(-4,1)$"
      }
     ]
+   },
+   {
+    "title": "The wavy-curve method (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "Write the inequality as $\\frac{(x-a_1)(x-a_2)\\cdots}{(x-b_1)\\cdots}\\ \\gtrless\\ 0$ with each coefficient of $x$ positive",
+     "Put the critical points on the number line. The sign is $+$ to the right of the largest point",
+     "The sign changes at each point with an odd power and does not change at a point with an even power",
+     "Zeros of the numerator are included for $\\ge$ or $\\le$. Zeros of the denominator are never included"
+    ],
+    "examples": [
+     {
+      "question": "Solve $(x-1)(x-3)<0$.",
+      "steps": [
+       "Critical points: $1$ and $3$",
+       "Signs from the right: $+$ for $x>3$, $-$ for $1<x<3$, $+$ for $x<1$",
+       "We want the $-$ part"
+      ],
+      "result": "$1<x<3$",
+      "type": "Basic · two factors",
+      "reasoning": [
+       "Each factor is $0$ at one point. These points cut the line into parts.",
+       "For a big $x$, both factors are positive. Each time we cross a point, one factor changes sign.",
+       "\"$<0$\" means the negative part."
+      ]
+     },
+     {
+      "question": "Solve $(x+2)(x-1)(x-4)\\ge0$.",
+      "steps": [
+       "Critical points: $-2, 1, 4$",
+       "Signs from the right: $+,\\ -,\\ +,\\ -$",
+       "Take the $+$ parts and include the points"
+      ],
+      "result": "$x\\in[-2,1]\\cup[4,\\infty)$",
+      "type": "Basic · three factors",
+      "reasoning": [
+       "Put them in order on the number line.",
+       "$x>4$: $+$; $1<x<4$: $-$; $-2<x<1$: $+$; $x<-2$: $-$.",
+       "\"$\\ge$\" includes the zeros of the factors."
+      ]
+     },
+     {
+      "question": "Solve $\\frac{x^2-4}{x-1}>0$.",
+      "steps": [
+       "$\\frac{(x-2)(x+2)}{x-1}>0$. Critical points: $-2, 1, 2$",
+       "Signs from the right: $+$ on $(2,\\infty)$, $-$ on $(1,2)$, $+$ on $(-2,1)$, $-$ on $(-\\infty,-2)$"
+      ],
+      "result": "$x\\in(-2,1)\\cup(2,\\infty)$",
+      "type": "Standard · a quotient",
+      "use": [
+       "Wavy-curve method"
+      ]
+     },
+     {
+      "question": "Solve $(x-1)^2(x-3)<0$.",
+      "steps": [
+       "Critical points: $1$ (even power) and $3$",
+       "Right of $3$: $+$. Between $1$ and $3$: $-$. Left of $1$: still $-$, because the sign does not change at an even power",
+       "$x=1$ gives $0$, which is not $<0$"
+      ],
+      "result": "$x\\in(-\\infty,1)\\cup(1,3)$",
+      "type": "Standard · a repeated factor",
+      "use": [
+       "Even power: no sign change"
+      ]
+     },
+     {
+      "question": "Solve $\\frac{(2-x)(x+5)}{x-3}\\ge0$.",
+      "steps": [
+       "Make the coefficient positive: $\\frac{(x-2)(x+5)}{x-3}\\le0$ (the sign of the inequality turns)",
+       "Critical points: $-5, 2, 3$. Signs from the right: $+,\\ -,\\ +,\\ -$",
+       "Take the $-$ parts. Include $-5$ and $2$, exclude $3$"
+      ],
+      "result": "$x\\in(-\\infty,-5]\\cup[2,3)$",
+      "type": "JEE · change the sign of a factor",
+      "use": [
+       "Wavy-curve method"
+      ]
+     },
+     {
+      "question": "Solve $\\frac1{x-1}\\ge\\frac2{x+1}$.",
+      "steps": [
+       "Do not cross-multiply. $\\frac{(x+1)-2(x-1)}{(x-1)(x+1)}\\ge0$, that is $\\frac{3-x}{(x-1)(x+1)}\\ge0$",
+       "$\\frac{x-3}{(x-1)(x+1)}\\le0$. Critical points: $-1, 1, 3$",
+       "Signs from the right: $+,\\ -,\\ +,\\ -$. Take the $-$ parts"
+      ],
+      "result": "$x\\in(-\\infty,-1)\\cup(1,3]$",
+      "type": "JEE · do not cross-multiply",
+      "use": [
+       "Bring everything to one side"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -2213,6 +2534,15 @@
      "Circular arrangements of $n$ objects $=(n-1)!$",
      "Number of diagonals of an $n$-gon $={}^nC_2-n$",
      "Selections of at least one from $n$ distinct objects $=2^n-1$"
+    ]
+   },
+   {
+    "title": "JEE: distribution and derangements",
+    "items": [
+     "$n$ identical things into $r$ boxes: ${}^{n+r-1}C_{r-1}$; no box empty: ${}^{n-1}C_{r-1}$",
+     "$n$ different things into $r$ boxes: $r^n$",
+     "$D_n=n!\\left(1-\\frac1{1!}+\\frac1{2!}-\\dots+\\frac{(-1)^n}{n!}\\right)$: $D_3=2,\\ D_4=9,\\ D_5=44$",
+     "Power of a prime $p$ in $n!$: $\\left[\\frac np\\right]+\\left[\\frac n{p^2}\\right]+\\dots$"
     ]
    }
   ],
@@ -2580,6 +2910,216 @@
       "result": "$1596000$"
      }
     ]
+   },
+   {
+    "title": "Distribution and the beggar method (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$n$ identical objects into $r$ different boxes (a box may be empty): ${}^{n+r-1}C_{r-1}$",
+     "$n$ identical objects into $r$ different boxes, every box gets at least one: ${}^{n-1}C_{r-1}$",
+     "Non-negative integer solutions of $x_1+x_2+\\dots+x_r=n$: ${}^{n+r-1}C_{r-1}$",
+     "Positive integer solutions of $x_1+x_2+\\dots+x_r=n$: ${}^{n-1}C_{r-1}$",
+     "Lower limit $x_i\\ge a_i$: put $y_i=x_i-a_i$ first. Upper limit: subtract the cases that break it",
+     "$n$ different objects into $r$ different boxes: $r^n$; no box empty ($r=3$): $3^n-3\\cdot2^n+3$"
+    ],
+    "examples": [
+     {
+      "question": "In how many ways can $5$ identical chocolates be given to $3$ children? A child may get none.",
+      "steps": [
+       "Write the chocolates as $5$ stars: $\\star\\star\\star\\star\\star$",
+       "Use $2$ bars to cut the row into $3$ parts: $\\star\\star\\,|\\,\\star\\,|\\,\\star\\star$ means $2, 1, 2$",
+       "There are $5+2=7$ places. Choose the $2$ places for the bars: ${}^7C_2$"
+      ],
+      "result": "$21$ ways",
+      "type": "Basic · stars and bars",
+      "reasoning": [
+       "The chocolates are identical. Only the number that each child gets is important.",
+       "The first part goes to child 1, the second part to child 2 and the third part to child 3. A bar at the end gives that child $0$.",
+       "Every choice of bar places gives one distribution, and every distribution gives one choice. This is the \"beggar method\"."
+      ]
+     },
+     {
+      "question": "In how many ways can $5$ identical chocolates be given to $3$ children so that each child gets at least one?",
+      "steps": [
+       "Give $1$ chocolate to each child first. $5-3=2$ chocolates are left",
+       "Share $2$ chocolates among $3$ children freely: ${}^{2+3-1}C_{3-1}={}^4C_2$",
+       "Check with the second formula: ${}^{n-1}C_{r-1}={}^4C_2$"
+      ],
+      "result": "$6$ ways",
+      "type": "Basic · at least one each",
+      "reasoning": [
+       "This makes the condition \"at least one\" true at once.",
+       "Now a child may get no more chocolates, so the first formula applies.",
+       "The bars must go in the $4$ gaps between the $5$ stars, so no part is empty."
+      ]
+     },
+     {
+      "question": "Find the number of non-negative integer solutions of $x+y+z+w=10$.",
+      "steps": [
+       "$n=10$, $r=4$",
+       "${}^{10+4-1}C_{4-1}={}^{13}C_3=\\frac{13\\cdot12\\cdot11}{6}$"
+      ],
+      "result": "$286$",
+      "type": "Standard · counting solutions",
+      "use": [
+       "${}^{n+r-1}C_{r-1}$"
+      ]
+     },
+     {
+      "question": "Find the number of integer solutions of $x+y+z=15$ with $x\\ge2$, $y\\ge3$ and $z\\ge0$.",
+      "steps": [
+       "Put $x=a+2$ and $y=b+3$ with $a, b\\ge0$",
+       "$a+b+z=10$",
+       "${}^{10+2}C_2={}^{12}C_2$"
+      ],
+      "result": "$66$",
+      "type": "Standard · lower limits",
+      "use": [
+       "${}^{n+r-1}C_{r-1}$"
+      ]
+     },
+     {
+      "question": "Find the number of positive integer solutions of $x+y+z=12$ with $x\\le5$.",
+      "steps": [
+       "All positive solutions: ${}^{11}C_2=55$",
+       "Solutions with $x\\ge6$: put $x=a+5$, $a\\ge1$. Then $a+y+z=7$ with positive values: ${}^6C_2=15$",
+       "Wanted $=55-15$"
+      ],
+      "result": "$40$",
+      "type": "JEE · upper limit by subtraction",
+      "use": [
+       "${}^{n-1}C_{r-1}$"
+      ]
+     },
+     {
+      "question": "In how many ways can $4$ different balls go into $3$ different boxes so that no box is empty?",
+      "steps": [
+       "All ways: $3^4=81$",
+       "One chosen box empty: ${}^3C_1\\cdot2^4=48$. Two chosen boxes empty: ${}^3C_2\\cdot1^4=3$",
+       "Inclusion–exclusion: $81-48+3$"
+      ],
+      "result": "$36$",
+      "type": "JEE · different objects, no box empty",
+      "use": [
+       "$3^n-3\\cdot2^n+3$"
+      ]
+     },
+     {
+      "question": "How many terms does the expansion of $(x+y+z)^{10}$ have?",
+      "steps": [
+       "Each term is $x^ay^bz^c$ with $a+b+c=10$ and $a, b, c\\ge0$",
+       "Number of terms $={}^{10+2}C_2={}^{12}C_2$"
+      ],
+      "result": "$66$",
+      "type": "JEE · terms of a multinomial",
+      "use": [
+       "${}^{n+r-1}C_{r-1}$"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Derangements, groups and powers of a prime in n! (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "Derangement: no object is in its own place. $D_n=n!\\left(1-\\frac1{1!}+\\frac1{2!}-\\frac1{3!}+\\dots+\\frac{(-1)^n}{n!}\\right)$",
+     "$D_1=0,\\ D_2=1,\\ D_3=2,\\ D_4=9,\\ D_5=44,\\ D_6=265$",
+     "Exactly $r$ of $n$ objects in the right place: ${}^nC_r\\,D_{n-r}$",
+     "$pq$ different objects in $p$ unlabelled groups of $q$: $\\frac{(pq)!}{(q!)^p\\,p!}$; labelled groups: $\\frac{(pq)!}{(q!)^p}$",
+     "Power of a prime $p$ in $n!$: $\\left[\\frac np\\right]+\\left[\\frac n{p^2}\\right]+\\left[\\frac n{p^3}\\right]+\\dots$",
+     "Zeros at the end of $n!$ = power of $5$ in $n!$"
+    ],
+    "examples": [
+     {
+      "question": "Three letters $A, B, C$ go into their envelopes $a, b, c$. In how many ways does every letter go into a wrong envelope?",
+      "steps": [
+       "List all $3!=6$ ways: $ABC, ACB, BAC, BCA, CAB, CBA$",
+       "Remove each way with a letter in its own place",
+       "Only $BCA$ and $CAB$ are left"
+      ],
+      "result": "$D_3=2$",
+      "type": "Basic · listing",
+      "reasoning": [
+       "Write the letters in the order of the envelopes $a, b, c$.",
+       "$ABC$ has all three right. $ACB$, $BAC$ and $CBA$ have one right.",
+       "This small case shows what a derangement is. For bigger $n$ we use the formula."
+      ]
+     },
+     {
+      "question": "Find $D_4$ with the formula.",
+      "steps": [
+       "$D_4=24\\left(1-1+\\frac12-\\frac16+\\frac1{24}\\right)$",
+       "$=24\\cdot\\frac12-24\\cdot\\frac16+24\\cdot\\frac1{24}=12-4+1$"
+      ],
+      "result": "$9$",
+      "type": "Basic · the formula",
+      "reasoning": [
+       "The signs alternate. The first two terms $1-1$ cancel.",
+       "Multiply each fraction by $24$ separately. This keeps the work in whole numbers."
+      ]
+     },
+     {
+      "question": "$5$ letters are put at random into their $5$ envelopes. In how many ways are exactly $2$ letters in the right envelopes?",
+      "steps": [
+       "Choose the $2$ correct letters: ${}^5C_2=10$",
+       "The other $3$ must all be wrong: $D_3=2$",
+       "$10\\times2$"
+      ],
+      "result": "$20$ ways",
+      "type": "Standard · exactly r correct",
+      "use": [
+       "${}^nC_r\\,D_{n-r}$"
+      ]
+     },
+     {
+      "question": "A teacher returns $6$ test papers at random. Find the probability that no student gets their own paper.",
+      "steps": [
+       "$D_6=720\\left(\\frac12-\\frac16+\\frac1{24}-\\frac1{120}+\\frac1{720}\\right)=360-120+30-6+1=265$",
+       "$P=\\frac{265}{720}$"
+      ],
+      "result": "$\\frac{53}{144}$",
+      "type": "Standard · probability",
+      "use": [
+       "$D_n=n!\\sum_{k=0}^{n}\\frac{(-1)^k}{k!}$"
+      ]
+     },
+     {
+      "question": "In how many ways can $12$ students be split into $3$ groups of $4$? How many ways are there if the groups go to $3$ different rooms?",
+      "steps": [
+       "Labelled groups (rooms): $\\frac{12!}{(4!)^3}=34650$",
+       "Unlabelled groups: divide by $3!$ because the order of the groups is not important",
+       "$\\frac{34650}{6}=5775$"
+      ],
+      "result": "$5775$ groupings; $34650$ with rooms",
+      "type": "JEE · equal groups",
+      "use": [
+       "$\\frac{(pq)!}{(q!)^p\\,p!}$"
+      ]
+     },
+     {
+      "question": "How many zeros are at the end of $100!$?",
+      "steps": [
+       "Each zero needs one factor $2$ and one factor $5$. There are more $2$s than $5$s",
+       "Power of $5$: $\\left[\\frac{100}5\\right]+\\left[\\frac{100}{25}\\right]=20+4$"
+      ],
+      "result": "$24$",
+      "type": "JEE · trailing zeros",
+      "use": [
+       "$\\left[\\frac np\\right]+\\left[\\frac n{p^2}\\right]+\\dots$"
+      ]
+     },
+     {
+      "question": "Find the largest power of $3$ that divides $30!$.",
+      "steps": [
+       "$\\left[\\frac{30}3\\right]+\\left[\\frac{30}9\\right]+\\left[\\frac{30}{27}\\right]=10+3+1$"
+      ],
+      "result": "$3^{14}$",
+      "type": "JEE · power of a prime",
+      "use": [
+       "$\\left[\\frac np\\right]+\\left[\\frac n{p^2}\\right]+\\dots$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -2615,6 +3155,15 @@
      "$n$ odd: middle terms $T_{\\frac{n+1}2},\\ T_{\\frac{n+3}2}$",
      "Term independent of $x:$ the power of $x$ in $T_{r+1}$ is $0$",
      "Sum of coefficients of $f(x)=f(1)$"
+    ]
+   },
+   {
+    "title": "JEE: coefficients and remainders",
+    "items": [
+     "$\\sum C_r=2^n$; $C_0+C_2+\\dots=C_1+C_3+\\dots=2^{n-1}$",
+     "$\\sum rC_r=n2^{n-1}$; $\\sum C_r^2={}^{2n}C_n$",
+     "Terms of $(a+b+c)^n$: ${}^{n+2}C_2$; coefficient of $a^pb^qc^r$: $\\frac{n!}{p!\\,q!\\,r!}$",
+     "Greatest term: compare $\\frac{T_{r+1}}{T_r}=\\frac{n-r+1}r|x|$ with $1$"
     ]
    }
   ],
@@ -2881,6 +3430,180 @@
       "result": "$1$"
      }
     ]
+   },
+   {
+    "title": "Sums of binomial coefficients (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$C_r$ means ${}^nC_r$. Put $x=1$ in $(1+x)^n$: $C_0+C_1+\\dots+C_n=2^n$",
+     "Put $x=-1$: $C_0-C_1+C_2-\\dots=0$, so $C_0+C_2+\\dots=C_1+C_3+\\dots=2^{n-1}$",
+     "$rC_r=n\\,{}^{n-1}C_{r-1}$, so $\\sum rC_r=n2^{n-1}$",
+     "$\\frac{C_r}{r+1}=\\frac{{}^{n+1}C_{r+1}}{n+1}$, so $\\sum\\frac{C_r}{r+1}=\\frac{2^{n+1}-1}{n+1}$",
+     "$C_0^2+C_1^2+\\dots+C_n^2={}^{2n}C_n$"
+    ],
+    "examples": [
+     {
+      "question": "Find ${}^{10}C_1+{}^{10}C_2+\\dots+{}^{10}C_{10}$.",
+      "steps": [
+       "$\\sum_{r=0}^{10}{}^{10}C_r=2^{10}=1024$",
+       "Remove ${}^{10}C_0=1$"
+      ],
+      "result": "$1023$",
+      "type": "Basic · put x = 1",
+      "reasoning": [
+       "$(1+1)^{10}$ adds all the coefficients.",
+       "The sum in the question starts at $r=1$."
+      ]
+     },
+     {
+      "question": "Find ${}^8C_0+{}^8C_2+{}^8C_4+{}^8C_6+{}^8C_8$.",
+      "steps": [
+       "Even and odd sums are equal and together make $2^8$",
+       "Each is $2^7$"
+      ],
+      "result": "$128$",
+      "type": "Basic · even coefficients",
+      "reasoning": [
+       "$x=-1$ shows that the even sum minus the odd sum is $0$.",
+       "Half of $256$."
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=1}^{10}r\\,{}^{10}C_r$.",
+      "steps": [
+       "$r\\,{}^{10}C_r=10\\,{}^9C_{r-1}$",
+       "$\\sum=10\\cdot2^9$"
+      ],
+      "result": "$5120$",
+      "type": "Standard · weighted sum",
+      "use": [
+       "$rC_r=n\\,{}^{n-1}C_{r-1}$"
+      ]
+     },
+     {
+      "question": "Find $({}^5C_0)^2+({}^5C_1)^2+\\dots+({}^5C_5)^2$.",
+      "steps": [
+       "$\\sum C_r^2={}^{2n}C_n={}^{10}C_5$",
+       "Check: $1+25+100+100+25+1=252$"
+      ],
+      "result": "$252$",
+      "type": "Standard · sum of squares",
+      "use": [
+       "$\\sum C_r^2={}^{2n}C_n$"
+      ]
+     },
+     {
+      "question": "Find $C_0+\\frac{C_1}2+\\frac{C_2}3+\\dots+\\frac{C_n}{n+1}$.",
+      "steps": [
+       "$\\frac{C_r}{r+1}=\\frac{n!}{(r+1)!\\,(n-r)!}=\\frac1{n+1}\\,{}^{n+1}C_{r+1}$",
+       "$\\sum=\\frac1{n+1}\\left({}^{n+1}C_1+\\dots+{}^{n+1}C_{n+1}\\right)=\\frac{2^{n+1}-1}{n+1}$"
+      ],
+      "result": "$\\frac{2^{n+1}-1}{n+1}$",
+      "type": "JEE · shift the index",
+      "use": [
+       "$\\sum_{k=0}^{n+1}{}^{n+1}C_k=2^{n+1}$"
+      ]
+     },
+     {
+      "question": "Find $\\sum_{r=0}^{n}(r+1)C_r$.",
+      "steps": [
+       "$\\sum rC_r+\\sum C_r=n2^{n-1}+2^n$",
+       "$=2^{n-1}(n+2)$"
+      ],
+      "result": "$(n+2)2^{n-1}$",
+      "type": "JEE · split the sum",
+      "use": [
+       "$\\sum rC_r=n2^{n-1}$"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Remainders, greatest term and multinomials (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "For a remainder, write the base as (a multiple of the divisor) $\\pm1$ and expand",
+     "Numerically greatest term of $(1+x)^n$: $\\frac{T_{r+1}}{T_r}=\\frac{n-r+1}r|x|$. Terms grow while this ratio is $>1$",
+     "Number of terms of $(a+b+c)^n$: ${}^{n+2}C_2$",
+     "Coefficient of $a^pb^qc^r$ in $(a+b+c)^n$ ($p+q+r=n$): $\\frac{n!}{p!\\,q!\\,r!}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the remainder when $2^{100}$ is divided by $7$.",
+      "steps": [
+       "$2^3=8=7+1$, and $2^{100}=2\\cdot(2^3)^{33}=2(7+1)^{33}$",
+       "$(7+1)^{33}=7k+1$ for some integer $k$",
+       "$2^{100}=14k+2$"
+      ],
+      "result": "$2$",
+      "type": "Basic · near a multiple",
+      "reasoning": [
+       "Find a power of $2$ that is $1$ more than a multiple of $7$.",
+       "Every term of the expansion except the last has the factor $7$.",
+       "$14k$ is a multiple of $7$, so $2$ is left."
+      ]
+     },
+     {
+      "question": "How many terms are in $(x+y+z)^6$?",
+      "steps": [
+       "${}^{6+2}C_2={}^8C_2$"
+      ],
+      "result": "$28$",
+      "type": "Basic · number of terms",
+      "reasoning": [
+       "Each term is $x^ay^bz^c$ with $a+b+c=6$: count with the beggar method."
+      ]
+     },
+     {
+      "question": "Find the coefficient of $x^2y^3z$ in $(x+y+z)^6$.",
+      "steps": [
+       "$\\frac{6!}{2!\\,3!\\,1!}=\\frac{720}{12}$"
+      ],
+      "result": "$60$",
+      "type": "Standard · multinomial coefficient",
+      "use": [
+       "$\\frac{n!}{p!\\,q!\\,r!}$"
+      ]
+     },
+     {
+      "question": "Find the last two digits of $3^{20}$.",
+      "steps": [
+       "$3^{20}=9^{10}=(10-1)^{10}$",
+       "$=1-10\\cdot10+{}^{10}C_2\\cdot100-\\dots$. Every term after the first is a multiple of $100$",
+       "So $3^{20}\\equiv1\\pmod{100}$"
+      ],
+      "result": "$01$",
+      "type": "Standard · last two digits",
+      "use": [
+       "$(a+b)^n$ expansion"
+      ]
+     },
+     {
+      "question": "Find the numerically greatest term of $(1+x)^{10}$ when $x=\\frac23$.",
+      "steps": [
+       "$\\frac{T_{r+1}}{T_r}=\\frac{11-r}r\\cdot\\frac23\\ge1\\iff22-2r\\ge3r\\iff r\\le4.4$",
+       "So $T_5$ is the greatest: ${}^{10}C_4\\left(\\frac23\\right)^4=210\\cdot\\frac{16}{81}$"
+      ],
+      "result": "$T_5=\\frac{1120}{27}$",
+      "type": "JEE · greatest term",
+      "use": [
+       "$\\frac{T_{r+1}}{T_r}=\\frac{n-r+1}r|x|$"
+      ]
+     },
+     {
+      "question": "Find the coefficient of $x^4$ in $(1+x+x^2)^4$.",
+      "steps": [
+       "A term is $1^a x^b (x^2)^c$ with $a+b+c=4$ and $b+2c=4$",
+       "$(a,b,c)=(0,4,0)$: $1$; $(1,2,1)$: $\\frac{4!}{1!\\,2!\\,1!}=12$; $(2,0,2)$: $\\frac{4!}{2!\\,2!}=6$",
+       "$1+12+6$"
+      ],
+      "result": "$19$",
+      "type": "JEE · multinomial with powers",
+      "use": [
+       "$\\frac{n!}{p!\\,q!\\,r!}$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -2928,6 +3651,15 @@
      "$\\sum_{k=1}^{n}k=\\frac{n(n+1)}2$",
      "$\\sum_{k=1}^{n}k^2=\\frac{n(n+1)(2n+1)}6$",
      "$\\sum_{k=1}^{n}k^3=\\left[\\frac{n(n+1)}2\\right]^2$"
+    ]
+   },
+   {
+    "title": "JEE: HP, AGP and series",
+    "items": [
+     "$a, b, c$ in HP $\\iff\\frac1a,\\frac1b,\\frac1c$ in AP; HM $=\\frac{2ab}{a+b}$; $A\\ge G\\ge H$",
+     "AGP: $S_\\infty=\\frac a{1-r}+\\frac{dr}{(1-r)^2}$, $|r|<1$",
+     "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\dots$ for all $x$",
+     "$\\log_e(1+x)=x-\\frac{x^2}2+\\frac{x^3}3-\\dots$, $-1<x\\le1$"
     ]
    }
   ],
@@ -3282,6 +4014,287 @@
       "result": "$\\frac{n(n+1)(3n^2+23n+34)}{12}$"
      }
     ]
+   },
+   {
+    "title": "Harmonic progression and AM–GM–HM (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$a, b, c$ are in HP $\\iff\\frac1a,\\frac1b,\\frac1c$ are in AP. There is no sum formula for an HP",
+     "Harmonic mean of $a, b$: $H=\\frac{2ab}{a+b}$. If $a, b, c$ are in HP, $b=\\frac{2ac}{a+c}$",
+     "For positive $a, b$: $A\\ge G\\ge H$, with equality only when $a=b$, and $G^2=AH$",
+     "AM–GM for $n$ positive numbers: $\\frac{a_1+\\dots+a_n}{n}\\ge\\sqrt[n]{a_1a_2\\cdots a_n}$"
+    ],
+    "examples": [
+     {
+      "question": "Find the $5$th term of the HP $\\frac12,\\frac15,\\frac18,\\dots$",
+      "steps": [
+       "Take reciprocals: $2, 5, 8, \\dots$ is an AP with $a=2$, $d=3$",
+       "$5$th term of the AP: $2+4\\times3=14$",
+       "Take the reciprocal again"
+      ],
+      "result": "$\\frac1{14}$",
+      "type": "Basic · HP through AP",
+      "reasoning": [
+       "An HP has no formula of its own. We always change it to an AP.",
+       "Use $a_n=a+(n-1)d$ on the AP.",
+       "The answer must be a term of the HP, not of the AP."
+      ]
+     },
+     {
+      "question": "Find the AM, GM and HM of $4$ and $16$. Check that $G^2=AH$.",
+      "steps": [
+       "$A=\\frac{4+16}2=10$, $G=\\sqrt{64}=8$",
+       "$H=\\frac{2\\cdot4\\cdot16}{20}=6.4$",
+       "$AH=10\\times6.4=64=G^2$"
+      ],
+      "result": "$A=10,\\ G=8,\\ H=6.4$",
+      "type": "Basic · three means",
+      "reasoning": [
+       "Use the definitions directly.",
+       "Note that $10\\ge8\\ge6.4$, so $A\\ge G\\ge H$ is true here.",
+       "This relation is true for any two positive numbers."
+      ]
+     },
+     {
+      "question": "$a, b, c$ are in HP. Show that $b=\\frac{2ac}{a+c}$.",
+      "steps": [
+       "$\\frac1a,\\frac1b,\\frac1c$ are in AP, so $\\frac2b=\\frac1a+\\frac1c=\\frac{a+c}{ac}$",
+       "$b=\\frac{2ac}{a+c}$"
+      ],
+      "result": "Proved",
+      "type": "Standard · HP condition",
+      "use": [
+       "Middle term of an AP: $2y=x+z$"
+      ]
+     },
+     {
+      "question": "Find the least value of $x+\\frac4x$ for $x>0$.",
+      "steps": [
+       "AM–GM: $\\frac{x+\\frac4x}{2}\\ge\\sqrt{x\\cdot\\frac4x}=2$",
+       "So $x+\\frac4x\\ge4$. Equality when $x=\\frac4x$, that is $x=2$"
+      ],
+      "result": "$4$, at $x=2$",
+      "type": "Standard · AM–GM minimum",
+      "use": [
+       "$\\frac{a+b}2\\ge\\sqrt{ab}$"
+      ]
+     },
+     {
+      "question": "$a, b, c>0$ and $a+b+c=12$. Find the greatest value of $abc$.",
+      "steps": [
+       "$\\frac{a+b+c}3\\ge\\sqrt[3]{abc}$, so $4\\ge\\sqrt[3]{abc}$",
+       "$abc\\le64$, with equality when $a=b=c=4$"
+      ],
+      "result": "$64$",
+      "type": "JEE · AM–GM maximum",
+      "use": [
+       "$\\frac{a_1+\\dots+a_n}{n}\\ge\\sqrt[n]{a_1\\cdots a_n}$"
+      ]
+     },
+     {
+      "question": "For positive $a, b, c$, find the least value of $(a+b+c)\\left(\\frac1a+\\frac1b+\\frac1c\\right)$.",
+      "steps": [
+       "$a+b+c\\ge3\\sqrt[3]{abc}$ and $\\frac1a+\\frac1b+\\frac1c\\ge\\frac3{\\sqrt[3]{abc}}$",
+       "Multiply: the product $\\ge9$. Equality when $a=b=c$"
+      ],
+      "result": "$9$",
+      "type": "JEE · product of two AM–GMs",
+      "use": [
+       "AM–GM for $3$ numbers"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Arithmetico-geometric series and the method of differences (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "AGP: $a,\\ (a+d)r,\\ (a+2d)r^2,\\dots$ Multiply $S$ by $r$, subtract, and sum the GP that is left",
+     "$S_\\infty=\\frac a{1-r}+\\frac{dr}{(1-r)^2}$ for $|r|<1$",
+     "Telescoping: $\\frac1{k(k+1)}=\\frac1k-\\frac1{k+1}$; $\\frac1{k(k+1)(k+2)}=\\frac12\\left[\\frac1{k(k+1)}-\\frac1{(k+1)(k+2)}\\right]$",
+     "Method of differences: if $T_2-T_1, T_3-T_2,\\dots$ are in AP, then $T_n$ is a quadratic in $n$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\frac1{1\\cdot2}+\\frac1{2\\cdot3}+\\dots+\\frac1{n(n+1)}$.",
+      "steps": [
+       "$\\frac1{k(k+1)}=\\frac1k-\\frac1{k+1}$",
+       "Sum $=\\left(1-\\frac12\\right)+\\left(\\frac12-\\frac13\\right)+\\dots+\\left(\\frac1n-\\frac1{n+1}\\right)$",
+       "$=1-\\frac1{n+1}$"
+      ],
+      "result": "$\\frac n{n+1}$",
+      "type": "Basic · telescoping",
+      "reasoning": [
+       "Check: $\\frac12-\\frac13=\\frac{3-2}{6}=\\frac16=\\frac1{2\\cdot3}$.",
+       "Write every term as a difference.",
+       "All middle terms cancel. Only the first and the last parts stay."
+      ]
+     },
+     {
+      "question": "Find $1+2x+3x^2+4x^3+\\dots$ to infinity, $|x|<1$.",
+      "steps": [
+       "$S=1+2x+3x^2+\\dots$ and $xS=x+2x^2+\\dots$",
+       "$S-xS=1+x+x^2+\\dots=\\frac1{1-x}$",
+       "$S=\\frac1{(1-x)^2}$"
+      ],
+      "result": "$\\frac1{(1-x)^2}$",
+      "type": "Basic · multiply by r and subtract",
+      "reasoning": [
+       "Write $xS$ one place to the right, under $S$.",
+       "The coefficients $2-1, 3-2,\\dots$ are all $1$, so a GP is left.",
+       "Divide by $1-x$."
+      ]
+     },
+     {
+      "question": "Find $1+\\frac32+\\frac54+\\frac78+\\dots$ to infinity.",
+      "steps": [
+       "AGP with $a=1$, $d=2$, $r=\\frac12$",
+       "$S_\\infty=\\frac1{1-\\frac12}+\\frac{2\\cdot\\frac12}{\\left(\\frac12\\right)^2}=2+4$"
+      ],
+      "result": "$6$",
+      "type": "Standard · AGP to infinity",
+      "use": [
+       "$S_\\infty=\\frac a{1-r}+\\frac{dr}{(1-r)^2}$"
+      ]
+     },
+     {
+      "question": "Find the sum to $n$ terms of $1+3+7+13+21+\\dots$",
+      "steps": [
+       "Differences: $2, 4, 6, 8,\\dots$, so $T_n=1+(2+4+\\dots+2(n-1))=n^2-n+1$",
+       "$S_n=\\sum n^2-\\sum n+n=\\frac{n(n+1)(2n+1)}6-\\frac{n(n+1)}2+n$",
+       "$=\\frac{n(n^2+2)}3$"
+      ],
+      "result": "$\\frac{n(n^2+2)}3$",
+      "type": "Standard · method of differences",
+      "use": [
+       "$\\sum k=\\frac{n(n+1)}2,\\ \\sum k^2=\\frac{n(n+1)(2n+1)}6$"
+      ]
+     },
+     {
+      "question": "Find $\\sum_{k=1}^{n}\\frac1{k(k+1)(k+2)}$.",
+      "steps": [
+       "$\\frac1{k(k+1)(k+2)}=\\frac12\\left[\\frac1{k(k+1)}-\\frac1{(k+1)(k+2)}\\right]$",
+       "The sum telescopes: $\\frac12\\left[\\frac12-\\frac1{(n+1)(n+2)}\\right]$"
+      ],
+      "result": "$\\frac14-\\frac1{2(n+1)(n+2)}$",
+      "type": "JEE · telescoping with three factors",
+      "use": [
+       "Telescoping"
+      ]
+     },
+     {
+      "question": "Find $1+2\\cdot2+3\\cdot2^2+\\dots+n\\cdot2^{n-1}$.",
+      "steps": [
+       "$S-2S=1+2+2^2+\\dots+2^{n-1}-n\\cdot2^n=2^n-1-n\\cdot2^n$",
+       "$S=(n-1)2^n+1$"
+      ],
+      "result": "$(n-1)2^n+1$",
+      "type": "JEE · finite AGP",
+      "use": [
+       "Multiply by $r$ and subtract"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Exponential and logarithmic series (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\dots$ for every real $x$; $e=1+\\frac1{1!}+\\frac1{2!}+\\dots\\approx2.718$",
+     "$e^{-x}=1-x+\\frac{x^2}{2!}-\\dots$; $\\frac{e^x+e^{-x}}2=1+\\frac{x^2}{2!}+\\frac{x^4}{4!}+\\dots$",
+     "$\\log_e(1+x)=x-\\frac{x^2}2+\\frac{x^3}3-\\dots$ for $-1<x\\le1$",
+     "$\\log_e(1-x)=-\\left(x+\\frac{x^2}2+\\frac{x^3}3+\\dots\\right)$ for $-1\\le x<1$; $\\log_e2=1-\\frac12+\\frac13-\\dots$",
+     "Coefficient of $x^n$ in $e^{ax}$: $\\frac{a^n}{n!}$"
+    ],
+    "examples": [
+     {
+      "question": "Write the first four terms of $e^{2x}$.",
+      "steps": [
+       "Put $2x$ in place of $x$: $1+2x+\\frac{(2x)^2}{2!}+\\frac{(2x)^3}{3!}$",
+       "$=1+2x+2x^2+\\frac43x^3$"
+      ],
+      "result": "$1+2x+2x^2+\\frac43x^3+\\dots$",
+      "type": "Basic · substitute in the series",
+      "reasoning": [
+       "The series for $e^x$ is true for every $x$, so it is true for $2x$ too.",
+       "$\\frac{4x^2}{2}=2x^2$ and $\\frac{8x^3}{6}=\\frac43x^3$."
+      ]
+     },
+     {
+      "question": "Find $1+\\frac2{1!}+\\frac{2^2}{2!}+\\frac{2^3}{3!}+\\dots$",
+      "steps": [
+       "This is $e^x$ with $x=2$"
+      ],
+      "result": "$e^2$",
+      "type": "Basic · recognise the series",
+      "reasoning": [
+       "Compare term by term: $\\frac{x^n}{n!}$ with $x=2$."
+      ]
+     },
+     {
+      "question": "Find the coefficient of $x^4$ in $(1+x)e^x$.",
+      "steps": [
+       "$(1+x)e^x=e^x+xe^x$",
+       "$x^4$ in $e^x$: $\\frac1{4!}$. $x^4$ in $xe^x$ comes from $x\\cdot\\frac{x^3}{3!}$: $\\frac1{3!}$",
+       "$\\frac1{24}+\\frac4{24}$"
+      ],
+      "result": "$\\frac5{24}$",
+      "type": "Standard · coefficients",
+      "use": [
+       "$e^x=\\sum\\frac{x^n}{n!}$"
+      ]
+     },
+     {
+      "question": "Write the first three terms of $\\log_e(1+2x)$ and state where the series is valid.",
+      "steps": [
+       "$2x-\\frac{(2x)^2}2+\\frac{(2x)^3}3=2x-2x^2+\\frac83x^3$",
+       "Valid when $-1<2x\\le1$"
+      ],
+      "result": "$2x-2x^2+\\frac83x^3-\\dots$, for $-\\frac12<x\\le\\frac12$",
+      "type": "Standard · log series and its range",
+      "use": [
+       "$\\log_e(1+x)=x-\\frac{x^2}2+\\frac{x^3}3-\\dots$"
+      ]
+     },
+     {
+      "question": "Find $\\sum_{n=1}^{\\infty}\\frac{n^2}{n!}$.",
+      "steps": [
+       "$\\frac{n^2}{n!}=\\frac n{(n-1)!}=\\frac{(n-1)+1}{(n-1)!}$",
+       "$=\\frac1{(n-2)!}+\\frac1{(n-1)!}$ (the first part is $0$ when $n=1$)",
+       "Each part sums to $e$"
+      ],
+      "result": "$2e$",
+      "type": "JEE · split the numerator",
+      "use": [
+       "$e=\\sum_{k=0}^\\infty\\frac1{k!}$"
+      ]
+     },
+     {
+      "question": "Find $\\frac12+\\frac1{2\\cdot2^2}+\\frac1{3\\cdot2^3}+\\dots$",
+      "steps": [
+       "This is $x+\\frac{x^2}2+\\frac{x^3}3+\\dots$ with $x=\\frac12$",
+       "$=-\\log_e\\left(1-\\frac12\\right)=-\\log_e\\frac12$"
+      ],
+      "result": "$\\log_e2$",
+      "type": "JEE · log series",
+      "use": [
+       "$\\log_e(1-x)=-\\left(x+\\frac{x^2}2+\\dots\\right)$"
+      ]
+     },
+     {
+      "question": "Find the coefficient of $x^3$ in $\\log_e(1+x+x^2)$.",
+      "steps": [
+       "$1+x+x^2=\\frac{1-x^3}{1-x}$, so $\\log_e(1+x+x^2)=\\log_e(1-x^3)-\\log_e(1-x)$",
+       "$x^3$ in $\\log_e(1-x^3)$: $-1$. $x^3$ in $-\\log_e(1-x)$: $+\\frac13$",
+       "$-1+\\frac13$"
+      ],
+      "result": "$-\\frac23$",
+      "type": "JEE · a clever factorisation",
+      "use": [
+       "$\\log_e(1-x)=-\\sum\\frac{x^n}n$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -3323,6 +4336,14 @@
      "Vertices $(\\pm a,0)$; transverse axis $2a$, conjugate axis $2b$",
      "$e=\\frac ca>1$, latus rectum $=\\frac{2b^2}a$",
      "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1:$ foci $(0,\\pm c)$"
+    ]
+   },
+   {
+    "title": "JEE: tangents and normals",
+    "items": [
+     "Tangent at $(x_1,y_1)$: $xx_1+yy_1=a^2$; $yy_1=2a(x+x_1)$; $\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1$",
+     "$y=mx+c$ touches: circle $c^2=a^2(1+m^2)$; parabola $c=\\frac am$; ellipse $c^2=a^2m^2+b^2$; hyperbola $c^2=a^2m^2-b^2$",
+     "Normal to $y^2=4ax$ at $(at^2,2at)$: $y=-tx+2at+at^3$"
     ]
    }
   ],
@@ -3689,6 +4710,104 @@
       "result": "$2\\sqrt{10}$ m"
      }
     ]
+   },
+   {
+    "title": "Tangents, normals and parametric forms (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "Parametric points: $(at^2,2at)$ on $y^2=4ax$; $(a\\cos\\theta,b\\sin\\theta)$ on the ellipse; $(a\\sec\\theta,b\\tan\\theta)$ on the hyperbola",
+     "Tangent at $(x_1,y_1)$: circle $xx_1+yy_1=a^2$; parabola $yy_1=2a(x+x_1)$; ellipse $\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1$; hyperbola $\\frac{xx_1}{a^2}-\\frac{yy_1}{b^2}=1$",
+     "$y=mx+c$ is a tangent when: circle $x^2+y^2=a^2$: $c^2=a^2(1+m^2)$; parabola $y^2=4ax$: $c=\\frac am$; ellipse: $c^2=a^2m^2+b^2$; hyperbola: $c^2=a^2m^2-b^2$",
+     "A line touches a circle $\\iff$ its distance from the centre equals the radius",
+     "Normal to $y^2=4ax$ at $(at^2,2at)$: $y=-tx+2at+at^3$"
+    ],
+    "examples": [
+     {
+      "question": "Find the tangent to $x^2+y^2=25$ at $(3,4)$.",
+      "steps": [
+       "Replace $x^2$ by $x\\cdot3$ and $y^2$ by $y\\cdot4$",
+       "$3x+4y=25$"
+      ],
+      "result": "$3x+4y=25$",
+      "type": "Basic · tangent at a point",
+      "reasoning": [
+       "This is the \"$T=0$\" rule: one $x$ becomes $x_1$, one $y$ becomes $y_1$.",
+       "Check: the slope of the radius is $\\frac43$ and the slope of the line is $-\\frac34$. Their product is $-1$, so they are perpendicular."
+      ]
+     },
+     {
+      "question": "Find the tangent to $y^2=8x$ at $(2,4)$.",
+      "steps": [
+       "$4a=8$, so $a=2$",
+       "$y\\cdot4=2\\cdot2(x+2)$, that is $4y=4x+8$"
+      ],
+      "result": "$y=x+2$",
+      "type": "Basic · parabola",
+      "reasoning": [
+       "Compare with $y^2=4ax$.",
+       "Use $yy_1=2a(x+x_1)$ and simplify."
+      ]
+     },
+     {
+      "question": "Find the tangents of slope $2$ to $\\frac{x^2}9+\\frac{y^2}4=1$.",
+      "steps": [
+       "$c^2=a^2m^2+b^2=9\\cdot4+4=40$",
+       "$c=\\pm2\\sqrt{10}$"
+      ],
+      "result": "$y=2x\\pm2\\sqrt{10}$",
+      "type": "Standard · given slope",
+      "use": [
+       "$c^2=a^2m^2+b^2$"
+      ]
+     },
+     {
+      "question": "For which $k$ does $3x+4y=k$ touch $x^2+y^2=4$?",
+      "steps": [
+       "Distance of $(0,0)$ from the line: $\\frac{|k|}{5}$",
+       "$\\frac{|k|}5=2$"
+      ],
+      "result": "$k=\\pm10$",
+      "type": "Standard · distance equals radius",
+      "use": [
+       "$\\frac{|ax_1+by_1+c|}{\\sqrt{a^2+b^2}}$"
+      ]
+     },
+     {
+      "question": "Find the normal to $y^2=4x$ at $(1,2)$.",
+      "steps": [
+       "$a=1$ and $(at^2,2at)=(1,2)$ gives $t=1$",
+       "$y=-x+2+1$"
+      ],
+      "result": "$x+y=3$",
+      "type": "JEE · normal to a parabola",
+      "use": [
+       "$y=-tx+2at+at^3$"
+      ]
+     },
+     {
+      "question": "Find the tangents of slope $2$ to $\\frac{x^2}{16}-\\frac{y^2}9=1$.",
+      "steps": [
+       "$c^2=a^2m^2-b^2=16\\cdot4-9=55$"
+      ],
+      "result": "$y=2x\\pm\\sqrt{55}$",
+      "type": "JEE · hyperbola",
+      "use": [
+       "$c^2=a^2m^2-b^2$"
+      ]
+     },
+     {
+      "question": "For which $c$ does $y=x+c$ touch $y^2=12x$? Find the point of contact.",
+      "steps": [
+       "$a=3$, $m=1$: $c=\\frac am=3$",
+       "Point of contact $\\left(\\frac a{m^2},\\frac{2a}m\\right)=(3,6)$"
+      ],
+      "result": "$c=3$, at $(3,6)$",
+      "type": "JEE · parabola condition",
+      "use": [
+       "$c=\\frac am$"
+      ]
+     }
+    ]
    }
   ],
   "grade": 11
@@ -4012,6 +5131,14 @@
      "$(uv)'=u'v+uv'$",
      "$\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}$",
      "$\\frac{d}{dx}\\sin x=\\cos x,\\quad \\frac{d}{dx}\\cos x=-\\sin x,\\quad \\frac{d}{dx}\\tan x=\\sec^2x$"
+    ]
+   },
+   {
+    "title": "JEE: e and log limits",
+    "items": [
+     "$\\lim\\limits_{x\\to0}\\frac{e^x-1}x=1$, $\\lim\\limits_{x\\to0}\\frac{\\log_e(1+x)}x=1$, $\\lim\\limits_{x\\to0}\\frac{a^x-1}x=\\log_ea$",
+     "$\\lim\\limits_{x\\to0}(1+x)^{\\frac1x}=e$",
+     "$1^\\infty$ form: $\\lim f^g=e^{\\lim g(f-1)}$"
     ]
    }
   ],
@@ -4393,6 +5520,102 @@
        "$\\frac{\\tan x}x\\cdot\\frac{1-\\cos x}{x^2}\\to1\\cdot\\frac12$"
       ],
       "result": "$\\frac12$"
+     }
+    ]
+   },
+   {
+    "title": "Exponential, logarithmic and power-form limits (JEE)",
+    "level": "challenge",
+    "formulas": [
+     "$\\lim\\limits_{x\\to0}\\frac{e^x-1}x=1$ and $\\lim\\limits_{x\\to0}\\frac{\\log_e(1+x)}x=1$",
+     "$\\lim\\limits_{x\\to0}\\frac{a^x-1}x=\\log_ea$ ($a>0$)",
+     "$\\lim\\limits_{x\\to0}(1+x)^{\\frac1x}=e$ and $\\lim\\limits_{x\\to\\infty}\\left(1+\\frac kx\\right)^x=e^k$",
+     "$1^\\infty$ form: if $f\\to1$ and $g\\to\\infty$, then $\\lim f^g=e^{\\lim g(f-1)}$"
+    ],
+    "examples": [
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\frac{e^{3x}-1}x$.",
+      "steps": [
+       "$\\frac{e^{3x}-1}x=3\\cdot\\frac{e^{3x}-1}{3x}$",
+       "As $x\\to0$, $3x\\to0$, so $\\frac{e^{3x}-1}{3x}\\to1$"
+      ],
+      "result": "$3$",
+      "type": "Basic · make the standard form",
+      "reasoning": [
+       "The bottom must be the same as the power of $e$. Multiply and divide by $3$.",
+       "Use the standard limit with $3x$ in place of $x$."
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\frac{\\log_e(1+5x)}x$.",
+      "steps": [
+       "$=5\\cdot\\frac{\\log_e(1+5x)}{5x}\\to5\\cdot1$"
+      ],
+      "result": "$5$",
+      "type": "Basic · log limit",
+      "reasoning": [
+       "Again, make the bottom equal to the quantity inside the log."
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\frac{3^x-2^x}x$.",
+      "steps": [
+       "$\\frac{3^x-2^x}x=\\frac{3^x-1}x-\\frac{2^x-1}x$",
+       "$\\to\\log_e3-\\log_e2$"
+      ],
+      "result": "$\\log_e\\frac32$",
+      "type": "Standard · split into two limits",
+      "use": [
+       "$\\lim\\frac{a^x-1}x=\\log_ea$"
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}(1+2x)^{\\frac1x}$.",
+      "steps": [
+       "$(1+2x)^{\\frac1x}=\\left[(1+2x)^{\\frac1{2x}}\\right]^2$",
+       "The bracket $\\to e$"
+      ],
+      "result": "$e^2$",
+      "type": "Standard · the limit for e",
+      "use": [
+       "$\\lim(1+x)^{\\frac1x}=e$"
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to\\infty}\\left(\\frac{x+2}{x-1}\\right)^x$.",
+      "steps": [
+       "$1^\\infty$ form. $f-1=\\frac{x+2}{x-1}-1=\\frac3{x-1}$",
+       "$g(f-1)=\\frac{3x}{x-1}\\to3$"
+      ],
+      "result": "$e^3$",
+      "type": "JEE · the one-to-the-power-infinity form",
+      "use": [
+       "$\\lim f^g=e^{\\lim g(f-1)}$"
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}\\frac{e^x-e^{-x}}{\\sin x}$.",
+      "steps": [
+       "$\\frac{e^x-e^{-x}}{x}=\\frac{e^x-1}x+\\frac{e^{-x}-1}{-x}\\to1+1=2$",
+       "Divide by $\\frac{\\sin x}x\\to1$"
+      ],
+      "result": "$2$",
+      "type": "JEE · mixed standard limits",
+      "use": [
+       "$\\lim\\frac{e^x-1}x=1$, $\\lim\\frac{\\sin x}x=1$"
+      ]
+     },
+     {
+      "question": "Find $\\lim\\limits_{x\\to0}(\\cos x)^{\\frac1{x^2}}$.",
+      "steps": [
+       "$1^\\infty$ form. $g(f-1)=\\frac{\\cos x-1}{x^2}$",
+       "$\\frac{\\cos x-1}{x^2}=-\\frac{2\\sin^2\\frac x2}{x^2}\\to-\\frac12$"
+      ],
+      "result": "$e^{-\\frac12}=\\frac1{\\sqrt e}$",
+      "type": "JEE · power form with trigonometry",
+      "use": [
+       "$\\lim f^g=e^{\\lim g(f-1)}$"
+      ]
      }
     ]
    }

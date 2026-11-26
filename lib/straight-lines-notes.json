@@ -66,6 +66,13 @@
     "\\text{Foot}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{Ax_1+By_1+C}{A^2+B^2}",
     "\\text{Image}:\\ \\dfrac{h-x_1}{A}=\\dfrac{k-y_1}{B}=-\\dfrac{2(Ax_1+By_1+C)}{A^2+B^2}"
    ]
+  },
+  {
+   "title": "JEE: families and images",
+   "items": [
+    "L_1+\\lambda L_2=0",
+    "\\frac{x-x_1}a=\\frac{y-y_1}b=\\frac{-2(ax_1+by_1+c)}{a^2+b^2}"
+   ]
   }
  ],
  "lessons": [
@@ -684,6 +691,98 @@
     }
    ],
    "level": "challenge"
+  },
+  {
+   "title": "Family of lines, reflection and locus (JEE)",
+   "level": "challenge",
+   "ideas": [
+    "A locus question: call the moving point $P(h,k)$, write the condition in $h$ and $k$, then write $x$ and $y$ for $h$ and $k$.",
+    "Every line through the meeting point of $L_1=0$ and $L_2=0$ has the form $L_1+\\lambda L_2=0$. One more condition gives $\\lambda$.",
+    "To test two points against a line, put each point in $ax+by+c$. The same sign means the same side."
+   ],
+   "formulas": [
+    "L_1+\\lambda L_2=0:\\ \\text{lines through the meeting point of } L_1=0,\\ L_2=0",
+    "\\text{Image of }(x_1,y_1)\\text{ in }ax+by+c=0:\\ \\frac{x-x_1}a=\\frac{y-y_1}b=\\frac{-2(ax_1+by_1+c)}{a^2+b^2}",
+    "\\text{Same side} \\iff ax_1+by_1+c \\text{ and } ax_2+by_2+c \\text{ have the same sign}"
+   ],
+   "examples": [
+    {
+     "question": "Find the locus of a point that is equidistant from $(1,2)$ and $(3,4)$.",
+     "use": [
+      "PA^2=PB^2"
+     ],
+     "steps": [
+      "Let $P(h,k)$: $(h-1)^2+(k-2)^2=(h-3)^2+(k-4)^2$",
+      "$-2h-4k+5=-6h-8k+25$, so $4h+4k=20$",
+      "Write $x, y$ for $h, k$"
+     ],
+     "result": "$x+y=5$",
+     "type": "Basic · locus"
+    },
+    {
+     "question": "Are $(1,2)$ and $(3,-4)$ on the same side of $x+y-2=0$?",
+     "use": [
+      "\\text{sign of } ax_1+by_1+c"
+     ],
+     "steps": [
+      "$(1,2)$: $1+2-2=1>0$",
+      "$(3,-4)$: $3-4-2=-3<0$"
+     ],
+     "result": "No. They are on opposite sides.",
+     "type": "Basic · same side or not"
+    },
+    {
+     "question": "Find the line through the origin and the meeting point of $x+y=4$ and $2x-y=2$.",
+     "use": [
+      "L_1+\\lambda L_2=0"
+     ],
+     "steps": [
+      "$(x+y-4)+\\lambda(2x-y-2)=0$",
+      "Put $(0,0)$: $-4-2\\lambda=0$, so $\\lambda=-2$",
+      "$x+y-4-4x+2y+4=0$, that is $-3x+3y=0$"
+     ],
+     "result": "$y=x$",
+     "type": "Standard · family of lines"
+    },
+    {
+     "question": "Find the image of $(2,1)$ in the line $x+y-5=0$.",
+     "use": [
+      "\\frac{x-x_1}a=\\frac{y-y_1}b=\\frac{-2(ax_1+by_1+c)}{a^2+b^2}"
+     ],
+     "steps": [
+      "$\\frac{x-2}1=\\frac{y-1}1=\\frac{-2(2+1-5)}{2}=2$",
+      "$x=4$, $y=3$. Check: the mid-point $(3,2)$ is on the line"
+     ],
+     "result": "$(4,3)$",
+     "type": "Standard · reflection"
+    },
+    {
+     "question": "A rod of length $6$ slides with its ends on the $x$-axis and the $y$-axis. Find the locus of its mid-point.",
+     "use": [
+      "\\text{mid-point formula}"
+     ],
+     "steps": [
+      "Ends $(a,0)$ and $(0,b)$ with $a^2+b^2=36$",
+      "Mid-point $(h,k)=\\left(\\frac a2,\\frac b2\\right)$, so $a=2h$, $b=2k$",
+      "$4h^2+4k^2=36$"
+     ],
+     "result": "$x^2+y^2=9$",
+     "type": "JEE · locus of a mid-point"
+    },
+    {
+     "question": "Show that the lines $(a+2b)x+(a-b)y+(a+5b)=0$ pass through one fixed point for all $a, b$. Find the point.",
+     "use": [
+      "L_1+\\lambda L_2=0"
+     ],
+     "steps": [
+      "Group: $a(x+y+1)+b(2x-y+5)=0$",
+      "Every line passes through the meeting point of $x+y+1=0$ and $2x-y+5=0$",
+      "Add: $3x+6=0$, so $x=-2$ and $y=1$"
+     ],
+     "result": "$(-2,1)$",
+     "type": "JEE · fixed point of a family"
+    }
+   ]
   }
  ],
  "links": [
