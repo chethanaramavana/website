@@ -1399,49 +1399,70 @@
      {
       "question": "Put $+$ or $-$ in each gap of $5\\ \\_\\ 6\\ \\_\\ 7\\ \\_\\ 8$. Show that the answer is always even.",
       "steps": [
-       "With all $+$ signs: $5+6+7+8=26$, which is even.",
-       "Changing $+b$ to $-b$ changes the answer by $2b$, which is even.",
-       "So every choice of signs gives an even answer."
+       "Start with all $+$ signs: $5+6+7+8=26$. This is even.",
+       "Change one sign, for example $+7$ to $-7$: $5+6-7+8=12$. The answer went down by $26-12=14=2\\times7$.",
+       "This is always true: changing $+x$ to $-x$ takes away $x$ two times, so the answer changes by $2x$.",
+       "$2x$ is even. An even number minus an even number is even. So the answer stays even after each change.",
+       "Every choice of signs comes from $26$ by such changes, so every answer is even."
       ],
       "result": "Always even",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "We cannot try all $8$ ways one by one and call it a proof. Look at what happens when one sign changes.",
+      "check": "Try $5-6-7+8=0$ and $5-6+7-8=-2$. Both are even."
      },
      {
       "question": "Which of these are even for every whole number $n$: $2n+4$, $3n$, $n(n+1)$, $n^2+n+1$, $4n-1$?",
       "steps": [
-       "$2n+4=2(n+2)$: even.",
-       "$n(n+1)$: one of two consecutive numbers is even, so the product is even.",
-       "$3n$ is odd when $n$ is odd; $n^2+n+1=n(n+1)+1$ is odd; $4n-1$ is odd."
+       "$2n+4$: take out the common factor $2$: $2n+4=2(n+2)$. It is $2$ times a whole number, so it is always even.",
+       "$3n$: try $n=1$. $3\\times1=3$ is odd. So $3n$ is not always even.",
+       "$n(n+1)$: $n$ and $n+1$ are next to each other, so one of them is even. Even $\\times$ any number is even. So it is always even.",
+       "$n^2+n+1=n(n+1)+1$. We just saw that $n(n+1)$ is even, so this is even $+1$, which is odd. Never even.",
+       "$4n-1$: $4n$ is even, so $4n-1$ is odd. Never even."
       ],
       "result": "$2n+4$ and $n(n+1)$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "\"For every $n$\" means we need a reason that works for all $n$. To show \"not always\", one value of $n$ that gives an odd number is enough.",
+      "mistake": "Checking only $n=2$ (where $3n=6$ is even) and saying \"always\". One example cannot prove \"always\"."
      },
      {
       "question": "Prove that the sum of an even number and an odd number is odd.",
       "steps": [
-       "Even $=2a$, odd $=2b+1$.",
-       "Sum $=2a+2b+1=2(a+b)+1$: one more than an even number."
+       "Let the even number be $2a$ and the odd number be $2b+1$.",
+       "Add them: $2a+(2b+1)=2a+2b+1$.",
+       "Take $2$ common from the first two terms: $2(a+b)+1$.",
+       "$2(a+b)$ is even. One more than an even number is odd."
       ],
       "result": "The sum is odd",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Use the letters: even $=2a$ and odd $=2b+1$. Use different letters, because the two numbers are different.",
+      "check": "$6+9=15$ is odd.",
+      "mistake": "Writing both numbers as $2n$ and $2n+1$. Then the proof works only for numbers next to each other, such as $6$ and $7$."
      },
      {
       "question": "Can five odd numbers add up to $100$?",
       "steps": [
-       "Two odd numbers make an even sum, so four odd numbers make an even sum.",
-       "Even $+$ the fifth odd number is odd. $100$ is even."
+       "Odd $+$ odd $=$ even. So the first four odd numbers make two pairs, and each pair has an even sum.",
+       "Even $+$ even $=$ even. So the sum of the first four is even.",
+       "Add the fifth odd number: even $+$ odd $=$ odd.",
+       "So the sum of five odd numbers is always odd. $100$ is even, so it is not possible."
       ],
       "result": "No",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Pair the odd numbers. Each pair has an even sum.",
+      "check": "$1+3+5+7+9=25$ is odd. Try to make $100$ with any five odd numbers: you will always get an odd total."
      },
      {
       "question": "Without adding, is $1+2+3+\\dots+20$ even or odd?",
       "steps": [
-       "There are $10$ odd numbers: $1, 3, \\dots, 19$.",
-       "$10$ odd numbers make $5$ even pairs. The even numbers add to an even total."
+       "The even numbers $2, 4, \\dots, 20$ add to an even number (even $+$ even $=$ even).",
+       "The odd numbers are $1, 3, 5, \\dots, 19$. There are $10$ of them.",
+       "$10$ odd numbers make $5$ pairs, and each pair has an even sum. So their total is even.",
+       "Even $+$ even $=$ even."
       ],
       "result": "Even (it is $210$)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Only the odd numbers can change the parity of the total. Count them.",
+      "check": "$1+2+\\dots+20=\\frac{20\\times21}{2}=210$, which is even."
      }
     ],
     "picture": {
@@ -1725,38 +1746,53 @@
      {
       "question": "Is $14+26$ a multiple of $4$? Explain with the form $4k+2$.",
       "steps": [
-       "$14=4\\times3+2$ and $26=4\\times6+2$.",
-       "Sum $=4\\times9+4=4\\times10$."
+       "$14=4\\times3+2$ and $26=4\\times6+2$. Both have the form $4k+2$.",
+       "Add: $14+26=4\\times3+4\\times6+2+2$.",
+       "$=4\\times9+4=4\\times10=40$.",
+       "So the sum is a multiple of $4$."
       ],
       "result": "Yes, $40$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write each number as $4\\times(\\text{something})+2$. The two extra $2$s join to make a $4$.",
+      "check": "In general: $(4a+2)+(4b+2)=4a+4b+4=4(a+b+1)$."
      },
      {
       "question": "Can a multiple of $4$ plus an even number that is not a multiple of $4$ be a multiple of $4$?",
       "steps": [
-       "$4a+(4b+2)=4(a+b)+2$.",
-       "It always leaves remainder $2$."
+       "The sum is $4a+(4b+2)=4(a+b)+2$.",
+       "$4(a+b)$ is a multiple of $4$. Adding $2$ gives remainder $2$ on division by $4$.",
+       "A multiple of $4$ has remainder $0$, not $2$."
       ],
       "result": "Never",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the multiple of $4$ as $4a$ and the other even number as $4b+2$.",
+      "check": "$8+6=14=4\\times3+2$. Not a multiple of $4$."
      },
      {
       "question": "Show that the sum of four consecutive numbers is never a multiple of $4$.",
       "steps": [
-       "$n+(n+1)+(n+2)+(n+3)=4n+6$.",
-       "$4n+6=4(n+1)+2$: remainder $2$ on division by $4$."
+       "Sum $=n+(n+1)+(n+2)+(n+3)=4n+6$.",
+       "Split $6$ as $4+2$: $4n+6=4n+4+2=4(n+1)+2$.",
+       "So the sum always leaves remainder $2$ on division by $4$. It is never a multiple of $4$.",
+       "But $4n+6=2(2n+3)$, so the sum is always even."
       ],
       "result": "Never a multiple of $4$, but always even",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Call the first number $n$. Then the four numbers are $n, n+1, n+2, n+3$.",
+      "check": "$1+2+3+4=10$, $5+6+7+8=26$: both are even, and neither is a multiple of $4$."
      },
      {
       "question": "Show that the square of every odd number leaves remainder $1$ on division by $8$.",
       "steps": [
-       "$(2k+1)^2=4k^2+4k+1=4k(k+1)+1$.",
-       "$k(k+1)$ is even, so $4k(k+1)$ is a multiple of $8$."
+       "$(2k+1)^2=(2k+1)(2k+1)=4k^2+2k+2k+1=4k^2+4k+1$.",
+       "Take $4k$ common from the first two terms: $4k(k+1)+1$.",
+       "$k$ and $k+1$ are next to each other, so $k(k+1)$ is even: $k(k+1)=2m$.",
+       "So $4k(k+1)=4\\times2m=8m$, and the square is $8m+1$."
       ],
       "result": "Remainder $1$ (for example, $49=48+1$)",
-      "type": "Higher-order"
+      "type": "Higher-order",
+      "think": "An odd number is $2k+1$. Square it and look for a factor $8$.",
+      "check": "$3^2=9=8+1$, $5^2=25=24+1$, $7^2=49=48+1$."
      }
     ],
     "picture": {
@@ -2188,52 +2224,70 @@
      {
       "question": "A multiple of $8$ is a multiple of $4$.",
       "steps": [
-       "$8k=4(2k)$."
+       "A multiple of $8$ is $8k$ for some whole number $k$.",
+       "$8k=4\\times(2k)$, and $2k$ is a whole number.",
+       "So $8k$ is $4$ times a whole number: a multiple of $4$."
       ],
       "result": "Always",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write a multiple of $8$ as $8k$ and try to show a factor $4$.",
+      "check": "$8, 16, 24, 40$ are all multiples of $4$."
      },
      {
       "question": "A multiple of $4$ is a multiple of $8$.",
       "steps": [
-       "$16$ is a multiple of both.",
-       "$12$ is a multiple of $4$ but not of $8$."
+       "$16$ is a multiple of $4$, and it is also a multiple of $8$. True here.",
+       "$12$ is a multiple of $4$, but $12\\div8$ is not a whole number. False here.",
+       "One true case and one false case: the answer is \"sometimes\"."
       ],
       "result": "Sometimes",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "\"Sometimes\" needs two examples: one where it is true and one where it is false."
      },
      {
       "question": "The sum of two multiples of $7$ is a multiple of $7$.",
       "steps": [
-       "$7a+7b=7(a+b)$."
+       "$7a+7b=7(a+b)$.",
+       "$a+b$ is a whole number, so the sum is $7$ times a whole number."
       ],
       "result": "Always",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the two multiples as $7a$ and $7b$.",
+      "check": "$14+35=49=7\\times7$."
      },
      {
       "question": "The product of a multiple of $12$ and a multiple of $3$ is a multiple of $36$.",
       "steps": [
-       "$12a\\times3b=36ab$."
+       "$12a\\times3b=36ab$.",
+       "$ab$ is a whole number, so the product is $36$ times a whole number."
       ],
       "result": "Always",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the numbers as $12a$ and $3b$ and multiply.",
+      "check": "$12\\times3=36$ and $24\\times6=144=36\\times4$."
      },
      {
       "question": "A number divisible by both $4$ and $6$ is divisible by $24$.",
       "steps": [
-       "$24$: yes.",
-       "$12$ is divisible by $4$ and by $6$, but not by $24$."
+       "$24$ is divisible by $4$, by $6$ and by $24$. True here.",
+       "$12$ is divisible by $4$ ($12=4\\times3$) and by $6$ ($12=6\\times2$), but not by $24$.",
+       "So the claim is only sometimes true."
       ],
       "result": "Sometimes",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Look for a number that is divisible by $4$ and by $6$ but smaller than $24$.",
+      "mistake": "Thinking \"$4\\times6=24$, so it must work\". $4$ and $6$ have the common factor $2$, so this reasoning fails."
      },
      {
       "question": "An odd number plus $1$ is odd.",
       "steps": [
-       "$(2k+1)+1=2(k+1)$, which is even."
+       "$(2k+1)+1=2k+2=2(k+1)$.",
+       "This is $2$ times a whole number, so it is even.",
+       "It is never odd."
       ],
       "result": "Never",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the odd number as $2k+1$ and add $1$."
      }
     ]
    },
@@ -2254,47 +2308,63 @@
      {
       "question": "Write the numbers that leave remainder $3$ on division by $5$.",
       "steps": [
-       "They are $3, 8, 13, 18, \\dots$",
-       "Each is $3$ more than a multiple of $5$."
+       "$3$ itself leaves remainder $3$ ($3=5\\times0+3$).",
+       "Add $5$ each time: $3, 8, 13, 18, 23, \\dots$",
+       "Each number is \"a multiple of $5$, plus $3$\"."
       ],
       "result": "$5k+3$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Start with the remainder itself and keep adding the divisor.",
+      "check": "$23=5\\times4+3$."
      },
      {
       "question": "$a$ leaves remainder $3$ and $b$ leaves remainder $4$ on division by $7$. Find the remainders of $a+b$ and $ab$.",
       "steps": [
-       "$a+b$: $3+4=7$, remainder $0$.",
-       "$ab$: $3\\times4=12=7+5$, remainder $5$."
+       "Write $a=7p+3$ and $b=7q+4$.",
+       "Sum: $a+b=7p+7q+7=7(p+q+1)$. Remainder $0$.",
+       "Product: the only part that is not a multiple of $7$ is $3\\times4=12$. $12=7+5$, so the remainder is $5$."
       ],
       "result": "$0$ and $5$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "For a sum or a product, we only need the remainders of the parts.",
+      "check": "Take $a=10$ and $b=11$: $10+11=21=7\\times3$, and $10\\times11=110=7\\times15+5$."
      },
      {
       "question": "Find the remainder of $3529+864$ on division by $7$ without adding.",
       "steps": [
-       "$3529=7\\times504+1$ and $864=7\\times123+3$.",
-       "$1+3=4$."
+       "$3529=7\\times504+1$, so its remainder is $1$.",
+       "$864=7\\times123+3$, so its remainder is $3$.",
+       "Add the remainders: $1+3=4$. $4<7$, so the remainder of the sum is $4$."
       ],
       "result": "$4$ (check: $4393=7\\times627+4$)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Find the remainder of each number, add the remainders, then take the remainder again.",
+      "check": "$3529+864=4393=7\\times627+4$."
      },
      {
       "question": "Today is Wednesday. What day is it $100$ days from today?",
       "steps": [
        "$100=7\\times14+2$.",
-       "After $14$ full weeks it is Wednesday again; $2$ more days."
+       "After $14$ full weeks ($98$ days) it is Wednesday again.",
+       "$2$ more days: Thursday, then Friday."
       ],
       "result": "Friday",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "The days repeat every $7$ days. So only the remainder on division by $7$ matters.",
+      "mistake": "Counting $100\\div7=14.28$ and using the decimal. Use the remainder $2$, not the decimal part."
      },
      {
       "question": "A farmer counts her mangoes in $3$s, $4$s and $5$s. Each time, one more mango would complete a group. She has fewer than $100$ mangoes. How many?",
       "steps": [
-       "One more mango makes a multiple of $3$, $4$ and $5$: a multiple of $60$.",
-       "Fewer than $100$: the total plus $1$ is $60$."
+       "So number $+1$ is a common multiple of $3$, $4$ and $5$.",
+       "The LCM of $3$, $4$ and $5$ is $60$. The common multiples are $60, 120, \\dots$",
+       "The number is less than $100$, so number $+1=60$.",
+       "Number $=59$."
       ],
       "result": "$59$ mangoes",
-      "type": "Higher-order"
+      "type": "Higher-order",
+      "think": "\"One more mango would complete a group\" means: number $+1$ is a multiple of $3$, of $4$ and of $5$.",
+      "check": "$59=3\\times19+2$, $59=4\\times14+3$, $59=5\\times11+4$. In each case one more mango completes a group."
      }
     ],
     "picture": {
@@ -2559,37 +2629,50 @@
      {
       "question": "Is $7{,}316$ divisible by $4$? By $8$?",
       "steps": [
-       "Last two digits $16$: divisible by $4$.",
-       "Last three digits $316=8\\times39+4$: not divisible by $8$."
+       "$7316=7300+16$. $7300$ is a multiple of $100$, so it is a multiple of $4$.",
+       "So check $16$: $16=4\\times4$. So $7316$ is divisible by $4$.",
+       "$7316=7000+316$. $7000$ is a multiple of $1000$, so of $8$.",
+       "Check $316$: $8\\times39=312$ and $316-312=4$. Remainder $4$, so not divisible by $8$."
       ],
       "result": "By $4$: yes. By $8$: no (remainder $4$)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "For $4$, look only at the last two digits. For $8$, look only at the last three digits.",
+      "check": "$7316\\div4=1829$, and $7316\\div8=914$ remainder $4$."
      },
      {
       "question": "Find the smallest digit $x$ so that $5{,}23x$ is divisible by $8$.",
       "steps": [
-       "Check $23x$: $232=8\\times29$.",
-       "$230$ and $231$ are not multiples of $8$."
+       "Multiples of $8$ near $230$: $8\\times28=224$, $8\\times29=232$, $8\\times30=240$.",
+       "Only $232$ has the form $23x$. So $x=2$."
       ],
       "result": "$x=2$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "For $8$, only the last three digits $23x$ matter.",
+      "check": "$5232=8\\times654$."
      },
      {
       "question": "Why does the test for $4$ use the last two digits and not only the last digit?",
       "steps": [
-       "$10$ is not a multiple of $4$: $10=4\\times2+2$.",
-       "$100$ is a multiple of $4$, so everything above the last two digits is a multiple of $4$."
+       "$10\\div4$ is not whole: $10=4\\times2+2$. So the tens digit can change the remainder.",
+       "$100=4\\times25$. So hundreds, thousands and higher places are all multiples of $4$.",
+       "Only the tens and units digits are left to check."
       ],
       "result": "Because $100$, not $10$, is a multiple of $4$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Ask: which power of $10$ is the first one that $4$ divides?",
+      "check": "$14$: the last digit $4$ is divisible by $4$, but $14$ is not. So one digit is not enough."
      },
      {
       "question": "Find the remainder when $9{,}87{,}654$ is divided by $8$.",
       "steps": [
-       "Last three digits: $654=8\\times81+6$."
+       "The last three digits are $654$.",
+       "$8\\times81=648$ and $654-648=6$.",
+       "So the remainder is $6$."
       ],
       "result": "$6$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "For $8$, the remainder of the whole number is the remainder of its last three digits.",
+      "check": "$987654=8\\times123456+6$."
      }
     ],
     "picture": {
@@ -2717,54 +2800,75 @@
      {
       "question": "Is $8{,}712$ divisible by $9$?",
       "steps": [
-       "Digit sum: $8+7+1+2=18$, a multiple of $9$."
+       "Digit sum $=8+7+1+2=18$.",
+       "$18=9\\times2$, so the digit sum is a multiple of $9$.",
+       "So $8712$ is a multiple of $9$."
       ],
       "result": "Yes: $8712=9\\times968$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "A number and its digit sum leave the same remainder on division by $9$.",
+      "check": "$8712\\div9=968$."
      },
      {
       "question": "Find the remainder when $52{,}814$ is divided by $9$.",
       "steps": [
-       "Digit sum: $5+2+8+1+4=20$.",
-       "$20=9\\times2+2$."
+       "Digit sum $=5+2+8+1+4=20$.",
+       "$20=9\\times2+2$, so the remainder is $2$."
       ],
       "result": "$2$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "The remainder of the number on division by $9$ is the remainder of its digit sum.",
+      "check": "$52814=9\\times5868+2$."
      },
      {
       "question": "Find the digit $x$ so that $6x45$ is divisible by $9$.",
       "steps": [
-       "Digit sum $=15+x$.",
-       "$15+x$ must be $18$ (the next multiple of $9$, $27$, needs $x=12$)."
+       "Digit sum $=6+x+4+5=15+x$.",
+       "$15+x$ is between $15$ and $24$. The only multiple of $9$ in this range is $18$.",
+       "$15+x=18$ gives $x=3$."
       ],
       "result": "$x=3$: $6345=9\\times705$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "The digit sum must be a multiple of $9$. A digit is from $0$ to $9$.",
+      "check": "$6345\\div9=705$."
      },
      {
       "question": "Find all digits $x$ so that $7x2$ is divisible by $3$.",
       "steps": [
-       "Digit sum $=9+x$ must be a multiple of $3$."
+       "Digit sum $=7+x+2=9+x$.",
+       "$9$ is already a multiple of $3$. So $9+x$ is a multiple of $3$ exactly when $x$ is.",
+       "Digits that are multiples of $3$: $0, 3, 6, 9$."
       ],
       "result": "$x=0, 3, 6, 9$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "The digit sum must be a multiple of $3$.",
+      "check": "$702, 732, 762, 792$ are all divisible by $3$."
      },
      {
       "question": "Find the smallest multiple of $9$ that has no odd digit.",
       "steps": [
-       "All digits even, so the digit sum is even. It must be a multiple of $9$: at least $18$.",
-       "Two digits give at most $8+8=16$. With three digits, start with the smallest first digit: $2+8+8=18$."
+       "An even multiple of $9$: the smallest is $18$ (because $9$ is odd).",
+       "With two digits, the biggest even digit sum is $8+8=16$. That is less than $18$, so we need three digits.",
+       "To make the number small, make the first digit as small as possible. The first digit cannot be $0$.",
+       "First digit $2$: the other two digits must add to $16$, so both are $8$. The number is $288$."
       ],
       "result": "$288$",
-      "type": "Textbook-type"
+      "type": "Textbook-type",
+      "think": "All the digits are even, so the digit sum is even. The digit sum must also be a multiple of $9$.",
+      "check": "$288=9\\times32$, and $2, 8, 8$ are all even."
      },
      {
       "question": "Find the multiple of $9$ nearest to $6000$.",
       "steps": [
-       "Digit sum of $6000$ is $6$: $6000=9k+6$.",
-       "So $5994$ is a multiple of $9$ (distance $6$), and $6003$ is the next one (distance $3$)."
+       "Digit sum of $6000$ is $6$. So $6000=9k+6$.",
+       "Going down: $6000-6=5994$ is a multiple of $9$. Distance $6$.",
+       "Going up: $5994+9=6003$ is the next multiple. Distance $3$.",
+       "$3<6$, so $6003$ is nearer."
       ],
       "result": "$6003$",
-      "type": "Textbook-type"
+      "type": "Textbook-type",
+      "think": "Find the remainder of $6000$ on division by $9$. Then go down or up to the nearest multiple.",
+      "check": "$6003\\div9=667$."
      }
     ],
     "sims": [
@@ -2787,38 +2891,54 @@
      {
       "question": "Is $6{,}27{,}121$ divisible by $11$?",
       "steps": [
-       "Odd places from the right: $1+1+2=4$. Even places: $2+7+6=15$.",
-       "$4-15=-11$, a multiple of $11$."
+       "The digits from the right are $1, 2, 1, 7, 2, 6$.",
+       "Odd places ($1$st, $3$rd, $5$th): $1+1+2=4$.",
+       "Even places ($2$nd, $4$th, $6$th): $2+7+6=15$.",
+       "$4-15=-11$. This is a multiple of $11$, so the number is divisible by $11$."
       ],
       "result": "Yes: $627121=11\\times57011$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Number the digits from the right: units is place $1$, tens is place $2$, and so on.",
+      "check": "$627121\\div11=57011$.",
+      "mistake": "Starting the count from the left. Always count from the units digit."
      },
      {
       "question": "Find the remainder when $8{,}519$ is divided by $11$.",
       "steps": [
+       "Digits from the right: $9, 1, 5, 8$.",
        "Odd places: $9+5=14$. Even places: $1+8=9$.",
-       "$14-9=5$."
+       "$14-9=5$. So the remainder is $5$."
       ],
       "result": "$5$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "The difference (odd places) $-$ (even places) also gives the remainder on division by $11$.",
+      "check": "$8519=11\\times774+5$."
      },
      {
       "question": "Find the digit $x$ so that $5x37$ is divisible by $11$.",
       "steps": [
+       "Digits from the right: $7, 3, x, 5$.",
        "Odd places: $7+x$. Even places: $3+5=8$.",
-       "$7+x-8=x-1$ must be $0$."
+       "Difference: $7+x-8=x-1$.",
+       "$x$ is a digit, so $x-1$ is between $-1$ and $8$. The only multiple of $11$ there is $0$. So $x=1$."
       ],
       "result": "$x=1$: $5137=11\\times467$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the difference with $x$ in it, and make it $0$ or a multiple of $11$.",
+      "check": "$5137\\div11=467$."
      },
      {
       "question": "Show that every $4$-digit palindrome $abba$ is divisible by $11$.",
       "steps": [
-       "$abba=1000a+100b+10b+a=1001a+110b$.",
-       "$=11(91a+10b)$."
+       "$abba=1000a+100b+10b+a$.",
+       "Collect: $1001a+110b$.",
+       "$1001=11\\times91$ and $110=11\\times10$.",
+       "So $abba=11(91a+10b)$: a multiple of $11$."
       ],
       "result": "Always divisible by $11$",
-      "type": "Higher-order"
+      "type": "Higher-order",
+      "think": "Write $abba$ in general form and look for the factor $11$.",
+      "check": "$2552=11\\times232$ and $7337=11\\times667$."
      }
     ]
    },
@@ -2837,38 +2957,51 @@
      {
       "question": "Is $7{,}344$ divisible by $24$?",
       "steps": [
-       "By $8$: $344=8\\times43$. Yes.",
-       "By $3$: digit sum $18$. Yes."
+       "Test for $8$: last three digits $344=8\\times43$. Yes.",
+       "Test for $3$: digit sum $7+3+4+4=18$, a multiple of $3$. Yes.",
+       "The number is divisible by $3$ and by $8$, which have no common factor. So it is divisible by $24$."
       ],
       "result": "Yes: $7344=24\\times306$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "$24=3\\times8$, and $3$ and $8$ have no common factor. Check both.",
+      "check": "$7344\\div24=306$."
      },
      {
       "question": "Find the digit $x$ so that $35x4$ is divisible by $18$.",
       "steps": [
-       "It ends in $4$, so it is even.",
-       "Digit sum $12+x$ must be a multiple of $9$: $x=6$."
+       "Test for $2$: the last digit is $4$, so it is even for every $x$.",
+       "Test for $9$: digit sum $3+5+x+4=12+x$ must be a multiple of $9$.",
+       "$12+x$ is between $12$ and $21$. The only multiple of $9$ there is $18$. So $x=6$."
       ],
       "result": "$x=6$: $3564=18\\times198$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "$18=2\\times9$, and $2$ and $9$ have no common factor.",
+      "check": "$3564\\div18=198$."
      },
      {
       "question": "Is $2{,}376$ divisible by $36$?",
       "steps": [
-       "By $4$: $76$ is a multiple of $4$.",
-       "By $9$: digit sum $18$."
+       "Test for $4$: last two digits $76=4\\times19$. Yes.",
+       "Test for $9$: digit sum $2+3+7+6=18$. Yes.",
+       "So $2376$ is divisible by $36$."
       ],
       "result": "Yes: $2376=36\\times66$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "$36=4\\times9$, and $4$ and $9$ have no common factor.",
+      "check": "$2376\\div36=66$.",
+      "mistake": "Using $6\\times6$: $6$ and $6$ share factors, so that test does not work."
      },
      {
       "question": "Is $4{,}356$ divisible by $44$?",
       "steps": [
-       "By $4$: $56$ is a multiple of $4$.",
-       "By $11$: $(6+3)-(5+4)=0$."
+       "Test for $4$: last two digits $56=4\\times14$. Yes.",
+       "Test for $11$: digits from the right $6, 5, 3, 4$. Odd places $6+3=9$, even places $5+4=9$. Difference $0$. Yes.",
+       "So $4356$ is divisible by $44$."
       ],
       "result": "Yes: $4356=44\\times99$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "$44=4\\times11$, and $4$ and $11$ have no common factor.",
+      "check": "$4356\\div44=99$."
      }
     ],
     "picture": {
@@ -2935,37 +3068,50 @@
      {
       "question": "Find the digital root of $98{,}765$.",
       "steps": [
-       "$9+8+7+6+5=35$, then $3+5=8$."
+       "$9+8+7+6+5=35$.",
+       "$3+5=8$. One digit is left, so we stop."
       ],
       "result": "$8$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Keep adding the digits until only one digit is left.",
+      "check": "$98765=9\\times10973+8$: the remainder on division by $9$ is also $8$."
      },
      {
       "question": "Write the digital roots of $11, 22, 33, \\dots, 99$. What pattern do you see?",
       "steps": [
-       "$2, 4, 6, 8, 1, 3, 5, 7, 9$.",
-       "Each step adds $2$; after $9$ we start again from $1$."
+       "$11\\to2$, $22\\to4$, $33\\to6$, $44\\to8$.",
+       "$55\\to10\\to1$, $66\\to12\\to3$, $77\\to14\\to5$, $88\\to16\\to7$, $99\\to18\\to9$.",
+       "Each time we add $11$, the digital root goes up by $2$ (because $11\\to2$). After passing $9$ it starts again from $1$."
       ],
       "result": "All nine digits appear once",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Find each digital root, then look at how it changes from one number to the next.",
+      "check": "All nine digits $1$ to $9$ appear exactly once."
      },
      {
       "question": "Check $347\\times26=9{,}022$ with digital roots.",
       "steps": [
-       "Digital roots: $347\\to5$ and $26\\to8$; $5\\times8=40\\to4$.",
-       "$9022\\to13\\to4$. The roots agree."
+       "Digital root of $347$: $3+4+7=14\\to5$.",
+       "Digital root of $26$: $2+6=8$.",
+       "Multiply the roots: $5\\times8=40\\to4$.",
+       "Digital root of the answer $9022$: $9+0+2+2=13\\to4$. The roots agree."
       ],
       "result": "The answer is probably correct (and it is)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "If the multiplication is correct, the digital roots must agree.",
+      "mistake": "If the roots agree, the answer is probably right, but this check cannot find every mistake (for example, swapped digits)."
      },
      {
       "question": "Find the digital root of $9a+36b+13$ for any whole numbers $a$ and $b$.",
       "steps": [
-       "$9a+36b$ is a multiple of $9$.",
-       "So the remainder on division by $9$ is that of $13$, which is $4$."
+       "$9a$ is a multiple of $9$. $36b=9\\times4b$ is also a multiple of $9$.",
+       "So $9a+36b+13$ leaves the same remainder as $13$.",
+       "$13=9+4$, so the remainder is $4$, and the digital root is $4$."
       ],
       "result": "$4$",
-      "type": "Textbook-type"
+      "type": "Textbook-type",
+      "think": "Split the expression into a part that is a multiple of $9$ and a part that is not.",
+      "check": "$a=1, b=1$: $9+36+13=58\\to13\\to4$."
      }
     ],
     "sims": [
@@ -2990,54 +3136,76 @@
      {
       "question": "A two-digit number and its reversal add to $121$. Find the sum of the digits.",
       "steps": [
-       "$11(a+b)=121$."
+       "Sum $=(10a+b)+(10b+a)=11a+11b=11(a+b)$.",
+       "$11(a+b)=121$.",
+       "Divide by $11$: $a+b=11$."
       ],
       "result": "$a+b=11$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write the number as $10a+b$ and its reversal as $10b+a$.",
+      "check": "$29+92=121$ and $2+9=11$."
      },
      {
       "question": "A three-digit number minus its reversal is $396$. Find the difference of its first and last digits.",
       "steps": [
-       "$99(a-c)=396$."
+       "Number minus reversal $=(100a+10b+c)-(100c+10b+a)=99a-99c=99(a-c)$.",
+       "$99(a-c)=396$.",
+       "Divide by $99$: $a-c=4$."
       ],
       "result": "$a-c=4$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Use the general form $100a+10b+c$. The middle digit cancels.",
+      "check": "$541-145=396$, and $5-1=4$."
      },
      {
       "question": "Show that $abc+bca+cab$ is always divisible by $37$.",
       "steps": [
-       "Each digit appears once in each place: the sum is $111a+111b+111c$.",
-       "$111=3\\times37$."
+       "$abc=100a+10b+c$, $bca=100b+10c+a$, $cab=100c+10a+b$.",
+       "Add: the $a$ terms give $100a+10a+a=111a$. In the same way we get $111b$ and $111c$.",
+       "Sum $=111(a+b+c)$.",
+       "$111=3\\times37$, so the sum is a multiple of $37$."
       ],
       "result": "Always a multiple of $37$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Each digit appears once in each place: hundreds, tens and units.",
+      "check": "$123+231+312=666=37\\times18$."
      },
      {
       "question": "Solve $A+A+A=BA$, where $A$ and $B$ are different digits.",
       "steps": [
-       "$3A=10B+A$, so $2A=10B$ and $A=5B$.",
-       "$B=1$ gives $A=5$: $5+5+5=15$."
+       "$A+A+A=3A$, and $BA=10B+A$. So $3A=10B+A$.",
+       "Take $A$ from both sides: $2A=10B$, so $A=5B$.",
+       "Both are digits and they are different. $B=0$ gives $A=0$ (not different). $B=1$ gives $A=5$. $B=2$ gives $A=10$, not a digit.",
+       "So $A=5$ and $B=1$."
       ],
       "result": "$A=5$, $B=1$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write $BA$ in general form: $10B+A$.",
+      "check": "$5+5+5=15$."
      },
      {
       "question": "Solve $AB+37=9A$.",
       "steps": [
+       "$AB=10A+B$ and $9A=90+A$.",
        "$10A+B+37=90+A$, so $9A+B=53$.",
-       "With digits: $A=5$, $B=8$. Check: $58+37=95$."
+       "Try $A=5$: $45+B=53$, so $B=8$. ($A=6$ gives $B=-1$, and $A=4$ gives $B=17$: not digits.)"
       ],
       "result": "$A=5$, $B=8$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Write each two-digit number in general form.",
+      "check": "$58+37=95$, and $95$ has the form $9A$ with $A=5$."
      },
      {
       "question": "Solve $2A\\times A=1B6$.",
       "steps": [
-       "$A\\times A$ ends in $6$: $A=4$ or $6$.",
-       "$24\\times4=96$ has only two digits; $26\\times6=156$."
+       "Squares that end in $6$: $4\\times4=16$ and $6\\times6=36$. So $A=4$ or $A=6$.",
+       "$A=4$: $24\\times4=96$. This has only two digits, but $1B6$ has three. Reject.",
+       "$A=6$: $26\\times6=156$. This matches $1B6$ with $B=5$."
       ],
       "result": "$A=6$, $B=5$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Start with the units digit: $A\\times A$ must end in $6$.",
+      "check": "$26\\times6=156$."
      }
     ],
     "sims": [
@@ -3059,47 +3227,61 @@
      {
       "question": "Draw a Venn diagram for the multiples of $4$, $8$ and $32$.",
       "steps": [
-       "Every multiple of $32$ is a multiple of $8$, and every multiple of $8$ is a multiple of $4$.",
-       "So the circles sit one inside the other."
+       "Every multiple of $32$ is $32k=8(4k)$, so it is a multiple of $8$.",
+       "Every multiple of $8$ is $8k=4(2k)$, so it is a multiple of $4$.",
+       "So draw the circle for $32$ inside the circle for $8$, and that inside the circle for $4$."
       ],
       "result": "Three circles, one inside the other (see the picture)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Ask whether each set is inside another set.",
+      "check": "$12$ is in the \"multiples of $4$\" circle only; $24$ is in the $4$ and $8$ circles; $64$ is in all three."
      },
      {
       "question": "Prove that the product of three consecutive numbers is divisible by $6$.",
       "steps": [
-       "At least one of them is even.",
-       "Exactly one of them is a multiple of $3$.",
-       "$2$ and $3$ have no common factor, so the product is divisible by $6$."
+       "Among two consecutive numbers, one is even. So the product has a factor $2$.",
+       "When you divide three consecutive numbers by $3$, the remainders are $0, 1, 2$ in some order. So one of them is a multiple of $3$.",
+       "$2$ and $3$ have no common factor, so the product is divisible by $2\\times3=6$."
       ],
       "result": "Always divisible by $6$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "We need a factor $2$ and a factor $3$ in the product.",
+      "check": "$7\\times8\\times9=504=6\\times84$."
      },
      {
       "question": "Show that the sum of five consecutive numbers is a multiple of $5$.",
       "steps": [
-       "$n+(n+1)+(n+2)+(n+3)+(n+4)=5n+10=5(n+2)$."
+       "Add: the $-2$ and $+2$ cancel, and the $-1$ and $+1$ cancel.",
+       "Sum $=5m$, which is $5$ times the middle number."
       ],
       "result": "Always a multiple of $5$ (five times the middle number)",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Call the middle number $m$. Then the five numbers are $m-2, m-1, m, m+1, m+2$.",
+      "check": "$3+4+5+6+7=25=5\\times5$."
      },
      {
       "question": "Find the greatest $4$-digit number with all digits different that is divisible by $9$.",
       "steps": [
-       "Try from the top: $9876$ (digit sum $30$), $9875$ ($29$), $9874$ ($28$): no.",
-       "$9873$: digit sum $27$."
+       "The largest $4$-digit number with different digits is $9876$. Digit sum $30$: not a multiple of $9$.",
+       "$9875$: $29$. $9874$: $28$. Not multiples of $9$.",
+       "$9873$: $9+8+7+3=27$, a multiple of $9$."
       ],
       "result": "$9873$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "Start from the largest number with different digits and go down. Use the digit-sum test.",
+      "check": "$9873\\div9=1097$."
      },
      {
       "question": "How many numbers from $1$ to $100$ are divisible by both $4$ and $6$?",
       "steps": [
-       "Divisible by both means divisible by $12$ (the LCM).",
-       "$100\\div12=8$ remainder $4$."
+       "LCM of $4$ and $6$: $12$ (not $24$, because $4$ and $6$ share the factor $2$).",
+       "Multiples of $12$ up to $100$: $12, 24, 36, 48, 60, 72, 84, 96$.",
+       "There are $8$ of them ($100\\div12=8$ remainder $4$)."
       ],
       "result": "$8$",
-      "type": "Solved example"
+      "type": "Solved example",
+      "think": "A number divisible by both $4$ and $6$ is divisible by their LCM, $12$.",
+      "mistake": "Using $4\\times6=24$ and getting only $4$ numbers. That misses $12$, $36$, $60$ and $84$."
      }
     ],
     "picture": {

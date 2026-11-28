@@ -7,7 +7,7 @@ import NotesPrintButton from './real-numbers/print-button';
 import StoryPicture, {type StoryPictureSpec} from './story-picture';
 import InlineSims from './inline-sims';
 
-type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string; diagram?: TeachingDiagramSpec};
+type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string; diagram?: TeachingDiagramSpec; think?: string; check?: string; mistake?: string};
 type Lesson = {title: string; level: string; introduction?: string; formulas: string[]; examples: Worked[]; sims?: string[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
 export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]; school?: boolean; challengeLabel?: string; sources?: {href: string; label: string}[]};
 const math = (f: string) => `$${f}$`;
@@ -18,8 +18,11 @@ function Example({e, label, school}: {e: Worked; label: string; school?: boolean
     <div className="ir-question"><Tex>{e.question}</Tex></div>
     {e.diagram && <TeachingDiagram spec={e.diagram} />}
     {e.use && e.use.length > 0 && <div className="ir-use"><span className="ir-label">Formula used</span>{e.use.map((f, k) => <div key={k} className="ir-use-line"><Tex>{math(f)}</Tex></div>)}</div>}
+    {e.think && <div className="ir-think"><span className="ir-label">Think first</span><Tex>{e.think}</Tex></div>}
     <div className="ir-solution"><span className="ir-label">Solution</span>{e.steps.map((s, k) => <div key={k} className="ir-line">{school && <strong>Step {k+1}. </strong>}<Tex>{s}</Tex></div>)}</div>
     {e.result && <div className="ir-result"><span className="ir-label">Answer</span><Tex>{e.result}</Tex></div>}
+    {e.check && <div className="ir-check"><span className="ir-label">Check</span><Tex>{e.check}</Tex></div>}
+    {e.mistake && <div className="ir-mistake"><span className="ir-label">Common mistake</span><Tex>{e.mistake}</Tex></div>}
   </article>;
 }
 
