@@ -13,7 +13,7 @@ export const cbse7QuizChapters = ['Large Numbers Around Us', 'Arithmetic Express
 export const icse6QuizChapters = ['Knowing Our Numbers', 'Whole Numbers', 'Playing with Numbers', 'Integers', 'Sets', 'Fractions', 'Decimals', 'Ratio and Proportion', 'Percentage and Unitary Method', 'Speed, Time and Distance', 'Algebraic Expressions', 'Simple Linear Equations', 'Basic Geometrical Ideas', 'Angles, Triangles and Quadrilaterals', 'Three-Dimensional Shapes and Nets', 'Symmetry and Practical Geometry', 'Perimeter, Area and Unit Conversions', 'Data Handling'];
 export const icse7FreeChapters: ReadonlySet<number> = new Set([1, 9, 14, 17, 23]);
 
-export const quizPath = (chapter: number, grade = 10, board: QuizBoard = 'CBSE') => board === 'ICSE' ? `/icse/grade-${grade}/ch-${chapter}/mcq` : `/cbse/grade-${grade}/ch-${chapter}/free-mcq`;
+export const quizPath = (chapter: number, grade = 10, board: QuizBoard = 'CBSE') => board === 'ICSE' ? `/icse/grade-${grade}/ch-${chapter}/mcq` : `/cbse/grade-${grade}/ch-${chapter}/${grade === 8 && chapter === 5 ? 'mcq' : 'free-mcq'}`;
 export const quizId = (chapter: number, grade = 10, board: QuizBoard = 'CBSE') => board === 'ICSE' ? `icse-${grade}-ch-${chapter}-30` : `cbse-${grade}-ch-${chapter}-50`;
 export const quizCount = (_board: QuizBoard = 'CBSE') => 30;
 
