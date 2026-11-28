@@ -14,48 +14,115 @@
    "note": "Like the \"Figure it Out\" questions in NCERT Ganita Prakash.",
    "questions": [
     {
-     "text": "Which of these are always even for every whole number $n$: (a) $4n+2$ (b) $n^2+n$ (c) $3n+1$ (d) $(n+1)(n+2)$ (e) $5n$?",
-     "answer": "(a), (b) and (d). (a) $=2(2n+1)$. (b) $=n(n+1)$ and (d) are products of two consecutive numbers. (c) and (e) are odd for some $n$.",
+     "text": "Which of these expressions are even for every whole number $n$?",
+     "steps": [
+      "An expression is \"always even\" only if it is even for every $n$. So we try to write it as $2\\times(\\text{something})$, or we find one value of $n$ that makes it odd.",
+      "(a) $4n+2=2(2n+1)$. It has the factor $2$, so it is always even.",
+      "(b) $n^2+n=n(n+1)$. Of two numbers next to each other, one is even. So the product is always even.",
+      "(c) $3n+1$: for $n=2$ it is $7$, which is odd. So it is not always even.",
+      "(d) $(n+1)(n+2)$ is again a product of two numbers next to each other. So it is always even.",
+      "(e) $5n$: for $n=1$ it is $5$, which is odd. So it is not always even."
+     ],
+     "answer": "(a), (b) and (d)",
+     "options": [
+      "(a) $4n+2$",
+      "(b) $n^2+n$",
+      "(c) $3n+1$",
+      "(d) $(n+1)(n+2)$",
+      "(e) $5n$"
+     ],
      "n": 1
     },
     {
      "text": "Put $+$ or $-$ signs between $11, 12, 13, 14$ in all possible ways. Show that you never get an odd answer.",
-     "answer": "With all $+$: $50$, even. Each change from $+x$ to $-x$ subtracts $2x$, which is even. So every answer is even. For example, $11-12+13-14=-2$.",
+     "steps": [
+      "First take all $+$ signs: $11+12+13+14=50$. This is even.",
+      "Now change one sign, for example $+13$ to $-13$. The answer goes down by $13+13=26$, that is, by $2\\times13$.",
+      "In general, changing $+x$ to $-x$ changes the answer by $2x$. A change of $2x$ is even, so an even answer stays even.",
+      "Each other choice of signs comes from $50$ by such changes. Example: $11-12+13-14=-2$, which is even."
+     ],
+     "answer": "The answer is always even.",
      "n": 2
     },
     {
-     "text": "Find the remainder when $1{,}234{,}567$ is divided by (a) $2$ (b) $4$ (c) $8$ (d) $9$.",
-     "answer": "(a) $1$ (b) $67=4\\times16+3$: $3$ (c) $567=8\\times70+7$: $7$ (d) digit sum $28=27+1$: $1$",
+     "text": "Find the remainder when $1{,}234{,}567$ is divided by each number. Do not divide.",
+     "steps": [
+      "(a) For $2$, look only at the last digit. $7$ is odd, so the remainder is $1$.",
+      "(b) For $4$, look only at the last two digits: $67=4\\times16+3$. The remainder is $3$.",
+      "(c) For $8$, look only at the last three digits: $567=8\\times70+7$. The remainder is $7$.",
+      "(d) For $9$, add the digits: $1+2+3+4+5+6+7=28$. Then $28=9\\times3+1$. The remainder is $1$."
+     ],
+     "answer": "(a) $1$ (b) $3$ (c) $7$ (d) $1$",
+     "parts": [
+      "(a) $2$",
+      "(b) $4$",
+      "(c) $8$",
+      "(d) $9$"
+     ],
      "n": 3
     },
     {
      "text": "Without dividing, check whether $3{,}87{,}234$ is divisible by $2$, $3$, $4$, $6$, $8$, $9$ and $11$.",
-     "answer": "Even: yes. Digit sum $27$: divisible by $3$ and $9$, so by $6$. Last two digits $34$: not by $4$, so not by $8$. Alternating sum $(4+2+8)-(3+7+3)=1$: not by $11$.",
+     "steps": [
+      "By $2$: the last digit is $4$, which is even. Yes.",
+      "By $3$ and $9$: digit sum $=3+8+7+2+3+4=27$. $27$ is a multiple of $3$ and of $9$. Yes to both.",
+      "By $6$: the number is divisible by $2$ and by $3$, and $2$ and $3$ have no common factor. Yes.",
+      "By $4$: the last two digits are $34$, and $34=4\\times8+2$. No. So it is not divisible by $8$ either, because every multiple of $8$ is a multiple of $4$.",
+      "By $11$: from the right, odd places $4+2+8=14$, even places $3+7+3=13$. $14-13=1$, not $0$. No."
+     ],
+     "answer": "Divisible by $2$, $3$, $6$ and $9$; not by $4$, $8$ or $11$.",
      "n": 4
     },
     {
-     "text": "Find all the digits $x$ for which $43x2$ is divisible by $3$, and the digit for which it is divisible by $9$.",
-     "answer": "Digit sum $9+x$. By $3$: $x=0, 3, 6, 9$. By $9$: $x=0$ or $9$.",
+     "text": "Find all the digits $x$ for which $43x2$ is divisible by $3$. Then find the digits for which it is divisible by $9$.",
+     "steps": [
+      "Digit sum $=4+3+x+2=9+x$.",
+      "For $3$: $9+x$ must be a multiple of $3$. Since $9$ is already a multiple of $3$, $x$ must be a multiple of $3$: $x=0, 3, 6, 9$.",
+      "For $9$: $9+x$ must be $9$ or $18$. So $x=0$ or $x=9$."
+     ],
+     "answer": "By $3$: $x=0, 3, 6, 9$. By $9$: $x=0$ or $9$.",
      "n": 5
     },
     {
      "text": "Find the digit $x$ so that $9{,}x82$ is divisible by $11$.",
-     "answer": "Odd places from the right: $2+x$. Even places: $8+9=17$. $(2+x)-17=x-15$ must be $0$ or $-11$, so $x=4$. Check: $9482=11\\times862$.",
+     "steps": [
+      "Number the places from the right: $2$ (1st), $8$ (2nd), $x$ (3rd), $9$ (4th).",
+      "Odd places: $2+x$. Even places: $8+9=17$.",
+      "Difference: $(2+x)-17=x-15$. It must be $0$ or a multiple of $11$.",
+      "$x$ is a digit from $0$ to $9$, so $x-15$ is between $-15$ and $-6$. The only multiple of $11$ there is $-11$. So $x-15=-11$ and $x=4$.",
+      "Check: $9482=11\\times862$."
+     ],
+     "answer": "$x=4$",
      "n": 6
     },
     {
-     "text": "Write the general form of a three-digit number with digits $a, b, c$. Write the general form of the number with the digits in reverse order.",
-     "answer": "$100a+10b+c$ and $100c+10b+a$.",
+     "text": "Write the general form of a three-digit number with digits $a, b, c$. Then write the general form of the number with the digits in reverse order.",
+     "steps": [
+      "In the number $abc$, the digit $a$ is in the hundreds place, $b$ in the tens place and $c$ in the units place.",
+      "So the number is $100a+10b+c$.",
+      "The reversed number has $c$ in the hundreds place and $a$ in the units place: $100c+10b+a$."
+     ],
+     "answer": "$100a+10b+c$ and $100c+10b+a$",
      "n": 7
     },
     {
      "text": "Find the digital root of $8{,}74{,}352$. What is the remainder when this number is divided by $9$?",
-     "answer": "$8+7+4+3+5+2=29\\to11\\to2$. Remainder $2$.",
+     "steps": [
+      "Add the digits: $8+7+4+3+5+2=29$.",
+      "Add again: $2+9=11$. Again: $1+1=2$.",
+      "The digital root is not $9$, so it is also the remainder on division by $9$."
+     ],
+     "answer": "Digital root $2$; remainder $2$",
      "n": 8
     },
     {
      "text": "A hall has $38$ chairs. They are arranged in rows of $6$. How many full rows are there, and how many chairs are left over? Write $38$ in the form $6k+r$.",
-     "answer": "$38=6\\times6+2$: $6$ full rows and $2$ chairs left over.",
+     "steps": [
+      "Count in sixes: $6, 12, 18, 24, 30, 36$. That is $6$ full rows.",
+      "$38-36=2$ chairs are left over.",
+      "So $38=6\\times6+2$. The remainder $2$ is less than $6$, as it must be."
+     ],
+     "answer": "$6$ full rows, $2$ left; $38=6\\times6+2$",
      "picture": {
       "kind": "draw",
       "h": 200,
@@ -427,7 +494,12 @@
     },
     {
      "text": "Draw a Venn diagram for the multiples of $4$, $8$ and $32$. Is there a number that is a multiple of $32$ but not of $4$?",
-     "answer": "No. Every multiple of $32$ is a multiple of $8$, and every multiple of $8$ is a multiple of $4$: the circles sit one inside the other.",
+     "steps": [
+      "$32=8\\times4$, so every multiple of $32$ is a multiple of $8$: $32k=8(4k)$.",
+      "$8=4\\times2$, so every multiple of $8$ is a multiple of $4$: $8k=4(2k)$.",
+      "So the circle for $32$ is inside the circle for $8$, which is inside the circle for $4$."
+     ],
+     "answer": "No such number. The circles sit one inside the other.",
      "answerPicture": {
       "kind": "draw",
       "h": 260,
@@ -528,33 +600,66 @@
    "note": "General form of numbers, reversal and missing digits.",
    "questions": [
     {
-     "text": "The sum of a two-digit number and the number with its digits reversed is $143$. If the units digit is $5$ more than the tens digit, find the number.",
-     "answer": "$11(a+b)=143$, so $a+b=13$. With $b=a+5$: $2a+5=13$, $a=4$, $b=9$. The number is $49$ (check: $49+94=143$).",
+     "text": "The sum of a two-digit number and the number with its digits reversed is $143$. The units digit is $5$ more than the tens digit. Find the number.",
+     "steps": [
+      "Let the tens digit be $a$ and the units digit be $b$. The number is $10a+b$; the reversed number is $10b+a$.",
+      "Sum: $(10a+b)+(10b+a)=11a+11b=11(a+b)$. So $11(a+b)=143$ and $a+b=13$.",
+      "Also $b=a+5$. Put this in: $a+a+5=13$, so $2a=8$ and $a=4$. Then $b=9$.",
+      "Check: $49+94=143$."
+     ],
+     "answer": "$49$",
      "n": 11
     },
     {
      "text": "The difference of a two-digit number and its reversal is $54$. Find the difference of its digits. Give two such numbers.",
-     "answer": "$9(a-b)=54$, so $a-b=6$. Examples: $71$ and $82$ (also $60$, $93$).",
+     "steps": [
+      "$(10a+b)-(10b+a)=9a-9b=9(a-b)$.",
+      "$9(a-b)=54$, so $a-b=6$.",
+      "Pairs of digits with difference $6$: $(7,1)$, $(8,2)$, $(9,3)$, $(6,0)$.",
+      "Check one: $71-17=54$."
+     ],
+     "answer": "$a-b=6$; for example $71$ and $82$",
      "n": 12
     },
     {
-     "text": "If $21y5$ is a multiple of $9$, where $y$ is a digit, find $y$.",
-     "answer": "Digit sum $8+y$ must be $9$ or $18$: $y=1$ (since $y=10$ is not a digit). Check: $2115=9\\times235$.",
+     "text": "$21y5$ is a multiple of $9$, where $y$ is a digit. Find $y$.",
+     "steps": [
+      "Digit sum $=2+1+y+5=8+y$.",
+      "It must be a multiple of $9$. Since $8\\le8+y\\le17$, the only choice is $8+y=9$.",
+      "So $y=1$. Check: $2115=9\\times235$."
+     ],
+     "answer": "$y=1$",
      "n": 13
     },
     {
-     "text": "If $31z5$ is a multiple of $3$, where $z$ is a digit, find all possible values of $z$.",
-     "answer": "Digit sum $9+z$ must be a multiple of $3$: $z=0, 3, 6, 9$.",
+     "text": "$31z5$ is a multiple of $3$, where $z$ is a digit. Find all possible values of $z$.",
+     "steps": [
+      "Digit sum $=3+1+z+5=9+z$.",
+      "$9$ is a multiple of $3$, so $9+z$ is a multiple of $3$ exactly when $z$ is.",
+      "The digits that are multiples of $3$ are $0, 3, 6, 9$."
+     ],
+     "answer": "$z=0, 3, 6, 9$",
      "n": 14
     },
     {
      "text": "A three-digit number has digits $a, b, c$ (in that order). Show that the number minus its reversal is divisible by $99$. What is the quotient?",
-     "answer": "$(100a+10b+c)-(100c+10b+a)=99a-99c=99(a-c)$. The quotient is $a-c$.",
+     "steps": [
+      "The number is $100a+10b+c$. Its reversal is $100c+10b+a$.",
+      "Subtract: $100a+10b+c-100c-10b-a$.",
+      "The $10b$ terms cancel: $99a-99c=99(a-c)$.",
+      "So the difference is $99$ times $(a-c)$."
+     ],
+     "answer": "Divisible by $99$; the quotient is $a-c$",
      "n": 15
     },
     {
-     "text": "Find the values of the letters: $\\begin{array}{r}3A\\\\+\\,25\\\\\\hline B2\\end{array}$",
-     "answer": "$A+5$ ends in $2$, so $A=7$ with a carry of $1$. Tens: $3+2+1=6=B$. So $37+25=62$: $A=7$, $B=6$.",
+     "text": "Find the digits $A$ and $B$: $\\begin{array}{r}3A\\\\+\\,25\\\\\\hline B2\\end{array}$",
+     "steps": [
+      "Units column: $A+5$ ends in $2$. The only digit that works is $A=7$, because $7+5=12$. Write $2$ and carry $1$.",
+      "Tens column: $3+2+1$ (the carry) $=6$. So $B=6$.",
+      "Check: $37+25=62$."
+     ],
+     "answer": "$A=7$, $B=6$",
      "n": 16
     }
    ]
@@ -565,32 +670,67 @@
    "questions": [
     {
      "text": "Prove that the product of any three consecutive numbers is divisible by $6$.",
-     "answer": "Among three consecutive numbers, at least one is even and exactly one is a multiple of $3$. $2$ and $3$ have no common factor, so the product is a multiple of $6$.",
+     "steps": [
+      "Among two consecutive numbers, one is even. So among three, at least one is even: the product is divisible by $2$.",
+      "Among three consecutive numbers, exactly one is a multiple of $3$ (the remainders on division by $3$ are $0$, $1$, $2$ in some order). So the product is divisible by $3$.",
+      "$2$ and $3$ have no common factor, so a number divisible by both is divisible by $2\\times3=6$.",
+      "Example: $4\\times5\\times6=120=6\\times20$."
+     ],
+     "answer": "Always divisible by $6$",
      "n": 17
     },
     {
      "text": "Show that $n^3-n$ is divisible by $6$ for every whole number $n$.",
-     "answer": "$n^3-n=(n-1)n(n+1)$: a product of three consecutive numbers, so it is divisible by $6$.",
+     "steps": [
+      "Take out the common factor: $n^3-n=n(n^2-1)$.",
+      "$n^2-1=(n-1)(n+1)$, so $n^3-n=(n-1)\\,n\\,(n+1)$.",
+      "This is a product of three consecutive numbers, so by the last question it is divisible by $6$.",
+      "Example: $n=5$: $125-5=120=6\\times20$."
+     ],
+     "answer": "Always divisible by $6$",
      "n": 18
     },
     {
-     "text": "Find the smallest number that leaves remainders $1, 2, 3$ and $4$ when divided by $2, 3, 4$ and $5$.",
-     "answer": "One more than the number is a multiple of $2, 3, 4, 5$: the LCM is $60$. The number is $59$.",
+     "text": "Find the smallest number that leaves remainders $1, 2, 3$ and $4$ when it is divided by $2, 3, 4$ and $5$.",
+     "steps": [
+      "In each case the remainder is $1$ less than the divisor. So if we add $1$ to the number, every remainder becomes $0$.",
+      "So the number $+1$ is a common multiple of $2, 3, 4, 5$.",
+      "The smallest common multiple (LCM) of $2, 3, 4, 5$ is $60$.",
+      "So the number is $60-1=59$. Check: $59=2\\times29+1=3\\times19+2=4\\times14+3=5\\times11+4$."
+     ],
+     "answer": "$59$",
      "n": 19
     },
     {
      "text": "$N$ leaves remainder $5$ on division by $8$. Find the remainder when $3N+7$ is divided by $8$.",
-     "answer": "$3\\times5+7=22=8\\times2+6$. Remainder $6$.",
+     "steps": [
+      "Write $N=8k+5$.",
+      "$3N+7=24k+15+7=24k+22$.",
+      "$24k$ is a multiple of $8$, and $22=8\\times2+6$.",
+      "Shortcut: use only the remainder. $3\\times5+7=22$, which leaves $6$."
+     ],
+     "answer": "Remainder $6$",
      "n": 20
     },
     {
-     "text": "Is it possible to write $100$ as the sum of $11$ odd numbers? Explain.",
-     "answer": "No. The sum of an odd number of odd numbers is odd, but $100$ is even.",
+     "text": "Can you write $100$ as the sum of $11$ odd numbers? Explain.",
+     "steps": [
+      "Two odd numbers add to an even number. So $10$ odd numbers (five pairs) add to an even number.",
+      "Even $+$ the eleventh odd number $=$ odd.",
+      "So the sum of $11$ odd numbers is always odd. But $100$ is even."
+     ],
+     "answer": "No, it is not possible.",
      "n": 21
     },
     {
      "text": "Without calculating, is $2^{10}+3^{10}$ even or odd? Is $2^{10}\\times3^{10}$ a multiple of $4$?",
-     "answer": "$2^{10}$ is even and $3^{10}$ is odd: the sum is odd. $2^{10}\\times3^{10}$ contains $2^{10}$, so it is a multiple of $4$.",
+     "steps": [
+      "$2^{10}=2\\times2\\times\\dots\\times2$ is even.",
+      "$3^{10}$ is a product of odd numbers, so it is odd.",
+      "Even $+$ odd $=$ odd, so $2^{10}+3^{10}$ is odd.",
+      "$2^{10}\\times3^{10}$ has at least two factors of $2$ ($2\\times2=4$), so it is a multiple of $4$."
+     ],
+     "answer": "The sum is odd; the product is a multiple of $4$.",
      "n": 22
     }
    ]
@@ -601,18 +741,31 @@
    "questions": [
     {
      "text": "Case study: A school has $1{,}236$ students for a sports day.",
-     "answer": "(a) $1236$ is even and its digit sum $12$ is a multiple of $3$, so yes ($206$ teams). (b) Last two digits $36$: yes, $309$ groups of $4$. (c) Last three digits $236=8\\times29+4$: no, $4$ students are left. (d) $1236=9\\times137+3$: $3$ left over; adding $6$ makes $1242$, a multiple of $9$.",
+     "steps": [
+      "(a) Teams of $6$: $6=2\\times3$. $1236$ is even, and its digit sum $1+2+3+6=12$ is a multiple of $3$. So yes: $1236\\div6=206$ teams.",
+      "(b) Groups of $4$: the last two digits are $36=4\\times9$. So yes: $1236\\div4=309$ groups.",
+      "(c) Groups of $8$: the last three digits are $236=8\\times29+4$. So no; $4$ students are left.",
+      "(d) Lines of $9$: digit sum $12=9+3$, so $3$ students are left. $9-3=6$ more students make full lines: $1242=9\\times138$."
+     ],
+     "answer": "(a) Yes, $206$ teams (b) Yes, $309$ groups (c) No, $4$ left (d) $3$ left; $6$ more needed",
      "parts": [
       "(a) Can the students be divided exactly into teams of $6$?",
-      "(b) Into groups of $4$?",
+      "(b) Can they be divided exactly into groups of $4$?",
       "(c) Into groups of $8$? If not, how many students are left?",
       "(d) How many students are left when they make lines of $9$? How many more students are needed to make full lines?"
      ],
      "n": 23
     },
     {
-     "text": "Case study: A calendar shows dates in a month. Ravi chooses a $3\\times3$ square of dates.",
-     "answer": "(a) The dates are $n-8, n-7, n-6, n-1, n, n+1, n+6, n+7, n+8$: sum $9n$. (b) $9n$ is always a multiple of $9$. (c) $9n=153$ gives $n=17$. (d) $216\\div9=24$ is the middle, so the smallest is $24-8=16$.",
+     "text": "Case study: Ravi chooses a $3\\times3$ square of dates on a calendar.",
+     "steps": [
+      "(a) In a calendar, the date below is $7$ more, and the date to the right is $1$ more. With middle date $n$, the nine dates are $n-8, n-7, n-6, n-1, n, n+1, n+6, n+7, n+8$.",
+      "The $-8$ and $+8$ cancel, and so do $-7$ and $+7$, $-6$ and $+6$, $-1$ and $+1$. The sum is $9n$.",
+      "(b) The sum is $9\\times n$, so it is always a multiple of $9$.",
+      "(c) $9n=153$, so $n=153\\div9=17$.",
+      "(d) $9n=216$, so $n=24$. The smallest date is the top-left one: $24-8=16$."
+     ],
+     "answer": "(a) sum $=9n$ (b) it is $9$ times the middle date (c) $17$ (d) $16$",
      "parts": [
       "(a) If the middle date is $n$, write all nine dates and their sum.",
       "(b) Explain why the sum is always a multiple of $9$.",
@@ -628,13 +781,34 @@
    "note": "Decide whether each statement is true, and whether the reason explains the assertion.",
    "questions": [
     {
-     "text": "Assertion (A): $7{,}344$ is divisible by $24$. Reason (R): $7{,}344$ is divisible by $3$ and by $8$, and $3$ and $8$ have no common factor. Choose: (i) both true, R explains A (ii) both true, R does not explain A (iii) A true, R false (iv) A false, R true.",
-     "answer": "(i). $344=8\\times43$ and the digit sum is $18$. Since $3$ and $8$ are co-prime, the number is divisible by $24$: $7344=24\\times306$.",
+     "text": "Assertion (A): $7{,}344$ is divisible by $24$. Reason (R): $7{,}344$ is divisible by $3$ and by $8$, and $3$ and $8$ have no common factor.",
+     "steps": [
+      "Check A: $7344\\div24=306$. A is true.",
+      "Check R: last three digits $344=8\\times43$, so it is divisible by $8$. Digit sum $=18$, so it is divisible by $3$. R is true.",
+      "Does R explain A? Yes: $24=3\\times8$ with no common factor, so divisibility by $3$ and $8$ gives divisibility by $24$."
+     ],
+     "answer": "(i)",
+     "options": [
+      "(i) Both A and R are true, and R explains A.",
+      "(ii) Both A and R are true, but R does not explain A.",
+      "(iii) A is true, but R is false.",
+      "(iv) A is false, but R is true."
+     ],
      "n": 25
     },
     {
-     "text": "Assertion (A): The sum of four consecutive numbers is a multiple of $4$. Reason (R): The sum of four consecutive numbers is $4n+6$. Choose (i), (ii), (iii) or (iv) as above.",
-     "answer": "(iv). R is true, but $4n+6=4(n+1)+2$ leaves remainder $2$, so A is false.",
+     "text": "Assertion (A): The sum of four consecutive numbers is a multiple of $4$. Reason (R): The sum of four consecutive numbers is $4n+6$.",
+     "steps": [
+      "Check R: $n+(n+1)+(n+2)+(n+3)=4n+6$. R is true.",
+      "Check A: $4n+6=4(n+1)+2$, which always leaves remainder $2$ on division by $4$. Example: $1+2+3+4=10$. A is false."
+     ],
+     "answer": "(iv)",
+     "options": [
+      "(i) Both A and R are true, and R explains A.",
+      "(ii) Both A and R are true, but R does not explain A.",
+      "(iii) A is true, but R is false.",
+      "(iv) A is false, but R is true."
+     ],
      "n": 26
     }
    ]
@@ -645,17 +819,32 @@
    "questions": [
     {
      "text": "$AB$ is a two-digit number with digits $A$ and $B$. $AB+BA=132$ and $A-B=2$. Find $AB$.",
-     "answer": "$11(A+B)=132$, so $A+B=12$. With $A-B=2$: $A=7$, $B=5$. The number is $75$ ($75+57=132$).",
+     "steps": [
+      "$AB+BA=11(A+B)=132$, so $A+B=12$.",
+      "We also know $A-B=2$. Add the two equations: $2A=14$, so $A=7$. Then $B=5$.",
+      "Check: $75+57=132$."
+     ],
+     "answer": "$75$",
      "n": 27
     },
     {
-     "text": "Solve $\\begin{array}{r}1A\\\\\\times\\ \\ A\\\\\\hline 9A\\end{array}$ ($A$ is a digit).",
-     "answer": "$A\\times A$ ends in $A$: $A=0, 1, 5, 6$. $(10+A)A=90+A$ gives $A^2+9A-90=0$, so $A=6$. Check: $16\\times6=96$.",
+     "text": "Solve $\\begin{array}{r}1A\\\\\\times\\ \\ A\\\\\\hline 9A\\end{array}$, where $A$ is a digit.",
+     "steps": [
+      "Units: $A\\times A$ must end in $A$. Try the digits: $0\\times0=0$, $1\\times1=1$, $5\\times5=25$, $6\\times6=36$. So $A$ is $0, 1, 5$ or $6$.",
+      "Now the whole product must be $90+A$: $10\\times0=0$, $11\\times1=11$, $15\\times5=75$, $16\\times6=96$.",
+      "Only $16\\times6=96$ works."
+     ],
+     "answer": "$A=6$",
      "n": 28
     },
     {
      "text": "Find the digits: $\\begin{array}{r}A\\,B\\\\+\\,B\\,A\\\\\\hline 1\\,6\\,5\\end{array}$ with $A>B$. How many answers are there?",
-     "answer": "$11(A+B)=165$, so $A+B=15$. With $A>B$: $(9,6)$ and $(8,7)$. Two answers: $96+69$ and $87+78$.",
+     "steps": [
+      "$AB+BA=11(A+B)=165$, so $A+B=15$.",
+      "Pairs of different digits with sum $15$ and $A>B$: $(9,6)$ and $(8,7)$.",
+      "Check: $96+69=165$ and $87+78=165$."
+     ],
+     "answer": "Two answers: $A=9, B=6$ and $A=8, B=7$",
      "n": 29
     }
    ]

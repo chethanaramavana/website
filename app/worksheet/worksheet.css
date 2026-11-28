@@ -23,3 +23,17 @@
 .ws-puzzle-actions { text-align: center; }
 .ws-puzzle-result { text-align: center; font-weight: 700; color: #6a45c4; }
 @media print { .wsp-nav, .wsp-lock, .ws-puzzle-actions { display: none; } .wsp-q details { display: block; } }
+.wsp-q ol.wsp-options li { margin: 3px 0; }
+.wsp-q ol.wsp-steps { list-style: decimal; padding-left: 24px; }
+.wsp-q ol.wsp-steps li { margin: 4px 0; }
+
+.wsp-q details.wsp-sol { background: none; border: 0; padding: 0; }
+.wsp-q details.wsp-sol > summary { display: inline-block; list-style: none; cursor: pointer; border: 2px solid #2b8a45; color: #2b8a45; background: #fff; border-radius: 999px; padding: 6px 16px; font: 700 14px system-ui, sans-serif; }
+.wsp-q details.wsp-sol > summary::-webkit-details-marker { display: none; }
+.wsp-q details.wsp-sol > summary .wsp-hide { display: none; }
+.wsp-q details.wsp-sol[open] > summary { background: #2b8a45; color: #fff; }
+.wsp-q details.wsp-sol[open] > summary .wsp-show { display: none; }
+.wsp-q details.wsp-sol[open] > summary .wsp-hide { display: inline; }
+.wsp-q details.wsp-sol .wsp-sol-body { background: #f2f8f3; border-left: 4px solid #2b8a45; border-radius: 6px; padding: 6px 12px; margin: 8px 0 0; }
+.wsp-q .wsp-sol-body ol.wsp-steps { padding-left: 24px; margin: 4px 0; }
+.wsp-q .wsp-sol-body p { margin: 6px 0 0; }

@@ -24,10 +24,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 function Question({ q }: { q: WorksheetQuestion }) {
   return <div className="wsp-q" id={`q${q.n}`}>
     <p><strong>{q.n}.</strong> <Tex>{q.text}</Tex></p>
+    {q.options && <ol className="wsp-options">{q.options.map((p) => <li key={p}><Tex>{p}</Tex></li>)}</ol>}
     {q.parts && <ol>{q.parts.map((p) => <li key={p}><Tex>{p}</Tex></li>)}</ol>}
     {!!q.picture && <StoryPicture spec={q.picture as StoryPictureSpec} />}
     {q.puzzle && <MirrorPuzzle n={q.puzzle.n} mirror={q.puzzle.mirror} given={q.puzzle.given} />}
-    <details><summary>Answer</summary><p><Tex>{q.answer}</Tex></p>{!!q.answerPicture && <StoryPicture spec={q.answerPicture as StoryPictureSpec} />}</details>
+    <details className="wsp-sol"><summary><span className="wsp-show">View solution</span><span className="wsp-hide">Hide solution</span></summary><div className="wsp-sol-body">{q.steps && <ol className="wsp-steps">{q.steps.map((s, i) => <li key={i}><Tex>{s}</Tex></li>)}</ol>}<p>{q.steps && <strong>Answer: </strong>}<Tex>{q.answer}</Tex></p>{!!q.answerPicture && <StoryPicture spec={q.answerPicture as StoryPictureSpec} />}</div></details>
   </div>;
 }
 
