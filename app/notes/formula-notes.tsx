@@ -5,9 +5,10 @@ import NotesLab from './notes-lab';
 import TeachingDiagram, {type TeachingDiagramSpec} from './cbse89-diagram';
 import NotesPrintButton from './real-numbers/print-button';
 import StoryPicture, {type StoryPictureSpec} from './story-picture';
+import InlineSims from './inline-sims';
 
 type Worked = {question: string; use?: string[]; steps: string[]; result?: string; type?: string; diagram?: TeachingDiagramSpec};
-type Lesson = {title: string; level: string; introduction?: string; formulas: string[]; examples: Worked[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
+type Lesson = {title: string; level: string; introduction?: string; formulas: string[]; examples: Worked[]; sims?: string[]; ideas?: string[]; experiment?: {title: string; steps: string[]; result: string}; labs?: {slug: string; index: number}[]; diagram?: TeachingDiagramSpec | null; picture?: StoryPictureSpec};
 export type FormulaNotesData = {kicker: string; title: string; back: {href: string; label: string}; grade: {href: string; label: string}; storeKey: string; subtitle?: string; links?: {href: string; label: string}[]; sheet: {title: string; items: string[]}[]; lessons: Lesson[]; school?: boolean; challengeLabel?: string; sources?: {href: string; label: string}[]};
 const math = (f: string) => `$${f}$`;
 
@@ -48,6 +49,7 @@ export default function FormulaNotes({data}: {data: FormulaNotesData}) {
       {l.picture && <div className="ir-picture"><StoryPicture spec={l.picture} /></div>}
       {l.diagram && <TeachingDiagram spec={l.diagram} />}
       {l.labs?.map((lab) => <div className="ir-lab" key={`${lab.slug}-${lab.index}`}><span className="ir-label">Try it · simulation</span><NotesLab slug={lab.slug} index={lab.index} /></div>)}
+      {l.sims && <InlineSims ids={l.sims} />}
       <div className="ir-worked">{l.examples.map((e, j) => <Example key={j} e={e} label={`EXAMPLE ${j + 1}`} school={data.school} />)}</div>
       {l.experiment && <div className="ir-exp"><span className="ir-label">Activity</span><h3><Tex>{l.experiment.title}</Tex></h3><ol>{l.experiment.steps.map((t, k) => <li key={k}><Tex>{t}</Tex></li>)}</ol><div className="ir-exp-result"><strong>What you see: </strong><Tex>{l.experiment.result}</Tex></div></div>}
       <SessionTick index={i} total={lessons.length} storeKey={data.storeKey} />

@@ -1,10 +1,10 @@
 'use client';
-import {useState, type ReactNode} from 'react';
+import {useState, type ReactNode, type MouseEvent} from 'react';
 
 /* Grade 6 Symmetry simulations: folding quadrilaterals, their diagonals,
    turning quadrilaterals and drawing with a mirror on a grid. */
 type P = [number, number];
-const ink = '#011e47', red = '#c2432b', fillA = '#8fd0f7', edgeA = '#1f6fae', fillB = '#ffc46b', edgeB = '#b86e00', good = '#2b8a45';
+const ink = '#011e47', red = '#c2432b', fillA = '#8fd0f7', edgeA = '#1f6fae', fillB = '#ffc46b', edgeB = '#b86e00', good = '#2b8a45', gold = '#d9a231';
 
 function Box({title, children}: {title: string; children: ReactNode}) { return <section className="explore-box" aria-label={title}><h3>{title}</h3>{children}</section>; }
 function Pick({labels, value, onChange}: {labels: string[]; value: number; onChange: (n: number) => void}) { return <div className="explore-buttons">{labels.map((l, i) => <button type="button" key={l} aria-pressed={value === i} onClick={() => onChange(i)}>{l}</button>)}</div>; }
@@ -153,6 +153,115 @@ export function MirrorGrid() {
     <Say>
       <p>Click the white squares to colour them orange. The blue squares are their mirror images on the other side of the red line.</p>
       <p>Each blue square is as far from the mirror as its orange square, and the line that joins them meets the mirror at 90°. The whole picture has the red line as a line of symmetry.</p>
+    </Say>
+  </Box>;
+}
+
+/* ---------- Simulations placed inside the notes sessions ---------- */
+const bboxCentre = (pts: P[]): P => { const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]); return [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2]; };
+const FIGS: {name: string; pts: P[]}[] = [
+  {name: 'Arrow', pts: [[-130, -30], [30, -30], [30, -80], [130, 0], [30, 80], [30, 30], [-130, 30]]},
+  {name: 'Letter T', pts: [[-100, -110], [100, -110], [100, -60], [25, -60], [25, 110], [-25, 110], [-25, -60], [-100, -60]]},
+  {name: 'Letter E', pts: [[-70, -110], [80, -110], [80, -70], [-25, -70], [-25, -20], [50, -20], [50, 20], [-25, 20], [-25, 70], [80, 70], [80, 110], [-70, 110]]},
+  {name: 'Letter L', pts: [[-110, -110], [-60, -110], [-60, 60], [110, 60], [110, 110], [-110, 110]]},
+  {name: 'Isosceles triangle', pts: [[0, -110], [100, 100], [-100, 100]]},
+  {name: 'Triangle with three different sides', pts: [[-40, -110], [130, 100], [-110, 60]]},
+];
+/** Fold a letter or a figure along a standing, sleeping or slanting line through its middle. */
+export function FoldFigure() {
+  const [f, setF] = useState(0), [li, setLi] = useState(0), [t, setT] = useState(0);
+  const sh = FIGS[f], C = bboxCentre(sh.pts);
+  const LINES = [{name: 'Standing line', d: [0, 1] as P}, {name: 'Sleeping line', d: [1, 0] as P}, {name: 'Slanting line /', d: [1, -1] as P}, {name: 'Slanting line \\', d: [1, 1] as P}];
+  const L = LINES[li], ok = sameSet(sh.pts.map((p) => mirror(p, C, L.d)), sh.pts), moving = sh.pts.map((p) => fold(p, C, L.d, t / 100)), [e1, e2] = clipLine(C, L.d);
+  const good2 = LINES.filter((l) => sameSet(sh.pts.map((p) => mirror(p, C, l.d)), sh.pts)).map((l) => l.name.toLowerCase());
+  return <Box title="Fold a figure along a line">
+    <Pick labels={FIGS.map((s) => s.name)} value={f} onChange={(n) => { setF(n); setT(0); }} />
+    <Pick labels={LINES.map((l) => l.name)} value={li} onChange={(n) => { setLi(n); setT(0); }} />
+    <Slide label="Fold" value={t} min={0} max={100} step={5} onChange={setT} show={t === 0 ? 'not folded' : t === 100 ? 'folded over' : `${t}%`} />
+    <svg className="explore-canvas" viewBox="-300 -150 600 300" role="img" aria-label={`${sh.name}, folded along a ${L.name.toLowerCase()}`}>
+      <polygon points={str(sh.pts)} fill={fillA} stroke={edgeA} strokeWidth="3" />
+      <polygon points={str(moving)} fill={t === 100 && ok ? '#8fdc9a' : fillB} fillOpacity={0.55} stroke={t === 100 && ok ? good : edgeB} strokeWidth="3" strokeDasharray="7 5" />
+      <path d={`M${e1[0]} ${e1[1]}L${e2[0]} ${e2[1]}`} stroke={red} strokeWidth="3" strokeDasharray="10 6" />
+    </svg>
+    <Say>{t < 100 ? <p>Move the slider to the end to finish the fold.</p> : <>
+      <p>{ok ? <><strong>The halves match.</strong> This line is a line of symmetry.</> : <><strong>The halves do not match.</strong> This line is not a line of symmetry.</>}</p>
+      <p>{good2.length ? `Lines of symmetry of this figure: ${good2.join(' and ')}.` : 'This figure has no line of symmetry.'}{sh.name === 'Letter L' ? ' Surprise: an L with equal arms is symmetric about a slanting line!' : ''}</p></>}</Say>
+  </Box>;
+}
+
+const REG = (n: number, r = 115, start = -90): P[] => Array.from({length: n}, (_, k) => { const a = (start + (360 * k) / n) * Math.PI / 180; return [Math.round(r * Math.cos(a) * 1000) / 1000, Math.round(r * Math.sin(a) * 1000) / 1000] as P; });
+const SPIN: {name: string; pts: P[]; lines: string}[] = [
+  {name: 'Equilateral triangle', pts: REG(3, 125, -90).map(([x, y]) => [x, y + 20] as P), lines: '3'},
+  {name: 'Square', pts: REG(4, 120, -45), lines: '4'},
+  {name: 'Rectangle', pts: [[-150, -80], [150, -80], [150, 80], [-150, 80]], lines: '2'},
+  {name: 'Regular hexagon', pts: REG(6, 120, 0), lines: '6'},
+  {name: 'Circle', pts: REG(72, 120, 0), lines: 'every diameter: infinitely many'},
+];
+/** Spin a mirror line about the centre of a figure and find every angle where it is a line of symmetry. */
+export function SpinMirror() {
+  const [f, setF] = useState(0), [a, setA] = useState(0); const sh = SPIN[f], C = centre(sh.pts);
+  const dir = (deg: number): P => [Math.cos(deg * Math.PI / 180), -Math.sin(deg * Math.PI / 180)];
+  const isSym = (deg: number) => sameSet(sh.pts.map((p) => mirror(p, C, dir(deg))), sh.pts);
+  const ok = isSym(a), img = sh.pts.map((p) => mirror(p, C, dir(a))), [e1, e2] = clipLine(C, dir(a));
+  const found = Array.from({length: 12}, (_, k) => k * 15).filter(isSym);
+  return <Box title="Spin the mirror line">
+    <Pick labels={SPIN.map((s) => s.name)} value={f} onChange={(n) => { setF(n); setA(0); }} />
+    <Slide label="Angle of the mirror line" value={a} min={0} max={165} step={15} onChange={setA} show={`${a}°`} />
+    <svg className="explore-canvas" viewBox="-300 -160 600 320" role="img" aria-label={`${sh.name} with a mirror line at ${a} degrees`}>
+      <polygon points={str(sh.pts)} fill={ok ? '#8fdc9a' : fillA} stroke={ok ? good : edgeA} strokeWidth="3" />
+      {!ok && <polygon points={str(img)} fill="none" stroke={edgeB} strokeWidth="3" strokeDasharray="7 5" />}
+      <path d={`M${e1[0]} ${e1[1]}L${e2[0]} ${e2[1]}`} stroke={red} strokeWidth="3" strokeDasharray="10 6" />
+      <circle cx={C[0]} cy={C[1]} r="5" fill={ink} />
+    </svg>
+    <Say>
+      <p>{ok ? <><strong>Line of symmetry!</strong> The mirror image falls exactly on the figure.</> : <>Not a line of symmetry: the orange dashed mirror image does not fit the figure.</>}</p>
+      <p>Mirror angles from 0° to 165° that work for the {sh.name.toLowerCase()}: {sh.name === 'Circle' ? 'every angle works' : found.map((x) => `${x}°`).join(', ')}. Number of lines: {sh.lines}.</p>
+    </Say>
+  </Box>;
+}
+
+/** Ink blot: click to drop paint on the left half, then fold the paper. */
+export function InkBlot() {
+  const COLS = ['#c2432b', '#1f6fae', '#2b8a45', '#6a45c4', '#b86e00'];
+  const [spots, setSpots] = useState<{x: number; y: number; r: number; c: string}[]>([{x: 220, y: 90, r: 26, c: COLS[0]}, {x: 250, y: 170, r: 18, c: COLS[1]}, {x: 170, y: 140, r: 14, c: COLS[2]}]);
+  const [folded, setFolded] = useState(false);
+  const drop = (e: MouseEvent<SVGSVGElement>) => {
+    const box = e.currentTarget.getBoundingClientRect(), x = ((e.clientX - box.left) / box.width) * 600, y = ((e.clientY - box.top) / box.height) * 280;
+    if (x >= 296) return; setSpots([...spots, {x, y, r: 10 + ((spots.length * 7) % 18), c: COLS[spots.length % COLS.length]}]); setFolded(false);
+  };
+  return <Box title="Make an ink-blot picture">
+    <div className="explore-buttons"><button type="button" aria-pressed={folded} onClick={() => setFolded(!folded)}>{folded ? 'Open the paper again' : 'Fold and press'}</button><button type="button" onClick={() => { setSpots([]); setFolded(false); }}>Clean paper</button></div>
+    <svg className="explore-canvas" viewBox="0 0 600 280" role="img" aria-label="Paper with paint spots" onClick={drop} style={{cursor: 'crosshair'}}>
+      <rect x="10" y="10" width="580" height="260" fill="#fffdf6" stroke="#d6c9a8" />
+      {spots.map((s, i) => <circle key={i} cx={s.x} cy={s.y} r={s.r} fill={s.c} opacity={0.85} />)}
+      {folded && spots.map((s, i) => <circle key={'m' + i} cx={600 - s.x} cy={s.y} r={s.r} fill={s.c} opacity={0.7} />)}
+      <path d="M300 10V270" stroke={red} strokeWidth="3" strokeDasharray="10 6" />
+    </svg>
+    <Say><p>Click on the left half to drop paint. Then press "Fold and press".</p><p>{folded ? 'Each spot made a copy on the right, at the same height and the same distance from the fold. The fold is a line of symmetry of the picture.' : 'The red line is the fold.'}</p></Say>
+  </Box>;
+}
+
+/** Pinwheel: four blades in one colour, two colours or four colours. The colours decide the rotational symmetry. */
+export function Pinwheel() {
+  const [m, setM] = useState(0), [t, setT] = useState(0);
+  const MODES = [{name: 'One colour', cols: [0, 0, 0, 0]}, {name: 'Two colours', cols: [0, 1, 0, 1]}, {name: 'Four colours', cols: [0, 1, 2, 3]}];
+  const PAL = [['#ff9b85', '#c2432b'], ['#8fd0f7', '#1f6fae'], ['#8fdc9a', '#2b8a45'], ['#c3aef5', '#6a45c4']];
+  const cols = MODES[m].cols, step = m === 0 ? 90 : m === 1 ? 180 : 360, order = 360 / step;
+  const blade = (k: number) => { const r = (a: number, d: number): P => [d * Math.cos((a + 90 * k) * Math.PI / 180), -d * Math.sin((a + 90 * k) * Math.PI / 180)]; return [[0, 0] as P, r(0, 130), r(35, 85)]; };
+  const fits = t > 0 && t < 360 && t % step === 0;
+  return <Box title="Turn the pinwheel">
+    <Pick labels={MODES.map((x) => x.name)} value={m} onChange={(n) => { setM(n); setT(0); }} />
+    <Slide label="Turn" value={t} min={0} max={360} step={15} onChange={setT} show={`${t}°`} />
+    <svg className="explore-canvas" viewBox="-300 -172 600 344" role="img" aria-label={`Pinwheel with ${MODES[m].name.toLowerCase()}, turned ${t} degrees`}>
+      {[0, 1, 2, 3].map((k) => <polygon key={'o' + k} points={str(blade(k))} fill={PAL[cols[k]][0]} fillOpacity={0.25} stroke={PAL[cols[k]][1]} strokeOpacity={0.4} strokeDasharray="5 5" />)}
+      <g transform={`rotate(${-t})`}>{[0, 1, 2, 3].map((k) => <polygon key={k} points={str(blade(k))} fill={PAL[cols[k]][0]} stroke={PAL[cols[k]][1]} strokeWidth="3" />)}</g>
+      <circle r="8" fill={ink} />
+      <path d={`M${150 * Math.cos(Math.PI / 12)} ${-150 * Math.sin(Math.PI / 12)}A150 150 0 ${t > 180 ? 1 : 0} 0 ${150 * Math.cos((15 + t) * Math.PI / 180)} ${-150 * Math.sin((15 + t) * Math.PI / 180)}`} fill="none" stroke={gold} strokeWidth="4" opacity={t ? 1 : 0} />
+    </svg>
+    <Say>
+      <p>{fits ? <><strong>It looks the same after {t}°!</strong> Every blade sits on a blade of the same colour.</> : t === 0 || t === 360 ? 'The pinwheel is in its starting position.' : 'It does not look the same yet: a blade sits on a place of a different colour, or between places.'}</p>
+      <p>{m === 0 ? 'One colour: it looks the same after every quarter turn. Angle of symmetry 90°, order 4.' : m === 1 ? 'Two colours, one after the other: a quarter turn puts red on blue. It looks the same only after a half turn. Angle of symmetry 180°, order 2.' : 'Four colours: each colour comes back to its own place only after a full turn of 360°. So the pinwheel has no rotational symmetry now.'}</p>
+      <p>The colours are part of the picture. Changing the colours can change the symmetry.</p>
     </Say>
   </Box>;
 }

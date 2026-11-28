@@ -17,3 +17,6 @@
 .notes-explore .explore-math{overflow-x:auto}
 @media print{.notes-explore{display:none}}
 .notes-explore .explore-box+.explore-box{margin-top:22px}
+.notes-explore.ir-inline-sim{max-width:none;margin:14px 0 18px;padding:0}
+.notes-explore .ir-inline-sim-label{margin:0 0 6px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;color:#b86e00}
+.notes-explore.ir-inline-sim>div+div{margin-top:16px}

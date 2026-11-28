@@ -1,0 +1,664 @@
+{
+ "id": "worksheet-g8-number-play",
+ "slug": "g8-number-play",
+ "title": "Number Play",
+ "grade": 8,
+ "board": "CBSE",
+ "chapterPath": "/cbse/grade-8/ch-5",
+ "notesPath": "/notes/g8-number-play",
+ "amount": 1500,
+ "freeCount": 3,
+ "sections": [
+  {
+   "title": "Section A · Textbook-style questions",
+   "note": "Like the \"Figure it Out\" questions in NCERT Ganita Prakash.",
+   "questions": [
+    {
+     "text": "Which of these are always even for every whole number $n$: (a) $4n+2$ (b) $n^2+n$ (c) $3n+1$ (d) $(n+1)(n+2)$ (e) $5n$?",
+     "answer": "(a), (b) and (d). (a) $=2(2n+1)$. (b) $=n(n+1)$ and (d) are products of two consecutive numbers. (c) and (e) are odd for some $n$.",
+     "n": 1
+    },
+    {
+     "text": "Put $+$ or $-$ signs between $11, 12, 13, 14$ in all possible ways. Show that you never get an odd answer.",
+     "answer": "With all $+$: $50$, even. Each change from $+x$ to $-x$ subtracts $2x$, which is even. So every answer is even. For example, $11-12+13-14=-2$.",
+     "n": 2
+    },
+    {
+     "text": "Find the remainder when $1{,}234{,}567$ is divided by (a) $2$ (b) $4$ (c) $8$ (d) $9$.",
+     "answer": "(a) $1$ (b) $67=4\\times16+3$: $3$ (c) $567=8\\times70+7$: $7$ (d) digit sum $28=27+1$: $1$",
+     "n": 3
+    },
+    {
+     "text": "Without dividing, check whether $3{,}87{,}234$ is divisible by $2$, $3$, $4$, $6$, $8$, $9$ and $11$.",
+     "answer": "Even: yes. Digit sum $27$: divisible by $3$ and $9$, so by $6$. Last two digits $34$: not by $4$, so not by $8$. Alternating sum $(4+2+8)-(3+7+3)=1$: not by $11$.",
+     "n": 4
+    },
+    {
+     "text": "Find all the digits $x$ for which $43x2$ is divisible by $3$, and the digit for which it is divisible by $9$.",
+     "answer": "Digit sum $9+x$. By $3$: $x=0, 3, 6, 9$. By $9$: $x=0$ or $9$.",
+     "n": 5
+    },
+    {
+     "text": "Find the digit $x$ so that $9{,}x82$ is divisible by $11$.",
+     "answer": "Odd places from the right: $2+x$. Even places: $8+9=17$. $(2+x)-17=x-15$ must be $0$ or $-11$, so $x=4$. Check: $9482=11\\times862$.",
+     "n": 6
+    },
+    {
+     "text": "Write the general form of a three-digit number with digits $a, b, c$. Write the general form of the number with the digits in reverse order.",
+     "answer": "$100a+10b+c$ and $100c+10b+a$.",
+     "n": 7
+    },
+    {
+     "text": "Find the digital root of $8{,}74{,}352$. What is the remainder when this number is divided by $9$?",
+     "answer": "$8+7+4+3+5+2=29\\to11\\to2$. Remainder $2$.",
+     "n": 8
+    },
+    {
+     "text": "A hall has $38$ chairs. They are arranged in rows of $6$. How many full rows are there, and how many chairs are left over? Write $38$ in the form $6k+r$.",
+     "answer": "$38=6\\times6+2$: $6$ full rows and $2$ chairs left over.",
+     "picture": {
+      "kind": "draw",
+      "h": 200,
+      "items": [
+       {
+        "t": "circle",
+        "c": [
+         200,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         30
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         54
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         78
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         102
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         126
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         248,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         272,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         296,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         150
+        ],
+        "r": 8,
+        "fill": "sky"
+       },
+       {
+        "t": "circle",
+        "c": [
+         200,
+         174
+        ],
+        "r": 8,
+        "fill": "coral"
+       },
+       {
+        "t": "circle",
+        "c": [
+         224,
+         174
+        ],
+        "r": 8,
+        "fill": "coral"
+       },
+       {
+        "t": "text",
+        "p": [
+         470,
+         80
+        ],
+        "v": "38 chairs in rows of 6",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         470,
+         110
+        ],
+        "v": "How many rows? How many left?",
+        "size": "s"
+       }
+      ],
+      "caption": "Chairs arranged in rows of 6."
+     },
+     "n": 9
+    },
+    {
+     "text": "Draw a Venn diagram for the multiples of $4$, $8$ and $32$. Is there a number that is a multiple of $32$ but not of $4$?",
+     "answer": "No. Every multiple of $32$ is a multiple of $8$, and every multiple of $8$ is a multiple of $4$: the circles sit one inside the other.",
+     "answerPicture": {
+      "kind": "draw",
+      "h": 260,
+      "items": [
+       {
+        "t": "ellipse",
+        "c": [
+         320,
+         130
+        ],
+        "rx": 250,
+        "ry": 115,
+        "fill": "none"
+       },
+       {
+        "t": "ellipse",
+        "c": [
+         350,
+         140
+        ],
+        "rx": 160,
+        "ry": 80,
+        "fill": "blue"
+       },
+       {
+        "t": "ellipse",
+        "c": [
+         380,
+         150
+        ],
+        "rx": 70,
+        "ry": 40,
+        "fill": "gold"
+       },
+       {
+        "t": "text",
+        "p": [
+         175,
+         78
+        ],
+        "v": "multiples of 4",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         270,
+         105
+        ],
+        "v": "multiples of 8",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         380,
+         155
+        ],
+        "v": "multiples of 32",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         165,
+         172
+        ],
+        "v": "4, 12, 20 …",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         280,
+         175
+        ],
+        "v": "8, 16, 24 …",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         380,
+         175
+        ],
+        "v": "32, 64 …",
+        "size": "s"
+       }
+      ],
+      "caption": "Every multiple of 32 is a multiple of 8, and every multiple of 8 is a multiple of 4."
+     },
+     "n": 10
+    }
+   ]
+  },
+  {
+   "title": "Section B · Reference-book style (as in RS Aggarwal)",
+   "note": "General form of numbers, reversal and missing digits.",
+   "questions": [
+    {
+     "text": "The sum of a two-digit number and the number with its digits reversed is $143$. If the units digit is $5$ more than the tens digit, find the number.",
+     "answer": "$11(a+b)=143$, so $a+b=13$. With $b=a+5$: $2a+5=13$, $a=4$, $b=9$. The number is $49$ (check: $49+94=143$).",
+     "n": 11
+    },
+    {
+     "text": "The difference of a two-digit number and its reversal is $54$. Find the difference of its digits. Give two such numbers.",
+     "answer": "$9(a-b)=54$, so $a-b=6$. Examples: $71$ and $82$ (also $60$, $93$).",
+     "n": 12
+    },
+    {
+     "text": "If $21y5$ is a multiple of $9$, where $y$ is a digit, find $y$.",
+     "answer": "Digit sum $8+y$ must be $9$ or $18$: $y=1$ (since $y=10$ is not a digit). Check: $2115=9\\times235$.",
+     "n": 13
+    },
+    {
+     "text": "If $31z5$ is a multiple of $3$, where $z$ is a digit, find all possible values of $z$.",
+     "answer": "Digit sum $9+z$ must be a multiple of $3$: $z=0, 3, 6, 9$.",
+     "n": 14
+    },
+    {
+     "text": "A three-digit number has digits $a, b, c$ (in that order). Show that the number minus its reversal is divisible by $99$. What is the quotient?",
+     "answer": "$(100a+10b+c)-(100c+10b+a)=99a-99c=99(a-c)$. The quotient is $a-c$.",
+     "n": 15
+    },
+    {
+     "text": "Find the values of the letters: $\\begin{array}{r}3A\\\\+\\,25\\\\\\hline B2\\end{array}$",
+     "answer": "$A+5$ ends in $2$, so $A=7$ with a carry of $1$. Tens: $3+2+1=6=B$. So $37+25=62$: $A=7$, $B=6$.",
+     "n": 16
+    }
+   ]
+  },
+  {
+   "title": "Section C · Higher-order thinking",
+   "note": "Use algebra, remainders and counterexamples.",
+   "questions": [
+    {
+     "text": "Prove that the product of any three consecutive numbers is divisible by $6$.",
+     "answer": "Among three consecutive numbers, at least one is even and exactly one is a multiple of $3$. $2$ and $3$ have no common factor, so the product is a multiple of $6$.",
+     "n": 17
+    },
+    {
+     "text": "Show that $n^3-n$ is divisible by $6$ for every whole number $n$.",
+     "answer": "$n^3-n=(n-1)n(n+1)$: a product of three consecutive numbers, so it is divisible by $6$.",
+     "n": 18
+    },
+    {
+     "text": "Find the smallest number that leaves remainders $1, 2, 3$ and $4$ when divided by $2, 3, 4$ and $5$.",
+     "answer": "One more than the number is a multiple of $2, 3, 4, 5$: the LCM is $60$. The number is $59$.",
+     "n": 19
+    },
+    {
+     "text": "$N$ leaves remainder $5$ on division by $8$. Find the remainder when $3N+7$ is divided by $8$.",
+     "answer": "$3\\times5+7=22=8\\times2+6$. Remainder $6$.",
+     "n": 20
+    },
+    {
+     "text": "Is it possible to write $100$ as the sum of $11$ odd numbers? Explain.",
+     "answer": "No. The sum of an odd number of odd numbers is odd, but $100$ is even.",
+     "n": 21
+    },
+    {
+     "text": "Without calculating, is $2^{10}+3^{10}$ even or odd? Is $2^{10}\\times3^{10}$ a multiple of $4$?",
+     "answer": "$2^{10}$ is even and $3^{10}$ is odd: the sum is odd. $2^{10}\\times3^{10}$ contains $2^{10}$, so it is a multiple of $4$.",
+     "n": 22
+    }
+   ]
+  },
+  {
+   "title": "Section D · Case studies",
+   "note": "Read the situation and answer each part.",
+   "questions": [
+    {
+     "text": "Case study: A school has $1{,}236$ students for a sports day.",
+     "answer": "(a) $1236$ is even and its digit sum $12$ is a multiple of $3$, so yes ($206$ teams). (b) Last two digits $36$: yes, $309$ groups of $4$. (c) Last three digits $236=8\\times29+4$: no, $4$ students are left. (d) $1236=9\\times137+3$: $3$ left over; adding $6$ makes $1242$, a multiple of $9$.",
+     "parts": [
+      "(a) Can the students be divided exactly into teams of $6$?",
+      "(b) Into groups of $4$?",
+      "(c) Into groups of $8$? If not, how many students are left?",
+      "(d) How many students are left when they make lines of $9$? How many more students are needed to make full lines?"
+     ],
+     "n": 23
+    },
+    {
+     "text": "Case study: A calendar shows dates in a month. Ravi chooses a $3\\times3$ square of dates.",
+     "answer": "(a) The dates are $n-8, n-7, n-6, n-1, n, n+1, n+6, n+7, n+8$: sum $9n$. (b) $9n$ is always a multiple of $9$. (c) $9n=153$ gives $n=17$. (d) $216\\div9=24$ is the middle, so the smallest is $24-8=16$.",
+     "parts": [
+      "(a) If the middle date is $n$, write all nine dates and their sum.",
+      "(b) Explain why the sum is always a multiple of $9$.",
+      "(c) The sum is $153$. Find the middle date.",
+      "(d) The sum is $216$. Find the smallest date in the square."
+     ],
+     "n": 24
+    }
+   ]
+  },
+  {
+   "title": "Section E · Assertion and reason",
+   "note": "Decide whether each statement is true, and whether the reason explains the assertion.",
+   "questions": [
+    {
+     "text": "Assertion (A): $7{,}344$ is divisible by $24$. Reason (R): $7{,}344$ is divisible by $3$ and by $8$, and $3$ and $8$ have no common factor. Choose: (i) both true, R explains A (ii) both true, R does not explain A (iii) A true, R false (iv) A false, R true.",
+     "answer": "(i). $344=8\\times43$ and the digit sum is $18$. Since $3$ and $8$ are co-prime, the number is divisible by $24$: $7344=24\\times306$.",
+     "n": 25
+    },
+    {
+     "text": "Assertion (A): The sum of four consecutive numbers is a multiple of $4$. Reason (R): The sum of four consecutive numbers is $4n+6$. Choose (i), (ii), (iii) or (iv) as above.",
+     "answer": "(iv). R is true, but $4n+6=4(n+1)+2$ leaves remainder $2$, so A is false.",
+     "n": 26
+    }
+   ]
+  },
+  {
+   "title": "Section F · Digits in disguise",
+   "note": "Each letter stands for a digit. Different letters are different digits.",
+   "questions": [
+    {
+     "text": "$AB$ is a two-digit number with digits $A$ and $B$. $AB+BA=132$ and $A-B=2$. Find $AB$.",
+     "answer": "$11(A+B)=132$, so $A+B=12$. With $A-B=2$: $A=7$, $B=5$. The number is $75$ ($75+57=132$).",
+     "n": 27
+    },
+    {
+     "text": "Solve $\\begin{array}{r}1A\\\\\\times\\ \\ A\\\\\\hline 9A\\end{array}$ ($A$ is a digit).",
+     "answer": "$A\\times A$ ends in $A$: $A=0, 1, 5, 6$. $(10+A)A=90+A$ gives $A^2+9A-90=0$, so $A=6$. Check: $16\\times6=96$.",
+     "n": 28
+    },
+    {
+     "text": "Find the digits: $\\begin{array}{r}A\\,B\\\\+\\,B\\,A\\\\\\hline 1\\,6\\,5\\end{array}$ with $A>B$. How many answers are there?",
+     "answer": "$11(A+B)=165$, so $A+B=15$. With $A>B$: $(9,6)$ and $(8,7)$. Two answers: $96+69$ and $87+78$.",
+     "n": 29
+    }
+   ]
+  }
+ ]
+}

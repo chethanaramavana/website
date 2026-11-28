@@ -1337,7 +1337,7 @@
    "label": "Grade 8"
   },
   "storeKey": "ramavana-g8-number-play-sessions",
-  "subtitle": "NCERT Ganita Prakash Part 1 · Chapter 5 · Start from basics; build confidence one step at a time",
+  "subtitle": "NCERT Ganita Prakash Part 1 · Chapter 5 · Parity, remainders, divisibility tests, digital roots and digit puzzles",
   "school": true,
   "sources": [
    {
@@ -1347,309 +1347,1866 @@
   ],
   "sheet": [
    {
-    "title": "Look for structure before calculating",
+    "title": "Odd, even and fours",
     "items": [
-     "\\text{even}=2k",
-     "\\text{odd}=2k+1"
+     "\\text{even}=2k,\\ \\text{odd}=2k+1",
+     "\\text{even}=4k\\ \\text{or}\\ 4k+2",
+     "(2k+1)^2=8m+1"
     ]
    },
    {
-    "title": "Divisibility and remainders",
+    "title": "Remainders",
     "items": [
-     "10\\equiv1\\pmod9",
-     "10\\equiv-1\\pmod{11}"
+     "N=mk+r,\\ 0\\le r<m",
+     "\\text{use the remainders of the parts for } a+b \\text{ and } ab"
     ]
    },
    {
-    "title": "Reverse digits and use letters",
+    "title": "Divisibility tests",
     "items": [
-     "(10a+b)-(10b+a)=9(a-b)"
+     "2,5,10:\\ \\text{last digit};\\ 4:\\ \\text{last two};\\ 8:\\ \\text{last three}",
+     "3,9:\\ \\text{digit sum}",
+     "11:\\ \\text{(odd places)}-\\text{(even places)}",
+     "24=3\\times8,\\ 36=4\\times9:\\ \\text{co-prime factors}"
     ]
    },
    {
-    "title": "Patterns in arrays",
+    "title": "Digits",
     "items": [
-     "n(n+1)\\text{ is even}"
+     "(10a+b)+(10b+a)=11(a+b)",
+     "(10a+b)-(10b+a)=9(a-b)",
+     "abc-cba=99(a-c)",
+     "\\text{digital root}=\\text{remainder on } \\div9\\ (\\text{or } 9)"
     ]
    }
   ],
   "lessons": [
    {
-    "title": "Look for structure before calculating",
+    "title": "Odd and even: breaking even",
     "level": "school",
     "ideas": [
-     "A pattern is useful only when its rule is stated.",
-     "Check a proposed rule on every given example.",
-     "A few matching examples suggest a conjecture; they do not prove it for all integers."
+     "An even number can be put into pairs. An odd number has one left over.",
+     "Write an even number as $2k$ and an odd number as $2k+1$, where $k$ is a whole number.",
+     "Even $\\pm$ even and odd $\\pm$ odd are even. Even $\\pm$ odd is odd. Even $\\times$ any number is even. Odd $\\times$ odd is odd.",
+     "A few examples only suggest a rule. Algebra proves it for every number."
     ],
     "formulas": [
-     "\\text{even}=2k",
-     "\\text{odd}=2k+1"
+     "\\text{even}=2k,\\quad\\text{odd}=2k+1",
+     "n+(n+1)=2n+1\\ \\text{(always odd)}",
+     "(2a+1)(2b+1)=2(2ab+a+b)+1\\ \\text{(odd)}"
     ],
     "examples": [
      {
-      "question": "Show that the sum of three consecutive integers is a multiple of $3$.",
+      "question": "Put $+$ or $-$ in each gap of $5\\ \\_\\ 6\\ \\_\\ 7\\ \\_\\ 8$. Show that the answer is always even.",
       "steps": [
-       "Write them as $n-1$, $n$, $n+1$.",
-       "Sum $=3n$."
+       "With all $+$ signs: $5+6+7+8=26$, which is even.",
+       "Changing $+b$ to $-b$ changes the answer by $2b$, which is even.",
+       "So every choice of signs gives an even answer."
       ],
-      "result": "Always a multiple of $3$.",
+      "result": "Always even",
       "type": "Solved example"
      },
      {
-      "question": "Show that the product of two odd numbers is odd.",
+      "question": "Which of these are even for every whole number $n$: $2n+4$, $3n$, $n(n+1)$, $n^2+n+1$, $4n-1$?",
       "steps": [
-       "$(2a+1)(2b+1)=4ab+2a+2b+1$.",
-       "$=2(2ab+a+b)+1$, one more than an even number."
+       "$2n+4=2(n+2)$: even.",
+       "$n(n+1)$: one of two consecutive numbers is even, so the product is even.",
+       "$3n$ is odd when $n$ is odd; $n^2+n+1=n(n+1)+1$ is odd; $4n-1$ is odd."
       ],
-      "result": "Odd",
+      "result": "$2n+4$ and $n(n+1)$",
       "type": "Solved example"
      },
      {
-      "question": "Is the sum of five odd numbers odd or even?",
+      "question": "Prove that the sum of an even number and an odd number is odd.",
       "steps": [
-       "Pair four of them: each pair has an even sum.",
-       "Even $+$ the fifth odd number is odd."
+       "Even $=2a$, odd $=2b+1$.",
+       "Sum $=2a+2b+1=2(a+b)+1$: one more than an even number."
       ],
-      "result": "Odd",
+      "result": "The sum is odd",
+      "type": "Solved example"
+     },
+     {
+      "question": "Can five odd numbers add up to $100$?",
+      "steps": [
+       "Two odd numbers make an even sum, so four odd numbers make an even sum.",
+       "Even $+$ the fifth odd number is odd. $100$ is even."
+      ],
+      "result": "No",
+      "type": "Solved example"
+     },
+     {
+      "question": "Without adding, is $1+2+3+\\dots+20$ even or odd?",
+      "steps": [
+       "There are $10$ odd numbers: $1, 3, \\dots, 19$.",
+       "$10$ odd numbers make $5$ even pairs. The even numbers add to an even total."
+      ],
+      "result": "Even (it is $210$)",
       "type": "Solved example"
      }
     ],
-    "labs": [
-     {
-      "slug": "factors-multiples",
-      "index": 2
-     }
-    ],
-    "experiment": {
-     "title": "Hands-on: look for structure before calculating",
-     "steps": [
-      "List odd and even numbers on cards.",
-      "Combine two cards of each parity."
+    "picture": {
+     "kind": "draw",
+     "h": 170,
+     "items": [
+      {
+       "t": "circle",
+       "c": [
+        40,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        40,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        66,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        66,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        92,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        92,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "text",
+       "p": [
+        80,
+        125
+       ],
+       "v": "6: three pairs → even",
+       "size": "s"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        276,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        276,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        302,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        302,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        328,
+        50
+       ],
+       "r": 9,
+       "fill": "coral"
+      },
+      {
+       "t": "text",
+       "p": [
+        300,
+        125
+       ],
+       "v": "7: one dot left over → odd",
+       "size": "s"
+      },
+      {
+       "t": "circle",
+       "c": [
+        470,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        470,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        496,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        496,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        50
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        76
+       ],
+       "r": 9,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        548,
+        50
+       ],
+       "r": 9,
+       "fill": "orange"
+      },
+      {
+       "t": "circle",
+       "c": [
+        548,
+        76
+       ],
+       "r": 9,
+       "fill": "orange"
+      },
+      {
+       "t": "circle",
+       "c": [
+        574,
+        50
+       ],
+       "r": 9,
+       "fill": "orange"
+      },
+      {
+       "t": "circle",
+       "c": [
+        574,
+        76
+       ],
+       "r": 9,
+       "fill": "orange"
+      },
+      {
+       "t": "circle",
+       "c": [
+        600,
+        50
+       ],
+       "r": 9,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        600,
+        76
+       ],
+       "r": 9,
+       "fill": "coral"
+      },
+      {
+       "t": "text",
+       "p": [
+        540,
+        125
+       ],
+       "v": "7 + 5: the two red dots pair up",
+       "size": "s"
+      }
      ],
-     "result": "Even plus even and odd plus odd are even; odd plus even is odd."
+     "caption": "Even numbers make pairs. Odd numbers have one dot left over."
+    },
+    "sims": [
+     "parity-dots",
+     "plus-minus"
+    ]
+   },
+   {
+    "title": "Pairs to make fours",
+    "level": "school",
+    "ideas": [
+     "Every even number is either a multiple of $4$ ($4k$) or $2$ more than one ($4k+2$).",
+     "Two numbers of the form $4k+2$ add to a multiple of $4$: the two extra $2$s make a $4$.",
+     "The product of two even numbers is always a multiple of $4$."
+    ],
+    "formulas": [
+     "\\text{even}=4k\\ \\text{or}\\ 4k+2",
+     "(4a+2)+(4b+2)=4(a+b+1)",
+     "(2a)(2b)=4ab"
+    ],
+    "examples": [
+     {
+      "question": "Is $14+26$ a multiple of $4$? Explain with the form $4k+2$.",
+      "steps": [
+       "$14=4\\times3+2$ and $26=4\\times6+2$.",
+       "Sum $=4\\times9+4=4\\times10$."
+      ],
+      "result": "Yes, $40$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Can a multiple of $4$ plus an even number that is not a multiple of $4$ be a multiple of $4$?",
+      "steps": [
+       "$4a+(4b+2)=4(a+b)+2$.",
+       "It always leaves remainder $2$."
+      ],
+      "result": "Never",
+      "type": "Solved example"
+     },
+     {
+      "question": "Show that the sum of four consecutive numbers is never a multiple of $4$.",
+      "steps": [
+       "$n+(n+1)+(n+2)+(n+3)=4n+6$.",
+       "$4n+6=4(n+1)+2$: remainder $2$ on division by $4$."
+      ],
+      "result": "Never a multiple of $4$, but always even",
+      "type": "Solved example"
+     },
+     {
+      "question": "Show that the square of every odd number leaves remainder $1$ on division by $8$.",
+      "steps": [
+       "$(2k+1)^2=4k^2+4k+1=4k(k+1)+1$.",
+       "$k(k+1)$ is even, so $4k(k+1)$ is a multiple of $8$."
+      ],
+      "result": "Remainder $1$ (for example, $49=48+1$)",
+      "type": "Higher-order"
+     }
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 190,
+     "items": [
+      {
+       "t": "circle",
+       "c": [
+        60,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        84,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        108,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        132,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        60,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        84,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        108,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        132,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        60,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        84,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        108,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        132,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "text",
+       "p": [
+        100,
+        150
+       ],
+       "v": "12 = 4×3 (form 4k)",
+       "size": "s"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        274,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        298,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        322,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        274,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        298,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        322,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        274,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        298,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        322,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        250,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        274,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "text",
+       "p": [
+        290,
+        150
+       ],
+       "v": "14 = 4×3 + 2 (form 4k + 2)",
+       "size": "s"
+      },
+      {
+       "t": "circle",
+       "c": [
+        450,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        474,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        498,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        40
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        450,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        474,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        498,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        64
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        450,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        474,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        498,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        88
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        450,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        474,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        498,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        522,
+        112
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "text",
+       "p": [
+        490,
+        150
+       ],
+       "v": "6 + 10 = 16: the two 2s (red) make a 4",
+       "size": "s"
+      }
+     ],
+     "caption": "Every even number is either 4k or 4k + 2."
     }
    },
    {
-    "title": "Divisibility and remainders",
+    "title": "Always, sometimes or never?",
     "level": "school",
     "ideas": [
-     "A divisibility test follows from place value.",
-     "Digit sums test divisibility by 3 and 9.",
-     "For 11, compare the alternating sums of digits."
+     "To show a claim is always true, prove it with algebra.",
+     "To show it is not always true, one counterexample is enough.",
+     "\"Sometimes\" needs one example where it is true and one where it is false."
     ],
     "formulas": [
-     "10\\equiv1\\pmod9",
-     "10\\equiv-1\\pmod{11}"
+     "\\text{multiple of } m = m\\times k",
+     "\\text{if } m \\text{ divides } x \\text{ and } y,\\ \\text{it divides } x+y \\text{ and } x-y"
     ],
     "examples": [
      {
-      "question": "Is $51{,}948$ divisible by $3$, $4$ and $9$?",
+      "question": "A multiple of $8$ is a multiple of $4$.",
       "steps": [
-       "Digit sum $=5+1+9+4+8=27$: divisible by $3$ and $9$.",
-       "Last two digits $48$ are divisible by $4$."
+       "$8k=4(2k)$."
       ],
-      "result": "Yes to all three.",
+      "result": "Always",
       "type": "Solved example"
      },
      {
-      "question": "Find the remainder when $7654$ is divided by $9$, without dividing.",
+      "question": "A multiple of $4$ is a multiple of $8$.",
       "steps": [
-       "Digit sum $=22$; $22=2\\times9+4$."
+       "$16$ is a multiple of both.",
+       "$12$ is a multiple of $4$ but not of $8$."
+      ],
+      "result": "Sometimes",
+      "type": "Solved example"
+     },
+     {
+      "question": "The sum of two multiples of $7$ is a multiple of $7$.",
+      "steps": [
+       "$7a+7b=7(a+b)$."
+      ],
+      "result": "Always",
+      "type": "Solved example"
+     },
+     {
+      "question": "The product of a multiple of $12$ and a multiple of $3$ is a multiple of $36$.",
+      "steps": [
+       "$12a\\times3b=36ab$."
+      ],
+      "result": "Always",
+      "type": "Solved example"
+     },
+     {
+      "question": "A number divisible by both $4$ and $6$ is divisible by $24$.",
+      "steps": [
+       "$24$: yes.",
+       "$12$ is divisible by $4$ and by $6$, but not by $24$."
+      ],
+      "result": "Sometimes",
+      "type": "Solved example"
+     },
+     {
+      "question": "An odd number plus $1$ is odd.",
+      "steps": [
+       "$(2k+1)+1=2(k+1)$, which is even."
+      ],
+      "result": "Never",
+      "type": "Solved example"
+     }
+    ]
+   },
+   {
+    "title": "What remains? Remainders",
+    "level": "school",
+    "ideas": [
+     "A number that leaves remainder $r$ on division by $m$ has the form $mk+r$, with $0\\le r<m$.",
+     "To find the remainder of a sum or a product, you can use the remainders of the parts.",
+     "Days of the week repeat every $7$ days, so they follow remainders on division by $7$."
+    ],
+    "formulas": [
+     "N=mk+r,\\quad 0\\le r<m",
+     "\\text{remainder of } a+b = \\text{remainder of } (r_a+r_b)",
+     "\\text{remainder of } ab = \\text{remainder of } (r_a\\times r_b)"
+    ],
+    "examples": [
+     {
+      "question": "Write the numbers that leave remainder $3$ on division by $5$.",
+      "steps": [
+       "They are $3, 8, 13, 18, \\dots$",
+       "Each is $3$ more than a multiple of $5$."
+      ],
+      "result": "$5k+3$",
+      "type": "Solved example"
+     },
+     {
+      "question": "$a$ leaves remainder $3$ and $b$ leaves remainder $4$ on division by $7$. Find the remainders of $a+b$ and $ab$.",
+      "steps": [
+       "$a+b$: $3+4=7$, remainder $0$.",
+       "$ab$: $3\\times4=12=7+5$, remainder $5$."
+      ],
+      "result": "$0$ and $5$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the remainder of $3529+864$ on division by $7$ without adding.",
+      "steps": [
+       "$3529=7\\times504+1$ and $864=7\\times123+3$.",
+       "$1+3=4$."
+      ],
+      "result": "$4$ (check: $4393=7\\times627+4$)",
+      "type": "Solved example"
+     },
+     {
+      "question": "Today is Wednesday. What day is it $100$ days from today?",
+      "steps": [
+       "$100=7\\times14+2$.",
+       "After $14$ full weeks it is Wednesday again; $2$ more days."
+      ],
+      "result": "Friday",
+      "type": "Solved example"
+     },
+     {
+      "question": "A farmer counts her mangoes in $3$s, $4$s and $5$s. Each time, one more mango would complete a group. She has fewer than $100$ mangoes. How many?",
+      "steps": [
+       "One more mango makes a multiple of $3$, $4$ and $5$: a multiple of $60$.",
+       "Fewer than $100$: the total plus $1$ is $60$."
+      ],
+      "result": "$59$ mangoes",
+      "type": "Higher-order"
+     }
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 200,
+     "items": [
+      {
+       "t": "circle",
+       "c": [
+        150,
+        30
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        174,
+        30
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        198,
+        30
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        222,
+        30
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        246,
+        30
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        150,
+        54
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        174,
+        54
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        198,
+        54
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        222,
+        54
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        246,
+        54
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        150,
+        78
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        174,
+        78
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        198,
+        78
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        222,
+        78
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        246,
+        78
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        150,
+        102
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        174,
+        102
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        198,
+        102
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        222,
+        102
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        246,
+        102
+       ],
+       "r": 8,
+       "fill": "sky"
+      },
+      {
+       "t": "circle",
+       "c": [
+        150,
+        126
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        174,
+        126
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "circle",
+       "c": [
+        198,
+        126
+       ],
+       "r": 8,
+       "fill": "coral"
+      },
+      {
+       "t": "text",
+       "p": [
+        330,
+        60
+       ],
+       "v": "23 dots in rows of 5",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        330,
+        90
+       ],
+       "v": "4 full rows, 3 left over",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        330,
+        120
+       ],
+       "v": "23 = 5 × 4 + 3",
+       "size": "s"
+      }
+     ],
+     "caption": "The remainder is what is left after the full groups."
+    },
+    "sims": [
+     "remainders"
+    ]
+   },
+   {
+    "title": "Divisibility by 2, 5, 10, 4 and 8",
+    "level": "school",
+    "ideas": [
+     "Split the number where the higher part is surely a multiple of the divisor.",
+     "$10$ is a multiple of $2$, $5$ and $10$, so only the units digit decides.",
+     "$100$ is a multiple of $4$, so the last two digits decide. $1000$ is a multiple of $8$, so the last three digits decide."
+    ],
+    "formulas": [
+     "N=10a+b:\\ \\text{for } 2, 5, 10 \\text{ check } b",
+     "N=100a+(\\text{last two digits}):\\ \\text{check for } 4",
+     "N=1000a+(\\text{last three digits}):\\ \\text{check for } 8"
+    ],
+    "examples": [
+     {
+      "question": "Is $7{,}316$ divisible by $4$? By $8$?",
+      "steps": [
+       "Last two digits $16$: divisible by $4$.",
+       "Last three digits $316=8\\times39+4$: not divisible by $8$."
+      ],
+      "result": "By $4$: yes. By $8$: no (remainder $4$)",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the smallest digit $x$ so that $5{,}23x$ is divisible by $8$.",
+      "steps": [
+       "Check $23x$: $232=8\\times29$.",
+       "$230$ and $231$ are not multiples of $8$."
+      ],
+      "result": "$x=2$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Why does the test for $4$ use the last two digits and not only the last digit?",
+      "steps": [
+       "$10$ is not a multiple of $4$: $10=4\\times2+2$.",
+       "$100$ is a multiple of $4$, so everything above the last two digits is a multiple of $4$."
+      ],
+      "result": "Because $100$, not $10$, is a multiple of $4$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the remainder when $9{,}87{,}654$ is divided by $8$.",
+      "steps": [
+       "Last three digits: $654=8\\times81+6$."
+      ],
+      "result": "$6$",
+      "type": "Solved example"
+     }
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 170,
+     "items": [
+      {
+       "t": "poly",
+       "pts": [
+        [
+         40,
+         40
+        ],
+        [
+         260,
+         40
+        ],
+        [
+         260,
+         90
+        ],
+        [
+         40,
+         90
+        ]
+       ],
+       "fill": "sky"
+      },
+      {
+       "t": "text",
+       "p": [
+        150.0,
+        71.0
+       ],
+       "v": "57 000",
+       "size": "m"
+      },
+      {
+       "t": "text",
+       "p": [
+        285,
+        72
+       ],
+       "v": "+",
+       "size": "l"
+      },
+      {
+       "t": "poly",
+       "pts": [
+        [
+         310,
+         40
+        ],
+        [
+         430,
+         40
+        ],
+        [
+         430,
+         90
+        ],
+        [
+         310,
+         90
+        ]
+       ],
+       "fill": "orange"
+      },
+      {
+       "t": "text",
+       "p": [
+        370.0,
+        71.0
+       ],
+       "v": "316",
+       "size": "m"
+      },
+      {
+       "t": "text",
+       "p": [
+        150,
+        120
+       ],
+       "v": "a multiple of 1000, so of 8",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        370,
+        120
+       ],
+       "v": "test only this part",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        320,
+        155
+       ],
+       "v": "57 316 ÷ 8: look at 316 only",
+       "size": "s"
+      }
+     ],
+     "caption": "Split a number at the right place. For 8, the last three digits decide."
+    },
+    "sims": [
+     "divisibility"
+    ]
+   },
+   {
+    "title": "Divisibility by 9 and 3: digit sums",
+    "level": "school",
+    "ideas": [
+     "$10=9+1$, $100=99+1$, $1000=999+1$. Each place value is $1$ more than a multiple of $9$.",
+     "So a number and the sum of its digits leave the same remainder on division by $9$, and also on division by $3$.",
+     "Use this to find remainders and missing digits."
+    ],
+    "formulas": [
+     "100a+10b+c=99a+9b+(a+b+c)",
+     "N \\text{ and its digit sum leave the same remainder on division by } 9 \\text{ and by } 3"
+    ],
+    "examples": [
+     {
+      "question": "Is $8{,}712$ divisible by $9$?",
+      "steps": [
+       "Digit sum: $8+7+1+2=18$, a multiple of $9$."
+      ],
+      "result": "Yes: $8712=9\\times968$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the remainder when $52{,}814$ is divided by $9$.",
+      "steps": [
+       "Digit sum: $5+2+8+1+4=20$.",
+       "$20=9\\times2+2$."
+      ],
+      "result": "$2$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the digit $x$ so that $6x45$ is divisible by $9$.",
+      "steps": [
+       "Digit sum $=15+x$.",
+       "$15+x$ must be $18$ (the next multiple of $9$, $27$, needs $x=12$)."
+      ],
+      "result": "$x=3$: $6345=9\\times705$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find all digits $x$ so that $7x2$ is divisible by $3$.",
+      "steps": [
+       "Digit sum $=9+x$ must be a multiple of $3$."
+      ],
+      "result": "$x=0, 3, 6, 9$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the smallest multiple of $9$ that has no odd digit.",
+      "steps": [
+       "All digits even, so the digit sum is even. It must be a multiple of $9$: at least $18$.",
+       "Two digits give at most $8+8=16$. With three digits, start with the smallest first digit: $2+8+8=18$."
+      ],
+      "result": "$288$",
+      "type": "Textbook-type"
+     },
+     {
+      "question": "Find the multiple of $9$ nearest to $6000$.",
+      "steps": [
+       "Digit sum of $6000$ is $6$: $6000=9k+6$.",
+       "So $5994$ is a multiple of $9$ (distance $6$), and $6003$ is the next one (distance $3$)."
+      ],
+      "result": "$6003$",
+      "type": "Textbook-type"
+     }
+    ],
+    "sims": [
+     "missing-digit"
+    ]
+   },
+   {
+    "title": "Divisibility by 11",
+    "level": "school",
+    "ideas": [
+     "$10=11-1$, $100=99+1$, $1000=1001-1$: the place values are alternately $1$ less and $1$ more than multiples of $11$.",
+     "Add the digits in the odd places from the right (units, hundreds, …) and subtract the sum of the digits in the even places.",
+     "The number is divisible by $11$ when this difference is $0$ or a multiple of $11$. The difference also gives the remainder."
+    ],
+    "formulas": [
+     "10=11-1,\\quad100=99+1,\\quad1000=1001-1",
+     "\\text{difference}=(\\text{units}+\\text{hundreds}+\\dots)-(\\text{tens}+\\text{thousands}+\\dots)"
+    ],
+    "examples": [
+     {
+      "question": "Is $6{,}27{,}121$ divisible by $11$?",
+      "steps": [
+       "Odd places from the right: $1+1+2=4$. Even places: $2+7+6=15$.",
+       "$4-15=-11$, a multiple of $11$."
+      ],
+      "result": "Yes: $627121=11\\times57011$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the remainder when $8{,}519$ is divided by $11$.",
+      "steps": [
+       "Odd places: $9+5=14$. Even places: $1+8=9$.",
+       "$14-9=5$."
+      ],
+      "result": "$5$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the digit $x$ so that $5x37$ is divisible by $11$.",
+      "steps": [
+       "Odd places: $7+x$. Even places: $3+5=8$.",
+       "$7+x-8=x-1$ must be $0$."
+      ],
+      "result": "$x=1$: $5137=11\\times467$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Show that every $4$-digit palindrome $abba$ is divisible by $11$.",
+      "steps": [
+       "$abba=1000a+100b+10b+a=1001a+110b$.",
+       "$=11(91a+10b)$."
+      ],
+      "result": "Always divisible by $11$",
+      "type": "Higher-order"
+     }
+    ]
+   },
+   {
+    "title": "Combining tests: 6, 12, 18, 24, 36 and 44",
+    "level": "school",
+    "ideas": [
+     "To test for $24$, use two factors with no common factor: $24=3\\times8$.",
+     "\"Divisible by $4$ and by $6$\" is not a test for $24$: $12$ passes both, but $12$ is not divisible by $24$.",
+     "Factors with no common factor are called co-prime."
+    ],
+    "formulas": [
+     "6=2\\times3,\\ 12=3\\times4,\\ 18=2\\times9,\\ 24=3\\times8,\\ 36=4\\times9,\\ 44=4\\times11"
+    ],
+    "examples": [
+     {
+      "question": "Is $7{,}344$ divisible by $24$?",
+      "steps": [
+       "By $8$: $344=8\\times43$. Yes.",
+       "By $3$: digit sum $18$. Yes."
+      ],
+      "result": "Yes: $7344=24\\times306$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the digit $x$ so that $35x4$ is divisible by $18$.",
+      "steps": [
+       "It ends in $4$, so it is even.",
+       "Digit sum $12+x$ must be a multiple of $9$: $x=6$."
+      ],
+      "result": "$x=6$: $3564=18\\times198$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Is $2{,}376$ divisible by $36$?",
+      "steps": [
+       "By $4$: $76$ is a multiple of $4$.",
+       "By $9$: digit sum $18$."
+      ],
+      "result": "Yes: $2376=36\\times66$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Is $4{,}356$ divisible by $44$?",
+      "steps": [
+       "By $4$: $56$ is a multiple of $4$.",
+       "By $11$: $(6+3)-(5+4)=0$."
+      ],
+      "result": "Yes: $4356=44\\times99$",
+      "type": "Solved example"
+     }
+    ],
+    "picture": {
+     "kind": "table",
+     "head": true,
+     "rows": [
+      [
+       "Divisor",
+       "Check both",
+       "Why these two"
+      ],
+      [
+       "6",
+       "2 and 3",
+       "no common factor"
+      ],
+      [
+       "12",
+       "3 and 4",
+       "no common factor"
+      ],
+      [
+       "15",
+       "3 and 5",
+       "no common factor"
+      ],
+      [
+       "18",
+       "2 and 9",
+       "no common factor"
+      ],
+      [
+       "24",
+       "3 and 8",
+       "not 4 and 6: they share 2"
+      ],
+      [
+       "36",
+       "4 and 9",
+       "not 6 and 6"
+      ],
+      [
+       "44",
+       "4 and 11",
+       "no common factor"
+      ]
+     ],
+     "caption": "Use two factors with no common factor."
+    }
+   },
+   {
+    "title": "Digital roots",
+    "level": "school",
+    "ideas": [
+     "Add the digits again and again until one digit is left. This digit is the digital root.",
+     "The digital root is the remainder on division by $9$, except that a multiple of $9$ has digital root $9$.",
+     "Digital roots give a quick check of addition and multiplication."
+    ],
+    "formulas": [
+     "\\text{digital root of } N = \\text{remainder of } N\\div9\\ (\\text{or } 9)",
+     "\\text{digital root of } a\\times b = \\text{digital root of } (\\text{dr}(a)\\times\\text{dr}(b))"
+    ],
+    "examples": [
+     {
+      "question": "Find the digital root of $98{,}765$.",
+      "steps": [
+       "$9+8+7+6+5=35$, then $3+5=8$."
+      ],
+      "result": "$8$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Write the digital roots of $11, 22, 33, \\dots, 99$. What pattern do you see?",
+      "steps": [
+       "$2, 4, 6, 8, 1, 3, 5, 7, 9$.",
+       "Each step adds $2$; after $9$ we start again from $1$."
+      ],
+      "result": "All nine digits appear once",
+      "type": "Solved example"
+     },
+     {
+      "question": "Check $347\\times26=9{,}022$ with digital roots.",
+      "steps": [
+       "Digital roots: $347\\to5$ and $26\\to8$; $5\\times8=40\\to4$.",
+       "$9022\\to13\\to4$. The roots agree."
+      ],
+      "result": "The answer is probably correct (and it is)",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the digital root of $9a+36b+13$ for any whole numbers $a$ and $b$.",
+      "steps": [
+       "$9a+36b$ is a multiple of $9$.",
+       "So the remainder on division by $9$ is that of $13$, which is $4$."
       ],
       "result": "$4$",
-      "type": "Solved example"
-     },
-     {
-      "question": "Is $91{,}729$ divisible by $11$?",
-      "steps": [
-       "Alternate sums: $9+7+9=25$ and $1+2=3$.",
-       "$25-3=22$, a multiple of $11$."
-      ],
-      "result": "Yes; $91729=11\\times8339$.",
-      "type": "Solved example"
+      "type": "Textbook-type"
      }
     ],
-    "labs": [
-     {
-      "slug": "factors-multiples",
-      "index": 2
-     }
-    ],
-    "experiment": {
-     "title": "Hands-on: divisibility and remainders",
-     "steps": [
-      "Write 123 as 100+20+3.",
-      "Replace each power of ten by remainder 1 modulo 9."
-     ],
-     "result": "123 and 1+2+3 leave the same remainder on division by 9."
-    }
+    "sims": [
+     "digital-root"
+    ]
    },
    {
-    "title": "Reverse digits and use letters",
+    "title": "Digits in disguise: general form, reversal and letter puzzles",
     "level": "school",
     "ideas": [
-     "Represent a two-digit number as 10a+b.",
-     "Its reversal is 10b+a.",
-     "Subtracting reveals a multiple of 9 without trying every number."
+     "A two-digit number with digits $a$ and $b$ is $10a+b$; a three-digit number is $100a+10b+c$.",
+     "A number and its reversal: the sum is a multiple of $11$, the difference a multiple of $9$.",
+     "In a letter puzzle (cryptarithm) each letter is a different digit. Start from the units column and think about carries."
     ],
     "formulas": [
-     "(10a+b)-(10b+a)=9(a-b)"
+     "(10a+b)+(10b+a)=11(a+b)",
+     "(10a+b)-(10b+a)=9(a-b)",
+     "(100a+10b+c)-(100c+10b+a)=99(a-c)",
+     "abc+bca+cab=111(a+b+c)=3\\times37\\times(a+b+c)"
     ],
     "examples": [
      {
-      "question": "Show that a two-digit number plus its reversal is a multiple of $11$.",
+      "question": "A two-digit number and its reversal add to $121$. Find the sum of the digits.",
       "steps": [
-       "$(10a+b)+(10b+a)=11(a+b)$.",
-       "Example: $47+74=121=11\\times11$."
+       "$11(a+b)=121$."
       ],
-      "result": "Always a multiple of $11$.",
+      "result": "$a+b=11$",
       "type": "Solved example"
      },
      {
-      "question": "Show that a three-digit number minus its reversal is a multiple of $99$.",
+      "question": "A three-digit number minus its reversal is $396$. Find the difference of its first and last digits.",
       "steps": [
-       "$(100a+10b+c)-(100c+10b+a)=99(a-c)$.",
-       "Example: $752-257=495=99\\times5$."
+       "$99(a-c)=396$."
       ],
-      "result": "A multiple of $99$.",
+      "result": "$a-c=4$",
       "type": "Solved example"
      },
      {
-      "question": "Solve $AB+BA=165$ where $A-B=1$.",
+      "question": "Show that $abc+bca+cab$ is always divisible by $37$.",
       "steps": [
-       "$11(A+B)=165$, so $A+B=15$.",
-       "With $A-B=1$: $A=8$, $B=7$.",
-       "Check: $87+78=165$."
+       "Each digit appears once in each place: the sum is $111a+111b+111c$.",
+       "$111=3\\times37$."
       ],
-      "result": "$A=8$, $B=7$",
-      "type": "Solved example"
-     }
-    ],
-    "labs": [
-     {
-      "slug": "algebra",
-      "index": 0
-     }
-    ],
-    "experiment": {
-     "title": "Hands-on: reverse digits and use letters",
-     "steps": [
-      "Choose a two-digit number with different non-zero digits.",
-      "Subtract its reversal from the larger numeral."
-     ],
-     "result": "The difference is a multiple of 9."
-    }
-   },
-   {
-    "title": "Patterns in arrays",
-    "level": "school",
-    "ideas": [
-     "An array turns a product into rows and columns.",
-     "Check whether a grouping uses every object with no remainder.",
-     "Use variables to justify a pattern rather than relying on a picture alone."
-    ],
-    "formulas": [
-     "n(n+1)\\text{ is even}"
-    ],
-    "examples": [
-     {
-      "question": "List all rectangular arrays for the $18$ counters shown.",
-      "steps": [
-       "Factor pairs of $18$: $1\\times18$, $2\\times9$, $3\\times6$."
-      ],
-      "result": "Three arrays (and their turned versions).",
+      "result": "Always a multiple of $37$",
       "type": "Solved example"
      },
      {
-      "question": "How many factors does $36$ have? Why is the number odd?",
+      "question": "Solve $A+A+A=BA$, where $A$ and $B$ are different digits.",
       "steps": [
-       "Pairs: $1\\times36$, $2\\times18$, $3\\times12$, $4\\times9$, $6\\times6$.",
-       "$6\\times6$ gives only one new factor."
+       "$3A=10B+A$, so $2A=10B$ and $A=5B$.",
+       "$B=1$ gives $A=5$: $5+5+5=15$."
       ],
-      "result": "$9$ factors; a square has one repeated pair.",
+      "result": "$A=5$, $B=1$",
       "type": "Solved example"
      },
      {
-      "question": "Arrange $18$ counters in rows of $4$. How many rows are full and how many counters are left?",
+      "question": "Solve $AB+37=9A$.",
       "steps": [
-       "$18=4\\times4+2$."
+       "$10A+B+37=90+A$, so $9A+B=53$.",
+       "With digits: $A=5$, $B=8$. Check: $58+37=95$."
       ],
-      "result": "$4$ full rows, $2$ left over.",
+      "result": "$A=5$, $B=8$",
+      "type": "Solved example"
+     },
+     {
+      "question": "Solve $2A\\times A=1B6$.",
+      "steps": [
+       "$A\\times A$ ends in $6$: $A=4$ or $6$.",
+       "$24\\times4=96$ has only two digits; $26\\times6=156$."
+      ],
+      "result": "$A=6$, $B=5$",
       "type": "Solved example"
      }
     ],
-    "labs": [
-     {
-      "slug": "factors-multiples",
-      "index": 0
-     }
-    ],
-    "experiment": {
-     "title": "Hands-on: patterns in arrays",
-     "steps": [
-      "Arrange 24 counters in all possible rectangles.",
-      "Record positive row-column factor pairs."
-     ],
-     "result": "There are four unordered factor pairs: 1×24, 2×12, 3×8 and 4×6."
-    },
-    "diagram": {
-     "kind": "factor-array",
-     "caption": "18 counters arranged in a rectangular array.",
-     "values": [
-      3,
-      6
-     ]
-    }
+    "sims": [
+     "reversal"
+    ]
    },
    {
     "title": "Higher-order practice",
     "level": "school",
     "ideas": [
-     "Read the question twice and decide which idea it tests.",
-     "Write each step with a reason; check the answer in the original question.",
-     "These questions mix ideas from the whole chapter."
+     "Use the right form: $2k$, $2k+1$, $4k+2$, $mk+r$, $10a+b$.",
+     "Choose the quickest test, and use co-prime factors for larger divisors.",
+     "Check a claim with one counterexample before you try to prove it."
     ],
-    "formulas": [],
+    "formulas": [
+     "\\text{multiples of } 32 \\subset \\text{multiples of } 8 \\subset \\text{multiples of } 4"
+    ],
     "examples": [
      {
-      "question": "Show that $n^2-n$ is always even.",
+      "question": "Draw a Venn diagram for the multiples of $4$, $8$ and $32$.",
       "steps": [
-       "$n^2-n=n(n-1)$.",
-       "One of two consecutive integers is even."
+       "Every multiple of $32$ is a multiple of $8$, and every multiple of $8$ is a multiple of $4$.",
+       "So the circles sit one inside the other."
       ],
-      "result": "Always even.",
-      "type": "Higher order"
+      "result": "Three circles, one inside the other (see the picture)",
+      "type": "Solved example"
      },
      {
-      "question": "Find the smallest number that leaves remainder $1$ when divided by $2,3,4,5$ and $6$.",
+      "question": "Prove that the product of three consecutive numbers is divisible by $6$.",
       "steps": [
-       "LCM of $2,3,4,5,6$ is $60$.",
-       "Add $1$."
+       "At least one of them is even.",
+       "Exactly one of them is a multiple of $3$.",
+       "$2$ and $3$ have no common factor, so the product is divisible by $6$."
       ],
-      "result": "$61$",
-      "type": "Higher order"
+      "result": "Always divisible by $6$",
+      "type": "Solved example"
      },
      {
-      "question": "Show that a three-digit number minus its digit sum is a multiple of $9$.",
+      "question": "Show that the sum of five consecutive numbers is a multiple of $5$.",
       "steps": [
-       "$(100a+10b+c)-(a+b+c)=99a+9b$.",
-       "$=9(11a+b)$."
+       "$n+(n+1)+(n+2)+(n+3)+(n+4)=5n+10=5(n+2)$."
       ],
-      "result": "A multiple of $9$.",
-      "type": "Higher order"
+      "result": "Always a multiple of $5$ (five times the middle number)",
+      "type": "Solved example"
+     },
+     {
+      "question": "Find the greatest $4$-digit number with all digits different that is divisible by $9$.",
+      "steps": [
+       "Try from the top: $9876$ (digit sum $30$), $9875$ ($29$), $9874$ ($28$): no.",
+       "$9873$: digit sum $27$."
+      ],
+      "result": "$9873$",
+      "type": "Solved example"
+     },
+     {
+      "question": "How many numbers from $1$ to $100$ are divisible by both $4$ and $6$?",
+      "steps": [
+       "Divisible by both means divisible by $12$ (the LCM).",
+       "$100\\div12=8$ remainder $4$."
+      ],
+      "result": "$8$",
+      "type": "Solved example"
      }
-    ]
+    ],
+    "picture": {
+     "kind": "draw",
+     "h": 260,
+     "items": [
+      {
+       "t": "ellipse",
+       "c": [
+        320,
+        130
+       ],
+       "rx": 250,
+       "ry": 115,
+       "fill": "none"
+      },
+      {
+       "t": "ellipse",
+       "c": [
+        350,
+        140
+       ],
+       "rx": 160,
+       "ry": 80,
+       "fill": "blue"
+      },
+      {
+       "t": "ellipse",
+       "c": [
+        380,
+        150
+       ],
+       "rx": 70,
+       "ry": 40,
+       "fill": "gold"
+      },
+      {
+       "t": "text",
+       "p": [
+        175,
+        78
+       ],
+       "v": "multiples of 4",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        270,
+        105
+       ],
+       "v": "multiples of 8",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        380,
+        155
+       ],
+       "v": "multiples of 32",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        165,
+        172
+       ],
+       "v": "4, 12, 20 …",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        280,
+        175
+       ],
+       "v": "8, 16, 24 …",
+       "size": "s"
+      },
+      {
+       "t": "text",
+       "p": [
+        380,
+        175
+       ],
+       "v": "32, 64 …",
+       "size": "s"
+      }
+     ],
+     "caption": "Every multiple of 32 is a multiple of 8, and every multiple of 8 is a multiple of 4."
+    }
    }
   ],
   "links": [
    {
-    "href": "/cbse/grade-8/ch-5?paper=1",
-    "label": "Attempt the 30-mark chapter paper"
+    "href": "/cbse/grade-8/ch-5/free-mcq",
+    "label": "30-question MCQ test (₹30) →"
    },
    {
-    "href": "/cbse/grade-8",
-    "label": "Choose another chapter"
+    "href": "/cbse/grade-8/ch-5/worksheet",
+    "label": "Chapter worksheet with answers (₹15) →"
+   },
+   {
+    "href": "/cbse/grade-8/ch-5",
+    "label": "Practice papers →"
    }
   ]
  },

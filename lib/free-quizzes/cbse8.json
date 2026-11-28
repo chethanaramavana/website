@@ -1,0 +1,372 @@
+[
+ {
+  "chapter": 5,
+  "title": "Number Play",
+  "questions": [
+   {
+    "prompt": "The sum of two odd numbers is always",
+    "options": [
+     "a multiple of $4$",
+     "prime",
+     "even",
+     "odd"
+    ],
+    "answer": 2,
+    "solution": "$(2a+1)+(2b+1)=2(a+b+1)$.",
+    "topic": "Odd and even"
+   },
+   {
+    "prompt": "Which expression is even for every whole number $n$?",
+    "options": [
+     "$n+1$",
+     "$n(n+1)$",
+     "$3n$",
+     "$2n+1$"
+    ],
+    "answer": 1,
+    "solution": "One of two consecutive numbers is even.",
+    "topic": "Odd and even"
+   },
+   {
+    "prompt": "$5+6-7+8$ and every other choice of $+$ and $-$ signs in $5\\ \\_\\ 6\\ \\_\\ 7\\ \\_\\ 8$ gives",
+    "options": [
+     "an even number",
+     "zero",
+     "a multiple of $4$",
+     "an odd number"
+    ],
+    "answer": 0,
+    "solution": "$5+6+7+8=26$ is even, and changing a sign changes the value by an even amount.",
+    "topic": "Consecutive numbers"
+   },
+   {
+    "prompt": "An even number that is not a multiple of $4$ has the form",
+    "options": [
+     "$4k+2$",
+     "$4k$",
+     "$4k+1$",
+     "$2k+1$"
+    ],
+    "answer": 0,
+    "solution": "Even numbers are $4k$ or $4k+2$.",
+    "topic": "Pairs to make fours"
+   },
+   {
+    "prompt": "The remainder when $47$ is divided by $6$ is",
+    "options": [
+     "$1$",
+     "$7$",
+     "$4$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "$47=6\\times7+5$.",
+    "topic": "Remainders"
+   },
+   {
+    "prompt": "Numbers that leave remainder $3$ on division by $5$ have the form",
+    "options": [
+     "$8k$",
+     "$3k+5$",
+     "$5k+3$",
+     "$5k-3$"
+    ],
+    "answer": 2,
+    "solution": "Three more than a multiple of $5$.",
+    "topic": "Remainders"
+   },
+   {
+    "prompt": "Which number is divisible by $4$?",
+    "options": [
+     "$7{,}316$",
+     "$7{,}314$",
+     "$7{,}310$",
+     "$7{,}318$"
+    ],
+    "answer": 0,
+    "solution": "Only $16$ among $16, 14, 18, 10$ is a multiple of $4$.",
+    "topic": "Tests for 4 and 8"
+   },
+   {
+    "prompt": "To test divisibility by $8$, we look at the",
+    "options": [
+     "digit sum",
+     "last two digits",
+     "last digit",
+     "last three digits"
+    ],
+    "answer": 3,
+    "solution": "$1000$ is a multiple of $8$.",
+    "topic": "Tests for 4 and 8"
+   },
+   {
+    "prompt": "The remainder when $52{,}814$ is divided by $9$ is",
+    "options": [
+     "$5$",
+     "$4$",
+     "$0$",
+     "$2$"
+    ],
+    "answer": 3,
+    "solution": "Digit sum $20=18+2$.",
+    "topic": "Test for 9"
+   },
+   {
+    "prompt": "The digit $x$ for which $6x45$ is divisible by $9$ is",
+    "options": [
+     "$6$",
+     "$3$",
+     "$9$",
+     "$0$"
+    ],
+    "answer": 1,
+    "solution": "$15+x=18$.",
+    "topic": "Test for 9"
+   },
+   {
+    "prompt": "Which number is divisible by $11$?",
+    "options": [
+     "$5{,}037$",
+     "$5{,}137$",
+     "$5{,}237$",
+     "$5{,}147$"
+    ],
+    "answer": 1,
+    "solution": "$5137$: $(7+1)-(3+5)=0$.",
+    "topic": "Test for 11"
+   },
+   {
+    "prompt": "A number is divisible by $24$ when it is divisible by",
+    "options": [
+     "$4$ and $6$",
+     "$3$ and $8$",
+     "$2$ and $3$",
+     "$2$ and $12$"
+    ],
+    "answer": 1,
+    "solution": "Use co-prime factors: $3\\times8$.",
+    "topic": "Combining tests"
+   },
+   {
+    "prompt": "The digital root of $98{,}765$ is",
+    "options": [
+     "$5$",
+     "$35$",
+     "$9$",
+     "$8$"
+    ],
+    "answer": 3,
+    "solution": "$35\\to8$.",
+    "topic": "Digital roots"
+   },
+   {
+    "prompt": "$(10a+b)-(10b+a)$ equals",
+    "options": [
+     "$9(a-b)$",
+     "$a-b$",
+     "$11(a-b)$",
+     "$9(a+b)$"
+    ],
+    "answer": 0,
+    "solution": "$9a-9b$.",
+    "topic": "Digit reversal"
+   },
+   {
+    "prompt": "A two-digit number plus its reversal is always a multiple of",
+    "options": [
+     "$11$",
+     "$10$",
+     "$4$",
+     "$9$"
+    ],
+    "answer": 0,
+    "solution": "$11(a+b)$.",
+    "topic": "Digit reversal"
+   },
+   {
+    "prompt": "In $A+A+A=BA$ (different digits), $A$ is",
+    "options": [
+     "$5$",
+     "$3$",
+     "$9$",
+     "$1$"
+    ],
+    "answer": 0,
+    "solution": "$2A=10B$ gives $A=5$, $B=1$.",
+    "topic": "Letter puzzles"
+   },
+   {
+    "prompt": "Which claim is only sometimes true?",
+    "options": [
+     "The sum of two multiples of $7$ is a multiple of $7$.",
+     "A multiple of $4$ is a multiple of $8$.",
+     "A multiple of $8$ is a multiple of $4$.",
+     "An odd number plus $1$ is odd."
+    ],
+    "answer": 1,
+    "solution": "$16$ is a multiple of $8$, $12$ is not.",
+    "topic": "HOTS · Always, sometimes, never"
+   },
+   {
+    "prompt": "$a$ leaves remainder $3$ and $b$ leaves remainder $4$ on division by $7$. The remainder of $ab$ is",
+    "options": [
+     "$12$",
+     "$1$",
+     "$0$",
+     "$5$"
+    ],
+    "answer": 3,
+    "solution": "$3\\times4=12=7+5$.",
+    "topic": "HOTS · Remainders"
+   },
+   {
+    "prompt": "Today is Wednesday. The day $100$ days from today is",
+    "options": [
+     "Friday",
+     "Wednesday",
+     "Saturday",
+     "Thursday"
+    ],
+    "answer": 0,
+    "solution": "$100=7\\times14+2$.",
+    "topic": "HOTS · Remainders"
+   },
+   {
+    "prompt": "The sum of four consecutive numbers is",
+    "options": [
+     "always odd",
+     "sometimes odd",
+     "never a multiple of $4$",
+     "always a multiple of $4$"
+    ],
+    "answer": 2,
+    "solution": "$4n+6=4(n+1)+2$.",
+    "topic": "HOTS · Pairs to make fours"
+   },
+   {
+    "prompt": "The smallest multiple of $9$ with no odd digits is",
+    "options": [
+     "$198$",
+     "$468$",
+     "$18$",
+     "$288$"
+    ],
+    "answer": 3,
+    "solution": "Even digits give an even digit sum: at least $18$; two digits give at most $16$.",
+    "topic": "HOTS · Test for 9"
+   },
+   {
+    "prompt": "The multiple of $9$ nearest to $6000$ is",
+    "options": [
+     "$5999$",
+     "$6003$",
+     "$5994$",
+     "$6009$"
+    ],
+    "answer": 1,
+    "solution": "$6000$ leaves remainder $6$, so $6003$ is $3$ away.",
+    "topic": "HOTS · Test for 9"
+   },
+   {
+    "prompt": "Which number is divisible by both $4$ and $6$ but NOT by $24$?",
+    "options": [
+     "$48$",
+     "$96$",
+     "$72$",
+     "$36$"
+    ],
+    "answer": 3,
+    "solution": "$36$ is a multiple of $12$, but $36\\div24$ is not whole.",
+    "topic": "HOTS · Combining tests"
+   },
+   {
+    "prompt": "The digital root of $9a+36b+13$ for whole numbers $a, b$ is",
+    "options": [
+     "$13$",
+     "it depends on $a$ and $b$",
+     "$9$",
+     "$4$"
+    ],
+    "answer": 3,
+    "solution": "$9a+36b$ is a multiple of $9$, and $13\\to4$.",
+    "topic": "HOTS · Digital roots"
+   },
+   {
+    "prompt": "A three-digit number minus its reversal is $396$. The first digit minus the last digit is",
+    "options": [
+     "$44$",
+     "$4$",
+     "$6$",
+     "$396$"
+    ],
+    "answer": 1,
+    "solution": "$99(a-c)=396$.",
+    "topic": "HOTS · Digit reversal"
+   },
+   {
+    "prompt": "The square of every odd number leaves remainder",
+    "options": [
+     "$0$ on division by $4$",
+     "$2$ on division by $4$",
+     "$1$ on division by $8$",
+     "$3$ on division by $8$"
+    ],
+    "answer": 2,
+    "solution": "$(2k+1)^2=4k(k+1)+1$, and $k(k+1)$ is even.",
+    "topic": "HOTS · Higher-order"
+   },
+   {
+    "prompt": "Assertion (A): The product of two even numbers is a multiple of $4$.\nReason (R): $(2a)(2b)=4ab$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R proves A.",
+    "topic": "Pairs to make fours",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $12$ is divisible by $4$ and by $6$, so it is divisible by $24$.\nReason (R): To test for $24$ we must use two co-prime factors such as $3$ and $8$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 3,
+    "solution": "A is false: $12<24$. R is true.",
+    "topic": "Combining tests",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $abc+bca+cab$ is always a multiple of $37$.\nReason (R): $abc+bca+cab=111(a+b+c)$ and $111=3\\times37$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 0,
+    "solution": "R explains A.",
+    "topic": "Digit reversal",
+    "assertion": true
+   },
+   {
+    "prompt": "Assertion (A): $8{,}712$ is divisible by $9$.\nReason (R): Every even number has the form $4k$ or $4k+2$.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A.",
+     "Both A and R are true, but R is not the correct explanation of A.",
+     "A is true, but R is false.",
+     "A is false, but R is true."
+    ],
+    "answer": 1,
+    "solution": "Both are true (digit sum of $8712$ is $18$), but R is about even numbers and does not explain A.",
+    "topic": "Test for 9",
+    "assertion": true
+   }
+  ]
+ }
+]

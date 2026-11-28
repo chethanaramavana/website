@@ -2,6 +2,7 @@ import icse7Notes from '@/lib/icse7-notes.json';
 import g6ReaderNotes from '@/lib/g6-reader-notes.json';
 import { icse6Notes } from '@/lib/icse6-notes';
 import { icseUpperNotes } from '@/lib/icse-upper-papers';
+import cbse89Notes from '@/lib/cbse89-notes.json';
 import GoogleSignIn from './google-sign-in';
 import LearningHeader from './learning-header';
 import { SiteFooter } from './brand';
@@ -21,7 +22,8 @@ export default async function FreeQuizPage({chapter,grade=10,board='CBSE'}:{chap
   const g6Slug = board === 'CBSE' && grade === 6 ? Object.values(g6ReaderNotes as Record<string, { slug: string; number: number }>).find((n) => n.number === chapter)?.slug : undefined;
   const icse6Slug = board === 'ICSE' && grade === 6 ? icse6Notes.find((n) => n.number === chapter)?.slug : undefined;
   const g7Slug = board === 'CBSE' && grade === 7 ? icseUpperNotes.find((n) => n.board === 'CBSE' && n.grade === 7 && n.number === chapter)?.slug : undefined;
-  const notesHref = notesSlug ? `/notes/${notesSlug}` : g6Slug ? `/notes/${g6Slug}` : icse6Slug ? `/notes/${icse6Slug}` : g7Slug ? `/notes/${g7Slug}` : undefined;
+  const g8Slug = board === 'CBSE' && grade === 8 ? Object.keys(cbse89Notes).find((k) => (cbse89Notes as Record<string, {back: {href: string}}>)[k].back.href === `/cbse/grade-8/ch-${chapter}`) : undefined;
+  const notesHref = g8Slug ? `/notes/${g8Slug}` : notesSlug ? `/notes/${notesSlug}` : g6Slug ? `/notes/${g6Slug}` : icse6Slug ? `/notes/${icse6Slug}` : g7Slug ? `/notes/${g7Slug}` : undefined;
   const user = await getGoogleUser();
   let allowed=false,failed=false;
   if(user) {try {allowed=await hasMcqAccess(user,chapter,grade,board);}catch {failed=true;}}

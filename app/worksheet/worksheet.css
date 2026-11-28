@@ -1,0 +1,25 @@
+.wsp { max-width: 880px; margin: 0 auto; padding: 24px 16px 64px; color: #011e47; }
+.wsp-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; font: 600 14px system-ui, sans-serif; }
+.wsp-nav a { padding: 8px 14px; border: 1px solid #011e47; border-radius: 999px; color: #011e47; text-decoration: none; background: #fff; }
+.wsp-sheet { background: #fff; border: 1px solid #dce2e9; border-radius: 12px; padding: 26px 28px; font-size: 16px; line-height: 1.55; }
+.wsp-head { border-bottom: 3px solid #d9a231; padding-bottom: 10px; }
+.wsp-head h1 { margin: 0; font-size: 1.7rem; }
+.wsp-head p { margin: 4px 0 0; color: #4e5b70; font-size: 14px; }
+.wsp-note { font-size: 14px; background: #fbf4e3; border-left: 4px solid #d9a231; padding: 8px 12px; margin: 14px 0; }
+.wsp-section { background: #011e47; color: #fff; font: 700 15px system-ui, sans-serif; padding: 7px 12px; margin: 26px 0 6px; border-radius: 6px; }
+.wsp-section-note { font-size: 14px; color: #4e5b70; margin: 0 0 8px; }
+.wsp-q { border-bottom: 1px dashed #c9d1dc; padding: 14px 0; }
+.wsp-q > p { margin: 0 0 6px; }
+.wsp-q ol { margin: 6px 0; padding-left: 22px; list-style: none; }
+.wsp-q .story-picture { margin: 10px 0; }
+.wsp-q details { margin-top: 8px; background: #f2f8f3; border-left: 4px solid #2b8a45; border-radius: 6px; padding: 6px 12px; }
+.wsp-q summary { cursor: pointer; font-weight: 700; color: #2b8a45; }
+.wsp-lock { margin-top: 22px; padding: 18px; border: 2px solid #d9a231; border-radius: 12px; background: #fffaf0; }
+.wsp-lock h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.wsp-lock ul { margin: 6px 0 12px; }
+.wsp-lock button, .ws-puzzle-actions button { border: 2px solid #011e47; background: #011e47; color: #fff; border-radius: 999px; padding: 8px 16px; font-weight: 700; cursor: pointer; margin: 4px 8px 4px 0; }
+.wsp-lock button.fq-secondary, .ws-puzzle-actions button + button { background: #fff; color: #011e47; }
+.ws-puzzle svg { display: block; width: 100%; max-width: 520px; height: auto; margin: 8px auto; background: #fbfcfe; border-radius: 10px; }
+.ws-puzzle-actions { text-align: center; }
+.ws-puzzle-result { text-align: center; font-weight: 700; color: #6a45c4; }
+@media print { .wsp-nav, .wsp-lock, .ws-puzzle-actions { display: none; } .wsp-q details { display: block; } }

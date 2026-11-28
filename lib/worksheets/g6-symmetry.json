@@ -1,0 +1,3790 @@
+{
+ "id": "worksheet-g6-symmetry",
+ "slug": "g6-symmetry",
+ "title": "Symmetry",
+ "grade": 6,
+ "board": "CBSE",
+ "chapterPath": "/cbse/grade-6/ch-9",
+ "notesPath": "/notes/g6-symmetry",
+ "amount": 1500,
+ "freeCount": 3,
+ "sections": [
+  {
+   "title": "Section A · Textbook-style questions",
+   "note": "Short questions like the exercises in the NCERT textbook.",
+   "questions": [
+    {
+     "text": "Look at the capital letters $A, B, C, D, E, H, K, M, T, U, V, W, X, Y$. (a) Which have a standing (vertical) line of symmetry? (b) Which have a sleeping (horizontal) line of symmetry? (c) Which have both?",
+     "answer": "(a) $A, H, M, T, U, V, W, X, Y$ (b) $B, C, D, E, H, K, X$ (c) $H$ and $X$",
+     "n": 1
+    },
+    {
+     "text": "Copy each figure and draw all its lines of symmetry. How many lines does each figure have?",
+     "answer": "(a) $3$ (b) $2$ (c) $6$ (d) $1$",
+     "picture": {
+      "kind": "draw",
+      "h": 230,
+      "items": [
+       {
+        "t": "poly",
+        "pts": [
+         [
+          90.0,
+          35.0
+         ],
+         [
+          29.4,
+          140.0
+         ],
+         [
+          150.6,
+          140.0
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "text",
+        "p": [
+         90,
+         205
+        ],
+        "v": "(a) equilateral triangle",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          175,
+          60
+         ],
+         [
+          305,
+          60
+         ],
+         [
+          305,
+          150
+         ],
+         [
+          175,
+          150
+         ]
+        ],
+        "fill": "green"
+       },
+       {
+        "t": "text",
+        "p": [
+         240,
+         205
+        ],
+        "v": "(b) rectangle",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          470.0,
+          105.0
+         ],
+         [
+          435.0,
+          44.4
+         ],
+         [
+          365.0,
+          44.4
+         ],
+         [
+          330.0,
+          105.0
+         ],
+         [
+          365.0,
+          165.6
+         ],
+         [
+          435.0,
+          165.6
+         ]
+        ],
+        "fill": "purple"
+       },
+       {
+        "t": "text",
+        "p": [
+         400,
+         205
+        ],
+        "v": "(c) regular hexagon",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          555,
+          35
+         ],
+         [
+          605,
+          170
+         ],
+         [
+          505,
+          170
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "text",
+        "p": [
+         555,
+         205
+        ],
+        "v": "(d) isosceles triangle",
+        "size": "s"
+       }
+      ],
+      "caption": "Draw all the lines of symmetry of each figure."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 230,
+      "items": [
+       {
+        "t": "poly",
+        "pts": [
+         [
+          90.0,
+          35.0
+         ],
+         [
+          29.4,
+          140.0
+         ],
+         [
+          150.6,
+          140.0
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "text",
+        "p": [
+         90,
+         205
+        ],
+        "v": "(a) equilateral triangle",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          175,
+          60
+         ],
+         [
+          305,
+          60
+         ],
+         [
+          305,
+          150
+         ],
+         [
+          175,
+          150
+         ]
+        ],
+        "fill": "green"
+       },
+       {
+        "t": "text",
+        "p": [
+         240,
+         205
+        ],
+        "v": "(b) rectangle",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          470.0,
+          105.0
+         ],
+         [
+          435.0,
+          44.4
+         ],
+         [
+          365.0,
+          44.4
+         ],
+         [
+          330.0,
+          105.0
+         ],
+         [
+          365.0,
+          165.6
+         ],
+         [
+          435.0,
+          165.6
+         ]
+        ],
+        "fill": "purple"
+       },
+       {
+        "t": "text",
+        "p": [
+         400,
+         205
+        ],
+        "v": "(c) regular hexagon",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          555,
+          35
+         ],
+         [
+          605,
+          170
+         ],
+         [
+          505,
+          170
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "text",
+        "p": [
+         555,
+         205
+        ],
+        "v": "(d) isosceles triangle",
+        "size": "s"
+       },
+       {
+        "t": "line",
+        "p": [
+         90.0,
+         19.25,
+         90.0,
+         155.75
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         15.764999999999999,
+         147.875,
+         133.935,
+         79.625
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         164.23499999999999,
+         147.875,
+         46.065000000000005,
+         79.625
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         240,
+         45,
+         240,
+         165
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         160,
+         105,
+         320,
+         105
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         470.0,
+         105.0,
+         330.0,
+         105.0
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         435.0,
+         44.4,
+         365.0,
+         165.6
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         365.0,
+         44.4,
+         435.0,
+         165.6
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         452.5,
+         74.7,
+         347.5,
+         135.3
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         400.0,
+         44.4,
+         400.0,
+         165.6
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         347.5,
+         74.7,
+         452.5,
+         135.3
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         555,
+         25,
+         555,
+         180
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Red lines: the lines of symmetry."
+     },
+     "n": 2
+    },
+    {
+     "text": "Give one example of a figure with: (a) no line of symmetry (b) exactly one line (c) exactly two lines (d) infinitely many lines.",
+     "answer": "(a) a parallelogram or a triangle with three different sides (b) an isosceles triangle or a kite (c) a rectangle or a rhombus (d) a circle",
+     "n": 3
+    },
+    {
+     "text": "Find the angle and the order of rotational symmetry of: (a) a square (b) an equilateral triangle (c) a regular pentagon (d) the letter $Z$.",
+     "answer": "(a) $90^\\circ$, order $4$ (b) $120^\\circ$, order $3$ (c) $72^\\circ$, order $5$ (d) $180^\\circ$, order $2$",
+     "n": 4
+    },
+    {
+     "text": "A figure looks the same after every turn of $45^\\circ$. What is its order of rotational symmetry?",
+     "answer": "Order $= 360^\\circ \\div 45^\\circ = 8$",
+     "n": 5
+    },
+    {
+     "text": "True or false? (a) Every diameter of a circle is a line of symmetry. (b) The diagonals of a rectangle are lines of symmetry. (c) A parallelogram has rotational symmetry. (d) A figure of order $1$ has rotational symmetry.",
+     "answer": "(a) True (b) False: only the lines through the mid-points of opposite sides work (c) True: order $2$ (d) False: order $1$ means it fits only after a full turn",
+     "n": 6
+    },
+    {
+     "text": "Copy and complete the table: number of lines of symmetry and order of rotational symmetry of a square, rectangle, rhombus, parallelogram, kite and isosceles trapezium.",
+     "answer": "Square $4$, order $4$; rectangle $2$, order $2$; rhombus $2$, order $2$; parallelogram $0$, order $2$; kite $1$, order $1$; isosceles trapezium $1$, order $1$",
+     "answerPicture": {
+      "kind": "table",
+      "head": true,
+      "rows": [
+       [
+        "Shape",
+        "Lines",
+        "Order"
+       ],
+       [
+        "Square",
+        "4",
+        "4"
+       ],
+       [
+        "Rectangle",
+        "2",
+        "2"
+       ],
+       [
+        "Rhombus",
+        "2",
+        "2"
+       ],
+       [
+        "Parallelogram",
+        "0",
+        "2"
+       ],
+       [
+        "Kite",
+        "1",
+        "1"
+       ],
+       [
+        "Isosceles trapezium",
+        "1",
+        "1"
+       ]
+      ],
+      "caption": "Order 1 means no rotational symmetry."
+     },
+     "n": 7
+    },
+    {
+     "text": "In a seven-segment display (as on a calculator), which digits $0$–$9$ have a sleeping (horizontal) line of symmetry?",
+     "answer": "The digits $0, 1, 3$ and $8$. The top half of each one is a mirror image of the bottom half.",
+     "n": 8
+    }
+   ]
+  },
+  {
+   "title": "Section B · Complete the figure",
+   "note": "The red line is a line of symmetry. Draw the other half on squared paper. Questions 13–16 are interactive.",
+   "questions": [
+    {
+     "text": "The red line is a line of symmetry. Copy the figure on squared paper and complete the other half.",
+     "answer": "Reflect each corner: a corner $k$ squares left of the mirror goes $k$ squares to the right, at the same height. The result is a house shape.",
+     "picture": {
+      "kind": "draw",
+      "h": 364,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         20,
+         104.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         140.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         500.0,
+         20,
+         500.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         536.0,
+         20,
+         536.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         20,
+         536.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         56,
+         536.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         92,
+         536.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         128,
+         536.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         164,
+         536.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         200,
+         536.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         236,
+         536.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         272,
+         536.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         308,
+         536.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         344,
+         536.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          176.0,
+          164
+         ],
+         [
+          212.0,
+          164
+         ],
+         [
+          212.0,
+          308
+         ],
+         [
+          320.0,
+          308
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         344
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Standing mirror line."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 364,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         20,
+         104.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         140.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         500.0,
+         20,
+         500.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         536.0,
+         20,
+         536.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         20,
+         536.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         56,
+         536.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         92,
+         536.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         128,
+         536.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         164,
+         536.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         200,
+         536.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         236,
+         536.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         272,
+         536.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         308,
+         536.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         104.0,
+         344,
+         536.0,
+         344
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          176.0,
+          164
+         ],
+         [
+          212.0,
+          164
+         ],
+         [
+          212.0,
+          308
+         ],
+         [
+          320.0,
+          308
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          464.0,
+          164
+         ],
+         [
+          428.0,
+          164
+         ],
+         [
+          428.0,
+          308
+         ],
+         [
+          320.0,
+          308
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         344
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Blue: given half. Orange: the reflected half."
+     },
+     "n": 9
+    },
+    {
+     "text": "The red line is a line of symmetry. Complete the figure below the line.",
+     "answer": "Each corner goes to the same distance below the line. The completed figure is a fish shape.",
+     "picture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         140.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         500.0,
+         20,
+         500.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         500.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         56,
+         500.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         92,
+         500.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         128,
+         500.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         164,
+         500.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         200,
+         500.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         236,
+         500.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         272,
+         500.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         308,
+         500.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          176.0,
+          164
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          356.0,
+          92
+         ],
+         [
+          428.0,
+          56
+         ],
+         [
+          464.0,
+          164
+         ]
+        ],
+        "fill": "teal"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         164,
+         500.0,
+         164
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Sleeping mirror line."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         140.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         500.0,
+         20,
+         500.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         20,
+         500.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         56,
+         500.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         92,
+         500.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         128,
+         500.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         164,
+         500.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         200,
+         500.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         236,
+         500.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         272,
+         500.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         308,
+         500.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          176.0,
+          164
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          356.0,
+          92
+         ],
+         [
+          428.0,
+          56
+         ],
+         [
+          464.0,
+          164
+         ]
+        ],
+        "fill": "teal"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          176.0,
+          164
+         ],
+         [
+          248.0,
+          272
+         ],
+         [
+          356.0,
+          236
+         ],
+         [
+          428.0,
+          272
+         ],
+         [
+          464.0,
+          164
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         140.0,
+         164,
+         500.0,
+         164
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Orange: the reflected half."
+     },
+     "n": 10
+    },
+    {
+     "text": "The red slanting line is a line of symmetry. Complete the figure on the other side of the line.",
+     "answer": "For a slanting mirror through opposite corners of the squares, the image of the corner $(x, y)$ is $(y, x)$: count the squares across and down, and swap them.",
+     "picture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         56,
+         464.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         92,
+         464.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         128,
+         464.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         200,
+         464.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         236,
+         464.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         272,
+         464.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         308,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          212.0,
+          20
+         ],
+         [
+          392.0,
+          20
+         ],
+         [
+          392.0,
+          92
+         ],
+         [
+          284.0,
+          92
+         ]
+        ],
+        "fill": "pink"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Slanting mirror line."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         56,
+         464.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         92,
+         464.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         128,
+         464.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         200,
+         464.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         236,
+         464.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         272,
+         464.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         308,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          212.0,
+          20
+         ],
+         [
+          392.0,
+          20
+         ],
+         [
+          392.0,
+          92
+         ],
+         [
+          284.0,
+          92
+         ]
+        ],
+        "fill": "pink"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          176.0,
+          56
+         ],
+         [
+          176.0,
+          236
+         ],
+         [
+          248.0,
+          236
+         ],
+         [
+          248.0,
+          128
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Orange: the reflected part."
+     },
+     "n": 11
+    },
+    {
+     "text": "Both red lines are lines of symmetry. One quarter of the figure is given. Complete the whole figure.",
+     "answer": "Reflect the quarter in the standing line, then reflect both parts in the sleeping line. The full figure has $2$ lines of symmetry and rotational symmetry of order $2$.",
+     "picture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         56,
+         464.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         92,
+         464.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         128,
+         464.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         200,
+         464.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         236,
+         464.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         272,
+         464.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         308,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          212.0,
+          92
+         ],
+         [
+          212.0,
+          164
+         ],
+         [
+          320.0,
+          164
+         ]
+        ],
+        "fill": "purple"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Two mirror lines."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 328,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         176.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         464.0,
+         20,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         20,
+         464.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         56,
+         464.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         92,
+         464.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         128,
+         464.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         200,
+         464.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         236,
+         464.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         272,
+         464.0,
+         272
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         308,
+         464.0,
+         308
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          212.0,
+          92
+         ],
+         [
+          212.0,
+          164
+         ],
+         [
+          320.0,
+          164
+         ]
+        ],
+        "fill": "purple"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          56
+         ],
+         [
+          392.0,
+          56
+         ],
+         [
+          428.0,
+          92
+         ],
+         [
+          428.0,
+          164
+         ],
+         [
+          320.0,
+          164
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          272
+         ],
+         [
+          248.0,
+          272
+         ],
+         [
+          212.0,
+          236
+         ],
+         [
+          212.0,
+          164
+         ],
+         [
+          320.0,
+          164
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          272
+         ],
+         [
+          392.0,
+          272
+         ],
+         [
+          428.0,
+          236
+         ],
+         [
+          428.0,
+          164
+         ],
+         [
+          320.0,
+          164
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         308
+        ],
+        "s": "red"
+       },
+       {
+        "t": "line",
+        "p": [
+         176.0,
+         164,
+         464.0,
+         164
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "The completed figure."
+     },
+     "n": 12
+    },
+    {
+     "text": "Interactive: colour the squares on the right of the mirror to complete the picture. Press \"Check\".",
+     "answer": "The right half is the mirror image of the left half: each coloured square has a partner at the same height and the same distance from the mirror.",
+     "puzzle": {
+      "n": 8,
+      "mirror": "v",
+      "given": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        6,
+        3
+       ]
+      ]
+     },
+     "n": 13
+    },
+    {
+     "text": "Interactive: colour the squares below the mirror to complete the picture. Press \"Check\".",
+     "answer": "Each square above the line has a partner at the same distance below it.",
+     "puzzle": {
+      "n": 8,
+      "mirror": "h",
+      "given": [
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        7
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        7
+       ]
+      ]
+     },
+     "n": 14
+    },
+    {
+     "text": "Interactive: complete the picture in the slanting mirror. Press \"Check\".",
+     "answer": "The square in row $r$, column $c$ goes to row $c$, column $r$.",
+     "puzzle": {
+      "n": 8,
+      "mirror": "d",
+      "given": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ]
+      ]
+     },
+     "n": 15
+    },
+    {
+     "text": "Interactive: there are two mirrors. Complete all four quarters. Press \"Check\".",
+     "answer": "Reflect the quarter in the standing mirror and then reflect both parts in the sleeping mirror. Each square has $3$ partners.",
+     "puzzle": {
+      "n": 8,
+      "mirror": "vh",
+      "given": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ]
+     },
+     "n": 16
+    }
+   ]
+  },
+  {
+   "title": "Section C · Rotational symmetry",
+   "note": "Turn the figure in your mind, or trace it and turn the tracing.",
+   "questions": [
+    {
+     "text": "Find the angle and the order of rotational symmetry of each figure.",
+     "answer": "(a) $90^\\circ$, order $4$ (b) $120^\\circ$, order $3$. Neither figure has a line of symmetry, because each blade leans to one side.",
+     "picture": {
+      "kind": "draw",
+      "h": 230,
+      "items": [
+       {
+        "t": "poly",
+        "pts": [
+         [
+          160,
+          115
+         ],
+         [
+          250.0,
+          115.0
+         ],
+         [
+          204.2,
+          84.0
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          160,
+          115
+         ],
+         [
+          160.0,
+          25.0
+         ],
+         [
+          129.0,
+          70.8
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          160,
+          115
+         ],
+         [
+          70.0,
+          115.0
+         ],
+         [
+          115.8,
+          146.0
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          160,
+          115
+         ],
+         [
+          160.0,
+          205.0
+         ],
+         [
+          191.0,
+          159.2
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "dot",
+        "p": [
+         160,
+         115
+        ]
+       },
+       {
+        "t": "text",
+        "p": [
+         160,
+         222
+        ],
+        "v": "(a) windmill",
+        "size": "s"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          470,
+          115
+         ],
+         [
+          470.0,
+          25.0
+         ],
+         [
+          439.0,
+          70.8
+         ]
+        ],
+        "fill": "green"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          470,
+          115
+         ],
+         [
+          392.1,
+          160.0
+         ],
+         [
+          447.2,
+          163.9
+         ]
+        ],
+        "fill": "green"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          470,
+          115
+         ],
+         [
+          547.9,
+          160.0
+         ],
+         [
+          523.8,
+          110.3
+         ]
+        ],
+        "fill": "green"
+       },
+       {
+        "t": "dot",
+        "p": [
+         470,
+         115
+        ]
+       },
+       {
+        "t": "text",
+        "p": [
+         470,
+         222
+        ],
+        "v": "(b) three-blade fan",
+        "size": "s"
+       }
+      ],
+      "caption": "Find the angle and order of rotational symmetry."
+     },
+     "n": 17
+    },
+    {
+     "text": "Draw a figure that has rotational symmetry of order $2$ but no line of symmetry.",
+     "answer": "A parallelogram that is not a rectangle or a rhombus, or the letters $S$, $N$ or $Z$.",
+     "n": 18
+    },
+    {
+     "text": "A rangoli looks the same after a turn of $60^\\circ$ but not after a turn of $30^\\circ$. Find its order. Will it look the same after $240^\\circ$?",
+     "answer": "Order $= 360^\\circ \\div 60^\\circ = 6$. Yes: $240^\\circ = 4 \\times 60^\\circ$.",
+     "n": 19
+    },
+    {
+     "text": "Which of these look the same after a quarter turn ($90^\\circ$): a square, a rectangle, a circle, the letter $H$, a plus sign $+$?",
+     "answer": "A square, a circle and a plus sign. A rectangle and $H$ need a half turn.",
+     "n": 20
+    }
+   ]
+  },
+  {
+   "title": "Section D · Higher-order thinking",
+   "note": "Think, try an example, then answer.",
+   "questions": [
+    {
+     "text": "Some squares are shaded. What is the smallest number of squares you must shade so that the red line becomes a line of symmetry?",
+     "answer": "The left half has $5$ shaded squares: $3$ in the top row and $2$ below the first square. Their mirror images are the last $3$ squares of the top row and $2$ squares below the last square. $2$ of the top-row images are already shaded. So shade the last square of the top row and the $2$ squares below it: $3$ squares.",
+     "picture": {
+      "kind": "draw",
+      "h": 256,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         428.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         56,
+         428.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         92,
+         428.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         128,
+         428.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         164,
+         428.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         200,
+         428.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         236,
+         428.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          212.0,
+          20
+         ],
+         [
+          320.0,
+          20
+         ],
+         [
+          320.0,
+          56
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          248.0,
+          128
+         ],
+         [
+          212.0,
+          128
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          20
+         ],
+         [
+          392.0,
+          20
+         ],
+         [
+          392.0,
+          56
+         ],
+         [
+          320.0,
+          56
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         236
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Add the fewest squares so that the red line is a line of symmetry."
+     },
+     "answerPicture": {
+      "kind": "draw",
+      "h": 256,
+      "items": [
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         212.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         248.0,
+         20,
+         248.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         284.0,
+         20,
+         284.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         356.0,
+         20,
+         356.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         392.0,
+         20,
+         392.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         428.0,
+         20,
+         428.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         20,
+         428.0,
+         20
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         56,
+         428.0,
+         56
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         92,
+         428.0,
+         92
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         128,
+         428.0,
+         128
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         164,
+         428.0,
+         164
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         200,
+         428.0,
+         200
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "line",
+        "p": [
+         212.0,
+         236,
+         428.0,
+         236
+        ],
+        "s": "guide"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          212.0,
+          20
+         ],
+         [
+          320.0,
+          20
+         ],
+         [
+          320.0,
+          56
+         ],
+         [
+          248.0,
+          56
+         ],
+         [
+          248.0,
+          128
+         ],
+         [
+          212.0,
+          128
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320.0,
+          20
+         ],
+         [
+          392.0,
+          20
+         ],
+         [
+          392.0,
+          56
+         ],
+         [
+          320.0,
+          56
+         ]
+        ],
+        "fill": "sky"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          392.0,
+          20
+         ],
+         [
+          428.0,
+          20
+         ],
+         [
+          428.0,
+          128
+         ],
+         [
+          392.0,
+          128
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         320.0,
+         20,
+         320.0,
+         236
+        ],
+        "s": "red"
+       }
+      ],
+      "caption": "Orange: the 3 new squares."
+     },
+     "n": 21
+    },
+    {
+     "text": "A figure has rotational symmetry of order $4$. Must it have $4$ lines of symmetry?",
+     "answer": "No. A windmill with $4$ blades that lean the same way has order $4$ but no line of symmetry. A square has both.",
+     "n": 22
+    },
+    {
+     "text": "Write a word of four or more capital letters that has a standing line of symmetry, and one that has a sleeping line of symmetry.",
+     "answer": "Standing: $TOOT$, $MOM$, $WOW$ (each letter has a standing line and the word reads the same both ways). Sleeping: $BOOK$, $DECK$, $CHECK$ (each letter has a sleeping line).",
+     "n": 23
+    },
+    {
+     "text": "An equilateral triangle is cut along one line of symmetry. Describe the two pieces. Can you join them in another way to make a new figure with a line of symmetry?",
+     "answer": "The two pieces are right-angled triangles that are mirror images of each other. Put their longest sides together to make a kite-like shape, or put their shortest sides together to make an isosceles triangle. Both new shapes have a line of symmetry.",
+     "n": 24
+    },
+    {
+     "text": "Raj says: \"If a figure has two lines of symmetry, it must also have rotational symmetry.\" Check this with a rectangle, a rhombus and a square. Is Raj right?",
+     "answer": "Yes. A rectangle and a rhombus have $2$ lines and order $2$. A square has $4$ lines and order $4$. A fold in one line and then a fold in the other line acts like a half turn.",
+     "n": 25
+    }
+   ]
+  },
+  {
+   "title": "Section E · Case studies",
+   "note": "Read the situation and answer each part.",
+   "questions": [
+    {
+     "text": "Case study: Meena makes a rangoli for Diwali with $8$ petals round a centre. The petals are red and yellow, one after the other.",
+     "answer": "(a) A turn of $45^\\circ$ moves a red petal to a yellow place, so it does not look the same. A turn of $90^\\circ$ does. Angle $90^\\circ$, order $4$. (b) Order $8$, angle $45^\\circ$. (c) $4$ lines: each line goes through the middles of two opposite petals of the same colour. (d) $8$ lines.",
+     "picture": {
+      "kind": "draw",
+      "h": 240,
+      "items": [
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          342.0,
+          72.5
+         ],
+         [
+          320.0,
+          25.0
+         ],
+         [
+          298.0,
+          72.5
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          302.0,
+          70.9
+         ],
+         [
+          252.8,
+          52.8
+         ],
+         [
+          270.9,
+          102.0
+         ]
+        ],
+        "fill": "yellow"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          272.5,
+          98.0
+         ],
+         [
+          225.0,
+          120.0
+         ],
+         [
+          272.5,
+          142.0
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          270.9,
+          138.0
+         ],
+         [
+          252.8,
+          187.2
+         ],
+         [
+          302.0,
+          169.1
+         ]
+        ],
+        "fill": "yellow"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          298.0,
+          167.5
+         ],
+         [
+          320.0,
+          215.0
+         ],
+         [
+          342.0,
+          167.5
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          338.0,
+          169.1
+         ],
+         [
+          387.2,
+          187.2
+         ],
+         [
+          369.1,
+          138.0
+         ]
+        ],
+        "fill": "yellow"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          367.5,
+          142.0
+         ],
+         [
+          415.0,
+          120.0
+         ],
+         [
+          367.5,
+          98.0
+         ]
+        ],
+        "fill": "coral"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          120
+         ],
+         [
+          369.1,
+          102.0
+         ],
+         [
+          387.2,
+          52.8
+         ],
+         [
+          338.0,
+          70.9
+         ]
+        ],
+        "fill": "yellow"
+       },
+       {
+        "t": "circle",
+        "c": [
+         320,
+         120
+        ],
+        "r": 18,
+        "fill": "sky"
+       }
+      ],
+      "caption": "A rangoli with 8 petals in two colours."
+     },
+     "parts": [
+      "(a) Find the angle and the order of rotational symmetry.",
+      "(b) Meena colours all the petals red. What are the new angle and order?",
+      "(c) How many lines of symmetry does the two-colour rangoli have?",
+      "(d) How many lines of symmetry does the all-red rangoli have?"
+     ],
+     "n": 26
+    },
+    {
+     "text": "Case study: Ravi makes a kite for Sankranti. It has two sticks: the long stick $AC$ and the cross stick $BD$. $AB = AD$ and $CB = CD$.",
+     "answer": "(a) $1$ line: the long stick $AC$. (b) No. Folding along $BD$ puts $A$ on a point inside, not on $C$. (c) Yes: the tail hangs from $C$, which is on the line $AC$, so the picture stays symmetric. (d) No. After a half turn, the short sides go to the bottom.",
+     "picture": {
+      "kind": "draw",
+      "h": 260,
+      "items": [
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          20
+         ],
+         [
+          400,
+          90
+         ],
+         [
+          320,
+          230
+         ],
+         [
+          240,
+          90
+         ]
+        ],
+        "fill": "orange"
+       },
+       {
+        "t": "line",
+        "p": [
+         320,
+         20,
+         320,
+         230
+        ],
+        "s": "gold"
+       },
+       {
+        "t": "line",
+        "p": [
+         240,
+         90,
+         400,
+         90
+        ],
+        "s": "gold"
+       },
+       {
+        "t": "poly",
+        "pts": [
+         [
+          320,
+          230
+         ],
+         [
+          305,
+          250
+         ],
+         [
+          335,
+          250
+         ]
+        ],
+        "fill": "pink"
+       },
+       {
+        "t": "text",
+        "p": [
+         320,
+         14
+        ],
+        "v": "A",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         412,
+         95
+        ],
+        "v": "B",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         320,
+         256
+        ],
+        "v": "C",
+        "size": "s"
+       },
+       {
+        "t": "text",
+        "p": [
+         228,
+         95
+        ],
+        "v": "D",
+        "size": "s"
+       }
+      ],
+      "caption": "A kite ABCD with its two sticks AC and BD."
+     },
+     "parts": [
+      "(a) How many lines of symmetry does the kite have? Name the line.",
+      "(b) Is the cross stick $BD$ a line of symmetry?",
+      "(c) Ravi ties a tail at $C$. Does the kite stay symmetric?",
+      "(d) Does the kite have rotational symmetry?"
+     ],
+     "n": 27
+    }
+   ]
+  },
+  {
+   "title": "Section F · Assertion and reason",
+   "note": "Decide whether each statement is true, and whether the reason explains the assertion.",
+   "questions": [
+    {
+     "text": "Assertion (A): A rectangle has $2$ lines of symmetry. Reason (R): The diagonals of a rectangle are its lines of symmetry. Choose: (i) both true, R explains A (ii) both true, R does not explain A (iii) A true, R false (iv) A false, R true.",
+     "answer": "(iii) A is true, but R is false. The lines of symmetry go through the mid-points of opposite sides, not along the diagonals.",
+     "n": 28
+    },
+    {
+     "text": "Assertion (A): A regular hexagon has rotational symmetry of order $6$. Reason (R): Its angle of symmetry is $60^\\circ$ and $360^\\circ \\div 60^\\circ = 6$. Choose (i), (ii), (iii) or (iv) as in the question above.",
+     "answer": "(i) Both are true, and R explains A.",
+     "n": 29
+    }
+   ]
+  }
+ ]
+}

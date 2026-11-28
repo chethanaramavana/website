@@ -6,6 +6,7 @@ import {getBasicsProduct} from '@/lib/basics-catalog';
 import { getIntegralsProduct } from '@/lib/integrals-products';
 import { getG12PracticeProduct } from '@/lib/g12-practice-catalog';
 import { quizPriceById } from '@/lib/free-quizzes/catalog';
+import { getWorksheetProduct } from '@/lib/worksheets/catalog';
 import { getPaperAssessment } from '@/lib/assessment';
 import { getRazorpayConfiguration, isRazorpayTestUser } from '@/lib/razorpay';
 import { getRequestUser, isAdmin, jsonError, sameOrigin } from '@/lib/server';
@@ -25,7 +26,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { paperId?: unknown };
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     const quizAmount = quizPriceById(paperId);
-    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && paperId !== JEE_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
+    if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && paperId !== JEE_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId) && !getWorksheetProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
     return Response.json({ ...await recoverPurchase(user.userId, paperId, config, true), paperId });
   } catch (error) {

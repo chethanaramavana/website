@@ -5,6 +5,7 @@ import { JEE_PACKAGE } from '@/lib/jee-package';
 
 import { Check, CreditCard, Loader2, ShieldCheck, X } from 'lucide-react';
 import { getBasicsProduct } from '@/lib/basics-catalog';
+import { getWorksheetProduct } from '@/lib/worksheets/catalog';
 import { paperDefinitionsById } from '@/lib/papers';
 import { teacherDate } from './teacher-date';
 
@@ -42,6 +43,7 @@ export default function PaymentRequests({
     const title =
       (payment.paper_id === GRADE10_PACKAGE.id ? GRADE10_PACKAGE.title : payment.paper_id === GRADE12_PACKAGE.id ? GRADE12_PACKAGE.title : payment.paper_id === JEE_PACKAGE.id ? JEE_PACKAGE.title : null) ??
       getBasicsProduct(payment.paper_id)?.title ??
+      (getWorksheetProduct(payment.paper_id) ? `Worksheet · Grade ${getWorksheetProduct(payment.paper_id)!.grade} · ${getWorksheetProduct(payment.paper_id)!.title}` : null) ??
       (paper
         ? `${paper.board ?? 'CBSE'} · Grade ${paper.grade ?? 10} · ${paper.chapter} · Paper ${paper.paperNumber}`
         : 'Chapter test');

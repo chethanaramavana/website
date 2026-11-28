@@ -2,7 +2,6 @@
 import {useState,type ReactNode} from 'react';
 import MathText from './math-text';
 import './explore-sims.css';
-import {FoldQuad, Diagonals, TurnQuad, MirrorGrid} from './symmetry-sims';
 
 const ink='#011e47',gold='#d9a231',cream='#f4e0ae',blue='#5b8fc7';
 const f2=(n:number)=>(Math.round(n*100)/100).toString().replace(/^-/,'−');
@@ -242,7 +241,7 @@ function Bisector(){
 /** Symmetry: turn a shape and look for rotational symmetry. */
 const SHAPES=[{name:'Square',order:4,pts:[[-90,-90],[90,-90],[90,90],[-90,90]]},{name:'Equilateral triangle',order:3,pts:[0,1,2].map(k=>[100*Math.cos((90+120*k)*Math.PI/180),-100*Math.sin((90+120*k)*Math.PI/180)])},
  {name:'Regular hexagon',order:6,pts:[0,1,2,3,4,5].map(k=>[100*Math.cos(60*k*Math.PI/180),-100*Math.sin(60*k*Math.PI/180)])},{name:'Rectangle',order:2,pts:[[-120,-60],[120,-60],[120,60],[-120,60]]},{name:'L-shape',order:1,pts:[[-70,-90],[-10,-90],[-10,30],[70,30],[70,90],[-70,90]]}];
-function RotateSim(){
+export function RotateSim(){
  const [i,setI]=useState(0),[t,setT]=useState(0);const sh=SHAPES[i],step=360/sh.order,same=t>0&&t<360&&t%step===0;
  const pts=sh.pts.map(p=>p.join(',')).join(' ');
  return <Box title="Turn a shape">
@@ -341,6 +340,6 @@ function InequalitySim(){
  </Box>;
 }
 
-const SIMS:Record<string,()=>ReactNode>={'g6-patterns':()=><OddSquare/>,'g6-lines-angles':()=><AngleMaker/>,'g6-number-play':()=><Kaprekar/>,'g6-data':()=><BarBuilder/>,'g6-prime-time':()=><Sieve/>,'g6-perimeter-area':()=><RectSim/>,'g6-fractions':()=><FractionCompare/>,'g6-constructions':()=><Bisector/>,'g6-symmetry':()=><><FoldQuad/><Diagonals/><TurnQuad/><MirrorGrid/><RotateSim/></>,'g6-integers':()=><IntegerWalk/>,'g11-limits-derivatives':()=><SecantTangent/>,'g11-conic-sections':()=><Conics/>,'g11-binomial-theorem':()=><Pascal/>,'g12-vector-algebra':()=><Vectors/>,'icse7-sets':()=><VennSim/>,'icse7-speed-distance-time':()=><MeetSim/>,'icse7-inequalities':()=><InequalitySim/>,'icse7-constructions':()=><Bisector/>};
+const SIMS:Record<string,()=>ReactNode>={'g6-patterns':()=><OddSquare/>,'g6-lines-angles':()=><AngleMaker/>,'g6-number-play':()=><Kaprekar/>,'g6-data':()=><BarBuilder/>,'g6-prime-time':()=><Sieve/>,'g6-perimeter-area':()=><RectSim/>,'g6-fractions':()=><FractionCompare/>,'g6-constructions':()=><Bisector/>,'g6-integers':()=><IntegerWalk/>,'g11-limits-derivatives':()=><SecantTangent/>,'g11-conic-sections':()=><Conics/>,'g11-binomial-theorem':()=><Pascal/>,'g12-vector-algebra':()=><Vectors/>,'icse7-sets':()=><VennSim/>,'icse7-speed-distance-time':()=><MeetSim/>,'icse7-inequalities':()=><InequalitySim/>,'icse7-constructions':()=><Bisector/>};
 export const hasExplore=(slug:string)=>slug in SIMS;
 export default function ExploreSims({slug}:{slug:string}){const S=SIMS[slug];if(!S)return null;return <div className="notes-explore"><h2>Explore with a simulation</h2><p>Move the sliders and watch the picture change.</p>{S()}</div>;}
