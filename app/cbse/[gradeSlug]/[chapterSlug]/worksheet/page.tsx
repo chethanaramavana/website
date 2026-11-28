@@ -18,7 +18,7 @@ async function find({ params }: Props) { const p = await params; const w = works
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const w = await find(props);
-  return { title: `${w.title} Worksheet — Grade ${w.grade} ${w.board} | Ramavana Mathematical Center`, description: `${w.board} Grade ${w.grade} ${w.title} worksheet: textbook-style questions, complete-the-figure questions, higher-order questions and case studies, with answers. ₹${w.amount / 100}.`, alternates: { canonical: worksheetPath(w) } };
+  return { title: `${w.title} Worksheet — Grade ${w.grade} ${w.board} | Ramavana Mathematical Center`, description: `${w.board} Grade ${w.grade} ${w.title} worksheet: textbook-style questions, complete-the-figure questions, higher-order questions and case studies, with answers. ${w.amount === 0 ? 'Free' : `₹${w.amount / 100}` }.`, alternates: { canonical: worksheetPath(w) } };
 }
 
 function Question({ q }: { q: WorksheetQuestion }) {
@@ -32,19 +32,19 @@ function Question({ q }: { q: WorksheetQuestion }) {
   </div>;
 }
 
-/** A ₹15 chapter worksheet. The first questions are free. The rest are sent to the browser only after payment. */
+/** Free worksheets are fully available; paid worksheets expose only their free preview until purchase. */
 export default async function WorksheetPage(props: Props) {
   const w = await find(props), user = await getGoogleUser();
-  let allowed = false, failed = false;
-  if (user) { try { allowed = await hasWorksheetAccess(user, w.id); } catch { failed = true; } }
+  let allowed = w.amount === 0, failed = false;
+  if (!allowed && user) { try { allowed = await hasWorksheetAccess(user, w.id); } catch { failed = true; } }
   const total = w.sections.reduce((n, s) => n + s.questions.length, 0);
   const visible = w.sections.map((s) => ({ ...s, questions: allowed ? s.questions : s.questions.filter((q) => q.n <= w.freeCount) })).filter((s) => s.questions.length);
   return <div className="free-quiz"><LearningHeader signedIn={!!user} />
     <main className="wsp">
       <nav className="wsp-nav"><a href={w.chapterPath}>← {w.title} chapter</a><a href={w.notesPath}>Chapter notes</a></nav>
       <article className="wsp-sheet">
-        <header className="wsp-head"><h1>{w.title} · Worksheet</h1><p>{w.board} Grade {w.grade} · {total} questions with answers · textbook-style, complete-the-figure, higher-order, case-study and assertion–reason questions</p></header>
-        <p className="wsp-note">Try each question in your notebook first. Then open "Answer" to check. Use squared paper for the complete-the-figure questions.</p>
+        <header className="wsp-head"><h1>{w.title} · Worksheet</h1><p>{w.board} Grade {w.grade} · {w.amount === 0 && <>Free · </>}{total} questions with answers · textbook-style, complete-the-figure, higher-order, case-study and assertion–reason questions</p></header>
+        <p className="wsp-note">Try each question in your notebook first. Then open "View solution" to check. Use squared paper for the complete-the-figure questions.</p>
         {visible.map((s) => <section key={s.title}><h2 className="wsp-section">{s.title}</h2><p className="wsp-section-note">{s.note}</p>{s.questions.map((q) => <Question key={q.n} q={q} />)}</section>)}
         {!allowed && <div className="wsp-lock">
           <h2>Unlock the full worksheet for ₹{w.amount / 100}</h2>

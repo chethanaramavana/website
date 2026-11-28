@@ -34,6 +34,7 @@ export async function POST(request: Request) {
     const studentName = typeof body.studentName === 'string' ? body.studentName.trim() : '';
     const paperId = typeof body.paperId === 'string' ? body.paperId.trim() : '';
     if (studentName.length < 2 || studentName.length > 80) return jsonError('Please enter the student name.', 400);
+    if (getWorksheetProduct(paperId)?.amount === 0) return jsonError('This worksheet is free. Open it without payment.', 400);
     const quizAmount = quizPriceById(paperId);
     if (paperId !== GRADE10_PACKAGE.id && paperId !== GRADE12_PACKAGE.id && paperId !== JEE_PACKAGE.id && !(quizAmount && quizAmount > 0) && !getPaperAssessment(paperId) && !getIntegralsProduct(paperId) && !getG12PracticeProduct(paperId) && !getBasicsProduct(paperId) && !getWorksheetProduct(paperId)) return jsonError('This question paper is unavailable.', 400);
 
