@@ -16,3 +16,4 @@
 .notes-explore .explore-why p{margin:6px 0}
 .notes-explore .explore-math{overflow-x:auto}
 @media print{.notes-explore{display:none}}
+.notes-explore .explore-box+.explore-box{margin-top:22px}
