@@ -1399,6 +1399,7 @@
      {
       "question": "Put $+$ or $-$ in each gap of $5\\ \\_\\ 6\\ \\_\\ 7\\ \\_\\ 8$. Show that the answer is always even.",
       "steps": [
+       "Each of the $3$ gaps has $2$ choices, so there are $2\\times2\\times2=8$ ways. The tree shows all of them: go from left to right and pick $+$ or $-$ at each gap.",
        "Start with all $+$ signs: $5+6+7+8=26$. This is even.",
        "Change one sign, for example $+7$ to $-7$: $5+6-7+8=12$. The answer went down by $26-12=14=2\\times7$.",
        "This is always true: changing $+x$ to $-x$ takes away $x$ two times, so the answer changes by $2x$.",
@@ -1408,7 +1409,497 @@
       "result": "Always even",
       "type": "Solved example",
       "think": "We cannot try all $8$ ways one by one and call it a proof. Look at what happens when one sign changes.",
-      "check": "Try $5-6-7+8=0$ and $5-6+7-8=-2$. Both are even."
+      "check": "Try $5-6-7+8=0$ and $5-6+7-8=-2$. Both are even.",
+      "picture": {
+       "kind": "draw",
+       "h": 430,
+       "items": [
+        {
+         "t": "line",
+         "p": [
+          50,
+          205.0,
+          140,
+          105.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          95.0,
+          147.0
+         ],
+         "v": "+6",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          50,
+          205.0,
+          140,
+          305.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          95.0,
+          273.0
+         ],
+         "v": "−6",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          160,
+          105.0,
+          250,
+          55.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          205.0,
+          72.0
+         ],
+         "v": "+7",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          160,
+          105.0,
+          250,
+          155.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          205.0,
+          148.0
+         ],
+         "v": "−7",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          160,
+          305.0,
+          250,
+          255.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          205.0,
+          272.0
+         ],
+         "v": "+7",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          160,
+          305.0,
+          250,
+          355.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          205.0,
+          348.0
+         ],
+         "v": "−7",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          55.0,
+          360,
+          30.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          34.5
+         ],
+         "v": "+8",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          55.0,
+          360,
+          80.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          85.5
+         ],
+         "v": "−8",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          155.0,
+          360,
+          130.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          134.5
+         ],
+         "v": "+8",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          155.0,
+          360,
+          180.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          185.5
+         ],
+         "v": "−8",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          255.0,
+          360,
+          230.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          234.5
+         ],
+         "v": "+8",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          255.0,
+          360,
+          280.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          285.5
+         ],
+         "v": "−8",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          355.0,
+          360,
+          330.0
+         ],
+         "s": "gold"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          334.5
+         ],
+         "v": "+8",
+         "size": "m",
+         "color": "green"
+        },
+        {
+         "t": "line",
+         "p": [
+          270,
+          355.0,
+          360,
+          380.0
+         ],
+         "s": "accent"
+        },
+        {
+         "t": "text",
+         "p": [
+          315.0,
+          385.5
+         ],
+         "v": "−8",
+         "size": "m",
+         "color": "coral"
+        },
+        {
+         "t": "dot",
+         "p": [
+          40,
+          205.0
+         ]
+        },
+        {
+         "t": "text",
+         "p": [
+          26,
+          210.0
+         ],
+         "v": "5",
+         "size": "m",
+         "anchor": "end"
+        },
+        {
+         "t": "dot",
+         "p": [
+          150,
+          105.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          150,
+          305.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          260,
+          55.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          260,
+          155.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          260,
+          255.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          260,
+          355.0
+         ]
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          30
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          35
+         ],
+         "v": "5 + 6 + 7 + 8 = 26  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          80
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          85
+         ],
+         "v": "5 + 6 + 7 − 8 = 10  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          130
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          135
+         ],
+         "v": "5 + 6 − 7 + 8 = 12  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          180
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          185
+         ],
+         "v": "5 + 6 − 7 − 8 = −4  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          230
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          235
+         ],
+         "v": "5 − 6 + 7 + 8 = 14  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          280
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          285
+         ],
+         "v": "5 − 6 + 7 − 8 = −2  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          330
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          335
+         ],
+         "v": "5 − 6 − 7 + 8 = 0  (even)",
+         "size": "s",
+         "anchor": "start"
+        },
+        {
+         "t": "dot",
+         "p": [
+          370,
+          380
+         ],
+         "gold": true
+        },
+        {
+         "t": "text",
+         "p": [
+          384,
+          385
+         ],
+         "v": "5 − 6 − 7 − 8 = −16  (even)",
+         "size": "s",
+         "anchor": "start"
+        }
+       ],
+       "caption": "Each gap has two choices, + or −, so there are 2 × 2 × 2 = 8 ways. All 8 answers are even."
+      }
      },
      {
       "question": "Which of these are even for every whole number $n$: $2n+4$, $3n$, $n(n+1)$, $n^2+n+1$, $4n-1$?",

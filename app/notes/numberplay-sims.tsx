@@ -27,18 +27,37 @@ export function ParityDots() {
   </Box>;
 }
 
-/** Put + or − between four consecutive numbers: the answer is always even. */
+/** Put + or − between four consecutive numbers: a tree of all 8 choices, with the chosen path lit up. */
 export function PlusMinus() {
   const [n, setN] = useState(5), [s, setS] = useState([1, 1, 1]);
   const nums = [n, n + 1, n + 2, n + 3], val = nums.slice(1).reduce((acc, x, i) => acc + (s[i] ? x : -x), nums[0]);
-  return <Box title="Plus or minus? The answer is always even">
+  const all = nums.reduce((a, b) => a + b, 0);
+  const xs = [34, 124, 214, 304], top = 26, gap = 44;
+  const combos = [0, 1, 2, 3, 4, 5, 6, 7].map((k) => [k >> 2 & 1, k >> 1 & 1, k & 1].map((b) => 1 - b));
+  const leafY = (k: number) => top + k * gap;
+  const yOf = (level: number, prefix: number[]) => { const ks = combos.map((c, k) => [c, k] as const).filter(([c]) => prefix.every((p, i) => c[i] === p)).map(([, k]) => leafY(k)); return ks.reduce((a, b) => a + b, 0) / ks.length; };
+  const onPath = (prefix: number[]) => prefix.every((p, i) => s[i] === p);
+  const edges: ReactNode[] = [], nodes: ReactNode[] = [];
+  const prefixes = (level: number): number[][] => level === 0 ? [[]] : prefixes(level - 1).flatMap((p) => [[...p, 1], [...p, 0]]);
+  for (let level = 0; level < 3; level++) for (const p of prefixes(level)) for (const sg of [1, 0]) {
+    const q = [...p, sg], lit = onPath(q), y0 = yOf(level, p), y1 = yOf(level + 1, q);
+    edges.push(<g key={q.join('')}><path d={`M${xs[level] + 8} ${y0}L${xs[level + 1] - 8} ${y1}`} stroke={lit ? (sg ? green : red) : '#cbd5e1'} strokeWidth={lit ? 4 : 2} />
+      <circle cx={xs[level + 1]} cy={y1} r="4" fill={lit ? ink : '#cbd5e1'} /><text x={(xs[level] + xs[level + 1]) / 2} y={(y0 + y1) / 2 + (sg ? -8 : 18)} textAnchor="middle" fontSize="14" fontWeight={lit ? 800 : 400} fill={lit ? (sg ? green : red) : '#94a3b8'}>{sg ? '+' : '−'}{nums[level + 1]}</text></g>);
+  }
+  combos.forEach((c, k) => { const v = c.reduce((acc, b, i) => acc + (b ? nums[i + 1] : -nums[i + 1]), nums[0]), lit = onPath(c);
+    nodes.push(<text key={'l' + k} x={xs[3] + 14} y={leafY(k) + 5} fontSize="14" fontWeight={lit ? 800 : 400} fill={lit ? ink : '#64748b'}>{nums[0]} {c.map((b, i) => `${b ? '+' : '−'} ${nums[i + 1]}`).join(' ')} = {String(v).replace('-', '−')}</text>); });
+  return <Box title="Plus or minus? Explore the tree">
     <Slide label="First number" value={n} min={1} max={40} onChange={setN} />
     <div className="explore-buttons">{[0, 1, 2].map((i) => <button key={i} type="button" aria-pressed={!!s[i]} onClick={() => setS(s.map((x, j) => j === i ? 1 - x : x))}>Gap {i + 1}: {s[i] ? '+' : '−'}</button>)}</div>
-    <svg className="explore-canvas" viewBox="0 0 600 110" role="img" aria-label="Expression with four consecutive numbers">
-      <text x="300" y="60" textAnchor="middle" fontSize="30" fontWeight="700" fill={ink}>{nums[0]} {s[0] ? '+' : '−'} {nums[1]} {s[1] ? '+' : '−'} {nums[2]} {s[2] ? '+' : '−'} {nums[3]} = <tspan fill={green}>{String(val).replace('-', '−')}</tspan></text>
-      <text x="300" y="95" textAnchor="middle" fontSize="16" fill={ink}>{val % 2 === 0 ? 'even' : 'odd'}</text>
+    <svg className="explore-canvas" viewBox={`0 0 600 ${top + 8 * gap}`} role="img" aria-label="Tree of all eight sign choices">
+      {edges}<circle cx={xs[0]} cy={yOf(0, [])} r="7" fill={ink} /><text x={xs[0] - 12} y={yOf(0, []) + 5} textAnchor="end" fontSize="16" fontWeight="800" fill={ink}>{nums[0]}</text>{nodes}
     </svg>
-    <Say><p>Four consecutive numbers have two odd and two even numbers. With all + signs the sum is even. Changing +x to −x changes the answer by 2x, which is even. So the answer is always even.</p></Say>
+    <p style={{fontSize: '1.3rem', fontWeight: 800, textAlign: 'center', margin: '6px 0'}}>{nums[0]} {s[0] ? '+' : '−'} {nums[1]} {s[1] ? '+' : '−'} {nums[2]} {s[2] ? '+' : '−'} {nums[3]} = <span style={{color: green}}>{String(val).replace('-', '−')}</span> (even)</p>
+    <Say>
+      <p>Click the gap buttons: the coloured path in the tree shows your choice. All 8 answers at the right are even.</p>
+      <p><strong>Why?</strong> With all + signs: {nums.join(' + ')} = {all}, which is even. {s.some((x) => !x) ? `You changed ${nums.slice(1).filter((_, i) => !s[i]).map((x) => '+' + x + ' to −' + x).join(' and ')}. Each change takes the number away twice, so the answer goes down by ${nums.slice(1).filter((_, i) => !s[i]).map((x) => '2 × ' + x).join(' + ')} = ${all - val}, an even number: ${all} − ${all - val} = ${String(val).replace('-', '−')}.` : 'Now change a sign and see how much the answer goes down.'}</p>
+      <p>An even number minus an even number is even. So every answer is even.</p>
+    </Say>
   </Box>;
 }
 
