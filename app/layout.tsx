@@ -6,6 +6,7 @@ import './learning-identity.css';
 import './paper-watermark.css';
 import SessionRenewal from './session-renewal';
 import StudentPresence from './student-activity';
+import WebsiteAnalytics from './website-analytics';
 import LocalPreviewBanner from './local-preview-banner';
 
 const geistSans = Geist({
@@ -74,6 +75,7 @@ export default function RootLayout({
         {children}
         <SessionRenewal />
         <StudentPresence />
+        <WebsiteAnalytics />
       </body>
     </html>
   );

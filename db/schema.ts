@@ -1,6 +1,21 @@
 import { sql } from 'drizzle-orm';
 import { index, integer, primaryKey, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
 
+export const analyticsEvents = sqliteTable('analytics_events', {
+  id: text('id').primaryKey(),
+  day: text('day').notNull(),
+  createdAtMs: integer('created_at_ms').notNull(),
+  path: text('path').notNull(),
+  visitor: text('visitor').notNull(),
+  source: text('source').notNull(),
+  device: text('device').notNull(),
+  preview: integer('preview').notNull().default(0),
+}, table => [
+  index('idx_analytics_preview_day').on(table.preview, table.day),
+  index('idx_analytics_visitor_time').on(table.preview, table.visitor, table.createdAtMs),
+  index('idx_analytics_day').on(table.day),
+]);
+
 export const basicsProgress=sqliteTable('basics_progress',{
   userId:text('user_id').notNull(),topicSlug:text('topic_slug').notNull(),
   stateJson:text('state_json').notNull().default('{}'),revision:integer('revision').notNull().default(0),

@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
       <article className="legal-page-card">
         <p className="legal-page-kicker">Privacy and data protection</p>
         <h1>Privacy Policy</h1>
-        <p className="legal-page-updated">Last updated: 12 October 2026</p>
+        <p className="legal-page-updated">Last updated: 28 November 2026</p>
         <p className="legal-page-intro">This policy explains what information Ramavana Mathematical Center collects through ramavanamath.com, why we use it, which service providers help us operate the website, and the choices available to students and parents.</p>
 
         <section>
@@ -55,7 +55,8 @@ export default function PrivacyPolicyPage() {
         </section>
 
         <section>
-          <h2>5. Cookies</h2>
+          <h2>5. Cookies and website analytics</h2>
+          <p>We also collect first-party website statistics: page paths, visit times, referring website hostnames or simple campaign source labels, and broad device categories. Analytics do not store names, email addresses, IP addresses, test answers, URL parameters, fragments or full referring URLs. A random identifier in browser session storage is renewed daily and is separate from login and student records. It estimates browser-tab visitors, not identifiable people. No analytics cookies are used. We honour browser Do Not Track and Global Privacy Control signals. Analytics reports are restricted to authorised teachers. Events are kept for up to 90 days and older events are removed when new traffic is recorded.</p>
           <p>The website uses essential first-party cookies to complete Google Login, keep the account signed in and protect requests against forgery. These cookies are required for account, payment and test features. We do not use advertising cookies.</p>
         </section>
 

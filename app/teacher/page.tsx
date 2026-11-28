@@ -288,6 +288,7 @@ export default function TeacherReviewPage() {
         <button className={teacherView === 'papers' ? 'active' : ''} aria-pressed={teacherView === 'papers'} type="button" onClick={() => void openPaperLibrary()}><Pencil /><span>Question papers</span></button>
         <a href="/teacher/free-mcq"><span>MCQ results</span></a>
         <a href="/teacher/weekly-problems"><span>Weekly problems</span></a>
+        <a href="/teacher/analytics"><span>Analytics</span></a>
         <a href="/maths-basics"><span>Maths Basics</span></a>
       </nav>
 
